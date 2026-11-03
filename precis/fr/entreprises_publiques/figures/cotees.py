@@ -46,7 +46,7 @@ ENGAGEMENTS_BNA = "bna-engagements-entreprises-publiques"
 # Un nom d'entité change d'un rapport à l'autre (« S.T.C VERITAS » et « S.T.C.V VERITAS ») : la clé les réunit.
 ALIAS_ENTITES = {"STCVERITAS": "STCVVERITAS", "GENERALEDESVENTES": "GENERALEDEVENTE", "ELMEDINA": "SPIMADINA", "ZIED": "ZIEDSARL",
                  "TIS": "TUNISIEINFORMATIQUESERVICES", "TUNISIENNEDEREASSURANCE": "TUNISRE", "TUNISIERE": "TUNISRE", "SICAFPARTICIPATIONSBNA": "SICAFPARTICIPATIONS", "SPBSICAFPARTICIPATIONS": "SICAFPARTICIPATIONS",
-                 # BH : noms d'avant 2019 (rapport de 2017) rapprochés des noms d'après ; les quatre premiers sont attestés par un acte ou un avis, les suivants le sont par les pourcentages d'intérêt (voir la section de la BH)
+                 # BH : noms d'avant 2019 (rapport de 2017) rapprochés des noms d'après ; BH Bank, BH Assurances et la SICAV BH-Capitalisation sont attestés par un acte ou par les rapports, Modern Leasing par un projet de résolutions, les suivants par les pourcentages d'intérêt (voir le commentaire TODO de la section de la BH)
                  "BANQUEDELHABITAT": "BHBANK", "ASSURANCESALIM": "BHASSURANCES", "MODERNLEASING": "BHLEASING", "SICAVBHPLACEMENT": "SICAVBHCAPITALISATION",
                  "SICAVBHOBLIGATOIRE": "SICAVBHOBLIGATAIRE", "SICAFBHEPARGNEINVESTISSEMENT": "BHSICAF", "GENERALRECOUVREMENT": "BHRECOUVREMENT", "SIMSICAR": "BHEQUITY",
                  "SOPIVEL": "BHIMMO", "STIMEC": "BHPRINT"}

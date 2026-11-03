@@ -1,75 +1,76 @@
 groupe,exercice,opinion,rang,motif,page_pdf,source,themes
 BH,2011,avec réserves,1,"insuffisances de contrôle et de justification comptable : intérêts perçus d'avance, caisse, suspens monétique, encaissement chèques et effets",6,bvmt-ef-bh-2011-individuel,suspens
-BH,2011,avec réserves,2,"immobilisations anciennes non amorties (5,4 MD), inventaire physique non rapproché de la comptabilité",6,bvmt-ef-bh-2011-individuel,immobilisations
-BH,2011,avec réserves,3,"fonds spéciaux et budgétaires à justifier et rapprocher (avance à la SNIT, programme de résorption des logements rudimentaires)",6,bvmt-ef-bh-2011-individuel,fonds_etat
-BH,2011,avec réserves,4,états financiers certifiés et notations externes indisponibles pour certains clients,6,bvmt-ef-bh-2011-individuel,notation
-BH,2011,avec réserves,5,"insuffisances d'inventaire des garanties reçues, expertise récente indisponible",6,bvmt-ef-bh-2011-individuel,garanties
-BH,2011,avec réserves,6,"pas de provision pour indemnités de départ à la retraite (convention collective), estimée à 14,4 MD",6,bvmt-ef-bh-2011-individuel,retraites
-BH,2012,avec réserves,1,"insuffisances de contrôle et de justification comptable : caisse, sinistres à récupérer, comptes inter-sièges, monétique, suspens anciens",3,bvmt-ef-bh-2012-individuel,suspens
-BH,2012,avec réserves,2,"fonds spéciaux et budgétaires à justifier et rapprocher (SNIT, programme de résorption des logements rudimentaires)",3,bvmt-ef-bh-2012-individuel,fonds_etat
-BH,2012,avec réserves,3,états financiers certifiés et notations externes indisponibles pour certains clients,3,bvmt-ef-bh-2012-individuel,notation
-BH,2012,avec réserves,4,"insuffisances d'inventaire des garanties reçues, expertise récente indisponible",3,bvmt-ef-bh-2012-individuel,garanties
-BH,2012,avec réserves,5,écarts entre soldes comptables des engagements de la clientèle et engagements extracomptables non rapprochés,3,bvmt-ef-bh-2012-individuel,ecarts
-BH,2012,avec réserves,6,"322 MD d'engagements d'entreprises publiques en difficulté classés en actifs courants, risque lié aux plans de restructuration",3,bvmt-ef-bh-2012-individuel,provisions
-BH,2012,avec réserves,7,"pas de provision pour indemnités de départ à la retraite (convention collective), estimée à 16,1 MD",3,bvmt-ef-bh-2012-individuel,retraites
+BH,2011,avec réserves,2,"immobilisations anciennes non amorties (5,4 MD), inventaire physique non rapproché de la comptabilité",7,bvmt-ef-bh-2011-individuel,immobilisations
+BH,2011,avec réserves,3,"fonds spéciaux et budgétaires à justifier et rapprocher (avance à la SNIT, programme de résorption des logements rudimentaires)",7,bvmt-ef-bh-2011-individuel,fonds_etat
+BH,2011,avec réserves,4,états financiers certifiés et notations externes indisponibles pour certains clients,7,bvmt-ef-bh-2011-individuel,notation
+BH,2011,avec réserves,5,"insuffisances d'inventaire des garanties reçues, expertise récente indisponible",7,bvmt-ef-bh-2011-individuel,garanties
+BH,2011,avec réserves,6,"pas de provision pour indemnités de départ à la retraite (convention collective) ni pour l'assurance-groupe des retraités, estimées à 14,4 MD",7,bvmt-ef-bh-2011-individuel,retraites
+BH,2011,avec réserves,7,"contrôle fiscal de 2006 à 2009 : 67,8 MD réclamés par l'administration, 12,4 MD de réserves pour risques généraux, 8,5 MD payés en décembre 2011 ; la réconciliation ne couvre pas la taxation des réinvestissements exonérés",7,bvmt-ef-bh-2011-individuel,provisions
+BH,2012,avec réserves,1,"insuffisances de contrôle et de justification comptable : caisse, sinistres à récupérer, comptes inter-sièges, monétique, suspens anciens",4,bvmt-ef-bh-2012-individuel,suspens
+BH,2012,avec réserves,2,"fonds spéciaux et budgétaires à justifier et rapprocher (SNIT, programme de résorption des logements rudimentaires)",4,bvmt-ef-bh-2012-individuel,fonds_etat
+BH,2012,avec réserves,3,états financiers certifiés et notations externes indisponibles pour certains clients,4,bvmt-ef-bh-2012-individuel,notation
+BH,2012,avec réserves,4,"insuffisances d'inventaire des garanties reçues, expertise récente indisponible",4,bvmt-ef-bh-2012-individuel,garanties
+BH,2012,avec réserves,5,écarts entre soldes comptables des engagements de la clientèle et engagements extracomptables non rapprochés,4,bvmt-ef-bh-2012-individuel,ecarts
+BH,2012,avec réserves,6,"322 MD d'engagements d'organismes et d'entreprises publiques en difficulté classés en actifs courants, risque lié aux plans de restructuration",4-5,bvmt-ef-bh-2012-individuel,provisions
+BH,2012,avec réserves,7,"pas de provision pour indemnités de départ à la retraite (convention collective) ni pour l'assurance-groupe des retraités, estimées à 16,1 MD",5,bvmt-ef-bh-2012-individuel,retraites
 BH,2013,avec réserves,1,défaut de réponse de 93 avocats sur 152 sollicités,22,bvmt-ef-bh-2013-individuel,avocats
-BH,2013,avec réserves,2,indisponibilité d'états financiers récents ou de notation pour des relations dont les engagements dépassent 5 MD (25 MD pour la notation),22,bvmt-ef-bh-2013-individuel,notation
+BH,2013,avec réserves,2,indisponibilité d'états financiers récents pour certaines relations (dont des clients aux engagements supérieurs à 5 MD) ; pas de notation pour les clients cotés ou aux engagements supérieurs à 25 MD,22,bvmt-ef-bh-2013-individuel,notation
 BH,2013,avec réserves,3,pas d'évaluations indépendantes et récentes des garanties hypothécaires ; certificats de propriété non actualisés,22,bvmt-ef-bh-2013-individuel,garanties
 BH,2013,avec réserves,4,produits comptabilisés non identifiés par client : produits impayés à réserver non vérifiables,22,bvmt-ef-bh-2013-individuel,produits
-BH,2013,avec réserves,5,"créances de 452,7 MD non reprises dans le tableau des engagements (provision de 8,3 MD) ; écart net de 19,6 MD entre comptabilité et base de gestion, non justifié (provision de 5,9 MD)",22,bvmt-ef-bh-2013-individuel,ecarts
-BH,2013,avec réserves,6,recouvrabilité des actifs au titre des sinistres déclarés aux compagnies d'assurance non justifiée,22,bvmt-ef-bh-2013-individuel,provisions
-BH,2013,avec réserves,7,suspens débiteurs et créditeurs sur les comptes des valeurs de la clientèle gérées par la banque,22,bvmt-ef-bh-2013-individuel,suspens
-BH,2013,avec réserves,8,comptabilité multidevises non conforme à la norme comptable n° 23,22,bvmt-ef-bh-2013-individuel,si
-BH,2013,avec réserves,9,pas de provision pour indemnités de départ à la retraite (convention collective),22,bvmt-ef-bh-2013-individuel,retraites
-BH,2013,avec réserves,10,inventaire physique des immobilisations non rapproché de la comptabilité,22,bvmt-ef-bh-2013-individuel,immobilisations
-BH,2013,avec réserves,11,"fonds budgétaires confiés par l'État sans procédures adéquates de suivi et de justification, passifs non confirmés par le ministère des Finances",22,bvmt-ef-bh-2013-individuel,fonds_etat
+BH,2013,avec réserves,5,"créances de 452,7 MD non reprises dans le tableau des engagements (provision de 8,3 MD) ; écart net de 19,6 MD entre comptabilité et base de gestion, non justifié (provision de 5,9 MD)",22-23,bvmt-ef-bh-2013-individuel,ecarts
+BH,2013,avec réserves,6,recouvrabilité des actifs au titre des sinistres déclarés aux compagnies d'assurance non justifiée,23,bvmt-ef-bh-2013-individuel,provisions
+BH,2013,avec réserves,7,"suspens débiteurs (140,0 MD) et créditeurs (87,4 MD) sur les comptes des valeurs de la clientèle gérées par la banque",23,bvmt-ef-bh-2013-individuel,suspens
+BH,2013,avec réserves,8,comptabilité multidevises non conforme à la norme comptable n° 23,23,bvmt-ef-bh-2013-individuel,si
+BH,2013,avec réserves,9,"pas de provision pour indemnités de départ à la retraite (convention collective), passifs minorés de 16,5 MD",23,bvmt-ef-bh-2013-individuel,retraites
+BH,2013,avec réserves,10,inventaire physique des immobilisations non rapproché de la comptabilité,23,bvmt-ef-bh-2013-individuel,immobilisations
+BH,2013,avec réserves,11,"fonds budgétaires confiés par l'État sans procédures adéquates de suivi et de justification, passifs non confirmés par le ministère des Finances",23,bvmt-ef-bh-2013-individuel,fonds_etat
 BH,2014,avec réserves,1,défaut de réponse de 96 avocats sur 108 sollicités,6,bvmt-ef-bh-2014-individuel,avocats
-BH,2014,avec réserves,2,indisponibilité d'états financiers récents ou de notation pour des relations dont les engagements dépassent 5 MD (25 MD pour la notation),6,bvmt-ef-bh-2014-individuel,notation
+BH,2014,avec réserves,2,indisponibilité d'états financiers récents pour certaines relations (dont des clients aux engagements supérieurs à 5 MD) ; pas de notation pour les clients cotés ou aux engagements supérieurs à 25 MD,6,bvmt-ef-bh-2014-individuel,notation
 BH,2014,avec réserves,3,pas d'évaluations indépendantes et récentes des garanties hypothécaires ; certificats de propriété non actualisés,6,bvmt-ef-bh-2014-individuel,garanties
 BH,2014,avec réserves,4,produits comptabilisés non identifiés par client : produits impayés à réserver non vérifiables,6,bvmt-ef-bh-2014-individuel,produits
 BH,2014,avec réserves,5,états financiers audités de l'exercice indisponibles pour la majorité des sociétés où la banque détient une participation,6,bvmt-ef-bh-2014-individuel,notation
-BH,2014,avec réserves,6,"créances non reprises de façon exhaustive dans le tableau des engagements, faiblesses du rapprochement avec la comptabilité",6,bvmt-ef-bh-2014-individuel,ecarts
-BH,2014,avec réserves,7,recouvrabilité des actifs au titre des sinistres déclarés aux compagnies d'assurance non justifiée,6,bvmt-ef-bh-2014-individuel,provisions
-BH,2014,avec réserves,8,suspens débiteurs et créditeurs sur les comptes des valeurs de la clientèle gérées par la banque,6,bvmt-ef-bh-2014-individuel,suspens
-BH,2014,avec réserves,9,comptabilité multidevises non conforme à la norme comptable n° 23,6,bvmt-ef-bh-2014-individuel,si
-BH,2014,avec réserves,10,"fonds budgétaires confiés par l'État sans procédures adéquates de suivi et de justification, passifs non confirmés par le ministère des Finances",6,bvmt-ef-bh-2014-individuel,fonds_etat
+BH,2014,avec réserves,6,"créances non reprises de façon exhaustive dans le tableau des engagements, faiblesses du rapprochement avec la comptabilité (provision de 16,1 MD)",6-7,bvmt-ef-bh-2014-individuel,ecarts
+BH,2014,avec réserves,7,recouvrabilité des actifs au titre des sinistres déclarés aux compagnies d'assurance non justifiée,7,bvmt-ef-bh-2014-individuel,provisions
+BH,2014,avec réserves,8,"suspens débiteurs (192,8 MD) et créditeurs (251,3 MD) sur les comptes des valeurs de la clientèle gérées par la banque",7,bvmt-ef-bh-2014-individuel,suspens
+BH,2014,avec réserves,9,comptabilité multidevises non conforme à la norme comptable n° 23,7,bvmt-ef-bh-2014-individuel,si
+BH,2014,avec réserves,10,"fonds budgétaires confiés par l'État sans procédures adéquates de suivi et de justification, passifs non confirmés par le ministère des Finances",7,bvmt-ef-bh-2014-individuel,fonds_etat
 BH,2015,avec réserves,1,défaut de réponse de 102 avocats sur 110 sollicités,6,bvmt-ef-bh-2015-individuel,avocats
-BH,2015,avec réserves,2,indisponibilité d'états financiers récents ou de notation pour des relations dont les engagements dépassent 5 MD (25 MD pour la notation),6,bvmt-ef-bh-2015-individuel,notation
+BH,2015,avec réserves,2,indisponibilité d'états financiers récents pour certaines relations (dont des clients aux engagements supérieurs à 5 MD) ; pas de notation pour les clients cotés ou aux engagements supérieurs à 25 MD,6,bvmt-ef-bh-2015-individuel,notation
 BH,2015,avec réserves,3,pas d'évaluations indépendantes et récentes des garanties hypothécaires ; certificats de propriété non actualisés,6,bvmt-ef-bh-2015-individuel,garanties
 BH,2015,avec réserves,4,produits comptabilisés non identifiés par client : produits impayés à réserver non vérifiables,6,bvmt-ef-bh-2015-individuel,produits
 BH,2015,avec réserves,5,états financiers audités de l'exercice indisponibles pour la majorité des sociétés où la banque détient une participation,6,bvmt-ef-bh-2015-individuel,notation
-BH,2015,avec réserves,6,"créances non reprises de façon exhaustive dans le tableau des engagements, faiblesses du rapprochement avec la comptabilité",6,bvmt-ef-bh-2015-individuel,ecarts
-BH,2015,avec réserves,7,recouvrabilité des actifs au titre des sinistres déclarés aux compagnies d'assurance non justifiée,6,bvmt-ef-bh-2015-individuel,provisions
-BH,2015,avec réserves,8,suspens débiteurs et créditeurs sur les comptes des valeurs de la clientèle gérées par la banque,6,bvmt-ef-bh-2015-individuel,suspens
-BH,2015,avec réserves,9,comptabilité multidevises non conforme à la norme comptable n° 23,6,bvmt-ef-bh-2015-individuel,si
-BH,2015,avec réserves,10,"fonds budgétaires confiés par l'État sans procédures adéquates de suivi et de justification, passifs non confirmés par le ministère des Finances",6,bvmt-ef-bh-2015-individuel,fonds_etat
+BH,2015,avec réserves,6,"créances non reprises de façon exhaustive dans le tableau des engagements, faiblesses du rapprochement avec la comptabilité (provision de 16,1 MD)",6-7,bvmt-ef-bh-2015-individuel,ecarts
+BH,2015,avec réserves,7,recouvrabilité des actifs au titre des sinistres déclarés aux compagnies d'assurance non justifiée,7,bvmt-ef-bh-2015-individuel,provisions
+BH,2015,avec réserves,8,"suspens débiteurs (223,4 MD) et créditeurs (294,7 MD) sur les comptes des valeurs de la clientèle gérées par la banque",7,bvmt-ef-bh-2015-individuel,suspens
+BH,2015,avec réserves,9,comptabilité multidevises non conforme à la norme comptable n° 23,7,bvmt-ef-bh-2015-individuel,si
+BH,2015,avec réserves,10,"fonds budgétaires confiés par l'État sans procédures adéquates de suivi et de justification, passifs non confirmés par le ministère des Finances",7,bvmt-ef-bh-2015-individuel,fonds_etat
 BH,2016,avec réserves,1,défaut de réponse de 99 avocats sur 110 sollicités,6,bvmt-ef-bh-2016-individuel,avocats
-BH,2016,avec réserves,2,indisponibilité d'états financiers récents ou de notation pour des relations dont les engagements dépassent 5 MD (25 MD pour la notation),6,bvmt-ef-bh-2016-individuel,notation
+BH,2016,avec réserves,2,indisponibilité d'états financiers récents pour certaines relations (dont des clients aux engagements supérieurs à 5 MD) ; pas de notation pour les clients cotés ou aux engagements supérieurs à 25 MD,6,bvmt-ef-bh-2016-individuel,notation
 BH,2016,avec réserves,3,pas d'évaluations indépendantes et récentes des garanties hypothécaires ; certificats de propriété non actualisés,6,bvmt-ef-bh-2016-individuel,garanties
 BH,2016,avec réserves,4,produits comptabilisés non identifiés par client : produits impayés à réserver non vérifiables,6,bvmt-ef-bh-2016-individuel,produits
 BH,2016,avec réserves,5,états financiers audités de l'exercice indisponibles pour la majorité des sociétés où la banque détient une participation,6,bvmt-ef-bh-2016-individuel,notation
-BH,2016,avec réserves,6,"créances non reprises de façon exhaustive dans le tableau des engagements, faiblesses du rapprochement avec la comptabilité",6,bvmt-ef-bh-2016-individuel,ecarts
+BH,2016,avec réserves,6,"créances non reprises de façon exhaustive dans le tableau des engagements, faiblesses du rapprochement avec la comptabilité (provision de 16,1 MD)",6,bvmt-ef-bh-2016-individuel,ecarts
 BH,2016,avec réserves,7,recouvrabilité des actifs au titre des sinistres déclarés aux compagnies d'assurance non justifiée,6,bvmt-ef-bh-2016-individuel,provisions
-BH,2016,avec réserves,8,suspens débiteurs et créditeurs sur les comptes des valeurs de la clientèle gérées par la banque,6,bvmt-ef-bh-2016-individuel,suspens
-BH,2016,avec réserves,9,déséquilibres entre positions de change converties et contrevaleurs comptables,6,bvmt-ef-bh-2016-individuel,si
-BH,2016,avec réserves,10,"fonds budgétaires confiés par l'État sans procédures adéquates de suivi et de justification, passifs non confirmés par le ministère des Finances",6,bvmt-ef-bh-2016-individuel,fonds_etat
-BH,2017,avec réserves,1,indisponibilité d'états financiers récents ou de notation pour des relations dont les engagements dépassent 5 MD (25 MD pour la notation),31,bvmt-ef-bh-2017-individuel,notation
-BH,2017,avec réserves,2,pas d'évaluations indépendantes et récentes des garanties hypothécaires,31,bvmt-ef-bh-2017-individuel,garanties
-BH,2017,avec réserves,3,produits comptabilisés non identifiés par client : produits impayés à réserver non vérifiables,31,bvmt-ef-bh-2017-individuel,produits
-BH,2017,avec réserves,4,"créances non reprises de façon exhaustive dans le tableau des engagements, faiblesses du rapprochement avec la comptabilité (provision de 16,1 MD)",31,bvmt-ef-bh-2017-individuel,ecarts
-BH,2017,avec réserves,5,"déséquilibres entre positions de change converties et contrevaleurs comptables (0,1 MD créditeur, 0,3 MD débiteur)",31,bvmt-ef-bh-2017-individuel,si
-BH,2017,avec réserves,6,"fonds budgétaires confiés par l'État sans procédures adéquates de suivi et de justification, passifs non confirmés par le ministère des Finances",31,bvmt-ef-bh-2017-individuel,fonds_etat
+BH,2016,avec réserves,8,"suspens débiteurs (281,8 MD) et créditeurs (361,2 MD) sur les comptes des valeurs de la clientèle gérées par la banque",7,bvmt-ef-bh-2016-individuel,suspens
+BH,2016,avec réserves,9,"déséquilibres entre positions de change converties et contrevaleurs comptables (15 KDT débiteur au bilan, 74 KDT débiteur hors bilan)",7,bvmt-ef-bh-2016-individuel,si
+BH,2016,avec réserves,10,"fonds budgétaires confiés par l'État sans procédures adéquates de suivi et de justification, passifs non confirmés par le ministère des Finances",7,bvmt-ef-bh-2016-individuel,fonds_etat
+BH,2017,avec réserves,1,indisponibilité d'états financiers récents ou de notation pour des relations dont les engagements dépassent 5 MD (25 MD pour la notation),32,bvmt-ef-bh-2017-individuel,notation
+BH,2017,avec réserves,2,pas d'évaluations indépendantes et récentes des garanties hypothécaires,32,bvmt-ef-bh-2017-individuel,garanties
+BH,2017,avec réserves,3,produits comptabilisés non identifiés par client : produits impayés à réserver non vérifiables,32,bvmt-ef-bh-2017-individuel,produits
+BH,2017,avec réserves,4,"créances non reprises de façon exhaustive dans le tableau des engagements, faiblesses du rapprochement avec la comptabilité (provision de 16,1 MD)",32,bvmt-ef-bh-2017-individuel,ecarts
+BH,2017,avec réserves,5,"déséquilibres entre positions de change converties et contrevaleurs comptables (104 KDT créditeur au bilan, 303 KDT débiteur hors bilan)",32,bvmt-ef-bh-2017-individuel,si
+BH,2017,avec réserves,6,"fonds budgétaires confiés par l'État sans procédures adéquates de suivi et de justification, passifs non confirmés par le ministère des Finances",32,bvmt-ef-bh-2017-individuel,fonds_etat
 BH,2019,avec réserves,1,indisponibilité d'états financiers récents ou de notation pour des relations dont les engagements dépassent 5 MD (25 MD pour la notation),4,bvmt-ef-bh-2019-individuel,notation
 BH,2019,avec réserves,2,"pas de recensement exhaustif des garanties, pas d'évaluations indépendantes et récentes",4,bvmt-ef-bh-2019-individuel,garanties
-BH,2019,avec réserves,3,"pas de reportings du système d'information pour identifier les produits par client : produits, créances rattachées et produits impayés non vérifiables",4,bvmt-ef-bh-2019-individuel,si
-BH,2019,avec réserves,4,"fonds budgétaires confiés par l'État sans procédures adéquates de suivi et de justification, passifs non confirmés par le ministère des Finances",4,bvmt-ef-bh-2019-individuel,fonds_etat
+BH,2019,avec réserves,3,"pas de reportings du système d'information pour identifier les produits par client : produits, créances rattachées et produits impayés non vérifiables",5,bvmt-ef-bh-2019-individuel,si
+BH,2019,avec réserves,4,"fonds budgétaires confiés par l'État sans procédures adéquates de suivi et de justification, passifs non confirmés par le ministère des Finances",5,bvmt-ef-bh-2019-individuel,fonds_etat
 BH,2020,avec réserves,1,indisponibilité d'états financiers récents ou de notation pour des relations dont les engagements dépassent 5 MD (25 MD pour la notation),5,bvmt-ef-bh-2020-individuel,notation
-BH,2020,avec réserves,2,"pas de recensement exhaustif des garanties, pas d'évaluations indépendantes et récentes",5,bvmt-ef-bh-2020-individuel,garanties
-BH,2020,avec réserves,3,pas de reportings du système d'information pour identifier les produits par client,5,bvmt-ef-bh-2020-individuel,si
-BH,2020,avec réserves,4,"fonds budgétaires confiés par l'État sans procédures adéquates de suivi et de justification, passifs non confirmés par le ministère des Finances",5,bvmt-ef-bh-2020-individuel,fonds_etat
+BH,2020,avec réserves,2,"pas de recensement exhaustif des garanties, pas d'évaluations indépendantes et récentes",6,bvmt-ef-bh-2020-individuel,garanties
+BH,2020,avec réserves,3,pas de reportings du système d'information pour identifier les produits par client,6,bvmt-ef-bh-2020-individuel,si
+BH,2020,avec réserves,4,"fonds budgétaires confiés par l'État sans procédures adéquates de suivi et de justification, passifs non confirmés par le ministère des Finances",6,bvmt-ef-bh-2020-individuel,fonds_etat
 BH,2021,avec réserves,1,"pas de recensement exhaustif des garanties, pas d'évaluations indépendantes et récentes",6,bvmt-ef-bh-2021-individuel,garanties
 BH,2021,avec réserves,2,pas de reportings du système d'information pour identifier les produits par client,6,bvmt-ef-bh-2021-individuel,si
-BH,2021,avec réserves,3,"fonds budgétaires confiés par l'État sans procédures adéquates de suivi et de justification, passifs non confirmés par le ministère des Finances",6,bvmt-ef-bh-2021-individuel,fonds_etat
+BH,2021,avec réserves,3,"fonds budgétaires confiés par l'État sans procédures adéquates de suivi et de justification, passifs non confirmés par le ministère des Finances",7,bvmt-ef-bh-2021-individuel,fonds_etat
 BH,2022,avec réserves,1,"insuffisances du système d'information : justification, contrôle et reporting entravés, identification des produits par client impossible, écarts entre données de gestion et comptables, suspens non apurés",39,bvmt-ef-bh-2022-individuel,si
 BH,2022,avec réserves,2,"fonds budgétaires confiés par l'État sans procédures adéquates de suivi et de justification, passifs non confirmés par le ministère des Finances",39,bvmt-ef-bh-2022-individuel,fonds_etat
 BH,2023,avec réserves,1,"insuffisances du système d'information : justification, contrôle et reporting entravés, identification des produits par client impossible, écarts entre données de gestion et comptables, suspens non apurés",41,bvmt-ef-bh-2023-individuel,si
