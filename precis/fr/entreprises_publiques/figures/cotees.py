@@ -93,9 +93,9 @@ figtools.register_provenance(
              "La méthode n'est pas donnée pour 2020 et 2021 (STB)."))
 
 
-def _md(entete: list[str], lignes: list[list[str]], caption: str, tbl_id: str) -> None:
+def _md(entete: list[str], lignes: list[list[str]], caption: str, tbl_id: str, gauche: tuple[int, ...] = ()) -> None:
     out = ["| " + " | ".join(entete) + " |",
-           "|---|" + "|".join(":-:" for _ in entete[1:]) + "|"]
+           "|---|" + "|".join("---" if i + 1 in gauche else ":-:" for i in range(len(entete) - 1)) + "|"]
     out += ["| " + " | ".join(ligne) + " |" for ligne in lignes]
     print("\n".join(out) + f"\n\n: {caption} {{#{tbl_id}}}\n")
 
@@ -250,6 +250,19 @@ def figure_evolution(groupe: str, caption: str, note_lecture: str | None = None)
                          slug=f"fig_ep_cotees_evolution_{groupe.lower()}", caption=caption,
                          note_lecture=note_lecture, nominal=False)
     plt.close("all")
+
+
+def tableau_opinions(groupe: str, caption: str, tbl_id: str) -> None:
+    """Opinion des commissaires aux comptes par exercice, avec chaque motif de réserve et sa page."""
+    d = _lire("opinions-cac")
+    d = d[d["groupe"] == groupe]
+    lignes, precedent = [], None
+    for _, r in d.iterrows():
+        exercice = f"**{r['exercice']}**" if r["exercice"] != precedent else ""
+        opinion = r["opinion"] if r["exercice"] != precedent else ""
+        precedent = r["exercice"]
+        lignes.append([exercice, opinion, r["motif"], f"[@{r['source']}, p. {r['page_pdf']} du PDF]"])
+    _md(["Exercice", "Opinion", "Motif de la réserve", "Source"], lignes, caption, tbl_id, gauche=(2,))
 
 
 def tableau_registre(caption: str, tbl_id: str = "tbl-ep-registre-entreprises") -> None:
