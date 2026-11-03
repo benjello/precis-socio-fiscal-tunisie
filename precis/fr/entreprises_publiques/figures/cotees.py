@@ -2,7 +2,9 @@
 
     from figures import cotees as ct
     ct.tableau_participations(caption=…)          # qui détient quoi, détenteur par détenteur
+    ct.figure_resultats(caption=…, note_lecture=…)  # résultat net et dividende de l'État
     ct.tableau_resultats(caption=…)               # résultat net et dividendes des sociétés où l'État est actionnaire
+    ct.tableau_perimetres(caption=…)              # les entités consolidées par la STB, la BH et la BNA
     ct.tableau_registre(caption=…)                # l'identité des entreprises publiques au Registre national
     ct.figure_capital(caption=…, note_lecture=…)  # le capital de la STB, de la BH et de la BNA
 
@@ -39,6 +41,9 @@ PARTICIPATIONS = "societes-cotees-participations"
 CAPITAL = "societes-cotees-capital"
 RESULTATS = "societes-cotees-resultats"
 REGISTRE = "entreprises-publiques-registre"
+PERIMETRE = "groupes-bancaires-perimetre"
+RAPPORTS = {"STB": "bvmt-ra-stb-2021", "BH": "bvmt-ra-bh-2021", "BNA": "bvmt-ra-bna-2021"}
+PAGES_RAPPORT = {"STB": "p. 96-97", "BH": "p. 240", "BNA": "p. 127"}
 COULEURS = {"STB": "#0969da", "BH": "#bc4c00", "BNA": "#1a7f37"}
 
 
@@ -61,6 +66,18 @@ figtools.register_provenance(
     caveats=("La page imprime ses chiffres tels quels : une ligne de la BH (6 juin 1995) donne "
              "un capital inférieur à celui de la ligne précédente et n'est pas tracée. Les "
              "dates sont celles de l'assemblée, non de la libération du capital."))
+
+
+figtools.register_provenance(
+    RESULTATS, titre="Résultat net et dividende des sociétés cotées où l'État est actionnaire",
+    sources=_sources(RESULTATS), unite="millions de dinars courants",
+    perimetre=("encadré « Indicateurs et ratios clés » de la page de chaque société à la Bourse de "
+               "Tunis : résultat net (part du groupe pour les sociétés qui publient des comptes "
+               "consolidés) et dividende par action, exercices 2022 à 2025 quand la page les donne"),
+    caveats=("Le dividende revenant à l'État est CALCULÉ : dividende par action de l'exercice N, "
+             "multiplié par les actions de l'État à l'assemblée de l'année N+1 ; il n'est calculé "
+             "que dans ce cas et n'est pas une recette du budget. Une case vide est une valeur "
+             "que la page n'imprime pas, non un zéro."))
 
 
 def _md(entete: list[str], lignes: list[list[str]], caption: str, tbl_id: str) -> None:
@@ -109,6 +126,20 @@ def tableau_resultats(caption: str, tbl_id: str = "tbl-ep-cotees-resultats") -> 
          "Dividende revenant à l'État (MD)", "Source"], lignes, caption, tbl_id)
 
 
+def tableau_perimetres(caption: str, tbl_id: str = "tbl-ep-cotees-perimetres") -> None:
+    """Les entités consolidées par la STB, la BH et la BNA : méthode, contrôle, intérêt."""
+    d = _lire(PERIMETRE)
+    lignes, precedent = [], None
+    for _, r in d.iterrows():
+        groupe = f"**{r['groupe']}**" if r["groupe"] != precedent else ""
+        precedent = r["groupe"]
+        controle = _pct(r["controle_pct"]) if r["controle_pct"] else "–"
+        lignes.append([groupe, r["entite"], r["methode"] or "–", controle, _pct(r["interet_pct"]),
+                       f"[@{RAPPORTS[r['groupe']]}, {PAGES_RAPPORT[r['groupe']]}]"])
+    _md(["Groupe", "Entité consolidée", "Méthode", "Contrôle (%)", "Intérêt (%)", "Source"],
+        lignes, caption, tbl_id)
+
+
 def tableau_registre(caption: str, tbl_id: str = "tbl-ep-registre-entreprises") -> None:
     """Une ligne par entreprise : identifiant, forme, état, états financiers déposés."""
     d = _lire(REGISTRE)
@@ -120,6 +151,77 @@ def tableau_registre(caption: str, tbl_id: str = "tbl-ep-registre-entreprises") 
             ).replace("Actif", "actif"), exercices, r["documents"]])
     _md(["Entreprise", "Identifiant", "Forme au Registre", "État", "États financiers déposés",
          "Documents listés"], lignes, caption, tbl_id)
+
+
+COULEURS_SOCIETES = {"BNA": "#1a7f37", "STB": "#0969da", "BH": "#bc4c00", "STAR": "#8250df",
+                     "SOTUMAG": "#57606a", "Ciments de Bizerte": "#cf222e", "Tunisair": "#bf8700"}
+
+
+def donnees_resultats() -> pd.DataFrame:
+    d = _lire(RESULTATS)
+    for colonne in ("resultat_net_dt", "dividende_etat_dt", "dividende_par_action_dt"):
+        d[colonne] = pd.to_numeric(d[colonne], errors="coerce")
+    d["resultat_net_md"] = d["resultat_net_dt"] / 1e6
+    d["dividende_etat_md"] = d["dividende_etat_dt"] / 1e6
+    d["exercice"] = d["exercice"].astype(int)
+    return d
+
+
+def fig_resultats():
+    figtools.apply_lang_font()
+    ft = figtools.fig_text
+    d = donnees_resultats()
+    fig, (ax, bx) = plt.subplots(1, 2, figsize=(10.5, 4.8), gridspec_kw={"width_ratios": [2.1, 1]})
+    ax.axhline(0, color="#57606a", lw=0.8, zorder=1)
+    for societe, groupe in d.groupby("societe"):
+        couleur = COULEURS_SOCIETES[societe]
+        ax.plot(groupe["exercice"], groupe["resultat_net_md"], "-", color=couleur, lw=1.8, zorder=2)
+        points, = ax.plot(groupe["exercice"], groupe["resultat_net_md"], "o", color=couleur, ms=5,
+                          zorder=3, label=societe)
+        for _, r in groupe.iterrows():
+            figtools.infobulle(points, f"{societe} · exercice {r['exercice']} · résultat net "
+                                      f"{r['resultat_net_md']:.1f} MD")
+    ax.set_xticks(sorted(d["exercice"].unique()))
+    ax.set_ylabel(ft("Résultat net (millions de dinars)"))
+    ax.set_xlabel(ft("Exercice"))
+    ax.set_title(ft("Résultat net"), fontsize=10, loc="left")
+    ax.grid(axis="y", color="#d0d7de", lw=0.6)
+    ax.set_axisbelow(True)
+    ax.legend(loc="upper center", bbox_to_anchor=(0.5, -0.17), ncol=4, fontsize=8, frameon=False)
+    calcule = d.dropna(subset=["dividende_etat_md"]).sort_values("dividende_etat_md")
+    etiquettes = [f"{r['societe']}\n{r['exercice']}" for _, r in calcule.iterrows()]
+    barres = bx.barh(etiquettes, calcule["dividende_etat_md"],
+                     color=[COULEURS_SOCIETES[s] for s in calcule["societe"]], zorder=2)
+    for barre, (_, r) in zip(barres, calcule.iterrows()):
+        bx.text(barre.get_width() + 0.5, barre.get_y() + barre.get_height() / 2,
+                f"{r['dividende_etat_md']:.1f}".replace(".", ","), va="center", fontsize=8)
+        figtools.infobulle(barre, f"{r['societe']} · exercice {r['exercice']} · dividende par action "
+                                  f"{r['dividende_par_action_dt']:.3g} D × {int(r['actions_etat']):,} actions "
+                                  f"de l'État = {r['dividende_etat_md']:.1f} MD".replace(",", " "))
+    bx.set_xlim(0, calcule["dividende_etat_md"].max() * 1.18)
+    bx.set_xlabel(ft("Dividende calculé (millions de dinars)"), fontsize=8.5)
+    bx.set_title(ft("Dividende de l'État"), fontsize=10, loc="left")
+    bx.grid(axis="x", color="#d0d7de", lw=0.6)
+    bx.set_axisbelow(True)
+    for axe in (ax, bx):
+        for cote in ("top", "right"):
+            axe.spines[cote].set_visible(False)
+    fig.tight_layout()
+    return fig
+
+
+def table_resultats() -> pd.DataFrame:
+    d = donnees_resultats()
+    return d[["societe", "exercice", "resultat_net_dt", "dividende_par_action_dt", "actions_etat",
+              "assemblee", "dividende_etat_dt"]]
+
+
+def figure_resultats(caption: str, note_lecture: str | None = None) -> None:
+    """Émet la figure des résultats et dividendes en onglets (chunk `output: asis`, `fig-…`)."""
+    figtools.figure_tabs(fig_resultats(), table_resultats(), RESULTATS,
+                         slug="fig_ep_cotees_resultats", caption=caption,
+                         note_lecture=note_lecture, nominal=False)
+    plt.close("all")
 
 
 def donnees_capital() -> pd.DataFrame:
