@@ -1,0 +1,32 @@
+# Manifeste du relevé « inventaire des rapports annuels et des états financiers des entreprises publiques de transport ».
+#
+# Catalogue du lot « Les transports » (hors Tunisair, traité avec les sociétés cotées) : une ligne par document trouvé en
+# ligne et gratuitement, et une ligne par entreprise sans aucun document (nature « aucun », avec les adresses essayées).
+# Consultation du 4 novembre 2026, sur les sites des entreprises ; l'Internet Archive n'a été interrogée que pour lire les
+# captures de PDF de quelques sites (service hors ligne le 4 novembre 2026 en fin de séance). Rien n'a été acheté : le contenu du
+# Registre national des entreprises est payant et n'a pas été consulté.
+# Les copies locales sont sous tunisia-data/data/raw/entreprises-publiques/rapports-entreprises/<sigle>/, ignorées par git.
+# Constat : aucun des documents trouvés ne contient de rapport des commissaires aux comptes (colonne rapport_cac = non). Ce sont
+# des rapports d'activité (Transtu 2010-2021, SNCFT 2010-2023, OMMP 2017 et 2022-2025) et les états financiers retraités de 2022
+# de Tunisie Autoroutes (bilan, résultat, flux, sans notes ni rapport). Recherche des termes « commissaire », « opinion »,
+# « certifi » dans la couche texte, des termes arabes correspondants après normalisation Unicode, et lecture directe des pages des
+# fichiers sans couche texte (SNCFT 2012 et 2016, Tunisie Autoroutes 2022).
+# Les exercices 2016 (SNCFT), 2018 (SNCFT) et 2020 (SNCFT) sont en arabe seulement. Le rapport 2017 de l'OMMP est le fichier
+# publié en janvier 2019 sur la page des rapports annuels.
+
+format: long
+cle_de_ligne: [sigle, exercice, nature]
+
+colonnes:
+  sigle: entreprise (identifiant court, nom du dossier de copie locale)
+  exercice: exercice du document (vide pour une entreprise sans document)
+  nature: rapport d'activité, états financiers, ou « aucun »
+  url_origine: adresse du document sur le site de l'éditeur ; pour « aucun », les adresses et sources essayées
+  url_archive: adresse d'une capture de l'Internet Archive (vide : aucune capture utilisée)
+  fichier: chemin de la copie locale, relatif au dossier qui contient le dépôt du précis (vide si le document n'est pas téléchargé)
+  octets: taille de la copie locale
+  sha256: empreinte SHA-256 de la copie locale
+  consultation: date de la consultation
+  rapport_cac: « oui » si le document contient le rapport des commissaires aux comptes, « non » sinon (vide pour « aucun »)
+
+sources: [ra-transtu-2010, ra-transtu-2011, ra-transtu-2012, ra-transtu-2013, ra-transtu-2014, ra-transtu-2015, ra-transtu-2016, ra-transtu-2017, ra-transtu-2018, ra-transtu-2019, ra-transtu-2020, ra-transtu-2021, ra-sncft-2010, ra-sncft-2011, ra-sncft-2012, ra-sncft-2013, ra-sncft-2014, ra-sncft-2015, ra-sncft-2016, ra-sncft-2017, ra-sncft-2018, ra-sncft-2019, ra-sncft-2020, ra-sncft-2021, ra-sncft-2022, ra-sncft-2023, ra-ommp-2017, ra-ommp-2022, ra-ommp-2023, ra-ommp-2024, ra-ommp-2025, es-tunisie-autoroutes-2022]
