@@ -15912,6 +15912,37 @@
       "note": "citation-key: bvmt-ra-bna-2021\nRapport annuel de gestion de l'exercice 2021, rapport du groupe et états financiers consolidés, publié sur la page de la société à la Bourse de Tunis (/node/81184). Copie locale : tunisia-data/data/raw/entreprises-publiques/bvmt-rapports/bna/bna-rapport-annuel-de-gestion-31-12-2021.pdf (7579385 octets, SHA-256 8a01faa407f1628b6b9257644ebb20b90a41fa5083a09f9a9f5850374df381d7), ignorée par git. Cité pour : périmètre de consolidation au 31 décembre 2021 (entités, méthode, pourcentages de contrôle et d'intérêt). Preuve : couche texte du PDF, tableau lu ligne à ligne par scripts/perimetres_groupes_bancaires.py."
     },
     {
+      "id": "bvmt-ra-star-2021",
+      "type": "report",
+      "title": "Rapport annuel de gestion de l'exercice 2021",
+      "author": [
+        {
+          "literal": "Société tunisienne d'assurances et de réassurances"
+        }
+      ],
+      "publisher": "Société tunisienne d'assurances et de réassurances",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2021
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            3
+          ]
+        ]
+      },
+      "title-short": "STAR, rapport annuel 2021",
+      "URL": "https://tunis-stockexchange.com/sites/default/files/societes/star/rapport-annuel-de-gestion/star-rapport-annuel-de-gestion-31-12-2021.pdf",
+      "note": "citation-key: bvmt-ra-star-2021\nRapport annuel de gestion de l'exercice 2021, publié sur la page de la société à la Bourse de Tunis (/node/81147). Copie locale : tunisia-data/data/raw/entreprises-publiques/bvmt-rapports/star/star-rapport-annuel-de-gestion-31-12-2021.pdf (2980106 octets, SHA-256 57331b855583d1b5ec9849f97c5ed7c81f3239c76102a852201fd7055cb8f983), ignorée par git. Cité pour : répartition du capital (tableau « Actionnariat », p. 46), qui détaille les 891 720 actions de « Etat tunisien » en ETAP, État et sociétés tunisiennes nationales. Preuve : couche texte du PDF, lue à la main."
+    },
+    {
       "id": "loi2018-52-rne",
       "type": "legislation",
       "title": "Loi n° 2018-52 du 29 octobre 2018, relative au Registre national des entreprises",
