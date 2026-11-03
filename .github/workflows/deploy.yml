@@ -14,16 +14,26 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  # Rendu parallèle, un livre par job, avec reprise du cache pour les livres inchangés :
-  # voir `rendre.yml`. Le PDF d'un livre qui échoue laisse le HTML (build.sh le dit).
-  rendre:
+  # Le site d'abord, les PDF après. Les PDF sont la partie lente et ne doivent pas retarder le
+  # site : trois temps, qui partent ensemble.
+  #   1. `html` rend les livres en HTML (un job par livre, cache des livres inchangés) et assemble
+  #      le site ; `deploy-html` le publie. Les PDF y sont ceux du site en ligne, avec une
+  #      infobulle « version précédente » sur leur lien.
+  #   2. `pdf` rend, en parallèle, le PDF de chaque livre (échec toléré).
+  #   3. `site-final` assemble de nouveau le site avec les PDF neufs ; `deploy-final` le publie.
+  html:
     uses: ./.github/workflows/rendre.yml
     with:
-      pdf: true
+      mode: html
       publier: true
 
-  deploy:
-    needs: rendre
+  pdf:
+    uses: ./.github/workflows/rendre.yml
+    with:
+      mode: pdf
+
+  deploy-html:
+    needs: html
     runs-on: ubuntu-latest
     permissions:
       pages: write
@@ -32,6 +42,67 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Deploy to GitHub Pages
+      - name: Deploy to GitHub Pages (HTML)
         id: deployment
         uses: actions/deploy-pages@v5
+        with:
+          artifact_name: site-html
+
+  site-final:
+    # Le site HTML est publié et les PDF sont rendus (ou ont échoué : le livre garde alors
+    # l'ancien) : on reprend les mêmes livres HTML et les PDF neufs.
+    needs: [deploy-html, pdf]
+    if: ${{ !cancelled() && needs.deploy-html.result == 'success' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v5
+
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v7
+
+      - name: Install Python dependencies via uv
+        run: uv sync
+
+      - name: Reprendre les livres rendus en HTML
+        uses: actions/download-artifact@v4
+        with:
+          pattern: public-*
+          path: livres
+
+      - name: Reprendre les PDF rendus
+        uses: actions/download-artifact@v4
+        with:
+          pattern: pdf-*
+          path: livres
+
+      - name: Remettre chaque livre à sa place
+        run: scripts/placer_livres.sh livres --pdf-en-ligne
+
+      - name: Assembler le site final
+        run: ./build.sh --assemble --no-pdf
+
+      - name: Déposer le site pour GitHub Pages
+        uses: actions/upload-pages-artifact@v4
+        with:
+          name: site-final
+          path: local_site
+
+  deploy-final:
+    needs: site-final
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages (avec les PDF neufs)
+        id: deployment
+        uses: actions/deploy-pages@v5
+        with:
+          artifact_name: site-final
