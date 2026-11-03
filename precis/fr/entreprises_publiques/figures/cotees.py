@@ -158,7 +158,7 @@ def tableau_resultats(caption: str, tbl_id: str = "tbl-ep-cotees-resultats") -> 
 def tableau_perimetres(caption: str, tbl_id: str = "tbl-ep-cotees-perimetres") -> None:
     """Les entités consolidées par la STB, la BH et la BNA : méthode, contrôle, intérêt."""
     d = _lire(PERIMETRE)
-    d = d[d["exercice"] == "2021"]
+    d = d[(d["exercice"] == "2021") & d["groupe"].isin(PAGES_RAPPORT)]  # les banques seules : les autres groupes ont leur propre section
     lignes, precedent = [], None
     for _, r in d.iterrows():
         groupe = f"**{r['groupe']}**" if r["groupe"] != precedent else ""

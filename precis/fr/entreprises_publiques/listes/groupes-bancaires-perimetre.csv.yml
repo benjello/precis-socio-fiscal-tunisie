@@ -28,9 +28,9 @@ colonnes:
   exercice: exercice (31 décembre)
   source: clé de la notice du rapport lu
   entite: entité, telle que le rapport l'imprime
-  methode: intégration globale, mise en équivalence, ou « mère » ; vide pour la STB, dont le tableau ne la donne pas
+  methode: intégration globale, mise en équivalence, intégration proportionnelle (AISA, 2009 à 2011, Tunisair) ou « mère » ; vide pour la STB, dont le tableau ne la donne pas
   controle_pct: pourcentage de contrôle (droits de vote) ; vide pour la BH, dont le rapport ne le donne pas
-  interet_pct: pourcentage d'intérêt (part du capital, directe et indirecte)
+  interet_pct: pourcentage d'intérêt (part du capital, directe et indirecte) ; vide pour TUNISAIR, dont les tableaux ne donnent que les droits de vote (controle_pct)
   pays: pays de l'entité quand le rapport le donne
 
 sources: [bvmt-ra-stb-2021, bvmt-ra-bh-2021, bvmt-ra-bna-2021, ra-stb-2011, ra-stb-2013, ra-stb-2014, ra-stb-2015, ra-stb-2017, ra-stb-2018, bvmt-ef-stb-2019-consolide, ra-bna-2007, ra-bna-2020, ra-bh-2017, ra-bh-2019, ra-bh-2021, ra-bh-2022, bvmt-ef-tunisair-2006-consolide, bvmt-ef-tunisair-2009-consolide, bvmt-ef-tunisair-2010-consolide, bvmt-ef-tunisair-2011-consolide, bvmt-ef-tunisair-2012-consolide, bvmt-ef-tunisair-2013-consolide, bvmt-ef-tunisair-2014-consolide, bvmt-ef-tunisair-2015-consolide, bvmt-ef-tunisair-2016-consolide, bvmt-ef-tunisair-2017-consolide, bvmt-ef-tunisair-2018-consolide, bvmt-ef-tunisair-2019-consolide, bvmt-ef-tunisair-2020-consolide, bvmt-ef-tunisair-2021-consolide, bvmt-ef-tunisair-2022-consolide]
