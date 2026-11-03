@@ -21,13 +21,15 @@ Les quatre CSV (séparateur « , ») :
 
   bvmt-societes.csv      une ligne par société : dénomination, forme, RNE, secteur, introduction
   bvmt-actionnaires.csv  principaux actionnaires : date de l'assemblée, nombre d'actions, part
-  bvmt-fonds-propres.csv capital social et fonds propres par exercice, en dinars
+  bvmt-indicateurs.csv indicateurs clés par exercice (capital social, capitaux propres, résultat net, dividende par action…)
   bvmt-capital.csv       historique du capital : date, opération, augmentation, capital
 
-`livre` en tire les deux relevés versionnés dans le volume « Les entreprises publiques »
-(`listes/societes-cotees-participations.csv` et `listes/societes-cotees-capital.csv`) : les
+`livre` en tire les trois relevés versionnés dans le volume « Les entreprises publiques »
+(`listes/societes-cotees-participations.csv`, `-capital.csv` et `-resultats.csv`) : les
 participations de détenteurs publics, tels que les nomme la Bourse (liste fermée ci-dessous,
-rien n'est déduit d'un nom), et l'historique du capital des trois banques publiques cotées.
+rien n'est déduit d'un nom), l'historique du capital des trois banques publiques cotées, et le
+résultat net, le dividende par action et le dividende revenant à l'État (calculé) des sociétés
+où l'État est actionnaire de plus de 5 %.
 """
 
 from __future__ import annotations
@@ -247,8 +249,8 @@ def lire(chemin: Path) -> dict:
         ):
             annees = re.findall(r"20\d{2}", entete)
             for ligne in lignes[1:]:
-                if ligne[0] in ("Capital social", "Capitaux propres"):
-                    for annee, valeur in zip(annees, ligne[1:]):
+                for annee, valeur in zip(annees, ligne[1:]):
+                    if ligne[0] and nombre(valeur) is not None:
                         fonds_propres.append((ligne[0], annee, nombre(valeur)))
         elif lignes and re.fullmatch(
             r"\d{4}-\d{2}-\d{2}", lignes[0][0] if lignes[0] else ""
@@ -379,7 +381,7 @@ def extraire() -> int:
         actionnaires,
     )
     ecrire(
-        DOSSIER / "bvmt-fonds-propres.csv",
+        DOSSIER / "bvmt-indicateurs.csv",
         ["nom", "libelle", "exercice", "dinars"],
         fonds,
     )
@@ -408,6 +410,45 @@ def extraire() -> int:
 
 def cle_detenteur(nom: str) -> str:
     return unicode_simple(nom.replace("\u2019", "'")).strip()
+
+
+def resultats(lus, participations: list[list]) -> list[list]:
+    """Résultat net et dividende par action des sociétés où l'État est actionnaire, par exercice.
+
+    Le dividende revenant à l'État est CALCULÉ : dividende par action de l'exercice N, multiplié
+    par le nombre d'actions que l'État détient à l'assemblée de l'année N+1 (celle qui vote le
+    dividende de N) ; il n'est calculé que dans ce cas. Ce n'est pas une recette du budget.
+    """
+    etat = {p[2]: p for p in participations if p[0] == "État"}
+    indicateurs: dict[tuple[str, str], dict[str, str]] = {}
+    for r in lus("bvmt-indicateurs.csv"):
+        if r["nom"] in etat and (
+            r["libelle"].startswith(("Résultat net", "Dividende par action"))
+        ):
+            cle = "resultat" if r["libelle"].startswith("Résultat net") else "dividende"
+            indicateurs.setdefault((r["nom"], r["exercice"]), {})[cle] = r["dinars"]
+    lignes = []
+    for (nom, exercice), valeurs in sorted(
+        indicateurs.items(), key=lambda kv: (NOMS[kv[0][0]], kv[0][1])
+    ):
+        _, societe, _, _, actions, assemblee, _ = etat[nom]
+        dividende = valeurs.get("dividende", "")
+        part = ""
+        if dividende and assemblee[-4:] == str(int(exercice) + 1):
+            part = f"{float(dividende) * int(actions):.0f}"
+        lignes.append(
+            [
+                societe,
+                nom,
+                exercice,
+                valeurs.get("resultat", "").removesuffix(".0"),
+                dividende,
+                actions,
+                assemblee,
+                part,
+            ]
+        )
+    return lignes
 
 
 def livre() -> int:
@@ -463,8 +504,24 @@ def livre() -> int:
         ["banque", "page", "date", "operation", "augmentation_dt", "capital_dt"],
         capital,
     )
+    lignes = resultats(lus, participations)
+    ecrire(
+        LIVRE / "societes-cotees-resultats.csv",
+        [
+            "societe",
+            "page",
+            "exercice",
+            "resultat_net_dt",
+            "dividende_par_action_dt",
+            "actions_etat",
+            "assemblee",
+            "dividende_etat_dt",
+        ],
+        lignes,
+    )
     print(
-        f"{len(participations)} participations, {len(capital)} opérations sur le capital de {len(BANQUES)} banques."
+        f"{len(participations)} participations, {len(capital)} opérations sur le capital de "
+        f"{len(BANQUES)} banques, {len(lignes)} lignes de résultats."
     )
     return 0
 
