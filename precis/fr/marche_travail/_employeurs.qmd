@@ -1,0 +1,108 @@
+# Les employeurs {#sec-mt-employeurs}
+
+Ce chapitre compte les employeurs du secteur privé et les salariés qu'ils déclarent, d'après le répertoire des entreprises que tient l'Institut national de la statistique. **En 2024, ce répertoire recense 836 808 entreprises privées, dont 87 % n'ont aucun salarié, et 1 164 913 salariés déclarés, dont 66 % travaillent dans une entreprise de 50 salariés et plus** (@fig-mt-emp-entreprises, @fig-mt-emp-salaries). Le chapitre sur les salaires du secteur privé suit le salaire que ces employeurs déclarent à la CNSS (@sec-mt-salaires-prive). Les chiffres viennent du répertoire de l'INS, une source administrative dont l'annexe décrit la création, les fichiers et la qualité (@sec-mt-emp-annexe). Les entreprises publiques et leurs effectifs sont exposés dans le volume [« Les entreprises publiques »](../entreprises_publiques/index.html).
+
+## Entreprises et formes juridiques {#sec-mt-emp-definitions}
+
+**Le répertoire compte comme entreprise toute personne physique ou morale qui exerce une activité industrielle, commerciale ou agricole, ou une profession libérale, et la classe selon sa forme juridique : personne physique, société à responsabilité limitée, société unipersonnelle à responsabilité limitée, société anonyme, autres formes** [@decret94-780, art. 2 et 4].
+
+### L'entreprise {#sec-mt-emp-entreprise}
+
+- **Une entreprise est une personne physique ou morale qui exerce une activité.** Le décret de 1994 vise l'activité industrielle, commerciale, agricole ou libérale ; un établissement est une unité économique située en un seul lieu, qui dépend juridiquement de l'entreprise et agit sous son autorité [@decret94-780, art. 2].
+- **Dans le répertoire, une entreprise est une unité légale patentée, enregistrée dans les fichiers de la Direction générale des impôts.** Il ne contient pas d'information sur les unités locales, c'est-à-dire les établissements, et ne couvre pas exhaustivement l'agriculture [@ins-repertoire-entreprises-2025, p. 66].
+- **Une société est un contrat.** Le code des sociétés commerciales, promulgué en 2000, la définit comme le contrat par lequel deux ou plusieurs personnes conviennent d'affecter en commun leurs apports, en vue de partager le bénéfice ou de profiter de l'économie qui pourrait résulter de l'activité ; la société unipersonnelle à responsabilité limitée est constituée par un associé unique [@loi2000-93, art. 2].
+- **Le répertoire distingue les indépendants et les employeurs.** Le fichier de la CNSS compte les indépendants, personnes physiques qui exercent une activité non salariée, et les employeurs, unités qui ont déclaré des salariés [@ins-repertoire-entreprises-2025, p. 5].
+
+### La forme juridique {#sec-mt-emp-forme-definition}
+
+- **La personne physique** exerce l'activité en son nom propre : elle est une entreprise lorsqu'elle exerce elle-même l'une des activités que définit le décret de 1994 [@decret94-780, art. 2].
+- **La société à responsabilité limitée (SARL)** est constituée entre deux ou plusieurs personnes qui ne supportent les pertes que jusqu'à concurrence de leurs apports. **La société unipersonnelle à responsabilité limitée (SUARL)** en est la forme à un seul associé : une personne physique ne peut être l'associé unique que d'une seule société de cette forme, et une personne morale ne peut pas l'être [@loi2000-93, art. 90 et 149].
+- **La société anonyme** est une société par actions, dotée de la personnalité morale, dont les actionnaires ne supportent les pertes que jusqu'à concurrence de leurs apports [@loi2000-93, art. 160].
+- **Les autres formes** réunissent, dans les tableaux de l'INS, les entreprises dont la forme n'est aucune des quatre précédentes ; la rubrique « forme juridique » fait partie du contenu du répertoire [@decret94-780, art. 4], et les tableaux n'en donnent pas le détail. Le code des sociétés commerciales connaît aussi la société en nom collectif, la société en commandite simple et la société en participation [@loi2000-93, art. 54 à 89].
+
+<!-- TODO (documentaliste) : vérifier les modifications du code des sociétés commerciales postérieures à 2000 sur les articles 2, 90, 149 et 160 (associé unique, définition de la société anonyme), et la liste des formes que regroupe la catégorie « autres » (non détaillée dans les éditions 2010, 2012 et 2025 de l'INS) : demander à l'INS. -->
+
+## Les entreprises privées, 2001-2024 {#sec-mt-emp-entreprises}
+
+**Le nombre d'entreprises privées inscrites au répertoire passe de 394 558 en 2001 à 836 808 en 2024, et les entreprises sans salarié, de 81 % à 87 % du total.** Ce sont des entreprises inscrites, non des entreprises en activité : l'INS juge le nombre d'entreprises sans salarié probablement surestimé de 11 % (@sec-mt-emp-annexe-qualite).
+
+```{python}
+#| label: fig-mt-emp-entreprises
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import employeurs as emp
+import figtools
+figtools.figure_tabs(
+    emp.vues_entreprises(), emp.table_entreprises(),
+    emp.SERIE_ENT_TRANCHE, emp.SERIE_ENT_FORME,
+    slug="fig_mt_emp_entreprises",
+    caption=("Entreprises privées inscrites au répertoire des entreprises de l'Institut national "
+             "de la statistique, selon le nombre de salariés et selon la forme juridique, "
+             "2001-2024"),
+    note_lecture=(
+        "Une entreprise compte pour une unité, quelle que soit sa taille. Le nombre de salariés "
+        "est celui que l'employeur déclare à la CNSS ; les entreprises sans salarié sont, pour "
+        "l'essentiel, des indépendants, et leur nombre est probablement surestimé de 11 % "
+        "[@ins-repertoire-entreprises-2025, p. 11]. Les valeurs de chaque année sont celles de "
+        "l'édition qui l'imprime (2017, 2018, 2021 puis 2025) ; les éditions qui se recoupent "
+        "impriment les mêmes valeurs [@ins-repertoire-entreprises-2017, p. 16 ; "
+        "@ins-repertoire-entreprises-2018, p. 16 ; @ins-repertoire-entreprises-2021, p. 16 ; "
+        "@ins-repertoire-entreprises-2025, p. 16]. L'échelle logarithmique rend lisibles les "
+        "classes de grandes entreprises. Les traits pointillés marquent 2003 et 2018, deux "
+        "ruptures du nombre d'entreprises sans salarié."))
+```
+
+### Selon le nombre de salariés {#sec-mt-emp-taille}
+
+- **Les entreprises sans salarié passent de 319 874 en 2001 à 729 240 en 2024**, soit de 81 % à 87 % du total ; celles de 1 à 9 salariés, de 64 661 à 94 172.
+- **Les entreprises de 10 salariés et plus passent de 10 023 à 13 396** : 7 010 à 9 929 pour celles de 10 à 49 salariés, 2 318 à 2 558 pour celles de 50 à 199, 695 à 909 pour celles de 200 et plus.
+- **Deux ruptures marquent la série.** En 2003, les entreprises sans salarié passent de 336 569 à 373 515 et celles de 1 à 9 salariés de 68 060 à 54 991. En 2018, les premières reculent de 676 140 à 635 571 alors que toutes les autres classes augmentent.
+
+<!-- TODO (documentaliste) : chercher dans les éditions 2018 et 2021 du répertoire l'explication des ruptures de 2003 et de 2018 dans le nombre d'entreprises sans salarié (changement de fichier, de définition ou apurement des faux actifs). -->
+
+### Selon la forme juridique {#sec-mt-emp-forme}
+
+- **Les personnes physiques passent de 350 233 entreprises en 2001 à 628 323 en 2024, mais leur part recule de 89 % à 75 %.**
+- **Les sociétés à responsabilité limitée (SARL) passent de 36 692 à 149 072, et les sociétés unipersonnelles à responsabilité limitée (SUARL), de 542 à 46 891** ; leurs parts atteignent 18 % et 6 % en 2024. Les sociétés anonymes passent de 4 330 à 6 417, soit 0,8 % du total.
+
+## Les salariés déclarés, 2000-2024 {#sec-mt-emp-salaries}
+
+**Les salariés que les entreprises privées déclarent à la CNSS passent de 757 628 en 2000 à 1 164 913 en 2024 ; la part de ceux qui travaillent dans une entreprise de 200 salariés et plus passe de 37 % à 45 %.**
+
+```{python}
+#| label: fig-mt-emp-salaries
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import employeurs as emp
+import figtools
+figtools.figure_tabs(
+    emp.vues_salaries(), emp.table_salaries(),
+    emp.SERIE_EMP_TRANCHE, emp.SERIE_EMP_FORME,
+    slug="fig_mt_emp_salaries",
+    caption=("Salariés déclarés par les entreprises privées inscrites au répertoire des "
+             "entreprises de l'Institut national de la statistique, selon la taille de "
+             "l'entreprise et selon sa forme juridique, 2000-2024"),
+    note_lecture=(
+        "Chaque salarié compte pour une unité, dans la tranche de l'entreprise qui l'emploie. "
+        "Les effectifs sont ceux des déclarations trimestrielles à la CNSS, moyennés sur "
+        "l'exercice [@ins-repertoire-entreprises-2025, p. 11]. Les valeurs de chaque année sont "
+        "celles de l'édition qui l'imprime (2016, 2017, 2018, 2021 puis 2025) "
+        "[@ins-repertoire-entreprises-2016, p. 30 ; @ins-repertoire-entreprises-2017, p. 30 ; "
+        "@ins-repertoire-entreprises-2018, p. 30 ; @ins-repertoire-entreprises-2021, p. 30 ; "
+        "@ins-repertoire-entreprises-2025, p. 30]. Le total par tranche et le total par forme "
+        "juridique s'écartent de quelques unités (cellules arrondies à la source) : le tableau "
+        "donne la somme des tranches. Le trait pointillé marque 2020."))
+```
+
+### Selon la taille de l'entreprise {#sec-mt-emp-taille-sal}
+
+- **Les entreprises de 200 salariés et plus emploient 277 917 salariés en 2000 et 522 193 en 2024**, soit 37 % puis 45 % du total ; celles de 50 à 199 salariés, de 214 471 à 245 146, soit de 28 % à 21 %. La part des entreprises de 50 salariés et plus reste proche de 65 % (65,0 % en 2000, 65,9 % en 2024) : la concentration se déplace des entreprises de 50 à 199 salariés vers celles de 200 et plus.
+- **Les entreprises de moins de 50 salariés emploient 265 240 salariés en 2000 et 397 574 en 2024** : 124 263 à 201 134 pour celles de 1 à 9 salariés, 140 977 à 196 440 pour celles de 10 à 49.
+- **Le nombre de salariés déclarés recule deux fois.** En 2003, il passe de 826 696 à 806 735, l'année de la première rupture du nombre d'entreprises (@sec-mt-emp-taille). En 2020, il passe de 1 144 215 à 1 076 128, dont 502 503 à 444 576 dans les entreprises de 200 salariés et plus ; il retrouve 1 135 142 en 2022 et 1 165 571 en 2023.
+
+### Selon la forme juridique {#sec-mt-emp-forme-sal}
+
+- **Les SARL emploient 354 590 salariés en 2000 et 665 069 en 2024**, soit de 47 % à 57 % du total ; les sociétés anonymes, de 249 903 à 313 966, soit de 33 % à 27 %.
+- **Les personnes physiques emploient 130 173 salariés en 2000 et 101 551 en 2024**, soit de 17 % à 9 % du total : elles sont les trois quarts des entreprises en 2024 (@sec-mt-emp-forme) et environ un salarié déclaré sur onze.

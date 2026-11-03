@@ -6123,3 +6123,106 @@
     de cette série (320 920 en 2010-2011) ne sont pas ceux de `education-effectifs-annuaire`
     (INS) : ne pas les mêler.'
   fiche: sources/education-boursiers.md
+- id: ins-repertoire-entreprises-tranche
+  titre: Entreprises privées par tranche de salariés (INS, répertoire national des
+    entreprises), 2001-2024
+  sources:
+  - ins-rne-statistiques
+  build: uv run --with pdfplumber python scripts/build_ins_repertoire_series.py
+  raw:
+  - data/raw/ins-publications/rne
+  output: data/processed/ins-repertoire-entreprises/entreprises_tranche.csv
+  unite: nombre d'entreprises
+  perimetre: entreprises privées patentées (fichiers de la DGI et de la CNSS, complétés
+    par ceux de l'APII et de la Douane), neuf tranches de salariés de 0 à 200 et plus,
+    et le total ; une ligne par année et par tranche ; sept éditions de l'INS (2016
+    à 2025), aucune révision d'une édition à l'autre
+  caveats: 'SECTEUR PRIVÉ SEULEMENT : les administrations, les associations et les
+    entreprises publiques sont dans le répertoire mais non publiées. Statut administratif
+    et non statistique d''activité : la tranche 0 (aucun salarié), surtout des indépendants,
+    est probablement surestimée de 11 % (faux actifs, estimation de 2009). La taille
+    vient des déclarations trimestrielles des employeurs à la CNSS. 2018 : la tranche
+    0 passe de 676 140 à 635 571 alors que les autres tranches augmentent, sans explication
+    de l''INS. Éditions antérieures à 2016 non lues ; éditions 2019, 2020 et 2023
+    absentes d''ins.tn.'
+  titre_ar: المؤسسات الخاصة حسب شريحة عدد الأجراء (المعهد الوطني للإحصاء، الدليل الوطني
+    للمؤسسات)، 2001-2024
+  unite_ar: عدد المؤسسات
+  perimetre_ar: المؤسسات الخاصة المرخّص لها (ملفات الإدارة العامة للأداءات والصندوق
+    الوطني للضمان الاجتماعي)، تسع شرائح لعدد الأجراء من 0 إلى 200 فما فوق، والمجموع؛
+    سطر لكل سنة ولكل شريحة.
+  caveats_ar: 'القطاع الخاص فقط: المؤسسات العمومية والإدارات والجمعيات غير منشورة.
+    الحالة إدارية لا إحصائية: شريحة «بدون أجراء» (أغلبها مستقلون) مبالغ فيها على الأرجح
+    بنحو 11 %. سنة 2018: انخفاض هذه الشريحة من 676140 إلى 635571 دون تفسير من المعهد.'
+  fiche: sources/ins-rne-statistiques.md
+- id: ins-repertoire-entreprises-forme
+  titre: Entreprises privées par forme juridique (INS, répertoire national des entreprises),
+    2001-2024
+  sources:
+  - ins-rne-statistiques
+  build: uv run --with pdfplumber python scripts/build_ins_repertoire_series.py
+  raw:
+  - data/raw/ins-publications/rne
+  output: data/processed/ins-repertoire-entreprises/entreprises_forme.csv
+  unite: nombre d'entreprises
+  perimetre: 'mêmes entreprises et même total que ins-repertoire-entreprises-tranche,
+    par forme juridique : personne physique, société anonyme, SARL, SUARL (société
+    unipersonnelle à responsabilité limitée), autres, et le total'
+  caveats: Voir ins-repertoire-entreprises-tranche (secteur privé, statut administratif,
+    faux actifs). Les personnes physiques sont environ 75 % des entreprises.
+  titre_ar: المؤسسات الخاصة حسب الشكل القانوني (المعهد الوطني للإحصاء، الدليل الوطني
+    للمؤسسات)، 2001-2024
+  unite_ar: عدد المؤسسات
+  perimetre_ar: 'نفس المؤسسات ونفس المجموع كما في سلسلة الشرائح، حسب الشكل القانوني:
+    شخص طبيعي، شركة خفية الاسم، شركة محدودة المسؤولية، شركة محدودة المسؤولية بشريك
+    وحيد، أخرى.'
+  caveats_ar: 'انظر سلسلة الشرائح: القطاع الخاص فقط والحالة إدارية.'
+  fiche: sources/ins-rne-statistiques.md
+- id: ins-repertoire-emploi-tranche
+  titre: Emploi salarié formel du secteur privé par tranche de salariés de l'entreprise
+    (INS, répertoire national des entreprises), 2000-2024
+  sources:
+  - ins-rne-statistiques
+  build: uv run --with pdfplumber python scripts/build_ins_repertoire_series.py
+  raw:
+  - data/raw/ins-publications/rne
+  output: data/processed/ins-repertoire-entreprises/emploi_tranche.csv
+  unite: nombre de salariés
+  perimetre: salariés déclarés à la CNSS par les entreprises privées, classés selon
+    la tranche de salariés de leur entreprise (1 à 2 jusqu'à 200 et plus), et le total
+    ; le total est la somme des tranches
+  caveats: 'SECTEUR PRIVÉ SEULEMENT, EMPLOI FORMEL (déclarations trimestrielles à
+    la CNSS) : ni le public, ni l''informel. Le total imprimé s''écarte de la somme
+    des tranches de quelques unités (cellules arrondies) et varie d''une unité d''une
+    édition à l''autre ; la somme est retenue. 2020 : recul de 1 144 215 à 1 076 128,
+    surtout dans les entreprises de 200 salariés et plus (502 503 à 444 576). Éditions
+    antérieures à 2016 non lues.'
+  titre_ar: التشغيل المأجور المنظم في القطاع الخاص حسب شريحة عدد الأجراء بالمؤسسة
+    (المعهد الوطني للإحصاء، الدليل الوطني للمؤسسات)، 2000-2024
+  unite_ar: عدد الأجراء
+  perimetre_ar: الأجراء المصرَّح بهم لدى الصندوق الوطني للضمان الاجتماعي من قبل المؤسسات
+    الخاصة، مصنّفين حسب شريحة عدد الأجراء في مؤسستهم، والمجموع هو مجموع الشرائح.
+  caveats_ar: 'القطاع الخاص والتشغيل المنظم فقط (تصريحات فصلية لدى الصندوق): لا القطاع
+    العمومي ولا غير المنظم. سنة 2020: تراجع من 1144215 إلى 1076128.'
+  fiche: sources/ins-rne-statistiques.md
+- id: ins-repertoire-emploi-forme
+  titre: Emploi salarié formel du secteur privé par forme juridique de l'entreprise
+    (INS, répertoire national des entreprises), 2000-2024
+  sources:
+  - ins-rne-statistiques
+  build: uv run --with pdfplumber python scripts/build_ins_repertoire_series.py
+  raw:
+  - data/raw/ins-publications/rne
+  output: data/processed/ins-repertoire-entreprises/emploi_forme.csv
+  unite: nombre de salariés
+  perimetre: 'mêmes salariés que ins-repertoire-emploi-tranche, classés selon la forme
+    juridique de l''entreprise : personne physique, société anonyme, SARL, SUARL,
+    autres, et le total'
+  caveats: Voir ins-repertoire-emploi-tranche. Les totaux des deux tableaux concordent
+    à quelques unités près (arrondis) ; la somme des formes est retenue.
+  titre_ar: التشغيل المأجور المنظم في القطاع الخاص حسب الشكل القانوني للمؤسسة (المعهد
+    الوطني للإحصاء، الدليل الوطني للمؤسسات)، 2000-2024
+  unite_ar: عدد الأجراء
+  perimetre_ar: نفس الأجراء كما في سلسلة الشرائح، مصنّفين حسب الشكل القانوني للمؤسسة.
+  caveats_ar: 'انظر سلسلة الشرائح: القطاع الخاص والتشغيل المنظم فقط.'
+  fiche: sources/ins-rne-statistiques.md

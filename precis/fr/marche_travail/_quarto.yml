@@ -17,6 +17,7 @@ book:
   chapters:
     - index.qmd
     - _notions.qmd
+    - _employeurs.qmd
     - _institutions.qmd
     - _salaire_minimum.qmd
     - _conventions.qmd
@@ -27,6 +28,7 @@ book:
 
   appendices:
     - _annexe_conventions.qmd
+    - _annexe_repertoire.qmd
     - _glossaire.qmd
 
 bibliography:
