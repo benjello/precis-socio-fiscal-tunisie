@@ -110,3 +110,12 @@ def test_la_consommation_du_mois_s_additionne():
     d = et.enregistrer_passage(d, {"etat": "ok", "caracteres": 50, "traduits": [],
                                    "non_traduits": []}, OCT)
     assert et.consommation(d["historique"], "2026-10") == 150
+
+
+def test_les_pr_ouvertes_sont_listees_avec_leur_sort():
+    prs = [{"number": 7, "title": "Auto-translate sync", "sort": "relecture et fusion à faire à la main"},
+           {"number": 8, "title": "Auto-translate lot", "sort": "fusion automatique activée"}]
+    corps = et.construire_corps(RETARD, OCT, _donnees(), prs_en_attente=prs)
+    assert "#7 Auto-translate sync : relecture et fusion à faire à la main" in corps
+    assert "#8 Auto-translate lot : fusion automatique activée" in corps
+    assert "PR de traduction ouvertes" not in et.construire_corps(RETARD, OCT, _donnees())

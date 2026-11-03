@@ -279,9 +279,10 @@ def construire_corps(retard: list[dict], maintenant: datetime, donnees: dict,
             l.append(f"- `{f}`")
     if prs_en_attente:
         l.append("")
-        l.append("### PR de traduction en attente de fusion manuelle")
+        l.append("### PR de traduction ouvertes")
         for p in prs_en_attente:
-            l.append(f"- #{p['number']} {p.get('title', '')}")
+            l.append(f"- #{p['number']} {p.get('title', '')} : "
+                     f"{p.get('sort', 'relecture et fusion à faire à la main')}")
     l.append("")
     l.append(f"<!-- donnees-traduction: {json.dumps(donnees, ensure_ascii=False)} -->")
     corps = "\n".join(l) + "\n"
@@ -318,6 +319,23 @@ def publier(corps: str) -> str:
         chemin.unlink(missing_ok=True)
 
 
+def prs_en_attente() -> list[dict]:
+    """PR de traduction ouvertes : numéro, titre et sort (fusion automatique en attente ou non)."""
+    try:
+        prs = json.loads(_gh("pr", "list", "--state", "open", "--limit", "100", "--json",
+                             "number,title,headRefName,autoMergeRequest"))
+    except (RuntimeError, ValueError, OSError):
+        return []
+    sortie = []
+    for p in prs:
+        if not p["headRefName"].startswith("auto-translate/"):
+            continue
+        sort = ("fusion automatique activée, en attente des contrôles obligatoires"
+                if p.get("autoMergeRequest") else "relecture et fusion à faire à la main")
+        sortie.append({"number": p["number"], "title": p["title"], "sort": sort})
+    return sortie
+
+
 def issue_courante() -> dict | None:
     try:
         issues = json.loads(_gh("issue", "list", "--state", "all", "--limit", "300",
@@ -349,7 +367,8 @@ def main() -> int:
     else:
         precedent = None
     donnees = enregistrer_passage(lire_donnees(precedent), bilan, maintenant)
-    prs = json.loads(args.prs) if args.prs else None
+    prs = json.loads(args.prs) if args.prs else (
+        prs_en_attente() if args.action == "publier" else None)
     corps = construire_corps(collecter_retard(), maintenant, donnees, prs,
                              args.prochain_lot.split() or None,
                              (bilan or {}).get("nature"))
