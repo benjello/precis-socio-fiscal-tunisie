@@ -1,0 +1,5 @@
+series: [societes-cotees-resultats]
+sources: [bvmt-bh-bank, bvmt-bna, bvmt-ciments-de-bizerte, bvmt-sotumag, bvmt-star, bvmt-stb, bvmt-tunisair]
+fiches: []
+caveats: [Le dividende revenant à l'État est CALCULÉ : dividende par action de l'exercice N, multiplié par les actions de l'État à l'assemblée de l'année N+1 ; il n'est calculé que dans ce cas et n'est pas une recette du budget. Une case vide est une valeur que la page n'imprime pas, non un zéro.]
+generated: 2026-11-03

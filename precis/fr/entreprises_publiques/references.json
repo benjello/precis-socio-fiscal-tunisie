@@ -15817,6 +15817,99 @@
       "title-short": "RNE, portail public",
       "URL": "https://www.registre-entreprises.tn/rne-public/",
       "note": "citation-key: rne-portail\nPortail public du Registre national des entreprises, consulté le 3 novembre 2026 en parcours de visiteur, sans compte : recherche par dénomination, fiche de la société (identifiant, forme juridique, état du registre) et liste des documents déposés avec leur nature, leur date, l'exercice d'un état financier et leur prix ; le contenu des documents n'est pas affiché et rien n'a été acheté. Relevé local : tunisia-data/sources/rne-fiches.csv (SHA-256 f273255f010999dd47fd09f9e6c6f92ece53344009b66e14bb8223aeb471dbbd) et rne-documents.csv (SHA-256 3d1e795797ad5ea7f7a9212e9ca9e72222e538c1e97820bd176ace7d7b38f8b6), 39 entreprises et 376 documents ; scripts/rne_registre_releve.py."
+    },
+    {
+      "id": "bvmt-ra-stb-2021",
+      "type": "report",
+      "title": "Rapport annuel de gestion de l'exercice 2021",
+      "author": [
+        {
+          "literal": "Société tunisienne de banque"
+        }
+      ],
+      "publisher": "Société tunisienne de banque",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2021
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            3
+          ]
+        ]
+      },
+      "title-short": "STB, rapport annuel 2021",
+      "URL": "https://tunis-stockexchange.com/sites/default/files/societes/stb/rapport-annuel-de-gestion/stb-rapport-annuel-de-gestion-31-12-2021.pdf",
+      "note": "citation-key: bvmt-ra-stb-2021\nRapport annuel de gestion de l'exercice 2021, rapport du groupe et états financiers consolidés, publié sur la page de la société à la Bourse de Tunis (/node/81146). Copie locale : tunisia-data/data/raw/entreprises-publiques/bvmt-rapports/stb/stb-rapport-annuel-de-gestion-31-12-2021.pdf (2584693 octets, SHA-256 97c387a33bf0c12488a8f6ab3f6163531d81beedd4efe21a808528e858b944b9), ignorée par git. Cité pour : périmètre de consolidation au 31 décembre 2021 (entités, méthode, pourcentages de contrôle et d'intérêt). Preuve : couche texte du PDF, tableau lu ligne à ligne par scripts/perimetres_groupes_bancaires.py."
+    },
+    {
+      "id": "bvmt-ra-bh-2021",
+      "type": "report",
+      "title": "Rapport annuel de gestion de l'exercice 2021",
+      "author": [
+        {
+          "literal": "Banque de l'habitat"
+        }
+      ],
+      "publisher": "Banque de l'habitat",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2021
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            3
+          ]
+        ]
+      },
+      "title-short": "BH, rapport annuel 2021",
+      "URL": "https://tunis-stockexchange.com/sites/default/files/societes/bh/rapport-annuel-de-gestion/bh-rapport-annuel-de-gestion-31-12-2021.pdf",
+      "note": "citation-key: bvmt-ra-bh-2021\nRapport annuel de gestion de l'exercice 2021, rapport du groupe et états financiers consolidés, publié sur la page de la société à la Bourse de Tunis (/node/81188). Copie locale : tunisia-data/data/raw/entreprises-publiques/bvmt-rapports/bh-bank/bh-rapport-annuel-de-gestion-31-12-2021.pdf (17636572 octets, SHA-256 13d2a7bf6d2307b47e543202002f7c531296479e9fcd2b75327d9f1daeca81a7), ignorée par git. Cité pour : périmètre de consolidation au 31 décembre 2021 (entités, méthode, pourcentages de contrôle et d'intérêt). Preuve : couche texte du PDF, tableau lu ligne à ligne par scripts/perimetres_groupes_bancaires.py."
+    },
+    {
+      "id": "bvmt-ra-bna-2021",
+      "type": "report",
+      "title": "Rapport annuel de gestion de l'exercice 2021",
+      "author": [
+        {
+          "literal": "Banque nationale agricole"
+        }
+      ],
+      "publisher": "Banque nationale agricole",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2021
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            3
+          ]
+        ]
+      },
+      "title-short": "BNA, rapport annuel 2021",
+      "URL": "https://tunis-stockexchange.com/sites/default/files/societes/bna/rapport-annuel-de-gestion/bna-rapport-annuel-de-gestion-31-12-2021.pdf",
+      "note": "citation-key: bvmt-ra-bna-2021\nRapport annuel de gestion de l'exercice 2021, rapport du groupe et états financiers consolidés, publié sur la page de la société à la Bourse de Tunis (/node/81184). Copie locale : tunisia-data/data/raw/entreprises-publiques/bvmt-rapports/bna/bna-rapport-annuel-de-gestion-31-12-2021.pdf (7579385 octets, SHA-256 8a01faa407f1628b6b9257644ebb20b90a41fa5083a09f9a9f5850374df381d7), ignorée par git. Cité pour : périmètre de consolidation au 31 décembre 2021 (entités, méthode, pourcentages de contrôle et d'intérêt). Preuve : couche texte du PDF, tableau lu ligne à ligne par scripts/perimetres_groupes_bancaires.py."
     }
   ]
 }
