@@ -293,6 +293,8 @@ THEMES_CAC = {
     "retraites": "Indemnités de départ à la retraite",
     "fonds_etat": "Fonds budgétaires de l'État",
     "produits": "Produits identifiés par client",
+    "sotumag_chambres_froides": "Chambres froides louées comme boxes d'emballage (SOTUMAG)",
+    "sotumag_pharmacies": "Pharmacies et laboratoires conventionnés (SOTUMAG)",
 }
 
 
