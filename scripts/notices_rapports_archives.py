@@ -103,6 +103,34 @@ SPECS = [
         "stb/20211103_STB_RAPPORT_2018_FRANÇAIS.pdf",
         "périmètre de consolidation aux 31 décembre 2017 et 2018",
     ),
+    (
+        "ra-bh-2017",
+        "Banque de l'habitat",
+        2017,
+        "bh/20221118_Rapport-annuel-Fr_2017.pdf",
+        "périmètre de consolidation de l'exercice 2017 et de l'exercice précédent",
+    ),
+    (
+        "ra-bh-2019",
+        "Banque de l'habitat",
+        2019,
+        "bh/20240507_Rapport_BH_2019_FR_VF.pdf",
+        "périmètre de consolidation de l'exercice 2019 et de l'exercice précédent",
+    ),
+    (
+        "ra-bh-2021",
+        "Banque de l'habitat",
+        2021,
+        "bh/20240507_BH_Rapport_annuel_2021Part_3.pdf",
+        "périmètre de consolidation de l'exercice 2021 et de l'exercice précédent",
+    ),
+    (
+        "ra-bh-2022",
+        "Banque de l'habitat",
+        2022,
+        "bh/20240507_Rapport-Annuel-Fr_2022-PART3.pdf",
+        "périmètre de consolidation de l'exercice 2022 et de l'exercice précédent",
+    ),
 ]
 
 

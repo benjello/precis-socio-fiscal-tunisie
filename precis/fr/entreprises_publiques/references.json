@@ -16728,6 +16728,138 @@
       "archive": "Bourse de Tunis",
       "archive_location": "https://tunis-stockexchange.com/sites/default/files/societes/stb/etats-financiers/stb-etats-financiers-annuels-consolides-31-12-2024.pdf",
       "note": "citation-key: bvmt-ef-stb-2024-consolide\nÉtats financiers consolidés de l'exercice 2024, page de la société sur le site de la Bourse de Tunis. Copie locale : tunisia-data/data/raw/entreprises-publiques/bvmt-etats-financiers/stb/2024_consolide.pdf (718261 octets, SHA-256 05a3fc33c6187f4f56b86fcfab7da6149c57b470d694f2db5008829ea82cbdaa), ignorée par git. Cité pour : opinion des commissaires aux comptes et périmètre de consolidation. Preuve : couche texte du PDF, lue par scripts/opinions_cac.py et scripts/perimetres_groupes_bancaires.py."
+    },
+    {
+      "id": "ra-bh-2017",
+      "type": "report",
+      "title": "Rapport annuel 2017",
+      "author": [
+        {
+          "literal": "Banque de l'habitat"
+        }
+      ],
+      "publisher": "Banque de l'habitat",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2017
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            3
+          ]
+        ]
+      },
+      "title-short": "Banque de l'habitat, rapport annuel 2017",
+      "URL": "https://web.archive.org/web/20221118074048/https://www.bhbank.tn/sites/default/files/Rapport-annuel-Fr_2017.pdf",
+      "archive": "Internet Archive (Wayback Machine)",
+      "archive_location": "https://www.bhbank.tn/sites/default/files/Rapport-annuel-Fr_2017.pdf",
+      "note": "citation-key: ra-bh-2017\nRapport annuel de l'exercice 2017, consulté dans la capture de l'Internet Archive du 18/11/2022 du site de l'éditeur. Copie locale : tunisia-data/data/raw/entreprises-publiques/bvmt-rapports-archives/bh/20221118_Rapport-annuel-Fr_2017.pdf (1587922 octets, SHA-256 22179c79587492cc9c348eee7c70da774b6640e56968245d21623c169d233654), ignorée par git. Cité pour : périmètre de consolidation de l'exercice 2017 et de l'exercice précédent. Preuve : couche texte du PDF, tableau lu ligne à ligne par scripts/perimetres_groupes_bancaires.py."
+    },
+    {
+      "id": "ra-bh-2019",
+      "type": "report",
+      "title": "Rapport annuel 2019",
+      "author": [
+        {
+          "literal": "Banque de l'habitat"
+        }
+      ],
+      "publisher": "Banque de l'habitat",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2019
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            3
+          ]
+        ]
+      },
+      "title-short": "Banque de l'habitat, rapport annuel 2019",
+      "URL": "https://web.archive.org/web/20240507183443/https://www.bhbank.tn/sites/default/files/Rapport%20BH%202019_FR_VF.pdf",
+      "archive": "Internet Archive (Wayback Machine)",
+      "archive_location": "https://www.bhbank.tn/sites/default/files/Rapport%20BH%202019_FR_VF.pdf",
+      "note": "citation-key: ra-bh-2019\nRapport annuel de l'exercice 2019, consulté dans la capture de l'Internet Archive du 07/05/2024 du site de l'éditeur. Copie locale : tunisia-data/data/raw/entreprises-publiques/bvmt-rapports-archives/bh/20240507_Rapport_BH_2019_FR_VF.pdf (1844728 octets, SHA-256 5c7987b2f390a7691c38ba4580cf4caf6af23b1b1e66435200034c31bf1fec89), ignorée par git. Cité pour : périmètre de consolidation de l'exercice 2019 et de l'exercice précédent. Preuve : couche texte du PDF, tableau lu ligne à ligne par scripts/perimetres_groupes_bancaires.py."
+    },
+    {
+      "id": "ra-bh-2021",
+      "type": "report",
+      "title": "Rapport annuel 2021",
+      "author": [
+        {
+          "literal": "Banque de l'habitat"
+        }
+      ],
+      "publisher": "Banque de l'habitat",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2021
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            3
+          ]
+        ]
+      },
+      "title-short": "Banque de l'habitat, rapport annuel 2021",
+      "URL": "https://web.archive.org/web/20240507183436/https://www.bhbank.tn/sites/default/files/BH_Rapport%20annuel_2021Part%203.pdf",
+      "archive": "Internet Archive (Wayback Machine)",
+      "archive_location": "https://www.bhbank.tn/sites/default/files/BH_Rapport%20annuel_2021Part%203.pdf",
+      "note": "citation-key: ra-bh-2021\nRapport annuel de l'exercice 2021, consulté dans la capture de l'Internet Archive du 07/05/2024 du site de l'éditeur. Copie locale : tunisia-data/data/raw/entreprises-publiques/bvmt-rapports-archives/bh/20240507_BH_Rapport_annuel_2021Part_3.pdf (1921753 octets, SHA-256 57b0b44a4813c99748968d3c6a1a979df223409433d27ef4e728d88b95f4551f), ignorée par git. Cité pour : périmètre de consolidation de l'exercice 2021 et de l'exercice précédent. Preuve : couche texte du PDF, tableau lu ligne à ligne par scripts/perimetres_groupes_bancaires.py."
+    },
+    {
+      "id": "ra-bh-2022",
+      "type": "report",
+      "title": "Rapport annuel 2022",
+      "author": [
+        {
+          "literal": "Banque de l'habitat"
+        }
+      ],
+      "publisher": "Banque de l'habitat",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2022
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            3
+          ]
+        ]
+      },
+      "title-short": "Banque de l'habitat, rapport annuel 2022",
+      "URL": "https://web.archive.org/web/20240507183442/https://www.bhbank.tn/sites/default/files/Rapport-Annuel-Fr_2022-PART3.pdf",
+      "archive": "Internet Archive (Wayback Machine)",
+      "archive_location": "https://www.bhbank.tn/sites/default/files/Rapport-Annuel-Fr_2022-PART3.pdf",
+      "note": "citation-key: ra-bh-2022\nRapport annuel de l'exercice 2022, consulté dans la capture de l'Internet Archive du 07/05/2024 du site de l'éditeur. Copie locale : tunisia-data/data/raw/entreprises-publiques/bvmt-rapports-archives/bh/20240507_Rapport-Annuel-Fr_2022-PART3.pdf (924791 octets, SHA-256 761542bb32e920a12f57c39de93f0635adea70449b42b748662a6557758bdc67), ignorée par git. Cité pour : périmètre de consolidation de l'exercice 2022 et de l'exercice précédent. Preuve : couche texte du PDF, tableau lu ligne à ligne par scripts/perimetres_groupes_bancaires.py."
     }
   ]
 }

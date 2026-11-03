@@ -286,6 +286,49 @@ La source est le rapport sur les entreprises publiques que le ministère des Fin
 :::::
 
 
+**Le groupe BH consolide les mêmes onze entités autour de la banque de 2016 à 2022, dix filiales par intégration globale et une entreprise associée, la TFB, mise en équivalence ; seuls leurs noms, à partir de 2019, et leurs pourcentages changent.** Les rapports annuels de 2017, 2019, 2021 et 2022 donnent chacun deux exercices ; le rapport de 2017 annonce douze entités autour de la mère mais n'en imprime que onze dans son tableau. [@ra-bh-2017, p. 71 ; @ra-bh-2019, p. 103 ; @ra-bh-2021, p. 105 ; @ra-bh-2022, p. 73]
+
+- **Des noms qui changent en 2019.** Le rapport de 2017 imprime Modern Leasing, Assurance SALIM, SIM SICAR, SOPIVEL, Société Général Recouvrement, SICAF BH Epargne Investissement et SICAV BH-Placement ; celui de 2019, pour 2018 et 2019, BH Leasing, BH Assurances, BH Equity, BH Immo, BH Recouvrement, BH SICAF et SICAV BH-Capitalisation. Le tableau rapproche chaque nom ancien du nouveau par le pourcentage d'intérêt, qui reste à quelques centièmes près : 52,84 % pour SIM SICAR en 2017, 53,02 % pour BH Equity en 2018 [@ra-bh-2017 ; @ra-bh-2019].
+- **Des pourcentages qui bougent peu, sauf deux.** BH Leasing passe de 52,77 % en 2016 à 57,05 % de 2019 à 2022. La TFB passe de 44,28 % en 2016 à 33,41 % en 2018, 27,86 % en 2020 et 2021, puis 18,79 % en 2022. La SICAV BH-Capitalisation passe de 77,25 % en 2019 à 31,44 % en 2020, 21,24 % en 2021 et 20,25 % en 2022 [@ra-bh-2017 ; @ra-bh-2019 ; @ra-bh-2021 ; @ra-bh-2022].
+
+```{python}
+#| label: fig-ep-bh-filiales
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import cotees as ct
+ct.figure_evolution(
+    "BH",
+    caption=("Les entités que la BH consolide, mère non comprise, de 2016 à 2022 (31 décembre) : "
+             "pourcentage d'intérêt du groupe, d'après les rapports annuels de 2017, 2019, 2021 et 2022. "
+             "Source : [@ra-bh-2017 ; @ra-bh-2019 ; @ra-bh-2021 ; @ra-bh-2022]"),
+    note_lecture=(
+        "Une ligne par entité, dans l'ordre de leur entrée dans le périmètre ; « ME » : mise en "
+        "équivalence. Les noms d'avant 2019 sont rapprochés de ceux d'après par le pourcentage "
+        "d'intérêt ; l'exercice 2018 est lu dans le rapport de 2019 et l'exercice 2020 dans celui de 2021. "
+        "Les exercices 2023 et 2024 ne sont pas lus : ils n'ont pas de colonne."))
+```
+
+::: {.chronologie-repliable titre="Les entités que la BH consolide, exercice par exercice, 2016-2022 : pourcentage d'intérêt"}
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import cotees as ct
+ct.tableau_evolution(
+    "BH",
+    caption=("Les entités que la BH consolide, mère non comprise, de 2016 à 2022 (31 décembre) : "
+             "pourcentage d'intérêt du groupe ; « (ME) » : mise en équivalence ; « – » : entité non "
+             "consolidée cet exercice-là. Rapports annuels de 2017, 2019, 2021 et 2022 (chacun donne "
+             "deux exercices). [@ra-bh-2017 ; @ra-bh-2019 ; @ra-bh-2021 ; @ra-bh-2022]"),
+    tbl_id="tbl-ep-bh-evolution")
+```
+
+:::
+
+<!-- TODO (documentaliste) : BH : (a) sources des changements de nom de 2019 : Banque de l'habitat devenue BH Bank (AGE du 30 avril 2019), Assurances Salim devenue BH Assurance (AGE du 8 août 2019), Modern Leasing devenue BH Leasing (AGE du 11 octobre 2019, bvmt.com.tn/sites/default/files/societes/modern-leasing/assemblee-generale/ml-assemblee-generale-extraordinaire-11-10-2019.pdf), SICAV BH-Placement devenue BH-Capitalisation (effet du 2 janvier 2019, communiqué CMF) ; pas de source trouvée pour SIM SICAR/BH Equity, SOPIVEL/BH Immo, Général Recouvrement/BH Recouvrement, SICAF BH Epargne Investissement/BH SICAF : rapprochement par les pourcentages seulement. (b) rapport de 2017 : douze entités annoncées, onze imprimées. (c) exercices 2023 et 2024 : rapport de 2023 en deux parties sans tableau lisible par le texte, rapport de 2024 corrompu (à retélécharger). (d) opinion des commissaires aux comptes de la BH, par exercice. -->
+
 ## La Banque nationale agricole {#sec-ep-ge-bna}
 
 La recapitalisation des banques publiques de 2013 à 2019, dont la souscription de l'État au capital de la BNA en 2019, est exposée au chapitre « Restructurer » (@sec-ep-banques-publiques).

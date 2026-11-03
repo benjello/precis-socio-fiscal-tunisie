@@ -1,0 +1,84 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-11-03
+# séries (tunisia_data) : groupes-bancaires-perimetre
+# sources (citation) : @bvmt-ra-stb-2021, @bvmt-ra-bh-2021, @bvmt-ra-bna-2021, @ra-stb-2011, @ra-stb-2013, @ra-stb-2014, @ra-stb-2015, @ra-stb-2017, @ra-stb-2018, @bvmt-ef-stb-2019-consolide, @ra-bna-2007, @ra-bna-2020, @ra-bh-2017, @ra-bh-2019, @ra-bh-2021, @ra-bh-2022
+# fiches : 
+# méthode/hypothèses : Le pourcentage d'intérêt est la part du capital détenue directement et indirectement par le groupe, non la part directe de la banque. Un exercice sans rapport lu (2019 pour la STB) n'a pas de colonne. La méthode n'est pas donnée pour 2020 et 2021 (STB).
+# note : Les entités que la BH consolide, mère non comprise, de 2016 à 2022 (31 décembre) : pourcentage d'intérêt du groupe, d'après les rapports annuels de 2017, 2019, 2021 et 2022. Source : [@ra-bh-2017 ; @ra-bh-2019 ; @ra-bh-2021 ; @ra-bh-2022]
+entite,exercice,interet_ou_controle_pct,methode
+BH ASSURANCES,2016,33.88,intégration globale ou non précisée
+BH ASSURANCES,2017,33.88,intégration globale ou non précisée
+BH ASSURANCES,2018,33.94,intégration globale ou non précisée
+BH ASSURANCES,2019,34.13,intégration globale ou non précisée
+BH ASSURANCES,2020,34.13,intégration globale ou non précisée
+BH ASSURANCES,2021,34.13,intégration globale ou non précisée
+BH ASSURANCES,2022,34.13,intégration globale ou non précisée
+BH EQUITY,2016,52.84,intégration globale ou non précisée
+BH EQUITY,2017,52.84,intégration globale ou non précisée
+BH EQUITY,2018,53.02,intégration globale ou non précisée
+BH EQUITY,2019,53.08,intégration globale ou non précisée
+BH EQUITY,2020,53.08,intégration globale ou non précisée
+BH EQUITY,2021,53.08,intégration globale ou non précisée
+BH EQUITY,2022,53.08,intégration globale ou non précisée
+BH IMMO,2016,58.4,intégration globale ou non précisée
+BH IMMO,2017,58.4,intégration globale ou non précisée
+BH IMMO,2018,58.44,intégration globale ou non précisée
+BH IMMO,2019,58.52,intégration globale ou non précisée
+BH IMMO,2020,58.52,intégration globale ou non précisée
+BH IMMO,2021,58.52,intégration globale ou non précisée
+BH IMMO,2022,58.52,intégration globale ou non précisée
+BH INVEST,2016,62.27,intégration globale ou non précisée
+BH INVEST,2017,62.27,intégration globale ou non précisée
+BH INVEST,2018,62.27,intégration globale ou non précisée
+BH INVEST,2019,62.31,intégration globale ou non précisée
+BH INVEST,2020,62.31,intégration globale ou non précisée
+BH INVEST,2021,62.31,intégration globale ou non précisée
+BH INVEST,2022,62.31,intégration globale ou non précisée
+BH LEASING,2016,52.77,intégration globale ou non précisée
+BH LEASING,2017,52.63,intégration globale ou non précisée
+BH LEASING,2018,56.09,intégration globale ou non précisée
+BH LEASING,2019,57.05,intégration globale ou non précisée
+BH LEASING,2020,57.05,intégration globale ou non précisée
+BH LEASING,2021,57.05,intégration globale ou non précisée
+BH LEASING,2022,57.05,intégration globale ou non précisée
+BH RECOUVREMENT,2016,77.34,intégration globale ou non précisée
+BH RECOUVREMENT,2017,77.32,intégration globale ou non précisée
+BH RECOUVREMENT,2018,77.7,intégration globale ou non précisée
+BH RECOUVREMENT,2019,77.84,intégration globale ou non précisée
+BH RECOUVREMENT,2020,77.84,intégration globale ou non précisée
+BH RECOUVREMENT,2021,77.84,intégration globale ou non précisée
+BH RECOUVREMENT,2022,77.84,intégration globale ou non précisée
+BH SICAF,2016,53.17,intégration globale ou non précisée
+BH SICAF,2017,53.17,intégration globale ou non précisée
+BH SICAF,2018,53.17,intégration globale ou non précisée
+BH SICAF,2019,53.17,intégration globale ou non précisée
+BH SICAF,2020,53.18,intégration globale ou non précisée
+BH SICAF,2021,53.18,intégration globale ou non précisée
+BH SICAF,2022,53.18,intégration globale ou non précisée
+SICAV BH-Capitalisation,2016,71.17,intégration globale ou non précisée
+SICAV BH-Capitalisation,2017,76.83,intégration globale ou non précisée
+SICAV BH-Capitalisation,2018,76.86,intégration globale ou non précisée
+SICAV BH-Capitalisation,2019,77.25,intégration globale ou non précisée
+SICAV BH-Capitalisation,2020,31.44,intégration globale ou non précisée
+SICAV BH-Capitalisation,2021,21.24,intégration globale ou non précisée
+SICAV BH-Capitalisation,2022,20.25,intégration globale ou non précisée
+SICAV BH-Obligataire,2016,5.14,intégration globale ou non précisée
+SICAV BH-Obligataire,2017,7.01,intégration globale ou non précisée
+SICAV BH-Obligataire,2018,9.56,intégration globale ou non précisée
+SICAV BH-Obligataire,2019,12.25,intégration globale ou non précisée
+SICAV BH-Obligataire,2020,9.57,intégration globale ou non précisée
+SICAV BH-Obligataire,2021,10.0,intégration globale ou non précisée
+SICAV BH-Obligataire,2022,9.66,intégration globale ou non précisée
+STIMEC (BH PRINT),2016,43.01,intégration globale ou non précisée
+STIMEC (BH PRINT),2017,43.01,intégration globale ou non précisée
+STIMEC (BH PRINT),2018,43.07,intégration globale ou non précisée
+STIMEC (BH PRINT),2019,43.11,intégration globale ou non précisée
+STIMEC (BH PRINT),2020,43.11,intégration globale ou non précisée
+STIMEC (BH PRINT),2021,43.11,intégration globale ou non précisée
+STIMEC (BH PRINT),2022,43.11,intégration globale ou non précisée
+TFB,2016,44.28,mise en équivalence
+TFB,2017,33.89,mise en équivalence
+TFB,2018,33.41,mise en équivalence
+TFB,2019,34.22,mise en équivalence
+TFB,2020,27.86,mise en équivalence
+TFB,2021,27.86,mise en équivalence
+TFB,2022,18.79,mise en équivalence

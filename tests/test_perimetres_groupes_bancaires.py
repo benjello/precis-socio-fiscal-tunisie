@@ -27,6 +27,28 @@ SOFELAN                      0,00%      60,63%      -60,63%            NI       
 MGERT                        49,95%      0,00%      49,95%             IG          NI               49,94%         0,00%        49,94%
 SICAV OBLIG                  1,61%       1,59%          0,01%       MEE           MEE               1,55%       1,47%         0,07%
 """
+BH_RAPPORT_2019 = """
+Les entreprises retenues dans le périmètre de consolidation, le pourcentage d'intérêt ainsi que les méthodes de leur
+consolidation, se présentent comme suit:
+Désignation
+2019 2018 2019 2018
+BH BANK 100,00 100,00 100,00 100,00
+Intégration
+Globale
+Tunisie
+TFB 34,22 33,42 34,22 33,41
+Mise en équiva-
+lence
+France
+Méthodes de consolidation
+"""
+BH_RAPPORT_2022 = """
+se présentent comme suit :
+BH BANK 100,00 100,00 Intégration Globale Tunisie
+TFB 18,79 27,86 Mise en équivalence France
+SICAV BH-Capitalisation 20,25 21,24 Intégration Globale Tunisie
+• Méthodes de consolidation
+"""
 STB = """
 SOCIETES CONSOLIDEES
    1. STB BANK (société Mère)                           100,00%   100,00%    0,00%
@@ -77,6 +99,26 @@ class TestStbConsolide2019(unittest.TestCase):
             par[("2018", "SICAV EPARGNE OBLIGATAIRE")][3], "mise en équivalence"
         )
         self.assertEqual(len(lignes), 6)
+
+
+class TestBhRapport(unittest.TestCase):
+    def test_quatre_pourcentages_puis_methode_sur_les_lignes_suivantes(self):
+        par = {(r[1], r[2]): r for r in p.bh_rapport(BH_RAPPORT_2019, 2019)}
+        self.assertEqual(
+            par[("2019", "TFB")][3:6], ["mise en équivalence", "34.22", "34.22"]
+        )
+        self.assertEqual(par[("2018", "TFB")][4:6], ["33.42", "33.41"])
+        self.assertEqual(par[("2019", "BH BANK")][3], "mère")
+
+    def test_deux_pourcentages_et_methode_sur_la_ligne(self):
+        lignes = p.bh_rapport(BH_RAPPORT_2022, 2022)
+        par = {(r[1], r[2]): r for r in lignes}
+        self.assertEqual(len(lignes), 6)
+        self.assertEqual(par[("2021", "TFB")][5], "27.86")
+        self.assertEqual(
+            par[("2022", "SICAV BH-Capitalisation")][3:6],
+            ["intégration globale", "", "20.25"],
+        )
 
 
 if __name__ == "__main__":

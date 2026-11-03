@@ -44,7 +44,11 @@ REGISTRE = "entreprises-publiques-registre"
 PERIMETRE = "groupes-bancaires-perimetre"
 # Un nom d'entité change d'un rapport à l'autre (« S.T.C VERITAS » et « S.T.C.V VERITAS ») : la clé les réunit.
 ALIAS_ENTITES = {"STCVERITAS": "STCVVERITAS", "GENERALEDESVENTES": "GENERALEDEVENTE", "ELMEDINA": "SPIMADINA", "ZIED": "ZIEDSARL",
-                 "TIS": "TUNISIEINFORMATIQUESERVICES", "TUNISIENNEDEREASSURANCE": "TUNISRE", "TUNISIERE": "TUNISRE", "SICAFPARTICIPATIONSBNA": "SICAFPARTICIPATIONS", "SPBSICAFPARTICIPATIONS": "SICAFPARTICIPATIONS"}
+                 "TIS": "TUNISIEINFORMATIQUESERVICES", "TUNISIENNEDEREASSURANCE": "TUNISRE", "TUNISIERE": "TUNISRE", "SICAFPARTICIPATIONSBNA": "SICAFPARTICIPATIONS", "SPBSICAFPARTICIPATIONS": "SICAFPARTICIPATIONS",
+                 # BH : noms d'avant 2019 (rapport de 2017) rapprochés des noms d'après ; les quatre premiers sont attestés par un acte ou un avis, les suivants le sont par les pourcentages d'intérêt (voir la section de la BH)
+                 "BANQUEDELHABITAT": "BHBANK", "ASSURANCESALIM": "BHASSURANCES", "MODERNLEASING": "BHLEASING", "SICAVBHPLACEMENT": "SICAVBHCAPITALISATION",
+                 "SICAVBHOBLIGATOIRE": "SICAVBHOBLIGATAIRE", "SICAFBHEPARGNEINVESTISSEMENT": "BHSICAF", "GENERALRECOUVREMENT": "BHRECOUVREMENT", "SIMSICAR": "BHEQUITY",
+                 "SOPIVEL": "BHIMMO", "STIMEC": "BHPRINT"}
 RAPPORTS = {"STB": "bvmt-ra-stb-2021", "BH": "bvmt-ra-bh-2021", "BNA": "bvmt-ra-bna-2021"}
 PAGES_RAPPORT = {"STB": "p. 96-97", "BH": "p. 240", "BNA": "p. 127"}
 COULEURS = {"STB": "#0969da", "BH": "#bc4c00", "BNA": "#1a7f37"}
