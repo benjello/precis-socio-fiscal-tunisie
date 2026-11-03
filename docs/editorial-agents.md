@@ -12,7 +12,7 @@ rédaction FR (agents Claude) → PR
    → translation-sync.yml   : traduit FR→AR et committe l'AR sur la branche
    → verify-translation.yml : Checker AI commente la PR (échoue si anomalie)
    → revue humaine → merge
-   → deploy.yml             : build.sh (régénère le glossaire) + déploiement Pages
+   → deploy.yml             : rendre.yml (un livre par job, cache par livre ; build.sh régénère le glossaire) + déploiement Pages
 ```
 
 Les agents Claude ne rédigent donc **jamais** l'arabe : ils produisent un FR de qualité,

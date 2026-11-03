@@ -1,0 +1,167 @@
+name: Rendre le site
+
+# Workflow APPELÉ — par `deploy.yml` (avec PDF, puis publication) et par `rendre-les-livres.yml`
+# (HTML seul, contrôle de PR). Il rend UN livre par job, en parallèle, puis assemble le site.
+#
+# Avant (build.sh en série) : 53 min pour 13 livres français et 10 arabes, le 3 novembre 2026,
+# dont 15 min pour `entreprises_publiques` ; une fusion qui ne touchait qu'un livre les
+# reconstruisait tous. Maintenant :
+#   - la durée est celle du livre le plus long, plus l'assemblage ;
+#   - un livre dont les entrées n'ont pas changé reprend son `public/` du cache, sans rendu.
+#
+# CLÉ DU CACHE. Elle couvre tout ce qui peut changer le rendu d'un livre : le livre lui-même
+# (sauf son `public/`), les fichiers partagés de la langue et de `precis/` (bibliographies,
+# style de citation, glossaire, feuilles de style), les séries snapshotées (`_seriescache`),
+# les scripts, les dépendances et ce fichier. Un oubli dans cette liste donne un livre
+# périmé : ajouter ici tout nouveau fichier partagé. `CACHE_VERSION` invalide tout d'un coup.
+#
+# Un PDF qui échoue (`fiscalite`, par exemple) laisse le HTML : `build.sh` le dit et rend 0 ;
+# le livre est alors mis en cache sans PDF jusqu'au prochain changement de ses entrées.
+
+on:
+  workflow_call:
+    inputs:
+      pdf:
+        description: "Produire aussi les PDF"
+        type: boolean
+        default: false
+      publier:
+        description: "Déposer le site assemblé comme artefact GitHub Pages"
+        type: boolean
+        default: false
+
+  # Lancement à la main, pour essayer le rendu avec PDF sans rien publier (`publier` reste faux).
+  workflow_dispatch:
+    inputs:
+      pdf:
+        description: "Produire aussi les PDF"
+        type: boolean
+        default: true
+      publier:
+        description: "Déposer le site assemblé comme artefact GitHub Pages (sans le déployer)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+env:
+  CACHE_VERSION: v1
+
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    outputs:
+      matrice: ${{ steps.liste.outputs.matrice }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v5
+
+      - name: Livres à rendre
+        id: liste
+        run: echo "matrice=$(./build.sh --list-units)" >> "$GITHUB_OUTPUT"
+
+  livre:
+    needs: plan
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix: ${{ fromJSON(needs.plan.outputs.matrice) }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v5
+
+      - name: Livre déjà rendu avec ces entrées ?
+        id: cache
+        uses: actions/cache@v4
+        with:
+          path: precis/${{ matrix.unite }}/public
+          key: rendu-${{ env.CACHE_VERSION }}-${{ inputs.pdf && 'pdf' || 'html' }}-${{ matrix.unite }}-${{ hashFiles(format('precis/{0}/**', matrix.unite), format('!precis/{0}/public/**', matrix.unite), format('precis/{0}/*.json', matrix.lang), format('precis/{0}/*.bib', matrix.lang), 'precis/*.yml', 'precis/*.csl', 'precis/*.scss', 'precis/*.html', 'precis/*.json', 'precis/*.bib', 'precis/_seriescache/**', 'scripts/**', 'pyproject.toml', 'uv.lock', 'build.sh', '.github/workflows/rendre.yml') }}
+
+      - name: Set up Quarto
+        if: steps.cache.outputs.cache-hit != 'true'
+        uses: quarto-dev/quarto-actions/setup@v2
+
+      # Voir `deploy.yml` avant le 3 novembre 2026 : l'installation de TinyTeX interroge l'API
+      # GitHub ; sans jeton, l'appel anonyme est refusé (403) dès que la limitation de débit
+      # s'applique. Le PDF est un supplément : l'étape ne doit pas arrêter le rendu du HTML.
+      - name: Install TinyTeX for PDF rendering
+        if: steps.cache.outputs.cache-hit != 'true' && inputs.pdf
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: quarto install tinytex
+
+      - name: Install uv
+        if: steps.cache.outputs.cache-hit != 'true'
+        uses: astral-sh/setup-uv@v7
+
+      - name: Install Python dependencies via uv
+        if: steps.cache.outputs.cache-hit != 'true'
+        run: uv sync
+
+      - name: Rendre le livre
+        if: steps.cache.outputs.cache-hit != 'true'
+        run: ./build.sh --only ${{ matrix.unite }} ${{ inputs.pdf && ' ' || '--no-pdf' }}
+
+      - name: Garder le livre rendu pour l'assemblage
+        uses: actions/upload-artifact@v4
+        with:
+          name: public-${{ matrix.lang }}-${{ matrix.book }}
+          path: precis/${{ matrix.unite }}/public
+          retention-days: 1
+          if-no-files-found: error
+
+  assemblage:
+    needs: livre
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v5
+
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v7
+
+      - name: Install Python dependencies via uv
+        run: uv sync
+
+      - name: Reprendre les livres rendus
+        uses: actions/download-artifact@v4
+        with:
+          pattern: public-*
+          path: livres
+
+      - name: Remettre chaque livre à sa place
+        run: |
+          for d in livres/public-*; do
+            n="${d#livres/public-}"
+            lang="${n%%-*}"
+            book="${n#*-}"
+            mkdir -p "precis/$lang/$book/public"
+            cp -r "$d"/. "precis/$lang/$book/public/"
+          done
+
+      - name: Pages générales et assemblage du site
+        run: ./build.sh --assemble --no-pdf
+
+      - name: Déposer le site pour GitHub Pages
+        if: inputs.publier
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: local_site
+
+      - name: Ce qui a été produit
+        if: always()
+        run: |
+          {
+            echo "## Livres rendus"
+            echo
+            if [ -d local_site ]; then
+              find local_site -name index.html | sort | sed 's|^|- |'
+            else
+              echo "Aucun site assemblé : le rendu a échoué avant l'assemblage."
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"

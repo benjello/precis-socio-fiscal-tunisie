@@ -63,7 +63,7 @@ Le build du site est **autonome** : il ne dépend pas du repo privé `tunisia-da
   `PYTHONPATH=scripts uv run python -c "import figtools; figtools.refresh_cache(*ids)"`,
   enfin commit de `precis/_seriescache/`. À refaire quand une série change.
 - `tunisia-data` (entrepôt) : `make data` (fetch+build), `tunisia-data validate`.
-- CI/Pages (`deploy.yml`) : `uv sync` (cœur, sans entrepôt) → `build.sh` rend le site
+- CI/Pages (`deploy.yml`, qui appelle `rendre.yml`) : `uv sync` (cœur, sans entrepôt) → `build.sh` rend le site, un livre par job
   depuis le snapshot. Les PNG de figures sont régénérés au render (non committés).
 
 ## Conséquences

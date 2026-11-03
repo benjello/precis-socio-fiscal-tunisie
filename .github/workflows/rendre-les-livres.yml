@@ -43,6 +43,7 @@ on:
       # l'introduit ne le déclenche pas, et il serait fusionné sans avoir
       # jamais tourné.
       - '.github/workflows/rendre-les-livres.yml'
+      - '.github/workflows/rendre.yml'
   workflow_dispatch:
 
 permissions:
@@ -53,38 +54,9 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  # Même rendu parallèle et même cache que le déploiement (`rendre.yml`), sans PDF.
   rendre:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout du précis
-        uses: actions/checkout@v5
-
-      - name: Set up Quarto
-        uses: quarto-dev/quarto-actions/setup@v2
-
-      - name: Install uv
-        uses: astral-sh/setup-uv@v7
-
-      - name: Install Python dependencies via uv
-        run: uv sync
-
-      # Le build doit être AUTONOME : ni openfisca-tunisia ni tunisia-data ne sont
-      # installés ici, pas plus qu'au déploiement. Les tableaux de paramètres et les
-      # séries statistiques sont des snapshots versionnés, relus par le build. Si ce
-      # job échoue faute d'un de ces paquets, c'est qu'un module a recommencé à lire
-      # une source vive — ce que ce contrôle est précisément là pour interdire.
-      - name: Rendre tous les livres, dans les deux langues
-        run: ./build.sh --no-pdf
-
-      - name: Ce qui a été produit
-        if: always()
-        run: |
-          {
-            echo "## Livres rendus"
-            echo
-            if [ -d local_site ]; then
-              find local_site -name index.html | sort | sed 's|^|- |'
-            else
-              echo "Aucun site assemblé : le rendu a échoué avant l'assemblage."
-            fi
-          } >> "$GITHUB_STEP_SUMMARY"
+    uses: ./.github/workflows/rendre.yml
+    with:
+      pdf: false
+      publier: false
