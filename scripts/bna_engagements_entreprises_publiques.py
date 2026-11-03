@@ -49,6 +49,9 @@ def nombre(texte: str) -> str:
     texte = texte.strip().replace(" ", " ")
     if texte in ("-", ""):
         return ""
+    negatif = re.fullmatch(r"\(\s*([\d\s]+)\)", texte)  # « (19 795) » : montant négatif
+    if negatif:
+        return "-" + re.sub(r"\s+", "", negatif.group(1))
     return re.sub(r"\s+", "", texte)
 
 
