@@ -49,6 +49,8 @@ ALIAS_ENTITES = {"STCVERITAS": "STCVVERITAS", "GENERALEDESVENTES": "GENERALEDEVE
                  "BANQUEDELHABITAT": "BHBANK", "ASSURANCESALIM": "BHASSURANCES", "MODERNLEASING": "BHLEASING", "SICAVBHPLACEMENT": "SICAVBHCAPITALISATION",
                  "SICAVBHOBLIGATOIRE": "SICAVBHOBLIGATAIRE", "SICAFBHEPARGNEINVESTISSEMENT": "BHSICAF", "GENERALRECOUVREMENT": "BHRECOUVREMENT", "SIMSICAR": "BHEQUITY",
                  "SOPIVEL": "BHIMMO", "STIMEC": "BHPRINT"}
+# Tunisair : « SEVENAIR » (2009) est rapproché de « TUNISAIR EXPRESS » (2010 à 2022) par le pourcentage (88,73 %) et l'activité ; TUNINTER (2006, 83,37 %) reste à part
+ALIAS_ENTITES.update({"SEVENAIR": "TUNISAIREXPRESS"})
 RAPPORTS = {"STB": "bvmt-ra-stb-2021", "BH": "bvmt-ra-bh-2021", "BNA": "bvmt-ra-bna-2021"}
 PAGES_RAPPORT = {"STB": "p. 96-97", "BH": "p. 240", "BNA": "p. 127"}
 COULEURS = {"STB": "#0969da", "BH": "#bc4c00", "BNA": "#1a7f37"}
@@ -156,7 +158,7 @@ def tableau_resultats(caption: str, tbl_id: str = "tbl-ep-cotees-resultats") -> 
 def tableau_perimetres(caption: str, tbl_id: str = "tbl-ep-cotees-perimetres") -> None:
     """Les entités consolidées par la STB, la BH et la BNA : méthode, contrôle, intérêt."""
     d = _lire(PERIMETRE)
-    d = d[d["exercice"] == "2021"]
+    d = d[(d["exercice"] == "2021") & d["groupe"].isin(PAGES_RAPPORT)]  # les banques seules : les autres groupes ont leur propre section
     lignes, precedent = [], None
     for _, r in d.iterrows():
         groupe = f"**{r['groupe']}**" if r["groupe"] != precedent else ""
@@ -217,7 +219,7 @@ def _matrice(groupe: str):
     return liste, exercices
 
 
-def fig_evolution(groupe: str):
+def fig_evolution(groupe: str, etiquette: str = "Pourcentage d'intérêt"):
     import numpy as np
     figtools.apply_lang_font()
     ft = figtools.fig_text
@@ -246,7 +248,7 @@ def fig_evolution(groupe: str):
     for cote in ("top", "right", "left", "bottom"):
         ax.spines[cote].set_visible(False)
     ax.tick_params(length=0)
-    fig.colorbar(image, ax=ax, fraction=0.025, pad=0.02, label=ft("Pourcentage d'intérêt"))
+    fig.colorbar(image, ax=ax, fraction=0.025, pad=0.02, label=ft(etiquette))
     fig.tight_layout()
     return fig
 
@@ -259,8 +261,8 @@ def table_evolution(groupe: str):
     return pd.DataFrame(lignes)
 
 
-def figure_evolution(groupe: str, caption: str, note_lecture: str | None = None) -> None:
-    figtools.figure_tabs(fig_evolution(groupe), table_evolution(groupe), PERIMETRE,
+def figure_evolution(groupe: str, caption: str, note_lecture: str | None = None, etiquette: str = "Pourcentage d'intérêt") -> None:
+    figtools.figure_tabs(fig_evolution(groupe, etiquette), table_evolution(groupe), PERIMETRE,
                          slug=f"fig_ep_cotees_evolution_{groupe.lower()}", caption=caption,
                          note_lecture=note_lecture, nominal=False)
     plt.close("all")
@@ -297,6 +299,20 @@ THEMES_CAC = {
     "star_provisions_techniques": "Provisions techniques insuffisantes",
     "star_ecarts_comptes": "Écarts comptables, primes",
     "star_exercices_anterieurs": "Exercices antérieurs dans le résultat",
+    "tunisair_tiers": "Clients, fournisseurs, comptes d'attente",
+    "tunisair_provisions": "Provisions et risques non constatés",
+    "tunisair_flotte": "Flotte : avions, moteurs, maintenance",
+    "tunisair_fonds_social": "Fonds social et paie",
+    "tunisair_redevances": "Redevances aéroportuaires collectées",
+    "tunisair_banques": "Rapprochements bancaires, caisses",
+    "tunisair_immobilisations": "Inventaire des immobilisations",
+    "tunisair_informatique": "Système d'information, prestations d'AISA",
+    "tunisair_filiales": "Comptes réciproques avec les filiales",
+    "tunisair_oaca": "Dettes et concessions envers l'OACA",
+    "tunisair_stocks": "Stocks techniques",
+    "tunisair_hors_bilan": "Engagements hors bilan (Tunisair)",
+    "tunisair_limitations": "Limitation des travaux",
+    "tunisair_presentation": "Présentation des états financiers",
 }
 
 
@@ -308,13 +324,17 @@ def fig_cac(groupe: str, societe: str, delais_ecartes: tuple[int, ...] = ()):
     d = _lire("opinions-cac")
     d = d[d["groupe"] == groupe]
     delais = _lire("delais-publication")
-    delais = delais[(delais["societe"] == societe) & (delais["nature"] == "individuel")]
+    # un délai nul est la date de clôture que la Bourse porte faute de date de publication : il n'est pas tracé
+    delais = delais[(delais["societe"] == societe) & (delais["nature"] == "individuel") & (delais["jours"].astype(int) > 0)]
     delais = delais[~delais["exercice"].astype(int).isin(delais_ecartes)]  # dates de la Bourse sans valeur (BTE)
     lus = sorted(int(x) for x in d["exercice"].unique())
     fin = max(lus + [int(x) for x in delais["exercice"]])
     exercices = list(range(min(lus) - 1, fin + 1))  # un exercice avant le premier rapport lu, jusqu'au dernier délai connu
     delais = delais[delais["exercice"].astype(int) >= exercices[0]]
-    themes = [t for t in THEMES_CAC if t.startswith("star_") == (groupe == "STAR")]  # thèmes de l'assureur à part
+    utilises = {t for ligne in d.loc[~d["opinion"].str.startswith("sans"), "themes"] for t in ligne.split(";")}
+    themes = [t for t in THEMES_CAC if t in utilises]  # une ligne par thème que le groupe porte : pas de ligne vide
+    if not themes:  # groupe sans aucune réserve : les thèmes communs, en cases blanches
+        themes = [t for t in THEMES_CAC if not t.startswith(("star_", "tunisair_", "cimbiz_", "sotumag_", "tunisre_", "bte_"))]
     carte = np.full((len(themes), len(exercices)), np.nan)
     nombres = np.zeros(len(exercices))
     for _, r in d.iterrows():

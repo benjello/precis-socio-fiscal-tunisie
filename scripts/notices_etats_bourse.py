@@ -35,6 +35,7 @@ EDITEURS = {
     "star": ("star", "Société tunisienne d'assurances et de réassurances"),
     "bte-adp": ("bte", "Banque de Tunisie et des Emirats"),
     "tunis-re": ("tunisre", "Société tunisienne de réassurance"),
+    "tunisair": ("tunisair", "Société tunisienne de l'air"),
 }
 
 
