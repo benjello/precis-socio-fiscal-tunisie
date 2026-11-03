@@ -1,0 +1,29 @@
+# Manifeste du relevé « participations de détenteurs publics dans les sociétés cotées à la
+# Bourse de Tunis ».
+#
+# Fichier lu par figures/cotees.py (tableau du chapitre « Les sociétés cotées »). Il est
+# engendré par `scripts/bvmt_societes_cotees.py livre` à partir des pages publiques de la
+# Bourse de Tunis, lues le 3 novembre 2026 (copies locales sous tunisia-data, hors git).
+#
+# LA BOURSE NE NOMME QUE LES ACTIONNAIRES DE PLUS DE 5 % : un détenteur public sous ce seuil
+# n'apparaît pas, et les actionnaires restants sont regroupés sans nom. La liste des détenteurs
+# publics est fermée dans le script (État, CNSS, ETAP, STIR, Tunisie Télécom, Office national
+# des postes, Office du commerce de la Tunisie, Caisse des dépôts et consignations, BNA, BNA
+# Participations, Banque de l'habitat, STAR) : aucun détenteur n'est tenu pour public d'après son
+# nom seul. « BNA Participations » est repris sous son libellé imprimé ; les sicaf et assurances
+# du groupe BH ne sont pas repris.
+# Les dates d'assemblée diffèrent d'une société à l'autre (avril à juin 2026, deux en 2025).
+
+format: long
+cle_de_ligne: [detenteur, page]
+
+colonnes:
+  detenteur: détenteur public, sous un nom d'affichage
+  societe: société cotée dont il détient une part
+  page: nom de la page de la société sur le site de la Bourse (clé de citation bvmt-<page>)
+  part_pct: part du capital, en %, telle que la page l'imprime
+  actions: nombre d'actions détenues
+  assemblee: date de l'assemblée à laquelle la page rattache la liste (jj/mm/aaaa)
+  nom_imprime: nom du détenteur tel que la page l'imprime
+
+sources: [bvmt-air-liquide-tunisie, bvmt-atl, bvmt-bh-assurance, bvmt-bh-bank, bvmt-bh-leasing, bvmt-bna, bvmt-bna-assurances, bvmt-bte-adp, bvmt-ciments-de-bizerte, bvmt-simpar, bvmt-sotetel, bvmt-sotrapil, bvmt-sotumag, bvmt-star, bvmt-stb, bvmt-tunis-re, bvmt-tunisair, bvmt-wifak-international-bank]

@@ -1,0 +1,60 @@
+# Les sociétés cotées : actionnaires et capital {#sec-ep-cotees .domicile-unique}
+
+Ce chapitre donne, pour les entreprises à participation publique cotées à la Bourse de Tunis, ce que la Bourse imprime sur la page de chacune : qui détient leur capital, et, pour les trois banques publiques cotées, le capital depuis leur constitution. La définition de l'entreprise publique est au chapitre du statut (@sec-ep-1989), les souscriptions au capital des banques de 2013 à 2015 au chapitre « Restructurer » (@sec-ep-banques-publiques), et la situation financière de chaque entreprise à sa section : la STB, la BH et la BNA au chapitre du secteur financier (@sec-ep-secteur-financier), Tunisair à celui des transports (@sec-ep-ge-tunisair), les Ciments de Bizerte à celui de l'industrie (@sec-ep-ge-cimbiz).
+
+## Qui détient quoi {#sec-ep-cotees-detention}
+
+**Au printemps 2026, l'État détient directement de 32,19 % à 79,81 % du capital de huit sociétés cotées, et la Bourse nomme seize participations d'entreprises et d'organismes publics dans quatorze sociétés cotées.** [@bvmt-stb ; @bvmt-bna ; @bvmt-bh-bank ; @bvmt-tunisair ; @bvmt-ciments-de-bizerte]
+
+- **L'État détient seul plus de la moitié du capital de trois sociétés** : les Ciments de Bizerte (79,81 %), Tunisair (74,42 %) et la STB (71,54 %, auxquels s'ajoutent 5,69 % de la CNSS). Dans cinq autres, il détient de 32,19 % à 38,64 % : la STAR (38,64 %), SOTUMAG (37,5 %), la BNA (35,26 %), la BH (33,37 %) et la BTE (32,19 %) [@bvmt-star ; @bvmt-sotumag ; @bvmt-bte-adp].
+- **Des entreprises publiques détiennent à leur tour des parts de sociétés cotées.** La BNA détient 44,9 % de BNA Assurances, 30,27 % de SIMPAR et 11,1 % d'ATL ; BNA Participations, 18,98 % de Tunis Re et 11,06 % d'Air Liquide Tunisie ; la Banque de l'habitat, 41,64 % de BH Leasing et 23,93 % de BH Assurance ; Tunisie Télécom, 35 % de SOTETEL. La STIR (34,03 %) et l'ETAP (18,28 %) détiennent ensemble 52,31 % de SOTRAPIL [@bvmt-sotrapil].
+- **Le seuil de 50 % du statut** (@sec-ep-1989) se lit sur ces parts : l'État et l'ETAP détiennent ensemble 49,94 % de la BH (33,37 % et 16,57 %) ; l'État et l'Office du commerce de la Tunisie, 45,05 % de SOTUMAG ; l'État et l'Office national des postes, 40,81 % de la BTE. Pour la BNA et la STAR, la Bourse ne nomme pas d'autre détenteur public de plus de 5 %.
+- **D'autres organismes publics** détiennent 5,69 % de la STB (la CNSS), 10 % de Wifak International Bank (la Caisse des dépôts et consignations) et 15,62 % de Tunis Re (la STAR).
+
+::: {.chronologie-repliable titre="Les participations de détenteurs publics dans les sociétés cotées, détenteur par détenteur, avril à juin 2026"}
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import cotees as ct
+ct.tableau_participations(
+    caption=("Les participations de détenteurs publics dans les sociétés cotées à la Bourse de "
+             "Tunis, d'après la page de chaque société, avec la date de l'assemblée à laquelle la "
+             "Bourse rattache la liste. La Bourse ne nomme que les actionnaires de plus de 5 % : "
+             "les parts d'une société ne s'additionnent pas à 100 %, et un détenteur public sous "
+             "ce seuil n'y figure pas. Les détenteurs retenus sont ceux que la page nomme : l'État "
+             "et les entreprises ou organismes publics de la liste du relevé ; « BNA "
+             "Participations » est repris sous son nom imprimé"))
+```
+
+:::
+
+## Le capital de la STB, de la BH et de la BNA {#sec-ep-cotees-capital}
+
+**Le capital de la STB passe de 124,3 à 776,9 millions de dinars (MD) en 2015, celui de la BH de 90 à 238 MD en 2016 et 2017, celui de la BNA de 160 à 320 MD en 2018 et 2019, par les décisions d'assemblée que la Bourse relève.** [@bvmt-stb ; @bvmt-bh-bank ; @bvmt-bna]
+
+```{python}
+#| label: fig-ep-cotees-capital
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import cotees as ct
+ct.figure_capital(
+    caption=("Le capital de la STB, de la BH et de la BNA depuis leur constitution, d'après "
+             "l'historique du capital que donne la page de chaque banque à la Bourse de Tunis, en "
+             "millions de dinars courants. Source : Bourse de Tunis [@bvmt-stb ; @bvmt-bh-bank ; "
+             "@bvmt-bna]"),
+    note_lecture=(
+        "Chaque marche est une décision de l'assemblée : augmentation en numéraire, par "
+        "incorporation de réserves, fusion par absorption. La bande grise couvre 2013 à 2015, "
+        "années des lois qui autorisent l'État à souscrire au capital des banques publiques "
+        "(@sec-ep-banques-publiques). Les dates sont celles des assemblées, non de la libération "
+        "du capital. L'historique de la BH commence en 1989 et celui de la STB en 1957."))
+```
+
+- **STB.** Une décision du 3 juin 2015 porte le capital de 124,3 à 776,875 MD par une augmentation en numéraire de 652,575 MD, après la fusion par absorption de 2000. La loi du 21 août 2015 répartit 757 MD au plus pour la STB (@sec-ep-banques-publiques).
+- **BH.** Le capital passe de 90 MD (2007) à 140 MD par une augmentation en numéraire de 50 MD, puis à 170 MD par incorporation de réserves, le 16 juin 2016 ; une décision du 7 septembre 2017 le porte à 204 MD en numéraire, puis à 238 MD par incorporation de réserves. La loi de 2015 répartit 110 MD au plus pour la BH.
+- **BNA.** Le capital passe de 160 MD (2009) à 176 MD (2018) puis à 320 MD (2019), toutes deux par incorporation de réserves. L'État souscrit 170,872 MD au capital de la BNA en 2019 (@sec-ep-banques-publiques).
+
+<!-- TODO (documentaliste) : (1) actionnaires et filiales des entreprises NON cotées (STEG, SNCFT, STIR, ETAP, La Poste, Transtu, SONEDE, ONAS, OACA, OMMP, CPG, GCT…) : la Bourse ne les couvre pas ; pistes : rapports annuels et états financiers des entreprises (liste des participations), rapport du ministère des Finances (71 entreprises à participation directe, 39 à participation indirecte : les 39 ne sont pas nommées avec leur actionnaire), liste d'actionnaires du Registre national des entreprises (payante, 20 DT par société anonyme ; docs/notes/rne-registre-national-entreprises-2026-11-03.md). (2) Concilier les parts de la Bourse avec la liste du rapport du ministère pour 2021, où figurent la BNA, la BH, la STB, les Ciments de Bizerte, Tunis Re, SOTUMAG et SOTETEL : la part publique nommée par la Bourse est inférieure à 50 % pour la BNA (35,26 %), la BH (49,94 % avec l'ETAP), SOTUMAG (45,05 %), Tunis Re (34,6 % avec BNA Participations et la STAR) et SOTETEL (35 %) ; les actionnaires de moins de 5 % ne sont pas nommés. (3) Augmentation de 2019 de la BNA : l'historique de la Bourse la donne par incorporation de réserves (144 MD, le 6 mars 2019), alors que les lois de finances parlent d'une souscription de l'État de 170,872 MD libérée par compensation de créances : rapprocher les deux. (4) Tunisair (capital de 106,2 MD, inchangé depuis 2009), Ciments de Bizerte (44,0 MD) : historique du capital de la Bourse à lire (premières lignes de Ciments de Bizerte incohérentes dans la page) et à ajouter à la figure si utile. (5) Filiales des sociétés cotées : la Bourse ne donne que les actionnaires ; les participations de la STB, de la BH et de la BNA dans leurs filiales sont à lire dans leurs états financiers. (6) SOTRAPIL, STAR, Tunis Re, SOTETEL, SOTUMAG, BTE, BH Leasing, BH Assurance, BNA Assurances, SIMPAR, ATL, Air Liquide Tunisie et Wifak n'ont pas de section dans ce volume : à placer dans leur chapitre de secteur si leur participation publique est confirmée. -->
