@@ -293,6 +293,10 @@ THEMES_CAC = {
     "retraites": "Indemnités de départ à la retraite",
     "fonds_etat": "Fonds budgétaires de l'État",
     "produits": "Produits identifiés par client",
+    # STAR (assureur) : thèmes propres, tracés seulement pour le groupe STAR
+    "star_provisions_techniques": "Provisions techniques insuffisantes",
+    "star_ecarts_comptes": "Écarts comptables, primes",
+    "star_exercices_anterieurs": "Exercices antérieurs dans le résultat",
 }
 
 
@@ -309,7 +313,7 @@ def fig_cac(groupe: str, societe: str):
     fin = max(lus + [int(x) for x in delais["exercice"]])
     exercices = list(range(min(lus) - 1, fin + 1))  # un exercice avant le premier rapport lu, jusqu'au dernier délai connu
     delais = delais[delais["exercice"].astype(int) >= exercices[0]]
-    themes = list(THEMES_CAC)
+    themes = [t for t in THEMES_CAC if t.startswith("star_") == (groupe == "STAR")]  # thèmes de l'assureur à part
     carte = np.full((len(themes), len(exercices)), np.nan)
     nombres = np.zeros(len(exercices))
     for _, r in d.iterrows():

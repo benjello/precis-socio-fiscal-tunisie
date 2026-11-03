@@ -17751,6 +17751,831 @@
       "archive": "Bourse de Tunis",
       "archive_location": "https://tunis-stockexchange.com/sites/default/files/societes/bna/etats-financiers/bna-etats-financiers-annuels-individuels-31-12-2024.pdf",
       "note": "citation-key: bvmt-ef-bna-2024-individuel\nÉtats financiers individuels de l'exercice 2024, page de la société sur le site de la Bourse de Tunis. Copie locale : tunisia-data/data/raw/entreprises-publiques/bvmt-etats-financiers/bna/2024_individuel.pdf (697213 octets, SHA-256 779747b7263ddeac973d5c871f87f1862c69bfca4a9882cf60e13d08decbe689), ignorée par git. Cité pour : opinion des commissaires aux comptes et périmètre de consolidation. Preuve : couche texte du PDF, lue par scripts/opinions_cac.py et scripts/perimetres_groupes_bancaires.py."
+    },
+    {
+      "id": "bvmt-ef-star-2002-individuel",
+      "type": "report",
+      "title": "États financiers individuels 2002",
+      "author": [
+        {
+          "literal": "Société tunisienne d'assurances et de réassurances"
+        }
+      ],
+      "publisher": "Société tunisienne d'assurances et de réassurances",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2002
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            3
+          ]
+        ]
+      },
+      "title-short": "Société tunisienne d'assurances et de réassurances, états financiers individuels 2002",
+      "URL": "https://tunis-stockexchange.com/sites/default/files/societes/star/etats-financiers/star-etats-financiers-annuels-31-12-2002.pdf",
+      "archive": "Bourse de Tunis",
+      "archive_location": "https://tunis-stockexchange.com/sites/default/files/societes/star/etats-financiers/star-etats-financiers-annuels-31-12-2002.pdf",
+      "note": "citation-key: bvmt-ef-star-2002-individuel\nÉtats financiers individuels de l'exercice 2002, page de la société sur le site de la Bourse de Tunis. Copie locale : tunisia-data/data/raw/entreprises-publiques/bvmt-etats-financiers/star/2002_individuel.pdf (142854 octets, SHA-256 3b3aae8dc8748b3c8e6de696ecbb5dc429ab973e8f98366b89ab0bd3886c08b6), ignorée par git. Cité pour : opinion des commissaires aux comptes. Preuve : couche texte du PDF (pdftotext), lue à la main."
+    },
+    {
+      "id": "bvmt-ef-star-2003-individuel",
+      "type": "report",
+      "title": "États financiers individuels 2003",
+      "author": [
+        {
+          "literal": "Société tunisienne d'assurances et de réassurances"
+        }
+      ],
+      "publisher": "Société tunisienne d'assurances et de réassurances",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2003
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            3
+          ]
+        ]
+      },
+      "title-short": "Société tunisienne d'assurances et de réassurances, états financiers individuels 2003",
+      "URL": "https://tunis-stockexchange.com/sites/default/files/societes/star/etats-financiers/star-etats-financiers-annuels-31-12-2003.pdf",
+      "archive": "Bourse de Tunis",
+      "archive_location": "https://tunis-stockexchange.com/sites/default/files/societes/star/etats-financiers/star-etats-financiers-annuels-31-12-2003.pdf",
+      "note": "citation-key: bvmt-ef-star-2003-individuel\nÉtats financiers individuels de l'exercice 2003, page de la société sur le site de la Bourse de Tunis. Copie locale : tunisia-data/data/raw/entreprises-publiques/bvmt-etats-financiers/star/2003_individuel.pdf (140654 octets, SHA-256 103a2452da0365f423a089e738575580847a47049bf0e243d0f78a6ffb2b8453), ignorée par git. Cité pour : opinion des commissaires aux comptes. Preuve : couche texte du PDF (pdftotext), lue à la main."
+    },
+    {
+      "id": "bvmt-ef-star-2004-individuel",
+      "type": "report",
+      "title": "États financiers individuels 2004",
+      "author": [
+        {
+          "literal": "Société tunisienne d'assurances et de réassurances"
+        }
+      ],
+      "publisher": "Société tunisienne d'assurances et de réassurances",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2004
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            3
+          ]
+        ]
+      },
+      "title-short": "Société tunisienne d'assurances et de réassurances, états financiers individuels 2004",
+      "URL": "https://tunis-stockexchange.com/sites/default/files/societes/star/etats-financiers/star-etats-financiers-annuels-31-12-2004.pdf",
+      "archive": "Bourse de Tunis",
+      "archive_location": "https://tunis-stockexchange.com/sites/default/files/societes/star/etats-financiers/star-etats-financiers-annuels-31-12-2004.pdf",
+      "note": "citation-key: bvmt-ef-star-2004-individuel\nÉtats financiers individuels de l'exercice 2004, page de la société sur le site de la Bourse de Tunis. Copie locale : tunisia-data/data/raw/entreprises-publiques/bvmt-etats-financiers/star/2004_individuel.pdf (143675 octets, SHA-256 2a01b9e6ec88b313f37d43bcfabe81dcf416829fa3e1a43b2f49f029dcc2b26e), ignorée par git. Cité pour : opinion des commissaires aux comptes. Preuve : couche texte du PDF (pdftotext), lue à la main."
+    },
+    {
+      "id": "bvmt-ef-star-2005-individuel",
+      "type": "report",
+      "title": "États financiers individuels 2005",
+      "author": [
+        {
+          "literal": "Société tunisienne d'assurances et de réassurances"
+        }
+      ],
+      "publisher": "Société tunisienne d'assurances et de réassurances",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2005
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            3
+          ]
+        ]
+      },
+      "title-short": "Société tunisienne d'assurances et de réassurances, états financiers individuels 2005",
+      "URL": "https://tunis-stockexchange.com/sites/default/files/societes/star/etats-financiers/star-etats-financiers-annuels-31-12-2005.pdf",
+      "archive": "Bourse de Tunis",
+      "archive_location": "https://tunis-stockexchange.com/sites/default/files/societes/star/etats-financiers/star-etats-financiers-annuels-31-12-2005.pdf",
+      "note": "citation-key: bvmt-ef-star-2005-individuel\nÉtats financiers individuels de l'exercice 2005, page de la société sur le site de la Bourse de Tunis. Copie locale : tunisia-data/data/raw/entreprises-publiques/bvmt-etats-financiers/star/2005_individuel.pdf (131861 octets, SHA-256 80c87bd014b51d583276953783bf03b459bfe0f964c720f6e873e69df38c2712), ignorée par git. Cité pour : opinion des commissaires aux comptes. Preuve : couche texte du PDF (pdftotext), lue à la main."
+    },
+    {
+      "id": "bvmt-ef-star-2007-individuel",
+      "type": "report",
+      "title": "États financiers individuels 2007",
+      "author": [
+        {
+          "literal": "Société tunisienne d'assurances et de réassurances"
+        }
+      ],
+      "publisher": "Société tunisienne d'assurances et de réassurances",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2007
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            3
+          ]
+        ]
+      },
+      "title-short": "Société tunisienne d'assurances et de réassurances, états financiers individuels 2007",
+      "URL": "https://tunis-stockexchange.com/sites/default/files/societes/star/etats-financiers/star-etats-financiers-annuels-individuels-31-12-2007.pdf",
+      "archive": "Bourse de Tunis",
+      "archive_location": "https://tunis-stockexchange.com/sites/default/files/societes/star/etats-financiers/star-etats-financiers-annuels-individuels-31-12-2007.pdf",
+      "note": "citation-key: bvmt-ef-star-2007-individuel\nÉtats financiers individuels de l'exercice 2007, page de la société sur le site de la Bourse de Tunis. Copie locale : tunisia-data/data/raw/entreprises-publiques/bvmt-etats-financiers/star/2007_individuel.pdf (341864 octets, SHA-256 e7d71de058ab7d59af09ce3d154bcb02268253ce5b020c5f5baa66d8e2811cae), ignorée par git. Cité pour : opinion des commissaires aux comptes. Preuve : couche texte du PDF (pdftotext), lue à la main."
+    },
+    {
+      "id": "bvmt-ef-star-2008-individuel",
+      "type": "report",
+      "title": "États financiers individuels 2008",
+      "author": [
+        {
+          "literal": "Société tunisienne d'assurances et de réassurances"
+        }
+      ],
+      "publisher": "Société tunisienne d'assurances et de réassurances",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2008
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            3
+          ]
+        ]
+      },
+      "title-short": "Société tunisienne d'assurances et de réassurances, états financiers individuels 2008",
+      "URL": "https://tunis-stockexchange.com/sites/default/files/societes/star/etats-financiers/star-etats-financiers-annuels-individuels-31-12-2008.pdf",
+      "archive": "Bourse de Tunis",
+      "archive_location": "https://tunis-stockexchange.com/sites/default/files/societes/star/etats-financiers/star-etats-financiers-annuels-individuels-31-12-2008.pdf",
+      "note": "citation-key: bvmt-ef-star-2008-individuel\nÉtats financiers individuels de l'exercice 2008, page de la société sur le site de la Bourse de Tunis. Copie locale : tunisia-data/data/raw/entreprises-publiques/bvmt-etats-financiers/star/2008_individuel.pdf (228668 octets, SHA-256 78631d55ac071c967d7c4b8baa13a41081e23936fd0aa9ead94adc41a00b115f), ignorée par git. Cité pour : opinion des commissaires aux comptes. Preuve : couche texte du PDF (pdftotext), lue à la main."
+    },
+    {
+      "id": "bvmt-ef-star-2009-individuel",
+      "type": "report",
+      "title": "États financiers individuels 2009",
+      "author": [
+        {
+          "literal": "Société tunisienne d'assurances et de réassurances"
+        }
+      ],
+      "publisher": "Société tunisienne d'assurances et de réassurances",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2009
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            3
+          ]
+        ]
+      },
+      "title-short": "Société tunisienne d'assurances et de réassurances, états financiers individuels 2009",
+      "URL": "https://tunis-stockexchange.com/sites/default/files/societes/star/etats-financiers/star-etats-financiers-annuels-individuels-31-12-2009.pdf",
+      "archive": "Bourse de Tunis",
+      "archive_location": "https://tunis-stockexchange.com/sites/default/files/societes/star/etats-financiers/star-etats-financiers-annuels-individuels-31-12-2009.pdf",
+      "note": "citation-key: bvmt-ef-star-2009-individuel\nÉtats financiers individuels de l'exercice 2009, page de la société sur le site de la Bourse de Tunis. Copie locale : tunisia-data/data/raw/entreprises-publiques/bvmt-etats-financiers/star/2009_individuel.pdf (1622118 octets, SHA-256 966f9b5fe7043291255a447993c7d78432f77e233e747dfc124cf9c4a923ae9b), ignorée par git. Cité pour : opinion des commissaires aux comptes. Preuve : couche texte du PDF (pdftotext), lue à la main."
+    },
+    {
+      "id": "bvmt-ef-star-2011-individuel",
+      "type": "report",
+      "title": "États financiers individuels 2011",
+      "author": [
+        {
+          "literal": "Société tunisienne d'assurances et de réassurances"
+        }
+      ],
+      "publisher": "Société tunisienne d'assurances et de réassurances",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2011
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            3
+          ]
+        ]
+      },
+      "title-short": "Société tunisienne d'assurances et de réassurances, états financiers individuels 2011",
+      "URL": "https://tunis-stockexchange.com/sites/default/files/societes/star/etats-financiers/star-etats-financiers-annuels-individuels-31-12-2011.pdf",
+      "archive": "Bourse de Tunis",
+      "archive_location": "https://tunis-stockexchange.com/sites/default/files/societes/star/etats-financiers/star-etats-financiers-annuels-individuels-31-12-2011.pdf",
+      "note": "citation-key: bvmt-ef-star-2011-individuel\nÉtats financiers individuels de l'exercice 2011, page de la société sur le site de la Bourse de Tunis. Copie locale : tunisia-data/data/raw/entreprises-publiques/bvmt-etats-financiers/star/2011_individuel.pdf (1146464 octets, SHA-256 0c5175a88030154485b8256a6a1151b4a4dd8e2e7fa758ccade14ec85bfd5e48), ignorée par git. Cité pour : opinion des commissaires aux comptes. Preuve : couche texte du PDF (pdftotext), lue à la main."
+    },
+    {
+      "id": "bvmt-ef-star-2012-individuel",
+      "type": "report",
+      "title": "États financiers individuels 2012",
+      "author": [
+        {
+          "literal": "Société tunisienne d'assurances et de réassurances"
+        }
+      ],
+      "publisher": "Société tunisienne d'assurances et de réassurances",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2012
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            3
+          ]
+        ]
+      },
+      "title-short": "Société tunisienne d'assurances et de réassurances, états financiers individuels 2012",
+      "URL": "https://tunis-stockexchange.com/sites/default/files/societes/star/etats-financiers/star-etats-financiers-annuels-individuels-31-12-2012.pdf",
+      "archive": "Bourse de Tunis",
+      "archive_location": "https://tunis-stockexchange.com/sites/default/files/societes/star/etats-financiers/star-etats-financiers-annuels-individuels-31-12-2012.pdf",
+      "note": "citation-key: bvmt-ef-star-2012-individuel\nÉtats financiers individuels de l'exercice 2012, page de la société sur le site de la Bourse de Tunis. Copie locale : tunisia-data/data/raw/entreprises-publiques/bvmt-etats-financiers/star/2012_individuel.pdf (1021676 octets, SHA-256 c59a258a866a396a3f26e41c0e1e61599de1cd953afca33bd3f8a099b9d0de50), ignorée par git. Cité pour : opinion des commissaires aux comptes. Preuve : couche texte du PDF (pdftotext), lue à la main."
+    },
+    {
+      "id": "bvmt-ef-star-2013-individuel",
+      "type": "report",
+      "title": "États financiers individuels 2013",
+      "author": [
+        {
+          "literal": "Société tunisienne d'assurances et de réassurances"
+        }
+      ],
+      "publisher": "Société tunisienne d'assurances et de réassurances",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2013
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            3
+          ]
+        ]
+      },
+      "title-short": "Société tunisienne d'assurances et de réassurances, états financiers individuels 2013",
+      "URL": "https://tunis-stockexchange.com/sites/default/files/societes/star/etats-financiers/star-etats-financiers-annuels-individuels-31-12-2013.pdf",
+      "archive": "Bourse de Tunis",
+      "archive_location": "https://tunis-stockexchange.com/sites/default/files/societes/star/etats-financiers/star-etats-financiers-annuels-individuels-31-12-2013.pdf",
+      "note": "citation-key: bvmt-ef-star-2013-individuel\nÉtats financiers individuels de l'exercice 2013, page de la société sur le site de la Bourse de Tunis. Copie locale : tunisia-data/data/raw/entreprises-publiques/bvmt-etats-financiers/star/2013_individuel.pdf (710184 octets, SHA-256 da614d936bc1fc3b620a14bdc29be47cf18d86341fd285a4686eddc4f4a7f51a), ignorée par git. Cité pour : opinion des commissaires aux comptes. Preuve : couche texte du PDF (pdftotext), lue à la main."
+    },
+    {
+      "id": "bvmt-ef-star-2014-individuel",
+      "type": "report",
+      "title": "États financiers individuels 2014",
+      "author": [
+        {
+          "literal": "Société tunisienne d'assurances et de réassurances"
+        }
+      ],
+      "publisher": "Société tunisienne d'assurances et de réassurances",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2014
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            3
+          ]
+        ]
+      },
+      "title-short": "Société tunisienne d'assurances et de réassurances, états financiers individuels 2014",
+      "URL": "https://tunis-stockexchange.com/sites/default/files/societes/star/etats-financiers/star-etats-financiers-annuels-individuels-31-12-2014.pdf",
+      "archive": "Bourse de Tunis",
+      "archive_location": "https://tunis-stockexchange.com/sites/default/files/societes/star/etats-financiers/star-etats-financiers-annuels-individuels-31-12-2014.pdf",
+      "note": "citation-key: bvmt-ef-star-2014-individuel\nÉtats financiers individuels de l'exercice 2014, page de la société sur le site de la Bourse de Tunis. Copie locale : tunisia-data/data/raw/entreprises-publiques/bvmt-etats-financiers/star/2014_individuel.pdf (871169 octets, SHA-256 74b9d4e1b7b5ed2140346818d1582c101a9a239fed532d6a2f90cf984a31d875), ignorée par git. Cité pour : opinion des commissaires aux comptes. Preuve : couche texte du PDF (pdftotext), lue à la main."
+    },
+    {
+      "id": "bvmt-ef-star-2015-individuel",
+      "type": "report",
+      "title": "États financiers individuels 2015",
+      "author": [
+        {
+          "literal": "Société tunisienne d'assurances et de réassurances"
+        }
+      ],
+      "publisher": "Société tunisienne d'assurances et de réassurances",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2015
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            3
+          ]
+        ]
+      },
+      "title-short": "Société tunisienne d'assurances et de réassurances, états financiers individuels 2015",
+      "URL": "https://tunis-stockexchange.com/sites/default/files/societes/star/etats-financiers/star-etats-financiers-annuels-individuels-31-12-2015.pdf",
+      "archive": "Bourse de Tunis",
+      "archive_location": "https://tunis-stockexchange.com/sites/default/files/societes/star/etats-financiers/star-etats-financiers-annuels-individuels-31-12-2015.pdf",
+      "note": "citation-key: bvmt-ef-star-2015-individuel\nÉtats financiers individuels de l'exercice 2015, page de la société sur le site de la Bourse de Tunis. Copie locale : tunisia-data/data/raw/entreprises-publiques/bvmt-etats-financiers/star/2015_individuel.pdf (1048453 octets, SHA-256 6791deb385e1c96ecbf076c4630261e4f1568bdc327c5f6ff153331bec7d43cb), ignorée par git. Cité pour : opinion des commissaires aux comptes. Preuve : couche texte du PDF (pdftotext), lue à la main."
+    },
+    {
+      "id": "bvmt-ef-star-2016-individuel",
+      "type": "report",
+      "title": "États financiers individuels 2016",
+      "author": [
+        {
+          "literal": "Société tunisienne d'assurances et de réassurances"
+        }
+      ],
+      "publisher": "Société tunisienne d'assurances et de réassurances",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2016
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            3
+          ]
+        ]
+      },
+      "title-short": "Société tunisienne d'assurances et de réassurances, états financiers individuels 2016",
+      "URL": "https://tunis-stockexchange.com/sites/default/files/societes/star/etats-financiers/star-etats-financiers-annuels-31-12-2016.pdf",
+      "archive": "Bourse de Tunis",
+      "archive_location": "https://tunis-stockexchange.com/sites/default/files/societes/star/etats-financiers/star-etats-financiers-annuels-31-12-2016.pdf",
+      "note": "citation-key: bvmt-ef-star-2016-individuel\nÉtats financiers individuels de l'exercice 2016, page de la société sur le site de la Bourse de Tunis. Copie locale : tunisia-data/data/raw/entreprises-publiques/bvmt-etats-financiers/star/2016_consolide.pdf (235696 octets, SHA-256 2bf0cfc62c2d5f8889fc4f974174657e66e53579bcae59045a096e494ec4123e), ignorée par git. Cité pour : opinion des commissaires aux comptes. Preuve : couche texte du PDF (pdftotext), lue à la main. La Bourse range ce document sous « consolidé », mais il contient les états individuels (total du bilan de 1 031,8 MD, rapport sur les états de la STAR seule)."
+    },
+    {
+      "id": "bvmt-ef-star-2017-individuel",
+      "type": "report",
+      "title": "États financiers individuels 2017",
+      "author": [
+        {
+          "literal": "Société tunisienne d'assurances et de réassurances"
+        }
+      ],
+      "publisher": "Société tunisienne d'assurances et de réassurances",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2017
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            3
+          ]
+        ]
+      },
+      "title-short": "Société tunisienne d'assurances et de réassurances, états financiers individuels 2017",
+      "URL": "https://tunis-stockexchange.com/sites/default/files/societes/star/etats-financiers/star-etats-financiers-annuels-31-12-2017.pdf",
+      "archive": "Bourse de Tunis",
+      "archive_location": "https://tunis-stockexchange.com/sites/default/files/societes/star/etats-financiers/star-etats-financiers-annuels-31-12-2017.pdf",
+      "note": "citation-key: bvmt-ef-star-2017-individuel\nÉtats financiers individuels de l'exercice 2017, page de la société sur le site de la Bourse de Tunis. Copie locale : tunisia-data/data/raw/entreprises-publiques/bvmt-etats-financiers/star/2017_individuel.pdf (307855 octets, SHA-256 5c408e9c798f980f862604ecefa87222397968b333c0d0dd17ae0ba38c5ea89c), ignorée par git. Cité pour : opinion des commissaires aux comptes. Preuve : couche texte du PDF (pdftotext), lue à la main."
+    },
+    {
+      "id": "bvmt-ef-star-2018-individuel",
+      "type": "report",
+      "title": "États financiers individuels 2018",
+      "author": [
+        {
+          "literal": "Société tunisienne d'assurances et de réassurances"
+        }
+      ],
+      "publisher": "Société tunisienne d'assurances et de réassurances",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2018
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            3
+          ]
+        ]
+      },
+      "title-short": "Société tunisienne d'assurances et de réassurances, états financiers individuels 2018",
+      "URL": "https://tunis-stockexchange.com/sites/default/files/societes/star/etats-financiers/star-etats-financiers-annuels-31-12-2018.pdf",
+      "archive": "Bourse de Tunis",
+      "archive_location": "https://tunis-stockexchange.com/sites/default/files/societes/star/etats-financiers/star-etats-financiers-annuels-31-12-2018.pdf",
+      "note": "citation-key: bvmt-ef-star-2018-individuel\nÉtats financiers individuels de l'exercice 2018, page de la société sur le site de la Bourse de Tunis. Copie locale : tunisia-data/data/raw/entreprises-publiques/bvmt-etats-financiers/star/2018_individuel.pdf (311371 octets, SHA-256 1917f80a4bae62786c2148329afc5d8897cdd1322ca5e0dd688ee29d1db97b3a), ignorée par git. Cité pour : opinion des commissaires aux comptes. Preuve : couche texte du PDF (pdftotext), lue à la main."
+    },
+    {
+      "id": "bvmt-ef-star-2019-individuel",
+      "type": "report",
+      "title": "États financiers individuels 2019",
+      "author": [
+        {
+          "literal": "Société tunisienne d'assurances et de réassurances"
+        }
+      ],
+      "publisher": "Société tunisienne d'assurances et de réassurances",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2019
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            3
+          ]
+        ]
+      },
+      "title-short": "Société tunisienne d'assurances et de réassurances, états financiers individuels 2019",
+      "URL": "https://tunis-stockexchange.com/sites/default/files/societes/star/etats-financiers/star-etats-financiers-annuels-31-12-2019.pdf",
+      "archive": "Bourse de Tunis",
+      "archive_location": "https://tunis-stockexchange.com/sites/default/files/societes/star/etats-financiers/star-etats-financiers-annuels-31-12-2019.pdf",
+      "note": "citation-key: bvmt-ef-star-2019-individuel\nÉtats financiers individuels de l'exercice 2019, page de la société sur le site de la Bourse de Tunis. Copie locale : tunisia-data/data/raw/entreprises-publiques/bvmt-etats-financiers/star/2019_individuel.pdf (1965331 octets, SHA-256 f5cb53bc6cb3fc59d77be70df58531cdeea9d8b72c67cd6c46b4d684062aa599), ignorée par git. Cité pour : opinion des commissaires aux comptes. Preuve : couche texte du PDF (pdftotext), lue à la main."
+    },
+    {
+      "id": "bvmt-ef-star-2020-individuel",
+      "type": "report",
+      "title": "États financiers individuels 2020",
+      "author": [
+        {
+          "literal": "Société tunisienne d'assurances et de réassurances"
+        }
+      ],
+      "publisher": "Société tunisienne d'assurances et de réassurances",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2020
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            3
+          ]
+        ]
+      },
+      "title-short": "Société tunisienne d'assurances et de réassurances, états financiers individuels 2020",
+      "URL": "https://tunis-stockexchange.com/sites/default/files/societes/star/etats-financiers/star-etats-financiers-annuels-31-12-2020.pdf",
+      "archive": "Bourse de Tunis",
+      "archive_location": "https://tunis-stockexchange.com/sites/default/files/societes/star/etats-financiers/star-etats-financiers-annuels-31-12-2020.pdf",
+      "note": "citation-key: bvmt-ef-star-2020-individuel\nÉtats financiers individuels de l'exercice 2020, page de la société sur le site de la Bourse de Tunis. Copie locale : tunisia-data/data/raw/entreprises-publiques/bvmt-etats-financiers/star/2020_individuel.pdf (1341872 octets, SHA-256 07e5ba7f5595ec7c1ce84fbca028e9dd7f2c58a53786ea219ad8199b009ce16d), ignorée par git. Cité pour : opinion des commissaires aux comptes. Preuve : couche texte du PDF (pdftotext), lue à la main."
+    },
+    {
+      "id": "bvmt-ef-star-2021-individuel",
+      "type": "report",
+      "title": "États financiers individuels 2021",
+      "author": [
+        {
+          "literal": "Société tunisienne d'assurances et de réassurances"
+        }
+      ],
+      "publisher": "Société tunisienne d'assurances et de réassurances",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2021
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            3
+          ]
+        ]
+      },
+      "title-short": "Société tunisienne d'assurances et de réassurances, états financiers individuels 2021",
+      "URL": "https://tunis-stockexchange.com/sites/default/files/societes/star/etats-financiers/star-etats-financiers-annuels-individuels-31-12-2021.pdf",
+      "archive": "Bourse de Tunis",
+      "archive_location": "https://tunis-stockexchange.com/sites/default/files/societes/star/etats-financiers/star-etats-financiers-annuels-individuels-31-12-2021.pdf",
+      "note": "citation-key: bvmt-ef-star-2021-individuel\nÉtats financiers individuels de l'exercice 2021, page de la société sur le site de la Bourse de Tunis. Copie locale : tunisia-data/data/raw/entreprises-publiques/bvmt-etats-financiers/star/2021_individuel.pdf (570022 octets, SHA-256 c79c6241ecb6ace4571c17f9c666d32b0384d8243acaeefbfa0fb0fa3fc2ba4d), ignorée par git. Cité pour : opinion des commissaires aux comptes. Preuve : couche texte du PDF (pdftotext), lue à la main."
+    },
+    {
+      "id": "bvmt-ef-star-2022-individuel",
+      "type": "report",
+      "title": "États financiers individuels 2022",
+      "author": [
+        {
+          "literal": "Société tunisienne d'assurances et de réassurances"
+        }
+      ],
+      "publisher": "Société tunisienne d'assurances et de réassurances",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2022
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            3
+          ]
+        ]
+      },
+      "title-short": "Société tunisienne d'assurances et de réassurances, états financiers individuels 2022",
+      "URL": "https://tunis-stockexchange.com/sites/default/files/societes/star/etats-financiers/star-etats-financiers-annuels-individuels-31-12-2022.pdf",
+      "archive": "Bourse de Tunis",
+      "archive_location": "https://tunis-stockexchange.com/sites/default/files/societes/star/etats-financiers/star-etats-financiers-annuels-individuels-31-12-2022.pdf",
+      "note": "citation-key: bvmt-ef-star-2022-individuel\nÉtats financiers individuels de l'exercice 2022, page de la société sur le site de la Bourse de Tunis. Copie locale : tunisia-data/data/raw/entreprises-publiques/bvmt-etats-financiers/star/2022_individuel.pdf (496895 octets, SHA-256 cc2a196820847205b720c8f2092a9babbaa5729031d835bada30f89eb71465e8), ignorée par git. Cité pour : opinion des commissaires aux comptes. Preuve : couche texte du PDF (pdftotext), lue à la main."
+    },
+    {
+      "id": "bvmt-ef-star-2023-individuel",
+      "type": "report",
+      "title": "États financiers individuels 2023",
+      "author": [
+        {
+          "literal": "Société tunisienne d'assurances et de réassurances"
+        }
+      ],
+      "publisher": "Société tunisienne d'assurances et de réassurances",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2023
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            3
+          ]
+        ]
+      },
+      "title-short": "Société tunisienne d'assurances et de réassurances, états financiers individuels 2023",
+      "URL": "https://tunis-stockexchange.com/sites/default/files/societes/star/etats-financiers/star-etats-financiers-annuels-individuels-31-12-2023.pdf",
+      "archive": "Bourse de Tunis",
+      "archive_location": "https://tunis-stockexchange.com/sites/default/files/societes/star/etats-financiers/star-etats-financiers-annuels-individuels-31-12-2023.pdf",
+      "note": "citation-key: bvmt-ef-star-2023-individuel\nÉtats financiers individuels de l'exercice 2023, page de la société sur le site de la Bourse de Tunis. Copie locale : tunisia-data/data/raw/entreprises-publiques/bvmt-etats-financiers/star/2023_individuel.pdf (1639574 octets, SHA-256 7bee48093bc59375aaecdcee8150e573a72c378677ac9bc1f5c139fc7869ec6d), ignorée par git. Cité pour : opinion des commissaires aux comptes. Preuve : couche texte du PDF (pdftotext), lue à la main."
+    },
+    {
+      "id": "bvmt-ef-star-2024-individuel",
+      "type": "report",
+      "title": "États financiers individuels 2024",
+      "author": [
+        {
+          "literal": "Société tunisienne d'assurances et de réassurances"
+        }
+      ],
+      "publisher": "Société tunisienne d'assurances et de réassurances",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            3
+          ]
+        ]
+      },
+      "title-short": "Société tunisienne d'assurances et de réassurances, états financiers individuels 2024",
+      "URL": "https://tunis-stockexchange.com/sites/default/files/societes/star/etats-financiers/star-etats-financiers-annuels-individuels-31-12-2024.pdf",
+      "archive": "Bourse de Tunis",
+      "archive_location": "https://tunis-stockexchange.com/sites/default/files/societes/star/etats-financiers/star-etats-financiers-annuels-individuels-31-12-2024.pdf",
+      "note": "citation-key: bvmt-ef-star-2024-individuel\nÉtats financiers individuels de l'exercice 2024, page de la société sur le site de la Bourse de Tunis. Copie locale : tunisia-data/data/raw/entreprises-publiques/bvmt-etats-financiers/star/2024_individuel.pdf (464191 octets, SHA-256 1ae45fb8e817c400613e64177a63b5924685b5226de28af413d93b9bffc70086), ignorée par git. Cité pour : opinion des commissaires aux comptes. Preuve : couche texte du PDF (pdftotext), lue à la main."
+    },
+    {
+      "id": "bvmt-ef-star-2021-consolide",
+      "type": "report",
+      "title": "États financiers consolidés 2021",
+      "author": [
+        {
+          "literal": "Société tunisienne d'assurances et de réassurances"
+        }
+      ],
+      "publisher": "Société tunisienne d'assurances et de réassurances",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2021
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            3
+          ]
+        ]
+      },
+      "title-short": "Société tunisienne d'assurances et de réassurances, états financiers consolidés 2021",
+      "URL": "https://tunis-stockexchange.com/sites/default/files/societes/star/etats-financiers/star-etats-financiers-annuels-consolides-31-12-2021.pdf",
+      "archive": "Bourse de Tunis",
+      "archive_location": "https://tunis-stockexchange.com/sites/default/files/societes/star/etats-financiers/star-etats-financiers-annuels-consolides-31-12-2021.pdf",
+      "note": "citation-key: bvmt-ef-star-2021-consolide\nÉtats financiers consolidés de l'exercice 2021, page de la société sur le site de la Bourse de Tunis. Copie locale : tunisia-data/data/raw/entreprises-publiques/bvmt-etats-financiers/star/2021_consolide.pdf (264454 octets, SHA-256 bce6b2f23953798a8d0598eb17e48095d16858f837696ee25fa197f76eca404c), ignorée par git. Cité pour : composition du groupe consolidé et opinion sur les comptes consolidés. Preuve : couche texte du PDF (pdftotext), lue à la main."
+    },
+    {
+      "id": "bvmt-ef-star-2022-consolide",
+      "type": "report",
+      "title": "États financiers consolidés 2022",
+      "author": [
+        {
+          "literal": "Société tunisienne d'assurances et de réassurances"
+        }
+      ],
+      "publisher": "Société tunisienne d'assurances et de réassurances",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2022
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            3
+          ]
+        ]
+      },
+      "title-short": "Société tunisienne d'assurances et de réassurances, états financiers consolidés 2022",
+      "URL": "https://tunis-stockexchange.com/sites/default/files/societes/star/etats-financiers/star-etats-financiers-annuels-consolides-31-12-2022.pdf",
+      "archive": "Bourse de Tunis",
+      "archive_location": "https://tunis-stockexchange.com/sites/default/files/societes/star/etats-financiers/star-etats-financiers-annuels-consolides-31-12-2022.pdf",
+      "note": "citation-key: bvmt-ef-star-2022-consolide\nÉtats financiers consolidés de l'exercice 2022, page de la société sur le site de la Bourse de Tunis. Copie locale : tunisia-data/data/raw/entreprises-publiques/bvmt-etats-financiers/star/2022_consolide.pdf (251443 octets, SHA-256 803bdaf12c35b89f391ddc9e2c280daa2c2f0973b73219b7f35ca5c5a5509cda), ignorée par git. Cité pour : composition du groupe consolidé et opinion sur les comptes consolidés. Preuve : couche texte du PDF (pdftotext), lue à la main."
+    },
+    {
+      "id": "bvmt-ef-star-2023-consolide",
+      "type": "report",
+      "title": "États financiers consolidés 2023",
+      "author": [
+        {
+          "literal": "Société tunisienne d'assurances et de réassurances"
+        }
+      ],
+      "publisher": "Société tunisienne d'assurances et de réassurances",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2023
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            3
+          ]
+        ]
+      },
+      "title-short": "Société tunisienne d'assurances et de réassurances, états financiers consolidés 2023",
+      "URL": "https://tunis-stockexchange.com/sites/default/files/societes/star/etats-financiers/star-etats-financiers-annuels-consolides-31-12-2023.pdf",
+      "archive": "Bourse de Tunis",
+      "archive_location": "https://tunis-stockexchange.com/sites/default/files/societes/star/etats-financiers/star-etats-financiers-annuels-consolides-31-12-2023.pdf",
+      "note": "citation-key: bvmt-ef-star-2023-consolide\nÉtats financiers consolidés de l'exercice 2023, page de la société sur le site de la Bourse de Tunis. Copie locale : tunisia-data/data/raw/entreprises-publiques/bvmt-etats-financiers/star/2023_consolide.pdf (212338 octets, SHA-256 5c63447d5b25b669474c0feadfc4a7201a0f019c5a3d369b5b3de63cfa022143), ignorée par git. Cité pour : composition du groupe consolidé et opinion sur les comptes consolidés. Preuve : couche texte du PDF (pdftotext), lue à la main."
+    },
+    {
+      "id": "bvmt-ef-star-2024-consolide",
+      "type": "report",
+      "title": "États financiers consolidés 2024",
+      "author": [
+        {
+          "literal": "Société tunisienne d'assurances et de réassurances"
+        }
+      ],
+      "publisher": "Société tunisienne d'assurances et de réassurances",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            3
+          ]
+        ]
+      },
+      "title-short": "Société tunisienne d'assurances et de réassurances, états financiers consolidés 2024",
+      "URL": "https://tunis-stockexchange.com/sites/default/files/societes/star/etats-financiers/star-etats-financiers-annuels-consolides-31-12-2024.pdf",
+      "archive": "Bourse de Tunis",
+      "archive_location": "https://tunis-stockexchange.com/sites/default/files/societes/star/etats-financiers/star-etats-financiers-annuels-consolides-31-12-2024.pdf",
+      "note": "citation-key: bvmt-ef-star-2024-consolide\nÉtats financiers consolidés de l'exercice 2024, page de la société sur le site de la Bourse de Tunis. Copie locale : tunisia-data/data/raw/entreprises-publiques/bvmt-etats-financiers/star/2024_consolide.pdf (245075 octets, SHA-256 28ff2ba26abf17696dbafb5bdd5a5106a191e002bdbf0231fe362a765cbea6a8), ignorée par git. Cité pour : composition du groupe consolidé et opinion sur les comptes consolidés. Preuve : couche texte du PDF (pdftotext), lue à la main."
     }
   ]
 }
