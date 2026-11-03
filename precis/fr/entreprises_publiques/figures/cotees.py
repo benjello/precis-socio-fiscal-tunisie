@@ -314,6 +314,8 @@ def fig_cac(groupe: str, societe: str):
     nombres = np.zeros(len(exercices))
     for _, r in d.iterrows():
         j = exercices.index(int(r["exercice"]))
+        if r["opinion"].startswith("sans"):  # exercice lu, sans réserve : case blanche, zéro motif
+            continue
         nombres[j] += 1
         for t in r["themes"].split(";"):
             carte[themes.index(t), j] = 1
