@@ -296,7 +296,7 @@ THEMES_CAC = {
 }
 
 
-def fig_cac(groupe: str, societe: str):
+def fig_cac(groupe: str, societe: str, delais_ecartes: tuple[int, ...] = ()):
     """Trois vues sur les mêmes exercices : thèmes de réserve (carte), nombre de motifs (barres), délai de publication (courbe)."""
     import numpy as np
     figtools.apply_lang_font()
@@ -305,6 +305,7 @@ def fig_cac(groupe: str, societe: str):
     d = d[d["groupe"] == groupe]
     delais = _lire("delais-publication")
     delais = delais[(delais["societe"] == societe) & (delais["nature"] == "individuel")]
+    delais = delais[~delais["exercice"].astype(int).isin(delais_ecartes)]  # dates de la Bourse sans valeur (BTE)
     lus = sorted(int(x) for x in d["exercice"].unique())
     fin = max(lus + [int(x) for x in delais["exercice"]])
     exercices = list(range(min(lus) - 1, fin + 1))  # un exercice avant le premier rapport lu, jusqu'au dernier délai connu
@@ -354,9 +355,10 @@ def fig_cac(groupe: str, societe: str):
     return fig
 
 
-def figure_cac(groupe: str, societe: str, caption: str, note_lecture: str | None = None) -> None:
+def figure_cac(groupe: str, societe: str, caption: str, note_lecture: str | None = None,
+               delais_ecartes: tuple[int, ...] = ()) -> None:
     d = _lire("opinions-cac")
-    figtools.figure_tabs(fig_cac(groupe, societe), d[d["groupe"] == groupe], "opinions-cac",
+    figtools.figure_tabs(fig_cac(groupe, societe, delais_ecartes), d[d["groupe"] == groupe], "opinions-cac",
                          slug=f"fig_ep_cotees_cac_{societe}", caption=caption, note_lecture=note_lecture, nominal=False)
     plt.close("all")
 
