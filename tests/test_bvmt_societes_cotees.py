@@ -76,5 +76,47 @@ class DetenteursTest(unittest.TestCase):
         self.assertNotIn(b.cle_detenteur("BH SICAF"), b.DETENTEURS_PUBLICS)
 
 
+class ResultatsTest(unittest.TestCase):
+    def lignes(self, assemblee, exercice="2025", dividende="1.15"):
+        participations = [
+            ["État", "BNA", "bna", "35.26", "1000", assemblee, "Etat Tunisien"]
+        ]
+        indicateurs = [
+            {
+                "nom": "bna",
+                "libelle": "Résultat net (2)",
+                "exercice": exercice,
+                "dinars": "287737000.0",
+            },
+            {
+                "nom": "bna",
+                "libelle": "Dividende par action",
+                "exercice": exercice,
+                "dinars": dividende,
+            },
+            {
+                "nom": "bna",
+                "libelle": "Capital social",
+                "exercice": exercice,
+                "dinars": "320000000.0",
+            },
+        ]
+        return b.resultats(lambda nom: indicateurs, participations)
+
+    def test_le_dividende_de_l_etat_est_calcule_pour_l_assemblee_de_l_annee_suivante(
+        self,
+    ):
+        (ligne,) = self.lignes("30/04/2026")
+        self.assertEqual(ligne[2:5], ["2025", "287737000", "1.15"])
+        self.assertEqual(ligne[-1], "1150")  # 1,15 dinar × 1 000 actions
+
+    def test_pas_de_calcul_si_l_assemblee_n_est_pas_celle_qui_vote_le_dividende(self):
+        (ligne,) = self.lignes("30/04/2026", exercice="2024")
+        self.assertEqual(ligne[-1], "")
+
+    def test_seuls_le_resultat_net_et_le_dividende_sont_repris(self):
+        self.assertEqual(len(self.lignes("30/04/2026")), 1)
+
+
 if __name__ == "__main__":
     unittest.main()

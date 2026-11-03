@@ -1,0 +1,33 @@
+# Manifeste du relevé « entreprises publiques au Registre national des entreprises ».
+#
+# Fichier lu par figures/cotees.py (tableau du chapitre « Le Registre national des entreprises »).
+# Engendré par `scripts/rne_registre_releve.py` à partir de l'inventaire fait sur le portail
+# public, en parcours de visiteur et sans compte, le 3 novembre 2026 (tunisia-data, sources/
+# rne-fiches.csv et rne-documents.csv).
+#
+# CE QUE LE PORTAIL AFFICHE SANS COMPTE : identifiant, forme juridique, état du registre, liste des
+# documents déposés (nature, date, exercice pour un état financier, prix). Le contenu des
+# documents n'est pas affiché ; il est payant, et rien n'a été acheté.
+# 39 entreprises sur les 50 du volume : les onze autres (SOTRAPIL, BFPME, ARRU, SOGEMT, Tunisie
+# Trade Net, CIOK, Transtu, RFR, SNTRI, SORETRAS, SRTB) n'ont pas été retrouvées sous leur nom.
+# Les noms que le portail enregistre diffèrent souvent de ceux du précis, et beaucoup de résultats
+# de recherche sont des amicales ou des associations de retraités.
+# La fiche de la Banque de l'habitat (« non actif », un seul document) porte trois numéros
+# (00024588W, _1, _2) : probable doublon de registre ; la Bourse de Tunis donne 0024588W.
+
+format: long
+cle_de_ligne: [id_unique]
+
+colonnes:
+  entreprise: nom retenu par le précis
+  sigle: sigle
+  id_unique: identifiant unique du Registre
+  forme_juridique: forme juridique telle que le portail l'imprime
+  etat_registre: état du registre (Actif, Non Actif)
+  exercices_etats_financiers: exercices dont un état financier est déposé, séparés par des espaces
+  pv_dirigeants: nombre de procès-verbaux dont l'opération est une mise à jour des dirigeants
+  pv_capital: nombre de procès-verbaux dont l'opération est un changement de capital
+  documents: nombre de documents listés
+  consulte: date de la consultation
+
+sources: [rne-portail]

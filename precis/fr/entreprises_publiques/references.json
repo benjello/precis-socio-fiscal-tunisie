@@ -15793,6 +15793,30 @@
       "title-short": "Bourse de Tunis, Wifak International Bank",
       "URL": "https://tunis-stockexchange.com/informations-wifak-international-bank",
       "note": "citation-key: bvmt-wifak-international-bank\nPage publique de la société sur le site de la Bourse de Tunis, lue le 3 novembre 2026 : principaux actionnaires (plus de 5 %) à l'assemblée du 24/04/2026, capital social et fonds propres des trois derniers exercices, historique du capital. Copie locale : tunisia-data/data/raw/entreprises-publiques/bvmt/wifak-international-bank.html (188004 octets, SHA-256 2ac7e435c93345a93eb05bb8d38f228a29b5fbe7889c242bd4eb3df95235cab3), ignorée par git. Relevé : scripts/bvmt_societes_cotees.py. Les actionnaires sous 5 % ne sont pas nommés ; la page ne donne ni cours ni capitalisation."
+    },
+    {
+      "id": "rne-portail",
+      "type": "webpage",
+      "title": "Registre national des entreprises : portail public, fiches des sociétés et liste des documents déposés",
+      "author": [
+        {
+          "literal": "Centre national du Registre des entreprises"
+        }
+      ],
+      "publisher": "Centre national du Registre des entreprises",
+      "publisher-place": "Tunis",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            3
+          ]
+        ]
+      },
+      "title-short": "RNE, portail public",
+      "URL": "https://www.registre-entreprises.tn/rne-public/",
+      "note": "citation-key: rne-portail\nPortail public du Registre national des entreprises, consulté le 3 novembre 2026 en parcours de visiteur, sans compte : recherche par dénomination, fiche de la société (identifiant, forme juridique, état du registre) et liste des documents déposés avec leur nature, leur date, l'exercice d'un état financier et leur prix ; le contenu des documents n'est pas affiché et rien n'a été acheté. Relevé local : tunisia-data/sources/rne-fiches.csv (SHA-256 f273255f010999dd47fd09f9e6c6f92ece53344009b66e14bb8223aeb471dbbd) et rne-documents.csv (SHA-256 3d1e795797ad5ea7f7a9212e9ca9e72222e538c1e97820bd176ace7d7b38f8b6), 39 entreprises et 376 documents ; scripts/rne_registre_releve.py."
     }
   ]
 }

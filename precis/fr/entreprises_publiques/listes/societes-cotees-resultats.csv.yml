@@ -1,0 +1,28 @@
+# Manifeste du relevé « résultat net et dividende des sociétés cotées où l'État est actionnaire ».
+#
+# Fichier lu par figures/cotees.py (tableau du chapitre « Les sociétés cotées »). Engendré par
+# `scripts/bvmt_societes_cotees.py livre` à partir de l'encadré « Indicateurs et ratios clés » de la
+# page de chaque société à la Bourse de Tunis, lue le 3 novembre 2026.
+#
+# LE DIVIDENDE REVENANT À L'ÉTAT EST CALCULÉ, non imprimé : dividende par action de l'exercice N,
+# multiplié par le nombre d'actions de l'État à l'assemblée de l'année N+1, qui vote le dividende
+# de N. Il n'est calculé que lorsque la page donne ce dividende et que la date de l'assemblée est
+# de l'année N+1 ; ce n'est pas une recette du budget. Une case vide est une valeur que la page
+# n'imprime pas, non un zéro. Résultat net : part du groupe pour les sociétés qui publient des
+# comptes consolidés (note de la page).
+# La BTE n'est pas reprise : sa page n'imprime ni résultat net ni dividende par action.
+
+format: long
+cle_de_ligne: [page, exercice]
+
+colonnes:
+  societe: société cotée
+  page: nom de la page à la Bourse (clé de citation bvmt-<page>)
+  exercice: exercice
+  resultat_net_dt: résultat net, en dinars, tel que la page l'imprime
+  dividende_par_action_dt: dividende par action, en dinars, tel que la page l'imprime
+  actions_etat: actions de l'État à l'assemblée la plus récente que donne la page
+  assemblee: date de cette assemblée (jj/mm/aaaa)
+  dividende_etat_dt: dividende revenant à l'État, en dinars, calculé comme ci-dessus
+
+sources: [bvmt-bh-bank, bvmt-bna, bvmt-ciments-de-bizerte, bvmt-sotumag, bvmt-star, bvmt-stb, bvmt-tunisair]

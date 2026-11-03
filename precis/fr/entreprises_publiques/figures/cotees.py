@@ -2,11 +2,15 @@
 
     from figures import cotees as ct
     ct.tableau_participations(caption=…)          # qui détient quoi, détenteur par détenteur
+    ct.tableau_resultats(caption=…)               # résultat net et dividendes des sociétés où l'État est actionnaire
+    ct.tableau_registre(caption=…)                # l'identité des entreprises publiques au Registre national
     ct.figure_capital(caption=…, note_lecture=…)  # le capital de la STB, de la BH et de la BNA
 
-D'OÙ VIENNENT LES DONNÉES. Deux relevés versionnés DANS le livre (`listes/societes-cotees-*.csv`,
-chacun avec son manifeste `.csv.yml`), engendrés par `scripts/bvmt_societes_cotees.py livre` à
-partir des pages publiques de la Bourse de Tunis. Rien n'est lu de l'entrepôt `tunisia-data`.
+D'OÙ VIENNENT LES DONNÉES. Des relevés versionnés DANS le livre (`listes/*.csv`, chacun avec son manifeste `.csv.yml`) :
+`societes-cotees-*.csv`, engendrés par `scripts/bvmt_societes_cotees.py livre` à partir des pages
+publiques de la Bourse de Tunis, et `entreprises-publiques-registre.csv`, engendré par
+`scripts/rne_registre_releve.py` à partir du portail public du Registre national des entreprises.
+Rien n'est lu de l'entrepôt `tunisia-data` à la construction.
 
 RÈGLES.
 
@@ -33,6 +37,8 @@ import figtools  # noqa: E402
 RELEVES = Path(__file__).resolve().parent.parent / "listes"
 PARTICIPATIONS = "societes-cotees-participations"
 CAPITAL = "societes-cotees-capital"
+RESULTATS = "societes-cotees-resultats"
+REGISTRE = "entreprises-publiques-registre"
 COULEURS = {"STB": "#0969da", "BH": "#bc4c00", "BNA": "#1a7f37"}
 
 
@@ -79,6 +85,41 @@ def tableau_participations(caption: str, tbl_id: str = "tbl-ep-cotees-participat
                        f"[@bvmt-{r['page']}]"])
     _md(["Détenteur", "Société cotée", "Part du capital (%)", "Assemblée", "Source"],
         lignes, caption, tbl_id)
+
+
+def _md_dt(valeur: str, mille: float = 1e6, chiffres: int = 1) -> str:
+    """Dinars → millions de dinars, virgule décimale ; vide si le relevé est vide."""
+    if valeur == "":
+        return "–"
+    return f"{float(valeur) / mille:,.{chiffres}f}".replace(",", " ").replace(".", ",")
+
+
+def tableau_resultats(caption: str, tbl_id: str = "tbl-ep-cotees-resultats") -> None:
+    """Résultat net et dividende par action par exercice, et dividende revenant à l'État."""
+    d = _lire(RESULTATS)
+    lignes = []
+    precedent = None
+    for _, r in d.iterrows():
+        societe = f"**{r['societe']}**" if r["societe"] != precedent else ""
+        precedent = r["societe"]
+        dividende = r["dividende_par_action_dt"].replace(".", ",") or "–"
+        lignes.append([societe, r["exercice"], _md_dt(r["resultat_net_dt"]), dividende,
+                       _md_dt(r["dividende_etat_dt"]), f"[@bvmt-{r['page']}]"])
+    _md(["Société", "Exercice", "Résultat net (MD)", "Dividende par action (D)",
+         "Dividende revenant à l'État (MD)", "Source"], lignes, caption, tbl_id)
+
+
+def tableau_registre(caption: str, tbl_id: str = "tbl-ep-registre-entreprises") -> None:
+    """Une ligne par entreprise : identifiant, forme, état, états financiers déposés."""
+    d = _lire(REGISTRE)
+    lignes = []
+    for _, r in d.iterrows():
+        exercices = r["exercices_etats_financiers"].replace(" ", ", ") or "aucun"
+        lignes.append([r["entreprise"], r["id_unique"], r["forme_juridique"].replace(
+            "Etablissement", "Établissement"), r["etat_registre"].replace("Non Actif", "non actif"
+            ).replace("Actif", "actif"), exercices, r["documents"]])
+    _md(["Entreprise", "Identifiant", "Forme au Registre", "État", "États financiers déposés",
+         "Documents listés"], lignes, caption, tbl_id)
 
 
 def donnees_capital() -> pd.DataFrame:
