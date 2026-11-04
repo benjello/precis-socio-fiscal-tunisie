@@ -46,12 +46,16 @@ class TestCorrespondance(unittest.TestCase):
                 fichier, _, ancre = cible.partition("#")
                 source = FR / fichier.replace(".html", ".qmd")
                 self.assertTrue(source.is_file(), f"{ligne['instrument']} : {source}")
-                self.assertTrue(ancre, f"{ligne['instrument']} : ancre manquante")
-                texte = source.read_text(encoding="utf-8")
-                self.assertRegex(
-                    texte, r"\{[^}]*#" + re.escape(ancre) + r"[\s}]",
-                    f"{ligne['instrument']} : #{ancre} absent de {source.name}",
-                )
+                # Une page générale (« parcours-atmp.html », sans dossier de livre) n'a pas
+                # d'ancre : la page entière est la cible. Un chapitre de livre en exige une.
+                if "/" in fichier:
+                    self.assertTrue(ancre, f"{ligne['instrument']} : ancre manquante")
+                if ancre:
+                    texte = source.read_text(encoding="utf-8")
+                    self.assertRegex(
+                        texte, r"\{[^}]*#" + re.escape(ancre) + r"[\s}]",
+                        f"{ligne['instrument']} : #{ancre} absent de {source.name}",
+                    )
 
     def test_pas_de_doublon_d_instrument(self):
         noms = [ligne["instrument"] for ligne in self.lignes]
