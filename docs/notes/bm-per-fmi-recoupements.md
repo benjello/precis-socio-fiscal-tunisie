@@ -6,10 +6,10 @@ Date : 4 novembre 2026. Branche `chantier/ep-bm-per2020`. Les relevés sont dans
 | Fichier | Lignes de données | Dont sans valeur (TODO) |
 |---|---|---|
 | `banque-mondiale-per-2020-entreprises.csv` | 139 | 10 |
-| `fmi-2021-arrieres-croises.csv` | 15 | 0 (5 de période incertaine) |
+| `fmi-2021-arrieres-croises.csv` | 15 | 0 (2 de période incertaine) |
 | `banque-mondiale-matrice-reformes-2022.csv` | 18 | 0 |
 
-Les pages ont été rendues à l'image (150 dpi, 300 dpi pour la figure du FMI) et relues. Aucun
+Les pages citées dans les tableaux sont des pages du fichier anglais, sauf mention « imprimée » ; les colonnes `page_pdf` et `page_imprimee` des relevés donnent les deux. Les pages ont été rendues à l'image (150 dpi, 300 dpi pour la figure du FMI) et relues. Aucun
 chiffre n'est estimé. Les rapprochements ci-dessous sont des quotients ou des sommes de valeurs
 imprimées, jamais des valeurs nouvelles à verser.
 
@@ -50,7 +50,7 @@ donne 57 et 42 : conforme (fichier 57, imprimé 42).
 
 | Source | Valeur | Date |
 |---|---|---|
-| Banque mondiale, p. 42 | 5,4 milliards de dinars, 6 % du PIB, « about 50 percent » des garanties extérieures des entreprises publiques | 2016 |
+| Banque mondiale, fichier 57 (imprimée 42) | 5,4 milliards de dinars, 6 % du PIB, « about 50 percent » des garanties extérieures des entreprises publiques | 2016 |
 | Série `garanties-etat` (LF 2022, p. 58) | encours garanti extérieur 9 261,9 MD ; total 11 269,5 MD (11,83 % du PIB) | fin 2016 |
 | Livre blanc 2018 (série des études) | dette extérieure garantie des entreprises publiques 12 % du PIB, STEG « plus de 50 % » | 2015 |
 
@@ -65,7 +65,7 @@ d'intervalle.
 
 | Source | Valeur | Année |
 |---|---|---|
-| Banque mondiale, p. 11 et 57 | 564 millions de dinars (0,6 % du PIB), « we identify all these transfers in the budget and estimate them » | 2016 |
+| Banque mondiale, fichier 11 et 57 (imprimées x et 42) | 564 millions de dinars (0,6 % du PIB), « we identify all these transfers in the budget and estimate them » | 2016 |
 | Série `transport-transferts-par-entreprise` (LF 2020, réalisations) | ministère du Transport, total 575,611 MD (investissements 110,569 ; interventions 461,587) | 2016 |
 | Même série, 2016 | Transtu 147,623 (interventions 126,543) ; SNCFT 110,791 (65,5) ; sociétés régionales 253,955 (241,955) | 2016 |
 
@@ -133,11 +133,12 @@ flèches du FMI. Rien ne permet de rapprocher les montants.
 - **Pertes techniques de la STEG** : résumé (p. x) « de 12 à 14 % de l'énergie produite, 2010-2016 » ;
   chapitre 7 (p. 42) « de 12 % de l'énergie injectée en 2010 à environ 15 % ». Dénominateur et valeur
   finale diffèrent.
-- **Recettes de la STEG implicites** : 1,6 milliard = 43 % donne 3,7 milliards ; 200 millions = 5,3 %
-  donne 3,8 ; 5,4 milliards = 130 % donne 4,2. Même année (2016) : les ratios ne reposent pas sur
-  les mêmes recettes. À ne pas rapprocher entre eux.
+- **Recettes de la STEG implicites** : les ratios « 43 % des recettes » (factures impayées), « 5,3 % » (200 millions
+  d'économie) et « 130 % » (dette garantie) ne reposent pas sur les mêmes recettes, bien que l'année soit la même (2016).
+  À ne pas rapprocher entre eux.
 - **Figure 7.1** : l'étiquette 13,38 est au-dessus de 2007, 12,03 sous 2011 ; le creux de la courbe est en 2010 et le texte
-  donne 12 % en 2010. Rattachement à l'année incertain (statut `imprime_rattachement_incertain`).
+  donne 12 % en 2010. La ligne 12,03 porte donc l'année « 2010 ou 2011 » ; les deux lignes sont de statut
+  `imprime_rattachement_incertain`.
 - **Figure 8.4** : étiquettes −72,72 / −74,4 / −31,62 / −123,372 / +2,92 ; le texte donne 73 / 74 /
   32 / 120 (GDA) ; somme des étiquettes −299,192 contre « −299 » imprimé. Concordant à l'arrondi.
 - **Figure 9.3** : la barre 2010 n'a que deux segments (Tunis 335,273 ; Sfax 68,563 ; total 403,836
@@ -154,7 +155,7 @@ flèches du FMI. Rien ne permet de rapprocher les montants.
 1. Figures sans valeurs imprimées, non lues sur les barres : 7.2 (emprunts de la STEG), 7.1 (hors trois
    étiquettes), 8.4 (coûts et recettes, six entités), 9.4 (parc de bus de la Transtu), barre 2010 de la
    société du Sahel (fig. 9.3).
-2. FMI : période des flèches État-fonds de sécurité sociale et de la chaîne CNSS/CNRPS, CNAM, PCT ;
+2. FMI : période des deux flèches État-fonds de sécurité sociale (la chaîne CNSS/CNRPS, CNAM, PCT est lue 2019) ;
    définition de « Other » ; détail par entreprise du bloc énergie (flèche à quatre pointes, 2,5).
 3. Matrice : aucune date de signature ; sigle RNTA non développé ; Tunisair du commentaire de mai 2021 ;
    décrets 2020-314 et 2020-105 non vérifiés.

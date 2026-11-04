@@ -14,8 +14,9 @@
 # autres de 2019 « as included in the 2020 budget annex, and information from CNAM and PCT ».
 # CE QU'IL N'IMPRIME PAS : aucun montant par entreprise (STEG, STIR, ETAP, SNDP sont groupées), aucun montant en dinars,
 # aucun PIB de référence ni base du PIB. La flèche à quatre pointes du bloc énergie (2,5) ne distingue pas créancier et débiteur.
-# La période des flèches entre l'État et les fonds de sécurité sociale et de la chaîne CNSS/CNRPS, CNAM, PCT n'est pas
-# tranchée par la note : colonne `annee` vide, statut `imprime_periode_incertaine` (TODO).
+# La période des deux flèches entre l'État et les fonds de sécurité sociale (0,4 et 1,2) n'est pas tranchée par la note
+# (les fonds ne sont pas des entreprises) : colonne `annee` vide, statut `imprime_periode_incertaine` (TODO). La chaîne
+# CNSS/CNRPS, CNAM, PCT, qui ne touche pas l'État, est lue 2019 (« all other data are for 2019 »).
 # Ne se lit pas comme un total : les blocs se chevauchent (l'énergie compte ses arriérés internes à part).
 
 format: long
@@ -24,7 +25,7 @@ cle_de_ligne: [creancier, debiteur, annee]
 colonnes:
   creancier: bloc vers lequel pointe la flèche
   debiteur: bloc d'où part la flèche
-  annee: 2020-06 (juin 2020, arriérés État-entreprises), 2019, ou vide si la note ne tranche pas
+  annee: 2020-06 (juin 2020, arriérés État-entreprises), 2019, ou vide pour les deux flèches État-fonds de sécurité sociale
   montant: montant imprimé, en chaîne
   unite: unité imprimée (Percent of GDP)
   document: clé de la notice (imf-dp-2021-019)
