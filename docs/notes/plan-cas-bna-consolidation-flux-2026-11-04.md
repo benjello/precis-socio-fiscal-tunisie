@@ -110,7 +110,7 @@ Script : `scripts/bna_recoupement_debiteurs.py`. Six entreprises, 2018-2023 (les
 | O.T.D. | 240,2 | 95 % | 31 % (2020) ; fiche 2023 sans passif | cohérent |
 | O.N.H. | 217,7 | 92 % | 22 % (2022) ; fiche 2023 sans passif | cohérent |
 | El Fouladh | 119,5 | 68 % | 19 % de 621,6 | cohérent |
-| Transtu | 117,0 | 93 % | fiche sans passif ni dette totale | non testable |
+| Transtu | 117,0 | 93 % | « dette totale » seulement pour 2018-2020, alors que les engagements de la BNA commencent en 2021 : aucune année commune | non testable |
 | ETAP | 65,4 | aucune | 1 % de 4 379,9 | cohérent |
 
 1. **Règle « garantie ≤ engagement » : vérifiée pour toutes les lignes.** Aucune garantie imprimée ne dépasse l'engagement.
@@ -118,6 +118,26 @@ Script : `scripts/bna_recoupement_debiteurs.py`. Six entreprises, 2018-2023 (les
 3. **L'Office des céréales pèse 79 % des engagements envers les entreprises publiques en 2023** (5 070 sur 6 442 MD). Rapporté au passif hors fonds propres, ce poids est de 65 % en 2020 et de 58 % en 2023 (2018 et 2019, rapportés à la « dette totale », mesure différente : 70 % et 90 %, non comparables aux années suivantes). Qui détient le reste du passif de l'Office n'est pas dans le dépôt.
 4. **La garantie de l'État couvre 100 % de l'engagement de la BNA envers l'Office en 2018, 65 % en 2019, 69 % en 2020, 60 % en 2021, puis 100 % en 2022 et 2023.** Cette rupture n'est pas expliquée dans le dépôt. Le même exercice 2022 voit les emprunts à plus d'un an de l'Office passer de 53 à 584 MD (959 MD en 2023). Rapprocher, sans conclure, du texte qui accorde ces garanties (à chercher au JORT sur la machine locale).
 5. **Dettes croisées de l'État (2023)** : l'Office des céréales a 2 185 MD de subventions non réglées de l'État et 1 631 MD de dettes envers lui ; Transtu 1 509 MD de dettes envers l'État, 365 MD de créances ; ETAP 486 MD de dettes envers l'État. Ces séries portent sur l'État, pas sur la BNA : elles ne servent à vérifier aucune règle de somme, seulement à situer l'Office. Dette bancaire garantie de l'Office (5 070 MD, BNA seule) = 2,3 fois ses créances sur l'État.
-6. **Les six fiches n'ont pas toutes les années** : Transtu n'a ni passif ni dette totale utilisables, O.T.D. et O.N.H. n'ont pas de passif en 2023. Le verdict est « non testable », non « cohérent ».
+6. **Les six fiches n'ont pas toutes les années** (matrice complète : `scripts/lacunes_fiches_debiteurs.py`). Transtu : « dette totale » en 2018-2020, aucun passif ensuite, et les engagements de la BNA envers elle ne commencent qu'en 2021, donc aucune année commune. O.T.D. : pas de passif en 2023. O.N.H. : pas de passif hors fonds propres en 2023 (emprunts à plus d'un an et total des actifs présents). La « dette totale » s'arrête en 2020 pour les six entreprises. Le verdict est « non testable », non « cohérent ».
 
 Étape 6 (612 575 kDT non détaillés en 2023) : inchangée, à faire avec les états de la BNA.
+
+## Résultat partiel de l'étape 1 : écart entre le résultat net du ministère et celui de la Bourse (4 novembre 2026)
+
+Script : `scripts/ecart_ministere_bourse.py`. Résultat net en MD, exercices où les deux séries existent.
+
+| Société | Exercice | Édition (ministère) | Ministère | Bourse | Écart |
+|---|---|---|---:|---:|---:|
+| STB | 2023 | LF 2025 | 50,6 | 59,7 | −15 % |
+| BNA | 2023 | LF 2025 | 190,0 | 212,0 | −10 % |
+| BH | 2023 | LF 2025 | 140,0 | 143,0 | −2 % |
+| Tunisair | 2023 | LF 2025 | −211,1 | −243,0 | +13 % |
+| Tunisair | 2022 | LF 2024 | −218,5 | −220,8 | +1 % |
+| Tunisair | 2022 | LF 2025 | −176,3 | −220,8 | +20 % |
+| Ciments de Bizerte | 2022 et 2023 | LF 2024 et LF 2025 | −29,0 ; −34,4 | −29,0 ; −34,4 | 0 % |
+
+1. **Le ministère n'est pas toujours plus petit** : il est égal à la Bourse pour les Ciments de Bizerte et, pour Tunisair 2022, égal à 1 % près dans l'édition LF 2024 mais de 20 % plus petit dans l'édition LF 2025 (le chiffre a été révisé entre les deux éditions).
+2. **Hypothèse à tester (étape 1)** : les Ciments de Bizerte n'ont que des états individuels à la Bourse (aucun consolidé) et leur résultat est identique dans les deux séries. Les quatre autres ont des états consolidés. L'écart serait alors la différence entre un résultat individuel (fiche du ministère) et un résultat consolidé (Bourse). **Rien ne le prouve aujourd'hui** : on ne sait pas si le chiffre de la Bourse dans `societes-cotees-resultats.csv` est individuel ou consolidé. Test : rapprocher le chiffre de la Bourse, pour la BNA 2023, des deux états de la page.
+3. **Les chiffres du ministère sont révisés d'une édition à l'autre** (Tunisair 2022 : −218,5 puis −176,3 ; Tunisair 2021 : −413,5 puis −414,1) ; il faut toujours citer l'édition.
+
+Tests ajoutés : `tests/test_flux_intra_publics_cotees.py` (règles A, B, D, G ; actions de l'État égales dans les deux relevés).
