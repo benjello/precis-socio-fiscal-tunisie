@@ -1,0 +1,261 @@
+sigle,exercice,grandeur,valeur,unite,tableau,page_pdf,page_imprimee,note
+STEG,,entreprise_listee,1,nombre d'entreprises,1.2,15,9,Énergie ; électricité et gaz ; nom imprimé : Société Tunisienne de l'Électricité et du Gaz (STEG)
+TUNISIE_TELECOM,,entreprise_listee,1,nombre d'entreprises,1.2,15,9,TIC ; téléphonie fixe et mobile ; nom imprimé : TUNISIE TELECOM
+COTUNAV,,entreprise_listee,1,nombre d'entreprises,1.2,15,9,Transport ; transport maritime ; nom imprimé : Compagnie Tunisienne de Navigation (COTUNAV)
+OMMP,,entreprise_listee,1,nombre d'entreprises,1.2,15,9,Transport ; ports ; nom imprimé : Office de la Marine Marchande et des Ports (OMMP)
+STAM,,entreprise_listee,1,nombre d'entreprises,1.2,15,9,Transport ; ports ; nom imprimé : Société Tunisienne d'Acconage et de Manutention (STAM)
+TUNISAIR,,entreprise_listee,1,nombre d'entreprises,1.2,15,9,Transport ; compagnie aérienne ; nom imprimé : TUNISAIR
+OACA,,entreprise_listee,1,nombre d'entreprises,1.2,15,9,Transport ; aéroports ; nom imprimé : Office de l'Aviation Civile et des Aéroports (OACA)
+SNCFT,,entreprise_listee,1,nombre d'entreprises,1.2,15,9,Transport ; rail ; nom imprimé : Société Nationale des Chemins de Fer Tunisiens (SNCFT)
+RFR,,entreprise_listee,1,nombre d'entreprises,1.2,16,10,Transport ; rail ; nom imprimé : Société du Réseau Ferroviaire Rapide de Tunis (RFR)
+STA,,entreprise_listee,1,nombre d'entreprises,1.2,16,10,Transport ; autoroutes ; nom imprimé : Société Tunisie Autoroutes (STA)
+TRANSTU,,entreprise_listee,1,nombre d'entreprises,1.2,16,10,Transport ; bus et tramways ; nom imprimé : Société des transports de Tunis (TRANSTU - in greater Tunis)
+SRT,,entreprise_listee,12,nombre d'entreprises,1.2,16,10,"Transport ; bus ; nom imprimé : Sociétés Régionales de Transport (SRTs in the other governorates), renvoi 8 : douze sociétés détenues directement par l'État ; la société de bus de la région de Sousse (STS) appartient aux collectivités régionales"
+SONEDE,,entreprise_listee,1,nombre d'entreprises,1.2,16,10,Eau et assainissement ; eau ; nom imprimé : Société Nationale d'Exploitation et de Distribution des Eaux (SONEDE)
+ONAS,,entreprise_listee,1,nombre d'entreprises,1.2,16,10,Eau et assainissement ; assainissement ; nom imprimé : Office National de l'Assainissement (ONAS)
+TOTAL_25,,entreprise_listee,25,nombre d'entreprises,1.2,16,10,ligne « Total » imprimée ; somme des lignes relevées : 25 (13 lignes nommées dont 12 sociétés régionales)
+STEG,2017,produits_exploitation,4068,M TND,1.3,17,11,
+STEG,2017,charges_exploitation,4872,M TND,1.3,17,11,
+STEG,2017,resultat_brut_exploitation,-804,M TND,1.3,17,11,
+STEG,2017,subventions_exploitation,593,M TND,1.3,17,11,
+STEG,2017,resultat_net,-1194,M TND,1.3,17,11,
+STEG,2017,fonds_propres,-276,M TND,1.3,17,11,
+STEG,2017,investissement,553,M TND,1.3,17,11,
+STEG,2017,subventions_investissement,125,M TND,1.3,17,11,
+STEG,2017,dette,6438,M TND,1.3,17,11,"ligne « Debt » du premier tableau : renvoi c, dette = emprunts à terme et crédits bancaires à court terme"
+STEG,2017,actif_total,8978,M TND,1.3,17,11,
+STEG,2017,effectifs,12388,agents,1.3,17,11,
+SONEDE,2017,produits_exploitation,434,M TND,1.3,17,11,
+SONEDE,2017,charges_exploitation,460,M TND,1.3,17,11,
+SONEDE,2017,resultat_brut_exploitation,-51,M TND,1.3,17,11,écart : produits - charges = -26
+SONEDE,2017,subventions_exploitation,1,M TND,1.3,17,11,
+SONEDE,2017,resultat_net,-39,M TND,1.3,17,11,
+SONEDE,2017,fonds_propres,1251,M TND,1.3,17,11,
+SONEDE,2017,investissement,,M TND,1.3,17,11,NA imprimé
+SONEDE,2017,subventions_investissement,23,M TND,1.3,17,11,
+SONEDE,2017,dette,606,M TND,1.3,17,11,"ligne « Debt » du premier tableau : renvoi c, dette = emprunts à terme et crédits bancaires à court terme"
+SONEDE,2017,actif_total,2414,M TND,1.3,17,11,
+SONEDE,2017,effectifs,6318,agents,1.3,17,11,
+ONAS,2017,produits_exploitation,324,M TND,1.3,17,11,
+ONAS,2017,charges_exploitation,292,M TND,1.3,17,11,
+ONAS,2017,resultat_brut_exploitation,-96,M TND,1.3,17,11,"écart : produits - charges = 32 ; produits - charges - subventions d'exploitation = -96, égal à la valeur imprimée"
+ONAS,2017,subventions_exploitation,128,M TND,1.3,17,11,
+ONAS,2017,resultat_net,3,M TND,1.3,17,11,
+ONAS,2017,fonds_propres,1341,M TND,1.3,17,11,
+ONAS,2017,investissement,162,M TND,1.3,17,11,
+ONAS,2017,subventions_investissement,52,M TND,1.3,17,11,
+ONAS,2017,dette,795,M TND,1.3,17,11,"ligne « Debt » du premier tableau : renvoi c, dette = emprunts à terme et crédits bancaires à court terme"
+ONAS,2017,actif_total,2392,M TND,1.3,17,11,
+ONAS,2017,effectifs,3592,agents,1.3,17,11,
+SNCFT,2017,produits_exploitation,164,M TND,1.3,17,11,
+SNCFT,2017,charges_exploitation,228,M TND,1.3,17,11,
+SNCFT,2017,resultat_brut_exploitation,-64,M TND,1.3,17,11,
+SNCFT,2017,subventions_exploitation,48,M TND,1.3,17,11,
+SNCFT,2017,resultat_net,-81,M TND,1.3,17,11,
+SNCFT,2017,fonds_propres,530,M TND,1.3,17,11,
+SNCFT,2017,investissement,49,M TND,1.3,17,11,
+SNCFT,2017,subventions_investissement,37,M TND,1.3,17,11,
+SNCFT,2017,dette,791,M TND,1.3,17,11,"ligne « Debt » du premier tableau : renvoi c, dette = emprunts à terme et crédits bancaires à court terme"
+SNCFT,2017,actif_total,1884,M TND,1.3,17,11,
+SNCFT,2017,effectifs,4518,agents,1.3,17,11,
+TRANSTU,2016,produits_exploitation,205,M TND,1.3,17,11,colonne marquée a : valeurs de 2016
+TRANSTU,2016,charges_exploitation,333,M TND,1.3,17,11,colonne marquée a : valeurs de 2016
+TRANSTU,2016,resultat_brut_exploitation,-254,M TND,1.3,17,11,"écart : produits - charges = -128 ; produits - charges - subventions d'exploitation = -254, égal à la valeur imprimée ; colonne marquée a : valeurs de 2016"
+TRANSTU,2016,subventions_exploitation,126,M TND,1.3,17,11,colonne marquée a : valeurs de 2016
+TRANSTU,2016,resultat_net,-132,M TND,1.3,17,11,colonne marquée a : valeurs de 2016
+TRANSTU,2016,fonds_propres,-545,M TND,1.3,17,11,colonne marquée a : valeurs de 2016
+TRANSTU,2016,investissement,49,M TND,1.3,17,11,colonne marquée a : valeurs de 2016
+TRANSTU,2016,subventions_investissement,,M TND,1.3,17,11,NA imprimé ; colonne marquée a : valeurs de 2016
+TRANSTU,2016,dette,587,M TND,1.3,17,11,"colonne marquée a : valeurs de 2016 ; ligne « Debt » du premier tableau : renvoi c, dette = emprunts à terme et crédits bancaires à court terme"
+TRANSTU,2016,actif_total,1425,M TND,1.3,17,11,colonne marquée a : valeurs de 2016
+TRANSTU,2016,effectifs,7813,agents,1.3,17,11,colonne marquée a : valeurs de 2016
+OMMP,2017,produits_exploitation,142,M TND,1.3,17,11,
+OMMP,2017,charges_exploitation,101,M TND,1.3,17,11,
+OMMP,2017,resultat_brut_exploitation,41,M TND,1.3,17,11,
+OMMP,2017,subventions_exploitation,0,M TND,1.3,17,11,
+OMMP,2017,resultat_net,44,M TND,1.3,17,11,
+OMMP,2017,fonds_propres,418,M TND,1.3,17,11,
+OMMP,2017,investissement,51,M TND,1.3,17,11,
+OMMP,2017,subventions_investissement,,M TND,1.3,17,11,NA imprimé
+OMMP,2017,dette,7,M TND,1.3,17,11,"ligne « Debt » du second tableau, marquée b (valeurs de 2015) alors que la colonne est celle de 2017 : renvoi sans doute pour c, non tranché"
+OMMP,2017,actif_total,538,M TND,1.3,17,11,
+OMMP,2017,effectifs,1050,agents,1.3,17,11,
+STA,2017,produits_exploitation,82,M TND,1.3,17,11,
+STA,2017,charges_exploitation,73,M TND,1.3,17,11,
+STA,2017,resultat_brut_exploitation,9,M TND,1.3,17,11,
+STA,2017,subventions_exploitation,0,M TND,1.3,17,11,
+STA,2017,resultat_net,-38,M TND,1.3,17,11,
+STA,2017,fonds_propres,908,M TND,1.3,17,11,
+STA,2017,investissement,275,M TND,1.3,17,11,
+STA,2017,subventions_investissement,0,M TND,1.3,17,11,
+STA,2017,dette,1280,M TND,1.3,17,11,"ligne « Debt » du second tableau, marquée b (valeurs de 2015) alors que la colonne est celle de 2017 : renvoi sans doute pour c, non tranché"
+STA,2017,actif_total,2499,M TND,1.3,17,11,
+STA,2017,effectifs,1000,agents,1.3,17,11,
+TUNISAIR,2016,produits_exploitation,1127,M TND,1.3,17,11,colonne marquée a : valeurs de 2016
+TUNISAIR,2016,charges_exploitation,1324,M TND,1.3,17,11,colonne marquée a : valeurs de 2016
+TUNISAIR,2016,resultat_brut_exploitation,-197,M TND,1.3,17,11,colonne marquée a : valeurs de 2016
+TUNISAIR,2016,subventions_exploitation,0,M TND,1.3,17,11,colonne marquée a : valeurs de 2016
+TUNISAIR,2016,resultat_net,-196,M TND,1.3,17,11,colonne marquée a : valeurs de 2016
+TUNISAIR,2016,fonds_propres,-168,M TND,1.3,17,11,colonne marquée a : valeurs de 2016
+TUNISAIR,2016,investissement,77,M TND,1.3,17,11,colonne marquée a : valeurs de 2016
+TUNISAIR,2016,subventions_investissement,,M TND,1.3,17,11,NA imprimé ; colonne marquée a : valeurs de 2016
+TUNISAIR,2016,dette,1062,M TND,1.3,17,11,"colonne marquée a : valeurs de 2016 ; ligne « Debt » du second tableau, marquée b (valeurs de 2015) alors que la colonne est celle de 2016 : renvoi sans doute pour c, non tranché"
+TUNISAIR,2016,actif_total,1980,M TND,1.3,17,11,colonne marquée a : valeurs de 2016
+TUNISAIR,2016,effectifs,8000,agents,1.3,17,11,colonne marquée a : valeurs de 2016
+TUNISIE_TELECOM,2016,produits_exploitation,1095,M TND,1.3,17,11,colonne marquée a : valeurs de 2016
+TUNISIE_TELECOM,2016,charges_exploitation,,M TND,1.3,17,11,NA imprimé ; colonne marquée a : valeurs de 2016
+TUNISIE_TELECOM,2016,resultat_brut_exploitation,,M TND,1.3,17,11,NA imprimé ; colonne marquée a : valeurs de 2016
+TUNISIE_TELECOM,2016,subventions_exploitation,,M TND,1.3,17,11,NA imprimé ; colonne marquée a : valeurs de 2016
+TUNISIE_TELECOM,2016,resultat_net,,M TND,1.3,17,11,NA imprimé ; colonne marquée a : valeurs de 2016
+TUNISIE_TELECOM,2016,fonds_propres,,M TND,1.3,17,11,NA imprimé ; colonne marquée a : valeurs de 2016
+TUNISIE_TELECOM,2016,investissement,,M TND,1.3,17,11,NA imprimé ; colonne marquée a : valeurs de 2016
+TUNISIE_TELECOM,2016,subventions_investissement,,M TND,1.3,17,11,NA imprimé ; colonne marquée a : valeurs de 2016
+TUNISIE_TELECOM,2016,dette,1217,M TND,1.3,17,11,"colonne marquée a : valeurs de 2016 ; ligne « Debt » du second tableau, marquée b (valeurs de 2015) alors que la colonne est celle de 2016 : renvoi sans doute pour c, non tranché"
+TUNISIE_TELECOM,2016,actif_total,,M TND,1.3,17,11,NA imprimé ; colonne marquée a : valeurs de 2016
+TUNISIE_TELECOM,2016,effectifs,,agents,1.3,17,11,NA imprimé ; colonne marquée a : valeurs de 2016
+OACA,2015,produits_exploitation,288,M TND,1.3,17,11,colonne marquée b : valeurs de 2015
+OACA,2015,charges_exploitation,314,M TND,1.3,17,11,colonne marquée b : valeurs de 2015
+OACA,2015,resultat_brut_exploitation,-26,M TND,1.3,17,11,colonne marquée b : valeurs de 2015
+OACA,2015,subventions_exploitation,,M TND,1.3,17,11,NA imprimé ; colonne marquée b : valeurs de 2015
+OACA,2015,resultat_net,-22,M TND,1.3,17,11,colonne marquée b : valeurs de 2015
+OACA,2015,fonds_propres,,M TND,1.3,17,11,NA imprimé ; colonne marquée b : valeurs de 2015
+OACA,2015,investissement,30,M TND,1.3,17,11,colonne marquée b : valeurs de 2015
+OACA,2015,subventions_investissement,,M TND,1.3,17,11,NA imprimé ; colonne marquée b : valeurs de 2015
+OACA,2015,dette,,M TND,1.3,17,11,"NA imprimé ; colonne marquée b : valeurs de 2015 ; ligne « Debt » du second tableau, marquée b (valeurs de 2015) alors que la colonne est celle de 2015 : renvoi sans doute pour c, non tranché"
+OACA,2015,actif_total,,M TND,1.3,17,11,NA imprimé ; colonne marquée b : valeurs de 2015
+OACA,2015,effectifs,4070,agents,1.3,17,11,colonne marquée b : valeurs de 2015
+STEG,2017,charges_financieres_sur_dette_nette,16,%,1.3,17,11,
+SONEDE,2017,charges_financieres_sur_dette_nette,4,%,1.3,17,11,
+ONAS,2017,charges_financieres_sur_dette_nette,1,%,1.3,17,11,
+SNCFT,2017,charges_financieres_sur_dette_nette,2,%,1.3,17,11,
+TRANSTU,2016,charges_financieres_sur_dette_nette,3,%,1.3,17,11,colonne marquée a : 2016
+STA,2017,charges_financieres_sur_dette_nette,4,%,1.3,17,11,cellule lue à l'image dans la colonne STA du second tableau
+TUNISAIR,2016,charges_financieres_sur_dette_nette,3,%,1.3,17,11,colonne marquée a : 2016
+STEG,2016,charges_personnel_sur_charges_exploitation,11,%,1.3,17,11,la cellule porte « (2016) » ; la colonne STEG est de 2017
+SONEDE,2017,charges_personnel_sur_charges_exploitation,39,%,1.3,17,11,
+ONAS,2017,charges_personnel_sur_charges_exploitation,35,%,1.3,17,11,
+SNCFT,2017,charges_personnel_sur_charges_exploitation,50,%,1.3,17,11,
+TRANSTU,2016,charges_personnel_sur_charges_exploitation,65,%,1.3,17,11,colonne marquée a : 2016
+TUNISAIR,2016,charges_personnel_sur_charges_exploitation,27,%,1.3,17,11,colonne marquée a : 2016
+OMMP,2017,resultat_net_figure_1_3,44,M TND,figure 1.3,17,11,valeur imprimée sur la barre
+OACA,2017,resultat_net_figure_1_3,25,M TND,figure 1.3,17,11,valeur imprimée sur la barre ; le tableau 1.3 donne -22 pour OACA (2015)
+ONAS,2017,resultat_net_figure_1_3,3,M TND,figure 1.3,17,11,valeur imprimée sur la barre
+SONEDE,2017,resultat_net_figure_1_3,-39,M TND,figure 1.3,17,11,valeur imprimée sur la barre
+SNCFT,2017,resultat_net_figure_1_3,-81,M TND,figure 1.3,17,11,valeur imprimée sur la barre
+TRANSTU,2017,resultat_net_figure_1_3,-132,M TND,figure 1.3,17,11,valeur imprimée sur la barre ; le tableau 1.3 donne -132 pour 2016 ; la figure est titrée 2017
+TUNISAIR,2017,resultat_net_figure_1_3,-140,M TND,figure 1.3,17,11,valeur imprimée sur la barre ; le tableau 1.3 donne -196 (2016)
+STEG,2017,resultat_net_figure_1_3,-1194,M TND,figure 1.3,17,11,valeur imprimée sur la barre
+STEG,2009-2017,subventions_exploitation_cumul,12616,M TND,1.4,18,12,rang 1 ; versement : « Annually except in 2016 »
+STEG,2009-2017,subventions_exploitation_part_produits,51,%,1.4,18,12,rang 1 ; part de 51 % sur 2009-2016 selon le texte de la même page
+TRANSTU,2009-2017,subventions_exploitation_cumul,766,M TND,1.4,18,12,rang 2 ; versement : « Annually »
+TRANSTU,2009-2017,subventions_exploitation_part_produits,55,%,1.4,18,12,rang 2
+ONAS,2009-2017,subventions_exploitation_cumul,740,M TND,1.4,18,12,rang 3 ; versement : « Annually »
+ONAS,2009-2017,subventions_exploitation_part_produits,40,%,1.4,18,12,rang 3
+SNCFT,2009-2017,subventions_exploitation_cumul,374,M TND,1.4,18,12,rang 4 ; versement : « Annually »
+SNCFT,2009-2017,subventions_exploitation_part_produits,35,%,1.4,18,12,rang 4
+SONEDE,2009-2017,subventions_exploitation_cumul,,M TND,1.4,18,12,"rang 5 ; versement : « 2011, 2015 » ; renvoi 15 : montants non disponibles pour 2009, 2010 et 2012 ; valeur non retenue : l'image porte « 157208 », renvoi 15 collé au nombre, soit 7 208 ou 208 ; ni l'une ni l'autre ne cadre sans équivoque avec le rang et avec le texte, voir note de recoupements (TODO)"
+SONEDE,2009-2017,subventions_exploitation_part_produits,9,%,1.4,18,12,rang 5
+OACA,2009-2015,rapport_effectifs,1.01,rapport (x),1.5,19,13,2015/2009 selon la note ; le fret est imprimé « X1.08 »
+OACA,2009-2015,rapport_charges_exploitation,1.64,rapport (x),1.5,19,13,2015/2009 selon la note ; le fret est imprimé « X1.08 »
+OACA,2009-2015,rapport_indicateur_passagers,0.99,rapport (x),1.5,19,13,2015/2009 selon la note ; le fret est imprimé « X1.08 »
+OACA,2009-2015,rapport_indicateur_fret,1.08,rapport (x),1.5,19,13,2015/2009 selon la note ; le fret est imprimé « X1.08 »
+TRANSTU,2009-2017,rapport_effectifs,1.16,rapport (x),1.5,19,13,
+TRANSTU,2009-2017,rapport_charges_exploitation,1.59,rapport (x),1.5,19,13,
+TRANSTU,2009-2017,rapport_indicateur_passagers,0.54,rapport (x),1.5,19,13,
+TRANSTU,2009-2017,rapport_indicateur_km,0.66,rapport (x),1.5,19,13,
+STEG,2009-2017,rapport_effectifs,1.34,rapport (x),1.5,19,13,charges d'exploitation totales x1.92 ; charges de personnel x1.55
+STEG,2009-2017,rapport_charges_exploitation,1.92,rapport (x),1.5,19,13,charges d'exploitation totales x1.92 ; charges de personnel x1.55
+STEG,2009-2017,rapport_charges_personnel,1.55,rapport (x),1.5,19,13,charges d'exploitation totales x1.92 ; charges de personnel x1.55
+STEG,2009-2017,rapport_indicateur_ventes_electricite_GWh,1.24,rapport (x),1.5,19,13,charges d'exploitation totales x1.92 ; charges de personnel x1.55
+OMMP,2011-2017,rapport_effectifs,0.74,rapport (x),1.5,19,13,2017/2011 selon la note
+OMMP,2011-2017,rapport_charges_exploitation,1.49,rapport (x),1.5,19,13,2017/2011 selon la note
+OMMP,2011-2017,rapport_indicateur_fret,0.94,rapport (x),1.5,19,13,2017/2011 selon la note
+OMMP,2011-2017,rapport_indicateur_conteneurs,1.0,rapport (x),1.5,19,13,2017/2011 selon la note
+OMMP,2011-2017,rapport_indicateur_passagers,1.04,rapport (x),1.5,19,13,2017/2011 selon la note
+ONAS,2010-2017,rapport_effectifs,0.79,rapport (x),1.5,19,13,2017/2010 selon la note
+ONAS,2010-2017,rapport_charges_exploitation,1.48,rapport (x),1.5,19,13,2017/2010 selon la note
+ONAS,2010-2017,rapport_indicateur_volume_eaux_usees_traitees,1.08,rapport (x),1.5,19,13,2017/2010 selon la note
+SONEDE,2010-2017,rapport_effectifs,0.93,rapport (x),1.5,19,13,2017/2010 selon la note
+SONEDE,2010-2017,rapport_charges_exploitation,1.57,rapport (x),1.5,19,13,2017/2010 selon la note
+SONEDE,2010-2017,rapport_indicateur_volume_eau_vendue,1.18,rapport (x),1.5,19,13,2017/2010 selon la note
+SNCFT,2010-2017,rapport_effectifs,0.9,rapport (x),1.5,19,13,2017/2010 selon la note ; imprimé « x0.9 » et « x1.3 »
+SNCFT,2010-2017,rapport_charges_exploitation,1.3,rapport (x),1.5,19,13,2017/2010 selon la note ; imprimé « x0.9 » et « x1.3 »
+SNCFT,2010-2017,rapport_indicateur_voyageurs_km,1.1,rapport (x),1.5,19,13,2017/2010 selon la note ; imprimé « x0.9 » et « x1.3 »
+SNCFT,2010-2017,rapport_indicateur_fret,0.4,rapport (x),1.5,19,13,2017/2010 selon la note ; imprimé « x0.9 » et « x1.3 »
+TUNISAIR,2009-2016,rapport_effectifs,,rapport (x),1.5,19,13,NA imprimé ; 2016/2009 selon la note ; effectifs NA
+TUNISAIR,2009-2016,rapport_charges_exploitation,1.23,rapport (x),1.5,19,13,2016/2009 selon la note ; effectifs NA
+TUNISAIR,2009-2016,rapport_indicateur_passagers,0.83,rapport (x),1.5,19,13,2016/2009 selon la note ; effectifs NA
+TUNISAIR,2009-2016,rapport_indicateur_fret,0.53,rapport (x),1.5,19,13,2016/2009 selon la note ; effectifs NA
+NEUF_ENTREPRISES,2016,resultat_net,-762,M TND,texte,7,1,« aggregate net loss of the 9 SOEs » ; -11 % des produits bruts ; répété p. 10 (pdf 16)
+NEUF_ENTREPRISES,2017,resultat_net,-1420,M TND,texte,7,1,"-19 % des produits bruts ; renvoi 10 (p. 10) : hors TRANSTU, dont les comptes 2017 ne sont pas publiés ; résultats après subventions d'exploitation ; répété p. 10 (pdf 16)"
+NEUF_ENTREPRISES,2016,resultat_net_part_produits,-11,% des produits bruts,texte,7,1,
+NEUF_ENTREPRISES,2017,resultat_net_part_produits,-19,% des produits bruts,texte,7,1,
+NEUF_ENTREPRISES,2017,subventions_exploitation,896,M TND,texte,7,1,« estimated at TND 896 million » ; somme des subventions d'exploitation du tableau 1.3 : 593+1+128+48+126+0+0+0 = 896
+NEUF_ENTREPRISES,2009-2017,subventions_exploitation_cumul,22,Md TND,texte,7,1,« TND 22 billion over the 9-year period 2009-17 »
+NEUF_ENTREPRISES,2009-2017,croissance_produits_exploitation,41,%,texte,7,1,répété p. 12 (pdf 18) ; inflation cumulée donnée 43 % (p. 12) puis 40 % (p. 7 et p. 13)
+NEUF_ENTREPRISES,2009-2017,croissance_charges_exploitation,80,% (« over 80 percent »),texte,7,1,"renvoi 1 : hypothèses tirées des états financiers disponibles, années variables selon les données"
+NEUF_ENTREPRISES,2016,dette,9.5,Md TND,texte,8,2,"« accumulated debts of TND 9.5 billion by 2016 » ; répété p. 14 (pdf 20) avec « USD 4 billion » (renvoi 16 : 1 USD = 2,34 TND fin 2016)"
+NEUF_ENTREPRISES,2017,dette,12.8,Md TND,texte,8,2,"pour les entreprises dont les données 2017 existent, sinon dette de 2016 (p. 14) ; somme de la ligne « Debt » du tableau 1.3 : 12 783 M TND"
+NEUF_ENTREPRISES,2017,dette_part_pib,13,% du PIB,texte,8,2,"p. 14 (pdf 20) donne 12,7 % du PIB 2017 (40 Md USD)"
+NEUF_ENTREPRISES,2017,dette_part_pib_page_14,12.7,% du PIB,texte,20,14,p. 14 : PIB 2017 de 40 Md USD
+NEUF_ENTREPRISES,2017,dette_part_dette_exterieure,18,% de la dette extérieure,texte,20,14,dette extérieure de la Tunisie : 28 Md USD en 2017
+NEUF_ENTREPRISES,,dette_sur_fonds_propres,2.3,rapport (x),texte,8,2,année non précisée ; « 2.3x overall » ; dette extérieure = deux tiers des immobilisations fin 2016 ; répété p. 14
+ENSEMBLE_ENTREPRISES_PUBLIQUES,2016,garanties_retrocessions_prets_tresor,14,% du PIB,texte,14,8,"« guarantees issued to support state-owned enterprise (SOEs) external borrowing in foreign currency, which amounted to 14 percent of GDP » ; renvoi 5 : « Total of guarantees, on-lending and treasury loans to SOEs in 2016 » ; l'année n'est pas dans la phrase de la p. 8, elle est dans le renvoi ; phrase répétée p. 3 (pdf 9) avec « in 2016 » et sans renvoi 5 ; aucune ventilation par entreprise"
+STEG,2009-2017,resultat_net_cumul,-2,Md TND,texte,16,10,« STEG's losses totaled TND 2 billion » ; arrondi imprimé en milliards
+STEG,2009-2017,subventions_exploitation_cumul_texte,12.6,Md TND,texte,16,10,« 45% of its revenues » dans le texte p. 10 ; le tableau 1.4 donne 12 616 M TND et 51 % ; la p. 12 dit 51 % sur 2009-2016
+STEG,2009-2017,subventions_exploitation_part_produits_texte,45,%,texte,16,10,voir la ligne précédente
+TUNISAIR,2009-2017,resultat_net_cumul,-788,M TND,texte,16,10,« total losses of TND 788 million over the same period » ; bénéfice seulement en 2014
+TUNISAIR,2014,annulation_dette_envers_OACA,165,M TND,texte,16,10,l'État annule 165 M TND de dette que Tunis Air devait à OACA ; bénéfice de Tunis Air en 2014 attribué à cette annulation ; répété p. 13 (pdf 19)
+TRANSTU,2009-2016,resultat_net_cumul,-569,M TND,texte,16,10,"bénéfice seulement en 2011, dû à des changements comptables ponctuels"
+SNCFT,2009-2017,resultat_net_cumul,-486,M TND,texte,16,10,pertes chaque année analysée
+OACA,2013,resultat_net,175,M TND,texte,17,11,"note de bas de page 12 : « inordinately high profit of TND 175 million in 2013 », non expliqué dans le rapport annuel, sans doute un changement comptable ponctuel"
+SONEDE,2015,remboursement_charges_sociales_etat,53,M TND,texte,18,12,"« TND 53 million repayment by the state in 2015 of social charges incurred in 2012-2014 » ; subventions d'exploitation inscrites aux rapports 2011, 2015 et 2016"
+OMMP,2016,produits_exploitation_texte,44,M TND,texte,33,27,« 83 percent increase in OMMP's annual revenue from 2016 (TND 44 million) » : la phrase ne dit pas si 44 est le produit de 2016 ; le tableau 1.3 donne 142 (produits 2017) et 44 (résultat net 2017) ; voir TODO de la note de recoupements
+TUNISAIR,2016,resultat_net_texte,-196,M TND,texte,36,30,« net losses of TND 196 million » ; identique au tableau 1.3
+TUNISAIR,2016,dette_texte,1062,M TND,texte,36,30,"« accumulated debt of TND 1062 million (USD 90.8 million) » ; la conversion en USD est incohérente avec le taux de 2,34 donné p. 14 (1062 M TND = environ 454 M USD)"
+SNCFT,2017,pertes_recettes_phosphate_actions_syndicales,14.1,M TND,texte,36,30,"« 14,1 million TND (USD 4.7 million) » ; 744 trajets annulés (709 en 2015) ; 102 sit-in (46 en 2015)"
+SNCFT,2010,recettes_fret,68,M TND,texte,36,30,« revenues reached 68 million TND (USD 22 million) in 2010 »
+SNCFT,2016,recettes_fret,32.1,M TND,texte,36,30,"« 32,1 million TND (USD 10.6 million) in 2016 »"
+STEG,2017,resultat_net_texte,-1200,M TND,texte,39,33,"« net losses of TND 1.2 billion, or 29 percent of revenues, in 2017 (excluding state subsidies) » ; le tableau 1.3 donne -1 194 après subventions d'exploitation de 593"
+STEG,2017,resultat_net_part_produits_texte,-29,% des produits,texte,39,33,"voir la ligne précédente ; 1 194 / 4 068 = 29,4 %"
+STEG,2013,investissement_texte,871,M TND,texte,39,33,"« Total investment decreased from TND 871 million in 2013 to 541 million TND in 2015, a 92 percent decrease in five years » ; le texte écrit 92 % de baisse alors que 541 / 871 donne -38 % ; la figure 2.5 donne 871 en 2013 et 418 en 2015 (somme des segments)"
+STEG,2015,investissement_texte,541,M TND,texte,39,33,voir la ligne précédente
+STEG,2005,subventions_investissement,82.3,M TND,texte,40,34,« from TND 82.3 million ($34 million) in 2005 to 125 million TND (about USD 50 million) in 2017 »
+STEG,2017,subventions_investissement_texte,125,M TND,texte,40,34,identique au tableau 1.3
+STEG,2005-2017,subventions_cumul,16.5,Md TND,texte,40,34,« Cumulative subsidies 2005-2017 amount to TND 16.5 billion » ; nature des subventions non précisée (le tableau 1.4 donne 12 616 M TND de subventions d'exploitation sur 2009-2017)
+STEG,2013,subventions_exploitation,2.8,Md TND,texte,40,34,« operational subsidies reached a high of TND 2.8 billion in 2013 »
+STEG,2017,subventions_exploitation_texte,600,M TND,texte,40,34,« almost TND 600 million » ; le tableau 1.3 donne 593
+STEG,2016,subventions_exploitation_texte,0,M TND,texte,40,34,"« In 2016, STEG did not receive state subsidies » ; le tableau 1.4 dit « Annually except in 2016 »"
+STEG,2017,dette_long_terme,5.4,Md TND,texte,40,34,« accumulated long-term debts of TND 5.4 billion »
+STEG,2017,dette_court_terme,1.1,Md TND,texte,40,34,"« short-term debt of TND 1.1 billion » ; 5,4 + 1,1 = 6,5 contre 6 438 au tableau 1.3"
+STEG,2017,creances_clients,1.7,Md TND,texte,40,34,dont 500 M TND provisionnés
+STEG,2017,provisions_creances_clients,500,M TND,texte,40,34,« of which TND 500 million have been provisioned for bad debt »
+STEG,2017,augmentation_emprunts,1.4,Md TND,texte,40,34,« total long and short-term borrowing grew by TND 1.4 billion in 2017 »
+STEG,2017,remboursements_emprunts,1.3,Md TND,texte,40,34,« Loan repayments in 2017 were 1.3 billion » (unité « TND » non répétée)
+STEG,2017,investissement_segment_production,115,M TND,figure 2.5,40,34,valeur imprimée sur le segment ; source indiquée : STEG Annual Report 2017 ; somme des cinq segments : 553
+STEG,2017,investissement_segment_transport,203,M TND,figure 2.5,40,34,valeur imprimée sur le segment ; source indiquée : STEG Annual Report 2017
+STEG,2017,investissement_segment_distribution,137,M TND,figure 2.5,40,34,valeur imprimée sur le segment ; source indiquée : STEG Annual Report 2017
+STEG,2017,investissement_segment_gaz,86,M TND,figure 2.5,40,34,valeur imprimée sur le segment ; source indiquée : STEG Annual Report 2017
+STEG,2017,investissement_segment_divers,12,M TND,figure 2.5,40,34,valeur imprimée sur le segment ; source indiquée : STEG Annual Report 2017
+STEG,2016,investissement_segment_production,335,M TND,figure 2.5,40,34,valeur imprimée sur le segment ; source indiquée : STEG Annual Report 2017 ; somme des cinq segments : 623
+STEG,2016,investissement_segment_transport,55,M TND,figure 2.5,40,34,valeur imprimée sur le segment ; source indiquée : STEG Annual Report 2017
+STEG,2016,investissement_segment_distribution,121,M TND,figure 2.5,40,34,valeur imprimée sur le segment ; source indiquée : STEG Annual Report 2017
+STEG,2016,investissement_segment_gaz,79,M TND,figure 2.5,40,34,valeur imprimée sur le segment ; source indiquée : STEG Annual Report 2017
+STEG,2016,investissement_segment_divers,33,M TND,figure 2.5,40,34,valeur imprimée sur le segment ; source indiquée : STEG Annual Report 2017
+STEG,2015,investissement_segment_production,188,M TND,figure 2.5,40,34,valeur imprimée sur le segment ; source indiquée : STEG Annual Report 2017 ; somme des cinq segments : 418
+STEG,2015,investissement_segment_transport,61,M TND,figure 2.5,40,34,valeur imprimée sur le segment ; source indiquée : STEG Annual Report 2017
+STEG,2015,investissement_segment_distribution,109,M TND,figure 2.5,40,34,valeur imprimée sur le segment ; source indiquée : STEG Annual Report 2017
+STEG,2015,investissement_segment_gaz,44,M TND,figure 2.5,40,34,valeur imprimée sur le segment ; source indiquée : STEG Annual Report 2017
+STEG,2015,investissement_segment_divers,16,M TND,figure 2.5,40,34,valeur imprimée sur le segment ; source indiquée : STEG Annual Report 2017
+STEG,2014,investissement_segment_production,400,M TND,figure 2.5,40,34,valeur imprimée sur le segment ; source indiquée : STEG Annual Report 2017 ; somme des cinq segments : 674
+STEG,2014,investissement_segment_transport,75,M TND,figure 2.5,40,34,valeur imprimée sur le segment ; source indiquée : STEG Annual Report 2017
+STEG,2014,investissement_segment_distribution,102,M TND,figure 2.5,40,34,valeur imprimée sur le segment ; source indiquée : STEG Annual Report 2017
+STEG,2014,investissement_segment_gaz,86,M TND,figure 2.5,40,34,valeur imprimée sur le segment ; source indiquée : STEG Annual Report 2017
+STEG,2014,investissement_segment_divers,11,M TND,figure 2.5,40,34,valeur imprimée sur le segment ; source indiquée : STEG Annual Report 2017
+STEG,2013,investissement_segment_production,565,M TND,figure 2.5,40,34,valeur imprimée sur le segment ; source indiquée : STEG Annual Report 2017 ; somme des cinq segments : 871
+STEG,2013,investissement_segment_transport,108,M TND,figure 2.5,40,34,valeur imprimée sur le segment ; source indiquée : STEG Annual Report 2017
+STEG,2013,investissement_segment_distribution,138,M TND,figure 2.5,40,34,valeur imprimée sur le segment ; source indiquée : STEG Annual Report 2017
+STEG,2013,investissement_segment_gaz,47,M TND,figure 2.5,40,34,valeur imprimée sur le segment ; source indiquée : STEG Annual Report 2017
+STEG,2013,investissement_segment_divers,13,M TND,figure 2.5,40,34,valeur imprimée sur le segment ; source indiquée : STEG Annual Report 2017
+SRT_SFAX,2010-2015,subventions_exploitation_cumul,205,M TND,encadré 1.1,21,15,"SORETRAS (gouvernorat de Sfax) : 2,5 fois les recettes voyageurs ; versements annuels en hausse de 70 % en 5 ans"
+SRT,2010-2015,subventions_exploitation_cumul_estimation,1.1,Md TND,encadré 1.1,21,15,"« total subsidies to SRTs would amount to over TND 1.1 billion » : extrapolation du rapport à partir de la population, pas un montant observé"
