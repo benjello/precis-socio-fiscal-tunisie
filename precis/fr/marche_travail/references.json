@@ -2462,6 +2462,27 @@
       "note": "citation-key: cnss-annuaire-2018\nÉdition française de l'annuaire statistique de la CNSS, 387 pages, séries 2000-2018 ; aucune adresse en ligne n'est établie pour cette édition, ni sa date de publication. Pages lues (page du fichier PDF) : régime des salariés non agricoles, employeurs, salariés déclarés, masse salariale et salaire moyen, 2000-2018, p. 16 ; salariés par classe de salaire en SMIG à chaque trimestre de 2018, p. 26 ; pyramide des salaires déclarés exprimés en SMIG, 2005-2018, p. 27. Dernière édition connue de l'annuaire. Fiche : dépôt tunisia-data, sources/cnss-annuaires.md."
     },
     {
+      "id": "cnss-annuaire-2020",
+      "type": "report",
+      "title": "Annuaire statistique 2020",
+      "title-short": "CNSS, annuaire statistique 2020",
+      "author": [
+        {
+          "literal": "Caisse nationale de sécurité sociale"
+        }
+      ],
+      "publisher": "Caisse nationale de sécurité sociale",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2020
+          ]
+        ]
+      },
+      "note": "citation-key: cnss-annuaire-2020\nTableaux de l'annuaire statistique 2020 de la CNSS, publiés un par un sur le site de la caisse (série 2000-2020) : évolution de l'effectif des assurés sociaux pour l'ensemble des régimes (tableau 4) et évolution de l'effectif des employeurs par secteur (tableau 9). Fichiers rangés dans tunisia-data, data/raw/caisses/cnss/2020/ ; catalogue sources/caisses-sociales-urls.csv. Chiffres lus sur les graphiques à étiquettes de valeurs."
+    },
+    {
       "id": "ins-micro-entreprises-2007",
       "type": "report",
       "title": "Résultats de l'enquête auprès des micro-entreprises en 2007",

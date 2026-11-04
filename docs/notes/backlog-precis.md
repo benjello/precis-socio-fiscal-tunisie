@@ -595,8 +595,9 @@ liste qui suit le tableau, citations comprises. Restent :
     rapports d'activité de la CNSS, rapports annuels de performance de la mission Affaires
     sociales — à obtenir ; cause de la chute de la ligne 031106 entre 2018 et 2019 non dite ;
   - **nombre et emploi des entreprises totalement exportatrices** : rien dans `tunisia-data`,
-    non cherché en ligne (répertoire national des entreprises de l'INS, APII, FIPA, archives
-    du web) ;
+    répertoire national des entreprises de l'INS lu depuis le 3 novembre 2026 (éditions 2016 à 2025 :
+    salariés des entreprises totalement exportatrices, chapitre « Les employeurs »,
+    `#sec-mt-emp-salaries`) ; APII, FIPA et archives du web non cherchés ;
   - **définition des régimes « général » et « off shore » par l'INS** : non lue ; ventilation
     par groupement sectoriel du tableau 14.2 non transcrite ; cause de la révision 2004-2005
     du régime off shore non dite par l'annuaire ;
@@ -786,8 +787,13 @@ liste qui suit le tableau, citations comprises. Restent :
   (PDF 43-44), contre 1 289 940 salariés + 950 non-assujettis (PDF 16).
   Les facteurs démographique et de remplacement retiennent les actifs imprimés
   avec une réserve visible ; le taux pensions ÷ masse salariale n'en dépend pas.
-  Au-delà de 2018, les annuaires sont à obtenir ; support non présent dans le
-  corpus local exploité. Fiche : `tunisia-data/sources/cnss-annuaires.md`.
+  Au-delà de 2018, l'annuaire complet n'est pas dans le corpus ; **corrigé le
+  4 novembre 2026** : les 24 tableaux publiés un à un pour 2020
+  (`tunisia-data/data/raw/caisses/cnss/2020/`, catalogue
+  `sources/caisses-sociales-urls.csv`) sont rangés, et ce sont des graphiques à
+  étiquettes (assurés actifs, employeurs, pensionnés, recettes, dépenses,
+  prestations, prêts), séries 2000-2020. Ceux de 2021 à 2024 sont à chercher.
+  Fiche : `tunisia-data/sources/cnss-annuaires.md`.
 - **Résultat de la branche des pensions du RSNA, 1990-2004 — fait le 3 octobre 2026** (`#fig-rsna-resultat-1990-2004`, dans `#sec-rsna-equilibre`), tiré de la rétrospective financière 1990-2004 de la CNSS (`cnss-retrospective-1990-2004`, exemplaire papier numérisé ; série `cnss-retrospective-ressources-emplois` snapshotée le 3 octobre 2026). Le tableau de cette branche n'a pas d'estimation (la colonne 2000 y est rétablie par les totaux) ; si une relecture de l'original change ses montants, relire la note de lecture. Piste : le même tableau existe pour les autres régimes (RSA, RSAA, RTNS) et pour le régime complémentaire. Depuis le 3 octobre 2026, la figure a trois vues : millions de dinars, % du PIB (PIB du ministère des Finances, série `irpp-ratios`, rupture de base des comptes nationaux marquée en 1997, non corrigée) et % du total des ressources de la CNSS (tableau de l'ensemble, page 78, toutes branches).
 - **Réallocations du taux global sur la figure du résultat RSNA — fait le 3 octobre 2026** (`#fig-rsna-resultat-1990-2004`) : trois lignes aux 1er janvier 1988, 1994 et 2003 (décrets n° 88-1137, 94-1429, 2003-1212), dates du précis, identiques à celles des notes du document (pp. 14, 15, 60) ; libellés en taux de la branche selon la caisse (5 → 8, 8 → 10, 11,5 → 12,5 %), quote-parts en vingtièmes dans la note de lecture. Texte lisible dans le corpus (décrets déjà lus pour `#sec-rsna-financement`). Reste : le même tableau pour les autres régimes (RSA, RSAA, RTNS) et le régime complémentaire.
 - **Point clos sur la source primaire** : l'article 2 de la loi n° 2019-37 remplace
@@ -2680,6 +2686,28 @@ Notes documentaires : `education-histoire`, `education-aides-scolaires`, `educat
 
 Ligne éditoriale rappelée par l'humain : le précis vise l'**impact économique, distributif et budgétaire**, l'**évolution sur le temps long** et les **ruptures de réforme** ; on retient d'un texte sa **date, sa valeur et sa source**, sans les détails administratifs sans impact (modalités de déclaration, de recouvrement, procédures). Les chapitres déjà écrits en contiennent beaucoup (par exemple le recouvrement des impôts locaux dans le volume VII). Chantier à mener plus tard, **sans forcément réécrire le texte** : réduire la visibilité de ces sections (encadrés repliés, niveau de titre plus bas) ou les **repousser en annexe** du volume. Une passe par volume, à décider avec l'humain. Les nouveaux chapitres appliquent la règle dès leur rédaction.
 ## Le marché du travail
+
+### Chapitre « Les employeurs » et annexe sur le répertoire de l'INS (3-4 novembre 2026)
+
+`precis/fr/marche_travail/_employeurs.qmd` (`#sec-mt-employeurs`) et `_annexe_repertoire.qmd`
+(`#sec-mt-emp-annexe`), PR #731, #733, #736, #748. Entreprises privées et salariés déclarés,
+2000-2024 (tranches de taille, forme juridique), tirés du répertoire de l'INS.
+
+- **Fait.** Définitions de l'entreprise et de la forme juridique sourcées ; modificatifs des
+  art. 2, 90, 149 et 160 du code des sociétés commerciales lus (corpus, océrisés) ; explication de la
+  rupture de 2018 (radiation DGI) ; baisse de 2020 mise en regard des tableaux CNSS 2020
+  (assurés actifs −2,0 %, employeurs en hausse : `cnss-annuaire-2020`, tableaux 4 et 9, lisibles).
+- **Ouvert, à obtenir.**
+  - Composition des « autres formes » : aucune édition du répertoire (2010 à 2025) ni la fiche
+    méthodologique de 2021 ne la donne ; demander à l'INS la liste des codes de forme
+    juridique de la catégorie (6 105 entreprises en 2024).
+  - Cause de la baisse de 2020 : non commentée par l'INS (2021 à 2025) ni par la CNSS ; tableaux
+    CNSS 2021 à 2024 à chercher sur cnss.tn et dans les archives du web.
+  - Rupture de 2003 : lien avec le décret n° 2002-3018 appuyé sur la note de la CNSS, non sur une
+    note de l'INS ; formulation à valider par l'humain.
+  - Copie de l'édition 2022 du code de l'Imprimerie officielle (copie tierce) à ranger dans
+    `tunisia-data`.
+  - Entrée de glossaire arabe pour « entreprise » et « forme juridique » à faire.
 
 ### Annexe « Les conventions collectives, branche par branche » (8 octobre 2026, premier jet ; repris le 9 octobre 2026 ; grilles entières le 9 octobre 2026)
 
