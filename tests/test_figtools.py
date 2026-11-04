@@ -330,3 +330,54 @@ class LigneSourceTest(unittest.TestCase):
         # La provenance, elle, garde toutes les clés : onglet « Sources » et figdata.
         self.assertEqual(figtools.meta("serie-de-test")["sources"], ["cle-a", "cle-b"])
 
+
+class BlocSourceTest(unittest.TestCase):
+    """La ligne « Source » est repliée au-delà de `SEUIL_REPLI_SOURCES` notices.
+
+    Une figure tirée des états financiers de dix exercices citait dix notices sous le
+    graphique : un pavé. Le bloc porte alors `.chronologie-repliable`, la convention du
+    précis, avec un résumé « Sources (n notices) ». En dessous du seuil, rien ne change.
+    """
+
+    def tearDown(self):
+        for sid in ("serie-courte", "serie-longue", "serie-resumee"):
+            figtools._DECLAREES.pop(sid, None)
+
+    def test_seuil(self):
+        self.assertEqual(figtools.SEUIL_REPLI_SOURCES, 4)
+
+    def test_sous_le_seuil_la_ligne_reste_visible(self):
+        figtools.register_provenance("serie-courte", sources=["a", "b", "c", "d"], unite="nombre")
+        bloc = figtools.bloc_source("serie-courte")
+        self.assertEqual(bloc, "::: {.figure-source}\nSource : @a, @b, @c, @d\n:::")
+        self.assertNotIn("chronologie-repliable", bloc)
+
+    def test_au_dela_du_seuil_la_ligne_est_repliee(self):
+        cles = [f"ef-{annee}" for annee in range(2010, 2022)]
+        figtools.register_provenance("serie-longue", sources=cles, unite="dinars")
+        bloc = figtools.bloc_source("serie-longue")
+        self.assertTrue(bloc.startswith(
+            '::: {.figure-source .chronologie-repliable titre="Sources (12 notices)"}\n'))
+        self.assertTrue(bloc.endswith("\n:::"))
+        # Le texte complet reste dans la page, avec la mention « nominal ».
+        for cle in cles:
+            self.assertIn(f"@{cle}", bloc)
+        self.assertIn(figtools.t("nominal"), bloc)
+
+    def test_les_doublons_ne_comptent_pas(self):
+        figtools.register_provenance("serie-courte", sources=["a", "b", "c"], unite="nombre")
+        figtools.register_provenance("serie-longue", sources=["c", "d"], unite="nombre")
+        self.assertNotIn("chronologie-repliable",
+                         figtools.bloc_source("serie-courte", "serie-longue"))
+
+    def test_le_resume_declare_compte_pour_une_notice(self):
+        figtools.register_provenance(
+            "serie-resumee", sources=[f"g-{i}" for i in range(20)], unite="nombre",
+            source_ligne="@g-0 et ses avenants")
+        self.assertNotIn("chronologie-repliable", figtools.bloc_source("serie-resumee"))
+
+    def test_resume_en_arabe(self):
+        with mock.patch.object(figtools, "lang", return_value="ar"):
+            self.assertEqual(figtools.titre_sources_repliees(5), "المصادر (5 مراجع)")
+            self.assertEqual(figtools.titre_sources_repliees(12), "المصادر (12 مرجعا)")
+
