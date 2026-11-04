@@ -44,6 +44,9 @@ colonnes:
   consultation: date de la recherche
   rapport_cac: le document contient le rapport des commissaires aux comptes (oui, non, inconnu si illisible)
 
-sources:
+# Aucune notice de références ne porte ce relevé : les adresses consultées sont dans la colonne
+# url_origine de chaque ligne, et la recherche est décrite ci-dessous.
+sources: []
+consultations:
   - Tunisie TradeNet, site (tradenet.com.tn), pages « Publications » (egovdoc), « télécharger », « à propos », « actualités », « partenaires »
   - Internet Archive, captures du 4 février 2023 de l'ancien portail de Tunisie TradeNet

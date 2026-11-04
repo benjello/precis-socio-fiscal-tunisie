@@ -25,6 +25,9 @@ on:
       - 'scripts/check_backlog.py'
       - 'scripts/check_references_coherentes.py'
       - 'scripts/references_tolerances.yml'
+      - 'scripts/check_manifestes.py'
+      - 'precis/**/*.csv'
+      - 'precis/**/*.csv.yml'
       - 'precis/**/references.json'
       - 'docs/notes/backlog-precis.md'
       - 'scripts/recherches.py'
@@ -46,6 +49,9 @@ on:
       - 'scripts/check_backlog.py'
       - 'scripts/check_references_coherentes.py'
       - 'scripts/references_tolerances.yml'
+      - 'scripts/check_manifestes.py'
+      - 'precis/**/*.csv'
+      - 'precis/**/*.csv.yml'
       - 'precis/**/references.json'
       - 'docs/notes/backlog-precis.md'
       - 'scripts/recherches.py'
@@ -101,6 +107,14 @@ jobs:
       # inaperçue. Les cas connus se déclarent, datés, dans scripts/references_tolerances.yml.
       - name: Une clé de références dit la même chose dans tous les livres
         run: uv run python scripts/check_references_coherentes.py
+
+      # Chaque relevé versionné (`listes/*.csv`, relevés de tarifs) a un manifeste `.csv.yml` qui
+      # dit sa forme et ses sources. Aucun contrôle ne les lisait : deux manifestes illisibles en
+      # YAML, un `sources` en texte libre et deux clés de ligne non distinctives sont passés sans
+      # bruit. Ce contrôle refuse un manifeste illisible, une source qui n'est pas une clé des
+      # references.json, une clé de ligne qui ne distingue pas les lignes, un relevé sans manifeste.
+      - name: Les manifestes de relevés sont lisibles et cohérents
+        run: uv run python scripts/check_manifestes.py
 
       # Le glossaire est ENGENDRÉ à partir de `precis/glossaire.yml`, et l'annexe de
       # chaque livre ne retient que les notions auxquelles il renvoie réellement — sa
