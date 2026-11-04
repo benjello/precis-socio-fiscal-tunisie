@@ -23998,6 +23998,78 @@
       "title-short": "CPSCL, états financiers 2024",
       "URL": "http://www.cpscl.com.tn/upload/telechargement/telechargement1090.pdf",
       "note": "citation-key: es-cpscl-2024\nÉtats financiers de l'exercice 2024, publiés sur le site de l'éditeur. Copie locale : tunisia-data/data/raw/entreprises-publiques/rapports-entreprises/cpscl/2024_etats_financiers.pdf (205251 octets, SHA-256 4c493740a2477e72330df3074ff55e2fa65cc979a0967ce030ce1b821cb44bb2), ignorée par git. Cité pour : opinion du réviseur des comptes (extrait du rapport général, page 2). Preuve : couche texte du PDF (pdftotext)."
+    },
+    {
+      "id": "bts-informations-financieres",
+      "type": "webpage",
+      "title": "Informations financières : Banque tunisienne de solidarité",
+      "author": [
+        {
+          "literal": "Banque tunisienne de solidarité"
+        }
+      ],
+      "publisher": "Banque tunisienne de solidarité",
+      "publisher-place": "Tunis",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            4
+          ]
+        ]
+      },
+      "title-short": "Banque tunisienne de solidarité, informations financières",
+      "URL": "https://www.bts.com.tn/infos-financiers",
+      "note": "citation-key: bts-informations-financieres\nPage publique du site, lue le 4 novembre 2026 : dix rapports d'activité (2016 à 2025) et cinq états financiers (2021 à 2025) en PDF ; aucun document antérieur à 2016. Copie locale : tunisia-data/data/raw/entreprises-publiques/rapports-entreprises/_pages/bts-informations-financieres.html (30036 octets, SHA-256 0cde94dc03c4d88a13d5eb9bc455dbc489e65f683d03465c2c1707efc924569c), ignorée par git."
+    },
+    {
+      "id": "bfpme-publications",
+      "type": "webpage",
+      "title": "Publications : Banque de financement des petites et moyennes entreprises",
+      "author": [
+        {
+          "literal": "Banque de financement des petites et moyennes entreprises"
+        }
+      ],
+      "publisher": "Banque de financement des petites et moyennes entreprises",
+      "publisher-place": "Tunis",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            4
+          ]
+        ]
+      },
+      "title-short": "Banque de financement des petites et moyennes entreprises, publications",
+      "URL": "https://www.bfpme.com.tn/fr/publications",
+      "note": "citation-key: bfpme-publications\nPage publique du site, lue le 4 novembre 2026 : trois rapports annuels d'activités (2020, 2022, 2023), chacun avec un lien vide (href=\"\") : aucun fichier n'est joint. Copie locale : tunisia-data/data/raw/entreprises-publiques/rapports-entreprises/_pages/bfpme-publications.html (40656 octets, SHA-256 c71d5afd74576a0d0a199e3194d5aef582ba2f1b8895c518e7f66714dad6fe3c), ignorée par git."
+    },
+    {
+      "id": "cpscl-publications",
+      "type": "webpage",
+      "title": "Publications et rapports : Caisse des prêts et de soutien des collectivités locales",
+      "author": [
+        {
+          "literal": "Caisse des prêts et de soutien des collectivités locales"
+        }
+      ],
+      "publisher": "Caisse des prêts et de soutien des collectivités locales",
+      "publisher-place": "Tunis",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            4
+          ]
+        ]
+      },
+      "title-short": "Caisse des prêts et de soutien des collectivités locales, publications et rapports",
+      "URL": "http://www.cpscl.com.tn/template.php?code_menu=147",
+      "note": "citation-key: cpscl-publications\nPage publique du site, lue le 4 novembre 2026 : les pages 1 à 10 de la liste (concaténées dans la copie locale) : « états financiers arrêtés au 31/12/N et extrait du rapport du commissaire aux comptes » pour chaque exercice de 2006 à 2024, trois rapports d'activité de la caisse (2015, 2016, 2018) et, de 2018 à 2024, les rapports d'activité de la cellule de gouvernance. Copie locale : tunisia-data/data/raw/entreprises-publiques/rapports-entreprises/_pages/cpscl-publications.html (312423 octets, SHA-256 c6847ea3bdcc49939100b6a4ea361c79af76e505755cea6c604ec5e162438001), ignorée par git."
     }
   ]
 }

@@ -12,6 +12,8 @@ sys.path.insert(
     0, str(Path(__file__).resolve().parent.parent / "precis/fr/entreprises_publiques")
 )
 
+_PYPLOT_DEJA_IMPORTE = "matplotlib.pyplot" in sys.modules
+
 from figures import cotees as ct  # noqa: E402
 
 OPINIONS = pd.DataFrame(
@@ -51,3 +53,9 @@ class FigureCacTest(unittest.TestCase):
 
     def test_avec_page_a_la_bourse_trois_panneaux(self):
         self.assertEqual(self._tracer("autre"), 3)
+
+
+def tearDownModule():
+    """figtools ne ferme les figures que si pyplot n'a jamais été importé (test_figtools le suppose) : on ne le laisse pas importé."""
+    if not _PYPLOT_DEJA_IMPORTE:
+        sys.modules.pop("matplotlib.pyplot", None)

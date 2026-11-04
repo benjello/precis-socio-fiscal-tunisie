@@ -11,7 +11,9 @@ d'activité), `es-<sigle>-<exercice>` (états financiers publiés par l'entrepri
 from __future__ import annotations
 
 import csv
+import hashlib
 import json
+import os
 from pathlib import Path
 
 RACINE = Path(__file__).resolve().parent.parent / "precis/fr/entreprises_publiques"
@@ -71,6 +73,33 @@ PRECISIONS = {
         "le fichier contient les états arrêtés au 31 décembre 2022, rapport des commissaires du 12 juillet 2024."
     ),
 }
+# pages de sites qui annoncent les documents : (clé, éditeur, titre, adresse, fichier local, ce que la page montre)
+PAGES = [
+    (
+        "cpscl-publications",
+        "Caisse des prêts et de soutien des collectivités locales",
+        "Publications et rapports",
+        "http://www.cpscl.com.tn/template.php?code_menu=147",
+        "_pages/cpscl-publications.html",
+        "les pages 1 à 10 de la liste (concaténées dans la copie locale) : « états financiers arrêtés au 31/12/N et extrait du rapport du commissaire aux comptes » pour chaque exercice de 2006 à 2024, trois rapports d'activité de la caisse (2015, 2016, 2018) et, de 2018 à 2024, les rapports d'activité de la cellule de gouvernance",
+    ),
+    (
+        "bts-informations-financieres",
+        "Banque tunisienne de solidarité",
+        "Informations financières",
+        "https://www.bts.com.tn/infos-financiers",
+        "_pages/bts-informations-financieres.html",
+        "dix rapports d'activité (2016 à 2025) et cinq états financiers (2021 à 2025) en PDF ; aucun document antérieur à 2016",
+    ),
+    (
+        "bfpme-publications",
+        "Banque de financement des petites et moyennes entreprises",
+        "Publications",
+        "https://www.bfpme.com.tn/fr/publications",
+        "_pages/bfpme-publications.html",
+        "trois rapports annuels d'activités (2020, 2022, 2023), chacun avec un lien vide (href=\"\") : aucun fichier n'est joint",
+    ),
+]
 CITE_POUR = {
     "oui": "opinion des commissaires aux comptes",
     "non": "états financiers publiés par l'entreprise (le rapport des commissaires n'y figure pas)",
@@ -135,12 +164,43 @@ def notices(lignes: list[dict[str, str]], existants: set[str]) -> list[dict]:
     return neuves
 
 
+def notices_pages(existants: set[str]) -> list[dict]:
+    """Une notice par page de site listée dans PAGES."""
+    racine = Path(os.environ.get("TUNISIA_DATA", "~/projets/tunisia-data")).expanduser()
+    neuves = []
+    for cle, editeur, titre, url, fichier, contenu in PAGES:
+        if cle in existants:
+            continue
+        octets = (
+            racine / "data/raw/entreprises-publiques/rapports-entreprises" / fichier
+        ).read_bytes()
+        neuves.append(
+            {
+                "id": cle,
+                "type": "webpage",
+                "title": f"{titre} : {editeur}",
+                "author": [{"literal": editeur}],
+                "publisher": editeur,
+                "publisher-place": "Tunis",
+                "accessed": {"date-parts": [[2026, 11, 4]]},
+                "title-short": f"{editeur}, {titre.lower()}",
+                "URL": url,
+                "note": (
+                    f"citation-key: {cle}\nPage publique du site, lue le 4 novembre 2026 : {contenu}. "
+                    f"Copie locale : tunisia-data/data/raw/entreprises-publiques/rapports-entreprises/{fichier} "
+                    f"({len(octets)} octets, SHA-256 {hashlib.sha256(octets).hexdigest()}), ignorée par git."
+                ),
+            }
+        )
+    return neuves
+
+
 def main() -> int:
     with CATALOGUE.open(encoding="utf-8", newline="") as source:
         lignes = [r for r in csv.DictReader(source) if r["nature"] in GENRES]
     donnees = json.loads(LIVRE.read_text(encoding="utf-8"))
     existants = {e["id"] for e in donnees["items"]}
-    neuves = notices(lignes, existants)
+    neuves = notices(lignes, existants) + notices_pages(existants)
     donnees["items"].extend(neuves)
     LIVRE.write_text(
         json.dumps(donnees, indent=2, ensure_ascii=False) + "\n", encoding="utf-8"
