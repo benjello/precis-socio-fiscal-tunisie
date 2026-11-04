@@ -1,0 +1,40 @@
+# Manifeste du catalogue « rapports annuels et états financiers des entreprises publiques non cotées, lot Tunisie Trade Net ».
+#
+# Établi le 4 novembre 2026, sources en ligne et gratuites seulement. Le contenu du Registre national des entreprises est
+# payant et n'a pas été consulté : la liste de ses dépôts (états financiers de 2020 à 2023 pour Tunisie Trade Net) est dans
+# entreprises-publiques-registre.csv.
+#
+# TUNISIE TRADE NET (TTN). Le site actuel (tradenet.com.tn) ne porte ni rapport annuel ni état financier : la page
+# « téléchargement » ne propose que des guides, des tarifs et des formulaires. L'ancien portail du site mettait en ligne
+# des documents sous /portal/telechargerTelechargement?lien=… ; l'Internet Archive en a gardé quatre captures du 4 février 2023
+# (rapport annuel et états financiers de 2017 et de 2018) ; aucune capture pour 2019 et au-delà.
+# - 2017, rapport annuel : 42 pages, complet. Il nomme le cabinet ATEC comme commissaire aux comptes (p. 9) ; il ne reproduit
+#   pas son rapport.
+# - 2017, états financiers : la capture est coupée à 1 048 576 octets (limite de la capture, vérifiée deux fois) : couverture,
+#   sommaire et début du bilan, trois images ; le fichier est inutilisable comme PDF (pas de table des pages). Le sommaire ne
+#   liste aucun rapport des commissaires aux comptes.
+# - 2018, rapport annuel : capture coupée à 1 048 576 octets, sans table des pages ; illisible.
+# - 2018, états financiers : 29 pages, complet (bilan, résultat, flux, notes). Le sommaire ne liste aucun rapport des
+#   commissaires aux comptes et le texte n'en contient pas.
+# Aucun document ne contient donc de rapport des commissaires aux comptes de TTN : pas de ligne dans opinions-cac.csv.
+#
+# REGISTRE : toutes les entreprises du fichier entreprises-publiques-registre.csv ont une section dans l'un des chapitres du volume.
+
+format: long
+cle_de_ligne: [sigle, exercice, nature]
+
+colonnes:
+  sigle: sigle de l'entreprise
+  exercice: exercice du document ; 2019-2023 pour la ligne « aucun »
+  nature: rapport_annuel, etats_financiers, ou aucun (aucun document trouvé)
+  url_origine: adresse d'origine du document ; pour « aucun », les adresses essayées
+  url_archive: adresse de la capture de l'Internet Archive
+  fichier: copie locale, hors git, sous tunisia-data
+  octets: taille de la copie locale
+  sha256: empreinte SHA-256 de la copie locale
+  consultation: date de la recherche
+  rapport_cac: le document contient le rapport des commissaires aux comptes (oui, non, inconnu si illisible)
+
+sources:
+  - Tunisie TradeNet, site (tradenet.com.tn), pages « télécharger », « à propos », « actualités », « partenaires »
+  - Internet Archive, captures du 4 février 2023 de l'ancien portail de Tunisie TradeNet

@@ -358,7 +358,13 @@ def fig_cac(groupe: str, societe: str, delais_ecartes: tuple[int, ...] = ()):
         nombres[j] += 1
         for t in r["themes"].split(";"):
             carte[themes.index(t), j] = 1
-    fig, (a1, a2, a3) = plt.subplots(3, 1, figsize=(9.5, 8), sharex=True, gridspec_kw={"height_ratios": [3.2, 1, 1.3], "hspace": 0.12})
+    # une société sans page de la Bourse n'a pas de délai de publication : la figure se trace sans la courbe des délais
+    avec_delais = not delais.empty
+    if avec_delais:
+        fig, (a1, a2, a3) = plt.subplots(3, 1, figsize=(9.5, 8), sharex=True, gridspec_kw={"height_ratios": [3.2, 1, 1.3], "hspace": 0.12})
+    else:
+        fig, (a1, a2) = plt.subplots(2, 1, figsize=(9.5, 6.5), sharex=True, gridspec_kw={"height_ratios": [3.2, 1], "hspace": 0.12})
+        a3 = None
     # 1. thèmes : une case par thème et exercice ; gris : exercice sans rapport lu
     for j, x in enumerate(exercices):
         if x not in lus:
@@ -378,15 +384,16 @@ def fig_cac(groupe: str, societe: str, delais_ecartes: tuple[int, ...] = ()):
     a2.set_ylim(0, max(nombres.max() + 1.5, 4))
     a2.set_title(ft("Nombre de motifs de réserve"), fontsize=9, loc="left")
     # 3. délai de publication
-    pts = sorted((int(r["exercice"]), int(r["jours"])) for _, r in delais.iterrows())
-    if pts:
+    if avec_delais:
+        pts = sorted((int(r["exercice"]), int(r["jours"])) for _, r in delais.iterrows())
         a3.plot([exercices.index(x) for x, _ in pts], [j for _, j in pts], "-o", color="#0969da", ms=4)
         for x, jours in pts:
             a3.annotate(str(jours), (exercices.index(x), jours), xytext=(0, 6), textcoords="offset points", ha="center", fontsize=7)
-    a3.set_title(ft("Délai de publication des états financiers annuels individuels (jours après le 31 décembre)"), fontsize=9, loc="left")
-    a3.set_ylim(0, max([j for _, j in pts] + [100]) * 1.2)
-    a3.set_xticks(range(len(exercices)), [str(x) for x in exercices], fontsize=8)
-    for axe in (a1, a2, a3):
+        a3.set_title(ft("Délai de publication des états financiers annuels individuels (jours après le 31 décembre)"), fontsize=9, loc="left")
+        a3.set_ylim(0, max([j for _, j in pts] + [100]) * 1.2)
+    bas = a3 if avec_delais else a2
+    bas.set_xticks(range(len(exercices)), [str(x) for x in exercices], fontsize=8)
+    for axe in (a1, a2, a3) if avec_delais else (a1, a2):
         axe.grid(axis="y", color="#d0d7de", lw=0.5)
         for cote in ("top", "right"):
             axe.spines[cote].set_visible(False)
