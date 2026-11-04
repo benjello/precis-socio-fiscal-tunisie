@@ -329,6 +329,7 @@ THEMES_CAC = {
     "sotumag_pharmacies": "Pharmacies et laboratoires conventionnés (SOTUMAG)",
     "bfpme_fonds_exterieurs": "Fonds suisse et fonds qatari dans les capitaux propres (BFPME)",
     "bfpme_sotugar_interets": "Intérêts de trésorerie dus par la SOTUGAR (BFPME)",
+    "bfpme_commissions": "Commissions d'étude et de gestion constatées trop tôt (BFPME)",
 }
 
 

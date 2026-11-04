@@ -41,6 +41,11 @@ GENRES = {
         "États financiers",
         "états financiers de l'exercice {ex}, publiés sur le site de l'éditeur",
     ),
+    "etats_financiers_cmf": (
+        "cmf-ef",
+        "États financiers",
+        "états financiers de l'exercice {ex}, extrait du Bulletin officiel du Conseil du marché financier publié sur le site du CMF",
+    ),
     "etats_financiers_bourse": (
         "bvmt-ef",
         "États financiers individuels",
@@ -49,6 +54,14 @@ GENRES = {
 }
 # précisions propres à un document : (sigle, exercice, nature) -> phrase ajoutée à la note
 PRECISIONS = {
+    ("BFPME", "2013", "etats_financiers_cmf"): (
+        "Document scanné, sans couche texte : lu par reconnaissance de caractères (tesseract, français), "
+        "page 24 relue sur l'image."
+    ),
+    ("BFPME", "2006", "etats_financiers_cmf"): (
+        "Rapport en arabe (Bulletin officiel n° 2880 du 28 juin 2007) : lu sur la couche texte du PDF, "
+        "page 10 relue sur l'image."
+    ),
     ("BTS", "2016", "rapport_annuel"): (
         "La couche texte de ce PDF confond certains chiffres (« 1016 » pour 2016, « 18 435 » pour 28 435) : "
         "les nombres cités (pages 46 et 47) ont été relus sur l'image de la page."
@@ -108,8 +121,8 @@ CITE_POUR = {
 }
 
 
-def _cite_pour(cac: str, nature: str) -> str:
-    if cac.startswith("oui") and nature == "etats_financiers":
+def _cite_pour(cac: str, nature: str, sigle: str) -> str:
+    if cac.startswith("oui") and nature == "etats_financiers" and sigle == "CPSCL":
         return "opinion du réviseur des comptes (extrait du rapport général, page 2)"
     for debut, texte in CITE_POUR.items():
         if cac.startswith(debut):
@@ -121,6 +134,8 @@ def notices(lignes: list[dict[str, str]], existants: set[str]) -> list[dict]:
     """Une notice par ligne du catalogue, sauf si la clé existe déjà."""
     neuves = []
     for ligne in lignes:
+        if not ligne["fichier"]:  # document signalé, non récupéré : pas de notice
+            continue
         sigle, ex, nature = ligne["sigle"], ligne["exercice"], ligne["nature"]
         prefixe, genre, description = GENRES[nature]
         cle = f"{prefixe}-{sigle.lower()}-{ex}" + (
@@ -142,9 +157,12 @@ def notices(lignes: list[dict[str, str]], existants: set[str]) -> list[dict]:
             "issued": {"date-parts": [[int(ex)]]},
             "accessed": {"date-parts": [[annee, mois, jour]]},
             "title-short": f"{sigle}, {genre.lower()} {ex}",
-            "URL": capture or origine,
+            "URL": origine if nature == "etats_financiers_cmf" else capture or origine,
         }
-        if capture:
+        if nature == "etats_financiers_cmf":
+            notice["archive"] = "Conseil du marché financier"
+            notice["archive_location"] = origine
+        elif capture:
             notice["archive"] = "Internet Archive (Wayback Machine)"
             notice["archive_location"] = origine
         elif nature == "etats_financiers_bourse":
@@ -153,9 +171,11 @@ def notices(lignes: list[dict[str, str]], existants: set[str]) -> list[dict]:
         note = (
             f"citation-key: {cle}\n{description.format(ex=ex)[0].upper() + description.format(ex=ex)[1:]}. "
             f"Copie locale : {DOSSIER}{ligne['fichier']} ({ligne['octets']} octets, SHA-256 {ligne['sha256']}), "
-            f"ignorée par git. Cité pour : {_cite_pour(ligne['rapport_cac'], nature)}. "
+            f"ignorée par git. Cité pour : {_cite_pour(ligne['rapport_cac'], nature, sigle)}. "
             "Preuve : couche texte du PDF (pdftotext)."
         )
+        if capture and nature == "etats_financiers_cmf":
+            note += f" Le même fichier (même somme de contrôle) est sur le site de la banque : capture {capture}."
         precision = PRECISIONS.get((sigle, ex, nature))
         if precision:
             note += " " + precision
