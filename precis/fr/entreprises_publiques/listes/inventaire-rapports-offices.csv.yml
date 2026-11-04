@@ -1,0 +1,38 @@
+# Manifeste du relevé « rapports annuels et états financiers en ligne des offices et monopoles ».
+#
+# Catalogue du lot « Les offices et les monopoles » du volume « Les entreprises publiques » : huit
+# entreprises non cotées à la Bourse de Tunis (Office des céréales, Office national de l'huile, RNTA,
+# Office du commerce de la Tunisie, Régie des alcools, Manufacture des tabacs de Kairouan, Office des
+# terres domaniales, Pharmacie centrale), cherchées le 4 novembre 2026 sur leur site, sur les sites de
+# tutelle (idaraty.tn) et dans l'Internet Archive. Le contenu du Registre national des entreprises est
+# payant : il n'a pas été consulté.
+#
+# Une ligne par document trouvé ; une ligne de nature « aucun » par entreprise sans document, avec les
+# adresses essayées dans url_origine (séparées par « | »). Les copies locales sont sous
+# tunisia-data/data/raw/entreprises-publiques/rapports-entreprises/<sigle>/, ignorées par git.
+#
+# Aucun document ne contient un rapport des commissaires aux comptes (rapport_cac = non) : le relevé
+# des opinions (opinions-cac.csv) ne porte donc aucune ligne pour ces entreprises.
+# - ONH : cinq rapports d'activité de campagne, 2017-2018 à 2021-2022 (en arabe). Ils parlent du
+#   « réviseur des comptes » à propos de l'évaluation du contrôle interne, sans donner d'opinion sur les comptes.
+# - RNTA : les états financiers 2019 (quatre images : bilan en deux pages, résultat, flux de trésorerie)
+#   et 2020 « après audit » (cinq pages : bilan, résultat, flux), sans rapport ni opinion.
+# - Les rapports de production de la RNTA (2019, premier semestre 2020), trouvés sur le même site, ne
+#   sont pas des états financiers : non retenus.
+
+format: long
+cle_de_ligne: [sigle, exercice, fichier]
+
+colonnes:
+  sigle: sigle de l'entreprise
+  exercice: "exercice ou campagne (2017-2018 est une campagne oléicole de l'ONH) ; vide pour « aucun »"
+  nature: nature du document ; « aucun » pour une entreprise sans document en ligne
+  url_origine: adresse du document sur le site de l'éditeur ; pour « aucun », adresses essayées
+  url_archive: capture de l'Internet Archive, quand il y en a une
+  fichier: copie locale (hors git)
+  octets: taille de la copie locale
+  sha256: empreinte SHA-256 de la copie locale
+  consultation: date de la consultation
+  rapport_cac: le document contient-il le rapport des commissaires aux comptes (oui, non)
+
+sources: [ra-onh-2017-2018, ra-onh-2018-2019, ra-onh-2019-2020, ra-onh-2020-2021, ra-onh-2021-2022, es-rnta-2019, es-rnta-2020]

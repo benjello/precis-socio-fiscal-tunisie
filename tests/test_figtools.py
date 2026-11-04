@@ -24,6 +24,7 @@ import sys
 import tempfile
 import unittest
 from pathlib import Path
+from unittest import mock
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "scripts"))
 
@@ -285,6 +286,7 @@ class VuesTest(unittest.TestCase):
         self.assertNotIn("IMG2", pdf)
         self.assertNotIn("###", pdf)
 
+    @mock.patch.dict(sys.modules, {"matplotlib.pyplot": None})  # `_image_vue` ne ferme rien si pyplot n'est pas chargé
     def test_chaque_vue_a_ses_infobulles(self):
         with tempfile.TemporaryDirectory() as d:
             png = Path(d)

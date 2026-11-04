@@ -1,0 +1,25 @@
+# Manifeste du catalogue « rapports annuels et états financiers en ligne des entreprises publiques de l'habitat ».
+#
+# Lot « L'habitat » du volume « Les entreprises publiques » : AFH, SPROLS, SNIT, ARRU, SOGEMT. Recherche en ligne et gratuite
+# faite le 4 novembre 2026 (sites des entreprises, Internet Archive, recherche web). Une ligne par document trouvé ; une ligne de
+# nature « aucun » pour chaque entreprise dont aucun document n'a été trouvé, avec les adresses essayées.
+# AFH : rapports d'activité (rapports annuels de performance, en arabe, 2016 à 2024) et budgets (2019 à 2025) de la page
+# « Accès à l'information » du site de l'agence ; aucun ne contient d'état financier ni de rapport des commissaires aux comptes.
+# Les fichiers sont gardés hors dépôt, dans tunisia-data/data/raw/entreprises-publiques/rapports-entreprises/afh/.
+
+format: long
+cle_de_ligne: [sigle, nature, exercice]
+
+colonnes:
+  sigle: sigle de l'entreprise
+  exercice: exercice ou année du document (vide pour « aucun »)
+  nature: nature du document ; « aucun » si l'entreprise n'a aucun document en ligne
+  url_origine: adresse du document, ou adresses essayées pour une ligne « aucun »
+  url_archive: capture d'Internet Archive (vide : non demandée)
+  fichier: copie locale, relative à tunisia-data/data/raw
+  octets: taille de la copie
+  sha256: empreinte SHA-256 de la copie
+  consultation: date de la consultation
+  rapport_cac: le document contient-il le rapport des commissaires aux comptes (oui / non)
+
+sources: []
