@@ -330,7 +330,6 @@ THEMES_CAC = {
     # STEG, ETAP, SOTRAPIL : thèmes propres, tracés seulement pour leur groupe
     "steg_amortissements": "Démantèlement amorti sur une durée trop longue (STEG)",
     "steg_clients_avances": "Rubrique « Clients, avances reçues » (STEG)",
-    "steg_systeme_information": "Système d'information de la STEG, limitation des travaux",
     "steg_subventions": "Subventions à recevoir de l'État, 2016-2021 (STEG)",
     "etap_cost_oil": "Cost Oil de la concession Bir Ben Tartar (ETAP)",
     "etap_restitution_sites": "Provisions pour restitution des sites (ETAP)",

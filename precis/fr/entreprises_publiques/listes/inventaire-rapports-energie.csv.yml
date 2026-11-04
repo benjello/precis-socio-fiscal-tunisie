@@ -1,0 +1,42 @@
+# Manifeste du catalogue « rapports annuels et états financiers des entreprises publiques de l'énergie »
+# (STEG, ETAP, STIR, SNDP, SOTRAPIL, CTF), établi le 4 novembre 2026.
+#
+# Une ligne par document trouvé en ligne et gratuitement, avec la copie gardée hors git dans
+# tunisia-data/data/raw/entreprises-publiques/rapports-entreprises/<sigle>/<exercice>_<nature>.pdf, et une ligne
+# « aucun » par entreprise dont aucun rapport ni aucun état financier n'a été trouvé (colonne url_origine : les
+# adresses essayées). Rien n'a été acheté : le contenu du Registre national des entreprises, payant, n'a pas été consulté.
+#
+# La colonne rapport_cac dit si le document contient le rapport des commissaires aux comptes (ou du réviseur légal,
+# ou de l'auditeur externe) : « oui » (lu, relevé dans opinions-cac.csv), « non » (document parcouru en entier,
+# par la couche texte ou, pour les pages sans texte, en vignettes), « non lu » (document sans couche texte, non
+# parcouru page à page).
+#
+# STEG : les copies des rapports annuels de 2007 à 2020 viennent de l'Internet Archive (adresses d'origine devenues
+# 404) ; la ligne « rapport_annuel_site_2026 » est la version que le site porte le 4 novembre 2026 quand elle diffère
+# de la copie gardée (2018, 2020, 2021, 2023). Les états financiers de la STEG ne sont en ligne que de 2014 à 2023
+# (la page « Publications » du site et les captures de l'Internet Archive n'en donnent pas d'autres).
+# ETAP : les rapports financiers du site sont des extraits (bilan, état de résultat, flux, et selon l'année le
+# rapport du réviseur légal) ; ceux de 2004 et de 2006 ne sont pas sur la page. Le site de l'ETAP n'envoie pas la
+# chaîne de certificat complète : téléchargement sans vérification de la chaîne.
+# SOTRAPIL : société cotée à la Bourse de Tunis ; états financiers annuels de la page de la société (2000, 2002 à
+# 2022, 2024 et 2025 ; pas de 2023), rapport de gestion de 2021 de la Bourse, rapport annuel de 2025 et document
+# d'information de l'assemblée de 2026 du site de la société.
+# STIR, SNDP, CTF : aucun document trouvé ; l'Internet Archive, interrogé sous verrou le 4 novembre 2026, ne donne que
+# des brochures pour la SNDP et rien pour la CTF.
+
+format: long
+cle_de_ligne: [sigle, exercice, nature, fichier]
+
+colonnes:
+  sigle: sigle de l'entreprise
+  exercice: exercice couvert par le document (vide pour une ligne « aucun »)
+  nature: etats_financiers, rapport_annuel, rapport_activite, rapport_annuel_site_2026, rapport_activite_site_2026, document_information_ago, ou aucun
+  url_origine: adresse du document chez l'éditeur ; pour une ligne « aucun », les adresses essayées
+  url_archive: capture de l'Internet Archive quand la copie vient de là
+  fichier: chemin de la copie sous tunisia-data/data/raw (ignorée par git)
+  octets: taille de la copie
+  sha256: somme de contrôle de la copie
+  consultation: date de la consultation (AAAA-MM-JJ)
+  rapport_cac: oui, non ou non lu (voir plus haut)
+
+sources: [steg-ef-2014, steg-ef-2015, steg-ef-2016, steg-ef-2017, steg-ef-2018, steg-ef-2019, steg-ef-2020, steg-ef-2021, steg-ef-2022, steg-ef-2023, etap-ra-2016, bvmt-sotrapil]
