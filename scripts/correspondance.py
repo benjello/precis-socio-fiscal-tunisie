@@ -1,6 +1,6 @@
 """Ébauche de la table de correspondance instrument / institution / législation.
 
-Page non publiée, produite pour relecture : `precis/fr/correspondance-instruments.qmd` donne,
+Page en version de travail, produite pour relecture : `precis/fr/correspondance-instruments.qmd` donne,
 pour chaque instrument décrit dans les livres, sa catégorie juridique, l'organisme qui le gère,
 le texte fondateur, les principaux modificatifs, le texte d'application principal, le statut du
 texte fondateur lorsqu'il est abrogé, et le chapitre où il se lit. Rien n'est recopié des
