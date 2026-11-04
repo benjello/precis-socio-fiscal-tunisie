@@ -6,6 +6,8 @@
 # « aucun » par entreprise dont aucun rapport ni aucun état financier n'a été trouvé (colonne url_origine : les
 # adresses essayées). Rien n'a été acheté : le contenu du Registre national des entreprises, payant, n'a pas été consulté.
 #
+# Les rapports annuels de la STEG de 2005 à 2012 portent le rapport de l'auditeur externe (pages images) ; ceux de 2013 à 2025 se terminent sur les états financiers, sans rapport (vérifié en vignettes sur les pages de fin). Pour l'ETAP, le rapport financier du site est un extrait du rapport annuel de la même année (pagination du rapport annuel imprimée en pied de page) : « oui » pour les rapports annuels de 2005 à 2018 dont l'extrait contient le rapport.
+#
 # La colonne rapport_cac dit si le document contient le rapport des commissaires aux comptes (ou du réviseur légal,
 # ou de l'auditeur externe) : « oui » (lu, relevé dans opinions-cac.csv), « non » (document parcouru en entier,
 # par la couche texte ou, pour les pages sans texte, en vignettes), « non lu » (document sans couche texte, non
@@ -39,4 +41,4 @@ colonnes:
   consultation: date de la consultation (AAAA-MM-JJ)
   rapport_cac: oui, non ou non lu (voir plus haut)
 
-sources: [steg-ef-2014, steg-ef-2015, steg-ef-2016, steg-ef-2017, steg-ef-2018, steg-ef-2019, steg-ef-2020, steg-ef-2021, steg-ef-2022, steg-ef-2023, etap-ra-2016, bvmt-sotrapil]
+sources: [es-etap-2003, es-etap-2005, es-etap-2007, es-etap-2008, es-etap-2009, es-etap-2010, es-etap-2011, es-etap-2012, es-etap-2013, es-etap-2014, es-etap-2015, es-etap-2016, es-etap-2017, es-etap-2018, es-etap-2019, es-etap-2020, es-etap-2021, es-etap-2022, es-etap-2023, es-etap-2024, es-sotrapil-2000, es-sotrapil-2002, es-sotrapil-2003, es-sotrapil-2004, es-sotrapil-2005, es-sotrapil-2006, es-sotrapil-2007, es-sotrapil-2008, es-sotrapil-2009, es-sotrapil-2010, es-sotrapil-2011, es-sotrapil-2012, es-sotrapil-2013, es-sotrapil-2014, es-sotrapil-2015, es-sotrapil-2016, es-sotrapil-2017, es-sotrapil-2018, es-sotrapil-2019, es-sotrapil-2020, es-sotrapil-2021, es-sotrapil-2022, es-sotrapil-2024, es-sotrapil-2025, etap-ra-2005, etap-ra-2006, etap-ra-2007, etap-ra-2008, etap-ra-2009, etap-ra-2010, etap-ra-2011, etap-ra-2012, etap-ra-2013, etap-ra-2014, etap-ra-2015, etap-ra-2016, etap-ra-2017, etap-ra-2018, etap-ra-2019, etap-ra-2021, etap-ra-2022, etap-ra-2023, etap-ra-2024, steg-ef-2014, steg-ef-2015, steg-ef-2016, steg-ef-2017, steg-ef-2018, steg-ef-2019, steg-ef-2020, steg-ef-2021, steg-ef-2022, steg-ef-2023, steg-ra-2005, steg-ra-2006, steg-ra-2007, steg-ra-2008, steg-ra-2009, steg-ra-2010, steg-ra-2011, steg-ra-2012, steg-ra-2013, steg-ra-2014, steg-ra-2015, steg-ra-2016, steg-ra-2017, steg-ra-2018, steg-ra-2019, steg-ra-2020, steg-ra-2021, steg-ra-2022, steg-ra-2023, steg-ra-2024, steg-ra-2025, bvmt-sotrapil, bvmt-ra-sotrapil-2021, ra-sotrapil-2025]
