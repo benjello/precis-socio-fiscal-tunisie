@@ -327,11 +327,20 @@ THEMES_CAC = {
     "tunisair_presentation": "Présentation des états financiers",
     "sotumag_chambres_froides": "Chambres froides louées comme boxes d'emballage (SOTUMAG)",
     "sotumag_pharmacies": "Pharmacies et laboratoires conventionnés (SOTUMAG)",
+    "tt_immeubles": "Immeubles apportés, situation juridique",
+    "tt_clients": "Comptabilité clients, encaissements non identifiés",
+    "tt_charges": "Rattachement des charges, factures fournisseurs",
+    "tt_passifs_abonnes": "Avances sur consommation, redevances d'avance",
+    "tt_prepaye": "Chiffre d'affaires prépayé, ajustement préalable",
+    "tt_confirmations": "Confirmations de soldes non reçues",
 }
 
 
 def fig_cac(groupe: str, societe: str, delais_ecartes: tuple[int, ...] = ()):
-    """Trois vues sur les mêmes exercices : thèmes de réserve (carte), nombre de motifs (barres), délai de publication (courbe)."""
+    """Trois vues sur les mêmes exercices : thèmes de réserve (carte), nombre de motifs (barres), délai de publication (courbe).
+
+    Une société sans ligne dans `delais-publication.csv` (elle n'a pas de page à la Bourse) n'a pas de courbe des délais : deux vues.
+    """
     import numpy as np
     figtools.apply_lang_font()
     ft = figtools.fig_text
@@ -348,7 +357,7 @@ def fig_cac(groupe: str, societe: str, delais_ecartes: tuple[int, ...] = ()):
     utilises = {t for ligne in d.loc[~d["opinion"].str.startswith("sans"), "themes"] for t in ligne.split(";")}
     themes = [t for t in THEMES_CAC if t in utilises]  # une ligne par thème que le groupe porte : pas de ligne vide
     if not themes:  # groupe sans aucune réserve : les thèmes communs, en cases blanches
-        themes = [t for t in THEMES_CAC if not t.startswith(("star_", "tunisair_", "cimbiz_", "sotumag_", "tunisre_", "bte_"))]
+        themes = [t for t in THEMES_CAC if not t.startswith(("star_", "tunisair_", "cimbiz_", "sotumag_", "tunisre_", "bte_", "tt_"))]
     carte = np.full((len(themes), len(exercices)), np.nan)
     nombres = np.zeros(len(exercices))
     for _, r in d.iterrows():
