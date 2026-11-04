@@ -99,3 +99,25 @@ Les règles A, B, D et G sont exactes ; E et F sont des bornes d'ordre de grande
 - **Accès nécessaires** : Bourse de Tunis (états et rapports), PDF locaux, `tunisia-data` en écriture, quarto pour rendre le livre.
 - **Ordre conseillé** : 5 (sans réseau), 1, 3, 6, 2, 4, 7.
 - **Sorties versées** : relevés dans `tunisia-data` (états financiers consolidés, dividendes des filiales), `groupes-bancaires-perimetre.csv` complété, section du chapitre, test des règles A, B, D, G, H dans `tests/`, ligne de backlog mise à jour.
+
+## Résultat de l'étape 5 (4 novembre 2026, fait sans réseau)
+
+Script : `scripts/bna_recoupement_debiteurs.py`. Six entreprises, 2018-2023 (les années manquantes des fiches sont laissées vides, pas comblées). Règles : engagement de la BNA ≤ passif de l'entreprise ; garantie de l'État ≤ engagement.
+
+| Entreprise | Engagement de la BNA, 2023 (MD) | Part garantie par l'État | Part du passif (2023) | Verdict |
+|---|---:|---:|---:|---|
+| Office des céréales | 5 070,1 | 100 % | 58 % de 8 689,3 (passifs hors fonds propres) | cohérent, sauf 2020 (ci-dessous) |
+| O.T.D. | 240,2 | 95 % | 31 % (2020) ; fiche 2023 sans passif | cohérent |
+| O.N.H. | 217,7 | 92 % | 22 % (2022) ; fiche 2023 sans passif | cohérent |
+| El Fouladh | 119,5 | 68 % | 19 % de 621,6 | cohérent |
+| Transtu | 117,0 | 93 % | fiche sans passif ni dette totale | non testable |
+| ETAP | 65,4 | aucune | 1 % de 4 379,9 | cohérent |
+
+1. **Règle « garantie ≤ engagement » : vérifiée pour toutes les lignes.** Aucune garantie imprimée ne dépasse l'engagement.
+2. **Règle « engagement ≤ passif » : un seul échec, l'Office des céréales en 2020.** Engagements de la BNA : 3 303,1 MD ; « dette totale » de la fiche : 3 018,0 MD (109 %). Avec « passifs hors fonds propres » de la même année (5 113,6 MD), la règle passe (65 %). Les deux mesures du passif ne se recouvrent pas ; la fiche de 2020 porte les deux, et elles diffèrent de 2 095 MD. À éclaircir avec la note des états de la BNA : les « engagements » comptent peut-être des engagements de signature (cautions, crédits documentaires) que la « dette totale » ne contient pas. Aucun des deux chiffres n'est corrigé.
+3. **L'Office des céréales pèse 79 % des engagements envers les entreprises publiques en 2023** (5 070 sur 6 442 MD). Sa part dans le passif a baissé de 90 % (2019) à 58 % (2023) : sa dette croît plus vite que celle portée par la BNA, d'où l'intérêt de savoir qui détient le reste.
+4. **La garantie de l'État couvre 100 % de l'engagement de la BNA envers l'Office en 2018, 65 % en 2019, 69 % en 2020, 60 % en 2021, puis 100 % en 2022 et 2023.** Cette rupture n'est pas expliquée dans le dépôt. Le même exercice 2022 voit les emprunts à plus d'un an de l'Office passer de 53 à 584 MD (959 MD en 2023). Rapprocher, sans conclure, du texte qui accorde ces garanties (à chercher au JORT sur la machine locale).
+5. **Dettes croisées de l'État (2023)** : l'Office des céréales a 2 185 MD de subventions non réglées de l'État et 1 631 MD de dettes envers lui ; Transtu 1 509 MD de dettes envers l'État, 365 MD de créances ; ETAP 486 MD de dettes envers l'État. Ces séries portent sur l'État, pas sur la BNA : elles ne servent à vérifier aucune règle de somme, seulement à situer l'Office. Dette bancaire garantie de l'Office (5 070 MD, BNA seule) = 2,3 fois ses créances sur l'État.
+6. **Les six fiches n'ont pas toutes les années** : Transtu n'a ni passif ni dette totale utilisables, O.T.D. et O.N.H. n'ont pas de passif en 2023. Le verdict est « non testable », non « cohérent ».
+
+Étape 6 (612 575 kDT non détaillés en 2023) : inchangée, à faire avec les états de la BNA.
