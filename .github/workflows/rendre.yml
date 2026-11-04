@@ -85,7 +85,7 @@ jobs:
         uses: actions/cache@v4
         with:
           path: ${{ inputs.mode == 'pdf' && format('precis/{0}/public/*.pdf', matrix.unite) || format('precis/{0}/public', matrix.unite) }}
-          key: rendu-${{ env.CACHE_VERSION }}-${{ inputs.mode }}-${{ matrix.unite }}-${{ hashFiles(format('precis/{0}/**', matrix.unite), format('!precis/{0}/public/**', matrix.unite), format('precis/{0}/*.json', matrix.lang), format('precis/{0}/*.bib', matrix.lang), 'precis/*.yml', 'precis/*.csl', 'precis/*.scss', 'precis/*.html', 'precis/*.json', 'precis/*.bib', 'precis/_seriescache/**', 'scripts/**', 'pyproject.toml', 'uv.lock', 'build.sh', '.github/workflows/rendre.yml') }}
+          key: rendu-${{ env.CACHE_VERSION }}-${{ inputs.mode }}-${{ matrix.unite }}-${{ hashFiles(format('precis/{0}/**', matrix.unite), format('!precis/{0}/public/**', matrix.unite), format('precis/{0}/*.json', matrix.lang), format('precis/{0}/*.bib', matrix.lang), 'precis/*.yml', 'precis/*.csl', 'precis/*.scss', 'precis/*.html', 'precis/*.json', 'precis/*.bib', 'precis/_seriescache/**', 'precis/filtres/**', 'scripts/**', 'pyproject.toml', 'uv.lock', 'build.sh', '.github/workflows/rendre.yml') }}
 
       - name: Set up Quarto
         if: steps.cache.outputs.cache-hit != 'true'
