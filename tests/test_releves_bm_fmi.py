@@ -4,7 +4,12 @@ import csv
 import json
 from pathlib import Path
 
-import yaml
+import unittest
+
+try:
+    import yaml
+except ImportError:
+    raise unittest.SkipTest("pyyaml absent")
 
 RACINE = Path(__file__).resolve().parent.parent
 LISTES = RACINE / "precis/fr/entreprises_publiques/listes"
