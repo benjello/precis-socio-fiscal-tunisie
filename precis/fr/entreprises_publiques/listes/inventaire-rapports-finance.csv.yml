@@ -1,0 +1,40 @@
+# Manifeste du relevé « rapports annuels et états financiers du secteur financier non coté : BFPME, BTS, CPSCL ».
+#
+# Catalogue des documents trouvés en ligne, gratuitement : une ligne par document (entreprise, exercice, nature). Les copies locales
+# vivent sous tunisia-data/data/raw/entreprises-publiques/rapports-entreprises/<sigle>/ (hors git, un fichier par document, nom
+# <exercice>_<nature>.pdf) ; le chemin est dans la colonne fichier. Les notices de references.json (ra-, es-, bvmt-ef-) sont
+# engendrées par `scripts/notices_rapports_finance.py`. Le Registre national des entreprises (payant) n'est pas consulté.
+#
+# NATURES. rapport_annuel : rapport annuel de l'entreprise ; rapport_activite : rapport d'activité (CPSCL) ; etats_financiers : états financiers publiés
+# par l'entreprise ; etats_financiers_bourse : états financiers individuels de la page « Hors Cote » de la Bourse de Tunis, avec le rapport des
+# commissaires aux comptes ; etats_financiers_cmf : extrait du Bulletin officiel du Conseil du marché financier publié sur le site du CMF
+# (états financiers et rapports des commissaires aux comptes ; les 2011 à 2013 de la BTS sont le même fichier que celui de l'ancien site de la
+# banque, capture de l'Internet Archive en url_archive) ; le fichier de 2021 de la BFPME est le Bulletin officiel complet du 5 septembre 2023 ;
+# etats_financiers_cmf_remplace : première version, remplacée par une seconde (BTS 2013, Bulletin officiel du 8 septembre 2014). Les états de la BTS publiés sur son site pour 2021 à 2025 ne portent pas le rapport des
+# commissaires ; la Bourse en porte une autre version, avec le rapport. Les fichiers CMF de 2016 et de 2018 de la BFPME et de 2016 et 2017 de la
+# BTS recoupent les états de la Bourse ou le rapport annuel (même texte).
+#
+# RAPPORT_CAC. « oui, p. N » : le rapport des commissaires aux comptes commence à la page N du PDF ; « oui, extrait p. 2 » : un extrait du rapport
+# du réviseur des comptes (CPSCL) ; « arabe, non lu » : document en arabe, rapport non lu ; « non lu » : document non lu ; « non » : pas de rapport ;
+#
+# LACUNES CONSIGNÉES. BFPME : exercice 2025 sans document ; le site de la banque annonce trois rapports annuels d'activités (2020,
+# 2022, 2023) dont les liens sont vides. BTS : exercice 2010 sans document (le Bulletin officiel du CMF du 29 juillet 2011 ne publie que les résolutions de
+# l'assemblée et le bilan) ; rapports annuels 2011 à 2015 de l'ancien site récupérés sur l'Internet Archive (2011, 2014 et 2015 en arabe, non lus). CPSCL : un extrait seulement du rapport du réviseur, pas de rapport annuel autre que trois rapports
+# d'activité (2015, 2016, 2018). Aucune des trois entreprises n'est sans document : il n'y a donc aucune ligne de nature « aucun ».
+
+format: long
+cle_de_ligne: [sigle, exercice, nature]
+
+colonnes:
+  sigle: sigle de l'entreprise
+  exercice: exercice (31 décembre)
+  nature: rapport_annuel, rapport_activite, etats_financiers, etats_financiers_bourse, etats_financiers_cmf, ou aucun (entreprise sans document ; adresses essayées en url_origine)
+  url_origine: adresse du document sur le site de l'éditeur ou de la Bourse de Tunis
+  url_archive: capture de l'Internet Archive, si elle existe
+  fichier: chemin de la copie locale sous tunisia-data/data/raw/entreprises-publiques/rapports-entreprises/
+  octets: taille du fichier
+  sha256: somme de contrôle du fichier
+  consultation: date de la consultation (aaaa-mm-jj)
+  rapport_cac: présence et page du rapport des commissaires aux comptes dans le document
+
+sources: [bts-informations-financieres, bfpme-publications, cpscl-publications]

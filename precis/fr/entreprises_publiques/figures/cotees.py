@@ -327,6 +327,9 @@ THEMES_CAC = {
     "tunisair_presentation": "Présentation des états financiers",
     "sotumag_chambres_froides": "Chambres froides louées comme boxes d'emballage (SOTUMAG)",
     "sotumag_pharmacies": "Pharmacies et laboratoires conventionnés (SOTUMAG)",
+    "bfpme_fonds_exterieurs": "Fonds suisse et fonds qatari dans les capitaux propres (BFPME)",
+    "bfpme_sotugar_interets": "Intérêts de trésorerie dus par la SOTUGAR (BFPME)",
+    "bfpme_commissions": "Commissions d'étude et de gestion constatées trop tôt (BFPME)",
     # STEG, ETAP, SOTRAPIL : thèmes propres, tracés seulement pour leur groupe
     "steg_amortissements": "Démantèlement amorti sur une durée trop longue (STEG)",
     "steg_clients_avances": "Rubrique « Clients, avances reçues » (STEG)",
@@ -365,6 +368,7 @@ def fig_cac(groupe: str, societe: str, delais_ecartes: tuple[int, ...] = ()):
     delais = _lire("delais-publication")
     avec_delais = bool((delais["societe"] == societe).any())
     # un délai nul est la date de clôture que la Bourse porte faute de date de publication : il n'est pas tracé
+    avec_delais = bool((delais["societe"] == societe).any())  # sans aucune ligne : pas de page à la Bourse
     delais = delais[(delais["societe"] == societe) & (delais["nature"] == "individuel") & (delais["jours"].astype(int) > 0)]
     delais = delais[~delais["exercice"].astype(int).isin(delais_ecartes)]  # dates de la Bourse sans valeur (BTE)
     lus = sorted(int(x) for x in d["exercice"].unique())
