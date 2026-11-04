@@ -24245,6 +24245,70 @@
       "title-short": "STEG, rapport annuel 2025",
       "URL": "https://www.steg.com.tn/system/files/pdf/STEG_RA_2025_0.pdf",
       "note": "citation-key: steg-ra-2025\nRapport annuel de l'exercice 2025 de la STEG. Copie locale : tunisia-data/data/raw/entreprises-publiques/rapports-entreprises/steg/2025_rapport_annuel.pdf (14 151 071 octets, 57 pages, SHA-256 a6d90b7cb76c1c39109d0c0c6b69455f6fc20d18d464439963b68cd9757eb769), ignorée par git ; catalogue precis/fr/entreprises_publiques/listes/inventaire-rapports-energie.csv. Cité pour : disponibilité du rapport en ligne. Aucun rapport de l'auditeur externe n'y figure."
+    },
+    {
+      "id": "bvmt-ra-sotrapil-2021",
+      "type": "report",
+      "title": "Rapport annuel de gestion de l'exercice 2021",
+      "author": [
+        {
+          "literal": "Société de transport des hydrocarbures par pipelines"
+        }
+      ],
+      "publisher": "Société de transport des hydrocarbures par pipelines",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2021
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            3
+          ]
+        ]
+      },
+      "title-short": "SOTRAPIL, rapport annuel 2021",
+      "URL": "https://tunis-stockexchange.com/sites/default/files/societes/sotrapil/rapport-annuel-de-gestion/stpil-rapport-annuel-de-gestion-31-12-2021.pdf",
+      "note": "citation-key: bvmt-ra-sotrapil-2021\nRapport annuel de l'exercice 2021, page de la société sur le site de la Bourse de Tunis (rapport annuel de gestion). Copie locale : tunisia-data/data/raw/entreprises-publiques/rapports-entreprises/sotrapil/2021_rapport_annuel.pdf (23 037 956 octets, 142 pages, SHA-256 b3eed13e62117db6bc56adccfa0784481b45d2f94444e766c4361f32e62e5557), ignorée par git ; catalogue precis/fr/entreprises_publiques/listes/inventaire-rapports-energie.csv. Cité pour : disponibilité du rapport en ligne ; le rapport du commissaire aux comptes n'y a pas été cherché page à page. Document en arabe.",
+      "archive": "Bourse de Tunis",
+      "archive_location": "https://tunis-stockexchange.com/sites/default/files/societes/sotrapil/rapport-annuel-de-gestion/stpil-rapport-annuel-de-gestion-31-12-2021.pdf"
+    },
+    {
+      "id": "ra-sotrapil-2025",
+      "type": "report",
+      "title": "Rapport annuel sur l'activité de la société, exercice 2025",
+      "author": [
+        {
+          "literal": "Société de transport des hydrocarbures par pipelines"
+        }
+      ],
+      "publisher": "Société de transport des hydrocarbures par pipelines",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            4
+          ]
+        ]
+      },
+      "title-short": "SOTRAPIL, rapport annuel 2025",
+      "URL": "https://sotrapil.com.tn/fr/pdf/RA2025.pdf",
+      "note": "citation-key: ra-sotrapil-2025\nRapport annuel de l'exercice 2025, page « Informations financières » du site de la société. Copie locale : tunisia-data/data/raw/entreprises-publiques/rapports-entreprises/sotrapil/2025_rapport_annuel.pdf (28 234 148 octets, 150 pages, SHA-256 10a6d305b4dcdf3ead76257072e542e74bc7bf4f3786fead2bfe5e34ae56a67f), ignorée par git ; catalogue precis/fr/entreprises_publiques/listes/inventaire-rapports-energie.csv. Cité pour : disponibilité du rapport en ligne ; le rapport du commissaire aux comptes n'y a pas été cherché page à page. Document en arabe."
     }
   ]
 }
