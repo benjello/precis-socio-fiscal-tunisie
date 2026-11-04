@@ -1,0 +1,34 @@
+# Manifeste du relevé « réformes des entreprises publiques dans la matrice des réformes de la Tunisie (mars 2022) ».
+#
+# Relevé à l'image des pages 2, 3 et 17 du fichier (pages imprimées 111, 112 et 126) de « Updated Reform Matrix 2022
+# Tunisia ». Les autres pages ont été cherchées par mots-clés dans le texte (STEG, SONEDE, ONAS, ETAP, STIR, Tunisair,
+# Telecom, SOE, performance contract) : aucune autre ligne ne concerne les entreprises publiques. Aucun fichier n'en
+# tire encore une figure ni un tableau du livre.
+#
+# CE QUE LE DOCUMENT IMPRIME : pour chaque engagement, deux commentaires, « Comments (May 2021) » et « Comments March 22
+# (Reporting period January 21-December 21) », en anglais, avec des fautes de frappe conservées dans `citation`.
+# Pour les contrats de performance : mai 2021 « 4 companies out of the /5 have signed except Tunisair » ; mars 2022
+# « the 4 companies that have signed a performance report are STEG/ STIR/ RNTA/ OFFICE DES CERALES/ No other company
+# has signed a contract since ». Les cinq grandes sont, dans l'intitulé, STEG, SONEDE, Tunisie Telecom, ONAS, ETAP.
+# CE QU'IL N'IMPRIME PAS : aucune date de signature d'un contrat de performance (seulement la date du commentaire),
+# aucun montant, aucune liste des onze entreprises de l'article 22 ter. « Tunisair » du commentaire de mai 2021 n'est
+# pas dans la liste des cinq ; « RNTA » n'est pas développé. La colonne `etat_imprime` résume en français ce que dit le
+# commentaire, sans en déduire « signé » ou « non signé » pour une entreprise que le texte ne nomme pas.
+# L'année d'engagement (2018) est l'en-tête de section de la page 110 ; les lignes des pages 111 et 112 n'en portent pas
+# d'autre : non relevée ici.
+
+format: long
+cle_de_ligne: [engagement, entreprise, date_commentaire]
+
+colonnes:
+  engagement: intitulé de la ligne de la matrice, en anglais
+  entreprise: entreprise nommée par le commentaire, ou ensemble désigné
+  date_commentaire: date du commentaire imprimé (mai 2021, ou mars 2022 pour la période janvier-décembre 2021)
+  etat_imprime: ce que dit le commentaire, en français
+  document: clé de la notice (wb-reform-matrix-2022)
+  page_pdf: page du fichier
+  page_imprimee: numéro imprimé
+  citation: phrase imprimée, en anglais
+  note: réserve de lecture
+
+sources: [wb-reform-matrix-2022]
