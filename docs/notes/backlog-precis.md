@@ -818,7 +818,7 @@ liste qui suit le tableau, citations comprises. Restent :
   - **Reste, lisible au corpus ou à océriser** : pourcentages d'affectation de 2009, 2011 et 2012 (fiche
     `r-cnrps-fonds-retraite-avant-age-2009-taux` : les quinze fascicules français sans couche texte ont été océrisés le 24 octobre
     2026, aucun décret de pourcentages ; les sommaires de 362 fascicules arabes (n° 50 de 2009 au n° 103 de 2012) ont été océrisés en arabe le 24 octobre 2026 :
-    seul le décret n° 2011-932 ressort ; reste le corps des fascicules arabes de 2009 à 2012 (toujours non océrisé le 2 novembre 2026, PR #707 : 362 fascicules sans couche texte) ; les lois de finances 2011, 2012 et le décret-loi n° 2011-56 ne portent que le tableau B) ; dépenses du compte (fiche `r-cnrps-compte-retraite-avant-age-2009-depenses` : annexes des
+    seul le décret n° 2011-932 ressort ; reste le corps des fascicules arabes de 2009 à 2012 (non océrisé : 361 fascicules sans couche texte depuis la lecture ciblée, le 3 novembre 2026, de la loi n° 2009-40 en édition arabe, JORT n° 55, art. 2 à 4 conformes au français, PR #724 ; recherche rejouée par #727 : un seul décret de pourcentages, le n° 2011-932, JORT n° 52 du 15 juillet 2011, p. 1252, lu ; QUESTION à l'humain : ajouter au chapitre le taux de 30 % du décret n° 2009-2508, qui n'y figure pas ?) ; les lois de finances 2011, 2012 et le décret-loi n° 2011-56 ne portent que le tableau B) ; dépenses du compte (fiche `r-cnrps-compte-retraite-avant-age-2009-depenses` : annexes des
     lois de règlement) ; relecture à l'image des art. 9 à 13 du décret n° 2022-542 (faite le 24 octobre 2026 sur le fascicule français : art. 9, 11 et 13 précisés au chapitre) ; ligne « 2009-39 » du guide statistique 2000-2010
     et page de la valeur 2 686 du guide 2010-2014 ; rectificatifs du décret n° 82-1030 et de la loi n° 81-6 (scans locaux, pages à identifier).
   - **Reste, à obtenir** : exposé des motifs et débats des chambres (30 juin et 4 juillet 2009 ; 3 mars 1987) ; convention entre
@@ -2696,17 +2696,18 @@ Ligne éditoriale rappelée par l'humain : le précis vise l'**impact économiqu
 - **Fait.** Définitions de l'entreprise et de la forme juridique sourcées ; modificatifs des
   art. 2, 90, 149 et 160 du code des sociétés commerciales lus (corpus, océrisés) ; explication de la
   rupture de 2018 (radiation DGI) ; baisse de 2020 mise en regard des tableaux CNSS 2020
-  (assurés actifs −2,0 %, employeurs en hausse : `cnss-annuaire-2020`, tableaux 4 et 9, lisibles).
+  (assurés actifs −2,0 %, employeurs en hausse : `cnss-annuaire-2020`, tableaux 4 et 9, lisibles) ; recul de 2020 localisé dans le régime des salariés non agricoles (−53 810, −4,1 %, PR #751, vérifié dans le chapitre).
 - **Ouvert, à obtenir.**
   - Composition des « autres formes » : aucune édition du répertoire (2010 à 2025) ni la fiche
     méthodologique de 2021 ne la donne ; demander à l'INS la liste des codes de forme
     juridique de la catégorie (6 105 entreprises en 2024).
-  - Cause de la baisse de 2020 : non commentée par l'INS (2021 à 2025) ni par la CNSS ; tableaux
-    CNSS 2021 à 2024 à chercher sur cnss.tn et dans les archives du web.
+  - Cause de la baisse de 2020 : non commentée par l'INS (2021 à 2025) ni par la CNSS ; annuaires
+    CNSS 2019 et 2021 et tableaux CNSS 2021 à 2024 à chercher sur cnss.tn et dans les archives du
+    web ; texte de 2019-2020 intégrant des agents au secteur public à chercher (TODO au chapitre).
   - Rupture de 2003 : lien avec le décret n° 2002-3018 appuyé sur la note de la CNSS, non sur une
     note de l'INS ; formulation à valider par l'humain.
-  - Copie de l'édition 2022 du code de l'Imprimerie officielle (copie tierce) à ranger dans
-    `tunisia-data`.
+  - Copie de l'édition 2022 du code de l'Imprimerie officielle : rangée et cataloguée dans
+    `tunisia-data` (`sources/imprimerie-officielle-urls.csv`), fait.
   - Entrée de glossaire arabe pour « entreprise » et « forme juridique » à faire.
 
 ### Annexe « Les conventions collectives, branche par branche » (8 octobre 2026, premier jet ; repris le 9 octobre 2026 ; grilles entières le 9 octobre 2026)
@@ -4665,7 +4666,7 @@ Ce qui reste :
   **Reste** :
   - textes **dans le corpus local, non lus** : loi n° 59-65 et décret n° 64-295 (BNA) ; suite de la
     convention du 1er août 1959 ; décrets d'organigramme et d'emplois fonctionnels des trois banques
-    (n° 2001-982, 2003-1541, 2009-40, 2009-1740, 2008-3923, 2009-1741) ; décret n° 2001-886 (BTS) ;
+    (n° 2001-982, 2003-1541, 2009-1740, 2008-3923, 2009-1741 ; le décret n° 2009-40 du 5 janvier 2009, BFPME, JORT n° 5, p. 190, a été lu le 3 novembre 2026 (PR #724, note `ocr-loi-2009-40-edition-arabe-2026-11-03.md`) : le schéma et l'annexe de l'organigramme ne sont pas publiés au JORT, lacune, pas encore au chapitre) ; décret n° 2001-886 (BTS) ;
     lois de garantie de prêts rétrocédés (BNA : n° 93-94 ; BFPME : n° 2006-40, 2020-24, 2024-39,
     cette dernière sans banque bénéficiaire nommée, non rattachée ; BTS : n° 2001-80) ; lois de
     garantie n° 95-79, 99-60, 2002-34, 2012-5, 2014-53 lues et versées le 31 octobre 2026 (PR #656),
@@ -6388,11 +6389,11 @@ matière : `docs/notes/fiscalite-decrets-97-1368-2015-1768.md`.
 Note documentaire : `docs/notes/informel-sources-2026-10-28.md` (textes de la CIST de 1993, 2003 et 2023 lus ; estimations classées par objet).
 
 - Écrit : définitions (trois textes), six familles de mesure, estimations par groupe (enquête emploi, solde, valeur ajoutée, macroéconomie, Banque mondiale).
-- Thèse de Ben Cheikh (2021) lue (note `docs/notes/informel-these-ben-cheikh-2026-10-28.md`) : série 2005-2018 ajoutée au tableau du solde ; la thèse donne deux valeurs pour 2018 (25,2 % et 26,9 %) sans les départager ; ligne de catalogue de `tunisia-data` à inscrire (fichier rangé, SHA-256 519efb04…b06d).
-- Chapitre « La couverture sociale des informels » (`_couverture.qmd`, 28 octobre 2026) écrit d'après la thèse de Ben Cheikh, attribué à l'auteur ; références de loi rapportées par la thèse, à vérifier au JORT dans les volumes « Caisses » et « Cotisations » ; pas de figure (séries de couverture à six points).
+- Thèse de Ben Cheikh (2021) lue (note `docs/notes/informel-these-ben-cheikh-2026-10-28.md`) : série 2005-2018 ajoutée au tableau du solde ; la thèse donne deux valeurs pour 2018 (25,2 % et 26,9 %) sans les départager ; thèse cataloguée dans `tunisia-data`.
+- Chapitre « La couverture sociale des informels » (`_couverture.qmd`, 28 octobre 2026) écrit d'après la thèse de Ben Cheikh, attribué à l'auteur ; références de loi vérifiées au JORT le 3 novembre 2026, PR #722 (note `docs/notes/informel-verification-lois-couverture-2026-11-03.md`) ; pas de figure (séries de couverture à six points).
 - Informel retiré du marché du travail le 28 octobre 2026 (section des notions, plan, renvoi du temps de travail).
-- À obtenir : Ben Cheikh et Moisseron 2021 (chapitre payant ; ses valeurs 25,2 % et 25,8 % sont dans la thèse) ; version française de la résolution de 2023 ; FMI DP/2022/011 et Medina-Schneider 2018 (serveur du FMI en 403) ; ITCEQ 2017 ; OCDE ECO WP 1486 ; enquête micro-entreprises postérieure à 2016 ; note INS du 2e trimestre 2020 sans couche texte.
+- À obtenir : Ben Cheikh et Moisseron 2021 (chapitre Palgrave payant ; ses valeurs 25,2 % et 25,8 % sont dans la thèse) ; version française de la résolution de 2023 ; ITCEQ 2017 ; rapport de l'INS sur l'enquête de 1997 (le rapport de 2002 confirme le SMIG et le salaire moyen de 1997, PR #726) ; Charmes 1979 et 1981. (FMI DP/2022/011 et WP/18/17 : obtenus par la Wayback Machine et catalogués, PR #726.) ; OCDE ECO WP 1486 ; enquête micro-entreprises postérieure à 2016 ; note INS du 2e trimestre 2020 sans couche texte.
 - À lire à l'image : figure 11 du rapport PNUD-OIT (étiquette de 2018) ; tableau 12 de CRES-BAD ; annexe de la 17e CIST.
 - À demander : table de passage OIT-INS pour l'écart de 2019 (36,9 % contre 44,9 %).
 - Glossaire (28 octobre 2026) : neuf notions versées et ancrées dans le texte ; `emploi-informel` prend le terme arabe de l'INS (العمل غير المنظم), « travail informel » n'en est plus synonyme. Reste : termes arabes non attestés (économie informelle, travail informel, économie non observée, économie souterraine, entreprise individuelle, enquête mixte, méthode du solde, MIMIC) à confirmer sur la version arabe des résolutions de la CIST, non disponible dans le corpus ; version française de la résolution de 2023 à obtenir (définitions du glossaire traduites de l'anglais).
-- À inscrire au catalogue de `tunisia-data` : 26 fichiers (lignes dans § 7 de la note).
+- Couverture sociale, restes (PR #722, 3 novembre 2026) : aucun texte lu ne dit ce qui exclut les travailleurs des chantiers régionaux de la loi n° 2002-32 (TODO au chapitre, vérifié) ; décret n° 82-1026 du 8 juillet 1982 non relu (cité d'après le rectificatif du n° 66 de 1982) ; clé `loi70-34` absente de `informel/references.json` (présente dans caisses et cotisations_sociales) ; `prestations_sociales/_matrice.qmd` (lignes 66 à 71) cite encore « loi n° 94-28, art. 4 » pour l'affiliation facultative, alors que le chapitre de l'informel donne l'art. 9 : à faire vérifier par le rédacteur de ce livre.
