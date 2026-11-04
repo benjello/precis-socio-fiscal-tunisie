@@ -987,7 +987,7 @@ def _image_vue(fig, png: Path, nom: str, alt: str) -> str:
     # légende (`\caption{\includegraphics…}`) et LaTeX s'arrête (« Missing number »), ce qui
     # laissait le livre de la fiscalité sans PDF. `fig` reste utilisable après `close`.
     plt = sys.modules.get("matplotlib.pyplot")  # jamais importé : aucune figure n'est ouverte
-    if plt is not None:
+    if plt is not None and isinstance(fig, plt.Figure):  # une fausse figure de test n'est pas fermée
         plt.close(fig)
     image = f'![]({png_path}){{fig-alt="{alt}"}}'
     if getattr(fig, "_infobulles", None):

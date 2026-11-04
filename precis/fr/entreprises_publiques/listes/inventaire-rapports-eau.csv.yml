@@ -1,0 +1,38 @@
+# Manifeste du catalogue « rapports annuels et états financiers en ligne des entreprises du lot « L'eau et les communications » ».
+#
+# Établi le 4 novembre 2026 par recherche en ligne gratuite (sites des entreprises, site du CMF, Internet Archive) ; rien n'a été acheté.
+# Les copies locales sont dans tunisia-data/data/raw/entreprises-publiques/rapports-entreprises/<dossier>/ (ignorées par git) ; la colonne
+# fichier donne <dossier>/<nom>. Une ligne par entreprise : quand une entreprise a plusieurs documents, exercice, url_origine, url_archive,
+# fichier, octets et sha256 portent une valeur par document, séparées par « ; », dans le même ordre.
+#
+# SONEDE : cinq rapports annuels (5 exercices ou versions), copiés de l'Internet Archive (le site actuel ne les sert plus). Les états
+# financiers y figurent, le rapport des commissaires aux comptes non : le texte renvoie à « le rapport général et spécial du commissaire aux
+# comptes ». Écartés : les documents « sonede_efd… » et « fcpr_sonede_… » du CMF sont ceux du fonds d'essaimage de la SONEDE (un fonds commun
+# de placement à risque géré par une société de gestion), et « rapport_annuel_2019_sonede », « rapport_annuel_sonede_2013 » et
+# « rapport_annuel_sonede_int_2014 » sont ceux de la filiale SONEDE International : aucun n'est de la SONEDE.
+# ONAS : rapports d'activité en français, anglais et arabe, 2004 à 2024 (28 fichiers distincts ; les doublons du site sont écartés d'après
+# le SHA-256) ; ils décrivent l'activité et les ressources financières, sans états financiers ni rapport des commissaires aux comptes. Pas
+# de rapport trouvé pour 2011, 2012, 2015 et 2017 à 2019. Les fichiers de l'ONAS n° 251 et 252 (textes juridiques, 2016) et n° 307 (fichier
+# tronqué) ne sont pas retenus.
+# La Poste : rapports annuels 2010 à 2023 en français et anglais et états financiers de 2018 sur le site de l'Office. Les états financiers de
+# 2018 n'ont pas de rapport des commissaires aux comptes ; les rapports annuels de 2017 et de 2020 donnent des états financiers
+# « provisoires ». Le Registre national des entreprises n'affiche aucun état financier déposé par l'Office (contenu payant, non consulté).
+# TT (Tunisie Telecom) : le document de référence de 2010 du CMF, seul document trouvé ; le site de la société n'a pas de page investisseurs.
+# rapport_cac : « oui » si un rapport des commissaires aux comptes figure dans un document de la ligne, « non » sinon.
+
+format: long
+cle_de_ligne: [sigle]
+
+colonnes:
+  sigle: sigle de l'entreprise
+  exercice: exercices couverts par les documents, séparés par « ; »
+  nature: nature des documents
+  url_origine: adresse du document chez l'éditeur (une par document)
+  url_archive: capture de l'Internet Archive utilisée (vide si le document est pris chez l'éditeur)
+  fichier: copie locale, <dossier>/<nom> sous tunisia-data/data/raw/entreprises-publiques/rapports-entreprises/
+  octets: taille de la copie
+  sha256: empreinte de la copie
+  consultation: date de la consultation
+  rapport_cac: un rapport des commissaires aux comptes figure dans un document (oui, non)
+
+sources: [es-tt-2009]
