@@ -3672,6 +3672,8 @@ série fait foi. La forme — volume ou chapitre d'un autre volume — était à
 il est lié depuis la page d'accueil (partie V, depuis le 20 octobre 2026) et inscrit dans `build.sh`, `build_glossary.py` et
 `verifier_livres.py`, qui sautent un livre arabe absent.
 
+- **Lacunes des comptes (4 novembre 2026).** `docs/notes/entreprises-publiques-lacunes-comptes-2026-11-04.md` : 25 sigles sans aucun compte en ligne (A), 12 avec documents mais sans opinion des commissaires aux comptes (B), 9 avec opinions (C), recomptés depuis `inventaire-rapports-*.csv` et `opinions-cac.csv`. Restent : poser les quatre questions à l'équipe de la Banque mondiale (groupes A et B), vérifier l'effectivité de l'art. 14 de la loi n° 89-9 (publication au JORT), arbitrer l'achat des comptes au Registre national (`rne-voies-gratuites-2026-11-04.md`).
+
 Plan : vue d'ensemble (`#sec-ep-vue-ensemble`) ; mise en place 1969-1987 ; grandes réformes
 (1989, 1994-2001, cessions 1987-2009, rapport annuel de 2019, depuis 2011) et registre des
 textes ; état du droit ; transferts du budget ; garanties ; dettes et créances croisées ;
