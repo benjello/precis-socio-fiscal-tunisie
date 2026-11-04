@@ -24829,6 +24829,72 @@
       "archive": "Conseil du marché financier",
       "archive_location": "https://www.cmf.tn/sites/default/files/pdfs/emetteurs/informations/consultations/bts_efd311217.pdf",
       "note": "citation-key: cmf-ef-bts-2017\nÉtats financiers de l'exercice 2017, extrait du Bulletin officiel du Conseil du marché financier publié sur le site du CMF. Copie locale : tunisia-data/data/raw/entreprises-publiques/rapports-entreprises/bts/2017_etats_financiers_cmf.pdf (453238 octets, SHA-256 f3d68174eb659581f7665df1ff0b8a93c7fc90ae01382d931d3b9b50711f1c9b), ignorée par git. Cité pour : opinion des commissaires aux comptes. Preuve : couche texte du PDF (pdftotext)."
+    },
+    {
+      "id": "cmf-ef-bfpme-2010",
+      "type": "report",
+      "title": "États financiers 2010",
+      "author": [
+        {
+          "literal": "Banque de financement des petites et moyennes entreprises"
+        }
+      ],
+      "publisher": "Banque de financement des petites et moyennes entreprises",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2010
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            4
+          ]
+        ]
+      },
+      "title-short": "BFPME, états financiers 2010",
+      "URL": "https://www.cmf.tn/sites/default/files/pdfs/emetteurs/informations/consultations/PME_EFD311210.pdf",
+      "archive": "Conseil du marché financier",
+      "archive_location": "https://www.cmf.tn/sites/default/files/pdfs/emetteurs/informations/consultations/PME_EFD311210.pdf",
+      "note": "citation-key: cmf-ef-bfpme-2010\nÉtats financiers de l'exercice 2010, extrait du Bulletin officiel du Conseil du marché financier publié sur le site du CMF. Copie locale : tunisia-data/data/raw/entreprises-publiques/rapports-entreprises/bfpme/2010_etats_financiers_cmf.pdf (389217 octets, SHA-256 80bcf48cea611e1eb85f97598354dc46d4bdd277b56d87cd4b78217a78f54cba), ignorée par git. Cité pour : opinion des commissaires aux comptes. Preuve : couche texte du PDF (pdftotext)."
+    },
+    {
+      "id": "ra-bts-2012",
+      "type": "report",
+      "title": "Rapport annuel 2012",
+      "author": [
+        {
+          "literal": "Banque tunisienne de solidarité"
+        }
+      ],
+      "publisher": "Banque tunisienne de solidarité",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2012
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            4
+          ]
+        ]
+      },
+      "title-short": "BTS, rapport annuel 2012",
+      "URL": "http://web.archive.org/web/20180219/http://www.bts.com.tn:80/wp-content/uploads/2017/09/RA-2012.pdf",
+      "archive": "Internet Archive (Wayback Machine)",
+      "archive_location": "http://www.bts.com.tn:80/wp-content/uploads/2017/09/RA-2012.pdf",
+      "note": "citation-key: ra-bts-2012\nRapport annuel de l'exercice 2012, publié sur le site de l'éditeur. Copie locale : tunisia-data/data/raw/entreprises-publiques/rapports-entreprises/bts/2012_rapport_annuel.pdf (909289 octets, SHA-256 2bb461132da8cff2aebf29b7d3e8c01b12f929d352ea42eb8f75f08be8f0997a), ignorée par git. Cité pour : états financiers publiés par l'entreprise (le rapport des commissaires n'y figure pas). Preuve : couche texte du PDF (pdftotext)."
     }
   ]
 }
