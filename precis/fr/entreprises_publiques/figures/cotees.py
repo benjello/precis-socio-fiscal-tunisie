@@ -327,6 +327,14 @@ THEMES_CAC = {
     "tunisair_presentation": "Présentation des états financiers",
     "sotumag_chambres_froides": "Chambres froides louées comme boxes d'emballage (SOTUMAG)",
     "sotumag_pharmacies": "Pharmacies et laboratoires conventionnés (SOTUMAG)",
+    # STEG, ETAP, SOTRAPIL : thèmes propres, tracés seulement pour leur groupe
+    "steg_amortissements": "Démantèlement amorti sur une durée trop longue (STEG)",
+    "steg_clients_avances": "Rubrique « Clients, avances reçues » (STEG)",
+    "steg_modification_comptable": "Modification comptable de 67 MD, capitaux propres d'ouverture (STEG, 2012)",
+    "steg_subventions": "Subventions à recevoir de l'État, 2016-2021 (STEG)",
+    "etap_cost_oil": "Cost Oil de la concession Bir Ben Tartar (ETAP)",
+    "etap_restitution_sites": "Provisions pour restitution des sites (ETAP)",
+    "etap_gpl_hasdrubal": "Factures du GPL Hasdrubal (ETAP)",
     "fouladh_continuite": "Continuité d'exploitation (El Fouladh)",
     "fouladh_stocks": "Stocks hors inventaire physique (El Fouladh)",
     "fouladh_clients": "Comptes clients non justifiés (El Fouladh)",
@@ -355,6 +363,7 @@ def fig_cac(groupe: str, societe: str, delais_ecartes: tuple[int, ...] = ()):
     d = _lire("opinions-cac")
     d = d[d["groupe"] == groupe]
     delais = _lire("delais-publication")
+    avec_delais = bool((delais["societe"] == societe).any())
     # un délai nul est la date de clôture que la Bourse porte faute de date de publication : il n'est pas tracé
     delais = delais[(delais["societe"] == societe) & (delais["nature"] == "individuel") & (delais["jours"].astype(int) > 0)]
     delais = delais[~delais["exercice"].astype(int).isin(delais_ecartes)]  # dates de la Bourse sans valeur (BTE)
