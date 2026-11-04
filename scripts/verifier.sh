@@ -88,6 +88,7 @@ etape "La numérotation se lit sans trou" uv run python scripts/check_numerotati
 etape "Chaque recherche infructueuse a sa fiche" uv run python scripts/recherches.py verifier
 etape "Les références de loi ont leur ligne de registre" uv run python scripts/check_domicile_references.py
 etape "Les manifestes de relevés sont lisibles et cohérents" uv run python scripts/check_manifestes.py
+etape "Les copies locales annoncées sont dans les manifestes de tunisia-data" uv run python scripts/check_copies_locales.py
 etape "Les sous-agents Claude Code sont à jour" uv run python scripts/sync_agents.py --verifier
 
 # ── 5. Liens de la base législative (réseau) ───────────────────────────────────
