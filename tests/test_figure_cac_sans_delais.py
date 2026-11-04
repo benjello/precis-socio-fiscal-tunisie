@@ -8,7 +8,14 @@ RACINE = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(RACINE / "scripts"))
 sys.path.insert(0, str(RACINE / "precis/fr/entreprises_publiques/figures"))
 
-import matplotlib  # noqa: E402
+try:
+    import matplotlib  # noqa: E402
+    import pandas  # noqa: E402,F401
+except (
+    ImportError
+) as exc:  # l'intégration continue lance les tests sans matplotlib ni pandas
+    raise unittest.SkipTest(f"dépendance absente : {exc.name}") from exc
+
 import cotees  # noqa: E402
 
 matplotlib.use("Agg")
