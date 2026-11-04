@@ -1,0 +1,79 @@
+# Manifeste du catalogue « rapports annuels et états financiers des entreprises publiques de l'industrie »
+# (lot « L'industrie » : CPG, GCT, El Fouladh, Ciments d'Oum El Kélil, SNCPA, AFI ; les Ciments de Bizerte
+# sont à la Bourse de Tunis et hors de ce catalogue).
+#
+# Une ligne par document trouvé en ligne et gratuitement, et une ligne « aucun » par entreprise sans aucun
+# document (colonne url_origine : les adresses essayées). Les fichiers sont dans le dossier hors git
+# tunisia-data/data/raw/entreprises-publiques/rapports-entreprises/<sigle>/, sous le nom <exercice>_<nature>.pdf.
+# Consultation : 4 novembre 2026. Le contenu du Registre national des entreprises (payant) n'a pas été consulté
+# pour ce catalogue.
+#
+# Le Registre indique que la CPG, le GCT, El Fouladh et l'AFI n'ont déposé aucun état financier. El Fouladh a
+# pourtant ses états financiers de 2013 à 2018 et de 2020 à 2024, avec le rapport général des commissaires aux
+# comptes, sur le site du Conseil du marché financier (CMF) ; la Bourse de Tunis, où la société est « hors cote »,
+# porte les états de 2017, 2018 et 2020 à 2023. Les copies des années 2021 à 2023 ont les mêmes octets sur les deux
+# sites : un seul fichier, avec l'adresse de chaque site sur sa ligne. Manquent : 2019, et tout exercice d'avant
+# 2013. Les rapports annuels d'El Fouladh (2016, 2017, 2018, 2021, 2022, 2024, au CMF) sont le rapport du conseil
+# d'administration : ils ne contiennent pas le rapport des commissaires aux comptes.
+#
+# CPG : huit rapports annuels en anglais (2008 à 2015) sur son site, sans états financiers ni rapport des commissaires
+# aux comptes (la page du conseil d'administration nomme les commissaires) ; le certificat ISO 9001 et la lettre de
+# notation de l'agence Fitch (janvier 2014) sont rangés dans le même dossier. GCT : trois rapports annuels (2012,
+# 2013 et 2014, en anglais, en deux ou trois fichiers) sur son site, sans états financiers ni rapport des commissaires
+# aux comptes. Pour ces deux entreprises la colonne rapport_cac vaut « non ».
+#
+# url_archive : adresse de la capture de l'Internet Archive quand le fichier y existe (index CDX) ; les fichiers
+# ont été téléchargés sur l'adresse d'origine. rapport_cac : « oui » si le document contient le rapport général des
+# commissaires aux comptes.
+#
+# Les fonds d'essaimage (FCPR) des Ciments d'Oum El Kélil, du GCT et de la SNCPA, dont les états sont au CMF, sont
+# d'autres entités : ils ne sont pas catalogués ici.
+
+format: long
+cle_de_ligne: [sigle, exercice, nature]
+
+colonnes:
+  sigle: "entreprise (CPG ; GCT ; FOULADH pour la Société tunisienne de sidérurgie El Fouladh ; CIOK pour les Ciments d'Oum El Kélil ; SNCPA ; AFI)"
+  exercice: exercice (31 décembre), vide pour une ligne « aucun »
+  nature: "rapport-annuel ; rapport-annuel-partieN (rapport en plusieurs fichiers) ; etats-financiers-cmf, etats-financiers-bvmt, etats-financiers-cmf-scan (états financiers avec rapport des commissaires, selon le site et le fichier) ; certificat-iso-9001 ; lettre-notation-fitch ; aucun (entreprise sans document)"
+  url_origine: adresse du document (ou, pour « aucun », les adresses essayées)
+  url_archive: capture de l'Internet Archive, si elle existe
+  fichier: chemin sous tunisia-data/data/raw/, hors git
+  octets: taille du fichier
+  sha256: somme de contrôle du fichier
+  consultation: date de téléchargement
+  rapport_cac: oui si le document contient le rapport des commissaires aux comptes, non sinon
+
+sources:
+  - es-fouladh-2013
+  - es-fouladh-2014
+  - es-fouladh-2015
+  - es-fouladh-2016
+  - es-fouladh-2017
+  - es-fouladh-2018
+  - es-fouladh-2020
+  - es-fouladh-2021
+  - es-fouladh-2022
+  - es-fouladh-2023
+  - es-fouladh-2024
+  - ra-fouladh-2016
+  - ra-fouladh-2017
+  - ra-fouladh-2018
+  - ra-fouladh-2021
+  - ra-fouladh-2022
+  - ra-fouladh-2024
+  - ra-gct-2012-1
+  - ra-gct-2012-2
+  - ra-gct-2012-3
+  - ra-gct-2013-1
+  - ra-gct-2013-2
+  - ra-gct-2014-1
+  - ra-gct-2014-2
+  - ra-cpg-2008
+  - ra-cpg-2009
+  - ra-cpg-2010
+  - ra-cpg-2011
+  - ra-cpg-2012
+  - ra-cpg-2013
+  - ra-cpg-2014
+  - ra-cpg-2015

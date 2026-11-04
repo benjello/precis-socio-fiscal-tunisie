@@ -22303,6 +22303,1062 @@
       "archive": "Bourse de Tunis",
       "archive_location": "https://tunis-stockexchange.com/sites/default/files/societes/sotumag/etats-financiers/mgr-etats-financiers-annuels-31-12-2024.pdf",
       "note": "citation-key: bvmt-ef-sotumag-2024-individuel\nÉtats financiers individuels de l'exercice 2024, page de la société sur le site de la Bourse de Tunis. Copie locale : tunisia-data/data/raw/entreprises-publiques/bvmt-etats-financiers/sotumag/2024_individuel.pdf (241104 octets, SHA-256 da5e37eee6875f637284b7085ca849f5ee417c1ffd9b0c2cdbd009831a40d8fb), ignorée par git. Cité pour : opinion des commissaires aux comptes et périmètre de consolidation. Preuve : couche texte du PDF, lue par scripts/opinions_cac.py et scripts/perimetres_groupes_bancaires.py."
+    },
+    {
+      "id": "es-fouladh-2013",
+      "type": "report",
+      "title": "États financiers 2013",
+      "author": [
+        {
+          "literal": "Société tunisienne de sidérurgie El Fouladh"
+        }
+      ],
+      "publisher": "Société tunisienne de sidérurgie El Fouladh",
+      "publisher-place": "Menzel Bourguiba",
+      "issued": {
+        "date-parts": [
+          [
+            2013
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            4
+          ]
+        ]
+      },
+      "title-short": "El Fouladh, états financiers 2013",
+      "URL": "https://www.cmf.tn/sites/default/files/pdfs/emetteurs/informations/consultations/EL_FOULADH_EFD311213.pdf",
+      "archive": "Conseil du marché financier",
+      "archive_location": "https://www.cmf.tn/sites/default/files/pdfs/emetteurs/informations/consultations/EL_FOULADH_EFD311213.pdf",
+      "note": "citation-key: es-fouladh-2013\nÉtats financiers de l'exercice 2013 avec le rapport général des commissaires aux comptes (en arabe), page « Consultation des états financiers des sociétés faisant appel public à l'épargne » du site du Conseil du marché financier. Copie locale : tunisia-data/data/raw/entreprises-publiques/rapports-entreprises/fouladh/2013_etats-financiers-cmf.pdf (378789 octets, SHA-256 07322483f7bb23dacd4f07182eb2a43fcf3e79405fb1400db73e2d465110b36f), ignorée par git. Cité pour : opinion des commissaires aux comptes (réserves, observations, chiffres de la fin de l'exercice). Preuve : couche texte du PDF (pdftotext, lettres arabes normalisées en NFKC), nombres relus une seconde fois sur l'image de chaque page citée."
+    },
+    {
+      "id": "es-fouladh-2014",
+      "type": "report",
+      "title": "États financiers 2014",
+      "author": [
+        {
+          "literal": "Société tunisienne de sidérurgie El Fouladh"
+        }
+      ],
+      "publisher": "Société tunisienne de sidérurgie El Fouladh",
+      "publisher-place": "Menzel Bourguiba",
+      "issued": {
+        "date-parts": [
+          [
+            2014
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            4
+          ]
+        ]
+      },
+      "title-short": "El Fouladh, états financiers 2014",
+      "URL": "https://www.cmf.tn/sites/default/files/pdfs/emetteurs/informations/consultations/FOULADH_EFD311214.pdf",
+      "archive": "Conseil du marché financier",
+      "archive_location": "https://www.cmf.tn/sites/default/files/pdfs/emetteurs/informations/consultations/FOULADH_EFD311214.pdf",
+      "note": "citation-key: es-fouladh-2014\nÉtats financiers de l'exercice 2014 avec le rapport général des commissaires aux comptes (en arabe), page « Consultation des états financiers des sociétés faisant appel public à l'épargne » du site du Conseil du marché financier. Copie locale : tunisia-data/data/raw/entreprises-publiques/rapports-entreprises/fouladh/2014_etats-financiers-cmf.pdf (460328 octets, SHA-256 0da0d80ff16b4faeae51d724f5421d35a7a5e1e84bde695fab7a011efba690ba), ignorée par git. Cité pour : opinion des commissaires aux comptes (réserves, observations, chiffres de la fin de l'exercice). Preuve : couche texte du PDF (pdftotext, lettres arabes normalisées en NFKC), nombres relus une seconde fois sur l'image de chaque page citée."
+    },
+    {
+      "id": "es-fouladh-2015",
+      "type": "report",
+      "title": "États financiers 2015",
+      "author": [
+        {
+          "literal": "Société tunisienne de sidérurgie El Fouladh"
+        }
+      ],
+      "publisher": "Société tunisienne de sidérurgie El Fouladh",
+      "publisher-place": "Menzel Bourguiba",
+      "issued": {
+        "date-parts": [
+          [
+            2015
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            4
+          ]
+        ]
+      },
+      "title-short": "El Fouladh, états financiers 2015",
+      "URL": "https://www.cmf.tn/sites/default/files/pdfs/emetteurs/informations/consultations/el_fouladh_efd311215.pdf",
+      "archive": "Conseil du marché financier",
+      "archive_location": "https://www.cmf.tn/sites/default/files/pdfs/emetteurs/informations/consultations/el_fouladh_efd311215.pdf",
+      "note": "citation-key: es-fouladh-2015\nÉtats financiers de l'exercice 2015 avec le rapport général des commissaires aux comptes (en arabe), page « Consultation des états financiers des sociétés faisant appel public à l'épargne » du site du Conseil du marché financier. Copie locale : tunisia-data/data/raw/entreprises-publiques/rapports-entreprises/fouladh/2015_etats-financiers-cmf.pdf (740872 octets, SHA-256 c04a2192ed7a8df242c1d83e09cd9459216d140be0490bac1bb1cb3369e8da5d), ignorée par git. Cité pour : opinion des commissaires aux comptes (réserves, observations, chiffres de la fin de l'exercice). Preuve : PDF numérisé ou à polices arabes non décodables (pas de texte exploitable) ; pages du rapport lues sur l'image, nombres relus une seconde fois sur un rendu agrandi."
+    },
+    {
+      "id": "es-fouladh-2016",
+      "type": "report",
+      "title": "États financiers 2016",
+      "author": [
+        {
+          "literal": "Société tunisienne de sidérurgie El Fouladh"
+        }
+      ],
+      "publisher": "Société tunisienne de sidérurgie El Fouladh",
+      "publisher-place": "Menzel Bourguiba",
+      "issued": {
+        "date-parts": [
+          [
+            2016
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            4
+          ]
+        ]
+      },
+      "title-short": "El Fouladh, états financiers 2016",
+      "URL": "https://www.cmf.tn/sites/default/files/pdfs/emetteurs/informations/consultations/el_fouladh_efd311216.pdf",
+      "archive": "Conseil du marché financier",
+      "archive_location": "https://www.cmf.tn/sites/default/files/pdfs/emetteurs/informations/consultations/el_fouladh_efd311216.pdf",
+      "note": "citation-key: es-fouladh-2016\nÉtats financiers de l'exercice 2016 avec le rapport général des commissaires aux comptes (en arabe), page « Consultation des états financiers des sociétés faisant appel public à l'épargne » du site du Conseil du marché financier. Copie locale : tunisia-data/data/raw/entreprises-publiques/rapports-entreprises/fouladh/2016_etats-financiers-cmf.pdf (844717 octets, SHA-256 379a961fe66a48617a5f66fb4520edd31f10c8c4f05eb6e5224ad64210c1bb6a), ignorée par git. Cité pour : opinion des commissaires aux comptes (réserves, observations, chiffres de la fin de l'exercice). Preuve : PDF numérisé ou à polices arabes non décodables (pas de texte exploitable) ; pages du rapport lues sur l'image, nombres relus une seconde fois sur un rendu agrandi."
+    },
+    {
+      "id": "es-fouladh-2017",
+      "type": "report",
+      "title": "États financiers 2017",
+      "author": [
+        {
+          "literal": "Société tunisienne de sidérurgie El Fouladh"
+        }
+      ],
+      "publisher": "Société tunisienne de sidérurgie El Fouladh",
+      "publisher-place": "Menzel Bourguiba",
+      "issued": {
+        "date-parts": [
+          [
+            2017
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            4
+          ]
+        ]
+      },
+      "title-short": "El Fouladh, états financiers 2017",
+      "URL": "https://www.cmf.tn/sites/default/files/pdfs/emetteurs/informations/consultations/el_fouladh_efd311217.pdf",
+      "archive": "Conseil du marché financier",
+      "archive_location": "https://www.cmf.tn/sites/default/files/pdfs/emetteurs/informations/consultations/el_fouladh_efd311217.pdf",
+      "note": "citation-key: es-fouladh-2017\nÉtats financiers de l'exercice 2017 avec le rapport général des commissaires aux comptes (en arabe), page « Consultation des états financiers des sociétés faisant appel public à l'épargne » du site du Conseil du marché financier. Copie locale : tunisia-data/data/raw/entreprises-publiques/rapports-entreprises/fouladh/2017_etats-financiers-cmf.pdf (834388 octets, SHA-256 30cd78376babd29637e7b7ccdf178a6124eb0c94b0f982fa3d9d5bc5bee3ef06), ignorée par git. Autre copie, page de la société (hors cote) sur le site de la Bourse de Tunis, https://tunis-stockexchange.com/sites/default/files/societes/el-fouladh/etats-financiers/el-fouladh-etats-financiers-annuels-31-12-2017.pdf : tunisia-data/data/raw/entreprises-publiques/rapports-entreprises/fouladh/2017_etats-financiers-bvmt.pdf (2000581 octets, SHA-256 89c5027da78658fdb0d9c432ab4a3c13f6dbcae780b5ed34b6dad19044200be8), de contenu identique. Cité pour : opinion des commissaires aux comptes (réserves, observations, chiffres de la fin de l'exercice). Preuve : PDF numérisé ou à polices arabes non décodables (pas de texte exploitable) ; pages du rapport lues sur l'image, nombres relus une seconde fois sur un rendu agrandi."
+    },
+    {
+      "id": "es-fouladh-2018",
+      "type": "report",
+      "title": "États financiers 2018",
+      "author": [
+        {
+          "literal": "Société tunisienne de sidérurgie El Fouladh"
+        }
+      ],
+      "publisher": "Société tunisienne de sidérurgie El Fouladh",
+      "publisher-place": "Menzel Bourguiba",
+      "issued": {
+        "date-parts": [
+          [
+            2018
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            4
+          ]
+        ]
+      },
+      "title-short": "El Fouladh, états financiers 2018",
+      "URL": "https://www.cmf.tn/sites/default/files/pdfs/emetteurs/informations/rapports-societes/elfouladh_efd_2018.pdf",
+      "archive": "Conseil du marché financier",
+      "archive_location": "https://www.cmf.tn/sites/default/files/pdfs/emetteurs/informations/rapports-societes/elfouladh_efd_2018.pdf",
+      "note": "citation-key: es-fouladh-2018\nÉtats financiers de l'exercice 2018 avec le rapport général des commissaires aux comptes (en arabe), page « Consultation des états financiers des sociétés faisant appel public à l'épargne » du site du Conseil du marché financier. Copie locale : tunisia-data/data/raw/entreprises-publiques/rapports-entreprises/fouladh/2018_etats-financiers-cmf.pdf (2026255 octets, SHA-256 1606ea3f49c830c76a95833aa3ed4210c9ec8780fca5d978dfaa6c6414ec724c), ignorée par git. Autre copie, page de la société (hors cote) sur le site de la Bourse de Tunis, https://tunis-stockexchange.com/sites/default/files/societes/el-fouladh/etats-financiers/el-fouladh-etats-financiers-annuels-31-12-2018.pdf : tunisia-data/data/raw/entreprises-publiques/rapports-entreprises/fouladh/2018_etats-financiers-bvmt.pdf (2026352 octets, SHA-256 9ffe1dc403980b5fbfaf8b6e1f48188dfeeffbac91f600238167d70174b36780), de contenu identique. Cité pour : opinion des commissaires aux comptes (réserves, observations, chiffres de la fin de l'exercice). Preuve : PDF numérisé ou à polices arabes non décodables (pas de texte exploitable) ; pages du rapport lues sur l'image, nombres relus une seconde fois sur un rendu agrandi."
+    },
+    {
+      "id": "es-fouladh-2020",
+      "type": "report",
+      "title": "États financiers 2020",
+      "author": [
+        {
+          "literal": "Société tunisienne de sidérurgie El Fouladh"
+        }
+      ],
+      "publisher": "Société tunisienne de sidérurgie El Fouladh",
+      "publisher-place": "Menzel Bourguiba",
+      "issued": {
+        "date-parts": [
+          [
+            2020
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            4
+          ]
+        ]
+      },
+      "title-short": "El Fouladh, états financiers 2020",
+      "URL": "https://www.cmf.tn/sites/default/files/pdfs/emetteurs/informations/rapports-societes/elfouladh_efd311220_0.pdf",
+      "archive": "Conseil du marché financier",
+      "archive_location": "https://www.cmf.tn/sites/default/files/pdfs/emetteurs/informations/rapports-societes/elfouladh_efd311220_0.pdf",
+      "note": "citation-key: es-fouladh-2020\nÉtats financiers de l'exercice 2020 avec le rapport général des commissaires aux comptes (en arabe), page « Consultation des états financiers des sociétés faisant appel public à l'épargne » du site du Conseil du marché financier. Copie locale : tunisia-data/data/raw/entreprises-publiques/rapports-entreprises/fouladh/2020_etats-financiers-cmf.pdf (453854 octets, SHA-256 d7f93366ee2b4652152bd06e967eb64a13a045a875f1cd1f98cfbddd4e9338fe), ignorée par git. Autre copie, page de la société (hors cote) sur le site de la Bourse de Tunis, https://tunis-stockexchange.com/sites/default/files/societes/el-fouladh/etats-financiers/el-fouladh-etats-financiers-annuels-31-12-2020.pdf : tunisia-data/data/raw/entreprises-publiques/rapports-entreprises/fouladh/2020_etats-financiers-bvmt.pdf (447191 octets, SHA-256 819ba64a364727fd12951f049803245ee32b5ec5d5f4deba7ff1df202515c257), de contenu identique. Version numérisée publiée aussi par le CMF, https://www.cmf.tn/sites/default/files/pdfs/emetteurs/informations/rapports-societes/elfouladh_efd311220.pdf : tunisia-data/data/raw/entreprises-publiques/rapports-entreprises/fouladh/2020_etats-financiers-cmf-scan.pdf (4052577 octets, SHA-256 40e8e8f527c5c084e1b79bf3088a4e0df33652a4ff6a0cd030c0448af1d07ec1). Cité pour : opinion des commissaires aux comptes (réserves, observations, chiffres de la fin de l'exercice). Preuve : couche texte du PDF (pdftotext, lettres arabes normalisées en NFKC), nombres relus une seconde fois sur l'image de chaque page citée."
+    },
+    {
+      "id": "es-fouladh-2021",
+      "type": "report",
+      "title": "États financiers 2021",
+      "author": [
+        {
+          "literal": "Société tunisienne de sidérurgie El Fouladh"
+        }
+      ],
+      "publisher": "Société tunisienne de sidérurgie El Fouladh",
+      "publisher-place": "Menzel Bourguiba",
+      "issued": {
+        "date-parts": [
+          [
+            2021
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            4
+          ]
+        ]
+      },
+      "title-short": "El Fouladh, états financiers 2021",
+      "URL": "https://www.cmf.tn/sites/default/files/pdfs/emetteurs/informations/rapports-societes/elfouladh_efd311221.pdf",
+      "archive": "Conseil du marché financier",
+      "archive_location": "https://www.cmf.tn/sites/default/files/pdfs/emetteurs/informations/rapports-societes/elfouladh_efd311221.pdf",
+      "note": "citation-key: es-fouladh-2021\nÉtats financiers de l'exercice 2021 avec le rapport général des commissaires aux comptes (en arabe), page « Consultation des états financiers des sociétés faisant appel public à l'épargne » du site du Conseil du marché financier. Copie locale : tunisia-data/data/raw/entreprises-publiques/rapports-entreprises/fouladh/2021_etats-financiers-cmf.pdf (4184970 octets, SHA-256 78eee37dabbd4801061f571056f9718d027061cdfee401d378b49945f27cfb2b), ignorée par git. Mêmes octets que la copie de la page de la société (hors cote) sur le site de la Bourse de Tunis, https://tunis-stockexchange.com/sites/default/files/societes/el-fouladh/etats-financiers/el-fouladh-etats-financiers-annuels-31-12-2021.pdf. Cité pour : opinion des commissaires aux comptes (réserves, observations, chiffres de la fin de l'exercice). Preuve : PDF numérisé ou à polices arabes non décodables (pas de texte exploitable) ; pages du rapport lues sur l'image, nombres relus une seconde fois sur un rendu agrandi."
+    },
+    {
+      "id": "es-fouladh-2022",
+      "type": "report",
+      "title": "États financiers 2022",
+      "author": [
+        {
+          "literal": "Société tunisienne de sidérurgie El Fouladh"
+        }
+      ],
+      "publisher": "Société tunisienne de sidérurgie El Fouladh",
+      "publisher-place": "Menzel Bourguiba",
+      "issued": {
+        "date-parts": [
+          [
+            2022
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            4
+          ]
+        ]
+      },
+      "title-short": "El Fouladh, états financiers 2022",
+      "URL": "https://www.cmf.tn/sites/default/files/pdfs/emetteurs/informations/rapports-societes/el_fouladh_efd311222.pdf",
+      "archive": "Conseil du marché financier",
+      "archive_location": "https://www.cmf.tn/sites/default/files/pdfs/emetteurs/informations/rapports-societes/el_fouladh_efd311222.pdf",
+      "note": "citation-key: es-fouladh-2022\nÉtats financiers de l'exercice 2022 avec le rapport général des commissaires aux comptes (en arabe), page « Consultation des états financiers des sociétés faisant appel public à l'épargne » du site du Conseil du marché financier. Copie locale : tunisia-data/data/raw/entreprises-publiques/rapports-entreprises/fouladh/2022_etats-financiers-cmf.pdf (782525 octets, SHA-256 cefc142c99581c0b5d74d99e691a9177ddf93f10fffeebadc0886f677b8aea7c), ignorée par git. Mêmes octets que la copie de la page de la société (hors cote) sur le site de la Bourse de Tunis, https://tunis-stockexchange.com/sites/default/files/societes/el-fouladh/etats-financiers/el-fouladh-etats-financiers-annuels-31-12-2022.pdf. Cité pour : opinion des commissaires aux comptes (réserves, observations, chiffres de la fin de l'exercice). Preuve : couche texte du PDF (pdftotext, lettres arabes normalisées en NFKC), nombres relus une seconde fois sur l'image de chaque page citée."
+    },
+    {
+      "id": "es-fouladh-2023",
+      "type": "report",
+      "title": "États financiers 2023",
+      "author": [
+        {
+          "literal": "Société tunisienne de sidérurgie El Fouladh"
+        }
+      ],
+      "publisher": "Société tunisienne de sidérurgie El Fouladh",
+      "publisher-place": "Menzel Bourguiba",
+      "issued": {
+        "date-parts": [
+          [
+            2023
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            4
+          ]
+        ]
+      },
+      "title-short": "El Fouladh, états financiers 2023",
+      "URL": "https://www.cmf.tn/sites/default/files/pdfs/emetteurs/informations/rapports-societes/el_fouladh_efd311223.pdf",
+      "archive": "Conseil du marché financier",
+      "archive_location": "https://www.cmf.tn/sites/default/files/pdfs/emetteurs/informations/rapports-societes/el_fouladh_efd311223.pdf",
+      "note": "citation-key: es-fouladh-2023\nÉtats financiers de l'exercice 2023 avec le rapport général des commissaires aux comptes (en arabe), page « Consultation des états financiers des sociétés faisant appel public à l'épargne » du site du Conseil du marché financier. Copie locale : tunisia-data/data/raw/entreprises-publiques/rapports-entreprises/fouladh/2023_etats-financiers-cmf.pdf (481773 octets, SHA-256 ab3ad61f26cd0c18d51bea78afb7bc6e58eba325719808bfbd5dfd73341152c8), ignorée par git. Mêmes octets que la copie de la page de la société (hors cote) sur le site de la Bourse de Tunis, https://tunis-stockexchange.com/sites/default/files/societes/el-fouladh/etats-financiers/el-fouladh-etats-financiers-annuels-31-12-2023_0.pdf. Cité pour : opinion des commissaires aux comptes (réserves, observations, chiffres de la fin de l'exercice). Preuve : couche texte du PDF (pdftotext, lettres arabes normalisées en NFKC), nombres relus une seconde fois sur l'image de chaque page citée."
+    },
+    {
+      "id": "es-fouladh-2024",
+      "type": "report",
+      "title": "États financiers 2024",
+      "author": [
+        {
+          "literal": "Société tunisienne de sidérurgie El Fouladh"
+        }
+      ],
+      "publisher": "Société tunisienne de sidérurgie El Fouladh",
+      "publisher-place": "Menzel Bourguiba",
+      "issued": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            4
+          ]
+        ]
+      },
+      "title-short": "El Fouladh, états financiers 2024",
+      "URL": "https://www.cmf.tn/sites/default/files/pdfs/emetteurs/informations/rapports-societes/el_fouladh_efd311224.pdf",
+      "archive": "Conseil du marché financier",
+      "archive_location": "https://www.cmf.tn/sites/default/files/pdfs/emetteurs/informations/rapports-societes/el_fouladh_efd311224.pdf",
+      "note": "citation-key: es-fouladh-2024\nÉtats financiers de l'exercice 2024 avec le rapport général des commissaires aux comptes (en arabe), page « Consultation des états financiers des sociétés faisant appel public à l'épargne » du site du Conseil du marché financier. Copie locale : tunisia-data/data/raw/entreprises-publiques/rapports-entreprises/fouladh/2024_etats-financiers-cmf.pdf (466467 octets, SHA-256 ef118abf8ad847cfb0a7a88c5b3823baa139e66703ee4cb670fa155da18f23f7), ignorée par git. Cité pour : opinion des commissaires aux comptes (réserves, observations, chiffres de la fin de l'exercice). Preuve : couche texte du PDF (pdftotext, lettres arabes normalisées en NFKC), nombres relus une seconde fois sur l'image de chaque page citée."
+    },
+    {
+      "id": "ra-fouladh-2016",
+      "type": "report",
+      "title": "Rapport annuel 2016",
+      "author": [
+        {
+          "literal": "Société tunisienne de sidérurgie El Fouladh"
+        }
+      ],
+      "publisher": "Société tunisienne de sidérurgie El Fouladh",
+      "publisher-place": "Menzel Bourguiba",
+      "issued": {
+        "date-parts": [
+          [
+            2016
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            4
+          ]
+        ]
+      },
+      "title-short": "El Fouladh, rapport annuel 2016",
+      "URL": "https://www.cmf.tn/sites/default/files/pdfs/emetteurs/informations/rapports-societes/rapport_annuel_el_fouledh_2016.pdf",
+      "archive": "Conseil du marché financier",
+      "archive_location": "https://www.cmf.tn/sites/default/files/pdfs/emetteurs/informations/rapports-societes/rapport_annuel_el_fouledh_2016.pdf",
+      "note": "citation-key: ra-fouladh-2016\nRapport annuel (rapport du conseil d'administration) de l'exercice 2016, page « Rapports annuels des sociétés » du site du Conseil du marché financier. Copie locale : tunisia-data/data/raw/entreprises-publiques/rapports-entreprises/fouladh/2016_rapport-annuel.pdf (78814653 octets, SHA-256 6c2a46481a111af9f1b02311ad7e2f8aa268ed16911c7cfbd66c4feadfe24bff), ignorée par git. Cité pour : exercices dont le rapport annuel est en ligne. Le rapport ne contient pas le rapport des commissaires aux comptes (aucune occurrence de « rapport général » ni d'« opinion » dans la couche texte)."
+    },
+    {
+      "id": "ra-fouladh-2017",
+      "type": "report",
+      "title": "Rapport annuel 2017",
+      "author": [
+        {
+          "literal": "Société tunisienne de sidérurgie El Fouladh"
+        }
+      ],
+      "publisher": "Société tunisienne de sidérurgie El Fouladh",
+      "publisher-place": "Menzel Bourguiba",
+      "issued": {
+        "date-parts": [
+          [
+            2017
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            4
+          ]
+        ]
+      },
+      "title-short": "El Fouladh, rapport annuel 2017",
+      "URL": "https://www.cmf.tn/sites/default/files/pdfs/emetteurs/informations/rapports-societes/rapport_annuel_alfouledh_2017.pdf",
+      "archive": "Conseil du marché financier",
+      "archive_location": "https://www.cmf.tn/sites/default/files/pdfs/emetteurs/informations/rapports-societes/rapport_annuel_alfouledh_2017.pdf",
+      "note": "citation-key: ra-fouladh-2017\nRapport annuel (rapport du conseil d'administration) de l'exercice 2017, page « Rapports annuels des sociétés » du site du Conseil du marché financier. Copie locale : tunisia-data/data/raw/entreprises-publiques/rapports-entreprises/fouladh/2017_rapport-annuel.pdf (195018698 octets, SHA-256 55d05756512a5c62f7d7ba4da7774a77fb1409ac6d00393d7eb389ca2612a7cc), ignorée par git. Cité pour : exercices dont le rapport annuel est en ligne. Le rapport ne contient pas le rapport des commissaires aux comptes (aucune occurrence de « rapport général » ni d'« opinion » dans la couche texte)."
+    },
+    {
+      "id": "ra-fouladh-2018",
+      "type": "report",
+      "title": "Rapport annuel 2018",
+      "author": [
+        {
+          "literal": "Société tunisienne de sidérurgie El Fouladh"
+        }
+      ],
+      "publisher": "Société tunisienne de sidérurgie El Fouladh",
+      "publisher-place": "Menzel Bourguiba",
+      "issued": {
+        "date-parts": [
+          [
+            2018
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            4
+          ]
+        ]
+      },
+      "title-short": "El Fouladh, rapport annuel 2018",
+      "URL": "https://www.cmf.tn/sites/default/files/pdfs/emetteurs/informations/rapports-societes/rapport_annuel_elfouladh_2018.pdf",
+      "archive": "Conseil du marché financier",
+      "archive_location": "https://www.cmf.tn/sites/default/files/pdfs/emetteurs/informations/rapports-societes/rapport_annuel_elfouladh_2018.pdf",
+      "note": "citation-key: ra-fouladh-2018\nRapport annuel (rapport du conseil d'administration) de l'exercice 2018, page « Rapports annuels des sociétés » du site du Conseil du marché financier. Copie locale : tunisia-data/data/raw/entreprises-publiques/rapports-entreprises/fouladh/2018_rapport-annuel.pdf (6044850 octets, SHA-256 0b4ea7b2b6fd622605d694da733d2952cee3fef576442e2e38ffa2307272a494), ignorée par git. Cité pour : exercices dont le rapport annuel est en ligne. Le rapport ne contient pas le rapport des commissaires aux comptes (aucune occurrence de « rapport général » ni d'« opinion » dans la couche texte)."
+    },
+    {
+      "id": "ra-fouladh-2021",
+      "type": "report",
+      "title": "Rapport annuel 2021",
+      "author": [
+        {
+          "literal": "Société tunisienne de sidérurgie El Fouladh"
+        }
+      ],
+      "publisher": "Société tunisienne de sidérurgie El Fouladh",
+      "publisher-place": "Menzel Bourguiba",
+      "issued": {
+        "date-parts": [
+          [
+            2021
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            4
+          ]
+        ]
+      },
+      "title-short": "El Fouladh, rapport annuel 2021",
+      "URL": "https://www.cmf.tn/sites/default/files/pdfs/emetteurs/informations/rapports-societes/rapport_elfouladh_2021.pdf",
+      "archive": "Conseil du marché financier",
+      "archive_location": "https://www.cmf.tn/sites/default/files/pdfs/emetteurs/informations/rapports-societes/rapport_elfouladh_2021.pdf",
+      "note": "citation-key: ra-fouladh-2021\nRapport annuel (rapport du conseil d'administration) de l'exercice 2021, page « Rapports annuels des sociétés » du site du Conseil du marché financier. Copie locale : tunisia-data/data/raw/entreprises-publiques/rapports-entreprises/fouladh/2021_rapport-annuel.pdf (6458501 octets, SHA-256 f792c2041c1c914e55fd75b170946a279d507c1c5a0523b8b73939bccaa45e63), ignorée par git. Cité pour : exercices dont le rapport annuel est en ligne. Le rapport ne contient pas le rapport des commissaires aux comptes (aucune occurrence de « rapport général » ni d'« opinion » dans la couche texte)."
+    },
+    {
+      "id": "ra-fouladh-2022",
+      "type": "report",
+      "title": "Rapport annuel 2022",
+      "author": [
+        {
+          "literal": "Société tunisienne de sidérurgie El Fouladh"
+        }
+      ],
+      "publisher": "Société tunisienne de sidérurgie El Fouladh",
+      "publisher-place": "Menzel Bourguiba",
+      "issued": {
+        "date-parts": [
+          [
+            2022
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            4
+          ]
+        ]
+      },
+      "title-short": "El Fouladh, rapport annuel 2022",
+      "URL": "https://www.cmf.tn/sites/default/files/pdfs/emetteurs/informations/rapports-societes/rapport_el_fouladh_2022.pdf",
+      "archive": "Conseil du marché financier",
+      "archive_location": "https://www.cmf.tn/sites/default/files/pdfs/emetteurs/informations/rapports-societes/rapport_el_fouladh_2022.pdf",
+      "note": "citation-key: ra-fouladh-2022\nRapport annuel (rapport du conseil d'administration) de l'exercice 2022, page « Rapports annuels des sociétés » du site du Conseil du marché financier. Copie locale : tunisia-data/data/raw/entreprises-publiques/rapports-entreprises/fouladh/2022_rapport-annuel.pdf (7122860 octets, SHA-256 53f0543baa85d4d25a120c3e5fe938d1030edcdafa366ddcbf2373ef4f70d9c1), ignorée par git. Cité pour : exercices dont le rapport annuel est en ligne. Le rapport ne contient pas le rapport des commissaires aux comptes (aucune occurrence de « rapport général » ni d'« opinion » dans la couche texte)."
+    },
+    {
+      "id": "ra-fouladh-2024",
+      "type": "report",
+      "title": "Rapport annuel 2024",
+      "author": [
+        {
+          "literal": "Société tunisienne de sidérurgie El Fouladh"
+        }
+      ],
+      "publisher": "Société tunisienne de sidérurgie El Fouladh",
+      "publisher-place": "Menzel Bourguiba",
+      "issued": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            4
+          ]
+        ]
+      },
+      "title-short": "El Fouladh, rapport annuel 2024",
+      "URL": "https://www.cmf.tn/sites/default/files/pdfs/emetteurs/informations/rapports-societes/rapport_el_fouladh_2024.pdf",
+      "archive": "Conseil du marché financier",
+      "archive_location": "https://www.cmf.tn/sites/default/files/pdfs/emetteurs/informations/rapports-societes/rapport_el_fouladh_2024.pdf",
+      "note": "citation-key: ra-fouladh-2024\nRapport annuel (rapport du conseil d'administration) de l'exercice 2024, page « Rapports annuels des sociétés » du site du Conseil du marché financier. Copie locale : tunisia-data/data/raw/entreprises-publiques/rapports-entreprises/fouladh/2024_rapport-annuel.pdf (8988624 octets, SHA-256 f8087c1292894eb4a872f55c193a58e8baf4543576bc721c25ec75ec6a4567d2), ignorée par git. Cité pour : exercices dont le rapport annuel est en ligne. Le rapport ne contient pas le rapport des commissaires aux comptes (aucune occurrence de « rapport général » ni d'« opinion » dans la couche texte)."
+    },
+    {
+      "id": "ra-gct-2012-1",
+      "type": "report",
+      "title": "Annual report 2012, partie 1",
+      "author": [
+        {
+          "literal": "Groupe chimique tunisien"
+        }
+      ],
+      "publisher": "Groupe chimique tunisien",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2012
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            4
+          ]
+        ]
+      },
+      "title-short": "Groupe chimique tunisien, rapport annuel 2012, partie 1",
+      "URL": "http://www.gct.com.tn/fileadmin/user_upload/Downloads/Rapport_Annuels/GCT-ANNUAL-REPORT-2012-PART1.pdf",
+      "archive": "Groupe chimique tunisien (site de l'éditeur)",
+      "archive_location": "http://www.gct.com.tn/fileadmin/user_upload/Downloads/Rapport_Annuels/GCT-ANNUAL-REPORT-2012-PART1.pdf",
+      "note": "citation-key: ra-gct-2012-1\nRapport annuel de l'exercice 2012 (en anglais), partie 1 sur 3, rubrique « Téléchargement » du site de l'éditeur. Copie locale : tunisia-data/data/raw/entreprises-publiques/rapports-entreprises/gct/2012_rapport-annuel-partie1.pdf (9665231 octets, SHA-256 2d97b4195996a75518d1c0bfc9ddedc895ab5d5a058569b85aafb7d81af77b29), ignorée par git. Capture de l'Internet Archive : https://web.archive.org/web/20221109140800/http://www.gct.com.tn/fileadmin/user_upload/Downloads/Rapport_Annuels/GCT-ANNUAL-REPORT-2012-PART1.pdf. Cité pour : exercices dont le rapport annuel est en ligne. Le rapport ne contient ni états financiers ni rapport des commissaires aux comptes (il indique que les chiffres viennent d'états financiers certifiés ; deux commissaires aux comptes, non nommés). Preuve : couche texte du PDF (pdftotext)."
+    },
+    {
+      "id": "ra-gct-2012-2",
+      "type": "report",
+      "title": "Annual report 2012, partie 2",
+      "author": [
+        {
+          "literal": "Groupe chimique tunisien"
+        }
+      ],
+      "publisher": "Groupe chimique tunisien",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2012
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            4
+          ]
+        ]
+      },
+      "title-short": "Groupe chimique tunisien, rapport annuel 2012, partie 2",
+      "URL": "http://www.gct.com.tn/fileadmin/user_upload/Downloads/Rapport_Annuels/GCT-ANNUAL-REPORT-2012-PART2.pdf",
+      "archive": "Groupe chimique tunisien (site de l'éditeur)",
+      "archive_location": "http://www.gct.com.tn/fileadmin/user_upload/Downloads/Rapport_Annuels/GCT-ANNUAL-REPORT-2012-PART2.pdf",
+      "note": "citation-key: ra-gct-2012-2\nRapport annuel de l'exercice 2012 (en anglais), partie 2 sur 3, rubrique « Téléchargement » du site de l'éditeur. Copie locale : tunisia-data/data/raw/entreprises-publiques/rapports-entreprises/gct/2012_rapport-annuel-partie2.pdf (7930681 octets, SHA-256 9ec02929aeec222f8ec818ab08618b02260387661181892dc7af1dc72223fd24), ignorée par git. Cité pour : exercices dont le rapport annuel est en ligne. Le rapport ne contient ni états financiers ni rapport des commissaires aux comptes (il indique que les chiffres viennent d'états financiers certifiés ; deux commissaires aux comptes, non nommés). Preuve : couche texte du PDF (pdftotext)."
+    },
+    {
+      "id": "ra-gct-2012-3",
+      "type": "report",
+      "title": "Annual report 2012, partie 3",
+      "author": [
+        {
+          "literal": "Groupe chimique tunisien"
+        }
+      ],
+      "publisher": "Groupe chimique tunisien",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2012
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            4
+          ]
+        ]
+      },
+      "title-short": "Groupe chimique tunisien, rapport annuel 2012, partie 3",
+      "URL": "http://www.gct.com.tn/fileadmin/user_upload/Downloads/Rapport_Annuels/GCT-ANNUAL-REPORT-2012-PART3.pdf",
+      "archive": "Groupe chimique tunisien (site de l'éditeur)",
+      "archive_location": "http://www.gct.com.tn/fileadmin/user_upload/Downloads/Rapport_Annuels/GCT-ANNUAL-REPORT-2012-PART3.pdf",
+      "note": "citation-key: ra-gct-2012-3\nRapport annuel de l'exercice 2012 (en anglais), partie 3 sur 3, rubrique « Téléchargement » du site de l'éditeur. Copie locale : tunisia-data/data/raw/entreprises-publiques/rapports-entreprises/gct/2012_rapport-annuel-partie3.pdf (6845341 octets, SHA-256 837751632973692b37a9ce01510989c2e55b7b8c260620069009eb2a214cc4cf), ignorée par git. Cité pour : exercices dont le rapport annuel est en ligne. Le rapport ne contient ni états financiers ni rapport des commissaires aux comptes (il indique que les chiffres viennent d'états financiers certifiés ; deux commissaires aux comptes, non nommés). Preuve : couche texte du PDF (pdftotext)."
+    },
+    {
+      "id": "ra-gct-2013-1",
+      "type": "report",
+      "title": "Annual report 2013, partie 1",
+      "author": [
+        {
+          "literal": "Groupe chimique tunisien"
+        }
+      ],
+      "publisher": "Groupe chimique tunisien",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2013
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            4
+          ]
+        ]
+      },
+      "title-short": "Groupe chimique tunisien, rapport annuel 2013, partie 1",
+      "URL": "http://www.gct.com.tn/fileadmin/user_upload/Downloads/Rapport_Annuels/GCT-ANNUAL-REPORT-2013-PART1.pdf",
+      "archive": "Groupe chimique tunisien (site de l'éditeur)",
+      "archive_location": "http://www.gct.com.tn/fileadmin/user_upload/Downloads/Rapport_Annuels/GCT-ANNUAL-REPORT-2013-PART1.pdf",
+      "note": "citation-key: ra-gct-2013-1\nRapport annuel de l'exercice 2013 (en anglais), partie 1 sur 2, rubrique « Téléchargement » du site de l'éditeur. Copie locale : tunisia-data/data/raw/entreprises-publiques/rapports-entreprises/gct/2013_rapport-annuel-partie1.pdf (7982948 octets, SHA-256 a0e9f950f155c653810093fa3062b3f98a6455a92ca38a527a2eab76844f7bf6), ignorée par git. Cité pour : exercices dont le rapport annuel est en ligne. Le rapport ne contient ni états financiers ni rapport des commissaires aux comptes (il indique que les chiffres viennent d'états financiers certifiés ; deux commissaires aux comptes, non nommés). Preuve : couche texte du PDF (pdftotext)."
+    },
+    {
+      "id": "ra-gct-2013-2",
+      "type": "report",
+      "title": "Annual report 2013, partie 2",
+      "author": [
+        {
+          "literal": "Groupe chimique tunisien"
+        }
+      ],
+      "publisher": "Groupe chimique tunisien",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2013
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            4
+          ]
+        ]
+      },
+      "title-short": "Groupe chimique tunisien, rapport annuel 2013, partie 2",
+      "URL": "http://www.gct.com.tn/fileadmin/user_upload/Downloads/Rapport_Annuels/GCT-ANNUAL-REPORT-2013-PART2.pdf",
+      "archive": "Groupe chimique tunisien (site de l'éditeur)",
+      "archive_location": "http://www.gct.com.tn/fileadmin/user_upload/Downloads/Rapport_Annuels/GCT-ANNUAL-REPORT-2013-PART2.pdf",
+      "note": "citation-key: ra-gct-2013-2\nRapport annuel de l'exercice 2013 (en anglais), partie 2 sur 2, rubrique « Téléchargement » du site de l'éditeur. Copie locale : tunisia-data/data/raw/entreprises-publiques/rapports-entreprises/gct/2013_rapport-annuel-partie2.pdf (7772098 octets, SHA-256 7e357f2c293cf6c5d1b2053d2f7eb8c0e5487617734f155f92f0b68e5675fb19), ignorée par git. Cité pour : exercices dont le rapport annuel est en ligne. Le rapport ne contient ni états financiers ni rapport des commissaires aux comptes (il indique que les chiffres viennent d'états financiers certifiés ; deux commissaires aux comptes, non nommés). Preuve : couche texte du PDF (pdftotext)."
+    },
+    {
+      "id": "ra-gct-2014-1",
+      "type": "report",
+      "title": "Annual report 2014, partie 1",
+      "author": [
+        {
+          "literal": "Groupe chimique tunisien"
+        }
+      ],
+      "publisher": "Groupe chimique tunisien",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2014
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            4
+          ]
+        ]
+      },
+      "title-short": "Groupe chimique tunisien, rapport annuel 2014, partie 1",
+      "URL": "http://www.gct.com.tn/fileadmin/user_upload/Downloads/Rapport_Annuels/GCT-ANNUAL-REPORT-2014-PART1.pdf",
+      "archive": "Groupe chimique tunisien (site de l'éditeur)",
+      "archive_location": "http://www.gct.com.tn/fileadmin/user_upload/Downloads/Rapport_Annuels/GCT-ANNUAL-REPORT-2014-PART1.pdf",
+      "note": "citation-key: ra-gct-2014-1\nRapport annuel de l'exercice 2014 (en anglais), partie 1 sur 2, rubrique « Téléchargement » du site de l'éditeur. Copie locale : tunisia-data/data/raw/entreprises-publiques/rapports-entreprises/gct/2014_rapport-annuel-partie1.pdf (10198410 octets, SHA-256 07fa982592b06cfc217af9c7fe6fecf0462e5ce056c747da1f1ea670d11890ef), ignorée par git. Capture de l'Internet Archive : https://web.archive.org/web/20221109145039/http://www.gct.com.tn/fileadmin/user_upload/Downloads/Rapport_Annuels/GCT-ANNUAL-REPORT-2014-PART1.pdf. Cité pour : exercices dont le rapport annuel est en ligne. Le rapport ne contient ni états financiers ni rapport des commissaires aux comptes (il indique que les chiffres viennent d'états financiers certifiés ; deux commissaires aux comptes, non nommés). Preuve : couche texte du PDF (pdftotext)."
+    },
+    {
+      "id": "ra-gct-2014-2",
+      "type": "report",
+      "title": "Annual report 2014, partie 2",
+      "author": [
+        {
+          "literal": "Groupe chimique tunisien"
+        }
+      ],
+      "publisher": "Groupe chimique tunisien",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2014
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            4
+          ]
+        ]
+      },
+      "title-short": "Groupe chimique tunisien, rapport annuel 2014, partie 2",
+      "URL": "http://www.gct.com.tn/fileadmin/user_upload/Downloads/Rapport_Annuels/GCT-ANNUAL-REPORT-2014-PART2.pdf",
+      "archive": "Groupe chimique tunisien (site de l'éditeur)",
+      "archive_location": "http://www.gct.com.tn/fileadmin/user_upload/Downloads/Rapport_Annuels/GCT-ANNUAL-REPORT-2014-PART2.pdf",
+      "note": "citation-key: ra-gct-2014-2\nRapport annuel de l'exercice 2014 (en anglais), partie 2 sur 2, rubrique « Téléchargement » du site de l'éditeur. Copie locale : tunisia-data/data/raw/entreprises-publiques/rapports-entreprises/gct/2014_rapport-annuel-partie2.pdf (6921062 octets, SHA-256 15d03f8f850f2908057ebafb101bc03d4874a652176d95ea9861936609ff7563), ignorée par git. Capture de l'Internet Archive : https://web.archive.org/web/20221109140757/http://www.gct.com.tn/fileadmin/user_upload/Downloads/Rapport_Annuels/GCT-ANNUAL-REPORT-2014-PART2.pdf. Cité pour : exercices dont le rapport annuel est en ligne. Le rapport ne contient ni états financiers ni rapport des commissaires aux comptes (il indique que les chiffres viennent d'états financiers certifiés ; deux commissaires aux comptes, non nommés). Preuve : couche texte du PDF (pdftotext)."
+    },
+    {
+      "id": "ra-cpg-2008",
+      "type": "report",
+      "title": "Annual report 2008",
+      "author": [
+        {
+          "literal": "Compagnie des phosphates de Gafsa"
+        }
+      ],
+      "publisher": "Compagnie des phosphates de Gafsa",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2008
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            4
+          ]
+        ]
+      },
+      "title-short": "Compagnie des phosphates de Gafsa, rapport annuel 2008",
+      "URL": "http://www.cpg.com.tn/documentation/18881.pdf",
+      "archive": "Compagnie des phosphates de Gafsa (site de l'éditeur)",
+      "archive_location": "http://www.cpg.com.tn/documentation/18881.pdf",
+      "note": "citation-key: ra-cpg-2008\nRapport annuel de l'exercice 2008 (en anglais), rubrique « documentation » du site de l'éditeur. Copie locale : tunisia-data/data/raw/entreprises-publiques/rapports-entreprises/cpg/2008_rapport-annuel.pdf (15675963 octets, SHA-256 a2d87fc62ea33d243398f5dcc53a83617183226aea9590113e5dca0036674ded), ignorée par git. Cité pour : exercices dont le rapport annuel est en ligne. Le rapport nomme les commissaires aux comptes (page du conseil d'administration) mais ne contient ni états financiers ni rapport de leur part. Preuve : couche texte du PDF (pdftotext) ou, pour les PDF d'images, lecture optique (tesseract) de toutes les pages."
+    },
+    {
+      "id": "ra-cpg-2009",
+      "type": "report",
+      "title": "Annual report 2009",
+      "author": [
+        {
+          "literal": "Compagnie des phosphates de Gafsa"
+        }
+      ],
+      "publisher": "Compagnie des phosphates de Gafsa",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2009
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            4
+          ]
+        ]
+      },
+      "title-short": "Compagnie des phosphates de Gafsa, rapport annuel 2009",
+      "URL": "http://www.cpg.com.tn/documentation/821200.pdf",
+      "archive": "Compagnie des phosphates de Gafsa (site de l'éditeur)",
+      "archive_location": "http://www.cpg.com.tn/documentation/821200.pdf",
+      "note": "citation-key: ra-cpg-2009\nRapport annuel de l'exercice 2009 (en anglais), rubrique « documentation » du site de l'éditeur. Copie locale : tunisia-data/data/raw/entreprises-publiques/rapports-entreprises/cpg/2009_rapport-annuel.pdf (12029886 octets, SHA-256 d69afc202cddc7451b5bf1cebfcc39a71bc77dc4327387b21e6dca8c5bbf817b), ignorée par git. Capture de l'Internet Archive : https://web.archive.org/web/20251206140638/http://www.cpg.com.tn/documentation/821200.pdf. Cité pour : exercices dont le rapport annuel est en ligne. Le rapport nomme les commissaires aux comptes (page du conseil d'administration) mais ne contient ni états financiers ni rapport de leur part. Preuve : couche texte du PDF (pdftotext) ou, pour les PDF d'images, lecture optique (tesseract) de toutes les pages."
+    },
+    {
+      "id": "ra-cpg-2010",
+      "type": "report",
+      "title": "Annual report 2010",
+      "author": [
+        {
+          "literal": "Compagnie des phosphates de Gafsa"
+        }
+      ],
+      "publisher": "Compagnie des phosphates de Gafsa",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2010
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            4
+          ]
+        ]
+      },
+      "title-short": "Compagnie des phosphates de Gafsa, rapport annuel 2010",
+      "URL": "http://www.cpg.com.tn/documentation/448656.pdf",
+      "archive": "Compagnie des phosphates de Gafsa (site de l'éditeur)",
+      "archive_location": "http://www.cpg.com.tn/documentation/448656.pdf",
+      "note": "citation-key: ra-cpg-2010\nRapport annuel de l'exercice 2010 (en anglais), rubrique « documentation » du site de l'éditeur. Copie locale : tunisia-data/data/raw/entreprises-publiques/rapports-entreprises/cpg/2010_rapport-annuel.pdf (18950379 octets, SHA-256 d675440fa4b6e2c31c52f1a9ad3a670e472012c1dd79cb40d09fcce249cce60a), ignorée par git. Capture de l'Internet Archive : https://web.archive.org/web/20221109140914/http://www.cpg.com.tn/documentation/448656.pdf. Cité pour : exercices dont le rapport annuel est en ligne. Le rapport nomme les commissaires aux comptes (page du conseil d'administration) mais ne contient ni états financiers ni rapport de leur part. Preuve : couche texte du PDF (pdftotext) ou, pour les PDF d'images, lecture optique (tesseract) de toutes les pages."
+    },
+    {
+      "id": "ra-cpg-2011",
+      "type": "report",
+      "title": "Annual report 2011",
+      "author": [
+        {
+          "literal": "Compagnie des phosphates de Gafsa"
+        }
+      ],
+      "publisher": "Compagnie des phosphates de Gafsa",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2011
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            4
+          ]
+        ]
+      },
+      "title-short": "Compagnie des phosphates de Gafsa, rapport annuel 2011",
+      "URL": "http://www.cpg.com.tn/documentation/451561.pdf",
+      "archive": "Compagnie des phosphates de Gafsa (site de l'éditeur)",
+      "archive_location": "http://www.cpg.com.tn/documentation/451561.pdf",
+      "note": "citation-key: ra-cpg-2011\nRapport annuel de l'exercice 2011 (en anglais), rubrique « documentation » du site de l'éditeur. Copie locale : tunisia-data/data/raw/entreprises-publiques/rapports-entreprises/cpg/2011_rapport-annuel.pdf (21536128 octets, SHA-256 64bea75ee802914414356c88ea15f8b50f40602beb521262f1d872b8adc7010d), ignorée par git. Capture de l'Internet Archive : https://web.archive.org/web/20221109140806/http://www.cpg.com.tn/documentation/451561.pdf. Cité pour : exercices dont le rapport annuel est en ligne. Le rapport nomme les commissaires aux comptes (page du conseil d'administration) mais ne contient ni états financiers ni rapport de leur part. Preuve : couche texte du PDF (pdftotext) ou, pour les PDF d'images, lecture optique (tesseract) de toutes les pages."
+    },
+    {
+      "id": "ra-cpg-2012",
+      "type": "report",
+      "title": "Annual report 2012",
+      "author": [
+        {
+          "literal": "Compagnie des phosphates de Gafsa"
+        }
+      ],
+      "publisher": "Compagnie des phosphates de Gafsa",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2012
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            4
+          ]
+        ]
+      },
+      "title-short": "Compagnie des phosphates de Gafsa, rapport annuel 2012",
+      "URL": "http://www.cpg.com.tn/documentation/239566.pdf",
+      "archive": "Compagnie des phosphates de Gafsa (site de l'éditeur)",
+      "archive_location": "http://www.cpg.com.tn/documentation/239566.pdf",
+      "note": "citation-key: ra-cpg-2012\nRapport annuel de l'exercice 2012 (en anglais), rubrique « documentation » du site de l'éditeur. Copie locale : tunisia-data/data/raw/entreprises-publiques/rapports-entreprises/cpg/2012_rapport-annuel.pdf (39915935 octets, SHA-256 1ad04e9c6d45a6a91977ef330c02c4dd8a0f9905bed4235f065253936a4ab12e), ignorée par git. Cité pour : exercices dont le rapport annuel est en ligne. Le rapport nomme les commissaires aux comptes (page du conseil d'administration) mais ne contient ni états financiers ni rapport de leur part. Preuve : couche texte du PDF (pdftotext) ou, pour les PDF d'images, lecture optique (tesseract) de toutes les pages."
+    },
+    {
+      "id": "ra-cpg-2013",
+      "type": "report",
+      "title": "Annual report 2013",
+      "author": [
+        {
+          "literal": "Compagnie des phosphates de Gafsa"
+        }
+      ],
+      "publisher": "Compagnie des phosphates de Gafsa",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2013
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            4
+          ]
+        ]
+      },
+      "title-short": "Compagnie des phosphates de Gafsa, rapport annuel 2013",
+      "URL": "http://www.cpg.com.tn/documentation/842213.pdf",
+      "archive": "Compagnie des phosphates de Gafsa (site de l'éditeur)",
+      "archive_location": "http://www.cpg.com.tn/documentation/842213.pdf",
+      "note": "citation-key: ra-cpg-2013\nRapport annuel de l'exercice 2013 (en anglais), rubrique « documentation » du site de l'éditeur. Copie locale : tunisia-data/data/raw/entreprises-publiques/rapports-entreprises/cpg/2013_rapport-annuel.pdf (13826608 octets, SHA-256 d2a1a8a07af83e55dce618ca3eb0f815d9a19d1305f1fd4c050d667f5b594df2), ignorée par git. Cité pour : exercices dont le rapport annuel est en ligne. Le rapport nomme les commissaires aux comptes (page du conseil d'administration) mais ne contient ni états financiers ni rapport de leur part. Preuve : couche texte du PDF (pdftotext) ou, pour les PDF d'images, lecture optique (tesseract) de toutes les pages."
+    },
+    {
+      "id": "ra-cpg-2014",
+      "type": "report",
+      "title": "Annual report 2014",
+      "author": [
+        {
+          "literal": "Compagnie des phosphates de Gafsa"
+        }
+      ],
+      "publisher": "Compagnie des phosphates de Gafsa",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2014
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            4
+          ]
+        ]
+      },
+      "title-short": "Compagnie des phosphates de Gafsa, rapport annuel 2014",
+      "URL": "http://www.cpg.com.tn/documentation/364397.pdf",
+      "archive": "Compagnie des phosphates de Gafsa (site de l'éditeur)",
+      "archive_location": "http://www.cpg.com.tn/documentation/364397.pdf",
+      "note": "citation-key: ra-cpg-2014\nRapport annuel de l'exercice 2014 (en anglais), rubrique « documentation » du site de l'éditeur. Copie locale : tunisia-data/data/raw/entreprises-publiques/rapports-entreprises/cpg/2014_rapport-annuel.pdf (29889642 octets, SHA-256 2dbae5beb2d187dd46f3820efa7b7ba743d5472ea188c0057bf63bca2d240bd1), ignorée par git. Capture de l'Internet Archive : https://web.archive.org/web/20240530021842/http://www.cpg.com.tn/documentation/364397.pdf. Cité pour : exercices dont le rapport annuel est en ligne. Le rapport nomme les commissaires aux comptes (page du conseil d'administration) mais ne contient ni états financiers ni rapport de leur part. Preuve : couche texte du PDF (pdftotext) ou, pour les PDF d'images, lecture optique (tesseract) de toutes les pages."
+    },
+    {
+      "id": "ra-cpg-2015",
+      "type": "report",
+      "title": "Annual report 2015",
+      "author": [
+        {
+          "literal": "Compagnie des phosphates de Gafsa"
+        }
+      ],
+      "publisher": "Compagnie des phosphates de Gafsa",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2015
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            4
+          ]
+        ]
+      },
+      "title-short": "Compagnie des phosphates de Gafsa, rapport annuel 2015",
+      "URL": "http://www.cpg.com.tn/documentation/105332.pdf",
+      "archive": "Compagnie des phosphates de Gafsa (site de l'éditeur)",
+      "archive_location": "http://www.cpg.com.tn/documentation/105332.pdf",
+      "note": "citation-key: ra-cpg-2015\nRapport annuel de l'exercice 2015 (en anglais), rubrique « documentation » du site de l'éditeur. Copie locale : tunisia-data/data/raw/entreprises-publiques/rapports-entreprises/cpg/2015_rapport-annuel.pdf (47006830 octets, SHA-256 eef628cb48fa6dc9b9cdbe42bb0c20a4c9a00580635724e8541c98bea1b18d6c), ignorée par git. Capture de l'Internet Archive : https://web.archive.org/web/20240803174536/http://www.cpg.com.tn/documentation/105332.pdf. Cité pour : exercices dont le rapport annuel est en ligne. Le rapport nomme les commissaires aux comptes (page du conseil d'administration) mais ne contient ni états financiers ni rapport de leur part. Preuve : couche texte du PDF (pdftotext) ou, pour les PDF d'images, lecture optique (tesseract) de toutes les pages."
     }
   ]
 }
