@@ -5,7 +5,13 @@ import unittest
 from pathlib import Path
 from unittest import mock
 
-import pandas as pd
+try:
+    import matplotlib  # noqa: F401
+    import pandas as pd
+except (
+    ImportError
+) as exc:  # l'intégration continue lance les tests sans matplotlib ni pandas
+    raise unittest.SkipTest(f"dépendance absente : {exc.name}") from exc
 
 RACINE = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(RACINE / "scripts"))
