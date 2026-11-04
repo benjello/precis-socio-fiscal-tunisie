@@ -2505,6 +2505,27 @@
       "note": "citation-key: cnss-annuaire-2018\nالطبعة الفرنسية من الدليل الإحصائي للصندوق الوطني للضمان الاجتماعي، 387 صفحة، سلاسل 2000-2018؛ لا يُعرف لهذه الطبعة عنوان على الواب ولا تاريخ نشر. الصفحات المقروءة (صفحة ملف PDF): نظام الأجراء في القطاع غير الفلاحي، المؤجرون والأجراء المصرّح بهم وكتلة الأجور ومعدّل الأجر، 2000-2018، ص. 16؛ الأجراء حسب شريحة الأجر بحساب الأجر الأدنى المضمون في كلّ ثلاثي من سنة 2018، ص. 26؛ هرم الأجور المصرّح بها بحساب الأجر الأدنى المضمون، 2005-2018، ص. 27. وهي آخر طبعة معروفة من الدليل. البطاقة: مستودع tunisia-data، sources/cnss-annuaires.md."
     },
     {
+      "id": "cnss-annuaire-2020",
+      "type": "report",
+      "title": "Annuaire statistique 2020",
+      "title-short": "CNSS, annuaire statistique 2020",
+      "author": [
+        {
+          "literal": "Caisse nationale de sécurité sociale"
+        }
+      ],
+      "publisher": "Caisse nationale de sécurité sociale",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2020
+          ]
+        ]
+      },
+      "note": "citation-key: cnss-annuaire-2020\nجداول الدليل الإحصائي لسنة 2020 للصندوق الوطني للضمان الاجتماعي، منشورة جدولاً جدولاً على موقع الصندوق (سلسلة 2000-2020): تطوّر عدد المنخرطين في جميع الأنظمة (الجدول 4) وتطوّر عدد المؤجرين حسب القطاع (الجدول 9). الملفات محفوظة في مستودع tunisia-data، data/raw/caisses/cnss/2020/."
+    },
+    {
       "id": "ins-micro-entreprises-2007",
       "type": "report",
       "title": "Résultats de l'enquête auprès des micro-entreprises en 2007",
