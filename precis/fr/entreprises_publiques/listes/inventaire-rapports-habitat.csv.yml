@@ -15,7 +15,7 @@ colonnes:
   exercice: exercice ou année du document (vide pour « aucun »)
   nature: nature du document ; « aucun » si l'entreprise n'a aucun document en ligne
   url_origine: adresse du document, ou adresses essayées pour une ligne « aucun »
-  url_archive: capture d'Internet Archive (vide : non demandée)
+  url_archive: "capture d'Internet Archive (vide : non demandée)"
   fichier: copie locale, relative à tunisia-data/data/raw
   octets: taille de la copie
   sha256: empreinte SHA-256 de la copie

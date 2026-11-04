@@ -8,9 +8,11 @@
 # augmentation et capital après l'opération, en dinars. Les lignes sans capital imprimé (« capital
 # initial » de la BH) ne sont pas reprises. Une ligne de la BH (6 juin 1995) imprime un capital
 # inférieur à celui de la ligne précédente : la figure ne la trace pas.
+# La page peut imprimer deux opérations de même nature à la même date (BH, 6 juin 1995 ; STB) : le
+# capital après l'opération fait partie de la clé de ligne.
 
 format: long
-cle_de_ligne: [page, date, operation]
+cle_de_ligne: [page, date, operation, capital_dt]
 
 colonnes:
   banque: sigle de la banque
