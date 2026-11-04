@@ -64,5 +64,10 @@ class FigureCacSansDelais(unittest.TestCase):
         plt.close("all")
 
 
+def tearDownModule():
+    # figtools ferme les figures seulement si pyplot est déjà importé : on laisse les autres tests comme on les a trouvés
+    sys.modules.pop("matplotlib.pyplot", None)
+
+
 if __name__ == "__main__":
     unittest.main()
