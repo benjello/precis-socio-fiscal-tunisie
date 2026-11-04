@@ -367,6 +367,7 @@ def fig_cac(groupe: str, societe: str, delais_ecartes: tuple[int, ...] = ()):
         nombres[j] += 1
         for t in r["themes"].split(";"):
             carte[themes.index(t), j] = 1
+    # une société sans page de la Bourse n'a pas de délai de publication : la figure se trace sans la courbe des délais
     # sans délai de publication (société sans page de la Bourse), la figure s'arrête au nombre de motifs
     avec_delais = not delais.empty
     if avec_delais:

@@ -74,8 +74,73 @@ ge.tableau_fiche_detail("ttn", ("LF2024", "LF2025"),
 
 <!-- TODO (documentaliste) : fiches par entreprise des éditions LF 2022, LF 2024 et LF 2025 versées pour la CPG, le GCT, El Fouladh, les Ciments de Bizerte, les Ciments d'Oum El Kélil, la SNCPA, l'AFI et Tunisie Trade Net (série entreprises-publiques-fiches-entreprises). Restent à verser, mêmes pages de ces éditions (effectifs déjà versés, voir entreprises-publiques-effectifs.csv de tunisia-data pour les pages) : Les éditions françaises LF 2020 et LF 2021 et l'édition LF 2023 donnent les comptes dans la prose, pas en tableau. Classements par charges de personnel et par produits d'exploitation : non versés. -->
 
+<!-- TODO (documentaliste) : rapports annuels et comptes certifiés de Tunisie Trade Net, lot du 4 novembre 2026 (catalogue : listes/inventaire-rapports-autres.csv). Le site actuel met en ligne, sur sa page « Publications » (/egovdoc), le rapport d'activité et le fichier « Rapports CAC + États financiers » de 2023, 2024 et 2025 (notices ra-ttn-2023, es-ttn-2023, ra-ttn-2024, es-ttn-2024, ra-ttn-2025, es-ttn-2025) ; l'ancien portail avait mis en ligne ceux de 2017 et de 2018, dont l'Internet Archive a gardé quatre captures du 4 février 2023 (notices ra-ttn-2017, 42 pages, et es-ttn-2018, 29 pages). Les captures du rapport annuel 2018 et des états financiers 2017 sont coupées à 1 048 576 octets : la première est illisible, la seconde s'arrête au début du bilan. Les documents de 2017 et de 2018 ne contiennent pas le rapport des commissaires aux comptes (le rapport annuel 2017 nomme le cabinet, p. 9) : pas de ligne 2017-2018 dans listes/opinions-cac.csv. Exercices 2019 à 2021 : aucun document en ligne retrouvé (la page « Publications » ne liste rien avant 2023, les adresses /portal/telechargerTelechargement?lien=rapport_financier_2019 et suivantes n'ont pas de capture connue) ; l'Internet Archive était hors service le 4 novembre 2026 lors de la seconde vérification, la recherche de captures de 2019 à 2022 est donc à refaire ; le Registre national liste des états financiers déposés pour 2020 à 2023 (payants, non achetés). Rapports des commissaires aux comptes de 2023 à 2025 : rapport général relevé exercice par exercice (opinions-cac.csv, trois lignes) ; chaque fichier contient aussi un rapport spécial (conventions et engagements, pages 9 à 11), non relevé ; celui de 2023 est un scan sans couche texte, lu à l'écran, nombres relus une seconde fois sur l'image. Écart inexpliqué : le rapport d'activité 2023 (p. 4) nomme « CACI » comme commissaire aux comptes nommé le 29 juin 2021 pour 2021-2023, alors que le rapport de 2023 porte l'en-tête d'un autre cabinet, qui dit tenir sa mission de la même assemblée du 29 juin 2021 (es-ttn-2023, p. 5) : lien entre les deux noms non établi. Montants des observations de 2024 et de 2025 sur les applications développées en interne (rapport de 2024 : 5 338 235 DT bruts, 167 679 DT nets ; rapport de 2025 : 5 623 543 et 336 743 DT) : les notes aux états financiers donnent les applications « TTN » en service (2024 : 5 158 964 bruts, 127 369 nets, es-ttn-2024 p. 24 ; 2025 : 5 223 081 bruts, 75 242 nets, es-ttn-2025 p. 24) et les immobilisations incorporelles en cours (40 310 DT en 2024, 261 501 DT en 2025, note 4, p. 25) ; les montants nets du rapport sont la somme des deux (127 369 + 40 310 = 167 679 ; 75 242 + 261 501 = 336 743), les montants bruts du rapport dépassent de 138 961 DT les deux années cette somme des soldes bruts en service et en cours : origine de cet écart non établie. Les rapports d'activité 2023 à 2025 ne sont pas cités dans le texte, hors le mandat des commissaires aux comptes ; leurs séries d'activité (dossiers traités du guichet unique, effectif) ne sont pas versées, et le total des dossiers de 2022 diffère entre le rapport de 2023 (2 603 083) et celui de 2024 (2 602 922). Le rapport d'activité 2025 porte la mention « Projet du Rapport annuel 2025 ». Les comptes du texte plus haut, tirés des fiches du ministère des Finances, ont été recoupés avec les états financiers publiés : 2018, 2022 et 2023 concordent (produits d'exploitation 6 117 234 ; 10 059 671 ; 10 363 938 DT ; résultat net 2 054 129 ; 5 666 177 ; 7 094 691 DT). -->
+
 ::::: {.chronologie-repliable titre="Tunisie Trade Net : source"}
 
 La source est le rapport sur les entreprises publiques que le ministère des Finances joint au projet de loi de finances : la fiche de l'entreprise, exercices 2018 à 2023, en trois éditions. L'édition française LF 2021 donne aussi la structure de son capital, et les éditions LF 2021, LF 2022 et LF 2024 la rangent parmi les entreprises sous la tutelle du ministère des Finances. Ce que l'État paie à la place de l'entreprise au titre de sa dette garantie vient d'une autre source, les rapports de la Cour des comptes sur la clôture du budget, cités à part.
 
 :::::
+
+## Les rapports annuels en ligne {#sec-ep-autres-ttn-rapports}
+
+**Le site de Tunisie Trade Net met en ligne, pour 2023, 2024 et 2025, un rapport d'activité et un fichier qui réunit les rapports des commissaires aux comptes et les états financiers ; l'ancien portail de la société avait publié ceux de 2017 et de 2018** [@ra-ttn-2023 ; @es-ttn-2023 ; @ra-ttn-2024 ; @es-ttn-2024 ; @ra-ttn-2025 ; @es-ttn-2025 ; @ra-ttn-2017 ; @es-ttn-2018]. Les capitaux propres passent de 14,1 MD fin 2018 à 47,6 MD fin 2025 et le résultat net de 2,1 à 7,9 MD (@tbl-ep-ttn-comptes-publies).
+
+- **Les comptes publiés par la société.** Le tableau ne porte que les exercices dont un document en ligne donne les comptes ; 2017 et 2022 sont les chiffres comparatifs des états de 2018 et de 2023. Les produits d'exploitation et le résultat net de 2018 et de 2023 concordent avec ceux des fiches du ministère des Finances, qui les donnent en millions de dinars [@es-ttn-2018, p. 4-5 ; @es-ttn-2023, p. 15-16].
+- **Qui certifie les comptes.** Le rapport d'activité de 2023 donne un commissaire aux comptes nommé par l'assemblée générale ordinaire du 29 juin 2021 pour les exercices 2021 à 2023, et celui de 2024 un autre cabinet, nommé par l'assemblée générale ordinaire du 27 juin 2023 pour les exercices 2024 à 2026 [@ra-ttn-2023, p. 4 ; @ra-ttn-2024, p. 4]. Le rapport des commissaires aux comptes de 2023 est signé le 10 juin 2024, celui de 2024 le 9 juin 2025 et celui de 2025 le 10 juin 2026 [@es-ttn-2023, p. 8 ; @es-ttn-2024, p. 8 ; @es-ttn-2025, p. 8].
+- **2017 et 2018 : pas de rapport des commissaires aux comptes.** Le rapport annuel de 2017 nomme le commissaire aux comptes parmi les organes de contrôle sans reproduire son rapport, et les états financiers de 2018 ne contiennent pas ce rapport [@ra-ttn-2017, p. 9 ; @es-ttn-2018].
+
+| Exercice | Produits d'exploitation (DT) | Résultat net (DT) | Capitaux propres avant affectation (DT) | Source |
+|---|---:|---:|---:|---|
+| 2017 | 6 079 135 | 1 823 829 | 12 651 419 | [@es-ttn-2018, p. 4-5] |
+| 2018 | 6 117 234 | 2 054 129 | 14 079 017 | [@es-ttn-2018, p. 4-5] |
+| 2022 | 10 059 671 | 5 666 177 | 27 504 066 | [@es-ttn-2023, p. 15-16] |
+| 2023 | 10 363 938 | 7 094 691 | 34 049 336 | [@es-ttn-2023, p. 15-16] |
+| 2024 | 11 273 547 | 7 259 997 | 40 487 440 | [@es-ttn-2024, p. 16-17] |
+| 2025 | 11 971 633 | 7 866 451 | 47 552 561 | [@es-ttn-2025, p. 16-17] |
+
+: Tunisie Trade Net, comptes de la société d'après ses états financiers publiés {#tbl-ep-ttn-comptes-publies}
+
+## L'opinion des commissaires aux comptes {#sec-ep-autres-ttn-cac}
+
+**Les commissaires aux comptes de Tunisie Trade Net émettent une opinion sans réserve sur les comptes de 2023, de 2024 et de 2025 ; chaque rapport porte un paragraphe d'observation sur les applications développées en interne, et un manquement signalé à l'assemblée générale sur l'actionnariat du président-directeur général** [@es-ttn-2023, p. 5 et 8 ; @es-ttn-2024, p. 4-5 et 8 ; @es-ttn-2025, p. 4-5 et 8].
+
+- **2023 : sans réserve.** Les états financiers font ressortir des capitaux propres de 34 049 336 DT et un résultat net de 7 094 691 DT. L'observation porte sur les immobilisations incorporelles, 6 834 376 DT bruts et 132 596 DT nets, dont 5 061 471 DT bruts (74 %) d'applications développées en interne par les services de la société : faute de comptabilité analytique fiable, les commissaires ne peuvent pas confirmer que leur valeur correspond à leur valeur réelle. Leur examen du contrôle interne n'a pas révélé de défaillance significative [@es-ttn-2023, p. 5 et 7].
+- **2024 : sans réserve.** Les capitaux propres sont de 40 487 440 DT et le résultat net de 7 259 997 DT. Deux observations. D'abord, la valorisation du coût de développement interne des applications d'exploitation (5 338 235 DT bruts, 167 679 DT nets, montants du rapport) : sans comptabilité analytique fiable, les commissaires ne peuvent pas confirmer que les dépenses activées respectent les règles de calcul du coût de production. Ensuite, le budget du fonds social fait apparaître un déséquilibre négatif de 92 751 DT, un manque d'actifs et d'emplois du fonds : des charges et des actifs du fonds sont inscrits chez la société, et des dettes du fonds sont réglées sur le compte de la société ; la régularisation peut modifier le total de l'actif de 2024 et des exercices antérieurs, et l'effet ne peut pas être estimé de façon fiable à la date de clôture [@es-ttn-2024, p. 4-5].
+- **2025 : sans réserve.** Les capitaux propres sont de 47 552 561 DT et le résultat net de 7 866 451 DT. Les deux observations de 2024 reviennent : applications développées en interne (5 623 543 DT bruts, 336 743 DT nets, montants du rapport) et déséquilibre négatif du budget du fonds social, 94 834 DT [@es-ttn-2025, p. 4-5].
+- **Chaque année : un manquement signalé à l'assemblée.** Au titre de l'article 270 du code des sociétés commerciales, les commissaires signalent que le président-directeur général n'a pas la qualité d'actionnaire de la société, qui le qualifie, selon l'article 208 du même code, pour être élu à cette fonction ; le rapport de 2023 dit qu'il ne détient aucune action au capital. Ce rapport ajoute que les statuts mis à jour le 10 mars 2020 ne respectent pas non plus cet article [@es-ttn-2023, p. 8 ; @es-ttn-2024, p. 8 ; @es-ttn-2025, p. 8].
+
+```{python}
+#| label: fig-ep-ttn-cac
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import cotees as ct
+ct.figure_cac(
+    "TTN", "ttn",
+    caption=("Les réserves des commissaires aux comptes sur les comptes de Tunisie Trade Net, par thème et par exercice, "
+             "et leur nombre, d'après leurs rapports généraux joints aux états financiers publiés par la société, 2023 à 2025. "
+             "Source : [@es-ttn-2023 ; @es-ttn-2024 ; @es-ttn-2025]"),
+    note_lecture=(
+        "En haut, une case par thème de réserve et par exercice ; aucun des trois exercices lus n'en porte. Au milieu, le "
+        "nombre de motifs de réserve, nul chaque année. Les paragraphes d'observation et le manquement signalé à "
+        "l'assemblée ne sont pas des réserves : ils ne sont pas comptés ici et figurent dans le tableau qui suit. Les thèmes "
+        "sans case sont ceux des banques. Les exercices sans rapport lu sont en gris."))
+```
+
+::: {.chronologie-repliable titre="L'opinion des commissaires aux comptes sur les comptes de Tunisie Trade Net, exercice par exercice, 2023-2025"}
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import cotees as ct
+ct.tableau_opinions(
+    "TTN",
+    caption=("L'opinion des commissaires aux comptes sur les comptes de Tunisie Trade Net, d'après le rapport général joint "
+             "aux états financiers publiés par la société (2023 à 2025). Un exercice sans réserve porte le résumé des "
+             "paragraphes d'observation. Chaque motif résume l'intitulé du rapport, avec la page du PDF."),
+    tbl_id="tbl-ep-ttn-cac")
+```
+
+:::

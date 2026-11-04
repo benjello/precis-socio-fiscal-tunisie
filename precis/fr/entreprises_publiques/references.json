@@ -22305,6 +22305,270 @@
       "note": "citation-key: bvmt-ef-sotumag-2024-individuel\nÉtats financiers individuels de l'exercice 2024, page de la société sur le site de la Bourse de Tunis. Copie locale : tunisia-data/data/raw/entreprises-publiques/bvmt-etats-financiers/sotumag/2024_individuel.pdf (241104 octets, SHA-256 da5e37eee6875f637284b7085ca849f5ee417c1ffd9b0c2cdbd009831a40d8fb), ignorée par git. Cité pour : opinion des commissaires aux comptes et périmètre de consolidation. Preuve : couche texte du PDF, lue par scripts/opinions_cac.py et scripts/perimetres_groupes_bancaires.py."
     },
     {
+      "id": "ra-ttn-2017",
+      "type": "report",
+      "title": "Rapport annuel 2017",
+      "author": [
+        {
+          "literal": "Tunisie TradeNet"
+        }
+      ],
+      "publisher": "Tunisie TradeNet",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2017
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            4
+          ]
+        ]
+      },
+      "title-short": "Tunisie TradeNet, rapport annuel 2017",
+      "URL": "https://web.archive.org/web/20230204111005/http://www.tradenet.com.tn/portal/telechargerTelechargement?lien=rapport_financier_2017",
+      "archive": "Internet Archive (Wayback Machine)",
+      "archive_location": "http://www.tradenet.com.tn/portal/telechargerTelechargement?lien=rapport_financier_2017",
+      "note": "citation-key: ra-ttn-2017\nRapport annuel de l'exercice 2017 (42 pages), consulté dans la capture de l'Internet Archive du 04/02/2023 de l'ancien portail de l'éditeur. Copie locale : tunisia-data/data/raw/entreprises-publiques/rapports-entreprises/ttn/2017_rapport-financier.pdf (800332 octets, SHA-256 2cc4da9c3d25a1cc41a06533b0b9f9c64fadf13675758c6f474d0244e4ac9559), ignorée par git. Cité pour : composition du conseil d'administration et nom du cabinet de commissaires aux comptes (p. 9). Le rapport ne reproduit pas le rapport des commissaires aux comptes."
+    },
+    {
+      "id": "es-ttn-2018",
+      "type": "report",
+      "title": "Les états financiers, exercice 2018",
+      "author": [
+        {
+          "literal": "Tunisie TradeNet"
+        }
+      ],
+      "publisher": "Tunisie TradeNet",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2018
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            4
+          ]
+        ]
+      },
+      "title-short": "Tunisie TradeNet, états financiers 2018",
+      "URL": "https://web.archive.org/web/20230204123318/http://www.tradenet.com.tn/portal/telechargerTelechargement?lien=etats_financiers_2018",
+      "archive": "Internet Archive (Wayback Machine)",
+      "archive_location": "http://www.tradenet.com.tn/portal/telechargerTelechargement?lien=etats_financiers_2018",
+      "note": "citation-key: es-ttn-2018\nÉtats financiers arrêtés au 31 décembre 2018 (29 pages : bilan, résultat, flux de trésorerie, notes), consulté dans la capture de l'Internet Archive du 04/02/2023 de l'ancien portail de l'éditeur. Copie locale : tunisia-data/data/raw/entreprises-publiques/rapports-entreprises/ttn/2018_etats-financiers.pdf (749306 octets, SHA-256 d236934d4a1ac49a8598f9b0c17ac84e67298ae86535101ebbdac118f99543a6), ignorée par git. Le sommaire ne liste aucun rapport des commissaires aux comptes et le texte n'en contient pas."
+    },
+    {
+      "id": "ra-ttn-2023",
+      "type": "report",
+      "title": "Rapport d'activité annuel 2023",
+      "author": [
+        {
+          "literal": "Tunisie TradeNet"
+        }
+      ],
+      "publisher": "Tunisie TradeNet",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2023
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            4
+          ]
+        ]
+      },
+      "title-short": "Tunisie TradeNet, rapport d'activité 2023",
+      "URL": "https://www.tradenet.com.tn/download_doc/1/",
+      "archive": "Site de Tunisie TradeNet, page « Publications »",
+      "archive_location": "https://www.tradenet.com.tn/egovdoc",
+      "note": "citation-key: ra-ttn-2023\nRapport d'activité annuel de l'exercice 2023 (26 pages), fichier « 2023-Rapport d'activité annuel.pdf » de la page « Publications » du site de l'éditeur, téléchargé le 04/11/2026. Cité pour : commissaire aux comptes et mandat (p. 4). Copie locale : tunisia-data/data/raw/entreprises-publiques/rapports-entreprises/ttn/2023_rapport-activite.pdf (565251 octets, SHA-256 fd598ac53169ba5b5693aa2a66cdab76b1662f955807a98318a866181143225f), ignorée par git."
+    },
+    {
+      "id": "es-ttn-2023",
+      "type": "report",
+      "title": "Rapports des commissaires aux comptes et états financiers, exercice 2023",
+      "author": [
+        {
+          "literal": "Tunisie TradeNet"
+        }
+      ],
+      "publisher": "Tunisie TradeNet",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2023
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            4
+          ]
+        ]
+      },
+      "title-short": "Tunisie TradeNet, rapports CAC et états financiers 2023",
+      "URL": "https://www.tradenet.com.tn/download_doc/2/",
+      "archive": "Site de Tunisie TradeNet, page « Publications »",
+      "archive_location": "https://www.tradenet.com.tn/egovdoc",
+      "note": "citation-key: es-ttn-2023\nFichier « 2023-Rapports CAC + Etats financiers.pdf » (46 pages) de la page « Publications » du site de l'éditeur, téléchargé le 04/11/2026 : rapport général et rapport spécial des commissaires aux comptes en arabe (p. 1-11, scan sans couche texte, signé le 10 juin 2024), puis états financiers arrêtés au 31 décembre 2023 en français (p. 12-46). Cité pour : opinion des commissaires aux comptes (p. 5-8), bilan (p. 15) et état de résultat (p. 16). Copie locale : tunisia-data/data/raw/entreprises-publiques/rapports-entreprises/ttn/2023_cac-etats-financiers.pdf (1472719 octets, SHA-256 d9dfa963d632b55ed3aceba681043da9ed02ea509bef5f8e1c23d41bd009462a), ignorée par git."
+    },
+    {
+      "id": "ra-ttn-2024",
+      "type": "report",
+      "title": "Rapport d'activité 2024",
+      "author": [
+        {
+          "literal": "Tunisie TradeNet"
+        }
+      ],
+      "publisher": "Tunisie TradeNet",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            4
+          ]
+        ]
+      },
+      "title-short": "Tunisie TradeNet, rapport d'activité 2024",
+      "URL": "https://www.tradenet.com.tn/download_doc/3/",
+      "archive": "Site de Tunisie TradeNet, page « Publications »",
+      "archive_location": "https://www.tradenet.com.tn/egovdoc",
+      "note": "citation-key: ra-ttn-2024\nRapport d'activité de l'exercice 2024 (26 pages), fichier « 2024-Rapport d'activité annuel.pdf » de la page « Publications » du site de l'éditeur, téléchargé le 04/11/2026. Cité pour : commissaire aux comptes et mandat (p. 4). Copie locale : tunisia-data/data/raw/entreprises-publiques/rapports-entreprises/ttn/2024_rapport-activite.pdf (2064457 octets, SHA-256 ddb2e538208134dcaa3215b757b2bc6c2e2a5b7337d2ee0a0d93ca17377547d1), ignorée par git."
+    },
+    {
+      "id": "es-ttn-2024",
+      "type": "report",
+      "title": "Rapports des commissaires aux comptes et états financiers, exercice 2024",
+      "author": [
+        {
+          "literal": "Tunisie TradeNet"
+        }
+      ],
+      "publisher": "Tunisie TradeNet",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            4
+          ]
+        ]
+      },
+      "title-short": "Tunisie TradeNet, rapports CAC et états financiers 2024",
+      "URL": "https://www.tradenet.com.tn/download_doc/4/",
+      "archive": "Site de Tunisie TradeNet, page « Publications »",
+      "archive_location": "https://www.tradenet.com.tn/egovdoc",
+      "note": "citation-key: es-ttn-2024\nFichier « 2024-Rapports CAC + Etats financiers.pdf » (45 pages) de la page « Publications » du site de l'éditeur, téléchargé le 04/11/2026 : rapport général et rapport spécial des commissaires aux comptes en arabe (p. 1-11, signé le 9 juin 2025), puis états financiers arrêtés au 31 décembre 2024 en français (p. 13-45). Cité pour : opinion des commissaires aux comptes (p. 4-8), bilan (p. 16) et état de résultat (p. 17). Copie locale : tunisia-data/data/raw/entreprises-publiques/rapports-entreprises/ttn/2024_cac-etats-financiers.pdf (4047454 octets, SHA-256 f2c7b63c9e4a0c6e2798eff7e785ba5f9f78c41636922a968311498bc5ac969f), ignorée par git."
+    },
+    {
+      "id": "ra-ttn-2025",
+      "type": "report",
+      "title": "Projet du rapport d'activité 2025",
+      "author": [
+        {
+          "literal": "Tunisie TradeNet"
+        }
+      ],
+      "publisher": "Tunisie TradeNet",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            4
+          ]
+        ]
+      },
+      "title-short": "Tunisie TradeNet, rapport d'activité 2025 (projet)",
+      "URL": "https://www.tradenet.com.tn/download_doc/5/",
+      "archive": "Site de Tunisie TradeNet, page « Publications »",
+      "archive_location": "https://www.tradenet.com.tn/egovdoc",
+      "note": "citation-key: ra-ttn-2025\nRapport d'activité de l'exercice 2025 (31 pages), fichier « 2025-Rapport d'activité annuel.pdf » de la page « Publications » du site de l'éditeur, téléchargé le 04/11/2026 ; la couverture porte la mention « Projet du Rapport annuel 2025 ». Copie locale : tunisia-data/data/raw/entreprises-publiques/rapports-entreprises/ttn/2025_rapport-activite.pdf (618696 octets, SHA-256 9562de44be93570deeb9984ef255d87f01ca34d03d9daf857255e0464f7bc5f1), ignorée par git."
+    },
+    {
+      "id": "es-ttn-2025",
+      "type": "report",
+      "title": "Rapports des commissaires aux comptes et états financiers, exercice 2025",
+      "author": [
+        {
+          "literal": "Tunisie TradeNet"
+        }
+      ],
+      "publisher": "Tunisie TradeNet",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            4
+          ]
+        ]
+      },
+      "title-short": "Tunisie TradeNet, rapports CAC et états financiers 2025",
+      "URL": "https://www.tradenet.com.tn/download_doc/6/",
+      "archive": "Site de Tunisie TradeNet, page « Publications »",
+      "archive_location": "https://www.tradenet.com.tn/egovdoc",
+      "note": "citation-key: es-ttn-2025\nFichier « 2025- Rapport CAC +Etats financiers.pdf » (46 pages) de la page « Publications » du site de l'éditeur, téléchargé le 04/11/2026 : rapport général et rapport spécial des commissaires aux comptes en arabe (p. 1-11, signé le 10 juin 2026), puis états financiers arrêtés au 31 décembre 2025 en français (p. 13-46). Cité pour : opinion des commissaires aux comptes (p. 4-8), bilan (p. 16) et état de résultat (p. 17). Copie locale : tunisia-data/data/raw/entreprises-publiques/rapports-entreprises/ttn/2025_cac-etats-financiers.pdf (780583 octets, SHA-256 a71a6e0c8c98f231a69d341fb4eadf0b97a09b13150026904aeb56afe13b4a34), ignorée par git."
+    },
+    {
       "id": "ra-onh-2017-2018",
       "type": "report",
       "title": "Rapport d'activité de la campagne 2017-2018",
