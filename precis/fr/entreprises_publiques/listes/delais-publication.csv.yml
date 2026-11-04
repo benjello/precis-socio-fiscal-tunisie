@@ -1,0 +1,25 @@
+# Manifeste du relevé « délais de publication des états financiers des sociétés cotées ».
+#
+# Fichier lu par figures/cotees.py (courbe des délais de la figure des opinions des commissaires aux
+# comptes, section « Les sociétés cotées »). Engendré par `scripts/bvmt_etats_financiers.py --delais`
+# à partir de la liste des publications de la page de chaque société à la Bourse de Tunis ; certaines
+# lignes ont ensuite été corrigées à la main (nature de la publication de 2016 de la STAR) : ne pas
+# relancer l'option --delais sans relire ces corrections.
+#
+# UNE PUBLICATION, UNE LIGNE. La Bourse peut porter deux publications pour un même exercice et une
+# même nature (BH 2017 consolidé, Tunisair 2007 individuel) : la clé de ligne comprend la page de la
+# publication. Un délai de 0 jour ou de plusieurs années signale une date de la Bourse sans valeur,
+# gardée ici et écartée des figures (voir les TODO des sections concernées).
+
+format: long
+cle_de_ligne: [societe, exercice, nature, page]
+
+colonnes:
+  societe: nom de la page de la société à la Bourse (clé de citation bvmt-<societe>)
+  exercice: exercice clos le 31 décembre
+  nature: individuel ou consolide
+  date_publication: date que la Bourse porte pour la publication (jj/mm/aaaa)
+  jours: délai en jours entre la clôture de l'exercice et cette date
+  page: identifiant de la page de la publication sur le site de la Bourse (/node/<numéro>)
+
+sources: [bvmt-bh-bank, bvmt-bna, bvmt-bte-adp, bvmt-ciments-de-bizerte, bvmt-sotumag, bvmt-star, bvmt-stb, bvmt-tunis-re, bvmt-tunisair]
