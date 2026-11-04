@@ -19,7 +19,7 @@
 # (la page « Publications » du site et les captures de l'Internet Archive n'en donnent pas d'autres).
 # ETAP : les rapports financiers du site sont des extraits (bilan, état de résultat, flux, et selon l'année le
 # rapport du réviseur légal) ; ceux de 2004 et de 2006 ne sont pas sur la page. Le site de l'ETAP n'envoie pas la
-# chaîne de certificat complète : téléchargement sans vérification de la chaîne.
+# chaîne de certificat complète : téléchargement sans vérification de la chaîne ; la colonne url_archive donne la capture de l'Internet Archive dont le PDF est identique à la copie (16 exercices) ; pas de capture pour 2024, captures tronquées à 5 Mo pour 2008, 2010 et 2015.
 # SOTRAPIL : société cotée à la Bourse de Tunis ; états financiers annuels de la page de la société (2000, 2002 à
 # 2022, 2024 et 2025 ; pas de 2023), rapport de gestion de 2021 de la Bourse, rapport annuel de 2025 et document
 # d'information de l'assemblée de 2026 du site de la société.
