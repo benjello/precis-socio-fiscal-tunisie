@@ -46,6 +46,11 @@ GENRES = {
         "États financiers",
         "états financiers de l'exercice {ex}, extrait du Bulletin officiel du Conseil du marché financier publié sur le site du CMF",
     ),
+    "etats_financiers_cmf_remplace": (
+        "cmf-efr",
+        "États financiers (version remplacée)",
+        "états financiers de l'exercice {ex}, première version publiée au Bulletin officiel du Conseil du marché financier, remplacée ensuite par une seconde",
+    ),
     "etats_financiers_bourse": (
         "bvmt-ef",
         "États financiers individuels",
@@ -61,6 +66,16 @@ PRECISIONS = {
     ("BFPME", "2006", "etats_financiers_cmf"): (
         "Rapport en arabe (Bulletin officiel n° 2880 du 28 juin 2007) : lu sur la couche texte du PDF, "
         "page 10 relue sur l'image."
+    ),
+    ("BFPME", "2021", "etats_financiers_cmf"): (
+        "Le fichier est le Bulletin officiel complet du 5 septembre 2023 (296 pages) ; les états financiers de la BFPME "
+        "arrêtés au 31 décembre 2021 occupent les pages 263 à 296, le rapport général des commissaires aux comptes les "
+        "pages 283 à 292 (signé le 21 août 2023)."
+    ),
+    ("BTS", "2013", "etats_financiers_cmf_remplace"): (
+        "Le fichier est le Bulletin officiel complet n° 4681 du 8 septembre 2014 (106 pages) ; le rapport général des "
+        "commissaires aux comptes, daté du 26 août 2014, occupe les pages 48 à 50 (la sixième réserve, page 49). Les états ont été arrêtés de nouveau le "
+        "6 octobre 2014 et un rapport du 7 octobre 2014 remplace celui-ci (fichier cmf-ef-bts-2013)."
     ),
     ("BTS", "2016", "rapport_annuel"): (
         "La couche texte de ce PDF confond certains chiffres (« 1016 » pour 2016, « 18 435 » pour 28 435) : "
@@ -124,7 +139,9 @@ CITE_POUR = {
 def _cite_pour(cac: str, nature: str, sigle: str) -> str:
     if cac.startswith("oui") and nature == "etats_financiers" and sigle == "CPSCL":
         return "opinion du réviseur des comptes (extrait du rapport général, page 2)"
-    for debut, texte in CITE_POUR.items():
+    for debut, texte in sorted(
+        CITE_POUR.items(), key=lambda x: -len(x[0])
+    ):  # « non lu » avant « non »
         if cac.startswith(debut):
             return texte
     return "existence du document"
@@ -157,9 +174,11 @@ def notices(lignes: list[dict[str, str]], existants: set[str]) -> list[dict]:
             "issued": {"date-parts": [[int(ex)]]},
             "accessed": {"date-parts": [[annee, mois, jour]]},
             "title-short": f"{sigle}, {genre.lower()} {ex}",
-            "URL": origine if nature == "etats_financiers_cmf" else capture or origine,
+            "URL": origine
+            if nature.startswith("etats_financiers_cmf")
+            else capture or origine,
         }
-        if nature == "etats_financiers_cmf":
+        if nature.startswith("etats_financiers_cmf"):
             notice["archive"] = "Conseil du marché financier"
             notice["archive_location"] = origine
         elif capture:

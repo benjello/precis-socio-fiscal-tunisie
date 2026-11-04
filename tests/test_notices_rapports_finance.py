@@ -31,6 +31,7 @@ class NoticesTest(unittest.TestCase):
             ligne("BTS", "2021", "etats_financiers", "non"),
             ligne("BFPME", "2018", "etats_financiers_bourse"),
             ligne("CPSCL", "2015", "rapport_activite", "non lu"),
+            ligne("BTS", "2013", "etats_financiers_cmf_remplace"),
         ]
         cles = [x["id"] for x in n.notices(lignes, set())]
         self.assertEqual(
@@ -40,6 +41,7 @@ class NoticesTest(unittest.TestCase):
                 "es-bts-2021",
                 "bvmt-ef-bfpme-2018-individuel",
                 "ra-cpscl-2015",
+                "cmf-efr-bts-2013",
             ],
         )
 
@@ -54,6 +56,13 @@ class NoticesTest(unittest.TestCase):
         self.assertIn("réviseur", cpscl["note"])
         self.assertIn("opinion des commissaires aux comptes", bts["note"])
         self.assertNotIn("réviseur", bts["note"])
+
+    def test_document_non_lu_n_est_pas_un_document_sans_rapport(self):
+        notice = n.notices(
+            [ligne("CPSCL", "2016", "rapport_activite", "non lu")], set()
+        )[0]
+        self.assertIn("non lu", notice["note"])
+        self.assertNotIn("n'y figure pas", notice["note"])
 
     def test_capture_de_l_archive(self):
         x = ligne("BTS", "2012", "etats_financiers")
