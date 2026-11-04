@@ -246,6 +246,20 @@ def _meta(series_id: str) -> dict:
     return meta(series_id)
 
 
+def notices_source(*series_ids: str) -> list[str]:
+    """Les notices de la ligne « Source », dédoublonnées, dans l'ordre des séries.
+
+    Une clé de citation donne `@clé` ; une série qui déclare une `source_ligne` (ou
+    `source_ligne_<langue>`) donne ce texte, qui compte pour une seule notice.
+    """
+    keys = []
+    for sid in series_ids:
+        m = _meta(sid)
+        ligne = m.get(f"source_ligne_{lang()}") or m.get("source_ligne")
+        keys += [ligne] if ligne else [f"@{k}" for k in m.get("sources", [])]
+    return list(dict.fromkeys(keys))
+
+
 def source_line(*series_ids: str, nominal: bool = True) -> str:
     """Ligne « Source » d'une figure, assemblée depuis la provenance des séries.
 
@@ -257,16 +271,14 @@ def source_line(*series_ids: str, nominal: bool = True) -> str:
     tient alors lieu de ses clés dans cette seule ligne. L'onglet « Sources » et l'en-tête
     du figdata gardent la liste entière de `sources` : aucune référence n'est perdue.
     """
-    keys, bases, units = [], set(), set()
+    bases, units = set(), set()
     for sid in series_ids:
         m = _meta(sid)
-        ligne = m.get(f"source_ligne_{lang()}") or m.get("source_ligne")
-        keys += [ligne] if ligne else [f"@{k}" for k in m.get("sources", [])]
         if m.get("base_pib"):
             bases.add(str(m["base_pib"]))
         if m.get("unite"):
             units.add(str(m["unite"]).lower())
-    parts = [f"{t('source')} : " + ", ".join(dict.fromkeys(keys))]
+    parts = [f"{t('source')} : " + ", ".join(notices_source(*series_ids))]
     if bases:
         parts.append(f"{t('pib_base')} " + "/".join(sorted(bases)))
     # mention « prix courants » seulement pour les séries monétaires (pas les effectifs)
@@ -275,6 +287,41 @@ def source_line(*series_ids: str, nominal: bool = True) -> str:
     if monetaire and nominal:
         parts.append(t("nominal"))
     return " — ".join(parts)
+
+
+# Au-delà de ce nombre de notices, la ligne « Source » est repliée : jusqu'à cinq notices
+# elle reste visible, à partir de six elle est repliée (seuil fixé par le propriétaire le
+# 4 novembre 2026, pour que le texte ne devienne pas un pavé sous le graphique).
+SEUIL_REPLI_SOURCES = 5
+
+
+def titre_sources_repliees(n: int) -> str:
+    """Résumé visible d'une ligne « Source » repliée, dans la langue du livre."""
+    if lang() == "ar":
+        # Compté : pluriel de 3 à 10, singulier accusatif au-delà.
+        return f"المصادر ({n} {'مراجع' if n <= 10 else 'مرجعا'})"
+    return f"Sources ({n} notices)"
+
+
+def bloc_source(*series_ids: str, nominal: bool = True,
+                seuil: int = SEUIL_REPLI_SOURCES) -> str:
+    """Bloc Markdown de la ligne « Source » sous une figure.
+
+    Jusqu'à `seuil` notices, la ligne est visible, dans un bloc `.figure-source`. Au-delà
+    — états financiers de plusieurs exercices, lois de finances successives —, elle est
+    repliée sous un résumé « Sources (12 notices) » : le bloc porte aussi
+    `.chronologie-repliable`, la convention du précis (`precis/legendes.html` le place
+    dans un `<details>` ; sans script et en PDF, il reste visible). Le texte complet est
+    dans la page dans les deux cas ; le lien de téléchargement des données est ailleurs
+    (onglet « Données ») et ne se replie pas.
+    """
+    ligne = source_line(*series_ids, nominal=nominal)
+    n = len(notices_source(*series_ids))
+    if n <= seuil:
+        return f"::: {{.figure-source}}\n{ligne}\n:::"
+    titre = titre_sources_repliees(n).replace('"', "&quot;")
+    return (f'::: {{.figure-source .chronologie-repliable titre="{titre}"}}\n'
+            f"{ligne}\n:::")
 
 
 def date_deja_inscrite(ancien_texte: str | None, entete_sans_date: list[str],
@@ -1028,8 +1075,9 @@ def figure_tabs(fig, df: pd.DataFrame, *series_ids: str, slug: str,
 
     À appeler dans un chunk Quarto `#| output: asis`, **étiqueté** `#| label: fig-…`,
     dont c'est la dernière instruction. Produit :
-      - onglet « Graphique » : l'image, la ligne « Source » courte, et — si fournie —
-        une **note de lecture** ;
+      - onglet « Graphique » : l'image, la ligne « Source » courte (repliée au-delà de
+        `SEUIL_REPLI_SOURCES` notices, voir `bloc_source`), et — si fournie — une
+        **note de lecture** ;
       - onglet « Données » : table **itables** scrollable + export CSV/Excel
         + téléchargement du **figdata sourcé** ;
       - onglet « Sources » : provenance détaillée (citation, **lien web** vers la
@@ -1078,7 +1126,7 @@ def figure_tabs(fig, df: pd.DataFrame, *series_ids: str, slug: str,
         scrollCollapse=True, paging=False, classes="display compact nowrap",
         connected=True)  # charge DataTables depuis le CDN (figure autoportante)
 
-    src = source_line(*series_ids, nominal=nominal)
+    src = bloc_source(*series_ids, nominal=nominal)
     dl = download_button(str(csv_path))
     details = source_details(*series_ids)
     lecture = ""
@@ -1099,9 +1147,7 @@ def figure_tabs(fig, df: pd.DataFrame, *series_ids: str, slug: str,
 
 {image}
 
-::: {{.figure-source}}
 {src}
-:::
 {lecture}
 ## {t('tab_data')}
 
