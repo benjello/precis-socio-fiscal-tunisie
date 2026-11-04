@@ -89,3 +89,23 @@ Sources du précis consultées : `precis/fr/entreprises_publiques/figdata/*.csv`
 - TODO : STEG, investissement 2015 : 541 (texte p. 33) contre 418 (somme de la figure 2.5) ; le texte écrit aussi « 92 percent decrease » pour 871 → 541.
 - TODO : transferts du budget du ministère (STEG 914,6, SONEDE 180,7, ONAS 58,0, SNCFT 104,56 en 2017) contre les subventions d'exploitation et d'investissement du rapport : rapprocher les définitions dans les états financiers de chaque entreprise avant d'écrire qu'une série contredit l'autre.
 - TODO : stock de prêts rétrocédés et de prêts du Trésor fin 2016 : non trouvé dans `listes/` ni `figdata/` ; le précis n'a que l'encours garanti et les flux de l'année (`fig_ep_flux.csv` : prêts du Trésor rétrocédés 567,5 MD en 2017, échantillon de 33 entreprises). Rien d'autre cherché ; à chercher dans le rapport du ministère sur les transferts et les garanties (`minfin-transferts-2020`) avant de rapprocher les 14 %.
+
+## SONEDE, tableau 1.4 : « ¹⁵7208 » (vérification du 4 novembre 2026)
+
+Le « 15 » est le renvoi de bas de page 15 (« montants non disponibles pour 2009, 2010 et 2012 »), collé au montant 7 208 (M TND, cumul 2009-2017, rang 5, 9 % des produits). Le montant est incompatible avec le rang : la SNCFT, rang 4, est à 374.
+
+Contrôle dans les rapports annuels de la SONEDE (aucune ligne « subvention d'exploitation » ; seule la ligne « autres produits d'exploitation » les contient) :
+
+| Exercice | Autres produits d'exploitation (M TND) | Source |
+|---|---:|---|
+| 2011 | 29,6, dont 17,2 de quote-part des subventions d'investissement | rapport annuel 2011, p. 40 et p. 35 |
+| 2015 | 105,8, dont une subvention de l'État de 53 pour régler les dettes envers la CNRPS | rapport annuel 2015, p. 38 (imprimé 37) et p. 33 |
+| 2016 | 43,0 | rapport d'activité 2016, p. 42 (imprimé 41) ; p. 36 : la baisse des produits tient à la subvention de 2015 |
+
+- Plafond : 29,6 + 105,8 + 43,0 = 178,4. 7 208 et 720,8 sont exclus.
+- 157 208 est exclu comme montant ; 157,2 resterait sous le plafond mais supposerait que presque tous les « autres produits » soient des subventions d'exploitation.
+- 72,08 est compatible avec le seul montant sourcé (53 en 2015) et avec une plage de 65 à 108, sans être démontrable.
+- Le rapport 2015 est incohérent en interne (total des produits 433,3 au tableau, 414,7 p. 35).
+- Sourcé : 53 M en 2015, p. 33 du rapport 2015, confirmé p. 36 du rapport 2016.
+
+TODO : valeur de la Banque mondiale non citable ; à lire dans le rapport des commissaires aux comptes de la SONEDE (absent du corpus).
