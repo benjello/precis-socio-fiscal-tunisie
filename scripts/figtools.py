@@ -289,10 +289,10 @@ def source_line(*series_ids: str, nominal: bool = True) -> str:
     return " — ".join(parts)
 
 
-# Au-delà de ce nombre de notices, la ligne « Source » est repliée. Quatre clés de
-# citation tiennent sur une ligne de page ; à cinq, le texte passe à la ligne et devient
-# un pavé sous le graphique.
-SEUIL_REPLI_SOURCES = 4
+# Au-delà de ce nombre de notices, la ligne « Source » est repliée : jusqu'à cinq notices
+# elle reste visible, à partir de six elle est repliée (seuil fixé par le propriétaire le
+# 4 novembre 2026, pour que le texte ne devienne pas un pavé sous le graphique).
+SEUIL_REPLI_SOURCES = 5
 
 
 def titre_sources_repliees(n: int) -> str:

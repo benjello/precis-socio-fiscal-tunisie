@@ -344,13 +344,18 @@ class BlocSourceTest(unittest.TestCase):
             figtools._DECLAREES.pop(sid, None)
 
     def test_seuil(self):
-        self.assertEqual(figtools.SEUIL_REPLI_SOURCES, 4)
+        self.assertEqual(figtools.SEUIL_REPLI_SOURCES, 5)
 
     def test_sous_le_seuil_la_ligne_reste_visible(self):
-        figtools.register_provenance("serie-courte", sources=["a", "b", "c", "d"], unite="nombre")
+        figtools.register_provenance("serie-courte", sources=["a", "b", "c", "d", "e"], unite="nombre")
         bloc = figtools.bloc_source("serie-courte")
-        self.assertEqual(bloc, "::: {.figure-source}\nSource : @a, @b, @c, @d\n:::")
+        self.assertEqual(bloc, "::: {.figure-source}\nSource : @a, @b, @c, @d, @e\n:::")
         self.assertNotIn("chronologie-repliable", bloc)
+
+    def test_six_notices_sont_repliees(self):
+        figtools.register_provenance("serie-six", sources=["a", "b", "c", "d", "e", "f"], unite="nombre")
+        bloc = figtools.bloc_source("serie-six")
+        self.assertIn('titre="Sources (6 notices)"', bloc)
 
     def test_au_dela_du_seuil_la_ligne_est_repliee(self):
         cles = [f"ef-{annee}" for annee in range(2010, 2022)]
