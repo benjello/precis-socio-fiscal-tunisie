@@ -153,7 +153,7 @@ ONAS,2009-2017,subventions_exploitation_cumul,740,M TND,1.4,18,12,rang 3 ; verse
 ONAS,2009-2017,subventions_exploitation_part_produits,40,%,1.4,18,12,rang 3
 SNCFT,2009-2017,subventions_exploitation_cumul,374,M TND,1.4,18,12,rang 4 ; versement : « Annually »
 SNCFT,2009-2017,subventions_exploitation_part_produits,35,%,1.4,18,12,rang 4
-SONEDE,2009-2017,subventions_exploitation_cumul,7208,M TND,1.4,18,12,"rang 5 ; versement : « 2011, 2015 » ; renvoi 15 : montants non disponibles pour 2009, 2010 et 2012 ; valeur lue à l'image « 157208 » : renvoi 15 collé à 7208 ; valeur incohérente avec le rang et avec le texte, voir note de recoupements (TODO)"
+SONEDE,2009-2017,subventions_exploitation_cumul,,M TND,1.4,18,12,"rang 5 ; versement : « 2011, 2015 » ; renvoi 15 : montants non disponibles pour 2009, 2010 et 2012 ; valeur non retenue : l'image porte « 157208 », renvoi 15 collé au nombre, soit 7 208 ou 208 ; ni l'une ni l'autre ne cadre sans équivoque avec le rang et avec le texte, voir note de recoupements (TODO)"
 SONEDE,2009-2017,subventions_exploitation_part_produits,9,%,1.4,18,12,rang 5
 OACA,2009-2015,rapport_effectifs,1.01,rapport (x),1.5,19,13,2015/2009 selon la note ; le fret est imprimé « X1.08 »
 OACA,2009-2015,rapport_charges_exploitation,1.64,rapport (x),1.5,19,13,2015/2009 selon la note ; le fret est imprimé « X1.08 »
