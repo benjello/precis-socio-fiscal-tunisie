@@ -87,6 +87,8 @@ La source est le rapport sur les entreprises publiques que le ministère des Fin
 :::::
 
 
+<!-- TODO (documentaliste) : CPG, rapports annuels et opinion des commissaires aux comptes : aucune sous-section, faute de rapport des commissaires. La compagnie met en ligne sur son site huit rapports annuels en anglais, de 2008 à 2015 (notices ra-cpg-2008 à ra-cpg-2015 ; le rapport de 2011 est une version arabe et anglaise), sans états financiers ni rapport des commissaires aux comptes : la page du conseil d'administration nomme les commissaires, rien d'autre. Rien de 2016 à 2025. Le Registre national des entreprises ne porte aucun état financier de la CPG, et ni le Conseil du marché financier ni la Bourse de Tunis n'ont de page de la compagnie. Lacune consignée dans listes/inventaire-rapports-industrie.csv (rapport_cac = non). -->
+
 ## Le Groupe chimique tunisien {#sec-ep-ge-gct}
 
 La part de l'État dans les bénéfices des entreprises publiques et leurs versements au budget sont exposés au chapitre « Les dividendes et les versements au budget » (@sec-ep-dividendes-part, @sec-ep-versements).
@@ -173,6 +175,8 @@ La source est le rapport sur les entreprises publiques que le ministère des Fin
 
 :::::
 
+
+<!-- TODO (documentaliste) : GCT, rapports annuels et opinion des commissaires aux comptes : aucune sous-section, faute de rapport des commissaires. Le groupe met en ligne sur son site trois rapports annuels en anglais, 2012, 2013 et 2014, en deux ou trois fichiers chacun (notices ra-gct-2012-1 à ra-gct-2014-2), sans états financiers ni rapport des commissaires aux comptes : ils disent seulement que les chiffres viennent d'états financiers certifiés et que deux commissaires contrôlent la société. Rien de 2015 à 2025 ; le Registre n'indique aucun état financier déposé ; le Conseil du marché financier ne porte que les états des fonds d'essaimage du groupe (autres entités). Lacune consignée dans listes/inventaire-rapports-industrie.csv (rapport_cac = non). -->
 
 ## El Fouladh {#sec-ep-ge-fouladh}
 
@@ -281,6 +285,65 @@ ge.tableau_fiche_detail("el_fouladh", ("LF2024", "LF2025"),
 La source est le rapport sur les entreprises publiques que le ministère des Finances joint au projet de loi de finances : la fiche de l'entreprise, exercices 2018 à 2023, en trois éditions. La même source donne aussi les transferts du budget, des éditions LF 2021 à LF 2023, et les dettes et créances de la société envers l'État de fin 2023, de l'édition LF 2025 ; l'édition LF 2024 dit l'exercice 2022 « prévu ». Le dernier exercice de chaque édition y est le plus souvent provisoire, estimé ou probable, et l'édition suivante le révise souvent. Les textes de création, de statut, de dotation et de garantie viennent du *Journal officiel*. Ce que l'État paie à la place de l'entreprise au titre de sa dette garantie vient d'une autre source, les rapports de la Cour des comptes sur la clôture du budget, cités à part.
 
 :::::
+
+
+### Les rapports annuels en ligne {#sec-ep-ge-fouladh-rapports}
+
+**Le Conseil du marché financier met en ligne les états financiers d'El Fouladh de 2013 à 2018 et de 2020 à 2024, avec le rapport général des commissaires aux comptes, et six rapports annuels ; le Registre national des entreprises n'en porte aucun état financier (@sec-ep-registre).** La société a plus de cent actionnaires et, à ce titre, fait appel public à l'épargne ; les commissaires lui rappellent en 2013 et en 2014 les obligations d'information qui en découlent [@es-fouladh-2013, p. 25 ; @es-fouladh-2014, p. 29].
+
+- **États financiers avec le rapport des commissaires aux comptes, en arabe : 2013 à 2018 et 2020 à 2024**, sur le site du Conseil du marché financier ; la page de la société à la Bourse de Tunis (« hors cote ») en porte une partie, 2017, 2018 et 2020 à 2023 [@es-fouladh-2013 ; @es-fouladh-2014 ; @es-fouladh-2015 ; @es-fouladh-2016 ; @es-fouladh-2017 ; @es-fouladh-2018 ; @es-fouladh-2020 ; @es-fouladh-2021 ; @es-fouladh-2022 ; @es-fouladh-2023 ; @es-fouladh-2024]. Aucun état financier de 2019, ni d'avant 2013, n'est en ligne.
+- **Rapports annuels, c'est-à-dire le rapport du conseil d'administration : 2016, 2017, 2018, 2021, 2022 et 2024**, sur le même site [@ra-fouladh-2016 ; @ra-fouladh-2017 ; @ra-fouladh-2018 ; @ra-fouladh-2021 ; @ra-fouladh-2022 ; @ra-fouladh-2024]. Il n'y en a pas pour 2013 à 2015, 2019, 2020 ni 2023, et aucun ne contient le rapport des commissaires aux comptes.
+- **Les rapports des commissaires paraissent tard** : le rapport général de l'exercice 2013 est daté du 30 août 2014, celui de 2014 du 24 juillet 2015, celui de 2015 du 10 novembre 2016, celui de 2017 du 21 novembre 2018, celui de 2018 du 29 juin 2020 et celui de 2024 du 10 mars 2026 [@es-fouladh-2013, p. 25 ; @es-fouladh-2014, p. 29 ; @es-fouladh-2015, p. 29 ; @es-fouladh-2017, p. 28 ; @es-fouladh-2018, p. 25 ; @es-fouladh-2024, p. 31].
+
+### L'opinion des commissaires aux comptes {#sec-ep-ge-fouladh-cac}
+
+**Les commissaires aux comptes d'El Fouladh émettent une opinion avec réserves sur dix des onze exercices lus, de 2013 à 2018 et de 2020 à 2023, avec de six à neuf réserves par exercice ; seul l'exercice 2024 est sans réserve.** Les réserves sont presque toujours les mêmes d'un exercice à l'autre : la continuité d'exploitation, des soldes de clients, de fournisseurs, de personnel et de banques que la société ne justifie pas, et, sauf en 2021 et en 2022, l'absence de rapprochement entre l'inventaire physique et la comptabilité des immobilisations [@es-fouladh-2013, p. 24-25 ; @es-fouladh-2014, p. 27-29 ; @es-fouladh-2015, p. 27-28 ; @es-fouladh-2016, p. 27-28 ; @es-fouladh-2017, p. 28-31 ; @es-fouladh-2018, p. 26-30 ; @es-fouladh-2020, p. 25-27 ; @es-fouladh-2021, p. 24-25 ; @es-fouladh-2022, p. 29-32 ; @es-fouladh-2023, p. 28-31 ; @es-fouladh-2024, p. 28].
+
+- **2013 à 2016 : sept réserves chaque année, huit en 2016.** Les commissaires mettent en doute la continuité d'exploitation : la perte est de 12,6 MD en 2013, de 23,68 MD en 2014, de 31,54 MD en 2015 et de 31,100 MD en 2016 ; les fonds propres sont négatifs de 88,5 MD en 2013, de 143,67 MD en 2015 et de 174,775 MD en 2016 ; les arriérés envers la CNSS sont de 17,6 MD en 2013, de 26,2 MD en 2014 (plus 5 MD de pénalités), de 26,8 MD en 2015 (plus 8,4 MD) et de 33 MD en 2016 (plus 12,8 MD) [@es-fouladh-2013, p. 24 ; @es-fouladh-2014, p. 27-28 ; @es-fouladh-2015, p. 27 ; @es-fouladh-2016, p. 27]. Les immobilisations corporelles ne sont pas validées par un inventaire physique : 32,9 MD nets en 2013, 29,4 MD en 2014, 27,96 MD en 2015 et 24,207 MD en 2016 [@es-fouladh-2013, p. 24 ; @es-fouladh-2014, p. 28 ; @es-fouladh-2015, p. 27 ; @es-fouladh-2016, p. 27]. Quatre autres réserves portent chaque année sur les stocks hors inventaire (de 1,13 à 5,3 MD bruts), les prêts et avances au personnel, les comptes débiteurs des fournisseurs et les rapprochements bancaires, et une dernière sur des passifs courants non justifiés (de 0,5 à 0,6 MD) ; en 2016 s'ajoute une réserve sur le compte clients, de 50,236 MD bruts dont 16,153 MD de provision [@es-fouladh-2013, p. 24-25 ; @es-fouladh-2014, p. 28-29 ; @es-fouladh-2015, p. 27-28 ; @es-fouladh-2016, p. 27-28].
+- **2017 et 2018 : six puis sept réserves.** La perte est de 28,218 MD en 2017 et de 33,071 MD en 2018, et les fonds propres de −202,713 MD puis de −235,211 MD ; en 2017, les dettes financières et les concours bancaires sont de 195 MD, les arriérés envers la CNSS de 40 MD (plus 16,9 MD de pénalités) et la dette envers la STEG de 62 MD ; en 2018 l'endettement est de 477 MD [@es-fouladh-2017, p. 28 ; @es-fouladh-2018, p. 26]. En 2017 la société n'a toujours pas d'inventaire physique de ses immobilisations (21,054 MD nets) ; en 2018, les travaux d'un cabinet spécialisé en sont à la deuxième phase, l'inventaire, et le rapprochement avec la comptabilité n'est pas rendu (17,438 MD nets) [@es-fouladh-2017, p. 29 ; @es-fouladh-2018, p. 26]. Le compte clients (50,913 MD bruts en 2017, 69,248 MD en 2018) s'écarte de l'application commerciale, de 11,29 MD nets en 2018 [@es-fouladh-2017, p. 29-30 ; @es-fouladh-2018, p. 27]. Le rapport de 2018, daté du 29 juin 2020, relève que les ventes de mars et d'avril 2020 baissent de 49,2 % et de 65,7 % sur un an, ce qu'il attribue à la pandémie [@es-fouladh-2018, p. 25-26].
+- **2019 : pas de rapport.** Ni le Conseil du marché financier ni la Bourse de Tunis ne portent l'exercice 2019.
+- **2020 à 2023 : huit, sept, sept puis neuf réserves.** La perte est de 44,804 MD en 2020, de 25,889 MD en 2021, de 6,609 MD en 2022 après ajustements comptables et de 42,824 MD en 2023 ; les fonds propres sont de −307,130 MD, −333,019 MD, −339,628 MD puis −382,5 MD ; les arriérés envers la CNSS sont de 51,2 MD en 2020 (plus 35,3 MD de pénalités), de 51,6 MD en 2021 (plus 55,2 MD) et de 53 MD en 2022 (plus 65 MD), et la dette envers la STEG de 98,3 MD, de 121 MD puis de 125 MD [@es-fouladh-2020, p. 25 ; @es-fouladh-2021, p. 23-24 ; @es-fouladh-2022, p. 29-30 ; @es-fouladh-2023, p. 3 et 28]. En 2023, les pertes cumulées de 448,312 MD dépassent huit fois le capital de 53,340 MD, et les commissaires écrivent que les états financiers pourraient être entièrement différents si la continuité d'exploitation n'était pas retenue [@es-fouladh-2023, p. 28]. La réserve sur les immobilisations (15,350 MD nets en 2020) disparaît en 2021 et en 2022, où l'inventaire est achevé jusqu'à fin 2014, avec un effet de 0,093 MD sur les fonds propres en 2021 et de 0,930 MD en 2022 ; elle revient en 2023 : le rapport final du rapprochement avec la comptabilité au 31 décembre 2023 n'est pas remis et le conseil n'a pas approuvé la note d'ajustements [@es-fouladh-2020, p. 25-26 ; @es-fouladh-2021, p. 26 ; @es-fouladh-2022, p. 32 ; @es-fouladh-2023, p. 28]. Chaque année, le compte clients s'écarte de l'application commerciale (2,059 MD en 2020, 2,227 MD en 2021, 1,235 MD en 2022), sans grand livre auxiliaire ni balance âgée, et de 2021 à 2023 le solde de la STEG n'est pas confirmé ; les comptes fournisseurs atteignent 150,754 MD en 2020, 172,445 MD en 2021, 167,365 MD en 2022 et 183,118 MD en 2023 [@es-fouladh-2020, p. 26-27 ; @es-fouladh-2021, p. 24-25 ; @es-fouladh-2022, p. 30-32 ; @es-fouladh-2023, p. 31]. En 2023, deux réserves s'ajoutent : les procédures d'inventaire des stocks ne garantissent ni l'exhaustivité ni l'exactitude des quantités, et la société n'inscrit en 2023 aucune dotation pour les indemnités de départ à la retraite ni aucune provision pour le démantèlement du haut fourneau [@es-fouladh-2023, p. 28-29 et 31]. Les observations signalent aussi un détournement de 80 873 DT d'encaissements en espèces entre le 1^er^ janvier 2019 et le 27 avril 2022, objet d'une plainte, et, dans le rapport de 2022, 962 kg de cuivre manquants dans le stock de la coulée continue (environ 25 000 DT) et un vol de câbles électriques en 2024 [@es-fouladh-2021, p. 26 ; @es-fouladh-2022, p. 33].
+- **2024 : sans réserve.** Les états financiers font ressortir une perte de 69,215 MD après ajustements comptables, un total de bilan de 240,737 MD et une trésorerie nette négative de 21,498 MD. Le rapport est signé le 10 mars 2026 ; une observation après l'opinion note que le cabinet externe chargé d'apurer les anciens comptes a terminé sa mission : 0,27 MD de soldes de rapprochement bancaire passent en compte d'attente, 7,3 MD de soldes de fournisseurs et de débiteurs divers en attente de régularisation sont provisionnés à hauteur de 6,6 MD, et 1,4 MD de comptes clients créditeurs anciens ne sont pas apurés. L'assemblée générale extraordinaire du 30 juin 2025 a décidé de poursuivre l'activité malgré les pertes, au vu du programme de restructuration présenté à la présidence du gouvernement [@es-fouladh-2024, p. 28-29 et 31].
+
+```{python}
+#| label: fig-ep-fouladh-cac
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import cotees as ct
+ct.figure_cac(
+    "FOULADH", "el-fouladh",
+    caption=("Les réserves des commissaires aux comptes sur les comptes d'El Fouladh, par thème et par exercice, et leur "
+             "nombre, d'après les états financiers publiés par le Conseil du marché financier, 2013 à 2024. Source : "
+             "[@es-fouladh-2013 ; @es-fouladh-2014 ; @es-fouladh-2015 ; @es-fouladh-2016 ; @es-fouladh-2017 ; "
+             "@es-fouladh-2018 ; @es-fouladh-2020 ; @es-fouladh-2021 ; @es-fouladh-2022 ; @es-fouladh-2023 ; "
+             "@es-fouladh-2024]"),
+    note_lecture=(
+        "En haut, une case par thème de réserve et par exercice ; gris : exercice sans rapport lu (2012, avant le premier "
+        "état en ligne, et 2019). En bas, le nombre de motifs de réserve ; 2024 n'en a aucun. Il n'y a pas de courbe des "
+        "délais de publication : la société n'a pas de page d'états financiers datée à la Bourse de Tunis. Les paragraphes "
+        "d'observation ne sont pas des réserves : ils ne sont pas comptés ici. Les thèmes sans case sont ceux des autres "
+        "groupes."))
+```
+
+::: {.chronologie-repliable titre="L'opinion des commissaires aux comptes sur les comptes d'El Fouladh, exercice par exercice, 2013-2024"}
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import cotees as ct
+ct.tableau_opinions(
+    "FOULADH",
+    caption=("L'opinion des commissaires aux comptes sur les comptes d'El Fouladh, d'après le rapport général joint aux "
+             "états financiers du Conseil du marché financier (2013 à 2018 et 2020 à 2024). Chaque motif résume le "
+             "rapport, avec la page "),
+    tbl_id="tbl-ep-fouladh-cac")
+```
+
+:::
+
+<!-- TODO (documentaliste) : El Fouladh, opinion des commissaires aux comptes : (a) rapports généraux en arabe ; pages citées = pages du PDF, non les pages imprimées (décalage de un en 2022) ; 2013, 2014, 2020, 2022, 2023 et 2024 lus sur la couche texte et sur l'image ; 2015, 2016, 2017, 2018 et 2021 (numérisations ou polices non décodables) lus sur l'image, chaque nombre relu une seconde fois sur un rendu agrandi ; une reconnaissance optique (tesseract, sans arabe) a retrouvé une partie des nombres, sans valeur de preuve. (b) Écart noté après fouille : le rapport de 2014 imprime « 13,112 » MD pour les fonds propres négatifs ; c'est 112,13 MD (143,67 MD de 2015 moins la perte de 31,54 MD) : le chiffre n'est pas cité. (c) Fonds propres fin 2023 : −382,5 MD aux états financiers (total avant affectation −382 451 909 DT) contre −395,8 MD, chiffre probable, dans l'édition LF 2025 du rapport du ministère des Finances citée plus haut ; les autres exercices concordent (2018 : −235,2 ; 2020 : −307,1 ; 2021 : −333,0 ; 2022 : −339,6) ; l'écart de 13,3 MD de 2023 reste inexpliqué. Endettement fin 2020 : 520,142 MD dans le rapport des commissaires contre 524 MD dans l'édition LF 2022 : définition à vérifier. (d) Perte de 2022 : 4,83 MD avant et 6,61 MD après ajustements comptables (1,78 MD d'effet) [@es-fouladh-2023, p. 4], le rapport de 2022 cite le second chiffre. (e) 2021 : le rapport écrit que les soldes débiteurs de fournisseurs (11,988 MD) sont ceux du « 31 décembre 2020 » : probable coquille, non reprise dans le texte. (f) Les motifs ne comptent que les réserves du paragraphe « Fondement de l'opinion avec réserves » ; les observations après l'opinion (stocks hors inventaire de 2017 à 2022, indemnités de départ à la retraite, détournements) sont dans le texte. (g) Exercices sans rapport : 2019 (ni le CMF ni la Bourse), avant 2013 ; le Registre national des entreprises (contenu payant, non consulté) ne porte aucun état financier de la société. (h) Les commissaires ne sont pas nommés (deux cabinets, changement de collège avant 2024). -->
 
 
 ## Les Ciments de Bizerte {#sec-ep-ge-cimbiz}
@@ -520,6 +583,8 @@ La source est le rapport sur les entreprises publiques que le ministère des Fin
 :::::
 
 
+<!-- TODO (documentaliste) : Ciments d'Oum El Kélil, rapports annuels et opinion des commissaires aux comptes : aucun document en ligne, donc aucune sous-section. Le site de la société (ciok.com.tn) ne répondait pas le 4 novembre 2026 ; les captures de l'Internet Archive montrent des appels d'offres, des formulaires et la rubrique d'accès à l'information, sans rapport annuel ni état financier ; le Conseil du marché financier ne porte que le fonds d'essaimage « Les Ciments d'Oum El Kélil » (autre entité) ; la Bourse de Tunis n'a pas de page de la société ; le Registre n'a pas retrouvé la société sous son nom. Lacune consignée dans listes/inventaire-rapports-industrie.csv (nature = aucun). -->
+
 ## La SNCPA {#sec-ep-ge-sncpa}
 
 Les dettes et les créances croisées de l'ensemble des entreprises avec l'État sont exposées à la @sec-ep-croisees ; les paiements de dette garantie que la Cour des comptes relève, entreprise par entreprise, au @tbl-ep-cdc-garantie.
@@ -631,6 +696,8 @@ La source est le rapport sur les entreprises publiques que le ministère des Fin
 
 :::::
 
+
+<!-- TODO (documentaliste) : SNCPA, rapports annuels et opinion des commissaires aux comptes : aucun document en ligne, donc aucune sous-section. Le site de la société (sncpa.com.tn) ne répondait pas le 4 novembre 2026 ; les captures de l'Internet Archive montrent des appels d'offres, des textes et les résultats de l'appel d'offres pour la nomination des commissaires aux comptes (exercices 2021 à 2024), sans rapport annuel ni état financier ; le Conseil du marché financier ne porte que le fonds d'essaimage de la société (autre entité). Le Registre national des entreprises indique deux états financiers déposés, pour 2023 et 2024 : contenu payant, non acheté, donc non lu. Lacune consignée dans listes/inventaire-rapports-industrie.csv (nature = aucun). -->
 
 ## L'Agence foncière industrielle {#sec-ep-ge-afi}
 
@@ -750,3 +817,4 @@ La source est le rapport sur les entreprises publiques que le ministère des Fin
 
 :::::
 
+<!-- TODO (documentaliste) : Agence foncière industrielle, rapports annuels et opinion des commissaires aux comptes : aucun document en ligne, donc aucune sous-section. Le site de l'agence (afi.nat.tn) a pour rubriques les zones industrielles, les cahiers des charges, le bilan social, les appels d'offres et l'accès à l'information, sans rapport annuel ni état financier ; l'ancien site (afi.com.tn) n'a que sa page d'accueil dans l'Internet Archive ; ni le Conseil du marché financier ni la Bourse de Tunis n'ont de page de l'agence ; le Registre ne porte aucun état financier. Lacune consignée dans listes/inventaire-rapports-industrie.csv (nature = aucun). -->
