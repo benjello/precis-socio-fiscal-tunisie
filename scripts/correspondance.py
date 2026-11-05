@@ -7,7 +7,7 @@ texte fondateur lorsqu'il est abrogé, et le chapitre où il se lit. Rien n'est 
 chapitres : les références de loi sont des citations de `references.json`, les chapitres sont
 des liens.
 
-CHOIX DE FORME (proposés à la relectrice, version par défaut) : une ligne par instrument (A1) ;
+CHOIX DE FORME (proposés en relecture, version par défaut) : une ligne par instrument (A1) ;
 classement par famille de droit (B1) ; fondateur et trois ou quatre principaux modificatifs (C2) ;
 statut du texte seulement quand le fondateur est abrogé (D2) ; catégorie juridique (E1) et texte
 d'application principal (E5) ; instruments déjà décrits dans les livres en ligne (F1).
@@ -105,7 +105,7 @@ def marquer(contenu: str, classe: str) -> str:
 
 
 def signaler(contenu: str, brut: str) -> str:
-    """Colore les cases où l'on attend le retour de la relectrice (voir ebauche-table.css)."""
+    """Colore les cases où l'on attend le retour de la relecture (voir ebauche-table.css)."""
     if not brut.strip():
         return marquer(contenu, "vide")
     if "*Proposition" in brut or "*À confirmer" in brut:
