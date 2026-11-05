@@ -28,7 +28,7 @@ ep.figure(
 - **Le plafond.** 3 000 MD de 2016 à 2018 ; 4 790 MD en 2019, après une loi de finances initiale à 4 500 MD ; 7 000 MD de 2020 à 2022 ; 8 000 MD de 2023 à 2025 ; 7 000 MD en 2026. Trois lois rectificatives relèvent le plafond en cours d'année : pour [2019](#r-ep-pl-2019-2), de 4 500 à 4 790 MD ; pour [2020](#r-ep-pl-2020-2), de 5 000 à 7 000 MD ; pour [2023](#r-ep-pl-2023-2), de 7 000 à 8 000 MD. La traduction française d'une édition du rapport imprime 7 500 MD pour 2020 [@minfin-transferts-2021, p. 5] ; ses éditions arabes impriment 7 000 MD, comme la loi [@minfin-transferts-2022, p. 8]. La série légale, de 1958 à 2026, est à la section suivante (@sec-ep-garanties-plafond-legal) ; de 1959 à 2015, le plafond passe de 12 MD à 3 000 MD, avec 4 000 MD en 2011 et en 2012.
 - **Les garanties accordées.** De 2,4 à 5,2 milliards de dinars par an de 2016 à 2023, soit de 1,8 % à 3,9 % du PIB (@tbl-ep-garanties).
 - **À quoi servent les garanties intérieures.** En 2023, sur 3 055,7 MD : 1 550,4 MD au titre de l'audit complet des banques publiques, 1 215,2 MD pour financer l'importation de produits de base — pétrole, gaz, céréales, engrais, sucre, café —, 141,0 MD de rééchelonnements, 124,0 MD d'autres opérations d'exploitation, 25,1 MD d'investissement [@minfin-dette-2025, p. 64]. Les importations de produits de base faisaient 188,2 MD en 2021 et 956,1 MD en 2022 (@tbl-ep-garanties-objet).
-- **Qui prête.** L'encours garanti dû à des prêteurs intérieurs passe de 2,0 milliards de dinars fin 2016 à 8,8 milliards fin 2023 ; l'encours extérieur, de 9,3 à 12,5 milliards (@fig-ep-encours).
+- **Qui prête.** L'encours garanti dû à des prêteurs intérieurs passe de 2,0 milliards de dinars fin 2016 à 8,8 milliards fin 2023 ; l'encours extérieur, de 9,3 à 12,5 milliards (@fig-ep-encours). Le détail prêt par prêt des emprunts garantis que le volume documente, avec le texte de ratification, le prêteur et le montant, est au @tbl-ep-emprunts-garantis.
 - **Deux parts du PIB.** Le rapport sur la dette publique imprime sa propre part : 13,5 % du PIB pour fin 2023, sur un PIB dont il ne dit pas la base (@tbl-ep-garanties-pib). Rapporté au PIB de l'INS en base 2015, le même encours fait 14,3 %. Les deux mesures coïncident de 2016 à 2020.
 
 ```{python}
@@ -106,6 +106,95 @@ ep.tableau_audit_banques(
 <!-- TODO (documentaliste) : article 36 de la loi n° 77-81 lu à l'image le 1er novembre 2026 ; loi n° 70-22 du 7 mai 1970 (création du fonds, art. 6 récrit par l'art. 36) et arrêté fixant les taux avant celui du 3 avril 1993 : non lus. Lire, dans le rapport sur les transferts et les garanties (édition LF 2020, p. 38), le passage qui renvoie à l'arrêté du 3 avril 1993 ; dépouiller les rapports sur la dette publique des éditions LF 2021 et LF 2024 (recoupement de l'encours) et leurs pages sur les prêts rétrocédés. -->
 
 ::::
+
+## Les emprunts garantis, prêt par prêt {#sec-ep-emprunts-garantis}
+
+Chaque garantie de l'État à un emprunt d'une entreprise ou d'un établissement public est ratifiée ou approuvée par un texte publié au *Journal officiel* : c'est ce qui distingue ces emprunts garantis des emprunts extérieurs non garantis, qui, eux, ne sont pas publiés au *Journal officiel* et n'entrent donc pas dans ce tableau. Le tableau ci-dessous réunit les emprunts garantis que le volume documente, chronologie par chronologie, d'une entreprise à l'autre : une ligne par emprunt, avec le texte de ratification, le prêteur, le montant et l'objet, autant que le texte les donne. Il n'est pas exhaustif — il ne recense que les emprunts déjà cités dans le volume — et chaque montant est celui qu'imprime le texte cité, sans conversion ni reconstitution.
+
+:::: {.chronologie-repliable titre="Emprunts des entreprises et établissements publics garantis par l'État et ratifiés au Journal officiel : entreprise, loi, prêteur, montant et objet, 1978-2026"}
+
+| Entreprise | Loi de ratification (JORT) | Prêteur / bailleur | Montant | Objet |
+|---|---|---|---|---|
+| Tunisair | Loi n° 94-48 du 9 mai 1994 [@loi94-48-tunisair] | Groupe de banques étrangères | 68 489 771 (sans unité monétaire au JO) | Crédit export |
+| Tunisair | Loi n° 94-49 du 9 mai 1994 [@loi94-49-tunisair] | Groupe de banques étrangères | 12 086 430 USD | Crédit financier |
+| Tunisair | Loi n° 94-106 du 14 octobre 1994 [@loi94-106-tunisair] | BNP, Crédit foncier de France, Export-Import Bank (USA) | 23 518 101 USD | Acquisition d'un Boeing 737-500 |
+| Tunisair | Loi n° 95-39 du 24 avril 1995 [@loi95-39-tunisair] | Groupe de banques étrangères | 6 555 000 USD (crédit financier) + 37 145 000 USD (crédit acheteur) | Acquisition d'un Airbus A320-200 |
+| Tunisair | Loi n° 95-107 du 25 décembre 1995 [@loi95-107-tunisair] | Société générale (New York), Export-Import Bank (USA) | 4 143 511 USD + 24 419 092 USD | Deux crédits |
+| Tunisair | Loi n° 2001-121 du 20 décembre 2001 [@loi2001-121-tunisair] | Groupe de banques étrangères | 37 410 714,20 USD au total | Acquisition d'un avion |
+| Tunisair | Loi n° 2002-88 du 29 octobre 2002 [@loi2002-88-tunisair] | Groupe de banques étrangères | 43 929 749 USD au total | Acquisition d'un avion |
+| Tunisair | Loi n° 2015-27 du 18 août 2015 [@loi2015-27-tunisair] | Groupe de banques étrangères | équiv. 97 866 420,65 USD | Acquisition d'un Airbus A330-200 |
+| Tunisair | Loi n° 2015-28 du 18 août 2015 [@loi2015-28-tunisair] | Groupe de banques étrangères | équiv. 46 709 170,07 USD | Acquisition d'un Airbus A320-214 |
+| Tunisair | Loi n° 2015-29 du 18 août 2015 [@loi2015-29-tunisair] | Groupe de banques étrangères | équiv. 97 700 534,08 USD | Acquisition d'un Airbus A330-200 |
+| OACA | Loi n° 2009-51 du 20 juillet 2009 [@loi2009-51-oaca] | Banco Santander | 11 744 329 EUR au plus | Couverture radar de l'espace aérien |
+| Office des ports (OMMP) | Loi n° 80-34 du 28 mai 1980 [@loi80-34-ommp] | Banque internationale pour la reconstruction et le développement (BIRD) |  | Troisième projet portuaire |
+| Office des ports (OMMP) | Loi n° 91-94 du 29 novembre 1991 [@loi91-94-ommp] | Kreditanstalt für Wiederaufbau (KfW) | 6 419 700 DEM | Achat d'un remorqueur |
+| Office des ports (OMMP) | Loi n° 98-83 du 2 novembre 1998 [@loi98-83-ommp] | BIRD | 78 200 000 FRF | Projet sectoriel des transports |
+| Office des ports (OMMP) | Décret-loi n° 2021-10 du 30 novembre 2021 [@dl2021-10-ommp] | Agence française de développement (AFD) | 41 000 000 EUR | Acquisition de six remorqueurs neufs |
+| Compagnie tunisienne de navigation (CTN) | Loi n° 96-72 du 29 juillet 1996 [@loi96-72-ctn] | Kreditanstalt für Wiederaufbau (KfW) | 191 700 000 DEM | Construction de deux navires rouliers transbordeurs |
+| Compagnie tunisienne de navigation (CTN) | Loi n° 98-27 du 6 avril 1998 [@loi98-27-ctn] | Eksportfinans ASA, BNP (Oslo) | 801 867 900 FRF | Construction d'un car-ferry |
+| Compagnie tunisienne de navigation (CTN) | Décret-loi n° 2011-74 du 5 août 2011 [@dl2011-74-ctn] | Société générale, BNP Paribas | 160 477 939 EUR au plus | Construction d'un nouveau navire à passagers |
+| Tunisie Autoroutes | Loi n° 99-47 du 31 mai 1999 [@loi99-47-autoroutes] | Fonds arabe de développement économique et social (FADES) | 24 000 000 KWD | Autoroute Tunis–Bizerte |
+| Tunisie Autoroutes | Loi n° 2001-40 du 18 avril 2001 [@loi2001-40-autoroutes] | FADES | 25 000 000 KWD | Autoroute Tunis–Medjez El Bab |
+| Tunisie Autoroutes | Loi n° 2002-72 du 23 juillet 2002 [@loi2002-72-autoroutes] | Banque japonaise pour la coopération internationale | 12 501 000 000 JPY | Autoroute El Jem–Sfax |
+| Tunisie Autoroutes | Décret-loi n° 2011-65 du 29 juin 2011 [@dl2011-65-autoroutes] | FADES | 38 000 000 KWD | Autoroute Oued Zarga–Boussalem |
+| Tunisie Autoroutes | Décret-loi n° 2011-111 du 24 octobre 2011 [@dl2011-111-autoroutes] | Banque africaine de développement (BAD) | 137 340 000 EUR | Liaison autoroutière Gabès–Médenine–Ras Jedir (tronçon Médenine–Ras Jedir) |
+| Tunisie Autoroutes | Loi n° 2012-6 du 22 juin 2012 [@loi2012-6-autoroutes] | Agence japonaise de coopération internationale (JICA) | 15 084 000 000 JPY | Autoroute A1 Gabès–Médenine |
+| Société des transports de Tunis | Loi n° 2020-40 du 13 août 2020 [@loi2020-40-transtu] | Banque européenne pour la reconstruction et le développement (BERD) | 45 000 000 EUR | Renouvellement de la flotte ferroviaire de la ligne TGM |
+| Société des transports de Tunis | Décret-loi n° 2023-13 du 10 mars 2023 [@dl2023-13-transtu] | Banque européenne d'investissement (BEI) | 45 000 000 EUR | Renouvellement du parc de voitures de la ligne TGM |
+| SONEDE | Loi n° 2018-3 du 22 janvier 2018 [@loi2018-3-sonede] | Agence française de développement (AFD) | 60 000 000 EUR | Station de traitement d'eau au Sahel et renforcement des conduites |
+| SONEDE | Loi n° 2021-15 du 19 avril 2021 [@loi2021-15-sonede] | AFD | 24 000 000 EUR | Renforcement et sécurisation de l'eau potable du Grand Tunis |
+| SONEDE | Loi n° 2021-17 du 19 avril 2021 [@loi2021-17-sonede] | BEI | 24 000 000 EUR | Station de traitement d'eau à Béjaoua et infrastructures connexes |
+| SONEDE | Loi n° 2021-33 du 30 juin 2021 [@loi2021-33-sonede] | Fonds koweïtien de développement économique arabe | 30 000 000 KWD | Amélioration des réseaux d'eau potable en zones urbaines |
+| ONAS | Loi n° 2016-2 du 1er février 2016 [@loi2016-2-onas] | BERD | 20 000 000 EUR | Programme intégré de dépollution du lac de Bizerte |
+| ONAS | Loi n° 2017-22 du 12 avril 2017 [@loi2017-22-onas] | BIRD | 16 200 000 EUR | Prêt additionnel — assainissement du nord de Tunis |
+| ONAS | Loi n° 2017-32 du 2 mai 2017 [@loi2017-32-onas] | AFD | 60 000 000 EUR | Première tranche du programme de dépollution de la Méditerranée |
+| ONAS | Loi n° 2017-33 du 2 mai 2017 [@loi2017-33-onas] | BEI | 69 600 000 EUR | Programme de dépollution de la Méditerranée |
+| ONAS | Loi n° 2019-57 du 9 juillet 2019 [@loi2019-57-onas] | BERD | 75 000 000 EUR | Assainissement de 33 villes de moins de 10 000 habitants |
+| ONAS | Loi n° 2019-58 du 9 juillet 2019 [@loi2019-58-onas] | BAD | 75 000 000 EUR au plus | Assainissement des petites communes de moins de 10 000 habitants (1re tranche) |
+| ONAS | Loi n° 2023-10 du 26 octobre 2023 [@loi2023-10-onas] | BIRD | 113 600 000 EUR | Assainissement par partenariat public-privé |
+| ONAS | Loi n° 2024-36 du 15 juillet 2024 [@loi2024-36-onas] | BAD | 81 900 000 EUR au plus | Amélioration de la qualité des eaux usées épurées |
+| Tunisie Télécom | Loi n° 97-67 du 27 octobre 1997 [@loi97-67-tt] | Crédit commercial de France, Union tunisienne de banques | 69 347 000 FRF | Réseau numérique de téléphonie mobile (GSM) |
+| Tunisie Télécom | Loi n° 98-86 du 2 novembre 1998 [@loi98-86-tt] | Banque nordique d'investissement (BNI) | 30 000 000 USD | Projet de télécommunications (1re ligne de crédit) |
+| Tunisie Télécom | Loi n° 2002-39 du 17 avril 2002 [@loi2002-39-tt] | Banque nordique d'investissement (BNI) | 50 000 000 USD | Deuxième ligne de crédit |
+| Tunisie Télécom | Loi n° 2002-40 du 17 avril 2002 [@loi2002-40-tt] | Mitsubishi Corporation | 1 018 543 314 JPY | Systèmes de transmission par faisceaux hertziens |
+| Tunisie Télécom | Loi n° 2002-60 du 9 juillet 2002 [@loi2002-60-tt] | Kreditanstalt für Wiederaufbau (KfW) | 22 662 175,04 EUR | Extension et création de centraux téléphoniques |
+| Tunisie Télécom | Loi n° 2002-89 du 29 octobre 2002 [@loi2002-89-tt] | Natexis Banques populaires, Union tunisienne de banques | 41 938 320 EUR | Projet GSM dans les régions côtières |
+| Tunisie Télécom | Loi n° 2003-40 du 9 juin 2003 [@loi2003-40-tt] | Banque nordique d'investissement (BNI) | 50 000 000 EUR | Troisième ligne de crédit |
+| Tunisie Télécom | Loi n° 2004-12 du 3 février 2004 [@loi2004-12-tt] | Nordea Bank Sweden AB | 21 848 713 EUR | Extension du réseau GSM |
+| Tunisie Télécom | Loi n° 2004-86 du 6 décembre 2004 [@loi2004-86-tt] | Banque nordique d'investissement (BNI) | 50 000 000 EUR | Projets de télécommunications (4e ligne de crédit) |
+| Office des céréales | Décret-loi n° 2022-64 du 27 septembre 2022 [@dl2022-64-oc] | BERD | 150 500 000 EUR | Réponse à la résilience de la sécurité alimentaire |
+| Office des céréales | Décret-loi n° 2023-4 du 10 février 2023 [@dl2023-4-oc] | BEI | 150 000 000 EUR | Renforcement de la résilience de la sécurité alimentaire |
+| Office national de l'huile | Loi n° 2006-52 du 24 juillet 2006 [@loi2006-52-onh] | Gouvernement des États-Unis (prêt GSM 102) | 20 000 000 USD | Importation d'huiles végétales américaines |
+| Compagnie des phosphates de Gafsa (CPG) | Loi n° 93-68 du 5 juillet 1993 [@loi93-68-cpg] | Union tunisienne de banques (et Crédit industriel et commercial) | 10 894 994,57 FRF | Acquisition de deux pelles hydrauliques |
+| Compagnie des phosphates de Gafsa (CPG) | Loi n° 2000-13 du 7 février 2000 [@loi2000-13-cpg] | BAD | 34 739 900 USD | Projet de consolidation de la compagnie |
+| Compagnie des phosphates de Gafsa (CPG) | Loi n° 2005-109 du 26 décembre 2005 [@loi2005-109-cpg] | BAD | 50 092 000 USD | Protection de l'environnement et extraction minière de phosphate |
+| Compagnie des phosphates de Gafsa (CPG) | Loi n° 2026-17 du 30 juillet 2026 [@loi2026-17-cpg] | BERD | 110 000 000 EUR | Équipements miniers et filtres-presses (projet « CAPSA ») |
+| Groupe chimique tunisien (GCT) | Loi n° 2014-2 du 9 janvier 2014 [@loi2014-2-gct] | FADES | 22 000 000 KWD | Projet M'Dhilla 2 (triple superphosphate) |
+| Groupe chimique tunisien (GCT) | Loi n° 2017-17 du 28 mars 2017 [@loi2017-17-gct] | BEI | 19 000 000 EUR | Crédit complémentaire — mise à niveau environnementale |
+| Groupe chimique tunisien (GCT) | Loi organique n° 2017-18 du 28 mars 2017 [@loi2017-18-gct] | AFD | 45 000 000 EUR | Mise à niveau environnementale |
+| Groupe chimique tunisien (GCT) | Loi n° 2021-30 du 22 juin 2021 [@loi2021-30-gct] | Société internationale islamique de financement du commerce (SIIFC) | 50 000 000 USD au plus | Mourabaha — importations d'ammoniac et de soufre |
+| Groupe chimique tunisien (GCT) | Décret-loi n° 2023-20 du 11 mars 2023 [@decret-loi2023-20-gct] | SIIFC | 50 000 000 USD au plus | Mourabaha — importations de soufre, ammoniac et autres produits |
+| Groupe chimique tunisien (GCT) | Loi n° 2026-18 du 30 juillet 2026 [@loi2026-18-gct] | SIIFC | 70 000 000 USD au plus | Mourabaha — importations d'engrais |
+| Groupe chimique tunisien (GCT) | Loi n° 2026-19 du 30 juillet 2026 [@loi2026-19-gct] | SIIFC | 70 000 000 USD au plus | Mourabaha — importations d'engrais |
+| El Fouladh (Société tunisienne de sidérurgie) | Loi n° 2015-5 du 16 mars 2015 [@loi2015-5-fouladh] | SIIFC | 20 000 000 USD au plus | Mourabaha — importations de matières premières |
+| SNCPA (cellulose et papier alfa) | Loi n° 95-86 du 30 octobre 1995 [@loi95-86-sncpa] | Crédit lyonnais España | 3 468 400 DEM (crédit financier) + 9 909 392 USD (crédit acheteur) | Projet de la société |
+| Agence foncière industrielle (AFI) | Loi n° 78-27 du 5 avril 1978 [@loi78-27-afi] | Groupe de banques | 20 000 000 USD | Prêt à l'Agence foncière industrielle |
+| Banque de l'habitat | Loi n° 2018-8 du 12 février 2018 [@loi2018-8-bh] | BEI | 120 000 000 EUR | Ligne de crédit pour TPE, PME et ETI |
+| Amen Bank, BH, BFPME | Loi n° 2009-78 du 30 décembre 2009 [@loi2009-78-garantie-bird] | BIRD | 23 100 000 EUR (Amen Bank) + 15 400 000 EUR (BH) + reliquat (BFPME) | Projet d'efficacité énergétique |
+| BFPME | Loi n° 2012-5 du 22 juin 2012 [@loi2012-5-fades-bfpme] | FADES (compte spécial PME) | 30 000 000 USD | Financement des PME |
+| BFPME | Loi n° 2014-53 du 24 juillet 2014 [@loi2014-53-fades-bfpme] | FADES (compte spécial) | 20 000 000 USD | Deuxième prêt — financement des PME |
+| Banque nationale agricole (BNA) | Loi n° 95-79 du 7 août 1995 [@loi95-79-bna-bird] | BIRD | 65 000 000 USD | Projet national de finance rurale |
+| Banque nationale agricole (BNA) | Loi n° 99-60 du 15 juillet 1999 [@loi99-60-bna-bad] | BAD | 62 089 130,84 EUR | Troisième ligne de crédit BNA |
+| Banque nationale agricole (BNA) | Loi n° 2002-34 du 19 mars 2002 [@loi2002-34-bna-bad] | BAD | 160 000 000 EUR | Prêt à la BNA |
+| Caisse des prêts et de soutien des collectivités locales (CPSCL) | Loi n° 2003-39 du 9 juin 2003 [@loi2003-39-cpscl-afd] | AFD | 50 000 000 EUR | Troisième projet de développement municipal |
+| Caisse des prêts et de soutien des collectivités locales (CPSCL) | Loi n° 2015-19 du 2 juin 2015 [@loi2015-19-cpscl] | BEI | 50 000 000 EUR | Programme d'investissement communal 2014-2018 |
+| STIR | Loi n° 2015-9 du 27 avril 2015 [@loi2015-9-stir] | Société internationale islamique de financement du commerce (SIIFC) | 150 000 000 USD au plus | Mourabaha — importations de pétrole brut et produits pétroliers |
+| STIR | Loi n° 2020-10 du 25 février 2020 [@loi2020-10-stir] | SIIFC | 136 000 000 USD au plus | Mourabaha — importations de pétrole brut et produits pétroliers |
+
+: Emprunts des entreprises et établissements publics garantis par l'État, ratifiés ou approuvés par un texte publié au *Journal officiel*, 1978-2026. Une ligne par emprunt garanti. Le montant est celui qu'imprime le texte de ratification cité, dans sa devise d'origine (dollar des États-Unis USD, euro EUR, franc français FRF, deutsche mark DEM, yen japonais JPY, dinar koweïtien KWD) ; une case vide signale que la source ne donne pas l'information. Source : les textes de ratification du *Journal officiel*, cités ligne par ligne, et les chronologies des chapitres par entreprise. Périmètre : les emprunts garantis documentés dans le volume, non exhaustif. Les emprunts extérieurs non garantis par l'État ne sont pas publiés au *Journal officiel* et restent hors de ce tableau {#tbl-ep-emprunts-garantis}
+
+::::
+
 
 ## Le plafond des garanties et des prêts du Trésor fixé par la loi de finances, 1958-2026 {#sec-ep-garanties-plafond-legal}
 
