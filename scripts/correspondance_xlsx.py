@@ -1,4 +1,4 @@
-"""Version Excel de la table de correspondance, pour que la relectrice puisse y répondre case par case.
+"""Version Excel de la table de correspondance, pour que la relecture puisse se faire case par case.
 
 Produit un classeur à trois feuilles : « Lisez-moi » (mode d'emploi et couleurs), « Questions » (les
 cinq points à trancher, avec une colonne de réponse) et « Table » (une ligne par instrument, avec
