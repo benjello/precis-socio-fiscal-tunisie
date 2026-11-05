@@ -42,6 +42,13 @@ Les contributeurs sont remerciés nommément dans l'ouvrage, **s'ils le souhaite
 cité sans son accord. Un retour donné à titre personnel n'est jamais présenté comme la position
 d'une institution.
 
+## L'organisation de la relecture
+
+La relecture collective s'organise **volume par volume** et, aujourd'hui, **par courrier
+électronique** ; chaque retour est consigné pour ne pas se perdre, et appliqué de façon traçable.
+Le détail du dispositif — rôles, canal, consignation, consentement, attribution — est dans
+[`docs/portage-collectif.md`](docs/portage-collectif.md).
+
 ## Licence
 
 En contribuant, vous acceptez que votre apport soit diffusé sous les licences du projet : CC BY-SA
