@@ -11,14 +11,11 @@ format:
 
 [← Retour à l'accueil](index.html)
 
-<!-- Page ENGENDRÉE : le corps (familles et sources) est émis par precis/fr/figures/annexe_sources.py,
-     qui scanne les manifestes de figure, résout les clés dans les references.json et classe par famille.
-     NE PAS éditer les entrées à la main : corriger la source (references.json, sources_familles.yml).
+<!-- Page ENGENDRÉE automatiquement : ne pas éditer les entrées à la main.
      Identifiants STABLES auxquels les volumes et les onglets « 🔗 Sources » des figures renvoient
      (ne pas les renommer, ne pas les traduire) :
        #sec-sources-pourquoi, #sec-sources-lire, #sec-sources-registre,
-       #src-fam-<slug-de-famille> (titre de sous-section), #src-<clé-de-citation> (une par source).
-     Matière de design : docs/notes/annexe-sources-donnees-design.md. -->
+       #src-fam-<slug-de-famille> (titre de sous-section), #src-<clé-de-citation> (une par source). -->
 
 ## Pourquoi cette annexe {#sec-sources-pourquoi}
 
