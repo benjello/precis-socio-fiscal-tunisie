@@ -1,16 +1,25 @@
 # La couverture des données, entreprise par entreprise {#sec-ep-couverture .domicile-unique}
 
-Cette annexe dit, pour chaque entreprise publique du volume, quelles sources on en détient et pour quels exercices. Elle répond à la première demande de l'équipe SOEs de la Banque mondiale : « la remontée des données reste un défi », et le premier geste est de dresser l'état de ce que l'on a. Le tableau est **engendré par script** à partir des séries de `figdata` et des relevés de `listes/` : aucune case n'est saisie à la main, et aucune n'est inventée.
+<!-- Correspondance source → fichiers lus par figures/couverture.py (NON publiée dans le texte,
+     gardée ici pour la maintenance ; on en fera peut-être une sortie plus tard) :
+       fiche du ministère      → figdata/fig_ep_<entreprise>_fiches.csv
+       Registre national (RNE) → listes/entreprises-publiques-registre.csv
+       rapport annuel          → listes/inventaire-rapports-*.csv
+       Bourse / CMF            → listes/inventaire-rapports-*.csv, figdata/fig_ep_cotees_*
+       garanties (BNA)         → listes/bna-engagements-entreprises-publiques.csv
+     Table de jointure des clés : listes/couverture-sources.csv (+ manifeste). -->
+
+Cette annexe dit, pour chaque entreprise publique du volume, quelles sources on en détient et pour quels exercices. Elle répond à la première demande de l'équipe SOEs de la Banque mondiale : « la remontée des données reste un défi », et le premier geste est de dresser l'état de ce que l'on a. Le tableau est **engendré par script** à partir des données sources du volume : aucune case n'est saisie à la main, et aucune n'est inventée.
 
 ## Ce que lit le tableau {#sec-ep-couverture-sources}
 
 Six types de sources sont suivis, chacun lu dans un fichier du volume.
 
-- **La fiche du ministère des Finances**, par édition. Le rapport sur les entreprises publiques annexé au projet de loi de finances imprime, pour une partie des entreprises, une fiche par entreprise ; les éditions LF 2022, LF 2024 et LF 2025 sont dépouillées (`figdata/fig_ep_<entreprise>_fiches.csv`) [@minfin-ep-2022 ; @minfin-ep-2024 ; @minfin-ep-2025].
-- **Les états financiers du Registre national des entreprises.** Le portail public donne, sans compte, les exercices dont un état financier est déposé (`listes/entreprises-publiques-registre.csv`, @sec-ep-registre) [@rne-portail].
-- **Le rapport annuel ou d'activité** de l'entreprise, relevé dans l'inventaire des rapports (`listes/inventaire-rapports-*.csv`).
-- **Les états financiers publiés à la Bourse de Tunis ou au Conseil du marché financier**, et la **page de la Bourse** elle-même, pour les entreprises cotées ou émettrices d'emprunts (`listes/inventaire-rapports-*.csv`, `figdata/fig_ep_cotees_*`).
-- **Les garanties et engagements de l'État détaillés par entreprise**, tels que les états financiers individuels de la Banque nationale agricole les nomment (`listes/bna-engagements-entreprises-publiques.csv`) [@rne-portail].
+- **La fiche du ministère des Finances**, par édition. Le rapport sur les entreprises publiques annexé au projet de loi de finances imprime, pour une partie des entreprises, une fiche par entreprise ; les éditions LF 2022, LF 2024 et LF 2025 sont dépouillées [@minfin-ep-2022 ; @minfin-ep-2024 ; @minfin-ep-2025].
+- **Les états financiers du Registre national des entreprises.** Le portail public donne, sans compte, les exercices dont un état financier est déposé (@sec-ep-registre) [@rne-portail].
+- **Le rapport annuel ou d'activité** de l'entreprise, relevé dans l'inventaire des rapports du volume.
+- **Les états financiers publiés à la Bourse de Tunis ou au Conseil du marché financier**, et la **page de la Bourse** elle-même, pour les entreprises cotées ou émettrices d'emprunts.
+- **Les garanties et engagements de l'État détaillés par entreprise**, tels que les états financiers individuels de la Banque nationale agricole les nomment [@rne-portail].
 - **La dette croisée avec l'État.**
 
 **Comment lire une case.** Une case renseignée (une suite d'années, une liste d'éditions, ou « page ») signale qu'on détient la source ; un **« – » est une absence constatée** — la source a été cherchée dans ce fichier et n'y figure pas —, non un oubli. Une **case vide** signale que la source n'a pas été interrogée pour cette entreprise sous son nom : elle est alors reportée dans la colonne « source possible, non obtenue ».
@@ -77,8 +86,7 @@ cv.tableau_matrice(
              "colonne [@minfin-ep-2025 ; @imf-dp-2021-019]. **Les garanties par entreprise** ne "
              "viennent que des états de la Banque nationale agricole, qui ne nomment qu'une "
              "poignée de débiteurs : un « – » n'y vaut pas absence de garantie, mais absence de "
-             "détail dans une source par entreprise. Engendré par `figures/couverture.py` à "
-             "partir de `figdata` et de `listes/`. Sources : "
+             "détail dans une source par entreprise. Engendré par script. Sources : "
              "[@minfin-ep-2022 ; @minfin-ep-2024 ; @minfin-ep-2025 ; @rne-portail]"))
 ```
 
