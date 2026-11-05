@@ -87,3 +87,36 @@ ge.figure(
 ```
 
 ::::
+
+## Trois grandeurs à ne pas confondre : transferts, subvention d'exploitation, dette envers l'État {#sec-ep-ge-rapprochement}
+
+Pour une même entreprise, trois chiffres circulent sous des noms proches sans mesurer la même chose, et il ne faut pas les additionner ni les confondre : **les transferts du budget** sont ce que l'État verse dans l'année, vus du budget ; **la subvention d'exploitation** est une ligne du compte de résultat de la fiche, vue des comptes de l'entreprise ; **la dette envers l'État** est la part de la dette totale due à l'État au bilan de fin d'année. Deux flux annuels et un encours, de périmètres différents : ils ne se recouvrent pas. Le rapprochement ci-dessous les met côte à côte pour l'exercice 2019, le dernier où les trois sont imprimées par entreprise, et pour les vingt-deux entreprises où les trois existent (@tbl-ep-rapprochement).
+
+- **Quand le transfert *est* la subvention d'exploitation.** Pour les entreprises qui portent la compensation, le transfert du budget et la subvention d'exploitation de la fiche coïncident : la STEG reçoit 1 242,0 MD en 2019 et inscrit 1 242,0 MD de subvention d'exploitation ; l'Office du commerce, 24,0 et 24,0 MD ; l'Office des terres domaniales, 0,4 et 0,4 MD ; la société régionale de transport de Sfax, 48,0 et 48,0 MD.
+- **Quand le transfert dépasse la subvention d'exploitation.** Le transfert comprend alors des subventions d'investissement que la ligne d'exploitation ne porte pas : la SONEDE reçoit 169,9 MD de transferts pour 0,2 MD de subvention d'exploitation, Tunisie Autoroutes 180,0 MD pour aucune, la CPSCL 179,8 MD pour aucune, l'ONAS 210,7 MD pour 105,3 MD.
+- **Quand la dette envers l'État est sans rapport avec les flux de l'année.** L'encours dû à l'État ne suit ni l'un ni l'autre flux : la Régie nationale des tabacs doit 264,5 MD à l'État fin 2019 sans recevoir ni transfert ni subvention d'exploitation, la Pharmacie centrale 74,0 MD et Tunisair 48,8 MD dans le même cas ; la Transtu doit 723,0 MD tout en recevant 138,6 MD de transferts.
+- **Même la STIR ne fait pas coïncider les deux flux.** Ses transferts de 2019 valent 1 905,3 MD dans la dernière édition qui les donne, quand sa fiche porte 1 296,0 MD de subvention d'exploitation : les deux chiffres sont lus dans des éditions et des périmètres différents, et une subvention d'une année est soldée les années suivantes (@fig-ep-transferts-revisions).
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import grandes_entreprises as ge
+ge.tableau_rapprochement(
+    caption=("Rapprochement par entreprise de trois grandeurs de natures différentes, exercice "
+             "2019, en millions de dinars courants : transferts du budget reçus dans l'année "
+             "(flux), subvention d'exploitation inscrite au compte de résultat de la fiche "
+             "(flux) et part de la dette due à l'État en fin d'année (encours). Une entreprise "
+             "ne figure que lorsque les trois sont imprimées ; le tableau ne les additionne pas, "
+             "car elles ne se recouvrent pas. Sources : ministère des Finances, rapport sur les "
+             "entreprises publiques. Transferts du budget par entreprise, dernière édition qui "
+             "donne 2019 [@minfin-ep, p. 149-150 ; @minfin-ep-2022, p. 105 ; @minfin-ep-2023, "
+             "p. 200] ; subvention d'exploitation et part de la dette due à l'État, fiches par "
+             "entreprise de l'édition LF 2022 [@minfin-ep-2022]"))
+```
+
+**Ce que l'État doit à l'entreprise n'a pas de série par entreprise.** Symétrique de la dette envers l'État, la créance d'une entreprise *sur* l'État ne figure pas dans les fiches : au niveau de l'entreprise, elle n'est imprimée que dans le tableau des dettes et créances croisées, et seulement pour les premiers rangs de fin 2023 — la STEG, l'Office des céréales, la SONEDE, la STIR, la Pharmacie centrale, l'Office de l'huile, la Transtu (@tbl-ep-croisees-entreprises, @sec-ep-croisees). Pour les autres entreprises et pour les années antérieures, aucune série des créances sur l'État par entreprise n'existe dans les sources dépouillées : lacune consignée.
+
+**Un retard de paiement non chiffré.** Les créances des entreprises sur l'État comprennent des subventions non réglées — 6 956,8 MD fin 2023 (@sec-ep-croisees) —, c'est-à-dire des arriérés ; mais aucune source identifiée n'imprime de délai de paiement. On ne peut donc pas dire de combien de temps l'État paie en retard : lacune consignée, sans supposition.
+
+Les tarifs réduits que ces entreprises compensent sont exposés au volume [« La compensation »](../compensation/index.html) : les tranches sociales de l'électricité et du gaz pour la STEG ([les grandes réformes du tarif](../compensation/_electricite_gaz.html#sec-compensation-eg-reformes)), les tarifs réduits et les gratuités du transport public pour la Transtu, la SNCFT et les sociétés régionales ([ce que l'État paie, et à qui](../compensation/_transport.html#sec-compensation-transport-vue)), les carburants pour la STIR ([la décomposition par poste](../compensation/_depense.html#sec-compensation-par-poste)).
