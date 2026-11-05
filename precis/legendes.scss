@@ -261,3 +261,14 @@ main table .insecable {
   white-space: nowrap;
   hyphens: none;
 }
+
+// Tableau de la dette garantie payée par ligne (dix-huit colonnes, gestions 2010 à 2024) :
+// beaucoup de colonnes chiffrées très étroites. On resserre la police et les marges de cellule,
+// la première colonne (une gestion) n'a pas besoin des 7 em par défaut, et le tableau défile
+// horizontalement en secours plutôt que de déborder la page.
+#tbl-ep-cdc-garantie {
+  overflow-x: auto;
+  table { font-size: 0.72rem; }
+  th, td { padding: 0.2rem 0.3rem; }
+  td:first-child, th:first-child { min-width: 0; }
+}
