@@ -1,0 +1,89 @@
+# La couverture des données, entreprise par entreprise {#sec-ep-couverture .domicile-unique}
+
+Cette annexe dit, pour chaque entreprise publique du volume, quelles sources on en détient et pour quels exercices. Elle répond à la première demande de l'équipe SOEs de la Banque mondiale : « la remontée des données reste un défi », et le premier geste est de dresser l'état de ce que l'on a. Le tableau est **engendré par script** à partir des séries de `figdata` et des relevés de `listes/` : aucune case n'est saisie à la main, et aucune n'est inventée.
+
+## Ce que lit le tableau {#sec-ep-couverture-sources}
+
+Six types de sources sont suivis, chacun lu dans un fichier du volume.
+
+- **La fiche du ministère des Finances**, par édition. Le rapport sur les entreprises publiques annexé au projet de loi de finances imprime, pour une partie des entreprises, une fiche par entreprise ; les éditions LF 2022, LF 2024 et LF 2025 sont dépouillées (`figdata/fig_ep_<entreprise>_fiches.csv`) [@minfin-ep-2022 ; @minfin-ep-2024 ; @minfin-ep-2025].
+- **Les états financiers du Registre national des entreprises.** Le portail public donne, sans compte, les exercices dont un état financier est déposé (`listes/entreprises-publiques-registre.csv`, @sec-ep-registre) [@rne-portail].
+- **Le rapport annuel ou d'activité** de l'entreprise, relevé dans l'inventaire des rapports (`listes/inventaire-rapports-*.csv`).
+- **Les états financiers publiés à la Bourse de Tunis ou au Conseil du marché financier**, et la **page de la Bourse** elle-même, pour les entreprises cotées ou émettrices d'emprunts (`listes/inventaire-rapports-*.csv`, `figdata/fig_ep_cotees_*`).
+- **Les garanties et engagements de l'État détaillés par entreprise**, tels que les états financiers individuels de la Banque nationale agricole les nomment (`listes/bna-engagements-entreprises-publiques.csv`) [@rne-portail].
+- **La dette croisée avec l'État.**
+
+**Comment lire une case.** Une case renseignée (une suite d'années, une liste d'éditions, ou « page ») signale qu'on détient la source ; un **« – » est une absence constatée** — la source a été cherchée dans ce fichier et n'y figure pas —, non un oubli. Une **case vide** signale que la source n'a pas été interrogée pour cette entreprise sous son nom : elle est alors reportée dans la colonne « source possible, non obtenue ».
+
+## Le périmètre du tableau {#sec-ep-couverture-perimetre}
+
+Le rapport du ministère des Finances pour 2021 recense 110 entreprises publiques [@minfin-entreprises-publiques-lf2021, p. 7-8]. **Leur liste nominative complète n'est pas transcrite** — la couche de texte arabe des rapports est dégradée (@sec-ep-liste) —, de sorte que la matrice ne peut pas être ancrée par le nom sur les 110 : une matrice honnête et partielle vaut mieux qu'une matrice inventée.
+
+Le tableau porte donc sur les **50 entreprises pour lesquelles le volume détient au moins une source** : les 47 qui ont une fiche du ministère, et trois entreprises de transport que seul l'inventaire des rapports ou le Registre nomme (le métro léger de Sfax, le réseau ferroviaire rapide de Tunis, le transport rural et interurbain). Elles se répartissent en 5 banques, 27 établissements publics et 18 sociétés anonymes.
+
+## La couverture par type d'entreprise {#sec-ep-couverture-type}
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import couverture as cv
+cv.tableau_par_type(
+    caption=("Nombre d'entreprises couvertes par chaque type de source, par type d'entreprise, "
+             "parmi les 50 du périmètre du tableau. « Fiche min. » : une fiche du ministère "
+             "dans au moins une édition ; « Bourse / CMF » : états financiers déposés à la "
+             "Bourse ou au Conseil du marché financier, ou page de la Bourse. Relevé au 3 "
+             "novembre 2026. Sources : "
+             "[@minfin-ep-2022 ; @minfin-ep-2024 ; @minfin-ep-2025 ; @rne-portail]"))
+```
+
+- **La fiche du ministère est la source la plus large** : 47 des 50 entreprises en ont une, dans les trois éditions dépouillées le plus souvent. C'est la seule source qui couvre à la fois les banques, les établissements et les sociétés.
+- **Le Registre national suit, pour la moitié des entreprises** : 26 ont déposé au moins un état financier, surtout des établissements publics (18 sur 27). Les banques et les grandes sociétés y déposent peu (@sec-ep-registre).
+- **Le rapport annuel et la Bourse ne touchent qu'une minorité** : 16 entreprises ont un rapport annuel relevé, 17 une présence à la Bourse ou au Conseil du marché financier — pour l'essentiel les mêmes grandes entreprises cotées ou émettrices.
+- **Le détail des garanties par entreprise est le plus rare** : 9 entreprises seulement, celles que les états de la Banque nationale agricole nomment.
+
+## La couverture par exercice {#sec-ep-couverture-exercice}
+
+```{python}
+#| echo: false
+#| output: asis
+cv.tableau_par_exercice(
+    caption=("Nombre d'entreprises couvertes par chaque source, exercice par exercice, parmi "
+             "les 50 du périmètre. Un « – » : aucune entreprise couverte par cette source pour "
+             "cet exercice. Sources : "
+             "[@minfin-ep-2022 ; @minfin-ep-2024 ; @minfin-ep-2025 ; @rne-portail]"))
+```
+
+- **La fiche du ministère couvre 2018 à 2023**, et jusqu'à 47 entreprises par exercice : elle est la seule à donner une image d'ensemble d'une même année. Les éditions ne portent pas 2024, encore à venir au dernier rapport dépouillé.
+- **Le Registre monte avec le temps** : il ne porte aucun état financier avant 2019 et en compte le plus pour les exercices récents, à mesure que les entreprises déposent.
+- **Le rapport annuel et la Bourse sont réguliers mais étroits** : autour de sept à dix entreprises par exercice, sans la couverture d'ensemble de la fiche.
+
+## La matrice, entreprise par entreprise {#sec-ep-couverture-matrice}
+
+::: {.chronologie-repliable titre="Matrice de couverture des données : une ligne par entreprise, une colonne par type de source, au 3 novembre 2026"}
+
+```{python}
+#| echo: false
+#| output: asis
+cv.tableau_matrice(
+    caption=("La couverture des données des 50 entreprises publiques du périmètre, par type de "
+             "source et par exercice, au 3 novembre 2026. « Fiche min. » : éditions du rapport "
+             "du ministère (22 : LF 2022 ; 24 : LF 2024 ; 25 : LF 2025). Les autres colonnes "
+             "donnent les exercices couverts. « – » : source cherchée, non trouvée (absence "
+             "constatée) ; case vide : source non interrogée sous ce nom, reportée en dernière "
+             "colonne ; « page » : page de la Bourse sans états financiers datés relevés. "
+             "**La dette croisée** n'est publiée qu'en agrégat (État, grand secteur) et n'est "
+             "ventilée par aucune source entreprise par entreprise : « – » dans toute la "
+             "colonne [@minfin-ep-2025 ; @imf-dp-2021-019]. **Les garanties par entreprise** ne "
+             "viennent que des états de la Banque nationale agricole, qui ne nomment qu'une "
+             "poignée de débiteurs : un « – » n'y vaut pas absence de garantie, mais absence de "
+             "détail dans une source par entreprise. Engendré par `figures/couverture.py` à "
+             "partir de `figdata` et de `listes/`. Sources : "
+             "[@minfin-ep-2022 ; @minfin-ep-2024 ; @minfin-ep-2025 ; @rne-portail]"))
+```
+
+:::
+
+- **La dette croisée reste un trou par entreprise.** Les montants existent — dettes et créances croisées avec l'État, arriérés croisés du FMI —, mais en agrégat ou par grand secteur, jamais entreprise par entreprise (@sec-ep-garanties) : la colonne est « – » partout, et c'est la première donnée que l'équipe SOEs demanderait au ministère.
+- **La source possible, non obtenue, est surtout le Registre.** Pour douze entreprises, le portail du Registre ne retrouve pas encore la fiche sous le nom retenu ici : l'identifiant et les états financiers déposés restent à récupérer, par identifiant fiscal, nom commercial ou année de création (@sec-ep-registre). C'est la prochaine séance de travail la mieux cadrée.
+- **Les comptes de résultat sont publiés, les bilans presque jamais.** La fiche du ministère donne un compte de résultat résumé pour 47 entreprises ; le bilan complet ne se lit qu'au Registre, à la Bourse ou dans un rapport annuel, c'est-à-dire pour une minorité, et souvent avec retard.
