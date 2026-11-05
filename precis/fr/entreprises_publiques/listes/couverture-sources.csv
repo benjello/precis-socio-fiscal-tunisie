@@ -1,0 +1,51 @@
+rang,entreprise,categorie,cle_fiches,sigle_registre,sigle_rapports,slug_bourse,cle_bna,non_obtenue
+1,Banque de financement des petites et moyennes entreprises,banque,bfpme,,BFPME,,,identifiant et états financiers au Registre national
+2,Banque de l'habitat,banque,bh,BH,,bh-bank,,
+3,Banque nationale agricole,banque,bna,BNA,,bna,,
+4,Banque tunisienne de solidarité,banque,bts,BTS,BTS,,,
+5,Société tunisienne de banque,banque,stb,STB,,stb,,
+6,Agence de réhabilitation et de rénovation urbaine,etablissement,arru,,ARRU,,,identifiant et états financiers au Registre national
+7,Agence foncière d'habitation,etablissement,afh,AFH,AFH,,,
+8,Agence foncière industrielle,etablissement,afi,AFI,AFI,,,
+9,Agence technique des transports terrestres,etablissement,attt,ATTT,attt,,,
+10,Caisse des prêts et de soutien des collectivités locales,etablissement,cpscl,CPSCL,CPSCL,,,
+11,Entreprise tunisienne d'activités pétrolières,etablissement,etap,ETAP,ETAP,etap,ETAP,
+12,Manufacture des tabacs de Kairouan,etablissement,mtk,MTK,MTK,,,
+13,Office de l'aviation civile et des aéroports,etablissement,oaca,OACA,oaca,,,
+14,Office de la marine marchande et des ports,etablissement,ommp,OMMP,ommp,,,
+15,Office des céréales,etablissement,oc,OC,OC,,Office des céréales,
+16,Office des terres domaniales,etablissement,otd,OTD,OTD,,O.T.D,
+17,Office du commerce de la Tunisie,etablissement,otc,OCT,OCT,,OCT,
+18,Office national de l'assainissement,etablissement,onas,ONAS,ONAS,,,
+19,Office national de l'huile,etablissement,onh,ONH,ONH,,O.N.H,
+20,Office national des postes,etablissement,poste,La Poste,La Poste,,,
+21,Pharmacie centrale de Tunisie,etablissement,pct,PCT,PCT,,,
+22,Régie des alcools,etablissement,ra,RA,RA,,,
+23,Régie nationale des tabacs et des allumettes,etablissement,rnta,RNTA,RNTA,,,
+24,Société de promotion des logements sociaux,etablissement,sprols,SPROLS,SPROLS,,,
+25,Société du métro léger de Sfax,etablissement,,SMLS,smls,,,
+26,Société du réseau ferroviaire rapide de Tunis,etablissement,,,rfr,,,identifiant et états financiers au Registre national
+27,Société nationale des chemins de fer tunisiens,etablissement,sncft,SNCFT,sncft,,,
+28,Société nationale immobilière de Tunisie,etablissement,snit,SNIT,SNIT,,,
+29,Société nationale d'exploitation et de distribution des eaux,etablissement,sonede,SONEDE,SONEDE,,,
+30,Société tunisienne de l'électricité et du gaz,etablissement,steg,STEG,STEG,steg,,
+31,Société tunisienne des industries de raffinage,etablissement,stir,STIR,STIR,,STIR,
+32,Transtu,etablissement,transtu,,transtu,,Transtu,identifiant et états financiers au Registre national
+33,Compagnie des phosphates de Gafsa,societe,cpg,CPG,CPG,,,
+34,Compagnie tunisienne de forage,societe,ctf,CTF,CTF,,,
+35,Compagnie tunisienne de navigation,societe,ctn,CTN,ctn,,,
+36,El Fouladh,societe,fouladh,El Fouladh,FOULADH,,El Fouledh,
+37,Groupe chimique tunisien,societe,gct,GCT,GCT,,,
+38,Les Ciments d'Oum El Kélil,societe,cimoek,,CIOK,,,identifiant et états financiers au Registre national
+39,Ciments de Bizerte,societe,cimbiz,SCB,,ciments-de-bizerte,,
+40,Société générale des moulins du Tell,societe,sogemt,,SOGEMT,,,identifiant et états financiers au Registre national
+41,Société nationale de cellulose et de papier alfa,societe,sncpa,SNCPA,SNCPA,,,
+42,Société nationale de distribution des pétroles,societe,sndp,SNDP,SNDP,,,
+43,Société nationale de transport rural et interurbain,societe,,,sntri,,,identifiant et états financiers au Registre national
+45,Société régionale de transport de Bizerte,societe,srt_bizerte,,srt-bizerte,,,identifiant et états financiers au Registre national
+46,Société régionale de transport de Sfax (SORETRAS),societe,srt_sfax,,soretras,,,identifiant et états financiers au Registre national
+47,Société Tunisie Autoroutes,societe,autoroutes,Tunisie Autoroutes,tunisie-autoroutes,,,
+48,SOTRAPIL,societe,sotrapil,,SOTRAPIL,sotrapil,,identifiant et états financiers au Registre national
+49,Tunisair,societe,tunisair,Tunisair,,tunisair,Tunisair,
+50,Tunisie Télécom,societe,tt,,TT,tt,,identifiant et états financiers au Registre national
+51,Tunisie Trade Net,societe,ttn,TTN,TTN,,,

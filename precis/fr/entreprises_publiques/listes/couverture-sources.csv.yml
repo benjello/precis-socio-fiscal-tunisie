@@ -1,0 +1,40 @@
+# Manifeste du relevé « couverture des données, entreprise par entreprise ».
+#
+# Table de correspondance lue par figures/couverture.py (annexe « La couverture des données »).
+# Une ligne par entreprise publique du périmètre couvert par le volume ; chaque colonne donne la
+# CLÉ DE JOINTURE de l'entreprise dans une source (fiche du ministère, Registre national, inventaire
+# des rapports, Bourse de Tunis, engagements de la BNA), ou est vide quand la source ne la nomme pas.
+#
+# Ce relevé ne porte AUCUNE donnée de couverture : la présence d'une source pour un exercice est
+# LUE par le script dans les fichiers de données eux-mêmes (figdata/fig_ep_<cle_fiches>_fiches.csv,
+# listes/entreprises-publiques-registre.csv, listes/inventaire-rapports-*.csv,
+# listes/bna-engagements-entreprises-publiques.csv) à partir des clés de ce relevé. Le relevé ne fait
+# que rattacher les sources, qui nomment chaque entreprise différemment, à un même nom.
+#
+# PÉRIMÈTRE. Les entreprises pour lesquelles le volume détient au moins une source : les 47 fiches du
+# ministère (figdata), complétées des entreprises de transport que seul l'inventaire des rapports
+# nomme (métro léger de Sfax, réseau ferroviaire rapide, transport rural et interurbain, SORETRAS).
+# Le rapport du ministère des Finances pour 2021 recense 110 entreprises ; leur liste nominative
+# complète n'est pas transcrite (couche de texte arabe dégradée, voir le TODO de l'annexe de la liste),
+# si bien que la matrice ne peut pas être ancrée par le nom sur les 110.
+#
+# non_obtenue : source que le volume signale comme cherchée et non obtenue (TODO), non une absence
+# constatée. Ici, l'identifiant et les états financiers au Registre national pour les entreprises que
+# le portail ne retrouve pas encore sous leur nom (voir le TODO de l'annexe du Registre).
+# Relevé au 3 novembre 2026.
+
+format: long
+cle_de_ligne: [entreprise]
+
+colonnes:
+  rang: ordre d'affichage
+  entreprise: nom de l'entreprise retenu dans le volume
+  categorie: banque, etablissement (public) ou societe (anonyme)
+  cle_fiches: radical du fichier figdata/fig_ep_<cle_fiches>_fiches.csv, ou vide si pas de fiche du ministère
+  sigle_registre: valeur de la colonne sigle de listes/entreprises-publiques-registre.csv, ou vide si non retrouvée au Registre
+  sigle_rapports: valeur de la colonne sigle des listes/inventaire-rapports-*.csv, ou vide si absente de l'inventaire
+  slug_bourse: identifiant de la page de la Bourse de Tunis (figdata/fig_ep_cotees_cac_<slug>.csv), ou vide si pas de page
+  cle_bna: nom de l'entité dans listes/bna-engagements-entreprises-publiques.csv, ou vide si la BNA ne la nomme pas
+  non_obtenue: source signalée cherchée et non obtenue (TODO du volume), ou vide
+
+sources: [minfin-ep-2022, minfin-ep-2024, minfin-ep-2025, minfin-entreprises-publiques-lf2021, rne-portail]
