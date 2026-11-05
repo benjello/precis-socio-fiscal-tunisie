@@ -217,3 +217,18 @@ ls.tableau_etablissements(
 : Les textes qui fixent les listes d'entreprises publiques, 1989-2024. La dernière colonne donne le nombre d'entreprises ou d'établissements de la liste après le décret, compté ici ; un tiret quand le décret ne refait pas la liste entière et que le compte n'est pas refait à sa date. {#tbl-ep-liste-registre}
 
 ::::
+
+## Au-delà de la liste : qui contrôle quoi {#sec-ep-liste-controle}
+
+La liste officielle nomme les entreprises publiques elles-mêmes, mais non les sociétés qu'elles contrôlent ou détiennent à leur tour. En réunissant les relations de contrôle déjà documentées — périmètres de consolidation des groupes bancaires et de Tunisair, participations publiques dans les sociétés cotées, portefeuille de l'ETAP, lignes nommées de la STEG, filiales de la STAR —, on mesure l'écart entre cette liste et le périmètre réel.
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import carte_controle as cc
+cc.totaux()
+```
+
+- **Un contrôle qui déborde largement la liste.** La plupart des entités contrôlées sont des filiales, des sociétés de leasing, des SICAV et des SICAR, des sociétés mixtes d'exploration-production : elles ne sont pas sur la liste officielle, et leur contrôle n'apparaît que dans les comptes consolidés ou les portefeuilles de participations de leur maison mère.
+- **Un relevé non exhaustif.** La STEG ne nomme que les lignes principales de son portefeuille, sans taux ; les offices et les grands établissements de réseau — SONEDE, ONAS — ne publient pas de périmètre consolidé au dépôt : leurs filiales éventuelles n'y figurent pas. Le périmètre réel est donc un plancher, non un total.

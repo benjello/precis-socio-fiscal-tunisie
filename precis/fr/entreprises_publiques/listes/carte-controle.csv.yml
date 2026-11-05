@@ -1,0 +1,57 @@
+# Manifeste du relevé « carte de contrôle des entreprises publiques : qui contrôle quoi ».
+#
+# Une ligne par relation « contrôleur -> entité contrôlée ». Le relevé réunit en une table les
+# relations de contrôle et de participation déjà documentées, éparpillées dans plusieurs relevés et
+# plusieurs chapitres, chacune gardant sa clé de source. Engendré par `scripts/carte_controle.py`,
+# lu par figures/carte_controle.py (totaux de l'annexe « Qui contrôle quoi »).
+#
+# CE QUE LE RELEVÉ RÉUNIT, source par source :
+# 1. Périmètres de consolidation des groupes bancaires (STB, BH, BNA, BTE) et de Tunisair, DERNIER
+#    exercice de chaque groupe (STB 2021, BH 2022, BNA 2021, BTE 2024, Tunisair 2022), ligne de la
+#    société mère exclue : d'après groupes-bancaires-perimetre.csv. La part est le pourcentage
+#    d'intérêt du groupe, ou, à défaut (Tunisair), le pourcentage de contrôle (droits de vote).
+# 2. Participations de détenteurs publics dans les sociétés cotées à la Bourse de Tunis : d'après
+#    societes-cotees-participations.csv. La part est la part directe du détenteur, l'exercice est
+#    l'année de l'assemblée à laquelle la Bourse rattache la liste d'actionnaires.
+# 3. ETAP : les 39 lignes de l'annexe « portefeuille participations » (participations propres et
+#    titres détenus pour le compte de l'État), taux repris du texte de la section @sec-ep-etap-
+#    participations (_energie.qmd), sourcés @etap-ra-2023.
+# 4. STEG : seulement les lignes NOMMÉES de la note « titres de participation »
+#    (@sec-ep-steg-participations) ; la note agrège un portefeuille de 32 à 35 entreprises et ne
+#    nomme que les principales, sans taux de détention (montants en dinars) : la part reste vide.
+# 5. STAR : les filiales du groupe consolidé depuis 2021 (@sec-ep-ge-star-groupe).
+#
+# DÉDUPLICATION : une même contrôlée détenue par un même contrôleur ne fait qu'une ligne ; on garde
+# l'exercice le plus récent (à égalité, la première source : périmètre, puis cotées, ETAP, STEG,
+# STAR). « Banque de l'habitat » est ramené à « BH », « TUNISAIR » à « Tunisair » ; « BNA
+# Participations » reste distinct de « BNA ». Une part non imprimée par la source reste vide.
+#
+# LES DEUX DRAPEAUX de liste officielle sont établis à la main, à partir de
+# entreprises-publiques-listes.csv et etablissements-entreprises-publiques.csv : un contrôleur ou
+# une contrôlée est « oui » s'il figure dans une de ces listes officielles, « non » sinon. L'État
+# n'est pas une entreprise publique : il est « non ». Tout l'intérêt de la carte est le « non » de
+# la colonne contrôlée : les entités contrôlées qui ne sont PAS dans la liste officielle.
+#
+# LIMITES. (a) STEG : portefeuille non exhaustif (seules les lignes nommées, pas les taux). (b) Les
+# offices et la SONEDE, l'ONAS, etc. n'ont pas de périmètre consolidé au dépôt : leurs filiales
+# éventuelles ne sont pas ici. (c) Ciments de Bizerte : la page de la Bourse ne porte que des états
+# individuels, sans filiale ni pourcentage (@sec-ep-ge-cimbiz-perimetre) : rien à verser. (d) La
+# colonne part_interet_pct mêle, selon la source, part d'intérêt consolidée, part directe ou droits
+# de vote ; la colonne methode distingue les lignes de consolidation (intégration globale, mise en
+# équivalence) des simples participations (vide). (e) Les titres que l'ETAP détient « pour le compte
+# de l'État » sont rangés sous ETAP, contrôleur chez qui le rapport les loge.
+
+format: long
+cle_de_ligne: [controleur, controlee]
+
+colonnes:
+  controleur: entité qui contrôle ou détient, sous un nom d'affichage canonique
+  controlee: entité contrôlée ou détenue, telle que la source l'imprime
+  part_interet_pct: part en %, telle que la source l'imprime (intérêt consolidé, part directe ou droits de vote) ; vide si la source ne l'imprime pas
+  methode: méthode de consolidation (intégration globale, mise en équivalence) ; vide pour une simple participation
+  exercice: exercice de référence de la ligne (année)
+  controleur_dans_liste_officielle: oui si le contrôleur figure dans la liste officielle des entreprises publiques, non sinon
+  controlee_dans_liste_officielle: oui si l'entité contrôlée figure dans la liste officielle, non sinon
+  source: clé de la notice de la source de la ligne
+
+sources: [bvmt-air-liquide-tunisie, bvmt-atl, bvmt-bh-assurance, bvmt-bh-bank, bvmt-bh-leasing, bvmt-bna, bvmt-bna-assurances, bvmt-bte-adp, bvmt-ciments-de-bizerte, bvmt-ef-bte-2024-consolide, bvmt-ef-star-2021-consolide, bvmt-ef-star-2022-consolide, bvmt-ef-tunisair-2022-consolide, bvmt-ra-bna-2021, bvmt-ra-stb-2021, bvmt-simpar, bvmt-sotetel, bvmt-sotrapil, bvmt-sotumag, bvmt-star, bvmt-stb, bvmt-tunis-re, bvmt-tunisair, bvmt-wifak-international-bank, etap-ra-2023, ra-bh-2022, steg-ef-2014, steg-ef-2018, steg-ef-2023]
