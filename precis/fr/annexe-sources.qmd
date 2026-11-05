@@ -1,0 +1,47 @@
+---
+title: "Les sources de données chiffrées"
+subtitle: "Annexe commune aux volumes : le registre des supports de données chiffrées que le précis cite, par famille de source puis par source, avec une ancre stable par source"
+format:
+  html:
+    include-in-header: ../accueil.html
+    toc: true
+    toc-depth: 2
+    toc-title: "Sommaire"
+---
+
+[← Retour à l'accueil](index.html)
+
+<!-- Page ENGENDRÉE : le corps (familles et sources) est émis par precis/fr/figures/annexe_sources.py,
+     qui scanne les manifestes de figure, résout les clés dans les references.json et classe par famille.
+     NE PAS éditer les entrées à la main : corriger la source (references.json, sources_familles.yml).
+     Identifiants STABLES auxquels les volumes et les onglets « 🔗 Sources » des figures renvoient
+     (ne pas les renommer, ne pas les traduire) :
+       #sec-sources-pourquoi, #sec-sources-lire, #sec-sources-registre,
+       #src-fam-<slug-de-famille> (titre de sous-section), #src-<clé-de-citation> (une par source).
+     Matière de design : docs/notes/annexe-sources-donnees-design.md. -->
+
+## Pourquoi cette annexe {#sec-sources-pourquoi}
+
+Les volumes du précis tirent leurs chiffres de supports de données — rapports du ministère des Finances, annexes chiffrées des lois de finances, publications statistiques de l'Institut national de la statistique, états financiers d'entreprises publiques, arrêts de la Cour des comptes, bulletins de la Banque centrale, bases de la Banque mondiale et du Fonds monétaire international. Cette annexe en dresse le **registre commun** : une entrée par source, à laquelle chaque volume et chaque figure renvoie au lieu de redécrire la source à chaque emploi.
+
+Le registre est **engendré** : il est recomposé à partir des sources que les figures du précis citent réellement, et de l'identité publique de chacune (titre, producteur, lien d'accès). Aucune entrée n'est saisie à la main ; une source se met à jour en un seul endroit.
+
+Le texte purement législatif — le Journal officiel de la République tunisienne — n'est pas un support de données chiffrées : il reste en bibliographie et ne figure pas ici.
+
+## Comment lire une entrée {#sec-sources-lire}
+
+Chaque **famille de source** est une sous-section ; à l'intérieur, chaque **source** est une entrée portant son **titre**, son **producteur** et, lorsqu'il est public, un **lien d'accès**. Une source sans lien d'accès est une source dont le précis ne connaît pas d'adresse publique stable : le champ est alors laissé vide, non deviné.
+
+Chaque source porte une **ancre stable** de la forme `#src-<clé>`, où `<clé>` est la clé de citation de la source. C'est à cette ancre que renvoient les annexes des volumes et l'onglet « 🔗 Sources » de chaque figure, de sorte qu'une source décrite ici ne soit pas redécrite ailleurs.
+
+La **période couverte** et les **réserves** d'emploi d'une source ne figurent pas dans le registre : elles dépendent de la série précise qu'on en tire — une même source alimente souvent plusieurs séries, de périmètres et de réserves différents. Elles sont donc portées là où elles se lisent sans ambiguïté : l'onglet « 🔗 Sources » de la figure concernée, au plus près du chiffre.
+
+## Le registre {#sec-sources-registre}
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, ".")
+from figures import annexe_sources
+annexe_sources.rendre()
+```
