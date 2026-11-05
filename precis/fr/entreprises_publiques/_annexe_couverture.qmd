@@ -1,14 +1,5 @@
 # La couverture des données, entreprise par entreprise {#sec-ep-couverture .domicile-unique}
 
-<!-- Correspondance source → fichiers lus par figures/couverture.py (NON publiée dans le texte,
-     gardée ici pour la maintenance ; on en fera peut-être une sortie plus tard) :
-       fiche du ministère      → figdata/fig_ep_<entreprise>_fiches.csv
-       Registre national (RNE) → listes/entreprises-publiques-registre.csv
-       rapport annuel          → listes/inventaire-rapports-*.csv
-       Bourse / CMF            → listes/inventaire-rapports-*.csv, figdata/fig_ep_cotees_*
-       garanties (BNA)         → listes/bna-engagements-entreprises-publiques.csv
-     Table de jointure des clés : listes/couverture-sources.csv (+ manifeste). -->
-
 Cette annexe dit, pour chaque entreprise publique du volume, quelles sources on en détient et pour quels exercices. Elle répond à la première demande de l'équipe SOEs de la Banque mondiale : « la remontée des données reste un défi », et le premier geste est de dresser l'état de ce que l'on a. Le tableau est **engendré par script** à partir des données sources du volume : aucune case n'est saisie à la main, et aucune n'est inventée.
 
 ## Ce que lit le tableau {#sec-ep-couverture-sources}
