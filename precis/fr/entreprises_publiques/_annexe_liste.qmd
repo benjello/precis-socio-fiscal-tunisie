@@ -217,3 +217,258 @@ ls.tableau_etablissements(
 : Les textes qui fixent les listes d'entreprises publiques, 1989-2024. La dernière colonne donne le nombre d'entreprises ou d'établissements de la liste après le décret, compté ici ; un tiret quand le décret ne refait pas la liste entière et que le compte n'est pas refait à sa date. {#tbl-ep-liste-registre}
 
 ::::
+
+## Au-delà de la liste : qui contrôle quoi {#sec-ep-liste-controle}
+
+La liste officielle nomme les entreprises publiques elles-mêmes, mais non les sociétés qu'elles contrôlent ou détiennent à leur tour. En réunissant les relations de contrôle déjà documentées — périmètres de consolidation des groupes bancaires et de Tunisair, participations publiques dans les sociétés cotées, portefeuille de l'ETAP, lignes nommées de la STEG, filiales de la STAR —, on mesure l'écart entre cette liste et le périmètre réel.
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import carte_controle as cc
+cc.totaux()
+```
+
+Ce que ce périmètre représente n'est pas seulement un nombre d'entreprises : c'est la nature des entités tenues au bout du contrôle public. En lisant le nom et le périmètre de chacune — classement conservateur, laissé « non classé » au moindre doute —, on voit que les entreprises publiques ne sont pas que des opérateurs de réseau ou de transport. Elles prolongent le secteur public dans des **véhicules financiers** — sociétés de leasing, SICAV et autres organismes de placement, SICAR et fonds de capital-investissement —, dans l'**assurance** et la réassurance, dans l'**immobilier** et la promotion foncière, et, pour l'ETAP, dans les **coentreprises d'exploration-production, de transport et de stockage d'hydrocarbures**. Le graphe ci-dessous en donne la toile ; les barres qui le suivent comptent, par contrôleur puis par secteur, ce que ce contrôle recouvre.
+
+```{python}
+#| echo: false
+#| output: false
+# Données de la toile passées à Observable/D3 par ojs_define. Ce chunk écrit aussi le figdata
+# sourcé (onglet Données) et le repli PNG statique (hors HTML). Même mécanique que la toile
+# validée : coordonnées de _positions_toile ; le D3 n'ajoute que la netteté et le clic-déplie.
+_carte_caption = (
+    "La toile du contrôle public : les grands contrôleurs — l'État et les entreprises "
+    "publiques — au centre, les entités qu'ils contrôlent ou détiennent en périphérie, "
+    "colorées par secteur")
+_carte_note = (
+    "Chaque trait est une relation de contrôle ou de participation du relevé. Les "
+    "contrôleurs forment la couronne intérieure, étiquetés par le nombre d'entités "
+    "qu'ils tiennent ; chaque entité est un point, coloré selon le secteur lu sur "
+    "son nom et le périmètre. L'État figure parmi les contrôleurs : il détient en "
+    "direct huit grandes entreprises publiques. Cliquez un contrôleur pour replier ou "
+    "déplier ses filiales ; survolez un point pour son détail ; cliquez un secteur de la "
+    "légende pour le masquer. Pour garder les 130 relations lisibles, chaque contrôleur "
+    "reçoit une part d'angle proportionnée à son nombre d'entités ; aucune relation n'est "
+    "agrégée ni retirée.")
+carte = cc.preparer_graphe(caption=_carte_caption)
+ojs_define(carte=carte)
+```
+
+::: {#fig-ep-carte-graphe}
+
+::: {.panel-tabset}
+
+## 📈 Graphique
+
+::: {.content-visible when-format="html"}
+
+```{ojs}
+//| echo: false
+// Toile de contrôle en D3 v7 (SVG net). Même disposition que la version validée :
+// contrôleurs en couronne, entités en périphérie (coordonnées de _positions_toile).
+// Clic sur un contrôleur = replie/déplie ses filiales ; survol = infobulle ;
+// clic sur un secteur de la légende = masque/affiche ; État mis en avant ; zoom/pan.
+carteToile = {
+  const data = carte;
+  const L = data.lim;
+  const size = Math.min(width, 820);
+  const H = size;
+  const couleur = s => data.couleurs[s] || data.couleurs["non classé"];
+  const ctrlById = new Map(data.controleurs.map(c => [c.id, c]));
+
+  const collapsed = new Set();
+  const hidden = new Set();
+
+  const container = d3.create("div")
+      .style("position", "relative")
+      .style("font-family", "system-ui, -apple-system, Segoe UI, Roboto, sans-serif");
+
+  const svg = d3.create("svg")
+      .attr("viewBox", [0, 0, size, H])
+      .attr("width", size)
+      .attr("height", H)
+      .attr("style", "max-width:100%; height:auto; background:#fff; cursor:grab;");
+
+  const x = d3.scaleLinear().domain([-L, L]).range([34, size - 34]);
+  const y = d3.scaleLinear().domain([-L, L]).range([H - 34, 34]);
+  const g = svg.append("g");
+
+  const visible = e => !collapsed.has(e.controleur_id) && !hidden.has(e.secteur);
+
+  const edge = g.append("g")
+      .attr("stroke", "#d0d7de").attr("stroke-width", 0.6)
+    .selectAll("line").data(data.entites).join("line")
+      .attr("x1", e => x(ctrlById.get(e.controleur_id).x))
+      .attr("y1", e => y(ctrlById.get(e.controleur_id).y))
+      .attr("x2", e => x(e.x)).attr("y2", e => y(e.y));
+
+  const ent = g.append("g")
+    .selectAll("circle").data(data.entites).join("circle")
+      .attr("cx", e => x(e.x)).attr("cy", e => y(e.y)).attr("r", 5)
+      .attr("fill", e => couleur(e.secteur))
+      .attr("stroke", "white").attr("stroke-width", 0.8)
+      .style("cursor", "pointer")
+      .on("pointerenter", (ev, e) => showTip(ev, infoEnt(e)))
+      .on("pointermove", moveTip)
+      .on("pointerleave", hideTip);
+
+  const ctrlG = g.append("g")
+    .selectAll("g").data(data.controleurs).join("g")
+      .attr("transform", c => `translate(${x(c.x)},${y(c.y)})`)
+      .style("cursor", "pointer")
+      .on("click", (ev, c) => {
+        collapsed.has(c.id) ? collapsed.delete(c.id) : collapsed.add(c.id);
+        update();
+      })
+      .on("pointerenter", (ev, c) => showTip(ev, infoCtrl(c)))
+      .on("pointermove", moveTip)
+      .on("pointerleave", hideTip);
+
+  ctrlG.append("rect")
+      .attr("x", c => c.etat ? -9 : -6).attr("y", c => c.etat ? -9 : -6)
+      .attr("width", c => c.etat ? 18 : 12).attr("height", c => c.etat ? 18 : 12)
+      .attr("rx", 2)
+      .attr("fill", c => c.etat ? "#24292f" : "#57606a")
+      .attr("stroke", "white").attr("stroke-width", 1);
+
+  ctrlG.append("text")
+      .attr("x", c => c.x >= 0 ? 12 : -12)
+      .attr("text-anchor", c => c.x >= 0 ? "start" : "end")
+      .attr("dy", "0.32em")
+      .attr("font-size", c => c.etat ? 12 : 10)
+      .attr("font-weight", c => c.etat ? "700" : "500")
+      .attr("fill", "#24292f")
+      .attr("paint-order", "stroke").attr("stroke", "white").attr("stroke-width", 3)
+      .text(c => `${c.nom} (${c.n})`);
+
+  const sign = ctrlG.append("text")
+      .attr("text-anchor", "middle").attr("dy", "0.32em")
+      .attr("font-size", 9).attr("font-weight", "700").attr("fill", "white")
+      .style("pointer-events", "none");
+
+  function update() {
+    ent.style("display", e => visible(e) ? null : "none");
+    edge.style("display", e => visible(e) ? null : "none");
+    sign.text(c => collapsed.has(c.id) ? "+" : "");
+  }
+
+  svg.call(d3.zoom().scaleExtent([0.5, 8]).on("zoom", ev => g.attr("transform", ev.transform)));
+  container.append(() => svg.node());
+
+  // --- infobulle ---------------------------------------------------------
+  const tip = container.append("div")
+      .style("position", "absolute").style("pointer-events", "none")
+      .style("opacity", 0).style("background", "#24292f").style("color", "white")
+      .style("padding", "6px 9px").style("border-radius", "6px")
+      .style("font-size", "12px").style("line-height", "1.35")
+      .style("max-width", "260px").style("z-index", 10)
+      .style("box-shadow", "0 2px 8px rgba(0,0,0,.25)");
+
+  function infoEnt(e) {
+    const part = (e.part && e.part.trim() !== "") ? e.part + " %" : "non imprimée";
+    const liste = e.dans_liste === "oui" ? "oui" : "non";
+    return `<strong>${e.nom}</strong><br>secteur : ${e.secteur}<br>part : ${part}`
+         + `<br>contrôleur : ${e.controleur}<br>dans la liste officielle : ${liste}`
+         + `<br>source : ${e.source}`;
+  }
+  function infoCtrl(c) {
+    return `<strong>${c.nom}</strong><br>contrôleur${c.etat ? " (État)" : ""}`
+         + `<br>${c.n} entités tenues<br><em>clic : replier / déplier</em>`;
+  }
+  function showTip(ev, html) { tip.html(html).style("opacity", 1); moveTip(ev); }
+  function moveTip(ev) {
+    const [mx, my] = d3.pointer(ev, container.node());
+    tip.style("left", (mx + 14) + "px").style("top", (my + 14) + "px");
+  }
+  function hideTip() { tip.style("opacity", 0); }
+
+  // --- légende des secteurs (clic = filtre) ------------------------------
+  const legende = container.append("div")
+      .style("display", "flex").style("flex-wrap", "wrap").style("gap", "4px 14px")
+      .style("margin-top", "8px").style("font-size", "12px");
+  const items = legende.selectAll("span").data(data.ordre_secteurs).join("span")
+      .style("cursor", "pointer").style("user-select", "none")
+      .style("display", "inline-flex").style("align-items", "center").style("gap", "5px")
+      .on("click", (ev, s) => {
+        hidden.has(s) ? hidden.delete(s) : hidden.add(s);
+        items.style("opacity", d => hidden.has(d) ? 0.35 : 1);
+        update();
+      });
+  items.append("span")
+      .style("width", "11px").style("height", "11px").style("border-radius", "50%")
+      .style("background", s => couleur(s)).style("border", "1px solid #fff")
+      .style("box-shadow", "0 0 0 1px #d0d7de");
+  items.append("span").text(s => s);
+
+  update();
+  return container.node();
+}
+```
+
+:::
+
+::: {.content-hidden when-format="html"}
+
+![](_fig/fig_ep_carte_graphe.png){fig-alt="La toile du contrôle public : contrôleurs au centre, entités contrôlées en périphérie, colorées par secteur."}
+
+:::
+
+```{python}
+#| echo: false
+#| output: asis
+cc.pied_graphe(note_lecture=_carte_note)
+```
+
+## 📊 Données
+
+```{python}
+#| echo: false
+#| output: asis
+cc.onglet_donnees()
+```
+
+## 🔗 Sources
+
+```{python}
+#| echo: false
+#| output: asis
+cc.onglet_sources()
+```
+
+:::
+
+La toile du contrôle public : les grands contrôleurs — l'État et les entreprises publiques — au centre, les entités qu'ils contrôlent ou détiennent en périphérie, colorées par secteur.
+
+:::
+
+Le contrôle n'est pas seulement une participation lointaine. Sur les 130 relations réunies, **la moitié sont des filiales majoritaires** : 51 à 50 % ou plus, 39 à une part donnant une influence notable sans la majorité, 25 minoritaires, et 15 pour lesquelles la source n'imprime pas de taux. La concentration par contrôleur est forte — l'ETAP tient à elle seule une trentaine de lignes, les grandes banques publiques (BNA, STB, BH) chacune une à deux dizaines —, et la plupart de ces entités, 105 des 119 recensées, ne figurent pas sur la liste officielle.
+
+```{python}
+#| echo: false
+#| output: asis
+#| label: fig-ep-carte-controleurs
+cc.barres_controleurs(
+    caption="Nombre d'entités contrôlées ou détenues, par contrôleur",
+    note_lecture="Entités distinctes contrôlées ou détenues par chaque contrôleur du relevé. La "
+                 "couleur distingue les contrôleurs inscrits sur la liste officielle des "
+                 "entreprises publiques de ceux qui ne le sont pas, à commencer par l'État.")
+```
+
+```{python}
+#| echo: false
+#| output: asis
+#| label: fig-ep-carte-secteurs
+cc.repartition_secteurs(
+    caption="Répartition par secteur des entités contrôlées, lecture conservatrice de leur nom "
+            "et de leur périmètre",
+    note_lecture="Entités contrôlées distinctes, rangées par secteur. Le secteur est une lecture "
+                 "du nom et du périmètre, laissée « non classé » au moindre doute : le bloc « non "
+                 "classé » réunit les sociétés dont la nature n'est pas établie ici, sans la "
+                 "deviner.")
+```
+
+- **Un contrôle qui déborde largement la liste.** La plupart des entités contrôlées — véhicules financiers, assurances, sociétés immobilières, coentreprises d'exploration-production — ne sont pas sur la liste officielle, et leur contrôle n'apparaît que dans les comptes consolidés ou les portefeuilles de participations de leur maison mère.
+- **Ce que la carte ne dit pas : le poids économique.** La carte dit *qui* tient *quoi*, et dans quel secteur ; elle ne dit pas *combien pèse* chaque entité contrôlée. Le capital, le chiffre d'affaires et les effectifs de ces filiales ne sont pas publiés de façon uniforme : aucun n'est fabriqué ni estimé ici, et cette lacune est assumée. Elle n'est comblée que là où la filiale est elle-même suivie — société cotée à la Bourse de Tunis, ou entreprise publique dotée de ses propres comptes.
+- **Un relevé non exhaustif.** La STEG ne nomme que les lignes principales de son portefeuille, sans taux ; les offices et les grands établissements de réseau — SONEDE, ONAS — ne publient pas de périmètre consolidé au dépôt : leurs filiales éventuelles n'y figurent pas. Le périmètre réel est donc un plancher, non un total.

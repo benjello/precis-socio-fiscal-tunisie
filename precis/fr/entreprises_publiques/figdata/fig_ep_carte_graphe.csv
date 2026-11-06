@@ -1,0 +1,137 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-11-06
+# séries (tunisia_data) : carte-controle
+# sources (citation) : @bvmt-air-liquide-tunisie, @bvmt-atl, @bvmt-bh-assurance, @bvmt-bh-bank, @bvmt-bh-leasing, @bvmt-bna, @bvmt-bna-assurances, @bvmt-bte-adp, @bvmt-ciments-de-bizerte, @bvmt-ef-bte-2024-consolide, @bvmt-ef-star-2021-consolide, @bvmt-ef-star-2022-consolide, @bvmt-ef-tunisair-2022-consolide, @bvmt-ra-bna-2021, @bvmt-ra-stb-2021, @bvmt-simpar, @bvmt-sotetel, @bvmt-sotrapil, @bvmt-sotumag, @bvmt-star, @bvmt-stb, @bvmt-tunis-re, @bvmt-tunisair, @bvmt-wifak-international-bank, @etap-ra-2023, @ra-bh-2022, @steg-ef-2014, @steg-ef-2018, @steg-ef-2023
+# fiches : 
+# méthode/hypothèses : Le secteur est une lecture conservatrice du nom et du périmètre, « non classé » au moindre doute ; ce n'est pas un poids économique. Le capital et le chiffre d'affaires de chaque entité contrôlée ne sont pas disponibles uniformément : ils ne sont pas portés ici. Le relevé n'est pas exhaustif (portefeuille non nominatif de la STEG, offices sans périmètre consolidé) : le périmètre réel est un plancher.
+# note : La toile du contrôle public : les grands contrôleurs — l'État et les entreprises publiques — au centre, les entités qu'ils contrôlent ou détiennent en périphérie, colorées par secteur
+controleur,controlee,secteur,part_interet_pct,controlee_dans_liste_officielle,source
+BH,BH SICAF,SICAV/OPCVM,53.18,non,ra-bh-2022
+BH,SICAV BH-Capitalisation,SICAV/OPCVM,20.25,non,ra-bh-2022
+BH,SICAV BH-Obligataire,SICAV/OPCVM,9.66,non,ra-bh-2022
+BH,BH ASSURANCES,assurance,34.13,non,ra-bh-2022
+BH,BH Assurance,assurance,23.93,non,bvmt-bh-assurance
+BH,BH IMMO,immobilier,58.52,non,ra-bh-2022
+BH,BH Leasing,leasing,41.64,non,bvmt-bh-leasing
+BH,BH EQUITY,non classé,53.08,non,ra-bh-2022
+BH,BH INVEST,non classé,62.31,non,ra-bh-2022
+BH,STIMEC (BH PRINT),non classé,43.11,non,ra-bh-2022
+BH,TFB,non classé,18.79,non,ra-bh-2022
+BH,BH RECOUVREMENT,recouvrement,77.84,non,ra-bh-2022
+BNA,SICAR INVEST,SICAR/capital-investissement,74.77,non,bvmt-ra-bna-2021
+BNA,Placement Obligataire SICAV,SICAV/OPCVM,0.06,non,bvmt-ra-bna-2021
+BNA,SICAF Participations,SICAV/OPCVM,99.82,non,bvmt-ra-bna-2021
+BNA,SICAV BNA,SICAV/OPCVM,31.66,non,bvmt-ra-bna-2021
+BNA,SOIVM SICAF,SICAV/OPCVM,77.58,non,bvmt-ra-bna-2021
+BNA,BNA Assurances,assurance,44.9,non,bvmt-bna-assurances
+BNA,TUNIS-RE,assurance,19.77,oui,bvmt-ra-bna-2021
+BNA,CAP BANK,banque,23.78,non,bvmt-ra-bna-2021
+BNA,ATL,leasing,11.1,non,bvmt-atl
+BNA,AMI,non classé,52.07,non,bvmt-ra-bna-2021
+BNA,BNA Capitaux,non classé,99.27,non,bvmt-ra-bna-2021
+BNA,ESSOUKNA,non classé,23.41,non,bvmt-ra-bna-2021
+BNA,GENERALE DE VENTE,non classé,49.91,non,bvmt-ra-bna-2021
+BNA,LES ŒILLETS,non classé,52.88,non,bvmt-ra-bna-2021
+BNA,SIMPAR,non classé,30.27,non,bvmt-simpar
+BNA,SIVIA,non classé,42.24,non,bvmt-ra-bna-2021
+BNA,SODET SUD,non classé,53.95,non,bvmt-ra-bna-2021
+BNA,SODINO,non classé,24.71,non,bvmt-ra-bna-2021
+BNA,SOFINREC,non classé,99.29,non,bvmt-ra-bna-2021
+BNA,SOGEST,non classé,44.93,non,bvmt-ra-bna-2021
+BNA,SPI MADINA,non classé,41.04,non,bvmt-ra-bna-2021
+BNA,ZIED SARL,non classé,30.65,non,bvmt-ra-bna-2021
+BNA,AGROSERVICES,services,34.79,non,bvmt-ra-bna-2021
+BNA,Tunisie Informatique Services,services,46.64,non,bvmt-ra-bna-2021
+BNA Participations,Tunis Re,assurance,18.98,oui,bvmt-tunis-re
+BNA Participations,Air Liquide Tunisie,industrie,11.06,non,bvmt-air-liquide-tunisie
+BTE,BTE – SICAR,SICAR/capital-investissement,100,non,bvmt-ef-bte-2024-consolide
+BTE,Tuniso Émiratie Sicav (TES),SICAV/OPCVM,4.02,non,bvmt-ef-bte-2024-consolide
+BTE,T.E.P (C.T.E.I),non classé,100,non,bvmt-ef-bte-2024-consolide
+BTE,Rapid Recouvrement,recouvrement,99.73,non,bvmt-ef-bte-2024-consolide
+CNSS,STB,banque,5.69,oui,bvmt-stb
+Caisse des dépôts et consignations,Wifak International Bank,banque,10.0,non,bvmt-wifak-international-bank
+ETAP,FCPR TAAHIL INVEST,SICAR/capital-investissement,71.43,non,etap-ra-2023
+ETAP,SODIK-SICAR,SICAR/capital-investissement,59.98,non,etap-ra-2023
+ETAP,SODIT-SICAR,SICAR/capital-investissement,48,non,etap-ra-2023
+ETAP,STAR,assurance,19.02,oui,etap-ra-2023
+ETAP,Tunis Re,assurance,3.79,oui,etap-ra-2023
+ETAP,BH,banque,16.57,oui,bvmt-bh-bank
+ETAP,BNA,banque,2.27,oui,etap-ra-2023
+ETAP,BTS,banque,,oui,etap-ra-2023
+ETAP,STB,banque,2.22,oui,etap-ra-2023
+ETAP,STUSID Bank,banque,,non,etap-ra-2023
+ETAP,BTL,non classé,,non,etap-ra-2023
+ETAP,ITF,non classé,,non,etap-ra-2023
+ETAP,PAEZ,non classé,12.4,non,etap-ra-2023
+ETAP,S.A.G.E.S,non classé,,non,etap-ra-2023
+ETAP,SGTBC,non classé,2.43,non,etap-ra-2023
+ETAP,SNIPE,non classé,,non,etap-ra-2023
+ETAP,TECI,non classé,,non,etap-ra-2023
+ETAP,APO,énergie-pétrole,50,non,etap-ra-2023
+ETAP,BITUMED,énergie-pétrole,8,non,etap-ra-2023
+ETAP,CTKCP,énergie-pétrole,50,non,etap-ra-2023
+ETAP,Compagnie tunisienne de forage,énergie-pétrole,90,oui,etap-ra-2023
+ETAP,Joint Oil,énergie-pétrole,50,non,etap-ra-2023
+ETAP,MARETAP,énergie-pétrole,50,non,etap-ra-2023
+ETAP,NUMHYD,énergie-pétrole,50,non,etap-ra-2023
+ETAP,SCITT,énergie-pétrole,50,non,etap-ra-2023
+ETAP,SEREE,énergie-pétrole,50,non,etap-ra-2023
+ETAP,SEREPT,énergie-pétrole,50,non,etap-ra-2023
+ETAP,SERGAZ,énergie-pétrole,33.23,non,etap-ra-2023
+ETAP,SNDP,énergie-pétrole,,oui,etap-ra-2023
+ETAP,SODEPS,énergie-pétrole,50,non,etap-ra-2023
+ETAP,SOTRAPIL,énergie-pétrole,18.28,non,bvmt-sotrapil
+ETAP,SOTUGAT,énergie-pétrole,99.8,non,etap-ra-2023
+ETAP,SOTULUB,énergie-pétrole,27.09,non,etap-ra-2023
+ETAP,SSC,énergie-pétrole,40,non,etap-ra-2023
+ETAP,TANKMED,énergie-pétrole,40,non,etap-ra-2023
+ETAP,TPS,énergie-pétrole,50,non,etap-ra-2023
+ETAP,TRAPSA,énergie-pétrole,35,oui,etap-ra-2023
+Office du commerce de la Tunisie,SOTUMAG,non classé,7.55,oui,bvmt-sotumag
+Office national des postes,BTE,banque,8.62,non,bvmt-bte-adp
+STAR,Institut africain des assurances,assurance,,non,bvmt-ef-star-2022-consolide
+STAR,Tunis Re,assurance,15.62,oui,bvmt-tunis-re
+STAR,La Lyre Immobilière,immobilier,99.997,non,bvmt-ef-star-2021-consolide
+STB,STB SICAR,SICAR/capital-investissement,98.58,non,bvmt-ra-stb-2021
+STB,SICAV EPARGNANT,SICAV/OPCVM,8.68,non,bvmt-ra-stb-2021
+STB,SICAV EPARGNE OBLIGATAIRE,SICAV/OPCVM,1.56,non,bvmt-ra-stb-2021
+STB,SICAV L'INVESTISSEUR,SICAV/OPCVM,75.85,non,bvmt-ra-stb-2021
+STB,SICAV L’AVENIR,SICAV/OPCVM,97.55,non,bvmt-ra-stb-2021
+STB,SONI BANK,banque,25.00,non,bvmt-ra-stb-2021
+STB,TUNISIAN FOREIGN BANK,banque,49.45,non,bvmt-ra-stb-2021
+STB,L’IMMOBILIERE DE L'AVENUE,immobilier,99.16,non,bvmt-ra-stb-2021
+STB,MAGASINS GENERAUX ET ENTREPORTS REELS DE TUNIS,non classé,49.93,non,bvmt-ra-stb-2021
+STB,"S.C.I "" LA MAISON DU BANQUIER""",non classé,19.96,non,bvmt-ra-stb-2021
+STB,"S.P.C.M ""ELFEJJA""",non classé,20.00,non,bvmt-ra-stb-2021
+STB,S.T.C VERITAS,non classé,27.05,non,bvmt-ra-stb-2021
+STB,SOCIETE ACTIVHOTELS,non classé,99.93,non,bvmt-ra-stb-2021
+STB,SOCIETE ED DKHILA,non classé,67.51,non,bvmt-ra-stb-2021
+STB,SOCIETE LA GENERALE DES VENTES,non classé,49.99,non,bvmt-ra-stb-2021
+STB,STB FINANCE,non classé,95.55,non,bvmt-ra-stb-2021
+STB,STB INVEST,non classé,94.72,non,bvmt-ra-stb-2021
+STB,STB MANAGER,non classé,99.40,non,bvmt-ra-stb-2021
+STB,STE TUN.RECOUVR. DES CREANCES “STRC”,recouvrement,99.72,non,bvmt-ra-stb-2021
+STB,STB SECURITE ET GARDIENNAGE,services,97.06,non,bvmt-ra-stb-2021
+STB,STE MOYENS GENERAUX,services,97.15,non,bvmt-ra-stb-2021
+STEG,SODIT SICAR,SICAR/capital-investissement,,non,steg-ef-2018
+STEG,STB,banque,,oui,steg-ef-2023
+STEG,Elmed Études,non classé,,non,steg-ef-2023
+STEG,Technopole de Borj Cedria,non classé,,non,steg-ef-2023
+STEG,Joint-Gaz,énergie-pétrole,,non,steg-ef-2023
+STEG,STEG Énergies renouvelables,énergie-pétrole,,non,steg-ef-2014
+STIR,SOTRAPIL,énergie-pétrole,34.03,non,bvmt-sotrapil
+Tunisair,AMADEUS,non classé,70,non,bvmt-ef-tunisair-2022-consolide
+Tunisair,ATCT,non classé,37,non,bvmt-ef-tunisair-2022-consolide
+Tunisair,SCI ESSAFA,non classé,99.9,non,bvmt-ef-tunisair-2022-consolide
+Tunisair,TUNISAIR EXPRESS,non classé,88.73,non,bvmt-ef-tunisair-2022-consolide
+Tunisair,TUNISAIR HANDLING,services,100,non,bvmt-ef-tunisair-2022-consolide
+Tunisair,TUNISAIR TECHNICS,services,100,non,bvmt-ef-tunisair-2022-consolide
+Tunisair,TUNISIE CATERING,services,45,non,bvmt-ef-tunisair-2022-consolide
+Tunisie Télécom,SOTETEL,non classé,35.0,oui,bvmt-sotetel
+État,STAR,assurance,38.64,oui,bvmt-star
+État,BH,banque,33.37,oui,bvmt-bh-bank
+État,BNA,banque,35.26,oui,bvmt-bna
+État,BTE,banque,32.19,non,bvmt-bte-adp
+État,STB,banque,71.54,oui,bvmt-stb
+État,Ciments de Bizerte,industrie,79.81,oui,bvmt-ciments-de-bizerte
+État,SOTUMAG,non classé,37.5,oui,bvmt-sotumag
+État,Tunisair,non classé,74.42,oui,bvmt-tunisair
