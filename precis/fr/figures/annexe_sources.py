@@ -1,7 +1,8 @@
 """Annexe engendrée « Les sources de données chiffrées » (`precis/fr/annexe-sources.qmd`).
 
     from figures import annexe_sources
-    annexe_sources.rendre()   # émet tout le corps : une sous-section par famille, une entrée par source
+    annexe_sources.rendre()   # émet tout le corps : une sous-section par famille, une entrée par
+                              # source ISOLÉE et une entrée CONDENSÉE par collection annuelle
 
 MODULE DE FIGURE D'UNE PAGE DE SITE, et non d'un livre : il vit dans `precis/fr/figures/`, à
 côté de la page (comme `figures/annexe_pib.py`) ; la page arabe le trouverait par le lien
@@ -17,14 +18,35 @@ CE QUE FAIT LE MODULE (projection engendrée, rien de dupliqué).
   4. Classe chaque source dans une FAMILLE via la table versionnée `sources_familles.yml`
      (producteur -> famille), avec la règle « annexe … loi de finances » et une famille par
      défaut (voir `_famille`).
-  5. Émet le corps GROUPÉ par famille (sous-section `###`, ancre `#src-fam-<slug>`), puis par
-     source — ancre STABLE `#src-<cle>` à laquelle les livres et les onglets « 🔗 Sources » des
-     figures renverront. Par source : titre, producteur, et lien d'accès (URL publique) si
-     references.json en porte une.
+  5. CONDENSE les COLLECTIONS ANNUELLES. Beaucoup de supports sont la même série répétée par
+     année (« Rapport sur les entreprises publiques (annexe 9 au PLF pour 2020, 2021, … » ;
+     « Budget du ministère du Transport pour l'année 2013 … 2017 » ; « تقرير المالية العمومية
+     لسنة 2005, 2008 »). Chaque année = une clé → une liste interminable. On regroupe, DANS
+     CHAQUE FAMILLE, les sources d'une même collection en UNE entrée (voir `_grouper`) :
+       - sous-type / radical = le titre privé de son (ses) token(s) d'année 19xx/20xx, comparé
+         sans accents ni casse, APPARIÉ AU MÊME PRODUCTEUR. Deux titres qui se réduisent au même
+         radical pour le même producteur = une collection ;
+       - année d'édition = l'unique année distincte lue dans le titre (c'est le token qui varie
+         d'un membre à l'autre et définit la série) ; un titre à deux années distinctes (p. ex.
+         « … à fin 2016 et janvier 2017 ») ne se réduit pas et reste ISOLÉ ;
+       - intervalle = min–max des années d'édition, inséré à la place du token dans le titre le
+         plus récent (le libellé de la collection) ;
+       - manquants = années absentes de [min, max], SIGNALÉES seulement si la cadence annuelle
+         est RÉELLEMENT établie (≥ 3 éditions et densité présents/intervalle ≥ 0,7) ; une série
+         clairsemée (quelques éditions éparses sur vingt ans) n'affiche AUCUN manquant, pour ne
+         pas inventer une complétude attendue ;
+       - une source isolée (un seul document, pas de série) reste une entrée individuelle.
+  6. Émet le corps GROUPÉ par famille (sous-section `###`, ancre `#src-fam-<slug>`). CHAQUE clé
+     — isolée ou regroupée dans une collection — conserve son ancre STABLE `#src-<cle>` à
+     laquelle les livres et les onglets « 🔗 Sources » des figures renvoient : dans une entrée
+     condensée, chaque année porte un lien (ou un libellé) ancré `[année](url){#src-<cle>}`, de
+     sorte que TOUS les `#src-<cle>` restent résolvables (le nombre d'ancres est invariant).
 
 RÈGLES (le précis l'exige).
-  - **Rien de fabriqué.** Titre, producteur et URL sont LUS dans references.json ; une
-    métadonnée absente (souvent l'URL) est laissée vide, jamais inventée.
+  - **Rien de fabriqué.** Titre, producteur, URL et année sont LUS dans references.json / le
+    titre ; une métadonnée absente (souvent l'URL) est laissée vide, jamais inventée. Une année
+    illisible n'est pas affichée ; un « manquant » n'est signalé que si l'intervalle annuel est
+    réellement établi (cf. le garde-fou de densité ci-dessus).
   - **Une clé citée absente de references.json, ou d'un `type` inattendu, est SIGNALÉE** (en
     commentaire HTML en fin de corps, et sur stderr), non forcée ni corrigée en silence.
   - **Aucun nom de fichier (CSV, figdata, listes) dans le texte publié.** Les manifestes et les
@@ -66,6 +88,86 @@ def _slug(s: str) -> str:
     s = _sans_accents(s)
     s = re.sub(r"[^a-z0-9]+", "-", s).strip("-")
     return s or "x"
+
+
+# Un token d'année isolé (19xx/20xx), pas un simple groupe de 4 chiffres dans un plus grand nombre.
+_ANNEE = re.compile(r"(?<!\d)(?:19|20)\d{2}(?!\d)")
+_TIRET = "\u2013"   # tiret demi-cadratin pour les intervalles : 2013–2017
+# Densité minimale (présents / étendue) et nombre minimal d'éditions pour oser signaler des années
+# manquantes : en deçà, la série est trop clairsemée pour qu'une cadence annuelle soit établie.
+_DENSITE_MIN = 0.7
+_EDITIONS_MIN = 3
+
+
+def _annees_titre(titre: str) -> list[int]:
+    """Années distinctes (tokens 19xx/20xx) lues dans un titre, triées."""
+    return sorted({int(m.group(0)) for m in _ANNEE.finditer(titre)})
+
+
+def _radical(titre: str) -> str:
+    """Radical d'un titre : son texte privé des tokens d'année, sans accents ni casse.
+
+    C'est la clé de collection : deux titres d'un même producteur qui ne diffèrent que par
+    l'année se réduisent au même radical.
+    """
+    r = _ANNEE.sub("\u00a7", titre)
+    return _sans_accents(re.sub(r"\s+", " ", r).strip())
+
+
+def _collection(membres: list[tuple[int, dict]]) -> dict:
+    """Construit une entrée de collection à partir de ses membres `(annee, source)`.
+
+    Libellé = titre du membre le plus récent, son token d'année remplacé par l'intervalle.
+    Manquants = années absentes de [min, max], mais seulement si la cadence est établie.
+    """
+    membres = sorted(membres, key=lambda t: t[0])
+    annees = [a for a, _ in membres]
+    amin, amax = annees[0], annees[-1]
+    recent = membres[-1][1]
+    libelle = _ANNEE.sub(f"{amin}{_TIRET}{amax}", recent["titre"]) if amin != amax else recent["titre"]
+    present = set(annees)
+    etendue = amax - amin + 1
+    manquants = [y for y in range(amin, amax + 1) if y not in present]
+    etablie = len(present) >= _EDITIONS_MIN and etendue > 0 and len(present) / etendue >= _DENSITE_MIN
+    if not etablie:
+        manquants = []   # trop clairsemé : on ne postule pas une complétude annuelle
+    url = recent["url"] or next((d["url"] for _, d in reversed(membres) if d["url"]), "")
+    return {
+        "collection": True,
+        "titre": libelle,
+        "producteur": recent["producteur"],
+        "url": url,
+        "membres": membres,
+        "amin": amin,
+        "amax": amax,
+        "manquants": manquants,
+    }
+
+
+def _grouper(entrees: list[dict]) -> list[dict]:
+    """Condense une liste de sources (d'une famille) : collections annuelles + sources isolées.
+
+    Rend une liste d'items : soit une source isolée (dict d'origine), soit une collection
+    (`collection=True`). Une collection = ≥ 2 membres d'un même radical et producteur, chacun
+    portant exactement UNE année distincte, ces années étant toutes différentes. Tout le reste
+    (titre sans année, titre à plusieurs années, radical/producteur unique) reste isolé.
+    """
+    from collections import defaultdict
+    groupes: dict[tuple[str, str], list[tuple[list[int], dict]]] = defaultdict(list)
+    for d in entrees:
+        annees = _annees_titre(d["titre"])
+        cle_groupe = (_radical(d["titre"]), _sans_accents(d["producteur"])) if len(annees) == 1 \
+            else ("\x00iso\x00" + d["cle"], "")   # titre sans/à plusieurs années : isolé d'office
+        groupes[cle_groupe].append((annees, d))
+    items: list[dict] = []
+    for membres in groupes.values():
+        annees = [a[0] for a, _ in membres if len(a) == 1]
+        if len(membres) >= 2 and len(annees) == len(membres) and len(set(annees)) == len(membres):
+            items.append(_collection([(a[0], d) for a, d in membres]))
+        else:
+            items.extend(d for _, d in membres)
+    items.sort(key=lambda it: (_sans_accents(it["producteur"]), _sans_accents(it["titre"])))
+    return items
 
 
 def _cles_citees() -> set[str]:
@@ -177,27 +279,58 @@ def collecter() -> tuple[dict[str, list[dict]], list[str], list[str]]:
     return par_famille, sorted(set(inconnues)), sorted(set(types_inattendus))
 
 
+def _rendre_collection(c: dict) -> str:
+    """Ligne Markdown d'une entrée condensée : libellé, producteur, éditions, manquants, années.
+
+    Chaque année porte l'ancre `#src-<cle>` de son membre (lien si URL, sinon simple libellé
+    ancré) : tous les renvois `#src-<cle>` de la collection restent résolvables.
+    """
+    tete = f"- **{c['titre']}** — {c['producteur']}".rstrip(" —")
+    corps = f"{len(c['membres'])} éditions ({c['amin']}{_TIRET}{c['amax']})"
+    if c["manquants"]:
+        corps += ", manque " + ", ".join(str(y) for y in c["manquants"])
+    avec_url = any(d["url"] for _, d in c["membres"])
+    liens = [
+        f"[{a}]({d['url']}){{#src-{d['cle']}}}" if d["url"] else f"[{a}]{{#src-{d['cle']}}}"
+        for a, d in c["membres"]
+    ]
+    etiquette = "Accès par année" if avec_url else "Éditions"
+    return f"{tete}. {corps}. {etiquette} : " + ", ".join(liens) + "."
+
+
 def rendre() -> None:
     """Émet (print) tout le corps Markdown de l'annexe, sous `#| output: asis`."""
     par_famille, inconnues, types_inattendus = collecter()
     n_sources = sum(len(v) for v in par_famille.values())
     n_familles = len(par_famille)
 
+    # Condensation des collections annuelles, famille par famille.
+    par_famille_items = {nom: _grouper(entrees) for nom, entrees in par_famille.items()}
+    n_entrees = sum(len(v) for v in par_famille_items.values())
+    n_collections = sum(1 for v in par_famille_items.values() for it in v if it.get("collection"))
+
     out: list[str] = []
     noms = list(par_famille)
     liste_fam = ", ".join(noms[:-1]) + (" et " + noms[-1] if len(noms) > 1 else noms[0])
     out.append(
-        f"Cette annexe liste **{n_sources} supports de données chiffrées**, répartis en "
-        f"**{n_familles} familles** : {liste_fam}. Chaque source porte une ancre stable "
-        "`#src-<clé>` à laquelle les volumes et les figures renvoient.\n"
+        f"Cette annexe recense **{n_sources} supports de données chiffrées**, condensés en "
+        f"**{n_entrees} entrées** : les collections annuelles — une même série répétée d'année en "
+        f"année — sont regroupées en une entrée portant son intervalle d'années et, quand la "
+        f"cadence annuelle est établie, les années manquantes ({n_collections} collections ainsi "
+        f"regroupées). Le tout se répartit en **{n_familles} familles** : {liste_fam}. Chaque "
+        "support garde son ancre stable `#src-<clé>` à laquelle les volumes et les figures "
+        "renvoient — y compris, dans une entrée condensée, année par année.\n"
     )
-    for nom, entrees in par_famille.items():
-        out.append(f"\n### {nom} ({len(entrees)}) {{#src-fam-{_slug(nom)}}}\n")
-        for d in entrees:
-            ligne = f"- []{{#src-{d['cle']}}}**{d['titre']}** — {d['producteur']}".rstrip(" —")
-            if d["url"]:
-                ligne += f". [Accès]({d['url']})"
-            out.append(ligne)
+    for nom, items in par_famille_items.items():
+        out.append(f"\n### {nom} ({len(items)}) {{#src-fam-{_slug(nom)}}}\n")
+        for it in items:
+            if it.get("collection"):
+                out.append(_rendre_collection(it))
+            else:
+                ligne = f"- []{{#src-{it['cle']}}}**{it['titre']}** — {it['producteur']}".rstrip(" —")
+                if it["url"]:
+                    ligne += f". [Accès]({it['url']})"
+                out.append(ligne)
         out.append("")
 
     # Signalement (hors texte publié) : clés citées mais absentes de references.json,

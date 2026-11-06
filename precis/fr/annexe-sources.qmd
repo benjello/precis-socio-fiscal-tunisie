@@ -29,7 +29,9 @@ Le texte purement législatif — le Journal officiel de la République tunisien
 
 Chaque **famille de source** est une sous-section ; à l'intérieur, chaque **source** est une entrée portant son **titre**, son **producteur** et, lorsqu'il est public, un **lien d'accès**. Une source sans lien d'accès est une source dont le précis ne connaît pas d'adresse publique stable : le champ est alors laissé vide, non deviné.
 
-Chaque source porte une **ancre stable** de la forme `#src-<clé>`, où `<clé>` est la clé de citation de la source. C'est à cette ancre que renvoient les annexes des volumes et l'onglet « 🔗 Sources » de chaque figure, de sorte qu'une source décrite ici ne soit pas redécrite ailleurs.
+Les **collections annuelles** — une même série publiée édition après édition (un rapport reparaissant chaque année, par exemple) — sont **condensées en une seule entrée** : son titre porte alors l'**intervalle d'années** couvert, et, lorsque la cadence annuelle est nettement établie, les **années manquantes** sont signalées. Les éditions y restent accessibles **année par année**. Une source isolée, sans série, demeure une entrée individuelle.
+
+Chaque source porte une **ancre stable** de la forme `#src-<clé>`, où `<clé>` est la clé de citation de la source. C'est à cette ancre que renvoient les annexes des volumes et l'onglet « 🔗 Sources » de chaque figure, de sorte qu'une source décrite ici ne soit pas redécrite ailleurs. Dans une entrée condensée, **chaque année regroupée conserve son ancre** : aucun renvoi ne se perd.
 
 La **période couverte** et les **réserves** d'emploi d'une source ne figurent pas dans le registre : elles dépendent de la série précise qu'on en tire — une même source alimente souvent plusieurs séries, de périmètres et de réserves différents. Elles sont donc portées là où elles se lisent sans ambiguïté : l'onglet « 🔗 Sources » de la figure concernée, au plus près du chiffre.
 
