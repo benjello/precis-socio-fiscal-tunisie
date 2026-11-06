@@ -219,6 +219,135 @@ def fig_graphe():
     return fig
 
 
+def _positions_toile(df: pd.DataFrame):
+    """Calcule, comme la version matplotlib, les coordonnées de la toile.
+
+    Rend (noeuds_ctrl, noeuds_ent, aretes) où :
+      - noeuds_ctrl : liste de dicts {nom, x, y, n, etat}
+      - noeuds_ent  : liste de dicts {controlee, controleur, secteur, part, source, x, y}
+        (un point par RELATION, comme la figure statique : une entité tenue par deux
+        contrôleurs apparaît deux fois, chacune sourcée)
+      - aretes      : liste de (x0, y0, x1, y1) du contrôleur vers l'entité
+    Positionnement IDENTIQUE à fig_graphe (contrôleurs en couronne, entités en périphérie).
+    """
+    rel = df[["controleur", "controlee", "secteur", "part_interet_pct", "source"]]
+    lignes = list(rel.itertuples(index=False, name=None))
+    ordre = list(_entites_par_controleur(df).index)  # gros contrôleurs d'abord
+    par_ctrl = {c: [(e, s, p, src) for cc_, e, s, p, src in lignes if cc_ == c] for c in ordre}
+
+    poids = {c: max(len(par_ctrl[c]), 3) for c in ordre}
+    total = sum(poids.values())
+    gap = math.radians(3)
+    dispo = 2 * math.pi - gap * len(ordre)
+    R_ctrl = 1.0
+
+    noeuds_ctrl, noeuds_ent, aretes = [], [], []
+    angle = math.pi / 2  # du haut, sens horaire
+    for c in ordre:
+        enfants = par_ctrl[c]
+        span = dispo * poids[c] / total
+        a0 = angle - gap / 2 - span
+        a1 = angle - gap / 2
+        centre = (a0 + a1) / 2
+        xc, yc = R_ctrl * math.cos(centre), R_ctrl * math.sin(centre)
+        etat = (c == "État")
+        n = len(enfants)
+        rangs = 1 if n <= 7 else (2 if n <= 18 else 3)
+        cols = math.ceil(n / rangs)
+        for i, (e, s, p, src) in enumerate(enfants):
+            col, rang = i % cols, i // cols
+            a = centre if cols == 1 else a0 + (a1 - a0) * (col + 0.5) / cols
+            r = 1.6 + rang * 0.42
+            x, y = r * math.cos(a), r * math.sin(a)
+            aretes.append((xc, yc, x, y))
+            noeuds_ent.append({"controlee": e, "controleur": c, "secteur": s,
+                               "part": p, "source": src, "x": x, "y": y})
+        noeuds_ctrl.append({"nom": c, "x": xc, "y": yc, "n": n, "etat": etat})
+        angle -= span + gap
+    return noeuds_ctrl, noeuds_ent, aretes
+
+
+def fig_graphe_plotly():
+    """La même toile, en Plotly : survol, zoom/pan, et clic-légende pour filtrer un secteur.
+
+    Positions reprises telles quelles de la version matplotlib (`_positions_toile`). Chaque
+    secteur est une trace : cliquer sa pastille dans la légende le masque/affiche (filtre
+    natif Plotly). Le survol d'une entité donne nom, secteur, part %, contrôleur et source ;
+    l'État est mis en avant parmi les contrôleurs.
+    """
+    import plotly.graph_objects as go
+
+    df = _lire()
+    noeuds_ctrl, noeuds_ent, aretes = _positions_toile(df)
+    fig = go.Figure()
+
+    # Arêtes, en un seul trait fin gris derrière tout le reste.
+    ex, ey = [], []
+    for x0, y0, x1, y1 in aretes:
+        ex += [x0, x1, None]
+        ey += [y0, y1, None]
+    fig.add_trace(go.Scatter(
+        x=ex, y=ey, mode="lines", line=dict(color="#d0d7de", width=0.5),
+        hoverinfo="skip", showlegend=False, name="relations"))
+
+    # Entités groupées par secteur -> une trace par secteur = filtre clic-légende.
+    presents = [s for s in ORDRE_SECTEURS if s in {n["secteur"] for n in noeuds_ent}]
+    for s in presents:
+        pts = [n for n in noeuds_ent if n["secteur"] == s]
+        textes = []
+        for n in pts:
+            part = f"{n['part']} %" if str(n["part"]).strip() else "non imprimée"
+            textes.append(
+                f"<b>{n['controlee']}</b><br>secteur : {figtools.fig_text(s)}"
+                f"<br>part : {part}<br>contrôleur : {n['controleur']}"
+                f"<br>source : {n['source']}")
+        fig.add_trace(go.Scatter(
+            x=[n["x"] for n in pts], y=[n["y"] for n in pts], mode="markers",
+            name=figtools.fig_text(s), legendgroup=s,
+            marker=dict(size=9, color=COULEURS.get(s, COULEURS["non classé"]),
+                        line=dict(color="white", width=0.8)),
+            customdata=textes, hovertemplate="%{customdata}<extra></extra>"))
+
+    # Contrôleurs : carrés. L'État en trace distincte, plus gros et plus sombre.
+    for etat, nom_trace, couleur, taille in (
+            (False, "contrôleur", "#57606a", 13), (True, "État", "#24292f", 17)):
+        pts = [c for c in noeuds_ctrl if c["etat"] == etat]
+        if not pts:
+            continue
+        fig.add_trace(go.Scatter(
+            x=[c["x"] for c in pts], y=[c["y"] for c in pts], mode="markers",
+            name=nom_trace, legendgroup="_controleurs",
+            marker=dict(size=taille, color=couleur, symbol="square",
+                        line=dict(color="white", width=0.8)),
+            customdata=[f"<b>{c['nom']}</b><br>contrôleur<br>{c['n']} entités tenues"
+                        for c in pts],
+            hovertemplate="%{customdata}<extra></extra>"))
+
+    # Étiquettes des contrôleurs, posées vers l'intérieur (comme la statique).
+    for c in noeuds_ctrl:
+        ang = math.atan2(c["y"], c["x"])
+        lab_r = 1.0 - 0.16
+        lx, ly = lab_r * math.cos(ang), lab_r * math.sin(ang)
+        droite = math.cos(ang) >= 0
+        fig.add_annotation(
+            x=lx, y=ly, text=f"<b>{c['nom']}</b> ({c['n']})" if c["etat"]
+            else f"{c['nom']} ({c['n']})",
+            showarrow=False, xanchor="left" if droite else "right", yanchor="middle",
+            font=dict(size=11 if c["etat"] else 9, color="#24292f"))
+
+    lim = 2.7
+    fig.update_layout(
+        title=dict(text="La toile du contrôle public — survolez un point, cliquez un secteur "
+                        "dans la légende pour le filtrer", font=dict(size=13), x=0.5),
+        showlegend=True, legend=dict(title="secteur / rôle", font=dict(size=10),
+                                     orientation="v", x=1.02, y=1),
+        hovermode="closest", plot_bgcolor="white", paper_bgcolor="white",
+        margin=dict(l=10, r=10, t=50, b=10), height=760)
+    fig.update_xaxes(visible=False, range=[-lim, lim])
+    fig.update_yaxes(visible=False, range=[-lim, lim], scaleanchor="x", scaleratio=1)
+    return fig
+
+
 def fig_barres_controleurs():
     """Barres horizontales : nombre d'entités contrôlées par contrôleur."""
     figtools.apply_lang_font()
@@ -280,6 +409,56 @@ def graphe(caption: str, note_lecture: str | None = None) -> None:
     figtools.figure_tabs(fig_graphe(), table_relations(), CARTE,
                          slug="fig_ep_carte_graphe", caption=caption,
                          note_lecture=note_lecture, nominal=False)
+    plt.close("all")
+
+
+def graphe_interactif(caption: str, note_lecture: str | None = None) -> None:
+    """La toile en onglets Graphique/Données/Sources, Graphique = Plotly en HTML.
+
+    Même figure numérotée que `graphe` (même `slug`, même figdata sourcé) : le Graphique
+    porte la toile interactive en HTML et, hors HTML (PDF), l'image statique matplotlib en
+    repli. Les onglets Données et Sources sont identiques à ceux de la figure statique.
+    """
+    from itables import to_html_datatable
+
+    slug = "fig_ep_carte_graphe"
+    df_rel = table_relations()
+    csv_path = Path("figdata") / f"{slug}.csv"
+    figtools.write_figdata(df_rel, csv_path, CARTE, note=caption)
+
+    # Graphique : Plotly (HTML) + repli PNG statique (hors HTML).
+    html = fig_graphe_plotly().to_html(
+        include_plotlyjs="cdn", full_html=False,
+        config={"displayModeBar": True, "responsive": True, "locale": "fr"},
+        div_id="fig-ep-carte-graphe-plotly")
+    png_dir = Path("_fig")
+    png_dir.mkdir(parents=True, exist_ok=True)
+    png_path = png_dir / f"{slug}.png"
+    mfig = fig_graphe()
+    mfig.savefig(png_path, dpi=150, bbox_inches="tight")
+    plt.close(mfig)
+    alt = caption.replace('"', "&quot;")
+    graphique = (
+        '::: {.content-visible when-format="html"}\n\n```{=html}\n'
+        f'{html}\n```\n\n:::\n\n'
+        '::: {.content-hidden when-format="html"}\n\n'
+        f'![]({png_path}){{fig-alt="{alt}"}}\n\n:::')
+
+    table = to_html_datatable(
+        df_rel, buttons=["csvHtml5", "excelHtml5"], scrollY="420px", scrollX=True,
+        scrollCollapse=True, paging=False, classes="display compact nowrap", connected=True)
+    src = figtools.bloc_source(CARTE, nominal=False)
+    dl = figtools.download_button(str(csv_path))
+    details = figtools.source_details(CARTE)
+    lecture = ""
+    if note_lecture:
+        lecture = (f'\n::: {{.callout-note appearance="simple" icon=true '
+                   f'title="{figtools.t("how_to_read")}"}}\n{note_lecture}\n:::\n')
+    print(
+        f"::: {{.panel-tabset}}\n\n## {figtools.t('tab_graph')}\n\n{graphique}\n\n{src}\n"
+        f"{lecture}\n## {figtools.t('tab_data')}\n\n{dl}\n\n{table}\n\n"
+        f"## {figtools.t('tab_src')}\n\n::: {{.figure-sources-detail}}\n{details}\n:::\n\n:::\n\n"
+        f"{caption}\n")
     plt.close("all")
 
 

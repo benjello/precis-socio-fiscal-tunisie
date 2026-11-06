@@ -13,6 +13,7 @@ dependencies = [
     "jupyter>=1.1.1",
     "matplotlib>=3.8",
     "pandas>=2",
+    "plotly>=7.1.0",
     "python-bidi>=0.4",
     "pyyaml>=6",
 ]

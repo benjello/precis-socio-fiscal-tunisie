@@ -236,7 +236,9 @@ Ce que ce périmètre représente n'est pas seulement un nombre d'entreprises : 
 #| echo: false
 #| output: asis
 #| label: fig-ep-carte-graphe
-cc.graphe(
+# En HTML : toile interactive Plotly (survol, zoom/pan, clic-légende pour filtrer un secteur).
+# Hors HTML (PDF) : repli sur la figure statique matplotlib. Onglets Données / Sources communs.
+cc.graphe_interactif(
     caption="La toile du contrôle public : les grands contrôleurs — l'État et les entreprises "
             "publiques — au centre, les entités qu'ils contrôlent ou détiennent en périphérie, "
             "colorées par secteur",
