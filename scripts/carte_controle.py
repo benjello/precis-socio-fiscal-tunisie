@@ -18,6 +18,31 @@ Sources réunies :
 Déduplication : une même contrôlée détenue par un même contrôleur = une ligne ; on garde
 l'exercice le plus récent (à égalité, la première source insérée).
 
+COLONNE `secteur` : nature de l'entité contrôlée, LECTURE de son nom et du périmètre de son
+contrôleur, assumée comme telle — jamais un poids économique, jamais une activité devinée. La
+règle est transparente et conservatrice ; AU MOINDRE DOUTE, « non classé ». Elle se lit sur le
+nom normalisé (`normalise`), dans cet ordre :
+
+  1. Un jeton de forme juridique ou d'activité présent DANS le nom tranche seul :
+     « sicar »/« fcpr » -> SICAR/capital-investissement ; « sicav »/« sicaf » -> SICAV/OPCVM ;
+     « leasing » -> leasing ; « assurance(s) » -> assurance ; « recouvr… » -> recouvrement ;
+     « immo »/« foncière » -> immobilier ; « bank »/« banque » -> banque ; « ciment » ->
+     industrie ; « énergie » -> énergie-pétrole ; « catering »/« handling »/« technics »/« gardiennage »/« sécurité »/
+     « informatique »/« moyens généraux »/« services » -> services.
+  2. À défaut, une courte table d'identités ÉTABLIES (SECTEUR_CONNU) nomme les entités dont la
+     nature est documentée ailleurs dans le précis : les banques publiques (BH, BNA, BTE, STB,
+     BTS), l'assurance (STAR, Tunis Re), le leasing coté (ATL), l'industrie (Air Liquide
+     Tunisie), et les participations PROPRES de l'ETAP — sociétés mixtes d'exploration-
+     production, de transport et de stockage d'hydrocarbures (@etap-ra-2023) : Joint Oil,
+     Joint-Gaz, SERGAZ, NUMHYD, SEREPT, MARETAP, SODEPS, TPS, APO, SEREE, CTKCP, SSC, SCITT,
+     TANKMED, SOTUGAT, SOTRAPIL, TRAPSA, SNDP, SOTULUB, BITUMED, Compagnie tunisienne de forage
+     -> énergie-pétrole. Ce classement-là est une lecture du PÉRIMÈTRE pétrolier de l'ETAP, non
+     du seul nom ; les titres que l'ETAP détient « pour le compte de l'État » (banques, SICAR,
+     réassurance) en sont exclus et retombent sur leur propre nature.
+  3. Tout le reste — acronymes dont la nature n'est pas établie ici — reste « non classé ».
+
+Aucun nom de fichier n'apparaît dans le texte publié : ce mapping ne vit QUE dans ce docstring.
+
     uv run python scripts/carte_controle.py            # engendre listes/carte-controle.csv
 """
 
@@ -34,6 +59,7 @@ SORTIE = LISTES / "carte-controle.csv"
 COLONNES = [
     "controleur",
     "controlee",
+    "secteur",
     "part_interet_pct",
     "methode",
     "exercice",
@@ -105,6 +131,64 @@ CONTROLEE_OFFICIELLE_NORM = {
 
 def controlee_officielle(controlee: str) -> str:
     return "oui" if normalise(controlee) in CONTROLEE_OFFICIELLE_NORM else "non"
+
+
+# Jeton de forme juridique ou d'activité présent DANS le nom normalisé -> secteur. Ordre
+# significatif : le premier jeton rencontré tranche. Voir le docstring du module (règle 1).
+SECTEURS_JETON = [
+    ("sicar", "SICAR/capital-investissement"),
+    ("fcpr", "SICAR/capital-investissement"),
+    ("sicav", "SICAV/OPCVM"),
+    ("sicaf", "SICAV/OPCVM"),
+    ("leasing", "leasing"),
+    ("recouvr", "recouvrement"),
+    ("assurance", "assurance"),
+    ("immo", "immobilier"),
+    ("fonciere", "immobilier"),
+    ("ciment", "industrie"),
+    ("energie", "énergie-pétrole"),
+    ("catering", "services"),
+    ("handling", "services"),
+    ("technics", "services"),
+    ("gardiennage", "services"),
+    ("securite", "services"),
+    ("informatique", "services"),
+    ("moyens generaux", "services"),
+    ("services", "services"),
+    ("bank", "banque"),
+    ("banque", "banque"),
+]
+
+# Identités ÉTABLIES ailleurs dans le précis (règle 2 du docstring), par nom normalisé. Prime sur
+# les jetons. Les participations propres de l'ETAP sont une lecture de son périmètre pétrolier.
+SECTEUR_CONNU = {
+    normalise(n): s
+    for n, s in {
+        "BH": "banque", "BNA": "banque", "BTE": "banque", "STB": "banque", "BTS": "banque",
+        "STAR": "assurance", "Tunis Re": "assurance", "TUNIS-RE": "assurance",
+        "ATL": "leasing",
+        "Air Liquide Tunisie": "industrie",
+        "Joint Oil": "énergie-pétrole", "Joint-Gaz": "énergie-pétrole",
+        "SERGAZ": "énergie-pétrole", "NUMHYD": "énergie-pétrole", "SEREPT": "énergie-pétrole",
+        "MARETAP": "énergie-pétrole", "SODEPS": "énergie-pétrole", "TPS": "énergie-pétrole",
+        "APO": "énergie-pétrole", "SEREE": "énergie-pétrole", "CTKCP": "énergie-pétrole",
+        "SSC": "énergie-pétrole", "SCITT": "énergie-pétrole", "TANKMED": "énergie-pétrole",
+        "SOTUGAT": "énergie-pétrole", "SOTRAPIL": "énergie-pétrole", "TRAPSA": "énergie-pétrole",
+        "SNDP": "énergie-pétrole", "SOTULUB": "énergie-pétrole", "BITUMED": "énergie-pétrole",
+        "Compagnie tunisienne de forage": "énergie-pétrole",
+    }.items()
+}
+
+
+def secteur(controlee: str) -> str:
+    """Nature de l'entité contrôlée, lue sur son nom et le périmètre ; « non classé » au doute."""
+    cle = normalise(controlee)
+    if cle in SECTEUR_CONNU:
+        return SECTEUR_CONNU[cle]
+    for jeton, sect in SECTEURS_JETON:
+        if jeton in cle:
+            return sect
+    return "non classé"
 
 
 def lignes_perimetres() -> list[dict]:
@@ -272,6 +356,7 @@ def carte() -> list[dict]:
         r = dict(r)
         r["controleur_dans_liste_officielle"] = CONTROLEUR_OFFICIEL.get(r["controleur"], "non")
         r["controlee_dans_liste_officielle"] = controlee_officielle(r["controlee"])
+        r["secteur"] = secteur(r["controlee"])
         lignes.append({c: r.get(c, "") for c in COLONNES})
     lignes.sort(key=lambda r: (r["controleur"], r["controlee"]))
     return lignes
@@ -293,6 +378,13 @@ def main() -> None:
     print(f"  contrôleurs : {len(controleurs)}")
     print(f"  entités contrôlées distinctes : {len({l['controlee'] for l in lignes})}")
     print(f"  entités contrôlées hors liste officielle (distinctes) : {len(hors)}")
+    from collections import Counter
+
+    par_secteur = Counter(l["secteur"] for l in lignes)
+    non_classe = par_secteur.get("non classé", 0)
+    print(f"  relations classées par secteur : {len(lignes) - non_classe} ; non classées : {non_classe}")
+    for sect, n in sorted(par_secteur.items(), key=lambda kv: (-kv[1], kv[0])):
+        print(f"    {sect} : {n}")
 
 
 if __name__ == "__main__":

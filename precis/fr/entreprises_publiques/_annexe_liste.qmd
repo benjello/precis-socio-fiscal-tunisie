@@ -230,5 +230,51 @@ from figures import carte_controle as cc
 cc.totaux()
 ```
 
-- **Un contrôle qui déborde largement la liste.** La plupart des entités contrôlées sont des filiales, des sociétés de leasing, des SICAV et des SICAR, des sociétés mixtes d'exploration-production : elles ne sont pas sur la liste officielle, et leur contrôle n'apparaît que dans les comptes consolidés ou les portefeuilles de participations de leur maison mère.
+Ce que ce périmètre représente n'est pas seulement un nombre d'entreprises : c'est la nature des entités tenues au bout du contrôle public. En lisant le nom et le périmètre de chacune — classement conservateur, laissé « non classé » au moindre doute —, on voit que les entreprises publiques ne sont pas que des opérateurs de réseau ou de transport. Elles prolongent le secteur public dans des **véhicules financiers** — sociétés de leasing, SICAV et autres organismes de placement, SICAR et fonds de capital-investissement —, dans l'**assurance** et la réassurance, dans l'**immobilier** et la promotion foncière, et, pour l'ETAP, dans les **coentreprises d'exploration-production, de transport et de stockage d'hydrocarbures**. Le graphe ci-dessous en donne la toile ; les barres qui le suivent comptent, par contrôleur puis par secteur, ce que ce contrôle recouvre.
+
+```{python}
+#| echo: false
+#| output: asis
+#| label: fig-ep-carte-graphe
+cc.graphe(
+    caption="La toile du contrôle public : les grands contrôleurs — l'État et les entreprises "
+            "publiques — au centre, les entités qu'ils contrôlent ou détiennent en périphérie, "
+            "colorées par secteur",
+    note_lecture="Chaque trait est une relation de contrôle ou de participation du relevé. Les "
+                 "contrôleurs forment la couronne intérieure, étiquetés par le nombre d'entités "
+                 "qu'ils tiennent ; chaque entité est un point, coloré selon le secteur lu sur "
+                 "son nom et le périmètre. L'État figure parmi les contrôleurs : il détient en "
+                 "direct huit grandes entreprises publiques. Pour garder les 130 relations "
+                 "lisibles, chaque contrôleur reçoit une part d'angle proportionnée à son nombre "
+                 "d'entités ; aucune relation n'est agrégée ni retirée.")
+```
+
+Le contrôle n'est pas seulement une participation lointaine. Sur les 130 relations réunies, **la moitié sont des filiales majoritaires** : 51 à 50 % ou plus, 39 à une part donnant une influence notable sans la majorité, 25 minoritaires, et 15 pour lesquelles la source n'imprime pas de taux. La concentration par contrôleur est forte — l'ETAP tient à elle seule une trentaine de lignes, les grandes banques publiques (BNA, STB, BH) chacune une à deux dizaines —, et la plupart de ces entités, 105 des 119 recensées, ne figurent pas sur la liste officielle.
+
+```{python}
+#| echo: false
+#| output: asis
+#| label: fig-ep-carte-controleurs
+cc.barres_controleurs(
+    caption="Nombre d'entités contrôlées ou détenues, par contrôleur",
+    note_lecture="Entités distinctes contrôlées ou détenues par chaque contrôleur du relevé. La "
+                 "couleur distingue les contrôleurs inscrits sur la liste officielle des "
+                 "entreprises publiques de ceux qui ne le sont pas, à commencer par l'État.")
+```
+
+```{python}
+#| echo: false
+#| output: asis
+#| label: fig-ep-carte-secteurs
+cc.repartition_secteurs(
+    caption="Répartition par secteur des entités contrôlées, lecture conservatrice de leur nom "
+            "et de leur périmètre",
+    note_lecture="Entités contrôlées distinctes, rangées par secteur. Le secteur est une lecture "
+                 "du nom et du périmètre, laissée « non classé » au moindre doute : le bloc « non "
+                 "classé » réunit les sociétés dont la nature n'est pas établie ici, sans la "
+                 "deviner.")
+```
+
+- **Un contrôle qui déborde largement la liste.** La plupart des entités contrôlées — véhicules financiers, assurances, sociétés immobilières, coentreprises d'exploration-production — ne sont pas sur la liste officielle, et leur contrôle n'apparaît que dans les comptes consolidés ou les portefeuilles de participations de leur maison mère.
+- **Ce que la carte ne dit pas : le poids économique.** La carte dit *qui* tient *quoi*, et dans quel secteur ; elle ne dit pas *combien pèse* chaque entité contrôlée. Le capital, le chiffre d'affaires et les effectifs de ces filiales ne sont pas publiés de façon uniforme : aucun n'est fabriqué ni estimé ici, et cette lacune est assumée. Elle n'est comblée que là où la filiale est elle-même suivie — société cotée à la Bourse de Tunis, ou entreprise publique dotée de ses propres comptes.
 - **Un relevé non exhaustif.** La STEG ne nomme que les lignes principales de son portefeuille, sans taux ; les offices et les grands établissements de réseau — SONEDE, ONAS — ne publient pas de périmètre consolidé au dépôt : leurs filiales éventuelles n'y figurent pas. Le périmètre réel est donc un plancher, non un total.

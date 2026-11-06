@@ -47,6 +47,7 @@ cle_de_ligne: [controleur, controlee]
 colonnes:
   controleur: entité qui contrôle ou détient, sous un nom d'affichage canonique
   controlee: entité contrôlée ou détenue, telle que la source l'imprime
+  secteur: nature de l'entité contrôlée, lecture conservatrice de son nom et du périmètre de son contrôleur (banque, SICAV/OPCVM, SICAR/capital-investissement, leasing, assurance, recouvrement, immobilier, énergie-pétrole, industrie, services) ; « non classé » au moindre doute ; la règle de classement est dans le docstring du script, pas un poids économique
   part_interet_pct: part en %, telle que la source l'imprime (intérêt consolidé, part directe ou droits de vote) ; vide si la source ne l'imprime pas
   methode: méthode de consolidation (intégration globale, mise en équivalence) ; vide pour une simple participation
   exercice: exercice de référence de la ligne (année)
