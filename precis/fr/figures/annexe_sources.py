@@ -44,6 +44,16 @@ CE QUE FAIT LE MODULE (projection engendrée, rien de dupliqué).
          clairsemée (quelques éditions éparses sur vingt ans) n'affiche AUCUN manquant, pour ne
          pas inventer une complétude attendue ;
        - une source isolée (un seul document, pas de série) reste une entrée individuelle.
+  5 bis. REGROUPEMENTS SÉMANTIQUES que la normalisation ne peut pas deviner : une table
+     EXPLICITE et versionnée `sources_collections.yml` (collection -> clés), construite en
+     LISANT les intitulés, dit que des libellés très différents désignent la même série ou le
+     même dossier : séries numérotées EN LETTRES (« Premier … Vingt et unième rapport annuel de
+     la Cour de discipline financière », cf. `_ordinal_lettres`), éditions d'un même annuaire,
+     pièces d'un même dossier. Les documents RÉELLEMENT DISTINCTS d'un dossier (volumes d'un
+     recensement, exercices d'une série d'états financiers) sont regroupés mais restés LISTÉS
+     un par un (chacun son ancre, son étiquette). Cette table prime : ses clés sont retirées
+     avant la condensation algorithmique (cf. `_appliquer_table`). Au moindre doute, une clé
+     n'y figure pas.
   6. Émet le corps GROUPÉ par famille (sous-section `###`, ancre `#src-fam-<slug>`). CHAQUE clé
      — isolée ou regroupée dans une collection — conserve son ancre STABLE `#src-<cle>` à
      laquelle les livres et les onglets « 🔗 Sources » des figures renvoient : dans une entrée
@@ -158,7 +168,42 @@ _LIGNEES: list[tuple[str, list[str]]] = [
         "ministere de l'economie",
         "ministere de l economie",
     ]),
+    # INS : casse, accents et suffixe « , Tunisie » varient (« Institut National de la
+    # Statistique, Tunisie » == « Institut national de la statistique »).
+    ("institut-national-statistique", ["institut national de la statistique"]),
 ]
+
+# Ordinaux français écrits EN LETTRES (index d'une série numérotée, p. ex. les rapports annuels
+# de la Cour de discipline financière « Premier … Vingt et unième »). Comparés sans accents.
+_ORDINAUX: dict[str, int] = {
+    "premier": 1, "premiere": 1, "deuxieme": 2, "second": 2, "seconde": 2, "troisieme": 3,
+    "quatrieme": 4, "cinquieme": 5, "sixieme": 6, "septieme": 7, "huitieme": 8, "neuvieme": 9,
+    "dixieme": 10, "onzieme": 11, "douzieme": 12, "treizieme": 13, "quatorzieme": 14,
+    "quinzieme": 15, "seizieme": 16, "dix-septieme": 17, "dix-huitieme": 18, "dix-neuvieme": 19,
+    "vingtieme": 20, "vingt et unieme": 21, "vingt-et-unieme": 21, "vingt-deuxieme": 22,
+    "vingt-troisieme": 23, "vingt-quatrieme": 24, "vingt-cinquieme": 25,
+}
+
+
+def _ordinal_lettres(titre: str) -> int | None:
+    """Rang d'une série si le titre COMMENCE par un ordinal écrit en lettres, sinon None."""
+    deb = _sans_accents(titre).lstrip()
+    for mot, n in sorted(_ORDINAUX.items(), key=lambda kv: -len(kv[0])):
+        if deb.startswith(mot) and (len(deb) == len(mot) or not deb[len(mot)].isalpha()):
+            return n
+    return None
+
+
+def _ordinal_fr(n: int) -> str:
+    """Écriture abrégée d'un ordinal : 1 -> « 1ᵉʳ », n -> « nᵉ »."""
+    return "1\u1d49\u02b3" if n == 1 else f"{n}\u1d49"
+
+
+def _annee_issued(e: dict) -> int | None:
+    """Année de publication (`issued`) d'une entrée CSL, si présente et numérique."""
+    iss = e.get("issued") or {}
+    dp = (iss.get("date-parts") or [[]])[0] if isinstance(iss, dict) else []
+    return int(dp[0]) if dp and str(dp[0]).isdigit() else None
 
 
 def _lignee(producteur: str) -> str:
@@ -304,6 +349,81 @@ def _charger_familles() -> list[dict]:
     return yaml.safe_load(FAMILLES_YML.read_text(encoding="utf-8"))["familles"]
 
 
+COLLECTIONS_YML = FR / "sources_collections.yml"
+
+
+def _charger_collections_explicites() -> list[dict]:
+    """Table versionnée collection -> clés (regroupements sémantiques lus dans les intitulés)."""
+    if not COLLECTIONS_YML.exists():
+        return []
+    return yaml.safe_load(COLLECTIONS_YML.read_text(encoding="utf-8")).get("collections", [])
+
+
+def _etiquette_membre(label: str | None, d: dict) -> str:
+    """Étiquette lisible d'un membre : label explicite, sinon ordinal du titre, sinon année."""
+    if label:
+        return label
+    rang = _ordinal_lettres(d["titre"])
+    if rang is not None:
+        return _ordinal_fr(rang)
+    ans = _annees_titre(d["titre"])
+    if len(ans) == 1:
+        return str(ans[0])
+    if d.get("annee_pub"):
+        return str(d["annee_pub"])
+    return "notice"
+
+
+def _appliquer_table(par_famille: dict[str, list[dict]]) -> dict[str, list[dict]]:
+    """Construit les collections EXPLICITES et retire leurs membres de `par_famille` (muté).
+
+    Rend {famille -> [collection, ...]}. Chaque collection porte `explicite=True`, un `titre`,
+    un `producteur`, une `nature` (« éditions »/« documents ») et des `membres` [(étiquette, d)].
+    Une clé listée mais non citée (absente de `par_famille`) est ignorée sans bruit.
+    """
+    from collections import defaultdict
+    localisation: dict[str, tuple[str, dict]] = {
+        d["cle"]: (fam, d) for fam, entrees in par_famille.items() for d in entrees
+    }
+    par_famille_coll: dict[str, list[dict]] = defaultdict(list)
+    cles_prises: set[str] = set()
+    for spec in _charger_collections_explicites():
+        membres: list[tuple[str, dict]] = []
+        familles: list[str] = []
+        for m in spec.get("cles", []):
+            cle = m["cle"] if isinstance(m, dict) else m
+            label = m.get("label") if isinstance(m, dict) else None
+            if cle not in localisation:
+                continue
+            fam, d = localisation[cle]
+            membres.append((_etiquette_membre(label, d), d))
+            familles.append(fam)
+            cles_prises.add(cle)
+        if len(membres) < 2:
+            continue   # une seule pièce citée : rien à condenser, on laisse l'entrée isolée
+        # Intervalle affiché : toutes les années lues dans les titres ; à défaut (titres sans
+        # millésime, p. ex. ordinaux), les années de publication `issued`.
+        annees = sorted({a for _, d in membres for a in _annees_titre(d["titre"])})
+        if not annees:
+            annees = sorted({d["annee_pub"] for _, d in membres if d.get("annee_pub")})
+        recent = membres[-1][1]
+        url = next((d["url"] for _, d in membres if d["url"]), "")
+        fam = max(set(familles), key=familles.count)
+        par_famille_coll[fam].append({
+            "collection": True,
+            "explicite": True,
+            "titre": spec["titre"],
+            "producteur": spec.get("producteur", recent["producteur"]),
+            "nature": spec.get("nature", "éditions"),
+            "url": url,
+            "membres": membres,
+            "annees": annees,
+        })
+    for fam in par_famille:
+        par_famille[fam] = [d for d in par_famille[fam] if d["cle"] not in cles_prises]
+    return par_famille_coll
+
+
 _LF = re.compile(r"annexe", re.I)
 _LDF = re.compile(r"loi de finances", re.I)
 
@@ -359,6 +479,7 @@ def collecter() -> tuple[dict[str, list[dict]], list[str], list[str]]:
             "titre": e.get("title", cle),
             "producteur": _producteur(e),
             "url": e.get("URL") or "",
+            "annee_pub": _annee_issued(e),
         })
     for nom in ordre:
         par_famille[nom].sort(key=lambda d: (_sans_accents(d["producteur"]), _sans_accents(d["titre"])))
@@ -380,15 +501,16 @@ def _filtrer_manquants(par_famille_items: dict[str, list[dict]]) -> None:
     for items in par_famille_items.values():
         for it in items:
             if it.get("collection"):
-                annees_lignee[it["lignee"]].update(it["annees"])
+                lig = it.get("lignee") or _lignee(it["producteur"])
+                annees_lignee[lig].update(it.get("annees") or [])
             else:
                 ys = _annees_titre(it["titre"])
                 if len(ys) == 1:
                     annees_lignee[_lignee(it["producteur"])].add(ys[0])
     for items in par_famille_items.values():
         for it in items:
-            if it.get("collection") and it["manquants"]:
-                connues = annees_lignee[it["lignee"]]
+            if it.get("manquants"):
+                connues = annees_lignee[it.get("lignee") or _lignee(it["producteur"])]
                 it["manquants"] = [y for y in it["manquants"] if y not in connues]
 
 
@@ -399,6 +521,17 @@ def _rendre_collection(c: dict) -> str:
     ancré) : tous les renvois `#src-<cle>` de la collection restent résolvables.
     """
     tete = f"- **{c['titre']}** — {c['producteur']}".rstrip(" —")
+    if c.get("explicite"):
+        # Collection déclarée dans la table : étiquettes déjà calculées (ordinal, année ou label).
+        corps = f"{len(c['membres'])} {c['nature']}"
+        if c["annees"]:
+            corps += f" ({min(c['annees'])}{_TIRET}{max(c['annees'])})" if min(c["annees"]) != max(c["annees"]) else f" ({c['annees'][0]})"
+        avec_url = any(d["url"] for _, d in c["membres"])
+        liens = [
+            f"[{lab}]({d['url']}){{#src-{d['cle']}}}" if d["url"] else f"[{lab}]{{#src-{d['cle']}}}"
+            for lab, d in c["membres"]
+        ]
+        return f"{tete}. {corps}. Accès : " + ", ".join(liens) + "."
     n = len(c["annees"])
     if c["amin"] == c["amax"]:
         corps = f"édition {c['amin']}" + (f" ({len(c['membres'])} variantes)" if len(c["membres"]) > 1 else "")
@@ -421,8 +554,16 @@ def rendre() -> None:
     n_sources = sum(len(v) for v in par_famille.values())
     n_familles = len(par_famille)
 
-    # Condensation des collections annuelles, famille par famille.
-    par_famille_items = {nom: _grouper(entrees) for nom, entrees in par_famille.items()}
+    # 1) Regroupements sémantiques explicites (table versionnée), retirés de par_famille.
+    coll_explicites = _appliquer_table(par_famille)
+    # 2) Condensation algorithmique (collections annuelles) sur le reste, famille par famille.
+    ordre = list(par_famille) + [f for f in coll_explicites if f not in par_famille]
+    par_famille_items: dict[str, list[dict]] = {}
+    for nom in ordre:
+        items = _grouper(par_famille.get(nom, [])) + coll_explicites.get(nom, [])
+        items.sort(key=lambda it: (_sans_accents(it["producteur"]), _sans_accents(it["titre"])))
+        if items:
+            par_famille_items[nom] = items
     _filtrer_manquants(par_famille_items)
     n_entrees = sum(len(v) for v in par_famille_items.values())
     n_collections = sum(1 for v in par_famille_items.values() for it in v if it.get("collection"))
@@ -432,12 +573,13 @@ def rendre() -> None:
     liste_fam = ", ".join(noms[:-1]) + (" et " + noms[-1] if len(noms) > 1 else noms[0])
     out.append(
         f"Cette annexe recense **{n_sources} supports de données chiffrées**, condensés en "
-        f"**{n_entrees} entrées** : les collections annuelles — une même série répétée d'année en "
-        f"année — sont regroupées en une entrée portant son intervalle d'années et, quand la "
-        f"cadence annuelle est établie, les années manquantes ({n_collections} collections ainsi "
-        f"regroupées). Le tout se répartit en **{n_familles} familles** : {liste_fam}. Chaque "
-        "support garde son ancre stable `#src-<clé>` à laquelle les volumes et les figures "
-        "renvoient — y compris, dans une entrée condensée, année par année.\n"
+        f"**{n_entrees} entrées** : les collections — séries répétées d'année en année, séries "
+        f"numérotées, ou pièces d'un même dossier — sont regroupées en une entrée portant son "
+        f"intervalle d'années (et, pour les séries annuelles, les années manquantes), sans masquer "
+        f"les pièces distinctes ({n_collections} collections ainsi regroupées). Le tout se répartit "
+        f"en **{n_familles} familles** : {liste_fam}. Chaque support garde son ancre stable "
+        "`#src-<clé>` à laquelle les volumes et les figures renvoient — y compris, dans une entrée "
+        "condensée, pièce par pièce.\n"
     )
     for nom, items in par_famille_items.items():
         out.append(f"\n### {nom} ({len(items)}) {{#src-fam-{_slug(nom)}}}\n")
