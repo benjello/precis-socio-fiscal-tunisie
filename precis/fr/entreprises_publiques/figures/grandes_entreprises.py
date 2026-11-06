@@ -179,6 +179,55 @@ ENTREPRISES_TRANSFERTS = ("stir", "office_cereales", "steg", "cnss", "cnrps", "o
 ENTREPRISES_RESULTATS = ("steg", "stir", "etap", "office_cereales", "cpg", "gct", "tunisair",
                          "transtu", "sncft", "office_commerce", "rnta", "pct")
 
+# Exercice de rapprochement : le dernier où les trois grandeurs par entreprise coexistent. Les
+# transferts par entreprise vont de 2017 à 2022 ; la subvention d'exploitation et la part de la
+# dette due à l'État ne sont imprimées que par les fiches « bilan et résultat » de l'édition
+# LF 2022 (exercices 2018-2020). 2019 est le dernier exercice réalisé commun aux trois.
+ANNEE_RAPPROCHEMENT = "2019"
+
+
+def _derniere_ligne(d):
+    """La ligne de la dernière édition (sinon l'édition la plus récente du sous-ensemble)."""
+    recentes = d[d["derniere_edition"] == True]  # noqa: E712
+    return (recentes if len(recentes) else d.sort_values("edition")).iloc[-1]
+
+
+def tableau_rapprochement(caption: str, tbl_id: str = "tbl-ep-rapprochement") -> None:
+    """Rapproche, par entreprise et pour un même exercice, trois grandeurs de natures
+    différentes qui ne se recouvrent pas : les transferts du budget (flux versé par l'État dans
+    l'année), la subvention d'exploitation (ligne du compte de résultat de la fiche) et la part
+    de la dette due à l'État en fin d'année (encours). Une entreprise n'y figure que si les
+    trois sont imprimées pour l'exercice. Engendré depuis les séries, aucune saisie à la main."""
+    annee = ANNEE_RAPPROCHEMENT
+    f = figtools.series(S_FICHES)
+    tr = figtools.series(S_TRANSFERTS_EP)
+
+    def fiche(entite: str, indicateur: str):
+        d = f[(f["entite"] == entite) & (f["indicateur"] == indicateur)
+              & (f["exercice"].astype(str) == annee) & (f["case_vide"] == False)]  # noqa: E712
+        return float(_derniere_ligne(d)["valeur"]) if len(d) else None
+
+    def transfert(entite: str):
+        d = tr[(tr["entite"] == entite) & (tr["annee"].astype(str) == annee)]
+        return float(_derniere_ligne(d)["valeur_md"]) if len(d) else None
+
+    lignes = []
+    for entite in sorted(set(f["entite"]) | set(tr["entite"])):
+        t = transfert(entite)
+        s = fiche(entite, "subventions_exploitation")
+        de = fiche(entite, "dette_etat")
+        if t is None or s is None or de is None:
+            continue
+        nom = NOMS.get(entite)
+        if nom is None:
+            libelles = f[f["entite"] == entite]["libelle_entite"]
+            nom = libelles.iloc[0] if len(libelles) else entite
+        lignes.append((de, [nom, _n(t), _n(s), _n(de)]))
+    lignes.sort(key=lambda r: -r[0])
+    _md(["Entreprise", "Transferts du budget<br>(MD)", "Subvention d'exploitation<br>(MD)",
+         "Dette envers l'\u00c9tat,<br>fin d'ann\u00e9e (MD)"], "gddd",
+        [ligne for _, ligne in lignes], caption, tbl_id)
+
 
 def _clair(couleur: str, part: float) -> tuple:
     """La couleur mêlée de blanc : `part` = 1 la garde, 0 donne du blanc (pas de transparence,
