@@ -911,6 +911,9 @@ NOMS_GRANDEURS = {
     "contribution_economique": "« Contribution économique » des entreprises publiques",
     "part_population_active_occupee": "Part de la population active occupée",
     "part_masse_salariale_totale": "Part de la masse salariale totale",
+    "part_emplois_secteur_formel": "Part des emplois du secteur formel",
+    "part_vingt_premieres_chiffre_affaires_et_effectifs":
+        "Part des vingt premières entreprises (chiffre d'affaires et effectifs)",
     "subventions_exploitation_investissement":
         "Subventions d'exploitation et d'investissement versées par l'État",
     "dette_exterieure_garantie": "Dette extérieure garantie par l'État",

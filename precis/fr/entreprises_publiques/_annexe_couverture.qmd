@@ -15,7 +15,7 @@ Cette annexe dit, pour chaque entreprise publique du volume, quelles sources on 
 
 Six types de sources sont suivis, chacun lu dans un fichier du volume.
 
-- **La fiche du ministère des Finances**, par édition. Le rapport sur les entreprises publiques annexé au projet de loi de finances imprime, pour une partie des entreprises, une fiche par entreprise ; les éditions LF 2022, LF 2024 et LF 2025 sont dépouillées [@minfin-ep-2022 ; @minfin-ep-2024 ; @minfin-ep-2025].
+- **La fiche du ministère des Finances**, par édition. Le rapport sur les entreprises publiques annexé au projet de loi de finances imprime, pour une partie des entreprises, une fiche par entreprise ; les éditions LF 2022, LF 2024 et LF 2025 sont relevées [@minfin-ep-2022 ; @minfin-ep-2024 ; @minfin-ep-2025].
 - **Les états financiers du Registre national des entreprises.** Le portail public donne, sans compte, les exercices dont un état financier est déposé (@sec-ep-registre) [@rne-portail].
 - **Le rapport annuel ou d'activité** de l'entreprise, relevé dans l'inventaire des rapports du volume.
 - **Les états financiers publiés à la Bourse de Tunis ou au Conseil du marché financier**, et la **page de la Bourse** elle-même, pour les entreprises cotées ou émettrices d'emprunts.
@@ -46,7 +46,7 @@ cv.tableau_par_type(
              "[@minfin-ep-2022 ; @minfin-ep-2024 ; @minfin-ep-2025 ; @rne-portail]"))
 ```
 
-- **La fiche du ministère est la source la plus large** : 47 des 50 entreprises en ont une, dans les trois éditions dépouillées le plus souvent. C'est la seule source qui couvre à la fois les banques, les établissements et les sociétés.
+- **La fiche du ministère est la source la plus large** : 47 des 50 entreprises en ont une, dans les trois éditions relevées le plus souvent. C'est la seule source qui couvre à la fois les banques, les établissements et les sociétés.
 - **Le Registre national suit, pour la moitié des entreprises** : 26 ont déposé au moins un état financier, surtout des établissements publics (18 sur 27). Les banques et les grandes sociétés y déposent peu (@sec-ep-registre).
 - **Le rapport annuel et la Bourse ne touchent qu'une minorité** : 16 entreprises ont un rapport annuel relevé, 17 une présence à la Bourse ou au Conseil du marché financier — pour l'essentiel les mêmes grandes entreprises cotées ou émettrices.
 - **Le détail des garanties par entreprise est le plus rare** : 9 entreprises seulement, celles que les états de la Banque nationale agricole nomment.
@@ -63,7 +63,7 @@ cv.tableau_par_exercice(
              "[@minfin-ep-2022 ; @minfin-ep-2024 ; @minfin-ep-2025 ; @rne-portail]"))
 ```
 
-- **La fiche du ministère couvre 2018 à 2023**, et jusqu'à 47 entreprises par exercice : elle est la seule à donner une image d'ensemble d'une même année. Les éditions ne portent pas 2024, encore à venir au dernier rapport dépouillé.
+- **La fiche du ministère couvre 2018 à 2023**, et jusqu'à 47 entreprises par exercice : elle est la seule à donner une image d'ensemble d'une même année. Les éditions ne portent pas 2024, encore à venir au dernier rapport relevé.
 - **Le Registre monte avec le temps** : il ne porte aucun état financier avant 2019 et en compte le plus pour les exercices récents, à mesure que les entreprises déposent.
 - **Le rapport annuel et la Bourse sont réguliers mais étroits** : autour de sept à dix entreprises par exercice, sans la couverture d'ensemble de la fiche.
 
