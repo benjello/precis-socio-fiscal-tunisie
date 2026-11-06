@@ -42,6 +42,7 @@ import yaml
 RACINE = Path(__file__).resolve().parent.parent
 DOSSIER_DOCS = RACINE / "docs" / "agents"
 DOSSIER_CLAUDE = RACINE / ".claude" / "agents"
+DOSSIER_PI = RACINE / ".pi" / "agents"
 ROLES_YML = DOSSIER_DOCS / "roles.yml"
 
 AVERTISSEMENT = (
@@ -91,33 +92,69 @@ def engendrer_claude_code(nom_role: str, config: dict) -> str:
     return entete + corps(nom_role)
 
 
+def engendrer_pi(nom_role: str, config: dict) -> str:
+    """L'en-tête YAML + l'avertissement + le corps, format .pi/agents/*.md
+    (extension @tintinweb/pi-subagents). Mêmes champs que Claude Code (`name`,
+    `description`, `tools`, `model`), que pi accepte. Le modèle vient de
+    `modeles.pi` selon le niveau ; s'il est null (non renseigné), la ligne
+    `model:` est OMISE et l'agent hérite du modèle de la session parente
+    (défaut documenté de pi) — on n'invente aucun identifiant."""
+    role = config["roles"][nom_role]
+    niveau = role["niveau"]
+    try:
+        modele = config["modeles"]["pi"][niveau]
+    except KeyError as exc:
+        raise KeyError(
+            f"{nom_role} : niveau {niveau!r} absent de modeles.pi dans {ROLES_YML}"
+        ) from exc
+    outils = ", ".join(role["tools"])
+    lignes = ["---", f"name: {nom_role}", f"description: {role['description']}",
+              f"tools: {outils}"]
+    if modele:
+        lignes.append(f"model: {modele}")
+    lignes += ["---", "", AVERTISSEMENT.format(role=nom_role), ""]
+    return "\n".join(lignes) + "\n" + corps(nom_role)
+
+
+# Cibles engendrées : (nom, dossier, générateur). Ajouter un outil = une entrée
+# ici + une fonction engendrer_<outil>() + une table modeles.<outil> dans
+# roles.yml — jamais deviner le format d'en-tête d'un outil non vérifié.
+CIBLES = [
+    ("claude-code", DOSSIER_CLAUDE, engendrer_claude_code),
+    ("pi", DOSSIER_PI, engendrer_pi),
+]
+
+
 def roles_ordonnes(config: dict) -> list[str]:
     return list(config["roles"].keys())
 
 
-def engendrer_tout(config: dict) -> dict[str, str]:
-    """{nom_role: contenu engendré}, pour tous les rôles de roles.yml."""
-    return {nom: engendrer_claude_code(nom, config) for nom in roles_ordonnes(config)}
+def engendrer_tout(config: dict) -> dict[tuple[str, str], tuple[Path, str]]:
+    """{(outil, role): (chemin_cible, contenu)} pour toutes les cibles."""
+    out = {}
+    for nom_outil, dossier, gen in CIBLES:
+        for nom in roles_ordonnes(config):
+            out[(nom_outil, nom)] = (dossier / f"{nom}.md", gen(nom, config))
+    return out
 
 
 def verifier(config: dict) -> list[str]:
-    """Rôles dont .claude/agents/<role>.md n'est pas à jour, ou absent."""
+    """Fichiers engendrés pas à jour ou absents, format 'outil/role'."""
     en_retard = []
-    for nom, attendu in engendrer_tout(config).items():
-        cible = DOSSIER_CLAUDE / f"{nom}.md"
+    for (nom_outil, nom), (cible, attendu) in engendrer_tout(config).items():
         if not cible.exists() or cible.read_text(encoding="utf-8") != attendu:
-            en_retard.append(nom)
+            en_retard.append(f"{nom_outil}/{nom}")
     return en_retard
 
 
 def ecrire(config: dict) -> list[str]:
-    """Écrit les fichiers engendrés ; renvoie les rôles effectivement modifiés."""
+    """Écrit les fichiers engendrés ; renvoie les cibles modifiées 'outil/role'."""
     modifies = []
-    for nom, attendu in engendrer_tout(config).items():
-        cible = DOSSIER_CLAUDE / f"{nom}.md"
+    for (nom_outil, nom), (cible, attendu) in engendrer_tout(config).items():
         if not cible.exists() or cible.read_text(encoding="utf-8") != attendu:
+            cible.parent.mkdir(parents=True, exist_ok=True)
             cible.write_text(attendu, encoding="utf-8")
-            modifies.append(nom)
+            modifies.append(f"{nom_outil}/{nom}")
     return modifies
 
 
@@ -126,24 +163,29 @@ def main(argv: list[str]) -> int:
 
     config = charger_config()
 
+    total = len(config["roles"]) * len(CIBLES)
     if mode_verifier:
         en_retard = verifier(config)
         if en_retard:
-            print(f"{len(en_retard)} sous-agent(s) Claude Code à régénérer :")
-            for nom in en_retard:
-                print(f"  - .claude/agents/{nom}.md (source : docs/agents/{nom}.md)")
+            print(f"{len(en_retard)} sous-agent(s) à régénérer :")
+            for cle in en_retard:
+                outil, nom = cle.split("/", 1)
+                dossier = ".claude/agents" if outil == "claude-code" else ".pi/agents"
+                print(f"  - {dossier}/{nom}.md (source : docs/agents/{nom}.md)")
             print("Lancer : uv run python scripts/sync_agents.py")
             return 1
-        print(f"{len(config['roles'])} sous-agent(s) Claude Code à jour.")
+        print(f"{total} sous-agent(s) à jour ({len(CIBLES)} outils).")
         return 0
 
     modifies = ecrire(config)
     if modifies:
         print(f"{len(modifies)} sous-agent(s) régénéré(s) :")
-        for nom in modifies:
-            print(f"  - .claude/agents/{nom}.md")
+        for cle in modifies:
+            outil, nom = cle.split("/", 1)
+            dossier = ".claude/agents" if outil == "claude-code" else ".pi/agents"
+            print(f"  - {dossier}/{nom}.md")
     else:
-        print(f"{len(config['roles'])} sous-agent(s) Claude Code déjà à jour.")
+        print(f"{total} sous-agent(s) déjà à jour ({len(CIBLES)} outils).")
     return 0
 
 

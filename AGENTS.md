@@ -329,8 +329,42 @@ deux cas.
   autre outil (Codex, Cursor…) : charge `docs/agents/<role>.md` comme consigne et choisis le
   modèle dans `modeles.<outil>` de `roles.yml` selon le niveau du rôle — `sync_agents.py` ne
   fournit aucun générateur pour ces outils tant que leur format de sous-agent n'y est pas
-  vérifié. Le lancement de sous-agents avec un modèle choisi par niveau est, lui, propre à Claude
-  Code.
+  vérifié.
+- **Mobilise le bon RÔLE, pas un agent générique.** Dès qu'une tâche relève d'un rôle, c'est ce
+  rôle qu'on lance, pas un sous-agent « généraliste » : rassembler de la matière sourcée →
+  `documentaliste` ; corriger `openfisca-tunisia` (paramètres, formules, parseur de données,
+  tests) → `modeliste` ; état des connaissances économiques d'un dispositif → `economiste` ;
+  bibliographie → `bibliographe` ; glossaire → `terminologue` ; plan de chapitre → `architecte` ;
+  rédaction `.qmd` → `redacteur` ; tenue du backlog → `archiviste-backlog`. Un sous-agent
+  généraliste lancé là où un rôle existe perd la consigne du rôle (garde-fous, place dans la
+  chaîne éditoriale, livrable attendu) — défaut à éviter.
+- **Le dossier d'agents engendré dépend du harnais.** `.claude/agents/<role>.md` n'est lu QUE par
+  Claude Code ; `pi` lit `.pi/agents/<role>.md` (puis `.agents/agents/`, puis le global).
+  `scripts/sync_agents.py` engendre désormais **les deux** (`engendrer_claude_code()` **et**
+  `engendrer_pi()`), et `--verifier` contrôle les deux — édite `docs/agents/<role>.md` ou
+  `roles.yml` puis régénère, ne touche jamais les fichiers engendrés à la main. Sous pi, les rôles
+  sont donc **invocables par leur nom** (`subagent_type: documentaliste`) — au prochain démarrage
+  de session (les agents sont chargés au lancement). Deux réserves : (1) **modèle par niveau** —
+  `modeles.pi` de `roles.yml` est à null tant que l'humain n'a pas confirmé les modèles de son
+  abonnement ; tant que c'est null, l'agent `pi` hérite du modèle de la session parente (pas de
+  tiering), ce qui est sûr mais non optimal — renseigner `modeles.pi` pour activer le choix par
+  niveau. (2) **outils web** — les rôles listent `WebSearch`/`WebFetch` (noms Claude Code) ; pi
+  expose `web_search`/`web_fetch` comme outils d'extension et ne mappe pas forcément ces noms, donc
+  un rôle documentaliste/économiste/bibliographe peut démarrer **sans web** sous pi — à corriger
+  dans `roles.yml` (ou via un sélecteur `ext:`) une fois le nom d'outil pi vérifié. Si un rôle ne
+  s'invoque pas (harnais tiers sans générateur), procédé manuel : `Read docs/agents/<role>.md`
+  comme consigne du sous-agent + modèle par niveau depuis `modeles.<outil>`.
+- **Ne te rabats sur un agent généraliste que si le rôle requis n'existe pas.**
+- **Tâches mécaniques sur modèle léger, même déléguées.** Régénérer un CSV de provenance, déplacer
+  et indexer un PDF dans le corpus, lancer un OCR, un rendu, un snapshot : modèle `mécanique` et
+  vérification par contrôle (exit code, diff, intégrité), jamais par jugement — garde le modèle
+  principal pour la lecture d'un texte de loi et la rédaction.
+- **Indexe tout document téléchargé dans `tunisia-data`.** Tout PDF récupéré va dans le corpus
+  (`tunisia-data/data/raw/…`), avec un nommage cohérent, ET s'inscrit dans le catalogue
+  `tunisia-data/sources/` (fiche `<famille>.md` + `<famille>-urls.csv`) — jamais laissé en `/tmp`
+  ni cité depuis `/tmp`. Avant toute chasse web, lire d'abord `sources/` : il est déjà très fourni
+  (EP, Cour des comptes, BVMT, rapports MdF). Un sous-agent de recherche ne télécharge pas dans le
+  dépôt ; ce qu'il rapporte d'utile est re-téléchargé et indexé proprement ensuite.
 
 ## Rendre compte à l'humain
 
