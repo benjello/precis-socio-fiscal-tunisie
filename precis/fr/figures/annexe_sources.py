@@ -15,9 +15,10 @@ CE QUE FAIT LE MODULE (projection engendrée, rien de dupliqué).
   3. ÉCARTE le texte législatif pur : toute source de `type: legislation` (le JORT) reste en
      bibliographie et n'est PAS listée ici. Les types retenus sont les supports chiffrés :
      report, webpage, dataset, article-journal/-newspaper, book, chapter.
-  4. Classe chaque source dans une FAMILLE via la table versionnée `sources_familles.yml`
-     (producteur -> famille), avec la règle « annexe … loi de finances » et une famille par
-     défaut (voir `_famille`).
+  4. Classe chaque source par MINISTÈRE / INSTITUTION DE TUTELLE via la table versionnée
+     `sources_tutelles.yml` (producteur -> tutelle, voir `_tutelle`), avec une rubrique par
+     défaut « Autres / non rattaché » ; une tutelle incertaine n'est JAMAIS devinée. L'annexe
+     est ensuite classée par tutelle (###), puis par PRODUCTEUR (####), puis collections/sources.
   5. CONDENSE les COLLECTIONS ANNUELLES ET LES QUASI-DOUBLONS. Beaucoup de supports sont la même
      série répétée par année (« Rapport sur les entreprises publiques (annexe 9 au PLF pour 2020,
      2021, … » ; « Budget du ministère du Transport pour l'année 2013 … 2017 » ; « تقرير المالية
@@ -54,7 +55,7 @@ CE QUE FAIT LE MODULE (projection engendrée, rien de dupliqué).
      un par un (chacun son ancre, son étiquette). Cette table prime : ses clés sont retirées
      avant la condensation algorithmique (cf. `_appliquer_table`). Au moindre doute, une clé
      n'y figure pas.
-  6. Émet le corps GROUPÉ par famille (sous-section `###`, ancre `#src-fam-<slug>`). CHAQUE clé
+  6. Émet le corps GROUPÉ par tutelle (sous-section `###`, ancre `#src-fam-<slug>`). CHAQUE clé
      — isolée ou regroupée dans une collection — conserve son ancre STABLE `#src-<cle>` à
      laquelle les livres et les onglets « 🔗 Sources » des figures renvoient : dans une entrée
      condensée, chaque année porte un lien (ou un libellé) ancré `[année](url){#src-<cle>}`, de
@@ -87,7 +88,6 @@ from pathlib import Path
 import yaml
 
 FR = Path(__file__).resolve().parent.parent          # precis/fr
-FAMILLES_YML = FR / "sources_familles.yml"
 
 # Types CSL retenus = supports de données chiffrées. `legislation` (JORT) est exclu.
 TYPES_RETENUS = {
@@ -175,6 +175,13 @@ _LIGNEES: list[tuple[str, list[str]]] = [
     ("cnss", ["caisse nationale de securite sociale"]),
     ("cnam", ["caisse nationale d'assurance maladie"]),
     ("cnrps", ["caisse nationale de retraite et de prevoyance sociale"]),
+    # Même institution sous des intitulés réordonnés ou suffixés : on ne scinde pas sa
+    # sous-section (ministère de l'Industrie quel que soit l'ordre Énergie/Mines ; groupe
+    # Banque mondiale ; FMI avec ou sans département). Les AGENCES distinctes restent à part.
+    ("ministere-industrie", ["ministere de l'industrie"]),
+    ("banque-mondiale", ["banque mondiale", "world bank",
+                         "banque internationale pour la reconstruction"]),
+    ("fonds-monetaire-international", ["fonds monetaire international"]),
 ]
 
 # Ordinaux français écrits EN LETTRES (index d'une série numérotée, p. ex. les rapports annuels
@@ -349,8 +356,24 @@ def _producteur(e: dict) -> str:
     return ""
 
 
-def _charger_familles() -> list[dict]:
-    return yaml.safe_load(FAMILLES_YML.read_text(encoding="utf-8"))["familles"]
+TUTELLES_YML = FR / "sources_tutelles.yml"
+
+
+def _charger_tutelles() -> list[dict]:
+    """Table versionnée des ministères/institutions de tutelle (axe de premier niveau)."""
+    return yaml.safe_load(TUTELLES_YML.read_text(encoding="utf-8"))["tutelles"]
+
+
+def _tutelle(producteur: str, tutelles: list[dict]) -> str:
+    """Ministère/institution de tutelle d'un producteur (1re sous-chaîne qui correspond).
+
+    Aucune correspondance -> dernier bucket « Autres / non rattaché » : on ne devine jamais.
+    """
+    prod = _sans_accents(producteur)
+    for t in tutelles:
+        if any(sub in prod for sub in (t.get("producteurs") or [])):
+            return t["nom"]
+    return tutelles[-1]["nom"]
 
 
 COLLECTIONS_YML = FR / "sources_collections.yml"
@@ -378,30 +401,28 @@ def _etiquette_membre(label: str | None, d: dict) -> str:
     return "notice"
 
 
-def _appliquer_table(par_famille: dict[str, list[dict]]) -> dict[str, list[dict]]:
-    """Construit les collections EXPLICITES et retire leurs membres de `par_famille` (muté).
+def _appliquer_table(par_tutelle: dict[str, list[dict]], tutelles: list[dict]) -> dict[str, list[dict]]:
+    """Construit les collections EXPLICITES et retire leurs membres de `par_tutelle` (muté).
 
-    Rend {famille -> [collection, ...]}. Chaque collection porte `explicite=True`, un `titre`,
+    Rend {tutelle -> [collection, ...]}. Chaque collection porte `explicite=True`, un `titre`,
     un `producteur`, une `nature` (« éditions »/« documents ») et des `membres` [(étiquette, d)].
-    Une clé listée mais non citée (absente de `par_famille`) est ignorée sans bruit.
+    La tutelle de la collection découle de son producteur. Une clé listée mais non citée
+    (absente de `par_tutelle`) est ignorée sans bruit.
     """
     from collections import defaultdict
-    localisation: dict[str, tuple[str, dict]] = {
-        d["cle"]: (fam, d) for fam, entrees in par_famille.items() for d in entrees
+    presentes: dict[str, dict] = {
+        d["cle"]: d for entrees in par_tutelle.values() for d in entrees
     }
-    par_famille_coll: dict[str, list[dict]] = defaultdict(list)
+    par_tutelle_coll: dict[str, list[dict]] = defaultdict(list)
     cles_prises: set[str] = set()
     for spec in _charger_collections_explicites():
         membres: list[tuple[str, dict]] = []
-        familles: list[str] = []
         for m in spec.get("cles", []):
             cle = m["cle"] if isinstance(m, dict) else m
             label = m.get("label") if isinstance(m, dict) else None
-            if cle not in localisation:
+            if cle not in presentes:
                 continue
-            fam, d = localisation[cle]
-            membres.append((_etiquette_membre(label, d), d))
-            familles.append(fam)
+            membres.append((_etiquette_membre(label, presentes[cle]), presentes[cle]))
             cles_prises.add(cle)
         if len(membres) < 2:
             continue   # une seule pièce citée : rien à condenser, on laisse l'entrée isolée
@@ -412,57 +433,31 @@ def _appliquer_table(par_famille: dict[str, list[dict]]) -> dict[str, list[dict]
             annees = sorted({d["annee_pub"] for _, d in membres if d.get("annee_pub")})
         recent = membres[-1][1]
         url = next((d["url"] for _, d in membres if d["url"]), "")
-        fam = max(set(familles), key=familles.count)
-        par_famille_coll[fam].append({
+        producteur = spec.get("producteur", recent["producteur"])
+        par_tutelle_coll[_tutelle(producteur, tutelles)].append({
             "collection": True,
             "explicite": True,
             "titre": spec["titre"],
-            "producteur": spec.get("producteur", recent["producteur"]),
+            "producteur": producteur,
             "nature": spec.get("nature", "éditions"),
             "url": url,
             "membres": membres,
             "annees": annees,
         })
-    for fam in par_famille:
-        par_famille[fam] = [d for d in par_famille[fam] if d["cle"] not in cles_prises]
-    return par_famille_coll
-
-
-_LF = re.compile(r"annexe", re.I)
-_LDF = re.compile(r"loi de finances", re.I)
-
-
-def _est_annexe_lf(e: dict) -> bool:
-    titre = e.get("title", "")
-    return bool(_LF.search(titre) and _LDF.search(titre))
-
-
-def _famille(e: dict, familles: list[dict]) -> str:
-    """Famille d'une source : règle « annexe … loi de finances » d'abord, puis producteur."""
-    prod = _sans_accents(_producteur(e))
-    minfin = any(
-        sub in prod
-        for fam in familles if fam["nom"] == "Rapports du ministère des Finances"
-        for sub in fam.get("producteurs", [])
-    )
-    if minfin and _est_annexe_lf(e):
-        return "Annexes chiffrées des lois de finances"
-    for fam in familles:
-        for sub in (fam.get("producteurs") or []):
-            if sub in prod:
-                return fam["nom"]
-    return familles[-1]["nom"]   # défaut : « Autres sources chiffrées »
+    for nom in par_tutelle:
+        par_tutelle[nom] = [d for d in par_tutelle[nom] if d["cle"] not in cles_prises]
+    return par_tutelle_coll
 
 
 def collecter() -> tuple[dict[str, list[dict]], list[str], list[str]]:
-    """Construit le classement par famille. Rend (familles->entrées, cles_inconnues, types_inattendus).
+    """Classe les sources par TUTELLE. Rend (tutelle->entrées, cles_inconnues, types_inattendus).
 
-    Chaque entrée : {cle, titre, producteur, url}.
+    Chaque entrée : {cle, titre, producteur, url, annee_pub}.
     """
-    familles = _charger_familles()
-    ordre = [f["nom"] for f in familles]
+    tutelles = _charger_tutelles()
+    ordre = [t["nom"] for t in tutelles]
     idx = _index_references()
-    par_famille: dict[str, list[dict]] = {nom: [] for nom in ordre}
+    par_tutelle: dict[str, list[dict]] = {nom: [] for nom in ordre}
 
     inconnues: list[str] = []
     types_inattendus: list[str] = []
@@ -477,19 +472,19 @@ def collecter() -> tuple[dict[str, list[dict]], list[str], list[str]]:
         if typ not in TYPES_RETENUS:
             types_inattendus.append(f"{cle} ({typ})")
             # On le liste quand même, mais on le signale : un type nouveau est à trier.
-        fam = _famille(e, familles)
-        par_famille[fam].append({
+        producteur = _producteur(e)
+        par_tutelle[_tutelle(producteur, tutelles)].append({
             "cle": cle,
             "titre": e.get("title", cle),
-            "producteur": _producteur(e),
+            "producteur": producteur,
             "url": e.get("URL") or "",
             "annee_pub": _annee_issued(e),
         })
     for nom in ordre:
-        par_famille[nom].sort(key=lambda d: (_sans_accents(d["producteur"]), _sans_accents(d["titre"])))
-    # Familles vides retirées, ordre conservé.
-    par_famille = {nom: par_famille[nom] for nom in ordre if par_famille[nom]}
-    return par_famille, sorted(set(inconnues)), sorted(set(types_inattendus))
+        par_tutelle[nom].sort(key=lambda d: (_sans_accents(d["producteur"]), _sans_accents(d["titre"])))
+    # Tutelles vides retirées, ordre conservé.
+    par_tutelle = {nom: par_tutelle[nom] for nom in ordre if par_tutelle[nom]}
+    return par_tutelle, sorted(set(inconnues)), sorted(set(types_inattendus))
 
 
 def _filtrer_manquants(par_famille_items: dict[str, list[dict]]) -> None:
@@ -553,9 +548,17 @@ def _rendre_collection(c: dict) -> str:
 
 
 def _nom_producteur(items: list[dict]) -> str:
-    """Nom de producteur représentatif d'un groupe : la forme la plus courte (sans suffixes)."""
-    noms = [it["producteur"] for it in items if it["producteur"]]
-    return min(noms, key=len) if noms else "—"
+    """Nom représentatif d'un groupe de producteurs : la forme la plus FRÉQUENTE du groupe.
+
+    À égalité, la plus courte puis l'ordre alphabétique (choix déterministe). Sert d'en-tête
+    de sous-section quand plusieurs libellés désignent le même producteur (cf. `_lignee`).
+    """
+    from collections import Counter
+    noms = Counter(it["producteur"] for it in items if it["producteur"])
+    if not noms:
+        return "Sans producteur identifié"
+    pic = max(noms.values())
+    return min((n for n, k in noms.items() if k == pic), key=lambda s: (len(s), s))
 
 
 def _rendre_item(it: dict) -> str:
@@ -570,55 +573,48 @@ def _rendre_item(it: dict) -> str:
 
 def rendre() -> None:
     """Émet (print) tout le corps Markdown de l'annexe, sous `#| output: asis`."""
-    par_famille, inconnues, types_inattendus = collecter()
-    n_sources = sum(len(v) for v in par_famille.values())
-    n_familles = len(par_famille)
+    from collections import defaultdict
+    tutelles = _charger_tutelles()
+    par_tutelle, inconnues, types_inattendus = collecter()
+    n_sources = sum(len(v) for v in par_tutelle.values())
 
-    # 1) Regroupements sémantiques explicites (table versionnée), retirés de par_famille.
-    coll_explicites = _appliquer_table(par_famille)
-    # 2) Condensation algorithmique (collections annuelles) sur le reste, famille par famille.
-    ordre = list(par_famille) + [f for f in coll_explicites if f not in par_famille]
-    par_famille_items: dict[str, list[dict]] = {}
+    # 1) Regroupements sémantiques explicites (table versionnée), retirés de par_tutelle.
+    coll_explicites = _appliquer_table(par_tutelle, tutelles)
+    # 2) Condensation algorithmique (collections annuelles) sur le reste, tutelle par tutelle.
+    ordre = [t["nom"] for t in tutelles]
+    par_tutelle_items: dict[str, list[dict]] = {}
     for nom in ordre:
-        items = _grouper(par_famille.get(nom, [])) + coll_explicites.get(nom, [])
-        items.sort(key=lambda it: (_sans_accents(it["producteur"]), _sans_accents(it["titre"])))
+        items = _grouper(par_tutelle.get(nom, [])) + coll_explicites.get(nom, [])
         if items:
-            par_famille_items[nom] = items
-    _filtrer_manquants(par_famille_items)
-    n_entrees = sum(len(v) for v in par_famille_items.values())
-    n_collections = sum(1 for v in par_famille_items.values() for it in v if it.get("collection"))
+            par_tutelle_items[nom] = items
+    _filtrer_manquants(par_tutelle_items)
+    n_entrees = sum(len(v) for v in par_tutelle_items.values())
+    n_collections = sum(1 for v in par_tutelle_items.values() for it in v if it.get("collection"))
+    n_tutelles = len(par_tutelle_items)
 
     out: list[str] = []
-    noms = list(par_famille)
-    liste_fam = ", ".join(noms[:-1]) + (" et " + noms[-1] if len(noms) > 1 else noms[0])
+    noms = list(par_tutelle_items)
+    liste_tut = ", ".join(noms[:-1]) + (" et " + noms[-1] if len(noms) > 1 else noms[0])
     out.append(
         f"Cette annexe recense **{n_sources} supports de données chiffrées**, condensés en "
         f"**{n_entrees} entrées** : les collections — séries répétées d'année en année, séries "
         f"numérotées, ou pièces d'un même dossier — sont regroupées en une entrée portant son "
         f"intervalle d'années (et, pour les séries annuelles, les années manquantes), sans masquer "
-        f"les pièces distinctes ({n_collections} collections ainsi regroupées). Le tout se répartit "
-        f"en **{n_familles} familles** : {liste_fam}. Chaque support garde son ancre stable "
-        "`#src-<clé>` à laquelle les volumes et les figures renvoient — y compris, dans une entrée "
-        "condensée, pièce par pièce.\n"
+        f"les pièces distinctes ({n_collections} collections ainsi regroupées). Le registre est "
+        f"classé par **ministère ou institution de tutelle** ({n_tutelles} rubriques : {liste_tut}), "
+        f"puis par producteur. Chaque support garde son ancre stable `#src-<clé>` à laquelle les "
+        "volumes et les figures renvoient — y compris, dans une entrée condensée, pièce par pièce.\n"
     )
-    sous_groupes = {f["nom"] for f in _charger_familles() if f.get("sous_groupes_par_producteur")}
-    for nom, items in par_famille_items.items():
+    # Classement : par tutelle (###), puis par PRODUCTEUR (####), puis collections/sources.
+    for nom, items in par_tutelle_items.items():
         out.append(f"\n### {nom} ({len(items)}) {{#src-fam-{_slug(nom)}}}\n")
-        if nom in sous_groupes:
-            # Famille multi-producteurs : une sous-section par producteur (p. ex. chaque caisse,
-            # chaque société), ses séries regroupées dessous. On n'y FUSIONNE rien de plus.
-            from collections import defaultdict
-            groupes: dict[str, list[dict]] = defaultdict(list)
-            for it in items:
-                groupes[_lignee(it["producteur"])].append(it)
-            for lig in sorted(groupes, key=lambda l: _sans_accents(_nom_producteur(groupes[l]))):
-                grp = groupes[lig]
-                out.append(f"#### {_nom_producteur(grp)} ({len(grp)})\n")
-                for it in sorted(grp, key=lambda it: _sans_accents(it["titre"])):
-                    out.append(_rendre_item(it))
-                out.append("")
-        else:
-            for it in items:
+        groupes: dict[str, list[dict]] = defaultdict(list)
+        for it in items:
+            groupes[_lignee(it["producteur"])].append(it)
+        for lig in sorted(groupes, key=lambda l: _sans_accents(_nom_producteur(groupes[l]))):
+            grp = groupes[lig]
+            out.append(f"#### {_nom_producteur(grp)} ({len(grp)})\n")
+            for it in sorted(grp, key=lambda it: _sans_accents(it["titre"])):
                 out.append(_rendre_item(it))
             out.append("")
 

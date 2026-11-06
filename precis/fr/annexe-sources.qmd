@@ -1,6 +1,6 @@
 ---
 title: "Les sources de données chiffrées"
-subtitle: "Annexe commune aux volumes : le registre des supports de données chiffrées que le précis cite, par famille de source puis par source, avec une ancre stable par source"
+subtitle: "Annexe commune aux volumes : le registre des supports de données chiffrées que le précis cite, classé par ministère ou institution de tutelle puis par producteur, avec une ancre stable par source"
 format:
   html:
     include-in-header: ../accueil.html
@@ -15,7 +15,7 @@ format:
      Identifiants STABLES auxquels les volumes et les onglets « 🔗 Sources » des figures renvoient
      (ne pas les renommer, ne pas les traduire) :
        #sec-sources-pourquoi, #sec-sources-lire, #sec-sources-registre,
-       #src-fam-<slug-de-famille> (titre de sous-section), #src-<clé-de-citation> (une par source). -->
+       #src-fam-<slug-de-tutelle> (titre de sous-section), #src-<clé-de-citation> (une par source). -->
 
 ## Pourquoi cette annexe {#sec-sources-pourquoi}
 
@@ -27,7 +27,7 @@ Le texte purement législatif — le Journal officiel de la République tunisien
 
 ## Comment lire une entrée {#sec-sources-lire}
 
-Chaque **famille de source** est une sous-section ; à l'intérieur, chaque **source** est une entrée portant son **titre**, son **producteur** et, lorsqu'il est public, un **lien d'accès**. Dans les familles qui réunissent plusieurs producteurs (les caisses sociales, les états financiers d'entreprises), les entrées sont elles-mêmes **groupées par producteur** — une caisse, une société — pour rassembler sous chacun ses différentes séries. Une source sans lien d'accès est une source dont le précis ne connaît pas d'adresse publique stable : le champ est alors laissé vide, non deviné.
+Le registre est classé par **ministère ou institution de tutelle** du producteur (Finances, Industrie, Transport, Affaires sociales, Présidence du gouvernement, institutions indépendantes, organisations internationales, et « Autres / non rattaché » quand la tutelle n'est pas établie — jamais devinée). À l'intérieur d'une tutelle, les entrées sont **groupées par producteur** — un ministère, une caisse, une société — pour rassembler sous chacun ses différentes séries ; chaque **source** porte son **titre**, son **producteur** et, lorsqu'il est public, un **lien d'accès**. Une source sans lien d'accès est une source dont le précis ne connaît pas d'adresse publique stable : le champ est alors laissé vide, non deviné.
 
 Les **collections** — une même série publiée édition après édition (un rapport reparaissant chaque année ou numéroté « premier, deuxième… »), ou les **pièces d'un même dossier** (volumes d'un recensement, exercices d'une série d'états financiers) — sont **condensées en une seule entrée** : son titre porte l'**intervalle d'années** couvert et, pour les séries annuelles dont la cadence est établie, les **années manquantes**. Les pièces y restent accessibles **une par une** (chacune son lien), de sorte qu'un volume ou une édition ne soit jamais masqué. Une source isolée, sans série, demeure une entrée individuelle.
 
