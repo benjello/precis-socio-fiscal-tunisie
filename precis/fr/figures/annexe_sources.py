@@ -18,14 +18,22 @@ CE QUE FAIT LE MODULE (projection engendrée, rien de dupliqué).
   4. Classe chaque source dans une FAMILLE via la table versionnée `sources_familles.yml`
      (producteur -> famille), avec la règle « annexe … loi de finances » et une famille par
      défaut (voir `_famille`).
-  5. CONDENSE les COLLECTIONS ANNUELLES. Beaucoup de supports sont la même série répétée par
-     année (« Rapport sur les entreprises publiques (annexe 9 au PLF pour 2020, 2021, … » ;
-     « Budget du ministère du Transport pour l'année 2013 … 2017 » ; « تقرير المالية العمومية
-     لسنة 2005, 2008 »). Chaque année = une clé → une liste interminable. On regroupe, DANS
-     CHAQUE FAMILLE, les sources d'une même collection en UNE entrée (voir `_grouper`) :
-       - sous-type / radical = le titre privé de son (ses) token(s) d'année 19xx/20xx, comparé
-         sans accents ni casse, APPARIÉ AU MÊME PRODUCTEUR. Deux titres qui se réduisent au même
-         radical pour le même producteur = une collection ;
+  5. CONDENSE les COLLECTIONS ANNUELLES ET LES QUASI-DOUBLONS. Beaucoup de supports sont la même
+     série répétée par année (« Rapport sur les entreprises publiques (annexe 9 au PLF pour 2020,
+     2021, … » ; « Budget du ministère du Transport pour l'année 2013 … 2017 » ; « تقرير المالية
+     العمومية لسنة 2005, 2008 »), et beaucoup portent des libellés DIFFÉRENTS pour une MÊME source
+     (renommage du producteur, abréviation « EP » / « PLF », « annexe 9 » / « annexe n° 9 »,
+     formulation « à la » / « au projet de » loi de finances, variante arabe « لتصرف » / « لسنة »,
+     double clé d'une même édition). On regroupe, DANS CHAQUE FAMILLE, les sources d'une même
+     collection en UNE entrée (voir `_grouper`) :
+       - sous-type / radical = le titre fortement NORMALISÉ (voir `_radical` et la table
+         `_SYNONYMES`) : on travaille sur la traduction latine si le titre arabe en porte une
+         entre parenthèses/crochets (appariement FR/AR), on retire les tokens d'année 19xx/20xx,
+         on passe sans accents ni casse, puis on neutralise abréviations, numéros d'annexe,
+         préfixes ordinaux et mots de remplissage. Deux titres qui se réduisent au même radical
+         pour une même LIGNÉE de producteur (table `_LIGNEES`, qui réunit les renommages d'un
+         même producteur) = une collection ; au moindre doute (radical ou lignée distincts),
+         les entrées restent séparées ;
        - année d'édition = l'unique année distincte lue dans le titre (c'est le token qui varie
          d'un membre à l'autre et définit la série) ; un titre à deux années distinctes (p. ex.
          « … à fin 2016 et janvier 2017 ») ne se réduit pas et reste ISOLÉ ;
@@ -104,31 +112,108 @@ def _annees_titre(titre: str) -> list[int]:
     return sorted({int(m.group(0)) for m in _ANNEE.finditer(titre)})
 
 
+_ARABE = re.compile(r"[\u0600-\u06ff]")
+_LATIN = re.compile(r"[A-Za-z\u00c0-\u024f]")
+
+# Synonymes / abréviations observés DANS LES TITRES, appliqués au radical déjà passé en
+# minuscules sans accents, l'année remplacée par « § ». Table EXPLICITE (ordre significatif) :
+# chaque règle rapproche deux libellés d'une MÊME source. Enrichie d'après les titres réels
+# (annexes des lois de finances, clôtures de la Cour des comptes, rapports de la BCT).
+_SYNONYMES: list[tuple[str, str]] = [
+    # Numéro d'annexe neutralisé : « annexe 9 » / « annexe n° 9 » / « annexe n° 12 » -> « annexe ».
+    (r"\bannexe\s*(?:n\s*[o\u00b0]|no|numero)?\s*\d+", "annexe"),
+    # « projet de loi de finances » (PLF) == « loi de finances » (LF), préposition absorbée.
+    (r"\b(?:au|aux|a\s+la|du|de\s+la|de|des|a\s+l|a)?\s*projets?\s+de\s+loi\s+de\s+finances", "loi de finances"),
+    (r"\b(?:au|aux|a\s+la|du|de\s+la|a\s+l|a)\s+loi\s+de\s+finances", "loi de finances"),
+    (r"\bplf\b", "loi de finances"),
+    # « pour la gestion / l'année / l'exercice X » == « pour X » (clôtures de budget, budgets).
+    (r"\bpour\s+(?:la\s+gestion|l\s*annee|l\s*exercice|le\s+titre|l\s*exercise)", "pour"),
+    (r"\b(?:au\s+titre\s+de\s+l?\s*annee)", "pour"),
+    # « EP » == « entreprises publiques » (rapport annexé aux lois de finances).
+    (r"\bentreprises\s+publiques\b", "ep"),
+    # Préfixe ordinal numérique d'un rapport : « 36ème », « 13ème », « 1er » -> rien.
+    (r"\b\d+\s*(?:emes?|ers?|eres?|es?)\b", ""),
+    # Numéros résiduels (« n° 7 ») et mots de remplissage de périodicité.
+    (r"\b(?:n\s*[o\u00b0]|no|numero)\s*\d+", ""),
+    (r"\b(?:annee|annees|exercice|exercices)\b", ""),
+    # Ponctuation et séparateurs -> espace (on ne touche pas aux lettres arabes conservées).
+    (r"[\u00b0\u00b7.,;:/\-\u2013\u2014()\[\]{}«»\"'\u2019]", " "),
+]
+
+# Lignées de producteur : des libellés qui désignent LE MÊME producteur (renommages successifs,
+# suffixes) sont ramenés à une même clé, pour qu'un renommage ne bloque pas une fusion légitime.
+# Table EXPLICITE. Un producteur non répertorié reste lui-même (sa forme sans accents).
+#   - « Ministère des Finances » a porté plusieurs noms (Économie, Économie et Finances,
+#     Économie-Finances-Appui à l'investissement) ; ses directions générales en relèvent aussi.
+# ATTENTION : deux ministères SECTORIELS différents (Transport, Santé…) ne sont PAS une lignée
+# commune ; seul le ministère des Finances est regroupé ici. La concordance de lignée est une
+# CONDITION de fusion, jamais une fusion à elle seule (le radical de titre doit aussi coïncider).
+_LIGNEES: list[tuple[str, list[str]]] = [
+    ("ministere-finances", [
+        "ministere des finances",
+        "ministere de l'economie, des finances",
+        "ministere de l economie, des finances",
+        "ministere de l'economie et des finances",
+        "ministere de l economie et des finances",
+        "ministere de l'economie",
+        "ministere de l economie",
+    ]),
+]
+
+
+def _lignee(producteur: str) -> str:
+    """Clé de lignée d'un producteur (renommages ramenés à un même identifiant)."""
+    prod = _sans_accents(producteur)
+    for canon, formes in _LIGNEES:
+        if any(f in prod for f in formes):
+            return canon
+    return prod
+
+
 def _radical(titre: str) -> str:
-    """Radical d'un titre : son texte privé des tokens d'année, sans accents ni casse.
+    """Radical NORMALISÉ d'un titre, servant de clé de collection.
 
-    C'est la clé de collection : deux titres d'un même producteur qui ne diffèrent que par
-    l'année se réduisent au même radical.
+    Pipeline : 1) si le titre est en arabe mais porte une traduction latine entre parenthèses
+    ou crochets, on travaille sur CETTE traduction (appariement FR/AR) ; 2) l'année est
+    remplacée par « § » ; 3) minuscules sans accents (les diacritiques arabes — chadda… —
+    tombent aussi) ; 4) abréviations/synonymes de `_SYNONYMES` ; 5) espaces réduits.
+
+    Deux titres d'une même source se réduisent alors au même radical malgré des formulations,
+    abréviations ou numéros d'annexe différents.
     """
-    r = _ANNEE.sub("\u00a7", titre)
-    return _sans_accents(re.sub(r"\s+", " ", r).strip())
+    t = titre
+    if _ARABE.search(t):
+        trads = [c for c in re.findall(r"[(\[]([^)\]]*)[)\]]", t) if _LATIN.search(c)]
+        if trads:
+            t = max(trads, key=len)   # la traduction latine, s'il y en a une
+    t = _ANNEE.sub("\u00a7", t)
+    t = _sans_accents(t)
+    for motif, remplacement in _SYNONYMES:
+        t = re.sub(motif, remplacement, t)
+    return re.sub(r"\s+", " ", t).strip()
 
 
-def _collection(membres: list[tuple[int, dict]]) -> dict:
-    """Construit une entrée de collection à partir de ses membres `(annee, source)`.
+def _collection(membres: list[tuple[int, dict]], lignee: str) -> dict:
+    """Construit une entrée condensée à partir de ses membres `(annee, source)`.
 
-    Libellé = titre du membre le plus récent, son token d'année remplacé par l'intervalle.
-    Manquants = années absentes de [min, max], mais seulement si la cadence est établie.
+    Les membres peuvent partager une année (quasi-doublons : la même édition sous deux clés) ;
+    l'intervalle et les manquants se calculent sur les années DISTINCTES. Libellé = titre du
+    membre le plus récent, son token d'année remplacé par l'intervalle. Manquants = années
+    absentes de [min, max], seulement si la cadence annuelle est établie (densité ≥ seuil).
+    Le filtrage croisé (une année présente ailleurs dans la même lignée n'est pas « manquante »)
+    est appliqué ensuite, quand toutes les entrées sont connues (`_filtrer_manquants`).
     """
     membres = sorted(membres, key=lambda t: t[0])
     annees = [a for a, _ in membres]
-    amin, amax = annees[0], annees[-1]
+    distinctes = sorted(set(annees))
+    amin, amax = distinctes[0], distinctes[-1]
     recent = membres[-1][1]
     libelle = _ANNEE.sub(f"{amin}{_TIRET}{amax}", recent["titre"]) if amin != amax else recent["titre"]
-    present = set(annees)
+    # Un préfixe ordinal (« 47ème ») est propre à un volume, pas à la collection : on l'ôte du libellé.
+    libelle = re.sub(r"^\s*\d+\s*(?:[e\u00e8]mes?|ers?|[e\u00e8]res?|es?)\s+", "", libelle)
     etendue = amax - amin + 1
-    manquants = [y for y in range(amin, amax + 1) if y not in present]
-    etablie = len(present) >= _EDITIONS_MIN and etendue > 0 and len(present) / etendue >= _DENSITE_MIN
+    manquants = [y for y in range(amin, amax + 1) if y not in set(distinctes)]
+    etablie = len(distinctes) >= _EDITIONS_MIN and len(distinctes) / etendue >= _DENSITE_MIN
     if not etablie:
         manquants = []   # trop clairsemé : on ne postule pas une complétude annuelle
     url = recent["url"] or next((d["url"] for _, d in reversed(membres) if d["url"]), "")
@@ -136,8 +221,10 @@ def _collection(membres: list[tuple[int, dict]]) -> dict:
         "collection": True,
         "titre": libelle,
         "producteur": recent["producteur"],
+        "lignee": lignee,
         "url": url,
         "membres": membres,
+        "annees": distinctes,
         "amin": amin,
         "amax": amax,
         "manquants": manquants,
@@ -156,14 +243,15 @@ def _grouper(entrees: list[dict]) -> list[dict]:
     groupes: dict[tuple[str, str], list[tuple[list[int], dict]]] = defaultdict(list)
     for d in entrees:
         annees = _annees_titre(d["titre"])
-        cle_groupe = (_radical(d["titre"]), _sans_accents(d["producteur"])) if len(annees) == 1 \
+        cle_groupe = (_radical(d["titre"]), _lignee(d["producteur"])) if len(annees) == 1 \
             else ("\x00iso\x00" + d["cle"], "")   # titre sans/à plusieurs années : isolé d'office
         groupes[cle_groupe].append((annees, d))
     items: list[dict] = []
-    for membres in groupes.values():
-        annees = [a[0] for a, _ in membres if len(a) == 1]
-        if len(membres) >= 2 and len(annees) == len(membres) and len(set(annees)) == len(membres):
-            items.append(_collection([(a[0], d) for a, d in membres]))
+    for (_, lignee), membres in groupes.items():
+        # Chaque membre retenu porte exactement une année ; ≥ 2 membres = une entrée condensée
+        # (collection annuelle et/ou quasi-doublons d'une même édition).
+        if len(membres) >= 2 and all(len(a) == 1 for a, _ in membres):
+            items.append(_collection([(a[0], d) for a, d in membres], lignee))
         else:
             items.extend(d for _, d in membres)
     items.sort(key=lambda it: (_sans_accents(it["producteur"]), _sans_accents(it["titre"])))
@@ -279,6 +367,31 @@ def collecter() -> tuple[dict[str, list[dict]], list[str], list[str]]:
     return par_famille, sorted(set(inconnues)), sorted(set(types_inattendus))
 
 
+def _filtrer_manquants(par_famille_items: dict[str, list[dict]]) -> None:
+    """Retire des « manquants » toute année en fait disponible ailleurs dans la MÊME lignée.
+
+    Garde-fou « rien d'inventé » : une collection ne doit pas déclarer « manque 1999 » si le
+    précis cite bien un support 1999 du même producteur, rangé dans une autre entrée (p. ex.
+    la BCT a nommé son rapport tantôt « Rapport annuel », tantôt « Rapport d'activité »). On
+    recense d'abord toutes les années connues par lignée, puis on émonde les manquants.
+    """
+    from collections import defaultdict
+    annees_lignee: dict[str, set[int]] = defaultdict(set)
+    for items in par_famille_items.values():
+        for it in items:
+            if it.get("collection"):
+                annees_lignee[it["lignee"]].update(it["annees"])
+            else:
+                ys = _annees_titre(it["titre"])
+                if len(ys) == 1:
+                    annees_lignee[_lignee(it["producteur"])].add(ys[0])
+    for items in par_famille_items.values():
+        for it in items:
+            if it.get("collection") and it["manquants"]:
+                connues = annees_lignee[it["lignee"]]
+                it["manquants"] = [y for y in it["manquants"] if y not in connues]
+
+
 def _rendre_collection(c: dict) -> str:
     """Ligne Markdown d'une entrée condensée : libellé, producteur, éditions, manquants, années.
 
@@ -286,7 +399,11 @@ def _rendre_collection(c: dict) -> str:
     ancré) : tous les renvois `#src-<cle>` de la collection restent résolvables.
     """
     tete = f"- **{c['titre']}** — {c['producteur']}".rstrip(" —")
-    corps = f"{len(c['membres'])} éditions ({c['amin']}{_TIRET}{c['amax']})"
+    n = len(c["annees"])
+    if c["amin"] == c["amax"]:
+        corps = f"édition {c['amin']}" + (f" ({len(c['membres'])} variantes)" if len(c["membres"]) > 1 else "")
+    else:
+        corps = f"{n} éditions ({c['amin']}{_TIRET}{c['amax']})"
     if c["manquants"]:
         corps += ", manque " + ", ".join(str(y) for y in c["manquants"])
     avec_url = any(d["url"] for _, d in c["membres"])
@@ -306,6 +423,7 @@ def rendre() -> None:
 
     # Condensation des collections annuelles, famille par famille.
     par_famille_items = {nom: _grouper(entrees) for nom, entrees in par_famille.items()}
+    _filtrer_manquants(par_famille_items)
     n_entrees = sum(len(v) for v in par_famille_items.values())
     n_collections = sum(1 for v in par_famille_items.values() for it in v if it.get("collection"))
 
