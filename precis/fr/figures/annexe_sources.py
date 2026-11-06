@@ -171,6 +171,10 @@ _LIGNEES: list[tuple[str, list[str]]] = [
     # INS : casse, accents et suffixe « , Tunisie » varient (« Institut National de la
     # Statistique, Tunisie » == « Institut national de la statistique »).
     ("institut-national-statistique", ["institut national de la statistique"]),
+    # Caisses sociales : un suffixe « (CNSS), Tunisie » ne doit pas scinder le producteur.
+    ("cnss", ["caisse nationale de securite sociale"]),
+    ("cnam", ["caisse nationale d'assurance maladie"]),
+    ("cnrps", ["caisse nationale de retraite et de prevoyance sociale"]),
 ]
 
 # Ordinaux français écrits EN LETTRES (index d'une série numérotée, p. ex. les rapports annuels
@@ -548,6 +552,22 @@ def _rendre_collection(c: dict) -> str:
     return f"{tete}. {corps}. {etiquette} : " + ", ".join(liens) + "."
 
 
+def _nom_producteur(items: list[dict]) -> str:
+    """Nom de producteur représentatif d'un groupe : la forme la plus courte (sans suffixes)."""
+    noms = [it["producteur"] for it in items if it["producteur"]]
+    return min(noms, key=len) if noms else "—"
+
+
+def _rendre_item(it: dict) -> str:
+    """Ligne Markdown d'un item : collection condensée ou source isolée (ancre `#src-<cle>`)."""
+    if it.get("collection"):
+        return _rendre_collection(it)
+    ligne = f"- []{{#src-{it['cle']}}}**{it['titre']}** — {it['producteur']}".rstrip(" —")
+    if it["url"]:
+        ligne += f". [Accès]({it['url']})"
+    return ligne
+
+
 def rendre() -> None:
     """Émet (print) tout le corps Markdown de l'annexe, sous `#| output: asis`."""
     par_famille, inconnues, types_inattendus = collecter()
@@ -581,17 +601,26 @@ def rendre() -> None:
         "`#src-<clé>` à laquelle les volumes et les figures renvoient — y compris, dans une entrée "
         "condensée, pièce par pièce.\n"
     )
+    sous_groupes = {f["nom"] for f in _charger_familles() if f.get("sous_groupes_par_producteur")}
     for nom, items in par_famille_items.items():
         out.append(f"\n### {nom} ({len(items)}) {{#src-fam-{_slug(nom)}}}\n")
-        for it in items:
-            if it.get("collection"):
-                out.append(_rendre_collection(it))
-            else:
-                ligne = f"- []{{#src-{it['cle']}}}**{it['titre']}** — {it['producteur']}".rstrip(" —")
-                if it["url"]:
-                    ligne += f". [Accès]({it['url']})"
-                out.append(ligne)
-        out.append("")
+        if nom in sous_groupes:
+            # Famille multi-producteurs : une sous-section par producteur (p. ex. chaque caisse,
+            # chaque société), ses séries regroupées dessous. On n'y FUSIONNE rien de plus.
+            from collections import defaultdict
+            groupes: dict[str, list[dict]] = defaultdict(list)
+            for it in items:
+                groupes[_lignee(it["producteur"])].append(it)
+            for lig in sorted(groupes, key=lambda l: _sans_accents(_nom_producteur(groupes[l]))):
+                grp = groupes[lig]
+                out.append(f"#### {_nom_producteur(grp)} ({len(grp)})\n")
+                for it in sorted(grp, key=lambda it: _sans_accents(it["titre"])):
+                    out.append(_rendre_item(it))
+                out.append("")
+        else:
+            for it in items:
+                out.append(_rendre_item(it))
+            out.append("")
 
     # Signalement (hors texte publié) : clés citées mais absentes de references.json,
     # et types CSL inattendus. En commentaire HTML + sur stderr.

@@ -44,12 +44,14 @@ familles:
       - "institut national de la statistique"
 
   - nom: "Caisses sociales (CNSS, CNAM, CNRPS)"
+    sous_groupes_par_producteur: true   # sous-section par caisse (CNSS, CNAM, CNRPS)
     producteurs:
       - "caisse nationale de securite sociale"
       - "caisse nationale d'assurance maladie"
       - "caisse nationale de retraite et de prevoyance sociale"
 
   - nom: "États financiers d'entreprises (Bourse, CMF, Registre national)"
+    sous_groupes_par_producteur: true   # sous-section par société (regroupe ses séries)
     producteurs:
       - "bourse de tunis"
       - "registre national"

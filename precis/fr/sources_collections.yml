@@ -82,22 +82,18 @@ collections:
       - ins-portail-2006-salaires-prive
       - ins-portail-2009-salaires-prive
 
-  # — INS : Recensement général de la population et de l'habitat 2014 (volumes DISTINCTS). —
-  - titre: "Recensement général de la population et de l'habitat 2014"
+  # — INS : Recensement général de la population et de l'habitat, TOUS millésimes (2004, 2014,
+  #   2024), chaque volume/pièce RESTANT listé distinctement (étiquette « année : pièce »). —
+  - titre: "Recensement général de la population et de l'habitat"
     producteur: "Institut national de la statistique"
     nature: "documents"
     cles:
-      - {cle: ins-rgph-2014-vol1, label: "volume 1"}
-      - {cle: ins-rgph-2014-vol3, label: "volume 3 (caractéristiques démographiques, fécondité)"}
-      - {cle: ins-rgph-2014-chiffres, label: "« Recensement en chiffres »"}
-
-  # — INS : Recensement général de la population et de l'habitat 2024 (pièces DISTINCTES). —
-  - titre: "Recensement général de la population et de l'habitat 2024"
-    producteur: "Institut national de la statistique"
-    nature: "documents"
-    cles:
-      - {cle: ins-rgph-2024-bilan-demographique, label: "bilan démographique"}
-      - {cle: ins-rgph-2024-flash-demographie, label: "flash démographie"}
+      - {cle: ins-rgph-2004-vol1, label: "2004 : volume 1 (premiers résultats)"}
+      - {cle: ins-rgph-2014-vol1, label: "2014 : volume 1"}
+      - {cle: ins-rgph-2014-vol3, label: "2014 : volume 3 (caractéristiques démographiques, fécondité)"}
+      - {cle: ins-rgph-2014-chiffres, label: "2014 : « Recensement en chiffres »"}
+      - {cle: ins-rgph-2024-bilan-demographique, label: "2024 : bilan démographique"}
+      - {cle: ins-rgph-2024-flash-demographie, label: "2024 : flash démographie"}
 
   # — CNAM : états financiers, série découpée par exercices. —
   - titre: "États financiers de la Caisse nationale d'assurance maladie"
@@ -167,3 +163,80 @@ collections:
       - {cle: fipa-2001-05-electricite, label: "tarifs d'août 2000"}
       - {cle: fipa-2003-08-electricite-avril-2003, label: "tarifs d'avril 2003"}
       - {cle: fipa-2001-02-electricite-eng, label: "tarifs de février 1999 (anglais)"}
+
+  # — Ministère des Finances : dépenses fiscales, l'entrée SANS millésime fondue dans la série. —
+  - titre: "Rapport sur les dépenses fiscales et les avantages financiers (annexe au projet de loi de finances)"
+    producteur: "Ministère des Finances, Tunisie"
+    nature: "éditions"
+    cles:
+      - {cle: gbo-depenses-fiscales, label: "sans millésime"}
+      - minfin-depenses-fiscales-plf2022
+      - minfin-depenses-fiscales-plf2023
+
+  # — Ministère des Finances : « Résultats provisoires de l'exécution du budget » (cadence
+  #   irrégulière, libellés « à fin … » variés : aucun « manquant » attendu). —
+  - titre: "Résultats provisoires de l'exécution du budget de l'État"
+    producteur: "Ministère des finances"
+    nature: "éditions"
+    cles:
+      - {cle: minfin-resultats-provisoires-2013-03, label: "à fin mars 2013"}
+      - {cle: minfin-resultats-provisoires-2015-12, label: "à fin décembre 2015"}
+      - {cle: minfin-resultats-provisoires-2017-01, label: "à fin janvier 2017"}
+      - {cle: minfin-resultats-provisoires-2018-07, label: "à fin juillet 2018"}
+
+  # — Ministère des Finances : projet de réforme fiscale 2013 (CNF), deux pièces DISTINCTES. —
+  - titre: "Projet de réforme du système fiscal tunisien (Conseil national de la fiscalité, 2013)"
+    producteur: "Ministère des Finances"
+    nature: "documents"
+    cles:
+      - {cle: minfin-cnf-2013-synthese, label: "rapport de synthèse générale"}
+      - {cle: minfin-cnf-2013-impots-indirects, label: "groupe de travail — impôts indirects"}
+
+  # — Ministère des Finances : rapport annuel sur les finances publiques (المالية العمومية). —
+  - titre: "Rapport sur les finances publiques (المالية العمومية)"
+    producteur: "Ministère des finances"
+    nature: "éditions"
+    cles:
+      - minfin-finances-publiques-2005
+      - minfin-finances-publiques-2008
+      - minfin-finances-publiques-2011
+
+  # — STEG : grilles tarifaires éparses (dates/tensions variées), même série — chaque grille
+  #   RESTANT listée (date d'effet + catégorie de tension). —
+  - titre: "Tarifs de l'électricité et du gaz de la STEG"
+    producteur: "Société tunisienne de l'électricité et du gaz"
+    nature: "documents"
+    cles:
+      - {cle: steg-grille-2004-05-01, label: "1er mai 2004 (électricité et gaz)"}
+      - {cle: steg-grille-2006-01-01, label: "1er janvier 2006 (électricité et gaz)"}
+      - {cle: steg-grille-2008-09-01, label: "1er septembre 2008 (basse tension)"}
+      - {cle: steg-grille-2010-06-01, label: "1er juin 2010 (basse tension)"}
+      - {cle: steg-grille-2012-09-01, label: "1er septembre 2012 (basse tension)"}
+      - {cle: steg-grille-2013-03-01, label: "1er mars 2013 (moyenne/haute tension, gaz)"}
+      - {cle: steg-grille-2014-05-01, label: "1er mai 2014 (basse tension)"}
+      - {cle: steg-grille-2017-01-01, label: "1er janvier 2017 (basse tension)"}
+      - {cle: steg-grille-2018-05-01, label: "1er mai 2018 (moyenne tension, gaz)"}
+      - {cle: steg-grille-2018-09-01, label: "1er septembre 2018 (basse tension)"}
+      - {cle: steg-grille-2019-06-01, label: "1er juin 2019 (basse tension)"}
+      - {cle: steg-grille-2022-10-01-mt, label: "1er octobre 2022 (moyenne tension)"}
+
+  # — CNSS : annuaires statistiques (dont un recueil arabe/français groupé). —
+  - titre: "Annuaire statistique de la CNSS"
+    producteur: "Caisse nationale de sécurité sociale"
+    nature: "éditions"
+    cles:
+      - cnss-annuaire-2006
+      - cnss-annuaire-2013
+      - cnss-annuaire-2018
+      - {cle: cnss-annuaires-statistiques, label: "recueil (الدليل الإحصائي 2017 ; annuaire 2013)"}
+
+  # — Banque mondiale : dossier du projet COVID-19 de protection sociale (P176352),
+  #   pièces DISTINCTES (évaluation, financement additionnel, rapports d'avancement). —
+  - titre: "Tunisia COVID-19 Social Protection Emergency Response Support Project (P176352)"
+    producteur: "Banque mondiale"
+    nature: "documents"
+    cles:
+      - {cle: banquemondiale2021pad4414, label: "document d'évaluation du projet (PAD, 2021)"}
+      - {cle: banquemondiale2022pad4815, label: "financement additionnel (2022)"}
+      - {cle: banquemondiale2025isr04716, label: "rapport d'avancement n° 9 (2025)"}
+      - {cle: banquemondiale2026isr08116, label: "rapport d'avancement n° 10 (2026)"}
