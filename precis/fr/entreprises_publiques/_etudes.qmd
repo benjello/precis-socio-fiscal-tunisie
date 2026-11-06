@@ -20,6 +20,8 @@ ep.tableau_etude(
 
 Le Livre blanc compte 102 entreprises publiques en 2018 et « environ 190 » au milieu des années 1980 [@pm-livre-blanc-ep-2018, p. 7]. Selon lui, les subventions de 2013 et de 2014 profitent « essentiellement à 9 entreprises », dont la STEG, la STIR, l'Office des céréales et les sociétés de transport.
 
+Le Livre blanc constate la même lacune de publication que relèvent les sections sur les comptes (@sec-ep-lp-editions) : « la majorité des entreprises publiques ne publient pas leurs états financiers annuels et ne préparent pas d'états financiers intermédiaires », et, « à l'exception des entreprises cotées en bourse, le niveau de transparence et la qualité du reporting des entreprises publiques restent faibles » [@pm-livre-blanc-ep-2018, p. 15]. Lui-même, en 2018, dit préférer présenter les données de 2014, certifiées, « malgré la disponibilité de données plus récentes » [@pm-livre-blanc-ep-2018, p. 7] : il ne tire pas de comptes consolidés plus récents que ceux de l'Unité de suivi sur lesquels il s'appuie.
+
 ## La Banque mondiale, gouvernance des entreprises publiques, 2014 {#sec-ep-banque-mondiale-2014}
 
 **Qui, quoi.** La Banque mondiale publie en mars 2014 un rapport sur la gouvernance des entreprises publiques en Tunisie [@wb-tunisia-gouvernance-ep-2014]. **Données.** Son tableau 1 est repris de l'Unité de suivi de l'organisation des entreprises publiques, à la Présidence du gouvernement. **Périmètre.** 104 entreprises, banques et caisses de sécurité sociale comprises, réparties par ministère de tutelle. **Calcul.** Le tableau réunit trois dates — les entreprises sont comptées en 2013, les employés en 2010, le chiffre d'affaires en 2007 — ; la façon de compter les employés n'est pas dite.
@@ -37,6 +39,8 @@ ep.tableau_bm_2014(
 ```
 
 Les 117 416 employés de 2010 ne se comparent pas aux quatre totaux du ministère des Finances (@tbl-ep-effectifs) : ceux-ci excluent les banques, la Poste et les caisses de sécurité sociale, et portent sur 84 à 88 entreprises. Le même rapport écrit que les entreprises publiques « rassemblent environ 5% de l'ensemble des salariés à l'échelle nationale », sans date [@wb-tunisia-gouvernance-ep-2014, p. 3].
+
+Le rapport documente la même limite que les sections sur les comptes relèvent du côté du ministère des Finances (@sec-ep-lp-editions) : la consolidation des comptes des entreprises publiques est restée faiblement remplie, et rien de récent ne la prolonge après le milieu des années 2000. Il écrit que le dernier rapport d'activité complet de la Direction du suivi des systèmes de productivité des établissements et entreprises publics « ne comporte aucune donnée consolidée postérieure à 2006 » [@wb-tunisia-gouvernance-ep-2014, p. 15], et que « la consolidation de chiffres sur les entreprises publiques est inexistante annuellement », « la dernière publication de ce type datant de 2007 » [@wb-tunisia-gouvernance-ep-2014, p. 33]. Son tableau 2 relève, au 18 février 2013, que les états financiers les plus récents disponibles de six grandes entreprises vont de l'exercice 2010 (STEG) à 2011 (ETAP, ONAS, STB, Tunisair), la STIR sans date, et que la plupart ne les publient pas sur internet [@wb-tunisia-gouvernance-ep-2014, p. 16].
 
 ## La Banque mondiale, revue des dépenses publiques, 2020 {#sec-ep-banque-mondiale}
 
