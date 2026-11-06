@@ -3,85 +3,95 @@
 # precis/fr/figures/annexe_sources.py).
 #
 # POURQUOI. L'annexe est classée par ministère (ou institution) de tutelle du producteur, puis
-# — à l'intérieur de chaque tutelle — par producteur, puis par collection/source. Cet axe
-# remplace l'ancien classement « par type de source ».
+# — à l'intérieur de chaque tutelle — par producteur, puis par collection/source.
 #
-# COMMENT. Pour chaque source, on lit son producteur (`publisher`, à défaut l'auteur) et on
-# cherche, DANS L'ORDRE des buckets ci-dessous, le premier dont une sous-chaîne `producteurs`
-# apparaît dans le producteur (comparaison sans accents, insensible à la casse). La première
-# qui correspond l'emporte. Si AUCUNE ne correspond, la source tombe dans « Autres / non
-# rattaché » : on NE DEVINE JAMAIS une tutelle incertaine.
+# ORIGINE DES RATTACHEMENTS (jamais devinés) :
+#   [décret/LF2021] = tutelle lue dans la table sourcée
+#     precis/fr/entreprises_publiques/listes/entreprises-publiques-listes.csv (colonne `tutelle`),
+#     établie sur les DÉCRETS DE TUTELLE (1998, 2002, 2005, 2010) et le recensement du ministère
+#     des Finances annexé au PLF 2021 [@minfin-entreprises-publiques-lf2021, p. 9-12]
+#     (cf. entreprises_publiques/listes/_annexe_liste.qmd). Les noms de ministères sont ceux que
+#     le précis écrit.
+#   [web] = tutelle vérifiée par une recherche web courte (cas absents de la table) ; la source
+#     consultée est indiquée en commentaire.
+#   [ministère] = le producteur EST le ministère (ou en relève directement).
+#   [propriétaire] / [assumé] = décision éditoriale documentée, à confirmer.
 #
-# SOURCÉ / ASSUMÉ (décisions du propriétaire, documentées ici et non dans le texte publié) :
-#   - Banques publiques (STB, BNA, BH, BTE) et Bourse de Tunis → Ministère des Finances.
-#   - BCT, Cour des comptes, Cour de discipline financière et INS → Institutions indépendantes.
-#   - STEG, ETAP → Industrie/Énergie ; Tunisair, Sotrapil → Transport ; CNSS/CNAM/CNRPS/CRES →
-#     Affaires sociales ; Direction générale de la privatisation (Premier ministère) → Présidence.
-#   - ASSUMÉ, à confirmer : « Agence de promotion de l'industrie » (API) → Industrie.
-#   - LAISSÉS en « Autres / non rattaché » faute de tutelle certaine parmi ces buckets :
-#     assureurs publics (STAR, Tunis Re — supervision Finances mais non listés), Ciments de
-#     Bizerte (Industrie/Mines, non listé), SOTUMAG (Commerce), Tunisie Telecom (Technologies),
-#     CPSCL et Portail des collectivités locales (Intérieur), FIPA (Investissement), ministères
-#     de l'Éducation / du Développement, centres d'études privés, presse. À rattacher à la main
-#     si une tutelle est retenue.
-#
-# L'ORDRE des buckets est l'ordre d'affichage. « Autres / non rattaché » reste le dernier
-# (défaut). Ajouter un producteur = ajouter une sous-chaîne discriminante au bon bucket, ici et
-# à un seul endroit.
+# COMMENT. Pour chaque source on lit son producteur (`publisher`, à défaut l'auteur) et on
+# cherche, DANS L'ORDRE des buckets, la première sous-chaîne `producteurs` qui y apparaît
+# (comparaison sans accents, insensible à la casse). Sans correspondance → « Autres / non
+# rattaché » : on NE DEVINE JAMAIS une tutelle incertaine. L'ordre des buckets est l'ordre
+# d'affichage ; les buckets vides sont omis au rendu.
 
 tutelles:
   - nom: "Ministère des Finances"
     producteurs:
-      - "ministere des finances"
-      - "ministere de l'economie"          # Économie / Économie et Finances / Économie-Finances-Appui
-      - "controle general des finances"
-      - "societe tunisienne de banque"     # STB (banque publique)
-      - "banque nationale agricole"        # BNA
-      - "banque de l'habitat"              # BH
-      - "banque de tunisie et des emirats" # BTE
-      - "bourse de tunis"                  # Bourse / marché financier
+      - "ministere des finances"            # [ministère]
+      - "ministere de l'economie"           # [ministère] (Économie / Économie et Finances)
+      - "controle general des finances"     # [ministère] (corps de contrôle des Finances)
+      - "societe tunisienne de banque"      # STB  [décret/LF2021 : Finances]
+      - "banque nationale agricole"         # BNA  [décret/LF2021 : Finances]
+      - "banque de l'habitat"               # BH   [décret/LF2021 : Finances]
+      - "banque de tunisie et des emirats"  # BTE  [web] banque de la liste du min. des Finances
+                                            #      (finances.gov.tn/fr/la-liste-des-banques-0)
+      - "bourse de tunis"                   # BVMT [web] marché sous le contrôle du CMF, lui-même
+                                            #      sous tutelle du ministère des Finances (cmf.tn)
+      - "societe tunisienne d'assurance"    # STAR [décret/LF2021 : Finances]
+      - "societe tunisienne de reassurance" # Tunis Re [décret/LF2021 : Finances]
 
   - nom: "Ministère de l'Industrie, des Mines et de l'Énergie"
     producteurs:
-      - "ministere de l'industrie"
-      - "societe tunisienne de l'electricite"           # STEG
-      - "entreprise tunisienne d'activites petrolieres" # ETAP
-      - "societe tunisienne des industries de raffinage" # STIR
-      - "societe nationale de distribution des petroles" # SNDP (Agil)
-      - "agence de promotion de l'industrie"            # API (assumé)
+      - "ministere de l'industrie"                      # [ministère]
+      - "societe tunisienne de l'electricite"           # STEG [décret/LF2021 : Industrie, Énergie]
+      - "activites petrolieres"                         # ETAP [décret/LF2021 : Industrie, Énergie]
+      - "ciments de bizerte"                            # SCB  [décret/LF2021 : Industrie, Énergie]
+      - "societe de transport des hydrocarbures"        # SOTRAPIL [web] nomination du PDG par le
+                                                        #   min. de l'Industrie, des Mines et de
+                                                        #   l'Énergie (kapitalis.com, 2022)
+      - "agence de promotion de l'industrie"            # API/APII [web] sous l'autorité du min. de
+                                                        #   l'Industrie, de l'Énergie et des Mines
 
   - nom: "Ministère du Transport"
     producteurs:
-      - "societe tunisienne de l'air"                   # Tunisair
-      - "societe de transport des hydrocarbures"        # Sotrapil
-      - "societe nationale des chemins de fer"          # SNCFT
-      - "office de la marine marchande et des ports"    # OMMP
-      - "tunisie autoroutes"
-      - "societe des transports de tunis"               # Transtu
+      - "societe tunisienne de l'air"                   # Tunisair [décret/LF2021 : Transport]
+
+  - nom: "Ministère des Communications"
+    producteurs:
+      - "societe nationale des telecommunications"      # Tunisie Télécom [décret/LF2021 : Communications]
+
+  - nom: "Ministère du Commerce"
+    producteurs:
+      - "societe tunisienne des marches de gros"        # SOTUMAG [décret/LF2021 : Commerce]
 
   - nom: "Ministère des Affaires sociales"
     producteurs:
-      - "caisse nationale de securite sociale"               # CNSS
-      - "caisse nationale d'assurance maladie"               # CNAM
-      - "caisse nationale de retraite et de prevoyance sociale" # CNRPS
-      - "centre de recherches et d'etudes sociales"          # CRES
-      - "ministere des affaires sociales"
+      - "caisse nationale de securite sociale"               # CNSS  [décret/LF2021 : Affaires sociales]
+      - "caisse nationale d'assurance maladie"               # CNAM  [décret/LF2021 : Affaires sociales]
+      - "caisse nationale de retraite et de prevoyance sociale" # CNRPS [décret/LF2021 : Affaires sociales]
+      - "ministere des affaires sociales"                    # [ministère] (dont Instance gén. de la promotion sociale)
+      - "centre de recherches et d'etudes sociales"          # CRES [assumé] établissement du min. des Affaires sociales
 
-  - nom: "Ministère de l'Agriculture et de l'Équipement"
+  - nom: "Ministère de l'Intérieur (collectivités locales)"
     producteurs:
-      - "ministere de l'agriculture"
-      - "societe nationale d'exploitation et de distribution des eaux" # SONEDE
-      - "office national de l'assainissement"                # ONAS
-      - "office des cereales"
-      - "ministere de l'equipement"
+      - "caisse des prets et de soutien des collectivites locales" # CPSCL [décret/LF2021 : Intérieur, collectivités locales]
+      - "portail des collectivites locales"                  # DGCT [assumé] domaine des collectivités locales
+
+  - nom: "Ministère du Développement, de l'Investissement et de la Coopération internationale"
+    producteurs:
+      - "ministere du developpement"                         # [ministère]
+      - "agence de promotion de l'investissement exterieur"  # FIPA [web] sous tutelle du MDICI (mdici.gov.tn)
+
+  - nom: "Ministère de l'Éducation"
+    producteurs:
+      - "ministere de l'education"                           # [ministère]
 
   - nom: "Présidence du gouvernement"
     producteurs:
-      - "premier ministere"                 # dont Direction générale de la privatisation
+      - "premier ministere"                 # [ministère] dont Direction générale de la privatisation
       - "presidence du gouvernement"
       - "unite de suivi de la productivite"
 
-  - nom: "Institutions indépendantes"
+  - nom: "Institutions indépendantes"      # hors décrets de tutelle des EP ; [propriétaire]
     producteurs:
       - "banque centrale de tunisie"        # BCT
       - "cour des comptes"
@@ -105,4 +115,4 @@ tutelles:
       - "united nations"
 
   - nom: "Autres / non rattaché"
-    producteurs: []   # défaut : tutelle non établie — jamais devinée
+    producteurs: []   # défaut : tutelle non établie (presse, think tanks privés, éditeurs…) — jamais devinée
