@@ -1,0 +1,118 @@
+# Table PRODUCTEUR → MINISTÈRE / INSTITUTION DE TUTELLE, axe de premier niveau de l'annexe
+# engendrée « Les sources de données chiffrées » (precis/fr/annexe-sources.qmd, engendrée par
+# precis/fr/figures/annexe_sources.py).
+#
+# POURQUOI. L'annexe est classée par ministère (ou institution) de tutelle du producteur, puis
+# — à l'intérieur de chaque tutelle — par producteur, puis par collection/source.
+#
+# ORIGINE DES RATTACHEMENTS (jamais devinés) :
+#   [décret/LF2021] = tutelle lue dans la table sourcée
+#     precis/fr/entreprises_publiques/listes/entreprises-publiques-listes.csv (colonne `tutelle`),
+#     établie sur les DÉCRETS DE TUTELLE (1998, 2002, 2005, 2010) et le recensement du ministère
+#     des Finances annexé au PLF 2021 [@minfin-entreprises-publiques-lf2021, p. 9-12]
+#     (cf. entreprises_publiques/listes/_annexe_liste.qmd). Les noms de ministères sont ceux que
+#     le précis écrit.
+#   [web] = tutelle vérifiée par une recherche web courte (cas absents de la table) ; la source
+#     consultée est indiquée en commentaire.
+#   [ministère] = le producteur EST le ministère (ou en relève directement).
+#   [propriétaire] / [assumé] = décision éditoriale documentée, à confirmer.
+#
+# COMMENT. Pour chaque source on lit son producteur (`publisher`, à défaut l'auteur) et on
+# cherche, DANS L'ORDRE des buckets, la première sous-chaîne `producteurs` qui y apparaît
+# (comparaison sans accents, insensible à la casse). Sans correspondance → « Autres / non
+# rattaché » : on NE DEVINE JAMAIS une tutelle incertaine. L'ordre des buckets est l'ordre
+# d'affichage ; les buckets vides sont omis au rendu.
+
+tutelles:
+  - nom: "Ministère des Finances"
+    producteurs:
+      - "ministere des finances"            # [ministère]
+      - "ministere de l'economie"           # [ministère] (Économie / Économie et Finances)
+      - "controle general des finances"     # [ministère] (corps de contrôle des Finances)
+      - "societe tunisienne de banque"      # STB  [décret/LF2021 : Finances]
+      - "banque nationale agricole"         # BNA  [décret/LF2021 : Finances]
+      - "banque de l'habitat"               # BH   [décret/LF2021 : Finances]
+      - "banque de tunisie et des emirats"  # BTE  [web] banque de la liste du min. des Finances
+                                            #      (finances.gov.tn/fr/la-liste-des-banques-0)
+      - "bourse de tunis"                   # BVMT [web] marché sous le contrôle du CMF, lui-même
+                                            #      sous tutelle du ministère des Finances (cmf.tn)
+      - "societe tunisienne d'assurance"    # STAR [décret/LF2021 : Finances]
+      - "societe tunisienne de reassurance" # Tunis Re [décret/LF2021 : Finances]
+
+  - nom: "Ministère de l'Industrie, des Mines et de l'Énergie"
+    producteurs:
+      - "ministere de l'industrie"                      # [ministère]
+      - "societe tunisienne de l'electricite"           # STEG [décret/LF2021 : Industrie, Énergie]
+      - "activites petrolieres"                         # ETAP [décret/LF2021 : Industrie, Énergie]
+      - "ciments de bizerte"                            # SCB  [décret/LF2021 : Industrie, Énergie]
+      - "societe de transport des hydrocarbures"        # SOTRAPIL [web] nomination du PDG par le
+                                                        #   min. de l'Industrie, des Mines et de
+                                                        #   l'Énergie (kapitalis.com, 2022)
+      - "agence de promotion de l'industrie"            # API/APII [web] sous l'autorité du min. de
+                                                        #   l'Industrie, de l'Énergie et des Mines
+
+  - nom: "Ministère du Transport"
+    producteurs:
+      - "societe tunisienne de l'air"                   # Tunisair [décret/LF2021 : Transport]
+
+  - nom: "Ministère des Communications"
+    producteurs:
+      - "societe nationale des telecommunications"      # Tunisie Télécom [décret/LF2021 : Communications]
+
+  - nom: "Ministère du Commerce"
+    producteurs:
+      - "societe tunisienne des marches de gros"        # SOTUMAG [décret/LF2021 : Commerce]
+
+  - nom: "Ministère des Affaires sociales"
+    producteurs:
+      - "caisse nationale de securite sociale"               # CNSS  [décret/LF2021 : Affaires sociales]
+      - "caisse nationale d'assurance maladie"               # CNAM  [décret/LF2021 : Affaires sociales]
+      - "caisse nationale de retraite et de prevoyance sociale" # CNRPS [décret/LF2021 : Affaires sociales]
+      - "ministere des affaires sociales"                    # [ministère] (dont Instance gén. de la promotion sociale)
+      - "centre de recherches et d'etudes sociales"          # CRES [assumé] établissement du min. des Affaires sociales
+
+  - nom: "Ministère de l'Intérieur (collectivités locales)"
+    producteurs:
+      - "caisse des prets et de soutien des collectivites locales" # CPSCL [décret/LF2021 : Intérieur, collectivités locales]
+      - "portail des collectivites locales"                  # DGCT [assumé] domaine des collectivités locales
+
+  - nom: "Ministère du Développement, de l'Investissement et de la Coopération internationale"
+    producteurs:
+      - "ministere du developpement"                         # [ministère]
+      - "agence de promotion de l'investissement exterieur"  # FIPA [web] sous tutelle du MDICI (mdici.gov.tn)
+
+  - nom: "Ministère de l'Éducation"
+    producteurs:
+      - "ministere de l'education"                           # [ministère]
+
+  - nom: "Présidence du gouvernement"
+    producteurs:
+      - "premier ministere"                 # [ministère] dont Direction générale de la privatisation
+      - "presidence du gouvernement"
+      - "unite de suivi de la productivite"
+
+  - nom: "Institutions indépendantes"      # hors décrets de tutelle des EP ; [propriétaire]
+    producteurs:
+      - "banque centrale de tunisie"        # BCT
+      - "cour des comptes"
+      - "cour de discipline financiere"
+      - "institut national de la statistique" # INS
+
+  - nom: "Organisations internationales"
+    producteurs:
+      - "banque mondiale"
+      - "world bank"
+      - "banque internationale pour la reconstruction"
+      - "fonds monetaire international"
+      - "banque africaine de developpement"
+      - "agence francaise de developpement"
+      - "organisation de cooperation et de developpement"   # OCDE
+      - "organisation mondiale du commerce"
+      - "gatt"
+      - "organisation internationale du travail"            # BIT / ILO
+      - "organisation mondiale de la sante"                 # OMS
+      - "unicef"
+      - "united nations"
+
+  - nom: "Autres / non rattaché"
+    producteurs: []   # défaut : tutelle non établie (presse, think tanks privés, éditeurs…) — jamais devinée

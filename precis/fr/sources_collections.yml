@@ -1,0 +1,242 @@
+# Table de REGROUPEMENT SÉMANTIQUE pour l'annexe engendrée « Les sources de
+# données chiffrées » (precis/fr/annexe-sources.qmd, engendrée par
+# precis/fr/figures/annexe_sources.py).
+#
+# POURQUOI CETTE TABLE. La normalisation algorithmique du radical de titre
+# (voir `_radical`) regroupe les séries dont les titres ne diffèrent que par
+# l'année. Elle ne sait PAS, en revanche, reconnaître que des intitulés très
+# différents désignent la même source/série/collection (numéros écrits en
+# lettres, formulations variées, sujet commun). Cette table le dit EXPLICITEMENT,
+# source par source, CONSTRUITE EN LISANT LES INTITULÉS. Elle est versionnée :
+# un humain la relit et la corrige.
+#
+# RÈGLE D'OR. On ne regroupe que des documents qui sont la MÊME source ou la même
+# série/collection. Des documents réellement distincts (volumes différents d'un
+# même recensement, exercices différents d'une même série d'états financiers) sont
+# regroupés SOUS UNE collection mais restent LISTÉS un par un (champ `label`), pour
+# ne pas masquer la distinction. Au moindre doute, on ne met pas la clé ici.
+#
+# FORMAT. Chaque collection :
+#   titre        : libellé affiché de la collection (lu dans les titres, non inventé).
+#   producteur   : producteur affiché (forme canonique).
+#   nature       : "éditions" (série périodique) ou "documents" (dossier de pièces).
+#   cles         : soit une liste de clés (l'étiquette par membre est alors déduite :
+#                  ordinal en lettres du titre, sinon année) ; soit une liste d'objets
+#                  {cle, label} quand il faut nommer la pièce (volume, exercice…).
+#
+# CHAQUE CLÉ LISTÉE ICI CONSERVE SON ANCRE `#src-<clé>` dans l'entrée condensée.
+# Une clé non citée par une figure (absente de l'annexe) est simplement ignorée.
+
+collections:
+  # — Cour de discipline financière : série numérotée EN LETTRES (1er … 21e). —
+  - titre: "Rapports annuels de la Cour de discipline financière"
+    producteur: "Cour de discipline financière"
+    nature: "éditions"
+    cles:
+      - cdf-rapport-01
+      - cdf-rapport-02
+      - cdf-rapport-03
+      - cdf-rapport-04
+      - cdf-rapport-05
+      - cdf-rapport-06
+      - cdf-rapport-07
+      - cdf-rapport-08
+      - cdf-rapport-09
+      - cdf-rapport-10
+      - cdf-rapport-11
+      - cdf-rapport-12
+      - cdf-rapport-13
+      - cdf-rapport-14
+      - cdf-rapport-15
+      - cdf-rapport-16
+      - cdf-rapport-17
+      - cdf-rapport-18
+      - cdf-rapport-19
+      - cdf-rapport-20
+      - cdf-rapport-21
+
+  # — INS : « Annuaire statistique de la Tunisie » éclaté en plusieurs notices. —
+  - titre: "Annuaire statistique de la Tunisie"
+    producteur: "Institut national de la statistique"
+    nature: "éditions"
+    cles:
+      - {cle: ins-annuaire-statistique, label: "éditions 1995-2001 à 2019-2023"}
+      - {cle: ins-annuaire, label: "éditions 1995-2001, 1998-2002, 1999-2003 et 2019-2023"}
+      - {cle: ins-annuaire-2017-2021-sante, label: "édition 2017-2021"}
+      - {cle: ins-annuaire-2019-2023-sante, label: "édition 2019-2023"}
+      - {cle: ins-annuaire-statistique-prix-detail, label: "tirage sans millésime"}
+
+  # — INS : « Caractéristiques des agents de la fonction publique et leurs salaires ». —
+  - titre: "Caractéristiques des agents de la fonction publique et leurs salaires"
+    producteur: "Institut national de la statistique"
+    nature: "éditions"
+    cles:
+      - {cle: ins-fonction-publique-2021, label: "édition 2010-2021"}
+      - {cle: ins-fonction-publique-historiques, label: "éditions 2010-2014 à 2013-2017"}
+
+  # — INS : taux d'évolution trimestriel des salaires, secteur privé non agricole (données). —
+  - titre: "Taux d'évolution trimestriel des salaires, secteur privé non agricole"
+    producteur: "Institut national de la statistique"
+    nature: "éditions"
+    cles:
+      - ins-portail-2006-salaires-prive
+      - ins-portail-2009-salaires-prive
+
+  # — INS : Recensement général de la population et de l'habitat, TOUS millésimes (2004, 2014,
+  #   2024), chaque volume/pièce RESTANT listé distinctement (étiquette « année : pièce »). —
+  - titre: "Recensement général de la population et de l'habitat"
+    producteur: "Institut national de la statistique"
+    nature: "documents"
+    cles:
+      - {cle: ins-rgph-2004-vol1, label: "2004 : volume 1 (premiers résultats)"}
+      - {cle: ins-rgph-2014-vol1, label: "2014 : volume 1"}
+      - {cle: ins-rgph-2014-vol3, label: "2014 : volume 3 (caractéristiques démographiques, fécondité)"}
+      - {cle: ins-rgph-2014-chiffres, label: "2014 : « Recensement en chiffres »"}
+      - {cle: ins-rgph-2024-bilan-demographique, label: "2024 : bilan démographique"}
+      - {cle: ins-rgph-2024-flash-demographie, label: "2024 : flash démographie"}
+
+  # — CNAM : états financiers, série découpée par exercices. —
+  - titre: "États financiers de la Caisse nationale d'assurance maladie"
+    producteur: "Caisse nationale d'assurance maladie"
+    nature: "éditions"
+    cles:
+      - {cle: cnam-etats-financiers-2011-2015, label: "exercices 2011 à 2015"}
+      - {cle: cnam-etats-financiers-2016-2018, label: "exercices 2016 à 2018"}
+      - {cle: cnam-etats-financiers-2018-2019, label: "exercices 2018 et 2019"}
+      - {cle: cnam-etats-financiers-2020-2021, label: "exercices 2020 et 2021"}
+
+  # — OMC (GATT jusqu'en 1994) : Examen des politiques commerciales de la Tunisie (série). —
+  - titre: "Examen des politiques commerciales de la Tunisie"
+    producteur: "Organisation mondiale du commerce (GATT jusqu'en 1994)"
+    nature: "éditions"
+    cles:
+      - gatt-1994-tpr-tunisie
+      - omc-2005-tpr-tunisie
+      - omc-2016-tpr-tunisie
+      - omc-2025-tpr-tunisie
+
+  # — FMI : Tunisia — Recent Economic Developments (série). —
+  - titre: "Tunisia: Recent Economic Developments"
+    producteur: "Fonds monétaire international"
+    nature: "éditions"
+    cles:
+      - fmi-1996-red
+      - fmi-2000-red
+
+  # — Banque mondiale : Employment Strategy 2004 (deux volumes DISTINCTS). —
+  - titre: "Republic of Tunisia — Employment Strategy (2004)"
+    producteur: "Banque mondiale"
+    nature: "documents"
+    cles:
+      - {cle: bm-2004-employment-strategy, label: "volume I : rapport principal"}
+      - {cle: wb-2004-employment-strategy-annexes, label: "volume II : annexes"}
+
+  # — Banque mondiale : Country Economic Memorandum 1985 (deux volumes DISTINCTS). —
+  - titre: "Tunisia — Country Economic Memorandum (Sixth Development Plan, 1985)"
+    producteur: "Banque mondiale"
+    nature: "documents"
+    cles:
+      - {cle: bm-1985-cem-5328-vol1, label: "volume I : objectifs de croissance et de politique"}
+      - {cle: bm-1985-cem-5328-vol2, label: "volume II : politique des prix"}
+
+  # — Ministère de l'Industrie : Mémento de l'énergie (série). —
+  - titre: "Mémento de l'énergie"
+    producteur: "Ministère de l'Industrie, de l'Énergie et des Mines"
+    nature: "éditions"
+    cles:
+      - {cle: one-memento-2014, label: "chiffres clés 2014"}
+      - {cle: one-memento-2016-ar, label: "édition 2016 (arabe)"}
+
+  # — Direction générale de la privatisation : recettes de privatisation (mêmes données, deux arrêtés). —
+  - titre: "Recettes des opérations de privatisation et de restructuration des entreprises à participations publiques"
+    producteur: "Premier ministère, Direction générale de la privatisation"
+    nature: "éditions"
+    cles:
+      - {cle: dgpv-recettes-annuelles-1987-2005, label: "série 1987 à 2005"}
+      - {cle: dgpv-recettes-annuelles-1987-2009, label: "série 1987 à 2009"}
+
+  # — FIPA : Guide de l'investisseur, tarifs d'électricité (série). —
+  - titre: "Guide de l'investisseur : tarifs de l'électricité"
+    producteur: "Agence de promotion de l'investissement extérieur"
+    nature: "éditions"
+    cles:
+      - {cle: fipa-2001-05-electricite, label: "tarifs d'août 2000"}
+      - {cle: fipa-2003-08-electricite-avril-2003, label: "tarifs d'avril 2003"}
+      - {cle: fipa-2001-02-electricite-eng, label: "tarifs de février 1999 (anglais)"}
+
+  # — Ministère des Finances : dépenses fiscales, l'entrée SANS millésime fondue dans la série. —
+  - titre: "Rapport sur les dépenses fiscales et les avantages financiers (annexe au projet de loi de finances)"
+    producteur: "Ministère des Finances, Tunisie"
+    nature: "éditions"
+    cles:
+      - {cle: gbo-depenses-fiscales, label: "sans millésime"}
+      - minfin-depenses-fiscales-plf2022
+      - minfin-depenses-fiscales-plf2023
+
+  # — Ministère des Finances : « Résultats provisoires de l'exécution du budget » (cadence
+  #   irrégulière, libellés « à fin … » variés : aucun « manquant » attendu). —
+  - titre: "Résultats provisoires de l'exécution du budget de l'État"
+    producteur: "Ministère des finances"
+    nature: "éditions"
+    cles:
+      - {cle: minfin-resultats-provisoires-2013-03, label: "à fin mars 2013"}
+      - {cle: minfin-resultats-provisoires-2015-12, label: "à fin décembre 2015"}
+      - {cle: minfin-resultats-provisoires-2017-01, label: "à fin janvier 2017"}
+      - {cle: minfin-resultats-provisoires-2018-07, label: "à fin juillet 2018"}
+
+  # — Ministère des Finances : projet de réforme fiscale 2013 (CNF), deux pièces DISTINCTES. —
+  - titre: "Projet de réforme du système fiscal tunisien (Conseil national de la fiscalité, 2013)"
+    producteur: "Ministère des Finances"
+    nature: "documents"
+    cles:
+      - {cle: minfin-cnf-2013-synthese, label: "rapport de synthèse générale"}
+      - {cle: minfin-cnf-2013-impots-indirects, label: "groupe de travail — impôts indirects"}
+
+  # — Ministère des Finances : rapport annuel sur les finances publiques (المالية العمومية). —
+  - titre: "Rapport sur les finances publiques (المالية العمومية)"
+    producteur: "Ministère des finances"
+    nature: "éditions"
+    cles:
+      - minfin-finances-publiques-2005
+      - minfin-finances-publiques-2008
+      - minfin-finances-publiques-2011
+
+  # — STEG : grilles tarifaires éparses (dates/tensions variées), même série — chaque grille
+  #   RESTANT listée (date d'effet + catégorie de tension). —
+  - titre: "Tarifs de l'électricité et du gaz de la STEG"
+    producteur: "Société tunisienne de l'électricité et du gaz"
+    nature: "documents"
+    cles:
+      - {cle: steg-grille-2004-05-01, label: "1er mai 2004 (électricité et gaz)"}
+      - {cle: steg-grille-2006-01-01, label: "1er janvier 2006 (électricité et gaz)"}
+      - {cle: steg-grille-2008-09-01, label: "1er septembre 2008 (basse tension)"}
+      - {cle: steg-grille-2010-06-01, label: "1er juin 2010 (basse tension)"}
+      - {cle: steg-grille-2012-09-01, label: "1er septembre 2012 (basse tension)"}
+      - {cle: steg-grille-2013-03-01, label: "1er mars 2013 (moyenne/haute tension, gaz)"}
+      - {cle: steg-grille-2014-05-01, label: "1er mai 2014 (basse tension)"}
+      - {cle: steg-grille-2017-01-01, label: "1er janvier 2017 (basse tension)"}
+      - {cle: steg-grille-2018-05-01, label: "1er mai 2018 (moyenne tension, gaz)"}
+      - {cle: steg-grille-2018-09-01, label: "1er septembre 2018 (basse tension)"}
+      - {cle: steg-grille-2019-06-01, label: "1er juin 2019 (basse tension)"}
+      - {cle: steg-grille-2022-10-01-mt, label: "1er octobre 2022 (moyenne tension)"}
+
+  # — CNSS : annuaires statistiques (dont un recueil arabe/français groupé). —
+  - titre: "Annuaire statistique de la CNSS"
+    producteur: "Caisse nationale de sécurité sociale"
+    nature: "éditions"
+    cles:
+      - cnss-annuaire-2006
+      - cnss-annuaire-2013
+      - cnss-annuaire-2018
+      - {cle: cnss-annuaires-statistiques, label: "recueil (الدليل الإحصائي 2017 ; annuaire 2013)"}
+
+  # — Banque mondiale : dossier du projet COVID-19 de protection sociale (P176352),
+  #   pièces DISTINCTES (évaluation, financement additionnel, rapports d'avancement). —
+  - titre: "Tunisia COVID-19 Social Protection Emergency Response Support Project (P176352)"
+    producteur: "Banque mondiale"
+    nature: "documents"
+    cles:
+      - {cle: banquemondiale2021pad4414, label: "document d'évaluation du projet (PAD, 2021)"}
+      - {cle: banquemondiale2022pad4815, label: "financement additionnel (2022)"}
+      - {cle: banquemondiale2025isr04716, label: "rapport d'avancement n° 9 (2025)"}
+      - {cle: banquemondiale2026isr08116, label: "rapport d'avancement n° 10 (2026)"}
