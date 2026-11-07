@@ -1,0 +1,48 @@
+# Manifeste du relevé « chiffres par entreprise de la revue des dépenses publiques de la Banque mondiale, juin 2020 ».
+#
+# Relevé à l'image (pages rendues à 150 dpi puis relues une à une) du rapport n° 149126 (79 pages ; la couverture
+# l'appelle « Overview Report » ; c'est le même texte que le fichier `bm_2020_per_overview.pdf` cité par le livre, aux
+# pages de couverture près), version
+# anglaise (copie locale sous tunisia-data, hors git) : résumé exécutif (pages du fichier 8, 11, 12), chapitre 7
+# (énergie, STEG : pages 56-58), chapitre 8 (eau : pages 63-65), chapitre 9 (transport : pages 69-72). Aucun
+# fichier n'en tire encore une figure ni un tableau du livre. La version française a été comparée par son texte
+# (pdftotext), sans relecture à l'image : mêmes chiffres, pages du fichier français décalées de 5 à partir de la
+# page 56 du fichier anglais (les pages imprimées sont celles du fichier moins 15 dans les deux versions) ; ce
+# contrôle n'est pas versé ligne à ligne.
+#
+# CE QUE LE DOCUMENT IMPRIME : des chiffres par entreprise dans le texte (STEG, SONEDE, ONAS, SECADENORD,
+# GDA, Tunisie Autoroutes, Transtu, SNCFT) et des étiquettes de valeur sur cinq figures : 7.1 (trois
+# étiquettes seulement), 8.2, 8.3, 8.4 (le solde seulement), 9.2 et 9.3 (toutes les barres).
+# CE QU'IL N'IMPRIME PAS : les valeurs des figures 7.2 (emprunts de la STEG), 7.1 hors trois étiquettes, 8.4 (coûts et
+# recettes), 9.4 (parc de bus de la Transtu) ; ces cases sont des lignes `figure_sans_valeurs` à valeur vide, pas
+# lues sur les barres. Les années ne sont imprimées que quand le texte ou la figure les donne : une année vide
+# veut dire « non imprimée ». La figure 7.3 (turbines à gaz, parts de capacité et de production) et les
+# chiffres de l'État seul (investissements routiers, entretien, véhicules privés) ne sont pas relevés.
+# Le document ne donne pas de comptes d'entreprise : ni chiffre d'affaires, ni résultat net, ni fonds propres par entreprise.
+#
+# Règles de lecture : `valeur` est celle qu'imprime le document, en chaîne (« 190,000 », « 9 à 10 », « plus de 490 »,
+# point décimal anglais) ; `unite` est l'unité imprimée, en anglais. Dans la figure 9.3 le point sépare les milliers
+# (« In thousands of passengers », 335.273 = 335 273 milliers, soit 335 millions, comme le dit le texte).
+# `support` : texte (phrase), figure_etiquette (valeur imprimée sur une figure), figure_sans_valeurs (case à relever
+# plus tard). `statut` : imprime ; imprime_rattachement_incertain (étiquette dont l'année est à confirmer : fig. 7.1,
+# 2007 et « 2010 ou 2011 ») ; todo. Le libellé d'une entreprise est celui du document, complété d'un agrégat quand le texte
+# parle d'un ensemble (SECTEUR-EAU, EP de transport, Sociétés régionales de transport).
+
+format: long
+cle_de_ligne: [entreprise, annee, grandeur, unite]
+
+colonnes:
+  entreprise: entreprise (sigle) ou ensemble, tel que le texte le désigne
+  annee: année ou période imprimée ; vide si le document ne la donne pas
+  grandeur: ce que mesure la valeur, en français
+  valeur: valeur imprimée, en chaîne
+  unite: unité imprimée, en anglais
+  support: texte, figure_etiquette ou figure_sans_valeurs
+  document: clé de la notice (wb-tunisia-per-2020, définie dans le fonds commun precis/fr/references.json)
+  page_pdf: page du fichier anglais
+  page_imprimee: numéro imprimé sur la page (chiffres romains pour le résumé)
+  statut: imprime, imprime_rattachement_incertain ou todo
+  citation: courte phrase ou titre de figure, en anglais, telle qu'imprimée
+  note: réserve de lecture ou d'attribution
+
+sources: [wb-tunisia-per-2020]

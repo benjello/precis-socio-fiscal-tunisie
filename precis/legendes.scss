@@ -56,6 +56,21 @@ details.chronologie-repliable > summary {
 details.chronologie-repliable[open] > summary {
   margin-block-end: 0.75rem;
 }
+// Ligne « Source » repliée sous une figure (figtools.bloc_source) : même mécanique, sans
+// l'encadré, à la taille d'une légende.
+details.chronologie-repliable:has(> .figure-source) {
+  margin-block: 0.5rem;
+  border: 0;
+  padding: 0;
+  background: none;
+  font-size: 0.9em;
+}
+details.chronologie-repliable:has(> .figure-source) > summary {
+  font-weight: 500;
+}
+details.chronologie-repliable:has(> .figure-source)[open] > summary {
+  margin-block-end: 0.25rem;
+}
 
 
 // Domicile unique des références (voir legendes.html et scripts/check_domicile_references.py) :
@@ -260,4 +275,15 @@ button.tout-deplier:focus-visible {
 main table .insecable {
   white-space: nowrap;
   hyphens: none;
+}
+
+// Tableau de la dette garantie payée par ligne (dix-huit colonnes, gestions 2010 à 2024) :
+// beaucoup de colonnes chiffrées très étroites. On resserre la police et les marges de cellule,
+// la première colonne (une gestion) n'a pas besoin des 7 em par défaut, et le tableau défile
+// horizontalement en secours plutôt que de déborder la page.
+#tbl-ep-cdc-garantie {
+  overflow-x: auto;
+  table { font-size: 0.72rem; }
+  th, td { padding: 0.2rem 0.3rem; }
+  td:first-child, th:first-child { min-width: 0; }
 }

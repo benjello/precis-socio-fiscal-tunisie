@@ -97,6 +97,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Calendrier d'application de la TVA | روزنامة تطبيق الأداء على القيمة المضافة |  |
 | Cantine scolaire | المطعم المدرسي |  |
 | Capacité d'emprunt | طاقة التداين |  |
+| Capacité ou besoin de financement | القدرة على التمويل أو الحاجة إليه |  |
 | Capital-décès | رأس مال الوفاة |  |
 | Capitalisation d'un impôt | رسملة الأداء |  |
 | Capsule fiscale sur les vins | العلامة الجبائية على الخمور |  |
@@ -164,6 +165,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Conseil supérieur de la magistrature | المجلس الأعلى للقضاء |  |
 | Conseil supérieur des collectivités locales | المجلس الأعلى للجماعات المحلية |  |
 | Conservation de la propriété foncière | إدارة الملكية العقارية |  |
+| Consommation finale | الاستهلاك النهائي |  |
 | Contrat à durée déterminée | عقد شغل لمدة معينة | CDD |
 | Contrat à durée indéterminée | عقد شغل لمدة غير معينة | CDI |
 | Contrat d'adaptation et d'insertion professionnelle | عقد التأهيل والإدماج المهني | CAIP |
@@ -284,6 +286,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Entreprises publiques | المنشآت العمومية |  |
 | Entreprises totalement exportatrices | المؤسسات المصدرة كليا |  |
 | Enzel | الإنزال |  |
+| Épargne nationale brute | الادّخار الوطني الخام |  |
 | Épargne nette | الادّخار الصافي |  |
 | Épargne-logement | الادخار السكني |  |
 | Équilibre réel | التوازن الحقيقي للميزانية |  |
@@ -321,6 +324,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Fonds spéciaux du Trésor | الحسابات الخاصة في الخزينة |  |
 | Forces de sécurité intérieure | قوات الأمن الداخلي |  |
 | Formalité de l'enregistrement | إجراء التسجيل |  |
+| Formation brute de capital fixe | التكوين الخام لرأس المال الثابت | FBCF |
 | Formation en alternance | التكوين بالتداول |  |
 | Formation professionnelle initiale | التكوين المهني الأساسي |  |
 | Foyer scolaire | المبيت المدرسي |  |
@@ -355,6 +359,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Impôt sur les transactions | الأداء على المعاملات |  |
 | Impôts directs | الأداءات المباشرة |  |
 | Impôts indirects | الأداءات والمعاليم غير المباشرة |  |
+| Impôts sur les produits nets de subventions | الضرائب على المنتجات صافية من الدعم |  |
 | Imputation du droit de consommation | خصم المعلوم على الاستهلاك |  |
 | Incidence des subventions | توزيع منافع الدعم |  |
 | Incidence fiscale | توزيع العبء الجبائي |  |
@@ -580,7 +585,11 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Rétribution provisoire ou accidentelle | الأجر الوقتي أو العرضي |  |
 | Revalorisation des pensions | تعديل الجرايات |  |
 | Revenu annuel net | الدخل السنوي الصافي |  |
+| Revenu d'exploitation / revenu mixte | فائض الاستغلال / الدخل المختلط |  |
+| Revenu disponible brut | الدخل المتاح الخام |  |
 | Revenu forfaitaire | الدخل التقديري |  |
+| Revenu national brut | الدخل الوطني الخام | RNB |
+| Revenu national disponible brut | الدخل الوطني المتاح الخام | RNDB |
 | Revenus de capitaux mobiliers | مداخيل رؤوس الأموال المنقولة |  |
 | Revenus de commercialisation des carburants | مداخيل تسويق المحروقات |  |
 | Revenus de valeurs mobilières | مداخيل الأوراق المالية |  |
@@ -603,6 +612,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Salarié permanent | أجير قارّ |  |
 | Score d'éligibilité | أنموذج التنقيط |  |
 | Secteur informel | القطاع غير المنظم |  |
+| Secteur institutionnel | القطاع المؤسسي |  |
 | Secteur public | القطاع العام |  |
 | Sécurité sociale des pêcheurs | الضمان الاجتماعي للصيادين البحريين |  |
 | Sélection adverse (départs volontaires) | الانتقاء العكسي |  |
@@ -728,6 +738,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Tuteur | الولي |  |
 | TVA sur la marge | احتساب الأداء على القيمة المضافة على الفارق بين ثمن البيع وثمن الشراء |  |
 | Unité de gestion par objectifs | وحدة تصرف حسب الأهداف |  |
+| Valeur ajoutée (brute) | القيمة المضافة (الخام) |  |
 | Valeur du point d'indice | قيمة النقطة الاستدلالية |  |
 | Valeur en douane | القيمة لدى الديوانة |  |
 | Validation des services | إدماج الخدمات |  |

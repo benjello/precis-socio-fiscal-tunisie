@@ -911,6 +911,9 @@ NOMS_GRANDEURS = {
     "contribution_economique": "« Contribution économique » des entreprises publiques",
     "part_population_active_occupee": "Part de la population active occupée",
     "part_masse_salariale_totale": "Part de la masse salariale totale",
+    "part_emplois_secteur_formel": "Part des emplois du secteur formel",
+    "part_vingt_premieres_chiffre_affaires_et_effectifs":
+        "Part des vingt premières entreprises (chiffre d'affaires et effectifs)",
     "subventions_exploitation_investissement":
         "Subventions d'exploitation et d'investissement versées par l'État",
     "dette_exterieure_garantie": "Dette extérieure garantie par l'État",
@@ -1747,11 +1750,14 @@ LIGNES_GARANTIE_CDC = [
     ("dette_agricole_loi65_1999", "Dette agricole, loi n° 99-65"),
     ("reprise_dettes_bancaires_art25_lf1999", "Reprise de dettes bancaires, article 25 de la loi de finances de 1999")]
 COURT_GARANTIE_CDC = {
-    "stb": "STB", "fouladh": "Sidérurgie", "stir": "STIR", "pate_alfa": "Papier alfa",
-    "office_huile": "Huile", "ateliers_sncft": "Travaux ferroviaires", "bna_agricole": "BNA agricole",
-    "office_cereales": "Office des céréales", "art24_lf1999": "Art. 24 LF 1999", "fpcl": "CPSCL",
-    "dette_agricole_loi65_1999": "Dette agricole",
-    "reprise_dettes_bancaires_art25_lf1999": "Art. 25 LF 1999"}
+    "stb": "STB", "fouladh": "Sidé-<br>rurgie", "stir": "STIR", "pate_alfa": "Papier<br>alfa",
+    "office_huile": "Huile", "ateliers_sncft": "Travaux<br>ferro-<br>viaires",
+    "bna_agricole": "BNA<br>agri-<br>cole", "office_cereales": "Office<br>des<br>céréales",
+    "art24_lf1999": "Art. 24<br>LF 1999", "fpcl": "CPSCL",
+    "dette_agricole_loi65_1999": "Dette<br>agri-<br>cole",
+    "reprise_dettes_bancaires_art25_lf1999": "Art. 25<br>LF 1999",
+    "credits_agricoles_lf2014": "Crédits<br>agricoles<br>(LF 2014)",
+    "fpcl_avance_tresor_2018": "Avance<br>Trésor<br>(2018)"}
 
 
 def _postes_garantie_cdc(p) -> list[str]:

@@ -1,0 +1,52 @@
+# Manifeste du relevé « Tunisia Infrastructure Diagnostic » (Banque mondiale, décembre 2019, 81 pages).
+#
+# Relevé lu à l'image le 4 novembre 2026 (pages rendues à 150 dpi, tableaux 1.3 et 1.4 et figure 2.5 aussi à
+# 300 dpi) sur la copie locale du PDF, hors dépôt (tunisia-data, data/raw/banque-mondiale-rapports/
+# bm-infrastructure-diagnostic-2019/). Fichier non encore lu par une figure ni par un .qmd.
+# Les pages sont données deux fois : page_pdf (numéro dans le fichier) et page_imprimee (numéro au pied de
+# la page ; décalage de 6 : la couverture et les pages de garde ne sont pas numérotées).
+#
+# CE QUE LE RAPPORT IMPRIME : le tableau 1.2 (p. 9-10) liste les 25 entreprises d'infrastructure, dont
+# douze sociétés régionales de transport comptées ensemble. Le tableau 1.3 (p. 11) donne, pour neuf entreprises
+# et la société des autoroutes (STA), onze grandeurs en millions de dinars (produits et charges d'exploitation,
+# résultat brut d'exploitation, subventions d'exploitation, résultat net, fonds propres, investissement,
+# subventions d'investissement, dette, actif, effectifs) et deux ratios ; l'exercice est celui de 2017 sauf
+# TRANSTU, TUNISAIR et Tunisie Télécom (2016) et OACA (2015). Le tableau 1.4 (p. 12) donne les subventions
+# d'exploitation cumulées 2009-2017 de cinq entreprises et leur part dans les produits. Le tableau 1.5 (p. 13)
+# donne des rapports 2017/2009 (effectifs, charges d'exploitation, indicateurs d'activité). La figure 1.3 (p. 11)
+# imprime le résultat net 2017 sur chaque barre. La figure 2.5 (p. 34) imprime l'investissement de la STEG par
+# segment, 2013-2017. Les textes des pages 1, 2, 3, 8, 10 à 15, 27, 30, 33, 34 donnent d'autres montants par
+# entreprise, relevés avec la mention « texte ».
+# Source des chiffres selon le rapport : « Elaboration of SOE annual reports », information approximative
+# parce que les rapports ne sont pas uniformes (source du tableau 1.3) ; états financiers pour le tableau 1.4.
+#
+# CE QUE LE RAPPORT N'IMPRIME PAS : aucune valeur sur les barres des figures 1.4 (croissance des produits en
+# termes réels), 1.5 (produits par employé) et 1.6 (dette 2009-2017 et rapport dette/actif) : graphiques sans
+# valeurs, non lus, aucune ligne. Aucune ventilation par entreprise des garanties, rétrocessions et prêts du
+# Trésor (14 % du PIB en 2016, un seul chiffre agrégé, p. 8). Tunisie Télécom : produits et dette seulement
+# (le rapport dit ne pas disposer de comptes publiés). Les cases « NA » du tableau 1.3 sont des lignes sans
+# valeur, avec la mention « NA imprimé » ; les cases grises vides des lignes de ratios ne sont pas relevées.
+# Les chiffres imprimés en milliards sont gardés en milliards (unité « Md TND »).
+#
+# POINTS DE LECTURE : (1) Tableau 1.4, SONEDE : l'image porte « 157208 », un renvoi 15 collé au nombre ; la
+# valeur n'est pas retenue (case vide) : 7 208 ou 208, aucune des deux ne cadre sans équivoque avec le rang 5, avec 9 % des produits et
+# avec « relatively modest » du texte (TODO dans docs/notes/bm-diagnostic-infrastructure-2019-recoupements.md).
+# (2) Tableau 1.3 : le résultat brut d'exploitation n'est pas partout produits moins charges (SONEDE, ONAS,
+# TRANSTU). (3) La figure 1.3 donne -140 pour TUNISAIR et +25 pour OACA, le tableau 1.3 -196 et -22. (4) Le
+# renvoi b de la ligne « Debt » du second tableau (valeurs de 2015) ne s'accorde pas avec les colonnes.
+
+format: long
+cle_de_ligne: [sigle, exercice, grandeur]
+
+colonnes:
+  sigle: sigle de l'entreprise tel que le rapport l'écrit ; NEUF_ENTREPRISES = les neuf entreprises analysées ; ENSEMBLE_ENTREPRISES_PUBLIQUES = le texte parle de l'ensemble sans le définir ; TOTAL_25 = total du tableau 1.2
+  exercice: année de la valeur ; « 2009-2017 » pour un cumul ou un rapport entre deux années ; vide quand le rapport ne la donne pas
+  grandeur: nom de la grandeur (voir les listes du tableau 1.3 ; suffixe _texte ou _figure_1_3 quand la même grandeur est aussi imprimée ailleurs avec une autre valeur ou une autre précision)
+  valeur: nombre imprimé, point décimal ; vide pour une case « NA »
+  unite: unité imprimée (M TND, Md TND, %, agents, rapport (x), nombre d'entreprises)
+  tableau: tableau, figure ou « texte » du rapport
+  page_pdf: page du fichier PDF
+  page_imprimee: numéro de page imprimé au pied de la page
+  note: précision de lecture, renvoi imprimé, écart interne au rapport
+
+sources: [wb-infra-diagnostic-2019]

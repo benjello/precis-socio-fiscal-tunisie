@@ -22,7 +22,7 @@ colonnes:
   exercice: exercice du document (vide pour une entreprise sans document)
   nature: rapport d'activité, états financiers, ou « aucun »
   url_origine: adresse du document sur le site de l'éditeur ; pour « aucun », les adresses et sources essayées
-  url_archive: adresse d'une capture de l'Internet Archive (vide : aucune capture utilisée)
+  url_archive: "adresse d'une capture de l'Internet Archive (vide : aucune capture utilisée)"
   fichier: chemin de la copie locale, relatif au dossier qui contient le dépôt du précis (vide si le document n'est pas téléchargé)
   octets: taille de la copie locale
   sha256: empreinte SHA-256 de la copie locale

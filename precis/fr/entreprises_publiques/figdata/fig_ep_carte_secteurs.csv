@@ -1,0 +1,18 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-11-06
+# séries (tunisia_data) : carte-controle
+# sources (citation) : @bvmt-air-liquide-tunisie, @bvmt-atl, @bvmt-bh-assurance, @bvmt-bh-bank, @bvmt-bh-leasing, @bvmt-bna, @bvmt-bna-assurances, @bvmt-bte-adp, @bvmt-ciments-de-bizerte, @bvmt-ef-bte-2024-consolide, @bvmt-ef-star-2021-consolide, @bvmt-ef-star-2022-consolide, @bvmt-ef-tunisair-2022-consolide, @bvmt-ra-bna-2021, @bvmt-ra-stb-2021, @bvmt-simpar, @bvmt-sotetel, @bvmt-sotrapil, @bvmt-sotumag, @bvmt-star, @bvmt-stb, @bvmt-tunis-re, @bvmt-tunisair, @bvmt-wifak-international-bank, @etap-ra-2023, @ra-bh-2022, @steg-ef-2014, @steg-ef-2018, @steg-ef-2023
+# fiches : 
+# méthode/hypothèses : Le secteur est une lecture conservatrice du nom et du périmètre, « non classé » au moindre doute ; ce n'est pas un poids économique. Le capital et le chiffre d'affaires de chaque entité contrôlée ne sont pas disponibles uniformément : ils ne sont pas portés ici. Le relevé n'est pas exhaustif (portefeuille non nominatif de la STEG, offices sans périmètre consolidé) : le périmètre réel est un plancher.
+# note : Répartition par secteur des entités contrôlées, lecture conservatrice de leur nom et de leur périmètre
+secteur,entités contrôlées (distinctes)
+banque,10
+SICAV/OPCVM,12
+SICAR/capital-investissement,7
+leasing,2
+assurance,7
+recouvrement,3
+immobilier,3
+énergie-pétrole,22
+industrie,2
+services,7
+non classé,44

@@ -6325,3 +6325,132 @@
   caveats_ar: حسابات المنشأة؛ مطابقة مع جذاذات وزارة المالية 2018-2023 عدا STB 2020؛
     ROE فارغ عند أموال ذاتية سالبة.
   fiche: sources/entreprises-publiques.md
+- id: cnat-approche-revenus
+  titre: 'PIB selon l''approche des revenus : rémunération des salariés (travail),
+    revenu d''exploitation (capital), impôts nets ; par base, 2005-2025'
+  sources:
+  - ins-cnat-2015
+  build: scripts/parse_cnat_approche_revenus.py:main
+  raw:
+  - data/raw/ins-publications/comptes-de-la-nation
+  output: data/processed/ins-comptes-nationaux/pib_approche_revenus.csv
+  unite: millions de dinars courants ; parts en % du PIB
+  perimetre: 'Bloc total du tableau « Produit intérieur brut selon l''approche des
+    revenus » des éditions des Comptes de la nation : rémunération des salariés, revenu
+    d''exploitation (excédent brut d''exploitation + revenu mixte), impôts sur la
+    production et les importations, subventions, PIB p.m. Consolidé par base (édition
+    la plus récente par année). Base 1997 : 2005-2017 ; base 2015 : 2015-2025 ; les
+    éditions base 1983 (SCN 1968) ne publient pas ce tableau.'
+  caveats: 'LES NIVEAUX NE SE COMPARENT PAS D''UNE BASE À L''AUTRE (base 2015 ≈ +6
+    % sur base 1997) : filtrer `base`, tracer la part du PIB PAR SEGMENTS, ne jamais
+    chaîner. REVENU MIXTE : `revenu_exploitation` mêle l''excédent des sociétés et
+    le revenu mixte des entreprises individuelles (ménages) — la part des salaires
+    (≈ 36 % en 2005 à 43 % en 2024) SOUS-ESTIME le travail (le travail des indépendants
+    est compté en capital) ; pour un partage corrigé, calculer sur la seule VA des
+    sociétés (par secteur institutionnel, présent dans le tableau, à extraire) ou
+    imputer le revenu mixte. Garde-fou de construction : identité PIB = rémunération
+    + impôts − subventions + revenu d''exploitation vérifiée à 0,1 MD près. Ancres
+    contrôlées : rémunération 2021=55 588,7 ; 2015=35 572,6 ; 2020=50 242,1 ; PIB
+    2012=70 354,5. Ni la BCT ni les CSV cnat-consolide/* ne donnent ce découpage en
+    niveaux. Voir docs/cnat-approche-revenus.md.'
+  titre_ar: 'الناتج المحلي الإجمالي حسب مقاربة المداخيل: تعويضات الأجراء (العمل)،
+    فائض الاستغلال (رأس المال)، الضرائب الصافية؛ حسب الأساس، 2005-2025'
+  unite_ar: بملايين الدنانير الجارية؛ الحصص بالنسبة المئوية من الناتج
+  perimetre_ar: 'الكتلة الإجمالية لجدول «الناتج المحلي الإجمالي حسب مقاربة المداخيل»
+    في إصدارات الحسابات القومية: تعويضات الأجراء، فائض الاستغلال (الفائض الخام للاستغلال
+    + الدخل المختلط)، الضرائب على الإنتاج والتوريد، الدعم، الناتج بأسعار السوق. مجمّع
+    حسب الأساس (أحدث إصدار لكل سنة). الأساس 1997: 2005-2017؛ الأساس 2015: 2015-2025.'
+  caveats_ar: 'لا تُقارن المستويات من أساس إلى آخر (الأساس 2015 أعلى بنحو 6 % من الأساس
+    1997): يُرشَّح حسب `base` وتُرسم الحصة على مقاطع، دون وصل. الدخل المختلط: يجمع
+    `revenu_exploitation` فائض الشركات والدخل المختلط للمؤسسات الفردية (ضمن الأسر)،
+    لذا تُقلّل حصة الأجور من تقدير عامل العمل. ضمان البناء: التحقق من المطابقة المحاسبية
+    بفارق لا يتجاوز 0,1 م.د.'
+  fiche: docs/cnat-approche-revenus.md
+  licences:
+  - 'INS (sources ins-*) : conditions d''utilisation de l''INS, https://ins.tn/en/conditions-utilisation
+    (consultées le 2026-10-27) : réutilisation commerciale et non commerciale, redistribution
+    et transformation autorisées ; citer le producteur et la date de mise à jour,
+    ne pas suggérer une caution officielle ni tromper sur le contenu ; droit tunisien'
+- id: cnat-approche-revenus-secteurs
+  titre: 'Approche des revenus par secteur institutionnel : valeur ajoutée, rémunération
+    des salariés, revenu d''exploitation (SNF, sociétés financières, administrations,
+    ménages) ; par base, 2005-2025'
+  sources:
+  - ins-cnat-2015
+  build: scripts/parse_cnat_approche_revenus.py:main
+  raw:
+  - data/raw/ins-publications/comptes-de-la-nation
+  output: data/processed/ins-comptes-nationaux/pib_approche_revenus_secteurs.csv
+  unite: millions de dinars courants ; part en % de la VA du secteur
+  perimetre: 'Les quatre secteurs institutionnels du tableau de l''approche des revenus
+    : sociétés non financières (snf), sociétés financières (sf), administrations publiques
+    (apu), ménages y c. entreprises individuelles et ISBLSM (menages). Pour chacun
+    : valeur ajoutée, rémunération des salariés, revenu d''exploitation (excédent
+    brut d''exploitation, et revenu mixte pour les ménages), et la part de la rémunération
+    dans la VA. Consolidé par base (édition la plus récente).'
+  caveats: 'Permet la part des salaires / taux de marge des SOCIÉTÉS NON FINANCIÈRES
+    (rem_snf/VA_snf et son complément) — l''indicateur de Cotis (2009) et d''Askenazy-Cette-Sylvain,
+    qui évite le revenu mixte (logé chez les ménages). Pour les ménages, `revenu_exploitation`
+    = revenu mixte (travail indépendant + capital), à ne pas lire comme du capital
+    pur. LES NIVEAUX NE SE COMPARENT PAS ENTRE BASES : filtrer `base`. Garde-fou :
+    VA = rémunération + revenu d''exploitation vérifié à 1 MD près par secteur. Ancres
+    : SNF 2021 VA 42 847,9 / rémun 23 704,4 / EBE 19 143,5 ; APU rémun 21 710,6 ;
+    ménages revenu mixte 39 961,6. Réserve de comparaison internationale des NIVEAUX
+    (définition VA au prix de base, impôts sur la production) : voir docs/cnat-approche-revenus.md.'
+  titre_ar: 'مقاربة المداخيل حسب القطاع المؤسسي: القيمة المضافة، تعويضات الأجراء،
+    فائض الاستغلال (الشركات غير المالية، الشركات المالية، الإدارات، الأسر)؛ حسب الأساس،
+    2005-2025'
+  unite_ar: بملايين الدنانير الجارية؛ الحصة بالنسبة المئوية من القيمة المضافة للقطاع
+  perimetre_ar: 'القطاعات المؤسسية الأربعة من جدول مقاربة المداخيل: الشركات غير المالية
+    والمالية والإدارات العمومية والأسر؛ لكل قطاع القيمة المضافة وتعويضات الأجراء وفائض
+    الاستغلال.'
+  caveats_ar: 'يتيح حساب حصة الأجور / هامش الربح للشركات غير المالية، وهو مؤشر كوتيس
+    (2009)، لأنّه يتجنّب الدخل المختلط (ضمن الأسر). لا تُقارن المستويات بين الأسس.
+    ضمان: القيمة المضافة = تعويضات الأجراء + فائض الاستغلال.'
+  fiche: docs/cnat-approche-revenus.md
+  licences:
+  - 'INS (sources ins-*) : conditions d''utilisation de l''INS, https://ins.tn/en/conditions-utilisation
+    (consultées le 2026-10-27) : réutilisation commerciale et non commerciale, redistribution
+    et transformation autorisées ; citer le producteur et la date de mise à jour,
+    ne pas suggérer une caution officielle ni tromper sur le contenu ; droit tunisien'
+- id: cnat-approche-revenus-undata
+  titre: 'Approche des revenus du PIB, économie entière, d''après les données ONU
+    (comptes INS transmis aux Nations unies) : rémunération, excédent d''exploitation
+    + revenu mixte, impôts nets ; par base, 1992-2023'
+  sources:
+  - undata-sna
+  build: scripts/parse_undata_approche_revenus.py:main
+  raw:
+  - data/raw/undata
+  output: data/processed/ins-comptes-nationaux/pib_approche_revenus_undata.csv
+  unite: millions de dinars courants ; parts en % du PIB
+  perimetre: 'Compte de génération du revenu (table 4.1 d''UNdata, « Generation of
+    income account - Uses ») : rémunération des salariés (D.1), impôts sur la production
+    et importations nets de subventions (D.2-D.3), excédent d''exploitation et revenu
+    mixte (B.2g). TOTAL de l''économie, pas par secteur. Par version du SCN : 1968
+    -> base 1983 (1992-2008), 1993 -> base 1997 (1997-2011), 2008 -> base 2015 (2015-2023).
+    PROLONGE AVANT 2005 la série INS par secteur `cnat-approche-revenus-secteurs`
+    (qui ne commence qu''en 2005).'
+  caveats: 'UNdata relaie les comptes de l''INS : sur le recouvrement 2005-2009 (base
+    1997), la rémunération est IDENTIQUE au dixième à celle des éditions INS (contrôle
+    intégré) ; 2010-2011 divergent légèrement (millésime d''édition différent, UNdata
+    étant une version antérieure). LES NIVEAUX NE SE COMPARENT PAS ENTRE BASES : filtrer
+    `base`. Le capital (B.2g) INCLUT le revenu mixte des indépendants : la part des
+    salaires est la mesure « économie entière » (naïve), pas le partage propre des
+    sociétés (limité à 2005+, éditions INS). Valeurs UNdata en dinars, converties
+    en millions (÷10^6). Compte de génération absent des fichiers 1990-1991, 2012-2014
+    et 2024 (comblés par l''INS pour 2012-2014). Voir docs/cnat-approche-revenus.md.'
+  titre_ar: 'مقاربة المداخيل للناتج، كامل الاقتصاد، من بيانات الأمم المتحدة (حسابات
+    المعهد المحالة إلى الأمم المتحدة): تعويضات الأجراء، فائض الاستغلال والدخل المختلط،
+    الضرائب الصافية؛ حسب الأساس، 1992-2023'
+  unite_ar: بملايين الدنانير الجارية؛ الحصص بالنسبة المئوية من الناتج
+  perimetre_ar: 'حساب توليد الدخل (جدول 4.1 من UNdata): تعويضات الأجراء (D.1)، الضرائب
+    على الإنتاج والتوريد صافية (D.2-D.3)، فائض الاستغلال والدخل المختلط (B.2g). إجمالي
+    الاقتصاد، ليس حسب القطاع. يمدّ السلسلة قبل 2005.'
+  caveats_ar: 'تُعيد UNdata نشر حسابات المعهد: في 2005-2009 (الأساس 1997) تطابق تعويضات
+    الأجراء أرقام المعهد. لا تُقارن المستويات بين الأسس. يشمل رأس المال الدخل المختلط.'
+  fiche: docs/cnat-approche-revenus.md
+  licences:
+  - 'Nations unies (UNdata, UNSD National Accounts) : données officielles des pays,
+    diffusion publique à des fins statistiques ; producteur d''origine INS. Citer
+    UNSD/UNdata et l''INS.'

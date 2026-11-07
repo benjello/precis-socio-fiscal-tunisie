@@ -17,7 +17,8 @@
 # après l'entrée en vigueur de l'accord et n'a pas de date d'effet dans ce relevé.
 
 format: long
-cle_de_ligne: [tableau, ordre, colonne]
+# `ordre` numérote les lignes d'un tableau à une date d'effet donnée : la date fait partie de la clé.
+cle_de_ligne: [tableau, date_effet, ordre, colonne]
 statuts:
   lu: valeur lue dans le texte cité
   sans objet: le texte ne fixe rien pour cette ligne et cette colonne
