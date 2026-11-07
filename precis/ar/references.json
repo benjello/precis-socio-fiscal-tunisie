@@ -6553,28 +6553,6 @@
       "note": "citation-key: ins-pib-base-2015-2010-2020\nجدول البيانات المرفق ببلاغ 15 أوت 2021؛ العنوان وصفي."
     },
     {
-      "id": "ins-scnt97-presentation",
-      "type": "report",
-      "title": "Présentation générale du système de comptabilité nationale tunisien (SCNT97) : secteurs institutionnels, séquence des comptes, tableaux de synthèse",
-      "title-short": "INS, Présentation générale du SCNT97",
-      "author": [
-        {
-          "literal": "المعهد الوطني للإحصاء"
-        }
-      ],
-      "publisher": "المعهد الوطني للإحصاء، تونس",
-      "publisher-place": "تونس",
-      "issued": {
-        "date-parts": [
-          [
-            2021
-          ]
-        ]
-      },
-      "number-of-pages": "25",
-      "note": "citation-key: ins-scnt97-presentation\nوثيقة منهجية من 25 صفحة حول النظام التونسي للمحاسبة القومية (SCNT97): القطاعات المؤسسية وتسلسل الحسابات وجداول التأليف (TRE/TCEI/TOF). العنوان الفرنسي محفوظ في انتظار العنوان العربي الرسمي. الملف: tunisia-data, data/raw/ins-publications/comptes-de-la-nation/INS_2021-03_cnat_presentation_SCNT97.pdf."
-    },
-    {
       "id": "imf-tunisia-art4-2010",
       "type": "report",
       "title": "Tunisia: 2010 Article IV Consultation — Staff Report; Public Information Notice on the Executive Board Discussion; and Statement by the Executive Director for Tunisia",
@@ -12803,139 +12781,66 @@
       "note": "citation-key: loi-2009-32-restauration-formation\nJORT n° 51 du 26 juin 2009, p. 1660. Article 3, lu sur le fascicule français : modifie le numéro 30 bis du tableau A du code de la TVA (restauration au profit des étudiants, des élèves et des apprenants des centres de formation professionnelle de base, selon un cahier des charges). Le registre jort_cache.db donne par erreur à cet enregistrement le numéro 2009-39 (recid 109742) ; le numéro imprimé est 2009-32, ce que confirment le sommaire et le texte du fascicule. Ne pas confondre avec la loi n° 2009-39 du 8 juillet 2009 (retraite avant l'âge légal). Édition arabe : intitulé arabe non lu (le titre français est conservé, selon l'usage du fonds), pagination arabe non relevée (champ page laissé vide). URL lue dans pdf_ar de jort_cache.db."
     },
     {
-      "id": "cotis-2009",
-      "type": "report",
-      "title": "Partage de la valeur ajoutée, partage des profits et écarts de rémunérations en France",
-      "author": [
-        {
-          "family": "Cotis",
-          "given": "Jean-Philippe"
-        }
-      ],
-      "publisher": "Institut national de la statistique et des études économiques / La Documentation française",
+      "id": "loi-60-1-lob",
+      "type": "legislation",
+      "title": "Loi n° 60-1 du 12 mars 1960, portant loi organique du budget",
+      "title-short": "Loi n° 60-1 du 12 mars 1960",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "13",
+      "volume": "103",
       "issued": {
         "date-parts": [
           [
-            2009,
-            5
+            1960,
+            3,
+            12
           ]
         ]
       },
-      "URL": "http://gesd.free.fr/cotis9.pdf",
-      "note": "citation-key: cotis-2009\nRapport au Président de la République, rendu public le 13 mai 2009. Figures 1.1.a (part des salaires dans la VA des SNF) et 1.1.b (taux de marge des SNF), 1949-2007. Copie accessible : http://gesd.free.fr/cotis9.pdf."
+      "URL": "https://www.pist.tn/jort/1960/1960A/Ja01360.pdf",
+      "note": "citation-key: loi-60-1-lob\nJORT n° 13 (édition arabe). Première loi organique du budget de la Tunisie indépendante ; abrogée par l'art. 50 de la loi n° 67-53. URL lue dans pdf_ar de jort_cache.db (recid 117890). Édition arabe : intitulé arabe non lu (le titre français est conservé, selon l'usage du fonds), pagination arabe non relevée (champ page laissé vide). TODO (bibliographe) : relever le titre et les pages de l'édition arabe."
     },
     {
-      "id": "askenazy-cette-sylvain-2011",
-      "type": "book",
-      "title": "Le partage de la valeur ajoutée",
-      "author": [
-        {
-          "family": "Askenazy",
-          "given": "Philippe"
-        },
-        {
-          "family": "Cette",
-          "given": "Gilbert"
-        },
-        {
-          "family": "Sylvain",
-          "given": "Arnaud"
-        }
-      ],
-      "collection-title": "Repères",
-      "publisher": "La Découverte",
+      "id": "loi-org-2004-42-lob",
+      "type": "legislation",
+      "title": "Loi organique n° 2004-42 du 13 mai 2004, modifiant et complétant la loi organique du budget n° 67-53 du 8 décembre 1967",
+      "title-short": "Loi organique n° 2004-42 du 13 mai 2004",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "40",
+      "volume": "147",
       "issued": {
         "date-parts": [
           [
-            2011
-          ]
-        ]
-      },
-      "note": "citation-key: askenazy-cette-sylvain-2011\nEnviron 124 pages. ISBN à compléter."
-    },
-    {
-      "id": "cas-delaveau-2009-nv133",
-      "type": "report",
-      "title": "Faut-il rééquilibrer le partage de la valeur ajoutée et des profits en faveur des salariés ?",
-      "author": [
-        {
-          "family": "Delaveau",
-          "given": "Bertille"
-        }
-      ],
-      "collection-title": "La Note de veille",
-      "number": "133",
-      "publisher": "Centre d'analyse stratégique",
-      "issued": {
-        "date-parts": [
-          [
-            2009,
+            2004,
             5,
-            7
+            13
           ]
         ]
       },
-      "URL": "https://strategie.archives-spm.fr/cas/content/note-de-veille-n%C2%B0133-mai-2009-analyse-faut-il-reequilibrer-le-partage-de-la-valeur-ajoutee-e.html",
-      "note": "citation-key: cas-delaveau-2009-nv133\nAuteur (signataire unique, vérifié sur la note) : Bertille Delaveau, Département des Affaires économiques et financières, Centre d'analyse stratégique. Olivier Passet dirigeait le département mais n'est pas signataire."
+      "URL": "https://www.pist.tn/jort/2004/2004A/Ja0402004.pdf",
+      "note": "citation-key: loi-org-2004-42-lob\nJORT n° 40 du 18 mai 2004 (édition arabe). A introduit la présentation du budget par programmes et missions ; abrogée nommément par l'art. 73 de la loi organique n° 2019-15. URL lue dans pdf_ar de jort_cache.db (recid 110924). Édition arabe : intitulé arabe non lu (le titre français est conservé, selon l'usage du fonds), pagination arabe non relevée (champ page laissé vide). TODO (bibliographe) : relever le titre et les pages de l'édition arabe."
     },
     {
-      "id": "karabarbounis-neiman-2014",
-      "type": "article-journal",
-      "title": "The Global Decline of the Labor Share",
+      "id": "ins-scnt97-presentation",
+      "type": "report",
+      "title": "Présentation générale du système de comptabilité nationale tunisien (SCNT97) : secteurs institutionnels, séquence des comptes, tableaux de synthèse",
+      "title-short": "INS, Présentation générale du SCNT97",
       "author": [
         {
-          "family": "Karabarbounis",
-          "given": "Loukas"
-        },
-        {
-          "family": "Neiman",
-          "given": "Brent"
+          "literal": "المعهد الوطني للإحصاء"
         }
       ],
-      "container-title": "The Quarterly Journal of Economics",
-      "volume": "129",
-      "issue": "1",
+      "publisher": "المعهد الوطني للإحصاء، تونس",
+      "publisher-place": "تونس",
       "issued": {
         "date-parts": [
           [
-            2014
+            2021
           ]
         ]
       },
-      "page": "61-103",
-      "DOI": "10.1093/qje/qjt032",
-      "note": "citation-key: karabarbounis-neiman-2014"
-    },
-    {
-      "id": "cette-koehl-philippon-2019",
-      "type": "article-journal",
-      "title": "The Labor Share in the Long Term: A Decline?",
-      "author": [
-        {
-          "family": "Cette",
-          "given": "Gilbert"
-        },
-        {
-          "family": "Koehl",
-          "given": "Lorraine"
-        },
-        {
-          "family": "Philippon",
-          "given": "Thomas"
-        }
-      ],
-      "container-title": "Économie et Statistique / Economics and Statistics",
-      "issue": "510-511-512",
-      "page": "35-60",
-      "issued": {
-        "date-parts": [
-          [
-            2019
-          ]
-        ]
-      },
-      "URL": "https://www.insee.fr/en/statistiques/4253023",
-      "note": "citation-key: cette-koehl-philippon-2019\nPart des salaires du secteur marchand, hors services immobiliers et ajustée du revenu mixte des non-salariés ; comparaison France/États-Unis puis zone euro. Versions : Banque de France Working Paper 727 (2019) ; NBER Working Paper 26136 (2019)."
+      "number-of-pages": "25",
+      "note": "citation-key: ins-scnt97-presentation\nوثيقة منهجية من 25 صفحة حول النظام التونسي للمحاسبة القومية (SCNT97): القطاعات المؤسسية وتسلسل الحسابات وجداول التأليف (TRE/TCEI/TOF). العنوان الفرنسي محفوظ في انتظار العنوان العربي الرسمي. الملف: tunisia-data, data/raw/ins-publications/comptes-de-la-nation/INS_2021-03_cnat_presentation_SCNT97.pdf."
     }
   ]
 }

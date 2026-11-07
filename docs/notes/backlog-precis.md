@@ -3692,6 +3692,8 @@ il est lié depuis la page d'accueil (partie V, depuis le 20 octobre 2026) et in
 
 - **Lacunes des comptes (4 novembre 2026).** `docs/notes/entreprises-publiques-lacunes-comptes-2026-11-04.md` : 25 sigles sans aucun compte en ligne (A), 12 avec documents mais sans opinion des commissaires aux comptes (B), 9 avec opinions (C), recomptés depuis `inventaire-rapports-*.csv` et `opinions-cac.csv`. Restent : poser les quatre questions à l'équipe de la Banque mondiale (groupes A et B), vérifier l'effectivité de l'art. 14 de la loi n° 89-9 (publication au JORT), arbitrer l'achat des comptes au Registre national (`rne-voies-gratuites-2026-11-04.md`).
 
+- **Chantiers livrés (5-6 novembre 2026, PR fusionnées #760-#769).** (1) **Carte de contrôle** (`#sec-ep-liste-controle`, relevé `listes/carte-controle.csv`) : qui contrôle quoi — 130 relations, 119 entités contrôlées dont 105 hors liste officielle, colonne `secteur`, trois figures dont une **toile interactive D3** (clic-déplie la mère, hover, filtre secteur) + repli PNG. (2) **Annexe globale des sources** (`annexe-sources.qmd`, générateur `figures/annexe_sources.py`) : registre engendré des supports chiffrés, **condensé** (529 supports → 139 entrées, collections par intervalle + manquants, tables `sources_collections.yml`), **classé par ministère de tutelle** (`sources_tutelles.yml`, sourcé décrets de tutelle + recensement LF2021 + vérif web), sous-regroupé par producteur ; ancres `#src-` stables. (3) **Matrice de couverture** (`_annexe_couverture.qmd`), **filiales** STEG/ETAP/STAR, **rapprochement** subventions/transferts/dette (`#sec-ep-ge-rapprochement`), **tableau des emprunts garantis**, limite « pas de comptes consolidés » du rapport DGP (`#sec-ep-lp-editions`). (4) **Sources complémentaires** : corroboration Livre blanc 2018 + Banque mondiale 78675-TN dans `_etudes.qmd`. **Hors git** (`docs/exemples-soes/`) : note comptes consolidés (Fortin) et **rapport productivité** (md+pdf). **Pipeline productivité** dans `tunisia-data` (`scripts/extraire_grandeurs_ep.py`, `sources/entreprises-publiques/grandeurs-productivite-ep.csv` : revenus/VA/masse salariale/effectif/VA-agent par entreprise × exercice, **test d'or 2014 reproduit au dinar**, répétable). Restent : **analyse façon Présidence** (diagnostic contre-performance, VA/agent, salaires vs VA), combler **STIR** (états via Cour des comptes), tableau de bord et fiches « En bref » (en pause).
+
 - **Piles de comptes, de sociétés cotées et du Registre (PR #730 à #732, #738, #740 à #747 ; 4 novembre 2026).** Vérifié dans la branche : chapitre `_cotees.qmd` (actionnaires et capital) et annexe `_annexe_registre.qmd` (qui remplacent #728 et #729, non fusionnées) ; `listes/inventaire-rapports-*.csv` (neuf familles) et `listes/opinions-cac.csv` (comptes certifiés des cotées ; aucun exercice 2018 pour BH ni pour BNA). Restent : actionnaires et filiales des non cotées ; histoire du Registre avant 2018 ; périmètres des autres groupes cotés et des exercices antérieurs ; historique du capital de Tunisair et des Ciments de Bizerte ; recapitalisations des banques publiques après 2019 ; BH 2018 et BNA 2018, aucun document trouvé ; écarts inexpliqués des comptes en TODO du documentaliste. Note RNE (`rne-registre-national-entreprises-2026-11-03.md`) : circulaires n° 17 de 2020 et n° 3 de 2021 non accessibles en ligne, à obtenir ; entreprises sans identifiant au Registre, à rechercher (la note en compte dix, le TODO de l'annexe onze : SOTRAPIL, BFPME, ARRU, SOGEMT, Tunisie Trade Net, Ciments d'Oum El Kélil, Transtu, RFR, SNTRI, SORETRAS, SRTB).
 
 - **Comptes consolidés, emprunts garantis du JORT et emprunts non garantis (4 novembre 2026) — à faire sur la machine qui a le corpus.** Demandes de l'équipe SOEs de la Banque mondiale (réunion du 3 novembre ; mails de Henri Fortin et de Mohamed Habib Zitouna du 4 novembre ; brouillon de réponse dans Gmail, non envoyé). Faute d'accès au corpus du Journal officiel (`~/projets/PDFs-legislation-tunisie/`, `jort_cache.db`) et au réseau (Bourse de Tunis, CMF, Internet Archive, finances.gov.tn bloqués dans la session cloud), ces trois tâches n'ont pas été commencées.
@@ -6031,6 +6033,60 @@ Ce qui reste sur ce chapitre ne relève plus de la forme mais du documentaliste.
 Pour toute passe qui DÉPLACE de la prose, le **balayage phrase à phrase** de l'original
 contre le résultat n'est pas optionnel : sur l'impôt sur les sociétés, deux fois plus court,
 il avait rattrapé deux pertes sans citation, donc invisibles au décompte.
+
+## Le budget de l'État et son évolution — annexe du site (7 novembre 2026)
+
+**Fait** (branche `chantier/evolution-budgets`, non fusionnée). L'annexe
+`precis/fr/annexe-budget-etat.qmd` est écrite (page de site ajoutée à `PAGES` de `build.sh`,
+liée depuis `comment-lire`). Matière : `docs/notes/annexe-budget-etat.md` (conception et
+inventaire des séries) et `docs/notes/annexe-budget-etat-documentaire.md` (note documentaire
+sourcée, lois organiques du budget). Module de figures `precis/fr/figures/annexe_budget.py` :
+quatre figures — série longue en dinars courants et constants (`fig-bud-serie`, deux segments
+voté 1959-1986 / réalisé 1986-2025), dépenses hors dette en % du PIB par base (`fig-bud-pib`),
+composition des recettes fiscales et pression fiscale en % du PIB (`fig-bud-recettes`, deux vues).
+Ancres stables auxquelles les volumes renvoient : `#sec-bud-definitions`, `#sec-bud-serie-longue`,
+`#sec-bud-recettes`, `#sec-bud-pivot-1986`, `#sec-bud-sources`, `#sec-bud-lire`. Bibliographie :
+`fiscalite/references.json` câblée à l'annexe ; clés `loi-60-1-lob` et `loi-org-2004-42-lob`
+versées (FR et AR). Rendu sans citation `[?]` ; `check_pas_de_modele` passe. Une première accroche
+« part du budget » est posée dans `fiscalite/_impot_revenu.qmd` (montée des impôts directs dans les
+recettes, vers `#sec-bud-recettes`).
+
+**À faire — données et sourçage.**
+- Série votée titre I (`jort-lf-budget-ordinaire`) : s'arrête en 1986. Soit l'étendre par lecture
+  des lois de finances 1987 et au-delà au *Journal officiel* (travail documentaliste, lourd), soit
+  assumer le pivot voté→réalisé du milieu des années 1980 (parti retenu dans l'annexe). Faisable :
+  les lois de finances postérieures à 1986 sont au corpus.
+- Pas de série longue des **recettes totales** ni du **déficit / de la dette** dans l'entrepôt :
+  à sourcer (rapports du ministère des Finances, Banque centrale) si le récit « entrées / sorties »
+  doit être bouclé. Non faisable en l'état : support à rassembler.
+- Report d'entrée en vigueur de la loi organique du budget de 2019 (2028 ou 2029) **non confirmé**
+  (aucune loi organique modificative lue ; couverture `jort_cache` au 29 octobre 2026). Ouvrir une
+  fiche de recherche `r-lob2019-report-entree-vigueur` dans `docs/recherches.yml` avant d'écrire une
+  date de report. L'annexe ne mentionne pas ce report.
+
+**À faire — bibliographie et glossaire.**
+- Titres et pages arabes de `loi-60-1-lob` et `loi-org-2004-42-lob` non relevés sur le fascicule
+  (titre français conservé, `page` vide) ; pages françaises de la loi organique de 2019 à relever
+  page à page si une citation au mot `p.` est souhaitée (citées aujourd'hui par `art.`).
+- Séries du ministère des Finances (recettes, dépenses, indicateurs) sans clé CSL : citées en clair,
+  les figures portant leur provenance par l'onglet « Sources ». Décision du bibliographe si une
+  citation formelle devient nécessaire.
+- Rapatriement Zotero des deux clés neuves (`loi-60-1-lob`, `loi-org-2004-42-lob`) : voir
+  `biblio-a-rapatrier.md`.
+- Glossaire (terminologue) : notions candidates — loi de finances, loi de règlement, titre I /
+  titre II, mission et programme, pression fiscale.
+
+**À faire — mise en conformité des volumes (une PR par volume).** Poser l'accroche « part du
+budget » dans les sections longue période, chacune vers l'ancre adaptée de l'annexe :
+entreprises publiques (transferts budgétaires), compensation (charge en % des dépenses / du PIB),
+rémunérations publiques (masse salariale), finances locales (dotation FCCL), retraites et caisses
+(subventions d'équilibre), santé et éducation (dépense sectorielle). Inventaire des séries et
+ancres : `docs/notes/annexe-budget-etat.md`, § 5.
+
+**À faire — version arabe.** La page arabe `precis/ar/annexe-budget-etat.qmd` sera engendrée par
+la traduction de la CI ; `build.sh` saute la page tant qu'elle n'est pas livrée. Relecture arabe
+des quatre figures (libellés de légende dans `annexe_budget.py`, déjà prévus bilingues) par le
+relecteur-ar après traduction.
 
 ## Le PIB et ses changements de base — annexe du site et mise en conformité des volumes (6 octobre 2026)
 
