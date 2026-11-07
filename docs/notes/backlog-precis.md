@@ -3635,6 +3635,16 @@ Proposées par les notes et **non versées**, faute d'ancre dans le texte :
 
 ## Les entreprises publiques
 
+**Note d'analyse « comptes consolidés des entreprises publiques » — déménagée le 7 novembre 2026.**
+La note d'analyse sur la consolidation des comptes des entreprises publiques (ancienne « note Fortin »)
+et tous ses matériaux (contrôles de sommes consolidées, recoupements de périmètre, carte du contrôle,
+exposition, schéma, agrégats et VA consolidée tentés, périmètre bancaire recensé) ont quitté
+`docs/exemples-soes/` pour le dépôt **`notes-tunisie`** (`consolidation-entreprises-publiques/`), qui
+héberge les notes d'analyse économique hors précis ; la note y a été **désurvendue** (addition de
+consolidés publics ≠ consolidation ; VA consolidée non fiable, non retenue ; double-comptage faible). Ne
+pas la rechercher ici. Les données sous-jacentes restent dans `tunisia-data`. Restent dans
+`docs/exemples-soes/` les sujets distincts : note de productivité, fiches en bref, tableaux de bord.
+
 Volume X (`precis/fr/entreprises_publiques/`), **brouillon** du 11 octobre 2026 : un seul
 chapitre, `_relation_financiere.qmd` (`#sec-ep-relation`), écrit sur la note
 `docs/notes/entreprises-publiques-2026-10-11.md` et sur les onze séries versées dans

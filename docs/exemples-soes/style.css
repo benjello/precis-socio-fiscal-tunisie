@@ -1,0 +1,15 @@
+@page { size: A4; margin: 1.6cm 1.5cm; }
+body { font-family: "DejaVu Sans", Arial, sans-serif; font-size: 9.5pt; line-height: 1.4; color: #1f2328; }
+h1 { font-size: 17pt; margin: 0 0 .4em; border-bottom: 2px solid #0969da; padding-bottom: .2em; }
+h2 { font-size: 12pt; margin: 1.2em 0 .4em; color: #0969da; break-after: avoid; }
+table { border-collapse: collapse; width: 100%; margin: .5em 0 .8em; font-size: 8.5pt; break-inside: avoid; }
+th { background: #0969da; color: #fff; font-weight: 600; text-align: right; padding: 4px 6px; }
+th:first-child, td:first-child { text-align: left; }
+td { padding: 3px 6px; text-align: right; border-bottom: 1px solid #d0d7de; }
+tbody tr:nth-child(even) { background: #f6f8fa; }
+td:first-child { font-weight: 500; }
+img { max-width: 100%; display: block; margin: .6em auto; break-inside: avoid; }
+ul { padding-left: 1.2em; } li { margin: .2em 0; }
+header#title-block-header { display: none; }
+th:first-child, td:first-child { width: 30%; }
+td:not(:first-child), th:not(:first-child) { white-space: nowrap; }

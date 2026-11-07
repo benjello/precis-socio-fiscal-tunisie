@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Rapport productivité EP (rafraîchi)</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Rapport productivité EP (rafraîchi)</h1>
+</header>
+<h1
+id="reproduire-les-revenus-2014-du-rapport-présidentiel-à-partir-des-états-financiers-publics-et-les-prolonger">Reproduire
+les revenus 2014 du rapport présidentiel à partir des états financiers
+publics — et les prolonger</h1>
+<p><em>Note de travail — novembre 2026 (rafraîchie le 7
+novembre).</em></p>
+<h2 id="résumé">Résumé</h2>
+<p>Le rapport de la Présidence (Unité de suivi des entreprises
+publiques) donne, pour 2014, les <strong>revenus</strong> d’une liste
+d’entreprises. On ne reprend pas sa compilation : on
+<strong>recompose</strong> ces mêmes revenus depuis la <strong>source
+primaire</strong> — les états financiers publiés (BVMT, états
+STEG/ETAP). La concordance est <strong>au dinar</strong> pour les
+entreprises vérifiables (STEG 3 736, Tunisair 1 149,6, STB 499,7, BNA
+596,8, ETAP 2 153 MD). On <strong>prolonge</strong> ensuite ce point de
+départ : la <strong>valeur ajoutée</strong> est désormais lue, sur états
+financiers primaires, pour <strong>16 entreprises</strong> (de 2000 à
+2025 selon l’entreprise), et la <strong>valeur ajoutée par
+agent</strong> se calcule partout où l’effectif est publié. Toutes les
+données viennent d’une <strong>source unique</strong>
+(<code>entreprises-publiques-comptes-primaires</code>), où chaque valeur
+porte son fichier, sa page et un <strong>niveau de preuve</strong> (A :
+VA brute imprimée au schéma des soldes intermédiaires de gestion,
+re-vérifiée ; B : calculée et corroborée par une identité indépendante ;
+C : calculée, cohérence de lecture seule). Aucune lacune n’est
+interpolée.</p>
+<h2 id="le-point-de-départ">1. Le point de départ</h2>
+<p>Le rapport sur les entreprises publiques annexé au suivi présidentiel
+présente, entreprise par entreprise, un <strong>chiffre de revenus
+2014</strong>. C’est une <strong>compilation</strong> : il agrège des
+données remontées par les tutelles, sans donner l’état financier
+sous-jacent. On fait l’inverse. Pour chaque entreprise <strong>cotée ou
+publiant ses comptes</strong>, on lit directement l’<strong>état de
+résultat</strong> (ou le produit net bancaire pour les banques) dans le
+document déposé à la Bourse de Tunis ou publié par l’entreprise. On
+obtient ainsi les revenus 2014 <strong>indépendamment</strong> de la
+compilation présidentielle — et donc de quoi la
+<strong>vérifier</strong>.</p>
+<h2 id="reproduction-du-tableau-2014">2. Reproduction du tableau
+2014</h2>
+<p>Pour les entreprises dont on tient l’état financier primaire, la
+cible de la Présidence et notre lecture coïncident exactement (millions
+de dinars) :</p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 22%" />
+<col style="width: 22%" />
+<col style="width: 22%" />
+<col style="width: 16%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Entreprise</th>
+<th style="text-align: right;">Cible Présidence 2014</th>
+<th style="text-align: right;">Nos états financiers 2014</th>
+<th style="text-align: right;">Écart</th>
+<th>Source primaire</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>STEG</td>
+<td style="text-align: right;">3 736</td>
+<td style="text-align: right;">3 736,0</td>
+<td style="text-align: right;">0</td>
+<td><code>steg_ef_2014.pdf</code>, p. 13</td>
+</tr>
+<tr class="even">
+<td>ETAP</td>
+<td style="text-align: right;">2 153</td>
+<td style="text-align: right;">2 153,0</td>
+<td style="text-align: right;">0</td>
+<td><code>2014_etats_financiers.pdf</code>, p. 1</td>
+</tr>
+<tr class="odd">
+<td>Tunisair</td>
+<td style="text-align: right;">1 149,6</td>
+<td style="text-align: right;">1 149,6</td>
+<td style="text-align: right;">0</td>
+<td><code>2014_individuel.pdf</code>, p. 26</td>
+</tr>
+<tr class="even">
+<td>BNA</td>
+<td style="text-align: right;">596,8</td>
+<td style="text-align: right;">596,8</td>
+<td style="text-align: right;">0</td>
+<td><code>2014_individuel.pdf</code>, p. 3</td>
+</tr>
+<tr class="odd">
+<td>STB</td>
+<td style="text-align: right;">499,7</td>
+<td style="text-align: right;">499,7</td>
+<td style="text-align: right;">0</td>
+<td><code>2014_individuel.pdf</code>, p. 3</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Écart nul</strong> sur ces cinq entreprises : la source
+primaire reproduit la compilation au dinar. Deux limites de périmètre,
+dites franchement : la <strong>STIR</strong> ne publie pas d’états
+financiers exploitables (lacune non comblée) ; les
+<strong>caisses</strong> (dont le « revenu » est une masse de
+cotisations) sont hors de notre portée.</p>
+<h2
+id="prolongement-la-valeur-ajoutée-et-la-productivité-16-entreprises">3.
+Prolongement : la valeur ajoutée et la productivité, 16 entreprises</h2>
+<p>Là où le premier état de cette note s’arrêtait à la STEG et à 2018,
+la <strong>valeur ajoutée</strong> est maintenant lue sur états
+financiers pour <strong>16 entreprises publiques productives</strong>,
+et la <strong>VA par agent</strong> se calcule sur la fenêtre où
+l’effectif est publié. On la lit <strong>directement</strong> au schéma
+des soldes intermédiaires de gestion quand il existe (niveau A), sinon
+on la <strong>calcule</strong> (production − consommations
+intermédiaires) et on la <strong>corrobore</strong> par une identité
+indépendante (niveau B) ou, à défaut, on signale qu’elle ne repose que
+sur la lecture des composantes (niveau C).</p>
+<h3
+id="a-létendue-entreprise-par-entreprise-va-millions-de-dinars-niveau-de-preuve">a)
+L’étendue, entreprise par entreprise (VA, millions de dinars ; niveau de
+preuve)</h3>
+<table>
+<colgroup>
+<col style="width: 18%" />
+<col style="width: 18%" />
+<col style="width: 18%" />
+<col style="width: 25%" />
+<col style="width: 18%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Entreprise</th>
+<th>Nature</th>
+<th>VA</th>
+<th style="text-align: right;">Points</th>
+<th>Preuve</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>SOTRAPIL</td>
+<td>transport d’hydrocarbures par pipeline</td>
+<td>2000-2025</td>
+<td style="text-align: right;">26</td>
+<td>A</td>
+</tr>
+<tr class="even">
+<td>Tunisair</td>
+<td>transport aérien (pass-through)</td>
+<td>2000-2023</td>
+<td style="text-align: right;">23</td>
+<td>A</td>
+</tr>
+<tr class="odd">
+<td>ETAP</td>
+<td>hydrocarbures (pass-through)</td>
+<td>2004-2024</td>
+<td style="text-align: right;">21</td>
+<td>B</td>
+</tr>
+<tr class="even">
+<td>Ciments de Bizerte</td>
+<td>ciment</td>
+<td>2009-2024</td>
+<td style="text-align: right;">16</td>
+<td>A</td>
+</tr>
+<tr class="odd">
+<td>SNCFT</td>
+<td>chemins de fer (service public)</td>
+<td>2010-2023</td>
+<td style="text-align: right;">14</td>
+<td>C</td>
+</tr>
+<tr class="even">
+<td>El Fouladh</td>
+<td>sidérurgie</td>
+<td>2012-2024</td>
+<td style="text-align: right;">13</td>
+<td>B</td>
+</tr>
+<tr class="odd">
+<td>CPG</td>
+<td>phosphate</td>
+<td>2004-2015</td>
+<td style="text-align: right;">12</td>
+<td>A</td>
+</tr>
+<tr class="even">
+<td>TRANSTU</td>
+<td>transport urbain (service public)</td>
+<td>2010-2021</td>
+<td style="text-align: right;">12</td>
+<td>C</td>
+</tr>
+<tr class="odd">
+<td>SOTUMAG</td>
+<td>marché de gros</td>
+<td>2002-2024</td>
+<td style="text-align: right;">11</td>
+<td>A</td>
+</tr>
+<tr class="even">
+<td>STEG</td>
+<td>électricité et gaz</td>
+<td>2014-2023</td>
+<td style="text-align: right;">10</td>
+<td>A</td>
+</tr>
+<tr class="odd">
+<td>La Poste</td>
+<td>services postaux et financiers</td>
+<td>2015-2023</td>
+<td style="text-align: right;">9</td>
+<td>B</td>
+</tr>
+<tr class="even">
+<td>TTN</td>
+<td>facilitation du commerce (service IT)</td>
+<td>2017-2025</td>
+<td style="text-align: right;">6</td>
+<td>B</td>
+</tr>
+<tr class="odd">
+<td>SONEDE</td>
+<td>eau potable</td>
+<td>2010-2016</td>
+<td style="text-align: right;">5</td>
+<td>C</td>
+</tr>
+<tr class="even">
+<td>GCT</td>
+<td>engrais chimiques</td>
+<td>2010-2014</td>
+<td style="text-align: right;">5</td>
+<td>A</td>
+</tr>
+<tr class="odd">
+<td>Tunisie Télécom</td>
+<td>télécommunications</td>
+<td>2007-2009</td>
+<td style="text-align: right;">3</td>
+<td>A</td>
+</tr>
+<tr class="even">
+<td>Tunisie Autoroutes</td>
+<td>concession autoroutière</td>
+<td>2021-2022</td>
+<td style="text-align: right;">2</td>
+<td>B</td>
+</tr>
+</tbody>
+</table>
+<h3 id="b-la-valeur-ajoutée-par-agent-milliers-de-dinars-par-agent">b)
+La valeur ajoutée par agent (milliers de dinars par agent)</h3>
+<p>L’amplitude du secteur productif va d’un service public urbain qui ne
+dégage presque aucune valeur marchande propre à l’extraction
+d’hydrocarbures, capital-intensive :</p>
+<ul>
+<li><strong>ETAP — ~2 000 à 3 000 kD/agent</strong> (2004-2024).
+<em>Majorant</em> : les revenus incluent, pour une large part, la
+commercialisation de la part de l’État dans les hydrocarbures
+(pass-through) ; non comparable à une entreprise industrielle.</li>
+<li><strong>SOTRAPIL — 137 à 163</strong> (2018-2023) : la plus
+productive hors extraction.</li>
+<li><strong>CPG — pic à 226 en 2008</strong> (bulle du phosphate), 32 à
+153 ensuite.</li>
+<li><strong>Tunisie Télécom — ~99</strong> (2007-2009, série
+ancienne).</li>
+<li><strong>STEG — 37 (2018) → 112 (2023)</strong> ; la forte hausse
+récente est portée par la <strong>subvention d’exploitation</strong>,
+comprise dans la VA au sens du schéma des soldes intermédiaires de
+gestion (à lire avec cette réserve).</li>
+<li><strong>La Poste — 31 (2016) → 76 (2023)</strong> ; <strong>El
+Fouladh — 25 à 83</strong> ; <strong>GCT — 50</strong> (2014) ;
+<strong>Ciments de Bizerte — 28 à 113</strong> (effondrement à 28 en
+2023) ; <strong>SONEDE — 20 à 29</strong>.</li>
+<li><strong>Tunisair — 64-80, puis 19 en 2020</strong> (Covid), remontée
+à 48 en 2023.</li>
+<li><strong>Service public subventionné</strong> — <strong>SNCFT
+13-24</strong>, <strong>TRANSTU 11-21</strong> <em>au coût des
+facteurs</em> ; aux <strong>prix de base</strong> (hors compensation de
+service public), leur valeur ajoutée marchande propre est <strong>quasi
+nulle</strong> (TRANSTU ≈ 0 ou négative) : elles vivent de la
+compensation de l’État.</li>
+<li><strong>Tunisie Autoroutes — ~51</strong> en 2022 <em>hors l’élément
+exceptionnel</em> de 324 MD (« autres produits », retraitement) ; le
+chiffre brut de 268 n’est pas significatif.</li>
+</ul>
+<h3 id="c-deux-conventions-à-garder-en-tête">c) Deux conventions à
+garder en tête</h3>
+<ul>
+<li><strong>La subvention d’exploitation.</strong> La VA au sens du
+schéma des soldes intermédiaires de gestion <strong>inclut</strong> la
+subvention tarifaire sur les produits (STEG, SONEDE) : c’est la <em>VA
+aux prix de base</em>. Pour les compensations de <strong>service
+public</strong> (SNCFT, TRANSTU), une <em>VA hors subvention</em> est
+donnée en regard ; elle seule éclaire la productivité marchande
+propre.</li>
+<li><strong>Le pass-through.</strong> ETAP, Tunisair et, à moindre
+degré, SOTRAPIL commercialisent des produits qui gonflent revenus et
+achats sans valeur ajoutée propre ; leur VA/agent est à lire avec ce
+caveat.</li>
+</ul>
+<h2 id="annexe-méthode-sources-et-niveaux-de-preuve">4. Annexe —
+méthode, sources et niveaux de preuve</h2>
+<p><strong>Source unique.</strong> Toutes les valeurs viennent de la
+série <code>entreprises-publiques-comptes-primaires</code> (dépôt
+<code>tunisia-data</code>,
+<code>data/processed/entreprises-publiques/comptes_primaires_ep.csv</code>),
+consolidée des lectures sourcées ligne par ligne (fichier + page +
+méthode de lecture). Les effectifs viennent de la série des rapports du
+ministère des Finances (dédoublonnée à la dernière édition) et, à
+défaut, des rapports d’activité des entreprises.</p>
+<p><strong>Niveau de preuve de chaque valeur ajoutée</strong> (colonne
+<code>evidence_va</code>) : - <strong>A</strong> — VA brute
+<strong>imprimée</strong> au schéma des soldes intermédiaires de
+gestion, re-vérifiée ligne à ligne (51 points recoupés : le bug de
+lecture d’un générateur antérieur était isolé à Tunisair 2009/2010,
+corrigé), ou <strong>posée</strong> par l’entreprise dans sa synthèse
+annuelle (CPG, GCT). - <strong>B</strong> — VA <strong>calculée</strong>
+(production − consommations intermédiaires) et
+<strong>corroborée</strong> par l’identité <em>indépendante</em>
+<code>résultat d'exploitation + charges de personnel + dotations</code>
+(ETAP, El Fouladh, TTN, La Poste, Tunisie Autoroutes). Les résidus sont
+attribués et vérifiés (variation de stock de pétrole brut chez ETAP,
+subvention d’équilibre d’El Fouladh en 2012). - <strong>C</strong> — VA
+<strong>calculée</strong>, corroborée seulement par la <strong>cohérence
+de lecture</strong> du même état (SNCFT, TRANSTU), ou dont la base a été
+vérifiée sur le fond mais sans corroboration indépendante (SONEDE, dont
+les « autres produits » — quote-part de subventions d’investissement et
+apurement ponctuel de la dette CNRPS en 2015 — sont correctement exclus
+de la VA).</p>
+<p><strong>Un sourçage par chiffre, aucune invention.</strong> Un poste
+absent ou illisible est laissé <strong>vide</strong> (lacune), jamais
+estimé ni interpolé. Les contrôles d’identité sont <strong>reportés,
+jamais forcés</strong> : un écart s’instruit sur le fond (l’erreur peut
+être à l’origine), il ne se corrige pas pour faire boucler
+l’identité.</p>
+<p><strong>Lacunes assumées.</strong> - <strong>STIR</strong> : pas
+d’états financiers exploitables. - <strong>RNTA, ONAS, OMMP,
+OACA</strong> : états financiers primaires non publics (seuls des
+agrégats des annexes budgétaires existent, sans le détail des achats —
+VA non calculable). - <strong>Effectifs</strong> : la fenêtre du
+ministère des Finances (~2016-2023) limite la VA/agent pour les
+entreprises dont la VA remonte plus loin (SOTRAPIL, Tunisair, CPG, GCT,
+Tunisie Télécom avant 2016). - <strong>CPG, GCT</strong> : VA « posée »
+par la synthèse annuelle de l’entreprise, non recalculée depuis un état
+de résultat détaillé.</p>
+<p><strong>Répétabilité.</strong> Le dispositif est reproductible : la
+série se reconstruit par
+<code>scripts/consolider_comptes_primaires_ep.py</code> ; à mesure que
+de nouveaux exercices sont publiés, ils s’ajoutent au raw et la série se
+prolonge sans retravail — le présent rapport n’est qu’un instantané.</p>
+</body>
+</html>
