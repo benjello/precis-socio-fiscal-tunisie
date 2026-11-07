@@ -27,6 +27,14 @@ SOFELAN                      0,00%      60,63%      -60,63%            NI       
 MGERT                        49,95%      0,00%      49,95%             IG          NI               49,94%         0,00%        49,94%
 SICAV OBLIG                  1,61%       1,59%          0,01%       MEE           MEE               1,55%       1,47%         0,07%
 """
+BH_ANNUEL = """
+                                                                                                       Pourcentage d’intérêt                  Méthode de
+                           Banque de l’habitat                         100,00              100,00          Intégration Globale          Tunisie
+        des actifs et passifs figurant au bilan et bases fiscales       TFB                                         18,79                27,86          Mise en équivalence          France
+        L’ensemble des filiales contrôlées par la Banque de l’Habitat    tion BH-Capitalisa-                         18,75                20,25          Intégration Globale          Tunisie
+        est désormais consolidé par intégration globale.
+"""
+
 STB = """
 SOCIETES CONSOLIDEES
    1. STB BANK (société Mère)                           100,00%   100,00%    0,00%
@@ -58,6 +66,25 @@ class PerimetresTest(unittest.TestCase):
             lignes[0][:6], ["STB", "2021", "STB BANK", "mère", "100.00", "99.98"]
         )
         self.assertEqual(lignes[1][4:6], ["95.05", "94.72"])
+
+
+class TestBhAnnuel(unittest.TestCase):
+    def test_deux_exercices_methode_et_pays(self):
+        lignes = p.bh_annuel(BH_ANNUEL, 2022)
+        par = {(l[1], l[2]): l for l in lignes}
+        # N et N-1 : deux exercices par entité, l'intérêt de chaque colonne
+        self.assertEqual(par[("2022", "Banque de l’habitat")][:6],
+                         ["BH", "2022", "Banque de l’habitat", "mère", "", "100.00"])
+        self.assertEqual(par[("2022", "TFB")][3:7], ["mise en équivalence", "", "18.79", "France"])
+        self.assertEqual(par[("2021", "TFB")][5], "27.86")  # colonne de l'exercice précédent
+
+    def test_nom_dernier_segment_et_coupure_reparee(self):
+        lignes = p.bh_annuel(BH_ANNUEL, 2022)
+        noms = {l[2] for l in lignes}
+        # le nom est le dernier segment, non la prose de gauche ; le nom coupé par la mise en page est rétabli
+        self.assertIn("SICAV BH-Capitalisation", noms)
+        self.assertNotIn("tion BH-Capitalisa-", noms)
+        self.assertFalse(any("figurant au bilan" in n for n in noms))
 
 
 class TestStbConsolide2019(unittest.TestCase):

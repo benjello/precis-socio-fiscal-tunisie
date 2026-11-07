@@ -134,6 +134,27 @@ DOCUMENTS = [
         "bvmt-ra-bh-2021",
     ),
     (
+        "BH",
+        2017,
+        "bvmt-rapports-archives/bh/20221118_Rapport-annuel-Fr_2017.pdf",
+        "bh_annuel",
+        "ra-bh-2017",
+    ),
+    (
+        "BH",
+        2022,
+        "bvmt-rapports-archives/bh/20240507_Rapport-Annuel-Fr_2022-PART3.pdf",
+        "bh_annuel",
+        "ra-bh-2022",
+    ),
+    (
+        "BH",
+        2023,
+        "bvmt-rapports-archives/bh/20260518_RAPPORT_BH_2023_compressed-PART-3.pdf",
+        "bh_annuel",
+        "ra-bh-2023",
+    ),
+    (
         "BNA",
         2021,
         "bvmt-rapports/bna/bna-rapport-annuel-de-gestion-31-12-2021.pdf",
@@ -402,6 +423,40 @@ def bh(contenu: str, exercice: int = 2021) -> list[list[str]]:
     return lignes
 
 
+# Noms d'entités que la mise en page coupe ou enveloppe, à rétablir tels que le rapport les imprime.
+NOMS_BH = {"tion BH-Capitalisa-": "SICAV BH-Capitalisation"}
+
+
+def bh_annuel(contenu: str, exercice: int) -> list[list[str]]:
+    """Rapport annuel de gestion de la BH (2017, 2022, 2023) : le tableau du périmètre est dans la
+    colonne de droite de la page, la prose des méthodes comptables dans celle de gauche. L'en-tête
+    donne le pourcentage d'intérêt de l'exercice et de l'exercice précédent, puis la méthode et le
+    pays, uniques (on reporte la méthode de l'exercice sur l'exercice précédent). Le nom de l'entité
+    est le dernier segment de la ligne avant les pourcentages, séparé de la prose de gauche par un
+    blanc de deux espaces ou plus."""
+    motif = re.compile(
+        r"(.*?)\s{2,}(\d+,\d+)\s+(\d+,\d+)\s+(Intégration Globale|Mise en équivalence)\s+(\w+)"
+    )
+    lignes, vus = [], set()
+    for ligne in contenu.splitlines():
+        trouve = motif.search(nettoie_nombres(ligne))
+        if not trouve:
+            continue
+        nom = re.split(r"\s{2,}", trouve.group(1).strip())[-1]
+        nom = NOMS_BH.get(nom, propre(re.sub(r"\s*\(\*\)\s*$", "", nom)))
+        if not nom or nom in vus:
+            continue
+        vus.add(nom)
+        mere = nom.upper() in ("BH BANK", "BANQUE DE L’HABITAT", "BH")
+        meth = "mère" if mere else methode(trouve.group(4))
+        pays = trouve.group(5)
+        for decalage, interet in ((0, trouve.group(2)), (1, trouve.group(3))):
+            lignes.append(
+                ["BH", str(exercice - decalage), nom, meth, "", nombre(interet), pays]
+            )
+    return lignes
+
+
 NOMS_STB_2019 = {
     "STB": "STB BANK",
     "SOFELAN": "SOFI ELAN SICAF",
@@ -466,6 +521,7 @@ LECTEURS = {
     "bna": bna,
     "bna_ancien": bna_ancien,
     "bh": bh,
+    "bh_annuel": bh_annuel,
 }
 
 
