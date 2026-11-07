@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.29.1](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.29.0...v1.29.1) (2026-11-07)
+
+
+### 📝 Documentation
+
+* **entreprises-publiques:** relevés BM et FMI : périodes des flèches du FMI et de l'étiquette 12,03 de la figure 7.1 ([11bebc9](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/11bebc9b026e945f2d4b76c192637136113c5aff))
+* **entreprises-publiques:** relevés par entreprise de la Banque mondiale (2020, 2022) et du FMI (2021), et note de recoupement ([5b4dbe6](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/5b4dbe685d3da545d63b621f4ac99f422d0f711c))
+
 ## [1.29.0](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.28.0...v1.29.0) (2026-10-10)
 
 
