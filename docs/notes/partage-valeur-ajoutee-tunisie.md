@@ -52,9 +52,13 @@ difficultés de mesure commandent tout le reste.
   le travail, d'autant plus que le secteur non salarié est large — et il l'est en Tunisie (annexe,
   § D). D'où le choix d'un **périmètre de sociétés** (sociétés non financières, SNF), où ce solde est,
   par construction, du profit.
-- **Le périmètre.** Économie entière, sociétés, SNF, SNF hors logement : le diagnostic **change avec
-  le périmètre** [@askenazy-cette-sylvain-2011]. Un agrégat national stable peut masquer des
-  évolutions opposées selon la taille ou le secteur des entreprises [@cas-delaveau-2009-nv133].
+- **Le périmètre.** Économie entière, sociétés, SNF : le diagnostic **change avec le périmètre**
+  [@askenazy-cette-sylvain-2011]. Deux raisons, non une, de préférer les SNF : elles écartent le
+  revenu mixte (ci-dessus) **et** les **loyers imputés des propriétaires occupants** — un excédent
+  sans travail, logé chez les ménages, qui déprime la part du travail de l'économie entière. En
+  Tunisie, la branche « activités immobilières » des ménages pèse **~6 % du PIB** (§ 4.7) : la mesure
+  SNF l'exclut par construction. Un agrégat national stable peut en outre masquer des évolutions
+  opposées selon la taille ou le secteur des entreprises [@cas-delaveau-2009-nv133].
 
 ### 2.3 Deux mesures, et ce que chacune capte
 
@@ -327,8 +331,14 @@ indépendant n'apparaît pas dans la rémunération des salariés (D.1) : il est
 
 1. **Revenu mixte ≠ travail informel.** Le revenu d'exploitation des ménages mêle (a) le revenu mixte
    entrepreneurial (dont l'informel — part travail et part capital) **et** (b) les **loyers imputés
-   des propriétaires occupants** (capital pur). Nos données ne les séparent pas : les ~30 % du PIB
-   **surestiment** la composante « travail informel ».
+   des propriétaires occupants** (capital pur). Les comptes publiés ne détaillent pas la branche, mais
+   la logent dans « Autres activités des ménages », que le volume détaillé des *Comptes de la nation*
+   étiquette « activités immobilières » (l'INS y inclut explicitement « l'occupation des logements par
+   leurs propriétaires (loyers imputés) », estimée via l'enquête budget-consommation) : elle pèse
+   **~6 % du PIB** (8 415 MD en 2021, série `ins-va-branche-base2015`) — borne haute des loyers
+   imputés. Autrement dit, sur les ~30 % du PIB de revenu mixte, une part de l'ordre de six points est
+   du **capital-logement**, pas du « travail informel » : la mesure de l'économie entière le
+   **surestime**, et la mesure SNF l'exclut, loyers imputés compris.
 2. **Isoler le travail informel** supposerait d'**imputer** une part travail au revenu mixte (méthode
    de Gollin 2002) — hypothèse explicite — et de retrancher les loyers imputés ; ni l'un ni l'autre
    n'est possible proprement ici.
@@ -467,6 +477,44 @@ des EP (`comptes_primaires_ep`, `grandeurs-productivite-ep`) ; agrégat récent 
 
 ---
 
+### 4.11 Décomposition canonique : salaire réel et productivité
+
+La méthode canonique [@askenazy-cette-sylvain-2011 ; @cette-koehl-philippon-2019] décompose la
+variation de la part des salaires en **deux termes**, sur le périmètre
+des **sociétés** (où les salariés ≈ les travailleurs, sans revenu mixte) :
+
+> Δln(part des salaires) = Δln(**salaire réel au prix du produit**) − Δln(**productivité du travail**)
+
+les deux déflatés par le **même** prix (le déflateur de la valeur ajoutée, qui s'annule donc dans
+l'identité). La part monte quand le salaire réel croît plus vite que la productivité. On l'applique
+aux **SNF**, avec l'emploi des SNF ≈ **salariés déclarés à la CNSS** (la carte institutionnelle vérifiée,
+`docs/notes/emploi-productivite-sources-options.md`) et le déflateur du PIB. Fenêtre propre :
+base 1997, 2005-2016 (SNF par secteur **et** CNSS disponibles ; pas de chaînage de base).
+
+| Cumul 2005→2016 (base 1997) | points de log |
+|---|---:|
+| **Part des salaires des SNF** (45,7 % → 55,3 %) | **+19** |
+| = salaire réel au prix du produit | **+21** |
+| − productivité du travail | **+2** |
+
+**La hausse de la part des salaires est entièrement un salaire réel qui dépasse une productivité quasi
+plate** — le profil d'un *wage push* non accompagné de gains de productivité.
+
+**Réserve décisive — l'emploi, et la formalisation.** Le partage entre les deux termes dépend du
+dénominateur d'emploi. Ici l'emploi des SNF (CNSS déclarés) croît de **+32 %** sur 2005-2016, en partie
+par **formalisation** (des travailleurs passent du non-déclaré au déclaré) : cela **gonfle l'emploi
+mesuré et déprime la productivité mesurée**. La productivité « plate » est donc en partie un artefact
+de formalisation ; le vrai partage *wage push* / productivité ne se tranche pas sans série d'emploi
+corrigée (annexe B.4). C'est **le** test de sensibilité à porter.
+
+**Complément — le coin prix conso / prix VA.** On peut scinder le salaire réel *au prix du produit*
+en salaire réel *à la consommation* × (prix conso / prix VA). Depuis 2023, les prix à la consommation
+dépassent le déflateur de la VA de **2 à 4 points par an** (IPC +9,3 % contre VA +5,1 % en 2023) : ce
+**terme de prix** a poussé la part des salaires à la hausse, distinct d'un gain de salaire réel à la
+consommation. Que les SNF excluent par construction l'immobilier et le non-salariat rejoint le choix
+de périmètre de [@cette-koehl-philippon-2019]. Sources : SNF `cnat-approche-revenus-secteurs` ;
+déflateur `ins-va-branche-base2015` / PWT ; IPC `bct-ipc-base2015` ; emploi CNSS.
+
 ## 5. Ce que le praticien retient
 
 1. **Toujours dire le périmètre** (économie entière / sociétés / SNF) et le **traitement du revenu
@@ -493,7 +541,9 @@ des EP (`comptes_primaires_ep`, `grandeurs-productivite-ep`) ; agrégat récent 
   le biais du revenu mixte y est entier. La mesure SNF ne remonte qu'à **2001** ; avant, il faudrait
   les volumes INS 1 à 10 (papier) ou le CD du volume 2005-2009, non disponibles en ligne.
 - **Décomposition salaire réel / productivité** non produite : la seule série d'emploi (emploi
-  occupé, 2007-2024) est trop courte et non salariée.
+  occupé, 2007-2024) est trop courte et non salariée. En revanche, le **terme de prix relatif** de
+  cette décomposition (coin prix conso / prix VA) **est** calculé (§ 4.11) : seules manquent les
+  grandeurs de **quantité**.
 - **Revenu mixte non imputé** : on s'en tient à la mesure robuste « sociétés seules » ; une
   imputation (hypothèse explicite) relèverait la part du travail de l'économie entière, mais serait
   conventionnelle.
@@ -514,7 +564,7 @@ par donnée à récupérer, la technique qu'elle débloquerait et la question qu
 
 | Donnée à récupérer | Source | Technique débloquée | Ce que ça trancherait |
 |---|---|---|---|
-| **Emploi salarié par secteur, 2013-2024** | INS Enquête nationale sur l'emploi (on a 1999-2012 propre) | décomposition **salaire réel / productivité** (Askenazy) ; effet-emploi vs effet-salaire | si la hausse vient du **salaire par tête** (wage push) ou de l'**emploi** |
+| **Emploi salarié par secteur, 2013-2024** | INS Enquête nationale sur l'emploi (on a 1999-2012 propre) | **complète** la décomposition salaire réel / productivité (le terme de prix est déjà fait, § 4.11) ; effet-emploi vs effet-salaire | si la hausse vient du **salaire par tête** (wage push) ou de l'**emploi** |
 | **Agrégat EP charges de personnel par année, 2010-2016** (le panel d'EP et le Livre blanc 2018 sont déjà exploités, § 4.10) | Rapports Cour des comptes « clôture » ; annexes 9 des LF | part **agrégée** du public dans la rémunération des SNF, année par année | passer du cadrage **borné** (Livre blanc) à une contribution **mesurée** 2011-2016 |
 | **SNF publiques / privées** et **loyers imputés** (B.2 vs B.3) | comptes INS détaillés / dataportal | part des salaires **privée** pure ; **ajustement Gollin** maison | séparer marché, État et logement dans le partage |
 | **Éditions INS pré-2001 / CD 2005-2009** | volumes 1-10 (papier) ; CD des comptes 1997-2007 | séries plus longues ; **tests de rupture** (Chow/Bai-Perron), **filtre cycle/tendance** | la part **structurelle** de la hausse, nette du cycle |
@@ -587,6 +637,24 @@ dixième** à l'INS (2005 : 14 998,9 MD des deux côtés).
 - **Un an, une base.** Économie entière : 1983 ≤1996, 1997 de 1997 à 2014, 2015 ≥2015. SNF : 1983
   (2001-2004), 1997 (2005-2014), 2015 (≥2015).
 - **Priorité INS sur ONU** sur les recouvrements (2005+).
+
+### B.4 Données manquantes (à récupérer)
+
+Récapitulatif des trous identifiés, avec ce que chacun bloque. **Rappel de provenance** : seules deux
+séries d'emploi sont **primaires INS** — l'emploi occupé total (2007-2024) et le salarié par statut
+1999-2012 ; OIT, ILOSTAT, WDI, PWT, BM en sont **dérivées** (re-traitements des mêmes comptes INS +
+ENPE). Détail des pistes d'emploi : `docs/notes/emploi-productivite-sources-options.md`.
+
+| Donnée manquante | Ce que ça bloque | État |
+|---|---|---|
+| **Salarié par statut, INS primaire, 2013-2024** | décomposition salaire réel / productivité **comparable et primaire** | la table « statut » disparaît des annuaires après 2012 ; 2013-2019 seulement en **dérivé** (ILOSTAT), 2014/2018/2020-2024 **estimés** (ratio × occupé) |
+| **Heures travaillées (avh)** | décomposition **en heures** (plutôt qu'en têtes) | PWT/FRED ne portent pas la Tunisie ; à chercher (ILOSTAT heures hebdo × 52, Conference Board) |
+| **Salarié par secteur, série longue** | shift-share salaire/productivité **sectoriel** | ventilation CNSS seulement à **2006, 2016, 2018** ; enquête emploi sectorielle à dépouiller |
+| **Loyers imputés / immobilier isolés** | part des salaires **hors logement** ; ajustement Gollin maison | non publié ; noyé dans « Autres activités des ménages » (~6 % du PIB, **borne haute**, `ins-va-branche-base2015`) |
+| **SNF publiques / privées** | séparer marché, État et logement dans les SNF | les comptes ne ventilent pas les SNF par propriété |
+| **SNF avant 2001 ; économie entière avant 1992** | prolonger les séries ; part structurelle nette du cycle | volumes INS 1-10 (papier) / CD 2005-2009 ; l'ONU ne remonte pas avant 1992 |
+| **Entreprises publiques avant 2017** | contribution des EP à la hausse **2011-2016** | bornée par le Livre blanc (§ 4.10), non mesurée ; agrégat annuel à reconstituer (Cour des comptes, annexes 9 LF) |
+| **Comparateurs** | contre-champ international | BM Global Productivity DB s'arrête en **2018** ; indices ITCEQ à récupérer (site bloque) |
 
 ## Annexe C — Robustesse de la mesure
 
