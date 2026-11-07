@@ -6017,6 +6017,60 @@ Pour toute passe qui DÉPLACE de la prose, le **balayage phrase à phrase** de l
 contre le résultat n'est pas optionnel : sur l'impôt sur les sociétés, deux fois plus court,
 il avait rattrapé deux pertes sans citation, donc invisibles au décompte.
 
+## Le budget de l'État et son évolution — annexe du site (7 novembre 2026)
+
+**Fait** (branche `chantier/evolution-budgets`, non fusionnée). L'annexe
+`precis/fr/annexe-budget-etat.qmd` est écrite (page de site ajoutée à `PAGES` de `build.sh`,
+liée depuis `comment-lire`). Matière : `docs/notes/annexe-budget-etat.md` (conception et
+inventaire des séries) et `docs/notes/annexe-budget-etat-documentaire.md` (note documentaire
+sourcée, lois organiques du budget). Module de figures `precis/fr/figures/annexe_budget.py` :
+quatre figures — série longue en dinars courants et constants (`fig-bud-serie`, deux segments
+voté 1959-1986 / réalisé 1986-2025), dépenses hors dette en % du PIB par base (`fig-bud-pib`),
+composition des recettes fiscales et pression fiscale en % du PIB (`fig-bud-recettes`, deux vues).
+Ancres stables auxquelles les volumes renvoient : `#sec-bud-definitions`, `#sec-bud-serie-longue`,
+`#sec-bud-recettes`, `#sec-bud-pivot-1986`, `#sec-bud-sources`, `#sec-bud-lire`. Bibliographie :
+`fiscalite/references.json` câblée à l'annexe ; clés `loi-60-1-lob` et `loi-org-2004-42-lob`
+versées (FR et AR). Rendu sans citation `[?]` ; `check_pas_de_modele` passe. Une première accroche
+« part du budget » est posée dans `fiscalite/_impot_revenu.qmd` (montée des impôts directs dans les
+recettes, vers `#sec-bud-recettes`).
+
+**À faire — données et sourçage.**
+- Série votée titre I (`jort-lf-budget-ordinaire`) : s'arrête en 1986. Soit l'étendre par lecture
+  des lois de finances 1987 et au-delà au *Journal officiel* (travail documentaliste, lourd), soit
+  assumer le pivot voté→réalisé du milieu des années 1980 (parti retenu dans l'annexe). Faisable :
+  les lois de finances postérieures à 1986 sont au corpus.
+- Pas de série longue des **recettes totales** ni du **déficit / de la dette** dans l'entrepôt :
+  à sourcer (rapports du ministère des Finances, Banque centrale) si le récit « entrées / sorties »
+  doit être bouclé. Non faisable en l'état : support à rassembler.
+- Report d'entrée en vigueur de la loi organique du budget de 2019 (2028 ou 2029) **non confirmé**
+  (aucune loi organique modificative lue ; couverture `jort_cache` au 29 octobre 2026). Ouvrir une
+  fiche de recherche `r-lob2019-report-entree-vigueur` dans `docs/recherches.yml` avant d'écrire une
+  date de report. L'annexe ne mentionne pas ce report.
+
+**À faire — bibliographie et glossaire.**
+- Titres et pages arabes de `loi-60-1-lob` et `loi-org-2004-42-lob` non relevés sur le fascicule
+  (titre français conservé, `page` vide) ; pages françaises de la loi organique de 2019 à relever
+  page à page si une citation au mot `p.` est souhaitée (citées aujourd'hui par `art.`).
+- Séries du ministère des Finances (recettes, dépenses, indicateurs) sans clé CSL : citées en clair,
+  les figures portant leur provenance par l'onglet « Sources ». Décision du bibliographe si une
+  citation formelle devient nécessaire.
+- Rapatriement Zotero des deux clés neuves (`loi-60-1-lob`, `loi-org-2004-42-lob`) : voir
+  `biblio-a-rapatrier.md`.
+- Glossaire (terminologue) : notions candidates — loi de finances, loi de règlement, titre I /
+  titre II, mission et programme, pression fiscale.
+
+**À faire — mise en conformité des volumes (une PR par volume).** Poser l'accroche « part du
+budget » dans les sections longue période, chacune vers l'ancre adaptée de l'annexe :
+entreprises publiques (transferts budgétaires), compensation (charge en % des dépenses / du PIB),
+rémunérations publiques (masse salariale), finances locales (dotation FCCL), retraites et caisses
+(subventions d'équilibre), santé et éducation (dépense sectorielle). Inventaire des séries et
+ancres : `docs/notes/annexe-budget-etat.md`, § 5.
+
+**À faire — version arabe.** La page arabe `precis/ar/annexe-budget-etat.qmd` sera engendrée par
+la traduction de la CI ; `build.sh` saute la page tant qu'elle n'est pas livrée. Relecture arabe
+des quatre figures (libellés de légende dans `annexe_budget.py`, déjà prévus bilingues) par le
+relecteur-ar après traduction.
+
 ## Le PIB et ses changements de base — annexe du site et mise en conformité des volumes (6 octobre 2026)
 
 **Fait.** L'annexe `precis/fr/annexe-pib.qmd` est écrite (page de site, rendue par `build.sh`

@@ -1,0 +1,177 @@
+---
+title: "Le budget de l'État et son évolution"
+subtitle: "Annexe commune aux volumes : ce que recouvre « le budget », voté ou réalisé, et comment lire une part du budget sur la longue période"
+format:
+  html:
+    include-in-header: ../accueil.html
+    toc: true
+    toc-depth: 3
+    toc-title: "Sommaire"
+    tbl-cap-location: top
+    fig-cap-location: top
+bibliography:
+  - references.json
+  - fiscalite/references.json
+csl: precis.csl
+crossref:
+  tbl-title: "Tableau"
+  tbl-prefix: "tableau"
+  fig-title: "Figure"
+  fig-prefix: "figure"
+  title-delim: " —"
+---
+
+[← Retour à l'accueil](index.html)
+
+<!-- BROUILLON (chantier evolution-budgets) — à relire. Matière : docs/notes/annexe-budget-etat.md. -->
+
+<!-- Identifiants STABLES de cette page, auxquels les volumes renvoient (ne pas les renommer, ne pas les traduire) :
+     #sec-bud-pourquoi, #sec-bud-definitions, #sec-bud-serie-longue, #fig-bud-serie,
+     #fig-bud-pib, #sec-bud-recettes, #fig-bud-recettes, #sec-bud-pivot-1986, #sec-bud-sources, #sec-bud-lire. -->
+
+## Pourquoi cette annexe {#sec-bud-pourquoi}
+
+Les volumes du précis rapportent souvent une grandeur au budget de l'État : le rendement d'un impôt dans les recettes, la charge de la compensation dans les dépenses, la masse salariale, les transferts aux entreprises publiques, la dotation des collectivités locales. Une telle part ne se lit qu'en sachant **de quel budget** on parle, car « le budget de l'État » ne désigne pas une grandeur unique : on peut viser le budget *voté* par la loi de finances ou le budget *réalisé* à l'exécution ; le seul budget ordinaire (titre I) ou le total incluant l'investissement (titre II) ; les recettes ou les dépenses.
+
+Cette annexe dit donc ce que recouvre chaque périmètre, quelle source le précis emploie pour chacun, où la série change de définition sur la longue période, et comment lire une part du budget. Les volumes y renvoient chaque fois qu'ils rapportent un dispositif au budget.
+
+## Ce que recouvre « le budget » {#sec-bud-definitions}
+
+Cette section fixe le vocabulaire dont dépend toute l'annexe : ce que l'État vote et ce qu'il exécute, comment ses dépenses et ses recettes sont classées, et pourquoi le budget ordinaire relevé dans la série longue n'est qu'une part du budget de l'État.
+
+### Voté et réalisé
+
+Le budget existe d'abord comme prévision autorisée, puis comme exécution constatée. La loi de finances de l'année prévoit et autorise l'ensemble des ressources et des charges et arrête l'équilibre budgétaire [@loi-org-2019-15-lob, art. 4] — la fonction qu'assignait déjà la loi organique de 1967 à la loi de finances, qui autorise la perception des recettes et fixe le plafond des dépenses [@loi-67-53-lob, art. 1]. C'est le budget **voté**.
+
+À l'autre bout de l'exercice, la **loi de règlement** du budget fixe le montant définitif des recettes recouvrées et des paiements visés au cours d'une même gestion [@loi-org-2019-15-lob, art. 65], ce que la loi de 1967 appelait constater « le montant définitif des encaissements de recettes et des ordonnancements de dépenses » [@loi-67-53-lob, art. 46]. C'est le budget **réalisé**. Entre les deux, la loi de finances rectificative révise la prévision en cours d'année ; ces trois catégories — loi de finances de l'année, loi rectificative, loi de règlement — sont celles que nomme la loi organique [@loi-org-2019-15-lob, art. 3].
+
+Le règlement est tardif : le projet de loi de règlement d'une année est transmis au Parlement en même temps que le projet de loi de finances de la deuxième année suivante [@loi-org-2019-15-lob, art. 66]. C'est pourquoi le précis lit le réalisé non dans les lois de règlement, mais dans les séries d'exécution publiées par le ministère des Finances (voir [Sources et périmètres](#sec-bud-sources)).
+
+### Titres, puis missions et programmes
+
+Sous la loi organique de 1967, les dépenses de l'État sont rangées en deux **titres**. Le **titre I** réunit les dépenses de gestion — rémunérations publiques, moyens des services, interventions publiques — et les intérêts de la dette [@loi-67-53-lob, art. 3] : c'est le budget **ordinaire**, ou de fonctionnement. Le **titre II** porte les dépenses de développement, « destinées à l'exécution des programmes prévus par les plans de développement », et le remboursement du principal de la dette [@loi-67-53-lob, art. 5]. Les ressources suivent la même partition : recettes fiscales et non fiscales ordinaires au titre I, recettes exceptionnelles et ressources d'emprunt au titre II [@loi-67-53-lob, art. 6]. La loi organique de 1996 a refondu cette nomenclature en titres, parties et sections [@loi-org-96-103-lob].
+
+La loi organique de 2019 abandonne les titres : les dépenses sont désormais classées par **missions et programmes**, et, à l'intérieur de chaque programme, par nature — rémunération, gestion, interventions, investissement, opérations financières, charges de financement [@loi-org-2019-15-lob, art. 15]. Cette structure s'applique à partir de la loi de finances pour 2020. La distinction « titre I / titre II » ne vaut donc que jusqu'à l'exercice 2019 ; au-delà, « fonctionnement » et « investissement » restent des catégories économiques commodes, mais la loi ne structure plus le budget en titres.
+
+### Recettes et dépenses
+
+Du côté des ressources, la loi organique de 2019 classe les recettes en trois parties : **recettes fiscales**, **recettes non fiscales** et **dons** [@loi-org-2019-15-lob, art. 14]. L'emprunt n'y figure pas : les ressources d'emprunt sont des **ressources de trésorerie**, distinctes des recettes du budget [@loi-org-2019-15-lob, art. 12]. Il en allait autrement sous la loi de 1967, où les ressources d'emprunt faisaient partie des ressources du budget, au titre II [@loi-67-53-lob, art. 6], et où les dons n'apparaissaient pas comme une catégorie propre. La liste « recettes fiscales, non fiscales, dons, emprunt » recouvre donc deux régimes, et se ventile selon l'époque.
+
+### Budget de l'État et budget ordinaire
+
+Le « budget général de l'État » était la dénomination d'origine de la loi de 1967 ; la loi organique de 1996 l'a remplacée par « **budget de l'État** » [@loi-67-53-lob; @loi-org-96-103-lob]. Un total de l'État agrège le titre I et le titre II — fonctionnement et développement — ainsi que les fonds et comptes spéciaux du Trésor ; il n'est pas le seul budget ordinaire.
+
+::: {.callout-note}
+## Le titre I voté n'est pas le total de l'État
+
+Le budget ordinaire voté (titre I) relevé dans la série longue de cette annexe n'est qu'une part du budget de l'État : il ne comprend pas l'investissement, voté à part au titre II. Additionner titre I et titre II ne reconstitue pas davantage le total, car les voies et moyens de l'investissement comprennent une contribution du budget ordinaire, qui serait alors comptée deux fois. L'écart se voit en 1986, la seule année où les deux séries de la @fig-bud-serie se recouvrent : le titre I voté y est nettement inférieur aux dépenses réalisées hors dette (voir [le pivot du milieu des années 1980](#sec-bud-pivot-1986)). C'est pourquoi la série votée et la série réalisée se présentent comme deux segments, jamais comme une courbe continue.
+:::
+
+## La série longue des dépenses de l'État {#sec-bud-serie-longue}
+
+La série du précis se lit **en deux segments de définition différente**, qui ne se raccordent pas : le budget ordinaire **voté** par la loi de finances (titre I), relevé loi par loi au *Journal officiel* de 1959 à 1986 ; puis les dépenses de l'État **réalisées**, hors service de la dette, publiées par le ministère des Finances de 1986 à aujourd'hui. Les deux se recouvrent en 1986 : cette année-là, le titre I voté (1 970 MD) est inférieur aux dépenses réalisées hors dette (2 395 MD), parce que le voté ordinaire n'inclut ni l'investissement ni l'exécution — c'est pourquoi le précis les présente comme deux segments, et non comme une courbe continue (voir [le pivot du milieu des années 1980](#sec-bud-pivot-1986)).
+
+```{python}
+#| label: fig-bud-serie
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../scripts")
+from figures import annexe_budget
+import figtools
+figtools.figure_tabs(
+    annexe_budget.vues_serie(), annexe_budget.table_serie(),
+    "jort-lf-budget-ordinaire", "denominateurs-depenses-etat-pib",
+    slug="fig_bud_serie",
+    caption=("Les dépenses de l'État sur longue période : budget ordinaire voté (1959-1986) "
+             "puis dépenses réalisées hors dette (1986-2025), en dinars courants et constants"),
+    note_lecture=(
+        "Les deux courbes ne mesurent pas la même chose et ne se raccordent pas : le trait bleu "
+        "est le budget ordinaire voté (titre I de la loi de finances), relevé au Journal officiel "
+        "jusqu'en 1986 ; le trait rouge est la dépense réalisée hors service de la dette, publiée "
+        "par le ministère des Finances à partir de 1986. La deuxième vue déflate ces montants par "
+        "l'indice des prix à la consommation, aux prix de 2015. Le trait vertical marque le "
+        "changement de source et de définition du milieu des années 1980."),
+)
+```
+
+En part du produit intérieur brut, les dépenses réalisées de l'État hors dette passent d'environ un tiers du PIB au milieu des années 1980 à un peu plus d'un cinquième dans les années 2000, puis remontent vers un tiers depuis 2020. Cette lecture longue **traverse trois bases des comptes nationaux** (base 1983 présumée, base 1997, base 2015) : chaque changement de base relève le niveau du PIB et abaisse mécaniquement le ratio. La série se trace donc par segments de base, et le changement de base est une rupture renvoyée à l'[annexe sur le PIB](annexe-pib.html#sec-pib-ruptures).
+
+```{python}
+#| label: fig-bud-pib
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../scripts")
+from figures import annexe_budget
+import figtools
+figtools.figure_tabs(
+    annexe_budget.fig_pib(), annexe_budget.table_pib(),
+    "denominateurs-depenses-etat-pib",
+    slug="fig_bud_pib",
+    caption="Les dépenses de l'État hors dette en % du PIB, par base des comptes nationaux, 1986-2025",
+    note_lecture=(
+        "Chaque couleur est une base des comptes nationaux ; les traits ne se prolongent pas "
+        "d'une base à l'autre, car un changement de base relève le niveau du PIB et abaisse "
+        "mécaniquement le ratio (voir l'[annexe sur le PIB](annexe-pib.html#sec-pib-ruptures)). "
+        "Les points gris isolés sont des années dont le PIB, propre au ministère des Finances, "
+        "n'est rattaché à aucune base."),
+)
+```
+
+## La composition des recettes fiscales {#sec-bud-recettes}
+
+Cette section lit la @fig-bud-recettes, qui donne les recettes fiscales de l'État de 1986 à 2025 sous deux angles : leur composition par impôt, en dinars, et leur total rapporté au PIB, la pression fiscale.
+
+La composition se déforme lentement. La figure montre la montée des **impôts directs** — l'impôt sur le revenu des personnes physiques et l'impôt sur les sociétés — et de la **taxe sur la valeur ajoutée**, tandis que les **droits de douane** reculent en part à mesure que s'ouvre le commerce extérieur et que tombent les droits sur les importations. La ligne des impôts directs porte une rupture de champ : avant 1990, elle agrège les anciens impôts cédulaires ; l'impôt sur le revenu des personnes physiques s'y substitue pour les revenus de 1990 (voir [Sources et périmètres](#sec-bud-sources)).
+
+La seconde vue rapporte le total des recettes fiscales au PIB. Cette **pression fiscale** se tient autour de 22 % à la fin des années 1980, fléchit vers 19 % dans les années 1990 et 2000, puis remonte vers 26 % sur la période récente. Comme toute part rapportée au PIB, elle hérite de la **base** des comptes nationaux et se lit par segments de base : un changement de base relève le niveau du PIB et abaisse mécaniquement le ratio (voir l'[annexe sur le PIB](annexe-pib.html#sec-pib-ruptures)).
+
+```{python}
+#| label: fig-bud-recettes
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../scripts")
+from figures import annexe_budget
+import figtools
+figtools.figure_tabs(
+    annexe_budget.vues_recettes(), annexe_budget.table_recettes(),
+    "recettes-fiscales-composition", "denominateurs-depenses-etat-pib",
+    slug="fig_bud_recettes",
+    caption=("Les recettes fiscales de l'État : composition en dinars et pression fiscale "
+             "en % du PIB, 1986-2025"),
+    note_lecture=(
+        "Première vue : chaque bande est un impôt, empilé pour donner le total des recettes "
+        "fiscales — on y lit le poids montant des impôts directs (IRPP, IS) et de la TVA, et le "
+        "recul des droits de douane à mesure de l'ouverture commerciale. Seconde vue : le total "
+        "rapporté au PIB, la pression fiscale, tracée par plage de base car un changement de base "
+        "abaisse mécaniquement le ratio (voir l'[annexe sur le PIB](annexe-pib.html#sec-pib-ruptures))."),
+)
+```
+
+## Le pivot du milieu des années 1980 {#sec-bud-pivot-1986}
+
+Le précis change de source et de définition au milieu des années 1980 : avant, la seule série continue est le budget ordinaire **voté** relevé au *Journal officiel* ; à partir de 1986, le ministère des Finances publie des séries d'exécution. Les deux ne mesurent pas la même chose — l'un est voté et ordinaire, l'autre réalisé et plus large. Le précis ne les raccorde pas : il présente la période de construction (1959-1986) par le voté, et la période moderne (depuis 1986) par le réalisé, et signale la rupture.
+
+## Sources et périmètres {#sec-bud-sources}
+
+Chaque série chiffrée de cette annexe a sa source et son périmètre ; les trois ne mesurent pas la même chose et ne se raccordent pas d'une à l'autre.
+
+| Série | Ce qu'elle mesure | Couverture | Source | Périmètre et rupture de champ |
+|---|---|---|---|---|
+| Budget ordinaire voté (titre I) | les crédits **votés** de fonctionnement, titre I de la loi de finances | 1959-1986 | lois de finances, *Journal officiel* | voté, non réalisé ; titre I seul, hors investissement (titre II) ; s'arrête en 1986 |
+| Dépenses de l'État hors dette | les dépenses **réalisées**, hors service de la dette | depuis 1986 | rapports du ministère des Finances | réalisé, non voté ; hors principal de la dette ; rapporté au PIB, hérite des bases des comptes nationaux |
+| Recettes fiscales par impôt | la composition des recettes fiscales **réalisées** | depuis 1986 | rapports du ministère des Finances | recettes fiscales seules, hors recettes non fiscales, dons et emprunt ; rupture 1990 (substitution de l'impôt sur le revenu des personnes physiques aux impôts cédulaires) |
+
+: Les trois séries de l'annexe, leur source et leur périmètre {#tbl-bud-sources}
+
+La bascule du voté au réalisé se place au milieu des années 1980 : la série votée du titre I, relevée au *Journal officiel*, s'arrête quand commencent les séries d'exécution du ministère des Finances (voir [le pivot du milieu des années 1980](#sec-bud-pivot-1986)). Les deux segments ne se raccordent pas : l'un est voté et ordinaire, l'autre réalisé et plus large. Quand une série est rapportée au PIB, son dénominateur change de niveau à chaque changement de base des comptes nationaux, rupture renvoyée à l'[annexe sur le PIB](annexe-pib.html#sec-pib-ruptures).
+
+<!-- TODO (bibliographe) : créer les clés CSL des séries du ministère des Finances (recettes fiscales, répartition économique des dépenses, indicateurs des finances publiques) proposées au § D de docs/notes/annexe-budget-etat-documentaire.md, pour citer ces sources en propre. -->
+
+## Comment lire une part du budget {#sec-bud-lire}
+
+Rapporter une grandeur au budget — un impôt dans les recettes, une charge dans les dépenses — suppose de dire à quel budget on la rapporte. Quatre règles résument l'annexe :
+
+- **Dire voté ou réalisé, titre I ou total.** Une part n'a de sens qu'avec son périmètre : le budget voté par la loi de finances ou le réalisé à l'exécution, le seul budget ordinaire (titre I) ou un total incluant l'investissement.
+- **Déflater avant de comparer dans le temps.** Une part en dinars courants ne se compare d'une année à l'autre qu'une fois les montants ramenés aux prix d'une même année de référence.
+- **Une part au PIB hérite de la base.** Le dénominateur change de niveau à chaque changement de base des comptes nationaux ; la part se lit par segments de base (voir l'[annexe sur le PIB](annexe-pib.html#sec-pib-ruptures)).
+- **Ne jamais chaîner voté et réalisé en une seule courbe.** Les deux ne mesurent pas la même chose : le précis les présente en deux segments (voir [le pivot du milieu des années 1980](#sec-bud-pivot-1986)).
