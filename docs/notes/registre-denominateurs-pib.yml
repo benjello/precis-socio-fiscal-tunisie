@@ -1,0 +1,574 @@
+# Registre des dénominateurs au PIB — précis des politiques publiques de la Tunisie
+#
+# Pour chaque ratio « au PIB » publié dans le précis (français), quel dénominateur il emploie,
+# dans quelle base, depuis quelle série, et si le ratio est produit par le précis (interne) ou
+# imprimé tel quel par un rapport extérieur (externe). Première brique de la vision compta-nat
+# (option B3) ; alimente la section « Quel PIB dans quelle source » de l'annexe PIB.
+#
+# ÉTABLI le 06/11/2026, à partir de l'inventaire re-vérifié sur le code (chaque entrée lue dans
+# le module de figure réellement embarqué, pas seulement sur l'identifiant de série). Source :
+# docs/notes/vision-compta-nationale.md, annexe « inventaire des ratios au PIB ».
+#
+# Contrôle : uv run python scripts/check_registre_denominateurs.py
+#
+# Champs :
+#   id           — numéro de l'inventaire (annexe de la note de vision)
+#   fichier      — un ou plusieurs .qmd (chemin depuis la racine du dépôt)
+#   grandeur     — ce qui est rapporté au PIB
+#   classement   — ok | partiel | externe | a_produire | cadre
+#   nature       — interne (le précis calcule le ratio) | externe (imprimé par un rapport)
+#   agregat      — pour les internes : pib_nominal | pib_minfin | depenses_etat | (—)
+#   base         — par_segments | "2015" | "1997" | "1983" | "1983/1997" | non_dit |
+#                  non_precisee_par_la_source | a_produire | mixte | renvoi
+#   source_serie — pour les internes : identifiant d'entrepôt figtools quand il est certain,
+#                  sinon une description « à préciser » (le check ne fait qu'avertir)
+#   source_rapport, annee_rapport — pour les externes
+#   note         — précision courte
+
+meta:
+  titre: Registre des dénominateurs au PIB
+  etabli: "2026-11-06"
+  langue: fr
+  methode: >-
+    Lecture du .qmd et du module de figure réellement embarqué (segment_pib / marque_rupture /
+    pib-courant-par-base), pas du seul identifiant de série. Vérifié deux fois (documentaliste
+    puis relecture du code). Classement : ok (base explicite, tracé par segments) ; partiel
+    (une rupture tracée, une autre non) ; externe (ratio imprimé par un rapport, base non dite
+    par la source) ; a_produire (figure annoncée, pas encore codée) ; cadre (phrase de doctrine).
+  # 60 entrées pour 57 ratios de l'inventaire : trois ratios mixtes (interne + part imprimée par
+  # un rapport) sont scindés en deux entrées — 11/11b, 30/30b, 43/43b ; et le #45 est reclassé
+  # « ok » (quatre segments de base tous marqués) au lieu de « ok/partiel ».
+  synthese:
+    ok: 35
+    externe: 17
+    partiel: 6
+    a_produire: 1
+    cadre: 1
+
+entrees:
+  - id: 1
+    fichier: precis/fr/fiscalite/_impot_revenu.qmd
+    grandeur: Rendement de l'IRPP (fig-irpp-rendement)
+    classement: ok
+    nature: interne
+    agregat: pib_nominal
+    base: par_segments
+    source_serie: pib-courant-par-base
+    note: fig_rendement délègue à figures/rendement_bases.py ; une courbe par base 1983/1997/2015.
+  - id: 2
+    fichier: precis/fr/fiscalite/_impot_revenu.qmd
+    grandeur: Phrase « 1,9 %… 6,6 %… 6,2 % du PIB »
+    classement: ok
+    nature: interne
+    agregat: pib_nominal
+    base: par_segments
+    source_serie: pib-courant-par-base
+    note: Trois valeurs données par base, nommées dans le texte.
+  - id: 3
+    fichier: precis/fr/fiscalite/_impot_societes.qmd
+    grandeur: Rendement de l'IS (fig-impot-societes-rendement)
+    classement: ok
+    nature: interne
+    agregat: pib_nominal
+    base: par_segments
+    source_serie: pib-courant-par-base
+    note: figures/impot_societes.py → rendement_bases.py.
+  - id: 4
+    fichier: precis/fr/fiscalite/_impot_societes.qmd
+    grandeur: Phrase « 1,86 % → 3,79 % »
+    classement: ok
+    nature: interne
+    agregat: pib_nominal
+    base: par_segments
+    source_serie: pib-courant-par-base
+  - id: 5
+    fichier: precis/fr/fiscalite/_tva.qmd
+    grandeur: Rendement de la TVA (fig-tva-rendement)
+    classement: ok
+    nature: interne
+    agregat: pib_nominal
+    base: par_segments
+    source_serie: pib-courant-par-base
+    note: figures/tva.py, boucle par base (schéma antérieur à rendement_bases.py).
+  - id: 6
+    fichier: precis/fr/fiscalite/_tva.qmd
+    grandeur: Phrase « 5,3 %… 7,3 % »
+    classement: ok
+    nature: interne
+    agregat: pib_nominal
+    base: par_segments
+    source_serie: pib-courant-par-base
+  - id: 7
+    fichier: precis/fr/fiscalite/_droits_consommation.qmd
+    grandeur: Rendement des droits de consommation
+    classement: ok
+    nature: interne
+    agregat: pib_minfin
+    base: par_segments
+    source_serie: pib-courant-par-base
+    note: figures/droits_consommation.py → rendement_bases.py.
+  - id: 8
+    fichier: precis/fr/fiscalite/_droits_consommation.qmd
+    grandeur: Phrase « maximum 1994, 3,7 % »
+    classement: ok
+    nature: interne
+    agregat: pib_minfin
+    base: par_segments
+    source_serie: pib-courant-par-base
+  - id: 9
+    fichier: precis/fr/fiscalite/_droits_douane.qmd
+    grandeur: Droits de douane en part du PIB (fig-dd-pib)
+    classement: ok
+    nature: interne
+    agregat: pib_nominal
+    base: par_segments
+    source_serie: droits-douane-pib
+    note: Série dérivée ; segments 1983/1997/2015, 2002-04 et 2025 isolés.
+  - id: 10
+    fichier: precis/fr/fiscalite/_droits_douane.qmd
+    grandeur: FMI/BM, pertes tarifaires en % du PIB
+    classement: externe
+    nature: externe
+    base: non_precisee_par_la_source
+    source_rapport: FMI ; Banque mondiale
+    annee_rapport: "1996-2016"
+  - id: 11
+    fichier: precis/fr/fiscalite/_depenses_fiscales.qmd
+    grandeur: Total des avantages fiscaux en % du PIB (fig-df-total)
+    classement: ok
+    nature: interne
+    agregat: pib_nominal
+    base: "2015"
+    source_serie: compensation-parts
+    note: >-
+      Calcul interne en base 2015 non rétropolé ; les losanges reprennent les ratios des rapports
+      (PLF 2021-2025), base non dite par la source — voir id 11b.
+  - id: 11b
+    fichier: precis/fr/fiscalite/_depenses_fiscales.qmd
+    grandeur: Ratios au PIB imprimés par les rapports annexés aux PLF
+    classement: externe
+    nature: externe
+    base: non_precisee_par_la_source
+    source_rapport: Rapports annexés aux projets de loi de finances
+    annee_rapport: "2021-2025"
+  - id: 12
+    fichier: precis/fr/fiscalite/_regimes_incitation.qmd
+    grandeur: Crédits d'incitation en part du PIB (2 figures)
+    classement: ok
+    nature: interne
+    agregat: pib_nominal
+    base: par_segments
+    source_serie: denominateurs-depenses-etat-pib
+    note: credits_incitations.py, colonne part_pib_pct ; PIB via denominateurs-depenses-etat-pib.
+  - id: 13
+    fichier: precis/fr/fiscalite/_regimes_incitation.qmd
+    grandeur: Études (BM 2014, Ghazouani 2011)
+    classement: externe
+    nature: externe
+    base: non_precisee_par_la_source
+    source_rapport: Banque mondiale ; Ghazouani
+    annee_rapport: "2011-2014"
+  - id: 14
+    fichier: precis/fr/fiscalite/_taxes_fonds_speciaux.qmd
+    grandeur: Fonds spéciaux du Trésor en part du PIB (figure à produire)
+    classement: a_produire
+    nature: interne
+    agregat: pib_minfin
+    base: a_produire
+    source_serie: à préciser (attend fonds_speciaux_tresor_MDT)
+    note: TODO explicite dans le .qmd (l.338).
+  - id: 15
+    fichier: precis/fr/fiscalite/_taxes_fonds_speciaux.qmd
+    grandeur: FMI, pertes en % du PIB
+    classement: externe
+    nature: externe
+    base: non_precisee_par_la_source
+    source_rapport: FMI
+    annee_rapport: "2015-2016"
+  - id: 16
+    fichier: precis/fr/fiscalite/_timbre_enregistrement.qmd
+    grandeur: Timbre en part du PIB (fig-te-rendement)
+    classement: ok
+    nature: interne
+    agregat: pib_nominal
+    base: par_segments
+    source_serie: pib-courant-par-base
+    note: timbre_enregistrement.py, SERIE_PIB = pib-courant-par-base ; base 2015 et 1997 côte à côte.
+  - id: 17
+    fichier: precis/fr/caisses/_comptes_longue_periode.qmd
+    grandeur: Résultat de gestion CNSS en % du PIB (1990-2004)
+    classement: partiel
+    nature: interne
+    agregat: pib_minfin
+    base: "1983/1997"
+    source_serie: irpp-ratios
+    note: Rupture 1997 tracée ; série s'arrête en 2004, 2002-04 non traité à part.
+  - id: 18
+    fichier: precis/fr/cotisations_sociales/_bilan.qmd
+    grandeur: Cotisations CNSS par branche en % du PIB
+    classement: partiel
+    nature: interne
+    agregat: pib_minfin
+    base: "1983/1997"
+    source_serie: irpp-ratios
+  - id: 19
+    fichier: precis/fr/prestations_sociales/_prestations_familiales.qmd
+    grandeur: Allocations familiales + maj. en % du PIB
+    classement: partiel
+    nature: interne
+    agregat: pib_minfin
+    base: "1983/1997"
+    source_serie: irpp-ratios
+    note: Texte dit « la rupture n'est pas corrigée ».
+  - id: 20
+    fichier: precis/fr/retraites/_secteur_prive.qmd
+    grandeur: Branche pensions RSNA en % du PIB
+    classement: partiel
+    nature: interne
+    agregat: pib_minfin
+    base: "1983/1997"
+    source_serie: irpp-ratios
+  - id: 21
+    fichier: precis/fr/retraites/_secteur_prive.qmd
+    grandeur: Croissance du PIB nominal (taux, pas un ratio au PIB)
+    classement: partiel
+    nature: interne
+    agregat: pib_nominal
+    base: non_dit
+    source_serie: croissances-revenus-prix
+    note: Depuis 1993 même base ; avant 1993, taux BM non vérifiés dans une même base.
+  - id: 22
+    fichier: precis/fr/retraites/_regard_banque_mondiale.qmd
+    grandeur: BM, pensions 5,1 % du PIB (2011)
+    classement: externe
+    nature: externe
+    base: non_precisee_par_la_source
+    source_rapport: Banque mondiale
+    annee_rapport: "2015"
+  - id: 23
+    fichier: precis/fr/remunerations_publiques/index.qmd
+    grandeur: Masse salariale publique en % du PIB (fig-masse-salariale-ratios)
+    classement: ok
+    nature: interne
+    agregat: pib_nominal
+    base: par_segments
+    source_serie: masse-salariale-ratios
+    note: groupby(segment_pib) + marque_rupture ; base_pib 1983/1997/2015.
+  - id: 24
+    fichier: precis/fr/remunerations_publiques/index.qmd
+    grandeur: Phrase « 11,5 %… 16,1 %… 13,5 % »
+    classement: ok
+    nature: interne
+    agregat: pib_nominal
+    base: par_segments
+    source_serie: masse-salariale-ratios
+  - id: 25
+    fichier: precis/fr/remunerations_publiques/index.qmd
+    grandeur: FMI 17,6 % ; BM 14,7 %
+    classement: externe
+    nature: externe
+    base: non_precisee_par_la_source
+    source_rapport: FMI (base 1997, précisée) ; Banque mondiale
+    annee_rapport: "2020"
+  - id: 26
+    fichier: precis/fr/remunerations_publiques/index.qmd
+    grandeur: Masse salariale « base 2015 / base 1997 » (figure de réconciliation)
+    classement: ok
+    nature: interne
+    agregat: pib_nominal
+    base: "1997/2015"
+    source_serie: masse-salariale-reconciliation
+    note: Ratio base 2015 / base 1997 observé année par année, aucun coefficient forfaitaire.
+  - id: 27
+    fichier: precis/fr/remunerations_publiques/_regime_conventionnel.qmd
+    grandeur: BM, transferts aux entreprises publiques en % du PIB
+    classement: externe
+    nature: externe
+    base: non_precisee_par_la_source
+    source_rapport: Banque mondiale
+    annee_rapport: "2020"
+  - id: 28
+    fichier:
+      - precis/fr/remunerations_publiques/_regime_indiciaire.qmd
+      - precis/fr/remunerations_publiques/_regime_statutaire_autonome.qmd
+    grandeur: Mention « au PIB » (renvoi au cadre du volume)
+    classement: partiel
+    nature: interne
+    agregat: pib_nominal
+    base: renvoi
+    source_serie: masse-salariale-ratios
+    note: Renvoi à fig-masse-salariale-ratios.
+  - id: 29
+    fichier: precis/fr/finances_locales/_budgets.qmd
+    grandeur: Ressources / impôts locaux en % du PIB
+    classement: ok
+    nature: interne
+    agregat: pib_nominal
+    base: par_segments
+    source_serie: cnat-pib-nominal
+  - id: 30
+    fichier: precis/fr/finances_locales/_transferts.qmd
+    grandeur: FCCL en % du PIB (1985-2023)
+    classement: ok
+    nature: interne
+    agregat: pib_nominal
+    base: par_segments
+    source_serie: cnat-pib-nominal
+    note: 1985-91 sur PIB BM (rapport 1992), segment externe — voir id 30b.
+  - id: 30b
+    fichier: precis/fr/finances_locales/_transferts.qmd
+    grandeur: FCCL en % du PIB, segment 1985-1991
+    classement: externe
+    nature: externe
+    base: non_precisee_par_la_source
+    source_rapport: Banque mondiale, rapport 1992
+    annee_rapport: "1992"
+  - id: 31
+    fichier: precis/fr/finances_locales/_impots_activite.qmd
+    grandeur: TCL en % du PIB
+    classement: ok
+    nature: interne
+    agregat: pib_nominal
+    base: par_segments
+    source_serie: cnat-pib-nominal
+    note: 1997 puis 2015, non raccordées.
+  - id: 32
+    fichier: precis/fr/finances_locales/_impots_immeubles.qmd
+    grandeur: TIB en % du PIB (2008-2023)
+    classement: ok
+    nature: interne
+    agregat: pib_nominal
+    base: par_segments
+    source_serie: cnat-pib-nominal
+  - id: 33
+    fichier: precis/fr/compensation/_depense.qmd
+    grandeur: Dépense de compensation en part du PIB (1984-2026)
+    classement: ok
+    nature: interne
+    agregat: pib_nominal
+    base: par_segments
+    source_serie: compensation-parts
+    note: Modèle de référence (segment_pib explicite).
+  - id: 34
+    fichier: precis/fr/compensation/_depense.qmd
+    grandeur: Phrases chiffrées « 1,9 %… 8,6 % » ; plans 1 % du PIB
+    classement: ok
+    nature: interne
+    agregat: pib_nominal
+    base: par_segments
+    source_serie: compensation-parts
+  - id: 35
+    fichier: precis/fr/compensation/_institution.qmd
+    grandeur: Dotation de la Caisse en part du PIB
+    classement: ok
+    nature: interne
+    agregat: pib_nominal
+    base: par_segments
+    source_serie: compensation-parts
+  - id: 36
+    fichier: precis/fr/compensation/_carburants.qmd
+    grandeur: Soutien aux carburants en part du PIB
+    classement: ok
+    nature: interne
+    agregat: pib_nominal
+    base: "2015"
+    source_serie: compensation-parts
+  - id: 37
+    fichier: precis/fr/compensation/_electricite_gaz.qmd
+    grandeur: Facture combustibles STEG en points de PIB (2013-2023)
+    classement: ok
+    nature: interne
+    agregat: pib_nominal
+    base: "2015"
+    source_serie: pib-courant-par-base
+    note: 2013-14 rétropolé par l'INS.
+  - id: 38
+    fichier: precis/fr/compensation/_exterieurs.qmd
+    grandeur: Subventions selon BM/FMI vs budget, en part du PIB
+    classement: ok
+    nature: interne
+    agregat: pib_nominal
+    base: par_segments
+    source_serie: compensation-parts
+    note: Parts budgétaires sur même PIB ; parts imprimées par les rapports distinguées (externe).
+  - id: 39
+    fichier: precis/fr/compensation/_incidence.qmd
+    grandeur: BM 2013, 4,7 % / 6,6 % (deux PIB différents)
+    classement: externe
+    nature: externe
+    base: non_precisee_par_la_source
+    source_rapport: Banque mondiale
+    annee_rapport: "2013"
+  - id: 40
+    fichier: precis/fr/compensation/_transport.qmd
+    grandeur: Crédits / interventions transport en part du PIB
+    classement: ok
+    nature: interne
+    agregat: pib_nominal
+    base: "2015"
+    source_serie: compensation-parts
+    note: Base 2015 pour le récent ; par segments avant 1994.
+  - id: 41
+    fichier: precis/fr/compensation/_transport.qmd
+    grandeur: CEQ, transport 0,3 pt de PIB (2010)
+    classement: externe
+    nature: externe
+    base: non_precisee_par_la_source
+    source_rapport: CEQ (Jouini, Lustig et al.)
+    annee_rapport: "2017"
+  - id: 42
+    fichier:
+      - precis/fr/entreprises_publiques/index.qmd
+      - precis/fr/entreprises_publiques/_transferts.qmd
+    grandeur: Transferts du budget aux EP en % du PIB (2016-2024)
+    classement: ok
+    nature: interne
+    agregat: pib_nominal
+    base: "2015"
+    source_serie: entreprises-publiques-transferts-budget
+  - id: 43
+    fichier: precis/fr/entreprises_publiques/_garanties.qmd
+    grandeur: Encours / garanties / plafond légal en % du PIB
+    classement: ok
+    nature: interne
+    agregat: pib_nominal
+    base: par_segments
+    source_serie: garanties-etat
+    note: >-
+      Calcul interne par segments ; le rapport sur la dette imprime 13,5 % (2023) sur une base
+      non dite, contre 14,3 % calculés — part externe, voir id 43b.
+  - id: 43b
+    fichier: precis/fr/entreprises_publiques/_garanties.qmd
+    grandeur: Garanties en % du PIB imprimées par le rapport sur la dette
+    classement: externe
+    nature: externe
+    base: non_precisee_par_la_source
+    source_rapport: Ministère des Finances, rapport sur la dette publique
+    annee_rapport: "2022-2025"
+  - id: 44
+    fichier: precis/fr/entreprises_publiques/_recettes.qmd
+    grandeur: Part de l'État dans les bénéfices en % du PIB (1983-2023)
+    classement: ok
+    nature: interne
+    agregat: pib_nominal
+    base: par_segments
+    source_serie: bct-part-etat-benefices
+    note: Base 1997 pour le segment 2003-09.
+  - id: 45
+    fichier: precis/fr/entreprises_publiques/_cessions.qmd
+    grandeur: Recettes de cession en % du PIB (1987-2009)
+    classement: ok
+    nature: interne
+    agregat: pib_nominal
+    base: par_segments
+    source_serie: à préciser (série par base)
+    note: >-
+      Reclassé ok (était « OK/partiel ») : quatre segments de base tous marqués et étiquetés dans
+      la figure.
+  - id: 46
+    fichier: precis/fr/entreprises_publiques/_emploi_comptes.qmd
+    grandeur: Charges de personnel / résultat net agrégé en % du PIB
+    classement: ok
+    nature: interne
+    agregat: pib_nominal
+    base: "2015"
+    source_serie: entreprises-publiques-resultats-agreges
+  - id: 47
+    fichier: precis/fr/entreprises_publiques/_etudes.qmd
+    grandeur: Cinq documents (réforme, BM, FMI, ITCEQ) en % du PIB
+    classement: externe
+    nature: externe
+    base: non_precisee_par_la_source
+    source_rapport: Présidence du gouvernement ; Banque mondiale ; FMI ; ITCEQ
+    annee_rapport: "2018-2021"
+  - id: 48
+    fichier:
+      - precis/fr/education/_depense.qmd
+      - precis/fr/education/index.qmd
+    grandeur: Dépense d'éducation en % du PIB (2010-2023)
+    classement: ok
+    nature: interne
+    agregat: pib_nominal
+    base: "2015"
+    source_serie: ins-budget-sante-2018-2023
+    note: >-
+      2010-14 rétropolé par l'INS. TODO toujours ouvert (l.51) : segment 2005-2009 en base 1997
+      non calculé (attend denominateurs-depenses-etat-pib). source_serie à confirmer.
+  - id: 49
+    fichier: precis/fr/education/_depense.qmd
+    grandeur: UIS/UNESCO, dépense 4,9-7,3 % du PIB
+    classement: externe
+    nature: externe
+    base: non_precisee_par_la_source
+    source_rapport: UIS / UNESCO
+  - id: 50
+    fichier: precis/fr/sante/_couverture.qmd
+    grandeur: Budget Santé en % du PIB (2018-2023)
+    classement: ok
+    nature: interne
+    agregat: pib_nominal
+    base: "2015"
+    source_serie: ins-budget-sante-2018-2023
+  - id: 51
+    fichier: precis/fr/sante/_couverture.qmd
+    grandeur: Dépense courante de santé en % du PIB (OMS)
+    classement: externe
+    nature: externe
+    base: non_precisee_par_la_source
+    source_rapport: OMS / GHED
+  - id: 52
+    fichier: precis/fr/prestations_sociales/_non_contributives.qmd
+    grandeur: Crédits Amen social en part du PIB (2021-2023)
+    classement: ok
+    nature: interne
+    agregat: pib_nominal
+    base: "2015"
+    source_serie: mas-amen-social-2023-credits-bruts
+  - id: 53
+    fichier: precis/fr/prestations_sociales/_non_contributives.qmd
+    grandeur: BM/UNICEF, coût du transfert 0,4-0,9 % du PIB
+    classement: externe
+    nature: externe
+    base: non_precisee_par_la_source
+    source_rapport: Banque mondiale ; UNICEF
+  - id: 54
+    fichier: precis/fr/prestations_sociales/_logement_social.qmd
+    grandeur: Prélèvement FOPROLOS en part du PIB
+    classement: ok
+    nature: interne
+    agregat: pib_nominal
+    base: par_segments
+    source_serie: pib-courant-par-base
+  - id: 55
+    fichier:
+      - precis/fr/informel/_estimations.qmd
+      - precis/fr/informel/_mesures.qmd
+    grandeur: Production non déclarée en part du PIB (Schneider, base BM)
+    classement: externe
+    nature: externe
+    base: mixte
+    source_rapport: Schneider ; Banque mondiale (MIMIC/EGC) ; INS (base précisée)
+    note: >-
+      Classé externe pour les parties non-INS ; la ligne INS (27,4 % en 2015, base 2015) est une
+      donnée interne bien sourcée nichée dans un chapitre par ailleurs externe — à granulariser
+      si le registre passe à la phrase.
+  - id: 56
+    fichier: precis/fr/marche_travail/_politiques_emploi.qmd
+    grandeur: BM, politiques actives 1,5 % / 0,8 % du PIB
+    classement: externe
+    nature: externe
+    base: non_precisee_par_la_source
+    source_rapport: Banque mondiale
+    annee_rapport: "2004-2015"
+  - id: 57
+    fichier:
+      - precis/fr/compensation/index.qmd
+      - precis/fr/entreprises_publiques/_etudes.qmd
+      - precis/fr/education/index.qmd
+    grandeur: Phrases de doctrine « toute part du PIB dit sa base »
+    classement: cadre
+    nature: interne
+    agregat: "—"
+    base: renvoi
+    source_serie: "—"
+    note: Cadre méthodologique (renvoi à l'annexe PIB), pas un ratio.
