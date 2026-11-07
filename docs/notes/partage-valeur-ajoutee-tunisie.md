@@ -488,7 +488,7 @@ des **sociétés** (où les salariés ≈ les travailleurs, sans revenu mixte) :
 les deux déflatés par le **même** prix (le déflateur de la valeur ajoutée, qui s'annule donc dans
 l'identité). La part monte quand le salaire réel croît plus vite que la productivité. On l'applique
 aux **SNF**, avec l'emploi des SNF ≈ **salariés déclarés à la CNSS** (la carte institutionnelle vérifiée,
-`docs/notes/emploi-productivite-sources-options.md`) et le déflateur du PIB. Fenêtre propre :
+annexe G) et le déflateur du PIB. Fenêtre propre :
 base 1997, 2005-2016 (SNF par secteur **et** CNSS disponibles ; pas de chaînage de base).
 
 | Cumul 2005→2016 (base 1997) | points de log |
@@ -505,7 +505,26 @@ dénominateur d'emploi. Ici l'emploi des SNF (CNSS déclarés) croît de **+32 %
 par **formalisation** (des travailleurs passent du non-déclaré au déclaré) : cela **gonfle l'emploi
 mesuré et déprime la productivité mesurée**. La productivité « plate » est donc en partie un artefact
 de formalisation ; le vrai partage *wage push* / productivité ne se tranche pas sans série d'emploi
-corrigée (annexe B.4). C'est **le** test de sensibilité à porter.
+corrigée (annexe B.4). C'est **le** test de sensibilité à porter — et il est décisif :
+
+| 2005-2016 (SNF, Δpart = **+19,2** log pts, invariant) | emploi | salaire réel | productivité |
+|---|---:|---:|---:|
+| **CNSS déclarés** | +32 % | +20,9 | **+1,7** |
+| **RNE sociétés** (SNF privé, registre INS) | +26 % | +25,3 | **+6,1** |
+| **enquête emploi salarié** | +22 % | +28,3 | **+9,1** |
+
+**La hausse de la part est un fait invariant ; son attribution, non.** Selon le dénominateur, la
+productivité a crû de **+2 %** (CNSS, gonflé par la formalisation) à **+9 %** (enquête) — **jamais
+plate**. Le meilleur périmètre, le **RNE « sociétés »** (emploi salarié formel des sociétés privées,
+Répertoire national des entreprises de l'INS, 2000-2024, dont le total recoupe la CNSS déclarée),
+donne **+6 %**. Le diagnostic « *wage push* sur productivité stagnante » n'est donc **pas robuste** au
+choix de l'emploi ; ce qui l'est : les **salaires réels ont dépassé une productivité qui, elle, a bien
+crû**.
+
+**Le segment récent le confirme.** En **base 2015 (2015-2024)**, avec le RNE sociétés (emploi +19 %),
+la part des SNF monte de **+5,6 log pts** (55,7 → 59,0 %) par un salaire réel **+17** sur une
+productivité **+11** — les deux croissent, la part monte par un léger dépassement. (Deux bases,
+**jamais chaînées**.)
 
 **Complément — le coin prix conso / prix VA.** On peut scinder le salaire réel *au prix du produit*
 en salaire réel *à la consommation* × (prix conso / prix VA). Depuis 2023, les prix à la consommation
@@ -640,18 +659,19 @@ dixième** à l'INS (2005 : 14 998,9 MD des deux côtés).
 
 ### B.4 Données manquantes (à récupérer)
 
-Récapitulatif des trous identifiés, avec ce que chacun bloque. **Rappel de provenance** : seules deux
-séries d'emploi sont **primaires INS** — l'emploi occupé total (2007-2024) et le salarié par statut
-1999-2012 ; OIT, ILOSTAT, WDI, PWT, BM en sont **dérivées** (re-traitements des mêmes comptes INS +
-ENPE). Détail des pistes d'emploi : `docs/notes/emploi-productivite-sources-options.md`.
+Récapitulatif des trous identifiés, avec ce que chacun bloque. **Rappel de provenance** : **trois**
+séries d'emploi sont **primaires INS** — l'emploi occupé total (2007-2024), le salarié par statut
+1999-2012, et le **salarié formel privé par forme juridique du RNE** (2000-2024 ; les formes sociétés
+≈ emploi des SNF privées) ; OIT, ILOSTAT, WDI, PWT, BM en sont **dérivées**. Détail des pistes
+d'emploi : annexe G ; définition et source de chaque série : annexe H.
 
 | Donnée manquante | Ce que ça bloque | État |
 |---|---|---|
-| **Salarié par statut, INS primaire, 2013-2024** | décomposition salaire réel / productivité **comparable et primaire** | la table « statut » disparaît des annuaires après 2012 ; 2013-2019 seulement en **dérivé** (ILOSTAT), 2014/2018/2020-2024 **estimés** (ratio × occupé) |
-| **Heures travaillées (avh)** | décomposition **en heures** (plutôt qu'en têtes) | PWT/FRED ne portent pas la Tunisie ; à chercher (ILOSTAT heures hebdo × 52, Conference Board) |
-| **Salarié par secteur, série longue** | shift-share salaire/productivité **sectoriel** | ventilation CNSS seulement à **2006, 2016, 2018** ; enquête emploi sectorielle à dépouiller |
+| ~~Salarié par statut 2013-2024 pour les SNF~~ **— comblé** | décomposition salaire réel / productivité des SNF | **Résolu** : le **RNE sociétés** (primaire INS, 2000-2024) donne l'emploi des SNF privées, et sert la décomposition (§ 4.11). Reste dérivé/estimé : le salarié **économie entière** par statut après 2012 (ILOSTAT → 2019) |
+| **Heures travaillées, série annuelle** — **immatériel** | décomposition **en heures** (vs en têtes) | mesurées seulement en **2019 (44,3 h/sem, ENPE INS) et 2021 (43,3, autre enquête)** — pas de série ; ni l'INS ni ILOSTAT (dérivé de l'ENPE) n'en publient en continu. **Mais ~44 h/sem stables** → décomposition par tête ≈ par heure : gap **sans effet** sur § 4.11 |
+| **Salarié par secteur d'activité, série longue** — **en partie comblé** | shift-share salaire/productivité **sectoriel** | le **RNE** donne l'emploi salarié formel privé par **forme juridique** (2000-2024) et par **activité** dans les éditions récentes (2024) ; reste à consolider la ventilation sectorielle longue |
 | **Loyers imputés / immobilier isolés** | part des salaires **hors logement** ; ajustement Gollin maison | non publié ; noyé dans « Autres activités des ménages » (~6 % du PIB, **borne haute**, `ins-va-branche-base2015`) |
-| **SNF publiques / privées** | séparer marché, État et logement dans les SNF | les comptes ne ventilent pas les SNF par propriété |
+| **SNF publiques / privées (VA)** | isoler les SNF privées | emploi privé : **RNE sociétés** ; VA : retirer les EP ne déplace la part que de **±2-3 pts** mais la **VA EP agrégée n'est pas publiée** — **vérifié par OCR arabe du rapport MdF** (produits, charges, résultats seulement ; ni VA, ni achats consommés, ni dotations agrégés) ; reconstructible seulement par le bas (comptes primaires, incomplet). Second ordre (§ 4.10, annexe G) |
 | **SNF avant 2001 ; économie entière avant 1992** | prolonger les séries ; part structurelle nette du cycle | volumes INS 1-10 (papier) / CD 2005-2009 ; l'ONU ne remonte pas avant 1992 |
 | **Entreprises publiques avant 2017** | contribution des EP à la hausse **2011-2016** | bornée par le Livre blanc (§ 4.10), non mesurée ; agrégat annuel à reconstituer (Cour des comptes, annexes 9 LF) |
 | **Comparateurs** | contre-champ international | BM Global Productivity DB s'arrête en **2018** ; indices ITCEQ à récupérer (site bloque) |
@@ -779,6 +799,71 @@ l'annexe des comptes de la nation.)
 
 *PDF à récupérer dans `tunisia-data` (règle du précis) : Cotis 2009, Note de veille 133,
 Karabarbounis-Neiman 2014, Gollin 2002, Guerriero 2019, Trapp 2015.*
+
+## Annexe G — Emploi, productivité et carte institutionnelle
+
+(Résumé autonome ; la version longue vit hors de cette note.)
+
+**La question.** La décomposition salaire réel / productivité (§ 4.11) exige une série d'**emploi des
+SNF**. Aucune caisse ni enquête ne la donne directement — d'où des choix à expliciter.
+
+**Ce que mobilise la littérature.** Les travaux tunisiens sur la productivité (ITCEQ, Banque mondiale,
+FMI) prennent l'**emploi de l'enquête emploi** (occupé ou salarié) et la **comptabilité nationale** ;
+le niveau firme passe par les **microdonnées du Répertoire national des entreprises** (décompositions
+within/between). Personne ne construit l'emploi à partir des déclarés sociaux.
+
+**Primaire vs dérivé.** Seules deux séries d'emploi sont **primaires INS** : l'emploi occupé total
+(enquête emploi, 2007-2024) et le salarié par statut (1999-2012), plus les instantanés du recensement
+(2014, 2024). **OIT, ILOSTAT, WDI, PWT, Banque mondiale en sont toutes dérivées** (re-traitements des
+mêmes comptes INS et de l'enquête emploi) : leur désaccord sur la part du travail (de 39 % à 54 % en
+2019) n'est **pas** une triangulation, mais une seule donnée traitée de plusieurs façons (traitement
+du non-salariat).
+
+**Carte institutionnelle (vérifiée sur la méthodo INS).** Le critère de classement est la
+**comptabilité complète** : sociétés + indépendants **au réel** (quasi-sociétés) + entreprises
+publiques commerciales → **SNF** ; banques, assurances → SF ; fonction publique, collectivités,
+établissements administratifs, hôpitaux → APU ; indépendants **au forfait** + informel + loyers
+imputés → **Ménages** (revenu mixte). Conséquences : l'informel du *secteur* est hors SNF, mais les
+salariés non déclarés d'une firme formelle y sont ; la CNRPS est surtout l'**APU** (plus ~113 000
+agents d'établissements/entreprises publics non étatiques, mesurés par écart aux effectifs de la
+fonction publique).
+
+**Options d'emploi et choix retenu.** (A) enquête emploi (standard, comparable) ; (B) déclarés
+CNSS+CNRPS (formel, mais non standard et CNRPS = APU) ; (C) **hybride, retenu** : enquête emploi pour
+l'économie entière, **CNSS déclarés** comme proxy de l'emploi des SNF (les ajustements − sociétés
+financières / + entreprises publiques en CNRPS se compensent, à ±5 %). Biais à porter : les
+non-déclarés des firmes formelles gonflent D.1/VA des SNF mais pas les déclarés CNSS, et la
+**formalisation** gonfle la croissance de l'emploi CNSS (§ 4.11).
+
+**Entreprises publiques dans les SNF.** Les retirer des SNF (pour isoler les SNF privées) ne déplace
+la part des salaires que de **±2-3 points**, de signe indéterminé faute de VA EP agrégée propre (la
+VA comptable des EP de compensation — Office des céréales, STIR — et à prix volatils — ETAP — est
+distordue). La VA des SNF de l'INS, elle, est à prix de base (compensation en D.31, hors VA du
+producteur) : elle est propre. **La part des salaires des SNF de l'INS reste la référence robuste.**
+
+## Annexe H — Séries mobilisées (définition et source)
+
+| Code | Contenu | Source |
+|---|---|---|
+| `cnat-approche-revenus` | PIB par l'approche des revenus (rémunération des salariés, revenu d'exploitation, impôts nets), totaux, par base | INS, *Comptes de la nation* |
+| `cnat-approche-revenus-secteurs` | Mêmes grandeurs par secteur institutionnel (SNF, SF, APU, ménages) | INS, *Comptes de la nation* |
+| `cnat-approche-revenus-undata` | Compte de génération du revenu, économie entière, 1992-2023 | ONU (données INS transmises, UNdata) |
+| `ins-va-branche-base2015` | VA par branche d'activité, prix courants et de l'année précédente, 2020-2025 (déflateur de la VA) | INS, banque de données (statistiques/75) |
+| `bct-ipc-base2015` | Indice des prix à la consommation, base 100 = 2015 | Banque centrale de Tunisie |
+| `bct-emploi-occupe` | Emploi occupé total, 2007-2024 | INS, enquête emploi (via BCT) |
+| `ins-enquete-emploi` | Population occupée par statut (salarié, indépendant, aide familial…), 1999-2012 | INS, enquête nationale population-emploi |
+| `ins-micro-entreprises` | Enquête quinquennale sur les micro-entreprises (part des salariés sous le SMIG) | INS |
+| `comptes_primaires_ep` | VA et ses composantes, états financiers primaires de ~20 grandes entreprises publiques | États financiers EP (BVMT, rapports) |
+| `entreprises-publiques-resultats-agreges` | Produits/charges d'exploitation, charges de personnel, résultats du secteur EP (77-88 entreprises), 2017-2022 | Ministère des finances, rapport EP (Annexe 9 LF) |
+| `entreprises-publiques-effectifs-ensemble` | Effectif total des entreprises publiques (hors banques et caisses) | Ministère des finances, rapport EP |
+| `grandeurs-productivite-ep` | VA, masse salariale, VA par agent d'un panel d'EP | États financiers EP |
+| RNE sociétés (emploi salarié formel privé par forme juridique) | Emploi salarié formel du secteur privé par forme juridique (sociétés = SA, SARL, SUARL ; personnes physiques), 2000-2024 ; les formes **sociétés** ≈ emploi des SNF privées | INS, Répertoire national des entreprises |
+| CNSS salariés déclarés | Salariés déclarés (secteur privé + public commercial), annuel | CNSS, annuaires statistiques |
+| CNRPS affiliés actifs | Affiliés actifs (agents publics + établissements/entreprises publics), 2000-2020 | CNRPS, guides statistiques |
+| PWT (`rgdpna`, `labsh`) | PIB réel et part du travail (ajustée Gollin), Tunisie, 1960-2023 | Penn World Table 11.0 (via FRED) |
+
+Les codes en minuscules-tirets renvoient aux séries de l'entrepôt `tunisia-data` (chacune avec sa
+fiche de provenance et son contrôle d'extraction) ; les autres sont nommées par leur source.
 
 ---
 
