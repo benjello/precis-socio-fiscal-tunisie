@@ -25,7 +25,7 @@ crossref:
 [← Retour à l'accueil](index.html)
 
 <!-- Identifiants STABLES de cette page, auxquels les volumes renvoient (ne pas les renommer, ne pas les traduire) :
-     #sec-cn-pourquoi, #sec-cn-secteurs, #sec-cn-sequence, #sec-cn-approches, #sec-cn-agregats, #sec-cn-partage-va, #fig-cn-partage-va, #sec-cn-concordance, #sec-cn-limites.
+     #sec-cn-pourquoi, #sec-cn-secteurs, #sec-cn-sequence, #sec-cn-approches, #sec-cn-agregats, #sec-cn-concordance, #sec-cn-limites.
      Matière : docs/notes/annexe-comptes-nation.md. Les bases du PIB (1983/1997/2015) restent dans annexe-pib.qmd, à qui cette page renvoie. -->
 
 ## Pourquoi cette annexe {#sec-cn-pourquoi}
@@ -62,7 +62,7 @@ Les comptes de la nation ne sont pas un stock d'agrégats juxtaposés, mais « u
 | Compte | Objet | Solde |
 |---|---|---|
 | Production | production − consommation intermédiaire | [valeur ajoutée brute](#g-valeur-ajoutee-brute) |
-| Exploitation | partage de la valeur ajoutée entre les facteurs | [revenu d'exploitation](#g-revenu-exploitation-mixte) (revenu mixte pour les entreprises individuelles) |
+| Exploitation | rémunère les facteurs de production (travail, capital) | [revenu d'exploitation](#g-revenu-exploitation-mixte) (revenu mixte pour les entreprises individuelles) |
 | Affectation des revenus primaires | ajoute les revenus de la propriété (intérêts, dividendes, loyers) | solde des revenus primaires, ou [revenu national](#g-revenu-national-brut) |
 | Distribution secondaire du revenu | transferts courants : impôts, cotisations et prestations sociales | [revenu disponible brut](#g-revenu-disponible-brut) |
 | Utilisation du revenu | revenu disponible − dépense de [consommation finale](#g-consommation-finale) | [épargne brute](#g-epargne-nationale-brute) |
@@ -161,65 +161,6 @@ Le tableau suivant réunit les agrégats auxquels le précis rapporte ses chiffr
 : Les grandeurs citables, niveaux 2021, base 2015 {#tbl-cn-agregats}
 
 Sources : [@ins-cnat-2015, éd. 2019-2023, p. 24, p. 27, p. 30 et p. 55]. Les niveaux du revenu national, du revenu national disponible et de l'épargne sont lus à la page 30 ; la rémunération des salariés et les subventions sur les produits à la page 27 ; la formation brute de capital fixe aux pages 24 et 69.
-
-## Le partage de la valeur ajoutée {#sec-cn-partage-va}
-
-L'approche des revenus partage la valeur ajoutée entre le **travail** — la rémunération des
-salariés — et le **capital** — l'excédent brut d'exploitation, auquel s'ajoute, chez les
-entrepreneurs individuels, le **revenu mixte**, qui mêle en un seul solde le profit et la
-rémunération du travail indépendant. La part des salaires se lit donc différemment selon le
-**périmètre** retenu, et le choix du périmètre est la question centrale de la littérature sur le
-sujet [@cotis-2009 ; @askenazy-cette-sylvain-2011].
-
-Deux mesures encadrent cette lecture. La **part des salaires dans la valeur ajoutée des sociétés
-non financières** écarte le revenu mixte, qui n'existe pas dans ce secteur ; c'est l'indicateur de
-référence du rapport Cotis et de l'ouvrage d'Askenazy, Cette et Sylvain. La **part des salaires
-dans le produit intérieur brut** de l'économie entière, elle, loge le travail indépendant dans le
-capital et sous-estime d'autant le travail : en Tunisie, l'écart entre les deux mesures est de
-l'ordre de dix points. La @fig-cn-partage-va trace les deux, par segments de base.
-
-```{python}
-#| label: fig-cn-partage-va
-#| echo: false
-#| output: asis
-import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../scripts")
-from figures import partage_va
-import figtools
-figtools.figure_tabs(
-    partage_va.figure(), partage_va.table(),
-    "cnat-approche-revenus-secteurs", "cnat-approche-revenus", "cnat-approche-revenus-undata",
-    slug="fig_cn_partage_va",
-    caption=("La part des salaires dans la valeur ajoutée : sociétés non financières "
-             "(depuis 2001) et économie entière (depuis 1992), par segments de base"),
-    note_lecture=(
-        "Deux courbes. En bleu, la part des salaires dans la valeur ajoutée des sociétés non "
-        "financières (rémunération des salariés rapportée à la somme rémunération + excédent brut "
-        "d'exploitation), de 2001 à 2025 ; en vert, la part des salaires dans le produit intérieur "
-        "brut de l'économie entière, de 1992 à 2025 — plus basse, parce que le revenu mixte des "
-        "entrepreneurs individuels y est compté avec le capital. Les traits verticaux marquent les "
-        "changements de base (1997, 2015) : les niveaux ne se raccordent pas d'une base à l'autre, "
-        "chaque segment se lit à l'intérieur de sa base. Avant 2005, le partage des sociétés non "
-        "financières vient des comptes sectoriels des éditions en base 1983 ; avant 2001, seule la "
-        "part de l'économie entière est disponible, prolongée jusqu'en 1992 par les comptes que "
-        "l'Institut national de la statistique transmet aux Nations unies."))
-```
-
-En Tunisie, la part des salaires des sociétés non financières **monte** nettement sur la période
-lue — l'excédent, c'est-à-dire le taux de marge, recule d'autant. Cette orientation se distingue
-de la **relative stabilité** observée en France sur le même périmètre [@cotis-2009], et du mouvement
-**inverse** décrit à l'échelle mondiale, où la part du travail a plutôt baissé depuis les années
-1980 [@karabarbounis-neiman-2014]. Une mise en garde traverse cette littérature : un partage
-agrégé peut masquer des évolutions contraires selon la taille ou le secteur des entreprises, et la
-part des profits dépend aussi de la place des dividendes [@cas-delaveau-2009-nv133]. Les comptes
-tunisiens ne permettent pas de distinguer les entreprises par taille ; la décomposition par secteur
-institutionnel — sociétés contre ménages — joue ici le même rôle d'avertissement.
-
-Trois précautions de lecture. Les **niveaux ne se comparent pas** d'un pays à l'autre sans
-harmoniser le champ et le traitement des impôts sur la production : le taux de marge des sociétés
-non financières tunisiennes, de l'ordre de la moitié de leur valeur ajoutée, est plus élevé qu'en
-France, ce qui est courant dans une économie à bas salaires mais n'autorise pas une comparaison
-directe. Les **niveaux ne se comparent pas** non plus d'une base à l'autre. Et **avant 2005**, seule
-la mesure de l'économie entière existe : le biais du revenu mixte y est entier.
 
 ## Quel volume touche quel compte {#sec-cn-concordance}
 
