@@ -1,0 +1,73 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-11-06
+# séries (tunisia_data) : jort-lf-budget-ordinaire, denominateurs-depenses-etat-pib
+# sources (citation) : @loi59-42-lf1959, @loi60-38-lf1961, @loi61-65-lf1962, @loi62-82-lf1963, @loi63-58-lf1964, @loi64-59-lf1965, @loi65-46-lf1966, @loi66-79-lf1967, @loi67-57-lf1968, @lf-1969, @lf-1970, @lf-1971, @loi71-59-lf1972, @lf-1973, @loi73-82-lf1974, @loi74-101-lf1975, @loi75-83-lf1976, @lf-1977, @loi77-81-lf1978, @loi78-59-lf1979, @loi79-66-lf1980, @lf-1981, @loi81-100-lf1982, @lf-1983, @lf-1984, @loi84-84-lf1985, @loi85-109-lf1986, @minfin-remunerations, @minfin-indicateurs-fp, @ins-cnat-2015, @wb-wdi
+# fiches : sources/jort-lf-budget-ordinaire.md, sources/jort-lois-de-finances-fonds-credits.md
+# méthode/hypothèses : CE N'EST PAS UN TOTAL DE L'ÉTAT : le budget d'équipement, puis de développement, est à part et sa structure change d'une loi à l'autre (non lu). Montant VOTÉ du seul budget ordinaire (titre I), jamais une réalisation ; il peut comprendre une contribution au budget d'équipement (3 MD en 1961) et la loi ne dit pas, à ces articles, s'il comprend le service de la dette. NE SE RACCORDE PAS à denominateurs-depenses-etat-pib (dépenses de l'État hors service de la dette, réalisation, depuis 1986) : concepts différents, jamais chaînés. La loi de finances pour 1983 fixe en outre un budget général de 1 753 MD (954 courantes, 799 d'investissement) : non versé, sans équivalent les années voisines. 1959-60 : le chiffre des crédits est effacé à l'image, seules les recettes sont lues. Non lus : budget ordinaire de 1958-59 (en francs, fixé par décret du 29 juin 1957, fascicule absent du corpus local), gestion 1960 (aucune notice), lois de finances complémentaires. Recettes et crédits égaux chaque année lue : l'égalité contrôle la lecture. Fascicules scannés : lecture à l'image ou océrisation concordante (colonne lecture)., LE PIB N'EST JAMAIS CHAÎNÉ : segment_pib change en 1986, 1992, 1997, 2002, 2005, 2010 et 2025 ; une part du PIB se trace par segments. 1984-1985 : PIB de la Banque mondiale, bases accolées non raccordées ; 1986-1991 : PIB du ministère des Finances, base 1983 PRÉSUMÉE ; 2002-2004 et 2025 : valeur propre au ministère, rattachée à aucune base ; 2010-2014 : base 2015 rétropolée par l'INS. Les dépenses de l'État sont des RÉALISATIONS : rapportée à elles, une prévision de loi de finances donne un ordre de grandeur, non une exécution. AUCUNE DÉPENSE DE L'ÉTAT AVANT 1986.
+# note : Les dépenses de l'État sur longue période : budget ordinaire voté (1959-1986) puis dépenses réalisées hors dette (1986-2025), en dinars courants et constants
+annee,vote_MDT,reel_MDT,vote_const,reel_const
+1959,48.6,,,
+1961,55.8,,,
+1962,56.8,,836.8,
+1963,60.0,,861.7,
+1964,68.3,,940.4,
+1965,86.0,,1110.5,
+1966,100.5,,1249.4,
+1967,108.1,,1305.3,
+1968,124.0,,1461.5,
+1969,131.4,,1486.2,
+1970,146.5,,1640.1,
+1971,154.0,,1626.4,
+1972,175.0,,1814.0,
+1973,208.1,,2059.8,
+1974,247.2,,2351.2,
+1975,344.6,,2992.9,
+1976,385.5,,3178.0,
+1977,441.5,,3411.0,
+1978,541.2,,3960.0,
+1979,625.1,,4218.2,
+1980,751.6,,4656.4,
+1981,938.0,,5316.9,
+1982,1168.0,,5803.7,
+1983,1420.0,,6441.2,
+1984,1544.0,,6449.7,
+1985,1885.0,,7327.3,
+1986,1970.0,2395.0,7207.2,8762.1
+1987,,2316.6,,7837.5
+1988,,2603.3,,8214.2
+1989,,2969.8,,8698.8
+1990,,3181.8,,8743.3
+1991,,3514.0,,8961.1
+1992,,3656.4,,8833.3
+1993,,4014.2,,9306.1
+1994,,4276.6,,9489.9
+1995,,4584.2,,9574.6
+1996,,4858.3,,9783.9
+1997,,5292.7,,10277.8
+1998,,5607.9,,10560.2
+1999,,6165.3,,11305.6
+2000,,6638.0,,11827.5
+2001,,7205.2,,12593.6
+2002,,7515.8,,12775.5
+2003,,7931.5,,13125.4
+2004,,8527.8,,13618.9
+2005,,9191.4,,14385.3
+2006,,9973.9,,14987.6
+2007,,11166.1,,16221.7
+2008,,12791.8,,17714.5
+2009,,14174.5,,18958.6
+2010,,14267.4,,18277.1
+2011,,17143.3,,21211.2
+2012,,19141.9,,22436.8
+2013,,22011.6,,24313.8
+2014,,22452.7,,23513.4
+2015,,22248.5,,22248.5
+2016,,24112.7,,23246.8
+2017,,27286.7,,24977.5
+2018,,29822.5,,25404.3
+2019,,32672.9,,26061.5
+2020,,37702.9,,28469.2
+2021,,40234.1,,28740.5
+2022,,46219.2,,30483.3
+2023,,48622.6,,29332.9
+2024,,51180.6,,28948.3
+2025,,52495.0,,28177.7

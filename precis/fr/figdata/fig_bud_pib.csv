@@ -1,0 +1,47 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-11-06
+# séries (tunisia_data) : denominateurs-depenses-etat-pib
+# sources (citation) : @minfin-remunerations, @minfin-indicateurs-fp, @ins-cnat-2015, @wb-wdi
+# fiches : sources/jort-lois-de-finances-fonds-credits.md
+# méthode/hypothèses : LE PIB N'EST JAMAIS CHAÎNÉ : segment_pib change en 1986, 1992, 1997, 2002, 2005, 2010 et 2025 ; une part du PIB se trace par segments. 1984-1985 : PIB de la Banque mondiale, bases accolées non raccordées ; 1986-1991 : PIB du ministère des Finances, base 1983 PRÉSUMÉE ; 2002-2004 et 2025 : valeur propre au ministère, rattachée à aucune base ; 2010-2014 : base 2015 rétropolée par l'INS. Les dépenses de l'État sont des RÉALISATIONS : rapportée à elles, une prévision de loi de finances donne un ordre de grandeur, non une exécution. AUCUNE DÉPENSE DE L'ÉTAT AVANT 1986.
+# note : Les dépenses de l'État hors dette en % du PIB, par base des comptes nationaux, 1986-2025
+annee,reel_MDT,pib_MDT,base_pib,pct_pib
+1986,2395.0,7160.4,base 1983 présumée (aucune série de base connue avant 1992 dans l'entrepôt),33.4
+1987,2316.6,8035.3,base 1983 présumée (aucune série de base connue avant 1992 dans l'entrepôt),28.8
+1988,2603.3,8660.6,base 1983 présumée (aucune série de base connue avant 1992 dans l'entrepôt),30.1
+1989,2969.8,9589.8,base 1983 présumée (aucune série de base connue avant 1992 dans l'entrepôt),31.0
+1990,3181.8,10815.7,base 1983 présumée (aucune série de base connue avant 1992 dans l'entrepôt),29.4
+1991,3514.0,12028.8,base 1983 présumée (aucune série de base connue avant 1992 dans l'entrepôt),29.2
+1992,3656.4,13705.9,base 1983,26.7
+1993,4014.2,14662.9,base 1983,27.4
+1994,4276.6,15813.8,base 1983,27.0
+1995,4584.2,17051.8,base 1983,26.9
+1996,4858.3,19066.2,base 1983,25.5
+1997,5292.7,22943.9,base 1997,23.1
+1998,5607.9,24827.6,base 1997,22.6
+1999,6165.3,27215.9,base 1997,22.7
+2000,6638.0,29433.4,base 1997,22.6
+2001,7205.2,31746.4,base 1997,22.7
+2002,7515.8,32112.0,non rattachée (valeur propre au ministère),23.4
+2003,7931.5,34630.0,non rattachée (valeur propre au ministère),22.9
+2004,8527.8,37601.2,non rattachée (valeur propre au ministère),22.7
+2005,9191.4,41871.0,base 1997,22.0
+2006,9973.9,45756.2,base 1997,21.8
+2007,11166.1,49874.2,base 1997,22.4
+2008,12791.8,55296.6,base 1997,23.1
+2009,14174.5,58883.3,base 1997,24.1
+2010,14267.4,66139.7,base 2015,21.6
+2011,17143.3,67747.3,base 2015,25.3
+2012,19141.9,73895.4,base 2015,25.9
+2013,22011.6,79096.6,base 2015,27.8
+2014,22452.7,85345.7,base 2015,26.3
+2015,22248.5,89802.2,base 2015,24.8
+2016,24112.7,95286.9,base 2015,25.3
+2017,27286.7,102011.5,base 2015,26.7
+2018,29822.5,112985.5,base 2015,26.4
+2019,32672.9,122969.3,base 2015,26.6
+2020,37702.9,119502.1,base 2015,31.5
+2021,40234.1,131544.6,base 2015,30.6
+2022,46219.2,139444.5,base 2015,33.1
+2023,48622.6,149793.6,base 2015,32.5
+2024,51180.6,159852.7,base 2015,32.0
+2025,52495.0,172614.0,non rattachée (valeur propre au ministère),30.4
