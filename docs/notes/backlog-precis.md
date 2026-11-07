@@ -22,6 +22,21 @@ ci-dessous sont relatifs à `~/projets/PDFs-legislation-tunisie/PDFs/JORT/` ; le
 extraits des lois de finances sont dans le dossier voisin `PDFs/Lois_de_Finances/`.
 
 
+## Partage de la valeur ajoutée — rapatrié hors précis (7 novembre 2026)
+
+L'analyse du **partage de la valeur ajoutée travail/capital** (décomposition canonique salaire réel /
+productivité, comparaisons internationales, sensibilité au dénominateur d'emploi) **ne va pas dans le
+précis** : elle dépasse son périmètre éditorial (documenter la statistique et le droit, non faire de
+l'analyse économique). La section correspondante a été retirée de l'annexe « Les comptes de la
+nation » (commit `067e3f7b`). Le travail est désormais **sauvegardé dans le dépôt séparé
+`~/projets/notes-tunisie`** (dossier `partage-valeur-ajoutee/` : note autonome, mémo emploi-productivité,
+figures et scripts, rendu HTML/PDF, extraits de données sourcés ; son propre `backlog.md`). Restent
+dans le précis : l'**annexe descriptive** des comptes de la nation (secteurs, séquence, trois approches
+du PIB, concordance — sans le partage) et les **séries approche-revenus** versées à `tunisia-data`
+(branche `chantier/comptes-nationaux-approche-revenus`). Les notes de travail
+`docs/notes/partage-valeur-ajoutee-tunisie.md` et `emploi-productivite-sources-options.md` sont
+**retirées du précis** (déplacées dans notes-tunisie).
+
 ## Réglages du dépôt GitHub à faire par le propriétaire (3 novembre 2026)
 
 Ces trois réglages ne se font pas par un agent : ils demandent les droits de propriétaire du dépôt. Les deux premiers conditionnent l'auto-fusion des PR de traduction du robot (PR #619, fusionnée le 3 novembre 2026) ; le troisième conditionne le contrôle de l'infrastructure de sauvegarde (PR #659, fusionnée le 3 novembre 2026).
