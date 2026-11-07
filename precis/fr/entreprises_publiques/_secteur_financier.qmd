@@ -6,6 +6,20 @@ Ce chapitre présente, une par une, les entreprises publiques du secteur financi
 
 Les souscriptions de 2013 à 2015 au capital des banques publiques, dont 757 MD au plus pour la Société tunisienne de banque, sont exposées au chapitre « Restructurer » (@sec-ep-banques-publiques) ; les paiements de l'État au titre de la dette garantie, à la @sec-ep-garanties-cloture.
 
+```{python}
+#| label: fig-ep-stb-efficience
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import grandes_entreprises as ge
+ge.figure(
+    "stb_efficience",
+    caption=("Coefficient d'exploitation, ROA et ROE de la STB, exercices 2002-2025."),
+    note_lecture=("Ratios calculés des états financiers individuels de la banque, re-lus à l'image : coefficient d'exploitation = (frais de personnel + charges générales d'exploitation + dotations aux amortissements) / produit net bancaire ; ROA = résultat après modifications comptables / total des actifs ; ROE = même résultat / capitaux propres, tracé seulement quand ceux-ci sont positifs. Le coefficient d'exploitation concorde au dixième avec les fiches du ministère des Finances sur 2018-2023 ; le ROA et le ROE ne sont tracés que pour les exercices où le bilan a été lu. Provenance par valeur (fichier, page) dans la série."),
+)
+```
+
+
 **La [Société tunisienne de banque](#g-stb) (STB), au capital de laquelle l'État souscrit depuis 1957, est la plus grande des banques publiques par le total des actifs : 14 597 MD fin 2023, contre 10 520 MD fin 2018, selon le tableau des banques publiques du rapport du ministère des Finances. Son résultat net passe de 80,8 MD en 2018 à 157,3 MD en 2019, puis à 50,6 MD en 2023, et elle ne verse pas de dividende à l'État de 2020 à 2023.**
 
 Au 30 avril 2026, l'État détient 71,54 % du capital de la STB, de 776,875 MD depuis 2015, et la CNSS 5,69 % ; l'historique du capital est au chapitre des sociétés cotées (@sec-ep-cotees-capital), les filiales consolidées et l'opinion des commissaires aux comptes plus bas (@sec-ep-ge-stb-filiales, @sec-ep-ge-stb-cac) [@bvmt-stb].
@@ -190,6 +204,20 @@ ct.tableau_opinions(
 ## La Banque de l'habitat {#sec-ep-ge-bh}
 
 Les souscriptions de 2013 à 2015 au capital des banques publiques, dont 110 MD au plus pour la Banque de l'habitat, sont exposées au chapitre « Restructurer » (@sec-ep-banques-publiques) ; la part de l'État dans les bénéfices des entreprises publiques, au chapitre « Les dividendes et les versements au budget » (@sec-ep-dividendes-part).
+
+```{python}
+#| label: fig-ep-bh-efficience
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import grandes_entreprises as ge
+ge.figure(
+    "bh_efficience",
+    caption=("Coefficient d'exploitation, ROA et ROE de la Banque de l'habitat, exercices 2003-2024."),
+    note_lecture=("Ratios calculés des états financiers individuels de la banque, re-lus à l'image : coefficient d'exploitation = (frais de personnel + charges générales d'exploitation + dotations aux amortissements) / produit net bancaire ; ROA = résultat après modifications comptables / total des actifs ; ROE = même résultat / capitaux propres, tracé seulement quand ceux-ci sont positifs. Le coefficient d'exploitation concorde au dixième avec les fiches du ministère des Finances sur 2018-2023 ; le ROA et le ROE ne sont tracés que pour les exercices où le bilan a été lu. Provenance par valeur (fichier, page) dans la série."),
+)
+```
+
 
 **La [Banque de l'habitat](#g-bh) (BH) est issue en 1989 de la transformation en banque de la Caisse nationale d'épargne-logement, établissement public créé en 1973 pour gérer le régime d'épargne-logement. Selon le tableau des banques publiques du rapport du ministère des Finances, son total des actifs passe de 11 912 MD fin 2018 à 13 515 MD fin 2023, son résultat net reste entre 72,9 et 142,0 MD par an, et la part de l'État dans ses dividendes passe de 9,5 MD sur l'exercice 2020 à 17,47 MD sur l'exercice 2023.**
 
@@ -379,6 +407,20 @@ ct.tableau_opinions(
 ## La Banque nationale agricole {#sec-ep-ge-bna}
 
 La recapitalisation des banques publiques de 2013 à 2019, dont la souscription de l'État au capital de la BNA en 2019, est exposée au chapitre « Restructurer » (@sec-ep-banques-publiques).
+
+```{python}
+#| label: fig-ep-bna-efficience
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import grandes_entreprises as ge
+ge.figure(
+    "bna_efficience",
+    caption=("Coefficient d'exploitation, ROA et ROE de la Banque nationale agricole, exercices 2000-2024."),
+    note_lecture=("Ratios calculés des états financiers individuels de la banque, re-lus à l'image : coefficient d'exploitation = (frais de personnel + charges générales d'exploitation + dotations aux amortissements) / produit net bancaire ; ROA = résultat après modifications comptables / total des actifs ; ROE = même résultat / capitaux propres, tracé seulement quand ceux-ci sont positifs. Le coefficient d'exploitation concorde au dixième avec les fiches du ministère des Finances sur 2018-2023 ; le ROA et le ROE ne sont tracés que pour les exercices où le bilan a été lu. Provenance par valeur (fichier, page) dans la série."),
+)
+```
+
 
 **La [Banque nationale agricole](#g-bna) (BNA), société anonyme bancaire créée en 1959 sous la tutelle du ministère des Finances, est la plus grande des trois banques publiques présentées ici : de fin 2018 à fin 2023, son total des actifs passe de 11 663 à 20 469 MD et son résultat net reste compris entre 102,3 et 190 MD ; la part de l'État dans les dividendes qu'elle distribue passe de 11,2 MD en 2020 à 20,3 MD en 2023.**
 
@@ -596,6 +638,20 @@ ct.tableau_engagements_bna(
 ## La Banque de Tunisie et des Emirats {#sec-ep-ge-bte}
 
 **La Banque de Tunisie et des Emirats (BTE) est une société anonyme constituée le 10 août 1982, qui exerce à titre de profession habituelle les opérations bancaires ; au 30 avril 2026, l'État détient 1 750 000 actions, soit 32,19 % de son capital de 108,744 MD, l'Office national des postes 8,62 % et Abu Dhabi Investment Authority 40,8 %, les titulaires des actions à dividende prioritaire 18,39 %.** [@bvmt-bte-adp]
+
+```{python}
+#| label: fig-ep-bte-efficience
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import grandes_entreprises as ge
+ge.figure(
+    "bte_efficience",
+    caption=("Coefficient d'exploitation, ROA et ROE de la Banque de Tunisie et des Émirats, exercices 2004-2024."),
+    note_lecture=("Ratios calculés des états financiers individuels de la banque, re-lus à l'image : coefficient d'exploitation = (frais de personnel + charges générales d'exploitation + dotations aux amortissements) / produit net bancaire ; ROA = résultat après modifications comptables / total des actifs ; ROE = même résultat / capitaux propres, tracé seulement quand ceux-ci sont positifs. Le coefficient d'exploitation concorde au dixième avec les fiches du ministère des Finances sur 2018-2023 ; le ROA et le ROE ne sont tracés que pour les exercices où le bilan a été lu. Provenance par valeur (fichier, page) dans la série."),
+)
+```
+
 
 Les actions à dividende prioritaire sont cotées depuis août 1995 ; la page de la Bourse porte le capital à 90 MD en 2023 et à 108,744 MD en 2024 et en 2025 [@bvmt-bte-adp]. L'État est actionnaire direct, sans être majoritaire. Cette section lit les rapports des commissaires aux comptes joints aux états financiers de la Bourse de Tunis et le périmètre des comptes consolidés.
 

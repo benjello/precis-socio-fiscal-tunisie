@@ -6,6 +6,19 @@ Ce chapitre présente Tunisie Trade Net (TTN), seule entreprise publique qui ne 
 
 Les droits et les formalités de douane à l'importation et à l'exportation sont exposés au volume « La fiscalité », chapitre [« Les droits de douane »](../fiscalite/_droits_douane.html#sec-dd).
 
+```{python}
+#| label: fig-ep-ttn-va
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import grandes_entreprises as ge
+ge.figure(
+    "ttn_va",
+    caption=("Valeur ajoutée brute de Tunisie Trade Net et valeur ajoutée par agent, exercices 2017-2025."),
+    note_lecture=("VA calculée et corroborée par l'identité indépendante résultat plus personnel plus dotations (niveau B) ; service à faible consommation intermédiaire, d'où une valeur ajoutée voisine des produits."),
+)
+```
+
 **[Tunisie Trade Net](#g-ttn) (TTN), société anonyme au capital de 2 MD détenu à 85,25 % par des actionnaires publics autres que l'État et placée sous la tutelle du ministère des Finances, a une dette et une subvention d'exploitation nulles de 2018 à 2020 dans la fiche du ministère des Finances, qui n'en porte aucune ensuite ; dans la dernière édition qui donne chaque exercice, ses produits d'exploitation passent de 6,1 MD en 2018 à 10,4 MD en 2023, son résultat net de 2,1 à 7,1 MD et son effectif de 69 à 61 agents.**
 
 ```{python}

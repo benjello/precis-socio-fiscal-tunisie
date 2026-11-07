@@ -56,3 +56,50 @@ STEG concentre l'essentiel de la dette bancaire du secteur ; STIR et GCT sont su
   (banques, Tunisair…) que les rapports MdF ne couvrent pas.
 - **À faire (léger)** : brancher nos séries longues (masse sal./PNB, résultat/PNB depuis 2000) en
   amont des ratios bancaires du précis pour une lecture 2000-2023 continue.
+
+## Volet bancaire longue durée (2000-2024) — extrait par nous des EF (6 nov. 2026)
+4 agents (un par banque) ont extrait des états financiers individuels (BVMT, au corpus) :
+total_actifs, capitaux_propres, charges_générales_exploitation (CH7), dotations_amortissements (CH8)
+→ `data/processed/entreprises-publiques/{bna,stb,bh,bte}_bancaire.csv` (sourcés, scripts reproductibles).
+Joints à PNB + frais de personnel + résultat net déjà en base.
+
+**Validation** : coefficient d'exploitation = (frais de personnel + CH7 + CH8) / PNB **= précis au
+centième** sur 2018-2023 (BNA 48,0→38,5 ; STB 46,4→48,9 ; BH 41,5→39,5). Les postes lus sont les bons.
+
+**Coefficient d'exploitation (%)** — nouvelle série 2000-2024 (le précis commençait en 2018) :
+- BNA : 62 (2000) → 73 (2004) → **39 (2023)** — forte amélioration continue.
+- BH : 65 (2003) → **38 (2024)** — la plus efficiente.
+- STB : 71 (2002, crise) → 46 (2007-09) → **re-dégradation 49-53 (2023-24)**.
+- BTE : 33 (2004) → **99-103 (2022-24)** — coûts > PNB (petite banque, exploitation en perte ;
+  résultat net positif via produits de placement, à expliciter).
+
+**ROA (%)** — rentabilité des actifs, robuste (préférée au ROE, distordu par les fonds propres) :
+- **Creux 2013** (recapitalisation banques publiques) vif : **STB −1,6 % (−115 MD), BH −3,0 % (−159 MD)** ;
+  BNA l'a traversé (+0,2 %). ROE 2013 : STB −101 %, BH −70 % (fonds propres impairs).
+- **BNA 2016 : ROA 8,2 %** = aberration (élément exceptionnel, résultat/PNB 205 %) → à vérifier/flaguer.
+- BTE : négatif 2014, puis fort (2,3-2,5 % en 2021-2023).
+
+Données brutes et ratios : `data/processed/entreprises-publiques/*_bancaire.csv` + scripts.
+Lacunes : BNA 2001/2002 (EF absents du corpus).
+
+## Résultats bancaires vérifiés (re-lecture image, 7 nov. 2026)
+
+Série `entreprises-publiques-ratios-bancaires` reconstruite sur les états financiers **re-lus à
+l'image** (après qu'une 1re construction sur couche générée se soit révélée fausse : résultat net mal
+lu, frais de personnel reclassés). Chaînage N/N-1 vérifié ; **coefficient d'exploitation concordant au
+dixième avec les fiches du ministère des Finances (2018-2023), STB 2020 résolu**. ROA/ROE sur le
+résultat **après modifications comptables** (base MdF) ; ROE laissé vide à capitaux propres ≤ 0.
+
+| Banque | Coeff. expl. (%) | ROA (%) | ROE (%) | Lecture |
+|---|---|---|---|---|
+| **BNA** | 62 (2000) → 40 (2024) | 0,8-1,5 stable | 7-15 | la plus saine, jamais en perte |
+| **STB** | 72 (2002) → 39 (2019) → 50 (2025) | −1,6 (2012) → 1,4 (2019) → 0,3 (2023) | −31 (2012) → 15 (2019) → 3,5 (2023) | redressée puis re-faiblit |
+| **BH** | 65 (2003) → 38 (2024) | −4,1 (2013) → 1,2 (2019) → 0,5 (2024) | −97 (2013) → 14 (2019) | choc 2013 violent puis redressement |
+| **BTE** | 39 (2003) → 102 (2024) | 1,7 → −2,1 (2024) | 5,6 → −82 (2024) | en détresse : frais > PNB, fonds propres impairés |
+
+**Constats.** (1) La crise post-2011 est nette : STB ROE −31 % (2012), BH ROA −4,1 % / ROE −97 %
+(2013). (2) Redressement 2014-2019 (coefficient en baisse, ROA/ROE au vert, STB et BH à ~15 % de ROE
+en 2019). (3) Tassement 2020-2024 (Covid + provisions). (4) Les trois grandes convergent vers un
+coefficient d'exploitation de 38-50 % et un ROA modeste (~0,5-1 %). (5) **BTE** fait exception, en perte
+récente, fonds propres impairés — d'où le ROE à −82 % (illustration du biais : on lit le ROA). Tout
+sur **2000-2024**, là où le rapport MdF ne couvre que 2018-2023.

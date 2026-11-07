@@ -9,6 +9,9 @@ wheels/
 # Virtual environments
 .venv
 
+# Artefacts pi (harnais)
+.pi/ghost-autocomplete/
+
 # Generated HTML / Quarto output
 _site/
 _book/

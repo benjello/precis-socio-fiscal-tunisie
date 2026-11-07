@@ -8,6 +8,19 @@ Ce chapitre présente, une par une, les entreprises publiques de l'industrie : l
 
 La part de l'État dans les bénéfices des entreprises publiques et leurs versements au budget sont exposés au chapitre « Les dividendes et les versements au budget » (@sec-ep-dividendes-part, @sec-ep-versements), avec les bénéfices de 2008 de la CPG et du Groupe chimique tunisien que le Trésor garde en 2009 hors du budget.
 
+```{python}
+#| label: fig-ep-cpg-va
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import grandes_entreprises as ge
+ge.figure(
+    "cpg_va",
+    caption=("Valeur ajoutée de la CPG et valeur ajoutée par agent, exercices 2004-2015."),
+    note_lecture=("VA telle que la compagnie la pose dans sa synthèse annuelle (niveau A), non recalculée depuis un état de résultat détaillé ; le pic de 2008 est celui de la flambée des cours du phosphate."),
+)
+```
+
 **La [Compagnie des phosphates de Gafsa](#g-cpg) (CPG), qui extrait le phosphate, ne reçoit rien du budget de 2018 à 2020 et n'a pas de subvention d'exploitation ; dans la dernière édition qui donne chaque exercice, son résultat net va d'une perte de 293,2 MD en 2020 à un bénéfice de 639,4 MD en 2019, et elle verse à l'État 50 MD au titre de sa part dans les bénéfices des exercices 2021 à 2023.**
 
 ```{python}
@@ -92,6 +105,19 @@ La source est le rapport sur les entreprises publiques que le ministère des Fin
 ## Le Groupe chimique tunisien {#sec-ep-ge-gct}
 
 La part de l'État dans les bénéfices des entreprises publiques et leurs versements au budget sont exposés au chapitre « Les dividendes et les versements au budget » (@sec-ep-dividendes-part, @sec-ep-versements).
+
+```{python}
+#| label: fig-ep-gct-va
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import grandes_entreprises as ge
+ge.figure(
+    "gct_va",
+    caption=("Valeur ajoutée du Groupe chimique tunisien et valeur ajoutée par agent, exercices 2010-2014."),
+    note_lecture=("VA telle que le groupe la pose dans sa synthèse annuelle (niveau A)."),
+)
+```
 
 **Le [Groupe chimique tunisien](#g-gct) (GCT), qui produit des engrais phosphatés, ne reçoit rien du budget de 2018 à 2020 et n'a pas de subvention d'exploitation ; dans la dernière édition qui donne chaque exercice, ses fonds propres sont négatifs de fin 2020 à fin 2022, et son résultat net passe d'une perte de 593,3 MD en 2020 à un bénéfice de 148,9 MD en 2021.**
 
@@ -181,6 +207,19 @@ La source est le rapport sur les entreprises publiques que le ministère des Fin
 ## El Fouladh {#sec-ep-ge-fouladh}
 
 Les paiements de l'État au titre de la dette garantie des entreprises publiques sont exposés à la @sec-ep-garanties-cloture ; les dettes et créances croisées de l'ensemble des entreprises, à la @sec-ep-croisees.
+
+```{python}
+#| label: fig-ep-fouladh-va
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import grandes_entreprises as ge
+ge.figure(
+    "fouladh_va",
+    caption=("Valeur ajoutée brute d'El Fouladh et valeur ajoutée par agent, exercices 2012-2024."),
+    note_lecture=("VA calculée et corroborée par l'identité indépendante résultat plus personnel plus dotations (niveau B) ; l'exercice 2012 porte en outre une subvention d'équilibre d'environ 60 MD, hors valeur ajoutée aux prix de base."),
+)
+```
 
 **La [Société tunisienne de sidérurgie El Fouladh](#g-el-fouladh), au capital de laquelle l'État souscrit depuis 1962 et qui produit du fer laminé, des fils tréfilés et des structures métalliques, n'a pas de subvention d'exploitation ; le budget lui verse 10,0 MD en 2019 et rien les autres années de 2017 à 2021. Dans la dernière édition du rapport du ministère des Finances qui donne chaque exercice, elle est en perte chaque année de 2018 à 2023, et ses fonds propres, négatifs, passent de −235,2 MD fin 2018 à −395,8 MD fin 2023, chiffre probable.**
 
@@ -349,6 +388,19 @@ ct.tableau_opinions(
 ## Les Ciments de Bizerte {#sec-ep-ge-cimbiz}
 
 La vente, de 1998 à 2000, de quatre cimenteries publiques (Jebel Ouest, Enfidha, Gabès, Ciments artificiels tunisiens) est exposée au chapitre « Céder » (@sec-ep-cessions-operations) ; l'exception aux règles de marchés de la loi de 1989 appliquée à la société depuis 2021, au chapitre sur le statut (@sec-ep-2006).
+
+```{python}
+#| label: fig-ep-ciments-va
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import grandes_entreprises as ge
+ge.figure(
+    "ciments_va",
+    caption=("Valeur ajoutée brute des Ciments de Bizerte et valeur ajoutée par agent, exercices 2009-2024."),
+    note_lecture=("VA lue au schéma des soldes intermédiaires de gestion (niveau A) ; le recul de 2022 à 2024 suit la contraction de la demande de ciment."),
+)
+```
 
 **Les [Ciments de Bizerte](#g-ciments-bizerte), société au capital de laquelle la loi autorise l'État à souscrire en 1975, produisent du clinker et du ciment ; le budget leur verse au plus 0,1 MD par an de 2018 à 2020, et 0,0 MD imprimé pour 2021 et 2022. Dans la dernière édition du rapport du ministère des Finances qui donne chaque exercice, leur résultat net est négatif chaque année de 2018 à 2023, de −0,4 MD en 2020 à −34,4 MD en 2023, et leur effectif baisse de 499 à 364 agents.**
 

@@ -1,0 +1,31 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-11-07
+# séries (tunisia_data) : entreprises-publiques-ratios-bancaires
+# sources (citation) : @bvmt-etats-financiers
+# fiches : sources/entreprises-publiques.md
+# méthode/hypothèses : COMPTES DE L'ENTREPRISE, PAS UNE SOURCE BUDGÉTAIRE. Toutes les grandeurs brutes sont LUES À L'IMAGE des états financiers (pdftoppm puis lecture), après qu'une construction antérieure sur une couche générée se soit révélée fausse (résultat net mal lu, frais de personnel reclassés). CHAÎNAGE N/N-1 vérifié (valeur d'une année = colonne comparative de l'EF suivant) ; les retraitements entre éditions sont signalés dans les remarques des fichiers raw, non corrigés. CONTRÔLE À L'IDENTIQUE : le coefficient d'exploitation calculé concorde au dixième avec le `bq_coefficient_exploitation` des fiches du ministère des Finances sur 2018-2023 (toutes les banques, y compris STB 2020 désormais résolu). RÉSULTAT POUR ROA/ROE = résultat APRÈS modifications comptables (ce que retient le ministère ; = résultat net quand il n'y a pas de ligne de modifications). ROE EN CASE VIDE QUAND LES CAPITAUX PROPRES SONT ≤ 0 (le ratio explose à fonds propres impairés ; on lit alors le ROA). BILAN (total actifs, capitaux propres) non lu toutes les années → ROA/ROE sur 2000 et 2008-2024 selon la banque ; coefficient d'exploitation sur toute la période. BH antérieur à 2016 : EF en dinars (convertis en MD). Quelques exercices (BH 2004/2006/2007/2018, BTE 2005/2007/2018) absents en individuel, repris de la colonne comparative de l'EF suivant.
+# note : Coefficient d'exploitation, ROA et ROE de la STB, exercices 2002-2025.
+Exercice,Coefficient d'exploitation (%),ROA (%),ROE (%)
+2002,71.5,,
+2003,76.5,,
+2004,76.0,,
+2005,65.1,,
+2006,58.5,,
+2007,46.5,,
+2008,46.5,,
+2009,46.1,,
+2010,48.6,,
+2011,54.7,,
+2012,55.9,-1.65,-30.7
+2013,51.3,,
+2014,53.9,,
+2015,51.2,,
+2016,50.1,,
+2017,52.8,,
+2018,46.4,0.77,9.3
+2019,39.0,1.39,15.3
+2020,39.6,0.59,6.6
+2021,43.4,0.85,9.5
+2022,44.6,0.56,6.3
+2023,48.9,0.29,3.5
+2024,52.7,,
+2025,50.4,,

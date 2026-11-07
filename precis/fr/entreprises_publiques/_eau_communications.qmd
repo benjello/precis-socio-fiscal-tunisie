@@ -7,6 +7,19 @@ Ce chapitre présente, une par une, les entreprises publiques de l'eau et des co
 **La [Société nationale d'exploitation et de distribution des eaux](#g-sonede) (SONEDE), établissement public créé en 1968 qui a le monopole de la fourniture d'eau potable, reçoit du budget 156,0 MD en 2018 et 369,1 MD en 2022, chiffre provisoire ; sa subvention d'exploitation ne dépasse pas 5 MD par an, et elle est en perte à chacun des exercices 2018 à 2023 dans chaque édition du rapport du ministère des Finances.**
 
 ```{python}
+#| label: fig-ep-sonede-va
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import grandes_entreprises as ge
+ge.figure(
+    "sonede_va",
+    caption=("Valeur ajoutée brute de la SONEDE et valeur ajoutée par agent, exercices 2010-2016."),
+    note_lecture=("VA calculée (niveau C) ; conformément au schéma des soldes intermédiaires de gestion, les « autres produits d'exploitation » — quote-part de subventions d'investissement, et en 2015 un transfert exceptionnel pour apurer la dette de la SONEDE à la CNRPS — sont exclus de la valeur ajoutée."),
+)
+```
+
+```{python}
 #| label: fig-ep-sonede-budget
 #| echo: false
 #| output: asis
@@ -233,6 +246,19 @@ La source est le rapport sur les entreprises publiques que le ministère des Fin
 
 La transformation de l'office en société anonyme et le régime de tutelle propre à la société depuis 2006 sont exposés au chapitre « Ce qu'est une entreprise publique, et la tutelle de l'État » (@tbl-ep-registre, @tbl-ep-22ter) ; l'ouverture de son capital en 2006 et ce qu'elle rapporte au budget, au chapitre « Céder » (@sec-ep-cessions-operations, @sec-ep-lp-cessions) ; la part de l'État dans les bénéfices des entreprises, à la @sec-ep-dividendes-part.
 
+```{python}
+#| label: fig-ep-tt-va
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import grandes_entreprises as ge
+ge.figure(
+    "tt_va",
+    caption=("Valeur ajoutée brute de Tunisie Télécom et valeur ajoutée par agent, exercices 2007-2009."),
+    note_lecture=("VA lue dans les soldes intermédiaires de gestion du document de référence déposé au marché financier (niveau A) ; série courte, antérieure à la montée d'un partenaire privé au capital."),
+)
+```
+
 **[Tunisie Télécom](#g-tunisie-telecom), l'opérateur public des réseaux de télécommunications, créé en 1995 comme office et devenu société anonyme en 2004, ne reçoit rien du budget de 2018 à 2022 et n'a pas de subvention d'exploitation ; dans la dernière édition qui donne chaque exercice, son résultat net va d'une perte de 50,3 MD en 2020 à un bénéfice de 63,1 MD en 2023, et sa contribution aux ressources propres de l'État, telle que le rapport la classe, dépasse 360 MD chaque année de 2018 à 2022.**
 
 ```{python}
@@ -377,6 +403,19 @@ ct.tableau_opinions(
 ## La Poste {#sec-ep-ge-poste}
 
 Ce que la Poste verse à l'État au titre de sa part dans les bénéfices est exposé au chapitre « Les dividendes et les versements au budget » (@sec-ep-dividendes-part).
+
+```{python}
+#| label: fig-ep-poste-va
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import grandes_entreprises as ge
+ge.figure(
+    "poste_va",
+    caption=("Valeur ajoutée brute de la Poste et valeur ajoutée par agent, exercices 2015-2023."),
+    note_lecture=("VA calculée et corroborée par l'identité indépendante résultat plus personnel plus dotations (niveau B) ; l'activité financière (comptes courants postaux, mandats) est tenue hors de ce calcul."),
+)
+```
 
 **L'[Office national des postes](#g-onp), « La Poste tunisienne », établissement public créé en 1998 qui exploite le service postal, l'épargne et les comptes courants postaux, reçoit du budget 20 MD en 2018, 21 MD en 2020 et 11 MD en 2021, et rien les autres années de 2017 à 2022 ; il n'a pas de subvention d'exploitation. Dans la dernière édition du rapport du ministère des Finances qui donne chaque exercice, il est en perte en 2018 et 2019, puis en bénéfice de 2020 à 2023, avec 106,9 MD en 2022 et 171,0 MD en 2023, chiffre provisoire.**
 

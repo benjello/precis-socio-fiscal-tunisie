@@ -1,0 +1,834 @@
+ep,annee,grandeur,valeur,unite,source_fichier,page,methode
+bh,2003,capitaux_propres,191.896,MD,2003_individuel.pdf,1.0,lu (image)
+bh,2003,charges_generales_exploitation,15.729,MD,2003_individuel.pdf,2.0,lu (image)
+bh,2003,coefficient_exploitation,64.6,%,,,calcul
+bh,2003,dotations_amortissements,3.118,MD,2003_individuel.pdf,2.0,lu (image)
+bh,2003,frais_personnel,36.957,MD,2003_individuel.pdf,2.0,lu (image)
+bh,2003,produit_net_bancaire,86.417,MD,2003_individuel.pdf,2.0,lu (image)
+bh,2003,resultat_apres_modifications,16.441,MD,2003_individuel.pdf,2.0,lu (image)
+bh,2003,resultat_net,16.441,MD,2003_individuel.pdf,2.0,lu (image)
+bh,2003,roa,0.57,%,,,calcul
+bh,2003,roe,8.6,%,,,calcul
+bh,2003,total_actifs,2862.403,MD,2003_individuel.pdf,1.0,lu (image)
+bh,2004,capitaux_propres,203.443,MD,2005_individuel.pdf,8.0,lu (image)
+bh,2004,charges_generales_exploitation,16.482,MD,2005_individuel.pdf,10.0,lu (image)
+bh,2004,coefficient_exploitation,57.0,%,,,calcul
+bh,2004,dotations_amortissements,2.833,MD,2005_individuel.pdf,10.0,lu (image)
+bh,2004,frais_personnel,40.466,MD,2005_individuel.pdf,10.0,lu (image)
+bh,2004,produit_net_bancaire,104.892,MD,2005_individuel.pdf,10.0,lu (image)
+bh,2004,resultat_apres_modifications,18.53,MD,2005_individuel.pdf,10.0,lu (image)
+bh,2004,resultat_net,18.53,MD,2005_individuel.pdf,10.0,lu (image)
+bh,2004,roa,0.61,%,,,calcul
+bh,2004,roe,9.1,%,,,calcul
+bh,2004,total_actifs,3045.814,MD,2005_individuel.pdf,8.0,lu (image)
+bh,2005,capitaux_propres,226.815,MD,2005_individuel.pdf,8.0,lu (image)
+bh,2005,charges_generales_exploitation,16.62,MD,2005_individuel.pdf,10.0,lu (image)
+bh,2005,coefficient_exploitation,51.3,%,,,calcul
+bh,2005,dotations_amortissements,2.789,MD,2005_individuel.pdf,10.0,lu (image)
+bh,2005,frais_personnel,43.857,MD,2005_individuel.pdf,10.0,lu (image)
+bh,2005,produit_net_bancaire,123.27,MD,2005_individuel.pdf,10.0,lu (image)
+bh,2005,resultat_apres_modifications,21.711,MD,2005_individuel.pdf,10.0,lu (image)
+bh,2005,resultat_net,20.631,MD,2005_individuel.pdf,10.0,lu (image)
+bh,2005,roa,0.66,%,,,calcul
+bh,2005,roe,9.6,%,,,calcul
+bh,2005,total_actifs,3287.289,MD,2005_individuel.pdf,8.0,lu (image)
+bh,2007,capitaux_propres,322.671,MD,2008_individuel.pdf,1.0,lu (image)
+bh,2007,charges_generales_exploitation,17.013,MD,2008_individuel.pdf,3.0,lu (image)
+bh,2007,coefficient_exploitation,40.8,%,,,calcul
+bh,2007,dotations_amortissements,2.467,MD,2008_individuel.pdf,3.0,lu (image)
+bh,2007,frais_personnel,49.511,MD,2008_individuel.pdf,3.0,lu (image)
+bh,2007,produit_net_bancaire,168.932,MD,2008_individuel.pdf,3.0,lu (image)
+bh,2007,resultat_apres_modifications,51.129,MD,2008_individuel.pdf,3.0,lu (image)
+bh,2007,resultat_net,51.129,MD,2008_individuel.pdf,3.0,lu (image)
+bh,2007,roa,1.3,%,,,calcul
+bh,2007,roe,15.8,%,,,calcul
+bh,2007,total_actifs,3925.862,MD,2008_individuel.pdf,1.0,lu (image)
+bh,2008,capitaux_propres,367.391,MD,2008_individuel.pdf,1.0,lu (image)
+bh,2008,charges_generales_exploitation,17.785,MD,2008_individuel.pdf,3.0,lu (image)
+bh,2008,coefficient_exploitation,38.9,%,,,calcul
+bh,2008,dotations_amortissements,2.567,MD,2008_individuel.pdf,3.0,lu (image)
+bh,2008,frais_personnel,52.541,MD,2008_individuel.pdf,3.0,lu (image)
+bh,2008,produit_net_bancaire,187.187,MD,2008_individuel.pdf,3.0,lu (image)
+bh,2008,resultat_apres_modifications,53.99,MD,2008_individuel.pdf,3.0,lu (image)
+bh,2008,resultat_net,53.99,MD,2008_individuel.pdf,3.0,lu (image)
+bh,2008,roa,1.24,%,,,calcul
+bh,2008,roe,14.7,%,,,calcul
+bh,2008,total_actifs,4356.137,MD,2008_individuel.pdf,1.0,lu (image)
+bh,2009,capitaux_propres,411.249,MD,2009_individuel.pdf,15.0,lu (image)
+bh,2009,charges_generales_exploitation,19.189,MD,2009_individuel.pdf,17.0,lu (image)
+bh,2009,coefficient_exploitation,43.6,%,,,calcul
+bh,2009,dotations_amortissements,2.933,MD,2009_individuel.pdf,17.0,lu (image)
+bh,2009,frais_personnel,59.192,MD,2009_individuel.pdf,17.0,lu (image)
+bh,2009,produit_net_bancaire,186.507,MD,2009_individuel.pdf,17.0,lu (image)
+bh,2009,resultat_apres_modifications,54.034,MD,2009_individuel.pdf,17.0,lu (image)
+bh,2009,resultat_net,53.259,MD,2009_individuel.pdf,17.0,lu (image)
+bh,2009,roa,1.04,%,,,calcul
+bh,2009,roe,13.1,%,,,calcul
+bh,2009,total_actifs,5176.934,MD,2009_individuel.pdf,15.0,lu (image)
+bh,2010,capitaux_propres,430.388,MD,2010_individuel.pdf,21.0,lu (image)
+bh,2010,charges_generales_exploitation,20.859,MD,2010_individuel.pdf,23.0,lu (image)
+bh,2010,coefficient_exploitation,44.9,%,,,calcul
+bh,2010,dotations_amortissements,4.333,MD,2010_individuel.pdf,23.0,lu (image)
+bh,2010,frais_personnel,62.113,MD,2010_individuel.pdf,23.0,lu (image)
+bh,2010,produit_net_bancaire,194.628,MD,2010_individuel.pdf,23.0,lu (image)
+bh,2010,resultat_apres_modifications,30.221,MD,2010_individuel.pdf,23.0,lu (image)
+bh,2010,resultat_net,32.592,MD,2010_individuel.pdf,23.0,lu (image)
+bh,2010,roa,0.57,%,,,calcul
+bh,2010,roe,7.0,%,,,calcul
+bh,2010,total_actifs,5295.689,MD,2010_individuel.pdf,21.0,lu (image)
+bh,2011,capitaux_propres,441.334,MD,2011_individuel.pdf,23.0,lu (image)
+bh,2011,charges_generales_exploitation,17.942,MD,2011_individuel.pdf,25.0,lu (image)
+bh,2011,coefficient_exploitation,52.2,%,,,calcul
+bh,2011,dotations_amortissements,7.453,MD,2011_individuel.pdf,25.0,lu (image)
+bh,2011,frais_personnel,72.846,MD,2011_individuel.pdf,25.0,lu (image)
+bh,2011,produit_net_bancaire,188.239,MD,2011_individuel.pdf,25.0,lu (image)
+bh,2011,resultat_apres_modifications,18.862,MD,2011_individuel.pdf,25.0,lu (image)
+bh,2011,resultat_net,14.232,MD,2011_individuel.pdf,25.0,lu (image)
+bh,2011,roa,0.34,%,,,calcul
+bh,2011,roe,4.3,%,,,calcul
+bh,2011,total_actifs,5470.535,MD,2011_individuel.pdf,23.0,lu (image)
+bh,2012,capitaux_propres,453.314,MD,2012_individuel.pdf,21.0,lu (image)
+bh,2012,charges_generales_exploitation,18.766,MD,2012_individuel.pdf,23.0,lu (image)
+bh,2012,coefficient_exploitation,52.7,%,,,calcul
+bh,2012,dotations_amortissements,8.413,MD,2012_individuel.pdf,23.0,lu (image)
+bh,2012,frais_personnel,77.964,MD,2012_individuel.pdf,23.0,lu (image)
+bh,2012,produit_net_bancaire,199.636,MD,2012_individuel.pdf,23.0,lu (image)
+bh,2012,resultat_apres_modifications,18.606,MD,2012_individuel.pdf,23.0,lu (image)
+bh,2012,resultat_net,17.632,MD,2012_individuel.pdf,23.0,lu (image)
+bh,2012,roa,0.33,%,,,calcul
+bh,2012,roe,4.1,%,,,calcul
+bh,2012,total_actifs,5712.187,MD,2012_individuel.pdf,21.0,lu (image)
+bh,2013,capitaux_propres,226.544,MD,2013_individuel.pdf,1.0,lu (image)
+bh,2013,charges_generales_exploitation,20.159,MD,2013_individuel.pdf,3.0,lu (image)
+bh,2013,coefficient_exploitation,52.7,%,,,calcul
+bh,2013,dotations_amortissements,8.031,MD,2013_individuel.pdf,3.0,lu (image)
+bh,2013,frais_personnel,80.95,MD,2013_individuel.pdf,3.0,lu (image)
+bh,2013,produit_net_bancaire,207.244,MD,2013_individuel.pdf,3.0,lu (image)
+bh,2013,resultat_apres_modifications,-220.139,MD,2013_individuel.pdf,3.0,lu (image)
+bh,2013,resultat_net,-159.366,MD,2013_individuel.pdf,3.0,lu (image)
+bh,2013,roa,-4.08,%,,,calcul
+bh,2013,roe,-97.2,%,,,calcul
+bh,2013,total_actifs,5399.069,MD,2013_individuel.pdf,1.0,lu (image)
+bh,2014,capitaux_propres,277.411,MD,2014_individuel.pdf,22.0,lu (image)
+bh,2014,charges_generales_exploitation,23.376,MD,2014_individuel.pdf,24.0,lu (image)
+bh,2014,coefficient_exploitation,49.1,%,,,calcul
+bh,2014,dotations_amortissements,8.843,MD,2014_individuel.pdf,24.0,lu (image)
+bh,2014,frais_personnel,88.632,MD,2014_individuel.pdf,24.0,lu (image)
+bh,2014,produit_net_bancaire,245.921,MD,2014_individuel.pdf,24.0,lu (image)
+bh,2014,resultat_apres_modifications,50.298,MD,2014_individuel.pdf,24.0,lu (image)
+bh,2014,resultat_net,50.298,MD,2014_individuel.pdf,24.0,lu (image)
+bh,2014,roa,0.8,%,,,calcul
+bh,2014,roe,18.1,%,,,calcul
+bh,2014,total_actifs,6251.126,MD,2014_individuel.pdf,22.0,lu (image)
+bh,2015,capitaux_propres,458.542,MD,2015_individuel.pdf,23.0,lu (image)
+bh,2015,charges_generales_exploitation,25.494,MD,2015_individuel.pdf,25.0,lu (image)
+bh,2015,coefficient_exploitation,46.9,%,,,calcul
+bh,2015,dotations_amortissements,8.68,MD,2015_individuel.pdf,25.0,lu (image)
+bh,2015,frais_personnel,90.754,MD,2015_individuel.pdf,25.0,lu (image)
+bh,2015,produit_net_bancaire,266.462,MD,2015_individuel.pdf,25.0,lu (image)
+bh,2015,resultat_apres_modifications,70.584,MD,2015_individuel.pdf,25.0,lu (image)
+bh,2015,resultat_net,70.584,MD,2015_individuel.pdf,25.0,lu (image)
+bh,2015,roa,1.01,%,,,calcul
+bh,2015,roe,15.4,%,,,calcul
+bh,2015,total_actifs,7020.726,MD,2015_individuel.pdf,23.0,lu (image)
+bh,2016,capitaux_propres,551.154,MD,2016_individuel.pdf,23.0,lu (image)
+bh,2016,charges_generales_exploitation,27.299,MD,2016_individuel.pdf,25.0,lu (image)
+bh,2016,coefficient_exploitation,45.9,%,,,calcul
+bh,2016,dotations_amortissements,13.715,MD,2016_individuel.pdf,25.0,lu (image)
+bh,2016,frais_personnel,100.251,MD,2016_individuel.pdf,25.0,lu (image)
+bh,2016,produit_net_bancaire,307.524,MD,2016_individuel.pdf,25.0,lu (image)
+bh,2016,resultat_apres_modifications,92.087,MD,2016_individuel.pdf,25.0,lu (image)
+bh,2016,resultat_net,92.087,MD,2016_individuel.pdf,25.0,lu (image)
+bh,2016,roa,1.12,%,,,calcul
+bh,2016,roe,16.7,%,,,calcul
+bh,2016,total_actifs,8240.102,MD,2016_individuel.pdf,23.0,lu (image)
+bh,2017,capitaux_propres,758.992,MD,2017_individuel.pdf,1.0,lu (image)
+bh,2017,charges_generales_exploitation,30.037,MD,2017_individuel.pdf,3.0,lu (image)
+bh,2017,coefficient_exploitation,43.0,%,,,calcul
+bh,2017,dotations_amortissements,11.388,MD,2017_individuel.pdf,3.0,lu (image)
+bh,2017,frais_personnel,124.303,MD,2017_individuel.pdf,3.0,lu (image)
+bh,2017,produit_net_bancaire,385.62,MD,2017_individuel.pdf,3.0,lu (image)
+bh,2017,resultat_apres_modifications,115.528,MD,2017_individuel.pdf,3.0,lu (image)
+bh,2017,resultat_net,115.528,MD,2017_individuel.pdf,3.0,lu (image)
+bh,2017,roa,1.16,%,,,calcul
+bh,2017,roe,15.2,%,,,calcul
+bh,2017,total_actifs,9991.217,MD,2017_individuel.pdf,1.0,lu (image)
+bh,2018,capitaux_propres,867.345,MD,2019_individuel.pdf,28.0,lu (image)
+bh,2018,charges_generales_exploitation,51.54,MD,2019_individuel.pdf,30.0,lu (image)
+bh,2018,coefficient_exploitation,41.5,%,,,calcul
+bh,2018,dotations_amortissements,12.097,MD,2019_individuel.pdf,30.0,lu (image)
+bh,2018,frais_personnel,125.344,MD,2019_individuel.pdf,30.0,lu (image)
+bh,2018,produit_net_bancaire,455.745,MD,2019_individuel.pdf,30.0,lu (image)
+bh,2018,resultat_apres_modifications,136.31,MD,2019_individuel.pdf,30.0,lu (image)
+bh,2018,resultat_net,136.31,MD,2019_individuel.pdf,30.0,lu (image)
+bh,2018,roa,1.14,%,,,calcul
+bh,2018,roe,15.7,%,,,calcul
+bh,2018,total_actifs,11911.898,MD,2019_individuel.pdf,28.0,lu (image)
+bh,2019,capitaux_propres,981.089,MD,2019_individuel.pdf,28.0,lu (image)
+bh,2019,charges_generales_exploitation,59.288,MD,2019_individuel.pdf,30.0,lu (image)
+bh,2019,coefficient_exploitation,42.0,%,,,calcul
+bh,2019,dotations_amortissements,13.746,MD,2019_individuel.pdf,30.0,lu (image)
+bh,2019,frais_personnel,133.807,MD,2019_individuel.pdf,30.0,lu (image)
+bh,2019,produit_net_bancaire,492.929,MD,2019_individuel.pdf,30.0,lu (image)
+bh,2019,resultat_apres_modifications,141.642,MD,2019_individuel.pdf,30.0,lu (image)
+bh,2019,resultat_net,141.642,MD,2019_individuel.pdf,30.0,lu (image)
+bh,2019,roa,1.16,%,,,calcul
+bh,2019,roe,14.4,%,,,calcul
+bh,2019,total_actifs,12207.576,MD,2019_individuel.pdf,28.0,lu (image)
+bh,2020,capitaux_propres,1054.552,MD,2020_individuel.pdf,28.0,lu (image)
+bh,2020,charges_generales_exploitation,52.817,MD,2020_individuel.pdf,30.0,lu (image)
+bh,2020,coefficient_exploitation,38.5,%,,,calcul
+bh,2020,dotations_amortissements,17.814,MD,2020_individuel.pdf,30.0,lu (image)
+bh,2020,frais_personnel,124.631,MD,2020_individuel.pdf,30.0,lu (image)
+bh,2020,produit_net_bancaire,506.812,MD,2020_individuel.pdf,30.0,lu (image)
+bh,2020,resultat_apres_modifications,72.943,MD,2020_individuel.pdf,30.0,lu (image)
+bh,2020,resultat_net,72.943,MD,2020_individuel.pdf,30.0,lu (image)
+bh,2020,roa,0.6,%,,,calcul
+bh,2020,roe,6.9,%,,,calcul
+bh,2020,total_actifs,12243.399,MD,2020_individuel.pdf,28.0,lu (image)
+bh,2021,capitaux_propres,1161.408,MD,2021_individuel.pdf,29.0,lu (image)
+bh,2021,charges_generales_exploitation,57.558,MD,2021_individuel.pdf,31.0,lu (image)
+bh,2021,coefficient_exploitation,39.2,%,,,calcul
+bh,2021,dotations_amortissements,15.645,MD,2021_individuel.pdf,31.0,lu (image)
+bh,2021,frais_personnel,150.302,MD,2021_individuel.pdf,31.0,lu (image)
+bh,2021,produit_net_bancaire,569.514,MD,2021_individuel.pdf,31.0,lu (image)
+bh,2021,resultat_apres_modifications,134.734,MD,2021_individuel.pdf,31.0,lu (image)
+bh,2021,resultat_net,134.734,MD,2021_individuel.pdf,31.0,lu (image)
+bh,2021,roa,1.09,%,,,calcul
+bh,2021,roe,11.6,%,,,calcul
+bh,2021,total_actifs,12405.184,MD,2021_individuel.pdf,29.0,lu (image)
+bh,2022,capitaux_propres,1235.523,MD,2022_individuel.pdf,2.0,lu (image)
+bh,2022,charges_generales_exploitation,64.993,MD,2022_individuel.pdf,4.0,lu (image)
+bh,2022,coefficient_exploitation,40.4,%,,,calcul
+bh,2022,dotations_amortissements,18.685,MD,2022_individuel.pdf,4.0,lu (image)
+bh,2022,frais_personnel,167.835,MD,2022_individuel.pdf,4.0,lu (image)
+bh,2022,produit_net_bancaire,622.893,MD,2022_individuel.pdf,4.0,lu (image)
+bh,2022,resultat_apres_modifications,118.711,MD,2022_individuel.pdf,4.0,lu (image)
+bh,2022,resultat_net,118.711,MD,2022_individuel.pdf,4.0,lu (image)
+bh,2022,roa,0.87,%,,,calcul
+bh,2022,roe,9.6,%,,,calcul
+bh,2022,total_actifs,13626.285,MD,2022_individuel.pdf,2.0,lu (image)
+bh,2023,capitaux_propres,1333.361,MD,2023_individuel.pdf,2.0,lu (image)
+bh,2023,charges_generales_exploitation,65.302,MD,2023_individuel.pdf,4.0,lu (image)
+bh,2023,coefficient_exploitation,39.5,%,,,calcul
+bh,2023,dotations_amortissements,20.989,MD,2023_individuel.pdf,4.0,lu (image)
+bh,2023,frais_personnel,176.427,MD,2023_individuel.pdf,4.0,lu (image)
+bh,2023,produit_net_bancaire,665.046,MD,2023_individuel.pdf,4.0,lu (image)
+bh,2023,resultat_apres_modifications,140.013,MD,2023_individuel.pdf,4.0,lu (image)
+bh,2023,resultat_net,140.013,MD,2023_individuel.pdf,4.0,lu (image)
+bh,2023,roa,1.04,%,,,calcul
+bh,2023,roe,10.5,%,,,calcul
+bh,2023,total_actifs,13514.862,MD,2023_individuel.pdf,2.0,lu (image)
+bh,2024,capitaux_propres,1352.085,MD,2024_individuel.pdf,2.0,lu (image)
+bh,2024,charges_generales_exploitation,71.732,MD,2024_individuel.pdf,4.0,lu (image)
+bh,2024,coefficient_exploitation,37.8,%,,,calcul
+bh,2024,dotations_amortissements,20.037,MD,2024_individuel.pdf,4.0,lu (image)
+bh,2024,frais_personnel,189.448,MD,2024_individuel.pdf,4.0,lu (image)
+bh,2024,produit_net_bancaire,744.228,MD,2024_individuel.pdf,4.0,lu (image)
+bh,2024,resultat_apres_modifications,70.404,MD,2024_individuel.pdf,4.0,lu (image)
+bh,2024,resultat_net,70.404,MD,2024_individuel.pdf,4.0,lu (image)
+bh,2024,roa,0.49,%,,,calcul
+bh,2024,roe,5.2,%,,,calcul
+bh,2024,total_actifs,14476.639,MD,2024_individuel.pdf,2.0,lu (image)
+bna,2000,capitaux_propres,349.951,MD,2000_individuel.pdf,1.0,lu (image)
+bna,2000,charges_generales_exploitation,16.837,MD,2000_individuel.pdf,1.0,lu (image)
+bna,2000,coefficient_exploitation,62.3,%,,,calcul
+bna,2000,dotations_amortissements,5.888,MD,2000_individuel.pdf,1.0,lu (image)
+bna,2000,frais_personnel,54.784,MD,2000_individuel.pdf,1.0,lu (image)
+bna,2000,produit_net_bancaire,124.46,MD,2000_individuel.pdf,1.0,lu (image)
+bna,2000,resultat_net,23.431,MD,2000_individuel.pdf,1.0,lu (image)
+bna,2000,roa,0.81,%,,,calcul
+bna,2000,roe,6.7,%,,,calcul
+bna,2000,total_actifs,2897.107,MD,2000_individuel.pdf,1.0,lu (image)
+bna,2003,charges_generales_exploitation,18.977,MD,2003_individuel.pdf,2.0,lu (image)
+bna,2003,coefficient_exploitation,68.9,%,,,calcul
+bna,2003,dotations_amortissements,4.378,MD,2003_individuel.pdf,2.0,lu (image)
+bna,2003,frais_personnel,67.447,MD,2003_individuel.pdf,2.0,lu (image)
+bna,2003,produit_net_bancaire,131.781,MD,2003_individuel.pdf,2.0,lu (image)
+bna,2003,resultat_net,14.938,MD,2003_individuel.pdf,2.0,lu (image)
+bna,2004,charges_generales_exploitation,20.183,MD,2004_individuel.pdf,3.0,lu (image)
+bna,2004,coefficient_exploitation,73.4,%,,,calcul
+bna,2004,dotations_amortissements,4.255,MD,2004_individuel.pdf,3.0,lu (image)
+bna,2004,frais_personnel,75.136,MD,2004_individuel.pdf,3.0,lu (image)
+bna,2004,produit_net_bancaire,135.619,MD,2004_individuel.pdf,3.0,lu (image)
+bna,2004,resultat_net,3.126,MD,2004_individuel.pdf,3.0,lu (image)
+bna,2005,charges_generales_exploitation,19.361,MD,2005_individuel.pdf,3.0,lu (image)
+bna,2005,coefficient_exploitation,64.5,%,,,calcul
+bna,2005,dotations_amortissements,3.985,MD,2005_individuel.pdf,3.0,lu (image)
+bna,2005,frais_personnel,72.112,MD,2005_individuel.pdf,3.0,lu (image)
+bna,2005,produit_net_bancaire,147.937,MD,2005_individuel.pdf,3.0,lu (image)
+bna,2005,resultat_net,8.065,MD,2005_individuel.pdf,3.0,lu (image)
+bna,2006,charges_generales_exploitation,19.649,MD,2006_individuel.pdf,2.0,lu (image)
+bna,2006,coefficient_exploitation,57.0,%,,,calcul
+bna,2006,dotations_amortissements,4.782,MD,2006_individuel.pdf,2.0,lu (image)
+bna,2006,frais_personnel,75.865,MD,2006_individuel.pdf,2.0,lu (image)
+bna,2006,produit_net_bancaire,175.948,MD,2006_individuel.pdf,2.0,lu (image)
+bna,2006,resultat_net,16.323,MD,2006_individuel.pdf,2.0,lu (image)
+bna,2007,charges_generales_exploitation,20.946,MD,2007_individuel.pdf,15.0,lu (image)
+bna,2007,coefficient_exploitation,54.6,%,,,calcul
+bna,2007,dotations_amortissements,4.851,MD,2007_individuel.pdf,15.0,lu (image)
+bna,2007,frais_personnel,78.605,MD,2007_individuel.pdf,15.0,lu (image)
+bna,2007,produit_net_bancaire,191.231,MD,2007_individuel.pdf,15.0,lu (image)
+bna,2007,resultat_net,28.106,MD,2007_individuel.pdf,15.0,lu (image)
+bna,2008,charges_generales_exploitation,21.812,MD,2008_individuel.pdf,15.0,lu (image)
+bna,2008,coefficient_exploitation,49.5,%,,,calcul
+bna,2008,dotations_amortissements,4.942,MD,2008_individuel.pdf,15.0,lu (image)
+bna,2008,frais_personnel,80.942,MD,2008_individuel.pdf,15.0,lu (image)
+bna,2008,produit_net_bancaire,217.65,MD,2008_individuel.pdf,15.0,lu (image)
+bna,2008,resultat_net,31.763,MD,2008_individuel.pdf,15.0,lu (image)
+bna,2009,charges_generales_exploitation,24.727,MD,2009_individuel.pdf,15.0,lu (image)
+bna,2009,coefficient_exploitation,51.5,%,,,calcul
+bna,2009,dotations_amortissements,4.141,MD,2009_individuel.pdf,15.0,lu (image)
+bna,2009,frais_personnel,95.465,MD,2009_individuel.pdf,15.0,lu (image)
+bna,2009,produit_net_bancaire,241.549,MD,2009_individuel.pdf,15.0,lu (image)
+bna,2009,resultat_net,40.299,MD,2009_individuel.pdf,15.0,lu (image)
+bna,2010,charges_generales_exploitation,25.993,MD,2010_individuel.pdf,3.0,lu (image)
+bna,2010,coefficient_exploitation,49.9,%,,,calcul
+bna,2010,dotations_amortissements,5.335,MD,2010_individuel.pdf,3.0,lu (image)
+bna,2010,frais_personnel,99.157,MD,2010_individuel.pdf,3.0,lu (image)
+bna,2010,produit_net_bancaire,261.616,MD,2010_individuel.pdf,3.0,lu (image)
+bna,2010,resultat_apres_modifications,43.828,MD,2010_individuel.pdf,3.0,lu (image)
+bna,2010,resultat_net,43.19,MD,2010_individuel.pdf,3.0,lu (image)
+bna,2011,charges_generales_exploitation,24.805,MD,2011_individuel.pdf,16.0,lu (image)
+bna,2011,coefficient_exploitation,53.9,%,,,calcul
+bna,2011,dotations_amortissements,6.228,MD,2011_individuel.pdf,16.0,lu (image)
+bna,2011,frais_personnel,108.688,MD,2011_individuel.pdf,16.0,lu (image)
+bna,2011,produit_net_bancaire,259.136,MD,2011_individuel.pdf,16.0,lu (image)
+bna,2011,resultat_net,35.969,MD,2011_individuel.pdf,16.0,lu (image)
+bna,2012,charges_generales_exploitation,25.937,MD,2012_individuel.pdf,12.0,lu (image)
+bna,2012,coefficient_exploitation,50.7,%,,,calcul
+bna,2012,dotations_amortissements,5.358,MD,2012_individuel.pdf,12.0,lu (image)
+bna,2012,frais_personnel,117.521,MD,2012_individuel.pdf,12.0,lu (image)
+bna,2012,produit_net_bancaire,293.583,MD,2012_individuel.pdf,12.0,lu (image)
+bna,2012,resultat_net,43.206,MD,2012_individuel.pdf,12.0,lu (image)
+bna,2013,charges_generales_exploitation,28.114,MD,2013_individuel.pdf,3.0,lu (image)
+bna,2013,coefficient_exploitation,49.7,%,,,calcul
+bna,2013,dotations_amortissements,5.642,MD,2013_individuel.pdf,3.0,lu (image)
+bna,2013,frais_personnel,126.975,MD,2013_individuel.pdf,3.0,lu (image)
+bna,2013,produit_net_bancaire,323.448,MD,2013_individuel.pdf,3.0,lu (image)
+bna,2013,resultat_apres_modifications,-32.962,MD,2013_individuel.pdf,3.0,lu (image)
+bna,2013,resultat_net,14.553,MD,2013_individuel.pdf,3.0,lu (image)
+bna,2014,charges_generales_exploitation,30.304,MD,2014_individuel.pdf,3.0,lu (image)
+bna,2014,coefficient_exploitation,51.6,%,,,calcul
+bna,2014,dotations_amortissements,5.15,MD,2014_individuel.pdf,3.0,lu (image)
+bna,2014,frais_personnel,144.628,MD,2014_individuel.pdf,3.0,lu (image)
+bna,2014,produit_net_bancaire,348.753,MD,2014_individuel.pdf,3.0,lu (image)
+bna,2014,resultat_net,50.818,MD,2014_individuel.pdf,3.0,lu (image)
+bna,2015,charges_generales_exploitation,29.693,MD,2015_individuel.pdf,3.0,lu (image)
+bna,2015,coefficient_exploitation,56.6,%,,,calcul
+bna,2015,dotations_amortissements,5.367,MD,2015_individuel.pdf,3.0,lu (image)
+bna,2015,frais_personnel,154.608,MD,2015_individuel.pdf,3.0,lu (image)
+bna,2015,produit_net_bancaire,335.287,MD,2015_individuel.pdf,3.0,lu (image)
+bna,2015,resultat_net,25.355,MD,2015_individuel.pdf,3.0,lu (image)
+bna,2016,charges_generales_exploitation,34.35,MD,2016_individuel.pdf,9.0,lu (image)
+bna,2016,coefficient_exploitation,53.3,%,,,calcul
+bna,2016,dotations_amortissements,5.289,MD,2016_individuel.pdf,9.0,lu (image)
+bna,2016,frais_personnel,162.351,MD,2016_individuel.pdf,9.0,lu (image)
+bna,2016,produit_net_bancaire,378.814,MD,2016_individuel.pdf,9.0,lu (image)
+bna,2016,resultat_net,140.0,MD,2016_individuel.pdf,9.0,lu (image)
+bna,2017,charges_generales_exploitation,35.11,MD,2017_individuel.pdf,3.0,lu (image)
+bna,2017,coefficient_exploitation,49.7,%,,,calcul
+bna,2017,dotations_amortissements,6.379,MD,2017_individuel.pdf,3.0,lu (image)
+bna,2017,frais_personnel,179.347,MD,2017_individuel.pdf,3.0,lu (image)
+bna,2017,produit_net_bancaire,444.306,MD,2017_individuel.pdf,3.0,lu (image)
+bna,2017,resultat_net,198.591,MD,2017_individuel.pdf,3.0,lu (image)
+bna,2018,capitaux_propres,1152.077,MD,2019_individuel.pdf,1.0,lu (image)
+bna,2018,charges_generales_exploitation,60.536,MD,2018_individuel.pdf,4.0,lu (image)
+bna,2018,coefficient_exploitation,48.0,%,,,calcul
+bna,2018,dotations_amortissements,9.116,MD,2018_individuel.pdf,4.0,lu (image)
+bna,2018,frais_personnel,196.387,MD,2018_individuel.pdf,4.0,lu (image)
+bna,2018,produit_net_bancaire,553.754,MD,2018_individuel.pdf,4.0,lu (image)
+bna,2018,resultat_net,175.456,MD,2018_individuel.pdf,4.0,lu (image)
+bna,2018,roa,1.5,%,,,calcul
+bna,2018,roe,15.2,%,,,calcul
+bna,2018,total_actifs,11662.689,MD,2019_individuel.pdf,1.0,lu (image)
+bna,2019,capitaux_propres,1522.944,MD,2019_individuel.pdf,1.0,lu (image)
+bna,2019,charges_generales_exploitation,65.008,MD,2019_individuel.pdf,3.0,lu (image)
+bna,2019,coefficient_exploitation,44.3,%,,,calcul
+bna,2019,dotations_amortissements,11.888,MD,2019_individuel.pdf,3.0,lu (image)
+bna,2019,frais_personnel,212.8,MD,2019_individuel.pdf,3.0,lu (image)
+bna,2019,produit_net_bancaire,654.294,MD,2019_individuel.pdf,3.0,lu (image)
+bna,2019,resultat_net,123.433,MD,2019_individuel.pdf,3.0,lu (image)
+bna,2019,roa,0.95,%,,,calcul
+bna,2019,roe,8.1,%,,,calcul
+bna,2019,total_actifs,13015.194,MD,2019_individuel.pdf,1.0,lu (image)
+bna,2020,capitaux_propres,1626.199,MD,2021_individuel.pdf,1.0,lu (image)
+bna,2020,charges_generales_exploitation,72.107,MD,2020_individuel.pdf,3.0,lu (image)
+bna,2020,coefficient_exploitation,41.9,%,,,calcul
+bna,2020,dotations_amortissements,12.798,MD,2020_individuel.pdf,3.0,lu (image)
+bna,2020,frais_personnel,204.279,MD,2020_individuel.pdf,3.0,lu (image)
+bna,2020,produit_net_bancaire,689.942,MD,2020_individuel.pdf,3.0,lu (image)
+bna,2020,resultat_net,102.283,MD,2020_individuel.pdf,3.0,lu (image)
+bna,2020,roa,0.71,%,,,calcul
+bna,2020,roe,6.3,%,,,calcul
+bna,2020,total_actifs,14422.115,MD,2021_individuel.pdf,1.0,lu (image)
+bna,2021,capitaux_propres,1758.397,MD,2021_individuel.pdf,1.0,lu (image)
+bna,2021,charges_generales_exploitation,76.289,MD,2021_individuel.pdf,4.0,lu (image)
+bna,2021,coefficient_exploitation,41.1,%,,,calcul
+bna,2021,dotations_amortissements,12.934,MD,2021_individuel.pdf,4.0,lu (image)
+bna,2021,frais_personnel,259.745,MD,2021_individuel.pdf,4.0,lu (image)
+bna,2021,produit_net_bancaire,849.997,MD,2021_individuel.pdf,4.0,lu (image)
+bna,2021,resultat_net,163.145,MD,2021_individuel.pdf,4.0,lu (image)
+bna,2021,roa,0.96,%,,,calcul
+bna,2021,roe,9.3,%,,,calcul
+bna,2021,total_actifs,16909.196,MD,2021_individuel.pdf,1.0,lu (image)
+bna,2022,capitaux_propres,1864.049,MD,2023_individuel.pdf,1.0,lu (image)
+bna,2022,charges_generales_exploitation,91.579,MD,2022_individuel.pdf,3.0,lu (image)
+bna,2022,coefficient_exploitation,40.2,%,,,calcul
+bna,2022,dotations_amortissements,14.134,MD,2022_individuel.pdf,3.0,lu (image)
+bna,2022,frais_personnel,251.743,MD,2022_individuel.pdf,3.0,lu (image)
+bna,2022,produit_net_bancaire,889.82,MD,2022_individuel.pdf,3.0,lu (image)
+bna,2022,resultat_net,159.251,MD,2022_individuel.pdf,3.0,lu (image)
+bna,2022,roa,0.82,%,,,calcul
+bna,2022,roe,8.5,%,,,calcul
+bna,2022,total_actifs,19307.194,MD,2023_individuel.pdf,1.0,lu (image)
+bna,2023,capitaux_propres,2004.283,MD,2023_individuel.pdf,1.0,lu (image)
+bna,2023,charges_generales_exploitation,95.163,MD,2023_individuel.pdf,4.0,lu (image)
+bna,2023,coefficient_exploitation,38.5,%,,,calcul
+bna,2023,dotations_amortissements,15.3,MD,2023_individuel.pdf,4.0,lu (image)
+bna,2023,frais_personnel,267.022,MD,2023_individuel.pdf,4.0,lu (image)
+bna,2023,produit_net_bancaire,979.919,MD,2023_individuel.pdf,4.0,lu (image)
+bna,2023,resultat_net,190.013,MD,2023_individuel.pdf,4.0,lu (image)
+bna,2023,roa,0.93,%,,,calcul
+bna,2023,roe,9.5,%,,,calcul
+bna,2023,total_actifs,20468.708,MD,2023_individuel.pdf,1.0,lu (image)
+bna,2024,capitaux_propres,2161.58,MD,2024_individuel.pdf,1.0,lu (image)
+bna,2024,charges_generales_exploitation,99.975,MD,2024_individuel.pdf,4.0,lu (image)
+bna,2024,coefficient_exploitation,39.8,%,,,calcul
+bna,2024,dotations_amortissements,14.593,MD,2024_individuel.pdf,4.0,lu (image)
+bna,2024,frais_personnel,273.467,MD,2024_individuel.pdf,4.0,lu (image)
+bna,2024,produit_net_bancaire,976.006,MD,2024_individuel.pdf,4.0,lu (image)
+bna,2024,resultat_apres_modifications,213.582,MD,2024_individuel.pdf,4.0,lu (image)
+bna,2024,resultat_net,254.557,MD,2024_individuel.pdf,4.0,lu (image)
+bna,2024,roa,0.95,%,,,calcul
+bna,2024,roe,9.9,%,,,calcul
+bna,2024,total_actifs,22459.08,MD,2024_individuel.pdf,1.0,lu (image)
+bte,2003,capitaux_propres,126.985,MD,2005_individuel.pdf,1.0,lu (image)
+bte,2003,charges_generales_exploitation,1.015,MD,2005_individuel.pdf,2.0,lu (image)
+bte,2003,coefficient_exploitation,38.9,%,,,calcul
+bte,2003,dotations_amortissements,0.49,MD,2005_individuel.pdf,2.0,lu (image)
+bte,2003,frais_personnel,2.29,MD,2005_individuel.pdf,2.0,lu (image)
+bte,2003,produit_net_bancaire,9.766,MD,2005_individuel.pdf,2.0,lu (image)
+bte,2003,resultat_apres_modifications,4.018,MD,2005_individuel.pdf,2.0,lu (image)
+bte,2003,resultat_net,4.018,MD,2005_individuel.pdf,2.0,lu (image)
+bte,2003,roa,1.68,%,,,calcul
+bte,2003,roe,3.2,%,,,calcul
+bte,2003,total_actifs,239.384,MD,2005_individuel.pdf,1.0,lu (image)
+bte,2004,capitaux_propres,128.731,MD,2005_individuel.pdf,1.0,lu (image)
+bte,2004,charges_generales_exploitation,0.901,MD,2005_individuel.pdf,2.0,lu (image)
+bte,2004,coefficient_exploitation,32.9,%,,,calcul
+bte,2004,dotations_amortissements,0.325,MD,2005_individuel.pdf,2.0,lu (image)
+bte,2004,frais_personnel,2.276,MD,2005_individuel.pdf,2.0,lu (image)
+bte,2004,produit_net_bancaire,10.658,MD,2005_individuel.pdf,2.0,lu (image)
+bte,2004,resultat_apres_modifications,4.531,MD,2005_individuel.pdf,2.0,lu (image)
+bte,2004,resultat_net,4.531,MD,2005_individuel.pdf,2.0,lu (image)
+bte,2004,roa,1.71,%,,,calcul
+bte,2004,roe,3.5,%,,,calcul
+bte,2004,total_actifs,264.616,MD,2005_individuel.pdf,1.0,lu (image)
+bte,2005,capitaux_propres,130.08,MD,2006_individuel.pdf,8.0,lu (image)
+bte,2005,charges_generales_exploitation,1.181,MD,2006_individuel.pdf,10.0,lu (image)
+bte,2005,coefficient_exploitation,34.8,%,,,calcul
+bte,2005,dotations_amortissements,0.304,MD,2006_individuel.pdf,10.0,lu (image)
+bte,2005,frais_personnel,2.574,MD,2006_individuel.pdf,10.0,lu (image)
+bte,2005,produit_net_bancaire,11.674,MD,2006_individuel.pdf,10.0,lu (image)
+bte,2005,resultat_apres_modifications,5.076,MD,2006_individuel.pdf,10.0,lu (image)
+bte,2005,resultat_net,5.076,MD,2006_individuel.pdf,10.0,lu (image)
+bte,2005,roa,1.91,%,,,calcul
+bte,2005,roe,3.9,%,,,calcul
+bte,2005,total_actifs,265.933,MD,2006_individuel.pdf,8.0,lu (image)
+bte,2006,capitaux_propres,133.752,MD,2006_individuel.pdf,8.0,lu (image)
+bte,2006,charges_generales_exploitation,1.678,MD,2006_individuel.pdf,10.0,lu (image)
+bte,2006,coefficient_exploitation,38.3,%,,,calcul
+bte,2006,dotations_amortissements,0.3,MD,2006_individuel.pdf,10.0,lu (image)
+bte,2006,frais_personnel,3.153,MD,2006_individuel.pdf,10.0,lu (image)
+bte,2006,produit_net_bancaire,13.397,MD,2006_individuel.pdf,10.0,lu (image)
+bte,2006,resultat_apres_modifications,5.375,MD,2006_individuel.pdf,10.0,lu (image)
+bte,2006,resultat_net,5.375,MD,2006_individuel.pdf,10.0,lu (image)
+bte,2006,roa,1.8,%,,,calcul
+bte,2006,roe,4.0,%,,,calcul
+bte,2006,total_actifs,298.602,MD,2006_individuel.pdf,8.0,lu (image)
+bte,2007,capitaux_propres,131.28,MD,2008_individuel.pdf,9.0,lu (image)
+bte,2007,charges_generales_exploitation,1.739,MD,2008_individuel.pdf,10.0,lu (image)
+bte,2007,coefficient_exploitation,38.0,%,,,calcul
+bte,2007,dotations_amortissements,0.374,MD,2008_individuel.pdf,10.0,lu (image)
+bte,2007,frais_personnel,3.845,MD,2008_individuel.pdf,10.0,lu (image)
+bte,2007,produit_net_bancaire,15.663,MD,2008_individuel.pdf,10.0,lu (image)
+bte,2007,resultat_apres_modifications,6.095,MD,2008_individuel.pdf,10.0,lu (image)
+bte,2007,resultat_net,6.095,MD,2008_individuel.pdf,10.0,lu (image)
+bte,2007,roa,1.65,%,,,calcul
+bte,2007,roe,4.6,%,,,calcul
+bte,2007,total_actifs,370.319,MD,2008_individuel.pdf,9.0,lu (image)
+bte,2008,capitaux_propres,134.029,MD,2008_individuel.pdf,9.0,lu (image)
+bte,2008,charges_generales_exploitation,2.068,MD,2008_individuel.pdf,10.0,lu (image)
+bte,2008,coefficient_exploitation,44.5,%,,,calcul
+bte,2008,dotations_amortissements,0.63,MD,2008_individuel.pdf,10.0,lu (image)
+bte,2008,frais_personnel,4.789,MD,2008_individuel.pdf,10.0,lu (image)
+bte,2008,produit_net_bancaire,16.828,MD,2008_individuel.pdf,10.0,lu (image)
+bte,2008,resultat_apres_modifications,7.053,MD,2008_individuel.pdf,10.0,lu (image)
+bte,2008,resultat_net,7.053,MD,2008_individuel.pdf,10.0,lu (image)
+bte,2008,roa,1.65,%,,,calcul
+bte,2008,roe,5.3,%,,,calcul
+bte,2008,total_actifs,428.093,MD,2008_individuel.pdf,9.0,lu (image)
+bte,2009,capitaux_propres,139.707,MD,2009_individuel.pdf,8.0,lu (image)
+bte,2009,charges_generales_exploitation,2.332,MD,2009_individuel.pdf,10.0,lu (image)
+bte,2009,coefficient_exploitation,51.6,%,,,calcul
+bte,2009,dotations_amortissements,0.767,MD,2009_individuel.pdf,10.0,lu (image)
+bte,2009,frais_personnel,5.903,MD,2009_individuel.pdf,10.0,lu (image)
+bte,2009,produit_net_bancaire,17.45,MD,2009_individuel.pdf,10.0,lu (image)
+bte,2009,resultat_apres_modifications,7.481,MD,2009_individuel.pdf,10.0,lu (image)
+bte,2009,resultat_net,7.481,MD,2009_individuel.pdf,10.0,lu (image)
+bte,2009,roa,1.43,%,,,calcul
+bte,2009,roe,5.4,%,,,calcul
+bte,2009,total_actifs,521.722,MD,2009_individuel.pdf,8.0,lu (image)
+bte,2010,capitaux_propres,143.953,MD,2010_individuel.pdf,8.0,lu (image)
+bte,2010,charges_generales_exploitation,3.287,MD,2010_individuel.pdf,10.0,lu (image)
+bte,2010,coefficient_exploitation,51.2,%,,,calcul
+bte,2010,dotations_amortissements,0.798,MD,2010_individuel.pdf,10.0,lu (image)
+bte,2010,frais_personnel,7.23,MD,2010_individuel.pdf,10.0,lu (image)
+bte,2010,produit_net_bancaire,22.115,MD,2010_individuel.pdf,10.0,lu (image)
+bte,2010,resultat_apres_modifications,8.012,MD,2010_individuel.pdf,10.0,lu (image)
+bte,2010,resultat_net,8.012,MD,2010_individuel.pdf,10.0,lu (image)
+bte,2010,roa,1.42,%,,,calcul
+bte,2010,roe,5.6,%,,,calcul
+bte,2010,total_actifs,566.024,MD,2010_individuel.pdf,8.0,lu (image)
+bte,2011,capitaux_propres,145.297,MD,2011_individuel.pdf,10.0,lu (image)
+bte,2011,charges_generales_exploitation,3.543,MD,2011_individuel.pdf,12.0,lu (image)
+bte,2011,coefficient_exploitation,56.5,%,,,calcul
+bte,2011,dotations_amortissements,1.017,MD,2011_individuel.pdf,12.0,lu (image)
+bte,2011,frais_personnel,8.428,MD,2011_individuel.pdf,12.0,lu (image)
+bte,2011,produit_net_bancaire,22.999,MD,2011_individuel.pdf,12.0,lu (image)
+bte,2011,resultat_apres_modifications,2.958,MD,2011_individuel.pdf,12.0,lu (image)
+bte,2011,resultat_net,2.958,MD,2011_individuel.pdf,12.0,lu (image)
+bte,2011,roa,0.47,%,,,calcul
+bte,2011,roe,2.0,%,,,calcul
+bte,2011,total_actifs,627.805,MD,2011_individuel.pdf,10.0,lu (image)
+bte,2012,capitaux_propres,145.256,MD,2012_individuel.pdf,2.0,lu (image)
+bte,2012,charges_generales_exploitation,4.543,MD,2012_individuel.pdf,4.0,lu (image)
+bte,2012,coefficient_exploitation,64.0,%,,,calcul
+bte,2012,dotations_amortissements,1.176,MD,2012_individuel.pdf,4.0,lu (image)
+bte,2012,frais_personnel,10.3,MD,2012_individuel.pdf,4.0,lu (image)
+bte,2012,produit_net_bancaire,25.029,MD,2012_individuel.pdf,4.0,lu (image)
+bte,2012,resultat_apres_modifications,1.595,MD,2012_individuel.pdf,4.0,lu (image)
+bte,2012,resultat_net,2.43,MD,2012_individuel.pdf,4.0,lu (image)
+bte,2012,roa,0.22,%,,,calcul
+bte,2012,roe,1.1,%,,,calcul
+bte,2012,total_actifs,713.019,MD,2012_individuel.pdf,2.0,lu (image)
+bte,2013,capitaux_propres,138.769,MD,2013_individuel.pdf,1.0,lu (image)
+bte,2013,charges_generales_exploitation,5.016,MD,2013_individuel.pdf,3.0,lu (image)
+bte,2013,coefficient_exploitation,62.0,%,,,calcul
+bte,2013,dotations_amortissements,1.458,MD,2013_individuel.pdf,3.0,lu (image)
+bte,2013,frais_personnel,10.902,MD,2013_individuel.pdf,3.0,lu (image)
+bte,2013,produit_net_bancaire,28.033,MD,2013_individuel.pdf,3.0,lu (image)
+bte,2013,resultat_apres_modifications,-4.467,MD,2013_individuel.pdf,3.0,lu (image)
+bte,2013,resultat_net,2.27,MD,2013_individuel.pdf,3.0,lu (image)
+bte,2013,roa,-0.54,%,,,calcul
+bte,2013,roe,-3.2,%,,,calcul
+bte,2013,total_actifs,821.815,MD,2013_individuel.pdf,1.0,lu (image)
+bte,2014,capitaux_propres,126.33,MD,2014_individuel.pdf,1.0,lu (image)
+bte,2014,charges_generales_exploitation,6.002,MD,2014_individuel.pdf,3.0,lu (image)
+bte,2014,coefficient_exploitation,73.6,%,,,calcul
+bte,2014,dotations_amortissements,1.474,MD,2014_individuel.pdf,3.0,lu (image)
+bte,2014,frais_personnel,12.498,MD,2014_individuel.pdf,3.0,lu (image)
+bte,2014,produit_net_bancaire,27.142,MD,2014_individuel.pdf,3.0,lu (image)
+bte,2014,resultat_apres_modifications,-10.914,MD,2014_individuel.pdf,3.0,lu (image)
+bte,2014,resultat_net,-10.914,MD,2014_individuel.pdf,3.0,lu (image)
+bte,2014,roa,-1.37,%,,,calcul
+bte,2014,roe,-8.6,%,,,calcul
+bte,2014,total_actifs,794.74,MD,2014_individuel.pdf,1.0,lu (image)
+bte,2015,capitaux_propres,128.105,MD,2015_individuel.pdf,1.0,lu (image)
+bte,2015,charges_generales_exploitation,6.757,MD,2015_individuel.pdf,3.0,lu (image)
+bte,2015,coefficient_exploitation,82.2,%,,,calcul
+bte,2015,dotations_amortissements,1.596,MD,2015_individuel.pdf,3.0,lu (image)
+bte,2015,frais_personnel,14.95,MD,2015_individuel.pdf,3.0,lu (image)
+bte,2015,produit_net_bancaire,28.348,MD,2015_individuel.pdf,3.0,lu (image)
+bte,2015,resultat_apres_modifications,1.663,MD,2015_individuel.pdf,3.0,lu (image)
+bte,2015,resultat_net,1.663,MD,2015_individuel.pdf,3.0,lu (image)
+bte,2015,roa,0.18,%,,,calcul
+bte,2015,roe,1.3,%,,,calcul
+bte,2015,total_actifs,906.368,MD,2015_individuel.pdf,1.0,lu (image)
+bte,2016,capitaux_propres,129.151,MD,2016_individuel.pdf,2.0,lu (image)
+bte,2016,charges_generales_exploitation,6.911,MD,2016_individuel.pdf,4.0,lu (image)
+bte,2016,coefficient_exploitation,69.4,%,,,calcul
+bte,2016,dotations_amortissements,1.972,MD,2016_individuel.pdf,4.0,lu (image)
+bte,2016,frais_personnel,18.692,MD,2016_individuel.pdf,4.0,lu (image)
+bte,2016,produit_net_bancaire,39.752,MD,2016_individuel.pdf,4.0,lu (image)
+bte,2016,resultat_apres_modifications,0.938,MD,2016_individuel.pdf,4.0,lu (image)
+bte,2016,resultat_net,0.938,MD,2016_individuel.pdf,4.0,lu (image)
+bte,2016,roa,0.1,%,,,calcul
+bte,2016,roe,0.7,%,,,calcul
+bte,2016,total_actifs,980.73,MD,2016_individuel.pdf,2.0,lu (image)
+bte,2017,capitaux_propres,130.027,MD,2017_individuel.pdf,1.0,lu (image)
+bte,2017,charges_generales_exploitation,7.974,MD,2017_individuel.pdf,3.0,lu (image)
+bte,2017,coefficient_exploitation,73.2,%,,,calcul
+bte,2017,dotations_amortissements,2.176,MD,2017_individuel.pdf,3.0,lu (image)
+bte,2017,frais_personnel,22.35,MD,2017_individuel.pdf,3.0,lu (image)
+bte,2017,produit_net_bancaire,44.371,MD,2017_individuel.pdf,3.0,lu (image)
+bte,2017,resultat_apres_modifications,0.782,MD,2017_individuel.pdf,3.0,lu (image)
+bte,2017,resultat_net,0.782,MD,2017_individuel.pdf,3.0,lu (image)
+bte,2017,roa,0.08,%,,,calcul
+bte,2017,roe,0.6,%,,,calcul
+bte,2017,total_actifs,1037.69,MD,2017_individuel.pdf,1.0,lu (image)
+bte,2018,capitaux_propres,131.05,MD,2019_individuel.pdf,1.0,lu (image)
+bte,2018,charges_generales_exploitation,9.594,MD,2019_individuel.pdf,3.0,lu (image)
+bte,2018,coefficient_exploitation,72.8,%,,,calcul
+bte,2018,dotations_amortissements,2.239,MD,2019_individuel.pdf,3.0,lu (image)
+bte,2018,frais_personnel,24.293,MD,2019_individuel.pdf,3.0,lu (image)
+bte,2018,produit_net_bancaire,49.626,MD,2019_individuel.pdf,3.0,lu (image)
+bte,2018,resultat_apres_modifications,0.95,MD,2019_individuel.pdf,3.0,lu (image)
+bte,2018,resultat_net,0.95,MD,2019_individuel.pdf,3.0,lu (image)
+bte,2018,roa,0.08,%,,,calcul
+bte,2018,roe,0.7,%,,,calcul
+bte,2018,total_actifs,1142.212,MD,2019_individuel.pdf,1.0,lu (image)
+bte,2019,capitaux_propres,137.023,MD,2019_individuel.pdf,1.0,lu (image)
+bte,2019,charges_generales_exploitation,12.067,MD,2019_individuel.pdf,3.0,lu (image)
+bte,2019,coefficient_exploitation,76.8,%,,,calcul
+bte,2019,dotations_amortissements,1.59,MD,2019_individuel.pdf,3.0,lu (image)
+bte,2019,frais_personnel,27.254,MD,2019_individuel.pdf,3.0,lu (image)
+bte,2019,produit_net_bancaire,53.269,MD,2019_individuel.pdf,3.0,lu (image)
+bte,2019,resultat_apres_modifications,5.913,MD,2019_individuel.pdf,3.0,lu (image)
+bte,2019,resultat_net,5.913,MD,2019_individuel.pdf,3.0,lu (image)
+bte,2019,roa,0.52,%,,,calcul
+bte,2019,roe,4.3,%,,,calcul
+bte,2019,total_actifs,1128.775,MD,2019_individuel.pdf,1.0,lu (image)
+bte,2020,capitaux_propres,119.875,MD,2020_individuel.pdf,18.0,lu (image)
+bte,2020,charges_generales_exploitation,11.485,MD,2020_individuel.pdf,20.0,lu (image)
+bte,2020,coefficient_exploitation,87.4,%,,,calcul
+bte,2020,dotations_amortissements,1.806,MD,2020_individuel.pdf,20.0,lu (image)
+bte,2020,frais_personnel,29.4,MD,2020_individuel.pdf,20.0,lu (image)
+bte,2020,produit_net_bancaire,48.869,MD,2020_individuel.pdf,20.0,lu (image)
+bte,2020,resultat_apres_modifications,-17.165,MD,2020_individuel.pdf,20.0,lu (image)
+bte,2020,resultat_net,-17.165,MD,2020_individuel.pdf,20.0,lu (image)
+bte,2020,roa,-1.43,%,,,calcul
+bte,2020,roe,-14.3,%,,,calcul
+bte,2020,total_actifs,1198.454,MD,2020_individuel.pdf,18.0,lu (image)
+bte,2021,capitaux_propres,88.178,MD,2021_individuel.pdf,1.0,lu (image)
+bte,2021,charges_generales_exploitation,15.06,MD,2021_individuel.pdf,3.0,lu (image)
+bte,2021,coefficient_exploitation,83.1,%,,,calcul
+bte,2021,dotations_amortissements,1.783,MD,2021_individuel.pdf,3.0,lu (image)
+bte,2021,frais_personnel,35.565,MD,2021_individuel.pdf,3.0,lu (image)
+bte,2021,produit_net_bancaire,63.104,MD,2021_individuel.pdf,3.0,lu (image)
+bte,2021,resultat_apres_modifications,-31.671,MD,2021_individuel.pdf,3.0,lu (image)
+bte,2021,resultat_net,-31.671,MD,2021_individuel.pdf,3.0,lu (image)
+bte,2021,roa,-2.49,%,,,calcul
+bte,2021,roe,-35.9,%,,,calcul
+bte,2021,total_actifs,1274.233,MD,2021_individuel.pdf,1.0,lu (image)
+bte,2022,capitaux_propres,89.914,MD,2022_individuel.pdf,1.0,lu (image)
+bte,2022,charges_generales_exploitation,15.52,MD,2022_individuel.pdf,3.0,lu (image)
+bte,2022,coefficient_exploitation,98.9,%,,,calcul
+bte,2022,dotations_amortissements,5.736,MD,2022_individuel.pdf,3.0,lu (image)
+bte,2022,frais_personnel,38.556,MD,2022_individuel.pdf,3.0,lu (image)
+bte,2022,produit_net_bancaire,60.476,MD,2022_individuel.pdf,3.0,lu (image)
+bte,2022,resultat_apres_modifications,-30.006,MD,2022_individuel.pdf,3.0,lu (image)
+bte,2022,resultat_net,-30.006,MD,2022_individuel.pdf,3.0,lu (image)
+bte,2022,roa,-2.27,%,,,calcul
+bte,2022,roe,-33.4,%,,,calcul
+bte,2022,total_actifs,1321.276,MD,2022_individuel.pdf,1.0,lu (image)
+bte,2023,capitaux_propres,52.971,MD,2023_individuel.pdf,2.0,lu (image)
+bte,2023,charges_generales_exploitation,16.758,MD,2023_individuel.pdf,4.0,lu (image)
+bte,2023,coefficient_exploitation,103.4,%,,,calcul
+bte,2023,dotations_amortissements,7.539,MD,2023_individuel.pdf,4.0,lu (image)
+bte,2023,frais_personnel,42.918,MD,2023_individuel.pdf,4.0,lu (image)
+bte,2023,produit_net_bancaire,65.027,MD,2023_individuel.pdf,4.0,lu (image)
+bte,2023,resultat_apres_modifications,-36.327,MD,2023_individuel.pdf,4.0,lu (image)
+bte,2023,resultat_net,-36.327,MD,2023_individuel.pdf,4.0,lu (image)
+bte,2023,roa,-2.5,%,,,calcul
+bte,2023,roe,-68.6,%,,,calcul
+bte,2023,total_actifs,1452.807,MD,2023_individuel.pdf,2.0,lu (image)
+bte,2024,capitaux_propres,38.903,MD,2024_individuel.pdf,1.0,lu (image)
+bte,2024,charges_generales_exploitation,18.745,MD,2024_individuel.pdf,3.0,lu (image)
+bte,2024,coefficient_exploitation,101.9,%,,,calcul
+bte,2024,dotations_amortissements,5.648,MD,2024_individuel.pdf,3.0,lu (image)
+bte,2024,frais_personnel,43.185,MD,2024_individuel.pdf,3.0,lu (image)
+bte,2024,produit_net_bancaire,66.296,MD,2024_individuel.pdf,3.0,lu (image)
+bte,2024,resultat_apres_modifications,-32.106,MD,2024_individuel.pdf,3.0,lu (image)
+bte,2024,resultat_net,-27.904,MD,2024_individuel.pdf,3.0,lu (image)
+bte,2024,roa,-2.08,%,,,calcul
+bte,2024,roe,-82.5,%,,,calcul
+bte,2024,total_actifs,1540.056,MD,2024_individuel.pdf,1.0,lu (image)
+stb,2002,charges_generales_exploitation,19.286,MD,2002_individuel.pdf,2.0,lu (image)
+stb,2002,coefficient_exploitation,71.5,%,,,calcul
+stb,2002,dotations_amortissements,6.935,MD,2002_individuel.pdf,2.0,lu (image)
+stb,2002,frais_personnel,62.552,MD,2002_individuel.pdf,2.0,lu (image)
+stb,2002,produit_net_bancaire,124.236,MD,2002_individuel.pdf,2.0,lu (image)
+stb,2002,resultat_net,19.517,MD,2002_individuel.pdf,2.0,lu (image)
+stb,2003,charges_generales_exploitation,17.237,MD,2003_individuel.pdf,2.0,lu (image)
+stb,2003,coefficient_exploitation,76.5,%,,,calcul
+stb,2003,dotations_amortissements,6.565,MD,2003_individuel.pdf,2.0,lu (image)
+stb,2003,frais_personnel,65.664,MD,2003_individuel.pdf,2.0,lu (image)
+stb,2003,produit_net_bancaire,116.916,MD,2003_individuel.pdf,2.0,lu (image)
+stb,2003,resultat_net,18.514,MD,2003_individuel.pdf,2.0,lu (image)
+stb,2004,charges_generales_exploitation,15.987,MD,2004_individuel.pdf,2.0,lu (image)
+stb,2004,coefficient_exploitation,76.0,%,,,calcul
+stb,2004,dotations_amortissements,5.613,MD,2004_individuel.pdf,2.0,lu (image)
+stb,2004,frais_personnel,72.855,MD,2004_individuel.pdf,2.0,lu (image)
+stb,2004,produit_net_bancaire,124.236,MD,2004_individuel.pdf,2.0,lu (image)
+stb,2004,resultat_net,5.294,MD,2004_individuel.pdf,2.0,lu (image)
+stb,2005,charges_generales_exploitation,16.749,MD,2006_individuel.pdf,3.0,lu (image)
+stb,2005,coefficient_exploitation,65.1,%,,,calcul
+stb,2005,dotations_amortissements,5.017,MD,2006_individuel.pdf,3.0,lu (image)
+stb,2005,frais_personnel,71.748,MD,2006_individuel.pdf,3.0,lu (image)
+stb,2005,produit_net_bancaire,143.637,MD,2006_individuel.pdf,3.0,lu (image)
+stb,2005,resultat_net,36.286,MD,2006_individuel.pdf,3.0,lu (image)
+stb,2006,charges_generales_exploitation,20.546,MD,2006_individuel.pdf,3.0,lu (image)
+stb,2006,coefficient_exploitation,58.5,%,,,calcul
+stb,2006,dotations_amortissements,5.02,MD,2006_individuel.pdf,3.0,lu (image)
+stb,2006,frais_personnel,81.31,MD,2006_individuel.pdf,3.0,lu (image)
+stb,2006,produit_net_bancaire,182.727,MD,2006_individuel.pdf,3.0,lu (image)
+stb,2006,resultat_net,21.871,MD,2006_individuel.pdf,3.0,lu (image)
+stb,2007,charges_generales_exploitation,17.171,MD,2007_individuel.pdf,9.0,lu (image)
+stb,2007,coefficient_exploitation,46.5,%,,,calcul
+stb,2007,dotations_amortissements,4.889,MD,2007_individuel.pdf,9.0,lu (image)
+stb,2007,frais_personnel,73.98,MD,2007_individuel.pdf,9.0,lu (image)
+stb,2007,produit_net_bancaire,206.548,MD,2007_individuel.pdf,9.0,lu (image)
+stb,2007,resultat_net,31.576,MD,2007_individuel.pdf,9.0,lu (image)
+stb,2008,charges_generales_exploitation,17.699,MD,2008_individuel.pdf,16.0,lu (image)
+stb,2008,coefficient_exploitation,46.5,%,,,calcul
+stb,2008,dotations_amortissements,4.542,MD,2008_individuel.pdf,16.0,lu (image)
+stb,2008,frais_personnel,80.078,MD,2008_individuel.pdf,16.0,lu (image)
+stb,2008,produit_net_bancaire,220.07,MD,2008_individuel.pdf,16.0,lu (image)
+stb,2008,resultat_net,32.239,MD,2008_individuel.pdf,16.0,lu (image)
+stb,2009,charges_generales_exploitation,23.427,MD,2009_individuel.pdf,16.0,lu (image)
+stb,2009,coefficient_exploitation,46.1,%,,,calcul
+stb,2009,dotations_amortissements,4.931,MD,2009_individuel.pdf,16.0,lu (image)
+stb,2009,frais_personnel,84.365,MD,2009_individuel.pdf,16.0,lu (image)
+stb,2009,produit_net_bancaire,244.376,MD,2009_individuel.pdf,16.0,lu (image)
+stb,2009,resultat_net,40.158,MD,2009_individuel.pdf,16.0,lu (image)
+stb,2010,charges_generales_exploitation,24.838,MD,2010_individuel.pdf,17.0,lu (image)
+stb,2010,coefficient_exploitation,48.6,%,,,calcul
+stb,2010,dotations_amortissements,5.586,MD,2010_individuel.pdf,17.0,lu (image)
+stb,2010,frais_personnel,87.539,MD,2010_individuel.pdf,17.0,lu (image)
+stb,2010,produit_net_bancaire,242.842,MD,2010_individuel.pdf,17.0,lu (image)
+stb,2010,resultat_net,14.799,MD,2010_individuel.pdf,17.0,lu (image)
+stb,2011,charges_generales_exploitation,20.295,MD,2011_individuel.pdf,15.0,lu (image)
+stb,2011,coefficient_exploitation,54.7,%,,,calcul
+stb,2011,dotations_amortissements,6.511,MD,2011_individuel.pdf,15.0,lu (image)
+stb,2011,frais_personnel,94.215,MD,2011_individuel.pdf,15.0,lu (image)
+stb,2011,produit_net_bancaire,221.356,MD,2011_individuel.pdf,15.0,lu (image)
+stb,2011,resultat_apres_modifications,-105.89,MD,2011_individuel.pdf,15.0,lu (image)
+stb,2011,resultat_net,11.387,MD,2011_individuel.pdf,15.0,lu (image)
+stb,2012,capitaux_propres,404.312,MD,2012_individuel.pdf,2.0,lu (image)
+stb,2012,charges_generales_exploitation,20.822,MD,2012_individuel.pdf,4.0,lu (image)
+stb,2012,coefficient_exploitation,55.9,%,,,calcul
+stb,2012,dotations_amortissements,6.514,MD,2012_individuel.pdf,4.0,lu (image)
+stb,2012,frais_personnel,98.818,MD,2012_individuel.pdf,4.0,lu (image)
+stb,2012,produit_net_bancaire,225.66,MD,2012_individuel.pdf,4.0,lu (image)
+stb,2012,resultat_apres_modifications,-124.319,MD,2012_individuel.pdf,4.0,lu (image)
+stb,2012,resultat_net,-4.707,MD,2012_individuel.pdf,4.0,lu (image)
+stb,2012,roa,-1.65,%,,,calcul
+stb,2012,roe,-30.7,%,,,calcul
+stb,2012,total_actifs,7544.135,MD,2012_individuel.pdf,2.0,lu (image)
+stb,2013,charges_generales_exploitation,21.182,MD,2013_individuel.pdf,4.0,lu (image)
+stb,2013,coefficient_exploitation,51.3,%,,,calcul
+stb,2013,dotations_amortissements,6.53,MD,2013_individuel.pdf,4.0,lu (image)
+stb,2013,frais_personnel,99.178,MD,2013_individuel.pdf,4.0,lu (image)
+stb,2013,produit_net_bancaire,247.213,MD,2013_individuel.pdf,4.0,lu (image)
+stb,2013,resultat_apres_modifications,-518.674,MD,2013_individuel.pdf,4.0,lu (image)
+stb,2013,resultat_net,-115.453,MD,2013_individuel.pdf,4.0,lu (image)
+stb,2014,charges_generales_exploitation,27.16,MD,2014_individuel.pdf,3.0,lu (image)
+stb,2014,coefficient_exploitation,53.9,%,,,calcul
+stb,2014,dotations_amortissements,6.346,MD,2014_individuel.pdf,3.0,lu (image)
+stb,2014,frais_personnel,107.999,MD,2014_individuel.pdf,3.0,lu (image)
+stb,2014,produit_net_bancaire,262.343,MD,2014_individuel.pdf,3.0,lu (image)
+stb,2014,resultat_apres_modifications,21.107,MD,2014_individuel.pdf,3.0,lu (image)
+stb,2014,resultat_net,21.107,MD,2014_individuel.pdf,3.0,lu (image)
+stb,2015,charges_generales_exploitation,24.992,MD,2015_individuel.pdf,4.0,lu (image)
+stb,2015,coefficient_exploitation,51.2,%,,,calcul
+stb,2015,dotations_amortissements,6.443,MD,2015_individuel.pdf,4.0,lu (image)
+stb,2015,frais_personnel,106.673,MD,2015_individuel.pdf,4.0,lu (image)
+stb,2015,produit_net_bancaire,269.694,MD,2015_individuel.pdf,4.0,lu (image)
+stb,2015,resultat_apres_modifications,33.042,MD,2015_individuel.pdf,4.0,lu (image)
+stb,2015,resultat_net,33.042,MD,2015_individuel.pdf,4.0,lu (image)
+stb,2016,charges_generales_exploitation,33.605,MD,2016_individuel.pdf,3.0,lu (image)
+stb,2016,coefficient_exploitation,50.1,%,,,calcul
+stb,2016,dotations_amortissements,7.253,MD,2016_individuel.pdf,3.0,lu (image)
+stb,2016,frais_personnel,114.219,MD,2016_individuel.pdf,3.0,lu (image)
+stb,2016,produit_net_bancaire,309.581,MD,2016_individuel.pdf,3.0,lu (image)
+stb,2016,resultat_apres_modifications,40.518,MD,2016_individuel.pdf,3.0,lu (image)
+stb,2016,resultat_net,40.518,MD,2016_individuel.pdf,3.0,lu (image)
+stb,2017,charges_generales_exploitation,42.096,MD,2017_individuel.pdf,3.0,lu (image)
+stb,2017,coefficient_exploitation,52.8,%,,,calcul
+stb,2017,dotations_amortissements,7.543,MD,2017_individuel.pdf,3.0,lu (image)
+stb,2017,frais_personnel,156.505,MD,2017_individuel.pdf,3.0,lu (image)
+stb,2017,produit_net_bancaire,390.161,MD,2017_individuel.pdf,3.0,lu (image)
+stb,2017,resultat_apres_modifications,51.778,MD,2017_individuel.pdf,3.0,lu (image)
+stb,2017,resultat_net,51.778,MD,2017_individuel.pdf,3.0,lu (image)
+stb,2018,capitaux_propres,870.178,MD,2019_individuel.pdf,1.0,lu (image)
+stb,2018,charges_generales_exploitation,66.511,MD,2018_individuel.pdf,3.0,lu (image)
+stb,2018,coefficient_exploitation,46.4,%,,,calcul
+stb,2018,dotations_amortissements,9.908,MD,2018_individuel.pdf,3.0,lu (image)
+stb,2018,frais_personnel,143.341,MD,2018_individuel.pdf,3.0,lu (image)
+stb,2018,produit_net_bancaire,473.387,MD,2018_individuel.pdf,3.0,lu (image)
+stb,2018,resultat_apres_modifications,80.851,MD,2018_individuel.pdf,3.0,lu (image)
+stb,2018,resultat_net,66.863,MD,2018_individuel.pdf,3.0,lu (image)
+stb,2018,roa,0.77,%,,,calcul
+stb,2018,roe,9.3,%,,,calcul
+stb,2018,total_actifs,10519.832,MD,2019_individuel.pdf,1.0,lu (image)
+stb,2019,capitaux_propres,1027.91,MD,2019_individuel.pdf,1.0,lu (image)
+stb,2019,charges_generales_exploitation,71.385,MD,2019_individuel.pdf,3.0,lu (image)
+stb,2019,coefficient_exploitation,39.0,%,,,calcul
+stb,2019,dotations_amortissements,12.262,MD,2019_individuel.pdf,3.0,lu (image)
+stb,2019,frais_personnel,150.584,MD,2019_individuel.pdf,3.0,lu (image)
+stb,2019,produit_net_bancaire,601.141,MD,2019_individuel.pdf,3.0,lu (image)
+stb,2019,resultat_apres_modifications,157.347,MD,2019_individuel.pdf,3.0,lu (image)
+stb,2019,resultat_net,157.347,MD,2019_individuel.pdf,3.0,lu (image)
+stb,2019,roa,1.39,%,,,calcul
+stb,2019,roe,15.3,%,,,calcul
+stb,2019,total_actifs,11301.86,MD,2019_individuel.pdf,1.0,lu (image)
+stb,2020,capitaux_propres,1100.124,MD,2020_consolide.pdf,1.0,lu (image)
+stb,2020,charges_generales_exploitation,76.281,MD,2020_consolide.pdf,3.0,lu (image)
+stb,2020,coefficient_exploitation,39.6,%,,,calcul
+stb,2020,dotations_amortissements,14.486,MD,2020_consolide.pdf,3.0,lu (image)
+stb,2020,frais_personnel,157.011,MD,2020_consolide.pdf,3.0,lu (image)
+stb,2020,produit_net_bancaire,625.657,MD,2020_consolide.pdf,3.0,lu (image)
+stb,2020,resultat_apres_modifications,72.159,MD,2020_consolide.pdf,3.0,lu (image)
+stb,2020,resultat_net,72.159,MD,2020_consolide.pdf,3.0,lu (image)
+stb,2020,roa,0.59,%,,,calcul
+stb,2020,roe,6.6,%,,,calcul
+stb,2020,total_actifs,12249.436,MD,2020_consolide.pdf,1.0,lu (image)
+stb,2021,capitaux_propres,1215.334,MD,2021_individuel.pdf,1.0,lu (image)
+stb,2021,charges_generales_exploitation,88.606,MD,2021_individuel.pdf,3.0,lu (image)
+stb,2021,coefficient_exploitation,43.4,%,,,calcul
+stb,2021,dotations_amortissements,13.843,MD,2021_individuel.pdf,3.0,lu (image)
+stb,2021,frais_personnel,179.724,MD,2021_individuel.pdf,3.0,lu (image)
+stb,2021,produit_net_bancaire,650.569,MD,2021_individuel.pdf,3.0,lu (image)
+stb,2021,resultat_apres_modifications,115.468,MD,2021_individuel.pdf,3.0,lu (image)
+stb,2021,resultat_net,115.468,MD,2021_individuel.pdf,3.0,lu (image)
+stb,2021,roa,0.85,%,,,calcul
+stb,2021,roe,9.5,%,,,calcul
+stb,2021,total_actifs,13505.756,MD,2021_individuel.pdf,1.0,lu (image)
+stb,2022,capitaux_propres,1296.364,MD,2022_individuel.pdf,2.0,lu (image)
+stb,2022,charges_generales_exploitation,98.907,MD,2022_individuel.pdf,4.0,lu (image)
+stb,2022,coefficient_exploitation,44.6,%,,,calcul
+stb,2022,dotations_amortissements,13.279,MD,2022_individuel.pdf,4.0,lu (image)
+stb,2022,frais_personnel,194.968,MD,2022_individuel.pdf,4.0,lu (image)
+stb,2022,produit_net_bancaire,689.428,MD,2022_individuel.pdf,4.0,lu (image)
+stb,2022,resultat_apres_modifications,81.577,MD,2022_individuel.pdf,4.0,lu (image)
+stb,2022,resultat_net,93.083,MD,2022_individuel.pdf,4.0,lu (image)
+stb,2022,roa,0.56,%,,,calcul
+stb,2022,roe,6.3,%,,,calcul
+stb,2022,total_actifs,14687.548,MD,2022_individuel.pdf,2.0,lu (image)
+stb,2023,capitaux_propres,1220.609,MD,2023_individuel.pdf,2.0,lu (image)
+stb,2023,charges_generales_exploitation,102.814,MD,2023_individuel.pdf,4.0,lu (image)
+stb,2023,coefficient_exploitation,48.9,%,,,calcul
+stb,2023,dotations_amortissements,14.295,MD,2023_individuel.pdf,4.0,lu (image)
+stb,2023,frais_personnel,217.875,MD,2023_individuel.pdf,4.0,lu (image)
+stb,2023,produit_net_bancaire,685.079,MD,2023_individuel.pdf,4.0,lu (image)
+stb,2023,resultat_apres_modifications,42.144,MD,2023_individuel.pdf,4.0,lu (image)
+stb,2023,resultat_net,50.601,MD,2023_individuel.pdf,4.0,lu (image)
+stb,2023,roa,0.29,%,,,calcul
+stb,2023,roe,3.5,%,,,calcul
+stb,2023,total_actifs,14596.617,MD,2023_individuel.pdf,2.0,lu (image)
+stb,2024,charges_generales_exploitation,98.752,MD,2024_individuel.pdf,4.0,lu (image)
+stb,2024,coefficient_exploitation,52.7,%,,,calcul
+stb,2024,dotations_amortissements,17.195,MD,2024_individuel.pdf,4.0,lu (image)
+stb,2024,frais_personnel,226.648,MD,2024_individuel.pdf,4.0,lu (image)
+stb,2024,produit_net_bancaire,649.739,MD,2024_individuel.pdf,4.0,lu (image)
+stb,2024,resultat_apres_modifications,63.665,MD,2024_individuel.pdf,4.0,lu (image)
+stb,2024,resultat_net,82.5,MD,2024_individuel.pdf,4.0,lu (image)
+stb,2025,charges_generales_exploitation,97.833,MD,2025_individuel.pdf,4.0,lu (image)
+stb,2025,coefficient_exploitation,50.4,%,,,calcul
+stb,2025,dotations_amortissements,16.018,MD,2025_individuel.pdf,4.0,lu (image)
+stb,2025,frais_personnel,237.963,MD,2025_individuel.pdf,4.0,lu (image)
+stb,2025,produit_net_bancaire,698.552,MD,2025_individuel.pdf,4.0,lu (image)
+stb,2025,resultat_apres_modifications,65.93,MD,2025_individuel.pdf,4.0,lu (image)
+stb,2025,resultat_net,65.93,MD,2025_individuel.pdf,4.0,lu (image)
