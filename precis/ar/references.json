@@ -6553,6 +6553,28 @@
       "note": "citation-key: ins-pib-base-2015-2010-2020\nجدول البيانات المرفق ببلاغ 15 أوت 2021؛ العنوان وصفي."
     },
     {
+      "id": "ins-scnt97-presentation",
+      "type": "report",
+      "title": "Présentation générale du système de comptabilité nationale tunisien (SCNT97) : secteurs institutionnels, séquence des comptes, tableaux de synthèse",
+      "title-short": "INS, Présentation générale du SCNT97",
+      "author": [
+        {
+          "literal": "المعهد الوطني للإحصاء"
+        }
+      ],
+      "publisher": "المعهد الوطني للإحصاء، تونس",
+      "publisher-place": "تونس",
+      "issued": {
+        "date-parts": [
+          [
+            2021
+          ]
+        ]
+      },
+      "number-of-pages": "25",
+      "note": "citation-key: ins-scnt97-presentation\nوثيقة منهجية من 25 صفحة حول النظام التونسي للمحاسبة القومية (SCNT97): القطاعات المؤسسية وتسلسل الحسابات وجداول التأليف (TRE/TCEI/TOF). العنوان الفرنسي محفوظ في انتظار العنوان العربي الرسمي. الملف: tunisia-data, data/raw/ins-publications/comptes-de-la-nation/INS_2021-03_cnat_presentation_SCNT97.pdf."
+    },
+    {
       "id": "imf-tunisia-art4-2010",
       "type": "report",
       "title": "Tunisia: 2010 Article IV Consultation — Staff Report; Public Information Notice on the Executive Board Discussion; and Statement by the Executive Director for Tunisia",
@@ -12779,6 +12801,110 @@
       "URL": "https://www.pist.tn/jort/2009/2009A/Ja0512009.pdf",
       "title-short": "Loi n° 2009-32 du 23 juin 2009",
       "note": "citation-key: loi-2009-32-restauration-formation\nJORT n° 51 du 26 juin 2009, p. 1660. Article 3, lu sur le fascicule français : modifie le numéro 30 bis du tableau A du code de la TVA (restauration au profit des étudiants, des élèves et des apprenants des centres de formation professionnelle de base, selon un cahier des charges). Le registre jort_cache.db donne par erreur à cet enregistrement le numéro 2009-39 (recid 109742) ; le numéro imprimé est 2009-32, ce que confirment le sommaire et le texte du fascicule. Ne pas confondre avec la loi n° 2009-39 du 8 juillet 2009 (retraite avant l'âge légal). Édition arabe : intitulé arabe non lu (le titre français est conservé, selon l'usage du fonds), pagination arabe non relevée (champ page laissé vide). URL lue dans pdf_ar de jort_cache.db."
+    },
+    {
+      "id": "cotis-2009",
+      "type": "report",
+      "title": "Partage de la valeur ajoutée, partage des profits et écarts de rémunérations en France",
+      "author": [
+        {
+          "family": "Cotis",
+          "given": "Jean-Philippe"
+        }
+      ],
+      "publisher": "Institut national de la statistique et des études économiques / La Documentation française",
+      "issued": {
+        "date-parts": [
+          [
+            2009,
+            5
+          ]
+        ]
+      },
+      "URL": "http://gesd.free.fr/cotis9.pdf",
+      "note": "citation-key: cotis-2009\nRapport au Président de la République, rendu public le 13 mai 2009. Figures 1.1.a (part des salaires dans la VA des SNF) et 1.1.b (taux de marge des SNF), 1949-2007. Copie accessible : http://gesd.free.fr/cotis9.pdf."
+    },
+    {
+      "id": "askenazy-cette-sylvain-2011",
+      "type": "book",
+      "title": "Le partage de la valeur ajoutée",
+      "author": [
+        {
+          "family": "Askenazy",
+          "given": "Philippe"
+        },
+        {
+          "family": "Cette",
+          "given": "Gilbert"
+        },
+        {
+          "family": "Sylvain",
+          "given": "Arnaud"
+        }
+      ],
+      "collection-title": "Repères",
+      "publisher": "La Découverte",
+      "issued": {
+        "date-parts": [
+          [
+            2011
+          ]
+        ]
+      },
+      "note": "citation-key: askenazy-cette-sylvain-2011\nEnviron 124 pages. ISBN à compléter."
+    },
+    {
+      "id": "cas-delaveau-2009-nv133",
+      "type": "report",
+      "title": "Faut-il rééquilibrer le partage de la valeur ajoutée et des profits en faveur des salariés ?",
+      "author": [
+        {
+          "family": "Delaveau",
+          "given": "Bertille"
+        }
+      ],
+      "collection-title": "La Note de veille",
+      "number": "133",
+      "publisher": "Centre d'analyse stratégique",
+      "issued": {
+        "date-parts": [
+          [
+            2009,
+            5,
+            7
+          ]
+        ]
+      },
+      "URL": "https://strategie.archives-spm.fr/cas/content/note-de-veille-n%C2%B0133-mai-2009-analyse-faut-il-reequilibrer-le-partage-de-la-valeur-ajoutee-e.html",
+      "note": "citation-key: cas-delaveau-2009-nv133\nAuteur (signataire unique, vérifié sur la note) : Bertille Delaveau, Département des Affaires économiques et financières, Centre d'analyse stratégique. Olivier Passet dirigeait le département mais n'est pas signataire."
+    },
+    {
+      "id": "karabarbounis-neiman-2014",
+      "type": "article-journal",
+      "title": "The Global Decline of the Labor Share",
+      "author": [
+        {
+          "family": "Karabarbounis",
+          "given": "Loukas"
+        },
+        {
+          "family": "Neiman",
+          "given": "Brent"
+        }
+      ],
+      "container-title": "The Quarterly Journal of Economics",
+      "volume": "129",
+      "issue": "1",
+      "issued": {
+        "date-parts": [
+          [
+            2014
+          ]
+        ]
+      },
+      "page": "61-103",
+      "DOI": "10.1093/qje/qjt032",
+      "note": "citation-key: karabarbounis-neiman-2014"
     }
   ]
 }

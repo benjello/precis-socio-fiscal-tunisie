@@ -19273,3 +19273,246 @@ entries:
         مساهمين عموميين غير الدولة، ولا تساهم فيه الدولة مباشرة. يُضبط هيكلها التنظيمي وخططها
         الوظيفية بأمر منذ سنة 2006.
       synonymes: []
+
+  # --- Comptes de la nation (annexe transversale, option C) — passe 1 « termes » ---
+  # Formes arabes = propositions du § 7 de docs/notes/annexe-comptes-nation.md, à valider
+  # sur une édition arabe des Comptes de la nation (les éditions lues sont en français).
+  # Toutes laissées provisoire tant que la forme arabe canonique n'est pas confirmée.
+  - id: secteur-institutionnel
+    acronyme: null
+    statut: provisoire  # AR proposé, non confirmé sur édition arabe
+    references: [ins-scnt97-presentation]
+    source_definition: {ref: ins-scnt97-presentation, locator: "p. 5"}
+    voir_aussi: [administrations-publiques, pib]
+    fr:
+      terme: Secteur institutionnel
+      definition: >
+        Regroupement d'unités à autonomie de décision, classées selon leur
+        comportement économique : sociétés non financières, sociétés
+        financières, administrations publiques, ménages (y compris ISBLSM) et
+        reste du monde. Ossature des comptes nationaux tunisiens (SCNT97).
+      synonymes: []
+    ar:
+      terme: القطاع المؤسسي
+      definition: >
+        تجميع للوحدات ذات استقلالية القرار، تُصنَّف حسب سلوكها الاقتصادي: الشركات
+        غير المالية والشركات المالية والإدارات العمومية والعائلات (بما في ذلك
+        المؤسسات التي لا تستهدف الربح) وبقية العالم.
+      synonymes: []
+
+  - id: valeur-ajoutee-brute
+    acronyme: null
+    statut: provisoire  # AR proposé, non confirmé sur édition arabe
+    references: [ins-scnt97-presentation]
+    source_definition: {ref: ins-scnt97-presentation, locator: "p. 14"}
+    voir_aussi: [pib, impots-produits-nets-subventions]
+    fr:
+      terme: Valeur ajoutée (brute)
+      definition: >
+        Solde du compte de production : production diminuée de la consommation
+        intermédiaire. La somme des valeurs ajoutées des secteurs, augmentée des
+        impôts nets de subventions sur les produits, donne le PIB.
+      synonymes: []
+    ar:
+      terme: القيمة المضافة (الخام)
+      definition: >
+        رصيد حساب الإنتاج: الإنتاج مطروحًا منه الاستهلاك الوسيط. ومجموع القيم
+        المضافة للقطاعات، مضافًا إليه الضرائب على المنتجات صافيةً من الدعم، يساوي
+        الناتج المحلي الإجمالي.
+      synonymes: []
+
+  - id: revenu-exploitation-mixte
+    acronyme: null
+    statut: provisoire  # AR proposé, non confirmé sur édition arabe
+    references: [ins-scnt97-presentation]
+    source_definition: {ref: ins-scnt97-presentation, locator: "p. 15"}
+    voir_aussi: [valeur-ajoutee-brute]
+    fr:
+      terme: Revenu d'exploitation / revenu mixte
+      definition: >
+        Solde du compte d'exploitation : rémunération du capital après
+        rémunération du travail et impôts nets sur la production. On parle de
+        revenu mixte pour l'entreprise individuelle, où travail et capital ne
+        sont pas dissociés.
+      synonymes: [Excédent brut d'exploitation]
+    ar:
+      terme: فائض الاستغلال / الدخل المختلط
+      definition: >
+        رصيد حساب الاستغلال: مكافأة رأس المال بعد مكافأة العمل والضرائب الصافية
+        على الإنتاج. ويُسمّى دخلًا مختلطًا في المؤسسة الفردية حيث لا يُفصل العمل
+        عن رأس المال.
+      synonymes: []
+
+  - id: revenu-national-brut
+    acronyme: RNB
+    statut: provisoire  # AR proposé, non confirmé sur édition arabe
+    references: [ins-cnat-2015]
+    source_definition: {ref: ins-cnat-2015, locator: "p. 30"}
+    voir_aussi: [pib, revenu-national-disponible-brut]
+    fr:
+      terme: Revenu national brut
+      definition: >
+        PIB augmenté des revenus des facteurs (travail et capital) reçus de
+        l'extérieur, nets de ceux versés à l'extérieur. Solde des revenus
+        primaires de l'économie nationale.
+      synonymes: [RNB]
+    ar:
+      terme: الدخل الوطني الخام
+      definition: >
+        الناتج المحلي الإجمالي مضافًا إليه دخل عوامل الإنتاج (العمل ورأس المال)
+        المتلقّى من الخارج صافيًا ممّا يُدفع إلى الخارج. وهو رصيد الدخول الأولية
+        للاقتصاد الوطني.
+      synonymes: []
+
+  - id: revenu-national-disponible-brut
+    acronyme: RNDB
+    statut: provisoire  # AR proposé, non confirmé sur édition arabe
+    references: [ins-cnat-2015]
+    source_definition: {ref: ins-cnat-2015, locator: "p. 30"}
+    voir_aussi: [revenu-national-brut, epargne-nationale-brute]
+    fr:
+      terme: Revenu national disponible brut
+      definition: >
+        Revenu national brut augmenté des autres transferts courants reçus de
+        l'extérieur, nets de ceux versés. Il mesure le revenu dont dispose la
+        nation pour la consommation finale et l'épargne.
+      synonymes: [RNDB]
+    ar:
+      terme: الدخل الوطني المتاح الخام
+      definition: >
+        الدخل الوطني الخام مضافًا إليه التحويلات الجارية الأخرى المتلقّاة من
+        الخارج صافيةً ممّا يُدفع. ويقيس الدخل المتاح للأمّة للاستهلاك النهائي
+        والادّخار.
+      synonymes: []
+
+  - id: revenu-disponible-brut
+    acronyme: null
+    statut: provisoire  # AR proposé, non confirmé sur édition arabe
+    references: [ins-scnt97-presentation]
+    source_definition: {ref: ins-scnt97-presentation, locator: "p. 16"}
+    voir_aussi: [revenu-national-disponible-brut, consommation-finale]
+    fr:
+      terme: Revenu disponible brut
+      definition: >
+        Solde du compte de distribution secondaire du revenu d'un secteur
+        institutionnel : revenu primaire corrigé des impôts courants, cotisations
+        et prestations, et autres transferts courants. Il se partage entre
+        consommation finale et épargne.
+      synonymes: []
+    ar:
+      terme: الدخل المتاح الخام
+      definition: >
+        رصيد حساب التوزيع الثانوي للدخل لقطاع مؤسسي: الدخل الأولي بعد تعديله
+        بالضرائب الجارية والمساهمات والمنافع والتحويلات الجارية الأخرى. ويُوزَّع
+        بين الاستهلاك النهائي والادّخار.
+      synonymes: []
+
+  - id: consommation-finale
+    acronyme: null
+    statut: provisoire  # AR proposé, non confirmé sur édition arabe
+    references: [ins-scnt97-presentation]
+    source_definition: {ref: ins-scnt97-presentation, locator: "p. 16-17"}
+    voir_aussi: [revenu-disponible-brut, epargne-nationale-brute]
+    fr:
+      terme: Consommation finale
+      definition: >
+        Emploi du revenu disponible en biens et services consommés. La dépense
+        de consommation finale rapporte la dépense à qui la paie ; la
+        consommation finale effective la corrige des transferts sociaux en
+        nature (santé, éducation) pour l'attribuer à qui en bénéficie.
+      synonymes: []
+    ar:
+      terme: الاستهلاك النهائي
+      definition: >
+        استخدام الدخل المتاح في السلع والخدمات المستهلَكة. وتنسب نفقة الاستهلاك
+        النهائي النفقة إلى من يدفعها، في حين يصحّح الاستهلاك النهائي الفعلي ذلك
+        بالتحويلات الاجتماعية العينية لينسبه إلى المنتفع.
+      synonymes: []
+
+  - id: epargne-nationale-brute
+    acronyme: null
+    statut: provisoire  # AR proposé, non confirmé ; distincte de « epargne-nette » (sens budgétaire)
+    references: [ins-cnat-2015, ins-scnt97-presentation]
+    source_definition: {ref: ins-cnat-2015, locator: "p. 30"}
+    voir_aussi: [revenu-national-disponible-brut, consommation-finale, epargne-nette]
+    fr:
+      terme: Épargne nationale brute
+      definition: >
+        Revenu national disponible brut diminué de la consommation finale ;
+        solde du compte d'utilisation du revenu. Notion des comptes nationaux, à
+        distinguer de l'« épargne nette » budgétaire de la règle d'or des
+        collectivités locales.
+      synonymes: [Épargne brute]
+    ar:
+      terme: الادّخار الوطني الخام
+      definition: >
+        الدخل الوطني المتاح الخام مطروحًا منه الاستهلاك النهائي؛ رصيد حساب
+        استخدام الدخل. وهو مفهوم من الحسابات القومية، يُميَّز عن «الادّخار
+        الصافي» الميزاني لقاعدة الذهب الخاصة بالجماعات المحلية.
+      synonymes: []
+
+  - id: formation-brute-capital-fixe
+    acronyme: FBCF
+    statut: provisoire  # AR proposé, non confirmé sur édition arabe
+    references: [ins-scnt97-presentation, ins-cnat-2015]
+    source_definition: {ref: ins-scnt97-presentation, locator: "p. 14"}
+    voir_aussi: [capacite-besoin-financement, administrations-publiques]
+    fr:
+      terme: Formation brute de capital fixe
+      definition: >
+        Acquisitions, nettes de cessions, d'actifs fixes produits (bâtiments,
+        équipements, ouvrages) par les producteurs résidents au cours de la
+        période ; principale composante de l'investissement au compte de
+        capital.
+      synonymes: [FBCF, Investissement]
+    ar:
+      terme: التكوين الخام لرأس المال الثابت
+      definition: >
+        اقتناءات الأصول الثابتة المنتَجة (المباني والتجهيزات والمنشآت) صافيةً من
+        التفويتات، من قِبل المنتجين المقيمين خلال الفترة؛ وهي المكوّن الرئيسي
+        للاستثمار في حساب رأس المال.
+      synonymes: []
+
+  - id: capacite-besoin-financement
+    acronyme: null
+    statut: provisoire  # AR proposé, non confirmé sur édition arabe
+    references: [ins-scnt97-presentation]
+    source_definition: {ref: ins-scnt97-presentation, locator: "p. 17"}
+    voir_aussi: [formation-brute-capital-fixe, epargne-nationale-brute]
+    fr:
+      terme: Capacité ou besoin de financement
+      definition: >
+        Solde du compte de capital d'un secteur institutionnel, reporté au
+        compte financier : capacité de financement s'il est positif (le secteur
+        prête à d'autres), besoin de financement s'il est négatif (il emprunte).
+      synonymes: [Capacité de financement, Besoin de financement]
+    ar:
+      terme: القدرة على التمويل أو الحاجة إليه
+      definition: >
+        رصيد حساب رأس المال لقطاع مؤسسي، المُرحَّل إلى الحساب المالي: قدرة على
+        التمويل إن كان موجبًا (يُقرض القطاع غيره)، وحاجة إلى التمويل إن كان
+        سالبًا (يقترض).
+      synonymes: []
+
+  - id: impots-produits-nets-subventions
+    acronyme: null
+    statut: provisoire  # AR proposé, non confirmé sur édition arabe
+    references: [ins-scnt97-presentation, ins-cnat-2015]
+    source_definition: {ref: ins-scnt97-presentation, locator: "p. 9-10"}
+    voir_aussi: [pib, valeur-ajoutee-brute]
+    fr:
+      terme: Impôts sur les produits nets de subventions
+      definition: >
+        Impôts assis sur les produits (TVA, droits de consommation, droits de
+        douane…) diminués des subventions sur les produits. Leur ajout à la
+        somme des valeurs ajoutées aux prix de base fait passer au PIB aux prix
+        du marché.
+      synonymes: [Impôts nets sur les produits]
+    ar:
+      terme: الضرائب على المنتجات صافية من الدعم
+      definition: >
+        الضرائب المفروضة على المنتجات (الأداء على القيمة المضافة والمعاليم على
+        الاستهلاك والمعاليم الديوانية…) مطروحًا منها الدعم على المنتجات. وإضافتها
+        إلى مجموع القيم المضافة بأسعار الأساس تُفضي إلى الناتج المحلي الإجمالي
+        بأسعار السوق.
+      synonymes: []

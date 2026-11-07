@@ -6608,6 +6608,28 @@
       "note": "citation-key: ins-pib-base-2015-2010-2020\nClasseur « Données » joint au communiqué du 15 août 2021 ; le titre est descriptif, le fichier n'en porte pas. Seule publication lue qui donne 2010-2014 en base 2015."
     },
     {
+      "id": "ins-scnt97-presentation",
+      "type": "report",
+      "title": "Présentation générale du système de comptabilité nationale tunisien (SCNT97) : secteurs institutionnels, séquence des comptes, tableaux de synthèse",
+      "title-short": "INS, Présentation générale du SCNT97",
+      "author": [
+        {
+          "literal": "Institut national de la statistique"
+        }
+      ],
+      "publisher": "Institut national de la statistique, Tunisie",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2021
+          ]
+        ]
+      },
+      "number-of-pages": "25",
+      "note": "citation-key: ins-scnt97-presentation\nDocument méthodologique de 25 p. extrait/joint aux Comptes de la nation base 1997, décrivant le SCNT97 : les quatre secteurs institutionnels (SNF, sociétés financières, APU y.c. sécurité sociale, ménages y.c. ISBLSM) et le reste du monde, la séquence des comptes courants et d'accumulation avec leurs soldes (valeur ajoutée, revenu d'exploitation, revenu national, revenu disponible brut, épargne, capacité/besoin de financement), les tableaux TRE/TCEI/TOF et les équilibres ressources-emplois. Fichier : tunisia-data, data/raw/ins-publications/comptes-de-la-nation/INS_2021-03_cnat_presentation_SCNT97.pdf ; SHA-256 43873eec90f16205239d3453094ef62cc20d7b63333c81826f866b44408e324a. URL d'origine à compléter au catalogue (cf. docs/notes/annexe-comptes-nation.md § 5.5). Pages citées : p.4-6 (secteurs, séquence), p.7-10 (TRE/TCEI/TOF, ERE), p.13-17 (développement de la séquence)."
+    },
+    {
       "id": "imf-tunisia-art4-2010",
       "type": "report",
       "title": "Tunisia: 2010 Article IV Consultation — Staff Report; Public Information Notice on the Executive Board Discussion; and Statement by the Executive Director for Tunisia",
@@ -12693,6 +12715,110 @@
       },
       "issue": "33",
       "title-short": "Loi n° 88-38 du 6 mai 1988"
+    },
+    {
+      "id": "cotis-2009",
+      "type": "report",
+      "title": "Partage de la valeur ajoutée, partage des profits et écarts de rémunérations en France",
+      "author": [
+        {
+          "family": "Cotis",
+          "given": "Jean-Philippe"
+        }
+      ],
+      "publisher": "Institut national de la statistique et des études économiques / La Documentation française",
+      "issued": {
+        "date-parts": [
+          [
+            2009,
+            5
+          ]
+        ]
+      },
+      "URL": "http://gesd.free.fr/cotis9.pdf",
+      "note": "citation-key: cotis-2009\nRapport au Président de la République, rendu public le 13 mai 2009. Figures 1.1.a (part des salaires dans la VA des SNF) et 1.1.b (taux de marge des SNF), 1949-2007. Copie accessible : http://gesd.free.fr/cotis9.pdf."
+    },
+    {
+      "id": "askenazy-cette-sylvain-2011",
+      "type": "book",
+      "title": "Le partage de la valeur ajoutée",
+      "author": [
+        {
+          "family": "Askenazy",
+          "given": "Philippe"
+        },
+        {
+          "family": "Cette",
+          "given": "Gilbert"
+        },
+        {
+          "family": "Sylvain",
+          "given": "Arnaud"
+        }
+      ],
+      "collection-title": "Repères",
+      "publisher": "La Découverte",
+      "issued": {
+        "date-parts": [
+          [
+            2011
+          ]
+        ]
+      },
+      "note": "citation-key: askenazy-cette-sylvain-2011\nEnviron 124 pages. ISBN à compléter."
+    },
+    {
+      "id": "cas-delaveau-2009-nv133",
+      "type": "report",
+      "title": "Faut-il rééquilibrer le partage de la valeur ajoutée et des profits en faveur des salariés ?",
+      "author": [
+        {
+          "family": "Delaveau",
+          "given": "Bertille"
+        }
+      ],
+      "collection-title": "La Note de veille",
+      "number": "133",
+      "publisher": "Centre d'analyse stratégique",
+      "issued": {
+        "date-parts": [
+          [
+            2009,
+            5,
+            7
+          ]
+        ]
+      },
+      "URL": "https://strategie.archives-spm.fr/cas/content/note-de-veille-n%C2%B0133-mai-2009-analyse-faut-il-reequilibrer-le-partage-de-la-valeur-ajoutee-e.html",
+      "note": "citation-key: cas-delaveau-2009-nv133\nAuteur (signataire unique, vérifié sur la note p. finale) : Bertille Delaveau, Département des Affaires économiques et financières, Centre d'analyse stratégique. Olivier Passet dirigeait le département mais n'est pas signataire. Archives du CAS / France Stratégie ; PDF gesd.free.fr/eveil133.pdf."
+    },
+    {
+      "id": "karabarbounis-neiman-2014",
+      "type": "article-journal",
+      "title": "The Global Decline of the Labor Share",
+      "author": [
+        {
+          "family": "Karabarbounis",
+          "given": "Loukas"
+        },
+        {
+          "family": "Neiman",
+          "given": "Brent"
+        }
+      ],
+      "container-title": "The Quarterly Journal of Economics",
+      "volume": "129",
+      "issue": "1",
+      "issued": {
+        "date-parts": [
+          [
+            2014
+          ]
+        ]
+      },
+      "page": "61-103",
+      "DOI": "10.1093/qje/qjt032",
+      "note": "citation-key: karabarbounis-neiman-2014"
     }
   ]
 }
