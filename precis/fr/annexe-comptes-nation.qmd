@@ -32,13 +32,15 @@ crossref:
 
 Les volumes du précis rapportent souvent une grandeur à un agrégat des comptes nationaux : un impôt au [produit intérieur brut (PIB)](#g-pib), la masse salariale publique à la rémunération des salariés, les prestations d'un régime aux transferts sociaux. Ces agrégats ne sont pas des chiffres isolés : ils sont les soldes d'un système de comptes articulés, que l'Institut national de la statistique (INS) construit secteur par secteur et opération par opération. Cette annexe en expose l'ossature, pour que le lecteur situe une grandeur du précis dans l'ensemble macroéconomique dont elle est tirée.
 
+La comptabilité nationale n'est pas une photographie de l'économie : c'est une **représentation** chiffrée, simplifiée et cohérente, que le statisticien construit à partir de conventions explicites. Son mérite n'est pas de tout dire, mais de tout **relier** — chaque grandeur y trouve sa place dans un circuit où la valeur est d'abord produite, puis répartie entre ceux qui l'ont fait naître, redistribuée par l'impôt et les prestations, enfin dépensée ou épargnée. Situer une grandeur du précis, c'est d'abord savoir à quel moment de ce circuit elle se lit.
+
 L'annexe [Le PIB et ses changements de base](annexe-pib.html) traite, elle, tout ce qui touche au PIB-dénominateur et aux bases successives des comptes (1983, 1997, 2015) : écarts de niveau, recalcul du passé, quel PIB emploie chaque source, comment lire une part du PIB. La présente annexe ne refait pas cette histoire : chaque fois qu'une base est en jeu, elle renvoie aux [bases des comptes nationaux](annexe-pib.html#sec-pib-bases).
 
 Les montants sont en millions de dinars courants, abrégés MD. Sauf mention contraire, ils sont ceux de l'année 2021 en base 2015, lus dans l'édition 2019-2023 des *Comptes de la nation* [@ins-cnat-2015].
 
 ## Les secteurs institutionnels {#sec-cn-secteurs}
 
-L'INS répartit les unités de l'économie résidente en [secteurs institutionnels](#g-secteur-institutionnel) : des « regroupements d'unités capables de posséder des biens et des actifs […], d'exercer des activités économiques […] du fait de leur autonomie de décision », classées selon leur fonction principale et leur ressource principale [@ins-scnt97-presentation, p. 5]. Quatre secteurs résidents sont distingués, auxquels s'ajoute un cinquième compte, le reste du monde.
+Pour décrire une économie, il faut d'abord dire qui en sont les acteurs. La comptabilité nationale ne les suit pas un à un : elle rassemble ceux qui jouent le même rôle et vivent de la même ressource. C'est l'idée de [secteur institutionnel](#g-secteur-institutionnel) — un « regroupement d'unités capables de posséder des biens et des actifs […], d'exercer des activités économiques […] du fait de leur autonomie de décision », rangées selon leur **fonction principale** et leur **ressource principale** [@ins-scnt97-presentation, p. 5]. Une société se reconnaît ainsi à ce qu'elle produit pour le vendre, une administration à ce qu'elle rend des services qu'elle finance par le prélèvement, un ménage à ce qu'il tire sa ressource de son travail et de son patrimoine. L'INS distingue de la sorte quatre secteurs résidents, auxquels s'ajoute un cinquième compte, le reste du monde.
 
 | Secteur | Fonction principale | Ressource principale |
 |---|---|---|
@@ -57,7 +59,9 @@ Dans les tableaux publiés, l'INS détaille en outre des sous-secteurs : les org
 
 ## La séquence des comptes {#sec-cn-sequence}
 
-Les comptes de la nation ne sont pas un stock d'agrégats juxtaposés, mais « une séquence de six comptes courants et de deux comptes d'accumulation » [@ins-scnt97-presentation, p. 13]. Chaque compte est fermé par un solde : « le solde d'un compte est reporté dans le compte suivant et assure l'articulation de la séquence » [@ins-scnt97-presentation, p. 4]. Chaque solde peut être calculé **brut** ou **net**, selon qu'on déduit ou non la consommation de capital fixe, c'est-à-dire les amortissements [@ins-scnt97-presentation, p. 16].
+Les acteurs une fois identifiés, la comptabilité nationale raconte la **vie de la valeur**, étape par étape, comme un récit en plusieurs chapitres. Chaque chapitre est un compte, et chaque compte répond à une question simple : d'où vient le revenu, qui le reçoit, qu'en fait-il ? Chaque compte se referme sur un **solde**, reporté en tête du compte suivant ; c'est ce chaînage, et non les chiffres pris un à un, qui fait la cohérence de l'ensemble.
+
+Les comptes de la nation ne sont donc pas un stock d'agrégats juxtaposés, mais « une séquence de six comptes courants et de deux comptes d'accumulation » [@ins-scnt97-presentation, p. 13]. Chaque compte est fermé par un solde : « le solde d'un compte est reporté dans le compte suivant et assure l'articulation de la séquence » [@ins-scnt97-presentation, p. 4]. Chaque solde peut être calculé **brut** ou **net**, selon qu'on déduit ou non la consommation de capital fixe, c'est-à-dire les amortissements [@ins-scnt97-presentation, p. 16].
 
 | Compte | Objet | Solde |
 |---|---|---|
@@ -72,6 +76,22 @@ Les comptes de la nation ne sont pas un stock d'agrégats juxtaposés, mais « u
 : La séquence des comptes et leurs soldes {#tbl-cn-sequence}
 
 Source : [@ins-scnt97-presentation, p. 4 et pp. 13-17].
+
+Déroulons ce récit, compte par compte ; chaque notion s'y définit là où elle sert.
+
+**Le compte de production** part de tout ce que les unités résidentes fabriquent — la **production**, biens et services — et en retranche la **consommation intermédiaire**, c'est-à-dire les biens et services détruits ou transformés au cours même de la fabrication : l'énergie de l'atelier, les matières premières, les services achetés à d'autres entreprises. Ce qui reste est la [valeur ajoutée](#g-valeur-ajoutee-brute) : la richesse réellement créée par l'unité, une fois déduit ce qu'elle a dû consommer pour produire. Sommée sur toute l'économie, elle forme l'essentiel du PIB.
+
+**Le compte d'exploitation** répartit cette valeur ajoutée entre les facteurs qui l'ont produite. On en prélève d'abord la **rémunération des salariés** — salaires et cotisations sociales à la charge des employeurs — et les **impôts sur la production** nets de subventions. Ce qui subsiste rémunère le capital : c'est l'[excédent brut d'exploitation](#g-revenu-exploitation-mixte). Pour une entreprise individuelle — un commerçant, un artisan, un agriculteur — on ne sait pas séparer la part qui paie son travail de celle qui paie son capital : les deux restent soudées dans un **revenu mixte**. Cette impossibilité n'est pas un détail de comptable : elle brouille, on le verra à l'approche revenus, toute mesure du partage entre travail et capital.
+
+**Le compte d'affectation des revenus primaires** ajoute les **revenus de la propriété** qu'une unité reçoit — intérêts, dividendes, loyers — et retranche ceux qu'elle verse. Son solde, le **revenu primaire**, réunit tout ce qu'un agent tire de sa participation à la production et de son patrimoine. Agrégé sur la nation et augmenté des revenus nets reçus du reste du monde, il donne le [revenu national brut (RNB)](#g-revenu-national-brut).
+
+**Le compte de distribution secondaire du revenu** fait jouer la redistribution. On y ajoute les **transferts courants** reçus — au premier chef les prestations sociales — et l'on retranche ceux versés — impôts sur le revenu, cotisations sociales. Le solde est le [revenu disponible brut](#g-revenu-disponible-brut) : ce dont l'agent dispose vraiment pour consommer ou épargner, une fois l'impôt et la protection sociale passés par là.
+
+**Le compte d'utilisation du revenu** oppose à ce revenu disponible la dépense de [consommation finale](#g-consommation-finale). Ce qui n'est pas consommé est [épargné](#g-epargne-nationale-brute) : l'épargne n'est rien d'autre, ici, que le revenu disponible non dépensé en consommation.
+
+**Les deux comptes d'accumulation**, enfin, disent ce que devient cette épargne. Le **compte de capital** l'emploie, avec les transferts en capital, à financer l'investissement — la [formation brute de capital fixe (FBCF)](#g-formation-brute-capital-fixe) — et l'acquisition d'actifs non produits, comme les terrains ; son solde, la [capacité ou le besoin de financement](#g-capacite-besoin-financement), dit si l'agent a dégagé plus de ressources qu'il n'en a employées, ou l'inverse. Le **compte financier** retrace alors comment ce besoin est couvert, ou cette capacité placée, en créances et en dettes.
+
+Une dernière distinction court tout du long. Produire use les machines et les bâtiments ; cette usure — la **consommation de capital fixe**, ce qu'on appelle couramment les amortissements — doit être remplacée ne serait-ce que pour maintenir l'appareil productif en l'état. Un solde calculé avant de la déduire est dit **brut** ; après, **net**. Le précis cite le plus souvent les grandeurs **brutes**, que l'INS publie en premier et qui ne préjugent pas de l'ampleur, toujours incertaine, de ces amortissements.
 
 Agrégés au niveau de la nation, ces soldes forment un chaînage qui va du PIB à l'épargne [@ins-cnat-2015, éd. 2019-2023, p. 30] :
 
@@ -93,7 +113,7 @@ Trois grands tableaux ferment le système [@ins-scnt97-presentation, p. 1 et pp.
 
 ## Les trois approches du PIB {#sec-cn-approches}
 
-Le PIB se mesure de trois manières qui bouclent sur le même niveau : par la demande (les emplois), par les revenus, et par la production (la valeur ajoutée augmentée des impôts nets sur les produits). L'INS présente l'approche revenus comme « complémentaire des approches production et demande, qui sont équilibrées dans le Tableau des Entrées-Sorties » [@ins-scnt97-presentation, p. 14]. Les trois tableaux ci-dessous l'illustrent pour l'année 2021 en base 2015 ; chacun aboutit à **131 544,6 MD** (voir les [bases du PIB](annexe-pib.html#sec-pib-bases) pour la portée de cette base).
+La même richesse peut se compter à trois moments de sa vie : là où elle est **produite** (la valeur ajoutée), là où elle devient **revenu** pour ceux qui l'ont produite, et là où elle est **dépensée**. Comme toute production est le revenu de quelqu'un et la dépense d'un autre, ces trois comptages doivent, par construction, retomber sur le même total. De là trois manières de mesurer le PIB, qui bouclent sur le même niveau : par la demande (les emplois), par les revenus, et par la production (la valeur ajoutée augmentée des impôts nets sur les produits). L'INS présente l'approche revenus comme « complémentaire des approches production et demande, qui sont équilibrées dans le Tableau des Entrées-Sorties » [@ins-scnt97-presentation, p. 14]. Les trois tableaux ci-dessous l'illustrent pour l'année 2021 en base 2015 ; chacun aboutit à **131 544,6 MD** (voir les [bases du PIB](annexe-pib.html#sec-pib-bases) pour la portée de cette base).
 
 | Poste | 2021 |
 |---|---:|
@@ -120,7 +140,7 @@ Source : [@ins-cnat-2015, éd. 2019-2023, p. 24].
 
 Source : [@ins-cnat-2015, éd. 2019-2023, p. 27].
 
-L'approche production part de la valeur ajoutée des secteurs résidents et lui ajoute les [impôts sur les produits nets de subventions](#g-impots-produits-nets-subventions), c'est-à-dire l'écart entre le PIB et la valeur ajoutée totale aux prix de base.
+L'approche production part de la valeur ajoutée des secteurs résidents, mesurée **aux prix de base** — ce que le producteur encaisse réellement sur sa vente. Mais l'acheteur, lui, paie en sus les impôts assis sur les produits (TVA, droits de consommation), diminués des subventions qui allègent certains prix ; le PIB, lui, se compte **aux prix du marché**, ceux que l'acheteur acquitte. L'écart entre les deux — les [impôts sur les produits nets de subventions](#g-impots-produits-nets-subventions) — est donc précisément ce qu'il faut ajouter à la valeur ajoutée totale pour retrouver le PIB.
 
 | Secteur | Valeur ajoutée 2021 |
 |---|---:|
@@ -139,7 +159,88 @@ Sources : [@ins-cnat-2015, éd. 2019-2023, p. 55] pour la valeur ajoutée par se
 ::: {.callout-note}
 ## Deux présentations de la valeur ajoutée qui ne s'additionnent pas
 
-L'approche revenus (p. 27) et la valeur ajoutée par secteur institutionnel (p. 55) décomposent la même grandeur avec des niveaux légèrement différents : la somme des valeurs ajoutées sectorielles vaut 122 304,7 MD à la page 55, mais 120 318,7 MD dans la présentation de la page 27. Ce sont deux présentations de l'INS, à ne pas additionner l'une à l'autre. Le PIB total, lui, est identique par les trois voies (131 544,6 MD) [@ins-cnat-2015, éd. 2019-2023, p. 27 et p. 55].
+La somme des valeurs ajoutées sectorielles vaut 122 304,7 MD à la page 55, mais 120 318,7 MD dans la présentation de la page 27. L'écart, 1 986 MD, n'est pas une erreur : les deux chiffres mesurent la même valeur ajoutée à **deux prix différents**, et placent de part et d'autre d'une même ligne les **autres impôts sur la production nets de subventions** — les taxes assises sur l'activité elle-même (patente, taxes foncières professionnelles, taxes sur les salaires…), à distinguer des impôts sur les *produits* comme la TVA, qui suivent chaque unité vendue. Ces autres impôts pèsent 1 985,9 MD en 2021 [@ins-cnat-2015, éd. 2019-2023].
+
+- **Page 55, valeur ajoutée aux *prix de base*** (la présentation usuelle) : ces autres impôts sont comptés **dans** la valeur ajoutée des secteurs (122 304,7 MD) ; on n'ajoute ensuite que les impôts sur les produits nets de subventions (9 239,9 MD) pour atteindre le PIB.
+- **Page 27, valeur ajoutée au *coût des facteurs*** : la valeur ajoutée y est la seule somme rémunération + revenu d'exploitation, d'où ces autres impôts sont **exclus** (120 318,7 MD) ; on ajoute alors la *totalité* des impôts sur la production et les importations nets de subventions (11 225,9 MD = 9 239,9 sur les produits + 1 985,9 autres).
+
+Les mêmes 1 985,9 MD sont donc tantôt dedans, tantôt dehors ; le PIB (131 544,6 MD) est identique par les trois voies, mais les deux totaux de valeur ajoutée ne doivent pas s'additionner [@ins-cnat-2015, éd. 2019-2023, p. 27 et p. 55].
+:::
+
+### Parcourir les comptes, année par année {#sec-cn-navigation}
+
+L'exemple de 2021 n'a rien de particulier : la même identité se referme chaque année. Le curseur ci-dessous recompose le PIB pour toute année de la base 2015. À gauche, l'approche **production** — qui produit la valeur, secteur par secteur, jusqu'au PIB ; à droite, l'approche **revenus** — à qui elle revient. Les deux colonnes partent de données différentes et tombent sur le **même** PIB ; et la valeur ajoutée totale de la colonne de gauche égale, à l'arrondi près, la somme rémunération + revenu d'exploitation de celle de droite. C'est tout le propos de la comptabilité nationale : une seule richesse, plusieurs fenêtres qui se recoupent. (La navigation retient la présentation de la page 27 — valeur ajoutée aux prix de base égale rémunération plus revenu d'exploitation —, celle qui s'accorde exactement à l'approche revenus ; d'où un total de valeur ajoutée légèrement inférieur à celui du tableau @tbl-cn-pib-production ci-dessus, pour la raison dite à l'encadré précédent.)
+
+```{python}
+#| echo: false
+#| output: false
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../scripts")
+from figures import annexe_comptes_nation as acn
+ojs_define(comptes=acn.donnees_navigation())
+```
+
+::: {.content-visible when-format="html"}
+
+```{=html}
+<style>
+.comptes-nav{margin:1rem 0}
+.comptes-titre{font-size:1.05rem;margin:.3rem 0 .7rem}
+.comptes-grille{display:grid;grid-template-columns:1fr 1fr;gap:1.4rem}
+@media(max-width:700px){.comptes-grille{grid-template-columns:1fr}}
+table.table-comptes{width:100%;border-collapse:collapse;font-size:.92rem}
+table.table-comptes caption{caption-side:top;text-align:left;font-weight:600;padding:.2rem 0;color:#7a1f2b}
+table.table-comptes td{padding:.22rem .4rem;border-bottom:1px solid #eee}
+table.table-comptes td.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+table.table-comptes tr.sous-total td{font-weight:600;border-top:1px solid #ccc}
+table.table-comptes tr.pib td{font-weight:700;border-top:2px solid #7a1f2b;background:#faf3f4}
+.comptes-note{margin-top:.7rem;font-size:.9rem;color:#333;line-height:1.5}
+</style>
+```
+
+```{ojs}
+//| echo: false
+viewof annee = Inputs.range(
+  [comptes.annees[0], comptes.annees[comptes.annees.length - 1]],
+  {step: 1, value: comptes.annee_defaut, label: "Année", width: 340}
+)
+```
+
+```{ojs}
+//| echo: false
+comptesAnnee = {
+  const a = comptes.parAnnee[String(annee)] || comptes.parAnnee[String(comptes.annee_defaut)];
+  const f = x => x.toLocaleString("fr-FR", {minimumFractionDigits: 1, maximumFractionDigits: 1});
+  const prod = a.production, rev = a.revenus;
+  const table = (titre, lignes, total) => html`<table class="table-comptes">
+    <caption>${titre}</caption><tbody>
+      ${lignes.map(l => html`<tr class="${l.cls || ""}"><td>${l.label}</td><td class="num">${l.signe || ""}${f(l.val)}</td></tr>`)}
+      <tr class="pib"><td>= Produit intérieur brut</td><td class="num">${f(total)}</td></tr>
+    </tbody></table>`;
+  const prodLignes = [
+    ...prod.secteurs.map(s => ({label: "Valeur ajoutée — " + s.nom, val: s.va})),
+    {label: "Valeur ajoutée totale (aux prix de base)", val: prod.va_totale, cls: "sous-total"},
+    {label: "Impôts sur les produits nets de subventions", val: prod.impots_nets_produits, signe: "+ "}
+  ];
+  const revLignes = [
+    {label: "Rémunération des salariés (travail)", val: rev.remuneration},
+    {label: "Revenu d'exploitation (capital + revenu mixte)", val: rev.revenu_exploitation, signe: "+ "},
+    {label: "Impôts sur la production et les importations", val: rev.impots, signe: "+ "},
+    {label: "Subventions", val: rev.subventions, signe: "− "}
+  ];
+  return html`<div class="comptes-nav">
+    <div class="comptes-titre">Les comptes de l'année <b>${annee}</b> — base 2015, en millions de dinars courants</div>
+    <div class="comptes-grille">
+      ${table("Approche production — qui produit la valeur\u00a0?", prodLignes, a.pib)}
+      ${table("Approche revenus — à qui elle revient\u00a0?", revLignes, a.pib)}
+    </div>
+    <div class="comptes-note">Les deux colonnes tombent sur le même PIB, <b>${f(a.pib)} MD</b>. Cette année-là,
+      la rémunération des salariés pèse <b>${f(a.part_salaires_pib)}\u00a0%</b> du PIB, et <b>${f(a.part_salaires_snf)}\u00a0%</b>
+      de la valeur ajoutée des sociétés non financières. Source\u00a0: INS, <i>Comptes de la nation</i>, base 2015,
+      édition ${a.edition} [@ins-cnat-2015].</div>
+  </div>`;
+}
+```
+
 :::
 
 ## Les grandeurs citables {#sec-cn-agregats}
