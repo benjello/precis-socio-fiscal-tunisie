@@ -162,6 +162,13 @@ DOCUMENTS = [
         "ra-bh-2022",
     ),
     (
+        "BH",
+        2023,
+        "bvmt-rapports-archives/bh/20260518_RAPPORT_BH_2023_compressed-PART-3.pdf",
+        "bh_rapport",
+        "ra-bh-2023",
+    ),
+    (
         "BNA",
         2021,
         "bvmt-rapports/bna/bna-rapport-annuel-de-gestion-31-12-2021.pdf",
@@ -598,6 +605,11 @@ def stb_consolide_2019(contenu: str, exercice: int = 2019) -> list[list[str]]:
     return lignes
 
 
+# Le rapport 2023 (PART-3) coupe « SICAV BH-Capitalisation » en fin de ligne : le tableau n'imprime
+# que « tion BH-Capitalisa- », le reste du nom passant à la ligne précédente dans la prose de gauche.
+NOMS_BH_COUPURE = {"tion BH-Capitalisa-": "SICAV BH-Capitalisation"}
+
+
 def bh_rapport(contenu: str, exercice: int) -> list[list[str]]:
     """Tableau du périmètre d'un rapport annuel de la BH lu en colonne (`pdftotext -raw`) : deux exercices (N et N-1).
 
@@ -639,7 +651,7 @@ def bh_rapport(contenu: str, exercice: int) -> list[list[str]]:
             pays = "France" if "France" in suite else "Tunisie"
         else:
             continue
-        nom = propre(nom)
+        nom = NOMS_BH_COUPURE.get(nom.strip(), propre(nom))
         for annee, ctrl, inter in (
             (exercice, controle[0], interet[0]),
             (exercice - 1, controle[1], interet[1]),

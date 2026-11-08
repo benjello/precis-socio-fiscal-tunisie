@@ -314,12 +314,12 @@ La source est le rapport sur les entreprises publiques que le ministère des Fin
 :::::
 
 
-### Les filiales, de 2016 à 2022 {#sec-ep-ge-bh-filiales}
+### Les filiales, de 2016 à 2023 {#sec-ep-ge-bh-filiales}
 
-**Le groupe BH consolide onze entités autour de la banque de 2016 à 2022, dix filiales par intégration globale et une entreprise associée, la TFB, mise en équivalence ; sept noms imprimés en 2017 ne figurent plus dans le rapport de 2019, et les pourcentages d'intérêt de quatre entités varient de plus de quatre points.** Les rapports annuels de 2017, 2019, 2021 et 2022 donnent chacun deux exercices ; le rapport de 2017 annonce douze entités autour de la mère mais n'en imprime que onze dans son tableau. [@ra-bh-2017, p. 71 ; @ra-bh-2019, p. 103 ; @ra-bh-2021, p. 104-105 ; @ra-bh-2022, p. 73]
+**Le groupe BH consolide onze entités autour de la banque de 2016 à 2023, dix filiales par intégration globale et une entreprise associée, la TFB, mise en équivalence ; sept noms imprimés en 2017 ne figurent plus dans le rapport de 2019, et les pourcentages d'intérêt de quatre entités varient de plus de quatre points.** Les rapports annuels de 2017, 2019, 2021, 2022 et 2023 donnent chacun deux exercices ; le rapport de 2017 annonce douze entités autour de la mère mais n'en imprime que onze dans son tableau. [@ra-bh-2017, p. 71 ; @ra-bh-2019, p. 103 ; @ra-bh-2021, p. 104-105 ; @ra-bh-2022, p. 73 ; @ra-bh-2023, p. 138]
 
 - **Des noms qui changent entre le rapport de 2017 et celui de 2019.** Le rapport de 2017 imprime Modern Leasing, Assurance SALIM, SIM SICAR, SOPIVEL, Société Général Recouvrement, SICAF BH Epargne Investissement et SICAV BH-Placement ; celui de 2019, pour 2018 et 2019, BH Leasing, BH Assurances, BH Equity, BH Immo, BH Recouvrement, BH SICAF et SICAV BH-Capitalisation. Pour la SICAV, les rapports de 2019, 2021 et 2022 désignent la SICAV BH-Capitalisation comme l'ancienne SICAV BH-Placement [@ra-bh-2019, p. 75 ; @ra-bh-2021, p. 55 ; @ra-bh-2022, p. 33]. Pour les six autres noms, les rapports ne disent pas qu'il s'agit des mêmes sociétés : le tableau les met sur une même ligne d'après le pourcentage d'intérêt, qui varie de 0,04 à 0,38 point de 2017 à 2018 (52,84 % pour SIM SICAR en 2017, 53,02 % pour BH Equity en 2018), sauf pour Modern Leasing et BH Leasing (52,63 % en 2017, 56,09 % en 2018) [@ra-bh-2017 ; @ra-bh-2019].
-- **Des pourcentages stables pour sept entités, mobiles pour quatre.** BH Assurances, BH Equity, BH Immo, BH Invest, BH Recouvrement, BH SICAF et STIMEC gardent le même pourcentage d'intérêt à moins d'un point près de 2016 à 2022. Les quatre autres bougent de plus de quatre points : BH Leasing passe de 52,77 % en 2016 à 57,05 % de 2019 à 2022 ; la TFB, de 44,28 % en 2016 à 33,41 % en 2018, 27,86 % en 2020 et 2021, puis 18,79 % en 2022 ; la SICAV BH-Capitalisation, de 77,25 % en 2019 à 31,44 % en 2020, 21,24 % en 2021 et 20,25 % en 2022 ; la SICAV BH-Obligataire, de 5,14 % en 2016 à 12,25 % en 2019, puis 9,57 % en 2020 et 9,66 % en 2022 [@ra-bh-2017 ; @ra-bh-2019 ; @ra-bh-2021 ; @ra-bh-2022].
+- **Des pourcentages stables pour sept entités, mobiles pour quatre.** BH Assurances, BH Equity, BH Immo, BH Invest, BH Recouvrement, BH SICAF et STIMEC gardent le même pourcentage d'intérêt à moins d'un point près de 2016 à 2023. Les quatre autres bougent de plus de quatre points : BH Leasing passe de 52,77 % en 2016 à 57,05 % de 2019 à 2023 ; la TFB, de 44,28 % en 2016 à 33,41 % en 2018, 27,86 % en 2020 et 2021, 18,79 % en 2022, puis 19,99 % en 2023 ; la SICAV BH-Capitalisation, de 77,25 % en 2019 à 31,44 % en 2020, 21,24 % en 2021, 20,25 % en 2022 et 18,75 % en 2023 ; la SICAV BH-Obligataire, de 5,14 % en 2016 à 12,25 % en 2019, 9,57 % en 2020, 9,66 % en 2022 et 10,79 % en 2023 [@ra-bh-2017 ; @ra-bh-2019 ; @ra-bh-2021 ; @ra-bh-2022 ; @ra-bh-2023].
 
 ```{python}
 #| label: fig-ep-bh-filiales
@@ -329,17 +329,17 @@ import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
 from figures import cotees as ct
 ct.figure_evolution(
     "BH",
-    caption=("Les entités que la BH consolide, mère non comprise, de 2016 à 2022 (31 décembre) : "
-             "pourcentage d'intérêt du groupe, d'après les rapports annuels de 2017, 2019, 2021 et 2022. "
-             "Source : [@ra-bh-2017 ; @ra-bh-2019 ; @ra-bh-2021 ; @ra-bh-2022]"),
+    caption=("Les entités que la BH consolide, mère non comprise, de 2016 à 2023 (31 décembre) : "
+             "pourcentage d'intérêt du groupe, d'après les rapports annuels de 2017, 2019, 2021, 2022 et 2023. "
+             "Source : [@ra-bh-2017 ; @ra-bh-2019 ; @ra-bh-2021 ; @ra-bh-2022 ; @ra-bh-2023]"),
     note_lecture=(
         "Une ligne par entité, dans l'ordre de leur entrée dans le périmètre ; « ME » : mise en "
         "équivalence. Les noms d'avant 2019 sont rapprochés de ceux d'après par le pourcentage "
         "d'intérêt ; l'exercice 2018 est lu dans le rapport de 2019 et l'exercice 2020 dans celui de 2021. "
-        "Les exercices 2023 et 2024 ne sont pas lus : ils n'ont pas de colonne."))
+        "L'exercice 2024 n'est pas lu : il n'a pas de colonne."))
 ```
 
-::: {.chronologie-repliable titre="Les entités que la BH consolide, exercice par exercice, 2016-2022 : pourcentage d'intérêt"}
+::: {.chronologie-repliable titre="Les entités que la BH consolide, exercice par exercice, 2016-2023 : pourcentage d'intérêt"}
 
 ```{python}
 #| echo: false
@@ -348,10 +348,10 @@ import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
 from figures import cotees as ct
 ct.tableau_evolution(
     "BH",
-    caption=("Les entités que la BH consolide, mère non comprise, de 2016 à 2022 (31 décembre) : "
+    caption=("Les entités que la BH consolide, mère non comprise, de 2016 à 2023 (31 décembre) : "
              "pourcentage d'intérêt du groupe ; « (ME) » : mise en équivalence ; « – » : entité non "
-             "consolidée cet exercice-là. Rapports annuels de 2017, 2019, 2021 et 2022 (chacun donne "
-             "deux exercices). [@ra-bh-2017 ; @ra-bh-2019 ; @ra-bh-2021 ; @ra-bh-2022]"),
+             "consolidée cet exercice-là. Rapports annuels de 2017, 2019, 2021, 2022 et 2023 (chacun donne "
+             "deux exercices). [@ra-bh-2017 ; @ra-bh-2019 ; @ra-bh-2021 ; @ra-bh-2022 ; @ra-bh-2023]"),
     tbl_id="tbl-ep-bh-evolution")
 ```
 
@@ -402,7 +402,7 @@ ct.tableau_opinions(
 
 :::
 
-<!-- TODO (documentaliste) : BH : (a) sources des changements de nom de 2019 : Banque de l'habitat devenue BH Bank (AGE du 30 avril 2019 ; le rapport de 2019 dit « devenue ainsi BH Bank »), Assurances Salim devenue BH Assurance (AGE du 8 août 2019), Modern Leasing devenue BH Leasing (la seule pièce trouvée est la convocation de l'AGE extraordinaire du 11 octobre 2019 avec projet de résolutions, bvmt.com.tn/sites/default/files/societes/modern-leasing/assemblee-generale/ml-assemblee-generale-extraordinaire-11-10-2019.pdf : le projet approuve la dénomination BH LEASING mais le résultat du vote n'y est pas porté ; même siège, Immeuble Assurances SALIM, dans le rapport de 2019), SICAV BH-Placement devenue BH-Capitalisation (dite « ex » par les rapports de 2019, 2021 et 2022, cités dans le texte) ; pas de source trouvée pour SIM SICAR/BH Equity, SOPIVEL/BH Immo, Général Recouvrement/BH Recouvrement, SICAF BH Epargne Investissement/BH SICAF : rapprochement par les pourcentages seulement. Dans ALIAS_ENTITES (figures/cotees.py), seules les entrées BH Bank, BH Assurances et SICAV sont attestées par un acte ou un rapport ; celle de Modern Leasing l'est par un projet de résolutions. (b) rapport de 2017 : le texte annonce « 12 entités » (11 filiales par intégration globale et une entreprise associée) outre la mère, le tableau imprime la mère et 11 lignes (10 filiales par intégration globale et la TFB) ; le texte semble compter la mère parmi les 11 filiales, alors que ceux de 2019, 2021 et 2022 comptent 10 filiales hors mère (vérifié : même effectif de 10 filiales dans le tableau de 2018 lu dans le rapport de 2019). (c) exercices 2023 et 2024 : rapport de 2023 en deux parties sans tableau lisible par le texte, rapport de 2024 corrompu (à retélécharger). (d) exercice 2018 : états individuels absents de la page de la Bourse, rapport annuel 2018 de la BH à chercher dans l'Internet Archive. (e) exercice 2024 : le rapport des commissaires du fichier de la Bourse annule et remplace celui du 11 avril 2025 après le conseil d'administration du 19 avril 2025, alors que la page de la Bourse porte la date du 16 avril 2025 (106 jours) ; l'en-tête HTTP du fichier indique une dernière modification au 28 mai 2025 : le délai de 106 jours mesure probablement la première version, pas celle qui est lue ici. (f) exercice 2011 : le point 6 du rapport (contrôle fiscal de 2006 à 2009) est compté comme un septième motif parce qu'il figure dans la justification de l'opinion, avant l'opinion « sous réserves des points exposés ci-dessus », mais il n'exprime aucune limitation de l'audit. (g) la Bourse porte aussi les états de l'exercice 2025 (publiés le 24 avril 2026), non lus ici. -->
+<!-- TODO (documentaliste) : BH : (a) sources des changements de nom de 2019 : Banque de l'habitat devenue BH Bank (AGE du 30 avril 2019 ; le rapport de 2019 dit « devenue ainsi BH Bank »), Assurances Salim devenue BH Assurance (AGE du 8 août 2019), Modern Leasing devenue BH Leasing (la seule pièce trouvée est la convocation de l'AGE extraordinaire du 11 octobre 2019 avec projet de résolutions, bvmt.com.tn/sites/default/files/societes/modern-leasing/assemblee-generale/ml-assemblee-generale-extraordinaire-11-10-2019.pdf : le projet approuve la dénomination BH LEASING mais le résultat du vote n'y est pas porté ; même siège, Immeuble Assurances SALIM, dans le rapport de 2019), SICAV BH-Placement devenue BH-Capitalisation (dite « ex » par les rapports de 2019, 2021 et 2022, cités dans le texte) ; pas de source trouvée pour SIM SICAR/BH Equity, SOPIVEL/BH Immo, Général Recouvrement/BH Recouvrement, SICAF BH Epargne Investissement/BH SICAF : rapprochement par les pourcentages seulement. Dans ALIAS_ENTITES (figures/cotees.py), seules les entrées BH Bank, BH Assurances et SICAV sont attestées par un acte ou un rapport ; celle de Modern Leasing l'est par un projet de résolutions. (b) rapport de 2017 : le texte annonce « 12 entités » (11 filiales par intégration globale et une entreprise associée) outre la mère, le tableau imprime la mère et 11 lignes (10 filiales par intégration globale et la TFB) ; le texte semble compter la mère parmi les 11 filiales, alors que ceux de 2019, 2021 et 2022 comptent 10 filiales hors mère (vérifié : même effectif de 10 filiales dans le tableau de 2018 lu dans le rapport de 2019). (c) exercice 2024 : rapport corrompu (à retélécharger) ; l'exercice 2023 est désormais lu dans la troisième partie (PART-3) du rapport de 2023, tableau p. 138 du PDF (la coupure de « SICAV BH-Capitalisation » en fin de ligne est réparée par NOMS_BH_COUPURE dans perimetres_groupes_bancaires.py). (d) exercice 2018 : états individuels absents de la page de la Bourse, rapport annuel 2018 de la BH à chercher dans l'Internet Archive. (e) exercice 2024 : le rapport des commissaires du fichier de la Bourse annule et remplace celui du 11 avril 2025 après le conseil d'administration du 19 avril 2025, alors que la page de la Bourse porte la date du 16 avril 2025 (106 jours) ; l'en-tête HTTP du fichier indique une dernière modification au 28 mai 2025 : le délai de 106 jours mesure probablement la première version, pas celle qui est lue ici. (f) exercice 2011 : le point 6 du rapport (contrôle fiscal de 2006 à 2009) est compté comme un septième motif parce qu'il figure dans la justification de l'opinion, avant l'opinion « sous réserves des points exposés ci-dessus », mais il n'exprime aucune limitation de l'audit. (g) la Bourse porte aussi les états de l'exercice 2025 (publiés le 24 avril 2026), non lus ici. -->
 
 ## La Banque nationale agricole {#sec-ep-ge-bna}
 

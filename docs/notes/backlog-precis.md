@@ -3681,6 +3681,15 @@ Proposées par les notes et **non versées**, faute d'ancre dans le texte :
 
 ## Les entreprises publiques
 
+**Périmètre BH — exercice 2023 ajouté (8 novembre 2026).** Lu dans la troisième partie (PART-3) du
+rapport annuel de gestion 2023, p. 138 [@ra-bh-2023] : onze entités, les mêmes qu'en 2022 ; TFB
+18,79 → 19,99 %, SICAV BH-Capitalisation 20,25 → 18,75 %, SICAV BH-Obligataire 9,66 → 10,79 %. Le
+parseur `bh_rapport` est étendu (entrée de config 2023 + `NOMS_BH_COUPURE` pour la coupure de
+« SICAV BH-Capitalisation » en fin de ligne), un test couvre le cas. **Restes** : exercice **2024** (rapport
+corrompu, à retélécharger) ; le PDF 2023 étant hors git, la **régénération par le script n'a pas été
+rejouée ici** — à confirmer au prochain passage qui dispose du PDF. (Les matériaux de travail SOEs — note
+de consolidation, note de productivité, scripts — vivent désormais dans le dépôt `notes-tunisie`.)
+
 Volume X (`precis/fr/entreprises_publiques/`), **brouillon** du 11 octobre 2026 : un seul
 chapitre, `_relation_financiere.qmd` (`#sec-ep-relation`), écrit sur la note
 `docs/notes/entreprises-publiques-2026-10-11.md` et sur les onze séries versées dans

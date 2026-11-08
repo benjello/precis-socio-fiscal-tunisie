@@ -168,6 +168,25 @@ class TestBhRapport(unittest.TestCase):
         )
 
 
+BH_RAPPORT_2023 = """
+Les entreprises retenues dans le périmètre de consolidation
+BH BANK                        100,00      100,00      Intégration Globale      Tunisie
+tion BH-Capitalisa-             18,75       20,25      Intégration Globale      Tunisie
+TFB                             19,99       18,79      Mise en équivalence      France
+Méthodes de consolidation
+"""
+
+
+class TestBhRapport2023(unittest.TestCase):
+    def test_coupure_sicav_bh_capitalisation_reparee(self):
+        par = {(r[1], r[2]): r for r in p.bh_rapport(BH_RAPPORT_2023, 2023)}
+        # « tion BH-Capitalisa- » (nom coupé par la mise en page) est rétabli en SICAV BH-Capitalisation
+        self.assertIn(("2023", "SICAV BH-Capitalisation"), par)
+        self.assertNotIn(("2023", "tion BH-Capitalisa-"), par)
+        self.assertEqual(par[("2023", "SICAV BH-Capitalisation")][5], "18.75")
+        self.assertEqual(par[("2023", "TFB")][3:6], ["mise en équivalence", "", "19.99"])
+
+
 class TestBte(unittest.TestCase):
     def test_methode_pourcentages_et_nom_sans_etoile(self):
         par = {r[2]: r for r in p.bte(BTE_2009, 2009)}
