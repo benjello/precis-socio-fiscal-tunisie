@@ -983,6 +983,19 @@ La source est le rapport sur les entreprises publiques que le ministère des Fin
 
 **La Société tunisienne des marchés de gros (SOTUMAG) est une société anonyme constituée le 4 décembre 1980, cotée à la Bourse de Tunis depuis le 27 février 1999, dont l'objet est la gestion, l'organisation et l'exploitation des marchés de gros en Tunisie ; son activité principale est la gestion du marché d'intérêt national de Bir Kassâa, à Ben Arous.** Son capital est de 13,2 MD, en 13 200 000 actions, et l'État en détient 37,5 % [@bvmt-sotumag ; @bvmt-ef-sotumag-2024-individuel, p. 5].
 
+```{python}
+#| label: fig-ep-sotumag-va
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import grandes_entreprises as ge
+ge.figure(
+    "sotumag_va",
+    caption=("Valeur ajoutée brute de la SOTUMAG, exercices 2002-2024."),
+    note_lecture=("VA lue au schéma des soldes intermédiaires de gestion (niveau A) ; le ministère des Finances ne publie pas l'effectif de la SOTUMAG, d'où l'absence de valeur ajoutée par agent."),
+)
+```
+
 <!-- TODO (documentaliste) : (1) Tutelle de la SOTUMAG : non sourcée. Les rapports des commissaires aux comptes de 2016 et 2017 parlent d'un « ministère de tutelle » (19 agents mis à sa disposition de 2012 à 2016, créance de 991 485 DT) sans le nommer (bvmt-ef-sotumag-2016-individuel, p. 3-4 ; 2017, p. 24) ; le décret n° 2009-3474 du 9 novembre 2009 (organigramme, JORT n° 91 de 2009, p. 3475-3476) est classé par jort_cache.db sous « Commerce et Artisanat ». À lire dans le rapport du ministère des Finances (liste des entreprises publiques de 2021, où la SOTUMAG figure) et dans les décrets, puis à écrire. (2) Texte de création : la page de la Bourse cite la « loi n° 85-125 du 6 août 1985, portant création d'un marché d'intérêt national » ; jort_cache.db donne la loi n° 84-69 du 6 août 1984 relative aux marchés d'intérêt national (JORT n° 47 de 1984, p. 1756) et le décret n° 85-537 du 5 avril 1985 sur leur organisation et leur fonctionnement : numéro et année de la Bourse à rapprocher, textes à lire et à verser. Autres textes de la société dans le cache : décret n° 96-1758 du 23 septembre 1996 (avantages fiscaux du code d'incitations aux investissements), décret n° 2000-2363 du 17 octobre 2000 (statut du personnel, modifié en 2009 et 2022), décrets d'organigramme de 2005 et 2009, décret n° 2005-2880 (emplois fonctionnels). (3) Autres actionnaires publics : l'Office du commerce de la Tunisie détient 7,55 % (45,05 % avec l'État) ; la nature de la COOPMAG (18,37 %) et de Trabelsi et Fils (20,35 %) n'est pas établie. (4) Comptes de l'exercice 2025 : la page de la Bourse donne le résultat de 2025 mais aucun état financier ; exercices 2003 à 2005 et 2007 à 2015 : aucun état financier sur la page de la Bourse (lacune, non comblée). (5) Comptes consolidés : la société n'en publie pas (aucune page de la Bourse n'en porte ; la fiche de 2024 indique un seul établissement) ; pas de périmètre de consolidation. Les participations financières de la société (note 3 des états financiers) ne sont pas lues. (6) Les états de 2016, 2017 et 2020 sont des scans : texte lu par reconnaissance de caractères (tesseract) puis relu sur l'image ; montants à revérifier à l'occasion. -->
 
 ### Capital, résultats et dividende {#sec-ep-ge-sotumag-capital}

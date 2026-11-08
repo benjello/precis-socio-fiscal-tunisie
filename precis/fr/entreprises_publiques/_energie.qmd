@@ -33,6 +33,28 @@ ge.figure(
 )
 ```
 
+```{python}
+#| label: fig-ep-steg-va
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import grandes_entreprises as ge
+ge.figure(
+    "steg_va",
+    caption=("Valeur ajoutée brute de la STEG et valeur ajoutée par agent, exercices 2014-2023. "
+             "La valeur ajoutée est lue à la ligne « Valeur ajoutée brute » du schéma des soldes "
+             "intermédiaires de gestion des états financiers, en millions de dinars courants ; la "
+             "valeur ajoutée par agent la rapporte à l'effectif de fin d'exercice."),
+    note_lecture=(
+        "La valeur ajoutée est lue directement au schéma des soldes intermédiaires de gestion "
+        "(niveau de preuve A) ; elle comprend la subvention d'exploitation, portée en production "
+        "au sens de ce schéma, d'où la forte hausse à partir de 2021 (voir la subvention portée à "
+        "ses comptes, @fig-ep-steg-comptes). La valeur ajoutée par agent n'est tracée que pour les "
+        "exercices où l'effectif de fin d'année est publié par le ministère des Finances "
+        "(2017-2023)."),
+)
+```
+
 - **Ce que la loi lui confie.** [Le décret-loi de 1962](#r-ep-steg-1962) nationalise la production, le transport, la distribution, l'importation et l'exportation de l'électricité et du gaz combustible ; la production, le transport, l'importation et l'exportation du gaz naturel et le gaz liquéfié en sont exclus. Il en confie la gestion à la STEG, établissement public à caractère industriel et commercial. Ses tarifs sont établis pour lui permettre « de faire face à toutes ses charges d'exploitation » et de contribuer aux dépenses d'extension du réseau.
 - **Une subvention d'exploitation inscrite à ses comptes.** L'état de résultat de la STEG porte une subvention d'exploitation : 2 323,1 MD en 2014, aucune en 2016, 1 200,0 MD en 2018, 4 707,4 MD en 2022 et 4 030,1 MD en 2023. Les montants d'avant 2015 ne se comparent pas aux suivants : jusqu'en 2014, la ligne comprend la subvention indirecte, le gaz que la STEG reçoit à un prix de cession administré étant porté en produit ; à partir de 2015, elle achète son gaz au prix mondial ([« La compensation », 2015](../compensation/_electricite_gaz.html#sec-compensation-eg-2015)). Ce que cette subvention compense, et sa répartition entre les consommateurs, sont exposés dans le volume [« La compensation »](../compensation/_electricite_gaz.html#sec-compensation-eg-lien).
 - **Les modifications comptables de 2021 et de 2022.** Le résultat net de 2021 est de −42,7 MD ; après les « effets des modifications comptables », il est de +3 469,6 MD, et les capitaux propres redeviennent positifs, à 1 201,9 MD. En 2022, le résultat après modifications est de −2 716,1 MD, pour un résultat net de −381,2 MD.
@@ -172,6 +194,19 @@ ct.tableau_opinions(
 ## L'Entreprise tunisienne d'activités pétrolières (ETAP) {#sec-ep-etap}
 
 **L'ETAP, établissement public créé en 1972 pour les activités pétrolières, a un résultat net positif à chaque exercice que donnent ses rapports annuels de 2004 à 2024, sauf 2020 et 2021, et des produits d'exploitation qui passent de 372,6 MD en 2004 à 3 151,2 MD en 2022.**
+
+```{python}
+#| label: fig-ep-etap-va
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import grandes_entreprises as ge
+ge.figure(
+    "etap_va",
+    caption=("Valeur ajoutée brute de l'ETAP et valeur ajoutée par agent, exercices 2004-2024."),
+    note_lecture=("VA calculée (production moins consommations intermédiaires) et corroborée par l'identité indépendante résultat d'exploitation plus charges de personnel plus dotations (niveau B) ; le résidu tient à la variation du stock de pétrole brut, exclue. Les revenus comprennent pour une large part la commercialisation de la part de l'État dans les hydrocarbures : la valeur ajoutée par agent, très élevée, ne se compare pas à une entreprise industrielle."),
+)
+```
 
 ```{python}
 #| label: fig-ep-etap-rapports
@@ -543,6 +578,19 @@ La source est le rapport sur les entreprises publiques que le ministère des Fin
 ## La Société de transport des hydrocarbures par pipelines (SOTRAPIL) {#sec-ep-ge-sotrapil}
 
 Les opérations de cession de 1998 à 2008, dont l'ouverture du capital de la société en 2001, sont exposées au chapitre « Céder » (@sec-ep-cessions-operations) ; les résultats nets des grandes entreprises, prises ensemble, au chapitre « Les grandes entreprises » (@fig-ep-resultats-entreprises).
+
+```{python}
+#| label: fig-ep-sotrapil-va
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import grandes_entreprises as ge
+ge.figure(
+    "sotrapil_va",
+    caption=("Valeur ajoutée brute de la SOTRAPIL et valeur ajoutée par agent, exercices 2000-2025."),
+    note_lecture=("VA lue à la ligne « Valeur ajoutée brute » du schéma des soldes intermédiaires de gestion (niveau A) ; l'effectif n'étant publié par le ministère des Finances qu'à partir de 2018, la valeur ajoutée par agent se limite à ces exercices."),
+)
+```
 
 **La [SOTRAPIL](#g-sotrapil), société anonyme qui transporte par oléoduc des hydrocarbures de Bizerte à Radès et du carburant d'aviation de Radès à l'aéroport de Tunis-Carthage, n'a pas de subvention d'exploitation ni, de 2020 à 2023, d'emprunt ; son résultat net est positif à chaque exercice de 2017 à 2023, entre 6,2 MD et 9,4 MD, et son effectif passe de 113 agents en 2018 à 105 en 2023.**
 

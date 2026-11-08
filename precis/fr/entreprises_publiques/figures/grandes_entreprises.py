@@ -63,6 +63,7 @@ from figures.entreprises_publiques import (  # noqa: E402
 S_FICHES = "entreprises-publiques-fiches-entreprises"
 S_STEG = "steg-etats-financiers"
 S_ETAP = "etap-rapports-annuels"
+S_COMPTES = "entreprises-publiques-comptes-primaires"  # source unique VA + composantes
 
 # La figure de la fiche rapproche, pour la lecture, deux mises en page : ces paires désignent la même
 # ligne comptable sous deux libellés (fonds propres ; résultat net avant modifications).
@@ -1381,7 +1382,174 @@ def table_banque(entite: str):
         "Page imprimée": f["page_imprimee"], "Page du fichier": f["page_pdf"]})
 
 
+# --------------------------------------------------------------------------- #
+# Valeur ajoutée et productivité par entreprise (série unique des comptes primaires)
+# --------------------------------------------------------------------------- #
+
+# l'entité porte parfois un slug différent dans la série des effectifs (rapports MdF)
+_EFF_ENTITE = {"fouladh": "el_fouladh"}
+
+
+def _va_prod(entite: str):
+    """VA (série unique des comptes primaires) et effectif (série des rapports MdF,
+    dédoublonné à la dernière édition) d'une entité, pour la VA par agent."""
+    va = figtools.series(S_COMPTES)
+    va = va[(va["ep"] == entite) & (va["grandeur"] == "valeur_ajoutee")].dropna(subset=["valeur"])
+    vav = {int(r.annee): float(r.valeur) for r in va.itertuples()}
+    ev = {int(r.annee): str(r.evidence_va) for r in va.itertuples()}
+    src = {int(r.annee): (str(getattr(r, "source_fichier", "") or "").split("/")[-1],
+                          str(getattr(r, "page", "") or "")) for r in va.itertuples()}
+    # effectif : d'abord la série des rapports MdF, puis l'effectif collecté porté par la série
+    # unique elle-même (qui remonte plus loin pour certaines entités), prioritaire.
+    ef = figtools.series(S_EFFECTIFS_EP)
+    ef = ef[ef["entite"] == _EFF_ENTITE.get(entite, entite)].dropna(subset=["effectif"])
+    tri = "derniere_edition" if "derniere_edition" in ef.columns else "exercice"
+    ef = ef.sort_values(["exercice", tri]).drop_duplicates("exercice", keep="last")
+    eff = {int(r.exercice): float(r.effectif) for r in ef.itertuples()}
+    comptes = figtools.series(S_COMPTES)
+    efc = comptes[(comptes["ep"] == entite) & (comptes["grandeur"] == "effectif")].dropna(subset=["valeur"])
+    for r in efc.itertuples():
+        eff[int(r.annee)] = float(r.valeur)
+    return vav, eff, ev, src
+
+
+def fig_va_productivite(entite: str):
+    figtools.apply_lang_font()
+    vav, eff, ev, _ = _va_prod(entite)
+    ans = sorted(vav)
+    fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(9.6, 6.6), sharex=True)
+    for a in ans:
+        plein = ev.get(a) == "A"
+        _barre(ax1, a, vav[a], BLEU if plein else _clair(BLEU, 0.5), largeur=0.62,
+               texte=f"{a} — valeur ajoutée brute : {_n(vav[a], 1)} MD [niveau {ev.get(a)}]")
+    _style(ax1); _axe_md(ax1, "millions de dinars courants")
+    ax1.set_title("Valeur ajoutée brute", fontsize=9, loc="left")
+    ax1.legend(handles=[Patch(color=BLEU, label="VA brute imprimée (niveau A)"),
+                        Patch(color=_clair(BLEU, 0.5), label="VA calculée (niveaux B, C)")],
+               fontsize=7, frameon=False, loc="upper left")
+    xs = [a for a in ans if a in eff]
+    ys = [vav[a] * 1000.0 / eff[a] for a in xs]
+    if xs:
+        ax2.plot(xs, ys, color=VERT, lw=1.3, zorder=1)
+        for a, y in zip(xs, ys):
+            _point(ax2, a, y, VERT,
+                   texte=f"{a} — VA par agent : {y:.1f} kD ({int(eff[a])} agents)")
+    _style(ax2)
+    ax2.yaxis.set_major_formatter(FuncFormatter(lambda v, _: f"{v:,.0f}".replace(",", "\u202f")))
+    ax2.set_ylabel("milliers de dinars par agent", fontsize=8)
+    ax2.set_title("Valeur ajoutée par agent", fontsize=9, loc="left")
+    ax2.set_xticks(ans)
+    fig.tight_layout()
+    return fig
+
+
+def table_va_productivite(entite: str):
+    vav, eff, ev, src = _va_prod(entite)
+    return pd.DataFrame([
+        {"Exercice": a, "Valeur ajoutée (MD)": round(vav[a], 1),
+         "Effectif": int(eff[a]) if a in eff else None,
+         "VA par agent (kD)": round(vav[a] * 1000.0 / eff[a], 1) if a in eff else None,
+         "Niveau de preuve": ev.get(a),
+         "Fichier source": src.get(a, ("", ""))[0],
+         "Page": src.get(a, ("", ""))[1]}
+        for a in sorted(vav)])
+
+
+# --------------------------------------------------------------------------- #
+# Efficience et rentabilité des banques publiques (série des ratios bancaires)
+# --------------------------------------------------------------------------- #
+S_RATIOS = "entreprises-publiques-ratios-bancaires"
+
+
+def _ratios_bq(banque: str):
+    d = figtools.series(S_RATIOS)
+    d = d[d["ep"] == banque]
+    def dic(gr):
+        s = d[d["grandeur"] == gr].dropna(subset=["valeur"])
+        return {int(r.annee): float(r.valeur) for r in s.itertuples()}
+    return dic("coefficient_exploitation"), dic("roa"), dic("roe")
+
+
+def fig_efficience_bancaire(banque: str):
+    figtools.apply_lang_font()
+    coef, roa, roe = _ratios_bq(banque)
+    fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(9.6, 6.6), sharex=True)
+    xs = sorted(coef)
+    if xs:
+        ax1.plot(xs, [coef[a] for a in xs], color=ORANGE, lw=1.3)
+        for a in xs:
+            _point(ax1, a, coef[a], ORANGE, texte=f"{a} — coefficient d'exploitation : {coef[a]:.1f} %")
+    _style(ax1)
+    ax1.set_ylabel("pour cent", fontsize=8)
+    ax1.set_title("Coefficient d'exploitation (frais / produit net bancaire)", fontsize=9, loc="left")
+    for dic, coul, lib in ((roa, VERT, "ROA (résultat / actif)"), (roe, BLEU, "ROE (résultat / capitaux propres)")):
+        xx = sorted(dic)
+        if xx:
+            ax2.plot(xx, [dic[a] for a in xx], color=coul, lw=1.3, label=lib)
+            for a in xx:
+                _point(ax2, a, dic[a], coul, texte=f"{a} — {lib.split(' (')[0]} : {dic[a]:.2f} %")
+    ax2.axhline(0, color=NOIR, lw=0.7)
+    _style(ax2)
+    ax2.set_ylabel("pour cent", fontsize=8)
+    ax2.set_title("Rentabilité", fontsize=9, loc="left")
+    ax2.legend(fontsize=7, frameon=False, loc="best")
+    ax2.set_xticks(sorted(set(xs) | set(roa) | set(roe)))
+    fig.tight_layout()
+    return fig
+
+
+def table_efficience_bancaire(banque: str):
+    coef, roa, roe = _ratios_bq(banque)
+    ans = sorted(set(coef) | set(roa) | set(roe))
+    return pd.DataFrame([
+        {"Exercice": a,
+         "Coefficient d'exploitation (%)": coef.get(a),
+         "ROA (%)": roa.get(a),
+         "ROE (%)": roe.get(a)}
+        for a in ans])
+
+
 FIGURES = {
+    "steg_va": (lambda: fig_va_productivite("steg"), lambda: table_va_productivite("steg"),
+                (S_COMPTES, S_EFFECTIFS_EP), "fig_ep_steg_va"),
+    "etap_va": (lambda: fig_va_productivite("etap"), lambda: table_va_productivite("etap"),
+                (S_COMPTES, S_EFFECTIFS_EP), "fig_ep_etap_va"),
+    "sotrapil_va": (lambda: fig_va_productivite("sotrapil"), lambda: table_va_productivite("sotrapil"),
+                    (S_COMPTES, S_EFFECTIFS_EP), "fig_ep_sotrapil_va"),
+    "tunisair_va": (lambda: fig_va_productivite("tunisair"), lambda: table_va_productivite("tunisair"),
+                    (S_COMPTES, S_EFFECTIFS_EP), "fig_ep_tunisair_va"),
+    "ciments_va": (lambda: fig_va_productivite("ciments_bizerte"), lambda: table_va_productivite("ciments_bizerte"),
+                   (S_COMPTES, S_EFFECTIFS_EP), "fig_ep_ciments_va"),
+    "cpg_va": (lambda: fig_va_productivite("cpg"), lambda: table_va_productivite("cpg"),
+               (S_COMPTES, S_EFFECTIFS_EP), "fig_ep_cpg_va"),
+    "gct_va": (lambda: fig_va_productivite("gct"), lambda: table_va_productivite("gct"),
+               (S_COMPTES, S_EFFECTIFS_EP), "fig_ep_gct_va"),
+    "fouladh_va": (lambda: fig_va_productivite("fouladh"), lambda: table_va_productivite("fouladh"),
+                   (S_COMPTES, S_EFFECTIFS_EP), "fig_ep_fouladh_va"),
+    "sonede_va": (lambda: fig_va_productivite("sonede"), lambda: table_va_productivite("sonede"),
+                  (S_COMPTES, S_EFFECTIFS_EP), "fig_ep_sonede_va"),
+    "tt_va": (lambda: fig_va_productivite("tunisie_telecom"), lambda: table_va_productivite("tunisie_telecom"),
+              (S_COMPTES, S_EFFECTIFS_EP), "fig_ep_tt_va"),
+    "sncft_va": (lambda: fig_va_productivite("sncft"), lambda: table_va_productivite("sncft"),
+                 (S_COMPTES, S_EFFECTIFS_EP), "fig_ep_sncft_va"),
+    "transtu_va": (lambda: fig_va_productivite("transtu"), lambda: table_va_productivite("transtu"),
+                   (S_COMPTES, S_EFFECTIFS_EP), "fig_ep_transtu_va"),
+    "poste_va": (lambda: fig_va_productivite("poste"), lambda: table_va_productivite("poste"),
+                 (S_COMPTES, S_EFFECTIFS_EP), "fig_ep_poste_va"),
+    "autoroutes_va": (lambda: fig_va_productivite("tunisie_autoroutes"), lambda: table_va_productivite("tunisie_autoroutes"),
+                      (S_COMPTES, S_EFFECTIFS_EP), "fig_ep_autoroutes_va"),
+    "sotumag_va": (lambda: fig_va_productivite("sotumag"), lambda: table_va_productivite("sotumag"),
+                   (S_COMPTES, S_EFFECTIFS_EP), "fig_ep_sotumag_va"),
+    "ttn_va": (lambda: fig_va_productivite("ttn"), lambda: table_va_productivite("ttn"),
+               (S_COMPTES, S_EFFECTIFS_EP), "fig_ep_ttn_va"),
+    "stb_efficience": (lambda: fig_efficience_bancaire("stb"), lambda: table_efficience_bancaire("stb"),
+                       (S_RATIOS,), "fig_ep_stb_efficience"),
+    "bh_efficience": (lambda: fig_efficience_bancaire("bh"), lambda: table_efficience_bancaire("bh"),
+                      (S_RATIOS,), "fig_ep_bh_efficience"),
+    "bna_efficience": (lambda: fig_efficience_bancaire("bna"), lambda: table_efficience_bancaire("bna"),
+                       (S_RATIOS,), "fig_ep_bna_efficience"),
+    "bte_efficience": (lambda: fig_efficience_bancaire("bte"), lambda: table_efficience_bancaire("bte"),
+                       (S_RATIOS,), "fig_ep_bte_efficience"),
     "transferts": (fig_transferts, table_transferts, (S_TRANSFERTS_EP,),
                    "fig_ep_ge_transferts"),
     "resultats": (fig_resultats, table_resultats, (S_NETS_EP,), "fig_ep_ge_resultats"),

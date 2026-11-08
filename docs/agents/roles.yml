@@ -73,6 +73,18 @@ modeles:
     raisonnement: opus
     standard: sonnet
     mecanique: haiku
+  pi:
+    # Harnais pi (extension @tintinweb/pi-subagents). Le champ `model` d'un
+    # agent .pi/agents/<role>.md accepte un nom flou (« opus », « sonnet »,
+    # « haiku ») OU un `provider/modelId` ; pi le résout avec tolérance et, s'il
+    # ne le trouve pas, l'agent HÉRITE du modèle de la session parente. Laissé à
+    # null tant que l'humain n'a pas confirmé les modèles de son abonnement :
+    # sync_agents.py omet alors la ligne `model:` et l'agent hérite du parent
+    # (défaut documenté de pi). Renseigner ici (p. ex. raisonnement: opus) pour
+    # activer le choix par niveau. Ne rien inventer comme identifiant.
+    raisonnement: null
+    standard: null
+    mecanique: null
   openai:
     # à renseigner par l'humain : noms des modèles de l'abonnement (aucun nom
     # de modèle GPT n'est inventé ici)

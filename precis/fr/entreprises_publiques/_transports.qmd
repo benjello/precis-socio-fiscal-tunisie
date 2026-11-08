@@ -7,6 +7,19 @@ Ce chapitre présente, une par une, les entreprises publiques de transport : Tun
 **[Tunisie Autoroutes](#g-tunisie-autoroutes), société anonyme créée en 1992 qui exploite les autoroutes à péage que l'État lui concède, reçoit du budget 180,0 MD en 2019 et 170,0 MD en 2022, chiffre provisoire ; en perte de 2018 à 2021, elle dégage un résultat positif en 2022, l'année où ses comptes portent une subvention d'exploitation de 320,2 MD.**
 
 ```{python}
+#| label: fig-ep-autoroutes-va
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import grandes_entreprises as ge
+ge.figure(
+    "autoroutes_va",
+    caption=("Valeur ajoutée brute de Tunisie Autoroutes et valeur ajoutée par agent, exercices 2021-2022."),
+    note_lecture=("VA calculée (niveau B) ; la valeur de 2022 est retenue hors un élément exceptionnel de 324 MD porté en « autres produits » (retraitement), qui en ferait un chiffre non significatif."),
+)
+```
+
+```{python}
 #| label: fig-ep-autoroutes-budget
 #| echo: false
 #| output: asis
@@ -142,6 +155,19 @@ La source est le rapport sur les entreprises publiques que le ministère des Fin
 
 La subvention du transport public par société, les tarifs et l'abonnement scolaire et universitaire sont exposés dans le volume « La compensation » ([le transport public](../compensation/_transport.html#sec-compensation-transport)).
 
+```{python}
+#| label: fig-ep-transtu-va
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import grandes_entreprises as ge
+ge.figure(
+    "transtu_va",
+    caption=("Valeur ajoutée brute de la Transtu et valeur ajoutée par agent, exercices 2010-2021."),
+    note_lecture=("VA calculée (niveau C) ; elle est très majoritairement constituée de la compensation de service public versée par l'État. Hors cette compensation, la valeur ajoutée marchande propre de la Transtu est quasi nulle, voire négative."),
+)
+```
+
 **La [Transtu](#g-transtu), établissement public créé en 2003 par la fusion de la Société nationale des transports et de la Société du métro léger de Tunis, assure le transport public de personnes à Tunis et dans ses banlieues par autobus, métro léger et la ligne TGM ; elle reçoit du budget de 138,6 à 179,3 MD par an de 2017 à 2022, et son résultat net est de −187 à −230 MD par an de 2018 à 2023 dans chaque édition du rapport du ministère des Finances.**
 
 ```{python}
@@ -252,6 +278,19 @@ La source est le rapport sur les entreprises publiques que le ministère des Fin
 ## La Société nationale des chemins de fer tunisiens (SNCFT) {#sec-ep-sncft}
 
 **La SNCFT, société nationale qui exploite le réseau ferré depuis le 1^er^ janvier 1957, est en perte à chacun des exercices 2018 à 2023 dans chaque édition du rapport du ministère des Finances, et ses fonds propres passent de 772,7 MD fin 2021 à 630,7 MD fin 2022 dans l'édition LF 2025.**
+
+```{python}
+#| label: fig-ep-sncft-va
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import grandes_entreprises as ge
+ge.figure(
+    "sncft_va",
+    caption=("Valeur ajoutée brute de la SNCFT et valeur ajoutée par agent, exercices 2010-2023."),
+    note_lecture=("VA calculée (niveau C, cohérence de lecture) ; elle comprend la compensation de service public versée par l'État, intégrée aux produits du trafic. Hors cette compensation, la valeur ajoutée marchande propre est bien moindre (environ 10 MD en 2022)."),
+)
+```
 
 ```{python}
 #| label: fig-ep-sncft-fiches
@@ -414,6 +453,19 @@ Les éditions LF 2022, LF 2024 et LF 2025 du rapport sur les entreprises publiqu
 ## Tunisair {#sec-ep-ge-tunisair}
 
 La reprise par l'État, en 2014, des dettes de Tunisair envers l'Office de l'aviation civile et des aéroports, et les crédits du budget de 2014 et 2015 qui la concernent, sont exposés au chapitre « Restructurer » (@sec-ep-restr-transport) ; les garanties de l'État et la dette garantie de l'ensemble des entreprises, au chapitre « Les garanties, les prêts et les arriérés » (@sec-ep-garanties).
+
+```{python}
+#| label: fig-ep-tunisair-va
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import grandes_entreprises as ge
+ge.figure(
+    "tunisair_va",
+    caption=("Valeur ajoutée brute de Tunisair et valeur ajoutée par agent, exercices 2000-2023."),
+    note_lecture=("VA lue au schéma des soldes intermédiaires de gestion (niveau A) ; la chute de 2020 est l'effet de la pandémie. Une part des revenus est de la refacturation (pass-through)."),
+)
+```
 
 **[Tunisair](#g-tunisair), la compagnie aérienne nationale, dont l'État a souscrit les augmentations de capital de 1961 à 1984 et garantit des emprunts d'achat d'avions, ne reçoit pas de subvention d'exploitation ; le budget lui verse 35,4 MD en 2020 et 41,2 MD en 2021, et elle est en perte à chacun des exercices 2018 à 2023 dans chaque édition du rapport du ministère des Finances, dont les fiches ne donnent pour elle que des chiffres provisoires, estimés ou probables.**
 

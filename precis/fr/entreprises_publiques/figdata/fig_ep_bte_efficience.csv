@@ -1,0 +1,29 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-11-07
+# séries (tunisia_data) : entreprises-publiques-ratios-bancaires
+# sources (citation) : @bvmt-etats-financiers
+# fiches : sources/entreprises-publiques.md
+# méthode/hypothèses : COMPTES DE L'ENTREPRISE, PAS UNE SOURCE BUDGÉTAIRE. Toutes les grandeurs brutes sont LUES À L'IMAGE des états financiers (pdftoppm puis lecture), après qu'une construction antérieure sur une couche générée se soit révélée fausse (résultat net mal lu, frais de personnel reclassés). CHAÎNAGE N/N-1 vérifié (valeur d'une année = colonne comparative de l'EF suivant) ; les retraitements entre éditions sont signalés dans les remarques des fichiers raw, non corrigés. CONTRÔLE À L'IDENTIQUE : le coefficient d'exploitation calculé concorde au dixième avec le `bq_coefficient_exploitation` des fiches du ministère des Finances sur 2018-2023 (toutes les banques, y compris STB 2020 désormais résolu). RÉSULTAT POUR ROA/ROE = résultat APRÈS modifications comptables (ce que retient le ministère ; = résultat net quand il n'y a pas de ligne de modifications). ROE EN CASE VIDE QUAND LES CAPITAUX PROPRES SONT ≤ 0 (le ratio explose à fonds propres impairés ; on lit alors le ROA). BILAN (total actifs, capitaux propres) non lu toutes les années → ROA/ROE sur 2000 et 2008-2024 selon la banque ; coefficient d'exploitation sur toute la période. BH antérieur à 2016 : EF en dinars (convertis en MD). Quelques exercices (BH 2004/2006/2007/2018, BTE 2005/2007/2018) absents en individuel, repris de la colonne comparative de l'EF suivant.
+# note : Coefficient d'exploitation, ROA et ROE de la Banque de Tunisie et des Émirats, exercices 2004-2024.
+Exercice,Coefficient d'exploitation (%),ROA (%),ROE (%)
+2003,38.9,1.68,3.2
+2004,32.9,1.71,3.5
+2005,34.8,1.91,3.9
+2006,38.3,1.8,4.0
+2007,38.0,1.65,4.6
+2008,44.5,1.65,5.3
+2009,51.6,1.43,5.4
+2010,51.2,1.42,5.6
+2011,56.5,0.47,2.0
+2012,64.0,0.22,1.1
+2013,62.0,-0.54,-3.2
+2014,73.6,-1.37,-8.6
+2015,82.2,0.18,1.3
+2016,69.4,0.1,0.7
+2017,73.2,0.08,0.6
+2018,72.8,0.08,0.7
+2019,76.8,0.52,4.3
+2020,87.4,-1.43,-14.3
+2021,83.1,-2.49,-35.9
+2022,98.9,-2.27,-33.4
+2023,103.4,-2.5,-68.6
+2024,101.9,-2.08,-82.5
