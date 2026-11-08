@@ -16916,6 +16916,39 @@
       "note": "citation-key: ra-bh-2022\nRapport annuel de l'exercice 2022, consulté dans la capture de l'Internet Archive du 07/05/2024 du site de l'éditeur. Copie locale : tunisia-data/data/raw/entreprises-publiques/bvmt-rapports-archives/bh/20240507_Rapport-Annuel-Fr_2022-PART3.pdf (924791 octets, SHA-256 761542bb32e920a12f57c39de93f0635adea70449b42b748662a6557758bdc67), ignorée par git. Cité pour : périmètre de consolidation de l'exercice 2022 et de l'exercice précédent. Preuve : couche texte du PDF, tableau lu ligne à ligne par scripts/perimetres_groupes_bancaires.py."
     },
     {
+      "id": "ra-bh-2023",
+      "type": "report",
+      "title": "Rapport annuel de gestion 2023",
+      "author": [
+        {
+          "literal": "Banque de l'habitat"
+        }
+      ],
+      "publisher": "Banque de l'habitat",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2023
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            3
+          ]
+        ]
+      },
+      "title-short": "BH, rapport annuel 2023",
+      "URL": "https://web.archive.org/web/20260518025446/https://bhbank.tn/sites/default/files/2025-10/RAPPORT%20BH%202023_compressed-PART-3.pdf",
+      "archive": "Internet Archive (Wayback Machine)",
+      "archive_location": "https://bhbank.tn/sites/default/files/2025-10/RAPPORT%20BH%202023_compressed-PART-3.pdf",
+      "note": "citation-key: ra-bh-2023\nRapport annuel de gestion de l'exercice 2023, troisième partie (PART-3) de la numérisation en plusieurs fichiers consulté dans la capture de l'Internet Archive du site de l'éditeur. Copie locale : tunisia-data/data/raw/entreprises-publiques/bvmt-rapports-archives/bh/20260518_RAPPORT_BH_2023_compressed-PART-3.pdf (1971306 octets, SHA-256 7afe36a61cdd01bbc078be930c66a3d7a1a46de773ac71f862d4ce40c1bfd08a), ignorée par git. Cité pour : périmètre de consolidation au 31 décembre 2023 et au 31 décembre 2022 (entités, méthode et pourcentage d'intérêt ; le rapport ne donne pas le pourcentage de contrôle), tableau de la page 138 du PDF. Preuve : couche texte du PDF, tableau lu ligne à ligne par scripts/perimetres_groupes_bancaires.py."
+    },
+    {
       "id": "bvmt-ef-bh-2011-individuel",
       "type": "report",
       "title": "États financiers individuels 2011",
