@@ -73,6 +73,15 @@ et sur `pist.tn` en ligne. Voir `docs/notes/outillage-sources.md`.
   adjacent renvoie à une issue ouverte sur `openfisca-tunisia` qui énumère les valeurs et dates à
   sourcer, et le constat figure aussi dans `docs/notes/backlog-modele.md`. URL du JORT sur `pist.tn`
   uniquement, dans l'édition de la langue du fichier.
+- **Textes juridiques : citer une adresse publique, archiver dans la base législative.** Une citation
+  donne au lecteur une source **publique** qu'il peut ouvrir : d'abord l'officiel externe quand il
+  existe — le JORT sur `pist.tn`, dans l'édition de la langue —, sinon l'URL d'origine publique du
+  texte. Un texte **non publié au JORT** (circulaire, note, texte ancien) est archivé dans la **base
+  législative `tunisia-legislative-references`** (metadata-only : la fiche porte `external_path`,
+  `sha256` et l'émetteur ; le PDF reste hors Git) et se cite `type: report` par son `id` de catalogue
+  et son auteur, **sans URL inventée**. On attribue au **ministère émetteur**, jamais au canal de
+  transmission ; **aucune donnée personnelle** dans ces dépôts publics. `tunisia-data` ne porte
+  **aucun texte législatif**.
 - **Série à fenêtre : on verse ce qui remonte à une trentaine d'années, et l'on dit que la série
   est incomplète.** Un paramètre dont les textes sont lus et datés sur une fenêtre d'environ trente
   ans (pour un état au 1er janvier 2026 : depuis 1996 environ) peut être versé dans le modèle sans

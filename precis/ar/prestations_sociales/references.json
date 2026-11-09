@@ -40,8 +40,46 @@
       "issue": "89",
       "title-short": "Loi n° 98-91 du 2 novembre 1998"
     },
-    {"id": "loi81-5", "type": "legislation", "title": "Loi n° 81-5 du 12 février 1981, modifiant la loi n° 60-30 du 14 décembre 1960, relative à l'organisation des régimes de sécurité sociale", "title-short": "Loi n° 81-5 du 12 février 1981", "container-title": "Journal officiel de la République tunisienne", "issue": "9", "page": "263-265", "issued": {"date-parts": [[1981, 2, 12]]}, "URL": "https://www.pist.tn/jort/1981/1981A/Ja00981.pdf", "note": "citation-key: loi81-5\nJORT n° 9 du 13 février 1981, pp. 263-265. Lu à l'image en entier le 1er novembre 2026. Art. 1 : remplace les art. 34 1°, 66, 67, 77, 82, 83, 84, 85, 86, 87 et 93 al. 4 de la loi n° 60-30 et ajoute les art. 84 bis, 87 bis, 87 ter et 87 quater : art. 77 et 82, indemnité journalière de maladie et de couches aux 2/3 du salaire journalier moyen (prolongations de longue maladie : 2/3 pendant trois ans, puis 50 %) ; art. 83, indemnité de décès après 50 jours de travail dans les deux trimestres ou 80 jours dans les quatre ; art. 84, multiples de 90, 45, 30 et 10 indemnités journalières ; art. 85-87 ter, capital décès des ayants droit (une annuité de salaire, plafond de 6 SMIG sur 2 400 heures, majoration d'un douzième par période de 12 mois de cotisation, 10 % par enfant à charge, minimum d'un SMIG sur 2 400 heures ; réduction de 50 à 10 % pour les bénéficiaires d'une pension, selon l'âge) ; art. 93 al. 4, validité du carnet de soins. Art. 2 : art. 24 bis (fonds spécial de prêts) et art. 91 4° (ascendants à charge de 60 ans au moins, sans autre couverture de soins). Pas de clause d'effet : exécutoire le 15 février 1981 (un jour franc après la publication du 13 février). Art. 34 1°, 66 et 67 : champ des salariés (organismes internationaux) et remboursement à l'employeur des congés payés à la naissance et des congés des jeunes travailleurs. Édition arabe : titre arabe et pagination non relevés (pages françaises reprises)."},
-    {"id": "arrete-1963-05-15-longue-duree", "type": "legislation", "title": "Arrêté du secrétaire d'État à la santé publique et aux affaires sociales du 15 mai 1963, fixant la liste des maladies de longue durée prévues par la sécurité sociale", "title-short": "Arrêté du 15 mai 1963 (maladies de longue durée)", "container-title": "Journal officiel de la République tunisienne", "issue": "24", "page": "695", "issued": {"date-parts": [[1963, 5, 15]]}, "URL": "https://www.pist.tn/jort/1963/1963A/Ja02463.pdf", "note": "citation-key: arrete-1963-05-15-longue-duree\nJORT n° 24 du 17 mai 1963, p. 695. Lu à l'image le 1er novembre 2026. Article unique : liste de l'art. 72, alinéa 2, de la loi n° 60-30 : tuberculose, maladie mentale, affection cancéreuse, poliomyélite. Pas de clause d'effet : exécutoire le 19 mai 1963 (un jour franc après la publication du 17 mai). Édition arabe : titre arabe et pagination non relevés (pages françaises reprises)."},
+    {
+      "id": "loi81-5",
+      "type": "legislation",
+      "title": "Loi n° 81-5 du 12 février 1981, modifiant la loi n° 60-30 du 14 décembre 1960, relative à l'organisation des régimes de sécurité sociale",
+      "title-short": "Loi n° 81-5 du 12 février 1981",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "9",
+      "page": "263-265",
+      "issued": {
+        "date-parts": [
+          [
+            1981,
+            2,
+            12
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/1981/1981A/Ja00981.pdf",
+      "note": "citation-key: loi81-5\nJORT n° 9 du 13 février 1981, pp. 263-265. Lu à l'image en entier le 1er novembre 2026. Art. 1 : remplace les art. 34 1°, 66, 67, 77, 82, 83, 84, 85, 86, 87 et 93 al. 4 de la loi n° 60-30 et ajoute les art. 84 bis, 87 bis, 87 ter et 87 quater : art. 77 et 82, indemnité journalière de maladie et de couches aux 2/3 du salaire journalier moyen (prolongations de longue maladie : 2/3 pendant trois ans, puis 50 %) ; art. 83, indemnité de décès après 50 jours de travail dans les deux trimestres ou 80 jours dans les quatre ; art. 84, multiples de 90, 45, 30 et 10 indemnités journalières ; art. 85-87 ter, capital décès des ayants droit (une annuité de salaire, plafond de 6 SMIG sur 2 400 heures, majoration d'un douzième par période de 12 mois de cotisation, 10 % par enfant à charge, minimum d'un SMIG sur 2 400 heures ; réduction de 50 à 10 % pour les bénéficiaires d'une pension, selon l'âge) ; art. 93 al. 4, validité du carnet de soins. Art. 2 : art. 24 bis (fonds spécial de prêts) et art. 91 4° (ascendants à charge de 60 ans au moins, sans autre couverture de soins). Pas de clause d'effet : exécutoire le 15 février 1981 (un jour franc après la publication du 13 février). Art. 34 1°, 66 et 67 : champ des salariés (organismes internationaux) et remboursement à l'employeur des congés payés à la naissance et des congés des jeunes travailleurs. Édition arabe : titre arabe et pagination non relevés (pages françaises reprises)."
+    },
+    {
+      "id": "arrete-1963-05-15-longue-duree",
+      "type": "legislation",
+      "title": "Arrêté du secrétaire d'État à la santé publique et aux affaires sociales du 15 mai 1963, fixant la liste des maladies de longue durée prévues par la sécurité sociale",
+      "title-short": "Arrêté du 15 mai 1963 (maladies de longue durée)",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "24",
+      "page": "695",
+      "issued": {
+        "date-parts": [
+          [
+            1963,
+            5,
+            15
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/1963/1963A/Ja02463.pdf",
+      "note": "citation-key: arrete-1963-05-15-longue-duree\nJORT n° 24 du 17 mai 1963, p. 695. Lu à l'image le 1er novembre 2026. Article unique : liste de l'art. 72, alinéa 2, de la loi n° 60-30 : tuberculose, maladie mentale, affection cancéreuse, poliomyélite. Pas de clause d'effet : exécutoire le 19 mai 1963 (un jour franc après la publication du 17 mai). Édition arabe : titre arabe et pagination non relevés (pages françaises reprises)."
+    },
     {
       "id": "loi97-58",
       "type": "legislation",
@@ -4562,7 +4600,7 @@
           ]
         ]
       },
-      "note": "citation-key: circulaire1988-044-13\nNon publiée au Journal officiel ; texte reçu du CRES le 20 octobre 2026 (fichier intitulé « du premier janvier 1988 », corps daté du 1er juin 1988). Applique le décret n° 88-186 du 6 février 1988 et l'arrêté du 14 mars 1988 : financement (1 % + 1 %, 3 % + 1,5 %, 6 % + 3 % à l'étranger), renonciation, état nominatif mensuel."
+      "note": "citation-key: circulaire1988-044-13\nNon publiée au Journal officiel ; (fichier intitulé « du premier janvier 1988 », corps daté du 1er juin 1988). Applique le décret n° 88-186 du 6 février 1988 et l'arrêté du 14 mars 1988 : financement (1 % + 1 %, 3 % + 1,5 %, 6 % + 3 % à l'étranger), renonciation, état nominatif mensuel."
     },
     {
       "id": "decret57-39",
@@ -4919,7 +4957,192 @@
       "URL": "https://www.pist.tn/jort/1997/1997A/Ja06197.pdf",
       "note": "citation-key: loi97-60\nJORT n° 61 du 1er août 1997, pp. 1359-1360 (éd. fr.) ; éd. ar. p. 1421, lue à l'image. Art. 1er : remplace l'alinéa c de l'art. 2 de la loi n° 72-2 (enfants mineurs à charge et non assurés ; droit ouvert au-delà de 20 ans pour les enfants infirmes ou atteints de maladie incurable, et pour la fille sans ressources). Art. 2 : effet au 1er mai 1997. Mesure jumelle de la loi n° 97-58 (CNSS). Lu à l'image le 14 octobre 2026."
     },
-    {"id": "loi63-26", "type": "legislation", "title": "Loi n° 63-26 du 15 juillet 1963, portant modification de la loi n° 60-30 du 14 décembre 1960 relative à l'organisation des régimes de sécurité sociale", "title-short": "Loi n° 63-26 du 15 juillet 1963", "container-title": "Journal officiel de la République tunisienne", "issue": "33", "page": "977-981", "issued": {"date-parts": [[1963, 7, 15]]}, "URL": "https://www.pist.tn/jort/1963/1963A/Ja03363.pdf", "note": "citation-key: loi63-26\nJORT n° 33 des 12-16 juillet 1963, pp. 977-981. Art. 1er : article 11 nouveau (le conseil décide à la majorité des voix, voix prépondérante du président-directeur général en cas de partage ; quorum de la moitié des membres, sauf seconde convocation sur le même ordre du jour). Art. 2 à 8 : articles 35, 37, 38, 48 (alinéa 1), 49, 50 et 52 ; la suite récrit notamment les articles 62, 69, 71, 72, 88, 98, 99 et 105. Aucun des articles 12 à 34 n'est modifié (l'article 1er vise l'article 11, l'article 2 l'article 35). Rectificatif au JORT n° 35 des 26-30 juillet 1963, p. 1036 : corrige le texte de l'article 16 de la loi (p. 979). Fascicule sans couche texte, pages 977 à 981 lues à l'image le 31 octobre 2026 ; art. 8 à 14, lus à l'image le 2 novembre 2026 (pp. 977-979 de l'édition française) : art. 52 (quatre premiers enfants, enfants pris en garde, substitution en cas de décès), art. 53 (allocataires, dernier alinéa de l'attributaire), art. 56, art. 57 dernier alinéa, art. 59 (la personne qui recueille la garde), art. 61 (montant uniforme de 7,875 D à partir de 52,500 D de rémunération), art. 62 ; art. 15 : art. 69 complété (enfants de l'assuré). Aucune clause d'effet propre à ces articles : exécutoire un jour franc après la publication ; loi du 15 juillet, fascicule daté des 12 et 16 juillet, soit au plus tôt le 17 juillet 1963. Article transitoire (« à titre transitoire ») : l'effet pécuniaire de la substitution d'un enfant décédé commence au premier jour du trimestre civil suivant la publication. URL d'après pdf_fr de jort_cache.db, non testée en ligne. Édition arabe : titre arabe et pagination non relevés (pages françaises reprises)."},
-    {"id": "decret81-731", "type": "legislation", "title": "Décret n° 81-731 du 29 mai 1981, portant extension du bénéfice des prestations familiales", "title-short": "Décret n° 81-731 du 29 mai 1981", "container-title": "Journal officiel de la République tunisienne", "issue": "38", "page": "1334-1335", "issued": {"date-parts": [[1981, 5, 29]]}, "URL": "https://www.pist.tn/jort/1981/1981A/Ja03881.pdf", "note": "citation-key: decret81-731\nJORT n° 38 des 2-5 juin 1981, pp. 1334-1335. Art. 1 : la majoration pour salaire unique de l'article 65 bis de la loi n° 60-30 reste acquise dans les cas de maintien des allocations (art. 56 à 59), liquidée comme l'allocation familiale. Art. 2 : article 55 nouveau du décret n° 74-499 du 27 avril 1974 : allocations familiales et majoration maintenues aux titulaires de pensions de vieillesse, d'invalidité ou de survivants, au titre des enfants qui y ouvraient droit à la cessation définitive d'activité, sauf prestations de même nature d'un autre régime légal ; payées avec les arrérages. Art. 3 : effet au 1er mai 1981. Lu à l'image le 2 novembre 2026. URL d'après pdf_fr de jort_cache.db, non testée en ligne."}
+    {
+      "id": "loi63-26",
+      "type": "legislation",
+      "title": "Loi n° 63-26 du 15 juillet 1963, portant modification de la loi n° 60-30 du 14 décembre 1960 relative à l'organisation des régimes de sécurité sociale",
+      "title-short": "Loi n° 63-26 du 15 juillet 1963",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "33",
+      "page": "977-981",
+      "issued": {
+        "date-parts": [
+          [
+            1963,
+            7,
+            15
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/1963/1963A/Ja03363.pdf",
+      "note": "citation-key: loi63-26\nJORT n° 33 des 12-16 juillet 1963, pp. 977-981. Art. 1er : article 11 nouveau (le conseil décide à la majorité des voix, voix prépondérante du président-directeur général en cas de partage ; quorum de la moitié des membres, sauf seconde convocation sur le même ordre du jour). Art. 2 à 8 : articles 35, 37, 38, 48 (alinéa 1), 49, 50 et 52 ; la suite récrit notamment les articles 62, 69, 71, 72, 88, 98, 99 et 105. Aucun des articles 12 à 34 n'est modifié (l'article 1er vise l'article 11, l'article 2 l'article 35). Rectificatif au JORT n° 35 des 26-30 juillet 1963, p. 1036 : corrige le texte de l'article 16 de la loi (p. 979). Fascicule sans couche texte, pages 977 à 981 lues à l'image le 31 octobre 2026 ; art. 8 à 14, lus à l'image le 2 novembre 2026 (pp. 977-979 de l'édition française) : art. 52 (quatre premiers enfants, enfants pris en garde, substitution en cas de décès), art. 53 (allocataires, dernier alinéa de l'attributaire), art. 56, art. 57 dernier alinéa, art. 59 (la personne qui recueille la garde), art. 61 (montant uniforme de 7,875 D à partir de 52,500 D de rémunération), art. 62 ; art. 15 : art. 69 complété (enfants de l'assuré). Aucune clause d'effet propre à ces articles : exécutoire un jour franc après la publication ; loi du 15 juillet, fascicule daté des 12 et 16 juillet, soit au plus tôt le 17 juillet 1963. Article transitoire (« à titre transitoire ») : l'effet pécuniaire de la substitution d'un enfant décédé commence au premier jour du trimestre civil suivant la publication. URL d'après pdf_fr de jort_cache.db, non testée en ligne. Édition arabe : titre arabe et pagination non relevés (pages françaises reprises)."
+    },
+    {
+      "id": "decret81-731",
+      "type": "legislation",
+      "title": "Décret n° 81-731 du 29 mai 1981, portant extension du bénéfice des prestations familiales",
+      "title-short": "Décret n° 81-731 du 29 mai 1981",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "38",
+      "page": "1334-1335",
+      "issued": {
+        "date-parts": [
+          [
+            1981,
+            5,
+            29
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/1981/1981A/Ja03881.pdf",
+      "note": "citation-key: decret81-731\nJORT n° 38 des 2-5 juin 1981, pp. 1334-1335. Art. 1 : la majoration pour salaire unique de l'article 65 bis de la loi n° 60-30 reste acquise dans les cas de maintien des allocations (art. 56 à 59), liquidée comme l'allocation familiale. Art. 2 : article 55 nouveau du décret n° 74-499 du 27 avril 1974 : allocations familiales et majoration maintenues aux titulaires de pensions de vieillesse, d'invalidité ou de survivants, au titre des enfants qui y ouvraient droit à la cessation définitive d'activité, sauf prestations de même nature d'un autre régime légal ; payées avec les arrérages. Art. 3 : effet au 1er mai 1981. Lu à l'image le 2 novembre 2026. URL d'après pdf_fr de jort_cache.db, non testée en ligne."
+    },
+    {
+      "id": "circulaire-1986-18-pnafn",
+      "type": "report",
+      "title": "منشور الوزارة الأولى عدد 18 المؤرخ في 4 جوان 1986، المتعلق بالبرنامج الوطني لإعانة العائلات المعوزة",
+      "title-short": "Circulaire n° 18 du 4 juin 1986",
+      "author": [
+        {
+          "literal": "Premier ministère"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            1986,
+            6,
+            4
+          ]
+        ]
+      },
+      "note": "citation-key: circulaire-1986-18-pnafn\nActe fondateur opérationnel du programme (aide annoncée le 1er mai 1986) ; recensement des familles par commissions régionales et locales ; l'enquête de consommation de 1985 dénombre environ 80 000 familles sous le seuil de pauvreté (120 D par an et par personne en milieu urbain, 95 D hors milieu urbain).\nNon publiée au Journal officiel ; archivée dans la base législative tunisia-legislative-references (id circulaire_1986_018)."
+    },
+    {
+      "id": "circulaire-1987-21-pnafn",
+      "type": "report",
+      "title": "المنشور المشترك لوزير الداخلية ووزير الشؤون الاجتماعية عدد 21 المؤرخ في 20 أوت 1987، المتعلق بالبرنامج الوطني لإعانة العائلات المعوزة",
+      "title-short": "Circulaire n° 21 du 20 août 1987",
+      "author": [
+        {
+          "literal": "Ministères de l'intérieur et des affaires sociales"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            1987,
+            8,
+            20
+          ]
+        ]
+      },
+      "note": "citation-key: circulaire-1987-21-pnafn\nPrécise les critères de sélection des familles (sans soutien, à bas revenu) et l'enquête sociale.\nNon publiée au Journal officiel ; archivée dans la base législative tunisia-legislative-references (id circulaire_1987_021)."
+    },
+    {
+      "id": "circulaire-1993-22-pauvrete",
+      "type": "report",
+      "title": "منشور الوزير الأول عدد 22 المؤرخ في 19 أفريل 1993، المتعلق بتركيز سجلات جهوية وسجل وطني للفقر",
+      "title-short": "Circulaire n° 22 du 19 avril 1993",
+      "author": [
+        {
+          "literal": "Premier ministère"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            1993,
+            4,
+            19
+          ]
+        ]
+      },
+      "note": "citation-key: circulaire-1993-22-pauvrete\nInstitue des registres régionaux et un registre national de la pauvreté (conseil ministériel restreint du 17 décembre 1991) ; cite 101 000 familles bénéficiaires.\nNon publiée au Journal officiel ; archivée dans la base législative tunisia-legislative-references (id circulaire_1993_022)."
+    },
+    {
+      "id": "circulaire-1998-5-pnafn",
+      "type": "report",
+      "title": "منشور وزير الشؤون الاجتماعية عدد 5 المؤرخ في 16 ماي 1998، المتعلق بإحالة التصرف في البرنامج الوطني لإعانة العائلات المعوزة إلى الجهات واعتماد سجل الفقر",
+      "title-short": "Circulaire n° 5 du 16 mai 1998",
+      "author": [
+        {
+          "literal": "Ministère des affaires sociales"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            1998,
+            5,
+            16
+          ]
+        ]
+      },
+      "note": "citation-key: circulaire-1998-5-pnafn\nConfie la gestion du programme aux régions et adopte le registre de la pauvreté (conseil ministériel restreint du 18 février 1998).\nNon publiée au Journal officiel ; archivée dans la base législative tunisia-legislative-references (id circulaire_1998_005)."
+    },
+    {
+      "id": "circulaire-2009-11-pnafn",
+      "type": "report",
+      "title": "منشور وزير الشؤون الاجتماعية والتضامن والتونسيين بالخارج عدد 11 المؤرخ في 28 أوت 2009، المتعلق بالبرنامج الوطني لإعانة العائلات المعوزة وسجل الفقر",
+      "title-short": "Circulaire n° 11 du 28 août 2009",
+      "author": [
+        {
+          "literal": "Ministère des affaires sociales, de la solidarité et des Tunisiens à l'étranger"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2009,
+            8,
+            28
+          ]
+        ]
+      },
+      "note": "citation-key: circulaire-2009-11-pnafn\nRefond les conditions d'octroi de l'aide permanente et l'usage du registre (références aux circulaires n° 21 de 1987, n° 5 de 1998, n° 28 de 2005).\nNon publiée au Journal officiel ; archivée dans la base législative tunisia-legislative-references (id circulaire_2009_011)."
+    },
+    {
+      "id": "circulaire-2011-05-27-pnafn",
+      "type": "report",
+      "title": "المنشور المشترك لوزير الداخلية (عدد 12) ووزير الشؤون الاجتماعية (عدد 3) المؤرخ في 27 ماي 2011، المتعلق بالبرنامج الوطني لإعانة العائلات المعوزة",
+      "title-short": "Circulaire conjointe n° 12/3 du 27 mai 2011",
+      "author": [
+        {
+          "literal": "Ministères de l'intérieur et des affaires sociales"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2011,
+            5,
+            27
+          ]
+        ]
+      },
+      "note": "citation-key: circulaire-2011-05-27-pnafn\nSimplifie l'octroi des aides permanentes et resserre le ciblage ; c'est le texte auquel le rapport BAD- de 2013 rattache le seuil de 585 dinars de revenu annuel moyen ajusté.\nNon publiée au Journal officiel ; archivée dans la base législative tunisia-legislative-references (id circulaire_2011_012)."
+    },
+    {
+      "id": "circulaire-2013-4-cartes-soins",
+      "type": "report",
+      "title": "منشور وزير الشؤون الاجتماعية عدد 4 المؤرخ في 6 مارس 2013، المتعلق بإحداث بطاقات علاج بالتعريفة المنخفضة صالحة لمدة سنة قابلة للتجديد",
+      "title-short": "Circulaire n° 4 du 6 mars 2013",
+      "author": [
+        {
+          "literal": "Ministère des affaires sociales"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2013,
+            3,
+            6
+          ]
+        ]
+      },
+      "note": "citation-key: circulaire-2013-4-cartes-soins\nCrée des cartes de soins à tarif réduit valables un an renouvelable (application du décret n° 2012-2522 du 16 octobre 2012 modifiant le décret n° 98-409).\nNon publiée au Journal officiel ; archivée dans la base législative tunisia-legislative-references (id circulaire_2013_004)."
+    }
   ]
 }
