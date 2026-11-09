@@ -378,10 +378,34 @@ def fig_cac(groupe: str, societe: str, delais_ecartes: tuple[int, ...] = ()):
     utilises = {t for ligne in d.loc[~d["opinion"].str.startswith("sans"), "themes"] for t in ligne.split(";")}
     themes = [t for t in THEMES_CAC if t in utilises]  # une ligne par thème que le groupe porte : pas de ligne vide
     sans_reserve = not themes
-    if sans_reserve:  # groupe sans aucune réserve sur les exercices lus : une seule ligne
-        # compacte (exercices lus en blanc, non lus en gris), au lieu d'un mur de thèmes
-        # d'autres sociétés en cases vides.
-        themes = ["__aucun_motif__"]
+    if sans_reserve:
+        # Groupe sans aucune réserve sur les exercices lus : le constat s'écrit (titre), il ne
+        # se dessine pas — ni carte des thèmes ni panneau des motifs, tous deux vides. Reste le
+        # seul panneau qui porte des données : le délai de publication, quand la Bourse le donne.
+        constat = ft(f"Aucun motif de réserve sur les {len(lus)} exercices lus "
+                     f"({min(lus)}-{max(lus)})")
+        pts = sorted((int(r["exercice"]), int(r["jours"])) for _, r in delais.iterrows())
+        if not pts:  # ni réserve ni délai : une ligne de texte, pas de graphe vide
+            fig, ax = plt.subplots(figsize=(9.5, 1.2))
+            ax.text(0.01, 0.5, constat, fontsize=10, va="center")
+            ax.axis("off")
+            return fig
+        fig, ax = plt.subplots(figsize=(9.5, 3.2))
+        xs = list(range(len(exercices)))
+        ax.plot([exercices.index(x) for x, _ in pts], [j for _, j in pts], "-o",
+                color="#0969da", ms=4)
+        for x, jours in pts:
+            ax.annotate(str(jours), (exercices.index(x), jours), xytext=(0, 6),
+                        textcoords="offset points", ha="center", fontsize=7)
+        ax.set_title(constat + ft(" — délai de publication des états financiers annuels "
+                                  "individuels (jours après le 31 décembre)"),
+                     fontsize=9, loc="left")
+        ax.set_ylim(0, max([j for _, j in pts] + [100]) * 1.2)
+        ax.set_xticks(xs, [str(x) for x in exercices], fontsize=8)
+        ax.grid(axis="y", color="#d0d7de", lw=0.5)
+        for cote in ("top", "right"):
+            ax.spines[cote].set_visible(False)
+        return fig
     carte = np.full((len(themes), len(exercices)), np.nan)
     nombres = np.zeros(len(exercices))
     for _, r in d.iterrows():
@@ -394,23 +418,18 @@ def fig_cac(groupe: str, societe: str, delais_ecartes: tuple[int, ...] = ()):
     # une société sans page de la Bourse n'a pas de délai de publication : la figure se trace sans la courbe des délais
     # sans délai de publication (société sans page de la Bourse), la figure s'arrête au nombre de motifs
     avec_delais = not delais.empty
-    h1 = 0.4 if sans_reserve else 3.2  # panneau des thèmes réduit à sa seule ligne
     if avec_delais:
-        fig, (a1, a2, a3) = plt.subplots(3, 1, figsize=(9.5, 4.8 if sans_reserve else 8), sharex=True, gridspec_kw={"height_ratios": [h1, 1, 1.3], "hspace": 0.12 if not sans_reserve else 0.3})
+        fig, (a1, a2, a3) = plt.subplots(3, 1, figsize=(9.5, 8), sharex=True, gridspec_kw={"height_ratios": [3.2, 1, 1.3], "hspace": 0.12})
     else:
-        fig, (a1, a2) = plt.subplots(2, 1, figsize=(9.5, 3.6 if sans_reserve else 6), sharex=True, gridspec_kw={"height_ratios": [h1, 1], "hspace": 0.12 if not sans_reserve else 0.3})
+        fig, (a1, a2) = plt.subplots(2, 1, figsize=(9.5, 6), sharex=True, gridspec_kw={"height_ratios": [3.2, 1], "hspace": 0.12})
         a3 = None
     # 1. thèmes : une case par thème et exercice ; gris : exercice sans rapport lu
     for j, x in enumerate(exercices):
         if x not in lus:
             a1.add_patch(plt.Rectangle((j - 0.5, -0.5), 1, len(themes), color="#eaeef2", lw=0, zorder=0))
     a1.imshow(np.ma.masked_invalid(carte), aspect="auto", cmap="Reds", vmin=0, vmax=1.6, extent=(-0.5, len(exercices) - 0.5, len(themes) - 0.5, -0.5), zorder=1)
-    a1.set_yticks(range(len(themes)),
-                  [ft("Aucun motif de réserve") if t == "__aucun_motif__" else ft(THEMES_CAC[t])
-                   for t in themes], fontsize=8)
-    a1.set_title(ft("Réserves : aucune sur les exercices lus (gris : exercice sans rapport lu)"
-                    if sans_reserve else
-                    "Thèmes des réserves (gris : exercice sans rapport lu)"), fontsize=9, loc="left")
+    a1.set_yticks(range(len(themes)), [ft(THEMES_CAC[t]) for t in themes], fontsize=8)
+    a1.set_title(ft("Thèmes des réserves (gris : exercice sans rapport lu)"), fontsize=9, loc="left")
     for j in range(len(exercices)):
         for i in range(len(themes)):
             if not np.isnan(carte[i, j]):
