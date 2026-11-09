@@ -1,0 +1,207 @@
+groupe,annee,grandeur,base,valeur,unite,source_fichier,page,remarque
+AGREGAT,2013,capitaux_propres,groupe,730.699,MD,sources/entreprises-publiques/ecart-individuel-groupe-ep.csv,,somme BNA+STB+BH+BTE (groupe) ; les 3 grandes ~35-37% des actifs du secteur bancaire (BCT/Banque mondiale)
+AGREGAT,2013,capitaux_propres,mere,1038.038,MD,sources/entreprises-publiques/ecart-individuel-groupe-ep.csv,,somme BNA+STB+BH+BTE (mere) ; les 3 grandes ~35-37% des actifs du secteur bancaire (BCT/Banque mondiale)
+AGREGAT,2013,resultat_net,groupe,-257.402,MD,sources/entreprises-publiques/ecart-individuel-groupe-ep.csv,,somme BNA+STB+BH+BTE (groupe) ; les 3 grandes ~35-37% des actifs du secteur bancaire (BCT/Banque mondiale)
+AGREGAT,2013,resultat_net,mere,-257.996,MD,sources/entreprises-publiques/ecart-individuel-groupe-ep.csv,,somme BNA+STB+BH+BTE (mere) ; les 3 grandes ~35-37% des actifs du secteur bancaire (BCT/Banque mondiale)
+AGREGAT,2013,total_actif,groupe,22144.344,MD,sources/entreprises-publiques/ecart-individuel-groupe-ep.csv,,somme BNA+STB+BH+BTE (groupe) ; les 3 grandes ~35-37% des actifs du secteur bancaire (BCT/Banque mondiale)
+AGREGAT,2013,total_actif,mere,20856.087,MD,sources/entreprises-publiques/ecart-individuel-groupe-ep.csv,,somme BNA+STB+BH+BTE (mere) ; les 3 grandes ~35-37% des actifs du secteur bancaire (BCT/Banque mondiale)
+AGREGAT,2016,capitaux_propres,groupe,1972.514,MD,sources/entreprises-publiques/ecart-individuel-groupe-ep.csv,,somme BNA+STB+BH+BTE (groupe) ; les 3 grandes ~35-37% des actifs du secteur bancaire (BCT/Banque mondiale)
+AGREGAT,2016,capitaux_propres,mere,2193.764,MD,sources/entreprises-publiques/ecart-individuel-groupe-ep.csv,,somme BNA+STB+BH+BTE (mere) ; les 3 grandes ~35-37% des actifs du secteur bancaire (BCT/Banque mondiale)
+AGREGAT,2016,resultat_net,groupe,261.969,MD,sources/entreprises-publiques/ecart-individuel-groupe-ep.csv,,somme BNA+STB+BH+BTE (groupe) ; les 3 grandes ~35-37% des actifs du secteur bancaire (BCT/Banque mondiale)
+AGREGAT,2016,resultat_net,mere,273.543,MD,sources/entreprises-publiques/ecart-individuel-groupe-ep.csv,,somme BNA+STB+BH+BTE (mere) ; les 3 grandes ~35-37% des actifs du secteur bancaire (BCT/Banque mondiale)
+AGREGAT,2016,total_actif,groupe,28118.795,MD,sources/entreprises-publiques/ecart-individuel-groupe-ep.csv,,somme BNA+STB+BH+BTE (groupe) ; les 3 grandes ~35-37% des actifs du secteur bancaire (BCT/Banque mondiale)
+AGREGAT,2016,total_actif,mere,26940.009,MD,sources/entreprises-publiques/ecart-individuel-groupe-ep.csv,,somme BNA+STB+BH+BTE (mere) ; les 3 grandes ~35-37% des actifs du secteur bancaire (BCT/Banque mondiale)
+AGREGAT,2019,capitaux_propres,groupe,3788.685,MD,sources/entreprises-publiques/ecart-individuel-groupe-ep.csv,,somme BNA+STB+BH+BTE (groupe) ; les 3 grandes ~35-37% des actifs du secteur bancaire (BCT/Banque mondiale)
+AGREGAT,2019,capitaux_propres,mere,3668.966,MD,sources/entreprises-publiques/ecart-individuel-groupe-ep.csv,,somme BNA+STB+BH+BTE (mere) ; les 3 grandes ~35-37% des actifs du secteur bancaire (BCT/Banque mondiale)
+AGREGAT,2019,resultat_net,groupe,452.845,MD,sources/entreprises-publiques/ecart-individuel-groupe-ep.csv,,somme BNA+STB+BH+BTE (groupe) ; les 3 grandes ~35-37% des actifs du secteur bancaire (BCT/Banque mondiale)
+AGREGAT,2019,resultat_net,mere,,MD,sources/entreprises-publiques/ecart-individuel-groupe-ep.csv,,agregat mere incomplet : valeur manquante pour bh-bank
+AGREGAT,2019,total_actif,groupe,38701.453,MD,sources/entreprises-publiques/ecart-individuel-groupe-ep.csv,,somme BNA+STB+BH+BTE (groupe) ; les 3 grandes ~35-37% des actifs du secteur bancaire (BCT/Banque mondiale)
+AGREGAT,2019,total_actif,mere,37653.405,MD,sources/entreprises-publiques/ecart-individuel-groupe-ep.csv,,somme BNA+STB+BH+BTE (mere) ; les 3 grandes ~35-37% des actifs du secteur bancaire (BCT/Banque mondiale)
+AGREGAT,2022,capitaux_propres,groupe,4646.511,MD,sources/entreprises-publiques/ecart-individuel-groupe-ep.csv,,somme BNA+STB+BH+BTE (groupe) ; les 3 grandes ~35-37% des actifs du secteur bancaire (BCT/Banque mondiale)
+AGREGAT,2022,capitaux_propres,mere,4485.85,MD,sources/entreprises-publiques/ecart-individuel-groupe-ep.csv,,somme BNA+STB+BH+BTE (mere) ; les 3 grandes ~35-37% des actifs du secteur bancaire (BCT/Banque mondiale)
+AGREGAT,2022,resultat_net,groupe,364.139,MD,sources/entreprises-publiques/ecart-individuel-groupe-ep.csv,,somme BNA+STB+BH+BTE (groupe) ; les 3 grandes ~35-37% des actifs du secteur bancaire (BCT/Banque mondiale)
+AGREGAT,2022,resultat_net,mere,341.039,MD,sources/entreprises-publiques/ecart-individuel-groupe-ep.csv,,somme BNA+STB+BH+BTE (mere) ; les 3 grandes ~35-37% des actifs du secteur bancaire (BCT/Banque mondiale)
+AGREGAT,2022,total_actif,groupe,52804.918,MD,sources/entreprises-publiques/ecart-individuel-groupe-ep.csv,,somme BNA+STB+BH+BTE (groupe) ; les 3 grandes ~35-37% des actifs du secteur bancaire (BCT/Banque mondiale)
+AGREGAT,2022,total_actif,mere,48942.303,MD,sources/entreprises-publiques/ecart-individuel-groupe-ep.csv,,somme BNA+STB+BH+BTE (mere) ; les 3 grandes ~35-37% des actifs du secteur bancaire (BCT/Banque mondiale)
+AGREGAT,2024,capitaux_propres,groupe,5261.165,MD,sources/entreprises-publiques/ecart-individuel-groupe-ep.csv,,somme BNA+STB+BH+BTE (groupe) ; les 3 grandes ~35-37% des actifs du secteur bancaire (BCT/Banque mondiale)
+AGREGAT,2024,capitaux_propres,mere,4835.77,MD,sources/entreprises-publiques/ecart-individuel-groupe-ep.csv,,somme BNA+STB+BH+BTE (mere) ; les 3 grandes ~35-37% des actifs du secteur bancaire (BCT/Banque mondiale)
+AGREGAT,2024,resultat_net,groupe,400.211,MD,sources/entreprises-publiques/ecart-individuel-groupe-ep.csv,,somme BNA+STB+BH+BTE (groupe) ; les 3 grandes ~35-37% des actifs du secteur bancaire (BCT/Banque mondiale)
+AGREGAT,2024,resultat_net,mere,379.557,MD,sources/entreprises-publiques/ecart-individuel-groupe-ep.csv,,somme BNA+STB+BH+BTE (mere) ; les 3 grandes ~35-37% des actifs du secteur bancaire (BCT/Banque mondiale)
+AGREGAT,2024,total_actif,groupe,55481.134,MD,sources/entreprises-publiques/ecart-individuel-groupe-ep.csv,,somme BNA+STB+BH+BTE (groupe) ; les 3 grandes ~35-37% des actifs du secteur bancaire (BCT/Banque mondiale)
+AGREGAT,2024,total_actif,mere,53409.81,MD,sources/entreprises-publiques/ecart-individuel-groupe-ep.csv,,somme BNA+STB+BH+BTE (mere) ; les 3 grandes ~35-37% des actifs du secteur bancaire (BCT/Banque mondiale)
+bh-bank,2012,capitaux_propres,groupe,466.205,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bh-bank/2012_consolide.pdf,11.0,"consolide 2012 en dinars ; part du groupe = total capitaux propres 646,501 moins IM 180,296"
+bh-bank,2012,capitaux_propres,mere,453.314,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bh-bank/2012_individuel.pdf,21.0,
+bh-bank,2012,resultat_net,groupe,12.698,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bh-bank/2012_consolide.pdf,13.0,
+bh-bank,2012,resultat_net,mere,17.632,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bh-bank/2012_individuel.pdf,23.0,
+bh-bank,2012,total_actif,groupe,5987.284,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bh-bank/2012_consolide.pdf,11.0,
+bh-bank,2012,total_actif,mere,5712.187,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bh-bank/2012_individuel.pdf,21.0,
+bh-bank,2013,capitaux_propres,groupe,244.858,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bh-bank/2013_consolide.pdf,1.0,"consolide 2013 en dinars ; part du groupe = total 408,012 moins IM 163,154"
+bh-bank,2013,capitaux_propres,mere,226.544,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bh-bank/2013_individuel.pdf,1.0,
+bh-bank,2013,resultat_net,groupe,-150.952,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bh-bank/2013_consolide.pdf,3.0,
+bh-bank,2013,resultat_net,mere,-159.366,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bh-bank/2013_individuel.pdf,3.0,
+bh-bank,2013,total_actif,groupe,5912.727,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bh-bank/2013_consolide.pdf,1.0,
+bh-bank,2013,total_actif,mere,5399.069,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bh-bank/2013_individuel.pdf,1.0,
+bh-bank,2016,capitaux_propres,groupe,603.272,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bh-bank/2016_consolide.pdf,12.0,
+bh-bank,2016,capitaux_propres,mere,551.154,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bh-bank/2016_individuel.pdf,23.0,
+bh-bank,2016,resultat_net,groupe,102.548,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bh-bank/2016_consolide.pdf,14.0,
+bh-bank,2016,resultat_net,mere,92.087,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bh-bank/2016_individuel.pdf,25.0,
+bh-bank,2016,total_actif,groupe,8809.996,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bh-bank/2016_consolide.pdf,12.0,
+bh-bank,2016,total_actif,mere,8240.102,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bh-bank/2016_individuel.pdf,23.0,
+bh-bank,2019,capitaux_propres,groupe,1002.539,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bh-bank/2019_consolide.pdf,15.0,"consolide 2019 scanne, lu en image (pdftoppm 150 dpi) ; bilan page PDF 15, resultat page PDF 17"
+bh-bank,2019,capitaux_propres,mere,981.089,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bh-bank/2019_individuel.pdf,28.0,
+bh-bank,2019,resultat_net,groupe,138.791,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bh-bank/2019_consolide.pdf,17.0,
+bh-bank,2019,resultat_net,mere,,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bh-bank/2019_individuel.pdf,,resultat net mere 2019 non lu (EF individuel scanne)
+bh-bank,2019,total_actif,groupe,12875.416,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bh-bank/2019_consolide.pdf,15.0,
+bh-bank,2019,total_actif,mere,12207.576,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bh-bank/2019_individuel.pdf,28.0,
+bh-bank,2022,capitaux_propres,groupe,1261.158,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bh-bank/2022_consolide.pdf,2.0,
+bh-bank,2022,capitaux_propres,mere,1235.523,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bh-bank/2022_individuel.pdf,2.0,
+bh-bank,2022,resultat_net,groupe,125.148,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bh-bank/2022_consolide.pdf,4.0,
+bh-bank,2022,resultat_net,mere,118.711,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bh-bank/2022_individuel.pdf,4.0,
+bh-bank,2022,total_actif,groupe,14261.783,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bh-bank/2022_consolide.pdf,2.0,
+bh-bank,2022,total_actif,mere,13626.285,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bh-bank/2022_individuel.pdf,2.0,
+bh-bank,2024,capitaux_propres,groupe,1611.089,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bh-bank/2024_consolide.pdf,2.0,
+bh-bank,2024,capitaux_propres,mere,1352.085,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bh-bank/2024_individuel.pdf,2.0,
+bh-bank,2024,resultat_net,groupe,71.028,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bh-bank/2024_consolide.pdf,4.0,
+bh-bank,2024,resultat_net,mere,70.404,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bh-bank/2024_individuel.pdf,4.0,
+bh-bank,2024,total_actif,groupe,15471.043,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bh-bank/2024_consolide.pdf,2.0,
+bh-bank,2024,total_actif,mere,14476.639,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bh-bank/2024_individuel.pdf,2.0,
+bna,2012,capitaux_propres,groupe,630.522,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bna/2012_consolide.pdf,5.0,
+bna,2012,capitaux_propres,mere,603.99,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bna/2012_individuel.pdf,11.0,
+bna,2012,resultat_net,groupe,51.445,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bna/2012_consolide.pdf,6.0,
+bna,2012,resultat_net,mere,43.206,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bna/2012_individuel.pdf,12.0,
+bna,2012,total_actif,groupe,8361.843,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bna/2012_consolide.pdf,5.0,
+bna,2012,total_actif,mere,7833.627,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bna/2012_individuel.pdf,11.0,
+bna,2013,capitaux_propres,groupe,579.893,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bna/2013_consolide.pdf,1.0,
+bna,2013,capitaux_propres,mere,558.902,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bna/2013_individuel.pdf,2.0,
+bna,2013,resultat_net,groupe,18.715,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bna/2013_consolide.pdf,3.0,
+bna,2013,resultat_net,mere,14.553,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bna/2013_individuel.pdf,3.0,
+bna,2013,total_actif,groupe,8133.207,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bna/2013_consolide.pdf,1.0,
+bna,2013,total_actif,mere,7620.029,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bna/2013_individuel.pdf,1.0,
+bna,2016,capitaux_propres,groupe,788.989,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bna/2016_consolide.pdf,7.0,
+bna,2016,capitaux_propres,mere,776.854,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bna/2016_individuel.pdf,7.0,
+bna,2016,resultat_net,groupe,148.974,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bna/2016_consolide.pdf,9.0,
+bna,2016,resultat_net,mere,140.0,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bna/2016_individuel.pdf,9.0,"resultat net restate a 140,000 MD (apres modifications comptables, note individuelle p.9)"
+bna,2016,total_actif,groupe,9847.795,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bna/2016_consolide.pdf,7.0,
+bna,2016,total_actif,mere,9439.945,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bna/2016_individuel.pdf,7.0,
+bna,2019,capitaux_propres,groupe,1561.655,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bna/2019_consolide.pdf,1.0,
+bna,2019,capitaux_propres,mere,1522.944,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bna/2019_individuel.pdf,1.0,
+bna,2019,resultat_net,groupe,131.032,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bna/2019_consolide.pdf,3.0,
+bna,2019,resultat_net,mere,123.433,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bna/2019_individuel.pdf,3.0,
+bna,2019,total_actif,groupe,13235.091,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bna/2019_consolide.pdf,1.0,
+bna,2019,total_actif,mere,13015.194,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bna/2019_individuel.pdf,1.0,
+bna,2022,capitaux_propres,groupe,1865.475,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bna/2022_consolide.pdf,1.0,
+bna,2022,capitaux_propres,mere,1864.049,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bna/2022_individuel.pdf,2.0,
+bna,2022,resultat_net,groupe,169.91,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bna/2022_consolide.pdf,3.0,
+bna,2022,resultat_net,mere,159.251,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bna/2022_individuel.pdf,4.0,
+bna,2022,total_actif,groupe,22221.489,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bna/2022_consolide.pdf,1.0,
+bna,2022,total_actif,mere,19307.194,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bna/2022_individuel.pdf,1.0,
+bna,2024,capitaux_propres,groupe,2188.321,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bna/2024_consolide.pdf,1.0,
+bna,2024,capitaux_propres,mere,2161.58,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bna/2024_individuel.pdf,2.0,
+bna,2024,resultat_net,groupe,251.881,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bna/2024_consolide.pdf,3.0,
+bna,2024,resultat_net,mere,254.557,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bna/2024_individuel.pdf,4.0,
+bna,2024,total_actif,groupe,23106.003,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bna/2024_consolide.pdf,1.0,
+bna,2024,total_actif,mere,22459.08,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bna/2024_individuel.pdf,1.0,
+bte,2012,capitaux_propres,groupe,,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bte-adp/2012_consolide.pdf,,etat consolide 2012 absent du depot
+bte,2012,capitaux_propres,mere,145.256,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bte-adp/2012_individuel.pdf,2.0,
+bte,2012,resultat_net,groupe,,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bte-adp/2012_consolide.pdf,,
+bte,2012,resultat_net,mere,2.43,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bte-adp/2012_individuel.pdf,4.0,
+bte,2012,total_actif,groupe,,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bte-adp/2012_consolide.pdf,,
+bte,2012,total_actif,mere,713.019,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bte-adp/2012_individuel.pdf,2.0,
+bte,2013,capitaux_propres,groupe,140.96,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bte-adp/2013_consolide.pdf,1.0,
+bte,2013,capitaux_propres,mere,138.769,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bte-adp/2013_individuel.pdf,1.0,
+bte,2013,resultat_net,groupe,2.178,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bte-adp/2013_consolide.pdf,3.0,
+bte,2013,resultat_net,mere,2.27,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bte-adp/2013_individuel.pdf,3.0,
+bte,2013,total_actif,groupe,870.178,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bte-adp/2013_consolide.pdf,1.0,
+bte,2013,total_actif,mere,821.815,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bte-adp/2013_individuel.pdf,1.0,
+bte,2016,capitaux_propres,groupe,141.591,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bte-adp/2016_consolide.pdf,8.0,
+bte,2016,capitaux_propres,mere,129.151,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bte-adp/2016_individuel.pdf,2.0,
+bte,2016,resultat_net,groupe,1.886,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bte-adp/2016_consolide.pdf,10.0,
+bte,2016,resultat_net,mere,0.938,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bte-adp/2016_individuel.pdf,4.0,"resultat net mere 2016 = 0,938 MD (col. exercice ; l'ancienne saisie 1,663 etait l'annee comparee 2015)"
+bte,2016,total_actif,groupe,1034.459,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bte-adp/2016_consolide.pdf,8.0,
+bte,2016,total_actif,mere,980.73,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bte-adp/2016_individuel.pdf,2.0,
+bte,2019,capitaux_propres,groupe,141.746,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bte-adp/2019_consolide.pdf,1.0,
+bte,2019,capitaux_propres,mere,137.023,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bte-adp/2019_individuel.pdf,1.0,
+bte,2019,resultat_net,groupe,4.348,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bte-adp/2019_consolide.pdf,3.0,
+bte,2019,resultat_net,mere,5.913,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bte-adp/2019_individuel.pdf,3.0,
+bte,2019,total_actif,groupe,1184.103,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bte-adp/2019_consolide.pdf,1.0,
+bte,2019,total_actif,mere,1128.775,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bte-adp/2019_individuel.pdf,1.0,
+bte,2022,capitaux_propres,groupe,163.645,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bte-adp/2022_consolide.pdf,1.0,
+bte,2022,capitaux_propres,mere,89.914,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bte-adp/2022_individuel.pdf,1.0,
+bte,2022,resultat_net,groupe,-30.303,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bte-adp/2022_consolide.pdf,3.0,
+bte,2022,resultat_net,mere,-30.006,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bte-adp/2022_individuel.pdf,3.0,"resultat net mere 2022 = -30,006 MD (perte ; l'ancienne saisie +30,006 avait omis le signe)"
+bte,2022,total_actif,groupe,1556.634,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bte-adp/2022_consolide.pdf,1.0,
+bte,2022,total_actif,mere,1321.276,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bte-adp/2022_individuel.pdf,1.0,
+bte,2024,capitaux_propres,groupe,42.208,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bte-adp/2024_consolide.pdf,1.0,
+bte,2024,capitaux_propres,mere,38.903,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bte-adp/2024_individuel.pdf,1.0,
+bte,2024,resultat_net,groupe,-26.002,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bte-adp/2024_consolide.pdf,3.0,
+bte,2024,resultat_net,mere,-27.904,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bte-adp/2024_individuel.pdf,3.0,"resultat net mere 2024 = -27,904 MD (perte ; signe omis dans l'ancienne saisie)"
+bte,2024,total_actif,groupe,1630.747,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bte-adp/2024_consolide.pdf,1.0,
+bte,2024,total_actif,mere,1540.056,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/bte-adp/2024_individuel.pdf,1.0,
+star,2021,capitaux_propres,groupe,379.643,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/star/2021_consolide.pdf,2.0,
+star,2021,resultat_net,groupe,21.056,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/star/2021_consolide.pdf,6.0,
+star,2021,total_actif,groupe,1360.715,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/star/2021_consolide.pdf,2.0,actif net
+star,2022,capitaux_propres,groupe,400.302,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/star/2022_consolide.pdf,2.0,
+star,2022,capitaux_propres,mere,402.865,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/star/2022_individuel.pdf,2.0,
+star,2022,resultat_net,groupe,29.342,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/star/2022_consolide.pdf,6.0,
+star,2022,resultat_net,mere,31.905,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/star/2022_individuel.pdf,2.0,
+star,2022,total_actif,groupe,1441.344,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/star/2022_consolide.pdf,2.0,actif net
+star,2022,total_actif,mere,1428.605,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/star/2022_individuel.pdf,2.0,actif net
+star,2023,capitaux_propres,groupe,408.933,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/star/2023_consolide.pdf,2.0,
+star,2023,resultat_net,groupe,23.271,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/star/2023_consolide.pdf,6.0,
+star,2023,total_actif,groupe,1522.649,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/star/2023_consolide.pdf,2.0,actif net
+star,2024,capitaux_propres,groupe,421.319,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/star/2024_consolide.pdf,2.0,
+star,2024,capitaux_propres,mere,429.898,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/star/2024_individuel.pdf,2.0,
+star,2024,resultat_net,groupe,27.493,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/star/2024_consolide.pdf,6.0,
+star,2024,resultat_net,mere,29.813,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/star/2024_individuel.pdf,2.0,
+star,2024,total_actif,groupe,1578.777,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/star/2024_consolide.pdf,2.0,actif net
+star,2024,total_actif,mere,1571.835,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/star/2024_individuel.pdf,2.0,actif net
+stb,2012,capitaux_propres,groupe,303.467,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/stb/2012_consolide.pdf,6.0,
+stb,2012,capitaux_propres,mere,,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/stb/2012_individuel.pdf,,"EF individuel 2012 scanne (image sans couche texte), non lu"
+stb,2012,resultat_net,groupe,-26.908,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/stb/2012_consolide.pdf,6.0,
+stb,2012,resultat_net,mere,,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/stb/2012_individuel.pdf,,
+stb,2012,total_actif,groupe,7856.138,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/stb/2012_consolide.pdf,6.0,
+stb,2012,total_actif,mere,,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/stb/2012_individuel.pdf,,
+stb,2013,capitaux_propres,groupe,-235.012,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/stb/2013_consolide.pdf,2.0,capitaux propres consolides part du groupe NEGATIFS
+stb,2013,capitaux_propres,mere,113.823,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/stb/2013_individuel.pdf,2.0,
+stb,2013,resultat_net,groupe,-127.343,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/stb/2013_consolide.pdf,2.0,
+stb,2013,resultat_net,mere,-115.453,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/stb/2013_individuel.pdf,4.0,
+stb,2013,total_actif,groupe,7228.232,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/stb/2013_consolide.pdf,2.0,
+stb,2013,total_actif,mere,7015.174,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/stb/2013_individuel.pdf,2.0,
+stb,2016,capitaux_propres,groupe,438.662,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/stb/2016_consolide.pdf,2.0,
+stb,2016,capitaux_propres,mere,736.605,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/stb/2016_individuel.pdf,1.0,
+stb,2016,resultat_net,groupe,8.561,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/stb/2016_consolide.pdf,2.0,
+stb,2016,resultat_net,mere,40.518,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/stb/2016_individuel.pdf,3.0,
+stb,2016,total_actif,groupe,8426.545,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/stb/2016_consolide.pdf,2.0,
+stb,2016,total_actif,mere,8279.232,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/stb/2016_individuel.pdf,1.0,
+stb,2019,capitaux_propres,groupe,1082.745,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/stb/2019_consolide.pdf,1.0,
+stb,2019,capitaux_propres,mere,1027.91,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/stb/2019_individuel.pdf,1.0,
+stb,2019,resultat_net,groupe,178.674,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/stb/2019_consolide.pdf,1.0,
+stb,2019,resultat_net,mere,157.347,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/stb/2019_individuel.pdf,3.0,
+stb,2019,total_actif,groupe,11406.843,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/stb/2019_consolide.pdf,1.0,
+stb,2019,total_actif,mere,11301.86,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/stb/2019_individuel.pdf,1.0,
+stb,2022,capitaux_propres,groupe,1356.233,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/stb/2022_consolide.pdf,2.0,
+stb,2022,capitaux_propres,mere,1296.364,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/stb/2022_individuel.pdf,2.0,
+stb,2022,resultat_net,groupe,99.384,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/stb/2022_consolide.pdf,2.0,
+stb,2022,resultat_net,mere,93.083,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/stb/2022_individuel.pdf,4.0,
+stb,2022,total_actif,groupe,14765.012,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/stb/2022_consolide.pdf,2.0,
+stb,2022,total_actif,mere,14687.548,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/stb/2022_individuel.pdf,2.0,
+stb,2024,capitaux_propres,groupe,1419.547,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/stb/2024_consolide.pdf,2.0,
+stb,2024,capitaux_propres,mere,1283.202,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/stb/2024_individuel.pdf,2.0,
+stb,2024,resultat_net,groupe,103.304,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/stb/2024_consolide.pdf,2.0,
+stb,2024,resultat_net,mere,82.5,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/stb/2024_individuel.pdf,4.0,
+stb,2024,total_actif,groupe,15273.341,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/stb/2024_consolide.pdf,2.0,
+stb,2024,total_actif,mere,14934.035,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/stb/2024_individuel.pdf,2.0,
+tunisair,2012,capitaux_propres,groupe,278.228,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/tunisair/2012_consolide.pdf,10.0,consolide 2012 en dinars ; total actif consolide non releve
+tunisair,2012,resultat_net,groupe,-135.713,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/tunisair/2012_consolide.pdf,10.0,
+tunisair,2013,capitaux_propres,groupe,69.851,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/tunisair/2013_consolide.pdf,2.0,total actif consolide non releve
+tunisair,2013,resultat_net,groupe,-216.602,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/tunisair/2013_consolide.pdf,2.0,
+tunisair,2016,capitaux_propres,groupe,-174.313,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/tunisair/2016_consolide.pdf,8.0,capitaux propres du groupe NEGATIFS (1er exercice) ; total actif consolide non releve
+tunisair,2016,resultat_net,groupe,-196.608,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/tunisair/2016_consolide.pdf,8.0,
+tunisair,2019,capitaux_propres,groupe,-874.048,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/tunisair/2019_consolide.pdf,2.0,capitaux propres du groupe NEGATIFS ; total actif consolide non releve
+tunisair,2019,resultat_net,groupe,-209.038,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/tunisair/2019_consolide.pdf,2.0,
+tunisair,2022,capitaux_propres,groupe,-1745.82,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/tunisair/2022_consolide.pdf,3.0,"capitaux propres du groupe NEGATIFS -1 745,820 MD"
+tunisair,2022,capitaux_propres,mere,-1473.39,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/tunisair/2022_individuel.pdf,2.0,"total capitaux propres mere -1 473,390 MD (avant resultat -1 244,423 + resultat -228,967)"
+tunisair,2022,resultat_net,groupe,-220.802,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/tunisair/2022_consolide.pdf,3.0,
+tunisair,2022,resultat_net,mere,-228.967,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/tunisair/2022_individuel.pdf,2.0,
+tunisair,2022,total_actif,groupe,1915.18,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/tunisair/2022_consolide.pdf,3.0,
+tunisair,2022,total_actif,mere,2707.544,MD,data/raw/entreprises-publiques/bvmt-etats-financiers/tunisair/2022_individuel.pdf,2.0,

@@ -1410,12 +1410,17 @@ def _va_prod(entite: str):
     efc = comptes[(comptes["ep"] == entite) & (comptes["grandeur"] == "effectif")].dropna(subset=["valeur"])
     for r in efc.itertuples():
         eff[int(r.annee)] = float(r.valeur)
-    return vav, eff, ev, src
+    # VA hors subvention d'exploitation (SNCFT, TRANSTU : compensation de service public),
+    # quand la série la porte — vide pour les autres entités.
+    hs = comptes[(comptes["ep"] == entite)
+                 & (comptes["grandeur"] == "valeur_ajoutee_hors_subvention")].dropna(subset=["valeur"])
+    vhs = {int(r.annee): float(r.valeur) for r in hs.itertuples()}
+    return vav, eff, ev, src, vhs
 
 
 def fig_va_productivite(entite: str):
     figtools.apply_lang_font()
-    vav, eff, ev, _ = _va_prod(entite)
+    vav, eff, ev, _, vhs = _va_prod(entite)
     ans = sorted(vav)
     fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(9.6, 6.6), sharex=True)
     for a in ans:
@@ -1424,9 +1429,18 @@ def fig_va_productivite(entite: str):
                texte=f"{a} — valeur ajoutée brute : {_n(vav[a], 1)} MD [niveau {ev.get(a)}]")
     _style(ax1); _axe_md(ax1, "millions de dinars courants")
     ax1.set_title("Valeur ajoutée brute", fontsize=9, loc="left")
-    ax1.legend(handles=[Patch(color=BLEU, label="VA brute imprimée (niveau A)"),
-                        Patch(color=_clair(BLEU, 0.5), label="VA calculée (niveaux B, C)")],
-               fontsize=7, frameon=False, loc="upper left")
+    poignees = [Patch(color=BLEU, label="VA brute imprimée (niveau A)"),
+                Patch(color=_clair(BLEU, 0.5), label="VA calculée (niveaux B, C)")]
+    if vhs:
+        xs_hs = sorted(a for a in vhs if a in vav)
+        ax1.plot(xs_hs, [vhs[a] for a in xs_hs], color=ORANGE, lw=1.3, zorder=3)
+        for a in xs_hs:
+            _point(ax1, a, vhs[a], ORANGE,
+                   texte=f"{a} — VA hors compensation de service public : {_n(vhs[a], 1)} MD")
+        from matplotlib.lines import Line2D
+        poignees.append(Line2D([], [], color=ORANGE, marker="o", ms=4, lw=1.3,
+                               label="VA hors compensation de service public"))
+    ax1.legend(handles=poignees, fontsize=7, frameon=False, loc="upper left")
     xs = [a for a in ans if a in eff]
     ys = [vav[a] * 1000.0 / eff[a] for a in xs]
     if xs:
@@ -1444,21 +1458,97 @@ def fig_va_productivite(entite: str):
 
 
 def table_va_productivite(entite: str):
-    vav, eff, ev, src = _va_prod(entite)
-    return pd.DataFrame([
-        {"Exercice": a, "Valeur ajoutée (MD)": round(vav[a], 1),
-         "Effectif": int(eff[a]) if a in eff else None,
-         "VA par agent (kD)": round(vav[a] * 1000.0 / eff[a], 1) if a in eff else None,
-         "Niveau de preuve": ev.get(a),
-         "Fichier source": src.get(a, ("", ""))[0],
-         "Page": src.get(a, ("", ""))[1]}
-        for a in sorted(vav)])
+    vav, eff, ev, src, vhs = _va_prod(entite)
+    lignes = []
+    for a in sorted(vav):
+        ligne = {"Exercice": a, "Valeur ajoutée (MD)": round(vav[a], 1)}
+        if vhs:
+            ligne["VA hors compensation (MD)"] = round(vhs[a], 1) if a in vhs else None
+        ligne.update({
+            "Effectif": int(eff[a]) if a in eff else None,
+            "VA par agent (kD)": round(vav[a] * 1000.0 / eff[a], 1) if a in eff else None,
+            "Niveau de preuve": ev.get(a),
+            "Fichier source": src.get(a, ("", ""))[0],
+            "Page": src.get(a, ("", ""))[1]})
+        lignes.append(ligne)
+    return pd.DataFrame(lignes)
 
 
 # --------------------------------------------------------------------------- #
 # Efficience et rentabilité des banques publiques (série des ratios bancaires)
 # --------------------------------------------------------------------------- #
 S_RATIOS = "entreprises-publiques-ratios-bancaires"
+S_ECART = "entreprises-publiques-ecart-individuel-groupe"
+# La série écart code la BH « bh-bank » ; les clés de figures gardent « bh ».
+_ECART_GROUPE = {"bh": "bh-bank"}
+
+
+def _ecart_donnees(banque: str):
+    """{grandeur: {annee: (mere, groupe)}} + provenance, base mère et base groupe (part du groupe)."""
+    d = figtools.series(S_ECART)
+    d = d[d["groupe"] == _ECART_GROUPE.get(banque, banque)].dropna(subset=["valeur"])
+    vals, src = {}, {}
+    for r in d.itertuples():
+        an, g = int(r.annee), str(r.grandeur)
+        vals.setdefault(g, {}).setdefault(an, {})[str(r.base)] = float(r.valeur)
+        src[(g, an, str(r.base))] = (str(getattr(r, "source_fichier", "") or "").split("/")[-1],
+                                     str(getattr(r, "page", "") or ""))
+    return vals, src
+
+
+def fig_groupe_mere(banque: str):
+    """Capitaux propres et résultat net : la mère (états individuels) face à la part du
+    groupe (états consolidés), par exercice."""
+    figtools.apply_lang_font()
+    vals, _ = _ecart_donnees(banque)
+    fig, axes = plt.subplots(2, 1, figsize=(9.6, 6.6), sharex=True)
+    panneaux = [("capitaux_propres", "Capitaux propres au 31 décembre", BLEU),
+                ("resultat_net", "Résultat net de l'exercice", VERT)]
+    ans_tous = sorted({a for g, _t, _c in panneaux for a in vals.get(g, {})})
+    for ax, (g, titre, coul) in zip(axes, panneaux):
+        serie = vals.get(g, {})
+        for a in sorted(serie):
+            paire = serie[a]
+            if "mere" in paire:
+                _barre(ax, a - 0.19, paire["mere"], _clair(coul, 0.45), largeur=0.36,
+                       texte=f"{a} — mère (états individuels) : {_n(paire['mere'], 1)} MD")
+            if "groupe" in paire:
+                _barre(ax, a + 0.19, paire["groupe"], coul, largeur=0.36,
+                       texte=f"{a} — groupe, part du groupe (états consolidés) : "
+                             f"{_n(paire['groupe'], 1)} MD")
+        ax.axhline(0, color="#444444", lw=0.7)
+        _style(ax); _axe_md(ax, "millions de dinars courants")
+        ax.set_title(titre, fontsize=9, loc="left")
+        ax.legend(handles=[Patch(color=_clair(coul, 0.45), label="Mère (états individuels)"),
+                           Patch(color=coul, label="Groupe, part du groupe (états consolidés)")],
+                  fontsize=7, frameon=False, loc="best")
+    if ans_tous:
+        axes[1].set_xticks(ans_tous)
+        axes[1].tick_params(axis="x", labelsize=7)
+    fig.tight_layout()
+    return fig
+
+
+def table_groupe_mere(banque: str):
+    vals, src = _ecart_donnees(banque)
+    libelles = {"capitaux_propres": "Capitaux propres", "resultat_net": "Résultat net",
+                "total_actif": "Total actif"}
+    lignes = []
+    for g in ("capitaux_propres", "resultat_net", "total_actif"):
+        for a in sorted(vals.get(g, {})):
+            paire = vals[g][a]
+            mere, grp = paire.get("mere"), paire.get("groupe")
+            lignes.append({
+                "Grandeur": libelles[g], "Exercice": a,
+                "Mère (MD)": round(mere, 1) if mere is not None else None,
+                "Groupe, part du groupe (MD)": round(grp, 1) if grp is not None else None,
+                "Écart groupe − mère (MD)": round(grp - mere, 1)
+                if mere is not None and grp is not None else None,
+                "Fichier (mère)": src.get((g, a, "mere"), ("", ""))[0],
+                "Page": src.get((g, a, "mere"), ("", ""))[1],
+                "Fichier (groupe)": src.get((g, a, "groupe"), ("", ""))[0],
+                "Page (groupe)": src.get((g, a, "groupe"), ("", ""))[1]})
+    return pd.DataFrame(lignes)
 
 
 def _ratios_bq(banque: str):
@@ -1548,6 +1638,14 @@ FIGURES = {
                       (S_RATIOS,), "fig_ep_bh_efficience"),
     "bna_efficience": (lambda: fig_efficience_bancaire("bna"), lambda: table_efficience_bancaire("bna"),
                        (S_RATIOS,), "fig_ep_bna_efficience"),
+    "stb_groupe": (lambda: fig_groupe_mere("stb"), lambda: table_groupe_mere("stb"),
+                   (S_ECART,), "fig_ep_stb_groupe"),
+    "bh_groupe": (lambda: fig_groupe_mere("bh"), lambda: table_groupe_mere("bh"),
+                  (S_ECART,), "fig_ep_bh_groupe"),
+    "bna_groupe": (lambda: fig_groupe_mere("bna"), lambda: table_groupe_mere("bna"),
+                   (S_ECART,), "fig_ep_bna_groupe"),
+    "bte_groupe": (lambda: fig_groupe_mere("bte"), lambda: table_groupe_mere("bte"),
+                   (S_ECART,), "fig_ep_bte_groupe"),
     "bte_efficience": (lambda: fig_efficience_bancaire("bte"), lambda: table_efficience_bancaire("bte"),
                        (S_RATIOS,), "fig_ep_bte_efficience"),
     "transferts": (fig_transferts, table_transferts, (S_TRANSFERTS_EP,),

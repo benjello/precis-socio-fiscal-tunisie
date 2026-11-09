@@ -1,0 +1,25 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-11-09
+# séries (tunisia_data) : entreprises-publiques-ecart-individuel-groupe
+# sources (citation) : @bvmt-etats-financiers
+# fiches : sources/entreprises-publiques.md
+# méthode/hypothèses : COMPTES DE L'ENTREPRISE, PAS UNE SOURCE BUDGÉTAIRE. La base groupe est la PART DU GROUPE (hors intérêts minoritaires). L'AGREGAT est une ADDITION de consolidés publiés, PAS une consolidation : rien n'est éliminé entre les banques (leurs participations réciproques restent comptées) ; le script le recontrôle à la somme (écart > 0,5 MD refusé). Cases vides honnêtes : BTE 2012 sans états consolidés ; STB 2012 et BH 2019 individuels scannés, quelques postes mère non lus ; Tunisair et STAR ne sont lus que sur les exercices vérifiés. Corrections de lecture du 7-8 nov. 2026 incluses (BNA 2016, BTE 2016/2022/2024, signes).
+# note : Capitaux propres et résultat net de la BNA, la mère (états individuels) face à la part du groupe (états consolidés), exercices 2012-2024, en millions de dinars.
+Grandeur,Exercice,Mère (MD),"Groupe, part du groupe (MD)",Écart groupe − mère (MD),Fichier (mère),Page,Fichier (groupe),Page (groupe)
+Capitaux propres,2012,604.0,630.5,26.5,2012_individuel.pdf,11.0,2012_consolide.pdf,5.0
+Capitaux propres,2013,558.9,579.9,21.0,2013_individuel.pdf,2.0,2013_consolide.pdf,1.0
+Capitaux propres,2016,776.9,789.0,12.1,2016_individuel.pdf,7.0,2016_consolide.pdf,7.0
+Capitaux propres,2019,1522.9,1561.7,38.7,2019_individuel.pdf,1.0,2019_consolide.pdf,1.0
+Capitaux propres,2022,1864.0,1865.5,1.4,2022_individuel.pdf,2.0,2022_consolide.pdf,1.0
+Capitaux propres,2024,2161.6,2188.3,26.7,2024_individuel.pdf,2.0,2024_consolide.pdf,1.0
+Résultat net,2012,43.2,51.4,8.2,2012_individuel.pdf,12.0,2012_consolide.pdf,6.0
+Résultat net,2013,14.6,18.7,4.2,2013_individuel.pdf,3.0,2013_consolide.pdf,3.0
+Résultat net,2016,140.0,149.0,9.0,2016_individuel.pdf,9.0,2016_consolide.pdf,9.0
+Résultat net,2019,123.4,131.0,7.6,2019_individuel.pdf,3.0,2019_consolide.pdf,3.0
+Résultat net,2022,159.3,169.9,10.7,2022_individuel.pdf,4.0,2022_consolide.pdf,3.0
+Résultat net,2024,254.6,251.9,-2.7,2024_individuel.pdf,4.0,2024_consolide.pdf,3.0
+Total actif,2012,7833.6,8361.8,528.2,2012_individuel.pdf,11.0,2012_consolide.pdf,5.0
+Total actif,2013,7620.0,8133.2,513.2,2013_individuel.pdf,1.0,2013_consolide.pdf,1.0
+Total actif,2016,9439.9,9847.8,407.9,2016_individuel.pdf,7.0,2016_consolide.pdf,7.0
+Total actif,2019,13015.2,13235.1,219.9,2019_individuel.pdf,1.0,2019_consolide.pdf,1.0
+Total actif,2022,19307.2,22221.5,2914.3,2022_individuel.pdf,1.0,2022_consolide.pdf,1.0
+Total actif,2024,22459.1,23106.0,646.9,2024_individuel.pdf,1.0,2024_consolide.pdf,1.0
