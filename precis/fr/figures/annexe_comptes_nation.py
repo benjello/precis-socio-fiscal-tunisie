@@ -106,6 +106,119 @@ def donnees_navigation() -> dict:
     }
 
 
+# --- la séquence des comptes, désagrégée par secteur -------------------------
+# Ménages rétabli : la collision de slug de consolidate_cnat.py (ménages confondu avec sa
+# sous-table « entreprises individuelles ») a été corrigée en amont (tunisia-data), et le compte
+# complet des ménages régénéré (VA 2012 = 29 307,3 ; RDB ≠ épargne ; consommation finale présente).
+SECTEURS_SEQ = [("snf", "SNF"), ("sf", "SF"), ("apu", "APU"),
+                ("menages", "Ménages"), ("exterieur", "Reste du monde")]
+
+# séquence des comptes : (compte, [(libellé, clé repliée INS, est_solde)]).
+# Les clés sont les libellés de l'INS, repliés en ASCII minuscules (voir le générateur).
+SEQUENCE = [
+    ("Compte de production", [
+        ("Valeur ajoutée brute", "valeur ajoutee brute", True)]),
+    ("Compte d'exploitation", [
+        ("Rémunération des salariés", "remuneration des salaries", False),
+        ("Revenu d'exploitation / mixte", "revenu d'exploitation", True)]),
+    ("Compte d'affectation des revenus primaires", [
+        ("Intérêts", "interets", False),
+        ("Solde des revenus primaires (revenu national)",
+         "solde des revenus primaires / revenu national", True)]),
+    ("Compte de distribution secondaire du revenu", [
+        ("Prestations sociales en espèces", "prestations sociales en espece", False),
+        ("Autres transferts courants", "autres transferts courants", False),
+        ("Revenu disponible brut", "revenu disponible brut", True)]),
+    ("Compte d'utilisation du revenu", [
+        ("Dépense de consommation finale", "depense de consommation finale", False),
+        ("Épargne brute", "epargne brute", True)]),
+    ("Compte de capital", [
+        ("Formation brute de capital fixe", "formation brute de capitale fixe", False),
+        ("Transferts en capital", "transferts en capital", False),
+        ("Capacité (+) ou besoin (−) de financement", "capacite ou besoin de financement", True)]),
+]
+
+
+def _fr(v) -> str:
+    import math
+    if v is None or (isinstance(v, float) and math.isnan(v)):
+        return ""
+    return f"{v:,.1f}".replace(",", "\u202f").replace(".", ",")
+
+
+
+# bases retenues, de la plus récente à la plus ancienne : pour une année couverte par deux
+# bases, on montre la plus récente (les bases ne se chaînent pas, mais une année isolée est
+# un instantané dans SA base — le navigateur n'affiche qu'une année à la fois, étiquetée).
+BASES_ORDRE = ["2015", "1997"]
+
+
+def donnees_sequence() -> dict:
+    """Structure passée à Observable : séquence des comptes par secteur, toutes années, par base.
+
+    Chaque année porte SA base (la plus récente qui la couvre) ; aucune base n'est chaînée à
+    une autre — le navigateur montre une année isolée, dans sa base, qu'il étiquette.
+    """
+    d = figtools.series("cnat-comptes-secteurs")
+    sequence = [{"compte": c, "lignes": [{"label": lib, "cle": cle, "solde": s}
+                                        for lib, cle, s in lignes]}
+                for c, lignes in SEQUENCE]
+    par_annee, base_annee = {}, {}
+    for an in sorted(d["annee"].astype(int).unique()):
+        base = next((b for b in BASES_ORDRE
+                     if not d[(d["annee"].astype(int) == an) & (d["base_pib"].astype(str) == b)].empty),
+                    None)
+        if base is None:
+            continue
+        da = d[(d["annee"].astype(int) == an) & (d["base_pib"].astype(str) == base)]
+        bloc = {}
+        for sec, _ in SECTEURS_SEQ:
+            ds = da[da["secteur"] == sec]
+            vals = {}
+            for _, r in ds.iterrows():
+                vals[r["indicateur"]] = round(float(r["valeur"]), 1)
+            bloc[sec] = vals
+        par_annee[str(an)] = bloc
+        base_annee[str(an)] = base
+    annees = sorted(int(a) for a in par_annee)
+    return {
+        "annees": annees,
+        "annee_defaut": 2021 if 2021 in annees else annees[-1],
+        "secteurs": [[c, lib] for c, lib in SECTEURS_SEQ],
+        "sequence": sequence,
+        "parAnnee": par_annee,
+        "baseAnnee": base_annee,
+    }
+
+
+def sequence_comptes_md(annee: int = 2021, base: str = "2015") -> str:
+    """Table Markdown de la séquence des comptes par secteur, pour une année et une base.
+
+    Lignes = la séquence (opérations clés et soldes) ; colonnes = les cinq secteurs ;
+    valeurs lues telles quelles dans les comptes de l'INS (soldes compris), en MDT.
+    """
+    d = figtools.series("cnat-comptes-secteurs")
+    d = d[(d["annee"].astype(int) == annee) & (d["base_pib"].astype(str) == str(base))]
+    piv = d.pivot_table(index="indicateur", columns="secteur", values="valeur", aggfunc="first")
+
+    def val(cle, sec):
+        try:
+            return piv.loc[cle, sec]
+        except KeyError:
+            return float("nan")
+
+    cols = [lib for _, lib in SECTEURS_SEQ]
+    out = ["| Compte / opération | " + " | ".join(cols) + " |",
+           "|" + "---|" * (len(cols) + 1)]
+    for compte, lignes in SEQUENCE:
+        out.append(f"| **{compte}** |" + " |" * len(cols))
+        for lib, cle, solde in lignes:
+            nom = f"*{lib}*" if solde else f"&nbsp;&nbsp;{lib}"
+            cells = " | ".join(_fr(val(cle, sec)) for sec, _ in SECTEURS_SEQ)
+            out.append(f"| {nom} | {cells} |")
+    return "\n".join(out)
+
+
 if __name__ == "__main__":
     import json
 
