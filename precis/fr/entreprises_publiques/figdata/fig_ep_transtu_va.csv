@@ -1,19 +1,19 @@
-# Figure-data du précis socio-fiscal tunisien — généré le 2026-11-07
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-11-09
 # séries (tunisia_data) : entreprises-publiques-comptes-primaires, entreprises-publiques-effectifs-par-entreprise
 # sources (citation) : @steg-ef-2014, @etap-ra-2005, @bvmt-etats-financiers, @minfin-ep-2020, @minfin-ep, @minfin-ep-2022, @minfin-ep-2024, @minfin-ep-2025
 # fiches : sources/entreprises-publiques.md
 # méthode/hypothèses : PROVENANCE PAR LIGNE : chaque valeur porte son fichier et sa page (colonnes source_fichier, page) et sa méthode (lecture). NIVEAU DE PREUVE DE LA VA (colonne evidence_va) : A = VA brute imprimée au SIG, re-vérifiée (STEG, Tunisair, SOTRAPIL, Ciments, SOTUMAG) ou posée par l'entreprise (CPG, GCT) ; B = calculée et corroborée par l'identité INDÉPENDANTE résultat+personnel+dotations (ETAP, El Fouladh, TTN, Poste, Tunisie Autoroutes) ; C = calculée, cohérence de lecture seule, non indépendamment corroborée (SNCFT, TRANSTU : identité = clôture du même état ; SONEDE : base SIG vérifiée sur le fond, autres produits post-VA documentés). CONTRÔLES D'IDENTITÉ reportés (colonne ecart_identite), JAMAIS forcés : résidus attribués et vérifiés — variation de stock de pétrole brut (ETAP, exclue de la VA), subvention d'équilibre (El Fouladh 2012, hors VA prix de base), quote-part subventions d'investissement et apurement CNRPS 2015 (SONEDE, post-VA). EXCLUT la couche générée grandeurs-productivite-ep.csv (bug SIG « Marge sur coût matières » prouvé sur Tunisair 2009/2010) : la VA de niveau A vient des vérifications sur état financier. TRAITEMENT DE LA SUBVENTION (prix de base vs coût des facteurs) et séries « hors subvention » (SNCFT, TRANSTU) : voir docs/notes/rationalisation-source-unique-ep-erreurs-risques.md et la note de conventions de VA. Montants en MD ; quelques valeurs calculées sans montant imprimé brut (colonne imprime vide, lecture = calcul)., AUCUN RACCORD : un exercice figure dans une à quatre éditions ; toutes les valeurs sont gardées, `divergence_effectif_entre_editions` signale les 90 lignes qui diffèrent (Société générale d'entreprises de matériel et de travaux, SOMATRA-GET, en 2020 : 212 puis 1 194 agents ; Tunisair en 2017 : 3 765 puis 3 565 ; RNTA en 2018 : 1 336 puis 1 130 ; CTN en 2018 : 1 195 puis 734). `statut` : le dernier exercice de chaque édition est le plus souvent provisoire, estimé ou probable — NE PAS le tracer comme une réalisation ; Tunisair n'a que des chiffres provisoires pour 2021-2023, la Transtu des chiffres probables. LES BANQUES, LE SECTEUR FINANCIER ET LES CAISSES SOCIALES NE SONT PAS DANS L'ÉCHANTILLON DES 40 : filtrer sur `categorie` avant toute somme. Le nombre d'agents n'est pas défini par le rapport (permanents, contractuels, équivalents temps plein : non dit) ; la hausse de la CPG en 2019 (6 098 puis 7 421) y est attribuée au programme de recrutement. PREUVES DE LECTURE : 391 variations imprimées d'un exercice à l'autre (éditions LF 2024 et LF 2025) redonnent la différence des niveaux, douze écarts d'arrondi ou d'impression déclarés (dont Groupe chimique, LF 2024 : −278 imprimé pour −287) ; la somme des 40 fiches redonne exactement la ligne « total des 40 » pour 2019 et 2022. ÉDITION LF 2023 NON DÉPOUILLÉE (exercices 2019-2021, déjà couverts par deux autres éditions) ; charges de personnel des éditions françaises non reprises ; édition arabe de la LF 2020 non relue. LU À L'IMAGE (pages rendues à 150 dpi et tournées), valeurs recoupées avec la couche texte.
 # note : Valeur ajoutée brute de la Transtu et valeur ajoutée par agent, exercices 2010-2021.
-Exercice,Valeur ajoutée (MD),Effectif,VA par agent (kD),Niveau de preuve,Fichier source,Page
-2010,77.0,7184,10.7,C,2010_rapport-annuel.pdf,51
-2011,112.2,8297,13.5,C,2011_rapport-annuel.pdf,36
-2012,85.9,8313,10.3,C,2012_rapport-annuel.pdf,36
-2013,106.2,8005,13.3,C,2013_rapport-annuel.pdf,56
-2014,123.6,7803,15.8,C,2014_rapport-annuel.pdf,59
-2015,126.8,7679,16.5,C,2015_rapport-annuel.pdf,63
-2016,138.8,7717,18.0,C,2016_rapport-annuel.pdf,61
-2017,155.1,7440,20.8,C,2017_rapport-annuel.pdf,68
-2018,144.7,7471,19.4,C,2018_rapport-annuel.pdf,65
-2019,144.4,7360,19.6,C,2019_rapport-annuel.pdf,66
-2020,134.1,7263,18.5,C,2020_rapport-annuel.pdf,74
-2021,133.8,7232,18.5,C,2021_rapport-annuel.pdf,74
+Exercice,Valeur ajoutée (MD),VA hors compensation (MD),Effectif,VA par agent (kD),Niveau de preuve,Fichier source,Page
+2010,77.0,-3.4,7184,10.7,C,2010_rapport-annuel.pdf,51
+2011,112.2,-10.9,8297,13.5,C,2011_rapport-annuel.pdf,36
+2012,85.9,-4.6,8313,10.3,C,2012_rapport-annuel.pdf,36
+2013,106.2,0.3,8005,13.3,C,2013_rapport-annuel.pdf,56
+2014,123.6,6.0,7803,15.8,C,2014_rapport-annuel.pdf,59
+2015,126.8,3.1,7679,16.5,C,2015_rapport-annuel.pdf,63
+2016,138.8,3.1,7717,18.0,C,2016_rapport-annuel.pdf,61
+2017,155.1,10.5,7440,20.8,C,2017_rapport-annuel.pdf,68
+2018,144.7,10.0,7471,19.4,C,2018_rapport-annuel.pdf,65
+2019,144.4,8.9,7360,19.6,C,2019_rapport-annuel.pdf,66
+2020,134.1,-4.7,7263,18.5,C,2020_rapport-annuel.pdf,74
+2021,133.8,-6.9,7232,18.5,C,2021_rapport-annuel.pdf,74

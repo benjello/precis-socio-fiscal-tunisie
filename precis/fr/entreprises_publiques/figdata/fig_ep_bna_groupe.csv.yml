@@ -1,0 +1,5 @@
+series: [entreprises-publiques-ecart-individuel-groupe]
+sources: [bvmt-etats-financiers]
+fiches: [sources/entreprises-publiques.md]
+caveats: [COMPTES DE L'ENTREPRISE, PAS UNE SOURCE BUDGÉTAIRE. La base groupe est la PART DU GROUPE (hors intérêts minoritaires). L'AGREGAT est une ADDITION de consolidés publiés, PAS une consolidation : rien n'est éliminé entre les banques (leurs participations réciproques restent comptées) ; le script le recontrôle à la somme (écart > 0,5 MD refusé). Cases vides honnêtes : BTE 2012 sans états consolidés ; STB 2012 et BH 2019 individuels scannés, quelques postes mère non lus ; Tunisair et STAR ne sont lus que sur les exercices vérifiés. Corrections de lecture du 7-8 nov. 2026 incluses (BNA 2016, BTE 2016/2022/2024, signes).]
+generated: 2026-11-09
