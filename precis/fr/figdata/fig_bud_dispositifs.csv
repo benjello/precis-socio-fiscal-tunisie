@@ -1,0 +1,93 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-11-09
+# séries (tunisia_data) : budget-dispositifs-poids
+# sources (citation) : @minfin-repartition-depenses-xls, @minfin-transferts-garanties, @dgct-donnees-ouvertes
+# fiches : 
+# méthode/hypothèses : 
+# note : Le poids des dispositifs du précis dans les dépenses de l'État hors dette, par an (les transferts transversaux en pointillé)
+annee,dispositif,valeur_MDT,rattachement,transversal,part_ligne_pct,part_total_pct
+1990,masse_salariale,1243.0,remunerations,False,100.0,39.07
+1991,masse_salariale,1409.0,remunerations,False,100.0,40.1
+1992,masse_salariale,1570.0,remunerations,False,100.0,42.94
+1993,masse_salariale,1718.0,remunerations,False,100.0,42.8
+1994,masse_salariale,1907.0,remunerations,False,100.0,44.59
+1995,masse_salariale,2091.0,remunerations,False,100.0,45.61
+1996,masse_salariale,1993.2,remunerations,False,100.0,41.03
+1997,masse_salariale,2293.5,remunerations,False,100.0,43.33
+1998,masse_salariale,2491.9,remunerations,False,100.0,44.44
+1999,masse_salariale,2706.2,remunerations,False,100.0,43.89
+2000,masse_salariale,3141.0,remunerations,False,100.0,47.32
+2001,masse_salariale,3424.8,remunerations,False,100.0,47.53
+2002,masse_salariale,3684.0,remunerations,False,100.0,49.02
+2003,compensation,328.8,interventions,False,38.85,4.15
+2003,masse_salariale,3968.0,remunerations,False,100.0,50.03
+2004,compensation,523.0,interventions,False,47.28,6.13
+2004,masse_salariale,4252.65,remunerations,False,100.0,49.87
+2005,compensation,790.0,interventions,False,56.8,8.6
+2005,masse_salariale,4590.971,remunerations,False,100.0,49.95
+2006,compensation,933.0,interventions,False,59.07,9.35
+2006,masse_salariale,4931.717,remunerations,False,100.0,49.45
+2007,compensation,1281.0,interventions,False,66.01,11.47
+2007,masse_salariale,5327.5,remunerations,False,100.0,47.71
+2008,compensation,2036.0,interventions,False,73.27,15.92
+2008,dotation_fccl,162.0,interventions (transferts APU locales),False,5.83,1.27
+2008,masse_salariale,5761.4,remunerations,False,100.0,45.04
+2009,compensation,1430.0,interventions,False,64.02,10.09
+2009,dotation_fccl,172.0,interventions (transferts APU locales),False,7.7,1.21
+2009,masse_salariale,6298.7,remunerations,False,100.0,44.44
+2010,compensation,1500.0,interventions,False,63.16,10.51
+2010,dotation_fccl,189.0,interventions (transferts APU locales),False,7.96,1.32
+2010,masse_salariale,6785.2,remunerations,False,100.0,47.56
+2011,compensation,2869.2,interventions,False,72.98,16.74
+2011,dotation_fccl,208.0,interventions (transferts APU locales),False,5.29,1.21
+2011,masse_salariale,7679.4,remunerations,False,100.0,44.8
+2012,compensation,3624.1,interventions,False,72.52,18.93
+2012,dotation_fccl,250.0,interventions (transferts APU locales),False,5.0,1.31
+2012,masse_salariale,8655.5,remunerations,False,100.0,45.22
+2013,compensation,5514.0,interventions,False,80.26,25.05
+2013,dotation_fccl,280.0,interventions (transferts APU locales),False,4.08,1.27
+2013,masse_salariale,9608.0,remunerations,False,100.0,43.65
+2014,compensation,4153.7,interventions,False,71.6,18.5
+2014,dotation_fccl,325.0,interventions (transferts APU locales),False,5.6,1.45
+2014,masse_salariale,10540.7,remunerations,False,100.0,46.95
+2015,compensation,2882.9,interventions,False,62.67,12.96
+2015,dotation_fccl,365.0,interventions (transferts APU locales),False,7.93,1.64
+2015,masse_salariale,11581.4,remunerations,False,100.0,52.05
+2016,compensation,2210.7,interventions,False,52.91,9.17
+2016,dotation_fccl,370.0,interventions (transferts APU locales),False,8.85,1.53
+2016,masse_salariale,13163.9,remunerations,False,100.0,54.59
+2016,transferts_ep,4152.157,transversal (1.1/1.3/2),True,,17.22
+2017,compensation,3492.2,interventions,False,58.53,12.8
+2017,dotation_fccl,394.0,interventions (transferts APU locales),False,6.6,1.44
+2017,masse_salariale,14352.0,remunerations,False,100.0,52.6
+2017,transferts_caisses,1238.087,transversal (⊂ transferts EP),True,,4.54
+2017,transferts_ep,6852.617,transversal (1.1/1.3/2),True,,25.11
+2018,compensation,4900.0,interventions,False,63.69,16.43
+2018,dotation_fccl,440.0,interventions (transferts APU locales),False,5.72,1.48
+2018,masse_salariale,14776.0,remunerations,False,100.0,49.55
+2018,transferts_caisses,1456.382,transversal (⊂ transferts EP),True,,4.88
+2018,transferts_ep,8392.306,transversal (1.1/1.3/2),True,,28.14
+2019,compensation,4788.0,interventions,False,59.53,14.65
+2019,dotation_fccl,480.0,interventions (transferts APU locales),False,5.97,1.47
+2019,masse_salariale,16765.0,remunerations,False,100.0,51.31
+2019,transferts_caisses,1467.12,transversal (⊂ transferts EP),True,,4.49
+2019,transferts_ep,8668.948,transversal (1.1/1.3/2),True,,26.53
+2020,compensation,4486.0,interventions,False,52.85,11.9
+2020,masse_salariale,19200.0,remunerations,False,100.0,50.92
+2020,transferts_caisses,2292.274,transversal (⊂ transferts EP),True,,6.08
+2020,transferts_ep,9895.94,transversal (1.1/1.3/2),True,,26.25
+2021,compensation,6031.0,interventions,False,67.85,14.99
+2021,masse_salariale,20175.4,remunerations,False,100.0,50.15
+2021,transferts_caisses,1604.76,transversal (⊂ transferts EP),True,,3.99
+2021,transferts_ep,10772.778,transversal (1.1/1.3/2),True,,26.78
+2022,compensation,11999.0,interventions,False,82.03,25.96
+2022,masse_salariale,21123.2,remunerations,False,100.0,45.7
+2022,transferts_caisses,1976.444,transversal (⊂ transferts EP),True,,4.28
+2022,transferts_ep,17078.555,transversal (1.1/1.3/2),True,,36.95
+2023,compensation,11479.5,interventions,False,76.57,23.61
+2023,masse_salariale,21696.6,remunerations,False,100.0,44.62
+2023,transferts_caisses,2330.844,transversal (⊂ transferts EP),True,,4.79
+2023,transferts_ep,17104.843,transversal (1.1/1.3/2),True,,35.18
+2024,compensation,11347.5,interventions,False,73.31,22.17
+2024,masse_salariale,22268.2,remunerations,False,100.0,43.51
+2025,compensation,11593.0,interventions,False,70.58,22.08
+2025,masse_salariale,23275.8,remunerations,False,100.0,44.34

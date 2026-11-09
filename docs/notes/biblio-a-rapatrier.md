@@ -4125,3 +4125,19 @@ Sources : § 10 de `docs/notes/regimes-speciaux-magistrats-2026-10-23.md`, § 10
 
 - `mineducation-pap-2014` copiée du livre éducation dans `remunerations_publiques` (FR et AR : même notice, texte arabe), parce que l'entrée de glossaire `mission-budgetaire` la cite et que le livre l'ancre désormais. À promouvoir au fonds commun.
 - Décret n° 2011-3325 du 27 octobre 2011 (augmentation de l'indemnité d'encadrement et de recherche des enseignants-chercheurs, JORT n° 85) : clé non créée ; citée seulement en commentaire du glossaire.
+
+## Clôture annexes budget/comptes (bibliographe)
+
+Annexes `annexe-budget-etat.qmd` et `annexe-comptes-nation.qmd` : les cinq clés citées
+(`loi-67-53-lob`, `loi-org-96-103-lob`, `loi-org-2019-15-lob`, `ins-cnat-2015`,
+`ins-scnt97-presentation`) résolvent déjà dans les deux langues ; rendu FR sans `[?]`.
+
+- [x] **Créée** (FR + AR, `precis/{fr,ar}/references.json`) : `minfin-repartition-depenses-xls`
+  (type `dataset`), clé de provenance des séries `budget-desagregation-nature` et
+  `budget-dispositifs-poids`. URL réelle de la fiche tunisia-data
+  `sources/minfinances-indicateurs.md` (édition LF2026). **Même classeur** que la clé
+  existante `minfin-remunerations` (angle rémunérations, rubrique 1.1) → fusion des deux
+  notices à arbitrer côté Zotero.
+- [ ] **À rapatrier dans Zotero** : `minfin-repartition-depenses-xls` (collection « Commun »,
+  fonds partagé). `--verifier` : 0 perte ; `--dry-run` : conversion propre (`dataset`) ;
+  `--controle-rangement` : 19 à déclasser **préexistants** (STEG, loi-climat), sans rapport.

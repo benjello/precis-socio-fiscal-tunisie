@@ -6752,6 +6752,35 @@
       }
     },
     {
+      "id": "minfin-repartition-depenses-xls",
+      "type": "dataset",
+      "note": "citation-key: minfin-repartition-depenses-xls\nClé de provenance de la désagrégation budgétaire de l'annexe « Le budget de l'État » (séries budget-desagregation-nature et budget-dispositifs-poids). Classeur Excel du ministère des Finances « Série repartition_economique_des_depenses_fr.xls » : dépenses de l'État par rubrique économique (MDT), réalisé 1986-2025, feuille « Rep eco dep » ; rubrique 4 Total = dépenses hors service de la dette (fiche tunisia-data sources/minfinances-indicateurs.md). Édition LF2026 servie, réalisé identique jusqu'à 2025. Même classeur que la clé minfin-remunerations (angle rémunérations, rubrique 1.1) : fusion des deux notices à arbitrer côté Zotero.",
+      "publisher": "Ministère des Finances, Tunisie",
+      "title": "Série de la répartition économique des dépenses de l'État",
+      "URL": "https://www.finances.gov.tn/sites/default/files/users/user93/S%C3%A9rie%20repartition_economique_des_depenses_fr_LF2026.xls",
+      "author": [
+        {
+          "literal": "Ministère des Finances, Tunisie"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            6,
+            9
+          ]
+        ]
+      }
+    },
+    {
       "id": "ins-bms",
       "type": "report",
       "title": "Bulletin mensuel de la statistique (numéros de novembre 2008 à juillet 2026)",

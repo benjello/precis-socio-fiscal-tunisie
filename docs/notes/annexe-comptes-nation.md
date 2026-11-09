@@ -326,3 +326,49 @@ Cette note ne modifie aucun `.qmd` ni fichier du précis. Elle fournit la matiè
 annexe « Les comptes de la nation » (option C) qui **documente le système statistique** et
 **renvoie à `annexe-pib.qmd`** pour tout ce qui concerne les bases du PIB. Le modèle openfisca
 n'entre pas dans le propos.
+
+---
+
+## Reports du chantier « comptes par secteur » (2026-11-09)
+
+Section ajoutée : `#sec-cn-comptes-secteurs` — la séquence des comptes désagrégée par secteur
+institutionnel (SNF, SF, APU consolidée, ménages, reste du monde), navigateur interactif par
+année, base 2015, série `cnat-comptes-secteurs` (générateur `scripts/generate_cnat_comptes_secteurs.py`).
+Les soldes sont lus (jamais recalculés).
+
+**Report prioritaire — compte des ménages incomplet.** Dans les tables disponibles (table emplois
+par édition n° 104 *et* fichier consolidé `comptes-des-menages.csv`), le compte des ménages s'arrête
+de fait au revenu d'exploitation/mixte : la **distribution secondaire** (prestations sociales
+reçues, cotisations, impôts courants) n'est pas captée, si bien que le **revenu disponible brut**
+(30 298,8 MD en 2021) est très sous-estimé et que l'**épargne brute** ressort égale au RDB (fausse
+pour les ménages, qui consomment l'essentiel de leur revenu ; pour les sociétés, épargne = RDB est
+normal, faute de consommation finale). La **consommation finale des ménages** et la **capacité ou
+besoin de financement** sont absentes. Ces trois lignes (revenu disponible, épargne, capacité) sont
+donc **masquées** dans le navigateur pour les ménages, avec caveat. → **à faire** : ré-extraire le
+compte des ménages (distribution secondaire et comptes d'utilisation/capital) des **PDF INS**
+(`R/ins-publications/comptes-de-la-nation/`), les CSV OCR ne suffisant pas. Les prestations versées
+par l'APU (11 752,7 MD en 2021) sont, elles, bien captées côté APU.
+
+**Report secondaire.** Profondeur historique : la série `cnat-comptes-secteurs` ne remonte qu'à
+2012 (base 1997) / 2015 (base 2015), limite des tables OCR ; antérieur à extraire des PDF base 1997
+(éditions 2001-2005 → 2011-2015) si une série plus longue est voulue.
+
+### Mise à jour (2026-11-09) — report ménages RÉSOLU + extension 2005
+
+- **Bug ménages corrigé en amont.** Cause : dans `tunisia-data/scripts/consolidate_cnat.py`, les
+  titres de comptes de secteur (composés lettre-à-lettre dans les PDF) tombaient tous dans un seul
+  seau de slug, et la sous-table « entreprises individuelles » avait capté le slug `comptes-des-menages`.
+  Correctif : résolution du slug par relecture du titre réel dans le header compagnon. Le compte
+  **complet** des ménages est régénéré (VA 2012 = 29 307,3 ; RDB ≠ épargne ; consommation finale
+  présente). Autres secteurs byte-identiques. **Colonne ménages réaffichée** dans le navigateur.
+- **Bug de glob corrigé aussi** (`cnat_*-tables` → `cnat[-_]*-tables`) : l'édition `cnat-2020-2024`
+  (tiret) n'était jamais lue → **tous** les secteurs s'arrêtaient à 2023. Désormais couverture
+  **2012-2024** pour tous.
+- **Extension 2005-2011** (base 1997) intégrée pour les 5 secteurs depuis l'extraction PDF validée.
+  Navigateur : **2005-2024**, base étiquetée par année.
+- **Fichiers tunisia-data non committés** (revue humaine) : `scripts/consolidate_cnat.py` modifié ;
+  `cnat-consolide/comptes-des-menages.csv` corrigé ; 7 comptes de secteur enfin séparés (nouveaux
+  fichiers) ; 10 fichiers-seau orphelins supprimés.
+- **Report restant** : le **revenu disponible brut des ménages** est absent 2020-2023 (ligne non
+  extraite de l'édition INS 2019-2023 — lacune d'OCR en amont, pas de consolidation) ; épargne,
+  consommation finale et capacité de financement y sont présentes. Ré-océrisation ciblée à prévoir.

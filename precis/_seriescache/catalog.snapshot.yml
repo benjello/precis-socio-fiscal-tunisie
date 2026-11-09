@@ -6454,6 +6454,33 @@
   - 'Nations unies (UNdata, UNSD National Accounts) : données officielles des pays,
     diffusion publique à des fins statistiques ; producteur d''origine INS. Citer
     UNSD/UNdata et l''INS.'
+- id: budget-desagregation-nature
+  titre: Dépenses de l'État réalisées hors dette, par nature (1986-2025)
+  sources:
+  - minfin-repartition-depenses-xls
+  source_ligne: Ministère des Finances, répartition économique des dépenses de l'État
+    (réalisations, hors service de la dette).
+- id: budget-dispositifs-poids
+  titre: Poids annuel des dispositifs du précis dans les dépenses de l'État
+  sources:
+  - minfin-repartition-depenses-xls
+  - minfin-transferts-garanties
+  - dgct-donnees-ouvertes
+  source_ligne: Ministère des Finances (répartition des dépenses ; annexe 8 des transferts)
+    et DGCT (dotation FCCL).
+- id: budget-comptanat-apu
+  titre: Compte des administrations publiques, emplois par nature économique (INS)
+  sources:
+  - ins-cnat-2015
+  source_ligne: INS, comptes de la nation, compte des administrations publiques (APU),
+    emplois et ressources, bases 1997 et 2015.
+- id: cnat-comptes-secteurs
+  titre: Séquence des comptes par secteur institutionnel (INS, comptes de la nation)
+  sources:
+  - ins-cnat-2015
+  source_ligne: INS, comptes de la nation, comptes des secteurs institutionnels (sociétés
+    non financières, financières, ménages, administrations publiques, reste du monde),
+    bases 1997 et 2015.
 - id: entreprises-publiques-ecart-individuel-groupe
   titre: 'Entreprises publiques cotées : capitaux propres, résultat et actif, comptes
     individuels (mère) et consolidés (part du groupe), 2012-2024'
