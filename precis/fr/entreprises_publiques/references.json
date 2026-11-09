@@ -15506,6 +15506,30 @@
       "note": "citation-key: bvmt-bh-leasing\nPage publique de la société sur le site de la Bourse de Tunis, lue le 3 novembre 2026 : principaux actionnaires (plus de 5 %) à l'assemblée du 15/04/2026, capital social et fonds propres des trois derniers exercices, historique du capital. Copie locale : tunisia-data/data/raw/entreprises-publiques/bvmt/bh-leasing.html (184333 octets, SHA-256 f8699968c5181b2a911c8874f246a2908395d0c4d981436d6c11f70ee4ef721c), ignorée par git. Relevé : scripts/bvmt_societes_cotees.py. Les actionnaires sous 5 % ne sont pas nommés ; la page ne donne ni cours ni capitalisation."
     },
     {
+      "id": "bvmt-etats-financiers",
+      "type": "webpage",
+      "title": "États financiers des sociétés cotées, déposés et publiés à la Bourse de Tunis",
+      "author": [
+        {
+          "literal": "Bourse de Tunis"
+        }
+      ],
+      "publisher": "Bourse de Tunis",
+      "publisher-place": "Tunis",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            8
+          ]
+        ]
+      },
+      "title-short": "Bourse de Tunis, états financiers",
+      "URL": "https://tunis-stockexchange.com/",
+      "note": "citation-key: bvmt-etats-financiers\nÉtats financiers individuels et consolidés (bilan, état de résultat, notes) que les sociétés cotées déposent à la Bourse de Tunis au titre de l'information permanente du marché (avis des sociétés cotées, bulletin officiel du CMF), consultés par société à la rubrique « Publications des sociétés ». Chaque fascicule compare l'exercice N et l'exercice N-1. Copies locales : tunisia-data/data/raw/entreprises-publiques/bvmt-etats-financiers/<societe>/AAAA_{individuel,consolide}.pdf (289 PDF, dix sociétés à participation publique), hors git ; fiche de source : tunisia-data/sources/bvmt-etats-financiers.md. Cité pour : les valeurs lues de ces états dans les figures de valeur ajoutée et d'efficience bancaire, dont l'onglet « Données » donne, ligne à ligne, le fascicule et la page."
+    },
+    {
       "id": "bvmt-bna",
       "type": "webpage",
       "title": "Informations sur la société : BNA",

@@ -119,9 +119,12 @@ def engendrer_pi(nom_role: str, config: dict) -> str:
 # Cibles engendrées : (nom, dossier, générateur). Ajouter un outil = une entrée
 # ici + une fonction engendrer_<outil>() + une table modeles.<outil> dans
 # roles.yml — jamais deviner le format d'en-tête d'un outil non vérifié.
+# Le dossier est nommé (pas capturé) : les tests monkey-patchent DOSSIER_CLAUDE
+# et DOSSIER_PI, et engendrer_tout() doit lire la valeur COURANTE du module —
+# une Path figée ici écrirait dans le dépôt réel pendant les tests.
 CIBLES = [
-    ("claude-code", DOSSIER_CLAUDE, engendrer_claude_code),
-    ("pi", DOSSIER_PI, engendrer_pi),
+    ("claude-code", "DOSSIER_CLAUDE", engendrer_claude_code),
+    ("pi", "DOSSIER_PI", engendrer_pi),
 ]
 
 
@@ -132,7 +135,8 @@ def roles_ordonnes(config: dict) -> list[str]:
 def engendrer_tout(config: dict) -> dict[tuple[str, str], tuple[Path, str]]:
     """{(outil, role): (chemin_cible, contenu)} pour toutes les cibles."""
     out = {}
-    for nom_outil, dossier, gen in CIBLES:
+    for nom_outil, nom_dossier, gen in CIBLES:
+        dossier = globals()[nom_dossier]
         for nom in roles_ordonnes(config):
             out[(nom_outil, nom)] = (dossier / f"{nom}.md", gen(nom, config))
     return out

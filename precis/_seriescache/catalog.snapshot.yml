@@ -6481,3 +6481,35 @@
   source_ligne: INS, comptes de la nation, comptes des secteurs institutionnels (sociétés
     non financières, financières, ménages, administrations publiques, reste du monde),
     bases 1997 et 2015.
+- id: entreprises-publiques-ecart-individuel-groupe
+  titre: 'Entreprises publiques cotées : capitaux propres, résultat et actif, comptes
+    individuels (mère) et consolidés (part du groupe), 2012-2024'
+  sources:
+  - bvmt-etats-financiers
+  build: uv run python scripts/consolider_ecart_individuel_groupe_ep.py
+  raw:
+  - sources/entreprises-publiques/ecart-individuel-groupe-ep.csv
+  output: data/processed/entreprises-publiques/ecart_individuel_groupe_ep.csv
+  unite: millions de dinars courants
+  perimetre: 'capitaux propres, résultat net et total actif des quatre banques publiques
+    (BNA, STB, BH, BTE), de Tunisair et de la STAR, lus à l''image à la fois des états
+    financiers INDIVIDUELS (base mere) et des états CONSOLIDÉS, part du groupe (base
+    groupe), déposés à la Bourse de Tunis ; exercices 2012-2024 selon disponibilité.
+    S''y ajoutent des lignes AGREGAT : la somme des quatre banques, par exercice et
+    par base. Une ligne par (groupe, exercice, grandeur, base), avec source et page
+    par valeur.'
+  caveats: 'COMPTES DE L''ENTREPRISE, PAS UNE SOURCE BUDGÉTAIRE. La base groupe est
+    la PART DU GROUPE (hors intérêts minoritaires). L''AGREGAT est une ADDITION de
+    consolidés publiés, PAS une consolidation : rien n''est éliminé entre les banques
+    (leurs participations réciproques restent comptées) ; le script le recontrôle
+    à la somme (écart > 0,5 MD refusé). Cases vides honnêtes : BTE 2012 sans états
+    consolidés ; STB 2012 et BH 2019 individuels scannés, quelques postes mère non
+    lus ; Tunisair et STAR ne sont lus que sur les exercices vérifiés. Corrections
+    de lecture du 7-8 nov. 2026 incluses (BNA 2016, BTE 2016/2022/2024, signes).'
+  titre_ar: 'المنشآت العمومية المدرجة: الأموال الذاتية والنتيجة والأصول، الحسابات
+    الفردية والمجمعة، 2012-2024'
+  unite_ar: ملايين الدنانير الجارية
+  perimetre_ar: الأموال الذاتية والنتيجة الصافية ومجموع الأصول للبنوك العمومية والخطوط
+    التونسية والنجمة، من القوائم الفردية والمجمعة المودعة ببورصة تونس.
+  caveats_ar: حسابات المنشأة؛ المجمع حصة المجموعة؛ المجموع جمع حسابي لا تجميع محاسبي.
+  fiche: sources/entreprises-publiques.md

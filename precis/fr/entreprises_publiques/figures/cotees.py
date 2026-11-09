@@ -377,8 +377,35 @@ def fig_cac(groupe: str, societe: str, delais_ecartes: tuple[int, ...] = ()):
     delais = delais[delais["exercice"].astype(int) >= exercices[0]]
     utilises = {t for ligne in d.loc[~d["opinion"].str.startswith("sans"), "themes"] for t in ligne.split(";")}
     themes = [t for t in THEMES_CAC if t in utilises]  # une ligne par thème que le groupe porte : pas de ligne vide
-    if not themes:  # groupe sans aucune réserve : les thèmes communs, en cases blanches
-        themes = [t for t in THEMES_CAC if not t.startswith(("star_", "tunisair_", "cimbiz_", "sotumag_", "tunisre_", "bte_", "tt_"))]
+    sans_reserve = not themes
+    if sans_reserve:
+        # Groupe sans aucune réserve sur les exercices lus : le constat s'écrit (titre), il ne
+        # se dessine pas — ni carte des thèmes ni panneau des motifs, tous deux vides. Reste le
+        # seul panneau qui porte des données : le délai de publication, quand la Bourse le donne.
+        constat = ft(f"Aucun motif de réserve sur les {len(lus)} exercices lus "
+                     f"({min(lus)}-{max(lus)})")
+        pts = sorted((int(r["exercice"]), int(r["jours"])) for _, r in delais.iterrows())
+        if not pts:  # ni réserve ni délai : une ligne de texte, pas de graphe vide
+            fig, ax = plt.subplots(figsize=(9.5, 1.2))
+            ax.text(0.01, 0.5, constat, fontsize=10, va="center")
+            ax.axis("off")
+            return fig
+        fig, ax = plt.subplots(figsize=(9.5, 3.2))
+        xs = list(range(len(exercices)))
+        ax.plot([exercices.index(x) for x, _ in pts], [j for _, j in pts], "-o",
+                color="#0969da", ms=4)
+        for x, jours in pts:
+            ax.annotate(str(jours), (exercices.index(x), jours), xytext=(0, 6),
+                        textcoords="offset points", ha="center", fontsize=7)
+        ax.set_title(constat + ft(" — délai de publication des états financiers annuels "
+                                  "individuels (jours après le 31 décembre)"),
+                     fontsize=9, loc="left")
+        ax.set_ylim(0, max([j for _, j in pts] + [100]) * 1.2)
+        ax.set_xticks(xs, [str(x) for x in exercices], fontsize=8)
+        ax.grid(axis="y", color="#d0d7de", lw=0.5)
+        for cote in ("top", "right"):
+            ax.spines[cote].set_visible(False)
+        return fig
     carte = np.full((len(themes), len(exercices)), np.nan)
     nombres = np.zeros(len(exercices))
     for _, r in d.iterrows():
