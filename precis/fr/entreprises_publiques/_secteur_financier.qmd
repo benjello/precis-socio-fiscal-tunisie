@@ -1384,15 +1384,14 @@ import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
 from figures import cotees as ct
 ct.figure_cac(
     "TUNISRE", "tunis-re",
-    caption=("Les réserves des commissaires aux comptes sur les comptes individuels de Tunis Re, par thème et par "
-             "exercice, leur nombre, et le délai de publication des états financiers annuels, d'après les états "
-             "financiers de la Bourse de Tunis : aucun des dix-sept exercices lus n'a de réserve. Source : [@bvmt-ef-tunisre-2009-individuel ; @bvmt-ef-tunisre-2010-individuel ; @bvmt-ef-tunisre-2011-individuel ; @bvmt-ef-tunisre-2012-individuel ; @bvmt-ef-tunisre-2013-individuel ; @bvmt-ef-tunisre-2014-individuel ; @bvmt-ef-tunisre-2015-individuel ; @bvmt-ef-tunisre-2016-individuel ; @bvmt-ef-tunisre-2017-individuel ; @bvmt-ef-tunisre-2018-individuel ; @bvmt-ef-tunisre-2019-individuel ; @bvmt-ef-tunisre-2020-individuel ; @bvmt-ef-tunisre-2021-individuel ; @bvmt-ef-tunisre-2022-individuel ; @bvmt-ef-tunisre-2023-individuel ; @bvmt-ef-tunisre-2024-individuel ; @bvmt-ef-tunisre-2025-individuel]"),
+    caption=("L'opinion des commissaires aux comptes sur les comptes individuels de Tunis Re, d'après les états "
+             "financiers de la Bourse de Tunis : aucun des dix-sept exercices lus (2009-2025) n'a de réserve ; la "
+             "figure donne le délai de publication des états financiers annuels. Source : [@bvmt-ef-tunisre-2009-individuel ; @bvmt-ef-tunisre-2010-individuel ; @bvmt-ef-tunisre-2011-individuel ; @bvmt-ef-tunisre-2012-individuel ; @bvmt-ef-tunisre-2013-individuel ; @bvmt-ef-tunisre-2014-individuel ; @bvmt-ef-tunisre-2015-individuel ; @bvmt-ef-tunisre-2016-individuel ; @bvmt-ef-tunisre-2017-individuel ; @bvmt-ef-tunisre-2018-individuel ; @bvmt-ef-tunisre-2019-individuel ; @bvmt-ef-tunisre-2020-individuel ; @bvmt-ef-tunisre-2021-individuel ; @bvmt-ef-tunisre-2022-individuel ; @bvmt-ef-tunisre-2023-individuel ; @bvmt-ef-tunisre-2024-individuel ; @bvmt-ef-tunisre-2025-individuel]"),
     note_lecture=(
-        "En haut, une case par thème de réserve et par exercice : aucune case n'est remplie, car aucun rapport ne "
-        "contient de réserve ; en gris, un exercice dont le rapport n'est pas lu (2008). Au milieu, le nombre de "
-        "motifs, nul chaque année. En bas, le nombre de jours entre le 31 décembre de l'exercice et la date que la "
-        "Bourse porte à la publication des états individuels. Les thèmes sont ceux du relevé des banques ; "
-        "les paragraphes d'observation sont dans le tableau."))
+        "Aucun rapport lu ne contenant de réserve, la figure ne dessine ni carte des thèmes ni compte de "
+        "motifs : elle donne le seul repère chiffré, le nombre de jours entre le 31 décembre de l'exercice "
+        "et la date que la Bourse porte à la publication des états individuels. Le rapport de 2008 n'est pas "
+        "lu ; les paragraphes d'observation, exercice par exercice, sont dans le tableau replié ci-dessous."))
 ```
 
 ::: {.chronologie-repliable titre="L'opinion des commissaires aux comptes sur les comptes de Tunis Re, exercice par exercice, 2009-2025"}
