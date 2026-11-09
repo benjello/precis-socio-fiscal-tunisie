@@ -37,20 +37,25 @@ class DepotJetable(unittest.TestCase):
         racine = Path(self._tmp.name)
         self.dossier_docs = racine / "docs" / "agents"
         self.dossier_claude = racine / ".claude" / "agents"
+        self.dossier_pi = racine / ".pi" / "agents"
         self.dossier_docs.mkdir(parents=True)
         self.dossier_claude.mkdir(parents=True)
+        self.dossier_pi.mkdir(parents=True)
 
         self._roles_yml_orig = sync_agents.ROLES_YML
         self._dossier_docs_orig = sync_agents.DOSSIER_DOCS
         self._dossier_claude_orig = sync_agents.DOSSIER_CLAUDE
+        self._dossier_pi_orig = sync_agents.DOSSIER_PI
         sync_agents.ROLES_YML = self.dossier_docs / "roles.yml"
         sync_agents.DOSSIER_DOCS = self.dossier_docs
         sync_agents.DOSSIER_CLAUDE = self.dossier_claude
+        sync_agents.DOSSIER_PI = self.dossier_pi
 
     def tearDown(self):
         sync_agents.ROLES_YML = self._roles_yml_orig
         sync_agents.DOSSIER_DOCS = self._dossier_docs_orig
         sync_agents.DOSSIER_CLAUDE = self._dossier_claude_orig
+        sync_agents.DOSSIER_PI = self._dossier_pi_orig
         self._tmp.cleanup()
 
     def ecrire_roles_yml(self, texte):
@@ -70,6 +75,10 @@ modeles:
     raisonnement: opus
     standard: sonnet
     mecanique: haiku
+  pi:
+    raisonnement: null
+    standard: null
+    mecanique: null
   openai:
     raisonnement: null
     standard: null
@@ -139,14 +148,18 @@ class EngendrerClaudeCodeTest(DepotJetable):
 
 
 class VerifierEtEcrireTest(DepotJetable):
+    # Depuis la génération à deux cibles (.claude/ et .pi/), verifier() et
+    # ecrire() rendent des noms préfixés par la cible : `<outil>/<role>`.
+    DEUX_CIBLES = ["claude-code/documentaliste", "pi/documentaliste"]
+
     def test_verifier_signale_fichier_absent(self):
         config = self.config_un_role()
-        self.assertEqual(sync_agents.verifier(config), ["documentaliste"])
+        self.assertEqual(sync_agents.verifier(config), self.DEUX_CIBLES)
 
     def test_ecrire_puis_verifier_est_propre(self):
         config = self.config_un_role()
         modifies = sync_agents.ecrire(config)
-        self.assertEqual(modifies, ["documentaliste"])
+        self.assertEqual(modifies, self.DEUX_CIBLES)
         self.assertEqual(sync_agents.verifier(config), [])
 
     def test_ecrire_est_idempotent(self):
@@ -163,7 +176,10 @@ class VerifierEtEcrireTest(DepotJetable):
             self.ROLES_YML_UN_ROLE.replace("niveau: raisonnement", "niveau: standard")
         )
         config2 = sync_agents.charger_config()
-        self.assertEqual(sync_agents.verifier(config2), ["documentaliste"])
+        # Seul le fichier Claude Code porte un modèle (modeles.pi est null dans
+        # la fixture : la ligne model: est omise et ne périme pas) : seul lui
+        # est signalé périmé.
+        self.assertEqual(sync_agents.verifier(config2), ["claude-code/documentaliste"])
 
     def test_corps_edite_sans_regeneration_est_detecte(self):
         """Le cas réel visé par la CI : docs/agents/<role>.md change, personne
@@ -171,7 +187,7 @@ class VerifierEtEcrireTest(DepotJetable):
         config = self.config_un_role()
         sync_agents.ecrire(config)
         self.ecrire_corps("documentaliste", "Corps modifié.\n")
-        self.assertEqual(sync_agents.verifier(config), ["documentaliste"])
+        self.assertEqual(sync_agents.verifier(config), self.DEUX_CIBLES)
 
 
 class DepotReelTest(unittest.TestCase):

@@ -50,11 +50,8 @@ Versés dans le corpus mais **pas encore inscrits** dans un `-urls.csv` :
   **161,889 MD (2022)**. Prolonge la VA Tunisair à 2023 (on s'arrêtait à 2022). VA/agent 2023 ≈
   148,085e6 / 3107 = **47 660 DT/agent**. À ajouter aux grandeurs, sourcé `…/tunisair/2023_individuel.pdf`.
 
-## 4. État de la sauvegarde (vérifié 15:34, 6 nov. 2026)
-- **Fonctionne** : `restic backup` morceau B actif (pid 35939, sous `systemd-inhibit`), tunnel
-  `benjello` **présent**, compteur `tx_bytes` **progresse** (+136 Ko/5 s).
-- Un **seul long run** depuis 10:19 (« essai 1/30 ») → le `reprise-B.log` ne s'actualise pas tant qu'il
-  tourne ; le dernier `.exit=1` est l'échec **précédent**, pas le run courant.
-- Convention (AGENTS.md tunisia-data) : relance par `scripts/sauvegarde/lancer_avec_reprise.sh B` ;
-  surveillance par `tx_bytes` + `.exit` + `reprise-B.log` ; **ne jamais** `forget/prune/unlock`.
-  Rien à faire tant que le compteur monte.
+## 4. (retiré)
+
+Cette section portait un instantané opérationnel qui n'a pas sa place dans ce dépôt public ;
+les notes et procédures correspondantes vivent dans le dépôt privé `tunisia-data` (son
+`AGENTS.md` fait foi).
