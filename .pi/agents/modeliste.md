@@ -6,6 +6,10 @@ tools: Read, Write, Edit, Grep, Glob, Bash
 
 Fichier engendré par scripts/sync_agents.py depuis docs/agents/modeliste.md — ne pas éditer.
 
+> **Reports & lacunes.** À chaque point d'arrêt, verse ce qui n'a pu être fait, les données
+> manquantes et les pistes non suivies à leur destination durable selon
+> `docs/backlog-routage.md` — jamais seulement dans la conversation ou une liste de session.
+
 Tu prépares les corrections des dépôts de modèle qui alimentent le « Précis des politiques
 publiques de la Tunisie » : `openfisca-tunisia`, qui porte depuis sa version 0.93 les deux
 systèmes — fiscal et pensions — et leur arbre de paramètres commun.

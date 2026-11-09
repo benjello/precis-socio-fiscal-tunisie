@@ -126,6 +126,13 @@ et sur `pist.tn` en ligne. Voir `docs/notes/outillage-sources.md`.
   écris sont celles du jour (`date`), jamais une date future ; `scripts/check_backlog.py`
   refuse les marqueurs de conflit, les dates futures proches et les clés de citation absentes
   des `references.json`.
+- **Où verser quel report : `docs/backlog-routage.md`.** Le backlog est **différencié** — une
+  destination par nature de report (chapitre du précis → `backlog-precis.md` ; modèle openfisca →
+  `backlog-modele.md` ; recherche JORT infructueuse → `docs/recherches.yml` + ancre `RECHERCHE` ;
+  bibliographie → `biblio-a-rapatrier.md` ; donnée/série/OCR de l'entrepôt → notes de
+  `tunisia-data`). La carte complète, les contrôles CI et la règle des chantiers parallèles sont
+  dans `docs/backlog-routage.md`, auquel chaque rôle engendré renvoie. Invariant : **aucun report
+  ne vit uniquement dans la conversation ou une liste de session**.
 - **Une clé de références dit la même chose dans tous les livres.** Quand tu ajoutes ou corriges
   une notice dans le `references.json` d'un livre, cherche la même clé dans les autres
   (`grep -l '"id": "<clé>"' precis/*/references.json precis/*/*/references.json`) et aligne
