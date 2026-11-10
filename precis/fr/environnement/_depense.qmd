@@ -1,0 +1,27 @@
+# La dépense publique d'environnement {#sec-env-depense}
+
+Ce chapitre construit la dépense publique d'environnement sur la plus longue période possible : le budget du ministère et les transferts qu'il verse aux établissements sous sa tutelle. Les familles de chiffres restent séparées ; les ruptures de périmètre ministériel sont marquées.
+
+<!-- TODO (rédacteur) : rédiger à partir de `docs/notes/environnement-q3-budget.md`. Trois séries
+     parallèles étiquetées, non chaînées (budget classique ; mission du budget par objectifs ;
+     programme « environnement »), plus la série des transferts par établissement 2020-2025
+     (triangulée, auto-validée par somme). Marquer d'un trait vertical les ruptures de périmètre :
+     entrée des affaires locales (2016-2017), scission des affaires locales (2020-2021). Ne jamais
+     tracer 2020→2021 comme une chute : c'est un changement de périmètre. Aucun chiffre ponctuel
+     isolé : toute valeur vient avec sa vue d'évolution datée. -->
+
+## Vue d'ensemble {#sec-env-depense-ensemble}
+
+<!-- TODO (rédacteur) : figure de la dépense (budget du ministère + transferts aux établissements)
+     sur la longue période, construite depuis l'entrepôt via `figtools.series()`. -->
+
+## Le budget du ministère {#sec-env-depense-ministere}
+
+<!-- TODO (rédacteur) : séries budgétaires, périmètre ministériel mouvant. -->
+
+## Les transferts aux établissements {#sec-env-depense-transferts}
+
+<!-- TODO (rédacteur) : transferts par établissement ; l'Office national de l'assainissement
+     capte la part dominante. Note de concordance (transferts par établissement / rapport sur les
+     entreprises publiques / subvention d'exploitation) : trois périmètres distincts, ne pas
+     fusionner. -->

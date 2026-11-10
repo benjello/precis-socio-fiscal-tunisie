@@ -1,0 +1,43 @@
+# Présentation {#sec-env-presentation}
+
+Ce livre décrit ce que l'État tunisien dépense, prélève et tarifie pour l'assainissement des eaux usées, la gestion des déchets et la dépollution industrielle : les institutions qui portent ces flux, leur dépense sur la longue période, et ce qu'en disent les rapports et les études. Son épine est budgétaire ; la réglementation sans effet budgétaire — normes de rejet, études d'impact, police de l'environnement — n'y paraît que lorsqu'un texte qui porte un flux la contient.
+
+::: {.callout-note}
+Ce volume est une **ébauche** : sa trame et ses sources sont établies, sa rédaction reste à faire. Il n'existe pour l'instant qu'en français.
+:::
+
+<!-- TODO (rédacteur) : première rédaction à partir des notes documentaires
+     `docs/notes/environnement-q1-textes-fondateurs.md` (institutions et textes fondateurs),
+     `docs/notes/environnement-q3-budget.md` (budget du ministère, transferts aux établissements),
+     `docs/notes/environnement-q4-fonds.md` (FODEP et fonds de l'esthétique). Le plan de livre et
+     les arbitrages du propriétaire sont dans `docs/notes/environnement-plan-livre.md`.
+     Cette page ne contient que le plan et le tableau de voisinage. -->
+
+## Le périmètre {#sec-env-perimetre}
+
+Le livre suit la **tutelle du ministère chargé de l'environnement**. Il traite l'**aval de l'eau** — l'assainissement des eaux usées (Office national de l'assainissement) ; l'eau potable, qui relève d'une autre tutelle, n'y entre qu'en contexte, le temps de dire que la redevance d'assainissement est assise sur la consommation d'eau. Il traite la **gestion des déchets** et la **dépollution industrielle** et ses fonds. Il ne construit pas de chapitre « climat-énergie » : la transition énergétique et les prix de l'énergie vivent dans d'autres livres, dont celui-ci ne reçoit qu'une phrase et un lien.
+
+## Plan {#sec-env-plan}
+
+1. **Les institutions et la tutelle** ([chapitre](./_institutions.html#sec-env-institutions)) : le ministère chargé de l'environnement et son périmètre mouvant, et les établissements sous sa tutelle — Agence nationale de protection de l'environnement, Agence nationale de gestion des déchets, Office national de l'assainissement ; pour chacun, naissance, statut, ressources, et ce que le budget lui verse.
+2. **La dépense publique d'environnement sur la longue période** ([chapitre](./_depense.html#sec-env-depense)) : budget du ministère et transferts aux établissements, sur la plus longue série constructible, familles de chiffres séparées et ruptures de périmètre marquées.
+3. **L'assainissement** ([chapitre](./_assainissement.html#sec-env-assainissement)) : le service, qui y a droit et qui paie ; les redevances d'assainissement comme épine ; le financement public.
+4. **Les déchets** ([chapitre](./_dechets.html#sec-env-dechets)) : le partage entre la commune, l'agence des déchets et les systèmes publics ; les flux.
+5. **La dépollution et les fonds** ([chapitre](./_depollution.html#sec-env-depollution)) : le fonds de dépollution et ses emplois, le fonds de la protection et de l'esthétique de l'environnement, les avantages à la lutte contre la pollution.
+6. **Rapports et études** ([chapitre](./_rapports_etudes.html#sec-env-rapports-etudes)) : ce que les rapports de contrôle et les études disent du secteur, chacun avec sa méthode ; le budgétaire ne s'y mêle pas.
+
+## Ce que d'autres livres traitent {#sec-env-voisinage}
+
+Un dispositif vit dans un seul livre ; celui-ci en reçoit une phrase et un lien, ou un tableau court tiré des mêmes données.
+
+| Sujet | Domicile | Ce que ce livre en reçoit |
+|---|---|---|
+| Taxe pour la protection de l'environnement, fonds de dépollution, autres taxes affectées | « La fiscalité », chapitre des taxes des fonds spéciaux | une phrase et un lien ; ce livre documente l'**emploi** du fonds, le prélèvement restant à la fiscalité |
+| Avantages « lutte contre la pollution », prime de dépollution | « La fiscalité », chapitre des régimes d'incitation | un tableau court des montants dans « La dépollution et les fonds » |
+| Office national de l'assainissement : statut, comptes, dette, garanties | « Les entreprises publiques », chapitre eau et communications | une figure ou un tableau court dans « L'assainissement » ; la prose n'est pas recopiée |
+| Eau potable (prix de l'eau, Société nationale d'exploitation et de distribution des eaux) | « Les entreprises publiques » (tutelle Agriculture) | une phrase en tête de « L'assainissement » : la redevance est assise sur la consommation d'eau |
+| Propreté communale, déchets ménagers, compétences partagées | « Les finances locales » | une phrase et un lien dans « Les déchets » |
+| Littoral, domaine public maritime, protection du littoral | futur volume « Habitat / logement » (tutelle Équipement/Habitat) | une ligne de mention, sans section propre |
+| Transition énergétique, prix de l'énergie | « La compensation » et « La fiscalité » | une phrase et un lien ; aucun chapitre propre |
+
+: Les sujets voisins et le livre qui les expose {#tbl-env-voisinage}
