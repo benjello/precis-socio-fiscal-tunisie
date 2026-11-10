@@ -1,0 +1,46 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-11-09
+# séries (tunisia_data) : finances-publiques-indicateurs
+# sources (citation) : @minfin-indicateurs-fp
+# fiches : docs/finances-publiques-indicateurs.md
+# méthode/hypothèses : DÉFINITION DU DÉFICIT reprise du tableau : « déficit selon les normes internationales, hors privatisation, dons extérieurs et revenus confisqués, Y COMPRIS le recouvrement du principal de la dette et les prêts » — ce n'est PAS le solde budgétaire brut ni le solde primaire ; la charge d'intérêt n'est pas isolée ici (elle l'est dans les Résultats d'exécution du budget). Périmètre ADMINISTRATION CENTRALE (≠ administrations publiques du WEO). Derniers exercices PROVISOIRES, révisés d'une édition à l'autre. Les ratios étaient stockés en fractions dans le XLS, remis en pourcent. PIB IMPLICITE : `dette_MDT`/`dette_pct_pib`×100 redonne le PIB employé par le ministère (dénominateur interne cohérent, hors ruptures de base INS). Voir docs/finances-publiques-indicateurs.md.
+# note : La dette publique rapportée au PIB (1986-2025) et la décomposition de sa variation annuelle : déficit, effet de la croissance nominale, autres flux (dont effet de change)
+annee,dette_pct_pib,variation,c_deficit,c_croiss,c_residu
+1987,55.67,-1.72,2.23,-6.25,2.3
+1988,58.71,3.03,3.08,-4.02,3.97
+1989,60.46,1.75,4.15,-5.69,3.29
+1990,58.37,-2.09,4.91,-6.85,-0.14
+1991,60.88,2.51,6.29,-5.89,2.11
+1992,55.68,-5.2,3.4,-7.45,-1.15
+1993,59.48,3.8,3.41,-3.63,4.02
+1994,59.19,-0.29,3.27,-4.33,0.77
+1995,57.56,-1.64,4.48,-4.3,-1.82
+1996,55.54,-2.02,4.42,-6.08,-0.35
+1997,56.93,1.39,4.02,-9.39,6.76
+1998,54.28,-2.65,3.15,-4.32,-1.48
+1999,55.64,1.36,3.39,-4.76,2.73
+2000,56.07,0.43,3.38,-4.19,1.25
+2001,56.47,0.4,3.33,-4.08,1.16
+2002,55.94,-0.53,3.13,-1.98,-1.68
+2003,55.02,-0.92,3.11,-3.91,-0.12
+2004,53.84,-1.17,2.57,-4.91,1.16
+2005,52.42,-1.42,2.9,-3.9,-0.42
+2006,48.56,-3.86,2.57,-4.45,-1.97
+2007,45.78,-2.78,2.67,-4.0,-1.45
+2008,43.29,-2.49,1.01,-4.48,0.98
+2009,42.93,-0.36,3.01,-2.51,-0.85
+2010,38.77,-4.16,0.98,-4.84,-0.3
+2011,42.48,3.72,3.14,-0.92,1.49
+2012,42.52,0.04,5.21,-3.53,-1.64
+2013,44.25,1.73,6.58,-2.8,-2.06
+2014,47.6,3.34,4.77,-3.24,1.81
+2015,51.34,3.75,4.53,-2.36,1.58
+2016,59.1,7.75,5.78,-2.96,4.93
+2017,66.94,7.84,5.87,-3.9,5.87
+2018,73.44,6.5,4.47,-6.5,8.52
+2019,67.77,-5.67,3.3,-5.96,-3.01
+2020,77.86,10.09,9.72,1.97,-1.6
+2021,79.21,1.35,7.8,-7.13,0.67
+2022,82.4,3.19,7.93,-4.49,-0.26
+2023,84.6,2.21,7.79,-5.66,0.08
+2024,84.9,0.3,6.75,-5.31,-1.14
+2025,82.07,-2.83,5.36,-6.32,-1.87

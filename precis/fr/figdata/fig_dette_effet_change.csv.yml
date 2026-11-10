@@ -1,0 +1,5 @@
+series: [dette-exterieure-effet-change]
+sources: [bct-dette-exterieure-2024]
+fiches: [docs/finances-publiques-indicateurs.md]
+caveats: [IDENTITÉ : variation_MDT = effet_change_MDT + effet_volume_MDT. L'effet-change mesure la réévaluation en dinars de la dette libellée en devises quand le change bouge, SANS emprunt nouveau ; l'effet-volume, les tirages nets. Fenêtre 2020-2024 (rapport BCT 2024). Dette extérieure à long terme.]
+generated: 2026-11-10

@@ -1,0 +1,32 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-11-10
+# séries (tunisia_data) : finances-publiques-indicateurs, dette-exterieure-effet-change
+# sources (citation) : @minfin-indicateurs-fp, @bct-dette-exterieure-2024
+# fiches : docs/finances-publiques-indicateurs.md
+# méthode/hypothèses : DÉFINITION DU DÉFICIT reprise du tableau : « déficit selon les normes internationales, hors privatisation, dons extérieurs et revenus confisqués, Y COMPRIS le recouvrement du principal de la dette et les prêts » — ce n'est PAS le solde budgétaire brut ni le solde primaire ; la charge d'intérêt n'est pas isolée ici (elle l'est dans les Résultats d'exécution du budget). Périmètre ADMINISTRATION CENTRALE (≠ administrations publiques du WEO). Derniers exercices PROVISOIRES, révisés d'une édition à l'autre. Les ratios étaient stockés en fractions dans le XLS, remis en pourcent. PIB IMPLICITE : `dette_MDT`/`dette_pct_pib`×100 redonne le PIB employé par le ministère (dénominateur interne cohérent, hors ruptures de base INS). Voir docs/finances-publiques-indicateurs.md., IDENTITÉ : variation_MDT = effet_change_MDT + effet_volume_MDT. L'effet-change mesure la réévaluation en dinars de la dette libellée en devises quand le change bouge, SANS emprunt nouveau ; l'effet-volume, les tirages nets. Fenêtre 2020-2024 (rapport BCT 2024). Dette extérieure à long terme.
+# note : L'effet de l'inflation sur la dette publique en % du PIB, par les deux canaux : dilution (dette en dinars) et réévaluation (dette extérieure), 2001-2025
+annee,infl,canal_dilution,canal_reeval
+2001,1.94,-1.01,0.16
+2002,2.83,-1.54,-0.03
+2003,2.72,-1.41,0.4
+2004,3.62,-1.81,1.79
+2005,2.04,-1.02,1.42
+2006,4.15,-1.99,0.73
+2007,3.44,-1.53,0.78
+2008,4.91,-2.03,2.9
+2009,3.54,-1.44,0.29
+2010,4.41,-1.68,2.07
+2011,3.54,-1.34,1.18
+2012,5.56,-2.17,1.13
+2013,6.11,-2.43,
+2014,5.48,-2.25,
+2015,4.72,-2.14,
+2016,3.72,-1.8,
+2017,5.32,-2.94,
+2018,7.46,-4.51,
+2019,6.8,-4.58,-5.02
+2020,5.64,-3.93,1.06
+2021,5.71,-4.04,0.53
+2022,8.31,-6.21,0.96
+2023,9.33,-7.16,0.83
+2024,7.02,-5.57,-0.19
+2025,5.37,-4.22,

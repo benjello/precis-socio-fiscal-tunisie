@@ -1,0 +1,5 @@
+series: [dette-exterieure-echeancier]
+sources: [wb-ids]
+fiches: [docs/dette-exterieure-echeancier.md]
+caveats: [ÉCHÉANCIER = DETTE DÉJÀ CONTRACTÉE. Les années `projeté` (au-delà de la dernière année d'encours renseigné) donnent le service du stock EXISTANT, qui décroît mécaniquement car il n'inclut aucun emprunt futur : ce n'est pas une prévision du service total à venir. PÉRIMÈTRE PPG EXTÉRIEUR SEUL : ni la dette privée non garantie, ni la dette intérieure en dinars (bons du Trésor). EN DOLLARS COURANTS : un encours extérieur en devises se réévalue en dinars avec la dépréciation, sans emprunt nouveau ; aucune conversion en dinars n'est faite ici. Source Debtor Reporting System de la Banque mondiale (déclarations du pays), niveau créancier au plus fin — jamais l'emprunt individuel. Les fichiers bruts ne sont pas versionnés ; un nouveau téléchargement peut changer les valeurs. Voir docs/dette-exterieure-echeancier.md.]
+generated: 2026-11-09

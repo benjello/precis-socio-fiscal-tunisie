@@ -1,0 +1,473 @@
+---
+title: "La dette publique et son périmètre"
+subtitle: "Annexe commune aux volumes : ce que recouvre « la dette publique », de quel périmètre on parle, et comment lire une grandeur de dette sur la longue période"
+format:
+  html:
+    include-in-header: ../accueil.html
+    toc: true
+    toc-depth: 3
+    toc-title: "Sommaire"
+    tbl-cap-location: top
+    fig-cap-location: top
+bibliography:
+  - references.json
+  - fiscalite/references.json
+  - entreprises_publiques/references.json
+csl: precis.csl
+crossref:
+  tbl-title: "Tableau"
+  tbl-prefix: "tableau"
+  fig-title: "Figure"
+  fig-prefix: "figure"
+  title-delim: " —"
+---
+
+[← Retour à l'accueil](index.html)
+
+<!-- BROUILLON (chantier annexe-dette) — à relire. Matière : docs/notes/annexe-dette-publique.md.
+     Squelette sourcé sur le droit et les périmètres ; les figures dépendent d'un module
+     `precis/fr/figures/annexe_dette.py` encore à écrire et, pour la courbe maîtresse d'encours,
+     d'une série à sourcer (voir les TODO et docs/notes/backlog-* ). Aucun chiffre non sourcé. -->
+
+<!-- Identifiants STABLES de cette page, auxquels les volumes renvoient (ne pas les renommer, ne pas les traduire) :
+     #sec-dette-pourquoi, #sec-dette-perimetres, #sec-dette-stock-flux, #sec-dette-tresorerie,
+     #sec-dette-service, #sec-dette-exterieure, #fig-dette-echeancier, #fig-dette-echeancier-creanciers, #fig-dette-cout-exterieur,
+     #fig-dette-devises, #fig-dette-effet-change, #fig-dette-liquidite, #sec-dette-interieure, #fig-dette-interieure,
+     #fig-dette-interieure-encours, #sec-dette-plafonds, #fig-dette-plafond-prets, #fig-dette-plafond-garanties,
+     #fig-dette-garanties-encours, #sec-dette-ep-croisees, #sec-dette-dynamique, #fig-dette-dynamique,
+     #sec-dette-soutenabilite, #fig-dette-valeur-dinar, #fig-dette-inflation-canaux, #fig-dette-cout, #sec-dette-sources, #sec-dette-lire. -->
+
+## Pourquoi cette annexe {#sec-dette-pourquoi}
+
+Les volumes du précis rapportent parfois une grandeur à la dette : le service de la dette dans les dépenses de l'État, le plafond ou l'encours des garanties accordées aux entreprises publiques, les dettes croisées entre l'État et ses entreprises. Aucun des treize volumes ne « possède » la dette publique : le service de la dette pèse sur le budget de l'État, les garanties et les prêts rétrocédés relèvent des *Entreprises publiques*, la soutenabilité touche tout dispositif qu'on rapporte au produit intérieur brut. La dette est l'agrégat de passif qui relie ces dispositifs.
+
+Comme pour le [budget de l'État](annexe-budget-etat.html) et le [produit intérieur brut](annexe-pib.html), on en fait donc une **annexe commune** : les définitions et les périmètres vivent ici ; les volumes y accrochent une grandeur de dette par lien d'ancre, chaque fois qu'ils en rapportent une. Cette annexe dit ce que recouvre « la dette publique », de quel périmètre on parle selon la source, où une série change de définition, et comment lire une grandeur de dette.
+
+## Ce que recouvre « la dette publique » {#sec-dette-perimetres}
+
+Cette section fixe le vocabulaire dont dépend toute l'annexe : les périmètres emboîtés de la dette, la partition entre dette intérieure et extérieure, et la distinction entre le stock dû et le flux remboursé chaque année.
+
+### Dette de l'État, dette garantie, dette publique
+
+La **dette de l'État** est la dette contractée par le Trésor. La **dette publique au sens large** y ajoute la dette **garantie** par l'État — celle des entreprises et établissements publics et des banques publiques, que l'État s'oblige à honorer en cas de défaut du débiteur — et, selon le périmètre retenu, la dette propre des entreprises publiques. Le document qui porte ces périmètres en Tunisie est le **Rapport sur la dette publique** annexé chaque année au projet de loi de finances, publié en arabe [@minfin-dette-2025].
+
+La **garantie de l'État** est l'engagement par lequel l'État s'oblige à honorer la dette d'un tiers s'il fait défaut ; la loi de finances en fixe le plafond annuel [@loi-org-2019-15-lob, art. 45]. On distingue les **garanties accordées dans l'année** (un flux) de l'**encours de dette garantie** (un stock), que l'annexe ne confond jamais (voir [stock et flux](#sec-dette-stock-flux)).
+
+### Dette intérieure et dette extérieure
+
+La dette se partage selon le marché d'émission et la devise : la dette **intérieure** est levée sur le marché local, en dinars ; la dette **extérieure** est contractée auprès de bailleurs ou sur les marchés internationaux, en devises. Cette partition emporte un piège propre à l'extérieure : un encours libellé en devises se **réévalue en dinars** avec la dépréciation du dinar, sans qu'aucun emprunt nouveau ait été contracté. Toute lecture d'une dette extérieure dit donc la devise et sépare l'effet de volume (emprunt net) de l'effet de change.
+
+::: {.callout-note collapse="true"}
+## Quatre « dettes extérieures » à ne pas confondre
+
+Selon la source et le périmètre, « la dette extérieure » ne désigne pas la même grandeur. Ordres de grandeur à fin 2024 :
+
+| Périmètre | Niveau 2024 | Ce qu'il recouvre |
+|---|---:|---|
+| Publique et garantie (**PPG**, Banque mondiale) | ~20,8 **milliards de dollars** | dette de l'État et dette garantie, en devises ; c'est la base de l'[échéancier](#sec-dette-exterieure) |
+| **Extérieure totale** (tous secteurs, BCT) | ~80 milliards de dinars | État **+ banques + entreprises** ; base de la [composition par devise](#fig-dette-devises) et de l'[effet de change](#fig-dette-effet-change) |
+| Extérieure de l'**État** (budgétaire, min. des Finances) | ~62,5 milliards de dinars | la seule part de l'État ; figure dans la [répartition intérieur/extérieur](#sec-dette-interieure) |
+| Extérieure de l'État (monétaire, BCT) | ~62,5 milliards de dinars | même part, lue par les statistiques monétaires |
+
+Règle de lecture : la **composition par devise** et l'**effet de change** portent sur l'encours **total tous secteurs** (~80 Md DT), non sur la seule dette de l'État. Les montants en **dollars** (PPG) ne se comparent pas directement aux montants en **dinars**.
+:::
+
+### Encours et service de la dette {#sec-dette-stock-flux}
+
+Deux grandeurs, qu'on ne mélange pas. L'**encours** est le stock dû à une date — en pratique la fin d'année. Le **service de la dette** est le flux annuel qui le rembourse : le **principal** (l'amortissement) et les **intérêts** (la charge d'intérêt). Un encours ne s'additionne pas à un service ; les deux ne se tracent pas sur le même graphique. Cette distinction n'est pas seulement comptable : elle est portée par la nomenclature budgétaire, qui range le principal et les intérêts à deux endroits différents du budget (voir [le service de la dette dans le budget](#sec-dette-service)).
+
+## Les ressources d'emprunt : trésorerie, pas recette {#sec-dette-tresorerie}
+
+La place de l'emprunt dans le budget a changé de régime, et ce changement commande la lecture de toute série où l'emprunt apparaît.
+
+Sous la **loi organique de 2019**, les recettes du budget de l'État sont classées en trois parties — recettes fiscales, recettes non fiscales et dons [@loi-org-2019-15-lob, art. 14]. L'emprunt n'y figure pas : les **ressources d'emprunt sont des ressources de trésorerie**, distinctes des recettes du budget [@loi-org-2019-15-lob, art. 12]. Cette structure s'applique à partir de la loi de finances pour 2020.
+
+Il en allait autrement sous la **loi organique de 1967**. Les dépenses y étaient rangées en deux **titres** : le titre I réunissait les dépenses de gestion et les **intérêts de la dette** [@loi-67-53-lob, art. 3] ; le titre II portait les dépenses de développement et le **remboursement du principal de la dette** [@loi-67-53-lob, art. 5]. Les ressources suivaient la même partition, et les **ressources d'emprunt faisaient partie des ressources du budget**, au titre II [@loi-67-53-lob, art. 6]. La loi organique de 1996 avait refondu cette nomenclature en titres, parties et sections [@loi-org-96-103-lob].
+
+L'emprunt est donc passé de **ressource budgétaire** (1967) à **ressource de trésorerie** (2019). Une série qui aligne « recettes fiscales, non fiscales, dons, emprunt » recouvre deux régimes : interpréter l'emprunt impose de dire l'époque.
+
+## Le service de la dette dans le budget {#sec-dette-service}
+
+Le service de la dette est **éclaté** dans la nomenclature de 1967 : les intérêts relèvent du titre I (fonctionnement), le principal du titre II (développement) [@loi-67-53-lob, art. 3 et 5]. Le reconstituer demande donc d'additionner deux titres. Sous la loi organique de 2019, il se retrouve parmi les natures de dépense « charges de financement » et « opérations financières » [@loi-org-2019-15-lob, art. 15].
+
+C'est le miroir exact de l'[annexe sur le budget de l'État](annexe-budget-etat.html#sec-bud-definitions) : la série maîtresse qui y porte les **dépenses de l'État hors dette** exclut précisément le service de la dette, pour isoler les dépenses pilotables du poids des emprunts passés. Ce que l'annexe budget retire — intérêts et principal —, la présente annexe le reprend.
+
+<!-- TODO (rédacteur) : figure du service de la dette (principal + intérêts) sur longue période,
+     en dinars et en % des dépenses de l'État, en miroir de #sec-bud-definitions.
+     DÉPEND d'une série à sourcer (service de la dette, minfin/BCT) — absente de _seriescache/.
+     Voir docs/notes/backlog-precis.md et docs/notes/annexe-dette-publique.md § 9. Ne pas inventer de chiffres. -->
+
+## La dette extérieure, prêteur par prêteur {#sec-dette-exterieure}
+
+La dette extérieure de l'État et la dette qu'il garantit se suivent **créancier par créancier, année par année**, mais non pas emprunt par emprunt : le détail de chaque prêt — son taux, sa maturité, son échéancier propres — n'est publié par aucune source, et reste interne aux systèmes de gestion de la dette. La maille publique la plus fine est donc le **créancier**.
+
+Deux sources se complètent. Le *Journal officiel* en donne le **recensement nominatif** : chaque emprunt extérieur est contracté par un accord approuvé par une loi, qui nomme le prêteur, l'objet financé et la date de signature — de la Banque internationale pour la reconstruction et le développement aux banques et fonds de développement régionaux. L'acte d'approbation porte le montant de l'accord, mais non ses conditions financières, qui figurent dans l'accord annexé et ne sont pas reproduites. Les **conditions et les flux** se lisent alors dans les statistiques de la dette extérieure publiées par les bailleurs eux-mêmes et par la Banque centrale : encours, tirages, remboursements du principal, intérêts, taux moyen et maturité moyenne, par créancier.
+
+De ces flux, le plus parlant est l'**échéancier** : la somme à rembourser chaque année — principal plus intérêts — au titre de la dette **déjà contractée**. Il ne se lit pas comme une prévision du service futur, car il décroît mécaniquement à l'horizon, à mesure que s'éteignent les emprunts en cours et faute d'y inscrire les emprunts à venir ; il mesure le **mur d'échéances** que porte le stock actuel.
+
+```{python}
+#| label: fig-dette-echeancier
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../scripts")
+from figures import annexe_dette
+import figtools
+figtools.figure_tabs(
+    annexe_dette.vues_echeancier(), annexe_dette.table_echeancier(),
+    "dette-exterieure-echeancier",
+    slug="fig_dette_echeancier",
+    caption=("La dette extérieure publique et garantie : service à rembourser chaque année "
+             "(principal et intérêts) et encours de fin d'année, en millions de dollars courants"),
+    note_lecture=(
+        "La première vue empile, pour chaque année, le remboursement du principal et les intérêts ; "
+        "les barres hachurées et translucides, au-delà du trait vertical, sont l'échéancier "
+        "projeté de la dette DÉJÀ contractée, qui décroît faute d'inclure les emprunts futurs — "
+        "ce n'est pas une prévision du service total à venir. La seconde vue donne l'encours de fin "
+        "d'année, connu jusqu'à l'année de déclaration. Le périmètre est la dette extérieure publique "
+        "et garantie, tous créanciers confondus, en dollars courants : un encours en devises se "
+        "réévalue en dinars avec la dépréciation, sans emprunt nouveau."),
+)
+```
+
+Rapporté au créancier, cet échéancier se ventile : porteurs d'obligations de marché, banques et fonds de développement régionaux, créanciers bilatéraux. La @fig-dette-echeancier-creanciers donne, pour les années récentes et l'horizon projeté, le service dû à chaque grand créancier — la maille la plus fine que publie la source, en deçà de laquelle l'emprunt individuel n'est pas accessible.
+
+```{python}
+#| label: fig-dette-echeancier-creanciers
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../scripts")
+from figures import annexe_dette
+import figtools
+figtools.figure_tabs(
+    annexe_dette.fig_creanciers(), annexe_dette.table_creanciers(),
+    "dette-exterieure-echeancier-creanciers",
+    slug="fig_dette_echeancier_creanciers",
+    caption=("Le service de la dette extérieure publique et garantie par grand créancier, "
+             "années récentes et horizon projeté, en millions de dollars courants"),
+    note_lecture=(
+        "Chaque barre empile le service annuel (principal + intérêts) dû aux principaux créanciers, "
+        "le reste étant regroupé en « autres créanciers » ; la somme d'une année égale l'échéancier "
+        "total de la figure précédente. Au-delà du trait vertical, les années sont projetées — le "
+        "service de la dette déjà contractée. « Porteurs d'obligations » regroupe la dette de marché. "
+        "Périmètre extérieur public et garanti, en dollars courants."),
+)
+```
+
+Le coût de cette dette extérieure se lit sur longue période. La @fig-dette-cout-exterieur rapporte les intérêts payés chaque année à l'encours de l'année précédente : ce **coût apparent** décroît des années 1980 — où il approchait 6 % — vers 2,5 % environ dans les années 2010, à la faveur des prêts concessionnels et de la baisse des taux mondiaux, avant de remonter légèrement. Il reste **inférieur au coût apparent de l'ensemble de la dette** (voir plus bas) : la dette extérieure, en devises, coûte moins en intérêt nominal que la dette intérieure en dinars — mais elle porte en contrepartie le risque de change.
+
+```{python}
+#| label: fig-dette-cout-exterieur
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../scripts")
+from figures import annexe_dette
+import figtools
+figtools.figure_tabs(
+    annexe_dette.fig_cout_exterieur(), annexe_dette.table_cout_exterieur(),
+    "dette-exterieure-echeancier",
+    slug="fig_dette_cout_exterieur",
+    caption=("Le coût apparent de la dette extérieure publique et garantie : intérêts de l'année "
+             "rapportés à l'encours de l'année précédente, 1971-2025"),
+    note_lecture=(
+        "Le coût apparent est la charge d'intérêt de l'année divisée par l'encours de dette "
+        "extérieure de la fin de l'année précédente, en dollars. Il mesure le coût moyen du stock, "
+        "non le taux des nouveaux emprunts. Périmètre extérieur public et garanti."),
+)
+```
+
+Cette dette extérieure est **libéllée en devises**, et sa composition se déforme sur longue période : la @fig-dette-devises donne la part de chaque monnaie dans l'encours. L'**euro** en est la monnaie dominante, sa part passant d'environ 45 % au début des années 2000 à près de 60 % ; le **yen**, qui pèsait un cinquième de l'encours au milieu des années 2000, a fondu à quelques pour cent ; le **dollar** et les autres devises remontent sur la période récente. Les rapports détaillés manquent pour 2013 à 2018 (rapports BCT sur la dette extérieure non publiés) ; trois années — 2015, 2017 et 2018 — sont **estimées** d'après le récit des rapports annuels et portées en **barres hachurées** (trois devises seulement, le dinar koweïtien fondu dans « autres ») ; les années 2013, 2014 et 2016, non renseignées, restent en blanc. Cette structure en devises expose l'encours à un **effet de change** : quand le dinar se déprécie, la dette en devises se réévalue en dinars sans qu'aucun emprunt nouveau ait été contracté. La @fig-dette-effet-change sépare, pour chaque année, la variation de l'encours entre cet **effet de change** et l'**effet de volume** (les emprunts nets) : certaines années, la dette augmente surtout parce que le dinar a baissé, non parce que l'État a davantage emprunté.
+
+```{python}
+#| label: fig-dette-devises
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../scripts")
+from figures import annexe_dette
+import figtools
+figtools.figure_tabs(
+    annexe_dette.fig_devises(), annexe_dette.table_devises(),
+    "dette-exterieure-devises",
+    slug="fig_dette_devises",
+    caption="La composition par devise de l'encours de la dette extérieure à long terme, 2003-2024",
+    note_lecture=(
+        "Part de chaque devise dans l'encours de la dette extérieure à long terme ; la somme fait "
+        "100 % chaque année. « Autres » regroupe les devises de moindre poids."),
+)
+```
+
+```{python}
+#| label: fig-dette-effet-change
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../scripts")
+from figures import annexe_dette
+import figtools
+figtools.figure_tabs(
+    annexe_dette.fig_effet_change(), annexe_dette.table_effet_change(),
+    "dette-exterieure-effet-change",
+    slug="fig_dette_effet_change",
+    caption=("La variation annuelle de l'encours de la dette extérieure, partagée entre effet de "
+             "change et effet de volume, 1999-2024 (trou 2013-2018)"),
+    note_lecture=(
+        "Chaque année, la variation de l'encours (points noirs) se décompose en effet de change "
+        "— la réévaluation en dinars de la dette en devises quand le change bouge, sans emprunt "
+        "nouveau — et effet de volume, les emprunts nets de l'année. Les deux peuvent être de signes "
+        "opposés."),
+)
+```
+
+Parce qu'elle est en devises, la dette extérieure se juge aussi à l'aune de la **liquidité externe** du pays : les **réserves de change**, mesurées en mois d'importation, et le **service de la dette rapporté aux exportations**. La @fig-dette-liquidite donne ces deux grandeurs sur longue période. Les réserves, très basses au milieu des années 1980, se reconstituent jusqu'à dépasser six mois d'importation au début des années 2020, puis reviennent vers trois à quatre mois ; le service de la dette absorbe une part des recettes d'exportation qui varie fortement au gré des échéances. Les niveaux récents concordent avec ceux que publie le Rapport annuel de la Banque centrale (de l'ordre de 106 jours de réserves et un coefficient du service de la dette extérieure autour de 16 % en 2025).
+
+```{python}
+#| label: fig-dette-liquidite
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../scripts")
+from figures import annexe_dette
+import figtools
+figtools.figure_tabs(
+    annexe_dette.vues_liquidite(), annexe_dette.table_liquidite(),
+    "liquidite-externe",
+    slug="fig_dette_liquidite",
+    caption=("La liquidité externe : réserves de change en mois d'importation, et service de la "
+             "dette extérieure publique et garantie en % des exportations, 1976-2024"),
+    note_lecture=(
+        "Réserves de change exprimées en mois d'importation (le trait pointillé marque le repère "
+        "usuel de trois mois) ; service de la dette extérieure publique et garantie rapporté aux "
+        "exportations de biens, services et revenus primaires. Données de la Banque centrale et du "
+        "système de déclaration de la dette, republiées par la Banque mondiale."),
+)
+```
+
+## La dette intérieure, titre par titre {#sec-dette-interieure}
+
+La dette intérieure de l'État — contractée en dinars, sur le marché local — se laisse suivre **plus finement que l'extérieure** : jusqu'au titre lui-même. L'État l'émet aujourd'hui sous deux formes principales, par adjudication : les **bons du Trésor assimilables** (BTA), à moyen et long terme, et les **bons du Trésor à court terme** (BTCT), dont la maturité se compte en semaines. Chaque **ligne** de bons du Trésor assimilables est un titre identifié, de valeur nominale mille dinars, portant son **taux nominal** et sa **date d'échéance** ; le dépositaire central et la bourse en publient la liste, et chaque adjudication est annoncée avec le montant retenu, le taux moyen pondéré et la maturité. La dette intérieure de marché est ainsi connue titre par titre, et émission par émission.
+
+Cette finesse a une limite : on connaît le **titre**, non son **porteur**. La répartition de la dette intérieure entre les banques, les autres institutions financières, les entreprises et les ménages, ligne par ligne, n'est pas publique ; seule une ventilation agrégée par catégorie de détenteur l'est.
+
+Avant l'ère des bons du Trésor assimilables, l'État se finançait à l'intérieur par des **emprunts nationaux** souscrits et des **bons d'équipement**, autorisés et datés au *Journal officiel*. Le marché des titres d'État garde donc deux âges : une histoire d'emprunts souscrits, datée par la loi ; un stock vivant de titres cotés, suivi à la ligne.
+
+En niveau, la répartition de la dette publique entre intérieur et extérieur s'est **inversée** sur un quart de siècle. La @fig-dette-interieure la suit depuis 2000. Au début des années 2000, la dette **extérieure** domine nettement (environ 11 milliards de dinars contre 7 pour l'intérieure en 2000). Après 2011, le recours aux marchés extérieurs s'intensifie — la dette extérieure bondit, dépassant 45 milliards en 2017 — puis, à mesure que cet accès se fait plus rare et plus cher, l'État se tourne vers le **marché domestique** : la dette intérieure accélère et **passe devant l'extérieure vers 2023-2024**. La part intérieure, d'un peu plus du tiers du total au début de la période, en dépasse la moitié sur les derniers exercices. Ces montants sont ceux de la dette publique au sens budgétaire (ministère des Finances), dont le total concorde avec l'encours de la dette publique rapporté ailleurs dans cette annexe.
+
+```{python}
+#| label: fig-dette-interieure
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../scripts")
+from figures import annexe_dette
+import figtools
+figtools.figure_tabs(
+    annexe_dette.vues_dette_interieure(), annexe_dette.table_dette_interieure(),
+    "dette-publique-interieur-exterieur",
+    slug="fig_dette_interieure",
+    caption="L'encours de la dette publique, part intérieure et part extérieure : niveaux et parts, 2000-2025",
+    note_lecture=(
+        "Encours de la dette de l'État en fin d'année, séparé entre dette intérieure (en dinars, "
+        "marché local) et dette extérieure (en devises), au sens des statistiques monétaires de la "
+        "Banque centrale (encours de la dette publique, source ministère des Finances). La "
+        "première vue donne les niveaux en millions de dinars, la seconde les parts dans le total "
+        "(le trait à 50 % marque le moment où l'intérieur passe devant l'extérieur)."),
+)
+```
+
+<!-- TODO (documentaliste) : encours à la LIGNE (BTA/BTCT, Tunisie Clearing) et série longue de la
+     dette intérieure par instrument (annexe 7 au PLF) — pour descendre sous l'agrégat BCT 2020-2025.
+     Voir docs/notes/dette-interieure.md et docs/notes/backlog-dette.md. -->
+
+<!-- TODO (documentaliste) : les « emprunts obligataires » du registre JORT sont surtout corporatifs —
+     n'entrent dans la dette d'État que les bons d'équipement, emprunts nationaux, bons du Trésor, et
+     les obligataires rétrocédés/garantis. Voir la colonne `categorie` de docs/notes/dette-interieure-registre-jort.csv. -->
+
+## Les plafonds votés en loi de finances {#sec-dette-plafonds}
+
+Chaque loi de finances fixe deux plafonds qui encadrent l'endettement sans le mesurer : le montant maximal des **prêts du Trésor** aux établissements publics, dans la limite duquel le ministre des Finances peut en accorder en vertu de l'article 62 du code de la comptabilité publique ; et le **plafond de la garantie** de l'État [@loi-org-2019-15-lob, art. 45]. Ce sont des **autorisations maximales votées**, jamais un montant effectivement accordé ni un encours.
+
+<!-- TODO (rédacteur) : @fig-dette-plafond-prets — plafond des prêts du Trésor voté en LF (série
+     jort-lf-plafond-prets-tresor, 2016-2026). DÉPEND du module figures/annexe_dette.py à écrire
+     (sur le modèle de figures/annexe_budget.py). Piège : maximum autorisé, pas un montant accordé. -->
+
+<!-- TODO (rédacteur) : @fig-dette-plafond-garanties — plafond de la garantie de l'État voté en LF
+     (série jort-lf-plafond-garanties, 1959-2026 ; rupture d'unité franc→dinar à traiter). -->
+
+Au-delà de ces plafonds votés, l'État porte un **encours de dette garantie** — celle des entreprises et établissements publics dont il répondrait en cas de défaut. La @fig-dette-garanties-encours en donne le stock, partagé entre part intérieure et part extérieure : il croît d'environ onze milliards de dinars en 2016 à plus de vingt en 2023, la part intérieure progressant le plus vite. Cet encours est une dette **au sens large** : il ne devient une charge pour l'État que si le débiteur garanti fait défaut.
+
+```{python}
+#| label: fig-dette-garanties-encours
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../scripts")
+from figures import annexe_dette
+import figtools
+figtools.figure_tabs(
+    annexe_dette.fig_garanties_encours(), annexe_dette.table_garanties_encours(),
+    "garanties-etat",
+    slug="fig_dette_garanties_encours",
+    caption="L'encours de la dette garantie par l'État, part intérieure et part extérieure, 2016-2023",
+    note_lecture=(
+        "Stock de dette garantie par l'État en fin d'année, en millions de dinars, séparé entre "
+        "dette garantie intérieure et extérieure. Il s'agit d'un encours garanti, non d'une dette "
+        "directe de l'État : il ne pèse sur le budget qu'en cas de défaut du débiteur garanti."),
+)
+```
+
+## Les dettes croisées entre l'État et ses entreprises {#sec-dette-ep-croisees}
+
+L'État et ses entreprises publiques se doivent l'un à l'autre : l'État garantit et finance, les entreprises lui versent des dividendes et lui doivent des créances, et réciproquement. Ces **dettes croisées** ne sont ni la dette de l'État ni la dette publique au sens large : c'est un troisième périmètre, documenté par le Rapport sur les entreprises publiques annexé à la loi de finances [@minfin-ep-2025]. Le volume [*Entreprises publiques*](entreprises_publiques/index.html) les traite ; l'annexe en rappelle seulement qu'on ne les additionne pas à la dette de l'État.
+
+<!-- TODO (rédacteur) : renvoi d'ancre précis vers la section EP qui porte le tableau des dettes
+     croisées (série entreprises-publiques-dettes-creances-croisees, 2021-2023, échantillon hors banques). -->
+
+## Sources et périmètres {#sec-dette-sources}
+
+Cette section récapitule ce que chaque source mesure et le piège de chacune. Elle est le lieu où les volumes vérifient de quel périmètre ils parlent avant de rapporter une grandeur de dette.
+
+| Grandeur | Ce qu'elle mesure | Couverture | Source | Piège |
+|---|---|---|---|---|
+| Plafond des prêts du Trésor | le maximum **voté** des prêts du Trésor aux établissements publics (art. 62 CCP) | depuis 2016 | lois de finances au *Journal officiel* | plafond voté, ni accordé ni encours ; relèvements en cours de gestion distincts de la fixation initiale |
+| Plafond de la garantie de l'État | le maximum **voté** de la garantie de l'État | depuis 1959 | lois de finances au *Journal officiel* | plafond voté, pas l'encours garanti ; rupture d'unité franc → dinar |
+| Encours de dette garantie | le stock de dette garantie, intérieur et extérieur | 2016–2024 | Rapport sur la dette publique (annexe à la loi de finances) | stock ≠ flux de garanties accordées ; montants lus à l'image sur l'édition arabe |
+| Dettes croisées État / entreprises publiques | dettes et créances réciproques, fin d'année | 2021–2023 | Rapport sur les entreprises publiques | échantillon partiel, hors banques ; périmètre distinct de la dette publique |
+
+<!-- TODO (documentaliste) : série longue d'encours de la dette publique et de service de la dette
+     (État / publique au sens large, intérieur / extérieur, en % du PIB) — ABSENTE du cache.
+     À sourcer (Rapport sur la dette publique, Rapport annuel de la BCT, situation de la dette du
+     ministère des Finances). Issue à ouvrir ; constat versé à docs/notes/backlog-precis.md. -->
+
+## La dette rapportée au PIB, et ce qui la fait bouger {#sec-dette-dynamique}
+
+La grandeur qui résume la dette d'un État n'est pas son montant, mais son **rapport au produit intérieur brut** : c'est lui qui dit si la dette pèse plus ou moins lourd sur l'économie qui la porte. La @fig-dette-dynamique en donne la trajectoire longue, puis décompose, année par année, **ce qui la fait varier**.
+
+La décomposition repose sur une identité comptable : la variation du ratio dette/PIB se partage entre la contribution du **déficit** (qui gonfle la dette), l'**effet de la croissance nominale** (qui dilue le ratio en gonflant le dénominateur), et un **résidu** — les autres flux qui changent la dette sans passer par le déficit, au premier rang desquels la **réévaluation en dinars de la dette libéllée en devises** quand le dinar se déprécie. Le PIB employé au dénominateur est celui que le ministère des Finances retient lui-même, ce qui garde numérateur et dénominateur cohérents sur toute la période.
+
+Le **déficit** porte ici une définition précise — celle du ministère des Finances, hors privatisation, dons extérieurs et revenus confisqués, et y compris le recouvrement du principal de la dette : ce n'est pas le solde budgétaire brut, et la charge d'intérêt n'y est pas isolée. L'écart entre la contribution du déficit et la hausse effective de la dette se loge donc dans le résidu, avec l'effet de change.
+
+```{python}
+#| label: fig-dette-dynamique
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../scripts")
+from figures import annexe_dette
+import figtools
+figtools.figure_tabs(
+    annexe_dette.vues_dette_pib(), annexe_dette.table_dynamique(),
+    "finances-publiques-indicateurs",
+    slug="fig_dette_dynamique",
+    caption=("La dette publique rapportée au PIB (1986-2025) et la décomposition de sa variation "
+             "annuelle : déficit, effet de la croissance nominale, autres flux (dont effet de change)"),
+    note_lecture=(
+        "La première vue donne l'encours de la dette publique en pourcentage du PIB. La seconde "
+        "décompose, chaque année, la variation de ce ratio (points noirs) en trois contributions, "
+        "en points de PIB : le déficit (qui accroît la dette), l'effet de la croissance nominale du "
+        "PIB (qui la dilue, donc négatif quand la croissance est positive), et un résidu qui recueille "
+        "les autres flux, dont la réévaluation en dinars de la dette en devises. Le déficit suit la "
+        "définition du ministère des Finances (périmètre administration centrale)."),
+)
+```
+
+## Ce qu'en dit l'économie : la soutenabilité {#sec-dette-soutenabilite}
+
+Juger une dette **soutenable** n'est pas se demander si l'État peut rembourser les échéances à venir : une dette souveraine ne s'éteint presque jamais en net, elle se **refinance**. L'échéancier des sections précédentes mesure donc un besoin de refinancement, pas une extinction. La question économique porte sur la **trajectoire du ratio** : tend-il à se stabiliser ou à croître sans borne ?
+
+La mécanique est standard. En notant $b$ le ratio dette/PIB, $r$ le taux d'intérêt effectif moyen sur la dette, $g$ la croissance nominale du PIB et $pb$ le solde primaire (solde hors charge d'intérêt, en points de PIB), la variation du ratio obéit à l'identité :
+
+$$ \Delta b \;\approx\; \frac{r - g}{1 + g}\, b_{-1} \;-\; pb $$
+
+Le ratio se **stabilise** ($\Delta b = 0$) lorsque l'État dégage un solde primaire égal à $pb^{*} = \tfrac{r - g}{1 + g}\, b_{-1}$. Quand $r$ dépasse $g$, stabiliser le ratio exige un excédent primaire ; quand la croissance dépasse le taux, elle dilue la dette. « Le taux de croissance qui rend la dette soutenable » a donc un sens précis — le $g$ qui annule $\Delta b$ à solde et taux donnés — mais c'est une condition **conditionnelle** : elle dépend du solde primaire, du coût de la dette et, pour une dette largement extérieure et en devises, de l'évolution du **change**. Un chiffre unique de croissance soutenable supposerait de fixer ces hypothèses ; il relève d'un exercice de projection, non d'un constat.
+
+L'ajustement stock-flux — au premier rang duquel la réévaluation en dinars de la dette en devises — s'ajoute à cette identité ; il est traité à part (voir [la décomposition de la dette/PIB](#sec-dette-dynamique) et l'[effet de change](#fig-dette-effet-change)).
+
+Ce point mérite d'être souligné, car l'inflation et le change ont sur les deux dettes des effets **opposés**. La @fig-dette-valeur-dinar montre que le dinar perd de la valeur des deux côtés à la fois : à l'intérieur, par la **hausse des prix** ; à l'extérieur, par la **dépréciation du change**. Or ces deux érosions ne jouent pas dans le même sens sur la dette. L'inflation **ronge** la dette libéllée en **dinars** : elle en allège la charge réelle et, en gonflant le PIB nominal, dilue le ratio. La dépréciation, elle, **alourdit** la dette libéllée en **devises** : converti en dinars, le même encours extérieur coûte davantage, sans qu'aucun emprunt nouveau ait été contracté — c'est l'effet de change de la @fig-dette-effet-change. La part que l'État emprunte en dinars profite donc de l'inflation ; la part qu'il emprunte en devises en pâtit.
+
+```{python}
+#| label: fig-dette-valeur-dinar
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../scripts")
+from figures import annexe_dette
+import figtools
+figtools.figure_tabs(
+    annexe_dette.fig_valeur_dinar(), annexe_dette.table_valeur_dinar(),
+    "change-dinar",
+    slug="fig_dette_valeur_dinar",
+    caption=("La double perte de valeur du dinar : niveau des prix intérieurs et taux de change "
+             "contre le dollar, indexés à 100 en 2000"),
+    note_lecture=(
+        "Les deux courbes sont indexées à 100 en l'an 2000. La hausse du niveau des prix mesure la "
+        "perte de valeur **interne** du dinar (inflation), qui ronge la dette en dinars ; la hausse "
+        "du taux de change (dinars par dollar) mesure sa perte de valeur **externe** (dépréciation), "
+        "qui alourdit la dette en devises convertie en dinars. L'indice des prix provient de la Banque "
+        "centrale ; le cours de change, du même, republié par la Banque mondiale."),
+)
+```
+
+Ces deux canaux ne pèsent pas du même poids sur le ratio dette/PIB. La @fig-dette-inflation-canaux les chiffre, en points de PIB. Le **canal de dilution** — l'inflation gonfle le PIB nominal au dénominateur et allège la dette en dinars — réduit le ratio de plusieurs points chaque année, jusqu'à quatre à sept points sur la période récente de forte inflation. Le **canal de réévaluation** — la dépréciation du change qui alourdit la dette extérieure en dinars — ne joue, lui, que de l'ordre d'un point, dans un sens ou dans l'autre selon les années. Sur la période récente, l'**effet net de l'inflation réduit donc nettement le ratio** : la dilution l'emporte largement sur la réévaluation. C'est l'une des raisons pour lesquelles l'écart $r - g$ est resté favorable.
+
+```{python}
+#| label: fig-dette-inflation-canaux
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../scripts")
+from figures import annexe_dette
+import figtools
+figtools.figure_tabs(
+    annexe_dette.fig_inflation_canaux(), annexe_dette.table_inflation_canaux(),
+    "finances-publiques-indicateurs", "dette-exterieure-effet-change",
+    slug="fig_dette_inflation_canaux",
+    caption=("L'effet de l'inflation sur la dette publique en % du PIB, par les deux canaux : "
+             "dilution (dette en dinars) et réévaluation (dette extérieure), 2001-2025"),
+    note_lecture=(
+        "Décomposition illustrative, en points de PIB. Canal de **dilution** : effet de l'inflation "
+        "sur le ratio via le PIB nominal, estimé par −(dette/PIB de l'année précédente) × taux "
+        "d'inflation / (1 + croissance nominale) ; négatif, il **réduit** le ratio. Canal de "
+        "**réévaluation** : effet de change réel sur la dette extérieure (rapport de la Banque "
+        "centrale), rapporté au PIB ; disponible de 1999 à 2024 (sauf 2013-2018). Les points noirs donnent la somme "
+        "des deux là où elle est mesurable. L'effet de change n'est **pas** approché par le seul "
+        "dollar — la dette est surtout en euro — d'où le recours à la mesure directe."),
+)
+```
+
+Sur le passé, en revanche, $r$ et $g$ se **constatent**. La @fig-dette-cout met face à face, sur longue période, le **coût apparent de la dette** (la charge d'intérêt rapportée à l'encours de l'année précédente) et la **croissance nominale du PIB**, puis décompose le solde budgétaire récent en **solde primaire** et **charge d'intérêt**. La charge d'intérêt se lit avant 2012 dans les statistiques de finances publiques que la Tunisie déclare au Fonds monétaire international, et à partir de 2012 dans les bulletins d'exécution du budget du ministère des Finances ; les deux se recoupent à 0,4 % près en 2012.
+
+Le fait saillant est que, sur la plus grande partie de la période, la **croissance nominale du PIB a dépassé le coût apparent de la dette** ($r - g < 0$) : le ratio dette/PIB tend alors à se réduire, même à solde primaire nul. Mais cet écart favorable tient pour beaucoup à l'**inflation**. La grandeur comparée ici est **nominale** : une inflation élevée gonfle la croissance nominale $g$, donc le dénominateur du ratio, et **érode la valeur réelle de la dette** — ce n'est pas la même chose qu'une croissance **réelle** supérieure au coût réel de la dette. C'est donc en partie l'inflation, et non la seule vigueur de l'économie, qui a rendu l'écart favorable ; déflé de l'inflation, un $r - g$ **réel** serait moins favorable. Les épisodes où l'écart se resserre ou s'inverse sont ceux où la croissance nominale faiblit — récession de 2011, choc de 2020. Sur la période récente, le coût apparent remonte avec le resserrement des taux, mais reste en deçà d'une croissance nominale soutenue par l'inflation ; dans le même temps, le déficit **primaire** se réduit tandis que la charge d'intérêt pèse davantage.
+
+```{python}
+#| label: fig-dette-cout
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../scripts")
+from figures import annexe_dette
+import figtools
+figtools.figure_tabs(
+    annexe_dette.vues_cout(), annexe_dette.table_cout(),
+    "finances-publiques-charge-interet", "finances-publiques-execution", "finances-publiques-indicateurs",
+    slug="fig_dette_cout",
+    caption=("Le coût apparent de la dette face à la croissance nominale du PIB (écart $r-g$) "
+             "sur longue période, et le partage récent du solde budgétaire entre solde primaire "
+             "et charge d'intérêt"),
+    note_lecture=(
+        "Coût apparent de la dette : charge d'intérêt de l'année rapportée à l'encours de la dette "
+        "publique de l'année précédente. Croissance nominale : variation du PIB de la série "
+        "enchaînée, base-cohérente (sans les sauts de base des comptes nationaux ; voir l'annexe PIB). "
+        "Le trait vertical marque le changement de source de la charge "
+        "d'intérêt (statistiques GFS avant 2012, bulletins d'exécution ensuite). La seconde vue "
+        "partage le solde budgétaire (points) en solde primaire et charge d'intérêt, en points de "
+        "PIB, sur la période d'exécution disponible (2012-2024)."),
+)
+```
+
+<!-- TODO (bibliographe) : verser les clés économiques de docs/notes/eco-soutenabilite-dette.md
+     (blanchard-2019-public-debt, mauro-zhou-2021-r-minus-g, imf-2022-srdsf, etc.) puis citer ici.
+     TODO (documentaliste) : série LONGUE de la charge d'intérêt (Bulletin statistique des finances,
+     BCT) pour étendre l'écart r−g et le solde primaire avant 2021 ; besoin brut de financement
+     (amortissements). Voir docs/notes/backlog-dette.md. -->
+
+## Comment lire une grandeur de dette {#sec-dette-lire}
+
+Cette annexe tient en quelques règles de lecture, qui valent pour toute grandeur de dette rapportée dans un volume :
+
+- **Dire le périmètre.** Dette de l'État, dette publique au sens large (avec garanties), ou dettes croisées des entreprises publiques : trois grandeurs distinctes. Toute figure dit laquelle.
+- **Ne pas confondre plafond, montant accordé et encours.** Les plafonds votés en loi de finances sont des autorisations maximales, pas une mesure de l'endettement.
+- **Séparer le stock et le flux.** L'encours est un stock à une date ; le service de la dette, un flux annuel (principal + intérêts). On ne les additionne pas, on ne les trace pas ensemble.
+- **Dire l'époque pour l'emprunt.** Ressource de trésorerie depuis 2020, ressource budgétaire du titre II auparavant.
+- **Dire la devise pour la dette extérieure.** Un encours en devises se réévalue en dinars avec la dépréciation, sans emprunt nouveau.
+- **Rapporter au produit intérieur brut avec prudence.** Toute part au PIB hérite des ruptures de base des comptes nationaux ; se reporter à l'[annexe sur le produit intérieur brut](annexe-pib.html#sec-pib-ruptures).

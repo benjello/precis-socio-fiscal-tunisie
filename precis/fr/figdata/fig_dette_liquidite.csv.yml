@@ -1,0 +1,5 @@
+series: [liquidite-externe]
+sources: [wb-wdi, wb-ids]
+fiches: [docs/finances-publiques-indicateurs.md]
+caveats: [DONNÉES DE LA BANQUE CENTRALE DE TUNISIE (réserves, balance des paiements) et du système de déclaration de la dette, republiées par la Banque mondiale (IMF IFS et IDS). Se recoupent avec les niveaux récents du Rapport annuel de la BCT (réserves 2024 : 121 jours ≈ 4 mois ; coefficient du service 2024 ≈ 19 %). Le service/exportations porte sur la dette PPG ; un indicateur national « coefficient du service de la dette extérieure » (toutes dettes, crédits des transactions courantes) existe au RA de la BCT, de définition voisine mais non identique. Un nouveau téléchargement peut réviser des valeurs.]
+generated: 2026-11-09
