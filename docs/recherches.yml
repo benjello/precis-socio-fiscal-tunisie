@@ -3750,6 +3750,12 @@
     couverture: 'jort_cache (FTS « reglement du budget » : 62 notices, lois de règlement des gestions 1954-55 à 2009 et 2017-2020 ; LIKE arabe « غلق ميزانية الدولة » : lois n° 2016-23 à 2016-25 pour 2010-2012, n° 2018-39 à 2018-41 et 2018-49 pour 2013-2016) jusqu''au 2 octobre 2026, dernière publication indexée. Texte lu au fascicule français du corpus local : JORT n° 97 de 2010 (loi n° 2010-56, gestion 2008) et n° 35 de 2024 (lois n° 2024-18 à 2024-21, gestions 2017 à 2020) ; les articles renvoient aux « tableaux n° 1 et 2 annexés », qui ne figurent pas dans le texte extrait du fascicule. Les fascicules des autres lois de règlement n''ont pas été ouverts. Aucun texte de règlement des gestions 2021 et suivantes à l''index.'
     couvert_jusqu_au: 2026-10-02
     resultat: aucun
+  - date: 2026-11-10
+    role: documentaliste
+    sources: [iort]
+    couverture: 'relance du 2026-11-10 : 0 candidat dans jort_cache (titres) et sur le miroir iort depuis la passe précédente ; les tableaux par chapitre des lois de règlement restent introuvables'
+    couvert_jusqu_au: 2026-10-29
+    resultat: aucun
   a_faire:
   - lire à l'image les pages des JORT n° 97 de 2010 et n° 35 de 2024 qui suivent les lois, pour confirmer que les tableaux annexés ne sont pas publiés
   - 'chercher les tableaux annexés hors JORT : projets de loi de règlement déposés à l''Assemblée, rapports de la Cour des comptes sur le règlement du budget'
@@ -3768,6 +3774,12 @@
     sources: [jort_cache]
     couverture: 'jort_cache, intitulés français (FTS) et arabes (LIKE « غلق ميزانية الدولة ») publiés après le 8 mars 2024 : aucune notice ; dernière loi de règlement indexée : n° 2024-21 (gestion 2020), JORT n° 35 du 7 mars 2024. Plein texte du corpus local non parcouru.'
     couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  - date: 2026-11-10
+    role: documentaliste
+    sources: [iort]
+    couverture: 'relance du 2026-11-10 : 0 candidat dans jort_cache (titres FR et AR) et sur le miroir iort depuis la passe du 2026-10-03 ; aucune loi de règlement pour 2021 ou après indexée'
+    couvert_jusqu_au: 2026-10-29
     resultat: aucun
   a_faire: [parcourir le plein texte des fascicules 2024-2026 du corpus local (terme « غلق ميزانية »)]
 

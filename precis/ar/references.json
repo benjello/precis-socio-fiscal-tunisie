@@ -6889,6 +6889,152 @@
       }
     },
     {
+      "id": "minfin-indicateurs-fp-xls",
+      "type": "dataset",
+      "note": "citation-key: minfin-indicateurs-fp-xls\nClé de provenance de la série budget-solde-dette de l'annexe « Le budget de l'État ». Classeur Excel du ministère des Finances « indicateurs des fin pub » : déficit budgétaire (normes internationales, hors privatisation et dons), pression fiscale et encours de la dette publique, en MDT et en % du PIB, réalisé 1986-2025 plus colonnes de lois de finances (fiche tunisia-data sources/minfinances-indicateurs.md). Le PIB sous-jacent n'est pas publié ; les % héritent de ses bases successives et se lisent par segments.",
+      "publisher": "Ministère des Finances, Tunisie",
+      "title": "Indicateurs des finances publiques : déficit, pression fiscale, dette",
+      "URL": "https://www.finances.gov.tn/sites/default/files/users/user93/indicateurs%20des%20fin%20pub%20LF2026.xls",
+      "author": [
+        {
+          "literal": "Ministère des Finances"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "id": "minfin-service-dette-xls",
+      "type": "dataset",
+      "note": "citation-key: minfin-service-dette-xls\nClé de provenance de la série budget-service-dette de l'annexe « Le budget de l'État ». Classeur Excel du ministère des Finances « Série service de la dette publique » : service total, remboursement du principal et intérêts de la dette publique, ventilés intérieur/extérieur, en MDT, réalisé 1986-2025 plus colonnes de lois de finances, feuille « Dette » (fiche tunisia-data sources/minfinances-indicateurs.md, sources/minfinances-indicateurs-urls.csv). Complément de la répartition économique des dépenses, dont le total exclut le service de la dette.",
+      "publisher": "Ministère des Finances, Tunisie",
+      "title": "Série du service de la dette publique",
+      "URL": "https://www.finances.gov.tn/sites/default/files/users/user93/S%C3%A9rie%20service%20de%20la%20dette%20publique.xls",
+      "author": [
+        {
+          "literal": "Ministère des Finances"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            10
+          ]
+        ]
+      }
+    },
+    {
+      "id": "minfin-recettes-non-fiscales-xls",
+      "type": "dataset",
+      "note": "citation-key: minfin-recettes-non-fiscales-xls\nClé de provenance de la série budget-recettes-totales de l'annexe « Le budget de l'État ». Classeur Excel du ministère des Finances « Série Recettes_non_fiscales.xls » : recettes non fiscales de l'État (MDT), réalisé 1986-2025 plus colonnes de lois de finances, feuille « Rec nn fis » — revenus pétroliers, redevance gazoduc, participations, dons extérieurs, privatisation, recouvrement de principal, autres recettes (fiche tunisia-data sources/minfinances-indicateurs-urls.csv). Présentation LOB 2004-42 : dons et privatisation compris dans les recettes non fiscales, alors que le déficit des indicateurs est « hors privatisation et dons ».",
+      "publisher": "Ministère des Finances, Tunisie",
+      "title": "Série des recettes non fiscales de l'État",
+      "URL": "https://www.finances.gov.tn/sites/default/files/users/user93/S%C3%A9rie%20Recettes_non_fiscales.xls",
+      "author": [
+        {
+          "literal": "Ministère des Finances"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            10
+          ]
+        ]
+      }
+    },
+    {
+      "id": "mizaniatouna-boost",
+      "type": "dataset",
+      "title": "Base de données BOOST de la Tunisie — dépenses de l'État par ligne budgétaire, 2008-2016",
+      "author": [
+        {
+          "literal": "Ministère des Finances (Tunisie)"
+        },
+        {
+          "literal": "Banque mondiale"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2017
+          ]
+        ]
+      },
+      "URL": "http://web.archive.org/web/20220623104208/http://www.mizaniatouna.gov.tn/tunisia/template_fr/boost_fr.xlsx",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            10
+          ]
+        ]
+      },
+      "note": "citation-key: mizaniatouna-boost\nPortail mizaniatouna.gov.tn hors service (503) le 10/11/2026 ; consulté dans la capture Wayback du 23/06/2022 (une capture du 25/07/2017 a la même taille à 16 octets près). 144 029 lignes, 2008-2016, par ligne budgétaire : fonction, chapitre/ministère, nature sur cinq niveaux, programme, gouvernorat, fonds, et les étapes voté/ouvert/délégué/ordonnancé/payé. Payé fiable 2008-2014, partiel 2015, très partiel 2016. Copie locale : tunisia-data, data/raw/mizaniatouna/boost_fr.xlsx ; fiche sources/mizaniatouna-boost.md (SHA-256 au catalogue)."
+    },
+    {
+      "id": "gbo-rap-missions",
+      "type": "report",
+      "title": "Rapports annuels de performance des missions du budget de l'État (gestions 2016-2023)",
+      "author": [
+        {
+          "literal": "République tunisienne, missions du budget de l'État (unités GBO)"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      },
+      "URL": "https://www.gbo.tn/",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            10
+          ]
+        ]
+      },
+      "note": "citation-key: gbo-rap-missions\nClé collective des RAP (rapports annuels de performance) publiés par les missions du budget de l'État sur gbo.tn et les sites ministériels, dépouillés pour la série budget-missions-execute (crédits engagés et payés par mission). Environ 170 PDF, arabes pour la plupart, rangés dans tunisia-data (data/raw/gbo-recup-2026-11-04/ et gbo-recup-2026-11-10/ ; fiches sources/gbo-recuperation-2026-11-04.md et -2026-11-10.md, SHA-256 au catalogue). Dépouillement : docs/notes/budget-missions-execute-lotA.{csv,md} et -lotB.{csv,md} (précis), chaque valeur avec fichier et page ; deux régimes comptables (paiements seuls jusqu'à la gestion 2019 ; engagé/payé hors ressources propres depuis 2020). Intérieur, Défense nationale et présidence de la République ne publient aucun RAP."
+    },
+    {
       "id": "ins-bms",
       "type": "report",
       "title": "Bulletin mensuel de la statistique (numéros de novembre 2008 à juillet 2026)",
@@ -12333,6 +12479,49 @@
       "note": "citation-key: minfin-rapport-budget-2014\nDocument retiré du site du ministère des Finances (l'adresse d'origine répond 404 le 6 octobre 2026) ; consulté dans la capture du 19/12/2017 (horodatage 20171219103721 lu dans le CDX le 6 octobre 2026). Texte arabe, 97 p. Lu : p. 16 (p. 22 du PDF), même constat que pour 2013 sur le volume de la restitution du crédit de taxe. Date (octobre 2013) d'après le catalogue tunisia-data.",
       "genre": "Rapport",
       "archive": "أرشيف الإنترنت (Wayback Machine)"
+    },
+    {
+      "id": "minfin-rapport-budget-2021",
+      "type": "report",
+      "title": "تقرير حول مشروع ميزانية الدولة لسنة 2021 (Rapport sur le projet de budget de l'État pour 2021)",
+      "title-short": "Rapport sur le projet de budget de l'État pour 2021",
+      "author": [
+        {
+          "literal": "وزارة المالية (ministère des Finances)"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2020,
+            10
+          ]
+        ]
+      },
+      "language": "ar",
+      "URL": "https://www.finances.gov.tn/sites/default/files/2020-10/Rapport%20LF%202021_0.pdf",
+      "note": "citation-key: minfin-rapport-budget-2021\n143 pages, couche texte arabe. Copie locale : tunisia-data, data/raw/gbo-recup-2026-11-04/annexes-lf/2020-10_Rapport LF 2021_0.pdf ; catalogue sources/gbo-recuperation-2026-11-04.csv (collecte 2026-11-04). Tableau de répartition des crédits par missions p. 52."
+    },
+    {
+      "id": "minfin-rapport-budget-2023",
+      "type": "report",
+      "title": "تقرير حول مشروع ميزانية الدولة لسنة 2023 (Rapport sur le projet de budget de l'État pour 2023)",
+      "title-short": "Rapport sur le projet de budget de l'État pour 2023",
+      "author": [
+        {
+          "literal": "وزارة المالية (ministère des Finances)"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2022
+          ]
+        ]
+      },
+      "language": "ar",
+      "URL": "https://www.finances.gov.tn/sites/default/files/2023-01/0002_0.pdf",
+      "note": "citation-key: minfin-rapport-budget-2023\n151 pages, couche texte arabe ; mis en ligne en janvier 2023. Copie locale : tunisia-data, data/raw/gbo-recup-2026-11-04/annexes-lf/2023-01_0002_0.pdf ; catalogue sources/gbo-recuperation-2026-11-04.csv (collecte 2026-11-04). Tableau de répartition des crédits par missions p. imprimée 54 (PDF 55)."
     },
     {
       "id": "minfin-rapport-budget-2022",

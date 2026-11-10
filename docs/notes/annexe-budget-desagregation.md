@@ -258,3 +258,148 @@ rapports fonds spéciaux annexés aux PLF 2023-2026 ; rapports HIFL ; étude tra
 dans tunisia-data si un chiffrage académique post-2018 est voulu). **Clés CSL** : toutes déjà
 présentes (aucune création). **Glossaire** : notions « FCCL » et « Fonds d'appui à la
 décentralisation » proposées au terminologue (à vérifier contre le glossaire existant).
+
+---
+
+## Feuille de route « développer l'aspect budgétaire » (arbitrée le 2026-11-10)
+
+Ordre retenu : **1 → 2 → accroches volumes** ; 3 et 4 en second étage.
+
+1. **Boucler le circuit entrées–sorties–solde** — **FAIT le 2026-11-10** (section
+   `#sec-bud-solde`, figures `fig-bud-solde` et `fig-bud-service-dette`, séries
+   `budget-solde-dette` et `budget-service-dette`, source `service_dette.xls` indexée dans
+   tunisia-data, clés CSL `minfin-indicateurs-fp-xls` et `minfin-service-dette-xls` FR+AR).
+   Reste du point 1 : **recettes totales non sourcées** (TODO documentaliste dans l'annexe).
+   Conception d'origine : Recettes totales (fiscales + non
+   fiscales + dons), déficit et dette (`indicateurs_fp_*.xls`, déjà dans l'entrepôt, séries depuis
+   1986) ; service de la dette : figure « dépenses hors dette + intérêts » (intérêts APU déjà dans
+   `budget-comptanat-apu`). Nouvelle section `#sec-bud-solde` + figures.
+2. **Écart voté → rectifié → réalisé, par nature** — **FAIT le 2026-11-10** (section
+   `#sec-bud-execution`, figure `fig-bud-execution`, série `budget-vote-realise` ; motif des
+   colonnes validé : LF/LFC précèdent leur année ; LF disponibles 2014-2025, LFC 2012-2022).
+   Constat versé : dépassements 2017-2022 (pic +10,8 % en 2021), portés par les interventions
+   (+20 % en 2020, +41 % en 2022), rémunérations et équipement au voté.
+3. **Jonction budget ↔ compta nat, périmètre central.** Tables « Administration centrale »
+   (096/097) des mêmes éditions INS ; colonne `perimetre ∈ {apu, central}` dans
+   `budget-comptanat-apu` ; réconciliation approchée budget ↔ compte du central.
+4. **Vue mission/programme (2020→).** PAP/RAP par mission (entrepôt `pap/` + collecte) ; vue
+   « qui dépense » complémentaire de « quoi ». Plus lourd (PDF arabes).
+5. **Fond de panier** : fonds spéciaux du Trésor (rapport PLF) ; accroches des volumes vers
+   `#fig-bud-dispositifs` (§7 de la conception, une PR par volume) ; reports caisses/FCCL déjà
+   documentés ci-dessus.
+
+**État au 2026-11-10 (nuit)** : points 1 (sauf recettes totales) et 2 livrés, rendu FR 0 [?].
+Point « accroches volumes » (todo #6) **gaté sur la validation humaine de l'annexe** (règle du
+§7 de la conception : une PR par volume, après validation). Points 3-5 non entamés.
+Non committé (git bloqué en session) ; figdata à restaurer au déblocage.
+
+**Complément du 2026-11-10 (nuit, suite)** : le point 1 est désormais **entièrement** livré —
+recettes totales sourcées (`Série Recettes_non_fiscales.xls` du portail minfin, page
+« ressources », indexée dans tunisia-data ; série `budget-recettes-totales` = fiscales +
+non fiscales ; figure `fig-bud-recettes-totales` face aux dépenses ; clé CSL
+`minfin-recettes-non-fiscales-xls` FR+AR). Caveat porté : dons et privatisation sont DANS les
+non fiscales (présentation LOB 2004-42) quand le déficit publié les exclut. Constat vérifié :
+les recettes dépassent les dépenses hors dette 13 années sur 40 (dernière : 2010), jamais les
+dépenses + intérêts. Également disponible mais non versé : `Série ressources_emprunts_fr.xls`
+(même page) — à verser si le récit de trésorerie (emprunt) doit être bouclé.
+
+**Chantier nouveau versé à la feuille de route — « Voies et moyens » (voté).** Le tableau A des
+lois de finances (l'évaluation des recettes, côté voté) permettrait une série votée des recettes
+par lecture JORT, pendant symétrique de `jort-lf-budget-ordinaire` (titre I des dépenses). Chantier
+documentaliste lourd (lecture loi par loi, 1959→) ; gisement GBO (gbo.tn) = documents par mission
+(PAP/RAP), pas de séries longues. Non prioritaire tant que le réalisé porte le récit.
+
+**Point 3 livré (2026-11-10, nuit)** : `budget-comptanat-apu` porte désormais une colonne
+`perimetre ∈ {apu, central}` — le sous-secteur « administration centrale » est extrait des mêmes
+éditions INS (tables 096/097 base 2015, 102/103 base 1997), 2012-2024. **Jonction validée** :
+rémunération des salariés du central (20 584 MD en 2021) vs masse salariale budgétaire
+(20 175 MD) = écart 2,0 %. Le central est exposé dans l'onglet données de `fig-bud-desag-comptanat`
+(empilement inchangé, périmètre APU). Une figure de réconciliation dédiée (central vs budget,
+nature par nature) reste possible — second étage.
+
+**Réconciliation central ↔ budget, nature par nature : NON retenue (2026-11-10).** Sondage sur
+base 2015, 2017-2024 : seules les **rémunérations** concordent (écart 0,5-4 % entre la
+rémunération des salariés du sous-secteur central et la masse salariale budgétaire). Les autres
+paires divergent structurellement — « moyens des services » vs consommation intermédiaire du
+central : +40 à +105 % (la CI des comptes couvre bien plus que les moyens budgétaires) ;
+« équipement » vs FBCF du central : −17 à −50 % (l'équipement budgétaire porte des transferts en
+capital et du financement public qui ne sont pas de la FBCF). Une figure de réconciliation
+nature par nature serait trompeuse : on s'en tient à la convergence des rémunérations, déjà dite
+dans la note de lecture de `fig-bud-desag-comptanat`, et au périmètre `central` exposé dans les
+données. Pour aller plus loin il faudrait une table de passage budgétaire↔SCN par opération
+(économiste), pas un rapprochement direct des lignes.
+
+**Point 4 — inventaire missions/programmes (documentaliste, 2026-11-10).** Verdict : la vue
+« qui dépense » est constructible en trois segments. (a) **Voté par mission 2020-2026 : faible
+coût** — tableau unique « répartition des crédits par missions » (~34 missions + 7 spéciales,
+engagement + paiement + rappel LF n−1) du Rapport sur le projet de budget annexé au PLF, couche
+texte arabe propre ; 5 éditions sur 7 déjà en entrepôt (2021-2025 ; manquent 2020 et 2026 →
+collecte) ; contrôle par totaux contre `jort-lf-budget-etat` ; secours : tableau « C » des LF au
+JORT (lecture image). (b) **Exécuté par mission : PAS de série agrégée** — le rapport mensuel
+d'exécution ne ventile pas par mission (vérifié) ; RAP = 1 PDF/mission/an, jusqu'à 2023 ; lois de
+règlement 2021+ introuvables (fiches relancées, 0 candidat). (c) **Avant 2020 : BOOST 2008-2016**
+(voté ET payé par chapitre/ministère, 144 029 lignes) — **versé et indexé dans tunisia-data le
+2026-11-10** (`data/raw/mizaniatouna/boost_fr.xlsx`, SHA vérifié contre le relevé, portail
+d'origine HS 503, copie Wayback ; fiche `sources/mizaniatouna-boost.md`). **Trou 2017-2019**
+(fin de BOOST → début des missions) : rapports PLF 2017-2019 par chapitre (celui de 2018 en
+entrepôt, couche texte corrompue → OCR) ou décrets de répartition. Autres reports : table de
+passage chapitres→missions à documenter pièce par pièce (rupture 2020) ; sens exact des colonnes
+du tableau missions à relever à l'en-tête ; clés CSL `mizaniatouna-boost`,
+`minfin-rapport-budget-2021`, `-2023` à créer (bibliographe) ; notions glossaire : mission,
+mission spéciale, programme, chapitre, crédits d'engagement/de paiement (terminologue).
+
+**Point 4 — vue missions LIVRÉE pour le segment 2021-2025 (2026-11-10, nuit).** Transcription du
+tableau « répartition des crédits par missions » des rapports PLF 2021-2025 (documentaliste ;
+`docs/notes/budget-missions-vote-2021-2025.{csv,md}` ; **toutes les sommes contrôlées exactes**
+contre les totaux imprimés, re-vérifiées indépendamment). Série `budget-missions-vote` (168
+lignes, 44 missions ; PLF complet, LF votée recollée par rappel de l'édition n+1 pour 120 lignes
+— les scissions/renommages de missions cassent le recollement, surtout 2021). Section
+`#sec-bud-missions` + figure `fig-bud-missions` (répartition 2025, évolution des 6 premières).
+Correction d'inventaire : le tableau ne distingue PAS engagement/paiement (une colonne de crédits
+par exercice). Clés CSL `minfin-rapport-budget-2021` et `-2023` créées FR+AR. **Reports** :
+rapports 2020 et 2026 à collecter ; sens « paiement » des تقديرات à contre-éprouver sur un
+tableau C ; écarts −200 MD récurrents vs `budget-vote-realise` (périmètre prêts) à trancher ;
+exécuté par mission sans série agrégée (RAP un à un, jusqu'à 2023) ; segment chapitres
+avant 2020 (BOOST versé) + table de passage ; URLs des clés `-2022/-2024/-2025` à compléter ;
+notions glossaire (mission, mission spéciale, programme, chapitre, crédits
+d'engagement/paiement) pour le terminologue.
+
+**Segment « chapitres » BOOST livré (2026-11-10, 06 h).** Série `budget-chapitres-paye`
+(265 lignes, 41 chapitres, payé 2008-2014 — 2015/2016 partiels écartés) tirée du classeur BOOST
+versé ; figure `fig-bud-chapitres` (répartition payée 2014, évolution des 6 premiers) ajoutée à
+`#sec-bud-missions`. Constat vérifié : le chapitre de la dette publique est le premier poste payé
+chaque année 2008-2014. Clé CSL `mizaniatouna-boost` créée FR+AR. Caveats écrits : payé ≠ voté,
+dette comprise (non comparable aux séries hors dette), nomenclature ≠ missions, trou 2015-2020.
+
+**CHANTIER GBO LANCÉ le 2026-11-10 (~06 h 30) — exécuté par mission.** Phase 1 (collecte RAP des missions manquantes, bornée 120 PDF, indexée) en cours ; L'entrepôt (récup 2026-11-04)
+détient PAP/RAP/budgets pour les **11 missions de tutelle EP** (RAP : 5 à 9 éditions chacune) ;
+les grandes missions hors EP (Éducation, Intérieur, Défense, Affaires sociales, Enseignement
+supérieur, Justice) n'y sont **pas**. `gbo.tn` répond en direct (552 PDF listés, politesse
+10-12 s/requête ; 1 022 PDF connus de l'Internet Archive). Un « exécuté par mission » complet
+2017-2023 exigerait une collecte élargie (~15 missions × ~7 éditions de RAP) puis une extraction
+PDF par PDF — chantier data dédié, non lancé (arbitrage humain requis sur le volume). **Cadrage prêt le jour
+venu** : (1) collecte bornée sur gbo.tn — RAP seulement, missions manquantes (Éducation,
+Intérieur, Défense, Affaires sociales, Enseignement supérieur, Justice, + petites missions),
+politesse 10-12 s, indexation dans tunisia-data sur le modèle de gbo-recup-2026-11-04 (fiche +
+csv SHA) ; (2) extraction limitée au tableau de synthèse des crédits exécutés de chaque RAP ;
+(3) contrôle des totaux contre budget-missions-vote (rappels LF) ; livrable : série
+budget-missions-execute, segment 2017-2023.
+
+**CHANTIER GBO LIVRÉ (2026-11-10, matin).** Phase 1 : 98 RAP nouveaux collectés et indexés
+(12 missions ; fiches gbo-recuperation-2026-11-10.{md,csv} + manifeste ; Intérieur, Défense et
+présidence de la République ne publient AUCUN RAP ; gbo.tn a rétréci ses listages depuis le 04/11
+— passer par l'index CDX à l'avenir). Phase 2 : exécution dépouillée en deux lots indépendants
+(`budget-missions-execute-lot{A,B}.{csv,md}`, 66 + 75 lignes, chaque valeur fichier+page) ; les
+deux couples extraits en double (affaires-religieuses 2021, finances 2020) **concordent
+exactement**. Série `budget-missions-execute` (139 lignes, 25 missions, 2016-2023 ; deux régimes
+étiquetés : paiements seuls ≤2019, LOB 2019 hors ressources propres ensuite) ; figure
+`fig-bud-missions-execute` (payé 2016-2023 des grandes missions ; taux payé/PLF 2021-2023) ; clé
+CSL collective `gbo-rap-missions` FR+AR. Todo #7 soldé.
+**Reports** : RAP manquants à viser en prochaine passe (AE 2017/2021 ; relig. 2020/2022 ;
+culture 2017/2023 ; PG 2017-2019 ; 2017 de la plupart ; agriculture 2019/2021 ; équipement 2017 ;
+transport 2017 ; énergie-mines 2018-2019 ; éco-planification 2022-2023 ; finances hors 2020) ;
+engagé industrie 2018 non fiabilisé ; 10 PDF à polices corrompues lus via traduction FR (OCR arabe
+de revérification souhaitable) ; MAS 2022 à confirmer visuellement ; écart Affaires sociales 2023
+(LF 3 302 vs prévu RAP 2 605 MD) à élucider ; **anomalies d'index de la récup 04/11 à reverser
+dans tunisia-data** (MAR=Affaires religieuses classés agriculture ; MFFES=Femme-famille classés
+finances ; 3 MIME classés environnement ; 4 années d'index fausses — détail dans lotB.md).

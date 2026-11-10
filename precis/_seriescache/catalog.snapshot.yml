@@ -6992,3 +6992,50 @@
     التونسية والنجمة، من القوائم الفردية والمجمعة المودعة ببورصة تونس.
   caveats_ar: حسابات المنشأة؛ المجمع حصة المجموعة؛ المجموع جمع حسابي لا تجميع محاسبي.
   fiche: sources/entreprises-publiques.md
+- id: budget-solde-dette
+  titre: Déficit budgétaire, pression fiscale et encours de la dette publique (1986-2025)
+  sources:
+  - minfin-indicateurs-fp-xls
+  source_ligne: Ministère des Finances, indicateurs des finances publiques (déficit
+    hors privatisation et dons, encours de dette, réalisations).
+- id: budget-service-dette
+  titre: 'Service de la dette publique : principal et intérêts (1986-2025)'
+  sources:
+  - minfin-service-dette-xls
+  source_ligne: Ministère des Finances, série du service de la dette publique (réalisations).
+- id: budget-vote-realise
+  titre: 'Dépenses par nature : voté (LF), rectifié (LFC) et réalisé (2012-2025)'
+  sources:
+  - minfin-repartition-depenses-xls
+  source_ligne: Ministère des Finances, répartition économique des dépenses (colonnes
+    lois de finances initiales et rectificatives, et réalisations).
+- id: budget-recettes-totales
+  titre: 'Recettes totales de l''État : fiscales et non fiscales (1986-2025)'
+  sources:
+  - minfin-recettes-fiscales
+  - minfin-recettes-non-fiscales-xls
+  source_ligne: Ministère des Finances, séries des recettes fiscales et des recettes
+    non fiscales (réalisations ; dons et privatisation compris dans les non fiscales).
+- id: budget-missions-vote
+  titre: Crédits du budget de l'État par mission (PLF et LF votée), 2021-2025
+  sources:
+  - minfin-rapport-budget-2021
+  - minfin-rapport-budget-2022
+  - minfin-rapport-budget-2023
+  - minfin-rapport-budget-2024
+  - minfin-rapport-budget-2025
+  source_ligne: Ministère des Finances, rapports sur les projets de budget de l'État
+    2021-2025, tableau de répartition des crédits par missions.
+- id: budget-chapitres-paye
+  titre: Dépenses payées de l'État par chapitre (ministère), 2008-2014 (BOOST)
+  sources:
+  - mizaniatouna-boost
+  source_ligne: Ministère des Finances et Banque mondiale, base BOOST du portail mizaniatouna
+    (dépenses payées par ligne budgétaire, 2008-2014).
+- id: budget-missions-execute
+  titre: Crédits exécutés par mission, dépouillés des rapports annuels de performance
+    (2016-2023)
+  sources:
+  - gbo-rap-missions
+  source_ligne: Rapports annuels de performance des missions du budget de l'État (gbo.tn
+    et ministères), dépouillement 2026.

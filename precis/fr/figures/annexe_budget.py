@@ -414,6 +414,431 @@ _APU_L = {
     "a_cap":    {"fr": "transferts en capital",      "ar": "تحويلات رأس المال"},
 }
 
+# --- figure 6 : déficit et dette (solde) ; figure 7 : service de la dette -----
+SERIE_SOLDE = "budget-solde-dette"
+SERIE_SERVICE = "budget-service-dette"
+_SOLDE_L = {
+    "v_deficit": {"fr": "déficit budgétaire (% du PIB)", "ar": "العجز (٪ من الناتج)"},
+    "v_dette":   {"fr": "encours de la dette (% du PIB)", "ar": "الدين القائم (٪ من الناتج)"},
+    "y_def":     {"fr": "déficit, en % du PIB",          "ar": "العجز، ٪ من الناتج"},
+    "y_dette":   {"fr": "encours, en % du PIB",          "ar": "الدين، ٪ من الناتج"},
+    "l_princ":   {"fr": "principal remboursé",           "ar": "أصل الدين"},
+    "l_inter":   {"fr": "intérêts",                      "ar": "الفوائد"},
+    "v_md":      {"fr": "en dinars (millions)",          "ar": "بالدينار (مليون)"},
+    "v_part_dep": {"fr": "intérêts, en % des dépenses hors dette",
+                   "ar": "الفوائد، ٪ من النفقات دون الدين"},
+}
+
+
+def _sl(key):
+    st = _SOLDE_L[key]
+    return st.get(figtools.lang(), st["fr"])
+
+
+def _trace_pct_par_base(d: pd.DataFrame, col: str, ylabel: str):
+    """Un ratio publié au PIB, tracé par plage contiguë de base (jamais en continu)."""
+    d = d.dropna(subset=[col]).copy()
+    d["base_cle"] = d["base_pib"].map(_base_cle)
+    fig, ax = plt.subplots(figsize=(9.5, 5.2))
+    vues = {}
+    for plage in _plages(d):
+        cle = plage["base_cle"].iloc[0]
+        coul = _C_BASE[cle]
+        lab = _lab("l_base", b=cle) if cle != "autre" else _lab("l_nonratt")
+        style = dict(marker="o", color=coul)
+        if len(plage) == 1:
+            ax.plot(plage["annee"], plage[col], ms=5, ls="none", **style)
+        else:
+            ax.plot(plage["annee"], plage[col], ms=3, lw=1.8, **style)
+        vues.setdefault(lab, coul)
+    from matplotlib.lines import Line2D
+    ax.legend([Line2D([], [], color=c, marker="o", lw=1.8) for c in vues.values()],
+              [figtools.fig_text(k) for k in vues], fontsize=9)
+    ax.axhline(0, color="grey", lw=0.8)
+    ax.set_xlabel(_ft("x_annee"))
+    ax.set_ylabel(figtools.fig_text(ylabel))
+    ax.grid(alpha=0.25)
+    fig.tight_layout()
+    return fig
+
+
+def vues_solde():
+    d = figtools.series(SERIE_SOLDE)
+    return [
+        (_sl("v_deficit"), _trace_pct_par_base(d, "deficit_pct_pib", _sl("y_def"))),
+        (_sl("v_dette"),   _trace_pct_par_base(d, "dette_pct_pib", _sl("y_dette"))),
+    ]
+
+
+def table_solde() -> pd.DataFrame:
+    return figtools.series(SERIE_SOLDE)
+
+
+def _service() -> pd.DataFrame:
+    return figtools.series(SERIE_SERVICE).sort_values("annee")
+
+
+def fig_service_md():
+    d = _service()
+    fig, ax = plt.subplots(figsize=(9.5, 5.2))
+    ax.stackplot(d["annee"], d["principal_MDT"], d["interets_MDT"],
+                 labels=[figtools.fig_text(_sl("l_princ")), figtools.fig_text(_sl("l_inter"))],
+                 colors=["#999999", "#c0392b"])
+    ax.set_xlabel(_ft("x_annee"))
+    ax.set_ylabel(_ft("y_md"))
+    ax.set_xlim(d["annee"].min(), d["annee"].max())
+    ax.legend(fontsize=9, loc="upper left")
+    ax.grid(alpha=0.2)
+    fig.tight_layout()
+    return fig
+
+
+def fig_service_part():
+    """Intérêts rapportés aux dépenses hors dette : ce que l'exclusion du service masque."""
+    d = _service().merge(
+        figtools.series(SERIE_NATURE)[["annee", "total_hors_dette_MDT"]], on="annee")
+    d["part"] = 100 * d["interets_MDT"] / d["total_hors_dette_MDT"]
+    fig, ax = plt.subplots(figsize=(9.5, 5.2))
+    ax.plot(d["annee"], d["part"], color="#c0392b", lw=1.8, marker="o", ms=3)
+    ax.set_xlabel(_ft("x_annee"))
+    ax.set_ylabel(figtools.fig_text(_sl("v_part_dep")))
+    ax.grid(alpha=0.25)
+    fig.tight_layout()
+    return fig
+
+
+def vues_service():
+    return [
+        (_sl("v_md"),       fig_service_md()),
+        (_sl("v_part_dep"), fig_service_part()),
+    ]
+
+
+# --- figure 10 : qui dépense — les missions (depuis 2020) ---------------------
+SERIE_MISSIONS = "budget-missions-vote"
+_MI_L = {
+    "v_2025": {"fr": "les missions du budget 2025",        "ar": "مهمات ميزانية 2025"},
+    "v_evo":  {"fr": "évolution 2021-2025 (principales missions)", "ar": "التطور 2021-2025"},
+    "l_reste": {"fr": "autres missions",                   "ar": "مهمات أخرى"},
+}
+
+
+def _mi(key):
+    st = _MI_L[key]
+    return st.get(figtools.lang(), st["fr"])
+
+
+def fig_missions_2025():
+    d = figtools.series(SERIE_MISSIONS)
+    d = d[d["annee"] == 2025].dropna(subset=["plf_MDT"]).sort_values("plf_MDT")
+    top = d.nlargest(12, "plf_MDT").sort_values("plf_MDT")
+    reste = d[~d["mission_fr"].isin(top["mission_fr"])]["plf_MDT"].sum()
+    labels = [figtools.fig_text(_mi("l_reste"))] + [figtools.fig_text(m) for m in top["mission_fr"]]
+    vals = [reste] + top["plf_MDT"].tolist()
+    couleurs = ["#bbbbbb"] + ["#c0392b" if t == "speciale" else "#1f4e79"
+                              for t in top["type"]]
+    fig, ax = plt.subplots(figsize=(9.5, 6.2))
+    ax.barh(range(len(vals)), vals, color=couleurs)
+    ax.set_yticks(range(len(vals)), labels, fontsize=8)
+    ax.set_xlabel(_ft("y_md"))
+    ax.grid(alpha=0.25, axis="x")
+    fig.tight_layout()
+    return fig
+
+
+def fig_missions_evo():
+    d = figtools.series(SERIE_MISSIONS).dropna(subset=["plf_MDT"])
+    top6 = d[d["annee"] == 2025].nlargest(6, "plf_MDT")["mission_fr"]
+    pal = ["#1f4e79", "#e08214", "#c0392b", "#1a9850", "#8e44ad", "#4393c3"]
+    fig, ax = plt.subplots(figsize=(9.5, 5.2))
+    for m, c in zip(top6, pal):
+        s = d[d["mission_fr"] == m].sort_values("annee")
+        ax.plot(s["annee"], s["plf_MDT"], color=c, lw=1.8, marker="o", ms=3,
+                label=figtools.fig_text(m))
+    ax.set_xlabel(_ft("x_annee"))
+    ax.set_ylabel(_ft("y_md"))
+    ax.set_xticks(sorted(d["annee"].unique()))
+    ax.grid(alpha=0.25)
+    ax.legend(fontsize=8, loc="upper left")
+    fig.tight_layout()
+    return fig
+
+
+def vues_missions():
+    return [
+        (_mi("v_2025"), fig_missions_2025()),
+        (_mi("v_evo"),  fig_missions_evo()),
+    ]
+
+
+def table_missions() -> pd.DataFrame:
+    return figtools.series(SERIE_MISSIONS)
+
+
+# --- figure 12 : l'exécuté par mission (RAP, 2016-2023) -----------------------
+SERIE_MISSIONS_EXE = "budget-missions-execute"
+_ME_L = {
+    "v_evo":  {"fr": "payé par mission, 2016-2023",  "ar": "المدفوع حسب المهمة"},
+    "v_taux": {"fr": "taux d'exécution (payé / voté), 2021-2023", "ar": "نسبة الإنجاز"},
+    "y_taux": {"fr": "payé, en % des crédits du PLF", "ar": "المدفوع، ٪ من اعتمادات المشروع"},
+}
+_ME_TOP = [("education", "Éducation", "#1f4e79"),
+           ("industrie-energie", "Industrie, mines et énergie", "#e08214"),
+           ("sante", "Santé", "#c0392b"),
+           ("affaires-sociales", "Affaires sociales", "#8e44ad"),
+           ("agriculture", "Agriculture", "#1a9850"),
+           ("enseignement-superieur", "Enseignement supérieur", "#4393c3")]
+
+
+def _me(key):
+    st = _ME_L[key]
+    return st.get(figtools.lang(), st["fr"])
+
+
+def fig_missions_exe_evo():
+    d = figtools.series(SERIE_MISSIONS_EXE)
+    fig, ax = plt.subplots(figsize=(9.5, 5.2))
+    for cle, lab, c in _ME_TOP:
+        s = d[d["mission"] == cle].dropna(subset=["paye_MDT"]).sort_values("annee")
+        if s.empty:
+            continue
+        ax.plot(s["annee"], s["paye_MDT"], color=c, lw=1.8, marker="o", ms=3,
+                label=figtools.fig_text(lab))
+    ax.set_xlabel(_ft("x_annee"))
+    ax.set_ylabel(_ft("y_md"))
+    ax.grid(alpha=0.25)
+    ax.legend(fontsize=8, loc="upper left")
+    fig.tight_layout()
+    return fig
+
+
+def fig_missions_exe_taux():
+    """Payé rapporté aux crédits du PLF de la même année (2021-2023)."""
+    e = figtools.series(SERIE_MISSIONS_EXE)
+    v = figtools.series(SERIE_MISSIONS)
+    # correspondance des libellés : clés du dépouillement → mission_fr du voté
+    corr = {"education": ["Éducation"],
+            "industrie-energie": ["Industrie, mines et énergie", "Industrie, énergie et mines"],
+            "sante": ["Santé"], "affaires-sociales": ["Affaires sociales"],
+            "agriculture": ["Agriculture, ressources hydrauliques et pêche"],
+            "enseignement-superieur": ["Enseignement supérieur et recherche scientifique"]}
+    fig, ax = plt.subplots(figsize=(9.5, 5.2))
+    pal = {k: c for k, _, c in _ME_TOP}
+    for cle, lab, c in _ME_TOP:
+        mv = corr.get(cle, [])
+        sv = v[v["mission_fr"].isin(mv)][["annee", "plf_MDT"]]
+        se = e[(e["mission"] == cle)][["annee", "paye_MDT"]]
+        m = sv.merge(se, on="annee").dropna()
+        m = m[m["annee"] >= 2021]
+        if m.empty:
+            continue
+        ax.plot(m["annee"], 100 * m["paye_MDT"] / m["plf_MDT"], color=c, lw=1.8,
+                marker="o", ms=4, label=figtools.fig_text(lab))
+    ax.axhline(100, color="grey", lw=0.8, ls="--")
+    ax.set_xlabel(_ft("x_annee"))
+    ax.set_ylabel(figtools.fig_text(_me("y_taux")))
+    ax.set_xticks([2021, 2022, 2023])
+    ax.grid(alpha=0.25)
+    ax.legend(fontsize=8, loc="upper left", ncol=2)
+    fig.tight_layout()
+    return fig
+
+
+def vues_missions_execute():
+    return [
+        (_me("v_evo"),  fig_missions_exe_evo()),
+        (_me("v_taux"), fig_missions_exe_taux()),
+    ]
+
+
+def table_missions_execute() -> pd.DataFrame:
+    return figtools.series(SERIE_MISSIONS_EXE)
+
+
+# --- figure 11 : qui dépensait — les chapitres (BOOST, 2008-2014) -------------
+SERIE_CHAPITRES = "budget-chapitres-paye"
+_CH_L = {
+    "v_2014": {"fr": "les chapitres du budget payé 2014", "ar": "أبواب الميزانية 2014"},
+    "v_evo":  {"fr": "évolution 2008-2014 (principaux chapitres)", "ar": "التطور 2008-2014"},
+    "l_reste": {"fr": "autres chapitres", "ar": "أبواب أخرى"},
+}
+
+
+def _ch(key):
+    st = _CH_L[key]
+    return st.get(figtools.lang(), st["fr"])
+
+
+def _chap_court(c: str) -> str:
+    return (c.replace("Ministère de la ", "").replace("Ministère de l'", "")
+             .replace("Ministère des ", "").replace("Ministère du ", "")
+             .replace("Ministère de ", ""))
+
+
+def fig_chapitres_2014():
+    d = figtools.series(SERIE_CHAPITRES)
+    d = d[d["annee"] == 2014].copy()
+    top = d.nlargest(12, "paye_MDT").sort_values("paye_MDT")
+    reste = d[~d["chapitre"].isin(top["chapitre"])]["paye_MDT"].sum()
+    labels = [figtools.fig_text(_ch("l_reste"))] + \
+             [figtools.fig_text(_chap_court(c)) for c in top["chapitre"]]
+    vals = [reste] + top["paye_MDT"].tolist()
+    coul = ["#bbbbbb"] + ["#c0392b" if "Dette" in c else "#1f4e79" for c in top["chapitre"]]
+    fig, ax = plt.subplots(figsize=(9.5, 6.2))
+    ax.barh(range(len(vals)), vals, color=coul)
+    ax.set_yticks(range(len(vals)), labels, fontsize=8)
+    ax.set_xlabel(_ft("y_md"))
+    ax.grid(alpha=0.25, axis="x")
+    fig.tight_layout()
+    return fig
+
+
+def fig_chapitres_evo():
+    d = figtools.series(SERIE_CHAPITRES)
+    top6 = d[d["annee"] == 2014].nlargest(6, "paye_MDT")["chapitre"]
+    pal = ["#c0392b", "#1f4e79", "#e08214", "#1a9850", "#8e44ad", "#4393c3"]
+    fig, ax = plt.subplots(figsize=(9.5, 5.2))
+    for c, col in zip(top6, pal):
+        s = d[d["chapitre"] == c].sort_values("annee")
+        ax.plot(s["annee"], s["paye_MDT"], color=col, lw=1.8, marker="o", ms=3,
+                label=figtools.fig_text(_chap_court(c)))
+    ax.set_xlabel(_ft("x_annee"))
+    ax.set_ylabel(_ft("y_md"))
+    ax.grid(alpha=0.25)
+    ax.legend(fontsize=8, loc="upper left")
+    fig.tight_layout()
+    return fig
+
+
+def vues_chapitres():
+    return [
+        (_ch("v_2014"), fig_chapitres_2014()),
+        (_ch("v_evo"),  fig_chapitres_evo()),
+    ]
+
+
+def table_chapitres() -> pd.DataFrame:
+    return figtools.series(SERIE_CHAPITRES)
+
+
+# --- figure 9 : recettes totales face aux dépenses ----------------------------
+SERIE_RECETTES_TOT = "budget-recettes-totales"
+_RT_L = {
+    "v_face":  {"fr": "recettes et dépenses (millions de dinars)", "ar": "الموارد والنفقات (مليون دينار)"},
+    "l_fisc":  {"fr": "recettes fiscales",            "ar": "موارد جبائية"},
+    "l_nf":    {"fr": "recettes non fiscales (y c. dons, privatisation)", "ar": "موارد غير جبائية"},
+    "l_dep":   {"fr": "dépenses hors dette",          "ar": "النفقات دون الدين"},
+    "l_dep_i": {"fr": "dépenses + intérêts",          "ar": "النفقات + الفوائد"},
+}
+
+
+def _rt(key):
+    st = _RT_L[key]
+    return st.get(figtools.lang(), st["fr"])
+
+
+def fig_recettes_totales():
+    d = figtools.series(SERIE_RECETTES_TOT).merge(
+        figtools.series(SERIE_NATURE)[["annee", "total_hors_dette_MDT"]], on="annee")
+    d = d.merge(figtools.series(SERIE_SERVICE)[["annee", "interets_MDT"]], on="annee", how="left")
+    d = d.sort_values("annee")
+    fig, ax = plt.subplots(figsize=(9.5, 5.2))
+    ax.stackplot(d["annee"], d["recettes_fiscales_MDT"], d["recettes_non_fiscales_MDT"],
+                 labels=[figtools.fig_text(_rt("l_fisc")), figtools.fig_text(_rt("l_nf"))],
+                 colors=["#1a9850", "#a6d96a"])
+    ax.plot(d["annee"], d["total_hors_dette_MDT"], color="#c0392b", lw=1.8,
+            label=figtools.fig_text(_rt("l_dep")))
+    ax.plot(d["annee"], d["total_hors_dette_MDT"] + d["interets_MDT"], color="#c0392b",
+            lw=1.2, ls="--", label=figtools.fig_text(_rt("l_dep_i")))
+    ax.set_xlabel(_ft("x_annee"))
+    ax.set_ylabel(_ft("y_md"))
+    ax.set_xlim(d["annee"].min(), d["annee"].max())
+    ax.legend(fontsize=9, loc="upper left")
+    ax.grid(alpha=0.2)
+    fig.tight_layout()
+    return fig
+
+
+def table_recettes_totales() -> pd.DataFrame:
+    d = figtools.series(SERIE_RECETTES_TOT).merge(
+        figtools.series(SERIE_NATURE)[["annee", "total_hors_dette_MDT"]], on="annee", how="left")
+    return d
+
+
+# --- figure 8 : du voté au réalisé (écart d'exécution) ------------------------
+SERIE_VOTE_REALISE = "budget-vote-realise"
+_EXEC_L = {
+    "v_total":  {"fr": "dépassement du voté, total (%)",      "ar": "تجاوز المصوّت، المجموع (٪)"},
+    "v_nature": {"fr": "dépassement par nature (%)",          "ar": "التجاوز حسب الطبيعة (٪)"},
+    "y_ecart":  {"fr": "réalisé − voté, en % du voté (LF)",   "ar": "المنجز − المصوّت، ٪ من المصوّت"},
+    "l_total":  {"fr": "total hors dette",                    "ar": "المجموع دون الدين"},
+}
+
+
+def _xl(key):
+    st = _EXEC_L[key]
+    return st.get(figtools.lang(), st["fr"])
+
+
+def _ecarts_execution() -> pd.DataFrame:
+    """Écart réalisé − LF en % du LF, par nature, pour les années où les deux existent."""
+    d = figtools.series(SERIE_VOTE_REALISE)
+    cols = ["total_hors_dette_MDT", "remunerations_MDT", "interventions_MDT", "equipement_MDT"]
+    lf = d[d["etat"] == "LF"].set_index("annee")[cols]
+    re = d[d["etat"] == "realise"].set_index("annee")[cols]
+    annees = lf.index.intersection(re.index)
+    return (100 * (re.loc[annees] - lf.loc[annees]) / lf.loc[annees]).sort_index()
+
+
+def fig_execution_total():
+    e = _ecarts_execution()["total_hors_dette_MDT"]
+    fig, ax = plt.subplots(figsize=(9.5, 5.2))
+    ax.bar(e.index, e.values, color=["#c0392b" if v > 0 else "#1f4e79" for v in e.values])
+    ax.axhline(0, color="grey", lw=0.8)
+    ax.set_xlabel(_ft("x_annee"))
+    ax.set_ylabel(figtools.fig_text(_xl("y_ecart")))
+    ax.grid(alpha=0.25, axis="y")
+    fig.tight_layout()
+    return fig
+
+
+def fig_execution_nature():
+    e = _ecarts_execution()
+    spec = [("remunerations_MDT", "n_remun", "#1f4e79"),
+            ("interventions_MDT", "n_interv", "#c0392b"),
+            ("equipement_MDT", "n_equip", "#1a9850")]
+    fig, ax = plt.subplots(figsize=(9.5, 5.2))
+    for col, k, c in spec:
+        ax.plot(e.index, e[col], color=c, lw=1.8, marker="o", ms=3, label=_ft(k))
+    ax.plot(e.index, e["total_hors_dette_MDT"], color="#555555", lw=1.4, ls="--",
+            label=figtools.fig_text(_xl("l_total")))
+    ax.axhline(0, color="grey", lw=0.8)
+    ax.set_xlabel(_ft("x_annee"))
+    ax.set_ylabel(figtools.fig_text(_xl("y_ecart")))
+    ax.grid(alpha=0.25)
+    ax.legend(fontsize=9, loc="upper left")
+    fig.tight_layout()
+    return fig
+
+
+def vues_execution():
+    return [
+        (_xl("v_total"),  fig_execution_total()),
+        (_xl("v_nature"), fig_execution_nature()),
+    ]
+
+
+def table_execution() -> pd.DataFrame:
+    return figtools.series(SERIE_VOTE_REALISE)
+
+
+def table_service() -> pd.DataFrame:
+    d = _service().merge(
+        figtools.series(SERIE_NATURE)[["annee", "total_hors_dette_MDT"]], on="annee", how="left")
+    d["interets_pct_depenses_hors_dette"] = (
+        100 * d["interets_MDT"] / d["total_hors_dette_MDT"]).round(1)
+    return d
+
 
 def _apu_lab(key):
     st = _APU_L[key]
@@ -422,6 +847,8 @@ def _apu_lab(key):
 
 def _apu_base2015() -> pd.DataFrame:
     d = figtools.series(SERIE_APU)
+    if "perimetre" in d.columns:  # la série porte aussi le sous-secteur « central » (données)
+        d = d[d["perimetre"] == "apu"]
     d = d[d["base_pib"] == 2015].sort_values("annee").drop_duplicates("annee")
     return d
 
@@ -461,6 +888,6 @@ def vues_comptanat():
 
 def table_comptanat() -> pd.DataFrame:
     d = figtools.series(SERIE_APU)
-    cols = (["annee", "base_pib"] + [c for c, _, _ in _APU]
+    cols = (["perimetre", "annee", "base_pib"] + [c for c, _, _ in _APU]
             + ["subventions_produits_MDT", "subventions_MDT", "edition"])
     return d[[c for c in cols if c in d.columns]]

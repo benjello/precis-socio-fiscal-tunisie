@@ -29,7 +29,9 @@ crossref:
      #sec-bud-pourquoi, #sec-bud-definitions, #sec-bud-serie-longue, #fig-bud-serie,
      #fig-bud-pib, #sec-bud-recettes, #fig-bud-recettes, #sec-bud-pivot-1986, #sec-bud-sources, #sec-bud-lire,
      #sec-bud-desagregation, #fig-bud-desag-budgetaire, #fig-bud-dispositifs, #tbl-bud-correspondance,
-     #fig-bud-desag-comptanat. -->
+     #fig-bud-desag-comptanat, #sec-bud-solde, #fig-bud-solde, #fig-bud-service-dette,
+     #sec-bud-execution, #fig-bud-execution, #fig-bud-recettes-totales,
+     #sec-bud-missions, #fig-bud-missions, #fig-bud-chapitres, #fig-bud-missions-execute. -->
 
 ## Pourquoi cette annexe {#sec-bud-pourquoi}
 
@@ -286,8 +288,261 @@ figtools.figure_tabs(
         "administrations publiques de l'INS. Le périmètre dépasse le budget de l'État : cette vue "
         "ne se raccorde pas à la vue budgétaire. Les subventions (dont les subventions sur "
         "produits, proches de la compensation) sont lues du côté des ressources et figurent dans "
-        "l'onglet des données, non dans l'empilement. La série en base 1997 (2012-2017) est "
-        "également dans les données."),
+        "l'onglet des données, non dans l'empilement. L'onglet des données porte aussi la série en "
+        "base 1997 (2012-2017) et le sous-secteur de la seule administration centrale "
+        "(perimetre = central), le plus proche du budget de l'État : sa rémunération des salariés "
+        "(20 584 millions de dinars en 2021) rejoint à 2 % près la masse salariale budgétaire "
+        "(20 175 millions)."),
+)
+```
+
+## Qui dépense : les missions, depuis 2020 {#sec-bud-missions}
+
+<!-- BROUILLON (chantier annexe-budget-desagregation, feuille de route §4) — à relire. -->
+
+Depuis l'exercice 2020, la loi organique du budget classe les dépenses par **missions** — une par
+grand domaine de l'action publique, portée par un ministère — et par **missions spéciales**, sans
+ministère de rattachement : le remboursement de la dette, les dépenses imprévues, les pouvoirs
+publics constitutionnels [@loi-org-2019-15-lob, art. 18-19]. C'est la réponse à « qui dépense »,
+complémentaire du « quoi » des natures. La @fig-bud-missions donne la répartition des crédits du
+budget 2025 et l'évolution des principales missions depuis 2021, telles que les proposent les
+projets de loi de finances : l'**éducation** est la première mission (8,0 milliards de dinars en
+2025), suivie de l'**industrie, des mines et de l'énergie** (7,4 milliards — où loge la
+compensation de l'énergie) et des **dépenses de financement** (6,5 milliards, mission spéciale
+qui porte notamment les intérêts de la dette).
+
+Deux précautions. Ces crédits sont ceux des **projets** de loi de finances : le voté peut s'en
+écarter — en 2021, le Parlement a retranché 813 millions de dinars à la proposition ; de 2022 à
+2025, voté et proposé coïncident au millier de dinars près (le voté, quand il est rappelé par
+l'édition suivante, est dans l'onglet des données). Et le **périmètre des missions bouge** d'une
+année à l'autre — les affaires locales, mission propre en 2021, ont rejoint l'Intérieur en
+2022 — : une évolution par mission se lit à périmètre déclaré, jamais comme une série homogène.
+
+```{python}
+#| label: fig-bud-missions
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../scripts")
+from figures import annexe_budget
+import figtools
+figtools.figure_tabs(
+    annexe_budget.vues_missions(), annexe_budget.table_missions(),
+    "budget-missions-vote",
+    slug="fig_bud_missions",
+    caption=("Les crédits du budget de l'État par mission : répartition 2025 et évolution "
+             "2021-2025 (projets de loi de finances)"),
+    note_lecture=(
+        "Première vue : les douze premières missions du budget 2025 (crédits proposés, millions "
+        "de dinars) — en rouge les missions spéciales, sans ministère de rattachement ; les "
+        "autres missions sont agrégées en gris. Seconde vue : l'évolution des six premières "
+        "missions, 2021-2025, à périmètre parfois mouvant (voir le texte). Crédits des projets "
+        "de loi de finances ; la loi votée, quand l'édition suivante la rappelle, figure dans "
+        "l'onglet des données."),
+)
+```
+
+Le voté n'épuise pas le sujet : chaque mission rend compte de son **exécution** dans un rapport
+annuel de performance, et c'est là — faute de série agrégée publiée — que se lit la dépense
+effective par mission. La @fig-bud-missions-execute réunit ce que près de 170 de ces
+rapports donnent [@gbo-rap-missions] : les crédits payés des grandes missions de 2016 à 2023, puis leur
+rapport aux crédits proposés. Trois limites tiennent à la source même. Les rapports des missions
+de l'**Intérieur**, de la **Défense** et de la présidence de la République **ne sont pas
+publiés** : la série est trouée là. Avant la gestion 2020, les rapports ne donnent que les
+paiements (ancienne nomenclature) ; depuis, l'engagé et le payé, hors ressources propres des
+établissements. Et chaque valeur vient d'un rapport distinct, aux pratiques inégales — le
+relevé, documenté ligne à ligne, garde la trace des incohérences d'impression
+rencontrées.
+
+```{python}
+#| label: fig-bud-missions-execute
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../scripts")
+from figures import annexe_budget
+import figtools
+figtools.figure_tabs(
+    annexe_budget.vues_missions_execute(), annexe_budget.table_missions_execute(),
+    "budget-missions-execute",
+    slug="fig_bud_missions_execute",
+    caption=("Les crédits exécutés par mission, dépouillés des rapports annuels de performance, "
+             "2016-2023"),
+    note_lecture=(
+        "Première vue : les crédits payés de six grandes missions, en millions de dinars — "
+        "avant la gestion 2020, les rapports ne publient que les paiements ; depuis, le payé "
+        "hors ressources propres. Seconde vue : le payé rapporté aux crédits proposés de la "
+        "même année, 2021-2023 — au-dessus de 100 %, la mission a dépensé plus que la "
+        "proposition initiale (lois rectificatives, compensation). Intérieur, Défense et "
+        "présidence de la République ne publient pas de rapport : série trouée. Chaque valeur "
+        "porte son rapport source et sa page dans les données."),
+)
+```
+
+Avant 2020, le budget se lisait par **chapitres** — pour l'essentiel, les ministères. Pour
+2008-2014, la base de données ouverte du portail citoyen du budget retrace les dépenses
+effectivement **payées**, ligne à ligne [@mizaniatouna-boost] ; la @fig-bud-chapitres en donne
+la lecture par chapitre. Trois différences avec la vue des missions ci-dessus : c'est du
+**payé**, non du voté ; le chapitre de la **dette publique y figure** (en rouge), alors que les
+autres séries de cette annexe sont hors dette ; et la nomenclature n'est pas celle des missions
+— la jonction entre les deux, comme les années **2015-2020**, reste à établir. On y lit déjà
+les mêmes poids : l'éducation premier ministère dépensier, l'industrie et le commerce gonflés
+par la compensation — et le chapitre de la dette publique au premier rang de tous, chaque année
+de 2008 à 2014.
+
+```{python}
+#| label: fig-bud-chapitres
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../scripts")
+from figures import annexe_budget
+import figtools
+figtools.figure_tabs(
+    annexe_budget.vues_chapitres(), annexe_budget.table_chapitres(),
+    "budget-chapitres-paye",
+    slug="fig_bud_chapitres",
+    caption=("Les dépenses payées de l'État par chapitre (ministère), 2008-2014"),
+    note_lecture=(
+        "Première vue : les douze premiers chapitres du budget payé de 2014 (millions de dinars) "
+        "— la dette publique en rouge, les autres chapitres agrégés en gris. Seconde vue : "
+        "l'évolution des six premiers, 2008-2014. Dépenses payées (exécution), dette comprise : "
+        "ce total ne se compare pas aux séries « hors dette » de cette annexe. La base s'arrête "
+        "en 2014 en données complètes ; 2015 et 2016, partielles, sont écartées."),
+)
+```
+
+## Du voté au réalisé : l'écart d'exécution {#sec-bud-execution}
+
+<!-- BROUILLON (chantier annexe-budget-desagregation, feuille de route §2) — à relire. -->
+
+Le budget voté n'est qu'une prévision ; l'exécution s'en écarte, et l'écart dit où la prévision
+cède. Depuis 2014, la série du ministère des Finances donne, pour chaque année, les dépenses de la
+loi de finances initiale, celles de la loi rectificative quand elle existe, et le réalisé — par
+nature. La @fig-bud-execution rapporte le réalisé au voté initial : les dépenses dépassent le voté
+chaque année de 2017 à 2022, jusqu'à **+11 % en 2021** et +8 % en 2022, puis reviennent sous le
+voté depuis 2023. La seconde vue montre où l'écart se loge : les **rémunérations** et
+l'**équipement** tiennent la prévision à quelques pour cent près, quand les **interventions** —
+où loge la compensation — la débordent de **+20 % en 2020** et **+41 % en 2022**, années de
+flambée des cours mondiaux. Le dépassement du budget n'est donc pas diffus : il passe presque
+entièrement par les interventions, dont la @fig-bud-dispositifs détaille les composantes.
+
+```{python}
+#| label: fig-bud-execution
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../scripts")
+from figures import annexe_budget
+import figtools
+figtools.figure_tabs(
+    annexe_budget.vues_execution(), annexe_budget.table_execution(),
+    "budget-vote-realise",
+    slug="fig_bud_execution",
+    caption=("L'écart entre le voté et le réalisé : dépenses hors dette, total et par nature, "
+             "2014-2025"),
+    note_lecture=(
+        "Première vue : le réalisé moins le voté de la loi de finances initiale, en % du voté, "
+        "pour le total hors dette — rouge quand l'État dépense au-delà du voté, bleu en deçà. "
+        "Seconde vue : le même écart par nature de dépense. Les colonnes de loi de finances "
+        "initiale n'existent dans la série qu'à partir de 2014 ; les lois rectificatives, "
+        "quand elles existent, sont dans l'onglet des données."),
+)
+```
+
+## Le solde, la dette et son service {#sec-bud-solde}
+
+<!-- BROUILLON (chantier annexe-budget-desagregation, feuille de route §1) — à relire. -->
+
+Les dépenses ne sont que la moitié du récit : en face, les recettes n'y suffisent pas, et l'écart
+se lit dans le **déficit budgétaire**, puis s'accumule dans l'**encours de la dette publique**. Le
+ministère des Finances publie ces deux grandeurs depuis 1986, selon les normes internationales,
+hors privatisation et dons. La @fig-bud-solde les donne en part du PIB : le déficit oscille entre
+un et six points de PIB jusqu'en 2010, se creuse après 2011 et culmine en 2020, près de dix
+points ; la dette, ramenée à 39 % du PIB en 2010, remonte depuis 2011 et dépasse 80 % depuis
+2022. Comme
+toute part au PIB, ces ratios héritent de la **base** des comptes nationaux et se lisent par
+segments (voir l'[annexe sur le PIB](annexe-pib.html#sec-pib-ruptures)).
+
+```{python}
+#| label: fig-bud-solde
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../scripts")
+from figures import annexe_budget
+import figtools
+figtools.figure_tabs(
+    annexe_budget.vues_solde(), annexe_budget.table_solde(),
+    "budget-solde-dette",
+    slug="fig_bud_solde",
+    caption=("Le déficit budgétaire et l'encours de la dette publique, en % du PIB, 1986-2025"),
+    note_lecture=(
+        "Déficit selon les normes internationales, hors privatisation et dons ; encours de la "
+        "dette publique en fin d'année. Les deux ratios sont ceux publiés par le ministère des "
+        "Finances : leur dénominateur hérite des bases successives des comptes nationaux, et "
+        "chaque couleur est une base — les traits ne se prolongent pas d'une base à l'autre "
+        "(voir l'[annexe sur le PIB](annexe-pib.html#sec-pib-ruptures)). Les montants en dinars "
+        "sont dans l'onglet des données."),
+)
+```
+
+La dette, une fois contractée, se **sert** : chaque année, le budget rembourse du principal et
+paie des intérêts. Ce service est précisément ce que la série des dépenses de cette annexe
+**exclut** — son total est « hors dette ». La @fig-bud-service-dette montre ce que cette
+exclusion masque : le service de la dette atteint 24,4 milliards de dinars en 2025, dont
+6,5 milliards d'intérêts — l'équivalent de 12 % des dépenses hors dette. Cette part n'est pas
+inédite : elle se tenait entre 8 et 16 % des années 1980 aux années 2000, héritage de
+l'endettement antérieur, avant de refluer vers 7 à 8 % au tournant des années 2010 ; elle
+remonte depuis. Rapportés aux natures de la @fig-bud-desag-budgetaire, les intérêts de 2025
+pèsent plus du double des moyens des services, et près de quatre dixièmes des interventions
+publiques.
+
+```{python}
+#| label: fig-bud-service-dette
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../scripts")
+from figures import annexe_budget
+import figtools
+figtools.figure_tabs(
+    annexe_budget.vues_service(), annexe_budget.table_service(),
+    "budget-service-dette", "budget-desagregation-nature",
+    slug="fig_bud_service_dette",
+    caption=("Le service de la dette publique : principal remboursé et intérêts, 1986-2025"),
+    note_lecture=(
+        "Première vue : le service de la dette en dinars, empilé — principal remboursé puis "
+        "intérêts. Seconde vue : les seuls intérêts, rapportés aux dépenses de l'État hors "
+        "dette — la série de cette annexe excluant le service, ce ratio dit ce que l'exclusion "
+        "masque. Il rapporte deux grandeurs budgétaires de même source, sans passer par le PIB."),
+)
+```
+
+En face des dépenses, les **recettes totales** réunissent les recettes fiscales — détaillées à
+[la composition des recettes fiscales](#sec-bud-recettes) — et les **recettes non fiscales** :
+revenus pétroliers, redevance du gazoduc, participations, dons extérieurs, privatisation,
+recouvrements. La @fig-bud-recettes-totales les empile face aux dépenses : les recettes couvrent
+l'essentiel des dépenses hors dette — elles les dépassent même treize années sur quarante, la
+dernière fois en 2010 — mais jamais, sur toute la période, les dépenses augmentées des seuls
+intérêts. L'écart entre les deux
+courbes n'est pas exactement le déficit de la @fig-bud-solde : le déficit du ministère est
+calculé **hors privatisation et dons**, que la présentation des recettes non fiscales inclut,
+et les dépenses tracées ici excluent le principal remboursé.
+
+```{python}
+#| label: fig-bud-recettes-totales
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../scripts")
+from figures import annexe_budget
+import figtools
+figtools.figure_tabs(
+    annexe_budget.fig_recettes_totales(), annexe_budget.table_recettes_totales(),
+    "budget-recettes-totales", "budget-desagregation-nature", "budget-service-dette",
+    slug="fig_bud_recettes_totales",
+    caption=("Les recettes totales de l'État (fiscales et non fiscales) face aux dépenses, "
+             "1986-2025"),
+    note_lecture=(
+        "Les bandes empilées sont les recettes réalisées — fiscales puis non fiscales (y compris "
+        "dons extérieurs et privatisation, exposés à part dans l'onglet des données). Le trait "
+        "plein est la dépense hors service de la dette ; le trait pointillé y ajoute les seuls "
+        "intérêts. L'écart ne reproduit pas exactement le déficit publié, calculé hors "
+        "privatisation et dons."),
 )
 ```
 
@@ -304,12 +559,15 @@ Chaque série chiffrée de cette annexe a sa source et son périmètre ; les tro
 | Budget ordinaire voté (titre I) | les crédits **votés** de fonctionnement, titre I de la loi de finances | 1959-1986 | lois de finances, *Journal officiel* | voté, non réalisé ; titre I seul, hors investissement (titre II) ; s'arrête en 1986 |
 | Dépenses de l'État hors dette | les dépenses **réalisées**, hors service de la dette | depuis 1986 | rapports du ministère des Finances | réalisé, non voté ; hors principal de la dette ; rapporté au PIB, hérite des bases des comptes nationaux |
 | Recettes fiscales par impôt | la composition des recettes fiscales **réalisées** | depuis 1986 | rapports du ministère des Finances | recettes fiscales seules, hors recettes non fiscales, dons et emprunt ; rupture 1990 (substitution de l'impôt sur le revenu des personnes physiques aux impôts cédulaires) |
+| Déficit et encours de dette | le déficit **réalisé** (normes internationales, hors privatisation et dons) et l'encours de la dette publique | depuis 1986 | indicateurs du ministère des Finances [@minfin-indicateurs-fp-xls] | % du PIB publiés par le ministère, héritant de ses bases ; PIB sous-jacent non publié |
+| Service de la dette | principal remboursé et intérêts **réalisés** | depuis 1986 | série du ministère des Finances [@minfin-service-dette-xls] | exclu du total « hors dette » des autres séries ; ventilé intérieur/extérieur dans la source |
+| Recettes non fiscales | revenus pétroliers, participations, dons, privatisation, autres (**réalisé**) | depuis 1986 | série du ministère des Finances [@minfin-recettes-non-fiscales-xls] | dons et privatisation **inclus**, alors que le déficit publié les exclut |
 
 : Les trois séries de l'annexe, leur source et leur périmètre {#tbl-bud-sources}
 
 La bascule du voté au réalisé se place au milieu des années 1980 : la série votée du titre I, relevée au *Journal officiel*, s'arrête quand commencent les séries d'exécution du ministère des Finances (voir [le pivot du milieu des années 1980](#sec-bud-pivot-1986)). Les deux segments ne se raccordent pas : l'un est voté et ordinaire, l'autre réalisé et plus large. Quand une série est rapportée au PIB, son dénominateur change de niveau à chaque changement de base des comptes nationaux, rupture renvoyée à l'[annexe sur le PIB](annexe-pib.html#sec-pib-ruptures).
 
-<!-- TODO (bibliographe) : créer les clés CSL des séries du ministère des Finances (recettes fiscales, répartition économique des dépenses, indicateurs des finances publiques) proposées au § D de docs/notes/annexe-budget-etat-documentaire.md, pour citer ces sources en propre. -->
+<!-- Clés CSL des séries minfin : toutes présentes (minfin-recettes-fiscales, minfin-repartition-depenses-xls, minfin-indicateurs-fp-xls, minfin-service-dette-xls, minfin-recettes-non-fiscales-xls), FR+AR. -->
 
 ## Comment lire une part du budget {#sec-bud-lire}
 
