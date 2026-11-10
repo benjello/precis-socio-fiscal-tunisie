@@ -107,6 +107,9 @@ class EngendrerClaudeCodeTest(DepotJetable):
             "Fichier engendré par scripts/sync_agents.py depuis "
             "docs/agents/documentaliste.md — ne pas éditer.\n"
             "\n"
+            # La consigne commune (routage des reports) est insérée par les
+            # générateurs entre l'avertissement et le corps (PR #784).
+            + sync_agents.CONSIGNE_COMMUNE + "\n"
             "Corps du rôle.\n",
         )
 
