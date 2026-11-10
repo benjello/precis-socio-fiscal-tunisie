@@ -7039,3 +7039,34 @@
   - gbo-rap-missions
   source_ligne: Rapports annuels de performance des missions du budget de l'État (gbo.tn
     et ministères), dépouillement 2026.
+- id: education-superieur-diplomes
+  titre: Diplômés de l'enseignement supérieur (secteur public), 2001-02 à 2022-23
+  sources:
+  - ins-annuaire-statistique
+  - ins-tunisie-en-chiffres-diplomes
+  - mesrs-chiffres2013-2014
+  - mesrs-chiffres2012-2013
+  build: uv run python scripts/build_education_diplomes.py
+  raw:
+  - sources/transcriptions/education-superieur-diplomes/
+  output: data/processed/education/education-superieur-diplomes.csv
+  unite: diplômés ; diplômées (colonne unite)
+  perimetre: 'INS, Annuaire statistique de la Tunisie, tableau « Effectif des étudiants
+    diplômés de fin d''études par filières et par genre » : diplômés de fin d''année
+    universitaire du secteur public (établissements du MESRS et des départements en
+    cotutelle), tous diplômes confondus ; une édition de l''annuaire par année universitaire,
+    sans recouvrement. Deux relevés : total (`diplomes-superieur-total`) et femmes
+    (`diplomes-superieur-etudiantes`). Année universitaire « AAAA-AA ».'
+  caveats: 'SECTEUR PUBLIC SEUL (privé exclu à partir de 2003-04). COUTURE DE DÉFINITION
+    2002-03/2003-04 : les éditions 1998-2002 et 1999-2003 comptent les « admis à la
+    session de juin » ventilés par secteur, non les diplômés de fin d''études par
+    filière des éditions suivantes ; la marche de 2003-04 mêle croissance et changement
+    de définition, non raccordée. 2012-13 HORS ANNUAIRE : l''édition 2009-2013 de
+    l''annuaire n''a jamais été mise en ligne ; le total 61 376 vient de Tunisie en
+    chiffres 2013-2014 (p. 12) et recoupe exactement MESRS en chiffres 2013-2014 (51
+    534 + 9 842) ; les diplômées 2012-13 (41 390) sont la somme de deux cases MESRS
+    (34 717 + 6 673), seule valeur de la colonne non tirée d''un tableau INS. PIC
+    2009-10 (86 035) : sortie conjointe des dernières maîtrises de l''ancien régime
+    (26 076) et techniciens supérieurs (8 333) avec les premières cohortes LMD — à
+    annoter, non une expansion réelle.'
+  fiche: sources/education-superieur-diplomes.md
