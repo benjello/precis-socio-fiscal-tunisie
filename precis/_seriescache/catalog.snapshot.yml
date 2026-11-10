@@ -6454,3 +6454,482 @@
   - 'Nations unies (UNdata, UNSD National Accounts) : données officielles des pays,
     diffusion publique à des fins statistiques ; producteur d''origine INS. Citer
     UNSD/UNdata et l''INS.'
+- id: dette-exterieure-echeancier
+  titre: 'Dette extérieure publique et garantie : encours et échéancier (principal,
+    intérêts, service), 1970-2033'
+  sources:
+  - wb-ids
+  build: tunisia_data.build.dette_exterieure:main
+  raw:
+  - data/processed/banque-mondiale/ids_tunisie_dette.csv
+  output: data/processed/banque-mondiale/dette_exterieure_echeancier.csv
+  unite: millions de dollars des États-Unis courants
+  perimetre: 'dette extérieure PUBLIQUE ET GARANTIE PUBLIQUEMENT (PPG), tous créanciers
+    confondus (contrepartie WLD de l''API). Colonnes : encours (`encours_MUSD`), remboursement
+    du principal (`principal_MUSD`), intérêts (`interets_MUSD`), service total (`service_MUSD`),
+    et `statut` (`réalisé` jusqu''à l''année de déclaration, `projeté` au-delà)'
+  caveats: 'ÉCHÉANCIER = DETTE DÉJÀ CONTRACTÉE. Les années `projeté` (au-delà de la
+    dernière année d''encours renseigné) donnent le service du stock EXISTANT, qui
+    décroît mécaniquement car il n''inclut aucun emprunt futur : ce n''est pas une
+    prévision du service total à venir. PÉRIMÈTRE PPG EXTÉRIEUR SEUL : ni la dette
+    privée non garantie, ni la dette intérieure en dinars (bons du Trésor). EN DOLLARS
+    COURANTS : un encours extérieur en devises se réévalue en dinars avec la dépréciation,
+    sans emprunt nouveau ; aucune conversion en dinars n''est faite ici. Source Debtor
+    Reporting System de la Banque mondiale (déclarations du pays), niveau créancier
+    au plus fin — jamais l''emprunt individuel. Les fichiers bruts ne sont pas versionnés
+    ; un nouveau téléchargement peut changer les valeurs. Voir docs/dette-exterieure-echeancier.md.'
+  titre_ar: 'الدين الخارجي العمومي والمضمون: الأصل القائم وجدول السداد (رأس المال،
+    الفوائد، خدمة الدين)، 1970-2033'
+  unite_ar: بملايين الدولارات الأمريكية الجارية
+  perimetre_ar: 'الدين الخارجي العمومي والمضمون عموميًا (PPG)، جميع الدائنين مجتمعين.
+    الأعمدة: الأصل القائم، تسديد رأس المال، الفوائد، خدمة الدين الإجمالية، والحالة
+    (`réalisé` محقّق حتى سنة التصريح، `projeté` متوقّع بعدها)'
+  caveats_ar: 'جدول السداد يخصّ الدين المتعاقد عليه فعلاً: السنوات المتوقّعة تعطي
+    خدمة المخزون القائم التي تتناقص آليًا لأنها لا تشمل أي اقتراض مقبل، وليست توقّعًا
+    لخدمة الدين الإجمالية المقبلة. النطاق هو الدين الخارجي العمومي والمضمون فقط، دون
+    الدين الداخلي بالدينار. بالدولار الجاري: يُعاد تقييم الدين الخارجي بالدينار مع
+    انخفاض قيمته دون اقتراض جديد. المصدر نظام الإبلاغ عن المَدينين للبنك الدولي؛ أدقّ
+    مستوى هو الدائن، لا القرض الفردي.'
+  licences:
+  - 'Banque mondiale, International Debt Statistics (source wb-ids) : CC BY 4.0 avec
+    clause de non-aval, citer « The World Bank : International Debt Statistics »,
+    https://www.worldbank.org/en/about/legal/terms-of-use-for-datasets (consultée
+    le 2026-11-09)'
+  fiche: docs/dette-exterieure-echeancier.md
+- id: dette-exterieure-echeancier-creanciers
+  titre: 'Dette extérieure publique et garantie : échéancier par créancier (principal,
+    intérêts, service), 1970-2033'
+  sources:
+  - wb-ids
+  build: tunisia_data.build.dette_exterieure:main_creanciers
+  raw:
+  - data/processed/banque-mondiale/ids_tunisie_dette_creanciers.csv
+  output: data/processed/banque-mondiale/dette_exterieure_echeancier_creanciers.csv
+  unite: millions de dollars des États-Unis courants
+  perimetre: 'dette extérieure PUBLIQUE ET GARANTIE PUBLIQUEMENT (PPG), ventilée par
+    créancier (contrepartie de l''API, hors agrégat WLD). Une ligne par (année, créancier)
+    : principal (`principal_MUSD`), intérêts (`interets_MUSD`), service total (`service_MUSD`),
+    et `statut` (`réalisé` / `projeté`)'
+  caveats: 'MÊME SOURCE ET MÊMES PIÈGES que `dette-exterieure-echeancier`, ventilés
+    par créancier. ÉCHÉANCIER = DETTE DÉJÀ CONTRACTÉE : les années `projeté` décroissent
+    faute d''inclure les emprunts futurs. Le créancier est la maille la PLUS FINE
+    publiée (jamais l''emprunt individuel) ; « Bondholders » agrège les porteurs d''obligations
+    de marché. La somme des créanciers d''une année égale l''agrégat WLD de `dette-exterieure-echeancier`.
+    Dollars courants, périmètre PPG extérieur seul. Voir docs/dette-exterieure-echeancier.md.'
+  titre_ar: 'الدين الخارجي العمومي والمضمون: جدول السداد حسب الدائن (رأس المال، الفوائد،
+    خدمة الدين)، 1970-2033'
+  unite_ar: بملايين الدولارات الأمريكية الجارية
+  perimetre_ar: 'الدين الخارجي العمومي والمضمون (PPG) موزّعًا حسب الدائن (الطرف المقابل
+    في المعطيات، دون المجموع WLD). سطر لكل (سنة، دائن): رأس المال، الفوائد، خدمة الدين
+    الإجمالية، والحالة (محقّق/متوقّع)'
+  caveats_ar: نفس المصدر ونفس المحاذير كسلسلة dette-exterieure-echeancier، موزّعة
+    حسب الدائن. جدول السداد يخصّ الدين المتعاقد عليه فعلاً؛ السنوات المتوقّعة تتناقص
+    لأنها لا تشمل اقتراضًا مقبلاً. الدائن هو أدقّ مستوى منشور (لا القرض الفردي)؛ «Bondholders»
+    يجمع حاملي السندات. مجموع الدائنين في سنة يساوي المجموع WLD.
+  licences:
+  - 'Banque mondiale, International Debt Statistics (source wb-ids) : CC BY 4.0 avec
+    clause de non-aval, citer « The World Bank : International Debt Statistics »,
+    https://www.worldbank.org/en/about/legal/terms-of-use-for-datasets (consultée
+    le 2026-11-09)'
+  fiche: docs/dette-exterieure-echeancier.md
+- id: finances-publiques-indicateurs
+  titre: 'Indicateurs des finances publiques : déficit, pression fiscale et encours
+    de la dette publique, 1986-2025'
+  sources:
+  - minfin-indicateurs-fp
+  build: scripts/extract_minfinances_indicateurs.py:main
+  raw:
+  - data/raw/minfinances/indicateurs_fin_pub_LF2026.xls
+  output: data/processed/minfinances/finances_publiques_indicateurs.csv
+  unite: millions de dinars courants ; % du PIB
+  perimetre: 'administration centrale (budget de l''État). Colonnes d''EXÉCUTION une
+    par année : déficit (`deficit_MDT`, `deficit_pct_pib`), pression fiscale (`pression_fiscale_pct_pib`),
+    encours de la dette publique (`dette_MDT`, `dette_pct_pib`)'
+  caveats: 'DÉFINITION DU DÉFICIT reprise du tableau : « déficit selon les normes
+    internationales, hors privatisation, dons extérieurs et revenus confisqués, Y
+    COMPRIS le recouvrement du principal de la dette et les prêts » — ce n''est PAS
+    le solde budgétaire brut ni le solde primaire ; la charge d''intérêt n''est pas
+    isolée ici (elle l''est dans les Résultats d''exécution du budget). Périmètre
+    ADMINISTRATION CENTRALE (≠ administrations publiques du WEO). Derniers exercices
+    PROVISOIRES, révisés d''une édition à l''autre. Les ratios étaient stockés en
+    fractions dans le XLS, remis en pourcent. PIB IMPLICITE : `dette_MDT`/`dette_pct_pib`×100
+    redonne le PIB employé par le ministère (dénominateur interne cohérent, hors ruptures
+    de base INS). Voir docs/finances-publiques-indicateurs.md.'
+  titre_ar: 'مؤشرات المالية العمومية: العجز والضغط الجبائي وأصل الدين العمومي، 1986-2025'
+  unite_ar: بملايين الدنانير الجارية؛ ٪ من الناتج المحلي الإجمالي
+  perimetre_ar: 'الإدارة المركزية (ميزانية الدولة). عمود تنفيذ لكل سنة: العجز، الضغط
+    الجبائي، أصل الدين العمومي (بالمليون دينار وبنسبة من الناتج)'
+  caveats_ar: 'تعريف العجز كما في الجدول: «حسب المعايير الدولية، دون الخوصصة والهبات
+    الخارجية والمداخيل المصادرة، بما في ذلك استرجاع أصل الدين والقروض» — وليس الرصيد
+    الأولي؛ فائدة الدين غير معزولة هنا. النطاق هو الإدارة المركزية (يختلف عن الإدارات
+    العمومية في WEO). آخر السنوات وقتية. الناتج الضمني: الدين بالمليون دينار ÷ نسبته
+    من الناتج ×100.'
+  fiche: docs/finances-publiques-indicateurs.md
+- id: finances-publiques-execution
+  titre: Charge d'intérêt de la dette et solde budgétaire, exécution du budget de
+    l'État, 2012-2024
+  sources:
+  - minfin-resultats-provisoires-2017-01
+  - minfin-resultats-provisoires-2020-12
+  - minfin-resultats-provisoires-2024-12
+  source_ligne: Ministère des Finances, Résultats de l'exécution du budget de l'État
+    (éditions de décembre)
+  source_ligne_ar: وزارة المالية، نتائج تنفيذ ميزانية الدولة (نشرات ديسمبر)
+  build: scripts/extract_minfinances_execution.py:main
+  raw:
+  - data/raw/minfinances/execution_budget_fin2016.pdf
+  - data/raw/minfinances/execution_budget_dec2020.pdf
+  - data/raw/minfinances/execution_budget_dec2024.pdf
+  output: data/processed/minfinances/finances_publiques_execution.csv
+  unite: millions de dinars courants
+  perimetre: 'budget de l''État (administration centrale), années d''EXÉCUTION 2012-2024
+    assemblées de trois éditions de décembre (2017, 2020, 2024) : charge d''intérêt
+    de la dette (`interet_MDT`, ligne « Intérêts de la Dette / فائدة الدين »), solde
+    budgétaire (`solde_budgetaire_MDT`, ligne « Solde Budgetaire / النتيجة »), colonne
+    `edition` = bulletin retenu'
+  caveats: 'SÉRIE ASSEMBLÉE DE PLUSIEURS BULLETINS de décembre ; sur une année commune,
+    l''édition la plus RÉCENTE l''emporte (valeurs les plus révisées, colonne `edition`).
+    Chaque édition tabule ~5 années d''exécution ; les colonnes LF/LFC et les périodes
+    partielles (End November/October, End January) sont écartées. Le « solde budgétaire
+    » N''EST PAS le déficit « normes internationales » de finances-publiques-indicateurs
+    (définitions différentes). Le solde PRIMAIRE = solde budgétaire + charge d''intérêt.
+    Pour un ratio au PIB, employer le PIB implicite de finances-publiques-indicateurs.
+    Recoupement 2012 : 1 267,6 MDT (MdF) vs 1 272,1 MDT (GFS/BM). Chiffres provisoires
+    révisés entre éditions. Avant 2012, voir finances-publiques-gfs. Voir docs/finances-publiques-indicateurs.md.'
+  titre_ar: فائدة الدين والنتيجة، تنفيذ ميزانية الدولة، 2021-2024
+  unite_ar: بملايين الدنانير الجارية
+  perimetre_ar: 'ميزانية الدولة (الإدارة المركزية)، أعمدة التنفيذ 2021-2024: فائدة
+    الدين (السطر 6) والنتيجة (السطر III)'
+  caveats_ar: تغطية قصيرة (2021-2024) محدودة بسنوات وثيقة تنفيذ الميزانية إلى موفى
+    ديسمبر 2024؛ السلسلة الطويلة لفائدة الدين تتطلب النشرة الإحصائية للمالية (BSF).
+    النتيجة ليست عجز «المعايير الدولية»؛ الرصيد الأولي = النتيجة + فائدة الدين. للنسبة
+    من الناتج يُستعمل الناتج الضمني لسلسلة المؤشرات.
+  fiche: docs/finances-publiques-indicateurs.md
+- id: finances-publiques-gfs
+  titre: 'Finances publiques (statistiques GFS republiées par la Banque mondiale)
+    : intérêts et dépenses, 1972-2012'
+  sources:
+  - wb-wdi
+  build: scripts/extract_wb_gfs.py:main
+  raw:
+  - data/raw/banque-mondiale/gfs_GC.XPN.INTP.CN.json
+  output: data/processed/banque-mondiale/gfs_tunisie.csv
+  unite: millions de dinars courants ; %
+  perimetre: 'administration centrale budgétaire. Format long (colonne `code`) : GC.XPN.INTP.CN
+    (charge d''intérêt, MDT), GC.XPN.INTP.ZS (intérêts en % des dépenses), GC.XPN.TOTL.CN
+    (dépenses totales, MDT)'
+  caveats: SÉRIES DÉCLARÉES PAR LA TUNISIE au système GFS du FMI, republiées par la
+    Banque mondiale ; elles S'ARRÊTENT vers 2012 (mise à jour cessée pour la Tunisie).
+    Montants convertis de dinars en MDT (÷ 1e6). Périmètre administration centrale
+    budgétaire ; la définition peut différer légèrement des « Résultats de l'exécution
+    du budget » du ministère des Finances (à raccorder par segments, non à chaîner
+    en silence). Un nouveau téléchargement peut réviser des valeurs.
+  titre_ar: 'المالية العمومية (إحصائيات GFS التي ينشرها البنك الدولي): الفوائد والنفقات،
+    1972-2012'
+  unite_ar: بملايين الدنانير الجارية؛ ٪
+  perimetre_ar: 'الإدارة المركزية. صيغة طويلة (العمود code): فائدة الدين (بالمليون
+    دينار)، الفوائد كنسبة من النفقات، النفقات الجملية (بالمليون دينار)'
+  caveats_ar: سلاسل صرّحت بها تونس لنظام GFS لصندوق النقد الدولي، ينشرها البنك الدولي؛
+    تتوقّف نحو 2012. حُوّلت من الدينار إلى المليون دينار. النطاق هو الإدارة المركزية،
+    وقد يختلف تعريفه قليلاً عن «نتائج تنفيذ الميزانية» لوزارة المالية (توصل بالمقاطع
+    لا بالتسلسل الصامت).
+  fiche: docs/finances-publiques-indicateurs.md
+- id: finances-publiques-charge-interet
+  titre: Charge d'intérêt de la dette de l'État, série longue par raccord de segments,
+    1972-2024
+  sources:
+  - wb-wdi
+  - minfin-resultats-provisoires-2017-01
+  - minfin-resultats-provisoires-2020-12
+  - minfin-resultats-provisoires-2024-12
+  source_ligne: Banque mondiale (statistiques GFS, avant 2012) et ministère des Finances
+    (exécution du budget, à partir de 2012)
+  source_ligne_ar: البنك الدولي (إحصائيات GFS، قبل 2012) ووزارة المالية (تنفيذ الميزانية،
+    من 2012)
+  build: tunisia_data.build.finances_publiques:main
+  raw:
+  - data/processed/banque-mondiale/gfs_tunisie.csv
+  - data/processed/minfinances/finances_publiques_execution.csv
+  output: data/processed/minfinances/charge_interet_longue.csv
+  unite: millions de dinars courants
+  perimetre: 'charge d''intérêt de la dette de l''État (administration centrale),
+    une ligne par année ; colonne `source` : `BM-GFS` (1972-2012, statistiques GFS
+    republiées) ou `MdF-exécution` (bulletins du ministère des Finances)'
+  caveats: 'SÉRIE RACCORDÉE PAR SEGMENTS, NON CHAÎNÉE : la colonne `source` distingue
+    les segments ; BM-GFS (déclarations tunisiennes au FMI, 1972-2012) et MdF-exécution
+    (bulletins nationaux). Sur une année commune, l''exécution MdF l''emporte. Le
+    TROU éventuel entre 2012 et le premier bulletin MdF versé reste VIDE (non inventé)
+    ; il se comble en versant d''autres bulletins de décembre. Les définitions des
+    deux sources peuvent différer légèrement (périmètre, traitement des opérations)
+    : ne pas lire une rupture de segment comme une variation économique. Voir docs/finances-publiques-indicateurs.md.'
+  titre_ar: فائدة دين الدولة، سلسلة طويلة موصولة بالمقاطع، 1972-2024
+  unite_ar: بملايين الدنانير الجارية
+  perimetre_ar: 'فائدة دين الدولة (الإدارة المركزية)، سطر لكل سنة؛ العمود source:
+    BM-GFS (1972-2012) أو MdF-exécution (نشرات وزارة المالية)'
+  caveats_ar: 'سلسلة موصولة بالمقاطع لا مسلسلة: العمود source يميّز المقاطع. على السنة
+    المشتركة تُعتمد نشرة وزارة المالية. الفجوة بين 2012 وأول نشرة وطنية متوفّرة تبقى
+    فارغة (لا تُختلق). قد تختلف تعاريف المصدرين قليلاً.'
+  fiche: docs/finances-publiques-indicateurs.md
+- id: dette-exterieure-devises
+  titre: Structure de la dette extérieure à long terme par devise, 2003-2024
+  sources:
+  - bct-dette-exterieure-2024
+  build: scripts/extract_bct_dette_structure.py:main
+  raw:
+  - data/raw/bct-archives/107/dette2024.pdf
+  output: data/processed/bct-archives/dette_exterieure_devises.csv
+  unite: '% de l''encours'
+  perimetre: encours de la dette extérieure à long terme, part de chaque devise (euro,
+    dollar É.-U., yen, dinar koweïtien, autres), 2003-2024 (tableaux « structure de
+    la dette extérieure par devise » des rapports BCT successifs ; TROU 2013-2018,
+    rapports non disponibles en local)
+  caveats: PART EN POURCENTAGE de l'encours (somme = 100). Fenêtre 2020-2024 (celle
+    du rapport 2024) ; une série plus longue demande les rapports BCT antérieurs,
+    de format différent. Dette extérieure à long terme seulement.
+  titre_ar: هيكلة الدين الخارجي طويل الأمد حسب العملة، 2020-2024
+  unite_ar: ٪ من الأصل القائم
+  perimetre_ar: الأصل القائم للدين الخارجي طويل الأمد، حصّة كل عملة (اليورو، الدولار
+    الأمريكي، الين، الدينار الكويتي، أخرى)، 2020-2024 (جدول A14)
+  caveats_ar: حصص بالنسبة المئوية (المجموع = 100). النافذة 2020-2024؛ السلسلة الأطول
+    تتطلّب تقارير البنك المركزي السابقة بصيغة مختلفة. الدين الخارجي طويل الأمد فقط.
+  fiche: docs/finances-publiques-indicateurs.md
+- id: dette-exterieure-effet-change
+  titre: 'Variation de l''encours de la dette extérieure : effet-change et effet-volume,
+    2019-2024'
+  sources:
+  - bct-dette-exterieure-2024
+  build: scripts/extract_bct_dette_structure.py:main
+  raw:
+  - data/raw/bct-archives/107/dette2024.pdf
+  output: data/processed/bct-archives/dette_exterieure_effet_change.csv
+  unite: millions de dinars
+  perimetre: décomposition de la variation annuelle de l'encours de la dette extérieure
+    à long terme en effet-change (réévaluation en dinars de la dette en devises) et
+    effet-volume (flux nets d'emprunt), 2019-2024 (tableau A15 ; seuls les rapports
+    récents portent l'agrégat change/volume)
+  caveats: 'IDENTITÉ : variation_MDT = effet_change_MDT + effet_volume_MDT. L''effet-change
+    mesure la réévaluation en dinars de la dette libellée en devises quand le change
+    bouge, SANS emprunt nouveau ; l''effet-volume, les tirages nets. Fenêtre 2020-2024
+    (rapport BCT 2024). Dette extérieure à long terme.'
+  titre_ar: 'تغيّر أصل الدين الخارجي: أثر الصرف وأثر الحجم، 2020-2024'
+  unite_ar: بملايين الدنانير
+  perimetre_ar: تفكيك التغيّر السنوي لأصل الدين الخارجي طويل الأمد إلى أثر الصرف (إعادة
+    تقييم بالدينار) وأثر الحجم (التدفقات الصافية للاقتراض)، 2020-2024 (جدول A15)
+  caveats_ar: 'المطابقة: التغيّر = أثر الصرف + أثر الحجم. أثر الصرف هو إعادة تقييم
+    الدين بالعملة الأجنبية بالدينار دون اقتراض جديد؛ أثر الحجم هو السحوبات الصافية.'
+  fiche: docs/finances-publiques-indicateurs.md
+- id: liquidite-externe
+  titre: 'Liquidité externe : réserves de change (mois d''importation) et service
+    de la dette (% des exportations), 1976-2024'
+  sources:
+  - wb-wdi
+  - wb-ids
+  build: scripts/extract_wb_liquidite.py:main
+  raw:
+  - data/raw/banque-mondiale/liq_FI.RES.TOTL.MO.json
+  output: data/processed/banque-mondiale/liquidite_externe.csv
+  unite: mois d'importation ; % des exportations
+  perimetre: 'indicateurs de liquidité externe, format long (colonne `code`) : FI.RES.TOTL.MO
+    (réserves de change en mois d''importation) et DT.TDS.DPPG.XP.ZS (service de la
+    dette extérieure publique et garantie en % des exportations de biens, services
+    et revenus primaires)'
+  caveats: 'DONNÉES DE LA BANQUE CENTRALE DE TUNISIE (réserves, balance des paiements)
+    et du système de déclaration de la dette, republiées par la Banque mondiale (IMF
+    IFS et IDS). Se recoupent avec les niveaux récents du Rapport annuel de la BCT
+    (réserves 2024 : 121 jours ≈ 4 mois ; coefficient du service 2024 ≈ 19 %). Le
+    service/exportations porte sur la dette PPG ; un indicateur national « coefficient
+    du service de la dette extérieure » (toutes dettes, crédits des transactions courantes)
+    existe au RA de la BCT, de définition voisine mais non identique. Un nouveau téléchargement
+    peut réviser des valeurs.'
+  titre_ar: 'السيولة الخارجية: احتياطي الصرف (بأشهر التوريد) وخدمة الدين (٪ من الصادرات)،
+    1976-2024'
+  unite_ar: أشهر توريد؛ ٪ من الصادرات
+  perimetre_ar: 'مؤشرات السيولة الخارجية (صيغة طويلة، العمود code): احتياطي الصرف
+    بأشهر التوريد، وخدمة الدين الخارجي العمومي والمضمون كنسبة من صادرات السلع والخدمات
+    والدخل الأولي'
+  caveats_ar: معطيات البنك المركزي التونسي (الاحتياطي، ميزان المدفوعات) ونظام الإبلاغ
+    عن الدين، ينشرها البنك الدولي (IMF IFS وIDS). تتوافق مع المستويات الحديثة للتقرير
+    السنوي للبنك المركزي. خدمة/صادرات تخصّ الدين العمومي والمضمون.
+  fiche: docs/finances-publiques-indicateurs.md
+- id: dette-etat-interieur-exterieur
+  titre: 'Endettement de l''État : part intérieure et part extérieure, 2020-2025'
+  sources:
+  - bct-dette-exterieure-2024
+  source_ligne: Banque centrale de Tunisie, tableau statistique « Endettement total
+    »
+  source_ligne_ar: البنك المركزي التونسي، الجدول الإحصائي «المديونية الجملية»
+  build: scripts/extract_bct_endettement.py:main
+  raw:
+  - data/raw/bct-stat/endettement.html
+  output: data/processed/bct-stat/endettement_etat.csv
+  unite: millions de dinars courants
+  perimetre: endettement de l'État au sens des statistiques monétaires de la BCT,
+    ventilé entre dette intérieure et dette extérieure (une ligne par année) ; `etat_total_MDT`
+    = somme des deux
+  caveats: 'CONCEPT MONÉTAIRE (l''État comme agent économique, statistiques de la
+    BCT) : périmètre et valorisation DIFFÉRENTS de la dette publique « budgétaire
+    » du ministère des Finances (finances-publiques-indicateurs). NON EMPLOYÉE par
+    les figures de l''annexe (remplacée par la série budgétaire dette-publique-interieur-exterieur)
+    ; conservée comme concept distinct. À employer pour la VENTILATION intérieur /
+    extérieur au sens monétaire, non comme total officiel. Fenêtre 2020-2025 (table
+    en ligne) ; série longue = Bulletin statistique des finances ou Rapport sur la
+    dette publique (annexe au PLF).'
+  titre_ar: 'مديونية الدولة: الجزء الداخلي والجزء الخارجي، 2020-2025'
+  unite_ar: بملايين الدنانير الجارية
+  perimetre_ar: مديونية الدولة حسب الإحصائيات النقدية للبنك المركزي، موزّعة بين الدين
+    الداخلي والدين الخارجي (سطر لكل سنة)؛ المجموع = مجموعهما
+  caveats_ar: 'مفهوم نقدي (الدولة كعون اقتصادي): نطاقه وتقييمه يختلفان عن الدين العمومي
+    الميزانياتي لوزارة المالية. يُستعمل للتوزيع داخلي/خارجي لا كمجموع رسمي. النافذة
+    2020-2025.'
+  fiche: docs/finances-publiques-indicateurs.md
+- id: change-dinar
+  titre: Taux de change du dinar tunisien (cours officiel contre le dollar), 1960-2025
+  sources:
+  - wb-wdi
+  source_ligne: Banque centrale de Tunisie (cours officiel), republié par la Banque
+    mondiale
+  source_ligne_ar: البنك المركزي التونسي (السعر الرسمي)، ينشره البنك الدولي
+  build: scripts/extract_wb_change.py:main
+  raw:
+  - data/raw/banque-mondiale/change_PA.NUS.FCRF.json
+  output: data/processed/banque-mondiale/change_dinar.csv
+  unite: dinars par dollar des États-Unis (moyenne annuelle)
+  perimetre: cours de change officiel du dinar contre le dollar É.-U., moyenne de
+    période (`dinar_par_usd`)
+  caveats: 'VALEUR EXTERNE DU DINAR : une hausse = dépréciation (il faut plus de dinars
+    pour un dollar). Cours officiel suivi par la BCT, republié par la Banque mondiale
+    (FMI, IFS). Moyenne annuelle (non fin de période). Un nouveau téléchargement peut
+    réviser des valeurs.'
+  titre_ar: سعر صرف الدينار التونسي (السعر الرسمي مقابل الدولار)، 1960-2025
+  unite_ar: دينار مقابل الدولار الأمريكي (معدل سنوي)
+  perimetre_ar: سعر الصرف الرسمي للدينار مقابل الدولار الأمريكي، معدل الفترة
+  caveats_ar: 'القيمة الخارجية للدينار: الارتفاع = انخفاض القيمة (دنانير أكثر مقابل
+    الدولار). السعر الرسمي لدى البنك المركزي، ينشره البنك الدولي. معدل سنوي.'
+  fiche: docs/finances-publiques-indicateurs.md
+- id: dette-publique-interieur-exterieur
+  titre: 'Encours de la dette publique : part intérieure et part extérieure, 2000-2026'
+  sources:
+  - bct-ra
+  source_ligne: Banque centrale de Tunisie, Rapport annuel (tableau « Encours de la
+    dette publique », source ministère des Finances)
+  source_ligne_ar: البنك المركزي التونسي، التقرير السنوي (جدول «أصل الدين العمومي»،
+    المصدر وزارة المالية)
+  build: scripts/extract_bct_ra_dette_publique.py:main
+  raw:
+  - data/raw/bct-archives/109
+  output: data/processed/bct-archives/dette_publique_interieur_exterieur.csv
+  unite: millions de dinars courants
+  perimetre: encours de la dette publique au sens BUDGÉTAIRE (ministère des Finances),
+    ventilé entre dette intérieure et dette extérieure (une ligne par année) ; `total_MDT`
+    = somme des deux, concordant avec la dette publique de finances-publiques-indicateurs.
+    Chaîné sur les rapports annuels successifs de la BCT (2000-2026, le dernier exercice
+    étant une prévision de loi de finances)
+  caveats: 'PÉRIMÈTRE BUDGÉTAIRE (dette publique du ministère des Finances) : le total
+    concorde avec finances-publiques-indicateurs (écart médian 0,4 MDT). À NE PAS
+    CONFONDRE avec l''« endettement intérieur/extérieur de l''État » au sens MONÉTAIRE
+    (financement de l''économie, série dette-etat-interieur-exterieur), de périmètre
+    plus large. Série chaînée de rapports annuels successifs : sur une année commune,
+    le rapport le plus récent l''emporte ; le dernier millésime (2026) est une prévision
+    de loi de finances. Valeurs des exercices récents provisoires, révisées d''un
+    rapport à l''autre.'
+  titre_ar: 'أصل الدين العمومي: الجزء الداخلي والجزء الخارجي، 2001-2026'
+  unite_ar: بملايين الدنانير الجارية
+  perimetre_ar: أصل الدين العمومي بالمعنى الميزانياتي (وزارة المالية)، موزّعًا بين
+    الدين الداخلي والخارجي؛ المجموع يطابق الدين العمومي في finances-publiques-indicateurs.
+    مسلسل من التقارير السنوية المتتالية للبنك المركزي (2001-2026، آخر سنة توقّع قانون
+    المالية)
+  caveats_ar: 'المعنى الميزانياتي (دين وزارة المالية): المجموع يطابق finances-publiques-indicateurs.
+    يختلف عن «المديونية الداخلية/الخارجية للدولة» بالمعنى النقدي (أوسع نطاقًا). سلسلة
+    مسلسلة من تقارير متتالية؛ آخر سنة توقّع.'
+  fiche: docs/finances-publiques-indicateurs.md
+- id: dette-exterieure-encours-mlt-total
+  titre: 'Encours de la dette extérieure à moyen et long terme : total tous secteurs,
+    2019-2024'
+  sources:
+  - bct-dette-exterieure-2024
+  build: scripts/extract_bct_dette_encours_mlt.py:main
+  raw:
+  - data/raw/bct-archives/107/dette2023.pdf
+  - data/raw/bct-archives/107/dette2024.pdf
+  output: data/processed/bct-archives/dette_exterieure_encours_mlt_total.csv
+  unite: millions de dinars
+  perimetre: encours de la dette extérieure à moyen et long terme, TOTAL tous secteurs
+    emprunteurs (administration publique + système financier + entreprises), fin d'année
+    (tableau A10, dernière colonne), 2019-2024
+  caveats: 'PÉRIMÈTRE LE PLUS LARGE de la dette extérieure (~80 000 MDT en 2024) :
+    c''est la base de la composition par devise (dette-exterieure-devises) et de l''effet-change
+    (dette-exterieure-effet-change), À NE PAS CONFONDRE avec la dette extérieure de
+    l''ÉTAT (budgétaire, ~62 500 MDT, première colonne « Administration publique »
+    du même tableau). Rapports BCT 107 absents pour 2013-2022 : segment 2013-2018
+    non comblé (voir docs/notes/dette-concordance.md du précis). Rapport récent l''emporte
+    sur recoupement d''années.'
+  titre_ar: 'أصل الدين الخارجي متوسط وطويل الأمد: المجموع لكل القطاعات، 2019-2024'
+  unite_ar: بملايين الدنانير
+  perimetre_ar: أصل الدين الخارجي متوسط وطويل الأمد، المجموع لكل القطاعات المقترضة
+    (الإدارة العمومية + النظام المالي + المؤسسات)، في نهاية السنة (جدول A10، العمود
+    الأخير)، 2019-2024
+  caveats_ar: 'أوسع نطاق للدين الخارجي (نحو 80 ألف م.د في 2024): هو أساس التوزيع حسب
+    العملة وأثر الصرف، ولا يُخلط مع الدين الخارجي للدولة (الميزانياتي، نحو 62.5 ألف
+    م.د). تقارير البنك المركزي 107 غائبة لسنوات 2013-2022.'
+  fiche: docs/finances-publiques-indicateurs.md
+- id: dette-exterieure-encours-mlt-ra
+  titre: Encours de la dette extérieure à moyen et long terme vu par le rapport annuel
+    BCT, 2013-2019
+  sources:
+  - bct-dette-exterieure-2024
+  build: scripts/extract_bct_ra_dette_ext_mlt.py:main
+  raw:
+  - data/raw/bct-archives/109/RA_2017_fr.pdf
+  - data/raw/bct-archives/109/RA_2019_fr.pdf
+  output: data/processed/bct-archives/dette_exterieure_encours_mlt_ra.csv
+  unite: millions de dinars
+  perimetre: encours de la dette extérieure à moyen et long terme, lu dans le tableau
+    « Principaux paramètres de la dette extérieure à MLT » du Rapport annuel de la
+    BCT (n° 3-12 / 3-14 selon le millésime), 2013-2019
+  caveats: 'COMBLE LE TROU 2013-2019 que le rapport dette extérieure (pub 107) ne
+    couvre pas (absent 2013-2022). Périmètre ''compte non tenu des intérêts courus
+    non encore échus'' : VOISIN mais NON IDENTIQUE à l''encours MLT total du tableau
+    A10 (série dette-exterieure-encours-mlt-total) — écart mesuré au recouvrement
+    de 2019 : RA 75 908 vs A10 77 001, soit l''A10 ~1,4 % au-dessus. À GARDER DISTINCT
+    de l''A10, ne pas épisser les deux en une seule série. Source-cible qui lèverait
+    l''approximation : rapport dette (pub 107) 2013-2022, à retrouver.'
+  titre_ar: أصل الدين الخارجي متوسط وطويل الأمد حسب التقرير السنوي للبنك المركزي،
+    2013-2019
+  unite_ar: بملايين الدنانير
+  perimetre_ar: أصل الدين الخارجي متوسط وطويل الأمد، من جدول «المؤشرات الرئيسية للدين
+    الخارجي» في التقرير السنوي، 2013-2019
+  caveats_ar: 'يسدّ الفجوة 2013-2019 التي لا يغطّيها تقرير الدين الخارجي (الغائب 2013-2022).
+    نطاق «دون الفوائد المتراكمة»: قريب من جدول A10 لا مطابق له (فارق 2019: نحو 1.4٪).
+    يُحفظ مستقلاً، لا يُدمج مع A10.'
+  fiche: docs/finances-publiques-indicateurs.md
+- id: dette-exterieure-devises-ra
+  titre: Structure de la dette extérieure par devise, estimation du Rapport annuel
+    BCT (3 devises), 2015-2018
+  sources:
+  - bct-dette-exterieure-2024
+  build: scripts/extract_bct_ra_devises.py:main
+  raw:
+  - data/raw/bct-archives/109/RA_2015_fr.pdf
+  - data/raw/bct-archives/109/RA_2017_fr.pdf
+  - data/raw/bct-archives/109/RA_2018_fr.pdf
+  output: data/processed/bct-archives/dette_exterieure_devises_ra.csv
+  unite: '% de l''encours'
+  perimetre: 'APPROXIMATION : part de chaque devise dans l''encours de la dette extérieure,
+    telle qu''énoncée EN RÉCIT dans les Rapports annuels de la BCT (euro, dollar,
+    yen, et un reliquat ''autres''), 2015, 2017, 2018'
+  caveats: 'APPROXIMATION ASSUMÉE qui comble partiellement le trou 2013-2018 du tableau
+    A14 (rapports dette pub 107 absents 2013-2022). Trois devises seulement (euro/dollar/yen)
+    + reliquat ''autres'' : le dinar koweïtien N''EST PAS isolé (fondu dans ''autres''),
+    granularité moindre que la série autoritative dette-exterieure-devises (5 postes).
+    Seules 2015, 2017, 2018 sont énoncées (RA_2016 muet ; RA_2013/2014 non détenus)
+    ; 2019/2022 existent au récit mais sont déjà couvertes en table par la série autoritative.
+    À AFFICHER DISTINCTEMENT (estimation), ne pas fondre dans la série A14. Source-cible
+    qui la remplacerait : rapport dette (pub 107) 2013-2018, à retrouver (hors web,
+    cf. sources/chercher-des-donnees-tunisie.md).'
+  titre_ar: هيكلة الدين الخارجي حسب العملة، تقدير التقرير السنوي (ثلاث عملات)، 2015-2018
+  unite_ar: ٪ من الأصل القائم
+  perimetre_ar: 'تقدير: حصّة كل عملة من الدين الخارجي، كما وردت سرداً في التقارير
+    السنوية (اليورو، الدولار، الين، وباقٍ ''أخرى'')، 2015 و2017 و2018'
+  caveats_ar: تقدير يسدّ جزئياً فجوة 2013-2018 لجدول A14. ثلاث عملات فقط + باقٍ؛ الدينار
+    الكويتي غير مفصول. يُعرض كتقدير متميّز، لا يُدمج مع السلسلة المرجعية.
+  fiche: docs/finances-publiques-indicateurs.md

@@ -35,6 +35,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Allocation familiale non contributive | المنحة العائلية غير المساهماتية |  |
 | Allocation supplémentaire | منحة التكلفة الإضافية |  |
 | Amen social | برنامج الأمان الاجتماعي |  |
+| Amortissement de la dette | تسديد أصل الدين |  |
 | Animateur des jardins d'enfants | منشط رياض الأطفال |  |
 | Année préparatoire | السنة التحضيرية |  |
 | Annuité liquidable | السنة القابلة للتصفية |  |
@@ -196,6 +197,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Cotisation supplémentaire | الاشتراك الإضافي |  |
 | Cotisations sociales | المساهمات الاجتماعية |  |
 | Cours particuliers | الدروس الخصوصية |  |
+| Coût apparent de la dette | الكلفة الظاهرة للدين |  |
 | Coût de conformité | كلفة الامتثال الجبائي |  |
 | Coût du travail | كلفة العمل |  |
 | Coût marginal des fonds publics | الكلفة الحدية للأموال العمومية |  |
@@ -224,6 +226,11 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Dépenses obligatoires | النفقات الإجبارية |  |
 | Déséquilibre vertical | الاختلال العمودي |  |
 | Détournement et création de commerce | تحويل التجارة وإنشاء التجارة |  |
+| Dette de l'État | دين الدولة |  |
+| Dette extérieure | الدين الخارجي |  |
+| Dette garantie | الدين المضمون |  |
+| Dette intérieure | الدين الداخلي |  |
+| Dette publique | الدين العام |  |
 | Dévolution de compétences | إسناد الصلاحيات الذاتية |  |
 | Différence compensatrice | الفارق التعويضي في الأجر |  |
 | Diplôme de fin de l'enseignement de base | شهادة ختم التعليم الأساسي |  |
@@ -251,6 +258,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Droits sur les actes et transactions | معاليم على العقود والمبادلات |  |
 | Durée de constatation du crédit de TVA | مدة تسجيل فائض الأداء على القيمة المضافة بالتصاريح |  |
 | Durée légale du travail | مدة الشغل |  |
+| Écart taux-croissance | الفارق بين سعر الفائدة ونسبة النمو |  |
 | Échelon | الدرجة |  |
 | Échelonnement indiciaire | التدرّج القياسي |  |
 | École préparatoire | المدرسة الإعدادية |  |
@@ -261,6 +269,8 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Effectif global du personnel autorisé | العدد الجملي للأعوان المرخص فيهم |  |
 | Effet cascade | الأثر التراكمي |  |
 | Effet de verrouillage | أثر التجميد |  |
+| Effet-change | أثر سعر الصرف |  |
+| Effet-volume | أثر التدفّقات |  |
 | Effort fiscal | المجهود الجبائي |  |
 | Élasticité de l'offre de logement | مرونة عرض المساكن |  |
 | Élasticité de l'offre de travail | مرونة عرض العمل |  |
@@ -273,6 +283,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Emploi public | التشغيل العمومي |  |
 | Employés de maison | عمال المنازل |  |
 | Emprunt | الاقتراض |  |
+| Encours de la dette | رصيد الدين |  |
 | Enfant à charge | الطفل المتكفَّل به |  |
 | Enquête mixte ménages-entreprises | المسح المختلط للأسر والمؤسسات |  |
 | Enseignant-chercheur | المدرس الباحث |  |
@@ -617,6 +628,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Sécurité sociale des pêcheurs | الضمان الاجتماعي للصيادين البحريين |  |
 | Sélection adverse (départs volontaires) | الانتقاء العكسي |  |
 | Séparation des opérations de commercialisation des hydrocarbures | فصل عمليات تسويق المحروقات |  |
+| Service de la dette | خدمة الدين |  |
 | Service fait | قاعدة الخدمة المنجزة |  |
 | Service national | الخدمة الوطنية |  |
 | Session de contrôle | دورة المراقبة |  |
@@ -642,6 +654,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Solde de réforme | منحة الإصلاح |  |
 | Sous-déclaration | التصريح بأقلّ من القيمة الحقيقية |  |
 | Sous-traitance de main-d'œuvre | مناولة اليد العاملة |  |
+| Soutenabilité de la dette | القدرة على تحمّل الدين |  |
 | Souveraineté fiscale | السيادة الجبائية |  |
 | Stage d'initiation à la vie professionnelle | تربص الإعداد للحياة المهنية | SIVP |
 | Stage de cotisation | مدة الانخراط الدنيا |  |

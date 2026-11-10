@@ -3754,6 +3754,29 @@
       }
     },
     {
+      "id": "minfin-dette-2025",
+      "type": "report",
+      "title": "Rapport sur la dette publique (annexe n° 7 au projet de loi de finances pour 2025)",
+      "title-short": "Ministère des Finances, rapport sur la dette publique, 2024",
+      "author": [
+        {
+          "literal": "Ministère des Finances"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      },
+      "URL": "http://www.gbo.tn/sites/default/files/2025-03/%D9%85%D9%84%D8%AD%D9%82%207%20%D8%A7%D9%84%D8%AF%D9%8A%D9%86%20%D8%A7%D9%84%D8%B9%D9%85%D9%88%D9%85%D9%8A.pdf",
+      "note": "citation-key: minfin-dette-2025\nDocument publié en arabe seulement ; intitulé français traduit. Intitulé arabe : « التقرير حول الدين العمومي ».",
+      "publisher": "Ministère des Finances",
+      "publisher-place": "Tunis",
+      "language": "ar"
+    },
+    {
       "id": "minfin-ep-2025",
       "type": "report",
       "note": "citation-key: minfin-ep-2025\nDocument publié en arabe seulement (« التقرير حول المنشآت العمومية ») ; intitulé français traduit. Fichier de 2 866 930 octets, consulté le 22/09/2026 (tunisia-data, sources/cnrps-tutelle-urls.csv).",
@@ -6639,6 +6662,93 @@
         ]
       },
       "note": "citation-key: imf-tunisia-art4-2010\nIMF Country Report No. 10/282. Annexe 5, « Tunisia's New National Accounts » : adoption début 2010 de comptes 1997-2008 conformes au SCN 1993, PIB nominal relevé d'environ 10 %, tableau des deux séries 2002-2008. Lu dans la copie des archives du web du 4 août 2011."
+    },
+    {
+      "id": "bct-dette-exterieure-2024",
+      "type": "report",
+      "title": "Rapport statistique de la dette extérieure 2024",
+      "title-short": "BCT, Dette extérieure 2024",
+      "author": [
+        {
+          "literal": "Banque centrale de Tunisie"
+        }
+      ],
+      "publisher": "Banque centrale de Tunisie",
+      "publisher-place": "Tunis",
+      "URL": "https://www.bct.gov.tn/bct/siteprod/documents/dette2024.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            10
+          ]
+        ]
+      },
+      "note": "citation-key: bct-dette-exterieure-2024\nTableau A14 « Encours de la dette extérieure à long terme : par devises » (en %, 2020-2024) et tableau A15 « Variation de l'encours : effet-change et effet-volume » (en MDT, 2020-2024). PDF à couche texte. URL vérifiée (HTTP 200) le 10 novembre 2026."
+    },
+    {
+      "id": "minfin-resultats-provisoires-2020-12",
+      "type": "report",
+      "title": "Résultats provisoires de l'exécution du budget de l'État à fin décembre 2020",
+      "title-short": "Exécution du budget, décembre 2020",
+      "author": [
+        {
+          "literal": "Ministère des Finances"
+        }
+      ],
+      "publisher": "Ministère des Finances",
+      "publisher-place": "Tunis",
+      "URL": "https://www.finances.gov.tn/sites/default/files/2021-04/R%C3%A9sultats%20provisoires%20de%20l%27ex%C3%A9cution%20du%20Budget%20%C3%A0%20fin%20D%C3%A9cembre%202020%20%281%29.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            10
+          ]
+        ]
+      },
+      "note": "citation-key: minfin-resultats-provisoires-2020-12\nTable « Équilibre du Budget de l'État » : « Intérêts de la Dette / فائدة الدين » (ligne 3.2) et « Solde Budgetaire / النتيجة », en millions de dinars, exécution 2016-2020. Colonnes d'exécution distinguées des colonnes LF/LFC. URL vérifiée (HTTP 200) le 10 novembre 2026."
+    },
+    {
+      "id": "minfin-resultats-provisoires-2024-12",
+      "type": "report",
+      "title": "Résultats provisoires de l'exécution du budget de l'État à fin décembre 2024",
+      "title-short": "Exécution du budget, décembre 2024",
+      "author": [
+        {
+          "literal": "Ministère des Finances"
+        }
+      ],
+      "publisher": "Ministère des Finances",
+      "publisher-place": "Tunis",
+      "URL": "https://www.finances.gov.tn/sites/default/files/2025-02/Décembre%202024_0.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            9
+          ]
+        ]
+      },
+      "note": "citation-key: minfin-resultats-provisoires-2024-12\nTable « Équilibre du Budget de l'État » : charge d'intérêt de la dette (ligne 6, « فائدة الدين ») et solde budgétaire (ligne III, « النتيجة »), en millions de dinars, exécution 2021-2024. Colonnes d'exécution (2024 « End December », 2023, 2022, 2021) distinguées des colonnes LF (2025, 2024). URL vérifiée (HTTP 200) le 9 novembre 2026."
+    },
+    {
+      "id": "wb-ids",
+      "type": "dataset",
+      "title": "International Debt Statistics",
+      "title-short": "Banque mondiale, IDS",
+      "author": [
+        {
+          "literal": "Banque mondiale"
+        }
+      ],
+      "publisher": "Banque mondiale",
+      "publisher-place": "Washington, D.C.",
+      "URL": "https://www.worldbank.org/en/programs/debt-statistics/ids",
+      "note": "citation-key: wb-ids\nDette extérieure publique et garantie publiquement (PPG) de la Tunisie, Debtor Reporting System. Indicateurs utilisés : DT.DOD.DPPG.CD (encours), DT.AMT.DPPG.CD (principal), DT.INT.DPPG.CD (intérêts), DT.TDS.DPPG.CD (service total), contrepartie WLD (tous créanciers). Séries téléchargées le 9 novembre 2026 par l'API https://api.worldbank.org/v2/sources/6/country/TUN/series/<code>/counterpart-area/WLD/time/all?format=json. Réponses conservées dans le dépôt tunisia-data, data/raw/banque-mondiale/."
     },
     {
       "id": "wb-wdi",

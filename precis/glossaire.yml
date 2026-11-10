@@ -12547,7 +12547,7 @@ entries:
     references: [minfin-dette-2025, loi-org-2019-15-lob]
     source_definition: {ref: minfin-dette-2025, locator: "p. 61"}
     source_traduction: {ref: minfin-dette-2025}
-    voir_aussi: [entreprises-publiques, epna]
+    voir_aussi: [dette-garantie, dette-publique, entreprises-publiques, epna]
     fr:
       terme: Garantie de l'État
       definition: >
@@ -12561,6 +12561,335 @@ entries:
     ar:
       terme: ضمان الدولة
       definition: ""
+      synonymes: []
+
+  # ── Dette publique : notions de l'annexe transversale (annexe-dette-publique.qmd) ──
+  # Termes AR : usage officiel/standard des rapports du ministère des Finances sur la
+  # dette publique (publiés en arabe, [@minfin-dette-2025]) et de la BCT — à confirmer
+  # à l'image sur l'édition arabe du Rapport sur la dette publique, d'où statut
+  # provisoire. source_definition pointe sur minfin-dette-2025 (présent dans
+  # entreprises_publiques/references.json, biblio de l'annexe) ; les deux notions
+  # analytiques (soutenabilite-dette, ecart-taux-croissance) restent sans source tant
+  # que le bibliographe n'a pas versé imf-2022-srdsf / blanchard-2019-public-debt.
+  - id: dette-publique
+    acronyme: null
+    statut: provisoire  # AR « الدين العام », usage du ministère des Finances ; à confirmer sur l'édition arabe du Rapport sur la dette publique
+    references: [minfin-dette-2025]
+    source_definition: {ref: minfin-dette-2025}
+    source_traduction: {ref: minfin-dette-2025}
+    voir_aussi: [dette-etat, dette-garantie, dette-interieure, dette-exterieure, service-dette, encours-dette]
+    fr:
+      terme: Dette publique
+      definition: >
+        Encours des emprunts de l'État que présente le ministère des Finances
+        dans son Rapport sur la dette publique, annexé au projet de loi de
+        finances : dette intérieure et dette extérieure du budget de l'État.
+        Sans autre précision, « la dette publique » désigne ce périmètre
+        budgétaire ; au sens large, il s'y ajoute la dette garantie par l'État.
+        Il reste distinct de la dette de l'ensemble des administrations
+        publiques au sens de la comptabilité nationale.
+      synonymes: []
+    ar:
+      terme: الدين العام
+      definition: >
+        رصيد قروض الدولة كما تعرضه وزارة المالية في تقريرها حول الدين العام
+        الملحق بمشروع قانون المالية: الدين الداخلي والدين الخارجي لميزانية
+        الدولة. ودون تحديد آخر، يدلّ «الدين العام» على هذا النطاق الميزانياتي؛
+        وبالمعنى الواسع يُضاف إليه الدين المضمون من الدولة. ويبقى متمايزًا
+        عن دين مجموع الإدارات العمومية في المحاسبة القومية.
+      synonymes: []
+
+  - id: dette-etat
+    acronyme: null
+    statut: provisoire  # AR « دين الدولة » / « دين الخزينة » ; à confirmer sur l'édition arabe
+    references: [minfin-dette-2025]
+    source_definition: {ref: minfin-dette-2025}
+    source_traduction: {ref: minfin-dette-2025}
+    voir_aussi: [dette-publique, dette-garantie, service-dette]
+    fr:
+      terme: Dette de l'État
+      definition: >
+        Dette contractée par le Trésor pour financer le déficit du budget de
+        l'État. Elle forme le cœur de la dette publique au sens budgétaire ;
+        la dette publique au sens large y ajoute la dette garantie par l'État.
+        À distinguer de la dette des collectivités locales, de la sécurité
+        sociale et de la dette propre des entreprises publiques.
+      synonymes: [Dette du Trésor]
+    ar:
+      terme: دين الدولة
+      definition: >
+        دين تتعاقد عليه الخزينة لتمويل عجز ميزانية الدولة. وهو جوهر الدين العام
+        بالمعنى الميزانياتي؛ ويُضاف إليه في المعنى الواسع الدين المضمون من
+        الدولة. يُميَّز عن دين الجماعات المحلية والضمان الاجتماعي والدين
+        الذاتي للمنشآت العمومية.
+      synonymes: [دين الخزينة]
+
+  - id: dette-interieure
+    acronyme: null
+    statut: provisoire  # AR « الدين الداخلي » ; à confirmer sur l'édition arabe
+    references: [minfin-dette-2025]
+    source_definition: {ref: minfin-dette-2025}
+    source_traduction: {ref: minfin-dette-2025}
+    voir_aussi: [dette-exterieure, dette-publique, encours-dette]
+    fr:
+      terme: Dette intérieure
+      definition: >
+        Dette émise sur le marché local, généralement libellée en dinars
+        (bons du Trésor, emprunts nationaux). Elle se distingue de la dette
+        extérieure par le marché d'émission et la devise, non par la
+        nationalité du prêteur.
+      synonymes: [Dette intérieure publique]
+    ar:
+      terme: الدين الداخلي
+      definition: >
+        دين يُصدَر في السوق المحلية، وغالبًا ما يكون مقوَّمًا بالدينار (رقاع
+        الخزينة، الاقتراضات الوطنية). يتمايز عن الدين الخارجي بسوق
+        الإصدار والعملة، لا بجنسية المُقرِض.
+      synonymes: [الدين العمومي الداخلي]
+
+  - id: dette-exterieure
+    acronyme: null
+    statut: provisoire  # AR « الدين الخارجي » ; à confirmer sur l'édition arabe
+    references: [minfin-dette-2025]
+    source_definition: {ref: minfin-dette-2025}
+    source_traduction: {ref: minfin-dette-2025}
+    voir_aussi: [dette-interieure, dette-publique, effet-change, encours-dette]
+    fr:
+      terme: Dette extérieure
+      definition: >
+        Dette contractée auprès de bailleurs ou sur les marchés internationaux,
+        généralement en devises. Le périmètre varie selon la source et ne doit
+        pas être confondu : dette extérieure publique et garantie (PPG, en
+        dollars) ; dette extérieure à moyen et long terme de l'ensemble des
+        secteurs (État, banques, entreprises, en dinars) ; dette extérieure de
+        l'État au sens budgétaire ; dette extérieure de l'État au sens
+        monétaire (BCT). La composition par devise et l'effet-change portent sur
+        le total tous secteurs, non sur la seule dette de l'État.
+      synonymes: []
+    ar:
+      terme: الدين الخارجي
+      definition: >
+        دين يُتعاقد عليه لدى المموّلين أو في الأسواق الدولية، وغالبًا ما يكون
+        بالعملة. يختلف نطاقه باختلاف المصدر ولا ينبغي الخلط بينها: الدين
+        الخارجي العمومي والمضمون (بالدولار)؛ الدين الخارجي متوسّط وطويل
+        الأجل لمجموع القطاعات (الدولة والبنوك والمنشآت، بالدينار)؛ الدين
+        الخارجي للدولة بالمعنى الميزانياتي؛ وبالمعنى النقدي (البنك المركزي).
+        التركيبة حسب العملة وأثر سعر الصرف يطالان المجموع لكلّ القطاعات،
+        لا دين الدولة وحده.
+      synonymes: []
+
+  - id: encours-dette
+    acronyme: null
+    statut: provisoire  # AR « رصيد الدين » / « الدين القائم » ; à confirmer sur l'édition arabe
+    references: [minfin-dette-2025]
+    source_definition: {ref: minfin-dette-2025}
+    voir_aussi: [service-dette, amortissement-dette, effet-change]
+    fr:
+      terme: Encours de la dette
+      definition: >
+        Stock de dette dû à une date donnée, en pratique la fin d'année.
+        Il s'oppose au service de la dette, qui est un flux annuel : l'encours
+        mesure ce qui reste dû, le service ce qui est payé dans l'année. On
+        n'additionne pas un encours et un service, et on ne les trace pas sur
+        le même graphique.
+      synonymes: [Encours, Stock de dette]
+    ar:
+      terme: رصيد الدين
+      definition: >
+        مخزون الدين المستحقّ في تاريخ معيّن، عادةً نهاية السنة. يقابل خدمة
+        الدين التي هي تدفّق سنوي: الرصيد يقيس ما بقي مستحقًّا، والخدمة ما
+        يُدفَع خلال السنة. ولا يُجمع رصيد وخدمة، ولا يُرسمان على الرسم نفسه.
+      synonymes: [الدين القائم]
+
+  - id: service-dette
+    acronyme: null
+    statut: provisoire  # AR « خدمة الدين », usage standard ; à confirmer sur l'édition arabe
+    references: [minfin-dette-2025]
+    source_definition: {ref: minfin-dette-2025}
+    source_traduction: {ref: minfin-dette-2025}
+    voir_aussi: [encours-dette, amortissement-dette, cout-apparent-dette]
+    fr:
+      terme: Service de la dette
+      definition: >
+        Flux annuel des paiements au titre de la dette : amortissement du
+        principal plus intérêts. Il s'oppose à l'encours, qui est un stock à
+        une date. La nomenclature budgétaire éclate ses deux composantes :
+        les intérêts parmi les charges de fonctionnement, le principal parmi
+        les opérations financières.
+      synonymes: []
+    ar:
+      terme: خدمة الدين
+      definition: >
+        التدفّق السنوي لمدفوعات الدين: تسديد أصل الدين مضافًا إليه الفوائد.
+        يقابل الرصيد الذي هو مخزون في تاريخ معيّن. وتفصل التبويبة الميزانياتية
+        مكوّنيه: الفوائد ضمن نفقات التسيير، وأصل الدين ضمن العمليات المالية.
+      synonymes: []
+
+  - id: amortissement-dette
+    acronyme: null
+    statut: provisoire  # AR « تسديد أصل الدين » ; à confirmer sur l'édition arabe
+    references: [minfin-dette-2025]
+    source_definition: {ref: minfin-dette-2025}
+    voir_aussi: [service-dette, encours-dette]
+    fr:
+      terme: Amortissement de la dette
+      definition: >
+        Remboursement du principal emprunté, hors intérêts. C'est, avec la
+        charge d'intérêt, l'une des deux composantes du service de la dette ;
+        son versement réduit l'encours.
+      synonymes: [Amortissement du principal, Principal]
+    ar:
+      terme: تسديد أصل الدين
+      definition: >
+        سداد أصل المبلغ المقترَض، دون الفوائد. وهو، إلى جانب أعباء الفائدة،
+        أحد مكوّنَي خدمة الدين؛ ويؤدّي دفعه إلى خفض الرصيد.
+      synonymes: [سداد أصل الدين]
+
+  - id: cout-apparent-dette
+    acronyme: null
+    statut: provisoire  # notion analytique ; AR « الكلفة الظاهرة للدين »
+    references: [minfin-dette-2025]
+    voir_aussi: [service-dette, ecart-taux-croissance, soutenabilite-dette]
+    fr:
+      terme: Coût apparent de la dette
+      definition: >
+        Charge d'intérêt de l'année rapportée à l'encours de dette de l'année
+        précédente ; mesure ex post du coût moyen du stock, distincte du taux
+        contractuel (nominal) des emprunts. Il sert de taux « r » dans la
+        dynamique r − g de la soutenabilité.
+      synonymes: [Taux apparent de la dette]
+    ar:
+      terme: الكلفة الظاهرة للدين
+      definition: >
+        أعباء الفائدة خلال السنة منسوبةً إلى رصيد الدين في نهاية السنة
+        السابقة؛ وهي قياس بَعدي للكلفة المتوسّطة للمخزون، تتمايز عن السعر
+        التعاقدي (الاسمي) للقروض. تُستخدم بوصفها سعر الفائدة «r» في
+        ديناميكية r − g.
+      synonymes: [السعر الظاهر للدين]
+
+  - id: soutenabilite-dette
+    acronyme: null
+    statut: provisoire  # notion analytique (DSA) ; source canonique imf-2022-srdsf / blanchard-2019 à créer par le bibliographe ; AR « القدرة على تحمّل الدين »
+    references: []
+    voir_aussi: [ecart-taux-croissance, cout-apparent-dette, dette-publique]
+    fr:
+      terme: Soutenabilité de la dette
+      definition: >
+        Capacité à stabiliser le ratio dette/PIB sans ajustement budgétaire
+        insoutenable ni défaut : propriété de dynamique, non de stock à une
+        date. Elle s'apprécie par la trajectoire du ratio, que résument l'écart
+        r − g (coût apparent de la dette moins croissance du PIB nominal), le
+        solde primaire et le besoin brut de financement ; c'est l'objet de
+        l'analyse de soutenabilité de la dette (DSA). Il n'existe pas de seuil
+        dette/PIB universel.
+      synonymes: [Soutenabilité de la dette publique]
+    ar:
+      terme: القدرة على تحمّل الدين
+      definition: >
+        القدرة على تثبيت نسبة الدين إلى الناتج الداخلي الخام دون تعديل
+        ميزانياتي غير محتمَل ودون تخلّف عن السداد؛ وهي خاصية دينامية لا
+        خاصية مخزون في تاريخ. تُقدَّر بمسار النسبة الذي يلخّصه الفارق r − g
+        (الكلفة الظاهرة للدين ناقص نمو الناتج الاسمي) والرصيد الأوّلي والحاجة
+        الخام للتمويل؛ وهي موضوع تحليل القدرة على تحمّل الدين (DSA). ولا
+        يوجد سقف كوني لنسبة الدين إلى الناتج.
+      synonymes: [استدامة الدين]
+
+  - id: ecart-taux-croissance
+    acronyme: null
+    statut: provisoire  # notion analytique ; AR descriptif « الفارق بين سعر الفائدة ونسبة النمو »
+    references: []
+    voir_aussi: [soutenabilite-dette, cout-apparent-dette]
+    fr:
+      terme: Écart taux-croissance
+      definition: >
+        Différence r − g entre le coût apparent de la dette (r) et le taux de
+        croissance du PIB nominal (g). Quand r > g, le ratio dette/PIB tend à
+        croître à solde primaire nul (effet « boule de neige ») ; quand r < g,
+        la croissance dilue la dette et le ratio tend à décroître. Grandeurs
+        nominales : une inflation élevée gonfle g sans que la croissance réelle
+        dépasse le coût réel de la dette.
+      synonymes: [Différentiel r moins g, Effet boule de neige]
+    ar:
+      terme: الفارق بين سعر الفائدة ونسبة النمو
+      definition: >
+        الفارق r − g بين الكلفة الظاهرة للدين (r) ونسبة نمو الناتج الداخلي
+        الاسمي (g). فحين يكون r أكبر من g تميل نسبة الدين إلى الناتج إلى
+        الارتفاع عند رصيد أوّلي معدوم (أثر «كرة الثلج»)؛ وحين يكون r أصغر
+        من g يخفّف النمو الدين وتميل النسبة إلى الانخفاض. والمقادير اسمية:
+        ارتفاع التضخّم يرفع g دون أن يتجاوز النمو الحقيقي الكلفة الحقيقية للدين.
+      synonymes: [أثر كرة الثلج]
+
+  - id: effet-change
+    acronyme: null
+    statut: provisoire  # notion analytique (reportée par la BCT) ; AR « أثر سعر الصرف »
+    references: [minfin-dette-2025]
+    voir_aussi: [effet-volume, dette-exterieure, encours-dette]
+    fr:
+      terme: Effet-change
+      definition: >
+        Variation de l'encours de dette en dinars due aux seuls mouvements du
+        taux de change, pour la part libellée en devises, sans emprunt ni
+        remboursement nouveau. Il porte sur la dette extérieure à moyen et long
+        terme de l'ensemble des secteurs (encours total, tous secteurs), et
+        non sur la seule dette extérieure de l'État. La BCT le reporte et le
+        sépare de l'effet-volume.
+      synonymes: [Effet de change, Effet de valorisation]
+    ar:
+      terme: أثر سعر الصرف
+      definition: >
+        تغيّر رصيد الدين بالدينار الناجم فقط عن تحرّكات سعر الصرف، بالنسبة
+        للجزء المقوَّم بالعملة، دون اقتراض أو تسديد جديد. يطال الدين الخارجي
+        متوسّط وطويل الأجل لمجموع القطاعات (الرصيد الإجمالي)، لا دين
+        الدولة وحده؛ ويفصله البنك المركزي عن أثر التدفّقات.
+      synonymes: [أثر إعادة التقييم]
+
+  - id: effet-volume
+    acronyme: null
+    statut: provisoire  # notion analytique ; AR « أثر التدفّقات »
+    references: [minfin-dette-2025]
+    voir_aussi: [effet-change, encours-dette, service-dette]
+    fr:
+      terme: Effet-volume
+      definition: >
+        Variation de l'encours de dette due aux flux d'emprunt — tirages nets
+        des remboursements —, par opposition à l'effet-change, qui ne tient
+        qu'à la réévaluation en dinars de la part en devises. Les deux peuvent
+        être de signes opposés une même année.
+      synonymes: [Effet de volume, Effet des flux]
+    ar:
+      terme: أثر التدفّقات
+      definition: >
+        تغيّر رصيد الدين الناجم عن تدفّقات الاقتراض — السحوبات صافيةً من
+        التسديدات —، في مقابل أثر سعر الصرف الذي لا ينجم إلّا عن إعادة
+        تقييم الجزء المقوَّم بالعملة بالدينار. وقد يكون الأثران متعاكسي الإشارة
+        في السنة نفسها.
+      synonymes: [أثر الحجم]
+
+  - id: dette-garantie
+    acronyme: null
+    statut: provisoire  # AR « الدين المضمون » ; à confirmer sur l'édition arabe
+    references: [minfin-dette-2025, loi-org-2019-15-lob]
+    source_definition: {ref: loi-org-2019-15-lob, locator: "art. 45"}
+    source_traduction: {ref: minfin-dette-2025}
+    voir_aussi: [garantie-etat, entreprises-publiques, dette-publique]
+    fr:
+      terme: Dette garantie
+      definition: >
+        Encours de la dette d'entreprises, d'établissements publics ou de
+        banques publiques dont l'État garantit le remboursement : passif
+        éventuel, dette « au sens large » qui ne pèse sur le budget qu'en cas
+        de défaut du débiteur garanti. À distinguer du flux des garanties
+        accordées dans l'année, dont la loi de finances fixe le plafond (loi
+        organique du budget n° 2019-15, article 45).
+      synonymes: [Encours de la dette garantie]
+    ar:
+      terme: الدين المضمون
+      definition: >
+        رصيد دين المنشآت والمؤسّسات العمومية والبنوك العمومية الذي تضمن
+        الدولة تسديده: التزام محتمَل، دين بالمعنى الواسع لا يُثقِل الميزانية
+        إلّا عند تخلّف المدين المضمون عن السداد. يُميَّز عن تدفّق الضمانات
+        المُسنَدة خلال السنة، التي يضبط قانون المالية سقفها (القانون الأساسي
+        للميزانية عدد 2019-15، الفصل 45).
       synonymes: []
 
   - id: participation-publique

@@ -3745,6 +3745,27 @@
       }
     },
     {
+      "id": "minfin-dette-2025",
+      "type": "report",
+      "note": "citation-key: minfin-dette-2025",
+      "publisher": "وزارة المالية",
+      "publisher-place": "تونس",
+      "title": "التقرير حول الدين العمومي (الملحق 7 لمشروع قانون المالية لسنة 2025)",
+      "URL": "http://www.gbo.tn/sites/default/files/2025-03/%D9%85%D9%84%D8%AD%D9%82%207%20%D8%A7%D9%84%D8%AF%D9%8A%D9%86%20%D8%A7%D9%84%D8%B9%D9%85%D9%88%D9%85%D9%8A.pdf",
+      "author": [
+        {
+          "literal": "وزارة المالية"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      }
+    },
+    {
       "id": "minfin-ep-2025",
       "type": "report",
       "note": "citation-key: minfin-ep-2025",
@@ -6584,6 +6605,93 @@
         ]
       },
       "note": "citation-key: imf-tunisia-art4-2010\nIMF Country Report No. 10/282. Annexe 5, « Tunisia's New National Accounts » : adoption début 2010 de comptes 1997-2008 conformes au SCN 1993, PIB nominal relevé d'environ 10 %, tableau des deux séries 2002-2008. Lu dans la copie des archives du web du 4 août 2011."
+    },
+    {
+      "id": "bct-dette-exterieure-2024",
+      "type": "report",
+      "title": "التقرير الإحصائي للدين الخارجي 2024",
+      "title-short": "البنك المركزي، الدين الخارجي 2024",
+      "author": [
+        {
+          "literal": "البنك المركزي التونسي"
+        }
+      ],
+      "publisher": "البنك المركزي التونسي",
+      "publisher-place": "تونس",
+      "URL": "https://www.bct.gov.tn/bct/siteprod/documents/dette2024.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            10
+          ]
+        ]
+      },
+      "note": "citation-key: bct-dette-exterieure-2024\nجدول A14 (الأصل القائم حسب العملة، 2020-2024) وجدول A15 (أثر الصرف وأثر الحجم، بالمليون دينار)."
+    },
+    {
+      "id": "minfin-resultats-provisoires-2020-12",
+      "type": "report",
+      "title": "نتائج وقتية لتنفيذ ميزانية الدولة إلى موفى ديسمبر 2020",
+      "title-short": "تنفيذ الميزانية، ديسمبر 2020",
+      "author": [
+        {
+          "literal": "وزارة المالية"
+        }
+      ],
+      "publisher": "وزارة المالية",
+      "publisher-place": "تونس",
+      "URL": "https://www.finances.gov.tn/sites/default/files/2021-04/R%C3%A9sultats%20provisoires%20de%20l%27ex%C3%A9cution%20du%20Budget%20%C3%A0%20fin%20D%C3%A9cembre%202020%20%281%29.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            10
+          ]
+        ]
+      },
+      "note": "citation-key: minfin-resultats-provisoires-2020-12\nجدول « توازن ميزانية الدولة »: فائدة الدين والنتيجة، بالمليون دينار، تنفيذ 2016-2020."
+    },
+    {
+      "id": "minfin-resultats-provisoires-2024-12",
+      "type": "report",
+      "title": "نتائج وقتية لتنفيذ ميزانية الدولة إلى موفى ديسمبر 2024",
+      "title-short": "تنفيذ الميزانية، ديسمبر 2024",
+      "author": [
+        {
+          "literal": "وزارة المالية"
+        }
+      ],
+      "publisher": "وزارة المالية",
+      "publisher-place": "تونس",
+      "URL": "https://www.finances.gov.tn/sites/default/files/2025-02/Décembre%202024_0.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            9
+          ]
+        ]
+      },
+      "note": "citation-key: minfin-resultats-provisoires-2024-12\nجدول « توازن ميزانية الدولة »: فائدة الدين (السطر 6) والنتيجة (السطر III)، بالمليون دينار، تنفيذ 2021-2024. أعمدة التنفيذ مميّزة عن أعمدة قانون المالية."
+    },
+    {
+      "id": "wb-ids",
+      "type": "dataset",
+      "title": "International Debt Statistics",
+      "title-short": "البنك الدولي، IDS",
+      "author": [
+        {
+          "literal": "البنك الدولي"
+        }
+      ],
+      "publisher": "البنك الدولي",
+      "publisher-place": "Washington, D.C.",
+      "URL": "https://www.worldbank.org/en/programs/debt-statistics/ids",
+      "note": "citation-key: wb-ids\nDette extérieure publique et garantie publiquement (PPG) de la Tunisie, Debtor Reporting System. Indicateurs : DT.DOD.DPPG.CD, DT.AMT.DPPG.CD, DT.INT.DPPG.CD, DT.TDS.DPPG.CD, contrepartie WLD. Séries téléchargées le 9 novembre 2026 par l'API https://api.worldbank.org/v2/sources/6/country/TUN/series/<code>/counterpart-area/WLD/time/all?format=json."
     },
     {
       "id": "wb-wdi",
