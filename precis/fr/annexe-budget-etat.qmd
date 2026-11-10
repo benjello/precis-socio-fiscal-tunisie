@@ -343,14 +343,14 @@ figtools.figure_tabs(
 
 Le voté n'épuise pas le sujet : chaque mission rend compte de son **exécution** dans un rapport
 annuel de performance, et c'est là — faute de série agrégée publiée — que se lit la dépense
-effective par mission. La @fig-bud-missions-execute réunit le dépouillement de près de 170 de ces
-rapports [@gbo-rap-missions] : les crédits payés des grandes missions de 2016 à 2023, puis leur
+effective par mission. La @fig-bud-missions-execute réunit ce que près de 170 de ces
+rapports donnent [@gbo-rap-missions] : les crédits payés des grandes missions de 2016 à 2023, puis leur
 rapport aux crédits proposés. Trois limites tiennent à la source même. Les rapports des missions
 de l'**Intérieur**, de la **Défense** et de la présidence de la République **ne sont pas
 publiés** : la série est trouée là. Avant la gestion 2020, les rapports ne donnent que les
 paiements (ancienne nomenclature) ; depuis, l'engagé et le payé, hors ressources propres des
 établissements. Et chaque valeur vient d'un rapport distinct, aux pratiques inégales — le
-dépouillement, documenté ligne à ligne, garde la trace des incohérences d'impression
+relevé, documenté ligne à ligne, garde la trace des incohérences d'impression
 rencontrées.
 
 ```{python}
