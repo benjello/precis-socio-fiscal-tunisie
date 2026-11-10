@@ -464,15 +464,23 @@ L'article 24 pose la règle de droit commun — excédent des recettes totales d
 
 Il n'y a donc, pour la détermination de l'assiette de cette catégorie, **ni taux, ni barème, ni plafond dans le code** : aucun paramètre légal n'y est chiffré, et il n'existe aucune série d'abattement à retracer. La détermination de l'assiette est renvoyée à une procédure administrative d'expertise et à des barèmes régionaux. La seule modification apportée à l'article 24 depuis 1990 est l'insertion du renvoi aux articles 10 à 20 pour les exploitants qui tiennent une comptabilité, opérée par l'article 76 de la loi de finances pour 1998.
 
+**Les barèmes existent, hors de toute forme réglementaire : des notes communes de l'administration fiscale, campagne par campagne.** Une commission mixte — représentants du ministère de l'Agriculture, des Ressources hydrauliques et de la Pêche et de l'Union tunisienne de l'agriculture et de la pêche — arrête le revenu net unitaire de la campagne, que la Direction générale des impôts publie en note commune ; le revenu ainsi fixé est un **minimum d'assiette**, que l'administration peut réviser à la hausse si elle dispose d'éléments. Trois campagnes en donnent la mesure :
+
+- **oléicole 2018/2019** (revenus 2019) : le revenu net par pied d'olivier est arrêté **en perte** dans les trois régions — 6,657 dinars de perte au Nord, 12,017 au Centre, 0,756 au Sud —, soit une assiette forfaitaire nulle [@dgi-nc-15-2020] ;
+- **céréalière 2019/2020** (revenus 2020) : seul le blé dur de la zone 1 dégage un revenu, 10,001 dinars l'hectare ; le blé tendre, l'orge et les autres zones sont en perte, l'annexe de la note classant les délégations de chaque gouvernorat en trois zones [@dgi-nc-15-2021] ;
+- **oléicole 2024/2025** (revenus 2025) : la campagne redevient largement positive — par pied d'olivier, 16,490 dinars en irrigué et 4,050 en pluvial au Nord, 64,010 et 33,280 au Centre et au Sahel, 29,520 et 17,270 au Sud [@dgi-nc-15-2026].
+
+Ces barèmes ne passent ni par décret ni par arrêté : la série complète, campagne par campagne, n'est lisible que dans la collection des notes communes ; ces trois campagnes en donnent l'état ici.
+
 Un avantage chiffré porte en revanche sur le revenu une fois déterminé. Depuis le 1^er^ avril 2017, les revenus de l'agriculture et de la pêche sont déduits en totalité pendant dix ans, puis à hauteur des deux tiers [@loi-avantages-fiscaux-2017, art. 1 (articles 65 et 66 nouveaux du code)]. La déduction totale de dix ans figurait auparavant au code d'incitations aux investissements de 1993 [@loi-93-120-code-incitations, art. 30] ; les deux états sont rapprochés au chapitre des régimes d'incitation à l'investissement (@tbl-df-1993-2017).
 
-<!-- TODO (documentaliste) : les barèmes régionaux d'évaluation forfaitaire agricole prévus par
-l'article 24 sont susceptibles de figurer dans des arrêtés du ministre des finances ; aucun n'a été
-identifié à ce jour. Point d'entrée : PDFs-legislation-tunisie/data/iort/textes/md/. Recherche du
-9 novembre 2026 : les 32 130 textes du corpus iort (grep « évaluation forfaitaire », « forfaitaire +
-agriculture ») et la recherche plein texte de jort_cache.db ne rendent que les lois de finances déjà
-citées, aucun arrêté de barème. Tant qu'aucun arrêté n'est produit, l'absence de paramètre chiffré
-est énoncée telle quelle. -->
+<!-- TODO (documentaliste) : RÉSOLU SUR LE MÉCANISME (10 novembre 2026) — les barèmes de l'article 24
+ne passent ni par décret ni par arrêté (recherches du 9 novembre : corpus iort 32 130 textes et
+jort_cache.db, néant), mais par des NOTES COMMUNES de la DGI, campagne par campagne : trois sont
+dépouillées ci-dessus (n° 15/2020 oléicole, n° 15/2021 céréalière, n° 15/2026 oléicole, édition arabe
+seule). RESTE : inventorier la collection complète des notes de barèmes (autres campagnes et autres
+spéculations — le corpus Notes_Communes en porte peut-être d'autres sous d'autres numéros) et
+vérifier les URL jibaya.tn des trois notes citées. -->
 
 ### Traitements, salaires, indemnités, pensions et rentes viagères (catégorie IV) {#sec-irpp-salaires}
 
