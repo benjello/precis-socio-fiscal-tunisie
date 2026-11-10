@@ -634,11 +634,20 @@ liste qui suit le tableau, citations comprises. Restent :
 - **IRPP** : le minimum d'impôt de l'article 44 § II et le régime forfaitaire sont écrits.
   Le régime forfaitaire (`#sec-irpp-forfait`) couvre depuis le 4 octobre 2026 toute la
   chronologie 1990-2026, chaque modificatif lu au JORT (note
-  `docs/notes/fiscalite-regime-forfaitaire.md`). Y restent : la **longue période** au-delà de 2013 —
-  `tbl-forfait-effectifs` ne couvre que 2004 et 2009-2013, d'après le diaporama du ministère des
-  Finances d'août 2013 (`minfin-cnf-2013-forfait`, lu à l'image) ; les autres chiffres de la
-  collection `tunisia-data` (tranches de chiffre d'affaires, secteurs, comparaison avec le réel)
-  sont lisibles mais non encore relus ; la **relecture
+  `docs/notes/fiscalite-regime-forfaitaire.md`).
+  **Chantier « indépendants » du 9-10 novembre 2026 (PR #788 et #789)** : le **régime de
+  l'auto-entrepreneur** a désormais son domicile fiscal (`#sec-irpp-auto-entrepreneur` — décret-loi
+  2020-33 lu à l'image en édition arabe, refonte LF 2023, ajustements LF 2025, prédécesseur de
+  2019 ; TODO : décrets d'application non identifiés, chiffres d'adhésion à chercher) ; le
+  **recouvrement des indépendants** est écrit (`#sec-irpp-recouvrement` — acomptes art. 51,
+  retenues imputables art. 52, avances 51 bis/quater, vérifiés au code consolidé 2023 ; l'ancien
+  TODO « art. 53 » est clos, les acomptes sont à l'art. 51) ; la **longue période** du forfait est
+  prolongée à 2020 par l'étude PNUD-OIT 2022 (effectifs 2010-2020, rendement 2020 ; restent le
+  produit année par année après 2013 et tout après 2020) ; les **barèmes agricoles** restent
+  introuvables après recherche datée du corpus iort (TODO en place). Y restent aussi :
+  les autres chiffres de la
+  collection `tunisia-data` (tranches de chiffre d'affaires, secteurs, comparaison avec le réel),
+  lisibles mais non encore relus ; la **relecture
   arabophone** de l'article 91 de la LF 2026 (lu à l'image, édition arabe seule parue)  ; le **numéro** de la note commune sur l'article 16
   de la LF 2018 ; les **tableaux faits main** `tbl-irpp-forfait` et `tbl-forfait-annexe-2`, à
   engendrer quand les paramètres seront sourcés. Textes tous lisibles au corpus local
