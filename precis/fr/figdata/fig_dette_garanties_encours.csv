@@ -1,0 +1,15 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-11-10
+# séries (tunisia_data) : garanties-etat
+# sources (citation) : @minfin-dette-2022, @minfin-dette-2025, @minfin-transferts-garanties
+# fiches : sources/entreprises-publiques.md
+# méthode/hypothèses : TROIS GRANDEURS À NE PAS CONFONDRE : plafond (paramètre légal), garanties accordées (flux), encours garanti (stock). `periode` distingue l'année, le premier semestre (« -S1 », flux) et la fin juin (« -06 », encours estimé) : NE PAS TRACER UN SEMESTRE COMME UNE ANNÉE. AUCUNE ÉDITION PRÉFÉRÉE : 2019 et 2020 figurent dans les deux annexes 7, d'accord sur l'encours ; trois divergences gardées (`divergence_entre_editions`) — garanties de 2020, 4 603,4 (annexe 7 ; annexe 8 LF 2022 et LF 2023) et 4 603,7 (annexe 8 LF 2024) ; plafond de 2020 après loi de finances rectificative, 7 500 (traduction française de l'annexe 8 LF 2021) et 7 000 (éditions arabes) — NON TRANCHÉ, le texte de la loi rectificative n'a pas été lu ; encours de 2020 en % du PIB, 14,70 (LF 2022) puis 14,4 (LF 2025), PIB révisé sans que la base soit dite. Plafond de 2019 : 4 500 en loi initiale, 4 790 après loi complémentaire. Écarts imprimés déclarés : extérieur + intérieur dépasse le total de 0,1 au premier semestre 2024 ; les trois banques font 1 357,3 pour un total imprimé de 1 357,7 en 2019. Les garanties de l'audit des banques sont données pour un an au titre des engagements de l'année écoulée. LU À L'IMAGE. Rien avant 2016 ; plafonds des lois de finances antérieures non dépouillés.
+# note : L'encours de la dette garantie par l'État, part intérieure et part extérieure, 2016-2023
+annee,encours_exterieur,encours_interieur,encours_total
+2016,9261.9,2007.6,11269.5
+2017,11302.8,2369.0,13671.8
+2018,13719.2,2994.2,16713.4
+2019,12714.5,3987.5,16702.0
+2020,13213.5,3994.6,17208.1
+2021,12209.3,6532.7,18742.0
+2022,11770.6,8592.5,20363.1
+2023,12539.8,8843.5,21383.3

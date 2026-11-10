@@ -1,0 +1,62 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-11-09
+# séries (tunisia_data) : dette-exterieure-echeancier
+# sources (citation) : @wb-ids
+# fiches : docs/dette-exterieure-echeancier.md
+# méthode/hypothèses : ÉCHÉANCIER = DETTE DÉJÀ CONTRACTÉE. Les années `projeté` (au-delà de la dernière année d'encours renseigné) donnent le service du stock EXISTANT, qui décroît mécaniquement car il n'inclut aucun emprunt futur : ce n'est pas une prévision du service total à venir. PÉRIMÈTRE PPG EXTÉRIEUR SEUL : ni la dette privée non garantie, ni la dette intérieure en dinars (bons du Trésor). EN DOLLARS COURANTS : un encours extérieur en devises se réévalue en dinars avec la dépréciation, sans emprunt nouveau ; aucune conversion en dinars n'est faite ici. Source Debtor Reporting System de la Banque mondiale (déclarations du pays), niveau créancier au plus fin — jamais l'emprunt individuel. Les fichiers bruts ne sont pas versionnés ; un nouveau téléchargement peut changer les valeurs. Voir docs/dette-exterieure-echeancier.md.
+# note : Le coût apparent de la dette extérieure publique et garantie : intérêts de l'année rapportés à l'encours de l'année précédente, 1971-2025
+annee,interets_MUSD,encours_MUSD,cout_apparent_pct
+1971,20.3,624.7,3.72
+1972,23.4,699.1,3.75
+1973,27.8,817.8,3.98
+1974,30.5,935.3,3.73
+1975,35.0,1034.8,3.74
+1976,37.2,1197.7,3.59
+1977,56.3,1893.1,4.7
+1978,96.8,2452.1,5.11
+1979,160.3,3018.9,6.54
+1980,212.1,3217.1,7.03
+1981,207.9,3316.3,6.46
+1982,204.8,3503.9,6.18
+1983,196.9,3819.7,5.62
+1984,237.4,3706.5,6.22
+1985,233.1,4457.3,6.29
+1986,289.2,5282.9,6.49
+1987,327.2,6066.8,6.19
+1988,363.0,5953.8,5.98
+1989,367.3,6103.8,6.17
+1990,384.4,6661.6,6.3
+1991,371.2,7110.5,5.57
+1992,390.2,7201.9,5.49
+1993,411.6,7417.0,5.72
+1994,454.4,8007.1,6.13
+1995,477.9,9023.5,5.97
+1996,499.2,9377.8,5.53
+1997,469.3,9334.0,5.0
+1998,487.6,9495.1,5.22
+1999,492.3,9479.7,5.18
+2000,479.1,8888.3,5.05
+2001,418.7,9112.7,4.71
+2002,468.6,10978.9,5.14
+2003,527.7,13240.1,4.81
+2004,556.0,14599.6,4.2
+2005,583.9,13101.9,4.0
+2006,601.1,13585.4,4.59
+2007,621.5,14700.3,4.57
+2008,632.5,14634.9,4.3
+2009,600.4,15034.8,4.1
+2010,547.8,14858.5,3.64
+2011,560.4,15105.5,3.77
+2012,502.6,16673.6,3.33
+2013,488.6,16932.0,2.93
+2014,547.7,16999.0,3.23
+2015,444.5,18107.3,2.61
+2016,461.8,18606.9,2.55
+2017,455.2,22272.9,2.45
+2018,547.6,22557.1,2.46
+2019,573.3,23814.3,2.54
+2020,583.4,25815.4,2.45
+2021,554.7,23191.9,2.15
+2022,530.3,21654.5,2.29
+2023,553.5,22091.4,2.56
+2024,649.2,20842.6,2.94
+2025,602.8,21007.3,2.89

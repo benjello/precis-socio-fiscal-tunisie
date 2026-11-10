@@ -1,0 +1,32 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-11-10
+# séries (tunisia_data) : dette-publique-interieur-exterieur
+# sources (citation) : @bct-ra
+# fiches : docs/finances-publiques-indicateurs.md
+# méthode/hypothèses : PÉRIMÈTRE BUDGÉTAIRE (dette publique du ministère des Finances) : le total concorde avec finances-publiques-indicateurs (écart médian 0,4 MDT). À NE PAS CONFONDRE avec l'« endettement intérieur/extérieur de l'État » au sens MONÉTAIRE (financement de l'économie, série dette-etat-interieur-exterieur), de périmètre plus large. Série chaînée de rapports annuels successifs : sur une année commune, le rapport le plus récent l'emporte ; le dernier millésime (2026) est une prévision de loi de finances. Valeurs des exercices récents provisoires, révisées d'un rapport à l'autre.
+# note : L'encours de la dette publique, part intérieure et part extérieure : niveaux et parts, 2000-2025
+annee,etat_interieur_MDT,etat_exterieur_MDT,etat_total_MDT,int_pct,ext_pct
+2000,6481.0,10023.0,16504.0,39.3,60.7
+2001,6774.0,11152.0,17926.0,37.8,62.2
+2002,6714.0,11688.0,18403.0,36.5,63.5
+2003,6934.0,12529.0,19463.0,35.6,64.4
+2004,7707.0,13208.0,20916.0,36.8,63.2
+2005,7923.0,14026.0,21949.0,36.1,63.9
+2006,8936.0,13286.0,22221.0,40.2,59.8
+2007,9529.0,13300.0,22829.0,41.7,58.3
+2008,9367.0,14560.0,23926.0,39.1,60.9
+2009,10474.0,14716.0,25190.0,41.6,58.4
+2010,10089.0,15551.0,25640.0,39.3,60.7
+2011,12078.0,16701.0,28780.0,42.0,58.0
+2012,11706.0,19714.0,31420.0,37.3,62.7
+2013,15024.0,19978.0,35002.0,42.9,57.1
+2014,16273.0,24781.0,41054.0,39.6,60.4
+2015,17028.0,29894.0,46922.0,36.3,63.7
+2016,19508.0,36414.0,55922.0,34.9,65.1
+2017,20997.0,46833.0,67830.0,31.0,69.0
+2018,21132.0,60214.0,81345.0,26.0,74.0
+2019,24727.0,58606.0,83334.0,29.7,70.3
+2020,31682.0,61277.0,92959.0,34.1,65.9
+2022,48227.0,66669.0,114896.0,42.0,58.0
+2023,59797.0,66874.0,126672.0,47.2,52.8
+2024,73103.0,62539.0,135642.0,53.9,46.1
+2025,86178.0,55487.0,141665.0,60.8,39.2

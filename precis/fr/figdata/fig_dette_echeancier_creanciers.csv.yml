@@ -1,0 +1,5 @@
+series: [dette-exterieure-echeancier-creanciers]
+sources: [wb-ids]
+fiches: [docs/dette-exterieure-echeancier.md]
+caveats: [MÊME SOURCE ET MÊMES PIÈGES que `dette-exterieure-echeancier`, ventilés par créancier. ÉCHÉANCIER = DETTE DÉJÀ CONTRACTÉE : les années `projeté` décroissent faute d'inclure les emprunts futurs. Le créancier est la maille la PLUS FINE publiée (jamais l'emprunt individuel) ; « Bondholders » agrège les porteurs d'obligations de marché. La somme des créanciers d'une année égale l'agrégat WLD de `dette-exterieure-echeancier`. Dollars courants, périmètre PPG extérieur seul. Voir docs/dette-exterieure-echeancier.md.]
+generated: 2026-11-09
