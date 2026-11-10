@@ -6,6 +6,30 @@
 > `references.json` doit être **remontée dans Zotero** pour être pérenne et obtenir une
 > clé de citation stable (champ « Extra » : `citation-key: xxx`).
 
+## Chantier « annexe dette publique » — fichiers chantier absents (état du 4 novembre 2026)
+
+Tâche de clôture biblio reçue pour `precis/fr/annexe-dette-publique.qmd` et la note
+`docs/notes/eco-soutenabilite-dette.md`. **Ces deux fichiers n'existent nulle part** :
+ni sur `master`, ni sur la branche `chantier/annexe-dette-publique`, ni dans l'historique
+(`git log --all -- …` vide). Le chantier n'a pas encore atterri dans l'arbre. En conséquence :
+
+- **Clés citées, présentes et cohérentes** : `loi-org-2019-15-lob` et `minfin-ep-2025`
+  (dans le fonds commun `precis/{fr,ar}/references.json`, FR+AR, cohérentes).
+- **Clés citées, présentes mais hors fonds commun** : `loi-67-53-lob` et `loi-org-96-103-lob`
+  n'existent que dans `precis/{fr,ar}/fiscalite/references.json` (FR+AR, cohérentes, URL JORT
+  pist.tn correctes). Une annexe à la racine `precis/fr/` les verrait **non résolues** : à
+  recopier dans le fonds commun lorsque l'annexe sera versée.
+- **Clé citée, présente FR seulement, AR manquant** : `minfin-dette-2025` n'existe que dans
+  `precis/fr/entreprises_publiques/references.json` ; **aucune entrée AR**. À compléter côté AR
+  et à recopier dans le fonds commun pour l'annexe.
+- **Clés dites « versées pour le chantier », introuvables partout** : `wb-ids`,
+  `minfin-resultats-provisoires-2024-12`, `minfin-resultats-provisoires-2020-12`,
+  `bct-dette-exterieure-2024` n'apparaissent dans aucun `references.json` (ni FR ni AR). À verser
+  quand le chantier atterrira — métadonnées à établir sur source primaire, rien d'inventé ici.
+
+`check_references_coherentes.py` ✓, `check_backlog.py` ✓ (aucune incohérence sur l'existant).
+Le dry-run / contrôle-rangement Zotero reste sans objet tant que l'annexe n'est pas dans l'arbre.
+
 ## Seconde poussée Zotero du 02/11/2026 et descente mesurée (état du 3 novembre 2026)
 
 Cette section remplace l'état « 64 clés à verser » et « 103 à déclasser » des deux sections qui suivent.

@@ -186,7 +186,307 @@ PROV = [
      "sources": ["ins-cnat-2015"],
      "source_ligne": "INS, comptes de la nation, compte des administrations publiques (APU), "
                      "emplois et ressources, bases 1997 et 2015."},
+    {"id": "budget-solde-dette",
+     "titre": "Déficit budgétaire, pression fiscale et encours de la dette publique (1986-2025)",
+     "sources": ["minfin-indicateurs-fp-xls"],
+     "source_ligne": "Ministère des Finances, indicateurs des finances publiques "
+                     "(déficit hors privatisation et dons, encours de dette, réalisations)."},
+    {"id": "budget-service-dette",
+     "titre": "Service de la dette publique : principal et intérêts (1986-2025)",
+     "sources": ["minfin-service-dette-xls"],
+     "source_ligne": "Ministère des Finances, série du service de la dette publique "
+                     "(réalisations)."},
+    {"id": "budget-missions-execute",
+     "titre": "Crédits exécutés par mission, dépouillés des rapports annuels de performance "
+              "(2016-2023)",
+     "sources": ["gbo-rap-missions"],
+     "source_ligne": "Rapports annuels de performance des missions du budget de l'État "
+                     "(gbo.tn et ministères), dépouillement 2026."},
+    {"id": "budget-chapitres-paye",
+     "titre": "Dépenses payées de l'État par chapitre (ministère), 2008-2014 (BOOST)",
+     "sources": ["mizaniatouna-boost"],
+     "source_ligne": "Ministère des Finances et Banque mondiale, base BOOST du portail "
+                     "mizaniatouna (dépenses payées par ligne budgétaire, 2008-2014)."},
+    {"id": "budget-missions-vote",
+     "titre": "Crédits du budget de l'État par mission (PLF et LF votée), 2021-2025",
+     "sources": ["minfin-rapport-budget-2021", "minfin-rapport-budget-2022",
+                 "minfin-rapport-budget-2023", "minfin-rapport-budget-2024",
+                 "minfin-rapport-budget-2025"],
+     "source_ligne": "Ministère des Finances, rapports sur les projets de budget de l'État "
+                     "2021-2025, tableau de répartition des crédits par missions."},
+    {"id": "budget-recettes-totales",
+     "titre": "Recettes totales de l'État : fiscales et non fiscales (1986-2025)",
+     "sources": ["minfin-recettes-fiscales", "minfin-recettes-non-fiscales-xls"],
+     "source_ligne": "Ministère des Finances, séries des recettes fiscales et des recettes "
+                     "non fiscales (réalisations ; dons et privatisation compris dans les "
+                     "non fiscales)."},
+    {"id": "budget-vote-realise",
+     "titre": "Dépenses par nature : voté (LF), rectifié (LFC) et réalisé (2012-2025)",
+     "sources": ["minfin-repartition-depenses-xls"],
+     "source_ligne": "Ministère des Finances, répartition économique des dépenses "
+                     "(colonnes lois de finances initiales et rectificatives, et réalisations)."},
 ]
+
+
+# --- voté par mission (LOB 2019, depuis 2020) --------------------------------------
+MISSIONS_CSV = RACINE / "docs" / "notes" / "budget-missions-vote-2021-2025.csv"
+
+
+def serie_missions() -> pd.DataFrame:
+    """Crédits par mission : PLF de l'année, et LF votée lue au rappel de l'édition suivante.
+
+    Source : dépouillement vérifié des rapports sur les PLF 2021-2025 (tableau « répartition
+    des crédits par missions » ; transcription docs/notes/budget-missions-vote-2021-2025.csv,
+    sommes contrôlées exactes contre les totaux imprimés). Le PLF n'est pas toujours le voté
+    (2021 : −813 MD au vote) : la colonne lf_MDT vient du RAPPEL de l'édition n+1 quand elle
+    existe ; vide pour 2025 (pas d'édition 2026 en entrepôt).
+    """
+    d = pd.read_csv(MISSIONS_CSV)
+    d = d[d["type"] != "total"].copy()
+    plf = d[["annee_budget", "mission_fr", "mission_ar", "type",
+             "credits_paiement_milliers"]].rename(
+        columns={"annee_budget": "annee", "credits_paiement_milliers": "plf_milliers"})
+    rappel = d[["annee_budget", "mission_fr", "rappel_lf_n_1_milliers"]].copy()
+    rappel["annee"] = rappel["annee_budget"] - 1
+    rappel = rappel.rename(columns={"rappel_lf_n_1_milliers": "lf_milliers"})[
+        ["annee", "mission_fr", "lf_milliers"]]
+    df = plf.merge(rappel, on=["annee", "mission_fr"], how="left")
+    df["plf_MDT"] = (df["plf_milliers"] / 1000).round(1)
+    df["lf_MDT"] = (df["lf_milliers"] / 1000).round(1)
+    df = df.drop(columns=["plf_milliers", "lf_milliers"]).sort_values(["annee", "mission_fr"])
+    n_lf = df["lf_MDT"].notna().sum()
+    print(f"[budget-missions-vote] {len(df)} lignes, {df['mission_fr'].nunique()} missions, "
+          f"{n_lf} avec LF votée")
+    return df
+
+
+# --- exécuté par mission (RAP, 2016-2023) ------------------------------------------
+EXECUTE_CSVS = [RACINE / "docs" / "notes" / "budget-missions-execute-lotA.csv",
+                RACINE / "docs" / "notes" / "budget-missions-execute-lotB.csv"]
+
+
+def serie_missions_execute() -> pd.DataFrame:
+    """Crédits EXÉCUTÉS par mission, dépouillés des RAP (deux lots indépendants).
+
+    Deux régimes : ≤ 2019, paiements seuls (ancienne nomenclature) ; ≥ 2020, engagé/payé
+    hors ressources propres (LOB 2019). Les deux couples extraits par les DEUX lots
+    (affaires-religieuses 2021, finances 2020) concordent exactement — validation croisée.
+    Intérieur, Défense et présidence de la République : aucun RAP publié, série trouée.
+    """
+    import re as _re
+    frames = [pd.read_csv(p) for p in EXECUTE_CSVS]
+    d = pd.concat(frames, ignore_index=True)
+    d["mission"] = (d["mission"].astype(str)
+                    .str.replace(r"\s*\(.*\)", "", regex=True).str.strip())
+    d = d.sort_values("fichier").drop_duplicates(["mission", "annee_gestion"], keep="first")
+    d["paye_MDT"] = (d["paye_milliers"] / 1000).round(1)
+    d["engage_MDT"] = (d["engage_milliers"] / 1000).round(1)
+    d["regime"] = d["annee_gestion"].map(
+        lambda a: "paiements seuls" if a <= 2019 else "LOB 2019 (hors ressources propres)")
+    out = d.rename(columns={"annee_gestion": "annee"})[
+        ["annee", "mission", "paye_MDT", "engage_MDT", "regime",
+         "taux_execution_imprime_pct", "page_pdf", "fichier", "note"]].sort_values(
+        ["mission", "annee"])
+    print(f"[budget-missions-execute] {len(out)} lignes, {out['mission'].nunique()} missions, "
+          f"{int(out.annee.min())}-{int(out.annee.max())}")
+    return out
+
+
+# --- payé par chapitre (BOOST, avant la réforme des missions) ----------------------
+BOOST_XLSX = TD / "raw" / "mizaniatouna" / "boost_fr.xlsx"
+
+
+def serie_chapitres() -> pd.DataFrame:
+    """Dépenses PAYÉES par chapitre (ministère), 2008-2014, base BOOST.
+
+    2015 (partiel) et 2016 (très partiel) sont ÉCARTÉS (fiche tunisia-data
+    sources/mizaniatouna-boost.md). Le chapitre « Dette publique » est inclus : le total
+    BOOST ne se compare PAS aux séries « hors dette » de l'annexe. Montants en MDT.
+    """
+    import re as _re
+    d = pd.read_excel(BOOST_XLSX, sheet_name="Sheet1", engine="openpyxl")
+    ren = {}
+    for c in d.columns:
+        m = _re.search(r"[A-Z][A-Z0-9 ]+", str(c))
+        ren[c] = m.group(0).strip() if m else c
+    d = d.rename(columns=ren)
+    d = d[d["YEAR"].between(2008, 2014)]
+    g = (d.groupby(["YEAR", "ADMIN2"], as_index=False)[["PAYE", "LOI DE FINANCE"]].sum())
+    g["chapitre"] = (g["ADMIN2"].astype(str)
+                     .str.replace(r"^\d+\s*", "", regex=True).str.strip())
+    g["paye_MDT"] = (g["PAYE"] / 1e6).round(1)
+    g["vote_lf_MDT"] = (g["LOI DE FINANCE"] / 1e6).round(1)
+    out = g.rename(columns={"YEAR": "annee", "ADMIN2": "chapitre_source"})[
+        ["annee", "chapitre", "chapitre_source", "paye_MDT", "vote_lf_MDT"]]
+    out = out[out["paye_MDT"] > 0].sort_values(["annee", "paye_MDT"],
+                                               ascending=[True, False])
+    tot = out.groupby("annee")["paye_MDT"].sum().round(0)
+    print(f"[budget-chapitres-paye] {len(out)} lignes, {out['chapitre'].nunique()} chapitres ; "
+          f"payé total 2008={tot.get(2008):.0f} → 2014={tot.get(2014):.0f} MD")
+    return out
+
+
+# --- recettes totales : fiscales + non fiscales (réalisé) --------------------------
+RECETTES_NF_XLS = TD / "raw" / "minfinances" / "recettes_non_fiscales.xls"
+
+
+def serie_recettes_totales() -> pd.DataFrame:
+    """Recettes totales réalisées : fiscales (série existante) + non fiscales (classeur minfin).
+
+    Présentation LOB 2004-42 : les DONS EXTÉRIEURS et la PRIVATISATION sont DANS les recettes
+    non fiscales (exposés en colonnes propres), alors que le déficit des indicateurs est « hors
+    privatisation et dons » — à dire dans toute lecture croisée.
+    """
+    raw = pd.read_excel(RECETTES_NF_XLS, sheet_name=0, header=None, engine="xlrd")
+    cols = _colonnes_realisees(raw, 6)
+
+    def ligne_de(motif: str) -> int:
+        for i in range(7, raw.shape[0]):
+            if motif in str(raw.iloc[i, 1]):
+                return i
+        raise SystemExit(f"[budget-recettes-totales] rubrique introuvable : {motif}")
+
+    spec = [("recettes_non_fiscales_MDT", ligne_de("Total")),
+            ("dons_exterieurs_MDT", ligne_de("Dons Extérieurs")),
+            ("privatisation_MDT", ligne_de("Privatisation"))]
+    out = {"annee": sorted(cols)}
+    for cle, i in spec:
+        out[cle] = [round(float(raw.iloc[i, cols[a]]), 1) if pd.notna(raw.iloc[i, cols[a]])
+                    else None for a in sorted(cols)]
+    nf = pd.DataFrame(out)
+    fisc = pd.read_csv(CACHE / "recettes-fiscales-composition.csv")[["annee", "total_MDT"]]
+    fisc = fisc.rename(columns={"total_MDT": "recettes_fiscales_MDT"})
+    df = fisc.merge(nf, on="annee", how="inner")
+    df["recettes_totales_MDT"] = (df["recettes_fiscales_MDT"]
+                                  + df["recettes_non_fiscales_MDT"]).round(1)
+    print(f"[budget-recettes-totales] {len(df)} années "
+          f"({int(df.annee.min())}-{int(df.annee.max())})")
+    return df
+
+
+# --- voté (LF), rectifié (LFC) et réalisé, par nature -----------------------------
+def serie_vote_realise() -> pd.DataFrame:
+    """Les dépenses par nature sous leurs trois états : LF (voté), LFC (rectifié), réalisé.
+
+    Le classeur minfin intercale les colonnes LF/LFC AVANT l'année à laquelle elles se
+    rapportent (validé : Total LF 2024 = 53 167, LF 2025 = 53 541, réalisé 2025 = 52 495).
+    Les colonnes LF n'existent qu'à partir de 2013 (LFC dès 2012). Une ligne par
+    (annee, etat), avec les natures et le total.
+    """
+    raw = pd.read_excel(XLS, sheet_name=0, header=None, engine="xlrd")
+    hdr = raw.iloc[8, 2:].tolist()
+
+    def _etat(h):
+        s = str(h).replace(".", "").replace(" ", "").upper()
+        return s if s in ("LF", "LFC") else None
+
+    mapping, pending = [], []
+    for j, h in enumerate(hdr):
+        if isinstance(h, (int, float)) and pd.notna(h):
+            y = int(h)
+            for lab, jj in pending:
+                mapping.append((y, lab, 2 + jj))
+            mapping.append((y, "realise", 2 + j))
+            pending = []
+        elif _etat(h):
+            pending.append((_etat(h), j))
+    for lab, jj in pending:  # LF au-delà de la dernière année réalisée (édition LF n+1)
+        mapping.append((mapping[-1][0] + 1, lab, 2 + jj))
+
+    lignes_nat = {}
+    for lib, cle in NATURES.items():
+        for i in range(9, raw.shape[0]):
+            if str(raw.iloc[i, 1]).strip() == lib:
+                lignes_nat[cle] = i
+                break
+
+    out = []
+    for y, etat, c in mapping:
+        rec = {"annee": y, "etat": etat}
+        for cle, i in lignes_nat.items():
+            v = raw.iloc[i, c]
+            rec[cle] = round(float(v), 2) if pd.notna(v) else None
+        if rec["total_hors_dette_MDT"] is not None:
+            out.append(rec)
+    df = pd.DataFrame(out).sort_values(["annee", "etat"])
+    n_lf = (df.etat == "LF").sum()
+    print(f"[budget-vote-realise] {len(df)} lignes, dont {n_lf} LF "
+          f"({df[df.etat=='LF'].annee.min()}-{df[df.etat=='LF'].annee.max()})")
+    return df
+
+
+# --- solde, dette et service de la dette (indicateurs minfin) ---------------------
+INDICATEURS_XLS = TD / "raw" / "minfinances" / "indicateurs_fp_LF2026.xls"
+SERVICE_XLS = TD / "raw" / "minfinances" / "service_dette.xls"
+
+
+def _colonnes_realisees(df: pd.DataFrame, ligne_annees: int) -> dict[int, int]:
+    """Colonnes dont l'en-tête est une année (réalisé) — les colonnes LF/LFC sont écartées."""
+    hdr = df.iloc[ligne_annees, 2:].tolist()
+    return {int(h): 2 + j for j, h in enumerate(hdr)
+            if isinstance(h, (int, float)) and pd.notna(h)}
+
+
+def serie_solde() -> pd.DataFrame:
+    """Déficit, pression fiscale et encours de dette (réalisé, minfin, 1986-2025).
+
+    Les % du PIB sont ceux PUBLIÉS par le ministère (fractions → ×100) ; ils héritent de ses
+    bases de PIB : la colonne `base_pib` (reprise de denominateurs-depenses-etat-pib) permet
+    de tracer par segments, jamais en continu.
+    """
+    raw = pd.read_excel(INDICATEURS_XLS, sheet_name=0, header=None, engine="xlrd")
+    cols = _colonnes_realisees(raw, 4)
+    lignes = {5: "deficit_MDT", 7: "deficit_pct_pib", 9: "pression_fiscale_pct_pib",
+              11: "dette_MDT", 13: "dette_pct_pib"}
+    # repérage robuste : chaque rubrique par son libellé (colonne 0) ; la ligne « % du PIB »
+    # correspondante est deux lignes plus bas.
+    def ligne_de(motif: str) -> int:
+        for i in range(raw.shape[0]):
+            if motif in str(raw.iloc[i, 0]):
+                return i
+        raise SystemExit(f"[budget-solde-dette] rubrique introuvable : {motif}")
+
+    i_def = ligne_de("Déficit")
+    i_pf = ligne_de("Pression")
+    i_dette = ligne_de("Encours")
+    spec = [("deficit_MDT", i_def, 1.0), ("deficit_pct_pib", i_def + 2, 100.0),
+            ("pression_fiscale_pct_pib", i_pf, 100.0),
+            ("dette_MDT", i_dette, 1.0), ("dette_pct_pib", i_dette + 2, 100.0)]
+    out = {"annee": sorted(cols)}
+    for cle, i, k in spec:
+        out[cle] = [round(float(raw.iloc[i, cols[a]]) * k, 2) if pd.notna(raw.iloc[i, cols[a]])
+                    else None for a in sorted(cols)]
+    df = pd.DataFrame(out)
+    deno = pd.read_csv(CACHE / "denominateurs-depenses-etat-pib.csv")[["annee", "base_pib"]]
+    return df.merge(deno, on="annee", how="left")
+
+
+def serie_service_dette() -> pd.DataFrame:
+    """Service de la dette publique : total, principal, intérêts (réalisé, 1986-2025)."""
+    raw = pd.read_excel(SERVICE_XLS, sheet_name=0, header=None, engine="xlrd")
+    cols = _colonnes_realisees(raw, 8)
+
+    def ligne_de(motif: str) -> int:
+        for i in range(raw.shape[0]):
+            if motif in str(raw.iloc[i, 1]):
+                return i
+        raise SystemExit(f"[budget-service-dette] rubrique introuvable : {motif}")
+
+    spec = [("service_MDT", ligne_de("Service de la Dette")),
+            ("principal_MDT", ligne_de("Remboursement du Principal")),
+            ("interets_MDT", ligne_de("Remboursement des Intérêts"))]
+    out = {"annee": sorted(cols)}
+    for cle, i in spec:
+        out[cle] = [round(float(raw.iloc[i, cols[a]]), 1) if pd.notna(raw.iloc[i, cols[a]])
+                    else None for a in sorted(cols)]
+    df = pd.DataFrame(out)
+    # contrôle : principal + intérêts ≈ service (écart d'arrondi ≤ 0,6)
+    chk = df.dropna()
+    ecart = (chk["service_MDT"] - chk["principal_MDT"] - chk["interets_MDT"]).abs().max()
+    if ecart > 0.6:
+        raise SystemExit(f"[budget-service-dette] bouclage rompu : écart max {ecart:.2f} MDT")
+    print(f"[budget-service-dette] bouclage OK (écart max {ecart:.2f} MDT)")
+    return df
 
 
 # --- vue comptes de la nation : compte des administrations publiques (APU) --------
@@ -196,6 +496,13 @@ EDITIONS_APU = {
     "2015": [("cnat-2020-2024-tables", "094", "095"), ("cnat_2019-2023-tables", "094", "095"),
              ("cnat_2018-2022-tables", "094", "095"), ("cnat_2017-2021-tables", "094", "095")],
     "1997": [("cnat_2013-2017-tables", "100", "101"), ("cnat_2012-2016-tables", "100", "101")],
+}
+# sous-secteur « administration centrale » : table emplois/ressources suivante (096/097 en
+# base 2015 ; 102/103 en base 1997) — périmètre le plus proche du budget de l'État.
+EDITIONS_CENTRAL = {
+    "2015": [("cnat-2020-2024-tables", "096", "097"), ("cnat_2019-2023-tables", "096", "097"),
+             ("cnat_2018-2022-tables", "096", "097"), ("cnat_2017-2021-tables", "096", "097")],
+    "1997": [("cnat_2013-2017-tables", "102", "103"), ("cnat_2012-2016-tables", "102", "103")],
 }
 # nature → libellé normalisé EXACT de la ligne (emplois, sauf subventions = ressources)
 _EMPLOIS = {
@@ -243,7 +550,19 @@ def _ligne(d: pd.DataFrame, cle_norm: str, annee: int) -> float:
 
 def serie_comptanat() -> pd.DataFrame:
     lignes = []
-    for base, editions in EDITIONS_APU.items():
+    for perimetre, editions_par_base in (("apu", EDITIONS_APU), ("central", EDITIONS_CENTRAL)):
+        lignes += _comptanat_perimetre(perimetre, editions_par_base)
+    df = pd.DataFrame(lignes).sort_values(["perimetre", "base_pib", "annee"])
+    for p in ("apu", "central"):
+        s = df[df.perimetre == p]
+        print(f"[budget-comptanat-apu] {p} : {len(s)} années "
+              f"({int(s.annee.min())}-{int(s.annee.max())})")
+    return df
+
+
+def _comptanat_perimetre(perimetre: str, editions_par_base: dict) -> list[dict]:
+    lignes = []
+    for base, editions in editions_par_base.items():
         vus = set()
         for edir, nem, nres in editions:
             emp = _table(edir, nem)
@@ -254,7 +573,7 @@ def serie_comptanat() -> pd.DataFrame:
             for an in sorted(annees):
                 if an in vus:  # édition plus récente déjà prise pour cette année
                     continue
-                rec = {"annee": an, "base_pib": base, "edition": edir}
+                rec = {"perimetre": perimetre, "annee": an, "base_pib": base, "edition": edir}
                 for cle, lab in _EMPLOIS.items():
                     rec[cle] = round(_ligne(emp, lab, an), 1)
                 if res is not None:
@@ -265,11 +584,7 @@ def serie_comptanat() -> pd.DataFrame:
                 if pd.notna(rec["remuneration_salaries_MDT"]):
                     lignes.append(rec)
                     vus.add(an)
-    df = pd.DataFrame(lignes).sort_values(["base_pib", "annee"])
-    print(f"[budget-comptanat-apu] {len(df)} années "
-          f"(base 1997 : {sorted(df[df.base_pib=='1997'].annee)} ; "
-          f"base 2015 : {sorted(df[df.base_pib=='2015'].annee)})")
-    return df
+    return lignes
 
 
 def _maj_snapshot() -> None:
@@ -288,6 +603,22 @@ def main() -> None:
     disp.to_csv(CACHE / "budget-dispositifs-poids.csv", index=False)
     apu = serie_comptanat()
     apu.to_csv(CACHE / "budget-comptanat-apu.csv", index=False)
+    solde = serie_solde()
+    solde.to_csv(CACHE / "budget-solde-dette.csv", index=False)
+    print(f"[budget-solde-dette] {len(solde)} années")
+    sd = serie_service_dette()
+    sd.to_csv(CACHE / "budget-service-dette.csv", index=False)
+    print(f"[budget-service-dette] {len(sd)} années")
+    vr = serie_vote_realise()
+    vr.to_csv(CACHE / "budget-vote-realise.csv", index=False)
+    rt = serie_recettes_totales()
+    rt.to_csv(CACHE / "budget-recettes-totales.csv", index=False)
+    mi = serie_missions()
+    mi.to_csv(CACHE / "budget-missions-vote.csv", index=False)
+    ch = serie_chapitres()
+    ch.to_csv(CACHE / "budget-chapitres-paye.csv", index=False)
+    me = serie_missions_execute()
+    me.to_csv(CACHE / "budget-missions-execute.csv", index=False)
     _maj_snapshot()
     print(f"[budget-desagregation-nature] {len(nat)} années → {CACHE/'budget-desagregation-nature.csv'}")
     print(f"[budget-dispositifs-poids] {len(disp)} lignes, "
