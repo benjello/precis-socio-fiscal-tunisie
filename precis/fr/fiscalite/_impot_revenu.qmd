@@ -468,8 +468,11 @@ Un avantage chiffré porte en revanche sur le revenu une fois déterminé. Depui
 
 <!-- TODO (documentaliste) : les barèmes régionaux d'évaluation forfaitaire agricole prévus par
 l'article 24 sont susceptibles de figurer dans des arrêtés du ministre des finances ; aucun n'a été
-identifié à ce jour. Point d'entrée : PDFs-legislation-tunisie/data/iort/textes/md/. Tant qu'aucun
-arrêté n'est produit, l'absence de paramètre chiffré est énoncée telle quelle. -->
+identifié à ce jour. Point d'entrée : PDFs-legislation-tunisie/data/iort/textes/md/. Recherche du
+9 novembre 2026 : les 32 130 textes du corpus iort (grep « évaluation forfaitaire », « forfaitaire +
+agriculture ») et la recherche plein texte de jort_cache.db ne rendent que les lois de finances déjà
+citées, aucun arrêté de barème. Tant qu'aucun arrêté n'est produit, l'absence de paramètre chiffré
+est énoncée telle quelle. -->
 
 ### Traitements, salaires, indemnités, pensions et rentes viagères (catégorie IV) {#sec-irpp-salaires}
 
@@ -785,6 +788,8 @@ La dispense de retenue n'est jamais une exonération : un revenu dispensé de re
 
 ## L'évolution des régimes dérogatoires {#sec-irpp-regimes}
 
+Le versant social des mêmes indépendants — cotisations et affiliation au régime des travailleurs non salariés — est exposé dans le volume [« Cotisations sociales »](../cotisations_sociales/_regimes.html#sec-cot-rtns) ; le présent chapitre ne porte que l'impôt.
+
 Le régime réel n'est pas le seul mode d'imposition des personnes physiques. Quatre sous-secteurs juridiques coexistent aujourd'hui : le **régime réel**, le **régime forfaitaire** des bénéfices industriels et commerciaux — porté par les articles 44 *bis* à 44 *sexies* du code, issus du transfert opéré par l'article 37 de la loi de finances pour 2011 depuis le § IV de l'article 44 —, le **régime forfaitaire optionnel** que l'article 91 de la loi de finances pour 2026 ajoute à l'article 44 *ter* pour les contribuables dont le chiffre d'affaires n'excède pas 100 000 dinars [@lf-2026, art. 91], et, hors du code, le **régime de l'auto-entrepreneur**, dont la contribution unique éteint à la fois l'impôt sur le revenu, la taxe sur la valeur ajoutée et la cotisation sociale (@sec-irpp-auto-entrepreneur). Les revenus de capitaux soumis à une retenue libératoire sortent eux aussi de la chaîne de calcul (@sec-irpp-epargne).
 
 ## Le régime forfaitaire {#sec-irpp-forfait}
@@ -1082,8 +1087,14 @@ Source : ministère des Finances, diaporama du groupe de travail sur la révisio
 
 Le même document situe le régime : les forfaitaires forment 60 % du fichier des contribuables et 80 % des personnes physiques imposées dans la catégorie des bénéfices industriels et commerciaux, et leur contribution représente 0,2 % des recettes fiscales du régime intérieur, sans que l'année de ce dernier rapport soit précisée [@minfin-cnf-2013-forfait]. Entre 2009 et 2011, le nombre d'inscrits augmente chaque année tandis que celui des contribuables en règle diminue, et la contribution moyenne recule de 108,3 à 82,5 dinars — à rapprocher des planchers de 50 et 100 dinars alors en vigueur (@tbl-irpp-forfait). Le diaporama ne dit pas si ces années sont celles des revenus ou des déclarations.
 
-<!-- TODO (documentaliste) : prolonger la série après 2013 (nombre de forfaitaires, produit de
-l'impôt forfaitaire). Autres chiffres disponibles dans la même collection, à relire à l'image
+**Après 2013, la série se prolonge par une étude.** L'étude du PNUD et de l'OIT sur l'économie informelle (2022, Nidhal Bencheikh), qui lit le Répertoire national des entreprises de l'INS, donne l'effectif des forfaitaires année par année de 2010 à 2020 : 364,8 milliers en 2010, 388,8 en 2015, un pic à 419,0 en 2017, un creux à 388,2 en 2018 — au lendemain du durcissement de 2016-2018 (@sec-irpp-forfait-taux) — puis 413,1 en 2019 et **420,5 milliers en 2020** [@pnud-oit2022-bencheikh-informel, figure 15, p. 82]. La même étude mesure le rendement : en 2020, **213,7 milliers d'inscrits — 50,9 % — n'ont pas déposé leur déclaration**, et la contribution des déposants atteint **35 millions de dinars**, soit 0,7 % de l'impôt sur le revenu et 0,2 % des recettes fiscales — la même proportion que dans le diagnostic de 2013 ; parmi les 206 501 déposants, 77,4 % déclarent moins de 10 000 dinars de chiffre d'affaires, c'est-à-dire le plancher de 75 ou 150 dinars d'impôt [@pnud-oit2022-bencheikh-informel, p. 83, et tableau 18, p. 83]. Ces chiffres sont ceux d'une étude — lecture du Répertoire national des entreprises, méthode dite —, non une publication budgétaire du ministère.
+
+<!-- TODO (documentaliste) : série des forfaitaires après 2020 — aucun chiffre publié identifié ici ;
+les rapports sur les dépenses fiscales (gbo.tn) et le Bulletin du RNE sont les pistes à suivre. -->
+
+<!-- TODO (documentaliste) : série 2010-2020 désormais prolongée par l'étude PNUD-OIT 2022 (ci-dessus,
+9 novembre 2026) ; reste le produit de l'impôt forfaitaire année par année après 2013 (seul 2020 est
+connu, 35 MD) et tout après 2020. Autres chiffres disponibles dans la même collection, à relire à l'image
 avant usage (fiche tunisia-data sources/minfinances-reforme-fiscale-2013-2014.md) : déclarations et
 contribution par tranche de chiffre d'affaires 2009-2011 (diapositives 7-8), répartition par
 secteur en 2010 (diapositives 6 et 33), comparaison avec le réel (diapositive 16), 394 976
