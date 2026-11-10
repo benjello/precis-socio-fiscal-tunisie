@@ -19845,3 +19845,49 @@ entries:
         إلى مجموع القيم المضافة بأسعار الأساس تُفضي إلى الناتج المحلي الإجمالي
         بأسعار السوق.
       synonymes: []
+
+  - id: subventions-produits
+    acronyme: null
+    statut: provisoire  # AR proposé, non confirmé sur édition arabe
+    references: [ins-cnat-2015, ins-scnt97-presentation]
+    source_definition: {ref: ins-cnat-2015, locator: "table Ressources des APU"}
+    voir_aussi: [impots-produits-nets-subventions, compensation-des-prix]
+    fr:
+      terme: Subventions sur les produits
+      definition: >
+        En comptabilité nationale, subventions versées par unité de bien ou de
+        service produit ou importé ; poste soustractif qui, retranché des impôts
+        sur les produits, donne les impôts nets. Du côté des administrations
+        publiques, elles recouvrent l'essentiel de la compensation (énergie,
+        produits de base) telle que la lisent les comptes de la nation, dont le
+        périmètre diffère toutefois des dépenses budgétaires de compensation.
+      synonymes: [Subventions sur produits]
+    ar:
+      terme: الدعم على المنتجات
+      definition: >
+        في المحاسبة القومية، دعم يُدفع لكل وحدة من سلعة أو خدمة منتَجة أو
+        مستورَدة؛ بند يُطرح من الضرائب على المنتجات ليُعطي الضرائب الصافية. ومن
+        جهة الإدارات العمومية، يغطّي جُلّ الدعم (الطاقة والمواد الأساسية) كما
+        تقرؤه حسابات الأمة، وإن اختلف نطاقه عن نفقات الدعم الميزانية.
+      synonymes: []
+
+  - id: prestations-sociales-especes
+    acronyme: null
+    statut: provisoire  # AR proposé, non confirmé sur édition arabe
+    references: [ins-cnat-2015, ins-scnt97-presentation]
+    source_definition: {ref: ins-scnt97-presentation, locator: "p. 16"}
+    voir_aussi: [revenu-disponible-brut, prestation-monetaire]
+    fr:
+      terme: Prestations sociales en espèces
+      definition: >
+        Transferts sociaux versés en espèces (retraites, indemnités) par les
+        organismes de sécurité sociale ; emplois du compte de distribution
+        secondaire du revenu, à distinguer des prestations servies en nature.
+      synonymes: []
+    ar:
+      terme: التحويلات الاجتماعية النقدية
+      definition: >
+        تحويلات اجتماعية تُدفع نقدًا (جرايات التقاعد والتعويضات) من قِبل أجهزة
+        الضمان الاجتماعي؛ وهي استخدامات في حساب التوزيع الثانوي للدخل، تُميَّز
+        عن المنافع المقدَّمة عينًا.
+      synonymes: []

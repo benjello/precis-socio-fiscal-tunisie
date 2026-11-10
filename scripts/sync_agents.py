@@ -50,6 +50,15 @@ AVERTISSEMENT = (
     "— ne pas éditer."
 )
 
+# Consigne COMMUNE à tous les rôles : insérée par les générateurs après l'avertissement,
+# avant le corps. Un seul point d'édition pour « informer tous les agents » du routage des
+# reports. Voir docs/backlog-routage.md.
+CONSIGNE_COMMUNE = (
+    "> **Reports & lacunes.** À chaque point d'arrêt, verse ce qui n'a pu être fait, les données\n"
+    "> manquantes et les pistes non suivies à leur destination durable selon\n"
+    "> `docs/backlog-routage.md` — jamais seulement dans la conversation ou une liste de session.\n"
+)
+
 
 def charger_config() -> dict:
     return yaml.safe_load(ROLES_YML.read_text(encoding="utf-8"))
@@ -88,6 +97,8 @@ def engendrer_claude_code(nom_role: str, config: dict) -> str:
         "\n"
         f"{AVERTISSEMENT.format(role=nom_role)}\n"
         "\n"
+        f"{CONSIGNE_COMMUNE}"
+        "\n"
     )
     return entete + corps(nom_role)
 
@@ -112,7 +123,7 @@ def engendrer_pi(nom_role: str, config: dict) -> str:
               f"tools: {outils}"]
     if modele:
         lignes.append(f"model: {modele}")
-    lignes += ["---", "", AVERTISSEMENT.format(role=nom_role), ""]
+    lignes += ["---", "", AVERTISSEMENT.format(role=nom_role), "", CONSIGNE_COMMUNE]
     return "\n".join(lignes) + "\n" + corps(nom_role)
 
 

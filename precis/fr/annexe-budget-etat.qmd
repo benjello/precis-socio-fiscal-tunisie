@@ -27,7 +27,9 @@ crossref:
 
 <!-- Identifiants STABLES de cette page, auxquels les volumes renvoient (ne pas les renommer, ne pas les traduire) :
      #sec-bud-pourquoi, #sec-bud-definitions, #sec-bud-serie-longue, #fig-bud-serie,
-     #fig-bud-pib, #sec-bud-recettes, #fig-bud-recettes, #sec-bud-pivot-1986, #sec-bud-sources, #sec-bud-lire. -->
+     #fig-bud-pib, #sec-bud-recettes, #fig-bud-recettes, #sec-bud-pivot-1986, #sec-bud-sources, #sec-bud-lire,
+     #sec-bud-desagregation, #fig-bud-desag-budgetaire, #fig-bud-dispositifs, #tbl-bud-correspondance,
+     #fig-bud-desag-comptanat. -->
 
 ## Pourquoi cette annexe {#sec-bud-pourquoi}
 
@@ -144,6 +146,148 @@ figtools.figure_tabs(
         "recul des droits de douane à mesure de l'ouverture commerciale. Seconde vue : le total "
         "rapporté au PIB, la pression fiscale, tracée par plage de base car un changement de base "
         "abaisse mécaniquement le ratio (voir l'[annexe sur le PIB](annexe-pib.html#sec-pib-ruptures))."),
+)
+```
+
+## Désagréger les dépenses : deux vues {#sec-bud-desagregation}
+
+<!-- BROUILLON (chantier annexe-budget-desagregation) — à relire. Matière : docs/notes/annexe-budget-desagregation.md. -->
+
+Les dépenses réalisées de l'État hors dette — le trait rouge de la @fig-bud-serie — se laissent
+**décomposer**, pour relier chaque grandeur examinée ailleurs dans le précis et suivre son poids
+année par année. Deux lectures se complètent : une **vue budgétaire**, qui range la dépense comme
+la loi de finances et le ministère des Finances la rangent (rémunérations, moyens, interventions,
+équipement, prêts) ; une **vue économique**, dite des *comptes de la nation*, qui regroupe les
+mêmes flux par nature économique et secteur bénéficiaire. Les deux ne se superposent pas terme à
+terme, et c'est l'objet de cette section de dire pourquoi.
+
+### La vue budgétaire : une partition qui boucle
+
+Le ministère des Finances publie les dépenses réalisées par **nature** : au sein du fonctionnement,
+les **rémunérations publiques**, les **moyens des services** et les **interventions publiques** ;
+puis l'**équipement** (l'investissement) et les **prêts**. Ces parts s'additionnent exactement aux
+dépenses de l'État hors service de la dette : la vue budgétaire est une **partition complète**. La
+@fig-bud-desag-budgetaire la donne sous deux angles — en part du total, pour lire la déformation de
+la structure, et en dinars. Le détail fin ne commence qu'en 1996, première année où le ministère
+publie les sous-rubriques du fonctionnement.
+
+```{python}
+#| label: fig-bud-desag-budgetaire
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../scripts")
+from figures import annexe_budget
+import figtools
+figtools.figure_tabs(
+    annexe_budget.vues_desagregation(), annexe_budget.table_desagregation(),
+    "budget-desagregation-nature",
+    slug="fig_bud_desag_budgetaire",
+    caption=("Les dépenses de l'État hors dette, décomposées par nature : rémunérations, moyens, "
+             "interventions, équipement et prêts, 1996-2025"),
+    note_lecture=(
+        "Chaque bande est une nature de dépense ; empilées, elles reconstituent les dépenses de "
+        "l'État hors service de la dette (la somme boucle sur le trait rouge de la figure de la "
+        "série longue). La première vue donne la part de chaque nature dans le total, la seconde "
+        "les montants en dinars. Le détail des sous-rubriques du fonctionnement commence en 1996."),
+)
+```
+
+### Les dispositifs du précis ne s'emboîtent pas sous une seule nature
+
+On voudrait lire chaque dispositif étudié ailleurs — la masse salariale, la compensation, les
+transferts aux entreprises publiques, aux caisses de sécurité sociale, la dotation des
+collectivités — comme une tranche de la vue budgétaire. Deux seulement s'y rangent proprement : la
+**masse salariale** *est* la ligne des rémunérations ; la **compensation** tient dans les
+interventions, dont elle occupe plus de la moitié. Les autres **traversent** la nomenclature : les
+transferts aux entreprises publiques mêlent rémunération, fonctionnement, interventions et
+investissement de ces entreprises, et **débordent** la ligne des interventions ; les transferts aux
+caisses sont, eux, un **sous-ensemble** de ces transferts (même annexe budgétaire). Les additionner
+sur-compterait — la compensation des carburants, par exemple, transite par une entreprise publique
+et rejoint donc les transferts aux entreprises. La @fig-bud-dispositifs donne donc le poids de
+chaque dispositif séparément, en part des dépenses hors dette, et trace **en pointillé** les
+dispositifs transversaux, qui ne s'additionnent ni aux natures ni entre eux.
+
+```{python}
+#| label: fig-bud-dispositifs
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../scripts")
+from figures import annexe_budget
+import figtools
+figtools.figure_tabs(
+    annexe_budget.fig_dispositifs(), annexe_budget.table_dispositifs(),
+    "budget-dispositifs-poids",
+    slug="fig_bud_dispositifs",
+    caption=("Le poids des dispositifs du précis dans les dépenses de l'État hors dette, par an "
+             "(les transferts transversaux en pointillé)"),
+    note_lecture=(
+        "Chaque courbe est un dispositif rapporté aux dépenses de l'État hors dette. Les traits "
+        "pleins (masse salariale, compensation, dotation FCCL) se rangent sous une nature "
+        "budgétaire ; les traits en pointillé (transferts aux entreprises publiques et aux caisses) "
+        "traversent plusieurs natures et se chevauchent — ils ne s'additionnent pas aux autres. La "
+        "dotation FCCL n'est documentée ici que de 2008 à 2019, les transferts aux caisses depuis "
+        "2017."),
+)
+```
+
+### La vue économique : regrouper par nature, changer de périmètre
+
+La vue des *comptes de la nation* relit les mêmes flux par leur **nature économique** et le
+**secteur** qui les reçoit. Elle a un mérite : un flux n'y compte **qu'une fois**, par ce qu'il est
+économiquement — la compensation y est une *subvention sur produits*, qu'elle passe ou non par une
+entreprise publique —, ce qui dissout les doubles comptes de la vue budgétaire. Elle a un coût :
+son périmètre n'est pas celui du budget de l'État. Les **administrations publiques** des comptes
+nationaux consolident l'État, les collectivités locales et les organismes de sécurité sociale ; la
+vue économique **ne boucle donc pas** sur les dépenses de l'État hors dette. On la lit comme une
+relecture, jamais comme une seconde partition du même total. Le @tbl-bud-correspondance met les
+deux nomenclatures en regard.
+
+| Flux budgétaire (vue budgétaire) | Nature économique / secteur (vue économique) |
+|---|---|
+| Rémunérations publiques | rémunération des salariés des administrations |
+| Moyens des services | consommation intermédiaire des administrations |
+| Compensation (dans les interventions) | subventions sur produits |
+| Transferts aux entreprises publiques (exploitation) | subventions aux sociétés |
+| Transferts aux caisses / prestations | prestations et transferts sociaux |
+| Équipement direct | formation brute de capital fixe des administrations |
+| Prêts ; transferts en capital aux entreprises | opérations financières / transferts en capital |
+| Dotation des collectivités (FCCL) | transferts aux administrations publiques locales |
+
+: Correspondance entre la vue budgétaire et la vue des comptes de la nation {#tbl-bud-correspondance}
+
+Chiffrée, cette vue donne les **emplois du compte des administrations publiques** par nature
+économique (@fig-bud-desag-comptanat). On y retrouve, classés par ce qu'ils sont et non par la
+ligne budgétaire qui les porte, la rémunération des salariés, la consommation intermédiaire, les
+prestations sociales, les autres transferts courants, l'investissement (formation brute de capital
+fixe), les intérêts et les transferts en capital. Deux précautions commandent la lecture. D'abord,
+le **périmètre** : les administrations publiques des comptes nationaux agrègent l'État, les
+collectivités locales et les organismes de sécurité sociale ; cette vue **ne boucle pas** sur les
+dépenses de l'État de la vue budgétaire, et chaque nature y dépasse sa contrepartie purement
+étatique. Ensuite, la **base** des comptes : la figure s'arrête au segment de la base 2015
+(2017-2024), car un changement de base ne se chaîne pas (la série en base 1997, 2012-2017, est dans
+l'onglet des données ; voir l'[annexe sur le PIB](annexe-pib.html#sec-pib-ruptures)).
+
+```{python}
+#| label: fig-bud-desag-comptanat
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../scripts")
+from figures import annexe_budget
+import figtools
+figtools.figure_tabs(
+    annexe_budget.vues_comptanat(), annexe_budget.table_comptanat(),
+    "budget-comptanat-apu",
+    slug="fig_bud_desag_comptanat",
+    caption=("La vue comptes de la nation : les emplois du compte des administrations publiques "
+             "par nature économique, base 2015, 2017-2024"),
+    note_lecture=(
+        "Chaque bande est une nature économique de dépense des administrations publiques (État + "
+        "collectivités locales + sécurité sociale, consolidés), lue dans le compte des "
+        "administrations publiques de l'INS. Le périmètre dépasse le budget de l'État : cette vue "
+        "ne se raccorde pas à la vue budgétaire. Les subventions (dont les subventions sur "
+        "produits, proches de la compensation) sont lues du côté des ressources et figurent dans "
+        "l'onglet des données, non dans l'empilement. La série en base 1997 (2012-2017) est "
+        "également dans les données."),
 )
 ```
 

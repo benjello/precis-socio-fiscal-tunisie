@@ -506,6 +506,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Prestation monétaire | المنفعة النقدية |  |
 | Prestation non monétaire | المنفعة غير النقدية |  |
 | Prestations familiales | المنح العائلية |  |
+| Prestations sociales en espèces | التحويلات الاجتماعية النقدية |  |
 | Prêt universitaire | القرض الجامعي |  |
 | Prêts du Trésor | قروض الخزينة |  |
 | Prêts rétrocédés | القروض المعاد إقراضها |  |
@@ -668,6 +669,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Subvention indirecte | الدعم غير المباشر |  |
 | Subvention rationnée | المنحة المحدودة |  |
 | Subvention spécifique | المنحة الخصوصية |  |
+| Subventions sur les produits | الدعم على المنتجات |  |
 | Surcompensation | الزيادة في تعويض المنح العائلية |  |
 | Suspension du droit de consommation | توقيف العمل بالمعلوم على الاستهلاك |  |
 | Système de remboursement | نظام استرجاع المصاريف |  |

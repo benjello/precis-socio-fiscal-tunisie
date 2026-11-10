@@ -25,7 +25,7 @@ crossref:
 [← Retour à l'accueil](index.html)
 
 <!-- Identifiants STABLES de cette page, auxquels les volumes renvoient (ne pas les renommer, ne pas les traduire) :
-     #sec-cn-pourquoi, #sec-cn-secteurs, #sec-cn-sequence, #sec-cn-approches, #sec-cn-agregats, #sec-cn-concordance, #sec-cn-limites.
+     #sec-cn-pourquoi, #sec-cn-secteurs, #sec-cn-sequence, #sec-cn-comptes-secteurs, #sec-cn-approches, #sec-cn-agregats, #sec-cn-concordance, #sec-cn-limites.
      Matière : docs/notes/annexe-comptes-nation.md. Les bases du PIB (1983/1997/2015) restent dans annexe-pib.qmd, à qui cette page renvoie. -->
 
 ## Pourquoi cette annexe {#sec-cn-pourquoi}
@@ -109,6 +109,77 @@ Trois grands tableaux ferment le système [@ins-scnt97-presentation, p. 1 et pp.
 - le **tableau des ressources-emplois (TRE)** équilibre, par produit, l'offre et la demande : les ressources sont valorisées aux prix de base, les emplois aux prix d'acquisition ;
 - le **tableau des comptes économiques intégrés (TCEI)** « résume toute la séquence des comptes des différents secteurs institutionnels », receveurs face aux verseurs, opération par opération ;
 - le **tableau des opérations financières (TOF)** retrace les flux nets de créances et de dettes par secteur ; les éditions en base 2015 le portent dans leur Volume B.
+:::
+
+## Les comptes, désagrégés par secteur {#sec-cn-comptes-secteurs}
+
+La séquence que l'on vient de parcourir vaut pour chaque **secteur institutionnel** pris à part : les sociétés non financières, les sociétés financières, les administrations publiques, les ménages, et le reste du monde en miroir. Le navigateur ci-dessous la déroule, année par année (chacune dans sa base des comptes, la plus récente qui la couvre, étiquetée), compte par compte, secteur par secteur, dans la présentation de l'INS. On lit en italique les **soldes** — la valeur ajoutée, le revenu d'exploitation, le solde des revenus primaires, le revenu disponible brut, l'épargne, la capacité ou le besoin de financement — chacun reporté en tête du compte suivant. Les valeurs sont celles des comptes de l'INS, lues telles quelles (les soldes ne sont pas recalculés).
+
+Trois lectures que ce tableau rend immédiates : le **revenu mixte** des ménages gonfle leur revenu d'exploitation, bien au-delà des sociétés (voir l'[approche revenus](#sec-cn-approches)) ; les **administrations publiques** portent l'essentiel des prestations sociales et un besoin de financement négatif qui est le déficit public au sens des comptes, à **périmètre consolidé** (central + local + sécurité sociale), distinct des [périmètres budgétaires](#sec-cn-concordance) ; le **reste du monde** n'a que les opérations qui le lient aux résidents, d'où ses lignes vides. Le curseur ci-dessous déroule la séquence, chaque année dans sa base (les bases ne se chaînent pas : une année est un instantané). Le **revenu disponible brut** des ménages n'est pas porté pour 2020-2023 (ligne absente de l'édition INS qui couvre ces années) ; son épargne et sa consommation finale, elles, le sont.
+
+```{python}
+#| echo: false
+#| output: false
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../scripts")
+from figures import annexe_comptes_nation as acn
+ojs_define(sequence=acn.donnees_sequence())
+```
+
+::: {.content-visible when-format="html"}
+
+```{ojs}
+//| echo: false
+viewof anneeSeq = Inputs.range(
+  [sequence.annees[0], sequence.annees[sequence.annees.length - 1]],
+  {step: 1, value: sequence.annee_defaut, label: "Année", width: 340}
+)
+```
+
+```{ojs}
+//| echo: false
+sequenceTable = {
+  const bloc = sequence.parAnnee[String(anneeSeq)] || sequence.parAnnee[String(sequence.annee_defaut)];
+  const base = sequence.baseAnnee[String(anneeSeq)] || sequence.baseAnnee[String(sequence.annee_defaut)];
+  const f = x => (x === undefined || x === null) ? "" :
+    x.toLocaleString("fr-FR", {minimumFractionDigits: 1, maximumFractionDigits: 1});
+  const secteurs = sequence.secteurs;
+  const entete = html`<tr><th>Compte / opération</th>${secteurs.map(s => html`<th class="num">${s[1]}</th>`)}</tr>`;
+  const corps = [];
+  for (const c of sequence.sequence) {
+    corps.push(html`<tr class="compte-tete"><td colspan="${secteurs.length + 1}"><b>${c.compte}</b></td></tr>`);
+    for (const l of c.lignes) {
+      const cells = secteurs.map(s => {
+        const v = (bloc[s[0]] || {})[l.cle];
+        return html`<td class="num">${f(v)}</td>`;
+      });
+      corps.push(html`<tr class="${l.solde ? 'solde' : ''}">
+        <td>${l.solde ? html`<i>${l.label}</i>` : html`<span class="op">${l.label}</span>`}</td>${cells}</tr>`);
+    }
+  }
+  return html`<div class="comptes-nav">
+    <div class="comptes-titre">La séquence des comptes par secteur — <b>${anneeSeq}</b>, base ${base}, en millions de dinars</div>
+    <table class="table-comptes table-sequence"><thead>${entete}</thead><tbody>${corps}</tbody></table>
+    <div class="comptes-note">Soldes en italique, reportés en tête du compte suivant ; valeurs lues dans les comptes de l'INS, non recalculées.
+      Administrations publiques <b>consolidées</b> (central + local + sécurité sociale). Les lignes de distribution
+      secondaire et au-delà du compte des <b>ménages</b> (revenu disponible, épargne, capacité de financement) ne sont
+      pas reportées : les prestations sociales reçues n'y sont pas captées par les tables disponibles, ce qui
+      sous-estimerait le revenu disponible. Chaque année est un instantané dans <b>sa</b> base (la plus récente qui
+      la couvre, affichée ci-dessus) ; les bases 1997 et 2015 ne se chaînent pas (voir les <a href="annexe-pib.html#sec-pib-bases">bases du PIB</a>).
+      Source : INS, <i>Comptes de la nation</i> [@ins-cnat-2015].</div>
+  </div>`;
+}
+```
+
+```{=html}
+<style>
+table.table-sequence tr.compte-tete td{background:#f3eef0;border-top:1px solid #ccc;padding-top:.35rem}
+table.table-sequence tr.solde td{font-weight:600;border-bottom:1px solid #ccc}
+table.table-sequence td.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+table.table-sequence .op{padding-left:1.1rem;color:#333}
+table.table-sequence th.num{text-align:right}
+</style>
+```
+
 :::
 
 ## Les trois approches du PIB {#sec-cn-approches}

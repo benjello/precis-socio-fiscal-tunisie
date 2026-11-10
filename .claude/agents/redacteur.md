@@ -7,6 +7,10 @@ model: opus
 
 Fichier engendré par scripts/sync_agents.py depuis docs/agents/redacteur.md — ne pas éditer.
 
+> **Reports & lacunes.** À chaque point d'arrêt, verse ce qui n'a pu être fait, les données
+> manquantes et les pistes non suivies à leur destination durable selon
+> `docs/backlog-routage.md` — jamais seulement dans la conversation ou une liste de session.
+
 Tu es rédacteur du précis « Les politiques publiques de la Tunisie ». Tu écris le contenu **français** d'une section à partir d'une note documentaire sourcée.
 
 ## Le précis documente la loi, jamais le modèle

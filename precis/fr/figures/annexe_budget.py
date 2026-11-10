@@ -81,6 +81,14 @@ _L = {
     "conso":     {"fr": "droits de consommation", "ar": "معاليم الاستهلاك"},
     "douanes":   {"fr": "droits de douane",       "ar": "الديوانة"},
     "autres":    {"fr": "autres impôts indirects", "ar": "أداءات غير مباشرة أخرى"},
+    "y_pct_tot": {"fr": "en % des dépenses hors dette", "ar": "٪ من النفقات دون الدين"},
+    "v_part":    {"fr": "part du total (%)",         "ar": "الحصة من المجموع (٪)"},
+    "v_md":      {"fr": "en dinars (millions)",       "ar": "بالدينار (مليون)"},
+    "n_remun":   {"fr": "rémunérations publiques",    "ar": "الأجور العمومية"},
+    "n_moyens":  {"fr": "moyens des services",        "ar": "وسائل المصالح"},
+    "n_interv":  {"fr": "interventions publiques",    "ar": "التدخلات العمومية"},
+    "n_equip":   {"fr": "équipement (investissement)", "ar": "التجهيز (الاستثمار)"},
+    "n_prets":   {"fr": "prêts et avances",           "ar": "القروض والتسبقات"},
 }
 
 
@@ -290,3 +298,169 @@ def table_recettes() -> pd.DataFrame:
     out = d[[c for c in cols if c in d.columns]].copy()
     pib = _recettes_pib()[["annee", "pct"]].rename(columns={"pct": "pression_fiscale_pct_pib"})
     return out.merge(pib, on="annee", how="left").round({"pression_fiscale_pct_pib": 1})
+
+
+# --- figure 4 : désagrégation des dépenses par nature (vue budgétaire) ---------
+SERIE_NATURE = "budget-desagregation-nature"
+SERIE_DISPOSITIFS = "budget-dispositifs-poids"
+# natures empilées : (colonne, clé i18n, couleur) ; mêmes teintes que l'annexe
+_NATURES = [
+    ("remunerations_MDT", "n_remun",  "#1f4e79"),
+    ("moyens_MDT",        "n_moyens", "#4393c3"),
+    ("interventions_MDT", "n_interv", "#c0392b"),
+    ("equipement_MDT",    "n_equip",  "#1a9850"),
+    ("prets_MDT",         "n_prets",  "#999999"),
+]
+
+
+def _nature() -> pd.DataFrame:
+    """Ventilation par nature, années complètes seulement (sous-rubriques dès 1996)."""
+    d = figtools.series(SERIE_NATURE).sort_values("annee")
+    return d[d["interventions_MDT"].notna() & d["moyens_MDT"].notna()].copy()
+
+
+def _trace_desag(d: pd.DataFrame, en_part: bool):
+    fig, ax = plt.subplots(figsize=(9.5, 5.2))
+    base = d["total_hors_dette_MDT"] if en_part else 1.0
+    series = [100 * d[c] / base if en_part else d[c] for c, _, _ in _NATURES]
+    ax.stackplot(d["annee"], *series,
+                 labels=[_ft(k) for _, k, _ in _NATURES],
+                 colors=[c for *_, c in _NATURES])
+    ax.set_xlabel(_ft("x_annee"))
+    ax.set_ylabel(_ft("y_pct_tot") if en_part else _ft("y_md"))
+    ax.set_xlim(d["annee"].min(), d["annee"].max())
+    if en_part:
+        ax.set_ylim(0, 100)
+    ax.legend(fontsize=8, loc="lower right", ncol=2, framealpha=0.9)
+    ax.grid(alpha=0.2)
+    fig.tight_layout()
+    return fig
+
+
+def vues_desagregation():
+    d = _nature()
+    return [
+        (_lab("v_part"), _trace_desag(d, en_part=True)),
+        (_lab("v_md"),   _trace_desag(d, en_part=False)),
+    ]
+
+
+def table_desagregation() -> pd.DataFrame:
+    d = _nature()[["annee"] + [c for c, _, _ in _NATURES] + ["total_hors_dette_MDT"]]
+    return d.round(1)
+
+
+def table_dispositifs() -> pd.DataFrame:
+    """Poids annuel des dispositifs du précis (overlay), lu de la série engendrée."""
+    d = figtools.series(SERIE_DISPOSITIFS)
+    cols = ["annee", "dispositif", "valeur_MDT", "rattachement", "transversal",
+            "part_ligne_pct", "part_total_pct"]
+    return d[[c for c in cols if c in d.columns]].sort_values(["annee", "dispositif"])
+
+
+_DISP = {
+    "masse_salariale":    {"fr": "masse salariale",        "ar": "كتلة الأجور",   "c": "#1f4e79", "t": False},
+    "compensation":       {"fr": "compensation",           "ar": "الدعم",        "c": "#c0392b", "t": False},
+    "transferts_ep":      {"fr": "transferts aux EP",      "ar": "تحويلات للمنشآت", "c": "#e08214", "t": True},
+    "transferts_caisses": {"fr": "transferts aux caisses", "ar": "تحويلات للصناديق", "c": "#8e44ad", "t": True},
+    "dotation_fccl":      {"fr": "dotation FCCL",          "ar": "منحة الصندوق المشترك", "c": "#1a9850", "t": False},
+}
+
+
+def fig_dispositifs():
+    """Poids de chaque dispositif, en % des dépenses hors dette, par an.
+
+    Les dispositifs **transversaux** (transferts aux EP et aux caisses, qui traversent
+    plusieurs natures et se chevauchent) sont en pointillé : ils ne s'additionnent pas aux
+    autres ni entre eux.
+    """
+    d = figtools.series(SERIE_DISPOSITIFS)
+    fig, ax = plt.subplots(figsize=(9.5, 5.2))
+    for disp, st in _DISP.items():
+        s = d[d["dispositif"] == disp].sort_values("annee")
+        s = s[pd.to_numeric(s["part_total_pct"], errors="coerce").notna()]
+        if s.empty:
+            continue
+        lab = st.get(figtools.lang(), st["fr"])
+        ax.plot(s["annee"], pd.to_numeric(s["part_total_pct"]),
+                color=st["c"], lw=1.8, ls="--" if st["t"] else "-",
+                marker="o", ms=3, label=figtools.fig_text(lab))
+    ax.set_xlabel(_ft("x_annee"))
+    ax.set_ylabel(_ft("y_pct_tot"))
+    ax.grid(alpha=0.2)
+    ax.legend(fontsize=8, loc="upper left", ncol=2)
+    fig.tight_layout()
+    return fig
+
+
+# --- figure 5 : vue comptes de la nation (compte APU, emplois par nature) -----
+SERIE_APU = "budget-comptanat-apu"
+_APU = [
+    ("remuneration_salaries_MDT", "a_remun",  "#1f4e79"),
+    ("conso_intermediaire_MDT",   "a_ci",     "#4393c3"),
+    ("prestations_sociales_MDT",  "a_presta", "#c0392b"),
+    ("autres_transferts_courants_MDT", "a_transf", "#e08214"),
+    ("fbcf_MDT",                  "a_fbcf",   "#1a9850"),
+    ("interets_MDT",              "a_inter",  "#8e44ad"),
+    ("transferts_capital_MDT",    "a_cap",    "#999999"),
+]
+_APU_L = {
+    "a_remun":  {"fr": "rémunération des salariés", "ar": "أجور الأجراء"},
+    "a_ci":     {"fr": "consommation intermédiaire", "ar": "الاستهلاك الوسيط"},
+    "a_presta": {"fr": "prestations sociales",       "ar": "التحويلات الاجتماعية"},
+    "a_transf": {"fr": "autres transferts courants", "ar": "تحويلات جارية أخرى"},
+    "a_fbcf":   {"fr": "FBCF (investissement)",      "ar": "تكوين رأس المال الثابت"},
+    "a_inter":  {"fr": "intérêts",                   "ar": "الفوائد"},
+    "a_cap":    {"fr": "transferts en capital",      "ar": "تحويلات رأس المال"},
+}
+
+
+def _apu_lab(key):
+    st = _APU_L[key]
+    return st.get(figtools.lang(), st["fr"])
+
+
+def _apu_base2015() -> pd.DataFrame:
+    d = figtools.series(SERIE_APU)
+    d = d[d["base_pib"] == 2015].sort_values("annee").drop_duplicates("annee")
+    return d
+
+
+def _trace_comptanat(d: pd.DataFrame, en_part: bool):
+    """Empilement des emplois APU, en dinars ou en part de leur total."""
+    tot = sum(d[c] for c, _, _ in _APU) if en_part else 1.0
+    series = [100 * d[c] / tot if en_part else d[c] for c, _, _ in _APU]
+    fig, ax = plt.subplots(figsize=(9.5, 5.2))
+    ax.stackplot(d["annee"], *series,
+                 labels=[figtools.fig_text(_apu_lab(k)) for _, k, _ in _APU],
+                 colors=[c for *_, c in _APU])
+    ax.set_xlabel(_ft("x_annee"))
+    ax.set_ylabel(figtools.fig_text("en % des emplois APU") if en_part else _ft("y_md"))
+    ax.set_xlim(d["annee"].min(), d["annee"].max())
+    if en_part:
+        ax.set_ylim(0, 100)
+    ax.legend(fontsize=8, loc="lower right", ncol=2, framealpha=0.9)
+    ax.grid(alpha=0.2)
+    fig.tight_layout()
+    return fig
+
+
+def vues_comptanat():
+    """Emplois du compte des administrations publiques par nature, base 2015 (2017-2024).
+
+    Deux vues : part du total des emplois APU, et dinars. Segment base 2015 seul (bases non
+    chaînées). Périmètre APU (central + local + sécurité sociale) — ne boucle pas sur les
+    dépenses de l'État.
+    """
+    d = _apu_base2015()
+    return [
+        (_lab("v_part"), _trace_comptanat(d, en_part=True)),
+        (_lab("v_md"),   _trace_comptanat(d, en_part=False)),
+    ]
+
+
+def table_comptanat() -> pd.DataFrame:
+    d = figtools.series(SERIE_APU)
+    cols = (["annee", "base_pib"] + [c for c, _, _ in _APU]
+            + ["subventions_produits_MDT", "subventions_MDT", "edition"])
+    return d[[c for c in cols if c in d.columns]]

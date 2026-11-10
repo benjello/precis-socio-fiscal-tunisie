@@ -145,6 +145,27 @@ ct.tableau_evolution(
 
 :::
 
+### La mère et le groupe {#sec-ep-ge-stb-groupe}
+
+**La fiche individuelle ne donne pas la situation du groupe.** La STB publie deux jeux d'états financiers : les individuels (la banque seule, dite mère) et les consolidés (le groupe, après élimination des opérations internes). Fin 2013, la mère affiche 113,8 MD de capitaux propres quand la part du groupe est négative, −235,0 MD : consolider les pertes des filiales change le signe. L'écart se resserre puis s'inverse — +54,8 MD en 2019, +136,3 MD fin 2024, le groupe pèse alors plus que la mère.
+
+```{python}
+#| label: fig-ep-stb-groupe
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import grandes_entreprises as ge
+ge.figure(
+    "stb_groupe",
+    caption=("Capitaux propres et résultat net de la STB, la mère (états individuels) face à la "
+             "part du groupe (états consolidés), exercices 2012-2024, en millions de dinars."),
+    note_lecture=("Base groupe = part du groupe, hors intérêts minoritaires. Valeurs lues des états "
+                  "financiers individuels et consolidés déposés à la Bourse de Tunis ; le fichier et "
+                  "la page de chaque valeur sont dans l'onglet « Données », avec le total actif. Un "
+                  "exercice sans état lu n'a pas de barre (mère 2012 : états individuels scannés)."),
+)
+```
+
 ### L'opinion des commissaires aux comptes {#sec-ep-ge-stb-cac}
 
 **Les commissaires aux comptes de la STB émettent une opinion avec réserves sur ses comptes individuels dans les quinze exercices lus, de 2011 à 2025 : huit rapports annuels (2011, 2013 à 2019) et sept états financiers de la Bourse de Tunis (2012 et 2020 à 2025).** [@ra-stb-2011, p. 74 ; @ra-stb-2013, p. 68 ; @ra-stb-2014, p. 64 ; @ra-stb-2015, p. 78 ; @ra-stb-2016, p. 64 ; @ra-stb-2017, p. 84 ; @ra-stb-2018, p. 87 ; @ra-stb-2019, p. 104 ; @bvmt-ef-stb-2012-individuel, p. 47 ; @bvmt-ef-stb-2020-individuel, p. 39 ; @bvmt-ef-stb-2021-individuel, p. 35 ; @bvmt-ef-stb-2022-individuel, p. 40 ; @bvmt-ef-stb-2023-individuel, p. 45 ; @bvmt-ef-stb-2024-individuel, p. 45 ; @bvmt-ef-stb-2025-individuel, p. 48]
@@ -357,6 +378,27 @@ ct.tableau_evolution(
 
 :::
 
+### La mère et le groupe {#sec-ep-ge-bh-groupe}
+
+**Le groupe BH pèse plus que la mère sur toute la période lue.** L'écart de capitaux propres — part du groupe moins mère — va de +12,9 MD fin 2012 à +259,0 MD fin 2024 ; les filiales, bénéficiaires, s'ajoutent à la banque au lieu de la creuser.
+
+```{python}
+#| label: fig-ep-bh-groupe
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import grandes_entreprises as ge
+ge.figure(
+    "bh_groupe",
+    caption=("Capitaux propres et résultat net de la BH, la mère (états individuels) face à la "
+             "part du groupe (états consolidés), exercices 2012-2024, en millions de dinars."),
+    note_lecture=("Base groupe = part du groupe, hors intérêts minoritaires. Valeurs lues des états "
+                  "financiers individuels et consolidés déposés à la Bourse de Tunis ; le fichier et "
+                  "la page de chaque valeur sont dans l'onglet « Données », avec le total actif. Un "
+                  "exercice sans état lu n'a pas de barre."),
+)
+```
+
 ### L'opinion des commissaires aux comptes {#sec-ep-ge-bh-cac}
 
 **Les commissaires aux comptes de la BH émettent une opinion avec réserves sur ses comptes individuels dans les treize exercices lus, de 2011 à 2024 ; l'exercice 2018 n'a pas d'états individuels sur la page de la Bourse de Tunis.** [@bvmt-ef-bh-2011-individuel, p. 6-8 ; @bvmt-ef-bh-2012-individuel, p. 3-5 ; @bvmt-ef-bh-2013-individuel, p. 22-23 ; @bvmt-ef-bh-2014-individuel, p. 6-7 ; @bvmt-ef-bh-2015-individuel, p. 6-7 ; @bvmt-ef-bh-2016-individuel, p. 6-7 ; @bvmt-ef-bh-2017-individuel, p. 31-32 ; @bvmt-ef-bh-2019-individuel, p. 4-5 ; @bvmt-ef-bh-2020-individuel, p. 5-6 ; @bvmt-ef-bh-2021-individuel, p. 6-7 ; @bvmt-ef-bh-2022-individuel, p. 39 ; @bvmt-ef-bh-2023-individuel, p. 41 ; @bvmt-ef-bh-2024-individuel, p. 47]
@@ -546,6 +588,27 @@ ct.tableau_evolution(
 
 :::
 
+### La mère et le groupe {#sec-ep-ge-bna-groupe}
+
+**À la BNA, l'écart entre la mère et le groupe reste modeste** : de +1,4 MD (fin 2022) à +38,7 MD (fin 2019) de capitaux propres — les filiales pèsent peu au regard de la banque.
+
+```{python}
+#| label: fig-ep-bna-groupe
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import grandes_entreprises as ge
+ge.figure(
+    "bna_groupe",
+    caption=("Capitaux propres et résultat net de la BNA, la mère (états individuels) face à la "
+             "part du groupe (états consolidés), exercices 2012-2024, en millions de dinars."),
+    note_lecture=("Base groupe = part du groupe, hors intérêts minoritaires. Valeurs lues des états "
+                  "financiers individuels et consolidés déposés à la Bourse de Tunis ; le fichier et "
+                  "la page de chaque valeur sont dans l'onglet « Données », avec le total actif. Un "
+                  "exercice sans état lu n'a pas de barre."),
+)
+```
+
 ### L'opinion des commissaires aux comptes {#sec-ep-ge-bna-cac}
 
 **Les commissaires aux comptes de la BNA émettent une opinion avec réserves sur ses comptes individuels de 2011 à 2016, puis une opinion sans réserve de 2017 à 2024, assortie chaque année de paragraphes d'observation ; l'exercice 2018 n'a pas de rapport dans le fichier de la page de la Bourse de Tunis.** [@bvmt-ef-bna-2011-individuel, p. 2-3 ; @bvmt-ef-bna-2012-individuel, p. 2-3 ; @bvmt-ef-bna-2013-individuel, p. 36-37 ; @bvmt-ef-bna-2014-individuel, p. 35-36 ; @bvmt-ef-bna-2015-individuel, p. 43-44 ; @bvmt-ef-bna-2016-individuel, p. 3 ; @bvmt-ef-bna-2017-individuel, p. 58-59 ; @bvmt-ef-bna-2019-individuel, p. 48-49 ; @bvmt-ef-bna-2020-individuel, p. 57-58 ; @bvmt-ef-bna-2021-individuel, p. 52-54 ; @bvmt-ef-bna-2022-individuel, p. 55-56 ; @bvmt-ef-bna-2023-individuel, p. 52-53 ; @bvmt-ef-bna-2024-individuel, p. 54-55]
@@ -654,6 +717,27 @@ ge.figure(
 
 
 Les actions à dividende prioritaire sont cotées depuis août 1995 ; la page de la Bourse porte le capital à 90 MD en 2023 et à 108,744 MD en 2024 et en 2025 [@bvmt-bte-adp]. L'État est actionnaire direct, sans être majoritaire. Cette section lit les rapports des commissaires aux comptes joints aux états financiers de la Bourse de Tunis et le périmètre des comptes consolidés.
+
+### La mère et le groupe {#sec-ep-ge-bte-groupe}
+
+**À la BTE, l'écart s'élargit quand les fonds propres de la mère s'épuisent** : +2,2 MD fin 2013, +73,7 MD fin 2022 — la mère tombe alors à 89,9 MD de capitaux propres, puis 38,9 MD fin 2024 quand la part du groupe est à 42,2 MD.
+
+```{python}
+#| label: fig-ep-bte-groupe
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import grandes_entreprises as ge
+ge.figure(
+    "bte_groupe",
+    caption=("Capitaux propres et résultat net de la BTE, la mère (états individuels) face à la "
+             "part du groupe (états consolidés), exercices 2012-2024, en millions de dinars."),
+    note_lecture=("Base groupe = part du groupe, hors intérêts minoritaires. Valeurs lues des états "
+                  "financiers individuels et consolidés déposés à la Bourse de Tunis ; le fichier et "
+                  "la page de chaque valeur sont dans l'onglet « Données », avec le total actif. Un "
+                  "exercice sans état lu n'a pas de barre (groupe 2012 : états consolidés non déposés)."),
+)
+```
 
 ### L'opinion des commissaires aux comptes {#sec-ep-ge-bte-cac}
 
@@ -1300,15 +1384,14 @@ import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
 from figures import cotees as ct
 ct.figure_cac(
     "TUNISRE", "tunis-re",
-    caption=("Les réserves des commissaires aux comptes sur les comptes individuels de Tunis Re, par thème et par "
-             "exercice, leur nombre, et le délai de publication des états financiers annuels, d'après les états "
-             "financiers de la Bourse de Tunis : aucun des dix-sept exercices lus n'a de réserve. Source : [@bvmt-ef-tunisre-2009-individuel ; @bvmt-ef-tunisre-2010-individuel ; @bvmt-ef-tunisre-2011-individuel ; @bvmt-ef-tunisre-2012-individuel ; @bvmt-ef-tunisre-2013-individuel ; @bvmt-ef-tunisre-2014-individuel ; @bvmt-ef-tunisre-2015-individuel ; @bvmt-ef-tunisre-2016-individuel ; @bvmt-ef-tunisre-2017-individuel ; @bvmt-ef-tunisre-2018-individuel ; @bvmt-ef-tunisre-2019-individuel ; @bvmt-ef-tunisre-2020-individuel ; @bvmt-ef-tunisre-2021-individuel ; @bvmt-ef-tunisre-2022-individuel ; @bvmt-ef-tunisre-2023-individuel ; @bvmt-ef-tunisre-2024-individuel ; @bvmt-ef-tunisre-2025-individuel]"),
+    caption=("L'opinion des commissaires aux comptes sur les comptes individuels de Tunis Re, d'après les états "
+             "financiers de la Bourse de Tunis : aucun des dix-sept exercices lus (2009-2025) n'a de réserve ; la "
+             "figure donne le délai de publication des états financiers annuels. Source : [@bvmt-ef-tunisre-2009-individuel ; @bvmt-ef-tunisre-2010-individuel ; @bvmt-ef-tunisre-2011-individuel ; @bvmt-ef-tunisre-2012-individuel ; @bvmt-ef-tunisre-2013-individuel ; @bvmt-ef-tunisre-2014-individuel ; @bvmt-ef-tunisre-2015-individuel ; @bvmt-ef-tunisre-2016-individuel ; @bvmt-ef-tunisre-2017-individuel ; @bvmt-ef-tunisre-2018-individuel ; @bvmt-ef-tunisre-2019-individuel ; @bvmt-ef-tunisre-2020-individuel ; @bvmt-ef-tunisre-2021-individuel ; @bvmt-ef-tunisre-2022-individuel ; @bvmt-ef-tunisre-2023-individuel ; @bvmt-ef-tunisre-2024-individuel ; @bvmt-ef-tunisre-2025-individuel]"),
     note_lecture=(
-        "En haut, une case par thème de réserve et par exercice : aucune case n'est remplie, car aucun rapport ne "
-        "contient de réserve ; en gris, un exercice dont le rapport n'est pas lu (2008). Au milieu, le nombre de "
-        "motifs, nul chaque année. En bas, le nombre de jours entre le 31 décembre de l'exercice et la date que la "
-        "Bourse porte à la publication des états individuels. Les thèmes sont ceux du relevé des banques ; "
-        "les paragraphes d'observation sont dans le tableau."))
+        "Aucun rapport lu ne contenant de réserve, la figure ne dessine ni carte des thèmes ni compte de "
+        "motifs : elle donne le seul repère chiffré, le nombre de jours entre le 31 décembre de l'exercice "
+        "et la date que la Bourse porte à la publication des états individuels. Le rapport de 2008 n'est pas "
+        "lu ; les paragraphes d'observation, exercice par exercice, sont dans le tableau replié ci-dessous."))
 ```
 
 ::: {.chronologie-repliable titre="L'opinion des commissaires aux comptes sur les comptes de Tunis Re, exercice par exercice, 2009-2025"}

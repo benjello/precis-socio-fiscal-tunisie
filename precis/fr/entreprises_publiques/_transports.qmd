@@ -164,7 +164,7 @@ from figures import grandes_entreprises as ge
 ge.figure(
     "transtu_va",
     caption=("Valeur ajoutée brute de la Transtu et valeur ajoutée par agent, exercices 2010-2021."),
-    note_lecture=("VA calculée (niveau C) ; elle est très majoritairement constituée de la compensation de service public versée par l'État. Hors cette compensation, la valeur ajoutée marchande propre de la Transtu est quasi nulle, voire négative."),
+    note_lecture=("VA calculée (niveau C) ; les barres sont très majoritairement constituées de la compensation de service public versée par l'État. La courbe orange donne la valeur ajoutée HORS cette compensation — la production marchande propre de la Transtu —, quasi nulle, voire négative ; les deux se lisent aussi dans l'onglet « Données »."),
 )
 ```
 
@@ -288,7 +288,7 @@ from figures import grandes_entreprises as ge
 ge.figure(
     "sncft_va",
     caption=("Valeur ajoutée brute de la SNCFT et valeur ajoutée par agent, exercices 2010-2023."),
-    note_lecture=("VA calculée (niveau C, cohérence de lecture) ; elle comprend la compensation de service public versée par l'État, intégrée aux produits du trafic. Hors cette compensation, la valeur ajoutée marchande propre est bien moindre (environ 10 MD en 2022)."),
+    note_lecture=("VA calculée (niveau C, cohérence de lecture) ; les barres comprennent la compensation de service public versée par l'État, intégrée aux produits du trafic. La courbe orange donne la valeur ajoutée HORS cette compensation — la production marchande propre —, bien moindre (environ 10 MD en 2022) ; les deux se lisent aussi dans l'onglet « Données »."),
 )
 ```
 
