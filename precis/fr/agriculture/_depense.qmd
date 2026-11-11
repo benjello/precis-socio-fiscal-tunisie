@@ -47,26 +47,29 @@ l'évolution réelle de la dépense. On les présente en deux segments distincts
 ### La série homogène depuis 2020 {#sec-agri-depense-serie}
 
 Depuis 2020, le budget de la mission se lit dans une nomenclature stable. Sur la période,
-il passe d'environ 1,73 à 2,28 milliard de dinars (@tbl-agri-depense-mission).
+il passe d'environ 1,73 à 2,28 milliard de dinars (@fig-agri-budget-mission).
 
-| Année (loi de finances) | Budget de la mission — crédits de paiement, ressources de l'État<br>(milliers de dinars) | Source |
-|---|---:|---|
-| 2020 | 1 726 890 | [@tn-pap-agriculture-2020] |
-| 2021 | 1 780 000 | [@tn-pap-agriculture-2021] |
-| 2022 | 1 850 000 | [@tn-pap-agriculture-2022] |
-| 2023 | 1 965 000 | [@tn-pap-agriculture-2024] |
-| 2024 | 2 202 075 | [@tn-pap-agriculture-2024] |
-| 2025 | 2 279 050 | [@tn-pap-agriculture-2025] |
-
-: Budget de la mission Agriculture, ressources hydrauliques et pêche maritime, crédits de paiement sur ressources de l'État, 2020-2025 {#tbl-agri-depense-mission}
-
-Note de lecture : chaque montant est celui de la loi de finances initiale de l'année, lu
-dans le projet annuel de performance de cette année ; il exclut les ressources propres des
-établissements publics. Les montants sont en dinars courants.
-
-<!-- TODO (redacteur) : convertir en figure engendrée quand figtools/figdata du livre existeront. -->
+```{python}
+#| label: fig-agri-budget-mission
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import agriculture as ag
+ag.fig_budget_mission(
+    caption=("Budget de la mission Agriculture, ressources hydrauliques et pêche maritime, "
+             "crédits de paiement sur ressources de l'État, 2020-2025"),
+    note_lecture=("Chaque montant est celui de la loi de finances initiale de l'année, lu dans "
+                  "le projet annuel de performance de cette année ; il exclut les ressources "
+                  "propres des établissements publics. Dinars courants."))
+```
 
 <!-- TODO (documentaliste) : recouper à l'image les totaux des PAP 2024 et 2025 (couche texte arabe) ; acquérir le PAP 2023 (lacune GBO) pour relever la prévision LF 2023 à sa source première plutôt que dans le PAP 2024. -->
+
+Le budget de 2019 est le premier présenté par programmes — 1 418 004 milliers de dinars
+[@tn-pap-agriculture-2019] — mais il ne comporte pas encore la section « opérations
+financières » introduite en 2020. La hausse apparente de 2019 à 2020, d'environ 22 %, cumule
+donc cet élargissement du périmètre et une augmentation réelle : la rupture de nomenclature se
+situe en 2020, non en 2019.
 
 ### L'ancienne nomenclature, de 2014 à 2018 {#sec-agri-depense-ancienne}
 
@@ -87,7 +90,7 @@ périmètre de nomenclature.
 
 Note de lecture : total du budget du ministère (Titre I, gestion ; Titre II, développement,
 sur budget et sur prêts extérieurs), en dinars courants. Ces montants ne sont pas comparables
-à ceux de la mission depuis 2020 (@tbl-agri-depense-mission), la nomenclature ayant changé
+à ceux de la mission depuis 2020 (@fig-agri-budget-mission), la nomenclature ayant changé
 en 2019.
 ::::
 
@@ -103,12 +106,14 @@ droit budgétaire antérieur reste donc, en l'état, non reconstitué.
 ### L'exécution du budget {#sec-agri-depense-execution}
 
 Les montants ci-dessus sont des prévisions des lois de finances. L'exécution — les crédits
-de paiement effectivement réalisés — n'est connue que pour deux exercices : elle atteint
-1 482 160,6 milliers de dinars en 2019 [@tn-rap-agriculture-2019] et 1 971 409 milliers de
-dinars en 2020 [@tn-rap-agriculture-2020], soit, cette année-là, un dépassement de la
-prévision. Prévision et exécution ne se recouvrent que sur ces deux années.
+de paiement effectivement réalisés — atteint 1 482 160,6 milliers de dinars en 2019
+[@tn-rap-agriculture-2019] et 1 971 409 milliers de dinars en 2020 [@tn-rap-agriculture-2020],
+soit, cette année-là, un dépassement de la prévision. L'exercice 2021 n'a pas de rapport annuel
+de performance publié ; l'exécution reprend à 1 890 273 milliers de dinars en 2022
+[@tn-rap-agriculture-2022] et 1 900 867 milliers de dinars en 2023 [@tn-rap-agriculture-2023],
+chaque fois proche de la prévision (104 % puis 97 %).
 
-<!-- TODO (documentaliste) : acquérir les RAP 2021 et suivants (lacune GBO) pour prolonger la série d'exécution ; recouper à l'image le total d'exécution 2019 (couche texte arabe). -->
+<!-- TODO (documentaliste) : RAP 2021 jamais publié sur gbo.tn (vérifié) ; prolonger la série d'exécution dès parution du RAP 2024. -->
 
 ## Les encouragements à l'agriculture dans les lois de finances {#sec-agri-depense-encouragements}
 

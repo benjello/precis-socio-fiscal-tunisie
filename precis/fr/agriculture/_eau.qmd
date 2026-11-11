@@ -143,22 +143,21 @@ selon la distance et le relief du transport. Rapporté à sa médiane, il est **
 2014 à 2021** — un gel pluriannuel —, puis **a augmenté à partir de 2022**, d'environ 46 % en
 quatre ans.
 
-| Année | Prix de gros médian (millime/m³) | Fourchette selon la zone (min–max) |
-|---|---|---|
-| 2014 à 2021 | 54 | 21–110 |
-| 2022 | 69 | 36–125 |
-| 2023 | 65 | 31–120 |
-| 2024 | 74 | 41–130 |
-| 2025 | 79 | 46–135 |
-
-: Prix de vente de l'eau en gros par la SECADENORD aux gestionnaires régionaux, médiane et fourchette sur une vingtaine de points de livraison, 2014-2025 {#tbl-eau-secadenord}
-
-::: {.note-lecture}
-Prix auquel la SECADENORD vend le mètre cube d'eau en gros au commissariat régional ou à la
-SONEDE, avant distribution à l'exploitant ; il mesure le coût amont du service, non le tarif
-facturé à l'agriculteur. Médiane et fourchette calculées sur les 21 à 22 points de livraison
-suivis chaque année ; les années 2014 à 2021 portent le même barème.
-:::
+```{python}
+#| label: fig-agri-eau-secadenord
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import agriculture as ag
+ag.fig_eau_secadenord(
+    caption=("Prix de vente de l'eau en gros par la SECADENORD aux gestionnaires régionaux, "
+             "médiane et fourchette sur une vingtaine de points de livraison, 2014-2025"),
+    note_lecture=("Prix auquel la SECADENORD vend le mètre cube d'eau en gros au commissariat "
+                  "régional ou à la SONEDE, avant distribution à l'exploitant ; il mesure le "
+                  "coût amont du service, non le tarif facturé à l'agriculteur. Médiane et "
+                  "fourchette calculées sur les 21 à 22 points de livraison suivis chaque "
+                  "année ; les années 2014 à 2021 portent le même barème."))
+```
 
 Le rapprochement de ce coût de gros et des tarifs facturés relevés par les études
 (@sec-agri-eau-tarif) éclaire l'ordre de grandeur de la subvention : la part variable

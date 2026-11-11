@@ -166,32 +166,46 @@ références cohérentes, recherches, rendu sans `[?]`) :
   plafonnée ; avance Trésor 3 MD pour 1987) ; libellé FR exact à confirmer à la main. Résidus OCR :
   2/3 résolus (77-627, code des eaux fasc. 23) ; **décret 74-847 non concluant** (scan FR dégradé).
 
-**Mise en chiffres (11/11/2026, séries datées versées depuis `tunisia-data`)** :
-- **dépense** : budget de la mission 2020-2025 (tableau) ; **trois découpages des encouragements LF
-  2010-2019** sourcés au mot (clés LF), avec réserve de non-chaînage ;
-- **eau** : prix de gros SECADENORD **2014-2025** (médiane + fourchette) — gel 2014-2021 puis +46 % ;
-- **investissement** : primes APIA **approuvées** 2010-2016 (périmètre agricole, 38→63 MD), après
-  réconciliation des jeux divergents ; clé `apia-repartition-doa-2010-2017` ajoutée ;
-- **calamités** : primes encaissées **CTAMA 2017-2020** (80→123 MD), états financiers CMF ; clé
-  `CtamaEF2020` ajoutée ;
-- **intrants** : laissés sans chiffre ferme (valeurs de presse ; le chapitre les décrit sans les
-  établir ; historique engrais au livre compensation par règle de domicile).
-- **Limite** : ces séries sont des **tableaux**, pas des **figures** — en faire des figures suppose
-  d'enregistrer les séries dans l'entrepôt `tunisia-data` (générateur + catalogue), un module
-  `precis/fr/agriculture/figures/` et un snapshot `_seriescache` : **chantier technique à part**,
-  à décider par le propriétaire (non ouvert ici).
+**Mise en chiffres — séries datées versées (état au 11/11/2026)**. Chaque chapitre de dispositif
+porte désormais au moins une série datée et sourcée, de source primaire ou cataloguée :
+- **dépense** : budget de la mission **2020-2025** ; point-charnière **2019** (1 418 004 kDT) qui date
+  la rupture de nomenclature en 2019→2020 ; exécution **2019, 2020, 2022, 2023** (RAP 2021 jamais
+  publié) ; **trois découpages des encouragements LF 2010-2019** sourcés au mot ;
+- **eau** : prix de gros SECADENORD **2014-2025** (gel 2014-2021 puis +46 %) ;
+- **investissement** : primes APIA **approuvées** 2010-2016 (38→63 MD) **et décaissées 2018-2023**
+  (52,8→60,1 MD ; pic 2019 à 112,5 ; trou 2010-2017) — rapports d'activité APIA ;
+- **calamités** : fonds — **dotation d'État 30 MD/an (2019-2023)** et **indemnisations versées**
+  (0→20,3→20,0→28,4→59,3 MD, 2019-2023) — rapports Fonds Spéciaux (TGRT/CTAMA) ; primes **CTAMA**
+  encaissées **2017-2020** (80→123 MD) — états financiers CMF ;
+- **intrants** : laissés sans chiffre ferme (valeurs de presse ; historique engrais au livre
+  compensation par règle de domicile).
+- **Clés CSL ajoutées** (toutes URL + sha256, PDF indexés dans `tunisia-data`) : `apia-repartition-doa-2010-2017`,
+  `apia-rapport-activite-2018…2023`, `CtamaEF2020`, `tn-minfin-fonds-speciaux-2022/2025`,
+  `tn-pap-agriculture-2019`, `tn-rap-agriculture-2022/2023`.
+- **Figures — FAIT (11/11)** : cinq séries converties en **graphes** (onglets Graphique/Données/Sources)
+  via le module `precis/fr/agriculture/figures/agriculture.py` — données inline + `register_provenance`
+  (pas de dépendance à l'entrepôt) : eau SECADENORD, budget de la mission, primes APIA
+  approuvées/décaissées, fonds calamités (dotation + indemnités), primes CTAMA. Rendu FR vérifié.
+  **Restent en tableaux** : les encouragements LF (trois séries **non chaînables** — un graphe
+  induirait une continuité trompeuse) ; les intrants (pas de série ferme).
 
-**Reporté (décision du 10/11/2026 : « pas d'économiste, plus tard »)** :
-- ch. 8 `_etudes.qmd` : reste un **stub** — attend la matière de l'économiste ;
-- les sections « Ce qu'en dit l'économie » en fin de chapitres de dispositif : non écrites (économiste) ;
-- **libellé FR exact** des art. 52-56 (loi 86-106) ; **décret 74-847** à lire à la main (OCR dégradé) ;
-- **fiches de recherche ouvertes** à rejouer : `r-agri-abandon-mev-fondateur`, `r-fosdap-creation`,
+**Reporté — reste réel à acquérir ou à faire** :
+- **Prolonger les séries** : dotation/indemnités du fonds **2024** (annexe 10 du PLF 2026, pas encore en
+  ligne — fiche `r-fst-calamites-2024`) ; **RAP 2024** ; décaissé APIA **2024+** ;
+- **Lacunes établies** : décaissé APIA **2010-2017** ; **PAP 2023** ; budget du ministère **avant 2014**
+  (`r-agri-budget-ministere-avant-2014`) ; montants réalisés du **crédit** (BCT, Cour des comptes) ;
+- **Ventilation** des indemnités du fonds **par calamité/gouvernorat** (gisement CTAMA, non consolidé) ;
+- **libellé FR exact** des art. 52-56 (loi 86-106, lu en AR) ; **décret 74-847** (OCR FR dégradé) ;
+- **fiches de recherche ouvertes** : `r-agri-abandon-mev-fondateur`, `r-fosdap-creation`,
   `r-agri-org-ministere-post2014`, `r-agri-cotisations-groupements-interprof`, `r-eau-irr-gic`,
-  `r-eau-irr-tarif-national`, `r-agri-budget-ministere-avant-2014` ;
-- **séries de flux réalisés** (montants abandonnés/bonifiés, indemnisations, primes APIA décaissées,
-  budget avant 2014) : partout `<!-- TODO (documentaliste) -->`, localisées, non dépouillées.
+  `r-eau-irr-tarif-national` ;
+- **Économiste (écarté, plus tard)** : ch. 8 `_etudes.qmd` (stub) + sections « Ce qu'en dit l'économie ».
 
-**Rien committé** — l'ensemble attend la revue humaine.
+**Note sur les §5-§7 ci-dessous** : ce sont le plan et le backlog **initiaux** (avant exécution).
+Le gros œuvre qu'ils annoncent est **fait** (structure, six chapitres, glossaire, bibliographie, OCR,
+chiffrage) ; l'état réel est celui des blocs ci-dessus. **Rien committé côté fusion** (gel).
+
+### ANCIEN PLAN (conservé pour mémoire — largement exécuté)
 
 ## 5. Suite de la chaîne éditoriale (après feu vert)
 

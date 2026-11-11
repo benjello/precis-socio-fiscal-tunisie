@@ -1,0 +1,19 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-11-11
+# séries (tunisia_data) : agri-eau-secadenord-tarif
+# sources (citation) : @secadenordTarif2025
+# fiches : 
+# méthode/hypothèses : Le prix de gros n'est pas le tarif facturé à l'agriculteur ; il en donne le plancher de coût. Les années 2014 à 2021 portent le même barème.
+# note : Prix de vente de l'eau en gros par la SECADENORD aux gestionnaires régionaux, médiane et fourchette sur une vingtaine de points de livraison, 2014-2025
+Année,Médiane (millime/m³),Minimum (millime/m³),Maximum (millime/m³)
+2014,54.4,21.4,110.4
+2015,54.4,21.4,110.4
+2016,54.4,21.4,110.4
+2017,54.4,21.4,110.4
+2018,54.4,21.4,110.4
+2019,54.4,21.4,110.4
+2020,54.4,21.4,110.4
+2021,54.4,21.4,110.4
+2022,69.4,36.4,125.4
+2023,65.3,31.4,120.4
+2024,74.4,41.4,130.4
+2025,79.4,46.4,135.4

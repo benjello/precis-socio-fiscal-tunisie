@@ -164,21 +164,20 @@ La taille de cette activité se mesure aux états financiers que la CTAMA dépos
 émetteur coté, au Conseil du marché financier. Les primes effectivement encaissées auprès des
 assurés y progressent régulièrement, de 80 à 123 millions de dinars en quatre ans.
 
-| Année | Encaissements de primes reçues des assurés (MD) |
-|---|---|
-| 2017 | 80,0 |
-| 2018 | 90,5 |
-| 2019 | 100,1 |
-| 2020 | 123,1 |
-
-: Primes encaissées par la CTAMA auprès de ses assurés, 2017-2020 [@CtamaEF2018 ; @CtamaEF2020] {#tbl-agri-calamites-ctama}
-
-::: {.note-lecture}
-Primes effectivement encaissées auprès des assurés (tableau de flux de trésorerie des états
-financiers), tous risques de la caisse confondus — non les seules cultures ; la CTAMA est
-l'assureur dominant du risque agricole. Les primes émises et acceptées non-vie de l'exercice
-2018 s'élèvent, à elles seules, à 73,0 millions de dinars.
-:::
+```{python}
+#| label: fig-agri-ctama-primes
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import agriculture as ag
+ag.fig_ctama_primes(
+    caption="Primes encaissées par la CTAMA auprès de ses assurés, 2017-2020",
+    note_lecture=("Primes effectivement encaissées auprès des assurés (tableau de flux de "
+                  "trésorerie des états financiers), tous risques de la caisse confondus — non "
+                  "les seules cultures ; la CTAMA est l'assureur dominant du risque agricole. "
+                  "Les primes non-vie émises et acceptées de 2018 s'élèvent, à elles seules, à "
+                  "73,0 millions de dinars."))
+```
 
 <!-- TODO (bibliographe) : sourcer sur texte primaire l'origine 1912 de la Caisse mutuelle agricole et la part de marché de la CTAMA sur le risque agricole (« 92 % », 2007, presse). -->
 
@@ -207,20 +206,36 @@ en met en œuvre ou en précise un (étape), s'il l'ajuste, ou s'il relève du c
 
 ## Les ressources du fonds et l'activité de l'assurance {#sec-agri-calamites-donnees}
 
-Le fonds est alimenté par une subvention de l'État inscrite au budget et par les contributions
-des agriculteurs qui y souscrivent, complétées de dons et d'autres ressources. Le montant de
-la dotation budgétaire, la contribution des déclarants et les indemnisations effectivement
-versées, année par année et par calamité, ne sont pas encore établis ici : les textes de
-reconnaissance fixent des zones et un pourcentage de dommages, non les montants globaux versés.
+Le fonds est alimenté par une subvention de l'État inscrite au budget, par la contribution des
+agriculteurs qui y souscrivent et par une taxe de solidarité collectée pour son compte par
+l'Office des céréales, complétées de produits de placements et des reliquats des exercices
+antérieurs. Le *Rapport sur l'activité des fonds spéciaux* annexé aux lois de finances en donne
+l'état du compte, année par année.
 
-<!-- TODO (documentaliste) : construire les séries datées — dotation budgétaire du fonds (annexes « fonds spéciaux / comptes spéciaux du Trésor » des lois de finances depuis 2018 ; établir sa nature budgétaire), contribution des déclarants (décrets 2018-822 / 2025-213), indemnisations versées par année et par calamité (rapports d'activité CTAMA au CMF, PAP/RAP mission Agriculture, communiqués ministériels, rapport éventuel de la Cour des comptes). Sans série datée, pas de chiffre ponctuel isolé dans le texte. -->
+Créé en 1986 mais longtemps inactif, le fonds ne démarre qu'à la fin de 2019. La subvention de
+l'État est depuis lors fixée à 30 millions de dinars par an ; les indemnisations effectivement
+versées montent à mesure que le fonds monte en charge, et bondissent en 2023 avec la sécheresse
+des grandes cultures.
 
-L'activité de l'assurance mutuelle agricole se lit, elle, dans les comptes de la CTAMA : les
-encaissements de primes reçues des assurés passent de 80,03 millions de dinars en 2017 à
-90,51 millions en 2018, les primes non-vie émises et acceptées s'élevant à 72,97 millions de
-dinars en 2018 [@CtamaEF2018]. Ces deux points appellent une série plus longue pour situer
-l'évolution de la couverture.
+```{python}
+#| label: fig-agri-fonds-calamites
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import agriculture as ag
+ag.fig_fonds_calamites(
+    caption=("Dotation de l'État et indemnisations versées par le fonds d'indemnisation des "
+             "calamités agricoles, 2018-2023"),
+    note_lecture=("Montants en réalisation d'exécution du compte spécial du Trésor (Trésorerie "
+                  "Générale et CTAMA, rapports sur les fonds spéciaux). Le fonds démarre le "
+                  "28 octobre 2019 : d'où une dotation et des indemnités nulles en 2018. Outre "
+                  "la dotation de l'État, ses principales ressources sont la taxe de solidarité "
+                  "collectée par l'Office des céréales (12 à 14 MD par an) et la contribution des "
+                  "souscripteurs. Les indemnisations de 2023 répondent à la sécheresse des "
+                  "grandes cultures."))
+```
 
-<!-- TODO (documentaliste) : constituer la série longue des primes du risque agricole (états financiers annuels CTAMA déposés au CMF, au-delà de 2017-2018), pour remplacer ces deux points par une évolution datée. -->
+L'activité de l'assurance mutuelle agricole, elle, se lit dans les comptes de la CTAMA
+(@sec-agri-calamites-assurance).
 
 <!-- TODO (terminologue) : notions à ancrer (passe 1 non faite) — calamité naturelle agricole ; fonds d'indemnisation des dommages agricoles dus aux calamités naturelles (ex-fonds de mutualité) ; souscription annuelle au fonds ; assurance mutuelle agricole / CTAMA ; société mutuelle de services agricoles (SMSA) ; Fonds national de garantie, distinct du fonds de calamité. -->

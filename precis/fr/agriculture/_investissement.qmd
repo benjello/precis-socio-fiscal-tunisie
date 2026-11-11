@@ -137,38 +137,40 @@ d'investissement ; il est décrit au livre de la fiscalité. La même loi de fin
 par ailleurs un ancien fonds de développement agricole, dont les ressources sont versées au
 budget général.
 
-## Les primes : approuvées, non versées {#sec-agri-investissement-donnees}
+## Les primes : approuvées et décaissées {#sec-agri-investissement-donnees}
 
 Les données publiques de l'APIA portent sur les [primes d'investissement](#g-prime-investissement-agricole)
 *approuvées* au titre des investissements agréés, non sur les primes effectivement *versées*.
 Pour le périmètre agricole de l'agence — agriculture, pêche, aquaculture et première
-transformation —, ces primes approuvées évoluent ainsi de 2010 à 2016
-[@apia-repartition-doa-2010-2017] :
+transformation —, les primes **approuvées** à l'agrément et les primes effectivement
+**décaissées** (les ordres de paiement exécutés, lus dans les rapports d'activité de l'agence)
+évoluent ainsi
+[@apia-repartition-doa-2010-2017 ; @apia-rapport-activite-2018 ; @apia-rapport-activite-2019 ; @apia-rapport-activite-2020 ; @apia-rapport-activite-2021 ; @apia-rapport-activite-2022 ; @apia-rapport-activite-2023] :
 
-| Année | Primes d'investissement approuvées, périmètre agricole (millions de dinars) |
-|---|---|
-| 2010 | 38 |
-| 2011 | 40 |
-| 2012 | 35 |
-| 2013 | 36 |
-| 2014 | 46 |
-| 2015 | 44 |
-| 2016 | 63 |
+```{python}
+#| label: fig-agri-apia-primes
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import agriculture as ag
+ag.fig_apia_primes(
+    caption=("Primes d'investissement agricole de l'APIA : approuvées (périmètre agricole, "
+             "2010-2016) et décaissées (2018-2023)"),
+    note_lecture=("Primes approuvées à l'agrément du projet et primes effectivement décaissées "
+                  "(ordres de paiement exécutés) ; les deux ne se chaînent pas, l'exercice 2017 "
+                  "manquant. Le point isolé de 2009 (54 MD) est d'une autre source, la Banque "
+                  "mondiale. Chaque année, un reliquat de demandes prêtes mais non payées faute "
+                  "de crédits subsiste (53 à 59 MD en fin d'exercice) ; l'année 2019 reflète un "
+                  "rattrapage d'arriéré."))
+```
 
-: Primes d'investissement agricole approuvées par l'APIA, périmètre agricole (agriculture, pêche, aquaculture, première transformation), 2010-2016 {#tbl-agri-invest-primes}
+Les primes approuvées ne forment pas une série homogène au-delà de 2016 : un second jeu de
+l'agence, ventilé par délégation, donne pour les mêmes années des totaux supérieurs d'environ
+30 %, de périmètre non documenté [@apia-subventions-gouv-delegation-2010-2016], et les exercices
+suivants divergent entre les millésimes publiés [@apia-indicateurs-investissement-prive]. Les
+primes décaissées, elles, restent le plus souvent bien inférieures à l'approuvé.
 
-::: {.note-lecture}
-Primes **approuvées** au moment de l'agrément du projet, et non primes **décaissées**. Elles ne
-se confondent pas avec les versements effectifs : le seul montant de primes versées connu, 54
-millions de dinars pour 2009, provient d'une source et d'une base différentes et ne se raccorde
-pas à cette série. Deux réserves : un second jeu de l'agence, ventilé par délégation, donne pour
-les mêmes années des totaux supérieurs d'environ 30 %, de périmètre non documenté
-[@apia-subventions-gouv-delegation-2010-2016] ; et les exercices 2017 et 2018 ne sont pas
-homogènes entre les millésimes publiés [@apia-indicateurs-investissement-prive]. La série des
-primes décaissées, elle, reste à obtenir auprès de l'agence.
-:::
-
-<!-- TODO (documentaliste) : série APIA des primes DÉCAISSÉES à obtenir (r-apia-primes-versees) — bulletins statistiques et rapports d'activité annuels de l'APIA. La série des primes approuvées est arrêtée à 2016 faute d'homogénéité au-delà. -->
+<!-- TODO (documentaliste) : décaissé APIA documenté 2018-2023 (rapports d'activité) ; 2010-2017 reste un trou sur le décaissé (fiche r-apia-primes-versees). Série approuvée du périmètre agricole arrêtée à 2016. -->
 
 ## La chronologie des textes {#sec-agri-investissement-chronologie}
 
