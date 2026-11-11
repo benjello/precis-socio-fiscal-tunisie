@@ -46,7 +46,6 @@
 #   uv run python scripts/recherches.py passe <id> --resultat aucun --couverture "…" \
 #       --couvert-jusqu-au AAAA-MM-JJ --sources jort_cache corpus_local
 
-
 - id: r-dl2024-4-art33
   objet: décret fixant les taux, les modalités et les procédures de bénéfice des pensions du régime des travailleuses agricoles (décret-loi n° 2024-4, art. 33)
   ou: [precis/fr/retraites/_secteur_prive.qmd#sec-travailleuses-agricoles]
