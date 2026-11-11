@@ -4165,3 +4165,79 @@ Annexes `annexe-budget-etat.qmd` et `annexe-comptes-nation.qmd` : les cinq clés
 - [ ] **À rapatrier dans Zotero** : `minfin-repartition-depenses-xls` (collection « Commun »,
   fonds partagé). `--verifier` : 0 perte ; `--dry-run` : conversion propre (`dataset`) ;
   `--controle-rangement` : 19 à déclasser **préexistants** (STEG, loi-climat), sans rapport.
+
+## Clôture du 10/11/2026 (éducation, bibliographe, densification)
+
+Branche `chantier/education-densification`. Écritures : `precis/fr/education/references.json`
+et `precis/fr/references.json` (fonds commun) seulement — l'éducation est FR seul.
+
+- **Promotions au fonds commun** : `loi2024-18` et `ins-fonction-publique-2025` étaient **déjà**
+  dans `precis/fr/references.json` et absentes des `references.json` de livre FR (promotion faite
+  antérieurement). Rien à déplacer. La retouche de graphie de l'éditeur de `ins-fonction-publique-2025`
+  (« Institut National de la Statistique, Tunisie » → « Institut national de la statistique ») a été
+  **annulée** (incohérence avec les copies AR de `remunerations_publiques`/`marche_travail`) :
+  l'harmonisation INS (FR + AR, tout le précis) reste à faire dans un passage dédié, hors de ce chantier.
+- **16 notices `legislation` créées** dans `precis/fr/education/references.json` (URL pist.tn, édition
+  française lue dans `pdf_fr` de `jort_cache.db`, sauf `decret-gouv2019-1129`, arabe seul) :
+  `decret60-220` (JORT 31/1960, p. 890-891) ; `decret61-14` (1/1961, p. 22-24) ;
+  `decret60-260` (35/1960, p. 993) ; `loi-org2020-9` (19/2020, p. 643) ;
+  `decret-pres2020-18` (19/2020, p. 645) ; `decret85-173` (10/1985, p. 195) ;
+  `decret90-1122` (46/1990, p. 908-909) ; `decret95-1953` (83/1995, p. 1966-1968) ;
+  `decret95-1954` (83/1995, p. 1968-1970) ; `decret95-2281` (94/1995, p. 2194-2196) ;
+  `decret2009-518` (18/2009, p. 654-656) ; `decret2007-2308` (75/2007, p. 3274) ;
+  `decret2007-2309` (75/2007, p. 3275) ; `arrete2013-03-29-abattement-etudiants` (28/2013, p. 1169,
+  `numero` NULL ; texte fiscal, candidat à promotion/renvoi fiscalité) ;
+  `arrete1992-06-08-personnel-prive` (41/1992, p. 819, `numero` NULL). `decret-gouv2019-1129`
+  (99/2019, p. 4516-4517, édition arabe) : la clé **existait déjà** dans `remunerations_publiques` ;
+  copie verbatim pour cohérence (pas de doublon divergent).
+  Ces notices ne sont pas encore citées par la prose (ancres de registre) : `--controle-rangement`
+  les verra « sans citation » tant que le rédacteur ne les a pas câblées.
+- **Clés déjà présentes, réutilisées sans doublon** : lois de finances en fonds commun
+  (`lf-1970` = loi 69-64 ; `lf-1998` = loi 97-88 ; `lf-1999` = loi 98-111 ; `lf-2000` = loi 99-101) ;
+  `loi58-45-lf1958`, `loi73-82-lf1974`, `decret80-1001-onou`, `decret2004-2437`, `decret2012-827`,
+  `decret92-1187`, `decret-gouv2019-656`, `decret2019-1085`, `arrete1957-01-15-retributions-scolaires`,
+  `arrete1993-09-commissions-prive`, `arrete2019-07-29-*`, `arrete2022-02-10-retributions-scolaires`.
+- **Reports — restés introuvables / non créés** : aucun texte de la liste n'est introuvable dans
+  `jort_cache` ; la fusion `lf-2019` / `loi2018-56-lf2019` n'est **pas** traitée (clés citées par
+  d'autres livres — fiscalité, finances locales, marche_travail — fusion hors périmètre).
+- **Relevé des diplômés du supérieur (§ 3 de `education-releve-diplomes-superieur-2026-11-10.md`)** :
+  3 notices `report` ajoutées telles quelles dans `precis/fr/education/references.json` :
+  `ins-tunisie-en-chiffres-diplomes`, `mesrs-chiffres2013-2014`, `mesrs-chiffres2012-2013`
+  (résolvent les 5 citations non résolues de `_superieur.qmd`). Note de `ins-annuaire-statistique`
+  (fonds commun) complétée de l'index des pages des tableaux de diplômés, sans autre changement.
+  Les deux plaquettes MESRS restent **à rapatrier dans tunisia-data** (agent data, § 7 de la note).
+- **Contrôles** : `check_references_coherentes.py` → 0 divergence ; rendu HTML éducation → 0 citation
+  non résolue, 0 « ?@ » ; `push_biblio --verifier` → 3573 entrées, 0 perte ; `--dry-run` → exit 0,
+  aucune `ValueError`. `--controle-rangement` **non lancé** : pas de `ZOTERO_API_KEY` dans
+  l'environnement (lecture Zotero en ligne impossible ici) — à rejouer avec la clé.
+
+## Versement bibliographique du livre « transport » (chantier transport, 10 nov. 2026)
+
+`precis/fr/transport/references.json` peuplé : **54 entrées** (format `{"items":[…]}`).
+Contrôles : `check_references_coherentes.py` ✓ ; JSON valide ✓.
+
+- **34 créées (propres au volume)** : org. ministères (decret2014-409/410, decret2016-97,
+  decret88-1413, decret2008-121, decret2018-883, decret2008-512), SPROLS (loi77-53, decret77-926),
+  DR transport (decret2023-456), agences (dl81-22-sntri, dl81-21-metro-tunis, loi57-19-snit,
+  loi92-32-apip), antécédents routiers/autoroutiers (loi86-17, decret87-654, loi76-71, loi81-72,
+  loi90-69, loi90-89), modificatifs org. transports terrestres (loi93-70, loi96-60, loi2006-55,
+  loi78-40, decret2006-2118, decret2006-1470) ; rapports (minfin-pap-transport-2024,
+  minfin-rap-transport-2020, gbo-pap-transport, gbo-pap-equipement-habitat,
+  minfin-budget-equipement-2013/-2014, wb-livre-blanc-transport-2016, cour-comptes-2017-sntri).
+- **20 recopiées verbatim** : de compensation (loi2004-33, decret2001-2621, loi85-77,
+  minfin-budget-transport-2013…-2017, cour-comptes-2008/2016) ; d'entreprises_publiques
+  (decret2000-2406-attt, loi98-111-lf1999, wb-infra-diagnostic-2019, wb-tunisia-gouvernance-ep-2014,
+  loi94-102, loi96-74, decret2015-957-metro-sfax, decret2023-584-afh, loi59-34-ctn, loi81-69-arru —
+  ces 6 derniers existaient déjà dans EP : notes T2/T5 les disaient « à créer », corrigé en recopie).
+- **URLs JORT pist.tn** résolues depuis `jort_cache.db` (champ `pdf_fr`) pour toutes les
+  legislation créées sauf **decret2018-883-organisation-equipement** : `pdf_fr` absent de
+  `jort_cache` → entrée sans URL + TODO (à retrouver sur pist.tn/édition FR).
+- **À rapatrier dans Zotero** : les 34 entrées créées (champ Extra `citation-key: <clé>`). Le livre
+  **`transport` est absent de `COLLECTION_TO_BOOK`** (`scripts/sync_biblio.py`) : créer une
+  collection Zotero « Transport » et l'ajouter au mapping, sinon toute descente écrasera ce fichier.
+- **Clés collectives** `gbo-pap-transport` / `gbo-pap-equipement-habitat` : éditions individuelles
+  (SHA-256, pages) listées dans les notes T4 — à verser si une clé par édition est préférée.
+- **Non recopiées** (fonds commun `precis/fr/references.json`, déjà lu via `../references.json`) :
+  loi89-9, gbo-rap-missions, minfin-transferts-garanties, minfin-finances-publiques-2010,
+  loi2018-56-lf2019-ar, minfin-ep-2020, minfin-entreprises-publiques-lf2021. Comptes EP
+  (minfin-entreprises-publiques-lf2020) laissés au domicile EP (cités par lien, non par @clé).
