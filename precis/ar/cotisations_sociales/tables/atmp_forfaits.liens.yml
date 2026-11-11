@@ -1,0 +1,57 @@
+- libelle: سقف الأجر للجزاف الفلاحي (بالأجر الأدنى الفلاحي)
+  parametre: parameters/prelevements_sociaux/atmp_forfaits/agriculture_peche/plafond_salaire_smag.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_forfaits.agriculture_peche.plafond_salaire_smag/table/
+- libelle: معامل الاشتراك الجزافي الفلاحي
+  parametre: parameters/prelevements_sociaux/atmp_forfaits/agriculture_peche/coefficient_cotisation.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_forfaits.agriculture_peche.coefficient_cotisation/table/
+- libelle: نسبة الاشتراك الجزافي الفلاحي
+  parametre: parameters/prelevements_sociaux/atmp_forfaits/agriculture_peche/taux.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_forfaits.agriculture_peche.taux/table/
+- libelle: قاعدة جبر الأضرار الفلاحية (أيام)
+  parametre: parameters/prelevements_sociaux/atmp_forfaits/agriculture_peche/base_prestations_jours.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_forfaits.agriculture_peche.base_prestations_jours/table/
+- libelle: معامل الخدمات — العملة العاديون
+  parametre: parameters/prelevements_sociaux/atmp_forfaits/agriculture_peche/coefficient_prestations_ordinaire.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_forfaits.agriculture_peche.coefficient_prestations_ordinaire/table/
+- libelle: معامل الخدمات — العملة المختصون
+  parametre: parameters/prelevements_sociaux/atmp_forfaits/agriculture_peche/coefficient_prestations_specialise.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_forfaits.agriculture_peche.coefficient_prestations_specialise/table/
+- libelle: معامل الخدمات — العملة المؤهلون
+  parametre: parameters/prelevements_sociaux/atmp_forfaits/agriculture_peche/coefficient_prestations_qualifie.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_forfaits.agriculture_peche.coefficient_prestations_qualifie/table/
+- libelle: ساعات السنة — سائقو اللواج والتاكسي
+  parametre: parameters/prelevements_sociaux/atmp_forfaits/chauffeurs_taxi_louage/nombre_heures.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_forfaits.chauffeurs_taxi_louage.nombre_heures/table/
+- libelle: المعامل — سائقو اللواج والتاكسي
+  parametre: parameters/prelevements_sociaux/atmp_forfaits/chauffeurs_taxi_louage/coefficient.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_forfaits.chauffeurs_taxi_louage.coefficient/table/
+- libelle: ساعات السنة — المدلّكون بالحمّامات
+  parametre: parameters/prelevements_sociaux/atmp_forfaits/masseurs_bains_maures/nombre_heures.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_forfaits.masseurs_bains_maures.nombre_heures/table/
+- libelle: المعامل — المدلّكون بالحمّامات
+  parametre: parameters/prelevements_sociaux/atmp_forfaits/masseurs_bains_maures/coefficient.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_forfaits.masseurs_bains_maures.coefficient/table/
+- libelle: القاعدة السنوية (أيام) — عملة المنازل
+  parametre: parameters/prelevements_sociaux/atmp_forfaits/employes_maison/base_jours.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_forfaits.employes_maison.base_jours/table/
+- libelle: النسبة — المعينون المنزليون
+  parametre: parameters/prelevements_sociaux/atmp_forfaits/employes_maison/taux_aides_menage.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_forfaits.employes_maison.taux_aides_menage/table/
+- libelle: النسبة — بقية عملة المنازل
+  parametre: parameters/prelevements_sociaux/atmp_forfaits/employes_maison/taux_autres.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_forfaits.employes_maison.taux_autres/table/
+- libelle: المعامل — سائقو السيارات
+  parametre: parameters/prelevements_sociaux/atmp_forfaits/employes_maison/coefficient_conducteurs.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_forfaits.employes_maison.coefficient_conducteurs/table/
+- libelle: النسبة — سائقو السيارات
+  parametre: parameters/prelevements_sociaux/atmp_forfaits/employes_maison/taux_conducteurs.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_forfaits.employes_maison.taux_conducteurs/table/
+- libelle: ساعات الشهر — العملة الوقتيون لدى الخواص
+  parametre: parameters/prelevements_sociaux/atmp_forfaits/temporaires_particuliers/nombre_heures_mensuel.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_forfaits.temporaires_particuliers.nombre_heures_mensuel/table/
+- libelle: المعامل — العملة العاديون
+  parametre: parameters/prelevements_sociaux/atmp_forfaits/temporaires_particuliers/coefficient_ordinaire.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_forfaits.temporaires_particuliers.coefficient_ordinaire/table/
+- libelle: المعامل — العملة المؤهلون
+  parametre: parameters/prelevements_sociaux/atmp_forfaits/temporaires_particuliers/coefficient_qualifie.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_forfaits.temporaires_particuliers.coefficient_qualifie/table/

@@ -1,0 +1,66 @@
+- libelle: الحبوب (بعلي)
+  parametre: parameters/prelevements_sociaux/atmp_forfaits/agriculture_peche/journees/cereales_sec.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_forfaits.agriculture_peche.journees.cereales_sec/table/
+- libelle: الحبوب (مروي)
+  parametre: parameters/prelevements_sociaux/atmp_forfaits/agriculture_peche/journees/cereales_irrigue.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_forfaits.agriculture_peche.journees.cereales_irrigue/table/
+- libelle: القطاني والزراعات الكبرى الأخرى (بعلي)
+  parametre: parameters/prelevements_sociaux/atmp_forfaits/agriculture_peche/journees/legumineuses_grandes_cultures_sec.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_forfaits.agriculture_peche.journees.legumineuses_grandes_cultures_sec/table/
+- libelle: الزراعات الصناعية (اللفت السكري والقطن)
+  parametre: parameters/prelevements_sociaux/atmp_forfaits/agriculture_peche/journees/cultures_industrielles.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_forfaits.agriculture_peche.journees.cultures_industrielles/table/
+- libelle: 'زراعات الخضر في الحقل: الباذنجانيات (الطماطم)'
+  parametre: parameters/prelevements_sociaux/atmp_forfaits/agriculture_peche/journees/maraicheres_solanacees.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_forfaits.agriculture_peche.journees.maraicheres_solanacees/table/
+- libelle: 'زراعات الخضر في الحقل: البطاطا وغيرها'
+  parametre: parameters/prelevements_sociaux/atmp_forfaits/agriculture_peche/journees/maraicheres_pommes_de_terre.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_forfaits.agriculture_peche.journees.maraicheres_pommes_de_terre/table/
+- libelle: البستنة في الحقل
+  parametre: parameters/prelevements_sociaux/atmp_forfaits/agriculture_peche/journees/horticulture_plein_champ.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_forfaits.agriculture_peche.journees.horticulture_plein_champ/table/
+- libelle: الزياتين واللوز
+  parametre: parameters/prelevements_sociaux/atmp_forfaits/agriculture_peche/journees/oliviers_amandiers.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_forfaits.agriculture_peche.journees.oliviers_amandiers/table/
+- libelle: كروم النبيذ (بعلي)
+  parametre: parameters/prelevements_sociaux/atmp_forfaits/agriculture_peche/journees/vigne_cuve.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_forfaits.agriculture_peche.journees.vigne_cuve/table/
+- libelle: كروم عنب المائدة
+  parametre: parameters/prelevements_sociaux/atmp_forfaits/agriculture_peche/journees/vigne_table.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_forfaits.agriculture_peche.journees.vigne_table/table/
+- libelle: القوارص
+  parametre: parameters/prelevements_sociaux/atmp_forfaits/agriculture_peche/journees/agrumes.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_forfaits.agriculture_peche.journees.agrumes/table/
+- libelle: الأشجار المثمرة (بعلي)
+  parametre: parameters/prelevements_sociaux/atmp_forfaits/agriculture_peche/journees/arboriculture_sec.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_forfaits.agriculture_peche.journees.arboriculture_sec/table/
+- libelle: الأشجار المثمرة (مروي)
+  parametre: parameters/prelevements_sociaux/atmp_forfaits/agriculture_peche/journees/arboriculture_irrigue.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_forfaits.agriculture_peche.journees.arboriculture_irrigue/table/
+- libelle: النخيل
+  parametre: parameters/prelevements_sociaux/atmp_forfaits/agriculture_peche/journees/palmier_dattier.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_forfaits.agriculture_peche.journees.palmier_dattier/table/
+- libelle: الزراعات داخل البيوت المحمية
+  parametre: parameters/prelevements_sociaux/atmp_forfaits/agriculture_peche/journees/cultures_sous_serres.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_forfaits.agriculture_peche.journees.cultures_sous_serres/table/
+- libelle: زراعة الموز داخل البيوت المحمية
+  parametre: parameters/prelevements_sociaux/atmp_forfaits/agriculture_peche/journees/bananes_sous_serres.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_forfaits.agriculture_peche.journees.bananes_sous_serres/table/
+- libelle: 'تربية الماشية: الأبقار (1995)؛ الأبقار والخيول والإبل (1999)'
+  parametre: parameters/prelevements_sociaux/atmp_forfaits/agriculture_peche/journees/elevage_bovins.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_forfaits.agriculture_peche.journees.elevage_bovins/table/
+- libelle: 'تربية الماشية: الأغنام'
+  parametre: parameters/prelevements_sociaux/atmp_forfaits/agriculture_peche/journees/elevage_ovins.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_forfaits.agriculture_peche.journees.elevage_ovins/table/
+- libelle: تربية الدواجن
+  parametre: parameters/prelevements_sociaux/atmp_forfaits/agriculture_peche/journees/aviculture.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_forfaits.agriculture_peche.journees.aviculture/table/
+- libelle: تربية الأرانب
+  parametre: parameters/prelevements_sociaux/atmp_forfaits/agriculture_peche/journees/cuniculture.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_forfaits.agriculture_peche.journees.cuniculture/table/
+- libelle: الصيد الساحلي
+  parametre: parameters/prelevements_sociaux/atmp_forfaits/agriculture_peche/journees/peche_cotiere.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_forfaits.agriculture_peche.journees.peche_cotiere/table/
+- libelle: الصيد بشباك الجر
+  parametre: parameters/prelevements_sociaux/atmp_forfaits/agriculture_peche/journees/peche_chalut.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_forfaits.agriculture_peche.journees.peche_chalut/table/
