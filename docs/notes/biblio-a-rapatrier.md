@@ -4348,3 +4348,11 @@ Contrôles : `check_references_coherentes.py` ✓ ; JSON valide ✓.
   loi89-9, gbo-rap-missions, minfin-transferts-garanties, minfin-finances-publiques-2010,
   loi2018-56-lf2019-ar, minfin-ep-2020, minfin-entreprises-publiques-lf2021. Comptes EP
   (minfin-entreprises-publiques-lf2020) laissés au domicile EP (cités par lien, non par @clé).
+
+## 2026-11-11 — décret n° 2023-12 (prorogation unité GES, éducation)
+- Clé `decret2023-12-prorogation-ges` créée dans `precis/fr/education/references.json`
+  (JORT n° 9 du 27 janvier 2023, p. 250 ; recid jort_cache 170908).
+- **URL pist.tn FR manquante** : `pdf_fr` vide dans `jort_cache.db` pour tout le fascicule
+  JORT 2023 n° 9 (seul `pdf_ar` = `/jort/2023/2023A/Ja0092023.pdf` présent). URL FR non
+  renseignée pour ne rien inventer — à compléter dès que le PDF FR du fascicule est mis en
+  cache. **À rapatrier dans Zotero** (citation-key `decret2023-12-prorogation-ges`).

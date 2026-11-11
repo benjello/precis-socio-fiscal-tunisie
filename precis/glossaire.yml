@@ -20562,23 +20562,27 @@ entries:
 
   - id: recteur-universite
     acronyme: null
-    statut: provisoire  # terme AR à confirmer sur l'édition arabe du JORT
+    statut: valide
     references: [decret60-98, loi86-80, loi2000-67]
     source_definition: {ref: decret60-98, locator: "art. 3"}
+    source_traduction: {ref: decret60-98}
     voir_aussi: [universite-de-tunis, president-universite]
     fr:
       terme: Recteur d'université
       definition: >
-        Responsable qui dirige l'université, nommé par décret ; titre en usage de
-        1960 à 2000, d'abord pour l'université de Tunis puis pour les universités
-        régionales, avant son remplacement par le président d'université.
+        Responsable qui dirige l'université, nommé par décret ; titre français en
+        usage de 1960 à 2000, d'abord pour l'université de Tunis puis pour les
+        universités régionales, avant son remplacement par le président
+        d'université. En arabe, le terme رئيس الجامعة désigne indistinctement le
+        recteur et le président : la distinction n'existe qu'en français.
       synonymes: [Recteur]
     ar:
-      terme: مدير الجامعة
+      terme: رئيس الجامعة
       definition: >
-        المسؤول الذي يدير الجامعة، يُعيَّن بأمر؛ وقد استُعمل هذا اللقب من سنة 1960
-        إلى سنة 2000، لجامعة تونس أوّلاً ثمّ للجامعات الجهوية، قبل أن يحلّ محلّه
-        رئيس الجامعة.
+        المسؤول الذي يدير الجامعة، يُعيَّن بأمر؛ استُعمل اللقب الفرنسي «recteur» من
+        سنة 1960 إلى سنة 2000، لجامعة تونس أوّلاً ثمّ للجامعات الجهوية، قبل أن
+        يُستبدَل باللقب الفرنسي «président». أمّا في العربية فيُطلق «رئيس الجامعة»
+        على الوظيفتين معاً، إذ لا تمييز اصطلاحيّ إلّا في الفرنسية.
       synonymes: []
 
   - id: president-universite
@@ -20604,7 +20608,7 @@ entries:
 
   - id: cycles-court-moyen-long
     acronyme: null
-    statut: provisoire  # terme AR à confirmer sur l'édition arabe du JORT
+    statut: valide
     references: [loi76-65]
     source_definition: {ref: loi76-65, locator: "art. 7"}
     voir_aussi: [licence, mastere, doctorat]
@@ -20616,7 +20620,7 @@ entries:
         long, avec passerelles ; antérieure au système LMD.
       synonymes: []
     ar:
-      terme: المراحل القصيرة والمتوسّطة والطويلة
+      terme: "المراحل الثلاث: القصيرة والمتوسّطة والطويلة"
       definition: >
         هيكلة للدراسات العليا أرستها قانون سنة 1976، توزّع التكوين على مرحلة
         قصيرة ومرحلة متوسّطة ومرحلة طويلة مع جسور بينها؛ وهي سابقة لنظام إجازة
@@ -20625,9 +20629,10 @@ entries:
 
   - id: diplome-universitaire-technologie
     acronyme: DUT
-    statut: provisoire  # terme AR à confirmer sur l'édition arabe du JORT
+    statut: valide
     references: [decret2004-2722]
     source_definition: {ref: decret2004-2722, locator: "art. 1-3"}
+    source_traduction: {ref: decret2004-2722}
     voir_aussi: [licence-appliquee, baccalaureat]
     fr:
       terme: Diplôme universitaire de technologie
@@ -20670,9 +20675,10 @@ entries:
 
   - id: contrat-formation-recherche
     acronyme: null
-    statut: provisoire  # terme AR à confirmer sur l'édition arabe du JORT
+    statut: valide
     references: [loi2000-67, loi2008-19]
     source_definition: {ref: loi2000-67, locator: "art. 5 nouveau"}
+    source_traduction: {ref: loi2000-67}
     voir_aussi: [president-universite]
     fr:
       terme: Contrat de formation et de recherche
@@ -20733,15 +20739,16 @@ entries:
       terme: المركز الوطني للتكوين المستمر والترقية المهنية
       definition: >
         مؤسسة عمومية أُحدثت بقانون سنة 1993، تتولّى التكوين المستمرّ وتحسين مستوى
-        العمّال وإعادة تأهيلهم في معاهد النهوض بالعمل؛ صُنّفت ضمن المؤسسات
+        العمّال وإعادة تأهيلهم في معاهد الترقية العليا للشغل؛ صُنّفت ضمن المؤسسات
         العمومية التي لا تكتسي صبغة إدارية سنة 1997، ومقرّها تونس.
       synonymes: [CNFCPP]
 
   - id: ipst
     acronyme: IPST
-    statut: provisoire  # terme AR à confirmer sur l'édition arabe du JORT
+    statut: valide
     references: [loi93-12]
     source_definition: {ref: loi93-12, locator: "art. 3"}
+    source_traduction: {ref: loi93-12}
     voir_aussi: [cnfcpp]
     fr:
       terme: Institut de promotion supérieure du travail
@@ -20751,7 +20758,7 @@ entries:
         perfectionnement et la reconversion des travailleurs (loi de 1993).
       synonymes: [IPST]
     ar:
-      terme: معهد النهوض بالعمل
+      terme: معهد الترقية العليا للشغل
       definition: >
         مؤسسة مساعدة تابعة للمركز الوطني للتكوين المستمر والترقية المهنية، تجري
         فيها عمليات التكوين المستمرّ وتحسين المستوى وإعادة تأهيل العمّال (قانون
@@ -20782,9 +20789,10 @@ entries:
 
   - id: homologation-certificats-diplomes
     acronyme: null
-    statut: provisoire  # terme AR à confirmer sur l'édition arabe du JORT
+    statut: valide
     references: [decret94-1397, decret2009-2139]
     source_definition: {ref: decret94-1397, locator: "art. 4-10"}
+    source_traduction: {ref: decret94-1397}
     voir_aussi: [cenaffif]
     fr:
       terme: Homologation des certificats et diplômes
@@ -20795,11 +20803,11 @@ entries:
         rattache à un niveau de la classification nationale (décret de 1994).
       synonymes: []
     ar:
-      terme: المصادقة على الشهائد والدبلومات
+      terme: التنظير
       definition: >
-        إجراء يعترف بمقتضاه الوزير، بطلب من هيكل عمومي أو خاصّ وبعد نظر لجنة قارّة،
-        وبمقرّر لمدّة خمس سنوات، بشهادة أو دبلوم في التكوين المهني ويربطه بمستوى من
-        التصنيف الوطني (أمر سنة 1994).
+        إجراء يُصدر بمقتضاه الوزير، بطلب من هيكل عمومي أو خاصّ وبعد نظر لجنة قارّة،
+        مقرّرَ تنظيرٍ لمدّة خمس سنوات لشهادة أو مؤهّل في التكوين المهني ويربطه
+        بمستوى من التصنيف الوطني (أمر سنة 1994).
       synonymes: []
 
   - id: direction-generale-enfance
