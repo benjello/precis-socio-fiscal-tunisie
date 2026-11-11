@@ -3294,6 +3294,538 @@ entries:
         2).
       synonymes: []
 
+  - id: beneficiaire
+    acronyme: null
+    statut: provisoire  # terme AR relevé indicativement (المنتفع) ; la Lettre du CRES n° 5 est en français, à confirmer sur un texte AR
+    references: [blel-chahed2014-depenses-cnam, loi2004-71]
+    source_definition: {ref: blel-chahed2014-depenses-cnam, locator: "p. 3, note 6"}
+    voir_aussi: [assure-social, ayant-droit, cnam]
+    fr:
+      terme: Bénéficiaire (assurance maladie)
+      definition: >
+        Personne couverte par le régime d'assurance maladie : l'affilié — l'assuré
+        social qui ouvre le droit — et ses ayants droit. La CNAM compte ainsi deux
+        grandeurs distinctes : les affiliés et les bénéficiaires, ces derniers
+        regroupant les affiliés des trois filières, les salariés à faibles revenus
+        et les étudiants, avec leurs ayants droit.
+      synonymes: []
+    ar:
+      terme: المنتفع
+      definition: >
+        الشخص المشمول بنظام التأمين على المرض: المنخرط — أي المضمون الاجتماعي الذي
+        يفتح الحق — وذوو الحق منه. ويحتسب الصندوق الوطني للتأمين على المرض مقدارين
+        مختلفين: المنخرطين والمنتفعين، ويشمل هؤلاء منخرطي المنظومات الثلاث والأجراء
+        ذوي الدخل الضعيف والطلبة، مع ذوي حقهم.
+      synonymes: [المضمون الاجتماعي وأولو الحق]
+
+  - id: apci
+    acronyme: APCI
+    statut: valide  # AR (passe 2) : intitulé officiel du JORT AR de l'arrêté du 25 juin 2007, confirmé par legislation.tn et le portail du ministère de la Santé
+    references: [arrete-2007-06-25-affections-lourdes, blel-chahed2014-depenses-cnam]
+    source_definition: {ref: arrete-2007-06-25-affections-lourdes}
+    source_traduction: {ref: arrete-2007-06-25-affections-lourdes}
+    voir_aussi: [cnam, ticket-moderateur, filiere-publique]
+    fr:
+      terme: Affections prises en charge intégralement
+      definition: >
+        Affections lourdes ou chroniques dont les soins sont pris en charge
+        intégralement par le régime de base d'assurance maladie, sans ticket
+        modérateur, dans la limite des tarifs conventionnels. Leur liste est fixée
+        par l'arrêté conjoint du ministre des affaires sociales et du ministre de la
+        santé publique du 25 juin 2007.
+      synonymes: [Affections lourdes ou chroniques prises en charge intégralement]
+    ar:
+      terme: الأمراض الثقيلة أو المزمنة المتكفل بها كليا
+      definition: >
+        أمراض ثقيلة أو مزمنة يتكفل النظام القاعدي للتأمين على المرض بعلاجها كليا،
+        دون معلوم تعديلي، في حدود التعريفات التعاقدية. وتُضبط قائمتها بالقرار
+        المشترك لوزير الشؤون الاجتماعية ووزير الصحة العمومية المؤرخ في 25 جوان
+        2007 المتعلق بتحديد قائمة الأمراض الثقيلة أو المزمنة المتكفل بها كليا من
+        قبل الصندوق الوطني للتأمين على المرض.
+      synonymes: [الأمراض المزمنة المتكفل بها كليا]
+
+  - id: charges-techniques
+    acronyme: null
+    statut: provisoire  # terme AR relevé indicativement (الأعباء الفنية) ; les états financiers CNAM versés sont en français
+    references: [cnam-etats-financiers-2011-2015]
+    source_definition: {ref: cnam-etats-financiers-2011-2015, locator: "p. 3"}
+    voir_aussi: [resultat-technique, cnam]
+    fr:
+      terme: Charges techniques (d'une caisse)
+      definition: >
+        Charges du compte de résultat d'une caisse de sécurité sociale au titre de
+        ses régimes de prestations, par opposition à ses charges administratives.
+        Dans les états financiers de la CNAM, elles totalisent les trois régimes —
+        assurance maladie, assurances sociales en espèces, accidents du travail et
+        maladies professionnelles — et se distinguent des prestations décaissées,
+        qui sont une mesure de trésorerie.
+      synonymes: []
+    ar:
+      terme: الأعباء الفنية
+      definition: >
+        أعباء قائمة نتائج صندوق الضمان الاجتماعي بعنوان أنظمة المنافع، خلافا
+        للأعباء الإدارية. وتجمع في القوائم المالية للصندوق الوطني للتأمين على المرض
+        الأنظمة الثلاثة — التأمين على المرض والتأمينات الاجتماعية النقدية وحوادث
+        الشغل والأمراض المهنية — وتتميز عن المنافع المصروفة التي هي مقياس خزينة.
+      synonymes: []
+
+  - id: resultat-technique
+    acronyme: null
+    statut: provisoire  # terme AR relevé indicativement (النتيجة الفنية) ; les états financiers CNAM versés sont en français
+    references: [cnam-etats-financiers-2011-2015]
+    source_definition: {ref: cnam-etats-financiers-2011-2015, locator: "p. 3"}
+    voir_aussi: [charges-techniques, cnam]
+    fr:
+      terme: Résultat technique
+      definition: >
+        Différence entre les produits techniques et les charges techniques du
+        compte de résultat d'une caisse, avant charges administratives et autres
+        produits et charges ; les états financiers de la CNAM l'impriment sous le
+        nom de « marge brute ».
+      synonymes: [Marge brute]
+    ar:
+      terme: النتيجة الفنية
+      definition: >
+        الفارق بين المداخيل الفنية والأعباء الفنية في قائمة نتائج الصندوق، قبل
+        الأعباء الإدارية وسائر المداخيل والأعباء؛ وتدرجها القوائم المالية للصندوق
+        الوطني للتأمين على المرض تحت اسم «الهامش الخام».
+      synonymes: []
+
+  - id: depenses-totales-de-sante
+    acronyme: DTS
+    statut: provisoire  # terme AR relevé indicativement (النفقات الجملية للصحة) ; à confirmer sur un document AR des comptes de la santé
+    references: [benabdelaziz2018-financement]
+    source_definition: {ref: benabdelaziz2018-financement, locator: "encadré 1, p. 792"}
+    voir_aussi: [depense-courante-de-sante, comptes-de-la-sante]
+    fr:
+      terme: Dépenses totales de santé
+      definition: >
+        Dans les comptes de la santé du ministère, somme de la dépense courante de
+        santé et de la formation brute de capital — bâtiments et équipements. Elles
+        ne se raccordent pas à la série de l'OMS, qui ne retient que la dépense
+        courante.
+      synonymes: []
+    ar:
+      terme: النفقات الجملية للصحة
+      definition: >
+        في حسابات الصحة التي يعدها وزارة الصحة، مجموع النفقات الجارية للصحة وتكوين
+        رأس المال الخام — البنايات والتجهيزات. وهي لا تُوصل بسلسلة منظمة الصحة
+        العالمية التي لا تعتمد إلا النفقات الجارية.
+      synonymes: []
+
+  - id: depense-courante-de-sante
+    acronyme: null
+    statut: provisoire  # terme AR non attesté dans le corpus versé ; traduction par analogie avec النفقات الجملية للصحة, à confirmer
+    references: [oms-ghed-comptes-sante-tunisie, benabdelaziz2018-financement]
+    source_definition: {ref: benabdelaziz2018-financement, locator: "encadré 1, p. 792"}
+    voir_aussi: [depenses-totales-de-sante, comptes-de-la-sante]
+    fr:
+      terme: Dépense courante de santé
+      definition: >
+        Valeur des biens et services de santé consommés dans le pays pendant
+        l'année, hors formation de capital (bâtiments et équipements), selon le
+        cadre des comptes de la santé. La base mondiale de l'OMS la répartit entre
+        financement public intérieur, financement privé intérieur — qui comprend
+        les paiements directs des ménages — et ressources extérieures.
+      synonymes: []
+    ar:
+      terme: النفقات الجارية للصحة
+      definition: >
+        قيمة السلع والخدمات الصحية المستهلكة في البلاد خلال السنة، دون تكوين رأس
+        المال (البنايات والتجهيزات)، حسب إطار حسابات الصحة. وتوزعها قاعدة منظمة
+        الصحة العالمية بين تمويل عمومي داخلي وتمويل خاص داخلي — يشمل المدفوعات
+        المباشرة للأسر — وموارد خارجية.
+      synonymes: []
+
+  - id: comptes-de-la-sante
+    acronyme: null
+    statut: provisoire  # terme AR relevé indicativement (الحسابات الوطنية للصحة) ; à confirmer sur un document AR
+    references: [benabdelaziz2018-financement, oms-ghed-comptes-sante-tunisie]
+    source_definition: {ref: benabdelaziz2018-financement, locator: "p. 791-792"}
+    voir_aussi: [depenses-totales-de-sante, depense-courante-de-sante]
+    fr:
+      terme: Comptes de la santé
+      definition: >
+        Cadre comptable qui retrace l'ensemble des dépenses de santé d'un pays et
+        leurs financeurs, selon la méthodologie internationale des comptes de la
+        santé de l'OMS (System of Health Accounts). En Tunisie, ils sont établis
+        par un groupe multisectoriel du pôle d'économie de la santé du ministère de
+        la Santé, à partir des données des ministères, de la CNAM, des assurances
+        et mutuelles et des enquêtes de l'INS.
+      synonymes: [Comptes nationaux de la santé]
+    ar:
+      terme: الحسابات الوطنية للصحة
+      definition: >
+        إطار محاسبي يرصد مجموع نفقات الصحة في البلاد ومموليها، حسب المنهجية
+        الدولية لحسابات الصحة لمنظمة الصحة العالمية. وتعدها في تونس مجموعة متعددة
+        القطاعات بقطب اقتصاديات الصحة بوزارة الصحة، اعتمادا على معطيات الوزارات
+        والصندوق الوطني للتأمين على المرض وشركات التأمين والتعاونيات ومسوح المعهد
+        الوطني للإحصاء.
+      synonymes: []
+
+  - id: depense-catastrophique
+    acronyme: null
+    statut: provisoire  # terme AR non attesté dans le corpus versé (usage OMS arabe) ; à confirmer par un arabophone ou un document OMS AR
+    references: [ismail-2015-these, oms-difficultes-financieres-soins-tunisie]
+    source_definition: {ref: ismail-2015-these, locator: "p. 48, note 43, et p. 122-127"}
+    voir_aussi: [depense-courante-de-sante, cnam]
+    fr:
+      terme: Dépense catastrophique de santé
+      definition: >
+        Dépense de santé payée directement par un ménage qui dépasse un seuil de sa
+        capacité de payer : 40 % de ses dépenses non alimentaires selon la
+        définition de l'OMS, ou 10 % de ses dépenses totales selon le seuil utilisé
+        par la Banque mondiale.
+      synonymes: [Dépenses catastrophiques]
+    ar:
+      terme: الإنفاق الصحي الكارثي
+      definition: >
+        نفقات صحية تدفعها الأسرة مباشرة وتتجاوز عتبة من قدرتها على الدفع: 40
+        بالمائة من نفقاتها غير الغذائية حسب تعريف منظمة الصحة العالمية، أو 10
+        بالمائة من نفقاتها الجملية حسب العتبة التي يعتمدها البنك الدولي.
+      synonymes: []
+
+  # --- Santé : notions densifiées (passe 1 « termes », 2026-11) ---
+  # Termes AR pressentis (notes documentaires), non lus sur un document arabe
+  # versé : statut provisoire tant qu'une source AR n'atteste pas le libellé.
+
+  - id: plan-developpement-quinquennal
+    acronyme: null
+    statut: provisoire  # terme AR pressenti (المخطط الخماسي للتنمية), non lu sur un document AR versé
+    references: [bm-2006-etude-secteur-sante]
+    source_definition: {ref: bm-2006-etude-secteur-sante, locator: "§ 6.1, pp. 73-75"}
+    voir_aussi: [carte-sanitaire]
+    fr:
+      terme: Plan de développement quinquennal
+      definition: >
+        Cadre de planification économique et sociale arrêté par l'État pour cinq
+        ans, qui fixe les priorités et les investissements publics, dont ceux du
+        secteur de la santé (équipement hospitalier, formation des personnels,
+        couverture sanitaire). La politique sanitaire d'avant 1991 se lit dans la
+        succession de ces plans depuis le début des années 1960.
+      synonymes: [Plan quinquennal de développement]
+    ar:
+      terme: المخطط الخماسي للتنمية
+      definition: >
+        إطار للتخطيط الاقتصادي والاجتماعي تضبطه الدولة لمدة خمس سنوات، يحدد
+        الأولويات والاستثمارات العمومية، ومنها استثمارات قطاع الصحة (التجهيز
+        الاستشفائي وتكوين الأعوان والتغطية الصحية).
+      synonymes: []
+
+  - id: carte-sanitaire
+    acronyme: null
+    statut: provisoire  # terme AR pressenti (الخريطة الصحية), non lu sur un document AR versé
+    references: [loi91-63]
+    source_definition: {ref: loi91-63}
+    voir_aussi: [etablissement-public-sante, plan-developpement-quinquennal]
+    fr:
+      terme: Carte sanitaire
+      definition: >
+        Instrument de planification et d'autorisation qui répartit sur le
+        territoire les structures sanitaires et les équipements lourds (scanners,
+        IRM, hémodialyse…) soumis à normalisation du ministère de la Santé, et en
+        encadre la création.
+      synonymes: []
+    ar:
+      terme: الخريطة الصحية
+      definition: >
+        أداة تخطيط وترخيص توزّع على التراب الوطني الهياكل الصحية والتجهيزات الثقيلة
+        الخاضعة لتقييس وزارة الصحة وتضبط إحداثها.
+      synonymes: []
+
+  - id: hopital-circonscription
+    acronyme: null
+    statut: provisoire  # terme AR pressenti (المستشفى المحلي), non lu sur un document AR versé
+    references: [loi91-63, bencheikh-achour2006-indicateurs]
+    source_definition: {ref: loi91-63}
+    voir_aussi: [hopital-regional, etablissement-public-sante, centre-soins-sante-base]
+    fr:
+      terme: Hôpital de circonscription
+      definition: >
+        Structure hospitalière de première ligne, de niveau primaire, implantée au
+        niveau de la circonscription dans l'organisation sanitaire par niveaux ;
+        avec les hôpitaux universitaires, c'est la catégorie dont le nombre a le
+        plus augmenté entre 1956 et 1987.
+      synonymes: []
+    ar:
+      terme: المستشفى المحلي
+      definition: >
+        هيكل استشفائي من الخط الأول في المستوى الأوّلي، يُحدث على مستوى الدائرة في
+        إطار التنظيم الصحي حسب المستويات.
+      synonymes: []
+
+  - id: hopital-regional
+    acronyme: null
+    statut: provisoire  # terme AR pressenti (المستشفى الجهوي), non lu sur un document AR versé
+    references: [loi91-63, bencheikh-achour2006-indicateurs]
+    source_definition: {ref: loi91-63}
+    voir_aussi: [hopital-circonscription, etablissement-public-sante]
+    fr:
+      terme: Hôpital régional
+      definition: >
+        Structure hospitalière de niveau secondaire, implantée au chef-lieu de
+        gouvernorat, intermédiaire entre l'hôpital de circonscription et le pôle
+        hospitalo-universitaire dans l'organisation sanitaire par niveaux.
+      synonymes: []
+    ar:
+      terme: المستشفى الجهوي
+      definition: >
+        هيكل استشفائي من المستوى الثاني، يُحدث بمقر الولاية، ويتوسط بين المستشفى
+        المحلي والقطب الاستشفائي الجامعي في التنظيم الصحي حسب المستويات.
+      synonymes: []
+
+  - id: etablissement-public-sante
+    acronyme: EPS
+    statut: provisoire  # terme AR pressenti (المؤسسة العمومية للصحة), non lu sur un document AR versé
+    references: [loi91-63, bm-2006-etude-secteur-sante]
+    source_definition: {ref: loi91-63}
+    voir_aussi: [subvention-equilibre, hopital-regional, carte-sanitaire]
+    fr:
+      terme: Établissement public de santé
+      definition: >
+        Catégorie d'établissement public créée par la réforme de 1990-1991, dotée
+        de la personnalité civile et de l'autonomie financière, moins autonome que
+        l'établissement public à caractère industriel et commercial mais plus que
+        l'établissement public à caractère administratif ; chaque établissement est
+        doté d'un conseil d'administration et d'un directeur général.
+      synonymes: []
+    ar:
+      terme: المؤسسة العمومية للصحة
+      definition: >
+        صنف من المؤسسات العمومية أحدثه إصلاح 1990-1991، يتمتع بالشخصية المدنية
+        والاستقلال المالي، أقل استقلالا من المؤسسة العمومية ذات الصبغة الصناعية
+        والتجارية وأكثر من المؤسسة العمومية ذات الصبغة الإدارية.
+      synonymes: []
+
+  - id: centre-soins-sante-base
+    acronyme: CSB
+    statut: provisoire  # terme AR pressenti (مركز الصحة الأساسية), non lu sur un document AR versé
+    references: [loi91-63, bm-2006-etude-secteur-sante]
+    source_definition: {ref: loi91-63}
+    voir_aussi: [hopital-circonscription]
+    fr:
+      terme: Centre de soins de santé de base
+      definition: >
+        Structure sanitaire publique de proximité, premier contact du système de
+        soins, qui délivre les soins de santé de base (prévention, soins courants,
+        suivi mère-enfant, programmes nationaux).
+      synonymes: [Soins de santé de base]
+    ar:
+      terme: مركز الصحة الأساسية
+      definition: >
+        هيكل صحي عمومي قريب، يمثّل أول اتصال بمنظومة العلاج، ويسدي خدمات الصحة
+        الأساسية (الوقاية والعلاجات العادية ومتابعة الأم والطفل والبرامج الوطنية).
+      synonymes: [الصحة الأساسية]
+
+  - id: affilie
+    acronyme: null
+    statut: provisoire  # terme AR pressenti (المنخرط), non lu sur un document AR versé
+    references: [blel-chahed2014-depenses-cnam]
+    source_definition: {ref: blel-chahed2014-depenses-cnam, locator: "p. 3, note 6"}
+    voir_aussi: [beneficiaire, assure-social, ayant-droit]
+    fr:
+      terme: Affilié
+      definition: >
+        Personne qui ouvre le droit à la couverture — chef d'affiliation —, par
+        opposition au bénéficiaire, qui ajoute à l'affilié ses ayants droit. Les
+        affiliés sont de trois à quatre fois moins nombreux que les bénéficiaires ;
+        les deux grandeurs ne doivent pas être confondues ni additionnées.
+      synonymes: []
+    ar:
+      terme: المنخرط
+      definition: >
+        الشخص الذي يفتح الحق في التغطية، خلافا للمنتفع الذي يضيف إلى المنخرط ذوي
+        الحق منه.
+      synonymes: []
+
+  - id: indemnite-non-clientele
+    acronyme: null
+    statut: provisoire  # terme AR pressenti (منحة عدم مباشرة العيادة الخاصة), non lu sur un document AR versé
+    references: [decret89-299, decret77-732, decret2008-3449]
+    source_definition: {ref: decret89-299}
+    voir_aussi: [corps-medical-hospitalo-sanitaire]
+    fr:
+      terme: Indemnité de non-clientèle
+      definition: >
+        Indemnité mensuelle compensant l'interdiction d'exercer une clientèle
+        privée, propre aux corps médicaux hospitaliers à plein temps intégral ;
+        son montant varie selon le grade (et, pour les médecins majors de la santé
+        publique, selon l'ancienneté).
+      synonymes: []
+    ar:
+      terme: منحة عدم مباشرة العيادة الخاصة
+      definition: >
+        منحة شهرية تعوّض منع مزاولة العيادة الخاصة، خاصة بالأسلاك الطبية الاستشفائية
+        المتفرغة كليا، ويتغير مقدارها حسب الرتبة.
+      synonymes: []
+
+  - id: corps-medical-hospitalo-sanitaire
+    acronyme: null
+    statut: provisoire  # terme AR pressenti (السلك الطبي الاستشفائي الصحي), non lu sur un document AR versé
+    references: [decret2008-3449]
+    source_definition: {ref: decret2008-3449, locator: "art. 17-18"}
+    voir_aussi: [indemnite-non-clientele]
+    fr:
+      terme: Corps médical hospitalo-sanitaire
+      definition: >
+        Corps des médecins de la santé publique (médecine générale et de première
+        ligne) — médecin, médecin principal, médecin major de la santé publique —,
+        distinct du corps médical des hôpitaux (pratique hospitalière spécialisée)
+        et du corps hospitalo-universitaire.
+      synonymes: []
+    ar:
+      terme: السلك الطبي الاستشفائي الصحي
+      definition: >
+        سلك أطباء الصحة العمومية (الطب العام وطب الخط الأول)، يتميز عن السلك الطبي
+        للمستشفيات وعن السلك الطبي الاستشفائي الجامعي.
+      synonymes: []
+
+  - id: subvention-equilibre
+    acronyme: null
+    statut: provisoire  # terme AR pressenti (منحة التوازن), non lu sur un document AR versé
+    references: [decret91-1844]
+    source_definition: {ref: decret91-1844, locator: "art. 12-17"}
+    voir_aussi: [etablissement-public-sante]
+    fr:
+      terme: Subvention d'équilibre
+      definition: >
+        Subvention versée par l'État à un établissement public de santé pour
+        équilibrer son budget, aux côtés des recettes d'activité (dont les
+        remboursements des caisses) et des dons ; elle fait partie du cadre
+        budgétaire de l'établissement.
+      synonymes: []
+    ar:
+      terme: منحة التوازن
+      definition: >
+        منحة تسندها الدولة للمؤسسة العمومية للصحة لتوازن ميزانيتها، إلى جانب مداخيل
+        النشاط (ومنها تسديدات الصناديق) والهبات.
+      synonymes: []
+
+  - id: honoraires-conventionnels
+    acronyme: null
+    statut: provisoire  # terme AR pressenti (الأتعاب التعاقدية), non lu sur un document AR versé
+    references: [arrete-2007-02-06-medecins-liberaux]
+    source_definition: {ref: arrete-2007-02-06-medecins-liberaux, locator: "p. 390"}
+    voir_aussi: [medecin-conventionne, tiers-payant, ticket-moderateur, forfait-conventionnel]
+    fr:
+      terme: Honoraires conventionnels
+      definition: >
+        Honoraires perçus par le professionnel de santé en contrepartie de ses
+        prestations, fixés par la convention sectorielle entre la caisse et le
+        syndicat ; ils servent de base au remboursement ou au paiement direct et
+        sont opposables, tout dépassement étant interdit.
+      synonymes: []
+    ar:
+      terme: الأتعاب التعاقدية
+      definition: >
+        الأتعاب التي يتقاضاها مسدي الخدمات الصحية مقابل خدماته، المضبوطة بالاتفاقية
+        القطاعية بين الصندوق والنقابة؛ تُعتمد أساسا للاسترجاع أو الدفع المباشر وهي
+        قابلة للاحتجاج بها، ويُمنع تجاوزها.
+      synonymes: []
+
+  - id: medecin-de-famille
+    acronyme: null
+    statut: provisoire  # terme AR pressenti (طبيب العائلة) ; usage répandu, mais non lu sur l'édition AR d'un document versé (fiche r-sante-medecin-famille-modalites : éditions AR non parcourues, résultat aucun)
+    references: [arrete-2007-02-06-medecins-liberaux]
+    source_definition: {ref: arrete-2007-02-06-medecins-liberaux, locator: "p. 391"}
+    voir_aussi: [parcours-soins-coordonne, medecin-conventionne, filiere-privee]
+    fr:
+      terme: Médecin de famille
+      definition: >
+        Médecin conventionné librement choisi par l'assuré social, pivot du
+        parcours de soins coordonné : il assure le premier contact et oriente, au
+        besoin, vers les autres prestataires.
+      synonymes: [Médecin traitant de famille]
+    ar:
+      terme: طبيب العائلة
+      definition: >
+        طبيب متعاقد يختاره المضمون الاجتماعي بحرية، وهو محور مسار العلاج المنسّق:
+        يؤمّن الاتصال الأول ويوجّه عند الاقتضاء نحو بقية مسدي الخدمات.
+      synonymes: []
+
+  - id: parcours-soins-coordonne
+    acronyme: null
+    statut: provisoire  # terme AR pressenti (مسار العلاج المنسّق), non lu sur un document AR versé
+    references: [arrete-2007-02-06-medecins-liberaux]
+    source_definition: {ref: arrete-2007-02-06-medecins-liberaux, locator: "p. 391"}
+    voir_aussi: [medecin-de-famille, filiere-privee]
+    fr:
+      terme: Parcours de soins coordonné
+      definition: >
+        Modalité d'accès aux soins que la convention propose aux assurés : celui
+        qui y adhère choisit librement un médecin de famille, premier recours qui
+        l'oriente ensuite vers les soins spécialisés et coordonne les
+        interventions. La convention réserve un accès direct à certaines
+        spécialités.
+      synonymes: []
+    ar:
+      terme: مسار العلاج المنسّق
+      definition: >
+        صيغة للنفاذ إلى العلاج تقترحها الاتفاقية على المضمونين: من ينخرط فيها
+        يختار بحرية طبيب عائلة، وهو المرجع الأول الذي يوجّهه نحو العلاجات
+        المختصة وينسّق التدخلات. وتخصّ الاتفاقية بعض الاختصاصات بنفاذ مباشر.
+      synonymes: []
+
+  - id: medecin-conventionne
+    acronyme: null
+    statut: provisoire  # terme AR pressenti (الطبيب المتعاقد), non lu sur un document AR versé
+    references: [arrete-2007-02-06-medecins-liberaux]
+    source_definition: {ref: arrete-2007-02-06-medecins-liberaux, locator: "p. 391"}
+    voir_aussi: [honoraires-conventionnels, medecin-de-famille]
+    fr:
+      terme: Médecin conventionné
+      definition: >
+        Médecin ayant adhéré à la convention sectorielle liant son syndicat à la
+        caisse ; les actes d'un médecin non conventionné ne sont pas couverts.
+      synonymes: []
+    ar:
+      terme: الطبيب المتعاقد
+      definition: >
+        طبيب انخرط في الاتفاقية القطاعية الرابطة بين نقابته والصندوق؛ ولا تُغطى
+        أعمال الطبيب غير المتعاقد.
+      synonymes: []
+
+  - id: tiers-payant
+    acronyme: null
+    statut: provisoire  # terme AR pressenti (نظام الدفع من قبل الغير), non lu sur un document AR versé
+    references: [arrete-2007-02-06-medecins-liberaux]
+    source_definition: {ref: arrete-2007-02-06-medecins-liberaux, locator: "p. 393"}
+    voir_aussi: [ticket-moderateur, honoraires-conventionnels]
+    fr:
+      terme: Tiers payant
+      definition: >
+        Mécanisme par lequel le patient ne paie que sa part (ticket modérateur) et
+        la caisse règle directement le reliquat au professionnel de santé, sans
+        avance de la totalité des frais par l'assuré.
+      synonymes: []
+    ar:
+      terme: نظام الدفع من قبل الغير
+      definition: >
+        آلية لا يدفع فيها المريض إلا حصته (المعلوم التعديلي) ويسدّد الصندوق مباشرة
+        البقية لمسدي الخدمات الصحية، دون تسبقة لكامل المصاريف من المضمون.
+      synonymes: []
+
+  - id: forfait-conventionnel
+    acronyme: null
+    statut: provisoire  # terme AR pressenti (المبلغ الجزافي التعاقدي), non lu sur un document AR versé
+    references: [avenant1-2007-medecins-liberaux]
+    source_definition: {ref: avenant1-2007-medecins-liberaux}
+    voir_aussi: [honoraires-conventionnels, lettre-cle]
+    fr:
+      terme: Forfait conventionnel
+      definition: >
+        Rémunération forfaitaire fixée par la convention ou ses avenants pour
+        certains actes (accouchement, radiothérapie, actes à radio-éléments…),
+        correspondant au maximum percevable par le médecin conventionné.
+      synonymes: []
+    ar:
+      terme: المبلغ الجزافي التعاقدي
+      definition: >
+        أجر جزافي تضبطه الاتفاقية أو ملاحقها لبعض الأعمال (الولادة والمعالجة
+        بالإشعاع والأعمال باستعمال العناصر المشعة…)، يمثّل الحد الأقصى الذي يتقاضاه
+        الطبيب المتعاقد.
+      synonymes: []
+
   - id: appui-financier-occasionnel
     acronyme: null
     statut: valide

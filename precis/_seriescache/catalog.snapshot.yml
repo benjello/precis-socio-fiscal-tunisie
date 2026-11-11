@@ -7039,3 +7039,49 @@
   - gbo-rap-missions
   source_ligne: Rapports annuels de performance des missions du budget de l'État (gbo.tn
     et ministères), dépouillement 2026.
+- id: oms-ghed-financement-sante-tunisie-2000-2023
+  titre: 'OMS (GHED) : financement de la dépense courante de santé en Tunisie, 2000-2023'
+  sources:
+  - oms-ghed-comptes-sante-tunisie
+  - oms-ghed-paiements-directs-tunisie
+  build: scripts/extract_oms_ghed_tunisie.py:main
+  raw:
+  - data/raw/oms/GHED_CHEGDP_SHA2011_TUN.json
+  - data/raw/oms/GHED_CHE_pc_US_SHA2011_TUN.json
+  - data/raw/oms/GHED_GGHE-DCHE_SHA2011_TUN.json
+  - data/raw/oms/GHED_GGHE-DGDP_SHA2011_TUN.json
+  - data/raw/oms/GHED_GGHE-DGGE_SHA2011_TUN.json
+  - data/raw/oms/GHED_PVT-DCHE_SHA2011_TUN.json
+  - data/raw/oms/GHED_EXTCHE_SHA2011_TUN.json
+  - data/raw/oms/GHED_OOPSCHE_SHA2011_TUN.json
+  - data/raw/oms/GHED_OOP_pc_US_SHA2011_TUN.json
+  output: data/processed/sante/oms_ghed_financement_sante_2000_2023.csv
+  unite: parts en % (de la dépense courante, du PIB ou des dépenses des administrations)
+    et montants par habitant en USD courants ; une ligne par année et par grandeur
+  perimetre: 'Tunisie ; base GHED de l''OMS, méthode SHA 2011, 2000-2023. Neuf indicateurs
+    : dépense courante de santé (% du PIB ; USD/habitant), financement public intérieur
+    (budget public et cotisations obligatoires d''assurance maladie ; % de la dépense
+    courante, % du PIB, % des dépenses des administrations), financement privé intérieur
+    et ressources extérieures (% de la dépense courante), paiements directs des ménages
+    (% de la dépense courante ; USD/habitant)'
+  caveats: 'Parts publiées telles quelles par l''OMS : ne pas les recomposer ni les
+    additionner à des comptes nationaux tunisiens. La dépense courante de santé (CHE)
+    exclut l''investissement en bâtiments et équipements ; elle ne se raccorde donc
+    pas aux dépenses totales de santé (DTS) des comptes nationaux 2004 et 2012-2014.
+    Les paiements directs (OOP) sont un sous-ensemble du financement privé intérieur,
+    pas un quatrième financeur ; ils excluent les assurances de groupe et mutuelles
+    (à la différence de la part des ménages citée pour 2004). Public + privé + extérieur
+    = 100 % aux arrondis près. Montants en USD courants, non convertis en dinars.
+    API GHO consultée le 10 novembre 2026.'
+  titre_ar: 'منظمة الصحة العالمية (GHED): تمويل النفقات الجارية للصحة في تونس، 2000-2023'
+  unite_ar: نسب مئوية (من النفقات الجارية أو الناتج الداخلي الخام أو نفقات الإدارات)
+    ومبالغ للفرد بالدولار الأمريكي الجاري؛ سطر لكل سنة ولكل مؤشر
+  perimetre_ar: تونس، قاعدة GHED لمنظمة الصحة العالمية، منهجية SHA 2011، 2000-2023؛
+    تسعة مؤشرات للنفقات الجارية للصحة وتمويلها العمومي الداخلي والخاص الداخلي والخارجي
+    والدفع المباشر للأسر
+  caveats_ar: النسب منشورة كما هي؛ لا تُعاد تركيبها ولا تُجمع مع الحسابات الوطنية
+    التونسية. النفقات الجارية للصحة لا تشمل الاستثمار، فلا تتصل بالنفقات الجملية للصحة
+    في الحسابات الوطنية لسنتي 2004 و2012-2014. الدفع المباشر للأسر جزء من التمويل
+    الخاص الداخلي لا ممول رابع. المبالغ بالدولار الجاري. استُشيرت الواجهة البرمجية
+    في 10 نوفمبر 2026.
+  fiche: sources/oms-sante-indicateurs.md

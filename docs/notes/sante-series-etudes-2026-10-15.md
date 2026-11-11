@@ -750,3 +750,39 @@ ancres ⇔ fiches) ; une fiche sans constat écrit reste dans cette note.
 - Déjà archivés, réutilisés : `sante-avant-2004/hal_tel-01300569.pdf`,
   `sante-avant-2004/fes_atdsrp_2017_contenu_{fr,ar}_50.pdf`, `cnam/fr_etat_fin_11_15.pdf`,
   `cnam/BILAN2016_2018.pdf`, `cnam/indicateurs_globaux_2021_fr.pdf`.
+
+---
+
+## 13. Passage du terminologue (glossaire § 10) — reports
+
+*Versé le 2026-11-10 (chantier/sante-densification). Huit entrées ajoutées à `precis/glossaire.yml`
+depuis le § 10 (beneficiaire, apci, charges-techniques, resultat-technique,
+depenses-totales-de-sante, depense-courante-de-sante, comptes-de-la-sante,
+depense-catastrophique), toutes `provisoire` ; ancres posées dans `_couverture.qmd` et
+`_medecine_ville.qmd`, plus les entrées déjà existantes filiere-publique, filiere-privee,
+systeme-de-remboursement et ticket-moderateur désormais ancrées. Le livre santé rend 14 notions.*
+
+Reports :
+
+- **Termes AR à confirmer (toutes les entrées neuves sont `provisoire`)** : les termes arabes
+  viennent de la colonne « AR (indicatif) » du § 10 ; aucun n'est attesté sur un document arabe
+  versé. À confirmer par un arabophone ou une source AR : المنتفع (bénéficiaire),
+  الأمراض المزمنة المتكفل بها كليا (APCI — vérifier le libellé du JORT AR de l'arrêté du
+  25 juin 2007, qui permettrait aussi `source_traduction` et le passage en `valide`),
+  الأعباء الفنية / النتيجة الفنية (états financiers CNAM versés en français seulement),
+  النفقات الجملية للصحة / الحسابات الوطنية للصحة. Deux termes sont des traductions par analogie,
+  non attestées : النفقات الجارية للصحة (dépense courante) et الإنفاق الصحي الكارثي
+  (dépense catastrophique, usage OMS arabe à vérifier).
+- **Non ajoutés, AR non attesté (le § 10 donne « — ») et pas de version AR des sources** :
+  « prestations sociales décaissées » (états financiers CNAM, p. 4) et « différences de
+  différences » (thèse Ismail, pp. 120-122 ; le chapitre l'emploie pourtant,
+  `_couverture.qmd`, § thèse Ismail).
+- **`resultat-technique` est versé mais invisible** : aucune prose du livre n'écrit « résultat
+  technique » ni « marge brute » (seule la figure CNAM les porte) ; l'entrée attend une ancre
+  du rédacteur.
+- **Rien en attente bibliographe** : toutes les clés citées existent
+  (blel-chahed2014-depenses-cnam, cnam-etats-financiers-2011-2015, benabdelaziz2018-financement,
+  ismail-2015-these, arrete-2007-06-25-affections-lourdes, decret2007-1367,
+  oms-ghed-comptes-sante-tunisie, oms-difficultes-financieres-soins-tunisie). Seule référence
+  candidate sans clé : actes 2017, diapositives Ben Abbès (source AR possible pour les filières) —
+  utile au bibliographe si l'on veut attester les termes AR des filières hors JORT.

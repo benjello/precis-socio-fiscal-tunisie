@@ -634,20 +634,33 @@ liste qui suit le tableau, citations comprises. Restent :
 - **IRPP** : le minimum d'impôt de l'article 44 § II et le régime forfaitaire sont écrits.
   Le régime forfaitaire (`#sec-irpp-forfait`) couvre depuis le 4 octobre 2026 toute la
   chronologie 1990-2026, chaque modificatif lu au JORT (note
-  `docs/notes/fiscalite-regime-forfaitaire.md`). Y restent : la **longue période** au-delà de 2013 —
-  `tbl-forfait-effectifs` ne couvre que 2004 et 2009-2013, d'après le diaporama du ministère des
-  Finances d'août 2013 (`minfin-cnf-2013-forfait`, lu à l'image) ; les autres chiffres de la
-  collection `tunisia-data` (tranches de chiffre d'affaires, secteurs, comparaison avec le réel)
-  sont lisibles mais non encore relus ; la **relecture
-  arabophone** de l'article 91 de la LF 2026 (lu à l'image, édition arabe seule parue)  ; le **numéro** de la note commune sur l'article 16
-  de la LF 2018 ; les **tableaux faits main** `tbl-irpp-forfait` et `tbl-forfait-annexe-2`, à
+  `docs/notes/fiscalite-regime-forfaitaire.md`).
+  **Chantier « indépendants » du 9-10 novembre 2026 (PR #788 et #789)** : le **régime de
+  l'auto-entrepreneur** a désormais son domicile fiscal (`#sec-irpp-auto-entrepreneur` — décret-loi
+  2020-33 lu à l'image en édition arabe, refonte LF 2023, ajustements LF 2025, prédécesseur de
+  2019 ; TODO : décrets d'application non identifiés, chiffres d'adhésion à chercher) ; le
+  **recouvrement des indépendants** est écrit (`#sec-irpp-recouvrement` — acomptes art. 51,
+  retenues imputables art. 52, avances 51 bis/quater, vérifiés au code consolidé 2023 ; l'ancien
+  TODO « art. 53 » est clos, les acomptes sont à l'art. 51) ; la **longue période** du forfait est
+  prolongée à 2020 par l'étude PNUD-OIT 2022 (effectifs 2010-2020, rendement 2020 ; restent le
+  produit année par année après 2013 et tout après 2020) ; les **barèmes agricoles** sont
+  résolus sur le mécanisme (10 novembre 2026) : ils ne passent ni par décret ni par arrêté mais par
+  des notes communes de la DGI par campagne — trois dépouillées au chapitre (n° 15/2020 et 15/2026
+  oléicoles, n° 15/2021 céréalière) ; reste l'inventaire de la collection complète et les URL
+  jibaya.tn. Y restent aussi :
+  les autres chiffres de la
+  collection `tunisia-data` (tranches de chiffre d'affaires, secteurs, comparaison avec le réel),
+  lisibles mais non encore relus ; la **relecture
+  arabophone** de l'article 91 de la LF 2026 (lu à l'image, édition arabe seule parue) — le numéro de
+  la note commune sur l'article 16 de la LF 2018 est clos : c'est la n° 15/2018, déjà citée au
+  chapitre (`dgi-nc-15-2018`) ; les **tableaux faits main** `tbl-irpp-forfait` et `tbl-forfait-annexe-2`, à
   engendrer quand les paramètres seront sourcés. Textes tous lisibles au corpus local
   (fascicules de 1990 à 1993 océrisés, ceux de 1999 et 2001 décodés) ; la LF 2016 et la LF 2020
   se citent en pagination française d'après les extraits locaux, la LF 2023 et la LF 2026 en
   pagination arabe.
-  Restent les tarifs antérieurs de la contribution personnelle d'État, les barèmes
-  régionaux de l'évaluation forfaitaire agricole, le plafond de l'assurance-vie entre
-  ses deux bornes connues et la contribution au budget de l'État. L'article 16 de la
+  Restent les tarifs antérieurs de la contribution personnelle d'État, l'inventaire complet des
+  notes communes de barèmes agricoles (trois campagnes dépouillées le 10 novembre 2026), le plafond
+  de l'assurance-vie entre ses deux bornes connues et la contribution au budget de l'État. L'article 16 de la
   loi de finances pour 2019 pose encore un problème de lecture des éditions.
 - **Séries à construire** : le seuil de la tranche à 0 %, rapporté au SMIG et à l'indice des
   prix, 1990-2026 ; les déductions pour charges de famille rapportées au SMIG — leur lecture

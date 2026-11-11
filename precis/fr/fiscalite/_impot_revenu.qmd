@@ -186,7 +186,7 @@ Cf. § 1 et TODO 12 de docs/notes/fiscalite-irpp-assiette-abattements.md. -->
 4. **Le revenu net imposable** est le solde de ces opérations. C'est lui, et non le revenu brut, que le barème frappe.
 5. **L'application du barème.** Le barème progressif par tranches du paragraphe I de l'article 44 du code [@code-irpp-is-1990, art. 44] est appliqué au revenu net imposable et donne l'impôt brut. La progressivité opère par tranches : chaque fraction de revenu n'est imposée qu'au taux de la tranche dans laquelle elle tombe, de sorte que le taux marginal supérieur ne s'applique jamais à la totalité du revenu.
 6. **Minimum d'impôt et plafonnement des déductions.** Le montant ainsi obtenu est corrigé par deux mécanismes de sens opposés. Le paragraphe II du même article 44 institue un **minimum d'impôt**, assis sur le chiffre d'affaires et dû quel que soit le résultat de la liquidation au barème ; ses modalités et ses montants ont varié à plusieurs reprises et sont retracés plus loin. Un plafonnement limite par ailleurs la part de l'impôt que les déductions et avantages fiscaux peuvent effacer : il est porté non par le code, mais par l'**article 12 *bis* de la loi n° 89-114** elle-même, ce qui explique qu'on ne le trouve pas dans les millésimes du code consolidé. Trois dispositifs homonymes doivent ici être distingués : l'article 12 *bis* de la loi n° 89-114 (minimum d'impôt au titre des avantages fiscaux), l'article 12 *bis* **du code** (règles d'amortissement, ajouté par l'article 41 de la loi de finances pour 2008) et l'article 44 § II du code (minimum d'impôt assis sur le chiffre d'affaires).
-7. **Retenue à la source, avances et acomptes.** L'impôt n'est pas acquitté en une seule fois au moment de la déclaration : il fait l'objet, selon les catégories de revenus, d'une [retenue à la source](#g-retenue-a-la-source) — mensuelle pour les salaires et pensions — et d'acomptes en cours d'année. Ces versements s'imputent sur l'impôt liquidé, le solde seul étant dû ou restitué, sauf les retenues libératoires, qui font sortir le revenu du revenu global (@sec-irpp-epargne). La distinction entre règle d'assiette et règle de recouvrement est ici essentielle : une dispense de retenue à la source n'exonère pas d'impôt.
+7. **Retenue à la source, avances et acomptes.** L'impôt n'est pas acquitté en une seule fois au moment de la déclaration : il fait l'objet, selon les catégories de revenus, d'une [retenue à la source](#g-retenue-a-la-source) — mensuelle pour les salaires et pensions — et d'acomptes en cours d'année (articles 51 à 52 du code ; leurs taux et leur histoire sont à la @sec-irpp-recouvrement). Ces versements s'imputent sur l'impôt liquidé, le solde seul étant dû ou restitué, sauf les retenues libératoires, qui font sortir le revenu du revenu global (@sec-irpp-epargne). La distinction entre règle d'assiette et règle de recouvrement est ici essentielle : une dispense de retenue à la source n'exonère pas d'impôt.
 8. **Les prélèvements adossés.** À l'impôt proprement dit s'ajoutent des prélèvements assis sur la même assiette et liquidés avec lui, au premier rang desquels la [contribution sociale de solidarité](#g-css), qui n'entre pas dans le produit de l'IRPP mais pèse sur le même contribuable.
 9. **Les régimes dérogatoires.** Cette chaîne n'est pas suivie par tous les contribuables. Le **régime forfaitaire** des bénéfices industriels et commerciaux, aujourd'hui aux articles 44 *bis* à 44 *sexies* du code, substitue à la détermination du bénéfice réel un impôt calculé sur le chiffre d'affaires ; le **régime forfaitaire optionnel** ajouté à l'article 44 *ter* par l'article 91 de la loi de finances pour 2026 procède de la même logique [@lf-2026, art. 91] ; le **régime de l'auto-entrepreneur**, hors code, remplace impôt, taxe sur la valeur ajoutée et cotisation sociale par une contribution unique (@sec-irpp-auto-entrepreneur) ; enfin, certains revenus de capitaux mobiliers supportent une retenue à la source **libératoire**, qui les fait sortir du revenu global (@sec-irpp-epargne).
 
@@ -255,13 +255,11 @@ Chacun de ces maillons a sa propre histoire, et ces histoires ne sont pas synchr
 
 Un tableau les reprend ensuite texte par texte, pour montrer ce que chaque loi a changé d'un seul geste (@sec-irpp-reformes).
 
-<!-- TODO (rédaction, non bloquant pour la structure) : l'article 52 du code (retenue à la source)
-est lu pour les revenus de capitaux et les revenus distribués (docs/notes/fiscalite-epargne-capital.md,
-§ 4.1, et @sec-irpp-epargne) ; reste à vérifier sur le texte officiel l'article 53 (acomptes
-provisionnels) et les retenues de l'article 52 sur les autres revenus avant de les nommer ici.
-Les deux autres points de ce TODO sont clos : la liste et l'ordre des catégories de l'article 8,
-et l'article porteur du plafonnement (article 12 bis de la loi n° 89-114), sont désormais
-documentés — cf. docs/notes/fiscalite-irpp-assiette-abattements.md, § 1 et § 9.3. -->
+<!-- TODO clos (9 novembre 2026) : les acomptes provisionnels sont à l'article 51 (et non 53) ;
+l'article 51 et les retenues de l'article 52 sur les revenus des indépendants sont vérifiés au code
+consolidé de 2023 (corpus Code_de_lIRPP_et_IS) et écrits à la section @sec-irpp-recouvrement.
+Les deux autres points étaient déjà clos : liste et ordre des catégories de l'article 8, et
+plafonnement (article 12 bis de la loi n° 89-114) — cf. docs/notes/fiscalite-irpp-assiette-abattements.md. -->
 
 ## L'évolution du barème {#sec-irpp-bareme}
 
@@ -466,12 +464,23 @@ L'article 24 pose la règle de droit commun — excédent des recettes totales d
 
 Il n'y a donc, pour la détermination de l'assiette de cette catégorie, **ni taux, ni barème, ni plafond dans le code** : aucun paramètre légal n'y est chiffré, et il n'existe aucune série d'abattement à retracer. La détermination de l'assiette est renvoyée à une procédure administrative d'expertise et à des barèmes régionaux. La seule modification apportée à l'article 24 depuis 1990 est l'insertion du renvoi aux articles 10 à 20 pour les exploitants qui tiennent une comptabilité, opérée par l'article 76 de la loi de finances pour 1998.
 
+**Les barèmes existent, hors de toute forme réglementaire : des notes communes de l'administration fiscale, campagne par campagne.** Une commission mixte — représentants du ministère de l'Agriculture, des Ressources hydrauliques et de la Pêche et de l'Union tunisienne de l'agriculture et de la pêche — arrête le revenu net unitaire de la campagne, que la Direction générale des impôts publie en note commune ; le revenu ainsi fixé est un **minimum d'assiette**, que l'administration peut réviser à la hausse si elle dispose d'éléments. Trois campagnes en donnent la mesure :
+
+- **oléicole 2018/2019** (revenus 2019) : le revenu net par pied d'olivier est arrêté **en perte** dans les trois régions — 6,657 dinars de perte au Nord, 12,017 au Centre, 0,756 au Sud —, soit une assiette forfaitaire nulle [@dgi-nc-15-2020] ;
+- **céréalière 2019/2020** (revenus 2020) : seul le blé dur de la zone 1 dégage un revenu, 10,001 dinars l'hectare ; le blé tendre, l'orge et les autres zones sont en perte, l'annexe de la note classant les délégations de chaque gouvernorat en trois zones [@dgi-nc-15-2021] ;
+- **oléicole 2024/2025** (revenus 2025) : la campagne redevient largement positive — par pied d'olivier, 16,490 dinars en irrigué et 4,050 en pluvial au Nord, 64,010 et 33,280 au Centre et au Sahel, 29,520 et 17,270 au Sud [@dgi-nc-15-2026].
+
+Ces barèmes ne passent ni par décret ni par arrêté : la série complète, campagne par campagne, n'est lisible que dans la collection des notes communes ; ces trois campagnes en donnent l'état ici.
+
 Un avantage chiffré porte en revanche sur le revenu une fois déterminé. Depuis le 1^er^ avril 2017, les revenus de l'agriculture et de la pêche sont déduits en totalité pendant dix ans, puis à hauteur des deux tiers [@loi-avantages-fiscaux-2017, art. 1 (articles 65 et 66 nouveaux du code)]. La déduction totale de dix ans figurait auparavant au code d'incitations aux investissements de 1993 [@loi-93-120-code-incitations, art. 30] ; les deux états sont rapprochés au chapitre des régimes d'incitation à l'investissement (@tbl-df-1993-2017).
 
-<!-- TODO (documentaliste) : les barèmes régionaux d'évaluation forfaitaire agricole prévus par
-l'article 24 sont susceptibles de figurer dans des arrêtés du ministre des finances ; aucun n'a été
-identifié à ce jour. Point d'entrée : PDFs-legislation-tunisie/data/iort/textes/md/. Tant qu'aucun
-arrêté n'est produit, l'absence de paramètre chiffré est énoncée telle quelle. -->
+<!-- TODO (documentaliste) : RÉSOLU SUR LE MÉCANISME (10 novembre 2026) — les barèmes de l'article 24
+ne passent ni par décret ni par arrêté (recherches du 9 novembre : corpus iort 32 130 textes et
+jort_cache.db, néant), mais par des NOTES COMMUNES de la DGI, campagne par campagne : trois sont
+dépouillées ci-dessus (n° 15/2020 oléicole, n° 15/2021 céréalière, n° 15/2026 oléicole, édition arabe
+seule). RESTE : inventorier la collection complète des notes de barèmes (autres campagnes et autres
+spéculations — le corpus Notes_Communes en porte peut-être d'autres sous d'autres numéros) et
+vérifier les URL jibaya.tn des trois notes citées. -->
 
 ### Traitements, salaires, indemnités, pensions et rentes viagères (catégorie IV) {#sec-irpp-salaires}
 
@@ -775,7 +784,19 @@ l'article 12 bis de la loi n° 89-114, ce que le chapitre de l'impôt sur les so
 son côté. Restent à établir la série datée de ses taux et la référence JORT de chaque
 modificatif. Cf. Q9 de docs/notes/fiscalite-irpp-besoins-documentation.md. -->
 
+## Le recouvrement : acomptes, retenues et avances {#sec-irpp-recouvrement}
+
+**L'impôt d'un indépendant au régime réel se paie pour l'essentiel en cours d'année : trois acomptes provisionnels de 30 % chacun, assis sur l'impôt de l'année précédente, auxquels s'imputent les retenues à la source opérées par ses clients ; la déclaration annuelle ne liquide que le solde.** Ces règles sont de recouvrement, non d'assiette : elles déplacent le moment du paiement, jamais le montant dû (@sec-irpp-calcul).
+
+- **Les acomptes provisionnels (article 51).** Les personnes physiques exerçant une activité commerciale ou une profession non commerciale — comme les personnes morales à l'impôt sur les sociétés — paient, à compter de leur deuxième année d'activité, trois acomptes égaux à **30 % de l'impôt dû au titre de l'année précédente**, dans les vingt-cinq premiers jours des sixième, neuvième et douzième mois suivant la clôture (vingt-huit pour les personnes morales). En sont dispensés les exploitants agricoles et de la pêche et les forfaitaires de l'article 44 *bis* — soumis, eux, à leurs propres acomptes de 30 % de l'impôt forfaitaire depuis la loi de finances pour 1997 (@sec-irpp-forfait) —, et les artisans ne doivent pas le premier acompte. Depuis la loi de finances pour 2007, l'assiette des acomptes exclut les plus et moins-values de cession d'actifs, sans descendre sous le minimum d'impôt. [@code-irpp-is-1990, art. 51 ; @lf-1994, art. 36 ; @lf-1997, art. 28 ; @lf-2007, art. 45 et 71]
+- **Les retenues à la source imputables (article 52).** Les sommes qu'un indépendant encaisse de l'État, des collectivités locales, des personnes morales ou des personnes physiques au réel supportent une retenue que le payeur opère et reverse : **10 % sur les honoraires, commissions, courtages, loyers et rémunérations des activités non commerciales** — 15 % jusqu'aux paiements de 2020, le taux étant abaissé par la loi de finances pour 2021 —, ramenés à **3 %** pour les honoraires servis à un bénéficiaire imposé au réel, sur justification de la carte d'identification fiscale ; et **1,5 % de tout montant de 1 000 dinars ou plus**, taxes comprises, payé au titre d'acquisitions de marchandises, de matériel, d'équipements ou de services — seuil fixé par la loi de finances pour 2014 —, réduits à 1 % ou 0,5 % quand le bénéfice correspondant est imposé à taux réduit ou déduit des deux tiers. Ces retenues s'imputent d'abord sur les acomptes provisionnels, puis sur l'impôt dû, l'excédent étant reportable ou restituable (article 51 § III). [@code-irpp-is-1990, art. 52 ; @lf-2014, art. 51 ; @lf-2021, art. 14]
+- **Les avances (articles 51 *bis* et 51 *quater*).** Les sociétés de personnes et assimilées paient une avance de 15 % — 10 % pour les bénéfices à taux réduit ou déduits des deux tiers — sur leurs bénéfices de l'année précédente, au titre de l'impôt dû par leurs associés (article 51 *bis*). Et depuis la loi de finances pour 2013, les industriels et les grossistes **facturent une avance de 1 %** sur leurs ventes aux forfaitaires des bénéfices industriels et commerciaux et aux professions non commerciales au forfait d'assiette — hors produits à prix homologués —, qui remonte ainsi un impôt minimal le long de la chaîne d'approvisionnement des petits contribuables. [@code-irpp-is-1990, art. 51 bis ; @lf-1994, art. 44 ; @lf-2013, art. 37]
+
+La dispense de retenue n'est jamais une exonération : un revenu dispensé de retenue reste dû à la déclaration (@sec-irpp-salaires, pour la même règle côté salaires). Les retenues **libératoires** — qui, elles, éteignent l'impôt — sont celles des revenus de capitaux (@sec-irpp-epargne) ; l'auto-entrepreneur, dispensé de la retenue de l'article 52 sur ses encaissements, relève de sa contribution unique (@sec-irpp-auto-entrepreneur). Les taux cités sont ceux du code dans son état consolidé de 2023, chaque taux étant daté de la loi qui l'a fixé.
+
 ## L'évolution des régimes dérogatoires {#sec-irpp-regimes}
+
+Le versant social des mêmes indépendants — cotisations et affiliation au régime des travailleurs non salariés — est exposé dans le volume [« Cotisations sociales »](../cotisations_sociales/_regimes.html#sec-cot-rtns) ; le présent chapitre ne porte que l'impôt.
 
 Le régime réel n'est pas le seul mode d'imposition des personnes physiques. Quatre sous-secteurs juridiques coexistent aujourd'hui : le **régime réel**, le **régime forfaitaire** des bénéfices industriels et commerciaux — porté par les articles 44 *bis* à 44 *sexies* du code, issus du transfert opéré par l'article 37 de la loi de finances pour 2011 depuis le § IV de l'article 44 —, le **régime forfaitaire optionnel** que l'article 91 de la loi de finances pour 2026 ajoute à l'article 44 *ter* pour les contribuables dont le chiffre d'affaires n'excède pas 100 000 dinars [@lf-2026, art. 91], et, hors du code, le **régime de l'auto-entrepreneur**, dont la contribution unique éteint à la fois l'impôt sur le revenu, la taxe sur la valeur ajoutée et la cotisation sociale (@sec-irpp-auto-entrepreneur). Les revenus de capitaux soumis à une retenue libératoire sortent eux aussi de la chaîne de calcul (@sec-irpp-epargne).
 
@@ -1074,8 +1095,14 @@ Source : ministère des Finances, diaporama du groupe de travail sur la révisio
 
 Le même document situe le régime : les forfaitaires forment 60 % du fichier des contribuables et 80 % des personnes physiques imposées dans la catégorie des bénéfices industriels et commerciaux, et leur contribution représente 0,2 % des recettes fiscales du régime intérieur, sans que l'année de ce dernier rapport soit précisée [@minfin-cnf-2013-forfait]. Entre 2009 et 2011, le nombre d'inscrits augmente chaque année tandis que celui des contribuables en règle diminue, et la contribution moyenne recule de 108,3 à 82,5 dinars — à rapprocher des planchers de 50 et 100 dinars alors en vigueur (@tbl-irpp-forfait). Le diaporama ne dit pas si ces années sont celles des revenus ou des déclarations.
 
-<!-- TODO (documentaliste) : prolonger la série après 2013 (nombre de forfaitaires, produit de
-l'impôt forfaitaire). Autres chiffres disponibles dans la même collection, à relire à l'image
+**Après 2013, la série se prolonge par une étude.** L'étude du PNUD et de l'OIT sur l'économie informelle (2022, Nidhal Bencheikh), qui lit le Répertoire national des entreprises de l'INS, donne l'effectif des forfaitaires année par année de 2010 à 2020 : 364,8 milliers en 2010, 388,8 en 2015, un pic à 419,0 en 2017, un creux à 388,2 en 2018 — au lendemain du durcissement de 2016-2018 (@sec-irpp-forfait-taux) — puis 413,1 en 2019 et **420,5 milliers en 2020** [@pnud-oit2022-bencheikh-informel, figure 15, p. 82]. La même étude mesure le rendement : en 2020, **213,7 milliers d'inscrits — 50,9 % — n'ont pas déposé leur déclaration**, et la contribution des déposants atteint **35 millions de dinars**, soit 0,7 % de l'impôt sur le revenu et 0,2 % des recettes fiscales — la même proportion que dans le diagnostic de 2013 ; parmi les 206 501 déposants, 77,4 % déclarent moins de 10 000 dinars de chiffre d'affaires, c'est-à-dire le plancher de 75 ou 150 dinars d'impôt [@pnud-oit2022-bencheikh-informel, p. 83, et tableau 18, p. 83]. Ces chiffres sont ceux d'une étude — lecture du Répertoire national des entreprises, méthode dite —, non une publication budgétaire du ministère.
+
+<!-- TODO (documentaliste) : série des forfaitaires après 2020 — aucun chiffre publié identifié ici ;
+les rapports sur les dépenses fiscales (gbo.tn) et le Bulletin du RNE sont les pistes à suivre. -->
+
+<!-- TODO (documentaliste) : série 2010-2020 désormais prolongée par l'étude PNUD-OIT 2022 (ci-dessus,
+9 novembre 2026) ; reste le produit de l'impôt forfaitaire année par année après 2013 (seul 2020 est
+connu, 35 MD) et tout après 2020. Autres chiffres disponibles dans la même collection, à relire à l'image
 avant usage (fiche tunisia-data sources/minfinances-reforme-fiscale-2013-2014.md) : déclarations et
 contribution par tranche de chiffre d'affaires 2009-2011 (diapositives 7-8), répartition par
 secteur en 2010 (diapositives 6 et 33), comparaison avec le réel (diapositive 16), 394 976
