@@ -2266,6 +2266,38 @@
       },
       "URL": "https://www.worldbank.org/content/dam/Worldbank/document/MNA/tunisia_report/the_unfinished_revolution_eng_chap4.pdf",
       "note": "citation-key: banquemondiale2014-revolution-inachevee\nTEXTE LU : chapitre 4, p. 140-145 et note 10 (p. 164), le 5 octobre 2026 — tableaux 4.2 (p. 143) et 4.3 (p. 144), figure 4.4 (p. 144, valeurs non affectables par année à l'extraction : à relire à l'image). Numéro de rapport et mois de parution non relevés (PDF du chapitre produit le 22 septembre 2014 d'après ses métadonnées) : à relever sur la notice de la Banque. Édition française non consultée. Chiffres 2008-2011 tirés d'IFC et ECOPA (2012), rapport préliminaire non publié ; estimations antérieures (OMC 2001, FMI 2005 et 2012, Ghazouani 2011) citées de seconde main, note 10.\nCOPIES LOCALES (6 octobre 2026) : édition anglaise, rapport n° 86179 (« May 2014 » sur la page de titre), 336 p., tunisia-data/data/raw/banque-mondiale-rapports/wb_2014_86179_unfinished_revolution_en.pdf, SHA-256 f5b0c5f8f5005ee4d09e0c873ecb10ecdd5e33b517b4dbfdeb070b70682e2773 ; édition française « La Révolution inachevée », 362 p., wb_2014_86179_revolution_inachevee_fr.pdf, SHA-256 8d8db893349765d00f6e685f3b1b90baea18ae9139a11688e102a38bc1da1740. LES PAGES CITÉES SONT CELLES DE L'ÉDITION ANGLAISE (titre de l'entrée) : tableau 4.2 p. 143, note 10 p. 164 ; elles sont décalées dans l'édition française (tableau 4.2 p. 151, note 10 p. 173). Pages anglaises relues le 6 octobre 2026 : p. 140-141 (régions côtières, figure 4.1), 142 (enquête, 49 %), 143 (79 %, tableau 4.2), 144 (figure 4.4, concentration 2 500 / 24 000, secteurs), 145 (6 362 dinars par emploi), 164 (notes 9 et 10)."
+    },
+    {
+      "id": "boost-tunisie-minfin-bm",
+      "type": "dataset",
+      "title": "Base BOOST Tunisie — dépenses de l'État par ligne budgétaire (2008-2016)",
+      "author": [
+        {
+          "literal": "Ministère des Finances (Tunisie)"
+        },
+        {
+          "literal": "Banque mondiale"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2016
+          ]
+        ]
+      },
+      "publisher": "Portail du budget citoyen mizaniatouna.gov.tn",
+      "URL": "http://www.mizaniatouna.gov.tn/tunisia/template_fr/boost_fr.xlsx",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            10
+          ]
+        ]
+      },
+      "note": "citation-key: boost-tunisie-minfin-bm\nPortail d'origine hors service (HTTP 503) ; copie Wayback (web/20220623104208) et copie locale tunisia-data/data/raw/mizaniatouna/boost_fr.xlsx (SHA-256 25df422…175c). Dépenses de l'État par ligne budgétaire 2008-2016, colonne PAYÉ (exécution) ; chapitres ADMIN2 16 (ministère de l'Agriculture) et 17 (CRDA). Exécution fiable 2008-2014. Consulté le 10 novembre 2026."
     }
   ]
 }

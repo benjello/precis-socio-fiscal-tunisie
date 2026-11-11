@@ -303,3 +303,86 @@ def fig_ctama_primes(caption, note_lecture=None, generated=None):
                      [({"fr": "Primes encaissées (MD)", "ar": "المبالغ المقبوضة (م.د)"}, _CTAMA)])
     figtools.figure_tabs(fig, df, SERIE_CTAMA, slug="fig_agri_ctama_primes",
                          caption=caption, note_lecture=note_lecture, generated=generated)
+
+
+# =========================================================================================
+# Encouragements à l'agriculture dans les lois de finances : trois découpages non chaînables
+# =========================================================================================
+SERIE_ENC = "agri-encouragements-lf"
+figtools.register_provenance(
+    SERIE_ENC,
+    titre="Crédits d'encouragement à l'agriculture des lois de finances : trois découpages successifs, 2010-2019",
+    titre_ar="اعتمادات التشجيع على الفلاحة بقوانين المالية: ثلاثة تقسيمات متعاقبة، 2010-2019",
+    sources=["lf-2010", "lf-2011", "lf-2012", "lf-2013", "lf-2014", "lf-2015", "lf-2016",
+             "lf-2017", "loi2018-56-lf2019"],
+    unite="million de dinars", unite_ar="مليون دينار",
+    perimetre=("lignes de crédits d'encouragement des tableaux des lois de finances ; trois "
+               "découpages de périmètre distincts : ligne « secteur » (2010-2013), ligne "
+               "« investissement » (2014-2016), faisceau de quatre lignes thématiques (depuis "
+               "2017, total)"),
+    perimetre_ar="سطور اعتمادات التشجيع بجداول قوانين المالية؛ ثلاثة تقسيمات مختلفة للنطاق",
+    caveats=("Les trois découpages NE SE CHAÎNENT PAS : les niveaux ne sont pas comparables d'un "
+             "segment à l'autre (redéfinition de périmètre, non évolution réelle). Dinars courants."),
+    caveats_ar=("التقسيمات الثلاثة لا تتّصل: المستويات غير قابلة للمقارنة من مقطع إلى آخر "
+                "(إعادة تعريف للنطاق، لا تطوّر حقيقي). بالدينار الجاري."),
+)
+_ENC1 = {2010: 119.3, 2011: 120.4, 2012: 138.5, 2013: 142.9}   # ligne unique « secteur »
+_ENC2 = {2014: 70.0, 2015: 70.0, 2016: 79.0}                    # ligne « investissement »
+_ENC3 = {2017: 81.0, 2019: 113.0}                              # total des 4 lignes thématiques
+
+
+def fig_encouragements(caption, note_lecture=None, generated=None):
+    L1 = {"fr": "Ligne « secteur » (2010-2013)", "ar": "سطر «القطاع» (2010-2013)"}
+    L2 = {"fr": "Ligne « investissement » (2014-2016)", "ar": "سطر «الاستثمار» (2014-2016)"}
+    L3 = {"fr": "Quatre lignes thématiques, total (depuis 2017)",
+          "ar": "أربعة سطور موضوعية، المجموع (منذ 2017)"}
+    fig = _fig_lignes(
+        [(L1, _ENC1, BLEU, "o"), (L2, _ENC2, ORANGE, "s"), (L3, _ENC3, GRIS, "^")],
+        {"fr": "Crédits d'encouragement (millions de dinars)", "ar": "اعتمادات التشجيع (مليون دينار)"},
+        ymax=160, ruptures=(2014, 2017))
+    annees = sorted(set(_ENC1) | set(_ENC2) | set(_ENC3))
+    df = _table_wide(annees, [
+        ({"fr": "Ligne « secteur » (MD)", "ar": "سطر «القطاع» (م.د)"}, _ENC1),
+        ({"fr": "Ligne « investissement » (MD)", "ar": "سطر «الاستثمار» (م.د)"}, _ENC2),
+        ({"fr": "Quatre lignes, total (MD)", "ar": "أربعة سطور، المجموع (م.د)"}, _ENC3)])
+    figtools.figure_tabs(fig, df, SERIE_ENC, slug="fig_agri_encouragements",
+                         caption=caption, note_lecture=note_lecture, generated=generated)
+
+
+# =========================================================================================
+# Exécution du budget du ministère : BOOST (2008-2014) et RAP (2019-2023)
+# =========================================================================================
+SERIE_EXEC = "agri-budget-execution"
+figtools.register_provenance(
+    SERIE_EXEC,
+    titre="Exécution du budget du ministère de l'Agriculture : crédits payés sur ressources de l'État, 2008-2023",
+    titre_ar="تنفيذ ميزانية وزارة الفلاحة: الاعتمادات المدفوعة على موارد الدولة، 2008-2023",
+    sources=["boost-tunisie-minfin-bm", "tn-rap-agriculture-2019", "tn-rap-agriculture-2020",
+             "tn-rap-agriculture-2022", "tn-rap-agriculture-2023"],
+    unite="million de dinars", unite_ar="مليون دينار",
+    perimetre=("crédits payés (exécution), ressources de l'État, hors ressources propres ; 2008-2014 "
+               "base BOOST (chapitres ministère + commissariats régionaux), 2019-2023 rapports annuels "
+               "de performance ; nomenclatures différentes de part et d'autre de 2019"),
+    perimetre_ar="الاعتمادات المدفوعة (التنفيذ)، موارد الدولة، دون الموارد الذاتية",
+    caveats=("Deux sources et deux nomenclatures : BOOST (exécution par chapitre) avant 2014, RAP "
+             "après 2019 ; années 2015-2018 et 2021 non disponibles. Dinars courants."),
+    caveats_ar="مصدران وتبويبان: BOOST قبل 2014، تقارير الأداء بعد 2019؛ سنوات 2015-2018 و2021 غير متوفّرة. بالدينار الجاري.",
+)
+_EXEC_BOOST = {2008: 706.5, 2009: 770.3, 2010: 792.4, 2011: 905.7, 2012: 1095.8, 2013: 956.8, 2014: 959.2}
+_EXEC_RAP = {2019: 1482.2, 2020: 1971.4, 2022: 1890.3, 2023: 1900.9}
+
+
+def fig_budget_execution(caption, note_lecture=None, generated=None):
+    fig = _fig_lignes([
+        ({"fr": "Exécution (base BOOST), 2008-2014", "ar": "التنفيذ (قاعدة BOOST)، 2008-2014"},
+         _EXEC_BOOST, GRIS, "o"),
+        ({"fr": "Exécution (rapports de performance), 2019-2023",
+          "ar": "التنفيذ (تقارير الأداء)، 2019-2023"}, _EXEC_RAP, BLEU, "s"),
+    ], {"fr": "Crédits payés (millions de dinars)", "ar": "الاعتمادات المدفوعة (مليون دينار)"},
+        ymax=2200, ruptures=(2019,))
+    annees = sorted(set(_EXEC_BOOST) | set(_EXEC_RAP))
+    df = _table_wide(annees, [
+        ({"fr": "Exécution BOOST (MD)", "ar": "تنفيذ BOOST (م.د)"}, _EXEC_BOOST),
+        ({"fr": "Exécution RAP (MD)", "ar": "تنفيذ تقارير الأداء (م.د)"}, _EXEC_RAP)])
+    figtools.figure_tabs(fig, df, SERIE_EXEC, slug="fig_agri_budget_execution",
+                         caption=caption, note_lecture=note_lecture, generated=generated)

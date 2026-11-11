@@ -1,0 +1,18 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-11-11
+# séries (tunisia_data) : agri-budget-execution
+# sources (citation) : @boost-tunisie-minfin-bm, @tn-rap-agriculture-2019, @tn-rap-agriculture-2020, @tn-rap-agriculture-2022, @tn-rap-agriculture-2023
+# fiches : 
+# méthode/hypothèses : Deux sources et deux nomenclatures : BOOST (exécution par chapitre) avant 2014, RAP après 2019 ; années 2015-2018 et 2021 non disponibles. Dinars courants.
+# note : Exécution du budget du ministère de l'Agriculture : crédits payés sur ressources de l'État, 2008-2014 (base BOOST) et 2019-2023 (rapports de performance)
+Année,Exécution BOOST (MD),Exécution RAP (MD)
+2008,706.5,
+2009,770.3,
+2010,792.4,
+2011,905.7,
+2012,1095.8,
+2013,956.8,
+2014,959.2,
+2019,,1482.2
+2020,,1971.4
+2022,,1890.3
+2023,,1900.9

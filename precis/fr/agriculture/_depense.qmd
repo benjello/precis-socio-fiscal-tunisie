@@ -96,24 +96,38 @@ en 2019.
 
 <!-- TODO (documentaliste) : recouper à l'image les totaux 2014-2018 (couche texte des PAP pilotes) avant tout usage au-delà de l'ordre de grandeur ; les montants 2016 et 2017 sont lus comme sommes de sous-totaux. -->
 
-Avant 2014, aucune série continue du budget du seul ministère de l'Agriculture n'est
-établie : les lois de finances et les lois de règlement plus anciennes règlent le budget par
-titre et par section, et le budget du ministère n'en ressort pas directement. L'état du
-droit budgétaire antérieur reste donc, en l'état, non reconstitué.
+L'exécution est en revanche connue plus tôt par la base BOOST du ministère des Finances et de
+la Banque mondiale, qui donne les dépenses de l'État par chapitre : les crédits payés du
+ministère — administration centrale et commissariats régionaux au développement agricole — sont
+documentés dès 2008 (@fig-agri-budget-execution). Avant 2008, la série reste à reconstituer sur
+les lois de règlement.
 
-<!-- TODO (documentaliste) : dépouiller les tableaux « dépenses par département / ministère » des lois de finances 1956-2013 et récupérer les lois de règlement des gestions non lues, pour constituer la série du budget du ministère avant 2014 (fiche de recherche r-agri-budget-ministere-avant-2014 à ouvrir). Ne pas approximer les niveaux manquants. -->
+<!-- TODO (documentaliste) : série du budget du ministère avant 2008 (lois de règlement 1990s-2007) — fiche r-agri-budget-ministere-avant-2014. Ne pas approximer les niveaux manquants. -->
 
 ### L'exécution du budget {#sec-agri-depense-execution}
 
-Les montants ci-dessus sont des prévisions des lois de finances. L'exécution — les crédits
-de paiement effectivement réalisés — atteint 1 482 160,6 milliers de dinars en 2019
-[@tn-rap-agriculture-2019] et 1 971 409 milliers de dinars en 2020 [@tn-rap-agriculture-2020],
-soit, cette année-là, un dépassement de la prévision. L'exercice 2021 n'a pas de rapport annuel
-de performance publié ; l'exécution reprend à 1 890 273 milliers de dinars en 2022
-[@tn-rap-agriculture-2022] et 1 900 867 milliers de dinars en 2023 [@tn-rap-agriculture-2023],
-chaque fois proche de la prévision (104 % puis 97 %).
+Les montants des sections précédentes sont des prévisions des lois de finances. L'exécution —
+les crédits de paiement effectivement réalisés — se suit, elle, sur deux segments : par la base
+BOOST de 2008 à 2014, par les rapports annuels de performance de 2019 à 2023 (@fig-agri-budget-execution).
 
-<!-- TODO (documentaliste) : RAP 2021 jamais publié sur gbo.tn (vérifié) ; prolonger la série d'exécution dès parution du RAP 2024. -->
+```{python}
+#| label: fig-agri-budget-execution
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import agriculture as ag
+ag.fig_budget_execution(
+    caption=("Exécution du budget du ministère de l'Agriculture : crédits payés sur ressources "
+             "de l'État, 2008-2014 (base BOOST) et 2019-2023 (rapports de performance)"),
+    note_lecture=("Crédits effectivement payés, ressources de l'État, hors ressources propres. "
+                  "Deux sources et deux nomenclatures, non reliées : la base BOOST (chapitres "
+                  "ministère et commissariats régionaux) avant 2014, les rapports annuels de "
+                  "performance après 2019 ; un trait vertical marque le changement de "
+                  "nomenclature de 2019. Les années 2015-2018 et 2021 ne sont pas disponibles "
+                  "(le rapport de performance 2021 n'a jamais été publié). L'exécution de 2019 et "
+                  "2020 dépasse la prévision, celles de 2022 et 2023 en sont proches (104 % puis "
+                  "97 %). Dinars courants."))
+```
 
 ## Les encouragements à l'agriculture dans les lois de finances {#sec-agri-depense-encouragements}
 
@@ -134,42 +148,31 @@ encouragements sont désormais fondus dans le budget de la mission
 ne nomme un fonds ni une prime : le lien entre la ligne budgétaire et un instrument précis
 d'incitation n'est pas établi par le libellé.
 
-Les montants, en millions de dinars courants (aucune année de référence n'autorise un
-passage en dinars constants), sont les suivants.
+Les montants, en millions de dinars courants, illustrent trois découpages qui ne se
+chaînent pas.
 
-| Année | Ligne unique « secteur de l'agriculture et de la pêche » (MD) |
-|---|---|
-| 2010 | 119,3 |
-| 2011 | 120,4 |
-| 2012 | 138,5 |
-| 2013 | 142,9 |
+```{python}
+#| label: fig-agri-encouragements
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import agriculture as ag
+ag.fig_encouragements(
+    caption=("Crédits d'encouragement à l'agriculture des lois de finances : trois découpages "
+             "de périmètre successifs et non chaînables, 2010-2019"),
+    note_lecture=("Trois découpages successifs des crédits d'encouragement, sans continuité : "
+                  "les segments ne sont pas reliés, et deux traits verticaux marquent les "
+                  "redéfinitions de périmètre (2014, 2017). Les niveaux d'un segment à l'autre ne "
+                  "se comparent pas. Le troisième segment est le total des quatre lignes "
+                  "thématiques de l'année. Dinars courants."))
+```
 
-: Crédits d'encouragement à l'agriculture, premier découpage (ligne unique « secteur »), lois de finances 2010-2013 [@lf-2010 ; @lf-2011 ; @lf-2012 ; @lf-2013] {#tbl-agri-encouragements-1}
-
-| Année | Ligne « investissement dans le secteur agricole et de la pêche » (MD) |
-|---|---|
-| 2014 | 70,0 |
-| 2015 | 70,0 |
-| 2016 | 79,0 |
-
-: Crédits d'encouragement, deuxième découpage (ligne « investissement » restreinte), lois de finances 2014-2016 [@lf-2014 ; @lf-2015 ; @lf-2016] {#tbl-agri-encouragements-2}
-
-| Ligne (depuis 2017) | 2017 (MD) | 2019 (MD) |
-|---|---|---|
-| Production agricole | 48,0 | 75,5 |
-| Pêche et aquaculture | 7,0 | 10,4 |
-| Hydraulique | 24,0 | 27,1 |
-| Résidu de l'ancienne ligne « investissement » | 2,0 | — |
-
-: Crédits d'encouragement, troisième découpage (quatre lignes thématiques), lois de finances 2017 et 2019 [@lf-2017 ; @loi2018-56-lf2019] {#tbl-agri-encouragements-3}
-
-::: {.note-lecture}
-Trois découpages successifs qui **ne se chaînent pas** : la ligne unique « secteur »
-(2010-2013) et la ligne « investissement » (2014-2016) n'ont pas le même périmètre, et le
-faisceau de quatre lignes ouvert en 2017 ne s'additionne pas aux précédentes sans double
-compte. On ne peut donc pas lire ces chiffres comme une évolution continue de la dépense
-d'encouragement.
-:::
+Le premier découpage (2010-2013) porte une ligne unique « secteur » ; le deuxième (2014-2016)
+la restreint à l'« investissement » ; depuis 2017, quatre lignes thématiques se substituent à la
+ligne unique — production agricole (48 puis 75,5 millions de dinars de 2017 à 2019), pêche et
+aquaculture (7 puis 10,4), hydraulique (24 puis 27,1) et un résidu de l'ancienne ligne
+(2 millions de dinars). Les niveaux ne sont pas comparables d'un découpage à l'autre : chaque
+rupture est une redéfinition de périmètre, non une évolution réelle.
 
 <!-- TODO (documentaliste) : établir, le cas échéant, le texte fondateur du fonds spécial de développement de l'agriculture (FOSDA) et son rapport au « fonds de développement agricole » supprimé par la loi de finances pour 1995 (fiche r-agri-fosda-fonds-special-developpement à ouvrir). -->
 

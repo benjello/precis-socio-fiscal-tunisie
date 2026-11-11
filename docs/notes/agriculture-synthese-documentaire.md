@@ -182,12 +182,20 @@ porte désormais au moins une série datée et sourcée, de source primaire ou c
 - **Clés CSL ajoutées** (toutes URL + sha256, PDF indexés dans `tunisia-data`) : `apia-repartition-doa-2010-2017`,
   `apia-rapport-activite-2018…2023`, `CtamaEF2020`, `tn-minfin-fonds-speciaux-2022/2025`,
   `tn-pap-agriculture-2019`, `tn-rap-agriculture-2022/2023`.
-- **Figures — FAIT (11/11)** : cinq séries converties en **graphes** (onglets Graphique/Données/Sources)
-  via le module `precis/fr/agriculture/figures/agriculture.py` — données inline + `register_provenance`
-  (pas de dépendance à l'entrepôt) : eau SECADENORD, budget de la mission, primes APIA
-  approuvées/décaissées, fonds calamités (dotation + indemnités), primes CTAMA. Rendu FR vérifié.
-  **Restent en tableaux** : les encouragements LF (trois séries **non chaînables** — un graphe
-  induirait une continuité trompeuse) ; les intrants (pas de série ferme).
+- **Figures — FAIT (11/11)** : **sept** séries en **graphes** (onglets Graphique/Données/Sources) via
+  `precis/fr/agriculture/figures/agriculture.py` (données inline + `register_provenance`, sans
+  entrepôt) : eau SECADENORD, budget de la mission (prévision), **budget en exécution (BOOST
+  2008-2014 + RAP 2019-2023)**, primes APIA approuvées/décaissées, **encouragements LF (3 segments,
+  ruptures marquées)**, fonds calamités (dotation + indemnités), primes CTAMA. Intrants : sans série
+  ferme (pas de figure).
+- **URL arabes — FAIT (11/11)** : dans `ar/agriculture/references.json`, 53/56 clés JORT passées à
+  l'**édition arabe** `pist.tn` (chaque URL vérifiée HTTP 200) ; 3 fascicules de l'an 2000
+  (`loi2000-29/30/98`) en 404 — gardés en édition FR (voir Backlog).
+- **Acquisitions (11/11)** : budget du ministère **avant 2014 TROUVÉ** (base BOOST, exécution
+  2008-2014, recoupée aux PAP) et versé ; **ventilation des déclarations du fonds par aléa TROUVÉE**
+  (sécheresse quasi exclusive, 2019-2023) et versée. **PAP 2023 et décaissé APIA 2010-2017 :
+  non trouvés** (PAP 2023 et RAP 2021 jamais publiés ; rapports APIA 2010-2017 jamais mis en ligne) —
+  trous honnîtes, chemins de collecte consignés.
 
 **Reporté — reste réel à acquérir ou à faire** :
 - **Prolonger les séries** : dotation/indemnités du fonds **2024** (annexe 10 du PLF 2026, pas encore en
