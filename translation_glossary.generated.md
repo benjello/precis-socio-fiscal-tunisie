@@ -18,6 +18,8 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Administrations publiques | الإدارات العمومية |  |
 | Admission temporaire | القبول المؤقت |  |
 | Adoul | عدل إشهاد |  |
+| Affections prises en charge intégralement | الأمراض الثقيلة أو المزمنة المتكفل بها كليا | APCI |
+| Affilié | المنخرط |  |
 | Agence de réhabilitation et de rénovation urbaine | وكالة التهذيب والتجديد العمراني | ARRU |
 | Agence foncière d'habitation | الوكالة العقارية للسكنى | AFH |
 | Agence foncière industrielle | الوكالة العقارية الصناعية | AFI |
@@ -75,6 +77,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Bénéfices des professions non commerciales | الأرباح غير التجارية | BNC |
 | Bénéfices distribués | الأرباح الموزعة |  |
 | Bénéfices industriels et commerciaux | الأرباح الصناعية والتجارية | BIC |
+| Bénéficiaire (assurance maladie) | المنتفع |  |
 | Bière, vin classés | الجعة والخمور المصنفة |  |
 | Bonification | الترفيع في مدّة الخدمات |  |
 | Bourse d'alternance | منحة التداول |  |
@@ -106,15 +109,18 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Carte de soins | بطاقة العلاج |  |
 | Carte de soins à tarifs réduits | بطاقة العلاج بالتعريفة المنخفضة | AMG2 |
 | Carte de soins gratuits | بطاقة العلاج المجاني | AMG1 |
+| Carte sanitaire | الخريطة الصحية |  |
 | Catégorie de classement de l'entreprise publique | صنف المؤسسة |  |
 | Catégorie de grade | صنف الرتبة |  |
 | Catégories à revenu limité | الفئات محدودة الدخل |  |
 | Catégories pauvres | الفئات الفقيرة |  |
 | Cause réelle et sérieuse | سبب حقيقي وجدي |  |
 | Centimes additionnels | صانتيمات إضافية |  |
+| Centre de soins de santé de base | مركز الصحة الأساسية | CSB |
 | Certificat d'aptitude professionnelle | شهادة الكفاءة المهنية | CAP |
 | Certificat de compétence | شهادة مهارة |  |
 | Cession des participations publiques | التفويت في المساهمات العمومية |  |
+| Charges techniques (d'une caisse) | الأعباء الفنية |  |
 | Chèque-formation | صك التكوين |  |
 | Chiffre d'affaires imposable | رقم المعاملات الخاضع |  |
 | Chiffre indiciaire | الرقم القياسي |  |
@@ -153,6 +159,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Compte épargne en actions | حساب الادخار في الأسهم | CEA |
 | Compte épargne pour l'investissement | حساب الادخار للاستثمار | CEI |
 | Compte financier | الحساب المالي |  |
+| Comptes de la santé | الحسابات الوطنية للصحة |  |
 | Comptes spéciaux d'épargne | الحسابات الخاصة للادخار |  |
 | Concours externe sur dossiers | مناظرة خارجية بالملفات |  |
 | Condition de ressources | شرط الموارد |  |
@@ -193,6 +200,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Convention collective sectorielle des banques et établissements financiers | الاتفاقية المشتركة القطاعية لأعوان البنوك والمؤسسات المالية |  |
 | Coordination des régimes | التنسيق بين أنظمة الضمان الاجتماعي |  |
 | Corps diplomatique | السلك الدبلوماسي |  |
+| Corps médical hospitalo-sanitaire | السلك الطبي الاستشفائي الصحي |  |
 | Cotisation de l'assuré | اشتراك المضمون |  |
 | Cotisation supplémentaire | الاشتراك الإضافي |  |
 | Cotisations sociales | المساهمات الاجتماعية |  |
@@ -220,10 +228,13 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Démantèlement tarifaire | تفكيك المعاليم الديوانية |  |
 | Demi-décime | نصف العشر الإضافي |  |
 | Départ volontaire (agents publics) | المغادرة الاختيارية |  |
+| Dépense catastrophique de santé | الإنفاق الصحي الكارثي |  |
+| Dépense courante de santé | النفقات الجارية للصحة |  |
 | Dépenses de développement | نفقات التنمية |  |
 | Dépenses de gestion | نفقات التصرف |  |
 | Dépenses fiscales | النفقات الجبائية |  |
 | Dépenses obligatoires | النفقات الإجبارية |  |
+| Dépenses totales de santé | النفقات الجملية للصحة | DTS |
 | Déséquilibre vertical | الاختلال العمودي |  |
 | Détournement et création de commerce | تحويل التجارة وإنشاء التجارة |  |
 | Dette de l'État | دين الدولة |  |
@@ -307,6 +318,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Établissement public à caractère industriel et commercial | المؤسسة العمومية ذات الصبغة الصناعية والتجارية | EPIC |
 | Établissement public à caractère non administratif | المؤسسة العمومية التي لا تكتسي صبغة إدارية | EPNA |
 | Établissement public à caractère scientifique et technologique | المؤسسة العمومية ذات الصبغة العلمية والتكنولوجية | EPST |
+| Établissement public de santé | المؤسسة العمومية للصحة | EPS |
 | Évasion tarifaire | التهرب من المعاليم الديوانية |  |
 | Éviction de la construction privée | مزاحمة البناء الخاص |  |
 | Exonération de TVA | الإعفاء |  |
@@ -334,6 +346,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Fonds national de la réforme éducative | الصندوق الوطني للإصلاح التربوي |  |
 | Fonds spéciaux du Trésor | الحسابات الخاصة في الخزينة |  |
 | Forces de sécurité intérieure | قوات الأمن الداخلي |  |
+| Forfait conventionnel | المبلغ الجزافي التعاقدي |  |
 | Formalité de l'enregistrement | إجراء التسجيل |  |
 | Formation brute de capital fixe | التكوين الخام لرأس المال الثابت | FBCF |
 | Formation en alternance | التكوين بالتداول |  |
@@ -357,6 +370,9 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Hébergement universitaire | السكن الجامعي |  |
 | Heures supplémentaires | الساعات الإضافية |  |
 | Homologation des prix | المصادقة الإدارية على الأسعار |  |
+| Honoraires conventionnels | الأتعاب التعاقدية |  |
+| Hôpital de circonscription | المستشفى المحلي |  |
+| Hôpital régional | المستشفى الجهوي |  |
 | Immatriculation foncière | التسجيل العقاري |  |
 | Immeubles non immatriculés | العقارات غير المرسمة |  |
 | Impôt exclusif | الأداء الحصري |  |
@@ -387,6 +403,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Indemnité de décès | منحة الوفاة |  |
 | Indemnité de gestion et d'exécution | منحة التصرف والتنفيذ |  |
 | Indemnité de magistrature | منحة القضاء |  |
+| Indemnité de non-clientèle | منحة عدم مباشرة العيادة الخاصة |  |
 | Indemnité de permanence (magistrats) | منحة الاستمرار |  |
 | Indemnité de poste | منحة المركز |  |
 | Indemnité de représentation | منحة التمثيل |  |
@@ -438,6 +455,8 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Mastère de recherche | ماجستير البحث |  |
 | Mastère professionnel | الماجستير المهني |  |
 | Mécanisme d'ajustement automatique des prix des carburants | آلية التعديل الأوتوماتيكي لأسعار المحروقات |  |
+| Médecin conventionné | الطبيب المتعاقد |  |
+| Médecin de famille | طبيب العائلة |  |
 | Melk | الملك |  |
 | Méthode du solde | طريقة الرصيد المتبقّي |  |
 | Micro-entreprise | مؤسسة صغرى |  |
@@ -472,6 +491,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Origine des marchandises | منشأ البضائع |  |
 | Ouvrier de l'État | عامل الدولة |  |
 | Ouvriers de chantiers | عملة الحضائر |  |
+| Parcours de soins coordonné | مسار العلاج المنسّق |  |
 | Part aux recettes | المناب من محصول الأداءات |  |
 | Participation publique | مساهمة عمومية |  |
 | Patrimoine financier | الملك المالي |  |
@@ -491,6 +511,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Période d'essai | فترة التجربة |  |
 | Perte sèche | الخسارة الصافية في الرفاه |  |
 | Pharmacie centrale de Tunisie | الصيدلية المركزية للبلاد التونسية | PCT |
+| Plan de développement quinquennal | المخطط الخماسي للتنمية |  |
 | Plus-value de cession de titres | القيمة الزائدة المتأتية من التفويت في السندات |  |
 | Plus-value immobilière | القيمة الزائدة العقارية |  |
 | Plus-value nominale | القيمة الزائدة الاسمية |  |
@@ -590,6 +611,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Ressources propres | الموارد الذاتية |  |
 | Restauration universitaire | الإطعام الجامعي |  |
 | Restitution du crédit de taxe sur la valeur ajoutée | إرجاع فائض الأداء على القيمة المضافة |  |
+| Résultat technique | النتيجة الفنية |  |
 | Retenue à la source | الخصم من المورد |  |
 | Retenue à la source définitive et non restituable | الخصم من المورد النهائي وغير القابل للإرجاع |  |
 | Retenue à la source libératoire | الخصم من المورد التحرري |  |
@@ -663,6 +685,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Structure des prix | تركيبة الأسعار |  |
 | Subsidiarité | التفريع |  |
 | Subvention conditionnelle | المنحة المشروطة |  |
+| Subvention d'équilibre | منحة التوازن |  |
 | Subvention directe | الدعم المباشر |  |
 | Subvention forfaitaire | المنحة الجزافية |  |
 | Subvention globale | المنحة الشاملة |  |
@@ -725,6 +748,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Terres collectives | الأراضي الاشتراكية |  |
 | Territorialité de la TVA | مبدأ الإقليمية |  |
 | Ticket modérateur | المعلوم التعديلي |  |
+| Tiers payant | نظام الدفع من قبل الغير |  |
 | Timbre d'avocat | طابع المحاماة |  |
 | Timbre de dimension | معلوم الطابع حسب حجم الورق |  |
 | Timbre mobile | الطابع غير القار |  |

@@ -1,0 +1,5 @@
+series: [oms-ghed-financement-sante-tunisie-2000-2023]
+sources: [oms-ghed-comptes-sante-tunisie, oms-ghed-paiements-directs-tunisie]
+fiches: [sources/oms-sante-indicateurs.md]
+caveats: [Parts publiées telles quelles par l'OMS : ne pas les recomposer ni les additionner à des comptes nationaux tunisiens. La dépense courante de santé (CHE) exclut l'investissement en bâtiments et équipements ; elle ne se raccorde donc pas aux dépenses totales de santé (DTS) des comptes nationaux 2004 et 2012-2014. Les paiements directs (OOP) sont un sous-ensemble du financement privé intérieur, pas un quatrième financeur ; ils excluent les assurances de groupe et mutuelles (à la différence de la part des ménages citée pour 2004). Public + privé + extérieur = 100 % aux arrondis près. Montants en USD courants, non convertis en dinars. API GHO consultée le 10 novembre 2026.]
+generated: 2026-11-10
