@@ -1,0 +1,5 @@
+series: [budget-missions-execute, denominateurs-depenses-etat-pib]
+sources: [gbo-rap-missions, minfin-remunerations, minfin-indicateurs-fp, ins-cnat-2015, wb-wdi]
+fiches: [sources/jort-lois-de-finances-fonds-credits.md]
+caveats: [LE PIB N'EST JAMAIS CHAÎNÉ : segment_pib change en 1986, 1992, 1997, 2002, 2005, 2010 et 2025 ; une part du PIB se trace par segments. 1984-1985 : PIB de la Banque mondiale, bases accolées non raccordées ; 1986-1991 : PIB du ministère des Finances, base 1983 PRÉSUMÉE ; 2002-2004 et 2025 : valeur propre au ministère, rattachée à aucune base ; 2010-2014 : base 2015 rétropolée par l'INS. Les dépenses de l'État sont des RÉALISATIONS : rapportée à elles, une prévision de loi de finances donne un ordre de grandeur, non une exécution. AUCUNE DÉPENSE DE L'ÉTAT AVANT 1986.]
+generated: 2026-11-11

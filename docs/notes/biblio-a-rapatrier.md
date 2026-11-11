@@ -4210,3 +4210,34 @@ et `precis/fr/references.json` (fonds commun) seulement — l'éducation est FR 
   non résolue, 0 « ?@ » ; `push_biblio --verifier` → 3573 entrées, 0 perte ; `--dry-run` → exit 0,
   aucune `ValueError`. `--controle-rangement` **non lancé** : pas de `ZOTERO_API_KEY` dans
   l'environnement (lecture Zotero en ligne impossible ici) — à rejouer avec la clé.
+
+## Versement bibliographique du livre « transport » (chantier transport, 10 nov. 2026)
+
+`precis/fr/transport/references.json` peuplé : **54 entrées** (format `{"items":[…]}`).
+Contrôles : `check_references_coherentes.py` ✓ ; JSON valide ✓.
+
+- **34 créées (propres au volume)** : org. ministères (decret2014-409/410, decret2016-97,
+  decret88-1413, decret2008-121, decret2018-883, decret2008-512), SPROLS (loi77-53, decret77-926),
+  DR transport (decret2023-456), agences (dl81-22-sntri, dl81-21-metro-tunis, loi57-19-snit,
+  loi92-32-apip), antécédents routiers/autoroutiers (loi86-17, decret87-654, loi76-71, loi81-72,
+  loi90-69, loi90-89), modificatifs org. transports terrestres (loi93-70, loi96-60, loi2006-55,
+  loi78-40, decret2006-2118, decret2006-1470) ; rapports (minfin-pap-transport-2024,
+  minfin-rap-transport-2020, gbo-pap-transport, gbo-pap-equipement-habitat,
+  minfin-budget-equipement-2013/-2014, wb-livre-blanc-transport-2016, cour-comptes-2017-sntri).
+- **20 recopiées verbatim** : de compensation (loi2004-33, decret2001-2621, loi85-77,
+  minfin-budget-transport-2013…-2017, cour-comptes-2008/2016) ; d'entreprises_publiques
+  (decret2000-2406-attt, loi98-111-lf1999, wb-infra-diagnostic-2019, wb-tunisia-gouvernance-ep-2014,
+  loi94-102, loi96-74, decret2015-957-metro-sfax, decret2023-584-afh, loi59-34-ctn, loi81-69-arru —
+  ces 6 derniers existaient déjà dans EP : notes T2/T5 les disaient « à créer », corrigé en recopie).
+- **URLs JORT pist.tn** résolues depuis `jort_cache.db` (champ `pdf_fr`) pour toutes les
+  legislation créées sauf **decret2018-883-organisation-equipement** : `pdf_fr` absent de
+  `jort_cache` → entrée sans URL + TODO (à retrouver sur pist.tn/édition FR).
+- **À rapatrier dans Zotero** : les 34 entrées créées (champ Extra `citation-key: <clé>`). Le livre
+  **`transport` est absent de `COLLECTION_TO_BOOK`** (`scripts/sync_biblio.py`) : créer une
+  collection Zotero « Transport » et l'ajouter au mapping, sinon toute descente écrasera ce fichier.
+- **Clés collectives** `gbo-pap-transport` / `gbo-pap-equipement-habitat` : éditions individuelles
+  (SHA-256, pages) listées dans les notes T4 — à verser si une clé par édition est préférée.
+- **Non recopiées** (fonds commun `precis/fr/references.json`, déjà lu via `../references.json`) :
+  loi89-9, gbo-rap-missions, minfin-transferts-garanties, minfin-finances-publiques-2010,
+  loi2018-56-lf2019-ar, minfin-ep-2020, minfin-entreprises-publiques-lf2021. Comptes EP
+  (minfin-entreprises-publiques-lf2020) laissés au domicile EP (cités par lien, non par @clé).
