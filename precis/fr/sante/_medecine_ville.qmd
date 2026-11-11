@@ -9,10 +9,10 @@ En dehors de l'hôpital, le malade peut consulter un médecin exerçant à titre
 | Question | Règle de la convention de 2007 | Conséquence pour le paiement |
 |---|---|---|
 | Quel médecin ? | généraliste ou spécialiste de libre pratique ayant adhéré personnellement à la convention | le conventionnement de la caisse porte sur le praticien, même en cabinet de groupe |
-| Quel tarif sert de référence ? | nomenclature des actes et honoraires conventionnels | base du remboursement ou du paiement au médecin, selon l'acte |
+| Quel tarif sert de référence ? | nomenclature des actes et [honoraires conventionnels](#g-honoraires-conventionnels) | base du remboursement ou du paiement au médecin, selon l'acte |
 | Si le malade paie l'honoraire ? | le médecin atteste l'acte et le paiement | le bénéficiaire demande ensuite sa prise en charge à la caisse |
-| Si le tiers payant s'applique ? | le patient règle sa part ; la caisse règle au médecin la part qu'elle prend en charge | l'honoraire est partagé entre patient et caisse selon le soin |
-| Si la consultation s'inscrit dans le parcours coordonné prévu par la convention ? | un médecin de famille généraliste peut orienter vers un spécialiste, avec les exceptions prévues | accès et prise en charge obéissent aux règles du parcours si celui-ci est applicable |
+| Si le [tiers payant](#g-tiers-payant) s'applique ? | le patient règle sa part ; la caisse règle au médecin la part qu'elle prend en charge | l'honoraire est partagé entre patient et caisse selon le soin |
+| Si la consultation s'inscrit dans le [parcours de soins coordonné](#g-parcours-soins-coordonne) prévu par la convention ? | un [médecin de famille](#g-medecin-de-famille) généraliste peut orienter vers un spécialiste, avec les exceptions prévues | accès et prise en charge obéissent aux règles du parcours si celui-ci est applicable |
 
 : Consulter un médecin de libre pratique : conventionnement, honoraire et prise en charge dans la convention approuvée en 2007 {#tbl-ville-parcours-paiement}
 
@@ -22,7 +22,7 @@ En dehors de l'hôpital, le malade peut consulter un médecin exerçant à titre
 
 ## Combien de médecins sont conventionnés ? {#sec-ville-medecins-conventionnes}
 
-La CNAM compte les **médecins généralistes et spécialistes conventionnés** avec elle, séparément des autres prestataires. Les généralistes passent de **1 782 en 2007 à 3 905 en 2021**, les spécialistes de **823 à 5 460** (@fig-ville-medecins-conventionnes). Ce sont des médecins liés à la caisse par une convention, non l'ensemble des médecins exerçant en Tunisie ; ces effectifs ne disent ni le nombre de consultations ni celui des médecins disponibles dans chaque région.
+La CNAM compte les médecins généralistes et spécialistes [conventionnés](#g-medecin-conventionne) avec elle, séparément des autres prestataires. Les généralistes passent de **1 782 en 2007 à 3 905 en 2021**, les spécialistes de **823 à 5 460** (@fig-ville-medecins-conventionnes). Ce sont des médecins liés à la caisse par une convention, non l'ensemble des médecins exerçant en Tunisie ; ces effectifs ne disent ni le nombre de consultations ni celui des médecins disponibles dans chaque région.
 
 ```{python}
 #| label: fig-ville-medecins-conventionnes
@@ -56,17 +56,38 @@ La [convention approuvée en 2007](#r-ville-convention) fixe les droits et oblig
 
 ## Le médecin de famille et l'orientation des soins {#sec-ville-medecin-famille}
 
-[La convention de 2007](#r-ville-coordination) propose un parcours coordonné fondé sur le choix d'un généraliste appelé « médecin de famille ». Pour les bénéficiaires qui adhèrent à ce parcours, il est le premier recours, oriente vers les soins spécialisés et coordonne les interventions. La convention prévoit des consultations directes, notamment en pédiatrie, gynécologie et ophtalmologie, et distingue les affections prises en charge intégralement. Elle **renvoie à un avenant les modalités pratiques du parcours** : la seule lecture de la convention de 2007 ne suffit donc pas à dater son application effective.
+[La convention de 2007](#r-ville-coordination) propose un parcours coordonné fondé sur le choix d'un généraliste appelé médecin de famille. Pour les bénéficiaires qui y adhèrent, il est le premier recours, oriente vers les soins spécialisés et coordonne les interventions ; la convention réserve un accès direct à certaines spécialités et distingue les [affections prises en charge intégralement](#g-apci). Le médecin de famille est le médecin du patient dans cette organisation conventionnelle, non le médecin traitant d'un établissement hospitalier.
 
-Le médecin de famille est le médecin du patient dans cette organisation conventionnelle, **pas le médecin traitant d'un hôpital**. Le spécialiste reçoit une orientation quand le parcours l'exige ; le patient garde les droits que son régime lui ouvre, mais leur prise en charge dépend des conditions de consultation. Les actes et prescriptions d'un praticien non conventionné ne sont pas couverts par cette convention ; les règles qui leur sont applicables doivent être lues dans les textes propres au régime de base.
+Entre 2007 et 2012, la CNAM et le Syndicat tunisien des médecins libéraux complètent la convention par sept avenants. L'[avenant n° 1](#r-ville-avenant1), qui prend effet au [1^er^ juillet 2007]{.insecable}, et l'[avenant n° 5](#r-ville-avenant5), au [1^er^ juillet 2008]{.insecable}, revalorisent les honoraires ; les [avenants n° 3 et n° 4](#r-ville-avenant234) refondent des nomenclatures d'actes, d'imagerie et de radiothérapie ; l'[avenant n° 2](#r-ville-avenant234) et l'[avenant n° 6](#r-ville-avenant6) installent des commissions paritaires régionales. Un [avenant n° 9](#r-ville-avenant9) suit en 2020.
 
-<!-- TODO (documentaliste) : lire les avenants n° 1 à 7 de la convention des médecins de libre pratique (2007-2012) et les modificatifs suivants, en particulier la mise en application du parcours coordonné et les règles d'accès direct aux spécialistes ; ne pas assimiler la stipulation initiale à son déploiement effectif. -->
+La convention renvoie à un avenant les modalités pratiques du parcours de médecin de famille. Elle prévoit d'ailleurs, dès son entrée en vigueur, un régime transitoire couvrant l'assuré non inscrit au parcours, ce qui situe celui-ci hors d'application immédiate. Aucun des avenants identifiés ne fixe ces modalités, et le contenu de l'[avenant n° 7](#r-ville-avenant7), approuvé en 2012, n'est pas établi par les textes identifiés : son arrêté d'approbation renvoie à une annexe non reproduite. En l'état des textes identifiés, l'application effective du parcours de médecin de famille n'a donc pas de date établie.
+
+<!-- RECHERCHE r-sante-medecin-famille-modalites : modalités pratiques du parcours de médecin de famille (art. 20 de la convention de 2007) et contenu de l'avenant n° 7 de 2012 (voir docs/recherches.yml) -->
+
+Le spécialiste reçoit une orientation quand le parcours l'exige ; le patient garde les droits que son régime lui ouvre, mais leur prise en charge dépend des conditions de consultation. Les actes et prescriptions d'un praticien non conventionné ne sont pas couverts par cette convention ; les règles qui leur sont applicables se lisent dans les textes propres au régime de base.
+
+:::: {.chronologie-repliable titre="Avenants à la convention des médecins de libre pratique : objet et portée, date par date, 2007-2020"}
+
+| Avenant (conclu le) | Approbation | Portée | Référence et localisation |
+|---|---|---|---|
+| []{#r-ville-avenant1}n° 1 ([6 juin 2007]{.insecable}) | [15 août 2007]{.insecable} | honoraires, effet au [1^er^ juillet 2007]{.insecable} : forfaits de spécialité, d'accouchement et d'imagerie ; lettre clé Kc à 4 D | [@avenant1-2007-medecins-liberaux, pp. 3027-3034] |
+| []{#r-ville-avenant234}n° 2 ([29 octobre 2007]{.insecable}), n° 3 ([2 janvier 2008]{.insecable}), n° 4 ([14 février 2008]{.insecable}) | [7 août 2008]{.insecable} | commission paritaire régionale de Gafsa (n° 2) ; nomenclature d'imagerie, tomodensitométrie et IRM (n° 3) ; radiothérapie et consultation du neurologue cotée Cnpsy (n° 4) | [@avenants2-3-4-2008-medecins-liberaux, pp. 2541-2543] |
+| []{#r-ville-avenant5}n° 5 ([30 juin 2008]{.insecable}) | [7 août 2008]{.insecable} | revalorisation des consultations, effet au [1^er^ juillet 2008]{.insecable} : généraliste 18 D, spécialiste 30 D, neurologue et psychiatre 35 D ; césarienne 500 D | [@avenant5-2008-medecins-liberaux, p. 2544] |
+| []{#r-ville-avenant6}n° 6 ([30 juillet 2008]{.insecable}) | [8 octobre 2008]{.insecable} | trois commissions paritaires régionales (Bizerte, Médenine, Nabeul) | [@avenant6-2008-medecins-liberaux, pp. 3185-3186] |
+| []{#r-ville-avenant7}n° 7 ([4 avril 2012]{.insecable}) | [13 juin 2012]{.insecable} | contenu non reproduit au fascicule : annexe de l'arrêté d'approbation non publiée | [@avenant7-2012-medecins-liberaux, p. 1502] |
+| []{#r-ville-avenant9}n° 9 (2020) | [22 mai 2020]{.insecable} | avenant postérieur à la période 2007-2012, non détaillé ici | [@avenant9-2020-medecins-liberaux, pp. 1139-1141] |
+
+: Avenants à la convention des médecins de libre pratique : conclusion, approbation et portée {#tbl-ville-avenants}
+
+::::
 
 ## Les honoraires, la caisse et la part du malade {#sec-ville-paiement}
 
 Le tarif de référence est lié à l'acte pratiqué. [La convention](#r-ville-honoraires) fait calculer les honoraires ambulatoires selon la nomenclature et les honoraires conventionnels. Dans le cas de **paiement direct par le malade**, le praticien porte les honoraires perçus sur la feuille de soins ; dans le cas de **tiers payant**, il distingue la part due par la caisse et le ticket modérateur payé par le malade. La convention ne confond pas non plus l'honoraire d'un acte ambulatoire avec la rémunération globale d'une hospitalisation.
 
-Le [régime de base](../prestations_sociales/_soins.html#sec-soins-cout) fixe la fraction de certains frais que la CNAM prend en charge, selon la catégorie de soin et les plafonds applicables. Cette fraction ne donne pas automatiquement le revenu du médecin : le nombre de consultations, les actes et les honoraires effectivement réglés ne sont pas établis ici. Pour une visite à domicile, [la convention](#r-ville-honoraires) met les frais supplémentaires de déplacement à la charge du bénéficiaire. Aucun tarif actuel n'est donné sans une série vérifiée des conventions et de leurs avenants.
+La grille des consultations connaît une revalorisation datée. À l'entrée en vigueur de la convention, la consultation du généraliste est fixée à 15 dinars, celle du spécialiste à 25 dinars, celle du psychiatre à 30 dinars ([convention de 2007](#r-ville-honoraires)). L'[avenant n° 5](#r-ville-avenant5) les porte, à compter du [1^er^ juillet 2008]{.insecable}, à 18, 30 et 35 dinars — cette dernière valeur commune au neurologue et au psychiatre. C'est la dernière grille de consultation établie et datée par les textes identifiés ; aucun honoraire de consultation postérieur n'y est fixé. À côté des consultations, l'[avenant n° 1](#r-ville-avenant1) institue des [forfaits conventionnels](#g-forfait-conventionnel) d'accouchement et d'imagerie, et l'[avenant n° 4](#r-ville-avenant234) des forfaits de radiothérapie, chacun plafonnant la somme perçue par le médecin conventionné.
+
+Le [régime de base](../prestations_sociales/_soins.html#sec-soins-cout) fixe la fraction de certains frais que la CNAM prend en charge, selon la catégorie de soin et les plafonds applicables. Cette fraction ne donne pas automatiquement le revenu du médecin : le nombre de consultations, les actes et les honoraires effectivement réglés ne sont pas établis ici. Pour une visite à domicile, [la convention](#r-ville-honoraires) met les frais supplémentaires de déplacement à la charge du bénéficiaire.
 
 :::: {.chronologie-repliable titre="Médecine de ville : nomenclature, médecin de famille, honoraires et deux circuits de paiement, textes de 1991 et 2007"}
 
@@ -78,6 +99,21 @@ Le [régime de base](../prestations_sociales/_soins.html#sec-soins-cout) fixe la
 | []{#r-ville-honoraires}Convention approuvée en 2007 | honoraire et paiement | même arrêté [@arrete-2007-02-06-medecins-liberaux, convention, titre I, p. 389-393 ; art. 53-57 et 81, p. 402 et 406] | honoraire conventionnel comme base, paiement direct ou tiers payant, part du malade identifiée |
 
 : Médecine de ville : textes et articles sur les honoraires et la prise en charge {#tbl-ville-textes}
+
+::::
+
+:::: {.chronologie-repliable titre="Honoraires conventionnels des consultations : montants datés, 2007 et 2008, et principaux forfaits"}
+
+| Acte (lettre clé) | Au [13 février 2007]{.insecable}<br>(D) | Au [1^er^ juillet 2008]{.insecable}<br>(D) | Référence |
+|---|---|---|---|
+| Consultation du généraliste (C) | 15,000 | 18,000 | [@arrete-2007-02-06-medecins-liberaux, annexe 6, p. 423] ; [@avenant5-2008-medecins-liberaux, p. 2544] |
+| Consultation du spécialiste (Cs) | 25,000 | 30,000 | [@arrete-2007-02-06-medecins-liberaux, annexe 6, p. 423] ; [@avenant5-2008-medecins-liberaux, p. 2544] |
+| Consultation du psychiatre, puis du neurologue et du psychiatre (Cpsy, puis Cnpsy) | 30,000 | 35,000 | [@arrete-2007-02-06-medecins-liberaux, annexe 6, p. 423] ; [@avenant5-2008-medecins-liberaux, p. 2544] |
+| Acte de spécialité, par unité (KE) | 2,000 | — | [@arrete-2007-02-06-medecins-liberaux, annexe 6, p. 423] |
+
+: Honoraires conventionnels des consultations ambulatoires, en dinars, 2007 et 2008 {#tbl-ville-honoraires}
+
+Forfaits d'accouchement institués par l'avenant n° 1 à compter du [1^er^ juillet 2007]{.insecable} (maximum perçu par le médecin) : accouchement simple 250 D, géméllaire 300 D ; anesthésie générale 80 D, analgésie péridurale 130 D ; césarienne 400 D pour le gynécologue et 160 D pour l'anesthésiste, la part du gynécologue étant portée à 500 D au [1^er^ juillet 2008]{.insecable} [@avenant1-2007-medecins-liberaux, art. 4, p. 3030 ; @avenant5-2008-medecins-liberaux, p. 2544]. Forfaits de radiothérapie institués par l'avenant n° 4 : préparation du traitement 400 D, usage du simulateur 650 D, séance d'irradiation 45 D en deçà de 3 grays et 70 D à partir de 3 grays [@avenants2-3-4-2008-medecins-liberaux, p. 2543].
 
 ::::
 

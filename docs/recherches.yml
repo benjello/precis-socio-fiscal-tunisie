@@ -3289,6 +3289,33 @@
     couvert_jusqu_au: 2026-10-15
     resultat: aucun
 
+- id: r-sante-medecin-famille-modalites
+  objet: texte donnant les modalités pratiques du parcours de médecin de famille prévu par l'art. 20 de la convention sectorielle des médecins de libre pratique de 2007 (avenant d'application, décret ou arrêté sur la coordination des soins et les situations exceptionnelles d'accès direct), et contenu de l'avenant n° 7 (conclu le 4 avril 2012, approuvé par arrêté du 13 juin 2012, JORT n° 49 p. 1502, publié sans son annexe)
+  ou: [precis/fr/sante/_medecine_ville.qmd#sec-ville-medecin-famille]
+  requetes:
+    titres_fts:
+    - avenant medecins libre pratique
+    - parcours soins coordonne medecin famille
+    titres_like:
+    - '%avenant%médecins de libre pratique%'
+    - '%parcours%coordonné%'
+    iort_ar:
+    - الاتفاقية القطاعية لأطباء الممارسة الحرة
+    - ملحق عدد 8
+    - طبيب العائلة
+    - مسار العلاج
+    depuis: 2007-02-13
+  passes:
+  - date: 2026-11-10
+    role: documentaliste
+    sources: [jort_cache, corpus_local]
+    couverture: 'avenants n° 1 à 7 (2007-2012) lus ; aucun ne porte les modalités du parcours ; avenant n° 7 publié sans son annexe ; avenant n° 8 absent de jort_cache (titres fr) ; intitulés arabes et édition arabe non encore parcourus.'
+    couvert_jusqu_au: 2012-06-22
+    resultat: aucun
+  a_faire:
+  - lire l'édition arabe des fascicules 2008-2013 (intitulés arabes, avenant n° 8)
+  - avenant n° 9 de 2020 (JORT n° 48, pp. 1139-1141), recueil CNAM des conventions et avenants
+
 - id: r-prix-gaz-commercial-concessions-apres-2000
   objet: texte modifiant ou remplaçant le décret n° 2000-1027 du 15 mai 2000 (prix du gaz commercial écoulé sur le marché local par les titulaires de concessions d'exploitation d'hydrocarbures), et conventions particulières de prix, dont celle du champ de Miskar (0,85 fois le fuel à haute teneur en soufre selon l'ANER, p. 29, contre 0,80 pour Franig et Baguel et 80 % de ce prix dans le décret)
   ou: [precis/fr/compensation/_electricite_gaz.qmd#sec-compensation-eg-longue-periode]
