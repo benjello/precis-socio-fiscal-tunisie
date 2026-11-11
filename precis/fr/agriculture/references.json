@@ -1347,6 +1347,34 @@
       "note": "citation-key: apia-subventions-gouv-delegation-2010-2016\nagridata.tn. Primes approuvées. Totaux divergents d'avec le jeu « par projet 2010-2017 » (~30 %) : périmètres non documentés, ne pas épisser. Copie locale tunisia-data/data/raw/apia/apia_investissements_subventions_par_gouv_delegation_2010-2016.csv (SHA-256 b4c99084548e39297fd2b1ef5d4431fedfccf4e1c7e6fc26069df13404e148cb). Consulté le 10 novembre 2026."
     },
     {
+      "id": "apia-repartition-doa-2010-2017",
+      "type": "dataset",
+      "title": "Répartition des investissements agricoles approuvés et des primes par projet et par secteur, 2010-2017",
+      "author": [
+        {
+          "literal": "Agence de promotion des investissements agricoles"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2017
+          ]
+        ]
+      },
+      "URL": "https://catalog.agridata.tn/dataset/c2fb868a-7b0d-4095-9a3f-47cf4ea1ab8f",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            10
+          ]
+        ]
+      },
+      "note": "citation-key: apia-repartition-doa-2010-2017\nagridata.tn. Primes approuvées (colonne PRIME_APPROUVEE) ventilées par secteur (agriculture, pêche, aquaculture, première transformation, services), ce qui permet d'isoler le périmètre agricole. Totaux inférieurs d'environ 30 % au jeu « par gouvernorat et délégation » (millésime distinct) ; années 2017-2018 non homogènes (2018 hors échelle). Copie locale tunisia-data/data/raw/apia/apia_repartition_doa_2010-2017.xls (SHA-256 b426d75c41f14f5920e6a61a3f23d677147b4d661d4ec5b83faab1dda9aab85f). Consulté le 10 novembre 2026."
+    },
+    {
       "id": "afdb-2006-pcr-cap-bon",
       "type": "report",
       "title": "Tunisie — Projet de valorisation des grands périmètres irrigués (Cap Bon), rapport d'achèvement",

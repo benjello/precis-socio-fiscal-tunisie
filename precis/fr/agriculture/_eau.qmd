@@ -136,21 +136,28 @@ l'exploitant, elle est mobilisée et transportée par des ouvrages dont l'exploi
 la livraison, bien moins que le coût. La part de ce coût que le gestionnaire régional
 achète en amont se mesure, pour le Nord du pays, au prix auquel la Société d'exploitation
 du canal et des adductions des eaux du Nord (SECADENORD) vend l'eau en gros aux
-commissariats régionaux. Ce prix de gros est suivi année par année de 2014 à 2025
-[@secadenordTarif2025] ; il ne confond pas avec le tarif facturé à l'agriculteur, mais il
-en donne le plancher de coût.
+commissariats régionaux. Ce prix de gros est suivi, zone par zone, de 2014 à 2025 [@secadenordTarif2025] ; il ne se
+confond pas avec le tarif facturé à l'agriculteur, mais il en donne le plancher de coût. Il
+varie fortement d'une zone à l'autre — d'une vingtaine à plus de cent millimes le mètre cube,
+selon la distance et le relief du transport. Rapporté à sa médiane, il est **resté inchangé de
+2014 à 2021** — un gel pluriannuel —, puis **a augmenté à partir de 2022**, d'environ 46 % en
+quatre ans.
 
-| Acheteur (en gros) | Prix de vente de l'eau par la SECADENORD en 2014<br>(millime/m³) |
-|---|---|
-| Commissariat régional de Béja (Teffeha) | 105-110 |
-| Commissariat régional de Tunis | 39 |
+| Année | Prix de gros médian (millime/m³) | Fourchette selon la zone (min–max) |
+|---|---|---|
+| 2014 à 2021 | 54 | 21–110 |
+| 2022 | 69 | 36–125 |
+| 2023 | 65 | 31–120 |
+| 2024 | 74 | 41–130 |
+| 2025 | 79 | 46–135 |
 
-: Prix de vente de l'eau en gros par la SECADENORD, par acheteur, 2014 {#tbl-eau-secadenord}
+: Prix de vente de l'eau en gros par la SECADENORD aux gestionnaires régionaux, médiane et fourchette sur une vingtaine de points de livraison, 2014-2025 {#tbl-eau-secadenord}
 
 ::: {.note-lecture}
-Prix auquel la SECADENORD vend le mètre cube d'eau en gros au commissariat régional, avant
-distribution à l'exploitant ; il mesure le coût amont du service, non le tarif facturé à
-l'agriculteur. Valeurs de 2014 ; la série suivie court de 2014 à 2025.
+Prix auquel la SECADENORD vend le mètre cube d'eau en gros au commissariat régional ou à la
+SONEDE, avant distribution à l'exploitant ; il mesure le coût amont du service, non le tarif
+facturé à l'agriculteur. Médiane et fourchette calculées sur les 21 à 22 points de livraison
+suivis chaque année ; les années 2014 à 2021 portent le même barème.
 :::
 
 Le rapprochement de ce coût de gros et des tarifs facturés relevés par les études
@@ -161,7 +168,7 @@ l'investissement, que le tarif ne couvre pas. L'écart entre le coût du service
 facturé est la [subvention implicite à l'irrigation](#g-subvention-implicite-irrigation), supportée par les gestionnaires
 régionaux et, au-delà, par le budget de l'État.
 
-<!-- TODO (documentaliste) : construire la série 2014-2025 complète des prix de gros SECADENORD par acheteur et zone à partir du jeu agridata, et la dépense du programme « Eaux » de la mission Agriculture (PAP/RAP 2015-2025) et des transferts aux gestionnaires, pour chiffrer la subvention implicite sur une vue datée plutôt que par rapprochement ponctuel. Sans série datée, pas de montant isolé dans le texte. -->
+<!-- TODO (documentaliste) : reste à chiffrer la dépense du programme « Eaux » de la mission Agriculture (PAP/RAP 2015-2025) et les transferts aux gestionnaires régionaux, pour mesurer la subvention implicite côté budget en regard du coût de gros ci-dessus. -->
 
 ## L'aide de l'État à l'irrigation privée {#sec-agri-eau-prive .domicile-unique}
 

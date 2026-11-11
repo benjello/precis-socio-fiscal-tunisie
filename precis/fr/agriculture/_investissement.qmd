@@ -137,16 +137,38 @@ d'investissement ; il est décrit au livre de la fiscalité. La même loi de fin
 par ailleurs un ancien fonds de développement agricole, dont les ressources sont versées au
 budget général.
 
-## Les primes versées : une série qui ne se reconstitue pas {#sec-agri-investissement-donnees}
+## Les primes : approuvées, non versées {#sec-agri-investissement-donnees}
 
-Le montant des [primes d'investissement](#g-prime-investissement-agricole) **effectivement décaissées** par l'APIA, année par
-année, n'est pas établi ici. Les données publiques de l'agence portent sur les primes
-*approuvées* au titre des investissements agréés — non sur les primes versées — et les jeux
-disponibles couvrent des périmètres et des périodes qui ne se raccordent pas en une série
-continue [@apia-subventions-gouv-delegation-2010-2016 ; @apia-indicateurs-investissement-prive].
-Aucune série homogène de versements ne peut donc être présentée en l'état.
+Les données publiques de l'APIA portent sur les [primes d'investissement](#g-prime-investissement-agricole)
+*approuvées* au titre des investissements agréés, non sur les primes effectivement *versées*.
+Pour le périmètre agricole de l'agence — agriculture, pêche, aquaculture et première
+transformation —, ces primes approuvées évoluent ainsi de 2010 à 2016
+[@apia-repartition-doa-2010-2017] :
 
-<!-- TODO (documentaliste) : série APIA des primes décaissées à obtenir (r-apia-primes-versees) — bulletins statistiques et rapports d'activité annuels de l'APIA ; distinguer primes approuvées (engagées) et primes versées (décaissées). Sans série datée, aucun chiffre ponctuel isolé dans le texte. -->
+| Année | Primes d'investissement approuvées, périmètre agricole (millions de dinars) |
+|---|---|
+| 2010 | 38 |
+| 2011 | 40 |
+| 2012 | 35 |
+| 2013 | 36 |
+| 2014 | 46 |
+| 2015 | 44 |
+| 2016 | 63 |
+
+: Primes d'investissement agricole approuvées par l'APIA, périmètre agricole (agriculture, pêche, aquaculture, première transformation), 2010-2016 {#tbl-agri-invest-primes}
+
+::: {.note-lecture}
+Primes **approuvées** au moment de l'agrément du projet, et non primes **décaissées**. Elles ne
+se confondent pas avec les versements effectifs : le seul montant de primes versées connu, 54
+millions de dinars pour 2009, provient d'une source et d'une base différentes et ne se raccorde
+pas à cette série. Deux réserves : un second jeu de l'agence, ventilé par délégation, donne pour
+les mêmes années des totaux supérieurs d'environ 30 %, de périmètre non documenté
+[@apia-subventions-gouv-delegation-2010-2016] ; et les exercices 2017 et 2018 ne sont pas
+homogènes entre les millésimes publiés [@apia-indicateurs-investissement-prive]. La série des
+primes décaissées, elle, reste à obtenir auprès de l'agence.
+:::
+
+<!-- TODO (documentaliste) : série APIA des primes DÉCAISSÉES à obtenir (r-apia-primes-versees) — bulletins statistiques et rapports d'activité annuels de l'APIA. La série des primes approuvées est arrêtée à 2016 faute d'homogénéité au-delà. -->
 
 ## La chronologie des textes {#sec-agri-investissement-chronologie}
 
