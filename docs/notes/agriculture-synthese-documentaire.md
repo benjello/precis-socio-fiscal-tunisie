@@ -166,6 +166,21 @@ références cohérentes, recherches, rendu sans `[?]`) :
   plafonnée ; avance Trésor 3 MD pour 1987) ; libellé FR exact à confirmer à la main. Résidus OCR :
   2/3 résolus (77-627, code des eaux fasc. 23) ; **décret 74-847 non concluant** (scan FR dégradé).
 
+**Mise en chiffres (11/11/2026, séries datées versées depuis `tunisia-data`)** :
+- **dépense** : budget de la mission 2020-2025 (tableau) ; **trois découpages des encouragements LF
+  2010-2019** sourcés au mot (clés LF), avec réserve de non-chaînage ;
+- **eau** : prix de gros SECADENORD **2014-2025** (médiane + fourchette) — gel 2014-2021 puis +46 % ;
+- **investissement** : primes APIA **approuvées** 2010-2016 (périmètre agricole, 38→63 MD), après
+  réconciliation des jeux divergents ; clé `apia-repartition-doa-2010-2017` ajoutée ;
+- **calamités** : primes encaissées **CTAMA 2017-2020** (80→123 MD), états financiers CMF ; clé
+  `CtamaEF2020` ajoutée ;
+- **intrants** : laissés sans chiffre ferme (valeurs de presse ; le chapitre les décrit sans les
+  établir ; historique engrais au livre compensation par règle de domicile).
+- **Limite** : ces séries sont des **tableaux**, pas des **figures** — en faire des figures suppose
+  d'enregistrer les séries dans l'entrepôt `tunisia-data` (générateur + catalogue), un module
+  `precis/fr/agriculture/figures/` et un snapshot `_seriescache` : **chantier technique à part**,
+  à décider par le propriétaire (non ouvert ici).
+
 **Reporté (décision du 10/11/2026 : « pas d'économiste, plus tard »)** :
 - ch. 8 `_etudes.qmd` : reste un **stub** — attend la matière de l'économiste ;
 - les sections « Ce qu'en dit l'économie » en fin de chapitres de dispositif : non écrites (économiste) ;
