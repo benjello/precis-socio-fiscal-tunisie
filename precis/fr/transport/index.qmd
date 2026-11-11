@@ -1,0 +1,212 @@
+# Présentation {#sec-transport-presentation}
+
+Ce livre documente ce que l'État paie pour que les personnes et les marchandises
+circulent : l'infrastructure qu'il finance — routes, autoroutes concédées, voies
+ferrées, ports et aéroports —, les contrats et les subventions qu'il passe avec les
+opérateurs publics de transport, et la dépense publique du secteur sur la longue
+période. Son apport est d'abord d'ordre : il réunit sous une même carte des dispositifs
+jusqu'ici dispersés entre la compensation, les entreprises publiques, les finances
+locales et la fiscalité, et il suit la dépense de transport là où elle se décide et se
+vote, mission budgétaire par mission budgétaire.
+
+## La carte des dispositifs {#sec-transport-carte}
+
+Chaque dispositif domicilié dans ce livre naît d'un texte fondateur, s'applique à une
+date, et se lit dans l'un des chapitres. Les opérateurs eux-mêmes — leur statut, leurs
+comptes — relèvent du livre des entreprises publiques ; le tarif du transport public et
+sa compensation, du livre de la compensation (voir le tableau de voisinage,
+@sec-transport-voisinage).
+
+| Dispositif | Texte fondateur | Date d'application | Où lire |
+|---|---|---|---|
+| Organisation des transports terrestres (qui peut transporter, autorisations, concessions) | Loi n° 2004-33, qui refond la loi n° 85-77 de 1985 [@loi2004-33 ; @loi85-77] | [20 avril 2004]{.insecable} | Transport urbain et interurbain |
+| Tutelle du secteur — ministère du Transport | Décrets n° 2014-409 (attributions) et n° 2014-410 (organisation) [@decret2014-409-attributions-transport ; @decret2014-410-organisation-transport] | [16 janvier 2014]{.insecable} | Institution et tutelle |
+| Tutelle du secteur — ministère de l'Équipement | Décret n° 88-1413 [@decret88-1413-organisation-equipement] | [22 juillet 1988]{.insecable} | Institution et tutelle |
+| Domaine public routier de l'État | Loi n° 86-17 [@loi86-17-domaine-public-routier] | [7 mars 1986]{.insecable} | Infrastructure routière et autoroutes |
+| Concession du domaine public routier | Décret n° 87-654 [@decret87-654-concession-domaine-routier] | [20 avril 1987]{.insecable} | Infrastructure routière et autoroutes |
+| Fonds de développement des autoroutes | Loi de finances pour 1999, art. 16 et 17 [@loi98-111-lf1999, art. 16-17] ; supprimé par la loi de finances pour 2019 [@loi2018-56-lf2019-ar, art. 10] | [1999]{.insecable} à [2018]{.insecable} | Infrastructure routière et autoroutes |
+| Cahier des charges ferroviaire (chemins de fer) | Décret n° 2001-2621 [@decret2001-2621] | [9 novembre 2001]{.insecable} | Ferroviaire |
+| Contrats-programmes des opérateurs publics | Loi n° 89-9 relative aux participations et entreprises publiques [@loi89-9] | [1er février 1989]{.insecable} | Institution et tutelle ; chapitres de mode |
+| Dépense budgétaire du secteur (missions « Transport » et « Équipement et Habitat ») | [Rapports annuels de performance](#g-rapport-annuel-performance) des missions du budget de l'État [@gbo-rap-missions] | gestions 2012 et suivantes | La dépense publique de transport, longue période |
+
+## Les dates clés {#sec-transport-frise}
+
+Les régimes et les institutions du secteur s'enchaînent sur un même axe. La construction
+de l'autoroute du Sud, d'abord payée directement sur emprunts de l'État section par
+section, bascule en 1995 vers un modèle de concession à péage ; l'organisation du
+transport terrestre, centralisée au ministre en 1985, se décentralise en 1993 et 1996
+puis se régionalise en 2004.
+
+| Année | Régime ou institution | Texte |
+|---|---|---|
+| [1950]{.insecable} | Réglementation des transports automobiles de marchandises (Protectorat), antécédent abrogé en 1985 | Décret du 25 mai 1950 [@loi85-77, art. 23] |
+| [1959]{.insecable} | Compagnie tunisienne de navigation | Loi n° 59-34 [@loi59-34-ctn] |
+| [1976]{.insecable} à [1990]{.insecable} | Construction de l'autoroute du Sud (Tunis–M'saken) sur prêts de l'État, section par section | Lois n° 76-71, 81-72, 90-69 et 90-89 [@loi76-71-autoroute-tunis-turki ; @loi81-72-autoroute-turki-hammamet ; @loi90-69-autoroute-hammamet-msaken-fades ; @loi90-89-autoroute-hammamet-msaken-fkdea] |
+| [1978]{.insecable} | Réglementation des transports en commun de personnes, antécédent abrogé en 1985 | Loi n° 78-40 [@loi78-40] |
+| [1981]{.insecable} | Transport interurbain par route ; agence de réhabilitation urbaine | Décret-loi n° 81-22 ; loi n° 81-69 [@dl81-22-sntri ; @loi81-69-arru] |
+| [1985]{.insecable} | Organisation des transports terrestres (régime centralisé au ministre) | Loi n° 85-77 [@loi85-77] |
+| [1986]{.insecable}–[1987]{.insecable} | Domaine public routier ; régime de concession routière | Loi n° 86-17 ; décret n° 87-654 [@loi86-17-domaine-public-routier ; @decret87-654-concession-domaine-routier] |
+| [1988]{.insecable} | Organisation du ministère de l'Équipement et de l'Habitat | Décret n° 88-1413 [@decret88-1413-organisation-equipement] |
+| [1989]{.insecable} | Régime des participations et entreprises publiques (contrats-programmes) | Loi n° 89-9 [@loi89-9] |
+| [1993]{.insecable} et [1996]{.insecable} | Décentralisation de l'autorisation de transport (commune, gouverneur, ministre) | Lois n° 93-70 et n° 96-60 [@loi93-70 ; @loi96-60] |
+| [1995]{.insecable} | Première concession autoroutière (Hammam-Lif–M'saken) ; régime détaillé au livre des entreprises publiques | — |
+| [1999]{.insecable} | Fonds de développement des autoroutes | Loi de finances pour 1999 [@loi98-111-lf1999, art. 16-17] |
+| [2001]{.insecable} | Cahier des charges des chemins de fer | Décret n° 2001-2621 [@decret2001-2621] |
+| [2004]{.insecable} | Organisation des transports terrestres ; autorités régionales organisatrices | Loi n° 2004-33 [@loi2004-33] |
+| [2014]{.insecable} et [2016]{.insecable} | Organisation en vigueur du ministère du Transport | Décrets n° 2014-409, n° 2014-410 et n° 2016-97 [@decret2014-409-attributions-transport ; @decret2014-410-organisation-transport ; @decret2016-97-organisation-transport] |
+| [2015]{.insecable} | Société du métro léger de Sfax | Décret n° 2015-957 [@decret2015-957-metro-sfax] |
+| [2018]{.insecable} | Suppression du fonds de développement des autoroutes | Loi de finances pour 2019 [@loi2018-56-lf2019-ar, art. 10] |
+
+Le transport non urbain de la région, compétence abrogée en 2025, a sa place au livre des
+finances locales ; la fusion de 2003 qui donne naissance à la société de transport du
+Grand Tunis et la création en 2007 de la société du réseau ferroviaire rapide se lisent
+au livre des entreprises publiques.
+
+## Ce que pèse l'ensemble {#sec-transport-poids}
+
+La dépense budgétaire du secteur se lit sur deux missions du budget de l'État : la
+**mission Transport**, faite pour l'essentiel de subventions aux opérateurs, et la
+**mission Équipement et Habitat**, où vit l'investissement routier. Rapportées au produit
+intérieur brut, elles pèsent, l'une et l'autre réunies, de l'ordre de 1,6 à 2,0 % ; la
+part proprement consacrée au transport — mission Transport et programme d'infrastructure
+routière — en représente environ 1,5 %, la mission Équipement couvrant aussi le logement
+et l'urbanisme. Rapportées aux dépenses de l'État hors service de la dette, les deux
+missions réunies pèsent de l'ordre de 5 à 7 %. Deux figures en donnent la mesure : la
+première suit la dépense exécutée des deux missions, de 2018 à 2023 ; la seconde, sur un
+périmètre plus étroit mais une période plus longue, les transferts du budget au seul
+ministère du Transport, de 2016 à 2024.
+
+La part du PIB est calculée sur le PIB en base 2015 (voir l'[annexe sur le
+PIB](../annexe-pib.html)) ; elle ne se prolonge pas avant 2016 sans note de changement de
+base. La part des dépenses de l'État rapporte les montants aux dépenses de l'État **hors
+service de la dette**, réalisées : le dénominateur excluant la charge de la dette, ces
+parts sont celles de la dépense de politique publique, non du budget total. La mission
+Équipement et Habitat réunit l'infrastructure routière, la protection des zones urbaines
+et l'habitat ; elle ne vaut pas, à elle seule, « dépense de transport ».
+
+Le @fig-transport-poids donne la dépense exécutée des deux missions, en millions de
+dinars, en part des dépenses de l'État et en part du PIB.
+
+```{python}
+#| label: fig-transport-poids
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../scripts")
+from figures import poids as pd_fig
+pd_fig.figure(
+    "missions",
+    caption=("La dépense budgétaire exécutée des deux missions du secteur — Transport et "
+             "Équipement et Habitat —, 2018-2023 : crédits de paiement payés, en millions de "
+             "dinars courants, en part des dépenses de l'État (hors service de la dette) et en "
+             "part du PIB en base 2015"),
+    note_lecture=(
+        "Chaque barre empile les crédits de paiement payés de la mission Transport et de la "
+        "mission Équipement et Habitat ; le nombre au-dessus est leur somme. Ce sont des "
+        "paiements exécutés, hors ressources propres des établissements publics, dépouillés "
+        "des rapports annuels de performance. Rien avant 2018 ni après 2023 : c'est la "
+        "période que couvrent ces rapports pour les deux missions. Le trait vertical entre "
+        "2019 et 2020 marque un changement de nomenclature — paiements seuls jusqu'en 2019, "
+        "loi organique du budget de 2019 ensuite — qui rend le raccord non strictement "
+        "homogène.\n\n"
+        "Deuxième vue : les mêmes paiements rapportés aux dépenses de l'État hors service de "
+        "la dette, réalisées. Troisième vue : en part du PIB en base 2015. La mission "
+        "Équipement et Habitat couvre aussi le logement et l'urbanisme : elle ne vaut pas, à "
+        "elle seule, « dépense de transport »."))
+```
+
+La dépense exécutée des deux missions ne remonte pas avant 2018. Pour situer le secteur
+sur une période plus longue, une autre source — l'annexe 8 des lois de finances, qui
+récapitule les transferts du budget aux entreprises et établissements publics — donne, de
+2016 à 2024, ce que l'État verse aux organismes du **seul** ministère du Transport. Le
+@fig-transport-transferts en donne le montant, par nature, et la part des dépenses de
+l'État.
+
+```{python}
+#| label: fig-transport-transferts
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../scripts")
+from figures import poids as pd_fig
+pd_fig.figure(
+    "transferts",
+    caption=("Les transferts du budget aux entreprises et établissements du ministère du "
+             "Transport, 2016-2024 : interventions, investissements et autres transferts, en "
+             "millions de dinars courants et en part des dépenses de l'État (hors service de la "
+             "dette) — périmètre plus étroit que les deux missions, sans raccord avec elles"),
+    note_lecture=(
+        "Chaque barre empile les transferts du budget au ministère du Transport par nature : "
+        "interventions (subventions d'exploitation), investissements, et les autres transferts "
+        "— fonctionnement et rémunérations. Le nombre au-dessus est le total. La source est "
+        "l'annexe 8 des projets de loi de finances, d'où une période plus longue que les "
+        "rapports annuels de performance ; pour chaque année, la lecture de l'édition la plus "
+        "récente, les autres étant dans l'onglet « Données ». Les barres claires marquées d'un "
+        "astérisque sont une loi de finances, non une réalisation (l'année 2024).\n\n"
+        "Deuxième vue : le total rapporté aux dépenses de l'État hors service de la dette, "
+        "réalisées. Ce concept est **plus étroit** que les deux missions du @fig-transport-poids : "
+        "il ne porte que sur les organismes du ministère du Transport — la mission Équipement "
+        "et Habitat en est absente — et compte des transferts, non des crédits de mission. Il "
+        "**ne se raccorde pas** à la dépense exécutée des deux missions."))
+```
+
+<!-- TODO (rédacteur) : prolonger la dépense exécutée des deux missions au-delà de 2023 dès publication des rapports annuels de performance 2024-2026 (série budget-missions-execute). -->
+
+## Le plan du livre {#sec-transport-plan}
+
+Le livre suit une logique d'entonnoir, du général au particulier, puis par mode de
+transport. Neuf chapitres.
+
+La **présentation** — le présent chapitre — donne l'objet, la carte des dispositifs, les
+dates clés, le poids de l'ensemble et le voisinage. **Institution et tutelle** décrit le
+ministère du Transport et le ministère de l'Équipement, leurs programmes budgétaires et
+les agences du secteur, et dit qui décide quoi : le tarif, la concession, le
+contrat-programme. **La dépense publique de transport, longue période** suit les crédits
+des deux missions et les transferts aux opérateurs, et situe le secteur dans le cadre des
+finances publiques.
+
+Viennent ensuite les modes. **Infrastructure routière et autoroutes** traite la route
+financée au budget, le fonds de développement des autoroutes et le programme autoroutier,
+et renvoie au livre des entreprises publiques pour les registres de concessions et de
+péages. **Ferroviaire** porte sur ce que l'État confie et paie aux chemins de fer et au
+réseau ferroviaire rapide : cahier des charges, contrats-programmes, projets.
+**Transport urbain et interurbain** expose l'organisation du transport public de
+personnes, les autorités régionales organisatrices et les contrats-programmes des
+sociétés. **Aérien et maritime** réunit ce que le budget paie hors les comptes des
+opérateurs : subventions à des liaisons, ports et aéroports, contrats de performance.
+
+Les deux derniers chapitres sont transversaux. **Rapports et études** présente, chacun
+avec sa méthode, les travaux de la Cour des comptes et de la Banque mondiale sur le
+secteur. **Glossaire** réunit les notions du transport.
+
+## Les conventions de lecture {#sec-transport-conventions}
+
+- **L'état du droit se lit à sa date.** Chaque règle est datée ; « en 2004 », « depuis
+  2014 » situe le droit au moment considéré, et un texte postérieur peut l'avoir changé.
+- **Trois familles de chiffres, tenues séparées.** Le budgétaire — lois de finances,
+  rapports de performance, transferts aux entreprises — ne se mêle ni aux rapports
+  extérieurs (Cour des comptes, Banque mondiale), présentés comme tels avec leur méthode,
+  ni aux évaluations économiques. Toute appréciation est rattachée à l'acteur qui la
+  porte.
+- **Les montants se situent dans leur évolution.** Un crédit, un transfert, un
+  investissement se lit sur une série datée et, pour le temps long, en part du PIB plutôt
+  qu'en dinars courants.
+- **La population couverte accompagne chaque dispositif** lorsque la donnée existe, avec
+  sa série.
+- **Le domicile est unique.** Un dispositif vit dans un seul livre ; les autres en
+  reçoivent une phrase et un renvoi. Le tableau de voisinage ci-dessous dit, pour chaque
+  sujet limitrophe, le livre où il se lit.
+
+## Le voisinage {#sec-transport-voisinage}
+
+Plusieurs sujets touchent au transport sans y vivre. Ce tableau remplace toute liste de
+ce que le livre ne traiterait pas : il dit le livre où chaque sujet se lit.
+
+| Sujet limitrophe | Vit dans le livre |
+|---|---|
+| Tarif du transport public, abonnement scolaire et universitaire, gratuités et leur remboursement | Compensation |
+| Statut, comptes, dette et effectifs des opérateurs (transport du Grand Tunis, chemins de fer, compagnie aérienne, offices portuaires et aéroportuaires, agence technique des transports terrestres, société des autoroutes) | Entreprises publiques |
+| Concessions autoroutières, péages, garanties d'emprunt par tronçon | Entreprises publiques (section des autoroutes) |
+| Taxe de circulation, taxes sur les véhicules, taxe par siège des véhicules de transport touristique | Fiscalité |
+| Transport urbain et scolaire comme compétence des communes ; transport non urbain de la région, abrogé en 2025 | Finances locales |
+| Transport des élèves pauvres, abonnement scolaire comme aide à la scolarité | Éducation |
+
+<!-- TODO (bibliographe) : clés hors bibliographie du livre transport pour d'éventuels renvois sourcés — loi-org2025-4 (abrogation 2025, finances locales) et les textes de création des opérateurs domiciliés en entreprises publiques (chemins de fer 1956, société du Grand Tunis 2003, réseau ferroviaire rapide 2007) ne sont pas dans references.json ni ../references.json : à n'importer que si un chapitre les cite. -->

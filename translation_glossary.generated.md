@@ -57,6 +57,8 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Augmentation optionnelle de l'âge de mise à la retraite | الترفيع الاختياري في سنّ الإحالة على التقاعد |  |
 | Autonomie budgétaire | الاستقلالية في الميزانية |  |
 | Autonomie financière | الاستقلالية المالية |  |
+| Autorisation de transport | رخصة النقل |  |
+| Autorité régionale organisatrice des transports terrestres | السلطة الجهوية لتنظيم النقل البري |  |
 | Avance sur la taxe de formation professionnelle | التسبقة على الأداء على التكوين المهني |  |
 | Avance sur restitution du crédit de TVA | تسبقة من فائض الأداء على القيمة المضافة |  |
 | Avancement d'échelon | الترقّي في الدرجة |  |
@@ -90,6 +92,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Brevet de technicien supérieur | شهادة مؤهل التقني السامي | BTS |
 | Cadre général de référence des diplômes | الإطار المرجعي العام |  |
 | Cadres actifs | الأسلاك النشيطة |  |
+| Cahier des charges | كرّاس الشروط |  |
 | Caisse centrale des prestations sociales | الصندوق المركزي للمنح الاجتماعية |  |
 | Caisse d'assurance vieillesse, invalidité et survivants | صندوق تأمين الشيخوخة والعجز والباقين بقيد الحياة بعد وفاة المنتفع بجراية | CAVIS |
 | Caisse de compensation des allocations familiales | صندوق تعويض المنح العائلية |  |
@@ -163,6 +166,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Compte financier | الحساب المالي |  |
 | Comptes de la santé | الحسابات الوطنية للصحة |  |
 | Comptes spéciaux d'épargne | الحسابات الخاصة للادخار |  |
+| Concession autoroutière | لزمة الطريق السيّارة |  |
 | Concours externe sur dossiers | مناظرة خارجية بالملفات |  |
 | Condition de ressources | شرط الموارد |  |
 | Congé (titre de circulation) | سند إعفاء |  |
@@ -184,6 +188,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Contrat d'initiation à la vie professionnelle | عقد الإعداد للحياة المهنية | CIVP |
 | Contrat d'insertion des diplômés de l'enseignement supérieur | عقد إدماج حاملي شهادات التعليم العالي | CIDES |
 | Contrat de formation et de recherche | عقد التكوين والبحث |  |
+| Contrat de performance | عقد أداء |  |
 | Contrat de réinsertion dans la vie active | عقد إعادة الإدماج في الحياة النشيطة | CRVA |
 | Contrat emploi-formation | عقد التشغيل والتكوين |  |
 | Contrat emploi-solidarité | عقد التشغيل والتضامن |  |
@@ -256,6 +261,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | District | الإقليم |  |
 | Djemaïa des habous | جمعية الأحباس |  |
 | Doctorat | الدكتوراه |  |
+| Domaine public routier | الملك العمومي للطرقات |  |
 | Dotation budgétaire de la Caisse générale de compensation | منحة الميزانية للصندوق العام للتعويض |  |
 | Droit à déduction | حق الطرح |  |
 | Droit compensateur provisoire | المعلوم التكميلي المؤقت |  |
@@ -341,6 +347,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Fonctions astreignantes | الوظائف المرهقة |  |
 | Fonds commun des collectivités locales | المال المشترك للجماعات المحلية | FCCL |
 | Fonds de commerce | الأصول التجارية |  |
+| Fonds de développement des autoroutes | صندوق تنمية الطرقات السيّارة |  |
 | Fonds de promotion de la formation professionnelle et de l'apprentissage | صندوق النهوض بالتكوين والتدريب المهني |  |
 | Fonds de promotion du logement pour les salariés | صندوق النهوض بالمسكن لفائدة الأجراء |  |
 | Fonds de protection sociale des travailleuses agricoles | صندوق الحماية الاجتماعية للعاملات الفلاحيات |  |
@@ -483,6 +490,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Moyens des services | وسائل المصالح |  |
 | Niveau de rémunération | مستوى التأجير |  |
 | Nomenclature budgétaire | تبويب الميزانية |  |
+| Obligation de service public | موجبات المرفق العمومي |  |
 | Obligation scolaire | إجبارية التعليم الأساسي |  |
 | Office de l'aviation civile et des aéroports | ديوان الطيران المدني والمطارات | OACA |
 | Office de la marine marchande et des ports | ديوان البحرية التجارية والموانئ | OMMP |
@@ -774,6 +782,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Tranche normale | القسط العادي |  |
 | Transfert financier | التحويلات المالية |  |
 | Transfert monétaire direct | التحويل النقدي المباشر |  |
+| Transport urbain, régional et interurbain | النقل الحضري والجهوي وبين المدن |  |
 | Travail à temps partiel | العمل لوقت جزئي |  |
 | Travail de nuit | العمل الليلي |  |
 | Travail domestique | العمل المنزلي |  |

@@ -7729,25 +7729,34 @@ entries:
   - id: contrat-programme
     acronyme: null
     statut: provisoire
-    references: [decret2005-321]
-    source_definition: {ref: decret2000-1902, locator: "art. 3 et 12"}
-    voir_aussi: [controleur-d-etat, epna, entreprises-publiques]
+    references: [loi89-9, decret2000-1902, decret2005-321]
+    source_definition: {ref: loi89-9}
+    voir_aussi: [controleur-d-etat, epna, entreprises-publiques, cahier-des-charges, contrat-de-performance]
     fr:
       terme: Contrat-programme
       definition: >
-        Engagement pluriannuel arrêté par le conseil d'administration d'une
-        caisse de sécurité sociale et approuvé par le ministère de tutelle
-        (décret n° 2000-1902, art. 3 et 12, pour la CNSS ; décret n° 2005-321,
-        pour la CNAM), instrument de la tutelle des entreprises publiques.
+        Convention pluriannuelle par laquelle l'État et une entreprise ou un
+        établissement public arrêtent les objectifs d'exploitation et
+        d'investissement de l'organisme et les concours financiers de l'État,
+        dans le cadre du régime des participations et entreprises publiques
+        (loi n° 89-9 du 1er février 1989) ; le ministère de tutelle et
+        l'organisme la signent. Pour les caisses de sécurité sociale, elle est
+        arrêtée par le conseil d'administration et approuvée par la tutelle
+        (décret n° 2000-1902 pour la CNSS ; décret n° 2005-321 pour la CNAM) ;
+        pour les opérateurs de transport, elle fixe objectifs, moyens et
+        concours.
       synonymes: []
     ar:
       terme: عقد البرنامج
       definition: >
-        التزام متعدّد السنوات يضبطه مجلس إدارة صندوق للضمان الاجتماعي وتصادق
-        عليه وزارة الإشراف (الأمر عدد 1902 لسنة 2000، الفصلان 3 و12، بالنسبة إلى
-        الصندوق الوطني للضمان الاجتماعي؛ الأمر عدد 321 لسنة 2005، بالنسبة إلى
-        الصندوق الوطني للتأمين على المرض)، وهو أداة من أدوات الإشراف على المنشآت
-        العمومية.
+        اتفاقية متعدّدة السنوات تضبط بموجبها الدولة ومنشأةٌ أو مؤسسةٌ عمومية
+        أهدافَ الاستغلال والاستثمار ومساهماتِ الدولة المالية، في إطار نظام
+        المساهمات والمنشآت العمومية (القانون عدد 9 لسنة 1989 المؤرخ في غرة فيفري
+        1989)؛ وتوقّعها وزارة الإشراف والمنشأة. وبالنسبة إلى صناديق الضمان
+        الاجتماعي يضبطها مجلس الإدارة وتصادق عليها سلطة الإشراف (الأمر عدد 1902
+        لسنة 2000 بالنسبة إلى الصندوق الوطني للضمان الاجتماعي؛ الأمر عدد 321 لسنة
+        2005 بالنسبة إلى الصندوق الوطني للتأمين على المرض)؛ وبالنسبة إلى مستغلّي
+        النقل تضبط الأهداف والوسائل والمساهمات.
       synonymes: []
 
   - id: compte-diversification-securite-sociale
@@ -20710,4 +20719,223 @@ entries:
         إدارة تتبعها رياض الأطفال، أُلحقت في أكتوبر 2002 بوزارة شؤون المرأة
         والأسرة والطفولة؛ ويُؤسّس نقلُها انتقالَ إشراف رياض الأطفال إلى الوزارة
         المكلّفة بالأسرة.
+  - id: domaine-public-routier
+    acronyme: null
+    statut: provisoire  # terme AR standard, non relevé sur l'édition AR du JORT
+    references: [loi86-17-domaine-public-routier]
+    source_definition: {ref: loi86-17-domaine-public-routier}
+    voir_aussi: [concession-autoroutiere, fonds-developpement-autoroutes]
+    fr:
+      terme: Domaine public routier
+      definition: >
+        Ensemble des routes et autoroutes appartenant à l'État, classées par la loi
+        n° 86-17 du 7 mars 1986 (autoroutes, routes à grande circulation ou nationales,
+        routes régionales, routes locales) ; son occupation peut être concédée. C'est
+        le cadre domanial commun à la route et à l'autoroute.
+      synonymes: []
+    ar:
+      terme: الملك العمومي للطرقات
+      definition: >
+        مجموع الطرقات والطرق السيّارة المملوكة للدولة، المصنّفة بمقتضى القانون عدد 17
+        لسنة 1986 المؤرخ في 7 مارس 1986 (طرق سيّارة، طرق ذات حركة مرور كثيفة أو وطنية،
+        طرق جهوية، طرق محلية)؛ ويمكن أن يُمنح شغلُه لزمةً. وهو الإطار الملكي المشترك بين
+        الطريق والطريق السيّارة.
+      synonymes: []
+
+  - id: concession-autoroutiere
+    acronyme: null
+    statut: provisoire  # terme AR proposé, non relevé sur l'édition AR du JORT
+    references: [loi86-17-domaine-public-routier, decret87-654-concession-domaine-routier]
+    source_definition: {ref: decret87-654-concession-domaine-routier}
+    voir_aussi: [domaine-public-routier, fonds-developpement-autoroutes]
+    fr:
+      terme: Concession autoroutière
+      definition: >
+        Convention par laquelle l'État confie à un opérateur la construction et
+        l'exploitation d'un tronçon autoroutier, sur le domaine public routier, contre
+        perception d'un péage, selon les formes du décret n° 87-654 du 20 avril 1987.
+        Le régime autoroutier bascule en 1995 de la construction directe sur fonds
+        publics à la concession à péage.
+      synonymes: [Concession du domaine public routier]
+    ar:
+      terme: لزمة الطريق السيّارة
+      definition: >
+        اتفاقية تعهد بموجبها الدولة إلى مستغِلّ بإنجاز واستغلال مقطع من طريق سيّارة على
+        الملك العمومي للطرقات مقابل استخلاص معلوم مرور (بيداج)، وفق الصيغ المضبوطة
+        بالأمر عدد 654 لسنة 1987 المؤرخ في 20 أفريل 1987. وقد انتقل نظام الطرق السيّارة
+        سنة 1995 من البناء المباشر على الأموال العمومية إلى اللزمة مقابل معلوم مرور.
+      synonymes: []
+
+  - id: fonds-developpement-autoroutes
+    acronyme: null
+    statut: provisoire  # terme AR proposé, non relevé sur l'édition AR du JORT
+    references: [loi98-111-lf1999, loi2018-56-lf2019-ar]
+    source_definition: {ref: loi98-111-lf1999, locator: "art. 16 et 17"}
+    voir_aussi: [concession-autoroutiere, domaine-public-routier]
+    fr:
+      terme: Fonds de développement des autoroutes
+      definition: >
+        Compte spécial du Trésor institué par la loi de finances pour 1999 (art. 16 et
+        17) pour financer la réalisation des projets autoroutiers, alimenté par le
+        produit des opérations de privatisation revenant à l'État et ordonnancé par le
+        ministre chargé de l'équipement. Supprimé par la loi de finances pour 2019
+        (art. 10), qui en verse les reliquats au budget de l'État ; il aura vécu des
+        gestions 1999 à 2018.
+      synonymes: []
+    ar:
+      terme: صندوق تنمية الطرقات السيّارة
+      definition: >
+        حساب خاص في الخزينة أحدثه قانون المالية لسنة 1999 (الفصلان 16 و17) لتمويل إنجاز
+        مشاريع الطرقات السيّارة، تموّله حصيلةُ عمليات الخوصصة الراجعة للدولة ويأمر بصرفه
+        الوزير المكلّف بالتجهيز. أُلغي بمقتضى قانون المالية لسنة 2019 (الفصل 10) الذي
+        أحال بقاياه على ميزانية الدولة؛ وقد عُمل به من سنة 1999 إلى سنة 2018.
+      synonymes: []
+
+  - id: cahier-des-charges
+    acronyme: null
+    statut: provisoire  # terme AR standard (كرّاس الشروط), non relevé sur l'édition AR du JORT
+    references: [decret2001-2621, loi2004-33]
+    source_definition: {ref: decret2001-2621}
+    voir_aussi: [obligation-service-public, contrat-programme]
+    fr:
+      terme: Cahier des charges
+      definition: >
+        Acte approuvé par décret qui fixe les conditions d'exécution d'un service de
+        transport et les obligations de service public mises à la charge de l'opérateur,
+        en contrepartie desquelles peut s'ouvrir un droit à compensation. Le cahier des
+        charges des chemins de fer (décret n° 2001-2621 du 9 novembre 2001) plafonne les
+        tarifs et impose des obligations de service public ; la loi n° 2004-33 y soumet
+        aussi le transport de marchandises pour compte d'autrui et la location de
+        véhicules.
+      synonymes: []
+    ar:
+      terme: كرّاس الشروط
+      definition: >
+        وثيقة يُصادق عليها بأمر تضبط شروط إنجاز خدمة نقل وموجبات المرفق العمومي المحمولة
+        على المستغِلّ، ويمكن أن ينشأ مقابلها حقٌّ في التعويض. فكرّاس شروط السكك الحديدية
+        (الأمر عدد 2621 لسنة 2001 المؤرخ في 9 نوفمبر 2001) يحدّد سقف التعريفات ويفرض
+        موجبات المرفق العمومي؛ كما يُخضع له القانون عدد 33 لسنة 2004 نقلَ البضائع لحساب
+        الغير وكراءَ العربات.
+      synonymes: []
+
+  - id: obligation-service-public
+    acronyme: null
+    statut: provisoire  # terme AR proposé, non relevé sur l'édition AR du JORT
+    references: [decret2001-2621]
+    source_definition: {ref: decret2001-2621, locator: "art. 19-21 et 27"}
+    voir_aussi: [cahier-des-charges]
+    fr:
+      terme: Obligation de service public
+      definition: >
+        Sujétion mise à la charge d'un opérateur de transport — maintien de dessertes
+        déficitaires, tarifs réduits, gratuités — dans l'intérêt général, qu'il
+        n'assumerait pas dans son seul intérêt commercial. Le cahier des charges des
+        chemins de fer de 2001 en ouvre la contrepartie : un droit à compensation du
+        déficit des lignes de banlieue, des tarifs réduits et des gratuités (art. 19 à
+        21 et 27).
+      synonymes: []
+    ar:
+      terme: موجبات المرفق العمومي
+      definition: >
+        تكليف يُحمَّل على مستغِلّ نقل — الإبقاء على خطوط خاسرة، تعريفات مخفّضة، مجّانية
+        — خدمةً للمصلحة العامة، لا يتحمّله لو اقتصر على مصلحته التجارية. وقد فتح كرّاس
+        شروط السكك الحديدية لسنة 2001 مقابلَه: حقٌّ في تعويض عجز خطوط الضواحي والتعريفات
+        المخفّضة والمجّانية (الفصول 19 إلى 21 و27).
+      synonymes: []
+
+  - id: autorite-regionale-organisatrice
+    acronyme: null
+    statut: provisoire  # terme AR proposé, non relevé sur l'édition AR du JORT
+    references: [loi2004-33]
+    source_definition: {ref: loi2004-33, locator: "art. 4-7"}
+    voir_aussi: [autorisation-de-transport, transport-urbain-regional-interurbain]
+    fr:
+      terme: Autorité régionale organisatrice des transports terrestres
+      definition: >
+        Autorité instituée par la loi n° 2004-33 du 19 avril 2004 à côté de l'État pour
+        organiser et contrôler le transport urbain et régional de personnes dans le
+        cadre des plans de développement ; le gouverneur en exerce les missions dans la
+        limite de ses compétences. L'État garde les plans directeurs, le financement des
+        infrastructures, la fixation des tarifs et le transport interurbain.
+      synonymes: [Autorité régionale organisatrice]
+    ar:
+      terme: السلطة الجهوية لتنظيم النقل البري
+      definition: >
+        سلطة أحدثها القانون عدد 33 لسنة 2004 المؤرخ في 19 أفريل 2004 إلى جانب الدولة
+        لتنظيم ومراقبة النقل الحضري والجهوي للأشخاص في إطار مخطّطات التنمية؛ ويمارس
+        الوالي مهامّها في حدود اختصاصه. وتحتفظ الدولة بالمخطّطات المديرية وتمويل البنية
+        التحتية وضبط التعريفات والنقل بين المدن.
+      synonymes: []
+
+  - id: autorisation-de-transport
+    acronyme: null
+    statut: provisoire  # terme AR proposé, non relevé sur l'édition AR du JORT
+    references: [loi2004-33, loi85-77, loi93-70, loi96-60]
+    source_definition: {ref: loi2004-33, locator: "art. 17-24"}
+    voir_aussi: [autorite-regionale-organisatrice, cahier-des-charges]
+    fr:
+      terme: Autorisation de transport
+      definition: >
+        Acte administratif préalable requis pour exercer une activité de transport
+        public de personnes ou de marchandises pour compte d'autrui. Centralisée au
+        ministre chargé des transports par la loi n° 85-77 de 1985, l'autorisation est
+        décentralisée en 1993 et 1996 vers le président de la commune (périmètre
+        communal) et le gouverneur (gouvernorat), le ministre restant compétent au-delà ;
+        la loi n° 2004-33 de 2004 la maintient pour le transport non régulier.
+      synonymes: []
+    ar:
+      terme: رخصة النقل
+      definition: >
+        رخصة إدارية مسبقة لازمة لتعاطي نشاط نقل عمومي للأشخاص أو نقل البضائع لحساب الغير.
+        كانت مركَّزة لدى الوزير المكلّف بالنقل بمقتضى القانون عدد 77 لسنة 1985، ثم
+        لامركزت سنتي 1993 و1996 نحو رئيس البلدية (المنطقة البلدية) والوالي (الولاية)، مع
+        بقاء الوزير مختصًّا فيما وراء ذلك؛ وأبقى عليها القانون عدد 33 لسنة 2004 بالنسبة
+        إلى النقل غير المنتظم.
+      synonymes: []
+
+  - id: transport-urbain-regional-interurbain
+    acronyme: null
+    statut: provisoire  # terme AR proposé, non relevé sur l'édition AR du JORT
+    references: [loi2004-33]
+    source_definition: {ref: loi2004-33, locator: "art. 13-14"}
+    voir_aussi: [autorite-regionale-organisatrice, autorisation-de-transport]
+    fr:
+      terme: Transport urbain, régional et interurbain
+      definition: >
+        Les trois périmètres emboîtés que distingue la loi n° 2004-33 du 19 avril 2004 :
+        le transport urbain, à l'intérieur du périmètre de transport urbain assimilé au
+        territoire communal ; le transport régional, au-delà de l'urbain, dans la
+        compétence de l'autorité régionale organisatrice ; le transport interurbain,
+        pour le reste, organisé par l'État.
+      synonymes: []
+    ar:
+      terme: النقل الحضري والجهوي وبين المدن
+      definition: >
+        الأصناف الثلاثة المتداخلة التي يميّزها القانون عدد 33 لسنة 2004 المؤرخ في 19
+        أفريل 2004: النقل الحضري داخل منطقة النقل الحضري المماثلة للتراب البلدي؛ والنقل
+        الجهوي فيما وراء الحضري ضمن اختصاص السلطة الجهوية لتنظيم النقل؛ والنقل بين المدن
+        لما تبقّى، وتتولّى الدولة تنظيمه.
+      synonymes: []
+
+  - id: contrat-de-performance
+    acronyme: null
+    statut: provisoire  # terme AR (عقد أداء) lu dans la fiche PAP 2024, non sur un texte normatif
+    references: [minfin-pap-transport-2024, loi89-9]
+    voir_aussi: [contrat-programme]
+    fr:
+      terme: Contrat de performance
+      definition: >
+        Contrat pluriannuel rattaché au budget par objectifs, signé entre le ministre et
+        le dirigeant d'un établissement public pour une période bornée, qui programme des
+        indicateurs de performance (rentabilité, emploi) plutôt qu'un plan de concours
+        financiers. Distinct du contrat-programme, qui procède du régime des entreprises
+        publiques (loi n° 89-9). La Société du port d'Enfidha en est liée pour 2022-2025.
+      synonymes: []
+    ar:
+      terme: عقد أداء
+      definition: >
+        عقد متعدّد السنوات مرتبط بالتصرّف في الميزانية حسب الأهداف، يُبرم بين الوزير
+        ومدير مؤسسة عمومية لمدّة محدّدة، ويبرمج مؤشّرات أداء (مردودية، تشغيل) بدل خطّة
+        مساهمات مالية. ويختلف عن عقد البرنامج المنبثق عن نظام المنشآت العمومية (القانون
+        عدد 9 لسنة 1989). وترتبط به شركة ميناء النفيضة للفترة 2022–2025.
       synonymes: []
