@@ -4166,6 +4166,48 @@ Annexes `annexe-budget-etat.qmd` et `annexe-comptes-nation.qmd` : les cinq clés
   fonds partagé). `--verifier` : 0 perte ; `--dry-run` : conversion propre (`dataset`) ;
   `--controle-rangement` : 19 à déclasser **préexistants** (STEG, loi-climat), sans rapport.
 
+## Versement « Environnement » (bibliographe, 11/11/2026)
+
+Versé 14 clés nouvelles dans `precis/fr/environnement/references.json` (fichier créé ;
+livre non encore monté — pas de rendu possible, aucune citation `[?]` à vérifier tant
+qu'il n'y a pas de `.qmd`). Clés **provisoires à rapatrier dans Zotero** (champ Extra
+`citation-key:`), collection « Environnement » à créer :
+
+- Textes fondateurs (Q1) : `loi88-91-anpe`, `loi95-72-apal`, `loi95-73-dpm`,
+  `decret2005-2317-anged`, `decret93-303-meat`, `decret93-304-meat-organisation`,
+  `decret2004-106-transfert-littoral`, `decret2005-2933-medd`,
+  `decret2006-898-medd-organisation`.
+- Fonds (Q4) : `decret-93-2120`, `decret-2005-2636`, `loi-96-24`.
+- Budget (Q3) : `me-cadre-juridique-institutionnel` (webpage), `gbo-rap-environnement` (report).
+
+Toutes les URL `legislation` résolues sur `jort_cache.db` (champ `pdf_fr`, pist.tn FR).
+
+**Réutilisées sans duplication** (ne pas recréer) :
+- Annexe 8 → `minfin-transferts-garanties` (déjà dans `precis/fr/references.json`) ; le
+  candidat `minfin-annexe8-transferts-garanties` de la note Q3 est un doublon, abandonné.
+- Annexe 9 → famille `minfin-ep*` (`minfin-ep`, `minfin-ep-2020/2022/2023/2024/2025`,
+  `minfin-entreprises-publiques-lf2021`) ; candidat `minfin-annexe9-entreprises-publiques`
+  abandonné.
+- `lf-1993/2003/2004/2005/2006/2009/2013/2014/2017/2018/2020/2025` (racine),
+  `omc-2001-g-scm-n-71-tun` (fiscalité) : hérités par la chaîne quand le livre sera monté.
+- Lois ONAS/SONEDE (`loi93-41-onas`, `loi68-22-sonede`, etc.) : restent dans
+  `entreprises_publiques/`.
+
+**Résolu le 11/11/2026 (complément de versement) :**
+- Décret gouv. n° 2020-313 (JORT 43/2020, p. 1042-1049) et décret prés. n° 2022-488
+  (signé le 12/05/2022, JORT 53 du 17/05/2022, p. 1453-1454) : modificatifs du 2006-898,
+  localisés sur `jort_cache.db`, URL pist.tn vérifiées (200 application/pdf), **versés** dans
+  `precis/fr/environnement/references.json` sous `decret2020-313-organisation` et
+  `decret2022-488-organisation` (16 clés au total ; cohérence inter-livres au vert).
+
+**Gap `COLLECTION_TO_BOOK`** (`scripts/sync_biblio.py`) : « environnement » absent du
+mapping. À l'ouverture du livre, créer la collection Zotero « Environnement » et l'ajouter
+au mapping, sinon les items tomberont en « Commun » à la synchro descendante.
+
+**Contrôles de clôture Zotero différés** : `dry-run` / `controle-rangement` du workflow
+`biblio-zotero` non lancés — le livre n'a ni `.qmd` ni collection mappée ; l'usage réel
+(`@clé`) comparé par `controle-rangement` est encore vide. À exécuter au montage du livre,
+avant tout rapatriement.
 ## Versement notes communes DGELF — CSS (bibliographe, 04/10/2026)
 
 Trois notes communes de la DGELF versées (type `report`) dans `precis/{fr,ar}/caisses/references.json`,

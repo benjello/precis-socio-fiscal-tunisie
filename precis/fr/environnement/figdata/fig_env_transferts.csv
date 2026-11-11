@@ -1,0 +1,13 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-11-11
+# séries (tunisia_data) : env-transferts-etablissements
+# sources (citation) : @minfin-transferts-garanties
+# fiches : 
+# méthode/hypothèses : 2020-2024 réalisations, 2025 loi de finances ; le réalisé dépasse souvent le voté ; le transfert à l'Agence des déchets est intermittent (composante d'investissement).
+# note : Transferts du budget de l'État aux établissements sous tutelle du ministère chargé de l'environnement, par établissement, 2020-2025 (millions de dinars courants ; 2025 : loi de finances)
+Établissement,2020,2021,2022,2023,2024,2025
+Office national de l'assainissement,173.8,263.3,205.2,199.2,218.6,334.5
+Agence nationale de gestion des déchets,86.2,99.9,3.1,92.3,116.4,47.0
+Agence nationale de protection de l'environnement,17.1,18.0,18.4,18.3,18.5,20.1
+Agence de protection et d'aménagement du littoral,22.1,13.4,11.3,13.9,12.0,23.3
+Centre international des technologies de l'environnement de Tunis,3.7,4.9,3.7,5.4,5.2,6.1
+Total du ministère,302.9,399.5,241.7,329.1,370.7,431.0

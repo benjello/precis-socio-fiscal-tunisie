@@ -17870,6 +17870,110 @@ entries:
       definition: ""
       synonymes: []
 
+  # --- Livre « L'environnement » : institutions et fonds (passe 1+2, 12/11/2026) ---
+
+  - id: anpe-environnement
+    acronyme: ANPE
+    statut: valide
+    references: [loi88-91-anpe]
+    # AR : intitulé officiel de la loi de création n° 88-91 (texte bilingue du JORT).
+    source_definition: {ref: loi88-91-anpe, locator: "art. 1"}
+    source_traduction: {ref: loi88-91-anpe}
+    voir_aussi: [anged, onas, taxe-protection-environnement]
+    fr:
+      terme: Agence nationale de protection de l'environnement
+      definition: >
+        Établissement public à caractère industriel et commercial créé par la loi
+        n° 88-91 du 2 août 1988, chargé de la lutte contre la pollution, des normes
+        de rejet, de l'agrément des investissements de dépollution et des études
+        d'impact. Placée à sa création sous la tutelle du Premier ministre, le
+        département de l'environnement n'existant pas encore, elle relève aujourd'hui
+        du ministère chargé de l'environnement. À ne pas confondre avec l'Agence
+        nationale pour l'emploi et le travail indépendant (ANETI), elle aussi
+        désignée « ANPE » dans un autre champ.
+      synonymes: [ANPE]
+    ar:
+      terme: الوكالة الوطنية لحماية المحيط
+      definition: >
+        مؤسسة عمومية ذات صبغة صناعية وتجارية أُحدثت بالقانون عدد 91 لسنة 1988 المؤرخ
+        في 2 أوت 1988، تتولّى مكافحة التلوث وضبط معايير التصريف والمصادقة على استثمارات
+        إزالة التلوث ودراسات التأثير على المحيط. كانت عند إحداثها تحت إشراف الوزير
+        الأول، لعدم وجود وزارة للبيئة آنذاك، وتخضع اليوم للوزارة المكلّفة بالبيئة.
+        لا ينبغي الخلط بينها وبين الوكالة الوطنية للتشغيل والعمل المستقل.
+      synonymes: []
+
+  - id: anged
+    acronyme: ANGed
+    statut: valide
+    references: [decret2005-2317-anged]
+    # AR : intitulé officiel du décret de création n° 2005-2317 (texte bilingue du JORT).
+    source_definition: {ref: decret2005-2317-anged, locator: "art. 1"}
+    source_traduction: {ref: decret2005-2317-anged}
+    voir_aussi: [anpe-environnement, onas]
+    fr:
+      terme: Agence nationale de gestion des déchets
+      definition: >
+        Établissement public n'ayant pas un caractère administratif créé par le
+        décret n° 2005-2317 du 22 août 2005, placé sous la tutelle du ministère
+        chargé de l'environnement. Elle conduit les programmes nationaux de gestion
+        des déchets, gère les systèmes publics de reprise (sacs et emballages,
+        huiles et filtres usagés), soutient la collecte et le recyclage et prend en
+        charge les déchets dangereux.
+      synonymes: [ANGed]
+    ar:
+      terme: الوكالة الوطنية للتصرف في النفايات
+      definition: >
+        مؤسسة عمومية لا تكتسي صبغة إدارية أُحدثت بالأمر عدد 2317 لسنة 2005 المؤرخ
+        في 22 أوت 2005، وتخضع لإشراف الوزارة المكلّفة بالبيئة. تتولّى إنجاز البرامج
+        الوطنية للتصرف في النفايات وتسيير المنظومات العمومية للاسترجاع (الأكياس
+        والتغليف، الزيوت والمصافي المستعملة) ودعم الجمع والرسكلة والتصرّف في النفايات
+        الخطرة.
+      synonymes: []
+
+  - id: fonds-de-depollution
+    acronyme: FODEP
+    statut: provisoire
+    references: [decret-93-2120, loi-96-24]
+    # AR : « صندوق إزالة التلوث » relevé comme terme de recherche iort par le
+    # documentaliste (fiche r-fodep-emplois-realisations), non confirmé sur un texte
+    # bilingue officiel → provisoire, pas de source_traduction.
+    source_definition: {ref: lf-1993, locator: "art. 35-37"}
+    voir_aussi: [taxe-protection-environnement, fonds-special-tresor, fonds-protection-esthetique-environnement]
+    fr:
+      terme: Fonds de dépollution
+      definition: >
+        Compte spécial du Trésor ouvert par la loi de finances pour 1993, alimenté
+        par la taxe pour la protection de l'environnement et par des prêts de
+        bailleurs, qui sert de guichet de subventions à l'investissement de
+        dépollution industrielle. Ses primes relèvent du décret n° 93-2120.
+      synonymes: [FODEP]
+    ar:
+      terme: صندوق إزالة التلوث
+      definition: ""
+      synonymes: []
+
+  - id: fonds-protection-esthetique-environnement
+    acronyme: null
+    statut: provisoire
+    references: [lf-2005]
+    # AR : traduction du terminologue, non attestée sur un texte bilingue officiel
+    # → provisoire, pas de source_traduction. Terme AR à confirmer sur l'édition
+    # arabe des LF 2004/2005.
+    source_definition: {ref: lf-2004, locator: "art. 52-53"}
+    voir_aussi: [fonds-de-depollution, fonds-special-tresor]
+    fr:
+      terme: Fonds de la protection et de l'esthétique de l'environnement
+      definition: >
+        Compte spécial du Trésor créé par la loi de finances pour 2004 sous le nom
+        de « fonds de la propreté de l'environnement et de l'esthétique des villes »,
+        renommé par la loi de finances pour 2005. Il finance des interventions de
+        propreté et d'embellissement de l'environnement urbain.
+      synonymes: []
+    ar:
+      terme: صندوق حماية وجمالية البيئة
+      definition: ""
+      synonymes: []
+
   # --- Régimes spéciaux de rémunération du secteur public (passe 1, 23/10/2026) ---
   # Termes et sources seulement ; définitions en passe 2. Statut provisoire partout.
 
