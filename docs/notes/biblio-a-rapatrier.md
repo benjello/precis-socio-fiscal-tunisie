@@ -4165,3 +4165,69 @@ Annexes `annexe-budget-etat.qmd` et `annexe-comptes-nation.qmd` : les cinq clés
 - [ ] **À rapatrier dans Zotero** : `minfin-repartition-depenses-xls` (collection « Commun »,
   fonds partagé). `--verifier` : 0 perte ; `--dry-run` : conversion propre (`dataset`) ;
   `--controle-rangement` : 19 à déclasser **préexistants** (STEG, loi-climat), sans rapport.
+
+## Versement notes communes DGELF — CSS (bibliographe, 04/10/2026)
+
+Trois notes communes de la DGELF versées (type `report`) dans `precis/{fr,ar}/caisses/references.json`,
+contenu identique dans les deux langues. Non encore citées dans la prose : versées pour exister/résoudre
+avant citation. `--verifier` : 0 perte (3558 entrées) ; `--dry-run` des trois clés : conversion propre.
+
+- [ ] **À rapatrier dans Zotero** : `dgi-nc-28-2019`, `dgi-nc-1-2023`, `dgi-nc-1-2026`
+  (collection du livre « caisses »). Clés alignées sur la convention du précis `dgi-nc-N-AAAA`
+  (≠ id de catalogue base législative — voir point à trancher).
+- **Fiche base législative `tunisia-legislative-references` à créer** (metadata-only, `external_path`
+  + `sha256`) pour **NC 28/2019** (SHA-256 `a97be7fb…232a96`, 2 349 286 o) et **NC 1/2026**
+  (SHA-256 `6f89c68c…83a6db`, 189 138 o) : non cataloguées. NC 1/2023 déjà cataloguée sous
+  l'id `note_commune_2023_001` (fichier FR présent).
+- **Point à trancher** : faut-il aligner l'`id` CSL de `dgi-nc-1-2023` sur l'id de catalogue
+  `note_commune_2023_001` (instruction du ticket) ou conserver la convention `dgi-nc-N-AAAA`
+  suivie par la cinquantaine de notes communes du précis ? Conservé `dgi-nc-1-2023` pour la
+  cohérence interne ; id de catalogue consigné dans la `note`.
+- **Lacunes** :
+  - **Date exacte de la NC 1/2023** non relevée sur le document (openfisca : « 26/01/2023 », non
+    vérifié) → `issued` année seule (2023).
+  - **NC 28/2019 et NC 1/2026** : PDF scannés sans couche texte, lus à l'image ; numéro « 1/2026 »
+    et date d'émission non vérifiables sur l'image (identification du documentaliste). `issued`
+    année seule.
+  - **URL publiques inexistantes** pour les trois (notes administratives, hors JORT) : aucune URL,
+    conforme à la règle « on n'invente pas d'URL ».
+
+## Versement séries (2) et (4) du volume caisses (bibliographe, 11/11/2026)
+
+Appui : `docs/notes/caisses-serie-versements-tableau-a-notedoc-2026-11-10.md` (série 2) et
+`docs/notes/caisses-serie-css-repartition-notedoc-2026-11-10.md` + `css-verification.md` (série 4).
+Versées (non encore citées : préparation avant rédaction) dans `precis/{fr,ar}/caisses/references.json`.
+`--verifier` : 0 perte (3565 entrées) ; `--dry-run` : conversion propre des cinq clés ;
+`check_references_coherentes.py` : OK.
+
+- [ ] **À rapatrier dans Zotero** (collection du livre « caisses ») : `minfin-rapport-ep-2022`,
+  `ue-jumelage-retraite-2021`, `mas-rap-cnrps-2022` (type `report`, série 4) ; `reglement-1992`,
+  `reglement-2001` (type `legislation`, témoins du constat négatif de la série 2). Sans
+  `number-of-pages` (défaut historique du 15/09/2026 évité).
+- **URL vérifiées le 11/11/2026** (`curl -k -r 0-2000`) : reglement-1992 FR `Jo02196.pdf` + AR
+  `Ja02196.pdf`, reglement-2001 FR `Jo0602003.pdf` + AR `Ja0602003.pdf` (206, application/pdf) ;
+  annexe 9 LF 2022 `finances.gov.tn/.../ANNEXE_09.pdf` (206 via https) ; RAP 2022 `gbo.tn` (206) ;
+  fiche jumelage `um.fi` → **403 aux robots**, servie au lecteur humain (retéléchargée par
+  tunisia-data le 22/09/2026) : URL d'éditeur conservée, **pas** de capture Wayback (convention).
+
+### Constat : les clés LF des séries (2) et (4) existaient déjà
+Aucune loi de finances n'a eu à être créée : toutes les gestions 1985-2005 et 2002/2022 sont déjà
+au fonds commun FR et AR, sous les clés canoniques `loiNN-NN-lfYYYY` (ex. `loi84-84-lf1985`,
+`loi86-106-lf1987`, `loi-89-115-lf-1990`, `loi2001-123-lf2002`) ou `lf-YYYY` (1993-2005, 2018, 2026),
+et `dl2021-21-lf2022` (art. 12, pp. 3081-3082, série 4). Les `lf-YYYY` 1985-1992/2002/2022 ne
+subsistent qu'en **alias transitoires arabes**. `loi-87-83-lf-1988` porte déjà art. 66-67 et le
+tableau A (62-09/10/13, p. 1640). **La rédaction doit citer les clés canoniques**, non des `lf-YYYY`
+nouveaux : aucun alias FR n'a été recréé (cela irait à rebours de la migration en cours).
+
+### Reports (non versés faute de citation prévue)
+- **Lois de règlement 1985-2004** autres que 1992 et 2001 : non versées (série 2 conclut à leur
+  silence sur la réalisation de la ligne « caisses ») ; à créer seulement si la rédaction en cite
+  d'autres en exemple. Liste complète (loi + fascicule + URL) : note série 2, § 5.
+- **Enrichissement des notes des LF existantes** par le folio du tableau A et la ligne des caisses
+  (série 2, § 2 et § 4) : non appliqué (champ `note` non comparé par le contrôle de cohérence, non
+  requis pour la résolution) ; à verser au fil des citations si utile au lecteur.
+- **Série 4, lacunes de fond** (voir note css-repartition, § 6) : arrêté/décision de répartition de
+  la CSS (L8-a, non identifié au JORT), produit total de la CSS et parts CNSS/CNAM (L8-b, L8-c, non
+  isolés) — aucune référence versable, trou honnête.
+- **`controle-rangement`** (étape de clôture) : non exécutable hors CI (requiert `ZOTERO_API_KEY`,
+  appel API) ; à lancer via le workflow `biblio-zotero` au rapatriement.
