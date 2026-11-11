@@ -3933,6 +3933,12 @@
     couverture: 'FTS et LIKE sur titre et objet : arrêtés de 1980 et 1990 (lus), décret n° 94-534 (prophylaxie), arrêté du 18 mars 1997 du ministre des affaires religieuses (manuel de procédures, intitulé tronqué à l''index, non lu). Miroir iort et plein texte non parcourus. Note : docs/notes/education-scolaire-2026-10-17.md, § 10.'
     couvert_jusqu_au: 2026-10-02
     resultat: aucun
+  - date: 2026-11-11
+    role: documentaliste
+    sources: [jort_cache, corpus_local]
+    couverture: 'Passe du 11 novembre 2026 : vérification des décrets n° 88-1962 (6 décembre 1988, JORT n° 83) et n° 2014-4567 (31 décembre 2014, JORT n° 4 de 2015), relus au fascicule FR (éd. arabe du titre : لجنة الكتب القرآنية). Tous deux fixent la composition et le fonctionnement de la « commission des livres coraniques » créée par la loi n° 88-97 du 18 août 1988 — contrôle des exemplaires du Coran (مصاحف), avis des ministres de l''économie et des finances et des affaires religieuses —, et non la tutelle des kouttabs (écoles coraniques) ; écartés. jort_cache indexé jusqu''au 29 octobre 2026, FTS et LIKE sur titre et objet (kouttab, كتاتيب, الكتاب القرآني, الكتب القرآنية) : aucun texte transférant la tutelle des kouttabs au ministère des affaires religieuses. Miroir iort et plein texte des fascicules non parcourus. Note : docs/notes/education-histoire-residus-2026-11-11.md, lookup 5.'
+    couvert_jusqu_au: 2026-10-29
+    resultat: aucun
 
 - id: r-educ-lmd-organisation-rentree-2006
   objet: texte (décret, arrêté, décision) organisant la première rentrée en licence du système LMD en 2006-2007, antérieur au décret n° 2008-3123 qui s'applique à compter de cette année (art. 43)
@@ -5650,3 +5656,46 @@
     couvert_jusqu_au: 2026-10-29
     resultat: aucun
   a_faire: ['lire les fascicules illisibles ou absents (2015 fr n° 36 et n° 59, 2018 fr n° 29 et 33)']
+
+- id: r-educ-fp-2008-art38-etablissements-publics
+  objet: décret fixant l'organisation, les modalités de fonctionnement et le régime disciplinaire des établissements publics de formation professionnelle (loi n° 2008-10, art. 38)
+  ou: [precis/fr/education/_formation_professionnelle.qmd#sec-educ-fp-lois]
+  requetes:
+    titres_fts: ['"etablissements publics de formation professionnelle"', مؤسسات AND التكوين AND العمومية]
+    titres_like:
+    - '%établissements publics de formation professionnelle%'
+    - '%مؤسسات التكوين المهني العمومية%'
+    - '%تنظيم مؤسسات التكوين المهني%'
+    - '%régime disciplinaire%formation%'
+    iort_ar: [مؤسسات التكوين المهني العمومية, تنظيم مؤسسات التكوين المهني العمومية]
+    plein_texte: []
+    depuis: 2008-02-15
+  passes:
+  - date: 2026-11-11
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: 'Recherche du 11 novembre 2026, jort_cache indexé jusqu''au 29 octobre 2026 : FTS « etablissements publics de formation professionnelle » et « مؤسسات AND التكوين AND العمومية » (postérieur au 15 février 2008) ; LIKE sur titre et objet « établissements publics de formation professionnelle », « مؤسسات التكوين المهني العمومية », « تنظيم مؤسسات التكوين المهني », « النظام التأديبي » croisé avec « التكوين », « régime disciplinaire » croisé avec « formation » : aucun décret d''organisation pris pour l''art. 38. Voisins écartés : décret n° 2013-4450 (modifiant le décret n° 2006-1545, création d''un établissement déterminé) et les arrêtés fixant la liste des établissements publics habilités aux cycles d''adaptation professionnelle (2009, 2011, 2013). Miroir iort et plein texte des fascicules non parcourus. Note : docs/notes/education-histoire-residus-2026-11-11.md, lookup 4.'
+    couvert_jusqu_au: 2026-10-29
+    resultat: aucun
+
+- id: r-educ-fp-2008-art57-commission-evaluation
+  objet: décret fixant la composition, les modalités de fonctionnement et l'intéressement des membres de la commission nationale d'évaluation et d'assurance qualité dans la formation professionnelle (الهيئة الوطنية لتقييم التكوين المهني وضمان الجودة) créée par la loi n° 2008-10, art. 57
+  ou: [precis/fr/education/_formation_professionnelle.qmd#sec-educ-fp-lois]
+  requetes:
+    titres_fts: ['"assurance qualite" AND formation', تقييم AND التكوين AND الجودة]
+    titres_like:
+    - '%assurance qualité%formation%'
+    - '%évaluation et d''assurance qualité%'
+    - '%الهيئة الوطنية لتقييم التكوين%'
+    - '%تقييم التكوين المهني وضمان الجودة%'
+    - '%ضمان الجودة%التكوين%'
+    iort_ar: [الهيئة الوطنية لتقييم التكوين المهني وضمان الجودة, تقييم التكوين المهني وضمان الجودة]
+    plein_texte: []
+    depuis: 2008-02-15
+  passes:
+  - date: 2026-11-11
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: 'Recherche du 11 novembre 2026, jort_cache indexé jusqu''au 29 octobre 2026 : FTS « "assurance qualite" AND formation » et « تقييم AND التكوين AND الجودة » ; LIKE sur titre et objet « assurance qualité » croisé avec « formation », « évaluation et d''assurance qualité », « الهيئة الوطنية لتقييم التكوين », « تقييم التكوين المهني وضمان الجودة », « ضمان الجودة » croisé avec « التكوين » (postérieur au 15 février 2008) : aucun décret fixant la composition et le fonctionnement de l''instance nommée « الهيئة الوطنية لتقييم التكوين المهني وضمان الجودة » par l''art. 57 (la loi française dit « commission nationale d''évaluation et d''assurance qualité »). Miroir iort et plein texte des fascicules non parcourus. Note : docs/notes/education-histoire-residus-2026-11-11.md, lookup 4.'
+    couvert_jusqu_au: 2026-10-29
+    resultat: aucun

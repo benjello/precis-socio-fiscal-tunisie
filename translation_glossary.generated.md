@@ -227,7 +227,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Crédits de paiement | اعتمادات الدفع |  |
 | Cycle préparatoire | المرحلة الإعدادية |  |
 | Cycle primaire | المرحلة الابتدائية |  |
-| Cycles court, moyen et long | المراحل القصيرة والمتوسّطة والطويلة |  |
+| Cycles court, moyen et long | المراحل الثلاث: القصيرة والمتوسّطة والطويلة |  |
 | Décentralisation | اللامركزية |  |
 | Décision ministérielle | مقرر |  |
 | Déconcentration | اللامحورية |  |
@@ -387,7 +387,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Haute instance des finances locales | الهيئة العليا للمالية المحلية |  |
 | Hébergement universitaire | السكن الجامعي |  |
 | Heures supplémentaires | الساعات الإضافية |  |
-| Homologation des certificats et diplômes | المصادقة على الشهائد والدبلومات |  |
+| Homologation des certificats et diplômes | التنظير |  |
 | Homologation des prix | المصادقة الإدارية على الأسعار |  |
 | Honoraires conventionnels | الأتعاب التعاقدية |  |
 | Hôpital de circonscription | المستشفى المحلي |  |
@@ -436,7 +436,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Indemnité spécifique | المنحة الخصوصية |  |
 | Ingénierie de formation | هندسة التكوين |  |
 | Instance nationale de l'évaluation, de l'assurance-qualité et de l'accréditation | الهيئة الوطنية للتقييم وضمان الجودة والاعتماد |  |
-| Institut de promotion supérieure du travail | معهد النهوض بالعمل | IPST |
+| Institut de promotion supérieure du travail | معهد الترقية العليا للشغل | IPST |
 | Institut supérieur de la magistrature | المعهد الأعلى للقضاء |  |
 | Institut supérieur des études technologiques | المعهد العالي للدراسات التكنولوجية | ISET |
 | Interventions publiques | التدخل العمومي |  |
@@ -588,7 +588,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Rapport annuel de performance | التقرير السنوي للأداء | RAP |
 | Recettes fiscales | المداخيل الجبائية |  |
 | Recrutement direct | الانتداب المباشر |  |
-| Recteur d'université | مدير الجامعة |  |
+| Recteur d'université | رئيس الجامعة |  |
 | Redevance compensatrice | الأتاوة التعويضية |  |
 | Redevance d'utilisation | معلوم الاستعمال |  |
 | Redevance de compensation | أتاوة الدعم |  |
