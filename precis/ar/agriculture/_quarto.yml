@@ -1,0 +1,69 @@
+project:
+  type: book
+  output-dir: public
+
+lang: ar
+dir: rtl
+
+book:
+  title: "الفلاحة"
+  author: "مهدي بن جلول"
+  repo-url: https://github.com/benjello/precis-socio-fiscal-tunisie/
+  repo-subdir: precis/ar/agriculture
+  repo-branch: master
+  repo-actions: [edit, issue]
+  downloads: [pdf]
+  chapters:
+    - index.qmd
+    - _institution.qmd
+    - _depense.qmd
+    - _credit.qmd
+    - _investissement.qmd
+    - _eau.qmd
+    - _calamites.qmd
+    - _etudes.qmd
+
+  appendices:
+    - _glossaire.qmd
+
+language:
+  toc-title-document: "المحتويات"
+  toc-title-website: "المحتويات"
+  title-block-author-single: "الكاتب"
+  repo-action-links-edit: "تعديل هذه الصفحة"
+  repo-action-links-issue: "الإبلاغ عن مشكلة"
+  search-clear-button-title: "مسح"
+  search-no-results-text: "لا توجد نتائج"
+  search-text-placeholder: "بحث"
+
+bibliography:
+  - references.json
+  - ../references.json
+  - ../references.bib
+
+csl: ../precis.csl
+
+format:
+  html:
+    theme: [cosmo, ../../legendes.scss]
+    include-after-body:
+      - _glossaire.infobulles.html
+      - ../../legendes.html
+    fig-cap-location: top
+    tbl-cap-location: top
+    number-depth: 4
+    toc: true
+    toc-depth: 4
+  pdf:
+    documentclass: scrreprt
+    toc: true
+    toc-depth: 4
+    number-sections: true
+    number-depth: 4
+
+crossref:
+  tbl-title: "جدول"
+  fig-title: "شكل"
+  tbl-prefix: "جدول"
+  fig-prefix: "شكل"
+  title-delim: "\u00a0—"

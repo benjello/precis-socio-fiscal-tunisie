@@ -5658,3 +5658,109 @@
     couvert_jusqu_au: 2026-10-29
     resultat: aucun
   a_faire: ['lire les fascicules illisibles ou absents (2015 fr n° 36 et n° 59, 2018 fr n° 29 et 33)']
+
+- id: r-agri-abandon-mev-fondateur
+  objet: texte fondateur de la vague d'abandons des créances agricoles prorogée par les lois de finances pour 2001 (loi n° 2000-98) et 2002 (loi n° 2001-123), au profit des sociétés de mise en valeur et de développement agricole
+  ou: [precis/fr/agriculture/_credit.qmd#sec-agri-credit-mev]
+  requetes:
+    titres_fts: ['"abandon" AND "creances"', '"mise en valeur"']
+    titres_like: ['%abandon%creances%', '%mise en valeur%agricole%', '%secteur%agriculture%peche%']
+    iort_ar: [التخلي عن الديون, شركات الإحياء والتنمية الفلاحية]
+    plein_texte: [abandon des creances, sociétés de mise en valeur et de développement agricole]
+    depuis: 1996-01-01
+  passes:
+  - date: 2026-11-11
+    role: documentaliste
+    sources: [jort_cache, corpus_local]
+    couverture: "Titres français de jort_cache parcourus ; retrouvés la loi n° 97-88 (LF 1998, déduction au profit des sociétés de mise en valeur) comme candidat amont et les deux prorogations (lois n° 2000-98 et 2001-123). Aucun texte fondateur isolé instituant l'abandon lui-même. Lacune : les corps français des lois de finances pour 2001 et 2002 ont une couche texte brouillée et n'ont pu être lus en clair ; l'édition arabe n'a pas été interrogée."
+    couvert_jusqu_au: 2026-11-11
+    resultat: aucun
+  a_faire:
+  - lire en clair les corps des lois de finances pour 2001 et 2002, et l'édition arabe, pour identifier le texte fondateur de la mesure prorogée
+- id: r-agri-org-ministere-post2014
+  objet: décret portant organisation ou attributions d'ensemble du ministère de l'Agriculture, des Ressources hydrauliques et de la Pêche postérieur au décret n° 2011-1560 du 5 septembre 2011
+  ou: [precis/fr/agriculture/_institution.qmd#sec-agri-institution-ministere]
+  requetes:
+    titres_fts: ['"organisation" AND "ministere" AND "agriculture"', '"attributions" AND "ministere" AND "agriculture"']
+    titres_like: ['%organisation du ministere de l%agriculture%', '%attributions du ministere de l%agriculture%']
+    iort_ar: [تنظيم وزارة الفلاحة, مشمولات وزارة الفلاحة]
+    depuis: 2011-09-06
+  passes:
+  - date: 2026-11-11
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: "Titres français de jort_cache (FTS et LIKE sur « organisation/attributions du ministère de l'agriculture ») pour les textes publiés depuis le 1er janvier 2012 : seul ressort le décret présidentiel n° 2022-200 (modifiant le décret n° 95-99…), pas une organisation d'ensemble. Aucune réorganisation d'ensemble en titre français. Lacune : une refonte à titre arabe seul (part élevée 2015-2019) n'est pas exclue ; les termes arabes « تنظيم وزارة الفلاحة » et « مشمولات وزارة الفلاحة » n'ont pas été rejoués sur le miroir iort ni le plein texte."
+    couvert_jusqu_au: 2026-11-10
+    resultat: aucun
+  a_faire:
+  - rejouer les termes arabes sur le miroir iort et le plein texte des fascicules 2012-2026 ; vérifier l'édition arabe des fascicules où la couche texte française est absente
+- id: r-agri-cotisations-groupements-interprof
+  objet: textes fixant les cotisations interprofessionnelles (taux, assiette, affectation) perçues par les groupements interprofessionnels du secteur agricole et agro-alimentaire régis par la loi n° 93-84 du 26 juillet 1993
+  ou: [precis/fr/agriculture/_institution.qmd#sec-agri-institution-groupements]
+  requetes:
+    titres_fts: ['"cotisation" AND "interprofessionnel"', '"groupement interprofessionnel"']
+    titres_like: ['%cotisation%interprofessionnel%', '%groupement interprofessionnel%']
+    iort_ar: [المعاليم المهنية المشتركة, المجمع المهني المشترك]
+    depuis: 1993-07-26
+  passes:
+  - date: 2026-11-11
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: "Objet non instruit en fascicule au-delà de l'intitulé du cadre (loi n° 93-84) : aucune passe de plein texte ni LIKE systématique sur les décrets et arrêtés fixant les cotisations par filière n'a encore été conduite. À instruire."
+    couvert_jusqu_au: 2026-11-11
+    resultat: aucun
+  a_faire:
+  - dépouiller les décrets et arrêtés fixant les cotisations interprofessionnelles par filière (statuts-type décret n° 94-1165 et textes pris par filière) ; chercher les termes arabes des cotisations professionnelles sur le miroir iort
+- id: r-eau-irr-tarif-national
+  objet: série nationale du tarif de l'eau d'irrigation au mètre cube dans les périmètres publics irrigués (prix administré, fixé par les offices de mise en valeur, les commissariats régionaux au développement agricole et les groupements d'usagers, hors Journal officiel)
+  ou: [precis/fr/agriculture/_eau.qmd#sec-agri-eau-tarif]
+  requetes:
+    titres_fts: ['"delivrance" AND "eau" AND "irrigation"', '"prix de l''eau"']
+    titres_like: ['%delivrance%eau%irrigation%', '%prix%eau%irrigation%', '%recouvrement%eau%']
+    iort_ar: [تعريفة مياه الري, بيع مياه الري, سعر مياه الري]
+    depuis: 1966-01-01
+  passes:
+  - date: 2026-11-10
+    role: documentaliste
+    sources: [jort_cache, web]
+    couverture: "Titres de jort_cache : les arrêtés « fixant les conditions de délivrance de l'eau à usage d'irrigation dans le périmètre de … » sont nombreux de 1957 à 1966 puis disparaissent du Journal officiel ; la série « prix de l'eau » après 1968 relève de l'eau potable de la SONEDE (hors champ). Catalogue CKAN agridata.tn : jeu SECADENORD (prix de gros) et jeux CRDA fragmentaires mono-année ; requête « recouvrement » : zéro résultat. Aucune série nationale du tarif facturé à l'agriculteur. Lacune : les décisions des conseils d'administration des offices et des CRDA ne sont pas publiées au Journal officiel ; les corps des lois 63-18, 71-9, 2000-30 et le code des eaux fasc. 23 ne sont pas lus en clair."
+    couvert_jusqu_au: 2026-11-10
+    resultat: aucun
+  a_faire:
+  - demander à la DGGREE et aux commissariats régionaux au développement agricole la série des tarifs au mètre cube par périmètre ; moissonner les jeux agridata CRDA « ventes/consommation d'eau d'irrigation » ; récupérer les rapports PISEAU I et II
+- id: r-eau-irr-gic
+  objet: décret-cadre moderne du régime des groupements d'intérêt collectif et des groupements de développement agricole (GIC/GDA) de gestion de l'eau d'irrigation (gestion participative), au sens des associations d'usagers du chapitre 8 du code des eaux
+  ou: [precis/fr/agriculture/_eau.qmd#sec-agri-eau-code]
+  requetes:
+    titres_fts: ['"interet collectif"', '"associations d''usagers"', '"groupement de developpement agricole"']
+    titres_like: ['%interet collectif%', '%associations d%usagers%', '%groupement%developpement agricole%']
+    iort_ar: [مجمع التنمية الفلاحية, مجمع ذو مصلحة مشتركة]
+    depuis: 1975-03-31
+  passes:
+  - date: 2026-11-10
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: "Titres français de jort_cache : associations d'intérêt collectif coloniales (1938-1960) et chapitre 8 du code des eaux (1975) ; le décret-cadre moderne des GIC/GDA n'est pas isolé par titre français. Lacune : les termes arabes (مجمع التنمية الفلاحية, مجمع ذو مصلحة مشتركة) n'ont pas été rejoués sur le miroir iort ; le décret n° 87-1261 est à vérifier."
+    couvert_jusqu_au: 2026-11-10
+    resultat: aucun
+  a_faire:
+  - rejouer les termes arabes des groupements de gestion de l'eau sur le miroir iort ; vérifier le décret n° 87-1261 et ses modificatifs
+- id: r-fosdap-creation
+  objet: texte de loi de finances érigeant le fonds spécial de développement agricole et de la pêche (FOSDAP) et le fonds spécial de développement agricole / compte central de développement agricole, supports budgétaires des primes et prêts d'investissement servis via l'APIA ; rattachés par le ministère des Finances (rapport Fonds spéciaux 2020) à la loi n° 63-17 du 27 mai 1963, dont l'article érigeant le compte spécial du Trésor sous l'intitulé actuel reste à localiser
+  ou: [precis/fr/agriculture/_investissement.qmd#sec-agri-investissement-fonds]
+  requetes:
+    titres_fts: ['fonds AND special AND developpement AND agricole', 'fonds AND promotion AND agricole']
+    titres_like: ['%fonds special de developpement%agricult%', '%developpement agricole et de la peche%', '%fonds special de promotion agricole%', '%compte central%developpement agricole%']
+    iort_ar: [صندوق خاص لتنمية الفلاحة, صندوق التنمية الفلاحية, تنمية الفلاحة والصيد البحري, الصندوق الخاص للتنمية الفلاحية والصيد البحري]
+    plein_texte: [FOSDAP, FOSDA, "fonds special pour le developpement de l'agriculture"]
+    depuis: 1963-01-01
+  passes:
+  - date: 2026-11-10
+    role: documentaliste
+    sources: [jort_cache, corpus_local, web]
+    couverture: "jort_cache (≈ avril 2026), LIKE et FTS sur titres FR et AR 1957-2026 : aucune notice ne porte en titre « fonds spécial de développement agricole et de la pêche » / « …de l'agriculture » ni leur forme arabe. Trouvés seulement : FSPA (loi n° 72-87, 1973) ; fonds de soutien de la pêche (décret 1956, LFC n° 82-27) ; fonds de compétitivité (loi n° 94-127, 1995) ; repos biologique (LF 2010) ; calamités (LF 2018). Hors JORT : rapport Fonds spéciaux 2020 du ministère des Finances (annexe 10 LF 2020), qui nomme FOSDAP (pp. 21-22) et FOSDA/CCDA (pp. 23-24) et les rattache à la loi n° 63-17 (titre paraphrasé, article non précisé) ; décret gouv. n° 2017-389 art. 27 nomme le fonds sans citer sa création ; AfDB ADB-BD-IF-2006-162 et UN-FFD Srarfi 2006 confirment le développé et la gestion par la BNA. Lacune : articles « fonds spéciaux du Trésor : ministère de l'agriculture » des LF 1973-2018 non lus au corps (fascicules en image, OCR à faire) ; miroir iort arabe non chargé."
+    couvert_jusqu_au: 2026-04-10
+    resultat: aucun
+  a_faire:
+  - OCR des articles « fonds spéciaux du Trésor / ministère de l'agriculture » des LF 1973-2018 pour saisir la création et les renommages (FSPA → …agricole et de la pêche → compte central)
+  - récupérer l'édition arabe du rapport Fonds spéciaux (annexe au PLF) pour l'intitulé arabe officiel, et les autres millésimes (séries annuelles gbo.tn)

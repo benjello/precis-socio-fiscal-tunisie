@@ -7,6 +7,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 
 | Français | Arabe (Tunisie) | Acronyme |
 | :--- | :--- | :--- |
+| Abandon de créances agricoles | التخلّي عن الديون الفلاحية |  |
 | Abandon scolaire | الانقطاع المدرسي |  |
 | Abattement forfaitaire | الطرح الجزافي |  |
 | Abattement successoral | الطرح من التركة |  |
@@ -20,7 +21,9 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Adoul | عدل إشهاد |  |
 | Affections prises en charge intégralement | الأمراض الثقيلة أو المزمنة المتكفل بها كليا | APCI |
 | Affilié | المنخرط |  |
+| Agence de promotion des investissements agricoles | وكالة النهوض بالاستثمارات الفلاحية | APIA |
 | Agence de réhabilitation et de rénovation urbaine | وكالة التهذيب والتجديد العمراني | ARRU |
+| Agence foncière agricole | الوكالة العقارية للفلاحة | AFA |
 | Agence foncière d'habitation | الوكالة العقارية للسكنى | AFH |
 | Agence foncière industrielle | الوكالة العقارية الصناعية | AFI |
 | Agence nationale pour l'emploi et le travail indépendant | الوكالة الوطنية للتشغيل والعمل المستقل | ANETI |
@@ -37,6 +40,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Allocation familiale non contributive | المنحة العائلية غير المساهماتية |  |
 | Allocation supplémentaire | منحة التكلفة الإضافية |  |
 | Amen social | برنامج الأمان الاجتماعي |  |
+| Ammonitrate | الأمونيتر |  |
 | Amortissement de la dette | تسديد أصل الدين |  |
 | Animateur des jardins d'enfants | منشط رياض الأطفال |  |
 | Année préparatoire | السنة التحضيرية |  |
@@ -98,6 +102,8 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Caisse nationale d'assurance maladie | الصندوق الوطني للتأمين على المرض | CNAM |
 | Caisse nationale de retraite et de prévoyance sociale | الصندوق الوطني للتقاعد والحيطة الاجتماعية | CNRPS |
 | Caisse nationale de sécurité sociale | الصندوق الوطني للضمان الاجتماعي | CNSS |
+| Caisse tunisienne d'assurances mutuelles agricoles | الصندوق التونسي للتأمين التعاوني الفلاحي | CTAMA |
+| Calamité naturelle agricole | الجائحة الطبيعية الفلاحية |  |
 | Calendrier d'application de la TVA | روزنامة تطبيق الأداء على القيمة المضافة |  |
 | Cantine scolaire | المطعم المدرسي |  |
 | Capacité d'emprunt | طاقة التداين |  |
@@ -117,6 +123,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Cause réelle et sérieuse | سبب حقيقي وجدي |  |
 | Centimes additionnels | صانتيمات إضافية |  |
 | Centre de soins de santé de base | مركز الصحة الأساسية | CSB |
+| Centre technique agricole | المركز الفني للقطاع الفلاحي |  |
 | Certificat d'aptitude professionnelle | شهادة الكفاءة المهنية | CAP |
 | Certificat de compétence | شهادة مهارة |  |
 | Cession des participations publiques | التفويت في المساهمات العمومية |  |
@@ -139,6 +146,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Comité de rémunération | لجنة التأجير |  |
 | Commerçant détaillant assujetti à la taxe sur la valeur ajoutée | تاجر التفصيل الخاضع للأداء على القيمة المضافة |  |
 | Commerçant grossiste | تاجر جملة |  |
+| Commissariat régional au développement agricole | المندوبية الجهوية للتنمية الفلاحية | CRDA |
 | Commission de contrôle du licenciement | لجنة مراقبة الطرد |  |
 | Commission nationale du salaire minimum garanti | اللجنة الوطنية للأجر الأدنى المضمون |  |
 | Commission régionale des bourses scolaires | اللجنة الجهوية للمنح المدرسية |  |
@@ -160,6 +168,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Compte épargne pour l'investissement | حساب الادخار للاستثمار | CEI |
 | Compte financier | الحساب المالي |  |
 | Comptes de la santé | الحسابات الوطنية للصحة |  |
+| Comptes spéciaux agricoles | الحسابات الخاصة الفلاحية |  |
 | Comptes spéciaux d'épargne | الحسابات الخاصة للادخار |  |
 | Concours externe sur dossiers | مناظرة خارجية بالملفات |  |
 | Condition de ressources | شرط الموارد |  |
@@ -211,7 +220,9 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Coût marginal des fonds publics | الكلفة الحدية للأموال العمومية |  |
 | Coût unitaire | كلفة التلميذ |  |
 | Crédit (enseignement supérieur) | الرصيد |  |
+| Crédit agricole bonifié | القرض الفلاحي المدعّم |  |
 | Crédit de taxe sur la valeur ajoutée | فائض الأداء على القيمة المضافة |  |
+| Crédit saisonnier de campagne | القرض الموسمي |  |
 | Crédits d'engagement | اعتمادات التعهد |  |
 | Crédits de paiement | اعتمادات الدفع |  |
 | Cycle préparatoire | المرحلة الإعدادية |  |
@@ -294,6 +305,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Emploi public | التشغيل العمومي |  |
 | Employés de maison | عمال المنازل |  |
 | Emprunt | الاقتراض |  |
+| Encouragement de l'État au développement de l'agriculture | تشجيع الدولة على تنمية الفلاحة |  |
 | Encours de la dette | رصيد الدين |  |
 | Enfant à charge | الطفل المتكفَّل به |  |
 | Enquête mixte ménages-entreprises | المسح المختلط للأسر والمؤسسات |  |
@@ -333,6 +345,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Fonction publique | الوظيفة العمومية |  |
 | Fonctions astreignantes | الوظائف المرهقة |  |
 | Fonds commun des collectivités locales | المال المشترك للجماعات المحلية | FCCL |
+| Fonds d'indemnisation des dommages agricoles dus aux calamités naturelles | صندوق التعويض عن الأضرار الفلاحية الناتجة عن الجوائح الطبيعية |  |
 | Fonds de commerce | الأصول التجارية |  |
 | Fonds de promotion de la formation professionnelle et de l'apprentissage | صندوق النهوض بالتكوين والتدريب المهني |  |
 | Fonds de promotion du logement pour les salariés | صندوق النهوض بالمسكن لفائدة الأجراء |  |
@@ -342,8 +355,12 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Fonds de solidarité nationale | صندوق التضامن الوطني |  |
 | Fonds de transition énergétique | صندوق الانتقال الطاقي |  |
 | Fonds national d'amélioration de l'habitat | الصندوق الوطني لتحسين السكن | FNAH |
+| Fonds national de garantie | الصندوق الوطني للضمان | FNG |
 | Fonds national de l'emploi | الصندوق الوطني للتشغيل | FNE |
 | Fonds national de la réforme éducative | الصندوق الوطني للإصلاح التربوي |  |
+| Fonds spécial de développement agricole | الصندوق الخاص لتنمية الفلاحة | FOSDA |
+| Fonds spécial de développement agricole et de la pêche | الصندوق الخاص لتنمية الفلاحة والصيد البحري | FOSDAP |
+| Fonds spécial de promotion agricole | الصندوق الخاص للنهوض بالفلاحة | FSPA |
 | Fonds spéciaux du Trésor | الحسابات الخاصة في الخزينة |  |
 | Forces de sécurité intérieure | قوات الأمن الداخلي |  |
 | Forfait conventionnel | المبلغ الجزافي التعاقدي |  |
@@ -364,6 +381,8 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Grille de salaires conventionnelle | جدول الأجور |  |
 | Grille des salaires | شبكة الأجور |  |
 | Groupe chimique tunisien | المجمع الكيميائي التونسي | GCT |
+| Groupement de développement agricole | مجمع التنمية الفلاحية | GDA |
+| Groupement interprofessionnel | المجمع المهني المشترك |  |
 | Habitation principale | المسكن الرئيسي |  |
 | Habous | الأحباس |  |
 | Haute instance des finances locales | الهيئة العليا للمالية المحلية |  |
@@ -466,6 +485,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Minimum légal de perception | الحد الأدنى القانوني للاستخلاص |  |
 | Mise à la retraite avant l'âge légal | الإحالة على التقاعد قبل بلوغ السن القانونية |  |
 | Mise à la retraite d'office | الإحالة الوجوبية على التقاعد |  |
+| Mise en valeur agricole | الإحياء الفلاحي |  |
 | Mission budgétaire | المهمة |  |
 | Modèle à causes multiples et indicateurs multiples | نموذج الأسباب المتعدّدة والمؤشرات المتعدّدة | MIMIC |
 | Moueddeb | المؤدب |  |
@@ -476,6 +496,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Obligation scolaire | إجبارية التعليم الأساسي |  |
 | Office de l'aviation civile et des aéroports | ديوان الطيران المدني والمطارات | OACA |
 | Office de la marine marchande et des ports | ديوان البحرية التجارية والموانئ | OMMP |
+| Office de mise en valeur des périmètres irrigués | ديوان تهيئة المناطق السقوية |  |
 | Office des céréales | ديوان الحبوب |  |
 | Office des services scolaires | ديوان الخدمات المدرسية |  |
 | Office des terres domaniales | ديوان الأراضي الدولية | OTD |
@@ -487,6 +508,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Option pour la qualité d'assujetti | الاختيار للخضوع للأداء |  |
 | Ordonnateur | آمر قبض وصرف |  |
 | Organisme de placement collectif en valeurs mobilières | مؤسسة التوظيف الجماعي في الأوراق المالية | OPCVM |
+| Orge fourragère | الشعير العلفي |  |
 | Orientation d'office | التوجيه الآلي |  |
 | Origine des marchandises | منشأ البضائع |  |
 | Ouvrier de l'État | عامل الدولة |  |
@@ -508,9 +530,12 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Péréquation des prix | تعديل الأسعار |  |
 | Péréquation des ressources | تعديل الموارد |  |
 | Péréquation financière | التعديل المالي |  |
+| Périmètre privé irrigué | المنطقة السقوية الخاصة |  |
+| Périmètre public irrigué | المنطقة السقوية العمومية | PPI |
 | Période d'essai | فترة التجربة |  |
 | Perte sèche | الخسارة الصافية في الرفاه |  |
 | Pharmacie centrale de Tunisie | الصيدلية المركزية للبلاد التونسية | PCT |
+| Phosphate diammonique | الفسفاط ثنائي الأمونيوم | DAP |
 | Plan de développement quinquennal | المخطط الخماسي للتنمية |  |
 | Plus-value de cession de titres | القيمة الزائدة المتأتية من التفويت في السندات |  |
 | Plus-value immobilière | القيمة الزائدة العقارية |  |
@@ -528,18 +553,22 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Prestation non monétaire | المنفعة غير النقدية |  |
 | Prestations familiales | المنح العائلية |  |
 | Prestations sociales en espèces | التحويلات الاجتماعية النقدية |  |
+| Prêt foncier agricole | القرض العقاري الفلاحي |  |
 | Prêt universitaire | القرض الجامعي |  |
 | Prêts du Trésor | قروض الخزينة |  |
 | Prêts rétrocédés | القروض المعاد إقراضها |  |
 | Prime d'investissement | منحة الاستثمار |  |
+| Prime d'investissement agricole | منحة الاستثمار الفلاحي |  |
 | Prime de départ volontaire | منحة المغادرة |  |
 | Prime de rendement | منحة المردودية |  |
 | Prime de rentrée universitaire | منحة العودة الجامعية |  |
 | Prime de risque | منحة الخطر |  |
 | Prime salariale du secteur public | علاوة الأجر في القطاع العمومي |  |
 | Priorité de réembauchage | حق الأولوية في التشغيل |  |
+| Prise en charge d'intérêt | تكفّل الدولة بفارق نسبة الفائدة |  |
 | Prise en charge par le Fonds national de l'emploi de la contribution patronale au régime légal de sécurité sociale | تكفل الصندوق الوطني للتشغيل بمساهمة الأعراف في النظام القانوني للضمان الاجتماعي |  |
 | Privatisation | التخصيص |  |
+| Prix administré de cession | سعر التفويت الإداري |  |
 | Prix de cession préférentiel | السعر التفاضلي |  |
 | Prix de référence du mètre carré couvert | الثمن المرجعي للمتر المربع المبني |  |
 | Prix limite de vente | السعر الأقصى للبيع |  |
@@ -564,11 +593,13 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Rachat (examen) | الإسعاف |  |
 | Rapport annuel de performance | التقرير السنوي للأداء | RAP |
 | Recettes fiscales | المداخيل الجبائية |  |
+| Recouvrement des coûts | استرجاع التكاليف |  |
 | Recrutement direct | الانتداب المباشر |  |
 | Redevance compensatrice | الأتاوة التعويضية |  |
 | Redevance d'utilisation | معلوم الاستعمال |  |
 | Redevance de compensation | أتاوة الدعم |  |
 | Redevance de prestations douanières | الأتاوة على الخدمات الديوانية |  |
+| Redevance du domaine public hydraulique | معلوم استعمال الملك العمومي للمياه |  |
 | Redoublement | الرسوب |  |
 | Régie des alcools | وكالة الكحول |  |
 | Régie nationale des tabacs et des allumettes | الوكالة الوطنية للتبغ والوقيد | RNTA |
@@ -659,11 +690,13 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Seuil à changement de taux | عتبة تغيّر النسبة |  |
 | Seuil à saut | العتبة ذات القفزة |  |
 | SMIG de référence de la CNSS | الأجر الأدنى المرجعي المعتمد لدى الصندوق الوطني للضمان الاجتماعي |  |
+| Société de mise en valeur et de développement agricole | شركة إحياء وتنمية الأراضي الفلاحية |  |
 | Société de prévoyance des fonctionnaires et employés tunisiens | الجمعية الاحتياطية للموظفين والمستخدمين التونسيين |  |
 | Société de promotion des logements sociaux | شركة النهوض بالمساكن الاجتماعية | SPROLS |
 | Société de transport des hydrocarbures par pipelines | شركة النقل بواسطة الأنابيب | SOTRAPIL |
 | Société des transports de Tunis | شركة النقل بتونس | Transtu |
 | Société générale d'entreprises de matériel et de travaux | الشركة العامة للمقاولات والمعدات والأشغال | SOGEMT |
+| Société mutuelle de services agricoles | الشركة التعاونية للخدمات الفلاحية | SMSA |
 | Société nationale d'exploitation et de distribution des eaux | الشركة الوطنية لاستغلال وتوزيع المياه | SONEDE |
 | Société nationale de cellulose et de papier alfa | الشركة الوطنية لعجين الحلفاء والورق | SNCPA |
 | Société nationale de distribution des pétroles | الشركة الوطنية لتوزيع البترول | SNDP |
@@ -677,6 +710,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Solde de réforme | منحة الإصلاح |  |
 | Sous-déclaration | التصريح بأقلّ من القيمة الحقيقية |  |
 | Sous-traitance de main-d'œuvre | مناولة اليد العاملة |  |
+| Souscription annuelle au fonds | الانخراط السنوي في الصندوق |  |
 | Soutenabilité de la dette | القدرة على تحمّل الدين |  |
 | Souveraineté fiscale | السيادة الجبائية |  |
 | Stage d'initiation à la vie professionnelle | تربص الإعداد للحياة المهنية | SIVP |
@@ -684,11 +718,13 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Statut particulier | النظام الأساسي الخصوصي |  |
 | Structure des prix | تركيبة الأسعار |  |
 | Subsidiarité | التفريع |  |
+| Subvention à la multiplication des semences | دعم إكثار البذور |  |
 | Subvention conditionnelle | المنحة المشروطة |  |
 | Subvention d'équilibre | منحة التوازن |  |
 | Subvention directe | الدعم المباشر |  |
 | Subvention forfaitaire | المنحة الجزافية |  |
 | Subvention globale | المنحة الشاملة |  |
+| Subvention implicite à l'irrigation | الدعم الضمني للري |  |
 | Subvention indirecte | الدعم غير المباشر |  |
 | Subvention rationnée | المنحة المحدودة |  |
 | Subvention spécifique | المنحة الخصوصية |  |
@@ -704,6 +740,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Tableau B du code de la TVA | الجدول « ب » |  |
 | Tableau C du code de la TVA | الجدول « ج » |  |
 | Tarif autonome | التعريفة الحرة |  |
+| Tarif de l'eau d'irrigation | تعريفة مياه الري |  |
 | Tarif de responsabilité | تعريفة الكفالة |  |
 | Tarif des droits de douane à l'importation | تعريفة المعاليم الديوانية عند التوريد |  |
 | Tarif minimum, tarif général | التعريفة الدنيا والتعريفة العامة |  |
@@ -782,6 +819,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Valeur en douane | القيمة لدى الديوانة |  |
 | Validation des services | إدماج الخدمات |  |
 | Vente à tempérament | البيع بالتقسيط |  |
+| Vulgarisation agricole | الإرشاد الفلاحي |  |
 | Zone franche économique | منطقة اقتصادية حرة |  |
 | Zones de développement régional | مناطق التنمية الجهوية |  |
 | Œuvres universitaires | الخدمات الجامعية |  |
