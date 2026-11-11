@@ -20423,3 +20423,291 @@ entries:
         الضمان الاجتماعي؛ وهي استخدامات في حساب التوزيع الثانوي للدخل، تُميَّز
         عن المنافع المقدَّمة عينًا.
       synonymes: []
+
+  - id: universite-de-tunis
+    acronyme: null
+    statut: valide
+    references: [loi60-2, decret60-98, loi86-80]
+    source_definition: {ref: decret60-98, locator: "art. 1-2"}
+    source_traduction: {ref: decret60-98}
+    voir_aussi: [recteur-universite, president-universite]
+    fr:
+      terme: Université de Tunis
+      definition: >
+        Établissement public unique érigé en 1960, groupant toutes les facultés,
+        écoles supérieures et instituts de recherche du pays ; organe national de
+        l'enseignement supérieur jusqu'à la création des universités régionales
+        en 1986.
+      synonymes: []
+    ar:
+      terme: جامعة تونس
+      definition: >
+        مؤسسة عمومية وحيدة أُحدثت سنة 1960، تضمّ كلّ الكليات والمدارس العليا
+        ومعاهد البحث في البلاد؛ وكانت الجهاز الوطني للتعليم العالي إلى حدّ إحداث
+        الجامعات الجهوية سنة 1986.
+      synonymes: []
+
+  - id: recteur-universite
+    acronyme: null
+    statut: provisoire  # terme AR à confirmer sur l'édition arabe du JORT
+    references: [decret60-98, loi86-80, loi2000-67]
+    source_definition: {ref: decret60-98, locator: "art. 3"}
+    voir_aussi: [universite-de-tunis, president-universite]
+    fr:
+      terme: Recteur d'université
+      definition: >
+        Responsable qui dirige l'université, nommé par décret ; titre en usage de
+        1960 à 2000, d'abord pour l'université de Tunis puis pour les universités
+        régionales, avant son remplacement par le président d'université.
+      synonymes: [Recteur]
+    ar:
+      terme: مدير الجامعة
+      definition: >
+        المسؤول الذي يدير الجامعة، يُعيَّن بأمر؛ وقد استُعمل هذا اللقب من سنة 1960
+        إلى سنة 2000، لجامعة تونس أوّلاً ثمّ للجامعات الجهوية، قبل أن يحلّ محلّه
+        رئيس الجامعة.
+      synonymes: []
+
+  - id: president-universite
+    acronyme: null
+    statut: valide
+    references: [loi2000-67, loi2008-19]
+    source_definition: {ref: loi2000-67, locator: "art. 8 nouveau"}
+    source_traduction: {ref: loi2000-67}
+    voir_aussi: [recteur-universite, conseil-des-universites, contrat-formation-recherche]
+    fr:
+      terme: Président d'université
+      definition: >
+        Responsable qui dirige l'université depuis 2000, nommé par décret parmi
+        les professeurs de l'enseignement supérieur ; il remplace le recteur et,
+        depuis 2011, est élu.
+      synonymes: []
+    ar:
+      terme: رئيس الجامعة
+      definition: >
+        المسؤول الذي يدير الجامعة منذ سنة 2000، يُعيَّن بأمر من بين أساتذة التعليم
+        العالي؛ وقد حلّ محلّ مدير الجامعة، وصار يُنتخَب منذ سنة 2011.
+      synonymes: []
+
+  - id: cycles-court-moyen-long
+    acronyme: null
+    statut: provisoire  # terme AR à confirmer sur l'édition arabe du JORT
+    references: [loi76-65]
+    source_definition: {ref: loi76-65, locator: "art. 7"}
+    voir_aussi: [licence, mastere, doctorat]
+    fr:
+      terme: Cycles court, moyen et long
+      definition: >
+        Architecture des études supérieures instituée par la loi de 1976,
+        répartissant les formations en un cycle court, un cycle moyen et un cycle
+        long, avec passerelles ; antérieure au système LMD.
+      synonymes: []
+    ar:
+      terme: المراحل القصيرة والمتوسّطة والطويلة
+      definition: >
+        هيكلة للدراسات العليا أرستها قانون سنة 1976، توزّع التكوين على مرحلة
+        قصيرة ومرحلة متوسّطة ومرحلة طويلة مع جسور بينها؛ وهي سابقة لنظام إجازة
+        ماجستير دكتوراه.
+      synonymes: []
+
+  - id: diplome-universitaire-technologie
+    acronyme: DUT
+    statut: provisoire  # terme AR à confirmer sur l'édition arabe du JORT
+    references: [decret2004-2722]
+    source_definition: {ref: decret2004-2722, locator: "art. 1-3"}
+    voir_aussi: [licence-appliquee, baccalaureat]
+    fr:
+      terme: Diplôme universitaire de technologie
+      definition: >
+        Diplôme d'une filière technologique courte institué en 2004, préparé en
+        2 400 heures au moins réparties sur six semestres (trois ans) dans les
+        disciplines techniques et technologiques, ouvert aux titulaires du
+        baccalauréat ; institué sans référence au système LMD.
+      synonymes: [DUT]
+    ar:
+      terme: الشهادة الجامعية للتكنولوجيا
+      definition: >
+        شهادة لمسلك تكنولوجي قصير أُحدث سنة 2004، يُحضَّر في 2400 ساعة على الأقلّ
+        موزّعة على ستّة سداسيات (ثلاث سنوات) في الاختصاصات التقنية والتكنولوجية،
+        مفتوح لحاملي البكالوريا؛ أُحدث دون إحالة على نظام إجازة ماجستير دكتوراه.
+      synonymes: [DUT]
+
+  - id: conseil-des-universites
+    acronyme: null
+    statut: valide
+    references: [loi97-21, loi89-70]
+    source_definition: {ref: loi97-21, locator: "art. 12 nouveau"}
+    source_traduction: {ref: loi97-21}
+    voir_aussi: [president-universite]
+    fr:
+      terme: Conseil des universités
+      definition: >
+        Organe créé en 1997 par refonte de l'article 12 de la loi de 1989, chargé
+        de délibérer sur la coordination entre les universités et sur le régime
+        des études des différents diplômes universitaires ; présidé par le
+        ministre.
+      synonymes: []
+    ar:
+      terme: مجلس الجامعات
+      definition: >
+        هيكل أُحدث سنة 1997 بإعادة صياغة الفصل 12 من قانون سنة 1989، يتولّى
+        التداول في التنسيق بين الجامعات وفي نظام دراسة مختلف الشهائد الجامعية؛
+        يرأسه الوزير.
+      synonymes: []
+
+  - id: contrat-formation-recherche
+    acronyme: null
+    statut: provisoire  # terme AR à confirmer sur l'édition arabe du JORT
+    references: [loi2000-67, loi2008-19]
+    source_definition: {ref: loi2000-67, locator: "art. 5 nouveau"}
+    voir_aussi: [president-universite]
+    fr:
+      terme: Contrat de formation et de recherche
+      definition: >
+        Contrat conclu entre l'État et chaque université ou établissement, apparu
+        avec la loi de 2000 et systématisé par la loi de 2008, qui fixe pour quatre
+        ans leurs obligations, les moyens et crédits que l'État leur alloue et les
+        ressources propres qu'ils s'engagent à mobiliser.
+      synonymes: []
+    ar:
+      terme: عقد التكوين والبحث
+      definition: >
+        عقد يُبرَم بين الدولة وكلّ جامعة أو مؤسسة، ظهر مع قانون سنة 2000 وتعمّم مع
+        قانون سنة 2008، يضبط لمدّة أربع سنوات التزاماتها والوسائل والاعتمادات التي
+        تخصّصها لها الدولة والموارد الذاتية التي تتعهّد بتعبئتها.
+      synonymes: []
+
+  - id: cenaffif
+    acronyme: CENAFFIF
+    statut: valide
+    references: [loi93-12, loi2003-77]
+    source_definition: {ref: loi93-12, locator: "art. 1-2"}
+    source_traduction: {ref: loi93-12}
+    voir_aussi: [cnfcpp, ingenierie-de-formation, epna]
+    fr:
+      terme: Centre national de formation des formateurs et d'ingénierie de formation
+      definition: >
+        Établissement public créé par la loi de 1993, chargé de la formation et du
+        perfectionnement des personnels de la formation professionnelle, de la
+        recherche pédagogique et de l'élaboration des programmes et des méthodes ;
+        classé établissement public n'ayant pas le caractère administratif en 2003,
+        siège à Radès.
+      synonymes: [CENAFFIF]
+    ar:
+      terme: المركز الوطني لتكوين المكوّنين وهندسة التكوين
+      definition: >
+        مؤسسة عمومية أُحدثت بقانون سنة 1993، تتولّى تكوين أعوان التكوين المهني
+        ورسكلتهم والبحث البيداغوجي وإعداد البرامج والطرائق؛ صُنّفت ضمن المؤسسات
+        العمومية التي لا تكتسي صبغة إدارية سنة 2003، ومقرّها رادس.
+      synonymes: [CENAFFIF]
+
+  - id: cnfcpp
+    acronyme: CNFCPP
+    statut: valide
+    references: [loi93-12, loi97-64]
+    source_definition: {ref: loi93-12, locator: "art. 1 et 3"}
+    source_traduction: {ref: loi93-12}
+    voir_aussi: [cenaffif, ipst, epna]
+    fr:
+      terme: Centre national de formation continue et de promotion professionnelle
+      definition: >
+        Établissement public créé par la loi de 1993, chargé de la formation
+        continue, du perfectionnement et de la reconversion des travailleurs dans
+        les instituts de promotion supérieure du travail ; classé établissement
+        public n'ayant pas le caractère administratif en 1997, siège à Tunis.
+      synonymes: [CNFCPP]
+    ar:
+      terme: المركز الوطني للتكوين المستمر والترقية المهنية
+      definition: >
+        مؤسسة عمومية أُحدثت بقانون سنة 1993، تتولّى التكوين المستمرّ وتحسين مستوى
+        العمّال وإعادة تأهيلهم في معاهد النهوض بالعمل؛ صُنّفت ضمن المؤسسات
+        العمومية التي لا تكتسي صبغة إدارية سنة 1997، ومقرّها تونس.
+      synonymes: [CNFCPP]
+
+  - id: ipst
+    acronyme: IPST
+    statut: provisoire  # terme AR à confirmer sur l'édition arabe du JORT
+    references: [loi93-12]
+    source_definition: {ref: loi93-12, locator: "art. 3"}
+    voir_aussi: [cnfcpp]
+    fr:
+      terme: Institut de promotion supérieure du travail
+      definition: >
+        Établissement auxiliaire du Centre national de formation continue et de
+        promotion professionnelle où se déroulent la formation continue, le
+        perfectionnement et la reconversion des travailleurs (loi de 1993).
+      synonymes: [IPST]
+    ar:
+      terme: معهد النهوض بالعمل
+      definition: >
+        مؤسسة مساعدة تابعة للمركز الوطني للتكوين المستمر والترقية المهنية، تجري
+        فيها عمليات التكوين المستمرّ وتحسين المستوى وإعادة تأهيل العمّال (قانون
+        سنة 1993).
+      synonymes: [IPST]
+
+  - id: ingenierie-de-formation
+    acronyme: null
+    statut: valide
+    references: [loi2003-77, loi93-12]
+    source_definition: {ref: loi2003-77, locator: "art. 1"}
+    source_traduction: {ref: loi2003-77}
+    voir_aussi: [cenaffif]
+    fr:
+      terme: Ingénierie de formation
+      definition: >
+        Ensemble des méthodologies de conception des plans de formation, de
+        réalisation des moyens didactiques et d'évaluation du système de formation ;
+        mission recentrée du CENAFFIF par la loi de 2003.
+      synonymes: []
+    ar:
+      terme: هندسة التكوين
+      definition: >
+        مجموع منهجيات إعداد مخطّطات التكوين وإنجاز الوسائل التعليمية وتقييم منظومة
+        التكوين؛ وهي المهمّة التي أُعيد تركيز المركز الوطني لتكوين المكوّنين عليها
+        بقانون سنة 2003.
+      synonymes: []
+
+  - id: homologation-certificats-diplomes
+    acronyme: null
+    statut: provisoire  # terme AR à confirmer sur l'édition arabe du JORT
+    references: [decret94-1397, decret2009-2139]
+    source_definition: {ref: decret94-1397, locator: "art. 4-10"}
+    voir_aussi: [cenaffif]
+    fr:
+      terme: Homologation des certificats et diplômes
+      definition: >
+        Procédure par laquelle le ministre, sur demande d'un organisme public ou
+        privé et après examen par une commission permanente, reconnaît par arrêté,
+        pour cinq ans, un certificat ou diplôme de formation professionnelle et le
+        rattache à un niveau de la classification nationale (décret de 1994).
+      synonymes: []
+    ar:
+      terme: المصادقة على الشهائد والدبلومات
+      definition: >
+        إجراء يعترف بمقتضاه الوزير، بطلب من هيكل عمومي أو خاصّ وبعد نظر لجنة قارّة،
+        وبمقرّر لمدّة خمس سنوات، بشهادة أو دبلوم في التكوين المهني ويربطه بمستوى من
+        التصنيف الوطني (أمر سنة 1994).
+      synonymes: []
+
+  - id: direction-generale-enfance
+    acronyme: null
+    statut: valide
+    references: [decret2002-2103]
+    source_definition: {ref: decret2002-2103, locator: "art. 1"}
+    source_traduction: {ref: decret2002-2103}
+    voir_aussi: [education-prescolaire]
+    fr:
+      terme: Direction générale de l'enfance
+      definition: >
+        Administration dont relèvent les jardins d'enfants, rattachée en octobre
+        2002 au ministère des affaires de la femme, de la famille et de l'enfance ;
+        son transfert fonde la bascule de la tutelle des jardins d'enfants vers le
+        ministère chargé de la famille.
+      synonymes: []
+    ar:
+      terme: الإدارة العامة للطفولة
+      definition: >
+        إدارة تتبعها رياض الأطفال، أُلحقت في أكتوبر 2002 بوزارة شؤون المرأة
+        والأسرة والطفولة؛ ويُؤسّس نقلُها انتقالَ إشراف رياض الأطفال إلى الوزارة
+        المكلّفة بالأسرة.
+      synonymes: []
