@@ -36,8 +36,24 @@ import figtools  # noqa: E402
 SERIE_FODEP = "env-fodep-previsions"
 SERIE_ESTHETIQUE = "env-esthetique-previsions"
 SERIE_DEPENSES = "budget-vote-realise"
+SERIE_TRANSFERTS = "env-transferts-etablissements"
 
 BLEU, GRIS = "#0969da", "#57606a"
+
+# Établissements sous tutelle, dans l'ordre de pile (l'Office de l'assainissement en bas),
+# avec leur libellé bilingue et une couleur sobre par établissement.
+_ETABS = [
+    ("onas", "Office national de l'assainissement",
+     "الديوان الوطني للتطهير", "#0b4f6c"),
+    ("anged", "Agence nationale de gestion des déchets",
+     "الوكالة الوطنية للتصرّف في النفايات", "#2d8c6f"),
+    ("anpe", "Agence nationale de protection de l'environnement",
+     "الوكالة الوطنية لحماية المحيط", "#5a7fb5"),
+    ("apal", "Agence de protection et d'aménagement du littoral",
+     "وكالة حماية وتهيئة الشريط الساحلي", "#c08a3e"),
+    ("citet", "Centre international des technologies de l'environnement de Tunis",
+     "المركز الدولي لتكنولوجيات البيئة بتونس", "#9aa0a6"),
+]
 
 # Textes des figures, par langue (le chrome d'interface est, lui, dans figtools).
 _L = {
@@ -53,6 +69,13 @@ _L = {
         "col_annee": "Année (loi de finances)",
         "col_md": "Prévision\n(millions de dinars)",
         "col_part": "Part de la dépense\nde l'État (%)",
+        "vue_transferts": "Transferts (millions de dinars)",
+        "t_transferts": ("Transferts de l'État aux établissements sous tutelle du "
+                         "ministère chargé de l'environnement"),
+        "y_transferts": "Transfert (millions de dinars courants)",
+        "x_annee": "Année",
+        "col_etab": "Établissement",
+        "col_total": "Total du ministère",
     },
     "ar": {
         "vue_md": "المبلغ (بملايين الدنانير)",
@@ -65,6 +88,12 @@ _L = {
         "col_annee": "السنة (قانون المالية)",
         "col_md": "التقدير\n(بملايين الدنانير)",
         "col_part": "نسبة من نفقات\nالدولة (%)",
+        "vue_transferts": "التحويلات (بملايين الدنانير)",
+        "t_transferts": "تحويلات الدولة إلى المؤسسات الخاضعة لإشراف الوزارة المكلّفة بالبيئة",
+        "y_transferts": "التحويل (بملايين الدنانير الجارية)",
+        "x_annee": "السنة",
+        "col_etab": "المؤسسة",
+        "col_total": "جملة الوزارة",
     },
 }
 
@@ -105,6 +134,28 @@ figtools.register_provenance(
              "du fonds ne figurent pas dans les lois de finances."),
     caveats_ar=("تقديرات مصادق عليها، وليست مصاريف منجزة؛ المصاريف المنجزة للصندوق لا تَرِد "
                 "في قوانين المالية."),
+)
+
+figtools.register_provenance(
+    SERIE_TRANSFERTS,
+    titre=("Transferts du budget de l'État aux établissements sous tutelle du ministère "
+           "chargé de l'environnement, par établissement, 2020-2025"),
+    titre_ar=("تحويلات ميزانية الدولة إلى المؤسسات الخاضعة لإشراف الوزارة المكلّفة "
+              "بالبيئة، حسب المؤسسة، 2020-2025"),
+    sources=["minfin-transferts-garanties"],
+    unite="millions de dinars",
+    unite_ar="بملايين الدنانير",
+    perimetre=("transferts du budget de l'État aux cinq établissements sous tutelle du "
+               "ministère chargé de l'environnement, au rapport sur les transferts et les "
+               "garanties au profit des entreprises et établissements publics annexé aux "
+               "lois de finances, 2020-2025"),
+    perimetre_ar=("تحويلات ميزانية الدولة إلى المؤسسات الخمس الخاضعة لإشراف الوزارة "
+                  "المكلّفة بالبيئة، 2020-2025"),
+    caveats=("2020-2024 réalisations, 2025 loi de finances ; le réalisé dépasse souvent le "
+             "voté ; le transfert à l'Agence des déchets est intermittent (composante "
+             "d'investissement)."),
+    caveats_ar=("2020-2024 إنجازات، 2025 قانون المالية ; المنجز يفوق غالبًا المصادق "
+                "عليه ; التحويل إلى وكالة النفايات متقطّع (مكوّن استثماري)."),
 )
 
 
@@ -164,6 +215,73 @@ def _table(serie: str) -> "object":
              _l("col_md"): round(prev[a], 1),
              _l("col_part"): None if a not in parts else round(parts[a], 3)}
             for a in sorted(prev)]
+    return pd.DataFrame(rows)
+
+
+def _transferts() -> "object":
+    """Données longues des transferts (annee, etablissement, montant_MDT)."""
+    return figtools.series(SERIE_TRANSFERTS)
+
+
+def _barres_empilees() -> plt.Figure:
+    figtools.apply_lang_font()
+    d = _transferts()
+    annees = sorted({int(a) for a in d["annee"]})
+    x = list(range(len(annees)))
+    fig, ax = plt.subplots(figsize=(8.5, 4.8))
+    bas = [0.0] * len(annees)
+    for cle, lib_fr, lib_ar, couleur in _ETABS:
+        sous = d[d["etablissement"] == cle]
+        par_an = {int(r.annee): float(r.montant_MDT) for r in sous.itertuples(index=False)}
+        vals = [par_an.get(a, 0.0) for a in annees]
+        lib = lib_ar if figtools.lang() == "ar" else lib_fr
+        barres = ax.bar(x, vals, bottom=bas, width=0.66, color=couleur,
+                        label=figtools.fig_text(lib))
+        for xi, a, b, v in zip(x, annees, barres, vals):
+            if v > 0:
+                figtools.infobulle(b, f"{a} · {lib} · {_nombre(v, 1)}")
+        bas = [b + v for b, v in zip(bas, vals)]
+    for xi, a, tot in zip(x, annees, bas):
+        ax.annotate(_nombre(tot, 1), xy=(xi, tot), xytext=(0, 3),
+                    textcoords="offset points", ha="center", va="bottom",
+                    fontsize=7.5, color=GRIS)
+    ax.set_title(figtools.fig_text(_l("t_transferts")), fontsize=10.5)
+    ax.set_xlabel(figtools.fig_text(_l("x_annee")), fontsize=9)
+    ax.set_ylabel(figtools.fig_text(_l("y_transferts")), fontsize=9)
+    ax.set_xticks(x)
+    ax.set_xticklabels([str(a) for a in annees], fontsize=8)
+    ax.set_ylim(0, max(bas) * 1.16)
+    ax.spines[["top", "right"]].set_visible(False)
+    ax.tick_params(axis="y", labelsize=8)
+    ax.legend(fontsize=7.5, loc="upper left", framealpha=0.9)
+    fig.tight_layout()
+    return fig
+
+
+def vues_transferts():
+    return [(_l("vue_transferts"), _barres_empilees())]
+
+
+def table_transferts():
+    import pandas as pd
+    d = _transferts()
+    annees = sorted({int(a) for a in d["annee"]})
+    rows = []
+    totaux = {a: 0.0 for a in annees}
+    for cle, lib_fr, lib_ar, _ in _ETABS:
+        sous = d[d["etablissement"] == cle]
+        par_an = {int(r.annee): float(r.montant_MDT) for r in sous.itertuples(index=False)}
+        lib = lib_ar if figtools.lang() == "ar" else lib_fr
+        row = {_l("col_etab"): lib}
+        for a in annees:
+            v = par_an.get(a, 0.0)
+            row[str(a)] = round(v, 1)
+            totaux[a] += v
+        rows.append(row)
+    total_row = {_l("col_etab"): _l("col_total")}
+    for a in annees:
+        total_row[str(a)] = round(totaux[a], 1)
+    rows.append(total_row)
     return pd.DataFrame(rows)
 
 
