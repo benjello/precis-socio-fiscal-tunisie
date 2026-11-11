@@ -1,5 +1,29 @@
 # Changelog
 
+## [1.30.0](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.29.0...v1.30.0) (2026-11-11)
+
+
+### ✨ Nouveautés
+
+* **santé:** densifier le volume : histoire, couverture GHED, hôpital, médecine de ville ; glossaire 3 → 31 notions ([#794](https://github.com/benjello/precis-socio-fiscal-tunisie/issues/794))
+* **éducation:** figure des diplômés du supérieur (série INS 2001-2023 reconstituée), histoire institutionnelle et documentation ([#795](https://github.com/benjello/precis-socio-fiscal-tunisie/issues/795)) ; glossaire de l'histoire et correctifs ([#797](https://github.com/benjello/precis-socio-fiscal-tunisie/issues/797))
+* **annexe budget:** circuit complet, exécution et « qui dépense » ([#786](https://github.com/benjello/precis-socio-fiscal-tunisie/issues/786)) ([3eb648c](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/3eb648ccd172b7e55e364e633bda48a58121fced))
+* **annexes:** désagréger le budget et la séquence des comptes par secteur ([#783](https://github.com/benjello/precis-socio-fiscal-tunisie/issues/783)) ([9d18c78](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/9d18c780a0c08355db39cfda6c5404274365b396))
+* **volumes:** accroches vers l'annexe budget (poids des dispositifs) ([#791](https://github.com/benjello/precis-socio-fiscal-tunisie/issues/791)) ([b617d6d](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/b617d6d3d77aeefc9ac64bc8031436585372b9a1))
+
+
+### 🐛 Corrections de bugs
+
+* référence bvmt-etats-financiers, note d'infrastructure, isolation des tests sync_agents ([fa039ef](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/fa039ef33595505fd04438308418052277a0eade))
+* reformuler « dépouillées » (jargon de dépouillement) dans le texte rendu ([8056807](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/805680701f772a9e2f8a1d2ff12d228345052a94))
+* régénère .pi/agents/economiste.md après la fusion de master (sync_agents) ([1e1fbd4](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/1e1fbd4a494d362fbc803b558872be6b2c5ae849))
+
+
+### 📝 Documentation
+
+* **entreprises-publiques:** relevés BM et FMI : périodes des flèches du FMI et de l'étiquette 12,03 de la figure 7.1 ([11bebc9](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/11bebc9b026e945f2d4b76c192637136113c5aff))
+* **entreprises-publiques:** relevés par entreprise de la Banque mondiale (2020, 2022) et du FMI (2021), et note de recoupement ([5b4dbe6](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/5b4dbe685d3da545d63b621f4ac99f422d0f711c))
+
 ## [1.29.0](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.28.0...v1.29.0) (2026-10-10)
 
 
