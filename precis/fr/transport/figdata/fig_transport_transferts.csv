@@ -1,0 +1,52 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-11-11
+# séries (tunisia_data) : transport-transferts-par-entreprise, denominateurs-depenses-etat-pib
+# sources (citation) : @minfin-transferts-garanties, @minfin-remunerations, @minfin-indicateurs-fp, @ins-cnat-2015, @wb-wdi
+# fiches : sources/minfin-transferts-transport.md, sources/jort-lois-de-finances-fonds-credits.md
+# méthode/hypothèses : « INTERVENTIONS » N'EST PAS « COMPENSATION » : la colonne dépasse chaque année le poste « transport » (réseau ferroviaire rapide, météorologie, entretien du réseau ferré, apurements de dettes en 2017) ; rapprochement établi pour 2016 seulement, à 0,5 MD près. AUCUN RACCORD avec transport-soutien-par-societe. Toutes les éditions gardées (`derniere_edition` ne préfère pas) ; loi de finances et réalisations d'une même année diffèrent. Édition LF 2020 saisie à l'image : groupes de chiffres imprimés à l'envers, restaurés et prouvés par les sommes (`imprime`, `restauration`) ; en-têtes déplacés dans ses tableaux de 2018 et 2019 (`colonne_imprimee` ≠ `nature`). Éditions arabes : couche texte contrôlée par les identités (ligne et bloc), deux pages relues à l'image. Écarts imprimés d'un millier de dinars déclarés. Éditions LF 2021 et LF 2023 non transcrites., LE PIB N'EST JAMAIS CHAÎNÉ : segment_pib change en 1986, 1992, 1997, 2002, 2005, 2010 et 2025 ; une part du PIB se trace par segments. 1984-1985 : PIB de la Banque mondiale, bases accolées non raccordées ; 1986-1991 : PIB du ministère des Finances, base 1983 PRÉSUMÉE ; 2002-2004 et 2025 : valeur propre au ministère, rattachée à aucune base ; 2010-2014 : base 2015 rétropolée par l'INS. Les dépenses de l'État sont des RÉALISATIONS : rapportée à elles, une prévision de loi de finances donne un ordre de grandeur, non une exécution. AUCUNE DÉPENSE DE L'ÉTAT AVANT 1986.
+# note : Les transferts du budget aux entreprises et établissements du ministère du Transport, 2016-2024 : interventions, investissements et autres transferts, en millions de dinars courants et en part des dépenses de l'État (hors service de la dette) — périmètre plus étroit que les deux missions, sans raccord avec elles
+Année,État du chiffre,Édition de l'annexe 8,Nature,Transfert (millions de dinars),En % des dépenses de l'État hors dette,Dépenses de l'État hors dette (millions de dinars)
+2016,réalisations,LF2020,Interventions,461.587,1.9,24112.7
+2016,réalisations,LF2020,Investissements,110.569,0.5,24112.7
+2016,réalisations,LF2020,Fonctionnement,0.26,0.0,24112.7
+2016,réalisations,LF2020,Rémunérations,3.195,0.0,24112.7
+2016,réalisations,LF2020,Total du ministère,575.611,2.4,24112.7
+2017,réalisations,LF2020,Interventions,820.422,3.0,27286.7
+2017,réalisations,LF2020,Investissements,103.559,0.4,27286.7
+2017,réalisations,LF2020,Fonctionnement,0.644,0.0,27286.7
+2017,réalisations,LF2020,Rémunérations,2.817,0.0,27286.7
+2017,réalisations,LF2020,Total du ministère,927.442,3.4,27286.7
+2018,réalisations,LF2022,Interventions,550.395,1.8,29822.5
+2018,réalisations,LF2022,Investissements,76.024,0.3,29822.5
+2018,réalisations,LF2022,Fonctionnement,0.958,0.0,29822.5
+2018,réalisations,LF2022,Rémunérations,4.772,0.0,29822.5
+2018,réalisations,LF2022,Total du ministère,632.149,2.1,29822.5
+2019,réalisations,LF2022,Interventions,501.472,1.5,32672.9
+2019,réalisations,LF2022,Investissements,84.365,0.3,32672.9
+2019,réalisations,LF2022,Fonctionnement,0.891,0.0,32672.9
+2019,réalisations,LF2022,Rémunérations,4.369,0.0,32672.9
+2019,réalisations,LF2022,Total du ministère,591.098,1.8,32672.9
+2020,réalisations,LF2024,Interventions,659.058,1.7,37702.9
+2020,réalisations,LF2024,Investissements,123.903,0.3,37702.9
+2020,réalisations,LF2024,Fonctionnement,1.048,0.0,37702.9
+2020,réalisations,LF2024,Rémunérations,5.743,0.0,37702.9
+2020,réalisations,LF2024,Total du ministère,789.752,2.1,37702.9
+2021,réalisations,LF2025,Interventions,560.801,1.4,40234.1
+2021,réalisations,LF2025,Investissements,117.072,0.3,40234.1
+2021,réalisations,LF2025,Fonctionnement,1.007,0.0,40234.1
+2021,réalisations,LF2025,Rémunérations,5.51,0.0,40234.1
+2021,réalisations,LF2025,Total du ministère,684.39,1.7,40234.1
+2022,réalisations,LF2025,Interventions,661.396,1.4,46219.2
+2022,réalisations,LF2025,Investissements,188.505,0.4,46219.2
+2022,réalisations,LF2025,Fonctionnement,1.089,0.0,46219.2
+2022,réalisations,LF2025,Rémunérations,6.239,0.0,46219.2
+2022,réalisations,LF2025,Total du ministère,857.229,1.9,46219.2
+2023,réalisations,LF2025,Interventions,696.407,1.4,48622.6
+2023,réalisations,LF2025,Investissements,213.182,0.4,48622.6
+2023,réalisations,LF2025,Fonctionnement,1.59,0.0,48622.6
+2023,réalisations,LF2025,Rémunérations,6.138,0.0,48622.6
+2023,réalisations,LF2025,Total du ministère,917.317,1.9,48622.6
+2024,loi de finances,LF2025,Interventions,727.0,1.4,51180.6
+2024,loi de finances,LF2025,Investissements,278.88,0.5,51180.6
+2024,loi de finances,LF2025,Fonctionnement,1.562,0.0,51180.6
+2024,loi de finances,LF2025,Rémunérations,7.415,0.0,51180.6
+2024,loi de finances,LF2025,Total du ministère,1014.857,2.0,51180.6

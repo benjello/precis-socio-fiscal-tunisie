@@ -407,6 +407,327 @@ def _taux(langue):
     return rendu
 
 
+# ------------------------------------------------ salaires forfaitaires et modulation AT/MP
+
+FORFAITS = "parameters/prelevements_sociaux/atmp_forfaits"
+MODULATION = "parameters/prelevements_sociaux/atmp_modulation"
+SMIG_48 = {"fr": "SMIG, régime 48 heures", "ar": "الأجر الأدنى المضمون لمختلف المهن، نظام 48 ساعة"}
+SMAG = {"fr": "SMAG", "ar": "الأجر الأدنى الفلاحي المضمون"}
+
+
+def _nombre(v, _langue=None):
+    """2400 -> « 2 400 » : les quantités entières, avec l'espace des milliers."""
+    return "—" if v is None else f"{int(v):,}".replace(",", " ")
+
+
+# TABLEAU DES JOURNÉES DE TRAVAIL de la cotisation forfaitaire agricole (décret n° 95-538,
+# article 4 ; décret n° 99-1010). Ordre : celui du tableau du texte. Les libellés français
+# sont ceux de l'édition française ; les libellés arabes sont des TRADUCTIONS éditoriales
+# (le tableau arabe du JORT n'est pas transcrit ici, hors divergences relevées à l'image,
+# qui ont leur colonne). feuille -> (fr, ar, unité, variante arabe fr, variante arabe ar).
+UNITES_JOURNEES = {
+    "hectare": ("jours par hectare", "يوم لكل هكتار"),
+    "tete": ("jours par tête", "يوم لكل رأس"),
+    "volailles": ("jours pour 1 000 volailles", "يوم لكل 1000 دجاجة"),
+    "lapins": ("jours pour 1 000 lapins", "يوم لكل 1000 أرنب"),
+    "barque": ("jours par barque", "يوم لكل قارب"),
+    "unite": ("jours par unité", "يوم لكل وحدة"),
+}
+JOURNEES = [
+    ("cereales_sec", "Céréales en sec", "الحبوب (بعلي)", "hectare", "", ""),
+    ("cereales_irrigue", "Céréales en irrigué", "الحبوب (مروي)", "hectare", "", ""),
+    ("legumineuses_grandes_cultures_sec", "Légumineuses et autres grandes cultures en sec",
+     "القطاني والزراعات الكبرى الأخرى (بعلي)", "hectare", "", ""),
+    ("cultures_industrielles", "Cultures industrielles (betterave à sucre et coton)",
+     "الزراعات الصناعية (اللفت السكري والقطن)", "hectare", "", ""),
+    ("maraicheres_solanacees", "Cultures maraîchères de plein champ : solanacées (tomates)",
+     "زراعات الخضر في الحقل: الباذنجانيات (الطماطم)", "hectare",
+     "les tomates seules", "الطماطم فقط"),
+    ("maraicheres_pommes_de_terre", "Cultures maraîchères de plein champ : pommes de terre et autres",
+     "زراعات الخضر في الحقل: البطاطا وغيرها", "hectare", "", ""),
+    ("horticulture_plein_champ", "Horticulture de plein champ", "البستنة في الحقل", "hectare",
+     "floriculture de plein champ", "زراعة الأزهار في الحقل"),
+    ("oliviers_amandiers", "Oliviers et amandiers", "الزياتين واللوز", "hectare", "", ""),
+    ("vigne_cuve", "Vigne de cuve (en sec)", "كروم النبيذ (بعلي)", "hectare", "", ""),
+    ("vigne_table", "Vigne de table", "كروم عنب المائدة", "hectare", "", ""),
+    ("agrumes", "Agrumes", "القوارص", "hectare", "", ""),
+    ("arboriculture_sec", "Arboriculture en sec", "الأشجار المثمرة (بعلي)", "hectare",
+     "arbres fruitiers", "الأشجار المثمرة"),
+    ("arboriculture_irrigue", "Arboriculture en irrigué", "الأشجار المثمرة (مروي)", "hectare", "", ""),
+    ("palmier_dattier", "Palmier dattier", "النخيل", "hectare", "", ""),
+    ("cultures_sous_serres", "Cultures sous serres", "الزراعات داخل البيوت المحمية", "hectare", "", ""),
+    ("bananes_sous_serres", "Culture des bananes sous serres", "زراعة الموز داخل البيوت المحمية",
+     "hectare", "", ""),
+    ("elevage_bovins", "Élevage : bovins (1995) ; bovins, équins et camélidés (1999)",
+     "تربية الماشية: الأبقار (1995)؛ الأبقار والخيول والإبل (1999)", "tete", "", ""),
+    ("elevage_ovins", "Élevage : ovins", "تربية الماشية: الأغنام", "tete",
+     "ovins et caprins", "الأغنام والماعز"),
+    ("aviculture", "Aviculture", "تربية الدواجن", "volailles", "", ""),
+    ("cuniculture", "Cuniculture", "تربية الأرانب", "lapins", "", ""),
+    ("peche_cotiere", "Pêche côtière", "الصيد الساحلي", "barque", "", ""),
+    ("peche_chalut", "Pêche au chalut", "الصيد بشباك الجر", "unite",
+     "pêche au feu", "الصيد بالضوء"),
+]
+MOTS_ATMP = {
+    "fr": {"type": "Type de culture ou d'activité", "unite": "Unité",
+           "variante": "Édition arabe, quand elle diffère"},
+    "ar": {"type": "نوع الزراعة أو النشاط", "unite": "الوحدة",
+           "variante": "الطبعة العربية عند الاختلاف"},
+}
+
+
+def _valeur_a(chemin: str, date: str) -> float | None:
+    """Valeur d'un paramètre scalaire (`values`) en vigueur à `date`, ou None."""
+    point = ot.en_vigueur(ot.serie_datee(chemin), date)
+    return None if point is None else point[1]
+
+
+def atmp_journees(langue):
+    """Journées de travail de la cotisation forfaitaire agricole, 1995 et 1999."""
+    import pandas as pd
+
+    noeud = f"{FORFAITS}/agriculture_peche/journees"
+    feuilles = {r for r, _p, est_noeud in ot.arborescence(noeud) if not est_noeud}
+    if feuilles != {f for f, *_ in JOURNEES}:
+        raise ValueError(f"journées AT/MP désaccordées : {sorted(feuilles ^ {f for f, *_ in JOURNEES})}")
+    m = MOTS_ATMP[langue]
+    rang = 1 if langue == "fr" else 2
+    lignes = []
+    for feuille, fr, ar, unite, var_fr, var_ar in JOURNEES:
+        chemin = f"{noeud}/{feuille}.yaml"
+        ot.releve_note(chemin, fr if langue == "fr" else ar)
+        lignes.append({
+            m["type"]: fr if langue == "fr" else ar,
+            m["unite"]: UNITES_JOURNEES[unite][0 if langue == "fr" else 1],
+            ot.formate_date("1995-01-01", langue): _nombre(_valeur_a(chemin, "1995-01-01")),
+            ot.formate_date("1999-04-01", langue): _nombre(_valeur_a(chemin, "1999-04-01")),
+            m["variante"]: (var_fr if langue == "fr" else var_ar) or "",
+        })
+    return pd.DataFrame(lignes)
+
+
+def atmp_modulation(langue):
+    """Majoration et réduction de la cotisation AT/MP : quotités du décret n° 95-538."""
+    g, L = ot.gabarit, ot.Lecture
+    d95 = "1995-01-01"
+    sup = L(f"{MODULATION}/cotisation_supplementaire.yaml", d95, "taux",
+            {"fr": "Cotisation supplémentaire", "ar": "الاشتراك الإضافي"})
+    maxi = L(f"{MODULATION}/cotisation_supplementaire_maximum.yaml", d95, "taux",
+             {"fr": "Cotisation supplémentaire maximale", "ar": "الحد الأقصى للاشتراك الإضافي"})
+    red = L(f"{MODULATION}/reduction_maximum.yaml", d95, "taux",
+            {"fr": "Réduction maximale", "ar": "الحد الأقصى للتخفيض"})
+    entetes = {
+        "fr": ["Mesure", "Quotité, en proportion des cotisations principales", "Condition",
+               "Prise d'effet et durée", "Article"],
+        "ar": ["الإجراء", "المقدار، نسبةً إلى الاشتراكات الأصلية", "الشرط",
+               "بداية السريان والمدة", "الفصل"],
+    }[langue]
+    lignes = [
+        [{"fr": "Cotisation supplémentaire", "ar": "الاشتراك الإضافي"},
+         g("{s}", s=sup),
+         {"fr": "manquement non corrigé dans le délai notifié par la caisse",
+          "ar": "إخلال لم يقع تداركه في الأجل الذي حدّده الصندوق"},
+         {"fr": "à compter du trimestre qui suit l'expiration de la mise en demeure, "
+                "jusqu'à sa suppression",
+          "ar": "ابتداءً من الثلاثية الموالية لانقضاء أجل التنبيه، إلى حين إلغائه"},
+         {"fr": "16, 17, 19 et 20", "ar": "16 ا17 ا19 ا20"}],
+        [{"fr": "Cotisation supplémentaire doublée", "ar": "الاشتراك الإضافي مضاعَفًا"},
+         g({"fr": "{s}, doublés", "ar": "{s}، تُضاعَف"}, s=sup),
+         {"fr": "mesures non exécutées dans les six mois qui suivent l'expiration du délai, "
+                "ou récidive dans les trois ans pour un risque de même nature",
+          "ar": "عدم تنفيذ التدابير في الأشهر الستة الموالية لانقضاء الأجل، أو العود خلال ثلاث "
+                "سنوات لخطر من نفس الطبيعة"},
+         "—", "17"],
+        [g({"fr": "Cotisation supplémentaire portée à {m}", "ar": "الاشتراك الإضافي مرفوعًا إلى {m}"},
+           m=maxi),
+         g("{m}", m=maxi),
+         {"fr": "refus ou négligence persistant six mois après l'application de la majoration "
+                "de l'article 17",
+          "ar": "استمرار الرفض أو الإهمال ستة أشهر بعد تطبيق الترفيع المنصوص عليه بالفصل 17"},
+         "—", "18"],
+        [{"fr": "Réduction", "ar": "التخفيض"},
+         g({"fr": "{r} au plus", "ar": "{r} كحدّ أقصى"}, r=red),
+         {"fr": "quatre conditions cumulatives, dont une baisse sensible des accidents du "
+                "travail ou des maladies professionnelles",
+          "ar": "أربعة شروط مجتمعة، منها انخفاض ملموس في حوادث الشغل أو الأمراض المهنية"},
+         {"fr": "dès le trimestre qui suit la décision, pour un an renouvelable ; suspension "
+                "ou suppression à tout moment",
+          "ar": "ابتداءً من الثلاثية الموالية للقرار، لمدة سنة قابلة للتجديد؛ ويمكن تعليقه أو "
+                "إلغاؤه في أي وقت"},
+         {"fr": "22 à 26", "ar": "22 إلى 26"}],
+    ]
+    return ot.tableau_gabarit(entetes, lignes, langue)
+
+
+def atmp_forfaits(langue):
+    """Salaires forfaitaires AT/MP par catégorie : règles saisies, valeurs engendrées."""
+    g, L = ot.gabarit, ot.Lecture
+    d95, d99, d00 = "1995-01-01", "1999-04-01", "2000-07-01"
+    agri = f"{FORFAITS}/agriculture_peche"
+
+    def lu(chemin, date, formateur, fr, ar):
+        return L(chemin, date, formateur, {"fr": fr, "ar": ar})
+
+    t95 = lu(f"{agri}/taux.yaml", d95, "taux",
+             "Taux de la cotisation forfaitaire agricole", "نسبة الاشتراك الجزافي الفلاحي")
+    t99 = lu(f"{agri}/taux.yaml", d99, "taux",
+             "Taux de la cotisation forfaitaire agricole", "نسبة الاشتراك الجزافي الفلاحي")
+    coef_agri = lu(f"{agri}/coefficient_cotisation.yaml", d95, "coefficient",
+                   "Coefficient de la cotisation forfaitaire agricole", "معامل الاشتراك الجزافي الفلاحي")
+    plafond = lu(f"{agri}/plafond_salaire_smag.yaml", d95, "coefficient",
+                 "Plafond de salaire du forfait agricole (en SMAG)",
+                 "سقف الأجر للجزاف الفلاحي (بالأجر الأدنى الفلاحي)")
+    base_agri = lu(f"{agri}/base_prestations_jours.yaml", d95, "entier",
+                   "Base des réparations du forfait agricole (jours)", "قاعدة جبر الأضرار الفلاحية (أيام)")
+    c_ord = lu(f"{agri}/coefficient_prestations_ordinaire.yaml", d95, "coefficient",
+               "Coefficient des prestations — travailleurs ordinaires", "معامل الخدمات — العملة العاديون")
+    c_spe = lu(f"{agri}/coefficient_prestations_specialise.yaml", d95, "coefficient",
+               "Coefficient des prestations — travailleurs spécialisés", "معامل الخدمات — العملة المختصون")
+    c_qua = lu(f"{agri}/coefficient_prestations_qualifie.yaml", d95, "coefficient",
+               "Coefficient des prestations — travailleurs qualifiés", "معامل الخدمات — العملة المؤهلون")
+    ch_coef = lu(f"{FORFAITS}/chauffeurs_taxi_louage/coefficient.yaml", d95, "coefficient",
+                 "Coefficient — chauffeurs de louage et de taxis", "المعامل — سائقو اللواج والتاكسي")
+    ch_h = lu(f"{FORFAITS}/chauffeurs_taxi_louage/nombre_heures.yaml", d95, _nombre,
+              "Heures par an — chauffeurs de louage et de taxis", "ساعات السنة — سائقو اللواج والتاكسي")
+    ch_h00 = lu(f"{FORFAITS}/chauffeurs_taxi_louage/nombre_heures.yaml", d00, _nombre,
+                "Heures par an — chauffeurs de louage et de taxis", "ساعات السنة — سائقو اللواج والتاكسي")
+    ma_coef = lu(f"{FORFAITS}/masseurs_bains_maures/coefficient.yaml", d95, "coefficient",
+                 "Coefficient — masseurs des bains maures", "المعامل — المدلّكون بالحمّامات")
+    ma_h = lu(f"{FORFAITS}/masseurs_bains_maures/nombre_heures.yaml", d95, _nombre,
+              "Heures par an — masseurs des bains maures", "ساعات السنة — المدلّكون بالحمّامات")
+    em_j = lu(f"{FORFAITS}/employes_maison/base_jours.yaml", d95, "entier",
+              "Base annuelle (jours) — employés de maison", "القاعدة السنوية (أيام) — عملة المنازل")
+    em_aides = lu(f"{FORFAITS}/employes_maison/taux_aides_menage.yaml", d95, "taux",
+                  "Taux — aides de ménage", "النسبة — المعينون المنزليون")
+    em_autres = lu(f"{FORFAITS}/employes_maison/taux_autres.yaml", d95, "taux",
+                   "Taux — autres employés de maison", "النسبة — بقية عملة المنازل")
+    em_cond = lu(f"{FORFAITS}/employes_maison/taux_conducteurs.yaml", d95, "taux",
+                 "Taux — conducteurs de voitures", "النسبة — سائقو السيارات")
+    em_ccond = lu(f"{FORFAITS}/employes_maison/coefficient_conducteurs.yaml", d95, "coefficient",
+                  "Coefficient — conducteurs de voitures", "المعامل — سائقو السيارات")
+    tp_h = lu(f"{FORFAITS}/temporaires_particuliers/nombre_heures_mensuel.yaml", d95, _nombre,
+              "Heures par mois — travailleurs temporaires des particuliers",
+              "ساعات الشهر — العملة الوقتيون لدى الخواص")
+    tp_ord = lu(f"{FORFAITS}/temporaires_particuliers/coefficient_ordinaire.yaml", d95, "coefficient",
+                "Coefficient — travailleurs ordinaires", "المعامل — العملة العاديون")
+    tp_qua = lu(f"{FORFAITS}/temporaires_particuliers/coefficient_qualifie.yaml", d95, "coefficient",
+                "Coefficient — travailleurs qualifiés", "المعامل — العملة المؤهلون")
+
+    smig48, smag = SMIG_48[langue], SMAG[langue]
+    meme_base = {"fr": "même base", "ar": "نفس القاعدة"}
+    non_fixe = {"fr": "non fixé par l'article", "ar": "لم يحدّده الفصل"}
+    entetes = {
+        "fr": ["Catégorie", "Base de la cotisation", "Coefficient", "Taux",
+               "Base des réparations", "État d'origine (1^er^ janvier 1995)", "Modifications datées"],
+        "ar": ["الصنف", "قاعدة الاشتراك", "المعامل", "النسبة",
+               "قاعدة جبر الأضرار", "الوضع الأصلي (1 جانفي 1995)", "التعديلات المؤرّخة"],
+    }[langue]
+    lignes = [
+        # Article 4 : le forfait agricole.
+        [g({"fr": "Secteur agricole hors loi n° 89-73 et pêcheurs payés à la part sur bateaux "
+                  "de moins de trente tonneaux de jauge, pour les travailleurs payés au plus "
+                  "{p} fois le " + smag + " [@decret95-538, art. 4]",
+            "ar": "القطاع الفلاحي غير الخاضع للقانون عدد 73 لسنة 1989 والبحّارة المؤجّرون بالحصّة "
+                  "على مراكب تقلّ حمولتها عن ثلاثين طنًّا، بالنسبة إلى العملة الذين لا تتجاوز "
+                  "أجورهم {p} مرات " + smag + " [@decret95-538, art. 4]"}, p=plafond),
+         {"fr": smag + " journalier × nombre de journées de travail fixé par type de culture "
+                "ou d'activité (@tbl-atmp-journees)",
+          "ar": smag + " اليومي × عدد أيام العمل المحدّد حسب نوع الزراعة أو النشاط "
+                "(@tbl-atmp-journees)"},
+         g("{c}", c=coef_agri),
+         g({"fr": "propre à l'article : {t95}, puis {t99}", "ar": "خاصّة بالفصل: {t95} ثم {t99}"},
+           t95=t95, t99=t99),
+         g({"fr": "salaire forfaitaire annuel distinct : " + smag + " × {j} jours × {o} "
+                  "(travailleurs agricoles ordinaires, pêcheurs), {s} (travailleurs et pêcheurs "
+                  "spécialisés, ramendeurs, mécaniciens, seconds des patrons de pêche) ou {q} "
+                  "(travailleurs agricoles qualifiés, patrons de pêche)",
+            "ar": "أجر جزافي سنوي مستقل: " + smag + " × {j} يومًا × {o} (العملة الفلاحيون "
+                  "العاديون والبحّارة)، أو {s} (العملة والبحّارة المختصّون ومصلحو الشباك "
+                  "والميكانيكيون ونوّاب الرياس)، أو {q} (العملة الفلاحيون المؤهّلون والرياس)"},
+           j=base_agri, o=c_ord, s=c_spe, q=c_qua),
+         g({"fr": "taux de {t95} ; tableau des journées de 1995", "ar": "نسبة {t95}؛ جدول أيام 1995"},
+           t95=t95),
+         g({"fr": "**1^er^ avril 1999** : taux de {t95} → {t99} ; tableau des journées "
+                  "complété de deux lignes et élargi sur une troisième. Champ, seuil, "
+                  "coefficient, option et base des réparations inchangés "
+                  "[@decret99-1010, art. 1^er^ et 2]",
+            "ar": "**1 أفريل 1999**: النسبة من {t95} إلى {t99}؛ أُكمل جدول الأيام بسطرين "
+                  "ووُسّع سطر ثالث. بقي المجال والسقف والمعامل والخيار وقاعدة جبر الأضرار "
+                  "دون تغيير [@decret99-1010, art. 1^er^ et 2]"}, t95=t95, t99=t99)],
+        # Article 4 : l'option pour les salaires effectifs.
+        [{"fr": "Mêmes employeurs, sur option irrévocable [@decret95-538, art. 4]",
+          "ar": "نفس المؤجّرين، بخيار لا رجعة فيه [@decret95-538, art. 4]"},
+         {"fr": "salaires effectifs", "ar": "الأجور الفعلية"},
+         "—",
+         {"fr": "échelle des articles 1^er^ et 2", "ar": "سلّم الفصلين الأول والثاني"},
+         {"fr": "droit commun [@loi94-28, art. 17]", "ar": "القواعد العامة [@loi94-28, art. 17]"},
+         {"fr": "échelle de 1995 (@tbl-atmp-1995)", "ar": "سلّم 1995 (@tbl-atmp-1995)"},
+         {"fr": "**1^er^ avril 1999** : échelle refondue (@tbl-atmp-1999)",
+          "ar": "**1 أفريل 1999**: سلّم معاد الصياغة (@tbl-atmp-1999)"}],
+        # Article 5 : chauffeurs de louage et de taxis.
+        [{"fr": "Chauffeurs de louage et de taxis [@decret95-538, art. 5]",
+          "ar": "سائقو سيارات الأجرة (التاكسي واللواج) [@decret95-538, art. 5]"},
+         g({"fr": smig48 + ", × {h} heures par an", "ar": smig48 + "، × {h} ساعة في السنة"},
+           h=ch_h),
+         g({"fr": "{c}, puis aucun", "ar": "{c} ثم لا معامل"}, c=ch_coef),
+         non_fixe, meme_base,
+         g({"fr": "coefficient {c}", "ar": "المعامل {c}"}, c=ch_coef),
+         g({"fr": "**1^er^ juillet 2000** : " + smig48 + ", × {h} heures par an, sans "
+                  "coefficient ; transport rural ajouté. L'article 5 n'est pas nommé : portée "
+                  "déduite de l'abrogation des « dispositions antérieures contraires » "
+                  "[@decret2000-1439, art. 1^er^ à 4]",
+            "ar": "**1 جويلية 2000**: " + smig48 + "، × {h} ساعة في السنة، دون معامل؛ "
+                  "وأُضيف النقل الريفي. لم يُسمَّ الفصل 5: المدى مستخلص من إلغاء "
+                  "«الأحكام السابقة المخالفة» [@decret2000-1439, art. 1^er^ à 4]"}, h=ch_h00)],
+        # Article 5 : masseurs des bains maures.
+        [{"fr": "« Masseurs » des bains maures [@decret95-538, art. 5]",
+          "ar": "«المدلّكون» بالحمّامات [@decret95-538, art. 5]"},
+         g({"fr": smig48 + ", × {h} heures par an", "ar": smig48 + "، × {h} ساعة في السنة"},
+           h=ma_h),
+         g("{c}", c=ma_coef), non_fixe, meme_base,
+         g({"fr": "coefficient {c}", "ar": "المعامل {c}"}, c=ma_coef), "—"],
+        # Article 6 : employés de maison, trois taux.
+        [{"fr": "Aides de ménage [@decret95-538, art. 6]",
+          "ar": "المعينون المنزليون [@decret95-538, art. 6]"},
+         g({"fr": smag + " × {j} jours par an", "ar": smag + " × {j} يومًا في السنة"}, j=em_j),
+         "—",
+         g({"fr": "propre à l'article : {t}", "ar": "خاصّة بالفصل: {t}"}, t=em_aides),
+         meme_base,
+         g({"fr": "taux de {t}", "ar": "نسبة {t}"}, t=em_aides), "—"],
+        [{"fr": "Autres employés de maison, sauf les chauffeurs [@decret95-538, art. 6]",
+          "ar": "بقية عملة المنازل، باستثناء السائقين [@decret95-538, art. 6]"},
+         g({"fr": smag + " × {j} jours par an", "ar": smag + " × {j} يومًا في السنة"}, j=em_j),
+         "—",
+         g({"fr": "propre à l'article : {t}", "ar": "خاصّة بالفصل: {t}"}, t=em_autres),
+         meme_base,
+         g({"fr": "taux de {t}", "ar": "نسبة {t}"}, t=em_autres), "—"],
+        [{"fr": "Conducteurs de voitures, employés de maison [@decret95-538, art. 6]",
+          "ar": "سائقو السيارات من عملة المنازل [@decret95-538, art. 6]"},
+         g({"fr": smag + " × {j} jours par an", "ar": smag + " × {j} يومًا في السنة"}, j=em_j),
+         g("{c}", c=em_ccond),
+         g({"fr": "propre à l'article : {t}", "ar": "خاصّة بالفصل: {t}"}, t=em_cond),
+         meme_base,
+         g({"fr": "taux de {t} ; coefficient {c}", "ar": "نسبة {t}؛ المعامل {c}"},
+           t=em_cond, c=em_ccond), "—"],
+        # Article 7 : travailleurs temporaires des particuliers.
+        [{"fr": "Travailleurs employés temporairement auprès des individus "
+                "[@decret95-538, art. 7]",
+          "ar": "العملة المشغّلون وقتيًّا لدى الخواص [@decret95-538, art. 7]"},
+         g({"fr": "SMIG, régime horaire non précisé, × {h} heures par mois ; tout mois "
+                  "commencé compte pour un mois",
+            "ar": "الأجر الأدنى المضمون لمختلف المهن، دون تحديد نظام الساعات، × {h} ساعة "
+                  "في الشهر؛ وكل شهر بُدئ يُحسب شهرًا كاملاً"}, h=tp_h),
+         g({"fr": "{o} (travailleurs ordinaires) ou {q} (travailleurs qualifiés)",
+            "ar": "{o} (العملة العاديون) أو {q} (العملة المؤهّلون)"}, o=tp_ord, q=tp_qua),
+         {"fr": "celui de la branche d'activité, que l'article ne désigne pas",
+          "ar": "نسبة فرع النشاط، ولا يعيّنه الفصل"},
+         meme_base,
+         g({"fr": "coefficients {o} et {q}", "ar": "المعاملان {o} و{q}"}, o=tp_ord, q=tp_qua),
+         "—"],
+    ]
+    return ot.tableau_gabarit(entetes, lignes, langue)
+
+
 def _dernier(chemin: str) -> float | None:
     serie = ot.taux_datee(chemin)
     return serie[-1][1] if serie else None
@@ -548,8 +869,10 @@ CLES_CNRPS_EMPLOYEUR = {
     "2011-07-01": "decretloi2011-48",
     "2019-06-01": "loi2019-37, art. 4",
 }
-CLES_PREVOYANCE = dict.fromkeys(
-    (f"{a}-07-01" for a in range(2007, 2011)), "decret2007-1406, art. 13")
+CLES_PREVOYANCE = {
+    "1973-04-01": "decret73-91, art. 15",
+    **dict.fromkeys((f"{a}-07-01" for a in range(2007, 2011)), "decret2007-1406, art. 13"),
+}
 CLES_REDUCTION = {
     "1996-10-01": "loi97-4, art. 41 nouveau ; @decret97-1645",
     "2007-07-01": "decret2007-1406, art. 16",
@@ -575,7 +898,8 @@ def cnrps_employeur(langue):
 
 
 def prevoyance_pensionnes(langue):
-    """La cotisation de prévoyance sociale assise sur la pension, en quatre paliers."""
+    """La cotisation de prévoyance sociale assise sur la pension : 2 % en 1973 (décret
+    n° 73-91, article 15), puis les quatre paliers du décret n° 2007-1406."""
     m = MOTS[langue]
     return ot.tableau_taux_datee(
         [(f"{PUBLIC}/pensionne_cnrps/prevoyance_sociale.yaml", m["prevoyance"], _taux(langue))],
@@ -618,20 +942,22 @@ def css_salarie(langue):
 
 
 def cnrps_maladie(langue):
-    """La montée en charge de la cotisation d'assurance maladie des agents de la CNRPS.
+    """La cotisation de prévoyance sociale, puis d'assurance maladie, des agents de la CNRPS.
 
-    Elle commence au 1er juillet 2007 : la part patronale antérieure (1 %) n'est rattachée à
-    aucun texte, et ne se publie pas (`depuis`). La première ligne porte la part de l'agent
-    alors en vigueur, fixée depuis 1973.
+    La série commence au 1er avril 1973 : 1 % de cotisation de l'assuré et 1 % de
+    contribution de l'État (décret n° 73-91, articles 14 et 16), avant la montée en charge
+    du régime de base d'assurance maladie (décret n° 2007-1406, article 4).
     """
     m = MOTS[langue]
     base = f"{PUBLIC}/salarie_cnrps"
     return ot.tableau_taux_datee(
         [(f"{base}/cotisations_employeur/maladie.yaml", m["maladie_employeur"], _taux(langue)),
          (f"{base}/cotisations_salarie/maladie.yaml", m["maladie_agent"], _taux(langue))],
-        cles=dict.fromkeys(("2007-07-01", "2008-07-01", "2009-07-01"), "decret2007-1406, art. 4"),
+        cles={"1973-04-01": "decret73-91, art. 14 et 16",
+              **dict.fromkeys(("2007-07-01", "2008-07-01", "2009-07-01"),
+                              "decret2007-1406, art. 4")},
         colonne_periode=m["effet"], colonne_texte=m["texte"], langue=langue,
-        depuis="2007-07-01", colonne_total=m["total"])
+        colonne_total=m["total"])
 
 
 def perte_emploi(langue):
@@ -682,6 +1008,9 @@ TABLEAUX = {
     "css_salarie.md": css_salarie,
     "atmp_1995.md": atmp_1995,
     "atmp_1999.md": atmp_1999,
+    "atmp_forfaits.md": atmp_forfaits,
+    "atmp_journees.md": atmp_journees,
+    "atmp_modulation.md": atmp_modulation,
 }
 
 # Le régime des étudiants n'a pas de tableau : sa cotisation est un forfait, pas un taux.

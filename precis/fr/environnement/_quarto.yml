@@ -25,7 +25,6 @@ book:
     - _assainissement.qmd
     - _dechets.qmd
     - _depollution.qmd
-    - _rapports_etudes.qmd
   appendices:
     - _glossaire.qmd   # engendré par scripts/build_glossary.py — ne pas éditer à la main.
 

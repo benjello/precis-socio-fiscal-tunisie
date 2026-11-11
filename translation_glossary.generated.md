@@ -59,6 +59,8 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Augmentation optionnelle de l'âge de mise à la retraite | الترفيع الاختياري في سنّ الإحالة على التقاعد |  |
 | Autonomie budgétaire | الاستقلالية في الميزانية |  |
 | Autonomie financière | الاستقلالية المالية |  |
+| Autorisation de transport | رخصة النقل |  |
+| Autorité régionale organisatrice des transports terrestres | السلطة الجهوية لتنظيم النقل البري |  |
 | Avance sur la taxe de formation professionnelle | التسبقة على الأداء على التكوين المهني |  |
 | Avance sur restitution du crédit de TVA | تسبقة من فائض الأداء على القيمة المضافة |  |
 | Avancement d'échelon | الترقّي في الدرجة |  |
@@ -92,6 +94,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Brevet de technicien supérieur | شهادة مؤهل التقني السامي | BTS |
 | Cadre général de référence des diplômes | الإطار المرجعي العام |  |
 | Cadres actifs | الأسلاك النشيطة |  |
+| Cahier des charges | كرّاس الشروط |  |
 | Caisse centrale des prestations sociales | الصندوق المركزي للمنح الاجتماعية |  |
 | Caisse d'assurance vieillesse, invalidité et survivants | صندوق تأمين الشيخوخة والعجز والباقين بقيد الحياة بعد وفاة المنتفع بجراية | CAVIS |
 | Caisse de compensation des allocations familiales | صندوق تعويض المنح العائلية |  |
@@ -119,6 +122,8 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Cause réelle et sérieuse | سبب حقيقي وجدي |  |
 | Centimes additionnels | صانتيمات إضافية |  |
 | Centre de soins de santé de base | مركز الصحة الأساسية | CSB |
+| Centre national de formation continue et de promotion professionnelle | المركز الوطني للتكوين المستمر والترقية المهنية | CNFCPP |
+| Centre national de formation des formateurs et d'ingénierie de formation | المركز الوطني لتكوين المكوّنين وهندسة التكوين | CENAFFIF |
 | Certificat d'aptitude professionnelle | شهادة الكفاءة المهنية | CAP |
 | Certificat de compétence | شهادة مهارة |  |
 | Cession des participations publiques | التفويت في المساهمات العمومية |  |
@@ -163,12 +168,14 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Compte financier | الحساب المالي |  |
 | Comptes de la santé | الحسابات الوطنية للصحة |  |
 | Comptes spéciaux d'épargne | الحسابات الخاصة للادخار |  |
+| Concession autoroutière | لزمة الطريق السيّارة |  |
 | Concours externe sur dossiers | مناظرة خارجية بالملفات |  |
 | Condition de ressources | شرط الموارد |  |
 | Congé (titre de circulation) | سند إعفاء |  |
 | Congé annuel payé | الرخصة السنوية الخالصة الأجر |  |
 | Congé de paternité | عطلة الأبوة |  |
 | Congé pour création d'entreprise | عطلة لبعث مؤسسة |  |
+| Conseil des universités | مجلس الجامعات |  |
 | Conseil local | المجلس المحلي |  |
 | Conseil supérieur de l'éducation | المجلس الأعلى للتربية |  |
 | Conseil supérieur de l'éducation et de l'enseignement | المجلس الأعلى للتربية والتعليم |  |
@@ -182,6 +189,8 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Contrat d'apprentissage | عقد التدريب |  |
 | Contrat d'initiation à la vie professionnelle | عقد الإعداد للحياة المهنية | CIVP |
 | Contrat d'insertion des diplômés de l'enseignement supérieur | عقد إدماج حاملي شهادات التعليم العالي | CIDES |
+| Contrat de formation et de recherche | عقد التكوين والبحث |  |
+| Contrat de performance | عقد أداء |  |
 | Contrat de réinsertion dans la vie active | عقد إعادة الإدماج في الحياة النشيطة | CRVA |
 | Contrat emploi-formation | عقد التشغيل والتكوين |  |
 | Contrat emploi-solidarité | عقد التشغيل والتضامن |  |
@@ -218,6 +227,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Crédits de paiement | اعتمادات الدفع |  |
 | Cycle préparatoire | المرحلة الإعدادية |  |
 | Cycle primaire | المرحلة الابتدائية |  |
+| Cycles court, moyen et long | المراحل القصيرة والمتوسّطة والطويلة |  |
 | Décentralisation | اللامركزية |  |
 | Décision ministérielle | مقرر |  |
 | Déconcentration | اللامحورية |  |
@@ -247,10 +257,13 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Dévolution de compétences | إسناد الصلاحيات الذاتية |  |
 | Différence compensatrice | الفارق التعويضي في الأجر |  |
 | Diplôme de fin de l'enseignement de base | شهادة ختم التعليم الأساسي |  |
+| Diplôme universitaire de technologie | الشهادة الجامعية للتكنولوجيا | DUT |
+| Direction générale de l'enfance | الإدارة العامة للطفولة |  |
 | Discipline budgétaire | الانضباط في الميزانية |  |
 | District | الإقليم |  |
 | Djemaïa des habous | جمعية الأحباس |  |
 | Doctorat | الدكتوراه |  |
+| Domaine public routier | الملك العمومي للطرقات |  |
 | Dotation budgétaire de la Caisse générale de compensation | منحة الميزانية للصندوق العام للتعويض |  |
 | Droit à déduction | حق الطرح |  |
 | Droit compensateur provisoire | المعلوم التكميلي المؤقت |  |
@@ -337,6 +350,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Fonds commun des collectivités locales | المال المشترك للجماعات المحلية | FCCL |
 | Fonds de commerce | الأصول التجارية |  |
 | Fonds de dépollution | صندوق إزالة التلوث | FODEP |
+| Fonds de développement des autoroutes | صندوق تنمية الطرقات السيّارة |  |
 | Fonds de la protection et de l'esthétique de l'environnement | صندوق حماية وجمالية البيئة |  |
 | Fonds de promotion de la formation professionnelle et de l'apprentissage | صندوق النهوض بالتكوين والتدريب المهني |  |
 | Fonds de promotion du logement pour les salariés | صندوق النهوض بالمسكن لفائدة الأجراء |  |
@@ -373,6 +387,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Haute instance des finances locales | الهيئة العليا للمالية المحلية |  |
 | Hébergement universitaire | السكن الجامعي |  |
 | Heures supplémentaires | الساعات الإضافية |  |
+| Homologation des certificats et diplômes | المصادقة على الشهائد والدبلومات |  |
 | Homologation des prix | المصادقة الإدارية على الأسعار |  |
 | Honoraires conventionnels | الأتعاب التعاقدية |  |
 | Hôpital de circonscription | المستشفى المحلي |  |
@@ -419,7 +434,9 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Indemnité pour charges militaires | منحة الكلف العسكرية |  |
 | Indemnité provisoire complémentaire (militaires et forces de sécurité intérieure) | المنحة الوقتية التكميلية |  |
 | Indemnité spécifique | المنحة الخصوصية |  |
+| Ingénierie de formation | هندسة التكوين |  |
 | Instance nationale de l'évaluation, de l'assurance-qualité et de l'accréditation | الهيئة الوطنية للتقييم وضمان الجودة والاعتماد |  |
+| Institut de promotion supérieure du travail | معهد النهوض بالعمل | IPST |
 | Institut supérieur de la magistrature | المعهد الأعلى للقضاء |  |
 | Institut supérieur des études technologiques | المعهد العالي للدراسات التكنولوجية | ISET |
 | Interventions publiques | التدخل العمومي |  |
@@ -477,6 +494,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Moyens des services | وسائل المصالح |  |
 | Niveau de rémunération | مستوى التأجير |  |
 | Nomenclature budgétaire | تبويب الميزانية |  |
+| Obligation de service public | موجبات المرفق العمومي |  |
 | Obligation scolaire | إجبارية التعليم الأساسي |  |
 | Office de l'aviation civile et des aéroports | ديوان الطيران المدني والمطارات | OACA |
 | Office de la marine marchande et des ports | ديوان البحرية التجارية والموانئ | OMMP |
@@ -528,6 +546,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Précis socio-fiscal | الملخّص الاجتماعي والجبائي |  |
 | Premier logement | المسكن الأول |  |
 | Présalaire | المرتب القبلي |  |
+| Président d'université | رئيس الجامعة |  |
 | Prestation monétaire | المنفعة النقدية |  |
 | Prestation non monétaire | المنفعة غير النقدية |  |
 | Prestations familiales | المنح العائلية |  |
@@ -569,6 +588,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Rapport annuel de performance | التقرير السنوي للأداء | RAP |
 | Recettes fiscales | المداخيل الجبائية |  |
 | Recrutement direct | الانتداب المباشر |  |
+| Recteur d'université | مدير الجامعة |  |
 | Redevance compensatrice | الأتاوة التعويضية |  |
 | Redevance d'utilisation | معلوم الاستعمال |  |
 | Redevance de compensation | أتاوة الدعم |  |
@@ -766,6 +786,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Tranche normale | القسط العادي |  |
 | Transfert financier | التحويلات المالية |  |
 | Transfert monétaire direct | التحويل النقدي المباشر |  |
+| Transport urbain, régional et interurbain | النقل الحضري والجهوي وبين المدن |  |
 | Travail à temps partiel | العمل لوقت جزئي |  |
 | Travail de nuit | العمل الليلي |  |
 | Travail domestique | العمل المنزلي |  |
@@ -781,6 +802,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Tuteur | الولي |  |
 | TVA sur la marge | احتساب الأداء على القيمة المضافة على الفارق بين ثمن البيع وثمن الشراء |  |
 | Unité de gestion par objectifs | وحدة تصرف حسب الأهداف |  |
+| Université de Tunis | جامعة تونس |  |
 | Valeur ajoutée (brute) | القيمة المضافة (الخام) |  |
 | Valeur du point d'indice | قيمة النقطة الاستدلالية |  |
 | Valeur en douane | القيمة لدى الديوانة |  |

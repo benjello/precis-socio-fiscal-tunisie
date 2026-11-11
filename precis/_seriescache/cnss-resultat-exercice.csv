@@ -1,0 +1,22 @@
+annee,resultat_MD,statut,source,retenu,avertissement,note
+2005,,,,True,,trou honnête : annuaire 2006 (scan) à OCR pour la page indicateurs ; aucune source lue
+2006,,,,True,,trou honnête : idem 2005 ; rupture CNAM la même année
+2007,,,,True,,trou honnête : aucune source dans l'entrepôt
+2008,,,,True,,trou honnête : aucune source dans l'entrepôt
+2009,6.8,budget,annuaire 2010 (ressources 1 474 677 − emplois 1 467 852 ; « موازنة الصندوق 2010 »),True,"source « موازنة » (budget), pas un bilan — fragile",
+2010,7.0,budget,annuaire 2010 (ressources 1 582 683 − emplois 1 575 724 ; « موازنة الصندوق 2010 »),True,"source « موازنة » (budget), pas un bilan — fragile",
+2011,,,,True,,trou honnête : aucune source dans l'entrepôt
+2012,-78.1,realise,annuaire 2013 (ressources 1 915 711 − emplois 1 993 829 ; « Bilan CNSS 2013 »),True,,−78 118 mD
+2013,-71.9,realise,annuaire 2013 (ressources 2 142 716 − emplois 2 214 618 ; « Bilan CNSS 2013 »),True,,−71 902 mD
+2014,,,,True,,trou honnête : aucune source dans l'entrepôt
+2015,-442.7,budget,annuaire 2016 (ressources 2 354 193 − emplois 2 796 921 ; « موازنة الصندوق 2015-2016 »),True,"source « موازنة » (budget), pas un bilan — fragile",−442 728 mD
+2016,-475.3,realise,annuaire 2016/2017 (2 537 131 − 3 012 421) ; recoupé rapport EP LF 2020 (−475),True,,−475 290 mD ; EP LF 2020 arrondit à −475
+2017,-525.0,realise,états financiers 2018/2017 (−525 000) ; EP LF 2020 ; annuaire 2017 (2 839 587 − 3 364 586),True,,
+2018,-530.5,realise,états financiers 2018/2017 (résultat de l'exercice −530 464) ; EP LF 2021,True,,−530 464 mD ; capitaux propres −383 521 mD (négatifs pour la première fois)
+2018,-530.0,realise,"rapport EP LF 2022 (ar, tableau 23, p. 46 ; النتيجة الصافية)",False,,"arrondi EP ; retenu = valeur états financiers −530,464"
+2019,-667.0,realise,"rapport EP LF 2022 (p. 46) et LF 2023 (p. 78), ar, tableau 23 ; النتيجة الصافية",True,,"lu en couche texte, confirmé par deux éditions (CNSS : 2018/2019/2020 = −530/−667/−1071 en LF 2022) ; prévision LF 2021 était −700"
+2020,-1091.5,realise,"récapitulatif budget 2022 (Bilan 2020, −1 091 500) ; rapport EP LF 2024 (−1 091,5)",True,,−1 091 500 mD
+2020,-1071.0,realise,"rapport EP LF 2022 (p. 46) et LF 2023 (p. 78), ar, tableau 23",False,,"chiffre antérieur/arrondi EP ; retenu = Bilan 2020 et EP LF 2024 (−1 091,5)"
+2021,-1274.3,realise,"rapport EP LF 2024 (ar, tableau 23, p. 68) et LF 2025 (p. 43) ; النتيجة الصافية",True,,"endettement total CNSS 8 664,2 MD fin 2021"
+2022,-961.5,realise,"rapport EP LF 2024 (ar, tableau 23, p. 69) ; النتيجة الصافية",True,,"produits (مداخيل) 3 749,2 MD ; endettement 9 972,7 MD"
+2023,-911.1,provisoire,"rapport EP LF 2025 (ar, tableau 23, p. 43 ; النتيجة الصافية, provisoire)",True,provisoire (« وقتي ») dans sa première édition,"endettement 10 620,4 MD"
