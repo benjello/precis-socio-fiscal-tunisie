@@ -96,20 +96,15 @@ Le décret n° 95-538 institue quatre forfaits, exprimés en multiples du [salai
 
 Les quatre articles ne traitent pas le taux de la même façon. Les articles 4 et 6 énoncent un taux qui leur est propre. L'article 7 renvoie aux branches d'activité, sans dire laquelle vaut pour un particulier employeur, ni préciser le régime horaire du SMIG qu'il retient. L'article 5 ne dit rien du taux : il ne rattache les chauffeurs et les masseurs à aucune classe de l'échelle de l'article premier.
 
-| Catégorie | Base de la cotisation | Coefficient | Taux | Base des réparations | État d'origine (1^er^ janvier 1995) | Modifications datées |
-|---|---|---|---|---|---|---|
-| Secteur agricole hors loi n° 89-73 et pêcheurs payés à la part sur bateaux de moins de trente tonneaux de jauge, pour les travailleurs payés au plus deux fois le SMAG [@decret95-538, art. 4] | SMAG journalier × nombre de journées de travail fixé par type de culture ou d'activité (@tbl-atmp-journees) | 1,5 | propre à l'article : 1 %, puis 0,80 % | salaire forfaitaire annuel distinct : SMAG × 300 jours × 1 (travailleurs agricoles ordinaires, pêcheurs), 1,5 (travailleurs et pêcheurs spécialisés, ramendeurs, mécaniciens, seconds des patrons de pêche) ou 2 (travailleurs agricoles qualifiés, patrons de pêche) | taux de 1 % ; tableau des journées de 1995 | **1^er^ avril 1999** : taux de 1 % → 0,80 % ; tableau des journées complété de deux lignes et élargi sur une troisième. Champ, seuil, coefficient, option et base des réparations inchangés [@decret99-1010, art. 1^er^ et 2] |
-| Mêmes employeurs, sur option irrévocable [@decret95-538, art. 4] | salaires effectifs | — | échelle des articles 1^er^ et 2 | droit commun [@loi94-28, art. 17] | échelle de 1995 (@tbl-atmp-1995) | **1^er^ avril 1999** : échelle refondue (@tbl-atmp-1999) |
-| Chauffeurs de louage et de taxis [@decret95-538, art. 5] | SMIG, régime 48 heures, × 2 400 heures par an | 1,5, puis aucun | non fixé par l'article | même base | coefficient 1,5 | **1^er^ juillet 2000** : SMIG, régime 48 heures, × 2 400 heures par an, sans coefficient ; transport rural ajouté. L'article 5 n'est pas nommé : portée déduite de l'abrogation des « dispositions antérieures contraires » [@decret2000-1439, art. 1^er^ à 4] |
-| « Masseurs » des bains maures [@decret95-538, art. 5] | SMIG, régime 48 heures, × 2 400 heures par an | 1,5 | non fixé par l'article | même base | coefficient 1,5 | — |
-| Aides de ménage [@decret95-538, art. 6] | SMAG × 300 jours par an | — | propre à l'article : 0,53 % | même base | taux de 0,53 % | — |
-| Autres employés de maison, sauf les chauffeurs [@decret95-538, art. 6] | SMAG × 300 jours par an | — | propre à l'article : 0,75 % | même base | taux de 0,75 % | — |
-| Conducteurs de voitures, employés de maison [@decret95-538, art. 6] | SMAG × 300 jours par an | 1,5 | propre à l'article : 1 % | même base | taux de 1 % ; coefficient 1,5 | — |
-| Travailleurs employés temporairement auprès des individus [@decret95-538, art. 7] | SMIG, régime horaire non précisé, × 200 heures par mois ; tout mois commencé compte pour un mois | 1 (travailleurs ordinaires) ou 2 (travailleurs qualifiés) | celui de la branche d'activité, que l'article ne désigne pas | même base | coefficients 1 et 2 | — |
+```{python}
+#| echo: false
+#| output: asis
+table("atmp_forfaits",
+      "Salaires forfaitaires servant de base à la cotisation d'accidents du travail et de maladies professionnelles, par catégorie, depuis le 1^er^ janvier 1995 [@decret95-538, art. 4 à 7 et 28 ; @decret99-1010 ; @decret2000-1439]",
+      "tbl-atmp-forfaits", colonnes='tbl-colwidths="[17,15,8,10,18,12,20]"')
+```
 
-: Salaires forfaitaires servant de base à la cotisation d'accidents du travail et de maladies professionnelles, par catégorie, depuis le 1^er^ janvier 1995 [@decret95-538, art. 4 à 7 et 28 ; @decret99-1010 ; @decret2000-1439] {#tbl-atmp-forfaits tbl-colwidths="[17,15,8,10,18,12,20]"}
-
-<!-- TODO (rédacteur) : remplacer par un tableau engendré. Ces forfaits ne sont pas portés en amont : openfisca-tunisia#471 (auquel ajouter le décret n° 2000-1439). Les montants en dinars se déduiront alors des séries du SMIG et du SMAG ; aucun n'est donné tant qu'ils ne sont pas calculés. -->
+<!-- TODO (rédacteur) : donner les montants en dinars des assiettes forfaitaires, déduits des séries du SMIG et du SMAG ; aucun n'est donné tant qu'ils ne sont pas calculés. -->
 
 Un tiret, dans la dernière colonne, signale qu'aucune modification n'est identifiée ici ; il en va de même de l'article 4 après 1999 et du forfait des chauffeurs après 2000.
 
@@ -117,34 +112,13 @@ Un tiret, dans la dernière colonne, signale qu'aucune modification n'est identi
 
 Deux textes ont touché ces forfaits. Le décret n° 99-1010 remplace le seul second paragraphe de l'article 4, à compter du 1^er^ avril 1999 : le taux de la cotisation forfaitaire agricole passe de 1 % à 0,80 % du SMAG journalier, et le tableau des journées reçoit deux lignes nouvelles — l'horticulture de plein champ et la cuniculture —, la ligne des bovins étant étendue aux équins et aux camélidés ; toutes les autres valeurs sont reprises à l'identique [@decret99-1010, art. 1^er^ et 2].
 
-| Type de culture ou d'activité | Unité | 1^er^ janvier 1995 | 1^er^ avril 1999 | Édition arabe, quand elle diffère |
-|---|---|---|---|---|
-| Céréales en sec | jours par hectare | 7 | 7 | |
-| Céréales en irrigué | jours par hectare | 15 | 15 | |
-| Légumineuses et autres grandes cultures en sec | jours par hectare | 15 | 15 | |
-| Cultures industrielles (betterave à sucre et coton) | jours par hectare | 70 | 70 | |
-| Cultures maraîchères de plein champ : solanacées (tomates) | jours par hectare | 150 | 150 | les tomates seules |
-| Cultures maraîchères de plein champ : pommes de terre et autres | jours par hectare | 50 | 50 | |
-| Horticulture de plein champ | jours par hectare | — | 70 | floriculture de plein champ |
-| Oliviers et amandiers | jours par hectare | 17 | 17 | |
-| Vigne de cuve (en sec) | jours par hectare | 20 | 20 | |
-| Vigne de table | jours par hectare | 40 | 40 | |
-| Agrumes | jours par hectare | 90 | 90 | |
-| Arboriculture en sec | jours par hectare | 20 | 20 | arbres fruitiers |
-| Arboriculture en irrigué | jours par hectare | 60 | 60 | |
-| Palmier dattier | jours par hectare | 120 | 120 | |
-| Cultures sous serres | jours par hectare | 300 | 300 | |
-| Culture des bananes sous serres | jours par hectare | 700 | 700 | |
-| Élevage : bovins (1995) ; bovins, équins et camélidés (1999) | jours par tête | 30 | 30 | |
-| Élevage : ovins | jours par tête | 5 | 5 | ovins et caprins |
-| Aviculture | jours pour 1 000 volailles | 36 | 36 | |
-| Cuniculture | jours pour 1 000 lapins | — | 36 | |
-| Pêche côtière | jours par barque | 500 | 500 | |
-| Pêche au chalut | jours par unité | 2 000 | 2 000 | pêche au feu |
-
-: Nombre de journées de travail retenu pour la cotisation forfaitaire du secteur agricole et de la pêche à la part, par type de culture ou d'activité, au 1^er^ janvier 1995 et au 1^er^ avril 1999 [@decret95-538, art. 4 ; @decret99-1010, art. 1^er^] {#tbl-atmp-journees tbl-colwidths="[36,20,12,12,20]"}
-
-<!-- TODO (rédacteur) : remplacer par un tableau engendré (openfisca-tunisia#471). -->
+```{python}
+#| echo: false
+#| output: asis
+table("atmp_journees",
+      "Nombre de journées de travail retenu pour la cotisation forfaitaire du secteur agricole et de la pêche à la part, par type de culture ou d'activité, au 1^er^ janvier 1995 et au 1^er^ avril 1999 [@decret95-538, art. 4 ; @decret99-1010, art. 1^er^]",
+      "tbl-atmp-journees", colonnes='tbl-colwidths="[36,20,12,12,20]"')
+```
 
 Les deux éditions de l'article 4 ne concordent pas partout, et l'édition arabe fait foi. Là où le français écrit « bateaux de moins de 30 tonnes », l'arabe vise des tonneaux de jauge ; la dernière ligne du tableau est la « pêche au chalut » en français et la pêche au feu en arabe, en 1995 comme en 1999 — deux métiers distincts ; la ligne des ovins comprend en arabe les caprins ; l'horticulture de plein champ de 1999 y est la floriculture.
 
@@ -182,16 +156,13 @@ La caisse peut réduire les cotisations principales de l'employeur « qui accomp
 
 Elle est plafonnée : « la réduction du taux de cotisation principale, pour tout employeur, ne peut dépasser 25% » [@decret95-538, art. 24]. Appliquée dès le trimestre qui suit la décision, elle est « accordée pour une année renouvelable », au vu d'un rapport motivé et après avis des deux inspections ; elle peut être suspendue ou supprimée « à tout moment » si l'une des conditions vient à manquer, après avis des deux inspections [@decret95-538, art. 25 et 26].
 
-| Mesure | Quotité, en proportion des cotisations principales | Condition | Prise d'effet et durée | Article |
-|---|---|---|---|---|
-| Cotisation supplémentaire | 50 % | manquement non corrigé dans le délai notifié par la caisse | à compter du trimestre qui suit l'expiration de la mise en demeure, jusqu'à sa suppression | 16, 17, 19 et 20 |
-| Cotisation supplémentaire doublée | 50 %, doublés | mesures non exécutées dans les six mois qui suivent l'expiration du délai, ou récidive dans les trois ans pour un risque de même nature | — | 17 |
-| Cotisation supplémentaire portée à 100 % | 100 % | refus ou négligence persistant six mois après l'application de la majoration de l'article 17 | — | 18 |
-| Réduction | 25 % au plus | quatre conditions cumulatives, dont une baisse sensible des accidents du travail ou des maladies professionnelles | dès le trimestre qui suit la décision, pour un an renouvelable ; suspension ou suppression à tout moment | 22 à 26 |
-
-: Majoration et réduction de la cotisation d'accidents du travail et de maladies professionnelles, depuis le 1^er^ janvier 1995 [@decret95-538, art. 16 à 20, 22 à 26 et 28] {#tbl-atmp-modulation tbl-colwidths="[18,16,30,26,10]"}
-
-<!-- TODO (rédacteur) : remplacer par un tableau engendré quand ces quotités seront portées en amont (openfisca-tunisia#471). -->
+```{python}
+#| echo: false
+#| output: asis
+table("atmp_modulation",
+      "Majoration et réduction de la cotisation d'accidents du travail et de maladies professionnelles, depuis le 1^er^ janvier 1995 [@decret95-538, art. 16 à 20, 22 à 26 et 28]",
+      "tbl-atmp-modulation", colonnes='tbl-colwidths="[18,16,30,26,10]"')
+```
 
 ### Le recours {#sec-cot-at-modulation-recours}
 
@@ -266,8 +237,6 @@ Elle signale un accord d'échange de données entre les deux caisses, de 2011, p
 La Cour des comptes fait les mêmes constats pour la période 2015-2019 : l'accord conclu en 2011 entre les deux caisses n'était pas mis en œuvre à la fin d'avril 2020 ; des taux n'étaient pas mis à jour ; des corrections de codes demandées par la CNAM à la CNSS depuis 2014 n'étaient pas toutes faites, au détriment du régime dans certains cas et des entreprises dans d'autres [@courdescomptes2021-rapport32, p. 20]. Ces constats, établis sur des échantillons, valent pour la période contrôlée. La situation a évolué depuis dans le bon sens : la CNAM a repris le classement des employeurs et la mise à jour des taux de cotisation (précision de la même relectrice).
 
 Ces constats commandent la lecture de toute statistique par activité : l'activité sous laquelle un accident est compté, comme celle dont l'employeur acquitte le taux, peut différer de son activité réelle.
-
-<!-- TODO (modeliste) : les salaires forfaitaires des articles 4 à 7 du décret n° 95-538, celui du décret n° 2000-1439 et la modulation des articles 10 à 27 ne sont pas portés par le modèle : openfisca-tunisia#471 (le décret n° 2000-1439 est à y ajouter). -->
 
 ## Les travailleuses agricoles {#sec-cot-at-travailleuses-agricoles}
 

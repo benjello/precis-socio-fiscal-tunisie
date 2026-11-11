@@ -1,0 +1,9 @@
+- libelle: الاشتراك الإضافي
+  parametre: parameters/prelevements_sociaux/atmp_modulation/cotisation_supplementaire.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_modulation.cotisation_supplementaire/table/
+- libelle: الحد الأقصى للاشتراك الإضافي
+  parametre: parameters/prelevements_sociaux/atmp_modulation/cotisation_supplementaire_maximum.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_modulation.cotisation_supplementaire_maximum/table/
+- libelle: الحد الأقصى للتخفيض
+  parametre: parameters/prelevements_sociaux/atmp_modulation/reduction_maximum.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_modulation.reduction_maximum/table/
