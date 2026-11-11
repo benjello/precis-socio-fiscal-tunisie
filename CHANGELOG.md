@@ -5,6 +5,8 @@
 
 ### ✨ Nouveautés
 
+* **santé:** densifier le volume : histoire, couverture GHED, hôpital, médecine de ville ; glossaire 3 → 31 notions ([#794](https://github.com/benjello/precis-socio-fiscal-tunisie/issues/794))
+* **éducation:** figure des diplômés du supérieur (série INS 2001-2023 reconstituée), histoire institutionnelle et documentation ([#795](https://github.com/benjello/precis-socio-fiscal-tunisie/issues/795)) ; glossaire de l'histoire et correctifs ([#797](https://github.com/benjello/precis-socio-fiscal-tunisie/issues/797))
 * **annexe budget:** circuit complet, exécution et « qui dépense » ([#786](https://github.com/benjello/precis-socio-fiscal-tunisie/issues/786)) ([3eb648c](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/3eb648ccd172b7e55e364e633bda48a58121fced))
 * **annexes:** désagréger le budget et la séquence des comptes par secteur ([#783](https://github.com/benjello/precis-socio-fiscal-tunisie/issues/783)) ([9d18c78](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/9d18c780a0c08355db39cfda6c5404274365b396))
 * **volumes:** accroches vers l'annexe budget (poids des dispositifs) ([#791](https://github.com/benjello/precis-socio-fiscal-tunisie/issues/791)) ([b617d6d](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/b617d6d3d77aeefc9ac64bc8031436585372b9a1))
