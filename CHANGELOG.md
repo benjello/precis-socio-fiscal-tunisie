@@ -1,5 +1,20 @@
 # Changelog
 
+## [1.31.0](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.30.0...v1.31.0) (2026-11-11)
+
+
+### ✨ Nouveautés
+
+* **transport:** le volume « Le transport » (politique sectorielle) : institution et tutelle, dépense des missions, infrastructure et fonds des autoroutes, ferroviaire, urbain, aérien et maritime ([#796](https://github.com/benjello/precis-socio-fiscal-tunisie/issues/796))
+* **caisses:** la longue période des trois caisses — quatre séries construites : S1314 (INS 2001-2025), versements du budget (1985-2004), CNSS post-2004, CSS/CNRPS ([#798](https://github.com/benjello/precis-socio-fiscal-tunisie/issues/798))
+* **cotisations:** tableaux AT/MP engendrés depuis openfisca-tunisia 0.163 (salaires forfaitaires, journées, modulation) ; prévoyance CNRPS depuis 1973 ([5921962](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/5921962bafc2d2e30bba9ea496cbe6a15c161f17))
+
+
+### 🐛 Corrections de bugs
+
+* snapshots cnrps-ratios-charges-produits et cnrps-ue-jumelage-2021 au cache (rendu CI autonome de la figure CSS CNRPS) ([2b46cc1](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/2b46cc1191e36e203b0d23467010e13d4d149592))
+* snapshots cnrps-ratios-charges-produits et cnrps-ue-jumelage-2021 manquants au cache (rendu CI fr/caisses cassé par la figure CSS CNRPS) ([#802](https://github.com/benjello/precis-socio-fiscal-tunisie/issues/802)) ([e47b48c](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/e47b48c6ff8582d23bb85a77bd9e3b4b4b088dad))
+
 ## [1.30.0](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.29.0...v1.30.0) (2026-11-11)
 
 
