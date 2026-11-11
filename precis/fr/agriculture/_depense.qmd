@@ -129,7 +129,42 @@ encouragements sont désormais fondus dans le budget de la mission
 ne nomme un fonds ni une prime : le lien entre la ligne budgétaire et un instrument précis
 d'incitation n'est pas établi par le libellé.
 
-<!-- TODO (bibliographe) : verser au references.json du livre les lois de finances 2010-2019 (tableaux de crédits de programmes) pour sourcer au mot les montants des trois séries d'encouragement, aujourd'hui relevés mais non citables faute de clés. -->
+Les montants, en millions de dinars courants (aucune année de référence n'autorise un
+passage en dinars constants), sont les suivants.
+
+| Année | Ligne unique « secteur de l'agriculture et de la pêche » (MD) |
+|---|---|
+| 2010 | 119,3 |
+| 2011 | 120,4 |
+| 2012 | 138,5 |
+| 2013 | 142,9 |
+
+: Crédits d'encouragement à l'agriculture, premier découpage (ligne unique « secteur »), lois de finances 2010-2013 [@lf-2010 ; @lf-2011 ; @lf-2012 ; @lf-2013] {#tbl-agri-encouragements-1}
+
+| Année | Ligne « investissement dans le secteur agricole et de la pêche » (MD) |
+|---|---|
+| 2014 | 70,0 |
+| 2015 | 70,0 |
+| 2016 | 79,0 |
+
+: Crédits d'encouragement, deuxième découpage (ligne « investissement » restreinte), lois de finances 2014-2016 [@lf-2014 ; @lf-2015 ; @lf-2016] {#tbl-agri-encouragements-2}
+
+| Ligne (depuis 2017) | 2017 (MD) | 2019 (MD) |
+|---|---|---|
+| Production agricole | 48,0 | 75,5 |
+| Pêche et aquaculture | 7,0 | 10,4 |
+| Hydraulique | 24,0 | 27,1 |
+| Résidu de l'ancienne ligne « investissement » | 2,0 | — |
+
+: Crédits d'encouragement, troisième découpage (quatre lignes thématiques), lois de finances 2017 et 2019 [@lf-2017 ; @loi2018-56-lf2019] {#tbl-agri-encouragements-3}
+
+::: {.note-lecture}
+Trois découpages successifs qui **ne se chaînent pas** : la ligne unique « secteur »
+(2010-2013) et la ligne « investissement » (2014-2016) n'ont pas le même périmètre, et le
+faisceau de quatre lignes ouvert en 2017 ne s'additionne pas aux précédentes sans double
+compte. On ne peut donc pas lire ces chiffres comme une évolution continue de la dépense
+d'encouragement.
+:::
 
 <!-- TODO (documentaliste) : établir, le cas échéant, le texte fondateur du fonds spécial de développement de l'agriculture (FOSDA) et son rapport au « fonds de développement agricole » supprimé par la loi de finances pour 1995 (fiche r-agri-fosda-fonds-special-developpement à ouvrir). -->
 

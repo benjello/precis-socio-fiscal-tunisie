@@ -991,6 +991,35 @@
       "note": "citation-key: CtamaEF2018\nAvis des sociétés du Conseil du marché financier. Copie tunisia-data data/raw/ctama/ ; SHA-256 790fb574…ef8896e0. Consulté le 10 novembre 2026."
     },
     {
+      "id": "CtamaEF2020",
+      "type": "report",
+      "title": "États financiers au 31 décembre 2020",
+      "author": [
+        {
+          "literal": "Caisse tunisienne d'assurances mutuelles agricoles"
+        }
+      ],
+      "publisher": "Conseil du marché financier",
+      "issued": {
+        "date-parts": [
+          [
+            2021
+          ]
+        ]
+      },
+      "URL": "https://www.cmf.tn/sites/default/files/pdfs/emetteurs/informations/rapports-societes/ctama_efd311220.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            10
+          ]
+        ]
+      },
+      "note": "citation-key: CtamaEF2020\nAvis des sociétés du Conseil du marché financier. Encaissements des primes reçues des assurés : 100 092 143 DT (2019), 123 092 958 DT (2020). Copie tunisia-data data/raw/ctama/ctama-etats-financiers-2020.pdf ; SHA-256 7ad2e2d5b88c32f14db91ef52b0ad2cf2ac6eb2edac2b58b08acd3502ea66b1e. Consulté le 10 novembre 2026."
+    },
+    {
       "id": "decret-74-847-crda",
       "type": "legislation",
       "title": "Décret n° 74-847 du 4 septembre 1974, portant création de commissariats régionaux au développement agricole",
