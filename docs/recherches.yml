@@ -3289,6 +3289,33 @@
     couvert_jusqu_au: 2026-10-15
     resultat: aucun
 
+- id: r-sante-medecin-famille-modalites
+  objet: texte donnant les modalités pratiques du parcours de médecin de famille prévu par l'art. 20 de la convention sectorielle des médecins de libre pratique de 2007 (avenant d'application, décret ou arrêté sur la coordination des soins et les situations exceptionnelles d'accès direct), et contenu de l'avenant n° 7 (conclu le 4 avril 2012, approuvé par arrêté du 13 juin 2012, JORT n° 49 p. 1502, publié sans son annexe)
+  ou: [precis/fr/sante/_medecine_ville.qmd#sec-ville-medecin-famille]
+  requetes:
+    titres_fts:
+    - avenant medecins libre pratique
+    - parcours soins coordonne medecin famille
+    titres_like:
+    - '%avenant%médecins de libre pratique%'
+    - '%parcours%coordonné%'
+    iort_ar:
+    - الاتفاقية القطاعية لأطباء الممارسة الحرة
+    - ملحق عدد 8
+    - طبيب العائلة
+    - مسار العلاج
+    depuis: 2007-02-13
+  passes:
+  - date: 2026-11-10
+    role: documentaliste
+    sources: [jort_cache, corpus_local]
+    couverture: 'avenants n° 1 à 7 (2007-2012) lus ; aucun ne porte les modalités du parcours ; avenant n° 7 publié sans son annexe ; avenant n° 8 absent de jort_cache (titres fr) ; intitulés arabes et édition arabe non encore parcourus.'
+    couvert_jusqu_au: 2012-06-22
+    resultat: aucun
+  a_faire:
+  - lire l'édition arabe des fascicules 2008-2013 (intitulés arabes, avenant n° 8)
+  - avenant n° 9 de 2020 (JORT n° 48, pp. 1139-1141), recueil CNAM des conventions et avenants
+
 - id: r-prix-gaz-commercial-concessions-apres-2000
   objet: texte modifiant ou remplaçant le décret n° 2000-1027 du 15 mai 2000 (prix du gaz commercial écoulé sur le marché local par les titulaires de concessions d'exploitation d'hydrocarbures), et conventions particulières de prix, dont celle du champ de Miskar (0,85 fois le fuel à haute teneur en soufre selon l'ANER, p. 29, contre 0,80 pour Franig et Baguel et 80 % de ce prix dans le décret)
   ou: [precis/fr/compensation/_electricite_gaz.qmd#sec-compensation-eg-longue-periode]
@@ -3368,6 +3395,12 @@
     couverture: 'corpus local, édition française : sommaires des fascicules n° 59 à 83 de 1982 lus à l''image (rubriques de l''Enseignement supérieur, de l''Éducation nationale et du Premier ministère) : aucun arrêté de montant de bourse ; n° 84 (loi de finances et décrets du 31 décembre) parcouru par jort_cache seulement (100 notices, aucune sur les bourses) ; jort_cache, LIKE « %bourse% » et « %Enseignement Superieur% » sur 1982 et 1983 : rien. Avec la passe du 17 octobre (n° 55 à 58), toute l''édition française postérieure au 20 août 1982 est couverte ; l''arrêté peut n''avoir paru qu''en arabe ou n''avoir pas été publié. Lacunes : édition arabe de 1982 non lue ; 1983 à août 1990 seulement par jort_cache'
     couvert_jusqu_au: 1982-12-31
     resultat: aucun
+  - date: 2026-11-10
+    role: documentaliste
+    sources: [corpus_local, jort_cache]
+    couverture: 'corpus local, édition ARABE : sommaires (pages 1-3, OCR tesseract ara, psm 6) de tous les fascicules de 1982 n° 56 à 84 (après le 20 août) et de 1983 à 1987 en entier (29 + 425 = 454 fascicules) océrisés et criblés pour منحة / المنح / التعليم العالي. Aucun arrêté fixant les montants mensuels de la bourse nationale : les occurrences de منحة relèvent toutes d''indemnités de fonction (منحة التكاليف البيداغوجية, منحة كيلومترية, منحة القضاء, منحة المركز, منحة السكن...) ; le seul texte bourses d''études trouvé est l''arrêté du 28 juillet 1986 (المنح القومية, JORT n° 44 de 1986), postérieur et déjà connu. L''édition française postérieure au 20 août 1982 ayant déjà été couverte jusqu''à fin 1982, et l''arabe 1982-1987 l''étant désormais, l''arrêté du 20 août 1982 n''a pas paru au JORT (ni fr ni ar) sur la période ; il n''a vraisemblablement jamais été publié. Lacunes : édition française 1983-1987 non relue page à page (seulement jort_cache), mais l''arabe 1983-1987 est négatif.'
+    couvert_jusqu_au: 1987-12-31
+    resultat: aucun
   a_faire:
   - lire les sommaires de l'édition arabe de 1982 après le 20 août
   - lire les sommaires de l'édition française de 1983 à 1987, au cas d'une publication tardive
@@ -3393,6 +3426,12 @@
     role: documentaliste
     sources: [corpus_local]
     couverture: 'arrêté du 7 avril 1992 (JORT n° 23 de 1992, p. 464) lu à l''image : il fixe le seul plafond du prêt à l''étranger pour 1991-1992 (15 000 D de revenu net imposable), et non celui de la bourse ni du prêt en Tunisie ; aucune autre recherche'
+    couvert_jusqu_au: 2006-01-17
+    resultat: aucun
+  - date: 2026-11-10
+    role: documentaliste
+    sources: [corpus_local, jort_cache]
+    couverture: 'Édition ARABE lue à l''image : arrêté du 28 juillet 1986 (قرار ... بضبط تراتيب اسناد المنح القومية للدراسات العليا والقروض الجامعية, JORT n° 44 de 1986, p. 869) relu à l''image — son art. 3 (الفصل 3) subordonne la bourse nationale (1er et 2e cycles) et le prêt universitaire à ce que le revenu annuel net imposable des parents ne dépasse pas « مقدارا يحدد سنويا بقرار من وزير التعليم العالي » (un montant fixé chaque année PAR ARRÊTÉ du ministre), après abattement de 100 D par enfant à charge non étudiant et de 200/300/400 D pour le 1er/2e/3e enfant étudiant. Ce seuil annuel est donc un arrêté, qui devrait paraître au JORT. Index jort_cache 1988-2005 (titres fr ET ar : bourse, المنح, دخل, مداخيل, سقف, revenus annuels, seuil, plafond) : un SEUL arrêté de seuil de revenu des parents pour la bourse/le prêt trouvé sur toute la période — l''arrêté du 21 août 1990 pour 1990-1991 (JORT n° 55 de 1990), déjà connu. Sommaires arabes des fascicules de rentrée (15 août-15 octobre) océrisés et criblés pour les années témoins 1988 (n° 55-69), 1993 (n° 61-78), 1999 (n° 66-83) et 2004 (n° 66-83) : aucun arrêté de seuil ni de montants de bourse nationale ; les occurrences de دخل sont toutes « الضريبة على دخل » (impôt sur le revenu), تدخل (intervention) ou مدخل (entrée). Conclusion : hormis 1990-1991, les seuils annuels 1986-87 à 2004-05 ne paraissent pas au JORT ; ils sont fixés par une « décision » ministérielle non publiée, à chercher hors Journal officiel (rapports/guides du ministère et des offices des œuvres universitaires). Lacune : OCR exhaustif des 1988-2005 non fait (spot-check sur 4 années + index jort_cache complet).'
     couvert_jusqu_au: 2006-01-17
     resultat: aucun
   a_faire:
@@ -5287,8 +5326,13 @@
     couverture: 'édition arabe du Journal officiel : océrisation (tesseract, modèle ara) des pages 1 et 2 — sommaire et premiers textes — de chacun des 1 251 fascicules de l''édition arabe du corpus local pour 1958-1959, 1972-1981 et 1986-1989, puis recherche des termes الباكالوريا، البكالوريا، الابتدائية، انتهاء الدروس، ختم الدروس، توقيت، توزيع الأوقات، البرامج، تعريب، اللغة الفرنسية، اللغة العربية، الرياضيات ; témoins retrouvés : arrêté du 15 avril 1959 (شهادة انتهاء الدروس الابتدائية, 1959/022), arrêtés du baccalauréat du 16 avril 1981 (1981/028) et du 27 août 1988 (1988/060). Aucun arrêté ni décision de programmes ou d''horaire du primaire, ni texte de 1978 sur la langue du calcul ; seul texte nouveau, sans rapport avec l''horaire : décret n° 86-681 (session exceptionnelle du baccalauréat, 1986/041, p. 798 de l''édition arabe), versé au registre. Lus à l''image dans l''édition française : arrêté du 31 mai 1963 (tableaux I et II, p. 806-807), versé ; arrêté du 25 janvier 1964 portant règlement scolaire des établissements d''enseignement primaire (JORT 1964/005, p. 96-99), dont l''art. 7 renvoie la répartition des horaires de classe à une « décision administrative » et l''art. 9 prescrit l''application des « programmes et horaires d''enseignement officiels », sans les fixer ; décret gouvernemental n° 2019-1085 (horaire de la base), versé. Non couverts : 1960-1971, 1982-1985, 1990-1991 (pages 1 et 2 non océrisées), et le corps des fascicules au-delà de la page 2.'
     couvert_jusqu_au: 1992-06-26
     resultat: aucun
+  - date: 2026-11-10
+    role: documentaliste
+    sources: [corpus_local]
+    couverture: 'édition arabe du Journal officiel, années jusque-là non couvertes : océrisation (tesseract, modèle ara, --oem 1, pages 1 et 2 rendues à 200 dpi) des 1228 fascicules du corpus local pour 1960-1971, 1982-1985 et 1990-1991, puis recherche des termes الباكالوريا، البكالوريا، الابتدائية، انتهاء الدروس، ختم الدروس، توقيت، توزيع الأوقات، البرامج، تعريب، اللغة الفرنسية، اللغة العربية، الرياضيات، قرار وزير التربية القومية. Aucun arrêté ni décision fixant les programmes ou l''horaire de l''enseignement primaire des élèves, ni texte de 1978 sur la langue du calcul. Les occurrences de « الابتدائية » renvoient presque toutes à « المحكمة الابتدائية » (tribunal de première instance) dans les nominations et concours, non à « المدرسة الابتدائية » ; les occurrences de « توقيت » portent sur la durée hebdomadaire de travail des personnels (توقيت العمل الأسبوعي : amendements des décrets n° 126/1973, n° 709/1986, n° 726/1988), non sur l''horaire des élèves ; « تعريب » et « اللغة الفرنسية/العربية » apparaissent dans les épreuves de traduction de concours administratifs (p. ex. concours de secrétaires municipaux, JORT 1964/031, p. 556). Seul texte relatif au primaire reparu : arrêté du 25 mai 1963 sur le certificat de fin d''études primaires (1963/027, déjà au registre). Non couvert : le corps des fascicules au-delà de la page 2.'
+    couvert_jusqu_au: 1992-06-26
+    resultat: aucun
   a_faire:
-  - océriser les pages 1 et 2 de l'édition arabe de 1960-1971, 1982-1985 et 1990-1991 et y chercher les mêmes termes
   - chercher les programmes et horaires officiels publiés par le ministère hors du Journal officiel (Centre national pédagogique, bulletins du ministère), que le règlement scolaire de 1964 désigne comme « programmes et horaires d'enseignement officiels »
   - chercher les arrêtés de concours d'entrée en première année du secondaire (épreuves d'arabe, de français, de calcul) de 1964 à 1994
 
@@ -5315,6 +5359,12 @@
     sources: [corpus_local, jort_cache]
     couverture: 'édition arabe du Journal officiel : océrisation (tesseract, modèle ara) des pages 1 et 2 — sommaire et premiers textes — de chacun des 1 251 fascicules de l''édition arabe du corpus local pour 1958-1959, 1972-1981 et 1986-1989, puis recherche des termes الباكالوريا، البكالوريا، الابتدائية، انتهاء الدروس، ختم الدروس، توقيت، توزيع الأوقات، البرامج، تعريب، اللغة الفرنسية، اللغة العربية، الرياضيات ; témoins retrouvés : arrêté du 15 avril 1959 (شهادة انتهاء الدروس الابتدائية, 1959/022), arrêtés du baccalauréat du 16 avril 1981 (1981/028) et du 27 août 1988 (1988/060). Pour 1972-1980, aucun texte relatif à l''examen du baccalauréat de l''enseignement secondaire dans les sommaires ; le premier est l''arrêté du 16 avril 1981. Lu à l''image dans l''édition française, en dehors de la période : arrêté du 24 mai 1965 (JORT 1965/027, p. 613-614), qui ne touche que les sciences physiques et la deuxième langue vivante étrangère, versé au registre.'
     couvert_jusqu_au: 1981-04-26
+    resultat: aucun
+  - date: 2026-11-10
+    role: documentaliste
+    sources: [corpus_local]
+    couverture: 'édition arabe du Journal officiel, océrisation (tesseract, modèle ara, --oem 1, pages 1 et 2 à 200 dpi) des fascicules de 1982-1985 (et 1990-1991, hors fenêtre) : aucun texte rétroactif retirant au français le caractère d''épreuve obligatoire du baccalauréat, et aucun texte relatif au baccalauréat de l''enseignement secondaire dans les sommaires de 1982-1985. Témoins hors fenêtre confirmant la lignée issue de l''arrêté du 27 août 1988 : arrêté du ministre de l''éducation et des sciences du 23 mars 1991 modifiant l''arrêté du 27 août 1988 relatif à l''examen du baccalauréat de l''enseignement secondaire (JORT 1991/024) et son rectificatif (اصلاح غلط, JORT 1991/030) ; aucun ne touche au statut du français.'
+    couvert_jusqu_au: 1985-12-31
     resultat: aucun
   a_faire:
   - chercher une décision ou une circulaire ministérielle de 1973 citée par les rapports, hors du Journal officiel (bulletins du ministère, presse de 1973)
