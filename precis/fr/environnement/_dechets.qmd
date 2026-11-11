@@ -1,19 +1,37 @@
 # Les déchets {#sec-env-dechets}
 
-Ce chapitre expose le partage de la gestion des déchets entre la commune (collecte, jusqu'aux décharges contrôlées), l'Agence nationale de gestion des déchets et les systèmes publics, et les flux monétaires qui l'accompagnent.
+La gestion des déchets est partagée : la commune en porte la collecte, jusqu'aux décharges contrôlées, tandis que l'[Agence nationale de gestion des déchets](#g-anged) conduit les programmes nationaux, gère les systèmes publics de reprise et prend en charge les déchets dangereux. Ce chapitre expose d'abord ce partage des compétences, puis les flux monétaires qui l'accompagnent, et dit où le financement de l'aval reste, en l'état des textes identifiés, non établi.
 
-<!-- TODO (rédacteur) : rédiger à partir de `docs/notes/environnement-q1-textes-fondateurs.md`
-     (décret n° 2005-2317 : missions et ressources de l'agence ; systèmes publics des sacs et
-     emballages, des huiles et filtres usagés) et des chapitres des finances locales (collecte
-     communale, redevance des déchets non ménagers) et des droits de douane (taxes liées aux
-     déchets). Chapitre faible hors finances locales tant que l'aval (transferts à l'agence,
-     décharges contrôlées) n'est pas établi — voir les lacunes de la note documentaire. -->
+La collecte communale relève des finances locales, où elle est documentée comme compétence propre de la commune : voir le livre « Les finances locales », [chapitre des compétences](../finances_locales/_competences.html#sec-fl-comp-commune).
 
 ## Le partage des compétences {#sec-env-dechets-partage}
 
-<!-- TODO (rédacteur) : carte commune / agence / systèmes publics, pas de droit recopié. -->
+La collecte et le tri des déchets ménagers, jusqu'aux décharges contrôlées, sont une compétence propre de la commune, exercée au titre de ses services publics de proximité — voirie, propreté, enlèvement des ordures. Ce versant communal est domicilié au livre des finances locales ([chapitre des compétences](../finances_locales/_competences.html#sec-fl-comp-commune)).
+
+À l'échelle nationale, l'Agence nationale de gestion des déchets occupe l'autre versant. Établissement public n'ayant pas un caractère administratif placé sous la tutelle du ministère chargé de l'environnement, créée en 2005 et présentée au [chapitre des institutions](./_institutions.html#sec-env-anged), elle conduit les programmes nationaux de gestion des déchets et porte les incitations économiques qui les accompagnent [@decret2005-2317-anged, art. 2-5]. Elle aide les communes à réaliser leurs décharges contrôlées, soutient la collecte et le recyclage, et prend directement en charge les déchets dangereux [@decret2005-2317-anged, art. 2-5].
+
+L'agence gère en outre les systèmes publics de reprise, qui organisent la collecte et la valorisation de flux de déchets particuliers : le système des sacs et des emballages, et le système des huiles et des filtres usagés [@decret2005-2317-anged, art. 2-5]. Ces systèmes réunissent les opérateurs concernés, qui y adhèrent et y contribuent (@sec-env-dechets-flux).
+
+Le partage se lit ainsi comme une carte à deux échelles : la commune pour la collecte de proximité jusqu'aux décharges contrôlées, l'agence pour les programmes nationaux, les systèmes publics de reprise et les déchets dangereux. La charnière entre les deux — la réalisation et l'exploitation des décharges contrôlées, que l'agence appuie sans s'y substituer — est précisément le point où le financement reste le moins établi (@sec-env-dechets-flux).
 
 ## Les flux {#sec-env-dechets-flux}
 
-<!-- TODO (rédacteur) : redevance communale des déchets non ménagers (renvoi finances locales) ;
-     transferts à l'agence (à établir) ; taxes douanières liées aux déchets (renvoi fiscalité). -->
+Les ressources de fonctionnement de l'agence, détaillées au [chapitre des institutions](./_institutions.html#sec-env-anged), mêlent des dotations et subventions du budget de l'État, des emprunts, des ressources propres, des dons et legs, et deux recettes propres à la matière des déchets : les contributions des adhérents aux systèmes publics de reprise et les taxes environnementales relatives à la gestion des déchets [@decret2005-2317-anged, art. 13]. Les contributions des adhérents sont ainsi la contrepartie, pour les opérateurs, de leur participation aux systèmes des sacs et emballages et des huiles et filtres usagés.
+
+Ce que le budget de l'État verse à l'agence — dotations et subventions de fonctionnement, subventions d'investissement [@decret2005-2317-anged, art. 13-14] — est daté et chiffré au [chapitre de la dépense](./_depense.html#sec-env-depense-transferts), parmi les transferts aux établissements sous tutelle ; les montants ne sont pas repris ici.
+
+Deux autres prélèvements liés aux déchets vivent dans d'autres livres et n'entrent ici que par renvoi :
+
+- la redevance d'enlèvement des déchets non ménagers, due par les établissements touristiques, commerciaux et industriels, est un prélèvement communal dont le tarif est arrêté par la collectivité : elle est documentée au livre « Les finances locales », [chapitre des taxes et redevances](../finances_locales/_taxes_redevances.html#sec-fl-moduler-droits) ;
+- les taxes perçues en douane sur certains déchets — la taxe à l'exportation de ferraille et de déchets de métaux, la taxe sur la destruction des articles de friperie — relèvent de la fiscalité : elles sont documentées au livre « La fiscalité », [chapitre des droits de douane](../fiscalite/_droits_douane.html#sec-dd-autres).
+
+## Le financement de l'aval {#sec-env-dechets-aval}
+
+Entre la commune et l'agence, la répartition de la charge financière de l'aval — qui paie la réalisation des décharges contrôlées, leur exploitation, puis le traitement des déchets au-delà de la collecte communale — n'est pas établie par les textes identifiés ici. Le décret fondateur de l'agence énonce une mission d'aide aux communes pour les décharges contrôlées [@decret2005-2317-anged, art. 2-5] sans en fixer les modalités financières ; aucun autre texte identifié ne précise le partage des dépenses entre le budget communal et l'agence. En l'état des textes identifiés, le financement de l'aval des déchets ne peut donc être décrit ici.
+
+<!-- TODO (documentaliste) : établir le financement de l'aval des déchets — modalités des
+     transferts à l'Agence nationale de gestion des déchets au titre des décharges contrôlées,
+     et répartition de la charge (réalisation, exploitation, traitement) entre la commune et
+     l'agence. Voir la lacune Q6 de docs/notes/environnement-plan-livre.md et la note
+     documentaire environnement-q1-textes-fondateurs.md (le décret n° 2005-2317 pose l'aide aux
+     communes sans en fixer les modalités financières). -->

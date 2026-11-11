@@ -1,8 +1,8 @@
 # La dépollution et les fonds {#sec-env-depollution}
 
-Ce chapitre documente l'**emploi** des fonds de la dépollution — ce que le livre apporte en propre, le prélèvement étant domicilié à la fiscalité. Le fonds de dépollution, le fonds de la protection et de l'esthétique de l'environnement et les avantages à la lutte contre la pollution y sont réunis : pour chacun, le texte qui l'ouvre, ce qu'il finance et la série des montants que les lois de finances lui affectent.
+Ce chapitre documente l'**emploi** des fonds de la dépollution — ce que le livre apporte en propre, le prélèvement étant domicilié à la fiscalité. Le [fonds de dépollution](#g-fonds-de-depollution), le [fonds de la protection et de l'esthétique de l'environnement](#g-fonds-protection-esthetique-environnement) et les avantages à la lutte contre la pollution y sont réunis : pour chacun, le texte qui l'ouvre, ce qu'il finance et la série des montants que les lois de finances lui affectent.
 
-La taxe pour la protection de l'environnement, qui alimente le fonds de dépollution, est documentée au livre « La fiscalité », [chapitre des taxes des fonds spéciaux](../fiscalite/_taxes_fonds_speciaux.html#sec-fst-tpe) : son taux, son assiette et ses extensions successives y sont instruits, et ne sont pas repris ici.
+La [taxe pour la protection de l'environnement](#g-taxe-protection-environnement), qui alimente le fonds de dépollution, est documentée au livre « La fiscalité », [chapitre des taxes des fonds spéciaux](../fiscalite/_taxes_fonds_speciaux.html#sec-fst-tpe) : son taux, son assiette et ses extensions successives y sont instruits, et ne sont pas repris ici.
 
 ## Le fonds de dépollution {#sec-env-depollution-fodep}
 
@@ -12,9 +12,32 @@ Ses conditions et ses modalités d'intervention sont fixées par le décret n° 
 
 Le champ d'intervention du fonds s'est élargi au fil des lois de finances. En 2025, l'État y ajoute l'économie verte, bleue et circulaire et alloue une dotation de 20 millions de dinars, prélevée sur le fonds, à une ligne de prêts bonifiés [@lf-2025, art. 66].
 
-### Les montants affectés au fonds {#sec-env-depollution-fodep-montants}
+Chaque loi de finances arrête, au tableau des prévisions de recettes et de dépenses des fonds spéciaux du Trésor, un montant par fonds, équilibré entre recette et dépense. La @fig-env-fodep donne cette prévision pour le fonds de dépollution de 2011 à 2020, en millions de dinars puis en part de la dépense de l'État : dans les deux cas, elle décroît après 2015.
 
-Chaque loi de finances arrête, au tableau des prévisions de recettes et de dépenses des fonds spéciaux du Trésor, un montant par fonds, équilibré entre recette et dépense. Le @tbl-env-fodep-previsions donne cette prévision pour le fonds de dépollution de 2011 à 2020.
+```{python}
+#| label: fig-env-fodep
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import environnement as env
+import figtools
+figtools.figure_tabs(
+    env.vues_fodep(), env.table_fodep(),
+    "env-fodep-previsions", "budget-vote-realise",
+    slug="fig_env_fodep",
+    caption=("Fonds de dépollution : prévision des lois de finances, en millions de dinars "
+             "courants et en part de la dépense de l'État, 2011-2020"),
+    note_lecture=(
+        "Chaque barre est le montant du fonds inscrit au tableau des fonds spéciaux du "
+        "Trésor de la loi de finances de l'année : une prévision votée, équilibrée entre "
+        "recette et dépense, et non un décaissement réalisé. La seconde vue rapporte cette "
+        "prévision à la dépense réalisée de l'État hors service de la dette de la même "
+        "année : numérateur voté et dénominateur réalisé ne se confondent pas, et la part — "
+        "de l'ordre du dixième de pour cent — situe le poids du fonds dans la dépense de "
+        "l'État, sans mesurer son exécution."))
+```
+
+::::: {.chronologie-repliable titre="Fonds de dépollution — prévisions annuelles, lois de finances 2011-2020"}
 
 | Année (loi de finances) | Prévision<br>(dinars) |
 |---|---:|
@@ -31,13 +54,41 @@ Chaque loi de finances arrête, au tableau des prévisions de recettes et de dé
 
 : Fonds de dépollution — prévision de recettes et de dépenses, lois de finances 2011-2020. Montants votés, équilibrés entre recette et dépense ; ce ne sont pas des décaissements réalisés. Source : tableau des fonds spéciaux du Trésor des lois de finances [@lf-2013]. {#tbl-env-fodep-previsions}
 
+:::::
+
 Ces montants sont des prévisions votées, et non des réalisations. Les décaissements effectifs du fonds — les primes versées, année par année — ne figurent pas dans les lois de finances. En l'état des textes identifiés, l'emploi réellement exécuté du fonds n'est donc pas établi.
 
 ## Le fonds de la protection et de l'esthétique de l'environnement {#sec-env-depollution-esthetique}
 
 Le fonds de la protection et de l'esthétique de l'environnement est un second compte spécial du Trésor. L'État le crée par la loi de finances pour 2004, sous le nom de fonds de la propreté de l'environnement et de l'esthétique des villes [@lf-2004], puis lui donne son appellation actuelle par la loi de finances pour 2005 [@lf-2005, art. 18].
 
-Le @tbl-env-esthetique-previsions donne la prévision que les lois de finances lui affectent de 2014 à 2020.
+La @fig-env-esthetique donne la prévision que les lois de finances lui affectent de 2014 à 2020, en millions de dinars puis en part de la dépense de l'État.
+
+```{python}
+#| label: fig-env-esthetique
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import environnement as env
+import figtools
+figtools.figure_tabs(
+    env.vues_esthetique(), env.table_esthetique(),
+    "env-esthetique-previsions", "budget-vote-realise",
+    slug="fig_env_esthetique",
+    caption=("Fonds de la protection et de l'esthétique de l'environnement : prévision des "
+             "lois de finances, en millions de dinars courants et en part de la dépense de "
+             "l'État, 2014-2020"),
+    note_lecture=(
+        "Chaque barre est le montant du fonds inscrit au tableau des fonds spéciaux du "
+        "Trésor de la loi de finances de l'année : une prévision votée, équilibrée entre "
+        "recette et dépense, et non un décaissement réalisé. La seconde vue rapporte cette "
+        "prévision à la dépense réalisée de l'État hors service de la dette de la même "
+        "année : numérateur voté et dénominateur réalisé ne se confondent pas, et la part — "
+        "de l'ordre du centième de pour cent — situe le poids du fonds dans la dépense de "
+        "l'État, sans mesurer son exécution."))
+```
+
+::::: {.chronologie-repliable titre="Fonds de la protection et de l'esthétique de l'environnement — prévisions annuelles, lois de finances 2014-2020"}
 
 | Année (loi de finances) | Prévision<br>(dinars) |
 |---|---:|
@@ -50,6 +101,8 @@ Le @tbl-env-esthetique-previsions donne la prévision que les lois de finances l
 | 2020 | 6 000 000 |
 
 : Fonds de la protection et de l'esthétique de l'environnement — prévision de recettes et de dépenses, lois de finances 2014-2020. Montants votés, équilibrés entre recette et dépense. Source : tableau des fonds spéciaux du Trésor des lois de finances [@lf-2013]. {#tbl-env-esthetique-previsions}
+
+:::::
 
 Comme pour le fonds de dépollution, ces montants sont des prévisions votées ; les décaissements réalisés ne figurent pas dans les lois de finances.
 

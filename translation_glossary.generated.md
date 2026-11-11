@@ -23,6 +23,8 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Agence de réhabilitation et de rénovation urbaine | وكالة التهذيب والتجديد العمراني | ARRU |
 | Agence foncière d'habitation | الوكالة العقارية للسكنى | AFH |
 | Agence foncière industrielle | الوكالة العقارية الصناعية | AFI |
+| Agence nationale de gestion des déchets | الوكالة الوطنية للتصرف في النفايات | ANGed |
+| Agence nationale de protection de l'environnement | الوكالة الوطنية لحماية المحيط | ANPE |
 | Agence nationale pour l'emploi et le travail indépendant | الوكالة الوطنية للتشغيل والعمل المستقل | ANETI |
 | Agence technique des transports terrestres | الوكالة الفنية للنقل البري | ATTT |
 | Agence tunisienne de la formation professionnelle | الوكالة التونسية للتكوين المهني | ATFP |
@@ -334,6 +336,8 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Fonctions astreignantes | الوظائف المرهقة |  |
 | Fonds commun des collectivités locales | المال المشترك للجماعات المحلية | FCCL |
 | Fonds de commerce | الأصول التجارية |  |
+| Fonds de dépollution | صندوق إزالة التلوث | FODEP |
+| Fonds de la protection et de l'esthétique de l'environnement | صندوق حماية وجمالية البيئة |  |
 | Fonds de promotion de la formation professionnelle et de l'apprentissage | صندوق النهوض بالتكوين والتدريب المهني |  |
 | Fonds de promotion du logement pour les salariés | صندوق النهوض بالمسكن لفائدة الأجراء |  |
 | Fonds de protection sociale des travailleuses agricoles | صندوق الحماية الاجتماعية للعاملات الفلاحيات |  |

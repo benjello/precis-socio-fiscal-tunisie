@@ -26,9 +26,8 @@ book:
     - _dechets.qmd
     - _depollution.qmd
     - _rapports_etudes.qmd
-  # appendices:
-  #   - _glossaire.qmd   # TODO (terminologue) : glossaire engendré par build_glossary.py
-  #                      #   une fois les termes versés dans precis/glossaire.yml (chantier santé).
+  appendices:
+    - _glossaire.qmd   # engendré par scripts/build_glossary.py — ne pas éditer à la main.
 
 bibliography:
   - references.json
@@ -40,6 +39,7 @@ format:
   html:
     theme: [cosmo, ../../legendes.scss]
     include-after-body:
+      - _glossaire.infobulles.html
       - ../../legendes.html
     fig-cap-location: top
     tbl-cap-location: top

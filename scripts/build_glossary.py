@@ -52,6 +52,7 @@ BOOKS = [
     "sante",
     "education",
     "informel",
+    "environnement",
 ]
 
 LANGS = ("fr", "ar")
