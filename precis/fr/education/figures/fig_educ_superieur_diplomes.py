@@ -101,8 +101,10 @@ def vues():
                dec=1, coupures=(2003,))
     pic = float(tot[2009]) / 1000
     ax.annotate(figtools.fig_text("pic 2009-10 : dernières maîtrises\nde l'ancien régime et 1res cohortes LMD"),
-                xy=(2009, pic), xytext=(2010.4, pic - 6), fontsize=7, color="#57606a",
-                ha="left", va="top", arrowprops=dict(arrowstyle="-", color="#57606a", lw=0.8))
+                xy=(2009, pic), xytext=(2010.4, pic - 7), fontsize=8, color="#1b1f24",
+                ha="left", va="top",
+                bbox=dict(boxstyle="round,pad=0.3", fc="white", ec="#c3cad1", lw=0.6, alpha=0.9),
+                arrowprops=dict(arrowstyle="-", color="#1b1f24", lw=0.9))
     fd._rupture(ax, 2003, "diplômés par filière (public) ; avant : admis de juin par secteur", 0)
     fd._habille(ax, "Milliers de diplômés", 2001, 2022, ymin=0)
     ax.set_xlabel(figtools.fig_text("Année universitaire commençant en"), fontsize=8)
