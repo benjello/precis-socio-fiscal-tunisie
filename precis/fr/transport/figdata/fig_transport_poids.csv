@@ -1,0 +1,19 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-11-11
+# séries (tunisia_data) : budget-missions-execute, denominateurs-depenses-etat-pib
+# sources (citation) : @gbo-rap-missions, @minfin-remunerations, @minfin-indicateurs-fp, @ins-cnat-2015, @wb-wdi
+# fiches : sources/jort-lois-de-finances-fonds-credits.md
+# méthode/hypothèses : LE PIB N'EST JAMAIS CHAÎNÉ : segment_pib change en 1986, 1992, 1997, 2002, 2005, 2010 et 2025 ; une part du PIB se trace par segments. 1984-1985 : PIB de la Banque mondiale, bases accolées non raccordées ; 1986-1991 : PIB du ministère des Finances, base 1983 PRÉSUMÉE ; 2002-2004 et 2025 : valeur propre au ministère, rattachée à aucune base ; 2010-2014 : base 2015 rétropolée par l'INS. Les dépenses de l'État sont des RÉALISATIONS : rapportée à elles, une prévision de loi de finances donne un ordre de grandeur, non une exécution. AUCUNE DÉPENSE DE L'ÉTAT AVANT 1986.
+# note : La dépense budgétaire exécutée des deux missions du secteur — Transport et Équipement et Habitat —, 2018-2023 : crédits de paiement payés, en millions de dinars courants, en part des dépenses de l'État (hors service de la dette) et en part du PIB en base 2015
+Année,Mission,Régime,Dépense exécutée (millions de dinars),En % des dépenses de l'État hors dette,En % du PIB,Dépenses de l'État hors dette (millions de dinars),PIB en base 2015 (millions de dinars)
+2018,Mission Équipement et Habitat,paiements seuls,1440.8,4.8,1.28,29822.5,112985.5
+2018,Mission Transport,paiements seuls,640.0,2.1,0.57,29822.5,112985.5
+2019,Mission Équipement et Habitat,paiements seuls,1262.5,3.9,1.03,32672.9,122969.3
+2019,Mission Transport,paiements seuls,616.3,1.9,0.5,32672.9,122969.3
+2020,Mission Équipement et Habitat,LOB 2019 (hors ressources propres),1609.7,4.3,1.35,37702.9,119502.1
+2020,Mission Transport,LOB 2019 (hors ressources propres),808.0,2.1,0.68,37702.9,119502.1
+2021,Mission Équipement et Habitat,LOB 2019 (hors ressources propres),1446.9,3.6,1.1,40234.1,131544.6
+2021,Mission Transport,LOB 2019 (hors ressources propres),705.6,1.8,0.54,40234.1,131544.6
+2022,Mission Équipement et Habitat,LOB 2019 (hors ressources propres),1423.5,3.1,1.02,46219.2,139444.5
+2022,Mission Transport,LOB 2019 (hors ressources propres),878.2,1.9,0.63,46219.2,139444.5
+2023,Mission Équipement et Habitat,LOB 2019 (hors ressources propres),1603.1,3.3,1.07,48622.6,149793.6
+2023,Mission Transport,LOB 2019 (hors ressources propres),935.5,1.9,0.62,48622.6,149793.6

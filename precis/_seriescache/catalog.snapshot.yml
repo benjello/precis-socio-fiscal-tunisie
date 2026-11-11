@@ -7039,6 +7039,215 @@
   - gbo-rap-missions
   source_ligne: Rapports annuels de performance des missions du budget de l'État (gbo.tn
     et ministères), dépouillement 2026.
+- id: ins-comptes-organismes-securite-sociale
+  titre: Comptes des organismes de sécurité sociale (secteur S1314), INS, série retenue
+    2001-2025
+  sources:
+  - ins-cnat-2015
+  build: scripts/extract_cnat_s1314.py:main
+  raw:
+  - data/raw/ins-publications/comptes-de-la-nation
+  output: data/processed/ins-comptes-nationaux/s1314_serie_retenue.csv
+  unite: millions de dinars courants
+  perimetre: sous-secteur consolidé S1314 (administrations de sécurité sociale) ;
+    compte complet (production à financier), consolidé, SANS ventilation par caisse
+    ; édition la plus récente par année dans sa base
+  caveats: 'DEUX SEGMENTS, JAMAIS RACCORDÉS (colonne `segment`) : base 1983 (années
+    2001-2014) et base 2015 (années 2015-2025). La rupture de base est quasi nulle
+    pour ce compte — sur 2015-2017, cotisations, prestations en espèce, capacité de
+    financement, rémunération et transferts sont IDENTIQUES entre bases ; seule la
+    consommation intermédiaire (et, du même montant, la consommation finale et le
+    revenu disponible brut) diffère de ~18-25 MD. 2024 semi-définitif, 2025 provisoire
+    (colonne `statut`). Le compte financier ne se réconcilie ni entre bases ni poste
+    à poste (ligne de bouclage) : hors analyse des caisses. Édition 2003-2007 à police
+    décalée : valeurs validées par croisement avec 2002-2006, mais colonne `sous_ligne`
+    imparfaite. Détail, concordance et invariants : docs/cnat-s1314-comptes-organismes-securite-sociale.md.'
+  titre_ar: حسابات صناديق الضمان الاجتماعي (القطاع S1314)، المعهد الوطني للإحصاء،
+    السلسلة المعتمدة 2001-2025
+  unite_ar: بملايين الدنانير الجارية
+  perimetre_ar: القطاع الفرعي المجمّع S1314 (إدارات الضمان الاجتماعي)؛ حساب كامل (من
+    الإنتاج إلى المالي)، مجمّع، دون توزيع حسب الصندوق؛ أحدث إصدار لكل سنة ضمن أساسها
+  caveats_ar: 'مقطعان لا يوصلان أبداً (العمود segment): أساس 1983 (سنوات 2001-2014)
+    وأساس 2015 (سنوات 2015-2025). انقطاع الأساس شبه معدوم لهذا الحساب — على 2015-2017
+    تتطابق المساهمات والمنافع النقدية وقدرة التمويل والأجور والتحويلات بين الأساسين؛
+    يختلف فقط الاستهلاك الوسيط (وبنفس المقدار الاستهلاك النهائي والدخل المتاح) بنحو
+    18-25 م.د. 2024 شبه نهائي و2025 وقتي (العمود statut). الحساب المالي لا يُطابَق
+    لا بين الأساسين ولا بنداً ببند. إصدار 2003-2007 بخط مُزاح: القيم موثّقة بالمقارنة
+    مع 2002-2006 لكن العمود sous_ligne غير دقيق. التفاصيل: docs/cnat-s1314-comptes-organismes-securite-sociale.md.'
+  fiche: sources/ins-comptes-nationaux-publications.md
+  licences:
+  - 'INS (sources ins-*) : conditions d''utilisation de l''INS, https://ins.tn/en/conditions-utilisation
+    (consultées le 2026-10-27) : réutilisation commerciale et non commerciale, redistribution
+    et transformation autorisées ; citer le producteur et la date de mise à jour,
+    ne pas suggérer une caution officielle ni tromper sur le contenu ; droit tunisien'
+- id: lf-tableau-a-caisses
+  titre: Versements des caisses de sécurité sociale au tableau A (recettes du budget
+    général) des lois de finances, 1985-2005 (prévisions)
+  sources:
+  - lf-1985
+  - lf-1986
+  - lf-1987
+  - loi-87-83-lf-1988
+  - lf-1989
+  - lf-1990
+  - lf-1991
+  - lf-1992
+  - lf-1993
+  - lf-1994
+  - lf-1995
+  - lf-1996
+  - lf-1997
+  - lf-1998
+  - lf-1999
+  - lf-2000
+  - lf-2001
+  - lf-2002
+  - lf-2003
+  - lf-2004
+  - lf-2005
+  build: uv run python scripts/build_lf_tableau_a_caisses.py
+  raw:
+  - sources/transcriptions/lf-tableau-a-caisses.csv
+  output: data/processed/caisses/lf_tableau_a_caisses_1985_2005.csv
+  unite: millions de dinars courants (prévision de loi de finances)
+  perimetre: 'ligne « versements des caisses de sécurité sociale » du tableau A (état
+    des recettes du budget général) de chaque loi de finances de décembre, 1985-2005
+    (21 gestions, 38 lignes). 1985-1994 : trois composantes détaillées (forfait hospitalier
+    CNSS 62-09, forfait hospitalier CNRPS 62-10, contribution au programme des familles
+    nécessiteuses et produit du fonds de collecte FSE 0,5 % 62-13 puis 62-12) ; 1995-2005
+    : une seule ligne agrégée « Versements et contributions des caisses de sécurité
+    sociale » (62-09, puis 230-11 en 1997-2001, puis 30-08 en 2002-2005). Colonnes
+    montant_md (par ligne), total_caisses_md (somme par gestion), segment_perimetre,
+    folio_imprime, page_pdf, cle, url. Lu à l''image au tableau A scanné le 10 novembre
+    2026 (note documentaire du précis).'
+  caveats: 'PRÉVISIONS DE LOI DE FINANCES, JAMAIS DES RÉALISATIONS : les lois de règlement
+    s''arrêtent au titre et n''exposent pas la ligne des caisses (réalisations absentes
+    du JORT, report au backlog). RUPTURE DE PÉRIMÈTRE 1994->1995 PORTÉE, NON LISSÉE
+    : le total détaillé 37,0 MD de 1994 saute à l''agrégat 57,0 MD en 1995 ; les composantes
+    (avant 1995) et l''agrégat (1995+) ne sont jamais raccordés en silence (colonne
+    segment_perimetre), la source ne décompose pas le saut. total_caisses_md exclut
+    la ligne voisine 62-12 « transferts fonds spéciaux » (recette d''ordre, non caisse)
+    ; les codes de ligne sont instables (62-12 sert selon l''année à la contribution
+    familles nécessiteuses ou aux transferts fonds spéciaux) — le suivi se fait par
+    libellé, pas par code. Plateau 57,0 MD de 1995 à 2003, 62,5 MD en 2004-2005. Forfaits
+    hospitaliers déjà inscrits en 1985 (antériorité 1975-1984 non versée). TABLEAUX
+    A SCANNÉS SANS COUCHE TEXTE : lecture à l''image, non océrisés en masse.'
+  titre_ar: دفوعات صناديق الضمان الاجتماعي في الجدول أ (مقابيض الميزانية العامة) لقوانين
+    المالية، 1985-2005 (توقّعات)
+  unite_ar: بملايين الدنانير الجارية (توقّع قانون المالية)
+  perimetre_ar: 'سطر «دفوعات صناديق الضمان الاجتماعي» في الجدول أ (مقابيض الميزانية
+    العامة) من كل قانون مالية، 1985-2005 (21 سنة تصرّف، 38 سطرًا). 1985-1994: ثلاثة
+    مكوّنات مفصّلة (المعلوم الاستشفائي للصندوق الوطني للضمان الاجتماعي 62-09، والمعلوم
+    الاستشفائي للصندوق الوطني للتقاعد والحيطة الاجتماعية 62-10، ومساهمة برنامج العائلات
+    المعوزة وحصيلة صندوق جباية المساهمة 0,5٪ 62-13 ثم 62-12)؛ 1995-2005: سطر مجمّع
+    واحد (62-09 ثم 230-11 ثم 30-08). قُرئت من صورة الجدول الممسوح.'
+  caveats_ar: 'توقّعات قانون المالية وليست تنفيذًا: قوانين ختم الميزانية تقف عند مستوى
+    العنوان ولا تُظهر سطر الصناديق. انقطاع في النطاق 1994->1995 مثبَّت لا مُملَّس:
+    المجموع المفصّل 37,0 م.د لسنة 1994 يقفز إلى المجمّع 57,0 م.د سنة 1995؛ المكوّنات
+    والمجمّع لا يُوصَلان في صمت (عمود segment_perimetre). المجموع يستثني سطر 62-12
+    «تحويلات الأموال الخاصة». رموز الأسطر غير مستقرة: المتابعة بالتسمية لا بالرمز.
+    الجداول أ ممسوحة دون طبقة نص: قراءة من الصورة.'
+  fiche: sources/lf-tableau-a-caisses.md
+- id: cnss-produits-charges-techniques
+  titre: 'CNSS : produits techniques et charges techniques, tous régimes, 2000-2020'
+  sources:
+  - cnss-chiffres
+  - minfin-ep
+  build: scripts/build_cnss_produits_charges_techniques.py:main
+  raw:
+  - data/processed/caisses/cnss_cotisations_2000_2020.csv
+  - data/raw/caisses/cnss/2020/12_Évolution_des_dépenses_des_régimes_de_sécurité_s.pdf
+  - data/raw/caisses/cnss/2020/01_Etats_Financiers.pdf
+  - data/raw/caisses/cnss/2020/03_Budget.pdf
+  - data/raw/caisses/cnss/annuaires/annuaire2010.pdf
+  - data/raw/caisses/cnss/annuaires/annuaire2013fr.pdf
+  - data/raw/caisses/cnss/annuaires/annuaire_statistique_2016_ar.pdf
+  - data/raw/caisses/cnss/annuaires/annuaire_statistique_2017_ar.pdf
+  - data/raw/caisses/minfin/rapport_ep_LF2024.pdf
+  output: data/processed/caisses/cnss_produits_charges_techniques_2000_2020.csv
+  unite: millions de dinars courants (MD)
+  perimetre: régimes gérés par la CNSS, tous régimes — hors CNRPS et, depuis 2006,
+    hors branches maladie et accidents du travail (CNAM)
+  caveats: 'LE SOLDE TECHNIQUE (produits − charges) N''EST PAS LE RÉSULTAT DE L''EXERCICE
+    : il est égal à la « marge brute (résultat technique) » des états financiers (2018
+    : 3 079 699 − 3 411 951 = −332 252 mD), et le résultat en diffère de 40 à 340
+    MD selon les années (frais de gestion, provisions, placements). Ne JAMAIS déduire
+    le résultat de ces R−D — le résultat est dans `cnss-resultat-exercice`. PRODUITS
+    TECHNIQUES : planche 11 « La CNSS en chiffres » (reprise de `cnss-cotisations`,
+    sans ré-extraction) ; cette planche dite « cotisations » est en fait la série
+    des produits techniques (2017 : 2 794 MD = EF 2 794 297 mD, et non les cotisations
+    hors T.O. 2 774 188 mD). Complets 2000-2020, plus 2021 (مداخيل du rapport EP LF
+    2024). CHARGES TECHNIQUES : prestations servies hors gestion ; la planche 12 (barres
+    empilées) n''a de total lisible en couche texte que pour les deux dernières années
+    de chaque millésime, donc les charges sont renseignées par points sourcés (annuaires
+    « dépenses techniques », états financiers, récapitulatif budget) pour 2009, 2010,
+    2012, 2013, 2015, 2016, 2017, 2018, 2019, 2020 ; TROUS HONNÊTES 2000-2008, 2011,
+    2014 (cases vides, jamais interpolées). RUPTURE DE CHAMP 2006 (CNAM) : produits
+    1 351 → 993 MD sans baisse de taux ; les deux tronçons ne sont pas homogènes.
+    MONTANTS COURANTS, non déflatés. Carte des périmètres et identités : sources/cnss-concordance-perimetres-post-2004.md.'
+  titre_ar: 'الصندوق الوطني للضمان الاجتماعي: المنتوجات الفنية والأعباء الفنية، كلّ
+    الأنظمة، 2000-2020'
+  unite_ar: بملايين الدنانير الجارية
+  perimetre_ar: الأنظمة التي يديرها الصندوق الوطني للضمان الاجتماعي — باستثناء الصندوق
+    الوطني للتقاعد، وباستثناء فرعَي التأمين على المرض وحوادث الشغل منذ 2006
+  caveats_ar: 'الرصيد الفني (المنتوجات ناقص الأعباء) ليس نتيجة السنة المحاسبية: فهو
+    يساوي الهامش الفني في الموازنات المالية (2018: 3 079 699 − 3 411 951 = −332 252
+    ألف دينار)، وتختلف النتيجة عنه بين 40 و340 مليون دينار (مصاريف التصرف والمدخرات
+    والتوظيفات). لا تُستنتج النتيجة أبدًا من هذا الفرق؛ النتيجة في سلسلة cnss-resultat-exercice.
+    المنتوجات الفنية كاملة 2000-2020 (اللوحة 11)، والأعباء الفنية مسجَّلة بنقاط مصدرية
+    (2009-2020) مع ثقوب صادقة 2000-2008 و2011 و2014 دون أيّ استكمال. انقطاع المجال
+    سنة 2006 (التأمين على المرض). المبالغ جارية دون تصحيح للأسعار.'
+  fiche: sources/cnss-concordance-perimetres-post-2004.md
+- id: cnss-resultat-exercice
+  titre: 'CNSS : résultat de l''exercice (solde), lacunaire, 2009-2023'
+  sources:
+  - cnss-chiffres
+  - minfin-ep
+  - minfin-ep-2020
+  build: scripts/build_cnss_resultat_exercice.py:main
+  raw:
+  - data/raw/caisses/cnss/2020/01_Etats_Financiers.pdf
+  - data/raw/caisses/cnss/2020/03_Budget.pdf
+  - data/raw/caisses/cnss/annuaires/annuaire2010.pdf
+  - data/raw/caisses/cnss/annuaires/annuaire2013fr.pdf
+  - data/raw/caisses/cnss/annuaires/annuaire_statistique_2016_ar.pdf
+  - data/raw/caisses/cnss/annuaires/annuaire_statistique_2017_ar.pdf
+  - data/raw/caisses/minfin/Annexe_9_LF2020-Entreprises_publiques.pdf
+  - data/raw/caisses/minfin/annexe9_2022.pdf
+  - data/raw/caisses/minfin/rapport_ep_2023.pdf
+  - data/raw/caisses/minfin/rapport_ep_LF2024.pdf
+  - data/raw/caisses/minfin/rapport_ep_LF2025.pdf
+  output: data/processed/caisses/cnss_resultat_exercice_2009_2023.csv
+  unite: millions de dinars courants (MD)
+  perimetre: CNSS, tous régimes gérés — résultat de l'exercice de la caisse (bilan),
+    pas le seul solde technique
+  caveats: 'SÉRIE LACUNAIRE PAR CONSTRUCTION : la CNSS ne publie pas de résultat annuel
+    continu. Une ligne par (année, source), colonne `retenu` (arbitrage « réalisé
+    le plus récent », les variantes écartées restent, retenu=False) et `statut` (realise
+    / budget / provisoire). LE RÉSULTAT N''EST PAS LE SOLDE TECHNIQUE produits − charges
+    (`cnss-produits-charges-techniques`) : il tient compte des frais de gestion, provisions,
+    placements, polycliniques et facturation CNAM, et s''en écarte de 40 à 340 MD.
+    TROUS HONNÊTES 2005-2008, 2011, 2014 : lignes présentes, valeur VIDE, jamais interpolées
+    (annuaires absents de l''entrepôt, Wayback hors ligne au 10 novembre 2026). AVERTISSEMENT
+    sur 2009-2010 et 2015 : issus d''une « موازنة الصندوق » (budget), pas d''un bilan
+    — fragiles. 2019 = −667 MD lu en couche texte des tableaux arabes EP LF 2022 (p.
+    46) et LF 2023 (p. 78), confirmé par deux éditions (CNSS 2018/2019/2020 = −530/−667/−1071)
+    ; la prévision LF 2021 était −700, à ne pas confondre. 2020 = −1 091,5 (Bilan
+    2020 et EP LF 2024), −1071 des EP LF 2022/2023 écarté. 2023 provisoire. Carte
+    des périmètres : sources/cnss-concordance-perimetres-post-2004.md.'
+  titre_ar: 'الصندوق الوطني للضمان الاجتماعي: نتيجة السنة المحاسبية (الرصيد)، متقطّعة،
+    2009-2023'
+  unite_ar: بملايين الدنانير الجارية
+  perimetre_ar: الصندوق الوطني للضمان الاجتماعي، كلّ الأنظمة المُدارة — نتيجة السنة
+    المحاسبية للصندوق، لا الرصيد الفني وحده
+  caveats_ar: 'سلسلة متقطّعة بطبيعتها: لا ينشر الصندوق نتيجة سنوية متّصلة. سطر لكلّ
+    (سنة، مصدر) مع عمود retenu (ترجيح « أحدث منجَز ») وعمود statut. النتيجة ليست الرصيد
+    الفني (المنتوجات ناقص الأعباء): فهي تأخذ بالاعتبار مصاريف التصرف والمدخرات والتوظيفات،
+    وتختلف بين 40 و340 مليون دينار. ثقوب صادقة 2005-2008 و2011 و2014: الأسطر موجودة
+    بقيم فارغة دون استكمال. تحذير على 2009-2010 و2015 (مصدرها « موازنة الصندوق »،
+    لا موازنة مالية). 2019 = −667 م د مقروءة من الجداول العربية لتقرير المنشآت العمومية
+    (قانون مالية 2022 و2023)، و2020 = −1 091,5. المبالغ جارية.'
+  fiche: sources/cnss-concordance-perimetres-post-2004.md
 - id: education-superieur-diplomes
   titre: Diplômés de l'enseignement supérieur (secteur public), 2001-02 à 2022-23
   sources:
@@ -7116,3 +7325,86 @@
     الخاص الداخلي لا ممول رابع. المبالغ بالدولار الجاري. استُشيرت الواجهة البرمجية
     في 10 نوفمبر 2026.
   fiche: sources/oms-sante-indicateurs.md
+- id: cnrps-ratios-charges-produits
+  titre: 'CNRPS : ratio charges/produits (caisse entière et branche pensions), CSS
+    attribuée et projections du ministère des Affaires sociales, 2017-2030'
+  sources:
+  - mas-rap
+  - mas-pap-2025
+  - minfin-ep-2022
+  - minfin-ep-2023
+  - minfin-ep-2024
+  - minfin-ep-2025
+  - ue-jumelage-retraite-2021
+  build: scripts/extract_cnrps_tutelle.py:ratios
+  raw:
+  - data/raw/caisses/mas
+  - data/raw/caisses/minfin
+  output: data/processed/caisses/cnrps_ratios_charges_produits.csv
+  unite: '% (ratios), millions de dinars (CSS, projections), actifs par pensionné'
+  perimetre: 'indicateur de performance « taux d''équilibre entre les charges et les
+    produits » de la CNRPS (caisse entière, branche pensions) des RAP 2018 à 2023
+    et de la PAP 2025 : réalisations 2017-2023, prévisions, cibles ; CSS attribuée
+    à la CNRPS 2018-2023 relevée dans toutes les sources ; résultat attendu du régime
+    général 2024-2030 (projection actuarielle) ; rapport démographique 1985 et 2023'
+  caveats: 'SÉRIE DE CONTRÔLE, PAS DE NIVEAU. PLUSIEURS LIGNES RETENUES PAR ANNÉE
+    quand les définitions diffèrent (2020, 2022, 2023) : filtrer sur la colonne css
+    en plus de retenu. AVEC OU SANS CSS : rarement dit et contradictoire (colonnes
+    css et base_css) ; 2020 vaut 114,26 / 114,76 (RAP 2020 et 2022) ou 103 / 104 avec
+    la CSS (RAP 2021) ; 2023 : 109,5 / 109,6 avec CSS, 116,4 / 116,8 sans (RAP 2023,
+    p. 30), le tableau mêlant les deux. Contrôle : branche pensions 2019 = 122,09
+    = dépenses ÷ recettes du régime dans cnrps-pensions, donc sans CSS. RAP 2018 :
+    126,2 / 128 réalisés provisoires, 121,4 / 123,3 prévus. CSS RETENUE (annexe 9
+    la plus récente) : 200, 450, 460, 500, 195, 420 MD de 2018 à 2023 ; pour 2020,
+    450 (allocation budgétaire du RAP 2020, non attribuée à la CNRPS) et 500 (renvoi
+    ambigu du RAP 2021) sont gardées et écartées. Le cumul 2018-2022 imprimé (2 150
+    MD) ne concorde pas avec la somme annuelle (1 805). Projections 2024-2030 (−1
+    403 à −4 213 MD) et prévisions 2024-2027 étiquetées comme telles.'
+  titre_ar: 'الصندوق الوطني للتقاعد والحيطة الاجتماعية: نسبة التوازن بين الأعباء والمداخيل
+    (الصندوق وفرع الجرايات) والمساهمة الاجتماعية التضامنية والتوقعات حسب وزارة الشؤون
+    الاجتماعية، 2017-2030'
+  unite_ar: '% (النسب)، ملايين الدنانير (المساهمة والتوقعات)، عدد النشيطين لكل منتفع'
+  perimetre_ar: 'مؤشر «نسبة التوازن بين الأعباء والمداخيل» في التقارير السنوية للأداء
+    2018-2023 والمشروع السنوي للأداء 2025: الإنجازات والتقديرات والقيم المستهدفة؛
+    المساهمة الاجتماعية التضامنية الموجّهة للصندوق 2018-2023؛ النتائج المتوقعة للنظام
+    العام للتقاعد 2024-2030؛ المؤشر الديمغرافي 1985 و2023'
+  caveats_ar: 'سلسلة مراقبة لا سلسلة مستويات. قد يُعتمد أكثر من سطر للسنة نفسها عند
+    اختلاف التعريف (2020 و2022 و2023)، فيجب التصفية حسب عمود css أيضا. نادرا ما يُذكر
+    احتساب المساهمة التضامنية من عدمه، وتتناقض المصادر في ذلك (عمودا css وbase_css).
+    نسبة فرع الجرايات لسنة 2019 (122,09) تساوي النفقات على الإيرادات في منشورات الصندوق،
+    أي دون المساهمة. المساهمة المعتمدة: 200 و450 و460 و500 و195 و420 م د من 2018 إلى
+    2023؛ ولا يطابق المجموع المنشور لسنوات 2018-2022 (2 150 م د) مجموع القيم السنوية
+    (1 805). التوقعات والتقديرات مذكورة بصفتها.'
+  fiche: sources/mas-rap-pap-cnrps.md
+- id: cnrps-ue-jumelage-2021
+  titre: 'CNRPS : assurés, pensionnés et soldes du régime de retraite d''après la
+    fiche de jumelage UE (novembre 2021), 2001-2020'
+  sources:
+  - ue-jumelage-retraite-2021
+  build: scripts/extract_cnrps_tutelle.py:jumelage
+  raw:
+  - data/raw/caisses/minfin/renforcement_regime_retraite.pdf
+  output: data/processed/caisses/cnrps_ue_jumelage_2021.csv
+  unite: personnes, ratio, millions de dinars
+  perimetre: 'fiche de jumelage UE TN 18 ENI SO 01 21 « Renforcement du régime de
+    retraite et sa gouvernance », annexe III, p. 25 : assurés sociaux, pensionnés
+    (retraités + veuves ou veufs) et ratio de dépendance (2001, 2005, 2010, 2015,
+    2018-2020) ; déficit pension 2015-2020, CSS 2018-2020, subvention de l''État 2016-2017
+    et solde'
+  caveats: 'LES ASSURÉS SONT CEUX DE LA CAISSE (égaux à l''unité aux affiliés actifs
+    de cnrps-pensions). LE « DÉFICIT PENSION » NE CONCORDE PAS avec recettes − dépenses
+    du régime de cnrps-pensions (2015 : −408,6 contre −351,8 ; 2019 : −1 184,8 contre
+    −1 015,7 ; 2017 : −747,4 contre −793,2), sans définition publiée. LES « PENSIONNÉS
+    » NE CORRESPONDENT À AUCUN DÉCOMPTE DE LA CAISSE (2020 : 363 563, contre 271 581
+    pensions de retraite et 398 627 de toutes natures). 2020 provisoire. Document
+    de programmation d''un projet de coopération, non une publication statistique.'
+  titre_ar: 'الصندوق الوطني للتقاعد والحيطة الاجتماعية: المضمونون والمنتفعون بجراية
+    وأرصدة نظام التقاعد حسب بطاقة التوأمة للاتحاد الأوروبي (نوفمبر 2021)، 2001-2020'
+  unite_ar: أشخاص، نسبة، ملايين الدنانير
+  perimetre_ar: 'بطاقة التوأمة «تدعيم نظام التقاعد وحوكمته»، الملحق الثالث، ص. 25:
+    المضمونون والمنتفعون (متقاعدون وأرامل) ونسبة الإعالة، وعجز الجرايات 2015-2020
+    والمساهمة الاجتماعية التضامنية ومنحة الدولة والرصيد'
+  caveats_ar: المضمونون هم منخرطو الصندوق نفسهم. لا يطابق «عجز الجرايات» الفرق بين
+    إيرادات النظام ونفقاته في منشورات الصندوق، ولا يطابق عدد المنتفعين أيّ عدد نشره
+    الصندوق. أرقام 2020 وقتية. وثيقة برمجة مشروع تعاون لا نشرية إحصائية.
+  fiche: sources/ue-jumelage-retraite-2021.md

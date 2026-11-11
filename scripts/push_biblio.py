@@ -115,8 +115,11 @@ ROLES = {
 # et donc le rapatriement des 119 références absentes de Zotero.
 # `archive` et `archive_location` suivent le même chemin pour la page web, qui ne les a
 # pas : sans cela, la provenance d'une page disparue se perdait en silence à l'envoi.
+# `number` (numéro de rapport : « ACS18045 » du Livre blanc BM) n'a de champ Zotero
+# natif pour aucun des huit types visés dans cette table ; comme `number-of-pages` pour
+# le rapport, il survit par le champ Extra plutôt que de disparaître en silence à l'envoi.
 VARIABLES_EXTRA = ("issue", "authority", "event-date", "collection-title", "genre",
-                   "number-of-pages", "archive", "archive_location")
+                   "number-of-pages", "number", "archive", "archive_location")
 
 
 def champs_du_type(type_zotero: str, schema: dict) -> set[str]:

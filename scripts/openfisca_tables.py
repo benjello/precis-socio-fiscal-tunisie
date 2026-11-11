@@ -205,7 +205,18 @@ PAQUETS = {
         # et le snapshot ne pourrait être engendré. Aucun chemin déjà lu ne bouge. La borne
         # passe à la 0.157, PAS ENCORE PUBLIÉE à la date de cette PR : tant que #518 n'est pas
         # fusionnée et publiée, aucun générateur ne s'exécute (la borne les refuse tous).
-        "version_minimale": (0, 157),
+        # La 0.163 (PR #523 à #525) verse les salaires forfaitaires AT/MP du décret n° 95-538
+        # (articles 4 à 7, modifiés par les décrets n° 99-1010 et 2000-1439 :
+        # `prelevements_sociaux/atmp_forfaits/`) et la modulation des articles 10 à 27
+        # (`prelevements_sociaux/atmp_modulation/`), et date la cotisation de prévoyance des
+        # agents de la CNRPS au 1er avril 1973 (décret n° 73-91, articles 14 et 16 ; régime
+        # obligatoire maladie du décret n° 2007-1406, article 4 : les séries de
+        # `secteur_public/salarie_cnrps/cotisations_{salarie,employeur}/maladie.yaml`
+        # commencent en 1973). En deçà, les tableaux des forfaits, des journées agricoles et
+        # de la modulation du chapitre AT/MP ne pourraient être engendrés, et le tableau de
+        # la cotisation maladie CNRPS perdrait sa ligne de 1973. La borne passe à la 0.163,
+        # publiée sur PyPI.
+        "version_minimale": (0, 163),
     },
 }
 

@@ -4166,6 +4166,113 @@ Annexes `annexe-budget-etat.qmd` et `annexe-comptes-nation.qmd` : les cinq clés
   fonds partagé). `--verifier` : 0 perte ; `--dry-run` : conversion propre (`dataset`) ;
   `--controle-rangement` : 19 à déclasser **préexistants** (STEG, loi-climat), sans rapport.
 
+## Versement « Environnement » (bibliographe, 11/11/2026)
+
+Versé 14 clés nouvelles dans `precis/fr/environnement/references.json` (fichier créé ;
+livre non encore monté — pas de rendu possible, aucune citation `[?]` à vérifier tant
+qu'il n'y a pas de `.qmd`). Clés **provisoires à rapatrier dans Zotero** (champ Extra
+`citation-key:`), collection « Environnement » à créer :
+
+- Textes fondateurs (Q1) : `loi88-91-anpe`, `loi95-72-apal`, `loi95-73-dpm`,
+  `decret2005-2317-anged`, `decret93-303-meat`, `decret93-304-meat-organisation`,
+  `decret2004-106-transfert-littoral`, `decret2005-2933-medd`,
+  `decret2006-898-medd-organisation`.
+- Fonds (Q4) : `decret-93-2120`, `decret-2005-2636`, `loi-96-24`.
+- Budget (Q3) : `me-cadre-juridique-institutionnel` (webpage), `gbo-rap-environnement` (report).
+
+Toutes les URL `legislation` résolues sur `jort_cache.db` (champ `pdf_fr`, pist.tn FR).
+
+**Réutilisées sans duplication** (ne pas recréer) :
+- Annexe 8 → `minfin-transferts-garanties` (déjà dans `precis/fr/references.json`) ; le
+  candidat `minfin-annexe8-transferts-garanties` de la note Q3 est un doublon, abandonné.
+- Annexe 9 → famille `minfin-ep*` (`minfin-ep`, `minfin-ep-2020/2022/2023/2024/2025`,
+  `minfin-entreprises-publiques-lf2021`) ; candidat `minfin-annexe9-entreprises-publiques`
+  abandonné.
+- `lf-1993/2003/2004/2005/2006/2009/2013/2014/2017/2018/2020/2025` (racine),
+  `omc-2001-g-scm-n-71-tun` (fiscalité) : hérités par la chaîne quand le livre sera monté.
+- Lois ONAS/SONEDE (`loi93-41-onas`, `loi68-22-sonede`, etc.) : restent dans
+  `entreprises_publiques/`.
+
+**Résolu le 11/11/2026 (complément de versement) :**
+- Décret gouv. n° 2020-313 (JORT 43/2020, p. 1042-1049) et décret prés. n° 2022-488
+  (signé le 12/05/2022, JORT 53 du 17/05/2022, p. 1453-1454) : modificatifs du 2006-898,
+  localisés sur `jort_cache.db`, URL pist.tn vérifiées (200 application/pdf), **versés** dans
+  `precis/fr/environnement/references.json` sous `decret2020-313-organisation` et
+  `decret2022-488-organisation` (16 clés au total ; cohérence inter-livres au vert).
+
+**Gap `COLLECTION_TO_BOOK`** (`scripts/sync_biblio.py`) : « environnement » absent du
+mapping. À l'ouverture du livre, créer la collection Zotero « Environnement » et l'ajouter
+au mapping, sinon les items tomberont en « Commun » à la synchro descendante.
+
+**Contrôles de clôture Zotero différés** : `dry-run` / `controle-rangement` du workflow
+`biblio-zotero` non lancés — le livre n'a ni `.qmd` ni collection mappée ; l'usage réel
+(`@clé`) comparé par `controle-rangement` est encore vide. À exécuter au montage du livre,
+avant tout rapatriement.
+## Versement notes communes DGELF — CSS (bibliographe, 04/10/2026)
+
+Trois notes communes de la DGELF versées (type `report`) dans `precis/{fr,ar}/caisses/references.json`,
+contenu identique dans les deux langues. Non encore citées dans la prose : versées pour exister/résoudre
+avant citation. `--verifier` : 0 perte (3558 entrées) ; `--dry-run` des trois clés : conversion propre.
+
+- [ ] **À rapatrier dans Zotero** : `dgi-nc-28-2019`, `dgi-nc-1-2023`, `dgi-nc-1-2026`
+  (collection du livre « caisses »). Clés alignées sur la convention du précis `dgi-nc-N-AAAA`
+  (≠ id de catalogue base législative — voir point à trancher).
+- **Fiche base législative `tunisia-legislative-references` à créer** (metadata-only, `external_path`
+  + `sha256`) pour **NC 28/2019** (SHA-256 `a97be7fb…232a96`, 2 349 286 o) et **NC 1/2026**
+  (SHA-256 `6f89c68c…83a6db`, 189 138 o) : non cataloguées. NC 1/2023 déjà cataloguée sous
+  l'id `note_commune_2023_001` (fichier FR présent).
+- **Point à trancher** : faut-il aligner l'`id` CSL de `dgi-nc-1-2023` sur l'id de catalogue
+  `note_commune_2023_001` (instruction du ticket) ou conserver la convention `dgi-nc-N-AAAA`
+  suivie par la cinquantaine de notes communes du précis ? Conservé `dgi-nc-1-2023` pour la
+  cohérence interne ; id de catalogue consigné dans la `note`.
+- **Lacunes** :
+  - **Date exacte de la NC 1/2023** non relevée sur le document (openfisca : « 26/01/2023 », non
+    vérifié) → `issued` année seule (2023).
+  - **NC 28/2019 et NC 1/2026** : PDF scannés sans couche texte, lus à l'image ; numéro « 1/2026 »
+    et date d'émission non vérifiables sur l'image (identification du documentaliste). `issued`
+    année seule.
+  - **URL publiques inexistantes** pour les trois (notes administratives, hors JORT) : aucune URL,
+    conforme à la règle « on n'invente pas d'URL ».
+
+## Versement séries (2) et (4) du volume caisses (bibliographe, 11/11/2026)
+
+Appui : `docs/notes/caisses-serie-versements-tableau-a-notedoc-2026-11-10.md` (série 2) et
+`docs/notes/caisses-serie-css-repartition-notedoc-2026-11-10.md` + `css-verification.md` (série 4).
+Versées (non encore citées : préparation avant rédaction) dans `precis/{fr,ar}/caisses/references.json`.
+`--verifier` : 0 perte (3565 entrées) ; `--dry-run` : conversion propre des cinq clés ;
+`check_references_coherentes.py` : OK.
+
+- [ ] **À rapatrier dans Zotero** (collection du livre « caisses ») : `minfin-rapport-ep-2022`,
+  `ue-jumelage-retraite-2021`, `mas-rap-cnrps-2022` (type `report`, série 4) ; `reglement-1992`,
+  `reglement-2001` (type `legislation`, témoins du constat négatif de la série 2). Sans
+  `number-of-pages` (défaut historique du 15/09/2026 évité).
+- **URL vérifiées le 11/11/2026** (`curl -k -r 0-2000`) : reglement-1992 FR `Jo02196.pdf` + AR
+  `Ja02196.pdf`, reglement-2001 FR `Jo0602003.pdf` + AR `Ja0602003.pdf` (206, application/pdf) ;
+  annexe 9 LF 2022 `finances.gov.tn/.../ANNEXE_09.pdf` (206 via https) ; RAP 2022 `gbo.tn` (206) ;
+  fiche jumelage `um.fi` → **403 aux robots**, servie au lecteur humain (retéléchargée par
+  tunisia-data le 22/09/2026) : URL d'éditeur conservée, **pas** de capture Wayback (convention).
+
+### Constat : les clés LF des séries (2) et (4) existaient déjà
+Aucune loi de finances n'a eu à être créée : toutes les gestions 1985-2005 et 2002/2022 sont déjà
+au fonds commun FR et AR, sous les clés canoniques `loiNN-NN-lfYYYY` (ex. `loi84-84-lf1985`,
+`loi86-106-lf1987`, `loi-89-115-lf-1990`, `loi2001-123-lf2002`) ou `lf-YYYY` (1993-2005, 2018, 2026),
+et `dl2021-21-lf2022` (art. 12, pp. 3081-3082, série 4). Les `lf-YYYY` 1985-1992/2002/2022 ne
+subsistent qu'en **alias transitoires arabes**. `loi-87-83-lf-1988` porte déjà art. 66-67 et le
+tableau A (62-09/10/13, p. 1640). **La rédaction doit citer les clés canoniques**, non des `lf-YYYY`
+nouveaux : aucun alias FR n'a été recréé (cela irait à rebours de la migration en cours).
+
+### Reports (non versés faute de citation prévue)
+- **Lois de règlement 1985-2004** autres que 1992 et 2001 : non versées (série 2 conclut à leur
+  silence sur la réalisation de la ligne « caisses ») ; à créer seulement si la rédaction en cite
+  d'autres en exemple. Liste complète (loi + fascicule + URL) : note série 2, § 5.
+- **Enrichissement des notes des LF existantes** par le folio du tableau A et la ligne des caisses
+  (série 2, § 2 et § 4) : non appliqué (champ `note` non comparé par le contrôle de cohérence, non
+  requis pour la résolution) ; à verser au fil des citations si utile au lecteur.
+- **Série 4, lacunes de fond** (voir note css-repartition, § 6) : arrêté/décision de répartition de
+  la CSS (L8-a, non identifié au JORT), produit total de la CSS et parts CNSS/CNAM (L8-b, L8-c, non
+  isolés) — aucune référence versable, trou honnête.
+- **`controle-rangement`** (étape de clôture) : non exécutable hors CI (requiert `ZOTERO_API_KEY`,
+  appel API) ; à lancer via le workflow `biblio-zotero` au rapatriement.
 ## Clôture du 10/11/2026 (éducation, bibliographe, densification)
 
 Branche `chantier/education-densification`. Écritures : `precis/fr/education/references.json`
@@ -4210,3 +4317,42 @@ et `precis/fr/references.json` (fonds commun) seulement — l'éducation est FR 
   non résolue, 0 « ?@ » ; `push_biblio --verifier` → 3573 entrées, 0 perte ; `--dry-run` → exit 0,
   aucune `ValueError`. `--controle-rangement` **non lancé** : pas de `ZOTERO_API_KEY` dans
   l'environnement (lecture Zotero en ligne impossible ici) — à rejouer avec la clé.
+
+## Versement bibliographique du livre « transport » (chantier transport, 10 nov. 2026)
+
+`precis/fr/transport/references.json` peuplé : **54 entrées** (format `{"items":[…]}`).
+Contrôles : `check_references_coherentes.py` ✓ ; JSON valide ✓.
+
+- **34 créées (propres au volume)** : org. ministères (decret2014-409/410, decret2016-97,
+  decret88-1413, decret2008-121, decret2018-883, decret2008-512), SPROLS (loi77-53, decret77-926),
+  DR transport (decret2023-456), agences (dl81-22-sntri, dl81-21-metro-tunis, loi57-19-snit,
+  loi92-32-apip), antécédents routiers/autoroutiers (loi86-17, decret87-654, loi76-71, loi81-72,
+  loi90-69, loi90-89), modificatifs org. transports terrestres (loi93-70, loi96-60, loi2006-55,
+  loi78-40, decret2006-2118, decret2006-1470) ; rapports (minfin-pap-transport-2024,
+  minfin-rap-transport-2020, gbo-pap-transport, gbo-pap-equipement-habitat,
+  minfin-budget-equipement-2013/-2014, wb-livre-blanc-transport-2016, cour-comptes-2017-sntri).
+- **20 recopiées verbatim** : de compensation (loi2004-33, decret2001-2621, loi85-77,
+  minfin-budget-transport-2013…-2017, cour-comptes-2008/2016) ; d'entreprises_publiques
+  (decret2000-2406-attt, loi98-111-lf1999, wb-infra-diagnostic-2019, wb-tunisia-gouvernance-ep-2014,
+  loi94-102, loi96-74, decret2015-957-metro-sfax, decret2023-584-afh, loi59-34-ctn, loi81-69-arru —
+  ces 6 derniers existaient déjà dans EP : notes T2/T5 les disaient « à créer », corrigé en recopie).
+- **URLs JORT pist.tn** résolues depuis `jort_cache.db` (champ `pdf_fr`) pour toutes les
+  legislation créées sauf **decret2018-883-organisation-equipement** : `pdf_fr` absent de
+  `jort_cache` → entrée sans URL + TODO (à retrouver sur pist.tn/édition FR).
+- **À rapatrier dans Zotero** : les 34 entrées créées (champ Extra `citation-key: <clé>`). Le livre
+  **`transport` est absent de `COLLECTION_TO_BOOK`** (`scripts/sync_biblio.py`) : créer une
+  collection Zotero « Transport » et l'ajouter au mapping, sinon toute descente écrasera ce fichier.
+- **Clés collectives** `gbo-pap-transport` / `gbo-pap-equipement-habitat` : éditions individuelles
+  (SHA-256, pages) listées dans les notes T4 — à verser si une clé par édition est préférée.
+- **Non recopiées** (fonds commun `precis/fr/references.json`, déjà lu via `../references.json`) :
+  loi89-9, gbo-rap-missions, minfin-transferts-garanties, minfin-finances-publiques-2010,
+  loi2018-56-lf2019-ar, minfin-ep-2020, minfin-entreprises-publiques-lf2021. Comptes EP
+  (minfin-entreprises-publiques-lf2020) laissés au domicile EP (cités par lien, non par @clé).
+
+## 2026-11-11 — décret n° 2023-12 (prorogation unité GES, éducation)
+- Clé `decret2023-12-prorogation-ges` créée dans `precis/fr/education/references.json`
+  (JORT n° 9 du 27 janvier 2023, p. 250 ; recid jort_cache 170908).
+- **URL pist.tn FR manquante** : `pdf_fr` vide dans `jort_cache.db` pour tout le fascicule
+  JORT 2023 n° 9 (seul `pdf_ar` = `/jort/2023/2023A/Ja0092023.pdf` présent). URL FR non
+  renseignée pour ne rien inventer — à compléter dès que le PDF FR du fascicule est mis en
+  cache. **À rapatrier dans Zotero** (citation-key `decret2023-12-prorogation-ges`).

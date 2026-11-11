@@ -1,0 +1,106 @@
+# La dépense publique d'environnement {#sec-env-depense}
+
+Ce chapitre construit la dépense publique d'environnement sur la plus longue période possible : le budget du ministère et les transferts qu'il verse aux établissements sous sa tutelle. Les familles de chiffres restent séparées ; les ruptures de périmètre ministériel sont marquées. Tous les montants sont exprimés en millions de dinars courants.
+
+## Un périmètre ministériel mouvant {#sec-env-depense-perimetre}
+
+Le détail institutionnel — les textes d'attribution, les noms successifs du ministère et les établissements sous tutelle — est établi au chapitre des institutions ([chapitre](./_institutions.html#sec-env-institutions)) ; seul ce qui commande la lecture des séries budgétaires est repris ici.
+
+Le périmètre du ministère chargé de l'environnement a changé de nature à deux reprises, ce qui interdit de lire une série unique d'une année sur l'autre. Trois régimes se succèdent [@me-cadre-juridique-institutionnel] :
+
+- jusqu'en 2016, l'environnement est associé à l'aménagement du territoire puis au développement durable ;
+- de 2016 à 2020, il est annexé aux affaires locales, dont les transferts aux collectivités pèsent plusieurs fois l'environnement proprement dit ;
+- depuis 2021, le ministère de l'environnement est de nouveau autonome.
+
+Chacun de ces régimes forme un périmètre distinct. Le passage de l'un à l'autre déplace le budget sans qu'aucune dépense nouvelle d'environnement n'ait eu lieu : l'entrée des affaires locales entre 2016 et 2017, puis leur sortie entre 2020 et 2021, sont des changements de contour, non des variations de la dépense.
+
+## Vue d'ensemble {#sec-env-depense-ensemble}
+
+<!-- TODO (rédacteur) : remplacer par une figure engendrée via figtools.series() quand les séries
+     seront versées à l'entrepôt. En l'état, les séries sont présentées en tableaux Markdown datés. -->
+
+Deux familles de chiffres, qui ne s'additionnent pas, mesurent la dépense publique d'environnement. La première est le **budget de la mission** inscrit au budget de l'État (@sec-env-depense-ministere) : les crédits de paiement votés et exécutés, hors ressources propres des établissements. La seconde est l'ensemble des **transferts du budget de l'État aux établissements sous tutelle** (@sec-env-depense-transferts), versés aux cinq agences du secteur. Les transferts sont une composante du budget de l'État, mais les deux séries recouvrent des périmètres différents et ne se cumulent pas.
+
+## Le budget de la mission {#sec-env-depense-ministere}
+
+Le budget par objectifs retrace la dépense du ministère sous la forme d'une **mission**. Son périmètre n'est homogène que depuis 2022 : jusqu'en 2020, la mission réunissait les affaires locales et l'environnement — un ensemble trois à six fois plus large, dominé par les transferts aux collectivités, dont les crédits votés allaient de 716,6 MD (2017) à 1 156,9 MD (2020, ramenés à 844,3 MD par la loi de finances complémentaire) ; la scission des affaires locales, intervenue en cours d'exercice 2021, ramène la mission au seul environnement (383,0 MD exécutés cette année-là). Ces montants d'avant 2022 ne se comparent pas à ceux d'après. Le @tbl-env-mission ne retient donc que le périmètre « environnement » proprement dit, de 2022 à 2025.
+
+| Exercice | Crédits votés<br>(MD) | Exécution<br>(MD) |
+|---|---:|---:|
+| 2022 | 350,0 | 350,9 |
+| 2023 | 414,6 | 398,6 |
+| 2024 | 459,4 | n.d. ^(c)^ |
+| 2025 | 466,0 | — |
+
+: Budget de la mission « environnement » — crédits de paiement votés et exécutés, 2022-2025 (millions de dinars courants), à périmètre constant (environnement seul, après la sortie des affaires locales). 2022-2023 : exécution réalisée ; 2024-2025 : crédits votés. Source : rapports annuels de performance et budgets de mission [@gbo-rap-environnement]. {#tbl-env-mission}
+
+À périmètre constant, la mission environnement passe de 350,9 MD exécutés en 2022 à 466,0 MD votés en 2025. ^(c)^ L'exécution de 2024 n'est pas encore disponible, le rapport annuel de performance correspondant n'ayant pas été publié.
+
+## Les transferts aux établissements {#sec-env-depense-transferts}
+
+Le budget de l'État verse chaque année des transferts aux établissements publics placés sous la tutelle du ministère. La @fig-env-transferts en donne le détail par établissement de 2020 à 2025 : chaque barre empile les transferts de l'année, et sa hauteur est le total du ministère.
+
+```{python}
+#| label: fig-env-transferts
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import environnement as env
+import figtools
+figtools.figure_tabs(
+    env.vues_transferts(), env.table_transferts(),
+    "env-transferts-etablissements",
+    slug="fig_env_transferts",
+    caption=("Transferts du budget de l'État aux établissements sous tutelle du ministère "
+             "chargé de l'environnement, par établissement, 2020-2025 (millions de dinars "
+             "courants ; 2025 : loi de finances)"),
+    note_lecture=(
+        "Chaque barre empile, pour une année, le transfert versé à chacun des cinq "
+        "établissements ; sa hauteur est le total du ministère. L'Office national de "
+        "l'assainissement, en bas de pile, domine chaque année. Le creux de l'Agence "
+        "nationale de gestion des déchets en 2022 tient à sa composante d'investissement, "
+        "nulle cette année-là. Les montants de 2020 à 2024 sont des réalisations ; celui de "
+        "2025 est le montant voté en loi de finances, susceptible d'être révisé à la hausse."))
+```
+
+L'[Office national de l'assainissement](#g-onas) absorbe à lui seul de 57 à 76 % des transferts du ministère chaque année, de 173,8 (2020) à 334,5 (loi de finances 2025) : c'est le poste central. L'[Agence nationale de protection de l'environnement](#g-anpe-environnement) reçoit un transfert stable, de l'ordre de 18 à 20 ; le Centre international des technologies de l'environnement de Tunis et l'Agence de protection et d'aménagement du littoral restent faibles. Le transfert à l'[Agence nationale de gestion des déchets](#g-anged) varie fortement d'une année à l'autre, de 3,1 (2022) à 116,4 (2024). Le détail par nature de l'annexe en donne la raison : les autres années, ce transfert est dominé par une composante d'investissement lourde — de 80 à 97 millions de dinars — qui finance les programmes nationaux de gestion des déchets ; en 2022, cette composante est absente (les colonnes de détail correspondantes sont à zéro) et il ne subsiste qu'un reliquat de 3 millions de dinars. La valeur de 2022 est d'ailleurs imprimée à l'identique dans les trois éditions de l'annexe où elle paraît : ce n'est pas une erreur de relevé, mais le creux d'une dépense d'investissement versée par à-coups.
+
+La série commence en 2020. Pour l'Agence nationale de gestion des déchets comme pour les autres établissements, le réalisé dépasse souvent le montant d'abord voté — le transfert de 2024, inscrit à 62,7 en loi de finances, est exécuté à 116,4 —, de sorte que le montant voté de 2025 (47,0) pourra être révisé à la hausse.
+
+::::: {.chronologie-repliable titre="Transferts par établissement, 2020-2025 — montants annuels"}
+
+| Établissement | 2020 | 2021 | 2022 | 2023 | 2024 | 2025 (LF) |
+|---|---:|---:|---:|---:|---:|---:|
+| Office national de l'assainissement | 173,8 | 263,3 | 205,2 | 199,2 | 218,6 | 334,5 |
+| Agence nationale de protection de l'environnement | 17,1 | 18,0 | 18,4 | 18,3 | 18,5 | 20,1 |
+| Agence nationale de gestion des déchets | 86,2 | 99,9 | 3,1 | 92,3 | 116,4 | 47,0 |
+| Centre international des technologies de l'environnement de Tunis | 3,7 | 4,9 | 3,7 | 5,4 | 5,2 | 6,1 |
+| Agence de protection et d'aménagement du littoral | 22,1 | 13,4 | 11,3 | 13,9 | 12,0 | 23,3 |
+| **Total du ministère** | **302,8** | **399,6** | **241,7** | **329,0** | **370,8** | **431,0** |
+
+: Transferts du budget de l'État aux établissements sous tutelle du ministère chargé de l'environnement, 2020-2025 (millions de dinars courants). 2020-2024 : réalisations ; 2025 : loi de finances. Source : rapport sur les transferts et les garanties au profit des entreprises et établissements publics, annexe n° 8 aux lois de finances [@minfin-transferts-garanties]. {#tbl-env-transferts}
+
+:::::
+
+### Office national de l'assainissement : deux séries à ne pas confondre {#sec-env-depense-onas}
+
+L'Office national de l'assainissement figure ici au titre de la dépense d'environnement, mais son statut et ses comptes sont domiciliés au livre « Les entreprises publiques », [chapitre eau et communications](../entreprises_publiques/_eau_communications.html#sec-ep-ge-onas).
+
+Deux annexes des lois de finances chiffrent le transfert de l'État à l'office, selon des périmètres distincts : l'annexe des transferts par établissement [@minfin-transferts-garanties] et le rapport sur les entreprises publiques [@minfin-ep-2024]. Les montants diffèrent, comme le montre le @tbl-env-onas-concordance.
+
+| Année | Annexe des transferts<br>par établissement (MD) | Rapport sur les<br>entreprises publiques (MD) |
+|---|---:|---:|
+| 2020 | 173,8 | 201,3 |
+| 2021 | 263,3 | 222,5 |
+| 2022 | 205,2 | 185,5 |
+
+: Office national de l'assainissement — transfert de l'État selon deux annexes des lois de finances, 2020-2022 (millions de dinars courants). Les deux séries reposent sur des périmètres d'échantillon différents et ne se raccordent pas. Sources : annexe des transferts par établissement [@minfin-transferts-garanties] ; rapport sur les entreprises publiques [@minfin-ep-2024]. {#tbl-env-onas-concordance}
+
+Les deux séries s'écartent de 15 à 40 selon l'année, sans qu'aucune soit l'erreur de l'autre : elles comptent des flux différents. Elles coexistent et ne doivent pas être fusionnées. La mise en regard des deux annexes avec la subvention d'exploitation de l'office fera l'objet d'une note de concordance à venir.
+
+<!-- TODO (rédacteur) : insérer le renvoi à la note de concordance ONAS (annexe des transferts /
+     rapport sur les entreprises publiques / subvention d'exploitation) quand elle sera écrite. -->
+
+### L'eau potable reste à part {#sec-env-depense-sonede}
+
+La [Société nationale d'exploitation et de distribution des eaux](#g-sonede) reçoit elle aussi des transferts de l'État — 80,8 (2020), 171,1 (2022), 224,1 (2023) puis 217,955 (loi de finances 2025) [@minfin-transferts-garanties]. Elle relève toutefois de la tutelle du ministère chargé de l'agriculture, et non de l'environnement : ses transferts ne figurent pas dans le total du ministère de l'environnement. Son statut et ses comptes sont domiciliés au livre « Les entreprises publiques », [chapitre eau et communications](../entreprises_publiques/_eau_communications.html#sec-ep-ge-sonede).

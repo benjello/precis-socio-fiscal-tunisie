@@ -52,7 +52,12 @@ BOOKS = [
     "sante",
     "education",
     "informel",
+<<<<<<< HEAD
     "agriculture",
+=======
+    "transport",
+    "environnement",
+>>>>>>> origin/master
 ]
 
 LANGS = ("fr", "ar")

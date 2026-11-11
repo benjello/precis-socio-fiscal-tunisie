@@ -2,9 +2,9 @@
 
 Deux sources permettent de suivre les comptes des caisses dans le temps, à des niveaux différents.
 
-La rétrospective financière de la CNSS donne, de 1990 à 2004, les ressources, les emplois et le résultat de gestion de chaque régime et de chaque branche, dans la présentation par compte de compensation que la loi impose [@cnss-retrospective-1990-2004] : les figures de ce livre en sont tirées (@fig-cnss-regimes, @fig-cnss-atmp-pst, @fig-cnss-assurances-sociales ; pour les cotisations par branche, [livre « Cotisations sociales »](../cotisations_sociales/_bilan.html#fig-cotisations-branches-1990-2004)). Pour la CNRPS, les états financiers de 2015 à 2018 donnent les recettes et les dépenses de chaque régime [@cnrps-etats-financiers] ; rien de comparable n'est réuni ici pour la CNSS après 2004, ni pour la CNAM.
+La rétrospective financière de la CNSS donne, de 1990 à 2004, les ressources, les emplois et le résultat de gestion de chaque régime et de chaque branche, dans la présentation par compte de compensation que la loi impose [@cnss-retrospective-1990-2004] : les figures de ce livre en sont tirées (@fig-cnss-regimes, @fig-cnss-atmp-pst, @fig-cnss-assurances-sociales ; pour les cotisations par branche, [livre « Cotisations sociales »](../cotisations_sociales/_bilan.html#fig-cotisations-branches-1990-2004)). Pour la CNRPS, les états financiers de 2015 à 2018 donnent les recettes et les dépenses de chaque régime [@cnrps-etats-financiers] ; pour la CNSS après 2004, seuls des comptes d'ensemble, tous régimes confondus, sont réunis ici (@sec-caisses-cnss-post-2004), non le détail par régime, et rien de comparable n'est réuni pour la CNAM.
 
-Les comptes de la nation de l'Institut national de la statistique présentent, dans chaque édition, les comptes de l'ensemble des organismes de sécurité sociale — cotisations reçues, prestations, transferts entre administrations publiques, revenus de la propriété, capacité ou besoin de financement — comme le sous-secteur des administrations publiques que l'Institut nomme « administrations de sécurité sociale » — les [fonds de sécurité sociale](#g-fonds-de-securite-sociale) du système de comptabilité nationale [@ins-cnat-2015]. Ils ne ventilent ces comptes ni par caisse ni par branche. Les transferts reçus d'autres administrations publiques y sont la ligne où s'inscrivent les concours de l'État.
+Les comptes de la nation de l'Institut national de la statistique présentent, dans chaque édition, les comptes de l'ensemble des organismes de sécurité sociale — cotisations reçues, prestations, transferts entre administrations publiques, revenus de la propriété, capacité ou besoin de financement — comme le sous-secteur des administrations publiques que l'Institut nomme « administrations de sécurité sociale » — les [fonds de sécurité sociale](#g-fonds-de-securite-sociale) du système de comptabilité nationale [@ins-cnat-2015] (@fig-caisses-s1314-organismes). Ils ne ventilent ces comptes ni par caisse ni par branche. Les transferts reçus d'autres administrations publiques y sont la ligne où s'inscrivent les concours de l'État.
 
 ## Les régimes de la CNSS, 1990-2004 {#sec-caisses-cnss-regimes}
 
@@ -178,11 +178,190 @@ et prolonger les deux séries au-delà de 2004 — pour les accidents du travail
 CNAM, qui gère le régime depuis la loi n° 2004-71. Les montants de détail de 2000 comprennent
 des estimations en attendant la relecture de l'original papier (tunisia-data#26). -->
 
-<!-- TODO (documentaliste) : construire la série « comptes des organismes de sécurité sociale »
-des éditions des comptes de la nation (2001-2025, rupture de base 1983/2015 à documenter) et
-prolonger après 2004 les comptes de compensation de la CNSS par ses états financiers, pour
-donner ici une vue de longue période des trois caisses (note cadre-budgetaire-comptable-caisses.md,
-§ 3, séries 1 et 4). -->
+## Les comptes de la CNSS après 2004, 2005-2023 {#sec-caisses-cnss-post-2004}
+
+Les comptes par régime que la rétrospective financière de la [CNSS](#g-cnss) donne jusqu'en 2004 (@sec-caisses-cnss-regimes) n'ont pas d'équivalent publié pour les années suivantes : aucune source identifiée ici ne reprend, après 2004, la présentation par compte de compensation. Pour 2005-2023, deux grandeurs d'ensemble, tous régimes confondus, en prennent la suite. Les **produits techniques** sont les cotisations au sens large — cotisations recouvrées, y compris en taxation d'office et pénalités ; les **charges techniques** sont les prestations servies — prestations familiales, pensions, capital-décès, protection sociale des travailleurs et actions sanitaires et sociales —, hors frais de gestion. La caisse en donne le montant, année par année de 2000 à 2020, en millions de dinars courants [@cnss-chiffres] (@fig-cnss-comptes-post-2004).
+
+La différence entre les deux, le **solde technique**, n'est pas le résultat de l'exercice de la caisse. Le solde technique ignore les frais de gestion, les provisions et les produits des placements ; le **résultat de l'exercice**, celui que le bilan arrête, les intègre. Les deux grandeurs s'écartent de plusieurs dizaines à plusieurs centaines de millions de dinars selon les années : en 2020, le solde technique est négatif de 754 millions de dinars quand le résultat de l'exercice l'est de 1 091,5 millions [@minfin-ep-2024]. Le résultat de l'exercice n'est pas publié en continu : il est connu pour 2009, 2010, de 2012 à 2013 et de 2015 à 2023, à partir des états financiers de la caisse pour 2017 et 2018 [@cnss-etats-financiers-2018] et du rapport sur les entreprises publiques du ministère des Finances pour les années suivantes [@minfin-ep-2024 ; @minfin-ep-2025]. Les années 2005 à 2008, 2011 et 2014 ne sont renseignées par aucune source identifiée ici, et ne sont pas tracées ; les points de 2009, 2010 et 2015 viennent d'un budget de la caisse, non d'un bilan, et les deux séries, voisines, ne sont jamais substituées l'une à l'autre.
+
+Le champ de ces comptes change en 2006. Les branches de l'assurance maladie et de la réparation des accidents du travail et des maladies professionnelles passent à la [CNAM](#g-cnam) : la loi n° 2004-71 lui en confie la gestion et lui transfère les biens et réserves afférents [@loi2004-71, art. 8 et 10], et son décret d'application organise le transfert [@decret2005-321], le régime de base entrant en application par étapes à partir du 1^er^ juillet 2007. La CNSS recouvre désormais la part maladie des cotisations pour le compte de la CNAM et la lui reverse ; ses produits techniques n'en portent plus le montant, qui tombe de 1 351 millions de dinars en 2005 à 993 en 2006. Les charges techniques de la caisse se réduisent d'autant. Les comptes d'avant et d'après 2006 ne couvrent donc pas le même champ : la figure marque la rupture et ne raccorde pas les deux tronçons.
+
+Le résultat de l'exercice, excédentaire de quelques millions de dinars en 2009 et 2010, devient déficitaire à partir de 2012 et le déficit se creuse : 525,0 millions de dinars en 2017, 530,5 en 2018, 1 091,5 en 2020, 1 274,3 en 2021, puis 961,5 en 2022 et 911,1 — provisoire — en 2023 [@cnss-etats-financiers-2018 ; @minfin-ep-2024 ; @minfin-ep-2025]. À partir de 2016, la CNSS cesse de reverser intégralement à la CNAM les cotisations qu'elle recouvre pour son compte, et sa dette envers elle s'accumule — les comptes courants de la CNAM au passif du bilan atteignent 3 037,8 millions de dinars fin 2018 [@cnss-etats-financiers-2018]. Le produit de la [contribution sociale de solidarité](#g-css), instituée en 2018, entre la même période dans les comptes de la caisse (@sec-caisses-css-cnrps). Le résultat est, selon les présentations, arrêté avant ou après les concours de l'État : les sources identifiées ici ne permettent pas de trancher partout quelle part du déficit subsiste une fois ces concours imputés.
+
+Deux faits de bilan situent ces déficits. Les réserves placées de la caisse, qui atteignaient environ 2,4 milliards de dinars fin 2004, reviennent à environ 0,92 milliard fin 2013 et à environ 0,24 milliard fin 2018 [@cnss-annuaire-statistique ; @cnss-etats-financiers-2018]. Et les capitaux propres, encore positifs fin 2017, sont négatifs de 383,5 millions de dinars fin 2018 [@cnss-etats-financiers-2018] — ce que le rapport sur les entreprises publiques présente comme le premier solde de fonds propres négatif de l'histoire de la caisse [@minfin-ep].
+
+```{python}
+#| label: fig-cnss-comptes-post-2004
+#| fig-cap: "Comptes de la CNSS après 2004, tous régimes confondus : produits et charges techniques (2000-2021), solde technique et résultat de l'exercice (lacunaire, 2009-2023), en dinars courants et rapportés au PIB."
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import cnss_comptes_post_2004 as cp
+import figtools
+figtools.figure_tabs(
+    cp.vues(), cp.table(), "cnss-produits-charges-techniques", "cnss-resultat-exercice",
+    "irpp-ratios",
+    slug="fig_cnss_comptes_post_2004",
+    caption=("Comptes de la CNSS après 2004, tous régimes confondus : produits et charges "
+             "techniques (2000-2021), solde technique et résultat de l'exercice (lacunaire, "
+             "2009-2023), en dinars courants et rapportés au PIB"),
+    note_lecture=(
+        "Les montants sont en millions de dinars **courants**, tous régimes gérés par la "
+        "CNSS confondus. Trois vues se partagent le graphique. La première donne les "
+        "**produits techniques** — les cotisations au sens large — et les **charges "
+        "techniques** — les prestations servies, hors frais de gestion. La deuxième met en "
+        "regard le **solde technique**, produits moins charges, et le **résultat de "
+        "l'exercice** que le bilan de la caisse arrête : ce sont **deux grandeurs "
+        "différentes**, jamais substituées l'une à l'autre — le résultat tient compte des "
+        "frais de gestion, des provisions et des placements que le solde technique ignore, "
+        "et s'en écarte de plusieurs dizaines à plusieurs centaines de millions de dinars. "
+        "La troisième rapporte le résultat de l'exercice au PIB que retient le ministère "
+        "des Finances [@minfin-indicateurs-fp]. Le résultat de l'exercice n'est **pas "
+        "publié en continu** : les années 2005 à 2008, 2011 et 2014 ne sont renseignées "
+        "par aucune source identifiée ici et ne sont pas tracées ; les charges techniques "
+        "manquent aux mêmes années et pour 2000-2008. Un **point évidé** marque un solde "
+        "tiré d'un budget de la caisse et non d'un bilan — 2009, 2010 et 2015 —, ou un "
+        "compte provisoire — 2023. La **ligne pointillée de 2006** marque le changement de "
+        "champ : les branches maladie et accidents du travail passent alors à la CNAM "
+        "[@loi2004-71 ; @decret2005-321], et les produits techniques de la CNSS n'en "
+        "portent plus la part ; les deux tronçons ne sont pas raccordés. L'onglet Données "
+        "donne chaque année, le solde technique, le résultat retenu et sa source."),
+)
+```
+
+## L'ensemble des organismes de sécurité sociale, 2001-2025 {#sec-caisses-s1314}
+
+Pris ensemble, les organismes de sécurité sociale encaissent chaque année un peu plus de cotisations qu'ils ne versent de prestations, et leur compte est proche de l'équilibre d'un bout à l'autre de la période. Les comptes de la nation de l'Institut national de la statistique donnent, de 2001 à 2025, les cotisations reçues, les prestations versées, les transferts échangés avec les autres administrations publiques et la capacité ou le besoin de financement de ce sous-secteur consolidé, sans le ventiler par caisse ni par branche [@ins-cnat-2015] (@fig-caisses-s1314-organismes). Les cotisations reçues passent de 1,8 milliard de dinars courants en 2001 à 15,2 en 2025, les prestations versées de 1,4 à 13,2 milliards ; les deux progressent d'un facteur proche, et l'écart entre elles finance les frais de gestion, les transferts versés et, pour le solde, l'épargne du sous-secteur. La capacité ou le besoin de financement reste faible : chaque année, il tient en valeur absolue sous 1 % du produit intérieur brut, positif la plupart des années — jusqu'à 459 millions de dinars en 2007 — et négatif quelques-unes, dont 2011, 2014, 2015, 2018 et 2019, le besoin le plus large étant celui de 2018, à 416 millions de dinars. Les transferts courants reçus des autres administrations publiques, longtemps inférieurs à 300 millions de dinars par an, s'élèvent à partir de 2015 et dépassent le milliard de dinars depuis 2020 ; les transferts versés aux autres administrations publiques les suivent de plus loin. Ces comptes ne distinguent pas la CNSS, la CNRPS et la CNAM : la vue par caisse qu'offrent la rétrospective de la CNSS jusqu'en 2004 (@fig-cnss-regimes) et les états financiers de la CNRPS de 2015 à 2018 n'a pas d'équivalent consolidé ici.
+
+```{python}
+#| label: fig-caisses-s1314-organismes
+#| fig-cap: "Comptes consolidés de l'ensemble des organismes de sécurité sociale (secteur S1314) : cotisations reçues, prestations versées, transferts entre administrations publiques et capacité ou besoin de financement, en dinars courants et rapportés au PIB, 2001-2025."
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import s1314_organismes_2001_2025 as og
+import figtools
+figtools.figure_tabs(
+    og.vues(), og.table(), "ins-comptes-organismes-securite-sociale", "irpp-ratios",
+    slug="fig_caisses_s1314_organismes",
+    caption=("Comptes consolidés de l'ensemble des organismes de sécurité sociale "
+             "(secteur S1314) : cotisations reçues, prestations versées, transferts entre "
+             "administrations publiques et capacité ou besoin de financement, en dinars "
+             "courants et rapportés au PIB, 2001-2025"),
+    note_lecture=(
+        "Les comptes portent sur l'**ensemble** des organismes de sécurité sociale pris "
+        "comme un seul sous-secteur des administrations publiques — le secteur S1314 de la "
+        "comptabilité nationale —, **sans ventilation par caisse** (CNSS, CNRPS, CNAM) **ni "
+        "par branche** : la source ne la donne pas. Les montants sont en millions de dinars "
+        "**courants**. Quatre vues se partagent le graphique : cotisations reçues et "
+        "prestations versées ; capacité (+) ou besoin (−) de financement en millions de "
+        "dinars ; le même solde en pourcentage du PIB que retient le ministère des Finances "
+        "[@minfin-indicateurs-fp] ; transferts courants reçus et versés entre "
+        "administrations publiques — la ligne où s'inscrivent les concours de l'État. Chaque "
+        "grandeur est tracée en **deux tronçons séparés, jamais raccordés** : la base 1983 "
+        "des comptes nationaux pour les années 2001-2014, la base 2015 pour les années "
+        "2015-2025 ; la ligne pointillée en marque le passage. Sur les années 2015 à 2017, "
+        "présentes dans les deux bases, les cotisations, les prestations en espèces et la "
+        "capacité de financement sont quasi identiques d'une base à l'autre ; la rupture "
+        "n'est pas corrigée pour autant. Les prestations versées sont les « prestations "
+        "sociales » des comptes jusqu'en 2004, les « prestations sociales en espèces » "
+        "ensuite. Les transferts courants entre administrations publiques ne sont isolés "
+        "qu'à partir de 2005 pour les versés et de 2006 pour les reçus : les éditions "
+        "antérieures les fondent dans les autres transferts courants, et ces années ne sont "
+        "pas tracées sur la vue des transferts. Les points évidés des années 2024 et 2025 "
+        "marquent un compte semi-définitif, puis provisoire, que les éditions suivantes des "
+        "comptes de la nation réviseront."),
+)
+```
+
+<!-- TODO (documentaliste) : prolonger après 2004 les comptes de compensation de la CNSS par
+ses états financiers et réunir ceux de la CNRPS et de la CNAM, pour donner une vue par caisse
+en regard du total consolidé S1314 (note cadre-budgetaire-comptable-caisses.md, § 3, séries 3 et 4 ;
+lacune L-s1.1 de la note documentaire du 10 novembre 2026). -->
+
+## Les versements des caisses au budget de l'État, 1985-2005 {#sec-caisses-versements-budget}
+
+Les textes qui fondent ces versements — les forfaits hospitaliers de la CNSS et de la CNRPS pour les soins donnés aux assurés dans les formations sanitaires, la contribution au programme national d'aide aux familles nécessiteuses et le produit de la majoration patronale de 0,5 point de 1975 — sont exposés dans la section [« Les concours des caisses au budget de l'État »](_etat_caisses.html#sec-caisses-concours). Chaque année, les lois de finances inscrivent ces versements au tableau A, l'état détaillé des recettes du budget général : de 1985 à 2005, leur montant prévu passe de 16,0 à 62,5 millions de dinars courants (@fig-caisses-versements-budget).
+
+De 1985 à 1994, le tableau A détaille trois lignes. Les deux forfaits hospitaliers, déjà inscrits à la plus ancienne loi lue — 15,0 millions de dinars pour la CNSS et 1,0 pour la CNRPS en 1985 —, montent surtout de 1990 à 1992, où ils atteignent 27,5 et 7,0 millions, puis restent stables jusqu'en 1994. À partir de la gestion 1988, une troisième ligne s'y ajoute : la contribution des organismes de sécurité sociale au programme des familles nécessiteuses, où figure aussi le produit de la majoration patronale de 0,5 point instituée en 1975 [@loi74-101-lf1975, art. 57 et 58]. La loi de finances rectificative pour 1986 avait autorisé cette contribution [@loi-86-83-lfr-1986, art. 13] ; la loi de finances pour 1988 en fixe le recouvrement au budget général à 2,5 millions de dinars [@loi-87-83-lf-1988, art. 67], montant qui reste constant de 1988 à 1994. Le total des trois lignes atteint ainsi 37,0 millions de dinars en 1992 et s'y maintient jusqu'en 1994.
+
+En 1995, les trois lignes fusionnent en une seule, « versements et contributions des caisses de sécurité sociale » [@lf-1995] : le détail par caisse et par objet disparaît. Le total passe au même moment de 37,0 millions de dinars, somme des trois composantes de 1994, à 57,0 millions pour la ligne agrégée de 1995 — une rupture de périmètre que la source ne permet pas de décomposer, et que la figure marque sans la lisser. La ligne agrégée reste à 57,0 millions de dinars jusqu'en 2003, puis passe à 62,5 millions en 2004 et 2005 [@lf-2004].
+
+Ces montants sont des prévisions des lois de finances, non des recettes réalisées. Les réalisations correspondantes ne figurent pas au *Journal officiel* : les lois de règlement y arrêtent les recettes réalisées par titre, sans descendre à la ligne des versements des caisses [@reglement-1992 ; @reglement-2001]. L'appariement des prévisions à leurs réalisations n'est donc pas possible sur ces documents.
+
+```{python}
+#| label: fig-caisses-versements-budget
+#| fig-cap: "Versements des caisses au budget de l'État inscrits au tableau A (recettes du budget général) des lois de finances : forfaits hospitaliers CNSS et CNRPS, contribution au programme des familles nécessiteuses et majoration FSE, puis ligne agrégée, en dinars courants et en pourcentage du PIB, 1985-2005."
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import tableau_a_caisses_1985_2005 as ta
+import figtools
+figtools.figure_tabs(
+    ta.vues(), ta.table(), "lf-tableau-a-caisses", "irpp-ratios",
+    slug="fig_caisses_versements_budget",
+    caption=("Versements des caisses au budget de l'État inscrits au tableau A (recettes du "
+             "budget général) des lois de finances : forfaits hospitaliers CNSS et CNRPS, "
+             "contribution au programme des familles nécessiteuses et majoration FSE, puis "
+             "ligne agrégée, en dinars courants et en pourcentage du PIB, 1985-2005"),
+    note_lecture=(
+        "Les montants sont ceux que **prévoit** chaque loi de finances au tableau A de ses "
+        "recettes — des prévisions, non des réalisations —, en millions de dinars "
+        "**courants**. La première vue empile, année par année, les composantes du "
+        "versement : en bleu le forfait hospitalier de la CNSS, en vert celui de la CNRPS, "
+        "en orange la contribution au programme des familles nécessiteuses, qui porte aussi "
+        "le produit de la majoration patronale de 0,5 point de 1975 ; le chiffre posé "
+        "au-dessus de chaque barre est le total de l'année. **La présentation change en "
+        "1995** : les trois lignes fondent en une ligne agrégée unique (en gris), sans "
+        "détail par caisse ni par objet. Les deux périmètres **ne sont pas raccordés** — le "
+        "total détaillé de 1994 (37,0 MD) et l'agrégat de 1995 (57,0 MD) se suivent sans "
+        "trait de jonction, et la ligne pointillée marque le changement : la source ne "
+        "permet pas de décomposer le saut. La seconde vue donne le total des versements en "
+        "pourcentage du PIB que retient le ministère des Finances [@minfin-indicateurs-fp], "
+        "en deux tronçons séparés à la même date ; la gestion 1985, sans PIB disponible "
+        "dans cette source, n'y est pas tracée. L'onglet Données donne chaque ligne du "
+        "tableau A et la loi de finances dont elle est tirée."),
+)
+```
+
+## La contribution sociale de solidarité reçue par la CNRPS {#sec-caisses-css-cnrps}
+
+Le régime de la [contribution sociale de solidarité](#g-css) (CSS) et du [compte de diversification des sources de sécurité sociale](#g-compte-diversification-securite-sociale) qui en reçoit le produit — son institution en 2018, l'ouverture du compte spécial en 2022 et la règle qui en répartit les recettes entre caisses — est exposé dans la section [« L'État employeur et l'État financeur »](_etat_caisses.html#sec-caisses-financeur). La part de ce produit attribuée à la CNRPS est documentée année par année, de 2018 à 2023, et elle réduit le besoin de financement du régime des pensions de la caisse (@fig-caisses-css-cnrps).
+
+La part reçue par la CNRPS est de 200 millions de dinars en 2018, 450 en 2019, 460 en 2020, 500 en 2021, 195 en 2022 et 420 en 2023 [@ue-jumelage-retraite-2021 ; @minfin-rapport-ep-2022 ; @mas-rap-cnrps-2022]. Les états financiers de la caisse l'ajoutent après le résultat du régime des pensions, et non parmi ses recettes : rapportée au besoin de financement de ce régime — environ 1,06 milliard de dinars en 2018, 1,18 en 2019, 0,71 en 2020 [@ue-jumelage-retraite-2021] —, la contribution n'en couvre qu'une fraction.
+
+Le produit total de la CSS et les parts qu'en reçoivent la CNSS et la CNAM ne sont isolés dans aucune source identifiée ici : seule la part de la CNRPS est chiffrée. Les critères qui répartissent les recettes du compte entre les caisses sont renvoyés par la loi à un arrêté du ministre chargé de la sécurité sociale, qui n'est pas identifié ici [@dl2021-21-lf2022, art. 12] ; en son absence, la répartition du produit entre les trois caisses n'est pas établie.
+
+```{python}
+#| label: fig-caisses-css-cnrps
+#| fig-cap: "Contribution sociale de solidarité attribuée à la CNRPS, 2018-2023, et besoin de financement du régime des pensions de la caisse, 2015-2020, en millions de dinars."
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import cnrps_css_2018_2023 as cs
+import figtools
+figtools.figure_tabs(
+    cs.vues(), cs.table(), "cnrps-ratios-charges-produits", "cnrps-ue-jumelage-2021",
+    slug="fig_caisses_css_cnrps",
+    caption=("Contribution sociale de solidarité attribuée à la CNRPS, 2018-2023, et besoin "
+             "de financement du régime des pensions de la caisse, 2015-2020, en millions de "
+             "dinars"),
+    note_lecture=(
+        "Les montants sont en millions de dinars **courants**. La première vue donne la "
+        "part de la contribution sociale de solidarité **attribuée à la CNRPS**, de 2018 à "
+        "2023 : ces valeurs viennent des annexes budgétaires — rapport sur les entreprises "
+        "publiques —, de la fiche de jumelage de l'Union européenne et des rapports de "
+        "performance du ministère des Affaires sociales ; l'onglet Données en indique la "
+        "source retenue année par année. Pour 2020, les sources donnent des montants voisins "
+        "— 450, 460 et 500 millions de dinars selon les documents — dont la valeur retenue "
+        "ici est 460. **La figure ne porte que la part de la CNRPS** : le produit total de "
+        "la contribution et les parts reçues par la CNSS et par la CNAM ne sont isolés dans "
+        "aucune source identifiée. La seconde vue donne, pour situer cette part, le besoin "
+        "de financement du régime des pensions de la CNRPS de 2015 à 2020, tel que la fiche "
+        "de jumelage le mesure avant imputation de la contribution ; les deux vues viennent "
+        "de sources et d'années différentes et ne sont pas raccordées."),
+)
+```
 
 ## Ce que les textes ne disent pas {#sec-caisses-silences}
 

@@ -1,0 +1,19 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-11-11
+# séries (tunisia_data) : env-fodep-previsions, budget-vote-realise
+# sources (citation) : @lf-1993, @decret-93-2120, @lf-2013, @minfin-repartition-depenses-xls
+# fiches : 
+# méthode/hypothèses : Prévisions votées, et non des décaissements réalisés. Les primes effectivement versées par le fonds ne figurent pas dans les lois de finances.
+# note : Fonds de dépollution : prévision des lois de finances, en millions de dinars courants et en part de la dépense de l'État, 2011-2020
+Année (loi de finances),"Prévision
+(millions de dinars)","Part de la dépense
+de l'État (%)"
+2011,33.0,0.192
+2012,44.0,0.23
+2013,44.0,0.2
+2014,40.0,0.178
+2015,40.0,0.18
+2016,18.0,0.075
+2017,18.0,0.066
+2018,17.0,0.057
+2019,17.0,0.052
+2020,17.0,0.045

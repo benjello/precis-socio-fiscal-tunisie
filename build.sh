@@ -22,7 +22,11 @@ PRECIS_DIR="$ROOT_DIR/precis"
 LOCAL_SITE="$ROOT_DIR/local_site"
 
 LANGUAGES=(fr ar)
+<<<<<<< HEAD
 BOOKS=(prestations_sociales retraites fiscalite remunerations_publiques cotisations_sociales caisses finances_locales marche_travail compensation entreprises_publiques sante education informel agriculture)
+=======
+BOOKS=(prestations_sociales retraites fiscalite remunerations_publiques cotisations_sociales caisses finances_locales marche_travail compensation entreprises_publiques sante education transport informel environnement)
+>>>>>>> origin/master
 # Pages générales du site, posées directement sous precis/<langue>/ et rendues une à une.
 PAGES=(index comment-lire comment-constitue a-propos principes-structure annexe-pib annexe-budget-etat annexe-dette-publique annexe-sources annexe-comptes-nation index-institutions parcours-atmp correspondance-instruments)
 

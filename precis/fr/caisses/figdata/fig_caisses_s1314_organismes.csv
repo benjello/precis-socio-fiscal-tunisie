@@ -1,0 +1,32 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-11-10
+# séries (tunisia_data) : ins-comptes-organismes-securite-sociale, irpp-ratios
+# sources (citation) : @ins-cnat-2015, @minfin-recettes-fiscales, @minfin-indicateurs-fp
+# fiches : sources/ins-comptes-nationaux-publications.md, sources/minfinances-recettes-fiscales.md
+# méthode/hypothèses : DEUX SEGMENTS, JAMAIS RACCORDÉS (colonne `segment`) : base 1983 (années 2001-2014) et base 2015 (années 2015-2025). La rupture de base est quasi nulle pour ce compte — sur 2015-2017, cotisations, prestations en espèce, capacité de financement, rémunération et transferts sont IDENTIQUES entre bases ; seule la consommation intermédiaire (et, du même montant, la consommation finale et le revenu disponible brut) diffère de ~18-25 MD. 2024 semi-définitif, 2025 provisoire (colonne `statut`). Le compte financier ne se réconcilie ni entre bases ni poste à poste (ligne de bouclage) : hors analyse des caisses. Édition 2003-2007 à police décalée : valeurs validées par croisement avec 2002-2006, mais colonne `sous_ligne` imparfaite. Détail, concordance et invariants : docs/cnat-s1314-comptes-organismes-securite-sociale.md., LE PIB DU MINISTÈRE (`pib_minfin_MDT`) N'EST PAS D'UNE SEULE BASE : base 1983 jusqu'en 1996 (présumée avant 1992), base 1997 en 1997-2001 et 2005-2009, valeurs propres au ministère en 2002-2004 et 2025, base 2015 de l'INS de 2010 à 2024 (rétropolée par l'INS pour 2010-2014). RUPTURES DE SÉRIE (colonne `rupture`) : 1997 (niveau + 9,8 %), 2002, 2005, 2010 (niveau + 4,9 %), 2025. Tracer toute part du PIB par segments (`segment_pib`), jamais d'un trait continu. `pib_cnat_MDT` est le PIB de la série `masse-salariale-ratios` : il n'est celui des Comptes de la nation que pour 2010-2024, et ses valeurs ont changé en octobre 2026 : 2012-2014 (base 1997 → base 2015 rétropolée : 70 354,4 → 73 895,4 ; 75 144,1 → 79 096,6 ; 80 865,5 → 85 345,7) et 2023-2024 (dernière édition des Comptes de la nation : 149 733,8 → 149 793,6 ; 159 760,6 → 159 852,7) ; il est égal à `pib_minfin_MDT` de 1990 à 2025, sauf 2023-2024 où le ministère garde l'édition 2020-2024. Voir sources/minfinances-recettes-fiscales.md.
+# note : Comptes consolidés de l'ensemble des organismes de sécurité sociale (secteur S1314) : cotisations reçues, prestations versées, transferts entre administrations publiques et capacité ou besoin de financement, en dinars courants et rapportés au PIB, 2001-2025
+Année,Base des comptes,Statut du compte,Cotisations reçues (MD),Prestations versées (MD),Capacité (+) / besoin (−) de financement (MD),Capacité / besoin (% du PIB),Transferts entre APU reçus (MD),Transferts entre APU versés (MD),"PIB, ministère des Finances (MD)"
+2001,base 1983,définitif,1795.7,1403.6,217.8,0.69,,,31746.4
+2002,base 1983,définitif,1930.5,1516.4,257.8,0.8,,,32112.0
+2003,base 1983,définitif,2094.8,1684.8,178.6,0.52,,,34630.0
+2004,base 1983,définitif,2288.9,1887.5,154.2,0.41,,,37601.2
+2005,base 1983,définitif,2440.2,1607.7,59.0,0.14,,224.6,41871.0
+2006,base 1983,définitif,2638.6,1602.5,396.0,0.87,0.0,151.5,45756.2
+2007,base 1983,définitif,2760.6,1678.5,459.1,0.92,0.0,130.3,49874.2
+2008,base 1983,définitif,3563.1,2589.5,43.7,0.08,0.0,411.1,55296.6
+2009,base 1983,définitif,3943.3,2827.1,140.4,0.24,126.3,368.0,58883.3
+2010,base 1983,définitif,4428.8,3196.3,70.2,0.11,172.2,400.1,66139.7
+2011,base 1983,définitif,4989.8,3707.5,-46.6,-0.07,185.3,321.4,67747.3
+2012,base 1983,définitif,5581.8,4046.0,235.0,0.32,231.5,401.7,73895.4
+2013,base 1983,définitif,6231.1,4535.8,278.9,0.35,221.4,497.9,79096.6
+2014,base 1983,définitif,6586.3,4999.0,-54.3,-0.06,194.5,538.3,85345.7
+2015,base 2015,définitif,7243.9,5648.9,-175.6,-0.2,280.6,539.0,89802.2
+2016,base 2015,définitif,8214.5,6582.3,120.5,0.13,305.1,580.9,95286.9
+2017,base 2015,définitif,8744.8,7212.0,268.4,0.26,431.2,600.9,102011.5
+2018,base 2015,définitif,9258.1,8322.1,-415.9,-0.37,748.2,666.9,112985.5
+2019,base 2015,définitif,10663.2,9607.4,-47.3,-0.04,920.7,679.4,122969.3
+2020,base 2015,définitif,11664.9,10329.3,110.7,0.09,1006.9,740.1,119502.1
+2021,base 2015,définitif,12197.7,10577.5,132.5,0.1,1148.9,891.8,131544.6
+2022,base 2015,définitif,13300.8,11704.5,47.8,0.03,1071.1,825.1,139444.5
+2023,base 2015,définitif,14098.7,12602.5,94.4,0.06,1199.4,864.1,149733.8
+2024,base 2015,semi-définitif,14995.8,13027.5,50.9,0.03,1094.7,1159.4,159760.6
+2025,base 2015,provisoire,15165.5,13235.6,53.3,0.03,1212.4,1192.9,172614.0
