@@ -190,7 +190,9 @@ porte désormais au moins une série datée et sourcée, de source primaire ou c
   ferme (pas de figure).
 - **URL arabes — FAIT (11/11)** : dans `ar/agriculture/references.json`, 53/56 clés JORT passées à
   l'**édition arabe** `pist.tn` (chaque URL vérifiée HTTP 200) ; 3 fascicules de l'an 2000
-  (`loi2000-29/30/98`) en 404 — gardés en édition FR (voir Backlog).
+  (`loi2000-29/30/98`) gardés en édition FR car l'**édition arabe 2000 est absente de pist.tn**
+  (vérifié le 11/11 : `2000A` n° 001/020/104 tous en 404, alors que `2001A` et `2000F` existent —
+  trou de pist.tn, pas un nommage ; rien à reprendre tant que l'édition 2000 n'est pas mise en ligne).
 - **Acquisitions (11/11)** : budget du ministère **avant 2014 TROUVÉ** (base BOOST, exécution
   2008-2014, recoupée aux PAP) et versé ; **ventilation des déclarations du fonds par aléa TROUVÉE**
   (sécheresse quasi exclusive, 2019-2023) et versée. **PAP 2023 et décaissé APIA 2010-2017 :
