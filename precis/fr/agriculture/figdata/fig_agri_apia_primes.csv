@@ -1,0 +1,21 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-11-11
+# séries (tunisia_data) : agri-apia-primes
+# sources (citation) : @apia-repartition-doa-2010-2017, @apia-rapport-activite-2018, @apia-rapport-activite-2019, @apia-rapport-activite-2020, @apia-rapport-activite-2021, @apia-rapport-activite-2022, @apia-rapport-activite-2023, @banquemondiale2014-revolution-inachevee
+# fiches : 
+# méthode/hypothèses : Approuvé et décaissé ne se chaînent pas (2017 manquant) ; le point 2009 est d'une autre source. Dinars courants.
+# note : Primes d'investissement agricole de l'APIA : approuvées (périmètre agricole, 2010-2016) et décaissées (2018-2023)
+Année,Approuvées (MD),Décaissées (MD)
+2009,,54.0
+2010,38.0,
+2011,40.0,
+2012,35.0,
+2013,36.0,
+2014,46.0,
+2015,44.0,
+2016,63.0,
+2018,,52.8
+2019,,112.5
+2020,,62.0
+2021,,89.0
+2022,,44.2
+2023,,60.1

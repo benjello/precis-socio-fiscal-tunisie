@@ -20537,6 +20537,863 @@ entries:
         عن المنافع المقدَّمة عينًا.
       synonymes: []
 
+  # ─────────────────────────────────────────────────────────────────────────
+  # Livre « Agriculture » — passe du terminologue (chantier agriculture-livre)
+  # ─────────────────────────────────────────────────────────────────────────
+
+  - id: crda
+    acronyme: CRDA
+    statut: valide
+    source_definition: {ref: loi89-44, locator: "art. 1"}
+    source_traduction: {ref: loi89-44}
+    references: [decret-74-847-crda, decret-81-215-crda-attributions]
+    voir_aussi: [epa, office-mise-en-valeur, agence-fonciere-agricole, vulgarisation-agricole]
+    fr:
+      terme: Commissariat régional au développement agricole
+      definition: >
+        Administration agricole de l'État dans le gouvernorat. Créés en 1974, les
+        commissariats deviennent en 1989 des établissements publics à caractère
+        administratif dotés de l'autonomie financière, un par gouvernorat, sous la
+        tutelle du ministre de l'Agriculture ; ils mettent en œuvre la politique
+        agricole, gèrent le domaine public hydraulique et l'infrastructure des
+        périmètres publics irrigués, et conduisent la vulgarisation.
+      synonymes: []
+    ar:
+      terme: المندوبية الجهوية للتنمية الفلاحية
+      definition: >
+        الإدارة الفلاحية للدولة على مستوى الولاية. أُحدثت سنة 1974 ثم أصبحت سنة 1989
+        مؤسسات عمومية ذات صبغة إدارية تتمتّع بالاستقلال المالي، مندوبية في كلّ ولاية،
+        تحت إشراف وزير الفلاحة؛ تنفّذ السياسة الفلاحية وتتصرّف في الملك العمومي للمياه
+        وفي منشآت المناطق السقوية العمومية وتتولّى الإرشاد الفلاحي.
+      synonymes: []
+
+  - id: office-mise-en-valeur
+    acronyme: null
+    statut: provisoire  # intitulé AR officiel à confirmer sur le JORT bilingue
+    source_definition: {ref: loi80-32}
+    references: [loi58-76]
+    voir_aussi: [perimetre-public-irrigue, agence-fonciere-agricole, crda]
+    fr:
+      terme: Office de mise en valeur des périmètres irrigués
+      definition: >
+        Établissement public qui équipe un périmètre irrigué et y organise la
+        production. L'État en crée par vagues à partir de 1958 (vallée de la
+        Medjerda) ; les offices à vocation régionale sont absorbés en 1989 par les
+        commissariats régionaux au développement agricole.
+      synonymes: ["Office de développement agricole"]
+    ar:
+      terme: ديوان تهيئة المناطق السقوية
+      definition: >
+        مؤسسة عمومية تهيّئ المنطقة السقوية وتنظّم فيها الإنتاج. أحدثتها الدولة على
+        دفعات ابتداءً من 1958 (وادي مجردة)؛ وأُدمجت الدواوين ذات الصبغة الجهوية سنة
+        1989 في المندوبيات الجهوية للتنمية الفلاحية.
+      synonymes: []
+
+  - id: perimetre-public-irrigue
+    acronyme: PPI
+    statut: valide
+    source_definition: {ref: loi63-18}
+    source_traduction: {ref: loi63-18}
+    references: [loi71-9, loi2000-30]
+    voir_aussi: [perimetre-prive-irrigue, mise-en-valeur-agricole, agence-fonciere-agricole, tarif-eau-irrigation]
+    fr:
+      terme: Périmètre public irrigué
+      definition: >
+        Zone où l'État, en contrepartie de l'aménagement hydraulique qu'il réalise,
+        encadre la taille et l'usage des propriétés agricoles et soumet l'accès à
+        l'eau d'irrigation à une obligation de mise en valeur. Son régime foncier est
+        fixé par la réforme agraire des périmètres publics irrigués de 1963.
+      synonymes: []
+    ar:
+      terme: المنطقة السقوية العمومية
+      definition: >
+        منطقة تؤطّر فيها الدولة، مقابل التهيئة المائية التي تنجزها، مساحة الملكيات
+        الفلاحية واستغلالها، وتربط الانتفاع بماء الري بواجب الإحياء. ويضبط نظامها
+        العقاري قانون الإصلاح الزراعي في المناطق السقوية العمومية لسنة 1963.
+      synonymes: []
+
+  - id: perimetre-prive-irrigue
+    acronyme: null
+    statut: valide
+    source_definition: {ref: decret72-171}
+    source_traduction: {ref: decret72-171}
+    references: []
+    voir_aussi: [perimetre-public-irrigue, subvention-implicite-irrigation]
+    fr:
+      terme: Périmètre privé irrigué
+      definition: >
+        Périmètre irrigué créé et aménagé par l'exploitant lui-même, par opposition
+        au périmètre public irrigué aménagé par l'État. L'État en subventionne la
+        création — points d'eau et aménagements — au titre de l'aide à l'irrigation
+        privée réglée depuis 1972.
+      synonymes: []
+    ar:
+      terme: المنطقة السقوية الخاصة
+      definition: >
+        منطقة سقوية يُحدثها ويهيّئها المستغلّ نفسه، خلافًا للمنطقة السقوية العمومية
+        التي تهيّئها الدولة. وتدعم الدولة إحداثها — نقاط الماء والتهيئات — في إطار
+        مساعدة الري الخاصّ المنظَّمة منذ 1972.
+      synonymes: []
+
+  - id: agence-fonciere-agricole
+    acronyme: AFA
+    statut: valide
+    source_definition: {ref: loi77-17}
+    source_traduction: {ref: loi77-17}
+    references: [decret99-1877, loi2000-29]
+    voir_aussi: [perimetre-public-irrigue, crda]
+    fr:
+      terme: Agence foncière agricole
+      definition: >
+        Établissement public créé en 1977 sous le nom d'Agence de la réforme agraire
+        des périmètres publics irrigués, renommé en 1999. Elle réalise les opérations
+        immobilières de la réforme agraire : acquisition des parcelles excédentaires,
+        échanges, remembrement et cession des terres aux agriculteurs.
+      synonymes: ["Agence de la réforme agraire des périmètres publics irrigués"]
+    ar:
+      terme: الوكالة العقارية للفلاحة
+      definition: >
+        مؤسسة عمومية أُحدثت سنة 1977 تحت اسم وكالة الإصلاح الزراعي في المناطق السقوية
+        العمومية، وأُعيدت تسميتها سنة 1999. تتولّى العمليات العقارية للإصلاح الزراعي:
+        اقتناء القطع الزائدة والمعاوضات وإعادة الهيكلة وإحالة الأراضي إلى الفلاحين.
+      synonymes: []
+
+  - id: apia
+    acronyme: APIA
+    statut: valide
+    source_definition: {ref: loi-82-67, locator: "art. 16"}
+    source_traduction: {ref: loi-82-67}
+    references: [decret-82-1484-apia]
+    voir_aussi: [prime-investissement-agricole, pret-foncier-agricole, fosdap, encouragement-developpement-agriculture]
+    fr:
+      terme: Agence de promotion des investissements agricoles
+      definition: >
+        Établissement public créé en 1982, sous la tutelle du ministre de
+        l'Agriculture, guichet de l'investissement agricole et de pêche : il promeut
+        l'investissement, instruit l'agrément des projets et décide, en aval, des
+        primes, participations et prêts fonciers servis au producteur.
+      synonymes: []
+    ar:
+      terme: وكالة النهوض بالاستثمارات الفلاحية
+      definition: >
+        مؤسسة عمومية أُحدثت سنة 1982 تحت إشراف وزير الفلاحة، وهي شبّاك الاستثمار
+        الفلاحي والصيد البحري: تنهض بالاستثمار وتدرس إسناد المشاريع وتقرّر لاحقًا المنح
+        والمساهمات والقروض العقارية المسنَدة للمنتج.
+      synonymes: []
+
+  - id: groupement-interprofessionnel
+    acronyme: null
+    statut: valide
+    source_definition: {ref: loi-93-84-groupements-interprofessionnels}
+    source_traduction: {ref: loi-93-84-groupements-interprofessionnels}
+    references: []
+    voir_aussi: [centre-technique-agricole]
+    fr:
+      terme: Groupement interprofessionnel
+      definition: >
+        Personne morale d'intérêt économique public, dotée de la personnalité civile
+        et de l'autonomie financière, qui réunit autour d'un produit les producteurs,
+        transformateurs et exportateurs d'une filière agricole. Institué sans capital
+        et sans distribution de bénéfices, il lie les phases de la filière, régularise
+        les marchés et perçoit des cotisations interprofessionnelles.
+      synonymes: []
+    ar:
+      terme: المجمع المهني المشترك
+      definition: >
+        ذات معنوية ذات مصلحة اقتصادية عمومية تتمتّع بالشخصية المدنية والاستقلال المالي،
+        تجمع حول منتَج ما المنتجين والمحوّلين والمصدّرين في شعبة فلاحية. يُحدَث دون رأس
+        مال ودون توزيع أرباح، يربط مراحل الشعبة وينظّم الأسواق ويستخلص معاليم مهنية مشتركة.
+      synonymes: []
+
+  - id: vulgarisation-agricole
+    acronyme: null
+    statut: valide
+    source_definition: {ref: loi-90-73-avfa}
+    source_traduction: {ref: loi-90-73-avfa}
+    references: [loi-96-4-centres-techniques-agricoles]
+    voir_aussi: [crda, centre-technique-agricole]
+    fr:
+      terme: Vulgarisation agricole
+      definition: >
+        Transfert du progrès technique vers les exploitations agricoles. La conçoit et
+        la met en œuvre l'Agence de la vulgarisation et de la formation agricoles,
+        créée en 1990 ; elle est relayée sur le terrain par les commissariats régionaux
+        au développement agricole et les centres techniques.
+      synonymes: []
+    ar:
+      terme: الإرشاد الفلاحي
+      definition: >
+        نقل التقدّم الفني إلى المستغلّات الفلاحية. تضبطه وتنفّذه وكالة الإرشاد والتكوين
+        الفلاحي المُحدَثة سنة 1990؛ وتتولّى تبليغه ميدانيًا المندوبيات الجهوية للتنمية
+        الفلاحية والمراكز الفنية.
+      synonymes: []
+
+  - id: centre-technique-agricole
+    acronyme: null
+    statut: valide
+    source_definition: {ref: loi-96-4-centres-techniques-agricoles}
+    source_traduction: {ref: loi-96-4-centres-techniques-agricoles}
+    references: []
+    voir_aussi: [vulgarisation-agricole, groupement-interprofessionnel]
+    fr:
+      terme: Centre technique agricole
+      definition: >
+        Personne morale d'intérêt économique public, créée par arrêté du ministre de
+        l'Agriculture à l'initiative des organisations professionnelles pour une
+        filière ou un secteur. Institué sans capital, il adapte aux exploitations les
+        résultats de la recherche et assure la vulgarisation du progrès technique.
+      synonymes: ["Centre technique du secteur agricole"]
+    ar:
+      terme: المركز الفني للقطاع الفلاحي
+      definition: >
+        ذات معنوية ذات مصلحة اقتصادية عمومية تُحدَث بقرار من وزير الفلاحة بمبادرة من
+        المنظمات المهنية لشعبة أو قطاع. يُحدَث دون رأس مال، يكيّف نتائج البحث مع
+        المستغلّات ويتولّى إرشاد التقدّم الفني.
+      synonymes: []
+
+  - id: credit-agricole-bonifie
+    acronyme: null
+    statut: valide
+    source_definition: {ref: decret95-793-encouragement}
+    source_traduction: {ref: decret95-793-encouragement}
+    references: [decret2002-834-pret-petits-agriculteurs, decret2010-893-encouragement-modif]
+    voir_aussi: [prise-en-charge-interet, credit-saisonnier-campagne, abandon-creances-agricoles]
+    fr:
+      terme: Crédit agricole bonifié
+      definition: >
+        Prêt consenti au petit agriculteur ou au petit pêcheur à un taux inférieur à
+        celui du marché, l'État prenant à sa charge une partie du coût (bonification
+        d'intérêt). Réglé en 1995, à distinguer de la bonification de retraite. Son
+        public est le petit exploitant, assorti d'un apport propre minimal.
+      synonymes: ["Bonification d'intérêt"]
+    ar:
+      terme: القرض الفلاحي المدعّم
+      definition: >
+        قرض يُسنَد إلى صغار الفلاحين وصغار الصيّادين بنسبة فائدة أدنى من نسبة السوق،
+        تتحمّل الدولة جزءًا من كلفته (تدعيم نسبة الفائدة). ضُبط سنة 1995، ويُميَّز عن
+        التنفيل في التقاعد. موجَّه إلى صغار المستغلّين مقابل مساهمة ذاتية دنيا.
+      synonymes: []
+
+  - id: prise-en-charge-interet
+    acronyme: null
+    statut: valide
+    source_definition: {ref: decret2023-545-bonification-cerealiculture}
+    source_traduction: {ref: decret2023-545-bonification-cerealiculture}
+    references: [dl2022-79-lf2023-art15, decret2024-467-bonification-modif]
+    voir_aussi: [credit-agricole-bonifie, credit-saisonnier-campagne]
+    fr:
+      terme: Prise en charge d'intérêt
+      definition: >
+        Forme moderne de la bonification : au lieu d'un prêt à taux réduit, l'État
+        couvre une partie de l'écart entre le taux du crédit et un taux de référence.
+        Instituée en 2023 pour les crédits saisonniers de la céréaliculture, dans la
+        limite de trois points au-dessus du taux moyen du marché monétaire.
+      synonymes: ["Prise en charge de la différence de taux"]
+    ar:
+      terme: تكفّل الدولة بفارق نسبة الفائدة
+      definition: >
+        الصيغة الحديثة للتدعيم: بدل إسناد قرض بنسبة مخفّضة، تتكفّل الدولة بجزء من الفارق
+        بين نسبة فائدة القرض ونسبة مرجعية. أُحدثت سنة 2023 للقروض الموسمية لزراعة الحبوب،
+        في حدود ثلاث نقاط فوق نسبة الفائدة المتوسطة لسوق النقد.
+      synonymes: []
+
+  - id: abandon-creances-agricoles
+    acronyme: null
+    statut: valide
+    source_definition: {ref: loi2013-54-lf2014-art79, locator: "art. 79"}
+    source_traduction: {ref: loi2013-54-lf2014-art79}
+    references: [loi2015-18-modif-art79, loi2015-30-lfc2015-art27, arrete2016-02-09-abandon-credits-agricoles]
+    voir_aussi: [credit-agricole-bonifie, societe-mise-en-valeur-agricole]
+    fr:
+      terme: Abandon de créances agricoles
+      definition: >
+        Remise, au profit du petit exploitant, du principal et des intérêts de crédits
+        agricoles impayés en deçà d'un plafond par bénéficiaire. Organisé de 2013 à
+        2016 pour les crédits obtenus jusqu'à fin 2012 dont le principal ne dépasse pas
+        5 000 dinars, par enveloppes budgétaires et examen des commissions régionales.
+      synonymes: []
+    ar:
+      terme: التخلّي عن الديون الفلاحية
+      definition: >
+        التخلّي، لفائدة صغير المستغلّ، عن أصل وفوائد القروض الفلاحية غير المسدَّدة دون
+        سقف لكلّ منتفع. نُظّم من 2013 إلى 2016 للقروض المتحصَّل عليها إلى غاية آخر 2012
+        التي لا يتجاوز أصلها 5000 دينار، باعتمادات مرصودة ونظر من اللجان الجهوية.
+      synonymes: []
+
+  - id: comptes-speciaux-agricoles
+    acronyme: null
+    statut: provisoire  # intitulé AR et texte fondateur à confirmer (côté entreprises publiques)
+    references: []
+    voir_aussi: [abandon-creances-agricoles, credit-agricole-bonifie]
+    fr:
+      terme: Comptes spéciaux agricoles
+      definition: >
+        Comptes par lesquels l'État dote la Banque nationale agricole de ressources
+        affectées au crédit agricole. À distinguer des comptes spéciaux d'épargne des
+        particuliers ; ils relèvent des comptes de la banque et sont décrits au livre
+        des entreprises publiques.
+      synonymes: []
+    ar:
+      terme: الحسابات الخاصة الفلاحية
+      definition: >
+        حسابات تمدّ بها الدولة البنك الوطني الفلاحي بموارد مخصّصة للقرض الفلاحي.
+        تُميَّز عن حسابات الادّخار الخاصة بالأفراد؛ وهي من حسابات البنك وتُعرَض في كتاب
+        المنشآت العمومية.
+      synonymes: []
+
+  - id: credit-saisonnier-campagne
+    acronyme: null
+    statut: valide
+    source_definition: {ref: decret2023-545-bonification-cerealiculture}
+    source_traduction: {ref: decret2023-545-bonification-cerealiculture}
+    references: [dl2022-79-lf2023-art15]
+    voir_aussi: [prise-en-charge-interet, credit-agricole-bonifie]
+    fr:
+      terme: Crédit saisonnier de campagne
+      definition: >
+        Crédit à court terme qui finance une campagne agricole — pour la
+        céréaliculture, les intrants et travaux d'une saison. L'État prend en charge
+        une partie de son intérêt depuis 2023, pour les crédits dont le principal
+        n'excède pas 50 000 dinars accordés aux petits céréaliculteurs.
+      synonymes: []
+    ar:
+      terme: القرض الموسمي
+      definition: >
+        قرض قصير الأجل يموّل موسمًا فلاحيًا — بالنسبة لزراعة الحبوب، مستلزمات وأشغال
+        موسم واحد. تتكفّل الدولة بجزء من فائدته منذ 2023، للقروض التي لا يتجاوز أصلها
+        50 ألف دينار المسنَدة لصغار منتجي الحبوب.
+      synonymes: []
+
+  - id: societe-mise-en-valeur-agricole
+    acronyme: null
+    statut: provisoire  # texte fondateur non identifié ; intitulé AR à confirmer
+    references: [loi2000-98-lf2001-abandon-agricole, loi2001-123-lf2002-abandon-agricole]
+    voir_aussi: [abandon-creances-agricoles]
+    fr:
+      terme: Société de mise en valeur et de développement agricole
+      definition: >
+        Société chargée de mettre en valeur et de développer des terres agricoles,
+        notamment domaniales. Elle est le public d'une vague d'abandons de créances
+        antérieure (prorogée en 2001 et 2002), distincte de l'abandon des créances des
+        petits exploitants de 2013.
+      synonymes: ["Société de mise en valeur agricole"]
+    ar:
+      terme: شركة إحياء وتنمية الأراضي الفلاحية
+      definition: >
+        شركة تتولّى إحياء وتنمية أراضٍ فلاحية، خاصّة الأراضي الدولية. وهي المعنيّة
+        بموجة سابقة للتخلّي عن الديون (مُدّدت سنتي 2001 و2002)، تختلف عن التخلّي عن
+        ديون صغار المستغلّين لسنة 2013.
+      synonymes: []
+
+  - id: fosda
+    acronyme: FOSDA
+    statut: provisoire  # texte fondateur non identifié ; intitulé AR à confirmer
+    source_definition: {ref: tn-minfin-fonds-speciaux-2020}
+    references: [decret-gouv-2017-389-incitations-financieres]
+    voir_aussi: [fosdap, fspa, apia, prime-investissement-agricole]
+    fr:
+      terme: Fonds spécial de développement agricole
+      definition: >
+        Fonds spécial du Trésor, dit Compte central de développement agricole, qui
+        finance les avantages du code d'incitations aux investissements et des primes
+        d'autres textes, pour les projets agricoles les plus importants. Rattaché à la
+        politique d'encouragement de 1963, géré par la Banque nationale agricole.
+      synonymes: ["Compte central de développement agricole"]
+    ar:
+      terme: الصندوق الخاص لتنمية الفلاحة
+      definition: >
+        صندوق خاص للخزينة، يُسمّى الحساب المركزي لتنمية الفلاحة، يموّل امتيازات مجلّة
+        تشجيع الاستثمارات ومنح نصوص أخرى، للمشاريع الفلاحية الأكبر. يرتبط بسياسة
+        التشجيع لسنة 1963، ويتولّى تصرّفه البنك الوطني الفلاحي.
+      synonymes: []
+
+  - id: fosdap
+    acronyme: FOSDAP
+    statut: provisoire  # texte fondateur non identifié ; intitulé AR à confirmer
+    source_definition: {ref: tn-minfin-fonds-speciaux-2020}
+    references: [srarfi-2006-financement-investissement-agricole]
+    voir_aussi: [fosda, fspa, apia, pret-foncier-agricole]
+    fr:
+      terme: Fonds spécial de développement agricole et de la pêche
+      definition: >
+        Fonds spécial du Trésor qui porte les primes et prêts d'investissement des
+        petits projets d'agriculture, de pêche et d'aquaculture servis par l'APIA,
+        ainsi que les prêts fonciers agricoles. Le « P » s'ajoute à « agricole » : le
+        fonds couvre ensemble l'agriculture et la pêche, et n'est pas un fonds distinct
+        de la pêche. Géré par la Banque nationale agricole avec la Banque tunisienne
+        de solidarité.
+      synonymes: []
+    ar:
+      terme: الصندوق الخاص لتنمية الفلاحة والصيد البحري
+      definition: >
+        صندوق خاص للخزينة يحمل منح وقروض استثمار المشاريع الصغرى للفلاحة والصيد البحري
+        وتربية الأحياء المائية التي تسنِدها الوكالة، إضافة إلى القروض العقارية الفلاحية.
+        يغطّي الفلاحة والصيد البحري معًا، وليس صندوقًا مستقلًّا للصيد البحري. يتولّى
+        تصرّفه البنك الوطني الفلاحي مع البنك التونسي للتضامن.
+      synonymes: []
+
+  - id: fspa
+    acronyme: FSPA
+    statut: valide
+    source_definition: {ref: loi-72-87-lf-1973-fonds-promotion-agricole, locator: "art. 28-30"}
+    source_traduction: {ref: loi-72-87-lf-1973-fonds-promotion-agricole}
+    references: []
+    voir_aussi: [fosda, fosdap, encouragement-developpement-agriculture]
+    fr:
+      terme: Fonds spécial de promotion agricole
+      definition: >
+        Fonds spécial du Trésor rattaché au ministère de l'Agriculture, créé par la
+        loi de finances pour 1973. Il aide notamment les attributaires de lots
+        domaniaux et constitue l'ancêtre budgétaire du soutien à l'investissement
+        agricole.
+      synonymes: []
+    ar:
+      terme: الصندوق الخاص للنهوض بالفلاحة
+      definition: >
+        صندوق خاص للخزينة ملحق بوزارة الفلاحة، أُحدث بقانون المالية لسنة 1973. يساعد
+        خاصّة المنتفعين بمقاسم دولية ويمثّل السلف الميزاني لدعم الاستثمار الفلاحي.
+      synonymes: []
+
+  - id: encouragement-developpement-agriculture
+    acronyme: null
+    statut: valide
+    source_definition: {ref: loi-63-17-encouragement-agriculture}
+    source_traduction: {ref: loi-63-17-encouragement-agriculture}
+    references: [decret-90-822-encouragement-agriculture, decret-86-367-taux-interet-encouragement-agriculture]
+    voir_aussi: [prime-investissement-agricole, pret-foncier-agricole, apia, fspa]
+    fr:
+      terme: Encouragement de l'État au développement de l'agriculture
+      definition: >
+        Régime d'aide fondateur institué en 1963 pour la conservation des eaux et du
+        sol, la productivité des terres cultivées et les constructions rurales. L'aide
+        est technique (avant-projets) et financière, par subventions et prêts
+        bonifiés ; son barème est réécrit en 1990 (subvention, prêt, bonification,
+        indemnité compensatrice).
+      synonymes: []
+    ar:
+      terme: تشجيع الدولة على تنمية الفلاحة
+      definition: >
+        نظام مساعدة مؤسِّس أُحدث سنة 1963 للمحافظة على المياه والتربة والرفع من مردودية
+        الأراضي المزروعة والبناءات الريفية. المساعدة فنّية (دراسات أوّلية) ومالية، عبر
+        منح وقروض مدعّمة؛ أُعيدت كتابة تعريفتها سنة 1990 (منحة، قرض، تدعيم، منحة تعويضية).
+      synonymes: []
+
+  - id: prime-investissement-agricole
+    acronyme: null
+    statut: valide
+    source_definition: {ref: loi-82-67}
+    source_traduction: {ref: loi-82-67}
+    references: [loi-88-18-code-investissements-agricoles, decret-gouv-2017-389-incitations-financieres]
+    voir_aussi: [apia, pret-foncier-agricole, encouragement-developpement-agriculture, fosdap]
+    fr:
+      terme: Prime d'investissement agricole
+      definition: >
+        Avantage financier servi au producteur au titre de l'investissement agricole,
+        à distinguer de l'avantage fiscal. La prime approuvée (engagée, au titre d'un
+        projet agréé) se distingue de la prime versée (décaissée). Instruite par
+        l'APIA et décaissée par les fonds spéciaux du Trésor.
+      synonymes: ["Avantage financier agricole"]
+    ar:
+      terme: منحة الاستثمار الفلاحي
+      definition: >
+        امتياز مالي يُسنَد للمنتج بعنوان الاستثمار الفلاحي، يُميَّز عن الامتياز الجبائي.
+        وتُميَّز المنحة المصادَق عليها (المتعهَّد بها بعنوان مشروع مسنَد) عن المنحة
+        المصروفة. تدرسها الوكالة وتصرفها الصناديق الخاصة للخزينة.
+      synonymes: []
+
+  - id: pret-foncier-agricole
+    acronyme: null
+    statut: valide
+    source_definition: {ref: loi-82-67}
+    source_traduction: {ref: loi-82-67}
+    references: [decret-gouv-2017-389-incitations-financieres]
+    voir_aussi: [apia, prime-investissement-agricole, fosdap]
+    fr:
+      terme: Prêt foncier agricole
+      definition: >
+        Prêt servi au jeune agriculteur ou pêcheur pour l'acquisition de terres
+        agricoles, au titre des encouragements à l'investissement. Instruit par l'APIA
+        et imputé sur les ressources du fonds spécial de développement agricole et de
+        la pêche.
+      synonymes: []
+    ar:
+      terme: القرض العقاري الفلاحي
+      definition: >
+        قرض يُسنَد للفلاح أو الصيّاد الشابّ لاقتناء أراضٍ فلاحية، بعنوان تشجيع
+        الاستثمار. تدرسه الوكالة ويُحمَّل على موارد الصندوق الخاص لتنمية الفلاحة والصيد
+        البحري.
+      synonymes: []
+
+  - id: ammonitrate
+    acronyme: null
+    statut: valide
+    source_definition: {ref: mincommerce-2020-ammonitrate-prix}
+    references: [pm-2025-cmr-engrais]
+    voir_aussi: [phosphate-diammonique, prix-administre-cession]
+    fr:
+      terme: Ammonitrate
+      definition: >
+        Engrais azoté (nitrate d'ammonium) produit et importé par le Groupe chimique
+        tunisien et cédé aux agriculteurs à un prix administré. L'écart entre le coût
+        supporté par le groupe et ce prix constitue le soutien à l'engrais.
+      synonymes: ["Nitrate d'ammonium"]
+    ar:
+      terme: الأمونيتر
+      definition: >
+        سماد آزوتي (نترات النشادر) ينتجه ويورّده المجمع الكيميائي التونسي ويفوّته
+        للفلاحين بسعر إداري. ويمثّل الفارق بين الكلفة التي يتحمّلها المجمع وهذا السعر
+        دعمَ الأسمدة.
+      synonymes: []
+
+  - id: phosphate-diammonique
+    acronyme: DAP
+    statut: provisoire  # intitulé AR à confirmer
+    references: [mincommerce-2020-ammonitrate-prix]
+    voir_aussi: [ammonitrate, prix-administre-cession]
+    fr:
+      terme: Phosphate diammonique
+      definition: >
+        Engrais phosphaté (DAP) produit et importé par le Groupe chimique tunisien et
+        cédé aux agriculteurs à un prix administré, au même titre que l'ammonitrate.
+      synonymes: []
+    ar:
+      terme: الفسفاط ثنائي الأمونيوم
+      definition: >
+        سماد فسفاطي ينتجه ويورّده المجمع الكيميائي التونسي ويفوّته للفلاحين بسعر إداري،
+        شأنه شأن الأمونيتر.
+      synonymes: []
+
+  - id: prix-administre-cession
+    acronyme: null
+    statut: provisoire  # notion analytique ; intitulé AR à confirmer
+    references: [mincommerce-2020-ammonitrate-prix]
+    voir_aussi: [ammonitrate, subvention-multiplication-semences]
+    fr:
+      terme: Prix administré de cession
+      definition: >
+        Prix de vente d'un intrant fixé par l'administration — pour l'engrais, par le
+        ministère du Commerce — en deçà du coût supporté par l'opérateur. L'écart
+        entre ce coût et le prix administré est le soutien implicite à l'intrant.
+      synonymes: []
+    ar:
+      terme: سعر التفويت الإداري
+      definition: >
+        سعر بيع مُدخَل تضبطه الإدارة — بالنسبة للأسمدة، وزارة التجارة — دون الكلفة التي
+        يتحمّلها المتعامل. والفارق بين هذه الكلفة والسعر الإداري هو الدعم الضمني للمُدخَل.
+      synonymes: []
+
+  - id: subvention-multiplication-semences
+    acronyme: null
+    statut: provisoire  # barème et texte fondateur non identifiés ; AR à confirmer
+    references: [kapitalis-2020-semences-subvention]
+    voir_aussi: [prix-administre-cession, orge-fourragere]
+    fr:
+      terme: Subvention à la multiplication des semences
+      definition: >
+        Soutien de l'État à la production, par des coopératives d'agriculteurs, de
+        semences certifiées de grandes cultures. L'Office des céréales donne aux
+        coopératives l'aval financier d'accès au crédit ; la subvention, d'abord
+        réservée aux variétés locales, est étendue aux variétés importées en 2020.
+      synonymes: ["Subvention à la multiplication des semences céréalières"]
+    ar:
+      terme: دعم إكثار البذور
+      definition: >
+        دعم الدولة لإنتاج تعاونيات الفلاحين بذورًا مُراقَبة للزراعات الكبرى. يمنح ديوان
+        الحبوب التعاونيات الضمان المالي للنفاذ إلى القرض؛ ووُسّع الدعم، الذي كان مقصورًا
+        على الأصناف المحلية، إلى الأصناف المورّدة سنة 2020.
+      synonymes: []
+
+  - id: orge-fourragere
+    acronyme: null
+    statut: valide
+    source_definition: {ref: oc-vente-orge-fourragere}
+    references: []
+    voir_aussi: [subvention-multiplication-semences]
+    fr:
+      terme: Orge fourragère
+      definition: >
+        Orge destinée à l'alimentation du bétail, dont l'Office des céréales
+        centralise la vente aux fabricants d'aliments du bétail selon des quotas
+        attribués par le ministère de l'Agriculture. L'écart entre le prix de cession
+        aux industriels et le prix d'achat aux producteurs forme un soutien implicite.
+      synonymes: []
+    ar:
+      terme: الشعير العلفي
+      definition: >
+        شعير موجَّه لتغذية الماشية، يتولّى ديوان الحبوب تمركز بيعه لمصنّعي أعلاف الماشية
+        وفق حصص تسندها وزارة الفلاحة. ويمثّل الفارق بين سعر التفويت للصناعيين وسعر
+        الشراء من المنتجين دعمًا ضمنيًا.
+      synonymes: []
+
+  - id: tarif-eau-irrigation
+    acronyme: null
+    statut: valide
+    source_definition: {ref: arrete1974regIrrig}
+    source_traduction: {ref: arrete1974regIrrig}
+    references: [loi75-16, secadenordTarif2025]
+    voir_aussi: [perimetre-public-irrigue, recouvrement-des-couts, subvention-implicite-irrigation, redevance-domaine-public-hydraulique]
+    fr:
+      terme: Tarif de l'eau d'irrigation
+      definition: >
+        Prix administré que l'exploitant d'un périmètre public irrigué paie pour l'eau
+        livrée, au mètre cube consommé, souvent assorti d'une part fixe à l'hectare.
+        Fixé jusqu'en 1966 par arrêté publié, il est depuis arrêté par chaque
+        gestionnaire régional hors Journal officiel ; il n'existe pas de série
+        nationale homogène.
+      synonymes: []
+    ar:
+      terme: تعريفة مياه الري
+      definition: >
+        سعر إداري يدفعه مستغلّ المنطقة السقوية العمومية مقابل الماء المُسلَّم، بالمتر
+        المكعّب المستهلَك، مقرونًا غالبًا بجزء قارّ للهكتار. كان يُضبَط إلى 1966 بقرار
+        منشور، وأصبح منذئذٍ يُضبَط من كلّ متصرّف جهوي خارج الرائد الرسمي؛ ولا توجد سلسلة
+        وطنية متجانسة.
+      synonymes: []
+
+  - id: recouvrement-des-couts
+    acronyme: null
+    statut: provisoire  # notion analytique ; AR à confirmer
+    references: [kfwMedjerda2023, treyerPolitiquesHydrauliquesTunisie]
+    voir_aussi: [tarif-eau-irrigation, subvention-implicite-irrigation]
+    fr:
+      terme: Recouvrement des coûts
+      definition: >
+        Part du coût d'un service — ici la fourniture de l'eau d'irrigation — couverte
+        par le prix facturé à l'usager. Pour l'eau d'irrigation, le tarif couvre au
+        mieux les coûts d'exploitation et de maintenance, jamais l'investissement.
+      synonymes: []
+    ar:
+      terme: استرجاع التكاليف
+      definition: >
+        نسبة كلفة خدمة ما — هنا توفير ماء الري — التي يغطّيها السعر المفوتر للمنتفع.
+        بالنسبة لماء الري، تغطّي التعريفة في أحسن الأحوال كلفة الاستغلال والصيانة، ولا
+        تغطّي الاستثمار أبدًا.
+      synonymes: []
+
+  - id: subvention-implicite-irrigation
+    acronyme: null
+    statut: provisoire  # notion analytique ; AR à confirmer
+    references: [secadenordTarif2025, kfwMedjerda2023]
+    voir_aussi: [tarif-eau-irrigation, recouvrement-des-couts, perimetre-prive-irrigue]
+    fr:
+      terme: Subvention implicite à l'irrigation
+      definition: >
+        Écart entre le coût du service de l'eau d'irrigation — mobilisation,
+        transport, distribution, maintenance — et le prix facturé à l'exploitant.
+        Supportée par les gestionnaires régionaux et, au-delà, par le budget de
+        l'État ; elle n'apparaît pas comme une ligne de dépense nommée.
+      synonymes: []
+    ar:
+      terme: الدعم الضمني للري
+      definition: >
+        الفارق بين كلفة خدمة ماء الري — التعبئة والنقل والتوزيع والصيانة — والسعر
+        المفوتر للمستغلّ. يتحمّله المتصرّفون الجهويون، وبعدهم ميزانية الدولة؛ ولا يظهر
+        في شكل بند نفقة مُسمّى.
+      synonymes: []
+
+  - id: mise-en-valeur-agricole
+    acronyme: null
+    statut: valide
+    source_definition: {ref: loi63-18}
+    source_traduction: {ref: loi63-18}
+    references: [loi2000-30]
+    voir_aussi: [perimetre-public-irrigue, agence-fonciere-agricole]
+    fr:
+      terme: Mise en valeur agricole
+      definition: >
+        Obligation faite au propriétaire d'une terre d'un périmètre public irrigué de
+        l'équiper à l'irrigation, de la protéger contre la stagnation des eaux et d'y
+        pratiquer des cultures irriguées. Une terre est réputée mise en valeur lorsque
+        90 % au moins de sa superficie sont irrigués dans les cinq ans qui suivent la
+        fourniture de l'eau ; le manquement entraîne la déchéance du droit à l'eau.
+      synonymes: []
+    ar:
+      terme: الإحياء الفلاحي
+      definition: >
+        واجب يُفرَض على مالك أرض بمنطقة سقوية عمومية في تجهيزها للريّ وحمايتها من ركود
+        المياه وممارسة زراعات مسقية فيها. تُعدّ الأرض محياةً متى سُقِي 90 % على الأقلّ
+        من مساحتها في غضون خمس سنوات من توفير الماء؛ ويترتّب عن الإخلال سقوط الحقّ في الماء.
+      synonymes: []
+
+  - id: redevance-domaine-public-hydraulique
+    acronyme: null
+    statut: valide
+    source_definition: {ref: loi75-16}
+    source_traduction: {ref: loi75-16}
+    references: [arrete2014redevancesDPH]
+    voir_aussi: [tarif-eau-irrigation, perimetre-public-irrigue]
+    fr:
+      terme: Redevance du domaine public hydraulique
+      definition: >
+        Prélèvement dû pour l'utilisation des eaux du domaine public, à distinguer du
+        tarif de livraison de l'eau dans un périmètre : il frappe le prélèvement de la
+        ressource, en amont de la distribution. Son montant est fixé par arrêté du
+        ministre chargé des finances.
+      synonymes: []
+    ar:
+      terme: معلوم استعمال الملك العمومي للمياه
+      definition: >
+        معلوم يُستوجَب مقابل استعمال مياه الملك العمومي، يُميَّز عن تعريفة تسليم الماء
+        داخل منطقة: يطال أخذ المورد، في مرحلة سابقة للتوزيع. ويُضبَط مقداره بقرار من
+        الوزير المكلّف بالمالية.
+      synonymes: []
+
+  - id: groupement-developpement-agricole
+    acronyme: GDA
+    statut: provisoire  # décret-cadre moderne non identifié ; AR à confirmer
+    source_definition: {ref: loi75-16}
+    references: []
+    voir_aussi: [crda, tarif-eau-irrigation]
+    fr:
+      terme: Groupement de développement agricole
+      definition: >
+        Association d'usagers chargée de la gestion locale de l'eau d'irrigation,
+        héritière des groupements d'intérêt collectif (GIC). Le code des eaux renvoie à
+        ces groupements pour les associations d'usagers ; leur texte-cadre moderne
+        n'est pas identifié ici.
+      synonymes: ["Groupement d'intérêt collectif"]
+    ar:
+      terme: مجمع التنمية الفلاحية
+      definition: >
+        جمعية منتفعين تتولّى التصرّف المحلّي في ماء الري، وريثة جمعيات المصلحة المشتركة.
+        تحيل مجلّة المياه على هذه المجامع في خصوص جمعيات المنتفعين؛ ولم يُحدَّد هنا نصّها
+        الإطاري الحديث.
+      synonymes: []
+
+  - id: calamite-naturelle-agricole
+    acronyme: null
+    statut: valide
+    source_definition: {ref: TnLF1987, locator: "art. 52-56"}
+    source_traduction: {ref: TnLF1987}
+    references: [TnDecret2020-795, TnArrete2026-05-07Secheresse]
+    voir_aussi: [fonds-indemnisation-calamites, souscription-annuelle-fonds, ctama]
+    fr:
+      terme: Calamité naturelle agricole
+      definition: >
+        Aléa climatique — sécheresse, inondation, tempête, grêle — qui détruit la
+        récolte ou le cheptel. Chaque calamité ouvrant droit à indemnisation est
+        reconnue par un texte daté qui en constate la survenance et annexe la liste
+        des gouvernorats, des cultures et de la période concernés.
+      synonymes: []
+    ar:
+      terme: الجائحة الطبيعية الفلاحية
+      definition: >
+        عارض مناخي — جفاف أو فيضان أو عاصفة أو برَد — يُتلف المحصول أو الماشية. تُقَرّ
+        كلّ جائحة تخوّل الحقّ في التعويض بنصّ مؤرّخ يُثبت وقوعها ويُلحِق قائمة الولايات
+        والزراعات والفترة المعنيّة.
+      synonymes: []
+
+  - id: fonds-indemnisation-calamites
+    acronyme: null
+    statut: valide
+    source_definition: {ref: TnLF2018art17, locator: "art. 17"}
+    source_traduction: {ref: TnLF2018art17}
+    references: [TnLF1987, TnDecret2018-822, TnDecret2025-213]
+    voir_aussi: [calamite-naturelle-agricole, souscription-annuelle-fonds, ctama, fonds-national-garantie]
+    fr:
+      terme: Fonds d'indemnisation des dommages agricoles dus aux calamités naturelles
+      definition: >
+        Fonds créé en 1987 sous le nom de fonds de mutualité, renommé en 2018. Il
+        indemnise l'agriculteur des zones reconnues d'un pourcentage des dommages
+        subis, apprécié au vu d'une expertise. Alimenté par une subvention de l'État
+        et les contributions des agriculteurs qui y souscrivent.
+      synonymes: ["Fonds de mutualité"]
+    ar:
+      terme: صندوق التعويض عن الأضرار الفلاحية الناتجة عن الجوائح الطبيعية
+      definition: >
+        صندوق أُحدث سنة 1987 باسم صندوق التعاون، وأُعيدت تسميته سنة 2018. يعوّض فلاح
+        المناطق المُقَرّة بنسبة من الأضرار المتكبَّدة، تُقدَّر على ضوء خبرة. يُموَّل بمنحة
+        من الدولة وبمساهمات الفلاحين المنخرطين فيه.
+      synonymes: []
+
+  - id: souscription-annuelle-fonds
+    acronyme: null
+    statut: valide
+    source_definition: {ref: TnDecret2025-213}
+    source_traduction: {ref: TnDecret2025-213}
+    references: []
+    voir_aussi: [fonds-indemnisation-calamites, calamite-naturelle-agricole]
+    fr:
+      terme: Souscription annuelle au fonds
+      definition: >
+        Inscription de l'agriculteur au fonds d'indemnisation des calamités, campagne
+        par campagne, dans un délai fixé par communiqué conjoint des ministres de
+        l'Agriculture et des Finances. Cette souscription conditionne le droit à
+        l'indemnisation en cas de calamité reconnue.
+      synonymes: []
+    ar:
+      terme: الانخراط السنوي في الصندوق
+      definition: >
+        انخراط الفلاح في صندوق التعويض عن الجوائح، موسمًا بموسم، في أجل يُضبَط ببلاغ
+        مشترك بين وزيرَي الفلاحة والمالية. ويشترط هذا الانخراط الحقّ في التعويض عند
+        جائحة مُقَرّة.
+      synonymes: []
+
+  - id: ctama
+    acronyme: CTAMA
+    statut: valide
+    source_definition: {ref: TnCodeAssurances1992}
+    source_traduction: {ref: TnCodeAssurances1992}
+    references: [TnDecret1992-2257, CtamaEF2018]
+    voir_aussi: [smsa, fonds-indemnisation-calamites, calamite-naturelle-agricole]
+    fr:
+      terme: Caisse tunisienne d'assurances mutuelles agricoles
+      definition: >
+        Société d'assurance à forme mutuelle régie par le code des assurances, acteur
+        principal de l'assurance mutuelle agricole. Elle réassure et garantit un réseau
+        de caisses régionales d'assurances mutuelles agricoles et occupe une position
+        dominante sur le risque agricole, couvert à titre contractuel et de droit privé.
+      synonymes: ["Assurance mutuelle agricole"]
+    ar:
+      terme: الصندوق التونسي للتأمين التعاوني الفلاحي
+      definition: >
+        شركة تأمين ذات صبغة تعاونية تخضع لمجلّة التأمين، وهي الفاعل الرئيسي في التأمين
+        التعاوني الفلاحي. تعيد تأمين وتضمن شبكة من الصناديق الجهوية للتأمين التعاوني
+        الفلاحي وتحتلّ موقعًا مهيمنًا على الخطر الفلاحي المُغطّى تعاقديًا وبالقانون الخاص.
+      synonymes: []
+
+  - id: smsa
+    acronyme: SMSA
+    statut: valide
+    source_definition: {ref: TnLoi2005-94SMSA}
+    source_traduction: {ref: TnLoi2005-94SMSA}
+    references: []
+    voir_aussi: [ctama, groupement-interprofessionnel]
+    fr:
+      terme: Société mutuelle de services agricoles
+      definition: >
+        Structure de services au monde rural, régie par la loi de 2005, distincte de
+        l'assurance : elle ne porte pas le risque climatique mais appartient à la même
+        économie mutualiste du secteur agricole.
+      synonymes: []
+    ar:
+      terme: الشركة التعاونية للخدمات الفلاحية
+      definition: >
+        هيكل خدمات للعالم الريفي يخضع لقانون 2005، يختلف عن التأمين: لا يحمل الخطر
+        المناخي لكنّه ينتمي إلى الاقتصاد التعاوني ذاته للقطاع الفلاحي.
+      synonymes: []
+
+  - id: fonds-national-garantie
+    acronyme: FNG
+    statut: valide
+    source_definition: {ref: TnArrete2026-05-07Secheresse, locator: "pp. 861-863"}
+    source_traduction: {ref: TnArrete2026-05-07Secheresse}
+    references: []
+    voir_aussi: [fonds-indemnisation-calamites, credit-saisonnier-campagne]
+    fr:
+      terme: Fonds national de garantie
+      definition: >
+        Fonds qui prend en charge, pour les agriculteurs sinistrés d'une calamité
+        reconnue, les intérêts du rééchelonnement de leurs crédits de campagne. Il est
+        distinct du fonds d'indemnisation des dommages agricoles dus aux calamités
+        naturelles : il intervient sur le crédit, non sur l'indemnisation du dommage.
+      synonymes: []
+    ar:
+      terme: الصندوق الوطني للضمان
+      definition: >
+        صندوق يتكفّل، لفائدة الفلاحين المتضرّرين من جائحة مُقَرّة، بفوائد إعادة جدولة
+        قروضهم الموسمية. وهو مستقلّ عن صندوق التعويض عن الأضرار الفلاحية الناتجة عن
+        الجوائح الطبيعية: يتدخّل في القرض لا في التعويض عن الضرر.
   - id: universite-de-tunis
     acronyme: null
     statut: valide

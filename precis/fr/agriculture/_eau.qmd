@@ -1,0 +1,229 @@
+# L'eau d'irrigation {#sec-agri-eau}
+
+<!-- TODO (architecte) : domicile de l'eau d'irrigation à confirmer (agriculture, proposé ; reste de l'eau → environnement). -->
+
+Ce chapitre décrit l'eau d'irrigation comme un intrant que l'État met à la disposition du
+producteur : la terre irriguée qu'il aménage dans les périmètres publics irrigués, les
+règles qui conditionnent l'accès à l'eau sur ces terres, et surtout le prix auquel l'eau
+d'irrigation est livrée à l'exploitant — un prix administré, inférieur à son coût, et la
+subvention que cet écart représente. Il regarde l'eau du côté du bénéficiaire — qui reçoit
+l'eau, à quel tarif, avec quel [recouvrement des coûts](#g-recouvrement-des-couts) —, et non du côté de l'ouvrage qui la
+mobilise.
+
+Trois sujets voisins vivent ailleurs. L'eau potable distribuée par la Société nationale
+d'exploitation et de distribution des eaux (SONEDE) et l'assainissement relèvent du futur
+livre consacré à l'environnement, et non de ce chapitre : la longue série des arrêtés
+« fixant le prix de l'eau » du ministre de l'Agriculture, qui approuvent les tarifs de la
+SONEDE, porte sur l'eau potable et non sur l'eau d'irrigation. La grande hydraulique — les
+barrages et les transferts qui mobilisent la ressource en amont — est un investissement
+public dont ce chapitre ne retient que le coût de gros répercuté à l'irrigation. Les
+établissements qui gèrent l'eau agricole dans les régions — les commissariats régionaux au
+développement agricole (CRDA) et les offices de mise en valeur des périmètres irrigués —
+sont décrits comme institutions au chapitre de la tutelle (@sec-agri-institution-crda,
+@sec-agri-institution-mev) ; ce chapitre y renvoie et ne reprend pas leur organisation.
+
+## Vue d'ensemble {#sec-agri-eau-vue}
+
+Le soutien de l'État au producteur par l'eau d'irrigation passe par trois canaux
+distincts, chacun avec son socle de textes.
+
+- **La terre irriguée aménagée par l'État**, dans les périmètres publics irrigués : l'État
+  équipe la terre à l'irrigation et en fixe le régime foncier par la réforme agraire des
+  périmètres publics irrigués de 1963, plusieurs fois remaniée. Ce régime et l'agence qui le
+  met en œuvre sont décrits au chapitre de la tutelle (@sec-agri-institution-mev) ; on ne
+  reprend ici que ce qu'il impose en matière d'eau (@sec-agri-eau-ppi).
+- **Le tarif de l'eau d'irrigation**, prix administré au mètre cube livré dans un périmètre
+  public irrigué, encadré par le code des eaux et le règlement de distribution de 1974, mais
+  fixé localement par chaque gestionnaire (@sec-agri-eau-tarif). C'est le cœur distributif du
+  chapitre : l'eau est facturée en deçà de son coût, et l'écart est une subvention
+  (@sec-agri-eau-subvention).
+- **L'aide à l'irrigation privée**, par laquelle l'État subventionne la création de points
+  d'eau et de périmètres irrigués par les exploitants eux-mêmes (@sec-agri-eau-prive).
+
+À ces canaux s'ajoute la redevance du domaine public hydraulique, prélevée sur le
+prélèvement d'eau et distincte du tarif de livraison (@sec-agri-eau-redevance).
+
+## L'eau dans les périmètres publics irrigués {#sec-agri-eau-ppi}
+
+Le régime foncier des terres irriguées par l'État — la réforme agraire des périmètres
+publics irrigués de 1963 et l'Agence foncière agricole qui la met en œuvre — est exposé au
+chapitre de la tutelle (@sec-agri-institution-mev). On ne retient ici que ce qu'il
+commande du côté de l'eau : dans un [périmètre public irrigué](#g-perimetre-public-irrigue), l'accès à l'eau d'irrigation
+n'est pas libre, il est la contrepartie d'une obligation de mise en valeur.
+
+Le propriétaire d'une terre située dans un périmètre public irrigué est tenu de la mettre
+en valeur : de l'équiper à l'irrigation, de la protéger contre la stagnation des eaux et
+d'y pratiquer des cultures irriguées. Une terre est réputée [mise en valeur](#g-mise-en-valeur-agricole) lorsque 90 % au
+moins de sa superficie sont irrigués dans les cinq ans qui suivent la fourniture de l'eau.
+Le manquement à cette obligation entraîne la déchéance du droit à la fourniture de l'eau
+d'irrigation, prononcée par le ministre chargé de l'agriculture, et une amende par hectare
+non mis en valeur. En cas de réhabilitation ou de modernisation d'un périmètre, l'État met
+à la charge des propriétaires une contribution financière à l'opération. L'eau livrée dans
+un périmètre public irrigué est donc un droit conditionnel, lié à l'exploitation effective
+de la terre, et non une simple fourniture tarifée (@sec-agri-institution-mev).
+
+## Le code des eaux et le règlement de distribution {#sec-agri-eau-code .domicile-unique}
+
+Le cadre général des droits d'usage de l'eau et des prélèvements qui les accompagnent est
+le code des eaux, que l'État promulgue en 1975 ([loi n° 75-16 du 31 mars
+1975](#r-eau-code-1975)). Le code soumet l'eau à un domaine public hydraulique, organise
+les droits d'usage de l'eau, dont l'usage agricole, et prévoit les redevances dues pour ce
+prélèvement ainsi que les associations d'usagers de l'eau. L'État le révise à deux reprises
+sur la période retenue : en 1987 ([loi n° 87-35 du 6 juillet 1987](#r-eau-code-1987)) puis
+en 2001 ([loi n° 2001-116 du 26 novembre 2001](#r-eau-code-2001)).
+
+La distribution de l'eau à usage d'irrigation dans les périmètres publics obéit en outre à
+un règlement national pris en 1974 ([arrêté du 30 octobre 1974](#r-eau-reglement-1974)),
+qui en fixe les conditions générales de délivrance. C'est le dernier texte national à portée
+générale sur la délivrance de l'eau d'irrigation : après lui, le prix au mètre cube cesse
+d'être fixé par un texte publié et passe aux gestionnaires régionaux (@sec-agri-eau-tarif).
+
+Les articles du code des eaux sur les redevances d'usage (chapitre 3) et sur les
+associations d'usagers (chapitre 8) ne sont pas établis ici dans leur détail.
+
+<!-- TODO (documentaliste) : OCR manuel du code des eaux 75-16 fasc. 23 (ch. 3 redevances, ch. 8 associations d'usagers) ; établir les articles sur les droits d'usage, les redevances et les groupements d'usagers. -->
+
+Le régime des groupements de gestion de l'eau — groupements d'intérêt collectif puis
+[groupements de développement agricole](#g-groupement-developpement-agricole), auxquels le code des eaux renvoie pour les
+associations d'usagers — n'a pas de texte-cadre moderne identifié ici.
+
+<!-- RECHERCHE r-eau-irr-gic : décret-cadre des groupements d'intérêt collectif / de développement agricole (GIC/GDA) de gestion de l'eau d'irrigation (voir docs/recherches.yml) -->
+
+## Le tarif de l'eau d'irrigation : un prix administré sans série nationale {#sec-agri-eau-tarif}
+
+Le [tarif de l'eau d'irrigation](#g-tarif-eau-irrigation) est le prix que l'exploitant d'un périmètre public irrigué
+paie pour l'eau qui lui est livrée, au mètre cube consommé, souvent assorti d'une part fixe
+à l'hectare. Jusqu'en 1966, ce prix était fixé périmètre par périmètre par des arrêtés du
+ministre de l'Agriculture publiés au *Journal officiel*. Depuis, il est arrêté par chaque
+gestionnaire régional — office de mise en valeur, commissariat régional au développement
+agricole ou groupement d'usagers — par des décisions qui ne sont pas publiées au *Journal
+officiel*. Il n'existe donc pas de série nationale homogène du tarif de l'eau d'irrigation :
+le prix se reconstitue par périmètre, à partir des données des commissariats régionaux et
+des études de terrain.
+
+<!-- RECHERCHE r-eau-irr-tarif-national : série nationale du tarif de l'eau d'irrigation au mètre cube dans les périmètres publics irrigués (prix administré, fixé hors Journal officiel) (voir docs/recherches.yml) -->
+
+Faute de série continue, le tarif se lit par cas, à travers des études datées dont il faut
+retenir la méthode et le périmètre, et qui ne se recollent pas en une chronique nationale.
+
+- Dans la vallée de la Medjerda, l'évaluation conduite en 2023 par la banque de
+  développement allemande KfW sur la modernisation des périmètres irrigués décrit un tarif
+  **binôme** : une part fixe de 74 dinars par hectare et une part variable de 0,062 dinar par
+  mètre cube consommé. Cette évaluation relève que les hausses de tarif ont été interrompues
+  après 2003 et que la couverture des coûts d'exploitation en est restée faible
+  [@kfwMedjerda2023].
+- Dans les grands périmètres hydrauliques du gouvernorat de Kasserine, l'étude de
+  gouvernance de l'eau publiée en 2017 par International Alert situe la tarification de l'eau
+  d'irrigation dans une fourchette de 28 à 170 millimes par mètre cube selon les périmètres
+  [@internationalAlertEauKasserine2017].
+- Dans les périmètres de petite et moyenne hydraulique, l'analyse des politiques
+  hydrauliques du CIRAD retient un coût moyen de l'ordre de 0,071 dinar par mètre cube et un
+  taux de recouvrement des coûts proche de 100 %, les tarifs les plus bas se trouvant dans
+  les oasis du Sud, entre 0,028 et 0,030 dinar par mètre cube [@treyerPolitiquesHydrauliquesTunisie].
+
+Ces valeurs ne sont pas comparables terme à terme : elles portent sur des périmètres, des
+années et des assiettes de coûts différents, et chacune n'éclaire que son cas. Le fil
+commun que les trois études mettent en avant est le même : le tarif couvre au mieux les
+coûts d'exploitation et de maintenance, jamais l'investissement, et le gel des hausses
+après 2003 a creusé l'écart entre le prix facturé et le coût du service.
+
+<!-- TODO (documentaliste) : relever sur les PDF la méthode de chaque étude (année des données, périmètres couverts, assiette de coûts), en particulier pour l'analyse du CIRAD (PDF non récupéré, mur HAL). Demander à la DGGREE / aux CRDA la série des tarifs au m³ par périmètre (non publiée au Journal officiel) pour construire une vue datée. -->
+
+## La subvention implicite : coût de gros et prix facturé {#sec-agri-eau-subvention}
+
+L'eau livrée dans un périmètre public irrigué a un coût de gros : avant d'être distribuée à
+l'exploitant, elle est mobilisée et transportée par des ouvrages dont l'exploitant paie, à
+la livraison, bien moins que le coût. La part de ce coût que le gestionnaire régional
+achète en amont se mesure, pour le Nord du pays, au prix auquel la Société d'exploitation
+du canal et des adductions des eaux du Nord (SECADENORD) vend l'eau en gros aux
+commissariats régionaux. Ce prix de gros est suivi, zone par zone, de 2014 à 2025 [@secadenordTarif2025] ; il ne se
+confond pas avec le tarif facturé à l'agriculteur, mais il en donne le plancher de coût. Il
+varie fortement d'une zone à l'autre — d'une vingtaine à plus de cent millimes le mètre cube,
+selon la distance et le relief du transport. Rapporté à sa médiane, il est **resté inchangé de
+2014 à 2021** — un gel pluriannuel —, puis **a augmenté à partir de 2022**, d'environ 46 % en
+quatre ans.
+
+```{python}
+#| label: fig-agri-eau-secadenord
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import agriculture as ag
+ag.fig_eau_secadenord(
+    caption=("Prix de vente de l'eau en gros par la SECADENORD aux gestionnaires régionaux, "
+             "médiane et fourchette sur une vingtaine de points de livraison, 2014-2025"),
+    note_lecture=("Prix auquel la SECADENORD vend le mètre cube d'eau en gros au commissariat "
+                  "régional ou à la SONEDE, avant distribution à l'exploitant ; il mesure le "
+                  "coût amont du service, non le tarif facturé à l'agriculteur. Médiane et "
+                  "fourchette calculées sur les 21 à 22 points de livraison suivis chaque "
+                  "année ; les années 2014 à 2021 portent le même barème."))
+```
+
+Le rapprochement de ce coût de gros et des tarifs facturés relevés par les études
+(@sec-agri-eau-tarif) éclaire l'ordre de grandeur de la subvention : la part variable
+relevée dans la Medjerda — 0,062 dinar, soit 62 millimes par mètre cube — se situe dans la
+zone du coût de gros du Nord, sans y ajouter la distribution, la maintenance ni
+l'investissement, que le tarif ne couvre pas. L'écart entre le coût du service et le prix
+facturé est la [subvention implicite à l'irrigation](#g-subvention-implicite-irrigation), supportée par les gestionnaires
+régionaux et, au-delà, par le budget de l'État.
+
+<!-- TODO (documentaliste) : reste à chiffrer la dépense du programme « Eaux » de la mission Agriculture (PAP/RAP 2015-2025) et les transferts aux gestionnaires régionaux, pour mesurer la subvention implicite côté budget en regard du coût de gros ci-dessus. -->
+
+## L'aide de l'État à l'irrigation privée {#sec-agri-eau-prive .domicile-unique}
+
+À côté de l'eau qu'il distribue dans les périmètres publics, l'État aide l'exploitant à
+s'équiper lui-même : il subventionne la création de points d'eau privés et l'aménagement de
+[périmètres irrigués par les agriculteurs](#g-perimetre-prive-irrigue). Il en règle les conditions en 1972 ([décret
+n° 72-171 du 10 mai 1972](#r-eau-irrig-prive-1972)), qui ouvre des subventions et des prêts
+aux exploitants qui creusent un point d'eau ou aménagent un périmètre à l'irrigation. C'est
+le canal budgétaire direct du soutien à l'investissement d'irrigation à la ferme, distinct
+du tarif de l'eau livrée.
+
+Les taux de subvention et de prêt, et leur évolution, ne sont pas établis ici.
+
+<!-- TODO (documentaliste) : établir la série des taux de subvention et de prêt à l'irrigation privée à partir des arrêtés pris sur le fondement du décret n° 72-171 (1972, 1976, 1977, 1982, 1983, 1986, 1988, 1989…) et du modificatif décret n° 77-194 ; clés à verser au references.json. Sans vue datée, pas de taux isolé dans le texte. -->
+
+## La redevance du domaine public hydraulique {#sec-agri-eau-redevance .domicile-unique}
+
+La [redevance du domaine public hydraulique](#g-redevance-domaine-public-hydraulique) est un prélèvement dû pour l'utilisation des
+eaux du domaine public, à ne pas confondre avec le tarif de livraison de l'eau dans un
+périmètre : elle frappe le prélèvement de la ressource, en amont de la distribution. Son
+montant est fixé par arrêté du ministre chargé des finances ; le dernier identifié ici est
+l'arrêté de 2014 ([arrêté du 3 novembre 2014](#r-eau-redevance-dph-2014)), qui fixe les
+redevances pour l'utilisation des eaux et du sable du domaine public hydraulique.
+
+<!-- TODO (documentaliste) : établir la série des redevances du domaine public hydraulique (arrêtés 1967, 1985, 1991, 2014) et la part agricole de l'assiette, à partir de l'OCR du code des eaux fasc. 23 ch. 3 ; clés des arrêtés antérieurs à verser au references.json. -->
+
+## L'état du droit {#sec-agri-eau-etat}
+
+En 2024, l'eau d'irrigation est encadrée par un socle ancien et stable : le code des eaux
+de 1975, deux fois révisé (@sec-agri-eau-code), et la réforme agraire des périmètres publics
+irrigués, qui lie l'accès à l'eau à l'obligation de mise en valeur (@sec-agri-eau-ppi). Le
+prix de l'eau livrée reste un prix administré fixé localement, sans série nationale et en
+deçà du coût du service, les hausses étant à l'arrêt depuis 2003 selon l'évaluation de la
+Medjerda (@sec-agri-eau-tarif, @sec-agri-eau-subvention). L'aide à l'irrigation privée de
+1972 (@sec-agri-eau-prive) et la redevance du domaine public hydraulique
+(@sec-agri-eau-redevance) complètent le dispositif, la première du côté de l'investissement
+à la ferme, la seconde du côté du prélèvement de la ressource.
+
+## La chronologie des textes {#sec-agri-eau-chronologie}
+
+Le tableau ci-dessous réunit, dans l'ordre des dates, les textes domiciliés dans ce
+chapitre : le code des eaux et sa distribution, l'aide à l'irrigation privée et la redevance
+du domaine public hydraulique. Les textes de la réforme agraire des périmètres publics
+irrigués, des offices de mise en valeur et des commissariats régionaux figurent au chapitre
+de la tutelle (@sec-agri-institution-chronologie). La colonne « Portée » dit de chaque texte
+s'il ouvre un dispositif, s'il le met en œuvre ou s'il l'ajuste.
+
+:::: {.chronologie-repliable titre="Eau d'irrigation : les textes, date par date, 1972-2014"}
+| Date — texte | Objet | Portée |
+|---|---|---|
+| []{#r-eau-irrig-prive-1972}[10 mai 1972]{.insecable} — décret n° 72-171 [@decret72-171] | règle l'aide de l'État à la création de points d'eau privés et de périmètres irrigués | **rupture** — aide à l'irrigation privée |
+| []{#r-eau-reglement-1974}[30 octobre 1974]{.insecable} — arrêté du ministre de l'agriculture [@arrete1974regIrrig] | règlement national sur la distribution des eaux à usage d'irrigation dans les périmètres publics | étape — distribution de l'eau |
+| []{#r-eau-code-1975}[31 mars 1975]{.insecable} — loi n° 75-16 [@loi75-16] | promulgue le code des eaux : domaine public hydraulique, droits d'usage, redevances, associations d'usagers | **rupture** — code des eaux |
+| []{#r-eau-code-1987}[6 juillet 1987]{.insecable} — loi n° 87-35 [@loi87-35] | modifie certains articles du code des eaux | ajustement — code des eaux |
+| []{#r-eau-code-2001}[26 novembre 2001]{.insecable} — loi n° 2001-116 [@loi2001-116] | modifie le code des eaux | ajustement — code des eaux |
+| []{#r-eau-redevance-dph-2014}[3 novembre 2014]{.insecable} — arrêté du ministre de l'économie et des finances [@arrete2014redevancesDPH] | fixe les redevances pour l'utilisation des eaux et du sable du domaine public hydraulique | étape — redevance du domaine public hydraulique |
+::::
+
+<!-- TODO (terminologue) : notions à ancrer (passe 1 non faite) — périmètre public irrigué (PPI) et périmètre privé irrigué ; tarif de l'eau d'irrigation (prix administré au m³) ; recouvrement des coûts ; subvention implicite à l'irrigation ; mise en valeur agricole ; redevance du domaine public hydraulique ; groupement de développement agricole / d'intérêt collectif (GDA/GIC) de gestion de l'eau. -->

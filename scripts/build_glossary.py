@@ -54,6 +54,7 @@ BOOKS = [
     "informel",
     "transport",
     "environnement",
+    "agriculture",
 ]
 
 LANGS = ("fr", "ar")
