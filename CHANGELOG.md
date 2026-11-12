@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.32.0](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.31.0...v1.32.0) (2026-11-12)
+
+
+### ✨ Nouveautés
+
+* ouvrir le volume « L'agriculture — le soutien au producteur » ([#807](https://github.com/benjello/precis-socio-fiscal-tunisie/issues/807)) ([c943338](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/c9433385bccb2d624cdbe056ee4fb4974d5e3d66))
+
+
+### 📝 Documentation
+
+* **notes:** agriculture fusionnée ([#807](https://github.com/benjello/precis-socio-fiscal-tunisie/issues/807)), chantier clos ([fb83eca](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/fb83eca74c8a35ec76cf32c6d9e91e18b0e4e5d1))
+* **notes:** relais de la session des 10-11 novembre (doctrine, plans de livres, état des volumes, en-attente) ([8d52349](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/8d52349dfb96729619315d6953d75eb072f6e6d6))
+
 ## [1.31.0](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.30.0...v1.31.0) (2026-11-11)
 
 
