@@ -5,6 +5,8 @@
 
 ### ✨ Nouveautés
 
+* **environnement:** le volume « L'environnement » : institutions sous tutelle, dépense, assainissement (redevances déménagées depuis les entreprises publiques), déchets, dépollution et fonds ([#803](https://github.com/benjello/precis-socio-fiscal-tunisie/issues/803))
+* **éducation:** finition des résidus de l'histoire de l'éducation et glossaire ([#804](https://github.com/benjello/precis-socio-fiscal-tunisie/issues/804))
 * ouvrir le volume « L'agriculture — le soutien au producteur » ([#807](https://github.com/benjello/precis-socio-fiscal-tunisie/issues/807)) ([c943338](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/c9433385bccb2d624cdbe056ee4fb4974d5e3d66))
 
 
