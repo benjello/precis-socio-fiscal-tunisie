@@ -197,7 +197,11 @@ porte désormais au moins une série datée et sourcée, de source primaire ou c
   2008-2014, recoupée aux PAP) et versé ; **ventilation des déclarations du fonds par aléa TROUVÉE**
   (sécheresse quasi exclusive, 2019-2023) et versée. **PAP 2023 et décaissé APIA 2010-2017 :
   non trouvés** (PAP 2023 et RAP 2021 jamais publiés ; rapports APIA 2010-2017 jamais mis en ligne) —
-  trous honnîtes, chemins de collecte consignés.
+  trous honnîtes, chemins de collecte consignés. **Wayback Machine vérifié (11/11) et confirme les
+  trous** : PAP 2023 agriculture absent de gbo.tn (les PAP 2023 d'autres missions et le RAP 2022
+  agriculture y sont) ; aucun ancien rapport APIA archivé ; édition arabe 2000 de pist.tn jamais
+  capturée (seule la française l'est). Rien à récupérer par l'archive — trous réels, non des
+  échecs de collecte.
 
 **Reporté — reste réel à acquérir ou à faire** :
 - **Prolonger les séries** : dotation/indemnités du fonds **2024** (annexe 10 du PLF 2026, pas encore en
