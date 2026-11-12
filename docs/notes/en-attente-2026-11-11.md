@@ -19,11 +19,10 @@ openfisca 0.163, release 1.30.0). Tout ce qui suit attend le propriétaire ou un
 
 ## Chantiers ouverts
 
-- **Agriculture** (`precis-wt-agriculture`) : dégelé le 11 novembre (« fusionne tout ») ;
-  master fusionné, conflits résolus par structure, poussé ; **bloquant : 107 citations non
-  résolues** (versement bibliographe manquant) — session relancée dessus ; PR et mise en
-  ligne quand `verifier.sh agriculture` rend 0 citation non résolue. Partie IV actée pour
-  l'instant ; frontière eau d'irrigation à confirmer.
+- **Agriculture** : FAIT — livre « L'agriculture — le soutien au producteur » fusionné le
+  12 novembre (#807, squash ; #808 fermée sans fusion : faux reste de squash qui aurait
+  effacé des notes). Partie IV pour l'instant, rang non fixé. Restent au backlog : frontière
+  eau d'irrigation à confirmer ; clés CSL « Agriculture » à rapatrier dans Zotero.
 - **Éducation** : FAIT — PR #804 fusionnée le 11 novembre par sa session ; worktree, branche
   et onglet nettoyés.
 - **Environnement** : FAIT — PR #803 fusionnée le 11 novembre (feu vert donné), livre en
