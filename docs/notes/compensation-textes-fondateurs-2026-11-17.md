@@ -178,3 +178,100 @@ Fichiers de travail (hors dépôt) : OCR FR 1970-1972 dans
   le fihrist), OCR arabe complet, `--chercher` en arabe normalisé, une ligne par occurrence.
 - Sorties OCR : `markdown_output/JORT_anciens/1941/` (n° 99, 140) et `1945/` (n° 52, 53, 54, 55, 253),
   reportées dans la colonne `ocr` de l'index.
+
+## 4. Origine du décret de 1941 et décret du 26 juin 1947 (passe du 17 novembre, après-midi)
+
+Lecture à l'image (200-400 dpi, autocontraste) ; traductions de travail. Contrôle croisé fait sur
+1947 n° 53, p. 5 (intertitre, art. 3, signature conformes).
+
+### 4.1 Les décrets de 1941 ne visent aucun texte français
+
+- Décret du 5 août 1941 : visas tous tunisiens (3 octobre 1884 ; 11 mai 1940, ravitaillement en
+  temps de guerre ; 25 janvier 1941, taxes à l'exportation sur licence ; 28 octobre 1940, caisse des
+  carburants liquides ; 6 mars 1941, contrôle des prix ; 17 avril 1941, art. 9, fonds des farines et
+  semoules). Dans le corps : décret du 24 décembre 1936 (art. 22, al. 6) et art. 8 du décret du
+  3 octobre 1884 (rédaction de 1922). Avis du commissaire général au ravitaillement et des
+  directeurs des Finances, des Affaires économiques, des Travaux publics ; proposition du Secrétaire
+  général ; présentation par le Grand Vizir. Pas de ligne de promulgation résidentielle dans
+  l'édition arabe (l'édition française n'est pas disponible).
+- Décret du 6 novembre 1941 : seul visa, le décret du 5 août 1941.
+- Point de comparaison : sur la même p. 6 du n° 140 de 1941, un arrêté vise un acte « du maréchal
+  de France, chef de l'État français » du 12 novembre 1940, et un décret se fonde sur la demande du
+  Résident général. L'absence de visa français dans les textes de la caisse est donc un constat, non
+  un usage de forme.
+
+### 4.2 Maroc : dahir du 25 février 1941, cinq mois plus tôt
+
+- BO du Maroc n° 1480, 7 mars 1941, p. 241 : « Dahir du 25 février 1941 (28 moharrem 1360)
+  instituant une caisse de compensation »
+  (https://archive.gazettes.africa/archive/ma/1941/ma-bulletin-officiel-dated-1941-03-07-no-1480.pdf ;
+  sha256 `ce01eb7c…27e4`, PDF dans le scratchpad, à indexer dans `tunisia-legislative-references`).
+- Art. 1er : « Il est créé une caisse de compensation ayant pour objet de régulariser les prix et,
+  d'une manière générale, de concourir au ravitaillement du pays en facilitant les importations de
+  produits de première nécessité et les exportations productrices de devises ou ne permettant pas
+  un bénéfice normal. »
+- Art. 3 : conseil présidé par le secrétaire général du Protectorat, avec les directeurs
+  techniques ; directeur nommé par le Résident général ; le conseil « fixe périodiquement les
+  opérations qui doivent bénéficier de l'aide de l'État et celles qui doivent faire l'objet de
+  prélèvements à son profit ». Art. 6 : « taxes de licence » à l'exportation. Art. 7 : compte hors
+  budget à la recette des douanes de Casablanca. Promulgation : Noguès, Commissaire résident général.
+- Même numéro (sommaire, non lu) : dahir du 15 février 1941 créant un service des prix, dahir du
+  25 février 1941 sur la réglementation et le contrôle des prix, arrêtés résidentiels d'application.
+- Comparaison (inférée de deux textes lus) : même objet (prix et ravitaillement), même présidence
+  (secrétaire général), même ressource (taxes à l'exportation sur licence) ; différences : le
+  Maroc a un directeur et un compte hors budget, la Tunisie une commission sans directeur et des
+  chapitres au budget. Les deux textes ne se citent pas ; rien de lu n'atteste une instruction
+  commune.
+
+### 4.3 Métropole et Algérie : sources secondaires seulement
+
+- Loi du 21 octobre 1940 (« Charte des prix ») : non lue (Gallica 403) ; citée par l'IGPDE,
+  *L'État, les finances et l'économie 1932-1952*, ch. XVII (https://books.openedition.org/igpde/2312),
+  qui ne parle pas de caisses de compensation.
+- Caisse de compensation des prix des combustibles minéraux solides : « instituée par décret-loi le
+  26 septembre 1939 » pour réduire les écarts de prix entre combustibles métropolitains et importés
+  (Archives nationales, répertoire 19820354 ; source secondaire, décret-loi non lu). Inféré, non
+  établi : les caisses métropolitaines par produit (1939) précèdent les caisses tunisiennes par
+  produit (1940) ; aucun texte tunisien lu ne les cite.
+- Algérie : rien trouvé (gazettes.africa à partir de 1946 ; Gallica 403 ; deux recherches web).
+
+### 4.4 Le décret du 26 juin 1947 est un décret budgétaire
+
+- JOT arabe n° 53, mardi 1er juillet 1947, p. 4-5 ; sommaire item 9, « ادارة المال » : « [امر علي
+  بتاريخ 26 جوان 1947] يتعلق بتنقيح ميزان سنة 1947 المالية » (révision du budget de 1947). Fichier
+  `1947/ar/Ja05347.pdf` (sha256 `82f48875…31db8`). Signature : « وكتب في 7 شعبان وفي 26 جوان 1366 –
+  1947 ».
+- Visas : décrets budgétaires de 1883, 1890, 1906 (comptabilité publique) et du 28 février 1947
+  (budget 1947) ; avis du Grand Conseil et du Conseil… (sessions extraordinaires de mars-avril
+  1947) ; « وبعد تحصلنا موافقة الحكومة الفرنسية » (après approbation du gouvernement français).
+- Intertitre « احكام مختلفة — صندوق التعويض ». Art. 3 : abroge et remplace l'art. 9 du décret du
+  28 juin 1945. Le nouvel art. 9 : pas de subvention à la baisse des prix hors du cadre de l'art. 3 ;
+  péréquation maintenue à titre transitoire pour les carburants liquides, les combustibles minéraux
+  solides et les lubrifiants ; pour les céréales, farines et semoules, péréquation confiée à la
+  section tunisienne de l'Office national interprofessionnel des céréales sur son budget propre, et
+  suppression du fonds des farines et semoules de 1941 ; subventions fixées par arrêtés conjoints
+  des directeurs des Finances et de l'Économie générale. Art. 4 : ajoute un art. 9 bis : à compter
+  du 1er janvier 1947, les opérations de la caisse des carburants liquides et les reliquats de la
+  caisse des lubrifiants entrent dans les écritures de la Caisse de compensation.
+- Les visas français de 1960-1972 (« modifié et complété par le décret du 26 juin 1947, et
+  notamment l'article 3 de ce dernier texte ») renvoient donc à l'art. 3 du décret de 1947, qui
+  réécrit l'art. 9 de 1945. L'« article 8 » des visas de 2001-2025 (miroir iort) reste à lire dans
+  son contexte.
+- Art. 8 du décret de 1945 (lu) : production des pièces comptables par les bénéficiaires ; amende
+  de 500 à 100 000 francs et prison de 15 jours à 6 mois. Art. 6 : sanctions des infractions aux
+  taxes de compensation.
+
+### 4.5 Suites
+
+- Chapitre : la puce et la ligne 1947 de la chronologie (« connu par les visas, texte non lu »)
+  peuvent maintenant dire le contenu (intégration des caisses de produit, céréales à l'Office) et
+  citer `decret-1947-06-26-budget-rectificatif-ar` ; le TODO (6) se ferme.
+- Références candidates : `decret-1947-06-26-budget-rectificatif-ar` (JOT arabe n° 53, 1er juillet
+  1947, p. 4-5) ; `dahir-1941-02-25-caisse-compensation-maroc` (BO n° 1480, p. 241, URL
+  gazettes.africa) ; optionnelles : répertoire AN 19820354, chapitre IGPDE.
+- Index : le n° 63 de 1947 (`Ja06347.pdf`) est daté du 5 juillet par iort.tn, son en-tête porte le
+  5 août 1947 (anomalie à corriger dans PDFs-legislation-tunisie).
+- Méthode : l'OCR `ara` complet du n° 53 ne trouve pas « تعويض », imprimé en clair p. 5. Repérer
+  par les sommaires lus à l'image, et regarder les révisions budgétaires (« تنقيح ميزان ») qui portent
+  des dispositions diverses.
+- Gallica (JO de l'État français, édition française du JOT, JO de l'Algérie) : 403 à l'outil.
