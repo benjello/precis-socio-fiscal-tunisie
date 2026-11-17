@@ -118,9 +118,25 @@ L'expression est celle du décret de 1970, qui la reprend sans la convertir ; il
 
 <!-- RECHERCHE r-centimes-additionnels-art106-1955 : article 106 du décret du 31 mars 1955, assiette et taux des « quatre centimes » (voir docs/recherches.yml) -->
 
-Deux ressources s'ajoutent en 1971 et en 1972. La loi du 2 juillet 1971 qui crée le Groupement interprofessionnel des agrumes et des fruits dispose : « Il est institué au profit de la Caisse Générale de Compensation, une taxe sur les agrumes et fruits visés à l'article 2 ci-dessus exportés de Tunisie » ; son taux est de deux millimes par kilogramme net, et elle est perçue comme un droit de douane [@loi71-30, art. 5]. En décembre 1972, l'État institue sur le supercarburant, l'essence normale et le gas-oil des taxes de péréquation de raffinage de 0,350 D par hectolitre, avec effet au 1^er^ juillet 1972 ; il est ouvert, « au sein de la Caisse Générale de Compensation, un sous-compte spécial dit "sous-compte de péréquation de raffinage" », que ces taxes alimentent et dont les ministres des finances et de l'économie nationale fixent les affectations par arrêté [@decret72-400, art. 1er à 3, 7 et 8].
+Deux ressources s'ajoutent en 1971 et en 1972. La loi du 2 juillet 1971 qui crée le Groupement interprofessionnel des agrumes et des fruits dispose : « Il est institué au profit de la Caisse Générale de Compensation, une taxe sur les agrumes et fruits visés à l'article 2 ci-dessus exportés de Tunisie » ; son taux est de deux millimes par kilogramme net, et elle est perçue comme un droit de douane [@loi71-30, art. 5]. En décembre 1972, l'État institue sur le supercarburant, l'essence normale et le gas-oil des taxes de péréquation de raffinage de 0,350 D par hectolitre, avec effet au 1^er^ juillet 1972 ; il est ouvert, « au sein de la Caisse Générale de Compensation, un sous-compte spécial dit "sous-compte de péréquation de raffinage" », que ces taxes alimentent et dont les ministres des finances et de l'économie nationale fixent les affectations par arrêté [@decret72-400, art. 1er à 3, 7 et 8]. Les montants et les articles de ces deux textes sont au @tbl-compensation-taxes-affectees.
 
-<!-- TODO (documentaliste) : taux de la taxe sur les agrumes et fruits exportés (2 millimes/kg en 1971) et des taxes de péréquation de raffinage (0,350 D/hl en 1972) après leur institution, et produit de ces taxes : série à établir pour situer ces deux points (relèvements, suppression, versement au budget en 1987). -->
+:::: {.chronologie-repliable titre="Taxes affectées à la Caisse générale en 1971-1972 : taxe sur les agrumes et fruits exportés, taxes de péréquation de raffinage du supercarburant, de l'essence normale et du gas-oil, montants et textes à leur institution"}
+
+```{python}
+#| echo: false
+#| output: asis
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path.cwd().parents[2] / "scripts"))
+import openfisca_tables as ot
+print(ot.markdown_avec_legende(Path.cwd() / "tables" / "caisse_taxes_affectees.md",
+                               "Taxes affectées à la Caisse générale de compensation : montants à leur institution, 1971-1972",
+                               "tbl-compensation-taxes-affectees"))
+```
+
+::::
+
+<!-- TODO (documentaliste) : taux de la taxe sur les agrumes et fruits exportés et des taxes de péréquation de raffinage après leur institution (relèvements, suppression, versement au budget en 1987), et produit de ces taxes : série à établir ; le tableau tbl-compensation-taxes-affectees ne porte que les montants à l'institution. -->
 
 À compter du 1^er^ janvier 1974, les prévisions de dépenses de la Caisse ont « un caractère évaluatif au sens de l'article 24 de la loi N° 67-53 du 8 décembre 1967, portant loi organique du budget » ; la loi de finances pour 1975 le dispose avec effet rétroactif [@lf-1975, art. 83]. La même année 1974, le budget de l'État verse à la Caisse sa première contribution (@fig-compensation-avant-1975).
 

@@ -5634,7 +5634,9 @@
 
 - id: r-oc-prix-reduits-retrocession
   objet: décisions du ministre chargé du commerce fixant les prix réduits de rétrocession des céréales, dont la différence avec les prix normaux des décrets de campagne donne la prime de compensation de l'Office des céréales
-  ou: [precis/fr/entreprises_publiques/_offices.qmd#sec-ep-ge-oc]
+  ou:
+  - precis/fr/entreprises_publiques/_offices.qmd#sec-ep-ge-oc
+  - precis/fr/compensation/_produits_base.qmd#sec-compensation-pb-1991
   requetes:
     titres_like: ['%prix reduits%', '%retrocession des cereales%']
     iort_ar: [أسعار الإحالة المخفضة]
@@ -5876,6 +5878,12 @@
     couverture: 'Intitulés de jort_cache depuis 2011, LIKE français et arabes de la fiche (titres_like hors « indemnit ») : aucun texte de ciblage ni de transfert de substitution ; résultats voisins : arrêtés de 2020 et 2022 sur les transferts monétaires du programme AMEN social (prestations sociales), loi n° 2020-17 et décret n° 2020-312 (identifiant unique), cahier des charges du 1er décembre 2020 (contrôle du circuit), loi de finances pour 2024, art. 19 (intitulé seul), loi de finances pour 2014, art. 76-78 (ressources de la Caisse). Lacunes : miroir iort et plein texte non interrogés.'
     couvert_jusqu_au: 2026-10-29
     resultat: aucun
+  - date: 2026-11-17
+    role: documentaliste
+    sources: [corpus_local, iort]
+    couverture: 'Texte intégral FR 2013-2026 (ciblage, rationalisation de la compensation, subvention ou compensation des produits de base, transfert monétaire, revenu minimum) et miroir iort AR (منظومة الدعم, ترشيد الدعم, توجيه الدعم, المواد الأساسية المدعمة, الخبز المدعم, استهداف) : aucun texte de ciblage. Voisins : décret n° 2014-1526 (ciblage de l''aide sociale), loi de finances pour 2018, art. 25 (ressource de la Caisse), décret gouvernemental n° 2018-417, arrêtés « pain » de 2016 et 2020. Lacunes : texte intégral AR des fascicules ; fichiers FR vides.'
+    couvert_jusqu_au: 2026-10-29
+    resultat: aucun
   a_faire: ['miroir iort : termes iort_ar de la fiche', plein texte des fascicules depuis 2013]
 
 - id: r-comp-pb-prix-consommateur-apres-1991
@@ -5884,13 +5892,20 @@
   requetes:
     titres_fts: [prix AND (pain OR farine OR semoule OR sucre OR huile OR pates OR couscous OR lait)]
     titres_like: ['%أسعار%الخبز%', '%أسعار%السكر%', '%أسعار%الفارينة%', '%أسعار%السميد%', '%أسعار%الزيت%', '%أسعار%العجين%', '%أسعار%الحليب%']
-    iort_ar: [ضبط أسعار البيع, المصادقة على الأسعار, الخبز, الفارينة, السميد]
+    iort_ar: [ضبط أسعار البيع, المصادقة على الأسعار, الخبز, الفارينة, السميد, الفارينة المدعمة]
+    plein_texte: [prix réduits de rétrocession]
     depuis: 1984-03-01
   passes:
   - date: 2026-11-17
     role: documentaliste
     sources: [jort_cache]
     couverture: 'Intitulés de jort_cache, français depuis le 1er mars 1984 et arabes depuis le 1er octobre 1991 : derniers résultats, les arrêtés de juillet et d''août 1991 (pain, lait, sucre, pâtes, semoule). Lacunes : décisions (مقرر) publiées hors de la partie « décrets et arrêtés », avis et communications, plein texte et miroir iort non parcourus.'
+    couvert_jusqu_au: 2026-10-29
+    resultat: aucun
+  - date: 2026-11-17
+    role: documentaliste
+    sources: [corpus_local, iort, jort_cache]
+    couverture: 'Texte intégral des fascicules FR locaux 1994-2026 (1999-2005 décodés), miroir iort AR, intitulés depuis 1991 : aucun acte de prix au public. Trouvés : arrêtés « pain » du 22 juin 2016 et du 13 novembre 2020 (circuit, poids et quotas, sans prix), absents des intitulés de jort_cache ; arrêté conjoint du 2 avril 2026 (taux d''extraction) ; les décrets de campagne renvoient depuis 1992 à une « décision du ministre » pour le prix réduit du blé. Lacunes : 1992-1993 sans couche texte ; fichiers vides en 1995-1996 et 2018-2025 ; pages en image ; texte intégral AR non interrogé.'
     couvert_jusqu_au: 2026-10-29
     resultat: aucun
   a_faire: ['miroir iort : termes iort_ar de la fiche', avis et communications du JORT depuis 1992, plein texte]
@@ -5909,6 +5924,12 @@
     role: documentaliste
     sources: [jort_cache]
     couverture: 'Intitulés de jort_cache du 12 mai 1979 au 27 février 1984 : seuls ressortent les arrêtés du 28 décembre 1983. Lacunes : sommaires des fascicules de 1980 (corpus local, en image) et lois de finances pour 1980 et 1981 non parcourus.'
+    couvert_jusqu_au: 1984-02-27
+    resultat: aucun
+  - date: 2026-11-17
+    role: documentaliste
+    sources: [jort_cache, corpus_local]
+    couverture: 'Intitulés de 1980-1981 (prix, farine, semoule, dérivés, boulangerie, mouture, 79-413) ; décrets n° 80-140 (reconduction) et 80-1257 (prix réduit du blé de la récolte 1980 : 8,000 et 7,250 D/q) lus, sans prix du pain. Lacune : sommaires des n° 55 à 60 de 1980 non océrisés.'
     couvert_jusqu_au: 1984-02-27
     resultat: aucun
   a_faire: [sommaires des JORT de 1980 au corpus local, lois de finances pour 1980 et 1981]
@@ -5930,4 +5951,30 @@
     couverture: 'Intitulés de jort_cache, 1970-2009, motifs « céréales » et « prix », « campagne » ou « récolte » : aucun décret pour ces campagnes. Lacunes : intitulés d''une autre forme possibles (« récolte »), plein texte et miroir iort non interrogés.'
     couvert_jusqu_au: 2009-12-31
     resultat: aucun
+  - date: 2026-11-17
+    role: documentaliste
+    sources: [corpus_local, jort_cache]
+    couverture: 'Fascicules locaux (couche texte, décodée pour 1999-2005, et OCR) : clauses de reconduction lues au corps des décrets n° 96-2549, art. 14 (récoltes 1993 et 1994 sous le décret n° 93-1721), 2001-864, art. 14 (1997-1999 sous le décret n° 96-2549), 2005-1983, art. 4 (2001-2004 sous le décret n° 2001-864) et 2007-1402, art. 15 (2006 sous le décret n° 2005-1983) ; la récolte 1979 est couverte par le décret n° 80-140, art. 1er. Toutes les récoltes 1970-2009 ont un texte.'
+    couvert_jusqu_au: 2009-12-31
+    resultat: decret96-2549
   a_faire: ['miroir iort : termes iort_ar de la fiche', plein texte des fascicules 1993-2009]
+  resolu: decret96-2549
+
+- id: r-comp-pb-arrete-reduit-1991
+  objet: arrêté du ministre de l'économie nationale fixant les prix réduits de rétrocession du blé de la récolte 1990, prévu par le décret n° 91-943 du 17 juin 1991, art. 8
+  ou: [precis/fr/compensation/_produits_base.qmd#sec-compensation-pb-1991]
+  requetes:
+    titres_fts: [prix AND (ble OR retrocession OR cereales)]
+    iort_ar: [أسعار إحالة القمح]
+    depuis: 1991-07-01
+  periode:
+    jusqu_au: 1992-12-31
+    motif: le décret de la récolte 1991 (n° 92-1657, publié le 2 octobre 1992) renvoie déjà à une décision du ministre ; l'arrêté cherché est antérieur
+  passes:
+  - date: 2026-11-17
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: 'Intitulés de jort_cache, juillet 1991 à décembre 1992, « prix » et (« blé », « rétrocession » ou « céréales ») : aucun arrêté de prix réduit. Lacune : fascicules de 1992 sans couche texte (OCR à faire) ; miroir iort non interrogé.'
+    couvert_jusqu_au: 1992-12-31
+    resultat: aucun
+  a_faire: [OCR des fascicules de juillet 1991 à décembre 1992, 'miroir iort : termes iort_ar de la fiche']

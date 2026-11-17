@@ -1,0 +1,61 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-11-17
+# séries (tunisia_data) : compensation-prix-produits-base, ipc-longue-periode, bct-ipc-base2015
+# sources (citation) : @bct-ra-1975, @decret75-352, @decret79-413, @bct-ra-1983, @arrete-1983-12-28-prix-pain, @arrete-1984-02-17-prix-pain, @arrete-1984-07-10-prix-pain, @arrete-1985-07-15-prix-pain, @arrete-1986-08-29-poids-pain, @arrete-1989-11-11-prix-pain, @arrete-1991-08-15-prix-pain, @loi91-64, @arrete-2016-06-22-pain, @arrete-2020-11-13-pain, @bct-ra, @ins-annuaire
+# fiches : sources/bct-archives.md
+# méthode/hypothèses : Dinars de 2025 : valeurs calculées, non observées. Le coefficient d'une année est l'indice des prix à la consommation de 2025 divisé par celui de l'année (moyennes annuelles) ; la valeur d'une année est la moyenne des prix en vigueur au premier jour de chacun des douze mois, ramenée par l'indice annuel moyen de cette année ; une année dont un mois n'a pas de prix établi n'a pas de point. L'indice est la série longue base 100 en 1970 : jusqu'en 1975, l'indice du coût de la vie que publie la Banque centrale (base 1962, raccordée en 1970), d'un périmètre différent de celui de l'INS ; de 1976 à 2023, l'indice des prix à la consommation familiale de l'INS ; prolongé en 2024 et 2025 par la variation de l'indice en base 2015 que relaie la Banque centrale (indice de 2025 : 2 092,7 en base 1970, par ce raccord). Aucune valeur n'est ramenée au-delà de 2025., DEUX INDICES RACCORDÉS EN 1970 : l'indice du coût de la vie en base 100 en 1962 (131,6 en 1970) est ramené à la base 1970. Les valeurs 1962-1975 sont RELEVÉES À LA MAIN dans les rapports de la BCT, dont la couche texte est une océrisation abîmée (« 12S,O » pour 125,0) ; chacune est recoupée par la variation énoncée en prose, et la source de chaque valeur est dans la colonne `source`. L'annuaire 1995-2001 imprime 108,2 pour 1985 au lieu de 288,0 : ligne écartée, valeur prise dans l'annuaire 1998-2002. Le plus récent annuaire fait foi (2001 : 640,5 au lieu de 645,4 provisoire). Au-delà de 2003, employer `bct-ipc-base2015`., EXTRAIT DU RAPPORT ANNUEL, ET NON DU BULLETIN : l'intitulé du BSF (« base 100 en 2010 ») est périmé et ses valeurs récentes sont en base 2015 — voir docs/tables-a-extraire-pdf.md §1. L'ANNÉE DE BASE 2015 = 100 EST POSÉE PAR DÉFINITION, non lue : aucun rapport ne tabule son année de base, tous ne publiant que les millésimes récents. Série RECONSTITUÉE en recollant huit rapports, de 2018 à 2025 (ceux de 2021 et de 2025 coupent le libellé sur trois lignes ; ils sont lus depuis le 2026-10-08), chacun n'en publiant que trois millésimes ; toutes les années communes concordent, et le script LÈVE en cas de divergence — un indice de prix ne se révise pas d'une publication à l'autre, contrairement aux effectifs. La colonne `rapports_concordants` compte les rapports qui impriment la valeur : 2025 (186,3) n'en a qu'UN, le Rapport annuel 2025 (tableau 2-1, p. 57), qui reprend 2024 (176,8) sans le réviser. ÉCART AU TAUX IMPRIMÉ EN 2025 : 186,3 ÷ 176,8 donne +5,37 %, soit 5,4 au dixième, quand le même rapport imprime 5,3 % d'inflation moyenne ; l'arrondi des deux indices permet 5,32 à 5,43 %, et un taux imprimé 5,3 recouvre 5,25 à 5,35 % : les deux ne se rejoignent qu'à la limite (5,32 à 5,35). Le rapport ne dit pas comment il calcule le taux moyen ; écart signalé, non expliqué, rien n'est corrigé. S'ARRÊTE EN 2025 : aucune déflation n'est possible au-delà, ce qui laisse sans équivalent réel les tranches d'augmentation programmées jusqu'en 2028. Déflater une date en cours d'année par l'indice ANNUEL MOYEN est une approximation.
+# note : Le prix de vente au public du pain au kilo, 1975-1991, et le poids du pain, 1975-2026 : en millimes courants et en millimes de 2025 (calculés)
+Série,Ligne,Date d'effet,Année,Règle de date,Valeur courante,Unité,Poids (g),Prix de la pièce (millimes),Coefficient de 2025 (calculé),Valeur de 2025 (calculée),Texte,Statut,Remarque
+Gros pain,valeur du texte,non établie,1975,non établie,78.57142857142857,millimes le kilo,700,55.0,,,rapport annuel de la Banque centrale de Tunisie pour 1975,rapport BCT,prix antérieur au 31 mai 1975
+Gros pain,valeur du texte,1975-05-31,1975,énoncée,92.85714285714286,millimes le kilo,700,65.0,,,"décret n° 75-352 du 3 juin 1975, art. 1er (JORT n° 38 de 1975, p. 1192)",texte,
+Gros pain,valeur du texte,1979-05-03,1979,énoncée,100.0,millimes le kilo,700,70.0,,,"décret n° 79-413 du 7 mai 1979 (JORT n° 32 de 1979, pp. 1381-1382)",texte,
+Gros pain,valeur du texte,non établie,1980,non établie,114.28571428571429,millimes le kilo,700,80.0,,,rapport annuel de la Banque centrale de Tunisie pour 1983 (tableau des prix taxés),rapport BCT,texte de 1980 non identifié ; tracé à partir du 1er janvier 1981
+Gros pain,valeur du texte,1984-01-01,1984,énoncée,242.85714285714286,millimes le kilo,700,170.0,,,"arrêté du ministre de l'économie nationale du 28 décembre 1983, art. 1er (JORT n° 1 de 1984, p. 9)",texte,
+Gros pain,valeur du texte,1984-03-01,1984,calculée,114.28571428571429,millimes le kilo,700,80.0,,,"arrêté du 17 février 1984, art. 1er (JORT n° 14 du 28 février 1984, p. 453)",texte,un jour franc après la publication
+Gros pain,valeur du texte,1984-07-10,1984,énoncée,128.57142857142858,millimes le kilo,700,90.0,,,"arrêté du 10 juillet 1984 (JORT n° 43 de 1984, pp. 1594-1595)",texte,
+Gros pain,valeur du texte,1985-07-15,1985,énoncée,142.85714285714286,millimes le kilo,700,100.0,,,"arrêté du 15 juillet 1985 (JORT n° 55 de 1985, p. 946)",texte,
+Gros pain,valeur du texte,1986-08-30,1986,énoncée,166.66666666666666,millimes le kilo,600,100.0,,,"arrêté du 29 août 1986 portant fixation du poids du pain (JORT n° 50 de 1986, p. 1020)",texte,"prix inchangé, poids de 700 à 600 g"
+Gros pain,valeur du texte,1989-08-12,1989,énoncée,200.0,millimes le kilo,500,100.0,,,"arrêté du 11 novembre 1989 (JORT n° 77 du 17 novembre 1989, p. 1823)",texte,effet antérieur à la publication
+Gros pain,valeur du texte,1991-08-17,1991,énoncée,240.0,millimes le kilo,500,120.0,,,"arrêté du 15 août 1991 (JORT n° 61 du 3 septembre 1991, p. 1545)",texte,effet antérieur à la publication
+Gros pain,valeur du texte,1992-01-01,1992,loi,,millimes le kilo,,,,,"liberté des prix et homologation (loi n° 91-64, art. 62), aucun prix au public publié ensuite",fin,
+Gros pain,valeur du texte,2016-06-29,2016,publication,,millimes le kilo,400,,,,"arrêté du ministre du commerce du 22 juin 2016, art. 2 (JORT n° 53 du 29 juin 2016, pp. 2090-2091)",poids seul,"publié le 29 juin 2016 ; gros pain de 400 g, sans prix"
+Gros pain,valeur du texte,2020-11-14,2020,calculée,,millimes le kilo,400,,,,"arrêté du 13 novembre 2020, art. 4 (JORT n° 113 du 13 novembre 2020, pp. 2603-2606)",poids seul,"lendemain de la publication ; gros pain de 400 g, sans prix"
+Gros pain,moyenne annuelle (calculée),,1976,,92.857,millimes le kilo,,,15.4103,1431.0,,,
+Gros pain,moyenne annuelle (calculée),,1977,,92.857,millimes le kilo,,,14.4425,1341.1,,,
+Gros pain,moyenne annuelle (calculée),,1978,,92.857,millimes le kilo,,,13.6779,1270.1,,,
+Gros pain,moyenne annuelle (calculée),,1979,,97.024,millimes le kilo,,,12.6143,1223.9,,,
+Gros pain,moyenne annuelle (calculée),,1981,,114.286,millimes le kilo,,,10.596,1211.0,,rapport BCT,
+Gros pain,moyenne annuelle (calculée),,1982,,114.286,millimes le kilo,,,9.2886,1061.6,,rapport BCT,
+Gros pain,moyenne annuelle (calculée),,1983,,114.286,millimes le kilo,,,8.4794,969.1,,rapport BCT,
+Gros pain,moyenne annuelle (calculée),,1984,,141.667,millimes le kilo,,,7.8086,1106.2,,,
+Gros pain,moyenne annuelle (calculée),,1985,,134.524,millimes le kilo,,,7.2664,977.5,,,
+Gros pain,moyenne annuelle (calculée),,1986,,150.794,millimes le kilo,,,6.8389,1031.3,,,
+Gros pain,moyenne annuelle (calculée),,1987,,166.667,millimes le kilo,,,6.3243,1054.1,,,
+Gros pain,moyenne annuelle (calculée),,1988,,166.667,millimes le kilo,,,5.8983,983.1,,,
+Gros pain,moyenne annuelle (calculée),,1989,,177.778,millimes le kilo,,,5.4755,973.4,,,
+Gros pain,moyenne annuelle (calculée),,1990,,200.0,millimes le kilo,,,5.1368,1027.4,,,
+Gros pain,moyenne annuelle (calculée),,1991,,213.333,millimes le kilo,,,4.767,1017.0,,,
+"Petit pain, puis baguette (1991)",valeur du texte,1975-05-31,1975,énoncée,126.66666666666667,millimes le kilo,300,38.0,,,"décret n° 75-352 du 3 juin 1975, art. 1er (JORT n° 38 de 1975, p. 1192)",texte,
+"Petit pain, puis baguette (1991)",valeur du texte,1979-05-03,1979,énoncée,150.0,millimes le kilo,300,45.0,,,"décret n° 79-413 du 7 mai 1979 (JORT n° 32 de 1979, pp. 1381-1382)",texte,
+"Petit pain, puis baguette (1991)",valeur du texte,1980-01-01,1980,non établie,,millimes le kilo,300,,,,texte de 1980 non identifié,non établi,le prix du gros pain change en 1980 ; celui du petit pain n'est pas établi de 1980 à 1983
+"Petit pain, puis baguette (1991)",valeur du texte,1984-01-01,1984,énoncée,300.0,millimes le kilo,300,90.0,,,"arrêté du 28 décembre 1983, art. 1er (JORT n° 1 de 1984, p. 9)",texte,
+"Petit pain, puis baguette (1991)",valeur du texte,1984-03-01,1984,calculée,166.66666666666666,millimes le kilo,300,50.0,,,"arrêté du 17 février 1984, art. 1er (JORT n° 14 du 28 février 1984, p. 453)",texte,un jour franc après la publication
+"Petit pain, puis baguette (1991)",valeur du texte,1984-07-10,1984,énoncée,200.0,millimes le kilo,300,60.0,,,"arrêté du 10 juillet 1984 (JORT n° 43 de 1984, pp. 1594-1595)",texte,
+"Petit pain, puis baguette (1991)",valeur du texte,1985-07-15,1985,énoncée,233.33333333333334,millimes le kilo,300,70.0,,,"arrêté du 15 juillet 1985 (JORT n° 55 de 1985, p. 946)",texte,
+"Petit pain, puis baguette (1991)",valeur du texte,1986-08-30,1986,énoncée,280.0,millimes le kilo,250,70.0,,,"arrêté du 29 août 1986 portant fixation du poids du pain (JORT n° 50 de 1986, p. 1020)",texte,"prix inchangé, poids de 300 à 250 g"
+"Petit pain, puis baguette (1991)",valeur du texte,1989-08-12,1989,énoncée,320.0,millimes le kilo,250,80.0,,,"arrêté du 11 novembre 1989 (JORT n° 77 du 17 novembre 1989, p. 1823)",texte,
+"Petit pain, puis baguette (1991)",valeur du texte,1991-08-17,1991,énoncée,400.0,millimes le kilo,250,100.0,,,"arrêté du 15 août 1991 (JORT n° 61 du 3 septembre 1991, p. 1545)",texte,baguette
+"Petit pain, puis baguette (1991)",valeur du texte,1992-01-01,1992,loi,,millimes le kilo,,,,,"liberté des prix et homologation (loi n° 91-64, art. 62), aucun prix au public publié ensuite",fin,
+"Petit pain, puis baguette (1991)",valeur du texte,2016-06-29,2016,publication,,millimes le kilo,220,,,,"arrêté du ministre du commerce du 22 juin 2016, art. 2 (JORT n° 53 du 29 juin 2016, pp. 2090-2091)",poids seul,"publié le 29 juin 2016 ; baguette de 220 g, sans prix"
+"Petit pain, puis baguette (1991)",valeur du texte,2020-11-14,2020,calculée,,millimes le kilo,220,,,,"arrêté du 13 novembre 2020, art. 4 (JORT n° 113 du 13 novembre 2020, pp. 2603-2606)",poids seul,"lendemain de la publication ; baguette de 220 g, sans prix"
+"Petit pain, puis baguette (1991)",moyenne annuelle (calculée),,1976,,126.667,millimes le kilo,,,15.4103,1952.0,,,
+"Petit pain, puis baguette (1991)",moyenne annuelle (calculée),,1977,,126.667,millimes le kilo,,,14.4425,1829.4,,,
+"Petit pain, puis baguette (1991)",moyenne annuelle (calculée),,1978,,126.667,millimes le kilo,,,13.6779,1732.5,,,
+"Petit pain, puis baguette (1991)",moyenne annuelle (calculée),,1979,,140.278,millimes le kilo,,,12.6143,1769.5,,,
+"Petit pain, puis baguette (1991)",moyenne annuelle (calculée),,1984,,202.778,millimes le kilo,,,7.8086,1583.4,,,
+"Petit pain, puis baguette (1991)",moyenne annuelle (calculée),,1985,,213.889,millimes le kilo,,,7.2664,1554.2,,,
+"Petit pain, puis baguette (1991)",moyenne annuelle (calculée),,1986,,248.889,millimes le kilo,,,6.8389,1702.1,,,
+"Petit pain, puis baguette (1991)",moyenne annuelle (calculée),,1987,,280.0,millimes le kilo,,,6.3243,1770.8,,,
+"Petit pain, puis baguette (1991)",moyenne annuelle (calculée),,1988,,280.0,millimes le kilo,,,5.8983,1651.5,,,
+"Petit pain, puis baguette (1991)",moyenne annuelle (calculée),,1989,,293.333,millimes le kilo,,,5.4755,1606.1,,,
+"Petit pain, puis baguette (1991)",moyenne annuelle (calculée),,1990,,320.0,millimes le kilo,,,5.1368,1643.8,,,
+"Petit pain, puis baguette (1991)",moyenne annuelle (calculée),,1991,,346.667,millimes le kilo,,,4.767,1652.6,,,

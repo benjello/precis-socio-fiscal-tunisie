@@ -97,6 +97,9 @@ jobs:
           uv run python scripts/generate_marche_travail_tables.py
           uv run python scripts/generate_finances_locales_tables.py
           uv run python scripts/generate_sante_tables.py
+          # Prix des céréales fixés à chaque campagne et taxes affectées à la Caisse
+          # générale de compensation (volume « La compensation »), openfisca-tunisia >= 0.169.
+          uv run python scripts/generate_compensation_tables.py
           # Les quatre-vingt-un cas de la circulaire n° 42 de 1996 (annexe du chapitre des
           # prestations familiales) : lus dans les variables de l'indemnité familiale du
           # secteur public, openfisca-tunisia >= 0.157 (PR #518). Tant que cette version n'est
@@ -167,6 +170,8 @@ jobs:
             echo '    uv run python scripts/generate_finances_locales_tables.py'
             echo 'OPENFISCA_TUNISIA_PATH=../openfisca-tunisia PYTHONPATH=scripts \'
             echo '    uv run python scripts/generate_sante_tables.py'
+            echo 'OPENFISCA_TUNISIA_PATH=../openfisca-tunisia PYTHONPATH=scripts \'
+            echo '    uv run python scripts/generate_compensation_tables.py'
             echo 'OPENFISCA_TUNISIA_PATH=../openfisca-tunisia PYTHONPATH=scripts \'
             echo '    uv run python scripts/generate_circulaire_42_tables.py'
             echo '```'

@@ -216,7 +216,16 @@ PAQUETS = {
         # de la modulation du chapitre AT/MP ne pourraient être engendrés, et le tableau de
         # la cotisation maladie CNRPS perdrait sa ligne de 1973. La borne passe à la 0.163,
         # publiée sur PyPI.
-        "version_minimale": (0, 163),
+        # La 0.169 verse les prix des céréales fixés à chaque campagne, de la récolte 1970 à
+        # celle de 2026 (`produits_subventionnes/cereales/` : prix de base à la production
+        # des blés et de l'orge, prix d'intervention de l'orge à partir de 1993, prix normaux
+        # et réduits de rétrocession), et les taxes affectées à la Caisse générale de
+        # compensation (`produits_subventionnes/caisse_generale_compensation/taxes_affectees/`
+        # : taxe sur les agrumes et fruits exportés, taxes de péréquation de raffinage). En
+        # deçà, les tableaux et la série des prix de campagne du volume « La compensation »,
+        # que lit `generate_compensation_tables.py`, ne pourraient être engendrés. Aucun
+        # chemin déjà lu ne bouge. La borne passe à la 0.169, publiée sur PyPI.
+        "version_minimale": (0, 169),
     },
 }
 
