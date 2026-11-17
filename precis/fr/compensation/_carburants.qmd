@@ -203,7 +203,9 @@ Le projet de budget pour 2016 montre comment la ligne est construite depuis la s
 
 ## Les recettes tirées des carburants {#sec-compensation-carburants-recettes}
 
-Avant d'être subventionnés, les carburants ont financé la compensation. La taxe unique de compensation de 1971 (@sec-compensation-institution) est relevée trois fois, chaque fois en même temps que le prix à la pompe. Le @fig-compensation-taxe-unique en donne les tarifs, en dinars courants à chaque date d'effet et en dinars de 2025 : entre deux relèvements, la taxe perd de sa valeur réelle au rythme des prix.
+Avant d'être subventionnés, les carburants ont financé la compensation. La taxe au profit de la Caisse de 1964 est relevée le 10 décembre 1968 sur les deux essences, de 1,750 à 2,500 D par hectolitre pour l'essence supérieure et de 1,650 à 2,300 pour l'essence normale, le jour où les prix à la pompe deviennent uniformes sur le territoire [@arrete-1968-12-09-prix-carburants, art. 1^er^ et 12, pp. 1291-1292]. La taxe unique de compensation de 1971 (@sec-compensation-institution), qui lui succède, est modifiée en 1974, 1977, 1978 et 1981 ; les changements de 1974, 1977 et 1978 prennent effet le même jour qu'un arrêté de prix à la pompe (@tbl-compensation-prix-arretes). Le @fig-compensation-taxe-unique en donne les tarifs, en dinars courants à chaque date d'effet et en dinars de 2025 : entre deux relèvements, la taxe perd de sa valeur réelle au rythme des prix.
+
+Le 1^er^ janvier 1977, l'État supprime la taxe sur le pétrole lampant et porte celle du gas-oil de 0,235 à 0,890 D par hectolitre, sauf pour le gas-oil des travaux agricoles et de la pêche, qui garde 0,235 D [@decret76-1123, art. 1^er^ et 3, p. 3241 ; @decret77-192, art. 1^er^ et 2, p. 464]. Ce second décret, signé le 17 février 1977, remplace avec effet au 1^er^ janvier l'article du premier qui fixait un tarif unique du gas-oil. Le même jour, une taxe unique de compensation de 6,990 D par tonne frappe le fuel-oil léger [@decret76-1123, art. 2]. Le tarif agricole passe à 1,525 D par hectolitre le 1^er^ janvier 1981 [@decret80-1641], puis à 0,025 D le 22 février 1984, à la date d'un arrêté de prix à la pompe [@decret84-210, art. 1^er^ et 2, p. 535]. La taxe sur le fuel-oil léger est portée à 26,990 D par tonne le 5 janvier 1982, et une taxe de 20,000 D frappe le fuel-oil domestique, sans que le texte imprime l'unité [@decret82-212, art. 1^er^ à 3, p. 294].
 
 ```{python}
 #| label: fig-compensation-taxe-unique
@@ -221,13 +223,16 @@ cm.figure(
         "jusqu'en 1970 à la redevance de 1957 (@tbl-compensation-prelevements-avant-1970) ; "
         "en trait plein, la taxe unique de compensation du 1er janvier 1971, qui réunit les "
         "deux (trait vertical) : les deux ne sont pas reliées. Le 25 septembre 1966, l'essence "
-        "reçoit deux tarifs, 1,750 et 1,650 D/hl, un par qualité (le second en pointillé), et "
-        "la taxe est supprimée sur le pétrole lampant et le gas-oil (cercle creux). Un tarif "
-        "que le texte suivant ne modifie pas se prolonge. Le décret de 1980 institue en outre "
-        "une taxe de 4 D par tonne sur le fuel-oil lourd et un tarif de 1,525 D/hl pour le "
-        "gas-oil de l'agriculture et de la pêche, qui ne sont pas tracés [@decret80-1641]. Les "
-        "tarifs postérieurs à 1981 ne sont pas établis : les traits s'arrêtent à la fin de "
-        "1981.\n\n"
+        "reçoit deux tarifs, 1,750 D/hl pour l'essence supérieure et 1,650 pour l'essence "
+        "normale (en pointillé), portés à 2,500 et 2,300 le 10 décembre 1968, et la taxe est "
+        "supprimée sur le pétrole lampant et le gas-oil (cercle creux) ; la taxe unique sur le "
+        "pétrole lampant est supprimée à son tour le 1er janvier 1977. Depuis cette date, le "
+        "gas-oil des travaux agricoles et de la pêche a son propre tarif (bleu pointillé). Un "
+        "tarif que le texte suivant ne modifie pas se prolonge. Les taxes sur le fuel-oil "
+        "léger (1977) et lourd (décret de 1980), en dinars par tonne, et sur le fuel-oil "
+        "domestique (1982) ne sont pas tracées. Les tarifs de l'essence et du gas-oil "
+        "ordinaire postérieurs à 1981 ne sont pas établis : les traits s'arrêtent à la fin de 1981 ; le tarif du gas-oil agricole "
+        "ramené à 0,025 D/hl le 22 février 1984 est dans les données.\n\n"
         "Dinars de 2025 : valeurs calculées, non observées. Pour chaque année entière où le "
         "tarif existe, la moyenne des tarifs en vigueur au premier jour de chacun des douze "
         "mois est multipliée par le rapport de l'indice des prix à la consommation de 2025 à "
@@ -240,7 +245,7 @@ cm.figure(
         "annuelles et l'indice sont dans les données."))
 ```
 
-<!-- TODO (documentaliste) : l'arrêté du 9 décembre 1968 (JORT n° 52 de 1968, pp. 1291-1292) porte la taxe de l'arrêté du 23 septembre 1966 de 1,750 à 2,500 D/hl pour l'essence supérieure et de 1,650 à 2,300 pour l'essence normale (docs/notes/compensation-avant-1970-et-plans.md) ; ce relèvement manque à la série de la taxe, qui prolonge les tarifs de 1966 jusqu'en 1970. À verser dans figures/transcriptions.py (TAXE_UNIQUE), avec sa clé, après relecture. -->
+<!-- TODO (documentaliste) : tarifs de la taxe unique sur l'essence et le gas-oil ordinaire après le décret n° 80-1641 : aucun modificatif de l'art. 5 du décret n° 70-622 pour ces produits n'apparaît dans les intitulés de 1981 à 1992 (docs/notes/compensation-arretes-lisibles-2026-11-17.md, § 1.7 et 5) ; à établir par une seconde voie avant de prolonger la figure au-delà de 1981. Unité de la taxe de 20,000 sur le fuel-oil domestique (décret n° 82-212, art. 2) non imprimée. -->
 
 <!-- TODO (rédacteur) : remplacer par un tableau engendré — les tarifs de la taxe sont transcrits à la main dans figures/transcriptions.py, en attendant d'être datés et sourcés dans la base législative. -->
 

@@ -11,6 +11,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "scripts"))
 from verifier_livres import (  # noqa: E402
     _cli,
     LIVRES,
+    chapitres_touches,
     compter_arobases_cassees,
     compter_citations_non_resolues,
     compter_renvois_casses,
@@ -134,6 +135,28 @@ class CompterRenvoisCassesTest(unittest.TestCase):
 
     def test_page_saine(self):
         self.assertEqual(compter_renvois_casses('<a href="#tbl-x">Tableau 1</a>'), 0)
+
+
+class ChapitresTouchesTest(unittest.TestCase):
+
+    def test_seuls_des_chapitres_modifies(self):
+        f = ["precis/fr/compensation/_reformes.qmd", "precis/fr/compensation/_depense.qmd",
+             "precis/fr/fiscalite/_tva.qmd"]
+        self.assertEqual(chapitres_touches(f, "fr", "compensation"), ["_depense.qmd", "_reformes.qmd"])
+
+    def test_figure_ou_donnee_impose_le_livre_entier(self):
+        f = ["precis/fr/compensation/_reformes.qmd", "precis/fr/compensation/figures/compensation.py"]
+        self.assertIsNone(chapitres_touches(f, "fr", "compensation"))
+
+    def test_fichier_partage_impose_le_livre_entier(self):
+        self.assertIsNone(chapitres_touches(["scripts/figtools.py"], "fr", "compensation"))
+
+    def test_quarto_yml_et_index_imposent_le_livre_entier(self):
+        self.assertIsNone(chapitres_touches(["precis/fr/compensation/_quarto.yml"], "fr", "compensation"))
+        self.assertIsNone(chapitres_touches(["precis/fr/compensation/index.qmd"], "fr", "compensation"))
+
+    def test_autre_langue_rien_a_rendre(self):
+        self.assertEqual(chapitres_touches(["precis/fr/compensation/_reformes.qmd"], "ar", "compensation"), [])
 
 
 class FigdataSeuleDateAChangeTest(unittest.TestCase):

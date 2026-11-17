@@ -178,9 +178,6 @@ NON_ETABLIES = [
     ("2007-07-01", "steg-ra-2007", "+6 % sur l'électricité et le gaz (tbl-compensation-eg-ajustements)."),
     ("2007-12-01", "steg-ra-2007", "+6,9 % sur l'électricité (tbl-compensation-eg-ajustements)."),
     ("2008-04-01", "steg-ra-2008", "+7,76 % sur l'électricité (tbl-compensation-eg-ajustements)."),
-    ("2013-03-01", "steg-grille-2013-03-01",
-     "Grilles de la moyenne et de la haute tension du 1er mars 2013 ; la grille résidentielle de mars "
-     "2013 n'est pas établie."),
     ("2014-01-01", "minfin-compensation-carburants-2014",
      "Le rapport de contrôle de 2014 date une hausse du 1er janvier 2014 (p. 75) ; la grille de la "
      "basse tension à cette date n'est pas établie."),

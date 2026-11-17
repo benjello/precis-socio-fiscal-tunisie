@@ -49,6 +49,8 @@ Dater, découper, tester, publier, rendre au précis : `docs/conventions/modele.
 
 ## Économiser
 
+**Économie de tokens et de temps** (consigne du propriétaire, 17/11/2026) : un seul fil de travail ; pas de sous-agents en parallèle sans demande explicite ; outils et scripts existants avant toute relecture à la main, un script dès qu'une opération se répète ; titres et sommaires avant toute OCR ; ne rendre que le chapitre modifié pendant le travail (`scripts/verifier.sh` le fait par défaut), le volume une fois avant la PR ; pas de nouveau `verifier.sh` après une fusion de master sans conflit ; petits lots, rapports de cinq lignes au plus.
+
 Un seul appel (`scripts/verifier.sh`), le modèle suit la tâche, rôles éditoriaux et sous-agents engendrés, indexation des documents : `docs/conventions/economiser.md`.
 
 ## Rendre compte et vérifier
