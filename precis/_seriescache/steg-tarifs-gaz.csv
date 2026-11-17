@@ -1,0 +1,104 @@
+reseau,tranche,structure,date_effet,jour_etabli,valeur,formule,unite,etat,portee,source,page,rupture,remarque
+basse_pression,prix_unique,prix unique,1987-06-16,oui,14,,"millimes courants par thermie, taxe à la production comprise",lu,ajustement,arrete-1987-06-08-tarifs-electricite-gaz,,,
+basse_pression,prix_unique,prix unique,1991-01-01,oui,13.7,,"millimes courants par thermie, hors taxes",lu,ajustement,arrete-1990-12-19-tarifs-electricite-gaz,,"Prix taxe à la production comprise en 1987, hors taxes à partir de 1991 : les niveaux ne se comparent pas de part et d'autre",
+basse_pression,prix_unique,prix unique,1992-08-01,oui,15.1,,"millimes courants par thermie, hors taxes",lu,ajustement,decision-1992-08-11-tarifs-electricite-gaz,,,
+basse_pression,grille_non_etablie,,1993-01-01,non,,,,grille_non_etablie,ajustement,bm-1998-icr-17374,,,"Hausse de 8,6 % du gaz des ménages en 1993 selon la Banque mondiale, mois non donné : le 1er janvier 1993 est une convention."
+basse_pression,prix_unique,prix unique,1994-06-01,non,17.1,,"millimes courants par thermie, hors taxes",lu,ajustement,fipa-1999-production ; fipa-2001-02-electricite-eng ; fipa-2003-08-gaz,,,"Prix relayé sans date d'effet par les pages des agences publiques, de 1999 à 2003 ; rattaché à juin 1994 par un calcul du chapitre (hausses de 1993 et de juin 1994 données par la Banque mondiale), non par une lecture."
+basse_pression,grille_non_etablie,,2004-05-01,oui,,,,grille_non_etablie,ajustement,steg-grille-2004-05-01,,,"Grille exprimée par mètre cube, non reprise."
+basse_pression,grille_non_etablie,,2006-01-01,oui,,,,grille_non_etablie,ajustement,steg-grille-2006-01-01,,,"Grille exprimée par mètre cube, non reprise."
+basse_pression,grille_non_etablie,,2007-07-01,oui,,,,grille_non_etablie,ajustement,steg-ra-2007,,,+6 % sur l'électricité et le gaz ; grille non établie.
+basse_pression,grille_non_etablie,,2007-12-01,oui,,,,grille_non_etablie,ajustement,steg-ra-2007,,,"+8,3 % sur le gaz ; grille non établie."
+basse_pression,grille_non_etablie,,2008-04-01,oui,,,,grille_non_etablie,ajustement,steg-ra-2008,,,+13 % sur le gaz ; grille non établie.
+basse_pression,tranche_1,trois tranches,2008-09-01,oui,22.09,,"millimes courants par thermie, hors taxes",lu,étape (de la réforme de 1984),steg-grille-2008-09-01,,Trois tranches à partir du 1er septembre 2008,
+basse_pression,tranche_2,trois tranches,2008-09-01,oui,25.1,,"millimes courants par thermie, hors taxes",lu,étape (de la réforme de 1984),steg-grille-2008-09-01,,,
+basse_pression,tranche_3,trois tranches,2008-09-01,oui,26.3,,"millimes courants par thermie, hors taxes",lu,étape (de la réforme de 1984),steg-grille-2008-09-01,,,
+basse_pression,tranche_1,trois tranches,2010-06-01,oui,22.4,,"millimes courants par thermie, hors taxes",lu,ajustement,steg-grille-2010-06-01,,,
+basse_pression,tranche_2,trois tranches,2010-06-01,oui,25.6,,"millimes courants par thermie, hors taxes",lu,ajustement,steg-grille-2010-06-01,,,
+basse_pression,tranche_3,trois tranches,2010-06-01,oui,27.0,,"millimes courants par thermie, hors taxes",lu,ajustement,steg-grille-2010-06-01,,,
+basse_pression,grille_non_etablie,,2012-09-01,oui,,,,grille_non_etablie,ajustement,steg-ra-2012,,,+8 % sur le gaz ; grille de la basse pression non établie.
+basse_pression,grille_non_etablie,,2013-03-01,oui,,,,grille_non_etablie,ajustement,steg-grille-2013-03-01,,,"Grille de mars 2013, non reprise."
+basse_pression,tranche_1,quatre tranches,2014-05-01,oui,23.5,,"millimes courants par thermie, hors taxes",lu,étape (de la réforme de 2014),steg-grille-2014-05-01,,Réforme de 2014 : quatre tranches,
+basse_pression,tranche_2,quatre tranches,2014-05-01,oui,29.5,,"millimes courants par thermie, hors taxes",lu,étape (de la réforme de 2014),steg-grille-2014-05-01,,,
+basse_pression,tranche_3,quatre tranches,2014-05-01,oui,36.0,,"millimes courants par thermie, hors taxes",lu,étape (de la réforme de 2014),steg-grille-2014-05-01,,,
+basse_pression,tranche_4,quatre tranches,2014-05-01,oui,42.2,,"millimes courants par thermie, hors taxes",lu,étape (de la réforme de 2014),steg-grille-2014-05-01,,,
+basse_pression,tranche_1,quatre tranches,2017-01-01,oui,24.3,,"millimes courants par thermie, hors taxes",lu,ajustement,steg-grille-2017-01-01,,,
+basse_pression,tranche_2,quatre tranches,2017-01-01,oui,30.5,,"millimes courants par thermie, hors taxes",lu,ajustement,steg-grille-2017-01-01,,,
+basse_pression,tranche_3,quatre tranches,2017-01-01,oui,39.4,,"millimes courants par thermie, hors taxes",lu,ajustement,steg-grille-2017-01-01,,,
+basse_pression,tranche_4,quatre tranches,2017-01-01,oui,46.2,,"millimes courants par thermie, hors taxes",lu,ajustement,steg-grille-2017-01-01,,,
+basse_pression,tranche_1,"quatre tranches, ménages",2018-09-01,oui,24.3,,"millimes courants par thermie, hors taxes",lu,étape (de la réforme de 2014),steg-grille-2018-09-01,,Étape de la réforme de 2014 : les grilles distinguent les ménages des autres abonnés,
+basse_pression,tranche_2,"quatre tranches, ménages",2018-09-01,oui,32.5,,"millimes courants par thermie, hors taxes",lu,étape (de la réforme de 2014),steg-grille-2018-09-01,,,
+basse_pression,tranche_3,"quatre tranches, ménages",2018-09-01,oui,42.4,,"millimes courants par thermie, hors taxes",lu,étape (de la réforme de 2014),steg-grille-2018-09-01,,,
+basse_pression,tranche_4,"quatre tranches, ménages",2018-09-01,oui,53.0,,"millimes courants par thermie, hors taxes",lu,étape (de la réforme de 2014),steg-grille-2018-09-01,,,
+basse_pression,tranche_1,"quatre tranches, ménages",2019-06-01,oui,24.3,,"millimes courants par thermie, hors taxes",lu,ajustement,steg-grille-2019-06-01,,,
+basse_pression,tranche_2,"quatre tranches, ménages",2019-06-01,oui,35.8,,"millimes courants par thermie, hors taxes",lu,ajustement,steg-grille-2019-06-01,,,
+basse_pression,tranche_3,"quatre tranches, ménages",2019-06-01,oui,47.0,,"millimes courants par thermie, hors taxes",lu,ajustement,steg-grille-2019-06-01,,,
+basse_pression,tranche_4,"quatre tranches, ménages",2019-06-01,oui,58.6,,"millimes courants par thermie, hors taxes",lu,ajustement,steg-grille-2019-06-01,,,
+basse_pression,tranche_1,"quatre tranches, ménages",2022-05-01,oui,24.3,,"millimes courants par thermie, hors taxes",lu,ajustement,steg-grille-2022-05-01,,,
+basse_pression,tranche_2,"quatre tranches, ménages",2022-05-01,oui,38.7,,"millimes courants par thermie, hors taxes",lu,ajustement,steg-grille-2022-05-01,,,
+basse_pression,tranche_3,"quatre tranches, ménages",2022-05-01,oui,58.5,,"millimes courants par thermie, hors taxes",lu,ajustement,steg-grille-2022-05-01,,,
+basse_pression,tranche_4,"quatre tranches, ménages",2022-05-01,oui,86.7,,"millimes courants par thermie, hors taxes",lu,ajustement,steg-grille-2022-05-01,,,
+moyenne_pression,prix_unique,prix unique,1987-06-16,oui,11.3,,"millimes courants par thermie, taxe à la production comprise",lu,point de départ,arrete-1987-06-08-tarifs-electricite-gaz,,,
+moyenne_pression,prix_unique,prix unique,1991-01-01,oui,11.1,,"millimes courants par thermie, hors taxes",lu,ajustement,arrete-1990-12-19-tarifs-electricite-gaz,,"Prix taxe à la production comprise en 1987, hors taxes à partir de 1991 : les niveaux ne se comparent pas de part et d'autre",
+moyenne_pression,prix_unique,prix unique,1992-08-01,oui,12.3,,"millimes courants par thermie, hors taxes",lu,ajustement,decision-1992-08-11-tarifs-electricite-gaz,,,
+moyenne_pression,grille_non_etablie,,1993-01-01,non,,,,grille_non_etablie,ajustement,bm-1998-icr-17374,,,"Hausses du gaz en 1993 selon la Banque mondiale, mois non donné : le 1er janvier 1993 est une convention."
+moyenne_pression,prix_unique,prix unique,1994-06-01,non,14,,"millimes courants par thermie, hors taxes",lu,ajustement,fipa-1999-production ; fipa-2001-02-electricite-eng,,,"Prix relayé sans date d'effet par les pages des agences publiques, de 1999 à 2003 ; rattaché à juin 1994 par un calcul du chapitre (hausses de 1993 et de juin 1994 données par la Banque mondiale), non par une lecture."
+moyenne_pression,prix_unique,prix unique,2000-08-15,oui,14,,"millimes courants par thermie, hors taxes",lu,ajustement de la haute pression,api-2003-04-couts-energie,,,
+moyenne_pression,premier_niveau,deux niveaux de débit,2004-08-01,oui,15.76,,"millimes courants par thermie, hors taxes",lu,ajustement,steg-grille-2004-05-01,,,"Grille du 1er mai 2004, applicable à la moyenne pression le 1er août 2004."
+moyenne_pression,second_niveau,deux niveaux de débit,2004-08-01,oui,15.19,,"millimes courants par thermie, hors taxes",lu,ajustement,steg-grille-2004-05-01,,,"Grille du 1er mai 2004, applicable à la moyenne pression le 1er août 2004."
+moyenne_pression,premier_niveau,deux niveaux de débit,2006-01-01,oui,16.57,,"millimes courants par thermie, hors taxes",lu,ajustement,steg-grille-2006-01-01,,,
+moyenne_pression,second_niveau,deux niveaux de débit,2006-01-01,oui,16.0,,"millimes courants par thermie, hors taxes",lu,ajustement,steg-grille-2006-01-01,,,
+moyenne_pression,grille_non_etablie,,2007-07-01,oui,,,,grille_non_etablie,ajustement,steg-ra-2007,,,+6 % sur l'électricité et le gaz ; grille non établie.
+moyenne_pression,grille_non_etablie,,2007-12-01,oui,,,,grille_non_etablie,ajustement,steg-ra-2007,,,"+8,3 % sur le gaz ; grille non établie."
+moyenne_pression,grille_non_etablie,,2008-04-01,oui,,,,grille_non_etablie,ajustement,steg-ra-2008,,,+13 % sur le gaz ; grille non établie.
+moyenne_pression,premier_niveau,deux niveaux de débit,2008-09-01,oui,23.6,,"millimes courants par thermie, hors taxes",lu,ajustement de structure,steg-grille-2008-09-01,,,
+moyenne_pression,second_niveau,deux niveaux de débit,2008-09-01,oui,23.0,,"millimes courants par thermie, hors taxes",lu,ajustement de structure,steg-grille-2008-09-01,,,
+moyenne_pression,premier_niveau,deux niveaux de débit,2010-06-01,oui,25.3,,"millimes courants par thermie, hors taxes",lu,ajustement,steg-grille-2010-06-01,,,
+moyenne_pression,second_niveau,deux niveaux de débit,2010-06-01,oui,24.9,,"millimes courants par thermie, hors taxes",lu,ajustement,steg-grille-2010-06-01,,,
+moyenne_pression,premier_niveau,deux niveaux de débit,2012-09-01,oui,,,"millimes courants par thermie, hors taxes",non_etabli,ajustement,steg-grille-2012-09-01,,,Grille de la moyenne pression non établie.
+moyenne_pression,second_niveau,deux niveaux de débit,2012-09-01,oui,,,"millimes courants par thermie, hors taxes",non_etabli,ajustement,steg-grille-2012-09-01,,,Grille de la moyenne pression non établie.
+moyenne_pression,premier_niveau,deux niveaux de débit,2013-03-01,oui,,,"millimes courants par thermie, hors taxes",non_etabli,ajustement,steg-grille-2013-03-01,,,Grille de la moyenne pression non établie.
+moyenne_pression,second_niveau,deux niveaux de débit,2013-03-01,oui,,,"millimes courants par thermie, hors taxes",non_etabli,ajustement,steg-grille-2013-03-01,,,Grille de la moyenne pression non établie.
+moyenne_pression,premier_niveau,deux niveaux de débit,2014-05-01,oui,37.6,,"millimes courants par thermie, hors taxes",lu,rupture (réforme de 2014),steg-grille-2014-05-01,,Réforme de 2014 : la formule indexée sur le fuel lourd laisse la place à un prix fixe,
+moyenne_pression,second_niveau,deux niveaux de débit,2014-05-01,oui,37.1,,"millimes courants par thermie, hors taxes",lu,rupture (réforme de 2014),steg-grille-2014-05-01,,,
+moyenne_pression,premier_niveau,deux niveaux de débit,2017-01-01,oui,40.3,,"millimes courants par thermie, hors taxes",lu,ajustement,steg-grille-2017-01-01,,,
+moyenne_pression,second_niveau,deux niveaux de débit,2017-01-01,oui,39.8,,"millimes courants par thermie, hors taxes",lu,ajustement,steg-grille-2017-01-01,,,
+moyenne_pression,premier_niveau,deux niveaux de débit,2018-05-01,oui,44.5,,"millimes courants par thermie, hors taxes",lu,ajustement,steg-grille-2018-05-01,,,
+moyenne_pression,second_niveau,deux niveaux de débit,2018-05-01,oui,43.9,,"millimes courants par thermie, hors taxes",lu,ajustement,steg-grille-2018-05-01,,,
+moyenne_pression,premier_niveau,deux niveaux de débit,2018-09-01,oui,54.5,,"millimes courants par thermie, hors taxes",lu,ajustement,steg-grille-2018-09-01,,,
+moyenne_pression,second_niveau,deux niveaux de débit,2018-09-01,oui,53.8,,"millimes courants par thermie, hors taxes",lu,ajustement,steg-grille-2018-09-01,,,
+moyenne_pression,premier_niveau,deux niveaux de débit,2022-05-01,oui,71.1,,"millimes courants par thermie, hors taxes",lu,ajustement,steg-grille-2022-05-01,,,
+moyenne_pression,second_niveau,deux niveaux de débit,2022-05-01,oui,70.5,,"millimes courants par thermie, hors taxes",lu,ajustement,steg-grille-2022-05-01,,,
+haute_pression,premier_niveau,formule,1987-06-16,oui,,"0,1 F − 0,67","millimes courants par thermie, taxe à la production comprise",formule,point de départ,arrete-1987-06-08-tarifs-electricite-gaz,,,
+haute_pression,premier_niveau,formule,1991-01-01,oui,,"0,1 F − 0,67","millimes courants par thermie, hors taxes",formule,ajustement,arrete-1990-12-19-tarifs-electricite-gaz,,,
+haute_pression,premier_niveau,formule,1992-08-01,oui,,"0,1 F − 0,67","millimes courants par thermie, hors taxes",formule,ajustement,decision-1992-08-11-tarifs-electricite-gaz,,,
+haute_pression,premier_niveau,formule,2000-04-01,non,,"0,1 F + 0,37","millimes courants par thermie, hors taxes",formule,formule de la haute pression seule,aner-2000-impact-prix-energie,,,Formule en vigueur en avril 2000 selon l'étude de l'ANER (p. 21) ; date d'effet non établie.
+haute_pression,premier_niveau,formule,2000-08-15,oui,,"0,1 F − 0,4","millimes courants par thermie, hors taxes",formule,ajustement de la haute pression,api-2003-04-couts-energie,,,
+haute_pression,premier_niveau,formule,2004-05-01,oui,,"0,1 F − 1,2475","millimes courants par thermie, hors taxes",formule,ajustement,steg-grille-2004-05-01,,,
+haute_pression,premier_niveau,formule,2006-01-01,oui,,"0,1 F − 7,8932","millimes courants par thermie, hors taxes",formule,ajustement,steg-grille-2006-01-01,,,
+haute_pression,premier_niveau,trois niveaux,2008-09-01,oui,24.0,,"millimes courants par thermie, hors taxes",lu,ajustement de structure,steg-grille-2008-09-01,,,
+haute_pression,second_niveau,trois niveaux,2008-09-01,oui,24.0,,"millimes courants par thermie, hors taxes",lu,ajustement de structure,steg-grille-2008-09-01,,,
+haute_pression,au_dela,trois niveaux,2008-09-01,oui,,"0,1 F − 4,3571","millimes courants par thermie, hors taxes",formule,ajustement de structure,steg-grille-2008-09-01,,,
+haute_pression,premier_niveau,trois niveaux,2010-06-01,oui,25.3,,"millimes courants par thermie, hors taxes",lu,ajustement,steg-grille-2010-06-01,,,
+haute_pression,second_niveau,trois niveaux,2010-06-01,oui,26.8,,"millimes courants par thermie, hors taxes",lu,ajustement,steg-grille-2010-06-01,,,
+haute_pression,au_dela,trois niveaux,2010-06-01,oui,,"0,1 F − 1,590","millimes courants par thermie, hors taxes",formule,ajustement,steg-grille-2010-06-01,,,
+haute_pression,premier_niveau,trois niveaux,2012-09-01,oui,27.1,,"millimes courants par thermie, hors taxes",lu,ajustement,steg-grille-2012-09-01,,,Grille de la moyenne pression non établie.
+haute_pression,second_niveau,trois niveaux,2012-09-01,oui,29.5,,"millimes courants par thermie, hors taxes",lu,ajustement,steg-grille-2012-09-01,,,Grille de la moyenne pression non établie.
+haute_pression,au_dela,trois niveaux,2012-09-01,oui,,"0,1 F − 1,590","millimes courants par thermie, hors taxes",formule,ajustement,steg-grille-2012-09-01,,,Grille de la moyenne pression non établie.
+haute_pression,premier_niveau,trois niveaux,2013-03-01,oui,29.2,,"millimes courants par thermie, hors taxes",lu,ajustement,steg-grille-2013-03-01,,,Grille de la moyenne pression non établie.
+haute_pression,second_niveau,trois niveaux,2013-03-01,oui,32.3,,"millimes courants par thermie, hors taxes",lu,ajustement,steg-grille-2013-03-01,,,Grille de la moyenne pression non établie.
+haute_pression,au_dela,trois niveaux,2013-03-01,oui,,"0,1 F − 1,590","millimes courants par thermie, hors taxes",formule,ajustement,steg-grille-2013-03-01,,,Grille de la moyenne pression non établie.
+haute_pression,premier_niveau,trois niveaux,2014-05-01,oui,35.8,,"millimes courants par thermie, hors taxes",lu,rupture (réforme de 2014),steg-grille-2014-05-01,,,
+haute_pression,second_niveau,trois niveaux,2014-05-01,oui,39.1,,"millimes courants par thermie, hors taxes",lu,rupture (réforme de 2014),steg-grille-2014-05-01,,,
+haute_pression,au_dela,trois niveaux,2014-05-01,oui,52.5,,"millimes courants par thermie, hors taxes",lu,rupture (réforme de 2014),steg-grille-2014-05-01,,,
+haute_pression,premier_niveau,trois niveaux,2017-01-01,oui,38.4,,"millimes courants par thermie, hors taxes",lu,ajustement,steg-grille-2017-01-01,,,
+haute_pression,second_niveau,trois niveaux,2017-01-01,oui,42.6,,"millimes courants par thermie, hors taxes",lu,ajustement,steg-grille-2017-01-01,,,
+haute_pression,au_dela,trois niveaux,2017-01-01,oui,56.0,,"millimes courants par thermie, hors taxes",lu,ajustement,steg-grille-2017-01-01,,,
+haute_pression,premier_niveau,trois niveaux,2018-05-01,oui,42.5,,"millimes courants par thermie, hors taxes",lu,ajustement,steg-grille-2018-05-01,,,
+haute_pression,second_niveau,trois niveaux,2018-05-01,oui,47.2,,"millimes courants par thermie, hors taxes",lu,ajustement,steg-grille-2018-05-01,,,
+haute_pression,au_dela,trois niveaux,2018-05-01,oui,59.4,,"millimes courants par thermie, hors taxes",lu,ajustement,steg-grille-2018-05-01,,,
+haute_pression,premier_niveau,trois niveaux,2018-09-01,oui,52.2,,"millimes courants par thermie, hors taxes",lu,ajustement,steg-grille-2018-09-01,,,
+haute_pression,second_niveau,trois niveaux,2018-09-01,oui,58.0,,"millimes courants par thermie, hors taxes",lu,ajustement,steg-grille-2018-09-01,,,
+haute_pression,au_dela,trois niveaux,2018-09-01,oui,70.0,,"millimes courants par thermie, hors taxes",lu,ajustement,steg-grille-2018-09-01,,,
+haute_pression,premier_niveau,trois niveaux,2022-05-01,oui,60.4,,"millimes courants par thermie, hors taxes",lu,ajustement,steg-grille-2022-05-01,,,
+haute_pression,second_niveau,trois niveaux,2022-05-01,oui,67.1,,"millimes courants par thermie, hors taxes",lu,ajustement,steg-grille-2022-05-01,,,
+haute_pression,au_dela,trois niveaux,2022-05-01,oui,81.3,,"millimes courants par thermie, hors taxes",lu,ajustement,steg-grille-2022-05-01,,,
