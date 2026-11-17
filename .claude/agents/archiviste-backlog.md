@@ -48,7 +48,3 @@ De petites modifications ciblées, pas de réécriture globale ni de reformatage
     uv run python scripts/check_backlog.py
 
 Le contrôle refuse les marqueurs de conflit, les dates futures proches et les clés de citation absentes des `references.json`. Il doit sortir 0. Vérifie aussi que `git diff --stat` ne montre que le backlog.
-
-Économie de tokens et de temps : appliquer la section du même nom d'AGENTS.md (un seul fil, outils et
-scripts existants avant toute relecture à la main, sommaires avant OCR, rendu du seul chapitre
-pendant le travail, rapports de cinq lignes au plus).

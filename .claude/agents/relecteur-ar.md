@@ -94,7 +94,3 @@ du précis — au plus QUINZE LIGNES :
 
 Rien d'autre : ni récit du cheminement, ni code cité en entier — les chemins et le hash suffisent
 à le retrouver.
-
-Économie de tokens et de temps : appliquer la section du même nom d'AGENTS.md (un seul fil, outils et
-scripts existants avant toute relecture à la main, sommaires avant OCR, rendu du seul chapitre
-pendant le travail, rapports de cinq lignes au plus).
