@@ -1,0 +1,11 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-11-17
+# séries (tunisia_data) : compensation-incidence-ins-cres-bad-2010
+# sources (citation) : @ins-cres-bad-2013-subventions
+# fiches : 
+# méthode/hypothèses : Valeurs transcrites du texte de l'étude. Les valeurs par produit et l'indice de ciblage ne sont donnés que pour les quintiles extrêmes.
+# note : La subvention alimentaire par tête selon le quintile de niveau de vie, 2010 (dinars courants de 2010 par tête et par an)
+Grandeur,1er quintile,2e quintile,3e quintile,4e quintile,5e quintile,Source,Localisation
+Subvention alimentaire annuelle par tête (D),68.2,84.2,87.5,89.9,89.1,ins-cres-bad-2013-subventions,tableau 1
+dont gros pain (D),20.6,,,,28.5,ins-cres-bad-2013-subventions,tableau 1
+dont semoule (D),17.0,,,,12.1,ins-cres-bad-2013-subventions,tableau 1
+Indice de ciblage absolu,0.82,,,,1.07,ins-cres-bad-2013-subventions,tableau 1

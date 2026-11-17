@@ -136,20 +136,28 @@ La séparation n'est portée par aucun article de loi. Le rapport du projet de l
 
 ### La part du prix et la part du périmètre
 
-Une source budgétaire sépare les deux effets, avant exécution : le rapport du projet de loi de finances complémentaire pour 2015, qui décompose le passage de la prévision initiale à la prévision révisée.
+Une source budgétaire sépare les deux effets, avant exécution : le rapport du projet de loi de finances complémentaire pour 2015, qui décompose le passage de la prévision initiale à la prévision révisée (@fig-compensation-lfc-2015).
 
-| Facteur | Effet sur la subvention des carburants (MD) |
-|---|---:|
-| Loi de finances pour 2015 | 1 826 |
-| Prix du baril, de 95 à 62 dollars | −2 244 |
-| Cours du dollar, de 1,8 à 1,95 dinar | +413 |
-| Programme d'ajustement des prix intérieurs non réalisé | +356 |
-| Quantités importées | +41 |
-| Séparation des opérations de commercialisation des hydrocarbures | +894 |
-| **Loi de finances complémentaire pour 2015** | **1 286** |
-| *Écart* | *−540* |
-
-: Du projet initial au projet révisé : les facteurs de la subvention des carburants en 2015 (millions de dinars courants). Source : rapport du projet de loi de finances complémentaire pour 2015 [@minfin-projet-lfc-2015, § 17 et 19]. C'est une décomposition avant exécution ; la dépense exécutée en 2015 est de 918,0 MD. {#tbl-compensation-lfc-2015}
+```{python}
+#| label: fig-compensation-lfc-2015
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import tableaux as tb
+tb.figure(
+    "lfc_2015",
+    caption=("Du projet initial au projet révisé : les facteurs de la subvention des carburants "
+             "en 2015 (millions de dinars courants)"),
+    note_lecture=(
+        "Graphique en cascade : la première barre est la prévision de la loi de finances pour "
+        "2015, 1 826 MD ; chaque facteur part du niveau atteint par le précédent, en vert "
+        "quand il abaisse la subvention, en rouge quand il la relève ; la dernière barre est "
+        "la prévision de la loi de finances complémentaire, 1 286 MD, soit un écart de "
+        "−540 MD. La baisse du baril porte le cumul sous zéro, ce que le facteur suivant "
+        "efface presque. C'est une décomposition avant exécution ; la dépense exécutée en 2015 "
+        "est de 918,0 MD. Source : rapport du projet de loi de finances complémentaire pour "
+        "2015 [@minfin-projet-lfc-2015, § 17 et 19]."))
+```
 
 La baisse du baril retire 2 244 MD ; la séparation en ajoute 894. L'effet de la séparation dépend lui-même du prix : le même rapport l'estime à 1 451 MD aux hypothèses de la loi de finances initiale, et le ramène à 894 MD après la baisse du baril et la hausse du dollar [@minfin-projet-lfc-2015, § 20]. Ce n'est donc pas une constante qu'on retrancherait de chaque année suivante, ni qu'on ajouterait aux précédentes.
 
@@ -157,19 +165,31 @@ En exécution, aucune source ne chiffre l'effet. Le rapport semestriel à fin 20
 
 ### Les recettes en regard
 
-La contrepartie de la séparation se lit du côté des recettes non fiscales. La prévision de 894 MD se partage en 487 MD de revenus de la commercialisation du pétrole local, 275 MD de bénéfices de l'ETAP et 132 MD d'écart de valorisation du gaz de la redevance [@minfin-projet-lfc-2015, § 12-13]. L'encaissement n'a pas suivi.
+La contrepartie de la séparation se lit du côté des recettes non fiscales. La prévision de 894 MD se partage en 487 MD de revenus de la commercialisation du pétrole local, 275 MD de bénéfices de l'ETAP et 132 MD d'écart de valorisation du gaz de la redevance [@minfin-projet-lfc-2015, § 12-13]. L'encaissement n'a pas suivi : le @fig-compensation-carburants-recettes met les [revenus de commercialisation des carburants](#g-revenus-commercialisation-carburants), prévus et encaissés, et la redevance sur le gazoduc en regard de la subvention des carburants, de 2012 à 2018.
 
-| Année | [Revenus de commercialisation des carburants](#g-revenus-commercialisation-carburants), prévus | Revenus de commercialisation des carburants, encaissés | Redevance sur le gazoduc, encaissée |
-|---|---|---:|---:|
-| 2012 | | | 210,5 |
-| 2013 | | | 109,7 |
-| 2014 | | | 121,5 |
-| 2015 | 487 (loi de finances complémentaire) | 150,0 | 38,4 |
-| 2016 | | 0,0 | 293,0 |
-| 2017 | 500,0 (loi de finances) ; 615,0 (loi de finances complémentaire) | 609,5 | 555,1 |
-| 2018 | 401,5 (loi de finances) ; 600,0 (loi de finances complémentaire) | 635,0 | 605,4 |
-
-: Les recettes non fiscales en regard de la subvention des carburants, 2012-2018 (millions de dinars courants). Sources : bulletins d'exécution du budget [@minfin-resultats-provisoires-2017-01 ; @minfin-resultats-provisoires-2018-07] ; pour 2018, note d'exécution à fin décembre [@minfin-note-execution-2018-12] ; pour la prévision de 2015, loi de finances complémentaire [@lfc-2015, tableau A]. La ligne des revenus de commercialisation n'existe pas avant 2015. {#tbl-compensation-carburants-recettes}
+```{python}
+#| label: fig-compensation-carburants-recettes
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import compensation as cm
+cm.figure(
+    "carburants_recettes",
+    caption=("Les recettes non fiscales en regard de la subvention des carburants, 2012-2018 "
+             "(millions de dinars courants)"),
+    note_lecture=(
+        "Les barres sont des encaissements : en violet, les revenus de commercialisation des "
+        "carburants ; en vert pointillé, la redevance sur le gazoduc. Les marques creuses sont "
+        "les revenus de commercialisation prévus, triangle pour la loi de finances, carré pour "
+        "la loi de finances complémentaire. La courbe orange est la ligne budgétaire "
+        "« carburants », dont le périmètre s'élargit en 2015 (trait vertical). La ligne des "
+        "revenus de commercialisation n'existe pas avant 2015 ; en 2016, l'encaissement est "
+        "nul. La prévision de 2015 est celle de la loi de finances complémentaire "
+        "[@lfc-2015, tableau A] ; les autres montants viennent des bulletins d'exécution du "
+        "budget [@minfin-resultats-provisoires-2017-01 ; @minfin-resultats-provisoires-2018-07] "
+        "et, pour la loi de finances complémentaire de 2018 et les encaissements de 2018, de "
+        "la note d'exécution à fin décembre 2018 [@minfin-note-execution-2018-12]."))
+```
 
 Pour 2015, le ministère des Finances compte 342 MD dus par l'ETAP au titre de la commercialisation du pétrole, dont 150 MD versés en avance au Trésor ; environ 180 MD de bénéfices de l'ETAP, dont le paiement est différé ; et une redevance sur le gaz de 152 MD, dont 115 MD sur les quantités livrées à la STEG, pour 38 MD encaissés [@minfin-rapport-semestriel-2015-12, p. 18-19]. Ces trois montants ne s'additionnent pas : le rapport n'en publie pas la somme. L'opération dite blanche ne l'a donc pas été en trésorerie.
 
@@ -183,29 +203,57 @@ Le projet de budget pour 2016 montre comment la ligne est construite depuis la s
 
 ## Les recettes tirées des carburants {#sec-compensation-carburants-recettes}
 
-Avant d'être subventionnés, les carburants ont financé la compensation. La taxe unique de compensation de 1971 (@sec-compensation-institution) est relevée trois fois, chaque fois en même temps que le prix à la pompe.
+Avant d'être subventionnés, les carburants ont financé la compensation. La taxe unique de compensation de 1971 (@sec-compensation-institution) est relevée trois fois, chaque fois en même temps que le prix à la pompe. Le @fig-compensation-taxe-unique en donne les tarifs, en dinars courants à chaque date d'effet et en dinars de 2025 : entre deux relèvements, la taxe perd de sa valeur réelle au rythme des prix.
 
-| Date d'effet | Essence | Pétrole lampant | Gas-oil | Texte |
-|---|---:|---:|---:|---|
-| 28 septembre 1964 | 1,050 | 0,470 | 0,460 | arrêté du 28 septembre 1964 [@arrete-1964-09-28-prix-petroliers, art. 1] |
-| 1^er^ janvier 1966 | 2,050 | | | arrêté du 31 décembre 1965 [@arrete-1965-12-31-prix-petroliers] |
-| 25 septembre 1966 | 1,750 et 1,650 | supprimée | supprimée | arrêté du 23 septembre 1966 [@arrete-1966-09-23-prix-petroliers] |
-| 1^er^ janvier 1971 | 1,378 | 0,036 | 0,235 | décret n° 70-622 [@decret70-622, art. 5] |
-| 24 mai 1974 | 6,150 | | | décret n° 74-576 [@decret74-576] |
-| 25 mars 1978 | 7,120 | | | [@decret78-316, p. 817] |
-| 1^er^ janvier 1981 | 9,750 | | 2,180 | décret n° 80-1641 [@decret80-1641] |
+```{python}
+#| label: fig-compensation-taxe-unique
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import compensation as cm
+cm.figure(
+    "taxe_unique",
+    caption=("La taxe au profit de la Caisse sur les produits pétroliers, puis la taxe unique "
+             "de compensation, 1964-1981 (dinars par hectolitre, courants et de 2025)"),
+    note_lecture=(
+        "Une couleur par produit : orange pour l'essence, brun pour le pétrole lampant, bleu "
+        "pour le gas-oil. En tirets, la taxe de 1964 au profit de la Caisse, qui s'ajoute "
+        "jusqu'en 1970 à la redevance de 1957 (@tbl-compensation-prelevements-avant-1970) ; "
+        "en trait plein, la taxe unique de compensation du 1er janvier 1971, qui réunit les "
+        "deux (trait vertical) : les deux ne sont pas reliées. Le 25 septembre 1966, l'essence "
+        "reçoit deux tarifs, 1,750 et 1,650 D/hl, un par qualité (le second en pointillé), et "
+        "la taxe est supprimée sur le pétrole lampant et le gas-oil (cercle creux). Un tarif "
+        "que le texte suivant ne modifie pas se prolonge. Le décret de 1980 institue en outre "
+        "une taxe de 4 D par tonne sur le fuel-oil lourd et un tarif de 1,525 D/hl pour le "
+        "gas-oil de l'agriculture et de la pêche, qui ne sont pas tracés [@decret80-1641]. Les "
+        "tarifs postérieurs à 1981 ne sont pas établis : les traits s'arrêtent à la fin de "
+        "1981.\n\n"
+        "Dinars de 2025 : valeurs calculées, non observées. Pour chaque année entière où le "
+        "tarif existe, la moyenne des tarifs en vigueur au premier jour de chacun des douze "
+        "mois est multipliée par le rapport de l'indice des prix à la consommation de 2025 à "
+        "celui de l'année (indices annuels moyens) ; une année incomplète — celle de la "
+        "création, de la suppression ou du remplacement d'une taxe — n'a pas de point. "
+        "L'indice raccorde, en 1970, l'indice du coût de la vie de la Banque centrale "
+        "(1962-1975) et l'indice des prix à la consommation familiale de l'INS (1976-2023), "
+        "lu dans ses annuaires statistiques ; 2024 et 2025 prolongent la série par la "
+        "variation de l'indice en base 2015 que publie la Banque centrale. Les moyennes "
+        "annuelles et l'indice sont dans les données."))
+```
 
-: La taxe au profit de la Caisse sur les produits pétroliers, puis la taxe unique de compensation, 1964-1981 (dinars par hectolitre). Avant 1971, la taxe de 1964 s'ajoute à la redevance de 1957 (@tbl-compensation-prelevements-avant-1970) ; la taxe unique de 1971 les réunit. Une case vide est un tarif que le texte ne modifie pas. En 1966, les deux tarifs valent pour les deux qualités d'essence. Le décret de 1980 institue en outre une taxe de 4 D par tonne sur le fuel-oil lourd, et un tarif de 1,525 D/hl pour le gas-oil de l'agriculture et de la pêche. Les tarifs postérieurs à 1981 ne sont pas établis ici. {#tbl-compensation-taxe-unique}
+<!-- TODO (documentaliste) : l'arrêté du 9 décembre 1968 (JORT n° 52 de 1968, pp. 1291-1292) porte la taxe de l'arrêté du 23 septembre 1966 de 1,750 à 2,500 D/hl pour l'essence supérieure et de 1,650 à 2,300 pour l'essence normale (docs/notes/compensation-avant-1970-et-plans.md) ; ce relèvement manque à la série de la taxe, qui prolonge les tarifs de 1966 jusqu'en 1970. À verser dans figures/transcriptions.py (TAXE_UNIQUE), avec sa clé, après relecture. -->
+
+<!-- TODO (rédacteur) : remplacer par un tableau engendré — les tarifs de la taxe sont transcrits à la main dans figures/transcriptions.py, en attendant d'être datés et sourcés dans la base législative. -->
+
 
 Le 24 mai 1974, la taxe sur les essences passe de 1,378 à 6,150 D par hectolitre, soit 47,72 millimes de plus par litre, et le prix du supercarburant de 115 à 165 millimes : la hausse du prix à la pompe est, presque en entier, une hausse de la taxe affectée à la Caisse [@decret74-576 ; @arrete-1974-05-24-prix-petroliers]. Le gas-oil et le pétrole lampant ne bougent pas. De 1974 à 1993, les arrêtés de prix affectent en outre à la Caisse la plus-value de réévaluation des stocks à chaque hausse [@arrete-1974-05-24-prix-petroliers, art. 3 ; @arrete-1993-10-26-prix-petroliers, art. 9].
 
-Le rendement est connu pour trois années : la taxe unique sur les carburants rapporte 51,5 MD à la Caisse en 1984, 52,5 MD en 1985 et 52 MD en 1986, soit plus du tiers de ses recettes propres (@tbl-compensation-recettes-propres) [@bct-ra-1985, p. 76 ; @bct-ra-1986, p. 76]. Elle cesse d'être individualisée en 1987, quand les recettes de la Caisse entrent au budget (@sec-compensation-1987). La suite n'est établie qu'à partir de 2004 : cette année-là apparaît la première ligne budgétaire de subvention des carburants, et, depuis 2015, des revenus de commercialisation en regard (@tbl-compensation-carburants-recettes).
+Le rendement est connu pour trois années : la taxe unique sur les carburants rapporte 51,5 MD à la Caisse en 1984, 52,5 MD en 1985 et 52 MD en 1986, soit plus du tiers de ses recettes propres (@tbl-compensation-recettes-propres) [@bct-ra-1985, p. 76 ; @bct-ra-1986, p. 76]. Elle cesse d'être individualisée en 1987, quand les recettes de la Caisse entrent au budget (@sec-compensation-1987). La suite n'est établie qu'à partir de 2004 : cette année-là apparaît la première ligne budgétaire de subvention des carburants, et, depuis 2015, des revenus de commercialisation en regard (@fig-compensation-carburants-recettes).
 
 ## Les prix à la pompe, 1964-2026 {#sec-compensation-prix-pompe}
 
 Aucune source ne donne le prix à la pompe d'un seul tenant sur soixante ans. Cinq familles de sources se relaient ; elles ne mesurent pas le même objet — un prix à sa date d'effet, une moyenne annuelle, un relevé — et sont données ici une à une, sans être fondues.
 
-Le @fig-compensation-prix-pompe les superpose pour l'essence et pour le gasoil, chacune avec son tracé.
+Le @fig-compensation-prix-pompe les superpose pour l'essence, le gasoil et la bouteille de gaz, chacune avec son tracé, en prix courants et en dinars de 2025.
 
 ```{python}
 #| label: fig-compensation-prix-pompe
@@ -215,28 +263,43 @@ import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
 from figures import compensation as cm
 cm.figure(
     "prix_pompe",
-    caption=("Les prix à la pompe de l'essence et du gasoil selon les familles de sources, "
-             "1964-2026 (millimes par litre, prix courants, échelle logarithmique)"),
+    caption=("Les prix à la pompe de l'essence et du gasoil, et le prix de la bouteille de gaz "
+             "de 13 kg, selon les familles de sources, 1964-2026 (millimes par litre ou dinars "
+             "par bouteille, prix courants et prix de 2025)"),
     note_lecture=(
-        "Un onglet par carburant. Chaque famille de sources a sa couleur et son tracé, et "
-        "aucune n'est reliée à une autre. En noir, les prix limites fixés par arrêté publié "
-        "au Journal officiel, en marches d'escalier aux dates d'effet (1964-1993). En bleu, "
-        "les moyennes annuelles du ministère chargé de l'énergie, pondérées par les jours "
-        "(1990-2016), placées au milieu de l'année. En vert, les moyennes annuelles des prix "
-        "de détail de l'INS. En brun, les ajustements datés de 2002 à 2018 : losange plein "
-        "quand la date est officielle, creux quand elle vient de la presse. En violet, les "
-        "prix en vigueur publiés par l'Observatoire national de l'énergie depuis 2017, en "
-        "escalier ; le dernier palier est prolongé jusqu'à fin juillet 2026, les prix étant "
-        "inchangés depuis le 24 novembre 2022. La croix rouge est un prix cité par la Banque "
-        "mondiale pour 2014.\n\n"
+        "Deux onglets par produit : prix courants, puis dinars de 2025. Chaque famille de "
+        "sources a sa couleur et son tracé, et aucune n'est reliée à une autre. En noir, les "
+        "prix limites fixés par arrêté publié au Journal officiel, en marches d'escalier aux "
+        "dates d'effet (1964-1993). En bleu, les moyennes annuelles du ministère chargé de "
+        "l'énergie, pondérées par les jours (1990-2016), placées au milieu de l'année. En vert, "
+        "les moyennes annuelles des prix de détail de l'INS. En brun, les ajustements datés de "
+        "2002 à 2018 : losange plein quand la date est officielle, creux quand elle vient de la "
+        "presse. En violet, les prix en vigueur publiés par l'Observatoire national de "
+        "l'énergie depuis 2017, en escalier ; le dernier palier est prolongé jusqu'à fin "
+        "juillet 2026, les prix étant inchangés depuis le 24 novembre 2022. La croix rouge est "
+        "un prix cité par la Banque mondiale pour 2014. En prix courants, l'essence et le "
+        "gasoil sont en échelle logarithmique, qui permet de lire sur une même vue 90 et "
+        "2 525 millimes ; la bouteille de gaz est en dinars, en échelle linéaire.\n\n"
         "Les traits verticaux marquent les ruptures de produit ou de nature du prix : prix "
         "uniforme sur le territoire en 1968, après les prix de la zone de Tunis ; essence "
         "sans plomb en 1992 ; passage des prix datés aux moyennes annuelles en 1995 ; retour "
         "des prix datés en 2017. Les triangles rouges au pied du cadre sont les étapes du "
-        "mécanisme d'ajustement, de 2009 à 2022. Les ajustements de 1997 à 2000 déduits par "
-        "le calcul (aucune hausse n'est intervenue en 2001) et les relevés mensuels de l'INS ne sont pas tracés ; ils sont dans les "
-        "données. L'échelle logarithmique permet de lire sur une même vue 90 et 2 525 "
-        "millimes."))
+        "mécanisme d'ajustement des prix des carburants, de 2009 à 2022. Les ajustements de "
+        "1997 à 2000 déduits par le calcul (aucune hausse n'est intervenue en 2001) et les "
+        "relevés mensuels de l'INS ne sont pas tracés ; ils sont dans les données.\n\n"
+        "Dinars de 2025 : valeurs calculées, non observées, en échelle linéaire. Une moyenne "
+        "annuelle est multipliée par le rapport de l'indice des prix à la consommation de 2025 "
+        "à celui de son année (indices annuels moyens). Un prix fixé à une date d'effet "
+        "— arrêtés, Observatoire — est d'abord ramené, pour chaque année entière, à la moyenne "
+        "des prix en vigueur au premier jour de chacun des douze mois ; 1981 n'a pas de "
+        "moyenne, les prix de son premier semestre n'étant pas établis. Un ajustement daté et "
+        "le prix de la Banque mondiale sont ramenés par l'indice de leur année. L'indice "
+        "raccorde, en 1970, l'indice du coût de la vie de la Banque centrale (1962-1975) et "
+        "l'indice des prix à la consommation familiale de l'INS (1976-2023), lu dans ses "
+        "annuaires statistiques ; 2024 et 2025 prolongent la série par la variation de "
+        "l'indice en base 2015 que publie la Banque centrale. 2026, dont l'indice n'est pas "
+        "publié, n'est pas ramené. Les moyennes annuelles, l'indice et les valeurs ramenées "
+        "sont dans les données."))
 ```
 
 ### 1964-1993 : les arrêtés publiés au *Journal officiel*
@@ -274,7 +337,7 @@ De 1964 à 1993, le prix à la pompe est fixé par un arrêté publié, qui donn
 : Les prix limites de vente à la pompe fixés par arrêté, 1964-1993 (millimes par litre ; bouteille de gaz en dinars). Une case vide est un prix que l'arrêté ne modifie pas, ou un produit qu'il ne fixe pas : le dernier prix se prolonge. Jusqu'en 1966, le prix est celui de la zone de Tunis ; l'arrêté du 9 décembre 1968 institue le prix uniforme sur le territoire. Les quatre prix de septembre 1966 sont vérifiés par le calcul de la taxe ; ceux du pétrole lampant et du gas-oil de novembre 1984, mal imprimés, sont rétablis par le prix de gros et la marge. Plusieurs arrêtés (1987, 1988, 1992, 1993) portent une date d'effet antérieure à leur signature. {#tbl-compensation-prix-arretes}
 :::
 
-Quatre faits. Le prix du supercarburant passe de 90 millimes le litre en 1964 à 570 en 1993. Les deux hausses les plus fortes — +50 millimes sur l'essence le 24 mai 1974, puis de 220 à 280 millimes entre la fin de 1979 et juin 1981 — accompagnent deux relèvements de la taxe unique de compensation (@tbl-compensation-taxe-unique). Les années 1980 voient une hausse presque chaque année, de vingt millimes le plus souvent. Enfin l'écart entre l'essence et le gas-oil se resserre : le gas-oil vaut 39 % du prix du super en 1971, 34 % en 1979 et 54 % en 1993.
+Quatre faits. Le prix du supercarburant passe de 90 millimes le litre en 1964 à 570 en 1993. Les deux hausses les plus fortes — +50 millimes sur l'essence le 24 mai 1974, puis de 220 à 280 millimes entre la fin de 1979 et juin 1981 — accompagnent deux relèvements de la taxe unique de compensation (@fig-compensation-taxe-unique). Les années 1980 voient une hausse presque chaque année, de vingt millimes le plus souvent. Enfin l'écart entre l'essence et le gas-oil se resserre : le gas-oil vaut 39 % du prix du super en 1971, 34 % en 1979 et 54 % en 1993.
 
 Un maillon manque. L'arrêté du 23 juin 1981 abroge un arrêté du 31 décembre 1980 [@arrete-1981-06-23-prix-petroliers], qui n'est pas identifié ici : les prix du premier semestre de 1981 ne sont pas établis.
 
@@ -445,7 +508,7 @@ La frise se lit en six temps.
 - **2016 : deux baisses**, la seconde pour le seul gasoil.
 - **2017-2018 : cinq hausses en quatorze mois**, soit +335 millimes sur l'essence et +340 sur le gasoil.
 
-Deux rapprochements avec la ligne budgétaire peuvent être faits. L'absence d'ajustement entre décembre 2010 et septembre 2012 est contemporaine du passage de la ligne « carburants » de 550,0 MD en 2010 à 2 111,0 MD en 2012. Et le rapport du projet de loi de finances complémentaire pour 2015 chiffre à 356 MD, pour cette seule année, le coût d'un programme d'ajustement des prix non réalisé (@tbl-compensation-lfc-2015).
+Deux rapprochements avec la ligne budgétaire peuvent être faits. L'absence d'ajustement entre décembre 2010 et septembre 2012 est contemporaine du passage de la ligne « carburants » de 550,0 MD en 2010 à 2 111,0 MD en 2012. Et le rapport du projet de loi de finances complémentaire pour 2015 chiffre à 356 MD, pour cette seule année, le coût d'un programme d'ajustement des prix non réalisé (@fig-compensation-lfc-2015).
 
 ## La structure des prix et la subvention par litre {#sec-compensation-structure-prix}
 
@@ -463,7 +526,7 @@ Le tableau est complet depuis février 2020. De juillet 2014 à 2019, il ne donn
 
 ### Comment le tableau se lit
 
-Le tableau obéit à deux égalités, que ses colonnes vérifient au millime près, hors les exceptions dites en légende du @tbl-compensation-structure-2020-2022.
+Le tableau obéit à deux égalités, que ses colonnes vérifient au millime près, hors les exceptions dites dans la note de lecture du @fig-compensation-structure-2020-2022.
 
 - **Le prix de vente au public** est la somme du prix de cession, des droits et taxes, et des frais et marges. Pour l'essence au 7 avril 2020 : 1 101 + 738 + 196 = 2 035 millimes le litre.
 - **Le prix de vente « nominal »**, que l'Observatoire ne publie que de février à août 2020, est le prix public « simulé sur la base du prix d'importation » : la même somme, où le prix d'importation remplace le prix de cession. Pour l'essence : 994 + 738 + 196 = 1 928 millimes.
@@ -476,22 +539,26 @@ Deux précautions de lecture. Le prix de cession, les droits, les marges et le p
 
 Vingt-quatre structures sont datées par l'Observatoire du 1^er^ juillet 2014 au 24 novembre 2022. La décomposition complète n'existe que pour les dernières ; quatre d'entre elles en donnent la mesure.
 
-| Structure du | Produit | Prix de cession | Droits et taxes | Frais et marges | Prix public |
-|---|---|---:|---:|---:|---:|
-| 7 avril 2020 | essence sans plomb | 1 101 | 738 | 196 | 2 035 |
-| 7 avril 2020 | gasoil ordinaire | 1 095 | 295 | 160 | 1 550 |
-| 7 avril 2020 | gasoil sans soufre | 1 135 | 504 | 161 | 1 800 |
-| 20 avril 2021 | essence sans plomb | 1 149 | 747 | 198 | 2 095 |
-| 20 avril 2021 | gasoil ordinaire | 1 141 | 301 | 163 | 1 605 |
-| 20 avril 2021 | gasoil sans soufre | 1 137 | 504 | 164 | 1 805 |
-| 14 avril 2022 | essence sans plomb | 1 343 | 785 | 202 | 2 330 |
-| 14 avril 2022 | gasoil ordinaire | 1 300 | 323 | 167 | 1 790 |
-| 14 avril 2022 | gasoil sans soufre | 1 314 | 528 | 168 | 2 010 |
-| 24 novembre 2022 | essence sans plomb | 1 498 | 815 | 211 | 2 525 |
-| 24 novembre 2022 | gasoil ordinaire | 1 464 | 345 | 176 | 1 985 |
-| 24 novembre 2022 | gasoil sans soufre | 1 478 | 550 | 177 | 2 205 |
+Le @fig-compensation-structure-synthese décompose le prix de l'essence sans plomb, du gasoil ordinaire et du gasoil sans soufre à quatre de ces dates.
 
-: La structure du prix des carburants à quatre dates, 2020-2022 (millimes par litre). Source : Observatoire national de l'énergie et des mines, *Conjoncture énergétique* [@one-conjoncture-energetique]. La structure du 24 novembre 2022 est encore en vigueur à fin juillet 2026. Pour l'essence, la somme des trois composantes est inférieure d'un millime au prix public à partir d'avril 2021 : c'est un arrondi de la source. {#tbl-compensation-structure-synthese}
+```{python}
+#| label: fig-compensation-structure-synthese
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import tableaux as tb
+tb.figure(
+    "structure_synthese",
+    caption=("La structure du prix des carburants à quatre dates, 2020-2022 : prix de cession, "
+             "droits et taxes, frais et marges (millimes par litre)"),
+    note_lecture=(
+        "Une barre par produit et par structure : en bleu le prix de cession, en orange les "
+        "droits et taxes, en vert les frais et marges ; le trait noir est le prix public. La "
+        "structure du 24 novembre 2022 est encore en vigueur à fin juillet 2026. Pour "
+        "l'essence, la somme des trois composantes est inférieure d'un millime au prix public "
+        "à partir d'avril 2021 : c'est un arrondi de la source. Source : Observatoire national "
+        "de l'énergie et des mines, Conjoncture énergétique [@one-conjoncture-energetique]."))
+```
 
 Trois constats. Les droits et taxes pèsent très inégalement : 815 millimes sur le litre d'essence en novembre 2022, 345 sur le litre de gasoil ordinaire, pour des prix de cession voisins. D'une structure à l'autre, c'est le prix de cession qui porte l'essentiel de l'ajustement : de 1 101 à 1 498 millimes pour l'essence entre avril 2020 et novembre 2022, quand les droits et taxes passent de 738 à 815 et les frais et marges de 196 à 211. Enfin les frais et marges sont presque constants.
 
@@ -511,47 +578,74 @@ Trois constats. Les droits et taxes pèsent très inégalement : 815 millimes su
 : Le prix de cession et le prix public des carburants à chaque structure datée, 2014-2019 (prix de cession → prix public ; millimes par litre, bouteille de gaz en dinars). Source : Observatoire national de l'énergie et des mines, *Conjoncture énergétique* [@one-conjoncture-energetique]. Pour ces années, la source ne donne ni les droits et taxes ni les marges. Le tableau ne porte que les structures présentes dans les numéros établis : la structure du 1^er^ avril 2018 (@tbl-compensation-ajustements) n'y figure pas, aucun numéro de janvier à juin 2018 n'étant conservé, et trois autres périodes sans numéro — octobre 2015 à mars 2016, mai à juillet 2016, juin à août 2017 — peuvent cacher une structure intermédiaire. La structure du 25 novembre 2016 abaisse le prix de cession sans changer le prix public. Celle que la source date du 31 décembre 2017 est l'ajustement du 1^er^ janvier 2018. {#tbl-compensation-structure-2014-2019}
 :::
 
-::: {.callout-note collapse="true" title="La décomposition du prix à chaque structure, 2020-2022 : le tableau"}
-| Structure du | Essence sans plomb | Gasoil ordinaire | Gasoil sans soufre |
-|---|---|---|---|
-| 31 mars 2019, décomposée en février 2020 | — / 744 / 183 → 2 065 | — / 298 / 148 → 1 570 | — / 508 / 149 → 1 825 |
-| 7 avril 2020 | 1 101 / 738 / 196 → 2 035 | 1 095 / 295 / 160 → 1 550 | 1 135 / 504 / 161 → 1 800 |
-| 8 mai 2020 | — / 733 / 192 → 2 005 | — / 293 / 157 → 1 530 | — / 501 / 158 → 1 775 |
-| 9 juin 2020 | — / 729 / 192 → 1 975 | — / 291 / 157 → 1 510 | — / 498 / 158 → 1 750 |
-| 8 juillet 2020, selon le numéro de juillet | — / 724 / 192 → 1 945 | — / 288 / 157 → 1 490 | — / 495 / 158 → 1 725 |
-| 8 juillet 2020, selon le numéro d'août | 1 004 / 719 / 192 → 1 915 | 1 027 / 286 / 157 → 1 470 | 1 049 / 493 / 158 → 1 700 |
-| 9 octobre 2020 | inchangée | inchangé | — / 490 / 158 → 1 675 |
-| 10 novembre 2020 | 1 004 / 719 / 192 → 1 915 | 1 027 / 286 / 157 → 1 470 | 1 005 / 487 / 158 → 1 650 |
-| 6 février 2021 | 1 033 / … → 1 955 | 1 050 / … → 1 500 | 1 032 / … → 1 685 |
-| 11 mars 2021 | 1 067 / 731 / 197 → 1 995 | 1 076 / 293 / 162 → 1 530 | 1 063 / 495 / 162 → 1 720 |
-| 20 avril 2021 | 1 149 / 747 / 198 → 2 095 | 1 141 / 301 / 163 → 1 605 | 1 137 / 504 / 164 → 1 805 |
-| 1^er^ février 2022 | 1 198 / 757 / 200 → 2 155 | 1 183 / 307 / 165 → 1 655 | 1 184 / 511 / 165 → 1 860 |
-| 1^er^ mars 2022 | 1 251 / 767 / 201 → 2 220 | 1 226 / 313 / 166 → 1 705 | 1 231 / 517 / 167 → 1 915 |
-| 14 avril 2022 | 1 343 / 785 / 202 → 2 330 | 1 300 / 323 / 167 → 1 790 | 1 314 / 528 / 168 → 2 010 |
-| 18 septembre 2022 | 1 398 / 796 / 206 → 2 400 | 1 358 / 330 / 171 → 1 860 | 1 372 / 536 / 172 → 2 080 |
-| 24 novembre 2022 | 1 498 / 815 / 211 → 2 525 | 1 464 / 345 / 176 → 1 985 | 1 478 / 550 / 177 → 2 205 |
+Le @fig-compensation-structure-2020-2022 donne la décomposition à chaque structure datée de 2020 à 2022, un onglet par produit, et celle de la bouteille de gaz.
 
-: La décomposition du prix des carburants à chaque structure datée, 2020-2022 (prix de cession / droits et taxes / frais et marges → prix public ; millimes par litre). Source : Observatoire national de l'énergie et des mines, *Conjoncture énergétique* [@one-conjoncture-energetique]. Le relevé est exhaustif depuis février 2020 seulement. Un tiret marque un prix de cession que le numéro ne donne pas. Quatre réserves tiennent à la source elle-même. Les droits et taxes et les marges de la structure du 6 février 2021 ne sont pas repris : le numéro a mis à jour le prix de cession et le prix public, mais laissé ces deux colonnes à leur valeur antérieure. Deux numéros datent du 8 juillet 2020 deux jeux de prix différents : la baisse d'août 2020 n'est pas datée par la source. La structure de novembre 2020 est datée du 10 dans deux numéros et du 9 dans un troisième. Enfin deux sommes de la colonne du prix nominal sont fausses dans la source, pour le fuel lourd en février 2020 et pour l'essence en juin 2020 ; elles ne sont pas reprises. Pour la bouteille de gaz de 13 kg, la structure est de 2,782 / 0,970 / 3,948 → 7,7 dinars du 7 avril 2020 au 14 avril 2022, puis de 3,43 / 1,11 / 4,27 → 8,80 dinars. {#tbl-compensation-structure-2020-2022}
-:::
+```{python}
+#| label: fig-compensation-structure-2020-2022
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import tableaux as tb
+tb.figure(
+    "structure_2020_2022",
+    caption=("La décomposition du prix des carburants à chaque structure datée, 2020-2022, et "
+             "de la bouteille de gaz de 13 kg : prix de cession, droits et taxes, frais et "
+             "marges, prix public (millimes par litre ; bouteille en dinars)"),
+    note_lecture=(
+        "Une barre par structure : en bleu le prix de cession, en orange les droits et taxes, "
+        "en vert les frais et marges ; le trait noir est le prix public. Le relevé est "
+        "exhaustif depuis février 2020 seulement. Quand le numéro ne donne pas le prix de "
+        "cession, les droits et taxes et les frais et marges sont en clair, hachurés, et le "
+        "prix de cession n'est pas tracé : rien n'est déduit du prix public. Quatre réserves "
+        "tiennent à la source elle-même. Les droits et taxes et les marges de la structure du "
+        "6 février 2021 ne sont pas repris : le numéro a mis à jour le prix de cession et le "
+        "prix public, mais laissé ces deux colonnes à leur valeur antérieure. Deux numéros "
+        "datent du 8 juillet 2020 deux jeux de prix différents : la baisse d'août 2020 n'est "
+        "pas datée par la source. La structure de novembre 2020 est datée du 10 dans deux "
+        "numéros et du 9 dans un troisième. Enfin deux sommes de la colonne du prix nominal "
+        "sont fausses dans la source, pour le fuel lourd en février 2020 et pour l'essence en "
+        "juin 2020 ; elles ne sont pas reprises. Le 9 octobre 2020, la structure de l'essence "
+        "et du gasoil ordinaire est inchangée. Pour la bouteille de gaz de 13 kg, la structure "
+        "vaut du 7 avril 2020 au 14 avril 2022, puis la suivante. Source : Observatoire "
+        "national de l'énergie et des mines, Conjoncture énergétique "
+        "[@one-conjoncture-energetique]."))
+```
 
 ### Prix d'importation et prix de cession en moyenne annuelle, 2016-2025
 
 Le numéro de décembre de la *Conjoncture énergétique* donne le prix moyen d'importation de l'année. Mis en regard du prix de cession, il dit de combien le produit importé a coûté plus, ou moins, qu'il n'a été cédé.
 
-| Année | Essence : importation | Essence : cession | Essence : écart | Gasoil ordinaire : importation | Gasoil : cession | Gasoil : écart | Bouteille de gaz : importation (D) | Bouteille : cession (D) |
-|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2016 | 768 | 817 | −49 | 716 | 769 | −53 | 11,559 | 2,913 |
-| 2017 | 1 048 | 934 | +114 | 1 023 | 884 | +139 | 15,899 | 3,060 |
-| 2018 | 1 381 | 1 077 | +304 | 1 414 | 1 051 | +363 | 18,027 | 3,001 |
-| 2019 | 1 416 | 1 138 | +278 | 1 484 | 1 124 | +360 | 17,871 | 2,882 |
-| 2020 | 916 | 1 004 | −88 | 963 | 1 027 | −64 | 15,46 | 2,782 |
-| 2021 | 1 510 | 1 149 | +361 | 1 366 | 1 141 | +225 | 24,58 | 2,782 |
-| 2022 | 2 570 | 1 498 | +1 072 | 2 912 | 1 464 | +1 448 | 33,40 | 3,43 |
-| 2023 | 2 131 | 1 498 | +633 | 2 082 | 1 464 | +618 | 26,20 | 3,43 |
-| 2024, à fin novembre | 2 039 | 1 498 | +541 | 1 990 | 1 464 | +526 | 23,98 | 3,43 |
-| 2025 | 1 711 | 1 498 | +213 | 1 765 | 1 464 | +301 | 24,52 | 3,43 |
+Le @fig-compensation-import-cession met les deux prix en regard, avec leur écart, pour l'essence, le gasoil ordinaire et la bouteille de gaz, de 2016 à 2025.
 
-: Le prix moyen d'importation de l'année et le prix de cession en vigueur en fin d'année, 2016-2025 (millimes par litre ; bouteille de gaz de 13 kg en dinars). Source : Observatoire national de l'énergie et des mines, *Conjoncture énergétique*, numéros de décembre [@one-conjoncture-energetique]. Les deux colonnes d'écart sont un **calcul** fait ici — importation moins cession —, que l'Observatoire dit lui-même « indicatif ». Trois réserves : le prix de cession est celui de la fin de l'année, alors que le prix d'importation est la moyenne de l'année, si bien que l'écart est faussé les années où la cession a changé (2017, 2018, 2020, 2021, 2022) ; il ignore la production de la raffinerie ; et il n'est pas la subvention budgétaire. Pour 2024, le numéro de décembre n'est pas établi. {#tbl-compensation-import-cession}
+```{python}
+#| label: fig-compensation-import-cession
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import compensation as cm
+cm.figure(
+    "import_cession",
+    caption=("Le prix moyen d'importation de l'année et le prix de cession en vigueur en fin "
+             "d'année, 2016-2025 (millimes par litre ; bouteille de gaz de 13 kg en dinars ; "
+             "prix courants et prix de 2025)"),
+    note_lecture=(
+        "Pour l'essence (orange) et le gasoil ordinaire (bleu), le trait plein est le prix "
+        "moyen d'importation de l'année, le tiret le prix de cession en vigueur en fin "
+        "d'année ; les barres du bas donnent leur écart, importation moins cession. La "
+        "bouteille de gaz a ses propres onglets, en dinars. Source : Observatoire national de "
+        "l'énergie et des mines, Conjoncture énergétique, numéros de décembre ; pour 2024, "
+        "données à fin novembre. L'écart est un calcul, que l'Observatoire dit lui-même "
+        "« indicatif ». Trois réserves : le prix de cession est celui de la fin de l'année, "
+        "alors que le prix d'importation est la moyenne de l'année, si bien que l'écart est "
+        "faussé les années où la cession a changé (2017, 2018, 2020, 2021, 2022) ; il ignore "
+        "la production de la raffinerie ; et il n'est pas la subvention budgétaire.\n\n"
+        "Dinars de 2025 : valeurs calculées, non observées. Chaque prix, et l'écart, est "
+        "multiplié par le rapport de l'indice des prix à la consommation de 2025 à celui de "
+        "l'année (indices annuels moyens), y compris le prix de cession de fin d'année. "
+        "L'indice est celui de l'INS en base 100 en 1970 jusqu'en 2023, prolongé pour 2024 et "
+        "2025 par la variation de l'indice en base 2015 que publie la Banque centrale. "
+        "L'indice et les valeurs ramenées sont dans les données."))
+```
 
 L'écart change de signe avec le prix du pétrole : le litre d'essence importé coûte moins que son prix de cession en 2016 et en 2020, et jusqu'à 1 072 millimes de plus en 2022, année où la ligne budgétaire « carburants » atteint 7 628,0 MD (@tbl-compensation-2012-2025). Pour la bouteille de gaz, l'écart est positif chaque année et ne descend jamais sous 8 dinars : le prix de cession de la bouteille, autour de 3 dinars, ne suit pas son prix d'importation, qui va de 11,6 à 33,4 dinars.
 
@@ -561,23 +655,29 @@ L'écart change de signe avec le prix du pétrole : le litre d'essence importé 
 
 Le ministère des Finances publie, dans ses budgets citoyens, ce que coûte chaque produit, ce que le consommateur en paie, et la différence. Ce sont des subventions unitaires **prévisionnelles**, calculées à l'hypothèse de prix du baril retenue pour le budget ; ce ne sont pas des montants constatés.
 
-| Budget | Produit | Coût | Prix payé | Subvention unitaire |
-|---|---|---:|---:|---:|
-| 2021 | bouteille de gaz | 18 500 | 7 700 | 10 800 |
-| 2022 | essence, le litre | 3 325 | 2 220 | 1 105 |
-| 2022 | gasoil, le litre | 2 754 | 1 705 | 1 049 |
-| 2022 | gasoil sans soufre, le litre | 3 071 | 1 915 | 1 156 |
-| 2022 | bouteille de gaz | 41 000 | 7 700 | 33 000 |
-| 2023 | essence, le litre | 3 396 | 2 525 | 871 |
-| 2023 | gasoil, le litre | 2 820 | 1 985 | 835 |
-| 2023 | gasoil sans soufre, le litre | 3 140 | 2 205 | 935 |
-| 2023 | bouteille de gaz | 42 000 | 8 800 | 33 000 |
-| 2024 | essence, le litre | 3 055 | 2 525 | 530 |
-| 2024 | gasoil, le litre | 2 511 | 1 985 | 526 |
-| 2024 | gasoil sans soufre, le litre | 2 813 | 2 205 | 608 |
-| 2024 | bouteille de gaz | 36 000 | 8 800 | 27 000 |
+Le @fig-compensation-subvention-unitaire les donne, budget par budget, pour l'essence, le gasoil, le gasoil sans soufre et la bouteille de gaz.
 
-: La subvention unitaire prévisionnelle des produits pétroliers selon les budgets citoyens, 2021-2024 (millimes). Source : ministère des Finances [@minfin-budget-citoyen-2021, p. 3 ; @minfin-budget-citoyen-2022, p. 4 ; @minfin-budget-citoyen-2023, p. 4 ; @minfin-budget-citoyen-2024, p. 9]. Hypothèses de prix du baril : 45 dollars pour 2021 ; 75 dollars pour le budget de 2022, dont le budget citoyen écrit que le baril a entre-temps atteint 100 dollars ; 89 dollars pour 2023 ; 81 dollars pour 2024. Pour la bouteille de gaz, les budgets de 2022 à 2024 donnent des montants arrondis au dinar. Le budget de 2021 ne donne que la bouteille de gaz. {#tbl-compensation-subvention-unitaire}
+```{python}
+#| label: fig-compensation-subvention-unitaire
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import tableaux as tb
+tb.figure(
+    "subvention_unitaire",
+    caption=("La subvention unitaire prévisionnelle des produits pétroliers selon les budgets "
+             "citoyens, 2021-2024 (millimes par litre ; bouteille de gaz en dinars)"),
+    note_lecture=(
+        "Une barre par produit et par budget ; le coût et le prix payé sont dans l'infobulle "
+        "et dans les données. Ce sont des montants prévisionnels, calculés à l'hypothèse de "
+        "prix du baril du budget : 45 dollars pour 2021 ; 75 dollars pour le budget de 2022, "
+        "dont le budget citoyen écrit que le baril a entre-temps atteint 100 dollars ; 89 "
+        "dollars pour 2023 ; 81 dollars pour 2024. Le budget de 2021 ne donne que la bouteille "
+        "de gaz. Pour la bouteille, les budgets de 2022 à 2024 donnent des montants arrondis "
+        "au dinar. Source : ministère des Finances [@minfin-budget-citoyen-2021, p. 3 ; "
+        "@minfin-budget-citoyen-2022, p. 4 ; @minfin-budget-citoyen-2023, p. 4 ; "
+        "@minfin-budget-citoyen-2024, p. 9]."))
+```
 
 Trois faits. La bouteille de gaz est, de loin, le produit le plus subventionné : le consommateur en paie moins du quart du coût de 2022 à 2024, et le budget citoyen de 2021 écrit que la subvention des hydrocarbures « concerne principalement la bouteille de gaz ». La subvention par litre de carburant recule de moitié entre le budget de 2022 et celui de 2024 ; entre-temps, les prix à la pompe ont été relevés cinq fois (@sec-compensation-ajustement). Enfin les mêmes documents donnent la sensibilité de la dépense au prix du pétrole : un dollar de plus par baril ajoute 129 MD à la subvention selon le budget de 2021, 137 MD selon celui de 2022, 141 MD selon celui de 2023 et 144 MD selon celui de 2024.
 
