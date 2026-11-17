@@ -13,6 +13,7 @@ from verifier_livres import (  # noqa: E402
     LIVRES,
     compter_arobases_cassees,
     compter_citations_non_resolues,
+    compter_renvois_casses,
     figdata_a_restaurer,
     figdata_seule_date_a_change,
     livres_touches,
@@ -117,6 +118,22 @@ class CompterArobasesCasseesTest(unittest.TestCase):
 
     def test_plusieurs_occurrences(self):
         self.assertEqual(compter_arobases_cassees("?@a et ?@b et ?@c"), 3)
+
+
+class CompterRenvoisCassesTest(unittest.TestCase):
+
+    def test_renvoi_sans_arobase_compte(self):
+        self.assertEqual(compter_renvois_casses("Voir ?tbl-compensation-taxe-unique."), 1)
+
+    def test_renvoi_avec_arobase_non_double(self):
+        # déjà compté par compter_arobases_cassees
+        self.assertEqual(compter_renvois_casses("<strong>?@tbl-absent</strong>"), 0)
+
+    def test_fig_et_sec(self):
+        self.assertEqual(compter_renvois_casses("?fig-a, ?sec-b et ?eq-c"), 3)
+
+    def test_page_saine(self):
+        self.assertEqual(compter_renvois_casses('<a href="#tbl-x">Tableau 1</a>'), 0)
 
 
 class FigdataSeuleDateAChangeTest(unittest.TestCase):

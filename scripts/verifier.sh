@@ -122,6 +122,7 @@ else
   RENDU_OK=true
   TOTAL_CITATIONS=0
   TOTAL_AROBASES=0
+  TOTAL_RENVOIS=0
   for livre in "${LIVRES[@]}"; do
     for langue in fr ar; do
       BOOK_DIR="$ROOT_DIR/precis/$langue/$livre"
@@ -143,19 +144,21 @@ else
       while IFS= read -r -d '' page; do
         n_citations=$(uv run python scripts/verifier_livres.py citations < "$page")
         n_arobases=$(uv run python scripts/verifier_livres.py arobases < "$page")
+        n_renvois=$(uv run python scripts/verifier_livres.py renvois < "$page")
         TOTAL_CITATIONS=$((TOTAL_CITATIONS + n_citations))
         TOTAL_AROBASES=$((TOTAL_AROBASES + n_arobases))
-        if [ "$n_citations" -gt 0 ] || [ "$n_arobases" -gt 0 ]; then
-          echo "   $page : $n_citations citation(s) non résolue(s), $n_arobases « ?@ »" >>"$LOG"
+        TOTAL_RENVOIS=$((TOTAL_RENVOIS + n_renvois))
+        if [ "$n_citations" -gt 0 ] || [ "$n_arobases" -gt 0 ] || [ "$n_renvois" -gt 0 ]; then
+          echo "   $page : $n_citations citation(s) non résolue(s), $n_arobases « ?@ », $n_renvois renvoi(s) « ?tbl-/?fig-/?sec- »" >>"$LOG"
         fi
       done < <(find "$PUBLIC_DIR" -name '*.html' -not -path '*/site_libs/*' -print0)
     done
   done
-  if $RENDU_OK && [ "$TOTAL_CITATIONS" -eq 0 ] && [ "$TOTAL_AROBASES" -eq 0 ]; then
-    printf 'OK      Rendu HTML (%s) : 0 citation non résolue, 0 « ?@ »\n' "${LIVRES[*]}"
+  if $RENDU_OK && [ "$TOTAL_CITATIONS" -eq 0 ] && [ "$TOTAL_AROBASES" -eq 0 ] && [ "$TOTAL_RENVOIS" -eq 0 ]; then
+    printf 'OK      Rendu HTML (%s) : 0 citation non résolue, 0 « ?@ », 0 renvoi cassé\n' "${LIVRES[*]}"
   elif $RENDU_OK; then
-    printf 'ÉCHEC   Rendu HTML (%s) : %d citation(s) non résolue(s), %d « ?@ » (voir %s)\n' \
-      "${LIVRES[*]}" "$TOTAL_CITATIONS" "$TOTAL_AROBASES" "$LOG"
+    printf 'ÉCHEC   Rendu HTML (%s) : %d citation(s) non résolue(s), %d « ?@ », %d renvoi(s) cassé(s) (voir %s)\n' \
+      "${LIVRES[*]}" "$TOTAL_CITATIONS" "$TOTAL_AROBASES" "$TOTAL_RENVOIS" "$LOG"
     ECHECS=$((ECHECS + 1))
   fi
 
