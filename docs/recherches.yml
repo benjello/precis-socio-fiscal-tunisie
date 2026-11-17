@@ -5908,6 +5908,12 @@
     couverture: 'Texte intégral des fascicules FR locaux 1994-2026 (1999-2005 décodés), miroir iort AR, intitulés depuis 1991 : aucun acte de prix au public. Trouvés : arrêtés « pain » du 22 juin 2016 et du 13 novembre 2020 (circuit, poids et quotas, sans prix), absents des intitulés de jort_cache ; arrêté conjoint du 2 avril 2026 (taux d''extraction) ; les décrets de campagne renvoient depuis 1992 à une « décision du ministre » pour le prix réduit du blé. Lacunes : 1992-1993 sans couche texte ; fichiers vides en 1995-1996 et 2018-2025 ; pages en image ; texte intégral AR non interrogé.'
     couvert_jusqu_au: 2026-10-29
     resultat: aucun
+  - date: 2026-11-17
+    role: documentaliste
+    sources: [jort_cache, iort]
+    couverture: 'Farine PS-7 après le 12 août 1989 : intitulés jort_cache 1990-1996 (farine, PS-7, prix et céréales, semoule, pain, dérivés, pâtes) ; seuls les arrêtés du 15 août 1991 (pain, pâtes et couscous, semoule PS-10) et les décrets de campagne ; miroir iort arabe 1990-1994 (الفارينة, الدقيق) : aucun prix de la farine PS-7 publié avant la liberté des prix du 1er janvier 1992.'
+    couvert_jusqu_au: 1996-12-31
+    resultat: aucun
   a_faire: ['miroir iort : termes iort_ar de la fiche', avis et communications du JORT depuis 1992, plein texte]
 
 - id: r-comp-pb-prix-pain-1980
@@ -5982,6 +5988,12 @@
     sources: [jort_cache, corpus_local, iort, visas]
     couverture: 'Intitulés jort_cache (1.6.1991-31.3.1993 ; mots blé, céréal, minot, semoul, farine, rétrocession, compensation ; liste complète des arrêtés économie nationale, commerce, agriculture 1.7.1991-31.12.1992). OCR (fra, 200 dpi) des pages 1-3 des sommaires FR n° 47-90/1991 et 1-88/1992 ; couverture contrôlée par la dernière page citée (écarts : n° 47/1991, mise en page OCR ; n° 29/1992, santé). Miroir iort *_1991/*_1992 (991 fiches ; 232 arrêtés seulement dans tout le miroir). Visas du décret 92-1657 (p. 1310, image) : aucun arrêté de prix réduits. Lacunes : corps des fascicules non océrisé ; éditions AR des fascicules non lues.'
     couvert_jusqu_au: 1992-12-31
+    resultat: aucun
+  - date: 2026-11-17
+    role: documentaliste
+    sources: [jort_cache, iort]
+    couverture: 'Élargissement : intitulés jort_cache 1989-1993 (minoterie, cession et blé, blé dur, blé tendre, Office des céréales, rétrocession) ; décrets de campagne 90-671 et 91-943 déjà lus ; miroir iort arabe 1990-1993 (المخفض, المخفّض) : aucun arrêté de prix réduit de la récolte 1990.'
+    couvert_jusqu_au: 1993-12-31
     resultat: aucun
   a_faire:
   - OCR du corps des fascicules FR de juillet 1991 à décembre 1992 (seuls les sommaires sont océrisés)
