@@ -341,7 +341,11 @@ cm.figure(
         "la donnent pas. En 1987, les 189 MD que la Banque centrale appelle dotation sont le "
         "total de la loi, non la seule subvention. Les recettes propres de 1988 comprennent "
         "le solde reporté. En 1989, le premier chiffre des recettes propres est rogné sur la "
-        "page : elles se déduisent du total (190,0) et de la subvention (188,0)."))
+        "page : elles se déduisent du total (190,0) et de la subvention (188,0). Pour 1989, "
+        "la loi de finances fait foi : 188 MD de subvention et 190 MD au total (tableau L) ; "
+        "le rapport de la Banque centrale pour 1989 parle, lui, d'une « dotation budgétaire de "
+        "285 millions de dinars prévue initialement » [@bct-ra-1989], écart de 95 MD que ni "
+        "la loi ni le rapport n'expliquent."))
 ```
 
 <!-- TODO (documentaliste) : pour 1989, la série compensation-prevu-realise porte une « dotation budgétaire de 285 millions de dinars prévue initialement » [bct-ra-1989], quand le tableau L de la loi de finances pour 1989 donne 188 MD de subvention et 190 MD au total : écart à expliquer (loi de finances complémentaire, autre périmètre ?). -->
@@ -407,8 +411,12 @@ tb.figure(
         "En bleu, la poudre à 26 % de matière grasse ; en vert, la poudre à 0 %, puis, à "
         "partir du décret du 7 octobre 2002, la seule poudre à 0 % destinée aux nourrissons, "
         "aux malades ou à l'alimentation animale ; en orange tireté, la poudre à 0 % des "
-        "autres usages. Chaque marche est placée à la date du décret, la date d'effet n'étant "
-        "pas établie ici ; un losange creux est un décret qui reprend le montant sans le "
+        "autres usages. Aucun décret n'énonce sa date d'effet. Les marches de 1990 et de "
+        "1991 sont à la date d'effet calculée, un jour franc après la publication au Journal "
+        "officiel : publié le 17 juillet 1990, effet le 19 ; publié le 4 octobre 1991, effet "
+        "le 6. Celles de 1993 à 2015 sont à la date de publication — 2 novembre 1993, "
+        "15 octobre 2002, 11 août 2009, 27 janvier 2015 —, le jour du dépôt du Journal officiel "
+        "au gouvernorat de Tunis, d'où se compte le délai de cinq jours, n'étant pas relevé. Un losange creux est un décret qui reprend le montant sans le "
         "changer. Les décrets de 1990 et de 1991 fixent le prélèvement en millimes par "
         "kilogramme, ceux de 2002 à 2015 en dinars par tonne, la même grandeur. De 2002 à "
         "2009, le prélèvement sur la poudre à 0 % des autres usages est de 4 450 dinars par "

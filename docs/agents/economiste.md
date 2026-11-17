@@ -35,3 +35,7 @@ Tu la rends dans ton message final, prête à enregistrer. Structure fixe :
 8. **Littérature arrêtée au <mois année>**, et ce qu'il faudra revoir à la prochaine revue annuelle.
 
 Le rédacteur en tire la section « Ce qu'en dit l'économie » du chapitre, en fin de chapitre, après la longue période, une page au plus. La fiche est la source, la section le résumé.
+
+Économie de tokens et de temps : appliquer la section du même nom d'AGENTS.md (un seul fil, outils et
+scripts existants avant toute relecture à la main, sommaires avant OCR, rendu du seul chapitre
+pendant le travail, rapports de cinq lignes au plus).

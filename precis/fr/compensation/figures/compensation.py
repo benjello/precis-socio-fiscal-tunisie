@@ -2161,14 +2161,17 @@ figtools.register_provenance(
     titre=("La taxe au profit de la Caisse sur les produits pétroliers (1964), puis la taxe "
            "unique de compensation (1971), à chaque date d'effet, 1964-1981"),
     sources=tr.cles(tr.TAXE_UNIQUE, 4), unite="dinars par hectolitre",
-    perimetre=("tarifs par hectolitre de l'essence, du pétrole lampant et du gas-oil, à chaque "
-               "texte qui les fixe ou les modifie, du 28 septembre 1964 au 1er janvier 1981"),
+    perimetre=("tarifs par hectolitre de l'essence, du pétrole lampant et du gas-oil (celui des "
+               "travaux agricoles et de la pêche à part depuis 1977), à chaque texte qui les fixe "
+               "ou les modifie, du 28 septembre 1964 au 22 février 1984"),
     caveats=("Avant 1971, la taxe de 1964 s'ajoute à la redevance de 1957 ; la taxe unique de 1971 "
-             "les réunit : les deux grandeurs ne se raccordent pas. En 1966, deux tarifs "
-             "d'essence, un par qualité. Le décret de 1980 institue en outre une taxe de 4 D par "
-             "tonne sur le fuel-oil lourd et un tarif de 1,525 D/hl pour le gas-oil de "
-             "l'agriculture et de la pêche, non tracés. Les tarifs postérieurs à 1981 ne sont pas "
-             "établis."))
+             "les réunit : les deux grandeurs ne se raccordent pas. De 1966 à 1970, deux tarifs "
+             "d'essence, un par qualité. Les taxes sur le fuel-oil léger (6,990 D par tonne au "
+             "1er janvier 1977, 26,990 D au 5 janvier 1982), sur le fuel-oil lourd (4 D par tonne, "
+             "décret de 1980), en dinars par tonne, et sur le fuel-oil domestique (1982) ne sont pas "
+             "tracées. Les tarifs de l'essence et du gas-oil ordinaire postérieurs à 1981 ne sont "
+             "pas établis ; le tarif du gas-oil agricole du 22 février 1984 est dans les données, "
+             "non tracé."))
 figtools.register_provenance(
     SERIE_RECETTES_CARB,
     titre=("Les recettes non fiscales en regard de la subvention des carburants : revenus de "
@@ -2212,8 +2215,8 @@ figtools.register_provenance(
 _L.update({
     # taxe unique
     "t64_essence": {"fr": "Essence : taxe de 1964", "ar": "البنزين: معلوم 1964"},
-    "t64_essence_2": {"fr": "Essence : second tarif de 1966, une qualité sur deux",
-                      "ar": "البنزين: التعريفة الثانية لسنة 1966، لأحد الصنفين"},
+    "t64_essence_2": {"fr": "Essence normale : taxe de 1964, tarif propre depuis 1966",
+                      "ar": "البنزين العادي: معلوم 1964، تعريفة خاصة منذ 1966"},
     "t64_lampant": {"fr": "Pétrole lampant : taxe de 1964", "ar": "بترول الإنارة: معلوم 1964"},
     "t64_gasoil": {"fr": "Gas-oil : taxe de 1964", "ar": "الغازوال: معلوم 1964"},
     "tu_essence": {"fr": "Essence : taxe unique de compensation",
@@ -2222,6 +2225,8 @@ _L.update({
                    "ar": "بترول الإنارة: المعلوم الموحّد للتعويض"},
     "tu_gasoil": {"fr": "Gas-oil : taxe unique de compensation",
                   "ar": "الغازوال: المعلوم الموحّد للتعويض"},
+    "tu_gasoil_agri": {"fr": "Gas-oil des travaux agricoles et de la pêche : taxe unique",
+                       "ar": "الغازوال المعدّ للأشغال الفلاحية والصيد البحري: المعلوم الموحّد"},
     "dhl": {"fr": "Dinars courants par hectolitre", "ar": "دينار جارٍ للهكتولتر"},
     "dhl_2025": {"fr": f"Dinars de {BASE} par hectolitre\n(valeurs calculées)",
                  "ar": f"دينارات سنة {BASE} للهكتولتر\n(قيم محسوبة)"},
@@ -2356,6 +2361,7 @@ COURBES_TAXE = {  # clé: (couleur, trait, fin de la grandeur, décalage de l'é
     "tu_essence": (ORANGE, "-", f"{tr.TAXE_UNIQUE_FIN + 1}-01-01", (4, 4, "left")),
     "tu_lampant": (BRUN, "-", f"{tr.TAXE_UNIQUE_FIN + 1}-01-01", (-4, 2, "right")),
     "tu_gasoil": (BLEU, "-", f"{tr.TAXE_UNIQUE_FIN + 1}-01-01", (4, 4, "left")),
+    "tu_gasoil_agri": (BLEU, (0, (1, 1.5)), f"{tr.TAXE_UNIQUE_FIN + 1}-01-01", (4, -6, "left")),
 }
 
 
@@ -2420,6 +2426,9 @@ def fig_taxe_unique(constants: bool = False):
         for cle, lignes in _taxe_lignes().items():
             couleur, ls, fin, (dx, dy, ha) = COURBES_TAXE[cle]
             bout = figtools.abscisse_date(fin)
+            # Un tarif daté de la fin du tracé ou après (le gas-oil agricole en 1984) reste dans
+            # les données, sans être tracé.
+            lignes = [lg for lg in lignes if lg[0] < fin]
             for i, (date, v, etat, texte, cit, loc) in enumerate(lignes):
                 x = figtools.abscisse_date(date)
                 if v is None:

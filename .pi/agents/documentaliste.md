@@ -135,3 +135,7 @@ recherches infructueuses — EST ta livraison, lue telle quelle par `/rediger` e
 rôles suivants. La comprimer à quinze lignes la viderait de sa matière.
 
 Rends donc la note complète, dans la forme du « Livrable » ci-dessus, sans plafond de lignes.
+
+Économie de tokens et de temps : appliquer la section du même nom d'AGENTS.md (un seul fil, outils et
+scripts existants avant toute relecture à la main, sommaires avant OCR, rendu du seul chapitre
+pendant le travail, rapports de cinq lignes au plus).

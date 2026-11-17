@@ -5,7 +5,7 @@ que les chapitres les imprimaient, avec, pour chacune, la clé de citation de sa
 localisation (article, tableau, page). Les figures de `compensation.py` les lisent ; leur onglet
 « Données » les rend au lecteur, et les clés sont déclarées dans l'onglet « Sources ».
 
-    TAXE_UNIQUE          tbl-compensation-taxe-unique           (_carburants.qmd), 1964-1981
+    TAXE_UNIQUE          tbl-compensation-taxe-unique           (_carburants.qmd), 1964-1984
     RECETTES_CARBURANTS  tbl-compensation-carburants-recettes   (_carburants.qmd), 2012-2018
     IMPORT_CESSION       tbl-compensation-import-cession        (_carburants.qmd), 2016-2025
     LF_CAISSE            tbl-compensation-lf-caisse             (_institution.qmd), 1987-1994
@@ -21,7 +21,10 @@ from __future__ import annotations
 # (grandeur, date d'effet, dinars par hectolitre ou None = supprimée, texte, clé, localisation)
 # Grandeurs : la taxe de 1964 (« t64_ ») jusqu'en 1970, la taxe unique de compensation (« tu_ »)
 # depuis le 1er janvier 1971, qui réunit la taxe de 1964 et la redevance de 1957 : deux
-# grandeurs distinctes, jamais reliées. En 1966, deux tarifs d'essence, un par qualité.
+# grandeurs distinctes, jamais reliées. En 1966, deux tarifs d'essence, un par qualité
+# (« t64_essence » : essence supérieure ; « t64_essence_2 » : essence normale). Depuis le
+# 1er janvier 1977, le gas-oil des travaux agricoles et de la pêche a son propre tarif
+# (« tu_gasoil_agri »), « tu_gasoil » étant celui des autres utilisations.
 TAXE_UNIQUE = [
     ("t64_essence", "1964-09-28", 1.050, "arrêté du 28 septembre 1964",
      "arrete-1964-09-28-prix-petroliers", "art. 1"),
@@ -39,15 +42,29 @@ TAXE_UNIQUE = [
      "arrete-1966-09-23-prix-petroliers", ""),
     ("t64_gasoil", "1966-09-25", None, "arrêté du 23 septembre 1966",
      "arrete-1966-09-23-prix-petroliers", ""),
+    ("t64_essence", "1968-12-10", 2.500, "arrêté du 9 décembre 1968",
+     "arrete-1968-12-09-prix-carburants", "art. 1 et 12, p. 1291-1292"),
+    ("t64_essence_2", "1968-12-10", 2.300, "arrêté du 9 décembre 1968",
+     "arrete-1968-12-09-prix-carburants", "art. 1 et 12, p. 1291-1292"),
     ("tu_essence", "1971-01-01", 1.378, "décret n° 70-622", "decret70-622", "art. 5"),
     ("tu_lampant", "1971-01-01", 0.036, "décret n° 70-622", "decret70-622", "art. 5"),
     ("tu_gasoil", "1971-01-01", 0.235, "décret n° 70-622", "decret70-622", "art. 5"),
     ("tu_essence", "1974-05-24", 6.150, "décret n° 74-576", "decret74-576", ""),
+    ("tu_lampant", "1977-01-01", None, "décrets n° 76-1123 et 77-192",
+     "decret76-1123 ; decret77-192", "art. 1 et 3, p. 3241 ; art. 1 (nouveau) et 2, p. 464"),
+    ("tu_gasoil", "1977-01-01", 0.890, "décret n° 77-192", "decret77-192",
+     "art. 1 (nouveau) et 2, p. 464"),
+    ("tu_gasoil_agri", "1977-01-01", 0.235, "décret n° 77-192", "decret77-192",
+     "art. 1 (nouveau) et 2, p. 464"),
     ("tu_essence", "1978-03-25", 7.120, "décret n° 78-316", "decret78-316", "p. 817"),
     ("tu_essence", "1981-01-01", 9.750, "décret n° 80-1641", "decret80-1641", ""),
     ("tu_gasoil", "1981-01-01", 2.180, "décret n° 80-1641", "decret80-1641", ""),
+    ("tu_gasoil_agri", "1981-01-01", 1.525, "décret n° 80-1641", "decret80-1641", ""),
+    ("tu_gasoil_agri", "1984-02-22", 0.025, "décret n° 84-210", "decret84-210",
+     "art. 1 et 2, p. 535"),
 ]
-# Dernière année tracée : les tarifs postérieurs à 1981 ne sont pas établis.
+# Dernière année tracée : les tarifs de l'essence et du gas-oil ordinaire postérieurs à 1981 ne
+# sont pas établis. Le tarif de 1984 du gas-oil agricole est transcrit, mais pas tracé.
 TAXE_UNIQUE_FIN = 1981
 
 # --- Les recettes non fiscales en regard de la subvention des carburants (MD courants) ------
@@ -151,28 +168,31 @@ verifier()
 # =============================================================================================
 
 # --- Le prélèvement à l'importation sur la poudre de lait, 1990-2015 -------------------------
-# (grandeur, date du décret, millimes par kg — soit dinars par tonne — ou None, décret, clé,
-#  localisation). La date est celle du décret, telle que les tableaux la donnaient : la date
-# d'effet n'est pas établie. None : le décret de 2002 fixe pour la poudre à 0 % « autre » un
+# (grandeur, date de la marche, millimes par kg — soit dinars par tonne — ou None, décret, clé,
+#  localisation). Aucun décret n'énonce sa date d'effet. Avant 1993, la marche est à la date
+# d'effet calculée, un jour franc après la publication au Journal officiel (1990 : JORT n° 47 du
+# 17 juillet, effet le 19 ; 1991 : n° 67 du 4 octobre, effet le 6). Ensuite, la date de dépôt au
+# gouvernorat n'étant pas relevée, la marche est à la date de publication (1993 : n° 83 du
+# 2 novembre ; 2002 : n° 84 du 15 octobre ; 2009 : n° 64 du 11 août ; 2015 : n° 8 du 27 janvier). None : le décret de 2002 fixe pour la poudre à 0 % « autre » un
 # prélèvement variable, 4 450 dinars par tonne moins la somme du prix à l'importation (coût,
 # assurance, fret) et des droits de douane. Grandeurs : « lait26 », poudre à 26 % de matière
 # grasse ; « lait0 », poudre à 0 % — à partir de 2002, celle destinée aux nourrissons, aux
 # malades ou à l'alimentation animale ; « lait0_autre », poudre à 0 % pour les autres usages.
 LAIT = [
-    ("lait26", "1990-07-12", 102, "décret n° 90-1194", "decret90-1194", "art. 1 et 2, p. 921"),
-    ("lait0", "1990-07-12", 245, "décret n° 90-1194", "decret90-1194", "art. 1 et 2, p. 921"),
-    ("lait26", "1991-09-23", 368, "décret n° 91-1391", "decret91-1391", "art. 2, p. 1670"),
-    ("lait0", "1991-09-23", 735, "décret n° 91-1391", "decret91-1391", "art. 2, p. 1670"),
-    ("lait0", "1993-10-25", 800, "décret n° 93-2116", "decret93-2116", "art. 1, p. 1857"),
-    ("lait26", "1993-10-25", 680, "décret n° 93-2116", "decret93-2116", "art. 1, p. 1857"),
-    ("lait26", "2002-10-07", 680, "décret n° 2002-2227", "decret2002-2227", "art. 1, p. 2413"),
-    ("lait0", "2002-10-07", 800, "décret n° 2002-2227", "decret2002-2227", "art. 1, p. 2413"),
-    ("lait0_autre", "2002-10-07", None, "décret n° 2002-2227", "decret2002-2227",
+    ("lait26", "1990-07-19", 102, "décret n° 90-1194", "decret90-1194", "art. 1 et 2, p. 921"),
+    ("lait0", "1990-07-19", 245, "décret n° 90-1194", "decret90-1194", "art. 1 et 2, p. 921"),
+    ("lait26", "1991-10-06", 368, "décret n° 91-1391", "decret91-1391", "art. 2, p. 1670"),
+    ("lait0", "1991-10-06", 735, "décret n° 91-1391", "decret91-1391", "art. 2, p. 1670"),
+    ("lait0", "1993-11-02", 800, "décret n° 93-2116", "decret93-2116", "art. 1, p. 1857"),
+    ("lait26", "1993-11-02", 680, "décret n° 93-2116", "decret93-2116", "art. 1, p. 1857"),
+    ("lait26", "2002-10-15", 680, "décret n° 2002-2227", "decret2002-2227", "art. 1, p. 2413"),
+    ("lait0", "2002-10-15", 800, "décret n° 2002-2227", "decret2002-2227", "art. 1, p. 2413"),
+    ("lait0_autre", "2002-10-15", None, "décret n° 2002-2227", "decret2002-2227",
      "art. 1, p. 2413"),
-    ("lait0_autre", "2009-07-31", 680, "décret n° 2009-2293", "decret2009-2293",
+    ("lait0_autre", "2009-08-11", 680, "décret n° 2009-2293", "decret2009-2293",
      "art. 1, p. 2284-2285"),
-    ("lait26", "2015-01-02", 1500, "décret n° 2015-50", "decret2015-50", "art. 1, p. 247-248"),
-    ("lait0_autre", "2015-01-02", 1500, "décret n° 2015-50", "decret2015-50",
+    ("lait26", "2015-01-27", 1500, "décret n° 2015-50", "decret2015-50", "art. 1, p. 247-248"),
+    ("lait0_autre", "2015-01-27", 1500, "décret n° 2015-50", "decret2015-50",
      "art. 1, p. 247-248"),
 ]
 LAIT_FIN = 2015  # aucun décret postérieur n'est lu : les traits s'arrêtent à la fin de 2015
