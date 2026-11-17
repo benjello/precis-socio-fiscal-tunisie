@@ -4,7 +4,7 @@
     pb.figure("campagne", caption=…, note_lecture=…)   # prix de campagne des céréales, 1970-2026
     pb.figure("reduit", caption=…, note_lecture=…)     # prix réduit du blé aux minoteries, 1974-1991
     pb.figure("pain", caption=…, note_lecture=…)       # prix du pain au kilo et poids, 1975-2026
-    pb.figure("derives", caption=…, note_lecture=…)    # farine, semoule, pâtes, couscous, 1975-1991
+    pb.figure("derives", caption=…, note_lecture=…)    # farines, semoule, pâtes, couscous, 1975-1991
     pb.figure("sucre_huile_lait", caption=…, note_lecture=…)
     pb.regle_deflation()                               # la règle, pour la note de lecture
 
@@ -69,16 +69,18 @@ SERIES = {
     "pain_gros": ("Gros pain", BLEU),
     "pain_petit": ("Petit pain, puis baguette (1991)", ORANGE),
     "farine": ("Farine panifiable", BRUN),
+    "farine_ps7": ("Farine PS-7", GRIS),
     "semoule": ("Semoule", BLEU),
     "pates": ("Pâtes alimentaires", VERT),
     "couscous": ("Couscous", VIOLET),
     "sucre": ("Sucre en poudre", BLEU),
-    "huile": ("Huile mélangée", VERT),
+    "huile": ("Huile mélangée, puis huile de graines (1991)", VERT),
     "lait_uht": ("Lait régénéré, UHT", BLEU),
     "lait_pasteurise": ("Lait régénéré, pasteurisé", ORANGE),
 }
 UNITE = {"pain_gros": "millimes la pièce", "pain_petit": "millimes la pièce",
-         "farine": "millimes le kilo", "semoule": "millimes le kilo",
+         "farine": "millimes le kilo", "farine_ps7": "millimes le kilo",
+         "semoule": "millimes le kilo",
          "pates": "millimes le kilo", "couscous": "millimes le kilo",
          "sucre": "millimes le kilo", "huile": "millimes le litre",
          "lait_uht": "millimes le litre", "lait_pasteurise": "millimes le litre"}
@@ -196,7 +198,9 @@ def _declarer(cles_cereales=None, cles_prix=None) -> None:
             sources=[k for k in cles_prix if k in connues],
             unite="millimes ou dinars courants (colonne « Unité »)",
             perimetre=("prix de vente au public fixés par décret ou par arrêté, poids du pain ; "
-                       "trois valeurs tirées des rapports de la Banque centrale"),
+                       "trois valeurs tirées des rapports de la Banque centrale ; prix de la "
+                       "farine et de la semoule rendus au chef-lieu de délégation ou à la "
+                       "fabrique (1975, 1979), dans les données, non tracés"),
             caveats=regle_deflation())
 
 
@@ -235,9 +239,13 @@ def _marches(s: pd.DataFrame, par_kilo: bool = False):
     en pointillé au 1er janvier de l'année suivante, l'année elle-même restant vide ; en tête de
     série, c'est un prix antérieur, montré par une marque creuse à la date de la ligne suivante.
     Une ligne sans valeur interrompt le trait à sa date (ou au 1er janvier de son année).
+    Une ligne « poids seul » (poids du pain, sans prix) ou « autre stade » (prix rendu au
+    chef-lieu de délégation ou à la fabrique, non au public) n'est pas tracée : elle reste dans
+    les données.
     """
     marches, isoles = [], []
-    lignes = [r for r in s.itertuples(index=False) if r.statut != "poids seul"]
+    lignes = [r for r in s.itertuples(index=False)
+              if r.statut not in ("poids seul", "autre stade")]
     for i, r in enumerate(lignes):
         v = None
         if r.valeur:
@@ -616,13 +624,13 @@ def _fig_multi(series, xlim, ylabel_unite, constants):
     ax.set_xlabel(figtools.fig_text("Année"))
     poignees = [Line2D([0], [0], color=SERIES[s][1], lw=2, marker="o", ms=4,
                        label=figtools.fig_text(SERIES[s][0])) for s in series]
-    _legende(ax, poignees, ncol=len(series))
+    _legende(ax, poignees, ncol=min(len(series), 3))
     fig.tight_layout()
     return fig
 
 
 def _figure_derives():
-    series = ["farine", "semoule", "pates", "couscous"]
+    series = ["farine", "farine_ps7", "semoule", "pates", "couscous"]
     d = _prix()
     _declarer(cles_prix=_cles(d[d["serie"].isin(series)]))
     vues = [("Millimes courants", _fig_multi(series, (1974.5, 1992.5), "millimes le kilo", False)),
@@ -635,8 +643,8 @@ def _figure_derives():
 # --- 5. Sucre, huile, lait -------------------------------------------------------------------
 
 PANNEAUX_SHL = (("Sucre en poudre (millimes le kilo)", ("sucre",), "millimes le kilo"),
-                ("Huile mélangée (millimes le litre)", ("huile",), "millimes le litre"),
-                ("Lait régénéré demi-écrémé (millimes le litre)", ("lait_uht", "lait_pasteurise"),
+                ("Huile mélangée, vrac (millimes le litre)", ("huile",), "millimes le litre"),
+                ("Lait régénéré, 1 l (millimes le litre)", ("lait_uht", "lait_pasteurise"),
                  "millimes le litre"))
 
 

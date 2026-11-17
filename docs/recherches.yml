@@ -5965,7 +5965,7 @@
   ou: [precis/fr/compensation/_produits_base.qmd#sec-compensation-pb-1991]
   requetes:
     titres_fts: [prix AND (ble OR retrocession OR cereales)]
-    iort_ar: [أسعار إحالة القمح]
+    iort_ar: [أسعار إحالة القمح, الحبوب, أسعار الإحالة]
     depuis: 1991-07-01
   periode:
     jusqu_au: 1992-12-31
@@ -5977,4 +5977,12 @@
     couverture: 'Intitulés de jort_cache, juillet 1991 à décembre 1992, « prix » et (« blé », « rétrocession » ou « céréales ») : aucun arrêté de prix réduit. Lacune : fascicules de 1992 sans couche texte (OCR à faire) ; miroir iort non interrogé.'
     couvert_jusqu_au: 1992-12-31
     resultat: aucun
-  a_faire: [OCR des fascicules de juillet 1991 à décembre 1992, 'miroir iort : termes iort_ar de la fiche']
+  - date: 2026-11-17
+    role: documentaliste
+    sources: [jort_cache, corpus_local, iort, visas]
+    couverture: 'Intitulés jort_cache (1.6.1991-31.3.1993 ; mots blé, céréal, minot, semoul, farine, rétrocession, compensation ; liste complète des arrêtés économie nationale, commerce, agriculture 1.7.1991-31.12.1992). OCR (fra, 200 dpi) des pages 1-3 des sommaires FR n° 47-90/1991 et 1-88/1992 ; couverture contrôlée par la dernière page citée (écarts : n° 47/1991, mise en page OCR ; n° 29/1992, santé). Miroir iort *_1991/*_1992 (991 fiches ; 232 arrêtés seulement dans tout le miroir). Visas du décret 92-1657 (p. 1310, image) : aucun arrêté de prix réduits. Lacunes : corps des fascicules non océrisé ; éditions AR des fascicules non lues.'
+    couvert_jusqu_au: 1992-12-31
+    resultat: aucun
+  a_faire:
+  - OCR du corps des fascicules FR de juillet 1991 à décembre 1992 (seuls les sommaires sont océrisés)
+  - lecture des éditions AR des mêmes fascicules

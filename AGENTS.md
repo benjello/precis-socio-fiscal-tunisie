@@ -318,6 +318,18 @@ deux cas.
 
 ## Économiser
 
+**Économie de tokens et de temps (consigne du propriétaire, 17 novembre 2026).**
+- Un seul fil de travail par défaut ; pas de sous-agents en parallèle sans demande explicite.
+- Les outils existants avant toute relecture à la main : `verifier.sh`, générateurs
+  `scripts/generate_*`, `figtools`/figdata, index et OCR du corpus JORT
+  (`PDFs-legislation-tunisie/scripts/`), serveur MCP `jort`. Un script dès qu'une opération se
+  répète.
+- Titres et sommaires avant toute OCR ; OCR des seules pages utiles.
+- Pendant le travail, ne rendre que le chapitre modifié (`quarto render <fichier>.qmd`) ; le
+  volume une seule fois, avant la PR. Pas de nouveau `verifier.sh` après une fusion de master,
+  sauf conflit.
+- Petits lots ; rapports de cinq lignes au plus.
+
 - **Un seul appel plutôt qu'une chaîne à la main** : `scripts/verifier.sh [livre…]` enchaîne le
   glossaire, les contrôles de contenu, les liens, les tests et le rendu FR/AR des livres touchés,
   et n'affiche qu'un bilan compact (une ligne par étape). N'enchaîne les commandes une à une que
