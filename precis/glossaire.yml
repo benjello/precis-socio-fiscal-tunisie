@@ -11776,11 +11776,14 @@ entries:
   - id: produits-de-base
     acronyme: null
     statut: valide
-    references: [minfin-finances-publiques-2008, loi70-26]
+    references: [minfin-finances-publiques-2008, loi70-26, arrete-2020-12-01-cahier-produits-subventionnes]
     source_definition: {ref: minfin-finances-publiques-2008, locator: "p. 35"}
     # AR : « دعم المواد الأساسية » (rapport 2008, p. 35 imprimée, p. 37 du PDF).
     # La loi n° 70-26, art. 3, dit « produits de première nécessité » —
     # « البضائع والمنتجات والخدمات الضرورية » dans l'édition arabe.
+    # « Produits de base subventionnés » : arrêté du 1er décembre 2020 (intitulé) ;
+    # AR « المواد الأساسية المدعمة », cahier des charges annexé à la seule édition
+    # arabe (JORT n° 121 de 2020, p. 3106), qui n'a pas de clé propre (« …-ar »).
     source_traduction: {ref: minfin-finances-publiques-2008, locator: "p. 35"}
     voir_aussi: [compensation-des-prix, caisse-generale-compensation]
     fr:
@@ -11790,14 +11793,14 @@ entries:
         répartissent la dépense de compensation, avec les carburants et le transport.
         La loi n° 70-26 (art. 3) parle, elle, de « marchandises, produits et services
         de première nécessité ».
-      synonymes: [Produits de première nécessité]
+      synonymes: [Produits de première nécessité, Produits de base subventionnés]
     ar:
       terme: المواد الأساسية
       definition: >
         أوّل الأبواب الثلاثة التي توزّع عليها تقارير وزارة المالية نفقات الدعم، مع
         المحروقات والنقل. أمّا القانون عدد 26 لسنة 1970 (الفصل 3) فيتحدّث عن «البضائع
         والمنتجات والخدمات الضرورية».
-      synonymes: [المنتجات الضرورية]
+      synonymes: [المنتجات الضرورية, المواد الأساسية المدعمة]
 
   - id: compensation-carburants
     acronyme: null
@@ -12416,27 +12419,53 @@ entries:
   - id: redevance-compensatrice
     acronyme: null
     statut: provisoire
-    references: [arrete-1957-02-05-redevance-hydrocarbures, arrete-1956-04-07-redevance-huiles, arrete-1956-12-27-redevance-sucres, decret67-99]
+    references: [arrete-1957-02-05-redevance-hydrocarbures, arrete-1956-04-07-redevance-huiles, arrete-1956-12-27-redevance-sucres, decret67-99, decret83-1274]
     source_definition: {ref: arrete-1957-02-05-redevance-hydrocarbures, locator: "art. 1"}
     # AR non lu : l'édition arabe de l'arrêté du 5 février 1957 n'est pas dépouillée.
     # « الأتاوة التعويضية » est une proposition du terminologue, distincte de
     # « أتاوة الدعم » (redevance de compensation de 2013) ; pas de `source_traduction`.
-    voir_aussi: [perequation-des-prix, taxe-unique-compensation-carburants, redevance-compensation]
+    # Sens de 1983 (passe 2, 17/11/2026) : décret n° 83-1274, art. 22 nouveau du
+    # décret n° 83-1075, lu par le documentaliste à l'OCR (montant non relu à l'image,
+    # donc non repris) ; même terme, même mécanisme, autre bénéficiaire : entrée
+    # étendue plutôt que dédoublée (un terme FR = une entrée de la table de traduction).
+    # Le décret n° 84-150 remet en vigueur l'art. 22 d'origine du décret n° 83-1075.
+    # « Redevance différentielle » (arrêtés du 28/12/1983, art. 3) : texte non lu par
+    # le terminologue, pas versée en synonyme.
+    # Pistes AR, titres arabes du site de l'Imprimerie officielle (data/iort, titres
+    # seuls) : décret n° 67-408 « الغرامات التعويضية على مدخرات الدقيق والسميد » ;
+    # décret n° 68-279 « الأداءات التعويضية ». Deux rendus différents, aucun texte lu :
+    # terme AR à arbitrer. « دعم سوق الحبوب » (nom AR du compte) : traduction du
+    # terminologue, non lue.
+    voir_aussi: [perequation-des-prix, taxe-unique-compensation-carburants, redevance-compensation, office-cereales, marge-de-mouture]
     fr:
       terme: Redevance compensatrice
       definition: >
-        Prélèvement institué, avant la Caisse générale de 1970, au profit de la Caisse
-        de compensation sur un produit pour en soutenir un autre ou pour égaliser un
-        prix d'importation et un prix intérieur : sur les huiles alimentaires autres
-        que l'huile d'olive et sur les sucres importés en 1956, sur l'essence, le
-        pétrole lampant et le gas-oil en 1957, sur les produits du chapitre 73 du
-        tarif des douanes en 1967. Celle de 1957, de 300 francs par hectolitre,
-        finance une ristourne aux distributeurs de fuel. À distinguer de la redevance
-        de compensation créée en 2013.
+        Prélèvement perçu sur un produit pour financer la compensation des prix :
+        soutenir un autre produit, ou égaliser un prix d'importation et un prix
+        intérieur. Avant la Caisse générale de 1970, il est institué au profit de la
+        Caisse de compensation : sur les huiles alimentaires autres que l'huile
+        d'olive et sur les sucres importés en 1956, sur l'essence, le pétrole lampant
+        et le gas-oil en 1957, sur les produits du chapitre 73 du tarif des douanes en
+        1967. Celle de 1957, de 300 francs par hectolitre, finance une ristourne aux
+        distributeurs de fuel. Les décrets de campagne des céréales en prévoient aussi
+        au profit du compte « Soutien du Marché des Céréales » du budget de l'Office
+        des céréales : ainsi, pour le blé dur, l'article 22 du décret de la campagne
+        1983-1984 dans la rédaction du décret n° 83-1274 du 28 décembre 1983. À
+        distinguer de la redevance de compensation créée en 2013.
       synonymes: []
     ar:
       terme: الأتاوة التعويضية
-      definition: ""
+      definition: >
+        اقتطاع يُوظَّف على منتوج لتمويل تعويض الأسعار: لدعم منتوج آخر، أو للتسوية
+        بين سعر التوريد والسعر الداخلي. وقبل إحداث الصندوق العام للتعويض سنة 1970،
+        كان يُوظَّف لفائدة صندوق التعويض: على الزيوت الغذائية غير زيت الزيتون وعلى
+        السكر المورَّد سنة 1956، وعلى البنزين والبترول الأزرق والغازوال سنة 1957،
+        وعلى منتوجات الباب 73 من التعريفة الديوانية سنة 1967. وكانت أتاوة سنة 1957،
+        وقدرها 300 فرنك للهكتولتر، تموّل استرجاعًا لفائدة موزّعي الفيول. كما تنصّ
+        عليه أوامر مواسم الحبوب لفائدة حساب «دعم سوق الحبوب» بميزانية ديوان الحبوب،
+        ومنها، بالنسبة إلى القمح الصلب، الفصل 22 من أمر موسم 1983-1984 في صيغته
+        المنقّحة بالأمر عدد 1274 لسنة 1983 المؤرخ في 28 ديسمبر 1983. ويُميَّز عن
+        أتاوة الدعم المحدثة سنة 2013.
       synonymes: []
 
   - id: compte-caisse-compensation
@@ -12689,6 +12718,353 @@ entries:
         العمل «مقرر» وتسمّي القرار الوزاري «قرار». وقد ضُبطت أسعار بيع الكهرباء والغاز
         دون اعتبار الأداءات المطبّقة بداية من غرة أوت 1992 بمقرر لوزير الاقتصاد الوطني
         مؤرخ في 11 أوت 1992، نُشر تحت عنوان «الإعلانات والإرشادات».
+      synonymes: []
+
+  # --- Compensation, chapitre « Les produits de base » : passe 1 (termes) et passe 2
+  # (définitions), 17/11/2026. Notes : docs/notes/compensation-produits-base-documentaliste.md
+  # (§ 11), docs/notes/eco-compensation-produits-de-base.md (§ 7),
+  # docs/notes/plan-compensation-produits-de-base.md.
+
+  - id: taxation-des-prix
+    acronyme: null
+    statut: valide
+    references: [decret70-543, decret82-134]
+    source_definition: {ref: decret70-543, locator: "art. 1er"}
+    # AR : « الفصل 1 ـ تخضع للتسعير الاسعار في جميع مراحل البضائع والمنتوجات
+    # الحساسة… المعدودة في الجدول « أ » » ; intitulé du tableau A : « قائمة
+    # المنتوجات والبضائع والخدمات الخاضعة لنظام التسعير » (JORT n° 49 de 1970,
+    # éd. arabe, p. 1558, lu à l'image par le terminologue le 17/11/2026). La
+    # clé est celle de l'édition française (p. 1418-1419) : localisateur par
+    # article. Terme FR qualifié (« des prix ») pour que la table de traduction
+    # n'impose pas « التسعير » à « taxe » ni à « taxation » au sens fiscal.
+    # Décret n° 82-134 (art. 4, tableau B) : AR non lu.
+    source_traduction: {ref: decret70-543, locator: "art. 1er"}
+    voir_aussi: [homologation-des-prix, produits-de-base, compensation-des-prix]
+    fr:
+      terme: Taxation des prix
+      definition: >
+        Régime de prix dans lequel l'administration fixe le prix à tous les stades de
+        la production et de la distribution. Le décret n° 70-543 du 24 octobre 1970,
+        pris pour l'application de la loi n° 70-26 du 19 mai 1970, y soumet les
+        marchandises et produits « sensibles et de grande consommation » et les
+        services d'intérêt général de son tableau A (art. 1^er^), notamment le pain, la
+        farine et la semoule, le couscous et les pâtes, les huiles alimentaires, le
+        sucre, le lait, les carburants, l'électricité, l'eau et le gaz. Le décret
+        n° 82-134 du 27 janvier 1982 reprend le régime pour les produits de son
+        tableau B (art. 4). Les prix des produits taxés sont fixés par arrêté du
+        ministre de l'économie nationale. Depuis 1992, la liberté des prix est la
+        règle, et les produits de première nécessité relèvent de l'homologation des
+        prix.
+      synonymes: [Régime de la taxation]
+    ar:
+      terme: التسعير
+      definition: >
+        نظام أسعار تضبط فيه الإدارة السعر في جميع مراحل الإنتاج والتوزيع. وقد أخضع
+        الأمر عدد 543 لسنة 1970 المؤرخ في 24 أكتوبر 1970، المتّخذ لتطبيق القانون
+        عدد 26 لسنة 1970 المؤرخ في 19 ماي 1970، للتسعير البضائع والمنتوجات الحساسة
+        وذات الاستهلاك الواسع والخدمات ذات المصلحة العامة المعدودة في الجدول «أ»
+        (الفصل الأول)، ومنها الخبز والدقيق والسميد والكسكسي والعجين الغذائي والزيوت
+        الغذائية والسكر والحليب والمحروقات والكهرباء والماء والغاز. وأبقى الأمر عدد
+        134 لسنة 1982 المؤرخ في 27 جانفي 1982 على هذا النظام بالنسبة إلى المنتوجات
+        المدرجة بجدوله «ب» (الفصل 4). وتُضبط أسعار المنتوجات الخاضعة للتسعير بقرار من
+        وزير الاقتصاد الوطني. ومنذ سنة 1992 أصبحت حرية الأسعار هي القاعدة، وخضعت
+        المواد الأساسية للمصادقة الإدارية على الأسعار.
+      synonymes: [نظام التسعير]
+
+  - id: unite-compensation-produits-base
+    acronyme: null
+    statut: valide
+    references: [decret2002-2145, decret2005-2934]
+    source_definition: {ref: decret2002-2145, locator: "art. 1er et 2"}
+    # AR : « تحدث بوزارة المالية وحدة تعويض المواد الأساسية توضع تحت سلطة وزير
+    # المالية » (art. 1^er^) ; « ضبط الحاجيات السنوية لتعويض المواد الأساسية وطرق
+    # تمويلها » (art. 2) ; décret n° 2005-2934, art. 1er : « تلحق بوزارة التجارة
+    # والصناعات التقليدية وحدة تعويض المواد الأساسية ». Texte arabe de l'Imprimerie
+    # officielle, miroir iort du corpus (data/iort/textes/md/dec_2002_2145_2002.md,
+    # dec_2005_2934_2005.md), non relu à l'image du fascicule (JORT n° 81 de 2002,
+    # éd. arabe : couche texte illisible).
+    source_traduction: {ref: decret2002-2145, locator: "art. 1er"}
+    voir_aussi: [caisse-generale-compensation, produits-de-base, compensation-des-prix]
+    fr:
+      terme: Unité de compensation des produits de base
+      definition: >
+        Structure créée au ministère des finances, sous l'autorité du ministre, par le
+        décret n° 2002-2145 du 30 septembre 2002 (art. 1^er^). Elle est chargée
+        notamment de « la fixation des besoins annuels de compensation des produits de
+        base et les modalités de leur financement » et de la participation à
+        l'évaluation de l'efficacité des programmes, mécanismes et procédures de
+        compensation (art. 2). Le décret n° 2005-2934 du 1^er^ novembre 2005 la
+        rattache au ministère du commerce et de l'artisanat, avec les mêmes missions.
+      synonymes: []
+    ar:
+      terme: وحدة تعويض المواد الأساسية
+      definition: >
+        هيكل أُحدث بوزارة المالية، تحت سلطة وزير المالية، بمقتضى الأمر عدد 2145 لسنة
+        2002 المؤرخ في 30 سبتمبر 2002 (الفصل الأول). وتتمثّل مهامه خاصة في «ضبط
+        الحاجيات السنوية لتعويض المواد الأساسية وطرق تمويلها» والمساهمة في تقييم
+        نجاعة برامج وآليات وطرق وإجراءات تعويض المواد الأساسية (الفصل 2). وأُلحقت
+        الوحدة بوزارة التجارة والصناعات التقليدية بمقتضى الأمر عدد 2934 لسنة 2005
+        المؤرخ في غرة نوفمبر 2005، مع الإبقاء على مهامها.
+      synonymes: []
+
+  # Prix et prime des décrets de campagne des céréales. Termes FR lus dans le décret
+  # n° 2025-344 du 11 juillet 2025 (JORT n° 89 du 14 juillet 2025, éd. française
+  # p. 1652-1653), termes AR dans son texte arabe de l'Imprimerie officielle (miroir
+  # iort du corpus, data/iort/textes/md/dec_2025_344_2025.md, art. 1er, 10, 11, 14
+  # et 15 ; la couche texte du fascicule arabe Ja0892025.pdf est illisible, le texte
+  # n'est pas relu à l'image). Le titre arabe du décret n° 83-1075 (même miroir) dit
+  # aussi « إحالتها » pour « rétrocession ». Définitions datées : elles décrivent le
+  # décret de la campagne 2025-2026 ; depuis le décret-loi du 24 septembre 2025, les
+  # prix sont fixés par arrêté conjoint.
+
+  - id: prix-de-base-production
+    acronyme: null
+    statut: valide
+    references: [decret2025-344-oc]
+    source_definition: {ref: decret2025-344-oc, locator: "art. 1er et 6"}
+    # AR : « حددت الأسعار الأساسية للحبوب… عند الإنتاج وعند الشراء من المجمعين »
+    # (art. 1^er^) ; au singulier « السعر الأساسي » (art. 10). Synonyme FR « Prix de
+    # base » : sans effet sur la table de traduction (seul le terme y entre) ; ne pas
+    # le confondre avec les « prix de base » de la comptabilité nationale.
+    source_traduction: {ref: decret2025-344-oc, locator: "art. 1er"}
+    voir_aussi: [office-cereales, prix-normal-retrocession, prime-de-compensation]
+    fr:
+      terme: Prix de base à la production
+      definition: >
+        Prix des céréales « saines, loyales et marchandes » d'une récolte, à la
+        production et à l'achat auprès des collecteurs. Le décret de la campagne
+        2025-2026 le fixe pour le blé dur et le blé tendre ; l'orge et le triticale,
+        de commercialisation libre, ont un prix d'intervention (art. 1^er^). Le prix
+        servi aux producteurs est le prix de base diminué de la taxe de statistique
+        et de la taxe de solidarité (art. 6). Il est fixé chaque campagne par décret
+        jusqu'à la récolte 2025, puis par arrêté conjoint des ministres chargés des
+        finances et de l'agriculture.
+      synonymes: [Prix de base]
+    ar:
+      terme: السعر الأساسي عند الإنتاج
+      definition: >
+        سعر الحبوب السليمة والخالصة والصالحة للاتّجار من صابة سنة معيّنة، عند الإنتاج
+        وعند الشراء من المجمّعين. ويضبطه أمر موسم 2025-2026 بالنسبة إلى القمح الصلب
+        والقمح اللّين، أمّا الشعير والتريتيكال، وتسويقهما حرّ، فلهما سعر تدخّل
+        (الفصل الأول). وتمثّل الأسعار الممنوحة للمنتجين ما يتبقّى من الأسعار
+        الأساسية بعد طرح المعلوم الإحصائي والمعلوم التضامني (الفصل 6). ويُضبط في كل
+        موسم بأمر إلى غاية صابة 2025، ثم بقرار مشترك من الوزيرين المكلّفين بالمالية
+        والفلاحة.
+      synonymes: [السعر الأساسي]
+
+  - id: prix-normal-retrocession
+    acronyme: null
+    statut: valide
+    references: [decret2025-344-oc, decret83-1274]
+    source_definition: {ref: decret2025-344-oc, locator: "art. 9 et 10"}
+    # AR : « تشتمل الأسعار العادية للإحالة من قبل ديوان الحبوب… على : السعر الأساسي
+    # أو سعر التدخل… ، فرق الإحالة الخام… ، المنحة الاستثنائية للتسليم السريع »
+    # (art. 10). Le décret n° 83-1274 (art. 14 nouveau) dit seulement « prix de
+    # rétrocession » (synonyme FR) ; son édition arabe n'est pas lue.
+    source_traduction: {ref: decret2025-344-oc, locator: "art. 10"}
+    voir_aussi: [office-cereales, prix-de-base-production, prix-reduit-retrocession, prime-de-compensation]
+    fr:
+      terme: Prix normal de rétrocession
+      definition: >
+        Prix auquel l'Office des céréales revend les céréales qu'il a achetées. Dans
+        le décret de la campagne 2025-2026, il comprend le prix de base ou le prix
+        d'intervention, la marge brute de rétrocession servie à l'Office — prime de
+        magasinage, marge nette de rétrocession, péréquation de transport et somme
+        versée au fonds d'équipement de l'Office (art. 9) — et la prime
+        exceptionnelle de prompte livraison (art. 10). La différence entre ce prix et
+        le prix réduit de rétrocession est la prime de compensation (art. 15).
+      synonymes: [Prix de rétrocession]
+    ar:
+      terme: السعر العادي للإحالة
+      definition: >
+        السعر الذي يحيل به ديوان الحبوب الحبوبَ التي اشتراها. ويشتمل، في أمر موسم
+        2025-2026، على السعر الأساسي أو سعر التدخّل، وفرق الإحالة الخام المخوّل
+        للديوان، أي منحة الخزن وفرق الإحالة الصافي ومبلغ تعديل مصاريف النقل والمبلغ
+        المخصّص لحساب «صندوق التجهيز لديوان الحبوب» (الفصل 9)، وعلى المنحة
+        الاستثنائية للتسليم السريع (الفصل 10).
+        والفارق بين هذا السعر وسعر الإحالة المخفّض هو منحة التعويض (الفصل 15).
+      synonymes: []
+
+  - id: prix-reduit-retrocession
+    acronyme: null
+    statut: valide
+    references: [decret2025-344-oc]
+    source_definition: {ref: decret2025-344-oc, locator: "art. 11, 14 et 15"}
+    # AR : « أسعار الإحالة المخفّضة المضبوطة بمقرر من الوزير المكلف بالتجارة »
+    # (art. 15) ; au singulier « سعر الإحالة المخفّض » (art. 14) ; « بأسعار تضبط بمقرّر
+    # من الوزير المكلف بالتّجارة » (art. 11). FR : « prix de rétrocession réduit »
+    # (art. 14), « prix réduits de rétrocession » (art. 15). Aucun texte du précis
+    # n'ancre encore cette notion : elle n'est rendue sur aucune page.
+    source_traduction: {ref: decret2025-344-oc, locator: "art. 15"}
+    voir_aussi: [prix-normal-retrocession, prime-de-compensation, decision-ministerielle]
+    fr:
+      terme: Prix réduit de rétrocession
+      definition: >
+        Prix auquel l'Office des céréales livre les blés durs et tendres destinés à la
+        fabrication des semoules et des farines, ainsi que l'orge et le triticale. Le
+        décret de la campagne 2025-2026 le fait fixer par décision du ministre chargé
+        du commerce (art. 11). Il est inférieur au prix normal de rétrocession, et la
+        différence entre les deux est payée à l'Office par la Caisse générale de
+        compensation sous forme de prime de compensation (art. 14 et 15).
+      synonymes: [Prix de rétrocession réduit]
+    ar:
+      terme: سعر الإحالة المخفّض
+      definition: >
+        السعر الذي يحيل به ديوان الحبوب القمح الصلب والقمح اللّين المعدّ لصناعة
+        السميد والدقيق، وكذلك الشعير والتريتيكال. ويقتضي أمر موسم 2025-2026 ضبطه
+        بمقرّر من الوزير المكلّف بالتجارة (الفصل 11). وهو أدنى من السعر العادي
+        للإحالة، ويتحمّل الصندوق العام للتعويض الفارق بينهما في شكل منحة تعويض
+        يُنتفع بها ديوان الحبوب (الفصلان 14 و15).
+      synonymes: []
+
+  - id: prime-de-compensation
+    acronyme: null
+    statut: valide
+    references: [decret2025-344-oc]
+    source_definition: {ref: decret2025-344-oc, locator: "art. 14 et 15"}
+    # AR : « تحدد منحة التعويض المحملة على الصندوق العام للتعويض… بالفارق بين
+    # الأسعار العادية للإحالة… وأسعار الإحالة المخفّضة » (art. 15). Distincte de
+    # `indemnite-compensatrice` (« المنحة التعويضية », rémunérations publiques) et de
+    # « منحة التعويض عن الرخصة » (`indemnite-compensatrice-conge`).
+    source_traduction: {ref: decret2025-344-oc, locator: "art. 15"}
+    voir_aussi: [caisse-generale-compensation, office-cereales, prix-normal-retrocession, prix-reduit-retrocession]
+    fr:
+      terme: Prime de compensation
+      definition: >
+        Somme prise en charge par la Caisse générale de compensation et versée à
+        l'Office des céréales pour les céréales qu'il livre au prix réduit de
+        rétrocession. Dans le décret de la campagne 2025-2026, elle est égale, pour
+        toutes les variétés, à la différence entre les prix normaux de rétrocession
+        et les prix réduits fixés par décision du ministre chargé du commerce, après
+        application du barème d'agréage à l'achat et à la vente (art. 14 et 15).
+      synonymes: []
+    ar:
+      terme: منحة التعويض
+      definition: >
+        مبلغ يتحمّله الصندوق العام للتعويض ويُنتفع به ديوان الحبوب عن الحبوب التي
+        يحيلها بسعر الإحالة المخفّض. ويحدّدها أمر موسم 2025-2026، بالنسبة إلى كل
+        أصناف الحبوب، بالفارق بين الأسعار العادية للإحالة وأسعار الإحالة المخفّضة
+        المضبوطة بمقرّر من الوزير المكلّف بالتجارة، بعد تعديل هذه الأسعار على أساس
+        تطبيق سلّم التعيير عند الشراء والبيع (الفصلان 14 و15).
+      synonymes: []
+
+  - id: marge-de-mouture
+    acronyme: null
+    statut: provisoire  # AR non attesté
+    references: [decret74-780]
+    source_definition: {ref: decret74-780, locator: "art. 1er"}
+    # AR non lu : édition arabe du décret n° 74-780 non dépouillée, et absente du
+    # miroir iort du corpus (recherché le 17/11/2026 sous dec_74_780_1974 et
+    # dec_1974_780_1974) ; « هامش الطحن » est une proposition du terminologue, pas de
+    # `source_traduction`. Le décret fixe « l'indemnité compensatrice, au titre de la
+    # revalorisation de la marge de mouture » versée aux minotiers et semouliers : pas
+    # d'entrée propre pour cette indemnité, dont le terme FR « Indemnité
+    # compensatrice » est déjà pris par `indemnite-compensatrice` (rémunérations
+    # publiques). Abrogation par le décret n° 83-1276 (JORT n° 1 de 1984, p. 6) et
+    # remise en vigueur par le décret n° 84-152, art. 2 (JORT n° 14 de 1984, p. 451-452),
+    # d'après la note du documentaliste (§ 2.2) : clés absentes des références du
+    # volume, citées sans renvoi. Titre arabe du décret n° 84-152 (miroir iort) :
+    # « تنقيح مبلغ المنحة التعويضية المنطبقة على القموح الصلبة واللينة الواقع طحنها »
+    # (« الطحن » attesté, « هامش الطحن » non). « دعم سوق الحبوب » (nom AR de la
+    # rubrique) : traduction du terminologue, non lue.
+    voir_aussi: [office-cereales, prix-normal-retrocession, redevance-compensatrice]
+    fr:
+      terme: Marge de mouture
+      definition: >
+        Marge que perçoivent les minotiers et les semouliers pour la transformation
+        du blé en farine ou en semoule, comptée par quintal de blé mis en œuvre. Le
+        décret n° 74-780 du 5 août 1974 en compense la revalorisation, à compter du
+        1^er^ juillet 1974, par une indemnité compensatrice supplémentaire versée aux
+        minotiers pour le blé tendre et aux semouliers pour le blé dur ; elle s'ajoute
+        à l'indemnité du décret du 7 septembre 1968 et est comptée à la rubrique
+        « Soutien du Marché des Céréales » du budget de l'Office des céréales
+        (art. 1^er^ et 2). Abrogé par le décret n° 83-1276 du 28 décembre 1983, le
+        décret est remis en vigueur par le décret n° 84-152 du 17 février 1984.
+      synonymes: []
+    ar:
+      terme: هامش الطحن
+      definition: >
+        الهامش الذي يتقاضاه أصحاب المطاحن والمسامد مقابل تحويل القمح إلى دقيق أو
+        سميد، ويُحتسب عن كل قنطار من القمح المستعمل. وقد عوّض الأمر عدد 780 لسنة
+        1974 المؤرخ في 5 أوت 1974 الترفيع فيه، بداية من غرة جويلية 1974، بمنحة
+        تعويضية إضافية تُصرف لأصحاب المطاحن عن القمح اللّين ولأصحاب المسامد عن القمح
+        الصلب، تُضاف إلى المنحة المقرّرة بأمر 7 سبتمبر 1968، وتُدرج بباب «دعم سوق
+        الحبوب» من ميزانية ديوان الحبوب (الفصلان الأول و2). وأُلغي هذا الأمر بالأمر
+        عدد 1276 لسنة 1983 المؤرخ في 28 ديسمبر 1983، ثم أُعيد العمل به بالأمر عدد 152
+        لسنة 1984 المؤرخ في 17 فيفري 1984.
+      synonymes: []
+
+  # Notions analytiques du ciblage des subventions générales : aucun terme arabe lu
+  # sur un texte officiel ; traduction du terminologue, pas de `source_traduction`.
+  # Elles restent `provisoire` tant qu'un arabophone ou une publication arabe (INS,
+  # CRES) n'a pas confirmé le terme.
+
+  - id: auto-ciblage
+    acronyme: null
+    statut: provisoire  # notion analytique ; AR à confirmer
+    references: [alderman-lindert-1998-self-targeted, bm-1996-15878-subventions-alimentaires]
+    source_definition: {ref: alderman-lindert-1998-self-targeted}
+    voir_aussi: [ciblage, incidence-des-subventions, erreur-inclusion]
+    fr:
+      terme: Auto-ciblage
+      definition: >
+        Ciblage d'une subvention obtenu sans identifier les bénéficiaires, par le
+        choix du produit ou de sa qualité : la subvention porte sur un bien ou une
+        variété que les ménages pauvres consomment davantage, en proportion, que les
+        autres. Selon Alderman et Lindert, le gain de ciblage est réel mais borné par
+        la ressemblance des préférences entre groupes, l'inégalité des revenus et la
+        taille de la subvention. Pour la Banque mondiale (1996), il suppose qu'une
+        variété supérieure non subventionnée soit disponible.
+      synonymes: [Ciblage par la qualité]
+    ar:
+      terme: الاستهداف الذاتي
+      definition: >
+        استهداف الدعم دون تحديد المنتفعين، باختيار المنتوج أو جودته: يُوجَّه الدعم
+        إلى سلعة أو صنف تستهلكه الأسر الفقيرة، نسبيًّا، أكثر من غيرها. ويرى ألدرمان
+        وليندرت أنّ مكسب الاستهداف حقيقي، لكنّه محدود بتقارب الأذواق بين الفئات
+        وبتفاوت المداخيل وبحجم الدعم. ويشترط البنك الدولي (1996) توفّر صنف أجود غير
+        مدعّم.
+      synonymes: []
+
+  - id: erreur-inclusion
+    acronyme: null
+    statut: provisoire  # notion analytique ; AR à confirmer
+    references: [coady-grosh-hoddinott-2004-targeting]
+    source_definition: {ref: coady-grosh-hoddinott-2004-targeting}
+    voir_aussi: [erreur-exclusion, ciblage, auto-ciblage, incidence-des-subventions]
+    fr:
+      terme: Erreur d'inclusion
+      definition: >
+        Dans l'évaluation d'un transfert ciblé, part du transfert reçue par des
+        ménages que le dispositif ne vise pas — pour une subvention destinée aux
+        pauvres, la part qui va aux ménages non pauvres. Elle se lit avec l'erreur
+        d'exclusion.
+      synonymes: [Fuite vers les non-pauvres]
+    ar:
+      terme: خطأ الإدماج
+      definition: >
+        في تقييم تحويل موجَّه، الجزء من التحويل الذي تتحصّل عليه أسر لا يستهدفها
+        البرنامج، أي، بالنسبة إلى دعم موجَّه إلى الفقراء، الجزء الذي يذهب إلى الأسر
+        غير الفقيرة. ويُقرأ مع خطأ الإقصاء.
+      synonymes: []
+
+  - id: erreur-exclusion
+    acronyme: null
+    statut: provisoire  # notion analytique ; AR à confirmer
+    references: [coady-grosh-hoddinott-2004-targeting]
+    source_definition: {ref: coady-grosh-hoddinott-2004-targeting}
+    voir_aussi: [erreur-inclusion, ciblage]
+    fr:
+      terme: Erreur d'exclusion
+      definition: >
+        Dans l'évaluation d'un transfert ciblé, part des ménages visés par le
+        dispositif qui ne reçoivent rien. Elle se lit avec l'erreur d'inclusion.
+      synonymes: []
+    ar:
+      terme: خطأ الإقصاء
+      definition: >
+        في تقييم تحويل موجَّه، نسبة الأسر التي يستهدفها البرنامج ولا تتحصّل على شيء.
+        ويُقرأ مع خطأ الإدماج.
       synonymes: []
 
   # Notions analytiques : aucun terme arabe lu sur un texte officiel. Traduction du

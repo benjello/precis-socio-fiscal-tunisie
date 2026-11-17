@@ -61,6 +61,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Auditeur de justice | الملحق القضائي |  |
 | Augmentation générale des salaires | الزيادة العامة في الأجور |  |
 | Augmentation optionnelle de l'âge de mise à la retraite | الترفيع الاختياري في سنّ الإحالة على التقاعد |  |
+| Auto-ciblage | الاستهداف الذاتي |  |
 | Autonomie budgétaire | الاستقلالية في الميزانية |  |
 | Autonomie financière | الاستقلالية المالية |  |
 | Autorisation de transport | رخصة النقل |  |
@@ -339,6 +340,8 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Épargne nette | الادّخار الصافي |  |
 | Épargne-logement | الادخار السكني |  |
 | Équilibre réel | التوازن الحقيقي للميزانية |  |
+| Erreur d'exclusion | خطأ الإقصاء |  |
+| Erreur d'inclusion | خطأ الإدماج |  |
 | Établissement d'enseignement supérieur privé | المؤسسة الخاصة للتعليم العالي |  |
 | Établissement éducatif privé | المؤسسة التربوية الخاصة |  |
 | Établissement public à caractère administratif | المؤسسة العمومية ذات الصبغة الإدارية | EPA |
@@ -490,6 +493,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Malade payant | المريض الخاضع لدفع مقابل |  |
 | Maladie professionnelle | مرض مهني |  |
 | Manufacture des tabacs de Kairouan | مصنع التبغ بالقيروان | MTK |
+| Marge de mouture | هامش الطحن |  |
 | Masse salariale | كتلة الأجور |  |
 | Mastère | الماجستير |  |
 | Mastère de recherche | ماجستير البحث |  |
@@ -582,6 +586,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Prêts rétrocédés | القروض المعاد إقراضها |  |
 | Prime d'investissement | منحة الاستثمار |  |
 | Prime d'investissement agricole | منحة الاستثمار الفلاحي |  |
+| Prime de compensation | منحة التعويض |  |
 | Prime de départ volontaire | منحة المغادرة |  |
 | Prime de rendement | منحة المردودية |  |
 | Prime de rentrée universitaire | منحة العودة الجامعية |  |
@@ -592,9 +597,12 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Prise en charge par le Fonds national de l'emploi de la contribution patronale au régime légal de sécurité sociale | تكفل الصندوق الوطني للتشغيل بمساهمة الأعراف في النظام القانوني للضمان الاجتماعي |  |
 | Privatisation | التخصيص |  |
 | Prix administré de cession | سعر التفويت الإداري |  |
+| Prix de base à la production | السعر الأساسي عند الإنتاج |  |
 | Prix de cession préférentiel | السعر التفاضلي |  |
 | Prix de référence du mètre carré couvert | الثمن المرجعي للمتر المربع المبني |  |
 | Prix limite de vente | السعر الأقصى للبيع |  |
+| Prix normal de rétrocession | السعر العادي للإحالة |  |
+| Prix réduit de rétrocession | سعر الإحالة المخفّض |  |
 | Produit intérieur brut | الناتج المحلي الإجمالي | PIB |
 | Produits de base | المواد الأساسية |  |
 | Programme budgétaire | البرنامج |  |
@@ -785,6 +793,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Taux normal de la TVA | النسبة العادية |  |
 | Taux réduit de la TVA | النسبة المخفضة |  |
 | Taux spécifique | نسبة نوعية |  |
+| Taxation des prix | التسعير |  |
 | Taxe (au sens des finances publiques) | الرسم (بمفهوم المالية العمومية) |  |
 | Taxe à la production | الأداء على الإنتاج |  |
 | Taxe au profit du fonds de développement de la compétitivité dans les secteurs industriel, de services et de l'artisanat | المعلوم لفائدة صندوق تنمية القدرة التنافسية في قطاعات الصناعة والخدمات والصناعات التقليدية |  |
@@ -838,6 +847,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Tutelle | سلطة الإشراف |  |
 | Tuteur | الولي |  |
 | TVA sur la marge | احتساب الأداء على القيمة المضافة على الفارق بين ثمن البيع وثمن الشراء |  |
+| Unité de compensation des produits de base | وحدة تعويض المواد الأساسية |  |
 | Unité de gestion par objectifs | وحدة تصرف حسب الأهداف |  |
 | Université de Tunis | جامعة تونس |  |
 | Valeur ajoutée (brute) | القيمة المضافة (الخام) |  |
