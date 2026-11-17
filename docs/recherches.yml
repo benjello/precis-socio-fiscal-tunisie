@@ -2072,10 +2072,16 @@
     couverture: 'Édition arabe du JOT (corpus local PDFs/JORT/<année>/ar, index fascicules_anciens). Lus à l''image : 1945 n° 54, p. 1 et 6-7 ; 1941 n° 99, p. 1 et 7-8 ; 1941 n° 140, p. 1 et 6-7 ; pages 1 de 1941 n° 94-100 et 1942 n° 120. OCR complet (ara) : 1945 n° 52, 53, 253, 54, 55 ; 1941 n° 99, 140. OCR des pages 1-2 : 1941 n° 93-104 et 133-143, 1942 n° 119-128. iort.gov.tn : années 1956-2026 seulement. Gallica : 403. Lacunes : décret du 2 octobre 1942 non localisé ; texte du décret du 12 août 1943 non lu.'
     couvert_jusqu_au: 1945-07-06
     resultat: decret-1941-08-05-caisse-compensation-ar
+  - date: 2026-11-17
+    role: documentaliste
+    sources: [web]
+    couverture: 'Édition française du JOT de 1941-1947 et textes français de comparaison. Internet Archive : JO de l''État français à partir de 1941 seulement, pas d''édition française du JOT ; lus à l''image : Plan triennal 1962-1964 (pp. 408-409), Perspectives décennales 1962-1971 (p. 103), thèses de Sola (Paris, 1942) et de Legais (Alger, 1950). Persée et recherches web : sources secondaires seulement. gazettes.africa : pas de Tunisie, Algérie à partir de 1946. HathiTrust, Légifrance, CRL et Gallica : vérification anti-robot, accès refusé à l''outil. Google Books : quota épuisé. Résultat : édition française du JOT non atteinte ; décret du 6 mars 1941 sur les prix décrit comme analogue à la loi française du 21 octobre 1940 (Sola, p. 43) ; en Algérie, caisse des carburants liquides de 1940 attestée, caisse des prix non datée.'
+    couvert_jusqu_au: 1947-12-31
+    resultat: aucun
   a_faire:
   - sommaires du JOT arabe de 1942, d'octobre à décembre (décret du 2 octobre 1942 modifiant le décret du 5 août 1941)
   - JOT arabe de 1943, mi-août (décret du 12 août 1943 relatif aux prix et au contrôle économique)
-  - édition française du Journal officiel tunisien de 1941 à 1945 sur Gallica (notice du périodique cb328021808), dans un navigateur, pour l'intitulé français et les articles 3 à 8 du décret du 5 août 1941
+  - édition française du Journal officiel tunisien de 1941 à 1947, pour l'intitulé français et les articles 3 à 8 du décret du 5 août 1941 — Gallica (notice du périodique cb328021808) dans un navigateur, microfilm du CRL ou de la Los Angeles County Law Library, HeinOnline
 
 - id: r-centimes-additionnels-art106-1955
   objet: article 106 du décret du 31 mars 1955 (7 chaâbane 1374) fixant le budget ordinaire de l'exercice 1955-56 — assiette et taux des « quatre centimes » affectés en 1957 au compte des hydrocarbures
