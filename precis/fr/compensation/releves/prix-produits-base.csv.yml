@@ -1,0 +1,66 @@
+# Manifeste du relevé des prix administrés des produits de base, 1974-2020.
+#
+# Fichier TENU À LA MAIN — il n'est produit par aucun générateur. Il accompagne
+# prix-produits-base.csv, que lit precis/fr/compensation/figures/produits_base.py.
+#
+# D'OÙ VIENNENT LES VALEURS. Des arrêtés et décrets de prix lus au Journal officiel
+# (notes docs/notes/compensation-produits-base-documentaliste.md et
+# docs/notes/compensation-produits-base-complements-2026-11-17.md, § 2, 3.4 et 12), et,
+# pour trois valeurs, des rapports annuels de la Banque centrale (statut « rapport BCT »).
+
+format: long
+cle_de_ligne: [serie, rang]
+
+colonnes:
+  serie: pain_gros, pain_petit (petit pain puis baguette), farine, semoule, pates, couscous, sucre, huile, lait_uht, lait_pasteurise
+  rang: ordre de la ligne dans la série
+  date_effet: date d'effet (AAAA-MM-JJ), vide si elle n'est pas établie
+  annee: année de la ligne
+  regle_date: énoncée (par le texte), calculée (règle d'entrée en vigueur), publication (date du fascicule, faute de mieux), non établie, loi, ou fin de série (fin de l'année de la dernière valeur publiée)
+  valeur: millimes la pièce (pain), millimes le kilo (dérivés, sucre), millimes le litre (huile, lait) ; vide si la valeur n'est pas établie
+  poids_g: poids du pain, en grammes
+  texte: référence du texte (numéro, date, fascicule et pages du Journal officiel) ou du rapport
+  cle: clé de citation, vide si la notice n'est pas encore versée
+  url: fascicule du Journal officiel sur pist.tn (édition française)
+  statut: texte, rapport BCT, non établi (un texte change la valeur, qui n'est pas établie), fin (dernière valeur publiée close), poids seul (texte qui fixe le poids, non le prix)
+  remarque: variété, unité d'origine, règle de date
+
+sources:
+  - decret75-352
+  - decret79-413
+  - loi91-64
+  - arrete-1974-05-24-prix-sucre
+  - arrete-1975-06-03-prix-huile
+  - arrete-1975-06-03-prix-sucre
+  - arrete-1983-12-28-prix-farines
+  - arrete-1983-12-28-prix-pain
+  - arrete-1984-02-17-prix-pain
+  - arrete-1984-07-10-prix-pain
+  - arrete-1985-07-15-prix-pain
+  - arrete-1986-08-29-poids-pain
+  - arrete-1989-11-11-prix-lait
+  - arrete-1989-11-11-prix-pain
+  - arrete-1991-07-30-prix-lait
+  - arrete-1991-08-15-prix-pain
+  - arrete-2016-06-22-pain
+  - arrete-2020-11-13-pain
+  - bct-ra-1975
+  - bct-ra-1983
+
+couverture: PARTIELLE dans le temps
+couverture_detail: >-
+  Les prix au public s'arrêtent à 1991 : aucun prix de vente au public du pain et des
+  dérivés n'est publié après le 1er janvier 1992. Une ligne
+  « non établi » marque un texte qui change la valeur sans qu'elle soit relevée : la série
+  s'interrompt à sa date.
+
+reserves:
+  pain_par_kilo: >-
+    Le poids du pain change le 30 août 1986 et le 12 août 1989 sans que le prix change ; le
+    prix au kilo est calculé (prix ÷ poids), non lu.
+  pain_1980: >-
+    Le prix de 80 millimes du gros pain en 1980 vient du rapport de la Banque centrale pour
+    1983 ; la date d'effet n'est pas établie.
+  varietes: >-
+    La semoule, les pâtes et le couscous changent de variété en 1983 (PS-10) ; les valeurs
+    sont celles de la variété courante que nomme chaque texte.

@@ -1,0 +1,12 @@
+- libelle: Prix de base à la production du blé dur
+  parametre: parameters/produits_subventionnes/cereales/prix_base_production/ble_dur.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/produits_subventionnes.cereales.prix_base_production.ble_dur/table/
+- libelle: Prix de base à la production du blé tendre
+  parametre: parameters/produits_subventionnes/cereales/prix_base_production/ble_tendre.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/produits_subventionnes.cereales.prix_base_production.ble_tendre/table/
+- libelle: Prix de base à la production de l'orge
+  parametre: parameters/produits_subventionnes/cereales/prix_base_production/orge.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/produits_subventionnes.cereales.prix_base_production.orge/table/
+- libelle: Prix d'intervention à la production de l'orge
+  parametre: parameters/produits_subventionnes/cereales/prix_intervention_orge.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/produits_subventionnes.cereales.prix_intervention_orge/table/

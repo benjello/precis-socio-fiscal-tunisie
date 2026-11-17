@@ -152,6 +152,20 @@ se constate ; il ne s'indigne pas.
 **Jamais un chiffre ponctuel sans sa vue d'évolution** — un graphique ou un tableau daté.
 Un taux en vigueur sans son histoire ne dit pas ce qu'il vaut.
 
+**Dans le volume « La compensation », un prix suivi dans le temps se montre en graphe, en
+dinars courants et en dinars constants.** Tout prix administré, prix de campagne, prix au
+consommateur ou taxe unitaire connu à plusieurs dates se trace dans une figure à deux vues :
+dinars (ou millimes) courants, et dinars de l'année la plus récente que couvrent les déflateurs
+(`scripts/dinars_constants.py` : indice des prix à la consommation base 100 en 1970, prolongé par
+l'indice en base 2015 que relaie la Banque centrale ; `ANNEE_BASE`). Les valeurs nominales et
+leurs textes sont dans l'onglet « Données » (`figtools.figure_tabs`), non dans un tableau à
+part ; un tableau de textes reste un tableau. La note de lecture de la figure dit la règle de
+déflation : l'indice, l'année de référence, la moyenne annuelle, l'année retenue pour chaque
+valeur (année d'effet, ou année de la récolte pour un prix de campagne), le raccord de 1970 et
+le prolongement par l'indice base 2015, et que les valeurs constantes sont calculées. Une année
+dont un mois n'a pas de prix établi n'a pas de point ; aucune valeur n'est ramenée au-delà de la
+dernière année de l'indice.
+
 **Le budgétaire, les rapports extérieurs et les évaluations économiques ne sont pas au même
 niveau.** Trois familles de chiffres portent sur un même dispositif et ne disent pas la même
 chose : le *budgétaire* — lois de finances, lois de règlement, exécution du budget, évaluations
