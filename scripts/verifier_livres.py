@@ -88,6 +88,19 @@ def compter_arobases_cassees(html: str) -> int:
     return html.count("?@")
 
 
+def compter_renvois_casses(html: str) -> int:
+    """Renvois croisés non résolus SANS arobase : `?tbl-…`, `?fig-…`, `?sec-…`.
+
+    Un renvoi `@tbl-x` écrit dans le Markdown est rendu `?@tbl-x` quand la cible
+    manque, et `compter_arobases_cassees` le compte déjà. Mais un renvoi émis
+    par du code Python en sortie `asis` (légende, note de lecture) ressort
+    `?tbl-x`, sans arobase : constaté le 17/11/2026 sur le volume compensation
+    (`?tbl-compensation-taxe-unique`), que le décompte des `?@` laissait passer.
+    Le regard arrière exclut les `?@…`, déjà comptés.
+    """
+    return len(re.findall(r"(?<!@)\?(?:tbl|fig|sec|eq|lst)-[A-Za-z0-9_-]+", html))
+
+
 _LIGNE_DATE_SEULE = re.compile(
     r"^[+-](?:# Figure-data du précis socio-fiscal tunisien — généré le "
     r"\d{4}-\d{2}-\d{2}|generated: \d{4}-\d{2}-\d{2})\s*$"
@@ -134,7 +147,7 @@ def figdata_a_restaurer(diffs: dict[str, str]) -> list[str]:
 
 def _cli(argv: list[str]) -> int:
     if not argv:
-        print("usage: verifier_livres.py livres-touches|citations|arobases|figdata-date-seule",
+        print("usage: verifier_livres.py livres-touches|citations|arobases|renvois|figdata-date-seule",
               file=sys.stderr)
         return 2
     commande, reste = argv[0], argv[1:]
@@ -150,6 +163,9 @@ def _cli(argv: list[str]) -> int:
         return 0
     if commande == "arobases":
         print(compter_arobases_cassees(entree))
+        return 0
+    if commande == "renvois":
+        print(compter_renvois_casses(entree))
         return 0
     if commande == "figdata-date-seule":
         return 0 if figdata_seule_date_a_change(entree) else 1
