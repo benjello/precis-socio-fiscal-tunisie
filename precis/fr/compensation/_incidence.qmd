@@ -20,16 +20,27 @@ L'[incidence des subventions](#g-incidence-des-subventions) — leur répartitio
 
 **Les résultats.** Premier résultat, une part de la dépense n'atteint pas les ménages : sur un budget de la Caisse d'environ 1 150 MD, 888 MD leur reviennent ; 262 MD, soit 22,8 %, vont à des consommations « hors ménages » — restaurants, cafés, hôtels, commerce frontalier. Le budget retenu par l'étude ne coïncide pas avec le poste « produits de base » de 2010 du @tbl-compensation-2003-2011 ; les deux chiffres ne se rapprochent pas sans connaître le périmètre de l'étude.
 
-Deuxième résultat, la subvention reçue par tête varie peu d'un [quintile de niveau de vie](#g-quintile-niveau-de-vie) à l'autre, et croît légèrement avec le revenu.
+Deuxième résultat, la subvention reçue par tête varie peu d'un [quintile de niveau de vie](#g-quintile-niveau-de-vie) à l'autre, et croît légèrement avec le revenu (@fig-compensation-incidence-alimentaire).
 
-| | 1^er^ quintile | 2^e^ | 3^e^ | 4^e^ | 5^e^ quintile |
-|---|---:|---:|---:|---:|---:|
-| Subvention alimentaire annuelle par tête (D) | 68,2 | 84,2 | 87,5 | 89,9 | 89,1 |
-| dont gros pain (D) | 20,6 | | | | 28,5 |
-| dont semoule (D) | 17,0 | | | | 12,1 |
-| Indice de ciblage absolu | 0,82 | | | | 1,07 |
-
-: La subvention alimentaire par tête selon le quintile de niveau de vie, 2010. Source : INS, CRES et BAD [@ins-cres-bad-2013-subventions] ; les montants par tête viennent du tableau 1 de l'étude. Les valeurs par produit et l'indice de ciblage ne sont repris que pour les quintiles extrêmes. Valeurs transcrites du texte de l'étude, à confronter au document. {#tbl-compensation-incidence}
+```{python}
+#| label: fig-compensation-incidence-alimentaire
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import tableaux as tb
+tb.figure(
+    "incidence",
+    caption=("La subvention alimentaire par tête selon le quintile de niveau de vie, 2010 (dinars "
+             "courants de 2010 par tête et par an)"),
+    note_lecture=(
+        "Une barre par quintile de dépense par tête, du plus modeste au plus aisé : en bleu la "
+        "subvention alimentaire annuelle par tête ; en orange et en vert, la part du gros pain "
+        "et de la semoule, que l'étude ne donne que pour les quintiles extrêmes. L'indice de "
+        "ciblage absolu, 0,82 au premier quintile et 1,07 au cinquième, est dans les données. "
+        "Source : INS, CRES et BAD [@ins-cres-bad-2013-subventions] ; les montants par tête "
+        "viennent du tableau 1 de l'étude. Valeurs transcrites du texte de l'étude, à "
+        "confronter au document."))
+```
 
 Les personnes pauvres reçoivent 64,8 D par tête, contre 87,2 D pour les non-pauvres : elles reçoivent 12,0 % des subventions qui vont aux ménages, pour 15,5 % de la population [@ins-cres-bad-2013-subventions, tableau 3, p. 18]. La semoule est, selon l'étude, le seul produit dont la subvention décroît avec le revenu. Un montant presque égal par tête pèse cependant davantage dans un budget modeste, ce que mesurent les deux derniers résultats de l'étude.
 
@@ -95,30 +106,50 @@ La note « Vers une meilleure équité » demande qui bénéficie des subvention
 
 Selon cette estimation, l'électricité forme la moitié du total, le gasoil ordinaire et le gaz de pétrole liquéfié l'essentiel du reste. La subvention par unité, en avril 2013, est de 1,21 D par kilogramme de gaz de pétrole liquéfié, vendu 0,57 D ; 0,47 D par litre de pétrole lampant, vendu 0,81 D ; 0,28 D par litre d'essence, vendu 1,57 D ; 0,27 D par litre de gasoil, vendu 1,40 D [@bm-2013-82712, tableau 16, p. 41].
 
-La note donne ensuite la part de chaque quintile dans les bénéfices directs.
+La note donne ensuite la part de chaque quintile dans les bénéfices directs (@fig-compensation-bm2013-quintiles), puis le bénéfice direct par tête (@fig-compensation-bm2013-par-tete).
 
-| Produit | 1^er^ quintile | 2^e^ | 3^e^ | 4^e^ | 5^e^ quintile |
-|---|---:|---:|---:|---:|---:|
-| Électricité et gaz | 13 | 17 | 19 | 22 | 29 |
-| Essence | 1 | 3 | 8 | 20 | 67 |
-| Gaz de pétrole liquéfié | 15 | 19 | 21 | 23 | 22 |
-| Gasoil | 2 | 7 | 13 | 19 | 59 |
-| Pétrole lampant | 9 | 11 | 10 | 29 | 41 |
-| **Ensemble des subventions à l'énergie** | **13** | **16** | **19** | **23** | **29** |
-| *Pour comparaison, selon la même note : subventions alimentaires* | *16* | *18* | *20* | *21* | *25* |
+```{python}
+#| label: fig-compensation-bm2013-quintiles
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import tableaux as tb
+tb.figure(
+    "bm2013_quintiles",
+    caption=("La part de chaque quintile de dépense par tête dans les bénéfices directs des "
+             "subventions à l'énergie, aux prix d'avril 2013 (%)"),
+    note_lecture=(
+        "Pour chaque produit, cinq barres, du premier quintile (le plus modeste, en clair) au "
+        "cinquième (le plus aisé, en foncé) ; les cinq parts font 100. Les barres hachurées "
+        "sont, pour comparaison, les subventions alimentaires selon la même note. Effets "
+        "directs seuls, enquête de 2010. Source : Banque mondiale [@bm-2013-82712, figures 11 "
+        "et 12, p. 11-12], figures établies sur le document."))
+```
 
-: La part de chaque quintile de dépense par tête dans les bénéfices directs des subventions à l'énergie, aux prix d'avril 2013 (%). Source : Banque mondiale [@bm-2013-82712, figures 11 et 12, p. 11-12], figures établies sur le document. Effets directs seuls, enquête de 2010. {#tbl-compensation-bm-2013-quintiles}
-
-| Quintile | Gaz de pétrole liquéfié | Électricité | Essence | Gasoil | Ensemble |
-|---|---:|---:|---:|---:|---:|
-| 1^er^ | 44 | 17 | 1 | 0 | 62 |
-| 2^e^ | 55 | 22 | 2 | 1 | 80 |
-| 3^e^ | 60 | 26 | 5 | 1 | 91 |
-| 4^e^ | 66 | 30 | 12 | 2 | 110 |
-| 5^e^ | 60 | 39 | 35 | 4 | 139 |
-| Moyenne | 56 | 27 | 9 | 1 | 94 |
-
-: Le bénéfice direct des subventions à l'énergie par tête et par an, selon le quintile, aux prix d'avril 2013 (dinars). Source : Banque mondiale [@bm-2013-82712, figure 13, p. 13] ; valeurs transcrites du texte de la note, à confronter au document. Le pétrole lampant, nul à l'arrondi, n'est pas repris. {#tbl-compensation-bm-2013-par-tete}
+```{python}
+#| label: fig-compensation-bm2013-par-tete
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import tableaux as tb
+tb.figure(
+    "bm2013_par_tete",
+    caption=("Le bénéfice direct des subventions à l'énergie par tête et par an, selon le quintile, "
+             "aux prix d'avril 2013 et en dinars de 2025"),
+    note_lecture=(
+        "Une barre par quintile, empilée par produit ; le montant écrit au-dessus est "
+        "l'ensemble que la note donne, auquel les produits, arrondis, ne s'additionnent pas "
+        "toujours. Le pétrole lampant, nul à l'arrondi, n'est pas repris. Source : Banque "
+        "mondiale [@bm-2013-82712, figure 13, p. 13] ; valeurs transcrites du texte de la "
+        "note, à confronter au document.\n\n"
+        "Dinars de 2025 : valeurs calculées, non observées. Les montants de la note sont aux "
+        "prix d'avril 2013 ; ils sont multipliés par le rapport de l'indice des prix à la "
+        "consommation de 2025 à l'indice annuel moyen de 2013, faute d'indice mensuel dans la "
+        "série employée. L'indice est celui de l'INS en base 100 en 1970 jusqu'en 2023, "
+        "prolongé pour 2024 et 2025 par la variation de l'indice en base 2015 que publie la "
+        "Banque centrale. La comparaison avec le document de travail de 2015, en dinars de "
+        "2025, est au @fig-compensation-wps-quintiles."))
+```
 
 Trois constats, selon la note. L'essence et le gasoil profitent d'abord au cinquième le plus aisé, qui reçoit 67 % et 59 % de leur subvention directe. Le gaz de pétrole liquéfié est réparti presque également, et pèse le plus dans ce que reçoit un ménage modeste : 44 des 62 D par tête du premier quintile. Au total, le bénéfice direct va de 62 D par tête pour le premier quintile à 139 D pour le cinquième. Le poids du gaz de pétrole liquéfié dans ce que reçoivent les ménages — 56 D sur 94 — ne se compare pas à son poids dans la dépense totale du premier tableau, qui couvre toute l'économie et non les seuls ménages.
 
@@ -143,33 +174,61 @@ Le document de Cuesta, El-Lahga et Lara Ibarra simule la réforme annoncée à l
 5. *L'effet direct.* Aucune élasticité : « tout le monde consomme autant, mais à des prix plus élevés ». La subvention reçue est la quantité multipliée par la subvention unitaire, ce qui se vérifie sur le gaz de pétrole liquéfié.
 6. *L'effet indirect.* Les hausses sont répercutées sur les produits qui emploient l'énergie, par le tableau des entrées et sorties de 2010 — une « approximation simple », disent les auteurs, dont le détail n'est pas publié.
 
-**Les résultats.**
+**Les résultats.** Le @fig-compensation-wps-unitaire donne la subvention par unité, le @fig-compensation-wps-quintiles la subvention reçue par tête.
 
-| Produit ou tranche, mai 2014 | Prix non subventionné | Prix de vente | Subvention | Taux de subvention |
-|---|---:|---:|---:|---:|
-| Essence, le litre | 1,856 | 1,670 | 0,186 | 10 % |
-| Gasoil, le litre | 1,584 | 1,250 | 0,334 | 21 % |
-| Gaz de pétrole liquéfié, le kilogramme | 1,790 | 0,570 | 1,220 | 68 % |
-| Électricité, ménages jusqu'à 200 kWh par mois : jusqu'à 50 kWh | 0,268 | 0,075 | 0,193 | 72 % |
-| idem : jusqu'à 100 kWh | 0,268 | 0,108 | 0,160 | 60 % |
-| idem : jusqu'à 200 kWh | 0,268 | 0,140 | 0,128 | 47 % |
-| Électricité, ménages au-delà de 200 kWh : 1 à 200 kWh | 0,268 | 0,151 | 0,117 | 43 % |
-| idem : 201 à 300 kWh | 0,268 | 0,184 | 0,084 | 31 % |
-| idem : 301 à 500 kWh | 0,268 | 0,280 | −0,012 | −4 % |
-| idem : plus de 500 kWh | 0,268 | 0,350 | −0,082 | −31 % |
+```{python}
+#| label: fig-compensation-wps-unitaire
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import tableaux as tb
+tb.figure(
+    "wps_unitaire",
+    caption=("La subvention par unité selon le document de travail de 2015, aux prix de mai 2014 et "
+             "en dinars de 2025 (dinars par litre, par kilogramme ou par kilowattheure)"),
+    note_lecture=(
+        "Pour chaque produit ou tranche, trois barres : le prix non subventionné (gris), le "
+        "prix de vente (bleu) et leur différence, la subvention (rouge), avec son taux, "
+        "rapporté au prix non subventionné. Au-delà de 300 kWh par mois, la subvention est "
+        "négative : le ménage paie plus que le prix de référence. Les prix de vente de "
+        "l'électricité sont ceux de la grille de la STEG du 1er mai 2014 "
+        "(@tbl-compensation-eg-grilles-steg). Source : Banque mondiale [@bm-2015-wps7312, "
+        "tableau 3, p. 11] ; valeurs transcrites du texte du document, à confronter au "
+        "document.\n\n"
+        "Dinars de 2025 : valeurs calculées, non observées. Les prix du document sont ceux de "
+        "mai 2014 ; ils sont multipliés par le rapport de l'indice des prix à la consommation "
+        "de 2025 à l'indice annuel moyen de 2014, faute d'indice mensuel dans la série "
+        "employée. L'indice est celui de l'INS en base 100 en 1970 jusqu'en 2023, prolongé "
+        "pour 2024 et 2025 par la variation de l'indice en base 2015 que publie la Banque "
+        "centrale. Le taux de subvention ne change pas."))
+```
 
-: La subvention par unité selon le document de travail de 2015, aux prix de mai 2014 (dinars). Source : Banque mondiale [@bm-2015-wps7312, tableau 3, p. 11] ; valeurs transcrites du texte du document, à confronter au document. Les prix de vente de l'électricité sont ceux de la grille de la STEG du 1^er^ mai 2014 (@tbl-compensation-eg-grilles-steg). {#tbl-compensation-wps-unitaire}
-
-| Quintile | Essence | Gasoil | Gaz de pétrole liquéfié | Électricité | Total par tête | Part du total |
-|---|---:|---:|---:|---:|---:|---:|
-| 1^er^ | 0,09 | 0,15 | 44,53 | 36,99 | 81,76 | 14,9 % |
-| 2^e^ | 0,43 | 0,65 | 55,33 | 41,42 | 97,82 | 17,9 % |
-| 3^e^ | 1,57 | 1,24 | 59,88 | 46,06 | 108,74 | 19,9 % |
-| 4^e^ | 4,65 | 1,86 | 68,30 | 47,85 | 122,67 | 22,4 % |
-| 5^e^ | 18,18 | 5,70 | 63,91 | 48,89 | 136,69 | 25,0 % |
-| Ensemble | 4,98 | 1,92 | 58,39 | 44,24 | 109,53 | 100 % |
-
-: La subvention à l'énergie reçue par tête et par an, selon le quintile, aux prix de mai 2014 (dinars). Source : Banque mondiale [@bm-2015-wps7312, tableaux 7 et 8, p. 15] ; valeurs transcrites du texte du document, à confronter au document. {#tbl-compensation-wps-quintiles}
+```{python}
+#| label: fig-compensation-wps-quintiles
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import tableaux as tb
+tb.figure(
+    "wps_quintiles",
+    caption=("La subvention à l'énergie reçue par tête et par an, selon le quintile, aux prix de mai "
+             "2014 et en dinars de 2025, et la comparaison avec la note de 2013"),
+    note_lecture=(
+        "Une barre par quintile, empilée par produit ; le montant écrit au-dessus est le total "
+        "par tête que donne le document. La part de chaque quintile dans le total, de 14,9 % "
+        "au premier à 25,0 % au cinquième, est dans les données. Source : Banque mondiale "
+        "[@bm-2015-wps7312, tableaux 7 et 8, p. 15] ; valeurs transcrites du texte du "
+        "document, à confronter au document.\n\n"
+        "Dinars de 2025 : valeurs calculées, non observées. Les montants du document sont aux "
+        "prix de mai 2014, ceux de la note de 2013 aux prix d'avril 2013 ; chacun est "
+        "multiplié par le rapport de l'indice des prix à la consommation de 2025 à l'indice "
+        "annuel moyen de son année, faute d'indice mensuel dans la série employée. L'indice "
+        "est celui de l'INS en base 100 en 1970 jusqu'en 2023, prolongé pour 2024 et 2025 par "
+        "la variation de l'indice en base 2015 que publie la Banque centrale. Le dernier "
+        "onglet met côte à côte, en dinars de 2025, le total par tête des deux études, qui ne "
+        "se raccordent pas : elles n'ont ni la même enquête actualisée, ni la même date de "
+        "prix, ni la même manière de compter l'électricité (@sec-compensation-incidence-energie)."))
+```
 
 Rapportée à la dépense du ménage, la subvention pèse 8,8 % au premier quintile et 2,4 % au cinquième [@bm-2015-wps7312, tableau 9, p. 16] : plus élevée en dinars pour les ménages aisés, elle compte davantage dans le budget des ménages modestes. Le gaz de pétrole liquéfié en forme plus de la moitié.
 

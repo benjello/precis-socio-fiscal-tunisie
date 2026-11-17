@@ -1,0 +1,30 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-11-17
+# séries (tunisia_data) : compensation-recettes-carburants-2012-2018, compensation-parts
+# sources (citation) : @minfin-resultats-provisoires-2017-01, @minfin-resultats-provisoires-2018-07, @lfc-2015, @minfin-note-execution-2018-12
+# fiches : docs/compensation-depense-par-poste.md
+# méthode/hypothèses : La ligne des revenus de commercialisation n'existe pas avant 2015., Les séries ne se raccordent pas. La part du PIB se lit par segments : le PIB change de source ou de base en 1986, 1997, 2002, 2005, 2010 et 2025. Les dépenses de l'État sont hors service de la dette. Carburants : périmètre élargi en 2015. 2025 et 2026 sont des lois de finances.
+# note : Les recettes non fiscales en regard de la subvention des carburants, 2012-2018 (millions de dinars courants)
+Année,Grandeur,Horizon,Montant (millions de dinars courants),Source,Localisation
+2012,"Redevance sur le gazoduc, encaissée",encaissé,210.5,minfin-resultats-provisoires-2017-01 ; minfin-resultats-provisoires-2018-07,
+2012,Subvention des carburants : ligne budgétaire « carburants »,colonne « 2012 » non qualifiée,2111.0,minfin-resultats-provisoires-2017-01,
+2013,"Redevance sur le gazoduc, encaissée",encaissé,109.7,minfin-resultats-provisoires-2017-01 ; minfin-resultats-provisoires-2018-07,
+2013,Subvention des carburants : ligne budgétaire « carburants »,colonne « 2013 » non qualifiée,3734.0,minfin-resultats-provisoires-2017-01,
+2014,"Redevance sur le gazoduc, encaissée",encaissé,121.5,minfin-resultats-provisoires-2017-01 ; minfin-resultats-provisoires-2018-07,
+2014,Subvention des carburants : ligne budgétaire « carburants »,« نتائج » (résultats),2353.0,minfin-note-execution-2018-12,
+2015,"Redevance sur le gazoduc, encaissée",encaissé,38.4,minfin-resultats-provisoires-2017-01 ; minfin-resultats-provisoires-2018-07,
+2015,"Revenus de commercialisation des carburants, encaissés",encaissé,150.0,minfin-resultats-provisoires-2017-01 ; minfin-resultats-provisoires-2018-07,
+2015,"Revenus de commercialisation, prévus en loi de finances complémentaire",loi de finances complémentaire,487.0,lfc-2015,tableau A
+2015,Subvention des carburants : ligne budgétaire « carburants »,« نتائج » (résultats),918.0,minfin-note-execution-2018-12,
+2016,"Redevance sur le gazoduc, encaissée",encaissé,293.0,minfin-resultats-provisoires-2017-01 ; minfin-resultats-provisoires-2018-07,
+2016,"Revenus de commercialisation des carburants, encaissés",encaissé,0.0,minfin-resultats-provisoires-2017-01 ; minfin-resultats-provisoires-2018-07,
+2016,Subvention des carburants : ligne budgétaire « carburants »,« نتائج » (résultats),197.0,minfin-note-execution-2018-12,
+2017,"Redevance sur le gazoduc, encaissée",encaissé,555.1,minfin-resultats-provisoires-2017-01 ; minfin-resultats-provisoires-2018-07,
+2017,"Revenus de commercialisation des carburants, encaissés",encaissé,609.5,minfin-resultats-provisoires-2017-01 ; minfin-resultats-provisoires-2018-07,
+2017,"Revenus de commercialisation, prévus en loi de finances",loi de finances,500.0,minfin-resultats-provisoires-2017-01 ; minfin-resultats-provisoires-2018-07,
+2017,"Revenus de commercialisation, prévus en loi de finances complémentaire",loi de finances complémentaire,615.0,minfin-resultats-provisoires-2017-01 ; minfin-resultats-provisoires-2018-07,
+2017,Subvention des carburants : ligne budgétaire « carburants »,« نتائج » (résultats),1550.0,minfin-note-execution-2018-12,
+2018,"Redevance sur le gazoduc, encaissée",encaissé,605.4,minfin-note-execution-2018-12,
+2018,"Revenus de commercialisation des carburants, encaissés",encaissé,635.0,minfin-note-execution-2018-12,
+2018,"Revenus de commercialisation, prévus en loi de finances",loi de finances,401.5,minfin-resultats-provisoires-2017-01 ; minfin-resultats-provisoires-2018-07,
+2018,"Revenus de commercialisation, prévus en loi de finances complémentaire",loi de finances complémentaire,600.0,minfin-note-execution-2018-12,
+2018,Subvention des carburants : ligne budgétaire « carburants »,« نتائج » (résultats),2700.0,minfin-note-execution-2018-12,
