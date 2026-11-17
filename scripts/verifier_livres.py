@@ -63,6 +63,37 @@ def livres_touches(fichiers: list[str]) -> list[str]:
     return sorted(touches)
 
 
+FICHIERS_DE_LIVRE_GLOBAUX = ("_glossaire.qmd", "_glossaire.infobulles.html", "index.qmd")
+
+
+def chapitres_touches(fichiers: list[str], langue: str, livre: str) -> list[str] | None:
+    """Les chapitres d'un livre à rendre seuls, ou None s'il faut rendre le livre entier.
+
+    Mode par défaut de `verifier.sh` (sans `--complet`) : quand les seuls fichiers
+    modifiés d'un livre sont des chapitres `.qmd` posés à sa racine, on ne rend que
+    ceux-là (un chapitre se rend en quelques dizaines de secondes, le livre en
+    plusieurs minutes). Tout autre fichier du livre — figures, données, relevés,
+    tableaux engendrés, `references.json`, `_quarto.yml`, glossaire, index — ou un
+    fichier partagé (voir `PREFIXES_PARTAGES`) impose le rendu complet : il peut
+    agir sur n'importe quel chapitre. Liste vide : rien à rendre dans cette langue.
+    """
+    prefixe = f"precis/{langue}/{livre}/"
+    chapitres: set[str] = set()
+    for f in fichiers:
+        f = f.strip()
+        if not f:
+            continue
+        if f.startswith(PREFIXES_PARTAGES) or RE_FICHIER_DE_LANGUE.match(f):
+            return None
+        if not f.startswith(prefixe):
+            continue
+        relatif = f[len(prefixe):]
+        if "/" in relatif or not relatif.endswith(".qmd") or relatif in FICHIERS_DE_LIVRE_GLOBAUX:
+            return None
+        chapitres.add(relatif)
+    return sorted(chapitres)
+
+
 def compter_citations_non_resolues(html: str) -> int:
     """Citations `[@clé]` que citeproc n'a pas résolues.
 
@@ -163,6 +194,15 @@ def _cli(argv: list[str]) -> int:
         return 0
     if commande == "arobases":
         print(compter_arobases_cassees(entree))
+        return 0
+    if commande == "chapitres":
+        # usage : verifier_livres.py chapitres <langue> <livre> < fichiers
+        if len(reste) != 2:
+            print("usage: verifier_livres.py chapitres <langue> <livre>", file=sys.stderr)
+            return 2
+        fichiers = [l for l in entree.splitlines() if l.strip()]
+        chapitres = chapitres_touches(fichiers, reste[0], reste[1])
+        print("TOUT" if chapitres is None else "\n".join(chapitres))
         return 0
     if commande == "renvois":
         print(compter_renvois_casses(entree))

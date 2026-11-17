@@ -2,7 +2,15 @@
 # verifier.sh — enchaîne les contrôles du précis en UN bilan compact.
 #
 # Usage :
-#   scripts/verifier.sh [--sans-reseau] [livre…]
+#   scripts/verifier.sh [--sans-reseau] [--complet] [livre…]
+#
+# Par défaut, quand les seuls fichiers modifiés d'un livre sont des chapitres
+# `.qmd` posés à sa racine, seuls ces chapitres sont rendus (quelques dizaines de
+# secondes au lieu de plusieurs minutes) ; tout autre fichier du livre ou un
+# fichier partagé impose le rendu complet (`verifier_livres.py::chapitres_touches`).
+# Si un chapitre rendu seul montre un renvoi cassé, le livre est rendu en entier
+# avant de conclure. --complet rend toujours les livres entiers ; nommer des
+# livres en argument a le même effet.
 #
 # Sans livre en argument, les livres rendus sont déduits de ce qui a changé :
 # `git diff --name-only origin/master...HEAD`, le reste de l'arbre de travail
@@ -29,12 +37,14 @@ LOG="$(mktemp -t verifier-precis.XXXXXX.log)"
 echo "Journal détaillé : $LOG" >&2
 
 SANS_RESEAU=false
+COMPLET=false
 LIVRES_ARG=()
 for arg in "$@"; do
   case "$arg" in
     --sans-reseau) SANS_RESEAU=true ;;
+    --complet|--all) COMPLET=true ;;
     --help|-h)
-      sed -n '2,20p' "${BASH_SOURCE[0]}" | sed 's/^# \{0,1\}//'
+      sed -n '2,28p' "${BASH_SOURCE[0]}" | sed 's/^# \{0,1\}//'
       exit 0
       ;;
     *) LIVRES_ARG+=("$arg") ;;
@@ -102,9 +112,46 @@ fi
 # ── 6. Tests ────────────────────────────────────────────────────────────────────
 etape "Tests (pytest)" uv run pytest -q tests
 
+# Rendre seulement quelques chapitres d'un livre (mode par défaut).
+rendre_chapitres() {
+  local dir="$1"; shift
+  local ch
+  for ch in "$@"; do
+    (cd "$dir" && uv run quarto render "$ch" --to html) >>"$LOG" 2>&1 || return 1
+  done
+}
+
+# Compter citations non résolues, « ?@ » et renvois cassés dans les pages
+# rendues : toutes les pages du livre, ou celles des chapitres nommés.
+# Imprime « citations arobases renvois ».
+compter_pages() {
+  local dir="$1"; shift
+  local public="$dir/public" page nc na nr c=0 a=0 r=0
+  local pages=()
+  if [ "$#" -gt 0 ]; then
+    local ch
+    for ch in "$@"; do pages+=("$public/${ch%.qmd}.html"); done
+  else
+    mapfile -d '' pages < <(find "$public" -name '*.html' -not -path '*/site_libs/*' -print0 2>/dev/null)
+  fi
+  for page in "${pages[@]}"; do
+    [ -f "$page" ] || continue
+    nc=$(uv run python scripts/verifier_livres.py citations < "$page")
+    na=$(uv run python scripts/verifier_livres.py arobases < "$page")
+    nr=$(uv run python scripts/verifier_livres.py renvois < "$page")
+    c=$((c + nc)); a=$((a + na)); r=$((r + nr))
+    if [ "$nc" -gt 0 ] || [ "$na" -gt 0 ] || [ "$nr" -gt 0 ]; then
+      echo "   $page : $nc citation(s) non résolue(s), $na « ?@ », $nr renvoi(s) « ?tbl-/?fig-/?sec- »" >>"$LOG"
+    fi
+  done
+  echo "$c $a $r"
+}
+
 # ── 7. Livres à rendre ──────────────────────────────────────────────────────────
+FICHIERS_DIFF=""
 if [ "${#LIVRES_ARG[@]}" -gt 0 ]; then
   LIVRES=("${LIVRES_ARG[@]}")
+  COMPLET=true
 else
   FICHIERS_DIFF="$( { git diff --name-only "origin/master...HEAD" 2>/dev/null; \
                        git diff --name-only HEAD 2>/dev/null; \
@@ -133,25 +180,43 @@ else
         continue
       fi
       echo "-- $langue/$livre --" >>"$LOG"
-      if ! (cd "$BOOK_DIR" && uv run quarto render --to html) >>"$LOG" 2>&1; then
-        printf 'ÉCHEC   Rendu %s/%s (voir %s)\n' "$langue" "$livre" "$LOG"
-        ECHECS=$((ECHECS + 1))
-        RENDU_OK=false
+      CHAPITRES=()
+      MODE=TOUT
+      if ! $COMPLET; then
+        SORTIE=$(printf '%s\n' "$FICHIERS_DIFF" | uv run python scripts/verifier_livres.py chapitres "$langue" "$livre")
+        if [ "$SORTIE" != TOUT ]; then
+          MODE=CHAPITRES
+          mapfile -t CHAPITRES < <(printf '%s\n' "$SORTIE" | sed '/^$/d')
+        fi
+      fi
+      if [ "$MODE" = CHAPITRES ] && [ "${#CHAPITRES[@]}" -eq 0 ]; then
+        echo "   rien à rendre dans cette langue" >>"$LOG"
         continue
       fi
-      PUBLIC_DIR="$BOOK_DIR/public"
-      [ -d "$PUBLIC_DIR" ] || continue
-      while IFS= read -r -d '' page; do
-        n_citations=$(uv run python scripts/verifier_livres.py citations < "$page")
-        n_arobases=$(uv run python scripts/verifier_livres.py arobases < "$page")
-        n_renvois=$(uv run python scripts/verifier_livres.py renvois < "$page")
-        TOTAL_CITATIONS=$((TOTAL_CITATIONS + n_citations))
-        TOTAL_AROBASES=$((TOTAL_AROBASES + n_arobases))
-        TOTAL_RENVOIS=$((TOTAL_RENVOIS + n_renvois))
-        if [ "$n_citations" -gt 0 ] || [ "$n_arobases" -gt 0 ] || [ "$n_renvois" -gt 0 ]; then
-          echo "   $page : $n_citations citation(s) non résolue(s), $n_arobases « ?@ », $n_renvois renvoi(s) « ?tbl-/?fig-/?sec- »" >>"$LOG"
+      if [ "$MODE" = CHAPITRES ]; then
+        printf 'INFO    Rendu %s/%s : chapitres seuls (%s)\n' "$langue" "$livre" "${CHAPITRES[*]}"
+        if ! rendre_chapitres "$BOOK_DIR" "${CHAPITRES[@]}"; then
+          MODE=TOUT
+        else
+          read -r c a r < <(compter_pages "$BOOK_DIR" "${CHAPITRES[@]}")
+          if [ $((c + a + r)) -gt 0 ]; then
+            echo "   défaut en mode chapitres : rendu complet du livre avant de conclure" >>"$LOG"
+            MODE=TOUT
+          fi
         fi
-      done < <(find "$PUBLIC_DIR" -name '*.html' -not -path '*/site_libs/*' -print0)
+      fi
+      if [ "$MODE" = TOUT ]; then
+        if ! (cd "$BOOK_DIR" && uv run quarto render --to html) >>"$LOG" 2>&1; then
+          printf 'ÉCHEC   Rendu %s/%s (voir %s)\n' "$langue" "$livre" "$LOG"
+          ECHECS=$((ECHECS + 1))
+          RENDU_OK=false
+          continue
+        fi
+        read -r c a r < <(compter_pages "$BOOK_DIR")
+      fi
+      TOTAL_CITATIONS=$((TOTAL_CITATIONS + c))
+      TOTAL_AROBASES=$((TOTAL_AROBASES + a))
+      TOTAL_RENVOIS=$((TOTAL_RENVOIS + r))
     done
   done
   if $RENDU_OK && [ "$TOTAL_CITATIONS" -eq 0 ] && [ "$TOTAL_AROBASES" -eq 0 ] && [ "$TOTAL_RENVOIS" -eq 0 ]; then
