@@ -1,0 +1,19 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-11-17
+# séries (tunisia_data) : compensation-carburants-structure-prix-2020-2022
+# sources (citation) : @one-conjoncture-energetique
+# fiches : 
+# méthode/hypothèses : Le relevé est exhaustif depuis février 2020. Un tiret de la source est une valeur absente. Les droits et taxes et les marges du 6 février 2021 ne sont pas repris. Deux numéros datent du 8 juillet 2020 deux jeux de prix différents.
+# note : La structure du prix des carburants à quatre dates, 2020-2022 : prix de cession, droits et taxes, frais et marges (millimes par litre)
+Date d'effet,Produit,Prix de cession,Droits et taxes,Frais et marges,"Prix public, tel que la source le donne",Unité,Source
+2020-04-07,essence sans plomb,1101,738,196,2035,millimes par litre,one-conjoncture-energetique
+2020-04-07,gasoil ordinaire,1095,295,160,1550,millimes par litre,one-conjoncture-energetique
+2020-04-07,gasoil sans soufre,1135,504,161,1800,millimes par litre,one-conjoncture-energetique
+2021-04-20,essence sans plomb,1149,747,198,2095,millimes par litre,one-conjoncture-energetique
+2021-04-20,gasoil ordinaire,1141,301,163,1605,millimes par litre,one-conjoncture-energetique
+2021-04-20,gasoil sans soufre,1137,504,164,1805,millimes par litre,one-conjoncture-energetique
+2022-04-14,essence sans plomb,1343,785,202,2330,millimes par litre,one-conjoncture-energetique
+2022-04-14,gasoil ordinaire,1300,323,167,1790,millimes par litre,one-conjoncture-energetique
+2022-04-14,gasoil sans soufre,1314,528,168,2010,millimes par litre,one-conjoncture-energetique
+2022-11-24,essence sans plomb,1498,815,211,2525,millimes par litre,one-conjoncture-energetique
+2022-11-24,gasoil ordinaire,1464,345,176,1985,millimes par litre,one-conjoncture-energetique
+2022-11-24,gasoil sans soufre,1478,550,177,2205,millimes par litre,one-conjoncture-energetique

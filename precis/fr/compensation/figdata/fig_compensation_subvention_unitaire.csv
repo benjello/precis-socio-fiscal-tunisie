@@ -1,0 +1,20 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-11-17
+# séries (tunisia_data) : compensation-carburants-subvention-unitaire-2021-2024
+# sources (citation) : @minfin-budget-citoyen-2021, @minfin-budget-citoyen-2022, @minfin-budget-citoyen-2023, @minfin-budget-citoyen-2024
+# fiches : 
+# méthode/hypothèses : Montants prévisionnels, à l'hypothèse de prix du baril du budget (45, 75, 89 et 81 dollars). Pour la bouteille, les budgets de 2022 à 2024 arrondissent au dinar.
+# note : La subvention unitaire prévisionnelle des produits pétroliers selon les budgets citoyens, 2021-2024 (millimes par litre ; bouteille de gaz en dinars)
+Budget,Produit,Coût (millimes),Prix payé (millimes),Subvention unitaire (millimes),Source,Localisation
+2021,bouteille de gaz,18500,7700,10800,minfin-budget-citoyen-2021,p. 3
+2022,"essence, le litre",3325,2220,1105,minfin-budget-citoyen-2022,p. 4
+2022,"gasoil, le litre",2754,1705,1049,minfin-budget-citoyen-2022,p. 4
+2022,"gasoil sans soufre, le litre",3071,1915,1156,minfin-budget-citoyen-2022,p. 4
+2022,bouteille de gaz,41000,7700,33000,minfin-budget-citoyen-2022,p. 4
+2023,"essence, le litre",3396,2525,871,minfin-budget-citoyen-2023,p. 4
+2023,"gasoil, le litre",2820,1985,835,minfin-budget-citoyen-2023,p. 4
+2023,"gasoil sans soufre, le litre",3140,2205,935,minfin-budget-citoyen-2023,p. 4
+2023,bouteille de gaz,42000,8800,33000,minfin-budget-citoyen-2023,p. 4
+2024,"essence, le litre",3055,2525,530,minfin-budget-citoyen-2024,p. 9
+2024,"gasoil, le litre",2511,1985,526,minfin-budget-citoyen-2024,p. 9
+2024,"gasoil sans soufre, le litre",2813,2205,608,minfin-budget-citoyen-2024,p. 9
+2024,bouteille de gaz,36000,8800,27000,minfin-budget-citoyen-2024,p. 9

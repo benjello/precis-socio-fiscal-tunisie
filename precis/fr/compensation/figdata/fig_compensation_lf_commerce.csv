@@ -1,0 +1,13 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-11-17
+# séries (tunisia_data) : compensation-lf-commerce-interventions, compensation-compte-caisse
+# sources (citation) : @lf-2000, @lf-2001, @loi2001-123-lf2002, @lfc-2008, @lfc-2009, @lf-2011, @bct-ra-2002, @bct-ra-2008, @bct-ra-2009
+# fiches : docs/compensation-compte-caisse.md
+# méthode/hypothèses : La loi ne désigne pas la Caisse dans ces lignes. Le chapitre est celui du ministère du commerce en 2000-2002, du commerce et de l'artisanat en 2011., La grandeur qui pèse sur le budget est la dotation, non les charges. Rupture de 1987 : les recettes de la Caisse sont intégrées au budget, la dotation passe de 68 à 189 millions de dinars sans hausse des charges. Dotation non donnée par le rapport en 1988-1990, 2000-2001, 2003, 2006, 2008-2009 et 2011 : laissée vide, jamais déduite des charges. Charges par produit incomplètes pour 1985, 1992, 1993 et 1995. Le champ des produits change. La part du PIB se lit par segments.
+# note : Les crédits d'interventions publiques du chapitre du ministère chargé du commerce, lois de finances 2000-2011, et la dotation à la Caisse relayée par la Banque centrale (millions de dinars courants)
+Budget,Crédits d'interventions publiques du ministère du commerce (MD),dont interventions dans le domaine social (2011) (MD),Source,Localisation,Dotation relayée par la BCT (MD),Source de la dotation
+2000,248.9,,lf-2000,"tableau B, p. 2756",,
+2001,235.2,,lf-2001,"tableau B, p. 3187",,
+2002,251.2,,loi2001-123-lf2002,"tableau B, p. 4266",235.0,bct-ra-2002
+2008 (loi de finances complémentaire),1064.4,,lfc-2008,"tableau C, p. 4172",,bct-ra-2008
+2009 (loi de finances complémentaire),833.5,,lfc-2009,"tableau C, p. 1830",,bct-ra-2009
+2011,722.4,700.0,lf-2011,"tableau C, p. 3483 et p. 3718",,

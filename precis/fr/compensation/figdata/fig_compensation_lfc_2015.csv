@@ -1,0 +1,15 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-11-17
+# séries (tunisia_data) : compensation-carburants-lfc-2015-facteurs
+# sources (citation) : @minfin-projet-lfc-2015
+# fiches : 
+# méthode/hypothèses : Décomposition avant exécution ; la dépense exécutée en 2015 est de 918,0 millions de dinars.
+# note : Du projet initial au projet révisé : les facteurs de la subvention des carburants en 2015 (millions de dinars courants)
+Grandeur,Ligne,Montant (millions de dinars courants),Source,Localisation
+Loi de finances pour 2015,départ,1826,minfin-projet-lfc-2015,§ 17 et 19
+"Prix du baril, de 95 à 62 dollars",facteur,-2244,minfin-projet-lfc-2015,§ 17 et 19
+"Cours du dollar, de 1,8 à 1,95 dinar",facteur,413,minfin-projet-lfc-2015,§ 17 et 19
+Programme d'ajustement des prix intérieurs non réalisé,facteur,356,minfin-projet-lfc-2015,§ 17 et 19
+Quantités importées,facteur,41,minfin-projet-lfc-2015,§ 17 et 19
+Séparation des opérations de commercialisation des hydrocarbures,facteur,894,minfin-projet-lfc-2015,§ 17 et 19
+Loi de finances complémentaire pour 2015,arrivée,1286,minfin-projet-lfc-2015,§ 17 et 19
+Écart,écart,-540,minfin-projet-lfc-2015,§ 17 et 19

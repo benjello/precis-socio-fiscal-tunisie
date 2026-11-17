@@ -114,6 +114,45 @@ Entre-temps, de 2017 à 2024, les grilles de 2017 et de 2019 sont des ajustement
 
 Le tarif suivi ici est celui de la basse tension résidentielle, celui des ménages. Ses grilles viennent de trois familles de sources : le *Journal officiel* jusqu'en 1992 ; des agences publiques ou un rapport extérieur pour cinq grilles de 1993 à 2003 ; les grilles de la STEG depuis 2004. Les prix d'une date ne se comparent pas tels quels à ceux d'une autre : la base fiscale change entre 1987 et 1991 — taxes comprises, puis hors taxe sur la valeur ajoutée —, et la définition des tranches et le mode de facturation changent en 2006, 2014, 2018 et 2022.
 
+Hors taxe sur la valeur ajoutée et dans la structure de 1984, la tranche économique vaut environ 266 millimes de 2025 en août 1992 et 194 en mai 2004 (valeurs calculées, non observées). Depuis la réforme de 2014, qui en fait un prix unique pour une consommation de 50 kWh par mois au plus, elle vaut environ 147 millimes de 2025 en mai 2014 et 76 en mai 2022. La tranche de plus de 500 kWh par mois vaut environ 685 millimes de 2025 en mai 2014, sur les seuls kilowattheures au-delà de 500, et 510 en mai 2022, sur toute la consommation de l'abonné qui dépasse ce seuil. Le @fig-compensation-eg-tarifs-bt trace chaque tranche à chaque date d'effet, de 1970 à 2022, en millimes courants ou en millimes de 2025 ; les grilles du *Journal officiel* et de la STEG, celles que relaient les agences publiques et celles qu'un rapport extérieur est seul à donner y sont distinguées.
+
+```{python}
+#| label: fig-compensation-eg-tarifs-bt
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import electricite as el
+el.figure(
+    "tarifs_bt",
+    caption=(
+        "Le tarif de l'électricité des ménages en basse tension, 1970-2022, par tranche et à chaque "
+        "date d'effet (millimes courants, puis millimes de 2025 calculés, par kWh)"),
+    note_lecture=(
+        "Chaque courbe est une tranche, en escalier : le prix vaut du jour d'effet de la grille à "
+        "celui de la suivante. Une couleur réunit des tranches successives, que la légende nomme ; "
+        "la courbe s'interrompt à chaque changement de structure du tarif — 1975, 1978, 1981, 1984, "
+        "2006, 2014, 2018, 2022 —, marqué d'un repère triangulaire dont l'infobulle dit la "
+        "réforme. Un repère marque aussi le 1er janvier 1991 : les prix sont taxes comprises "
+        "jusqu'en 1987 et hors taxe sur la valeur ajoutée à partir de 1991, et les niveaux ne se "
+        "comparent pas de part et d'autre. La marque du point dit la famille de la source : rond "
+        "plein, *Journal officiel* ou STEG ; carré creux, agence publique qui relaie la grille de la "
+        "STEG (1994, 2000, 2003) ; triangle creux, rapport extérieur seul (ESMAP pour octobre 1993 "
+        "et août 2001, Banque africaine de développement pour juillet 2005). Le jour d'effet des "
+        "grilles d'octobre 1993 et de juin 1994 n'est pas établi. Pour avril 2003, la tranche "
+        "normale tracée est celle de la FIPA, 94 millimes ; une page de la STEG donne 90."
+        "\n\n"
+        "Une bande grise couvre une période où le tarif est relevé sans que la grille des ménages "
+        "soit établie — novembre 1978 à août 1981, où le prix unique de l'éclairage n'est pas "
+        "établi ; juillet 2007 à septembre 2008 ; mars 2013 à mai 2014 : le niveau précédent s'y "
+        "arrête et aucune valeur n'est reconstituée. Les tranches intermédiaires du tarif dégressif "
+        "de 1970, le second prix des petits abonnés de 2006 à 2012, égal à celui des autres abonnés "
+        "de 1 à 300 kWh, et ces dates sans grille sont dans l'onglet « Données ». Les prix ne "
+        "comprennent ni la redevance fixe ni la taxe au profit du Fonds de transition énergétique. "
+        "Deux vues : millimes courants, ou millimes de 2025, calculés ; la colonne valeur_2025 de "
+        "l'onglet « Données » donne la valeur en monnaie de 2025 de chaque ligne. Sans rapport au PIB."
+        "\n\n" + el.regle_2025()))
+```
+
 :::: {.chronologie-repliable titre="Tarif de l'électricité des ménages, grille par grille, 1970-2022 : prix en millimes par kWh, d'après le Journal officiel puis la STEG"}
 
 | Date d'effet | Portée | Structure du tarif | Prix (millimes par kWh) | Texte |
@@ -147,6 +186,8 @@ Jusqu'en 1975, le tarif est dégressif : le kilowattheure coûte moins cher à m
 | 1^er^ mai 2022 | étape | 62 | 51-100 : 96 ; puis prix unique selon la tranche atteinte : 101-200 : 176 ; 201-300 : 218 ; 301-500 : 341 ; plus de 500 : 414 | [@steg-grille-2022-05-01] |
 
 : Le tarif de l'électricité en basse tension pour les ménages, 2004-2022, à chaque date d'effet (millimes par kWh, hors taxes). Source : grilles tarifaires de la STEG, chacune portant sa date d'effet. Les grilles de 2008 à 2022 sont établies sur les documents de la STEG ; celles de 2004, 2005 et 2006 le sont d'après les pages du site de la STEG conservées aux archives du web. La redevance fixe passe de 150 millimes par kVA et par mois en 2004 à 700 depuis 2018. La grille de 2022 est encore en vigueur en 2024. Elle porte la taxe au profit du Fonds de transition énergétique, que la loi de finances pour 2019 institue sur l'électricité à 1 millime par kWh et que la loi de finances pour 2024 porte à 5 millimes à compter du 1^er^ janvier 2024 ; en sont exemptés les abonnés de la tranche économique qui ne dépassent pas 100 kWh par mois (@sec-compensation-eg-etat-du-droit). Un tarif du 1^er^ juillet 2005 — 70 millimes jusqu'à 50 kWh par mois, 108 au-delà — n'est connu que par un rapport extérieur, celui de la Banque africaine de développement [@bad-2006-rap-electricite-vi]. {#tbl-compensation-eg-grilles-steg}
+
+<!-- TODO (documentaliste) : grilles des ménages de 1980 (30 juin et 30 septembre 1980, éclairage à 50 millimes) présentes au tbl-compensation-eg-textes-1961-1982 mais absentes du tbl-compensation-eg-grilles-jo, que la série steg-tarifs-basse-tension transcrit : la figure laisse un blanc de novembre 1978 à août 1981 ; à verser au tableau des grilles après lecture des arrêtés. -->
 
 <!-- TODO (documentaliste) : grille basse tension du 1er janvier 2014 et grille résidentielle de mars 2013 ; contradiction de juin 2010 entre la grille et le rapport annuel de la STEG — docs/notes/compensation-tarifs-mt-ht-gaz.md, § 10, et compensation-electricite-gaz-objets-des-reformes.md, § 10. -->
 
@@ -271,6 +312,39 @@ Le gaz des ménages est le gaz naturel distribué en basse pression ; son tarif 
 - **Des hausses sur les fortes consommations.** Depuis 2014, la première tranche ne bouge presque plus — de 23,5 à 24,3 millimes la thermie —, tandis que la dernière double, de 42,2 à 86,7 : comme pour l'électricité, les hausses portent sur les fortes consommations.
 - **La taxe au profit du Fonds de transition énergétique** porte aussi sur le gaz naturel : 0,25 millime par thermie depuis [la loi de finances pour 2019](#r-eg-fte-2019), 1,25 depuis [celle pour 2024](#r-eg-fte-2024) ; en sont exonérés les abonnés de la basse pression dont la consommation ne dépasse pas 300 thermies par mois.
 
+En monnaie de 2025 (valeurs calculées, non observées), la première tranche passe d'environ 57 millimes la thermie en septembre 2008 à 30 en mai 2022, et la quatrième d'environ 83 en mai 2014 à 107 en mai 2022. Le @fig-compensation-eg-tarifs-gaz-bp trace chaque tranche à chaque date d'effet, de 1987 à 2022, en millimes courants ou en millimes de 2025.
+
+```{python}
+#| label: fig-compensation-eg-tarifs-gaz-bp
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import electricite as el
+el.figure(
+    "tarifs_gaz_bp",
+    caption=(
+        "Le tarif du gaz naturel en basse pression, 1987-2022, par tranche et à chaque date d'effet "
+        "(millimes courants, puis millimes de 2025 calculés, par thermie)"),
+    note_lecture=(
+        "Chaque courbe est une tranche, en escalier : le prix vaut du jour d'effet de la grille à "
+        "celui de la suivante. Un prix unique jusqu'en 2004, trois tranches à partir du 1er "
+        "septembre 2008, quatre à partir du 1er mai 2014 ; à partir du 1er septembre 2018, les "
+        "tranches tracées sont celles des ménages. Les courbes ne traversent pas ces changements, "
+        "marqués d'un repère triangulaire, ni le 1er janvier 1991 : le prix de 1987 comprend la taxe "
+        "à la production, ceux de 1991 et après sont hors taxes. Le prix de juin 1994, 17,1 millimes "
+        "(losange creux), est relayé sans date d'effet par les agences publiques et rattaché à juin "
+        "1994 par un calcul, non par une lecture."
+        "\n\n"
+        "Une bande grise couvre une période sans grille établie de la basse pression : de 1993, "
+        "année d'une hausse dont le mois n'est pas donné et que le 1er janvier ouvre par convention, "
+        "à juin 1994 ; de mai 2004, grilles par mètre cube non reprises, à septembre 2008 ; de "
+        "septembre 2012 à mai 2014. Le niveau précédent s'y arrête et aucune valeur n'est "
+        "reconstituée ; ces dates sont dans l'onglet « Données », chacune avec la pièce qui la date. "
+        "Deux vues : millimes courants, ou millimes de 2025, calculés ; la colonne valeur_2025 de "
+        "l'onglet « Données » donne la valeur en monnaie de 2025 de chaque ligne. Sans rapport au PIB."
+        "\n\n" + el.regle_2025()))
+```
+
 :::: {.chronologie-repliable titre="Tarif du gaz naturel en basse pression, grille par grille, 1987-2022 : prix en millimes par thermie"}
 
 | Date d'effet | Portée | Tarif (millimes par thermie) | Source |
@@ -288,6 +362,8 @@ Le gaz des ménages est le gaz naturel distribué en basse pression ; son tarif 
 | 1^er^ mai 2022 | ajustement | ménages : 24,3 ; 38,7 ; 58,5 ; 86,7 | [@steg-grille-2022-05-01] |
 
 : Le tarif du gaz naturel en basse pression, 1987-2022, à chaque date d'effet connue (millimes par thermie). Sources : *Journal officiel* jusqu'en 1992 (taxe à la production comprise en 1987) ; grilles de la STEG ensuite, hors taxes, transcrites des documents de l'entreprise comme au @tbl-compensation-eg-grilles-steg. Les grilles de 2004 et de 2006, exprimées par mètre cube, et celle de mars 2013 ne sont pas reprises. À partir de 2018, les grilles distinguent les ménages des autres abonnés. Le prix de 17,1 millimes est relayé sans date d'effet par les pages des agences publiques, de 1999 à 2003 ; il est rattaché à juin 1994 par un calcul fait ici, non par une lecture : la Banque mondiale date de 1993 et de juin 1994 des hausses de 8,6 % et de 4,7 % du gaz des ménages [@bm-1998-icr-17374, § 31], et 15,1 × 1,086 × 1,047 donne 17,2. La même page de 2003 porte encore 17,1 : aucune grille propre du gaz n'est établie en 2000, 2001 et 2003. {#tbl-compensation-eg-gaz}
+
+<!-- TODO (documentaliste) : grille du gaz basse pression du 1er septembre 2012 (+8 % sur le gaz selon le rapport annuel de la STEG) et mois de la hausse de 1993 du gaz des ménages (+8,6 % selon la Banque mondiale) : la figure arrête le prix de 1992 au 1er janvier 1993 par convention (scripts/serie_tarifs_gaz.py). -->
 
 <!-- TODO (documentaliste) : grilles du gaz basse pression de 2008 à 2019 à confronter aux documents de la STEG  — docs/notes/compensation-tarifs-1993-2004.md et compensation-tarifs-mt-ht-gaz.md, § 10. -->
 
@@ -319,7 +395,7 @@ Le gaz se lit de la même façon : une redevance d'abonnement, une redevance de 
 
 ### La moyenne tension
 
-De juin 1994 à octobre 2022, le kilowattheure de jour de la moyenne tension passe de 47 à 290 millimes hors taxes et celui de nuit de 30 à 222, sur trois familles de postes horaires qui ne se raccordent pas. En monnaie de 2025 (valeurs calculées, non observées), le jour passe d'environ 195 à 358 millimes et la nuit d'environ 124 à 274 : la hausse du prix courant est en grande partie celle des prix. Le @fig-compensation-eg-tarifs-mt trace chaque poste à chaque date d'effet, en millimes courants ou en millimes de 2025 ; les trois tableaux de la moyenne tension de 1994 à 2022 sont repliés sous la figure.
+De juin 1994 à octobre 2022, le kilowattheure de jour de la moyenne tension passe de 47 à 290 millimes hors taxes et celui de nuit de 30 à 222, sur trois familles de postes horaires qui ne se raccordent pas. En monnaie de 2025 (valeurs calculées, non observées), le jour passe d'environ 195 à 358 millimes et la nuit d'environ 124 à 274 : la hausse du prix courant est en grande partie celle des prix. Avant 1994, les tarifs sont ceux des arrêtés et de la décision publiés au *Journal officiel* : le kilowattheure de jour vaut 11,3 millimes, taxes comprises, en avril 1975, et 40 millimes hors taxes en août 1992, soit environ 183 et 181 millimes de 2025. Le @fig-compensation-eg-tarifs-mt trace chaque poste à chaque date d'effet, de 1975 à 2022, en millimes courants ou en millimes de 2025 ; les quatre tableaux de la moyenne tension sont repliés sous la figure.
 
 ```{python}
 #| label: fig-compensation-eg-tarifs-mt
@@ -330,25 +406,36 @@ from figures import electricite as el
 el.figure(
     "tarifs_mt",
     caption=(
-        "Le tarif de l'électricité en moyenne tension, juin 1994 - octobre 2022, par poste horaire "
-        "et à chaque date d'effet (millimes courants, puis millimes de 2025 calculés, par kWh, "
-        "hors taxes)"),
+        "Le tarif de l'électricité en moyenne tension, avril 1975 - octobre 2022, par poste horaire "
+        "et à chaque date d'effet (millimes courants, puis millimes de 2025 calculés, par kWh)"),
     note_lecture=(
         "Chaque courbe est un poste horaire, en escalier : le prix vaut du jour d'effet de la grille "
         "à celui de la suivante. Trois familles de postes se succèdent et aucune ne se raccorde à la "
-        "précédente : trois postes (jour, pointe, nuit) de juin 1994 à août 2000 ; quatre postes (jour, "
+        "précédente : trois postes (jour, pointe, nuit) d'avril 1975 à août 2000 ; quatre postes (jour, "
         "pointe, soir, nuit) du 15 août 2000 au 1er mai 2014 ; quatre postes redéfinis (jour, pointe du "
-        "matin en été, pointe du soir, nuit) depuis le 1er mai 2014, après la réforme de 2014. Les deux "
-        "repères triangulaires marquent ces ruptures ; le jour du passage de trois à quatre postes "
-        "n'est pas établi ; chaque courbe s'arrête avant la rupture, qu'elle ne traverse pas. "
+        "matin en été, pointe du soir, nuit) depuis le 1er mai 2014, après la réforme de 2014. Un "
+        "repère triangulaire marque chacune de ces ruptures, et un autre le 1er janvier 1991 : les prix sont taxes comprises "
+        "jusqu'en 1987 et hors taxe sur la valeur ajoutée à partir de 1991, et les niveaux ne se "
+        "comparent pas de part et d'autre. Le jour du passage de trois à quatre postes n'est pas "
+        "établi ; chaque courbe s'arrête avant la rupture, qu'elle ne traverse pas. Les valeurs de "
+        "1975 à 1990 viennent d'une première transcription des arrêtés ; seule la grille de 1992 est "
+        "établie deux fois sur le texte. "
         "Le mois de la grille de juin 1994 vient d'un rapport extérieur, et son jour n'est pas établi. "
         "En 2001, la source ne donne ni le soir ni la nuit : ces deux courbes s'interrompent à la "
-        "grille du 1er août 2001 et reprennent le 1er avril 2003. Le tarif uniforme, défini de la même "
-        "façon sur toute la période, est tracé d'un seul trait. Le tarif de secours de 1994 à 2003 et "
-        "la prime de puissance (en millimes par kW et par mois) sont dans l'onglet « Données ». La "
-        "dernière grille établie est celle du 1er octobre 2022. Deux vues : millimes courants, ou "
-        "millimes de 2025, calculés ; la colonne valeur_2025 de l'onglet « Données » donne la valeur "
-        "en monnaie de 2025 de chaque ligne. Sans rapport au PIB."
+        "grille du 1er août 2001 et reprennent le 1er avril 2003."
+        "\n\n"
+        "Une bande grise s'ouvre à une date de relèvement que donne une pièce du chapitre, pour la "
+        "moyenne tension, pour l'ensemble des tarifs ou pour la basse tension, sans que la grille "
+        "de la moyenne tension soit établie : de janvier à août 1981, d'octobre 1993 à juin 1994, de "
+        "février 2005 à janvier 2006, de juillet 2007 à septembre 2008, de janvier à mai 2014. Le "
+        "niveau précédent s'y arrête et aucune valeur n'est reconstituée ; ces dates sont dans "
+        "l'onglet « Données », chacune avec la pièce qui la date. Le tarif uniforme est tracé "
+        "à partir de 1981, où il devient un prix unique ; ses deux tranches de 1975 et de 1978, "
+        "le tarif de secours de 1994 à 2003 et la prime de puissance (en millimes par kW et par "
+        "mois) sont dans l'onglet « Données ». La dernière grille établie est celle du 1er octobre "
+        "2022. Deux vues : millimes courants, ou millimes de 2025, calculés ; la colonne valeur_2025 "
+        "de l'onglet « Données » donne la valeur en monnaie de 2025 de chaque ligne. Sans rapport "
+        "au PIB."
         "\n\n" + el.regle_2025()))
 ```
 
@@ -414,6 +501,45 @@ Trois tableaux se suivent : les arrêtés et la décision publiés au *Journal o
 
 ### La haute tension
 
+De novembre 1978 à mai 2022, le kilowattheure de jour de la haute tension passe de 15 millimes, taxes comprises, à 238 hors taxes, et celui de nuit de 8 à 179. En monnaie de 2025 (valeurs calculées, non observées), le jour passe d'environ 205 à 293 millimes et la nuit d'environ 109 à 221. Le @fig-compensation-eg-tarifs-ht trace chaque poste à chaque date d'effet, en millimes courants ou en millimes de 2025.
+
+```{python}
+#| label: fig-compensation-eg-tarifs-ht
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import electricite as el
+el.figure(
+    "tarifs_ht",
+    caption=(
+        "Le tarif de l'électricité en haute tension, novembre 1978 - mai 2022, par poste horaire et "
+        "à chaque date d'effet (millimes courants, puis millimes de 2025 calculés, par kWh)"),
+    note_lecture=(
+        "Chaque courbe est un poste horaire, en escalier : le prix vaut du jour d'effet de la grille "
+        "à celui de la suivante. Les familles de postes se succèdent sans se raccorder : trois postes "
+        "(jour, pointe, nuit) de novembre 1978 à août 2000 ; de 2000 à 2003, deux tarifs généraux "
+        "saisonniers qui valent la même année, quatre postes du 1er juin au 31 août (trait tireté) "
+        "et trois postes du 1er septembre au 31 mai (trait plein), d'après les pages de la FIPA ; "
+        "quatre postes (jour, pointe, soir, nuit) de mai 2004 à mai 2014 ; quatre postes redéfinis "
+        "(jour, pointe du matin en été, pointe du soir, nuit) depuis le 1er mai 2014. Un repère "
+        "triangulaire marque les ruptures de 2000 et de 2014, et le 1er janvier 1991 : les prix sont "
+        "taxes comprises jusqu'en 1987 et hors taxe sur la valeur ajoutée à partir de 1991, et les "
+        "niveaux ne se comparent pas de part et d'autre. Les valeurs de 1978 à 1990 viennent d'une "
+        "première transcription des arrêtés ; seule la grille de 1992 est établie deux fois sur le "
+        "texte. Le jour d'effet de la grille de juin 1994 n'est pas établi."
+        "\n\n"
+        "Une bande grise s'ouvre à une date de relèvement que donne une pièce du chapitre, pour la "
+        "haute tension, pour l'ensemble des tarifs ou pour la basse tension, sans que la grille de "
+        "la haute tension soit établie : de janvier à août 1981, d'octobre 1993 à juin 1994, de février 2005 "
+        "à janvier 2006, de juillet 2007 à septembre 2008, de septembre 2012 à mars 2013, de janvier "
+        "à mai 2014. Le niveau précédent s'y arrête et aucune valeur n'est reconstituée ; ces dates "
+        "sont dans l'onglet « Données », chacune avec la pièce qui la date. Le tarif de secours et la "
+        "prime de puissance, dans l'unité de chaque texte, sont dans l'onglet « Données ». Deux "
+        "vues : millimes courants, ou millimes de 2025, calculés ; la colonne valeur_2025 de "
+        "l'onglet « Données » donne la valeur en monnaie de 2025 de chaque ligne. Sans rapport au PIB."
+        "\n\n" + el.regle_2025()))
+```
+
 Deux singularités, que les pièces donnent telles quelles.
 
 - **La haute tension n'est pas relevée en 2019.** La page de la haute tension datée du 1^er^ juin 2019 porte les prix du 1^er^ septembre 2018, alors que la moyenne tension est relevée à cette date.
@@ -464,6 +590,8 @@ Deux singularités, que les pièces donnent telles quelles.
 
 : Le tarif de l'électricité en haute tension, 2004-2022 (millimes par kWh, hors taxes ; prime en millimes par kW et par mois). Source : STEG, pages de son site conservées aux archives du web, où chaque grille porte sa date d'effet ; aucun document tarifaire de la haute tension n'est établi autrement. Le sens des colonnes change le 1^er^ mai 2014 : les lignes d'avant et d'après ne s'alignent pas. La grille de la haute tension du 1^er^ septembre 2012 n'est pas établie. {#tbl-compensation-eg-ht-2004}
 
+<!-- TODO (documentaliste) : grilles de la moyenne et de la haute tension du 31 janvier 1981 (arrêté du 23 janvier 1981, « haute tension et moyenne tension relevées », absentes des tbl-compensation-eg-mt-jo et -ht-jo), du 1er février et du 1er juillet 2005, et des ajustements de 2007 et d'avril 2008 ; savoir si la hausse du 1er janvier 2014 que date le rapport de contrôle (p. 75) touche la moyenne et la haute tension : les figures des tarifs MT et HT arrêtent le niveau précédent à ces dates (bandes grises, lignes « grille non établie » de scripts/serie_tarifs_mt.py et serie_tarifs_ht.py). -->
+
 <!-- TODO (bibliographe) : la clé steg-grille-2018-05-01 décrit la table de la moyenne tension et du gaz ; la ligne de la haute tension du 1er mai 2018 vient d'une page archivée distincte (tarifs_ht.html, capture 20180706212555), à ajouter à sa note ou à verser. -->
 
 ::::
@@ -471,6 +599,42 @@ Deux singularités, que les pièces donnent telles quelles.
 ### Le gaz en moyenne et haute pression
 
 De juin 2010 à mai 2022, le prix du gaz en moyenne pression passe de 25,30 à 71,1 millimes la thermie. Le 1^er^ mai 2014, la haute pression cesse d'être indexée sur le fuel lourd : la formule laisse la place à un prix fixe, de 35,8 à 52,5 millimes la thermie selon le niveau de consommation.
+
+En monnaie de 2025 (valeurs calculées, non observées), le prix de la moyenne pression, à son premier niveau de débit, passe d'environ 61 millimes la thermie en juin 2010 à 88 en mai 2022 ; celui de la haute pression, à son premier niveau, d'environ 70 en mai 2014 à 75 en mai 2022. Le @fig-compensation-eg-tarifs-gaz-mp-hp trace ces prix à chaque date d'effet, de 1987 à 2022, en millimes courants ou en millimes de 2025.
+
+```{python}
+#| label: fig-compensation-eg-tarifs-gaz-mp-hp
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import electricite as el
+el.figure(
+    "tarifs_gaz_mp_hp",
+    caption=(
+        "Le tarif du gaz naturel en moyenne et haute pression, 1987-2022, par niveau de débit et à "
+        "chaque date d'effet (millimes courants, puis millimes de 2025 calculés, par thermie)"),
+    note_lecture=(
+        "Chaque courbe est un niveau de débit, en escalier : le prix vaut du jour d'effet de la "
+        "grille à celui de la suivante. La moyenne pression a un prix unique jusqu'en 2000, deux "
+        "niveaux de débit à partir du 1er août 2004. Tant que le prix de la haute pression est une "
+        "formule indexée sur le fuel lourd — un dixième du prix hors taxe de la tonne de fuel lourd, "
+        "diminué ou augmenté d'une constante —, il n'a pas de valeur fixe : une barre hachurée en "
+        "marque la période, jusqu'au 1er septembre 2008 pour le premier niveau, jusqu'au 1er mai "
+        "2014 au-delà de 2 000 tep par mois ; les formules sont dans l'onglet « Données ». Un repère "
+        "triangulaire marque la réforme de 2014 et le 1er janvier 1991 : le prix de 1987 comprend la "
+        "taxe à la production, ceux de 1991 et après sont hors taxes. Le prix de juin 1994 de la "
+        "moyenne pression, 14 millimes (losange creux), est rattaché à cette date par un calcul, non "
+        "par une lecture."
+        "\n\n"
+        "Une bande grise couvre une période sans aucune grille établie : de 1993, année d'une hausse "
+        "dont le mois n'est pas donné et que le 1er janvier ouvre par convention, à juin 1994 ; de "
+        "juillet 2007 à septembre 2008. Les grilles de la moyenne pression de septembre 2012 et de "
+        "mars 2013 ne sont pas établies : sa courbe s'interrompt de septembre 2012 à mai 2014. Aucune "
+        "valeur n'est reconstituée. Deux vues : millimes courants, ou millimes de 2025, calculés ; la "
+        "colonne valeur_2025 de l'onglet « Données » donne la valeur en monnaie de 2025 de chaque "
+        "ligne. Sans rapport au PIB."
+        "\n\n" + el.regle_2025()))
+```
 
 :::: {.chronologie-repliable titre="Tarif du gaz naturel en moyenne et haute pression, grille par grille, 1987-2022 : prix par thermie et formule indexée sur le fuel lourd"}
 
@@ -502,7 +666,7 @@ De juin 2010 à mai 2022, le prix du gaz en moyenne pression passe de 25,30 à 7
 
 ## La longue période : subvention, coût et prix de vente {#sec-compensation-eg-longue-periode}
 
-Trois ensembles de séries suivent sur la longue période l'écart entre le tarif et le coût : le prix auquel la STEG achète son gaz et les quantités qu'elle en prélève, par source ; la subvention qu'elle reçoit, d'après le budget et les comptes de l'entreprise ; le coût et le prix de vente du kilowattheure, d'après des rapports extérieurs, le rapport de contrôle de 2014, les comptes de la STEG et l'Observatoire national de l'énergie et des mines. Les sources ne couvrent pas les mêmes années et ne se raccordent pas : chaque figure garde ses sources séparées, en dinars ou en millimes courants, sans rapport au PIB.
+Trois ensembles de séries suivent sur la longue période l'écart entre le tarif et le coût : le prix auquel la STEG achète son gaz et les quantités qu'elle en prélève, par source ; la subvention qu'elle reçoit, d'après le budget et les comptes de l'entreprise ; le coût et le prix de vente du kilowattheure, d'après des rapports extérieurs, le rapport de contrôle de 2014, les comptes de la STEG et l'Observatoire national de l'énergie et des mines. Les sources ne couvrent pas les mêmes années et ne se raccordent pas : chaque figure garde ses sources séparées, en dinars ou en millimes courants et, pour les prix et les coûts, en monnaie de 2025.
 
 ### Le gaz acheté par la STEG : prix et quantités {#sec-compensation-eg-gaz-achat}
 
@@ -669,7 +833,7 @@ el.figure(
 
 ### Coût et prix de vente du kilowattheure {#sec-compensation-eg-cout}
 
-Deux sources officielles mettent en regard ce que l'électricité coûte et ce qu'elle est vendue ; un calcul fait ici sur les rapports annuels de la STEG donne la recette moyenne par niveau de tension ; un rapport extérieur, donné à part, couvre des années antérieures. Les sources ne couvrent pas les mêmes années et ne se raccordent pas. Le @fig-compensation-eg-cout-prix-kwh les met en regard de 1994 à 2025, chacune dans sa couleur ; les tableaux qui suivent donnent les valeurs de trois d'entre elles.
+Deux sources officielles mettent en regard ce que l'électricité coûte et ce qu'elle est vendue ; un calcul fait ici sur les rapports annuels de la STEG donne la recette moyenne par niveau de tension ; un rapport extérieur, donné à part, couvre des années antérieures. Les sources ne couvrent pas les mêmes années et ne se raccordent pas. Le @fig-compensation-eg-cout-prix-kwh les met en regard de 1994 à 2025, chacune dans sa couleur, en millimes courants ou en millimes de 2025 ; les tableaux qui suivent donnent les valeurs de trois d'entre elles. En monnaie de 2025 (valeurs calculées, non observées), le prix de vente moyen reste, selon les sources, entre environ 217 et 364 millimes par kWh ; le coût de revient passe d'environ 216 à 250 millimes de 1996 à 2004, selon l'ANER et la Banque africaine de développement, à 569 en 2012 selon le rapport de contrôle et 582 en 2022 selon l'Observatoire.
 
 ```{python}
 #| label: fig-compensation-eg-cout-prix-kwh
@@ -681,7 +845,7 @@ el.figure(
     "cout_prix_kwh",
     caption=(
         "Le coût de revient et le prix de vente moyen hors taxes du kilowattheure de la STEG, "
-        "1994-2025, par famille de source (millimes courants par kWh)"),
+        "1994-2025, par famille de source (millimes courants, puis millimes de 2025 calculés, par kWh)"),
     note_lecture=(
         "Deux cadres de même échelle : en haut le coût de revient, en bas le prix de vente moyen hors "
         "taxes, toutes tensions confondues. Chaque couleur est une source, et aucune ne se raccorde à "
@@ -697,8 +861,10 @@ el.figure(
         "partir de 2007 la STEG le comptabilise à sa valeur économique (note 11 des états financiers "
         "de 2014, p. 23) ; les coûts d'avant et d'après ne se comparent donc pas. La décomposition du "
         "coût de 2008 à 2012 — combustibles, personnel, charges financières et assurances, "
-        "amortissements, divers — est dans l'onglet « Données ». Montants en millimes courants, sans "
-        "rapport au PIB."))
+        "amortissements, divers — est dans l'onglet « Données ». Deux vues : millimes courants, ou "
+        "millimes de 2025, calculés ; la colonne valeur_2025 de l'onglet « Données » donne la valeur "
+        "en monnaie de 2025 de chaque ligne. Sans rapport au PIB."
+        "\n\n" + el.regle_2025()))
 ```
 
 #### 2008-2012, selon le rapport de contrôle de 2014
@@ -737,6 +903,31 @@ L'Observatoire national de l'énergie et des mines publie chaque année, dans se
 : Le prix de vente global hors taxes et le coût de revient de l'électricité et du gaz, 2017-2025. Source : Observatoire national de l'énergie et des mines, *Chiffres clés de l'énergie*, éditions 2018 à 2025, données provisoires avant audit [@one-chiffres-cles-energie]. Une case vide est une valeur que la publication ne donne pas ou qui n'est pas établie ici. Les éditions successives révisent certaines valeurs d'une décimale. {#tbl-compensation-eg-cout-one}
 
 De 2022 à 2025, l'électricité est vendue entre 58 % et 64 % de son coût de revient selon ces données, et le gaz à moins de la moitié. L'Observatoire précise que ce « résultat unitaire » est le « différentiel entre le prix de vente et le coût de revient » et qu'il « n'est pas forcément identique à la subvention budgétaire » : l'écart du tableau ne se lit donc pas comme la subvention versée à la STEG.
+
+En monnaie de 2025 (valeurs calculées, non observées), le prix de vente du gaz passe d'environ 788 dinars la tonne équivalent pétrole en 2017 à 645 en 2025, et son coût de revient d'environ 1 092 en 2017 à 2 005 en 2023, puis 1 498 en 2025. Le @fig-compensation-eg-cout-prix-gaz trace les deux grandeurs, en dinars courants ou en dinars de 2025.
+
+```{python}
+#| label: fig-compensation-eg-cout-prix-gaz
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import electricite as el
+el.figure(
+    "cout_prix_gaz",
+    caption=(
+        "Le prix de vente global hors taxes et le coût de revient du gaz naturel selon "
+        "l'Observatoire national de l'énergie et des mines, 2017-2025 (dinars courants, puis dinars "
+        "de 2025 calculés, par tonne équivalent pétrole)"),
+    note_lecture=(
+        "Les valeurs sont celles des *Chiffres clés de l'énergie*, éditions 2018 à 2025, données "
+        "provisoires avant audit ; les éditions successives révisent certaines valeurs d'une "
+        "décimale. La bande grise couvre 2019, 2020 et 2021, pour lesquelles aucun coût de revient "
+        "n'est publié : aucune valeur n'y est reconstituée. L'écart entre les deux courbes n'est pas "
+        "la subvention budgétaire. Deux vues : dinars courants, ou dinars de 2025, calculés ; la "
+        "colonne valeur_2025 de l'onglet « Données » donne la valeur en monnaie de 2025 de chaque "
+        "ligne. Sans rapport au PIB."
+        "\n\n" + el.regle_2025()))
+```
 
 #### La recette moyenne par kilowattheure : un calcul
 

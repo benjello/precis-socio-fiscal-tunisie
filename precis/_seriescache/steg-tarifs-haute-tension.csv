@@ -1,0 +1,138 @@
+tarif,famille,poste,date_effet,jour_etabli,valeur,unite,etat,portee,source,page,rupture,rupture_annee,remarque
+general,trois_postes,jour,1978-11-30,oui,15,"millimes courants par kWh, taxes comprises",lu,mise en place,arrete-1978-11-27-tarifs-electricite-gaz,,,,Valeur d'une première transcription de l'arrêté ; seule la grille de 1992 est établie deux fois sur le texte.
+general,trois_postes,pointe,1978-11-30,oui,22,"millimes courants par kWh, taxes comprises",lu,mise en place,arrete-1978-11-27-tarifs-electricite-gaz,,,,Valeur d'une première transcription de l'arrêté ; seule la grille de 1992 est établie deux fois sur le texte.
+general,trois_postes,nuit,1978-11-30,oui,8,"millimes courants par kWh, taxes comprises",lu,mise en place,arrete-1978-11-27-tarifs-electricite-gaz,,,,Valeur d'une première transcription de l'arrêté ; seule la grille de 1992 est établie deux fois sur le texte.
+general,trois_postes,prime_puissance,1978-11-30,oui,5,dinars par kW et par an,lu,mise en place,arrete-1978-11-27-tarifs-electricite-gaz,,,,
+general,,grille_non_etablie,1981-01-31,oui,,,grille_non_etablie,ajustement,arrete-1981-01-23-tarifs-electricite,,,,Haute et moyenne tension relevées le 31 janvier 1981 (tbl-compensation-eg-textes-1961-1982) ; la grille n'est pas reprise au tableau de la haute tension.
+general,trois_postes,jour,1981-08-31,oui,26,"millimes courants par kWh, taxes comprises",lu,ajustement,arrete-1981-09-01-tarifs-electricite-gaz,,,,Valeur d'une première transcription de l'arrêté ; seule la grille de 1992 est établie deux fois sur le texte.
+general,trois_postes,pointe,1981-08-31,oui,37,"millimes courants par kWh, taxes comprises",lu,ajustement,arrete-1981-09-01-tarifs-electricite-gaz,,,,Valeur d'une première transcription de l'arrêté ; seule la grille de 1992 est établie deux fois sur le texte.
+general,trois_postes,nuit,1981-08-31,oui,20,"millimes courants par kWh, taxes comprises",lu,ajustement,arrete-1981-09-01-tarifs-electricite-gaz,,,,Valeur d'une première transcription de l'arrêté ; seule la grille de 1992 est établie deux fois sur le texte.
+general,trois_postes,prime_puissance,1981-08-31,oui,6,dinars par kW et par an,lu,ajustement,arrete-1981-09-01-tarifs-electricite-gaz,,,,
+general,trois_postes,jour,1982-09-29,oui,31,"millimes courants par kWh, taxes comprises",lu,ajustement,arrete-1982-09-30-tarifs-electricite-gaz,,,,Valeur d'une première transcription de l'arrêté ; seule la grille de 1992 est établie deux fois sur le texte.
+general,trois_postes,pointe,1982-09-29,oui,46,"millimes courants par kWh, taxes comprises",lu,ajustement,arrete-1982-09-30-tarifs-electricite-gaz,,,,Valeur d'une première transcription de l'arrêté ; seule la grille de 1992 est établie deux fois sur le texte.
+general,trois_postes,nuit,1982-09-29,oui,24,"millimes courants par kWh, taxes comprises",lu,ajustement,arrete-1982-09-30-tarifs-electricite-gaz,,,,Valeur d'une première transcription de l'arrêté ; seule la grille de 1992 est établie deux fois sur le texte.
+general,trois_postes,prime_puissance,1982-09-29,oui,12,dinars par kW et par an,lu,ajustement,arrete-1982-09-30-tarifs-electricite-gaz,,,,
+general,trois_postes,jour,1984-05-31,oui,33,"millimes courants par kWh, taxes comprises",lu,ajustement,arrete-1984-06-04-tarifs-electricite-gaz,,,,Valeur d'une première transcription de l'arrêté ; seule la grille de 1992 est établie deux fois sur le texte.
+general,trois_postes,pointe,1984-05-31,oui,58,"millimes courants par kWh, taxes comprises",lu,ajustement,arrete-1984-06-04-tarifs-electricite-gaz,,,,Valeur d'une première transcription de l'arrêté ; seule la grille de 1992 est établie deux fois sur le texte.
+general,trois_postes,nuit,1984-05-31,oui,25,"millimes courants par kWh, taxes comprises",lu,ajustement,arrete-1984-06-04-tarifs-electricite-gaz,,,,Valeur d'une première transcription de l'arrêté ; seule la grille de 1992 est établie deux fois sur le texte.
+general,trois_postes,prime_puissance,1984-05-31,oui,15,dinars par kW et par an,lu,ajustement,arrete-1984-06-04-tarifs-electricite-gaz,,,,
+general,trois_postes,jour,1987-06-16,oui,34,"millimes courants par kWh, taxes comprises",lu,ajustement,arrete-1987-06-08-tarifs-electricite-gaz,,,,Valeur d'une première transcription de l'arrêté ; seule la grille de 1992 est établie deux fois sur le texte.
+general,trois_postes,pointe,1987-06-16,oui,68,"millimes courants par kWh, taxes comprises",lu,ajustement,arrete-1987-06-08-tarifs-electricite-gaz,,,,Valeur d'une première transcription de l'arrêté ; seule la grille de 1992 est établie deux fois sur le texte.
+general,trois_postes,nuit,1987-06-16,oui,26,"millimes courants par kWh, taxes comprises",lu,ajustement,arrete-1987-06-08-tarifs-electricite-gaz,,,,Valeur d'une première transcription de l'arrêté ; seule la grille de 1992 est établie deux fois sur le texte.
+general,trois_postes,prime_puissance,1987-06-16,oui,15,dinars par kW et par an,lu,ajustement,arrete-1987-06-08-tarifs-electricite-gaz,,,,
+general,trois_postes,jour,1991-01-01,oui,33,"millimes courants par kWh, hors taxes",lu,ajustement,arrete-1990-12-19-tarifs-electricite-gaz,,"Prix taxes comprises jusqu'en 1987, hors taxe sur la valeur ajoutée à partir du 1er janvier 1991 : les niveaux ne se comparent pas de part et d'autre",1991,Valeur d'une première transcription de l'arrêté ; seule la grille de 1992 est établie deux fois sur le texte.
+general,trois_postes,pointe,1991-01-01,oui,68,"millimes courants par kWh, hors taxes",lu,ajustement,arrete-1990-12-19-tarifs-electricite-gaz,,,,Valeur d'une première transcription de l'arrêté ; seule la grille de 1992 est établie deux fois sur le texte.
+general,trois_postes,nuit,1991-01-01,oui,25,"millimes courants par kWh, hors taxes",lu,ajustement,arrete-1990-12-19-tarifs-electricite-gaz,,,,Valeur d'une première transcription de l'arrêté ; seule la grille de 1992 est établie deux fois sur le texte.
+general,trois_postes,prime_puissance,1991-01-01,oui,1.25,dinars par kW et par mois,lu,ajustement,arrete-1990-12-19-tarifs-electricite-gaz,,,,
+general,trois_postes,jour,1992-08-01,oui,34,"millimes courants par kWh, hors taxes",lu,ajustement,decision-1992-08-11-tarifs-electricite-gaz,,,,
+general,trois_postes,pointe,1992-08-01,oui,74,"millimes courants par kWh, hors taxes",lu,ajustement,decision-1992-08-11-tarifs-electricite-gaz,,,,
+general,trois_postes,nuit,1992-08-01,oui,26,"millimes courants par kWh, hors taxes",lu,ajustement,decision-1992-08-11-tarifs-electricite-gaz,,,,
+general,trois_postes,prime_puissance,1992-08-01,oui,2,dinars par kW et par mois,lu,ajustement,decision-1992-08-11-tarifs-electricite-gaz,,,,
+general,,grille_non_etablie,1993-10-01,non,,,grille_non_etablie,ajustement,bm-1998-icr-17374,,,,"Ajustement d'octobre 1993, +3 % en moyenne de tous les tarifs selon la Banque mondiale ; grille de la haute tension non établie."
+general,trois_postes,jour,1994-06-01,non,40,"millimes courants par kWh, hors taxes",lu,ajustement,fipa-2001-02-electricite-eng ; fipa-1999-production,,,,Le mois vient de la Banque mondiale ; la grille ne change pas de 1994 à août 2000.
+general,trois_postes,pointe,1994-06-01,non,80,"millimes courants par kWh, hors taxes",lu,ajustement,fipa-2001-02-electricite-eng ; fipa-1999-production,,,,Le mois vient de la Banque mondiale ; la grille ne change pas de 1994 à août 2000.
+general,trois_postes,nuit,1994-06-01,non,27,"millimes courants par kWh, hors taxes",lu,ajustement,fipa-2001-02-electricite-eng ; fipa-1999-production,,,,Le mois vient de la Banque mondiale ; la grille ne change pas de 1994 à août 2000.
+general,trois_postes,prime_puissance,1994-06-01,non,2500,millimes par kW et par mois,lu,ajustement,fipa-2001-02-electricite-eng ; fipa-1999-production,,,,
+secours,trois_postes,jour,1994-06-01,non,47,"millimes courants par kWh, hors taxes",lu,ajustement,fipa-2001-02-electricite-eng,,,,
+secours,trois_postes,pointe,1994-06-01,non,88,"millimes courants par kWh, hors taxes",lu,ajustement,fipa-2001-02-electricite-eng,,,,
+secours,trois_postes,nuit,1994-06-01,non,28,"millimes courants par kWh, hors taxes",lu,ajustement,fipa-2001-02-electricite-eng,,,,
+secours,trois_postes,prime_puissance,1994-06-01,non,1000,millimes par kW et par mois,lu,ajustement,fipa-2001-02-electricite-eng,,,,
+general,quatre_postes_ete,jour,2000-08-15,oui,41,"millimes courants par kWh, hors taxes",lu,ajustement,fipa-2001-05-electricite ; api-2003-04-couts-energie,,"Le tarif général devient saisonnier : quatre postes du 1er juin au 31 août, trois postes du 1er septembre au 31 mai, d'après les pages de la FIPA ; le jour du changement n'est pas établi",2000,
+general,quatre_postes_ete,pointe,2000-08-15,oui,81,"millimes courants par kWh, hors taxes",lu,ajustement,fipa-2001-05-electricite ; api-2003-04-couts-energie,,,,
+general,quatre_postes_ete,soir,2000-08-15,oui,62,"millimes courants par kWh, hors taxes",lu,ajustement,fipa-2001-05-electricite ; api-2003-04-couts-energie,,,,
+general,quatre_postes_ete,nuit,2000-08-15,oui,28,"millimes courants par kWh, hors taxes",lu,ajustement,fipa-2001-05-electricite ; api-2003-04-couts-energie,,,,
+general,quatre_postes_ete,prime_puissance,2000-08-15,oui,2500,millimes par kW et par mois,lu,ajustement,fipa-2001-05-electricite ; api-2003-04-couts-energie,,,,
+general,trois_postes_saison,jour,2000-08-15,oui,43,"millimes courants par kWh, hors taxes",lu,ajustement,fipa-2002-06-electricite-aout-2000,,,,
+general,trois_postes_saison,pointe,2000-08-15,oui,79,"millimes courants par kWh, hors taxes",lu,ajustement,fipa-2002-06-electricite-aout-2000,,,,
+general,trois_postes_saison,nuit,2000-08-15,oui,29,"millimes courants par kWh, hors taxes",lu,ajustement,fipa-2002-06-electricite-aout-2000,,,,
+general,trois_postes_saison,prime_puissance,2000-08-15,oui,2500,millimes par kW et par mois,lu,ajustement,fipa-2002-06-electricite-aout-2000,,,,
+secours,quatre_postes,jour,2000-08-15,oui,52,"millimes courants par kWh, hors taxes",lu,ajustement,fipa-2001-05-electricite ; api-2003-04-couts-energie,,,,
+secours,quatre_postes,pointe,2000-08-15,oui,94,"millimes courants par kWh, hors taxes",lu,ajustement,fipa-2001-05-electricite ; api-2003-04-couts-energie,,,,
+secours,quatre_postes,soir,2000-08-15,oui,67,"millimes courants par kWh, hors taxes",lu,ajustement,fipa-2001-05-electricite ; api-2003-04-couts-energie,,,,
+secours,quatre_postes,nuit,2000-08-15,oui,30,"millimes courants par kWh, hors taxes",lu,ajustement,fipa-2001-05-electricite ; api-2003-04-couts-energie,,,,
+secours,quatre_postes,prime_puissance,2000-08-15,oui,1000,millimes par kW et par mois,lu,ajustement,fipa-2001-05-electricite ; api-2003-04-couts-energie,,,,
+general,quatre_postes_ete,jour,2001-08-01,oui,42,"millimes courants par kWh, hors taxes",lu,ajustement,esmap-2005-307-electrification-rurale,"tableau 6.2, p. 36",,,L'ESMAP ne donne pas la saison.
+general,quatre_postes_ete,pointe,2001-08-01,oui,82,"millimes courants par kWh, hors taxes",lu,ajustement,esmap-2005-307-electrification-rurale,"tableau 6.2, p. 36",,,L'ESMAP ne donne pas la saison.
+general,quatre_postes_ete,soir,2001-08-01,oui,63,"millimes courants par kWh, hors taxes",lu,ajustement,esmap-2005-307-electrification-rurale,"tableau 6.2, p. 36",,,L'ESMAP ne donne pas la saison.
+general,quatre_postes_ete,nuit,2001-08-01,oui,29,"millimes courants par kWh, hors taxes",lu,ajustement,esmap-2005-307-electrification-rurale,"tableau 6.2, p. 36",,,L'ESMAP ne donne pas la saison.
+general,quatre_postes_ete,prime_puissance,2001-08-01,oui,2500,millimes par kW et par mois,lu,ajustement,esmap-2005-307-electrification-rurale,"tableau 6.2, p. 36",,,
+general,trois_postes_saison,jour,2001-08-01,oui,44,"millimes courants par kWh, hors taxes",lu,ajustement,esmap-2005-307-electrification-rurale,"tableau 6.2, p. 36",,,
+general,trois_postes_saison,pointe,2001-08-01,oui,80,"millimes courants par kWh, hors taxes",lu,ajustement,esmap-2005-307-electrification-rurale,"tableau 6.2, p. 36",,,
+general,trois_postes_saison,nuit,2001-08-01,oui,30,"millimes courants par kWh, hors taxes",lu,ajustement,esmap-2005-307-electrification-rurale,"tableau 6.2, p. 36",,,
+general,trois_postes_saison,prime_puissance,2001-08-01,oui,2500,millimes par kW et par mois,lu,ajustement,esmap-2005-307-electrification-rurale,"tableau 6.2, p. 36",,,
+secours,quatre_postes,jour,2001-08-01,oui,53,"millimes courants par kWh, hors taxes",lu,ajustement,esmap-2005-307-electrification-rurale,"tableau 6.2, p. 36",,,
+secours,quatre_postes,pointe,2001-08-01,oui,95,"millimes courants par kWh, hors taxes",lu,ajustement,esmap-2005-307-electrification-rurale,"tableau 6.2, p. 36",,,
+secours,quatre_postes,soir,2001-08-01,oui,68,"millimes courants par kWh, hors taxes",lu,ajustement,esmap-2005-307-electrification-rurale,"tableau 6.2, p. 36",,,
+secours,quatre_postes,nuit,2001-08-01,oui,31,"millimes courants par kWh, hors taxes",lu,ajustement,esmap-2005-307-electrification-rurale,"tableau 6.2, p. 36",,,
+secours,quatre_postes,prime_puissance,2001-08-01,oui,1000,millimes par kW et par mois,lu,ajustement,esmap-2005-307-electrification-rurale,"tableau 6.2, p. 36",,,
+general,trois_postes_saison,jour,2003-04-01,oui,48,"millimes courants par kWh, hors taxes",lu,ajustement,fipa-2003-08-electricite-avril-2003,,,,
+general,trois_postes_saison,pointe,2003-04-01,oui,82,"millimes courants par kWh, hors taxes",lu,ajustement,fipa-2003-08-electricite-avril-2003,,,,
+general,trois_postes_saison,nuit,2003-04-01,oui,35,"millimes courants par kWh, hors taxes",lu,ajustement,fipa-2003-08-electricite-avril-2003,,,,
+general,trois_postes_saison,prime_puissance,2003-04-01,oui,2500,millimes par kW et par mois,lu,ajustement,fipa-2003-08-electricite-avril-2003,,,,
+general,quatre_postes_ete,jour,2003-04-01,oui,44,"millimes courants par kWh, hors taxes",lu,ajustement,fipa-2003-08-electricite-avril-2003,,,,
+general,quatre_postes_ete,pointe,2003-04-01,oui,84,"millimes courants par kWh, hors taxes",lu,ajustement,fipa-2003-08-electricite-avril-2003,,,,
+general,quatre_postes_ete,soir,2003-04-01,oui,65,"millimes courants par kWh, hors taxes",lu,ajustement,fipa-2003-08-electricite-avril-2003,,,,
+general,quatre_postes_ete,nuit,2003-04-01,oui,35,"millimes courants par kWh, hors taxes",lu,ajustement,fipa-2003-08-electricite-avril-2003,,,,
+general,quatre_postes_ete,prime_puissance,2003-04-01,oui,2500,millimes par kW et par mois,lu,ajustement,fipa-2003-08-electricite-avril-2003,,,,
+secours,quatre_postes,jour,2003-04-01,oui,55,"millimes courants par kWh, hors taxes",lu,ajustement,fipa-2003-08-electricite-avril-2003,,,,
+secours,quatre_postes,pointe,2003-04-01,oui,97,"millimes courants par kWh, hors taxes",lu,ajustement,fipa-2003-08-electricite-avril-2003,,,,
+secours,quatre_postes,soir,2003-04-01,oui,70,"millimes courants par kWh, hors taxes",lu,ajustement,fipa-2003-08-electricite-avril-2003,,,,
+secours,quatre_postes,nuit,2003-04-01,oui,37,"millimes courants par kWh, hors taxes",lu,ajustement,fipa-2003-08-electricite-avril-2003,,,,
+secours,quatre_postes,prime_puissance,2003-04-01,oui,1000,millimes par kW et par mois,lu,ajustement,fipa-2003-08-electricite-avril-2003,,,,
+general,quatre_postes,jour,2004-05-01,oui,48,"millimes courants par kWh, hors taxes",lu,ajustement,steg-grille-2004-05-01,,,,
+general,quatre_postes,pointe,2004-05-01,oui,89,"millimes courants par kWh, hors taxes",lu,ajustement,steg-grille-2004-05-01,,,,
+general,quatre_postes,soir,2004-05-01,oui,69,"millimes courants par kWh, hors taxes",lu,ajustement,steg-grille-2004-05-01,,,,
+general,quatre_postes,nuit,2004-05-01,oui,38,"millimes courants par kWh, hors taxes",lu,ajustement,steg-grille-2004-05-01,,,,
+general,quatre_postes,prime_puissance,2004-05-01,oui,2500,millimes par kW et par mois,lu,ajustement,steg-grille-2004-05-01,,,,
+general,,grille_non_etablie,2005-02-01,oui,,,grille_non_etablie,ajustement,bad-2006-rap-electricite-vi,,,,La Banque africaine de développement liste les barèmes successifs et compte sept ajustements de 2000 au 1er janvier 2006 ; la grille de la basse tension change le 1er février 2005 (tbl-compensation-eg-grilles-steg) ; grille de la haute tension à cette date non établie.
+general,,grille_non_etablie,2005-07-01,oui,,,grille_non_etablie,ajustement,bad-2006-rap-electricite-vi,,,,"Tarif du 1er juillet 2005, donné pour la basse tension par la Banque africaine de développement (tbl-compensation-eg-ajustements-1992-2006) ; grille de la haute tension non établie."
+general,quatre_postes,jour,2006-01-01,oui,59,"millimes courants par kWh, hors taxes",lu,ajustement,steg-grille-2006-01-01,,,,
+general,quatre_postes,pointe,2006-01-01,oui,103,"millimes courants par kWh, hors taxes",lu,ajustement,steg-grille-2006-01-01,,,,
+general,quatre_postes,soir,2006-01-01,oui,79,"millimes courants par kWh, hors taxes",lu,ajustement,steg-grille-2006-01-01,,,,
+general,quatre_postes,nuit,2006-01-01,oui,45,"millimes courants par kWh, hors taxes",lu,ajustement,steg-grille-2006-01-01,,,,
+general,quatre_postes,prime_puissance,2006-01-01,oui,3000,millimes par kW et par mois,lu,ajustement,steg-grille-2006-01-01,,,,
+general,,grille_non_etablie,2007-07-01,oui,,,grille_non_etablie,ajustement,steg-ra-2007,,,,+6 % sur l'électricité et le gaz ; grille non établie.
+general,,grille_non_etablie,2007-12-01,oui,,,grille_non_etablie,ajustement,steg-ra-2007,,,,"+6,9 % sur l'électricité ; grille non établie."
+general,,grille_non_etablie,2008-04-01,oui,,,grille_non_etablie,ajustement,steg-ra-2008,,,,"+7,76 % sur l'électricité ; grille non établie."
+general,quatre_postes,jour,2008-09-01,oui,94,"millimes courants par kWh, hors taxes",lu,ajustement,steg-grille-2008-09-01,,,,
+general,quatre_postes,pointe,2008-09-01,oui,147,"millimes courants par kWh, hors taxes",lu,ajustement,steg-grille-2008-09-01,,,,
+general,quatre_postes,soir,2008-09-01,oui,119,"millimes courants par kWh, hors taxes",lu,ajustement,steg-grille-2008-09-01,,,,
+general,quatre_postes,nuit,2008-09-01,oui,75,"millimes courants par kWh, hors taxes",lu,ajustement,steg-grille-2008-09-01,,,,
+general,quatre_postes,prime_puissance,2008-09-01,oui,3000,millimes par kW et par mois,lu,ajustement,steg-grille-2008-09-01,,,,
+general,quatre_postes,jour,2010-06-01,oui,106,"millimes courants par kWh, hors taxes",lu,ajustement,steg-grille-2010-06-01,,,,
+general,quatre_postes,pointe,2010-06-01,oui,164,"millimes courants par kWh, hors taxes",lu,ajustement,steg-grille-2010-06-01,,,,
+general,quatre_postes,soir,2010-06-01,oui,129,"millimes courants par kWh, hors taxes",lu,ajustement,steg-grille-2010-06-01,,,,
+general,quatre_postes,nuit,2010-06-01,oui,81,"millimes courants par kWh, hors taxes",lu,ajustement,steg-grille-2010-06-01,,,,
+general,quatre_postes,prime_puissance,2010-06-01,oui,3000,millimes par kW et par mois,lu,ajustement,steg-grille-2010-06-01,,,,
+general,,grille_non_etablie,2012-09-01,oui,,,grille_non_etablie,ajustement,steg-grille-2012-09-01,,,,Grille de la moyenne tension du 1er septembre 2012 ; celle de la haute tension n'est pas établie.
+general,quatre_postes,jour,2013-03-01,oui,126,"millimes courants par kWh, hors taxes",lu,ajustement,steg-grille-2013-03-01,,,,
+general,quatre_postes,pointe,2013-03-01,oui,192,"millimes courants par kWh, hors taxes",lu,ajustement,steg-grille-2013-03-01,,,,
+general,quatre_postes,soir,2013-03-01,oui,142,"millimes courants par kWh, hors taxes",lu,ajustement,steg-grille-2013-03-01,,,,
+general,quatre_postes,nuit,2013-03-01,oui,96,"millimes courants par kWh, hors taxes",lu,ajustement,steg-grille-2013-03-01,,,,
+general,quatre_postes,prime_puissance,2013-03-01,oui,4500,millimes par kW et par mois,lu,ajustement,steg-grille-2013-03-01,,,,
+general,,grille_non_etablie,2014-01-01,oui,,,grille_non_etablie,ajustement,minfin-compensation-carburants-2014,,,,Le rapport de contrôle de 2014 date une hausse du 1er janvier 2014 (p. 75) ; grille non établie.
+general,quatre_postes_2014,jour,2014-05-01,oui,148,"millimes courants par kWh, hors taxes",lu,étape (de la réforme de 2014),steg-grille-2014-05-01,,Quatre postes redéfinis le 1er mai 2014 (réforme de 2014) : les postes d'avant et d'après ne s'alignent pas,2014,
+general,quatre_postes_2014,pointe_matin_ete,2014-05-01,oui,233,"millimes courants par kWh, hors taxes",lu,étape (de la réforme de 2014),steg-grille-2014-05-01,,,,
+general,quatre_postes_2014,pointe_soir,2014-05-01,oui,212,"millimes courants par kWh, hors taxes",lu,étape (de la réforme de 2014),steg-grille-2014-05-01,,,,
+general,quatre_postes_2014,nuit,2014-05-01,oui,111,"millimes courants par kWh, hors taxes",lu,étape (de la réforme de 2014),steg-grille-2014-05-01,,,,
+general,quatre_postes_2014,prime_puissance,2014-05-01,oui,7500,millimes par kW et par mois,lu,étape (de la réforme de 2014),steg-grille-2014-05-01,,,,
+general,quatre_postes_2014,jour,2017-01-01,oui,156,"millimes courants par kWh, hors taxes",lu,ajustement,steg-grille-2017-01-01,,,,
+general,quatre_postes_2014,pointe_matin_ete,2017-01-01,oui,249,"millimes courants par kWh, hors taxes",lu,ajustement,steg-grille-2017-01-01,,,,
+general,quatre_postes_2014,pointe_soir,2017-01-01,oui,221,"millimes courants par kWh, hors taxes",lu,ajustement,steg-grille-2017-01-01,,,,
+general,quatre_postes_2014,nuit,2017-01-01,oui,120,"millimes courants par kWh, hors taxes",lu,ajustement,steg-grille-2017-01-01,,,,
+general,quatre_postes_2014,prime_puissance,2017-01-01,oui,7500,millimes par kW et par mois,lu,ajustement,steg-grille-2017-01-01,,,,
+general,quatre_postes_2014,jour,2018-05-01,oui,168,"millimes courants par kWh, hors taxes",lu,ajustement,steg-grille-2018-05-01,,,,
+general,quatre_postes_2014,pointe_matin_ete,2018-05-01,oui,279,"millimes courants par kWh, hors taxes",lu,ajustement,steg-grille-2018-05-01,,,,
+general,quatre_postes_2014,pointe_soir,2018-05-01,oui,243,"millimes courants par kWh, hors taxes",lu,ajustement,steg-grille-2018-05-01,,,,
+general,quatre_postes_2014,nuit,2018-05-01,oui,129,"millimes courants par kWh, hors taxes",lu,ajustement,steg-grille-2018-05-01,,,,
+general,quatre_postes_2014,prime_puissance,2018-05-01,oui,7500,millimes par kW et par mois,lu,ajustement,steg-grille-2018-05-01,,,,
+general,quatre_postes_2014,jour,2018-09-01,oui,207,"millimes courants par kWh, hors taxes",lu,ajustement,steg-grille-2018-09-01,,,,
+general,quatre_postes_2014,pointe_matin_ete,2018-09-01,oui,309,"millimes courants par kWh, hors taxes",lu,ajustement,steg-grille-2018-09-01,,,,
+general,quatre_postes_2014,pointe_soir,2018-09-01,oui,279,"millimes courants par kWh, hors taxes",lu,ajustement,steg-grille-2018-09-01,,,,
+general,quatre_postes_2014,nuit,2018-09-01,oui,160,"millimes courants par kWh, hors taxes",lu,ajustement,steg-grille-2018-09-01,,,,
+general,quatre_postes_2014,prime_puissance,2018-09-01,oui,10000,millimes par kW et par mois,lu,ajustement,steg-grille-2018-09-01,,,,
+general,quatre_postes_2014,jour,2022-05-01,oui,238,"millimes courants par kWh, hors taxes",lu,ajustement,steg-grille-2022-05-01,,,,
+general,quatre_postes_2014,pointe_matin_ete,2022-05-01,oui,364,"millimes courants par kWh, hors taxes",lu,ajustement,steg-grille-2022-05-01,,,,
+general,quatre_postes_2014,pointe_soir,2022-05-01,oui,332,"millimes courants par kWh, hors taxes",lu,ajustement,steg-grille-2022-05-01,,,,
+general,quatre_postes_2014,nuit,2022-05-01,oui,179,"millimes courants par kWh, hors taxes",lu,ajustement,steg-grille-2022-05-01,,,,
+general,quatre_postes_2014,prime_puissance,2022-05-01,oui,10000,millimes par kW et par mois,lu,ajustement,steg-grille-2022-05-01,,,,

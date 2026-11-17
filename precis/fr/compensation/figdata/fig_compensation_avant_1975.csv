@@ -1,0 +1,18 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-11-17
+# séries (tunisia_data) : compensation-compte-avant-1975
+# sources (citation) : @bct-ra-1965, @bct-ra-1967, @bct-ra-1971, @bct-ra-1975, @bct-ra-1974
+# fiches : 
+# méthode/hypothèses : Aucune série annuelle des recettes et des dépenses n'est établie avant 1970 : seuls ces points le sont.
+# note : Le compte de la compensation avant qu'il ne devienne une charge du budget : les montants que relaie la Banque centrale, 1965-1975 (millions de dinars courants)
+Année,Grandeur,Texte,Montant (millions de dinars courants),Source
+1965,Subventions d'exploitation versées par le compte,"subventions d'exploitation versées par le compte des opérations de compensation, hydrocarbures compris",1.2,bct-ra-1965
+1965,Versement du compte au budget de l'État,versement du même compte au budget de l'État,0.8,bct-ra-1965
+1967,Droits de consommation versés au compte,droits de consommation sur les essences et les huiles versés au compte,1.0,bct-ra-1967
+1967,Redevances sur les transports versées au compte,redevances sur les transports versées au compte,0.45,bct-ra-1967
+1970,Dépenses de la Caisse,dépenses de la Caisse générale,2.053,bct-ra-1971
+1971,Dépenses de la Caisse,dépenses de la Caisse générale,3.7,bct-ra-1971
+1974,Recettes de la Caisse,recettes de la Caisse,18.4,bct-ra-1975
+1974,Contribution du budget de l'État à la Caisse,"contribution du budget de l'État à la Caisse, la première",5.3,bct-ra-1974
+1974,Dépenses de la Caisse,dépenses de la Caisse,27.3,bct-ra-1975
+1975,Recettes de la Caisse,recettes de la Caisse,52.5,bct-ra-1975
+1975,Dépenses de la Caisse,dépenses de la Caisse,49.2,bct-ra-1975
