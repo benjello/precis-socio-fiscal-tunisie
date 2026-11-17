@@ -31,7 +31,7 @@ Unité de travail = **un ticket GitHub**. Chaîne FR :
 Le texte de ces rôles est neutre, indépendant de l'outil et du fournisseur de LLM ; leurs
 métadonnées Claude Code (`name`, `description`, `tools`) et leur NIVEAU abstrait (dont se
 déduit le `model`) vivent dans `docs/agents/roles.yml`, et `.claude/agents/<role>.md` en
-est engendré par `scripts/sync_agents.py` (voir AGENTS.md, § « Économiser »).
+est engendré par `scripts/sync_agents.py` (voir `docs/conventions/economiser.md`).
 
 **Gates de qualité** (invariants du dépôt) : `uv run python scripts/build_glossary.py`
 (verrou de synchro FR/AR, exit 0), rendu `uv run quarto render --to html` sans erreur ni

@@ -69,8 +69,6 @@ fiche devient `resolu`, remplace la réserve par la règle sourcée et retire l'
 - **« Ce qu'en dit l'économie ».** Tu l'écris en fin de chapitre de dispositif, après la longue période, depuis la fiche datée `docs/notes/eco-<dispositif>.md` de l'économiste ; la fiche est la source, la section le résumé, une page au plus. Gabarit fixe : la question ; ce que dit la théorie (deux ou trois résultats, avec leurs hypothèses) ; ce que mesure l'empirique (synthèses internationales avec plages, puis Tunisie) ; ce que le praticien retient (établi, débattu, ce que les données tunisiennes ne tranchent pas). Dernière ligne : « Littérature arrêtée au <mois année> ». Aucun « on sait que » sans référence ; aucun chiffre sans plage, pays et période ; ni recommandation, même implicite ; ni mélange avec le budgétaire ou le droit ; aucun de ces chiffres n'entre dans un tableau de paramètres ou une figure de série. Sans fiche, tu n'écris pas la section.
 
 ## Invariants du projet (à respecter absolument)
-- Exécute TOUJOURS les commandes Python via `uv run` (jamais `python3` ni `.venv/bin/python3`).
-- Le français est la **source de vérité**. N'écris JAMAIS de fichier sous `precis/ar/` : la version arabe est générée par le CI (translation-sync). Tu ne touches qu'à `precis/fr/`.
 - Ne modifie pas les fichiers générés (`_glossaire.qmd`, `translation_glossary.generated.md`).
 
 ## Ton et style
@@ -96,15 +94,3 @@ fiche devient `resolu`, remplace la réserve par la règle sourcée et retire l'
 ## Livrable
 Le(s) fichier(s) `.qmd` FR écrits/modifiés, un rendu sans erreur, et un résumé des sources utilisées + des TODO restants (notamment références manquantes à transmettre au bibliographe).
 
-## Gabarit de rapport (forme du message final)
-
-Le contenu reste celui du « Livrable » ci-dessus ; la FORME, elle, est la même pour tout agent
-du précis — au plus QUINZE LIGNES :
-
-- **Fait** : les fichiers touchés (chemins) et le hash du commit, s'il y en a un.
-- **Contrôles** : une ligne — la commande lancée (`scripts/verifier.sh <livre>` de préférence à
-  une chaîne de contrôles séparés) et son résultat, pas son journal détaillé.
-- **Points à trancher** : ce qui attend un arbitrage humain, s'il y en a.
-
-Rien d'autre : ni récit du cheminement, ni code cité en entier — les chemins et le hash suffisent
-à le retrouver.

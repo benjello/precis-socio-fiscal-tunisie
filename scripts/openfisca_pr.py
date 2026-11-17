@@ -35,7 +35,7 @@ seul échec qu'une relance suffit à réparer.
 
 `formules` — liste tous les fichiers `.py` hors tests de la PR, et marque ceux sous
 `variables/` ou `regimes/` : une PR qui en touche change des résultats de calcul, et
-ne se fusionne pas sans validation humaine (`AGENTS.md`, « Découper »). Sort en 1 dès
+ne se fusionne pas sans validation humaine (`docs/conventions/modele.md`, « Découper »). Sort en 1 dès
 qu'un tel fichier est présent.
 
 Aucune sous-commande ne fusionne de PR sur GitHub, n'écrit de message [ci skip]/[no ci]
