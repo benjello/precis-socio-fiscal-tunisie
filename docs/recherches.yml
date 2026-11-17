@@ -2290,11 +2290,14 @@
 
 - id: r-decret-91-1996-liste-apres-2015
   objet: décret gouvernemental remplaçant le décret n° 91-1996 ou modifiant son tableau A (produits soumis à l'homologation des prix) après la loi n° 2015-36 (art. 3 et 78)
-  ou: [precis/fr/compensation/_electricite_gaz.qmd#sec-compensation-eg-autorite]
+  ou:
+  - precis/fr/compensation/_electricite_gaz.qmd#sec-compensation-eg-autorite
+  - precis/fr/compensation/_produits_base.qmd#sec-compensation-pb-etat-du-droit
   requetes:
     titres_fts: [(concurrence AND prix) OR (liberte AND prix)]
     titres_like: ['%المستثناة%', '%تأطيرها%', '%حرية الأسعار%']
     iort_ar: [المستثناة من نظام حرية الأسعار, تأطيرها]
+    plein_texte: [91-1996]
     depuis: 2015-09-30
   passes:
   - date: 2026-10-17
@@ -2302,6 +2305,12 @@
     sources: [jort_cache]
     couverture: 'Intitulés de jort_cache : FTS (concurrence AND prix) OR (liberte AND prix) depuis 2014 ; LIKE arabes sur 2011-2026, 0 résultat. Tous les résultats sont des arrêtés d''exemption de l''article 5 ou des décrets-lois de 2020 sur la répression des infractions. Lacunes : plein texte et miroir iort non parcourus.'
     couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  - date: 2026-11-17
+    role: documentaliste
+    sources: [jort_cache, iort]
+    couverture: 'Relance depuis le 30 septembre 2015 : jort_cache (FTS et LIKE arabes de la fiche) ne rend que des arrêtés d''exemption de l''art. 5 de la loi n° 2015-36, le décret n° 2016-1204 et les décrets-lois de 2020 ; miroir iort (4 350 fichiers datés de 2015 et après) : un candidat, le décret n° 2024-5 (redevances d''aéroport), qui vise le décret n° 91-1996 sans modifier le tableau A ; l''arrêté du 1er décembre 2020 (cahier des charges, JORT n° 121) vise le décret n° 91-1996 « tel que modifié et complété » sans le modifier. Lacune : plein texte non parcouru (terme « 91-1996 » ajouté à la fiche).'
+    couvert_jusqu_au: 2026-10-29
     resultat: aucun
   a_faire: [plein texte des fascicules depuis 2015, 'miroir iort : intitulés arabes']
 
@@ -5818,3 +5827,88 @@
   a_faire:
   - OCR des articles « fonds spéciaux du Trésor / ministère de l'agriculture » des LF 1973-2018 pour saisir la création et les renommages (FSPA → …agricole et de la pêche → compte central)
   - récupérer l'édition arabe du rapport Fonds spéciaux (annexe au PLF) pour l'intitulé arabe officiel, et les autres millésimes (séries annuelles gbo.tn)
+
+- id: r-comp-pb-ciblage-2013-2026
+  objet: texte (article de loi de finances, décret, arrêté) organisant le ciblage des subventions aux produits de base ou leur remplacement par des transferts monétaires, 2013-2026
+  ou: [precis/fr/compensation/_produits_base.qmd#sec-compensation-pb-ciblage]
+  requetes:
+    titres_like:
+    - '%compensation%'
+    - '%ciblage%'
+    - '%produits de base%'
+    - '%subventionn%'
+    - '%transfert%monetaire%'
+    - '%identifiant unique%'
+    - '%الدعم%'
+    - '%المواد الأساسية%'
+    - '%التعويض%'
+    - '%ترشيد%'
+    - '%منظومة الدعم%'
+    - '%المدعم%'
+    - '%التحويلات المالية%'
+    - '%المعرف الوحيد%'
+    iort_ar: [ترشيد الدعم, منظومة الدعم, توجيه الدعم لمستحقيه, المواد الأساسية المدعمة]
+    plein_texte: [compensation des produits de base]
+    depuis: 2011-01-01
+  passes:
+  - date: 2026-11-17
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: 'Intitulés de jort_cache depuis 2011, LIKE français et arabes de la fiche (titres_like hors « indemnit ») : aucun texte de ciblage ni de transfert de substitution ; résultats voisins : arrêtés de 2020 et 2022 sur les transferts monétaires du programme AMEN social (prestations sociales), loi n° 2020-17 et décret n° 2020-312 (identifiant unique), cahier des charges du 1er décembre 2020 (contrôle du circuit), loi de finances pour 2024, art. 19 (intitulé seul), loi de finances pour 2014, art. 76-78 (ressources de la Caisse). Lacunes : miroir iort et plein texte non interrogés.'
+    couvert_jusqu_au: 2026-10-29
+    resultat: aucun
+  a_faire: ['miroir iort : termes iort_ar de la fiche', plein texte des fascicules depuis 2013]
+
+- id: r-comp-pb-prix-consommateur-apres-1991
+  objet: acte fixant ou homologuant, après les arrêtés du 15 août 1991, les prix de vente au public du pain, de la farine, de la semoule, des pâtes et du couscous, de l'huile végétale, du sucre et du lait subventionnés (décret n° 91-1996, art. 2-3 et tableau A)
+  ou: [precis/fr/compensation/_produits_base.qmd#sec-compensation-pb-etat-du-droit]
+  requetes:
+    titres_fts: [prix AND (pain OR farine OR semoule OR sucre OR huile OR pates OR couscous OR lait)]
+    titres_like: ['%أسعار%الخبز%', '%أسعار%السكر%', '%أسعار%الفارينة%', '%أسعار%السميد%', '%أسعار%الزيت%', '%أسعار%العجين%', '%أسعار%الحليب%']
+    iort_ar: [ضبط أسعار البيع, المصادقة على الأسعار, الخبز, الفارينة, السميد]
+    depuis: 1984-03-01
+  passes:
+  - date: 2026-11-17
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: 'Intitulés de jort_cache, français depuis le 1er mars 1984 et arabes depuis le 1er octobre 1991 : derniers résultats, les arrêtés de juillet et d''août 1991 (pain, lait, sucre, pâtes, semoule). Lacunes : décisions (مقرر) publiées hors de la partie « décrets et arrêtés », avis et communications, plein texte et miroir iort non parcourus.'
+    couvert_jusqu_au: 2026-10-29
+    resultat: aucun
+  a_faire: ['miroir iort : termes iort_ar de la fiche', avis et communications du JORT depuis 1992, plein texte]
+
+- id: r-comp-pb-prix-pain-1980
+  objet: texte fixant à 80 millimes le prix du pain en 1980 (rapport de la BCT pour 1983, tableau des prix taxés), entre le décret n° 79-413 et l'arrêté du 28 décembre 1983
+  ou: [precis/fr/compensation/_produits_base.qmd#sec-compensation-pb-1984]
+  requetes:
+    titres_fts: [prix AND (pain OR farine OR semoule OR pates), '"79-413"']
+    depuis: 1979-05-12
+  periode:
+    jusqu_au: 1984-02-27
+    motif: le prix de 80 millimes est remplacé par l'arrêté du 28 décembre 1983 (JORT n° 1 de 1984) ; le texte cherché est antérieur
+  passes:
+  - date: 2026-11-17
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: 'Intitulés de jort_cache du 12 mai 1979 au 27 février 1984 : seuls ressortent les arrêtés du 28 décembre 1983. Lacunes : sommaires des fascicules de 1980 (corpus local, en image) et lois de finances pour 1980 et 1981 non parcourus.'
+    couvert_jusqu_au: 1984-02-27
+    resultat: aucun
+  a_faire: [sommaires des JORT de 1980 au corpus local, lois de finances pour 1980 et 1981]
+
+- id: r-comp-pb-decrets-campagne-lacunes
+  objet: décrets fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales pour les campagnes 1993-1994, 1994-1995, 1997-1998 à 1999-2000, 2001-2002 à 2004-2005 et 2006-2007
+  ou: [precis/fr/compensation/_produits_base.qmd#sec-compensation-pb-cereales]
+  requetes:
+    titres_fts: [cereales AND (prix OR campagne OR recolte)]
+    iort_ar: [أسعار الحبوب, إحالة الحبوب, الصابة]
+    depuis: 1993-01-01
+  periode:
+    jusqu_au: 2009-12-31
+    motif: les décrets de campagne des récoltes 2010 et suivantes sont relevés (registre des campagnes de l'Office des céréales) ; les lacunes cherchées sont toutes antérieures
+  passes:
+  - date: 2026-11-17
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: 'Intitulés de jort_cache, 1970-2009, motifs « céréales » et « prix », « campagne » ou « récolte » : aucun décret pour ces campagnes. Lacunes : intitulés d''une autre forme possibles (« récolte »), plein texte et miroir iort non interrogés.'
+    couvert_jusqu_au: 2009-12-31
+    resultat: aucun
+  a_faire: ['miroir iort : termes iort_ar de la fiche', plein texte des fascicules 1993-2009]
