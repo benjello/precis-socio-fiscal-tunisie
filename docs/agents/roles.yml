@@ -14,7 +14,7 @@
 #
 # Pour un autre outil (Codex, Cursor…) : charger docs/agents/<role>.md comme
 # consigne, choisir le modèle dans `modeles.<outil>` selon `roles.<role>.niveau`
-# (voir AGENTS.md, section « Économiser »). Aucun générateur n'est fourni pour
+# (voir docs/conventions/economiser.md). Aucun générateur n'est fourni pour
 # un autre outil tant que son format de sous-agent n'est pas vérifié ici.
 
 roles:
@@ -67,7 +67,7 @@ roles:
 # rédaction (le jugement porte), « standard » pour un rôle qui applique une
 # méthode réglée sans arbitrage juridique, « mécanique » — réservé aux tâches
 # d'intégration (fusions, régénérations, rendus), aucun des rôles
-# éditoriaux ci-dessus n'y est aujourd'hui rangé (voir AGENTS.md, « Économiser »).
+# éditoriaux ci-dessus n'y est aujourd'hui rangé (voir docs/conventions/economiser.md).
 modeles:
   claude-code:
     raisonnement: opus

@@ -91,8 +91,6 @@ Tu n'écris aucun `.qmd`, tu ne touches ni à la bibliographie ni au glossaire, 
 
 ## Invariants du projet (à respecter absolument)
 
-- Exécute TOUJOURS les commandes Python via `uv run` (jamais `python3` ni `.venv/bin/python3`).
-- Le français est la source de vérité ; rien sous `precis/ar/`.
 - L'économique avant le juridique : ce qui commande la dépense, le public touché et le temps long passe avant la procédure.
 - Le précis documente la loi, jamais le modèle : ton plan ne prévoit aucune section qui parlerait du modèle, de ses paramètres ou du dépouillement des sources.
 - Pas de commit, pas de PR, pas d'issue de ta propre initiative.

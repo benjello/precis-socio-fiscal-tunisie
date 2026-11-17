@@ -1,6 +1,6 @@
 """Le précis dit ce qui est connu, pas comment on l'a cherché : ce contrôle le vérifie.
 
-Voir `AGENTS.md`, « Écrire dans le précis », et `docs/conventions-redaction.md`. Le texte
+Voir `docs/conventions/ecrire-dans-le-precis.md` et `docs/conventions-redaction.md`. Le texte
 RENDU ne parle pas du travail de dépouillement : ni « objet seul », ni « non lu », ni
 « métadonnées seules », ni les marques `[T]`/`[M]`/`[D]`, ni « consulté sur pièce »,
 « lu à l'image », « relu sur le fac-similé », « OCR », « couche texte ». Il dit en clair

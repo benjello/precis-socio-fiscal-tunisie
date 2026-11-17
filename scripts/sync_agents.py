@@ -24,7 +24,7 @@ en retard, silencieusement, jusqu'à ce contrôle.
 Pour un AUTRE outil (Codex, Cursor…) : ce script ne fournit délibérément aucune
 génération, faute de format de sous-agent vérifié pour lui ici — la table
 `modeles.openai` de `roles.yml` est d'ailleurs vide (« à renseigner par
-l'humain »). Le chemin documenté (voir AGENTS.md, § « Économiser ») est de
+l'humain »). Le chemin documenté (voir docs/conventions/economiser.md) est de
 charger `docs/agents/<role>.md` comme consigne et de choisir le modèle dans
 `modeles.<outil>` selon `roles.<role>.niveau`. Si un format d'en-tête pour cet
 outil devient vérifié, ajouter ici une fonction `engendrer_<outil>()` sur le

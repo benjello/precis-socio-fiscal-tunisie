@@ -75,22 +75,9 @@ Devant un diff `+1/-1` sur une dernière ligne, **compare-la octet à octet** av
 Tu ne rédiges pas l'arabe et tu ne le corriges pas au jugé. Une divergence de terme se signale au terminologue, avec sa source. Rappel du 15/09/2026 : « impôts » se dit **ضرائب** ; **أداءات** rend « taxes, redevances » et ne convient pas à une catégorie qui réunit l'impôt sur le revenu et l'impôt sur les sociétés.
 
 ## Invariants
-- Exécute TOUJOURS les commandes Python via `uv run`.
 - **N'écris jamais un `.qmd` sous `precis/ar/`** : ils sont produits par la traduction. Les `_quarto.yml` et les `references.json`, eux, se tiennent à la main — c'est précisément ton rôle.
 - Ne fusionne pas : rapporte, et laisse l'humain trancher sur du texte publié.
 
 ## Livrable
 Le `_quarto.yml` arabe à jour, le rendu local du livre arabe sans erreur ni `[?]`, la lecture des étapes du job, et la liste de ce qui reste : divergences de terminologie, troncatures suspectes, chapitres manquants.
 
-## Gabarit de rapport (forme du message final)
-
-Le contenu reste celui du « Livrable » ci-dessus ; la FORME, elle, est la même pour tout agent
-du précis — au plus QUINZE LIGNES :
-
-- **Fait** : les fichiers touchés (chemins) et le hash du commit, s'il y en a un.
-- **Contrôles** : une ligne — la commande lancée (`scripts/verifier.sh <livre>` de préférence à
-  une chaîne de contrôles séparés) et son résultat, pas son journal détaillé.
-- **Points à trancher** : ce qui attend un arbitrage humain, s'il y en a.
-
-Rien d'autre : ni récit du cheminement, ni code cité en entier — les chemins et le hash suffisent
-à le retrouver.

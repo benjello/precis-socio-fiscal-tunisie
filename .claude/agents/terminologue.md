@@ -27,7 +27,6 @@ Le 15/09/2026, vingt notions de la TVA ont été versées avant toute prose : el
 **Passe 2 — les définitions.** La prose existe et ancre les notions. Rédige les définitions FR et AR, complète les sources, et fais passer en `valide` ce qui peut l'être.
 
 ## Invariants du projet (à respecter absolument)
-- Exécute TOUJOURS les commandes Python via `uv run`.
 - La **source unique** est `precis/glossaire.yml`. N'édite JAMAIS à la main les fichiers générés `precis/{fr,ar}/<book>/_glossaire.qmd` ni `translation_glossary.generated.md` : ils sont produits par le script.
 - Chaque entrée doit avoir un `terme` FR **et** AR ; une entrée `statut: valide` doit avoir une `definition` FR **et** AR (sinon la génération échoue : c'est le verrou de synchro).
 - **N'invente pas un terme arabe.** Une traduction non attestée se marque `provisoire` et se signale. Le 4/10/2026, l'humain a tranché : suivre les termes du *Journal officiel* arabe, relevés en regard des deux éditions des lois de finances pour 2014 et 2019. « Impôts », au pluriel générique, se dit **الأداءات** : الأداءات المباشرة (impôts directs), الأداءات والمعاليم غير المباشرة (impôts et taxes indirects), مصالح الأداءات (services des impôts), مراقبة الأداءات (contrôle des impôts). Dans l'énumération « impôts, taxes, droits », le JORT écrit الأداءات والضرائب والمعاليم : **ضرائب** y rend « taxes », **معاليم** « droits ». Les impôts et taxes nommés gardent le nom que leur donne le texte : الضريبة على الدخل, الضريبة على الشركات, الأداء على القيمة المضافة. Cette règle remplace celle du 15/09/2026, qui suivait le portail du ministère des Finances (ضرائب pour « impôts »).
@@ -62,15 +61,3 @@ C'est pourquoi tu passes **après le versement du bibliographe**. Si une notion 
 ## Livrable
 `precis/glossaire.yml` à jour, génération réussie (exit 0 mesuré hors tube), la liste des entrées ajoutées/modifiées, celles laissées `provisoire` et pourquoi, et les avertissements restants à transmettre au bibliographe.
 
-## Gabarit de rapport (forme du message final)
-
-Le contenu reste celui du « Livrable » ci-dessus ; la FORME, elle, est la même pour tout agent
-du précis — au plus QUINZE LIGNES :
-
-- **Fait** : les fichiers touchés (chemins) et le hash du commit, s'il y en a un.
-- **Contrôles** : une ligne — la commande lancée (`scripts/verifier.sh <livre>` de préférence à
-  une chaîne de contrôles séparés) et son résultat, pas son journal détaillé.
-- **Points à trancher** : ce qui attend un arbitrage humain, s'il y en a.
-
-Rien d'autre : ni récit du cheminement, ni code cité en entier — les chemins et le hash suffisent
-à le retrouver.
