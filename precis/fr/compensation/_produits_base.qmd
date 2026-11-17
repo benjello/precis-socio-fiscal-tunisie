@@ -1,0 +1,413 @@
+# Les produits de base {#sec-compensation-produits-base}
+
+Ce chapitre traite de la compensation des [produits de base](#g-produits-de-base) : les céréales et leurs dérivés (farine, semoule, pain, pâtes et couscous), les huiles végétales, le sucre, le lait régénéré et le papier scolaire. Leur prix de vente est fixé par l'administration ; un office public achète ou importe le produit et le revend à ce prix ; la [Caisse générale de compensation](#g-caisse-generale-compensation) paie l'écart. Le poste « produits de base » du budget dépasse 3 600 millions de dinars (MD) en 2022, en 2023 et en 2024.
+
+La Caisse elle-même — sa création, son compte, ses ressources — est exposée au chapitre de l'institution (@sec-compensation-caisse) ; la dépense de compensation, tous postes réunis, au chapitre de la dépense (@sec-compensation-longue-periode) ; le statut, les comptes et les dettes de l'Office des céréales, de l'Office national de l'huile (ONH) et de l'Office du commerce, au volume [« Les entreprises publiques »](../entreprises_publiques/_offices.html#sec-ep-ge-oc). Le soutien au producteur hors du prix des céréales — huile d'olive, lait frais, intrants — relève du volume [« L'agriculture »](../agriculture/index.html).
+
+## Vue d'ensemble {#sec-compensation-pb-vue}
+
+Le dispositif repose sur trois règles communes à tous les produits : une liste de produits soustraits à la liberté des prix ; une autorité qui en fixe le prix, à la consommation et, pour les céréales, à la production ; un opérateur public qui achète et revend au prix fixé, et à qui la Caisse paie la différence entre son coût et ce prix. Chaque produit a son opérateur et son circuit (@sec-compensation-pb-circuit).
+
+**Ce que pèse la compensation de ces produits.** Deux séries budgétaires se succèdent ; elles ne mesurent pas la même chose et ne se raccordent pas.
+
+- **Les charges de la Caisse**, c'est-à-dire ce que la Caisse doit au titre de l'année, d'après les rapports de la Banque centrale de Tunisie (BCT) : 218,0 MD en 1986, 436,4 MD en 1996, 247,9 MD en 2001, 1 047,9 MD en 2008 et 1 149,6 MD en 2011. Les céréales et leurs dérivés en font de 61 à 83 % selon l'année (@tbl-compensation-charges-produits).
+- **Le poste « produits de base » du budget**, c'est-à-dire ce que le budget verse, d'après le ministère des Finances : 217,8 MD en 2003, soit 2,8 % des dépenses de l'État hors service de la dette ; 1 048 MD en 2008 (8,2 %) ; 1 549 MD en 2015 (7,0 %) ; 3 771 MD en 2022 (8,2 %) ; 3 601,5 MD en 2024 (7,0 %). La loi de finances pour 2026 en prévoit 4 079 MD. La série complète, année par année, est tracée avec les deux autres postes au @fig-compensation-par-poste.
+
+**Les ruptures.** Deux réformes changent les règles communes, après leur mise en place de 1962 à 1974.
+
+| Réforme | Ce que la loi cherche, dans ses mots | Avant → après | Ce qui en découle |
+|---|---|---|---|
+| Mise en place, 1962-1974 | « agir sur les prix des marchandises, produits et services de première nécessité notamment au moyen de subvention et de péréquation » | une caisse qui prélève des redevances sur l'huile et le sucre importés → des offices à monopole, des prix fixés par campagne et par liste, une Caisse générale qui paie l'écart | les céréales (Office des céréales), les huiles végétales (ONH), le sucre ; en 1974, l'écart entre le coût à l'importation et le prix de vente est payé par les organismes de compensation, selon la BCT |
+| 1984 | « la suppression de la compensation des céréales et dérivés » | pain de 700 g à 80 millimes → 170 millimes au 1^er^ janvier 1984 → 80 millimes au 1^er^ mars 1984 ; la suppression votée est abrogée le 21 mars 1984 | aucun dispositif nouveau ; la Caisse reçoit des ressources nouvelles (@sec-compensation-1984) |
+| 1991-1992 | « définir les dispositions régissant la liberté des prix » ; exclure de cette liberté « les biens, produits et services de première nécessité » | des prix fixés sous cinq régimes, dont la [taxation](#g-taxation-des-prix) → la liberté des prix, sauf pour une liste fixée par décret, soumise à l'[homologation](#g-homologation-des-prix) à tous les stades | la liste de 1993 ne vise plus que les variétés « subventionnées » des produits alimentaires |
+
+: Les réformes des produits de base : la mise en place et deux ruptures. Les textes et leurs articles sont aux registres repliés de @sec-compensation-pb-mise-en-place et de @sec-compensation-pb-reformes. {#tbl-compensation-pb-reformes}
+
+Entre ces dates, l'État relève les prix de campagne des céréales et les prix de vente des dérivés ; il crée en 2002 une unité chargée de la compensation au ministère des Finances, rattachée au Commerce en 2005, et encadre en 2020 le commerce de gros des produits subventionnés. La répartition de ces subventions entre les ménages est exposée au chapitre des études d'impact (@sec-compensation-incidence-alimentaire).
+
+## La mise en place : les offices, la liste et la Caisse, 1962-1974 {#sec-compensation-pb-mise-en-place .domicile-unique}
+
+Avant 1970, une Caisse de compensation héritée du Protectorat agit sur les prix de l'huile et du sucre importés par des redevances : elle prélève sur ces produits, elle ne les subventionne pas. Ces mécanismes sont exposés au chapitre de la Caisse (@sec-compensation-avant-1970). De 1962 à 1974, l'État met en place les trois éléments qui font la compensation des produits de base.
+
+- **Des offices, en 1962.** L'État crée l'Office des céréales et l'Office du commerce par [deux décrets-lois du 3 avril 1962](#r-comp-pb-1962-oc), puis l'Office national de l'huile par [le décret-loi du 30 août 1962](#r-comp-pb-1962-onh). L'Office des céréales a dès sa création le monopole des importations et des exportations des céréales et de leurs dérivés ; ses prix à la production et de rétrocession sont fixés pour chaque campagne par décret.
+- **Une loi des prix et une Caisse générale, en 1970.** [La loi du 19 mai 1970](#r-comp-pb-1970-loi) substitue au contrôle des prix du Protectorat cinq régimes de prix et crée la Caisse générale de compensation, « destinée à agir sur les prix des marchandises, produits et services de première nécessité notamment au moyen de subvention et de péréquation ». [La loi de finances pour 1971](#r-comp-pb-1971) en fait un [fonds spécial du Trésor](#g-fonds-special-tresor).
+- **Une liste de produits taxés, en 1970.** [Le décret du 24 octobre 1970](#r-comp-pb-1970-taxation) soumet à la [taxation](#g-taxation-des-prix) — un prix fixé par l'administration « à tous les stades » — une liste de produits « sensibles et de grande consommation » : le pain, la farine et la semoule, le couscous et les pâtes alimentaires, les viandes, le lait et ses dérivés, les huiles alimentaires, le sucre, le thé, le riz, le poivre et les engrais, à côté de l'électricité, des carburants et des transports. Le même décret laisse en « liberté totale », au stade de la production, les prix des produits agricoles et de la pêche ; le prix à la production des céréales est fixé par les décrets de campagne de l'Office.
+- **Des opérateurs à monopole, en 1970.** [Le décret-loi du 26 septembre 1970](#r-comp-pb-1970-oc) confie à l'Office des céréales « le monopole des importations et exportations des céréales et produits dérivés, ainsi que l'achat à la production des céréales ». [Le décret-loi du 16 octobre 1970](#r-comp-pb-1970-onh) donne à l'ONH le monopole de l'importation des huiles végétales comestibles et de leur vente en gros sur le marché intérieur.
+
+**1974 : l'écart entre le coût et le prix de vente s'élargit.** Pour les céréales, l'écart entre le coût des blés et le prix de la farine est payé sur le budget de l'Office des céréales. [Le décret du 5 août 1974](#r-comp-pb-1974-mouture) accorde aux minotiers et aux semouliers, à compter du 1^er^ juillet 1974, une indemnité compensatrice supplémentaire de 185 millimes par quintal de blé mis en œuvre, au titre de la revalorisation de la [marge de mouture](#g-marge-de-mouture) ; elle s'ajoute à l'indemnité de 115 millimes qu'un décret de 1968 avait instituée, et elle est comptée à la rubrique « Soutien du Marché des Céréales » du budget de l'Office. La même année, [le sucre en poudre est fixé à 170 millimes le kilo au public](#r-comp-pb-1974-sucre) à compter du 24 mai 1974, et l'arrêté institue des redevances sur les stocks au profit de la Caisse générale. La BCT décrit l'année ainsi : les pouvoirs publics « ont non seulement procédé à des importations de quantités de produits alimentaires pour desserrer la pression sur la demande mais également pris en charge la différence entre les prix de revient à l'importation et les prix de vente sur le marché national » ; ils ont déboursé en 1974 « 15 millions de dinars pour le sucre, 10 millions pour les céréales, 6 millions pour l'huile de soja et 0,5 million de dinars pour la viande », et 10 MD pour les engrais azotés [@bct-ra-1974]. Les dépenses de la Caisse passent de 9,4 MD en 1973 à 27,3 MD en 1974 ; la BCT l'explique par « l'intervention de plus en plus accrue de l'État pour stabiliser les cours des produits de première nécessité importés » [@bct-ra-1974]. L'entrée du budget de l'État dans le financement de la Caisse cette année-là est exposée au chapitre de la Caisse (@sec-compensation-caisse).
+
+**1975 : un premier relèvement.** Le 1^er^ juin 1975, l'État relève les prix du sucre, de l'huile et des produits à base de céréales : le pain de 700 g passe de 55 à 65 millimes, le sucre en poudre de 170 à 200 millimes le kilo. La BCT dit le motif : « Ce réajustement devait soulager la trésorerie de la caisse générale de compensation lourdement grevée par l'élargissement de l'écart entre le prix de vente à la consommation de certains produits et leur coût réel » [@bct-ra-1975]. Les dépenses de la Caisse atteignent 49,2 MD en 1975 [@bct-ra-1975]. Une lecture extérieure de cette période, celle de la Banque mondiale, est donnée à part (@sec-compensation-bm-1985).
+
+<!-- TODO (documentaliste) : pagination imprimée des rapports de la BCT pour 1974 et 1975 (passages cités : rubrique des prix et fonds spéciaux ; positions 57 et 103 du fichier pour 1974, 70 et 116-117 pour 1975) à relever à l'image. Décret n° 75-352 du 3 juin 1975 et arrêtés du même jour (huile mélangée, sucre), JORT n° 38 de 1975, p. 1189-1192 : à océriser et à lire (corpus local, Jo03875.pdf). Décrets n° 68-279 et 67-408 (indemnités et redevances compensatrices sur les blés et les stocks) : à lire (corpus local, OCR). Décret n° 74-966 (indemnités sur les farines des boulangers) : scan local illisible, à obtenir. -->
+
+<!-- TODO (bibliographe) : clé à créer pour le décret n° 75-352 du 3 juin 1975 quand il sera lu, pour en faire une ligne du registre ci-dessous. -->
+
+:::: {.chronologie-repliable titre="Mise en place de la compensation des produits de base : offices, liste des produits taxés, Caisse générale, textes date par date, 1962-1974"}
+
+| Date d'effet | Portée | Texte et articles | Avant → après |
+|---|---|---|---|
+| []{#r-comp-pb-1962-oc}[5 avril 1962]{.insecable} : *Journal officiel* n° 18 du 3 avril 1962, un jour franc après sa parution | étape | décret-loi n° 62-10 du 3 avril 1962 [@dl62-10-oc, art. 2 et 12, p. 371-373] ; décret-loi n° 62-6 du même jour [@dl62-6-otc, art. 1^er^ à 3, p. 360-362] | création de l'Office des céréales, avec le monopole des importations et des exportations des céréales, des légumineuses et de leurs dérivés ; prix à la production et de rétrocession fixés pour chaque campagne par décret (art. 12) ; création de l'Office du commerce de la Tunisie. Statut et comptes : [registre des offices](../entreprises_publiques/_offices.html#r-ep-oc-1962) |
+| []{#r-comp-pb-1962-onh}entre le [2]{.insecable} et le [6 septembre 1962]{.insecable} : *Journal officiel* n° 46 des 31 août-4 septembre 1962, un jour franc après sa parution | étape | décret-loi n° 62-24 du 30 août 1962 [@dl62-24-onh, art. 1^er^ et 2, p. 1075-1077] | création de l'Office national de l'huile, chargé de l'huile d'olive et des corps gras fluides ; il propose les prix de vente à tous les stades (art. 2) |
+| []{#r-comp-pb-1970-loi}publiée au *Journal officiel* n° 27 des 19-22 mai 1970 | rupture | loi n° 70-26 du 19 mai 1970 [@loi70-26, art. 2, 3 et 41, p. 617-621] | cinq régimes de prix : taxation, homologation, auto-homologation, liberté contrôlée, liberté totale (art. 2) ; création de la Caisse générale de compensation, « destinée à agir sur les prix des marchandises, produits et services de première nécessité notamment au moyen de subvention et de péréquation » (art. 3) ; abrogation du décret du 12 août 1943 sur le contrôle des prix (art. 41) |
+| []{#r-comp-pb-1970-oc}[1^er^ octobre 1970]{.insecable} : *Journal officiel* n° 45 du 29 septembre 1970, un jour franc après sa parution | rupture | décret-loi n° 70-7 du 26 septembre 1970 [@dl70-7-oc, art. 2 et 3, p. 1267] | l'Office devient l'« Office des céréales » ; « le monopole des importations et exportations des céréales et produits dérivés, ainsi que l'achat à la production des céréales sont confiés à l'Office des Céréales » ; prix à la production, de rétrocession, prélèvements et taxes fixés pour chaque campagne par décret pris sur proposition du ministre de l'Agriculture |
+| []{#r-comp-pb-1970-onh}[18 octobre 1970]{.insecable} : *Journal officiel* n° 47 des 13-16 octobre 1970, un jour franc après sa parution | rupture | décret-loi n° 70-13 du 16 octobre 1970 [@dl70-13-onh, art. 2 et 3, p. 1348-1349] | l'ONH reçoit le monopole des achats à la production des huiles d'olive, de leur exportation, de l'importation des huiles végétales comestibles et de la vente en gros sur le marché intérieur des huiles de mélange et des huiles comestibles ; il propose les prix à la production et à tous les stades |
+| []{#r-comp-pb-1970-taxation}publié au *Journal officiel* n° 49 des 27-30 octobre 1970 | rupture | décret n° 70-543 du 24 octobre 1970 [@decret70-543, art. 1^er^ et 7, tableau A, p. 1418-1419] | « Sont soumis à taxation les prix à tous les stades » des produits du tableau A : pain ; farine et semoule ; couscous et pâtes alimentaires ; viandes ; lait et dérivés ; huiles alimentaires ; sucre ; thé ; riz ; poivre ; engrais ; articles scolaires, à côté de l'électricité, de l'eau, du gaz, des carburants et des transports (art. 1^er^) ; « liberté totale » des prix agricoles et de la pêche au stade de la production (art. 7) |
+| []{#r-comp-pb-1971}[1^er^ janvier 1971]{.insecable} | étape | loi de finances pour 1971 [@lf-1971, art. 48] | la Caisse générale de compensation devient un fonds spécial du Trésor (@sec-compensation-caisse) |
+| []{#r-comp-pb-1974-sucre}[24 mai 1974]{.insecable}, date dite par l'arrêté : *Journal officiel* n° 36 du 24 mai 1974 | étape | arrêté du ministre de l'économie nationale du 24 mai 1974 [@arrete-1974-05-24-prix-sucre, p. 1112] | sucre en poudre : 161,5 millimes le kilo à la cession aux grossistes, 165 aux détaillants, 170 au public ; sucre en morceaux : 240 millimes au public ; redevances différentielles sur les stocks au profit de la Caisse générale de compensation |
+| []{#r-comp-pb-1974-mouture}[1^er^ juillet 1974]{.insecable}, date dite par le décret : *Journal officiel* n° 52 des 9-13 août 1974 | étape | décret n° 74-780 du 5 août 1974 [@decret74-780, art. 1^er^ et 2, p. 1819-1820] | indemnité compensatrice supplémentaire de 185 millimes par quintal de blé tendre mis en œuvre pour la farine panifiable, versée aux minotiers, et de 185 millimes par quintal de blé dur aux semouliers, en plus de l'indemnité de 115 millimes du décret du 7 septembre 1968 ; comptée à la rubrique « Soutien du Marché des Céréales » du budget de l'Office des céréales (art. 2) |
+
+: La mise en place de la compensation des produits de base, texte par texte, 1962-1974 {#tbl-compensation-pb-textes-mise-en-place}
+
+::::
+
+## Les grandes réformes {#sec-compensation-pb-reformes .domicile-unique}
+
+Deux réformes changent les règles communes à tous les produits : en 1984, l'État vote la suppression de la compensation des céréales, relève puis rétablit le prix du pain et abroge la suppression ; en 1991-1992, la liberté des prix devient la règle, et les produits de première nécessité en sont exclus par une liste. Entre ces dates, il relève les prix par décret et par arrêté : [le décret du 7 mai 1979](#r-comp-pb-1979) fixe le pain de 700 g à 70 millimes à compter du 3 mai 1979, et [le décret du 27 janvier 1982](#r-comp-pb-1982) reprend la taxation, avec une liste où le lait devient le « lait régénéré ».
+
+### 1984 : la suppression de la compensation des céréales, votée puis abrogée {#sec-compensation-pb-1984}
+
+En 1983, les céréales et leurs dérivés sont le premier poste de la Caisse : 103,5 MD sur 149,3 MD de dépenses du fonds, puis 159,2 MD sur 245,8 MD en 1984 [@bct-ra-1984, p. 154]. La BCT explique la hausse par « l'augmentation, d'une part, du volume des besoins et, d'autre part, des prix à l'importation des céréales, de l'huile de soja et du sucre » [@bct-ra-1984, p. 153], dans une année « marquée par une conjoncture internationale difficile » où l'appréciation de certaines devises accroît le service de la dette extérieure et les charges de la Caisse [@bct-ra-1984].
+
+Les textes se succèdent en quatre temps.
+
+- **Les prix relevés, fin décembre 1983.** [Le décret du 28 décembre 1983](#r-comp-pb-1983-campagne) relève, à compter du même jour, les prix de rétrocession des blés aux minoteries : 15,600 dinars le quintal (D/q) pour le blé dur, 13,000 D/q pour le blé tendre. Deux décrets du même jour abrogent les indemnités compensatrices de 1974 aux minotiers, aux semouliers et aux boulangers. Des arrêtés du ministre de l'Économie nationale relèvent les prix des farines — la farine panifiable à 19,500 D/q au public, [à compter du 28 décembre 1983](#r-comp-pb-1983-farines) —, des semoules, des pâtes et du couscous, et [le prix du pain à compter du 1^er^ janvier 1984](#r-comp-pb-1983-pain) : le pain de 700 g passe à 170 millimes. Il valait 80 millimes depuis 1980, d'après la BCT [@bct-ra-1983].
+- **La suppression votée, le 30 décembre 1983.** [La loi de finances pour 1984](#r-comp-pb-1984) dispose que « le financement des mesures d'accompagnement qui seront prises à la suite de la suppression de la compensation des céréales et dérivés sera effectué pour 1984 sur les disponibilités de la CGC ».
+- **Le retour aux prix antérieurs, le 1^er^ mars 1984.** [Le décret du 17 février 1984](#r-comp-pb-1984-retour) abroge celui du 28 décembre 1983 et remet en vigueur les prix de rétrocession de la campagne ; trois autres décrets du même jour rétablissent les indemnités compensatrices de 1974 et abrogent le décret de 1979 sur les prix des dérivés, qui relèvent désormais des seuls arrêtés. [L'arrêté du même jour](#r-comp-pb-1984-pain) ramène le pain de 700 g à 80 millimes. Ces textes, publiés le 28 février 1984, prennent effet le 1^er^ mars.
+- **La suppression abrogée, le 21 mars 1984.** [La loi de finances complémentaire](#r-comp-pb-1984-abrogation) abroge l'article de la loi de finances qui prévoyait la suppression. La même loi reconstitue les ressources de toute la Caisse — une part de la taxe sur les alcools, un prélèvement sur la contribution exceptionnelle de solidarité, une subvention du budget de 98 MD — : ces ressources sont exposées au chapitre des réformes (@sec-compensation-1984).
+
+Le prix du pain revient ainsi, au 1^er^ mars 1984, à son niveau de 1980 (@tbl-compensation-pb-prix-pain). Dans son rapport pour 1984, la BCT rapporte la décélération des dépenses de fonctionnement de l'État à un « programme volontariste visant à contenir le déficit budgétaire, à consolider les moyens d'intervention au profit de la Caisse générale de compensation et à dégager le volume d'épargne publique requis » [@bct-ra-1984].
+
+Le texte qui fixe le pain à 80 millimes en 1980 n'est pas identifié ici.
+
+<!-- RECHERCHE r-comp-pb-prix-pain-1980 : texte fixant à 80 millimes le pain en 1980, entre le décret n° 79-413 et l'arrêté du 28 décembre 1983 (voir docs/recherches.yml) -->
+
+<!-- TODO (documentaliste) : les événements de janvier 1984 n'ont aucune source primaire relevée ; ne rien en écrire tant qu'un texte ou un rapport de l'époque n'est pas lu. Pagination imprimée du rapport de la BCT pour 1983 (tableau des prix taxés, position 73 du fichier) et du rapport pour 1984 (positions 131 et 140) à relever à l'image. Décrets n° 84-151 et 84-152 (rétablissement des indemnités de 1974) et arrêtés du 17 février 1984 sur les semoules, les pâtes et les farines (JORT n° 14 de 1984, p. 451-454) : prix des farines à relire à l'image avant citation. (bibliographe) : clés à créer pour les décrets n° 83-1075, 83-1275, 83-1276, 84-151 et 84-152 et pour les arrêtés de décembre 1983 et de février 1984 sur les semoules et les pâtes. -->
+
+### 1991-1992 : la liberté des prix, sauf les produits de première nécessité {#sec-compensation-pb-1991}
+
+[La loi du 29 juillet 1991](#r-comp-pb-1991-loi) a pour objet, dans ses mots, « de définir les dispositions régissant la liberté des prix et d'établir les règles présidant à la libre concurrence ». Elle pose que « les prix des biens, produits et services sont librement déterminés par le jeu de la concurrence », et en exclut « les biens, produits et services de première nécessité ou afférents à des secteurs ou zones où la concurrence par les prix est limitée », dont la liste est fixée par décret. Elle entre en vigueur le 1^er^ janvier 1992 et abroge la loi de 1970.
+
+- **Avant → après.** Avant 1992, tous les prix relèvent de l'un des cinq régimes de la loi de 1970, et les produits de base de la taxation. Après, la liberté est la règle ; [le décret du 23 décembre 1991](#r-comp-pb-1991-liste) soumet les produits de sa liste A à l'[homologation](#g-homologation-des-prix), « la fixation préalable par l'administration du niveau des prix ou de leurs variations », aux stades de la production et de la distribution.
+- **La liste de 1991.** Elle compte vingt rubriques, dont le pain subventionné, la farine et la semoule, le couscous et les pâtes alimentaires, les huiles alimentaires autres que l'huile d'olive, le sucre, le thé et le lait régénéré subventionné, à côté des carburants, de l'électricité, de l'eau et du gaz, des transports et des médicaments.
+- **La liste de 1993.** [Le décret du 11 janvier 1993](#r-comp-pb-1993) remplace les tableaux. L'homologation ne vise plus, pour les produits alimentaires, que leur variété subventionnée : « Pain subventionné », « Farine et semoule subventionnées », « Couscous et pâtes alimentaires subventionné[e]s », « Huiles alimentaires subventionnées », « Sucre subventionné », « Lait régénéré subventionné ». Les papiers, manuels et cahiers scolaires subventionnés y entrent ; la liste passe de vingt à seize rubriques. Le riz, le café et le concentré de tomate sont au tableau C, qui encadre les seules marges de distribution. [Le décret du 28 juin 1995](#r-comp-pb-1995) remplace de nouveau les tableaux, sans changer les produits alimentaires du tableau A.
+
+Ce que la réforme ne change pas, pour ces produits : leur prix reste fixé par l'administration et l'écart reste payé par la Caisse. La règle générale change, et les produits de base en deviennent l'exception. Deux ans plus tôt, [l'arrêté du 30 août 1989](#r-comp-pb-1989) avait arrêté la liste des produits de base d'importation confiés à l'Office du commerce : le sucre roux et blanc, le café vert, le thé, le poivre, le cacao, le riz, les haricots secs et la levure sèche. En 1994, [la loi du 24 février 1994](#r-comp-pb-1994-onh) ouvre aux personnes privées les opérations que l'ONH tenait en monopole, dont l'importation des huiles végétales (@sec-compensation-pb-huiles).
+
+**Après 1992.** Les règles communes ne changent plus que par ajustements. [La loi du 15 septembre 2015](#r-comp-pb-2015-loi) remplace celle de 1991 et en reprend l'exclusion ; les textes d'application de la loi de 1991 « restent en vigueur tant qu'un nouveau texte n'est pas promulgué », et le décret de 1991 y est encore visé en 2020. En 2025, l'autorité qui fixe les prix de campagne des céréales change (@sec-compensation-pb-cereales). Les lignes de dépense par produit varient aussi : le lait disparaît des charges de la Caisse en 2008 et y reparaît en 2011, les pâtes, le couscous et le concentré de tomate y apparaissent en 2011 (@tbl-compensation-charges-produits). Ce sont des lignes budgétaires ; la liste du tableau A en vigueur est exposée avec l'état du droit (@sec-compensation-pb-etat-du-droit).
+
+<!-- TODO (documentaliste) : sorties du champ rapportées par des sources secondaires (maïs en 1992, tourteaux de soja en 1993, certains engrais et sucre produit localement en 1999) : textes à chercher, piste du décret n° 94-1742 du 29 août 1994 sur les produits exclus de la liberté du commerce extérieur et de ses modifications (JORT n° 69 de 1994, p. 1395-1444, corpus local). Tableau B du décret n° 82-134 (p. 230, deux colonnes) : liste à relire à l'image avant de la reprendre. -->
+
+:::: {.chronologie-repliable titre="Liste des produits de base, prix fixés et autorité qui les fixe : textes date par date, 1979-2025, avec l'article et la page de chacun"}
+
+| Date d'effet | Portée | Texte et articles | Avant → après |
+|---|---|---|---|
+| []{#r-comp-pb-1979}[3 mai 1979]{.insecable}, date dite par le décret : *Journal officiel* n° 32 du 11 mai 1979 | ajustement | décret n° 79-413 du 7 mai 1979 [@decret79-413, p. 1381-1382] | pain de 700 g « toutes catégories » : 70 millimes ; pain de 300 g : 45 millimes ; farine et semoule, pâtes et couscous rapide aux prix du décret |
+| []{#r-comp-pb-1982}[31 janvier 1982]{.insecable} : *Journal officiel* n° 6 du 29 janvier 1982, un jour franc après sa parution | étape | décret n° 82-134 du 27 janvier 1982 [@decret82-134, art. 4 et 8, p. 229-231] | la taxation des prix est reprise pour les produits « sensibles ou de grande consommation » du tableau B (art. 4), dont le pain, la farine et la semoule, le couscous et les pâtes, les huiles alimentaires, le sucre et le lait régénéré ; abrogation du décret n° 70-543 (art. 8) |
+| []{#r-comp-pb-1983-campagne}[28 décembre 1983]{.insecable}, date dite par le décret : *Journal officiel* n° 1 du 3 janvier 1984 | rupture | décret n° 83-1274 du 28 décembre 1983 [@decret83-1274, art. 1^er^ et 2, p. 5-6] | art. 14 nouveau du décret de campagne n° 83-1075 : prix de rétrocession du blé dur 15,600 D/q, du blé tendre 13,000 D/q ; art. 22 nouveau : redevance compensatrice sur le blé dur et indemnité sur le blé tendre ; redevances sur les stocks des minotiers et des semouliers (art. 2) |
+| []{#r-comp-pb-1983-farines}[28 décembre 1983]{.insecable}, date dite par l'arrêté : *Journal officiel* n° 1 du 3 janvier 1984 | rupture | arrêté du ministre de l'économie nationale du 28 décembre 1983, prix des farines [@arrete-1983-12-28-prix-farines, p. 8] | farine panifiable : 17,950 D/q rendue, 18,300 D/q en gros, 19,500 D/q au public |
+| []{#r-comp-pb-1983-pain}[1^er^ janvier 1984]{.insecable}, date dite par l'arrêté : *Journal officiel* n° 1 du 3 janvier 1984 | rupture | arrêté du ministre de l'économie nationale du 28 décembre 1983, prix maxima du pain [@arrete-1983-12-28-prix-pain, art. 1^er^, p. 9] | pain de 700 g : 80 → 170 millimes ; pain de 300 g : 90 millimes |
+| []{#r-comp-pb-1984}[1^er^ janvier 1984]{.insecable} : gestion 1984 ; *Journal officiel* n° 86 du 30 décembre 1983 | rupture | loi n° 83-113 du 30 décembre 1983, loi de finances pour 1984 [@lf-1984, art. 87, p. 3384] | « le financement des mesures d'accompagnement qui seront prises à la suite de la suppression de la compensation des céréales et dérivés sera effectué pour 1984 sur les disponibilités de la CGC » |
+| []{#r-comp-pb-1984-retour}[1^er^ mars 1984]{.insecable} : publié au *Journal officiel* n° 14 du 28 février 1984 ; un jour franc, le 29 février (année bissextile), effet le lendemain | rupture | décret n° 84-150 du 17 février 1984 [@decret84-150, art. 1^er^ et 2, p. 451] ; décret n° 84-153 du même jour [@decret84-153, art. 1^er^, p. 452] | abrogation du décret n° 83-1274 ; « sont remises en vigueur » les dispositions des art. 14, 15, 22, 23 et 25 du décret n° 83-1075 ; abrogation du décret n° 79-413 sur les prix des farines, des semoules, du pain, des pâtes et du couscous |
+| []{#r-comp-pb-1984-pain}[1^er^ mars 1984]{.insecable} : publié au *Journal officiel* n° 14 du 28 février 1984 ; un jour franc, le 29 février, effet le lendemain | rupture | arrêté du ministre de l'économie nationale du 17 février 1984, prix maxima du pain [@arrete-1984-02-17-prix-pain, art. 1^er^, p. 453] | pain de 700 g : 170 → 80 millimes ; pain de 300 g : 50 millimes ; abrogation de l'arrêté du 28 décembre 1983 |
+| []{#r-comp-pb-1984-abrogation}loi du 21 mars 1984 : *Journal officiel* n° 19 des 20-23 mars 1984 | rupture | loi n° 84-2 du 21 mars 1984, loi de finances complémentaire pour 1984 [@lfc-1984, art. 27, p. 666-669] | l'art. 87 de la loi de finances pour 1984 est abrogé ; ressources nouvelles de la Caisse (art. 6 et 28 : @sec-compensation-1984) |
+| []{#r-comp-pb-1989}[17 septembre 1989]{.insecable} : *Journal officiel* n° 62 du 15 septembre 1989, un jour franc après sa parution | étape | arrêté du ministre de l'économie nationale du 30 août 1989 [@arrete1989-08-30-otc, article unique, p. 1426-1427] | produits de base d'importation confiés à l'Office du commerce : sucre roux et blanc, café vert, thé noir et vert, poivre noir, cacao en fèves, riz, haricots secs, levure sèche |
+| []{#r-comp-pb-1991-lait}publié au *Journal officiel* n° 57 du 16 août 1991 ; « d'application immédiate » (art. 3) | ajustement | arrêté du ministre de l'économie nationale du 30 juillet 1991 [@arrete-1991-07-30-prix-lait, art. 1^er^ et 3, p. 1451] | lait régénéré demi-écrémé, prix au public : pasteurisé, 350 millimes le litre ; stérilisé en bouteille, 380 millimes ; UHT en brique, 440 millimes |
+| []{#r-comp-pb-1991-pain}publié au *Journal officiel* n° 61 de 1991 | ajustement | arrêté du ministre de l'économie nationale du 15 août 1991 [@arrete-1991-08-15-prix-pain, p. 1545] | gros pain de 500 g : 120 millimes ; baguette de 250 g : 100 millimes |
+| []{#r-comp-pb-1991-loi}[1^er^ janvier 1992]{.insecable}, date dite par la loi (art. 62) : *Journal officiel* n° 55 du 6 août 1991 | rupture | loi n° 91-64 du 29 juillet 1991 [@loi91-64, art. 1^er^ à 3 et 62, p. 1393-1398] | liberté des prix (art. 2) ; exclusion des biens, produits et services de première nécessité, liste fixée par décret (art. 3) ; abrogation de la loi n° 70-26 (art. 62) |
+| []{#r-comp-pb-1991-liste}publié au *Journal officiel* n° 88 du 24 décembre 1991 ; tableaux rétablis au *Journal officiel* n° 30 du 15 mai 1992 | rupture | décret n° 91-1996 du 23 décembre 1991 [@decret91-1996, art. 2 et 3, tableau A, p. 2052-2055] ; rectificatif [@rectificatif1992-decret91-1996-annexes-a-c, p. 581] | homologation des prix aux stades de la production et de la distribution pour les vingt rubriques du tableau A, dont pain subventionné, farine et semoule, couscous et pâtes, huiles alimentaires autres que l'huile d'olive, sucre, thé, lait régénéré subventionné |
+| []{#r-comp-pb-1993}publié au *Journal officiel* n° 6 du 22 janvier 1993 | étape | décret n° 93-59 du 11 janvier 1993 [@decret93-59, article unique, tableaux A et C, p. 129-130] | tableau A de seize rubriques : pain, farine et semoule, couscous et pâtes, huiles alimentaires, sucre et lait régénéré, tous « subventionnés » ; papiers, manuels et cahiers scolaires subventionnés ; tableau C (marges de distribution) : riz, café, concentré de tomates, beurre |
+| []{#r-comp-pb-1994-onh}[8 mars 1994]{.insecable} : dépôt du *Journal officiel* n° 17 au gouvernorat de Tunis le 3 mars 1994, plus cinq jours | étape | loi n° 94-37 du 24 février 1994 [@loi94-37-onh, article unique, p. 365-366] | art. 2 nouveau du décret-loi n° 70-13 : l'ONH assure l'importation des huiles végétales comestibles et la vente en gros ; des personnes physiques ou morales peuvent assurer tout ou partie de ces opérations, aux conditions fixées par décret |
+| []{#r-comp-pb-1995}publié au *Journal officiel* n° 54 du 7 juillet 1995 | ajustement | décret n° 95-1142 du 28 juin 1995 [@decret95-1142, article unique, p. 1476] | tableaux A, B et C remplacés ; produits alimentaires du tableau A inchangés ; tableau C : riz, concentré de tomates, sucre en morceaux, beurre, papier et cahiers scolaires |
+| []{#r-comp-pb-2001-lait}publié au *Journal officiel* n° 93 du 20 novembre 2001 | ajustement | décret n° 2001-2708 du 13 novembre 2001 [@decret2001-2708, art. 2 et 5, p. 3975] | prime de 750 millimes par kilo de poudre de lait fabriquée à partir de lait frais local, servie aux centrales laitières, payée par deux fonds de compétitivité, hors de la Caisse |
+| []{#r-comp-pb-2002}publié au *Journal officiel* n° 81 du 4 octobre 2002 | ajustement | décret n° 2002-2145 du 30 septembre 2002 [@decret2002-2145, art. 1^er^ et 2, p. 2338-2339] | [unité de compensation des produits de base](#g-unite-compensation-produits-base) au ministère des Finances, chargée notamment de « la fixation des besoins annuels de compensation des produits de base et les modalités de leur financement » |
+| []{#r-comp-pb-2005}publié au *Journal officiel* n° 90 du 11 novembre 2005 | ajustement | décret n° 2005-2934 du 1^er^ novembre 2005 [@decret2005-2934, art. 1^er^ et 2, p. 2988] | l'unité est rattachée au ministère du Commerce et de l'Artisanat |
+| []{#r-comp-pb-2015-delai}publié au *Journal officiel* n° 46 du 9 juin 2015 | ajustement | décret gouvernemental n° 2015-307 du 1^er^ juin 2015 [@decret2015-307, art. 1^er^, p. 1134] | délai de réponse de l'administration à une demande d'homologation : 30 → 25 jours ; tableau A inchangé |
+| []{#r-comp-pb-2015-loi}publiée au *Journal officiel* n° 77-78 des 25 et 29 septembre 2015 | ajustement | loi n° 2015-36 du 15 septembre 2015 [@loi2015-36, art. 3 et 78, pp. 2320 et 2336] | même exclusion de la liberté des prix, liste fixée par décret gouvernemental (art. 3) ; abrogation de la loi n° 91-64, dont les textes d'application « restent en vigueur tant qu'un nouveau texte n'est pas promulgué » (art. 78) |
+| []{#r-comp-pb-2020}[9 décembre 2020]{.insecable} : *Journal officiel* n° 121 du 8 décembre 2020, le lendemain de sa publication électronique | étape | arrêté du ministre du commerce et du développement des exportations du 1^er^ décembre 2020 [@arrete-2020-12-01-cahier-produits-subventionnes, p. 2863-2864] ; cahier des charges annexé à l'édition arabe | cahier des charges des grossistes en produits de base subventionnés : dérivés des céréales (semoule, farine, pâtes, couscous), huile végétale subventionnée, sucre ; prix fixés « conformément à la réglementation en vigueur », vente aux seuls détaillants identifiés, interdiction des usages industriels, saisie des achats et des ventes dans les applications du ministère |
+| []{#r-comp-pb-2025}[15 juillet 2025]{.insecable} : *Journal officiel* n° 89 du 14 juillet 2025, le lendemain de sa publication électronique | étape | décret n° 2025-344 du 11 juillet 2025 [@decret2025-344-oc, art. 1^er^, 10 et 15, p. 1652-1654] | récolte 2025 : prix de base à la production du blé dur 90 → 100 D/q, du blé tendre 70 → 80 D/q (@sec-compensation-pb-cereales) |
+
+: Les règles communes des produits de base, texte par texte, 1979-2025 {#tbl-compensation-pb-textes}
+
+::::
+
+## L'état du droit en juillet 2026 {#sec-compensation-pb-etat-du-droit .domicile-unique}
+
+Au 25 juillet 2026, trois règles sont établies.
+
+- **La règle générale.** Les prix sont libres, sauf ceux des biens, produits et services de première nécessité, dont la liste est fixée par décret gouvernemental ([loi de 2015, art. 3](#r-comp-pb-2015-loi)). Cette liste est celle du décret de 1991, dans les tableaux du [décret de 1995](#r-comp-pb-1995) : le pain, la farine et la semoule, le couscous et les pâtes, les huiles alimentaires, le sucre et le lait régénéré, dans leur variété subventionnée, ainsi que les papiers, manuels et cahiers scolaires subventionnés, sont soumis à l'homologation des prix à tous les stades. Aucun texte postérieur à 1995 qui remplace ou modifie ce tableau n'est identifié ici.
+
+  <!-- RECHERCHE r-decret-91-1996-liste-apres-2015 : texte remplaçant ou modifiant le tableau A du décret n° 91-1996 après la loi n° 2015-36 (voir docs/recherches.yml) -->
+
+- **Le prix à la production des céréales.** Il est fixé par arrêté conjoint des ministres chargés des Finances et de l'Agriculture, et non plus par décret, depuis le [décret-loi du 24 septembre 2025](../entreprises_publiques/_offices.html#r-ep-oc-2025). Pour la récolte 2026, le [prix de base à la production](#g-prix-de-base-production) est de 100 D/q pour le blé dur et de 80 D/q pour le blé tendre, et le [prix normal de rétrocession](#g-prix-normal-retrocession) de 156,456 D/q et de 124,671 D/q ([arrêté du 24 juillet 2026](../entreprises_publiques/_offices.html#r-ep-oc-camp-2026)).
+- **Le commerce de gros.** Les grossistes qui vendent la semoule, la farine, les pâtes, le couscous, l'huile végétale et le sucre subventionnés appliquent les prix réglementés et ne vendent qu'aux détaillants identifiés ([cahier des charges de 2020](#r-comp-pb-2020)).
+
+Le dernier prix de vente au public du pain publié au *Journal officiel* est celui de 1991 : 120 millimes le gros pain de 500 g, 100 millimes la baguette de 250 g ([arrêté du 15 août 1991](#r-comp-pb-1991-pain)). Aucun acte postérieur qui fixe ou homologue les prix de vente au public du pain, de la farine, de la semoule, des pâtes, de l'huile, du sucre ou du lait subventionnés n'est identifié ici ; les prix en vigueur et l'acte qui les fixe ne sont donc pas établis.
+
+<!-- RECHERCHE r-comp-pb-prix-consommateur-apres-1991 : acte fixant ou homologuant, après 1991, les prix de vente au public des produits de base subventionnés (voir docs/recherches.yml) -->
+
+Le dispositif n'a pas de condition d'accès : toute personne qui achète le produit subventionné en bénéficie. La population couverte est celle des consommateurs ; sa répartition par niveau de vie est mesurée par les études d'impact (@sec-compensation-incidence-alimentaire).
+
+## Le circuit : qui achète, qui vend, qui paie {#sec-compensation-pb-circuit .domicile-unique}
+
+Chaque produit a un opérateur public, qui importe ou achète à la production, revend au prix fixé et reçoit l'écart. Le statut, les comptes et les dettes de ces offices sont exposés au volume « Les entreprises publiques » ([l'Office des céréales](../entreprises_publiques/_offices.html#sec-ep-ge-oc), [l'ONH](../entreprises_publiques/_offices.html#sec-ep-ge-onh), [l'Office du commerce](../entreprises_publiques/_offices.html#sec-ep-ge-otc)).
+
+| Produit | Opérateur | Ce que fait l'opérateur | Texte |
+|---|---|---|---|
+| Céréales et dérivés | [Office des céréales](#g-office-cereales) | achète la récolte au prix de base à la production, importe le complément, rétrocède les blés aux minoteries au prix normal de rétrocession | [décret-loi de 1970](#r-comp-pb-1970-oc) |
+| Huiles végétales | [Office national de l'huile](#g-onh) | importe les huiles végétales comestibles et vend en gros ; monopole jusqu'en 1994 | [décret-loi de 1970](#r-comp-pb-1970-onh) ; [loi de 1994](#r-comp-pb-1994-onh) |
+| Sucre | [Office du commerce de la Tunisie](#g-office-commerce) | importe le sucre roux et blanc, produit de base qui lui est confié | [arrêté de 1989](#r-comp-pb-1989) |
+
+: Les opérateurs de la compensation des produits de base. {#tbl-compensation-pb-circuit}
+
+**Qui décide.** Le prix à la consommation est fixé, jusqu'en 1991, par arrêté du ministre de l'Économie nationale sous le régime de la taxation ; depuis 1992, il relève de l'homologation du décret de 1991. Le besoin annuel de compensation et son financement relèvent, depuis 2002, d'une [unité de compensation des produits de base](#r-comp-pb-2002), placée au ministère des Finances puis, [depuis 2005](#r-comp-pb-2005), au ministère du Commerce.
+
+**Le chemin de l'argent.** Jusqu'en 1986, la Caisse vit surtout de ses recettes propres, et le budget complète ; à partir de 1987, elle reçoit une dotation du budget qui couvre presque toutes ses charges (@sec-compensation-1987). Le poste « produits de base » du budget, qui apparaît en 2003, correspond à cette dotation (@sec-compensation-par-poste). Il dépasse, chaque année de 2018 à 2023, la somme des transferts du budget à l'Office des céréales et à l'ONH ([les transferts du budget](../entreprises_publiques/_transferts.html#sec-ep-transferts)) ; la part du poste qui va à d'autres bénéficiaires n'est pas attribuée par les sources budgétaires.
+
+<!-- TODO (documentaliste) : bénéficiaires de l'écart entre le poste « produits de base » et les transferts à l'Office des céréales et à l'ONH (181 à 307 MD par an, 2018-2023) : la ligne « Commerce » de l'annexe des transferts contient aussi l'Office du commerce et la SNCPA ; le poste est un réalisé en 2018 et une colonne non qualifiée de la BCT de 2019 à 2023, d'où un mélange possible d'états d'exécution. À obtenir : PAP et RAP de la mission Commerce (programme des produits de base), lois de règlement. Opérateur du lait régénéré subventionné et du papier scolaire : non établis (le décret n° 2001-2708 nomme les centrales laitières pour une prime hors Caisse ; la SNCPA figure dans la mission Commerce, et l'art. 64 de la loi de finances pour 2026 vise le « papier subventionné », JORT n° 148 de 2025, p. 4247, à lire). -->
+
+Les arriérés de la Caisse envers les offices sont réglés par des prêts du Trésor : 95 MD en 1981, dont 90 MD à rembourser à l'Office des céréales et 5 MD à l'ONH, et 73 MD en 1992 pour les avances du Trésor à l'Office des céréales (@sec-compensation-financement). Les créances croisées de l'État et de ces offices, et leur compensation en 2023, sont exposées au volume « Les entreprises publiques » ([l'Office des céréales](../entreprises_publiques/_offices.html#sec-ep-ge-oc)).
+
+Le RAP de la mission Commerce pour 2023 assigne au programme un objectif, « حسن التصرف في نفقات الدعم وتوجيهه نحو مستحقيه » (bonne gestion des dépenses de subvention et orientation vers ceux qui y ont droit), par l'organisation et le contrôle des circuits de distribution ; il décrit un régime de quotas de farine aux boulangeries et d'huile aux conditionneurs [@rap-2023-commerce, pp. 11-12].
+
+## Les céréales et leurs dérivés {#sec-compensation-pb-cereales .domicile-unique}
+
+Les céréales sont le premier produit de la compensation à toutes les dates connues : de 61 à 83 % des charges de la Caisse (@tbl-compensation-charges-produits). Leur compensation porte sur deux prix, l'un payé au producteur, l'autre par le consommateur.
+
+- **Le prix à la production.** L'Office des céréales achète la récolte au prix de base à la production, que fixe chaque année un décret de campagne, puis, [depuis 2025](../entreprises_publiques/_offices.html#r-ep-oc-2025), un arrêté conjoint des ministres des Finances et de l'Agriculture.
+- **Le prix de rétrocession.** L'Office revend les blés aux minoteries et aux semouleries au prix normal de rétrocession, que fixe le même texte. Le texte fixe aussi une [prime de compensation](#g-prime-de-compensation).
+- **Les dérivés.** La farine, la semoule, le pain, les pâtes et le couscous ont des prix de vente fixés par arrêté jusqu'en 1991 et soumis à l'homologation depuis 1992 (@sec-compensation-pb-1991).
+
+Depuis la récolte 2010, les prix de base à la production ont été relevés sept fois ; le relèvement de la récolte 2022 est le plus fort : de 65 à 90 D/q pour le blé dur, de 50 à 70 D/q pour le blé tendre (@tbl-compensation-pb-prix-campagne). Le registre des décrets de campagne, récolte par récolte, est tenu au volume « Les entreprises publiques » ([les décrets de campagne de l'Office des céréales](../entreprises_publiques/_offices.html#tbl-ep-registre-oc-campagnes)).
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+import dinars_constants as dc
+ipc = dc.ipc()
+B = dc.ANNEE_BASE
+# Récoltes où le prix de base à la production change, d'après le registre des décrets de
+# campagne du volume « Les entreprises publiques » (tbl-ep-registre-oc-campagnes).
+lignes = [
+    (2010, "r-ep-oc-camp-2010", 43.0, 35.0, 64.675, 51.242),
+    (2014, "r-ep-oc-camp-2014", 48.0, 38.0, 71.675, 54.242),
+    (2015, "r-ep-oc-camp-2015", 53.0, 42.0, 76.675, 58.242),
+    (2017, "r-ep-oc-camp-2017", 58.0, 44.0, 83.164, 62.553),
+    (2019, "r-ep-oc-camp-2019", 62.0, 47.0, 91.822, 67.959),
+    (2021, "r-ep-oc-camp-2021", 65.0, 50.0, 97.875, 76.825),
+    (2022, "r-ep-oc-camp-2022", 90.0, 70.0, 143.264, 111.789),
+    (2025, "r-ep-oc-camp-2025", 100.0, 80.0, 156.193, 124.408),
+]
+def f(v, d=3):
+    return f"{v:,.{d}f}".replace(",", " ").replace(".", ",")
+out = ["| Récolte | Blé dur<br>(D/q) | Blé dur<br>(D/q de " + str(B) + ") | Blé tendre<br>(D/q) | "
+       "Blé tendre<br>(D/q de " + str(B) + ") | Rétrocession, blé dur<br>(D/q) | "
+       "Rétrocession, blé tendre<br>(D/q) |",
+       "|---|---:|---:|---:|---:|---:|---:|"]
+for a, ancre, bd, bt, rd, rt in lignes:
+    k = ipc[B] / ipc[a]
+    out.append(f"| [{a}](../entreprises_publiques/_offices.html#{ancre}) | {f(bd)} | {f(bd * k, 1)} | "
+               f"{f(bt)} | {f(bt * k, 1)} | {f(rd)} | {f(rt)} |")
+print("\n".join(out))
+print(f"\n: Le prix de base à la production et le prix normal de rétrocession des blés, aux "
+      f"récoltes où le prix de base change, 2010-2025 (dinars par quintal, D/q). Le prix de base "
+      f"est aussi donné en dinars de {B}, calculés avec l'indice des prix à la consommation de "
+      f"l'année de la récolte. L'indice est la série longue base 100 en 1970, prolongée après 2023 par l'indice en base "
+      f"2015 que relaie la BCT. La récolte 2026 garde les prix de base de 2025 ; ses prix "
+      f"normaux de rétrocession sont de 156,456 et 124,671 D/q. Chaque récolte renvoie à son "
+      f"texte, au registre des décrets de campagne. {{#tbl-compensation-pb-prix-campagne}}\n")
+```
+
+<!-- TODO (modeliste / données) : série « cereales-prix-campagne » (récoltes 2010-2026) à constituer dans tunisia-data depuis tbl-ep-registre-oc-campagnes, pour une figure des prix de campagne lue par figtools.series() ; le tableau ci-dessus reprend les lignes du registre en attendant. -->
+
+<!-- TODO (documentaliste) : décrets de campagne de 1970 à 2009 (prix de base, prix normaux de rétrocession, prime de compensation) : intitulés et pages relevés, lecture à faire page par page (corpus local, OCR ; 1970-1972 déjà en texte), au moins pour 1970, 1974, 1984, 1992 et 2008. -->
+
+Les décrets de campagne des récoltes 1993, 1994, 1997 à 1999, 2001 à 2004 et 2006 ne sont pas identifiés ici.
+
+<!-- RECHERCHE r-comp-pb-decrets-campagne-lacunes : décrets de campagne des céréales absents pour les campagnes 1993-1994, 1994-1995, 1997-1998 à 1999-2000, 2001-2002 à 2004-2005 et 2006-2007 (voir docs/recherches.yml) -->
+
+**Le prix du pain.** Le tableau suivant donne le prix de vente au public du pain fixé par les textes à sept dates, de 1975 à 1991.
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+import dinars_constants as dc
+ipc = dc.ipc()
+B = dc.ANNEE_BASE
+lignes = [
+    ("[juin 1975]{.insecable}", 1975, "pain de 700 g", 65, "[@bct-ra-1975] ; 55 millimes auparavant"),
+    ("[3 mai 1979]{.insecable}", 1979, "pain de 700 g", 70, "[décret du 7 mai 1979](#r-comp-pb-1979)"),
+    ("1980", 1980, "pain (« 670 g » dans le tableau de la BCT)", 80, "[@bct-ra-1983]"),
+    ("[1^er^ janvier 1984]{.insecable}", 1984, "pain de 700 g", 170, "[arrêté du 28 décembre 1983](#r-comp-pb-1983-pain)"),
+    ("[1^er^ mars 1984]{.insecable}", 1984, "pain de 700 g", 80, "[arrêté du 17 février 1984](#r-comp-pb-1984-pain)"),
+    ("août 1991", 1991, "gros pain de 500 g", 120, "[arrêté du 15 août 1991](#r-comp-pb-1991-pain)"),
+    ("août 1991", 1991, "baguette de 250 g", 100, "[arrêté du 15 août 1991](#r-comp-pb-1991-pain)"),
+]
+out = ["| Date d'effet | Pain | Prix<br>(millimes) | Prix<br>(millimes de " + str(B) + ") | Source |",
+       "|---|---|---:|---:|---|"]
+for date, a, pain, prix, src in lignes:
+    cst = prix * ipc[B] / ipc[a]
+    out.append(f"| {date} | {pain} | {prix} | {cst:,.0f} | {src} |".replace(",", " "))
+print("\n".join(out))
+print(f"\n: Le prix de vente au public du pain fixé par les textes, 1975-1991 (millimes ; "
+      f"1 000 millimes = 1 dinar). Les millimes de {B} sont calculés avec l'indice des prix à "
+      f"la consommation de l'année de la date d'effet, série longue base 100 en 1970 prolongée "
+      f"après 2023 par l'indice en base 2015 que relaie la BCT. Le poids du pain change en 1991 : les "
+      f"prix de 1991 ne se comparent pas directement aux précédents. {{#tbl-compensation-pb-prix-pain}}\n")
+```
+
+<!-- TODO (documentaliste) : prix du pain entre mars 1984 et août 1991, à lire (corpus local, OCR) : arrêtés du 17 juillet 1984 (JORT n° 43 de 1984, p. 1594-1596), du 19 juillet 1985 (n° 55 de 1985, p. 946), de 1986 et de 1988, de 1989 (n° 77 de 1989, p. 1821-1825, dont « poids et prix de vente du pain ») et de 1990 ; décret n° 84-785 du 10 juillet 1984 (campagne 1983-1984, n° 43 de 1984). Le tableau ne vaut pas série continue tant qu'ils ne sont pas lus. -->
+
+<!-- TODO (documentaliste) : date d'effet de l'arrêté du 15 août 1991 sur le prix du pain (JORT n° 61 de 1991, p. 1545) : la note documentaire donne le 17 août 1991, l'index des fascicules une publication le 3 septembre 1991 ; à relire sur le fascicule (image). -->
+
+## Les huiles végétales {#sec-compensation-pb-huiles .domicile-unique}
+
+L'huile végétale subventionnée est le deuxième produit de la compensation : de 11 à 21 % des charges de la Caisse selon l'année, 214,4 MD en 2011 (@tbl-compensation-charges-produits). L'huile d'olive n'en fait pas partie : elle est exclue de la liste de 1991, et le soutien au producteur oléicole relève du volume « L'agriculture ».
+
+- **L'opérateur.** L'Office national de l'huile importe les huiles végétales comestibles et les vend en gros ; il en a le monopole [depuis 1970](#r-comp-pb-1970-onh), puis, [depuis 1994](#r-comp-pb-1994-onh), des personnes privées peuvent assurer tout ou partie de ces opérations. [Depuis 2000](../entreprises_publiques/_offices.html#r-ep-onh-2000), son budget comprend un titre des opérations pour le compte de l'État, distinct de son intervention dans le secteur oléicole.
+- **Le prix.** Les huiles alimentaires sont taxées en 1970 ; depuis 1993, seules les « huiles alimentaires subventionnées » sont soumises à l'homologation ([décret de 1993](#r-comp-pb-1993)). En 1975, l'huile mélangée passe de 180 à 200 millimes le litre [@bct-ra-1975].
+- **Les quantités.** L'huile végétale subventionnée distribuée est de 105,2 milliers de tonnes en 2021, 67,9 en 2022 et 37,6 en 2023, pour 174 prévues ; le ministère du Commerce explique l'écart de 2023 par l'insuffisance des stocks d'huile brute, l'ONH n'ayant pu prendre livraison des quantités contractées faute de payer ses fournisseurs, en raison du retard de paiement de la subvention qui lui est due [@rap-2023-commerce, pp. 11-12].
+
+Avant 1970, la Caisse de compensation percevait une redevance sur les huiles de graines importées (@sec-compensation-avant-1970).
+
+<!-- TODO (documentaliste) : texte de la concession d'approvisionnement en huile végétale subventionnée confiée à l'ONH (« pour le compte de l'État et dans le cadre d'une concession », rapport du ministère des Finances sur les entreprises publiques) : à chercher. Décret n° 74-876 (taxe compensatrice sur l'huile d'olive exportée affectée à la Caisse, JORT n° 58 de 1974, p. 2090) : à océriser et à lire, dates du fascicule à vérifier. -->
+
+## Le sucre {#sec-compensation-pb-sucre .domicile-unique}
+
+Le sucre est le premier produit soutenu en 1974 — 15 MD, avant les céréales [@bct-ra-1974] —, puis une ligne secondaire : 12,9 MD en 1986, 15,4 MD en 1996, aucune charge en 2001, 10,8 MD en 2011 (@tbl-compensation-charges-produits).
+
+- **L'opérateur.** L'Office du commerce de la Tunisie importe le sucre roux et blanc, que [l'arrêté de 1989](#r-comp-pb-1989) range parmi les produits de base qui lui sont confiés.
+- **Le prix.** Le sucre en poudre est fixé à [170 millimes le kilo au public en mai 1974](#r-comp-pb-1974-sucre), puis à 200 millimes en juin 1975 [@bct-ra-1975]. Depuis 1993, le « sucre subventionné » est soumis à l'homologation ; le sucre en morceaux relève, depuis 1995, de l'encadrement des marges ([décret de 1995](#r-comp-pb-1995)).
+- **Le sucre d'usage artisanal.** Le cahier des charges des grossistes de 2020 réserve aux artisans et aux apiculteurs le sucre blanc en vrac vendu au prix réglementé ([arrêté de 2020](#r-comp-pb-2020)).
+
+Avant 1970, la Caisse de compensation percevait une redevance sur les sucres importés (@sec-compensation-avant-1970). La taxe sur le sucre instituée par la loi de finances pour 2021 relève du volume [« La fiscalité »](../fiscalite/index.html) et du registre de l'Office du commerce ([les entreprises publiques](../entreprises_publiques/_offices.html#sec-ep-ge-otc)).
+
+## Le lait {#sec-compensation-pb-lait .domicile-unique}
+
+Le lait compensé est le lait régénéré, fabriqué à partir de poudre de lait. Les prélèvements perçus à l'importation de la poudre de lait au profit de la Caisse sont exposés au chapitre de la Caisse (@sec-compensation-prelevements-importation).
+
+- **La liste.** « Lait et dérivés » en 1970 ; « lait régénéré » dans la liste de 1982 ([décret de 1982](#r-comp-pb-1982)) ; « lait régénéré subventionné » au tableau A depuis 1991 ([décret de 1991](#r-comp-pb-1991-liste)).
+- **Le prix.** En 1991, le lait régénéré demi-écrémé est vendu au public 350 millimes le litre pasteurisé, 380 millimes stérilisé en bouteille, 440 millimes en brique UHT ([arrêté du 30 juillet 1991](#r-comp-pb-1991-lait)).
+- **Les charges.** 9,2 MD en 1986, 25,7 MD en 1996, 9,8 MD en 2001, 7,3 MD en 2006, 2,8 MD en 2008, 23,1 MD en 2011 (@tbl-compensation-charges-produits). D'après les rapports de la BCT, le lait sort des charges de la Caisse en 2008 et y revient en 2011 ; la liste du tableau A porte le lait régénéré subventionné sans interruption depuis 1991.
+- **Un soutien hors de la Caisse.** Depuis 2001, une prime par kilo de poudre de lait fabriquée à partir de lait frais local est servie aux centrales laitières, payée par deux fonds de compétitivité et non par la Caisse ([décret de 2001](#r-comp-pb-2001-lait)). Le soutien à la filière du lait frais relève du volume « L'agriculture ».
+
+<!-- TODO (documentaliste) : opérateur du lait régénéré subventionné (qui le vend pour le compte de la Caisse) et textes de prix après 1991 ; arrêté du 17 novembre 1989 sur le prix du lait régénéré demi-écrémé (JORT n° 77 de 1989, p. 1824) à lire. -->
+
+## Les autres produits {#sec-compensation-pb-autres}
+
+Les autres produits — papier scolaire, engrais, pâtes, couscous, concentré de tomate — sont des lignes secondaires des charges de la Caisse (@tbl-compensation-charges-produits). Les chiffres viennent des rapports de la BCT et du ministère des Finances, non d'un texte qui ouvrirait ou fermerait le droit à la subvention.
+
+- **Le papier scolaire.** Les papiers, manuels et cahiers scolaires subventionnés sont à la liste des produits homologués depuis 1993 (@sec-compensation-pb-1991). Leur compensation coûte 16,2 MD en 1996, 15,4 MD en 2001, 5,6 MD en 2006 et 4,3 MD en 2011 (@tbl-compensation-charges-produits) ; en 1995, 17 MD de papier scolaire sont pris en charge par le Centre national pédagogique, hors du compte de la Caisse (@tbl-compensation-compte-caisse).
+- **Les pâtes, le couscous et le concentré de tomate.** Les pâtes et le couscous sont taxés depuis 1970 et homologués, dans leur variété subventionnée, depuis 1993 ; le concentré de tomate n'est qu'au tableau des marges. Le rapport de la BCT pour 2011 en détaille les charges : 4,2 MD pour les pâtes et le couscous, 9,6 MD pour le double concentré de tomate.
+- **Les produits qui ne figurent plus dans les charges.** La viande (0,5 MD en 1974) et les engrais (10 MD en 1974, 16,9 MD en 1986) [@bct-ra-1974 ; @bct-ra-1988, p. 69] ; d'après les rapports de la BCT, la subvention de certains engrais et du sucre produit localement prend fin en 1999 (@fig-compensation-par-produit). Les intrants agricoles relèvent du volume « L'agriculture ».
+
+<!-- TODO (documentaliste) : textes de la prise en charge du papier scolaire par le Centre national pédagogique en 1995 et de la subvention du papier scolaire (opérateur) ; textes de fin de la subvention des engrais, du maïs, des tourteaux de soja et du sucre produit localement (1992-1999) — à chercher. (rédacteur) : renvoi vers le volume « L'éducation » pour le papier scolaire, si ce volume traite des fournitures. -->
+
+## Le ciblage {#sec-compensation-pb-ciblage}
+
+Aucun texte organisant le ciblage des subventions aux produits de base, ou leur remplacement par des transferts monétaires, n'est identifié ici. Les transferts monétaires aux ménages pauvres relèvent de l'assistance sociale ([« Les prestations non contributives »](../prestations_sociales/_non_contributives.html#sec-prest-non-contributives)) ; la répartition des subventions alimentaires entre les ménages est exposée au chapitre des études d'impact (@sec-compensation-incidence-alimentaire).
+
+<!-- RECHERCHE r-comp-pb-ciblage-2013-2026 : texte organisant le ciblage des subventions aux produits de base ou leur remplacement par des transferts monétaires, 2013-2026 (voir docs/recherches.yml) -->
+
+## La longue période {#sec-compensation-pb-longue-periode}
+
+Deux familles de chiffres budgétaires se succèdent : les charges de la Caisse par produit, de 1985 à 2011, d'après les rapports de la BCT, qui relaient l'administration ; le détail par produit du poste budgétaire, que le ministère des Finances ne donne que pour 2009-2011. Les rapports extérieurs qui ventilent la compensation par produit — la Banque mondiale pour 1970-1984, le FMI pour 1988-1998 — sont présentés à part (@sec-compensation-bm-1985).
+
+### Les charges de la Caisse par produit, 1985-2011 {#sec-compensation-pb-charges}
+
+Les céréales forment, à toutes les dates, la plus grande part des charges ; l'huile vient ensuite. Le sucre, les engrais et le lait pèsent dans les années 1980, puis s'effacent.
+
+| Produit | 1986 | 1996 | 2001 | 2006 | 2008 | 2011 |
+|---|---:|---:|---:|---:|---:|---:|
+| Céréales et dérivés | 133,4 | 305,1 | 181,2 | 239,5 | 873,0 | 883,2 |
+| Huiles | 24,3 | 70,0 | 34,0 | 69,0 | 167,5 | 214,4 |
+| Sucre | 12,9 | 15,4 | 0,0 | | | 10,8 |
+| Lait | 9,2 | 25,7 | 9,8 | 7,3 | 2,8 | 23,1 |
+| Engrais | 16,9 | | | | | |
+| Papier scolaire | | 16,2 | 15,4 | 5,6 | 4,6 | 4,3 |
+| Autres | 21,3 | 4,0 | 7,5 | | | 13,8 |
+| **Total des charges** | **218,0** | **436,4** | **247,9** | **321,4** | **1 047,9** | **1 149,6** |
+
+: Les charges de la Caisse générale de compensation par produit, à six dates (millions de dinars courants). Sources : rapports annuels de la BCT [@bct-ra-1988, p. 69 ; @bct-ra-2001, p. 96 ; @bct-ra-2005, p. 101 ; @bct-ra-2009, p. 112 ; @bct-ra-2010, p. 25 ; @bct-ra-2011, p. 37]. Le champ des produits change d'une date à l'autre ; en 2011, la ligne « autres » réunit le double concentré de tomate (9,6 MD) et les pâtes alimentaires et le couscous (4,2 MD). Une case vide est un produit que le rapport ne détaille pas à cette date. {#tbl-compensation-charges-produits}
+
+<!-- TODO (rédacteur) : colonne en dinars constants de 2025 à ajouter à ce tableau, par un tableau engendré depuis la série compensation-compte-caisse. -->
+
+Le @fig-compensation-par-produit donne les charges par produit pour toutes les années où un rapport les détaille.
+
+```{python}
+#| label: fig-compensation-par-produit
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import compensation as cm
+cm.figure(
+    "par_produit",
+    caption=("Les charges de la Caisse générale de compensation par produit, 1985-2011, pour "
+             "les années où le détail est publié : en millions de dinars courants et en part "
+             "du total des charges"),
+    note_lecture=(
+        "Une barre par année où les rapports annuels de la Banque centrale détaillent les "
+        "charges ; 1989 à 1991 et 1994 n'ont pas de détail et restent vides. Le tiret noir "
+        "est le total des charges de l'année : là où la barre ne l'atteint pas, une partie "
+        "des charges n'est pas ventilée par la source (1985, 1992, 1995). La seconde vue "
+        "rapporte chaque produit à ce total.\n\n"
+        "Les traits verticaux marquent les changements des produits détaillés par les "
+        "rapports de la Banque centrale, dont le texte est en infobulle : produits qui ne "
+        "figurent plus en 1991 et de 1992 à 1994, fin de la subvention de certains engrais "
+        "et du sucre produit localement en 1999, sortie du lait en 2008, "
+        "lignes nouvelles en 2011. Ce sont des lignes de dépense, non des changements de la "
+        "liste des produits fixée par décret."))
+```
+
+### Le poste « produits de base » du budget, 2003-2026 {#sec-compensation-pb-poste}
+
+Le poste « produits de base » du budget, de 217,8 MD en 2003 à 4 079 MD prévus pour 2026, est tracé avec les deux autres postes de la compensation, en millions de dinars, en part des dépenses de l'État, en part du PIB et en part de la dépense de compensation, au @fig-compensation-par-poste. Il fait 7,0 % des dépenses de l'État hors service de la dette en 2015 comme en 2024, et 8,2 % en 2008 comme en 2022.
+
+### Le détail par produit selon le ministère des Finances, 2009-2011 {#sec-compensation-pb-ministere}
+
+Pour 2009-2011, le ministère des Finances détaille le poste des produits de base.
+
+| Produit | 2009 | 2010 | 2011 |
+|---|---:|---:|---:|
+| Céréales | 687,0 | 613,0 | 833,7 |
+| Huile | 109,0 | 112,7 | 214,4 |
+| Lait | | | 23,1 |
+| Sucre | | | 10,8 |
+| Papier scolaire | | | 4,3 |
+| Autres | | | 13,7 |
+| **Produits de base** | **800,0** | **730,0** | **1 100,0** |
+
+: La compensation des produits de base par produit, 2009-2011 (millions de dinars courants). Source : ministère des Finances [@minfin-finances-publiques-2011]. Le détail des produits autres que les céréales et l'huile n'est donné que pour 2011. {#tbl-compensation-produits-2009-2011}
+
+Ce détail budgétaire ne coïncide pas, ligne à ligne, avec les charges de la Caisse que relaie la Banque centrale (@tbl-compensation-charges-produits) : le premier compte ce que le budget verse dans l'année, les secondes ce que la Caisse doit au titre de l'année.
+
+Après 2011, aucune série budgétaire par produit n'est établie ici. Les transferts du budget à l'Office des céréales et à l'ONH, de 2017 à 2024, sont exposés au volume « Les entreprises publiques » ([les transferts du budget](../entreprises_publiques/_transferts.html#sec-ep-transferts)).
+
+<!-- TODO (documentaliste) : série budgétaire par produit après 2011 : PAP et RAP de la mission Commerce, budgets citoyens, lois de règlement (rapports de la BCT 2015-2019 sans ventilation dans les passages lus) ; quantités subventionnées de farine et d'huile, 2021-2023, au RAP 2023 (p. 11-12) à étendre aux autres années. -->
+
+## Ce qu'en dit l'économie {#sec-compensation-pb-economie}
+
+**La question.** La loi parle d'« agir sur les prix » des produits de « première nécessité ». L'économiste pose au dispositif trois questions : à qui va le transfert, en dinars et en part du budget du ménage ; quelle part de la dépense sort des ménages visés ; et ce que donnerait, à budget égal, un transfert monétaire. Les mesures faites en Tunisie sur enquête, avec leur méthode, sont exposées au chapitre des études d'impact (@sec-compensation-incidence-alimentaire) ; cette section n'en reprend que la lecture.
+
+**Ce que dit la théorie.**
+
+- *Une subvention au prix verse à chacun en proportion de sa consommation.* Pour un aliment de base, dont la part dans le budget décroît avec le revenu, la subvention peut croître en dinars avec le revenu et décroître en part de la dépense. Le document du réseau Commitment to Equity (CEQ) sur la Tunisie distingue pour cela une subvention « progressive en termes relatifs », qui réduit l'inégalité, et une subvention « pro-pauvre en termes absolus », qui donne plus par tête aux pauvres [@jouini-lustig-moummi-shimeles-2017-ceq38, p. 6].
+- *Le choix du produit et de sa qualité peut cibler sans identifier les bénéficiaires* : c'est l'[auto-ciblage](#g-auto-ciblage). Selon Alderman et Lindert, le gain est réel mais borné par la ressemblance des préférences entre groupes, l'inégalité des revenus et la taille de la subvention [@alderman-lindert-1998-self-targeted]. Pour la Banque mondiale, il suppose qu'une variété supérieure non subventionnée soit disponible [@bm-1996-15878-subventions-alimentaires, encadrés A et B].
+- *Deux prix pour un même bien physique appellent l'arbitrage.* La Banque mondiale décrit le cas tunisien en 1996 : seule la farine est subventionnée ; elle sert à deux pains et à des usages non visés, la pâtisserie notamment, qui emploient une farine physiquement semblable [@bm-1996-15878-subventions-alimentaires, § 15-16].
+
+**Ce que mesure l'empirique.**
+
+- *Synthèse internationale.* Sur 122 programmes de transferts dans 48 pays, le programme médian donne aux pauvres environ 25 % de plus qu'une répartition au hasard, et un quart des programmes est régressif ; l'auto-sélection par la consommation, celle des subventions alimentaires générales, est rangée parmi les méthodes « au potentiel limité », mais la variabilité tient surtout aux écarts entre programmes d'une même méthode [@coady-grosh-hoddinott-2004-targeting, pp. 2-3]. Les mêmes auteurs nomment [erreur d'inclusion](#g-erreur-inclusion) la part reçue par des ménages non visés, et [erreur d'exclusion](#g-erreur-exclusion) celle des ménages visés qui ne reçoivent rien.
+- *Tunisie, 1985-1993.* La Banque mondiale exploite l'enquête de l'INS de 1990 et une enquête restreinte de 1993, réduites chacune à 1 018 ménages du district de Tunis ; elle calcule l'incidence par équivalent-adulte et par quintile de dépense, et simule les effets par un système de demande. En 1990, les produits subventionnés pèsent près de 9 % de la dépense du quintile le plus modeste et moins de 2 % de celle du plus aisé ; en 1985, le groupe le plus aisé reçoit deux fois plus par tête que le plus modeste ; en 1993, après le passage aux variétés subventionnées, les pauvres reçoivent 1,2 fois plus que les riches par équivalent-adulte [@bm-1996-15878-subventions-alimentaires, § iv-v et xxiii]. Les unités changent d'une année à l'autre : groupes par tête en 1985, quintiles par équivalent-adulte en 1990 et 1993.
+- *Tunisie, 2015-2016.* La Banque mondiale, par des « calculs du personnel » sur l'enquête de 2015-2016 et des prix et coûts de 2016 fournis par le gouvernement, dont la méthode n'est pas publiée, trouve que les produits subventionnés pèsent 4,4 % de la dépense des ménages et 8,3 % de celle du quintile le plus pauvre ; le prix réglementé couvre de 38 % du coût (semoule) à 96 % (lait) [@wb-tunisia-per-2020-fr, pp. 25-27].
+
+**Ce que retient le praticien.**
+
+- *Établi.* En part de la dépense, l'alimentaire subventionné pèse plusieurs fois plus chez les plus modestes, sur chacune des enquêtes de 1990, 2010 et 2015-2016, avec des mesures différentes. L'écart entre produits est fort : la semoule ne se juge pas comme la baguette ou le lait. La subvention versée à l'amont, sur la farine, ouvre des usages que le contrôle du circuit ne ferme pas [@bm-1996-15878-subventions-alimentaires, § 15-16].
+- *Débattu.* Ben Rouine et Chandoul, pour la Fondation Friedrich-Ebert, lisent l'étude de l'INS, du CRES et de la BAD de 2013 comme établissant un système « progressif » et « équitable », et reprochent aux institutions de ne retenir que la répartition en dinars [@fes-2022-sans-abri, pp. 34-37] ; ils opposent au passage aux transferts monétaires les erreurs d'exclusion des méthodes de ciblage [@fes-2022-sans-abri, pp. 30-31 et 44]. La Banque mondiale juge la part reçue par les non-pauvres de certaines subventions assez forte pour que d'autres formes d'assistance soient « plus efficaces » [@wb-tunisia-per-2020-fr, p. 26]. Le désaccord porte sur le critère, relatif ou absolu, et sur la comparaison retenue : la subvention contre rien, ou contre un transfert ciblé de même coût.
+- *Ce que les données tunisiennes ne tranchent pas.* Le montant des fuites hors ménages, que seul un solde entre budget et enquête approche (@sec-compensation-incidence-alimentaire) ; l'évolution de l'auto-ciblage entre 1993 et 2010, les deux mesures n'étant pas comparables ; l'effet de la compensation sur la filière céréalière ; l'incidence après 2016.
+
+<!-- TODO (bibliographe) : clés à créer pour Verme (2018, réformes des subventions au Moyen-Orient et en Afrique du Nord) et Currie et Gahvari (2008, transferts en nature ou en espèces), proposées par la fiche docs/notes/eco-compensation-produits-de-base.md ; la section pourra alors reprendre la stabilisation des prix comme objectif distinct du transfert et l'asymétrie entre réformes de l'énergie et de l'alimentaire (2010-2014). Pagination des paragraphes du rapport 15878-TUN à vérifier sur la copie. -->
+
+Littérature arrêtée au mois de novembre 2026.
