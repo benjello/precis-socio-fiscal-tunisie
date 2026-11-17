@@ -275,3 +275,48 @@ Lecture à l'image (200-400 dpi, autocontraste) ; traductions de travail. Contr�
   par les sommaires lus à l'image, et regarder les révisions budgétaires (« تنقيح ميزان ») qui portent
   des dispositions diverses.
 - Gallica (JO de l'État français, édition française du JOT, JO de l'Algérie) : 403 à l'outil.
+
+## 5. Sources françaises hors Gallica (passe du 17 novembre, fin d'après-midi)
+
+Gallica, HathiTrust, Légifrance et le CRL opposent une vérification anti-robot (non contournée) ;
+Google Books : quota épuisé ; Internet Archive : *JO de l'État français* à partir de 1941 seulement ;
+gazettes.africa : pas de Tunisie, Algérie à partir de 1946. **Édition française du JOT de
+1941-1947 non atteinte** (pistes : microfilm CRL / Los Angeles County Law Library ; HeinOnline).
+
+Lu à l'image :
+
+- **Plan triennal 1962-1964**, Secrétariat d'État au Plan et aux Finances, Tunis, 1962
+  (https://archive.org/details/micro_IA40244301_0257), p. 408-409 : « La Caisse de Compensation a pour
+  rôle essentiel de régulariser les prix et de faciliter le ravitaillement du pays. Tel est d'ailleurs
+  l'objet de la Caisse, prévu par les décrets institutifs du 6 Novembre 1941 et du 2 Octobre 1942 et
+  repris par le décret modificatif et codificatif du 28 Juin 1945. » (le Plan omet le décret du
+  5 août 1941 : erreur de la source). Le comité de gestion de l'art. 2 « ne se manifeste plus depuis
+  longtemps » ; gestion par le Service des affaires économiques et sociales ; ressources prises en
+  recette au budget (art. 7) et reversées « au "Fonds de lutte contre le chômage" et à la couverture
+  des avances faites à la Société Nationale des Chemins de Fer de Tunisie » ; aide à l'exportation des
+  confitures et des agrumes ; le Plan propose « la formule marocaine » (établissement public doté de la
+  personnalité civile et de l'autonomie financière).
+- **Perspectives décennales de développement 1962-1971**, même auteur, Imprimerie officielle, 1962
+  (https://archive.org/details/micro_IA40244301_0240), p. 103 : subventions à accorder par la Caisse
+  « régie par le décret du 28 juin 1945, mais sous réserve de révision de ses statuts » ; « les caisses
+  spéciales de compensation (tomate, ciments...) s'intégreraient dans la Caisse Générale tandis que
+  l'aide aux exportateurs serait retirée à cette dernière » ; le décret du 12 août 1943 est « le texte
+  de base » du contrôle des prix.
+- **Sola, *Le contrôle des prix et le commerce des produits sidérurgiques***, thèse, Paris, 1942
+  (https://archive.org/details/IA41551804_0048), p. 43 : « En Tunisie, régime analogue à celui de la
+  loi métropolitaine (décret beylical du 6 Mars 1941) » ; p. 104-105 : la loi du 21 octobre 1940
+  (« modifiant, complétant et codifiant la législation sur les prix ») ne reprend pas la faculté de
+  compensation du décret du 9 septembre 1939 ; les caisses de péréquation se rattachent, selon
+  l'auteur, aux « mesures accessoires » ajoutées par la loi n° 747 du 7 août 1942 (*JO de l'État
+  français* n° 189, 8 août 1942, p. 2724, lu).
+- **Legais, *Le pétrole en Algérie***, thèse, Alger, 1950 (https://archive.org/details/IA41542710_0070),
+  p. 62-63 : caisse de compensation des carburants liquides créée en Algérie par arrêtés des
+  12 octobre et 2 décembre 1940 (parallèle de la caisse tunisienne du 28 octobre 1940) ; « Caisse
+  algérienne de compensation des prix » attestée en 1946 (OCR, non relu), texte de création non trouvé.
+
+Portée : le décret de contrôle des prix du 6 mars 1941, visé par le décret de la Caisse, transpose
+le régime métropolitain (source de 1942) ; la Caisse elle-même n'a pas de modèle métropolitain
+attesté, et son parent le plus proche reste le dahir marocain du 25 février 1941. Le constat de 1962
+et le projet de « Caisse Générale » forment l'antécédent direct de la loi n° 70-26.
+Traduction : « تسوية الاسعار » se rend mieux par « régulariser les prix » (forme du dahir et du Plan
+de 1962) que par « péréquation des prix ».
