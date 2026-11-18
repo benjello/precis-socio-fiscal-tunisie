@@ -597,6 +597,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Prise en charge par le Fonds national de l'emploi de la contribution patronale au régime légal de sécurité sociale | تكفل الصندوق الوطني للتشغيل بمساهمة الأعراف في النظام القانوني للضمان الاجتماعي |  |
 | Privatisation | التخصيص |  |
 | Prix administré de cession | سعر التفويت الإداري |  |
+| Prix d'intervention | سعر التدخّل |  |
 | Prix de base à la production | السعر الأساسي عند الإنتاج |  |
 | Prix de cession préférentiel | السعر التفاضلي |  |
 | Prix de référence du mètre carré couvert | الثمن المرجعي للمتر المربع المبني |  |
@@ -627,7 +628,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Recouvrement des coûts | استرجاع التكاليف |  |
 | Recrutement direct | الانتداب المباشر |  |
 | Recteur d'université | رئيس الجامعة |  |
-| Redevance compensatrice | الأتاوة التعويضية |  |
+| Redevance compensatrice | الأداء التعويضي |  |
 | Redevance d'utilisation | معلوم الاستعمال |  |
 | Redevance de compensation | أتاوة الدعم |  |
 | Redevance de prestations douanières | الأتاوة على الخدمات الديوانية |  |
@@ -796,12 +797,14 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Taxation des prix | التسعير |  |
 | Taxe (au sens des finances publiques) | الرسم (بمفهوم المالية العمومية) |  |
 | Taxe à la production | الأداء على الإنتاج |  |
+| Taxe affectée | الأداء المخصّص |  |
 | Taxe au profit du fonds de développement de la compétitivité dans les secteurs industriel, de services et de l'artisanat | المعلوم لفائدة صندوق تنمية القدرة التنافسية في قطاعات الصناعة والخدمات والصناعات التقليدية |  |
 | Taxe conjoncturelle | معلوم ظرفي |  |
 | Taxe d'effet équivalent | الأداءات ذات الأثر المماثل |  |
 | Taxe de circulation sur les véhicules automobiles | معلوم الجولان |  |
 | Taxe de formalités douanières | الأداء على الإجراءات الديوانية |  |
 | Taxe de formation professionnelle | الأداء على التكوين المهني | TFP |
+| Taxe de péréquation de raffinage | أداء التعديل في التكرير |  |
 | Taxe forfaitaire annuelle | الأداء السنوي التقديري |  |
 | Taxe forfaitaire mensuelle sur la valeur ajoutée | أداء تقديري شهري على القيمة المضافة |  |
 | Taxe hôtelière | المعلوم على النزل |  |
