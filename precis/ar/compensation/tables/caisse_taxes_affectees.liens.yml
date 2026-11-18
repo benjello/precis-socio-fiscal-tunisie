@@ -1,0 +1,12 @@
+- libelle: الأداء على القوارص والغلال المصدّرة
+  parametre: parameters/produits_subventionnes/caisse_generale_compensation/taxes_affectees/agrumes_fruits_exportes.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/produits_subventionnes.caisse_generale_compensation.taxes_affectees.agrumes_fruits_exportes/table/
+- libelle: أداء التعديل في التكرير، الوقود العالي
+  parametre: parameters/produits_subventionnes/caisse_generale_compensation/taxes_affectees/perequation_raffinage/supercarburant.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/produits_subventionnes.caisse_generale_compensation.taxes_affectees.perequation_raffinage.supercarburant/table/
+- libelle: أداء التعديل في التكرير، النفط الاعتيادي
+  parametre: parameters/produits_subventionnes/caisse_generale_compensation/taxes_affectees/perequation_raffinage/essence_normale.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/produits_subventionnes.caisse_generale_compensation.taxes_affectees.perequation_raffinage.essence_normale/table/
+- libelle: أداء التعديل في التكرير، القازوال
+  parametre: parameters/produits_subventionnes/caisse_generale_compensation/taxes_affectees/perequation_raffinage/gasoil.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/produits_subventionnes.caisse_generale_compensation.taxes_affectees.perequation_raffinage.gasoil/table/
