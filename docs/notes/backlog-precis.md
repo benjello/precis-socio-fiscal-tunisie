@@ -3469,9 +3469,14 @@ Proposées par les notes et **non versées**, faute d'ancre dans le texte :
     `fonds-transition-energetique`.
   L'ancre `#g-auto-ciblage` n'est toujours pas employée.
 - **Lacunes**, dans l'état que les notes établissent :
-  - **Avant 1956** : aucun texte établi dans sa lettre ; décrets de 1943, 1945, 1954, 1955 connus
-    par les visas. *Journal officiel tunisien* de 1943-1955 : hors corpus et hors pist.tn, **à
-    obtenir** (Gallica à vérifier dans un navigateur). Fiches `r-caisse-compensation-origine` et
+  - **Avant 1956** : décrets du 5 août 1941, du 28 juin 1945 et du 26 juin 1947 **lus** (édition
+    arabe du JOT, corpus ; 18 novembre 2026, PR #810) ; restent connus par les visas le décret du
+    2 octobre 1942 (sommaires de 1942/ar n° 119-128 lus, non localisé : corpus, à lire à l'image
+    d'octobre à décembre 1942), celui du 12 août 1943 (corpus 1943/ar, mi-août, OCR ou image), ceux de
+    1954 et 1955 ; écart « article 3 / article 8 » des visas de 2001-2025 sur le décret de 1947, à
+    lire sur le miroir iort. Édition française du JOT de 1941-1947, loi du 21 octobre 1940 et JO de
+    l'Algérie de 1941 : Gallica refuse l'accès automatisé (403), **à obtenir** par téléchargement
+    manuel ou d'autres bibliothèques. Fiches `r-caisse-compensation-origine` et
     `r-centimes-additionnels-art106-1955`.
   - **1956-1969, chiffres non publiés** : montants des redevances sur les huiles et le sucre
     (1956, 1958), sur l'acier (1967), arrêté du 20 juillet 1965, lois n° 59-66 et n° 63-13,
@@ -3483,7 +3488,7 @@ Proposées par les notes et **non versées**, faute d'ancre dans le texte :
     2001, 2003, 2006, 2008, 2009, 2011), **traitée le 24 octobre 2026** (fiche
     `r-cgc-dotation-annees-manquantes`). Rapports annuels de la BCT 1987-2013 parcourus au texte
     intégral : aucun montant ; archives du web : rien. **Ajouté** (`_institution.qmd`, tableau
-    `tbl-compensation-lf-caisse`) : subvention du budget **prévue** par les lois de finances
+    `fig-compensation-lf-caisse`) : subvention du budget **prévue** par les lois de finances
     initiales 1987-1994, tableaux des fonds spéciaux lus à l'image (188, 188, 188, 300, 272, 255,
     245, 230 MD ; pages dans le tableau) ; crédits d'interventions du ministère du commerce 2000,
     2001, 2002 et 2011 (`tbl-compensation-lf-commerce`), non désignés comme la dotation (251,2 MD
@@ -3527,7 +3532,12 @@ Proposées par les notes et **non versées**, faute d'ancre dans le texte :
     (PR #685 : recettes prévues de la Caisse, 1 à 2 MD puis 0,1 MD ; pas de tableau des fonds dans les LF 2001-2004) ;
     restent 1995-2000 pour dater la disparition de la subvention du tableau. Constat de corpus : le fichier
     `Loi_de_finances_2000.pdf` est la loi de finances pour 2022.
-  - **Décret d'application de l'article 3 de la loi n° 70-26** : non identifié (fiche).
+  - **Décret d'application de l'article 3 de la loi n° 70-26** : la section dit ce qui est en vigueur
+    et porte son ancre RECHERCHE (PR #810) ; reste le libellé du visa du décret n° 70-261 (JORT n° 37
+    de 1970, p. 985), à vérifier à l'image. Ressources de 1971-1972 (loi 71-30, décret 72-400) :
+    faites ; suite et produit de la taxe sur les agrumes et des taxes de péréquation de raffinage,
+    1971-1987 : lisibles dans le corpus français, à dépouiller. OCR arabe des fascicules de
+    1970-1972 et relecture à l'image de 236 pages françaises d'OCR faible : à faire.
   - **Rupture de 2015** : effet constaté de la séparation de 2015 à 2018, subvention indirecte de
     2013 et 2014, bénéficiaires de la ligne en 2013 et après 2016, recettes de commercialisation
     encaissées de 2019 à 2025, acte formalisant la séparation (fiche), décision du 8 octobre 1993
@@ -3687,9 +3697,49 @@ Proposées par les notes et **non versées**, faute d'ancre dans le texte :
     spéciaux en un seul total, la Caisse n'y est pas nommée) ; les autres non ouvertes.
   - **Textes non relus à l'image** : LF 1971 (art. 48, tableau F), décret n° 70-622, LF 1984
     (art. 87, tableau F ; art. 38 et suivants : seule la référence est retenue), LFC 1989.
-  - **Hors texte, faute de source** : opérateurs de la compensation des produits de base,
-    bénéficiaires de la compensation du transport, entrées et sorties de produits, produit de la
-    redevance de compensation, ciblage et transferts de substitution, événements de janvier 1984.
+  - **Hors texte, faute de source** : bénéficiaires de la compensation du transport, produit de la
+    redevance de compensation, événements de janvier 1984. (Opérateurs, flux de produits et ciblage
+    des produits de base : traités par `_produits_base.qmd`, PR #811 ; ce qui reste est en TODO.)
+  - **Produits de base** (`_produits_base.qmd`, PR #811, #815, #817, #820 ; fiches
+    `r-comp-pb-ciblage-2013-2026`, `r-comp-pb-prix-consommateur-apres-1991`,
+    `r-comp-pb-prix-pain-1980`, `r-comp-pb-arrete-reduit-1991`, `r-oc-prix-reduits-retrocession`).
+    Faits : décrets de campagne 1970-2009 (fiche `r-comp-pb-decrets-campagne-lacunes` résolue),
+    décrets 68-279/71-277 corrigés, 74-780 et 74-966 abrogés en 1975, 74-876 lu, prix du pain et
+    poids 1975-2020, dérivés 1983-1984, date d'effet de l'arrêté pain de 1991, taxes de 1968,
+    1977 et 1984, séries sucre, huile, semoule, pâtes et lait 1979-1991, farines 1975-1979, lait
+    de 1982, café de 1980, farine PS-7 après 1989 (PR #820). **Restent, lisibles dans le corpus,
+    à OCR ou à relire à l'image** : décret 75-352 et arrêtés du 3 juin 1975 ; décrets 68-279 et
+    67-408 ; arrêtés du pain 1984-1990 et décret 84-785 ; farines de février 1984 et tableau B du
+    décret 82-134 ; pages imprimées des rapports BCT 1974, 1975, 1983 et 1984 ; fascicules de 1980
+    (pain à 80 millimes) ; **fascicules de juillet 1991 à décembre 1992 et leurs éditions arabes**
+    (arrêté du prix réduit de 1990, fiche `r-comp-pb-arrete-reduit-1991`) ; édition arabe du
+    décret 74-780 ; arrêté du lait du 31 mars 1973 (JORT n° 13/1973, p. 544) ; arrêtés du sucre
+    1980-1991, de l'huile 1980/1986/1991, des dérivés (juillet 1984, 1989, août 1991) et farines du
+    26 juillet 1971, lisibles ; arrêté du 9 décembre 1968 (JORT n° 52/1968) à verser dans
+    `transcriptions.py` (`TAXE_UNIQUE`) ; taxe unique après 1981, farine panifiable du 10 juillet
+    1984 (à revoir d'après les visas de 1989). **À obtenir** : texte du décret 74-966 (scan
+    illisible) ; concession d'huile de l'ONH ; bénéficiaires de l'écart de 2018-2023 et série
+    budgétaire par produit après 2011 (PAP, RAP Commerce, lois de règlement) ; opérateurs du lait
+    et du papier ; textes de fin de subvention 1992-1999 (piste : décret 94-1742) ; décisions
+    ministérielles sur le prix réduit depuis 1991 ; contexte 1990-1993 dans les rapports de la BCT ;
+    *Étude de la Caisse générale de compensation, phase I* (ministère de l'Agriculture, APIP
+    n° 664-0343, 1990) et Kramer (1990), cités par le CIHEAM. Glossaire : `prix-reduit-retrocession`
+    n'est ancré nulle part ; notions non créées (lait régénéré, compte « Soutien du marché des
+    céréales », liberté contrôlée et totale, quotas, farines PS et PS-7) ; termes arabes des tableaux
+    engendrés (prix de base, rétrocession, prix d'intervention, péréquation de raffinage, redevance
+    compensatrice), reportés. Section « Ce qu'en dit l'économie » à prévoir pour les autres
+    chapitres de dispositif du volume.
+  - **Compléments de PR #810 à #821** : `_depense.qmd` (l. 296) dit qu'aucune prévision n'est
+    identifiée dans les perspectives décennales : leur p. 103 est lue, la phrase et la fiche
+    `r-plans-prevision-compensation` sont à revoir ; `_incidence.qmd` (l. 70) : « L'incidence des
+    subventions alimentaires après 2010 n'est pas documentée ici » est dépassée par la revue des
+    dépenses publiques 2020 (éd. fr., p. 25-27) ; tarifs de l'électricité et du gaz (PR #813, TODO
+    au chapitre) : grilles des ménages de 1980, grilles MT/HT du 31 janvier 1981 et de 2005, portée
+    de la hausse du 1er janvier 2014, gaz basse pression de septembre 2012, mois de la hausse du
+    gaz de 1993 ; clés manquantes (bibliographe) : arrêtés des dérivés de 1983, 1984, 1986 et 1991,
+    semoules et huile de 1989, pâtes de 1991, arrêté du 17 février 1972, arrêté du 30 juillet 1991,
+    décret céréalier de 2025 ; libellés arabes de `figures/produits_base.py` à verser (traduction
+    différée).
   - **Redevance de compensation** (PR #679) : rédaction de 2013 relue à l'image (loi n° 2012-27, art. 63 : 1 % et 2 000 D confirmés) ; volets bornés à 2014-2015 : volet voitures supprimé au 1er janvier 2014 (LFC 2014, art. 39-40), aucune prorogation du volet revenu identifiée (fiche `r-compensation-redevance-revenu-prorogation`). **Lacunes nouvelles** : produit annuel de la redevance par volet ; redevance de 2 D par nuitée due ou non du 1er octobre au 24 décembre 2013 (rétroactivité de l'art. 6 de la LFC 2013) ; LF 2024, art. 69 § 6 (délai de 20 jours, paragraphe visé) ; JORT n° 148 de 2025 (arabe) sur l'affectation d'une part du produit ; libellé de lien « redevance de compensation de 2013-2014 » de `fiscalite/_contributions_conjoncturelles.qmd`, périmé.
 
 ## Les entreprises publiques
@@ -6498,3 +6548,5 @@ Note documentaire : `docs/notes/informel-sources-2026-10-28.md` (textes de la CI
 - À demander : table de passage OIT-INS pour l'écart de 2019 (36,9 % contre 44,9 %).
 - Glossaire (28 octobre 2026) : neuf notions versées et ancrées dans le texte ; `emploi-informel` prend le terme arabe de l'INS (العمل غير المنظم), « travail informel » n'en est plus synonyme. Reste : termes arabes non attestés (économie informelle, travail informel, économie non observée, économie souterraine, entreprise individuelle, enquête mixte, méthode du solde, MIMIC) à confirmer sur la version arabe des résolutions de la CIST, non disponible dans le corpus ; version française de la résolution de 2023 à obtenir (définitions du glossaire traduites de l'anglais).
 - Couverture sociale, restes (PR #722, 3 novembre 2026) : aucun texte lu ne dit ce qui exclut les travailleurs des chantiers régionaux de la loi n° 2002-32 (TODO au chapitre, vérifié) ; décret n° 82-1026 du 8 juillet 1982 non relu (cité d'après le rectificatif du n° 66 de 1982) ; clé `loi70-34` absente de `informel/references.json` (présente dans caisses et cotisations_sociales) ; `prestations_sociales/_matrice.qmd` (lignes 66 à 71) cite encore « loi n° 94-28, art. 4 » pour l'affiliation facultative, alors que le chapitre de l'informel donne l'art. 9 : à faire vérifier par le rédacteur de ce livre.
+
+**Passage du 18 novembre 2026** (archiviste, d'après les corps des PR #810 à #821 ; points vérifiés par grep dans `precis/fr/compensation/` et `docs/recherches.yml`) : rubrique « La compensation » mise à jour : 9 points fermés ou resserrés (décrets de 1941, 1945 et 1947, décret d'application de la loi 70-26, ressources de 1971-1972, opérateurs et ciblage des produits de base, `tbl-` devenu `fig-compensation-lf-caisse`, lignes de produits de base fermées par #815 et #817), 2 contradictions tranchées (« décrets de 1945 connus par les visas » et « décret d'application non identifié », périmés), 3 points signalés (phrases de `_depense.qmd` l. 296 et `_incidence.qmd` l. 70 dépassées ; fusion du mémento `docs/conventions/ecrire-dans-le-precis.md` avec `docs/conventions-redaction.md`, #819 ; `push_biblio.py` refuse le type `thesis`).

@@ -1,0 +1,119 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-11-18
+# séries (tunisia_data) : compensation-produits-base-paye-par-produit-2011-2024
+# sources (citation) : @cdc-cloture-2013, @cdc-cloture-2014, @cdc-cloture-2018, @cdc-cloture-2020, @cdc-cloture-2024
+# fiches : 
+# méthode/hypothèses : Le total est égal au poste « produits de base » du ministère des Finances en 2011-2014 et 2017-2024 ; il en diffère de 19 millions de dinars en 2015 et en 2016, et de 7,4 millions de dinars en 2019, où le poste est le crédit de la loi de finances. En 2011, il diffère des charges de la Caisse que relaie la Banque centrale (céréales : 833,7 contre 883,2). Un tiret de la source est un zéro.
+# note : La dépense de compensation des produits de base par produit, 2011-2024, selon les rapports de la Cour des comptes sur la clôture du budget de l'État : en millions de dinars courants et en part du total payé de l'année
+Année,Produit,Montant (millions de dinars courants),"Part du total payé de l'année (%, calculée)",Source,Localisation
+2011,total,1100.0,100.0,cdc-cloture-2013,p. 76
+2011,céréales,833.673,75.8,cdc-cloture-2013,p. 76
+2011,huile végétale,214.383,19.5,cdc-cloture-2013,p. 76
+2011,lait,23.066,2.1,cdc-cloture-2013,p. 76
+2011,sucre,10.84,1.0,cdc-cloture-2013,p. 76
+2011,concentré de tomate,9.553,0.9,cdc-cloture-2013,p. 76
+2011,papier scolaire,4.3,0.4,cdc-cloture-2013,p. 76
+2011,pâtes et couscous,4.185,0.4,cdc-cloture-2013,p. 76
+2012,total,1235.633,100.0,cdc-cloture-2013,p. 76
+2012,céréales,908.947,73.6,cdc-cloture-2013,p. 76
+2012,huile végétale,264.381,21.4,cdc-cloture-2013,p. 76
+2012,lait,31.928,2.6,cdc-cloture-2013,p. 76
+2012,concentré de tomate,10.794,0.9,cdc-cloture-2013,p. 76
+2012,sucre,10.435,0.8,cdc-cloture-2013,p. 76
+2012,pâtes et couscous,4.804,0.4,cdc-cloture-2013,p. 76
+2012,papier scolaire,4.344,0.4,cdc-cloture-2013,p. 76
+2013,total,1450.0,100.0,cdc-cloture-2013,p. 76
+2013,céréales,1117.936,77.1,cdc-cloture-2013,p. 76
+2013,huile végétale,232.163,16.0,cdc-cloture-2013,p. 76
+2013,lait,57.107,3.9,cdc-cloture-2013,p. 76
+2013,pâtes et couscous,16.359,1.1,cdc-cloture-2013,p. 76
+2013,concentré de tomate,12.429,0.9,cdc-cloture-2013,p. 76
+2013,sucre,9.685,0.7,cdc-cloture-2013,p. 76
+2013,papier scolaire,4.321,0.3,cdc-cloture-2013,p. 76
+2014,total,1416.672,100.0,cdc-cloture-2014,p. 80
+2014,céréales,1123.778,79.3,cdc-cloture-2014,p. 80
+2014,huile végétale,206.488,14.6,cdc-cloture-2014,p. 80
+2014,lait,61.737,4.4,cdc-cloture-2014,p. 80
+2014,pâtes et couscous,12.506,0.9,cdc-cloture-2014,p. 80
+2014,sucre,9.342,0.7,cdc-cloture-2014,p. 80
+2014,papier scolaire,2.821,0.2,cdc-cloture-2014,p. 80
+2014,concentré de tomate,0.0,0.0,cdc-cloture-2014,p. 80
+2015,total,1530.0,100.0,cdc-cloture-2018,p. 90
+2015,céréales,1253.119,81.9,cdc-cloture-2018,p. 90
+2015,huile végétale,167.899,11.0,cdc-cloture-2018,p. 90
+2015,lait,63.911,4.2,cdc-cloture-2018,p. 90
+2015,pâtes et couscous,31.825,2.1,cdc-cloture-2018,p. 90
+2015,sucre,8.946,0.6,cdc-cloture-2018,p. 90
+2015,papier scolaire,4.3,0.3,cdc-cloture-2018,p. 90
+2015,viande,0.0,0.0,cdc-cloture-2018,p. 90
+2016,total,1561.541,100.0,cdc-cloture-2018,p. 90
+2016,céréales,1236.919,79.2,cdc-cloture-2018,p. 90
+2016,huile végétale,199.934,12.8,cdc-cloture-2018,p. 90
+2016,lait,63.478,4.1,cdc-cloture-2018,p. 90
+2016,pâtes et couscous,47.195,3.0,cdc-cloture-2018,p. 90
+2016,sucre,10.131,0.6,cdc-cloture-2018,p. 90
+2016,papier scolaire,3.884,0.2,cdc-cloture-2018,p. 90
+2016,viande,0.0,0.0,cdc-cloture-2018,p. 90
+2017,total,1493.755,100.0,cdc-cloture-2018,p. 90
+2017,céréales,1104.329,73.9,cdc-cloture-2018,p. 90
+2017,huile végétale,247.882,16.6,cdc-cloture-2018,p. 90
+2017,lait,87.969,5.9,cdc-cloture-2018,p. 90
+2017,pâtes et couscous,39.824,2.7,cdc-cloture-2018,p. 90
+2017,sucre,9.854,0.7,cdc-cloture-2018,p. 90
+2017,papier scolaire,3.897,0.3,cdc-cloture-2018,p. 90
+2017,viande,0.0,0.0,cdc-cloture-2018,p. 90
+2018,total,1750.0,100.0,cdc-cloture-2018,p. 90
+2018,céréales,1305.754,74.6,cdc-cloture-2018,p. 90
+2018,huile végétale,249.151,14.2,cdc-cloture-2018,p. 90
+2018,lait,134.177,7.7,cdc-cloture-2018,p. 90
+2018,pâtes et couscous,44.726,2.6,cdc-cloture-2018,p. 90
+2018,sucre,8.867,0.5,cdc-cloture-2018,p. 90
+2018,viande,4.622,0.3,cdc-cloture-2018,p. 90
+2018,papier scolaire,2.703,0.2,cdc-cloture-2018,p. 90
+2019,total,1792.554,100.0,cdc-cloture-2020,p. 78
+2019,céréales,1284.436,71.7,cdc-cloture-2020,p. 78
+2019,huile végétale,208.096,11.6,cdc-cloture-2020,p. 78
+2019,lait,189.617,10.6,cdc-cloture-2020,p. 78
+2019,pâtes et couscous,88.64,4.9,cdc-cloture-2020,p. 78
+2019,papier scolaire,10.32,0.6,cdc-cloture-2020,p. 78
+2019,sucre,9.088,0.5,cdc-cloture-2020,p. 78
+2019,viande,2.356,0.1,cdc-cloture-2020,p. 78
+2020,total,2416.0,100.0,cdc-cloture-2020,p. 78
+2020,céréales,1848.475,76.5,cdc-cloture-2020,p. 78
+2020,huile végétale,268.951,11.1,cdc-cloture-2020,p. 78
+2020,lait,209.071,8.7,cdc-cloture-2020,p. 78
+2020,pâtes et couscous,73.505,3.0,cdc-cloture-2020,p. 78
+2020,sucre,9.876,0.4,cdc-cloture-2020,p. 78
+2020,papier scolaire,6.122,0.3,cdc-cloture-2020,p. 78
+2020,viande,0.0,0.0,cdc-cloture-2020,p. 78
+2021,total,2200.0,100.0,cdc-cloture-2024,p. 73
+2021,céréales,1674.154,76.1,cdc-cloture-2024,p. 73
+2021,huile végétale,301.383,13.7,cdc-cloture-2024,p. 73
+2021,lait,161.843,7.4,cdc-cloture-2024,p. 73
+2021,pâtes et couscous,44.309,2.0,cdc-cloture-2024,p. 73
+2021,sucre,9.353,0.4,cdc-cloture-2024,p. 73
+2021,papier scolaire,8.704,0.4,cdc-cloture-2024,p. 73
+2021,viande,0.254,0.0,cdc-cloture-2024,p. 73
+2022,total,3771.0,100.0,cdc-cloture-2024,p. 73
+2022,céréales,3220.944,85.4,cdc-cloture-2024,p. 73
+2022,huile végétale,358.795,9.5,cdc-cloture-2024,p. 73
+2022,lait,138.076,3.7,cdc-cloture-2024,p. 73
+2022,pâtes et couscous,35.097,0.9,cdc-cloture-2024,p. 73
+2022,sucre,9.357,0.2,cdc-cloture-2024,p. 73
+2022,papier scolaire,8.732,0.2,cdc-cloture-2024,p. 73
+2022,viande,0.0,0.0,cdc-cloture-2024,p. 73
+2023,total,3809.5,100.0,cdc-cloture-2024,p. 73
+2023,céréales,3344.168,87.8,cdc-cloture-2024,p. 73
+2023,huile végétale,165.355,4.3,cdc-cloture-2024,p. 73
+2023,lait,156.847,4.1,cdc-cloture-2024,p. 73
+2023,pâtes et couscous,110.298,2.9,cdc-cloture-2024,p. 73
+2023,papier scolaire,26.962,0.7,cdc-cloture-2024,p. 73
+2023,sucre,5.87,0.2,cdc-cloture-2024,p. 73
+2023,viande,0.0,0.0,cdc-cloture-2024,p. 73
+2024,total,3601.5,100.0,cdc-cloture-2024,p. 73
+2024,céréales,2993.3,83.1,cdc-cloture-2024,p. 73
+2024,lait,350.7,9.7,cdc-cloture-2024,p. 73
+2024,pâtes et couscous,122.707,3.4,cdc-cloture-2024,p. 73
+2024,huile végétale,92.306,2.6,cdc-cloture-2024,p. 73
+2024,papier scolaire,37.108,1.0,cdc-cloture-2024,p. 73
+2024,sucre,5.379,0.1,cdc-cloture-2024,p. 73
+2024,viande,0.0,0.0,cdc-cloture-2024,p. 73

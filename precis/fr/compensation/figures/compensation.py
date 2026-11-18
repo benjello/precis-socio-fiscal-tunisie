@@ -2792,6 +2792,93 @@ def _figure_lf_caisse_2005():
 
 # --- point d'entrée des chapitres --------------------------------------------------------
 
+# --- 17. La dépense payée des produits de base, par produit, 2011-2024 ---------------------
+# Valeurs de la Cour des comptes, transcrites dans `transcriptions.py`. La seule grandeur
+# calculée ici est la part de chaque produit dans le total payé de l'année.
+
+SERIE_PB_CDC = "compensation-produits-base-paye-par-produit-2011-2024"
+figtools.register_provenance(
+    SERIE_PB_CDC,
+    titre=("La dépense payée de compensation des produits de base, par produit, 2011-2024, "
+           "selon les rapports de la Cour des comptes sur la clôture du budget de l'État"),
+    sources=tr.cles(tr.PB_PAR_PRODUIT_CDC, 3), unite="millions de dinars courants",
+    perimetre=("crédits ordonnancés (2011-2014), puis dépenses payées, de la compensation des "
+               "produits de base sur le budget du ministère du Commerce, par produit ; une "
+               "année par rapport, le plus récent qui la donne"),
+    caveats=("Le total est égal au poste « produits de base » du ministère des Finances en "
+             "2011-2014 et 2017-2024 ; il en diffère de 19 millions de dinars en 2015 et en "
+             "2016, et de 7,4 millions de dinars en 2019, où le poste est le crédit de la loi "
+             "de finances. En 2011, il diffère des charges de la Caisse que relaie la Banque "
+             "centrale (céréales : 833,7 contre 883,2). Un tiret de la source est un zéro."))
+
+PRODUITS_CDC = (("céréales", BLEU, ""), ("huile végétale", ORANGE, "////"),
+                ("lait", VERT, "xxxx"), ("pâtes et couscous", "#bf8700", "oo"),
+                ("sucre", VIOLET, "...."), ("papier scolaire", ROUGE, "++"),
+                ("concentré de tomate", "#bc4c00", "--"), ("viande", GRIS, "\\\\"))
+
+
+def fig_pb_paye_par_produit(mesure: str = "md"):
+    figtools.apply_lang_font()
+    fig, ax = plt.subplots(figsize=(9.5, 5.4))
+    annees = sorted(tr.PB_TOTAL_CDC)
+    for a in annees:
+        total = tr.PB_TOTAL_CDC[a]
+        bas = 0.0
+        for produit, couleur, hachure in PRODUITS_CDC:
+            lignes = [r for r in tr.PB_PAR_PRODUIT_CDC if r[0] == a and r[1] == produit]
+            if not lignes or not lignes[0][2]:
+                continue
+            _a, _p, v, cle, loc = lignes[0]
+            y = v if mesure == "md" else 100 * v / total
+            barre = ax.bar([a], [y], bottom=bas, width=0.78, color=couleur, hatch=hachure,
+                           edgecolor="white", linewidth=0.6, zorder=2)
+            figtools.infobulle(barre[0], f"{a} · {produit} : {_nombre(v)} MD "
+                                         f"({_nombre(100 * v / total)} %) — {cle}, {loc}")
+            bas += y
+        if mesure == "md":
+            ax.annotate(_nombre(total, 0), xy=(a, bas), xytext=(0, 2), textcoords="offset points",
+                        ha="center", va="bottom", fontsize=6.2, color=NOIR)
+    _cadre(ax, "md" if mesure == "md" else "pct_pb_cdc", annees[0], annees[-1])
+    ax.set_xticks(annees)
+    ax.tick_params(axis="x", labelsize=7)
+    if mesure == "md":
+        ax.yaxis.set_major_formatter(FuncFormatter(lambda v, _: _nombre(v, 0)))
+        ax.set_ylim(0, ax.get_ylim()[1] * 1.08)
+    else:
+        ax.set_ylim(0, 100)
+    poignees = [Patch(facecolor=c, hatch=h, edgecolor="white", label=figtools.fig_text(p))
+                for p, c, h in PRODUITS_CDC]
+    _legende(ax, poignees, ncol=4, y=-0.13)
+    fig.tight_layout()
+    return fig
+
+
+def _figure_pb_paye_par_produit():
+    import pandas as pd
+    lignes = [{_lab("x"): a, _lab("c_produit_cdc"): p, _lab("c_MDT"): v,
+               _lab("c_part_pb_cdc"): round(100 * v / tr.PB_TOTAL_CDC[a], 1),
+               _lab("c_source"): cle, _lab("c_localisation"): loc}
+              for a, p, v, cle, loc in tr.PB_PAR_PRODUIT_CDC]
+    lignes += [{_lab("x"): a, _lab("c_produit_cdc"): _lab("total_cdc"), _lab("c_MDT"): t,
+                _lab("c_part_pb_cdc"): 100.0, _lab("c_source"): tr._CDC[a][0],
+                _lab("c_localisation"): tr._CDC[a][1]} for a, t in tr.PB_TOTAL_CDC.items()]
+    table = pd.DataFrame(lignes).sort_values([_lab("x"), _lab("c_MDT")], ascending=[True, False])
+    vues = [(_lab("vue_md"), fig_pb_paye_par_produit("md")),
+            (_lab("vue_pb_cdc"), fig_pb_paye_par_produit("struct"))]
+    return (vues, table.reset_index(drop=True), {SERIE_PB_CDC: tr.cles(tr.PB_PAR_PRODUIT_CDC, 3)},
+            "fig_compensation_pb_paye_par_produit")
+
+
+_L.update({
+    "pct_pb_cdc": {"fr": "En % du total payé de l'année", "ar": "% من مجموع المدفوع للسنة"},
+    "vue_pb_cdc": {"fr": "En part du total payé", "ar": "كنسبة من مجموع المدفوع"},
+    "c_produit_cdc": {"fr": "Produit", "ar": "المادة"},
+    "c_part_pb_cdc": {"fr": "Part du total payé de l'année (%, calculée)",
+                      "ar": "النسبة من مجموع المدفوع للسنة (%، محسوبة)"},
+    "total_cdc": {"fr": "total", "ar": "المجموع"},
+})
+
+
 FIGURES = {
     "longue_periode": _figure_longue_periode,
     "par_poste": _figure_par_poste,
@@ -2809,6 +2896,7 @@ FIGURES = {
     "import_cession": _figure_import_cession,
     "lf_caisse": _figure_lf_caisse,
     "lf_caisse_2005": _figure_lf_caisse_2005,
+    "pb_paye_par_produit": _figure_pb_paye_par_produit,
 }
 # Figures qui portent une vue en monnaie constante : la ligne « Source » ne dit pas « valeurs
 # courantes », la note de lecture donne la règle de déflation.

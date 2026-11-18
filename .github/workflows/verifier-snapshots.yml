@@ -98,7 +98,8 @@ jobs:
           uv run python scripts/generate_finances_locales_tables.py
           uv run python scripts/generate_sante_tables.py
           # Prix des céréales fixés à chaque campagne et taxes affectées à la Caisse
-          # générale de compensation (volume « La compensation »), openfisca-tunisia >= 0.169.
+          # générale de compensation (volume « La compensation »), openfisca-tunisia >= 0.169 ;
+          # prix administrés au public des produits de base, 1974-1991, >= 0.171.
           uv run python scripts/generate_compensation_tables.py
           # Les quatre-vingt-un cas de la circulaire n° 42 de 1996 (annexe du chapitre des
           # prestations familiales) : lus dans les variables de l'indemnité familiale du
