@@ -1,0 +1,12 @@
+- libelle: 'Prix au public : sucre en poudre'
+  parametre: parameters/produits_subventionnes/prix_administres_1974_1991/sucre/sucre_poudre.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/produits_subventionnes.prix_administres_1974_1991.sucre.sucre_poudre/table/
+- libelle: 'Prix au public : sucre en morceaux'
+  parametre: parameters/produits_subventionnes/prix_administres_1974_1991/sucre/sucre_morceaux.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/produits_subventionnes.prix_administres_1974_1991.sucre.sucre_morceaux/table/
+- libelle: 'Prix au public : sucre brun'
+  parametre: parameters/produits_subventionnes/prix_administres_1974_1991/sucre/sucre_brun.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/produits_subventionnes.prix_administres_1974_1991.sucre.sucre_brun/table/
+- libelle: 'Prix au public : café'
+  parametre: parameters/produits_subventionnes/prix_administres_1974_1991/cafe.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/produits_subventionnes.prix_administres_1974_1991.cafe/table/

@@ -318,11 +318,32 @@ pb.figure(
         "d'un texte : le prix antérieur au 31 mai 1975, et le prix de 1981 à 1983, la date du "
         "relèvement de 1980 n'étant pas établie ; 1980 reste vide. Le petit pain n'a pas de "
         "prix établi de 1980 à 1983. Les prix s'arrêtent au 1er janvier 1992, date de la "
-        "liberté des prix ; aucun prix au public n'est publié ensuite.\n\n"
+        "liberté des prix ; le prix du pain, homologué, n'est plus publié au Journal officiel "
+        "ensuite.\n\n"
         + pb.regle_deflation()))
 ```
 
-**Les autres dérivés.** Les pâtes et le couscous ont un prix de vente au public fixé par décret, puis par arrêté, de 1975 à 1991 ; la semoule, de décembre 1983 à 1991 ; la farine panifiable, de décembre 1983 à février 1984. Avant décembre 1983, les décrets de 1975 et de 1979 fixent le prix de la farine et de la semoule au stade du commerce, rendues au chef-lieu de la délégation ou à la fabrique, et non au public. La farine PS-7, une autre farine que la farine panifiable, a un prix au public de 245 millimes le kilo en vrac [à compter du 12 août 1989](#r-comp-pb-1989-farine-ps7). Les pâtes en vrac passent de 200 millimes le kilo [en juillet 1984](#r-comp-pb-1984-pates) à 260 millimes [en août 1989](#r-comp-pb-1989-pates) ; la semoule, de 15,500 D le quintal [en juillet 1984](#r-comp-pb-1984-semoules) à 205 millimes le kilo en vrac [en août 1991](#r-comp-pb-1991-semoule), date à laquelle le prix se fixe au kilo et non plus au quintal. En millimes de 2025, le kilo de pâtes baisse de 1 740 millimes en 1976 à 1 300 en 1991, et celui de la semoule de 1 130 en 1985 à 880 en 1991 (@fig-compensation-pb-prix-derives).
+:::: {.chronologie-repliable titre="Prix au public du gros pain et du petit pain, en dinars la pièce, par poids, date d'effet et texte, 1975-1991"}
+
+Chaque ligne donne le prix au public d'un produit, dans la variété, le conditionnement et l'unité de prix que nomme le texte, en dinars courants, à compter de sa date d'effet et jusqu'à la veille de la ligne suivante du même produit. Un tiret dans la colonne du prix marque la fin d'un produit : il change de poids, de variété ou d'unité de prix, et un autre produit du tableau prend le relais, ou bien son prix n'est plus publié, à partir du 1^er^ janvier 1992, date de la liberté des prix. Le gros pain de 700 g et le petit pain de 300 g n'ont pas de prix établi de 1980 à la fin de 1983 : la ligne de 1980 n'a ni prix ni texte.
+
+```{python}
+#| echo: false
+#| output: asis
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path.cwd().parents[2] / "scripts"))
+import openfisca_tables as ot
+TABLES = Path.cwd() / "tables"
+print(ot.markdown_avec_legende(TABLES / "prix_administres_pain.md",
+                               "Prix maxima de vente au public du pain, par poids de la pièce, en dinars courants la pièce, par date d'effet, 1975-1991",
+                               "tbl-prix-administres-pain"))
+```
+
+::::
+
+
+**Les autres dérivés.** Les pâtes et le couscous ont un prix de vente au public fixé par décret, puis par arrêté, de 1975 à 1991 ; la semoule, de décembre 1983 à 1991 ; la farine panifiable, de décembre 1983 à février 1984. <!-- TODO (rédacteur) : la figure et le tableau tiennent désormais le prix de la farine panifiable en vrac fixé par l'arrêté du 17 février 1984 (115 millimes le kilo) jusqu'au 1er janvier 1992 ; reformuler « de décembre 1983 à février 1984 » (prix fixés par les arrêtés de décembre 1983 et de février 1984, ce dernier en vigueur jusqu'en 1991). --> Avant décembre 1983, les décrets de 1975 et de 1979 fixent le prix de la farine et de la semoule au stade du commerce, rendues au chef-lieu de la délégation ou à la fabrique, et non au public. La farine PS-7, une autre farine que la farine panifiable, a un prix au public de 245 millimes le kilo en vrac [à compter du 12 août 1989](#r-comp-pb-1989-farine-ps7). Les pâtes en vrac passent de 200 millimes le kilo [en juillet 1984](#r-comp-pb-1984-pates) à 260 millimes [en août 1989](#r-comp-pb-1989-pates) ; la semoule, de 15,500 D le quintal [en juillet 1984](#r-comp-pb-1984-semoules) à 205 millimes le kilo en vrac [en août 1991](#r-comp-pb-1991-semoule), date à laquelle le prix se fixe au kilo et non plus au quintal. En millimes de 2025, le kilo de pâtes baisse de 1 740 millimes en 1976 à 1 300 en 1991, et celui de la semoule de 1 130 en 1985 à 880 en 1991 (@fig-compensation-pb-prix-derives).
 
 ```{python}
 #| label: fig-compensation-pb-prix-derives
@@ -347,8 +368,11 @@ pb.figure(
         "prix fixé en dinars le quintal est converti en millimes le kilo (1 D le quintal = 10 "
         "millimes le kilo) ; la semoule est fixée au quintal jusqu'en 1989, au kilo en vrac en "
         "1991. Plusieurs arrêtés prennent effet avant leur publication (août 1989, août 1991). "
-        "La farine panifiable n'a pas de prix établi après juillet 1984 : son trait "
-        "s'interrompt. Les prix s'arrêtent au 1er janvier 1992, date de la liberté des prix.\n\n"
+        "La farine panifiable en vrac garde le prix de l'arrêté du 17 février 1984, 115 millimes "
+        "le kilo, jusqu'au 1er janvier 1992 : le visa de l'arrêté de 1989 sur la farine PS-7 ne "
+        "cite, pour les farines, que cet arrêté. Les prix s'arrêtent au 1er janvier 1992, date de "
+        "la liberté des prix : homologués, ils ne sont plus publiés au Journal officiel "
+        "ensuite.\n\n"
         + pb.regle_deflation()))
 ```
 
@@ -366,7 +390,30 @@ pb.figure(
 
 ::::
 
-<!-- TODO (documentaliste) : prix des dérivés restant à établir : arrêtés de 1979-1983 entre le décret n° 79-413 et les arrêtés du 28 décembre 1983 ; prix de la farine panifiable après le 1er mars 1984 — le visa de l'arrêté PS-7 du 11 novembre 1989 ne cite que l'arrêté du 17 février 1984 fixant le prix des farines (docs/notes/compensation-arretes-lisibles-2026-11-17.md, § 2.3), si bien que la ligne « non établi » du 10 juillet 1984 de la farine panifiable (releves/prix-produits-base.csv) est à revoir ; prix de la farine PS-7 après le 12 août 1989 (aucun arrêté de 1991 relevé : la série est close au 1er janvier 1992). (bibliographe) : clés à créer pour les décrets de campagne sans notice (71-253, 72-244, 73-346, 75-542, 76-812, 77-339, 77-981, 79-289, 80-140, 80-1257, 81-1069, 82-1286, 84-1520, 85-1242, 87-129, 88-707, 90-671, 95-2021, 2008-2081, 2009-1853 ; références complètes, avec le JORT et la page, dans docs/notes/compensation-produits-base-complements-2026-11-17.md, § 3.2), et pour les arrêtés de prix des dérivés sans clé dans prix-produits-base.csv : 28 décembre 1983 (semoules, pâtes et couscous), 17 février 1984 (farines, semoules, pâtes et couscous), 29 août 1986 (pâtes et couscous), 11 novembre 1989 (semoules), 15 août 1991 (pâtes et couscous). -->
+:::: {.chronologie-repliable titre="Prix au public de la farine, de la semoule, des pâtes et du couscous, en dinars le kilo ou le quintal, par variété, date d'effet et texte, 1975-1991"}
+
+Chaque ligne donne le prix au public d'un produit, dans la variété, le conditionnement et l'unité de prix que nomme le texte, en dinars courants, à compter de sa date d'effet et jusqu'à la veille de la ligne suivante du même produit. Un tiret dans la colonne du prix marque la fin d'un produit : il change de poids, de variété ou d'unité de prix, et un autre produit du tableau prend le relais, ou bien son prix n'est plus publié, à partir du 1^er^ janvier 1992, date de la liberté des prix.
+
+```{python}
+#| echo: false
+#| output: asis
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path.cwd().parents[2] / "scripts"))
+import openfisca_tables as ot
+TABLES = Path.cwd() / "tables"
+print(ot.markdown_avec_legende(TABLES / "prix_administres_farines_semoule.md",
+                               "Prix de vente au public de la farine et de la semoule, par variété et unité de prix, en dinars courants, par date d'effet, 1983-1991",
+                               "tbl-prix-administres-farines-semoule"))
+print(ot.markdown_avec_legende(TABLES / "prix_administres_pates_couscous.md",
+                               "Prix de vente au public des pâtes alimentaires et du couscous rapide, en vrac, en dinars courants le kilo, par date d'effet, 1975-1991",
+                               "tbl-prix-administres-pates-couscous"))
+```
+
+::::
+
+
+<!-- TODO (documentaliste) : prix des dérivés restant à établir : arrêtés de 1979-1983 entre le décret n° 79-413 et les arrêtés du 28 décembre 1983 ; prix de la farine panifiable après le 1er mars 1984 — le visa de l'arrêté PS-7 du 11 novembre 1989 ne cite que l'arrêté du 17 février 1984 fixant le prix des farines (docs/notes/compensation-arretes-lisibles-2026-11-17.md, § 2.3) : le prix de 115 millimes est désormais tenu jusqu'au 1er janvier 1992, et un arrêté des farines entre 1984 et 1989 reste à exclure par une recherche ; prix de la farine PS-7 après le 12 août 1989 (aucun arrêté de 1991 relevé : la série est close au 1er janvier 1992). (bibliographe) : clés à créer pour les décrets de campagne sans notice (71-253, 72-244, 73-346, 75-542, 76-812, 77-339, 77-981, 79-289, 80-140, 80-1257, 81-1069, 82-1286, 84-1520, 85-1242, 87-129, 88-707, 90-671, 95-2021, 2008-2081, 2009-1853 ; références complètes, avec le JORT et la page, dans docs/notes/compensation-produits-base-complements-2026-11-17.md, § 3.2), et pour les arrêtés de prix des dérivés sans clé dans prix-produits-base.csv : 28 décembre 1983 (semoules, pâtes et couscous), 17 février 1984 (farines, semoules, pâtes et couscous), 29 août 1986 (pâtes et couscous), 11 novembre 1989 (semoules), 15 août 1991 (pâtes et couscous). -->
 
 ## Les huiles végétales {#sec-compensation-pb-huiles .domicile-unique}
 
@@ -412,7 +459,7 @@ import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
 from figures import produits_base as pb
 pb.figure(
     "sucre_huile_lait",
-    caption=("Le prix de vente au public du sucre en poudre, de l'huile mélangée et du lait "
+    caption=("Le prix de vente au public du sucre en poudre et en morceaux, de l'huile mélangée et du lait "
              "régénéré, 1974-1991 : en millimes courants et en millimes de "
              f"{pb.BASE} (calculés)"),
     note_lecture=(
@@ -427,7 +474,8 @@ pb.figure(
         "publié le 16 août. La date de l'article 1er est retenue. Le lait de 1982 est « lait "
         "régénéré », celui de 1989 et de 1991 « demi-écrémé » ; l'huile devient « huile de "
         "graines en vrac » en 1991. La marque creuse de l'huile est le prix antérieur au "
-        "31 mai 1975, d'après la Banque centrale.\n\n"
+        "31 mai 1975, d'après la Banque centrale. Les prix s'arrêtent au 1er janvier 1992 : "
+        "homologués, ils ne sont plus publiés au Journal officiel ensuite.\n\n"
         + pb.regle_deflation()))
 ```
 
@@ -451,6 +499,31 @@ pb.figure(
 : Les prix au public du sucre, de l'huile et du lait régénéré, et la taxe compensatrice sur l'huile d'olive, texte par texte, 1977-1991 {#tbl-compensation-pb-textes-shl}
 
 ::::
+
+:::: {.chronologie-repliable titre="Prix au public du sucre, du café, de l'huile et du lait régénéré, en dinars le kilo ou le litre, par variété, date d'effet et texte, 1974-1991"}
+
+Chaque ligne donne le prix au public d'un produit, dans la variété, le conditionnement et l'unité de prix que nomme le texte, en dinars courants, à compter de sa date d'effet et jusqu'à la veille de la ligne suivante du même produit. Un tiret dans la colonne du prix marque la fin d'un produit : il change de poids, de variété ou d'unité de prix, et un autre produit du tableau prend le relais, ou bien son prix n'est plus publié, à partir du 1^er^ janvier 1992, date de la liberté des prix.
+
+<!-- TODO (documentaliste) : prix du café après le 23 janvier 1980 — le café n'a pas été recherché au Journal officiel après l'arrêté du 20 février 1980 ; le tableau tient 3,000 D le kilo jusqu'au 1er janvier 1992 faute de texte relevé ensuite. (rédacteur) : garder ou retirer le café du tableau selon le résultat. -->
+
+```{python}
+#| echo: false
+#| output: asis
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path.cwd().parents[2] / "scripts"))
+import openfisca_tables as ot
+TABLES = Path.cwd() / "tables"
+print(ot.markdown_avec_legende(TABLES / "prix_administres_sucre_cafe.md",
+                               "Prix de vente maximum au public du sucre et du café, en dinars courants le kilo, par date d'effet, 1974-1991",
+                               "tbl-prix-administres-sucre-cafe"))
+print(ot.markdown_avec_legende(TABLES / "prix_administres_huile_lait.md",
+                               "Prix de vente au public de l'huile et du lait régénéré, en dinars courants le litre, par date d'effet, 1975-1991",
+                               "tbl-prix-administres-huile-lait"))
+```
+
+::::
+
 
 ## Les autres produits {#sec-compensation-pb-autres}
 

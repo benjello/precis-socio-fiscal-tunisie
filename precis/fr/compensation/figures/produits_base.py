@@ -16,13 +16,21 @@ D'OÙ VIENNENT LES DONNÉES.
     avec le texte et son lien ; une ligne sans valeur clôt la grandeur. Elle est émise par
     `scripts/generate_compensation_tables.py`, avec les tableaux `tables/cereales_*.md` et la
     liste des liens « Base législative » (`<série>.liens.fr.yml`). Ne pas l'éditer à la main.
-  - Les prix au public des dérivés, du sucre, de l'huile et du lait : le relevé tenu à la main
-    `precis/fr/compensation/releves/prix-produits-base.csv` (manifeste `.csv.yml`), une ligne
-    par (série, date d'effet), valeur courante, poids du pain, texte. Une ligne sans valeur
-    marque une date où la valeur cesse d'être établie : le trait s'arrête là.
+  - Les prix au public du pain, des dérivés, du sucre, de l'huile et du lait, 1974-1991 : la
+    série `compensation-prix-administres` de `_seriescache/`, émise par le même générateur
+    (un paramètre par produit, variété, conditionnement et unité de prix, valeurs en dinars ;
+    une ligne sans valeur dit un prix non établi ou la fin de la série au 1er janvier 1992).
+    `PRIX_ADMINISTRES` dit quels paramètres forment chaque courbe, avec le poids du pain et
+    le facteur qui ramène la valeur en millimes (le quintal : 10 millimes le kilo pour 1 D).
+  - Ce que cette série ne porte pas reste dans le relevé tenu à la main
+    `precis/fr/compensation/releves/prix-produits-base.csv` (manifeste `.csv.yml`) : les trois
+    prix tirés des rapports de la Banque centrale, les prix de la farine et de la semoule de
+    1975 et 1979 à un autre stade que le public (dans les données, non tracés), et le poids
+    du pain fixé en 2016 et en 2020. `_prix()` réunit les deux dans un seul tableau, une ligne
+    par (série, date), sans doublon.
 
-La provenance des deux est déclarée ici (`register_provenance`), avec les seules clés de
-citation présentes dans la bibliographie du livre. L'indice des prix vient de
+La provenance est déclarée ici (`register_provenance`), avec les seules clés de citation
+présentes dans la bibliographie du livre. L'indice des prix vient de
 `dinars_constants` (donc de `figtools.series()`).
 
 RÈGLES.
@@ -58,6 +66,7 @@ import figtools  # noqa: E402
 RELEVES = Path(__file__).resolve().parents[1] / "releves"
 CEREALES = "compensation-cereales-parametres"
 PRIX = "compensation-prix-produits-base"
+ADMINISTRES = "compensation-prix-administres"
 BASE = dinars_constants.ANNEE_BASE
 
 BLEU, ORANGE, VERT, VIOLET, ROUGE, GRIS, BRUN = (
@@ -74,6 +83,7 @@ SERIES = {
     "pates": ("Pâtes alimentaires", VERT),
     "couscous": ("Couscous", VIOLET),
     "sucre": ("Sucre en poudre", BLEU),
+    "sucre_morceaux": ("Sucre en morceaux", ORANGE),
     "huile": ("Huile mélangée, puis huile de graines (1991)", VERT),
     "lait_uht": ("Lait régénéré, UHT", BLEU),
     "lait_pasteurise": ("Lait régénéré, pasteurisé", ORANGE),
@@ -82,7 +92,7 @@ UNITE = {"pain_gros": "millimes la pièce", "pain_petit": "millimes la pièce",
          "farine": "millimes le kilo", "farine_ps7": "millimes le kilo",
          "semoule": "millimes le kilo",
          "pates": "millimes le kilo", "couscous": "millimes le kilo",
-         "sucre": "millimes le kilo", "huile": "millimes le litre",
+         "sucre": "millimes le kilo", "sucre_morceaux": "millimes le kilo", "huile": "millimes le litre",
          "lait_uht": "millimes le litre", "lait_pasteurise": "millimes le litre"}
 
 
@@ -169,15 +179,149 @@ def _cles_cereales(lignes: dict) -> list[str]:
     return cles
 
 
+# Les courbes tirées de la série des prix administrés : série de la figure -> [(paramètre,
+# poids du pain en grammes, facteur vers les millimes)]. Les paramètres d'une courbe se
+# succèdent sans se chevaucher (changement de poids, de variété ou d'unité de prix).
+PRIX_ADMINISTRES = {
+    "pain_gros": [("gros_pain_700g", 700, 1000), ("gros_pain_600g", 600, 1000),
+                  ("gros_pain_500g", 500, 1000)],
+    "pain_petit": [("petit_pain_300g", 300, 1000), ("petit_pain_250g", 250, 1000)],
+    "farine": [("farine_ps_quintal", None, 10), ("farine_ps_vrac", None, 1000)],
+    "farine_ps7": [("farine_ps7_vrac", None, 1000)],
+    "semoule": [("semoule_ps10_quintal", None, 10), ("semoule_ps10_vrac", None, 1000)],
+    "pates": [("pates_vrac_1975_1979", None, 1000), ("pates_ps10_vrac", None, 1000)],
+    "couscous": [("couscous_vrac_1975_1979", None, 1000), ("couscous_ps10_vrac", None, 1000)],
+    "sucre": [("sucre_poudre", None, 1000)],
+    "sucre_morceaux": [("sucre_morceaux", None, 1000)],
+    "huile": [("huile_melange", None, 1000), ("huile_graines_vrac", None, 1000)],
+    "lait_uht": [("lait_regenere_uht_1l", None, 1000), ("lait_demi_ecreme_uht_1l", None, 1000)],
+    "lait_pasteurise": [("lait_regenere_pasteurise_1l", None, 1000),
+                        ("lait_demi_ecreme_pasteurise_1l", None, 1000)],
+}
+FIN_SERIE = "1992-01-01"
+_MOIS = {m: i for i, m in enumerate(
+    ("janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre",
+     "octobre", "novembre", "décembre"), start=1)}
+
+
+def _sans_accent(t: str) -> str:
+    import unicodedata
+
+    return "".join(c for c in unicodedata.normalize("NFD", t.lower())
+                   if unicodedata.category(c) != "Mn")
+
+
+def _cle_texte(titre: str) -> str:
+    """La clé de citation d'un texte de la série, parmi celles de la bibliographie du livre.
+
+    « Décret n° 75-352 » donne `decret75-352`, « Loi n° 91-64 » `loi91-64` ; un arrêté, la
+    clé `arrete-AAAA-MM-JJ-…` de sa date de signature dont le dernier mot (pain, sucre,
+    semoules…) figure dans son titre. Vide si aucune ne convient."""
+    import re
+
+    connues = figtools._ref_index()
+    m = re.match(r"(Décret|Loi) n°\s*(\d{2,4}-\d+)", titre)
+    if m:
+        cle = f"{'decret' if m.group(1) == 'Décret' else 'loi'}{m.group(2)}"
+        return cle if cle in connues else ""
+    m = re.search(r"\bdu (\d{1,2})(?:er)? (\w+) (\d{4})", titre)
+    if not titre.startswith("Arrêté") or not m or m.group(2) not in _MOIS:
+        return ""
+    prefixe = f"arrete-{m.group(3)}-{_MOIS[m.group(2)]:02d}-{int(m.group(1)):02d}-"
+    objet = _sans_accent(titre)
+    for cle in sorted(connues):
+        if cle.startswith(prefixe) and cle.rsplit("-", 1)[1].rstrip("s") in objet:
+            return cle
+    return ""
+
+
+def _texte_court(titre: str) -> str:
+    """Le titre du texte, sans la parenthèse sur l'origine de son intitulé."""
+    import re
+
+    return re.sub(r"\s*\(intitulé[^)]*\)", "", titre or "")
+
+
+def _administres() -> pd.DataFrame:
+    """Les courbes de `PRIX_ADMINISTRES`, au format du relevé, lues dans la série engendrée.
+
+    À chaque date d'un des paramètres d'une courbe, la valeur est celle du paramètre en
+    vigueur ; deux paramètres en vigueur le même jour sont une erreur."""
+    d = figtools.series(ADMINISTRES)
+    d = d.astype({"date_effet": str}).fillna({"texte": "", "lien": ""})
+    lignes = []
+    for serie, composants in PRIX_ADMINISTRES.items():
+        par_cle = {c: d[d["parametre"] == c].sort_values("date_effet") for c, *_ in composants}
+        dates = sorted({x for s in par_cle.values() for x in s["date_effet"]})
+        for date in dates:
+            vigueur = []
+            for cle, poids, facteur in composants:
+                s = par_cle[cle][par_cle[cle]["date_effet"] <= date]
+                if len(s) and s.iloc[-1]["valeur"] == s.iloc[-1]["valeur"]:
+                    vigueur.append((cle, poids, facteur, s.iloc[-1]))
+            if len(vigueur) > 1:
+                raise ValueError(f"{serie} au {date} : {[v[0] for v in vigueur]} se chevauchent")
+            if vigueur:
+                cle, poids, facteur, r = vigueur[0]
+                valeur = f"{round(float(r['valeur']) * facteur, 3):g}"
+                statut = "texte"
+                texte = r["texte"] if r["date_effet"] == date else ""
+                if not texte:   # la date est celle d'un autre paramètre de la courbe
+                    texte = next(t for t in (par_cle[c][par_cle[c]["date_effet"] == date]["texte"]
+                                             for c, *_ in composants) if len(t)).iloc[0]
+            else:
+                cle, poids = composants[0][0], None
+                faits = [par_cle[c][par_cle[c]["date_effet"] == date] for c, *_ in composants]
+                r = next(f for f in faits if len(f)).iloc[0]
+                valeur, texte = "", r["texte"]
+                statut = "fin" if date == FIN_SERIE else "non établi"
+            lignes.append({"serie": serie, "date_effet": date, "annee": int(date[:4]),
+                           "regle_date": "", "valeur": valeur,
+                           "poids_g": "" if poids is None else str(poids),
+                           "texte": _texte_court(texte), "cle": _cle_texte(texte),
+                           "url": "", "statut": statut, "remarque": cle,
+                           "origine": ADMINISTRES})
+    return pd.DataFrame(lignes)
+
+
 def _prix() -> pd.DataFrame:
-    d = pd.read_csv(RELEVES / "prix-produits-base.csv", dtype=str, keep_default_na=False)
-    d["rang"] = d["rang"].astype(int)
-    d["annee"] = d["annee"].astype(int)
-    return d.sort_values(["serie", "rang"]).reset_index(drop=True)
+    """La série des prix administrés et les lignes du relevé qu'elle ne porte pas.
+
+    Ordre d'une série : par date, une ligne sans date d'effet (rapport de la Banque centrale)
+    au 1er janvier de son année, après une ligne datée du même jour."""
+    r = pd.read_csv(RELEVES / "prix-produits-base.csv", dtype=str, keep_default_na=False)
+    r["annee"] = r["annee"].astype(int)
+    r["origine"] = PRIX
+    d = pd.concat([_administres(), r.drop(columns=["rang"])], ignore_index=True)
+    d["_cle"] = [de or f"{a}-01-01" for de, a in zip(d["date_effet"], d["annee"])]
+    d["_sans_date"] = (d["date_effet"] == "").astype(int)
+    d = d.sort_values(["serie", "_cle", "_sans_date"], kind="stable")
+    d["rang"] = d.groupby("serie").cumcount() + 1
+    return d.drop(columns=["_cle", "_sans_date"]).reset_index(drop=True)
 
 
 def _cles(d: pd.DataFrame) -> list[str]:
     return list(dict.fromkeys(c for c in d["cle"] if c))
+
+
+def _declarer_prix(d: pd.DataFrame) -> tuple[str, ...]:
+    """Déclare la provenance des deux sources d'un tableau de `_prix()` ; rend leurs ids."""
+    connues = figtools._ref_index()
+    a = d[d["origine"] == ADMINISTRES]
+    figtools.register_provenance(
+        ADMINISTRES, titre="Prix administrés au public des produits de base, 1974-1991",
+        sources=[k for k in _cles(a) if k in connues],
+        unite="dinars courants dans l'unité du texte (la pièce, le kilo, le quintal, le litre)",
+        perimetre=("prix de vente au public fixés par décret ou par arrêté et publiés au "
+                   "Journal officiel, un par produit, variété, conditionnement et unité de prix ; "
+                   "aucun prix au public n'est publié après le 1er janvier 1992"),
+        caveats=regle_deflation())
+    ids = [ADMINISTRES]
+    r = d[d["origine"] == PRIX]
+    if len(r):
+        _declarer(cles_prix=_cles(r))
+        ids.append(PRIX)
+    return tuple(ids)
 
 
 def _declarer(cles_cereales=None, cles_prix=None) -> None:
@@ -194,13 +338,15 @@ def _declarer(cles_cereales=None, cles_prix=None) -> None:
             caveats=regle_deflation())
     if cles_prix is not None:
         figtools.register_provenance(
-            PRIX, titre="Prix administrés des produits de base, 1974-2020",
+            PRIX, titre="Prix des produits de base tirés des rapports de la Banque centrale, "
+                        "prix à un autre stade et poids du pain, 1974-2020",
             sources=[k for k in cles_prix if k in connues],
-            unite="millimes ou dinars courants (colonne « Unité »)",
-            perimetre=("prix de vente au public fixés par décret ou par arrêté, poids du pain ; "
-                       "trois valeurs tirées des rapports de la Banque centrale ; prix de la "
-                       "farine et de la semoule rendus au chef-lieu de délégation ou à la "
-                       "fabrique (1975, 1979), dans les données, non tracés"),
+            unite="millimes courants (colonne « Unité ») ; grammes pour le poids du pain",
+            perimetre=("trois prix au public tirés des rapports de la Banque centrale (gros "
+                       "pain avant le 31 mai 1975 et en 1980, huile avant le 31 mai 1975) ; prix "
+                       "de la farine et de la semoule rendus au chef-lieu de délégation ou à la "
+                       "fabrique (1975, 1979), dans les données, non tracés ; poids du pain "
+                       "fixé en 2016 et en 2020"),
             caveats=regle_deflation())
 
 
@@ -597,10 +743,10 @@ def _figure_pain():
     series = ["pain_gros", "pain_petit"]
     table = _table_prix(series, par_kilo=tuple(series))
     d = _prix()
-    _declarer(cles_prix=_cles(d[d["serie"].isin(series)]))
+    ids = _declarer_prix(d[d["serie"].isin(series)])
     vues = [("Millimes courants", fig_pain()),
             (f"Millimes de {BASE} (calculés)", fig_pain(constants=True))]
-    return vues, table, (PRIX, *dinars_constants.SERIES_IPC), "fig_compensation_pb_prix_pain"
+    return vues, table, (*ids, *dinars_constants.SERIES_IPC), "fig_compensation_pb_prix_pain"
 
 
 # --- 4. Dérivés des céréales -----------------------------------------------------------------
@@ -632,17 +778,17 @@ def _fig_multi(series, xlim, ylabel_unite, constants):
 def _figure_derives():
     series = ["farine", "farine_ps7", "semoule", "pates", "couscous"]
     d = _prix()
-    _declarer(cles_prix=_cles(d[d["serie"].isin(series)]))
+    ids = _declarer_prix(d[d["serie"].isin(series)])
     vues = [("Millimes courants", _fig_multi(series, (1974.5, 1992.5), "millimes le kilo", False)),
             (f"Millimes de {BASE} (calculés)",
              _fig_multi(series, (1974.5, 1992.5), "millimes le kilo", True))]
-    return (vues, _table_prix(series), (PRIX, *dinars_constants.SERIES_IPC),
+    return (vues, _table_prix(series), (*ids, *dinars_constants.SERIES_IPC),
             "fig_compensation_pb_prix_derives")
 
 
 # --- 5. Sucre, huile, lait -------------------------------------------------------------------
 
-PANNEAUX_SHL = (("Sucre en poudre (millimes le kilo)", ("sucre",), "millimes le kilo"),
+PANNEAUX_SHL = (("Sucre (millimes le kilo)", ("sucre", "sucre_morceaux"), "millimes le kilo"),
                 ("Huile mélangée, vrac (millimes le litre)", ("huile",), "millimes le litre"),
                 ("Lait régénéré, 1 l (millimes le litre)", ("lait_uht", "lait_pasteurise"),
                  "millimes le litre"))
@@ -669,7 +815,7 @@ def fig_sucre_huile_lait(constants: bool = False):
         ax.yaxis.set_major_formatter(FuncFormatter(lambda v, _: _nb(v)))
         if len(series) > 1:
             ax.legend(handles=[Line2D([0], [0], color=SERIES[s][1], lw=2,
-                                      label=figtools.fig_text(SERIES[s][0].split(", ")[1]))
+                                      label=figtools.fig_text(SERIES[s][0].split(", ")[-1]))
                                for s in series], fontsize=7, frameon=False, loc="lower right")
     axes[0].set_ylabel(figtools.fig_text(f"Millimes de {BASE} (calculés)" if constants
                                          else "Millimes courants"))
@@ -678,12 +824,12 @@ def fig_sucre_huile_lait(constants: bool = False):
 
 
 def _figure_sucre_huile_lait():
-    series = ["sucre", "huile", "lait_uht", "lait_pasteurise"]
+    series = ["sucre", "sucre_morceaux", "huile", "lait_uht", "lait_pasteurise"]
     d = _prix()
-    _declarer(cles_prix=_cles(d[d["serie"].isin(series)]))
+    ids = _declarer_prix(d[d["serie"].isin(series)])
     vues = [("Millimes courants", fig_sucre_huile_lait()),
             (f"Millimes de {BASE} (calculés)", fig_sucre_huile_lait(constants=True))]
-    return (vues, _table_prix(series), (PRIX, *dinars_constants.SERIES_IPC),
+    return (vues, _table_prix(series), (*ids, *dinars_constants.SERIES_IPC),
             "fig_compensation_pb_prix_sucre_huile_lait")
 
 

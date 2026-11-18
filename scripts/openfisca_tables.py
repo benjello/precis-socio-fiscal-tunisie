@@ -225,7 +225,16 @@ PAQUETS = {
         # deçà, les tableaux et la série des prix de campagne du volume « La compensation »,
         # que lit `generate_compensation_tables.py`, ne pourraient être engendrés. Aucun
         # chemin déjà lu ne bouge. La borne passe à la 0.169, publiée sur PyPI.
-        "version_minimale": (0, 169),
+        # La 0.171 verse les prix administrés au public des produits de base publiés au
+        # Journal officiel de 1974 à 1991 (`produits_subventionnes/prix_administres_1974_1991/`
+        # : pain, farine, semoule, pâtes, couscous, sucre, huile, lait, café ; 25 paramètres,
+        # un par produit, variété, conditionnement et unité de prix ; série close au
+        # 1er janvier 1992). En deçà, les tableaux `prix_administres_*` et la série
+        # `compensation-prix-administres` du volume « La compensation », que lit
+        # `generate_compensation_tables.py` et dont les figures des prix du pain, des dérivés,
+        # du sucre, de l'huile et du lait sont tirées, ne pourraient être engendrés. Aucun
+        # chemin déjà lu ne bouge. La borne passe à la 0.171, publiée sur PyPI.
+        "version_minimale": (0, 171),
     },
 }
 
