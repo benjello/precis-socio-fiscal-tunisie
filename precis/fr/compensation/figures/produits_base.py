@@ -6,6 +6,7 @@
     pb.figure("pain", caption=…, note_lecture=…)       # prix du pain au kilo et poids, 1975-2026
     pb.figure("derives", caption=…, note_lecture=…)    # farines, semoule, pâtes, couscous, 1975-1991
     pb.figure("sucre_huile_lait", caption=…, note_lecture=…)
+    pb.figure("oc", caption=…, note_lecture=…)         # prix de vente subventionné du blé, 2009-2020
     pb.regle_deflation()                               # la règle, pour la note de lecture
 
 D'OÙ VIENNENT LES DONNÉES.
@@ -833,8 +834,96 @@ def _figure_sucre_huile_lait():
             "fig_compensation_pb_prix_sucre_huile_lait")
 
 
+# --- 6. Le prix de vente subventionné du blé selon l'Office des céréales, 2009-2020 ----------
+# Données de l'opérateur, tenues à part des prix fixés par un texte : valeur mensuelle publiée
+# par l'Office, en dinars le quintal, transcrite à chaque changement (premier mois de la
+# nouvelle valeur). Janvier 2011 est la valeur publiée du mois, entre deux prix.
+OC_PRIX = "compensation-oc-prix-vente-subventionne-ble"
+OC_CLE = "oc-agridata-prix-vente-subventionne"
+OC_CHANGEMENTS = {
+    "ble_dur": [("2009-01", 28.350), ("2009-08", 28.102), ("2010-06", 27.917),
+                ("2010-08", 29.782), ("2011-01", 28.579), ("2011-02", 27.711),
+                ("2012-01", 27.603), ("2013-03", 27.014)],
+    "ble_tendre": [("2009-01", 27.123), ("2009-08", 26.875), ("2009-09", 24.754),
+                   ("2010-06", 22.522), ("2010-08", 26.815), ("2011-01", 24.318),
+                   ("2011-02", 22.515), ("2012-01", 20.413), ("2012-06", 20.049)],
+}
+
+
+def _oc_mensuel(cle: str) -> dict[tuple[int, int], float]:
+    ch = dict(OC_CHANGEMENTS[cle])
+    sortie, v = {}, None
+    for a in range(2009, 2021):
+        for m in range(1, 13):
+            v = ch.get(f"{a}-{m:02d}", v)
+            sortie[(a, m)] = v
+    return sortie
+
+
+def fig_oc(constants: bool = False):
+    figtools.apply_lang_font()
+    fig, ax = plt.subplots(figsize=(9.5, 5.0))
+    for cle in ("ble_dur", "ble_tendre"):
+        nom, couleur = PRODUITS[cle]
+        mens = _oc_mensuel(cle)
+        if constants:
+            xs = list(range(2009, 2021))
+            ys = [sum(mens[(a, m)] for m in range(1, 13)) / 12 * _coeff(a) for a in xs]
+            ax.plot(xs, ys, color=couleur, lw=1.6, zorder=3)
+            for a, y in zip(xs, ys):
+                p, = ax.plot([a], [y], "o", ms=3.2, color=couleur, zorder=4)
+                figtools.infobulle(p, f"{a} · {nom} : {_nb(y, 1)} D de {BASE} le quintal, "
+                                      "valeur calculée (moyenne des douze mois)")
+        else:
+            xs, ys = [], []
+            for (a, m), v in sorted(mens.items()):
+                xs.append(a + (m - 1) / 12); ys.append(v)
+            xs.append(2021.0); ys.append(ys[-1])
+            ax.step(xs, ys, where="post", color=couleur, lw=1.6, zorder=3)
+            for date, v in OC_CHANGEMENTS[cle]:
+                a, m = int(date[:4]), int(date[5:])
+                p, = ax.plot([a + (m - 1) / 12], [v], "o", ms=3.2, color=couleur, zorder=4)
+                figtools.infobulle(p, f"{date} · {nom} : {_nb(v, 3)} D le quintal")
+    _cadre(ax, f"Dinars de {BASE} le quintal (calculés)" if constants
+           else "Dinars courants le quintal", pas_x=1)
+    ax.set_xlim(2008.7, 2021.2)
+    ax.set_ylim(0, None)
+    ax.set_xlabel(figtools.fig_text("Année"))
+    poignees = [Line2D([0], [0], color=PRODUITS[k][1], lw=1.8,
+                       label=figtools.fig_text(PRODUITS[k][0])) for k in ("ble_dur", "ble_tendre")]
+    _legende(ax, poignees, ncol=2, y=-0.12)
+    fig.tight_layout()
+    return fig
+
+
+def _figure_oc():
+    figtools.register_provenance(
+        OC_PRIX, titre=("Prix de vente subventionné du blé dur et du blé tendre, mensuel, "
+                        "2009-2020, selon l'Office des céréales"),
+        sources=[OC_CLE] if OC_CLE in figtools._ref_index() else [],
+        unite="dinars courants le quintal",
+        perimetre=("valeur mensuelle publiée par l'Office des céréales sur le portail de "
+                   "données du ministère de l'Agriculture, de janvier 2009 à décembre 2020"),
+        caveats=("Données de l'opérateur, non un prix fixé par un texte publié. "
+                 + regle_deflation()))
+    rangs = []
+    for cle in ("ble_dur", "ble_tendre"):
+        nom = PRODUITS[cle][0]
+        for (a, m), v in sorted(_oc_mensuel(cle).items()):
+            rangs.append({"Grandeur": nom, "Mois": f"{a}-{m:02d}",
+                          "Dinars courants le quintal": v,
+                          f"Coefficient de {BASE} (calculé)": round(_coeff(a), 4),
+                          f"Dinars de {BASE} le quintal (calculés)": round(v * _coeff(a), 2),
+                          "Source": OC_CLE})
+    vues = [("Dinars courants", fig_oc()),
+            (f"Dinars de {BASE} (calculés)", fig_oc(constants=True))]
+    return (vues, pd.DataFrame(rangs), (OC_PRIX, *dinars_constants.SERIES_IPC),
+            "fig_compensation_pb_prix_oc")
+
+
 FIGURES = {"campagne": _figure_campagne, "reduit": _figure_reduit, "pain": _figure_pain,
-           "derives": _figure_derives, "sucre_huile_lait": _figure_sucre_huile_lait}
+           "derives": _figure_derives, "sucre_huile_lait": _figure_sucre_huile_lait,
+           "oc": _figure_oc}
 
 
 def figure(nom: str, caption: str, note_lecture: str | None = None) -> None:
