@@ -1,102 +1,68 @@
-# Manifeste du relevé des prix administrés des produits de base, 1974-2020.
+# Manifeste du relevé des prix des produits de base que la série engendrée ne porte pas.
 #
 # Fichier TENU À LA MAIN — il n'est produit par aucun générateur. Il accompagne
 # prix-produits-base.csv, que lit precis/fr/compensation/figures/produits_base.py.
 #
-# D'OÙ VIENNENT LES VALEURS. Des arrêtés et décrets de prix lus au Journal officiel
-# (notes docs/notes/compensation-produits-base-documentaliste.md et
-# docs/notes/compensation-produits-base-complements-2026-11-17.md, § 2, 3.4 et 12 ;
-# docs/notes/compensation-arretes-lisibles-2026-11-17.md, § 2, fascicules lus à l'image), et,
-# pour trois valeurs, des rapports annuels de la Banque centrale (statut « rapport BCT »).
+# CE QUI RESTE ICI, ET POURQUOI. Les prix au public fixés par décret ou par arrêté et publiés
+# au Journal officiel de 1974 à 1991 (pain, farine, semoule, pâtes, couscous, sucre, huile,
+# lait, café) ne sont plus relevés ici : les figures les lisent dans la série engendrée
+# precis/_seriescache/compensation-prix-administres.csv, avec leurs textes et leurs liens.
+# Ce relevé ne garde que ce que cette série ne porte pas, sans doublon avec elle :
+#   - les trois prix tirés des rapports annuels de la Banque centrale (gros pain avant le
+#     31 mai 1975 et en 1980, huile avant le 31 mai 1975), qui ne sont pas fixés par un texte
+#     lu et n'ont pas de date d'effet établie ;
+#   - les prix de la farine et de la semoule des décrets n° 75-352 et 79-413, fixés à un autre
+#     stade que le public (rendus au chef-lieu de la délégation ou à la fabrique), dans les
+#     données, non tracés ;
+#   - le poids du gros pain et de la baguette fixé en 2016 et en 2020, sans prix.
+# La figure réunit les deux sources ligne par ligne (fonction _prix du module).
+#
+# D'OÙ VIENNENT LES VALEURS. Des rapports annuels de la Banque centrale (statut
+# « rapport BCT »), des décrets de 1975 et 1979 et des arrêtés de 2016 et 2020 lus au Journal
+# officiel (notes docs/notes/compensation-produits-base-documentaliste.md et
+# docs/notes/compensation-produits-base-complements-2026-11-17.md).
 
 format: long
 cle_de_ligne: [serie, rang]
 
 colonnes:
-  serie: pain_gros, pain_petit (petit pain puis baguette), farine (panifiable), farine_ps7, semoule, pates, couscous, sucre (en poudre), huile (mélangée, puis de graines), lait_uht, lait_pasteurise
+  serie: pain_gros, pain_petit (baguette en 2016 et 2020), farine (panifiable), semoule, huile (mélangée) ; mêmes noms que les courbes de la figure
   rang: ordre de la ligne dans la série
   date_effet: date d'effet (AAAA-MM-JJ), vide si elle n'est pas établie
   annee: année de la ligne
-  regle_date: énoncée (par le texte), calculée (règle d'entrée en vigueur), publication (date du fascicule, faute de mieux), non établie, loi, ou fin de série (fin de l'année de la dernière valeur publiée)
-  valeur: millimes la pièce (pain), millimes le kilo (dérivés, sucre), millimes le litre (huile, lait) ; vide si la valeur n'est pas établie
+  regle_date: énoncée (par le texte), calculée (règle d'entrée en vigueur), publication (date du fascicule, faute de mieux), non établie
+  valeur: millimes la pièce (pain), millimes le kilo (farine, semoule), millimes le litre (huile) ; vide pour une ligne de poids seul
   poids_g: poids du pain, en grammes
   texte: référence du texte (numéro, date, fascicule et pages du Journal officiel) ou du rapport
   cle: clé de citation, vide si la notice n'est pas encore versée
   url: fascicule du Journal officiel sur pist.tn (édition française)
-  statut: texte, rapport BCT, non établi (un texte change la valeur, qui n'est pas établie), fin (dernière valeur publiée close), poids seul (texte qui fixe le poids, non le prix), autre stade (prix rendu au chef-lieu de délégation ou à la fabrique, non au public ; dans les données, non tracé)
+  statut: rapport BCT, poids seul (texte qui fixe le poids, non le prix), autre stade (prix rendu au chef-lieu de délégation ou à la fabrique, non au public ; dans les données, non tracé)
   remarque: variété, unité d'origine, règle de date
 
 sources:
-  - arrete-1974-05-24-prix-sucre
-  - arrete-1975-06-03-prix-huile
-  - arrete-1975-06-03-prix-sucre
-  - arrete-1979-05-07-prix-huile
-  - arrete-1980-01-21-prix-huile
-  - arrete-1980-02-20-prix-sucre
-  - arrete-1982-11-21-prix-lait
-  - arrete-1983-12-28-prix-farines
-  - arrete-1983-12-28-prix-pain
-  - arrete-1984-02-17-prix-pain
-  - arrete-1984-07-10-prix-pain
-  - arrete-1984-07-10-prix-pates
-  - arrete-1984-07-10-prix-semoules
-  - arrete-1985-07-15-prix-pain
-  - arrete-1986-08-29-poids-pain
-  - arrete-1986-11-22-prix-sucre
-  - arrete-1986-12-29-prix-huile
-  - arrete-1988-09-08-prix-sucre
-  - arrete-1989-11-11-prix-farines
-  - arrete-1989-11-11-prix-lait
-  - arrete-1989-11-11-prix-pain
-  - arrete-1989-11-11-prix-pates
-  - arrete-1989-11-11-prix-sucre
-  - arrete-1990-07-18-prix-sucre
-  - arrete-1991-06-25-prix-sucre
-  - arrete-1991-07-30-prix-lait
-  - arrete-1991-08-15-prix-huile
-  - arrete-1991-08-15-prix-pain
-  - arrete-1991-08-15-prix-semoules
   - arrete-2016-06-22-pain
   - arrete-2020-11-13-pain
   - bct-ra-1975
   - bct-ra-1983
   - decret75-352
   - decret79-413
-  - loi91-64
 
 couverture: PARTIELLE dans le temps
 couverture_detail: >-
-  Les prix au public s'arrêtent à 1991 : aucun prix de vente au public du pain et des
-  dérivés n'est publié après le 1er janvier 1992. Une ligne
-  « non établi » marque un texte qui change la valeur sans qu'elle soit relevée : la série
-  s'interrompt à sa date.
+  Trois prix des rapports de la Banque centrale (1975, 1980), quatre prix à un autre stade
+  que le public (1975, 1979) et le poids du pain de 2016 et de 2020. Les prix au public de
+  1974 à 1991 sont dans la série engendrée compensation-prix-administres.
 
 reserves:
-  pain_par_kilo: >-
-    Le poids du pain change le 30 août 1986 et le 12 août 1989 sans que le prix change ; le
-    prix au kilo est calculé (prix ÷ poids), non lu.
   pain_1980: >-
     Le prix de 80 millimes du gros pain en 1980 vient du rapport de la Banque centrale pour
-    1983 ; la date d'effet n'est pas établie.
-  varietes: >-
-    La semoule, les pâtes et le couscous changent de variété en 1983 (PS-10) ; les valeurs
-    sont celles de la variété courante que nomme chaque texte.
+    1983 ; la date d'effet n'est pas établie. La figure le trace en pointillé du 1er janvier
+    1981 à l'arrêté du 28 décembre 1983 (effet au 1er janvier 1984).
   stade_1975_1979: >-
     Les prix de la farine et de la semoule des décrets n° 75-352 et 79-413 sont « au quintal
     net, nu, rendu au chef lieu de la délégation » (farines) ou « rendu fabrique ou magasin »
-    (semoules de 1975) : ce ne sont pas des prix au public. Statut « autre stade », non tracés.
-  farine_ps7: >-
-    La farine PS-7 est une autre farine que la farine panifiable (PS-2, puis PS) : série à part,
-    jamais raccordée. Son seul prix au public relevé est celui du 12 août 1989.
-  semoule_unite: >-
-    La semoule est fixée au quintal jusqu'en 1989, au kilo en vrac en 1991 ; la valeur est
-    convertie en millimes le kilo (1 D le quintal = 10 millimes le kilo).
-  lait_1982: >-
-    L'arrêté du 21 novembre 1982 dit « lait régénéré », sans « demi-écrémé » ; ceux de 1989 et
-    de 1991 disent « demi-écrémé ». Les prix sont raccordés, à comparabilité incertaine.
-  dates_d_effet: >-
-    Dates reprises telles que les articles 1er les énoncent, même antérieures à la signature ou
-    à la publication (sucre 1980, 1988, 1990 ; huile 1980 ; lait 1982). Écarts du texte même :
-    huile 1986, 7 décembre (art. 1er) et 10 décembre (art. 2, stocks) ; lait 1991, 22 juillet
-    (art. 1er) et « d'application immédiate » (art. 3) ; sucre 1991, l'art. 2 imprime « 17 juin
-    1990 ». La date de l'art. 1er est retenue.
+    (semoules de 1975) : ce ne sont pas des prix au public. Statut « autre stade », non tracés ;
+    la valeur est convertie en millimes le kilo (1 D le quintal = 10 millimes le kilo).
+  poids_2016_2020: >-
+    Les arrêtés de 2016 et de 2020 fixent le poids du gros pain (400 g) et de la baguette
+    (220 g), sans prix au public.

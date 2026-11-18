@@ -4356,3 +4356,9 @@ Contrôles : `check_references_coherentes.py` ✓ ; JSON valide ✓.
   JORT 2023 n° 9 (seul `pdf_ar` = `/jort/2023/2023A/Ja0092023.pdf` présent). URL FR non
   renseignée pour ne rien inventer — à compléter dès que le PDF FR du fascicule est mis en
   cache. **À rapatrier dans Zotero** (citation-key `decret2023-12-prorogation-ges`).
+
+## 2026-11-18 — compensation, produits de base (PR #810 à #817)
+- 38 clés du chapitre `_produits_base.qmd` à rapatrier dans Zotero.
+- Clés à créer si citées : décrets 75-352, 83-1075, 83-1275, 83-1276, 84-151, 84-152 ; arrêtés des semoules et pâtes (décembre 1983, février 1984) ; décret-loi du 24 septembre 2025 ; Verme 2018 ; Currie-Gahvari 2008 ; décret céréalier de 2025 ; arrêtés du 17 février 1972 et du 30 juillet 1991 ; arrêtés des dérivés 1983, 1984, 1986, 1991 ; semoules et huile de 1989 ; pâtes de 1991 (lisibles : miroir iort et corpus). Notices de 20 décrets de campagne et des arrêtés des dérivés 1983-1991 (PR #815).
+- `scripts/push_biblio.py` refuse le type CSL `thesis` : la thèse de Sola (1942) est versée en `book`, `genre: "Thèse"`.
+- Les PDF du CIHEAM, de l'USAID et de l'ICR 15355 (PR #821) sont à indexer dans `tunisia-data` ; série `cereales-prix-campagne` à verser (PR #811).

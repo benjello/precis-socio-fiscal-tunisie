@@ -5868,7 +5868,14 @@
     - '%المدعم%'
     - '%التحويلات المالية%'
     - '%المعرف الوحيد%'
-    iort_ar: [ترشيد الدعم, منظومة الدعم, توجيه الدعم لمستحقيه, المواد الأساسية المدعمة]
+    iort_ar:
+    - ترشيد الدعم
+    - منظومة الدعم
+    - توجيه الدعم لمستحقيه
+    - المواد الأساسية المدعمة
+    - منصة تسجيل الأسر
+    - التحويلات المباشرة بعنوان الدعم
+    - التحويلات الشهرية المباشرة لفائدة الأسر
     plein_texte: [compensation des produits de base]
     depuis: 2011-01-01
   passes:
@@ -5883,6 +5890,12 @@
     sources: [corpus_local, iort]
     couverture: 'Texte intégral FR 2013-2026 (ciblage, rationalisation de la compensation, subvention ou compensation des produits de base, transfert monétaire, revenu minimum) et miroir iort AR (منظومة الدعم, ترشيد الدعم, توجيه الدعم, المواد الأساسية المدعمة, الخبز المدعم, استهداف) : aucun texte de ciblage. Voisins : décret n° 2014-1526 (ciblage de l''aide sociale), loi de finances pour 2018, art. 25 (ressource de la Caisse), décret gouvernemental n° 2018-417, arrêtés « pain » de 2016 et 2020. Lacunes : texte intégral AR des fascicules ; fichiers FR vides.'
     couvert_jusqu_au: 2026-10-29
+    resultat: aucun
+  - date: 2026-11-18
+    role: documentaliste
+    sources: [web]
+    couverture: 'Hors JORT : rapports sur le budget de l''État 2022 (pp. 21 et 49), 2023 (pp. 38, 39, 52, 61 et 142), 2024 (pp. 35 et 51), 2025 (p. 52) ; Cour des comptes, clôture 2023 (p. 69) et rapport de 2016 (pp. 10-11) ; FMI CR 13/161 (p. 25) et communiqué 22/353. Résultat : intention budgétaire (2022 : « dans l''attente de la mise en place du système de subvention directe » ; 2023 : programme de réforme, plateforme d''inscription des ménages, 697 MD de transferts mensuels directs au programme « Sécurité sociale » et 585 MD de transferts aux familles en dépenses imprévues) ; aucun texte d''organisation (décret, arrêté, article de loi de finances) n''est cité par ces documents. Lacunes : article ou tableau de la loi de finances 2023 qui inscrit les 697 MD ; exécution 2023 ; rapport sur le budget 2026 et PAP 2026 non lus ; miroir iort et plein texte arabe des fascicules 2022-2023 non relancés.'
+    couvert_jusqu_au: 2026-06-30
     resultat: aucun
   a_faire: ['miroir iort : termes iort_ar de la fiche', plein texte des fascicules depuis 2013]
 
@@ -5914,7 +5927,15 @@
     couverture: 'Farine PS-7 après le 12 août 1989 : intitulés jort_cache 1990-1996 (farine, PS-7, prix et céréales, semoule, pain, dérivés, pâtes) ; seuls les arrêtés du 15 août 1991 (pain, pâtes et couscous, semoule PS-10) et les décrets de campagne ; miroir iort arabe 1990-1994 (الفارينة, الدقيق) : aucun prix de la farine PS-7 publié avant la liberté des prix du 1er janvier 1992.'
     couvert_jusqu_au: 1996-12-31
     resultat: aucun
-  a_faire: ['miroir iort : termes iort_ar de la fiche', avis et communications du JORT depuis 1992, plein texte]
+  - date: 2026-11-18
+    role: documentaliste
+    sources: [web, jort_cache]
+    couverture: 'Hors JORT : Cour des comptes, « منظومة دعم المواد الأساسية » (2016, contrôle 2009-2014), pp. 9-11, 26-27 et 29 ; budgets de mission et PAP du Commerce 2018-2025 ; rapports de clôture 2013-2024 ; INS-CRES-BAD 2013, tableau 2. Résultat : les prix au public sont fixés, sous l''homologation, par décision (مقرر) du ministre chargé du commerce, non publiée au JORT ; décisions nommées : 14 janvier 2011 (baisse des prix au public des dérivés des céréales, du lait demi-écrémé, du sucre et du concentré de tomate), n° 05 du 14 janvier 2011 (pâtes : 0,410 D les 500 g), n° 3 de 2011 (concentré de tomate), 19 novembre 2014 (huile) ; l''acte (قرار) du 14 janvier 2011 baissant les prix au public n''est pas dans jort_cache (textes signés du 13 au 15 janvier 2011 : quatre, aucun sur les prix) ; restructuration des prix de la farine et de la semoule le 5 mars 2013 ; prix de vente de 2010 du ministère du Commerce (dix produits). Aucun texte de ces décisions n''est lu. Lacunes : textes des décisions (ministère du Commerce, base législative) ; prix 1992-2009 et 2011-2026 ; documents de la LF 2026 non lus.'
+    couvert_jusqu_au: 2026-06-30
+    resultat: aucun
+  a_faire:
+  - 'décisions du ministre du commerce (مقرر) : base législative ou demande au ministère'
+  - 'miroir iort : termes iort_ar de la fiche'
 
 - id: r-comp-pb-prix-pain-1980
   objet: texte fixant à 80 millimes le prix du pain en 1980 (rapport de la BCT pour 1983, tableau des prix taxés), entre le décret n° 79-413 et l'arrêté du 28 décembre 1983
@@ -5995,6 +6016,13 @@
     couverture: 'Élargissement : intitulés jort_cache 1989-1993 (minoterie, cession et blé, blé dur, blé tendre, Office des céréales, rétrocession) ; décrets de campagne 90-671 et 91-943 déjà lus ; miroir iort arabe 1990-1993 (المخفض, المخفّض) : aucun arrêté de prix réduit de la récolte 1990.'
     couvert_jusqu_au: 1993-12-31
     resultat: aucun
+  - date: 2026-11-18
+    role: documentaliste
+    sources: [corpus_local, web]
+    couverture: 'Sources hors JORT : rapports annuels BCT 1989-1993 (corpus tunisia-data) ; Banque mondiale 15878-TUN (1996, pp. 2-3 : même « prix de rétrocession » pour blé local et importé, péréquation de transport supprimée en 1991), CEM 8044 (1990), 11376, 13993, P5001, 10144, 12229, ICR 15355 (prix à la production seulement) ; FMI 96/27 et 97/57 ; agridata OC (2009-2020) ; CIHEAM, Cahiers Options Méditerranéennes n° 7 (1994), tableau 4-15, p. 218 : prix de rétrocession du blé tendre 1981-1989 (7,25 D/q en 1989), rien après ; Newman et al., USAID/Abt (1989), p. 26 : blé dur cédé « environ 9,4 DT/qx » en 1988, écart non expliqué avec 8,800. Piste : Étude de la Caisse générale de compensation, phase I (ministère de l''Agriculture, APIP 664-0343, 1990).'
+    couvert_jusqu_au: 1993-12-31
+    resultat: aucun
   a_faire:
   - OCR du corps des fascicules FR de juillet 1991 à décembre 1992 (seuls les sommaires sont océrisés)
   - lecture des éditions AR des mêmes fascicules
+  - obtenir l'Étude de la Caisse générale de compensation, phase I (ministère de l'Agriculture, projet APIP n° 664-0343, 1990) et Kramer (1990, RFF/AED), cités par CIHEAM 1994

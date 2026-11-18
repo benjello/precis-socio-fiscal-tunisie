@@ -10,6 +10,7 @@ localisation (article, tableau, page). Les figures de `compensation.py` les lise
     IMPORT_CESSION       tbl-compensation-import-cession        (_carburants.qmd), 2016-2025
     LF_CAISSE            tbl-compensation-lf-caisse             (_institution.qmd), 1987-1994
     LF_CAISSE_2005       tbl-compensation-lf-caisse-2005        (_institution.qmd), 2005-2010
+    PB_PAR_PRODUIT_CDC   fig-compensation-pb-paye-par-produit   (_produits_base.qmd), 2011-2024
 
 Rien n'est calculé ici, sauf ce que le tableau calculait lui-même (les écarts d'IMPORT_CESSION,
 importation moins cession, dont `verifier()` contrôle l'égalité). Aucune valeur n'est ajoutée :
@@ -398,3 +399,52 @@ def _verifier_lot2() -> None:
 
 
 _verifier_lot2()
+
+
+# --- La dépense payée de compensation des produits de base, par produit, 2011-2024 (MD) -------
+# Cour des comptes, rapports sur la clôture du budget de l'État, tableau de la mission Commerce
+# (crédits ordonnancés en 2011-2014, dépenses payées ensuite ; les rapports donnent les mêmes
+# valeurs pour 2014). Une source par année : la plus récente qui la porte. Les années qui se
+# chevauchent concordent d'un rapport à l'autre. « 0.0 » : tiret de la source ; produit absent
+# de la source : pas de ligne. (année, produit, millions de dinars, clé, localisation)
+_CDC = {2011: ("cdc-cloture-2013", "p. 76"), 2012: ("cdc-cloture-2013", "p. 76"),
+        2013: ("cdc-cloture-2013", "p. 76"), 2014: ("cdc-cloture-2014", "p. 80"),
+        2015: ("cdc-cloture-2018", "p. 90"), 2016: ("cdc-cloture-2018", "p. 90"),
+        2017: ("cdc-cloture-2018", "p. 90"), 2018: ("cdc-cloture-2018", "p. 90"),
+        2019: ("cdc-cloture-2020", "p. 78"), 2020: ("cdc-cloture-2020", "p. 78"),
+        2021: ("cdc-cloture-2024", "p. 73"), 2022: ("cdc-cloture-2024", "p. 73"),
+        2023: ("cdc-cloture-2024", "p. 73"), 2024: ("cdc-cloture-2024", "p. 73")}
+_PB_ANNEES = tuple(range(2011, 2025))
+_PB_VALEURS = {
+    "céréales": (833.673, 908.947, 1117.936, 1123.778, 1253.119, 1236.919, 1104.329, 1305.754,
+                 1284.436, 1848.475, 1674.154, 3220.944, 3344.168, 2993.300),
+    "huile végétale": (214.383, 264.381, 232.163, 206.488, 167.899, 199.934, 247.882, 249.151,
+                       208.096, 268.951, 301.383, 358.795, 165.355, 92.306),
+    "lait": (23.066, 31.928, 57.107, 61.737, 63.911, 63.478, 87.969, 134.177, 189.617, 209.071,
+             161.843, 138.076, 156.847, 350.700),
+    "pâtes et couscous": (4.185, 4.804, 16.359, 12.506, 31.825, 47.195, 39.824, 44.726, 88.640,
+                          73.505, 44.309, 35.097, 110.298, 122.707),
+    "sucre": (10.840, 10.435, 9.685, 9.342, 8.946, 10.131, 9.854, 8.867, 9.088, 9.876, 9.353,
+              9.357, 5.870, 5.379),
+    "papier scolaire": (4.300, 4.344, 4.321, 2.821, 4.300, 3.884, 3.897, 2.703, 10.320, 6.122,
+                        8.704, 8.732, 26.962, 37.108),
+    "concentré de tomate": (9.553, 10.794, 12.429, 0.0) + (None,) * 10,
+    "viande": (None,) * 4 + (0.0, 0.0, 0.0, 4.622, 2.356, 0.0, 0.254, 0.0, 0.0, 0.0),
+}
+PB_TOTAL_CDC = dict(zip(_PB_ANNEES, (1100.000, 1235.633, 1450.000, 1416.672, 1530.000, 1561.541,
+                                     1493.755, 1750.000, 1792.554, 2416.000, 2200.000, 3771.000,
+                                     3809.500, 3601.500)))
+PB_PAR_PRODUIT_CDC = [
+    (a, produit, v, *_CDC[a])
+    for produit, valeurs in _PB_VALEURS.items()
+    for a, v in zip(_PB_ANNEES, valeurs) if v is not None
+]
+
+
+def _verifier_pb_cdc() -> None:
+    for a, total in PB_TOTAL_CDC.items():
+        s = sum(v for b, _p, v, *_ in PB_PAR_PRODUIT_CDC if b == a)
+        assert abs(s - total) < 0.0015, (a, s, total)
+
+
+_verifier_pb_cdc()
