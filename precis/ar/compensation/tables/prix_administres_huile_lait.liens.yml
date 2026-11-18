@@ -1,0 +1,18 @@
+- libelle: 'سعر البيع للعموم: الزيت المخلوط، ثم الزيت المخلوط السائب'
+  parametre: parameters/produits_subventionnes/prix_administres_1974_1991/huile/huile_melange.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/produits_subventionnes.prix_administres_1974_1991.huile.huile_melange/table/
+- libelle: 'سعر البيع للعموم: زيت البذور السائب'
+  parametre: parameters/produits_subventionnes/prix_administres_1974_1991/huile/huile_graines_vrac.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/produits_subventionnes.prix_administres_1974_1991.huile.huile_graines_vrac/table/
+- libelle: 'سعر البيع للعموم: الحليب المجدّد المبستر، 1 لتر (1982)'
+  parametre: parameters/produits_subventionnes/prix_administres_1974_1991/lait/lait_regenere_pasteurise_1l.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/produits_subventionnes.prix_administres_1974_1991.lait.lait_regenere_pasteurise_1l/table/
+- libelle: 'سعر البيع للعموم: الحليب المجدّد المعقّم UHT، 1 لتر (1982)'
+  parametre: parameters/produits_subventionnes/prix_administres_1974_1991/lait/lait_regenere_uht_1l.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/produits_subventionnes.prix_administres_1974_1991.lait.lait_regenere_uht_1l/table/
+- libelle: 'سعر البيع للعموم: الحليب المجدّد نصف الدسم المبستر، 1 لتر'
+  parametre: parameters/produits_subventionnes/prix_administres_1974_1991/lait/lait_demi_ecreme_pasteurise_1l.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/produits_subventionnes.prix_administres_1974_1991.lait.lait_demi_ecreme_pasteurise_1l/table/
+- libelle: 'سعر البيع للعموم: الحليب المجدّد نصف الدسم المعقّم UHT، 1 لتر'
+  parametre: parameters/produits_subventionnes/prix_administres_1974_1991/lait/lait_demi_ecreme_uht_1l.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/produits_subventionnes.prix_administres_1974_1991.lait.lait_demi_ecreme_uht_1l/table/

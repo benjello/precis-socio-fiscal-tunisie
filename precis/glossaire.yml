@@ -12421,9 +12421,19 @@ entries:
     statut: provisoire
     references: [arrete-1957-02-05-redevance-hydrocarbures, arrete-1956-04-07-redevance-huiles, arrete-1956-12-27-redevance-sucres, decret67-99, decret83-1274]
     source_definition: {ref: arrete-1957-02-05-redevance-hydrocarbures, locator: "art. 1"}
-    # AR non lu : l'édition arabe de l'arrêté du 5 février 1957 n'est pas dépouillée.
-    # « الأتاوة التعويضية » est une proposition du terminologue, distincte de
-    # « أتاوة الدعم » (redevance de compensation de 2013) ; pas de `source_traduction`.
+    source_traduction: {ref: decret67-99, locator: "art. 1"}
+    # AR (18/11/2026) : « أحدث أداء تعويضي… لفائدة صندوق التعويض » (décret n° 67-99,
+    # art. 1, éd. arabe, JORT n° 16 de 1967, p. 536, lu à l'image) ; même forme dans le
+    # titre arabe du décret n° 75-633 (« الأداء التعويضي », suspension de la redevance du
+    # chapitre 73) et, au pluriel, du décret n° 68-279 (« الأداءات التعويضية »). Le titre
+    # arabe du décret n° 67-408 écrit « الغرامات التعويضية » : forme minoritaire, versée
+    # en synonyme ; « الغرامة التعويضية » désigne aussi l'indemnité compensatrice dans
+    # les décrets de rémunération (n° 2005-1170, entre autres). Remplace « الأتاوة
+    # التعويضية », proposition du terminologue non attestée. Nom propre au texte : la
+    # règle du 4/10/2026 (الأداءات = impôts au pluriel générique) ne s'y oppose pas.
+    # Provisoire : l'édition arabe des arrêtés de 1956-1957 et du décret n° 83-1274
+    # n'est pas lue ; terme retenu contre la préférence exprimée pour الغرامات
+    # التعويضية : à confirmer par l'humain.
     # Sens de 1983 (passe 2, 17/11/2026) : décret n° 83-1274, art. 22 nouveau du
     # décret n° 83-1075, lu par le documentaliste à l'OCR (montant non relu à l'image,
     # donc non repris) ; même terme, même mécanisme, autre bénéficiaire : entrée
@@ -12431,11 +12441,7 @@ entries:
     # Le décret n° 84-150 remet en vigueur l'art. 22 d'origine du décret n° 83-1075.
     # « Redevance différentielle » (arrêtés du 28/12/1983, art. 3) : texte non lu par
     # le terminologue, pas versée en synonyme.
-    # Pistes AR, titres arabes du site de l'Imprimerie officielle (data/iort, titres
-    # seuls) : décret n° 67-408 « الغرامات التعويضية على مدخرات الدقيق والسميد » ;
-    # décret n° 68-279 « الأداءات التعويضية ». Deux rendus différents, aucun texte lu :
-    # terme AR à arbitrer. « دعم سوق الحبوب » (nom AR du compte) : traduction du
-    # terminologue, non lue.
+    # « دعم سوق الحبوب » (nom AR du compte) : traduction du terminologue, non lue.
     voir_aussi: [perequation-des-prix, taxe-unique-compensation-carburants, redevance-compensation, office-cereales, marge-de-mouture]
     fr:
       terme: Redevance compensatrice
@@ -12454,18 +12460,83 @@ entries:
         distinguer de la redevance de compensation créée en 2013.
       synonymes: []
     ar:
-      terme: الأتاوة التعويضية
+      terme: الأداء التعويضي
       definition: >
         اقتطاع يُوظَّف على منتوج لتمويل تعويض الأسعار: لدعم منتوج آخر، أو للتسوية
         بين سعر التوريد والسعر الداخلي. وقبل إحداث الصندوق العام للتعويض سنة 1970،
         كان يُوظَّف لفائدة صندوق التعويض: على الزيوت الغذائية غير زيت الزيتون وعلى
         السكر المورَّد سنة 1956، وعلى البنزين والبترول الأزرق والغازوال سنة 1957،
-        وعلى منتوجات الباب 73 من التعريفة الديوانية سنة 1967. وكانت أتاوة سنة 1957،
-        وقدرها 300 فرنك للهكتولتر، تموّل استرجاعًا لفائدة موزّعي الفيول. كما تنصّ
+        وعلى منتوجات الباب 73 من التعريفة الديوانية سنة 1967. وكان أداء سنة 1957،
+        وقدره 300 فرنك للهكتولتر، تموّل استرجاعًا لفائدة موزّعي الفيول. كما تنصّ
         عليه أوامر مواسم الحبوب لفائدة حساب «دعم سوق الحبوب» بميزانية ديوان الحبوب،
         ومنها، بالنسبة إلى القمح الصلب، الفصل 22 من أمر موسم 1983-1984 في صيغته
         المنقّحة بالأمر عدد 1274 لسنة 1983 المؤرخ في 28 ديسمبر 1983. ويُميَّز عن
         أتاوة الدعم المحدثة سنة 2013.
+      synonymes: [الغرامة التعويضية]
+
+  - id: taxe-perequation-raffinage
+    acronyme: null
+    statut: valide
+    references: [decret72-400]
+    source_definition: {ref: decret72-400, locator: "art. 1er à 3"}
+    # AR : « أحدثت أداءات تعديل في التكرير على المنتجات البترولية التالية » (art. 1er),
+    # « مقادير أداءات التعديل في التكرير » (art. 2), « حساب فرعي للتعديل في التكرير »
+    # (art. 3) : édition arabe, JORT n° 51 du 19-22 décembre 1972, p. 1966, lue à
+    # l'image le 18/11/2026. Le texte n'emploie que le pluriel : le singulier du terme
+    # est dérivé. Le titre du miroir de l'Imprimerie officielle porte « تكوين », l'image
+    # « تكرير ». Produits de l'art. 2 (pour les libellés du tableau) : الوقود العالي
+    # (supercarburant), النفط الاعتيادي (essence normale), القازوال (gas-oil).
+    source_traduction: {ref: decret72-400, locator: "art. 1er et 2"}
+    voir_aussi: [caisse-generale-compensation, taxe-affectee, taxe-unique-compensation-carburants, perequation-des-prix]
+    fr:
+      terme: Taxe de péréquation de raffinage
+      definition: >
+        Taxe instituée par le décret n° 72-400 du 16 décembre 1972 sur le
+        supercarburant, l'essence normale et le gas-oil à leur sortie des usines
+        pour la consommation intérieure, à 0,350 dinar l'hectolitre (art. 1^er^ et
+        2). Son produit alimente un sous-compte de la Caisse générale de
+        compensation intitulé « compte de péréquation de raffinage » (art. 3).
+      synonymes: []
+    ar:
+      terme: أداء التعديل في التكرير
+      definition: >
+        أداء أحدثه الأمر عدد 400 لسنة 1972 المؤرخ في 16 ديسمبر 1972 على الوقود
+        العالي والنفط الاعتيادي والقازوال لدى خروجها من المصانع والمعدّة للاستهلاك
+        بالبلاد التونسية، بمقدار 0,350 دينار للهكتولتر (الفصلان 1 و2). ويموّل
+        مقابيضه حسابا فرعيا بالصندوق العام للتعويض يسمّى «حساب فرعي للتعديل في
+        التكرير» (الفصل 3).
+      synonymes: [أداءات التعديل في التكرير]
+
+  - id: taxe-affectee
+    acronyme: null
+    statut: provisoire
+    references: [lf-1971, decret72-400]
+    source_definition: {ref: lf-1971, locator: "art. 48"}
+    # AR non attesté : aucune édition arabe lue ne nomme la notion. « الأداء المخصّص »
+    # est composé par le terminologue sur la racine de l'affectation (« لتخصيصها »,
+    # décret n° 72-400, art. 6). « الموظّف » est écarté : en arabe fiscal, il signifie
+    # aussi « perçu ». La loi organique du budget n° 2019-15 dit « المداخيل الموظفة »
+    # pour « ressources affectées » : piste à confronter. Pas de
+    # `source_traduction`.
+    voir_aussi: [caisse-generale-compensation, fonds-special-tresor, taxe-perequation-raffinage]
+    fr:
+      terme: Taxe affectée
+      definition: >
+        Taxe dont le produit revient à un organisme ou à un compte déterminé au
+        lieu d'entrer dans les recettes générales du budget. La loi de finances
+        pour 1971 (art. 48) fait de la Caisse générale de compensation un fonds
+        spécial du Trésor, auquel reviennent les taxes et redevances de
+        compensation ; en 1971-1972, la taxe sur les agrumes et fruits exportés et
+        les taxes de péréquation de raffinage lui sont ainsi affectées.
+      synonymes: []
+    ar:
+      terme: الأداء المخصّص
+      definition: >
+        أداء يعود مقبوضه إلى هيكل أو حساب معيّن عوضا عن إدراجه بالموارد العامة
+        للميزانية. وقد جعل قانون المالية لسنة 1971 (الفصل 48) الصندوق العام للتعويض
+        من الحسابات الخاصة في الخزينة، تعود إليه الأداءات التعويضية؛ وخُصّص له
+        بذلك، في سنتي 1971 و1972، أداء على القوارص والغلال المصدّرة وأداءات التعديل
+        في التكرير.
       synonymes: []
 
   - id: compte-caisse-compensation
@@ -12851,6 +12922,37 @@ entries:
         موسم بأمر إلى غاية صابة 2025، ثم بقرار مشترك من الوزيرين المكلّفين بالمالية
         والفلاحة.
       synonymes: [السعر الأساسي]
+
+  - id: prix-intervention
+    acronyme: null
+    statut: valide
+    references: [decret2025-344-oc]
+    source_definition: {ref: decret2025-344-oc, locator: "art. 1er et 4"}
+    # AR : « يطّبق سعر تدخّل قدره خمسة وستون دينارا للقنطار الواحد » (art. 1er, al. 2) ;
+    # « ينطبق سعر التّدخُل عند الإنتاج وعند الشراء من المجمعين » (art. 4). Miroir de
+    # l'Imprimerie officielle, édition arabe du décret n° 2025-344. Le tableau des prix
+    # à la production l'emploie pour l'orge.
+    source_traduction: {ref: decret2025-344-oc, locator: "art. 1er et 4"}
+    voir_aussi: [prix-de-base-production, prix-normal-retrocession, office-cereales]
+    fr:
+      terme: Prix d'intervention
+      definition: >
+        Prix appliqué par les organismes de collecte et de stockage aux achats
+        d'orge et de triticale livrés par les producteurs, dont la
+        commercialisation est libre. Le décret de la campagne 2025-2026 le fixe à
+        65 dinars le quintal (art. 1^er^) et l'applique à la production et à
+        l'achat auprès des collecteurs (art. 4). Pour le blé dur et le blé tendre,
+        le même décret fixe un prix de base à la production.
+      synonymes: [Prix d'intervention à la production]
+    ar:
+      terme: سعر التدخّل
+      definition: >
+        السعر الذي تطبّقه مؤسّسات التجميع والخزن على مشتريات الشعير والتريتيكال
+        المسلّمة إليها من قبل المنتجين، وتسويق هاتين المادّتين حرّ. ويضبطه أمر
+        موسم 2025-2026 بخمسة وستين دينارا للقنطار الواحد (الفصل الأول)، وينطبق عند
+        الإنتاج وعند الشراء من المجمّعين (الفصل 4). أمّا القمح الصلب والقمح
+        اللّين، فيضبط لهما الأمر نفسه سعرا أساسيا عند الإنتاج.
+      synonymes: [سعر التدخّل عند الإنتاج]
 
   - id: prix-normal-retrocession
     acronyme: null

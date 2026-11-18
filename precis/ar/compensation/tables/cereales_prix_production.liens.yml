@@ -1,0 +1,12 @@
+- libelle: السعر الأساسي عند الإنتاج للقمح الصلب
+  parametre: parameters/produits_subventionnes/cereales/prix_base_production/ble_dur.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/produits_subventionnes.cereales.prix_base_production.ble_dur/table/
+- libelle: السعر الأساسي عند الإنتاج للقمح اللين
+  parametre: parameters/produits_subventionnes/cereales/prix_base_production/ble_tendre.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/produits_subventionnes.cereales.prix_base_production.ble_tendre/table/
+- libelle: السعر الأساسي عند الإنتاج للشعير
+  parametre: parameters/produits_subventionnes/cereales/prix_base_production/orge.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/produits_subventionnes.cereales.prix_base_production.orge/table/
+- libelle: سعر التدخّل عند الإنتاج للشعير
+  parametre: parameters/produits_subventionnes/cereales/prix_intervention_orge.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/produits_subventionnes.cereales.prix_intervention_orge/table/
