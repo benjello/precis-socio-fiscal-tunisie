@@ -35,6 +35,8 @@ relecture (évite les conflits sur le fichier partagé pendant que d'autres chan
   bulletins SVT. Série temporelle **dispersée**, à consolider.
 - **Encours agrégé Bons du Trésor** — BCT (indicateurs quotidiens testés le 6 nov. 2026 :
   BTA 36 689,6 MDT ; BTCT 1 645,6 MDT). **Codes de table `PL130xxx` à préciser** pour la série longue.
+  Non faisable depuis le cloud : `bct.gov.tn` est refusé par le proxy et par son `robots.txt`
+  (essai du 18 nov. 2026, avec `PL235010`) ; à faire depuis le poste.
 - **Ventilation par instrument** (BTA, BTCT, emprunts nationaux) — annexe 7 au PLF (`gbo.tn`),
   PDF **arabe** : à relever.
 - **Registre JORT des emprunts intérieurs** (`docs/notes/dette-interieure-registre-jort.csv`,
