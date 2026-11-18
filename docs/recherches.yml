@@ -5995,6 +5995,13 @@
     couverture: 'Élargissement : intitulés jort_cache 1989-1993 (minoterie, cession et blé, blé dur, blé tendre, Office des céréales, rétrocession) ; décrets de campagne 90-671 et 91-943 déjà lus ; miroir iort arabe 1990-1993 (المخفض, المخفّض) : aucun arrêté de prix réduit de la récolte 1990.'
     couvert_jusqu_au: 1993-12-31
     resultat: aucun
+  - date: 2026-11-18
+    role: documentaliste
+    sources: [corpus_local, web]
+    couverture: 'Sources hors JORT : rapports annuels BCT 1989-1993 (corpus tunisia-data) ; Banque mondiale 15878-TUN (1996, pp. 2-3 : même « prix de rétrocession » pour blé local et importé, péréquation de transport supprimée en 1991), CEM 8044 (1990), 11376, 13993, P5001, 10144, 12229, ICR 15355 (prix à la production seulement) ; FMI 96/27 et 97/57 ; agridata OC (2009-2020) ; CIHEAM, Cahiers Options Méditerranéennes n° 7 (1994), tableau 4-15, p. 218 : prix de rétrocession du blé tendre 1981-1989 (7,25 D/q en 1989), rien après ; Newman et al., USAID/Abt (1989), p. 26 : blé dur cédé « environ 9,4 DT/qx » en 1988, écart non expliqué avec 8,800. Piste : Étude de la Caisse générale de compensation, phase I (ministère de l''Agriculture, APIP 664-0343, 1990).'
+    couvert_jusqu_au: 1993-12-31
+    resultat: aucun
   a_faire:
   - OCR du corps des fascicules FR de juillet 1991 à décembre 1992 (seuls les sommaires sont océrisés)
   - lecture des éditions AR des mêmes fascicules
+  - obtenir l'Étude de la Caisse générale de compensation, phase I (ministère de l'Agriculture, projet APIP n° 664-0343, 1990) et Kramer (1990, RFF/AED), cités par CIHEAM 1994
