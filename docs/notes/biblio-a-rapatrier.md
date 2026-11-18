@@ -6,6 +6,14 @@
 > `references.json` doit être **remontée dans Zotero** pour être pérenne et obtenir une
 > clé de citation stable (champ « Extra » : `citation-key: xxx`).
 
+## Lot 1 du 18/11/2026 : clés existantes portées au fonds commun (bibliographe, depuis le cloud)
+
+Aucune clé nouvelle, aucune métadonnée changée : les notices sont recopiées telles quelles.
+- `decret-96-1797` (FR et AR) : de `retraites` au fonds commun, citée dans `cotisations_sociales/_assiette.qmd` (art. 1).
+- `loi2024-18` (AR) : de `marche_travail` au fonds commun (la FR y était déjà), citée deux fois dans `education/_depense.qmd`.
+- `loi-82-67` : déjà dans `agriculture/references.json` ; portée au registre de `_institution.qmd` (`#r-apia-loi-1982`, art. 16 comme dans `_investissement.qmd`).
+- **Zotero** : au prochain `controle-rangement`, `decret-96-1797` et `loi2024-18` doivent passer en « Commun » (déclassement à faire sur feu vert).
+
 ## Chantier « annexe dette publique » — fichiers chantier absents (état du 4 novembre 2026)
 
 Tâche de clôture biblio reçue pour `precis/fr/annexe-dette-publique.qmd` et la note
