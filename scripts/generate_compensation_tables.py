@@ -7,9 +7,11 @@ fichiers qu'il produit, versionnés dans `precis/fr/compensation/tables/` et
     OPENFISCA_TUNISIA_PATH=../openfisca-tunisia PYTHONPATH=scripts \
         uv run python scripts/generate_compensation_tables.py
 
-Exige openfisca-tunisia >= 0.169 : c'est la version qui verse `produits_subventionnes/cereales/`
-(prix fixés à chaque campagne par le texte de l'Office des céréales, récoltes 1970 à 2026) et
-`produits_subventionnes/caisse_generale_compensation/taxes_affectees/`.
+Exige openfisca-tunisia >= 0.171. La 0.169 verse `produits_subventionnes/cereales/` (prix
+fixés à chaque campagne par le texte de l'Office des céréales, récoltes 1970 à 2026) et
+`produits_subventionnes/caisse_generale_compensation/taxes_affectees/` ; la 0.171,
+`produits_subventionnes/prix_administres_1974_1991/` (prix au public des produits de base
+publiés au Journal officiel de 1974 à 1991).
 
 CE QUI EST ENGENDRÉ :
   - `tables/cereales_prix_production.md` : prix de base à la production du blé dur, du blé
@@ -20,7 +22,12 @@ CE QUI EST ENGENDRÉ :
   - `_seriescache/compensation-cereales-parametres.csv` : la série longue des neuf prix (une
     ligne par prix et par date, `parametre,date_effet,valeur,texte,lien`), que les figures
     lisent par `figtools.series("compensation-cereales-parametres")` — le build du site
-    n'importe pas openfisca.
+    n'importe pas openfisca ;
+  - `tables/prix_administres_{pain,farines_semoule,pates_couscous,sucre_cafe,huile_lait}.md` :
+    les prix au public des produits de base, 1974-1991, une ligne par produit et par date ;
+  - `_seriescache/compensation-prix-administres.csv` : la série longue des 25 prix
+    administrés (clé : nom du paramètre, valeur en dinars dans l'unité du texte), que lit
+    `precis/fr/compensation/figures/produits_base.py`.
 Chaque tableau a ses liens « Base législative » (`<nom>.liens.yml`), la série les siens
 (`compensation-cereales-parametres.liens.fr.yml`).
 
@@ -29,6 +36,14 @@ l'orge au 6 septembre 1993 (commercialisation libre à partir de la récolte 199
 réduits des blés au 4 juillet 1991. La case du tableau est alors « — », la ligne de la série
 n'a pas de valeur. Le prix d'intervention de l'orge commence le même 6 septembre 1993 : les
 deux grandeurs sont tenues séparées, colonne par colonne et clé par clé, sans être raboutées.
+
+PRIX ADMINISTRÉS, 1974-1991. Un paramètre par produit, variété, conditionnement et unité de
+prix du texte : le tableau ne raccorde rien, il donne chaque prix tel que le texte le fixe, en
+dinars. Une valeur nulle dit que le prix n'est pas établi à partir de cette date, ou qu'il
+cesse d'être publié (1er janvier 1992, liberté des prix) ; la case est « — ». Le
+1er janvier 1980 du gros pain de 700 g et du petit pain de 300 g n'est pas une date d'effet :
+il borne une période sans prix établi et ne cite aucun texte ; la case de date porte l'année
+seule, la case de texte un tiret, et la ligne de la série n'a ni texte ni lien.
 
 DATE D'EFFET OU DATE DE PUBLICATION. Plusieurs textes de campagne ne disent pas leur date
 d'effet et paraissent dans un numéro du Journal officiel daté de plusieurs jours, dont le jour de
@@ -66,6 +81,8 @@ SORTIE = RACINE / LANGUE / LIVRE / "tables"
 CACHE = RACINE / "_seriescache"
 SERIE = "compensation-cereales-parametres"
 TIRET = "—"
+PA = f"{PS}/prix_administres_1974_1991"
+SERIE_PA = "compensation-prix-administres"
 
 # (clé de la série, chemin, en-tête de colonne, libellé du lien « Base législative »)
 PRODUCTION = [
@@ -101,6 +118,119 @@ TAXES_AFFECTEES = [
     (f"{TAXES}/perequation_raffinage/gasoil.yaml",
      "Taxe de péréquation de raffinage, gas-oil", "par hectolitre"),
 ]
+
+# Prix administrés : (clé = nom du paramètre, sous-dossier, libellé, unité de prix), par tableau.
+_UNITE = {"currency/unit": "la pièce", "currency/kg": "le kilo",
+          "currency/100kg": "le quintal", "currency/l": "le litre"}
+PRIX_ADMINISTRES = {
+    "prix_administres_pain.md": [
+        ("gros_pain_700g", "pain", "Gros pain de 700 g"),
+        ("gros_pain_600g", "pain", "Gros pain de 600 g"),
+        ("gros_pain_500g", "pain", "Gros pain de 500 g"),
+        ("petit_pain_300g", "pain", "Petit pain de 300 g"),
+        ("petit_pain_250g", "pain", "Petit pain, puis baguette, de 250 g"),
+    ],
+    "prix_administres_farines_semoule.md": [
+        ("farine_ps_quintal", "farine", "Farine PS, au quintal"),
+        ("farine_ps_vrac", "farine", "Farine PS, en vrac"),
+        ("farine_ps7_vrac", "farine", "Farine PS-7, en vrac"),
+        ("farine_ps7_paquet_1kg", "farine", "Farine PS-7, paquet de 1 kg"),
+        ("semoule_ps10_quintal", "semoule", "Semoule PS-10, au quintal"),
+        ("semoule_ps10_vrac", "semoule", "Semoule PS-10, en vrac"),
+    ],
+    "prix_administres_pates_couscous.md": [
+        ("pates_vrac_1975_1979", "pates", "Pâtes alimentaires, en vrac (décrets de 1975 et 1979)"),
+        ("pates_ps10_vrac", "pates", "Pâtes alimentaires PS-10, en vrac"),
+        ("couscous_vrac_1975_1979", "couscous", "Couscous rapide, en vrac (décrets de 1975 et 1979)"),
+        ("couscous_ps10_vrac", "couscous", "Couscous rapide PS-10, en vrac"),
+    ],
+    "prix_administres_sucre_cafe.md": [
+        ("sucre_poudre", "sucre", "Sucre en poudre"),
+        ("sucre_morceaux", "sucre", "Sucre en morceaux"),
+        ("sucre_brun", "sucre", "Sucre brun"),
+        ("cafe", None, "Café"),
+    ],
+    "prix_administres_huile_lait.md": [
+        ("huile_melange", "huile", "Huile mélangée, puis huile de mélange en vrac"),
+        ("huile_graines_vrac", "huile", "Huile de graines en vrac"),
+        ("lait_regenere_pasteurise_1l", "lait", "Lait régénéré pasteurisé, 1 l (1982)"),
+        ("lait_regenere_uht_1l", "lait", "Lait régénéré UHT, 1 l (1982)"),
+        ("lait_demi_ecreme_pasteurise_1l", "lait", "Lait régénéré demi-écrémé pasteurisé, 1 l"),
+        ("lait_demi_ecreme_uht_1l", "lait", "Lait régénéré demi-écrémé UHT, 1 l"),
+    ],
+}
+
+
+def chemin_pa(cle: str, dossier: str | None) -> str:
+    return f"{PA}/{dossier}/{cle}.yaml" if dossier else f"{PA}/{cle}.yaml"
+
+
+def unite_pa(chemin: str) -> str:
+    unite = ((ot.charge_parametre(chemin) or {}).get("metadata") or {}).get("unit")
+    if unite not in _UNITE:
+        raise Ecart(f"unité inattendue {unite!r} : {chemin}")
+    return _UNITE[unite]
+
+
+# Le titre court d'un texte de prix : avant son objet, virgule ou non (« Arrêté du 17 février
+# 1984 fixant le prix des farines »).
+_OBJET_PA = re.compile(r",?\s+(fixant|portant|abrogeant|modifiant|instituant|complétant|"
+                       r"relatif|relative)\b")
+
+
+def tableau_prix_administres(specs) -> "object":
+    """Une ligne par prix et par date de ses valeurs, dans l'ordre des paramètres."""
+    import pandas as pd
+
+    lignes = []
+    for cle, dossier, libelle in specs:
+        chemin = chemin_pa(cle, dossier)
+        serie = ot.serie_datee(chemin)
+        if not serie:
+            raise Ecart(f"paramètre introuvable ou vide : {chemin}")
+        ot.releve_note(chemin, f"Prix au public : {libelle[0].lower()}{libelle[1:]}")
+        unite = "le paquet" if cle.endswith("_paquet_1kg") else unite_pa(chemin)
+        for date, valeur, titre, lien in serie:
+            if not titre:
+                if valeur is not None:
+                    raise Ecart(f"{chemin} au {date} : valeur sans texte")
+                date_case, texte = date[:4], TIRET
+            else:
+                date_case = case_date([chemin], date)
+                m = _OBJET_PA.search(titre)
+                texte = ot.lien_reference(titre[:m.start()] if m else titre, lien, LANGUE)
+            lignes.append({"Produit": libelle, "Date d'effet": date_case,
+                           "Prix (D)": millimes(valeur), "Unité": unite, "Texte": texte})
+    return pd.DataFrame(lignes)
+
+
+def ecrire_serie_prix_administres() -> int:
+    """La série longue des prix administrés ; une date sans texte n'a ni texte ni lien."""
+    lignes, liens = [], []
+    for specs in PRIX_ADMINISTRES.values():
+        for cle, dossier, libelle in specs:
+            chemin = chemin_pa(cle, dossier)
+            serie = ot.serie_datee(chemin)
+            if not serie:
+                print(f"✗ {SERIE_PA} : paramètre introuvable ou vide : {chemin}")
+                return 1
+            for date, valeur, titre, lien in serie:
+                if titre and not lien.startswith("https://www.pist.tn/"):
+                    print(f"✗ {SERIE_PA} : {cle} au {date}, lien hors du Journal officiel")
+                    return 1
+                if not titre and valeur is not None:
+                    print(f"✗ {SERIE_PA} : {cle} au {date}, valeur sans texte")
+                    return 1
+                lignes.append({"parametre": cle, "date_effet": date,
+                               "valeur": None if valeur is None else round(valeur, 6),
+                               "texte": titre, "lien": lien})
+            liens.append((chemin, f"Prix au public : {libelle[0].lower()}{libelle[1:]}"))
+    CACHE.mkdir(parents=True, exist_ok=True)
+    ot.ecrire_csv_serie(CACHE / f"{SERIE_PA}.csv", lignes)
+    ot.ecrire_fichier_liens(CACHE / f"{SERIE_PA}.liens.{LANGUE}.yml", liens, LANGUE)
+    print(f"✓ série {SERIE_PA} : {len(lignes)} lignes, {len(liens)} paramètres")
+    return 0
+
 
 # Une note du paramètre qui dit que la date portée est une date de publication.
 _PUBLICATION = re.compile(r"retenue comme date de publication|date de publication, non date "
@@ -265,7 +395,10 @@ def main() -> int:
     return (ecrire("cereales_prix_production.md", lambda: tableau_prix(PRODUCTION))
             or ecrire("cereales_prix_retrocession.md", lambda: tableau_prix(RETROCESSION))
             or ecrire("caisse_taxes_affectees.md", tableau_taxes)
-            or ecrire_serie())
+            or ecrire_serie()
+            or next((1 for nom, specs in PRIX_ADMINISTRES.items()
+                     if ecrire(nom, lambda specs=specs: tableau_prix_administres(specs))), 0)
+            or ecrire_serie_prix_administres())
 
 
 if __name__ == "__main__":
