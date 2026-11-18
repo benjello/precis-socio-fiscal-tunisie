@@ -1,18 +1,18 @@
 - libelle: 'سعر البيع للعموم: الدقيق PS، بالقنطار'
   parametre: parameters/produits_subventionnes/prix_administres_1974_1991/farine/farine_ps_quintal.yaml
   url: https://parameters.tn.tax-benefit.org/ar/parameters/produits_subventionnes.prix_administres_1974_1991.farine.farine_ps_quintal/table/
-- libelle: 'سعر البيع للعموم: الدقيق PS، سائب'
+- libelle: 'سعر البيع للعموم: الدقيق PS، صبة'
   parametre: parameters/produits_subventionnes/prix_administres_1974_1991/farine/farine_ps_vrac.yaml
   url: https://parameters.tn.tax-benefit.org/ar/parameters/produits_subventionnes.prix_administres_1974_1991.farine.farine_ps_vrac/table/
-- libelle: 'سعر البيع للعموم: الدقيق PS-7، سائب'
+- libelle: 'سعر البيع للعموم: الدقيق وزن نوعي الا 7، صبة'
   parametre: parameters/produits_subventionnes/prix_administres_1974_1991/farine/farine_ps7_vrac.yaml
   url: https://parameters.tn.tax-benefit.org/ar/parameters/produits_subventionnes.prix_administres_1974_1991.farine.farine_ps7_vrac/table/
-- libelle: 'سعر البيع للعموم: الدقيق PS-7، علبة 1 كلغ'
+- libelle: 'سعر البيع للعموم: الدقيق وزن نوعي الا 7، معلب 1 كغ'
   parametre: parameters/produits_subventionnes/prix_administres_1974_1991/farine/farine_ps7_paquet_1kg.yaml
   url: https://parameters.tn.tax-benefit.org/ar/parameters/produits_subventionnes.prix_administres_1974_1991.farine.farine_ps7_paquet_1kg/table/
-- libelle: 'سعر البيع للعموم: السميد PS-10، بالقنطار'
+- libelle: 'سعر البيع للعموم: السميد وزن نوعي الا 10، بالقنطار'
   parametre: parameters/produits_subventionnes/prix_administres_1974_1991/semoule/semoule_ps10_quintal.yaml
   url: https://parameters.tn.tax-benefit.org/ar/parameters/produits_subventionnes.prix_administres_1974_1991.semoule.semoule_ps10_quintal/table/
-- libelle: 'سعر البيع للعموم: السميد PS-10، سائب'
+- libelle: 'سعر البيع للعموم: السميد وزن نوعي الا 10، صبة'
   parametre: parameters/produits_subventionnes/prix_administres_1974_1991/semoule/semoule_ps10_vrac.yaml
   url: https://parameters.tn.tax-benefit.org/ar/parameters/produits_subventionnes.prix_administres_1974_1991.semoule.semoule_ps10_vrac/table/

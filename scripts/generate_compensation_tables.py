@@ -106,7 +106,7 @@ MOTS = {
            "produit": "المنتوج", "prix": "السعر (د)", "unite": "الوحدة",
            "paquet": "للعلبة",  # non attesté
            "taxe": "الأداء", "montant": "المبلغ", "dinar": "د",
-           "prix_public": "سعر البيع للعموم: {produit}"},  # non attesté
+           "prix_public": "سعر البيع للعموم: {produit}"},  # attesté : arrêté du 11 novembre 1989 (semoule)
 }
 
 # Céréales. Arabe : القمح الصلب، القمح اللين، الشعير et « للقنطار » (décret n° 2025-344,
@@ -176,10 +176,13 @@ TAXES_AFFECTEES = [
 # Prix administrés : (clé = nom du paramètre, sous-dossier, libellé, unité de prix), par tableau.
 # Arabe attesté : الخبز، الدقيق، السميد، العجين الغذائي، الكسكسي السريع (titre arabe du décret
 # n° 75-352, miroir iort) ; السكر، القهوة، الحليب (titres arabes de textes douaniers du même
-# miroir, non d'un texte de prix) ; « للقنطار » (décret n° 2025-344). Non attestés, d'usage courant : les qualificatifs
-# (كبير، صغير، الباقات، سائب، علبة، المسحوق، المقطّع، الأسمر، المخلوط، زيت البذور، المجدّد،
-# المبستر، المعقّم، نصف الدسم) et les unités للوحدة، للكلغ، للتر. « الحليب المجدّد » et
-# « سائب » figurent au tarif des douanes, non dans un texte de prix.
+# miroir, non d'un texte de prix) ; « للقنطار » (décret n° 2025-344). Qualificatifs lus à l'image
+# dans les arrêtés du 11 novembre 1989, édition arabe du JORT n° 77, pp. 1804-1807 : صبة (vrac),
+# معلب كغ (paquet de 1 kg), الدقيق وزن نوعي الا 7 (farine PS-7), السميد وزن نوعي الا 10, العجين
+# et كسكسي وزن نوعي 10-, سكر دقيق (poudre), سكر طوابع (morceaux), الزيت المخلط صبة, خبز وزن
+# 500 / 250 غرام, الحليب المجدد النصف الدسم, حليب مبستر / معقم باكو لتر, سعر البيع للعموم.
+# Encore non attestés : الخبز الكبير/الصغير (700, 600, 300 g), السكر الأسمر, زيت البذور
+# (arrêtés de 1991), et les unités للوحدة، للكلغ، للتر.
 _UNITE = {
     "fr": {"currency/unit": "la pièce", "currency/kg": "le kilo",
            "currency/100kg": "le quintal", "currency/l": "le litre"},
@@ -196,52 +199,52 @@ PRIX_ADMINISTRES = {
     "prix_administres_pain.md": [
         ("gros_pain_700g", "pain", _l("Gros pain de 700 g", "الخبز الكبير، 700 غ")),
         ("gros_pain_600g", "pain", _l("Gros pain de 600 g", "الخبز الكبير، 600 غ")),
-        ("gros_pain_500g", "pain", _l("Gros pain de 500 g", "الخبز الكبير، 500 غ")),
+        ("gros_pain_500g", "pain", _l("Gros pain de 500 g", "خبز وزن 500 غرام")),
         ("petit_pain_300g", "pain", _l("Petit pain de 300 g", "الخبز الصغير، 300 غ")),
         ("petit_pain_250g", "pain", _l("Petit pain, puis baguette, de 250 g",
-                                       "الخبز الصغير ثم الباقات، 250 غ")),
+                                       "خبز وزن 250 غرام")),
     ],
     "prix_administres_farines_semoule.md": [
         ("farine_ps_quintal", "farine", _l("Farine PS, au quintal", "الدقيق PS، بالقنطار")),
-        ("farine_ps_vrac", "farine", _l("Farine PS, en vrac", "الدقيق PS، سائب")),
-        ("farine_ps7_vrac", "farine", _l("Farine PS-7, en vrac", "الدقيق PS-7، سائب")),
+        ("farine_ps_vrac", "farine", _l("Farine PS, en vrac", "الدقيق PS، صبة")),
+        ("farine_ps7_vrac", "farine", _l("Farine PS-7, en vrac", "الدقيق وزن نوعي الا 7، صبة")),
         ("farine_ps7_paquet_1kg", "farine", _l("Farine PS-7, paquet de 1 kg",
-                                               "الدقيق PS-7، علبة 1 كلغ")),
+                                               "الدقيق وزن نوعي الا 7، معلب 1 كغ")),
         ("semoule_ps10_quintal", "semoule", _l("Semoule PS-10, au quintal",
-                                               "السميد PS-10، بالقنطار")),
-        ("semoule_ps10_vrac", "semoule", _l("Semoule PS-10, en vrac", "السميد PS-10، سائب")),
+                                               "السميد وزن نوعي الا 10، بالقنطار")),
+        ("semoule_ps10_vrac", "semoule", _l("Semoule PS-10, en vrac", "السميد وزن نوعي الا 10، صبة")),
     ],
     "prix_administres_pates_couscous.md": [
         ("pates_vrac_1975_1979", "pates",
          _l("Pâtes alimentaires, en vrac (décrets de 1975 et 1979)",
-            "العجين الغذائي، سائب (أمر 1975 وأمر 1979)")),
+            "العجين الغذائي، صبة (أمر 1975 وأمر 1979)")),
         ("pates_ps10_vrac", "pates", _l("Pâtes alimentaires PS-10, en vrac",
-                                        "العجين الغذائي PS-10، سائب")),
+                                        "العجين وزن نوعي 10-، صبة")),
         ("couscous_vrac_1975_1979", "couscous",
          _l("Couscous rapide, en vrac (décrets de 1975 et 1979)",
-            "الكسكسي السريع، سائب (أمر 1975 وأمر 1979)")),
+            "الكسكسي السريع، صبة (أمر 1975 وأمر 1979)")),
         ("couscous_ps10_vrac", "couscous", _l("Couscous rapide PS-10, en vrac",
-                                              "الكسكسي السريع PS-10، سائب")),
+                                              "كسكسي وزن نوعي 10-، صبة")),
     ],
     "prix_administres_sucre_cafe.md": [
-        ("sucre_poudre", "sucre", _l("Sucre en poudre", "السكر المسحوق")),
-        ("sucre_morceaux", "sucre", _l("Sucre en morceaux", "السكر المقطّع")),
+        ("sucre_poudre", "sucre", _l("Sucre en poudre", "سكر دقيق")),
+        ("sucre_morceaux", "sucre", _l("Sucre en morceaux", "سكر طوابع")),
         ("sucre_brun", "sucre", _l("Sucre brun", "السكر الأسمر")),
         ("cafe", None, _l("Café", "القهوة")),
     ],
     "prix_administres_huile_lait.md": [
         ("huile_melange", "huile", _l("Huile mélangée, puis huile de mélange en vrac",
-                                      "الزيت المخلوط، ثم الزيت المخلوط السائب")),
-        ("huile_graines_vrac", "huile", _l("Huile de graines en vrac", "زيت البذور السائب")),
+                                      "الزيت المخلط، ثم الزيت المخلط صبة")),
+        ("huile_graines_vrac", "huile", _l("Huile de graines en vrac", "زيت البذور صبة")),
         ("lait_regenere_pasteurise_1l", "lait",
-         _l("Lait régénéré pasteurisé, 1 l (1982)", "الحليب المجدّد المبستر، 1 لتر (1982)")),
+         _l("Lait régénéré pasteurisé, 1 l (1982)", "الحليب المجدد المبستر، 1 لتر (1982)")),
         ("lait_regenere_uht_1l", "lait",
-         _l("Lait régénéré UHT, 1 l (1982)", "الحليب المجدّد المعقّم UHT، 1 لتر (1982)")),
+         _l("Lait régénéré UHT, 1 l (1982)", "الحليب المجدد المعقم، 1 لتر (1982)")),
         ("lait_demi_ecreme_pasteurise_1l", "lait",
          _l("Lait régénéré demi-écrémé pasteurisé, 1 l",
-            "الحليب المجدّد نصف الدسم المبستر، 1 لتر")),
+            "الحليب المجدد النصف الدسم، مبستر باكو لتر")),
         ("lait_demi_ecreme_uht_1l", "lait",
-         _l("Lait régénéré demi-écrémé UHT, 1 l", "الحليب المجدّد نصف الدسم المعقّم UHT، 1 لتر")),
+         _l("Lait régénéré demi-écrémé UHT, 1 l", "الحليب المجدد النصف الدسم، معقم باكو لتر")),
     ],
 }
 
