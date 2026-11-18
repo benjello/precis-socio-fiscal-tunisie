@@ -1,0 +1,18 @@
+- libelle: 'Prix au public : huile mélangée, puis huile de mélange en vrac'
+  parametre: parameters/produits_subventionnes/prix_administres_1974_1991/huile/huile_melange.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/produits_subventionnes.prix_administres_1974_1991.huile.huile_melange/table/
+- libelle: 'Prix au public : huile de graines en vrac'
+  parametre: parameters/produits_subventionnes/prix_administres_1974_1991/huile/huile_graines_vrac.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/produits_subventionnes.prix_administres_1974_1991.huile.huile_graines_vrac/table/
+- libelle: 'Prix au public : lait régénéré pasteurisé, 1 l (1982)'
+  parametre: parameters/produits_subventionnes/prix_administres_1974_1991/lait/lait_regenere_pasteurise_1l.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/produits_subventionnes.prix_administres_1974_1991.lait.lait_regenere_pasteurise_1l/table/
+- libelle: 'Prix au public : lait régénéré UHT, 1 l (1982)'
+  parametre: parameters/produits_subventionnes/prix_administres_1974_1991/lait/lait_regenere_uht_1l.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/produits_subventionnes.prix_administres_1974_1991.lait.lait_regenere_uht_1l/table/
+- libelle: 'Prix au public : lait régénéré demi-écrémé pasteurisé, 1 l'
+  parametre: parameters/produits_subventionnes/prix_administres_1974_1991/lait/lait_demi_ecreme_pasteurise_1l.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/produits_subventionnes.prix_administres_1974_1991.lait.lait_demi_ecreme_pasteurise_1l/table/
+- libelle: 'Prix au public : lait régénéré demi-écrémé UHT, 1 l'
+  parametre: parameters/produits_subventionnes/prix_administres_1974_1991/lait/lait_demi_ecreme_uht_1l.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/produits_subventionnes.prix_administres_1974_1991.lait.lait_demi_ecreme_uht_1l/table/
