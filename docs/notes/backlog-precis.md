@@ -49,6 +49,12 @@ Noms de contrôles (PR #734 à #739, 4 novembre 2026) : le déploiement rend dé
 
 Quand un réglage est fait, cocher la case et dater la ligne.
 
+## À revérifier sur le poste — lots faits depuis le cloud (18 novembre 2026)
+
+Consigne du propriétaire (18 novembre 2026) : un point incertain peut être modifié depuis le cloud, mais il est inscrit ici pour être revérifié sur le texte, au poste. Cocher et dater la ligne une fois l'article lu.
+
+- [ ] **Loi n° 82-67 du 6 août 1982, article qui crée l'APIA** (PR #828) : le registre de `agriculture/_institution.qmd` (`#r-apia-loi-1982`) et celui de `_investissement.qmd` (`#r-encouragement-1982`) disent art. 16 ; l'ancien TODO du bibliographe disait art. 15. À relire sur l'image du JORT n° 54 de 1982 (p. 1691-1696), puis corriger les deux registres et le glossaire (`g-apia`, `[@loi-82-67, art. 16]`) si besoin.
+
 ## Chantier transversal — les ruptures au premier plan, le détail replié
 
 - **Numérotation de l'annexe des tableaux de la TVA** (remarque du propriétaire, 7 octobre 2026) :
