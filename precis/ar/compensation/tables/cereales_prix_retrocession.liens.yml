@@ -1,0 +1,15 @@
+- libelle: السعر العادي للإحالة للقمح الصلب
+  parametre: parameters/produits_subventionnes/cereales/prix_normal_retrocession/ble_dur.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/produits_subventionnes.cereales.prix_normal_retrocession.ble_dur/table/
+- libelle: السعر العادي للإحالة للقمح اللين
+  parametre: parameters/produits_subventionnes/cereales/prix_normal_retrocession/ble_tendre.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/produits_subventionnes.cereales.prix_normal_retrocession.ble_tendre/table/
+- libelle: السعر العادي للإحالة للشعير
+  parametre: parameters/produits_subventionnes/cereales/prix_normal_retrocession/orge.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/produits_subventionnes.cereales.prix_normal_retrocession.orge/table/
+- libelle: سعر الإحالة المخفّض للقمح الصلب
+  parametre: parameters/produits_subventionnes/cereales/prix_reduit_retrocession/ble_dur.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/produits_subventionnes.cereales.prix_reduit_retrocession.ble_dur/table/
+- libelle: سعر الإحالة المخفّض للقمح اللين
+  parametre: parameters/produits_subventionnes/cereales/prix_reduit_retrocession/ble_tendre.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/produits_subventionnes.cereales.prix_reduit_retrocession.ble_tendre/table/

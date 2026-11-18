@@ -1,0 +1,12 @@
+- libelle: 'سعر البيع للعموم: السكر المسحوق'
+  parametre: parameters/produits_subventionnes/prix_administres_1974_1991/sucre/sucre_poudre.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/produits_subventionnes.prix_administres_1974_1991.sucre.sucre_poudre/table/
+- libelle: 'سعر البيع للعموم: السكر المقطّع'
+  parametre: parameters/produits_subventionnes/prix_administres_1974_1991/sucre/sucre_morceaux.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/produits_subventionnes.prix_administres_1974_1991.sucre.sucre_morceaux/table/
+- libelle: 'سعر البيع للعموم: السكر الأسمر'
+  parametre: parameters/produits_subventionnes/prix_administres_1974_1991/sucre/sucre_brun.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/produits_subventionnes.prix_administres_1974_1991.sucre.sucre_brun/table/
+- libelle: 'سعر البيع للعموم: القهوة'
+  parametre: parameters/produits_subventionnes/prix_administres_1974_1991/cafe.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/produits_subventionnes.prix_administres_1974_1991.cafe/table/

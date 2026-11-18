@@ -1,7 +1,7 @@
 """Régénère les snapshots des tableaux de paramètres du livre « La compensation ».
 
 Même contrat que les autres générateurs : le build du site n'exécute PAS ce script, il lit les
-fichiers qu'il produit, versionnés dans `precis/fr/compensation/tables/` et
+fichiers qu'il produit, versionnés dans `precis/{fr,ar}/compensation/tables/` et
 `precis/_seriescache/`.
 
     OPENFISCA_TUNISIA_PATH=../openfisca-tunisia PYTHONPATH=scripts \
@@ -56,9 +56,20 @@ des farines et du pain, hors des textes de campagne (1975, 1976, 1979, 1983, 198
 récolte visée n'est pas l'année de la date (récolte 1978, décret d'avril 1979). Le tableau suit
 donc les dates des paramètres ; la récolte se lit dans le titre du texte.
 
-L'ARABE N'EST PAS ENGENDRÉ. Le glossaire n'a pas l'arabe de « prix de base à la production »,
-« prix d'intervention », « rétrocession » ni « péréquation de raffinage » ; les libellés
-attendent la passe du terminologue. Le générateur n'écrit que le français.
+LES DEUX LANGUES. Chaque tableau est écrit en français et en arabe, des mêmes paramètres
+(`MOTS`, et le dictionnaire `{langue: libellé}` de chaque grandeur). Les titres des textes
+restent ceux des paramètres, en français ; en arabe, le lien pointe l'édition arabe du
+fascicule (`ot.lien_reference`). Les séries longues n'ont de liens qu'en français : les
+figures arabes ne sont pas encore écrites. Provenance des termes arabes : glossaire
+(`precis/glossaire.yml`) pour les prix des céréales, la péréquation de raffinage et la taxe
+affectée ; décret n° 72-400, art. 2, pour les carburants ; titre arabe du décret n° 75-352
+(miroir iort du corpus) pour الدقيق، السميد، الخبز، العجين الغذائي، الكسكسي السريع ;
+titres arabes de textes douaniers du même miroir, non de textes de prix, pour السكر، القهوة،
+الحليب. Les éditions arabes des arrêtés de prix (1974-1991) n'ont pas de titre arabe au
+`jort_cache` ni au miroir iort, et le fascicule arabe du 11 novembre 1989 n'a pas de couche
+texte : les qualificatifs des produits restent à vérifier sur ces fascicules. Les autres termes
+sont d'usage courant, sans attestation dans un texte arabe lu : chacun est signalé « non
+attesté » à côté de sa définition.
 """
 
 from __future__ import annotations
@@ -76,87 +87,161 @@ CER = f"{PS}/cereales"
 TAXES = f"{PS}/caisse_generale_compensation/taxes_affectees"
 RACINE = Path(__file__).parent.parent / "precis"
 LIVRE = "compensation"
-LANGUE = "fr"
-SORTIE = RACINE / LANGUE / LIVRE / "tables"
+LANGUE = "fr"  # langue des séries longues et de leurs liens
+LANGUES = ("fr", "ar")
 CACHE = RACINE / "_seriescache"
 SERIE = "compensation-cereales-parametres"
 TIRET = "—"
 PA = f"{PS}/prix_administres_1974_1991"
 SERIE_PA = "compensation-prix-administres"
 
+# Mots des tableaux, par langue. Arabe : « بداية السريان » et « النصّ » sont les en-têtes des
+# autres tableaux arabes du précis ; les autres en-têtes sont d'usage courant (non attestés).
+MOTS = {
+    "fr": {"date": "Date d'effet", "texte": "Texte", "publie": "publié le {jour}",
+           "produit": "Produit", "prix": "Prix (D)", "unite": "Unité", "paquet": "le paquet",
+           "taxe": "Taxe", "montant": "Montant", "dinar": "D",
+           "prix_public": "Prix au public : {produit}"},
+    "ar": {"date": "بداية السريان", "texte": "النصّ", "publie": "نُشر في {jour}",  # non attesté
+           "produit": "المنتوج", "prix": "السعر (د)", "unite": "الوحدة",
+           "paquet": "للعلبة",  # non attesté
+           "taxe": "الأداء", "montant": "المبلغ", "dinar": "د",
+           "prix_public": "سعر البيع للعموم: {produit}"},  # non attesté
+}
+
+# Céréales. Arabe : القمح الصلب، القمح اللين، الشعير et « للقنطار » (décret n° 2025-344,
+# texte arabe du miroir iort) ; السعر الأساسي عند الإنتاج، سعر التدخّل، السعر العادي
+# للإحالة، سعر الإحالة المخفّض (glossaire).
 # (clé de la série, chemin, en-tête de colonne, libellé du lien « Base législative »)
 PRODUCTION = [
     ("ble_dur_prix_base", f"{CER}/prix_base_production/ble_dur.yaml",
-     "Blé dur, prix de base (D/ql)", "Prix de base à la production du blé dur"),
+     {"fr": "Blé dur, prix de base (D/ql)", "ar": "القمح الصلب، السعر الأساسي (د/قنطار)"},
+     {"fr": "Prix de base à la production du blé dur",
+      "ar": "السعر الأساسي عند الإنتاج للقمح الصلب"}),
     ("ble_tendre_prix_base", f"{CER}/prix_base_production/ble_tendre.yaml",
-     "Blé tendre, prix de base (D/ql)", "Prix de base à la production du blé tendre"),
+     {"fr": "Blé tendre, prix de base (D/ql)", "ar": "القمح اللين، السعر الأساسي (د/قنطار)"},
+     {"fr": "Prix de base à la production du blé tendre",
+      "ar": "السعر الأساسي عند الإنتاج للقمح اللين"}),
     ("orge_prix_base", f"{CER}/prix_base_production/orge.yaml",
-     "Orge, prix de base (D/ql)", "Prix de base à la production de l'orge"),
+     {"fr": "Orge, prix de base (D/ql)", "ar": "الشعير، السعر الأساسي (د/قنطار)"},
+     {"fr": "Prix de base à la production de l'orge",
+      "ar": "السعر الأساسي عند الإنتاج للشعير"}),
     ("orge_prix_intervention", f"{CER}/prix_intervention_orge.yaml",
-     "Orge, prix d'intervention (D/ql)", "Prix d'intervention à la production de l'orge"),
+     {"fr": "Orge, prix d'intervention (D/ql)", "ar": "الشعير، سعر التدخّل (د/قنطار)"},
+     {"fr": "Prix d'intervention à la production de l'orge",
+      "ar": "سعر التدخّل عند الإنتاج للشعير"}),
 ]
 RETROCESSION = [
     ("ble_dur_prix_normal", f"{CER}/prix_normal_retrocession/ble_dur.yaml",
-     "Blé dur, prix normal (D/ql)", "Prix normal de rétrocession du blé dur"),
+     {"fr": "Blé dur, prix normal (D/ql)", "ar": "القمح الصلب، السعر العادي (د/قنطار)"},
+     {"fr": "Prix normal de rétrocession du blé dur",
+      "ar": "السعر العادي للإحالة للقمح الصلب"}),
     ("ble_tendre_prix_normal", f"{CER}/prix_normal_retrocession/ble_tendre.yaml",
-     "Blé tendre, prix normal (D/ql)", "Prix normal de rétrocession du blé tendre"),
+     {"fr": "Blé tendre, prix normal (D/ql)", "ar": "القمح اللين، السعر العادي (د/قنطار)"},
+     {"fr": "Prix normal de rétrocession du blé tendre",
+      "ar": "السعر العادي للإحالة للقمح اللين"}),
     ("orge_prix_normal", f"{CER}/prix_normal_retrocession/orge.yaml",
-     "Orge, prix normal (D/ql)", "Prix normal de rétrocession de l'orge"),
+     {"fr": "Orge, prix normal (D/ql)", "ar": "الشعير، السعر العادي (د/قنطار)"},
+     {"fr": "Prix normal de rétrocession de l'orge", "ar": "السعر العادي للإحالة للشعير"}),
     ("ble_dur_prix_reduit", f"{CER}/prix_reduit_retrocession/ble_dur.yaml",
-     "Blé dur, prix réduit (D/ql)", "Prix réduit de rétrocession du blé dur"),
+     {"fr": "Blé dur, prix réduit (D/ql)", "ar": "القمح الصلب، السعر المخفّض (د/قنطار)"},
+     {"fr": "Prix réduit de rétrocession du blé dur",
+      "ar": "سعر الإحالة المخفّض للقمح الصلب"}),
     ("ble_tendre_prix_reduit", f"{CER}/prix_reduit_retrocession/ble_tendre.yaml",
-     "Blé tendre, prix réduit (D/ql)", "Prix réduit de rétrocession du blé tendre"),
+     {"fr": "Blé tendre, prix réduit (D/ql)", "ar": "القمح اللين، السعر المخفّض (د/قنطار)"},
+     {"fr": "Prix réduit de rétrocession du blé tendre",
+      "ar": "سعر الإحالة المخفّض للقمح اللين"}),
 ]
-# (chemin, libellé de la taxe, unité d'assiette)
+# (chemin, libellé de la taxe, unité d'assiette). Arabe : أداء التعديل في التكرير, الأداء
+# على القوارص والغلال المصدّرة, « للهكتولتر » (glossaire) ; الوقود العالي، النفط الاعتيادي،
+# القازوال (décret n° 72-400, art. 2) ; « للكلغ الصافي » non attesté.
 TAXES_AFFECTEES = [
-    (f"{TAXES}/agrumes_fruits_exportes.yaml", "Taxe sur les agrumes et fruits exportés",
-     "par kilogramme net"),
+    (f"{TAXES}/agrumes_fruits_exportes.yaml",
+     {"fr": "Taxe sur les agrumes et fruits exportés", "ar": "الأداء على القوارص والغلال المصدّرة"},
+     {"fr": "par kilogramme net", "ar": "للكلغ الصافي"}),
     (f"{TAXES}/perequation_raffinage/supercarburant.yaml",
-     "Taxe de péréquation de raffinage, supercarburant", "par hectolitre"),
+     {"fr": "Taxe de péréquation de raffinage, supercarburant",
+      "ar": "أداء التعديل في التكرير، الوقود العالي"},
+     {"fr": "par hectolitre", "ar": "للهكتولتر"}),
     (f"{TAXES}/perequation_raffinage/essence_normale.yaml",
-     "Taxe de péréquation de raffinage, essence normale", "par hectolitre"),
+     {"fr": "Taxe de péréquation de raffinage, essence normale",
+      "ar": "أداء التعديل في التكرير، النفط الاعتيادي"},
+     {"fr": "par hectolitre", "ar": "للهكتولتر"}),
     (f"{TAXES}/perequation_raffinage/gasoil.yaml",
-     "Taxe de péréquation de raffinage, gas-oil", "par hectolitre"),
+     {"fr": "Taxe de péréquation de raffinage, gas-oil",
+      "ar": "أداء التعديل في التكرير، القازوال"},
+     {"fr": "par hectolitre", "ar": "للهكتولتر"}),
 ]
 
 # Prix administrés : (clé = nom du paramètre, sous-dossier, libellé, unité de prix), par tableau.
-_UNITE = {"currency/unit": "la pièce", "currency/kg": "le kilo",
-          "currency/100kg": "le quintal", "currency/l": "le litre"}
+# Arabe attesté : الخبز، الدقيق، السميد، العجين الغذائي، الكسكسي السريع (titre arabe du décret
+# n° 75-352, miroir iort) ; السكر، القهوة، الحليب (titres arabes de textes douaniers du même
+# miroir, non d'un texte de prix) ; « للقنطار » (décret n° 2025-344). Non attestés, d'usage courant : les qualificatifs
+# (كبير، صغير، الباقات، سائب، علبة، المسحوق، المقطّع، الأسمر، المخلوط، زيت البذور، المجدّد،
+# المبستر، المعقّم، نصف الدسم) et les unités للوحدة، للكلغ، للتر. « الحليب المجدّد » et
+# « سائب » figurent au tarif des douanes, non dans un texte de prix.
+_UNITE = {
+    "fr": {"currency/unit": "la pièce", "currency/kg": "le kilo",
+           "currency/100kg": "le quintal", "currency/l": "le litre"},
+    "ar": {"currency/unit": "للوحدة", "currency/kg": "للكلغ",
+           "currency/100kg": "للقنطار", "currency/l": "للتر"},
+}
+
+
+def _l(fr: str, ar: str) -> dict[str, str]:
+    return {"fr": fr, "ar": ar}
+
+
 PRIX_ADMINISTRES = {
     "prix_administres_pain.md": [
-        ("gros_pain_700g", "pain", "Gros pain de 700 g"),
-        ("gros_pain_600g", "pain", "Gros pain de 600 g"),
-        ("gros_pain_500g", "pain", "Gros pain de 500 g"),
-        ("petit_pain_300g", "pain", "Petit pain de 300 g"),
-        ("petit_pain_250g", "pain", "Petit pain, puis baguette, de 250 g"),
+        ("gros_pain_700g", "pain", _l("Gros pain de 700 g", "الخبز الكبير، 700 غ")),
+        ("gros_pain_600g", "pain", _l("Gros pain de 600 g", "الخبز الكبير، 600 غ")),
+        ("gros_pain_500g", "pain", _l("Gros pain de 500 g", "الخبز الكبير، 500 غ")),
+        ("petit_pain_300g", "pain", _l("Petit pain de 300 g", "الخبز الصغير، 300 غ")),
+        ("petit_pain_250g", "pain", _l("Petit pain, puis baguette, de 250 g",
+                                       "الخبز الصغير ثم الباقات، 250 غ")),
     ],
     "prix_administres_farines_semoule.md": [
-        ("farine_ps_quintal", "farine", "Farine PS, au quintal"),
-        ("farine_ps_vrac", "farine", "Farine PS, en vrac"),
-        ("farine_ps7_vrac", "farine", "Farine PS-7, en vrac"),
-        ("farine_ps7_paquet_1kg", "farine", "Farine PS-7, paquet de 1 kg"),
-        ("semoule_ps10_quintal", "semoule", "Semoule PS-10, au quintal"),
-        ("semoule_ps10_vrac", "semoule", "Semoule PS-10, en vrac"),
+        ("farine_ps_quintal", "farine", _l("Farine PS, au quintal", "الدقيق PS، بالقنطار")),
+        ("farine_ps_vrac", "farine", _l("Farine PS, en vrac", "الدقيق PS، سائب")),
+        ("farine_ps7_vrac", "farine", _l("Farine PS-7, en vrac", "الدقيق PS-7، سائب")),
+        ("farine_ps7_paquet_1kg", "farine", _l("Farine PS-7, paquet de 1 kg",
+                                               "الدقيق PS-7، علبة 1 كلغ")),
+        ("semoule_ps10_quintal", "semoule", _l("Semoule PS-10, au quintal",
+                                               "السميد PS-10، بالقنطار")),
+        ("semoule_ps10_vrac", "semoule", _l("Semoule PS-10, en vrac", "السميد PS-10، سائب")),
     ],
     "prix_administres_pates_couscous.md": [
-        ("pates_vrac_1975_1979", "pates", "Pâtes alimentaires, en vrac (décrets de 1975 et 1979)"),
-        ("pates_ps10_vrac", "pates", "Pâtes alimentaires PS-10, en vrac"),
-        ("couscous_vrac_1975_1979", "couscous", "Couscous rapide, en vrac (décrets de 1975 et 1979)"),
-        ("couscous_ps10_vrac", "couscous", "Couscous rapide PS-10, en vrac"),
+        ("pates_vrac_1975_1979", "pates",
+         _l("Pâtes alimentaires, en vrac (décrets de 1975 et 1979)",
+            "العجين الغذائي، سائب (أمر 1975 وأمر 1979)")),
+        ("pates_ps10_vrac", "pates", _l("Pâtes alimentaires PS-10, en vrac",
+                                        "العجين الغذائي PS-10، سائب")),
+        ("couscous_vrac_1975_1979", "couscous",
+         _l("Couscous rapide, en vrac (décrets de 1975 et 1979)",
+            "الكسكسي السريع، سائب (أمر 1975 وأمر 1979)")),
+        ("couscous_ps10_vrac", "couscous", _l("Couscous rapide PS-10, en vrac",
+                                              "الكسكسي السريع PS-10، سائب")),
     ],
     "prix_administres_sucre_cafe.md": [
-        ("sucre_poudre", "sucre", "Sucre en poudre"),
-        ("sucre_morceaux", "sucre", "Sucre en morceaux"),
-        ("sucre_brun", "sucre", "Sucre brun"),
-        ("cafe", None, "Café"),
+        ("sucre_poudre", "sucre", _l("Sucre en poudre", "السكر المسحوق")),
+        ("sucre_morceaux", "sucre", _l("Sucre en morceaux", "السكر المقطّع")),
+        ("sucre_brun", "sucre", _l("Sucre brun", "السكر الأسمر")),
+        ("cafe", None, _l("Café", "القهوة")),
     ],
     "prix_administres_huile_lait.md": [
-        ("huile_melange", "huile", "Huile mélangée, puis huile de mélange en vrac"),
-        ("huile_graines_vrac", "huile", "Huile de graines en vrac"),
-        ("lait_regenere_pasteurise_1l", "lait", "Lait régénéré pasteurisé, 1 l (1982)"),
-        ("lait_regenere_uht_1l", "lait", "Lait régénéré UHT, 1 l (1982)"),
-        ("lait_demi_ecreme_pasteurise_1l", "lait", "Lait régénéré demi-écrémé pasteurisé, 1 l"),
-        ("lait_demi_ecreme_uht_1l", "lait", "Lait régénéré demi-écrémé UHT, 1 l"),
+        ("huile_melange", "huile", _l("Huile mélangée, puis huile de mélange en vrac",
+                                      "الزيت المخلوط، ثم الزيت المخلوط السائب")),
+        ("huile_graines_vrac", "huile", _l("Huile de graines en vrac", "زيت البذور السائب")),
+        ("lait_regenere_pasteurise_1l", "lait",
+         _l("Lait régénéré pasteurisé, 1 l (1982)", "الحليب المجدّد المبستر، 1 لتر (1982)")),
+        ("lait_regenere_uht_1l", "lait",
+         _l("Lait régénéré UHT, 1 l (1982)", "الحليب المجدّد المعقّم UHT، 1 لتر (1982)")),
+        ("lait_demi_ecreme_pasteurise_1l", "lait",
+         _l("Lait régénéré demi-écrémé pasteurisé, 1 l",
+            "الحليب المجدّد نصف الدسم المبستر، 1 لتر")),
+        ("lait_demi_ecreme_uht_1l", "lait",
+         _l("Lait régénéré demi-écrémé UHT, 1 l", "الحليب المجدّد نصف الدسم المعقّم UHT، 1 لتر")),
     ],
 }
 
@@ -165,11 +250,19 @@ def chemin_pa(cle: str, dossier: str | None) -> str:
     return f"{PA}/{dossier}/{cle}.yaml" if dossier else f"{PA}/{cle}.yaml"
 
 
-def unite_pa(chemin: str) -> str:
+def unite_pa(chemin: str, langue: str) -> str:
     unite = ((ot.charge_parametre(chemin) or {}).get("metadata") or {}).get("unit")
-    if unite not in _UNITE:
+    if unite not in _UNITE[langue]:
         raise Ecart(f"unité inattendue {unite!r} : {chemin}")
-    return _UNITE[unite]
+    return _UNITE[langue][unite]
+
+
+def lien_pa(libelle: dict[str, str], langue: str) -> str:
+    """Libellé « Base législative » d'un prix administré : « Prix au public : sucre brun »."""
+    texte = libelle[langue]
+    if langue == "fr":
+        texte = f"{texte[0].lower()}{texte[1:]}"
+    return MOTS[langue]["prix_public"].format(produit=texte)
 
 
 # Le titre court d'un texte de prix : avant son objet, virgule ou non (« Arrêté du 17 février
@@ -178,29 +271,31 @@ _OBJET_PA = re.compile(r",?\s+(fixant|portant|abrogeant|modifiant|instituant|com
                        r"relatif|relative)\b")
 
 
-def tableau_prix_administres(specs) -> "object":
+def tableau_prix_administres(specs, langue: str) -> "object":
     """Une ligne par prix et par date de ses valeurs, dans l'ordre des paramètres."""
     import pandas as pd
 
+    m = MOTS[langue]
     lignes = []
     for cle, dossier, libelle in specs:
         chemin = chemin_pa(cle, dossier)
         serie = ot.serie_datee(chemin)
         if not serie:
             raise Ecart(f"paramètre introuvable ou vide : {chemin}")
-        ot.releve_note(chemin, f"Prix au public : {libelle[0].lower()}{libelle[1:]}")
-        unite = "le paquet" if cle.endswith("_paquet_1kg") else unite_pa(chemin)
+        ot.releve_note(chemin, lien_pa(libelle, langue))
+        unite = m["paquet"] if cle.endswith("_paquet_1kg") else unite_pa(chemin, langue)
         for date, valeur, titre, lien in serie:
             if not titre:
                 if valeur is not None:
                     raise Ecart(f"{chemin} au {date} : valeur sans texte")
                 date_case, texte = date[:4], TIRET
             else:
-                date_case = case_date([chemin], date)
-                m = _OBJET_PA.search(titre)
-                texte = ot.lien_reference(titre[:m.start()] if m else titre, lien, LANGUE)
-            lignes.append({"Produit": libelle, "Date d'effet": date_case,
-                           "Prix (D)": millimes(valeur), "Unité": unite, "Texte": texte})
+                date_case = case_date([chemin], date, langue)
+                objet = _OBJET_PA.search(titre)
+                texte = ot.lien_reference(titre[:objet.start()] if objet else titre, lien,
+                                          langue)
+            lignes.append({m["produit"]: libelle[langue], m["date"]: date_case,
+                           m["prix"]: millimes(valeur), m["unite"]: unite, m["texte"]: texte})
     return pd.DataFrame(lignes)
 
 
@@ -224,7 +319,7 @@ def ecrire_serie_prix_administres() -> int:
                 lignes.append({"parametre": cle, "date_effet": date,
                                "valeur": None if valeur is None else round(valeur, 6),
                                "texte": titre, "lien": lien})
-            liens.append((chemin, f"Prix au public : {libelle[0].lower()}{libelle[1:]}"))
+            liens.append((chemin, lien_pa(libelle, LANGUE)))
     CACHE.mkdir(parents=True, exist_ok=True)
     ot.ecrire_csv_serie(CACHE / f"{SERIE_PA}.csv", lignes)
     ot.ecrire_fichier_liens(CACHE / f"{SERIE_PA}.liens.{LANGUE}.yml", liens, LANGUE)
@@ -284,12 +379,12 @@ def date_publiee(chemins: list[str], date: str) -> bool:
     return any(_PUBLICATION.search(t) for t in textes)
 
 
-def case_date(chemins: list[str], date: str) -> str:
-    jour = ot.formate_date(date, LANGUE)
-    return f"publié le {jour}" if date_publiee(chemins, date) else jour
+def case_date(chemins: list[str], date: str, langue: str) -> str:
+    jour = ot.formate_date(date, langue)
+    return MOTS[langue]["publie"].format(jour=jour) if date_publiee(chemins, date) else jour
 
 
-def case_texte(chemins: list[str], date: str, court: bool = True) -> str:
+def case_texte(chemins: list[str], date: str, langue: str, court: bool = True) -> str:
     """Le texte qui fixe la valeur à cette date, pour chaque paramètre lu, sans doublon.
 
     Seule la PREMIÈRE référence d'une date est retenue : c'est le texte qui fixe la valeur.
@@ -304,52 +399,56 @@ def case_texte(chemins: list[str], date: str, court: bool = True) -> str:
             if not titre or titre in vus:
                 continue
             vus.add(titre)
-            liens.append(ot.lien_reference(titre_court(titre) if court else titre, lien, LANGUE))
+            liens.append(ot.lien_reference(titre_court(titre) if court else titre, lien, langue))
     if not liens:
         raise Ecart(f"aucun texte cité au {date} par {chemins}")
     return " ; ".join(liens)
 
 
-def tableau_prix(specs) -> "object":
+def tableau_prix(specs, langue: str) -> "object":
     """Une ligne par date de changement d'un des prix ; chaque case, le prix en vigueur."""
     import pandas as pd
 
+    m = MOTS[langue]
     series = {}
     for _cle, chemin, _entete, lien in specs:
         serie = ot.serie_datee(chemin)
         if not serie:
             raise Ecart(f"paramètre introuvable ou vide : {chemin}")
         series[chemin] = serie
-        ot.releve_note(chemin, lien)
+        ot.releve_note(chemin, lien[langue])
     dates = sorted({d for s in series.values() for d, *_ in s})
     lignes = []
     for date in dates:
         presents = [c for _k, c, _e, _l in specs if any(d == date for d, *_ in series[c])]
-        ligne = {"Date d'effet": case_date(presents, date)}
+        ligne = {m["date"]: case_date(presents, date, langue)}
         for _cle, chemin, entete, _lien in specs:
             point = ot.en_vigueur(series[chemin], date)
-            ligne[entete] = millimes(None if point is None else point[1])
-        ligne["Texte"] = case_texte(presents, date)
+            ligne[entete[langue]] = millimes(None if point is None else point[1])
+        ligne[m["texte"]] = case_texte(presents, date, langue)
         lignes.append(ligne)
     return pd.DataFrame(lignes)
 
 
-def tableau_taxes() -> "object":
+def tableau_taxes(langue: str) -> "object":
     """Une ligne par taxe et par date de ses valeurs."""
     import pandas as pd
 
+    m = MOTS[langue]
     lignes = []
     for chemin, libelle, assiette in TAXES_AFFECTEES:
         serie = ot.serie_datee(chemin)
         if not serie:
             raise Ecart(f"paramètre introuvable ou vide : {chemin}")
-        ot.releve_note(chemin, libelle)
+        ot.releve_note(chemin, libelle[langue])
         for date, valeur, _titre, _lien in serie:
+            montant = (TIRET if valeur is None
+                       else f"{millimes(valeur)} {m['dinar']} {assiette[langue]}")
             lignes.append({
-                "Taxe": libelle,
-                "Montant": TIRET if valeur is None else f"{millimes(valeur)} D {assiette}",
-                "Date d'effet": case_date([chemin], date),
-                "Texte": case_texte([chemin], date, court=False),
+                m["taxe"]: libelle[langue],
+                m["montant"]: montant,
+                m["date"]: case_date([chemin], date, langue),
+                m["texte"]: case_texte([chemin], date, langue, court=False),
             })
     return pd.DataFrame(lignes)
 
@@ -360,26 +459,27 @@ def entete(chemins: list[str]) -> str:
 
 
 def ecrire(nom: str, fabrique) -> int:
-    try:
-        df, liens = ot.avec_liens(fabrique)
-    except Ecart as erreur:
-        print(f"✗ {LANGUE}/{nom} : {erreur}")
-        return 1
-    if df is None or df.empty:
-        print(f"✗ {LANGUE}/{nom} : paramètre introuvable ou vide.")
-        return 1
-    erreur = ot.ecrire_dans_livres(RACINE, LANGUE, (LIVRE,), nom, df, liens,
-                                   entete=entete([c for c, _l in liens]))
-    if erreur:
-        print(erreur)
-        return 1
-    print(f"✓ {nom} : {len(df)} lignes")
+    """Écrit le tableau dans chaque langue ; `fabrique(langue)` le compose."""
+    for langue in LANGUES:
+        try:
+            df, liens = ot.avec_liens(lambda: fabrique(langue))
+        except Ecart as erreur:
+            print(f"✗ {langue}/{nom} : {erreur}")
+            return 1
+        if df is None or df.empty:
+            print(f"✗ {langue}/{nom} : paramètre introuvable ou vide.")
+            return 1
+        erreur = ot.ecrire_dans_livres(RACINE, langue, (LIVRE,), nom, df, liens,
+                                       entete=entete([c for c, _l in liens]))
+        if erreur:
+            print(erreur)
+            return 1
+    print(f"✓ {nom} : {len(df)} lignes ({', '.join(LANGUES)})")
     return 0
 
 
 def ecrire_serie() -> int:
-    parametres = [ot.ParametreDate(cle, chemin, {LANGUE: entete_}, unite="millimes",
-                                   lien={LANGUE: lien})
+    parametres = [ot.ParametreDate(cle, chemin, entete_, unite="millimes", lien=lien)
                   for cle, chemin, entete_, lien in PRODUCTION + RETROCESSION]
     return ot.ecrire_serie_parametres(SERIE, parametres, CACHE, langues=(LANGUE,))
 
@@ -391,13 +491,13 @@ def main() -> int:
             f"minimum {ot.VERSION_MINIMALE}). Les snapshots existants sont conservés."
         )
         return 1
-    SORTIE.mkdir(parents=True, exist_ok=True)
-    return (ecrire("cereales_prix_production.md", lambda: tableau_prix(PRODUCTION))
-            or ecrire("cereales_prix_retrocession.md", lambda: tableau_prix(RETROCESSION))
+    return (ecrire("cereales_prix_production.md", lambda langue: tableau_prix(PRODUCTION, langue))
+            or ecrire("cereales_prix_retrocession.md", lambda langue: tableau_prix(RETROCESSION, langue))
             or ecrire("caisse_taxes_affectees.md", tableau_taxes)
             or ecrire_serie()
             or next((1 for nom, specs in PRIX_ADMINISTRES.items()
-                     if ecrire(nom, lambda specs=specs: tableau_prix_administres(specs))), 0)
+                     if ecrire(nom, lambda langue, specs=specs: tableau_prix_administres(specs, langue))),
+                    0)
             or ecrire_serie_prix_administres())
 
 
