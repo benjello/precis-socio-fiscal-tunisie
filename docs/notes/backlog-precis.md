@@ -49,6 +49,14 @@ Noms de contrôles (PR #734 à #739, 4 novembre 2026) : le déploiement rend dé
 
 Quand un réglage est fait, cocher la case et dater la ligne.
 
+## À revérifier sur le poste — lots faits depuis le cloud (18 novembre 2026)
+
+Consigne du propriétaire (18 novembre 2026) : un point incertain peut être modifié depuis le cloud, mais il est inscrit ici pour être revérifié sur le texte, au poste. Cocher et dater la ligne une fois l'article lu.
+
+- [ ] **Loi n° 82-67 du 6 août 1982, article qui crée l'APIA** (PR #828) : le registre de `agriculture/_institution.qmd` (`#r-apia-loi-1982`) et celui de `_investissement.qmd` (`#r-encouragement-1982`) disent art. 16 ; l'ancien TODO du bibliographe disait art. 15. À relire sur l'image du JORT n° 54 de 1982 (p. 1691-1696), puis corriger les deux registres et le glossaire (`g-apia`, `[@loi-82-67, art. 16]`) si besoin.
+- [ ] **Verme (2018), clé `verme-2018-subsidy-reforms-mena`** (lot 2, PR #828) : l'année 2018 et le n° 75 de la série Poverty & Equity Global Practice viennent du nom du fichier ; seul le PRWP 7754 de juillet 2016 est vérifié (World Bank Open Knowledge). Lire la page de garde de la copie locale (`tunisia-data/data/raw/banque-mondiale-rapports/wb_2018_wps7754_verme_subsidy_reforms_mena.pdf`) et corriger `issued` et `number` si besoin.
+- [ ] **Currie et Gahvari (2008), clé `currie-gahvari-2008-cash-in-kind`** (lot 2, PR #828) : DOI `10.1257/jel.46.2.333` repris de la fiche, non résolu depuis le cloud (revue, volume, numéro et pages vérifiés sur RePEc). Résoudre le DOI.
+
 ## Chantier transversal — les ruptures au premier plan, le détail replié
 
 - **Numérotation de l'annexe des tableaux de la TVA** (remarque du propriétaire, 7 octobre 2026) :
