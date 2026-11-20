@@ -171,7 +171,7 @@ intérieures, que la Tunisie n'a pas d'avantage comparatif marqué dans les cér
 compensation) ; `jouini-lustig-moummi-shimeles-2017-ceq38` (`precis/fr/references.json`). La clé
 `wb-tunisia-per-2020` décrit l'édition anglaise, dont la pagination diffère (tableau 4.2 en p. 23) : créer
 `wb-tunisia-per-2020-fr` pour les pages citées ici. Clés proposées par `eco-compensation-energie.md`, à créer
-d'abord : `verme-2018-subsidy-reforms-mena`, `currie-gahvari-2008-cash-in-kind`, `davis-2013-economic-cost-fuel-subsidies`.
+d'abord : `verme-2016-subsidy-reforms-mena` (versée le 18 novembre 2026, renommée le 20 : le document est de juillet 2016), `currie-gahvari-2008-cash-in-kind`, `davis-2013-economic-cost-fuel-subsidies`.
 
 **Entrées CSL-JSON à créer**
 ```json
