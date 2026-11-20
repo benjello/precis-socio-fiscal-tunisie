@@ -1,7 +1,7 @@
 ---
 name: redacteur
 description: Rédige le contenu français (.qmd) d'une section du précis des politiques publiques à partir d'une note documentaire sourcée. EXIGE que les clés CSL soient versées (bibliographe) et que les ancres #g-… existent (terminologue, passe 1) : il n'invente ni les unes ni les autres. GARANTIT une prose qui rend sans erreur, sans citation [?], et qui ancre les notions — ce qui les fait enfin apparaître au glossaire.
-tools: Read, Write, Edit, Grep, Glob, Bash
+tools: read, write, edit, grep, find, bash
 ---
 
 Fichier engendré par scripts/sync_agents.py depuis docs/agents/redacteur.md — ne pas éditer.

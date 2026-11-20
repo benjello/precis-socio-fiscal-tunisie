@@ -3,13 +3,26 @@
 #
 # Le TEXTE de chaque rôle (sa consigne, en prose simple, sans syntaxe propre à
 # un outil) vit dans docs/agents/<role>.md — c'est la source neutre. Ce
-# fichier-ci porte ce qui varie selon l'outil : les métadonnées d'en-tête que
-# le format Claude Code attend (name, description, tools), et un NIVEAU
-# abstrait qui dit combien de jugement la tâche demande.
+# fichier-ci porte ce qui varie selon le rôle : la description, la liste
+# d'outils en VOCABULAIRE NEUTRE (voir plus bas), et un NIVEAU abstrait qui
+# dit combien de jugement la tâche demande.
 #
-# scripts/sync_agents.py engendre .claude/agents/<role>.md à partir des deux :
-# en-tête YAML (name, description, tools, model tiré de `modeles.claude-code`
-# selon le niveau du rôle) + une ligne d'avertissement + le corps commun.
+# VOCABULAIRE D'OUTILS NEUTRE — on écrit ici des noms d'outils indépendants du
+# harnais, en minuscules : read, write, edit, grep, glob, bash, web_search,
+# web_fetch. scripts/sync_agents.py les TRADUIT dans le nom que chaque harnais
+# attend (p. ex. glob → Glob sous Claude Code, glob → find sous pi et opencode ;
+# web_search → WebSearch sous Claude Code, web_search sous pi/opencode). Écrire
+# ici un nom propre à un harnais (Read, WebFetch…) casserait les deux autres :
+# c'est précisément le défaut qu'on corrige (pi ignorait WebSearch/WebFetch, les
+# rôles documentaliste/économiste/bibliographe démarraient donc SANS web).
+#
+# scripts/sync_agents.py engendre, pour CHAQUE harnais vérifié, un fichier de
+# sous-agent à partir des deux sources : en-tête (champs propres au harnais,
+# outils traduits, model tiré de `modeles.<harnais>` selon le niveau) + une
+# ligne d'avertissement + la consigne commune + le corps. Harnais engendrés :
+#   - claude-code → .claude/agents/<role>.md  (tools: liste, model requis)
+#   - pi          → .pi/agents/<role>.md      (tools: liste ; model omis si null)
+#   - opencode    → .opencode/agent/<role>.md  (mode: subagent ; model omis si null)
 # `--verifier` compare l'engendré au présent et sort en 1 s'ils divergent.
 #
 # Pour un autre outil (Codex, Cursor…) : charger docs/agents/<role>.md comme
@@ -20,47 +33,47 @@
 roles:
   archiviste-backlog:
     description: "Tient à jour docs/notes/backlog-precis.md après chaque chantier ou lot de PR fusionnées : retire ou marque « fait » les points traités après les avoir vérifiés dans les chapitres, les registres et les references.json, applique les lignes de backlog proposées dans le corps des PR, signale les contradictions entre sections et les « restes » devenus faux. Le seul rôle qui écrit dans le backlog quand plusieurs chantiers tournent en parallèle. N'invente aucune date (jamais de date future), ne supprime jamais un point non vérifié, ne touche qu'un fichier."
-    tools: [Read, Edit, Grep, Glob, Bash]
+    tools: [read, edit, grep, glob, bash]
     niveau: standard
 
   architecte:
     description: "Donne le plan d'ensemble d'un chapitre ou d'une grande section du précis des politiques publiques : repère les ruptures de politique publique et leur mise en œuvre progressive, décide de ce qui est mis au premier plan et de ce qui passe en détail replié ou en annexe. Intervient APRÈS la note documentaire, le versement du bibliographe et la passe « termes » du terminologue, AVANT le rédacteur. EXIGE la note documentaire ; GARANTIT une fiche de plan que le rédacteur suit. N'écrit aucun .qmd."
-    tools: [Read, Grep, Glob, Bash]
+    tools: [read, grep, glob, bash]
     niveau: raisonnement
 
   bibliographe:
     description: "Tient la bibliographie du précis des politiques publiques. Intervient en DEUX temps — « versement » AVANT le terminologue et le rédacteur (les clés CSL doivent exister avant d'être citées), puis « clôture » après la rédaction (résolution des [@clés] et dry-run Zotero obligatoire). EXIGE la note documentaire ; GARANTIT que toute clé citable existe et résout, dans les deux langues."
-    tools: [Read, Write, Edit, Grep, Glob, Bash, WebSearch, WebFetch]
+    tools: [read, write, edit, grep, glob, bash, web_search, web_fetch]
     niveau: standard
 
   documentaliste:
     description: "Rassemble la matière sourcée pour une section du précis des politiques publiques (textes de loi, sources académiques, presse). PREMIER de la chaîne éditoriale. EXIGE un ticket cadré ; GARANTIT une note documentaire dont les références candidates alimentent le versement du bibliographe et les notions à glossaire la passe 1 du terminologue."
-    tools: [Read, Grep, Glob, WebSearch, WebFetch, Bash]
+    tools: [read, grep, glob, web_search, web_fetch, bash]
     niveau: raisonnement
 
   economiste:
     description: "Établit, pour un dispositif du précis des politiques publiques, l'état des connaissances économiques : la question que les économistes lui posent, ce que dit la théorie, ce que mesure l'empirique (synthèses internationales, puis Tunisie), ce qui est établi et ce qui est débattu, ce que le praticien retient. Rend une fiche datée docs/notes/eco-<dispositif>.md, source de la section « Ce qu'en dit l'économie » que le rédacteur écrit en fin de chapitre. Ton documentaire, aucune recommandation, aucun chiffre sans plage ni référence. N'écrit aucun .qmd."
-    tools: [Read, Grep, Glob, WebSearch, WebFetch, Bash]
+    tools: [read, grep, glob, web_search, web_fetch, bash]
     niveau: raisonnement
 
   modeliste:
     description: "Prépare les corrections du dépôt de modèle openfisca-tunisia, qui porte le système fiscal et celui des pensions — paramètres datés et sourcés sur le Journal officiel, formules, tests YAML, PR ciblées. À utiliser dès qu'un dépouillement du précis appelle une correction du modèle."
-    tools: [Read, Write, Edit, Grep, Glob, Bash]
+    tools: [read, write, edit, grep, glob, bash]
     niveau: raisonnement
 
   redacteur:
     description: "Rédige le contenu français (.qmd) d'une section du précis des politiques publiques à partir d'une note documentaire sourcée. EXIGE que les clés CSL soient versées (bibliographe) et que les ancres #g-… existent (terminologue, passe 1) : il n'invente ni les unes ni les autres. GARANTIT une prose qui rend sans erreur, sans citation [?], et qui ancre les notions — ce qui les fait enfin apparaître au glossaire."
-    tools: [Read, Write, Edit, Grep, Glob, Bash]
+    tools: [read, write, edit, grep, glob, bash]
     niveau: raisonnement
 
   relecteur-ar:
     description: "Propriétaire de l'arabe APRÈS la fusion — déclare les chapitres livrés par la traduction dans precis/ar/<book>/_quarto.yml, lit les ÉTAPES d'un job de traduction plutôt que sa conclusion, relance sur plafond ou troncature, et rend le livre arabe en local avant toute fusion. À lancer sur chaque PR `auto-translate/*`."
-    tools: [Read, Write, Edit, Grep, Glob, Bash]
+    tools: [read, write, edit, grep, glob, bash]
     niveau: standard
 
   terminologue:
     description: "Maintient le glossaire bilingue (precis/glossaire.yml). Intervient en DEUX passes — passe 1 « termes » avant le rédacteur (crée les ancres), passe 2 « définitions » après lui (les notions sont alors ancrées, donc rendues). EXIGE que les clés CSL soient déjà versées par le bibliographe ; GARANTIT que les ancres #g-… existent et que build_glossary.py sort en 0."
-    tools: [Read, Edit, Write, Grep, Glob, Bash]
+    tools: [read, edit, write, grep, glob, bash]
     niveau: raisonnement
 
 # Niveaux abstraits : « raisonnement » pour la lecture d'un texte de loi et la
@@ -74,14 +87,26 @@ modeles:
     standard: sonnet
     mecanique: haiku
   pi:
-    # Harnais pi (extension @tintinweb/pi-subagents). Le champ `model` d'un
-    # agent .pi/agents/<role>.md accepte un nom flou (« opus », « sonnet »,
-    # « haiku ») OU un `provider/modelId` ; pi le résout avec tolérance et, s'il
-    # ne le trouve pas, l'agent HÉRITE du modèle de la session parente. Laissé à
-    # null tant que l'humain n'a pas confirmé les modèles de son abonnement :
-    # sync_agents.py omet alors la ligne `model:` et l'agent hérite du parent
-    # (défaut documenté de pi). Renseigner ici (p. ex. raisonnement: opus) pour
-    # activer le choix par niveau. Ne rien inventer comme identifiant.
+    # Harnais pi (agents natifs, .pi/agents/<role>.md). Le champ `model` accepte
+    # un nom flou (« opus », « sonnet ») OU un `provider/modelId` ; pi le résout
+    # avec tolérance et, s'il ne le trouve pas, l'agent HÉRITE du modèle de la
+    # session parente. Laissé à null tant que l'humain n'a pas confirmé les
+    # modèles de son abonnement : sync_agents.py omet alors la ligne `model:` et
+    # l'agent hérite du parent (défaut documenté de pi). Les agents pi écrits à
+    # la main dans ~/.pi/agent/agents/ (analyste-*, juriste-fiscal-tn) emploient
+    # `claude-sonnet-4-5` / `claude-haiku-4-5` : ces identifiants résolvent dans
+    # cette installation. Pour activer le choix par niveau sans rien inventer,
+    # renseigner raisonnement/standard/mecanique avec ces identifiants vérifiés.
+    raisonnement: null
+    standard: null
+    mecanique: null
+  opencode:
+    # Harnais opencode V1 (binaire 1.x), agents .opencode/agent/<role>.md. Le
+    # champ `model` est un `provider/modelId` ou un alias ; non résolu, l'agent
+    # hérite du modèle parent. Même politique que pi : null → ligne `model:`
+    # omise. Les agents opencode écrits à la main dans ~/.config/opencode/agent/
+    # emploient `claude-sonnet-4-5` / `claude-haiku-4-5` (vérifiés dans cette
+    # installation) ; les reprendre ici pour activer le choix par niveau.
     raisonnement: null
     standard: null
     mecanique: null

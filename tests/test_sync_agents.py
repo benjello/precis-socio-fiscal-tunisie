@@ -38,24 +38,29 @@ class DepotJetable(unittest.TestCase):
         self.dossier_docs = racine / "docs" / "agents"
         self.dossier_claude = racine / ".claude" / "agents"
         self.dossier_pi = racine / ".pi" / "agents"
+        self.dossier_opencode = racine / ".opencode" / "agent"
         self.dossier_docs.mkdir(parents=True)
         self.dossier_claude.mkdir(parents=True)
         self.dossier_pi.mkdir(parents=True)
+        self.dossier_opencode.mkdir(parents=True)
 
         self._roles_yml_orig = sync_agents.ROLES_YML
         self._dossier_docs_orig = sync_agents.DOSSIER_DOCS
         self._dossier_claude_orig = sync_agents.DOSSIER_CLAUDE
         self._dossier_pi_orig = sync_agents.DOSSIER_PI
+        self._dossier_opencode_orig = sync_agents.DOSSIER_OPENCODE
         sync_agents.ROLES_YML = self.dossier_docs / "roles.yml"
         sync_agents.DOSSIER_DOCS = self.dossier_docs
         sync_agents.DOSSIER_CLAUDE = self.dossier_claude
         sync_agents.DOSSIER_PI = self.dossier_pi
+        sync_agents.DOSSIER_OPENCODE = self.dossier_opencode
 
     def tearDown(self):
         sync_agents.ROLES_YML = self._roles_yml_orig
         sync_agents.DOSSIER_DOCS = self._dossier_docs_orig
         sync_agents.DOSSIER_CLAUDE = self._dossier_claude_orig
         sync_agents.DOSSIER_PI = self._dossier_pi_orig
+        sync_agents.DOSSIER_OPENCODE = self._dossier_opencode_orig
         self._tmp.cleanup()
 
     def ecrire_roles_yml(self, texte):
@@ -68,7 +73,7 @@ class DepotJetable(unittest.TestCase):
 roles:
   documentaliste:
     description: "Rassemble la matière."
-    tools: [Read, Grep]
+    tools: [read, grep]
     niveau: raisonnement
 modeles:
   claude-code:
@@ -76,6 +81,10 @@ modeles:
     standard: sonnet
     mecanique: haiku
   pi:
+    raisonnement: null
+    standard: null
+    mecanique: null
+  opencode:
     raisonnement: null
     standard: null
     mecanique: null
@@ -138,10 +147,10 @@ class EngendrerClaudeCodeTest(DepotJetable):
     def test_ordre_des_tools_preserve(self):
         """L'ordre déclaré dans roles.yml doit survivre, rôle par rôle : les
         fichiers réels du dépôt ne l'ordonnent pas tous pareil (`terminologue`
-        met `Edit` avant `Write`, les autres l'inverse)."""
+        met `edit` avant `write`, les autres l'inverse)."""
         self.ecrire_roles_yml(
             self.ROLES_YML_UN_ROLE.replace(
-                "tools: [Read, Grep]", "tools: [Edit, Write, Read]"
+                "tools: [read, grep]", "tools: [edit, write, read]"
             )
         )
         self.ecrire_corps("documentaliste", "Corps.\n")
@@ -150,19 +159,74 @@ class EngendrerClaudeCodeTest(DepotJetable):
         self.assertIn("tools: Edit, Write, Read\n", contenu)
 
 
+class TraduireOutilsTest(DepotJetable):
+    """Le cœur de la robustesse multi-harnais : un vocabulaire neutre traduit
+    dans le nom que chaque harnais attend. web_search/web_fetch et glob sont
+    les cas qui, mal traduits, faisaient démarrer des rôles sans web sous pi."""
+
+    def test_claude_capitalise_et_web(self):
+        self.assertEqual(
+            sync_agents.traduire_outils(
+                ["read", "glob", "web_search", "web_fetch"], "claude-code"),
+            "Read, Glob, WebSearch, WebFetch",
+        )
+
+    def test_pi_minuscule_glob_devient_find_et_web(self):
+        self.assertEqual(
+            sync_agents.traduire_outils(
+                ["read", "glob", "web_search", "web_fetch"], "pi"),
+            "read, find, web_search, web_fetch",
+        )
+
+    def test_opencode_meme_vocabulaire_que_pi(self):
+        outils = ["read", "write", "edit", "grep", "glob", "bash",
+                  "web_search", "web_fetch"]
+        self.assertEqual(
+            sync_agents.traduire_outils(outils, "opencode"),
+            sync_agents.traduire_outils(outils, "pi"),
+        )
+
+    def test_outil_neutre_inconnu_leve(self):
+        with self.assertRaises(KeyError):
+            sync_agents.traduire_outils(["read", "telepathy"], "pi")
+
+
+class EngendrerPiEtOpencodeTest(DepotJetable):
+    def test_pi_traduit_les_outils_et_omet_model_si_null(self):
+        config = self.config_un_role()
+        config["roles"]["documentaliste"]["tools"] = ["read", "web_search"]
+        contenu = sync_agents.engendrer_pi("documentaliste", config)
+        self.assertIn("tools: read, web_search\n", contenu)
+        self.assertNotIn("model:", contenu)  # modeles.pi est null dans la fixture
+
+    def test_opencode_porte_mode_subagent(self):
+        config = self.config_un_role()
+        contenu = sync_agents.engendrer_opencode("documentaliste", config)
+        self.assertTrue(contenu.startswith("---\nmode: subagent\nname: documentaliste\n"))
+        self.assertIn("tools: read, grep\n", contenu)
+        self.assertNotIn("model:", contenu)
+
+    def test_model_pi_ecrit_si_renseigne(self):
+        config = self.config_un_role()
+        config["modeles"]["pi"]["raisonnement"] = "claude-sonnet-4-5"
+        contenu = sync_agents.engendrer_pi("documentaliste", config)
+        self.assertIn("model: claude-sonnet-4-5\n", contenu)
+
+
 class VerifierEtEcrireTest(DepotJetable):
-    # Depuis la génération à deux cibles (.claude/ et .pi/), verifier() et
-    # ecrire() rendent des noms préfixés par la cible : `<outil>/<role>`.
-    DEUX_CIBLES = ["claude-code/documentaliste", "pi/documentaliste"]
+    # Depuis la génération à trois cibles (.claude/, .pi/, .opencode/), verifier()
+    # et ecrire() rendent des noms préfixés par la cible : `<outil>/<role>`.
+    TROIS_CIBLES = ["claude-code/documentaliste", "pi/documentaliste",
+                    "opencode/documentaliste"]
 
     def test_verifier_signale_fichier_absent(self):
         config = self.config_un_role()
-        self.assertEqual(sync_agents.verifier(config), self.DEUX_CIBLES)
+        self.assertEqual(sync_agents.verifier(config), self.TROIS_CIBLES)
 
     def test_ecrire_puis_verifier_est_propre(self):
         config = self.config_un_role()
         modifies = sync_agents.ecrire(config)
-        self.assertEqual(modifies, self.DEUX_CIBLES)
+        self.assertEqual(modifies, self.TROIS_CIBLES)
         self.assertEqual(sync_agents.verifier(config), [])
 
     def test_ecrire_est_idempotent(self):
@@ -190,7 +254,7 @@ class VerifierEtEcrireTest(DepotJetable):
         config = self.config_un_role()
         sync_agents.ecrire(config)
         self.ecrire_corps("documentaliste", "Corps modifié.\n")
-        self.assertEqual(sync_agents.verifier(config), self.DEUX_CIBLES)
+        self.assertEqual(sync_agents.verifier(config), self.TROIS_CIBLES)
 
 
 class DepotReelTest(unittest.TestCase):

@@ -1,7 +1,7 @@
 ---
 name: relecteur-ar
 description: Propriétaire de l'arabe APRÈS la fusion — déclare les chapitres livrés par la traduction dans precis/ar/<book>/_quarto.yml, lit les ÉTAPES d'un job de traduction plutôt que sa conclusion, relance sur plafond ou troncature, et rend le livre arabe en local avant toute fusion. À lancer sur chaque PR `auto-translate/*`.
-tools: Read, Write, Edit, Grep, Glob, Bash
+tools: read, write, edit, grep, find, bash
 ---
 
 Fichier engendré par scripts/sync_agents.py depuis docs/agents/relecteur-ar.md — ne pas éditer.

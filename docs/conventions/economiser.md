@@ -52,21 +52,28 @@
   généraliste lancé là où un rôle existe perd la consigne du rôle (garde-fous, place dans la
   chaîne éditoriale, livrable attendu) — défaut à éviter.
 - **Le dossier d'agents engendré dépend du harnais.** `.claude/agents/<role>.md` n'est lu QUE par
-  Claude Code ; `pi` lit `.pi/agents/<role>.md` (puis `.agents/agents/`, puis le global).
-  `scripts/sync_agents.py` engendre désormais **les deux** (`engendrer_claude_code()` **et**
-  `engendrer_pi()`), et `--verifier` contrôle les deux — édite `docs/agents/<role>.md` ou
-  `roles.yml` puis régénère, ne touche jamais les fichiers engendrés à la main. Sous pi, les rôles
-  sont donc **invocables par leur nom** (`subagent_type: documentaliste`) — au prochain démarrage
-  de session (les agents sont chargés au lancement). Deux réserves : (1) **modèle par niveau** —
-  `modeles.pi` de `roles.yml` est à null tant que l'humain n'a pas confirmé les modèles de son
-  abonnement ; tant que c'est null, l'agent `pi` hérite du modèle de la session parente (pas de
-  tiering), ce qui est sûr mais non optimal — renseigner `modeles.pi` pour activer le choix par
-  niveau. (2) **outils web** — les rôles listent `WebSearch`/`WebFetch` (noms Claude Code) ; pi
-  expose `web_search`/`web_fetch` comme outils d'extension et ne mappe pas forcément ces noms, donc
-  un rôle documentaliste/économiste/bibliographe peut démarrer **sans web** sous pi — à corriger
-  dans `roles.yml` (ou via un sélecteur `ext:`) une fois le nom d'outil pi vérifié. Si un rôle ne
-  s'invoque pas (harnais tiers sans générateur), procédé manuel : `Read docs/agents/<role>.md`
-  comme consigne du sous-agent + modèle par niveau depuis `modeles.<outil>`.
+  Claude Code ; `pi` lit `.pi/agents/<role>.md` (puis `.agents/agents/`, puis le global) ;
+  `opencode` (V1, binaire 1.x) lit `.opencode/agent/<role>.md`.
+  `scripts/sync_agents.py` engendre désormais **les trois** (`engendrer_claude_code()`,
+  `engendrer_pi()`, `engendrer_opencode()`), et `--verifier` contrôle les trois — édite
+  `docs/agents/<role>.md` ou `roles.yml` puis régénère, ne touche jamais les fichiers engendrés à
+  la main. Sous pi comme sous opencode, les rôles sont donc **invocables par leur nom**
+  (`subagent_type: documentaliste`) — au prochain démarrage de session (les agents sont chargés au
+  lancement). **Vocabulaire d'outils neutre** : `roles.yml` écrit des noms d'outils neutres
+  (`read, write, edit, grep, glob, bash, web_search, web_fetch`) que `sync_agents.py` TRADUIT par
+  harnais (`glob`→`Glob` sous Claude mais `find` sous pi/opencode ; `web_search`→`WebSearch` sous
+  Claude, `web_search` sous pi/opencode). C'est le correctif de la réserve « outils web » : les
+  rôles documentaliste/économiste/bibliographe démarrent désormais **avec** le web sous pi et
+  opencode (auparavant les noms Claude `WebSearch`/`WebFetch`, inconnus de pi, étaient ignorés et
+  ces rôles n'avaient pas de web). Reste une réserve, **le modèle par niveau** : `modeles.pi` et
+  `modeles.opencode` de `roles.yml` sont à null tant que l'humain n'a pas confirmé les modèles de
+  son abonnement ; tant que c'est null, `sync_agents.py` omet la ligne `model:` et l'agent hérite
+  du modèle de la session parente (sûr mais sans tiering). Les agents écrits à la main qui
+  fonctionnent (`~/.pi/agent/agents/`, `~/.config/opencode/agent/`) emploient `claude-sonnet-4-5`
+  et `claude-haiku-4-5` : reprendre ces identifiants vérifiés dans `modeles.pi`/`modeles.opencode`
+  pour activer le choix par niveau. Si un rôle ne s'invoque pas (harnais tiers sans générateur),
+  procédé manuel : `Read docs/agents/<role>.md` comme consigne du sous-agent + modèle par niveau
+  depuis `modeles.<outil>`.
 - **Ne te rabats sur un agent généraliste que si le rôle requis n'existe pas.**
 - **Tâches mécaniques sur modèle léger, même déléguées.** Régénérer un CSV de provenance, déplacer
   et indexer un PDF dans le corpus, lancer un OCR, un rendu, un snapshot : modèle `mécanique` et

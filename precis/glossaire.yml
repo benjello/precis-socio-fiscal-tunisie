@@ -22386,3 +22386,158 @@ entries:
         مساهمات مالية. ويختلف عن عقد البرنامج المنبثق عن نظام المنشآت العمومية (القانون
         عدد 9 لسنة 1989). وترتبط به شركة ميناء النفيضة للفترة 2022–2025.
       synonymes: []
+
+  - id: plan-solaire-tunisien
+    acronyme: PST
+    statut: provisoire  # terme AR proposé, non relevé sur une source officielle AR
+    references: [memer-pst-2015, memer-plan-action-solaire]
+    source_definition: {ref: memer-pst-2015, locator: "p. 10-13"}
+    voir_aussi: [steg-energies-renouvelables, fonds-transition-energetique]
+    fr:
+      terme: Plan Solaire Tunisien
+      definition: >
+        Stratégie nationale de développement des énergies renouvelables, dans sa
+        version révisée de septembre 2015, qui fixe l'objectif de porter la part du
+        renouvelable dans la production d'électricité à 30 % en 2030 (contre 14 %
+        visé en 2020), soit une capacité cible de 3 815 MW dont 1 510 MW de
+        photovoltaïque.
+      synonymes: []
+    ar:
+      terme: المخطط الشمسي التونسي
+      definition: >
+        الاستراتيجية الوطنية لتنمية الطاقات المتجددة، في صيغتها المنقّحة لسبتمبر 2015،
+        التي تحدّد هدف رفع حصّة المتجدّد في إنتاج الكهرباء إلى 30 % في أفق 2030 (مقابل
+        14 % في 2020)، أي طاقة مستهدفة قدرها 3815 ميغاواط منها 1510 ميغاواط من
+        الطاقة الشمسية الكهروضوئية.
+      synonymes: []
+
+  - id: autoconsommation-electrique-renouvelable
+    acronyme: null
+    statut: provisoire  # terme AR proposé, non relevé sur l'édition AR du JORT
+    references: [loi2015-12, decret2016-1123, loi2019-47]
+    source_definition: {ref: loi2015-12, locator: "art. 9-11"}
+    voir_aussi: [regime-autorisations-enr, regime-concessions-enr]
+    fr:
+      terme: Autoconsommation (régime d')
+      definition: >
+        Régime institué par la loi de 2015 permettant de produire de l'électricité
+        renouvelable pour sa propre consommation ; les excédents sont vendus à la
+        STEG, dans la limite fixée par le décret de 2016. La loi de 2019 en élargit
+        le bénéfice à toute collectivité ou entreprise, publique ou privée, de
+        l'industrie, de l'agriculture et des services.
+      synonymes: []
+    ar:
+      terme: الاستهلاك الذاتي
+      definition: >
+        نظام أحدثه قانون 2015 يتيح إنتاج الكهرباء من الطاقات المتجددة لغاية الاستهلاك
+        الذاتي؛ وتُباع الفواضل إلى الشركة التونسية للكهرباء والغاز في حدود ما يضبطه
+        أمر 2016. ووسّع قانون 2019 الانتفاع به ليشمل كلّ جماعة أو مؤسسة عمومية أو
+        خاصة في قطاعات الصناعة والفلاحة والخدمات.
+      synonymes: []
+
+  - id: regime-autorisations-enr
+    acronyme: null
+    statut: provisoire  # terme AR proposé, non relevé sur l'édition AR du JORT
+    references: [loi2015-12, decret2016-1123]
+    source_definition: {ref: loi2015-12, locator: "art. 12-23"}
+    voir_aussi: [regime-concessions-enr, autoconsommation-electrique-renouvelable, commission-technique-production-privee-electricite-enr]
+    fr:
+      terme: Régime des autorisations (électricité renouvelable)
+      definition: >
+        Régime de production privée d'électricité renouvelable, institué par la loi
+        de 2015 (art. 12-23), sous lequel la production est vendue à la STEG en deçà
+        du seuil de concession ; il est soumis à une autorisation administrative et
+        le prix d'achat est fixé par arrêté du ministre.
+      synonymes: []
+    ar:
+      terme: نظام التراخيص
+      definition: >
+        نظام للإنتاج الخاص للكهرباء من الطاقات المتجددة، أحدثه قانون 2015 (الفصول
+        12-23)، يُباع في إطاره الإنتاج إلى الشركة التونسية للكهرباء والغاز دون سقف
+        اللزمة؛ ويخضع لترخيص إداري ويُضبط ثمن الشراء بقرار من الوزير.
+      synonymes: []
+
+  - id: regime-concessions-enr
+    acronyme: null
+    statut: provisoire  # terme AR proposé, non relevé sur l'édition AR du JORT
+    references: [loi2015-12]
+    source_definition: {ref: loi2015-12, locator: "art. 24-28"}
+    voir_aussi: [regime-autorisations-enr, autoconsommation-electrique-renouvelable]
+    fr:
+      terme: Régime des concessions (électricité renouvelable)
+      definition: >
+        Régime de production privée d'électricité renouvelable, institué par la loi
+        de 2015 (art. 24-28), réservé aux gros projets destinés à l'exportation ou à
+        la consommation locale au-delà du seuil de concession ; chaque contrat de
+        concession est approuvé par une loi.
+      synonymes: []
+    ar:
+      terme: نظام اللزمات
+      definition: >
+        نظام للإنتاج الخاص للكهرباء من الطاقات المتجددة، أحدثه قانون 2015 (الفصول
+        24-28)، مخصّص للمشاريع الكبرى الموجّهة للتصدير أو للاستهلاك المحلي فوق سقف
+        اللزمة؛ ويُصادَق على كلّ عقد لزمة بقانون.
+      synonymes: []
+
+  - id: prosol-elec
+    acronyme: null
+    statut: provisoire  # terme AR proposé, non relevé sur une source officielle AR
+    references: [anme-prosol-elec]
+    source_definition: {ref: anme-prosol-elec}
+    voir_aussi: [autoconsommation-electrique-renouvelable, steg-energies-renouvelables]
+    fr:
+      terme: PROSOL Elec
+      definition: >
+        Programme de diffusion du photovoltaïque résidentiel copiloté par l'Agence
+        nationale pour la maîtrise de l'énergie (ANME) et la STEG, avec un appui
+        bancaire : le ménage reçoit une prime et un crédit remboursé sur sa facture
+        d'électricité, la STEG rachetant les excédents injectés dans le réseau.
+        Lancé en 2010 et testé par une phase pilote en 2010-2011.
+      synonymes: []
+    ar:
+      terme: برنامج بروسول إلك
+      definition: >
+        برنامج لنشر الطاقة الشمسية الكهروضوئية لدى السكن، تشترك في قيادته الوكالة
+        الوطنية للتحكّم في الطاقة والشركة التونسية للكهرباء والغاز بدعم بنكي: يتحصّل
+        المنتفع على منحة وقرض يُسدَّد عبر فاتورة الكهرباء، وتشتري الشركة الفواضل
+        المحقونة في الشبكة. انطلق سنة 2010 بمرحلة تجريبية في 2010-2011.
+      synonymes: []
+
+  - id: commission-technique-production-privee-electricite-enr
+    acronyme: null
+    statut: provisoire  # terme AR proposé, non relevé sur l'édition AR du JORT
+    references: [loi2015-12]
+    source_definition: {ref: loi2015-12, locator: "art. 29"}
+    voir_aussi: [regime-autorisations-enr, regime-concessions-enr]
+    fr:
+      terme: Commission technique de production privée d'électricité à partir des énergies renouvelables
+      definition: >
+        Commission instituée par la loi de 2015 (art. 29), chargée d'instruire les
+        projets de production privée d'électricité renouvelable soumis aux régimes
+        des autorisations et des concessions.
+      synonymes: []
+    ar:
+      terme: اللجنة الفنية للإنتاج الخاص للكهرباء من الطاقات المتجددة
+      definition: >
+        لجنة أحدثها قانون 2015 (الفصل 29)، تتولّى دراسة مشاريع الإنتاج الخاص للكهرباء
+        من الطاقات المتجددة الخاضعة لنظامي التراخيص واللزمات.
+      synonymes: []
+
+  - id: steg-energies-renouvelables
+    acronyme: STEG-ER
+    statut: provisoire  # terme AR proposé, non relevé sur une source officielle AR
+    references: [steg-er-avis-2016]
+    source_definition: {ref: steg-er-avis-2016}
+    voir_aussi: [plan-solaire-tunisien, fonds-transition-energetique]
+    fr:
+      terme: STEG Énergies renouvelables
+      definition: >
+        Filiale par laquelle la STEG porte sa propre production d'électricité
+        renouvelable, au titre du régime dit « STEG en propre ».
+      synonymes: []
+    ar:
+      terme: ستاغ للطاقات المتجددة
+      definition: >
+        فرع تُنجز عبره الشركة التونسية للكهرباء والغاز إنتاجها الخاص للكهرباء من
+        الطاقات المتجددة، في إطار ما يُسمّى نظام الإنتاج الذاتي للشركة.
+      synonymes: []

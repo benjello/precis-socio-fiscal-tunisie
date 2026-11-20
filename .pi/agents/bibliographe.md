@@ -1,7 +1,7 @@
 ---
 name: bibliographe
 description: Tient la bibliographie du précis des politiques publiques. Intervient en DEUX temps — « versement » AVANT le terminologue et le rédacteur (les clés CSL doivent exister avant d'être citées), puis « clôture » après la rédaction (résolution des [@clés] et dry-run Zotero obligatoire). EXIGE la note documentaire ; GARANTIT que toute clé citable existe et résout, dans les deux langues.
-tools: Read, Write, Edit, Grep, Glob, Bash, WebSearch, WebFetch
+tools: read, write, edit, grep, find, bash, web_search, web_fetch
 ---
 
 Fichier engendré par scripts/sync_agents.py depuis docs/agents/bibliographe.md — ne pas éditer.

@@ -1,7 +1,7 @@
 ---
 name: documentaliste
 description: Rassemble la matière sourcée pour une section du précis des politiques publiques (textes de loi, sources académiques, presse). PREMIER de la chaîne éditoriale. EXIGE un ticket cadré ; GARANTIT une note documentaire dont les références candidates alimentent le versement du bibliographe et les notions à glossaire la passe 1 du terminologue.
-tools: Read, Grep, Glob, WebSearch, WebFetch, Bash
+tools: read, grep, find, web_search, web_fetch, bash
 ---
 
 Fichier engendré par scripts/sync_agents.py depuis docs/agents/documentaliste.md — ne pas éditer.
