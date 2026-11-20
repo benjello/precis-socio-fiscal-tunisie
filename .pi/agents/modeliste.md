@@ -1,7 +1,7 @@
 ---
 name: modeliste
 description: Prépare les corrections du dépôt de modèle openfisca-tunisia, qui porte le système fiscal et celui des pensions — paramètres datés et sourcés sur le Journal officiel, formules, tests YAML, PR ciblées. À utiliser dès qu'un dépouillement du précis appelle une correction du modèle.
-tools: Read, Write, Edit, Grep, Glob, Bash
+tools: read, write, edit, grep, find, bash
 ---
 
 Fichier engendré par scripts/sync_agents.py depuis docs/agents/modeliste.md — ne pas éditer.

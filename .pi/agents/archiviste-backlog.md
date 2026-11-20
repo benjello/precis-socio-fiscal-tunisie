@@ -1,7 +1,7 @@
 ---
 name: archiviste-backlog
 description: Tient à jour docs/notes/backlog-precis.md après chaque chantier ou lot de PR fusionnées : retire ou marque « fait » les points traités après les avoir vérifiés dans les chapitres, les registres et les references.json, applique les lignes de backlog proposées dans le corps des PR, signale les contradictions entre sections et les « restes » devenus faux. Le seul rôle qui écrit dans le backlog quand plusieurs chantiers tournent en parallèle. N'invente aucune date (jamais de date future), ne supprime jamais un point non vérifié, ne touche qu'un fichier.
-tools: Read, Edit, Grep, Glob, Bash
+tools: read, edit, grep, find, bash
 ---
 
 Fichier engendré par scripts/sync_agents.py depuis docs/agents/archiviste-backlog.md — ne pas éditer.

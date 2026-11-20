@@ -1,7 +1,7 @@
 ---
 name: architecte
 description: Donne le plan d'ensemble d'un chapitre ou d'une grande section du précis des politiques publiques : repère les ruptures de politique publique et leur mise en œuvre progressive, décide de ce qui est mis au premier plan et de ce qui passe en détail replié ou en annexe. Intervient APRÈS la note documentaire, le versement du bibliographe et la passe « termes » du terminologue, AVANT le rédacteur. EXIGE la note documentaire ; GARANTIT une fiche de plan que le rédacteur suit. N'écrit aucun .qmd.
-tools: Read, Grep, Glob, Bash
+tools: read, grep, find, bash
 ---
 
 Fichier engendré par scripts/sync_agents.py depuis docs/agents/architecte.md — ne pas éditer.

@@ -1,7 +1,7 @@
 ---
 name: terminologue
 description: Maintient le glossaire bilingue (precis/glossaire.yml). Intervient en DEUX passes — passe 1 « termes » avant le rédacteur (crée les ancres), passe 2 « définitions » après lui (les notions sont alors ancrées, donc rendues). EXIGE que les clés CSL soient déjà versées par le bibliographe ; GARANTIT que les ancres #g-… existent et que build_glossary.py sort en 0.
-tools: Read, Edit, Write, Grep, Glob, Bash
+tools: read, edit, write, grep, find, bash
 ---
 
 Fichier engendré par scripts/sync_agents.py depuis docs/agents/terminologue.md — ne pas éditer.
