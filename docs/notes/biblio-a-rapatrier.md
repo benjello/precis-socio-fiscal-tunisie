@@ -6,9 +6,13 @@
 > `references.json` doit être **remontée dans Zotero** pour être pérenne et obtenir une
 > clé de citation stable (champ « Extra » : `citation-key: xxx`).
 
+## Lot 3 du 20/11/2026 : clés juridiques du transport (bibliographe, depuis jort_cache.db)
+
+- Douze clés dans `transport/references.json` (le livre n'a pas d'édition arabe) : décrets 86-863, 91-86, 94-135, 70-46, 70-115, 74-93, 75-397, 2018-1006 ; lois 79-9, 88-37, 88-139 ; `loi-org2025-4` recopiée de `finances_locales` et `decret-1956-12-27-sncft` de `entreprises_publiques`. URL tirées du champ `pdf_fr` des notices. Points incertains au backlog (« À revérifier sur le poste »). À verser dans Zotero, collection du transport.
+
 ## Lot 2 du 18/11/2026 : deux études de la compensation (bibliographe, depuis le cloud)
 
-- `verme-2018-subsidy-reforms-mena` et `currie-gahvari-2008-cash-in-kind` créées dans `compensation/references.json` (FR et AR), d'après les entrées proposées par `docs/notes/eco-compensation-energie.md`. Points incertains inscrits au backlog (« À revérifier sur le poste »). À verser dans Zotero, collection de la compensation.
+- `verme-2016-subsidy-reforms-mena` (créée sous le nom `verme-2018-…`, renommée au lot 3 d'après la couverture : juillet 2016) et `currie-gahvari-2008-cash-in-kind` créées dans `compensation/references.json` (FR et AR), d'après les entrées proposées par `docs/notes/eco-compensation-energie.md`. Points incertains inscrits au backlog (« À revérifier sur le poste »). À verser dans Zotero, collection de la compensation.
 
 ## Lot 1 du 18/11/2026 : clés existantes portées au fonds commun (bibliographe, depuis le cloud)
 

@@ -37,16 +37,17 @@ gouvernemental, en usage de 2020 à 2021, et non le fruit d'une réorganisation.
 
 | Date | Texte | Objet |
 |---|---|---|
-| [15 septembre 1986]{.insecable} | Décret n° 86-863 | Attributions du ministère du transport (le transport apparaît seul) |
-| [14 janvier 1991]{.insecable} | Décret n° 91-86 | Organisation des services centraux |
-| [17 janvier 1994]{.insecable} | Décret n° 94-135 | Attributions et organisation des directions régionales |
+| [15 septembre 1986]{.insecable} | Décret n° 86-863 [@decret86-863-attributions-transport] | Attributions du ministère du transport (le transport apparaît seul) |
+| [14 janvier 1991]{.insecable} | Décret n° 91-86 [@decret91-86-organisation-transport] | Organisation des services centraux |
+| [17 janvier 1994]{.insecable} | Décret n° 94-135 [@decret94-135-directions-regionales-transport] | Attributions et organisation des directions régionales |
 | [16 janvier 2014]{.insecable} | Décret n° 2014-409 [@decret2014-409-attributions-transport] | Attributions (en vigueur) |
 | [16 janvier 2014]{.insecable} | Décret n° 2014-410 [@decret2014-410-organisation-transport] | Organisation des services centraux (en vigueur) |
 | [11 janvier 2016]{.insecable} | Décret gouvernemental n° 2016-97 [@decret2016-97-organisation-transport] | Révision de l'organigramme de 2014 |
 | [5 juin 2023]{.insecable} | Décret n° 2023-456 [@decret2023-456-transport-dr] | Directions régionales (remplace le texte de 1994) |
 
-Note de lecture : seuls les textes en vigueur en 2024 portent une référence ; les décrets
-de 1986, 1991 et 1994 sont donnés pour la filiation et restent à cataloguer.
+Note de lecture : les décrets de 1986, 1991 et 1994 sont donnés pour la filiation.
+
+<!-- TODO (documentaliste) : références des décrets de 1986, 1991 et 1994 tirées des notices de jort_cache.db (20 novembre 2026) ; textes à relire. -->
 
 :::
 
@@ -69,19 +70,18 @@ du périmètre de ce livre.
 
 | Date | Texte | Objet |
 |---|---|---|
-| [1970]{.insecable} | Décrets n° 70-46 et n° 70-115 | Attributions et organisation du ministère des travaux publics |
-| [1974]{.insecable}-[1975]{.insecable} | Décrets n° 74-93 et n° 75-397 | Ministère de l'équipement |
+| [1970]{.insecable} | Décrets n° 70-46 [@decret70-46-attributions-travaux-publics] et n° 70-115 [@decret70-115-organisation-travaux-publics] | Attributions et organisation du ministère des travaux publics |
+| [1974]{.insecable}-[1975]{.insecable} | Décrets n° 74-93 [@decret74-93-attributions-equipement] et n° 75-397 [@decret75-397-organisation-equipement] | Ministère de l'équipement |
 | [22 juillet 1988]{.insecable} | Décret n° 88-1413 [@decret88-1413-organisation-equipement] | Organisation du ministère de l'équipement et de l'habitat (socle en vigueur) |
 | [16 janvier 2008]{.insecable} | Décret n° 2008-121 [@decret2008-121-organisation-equipement] | Modifie et complète le décret de 1988 |
 | [25 février 2008]{.insecable} | Décret n° 2008-512 [@decret2008-512-directions-regionales-equipement] | Directions régionales |
 | [24 octobre 2018]{.insecable} | Décret gouvernemental n° 2018-883 [@decret2018-883-organisation-equipement] | Complète le décret de 1988 |
 
-Note de lecture : les décrets de 1970 et de 1974-1975 sont donnés pour la filiation et
-restent à cataloguer.
+Note de lecture : les décrets de 1970 et de 1974-1975 sont donnés pour la filiation.
+
+<!-- TODO (documentaliste) : références des décrets de 1970 et de 1974-1975 tirées des notices de jort_cache.db (20 novembre 2026) ; textes à relire. -->
 
 :::
-
-<!-- TODO (bibliographe) : pour sourcer pleinement la filiation, cataloguer dans references.json les décrets d'organisation antérieurs non cités par clé — Transport : 86-863 (1986), 91-86 (1991), 94-135 (1994) ; Équipement : 70-46/70-115 (1970), 74-93 (1974), 75-397 (1975). Recids relevés dans docs/notes/transport-institution-tutelle-2026-11-10.md §A. -->
 
 ## Les programmes budgétaires {#sec-transport-programmes}
 
