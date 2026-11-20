@@ -1,5 +1,22 @@
 # Changelog
 
+## [1.33.0](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.32.0...v1.33.0) (2026-11-20)
+
+
+### ✨ Nouveautés
+
+* **entreprises-publiques,compensation:** section photovoltaïque et énergies renouvelables ([a770c54](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/a770c54db1fd4b1ed180ffd9d5fa22ba27e31cf8))
+
+
+### 📝 Documentation
+
+* **backlog:** point à revérifier sur le poste (article créateur de l'APIA) ([9a179eb](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/9a179eb9dfa5fdfe2c19ee37497f63ac6286ad85))
+* **biblio:** lot 1, clés existantes portées au fonds commun ([a8007e5](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/a8007e5b58ff6e157267839aecaf77261ffa35ad))
+* **biblio:** lot 2, Verme (2018) et Currie et Gahvari (2008) ([5f9b438](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/5f9b4388e27070a469f576ef7188b1f3f39204fb))
+* **notes:** origine du décret de 1941 (dahir marocain du 25 février 1941) et décret budgétaire du 26 juin 1947 ([c4f1a5e](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/c4f1a5e63a75d45340c31feb2cc8f439e3f823d8))
+* **notes:** sources françaises hors Gallica (Plan triennal et Perspectives décennales de 1962, thèses de 1942 et 1950) ([87268f0](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/87268f0341f3ce8b139b42f02398dcb99055ad41))
+* **recherches:** passe web pour l'étude de la CGC de 1990 et les tables BCT ([3fa8b5e](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/3fa8b5eae238572067d0262ce390d66a5496f8f9))
+
 ## [1.32.0](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.31.0...v1.32.0) (2026-11-12)
 
 
