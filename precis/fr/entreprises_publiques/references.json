@@ -30024,6 +30024,246 @@
         ]
       },
       "note": "citation-key: wb-reform-matrix-2022\nMatrice des engagements de réforme de la Tunisie et de leur avancement, commentaires de mai 2021 et de mars 2022 (période janvier-décembre 2021) ; 23 pages du fichier, pages imprimées 110 et suivantes. Mis en ligne en 2024 d'après la fiche de source. Consulté le 4 novembre 2026 (réponse 200)."
+    },
+    {
+      "id": "loi2015-12",
+      "type": "legislation",
+      "title": "Loi n° 2015-12 du 11 mai 2015, relative à la production d'électricité à partir des énergies renouvelables",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "38",
+      "page": "926-932",
+      "issued": {
+        "date-parts": [
+          [
+            2015,
+            5,
+            11
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/2015/2015F/Jo0382015.pdf",
+      "title-short": "Loi n° 2015-12 du 11 mai 2015",
+      "note": "citation-key: loi2015-12\nJORT n° 38 du 12 mai 2015 (édition française). URL = fascicule n° 38 de 2015 sur pist.tn (champ pdf_fr de jort_cache.db, enregistrement loi n° 2015-12 du 11 mai 2015, JORT 38). Lève le monopole de la STEG pour les ENR (décret-loi n° 62-8 de 1962) ; art. 5 : autoconsommation, vente totale à la STEG, exportation ; art. 22 : prix d'achat fixé par arrêté du ministre ; art. 25 : contrat de concession approuvé par loi. Pagination réconciliée : édition française p. 926-932, confirmée sur la copie igppp.tn à couche texte lisible (sha256 a5aa5d27006cf91f78a6cb08c6a6e6aab8a6c552614ff09d7ce0643c9b03ed71, tunisia-data/data/raw/energie-renouvelable/loi_2015-12.pdf) ; jort_cache.db donne 1243-1247, pagination de l'édition arabe (fascicule Ja0382015, page 1243)."
+    },
+    {
+      "id": "decret2016-1123",
+      "type": "legislation",
+      "title": "Décret gouvernemental n° 2016-1123 du 24 août 2016, fixant les conditions et les modalités de réalisation des projets de production et de vente d'électricité à partir des énergies renouvelables",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "71",
+      "page": "2764",
+      "issued": {
+        "date-parts": [
+          [
+            2016,
+            8,
+            24
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/2016/2016F/Jo0712016.pdf",
+      "title-short": "Décret gouvernemental n° 2016-1123 du 24 août 2016",
+      "note": "citation-key: decret2016-1123\nJORT n° 71 du 30 août 2016 (édition française). URL = fascicule n° 71 de 2016 sur pist.tn (champ pdf_fr de jort_cache.db, décret n° 2016-1123 du 24 août 2016, JORT 71). Modalités d'application de la loi n° 2015-12 ; art. 3 : autoconsommation BT ≤ puissance souscrite ; art. 8 : autoconsommation HT/MT, vente des excédents à la STEG plafonnée à 30 % de la production annuelle, tarifs par décision ministérielle. Intitulé français vérifié (Journal officiel, p. 2764)."
+    },
+    {
+      "id": "loi2019-47",
+      "type": "legislation",
+      "title": "Loi n° 2019-47 du 29 mai 2019, relative à l'amélioration du climat de l'investissement",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "47",
+      "issued": {
+        "date-parts": [
+          [
+            2019,
+            5,
+            29
+          ]
+        ]
+      },
+      "title-short": "Loi n° 2019-47 du 29 mai 2019",
+      "note": "citation-key: loi2019-47\nJORT n° 47 du 11 juin 2019 (n° de fascicule confirmé par jort_cache.db, enregistrement loi n° 2019-47 du 29 mai 2019). jort_cache.db donne les pages 1756-1765 pour ce texte (pagination de l'édition arabe : l'enregistrement n'a pas de pdf_fr) ; les pages de l'édition française JORT restent à confirmer — pas d'URL pist.tn faute de pdf_fr. Accès de secours hors JORT : https://igppp.tn/fr/node/534. Art. 9 (nouveau) de la loi n° 2015-12 : autoconsommation élargie à toute collectivité/entreprise publique ou privée de l'industrie, l'agriculture et les services. TODO : page de l'édition française et URL pist.tn si pdf_fr devient disponible."
+    },
+    {
+      "id": "memer-pst-2015",
+      "type": "report",
+      "title": "Plan Solaire Tunisien — nouvelle version",
+      "author": [
+        {
+          "literal": "Ministère de l'Énergie, des Mines et des Énergies renouvelables"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2015,
+            9
+          ]
+        ]
+      },
+      "URL": "https://www.energiemines.gov.tn/fileadmin/user_upload/energies_renouvelables/PST_2015.pdf",
+      "publisher-place": "Tunis",
+      "note": "citation-key: memer-pst-2015\nVersion révisée du Plan Solaire Tunisien, septembre 2015, réalisée avec l'ANME. URL vérifiée (energiemines.gov.tn). Copie locale : tunisia-data/data/raw/energie-renouvelable/pst_2015.pdf, sha256 44115ab37f14d5b04edbb6d51a192c394fa56c8475f9af656c5d47e7d4cae34e (catalogue tunisia-data/sources/energie-renouvelable-urls.csv)."
+    },
+    {
+      "id": "memer-plan-action-solaire",
+      "type": "report",
+      "title": "Plan Solaire Tunisien, plan d'action pour l'accélération des projets d'énergies renouvelables",
+      "author": [
+        {
+          "literal": "Ministère de l'Énergie, des Mines et des Énergies renouvelables"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2017
+          ]
+        ]
+      },
+      "URL": "https://www.energiemines.gov.tn/fileadmin/user_upload/publications/plan_action_solaire.pdf",
+      "publisher-place": "Tunis",
+      "note": "citation-key: memer-plan-action-solaire\nPlan d'action du PST (programme 2017-2020 : 1 000 MW ; seuils de concession PV > 10 MWc, éolien > 30 MW). URL vérifiée (energiemines.gov.tn). Copie locale : tunisia-data/data/raw/energie-renouvelable/plan_action_solaire.pdf, sha256 56f3e4c54aeeb0adcaaae9f23127ae5f6ce3e817d338e4c4fe373038931338e5 (catalogue tunisia-data/sources/energie-renouvelable-urls.csv)."
+    },
+    {
+      "id": "memer-guide-enr-2019",
+      "type": "report",
+      "title": "Projets d'énergie renouvelable en Tunisie, guide détaillé, version mai 2019",
+      "author": [
+        {
+          "literal": "Ministère de l'Industrie et des Petites et Moyennes Entreprises"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2019,
+            5
+          ]
+        ]
+      },
+      "URL": "http://www.tunisieindustrie.gov.tn/upload/ENR/Guide_detaille_ENR_tunisie_mai2019.pdf",
+      "publisher-place": "Tunis",
+      "note": "citation-key: memer-guide-enr-2019\nGuide détaillé des projets d'énergie renouvelable, mai 2019, réalisé avec la GIZ (bureau Tractebel). Quatre régimes (autoconsommation, autorisations, concessions, STEG) ; parc fin 2018 : 5 476 MW dont ~5 005 MW thermique STEG ; autoconsommation PV > 55 MWc fin 2018. URL vérifiée (tunisieindustrie.gov.tn). Copie locale : tunisia-data/data/raw/energie-renouvelable/guide_detaille_enr_2019.pdf, sha256 3e0f7d7b237a77bb46dea196ac5c0c356d0d5321cdc97adbacbe8872b97c76ec (catalogue tunisia-data/sources/energie-renouvelable-urls.csv)."
+    },
+    {
+      "id": "memer-chiffres-cles-2024",
+      "type": "report",
+      "title": "Chiffres clés de l'énergie 2024",
+      "author": [
+        {
+          "literal": "Ministère de l'Industrie, des Mines et de l'Énergie"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2025,
+            8
+          ]
+        ]
+      },
+      "URL": "https://www.energiemines.gov.tn/fileadmin/docs-u1/Chiffres_cl%C3%A9s_%C3%A9nergie_2024.pdf",
+      "publisher-place": "Tunis",
+      "note": "citation-key: memer-chiffres-cles-2024\nRecueil de données clés du secteur de l'énergie pour 2024, Observatoire national de l'énergie et des mines (ONEM), publié en août 2025. Autoproduction PV fin 2024 : BT 315 MW ; MT/HT 323 autorisations / 125 MW (p. 38). URL vérifiée (energiemines.gov.tn). Copie locale : tunisia-data/data/raw/energie-renouvelable/chiffres_cles_energie_2024.pdf, sha256 76a0a8de628bc2091790056d27db5bac581b22c8fce732343f17c88a8690892b (catalogue tunisia-data/sources/energie-renouvelable-urls.csv)."
+    },
+    {
+      "id": "memer-conjoncture-nov-2024",
+      "type": "report",
+      "title": "Conjoncture énergétique à fin novembre 2024",
+      "author": [
+        {
+          "literal": "Ministère de l'Industrie, des Mines et de l'Énergie"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2024,
+            12
+          ]
+        ]
+      },
+      "URL": "https://www.energiemines.gov.tn/fileadmin/docs-u1/Conjoncture_%C3%A9nerg%C3%A9tique_%C3%A0_fin_novembre_2024.pdf",
+      "publisher-place": "Tunis",
+      "note": "citation-key: memer-conjoncture-nov-2024\nNote de conjoncture de l'Observatoire national de l'énergie et des mines (ONEM), à fin novembre 2024. 267 MW de toitures PV résidentielles ; 314 autorisations / 112 MW industrie-tertiaire-agriculture (p. 33) — périmètres distincts du « 315 MW BT » des chiffres clés, ne pas chaîner. URL vérifiée (energiemines.gov.tn). Copie locale : tunisia-data/data/raw/energie-renouvelable/conjoncture_nov_2024.pdf, sha256 8a4a500d343eede8db7f4a78a9fbdfb14f11f97bf3b4bd2a5738d999e81117bc (catalogue tunisia-data/sources/energie-renouvelable-urls.csv)."
+    },
+    {
+      "id": "steg-er-avis-2016",
+      "type": "webpage",
+      "title": "Avis relatif aux projets de production d'électricité à partir des énergies renouvelables n° 01/2016",
+      "author": [
+        {
+          "literal": "STEG Énergies renouvelables"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2016
+          ]
+        ]
+      },
+      "URL": "http://www.steg-er.com.tn/avis-relatif-aux-projets-de-production-delectricite-a-partir-des-energies-renouvelables-n012016/index.html",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            19
+          ]
+        ]
+      },
+      "title-short": "STEG-ER, avis n° 01/2016",
+      "note": "citation-key: steg-er-avis-2016\nAvis d'application de la loi n° 2015-12 : répartition des 1 000 MW du programme 2017-2020 (concessions 100 MW, autorisations 120 MW, STEG 300 MW, autoproduction 130 MW) ; 1 250 MW annoncés 2021-2025. Page consultée le 19 novembre 2026. Page non retirée : aucune capture Wayback citée."
+    },
+    {
+      "id": "anme-prosol-elec",
+      "type": "webpage",
+      "title": "PROSOL Elec — énergie solaire résidentielle",
+      "author": [
+        {
+          "literal": "Agence nationale pour la maîtrise de l'énergie"
+        }
+      ],
+      "URL": "https://www.anme.tn/fr/project/raccorde-en-bt",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            19
+          ]
+        ]
+      },
+      "title-short": "ANME, PROSOL Elec",
+      "note": "citation-key: anme-prosol-elec\nProgramme PV résidentiel copiloté ANME + STEG (prime ANME, crédit bonifié remboursé sur la facture STEG, rachat des excédents injectés), lancé en 2010 (pilote 2010-2011, 1,5 MW). Page non datée, consultée le 19 novembre 2026. Page non retirée : aucune capture Wayback citée."
+    },
+    {
+      "id": "presse-leaders-pv-2024",
+      "type": "article-newspaper",
+      "title": "Tunisia awards 500 MW of photovoltaic solar projects in tender",
+      "container-title": "REVE",
+      "issued": {
+        "date-parts": [
+          [
+            2024,
+            12,
+            30
+          ]
+        ]
+      },
+      "URL": "https://evwind.aeeolica.org/2024/12/30/tunisia-awards-500-mw-of-photovoltaic-solar-projects-in-tender/103544",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            19
+          ]
+        ]
+      },
+      "title-short": "REVE, Tunisia awards 500 MW of solar projects (2024)",
+      "note": "citation-key: presse-leaders-pv-2024\nAttribution fin décembre 2024 des quatre projets de la concession solaire « 500 MW » (première phase d'un programme de 1 700 MW). L'attribution a aussi été couverte en Tunisie (leaders.com.tn, managers.tn, L'Économiste maghrébin, 27 décembre 2024) ; URL = article REVE/evwind du 30 décembre 2024, daté et vérifiable. Consulté le 19 novembre 2026."
     }
   ]
 }

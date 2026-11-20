@@ -831,6 +831,20 @@ el.figure(
 <!-- TODO (documentaliste) : subvention d'exploitation de 2017 à 2021 aux états de résultat des rapports annuels de la STEG, à relire et à verser (docs/notes/compensation-electricite-gaz-series-steg.md, § 1 et 2) ; répartition de la ligne « carburants » entre STIR et STEG de 2022 à 2025 d'après les rapports sur le budget de l'État, à verser avant citation (docs/notes/compensation-archives-energie.md, § 1.1 a). -->
 <!-- RECHERCHE r-prix-gaz-commercial-concessions-apres-2000 : texte modifiant le décret n° 2000-1027 sur le prix du gaz commercial des concessions, et conventions de prix de Miskar, Franig et Baguel (voir docs/recherches.yml) ; les séries d'achat du gaz et de coût de l'électricité de la STEG sont dans docs/notes/compensation-electricite-gaz-series-steg.md -->
 
+### Le photovoltaïque et l'équilibre de la STEG {#sec-compensation-eg-pv}
+
+Le cadre, les régimes et les acteurs de la production d'électricité à partir des énergies renouvelables, le photovoltaïque au premier rang, ont leur domicile au volume « Les entreprises publiques » ([L'énergie](../entreprises_publiques/_energie.html#sec-ep-enr)) ; cette section ne suit que leur effet sur l'équilibre de la STEG et sur la subvention.
+
+**Le développement du photovoltaïque agit sur la subvention par deux canaux de sens opposé : le combustible évité, soit le gaz que la STEG n'achète pas quand une part de l'électricité vient du solaire, et le prix de rachat qu'elle verse aux producteurs privés.**
+
+- **Le combustible évité.** L'électricité solaire se substitue à une production au gaz, dont le coût d'achat pèse sur la subvention (@sec-compensation-eg-lien) ; cet effet n'est pas chiffré par les sources disponibles.
+- **Le prix de rachat versé aux producteurs privés.** La STEG achète l'électricité des autorisations et les excédents d'autoconsommation à un prix fixé par l'administration (voir [L'énergie](../entreprises_publiques/_energie.html#sec-ep-enr-etat-du-droit)) ; les arrêtés qui fixent ce prix ne sont pas identifiés, et l'effet net sur l'équilibre de la STEG n'est donc pas établi.
+- **L'articulation avec le Fonds de transition énergétique.** Le [Fonds de transition énergétique](#g-fonds-transition-energetique), alimenté par une taxe sur l'électricité et le gaz (@sec-compensation-eg-etat-du-droit), finance des actions de transition énergétique, dont le développement du renouvelable ; il forme une ressource distincte de la subvention versée à la STEG.
+
+<!-- TODO (figures) : le chiffrage de l'effet du photovoltaïque sur la subvention à la STEG (combustible évité moins prix de rachat) n'est établi par aucune source disponible (lacune §6 de docs/notes/matiere-photovoltaique.md) : ni figure ni valeur tant que la série n'est pas construite et sourcée. -->
+
+<!-- RECHERCHE r-pv-effet-subvention-steg : chiffrage du combustible évité et du prix de rachat du photovoltaïque dans l'équilibre de la STEG (états financiers de la STEG, Observatoire national de l'énergie et des mines) — à verser à docs/recherches.yml. -->
+
 ### Coût et prix de vente du kilowattheure {#sec-compensation-eg-cout}
 
 Deux sources officielles mettent en regard ce que l'électricité coûte et ce qu'elle est vendue ; un calcul fait ici sur les rapports annuels de la STEG donne la recette moyenne par niveau de tension ; un rapport extérieur, donné à part, couvre des années antérieures. Les sources ne couvrent pas les mêmes années et ne se raccordent pas. Le @fig-compensation-eg-cout-prix-kwh les met en regard de 1994 à 2025, chacune dans sa couleur, en millimes courants ou en millimes de 2025 ; les tableaux qui suivent donnent les valeurs de trois d'entre elles. En monnaie de 2025 (valeurs calculées, non observées), le prix de vente moyen reste, selon les sources, entre environ 217 et 364 millimes par kWh ; le coût de revient passe d'environ 216 à 250 millimes de 1996 à 2004, selon l'ANER et la Banque africaine de développement, à 569 en 2012 selon le rapport de contrôle et 582 en 2022 selon l'Observatoire.

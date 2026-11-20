@@ -4374,3 +4374,73 @@ Contrôles : `check_references_coherentes.py` ✓ ; JSON valide ✓.
 - Clés à créer si citées : décrets 75-352, 83-1075, 83-1275, 83-1276, 84-151, 84-152 ; arrêtés des semoules et pâtes (décembre 1983, février 1984) ; décret-loi du 24 septembre 2025 ; Verme 2018 ; Currie-Gahvari 2008 ; décret céréalier de 2025 ; arrêtés du 17 février 1972 et du 30 juillet 1991 ; arrêtés des dérivés 1983, 1984, 1986, 1991 ; semoules et huile de 1989 ; pâtes de 1991 (lisibles : miroir iort et corpus). Notices de 20 décrets de campagne et des arrêtés des dérivés 1983-1991 (PR #815).
 - `scripts/push_biblio.py` refuse le type CSL `thesis` : la thèse de Sola (1942) est versée en `book`, `genre: "Thèse"`.
 - Les PDF du CIHEAM, de l'USAID et de l'ICR 15355 (PR #821) sont à indexer dans `tunisia-data` ; série `cereales-prix-campagne` à verser (PR #811).
+## 2026-11-19 — Versement section photovoltaïque (entreprises_publiques + compensation)
+Matière : `docs/notes/matiere-photovoltaique.md`. 11 clés versées **à l'identique** dans
+`precis/fr/entreprises_publiques/references.json` ET `precis/fr/compensation/references.json`
+(aucune n'existait avant). Contrôles : `check_references_coherentes.py` ✓ ; `push_biblio.py
+--verifier` 0 perte ; `--dry-run` exit 0, conversion CSL→Zotero OK pour les 11.
+
+- **Legislation (URL pist.tn FR depuis `jort_cache.db`, champ `pdf_fr`)** : `loi2015-12`
+  (JORT 38, p. 926-932 ; `jort_cache` donne 1243-1247 = pagination arabe, à réconcilier),
+  `decret2016-1123` (JORT 71, p. 2764), `loi2019-47`.
+- **`loi2019-47` — lacune partielle levée puis résiduelle** : n° JORT **confirmé = 47**
+  (`jort_cache`, enregistrement « Loi n° 2019-47 du 29 mai 2019 … climat de l'investissement »).
+  `pdf_fr` **vide** → pas d'URL pist.tn (convention : pas d'invention) ; pages de l'édition
+  **française** à confirmer (`jort_cache` donne 1756-1765 pour l'édition arabe). Accès de secours
+  hors JORT noté en commentaire : `igppp.tn/fr/node/534`. **TODO** : page FR + URL pist.tn si
+  `pdf_fr` apparaît.
+- **Rapports** (`report`, URL d'origine vérifiée) : `memer-pst-2015`, `memer-plan-action-solaire`,
+  `memer-guide-enr-2019`, `memer-chiffres-cles-2024`, `memer-conjoncture-nov-2024`.
+  **SHA-256 et chemin de copie locale NON reportés** : le catalogue annoncé
+  `tunisia-data/sources/energie-renouvelable-urls.csv` **est absent de l'arbre de travail**
+  (tout `tunisia-data/sources/` et `tunisia-data/data/raw/` sont vides ici). TODO consigné dans
+  chaque `note` — reporter le hash dès que le CSV est présent, sans l'inventer.
+- **Pages web / presse** : `steg-er-avis-2016` (steg-er.com.tn, avis n° 01/2016),
+  `anme-prosol-elec` (anme.tn), `presse-leaders-pv-2024` (URL = article REVE/evwind du
+  30/12/2024 ; la couverture leaders.com.tn/managers/L'Économiste maghrébin du 27/12/2024 est
+  citée en note). Toutes servies à un lecteur humain → aucune capture Wayback requise.
+- **À rapatrier dans Zotero** : les 11 clés (champ Extra `citation-key: <clé>`). `controle-rangement`
+  non joué (lit la bibliothèque Zotero en ligne, clé/réseau indisponibles ici) — à rejouer avec
+  la clé ; ces clés sont encore **provisoires** dans les `.json` tant que non remontées.
+- **Rangement/mapping** : les deux livres (`entreprises_publiques`, `compensation`) figurent déjà
+  dans `COLLECTION_TO_BOOK` ; comme la section est **commune aux deux**, prévoir au rapatriement
+  soit un rangement « Commun » (→ `precis/fr/references.json` partagé), soit la double collection,
+  pour éviter la dérive du fonds commun (mécanisme `ranger` additif).
+
+## 2026-11-20 — Clôture section photovoltaïque (bibliographe)
+Reprise `docs/notes/reprise-2026-11-20.md`. Les 11 clés résolvent dans les deux livres :
+rendu FR `entreprises_publiques` et `compensation` = **0 citation `[?]`** ;
+`check_references_coherentes.py` ✓ ; les 11 entrées sont **identiques** entre les deux `.json`.
+
+**Réserves tranchées**
+- `loi2015-12` — **pagination réconciliée** : édition française **p. 926-932**, confirmée sur la
+  copie igppp.tn à couche texte lisible (`sha256 a5aa5d27…ed71`,
+  `tunisia-data/data/raw/energie-renouvelable/loi_2015-12.pdf`, catalogue
+  `tunisia-data/sources/energie-renouvelable-urls.csv`) ; `jort_cache.db` **pages = 1243-1247 =
+  édition arabe** (fascicule `Ja0382015`, page 1243 lue à l'extraction). `note` mise à jour. Le
+  fichier `pdf_fr_local` du cache (`Jo0382015.pdf`) sert en réalité le texte **arabe** (page 1243)
+  et pist.tn `…2015F/Jo0382015.pdf` **aussi** : la pagination FR n'est donc pas re-vérifiable sur
+  pist.tn, mais l'est sur la copie igppp.tn → réserve levée.
+- **SHA-256 des 5 rapports MEMER/ANME — reportés** (catalogue `energie-renouvelable-urls.csv`
+  désormais présent, hashes recalculés et **concordants** avec les PDF de
+  `tunisia-data/data/raw/energie-renouvelable/`) : `memer-pst-2015` `44115ab3…`,
+  `memer-plan-action-solaire` `56f3e4c5…`, `memer-guide-enr-2019` `3e0f7d7b…`,
+  `memer-chiffres-cles-2024` `76a0a8de…`, `memer-conjoncture-nov-2024` `8a4a500d…`.
+  `note` de chaque entrée mise à jour (chemin + sha256 + catalogue) ; TODO SHA levé.
+
+**Réserve reportée (lacune)**
+- `loi2019-47` — **pages de l'édition française toujours non confirmées** : l'enregistrement
+  « Loi n° 2019-47 du 29 mai 2019 » de `jort_cache.db` n'a **pas de `pdf_fr`** (n° JORT **47**
+  confirmé, `pages` arabe = 1756-1765, `pdf_ar` = `Ja0472019.pdf`). Pas d'URL pist.tn FR
+  (convention : pas d'invention). **TODO** : page FR + URL pist.tn dès que `pdf_fr` existe.
+
+**À noter pour le `controle-rangement` (non joué : Zotero en ligne, clé/réseau indisponibles)**
+- Les 11 clés sont **citées uniquement dans `entreprises_publiques/_energie.qmd`** (toutes les 11) ;
+  **aucune n'est citée** dans `compensation/_electricite_gaz.qmd` (la sous-section
+  `#sec-compensation-eg-pv` renvoie à la section EP pour le sourçage). Elles restent donc dans le
+  pool `compensation/references.json` **sans citation** → catégorie « sans citation » côté
+  compensation. **Point à trancher** : les retirer de `compensation/references.json`, ou les y
+  laisser en pool. Laissées en place ici (coïncident à l'identique avec EP, coherence ✓).
+- Rapatriement Zotero des 11 clés **toujours à faire** (feu vert humain + clé) : séquence
+  `permissions → verifier → dry-run → pousser-un → comparer → pousser-tout → ranger`.
+  `dry-run` / `controle-rangement` non joués ici (réseau/clé Zotero indisponibles).

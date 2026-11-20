@@ -3421,6 +3421,20 @@ Proposées par les notes et **non versées**, faute d'ancre dans le texte :
     annuel moyen publié de 2025 pour référence (même année de base que les autres figures en
     dinars constants, `scripts/dinars_constants.py`) ; colonne `valeur_2025` de l'onglet
     « Données ». À actualiser à la publication de l'indice annuel suivant (2026).
+  - **Tableau `tbl-compensation-eg-cout-one` (prix de vente et coût de revient ONE, 2017-2025)**
+    (20 novembre 2026) : les six cases vides — **coût de revient** électricité et gaz pour **2019,
+    2020 et 2021** — sont une **lacune définitive, pas un report à creuser**. Les *Chiffres clés de
+    l'énergie* ne portent la ligne « coût de revient » que pour 2017-2018 (édition 2018) et à partir
+    de 2022-2023 (édition 2023) ; elle est absente du tableau « Les prix » pour 2019-2021 dans les
+    quatre éditions qui auraient pu la publier (2019 à 2022), vérifié en couche texte ET au rendu
+    image de la page (éditions locales `tunisia-data/.../one_chiffres_cles_20NN.pdf`). Archive.org
+    inutile : absence confirmée, pas édition manquante. La légende du tableau l'explique déjà (« une
+    case vide est une valeur que la publication ne donne pas »). À NE PAS rouvrir.
+  - **Révision d'édition sur deux cases déjà remplies de ce même tableau** (20 novembre 2026, à
+    trancher en revue) : 2023 retient élec = 472,2 et gaz = 1 777,9 (édition 2023) ; l'édition 2024
+    les révise à 472,5 et 1 769,9. La légende acte la révision « d'une décimale » d'une édition à
+    l'autre ; reste à décider si la règle « préférer l'édition la plus récente qui publie la valeur »
+    s'applique rétroactivement à ces deux cases, ou si l'on garde l'édition d'origine.
   - **Snapshots** : refaits le 6 octobre 2026 depuis `main` de `tunisia-data` (neuf séries
     `compensation-*` et `prix-carburants*`). Les notes de lecture disent la base du PIB d'après
     `segment_pib`, `pib_retropole` et `rupture_pib` (2010-2024 : INS, base 2015, rétropolée
@@ -3996,6 +4010,12 @@ Ce qui reste :
     confirmer à la revue : CPG, GCT, El Fouladh, Ciments de Bizerte, Ciments d'Oum El Kélil, SNCPA et AFI, déplacées sans
     changement de texte, ancres conservées. « Les autres entreprises » garde Tunisie Trade Net
     (`#sec-ep-autres-entreprises`).
+- **Les énergies renouvelables et le photovoltaïque — section écrite le 20 novembre 2026** (`_energie.qmd`, `#sec-ep-enr`, section transversale après la STEG ; registres `#r-ep-enr-2015-loi`, `-2016-decret`, `-2019-loi` dans `tbl-ep-registre-enr`, jalons dans `tbl-ep-enr-jalons`, régimes dans `tbl-ep-enr-regimes`). Un reflet dans la compensation : `compensation/_electricite_gaz.qmd`, `#sec-compensation-eg-pv`, qui ne suit que l'effet du photovoltaïque sur l'équilibre et la subvention de la STEG et renvoie à l'énergie pour le cadre. Les deux livres rendent, 0 citation `[?]`. **Lacunes ouvertes (20 novembre 2026)** :
+  - **Deux figures à produire, séries à constituer dans l'entrepôt.** `fig-ep-enr-ensemble` (part du renouvelable dans la production : départ ~2-3 % vers 2015, cible 30 % en 2030, cible de capacité 3 815 MW dont 1 510 MW de photovoltaïque, d'après le Plan solaire tunisien) et `fig-ep-enr-trajectoire` (capacité et production photovoltaïques annuelles, fin 2015 à fin 2024). Les points sont épars et de **périmètres distincts à ne pas chaîner** : autoproduction basse tension 315 MW (chiffres clés 2024) *vs* toitures résidentiel PROSOL 267 MW (conjoncture de fin novembre 2024) — à présenter séparément, jamais additionnés ; une note de concordance basse tension / résidentiel est nécessaire. Tant que la série n'est pas versée, aucun chiffre isolé dans le texte (`TODO (figures)` aux l. 198 et 269 de `_energie.qmd`).
+  - **Classement de la loi n° 2019-47 (climat de l'investissement) « étape » *vs* « rupture » : à trancher en revue.** La section et le registre `#r-ep-enr-2019-loi` la présentent comme « étape (extension du public) » — elle élargit l'autoconsommation à tout le secteur productif ; à confirmer ou requalifier. *(À ne pas confondre avec les entrées « loi n° 2019-47 » FISCALES du présent fichier — dépenses fiscales, `@sec-df-loi-2019-47` — sans rapport avec l'électricité renouvelable.)*
+  - **Décrets-lois de décembre 2021 des concessions « 500 MW » : à nommer et à dater.** Non identifiés nominativement dans la section (`tbl-ep-enr-jalons` et son `TODO (documentaliste)`, l. 283 et 293 de `_energie.qmd`) ; la commission a rendu ses résultats le 19 mars 2021 et les attributions sont confirmées fin décembre 2024, mais les décrets-lois d'approbation restent à identifier.
+  - **Part des ENR 4,6 % (2024) : valeur à sourcer de première main.** Actuellement non chaînée à une source datée dans le texte — le bilan énergétique 2024 est **à obtenir** (`TODO (figures)`, l. 198) ; aucun chiffre isolé dans le rendu tant que la série de `fig-ep-enr-ensemble` n'est pas versée.
+  - **Glossaire, termes arabes des 7 ancres.** Les 7 notions (`plan-solaire-tunisien`, `autoconsommation-electrique-renouvelable`, `regime-autorisations-enr`, `regime-concessions-enr`, `prosol-elec`, `commission-technique-production-privee-electricite-enr`, `steg-energies-renouvelables`) restent `statut: provisoire`, terme arabe proposé, **non relevé sur l'édition AR du JORT** (loi n° 2015-12 = JORT n° 38 de 2015 ; décret n° 2016-1123 = JORT n° 71 de 2016). Lacune : relever les termes officiels arabes pour passer en `valide` les notions juridiques (`autoconsommation-electrique-renouvelable`, `regime-autorisations-enr`, `regime-concessions-enr`, `commission-technique-production-privee-electricite-enr`, et `plan-solaire-tunisien`) ; `prosol-elec` et `steg-energies-renouvelables` resteront `proposé`, faute d'acte officiel portant le nom. Les `source_definition` de `prosol-elec` et `steg-energies-renouvelables` sont **sans locator (page)** — à compléter si disponible.
 - **CTF — section écrite le 29 octobre 2026** (`_energie.qmd`, en fin de chapitre ;
   `#sec-ep-ge-ctf`, figure `fig-ep-ctf-fiches` engendrée par `grandes_entreprises.figure
   ("ctf_fiches")`, tableaux repliés `tbl-ep-ctf-fiche-a` et `-b`, registre `tbl-ep-registre-ctf`).

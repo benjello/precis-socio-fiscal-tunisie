@@ -2,7 +2,7 @@
 
 La subvention des carburants, de l'électricité et du gaz, le circuit par lequel elle passe entre l'ETAP, la STIR et la STEG, et sa répartition entre les ménages sont exposés dans le volume [« La compensation »](../compensation/_carburants.html#sec-compensation-circuit). Les transferts du budget et les résultats nets des grandes entreprises, prises ensemble, sont au chapitre « Les grandes entreprises » (@sec-ep-ge-ensemble).
 
-Ce chapitre présente six entreprises publiques de l'énergie : la [Société tunisienne de l'électricité et du gaz](#g-steg) (STEG), l'[Entreprise tunisienne d'activités pétrolières](#g-etap) (ETAP), la Société tunisienne des industries de raffinage (STIR), la Société nationale de distribution des pétroles (SNDP), la Société de transport des hydrocarbures par pipelines (SOTRAPIL) et la [Compagnie tunisienne de forage](#g-ctf) (CTF). Chaque section dit la naissance et le statut de l'entreprise, ses résultats et son emploi, ce que l'État lui verse et ce qu'elle lui doit ; pour la STEG et l'ETAP, ses comptes et sa dette ; pour la STIR, ce que l'État garantit pour elle et la compensation de leurs créances réciproques ; pour la SNDP, le règlement de ce que les administrations lui doivent pour leurs carburants ; pour la SOTRAPIL, l'ouverture de son capital, ses comptes et sa dette ; pour la CTF, la composition de son capital, ses fonds propres et ses passifs, et les règles de marchés, de recrutement et d'organisation qui lui sont propres.
+Ce chapitre présente six entreprises publiques de l'énergie : la [Société tunisienne de l'électricité et du gaz](#g-steg) (STEG), l'[Entreprise tunisienne d'activités pétrolières](#g-etap) (ETAP), la Société tunisienne des industries de raffinage (STIR), la Société nationale de distribution des pétroles (SNDP), la Société de transport des hydrocarbures par pipelines (SOTRAPIL) et la [Compagnie tunisienne de forage](#g-ctf) (CTF). Chaque section dit la naissance et le statut de l'entreprise, ses résultats et son emploi, ce que l'État lui verse et ce qu'elle lui doit ; pour la STEG et l'ETAP, ses comptes et sa dette ; pour la STIR, ce que l'État garantit pour elle et la compensation de leurs créances réciproques ; pour la SNDP, le règlement de ce que les administrations lui doivent pour leurs carburants ; pour la SOTRAPIL, l'ouverture de son capital, ses comptes et sa dette ; pour la CTF, la composition de son capital, ses fonds propres et ses passifs, et les règles de marchés, de recrutement et d'organisation qui lui sont propres. Après la STEG, une section transversale suit les énergies renouvelables et le photovoltaïque (@sec-ep-enr), domaine que la loi de 2015 ouvre à des producteurs autres que la STEG.
 
 ## La Société tunisienne de l'électricité et du gaz (STEG) {#sec-ep-steg}
 
@@ -189,6 +189,110 @@ ct.tableau_opinions(
 - **Quatre à cinq lignes nommées.** La note ne détaille que les principales : fin 2023, la STB (10,13 MD), le Technopole de Borj Cedria (3,85 MD), Joint-Gaz (2,56 MD) et Elmed Études (1 008 DT) ; les comptes de 2016 et de 2018 nomment en plus SODIT SICAR (0,8 MD), et celui de 2014 STEG Énergies renouvelables (1,75 MD). La liste complète des participations n'est pas publiée [@steg-ef-2014, p. 25 ; @steg-ef-2016, p. 23 ; @steg-ef-2018, p. 26 ; @steg-ef-2023, p. 22].
 
 <!-- TODO (documentaliste) : STEG, participations. (a) La note « titres de participation » (États financiers individuels, poste des autres actifs non courants) n'agrège le portefeuille qu'en nombre d'entreprises, montant total et provision, et ne nomme que les lignes principales (variables d'un exercice à l'autre) : liste complète des 34 participations et taux de détention non publiés par la STEG ; pistes : rapport du ministère des Finances, Registre national des entreprises (payant). (b) La note « Créances sur sociétés filiales » (1,275 MD fin 2022 et 2023, entièrement provisionnée) ne nomme pas les filiales débitrices. (c) STEG Énergies renouvelables et STEG International Services, filiales connues de la STEG, ne sont nommées dans la note que par intermittence (STEG Énergies renouvelables en 2014) : leurs états financiers propres, non lus. (d) montants fin 2023 lus dans la note, le total du portefeuille (21,15 MD) et celui des autres exercices arrondis au dixième de MD. -->
+
+
+## Les énergies renouvelables et le photovoltaïque {#sec-ep-enr .domicile-unique}
+
+**La production d'électricité à partir de sources renouvelables, longtemps réservée à la STEG, est ouverte à d'autres producteurs par la [loi de 2015](#r-ep-enr-2015-loi), le photovoltaïque en étant le pivot ; la part du renouvelable dans la production reste faible et progresse lentement vers l'objectif de 2030.**
+
+<!-- TODO (figures) : fig-ep-enr-ensemble — vue d'ensemble : part du renouvelable dans la production d'électricité (point de départ ~2-3 % vers 2015 [@memer-pst-2015, p. 10, 13] ; ~4,6 % en 2024, source à sourcer de première main, voir lacune) et objectif de 30 % en 2030 [@memer-pst-2015] ; en vis-à-vis, la cible de capacité 2030 (3 815 MW, dont 1 510 MW de photovoltaïque [@memer-pst-2015, p. 10-11]). Série à constituer dans l'entrepôt ; tant qu'elle n'existe pas, laisser cette figure en attente et ne pas écrire de chiffre isolé dans le texte. -->
+
+- **Un domaine longtemps fermé aux producteurs privés.** La production d'électricité est, depuis 1962, un monopole de la STEG ; la [loi de 2015](#r-ep-enr-2015-loi) l'ouvre à d'autres producteurs pour les seules sources renouvelables (@sec-ep-enr-mise-en-place).
+- **Une stratégie chiffrée à l'horizon 2030.** L'État se donne pour objectif de porter le renouvelable à 30 % de la production d'électricité en 2030, et une cible de capacité par filière [@memer-pst-2015, p. 10-13] ; la trajectoire est retracée à la longue période (@sec-ep-enr-longue-periode).
+- **Le photovoltaïque au pivot de la cible.** Dans la capacité visée pour 2030, le photovoltaïque est la première filière devant l'éolien [@memer-pst-2015, p. 10-11] ; il porte les quatre régimes de production (@sec-ep-enr-etat-du-droit).
+- **Une part réalisée encore basse.** La part du renouvelable dans la production reste de quelques points et progresse lentement depuis le point de départ de 2015 ; les valeurs datées sont présentées en série à la longue période (@sec-ep-enr-longue-periode), aucune n'étant citée ici hors de sa trajectoire.
+
+### L'antécédent et la mise en place {#sec-ep-enr-mise-en-place}
+
+**Avant 2015, la production d'électricité est un monopole de la STEG, et le renouvelable n'entre dans le pays que par des programmes d'équipement des ménages ; la [loi de 2015](#r-ep-enr-2015-loi) ouvre le domaine à d'autres producteurs.**
+
+- **L'antécédent : le monopole de la STEG.** La STEG a, depuis le [décret-loi de 1962](#r-ep-steg-1962) (@sec-ep-steg), la charge exclusive de la production, du transport et de la distribution de l'électricité. C'est l'état du droit avec lequel la loi de 2015 rompt, pour les seules sources renouvelables.
+- **Les premiers programmes : PROSOL, du thermique au photovoltaïque.** Le [PROSOL Elec](#g-prosol-elec), copiloté par l'Agence nationale pour la maîtrise de l'énergie (ANME) et la STEG avec un appui bancaire, est lancé en 2010 et testé par une phase pilote en 2010-2011 : le ménage reçoit une prime et un crédit remboursé sur sa facture d'électricité, et la STEG rachète les excédents injectés dans le réseau [@anme-prosol-elec]. Ce programme équipe les toits des particuliers sans toucher au monopole de production.
+
+### Les grandes réformes, 2015-2024 {#sec-ep-enr-reformes}
+
+**La [loi de 2015](#r-ep-enr-2015-loi) est la rupture : elle lève le monopole pour le renouvelable et institue les régimes de production privée ; les textes et programmes qui suivent en règlent les modalités et en déploient les capacités.**
+
+| Année | Ce qui change | Portée |
+|---|---|---|
+| 2015 | la [loi sur la production d'électricité à partir des énergies renouvelables](#r-ep-enr-2015-loi) lève le monopole de la STEG pour le renouvelable et institue trois finalités (autoconsommation, vente à la STEG, exportation) et les régimes qui les portent | **rupture** |
+| 2015 | le [Plan solaire tunisien](#g-plan-solaire-tunisien) révisé fixe l'objectif de 30 % de renouvelable dans la production en 2030 [@memer-pst-2015] | orientation (stratégie) |
+| 2016 | le [décret d'application](#r-ep-enr-2016-decret) fixe les modalités de l'autoconsommation et plafonne la vente des excédents à la STEG | étape (de 2015) |
+| 2016 | le programme 2017-2020 de 1 000 MW additionnels est arrêté, puis réparti par filière [@memer-plan-action-solaire ; @steg-er-avis-2016] | étape (programme) |
+| 2019 | la [loi sur le climat de l'investissement](#r-ep-enr-2019-loi) élargit l'autoconsommation à tout le secteur productif | étape (extension du public) |
+| 2021-2024 | les concessions « 500 MW », « 800 MW » et les deux centrales de 300 MW sont lancées et attribuées ; la STEG met en service Tozeur 1 et 2 [@memer-chiffres-cles-2024 ; @presse-leaders-pv-2024] | étape (mise en œuvre) |
+
+: Les grandes réformes et les jalons du renouvelable électrique, 2015-2024, avec leur portée. Les textes, leurs articles et leurs pages sont au registre replié de cette section (@tbl-ep-registre-enr) ; les jalons de déploiement, au @tbl-ep-enr-jalons. {#tbl-ep-enr-reformes}
+
+**2015 : la [loi relative à la production d'électricité à partir des énergies renouvelables](#r-ep-enr-2015-loi).** Elle autorise la production d'électricité renouvelable « nonobstant le monopole » de la STEG, pour trois finalités : l'[autoconsommation](#g-autoconsommation-electrique-renouvelable), la vente totale à la STEG et l'exportation. Le [régime des autorisations](#g-regime-autorisations-enr) porte la production vendue à la STEG, dont le prix d'achat est fixé par arrêté du ministre. Le [régime des concessions](#g-regime-concessions-enr) porte les gros projets et l'exportation, chaque contrat de concession étant approuvé par une loi ; une [commission technique](#g-commission-technique-production-privee-electricite-enr) instruit les projets.
+
+**2016 : le [décret d'application](#r-ep-enr-2016-decret).** Il fixe les modalités de l'autoconsommation : en basse tension, la puissance installée ne dépasse pas la puissance souscrite ; en moyenne et haute tension, les excédents vendus à la STEG sont plafonnés à 30 % de la production annuelle, aux tarifs fixés par décision ministérielle. La même année, l'État arrête un programme de 1 000 MW additionnels pour 2017-2020, réparti par filière et par régime (@tbl-ep-enr-jalons).
+
+**2019 : la [loi relative à l'amélioration du climat de l'investissement](#r-ep-enr-2019-loi).** Elle élargit l'autoconsommation, jusque-là ouverte à des catégories limitées, à toute collectivité ou entreprise, publique ou privée, de l'industrie, de l'agriculture et des services.
+
+**2021-2024 : le déploiement.** L'État lance et attribue les concessions « 500 MW » et « 800 MW » et deux centrales de 300 MW, tandis que la STEG met en service ses premières centrales en propre (@tbl-ep-enr-jalons) [@memer-chiffres-cles-2024 ; @presse-leaders-pv-2024].
+
+### Le bilan et l'état du droit au 1^er^ janvier 2026 {#sec-ep-enr-etat-du-droit}
+
+**Au 1^er^ janvier 2026, quatre régimes de production renouvelable coexistent, selon l'usage de l'électricité produite et la taille de l'installation ; l'autorité qui autorise et le mode de fixation du prix diffèrent de l'un à l'autre.**
+
+| Régime | Pour quel usage | Seuil du photovoltaïque | Qui autorise, qui fixe le prix |
+|---|---|---|---|
+| [Autoconsommation](#g-autoconsommation-electrique-renouvelable) | produire pour sa propre consommation, excédents vendus à la STEG | — | excédents en moyenne et haute tension plafonnés à 30 % de la production, tarifs par décision ministérielle ([décret de 2016, art. 8](#r-ep-enr-2016-decret)) |
+| [Autorisations](#g-regime-autorisations-enr) | vente totale à la STEG | en deçà du seuil de concession | autorisation administrative ; prix d'achat par arrêté du ministre ([loi de 2015, art. 22](#r-ep-enr-2015-loi)) |
+| [Concessions](#g-regime-concessions-enr) | gros projets, exportation ou consommation locale au-delà du seuil | **> 10 MWc** [@memer-plan-action-solaire] | contrat de concession approuvé par loi ([loi de 2015, art. 25](#r-ep-enr-2015-loi)) |
+| STEG en propre | production par la STEG | — | maîtrise d'ouvrage de la STEG |
+
+: Les quatre régimes de production d'électricité à partir des énergies renouvelables, état des textes identifiés au 1^er^ janvier 2026. Source : [loi de 2015](#r-ep-enr-2015-loi) et [décret de 2016](#r-ep-enr-2016-decret) ; seuils d'après le plan d'action solaire [@memer-plan-action-solaire] ; présentation des régimes d'après le guide des énergies renouvelables de 2019 [@memer-guide-enr-2019]. {#tbl-ep-enr-regimes}
+
+- **Qui autorise et qui fixe les prix.** L'autorité et le mode de fixation du prix dépendent du régime : une autorisation administrative et un prix d'achat par arrêté du ministre pour les autorisations ([loi de 2015, art. 22](#r-ep-enr-2015-loi)), un contrat de concession approuvé par loi pour les concessions ([loi de 2015, art. 25](#r-ep-enr-2015-loi)). Les arrêtés fixant ces prix de rachat ne sont pas identifiés ici.
+- **Les capacités installées.** L'état des capacités par régime — autoproduction en basse tension, autorisations en moyenne et haute tension, concessions, centrales de la STEG — est présenté en série datée à la longue période (@sec-ep-enr-longue-periode).
+
+<!-- RECHERCHE r-enr-arretes-prix-rachat-pv : arrêtés du ministre fixant les prix de rachat du photovoltaïque (loi n° 2015-12, art. 22) et les tarifs des excédents haute et moyenne tension (décret n° 2016-1123, art. 8) ; décrets d'application restants (puissance maximale des autorisations, contrats-types) — à verser à docs/recherches.yml. -->
+
+### La STEG Énergies renouvelables {#sec-ep-enr-steg-er}
+
+La [STEG Énergies renouvelables](#g-steg-energies-renouvelables) est la filiale par laquelle la STEG porte sa propre production d'électricité renouvelable, au titre du régime « STEG en propre ». Elle n'est nommée dans les titres de participation de la STEG qu'à l'exercice 2014 (@sec-ep-steg-participations) ; ses états financiers propres ne sont pas identifiés ici, et son activité n'est donc pas chiffrée.
+
+### La commission technique de production privée {#sec-ep-enr-commission}
+
+La [commission technique de production privée d'électricité à partir des énergies renouvelables](#g-commission-technique-production-privee-electricite-enr) est instituée par la [loi de 2015](#r-ep-enr-2015-loi) ; elle instruit les projets de production privée soumis aux régimes des autorisations et des concessions.
+
+### L'autoproduction photovoltaïque {#sec-ep-enr-autoproduction}
+
+L'autoproduction photovoltaïque relève du régime d'[autoconsommation](#g-autoconsommation-electrique-renouvelable) institué par la [loi de 2015](#r-ep-enr-2015-loi) et élargi par la [loi de 2019](#r-ep-enr-2019-loi) : le producteur produit pour sa propre consommation et vend à la STEG ses excédents, dans la limite fixée par le [décret de 2016](#r-ep-enr-2016-decret). L'évolution des capacités d'autoproduction est présentée à la longue période (@sec-ep-enr-longue-periode).
+
+### La longue période {#sec-ep-enr-longue-periode}
+
+**La trajectoire de la capacité et de la production photovoltaïques se suit depuis le point de départ de 2015 ; une série annuelle homogène reste à constituer, les points disponibles portant sur des périmètres distincts qui ne se chaînent pas.**
+
+<!-- TODO (figures) : fig-ep-enr-trajectoire — trajectoire annuelle de la capacité (MW) et de la production (GWh) photovoltaïques, point de départ fin 2015 (~30 MW de toits [@memer-pst-2015, p. 11]) jusqu'à fin 2024 (autoproduction basse tension 315 MW ; moyenne et haute tension 323 autorisations pour 125 MW [@memer-chiffres-cles-2024, p. 38] ; production solaire de l'autoproduction 416 → 557 GWh de 2023 à 2024 [@memer-chiffres-cles-2024]). Série à constituer dans l'entrepôt : les points sont épars et de périmètres distincts (315 MW basse tension vs 267 MW toitures résidentiel de la conjoncture de fin novembre 2024 [@memer-conjoncture-nov-2024, p. 33] — ne pas chaîner). Tant que la série n'est pas versée, ne pas écrire de valeur isolée dans le texte ; note de concordance basse tension / résidentiel nécessaire. Voir backlog ci-dessous. -->
+
+<!-- TODO (rédacteur) : une fois la série fig-ep-enr-trajectoire versée, ajouter deux à trois points sur la trajectoire (démarrage tardif, montée récente de l'autoproduction, concessions encore en chantier) en appui de la figure ; aucune valeur isolée sans la vue d'évolution datée. -->
+
+:::: {.chronologie-repliable titre="Les énergies renouvelables : textes de loi (2015-2019) et jalons de déploiement (2015-2024), avec leur portée"}
+
+| Date | Texte, article et page | Ce que le texte change | Portée |
+|---|---|---|---|
+| []{#r-ep-enr-2015-loi}publiée au *Journal officiel* n° 38 du [12 mai 2015]{.insecable} (loi du [11 mai 2015]{.insecable}) ; date d'effet non établie ici | loi n° 2015-12 du 11 mai 2015 relative à la production d'électricité à partir des énergies renouvelables [@loi2015-12, art. 5, 9 à 11, 12 à 23, 22, 24 à 28, 25 et 29, p. 926-932] | lève le monopole de la STEG (décret-loi n° 62-8 de 1962, @sec-ep-steg) pour la production d'électricité à partir des énergies renouvelables ; trois finalités : autoconsommation, vente totale à la STEG, exportation (art. 5) ; régime d'autoconsommation (art. 9 à 11) ; régime des autorisations pour consommation locale et vente à la STEG, prix par arrêté du ministre (art. 12 à 23, art. 22) ; régime des concessions pour l'exportation et les gros projets, contrat approuvé par loi (art. 24 à 28, art. 25) ; commission technique (art. 29) | **rupture** |
+| []{#r-ep-enr-2016-decret}publié au *Journal officiel* n° 71 du [30 août 2016]{.insecable}, p. 2764 et suivantes (décret du [24 août 2016]{.insecable}) ; date d'effet non établie ici | décret n° 2016-1123 du 24 août 2016 [@decret2016-1123, art. 3 et 8] | fixe les modalités de la loi de 2015 : autoconsommation en basse tension dans la limite de la puissance souscrite (art. 3) ; autoconsommation en moyenne et haute tension, vente des excédents à la STEG plafonnée à 30 % de la production annuelle, tarifs par décision ministérielle (art. 8) | étape (de la rupture de 2015) |
+| []{#r-ep-enr-2019-loi}loi du [29 mai 2019]{.insecable} (référence au *Journal officiel* à confirmer — lacune) | loi n° 2019-47 du 29 mai 2019 relative à l'amélioration du climat de l'investissement [@loi2019-47, art. 9 (nouveau) de la loi n° 2015-12] | élargit l'autoconsommation à toute collectivité ou entreprise, publique ou privée, de l'industrie, de l'agriculture et des services | étape (extension du public) |
+
+: Les textes de loi du renouvelable électrique, registre des références de la section, 2015-2019, avec leur portée. Source : *Journal officiel*. Le texte fondateur du monopole de la STEG avec lequel la loi de 2015 rompt a son domicile à la section de la STEG ([décret-loi de 1962](#r-ep-steg-1962)). Les références au *Journal officiel* de la loi de 2019 restent à confirmer (lacune). {#tbl-ep-registre-enr}
+
+<!-- TODO (documentaliste) : confirmer le numéro et les pages du Journal officiel de la loi n° 2019-47 du 29 mai 2019, et compléter la ligne de date d'effet des trois textes (clause d'effet ou règle d'entrée en vigueur) ; identifier nominativement les décrets-lois de décembre 2021 approuvant les concessions « 500 MW » (lacune §4.2 de la matière). -->
+
+| Date | Jalon | Portée | Source |
+|---|---|---|---|
+| septembre 2015 | Plan solaire tunisien révisé : 30 % de renouvelable dans la production en 2030 ; cible de capacité 3 815 MW, dont 1 510 MW de photovoltaïque | orientation (stratégie) | [@memer-pst-2015, p. 10-13] |
+| 2016 | programme 2017-2020 de 1 000 MW additionnels, réparti par filière et par régime | étape (programme) | [@memer-plan-action-solaire ; @steg-er-avis-2016] |
+| 2021-2024 | concession « 500 MW » (cinq sites de l'État) : résultats de la commission le 19 mars 2021, attributions confirmées fin décembre 2024 | étape (mise en œuvre) | [@memer-chiffres-cles-2024, p. 37-38 ; @presse-leaders-pv-2024] |
+| 2022-2024 | concession « 800 MW » (huit projets) et deux centrales de 300 MW : appels en cours | étape (mise en œuvre) | [@memer-chiffres-cles-2024, p. 37-38] |
+| 2022 | STEG en propre : Tozeur 1 (10 MW, avril 2022) et Tozeur 2 (10 MW, juin 2022) | étape (mise en œuvre) | [@memer-chiffres-cles-2024] |
+
+: Les jalons du déploiement photovoltaïque, 2015-2024, avec leur portée. Ces jalons ne sont pas des textes de loi : ils relèvent de documents de stratégie, de programmes et de résultats d'appels à concurrence, cités à leur source. Les décrets-lois de décembre 2021 approuvant les concessions « 500 MW » ne sont pas identifiés nominativement ici (lacune). {#tbl-ep-enr-jalons}
+
+::::
 
 
 ## L'Entreprise tunisienne d'activités pétrolières (ETAP) {#sec-ep-etap}

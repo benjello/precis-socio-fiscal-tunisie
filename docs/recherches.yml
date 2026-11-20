@@ -6032,3 +6032,42 @@
   - OCR du corps des fascicules FR de juillet 1991 à décembre 1992 (seuls les sommaires sont océrisés)
   - lecture des éditions AR des mêmes fascicules
   - obtenir l'Étude de la Caisse générale de compensation, phase I (ministère de l'Agriculture, projet APIP n° 664-0343, 1990) et Kramer (1990, RFF/AED ; probablement Carol S. Kramer, NCFAP), cités par CIHEAM 1994 ; chercher le projet 664-0343 dans le catalogue USAID DEC depuis le poste
+
+- id: r-enr-arretes-prix-rachat-pv
+  objet: arrêtés du ministre chargé de l'énergie fixant les prix de rachat par la STEG de l'électricité photovoltaïque des autorisations (loi n° 2015-12, art. 22) et les tarifs des excédents d'autoconsommation en moyenne et haute tension (décret n° 2016-1123, art. 8), et décrets d'application restants (puissance maximale des autorisations, contrats-types)
+  ou: [precis/fr/entreprises_publiques/_energie.qmd#sec-ep-enr-etat-du-droit]
+  requetes:
+    titres_fts: [energies AND renouvelables AND electricite, tarif AND electricite AND renouvelable]
+    titres_like: ['%energies renouvelables%', '%production%electricite%renouvelable%', '%tarif%rachat%electricite%']
+    iort_ar: [الطاقات المتجددة, إنتاج الكهرباء من الطاقات المتجددة, تعريفة شراء الكهرباء]
+    plein_texte: [2015-12, 2016-1123, الطاقات المتجددة]
+    depuis: 2015-05-12
+  passes:
+  - date: 2026-11-19
+    role: rédacteur
+    sources: [web]
+    couverture: Arrêtés de prix de rachat (art. 22 de la loi n° 2015-12) et tarifs des excédents haute et moyenne tension (art. 8 du décret n° 2016-1123) non identifiés dans la matière documentaire (docs/notes/matiere-photovoltaique.md, lacune §4.1). Aucune passe sur jort_cache ni iort à ce stade.
+    couvert_jusqu_au: 2015-05-12
+    resultat: aucun
+  a_faire:
+  - rejouer les termes arabes et français sur jort_cache et le miroir iort depuis 2015-05-12
+  - identifier les décrets d'application restants (puissance maximale des autorisations, contrats-types) et les modificatifs du décret n° 2016-1123
+
+- id: r-pv-effet-subvention-steg
+  objet: source officielle chiffrant l'effet du photovoltaïque sur la subvention à la STEG — combustible (gaz) évité par la substitution du solaire à la production thermique, net du prix de rachat versé aux producteurs privés
+  ou: [precis/fr/compensation/_electricite_gaz.qmd#sec-compensation-eg-pv]
+  requetes:
+    titres_fts: []
+    titres_like: ['%cout%evite%', '%economie%combustible%']
+    iort_ar: [كلفة الكهرباء, الدعم]
+    plein_texte: [photovoltaique, combustible evite]
+    depuis: 2016-08-30
+  passes:
+  - date: 2026-11-19
+    role: rédacteur
+    sources: [web]
+    couverture: 'Chiffrage du combustible évité et du prix de rachat du photovoltaïque dans l''équilibre de la STEG non établi par les sources disponibles (docs/notes/matiere-photovoltaique.md, lacune §6). Pistes non parcourues : états financiers de la STEG, Observatoire national de l''énergie et des mines.'
+    couvert_jusqu_au: 2016-08-30
+    resultat: aucun
+  a_faire:
+  - lire les états financiers de la STEG et les bilans de l'Observatoire national de l'énergie et des mines pour isoler le combustible évité et le prix de rachat

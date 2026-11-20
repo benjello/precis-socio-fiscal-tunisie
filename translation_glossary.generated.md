@@ -62,6 +62,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Augmentation générale des salaires | الزيادة العامة في الأجور |  |
 | Augmentation optionnelle de l'âge de mise à la retraite | الترفيع الاختياري في سنّ الإحالة على التقاعد |  |
 | Auto-ciblage | الاستهداف الذاتي |  |
+| Autoconsommation (régime d') | الاستهلاك الذاتي |  |
 | Autonomie budgétaire | الاستقلالية في الميزانية |  |
 | Autonomie financière | الاستقلالية المالية |  |
 | Autorisation de transport | رخصة النقل |  |
@@ -158,6 +159,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Commission de contrôle du licenciement | لجنة مراقبة الطرد |  |
 | Commission nationale du salaire minimum garanti | اللجنة الوطنية للأجر الأدنى المضمون |  |
 | Commission régionale des bourses scolaires | اللجنة الجهوية للمنح المدرسية |  |
+| Commission technique de production privée d'électricité à partir des énergies renouvelables | اللجنة الفنية للإنتاج الخاص للكهرباء من الطاقات المتجددة |  |
 | Compagnie des phosphates de Gafsa | شركة فسفاط قفصة | CPG |
 | Compagnie tunisienne de forage | الشركة التونسية للتنقيب | CTF |
 | Compagnie tunisienne de navigation | الشركة التونسية للملاحة | CTN |
@@ -563,6 +565,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Pharmacie centrale de Tunisie | الصيدلية المركزية للبلاد التونسية | PCT |
 | Phosphate diammonique | الفسفاط ثنائي الأمونيوم | DAP |
 | Plan de développement quinquennal | المخطط الخماسي للتنمية |  |
+| Plan Solaire Tunisien | المخطط الشمسي التونسي | PST |
 | Plus-value de cession de titres | القيمة الزائدة المتأتية من التفويت في السندات |  |
 | Plus-value immobilière | القيمة الزائدة العقارية |  |
 | Plus-value nominale | القيمة الزائدة الاسمية |  |
@@ -618,6 +621,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Promoteur immobilier | الباعث العقاري |  |
 | Promoteur immobilier agréé | الباعث العقاري المصادق عليه |  |
 | Promotion | الترقية |  |
+| PROSOL Elec | برنامج بروسول إلك |  |
 | Protection contre la perte d'emploi | الحماية الاجتماعية للعمال الذين يفقدون شغلهم لأسباب اقتصادية أو فنية |  |
 | Protection effective | الحماية الفعلية |  |
 | Quintile de niveau de vie | الشريحة الخُمسية لمستوى العيش |  |
@@ -647,6 +651,8 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Régime de sécurité sociale des travailleuses agricoles | نظام الضمان الاجتماعي للعاملات الفلاحيات |  |
 | Régime de travail à plein temps | نظام عمل كامل الوقت |  |
 | Régime des artistes, créateurs et intellectuels | نظام الضمان الاجتماعي للفنانين والمبدعين والمثقفين |  |
+| Régime des autorisations (électricité renouvelable) | نظام التراخيص |  |
+| Régime des concessions (électricité renouvelable) | نظام اللزمات |  |
 | Régime des prestations en nature | نظام التعويضات العينية |  |
 | Régime des salariés agricoles | نظام الأجراء الفلاحيين | RSA |
 | Régime des salariés non agricoles | نظام الأجراء غير الفلاحيين | RSNA |
@@ -749,6 +755,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Stage d'initiation à la vie professionnelle | تربص الإعداد للحياة المهنية | SIVP |
 | Stage de cotisation | مدة الانخراط الدنيا |  |
 | Statut particulier | النظام الأساسي الخصوصي |  |
+| STEG Énergies renouvelables | ستاغ للطاقات المتجددة | STEG-ER |
 | Structure des prix | تركيبة الأسعار |  |
 | Subsidiarité | التفريع |  |
 | Subvention à la multiplication des semences | دعم إكثار البذور |  |
