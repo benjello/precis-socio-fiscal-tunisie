@@ -6,6 +6,10 @@
 > `references.json` doit être **remontée dans Zotero** pour être pérenne et obtenir une
 > clé de citation stable (champ « Extra » : `citation-key: xxx`).
 
+## Lot 6 du 22/11/2026 : clés juridiques des prestations sociales (bibliographe, depuis jort_cache.db)
+
+- Vingt-deux clés dans `prestations_sociales/references.json` (FR et AR, URL tirées des champs `pdf_fr` et `pdf_ar`) : douze décrets modifiant les décrets n° 98-409 et n° 98-1812 (cartes de soins, 1999-2021), décrets-lois n° 2020-3 et n° 2020-4, décret gouvernemental n° 2020-184, lois créant les mutuelles de corps (77-80, 82-68, 82-69, 89-53, 96-30), décret n° 85-847, arrêté du 7 septembre 1993 (statuts de l'UNSM). La loi n° 2009-40 est citée depuis le fonds commun (`lfc-2009`). Points incertains au backlog (« À revérifier sur le poste »). À verser dans Zotero, collection des prestations sociales.
+
 ## Lot 3 du 20/11/2026 : clés juridiques du transport (bibliographe, depuis jort_cache.db)
 
 - Douze clés dans `transport/references.json` (le livre n'a pas d'édition arabe) : décrets 86-863, 91-86, 94-135, 70-46, 70-115, 74-93, 75-397, 2018-1006 ; lois 79-9, 88-37, 88-139 ; `loi-org2025-4` recopiée de `finances_locales` et `decret-1956-12-27-sncft` de `entreprises_publiques`. URL tirées du champ `pdf_fr` des notices. Points incertains au backlog (« À revérifier sur le poste »). À verser dans Zotero, collection du transport.
