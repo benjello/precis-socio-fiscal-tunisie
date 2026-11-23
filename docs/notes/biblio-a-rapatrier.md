@@ -6,6 +6,10 @@
 > `references.json` doit être **remontée dans Zotero** pour être pérenne et obtenir une
 > clé de citation stable (champ « Extra » : `citation-key: xxx`).
 
+## Lot 8 du 23/11/2026 : clés juridiques de la compensation (bibliographe, depuis jort_cache.db)
+
+- Neuf clés dans `compensation/references.json` (FR et AR, URL tirées des champs `pdf_fr` et `pdf_ar`) : arrêtés du 28 décembre 1983 et du 17 février 1984 sur les semoules, les pâtes et le couscous, et les farines (1984) ; arrêté du 11 novembre 1989 sur l'huile de mélange ; arrêtés du 28 février et du 13 mars 1957 et décret n° 65-303 (taxes de compensation sur les transports automobiles). Points incertains au backlog (« À revérifier sur le poste », lot 8). À verser dans Zotero, collection de la compensation.
+
 ## Lot 7 du 23/11/2026 : clés juridiques du marché du travail (bibliographe, depuis jort_cache.db)
 
 - Dans `marche_travail/references.json` (FR et AR) : `decret2000-2279-fne-21-21` et `arrete2017-08-08-contrat-dignite`, d'après les notices (URL tirées des champs `pdf_fr` et `pdf_ar`) ; `decret-loi2022-78` recopiée de `education`. Citées dans les registres de `_politiques_emploi.qmd`. Points incertains au backlog (« À revérifier sur le poste », lot 7). À verser dans Zotero, collection du marché du travail.
