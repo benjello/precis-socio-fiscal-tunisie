@@ -1,16 +1,16 @@
-# Figure-data du précis socio-fiscal tunisien — généré le 2026-11-11
-# séries (tunisia_data) : agri-encouragements-lf
-# sources (citation) : @lf-2010, @lf-2011, @lf-2012, @lf-2013, @lf-2014, @lf-2015, @lf-2016, @lf-2017, @loi2018-56-lf2019
-# fiches : 
-# méthode/hypothèses : Les trois découpages NE SE CHAÎNENT PAS : les niveaux ne sont pas comparables d'un segment à l'autre (redéfinition de périmètre, non évolution réelle). Dinars courants.
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-11-23
+# séries (tunisia_data) : agri-encouragements-lf, denominateurs-depenses-etat-pib
+# sources (citation) : @lf-2010, @lf-2011, @lf-2012, @lf-2013, @lf-2014, @lf-2015, @lf-2016, @lf-2017, @loi2018-56-lf2019, @minfin-remunerations, @minfin-indicateurs-fp, @ins-cnat-2015, @wb-wdi
+# fiches : sources/jort-lois-de-finances-fonds-credits.md
+# méthode/hypothèses : Les trois découpages NE SE CHAÎNENT PAS : les niveaux ne sont pas comparables d'un segment à l'autre (redéfinition de périmètre, non évolution réelle). Dinars courants., LE PIB N'EST JAMAIS CHAÎNÉ : segment_pib change en 1986, 1992, 1997, 2002, 2005, 2010 et 2025 ; une part du PIB se trace par segments. 1984-1985 : PIB de la Banque mondiale, bases accolées non raccordées ; 1986-1991 : PIB du ministère des Finances, base 1983 PRÉSUMÉE ; 2002-2004 et 2025 : valeur propre au ministère, rattachée à aucune base ; 2010-2014 : base 2015 rétropolée par l'INS. Les dépenses de l'État sont des RÉALISATIONS : rapportée à elles, une prévision de loi de finances donne un ordre de grandeur, non une exécution. AUCUNE DÉPENSE DE L'ÉTAT AVANT 1986.
 # note : Crédits d'encouragement à l'agriculture des lois de finances : trois découpages de périmètre successifs et non chaînables, 2010-2019
-Année,Ligne « secteur » (MD),Ligne « investissement » (MD),"Quatre lignes, total (MD)"
-2010,119.3,,
-2011,120.4,,
-2012,138.5,,
-2013,142.9,,
-2014,,70.0,
-2015,,70.0,
-2016,,79.0,
-2017,,,81.0
-2019,,,113.0
+Année,Ligne « secteur » (MD),"Ligne « secteur », % dépenses de l'État","Ligne « secteur », % PIB",Ligne « investissement » (MD),"Ligne « investissement », % dépenses de l'État","Ligne « investissement », % PIB","Quatre lignes, total (MD)","Quatre lignes, total, % dépenses de l'État","Quatre lignes, total, % PIB",Dépenses de l'État hors dette (MD),PIB (MD),Base du PIB
+2010,119.3,0.836,0.18,,,,,,,14267.4,66139.7,pib-ins 2010-2024 (base 2015)
+2011,120.4,0.702,0.178,,,,,,,17143.3,67747.3,pib-ins 2010-2024 (base 2015)
+2012,138.5,0.724,0.187,,,,,,,19141.9,73895.4,pib-ins 2010-2024 (base 2015)
+2013,142.9,0.649,0.181,,,,,,,22011.6,79096.6,pib-ins 2010-2024 (base 2015)
+2014,,,,70.0,0.312,0.082,,,,22452.7,85345.7,pib-ins 2010-2024 (base 2015)
+2015,,,,70.0,0.315,0.078,,,,22248.5,89802.2,pib-ins 2010-2024 (base 2015)
+2016,,,,79.0,0.328,0.083,,,,24112.7,95286.9,pib-ins 2010-2024 (base 2015)
+2017,,,,,,,81.0,0.297,0.079,27286.7,102011.5,pib-ins 2010-2024 (base 2015)
+2019,,,,,,,113.0,0.346,0.092,32672.9,122969.3,pib-ins 2010-2024 (base 2015)

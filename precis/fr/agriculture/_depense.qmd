@@ -47,7 +47,12 @@ l'évolution réelle de la dépense. On les présente en deux segments distincts
 ### La série homogène depuis 2020 {#sec-agri-depense-serie}
 
 Depuis 2020, le budget de la mission se lit dans une nomenclature stable. Sur la période,
-il passe d'environ 1,73 à 2,28 milliard de dinars (@fig-agri-budget-mission).
+il passe d'environ 1,73 à 2,28 milliard de dinars (@fig-agri-budget-mission). Rapporté aux
+dépenses de l'État réalisées hors service de la dette, il en représente entre 4,0 et 4,6 % ;
+rapporté au PIB (base 2015 de l'INS), entre 1,3 et 1,4 % de 2020 à 2024 [calcul sur
+@tn-pap-agriculture-2020 ; @tn-pap-agriculture-2025 ; @minfin-indicateurs-fp ; @ins-cnat-2015].
+La part n'augmente donc pas avec le montant : la hausse en dinars suit, pour l'essentiel,
+celle de l'ensemble de la dépense et du PIB nominal.
 
 ```{python}
 #| label: fig-agri-budget-mission
@@ -60,7 +65,12 @@ ag.fig_budget_mission(
              "crédits de paiement sur ressources de l'État, 2020-2025"),
     note_lecture=("Chaque montant est celui de la loi de finances initiale de l'année, lu dans "
                   "le projet annuel de performance de cette année ; il exclut les ressources "
-                  "propres des établissements publics. Dinars courants."))
+                  "propres des établissements publics. Dinars courants. Rapportée aux dépenses "
+                  "réalisées, une prévision donne un ordre de grandeur."
+                  " Trois onglets : millions de dinars courants ; part des dépenses de l'État "
+                  "réalisées hors service de la dette ; part du PIB (base 2015 de l'INS jusqu'en 2024 ;"
+                  " pour 2025, valeur du ministère des Finances rattachée à aucune base), tracée "
+                  "par segment de base, voir l'[annexe sur le PIB](../annexe-pib.html#sec-pib-ruptures)."))
 ```
 
 <!-- TODO (documentaliste) : recouper à l'image les totaux des PAP 2024 et 2025 (couche texte arabe) ; acquérir le PAP 2023 (lacune GBO) pour relever la prévision LF 2023 à sa source première plutôt que dans le PAP 2024. -->
@@ -126,7 +136,11 @@ ag.fig_budget_execution(
                   "nomenclature de 2019. Les années 2015-2018 et 2021 ne sont pas disponibles "
                   "(le rapport de performance 2021 n'a jamais été publié). L'exécution de 2019 et "
                   "2020 dépasse la prévision, celles de 2022 et 2023 en sont proches (104 % puis "
-                  "97 %). Dinars courants."))
+                  "97 %). Dinars courants."
+                  " Trois onglets : millions de dinars courants ; part des dépenses de l'État "
+                  "réalisées hors service de la dette ; part du PIB (base 1997 pour 2008-2009, base "
+                  "2015 de l'INS, rétropolée par l'INS pour 2010-2014), tracée "
+                  "par segment de base, voir l'[annexe sur le PIB](../annexe-pib.html#sec-pib-ruptures)."))
 ```
 
 ## Les encouragements à l'agriculture dans les lois de finances {#sec-agri-depense-encouragements}
@@ -164,7 +178,11 @@ ag.fig_encouragements(
                   "les segments ne sont pas reliés, et deux traits verticaux marquent les "
                   "redéfinitions de périmètre (2014, 2017). Les niveaux d'un segment à l'autre ne "
                   "se comparent pas. Le troisième segment est le total des quatre lignes "
-                  "thématiques de l'année. Dinars courants."))
+                  "thématiques de l'année. Dinars courants."
+                  " Trois onglets : millions de dinars courants ; part des dépenses de l'État "
+                  "réalisées hors service de la dette ; part du PIB (base 2015 de l'INS, rétropolée par"
+                  " l'INS pour 2010-2014), tracée "
+                  "par segment de base, voir l'[annexe sur le PIB](../annexe-pib.html#sec-pib-ruptures)."))
 ```
 
 Le premier découpage (2010-2013) porte une ligne unique « secteur » ; le deuxième (2014-2016)
