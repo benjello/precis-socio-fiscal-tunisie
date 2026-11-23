@@ -10,6 +10,10 @@
 
 - Seize clés dans `agriculture/references.json` (FR et AR, URL tirées des champs `pdf_fr` et `pdf_ar`) : série du ministère (décrets 70-104, 77-647, 77-648, 86-1233, 87-779, 2001-419, 2010-625, 2011-1560), offices de mise en valeur (décret-loi 60-3, lois 61-1, 73-27, 73-28, décret 83-226), reconnaissances de calamité (`TnDecretPres2021-210`, `TnDecret2023-527`, `TnDecret2023-615`). La loi organique n° 2019-15 est citée depuis le fonds commun (`loi-org-2019-15-lob`). Points incertains au backlog (« À revérifier sur le poste »). À verser dans Zotero, collection de l'agriculture.
 
+## Lot 4 du 22/11/2026 : clés juridiques de l'éducation (bibliographe, depuis jort_cache.db)
+
+- Quatre clés nouvelles dans `education/references.json` (le livre n'a pas d'édition arabe) : `decret99-2025-eit`, `decret-gouv2018-787-eit`, `arrete1990-08-23-bourse-rfa`, `arrete2022-02-10-complexes-oss` ; `decret-gouv-2018-904-prime-rentree-universitaire` recopiée de `remunerations_publiques`. Treize clés déjà présentes mais non citées le sont maintenant dans les registres de `_aides.qmd`. À verser dans Zotero, collection de l'éducation.
+
 ## Lot 3 du 20/11/2026 : clés juridiques du transport (bibliographe, depuis jort_cache.db)
 
 - Douze clés dans `transport/references.json` (le livre n'a pas d'édition arabe) : décrets 86-863, 91-86, 94-135, 70-46, 70-115, 74-93, 75-397, 2018-1006 ; lois 79-9, 88-37, 88-139 ; `loi-org2025-4` recopiée de `finances_locales` et `decret-1956-12-27-sncft` de `entreprises_publiques`. URL tirées du champ `pdf_fr` des notices. Points incertains au backlog (« À revérifier sur le poste »). À verser dans Zotero, collection du transport.
