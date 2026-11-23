@@ -161,7 +161,11 @@ ag.fig_apia_primes(
                   "manquant. Le point isolé de 2009 (54 MD) est d'une autre source, la Banque "
                   "mondiale. Chaque année, un reliquat de demandes prêtes mais non payées faute "
                   "de crédits subsiste (53 à 59 MD en fin d'exercice) ; l'année 2019 reflète un "
-                  "rattrapage d'arriéré."))
+                  "rattrapage d'arriéré."
+                  " Trois onglets : millions de dinars courants ; part des dépenses de l'État "
+                  "réalisées hors service de la dette ; part du PIB (base 1997 pour 2009, base 2015 de "
+                  "l'INS, rétropolée par l'INS pour 2010-2014), tracée "
+                  "par segment de base, voir l'[annexe sur le PIB](../annexe-pib.html#sec-pib-ruptures)."))
 ```
 
 Les primes approuvées ne forment pas une série homogène au-delà de 2016 : un second jeu de
