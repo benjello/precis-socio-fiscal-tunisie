@@ -13,6 +13,7 @@
 ## Lot 7 du 23/11/2026 : clés juridiques du marché du travail (bibliographe, depuis jort_cache.db)
 
 - Dans `marche_travail/references.json` (FR et AR) : `decret2000-2279-fne-21-21` et `arrete2017-08-08-contrat-dignite`, d'après les notices (URL tirées des champs `pdf_fr` et `pdf_ar`) ; `decret-loi2022-78` recopiée de `education`. Citées dans les registres de `_politiques_emploi.qmd`. Points incertains au backlog (« À revérifier sur le poste », lot 7). À verser dans Zotero, collection du marché du travail.
+
 ## Lot 6 du 22/11/2026 : clés juridiques des prestations sociales (bibliographe, depuis jort_cache.db)
 
 - Vingt-deux clés dans `prestations_sociales/references.json` (FR et AR, URL tirées des champs `pdf_fr` et `pdf_ar`) : douze décrets modifiant les décrets n° 98-409 et n° 98-1812 (cartes de soins, 1999-2021), décrets-lois n° 2020-3 et n° 2020-4, décret gouvernemental n° 2020-184, lois créant les mutuelles de corps (77-80, 82-68, 82-69, 89-53, 96-30), décret n° 85-847, arrêté du 7 septembre 1993 (statuts de l'UNSM). La loi n° 2009-40 est citée depuis le fonds commun (`lfc-2009`). Points incertains au backlog (« À revérifier sur le poste »). À verser dans Zotero, collection des prestations sociales.
