@@ -45,10 +45,19 @@ tutelle sur les établissements publics du secteur. Son organisation et ses attr
 présentent en un couple de textes — l'un fixe ce qu'il fait, l'autre comment il est bâti —
 refait à chaque grande recomposition de l'appareil administratif.
 
-Le socle en vigueur est l'organisation arrêtée en 2001 ([décret n° 2001-420 du 13 février
-2001](#r-min-org-2001)), elle-même modifiée à deux reprises au cours des années 2010. Le
-ministère élargit alors son champ, qui réunit l'agriculture, les ressources hydrauliques et
-la pêche.
+Avant 2001, ce couple est refait à trois reprises : l'organisation de 1970 ([décret
+n° 70-104 du 28 mars 1970](#r-min-org-1970)), les attributions et l'organisation arrêtées
+ensemble en 1977 ([décret n° 77-647](#r-min-attr-1977) et [décret n° 77-648 du 5 août
+1977](#r-min-org-1977)), puis les attributions de 1986 ([décret n° 86-1233 du 4 décembre
+1986](#r-min-attr-1986)) et l'organisation de 1987 ([décret n° 87-779 du 21 mai
+1987](#r-min-org-1987)).
+
+Le socle en vigueur est le couple arrêté le 13 février 2001 : les attributions ([décret
+n° 2001-419](#r-min-attr-2001)) et l'organisation ([décret n° 2001-420 du 13 février
+2001](#r-min-org-2001)). L'organisation est modifiée à deux reprises au cours des années
+2010 ([décret n° 2010-625 du 5 avril 2010](#r-min-org-2010) et [décret n° 2011-1560 du
+5 septembre 2011](#r-min-org-2011)). Le ministère élargit alors son champ, qui réunit
+l'agriculture, les ressources hydrauliques et la pêche.
 
 Aucune réorganisation d'ensemble du ministère postérieure à ces modifications n'est
 identifiée ici ; en l'état des textes identifiés, l'organisation en vigueur demeure celle de
@@ -56,7 +65,7 @@ identifiée ici ; en l'état des textes identifiés, l'organisation en vigueur d
 
 <!-- RECHERCHE r-agri-org-ministere-post2014 : décret portant organisation/attributions d'ensemble du ministère de l'Agriculture, des Ressources hydrauliques et de la Pêche postérieur au décret de 2011 (voir docs/recherches.yml) -->
 
-<!-- TODO (bibliographe) : verser au references.json du livre les textes de la série organisation/attributions du ministère antérieurs à 2001 (décrets n° 70-104, 77-647/77-648, 86-1233, 87-779) et les attributions de 2001 (décret n° 2001-419), ainsi que les modificatifs de 2010 (décret n° 2010-625) et 2011 (décret n° 2011-1560), pour sourcer la série au mot. -->
+<!-- TODO (documentaliste) : la série 1970-2011 est référencée d'après la base des numéros du JORT ; lire les textes pour confirmer l'objet de chacun (attributions ou organisation), le décret d'attributions de 1970 éventuel et l'effet exact des modificatifs de 2010 et 2011 sur le champ du ministère. -->
 
 ## Les commissariats régionaux au développement agricole {#sec-agri-institution-crda .domicile-unique}
 
@@ -92,8 +101,13 @@ sont affectées.
 La maîtrise des périmètres irrigués publics occupe une famille d'organismes née dès avant la
 réforme agraire. L'État organise d'abord la mise en valeur de grandes zones hydrauliques — à
 commencer par la vallée de la Medjerda ([loi n° 58-76 du 9 juillet 1958](#r-mev-medjerda)) —
-puis crée par vagues des offices de mise en valeur des périmètres irrigués dans les régions,
-comme ceux de Nabeul et d'autres gouvernorats ([loi n° 80-32 du 26 mai 1980](#r-mev-1980)).
+puis crée par vagues des offices de mise en valeur dans les régions : Sidi Bou Zid en 1960
+([décret-loi n° 60-3 du 9 février 1960](#r-mev-sidi-bou-zid)), les Souassi en 1961 ([loi
+n° 61-1 du 2 janvier 1961](#r-mev-souassi)), Lakhmes et Nebhana en 1973 ([loi n° 73-27](#r-mev-lakhmes)
+et [loi n° 73-28 du 7 mai 1973](#r-mev-nebhana)), puis ceux de Nabeul et d'autres
+gouvernorats ([loi n° 80-32 du 26 mai 1980](#r-mev-1980)). En 1983, un décret fixe les
+conditions de mise en valeur des terres domaniales agricoles confiées aux sociétés de mise en
+valeur et de développement agricole ([décret n° 83-226 du 4 mars 1983](#r-smvda-1983)).
 Un [office de mise en valeur](#g-office-mise-en-valeur) est l'organisme qui équipe un périmètre irrigué et y organise la
 production.
 
@@ -117,8 +131,6 @@ septembre 1999](#r-afa-renom-1999)), et la loi de 1977 est modifiée et complét
 Le texte de 1977 qualifie l'agence d'établissement public à caractère industriel et
 commercial. Son rattachement entre le présent chapitre et le livre des entreprises publiques
 reste à confirmer (@sec-agri-institution-voisinage).
-
-<!-- TODO (bibliographe) : verser au references.json du livre les textes fondateurs des offices de mise en valeur cités par la note documentaire mais non encore référencés (décret-loi n° 60-3 Sidi Bou Zid, loi n° 61-1 Souassi, lois n° 73-27 Lakhmes et 73-28 Nebhana, décret n° 83-226 sur les conditions de mise en valeur des terres domaniales), pour une épine complète de la famille. -->
 
 ## L'Agence de promotion des investissements agricoles {#sec-agri-institution-apia .domicile-unique}
 
@@ -210,20 +222,30 @@ Le tableau ci-dessous réunit, dans l'ordre des dates, les textes fondateurs des
 soutien agricole. La colonne « Portée » dit de chaque texte s'il crée une institution (rupture),
 s'il en fixe l'organisation ou les attributions (étape) ou s'il l'ajuste ou la renomme.
 
-:::: {.chronologie-repliable titre="L'institution agricole : les textes fondateurs, date par date, 1958-2001"}
+:::: {.chronologie-repliable titre="L'institution agricole : les textes fondateurs, date par date, 1958-2011"}
 | Date — texte | Objet | Portée |
 |---|---|---|
 | []{#r-mev-medjerda}[9 juillet 1958]{.insecable} — loi n° 58-76 [@loi58-76] | organise l'Office de la mise en valeur de la vallée de la Medjerda | **rupture** — offices de mise en valeur |
+| []{#r-mev-sidi-bou-zid}[9 février 1960]{.insecable} — décret-loi n° 60-3 [@dl60-3-office-sidi-bou-zid] | crée un office de mise en valeur de Sidi Bou Zid | étape — offices de mise en valeur |
+| []{#r-mev-souassi}[2 janvier 1961]{.insecable} — loi n° 61-1 [@loi61-1-office-souassi] | crée un office de mise en valeur des Souassi | étape — offices de mise en valeur |
 | []{#r-ppi-1963}[27 mai 1963]{.insecable} — loi n° 63-18 [@loi63-18] | réforme agraire dans les périmètres publics irrigués | **rupture** — régime des PPI |
+| []{#r-min-org-1970}[28 mars 1970]{.insecable} — décret n° 70-104 [@decret70-104-organisation-ministere-agriculture] | organisation du ministère de l'Agriculture | étape — organisation du ministère |
 | []{#r-ppi-1971}[16 février 1971]{.insecable} — loi n° 71-9 [@loi71-9] | modifie et complète la réforme agraire des PPI | ajustement — régime des PPI |
+| []{#r-mev-lakhmes}[7 mai 1973]{.insecable} — loi n° 73-27 [@loi73-27-office-lakhmes] | crée l'office de mise en valeur de Lakhmes | étape — offices de mise en valeur |
+| []{#r-mev-nebhana}[7 mai 1973]{.insecable} — loi n° 73-28 [@loi73-28-office-nebhana] | crée l'office de mise en valeur de Nebhana | étape — offices de mise en valeur |
 | []{#r-crda-1974}[4 septembre 1974]{.insecable} — décret n° 74-847 [@decret-74-847-crda] | crée les commissariats régionaux au développement agricole | **rupture** — CRDA |
 | []{#r-afa-1977}[16 mars 1977]{.insecable} — loi n° 77-17 [@loi77-17] | crée l'Agence de la réforme agraire des périmètres publics irrigués | **rupture** — Agence foncière |
 | []{#r-afa-org-1977}[1er août 1977]{.insecable} — décret n° 77-627 [@decret77-627] | organisation et fonctionnement de l'agence | étape — Agence foncière |
+| []{#r-min-attr-1977}[5 août 1977]{.insecable} — décret n° 77-647 [@decret77-647-attributions-ministere-agriculture] | attributions du ministère de l'Agriculture | étape — attributions du ministère |
+| []{#r-min-org-1977}[5 août 1977]{.insecable} — décret n° 77-648 [@decret77-648-organisation-ministere-agriculture] | organisation du ministère de l'Agriculture | étape — organisation du ministère |
 | []{#r-mev-1980}[26 mai 1980]{.insecable} — loi n° 80-32 [@loi80-32] | crée des offices de mise en valeur des périmètres irrigués (Nabeul et autres) | étape — offices de mise en valeur |
 | []{#r-crda-1981}[18 février 1981]{.insecable} — décret n° 81-215 [@decret-81-215-crda-attributions] | fixe les attributions et l'organisation des CRDA | étape — CRDA |
 | []{#r-odesypano}[9 mars 1981]{.insecable} — loi n° 81-17 [@loi-81-17-odesypano] | crée l'Office de développement sylvo-pastoral du Nord-Ouest | **rupture** — office de développement régional |
 | []{#r-apia-loi-1982}[6 août 1982]{.insecable} — loi n° 82-67 [@loi-82-67, art. 16] | encouragement aux investissements dans les secteurs de l'agriculture et de la pêche ; crée l'Agence de promotion des investissements agricoles | **rupture** — encouragement à l'investissement |
 | []{#r-apia-org}[29 novembre 1982]{.insecable} — décret n° 82-1484 [@decret-82-1484-apia] | organisation et missions de l'Agence de promotion des investissements agricoles | **rupture** — APIA |
+| []{#r-smvda-1983}[4 mars 1983]{.insecable} — décret n° 83-226 [@decret83-226-terres-domaniales-smvda] | conditions de mise en valeur des terres domaniales agricoles par les sociétés de mise en valeur et de développement agricole | étape — terres domaniales |
+| []{#r-min-attr-1986}[4 décembre 1986]{.insecable} — décret n° 86-1233 [@decret86-1233-attributions-ministere-agriculture] | attributions du ministère de l'Agriculture | étape — attributions du ministère |
+| []{#r-min-org-1987}[21 mai 1987]{.insecable} — décret n° 87-779 [@decret87-779-organisation-ministere-agriculture] | organisation du ministère de l'Agriculture | étape — organisation du ministère |
 | []{#r-crda-1989}[8 mars 1989]{.insecable} — loi n° 89-44 [@loi89-44] | refonde les CRDA en établissements publics administratifs de gouvernorat ; absorption des offices régionaux de mise en valeur | **rupture** — CRDA |
 | []{#r-iresa-1990}[30 juillet 1990]{.insecable} — loi n° 90-72 [@loi-90-72-iresa] | crée l'Institution de la recherche et de l'enseignement supérieur agricoles | **rupture** — recherche-enseignement |
 | []{#r-avfa-1990}[30 juillet 1990]{.insecable} — loi n° 90-73 [@loi-90-73-avfa] | crée l'Agence de la vulgarisation et de la formation agricoles | **rupture** — vulgarisation-formation |
@@ -232,7 +254,10 @@ s'il en fixe l'organisation ou les attributions (étape) ou s'il l'ajuste ou la 
 | []{#r-afa-renom-1999}[14 septembre 1999]{.insecable} — décret n° 99-1877 [@decret99-1877] | renomme l'agence « Agence foncière agricole » | ajustement — Agence foncière |
 | []{#r-afa-2000}[6 mars 2000]{.insecable} — loi n° 2000-29 [@loi2000-29] | modifie et complète la loi de 1977 sur l'agence | ajustement — Agence foncière |
 | []{#r-ppi-2000}[6 mars 2000]{.insecable} — loi n° 2000-30 [@loi2000-30] | modifie et complète la réforme agraire des PPI | ajustement — régime des PPI |
+| []{#r-min-attr-2001}[13 février 2001]{.insecable} — décret n° 2001-419 [@decret2001-419-attributions-ministere-agriculture] | attributions du ministère de l'Agriculture | étape — attributions du ministère |
 | []{#r-min-org-2001}[13 février 2001]{.insecable} — décret n° 2001-420 [@decret-2001-420-organisation-ministere-agriculture] | organisation du ministère de l'Agriculture | **rupture** — organisation du ministère |
+| []{#r-min-org-2010}[5 avril 2010]{.insecable} — décret n° 2010-625 [@decret2010-625-organisation-ministere-agriculture] | modifie et complète l'organisation de 2001 | ajustement — organisation du ministère |
+| []{#r-min-org-2011}[5 septembre 2011]{.insecable} — décret n° 2011-1560 [@decret2011-1560-organisation-ministere-agriculture] | modifie l'organisation de 2001 | ajustement — organisation du ministère |
 ::::
 
 ## Les offices qui sont des entreprises publiques {#sec-agri-institution-voisinage .domicile-unique}
