@@ -10,6 +10,9 @@
 
 - Neuf clés dans `compensation/references.json` (FR et AR, URL tirées des champs `pdf_fr` et `pdf_ar`) : arrêtés du 28 décembre 1983 et du 17 février 1984 sur les semoules, les pâtes et le couscous, et les farines (1984) ; arrêté du 11 novembre 1989 sur l'huile de mélange ; arrêtés du 28 février et du 13 mars 1957 et décret n° 65-303 (taxes de compensation sur les transports automobiles). Points incertains au backlog (« À revérifier sur le poste », lot 8). À verser dans Zotero, collection de la compensation.
 
+## Lot 7 du 23/11/2026 : clés juridiques du marché du travail (bibliographe, depuis jort_cache.db)
+
+- Dans `marche_travail/references.json` (FR et AR) : `decret2000-2279-fne-21-21` et `arrete2017-08-08-contrat-dignite`, d'après les notices (URL tirées des champs `pdf_fr` et `pdf_ar`) ; `decret-loi2022-78` recopiée de `education`. Citées dans les registres de `_politiques_emploi.qmd`. Points incertains au backlog (« À revérifier sur le poste », lot 7). À verser dans Zotero, collection du marché du travail.
 ## Lot 6 du 22/11/2026 : clés juridiques des prestations sociales (bibliographe, depuis jort_cache.db)
 
 - Vingt-deux clés dans `prestations_sociales/references.json` (FR et AR, URL tirées des champs `pdf_fr` et `pdf_ar`) : douze décrets modifiant les décrets n° 98-409 et n° 98-1812 (cartes de soins, 1999-2021), décrets-lois n° 2020-3 et n° 2020-4, décret gouvernemental n° 2020-184, lois créant les mutuelles de corps (77-80, 82-68, 82-69, 89-53, 96-30), décret n° 85-847, arrêté du 7 septembre 1993 (statuts de l'UNSM). La loi n° 2009-40 est citée depuis le fonds commun (`lfc-2009`). Points incertains au backlog (« À revérifier sur le poste »). À verser dans Zotero, collection des prestations sociales.
@@ -442,7 +445,7 @@ restant) pour les entrées de glossaire `tfp`, `avance-tfp`, `fonds-special-tres
 `cotisations_sociales` et `fiscalite` fusionnées sur la plus complète), `lf-1971` (de `compensation`) ; puis `loi88-60-lfc1988`
 (de `caisses`), `bct-ra-1997` et `bct-ra-2000` (de `compensation`). Dans Zotero : à **déclasser** de ces collections.
 **Doublon réconcilié le 7 octobre 2026** (clé unique `loi2007-69` au fonds commun, entrée de fiscalité retirée) : `loi2007-69` (ici) et `loi-2007-69-initiative-economique` (fiscalité, branche parallèle) désignent la
-même loi n° 2007-69 ; garder une seule clé. Reste sans clé : le décret-loi n° 2022-78 et le décret n° 2000-2279 (TODO du chapitre).
+même loi n° 2007-69 ; garder une seule clé. Le décret-loi n° 2022-78 (clé `decret-loi2022-78`, recopiée de l'éducation) et le décret n° 2000-2279 ont leur clé depuis le lot 7 (23 novembre 2026).
 Dry-run : s'arrête sur `dafflon-2021-budget-local` (défaut antérieur) ; `controle-rangement` : voir les « à déclasser » ci-dessus.
 
 **Réutilisée** : `decret2017-358` (fonds commun). **Promues au fonds commun** (venues de `compensation`, citées aussi
