@@ -6,6 +6,10 @@
 > `references.json` doit être **remontée dans Zotero** pour être pérenne et obtenir une
 > clé de citation stable (champ « Extra » : `citation-key: xxx`).
 
+## Lot 6 du 22/11/2026 : clés juridiques des prestations sociales (bibliographe, depuis jort_cache.db)
+
+- Vingt-deux clés dans `prestations_sociales/references.json` (FR et AR, URL tirées des champs `pdf_fr` et `pdf_ar`) : douze décrets modifiant les décrets n° 98-409 et n° 98-1812 (cartes de soins, 1999-2021), décrets-lois n° 2020-3 et n° 2020-4, décret gouvernemental n° 2020-184, lois créant les mutuelles de corps (77-80, 82-68, 82-69, 89-53, 96-30), décret n° 85-847, arrêté du 7 septembre 1993 (statuts de l'UNSM). La loi n° 2009-40 est citée depuis le fonds commun (`lfc-2009`). Points incertains au backlog (« À revérifier sur le poste »). À verser dans Zotero, collection des prestations sociales.
+
 ## Lot 5 du 22/11/2026 : clés juridiques de l'agriculture (bibliographe, depuis jort_cache.db)
 
 - Seize clés dans `agriculture/references.json` (FR et AR, URL tirées des champs `pdf_fr` et `pdf_ar`) : série du ministère (décrets 70-104, 77-647, 77-648, 86-1233, 87-779, 2001-419, 2010-625, 2011-1560), offices de mise en valeur (décret-loi 60-3, lois 61-1, 73-27, 73-28, décret 83-226), reconnaissances de calamité (`TnDecretPres2021-210`, `TnDecret2023-527`, `TnDecret2023-615`). La loi organique n° 2019-15 est citée depuis le fonds commun (`loi-org-2019-15-lob`). Points incertains au backlog (« À revérifier sur le poste »). À verser dans Zotero, collection de l'agriculture.
