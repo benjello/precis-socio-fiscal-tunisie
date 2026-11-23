@@ -6,6 +6,10 @@
 > `references.json` doit être **remontée dans Zotero** pour être pérenne et obtenir une
 > clé de citation stable (champ « Extra » : `citation-key: xxx`).
 
+## Lot 6 du 22/11/2026 : clés juridiques des prestations sociales (bibliographe, depuis jort_cache.db)
+
+- Vingt-deux clés dans `prestations_sociales/references.json` (FR et AR, URL tirées des champs `pdf_fr` et `pdf_ar`) : douze décrets modifiant les décrets n° 98-409 et n° 98-1812 (cartes de soins, 1999-2021), décrets-lois n° 2020-3 et n° 2020-4, décret gouvernemental n° 2020-184, lois créant les mutuelles de corps (77-80, 82-68, 82-69, 89-53, 96-30), décret n° 85-847, arrêté du 7 septembre 1993 (statuts de l'UNSM). La loi n° 2009-40 est citée depuis le fonds commun (`lfc-2009`). Points incertains au backlog (« À revérifier sur le poste »). À verser dans Zotero, collection des prestations sociales.
+
 ## Lot 4 du 22/11/2026 : clés juridiques de l'éducation (bibliographe, depuis jort_cache.db)
 
 - Quatre clés nouvelles dans `education/references.json` (le livre n'a pas d'édition arabe) : `decret99-2025-eit`, `decret-gouv2018-787-eit`, `arrete1990-08-23-bourse-rfa`, `arrete2022-02-10-complexes-oss` ; `decret-gouv-2018-904-prime-rentree-universitaire` recopiée de `remunerations_publiques`. Treize clés déjà présentes mais non citées le sont maintenant dans les registres de `_aides.qmd`. À verser dans Zotero, collection de l'éducation.
