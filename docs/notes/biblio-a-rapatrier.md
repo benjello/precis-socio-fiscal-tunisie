@@ -6,6 +6,10 @@
 > `references.json` doit être **remontée dans Zotero** pour être pérenne et obtenir une
 > clé de citation stable (champ « Extra » : `citation-key: xxx`).
 
+## Lot 9 du 23/11/2026 : clés juridiques des rémunérations publiques (bibliographe, depuis jort_cache.db)
+
+- `decret-88-908` et `decret-88-908-rect` créées dans `remunerations_publiques/references.json` (FR et AR, URL tirées des champs `pdf_fr` et `pdf_ar`) ; `decret2013-1401`, déjà présente, est désormais citée. Points incertains au backlog (« À revérifier sur le poste », lot 9). À verser dans Zotero, collection des rémunérations publiques.
+
 ## Lot 6 du 22/11/2026 : clés juridiques des prestations sociales (bibliographe, depuis jort_cache.db)
 
 - Vingt-deux clés dans `prestations_sociales/references.json` (FR et AR, URL tirées des champs `pdf_fr` et `pdf_ar`) : douze décrets modifiant les décrets n° 98-409 et n° 98-1812 (cartes de soins, 1999-2021), décrets-lois n° 2020-3 et n° 2020-4, décret gouvernemental n° 2020-184, lois créant les mutuelles de corps (77-80, 82-68, 82-69, 89-53, 96-30), décret n° 85-847, arrêté du 7 septembre 1993 (statuts de l'UNSM). La loi n° 2009-40 est citée depuis le fonds commun (`lfc-2009`). Points incertains au backlog (« À revérifier sur le poste »). À verser dans Zotero, collection des prestations sociales.
