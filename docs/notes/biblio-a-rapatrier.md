@@ -6,6 +6,10 @@
 > `references.json` doit être **remontée dans Zotero** pour être pérenne et obtenir une
 > clé de citation stable (champ « Extra » : `citation-key: xxx`).
 
+## Lot 9 du 23/11/2026 : clés juridiques des rémunérations publiques (bibliographe, depuis jort_cache.db)
+
+- `decret-88-908` et `decret-88-908-rect` créées dans `remunerations_publiques/references.json` (FR et AR, URL tirées des champs `pdf_fr` et `pdf_ar`) ; `decret2013-1401`, déjà présente, est désormais citée. Points incertains au backlog (« À revérifier sur le poste », lot 9). À verser dans Zotero, collection des rémunérations publiques.
+
 ## Lot 8 du 23/11/2026 : clés juridiques de la compensation (bibliographe, depuis jort_cache.db)
 
 - Neuf clés dans `compensation/references.json` (FR et AR, URL tirées des champs `pdf_fr` et `pdf_ar`) : arrêtés du 28 décembre 1983 et du 17 février 1984 sur les semoules, les pâtes et le couscous, et les farines (1984) ; arrêté du 11 novembre 1989 sur l'huile de mélange ; arrêtés du 28 février et du 13 mars 1957 et décret n° 65-303 (taxes de compensation sur les transports automobiles). Points incertains au backlog (« À revérifier sur le poste », lot 8). À verser dans Zotero, collection de la compensation.
