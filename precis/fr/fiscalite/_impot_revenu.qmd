@@ -454,7 +454,7 @@ table("bnc_forfait",
 
 L'article 46 de la loi de finances pour 2014, intitulé « Rationalisation de l'assiette forfaitaire des bénéfices non commerciaux », se borne à remplacer le taux de 70 % par celui de 80 % [@lf-2014, art. 46] : c'est ce mode de rédaction — le texte modificatif cite la valeur qu'il remplace — qui permet d'attester les valeurs antérieures par le seul texte modificatif, sans reconstituer chaque année de la série. Il n'énonce en revanche aucune date d'effet propre, d'où l'astérisque porté sur l'année 2013.
 
-Deux règles encadrent l'option. Les titulaires de bénéfices non commerciaux qui justifient d'une comptabilité conforme relèvent des articles 10 à 20, comme les entreprises commerciales. Et le passage au réel est **irréversible** : « dans le cas où les intéressés ont été soumis au titre d'une année donnée à l'impôt sur le revenu selon le régime réel, ledit régime demeure définitif et ne peut faire l'objet de renonciation » (article 22 § III, ajouté par l'article 71 de la loi de finances pour 2002).
+Deux règles encadrent l'option. Les titulaires de bénéfices non commerciaux qui justifient d'une comptabilité conforme relèvent des articles 10 à 20, comme les entreprises commerciales. Et le passage au réel est **irréversible** : « dans le cas où les intéressés ont été soumis au titre d'une année donnée à l'impôt sur le revenu selon le régime réel, ledit régime demeure définitif et ne peut faire l'objet de renonciation » (article 22 § III, ajouté par l'article 71 de la loi de finances pour 2002) [@loi2001-123-lf2002, art. 71].
 
 ### Bénéfices de l'exploitation agricole et de pêche (catégorie III)
 
@@ -1765,7 +1765,7 @@ Sources : celles de chaque ligne. Les montants sont en dinars.
 <!-- TODO (rédacteur) : le tableau ne retient que les textes cités avec leur référence dans le
 chapitre. En sont absents, faute de référence : les art. 61 et 76 de la loi de finances pour 1998 (pensions de source étrangère,
 bénéfices agricoles), l'art. 71 de la loi de finances pour 2002 (irréversibilité du réel des
-bénéfices non commerciaux), l'art. 42 de la loi de finances pour 2011 (gérants de SARL), et
+bénéfices non commerciaux ; cité par sa clé `loi2001-123-lf2002` depuis le 23 novembre 2026, à porter au tableau), l'art. 42 de la loi de finances pour 2011 (gérants de SARL), et
 l'origine du taux de 60 % de l'art. 12 bis de la loi n° 89-114. Les revenus des travailleuses
 agricoles, exonérés en 2025, n'y figurent pas non plus : « La longue période » les rattache à
 l'art. 44 de la loi de finances pour 2025, la section sur les traitements et salaires ne cite que
@@ -1854,9 +1854,10 @@ l'assiette et des abattements » restent PROVISOIRES tant qu'elles ne sont pas v
 Zotero (groupe 6529669), scripts/sync_biblio.py faisant autorité en sens Zotero →
 references.json : la liste à rapatrier est tenue dans docs/notes/biblio-a-rapatrier.md.
 
-Textes encore cités en prose sans clé, à créer si le précis doit les citer formellement :
-loi n° 2001-123 du 28 décembre 2001 (LF 2002, art. 71) ; loi n° 2007-70 du 27 décembre 2007
-(LF 2008, art. 41, article 12 bis du code).
+Les deux textes autrefois cités en prose sans clé en ont une au fonds commun (constat du
+23 novembre 2026) : loi n° 2001-123 (`loi2001-123-lf2002`, désormais citée pour l'art. 71) et
+loi n° 2007-70 (`loi-2007-70-lf-2008`, art. 41, article 12 bis du code, à citer là où le
+chapitre en parle).
 
 Vérifié le 20 septembre 2026 : la parité FR/AR des references.json de « fiscalité » est
 complète — soixante-dix-neuf entrées de part et d'autre —, la consigne de créer les entrées
