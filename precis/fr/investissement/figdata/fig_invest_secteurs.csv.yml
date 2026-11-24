@@ -1,0 +1,5 @@
+series: [cnat-fbcf]
+sources: [ins-cnat-2015]
+fiches: [sources/ins-comptes-nationaux-publications.md]
+caveats: [DEUX BASES, JAMAIS CHAÎNÉES : filtrer `base`. Une même année publiée par plusieurs éditions garde toutes ses lectures (révisions) : choisir une édition par point. Les nomenclatures diffèrent (codes B11, G40… en base 1997 ; libellés en base 2015) : aucune table de passage n'est fournie. 1 491 contrôles sur 1 500 passent ; les 9 autres sont des écarts de 0,2 à 0,4 MD entre deux tableaux d'une même édition (total par secteur contre total par branche, entreprises contre tableau des entreprises), signalés et non corrigés. Les tableaux par édition relevés plus tôt sous cnat*-tables/ ont perdu les lignes à libellé sur deux lignes (électricité et gaz, eau, textile, matériaux) : sur les 2 463 valeurs communes, ils sont identiques à cette lecture, qui y ajoute les lignes perdues.]
+generated: 2026-11-24

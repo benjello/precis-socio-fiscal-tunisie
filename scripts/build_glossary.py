@@ -57,6 +57,9 @@ BOOKS = [
     "energie",
     "cadre",
     "agriculture",
+    "consommation",
+    "investissement",
+    "echanges",
 ]
 
 LANGS = ("fr", "ar")
