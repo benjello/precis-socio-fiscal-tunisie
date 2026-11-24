@@ -127,6 +127,11 @@ Références : INS, *Les comptes de la nation* (clé bibliographique `ins-cnat-2
 - La réponse aiderait à décider de leur place.
 - Priorité 3.
 
+**D6. Pourquoi les comptes publiés n'impriment-ils pas de compte de redistribution du revenu en nature, et comment retrouver les transferts sociaux en nature (D.63) ?** (étape « redistribution en nature »)
+- Observé : les comptes des secteurs en base 2015 (éditions 2015-2020 à 2021-2025) n'ont aucune ligne D.63, ni de revenu disponible ajusté. Les soins remboursés sont donc absorbés dans la consommation finale des administrations publiques (P.3, 30 841,0 en 2023).
+- La réponse permettrait de séparer la consommation individuelle de la consommation collective des administrations, et de rattacher l'assurance maladie, l'éducation et le logement social à D.63.
+- Priorité 2.
+
 ## E. Sources manquantes
 
 **E1.** Les recettes douanières par nature, et la TVA brute avec ses restitutions (A1, A2, A4). Priorité 1.
