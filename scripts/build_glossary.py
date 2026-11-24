@@ -56,6 +56,7 @@ BOOKS = [
     "environnement",
     "energie",
     "industrie",
+    "logement",
     "cadre",
     "agriculture",
 ]
