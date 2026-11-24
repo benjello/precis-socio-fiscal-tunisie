@@ -1,0 +1,79 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-11-24
+# séries (tunisia_data) : cnat-fbcf
+# sources (citation) : @ins-cnat-2015
+# fiches : sources/ins-comptes-nationaux-publications.md
+# méthode/hypothèses : DEUX BASES, JAMAIS CHAÎNÉES : filtrer `base`. Une même année publiée par plusieurs éditions garde toutes ses lectures (révisions) : choisir une édition par point. Les nomenclatures diffèrent (codes B11, G40… en base 1997 ; libellés en base 2015) : aucune table de passage n'est fournie. 1 491 contrôles sur 1 500 passent ; les 9 autres sont des écarts de 0,2 à 0,4 MD entre deux tableaux d'une même édition (total par secteur contre total par branche, entreprises contre tableau des entreprises), signalés et non corrigés. Les tableaux par édition relevés plus tôt sous cnat*-tables/ ont perdu les lignes à libellé sur deux lignes (électricité et gaz, eau, textile, matériaux) : sur les 2 463 valeurs communes, ils sont identiques à cette lecture, qui y ajoute les lignes perdues.
+# note : Formation brute de capital fixe des branches de l'énergie, 2005-2025, base 1997 (tirets) et base 2015 (traits pleins), millions de dinars courants
+Base,Branche,Année,FBCF (MD courants)
+base 1997,Extraction du pétrole et du gaz,2005,345.0
+base 1997,Extraction du pétrole et du gaz,2006,1123.0
+base 1997,Extraction du pétrole et du gaz,2007,1831.0
+base 1997,Extraction du pétrole et du gaz,2008,2379.0
+base 1997,Extraction du pétrole et du gaz,2009,2277.0
+base 1997,Extraction du pétrole et du gaz,2010,1762.0
+base 1997,Extraction du pétrole et du gaz,2011,1102.0
+base 1997,Extraction du pétrole et du gaz,2012,1120.0
+base 1997,Extraction du pétrole et du gaz,2013,1379.0
+base 1997,Extraction du pétrole et du gaz,2014,1204.0
+base 1997,Extraction du pétrole et du gaz,2015,1400.0
+base 1997,Extraction du pétrole et du gaz,2016,1410.0
+base 1997,Extraction du pétrole et du gaz,2017,1410.0
+base 1997,Électricité et gaz,2005,336.1
+base 1997,Électricité et gaz,2006,382.3
+base 1997,Électricité et gaz,2007,342.1
+base 1997,Électricité et gaz,2008,361.0
+base 1997,Électricité et gaz,2009,796.6
+base 1997,Électricité et gaz,2010,802.0
+base 1997,Électricité et gaz,2011,774.0
+base 1997,Électricité et gaz,2012,569.0
+base 1997,Électricité et gaz,2013,871.0
+base 1997,Électricité et gaz,2014,673.4
+base 1997,Électricité et gaz,2015,506.0
+base 1997,Électricité et gaz,2016,623.0
+base 1997,Électricité et gaz,2017,602.0
+base 1997,Raffinage du pétrole,2005,28.0
+base 1997,Raffinage du pétrole,2006,25.0
+base 1997,Raffinage du pétrole,2007,33.0
+base 1997,Raffinage du pétrole,2008,40.0
+base 1997,Raffinage du pétrole,2009,44.6
+base 1997,Raffinage du pétrole,2010,130.0
+base 1997,Raffinage du pétrole,2011,70.0
+base 1997,Raffinage du pétrole,2012,80.0
+base 1997,Raffinage du pétrole,2013,56.1
+base 1997,Raffinage du pétrole,2014,40.8
+base 1997,Raffinage du pétrole,2015,87.2
+base 1997,Raffinage du pétrole,2016,60.0
+base 1997,Raffinage du pétrole,2017,90.0
+base 2015,Extraction du pétrole et du gaz,2015,1501.0
+base 2015,Extraction du pétrole et du gaz,2016,1430.6
+base 2015,Extraction du pétrole et du gaz,2017,1540.7
+base 2015,Extraction du pétrole et du gaz,2018,1734.3
+base 2015,Extraction du pétrole et du gaz,2019,1300.6
+base 2015,Extraction du pétrole et du gaz,2020,1226.2
+base 2015,Extraction du pétrole et du gaz,2021,1429.3
+base 2015,Extraction du pétrole et du gaz,2022,1535.7
+base 2015,Extraction du pétrole et du gaz,2023,1535.8
+base 2015,Extraction du pétrole et du gaz,2024,1513.9
+base 2015,Extraction du pétrole et du gaz,2025,1762.8
+base 2015,Électricité et gaz,2015,504.4
+base 2015,Électricité et gaz,2016,623.4
+base 2015,Électricité et gaz,2017,553.4
+base 2015,Électricité et gaz,2018,1161.2
+base 2015,Électricité et gaz,2019,1014.1
+base 2015,Électricité et gaz,2020,464.0
+base 2015,Électricité et gaz,2021,541.1
+base 2015,Électricité et gaz,2022,585.6
+base 2015,Électricité et gaz,2023,606.5
+base 2015,Électricité et gaz,2024,597.3
+base 2015,Électricité et gaz,2025,695.3
+base 2015,Raffinage du pétrole,2015,75.3
+base 2015,Raffinage du pétrole,2016,60.3
+base 2015,Raffinage du pétrole,2017,90.0
+base 2015,Raffinage du pétrole,2018,110.0
+base 2015,Raffinage du pétrole,2019,127.0
+base 2015,Raffinage du pétrole,2020,140.0
+base 2015,Raffinage du pétrole,2021,162.9
+base 2015,Raffinage du pétrole,2022,165.7
+base 2015,Raffinage du pétrole,2023,174.4
+base 2015,Raffinage du pétrole,2024,171.8
+base 2015,Raffinage du pétrole,2025,200.0

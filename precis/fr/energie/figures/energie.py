@@ -116,3 +116,65 @@ def table_va():
         row["Part du total des valeurs ajoutées (%)"] = round(100 * s / float(p.loc[a, TOTAL]), 2)
         rows.append(row)
     return pd.DataFrame(rows)
+
+
+# --- FBCF des branches de l'énergie (série `cnat-fbcf`) -------------------------------------
+# Tableau « FBCF par secteur d'activité » des comptes de la nation, lu dans quinze éditions ;
+# pour chaque base et chaque année, l'édition la plus récente qui l'imprime. Les deux bases ne
+# se chaînent pas : deux segments, les années 2015-2017 publiées dans les deux.
+
+SERIE_FBCF = "cnat-fbcf"
+FBCF_BRANCHES = {
+    "base 1997": [("b11 .extraction de petrole et gaz naturel", "Extraction du pétrole et du gaz"),
+                  ("g40 . electricite et gaz", "Électricité et gaz"),
+                  ("e23. raffinage de petrole", "Raffinage du pétrole")],
+    "base 2015": [("extraction petrole et gaz naturel", "Extraction du pétrole et du gaz"),
+                  ("production et distribution de lelectricite et gaz", "Électricité et gaz"),
+                  ("raffinage du petrole", "Raffinage du pétrole")],
+}
+COULEURS = {"Extraction du pétrole et du gaz": "#0b4f6c", "Électricité et gaz": "#2d8c6f",
+            "Raffinage du pétrole": "#c0862b"}
+
+
+def fbcf():
+    d = figtools.series(SERIE_FBCF)
+    d = d[d["famille"] == "branche"].sort_values("edition").groupby(["base", "annee", "cle"]).tail(1)
+    out = {}
+    for base, branches in FBCF_BRANCHES.items():
+        sous = d[d["base"] == base]
+        out[base] = {lib: {int(r.annee): float(r.valeur_md) for r in sous[sous["cle"] == cle].itertuples()}
+                     for cle, lib in branches}
+    return out
+
+
+def _fbcf_lignes() -> plt.Figure:
+    figtools.apply_lang_font()
+    f = fbcf()
+    fig, ax = plt.subplots(figsize=(8.8, 4.6))
+    for base, style in (("base 1997", "--"), ("base 2015", "-")):
+        for lib, pts in f[base].items():
+            ans = sorted(pts)
+            ax.plot(ans, [pts[a] for a in ans], style, marker="o", ms=3, color=COULEURS[lib],
+                    label=figtools.fig_text(f"{lib} ({base})"))
+    ax.set_title(figtools.fig_text("FBCF des branches de l'énergie, par base des comptes"), fontsize=10.5)
+    ax.set_ylabel(figtools.fig_text("millions de dinars courants"), fontsize=9)
+    ax.spines[["top", "right"]].set_visible(False)
+    ax.tick_params(labelsize=8)
+    ax.legend(fontsize=7, framealpha=0.9, ncol=2)
+    fig.tight_layout()
+    return fig
+
+
+def vues_fbcf():
+    return [("Deux bases", _fbcf_lignes())]
+
+
+def table_fbcf():
+    import pandas as pd
+    f = fbcf()
+    rows = []
+    for base, branches in f.items():
+        for lib, pts in branches.items():
+            for a in sorted(pts):
+                rows.append({"Base": base, "Branche": lib, "Année": a, "FBCF (MD courants)": pts[a]})
+    return pd.DataFrame(rows)

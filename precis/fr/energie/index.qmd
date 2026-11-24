@@ -9,9 +9,7 @@ Ce volume est une **ébauche** : sa trame et ses premières séries sont établi
 <!-- TODO (rédacteur) : première rédaction. Matière disponible dans l'entrepôt de données :
      états financiers de la STEG 2013-2023 et séries tarifaires (cache : steg-*), rapports
      annuels de l'ETAP 2004-2024 (etap-rapports-annuels), valeur ajoutée par branche
-     2020-2025 (ins-va-branche-base2015), FBCF des entreprises par secteur (comptes de la
-     nation consolidés, bases 1997 et 2015 mêlées dans le relevé : à séparer par base avant
-     usage). -->
+     2020-2025 (ins-va-branche-base2015), FBCF par branche 2005-2025 par base (cnat-fbcf). -->
 
 ## Le périmètre {#sec-energie-perimetre}
 
@@ -52,9 +50,26 @@ La valeur ajoutée de l'énergie passe de 3 663,2 millions de dinars en 2020 (3,
 
 La série ne commence qu'en 2020 : la base 2015 n'est pas publiée par branche avant cette date dans la banque de données de l'INS, et les bases antérieures ne se chaînent pas avec elle (voir [l'annexe sur le PIB](../annexe-pib.html)).
 
-<!-- TODO (données) : valeur ajoutée par branche en base 1997, pour une série longue déclarée
-     par base ; FBCF des branches de l'énergie, séparée par base ; emploi par branche (source
-     à trouver : enquête nationale sur la population et l'emploi de l'INS). -->
+L'investissement des branches de l'énergie se lit sur une période plus longue. La @fig-energie-fbcf donne leur formation brute de capital fixe de 2005 à 2025, en deux segments : la base 1997 jusqu'en 2017, la base 2015 depuis 2015 ; les années 2015 à 2017, publiées dans les deux bases, montrent l'écart de niveau qui interdit de les raccorder.
+
+```{python}
+#| label: fig-energie-fbcf
+#| echo: false
+#| output: asis
+figtools.figure_tabs(
+    en.vues_fbcf(), en.table_fbcf(), "cnat-fbcf",
+    slug="fig_energie_fbcf",
+    caption=("Formation brute de capital fixe des branches de l'énergie, 2005-2025, base 1997 "
+             "(tirets) et base 2015 (traits pleins), millions de dinars courants"),
+    note_lecture=(
+        "Chaque année est lue dans l'édition la plus récente qui l'imprime, base par base. Les deux "
+        "bases ne sont pas raccordées : leurs années communes (2015-2017) se lisent comme un écart."))
+```
+
+Dans la base 2015, la FBCF annuelle de l'extraction du pétrole et du gaz est comprise entre 1 226,2 millions de dinars (2020) et 1 762,8 (2025), celle de l'électricité et du gaz entre 464,0 (2020) et 1 161,2 (2018), celle du raffinage entre 60,3 (2016) et 200,0 (2025) [@ins-cnat-2015]. Dans la base 1997, celle de l'extraction culmine à 2 379,0 en 2008.
+
+<!-- TODO (données) : valeur ajoutée par branche en base 1997 ; emploi par branche (source à
+     trouver : enquête nationale sur la population et l'emploi de l'INS). -->
 
 ## Ce que d'autres livres traitent {#sec-energie-voisinage}
 
