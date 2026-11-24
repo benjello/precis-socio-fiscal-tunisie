@@ -11,8 +11,7 @@ Ce volume est une **ébauche** : sa trame et ses premières séries sont établi
      annuels de l'ETAP 2004-2024 (etap-rapports-annuels), valeur ajoutée par branche
      2020-2025 (ins-va-branche-base2015), FBCF des entreprises par secteur (comptes de la
      nation consolidés, bases 1997 et 2015 mêlées dans le relevé : à séparer par base avant
-     usage). Le chapitre « L'énergie » des « Entreprises publiques » doit rejoindre ce livre
-     (étape a de la restructuration). -->
+     usage). -->
 
 ## Le périmètre {#sec-energie-perimetre}
 
@@ -21,9 +20,10 @@ Le livre suit les trois branches que la nomenclature agrégée des comptes de la
 ## Plan {#sec-energie-plan}
 
 1. **La branche en chiffres** ([section](#sec-energie-chiffres)) : valeur ajoutée, investissement, emploi.
-2. **Les institutions et les entreprises** ([chapitre](./_institutions.html#sec-energie-institutions)) : la tutelle, les entreprises publiques de la branche et leurs comptes.
-3. **La dépense publique** ([chapitre](./_depense.html#sec-energie-depense)) : transferts du budget aux entreprises de la branche, garanties, recettes que l'État en tire.
-4. **Rapports et études** ([chapitre](./_etudes.html#sec-energie-etudes)).
+2. **Les institutions** ([chapitre](./_institutions.html#sec-energie-institutions)) : la tutelle de la branche.
+3. **Les entreprises publiques de l'énergie** ([chapitre](./_energie.html#sec-ep-energie)) : la STEG, l'ETAP, la STIR, la SNDP, la SOTRAPIL et la CTF, leurs textes, leurs comptes et leurs liens avec le budget ; les énergies renouvelables et le photovoltaïque.
+4. **La dépense publique** ([chapitre](./_depense.html#sec-energie-depense)) : transferts du budget aux entreprises de la branche, garanties, recettes que l'État en tire.
+5. **Rapports et études** ([chapitre](./_etudes.html#sec-energie-etudes)).
 
 ## La branche en chiffres {#sec-energie-chiffres}
 
@@ -62,8 +62,7 @@ Un dispositif vit dans un seul livre ; celui-ci en reçoit une phrase et un lien
 
 | Sujet | Domicile | Ce que ce livre en reçoit |
 |---|---|---|
-| Entreprises publiques de l'énergie : statut, comptes, transferts, garanties | « Les entreprises publiques », [chapitre « L'énergie »](../entreprises_publiques/_energie.html#sec-ep-energie) | à terme, le chapitre lui-même (déplacement prévu) |
-| Énergies renouvelables et photovoltaïque | « Les entreprises publiques », [section dédiée](../entreprises_publiques/_energie.html#sec-ep-enr) | un lien |
+| Statut des entreprises publiques, transferts, garanties, cessions (ensemble des entreprises) | « Les entreprises publiques » | des liens depuis le chapitre des entreprises de l'énergie |
 | Prix et subvention de l'électricité et du gaz | « La compensation », [chapitre « L'électricité et le gaz »](../compensation/_electricite_gaz.html#sec-compensation-electricite-gaz) | un lien |
 | Prix, subvention et recettes des carburants | « La compensation », [chapitre « Les carburants »](../compensation/_carburants.html#sec-compensation-carburants-chapitre) | un lien |
 | Dépollution industrielle | « L'environnement », [chapitre « La dépollution et les fonds »](../environnement/_depollution.html#sec-env-depollution) | un lien |
