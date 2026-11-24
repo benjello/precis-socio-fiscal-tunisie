@@ -1,0 +1,94 @@
+---
+title: "Le compte reconstruit des administrations publiques"
+subtitle: "Pilote : les postes de l'ouvrage face au compte des administrations publiques de l'INS, opération par opération, avec le résidu publié"
+lang: fr
+format:
+  html:
+    toc: true
+    page-layout: full
+    include-in-header: ../accueil.html
+bibliography:
+  - references.json
+---
+
+[← Retour à l'accueil](index.html) · [Les comptes de la nation](annexe-comptes-nation.html) · [Les comptes nationaux et les volumes](correspondance-comptes.html)
+
+```{python}
+#| echo: false
+import csv
+from pathlib import Path
+_r = list(csv.DictReader(open("compte-apu-reconstruit.csv", encoding="utf-8")))
+_f = list(csv.DictReader(open("compte-apu-flux.csv", encoding="utf-8")))
+_c = list(csv.DictReader(open("compte-apu-controles.csv", encoding="utf-8")))
+AN, ED = _r[0]["annee"], _r[0]["edition"]
+def n(v):
+    return "" if v in ("", None) else f"{float(v):,.1f}".replace(",", " ").replace(".", ",")
+```
+
+Cette page confronte, pour les administrations publiques, ce que l'ouvrage chiffre dispositif par dispositif au compte que l'INS publie pour ce secteur [@ins-cnat-2015]. Chaque **poste** rattache une section de l'ouvrage à une case des comptes (une opération, un côté, un secteur) ; la page est **engendrée** par `scripts/reconstruire_comptes.py` à partir du registre `postes-comptables.csv` et des séries du cache, sans valeur saisie à la main.
+
+::: {.callout-note}
+Ce compte est un **pilote** : il ne porte que sur les administrations publiques (S13) et leurs sous-secteurs, et seulement sur les dispositifs dont une série est déjà vérifiée. Un dispositif sans série reste rattaché, son montant vide ; il n'est jamais estimé.
+:::
+
+## L'année de référence {#sec-capu-annee}
+
+```{python}
+#| echo: false
+#| output: asis
+print(f"L'année de référence est **{AN}** : c'est la dernière année que l'édition {ED} des comptes de la nation "
+      "imprime comme définitive. Dans l'en-tête des comptes des secteurs, une année sans astérisque est "
+      "définitive ; un astérisque marque une année semi-définitive, deux une année provisoire.")
+```
+
+## Les opérations des administrations publiques {#sec-capu-operations}
+
+Pour chaque opération du compte des administrations publiques consolidées, le tableau donne la valeur de l'INS, la somme des postes de l'ouvrage qui s'y rattachent, le **résidu** (valeur de l'INS moins somme des postes) et la couverture. Une opération agrégée (impôts sur la production et les importations, subventions, revenus de la propriété) somme aussi les postes de ses composantes. Les opérations sans poste chiffré ne sont pas reprises ici ; elles sont dans le fichier `compte-apu-reconstruit.csv`.
+
+```{python}
+#| echo: false
+#| output: asis
+print("| Opération | Côté | INS | Postes | Résidu | Couverture | Résidu nommé |")
+print("|---|---|--:|--:|--:|--:|---|")
+for l in _r:
+    if l["secteur"] == "S13" and l["somme_postes_md"] != "":
+        print(f"| {l['code_scn']} {l['operation'].replace('_', ' ')} | {l['cote']} | {n(l['cible_ins_md'])} | "
+              f"{n(l['somme_postes_md'])} | {n(l['residu_md'])} | {n(l['couverture_pct'])} % | {l['residu_nomme']} |")
+print(f"\n: Compte des administrations publiques consolidées, {AN} : INS et postes de l'ouvrage (millions de dinars courants) {{#tbl-capu-s13}}")
+```
+
+Les budgets de l'État chiffrent l'administration centrale ; les sous-secteurs sont détaillés dans `compte-apu-reconstruit.csv` (S1311 administration centrale, S1313 collectivités locales, S1314 sécurité sociale).
+
+## Qui verse à qui {#sec-capu-flux}
+
+```{python}
+#| echo: false
+#| output: asis
+print("| Poste | Opération | Verse | Reçoit | Montant | Section |")
+print("|---|---|---|---|--:|---|")
+for l in _f:
+    vol, sec = l["section"].split("#")
+    lien = "[" + l["volume"] + "](" + vol + ".html#" + sec + ")"
+    print(f"| {l['poste']} | {l['code_scn']} | {l['verse'].replace(';', ', ')} | {l['recoit'].replace(';', ', ')} | "
+          f"{n(l['montant_md'])} | {lien} |")
+print(f"\n: Les postes du pilote, leurs secteurs et leur section domicile, {AN} (millions de dinars courants ; montant vide : pas de série vérifiée) {{#tbl-capu-flux}}")
+```
+
+## Contrôles {#sec-capu-controles}
+
+```{python}
+#| echo: false
+#| output: asis
+print("| Contrôle | Objet | Écart | Note |")
+print("|---|---|--:|---|")
+for l in _c:
+    print(f"| {l['controle']} | {l['objet'].replace('_', ' ')} | {n(l['ecart_md'])} | {l['note']} |")
+print("\n: Contrôles de la reconstruction (millions de dinars) {#tbl-capu-controles}")
+```
+
+Les écarts connus entre les comptes et le budget — droits sur les importations, impôts courants, formation brute de capital fixe face aux dépenses d'équipement — apparaissent comme des résidus nommés, non corrigés ; ils sont discutés dans [l'annexe sur les comptes de la nation](annexe-comptes-nation.html#sec-cn-recoupements).
+
+## Références {.unnumbered}
+
+::: {#refs}
+:::
