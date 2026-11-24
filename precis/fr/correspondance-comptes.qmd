@@ -1,0 +1,59 @@
+---
+title: "Les comptes nationaux et les volumes"
+subtitle: "Opération par opération et secteur par secteur, le volume qui la documente, ou son absence : version de travail du 24 novembre 2026."
+lang: fr
+format:
+  html:
+    toc: true
+    page-layout: full
+    include-in-header: ../accueil.html
+bibliography:
+  - references.json
+---
+
+[← Retour à l'accueil](index.html) · [Les comptes de la nation](annexe-comptes-nation.html)
+
+Cette page croise les comptes des secteurs institutionnels que publie l'INS avec les volumes de l'ouvrage. Chaque ligne est une opération des comptes, pour un secteur et un côté (emplois ou ressources) : son niveau, pour l'année la plus récente qui soit définitive ou semi-définitive, et le volume qui la documente.
+
+Le rattachement se lit ainsi :
+
+- **domicile** : le volume documente le dispositif qui fait cette opération (la TVA pour la TVA reçue par les administrations, les retraites et les prestations sociales pour les prestations en espèces) ;
+- **en partie** : un volume en traite une part, ou en donne la grandeur budgétaire (la dépense de santé et d'éducation pour la consommation finale des administrations) ;
+- **aucun volume** : l'opération n'est encore documentée nulle part dans l'ouvrage ; c'est la liste des manques ;
+- **solde** : un solde des comptes, qui se lit dans la séquence de l'annexe des comptes de la nation.
+
+Les niveaux sont ceux de la série des comptes des secteurs, vérifiée par recalcul (voir l'annexe [Les comptes de la nation](annexe-comptes-nation.html#sec-cn-comptes-secteurs)) [@ins-cnat-2015]. Le secteur « reste du monde » se lit de son point de vue.
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../scripts")
+from figures import annexe_comptes_nation as acn
+r = acn.correspondance_resume()
+total = sum(r.values())
+print(f"La matrice compte {total} lignes : {r.get('domicile', 0)} ont un volume pour domicile, "
+      f"{r.get('renvoi', 0)} sont traitées en partie, {r.get('solde', 0)} sont des soldes, et "
+      f"{r.get('vide', 0)} ne sont documentées par aucun volume.")
+```
+
+## Les opérations qu'aucun volume ne traite {#sec-cc-vides}
+
+```{python}
+#| echo: false
+#| output: asis
+print(acn.correspondance_md(seulement_vides=True))
+print()
+print(": Opérations des comptes des secteurs qu'aucun volume ne documente encore {#tbl-cc-vides}")
+```
+
+## La matrice, compte par compte {#sec-cc-matrice}
+
+```{python}
+#| echo: false
+#| output: asis
+for i, compte in enumerate(acn.correspondance_comptes(), 1):
+    print(f"\n### {compte}\n")
+    print(acn.correspondance_md(compte))
+    print()
+    print(f": {compte} : opérations, secteurs et volumes {{#tbl-cc-{i}}}")
+```
