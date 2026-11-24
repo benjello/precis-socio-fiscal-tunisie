@@ -7473,3 +7473,223 @@
     المفصّل)، نحو 6,0-6,6 % من الناتج. مُعامِل انكماش القيمة المضافة = الأسعار الجارية
     ÷ أسعار السنة الفارطة.'
   fiche: sources/ins-valeurs-ajoutees-branche.md
+- id: cnat-tof
+  titre: Tableaux des opérations financières (TOF) de l'INS, flux et encours, par
+    sous-secteur et instrument, éditions en base 2015, 2015-2025
+  sources:
+  - ins-cnat-2015
+  build: scripts/extraire_cnat_tof.py:main
+  raw:
+  - data/raw/ins-publications/comptes-de-la-nation
+  output: data/processed/ins-comptes-nationaux/cnat_tof.csv
+  unite: millions de dinars courants
+  perimetre: 'flux nets d''acquisitions d''actifs (créances) et d''engagements (dettes),
+    et encours des créances et des dettes, instruments F1 à F8 et sous-postes, colonnes
+    S12x, S126, S128, S12, S1311, S1313, S1314, S13, S11, S14, S2, TOTAL ; une ligne
+    par (édition, année, tableau, côté, ligne, secteur). Édition 2015-2020 : flux
+    seulement (les encours sont au Volume B, non traité).'
+  caveats: 'VALEURS LUES, JAMAIS CALCULÉES. Colonnes attribuées par position (programmation
+    dynamique), contrôlées par les sommes imposées (scripts/controler_cnat_tof.py)
+    ; sondage exhaustif : chaque ligne retrouvée telle quelle sur sa page (scripts/sonder_cnat_tof.py).
+    Créances = dettes vérifié pour tous les instruments. 110 contrôles de sommes restent
+    en écart, listés dans cnat_tof_controles.csv (statut ecart) : sous-secteurs financiers
+    incohérents avec S12 sur quelques pages, et une ligne imprimée éclatée (édition
+    2015-2020, p. 134, F21). Raccord du solde financier avec les comptes de secteur
+    : à l''arrondi sauf deux cas.'
+  titre_ar: جداول العمليات المالية للمعهد الوطني للإحصاء، التدفقات والأرصدة، حسب القطاع
+    الفرعي والأداة
+  unite_ar: بملايين الدنانير الجارية
+  perimetre_ar: التدفقات والأرصدة للأصول والخصوم المالية، الأدوات F1 إلى F8، حسب القطاعات
+    الفرعية
+  caveats_ar: قيم مقروءة لا محسوبة؛ المراقبات في scripts/controler_cnat_tof.py.
+  fiche: sources/ins-comptes-nationaux-publications.md
+  licences:
+  - 'INS (sources ins-*) : conditions d''utilisation de l''INS, https://ins.tn/en/conditions-utilisation
+    (consultées le 2026-10-27) : réutilisation commerciale et non commerciale, redistribution
+    et transformation autorisées ; citer le producteur et la date de mise à jour,
+    ne pas suggérer une caution officielle ni tromper sur le contenu ; droit tunisien'
+- id: cnat-tre
+  titre: Tableau des ressources et des emplois (TRE) de l'INS, aux prix courants,
+    base 2015, éditions 2015-2020 à 2021-2025
+  sources:
+  - ins-cnat-2015
+  build: scripts/extraire_cnat_tre.py:main
+  raw:
+  - data/raw/ins-publications/comptes-de-la-nation
+  output: data/processed/ins-comptes-nationaux/cnat_tre.csv
+  unite: millions de dinars courants
+  perimetre: 'Une page par année et par édition (31 pages, années 2015 à 2025) : pour
+    chaque produit (code à deux chiffres, corrections CR1 à CR3, totaux), les ressources
+    (production, importations, droits de douane, TVA non déductible, autres impôts
+    sur les produits, subventions, marges commerciales et de transport, correction
+    CAF/FOB, total), la matrice des consommations intermédiaires par branche et les
+    emplois finals (consommation intermédiaire totale, consommation finale des ménages
+    et des administrations, FBCF, variation des stocks, exportations, total) ; en
+    bas de page, le compte de production des branches (production, valeur ajoutée,
+    rémunération des salariés, impôts nets sur la production, EBE). Contrôles dans
+    cnat_tre_controles.csv.'
+  caveats: 'Lu avec les coordonnées des mots (pdftotext -bbox) : chaque nombre est
+    rattaché à la colonne dont l''en-tête est le plus proche ; les milliers imprimés
+    comme un mot distinct, parfois légèrement surélevé, sont recollés. 3 496 contrôles
+    sur 3 507 passent ; les 11 autres sont listés (écarts de 0,6 à 0,9 MD sur la ligne
+    94 des ressources, et quelques nombres dont le chiffre des milliers n''a pas été
+    retrouvé). Base 2015 seulement. Une année publiée par plusieurs éditions garde
+    toutes ses lectures.'
+- id: cnat-fbcf
+  titre: Formation brute de capital fixe par secteur institutionnel, par branche,
+    des entreprises par branche et des administrations publiques par domaine, éditions
+    2005-2009 à 2021-2025
+  sources:
+  - ins-cnat-2015
+  build: scripts/extraire_cnat_fbcf.py:main
+  raw:
+  - data/raw/ins-publications/comptes-de-la-nation
+  output: data/processed/ins-comptes-nationaux/cnat_fbcf.csv
+  unite: millions de dinars courants
+  perimetre: 'Quatre tableaux de FBCF des Comptes de la nation de l''INS, lus dans
+    les PDF de quinze éditions (2005-2009 à 2013-2017 en base 1997, 2015-2020 à 2021-2025
+    en base 2015), années 2005 à 2025. Une ligne par édition, tableau (famille), libellé
+    imprimé et année, avec le statut de l''année (semi-définitif, provisoire) quand
+    l''en-tête le donne, le retrait du libellé et la ligne du texte source. Contrôles
+    dans cnat_fbcf_controles.csv : sous-totaux de chaque tableau et égalités entre
+    tableaux d''une même édition, à l''arrondi de l''INS (0,05 MD par valeur imprimée).'
+  caveats: 'DEUX BASES, JAMAIS CHAÎNÉES : filtrer `base`. Une même année publiée par
+    plusieurs éditions garde toutes ses lectures (révisions) : choisir une édition
+    par point. Les nomenclatures diffèrent (codes B11, G40… en base 1997 ; libellés
+    en base 2015) : aucune table de passage n''est fournie. 1 491 contrôles sur 1
+    500 passent ; les 9 autres sont des écarts de 0,2 à 0,4 MD entre deux tableaux
+    d''une même édition (total par secteur contre total par branche, entreprises contre
+    tableau des entreprises), signalés et non corrigés. Les tableaux par édition relevés
+    plus tôt sous cnat*-tables/ ont perdu les lignes à libellé sur deux lignes (électricité
+    et gaz, eau, textile, matériaux) : sur les 2 463 valeurs communes, ils sont identiques
+    à cette lecture, qui y ajoute les lignes perdues.'
+  fiche: sources/ins-comptes-nationaux-publications.md
+  licences:
+  - 'INS (sources ins-*) : conditions d''utilisation de l''INS, https://ins.tn/en/conditions-utilisation
+    (consultées le 2026-10-27) : réutilisation commerciale et non commerciale, redistribution
+    et transformation autorisées ; citer le producteur et la date de mise à jour,
+    ne pas suggérer une caution officielle ni tromper sur le contenu ; droit tunisien'
+- id: cnat-produits
+  titre: Consommation finale par produit, importations et exportations par produit,
+    aux prix courants, éditions 2005-2009 à 2021-2025
+  sources:
+  - ins-cnat-2015
+  build: scripts/extraire_cnat_produits.py:main
+  raw:
+  - data/raw/ins-publications/comptes-de-la-nation
+  output: data/processed/ins-comptes-nationaux/cnat_produits.csv
+  unite: millions de dinars courants
+  perimetre: 'Trois tableaux des Comptes de la nation de l''INS aux prix courants,
+    lus dans les PDF de quinze éditions (2005-2009 à 2013-2017 en base 1997, 2015-2020
+    à 2021-2025 en base 2015) : la dépense de consommation finale « des ménages »
+    par produit, les importations et les exportations par produit, lignes de correction
+    comprises (correction territoriale, correction CAF/FAB). Contrôles dans cnat_produits_controles.csv
+    : ENSEMBLE égal à la somme des lignes (228 sur 228) et total égal à la ligne des
+    emplois du PIB de la même édition (30 sur 30).'
+  caveats: 'LE TABLEAU « DES MÉNAGES » TOTALISE LA CONSOMMATION FINALE GLOBALE (ménages
+    et administrations publiques) : son ENSEMBLE est égal à la « Consommation finale
+    globale » des emplois du PIB, non à la « Consommation privée » ; il comprend administration,
+    enseignement, santé. Pour la consommation des seuls ménages, prendre la P.3 des
+    comptes de secteur. DEUX BASES, JAMAIS CHAÎNÉES : filtrer `base`. Une année publiée
+    par plusieurs éditions garde toutes ses lectures. Ligne « Services non marchands
+    » des importations de 2005-2009 et 2008-2012 : valeurs nulles imprimées sur une
+    partie des colonnes seulement, non versées.'
+  fiche: sources/ins-comptes-nationaux-publications.md
+  licences:
+  - 'INS (sources ins-*) : conditions d''utilisation de l''INS, https://ins.tn/en/conditions-utilisation
+    (consultées le 2026-10-27) : réutilisation commerciale et non commerciale, redistribution
+    et transformation autorisées ; citer le producteur et la date de mise à jour,
+    ne pas suggérer une caution officielle ni tromper sur le contenu ; droit tunisien'
+- id: cnat-produits-volume
+  titre: Consommation finale, importations et exportations par produit aux prix de
+    l'année précédente, éditions 2005-2009 à 2021-2025
+  sources:
+  - ins-cnat-2015
+  build: scripts/extraire_cnat_produits_volume.py:main
+  raw:
+  - data/raw/ins-publications/comptes-de-la-nation
+  output: data/processed/ins-comptes-nationaux/cnat_produits_volume.csv
+  unite: millions de dinars aux prix de l'année précédente
+  perimetre: 'Pendant des tableaux de cnat-produits aux prix de l''année précédente
+    (« prix constants de l''année précédente » dans les éditions anciennes, « en volume
+    » dans l''édition 2015-2020) : quinze éditions, trois tableaux. Contrôles dans
+    cnat_produits_volume_controles.csv : ENSEMBLE égal à la somme des lignes (225
+    sur 225) ; indice de prix implicite (prix courants / prix de l''année précédente,
+    même édition) entre 0,5 et 2 pour 4 284 lignes.'
+  caveats: 'NE SE CHAÎNE PAS EN NIVEAU : chaque année est évaluée aux prix de l''année
+    d''avant ; diviser par la valeur courante de l''année précédente donne une croissance
+    en volume. Le tableau « des ménages » totalise la consommation finale globale
+    (voir cnat-produits). DEUX BASES, JAMAIS CHAÎNÉES. 36 indices de prix implicites
+    hors de 0,5-2, listés (catégorie hors_plage) : imprimés à l''identique d''une
+    édition à l''autre (mines et chimie en 2008, électricité importée en 2022, produits
+    miniers importés en 2023…), donc lus fidèlement ; mouvements de prix exceptionnels
+    ou lignes de faible volume, non corrigés.'
+  fiche: sources/ins-comptes-nationaux-publications.md
+  licences:
+  - 'INS (sources ins-*) : conditions d''utilisation de l''INS, https://ins.tn/en/conditions-utilisation
+    (consultées le 2026-10-27) : réutilisation commerciale et non commerciale, redistribution
+    et transformation autorisées ; citer le producteur et la date de mise à jour,
+    ne pas suggérer une caution officielle ni tromper sur le contenu ; droit tunisien'
+- id: bct-pib-emplois-long
+  titre: PIB aux prix courants et emplois du PIB, série rétrospective de la BCT, 1974-2025
+    (relais de l'INS)
+  sources:
+  - bct-stat-comptes-nation
+  build: scripts/bct_pib_emplois_long.py:main
+  raw:
+  - data/raw/bct-comptes-nationaux-stat
+  output: data/processed/bct/bct_pib_emplois_long.csv
+  unite: 'millions de dinars courants (prix constants : base 100 = 1990)'
+  perimetre: portail statistique de la BCT, série rétrospective des tableaux PL203150
+    (PIB aux prix courants et constants) et PL203180 (consommation privée et publique,
+    FBCF et sa ventilation, variation des stocks, exportations, importations), 1974-2025,
+    relevée le 2026-11-24
+  caveats: 'RELAIS DE L''INS : la BCT accole les bases de l''INS sans rétropoler (base
+    1983 reproduite pour 1992-1996, base 1997 pour 1997-2009, base 2015 pour 2010-2022,
+    établi par comparaison à 0,5 MD près avec les PIB de l''INS par base) ; avant
+    1992 et après 2022, base non établie. Là où l''INS publie, son chiffre prime.
+    Une case affichée 0,0 est tenue pour non publiée. Identité des emplois vérifiée
+    à l''arrondi pour 48 années sur 51 ; écarts listés (1994, 2010, 2013).'
+  titre_ar: الناتج المحلي الإجمالي واستخداماته، السلسلة الاسترجاعية للبنك المركزي،
+    1974-2025
+  unite_ar: بملايين الدنانير الجارية
+  perimetre_ar: السلسلة الاسترجاعية للجدولين PL203150 وPL203180 من البوابة الإحصائية
+    للبنك المركزي التونسي
+  caveats_ar: سلسلة ناقلة لأرقام المعهد الوطني للإحصاء تجمع أسسه دون إعادة احتساب؛
+    أرقام المعهد هي المرجع حيث تتوفر.
+  fiche: sources/bct-archives.md
+- id: echanges-rapprochement
+  titre: 'Échanges extérieurs : comptes nationaux de l''INS, statistiques douanières
+    (INS, BCT) et balance des paiements de la BCT, rapprochés, 2005-2025'
+  sources:
+  - ins-cnat-2015
+  - ins-annuaire
+  - bct-ra-2024
+  build: scripts/rapprocher_echanges.py:main
+  raw:
+  - data/raw/bct-publications/RA_fr.pdf
+  output: data/processed/echanges/echanges_rapprochement.csv
+  unite: millions de dinars courants
+  perimetre: 'Une ligne par (année, flux, source, périmètre), trois familles jamais
+    fondues : (1) comptes nationaux (cnat-produits, édition la plus récente qui imprime
+    l''année) : biens et services, et biens seuls (lignes de produits agricoles, miniers,
+    industriels, d''électricité et d''eau, hors corrections) ; (2) douane, exportations
+    FOB et importations CAF : INS, Annuaire, tableau 14.2 (ins-commerce-exterieur-par-regime),
+    et BCT, Rapport annuel 2024, tableau 3-2 (2020-2024) ; (3) balance des paiements
+    MBP6 : BCT, Rapport annuel 2024, tableau 3-11 (2023-2024), biens, services, total.
+    Écart à la référence comptes nationaux de même périmètre ; contrôles dans echanges_rapprochement_controles.csv
+    (douane BCT = douane INS, 8 sur 8 ; biens + services = total de la balance des
+    paiements, 4 sur 4).'
+  caveats: 'ÉCARTS DE PÉRIMÈTRE DÉCLARÉS, NON CORRIGÉS. (a) Douane et biens des comptes
+    nationaux : à ±0,3 % en base 1997 (2006-2014) ; en base 2015, importations des
+    comptes 1,8 à 3,5 % au-dessus de la douane (lignes de produits avant la correction
+    CAF/FAB, portée en une ligne globale), exportations 0,2 à 1,8 % au-dessus ; 2005
+    (édition 2005-2009) : +11 % et +7 %, à expliquer. (b) Balance des paiements et
+    comptes nationaux : environ −22 % en 2023-2024 sur biens et services ; le MBP6
+    compte le travail à façon NET, en service (« services de fabrication… », 14 428
+    MD de crédits en 2023), là où la douane et les comptes nationaux enregistrent
+    les biens transformés en brut ; les biens de la balance des paiements (28 082
+    MD d''exportations en 2023) ne se comparent donc pas aux exportations douanières
+    (62 077 MD). Un seul rapport annuel de la BCT est lu : 2020-2024 pour la douane,
+    2023-2024 pour la balance des paiements. Le fichier data/processed/bct/balance_commerciale.csv,
+    sans script ni fiche et aux lignes mensuelles décalées, n''est pas utilisé.'
