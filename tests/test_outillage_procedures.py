@@ -50,3 +50,7 @@ def test_ecrire_serie(tmp_path):
     assert (tmp_path / "c.csv").read_text("utf-8").startswith("annee,valeur")
     with pytest.raises(ValueError):
         cs.ecrire_serie("d", [{"x": 1}], {"titre": "D"}, cache=tmp_path)
+
+
+def test_espace_echappee():
+    assert rem.motif_tolerant(r"ce\ précis").search("ce\u00a0précis")

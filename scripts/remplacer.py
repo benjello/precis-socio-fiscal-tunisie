@@ -34,7 +34,7 @@ ESPACES = "[ \u00a0\u202f]"
 
 
 def motif_tolerant(motif: str) -> re.Pattern:
-    return re.compile(motif.replace(" ", ESPACES).replace(r"\ ", ESPACES))
+    return re.compile(motif.replace(r"\ ", " ").replace(" ", ESPACES))
 
 
 def fichiers(globs: list[str], exclus: list[str]) -> list[Path]:
