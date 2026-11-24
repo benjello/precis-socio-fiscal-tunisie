@@ -113,9 +113,11 @@ Trois grands tableaux ferment le système [@ins-scnt97-presentation, p. 1 et pp.
 
 ## Les comptes, désagrégés par secteur {#sec-cn-comptes-secteurs}
 
-La séquence que l'on vient de parcourir vaut pour chaque **secteur institutionnel** pris à part : les sociétés non financières, les sociétés financières, les administrations publiques, les ménages, et le reste du monde en miroir. Le navigateur ci-dessous la déroule, année par année (chacune dans sa base des comptes, la plus récente qui la couvre, étiquetée), compte par compte, secteur par secteur, dans la présentation de l'INS. On lit en italique les **soldes** — la valeur ajoutée, le revenu d'exploitation, le solde des revenus primaires, le revenu disponible brut, l'épargne, la capacité ou le besoin de financement — chacun reporté en tête du compte suivant. Les valeurs sont celles des comptes de l'INS, lues telles quelles (les soldes ne sont pas recalculés).
+La séquence que l'on vient de parcourir vaut pour chaque **secteur institutionnel** pris à part : les sociétés non financières, les sociétés financières, les administrations publiques, les ménages, et le reste du monde en miroir. Le navigateur ci-dessous la déroule, année par année (chacune dans sa base des comptes, la plus récente qui la couvre, étiquetée), compte par compte, secteur par secteur, dans la présentation de l'INS. On lit en italique les **soldes** — la valeur ajoutée, le revenu d'exploitation, le solde des revenus primaires, le revenu disponible brut, l'épargne, la capacité ou le besoin de financement — chacun reporté en tête du compte suivant. Pour les années en base 2015, chaque opération est donnée de ses deux côtés, emplois et ressources, comme l'INS la publie. Les valeurs sont celles des comptes de l'INS, lues telles quelles ; les soldes ne sont pas recalculés pour l'affichage, mais ils ont été vérifiés (voir ci-dessous).
 
-Trois lectures que ce tableau rend immédiates : le **revenu mixte** des ménages gonfle leur revenu d'exploitation, bien au-delà des sociétés (voir l'[approche revenus](#sec-cn-approches)) ; les **administrations publiques** portent l'essentiel des prestations sociales et un besoin de financement négatif qui est le déficit public au sens des comptes, à **périmètre consolidé** (central + local + sécurité sociale), distinct des [périmètres budgétaires](#sec-cn-concordance) ; le **reste du monde** n'a que les opérations qui le lient aux résidents, d'où ses lignes vides. Le curseur ci-dessous déroule la séquence, chaque année dans sa base (les bases ne se chaînent pas : une année est un instantané). Le **revenu disponible brut** des ménages n'est pas porté pour 2020-2023 (ligne absente de l'édition INS qui couvre ces années) ; son épargne et sa consommation finale, elles, le sont.
+Trois lectures que ce tableau rend immédiates : le **revenu mixte** des ménages gonfle leur revenu d'exploitation, bien au-delà des sociétés (voir l'[approche revenus](#sec-cn-approches)) ; les **administrations publiques** portent l'essentiel des prestations sociales et un besoin de financement négatif qui est le déficit public au sens des comptes, à **périmètre consolidé** (central + local + sécurité sociale), distinct des [périmètres budgétaires](#sec-cn-concordance) ; le **reste du monde** n'a que les opérations qui le lient aux résidents, d'où ses lignes vides. Le curseur ci-dessous déroule la séquence, chaque année dans sa base (les bases ne se chaînent pas : une année est un instantané). Pour les années en base 1997 (2005-2014), seuls les soldes, la consommation finale et la formation brute de capital fixe sont repris : la série de ces années ne distingue pas les emplois des ressources.
+
+**Des comptes vérifiés.** Pour les six éditions en base 2015 (2015-2020 à 2021-2025), chaque opération de répartition a été rapprochée entre secteurs (le total des emplois égale celui des ressources), chaque solde a été recalculé à partir des opérations, les sous-secteurs ont été sommés face à leur secteur, et le PIB a été retrouvé à partir des valeurs ajoutées et des impôts nets sur les produits. Sur 2 046 contrôles, 1 983 tombent dans l'arrondi des valeurs publiées (0,05 MD par valeur en jeu) ; 62 s'expliquent par deux traits de la présentation de l'INS (le reste du monde ne ventile pas en salaires et cotisations la rémunération qu'il verse et reçoit ; les administrations publiques portent une « correction SIFIM » à côté de leurs intérêts versés) ; un écart de 0,5 MD sur les autres transferts courants divers de 2023, dans l'édition 2019-2023, est propre à la publication [@ins-cnat-2015].
 
 ```{python}
 #| echo: false
@@ -157,15 +159,15 @@ sequenceTable = {
     }
   }
   return html`<div class="comptes-nav">
-    <div class="comptes-titre">La séquence des comptes par secteur — <b>${anneeSeq}</b>, base ${base}, en millions de dinars</div>
+    <div class="comptes-titre">La séquence des comptes par secteur — <b>${anneeSeq}</b>, base ${base}${(sequence.editionAnnee || {})[String(anneeSeq)] ? `, édition ${sequence.editionAnnee[String(anneeSeq)]}` : ""}, en millions de dinars</div>
     <table class="table-comptes table-sequence"><thead>${entete}</thead><tbody>${corps}</tbody></table>
-    <div class="comptes-note">Soldes en italique, reportés en tête du compte suivant ; valeurs lues dans les comptes de l'INS, non recalculées.
-      Administrations publiques <b>consolidées</b> (central + local + sécurité sociale). Les lignes de distribution
-      secondaire et au-delà du compte des <b>ménages</b> (revenu disponible, épargne, capacité de financement) ne sont
-      pas reportées : les prestations sociales reçues n'y sont pas captées par les tables disponibles, ce qui
-      sous-estimerait le revenu disponible. Chaque année est un instantané dans <b>sa</b> base (la plus récente qui
-      la couvre, affichée ci-dessus) ; les bases 1997 et 2015 ne se chaînent pas (voir les <a href="annexe-pib.html#sec-pib-bases">bases du PIB</a>).
-      Source : INS, <i>Comptes de la nation</i> [@ins-cnat-2015].</div>
+    <div class="comptes-note">Soldes en italique, reportés en tête du compte suivant ; valeurs lues dans les comptes de l'INS.
+      Administrations publiques <b>consolidées</b> (central + local + sécurité sociale). La colonne du <b>reste du monde</b>
+      se lit de son point de vue : ce qu'il reçoit des résidents figure en ressources, ce qu'il leur verse en emplois.
+      Pour une année, l'édition la plus récente qui la porte (affichée ci-dessus) ; la dernière année d'une édition est
+      provisoire. Chaque année est un instantané dans <b>sa</b> base ; les bases 1997 et 2015 ne se chaînent pas (voir les
+      <a href="annexe-pib.html#sec-pib-bases">bases du PIB</a>). Années en base 1997 : soldes, consommation finale et FBCF seulement.
+      Source : INS, <i>Comptes de la nation</i> [@ins-cnat-2015].</div>
   </div>`;
 }
 ```
@@ -181,6 +183,31 @@ table.table-sequence th.num{text-align:right}
 ```
 
 :::
+
+## Les comptes des administrations face au budget de l'État {#sec-cn-recoupements}
+
+Les volumes de l'ouvrage chiffrent les dispositifs avec des séries budgétaires : ce que le budget de l'État encaisse ou dépense. Les comptes de la nation décrivent les mêmes flux pour l'ensemble des administrations publiques, en droits constatés. Le tableau ci-dessous rapproche, année par année, six grandeurs des comptes et la série budgétaire correspondante ; il donne l'écart en pourcentage de la série budgétaire. Un écart stable dit une différence de périmètre, non une erreur de l'une ou de l'autre source.
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../scripts")
+from figures import annexe_comptes_nation as acn
+print(acn.recoupements_md())
+print()
+print(": Écart entre les comptes des administrations publiques et la série budgétaire de l'État, en % de la série budgétaire, base 2015 {#tbl-cn-recoupements}")
+```
+
+Ce que chaque ligne rapproche :
+
+- **TVA** : la TVA non déductible reçue par les administrations publiques, face à la TVA encaissée par le budget de l'État [@minfin-recettes-fiscales]. Les deux concordent à 2,5 % près chaque année.
+- **Droits et impôts sur les importations** : les droits et impôts sur les importations hors TVA des comptes, face aux droits de douane du budget [@minfin-recettes-fiscales]. L'écart, d'un quart environ, est stable sur toute la période.<!-- TODO (documentaliste) : établir, dans la note méthodologique de la base 2015, ce que les comptes rangent dans « droits et impôts sur les importations (hors TVA) » au-delà des droits de douane du budget. -->
+- **Impôts courants sur le revenu et le patrimoine** : face à l'impôt sur le revenu et à l'impôt sur les sociétés encaissés par l'État [@minfin-recettes-fiscales]. L'écart change de signe d'une année à l'autre et reste, sauf en 2018, 2019 et 2025, sous 6 %.<!-- TODO (documentaliste) : vérifier si l'écart tient au moment d'enregistrement (droits constatés face aux encaissements) ou au périmètre (impôts perçus par d'autres administrations). -->
+- **Subventions sur les produits** : face à la dépense budgétaire de compensation (produits de base, carburants, transport), dont les sources sont détaillées au chapitre [La dépense budgétaire](compensation/_depense.html) du volume Compensation. Les comptes portent toutes les subventions sur les produits ; les écarts les plus forts (2018-2019, 2020, 2022) tombent les années où la dépense de compensation a le plus varié.
+- **Rémunération des salariés** : celle des administrations publiques consolidées, cotisations des employeurs comprises, face aux dépenses de rémunération du budget de l'État [@minfin-repartition-depenses-xls]. Les comptes y ajoutent les collectivités locales, la sécurité sociale et les cotisations imputées ; l'écart va de 5,8 à 9,5 % selon les années.
+- **FBCF** : la formation brute de capital fixe des administrations publiques, face aux dépenses d'équipement du budget [@minfin-repartition-depenses-xls]. L'écart se creuse à partir de 2019 et dépasse 40 % de 2021 à 2023.<!-- TODO (documentaliste) : rapprocher la nomenclature des dépenses d'équipement de la FBCF des comptes (part des dépenses d'équipement qui n'est pas de la formation de capital). -->
+
+Les valeurs des deux familles, année par année, sont dans la série `cnat-recoupements` ; celles des comptes viennent de l'INS [@ins-cnat-2015].
 
 ## Les trois approches du PIB {#sec-cn-approches}
 
@@ -350,6 +377,8 @@ Cette table relie chaque volume du précis à la « case » des comptes où sa g
 : Concordance entre les volumes du précis et les comptes de la nation, niveaux 2021, base 2015 {#tbl-cn-concordance}
 
 Sources : [@ins-cnat-2015, éd. 2019-2023, p. 27, p. 55, p. 69, p. 100 et pp. 101-102].
+
+Cette table ne retient que six grandeurs. La correspondance complète, opération par opération, secteur par secteur et côté par côté, avec les opérations qu'aucun volume ne documente encore, est sur la page [Les comptes nationaux et les volumes](correspondance-comptes.html).
 
 ## Ce que les comptes ne disent pas {#sec-cn-limites}
 
