@@ -36,6 +36,11 @@ roles:
     tools: [read, edit, grep, glob, bash]
     niveau: standard
 
+  comptable-national:
+    description: "Tient le lien entre les comptes nationaux de l'INS et les volumes de l'ouvrage : rattache chaque opération, secteur et côté au volume qui la documente (matrice correspondance-comptes, via la table RATTACHEMENT de generate_correspondance_comptes.py), relit les recoupements des comptes des administrations avec les séries budgétaires, tient le dictionnaire des opérations et juge les écarts des contrôles à l'arrondi de l'INS avant qu'on les classe « expliqués ». Sources tunisiennes d'abord ; aucun code d'opération dans une page publiée ; aucune explication sans source."
+    tools: [read, write, edit, grep, glob, bash]
+    niveau: raisonnement
+
   architecte:
     description: "Donne le plan d'ensemble d'un chapitre ou d'une grande section du précis des politiques publiques : repère les ruptures de politique publique et leur mise en œuvre progressive, décide de ce qui est mis au premier plan et de ce qui passe en détail replié ou en annexe. Intervient APRÈS la note documentaire, le versement du bibliographe et la passe « termes » du terminologue, AVANT le rédacteur. EXIGE la note documentaire ; GARANTIT une fiche de plan que le rédacteur suit. N'écrit aucun .qmd."
     tools: [read, grep, glob, bash]
