@@ -9,11 +9,20 @@ from __future__ import annotations
 
 import json
 import re
+from pathlib import Path
 import sys
 
 LIVRES = ("caisses", "compensation", "cotisations_sociales", "entreprises_publiques",
           "finances_locales", "fiscalite", "marche_travail", "prestations_sociales",
-          "remunerations_publiques", "retraites", "sante", "education", "informel")
+          "remunerations_publiques", "retraites", "sante", "education", "informel",
+          "transport", "environnement", "agriculture")
+# Les pages générales, rendues une à une par build.sh (`PAGES`) : à tenir dans le même ordre.
+PAGES_GENERALES = ("index", "comment-lire", "comment-constitue", "a-propos", "principes-structure",
+                   "annexe-pib", "annexe-budget-etat", "annexe-dette-publique", "annexe-sources",
+                   "annexe-comptes-nation", "index-institutions", "parcours-atmp",
+                   "correspondance-instruments", "correspondance-comptes")
+RE_PAGE_GENERALE = re.compile(r"^precis/(fr|ar)/([^/]+)\.qmd$")
+RE_FIGURE_DE_PAGE = re.compile(r"^precis/(fr|ar)/figures/([^/]+)\.py$")
 
 # Un fichier sous ces préfixes touche potentiellement TOUS les livres : les
 # modules Python que les figures importent (`from figures import …` mis à part —
@@ -55,12 +64,73 @@ def livres_touches(fichiers: list[str]) -> list[str]:
         f = f.strip()
         if not f:
             continue
+        m = RE_PAGE_GENERALE.match(f)
+        if m and m.group(2) in PAGES_GENERALES:
+            continue  # une page générale se rend à part (pages_generales_touchees), pas les livres
         if f.startswith(PREFIXES_PARTAGES) or RE_FICHIER_DE_LANGUE.match(f):
             return sorted(LIVRES)
         m = RE_FICHIER_DE_LIVRE.match(f)
         if m and m.group(1) in LIVRES:
             touches.add(m.group(1))
     return sorted(touches)
+
+
+def pages_generales_touchees(fichiers: list[str]) -> list[str]:
+    """Les pages générales à rendre, « langue/page », déduites des chemins modifiés.
+
+    Une page générale `precis/<langue>/<page>.qmd` modifiée se rend elle-même. Un module de
+    figures `precis/<langue>/figures/<nom>.py` fait rendre les pages générales de la même langue
+    qui l'importent (`from figures import <nom>`). Les livres, eux, se rendent par
+    `livres_touches`.
+    """
+    racine = Path(__file__).resolve().parent.parent
+    pages: set[str] = set()
+    for f in (x.strip() for x in fichiers):
+        m = RE_PAGE_GENERALE.match(f)
+        if m and m.group(2) in PAGES_GENERALES:
+            pages.add(f"{m.group(1)}/{m.group(2)}")
+            continue
+        m = RE_FIGURE_DE_PAGE.match(f)
+        if m:
+            langue, module = m.groups()
+            for page in PAGES_GENERALES:
+                qmd = racine / "precis" / langue / f"{page}.qmd"
+                if qmd.exists() and re.search(rf"from figures import [^\n]*\b{re.escape(module)}\b",
+                                              qmd.read_text(encoding="utf-8")):
+                    pages.add(f"{langue}/{page}")
+    return sorted(pages)
+
+
+def nettoyage_apres_rendu(avant_modifies: list[str], apres_modifies: list[str],
+                          avant_non_suivis: list[str], apres_non_suivis: list[str],
+                          livres_sources_touchees: list[str]) -> tuple[list[str], list[str]]:
+    """(figdata à restaurer, figdata non suivis à supprimer) après un rendu.
+
+    Un rendu réécrit des `figdata` (CSV et sidecar) : c'est voulu quand les sources du livre ont
+    changé, c'est du bruit quand le livre n'a été rendu qu'à cause d'un fichier partagé. On ne
+    touche donc qu'aux figdata qui étaient PROPRES avant le rendu (ni modifiés, ni non suivis), et
+    seulement dans un livre dont aucune source n'a changé. Tout le reste est laissé tel quel.
+    """
+    def livre(chemin: str) -> str | None:
+        m = RE_FICHIER_DE_LIVRE.match(chemin)
+        return m.group(1) if m else None
+
+    garde = set(livres_sources_touchees)
+    restaurer = [f for f in apres_modifies
+                 if "/figdata/" in f and f not in set(avant_modifies) and livre(f) not in garde]
+    supprimer = [f for f in apres_non_suivis
+                 if "/figdata/" in f and f not in set(avant_non_suivis) and livre(f) not in garde]
+    return sorted(restaurer), sorted(supprimer)
+
+
+def livres_sources_touchees(fichiers: list[str]) -> list[str]:
+    """Les livres dont un fichier propre (hors figdata) figure parmi les chemins modifiés."""
+    livres: set[str] = set()
+    for f in (x.strip() for x in fichiers):
+        m = RE_FICHIER_DE_LIVRE.match(f)
+        if m and "/figdata/" not in f:
+            livres.add(m.group(1))
+    return sorted(livres)
 
 
 FICHIERS_DE_LIVRE_GLOBAUX = ("_glossaire.qmd", "_glossaire.infobulles.html", "index.qmd")
@@ -188,6 +258,20 @@ def _cli(argv: list[str]) -> int:
         livres = livres_touches(fichiers)
         if livres:
             print("\n".join(livres))
+        return 0
+    if commande == "pages-touchees":
+        pages = pages_generales_touchees([l for l in entree.splitlines() if l.strip()])
+        if pages:
+            print("\n".join(pages))
+        return 0
+    if commande == "nettoyage":
+        # entrée : JSON {"avant_modifies": [...], "apres_modifies": [...], "avant_non_suivis": [...],
+        #                "apres_non_suivis": [...], "fichiers_diff": [...]}
+        d = json.loads(entree)
+        restaurer, supprimer = nettoyage_apres_rendu(
+            d["avant_modifies"], d["apres_modifies"], d["avant_non_suivis"], d["apres_non_suivis"],
+            livres_sources_touchees(d["fichiers_diff"]))
+        print(json.dumps({"restaurer": restaurer, "supprimer": supprimer}))
         return 0
     if commande == "citations":
         print(compter_citations_non_resolues(entree))
