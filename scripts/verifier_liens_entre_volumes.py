@@ -52,9 +52,28 @@ def identifiant_pandoc(titre: str) -> str:
     return t or "section"
 
 
+IMPORT_FIGURES = re.compile(r"from figures(?:\.ep)? import (\w+) as (\w+)")
+
+
+def identifiants_par_defaut(qmd: Path, texte: str) -> set[str]:
+    """Étiquettes posées par défaut par les fonctions de figures appelées dans la page
+    (`def tableau_x(caption, tbl_id: str = "tbl-…")`) : elles n'apparaissent pas dans le `.qmd`."""
+    ids = set()
+    for module, alias in IMPORT_FIGURES.findall(texte):
+        candidats = [qmd.parent / "figures" / f"{module}.py",
+                     qmd.parent.parent / "entreprises_publiques" / "figures" / f"{module}.py"]
+        src = next((c.read_text(encoding="utf-8") for c in candidats if c.exists()), "")
+        for fonction in set(re.findall(rf"\b{re.escape(alias)}\.(\w+)\(", texte)):
+            m = re.search(rf"def {re.escape(fonction)}\((.*?)\)\s*(?:->[^:]*)?:", src, re.S)
+            if m:
+                ids |= set(re.findall(r"(?:tbl|fig)_id\s*(?::\s*str(?:\s*\|\s*None)?)?\s*=\s*[\"']([^\"']+)[\"']", m.group(1)))
+    return ids
+
+
 def identifiants(qmd: Path) -> set[str]:
     texte = qmd.read_text(encoding="utf-8")
     ids = set(ID_ACCOLADE.findall(texte)) | set(LABEL.findall(texte)) | set(CHAINE.findall(texte))
+    ids |= identifiants_par_defaut(qmd, texte)
     for _, titre in TITRE.findall(texte):
         if "{#" not in titre:
             ids.add(identifiant_pandoc(titre))
