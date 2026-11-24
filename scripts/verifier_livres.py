@@ -245,7 +245,9 @@ def compter_citations_non_resolues(html: str) -> int:
     le point d'interrogation. `[^<]+` (un ou plus, pas `*`) exclut donc ce seul
     cas légitime sans liste d'exceptions ad hoc.
     """
-    return len(re.findall(r"<strong>[^<]+\?</strong>", html))
+    # Une clé de citation n'a pas d'espace : un titre en gras qui finit par « ? » (« …quelles
+    # perspectives ? », annexe des sources) n'est pas une citation non résolue.
+    return len(re.findall(r"<strong>[^<\s]+\?</strong>", html))
 
 
 def compter_arobases_cassees(html: str) -> int:
@@ -257,7 +259,9 @@ def compter_arobases_cassees(html: str) -> int:
     motif d'échappement d'URL (constaté dans `anchor.min.js`), sans rapport
     avec une citation.
     """
-    return html.count("?@")
+    # Une page rendue autonome embarque la bibliothèque JS (motif `?@` d'échappement d'URL) :
+    # on ne compte que hors des blocs <script>.
+    return re.sub(r"<script\b.*?</script>", "", html, flags=re.S).count("?@")
 
 
 def compter_renvois_casses(html: str) -> int:
