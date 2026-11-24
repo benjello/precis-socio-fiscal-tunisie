@@ -54,6 +54,7 @@ BOOKS = [
     "informel",
     "transport",
     "environnement",
+    "cadre",
     "agriculture",
 ]
 
