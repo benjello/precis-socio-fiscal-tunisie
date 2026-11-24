@@ -7408,3 +7408,32 @@
     إيرادات النظام ونفقاته في منشورات الصندوق، ولا يطابق عدد المنتفعين أيّ عدد نشره
     الصندوق. أرقام 2020 وقتية. وثيقة برمجة مشروع تعاون لا نشرية إحصائية.
   fiche: sources/ue-jumelage-retraite-2021.md
+- id: cnat-secteurs
+  titre: Comptes des secteurs et sous-secteurs institutionnels, emplois et ressources
+    (INS, comptes de la nation, base 2015)
+  sources:
+  - ins-cnat-2015
+  source_ligne: 'INS, Les comptes de la nation, éditions 2015-2020 à 2021-2025 : comptes
+    des sociétés non financières, des sociétés financières (institutions de crédit,
+    assurances, auxiliaires), des administrations publiques (administration centrale,
+    collectivités locales, sécurité sociale), des ménages (dont entreprises individuelles)
+    et du reste du monde, emplois et ressources ; pour chaque année, l''édition la
+    plus récente.'
+  unite: millions de dinars courants
+- id: cnat-secteurs-controles
+  titre: Contrôles arithmétiques des comptes des secteurs institutionnels (équilibre
+    des opérations, soldes, consolidation, PIB)
+  sources:
+  - ins-cnat-2015
+  source_ligne: Calculs sur les comptes des secteurs de l'INS (éditions en base 2015),
+    seuil 0,5 MD ; écarts expliqués ligne par ligne.
+  unite: millions de dinars courants
+- id: cnat-recoupements
+  titre: Comptes des administrations publiques face aux séries budgétaires de l'État
+    (TVA, douane, impôts sur le revenu, compensation, rémunérations, équipement)
+  sources:
+  - ins-cnat-2015
+  source_ligne: Comparaison, année par année, de la série cnat-secteurs (INS) et des
+    séries budgétaires du cache (ministère des Finances) ; écart = comptes − budget,
+    périmètres déclarés paire par paire.
+  unite: millions de dinars courants
