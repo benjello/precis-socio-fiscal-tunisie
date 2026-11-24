@@ -1,11 +1,29 @@
 # La dépense publique {#sec-energie-depense}
 
 ::: {.callout-note}
-Chapitre en **ébauche** : sa trame est posée, sa rédaction reste à faire.
+Chapitre en **ébauche** : une première série est versée, la rédaction reste à faire.
 :::
 
-Ce chapitre rassemblera les flux entre le budget de l'État et la branche : transferts aux entreprises publiques de l'énergie, garanties accordées à leurs emprunts, dividendes et redevances perçus. La subvention des prix de l'énergie est exposée dans « La compensation », chapitres [« L'électricité et le gaz »](../compensation/_electricite_gaz.html#sec-compensation-electricite-gaz) et [« Les carburants »](../compensation/_carburants.html#sec-compensation-carburants-chapitre).
+Ce chapitre rassemblera les flux entre le budget de l'État et la branche. Le premier est le transfert du budget à deux entreprises publiques de la branche, la Société tunisienne des industries de raffinage (STIR) et la Société tunisienne de l'électricité et du gaz (STEG). La @fig-energie-transferts en donne le montant de 2017 à 2024, tel que l'imprime le rapport sur les entreprises publiques annexé à la loi de finances [@minfin-transferts-garanties]. Les transferts sont exposés dans « Les entreprises publiques », [chapitre « Les transferts du budget »](../entreprises_publiques/_transferts.html#sec-ep-transferts) ; ce qu'ils financent, dans « La compensation », [chapitre « La dépense budgétaire »](../compensation/_depense.html#sec-compensation-longue-periode).
 
-<!-- TODO (rédacteur) : séries disponibles dans l'entrepôt : transferts du budget par
-     établissement 2017-2024, garanties de l'État 2016-2024, dividendes versés à l'État
-     2017-2023 (entreprises-publiques/) ; en retenir les lignes de la branche. -->
+```{python}
+#| label: fig-energie-transferts
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import energie as en
+import figtools
+figtools.figure_tabs(
+    en.vues_transferts(), en.table_transferts(), "entreprises-publiques-transferts-par-etablissement",
+    slug="fig_energie_transferts",
+    caption="Transferts du budget à la STIR et à la STEG, 2017-2024 (millions de dinars courants ; 2024 : loi de finances)",
+    note_lecture=(
+        "Chaque barre est la somme des lignes STIR et STEG du tableau des transferts ; les années 2017 "
+        "à 2023 sont des réalisations, 2024 le montant voté (barre grise)."))
+```
+
+Ces transferts passent de 1 550,0 millions de dinars en 2017 à 7 628,0 en 2022, puis 7 030,0 en 2023 ; la loi de finances de 2024 en prévoit 7 086,0 [@minfin-transferts-garanties].
+
+<!-- TODO (rédacteur) : garanties de l'État aux emprunts des entreprises de l'énergie ;
+     dividendes et redevances perçus (ETAP, SNDP : entreprises-publiques-dividendes-etat) ;
+     subvention d'exploitation de la STEG (steg-subvention-exploitation). -->

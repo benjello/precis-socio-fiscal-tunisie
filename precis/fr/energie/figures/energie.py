@@ -178,3 +178,45 @@ def table_fbcf():
             for a in sorted(pts):
                 rows.append({"Base": base, "Branche": lib, "Année": a, "FBCF (MD courants)": pts[a]})
     return pd.DataFrame(rows)
+
+
+# --- Transferts du budget à la STIR et à la STEG (série du ministère des Finances) -----------
+# Série `entreprises-publiques-transferts-par-etablissement`, ligne « stir_steg » : somme des
+# lignes STIR et STEG du tableau 3.1 du rapport sur les entreprises publiques annexé à la loi de
+# finances ; réalisations 2017-2023, montant voté pour 2024. Domicile : « Les entreprises
+# publiques » (transferts) et « La compensation » (ce que ces transferts financent).
+
+def transferts_stir_steg():
+    d = figtools.series("entreprises-publiques-transferts-par-etablissement")
+    d = d[d["grandeur"] == "stir_steg"].sort_values("edition").groupby("annee").tail(1)
+    return {int(r.annee): (float(r.valeur_md), r.etat) for r in d.itertuples()}
+
+
+def _barres_transferts() -> plt.Figure:
+    figtools.apply_lang_font()
+    t = transferts_stir_steg()
+    ans = sorted(t)
+    fig, ax = plt.subplots(figsize=(8.5, 4.4))
+    for i, a in enumerate(ans):
+        v, etat = t[a]
+        b = ax.bar(i, v, width=0.6, color="#0b4f6c" if etat == "réalisations" else "#8c959f")
+        figtools.infobulle(b[0], f"{a} · {_nombre(v)} ({etat})")
+        ax.annotate(_nombre(v), xy=(i, v), xytext=(0, 3), textcoords="offset points", ha="center",
+                    fontsize=7.5, color=GRIS)
+    ax.set_xticks(range(len(ans)))
+    ax.set_xticklabels([str(a) for a in ans], fontsize=8)
+    ax.set_title(figtools.fig_text("Transferts du budget à la STIR et à la STEG"), fontsize=10.5)
+    ax.set_ylabel(figtools.fig_text("millions de dinars courants"), fontsize=9)
+    ax.spines[["top", "right"]].set_visible(False)
+    fig.tight_layout()
+    return fig
+
+
+def vues_transferts():
+    return [("Montants", _barres_transferts())]
+
+
+def table_transferts():
+    import pandas as pd
+    t = transferts_stir_steg()
+    return pd.DataFrame([{"Année": a, "STIR et STEG (MD)": v, "Nature": e} for a, (v, e) in sorted(t.items())])
