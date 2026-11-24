@@ -1,0 +1,158 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-10-28
+# séries (tunisia_data) : etap-rapports-annuels
+# sources (citation) : @etap-ra-2005, @etap-ra-2006, @etap-ra-2007, @etap-ra-2008, @etap-ra-2009, @etap-ra-2010, @etap-ra-2011, @etap-ra-2012, @etap-ra-2013, @etap-ra-2014, @etap-ra-2015, @etap-ra-2016, @etap-ra-2017, @etap-ra-2018, @etap-ra-2019, @etap-ra-2021, @etap-ra-2022, @etap-ra-2023, @etap-ra-2024
+# fiches : sources/entreprises-publiques.md
+# méthode/hypothèses : COMPTES DE L'ENTREPRISE, PAS UNE SOURCE BUDGÉTAIRE : jamais raccordés aux fiches du ministère des Finances, avec lesquelles ils concordent pour 2018, 2020, 2021 et 2022 (résultat, produits, effectif). `rapport_du_meme_exercice` marque la lecture dans le rapport de l'exercice ; 2004 vient du rapport de 2005, 2020 du rapport de 2021. DIVERGENCES ENTRE RAPPORTS (`divergence_entre_rapports`) : 2006, les trois montants diffèrent entre les rapports de 2006 et de 2007 (résultat net 190,3 puis 194,5) ; 2023, colonne « retraité » du rapport de 2024 (résultat 392,0 puis 401,6). DANS UN MÊME RAPPORT : 2008, effectif 684 (p. 43) et 682 (p. 4) ; 2010, résultat net 146,2 (état) et 155 (indicateurs) — la ligne retenue est celle de l'état, l'autre en remarque. 2014 : « résultat des activités ordinaires après impôts », le rapport de 2015 imprimant la même valeur comme résultat net. 2024 : résultat après modifications comptables de 272,8 MD, non retenu. 2019 : effectif seul (aucun état financier dans le rapport). 2016 : total des produits d'après la page des indicateurs, arrondi au million, et d'après le rapport de 2017. COUVERTURE : le fichier etap_ra_2015.pdf porte en page 1 deux couvertures (« 2015 » et « RAPPORT ANNUEL 2016 ») ; le corps couvre 2015. Les impôts et redevances versés ne sont pas relevés. LECTURE : couche texte et image ; rapports de 2006 et 2015 (scans) et états de 2014, 2017, 2018, 2021 et 2023 à l'image seulement.
+# note : Comptes de l'ETAP d'après ses rapports annuels, exercices 2004-2024, en millions de dinars courants et en agents. Source : ETAP, rapports annuels [@etap-ra-2005, p. 7 et 55 ; @etap-ra-2006, p. 55 et 66 ; @etap-ra-2007, p. 4 et 51 ; @etap-ra-2008, p. 43 et 51 ; @etap-ra-2009, p. 4 et 61 ; @etap-ra-2010, p. 4 et 70 ; @etap-ra-2011, p. 4 et 63 ; @etap-ra-2012, p. 2 et 78 ; @etap-ra-2013, p. 4 et 79 ; @etap-ra-2014, p. 2 et 96 ; @etap-ra-2015, p. 83 et 96 ; @etap-ra-2016, p. 102, 112, 113 et 127 ; @etap-ra-2017, p. 90 et 106 ; @etap-ra-2018, p. 112 et 128 ; @etap-ra-2019, p. 109 ; @etap-ra-2021, p. 94 et 116 ; @etap-ra-2022, p. 96 et 121 ; @etap-ra-2023, p. 87 et 115 ; @etap-ra-2024, p. 81 et 94]
+Exercice,Grandeur,Valeur,Unité,Rapport annuel de,Retenue dans la figure,Libellé imprimé,Imprimé,Page imprimée,Page du fichier
+2004,effectif,588.0,agents,2005,True,Effectif,588,,7
+2004,effectif,588.0,agents,2008,False,Total (tableau Évolution de l'effectif),588,43.0,43
+2004,produits_exploitation,372.586353859,MD,2005,True,TOTAL DES PRODUITS D'EXPLOITATION,372.586.353.859,,55
+2004,resultat_net,76.886425569,MD,2005,True,Résultat net de l'exercice,76.886.425.569,,55
+2004,revenus,369.332300069,MD,2005,True,Revenus,369.332.300.069,,55
+2005,effectif,586.0,agents,2005,True,Effectif,586,,7
+2005,effectif,586.0,agents,2006,False,TOTAL (tableau Évolution de l'effectif),586,55.0,57
+2005,effectif,586.0,agents,2008,False,Total (tableau Évolution de l'effectif),586,43.0,43
+2005,produits_exploitation,609.519434892,MD,2005,True,TOTAL DES PRODUITS D'EXPLOITATION,609.519.434.892,,55
+2005,produits_exploitation,609.519434892,MD,2006,False,TOTAL DES PRODUITS D'EXPLOITATION,"609,519,434.892",,66
+2005,resultat_net,162.061138974,MD,2005,True,Résultat net de l'exercice,162.061.138.974,,55
+2005,resultat_net,162.061138974,MD,2006,False,Résultat net de l'exercice,"162,061,138.974",,66
+2005,revenus,606.068857003,MD,2005,True,Revenus,606.068.857.003,,55
+2005,revenus,606.068857003,MD,2006,False,Revenus,"606,068,857.003",,66
+2006,effectif,597.0,agents,2006,True,TOTAL (tableau Évolution de l'effectif) ; texte : « L'effectif à fin 2006 a atteint 597 employés »,597,55.0,57
+2006,effectif,597.0,agents,2007,False,Effectif,597,4.0,4
+2006,effectif,597.0,agents,2008,False,Total (tableau Évolution de l'effectif),597,43.0,43
+2006,produits_exploitation,768.757990443,MD,2006,True,TOTAL DES PRODUITS D'EXPLOITATION,"768,757,990.443",,66
+2006,produits_exploitation,772.037010891,MD,2007,False,PRODUITS D'EXPLOITATION,"772 037 010,891",51.0,51
+2006,resultat_net,190.347232091,MD,2006,True,Résultat net de l'exercice,"190,347,232.091",,66
+2006,resultat_net,194.468634199,MD,2007,False,RESULTAT NET DE L'EXERCICE,"194 468 634,199",51.0,51
+2006,revenus,764.858309343,MD,2006,True,Revenus,"764,858,309.343",,66
+2006,revenus,768.137328658,MD,2007,False,Revenus,"768 137 328,658",51.0,51
+2007,effectif,614.0,agents,2007,True,Effectif,614,4.0,4
+2007,effectif,614.0,agents,2008,False,Total (tableau Évolution de l'effectif),614,43.0,43
+2007,produits_exploitation,1022.149276532,MD,2007,True,PRODUITS D'EXPLOITATION,"1 022 149 276,532",51.0,51
+2007,produits_exploitation,1022.149276532,MD,2008,False,PRODUIT D'EXPLOITATION,"1 022 149 276,532",51.0,51
+2007,resultat_net,283.933606302,MD,2007,True,RESULTAT NET DE L'EXERCICE,"283 933 606,302",51.0,51
+2007,resultat_net,283.933606302,MD,2008,False,RESULTAT NET DE L'EXERCICE,"283 933 606,302",51.0,51
+2007,revenus,1017.788155565,MD,2007,True,Revenus,"1 017 788 155,565",51.0,51
+2007,revenus,1017.788155565,MD,2008,False,Revenus,"1 017 788 155,565",51.0,51
+2008,effectif,684.0,agents,2008,True,« L'effectif à fin 2008 à atteint 684 employés » ; tableau Total,684,43.0,43
+2008,effectif,684.0,agents,2009,False,Effectif,684,4.0,2
+2008,produits_exploitation,1429.609134403,MD,2008,True,PRODUIT D'EXPLOITATION,"1 429 609 134,403",51.0,51
+2008,produits_exploitation,1429.609134403,MD,2009,False,TOTAL DES PRODUITS D'EXPLOITATION,"1 429 609 134,403",61.0,30
+2008,resultat_net,356.171163405,MD,2008,True,RESULTAT NET DE L'EXERCICE,"356 171 163,405",51.0,51
+2008,resultat_net,356.171163405,MD,2009,False,Resultat net de l'exercice,"356 171 163,405",61.0,30
+2008,revenus,1420.021171702,MD,2008,True,Revenus,"1 420 021 171,702",51.0,51
+2008,revenus,1420.021171702,MD,2009,False,Revenus,"1 420 021 171,702",61.0,30
+2009,effectif,691.0,agents,2009,True,Effectif,691,4.0,2
+2009,effectif,691.0,agents,2010,False,Effectif,691,4.0,3
+2009,produits_exploitation,1007.005344942,MD,2009,True,TOTAL DES PRODUITS D'EXPLOITATION,"1 007 005 344,942",61.0,30
+2009,produits_exploitation,1007.005344942,MD,2010,False,TOTAL DES PRODUITS D'EXPLOITATION,"1 007 005 344,942",70.0,69
+2009,resultat_net,160.111337579,MD,2009,True,Resultat net de l'exercice,"160 111 337,579",61.0,30
+2009,resultat_net,160.111337579,MD,2010,False,Résultat Net de l'exercice,"160 111 337,579",70.0,69
+2009,revenus,1000.770397561,MD,2009,True,Revenus,"1 000 770 397,561",61.0,30
+2009,revenus,1000.770397561,MD,2010,False,Revenus,"1 000 770 397,561",70.0,69
+2010,effectif,708.0,agents,2010,True,Effectif,708,4.0,3
+2010,effectif,708.0,agents,2011,False,Effectif,708,4.0,5
+2010,produits_exploitation,1608.799278171,MD,2010,True,TOTAL DES PRODUITS D'EXPLOITATION,"1 608 799 278,171",70.0,69
+2010,produits_exploitation,1608.799278171,MD,2011,False,TOTAL DES PROUDUITS D'EXPLOITATION (sic),"1.608.799.278,171",63.0,64
+2010,resultat_net,146.198401398,MD,2010,True,Résultat Net de l'exercice,"146 198 401,398",70.0,69
+2010,resultat_net,146.198401398,MD,2011,False,Résultats net de l'exercice,"146.198.401,398",63.0,64
+2010,revenus,1600.457914463,MD,2010,True,Revenus,"1 600 457 914,463",70.0,69
+2010,revenus,1600.457914463,MD,2011,False,Revenus,"1.600.457.914,463",63.0,64
+2011,effectif,789.0,agents,2011,True,Effectif,789,4.0,5
+2011,effectif,789.0,agents,2012,False,Effectif,789,2.0,3
+2011,produits_exploitation,1933.844525534,MD,2011,True,TOTAL DES PROUDUITS D'EXPLOITATION (sic),"1.933.844.525,534",63.0,64
+2011,produits_exploitation,1933.844525534,MD,2012,False,TOTAL DES PRODUITS D'EXPLOITATION,"1 933 844 525,534",78.0,79
+2011,resultat_net,377.956933055,MD,2011,True,Résultats net de l'exercice,"377.956.933,055",63.0,64
+2011,resultat_net,377.956933055,MD,2012,False,Résultat net de l'exercice,"377 956 933,055",78.0,79
+2011,revenus,1928.522252682,MD,2011,True,Revenus,"1.928.522.252,682",63.0,64
+2011,revenus,1928.522252682,MD,2012,False,Revenus,"1 928 522 252,682",78.0,79
+2012,effectif,800.0,agents,2012,True,Effectif,800,2.0,3
+2012,effectif,800.0,agents,2013,False,Effectif,800,4.0,4
+2012,produits_exploitation,2639.376356619,MD,2012,True,TOTAL DES PRODUITS D'EXPLOITATION,"2 639 376 356,619",78.0,79
+2012,produits_exploitation,2639.376356619,MD,2013,False,TOTAL DES PRODUITS D'EXPLOITATION,"2 639 376 356,619",79.0,79
+2012,resultat_net,542.375607354,MD,2012,True,Résultat net de l'exercice,"542 375 607,354",78.0,79
+2012,resultat_net,542.375607354,MD,2013,False,Résultat net de l'exercice,"542 375 607,354",79.0,79
+2012,revenus,2524.805438232,MD,2012,True,Revenus,"2 524 805 438,232",78.0,79
+2012,revenus,2524.805438232,MD,2013,False,Revenus,"2 524 805 438,232",79.0,79
+2013,effectif,768.0,agents,2013,True,Effectif,768,4.0,4
+2013,effectif,768.0,agents,2014,False,Effectif,768,2.0,3
+2013,produits_exploitation,2365.597580415,MD,2013,True,TOTAL DES PRODUITS D'EXPLOITATION,"2 365 597 580,415",79.0,79
+2013,produits_exploitation,2365.597580415,MD,2014,False,TOTAL DES PRODUITS D'EXPLOITATION,"2.365.597.580,415",96.0,97
+2013,resultat_net,440.690738568,MD,2013,True,Résultat net de l'exercice,"440 690 738,568",79.0,79
+2013,resultat_net,440.690738568,MD,2014,False,RESULTAT DES ACTIVITES ORDINAIRES APRES IMPOTS,"440.690.738,568",96.0,97
+2013,revenus,2288.365804363,MD,2013,True,Revenus,"2 288 365 804,363",79.0,79
+2013,revenus,2288.365804363,MD,2014,False,Revenus,"2.288.365.804,363",96.0,97
+2014,effectif,735.0,agents,2014,True,Effectif,735,2.0,3
+2014,effectif,735.0,agents,2015,False,« contre 735 employés en 2014 »,735 employés,83.0,84
+2014,produits_exploitation,2203.188465779,MD,2014,True,TOTAL DES PRODUITS D'EXPLOITATION,"2.203.188.465,779",96.0,97
+2014,produits_exploitation,2203.188465779,MD,2015,False,TOTAL DES PRODUITS D'EXPLOITATION,2 203 188 465.779,96.0,97
+2014,resultat_net,496.745479678,MD,2014,True,RESULTAT DES ACTIVITES ORDINAIRES APRES IMPOTS,"496.745.479,678",96.0,97
+2014,resultat_net,496.745479678,MD,2015,False,RESULTAT NET DE L'EXERCICE,496 745 479.678,96.0,97
+2014,revenus,2152.719446487,MD,2014,True,Revenus,"2.152.719.446,487",96.0,97
+2014,revenus,2152.719446487,MD,2015,False,Revenus,2 152 719 446.487,96.0,97
+2015,effectif,725.0,agents,2015,True,« l'effectif total de l'ETAP était de 725 employés »,725 employés,83.0,84
+2015,effectif,725.0,agents,2016,False,« contre 725 employés en 2015 »,725 employés,102.0,103
+2015,produits_exploitation,1271.737420757,MD,2015,True,TOTAL DES PRODUITS D'EXPLOITATION,1 271 737 420.757,96.0,97
+2015,produits_exploitation,1272.0,MD,2016,False,Revenus totaux (Millions DT),1272,127.0,128
+2015,resultat_net,188.833095323,MD,2015,True,RESULTAT NET DE L'EXERCICE,188 833 095.323,96.0,97
+2015,resultat_net,188.8,MD,2016,False,"« contre 188,8 MDT en 2015 »","188,8 MDT",113.0,114
+2015,revenus,1218.696937835,MD,2015,True,Revenus,1 218 696 937.835,96.0,97
+2015,revenus,1218.696937835,MD,2016,False,TOTAL EN DINARS (total des revenus d'exploitation),"1 218 696 937,835",112.0,113
+2016,effectif,700.0,agents,2016,True,« l'effectif total de l'ETAP était de 700 employés »,700 employés,102.0,103
+2016,effectif,700.0,agents,2017,False,« contre 700 employés en 2016 »,700 employés,90.0,91
+2016,produits_exploitation,953.0,MD,2016,True,Revenus totaux (Millions DT),953,127.0,128
+2016,produits_exploitation,953.137515425,MD,2017,False,TOTAL DES PRODUITS D'EXPLOITATION,"953.137.515,425",106.0,107
+2016,resultat_net,19.4,MD,2016,True,"« Le résultat net de l'exercice 2016 s'élève à 19,4 MDT(*) »","19,4 MDT",113.0,114
+2016,resultat_net,19.437992542,MD,2017,False,Resultat net de l'exercice,"19.437.992,542",106.0,107
+2016,revenus,922.328192337,MD,2016,True,TOTAL EN DINARS (total des revenus d'exploitation),"922 328 192,337",112.0,113
+2016,revenus,922.328192337,MD,2017,False,Revenus,"922.328.192,337",106.0,107
+2016,versement_etat,20.6,MD,2016,True,"« La contribution conjoncturelle au profit du budget de l'Etat instituée en vertu de la loi des finances de l'année 2017 (soit 7,5% de l'assiette de l'impôt sur les bénéfices) a atteint le montant de »","20,6 MDT",113.0,114
+2016,versement_etat,20.6,MD,2017,False,« Résultat affecté par la contribution conjoncturelle en vertu de la Loi des Finances 2017 et qui s'élève à »,"20,6 MDT",101.0,102
+2017,effectif,812.0,agents,2017,True,« l'effectif total de l'ETAP était de 812 employés »,812 employés,90.0,91
+2017,effectif,812.0,agents,2018,False,« contre 812 employés en 2017 »,812 employés,112.0,113
+2017,produits_exploitation,1251.766221095,MD,2017,True,TOTAL DES PRODUITS D'EXPLOITATION,"1.251.766.221,095",106.0,107
+2017,produits_exploitation,1251.766221095,MD,2018,False,TOTAL DES PRODUITS D'EXPLOITATION,"1.251.766.221,095",128.0,129
+2017,resultat_net,111.182804977,MD,2017,True,Resultat net de l'exercice,"111.182.804,977",106.0,107
+2017,resultat_net,111.182804977,MD,2018,False,Resultat net de l'exercice,"111.182.804,977",128.0,129
+2017,revenus,1225.700955004,MD,2017,True,Revenus,"1.225.700.955,004",106.0,107
+2017,revenus,1225.700955004,MD,2018,False,Revenus,"1.225.700.955,004",128.0,129
+2018,effectif,802.0,agents,2018,True,« l'effectif total de l'ETAP était de 802 employés »,802 employés,112.0,113
+2018,effectif,802.0,agents,2019,False,« contre 802 employés en 2018 »,802 employés,109.0,110
+2018,produits_exploitation,1712.934595811,MD,2018,True,TOTAL DES PRODUITS D'EXPLOITATION,"1.712.934.595,811",128.0,129
+2018,resultat_net,297.544234793,MD,2018,True,Resultat net de l'exercice,"297.544.234,793",128.0,129
+2018,revenus,1645.741166231,MD,2018,True,Revenus,"1.645.741.166,231",128.0,129
+2019,effectif,785.0,agents,2019,True,« l'effectif total de l'ETAP est de 785 employés »,785 employés,109.0,110
+2020,effectif,785.0,agents,2021,True,« contre 785 employés en 2020 »,785 employés,94.0,95
+2020,produits_exploitation,1048.315549907,MD,2021,True,TOTAL DES PRODUITS D'EXPLOITATION,"1.048.315.549,907",116.0,117
+2020,resultat_net,-407.073924078,MD,2021,True,Resultat net de l'exercice,"-407.073.924,078",116.0,117
+2020,revenus,1025.963867161,MD,2021,True,Revenus,"1.025.963.867,161",116.0,117
+2021,effectif,784.0,agents,2021,True,« l'effectif total de l'ETAP est de 784 employés »,784 employés,94.0,95
+2021,effectif,784.0,agents,2022,False,« contre 784 employés en 2021 »,784 employés,96.0,97
+2021,produits_exploitation,1682.091509544,MD,2021,True,TOTAL DES PRODUITS D'EXPLOITATION,"1.682.091.509,544",116.0,117
+2021,produits_exploitation,1682.091509544,MD,2022,False,TOTAL DES PRODUITS D'EXPLOITATION,"1.682.091.509,544",121.0,122
+2021,resultat_net,-139.002427772,MD,2021,True,Resultat net de l'exercice,"-139.002.427,772",116.0,117
+2021,resultat_net,-139.002427772,MD,2022,False,Resultat net de l'exercice,"-139.002.427,772",121.0,122
+2021,revenus,1651.484064796,MD,2021,True,Revenus,"1.651.484.064,796",116.0,117
+2021,revenus,1651.484064796,MD,2022,False,Revenus,"1.651.484.064,796",121.0,122
+2022,effectif,833.0,agents,2022,True,« l'effectif total de l'ETAP est de 833 employés »,833 employés,96.0,97
+2022,effectif,833.0,agents,2023,False,« contre 833 employés en 2022 »,833 employés,87.0,88
+2022,produits_exploitation,3151.184513083,MD,2022,True,TOTAL DES PRODUITS D'EXPLOITATION,"3.151.184.513,083",121.0,122
+2022,produits_exploitation,3151.184513083,MD,2023,False,TOTAL DES PRODUITS D'EXPLOITATION,"3.151.184.513,083",115.0,116
+2022,resultat_net,352.244877936,MD,2022,True,Resultat net de l'exercice,"352.244.877,936",121.0,122
+2022,resultat_net,352.244877936,MD,2023,False,Resultat net de l'exercice,"352.244.877,936",115.0,116
+2022,revenus,3108.673376467,MD,2022,True,Revenus,"3.108.673.376,467",121.0,122
+2022,revenus,3108.673376467,MD,2023,False,Revenus,"3.108.673.376,467",115.0,116
+2023,effectif,796.0,agents,2023,True,« l'effectif total de l'ETAP est de 796 employés »,796 employés,87.0,88
+2023,effectif,796.0,agents,2024,False,« passant de 796 à 759 employés »,796 employés,81.0,82
+2023,produits_exploitation,2829.852870232,MD,2023,True,TOTAL DES PRODUITS D'EXPLOITATION,"2.829.852.870,232",115.0,116
+2023,produits_exploitation,2875.231267374,MD,2024,False,Total PRODUITS D'EXPLOITATION,"2 875 231 267,374",94.0,95
+2023,resultat_net,391.976202203,MD,2023,True,Resultat net de l'exercice,"391.976.202,203",115.0,116
+2023,resultat_net,401.625337915,MD,2024,False,RÉSULTAT NET DE L'EXERCICE,"401 625 337,915",94.0,95
+2023,revenus,2799.313217251,MD,2023,True,Revenus,"2.799.313.217,251",115.0,116
+2023,revenus,2832.519595046,MD,2024,False,Revenus,"2 832 519 595,046",94.0,95
+2024,effectif,759.0,agents,2024,True,« l'effectif total de l'ETAP s'élève à 759 employés »,759 employés,81.0,82
+2024,produits_exploitation,2226.402706994,MD,2024,True,Total PRODUITS D'EXPLOITATION,"2 226 402 706,994",94.0,95
+2024,resultat_net,340.260391361,MD,2024,True,RÉSULTAT NET DE L'EXERCICE,"340 260 391,361",94.0,95
+2024,revenus,2161.236497199,MD,2024,True,Revenus,"2 161 236 497,199",94.0,95
