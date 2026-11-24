@@ -54,6 +54,16 @@ Références : INS, *Les comptes de la nation* (clé bibliographique `ins-cnat-2
 - La réponse dirait s'il s'agit d'intérêts courus ou d'unités hors budget.
 - Priorité 3.
 
+**A9. Dans quelle opération et dans quel sous-secteur la taxe de formation professionnelle et la contribution au FOPROLOS sont-elles enregistrées ?** (étape « production »)
+- Observé : D.29 reçu par S13 vaut 2 472,9 en 2023 (S1311 : 2 071,8 ; collectivités : 401,1). L'ouvrage n'a aucune série de réalisations des deux prélèvements, seulement des prévisions des fonds qu'ils alimentent.
+- La réponse permettrait de les rattacher à D.29 ou à une autre opération (D.61, D.5), et au fonds spécial du Trésor ou au budget.
+- Priorité 2.
+
+**A10. Que recouvre la consommation intermédiaire de l'administration centrale au-delà des « moyens des services » du budget ?**
+- Observé : P.2 de S1311, 3 457,0 en 2023, contre 2 273,7 de moyens des services réalisés, soit une couverture de 65,8 %.
+- La réponse dirait quelles dépenses (interventions, équipement, comptes spéciaux) l'INS range dans P.2.
+- Priorité 2.
+
 ## B. Incohérences vues sur les pages publiées
 
 **B1. Laquelle des deux valeurs de S12 retenir quand la ligne du secteur ne fait pas la somme de ses sous-secteurs dans le TOF ?**
