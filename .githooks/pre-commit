@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+# Contrôles rapides avant commit. Non activé par défaut ; pour l'activer :
+#   git config core.hooksPath .githooks
+# Avertit : un .qmd sous precis/ar/ (seules les pages-relais de scripts/arabe_cablage.py y sont
+# commises) ; un fichier engendré (à régénérer par son script, pas à éditer).
+# Bloque : des échappements \u00XX écrits à la place des lettres accentuées dans un .qmd.
+set -u
+indexes=$(git diff --cached --name-only --diff-filter=ACMR)
+[ -z "$indexes" ] && exit 0
+echec=0
+while IFS= read -r f; do
+  case "$f" in
+    precis/ar/*.qmd|precis/ar/*/*.qmd)
+      echo "pre-commit : $f — .qmd arabe : seulement s'il vient de scripts/arabe_cablage.py" ;;
+  esac
+  case "$f" in
+    */_glossaire.qmd|*/_glossaire.infobulles.html|*translation_glossary.generated.md|precis/*/*/tables/*)
+      echo "pre-commit : $f — fichier engendré : seulement s'il sort de son générateur" ;;
+  esac
+  case "$f" in
+    *.qmd)
+      if git show ":$f" | grep -qE '\\u00[cCeE][0-9a-fA-F]'; then
+        echo "pre-commit : $f — échappement \\u00XX dans le texte (lettre accentuée mal écrite)"; echec=1
+      fi ;;
+  esac
+done <<< "$indexes"
+exit $echec
