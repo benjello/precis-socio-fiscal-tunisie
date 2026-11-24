@@ -1,0 +1,16 @@
+poste,operation,code_scn,verse,recoit,montant_md,volume,section
+tva,tva,D.211,snf;menages;sf,apu_centrale,10464.0,fiscalite,fiscalite/_tva#sec-tva
+droits-douane,impots_importations,D.212,snf;menages,apu_centrale,1849.0,fiscalite,fiscalite/_droits_douane#sec-dd
+droits-consommation,autres_impots_produits,D.214,snf;menages,apu_centrale,3809.4,fiscalite,fiscalite/_droits_consommation#sec-droits-consommation
+autres-impots-indirects,impots_production_importations,D.2,snf;menages,apu_centrale,5884.0,fiscalite,fiscalite/_timbre_enregistrement#sec-te
+irpp,impots_courants,D.5,menages,apu_centrale,11373.6,fiscalite,fiscalite/_impot_revenu#sec-irpp
+impot-societes,impots_courants,D.5,snf;sf,apu_centrale,4657.2,fiscalite,fiscalite/_impot_societes#sec-impot-societes
+remunerations-etat,remuneration_salaries,D.1,apu_centrale,menages,21696.6,remunerations_publiques,remunerations_publiques/index#sec-remu-droits-sociaux
+equipement-etat,fbcf,P.51g,apu_centrale,,9147.0,transport,transport/_infrastructure#sec-transport-infrastructure
+interets-dette-etat,interets,D.41,apu_centrale,sf;rdm;menages,5830.5,annexe-dette-publique,annexe-dette-publique#sec-dette-stock-flux
+compensation,subventions_produits,D.31,apu_centrale,snf;menages,-11479.5,compensation,compensation/_depense#sec-compensation-longue-periode
+cotisations-sociales,cotisations_sociales,D.61,menages,apu_secu,,cotisations_sociales,cotisations_sociales/index#sec-cot-presentation
+prestations-retraite-et-sociales,prestations_especes,D.62,apu_secu;apu_centrale,menages,,prestations_sociales,prestations_sociales/index#sec-prest-presentation
+consommation-sante,consommation_finale,P.3,apu_centrale;apu_secu,,,sante,sante/_couverture#sec-sante-couverture
+consommation-education,consommation_finale,P.3,apu_centrale,,,education,education/_depense#sec-educ-depense
+transferts-collectivites,transferts_entre_administrations,D.73,apu_centrale,apu_locale,,finances_locales,finances_locales/_transferts#sec-fl-transferts

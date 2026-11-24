@@ -1,0 +1,24 @@
+# Lire les comptes {#sec-cadre-lire-comptes}
+
+::: {.callout-note}
+Chapitre en **brouillon**, écrit pour le pilote sur les administrations publiques. La méthode qu'il décrit n'est appliquée, pour l'instant, qu'au compte de ce secteur.
+:::
+
+Chaque volume décrit des dispositifs : un impôt, une prestation, une subvention, une dépense. Les comptes de la nation de l'INS décrivent des opérations : ce qu'un secteur verse ou reçoit, ligne par ligne, de la production à la capacité de financement [@ins-cnat-2015]. Ce chapitre dit comment l'ouvrage relie les deux.
+
+## Le poste, unité de rattachement {#sec-cadre-poste}
+
+Un **poste** rattache une section de l'ouvrage à une case des comptes : une opération du système de comptabilité nationale (par exemple D.211, la taxe sur la valeur ajoutée), un côté (emploi ou ressource), le secteur qui verse et celui qui reçoit. Les postes sont tenus dans un registre, dont le [tableau « qui verse à qui »](../compte-apu.html#sec-capu-flux) donne le contenu, et qui prolonge la [correspondance entre les opérations et les volumes](../correspondance-comptes.html). Trois règles le gouvernent :
+
+- une section n'est le domicile que d'un seul poste ;
+- un poste est chiffré par une série tunisienne déjà vérifiée, ou reste sans montant — il n'est jamais estimé ;
+- l'année de référence est la dernière année que l'INS imprime comme définitive.
+
+## Le résidu, publié {#sec-cadre-residu}
+
+Pour chaque opération, la somme des postes de l'ouvrage ne refait pas exactement la valeur de l'INS. L'écart, le **résidu**, est publié tel quel : il dit ce que l'ouvrage ne couvre pas encore, ou ce qui sépare deux manières de compter. Trois résidus sont connus et nommés : les droits et impôts sur les importations des comptes, plus larges que les droits de douane du budget ; les impôts courants, enregistrés en droits constatés dans les comptes et en encaissements dans le budget ; la formation brute de capital fixe, plus étroite que les dépenses d'équipement du budget.
+
+Le [compte reconstruit des administrations publiques](../compte-apu.html) applique cette méthode au secteur des administrations publiques.
+
+<!-- TODO (rédacteur) : après la relecture du pilote, étendre aux autres secteurs ; décrire la
+     séquence des comptes en renvoyant à l'annexe sur les comptes de la nation. -->
