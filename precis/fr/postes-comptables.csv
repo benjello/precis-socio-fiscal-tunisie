@@ -20,3 +20,4 @@ taxe-formation-professionnelle,Compte d'affectation des revenus primaires,D.29,a
 foprolos,Compte d'affectation des revenus primaires,D.29,autres_impots_production,ressources,snf;sf,apu_centrale,cotisations_sociales,_prelevements_salaires,sec-cot-foprolos,,,,,,
 moyens-services-etat,Compte de production,P.2,consommation_intermediaire,emplois,apu_centrale,snf,annexe-budget-etat,,sec-bud-desagregation,budget-desagregation-nature,moyens_MDT,lu,1986-2025,2273.7,minfin-repartition-depenses-xls
 transferts-capital-etat,Compte de capital,D.9,transferts_capital,emplois,apu_centrale,snf;menages,investissement,index,sec-invest-transferts-capital,,,,,,
+soins-assurance-maladie,Compte d'utilisation du revenu disponible,P.3,consommation_finale,emplois,apu_secu,menages,prestations_sociales,_soins,sec-soins-vue,,,,,,

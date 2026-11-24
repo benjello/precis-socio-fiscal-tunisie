@@ -20,3 +20,4 @@ taxe-formation-professionnelle,autres_impots_production,D.29,snf;sf,apu_centrale
 foprolos,autres_impots_production,D.29,snf;sf,apu_centrale,,cotisations_sociales,cotisations_sociales/_prelevements_salaires#sec-cot-foprolos
 moyens-services-etat,consommation_intermediaire,P.2,apu_centrale,snf,2273.7,annexe-budget-etat,annexe-budget-etat#sec-bud-desagregation
 transferts-capital-etat,transferts_capital,D.9,apu_centrale,snf;menages,,investissement,investissement/index#sec-invest-transferts-capital
+soins-assurance-maladie,consommation_finale,P.3,apu_secu,menages,,prestations_sociales,prestations_sociales/_soins#sec-soins-vue
