@@ -186,9 +186,10 @@ def main() -> int:
         passages.setdefault(t["operation"], [f"Les explications testées de l'écart de {AN} pour {t['libelle']}, "
                                              "établies, plausibles ou écartées :", ""])
         passages[t["operation"]].append(f"- **{t['hypothese']}** ({t['statut']}) : {t['explication']}")
-    for op, ls in passages.items():
-        ls += ["", "Le tableau complet, avec les sources, est dans [le compte reconstruit](../compte-apu.html#sec-capu-residus)."]
-        (FRAGMENTS / f"passage-{op}.md").write_text("\n".join(ls) + "\n", encoding="utf-8")
+    for op, ls in passages.items():  # deux variantes : pour un chapitre de volume, pour une page générale
+        for suffixe, prof in (("", "../"), ("-racine", "")):
+            fin = [f"", f"Le tableau complet, avec les sources, est dans [le compte reconstruit]({prof}compte-apu.html#sec-capu-residus)."]
+            (FRAGMENTS / f"passage-{op}{suffixe}.md").write_text("\n".join(ls + fin) + "\n", encoding="utf-8")
     for p, rows in ((SORTIE, tests), (SERIES, series)):
         with p.open("w", newline="", encoding="utf-8") as f:
             w = csv.DictWriter(f, fieldnames=list(rows[0]), lineterminator="\n")

@@ -1,0 +1,3 @@
+::: {.callout-tip title="Dans les comptes"}
+Ce dispositif relève de l'opération **D.9 « Transferts en capital »** des comptes de la nation. En 2023 (édition 2021-2025), en millions de dinars, versent : sociétés non financières 375,5 ; administrations publiques 3 302,7 ; ménages 263,9 ; reste du monde 1 213,1 ; reçoivent : sociétés non financières 2 383,9 ; administrations publiques 1 283,5 ; ménages 1 452,2 ; reste du monde 35,5. Les administrations publiques y inscrivent 3 302,7 millions de dinars (emplois) ; l'ouvrage ne chiffre pas encore ce dispositif. Voir [le compte reconstruit](../compte-apu.html#sec-capu-flux).
+:::

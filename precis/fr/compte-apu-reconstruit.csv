@@ -32,7 +32,7 @@ annee,edition,secteur,compte,cote,code_scn,operation,cible_ins_md,postes,somme_p
 2023,2021-2025,S13,Compte de capital,emplois,B.9,capacite_financement,-8874.9,,,,,
 2023,2021-2025,S13,Compte de capital,emplois,,ecart_statistique,0.0,,,,,
 2023,2021-2025,S13,Compte de capital,emplois,P.51g,fbcf,5346.0,equipement-etat,9147.0,-3801.0,171.1,FBCF des comptes face aux dépenses d'équipement du budget
-2023,2021-2025,S13,Compte de capital,emplois,D.9,transferts_capital,3302.7,,,,,
+2023,2021-2025,S13,Compte de capital,emplois,D.9,transferts_capital,3302.7,transferts-capital-etat,,,,
 2023,2021-2025,S13,Compte de capital,ressources,D.99,autres_transferts_capital,1233.4,,,,,
 2023,2021-2025,S13,Compte de capital,ressources,B.8g,epargne_brute,-1489.7,,,,,
 2023,2021-2025,S13,Compte de capital,ressources,D.91,impots_capital,50.1,,,,,
@@ -91,7 +91,7 @@ annee,edition,secteur,compte,cote,code_scn,operation,cible_ins_md,postes,somme_p
 2023,2021-2025,S1311,Compte de capital,emplois,B.9,capacite_financement,-9271.8,,,,,
 2023,2021-2025,S1311,Compte de capital,emplois,,ecart_statistique,0.0,,,,,
 2023,2021-2025,S1311,Compte de capital,emplois,P.51g,fbcf,4899.2,equipement-etat,9147.0,-4247.8,186.7,FBCF des comptes face aux dépenses d'équipement du budget
-2023,2021-2025,S1311,Compte de capital,emplois,D.9,transferts_capital,3267.4,,,,,
+2023,2021-2025,S1311,Compte de capital,emplois,D.9,transferts_capital,3267.4,transferts-capital-etat,,,,
 2023,2021-2025,S1311,Compte de capital,ressources,D.99,autres_transferts_capital,756.2,,,,,
 2023,2021-2025,S1311,Compte de capital,ressources,B.8g,epargne_brute,-1891.5,,,,,
 2023,2021-2025,S1311,Compte de capital,ressources,D.91,impots_capital,50.1,,,,,
