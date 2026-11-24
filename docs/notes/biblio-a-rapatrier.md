@@ -6,6 +6,10 @@
 > `references.json` doit être **remontée dans Zotero** pour être pérenne et obtenir une
 > clé de citation stable (champ « Extra » : `citation-key: xxx`).
 
+## Lot 10 du 23/11/2026 : clés juridiques des finances locales (bibliographe, depuis jort_cache.db)
+
+- Sept clés dans `finances_locales/references.json` (FR et AR, URL tirées des champs `pdf_fr` et `pdf_ar`) : `decret2000-232`, `decret2000-1692`, `decret2000-1692-rect`, `decret2003-1346`, `decret2004-80`, `decret2012-1958`, `decret2013-3236` (modificatifs du décret n° 98-1428). Points incertains au backlog (« À revérifier sur le poste », lot 10). À verser dans Zotero, collection des finances locales.
+
 ## Lot 9 du 23/11/2026 : clés juridiques des rémunérations publiques (bibliographe, depuis jort_cache.db)
 
 - `decret-88-908` et `decret-88-908-rect` créées dans `remunerations_publiques/references.json` (FR et AR, URL tirées des champs `pdf_fr` et `pdf_ar`) ; `decret2013-1401`, déjà présente, est désormais citée. Points incertains au backlog (« À revérifier sur le poste », lot 9). À verser dans Zotero, collection des rémunérations publiques.
