@@ -1,3 +1,3 @@
 ::: {.callout-tip title="Dans les comptes"}
-Dans les comptes de la nation, ce dispositif relève de l'opération D.5 (impots courants, ressources) du compte des administrations publiques. En 2023, l'ouvrage en chiffre 11 373,6 millions de dinars ; l'INS inscrit 16 774,9 millions de dinars pour l'ensemble de l'opération ([le compte reconstruit](../compte-apu.html#sec-capu-operations)).
+Ce dispositif relève de l'opération **D.5 « Impôts courants sur les revenus et le patrimoine »** des comptes de la nation. En 2023 (édition 2021-2025), en millions de dinars, versent : sociétés non financières 8 265,6 ; sociétés financières 1 242,6 ; administrations publiques 10,4 ; ménages 6 647,5 ; reste du monde 608,7 ; reçoivent : administrations publiques 16 774,9. Les administrations publiques y inscrivent 16 774,9 millions de dinars (ressources) ; l'ouvrage en chiffre 11 373,6 pour ce dispositif. Voir [le compte reconstruit](../compte-apu.html#sec-capu-flux).
 :::

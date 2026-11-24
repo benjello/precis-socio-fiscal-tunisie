@@ -97,6 +97,14 @@ C'est le miroir exact de l'[annexe sur le budget de l'État](annexe-budget-etat.
      DÉPEND d'une série à sourcer (service de la dette, minfin/BCT) — absente de _seriescache/.
      Voir docs/notes/backlog-precis.md et docs/notes/annexe-dette-publique.md § 9. Ne pas inventer de chiffres. -->
 
+### Dans les comptes {#sec-dette-service-comptes}
+
+{{< include encadres-comptes/interets-dette-etat.md >}}
+
+### Du service de la dette à D.41 {#sec-dette-service-passage}
+
+Les intérêts du service de la dette du ministère des Finances diffèrent peu des intérêts versés par l'administration centrale dans les comptes. L'écart et les explications testées (périmètre, calendrier, correction SIFIM) sont dans [le compte reconstruit des administrations publiques](compte-apu.html#sec-capu-residus).
+
 ## La dette extérieure, prêteur par prêteur {#sec-dette-exterieure}
 
 La dette extérieure de l'État et la dette qu'il garantit se suivent **créancier par créancier, année par année**, mais non pas emprunt par emprunt : le détail de chaque prêt — son taux, sa maturité, son échéancier propres — n'est publié par aucune source, et reste interne aux systèmes de gestion de la dette. La maille publique la plus fine est donc le **créancier**.

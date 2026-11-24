@@ -41,6 +41,10 @@ REGISTRE = FR / "postes-comptables.csv"
 SORTIE = FR / "compte-apu-reconstruit.csv"
 FLUX = FR / "compte-apu-flux.csv"
 ENCADRES = FR / "encadres-comptes"
+QUI = FR / "compte-apu-qui-verse.csv"
+PRINCIPAUX = [("snf", "sociétés non financières"), ("sf", "sociétés financières"), ("apu", "administrations publiques"),
+              ("menages", "ménages"), ("rdm", "reste du monde")]
+SOUS_APU = [("apu_centrale", "administration centrale"), ("apu_locale", "collectivités locales"), ("apu_secu", "sécurité sociale")]
 SECTEURS = {"apu": "S13", "apu_centrale": "S1311", "apu_locale": "S1313", "apu_secu": "S1314"}
 COMPTES_NON_FINANCIERS = ("production", "exploitation", "affectation", "distribution", "utilisation", "capital")
 ARRONDI = 0.05
@@ -87,6 +91,10 @@ def montant(serie: str, colonne: str, annee: int) -> tuple[float | None, str]:
         vals = [float(l["valeur_MDT"]) for l in lignes if str(l["annee"]) == str(annee)
                 and l["poste"] == colonne and l["famille"] == "budget"]
         return (-vals[-1] if vals else None), couv  # subvention : ressource négative dans les comptes
+    if "variable" in lignes[0] and "valeur" in lignes[0]:  # série longue : une ligne par (année, variable)
+        vals = [float(l["valeur"]) for l in lignes if str(l["annee"]) == str(annee) and l["variable"] == colonne
+                and str(l.get("retenu", "True")) in ("True", "true", "1")]
+        return (vals[-1] if vals else None), couv
     vals = [float(l[colonne]) for l in lignes if str(l["annee"]) == str(annee) and l.get(colonne, "") != ""]
     return (vals[-1] if vals else None), couv
 
@@ -141,7 +149,8 @@ def main(argv=None) -> int:
     for p in postes:
         # le secteur des administrations concerné, qu'il verse ou reçoive (les subventions, versées,
         # sont inscrites par l'INS en ressources négatives)
-        for sec in p["secteur_verse"].split(";") + p["secteur_recoit"].split(";"):
+        cotes = [p["secteur_recoit"], p["secteur_verse"]] if p["cote"] == "ressources" else [p["secteur_verse"], p["secteur_recoit"]]
+        for sec in ";".join(cotes).split(";"):  # le côté de l'opération d'abord : qui reçoit une ressource, qui verse un emploi
             if sec in SECTEURS:
                 rattaches[(sec, p["cote"], p["operation"])].append(p["poste"])
                 if p["montant_reference"]:
@@ -204,23 +213,43 @@ def main(argv=None) -> int:
         w = csv.DictWriter(f, fieldnames=list(postes[0]), lineterminator="\n")
         w.writeheader()
         w.writerows(postes)
-    # Encadrés « Dans les comptes », préparés pour les sections dont le poste est chiffré (pilote :
-    # ils ne sont pas encore inclus dans les chapitres, la généralisation attend la relecture).
+    # Encadrés « Dans les comptes », un par poste, inclus dans la section domicile : opération,
+    # tableau « qui verse à qui » des secteurs principaux, montant de l'INS, montant de l'ouvrage.
     ENCADRES.mkdir(parents=True, exist_ok=True)
     cible_s13 = {(l["cote"], l["operation"]): l for l in lignes if l["secteur"] == "S13"}
+    secteurs = [l for l in lire_csv(CACHE / "cnat-secteurs.csv")
+                if l["edition"] == ed and str(l["annee"]) == str(an) and str(l["sous_ligne"]) in ("0", "1")]
+    qui = []
+    for op in sorted({p["operation"] for p in postes}):
+        for sec, nom in PRINCIPAUX + SOUS_APU:
+            for cote in ("emplois", "ressources"):
+                v = [x for x in secteurs if x["secteur"] == sec and x["cote"] == cote and x["operation"] == op]
+                if v:
+                    qui.append({"annee": an, "edition": ed, "operation": op, "code_scn": v[0]["code_scn2008"],
+                                "libelle_ins": v[0]["libelle_ins"], "secteur": nom, "niveau": "sous-secteur" if sec.startswith("apu_") else "secteur", "cote": cote,
+                                "valeur_md": round(sum(float(x["valeur"]) for x in v), 1)})
+    with QUI.open("w", newline="", encoding="utf-8") as f:
+        w = csv.DictWriter(f, fieldnames=list(qui[0]), lineterminator="\n")
+        w.writeheader()
+        w.writerows(qui)
     for p in postes:
-        if not p["montant_reference"]:
-            continue
         l = cible_s13.get((p["cote"], p["operation"]))
-        lien = "../compte-apu.html#sec-capu-operations"
-        phrase = (f"Dans les comptes de la nation, ce dispositif relève de l'opération {p['code_scn']} "
-                  f"({p['operation'].replace('_', ' ')}, {p['cote']}) du compte des administrations publiques. "
-                  f"En {an}, l'ouvrage en chiffre {fr(p['montant_reference'])} millions de dinars")
+        profondeur = "../" if (FR / p["volume"]).is_dir() else ""
+        lien = f"{profondeur}compte-apu.html#sec-capu-flux"
+        niveau = "sous-secteur" if p["operation"] == "transferts_entre_administrations" else "secteur"
+        q = [x for x in qui if x["operation"] == p["operation"] and x["niveau"] == niveau]
+        lib = q[0]["libelle_ins"] if q else p["operation"].replace("_", " ")
+        verse = " ; ".join(f"{x['secteur']} {fr(x['valeur_md'])}" for x in q if x["cote"] == "emplois" and x["valeur_md"])
+        recoit = " ; ".join(f"{x['secteur']} {fr(x['valeur_md'])}" for x in q if x["cote"] == "ressources" and x["valeur_md"])
+        phrase = (f"Ce dispositif relève de l'opération **{p['code_scn']} « {lib} »** des comptes de la nation. "
+                  f"En {an} (édition {ed}), en millions de dinars, versent : {verse or 'aucun secteur principal'} ; "
+                  f"reçoivent : {recoit or 'aucun secteur principal'}.")
         if l:
-            phrase += (f" ; l'INS inscrit {fr(l['cible_ins_md'])} millions de dinars pour l'ensemble "
-                       f"de l'opération")
+            phrase += f" Les administrations publiques y inscrivent {fr(l['cible_ins_md'])} millions de dinars ({p['cote']})"
+            phrase += (f" ; l'ouvrage en chiffre {fr(p['montant_reference'])} pour ce dispositif." if p["montant_reference"]
+                       else " ; l'ouvrage ne chiffre pas encore ce dispositif.")
         (ENCADRES / f"{p['poste']}.md").write_text(
-            f"::: {{.callout-tip title=\"Dans les comptes\"}}\n{phrase} ([le compte reconstruit]({lien})).\n:::\n",
+            f"::: {{.callout-tip title=\"Dans les comptes\"}}\n{phrase} Voir [le compte reconstruit]({lien}).\n:::\n",
             encoding="utf-8")
     chiffres = sum(1 for p in postes if p["montant_reference"])
     s13 = [l for l in lignes if l["secteur"] == "S13"]

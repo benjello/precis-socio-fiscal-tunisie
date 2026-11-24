@@ -74,6 +74,24 @@ for l in _f:
 print(f"\n: Les postes du pilote, leurs secteurs et leur section domicile, {AN} (millions de dinars courants ; montant vide : pas de série vérifiée) {{#tbl-capu-flux}}")
 ```
 
+## Qui verse à qui {#sec-capu-qui-verse}
+
+Pour chaque opération d'un poste, le tableau donne ce que chaque secteur verse (emplois) et reçoit (ressources) dans les comptes des secteurs de l'INS ; pour les administrations publiques, il détaille aussi les sous-secteurs.
+
+```{python}
+#| echo: false
+#| output: asis
+_q = list(csv.DictReader(open("compte-apu-qui-verse.csv", encoding="utf-8")))
+print("| Opération | Secteur | Verse (emplois) | Reçoit (ressources) |")
+print("|---|---|--:|--:|")
+cases = {}
+for l in _q:
+    cases.setdefault((l["code_scn"] + " " + l["libelle_ins"], l["secteur"]), {})[l["cote"]] = l["valeur_md"]
+for (op, sec), v in cases.items():
+    print(f"| {op} | {sec} | {n(v.get('emplois', ''))} | {n(v.get('ressources', ''))} |")
+print(f"\n: Qui verse à qui, {AN} (millions de dinars courants) {{#tbl-capu-qui-verse}}")
+```
+
 ## Contrôles {#sec-capu-controles}
 
 ```{python}
