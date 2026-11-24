@@ -1,0 +1,13 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-11-24
+# séries (tunisia_data) : ins-va-branche-base2015
+# sources (citation) : @ins-cnat-2015
+# fiches : sources/ins-valeurs-ajoutees-branche.md
+# méthode/hypothèses : NOMENCLATURE AGRÉGÉE : pas de branche immobilière isolée ; les loyers (réels et IMPUTÉS des propriétaires occupants) sont dans « Autres activités des ménages » (étiquetée « activités immobilières » dans le volume détaillé des Comptes de la Nation), ≈ 6,0-6,6 % du PIB (8 415 MD en 2021) — borne haute du poids des loyers imputés (peut inclure autoproduction et services domestiques). DÉFLATEUR DE LA VA : prix courants ÷ prix de l'année précédente (année n) ; croisé avec l'IPC (bct-ipc-base2015), donne le coin prix conso / prix VA. Valeurs révisables ; édition en ligne du 03-08-2026. Les évaluations aux prix de l'année précédente ne se chaînent pas en niveau.
+# note : Valeur ajoutée des branches de l'énergie, 2020-2025 (millions de dinars courants, base 2015) et part dans le total des valeurs ajoutées
+Année,Extraction du pétrole et du gaz,Électricité et gaz,Raffinage du pétrole,"Énergie, total",Part du total des valeurs ajoutées (%)
+2020,2463.8,1122.1,77.3,3663.2,3.33
+2021,3382.5,1587.1,161.7,5131.3,4.2
+2022,5440.7,1589.6,338.3,7368.6,5.4
+2023,4810.1,1563.5,183.2,6556.8,4.58
+2024,3614.0,1702.1,251.6,5567.7,3.67
+2025,2975.3,1238.0,163.5,4376.8,2.73
