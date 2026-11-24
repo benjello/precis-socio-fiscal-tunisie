@@ -5,13 +5,13 @@ Compte de production,consommation_intermediaire,Consommation intermédiaire,P.2,
 Compte de production,consommation_intermediaire,Consommation intermédiaire,P.2,snf,Sociétés non financières,emplois,vide,,,2024,95078.8,2021-2025
 Compte de production,production,Production des biens et services,P.1,apu,Administrations publiques,ressources,renvoi,Les rémunérations dans le secteur public,remunerations_publiques/,2024,32253.7,2021-2025
 Compte de production,production,Production des biens et services,P.1,menages,Ménages,ressources,renvoi,L'agriculture ; Le transport ; L'environnement,agriculture/ ; transport/ ; environnement/,2024,86731.8,2021-2025
-Compte de production,production_bs_marchands,Production des biens et services marchands,P.1,apu,Administrations publiques,ressources,vide,,,2024,1822.2,2021-2025
+Compte de production,production_bs_marchands,Production des biens et services marchands,P.1,apu,Administrations publiques,ressources,renvoi,Les rémunérations dans le secteur public,remunerations_publiques/,2024,1822.2,2021-2025
 Compte de production,production_bs_marchands,Production des biens et services marchands,P.1,sf,Sociétés financières,ressources,vide,,,2024,9102.1,2021-2025
 Compte de production,production_bs_marchands,Production des biens et services marchands,P.1,snf,Sociétés non financières,ressources,renvoi,L'agriculture ; Le transport ; L'environnement,agriculture/ ; transport/ ; environnement/,2024,154236.0,2021-2025
-Compte de production,production_marchande,Production marchande,P.11,menages,Ménages,ressources,vide,,,2024,76477.1,2021-2025
+Compte de production,production_marchande,Production marchande,P.11,menages,Ménages,ressources,renvoi,L'agriculture ; Le transport ; L'environnement,agriculture/ ; transport/ ; environnement/,2024,76477.1,2021-2025
 Compte de production,production_marchande,Production Marchande,P.11,sf,Sociétés financières,ressources,vide,,,2024,2809.9,2021-2025
-Compte de production,production_non_marchande,Production des services non marchands,P.13,apu,Administrations publiques,ressources,vide,,,2024,30431.5,2021-2025
-Compte de production,production_non_marchande,Production non marchande,P.13,menages,Ménages,ressources,vide,,,2024,10254.7,2021-2025
+Compte de production,production_non_marchande,Production des services non marchands,P.13,apu,Administrations publiques,ressources,renvoi,Les rémunérations dans le secteur public,remunerations_publiques/,2024,30431.5,2021-2025
+Compte de production,production_non_marchande,Production non marchande,P.13,menages,Ménages,ressources,renvoi,L'agriculture,agriculture/,2024,10254.7,2021-2025
 Compte de production,production_non_marchande,Production non Marchande,P.13,sf,Sociétés financières,ressources,vide,,,2024,202.0,2021-2025
 Compte de production,production_services_assurance,Production de services d’assurances,P.1,sf,Sociétés financières,ressources,vide,,,2024,1455.0,2021-2025
 Compte de production,production_sifim,Production de SIFIM,P.1,sf,Sociétés financières,ressources,vide,,,2024,4635.2,2021-2025
@@ -48,7 +48,7 @@ Compte d'affectation des revenus primaires,cotisations_employeurs,Cotis. sociale
 Compte d'affectation des revenus primaires,impots_exportations,Impôts sur les Exportations,D.213,apu,Administrations publiques,ressources,vide,,,2024,139.3,2021-2025
 Compte d'affectation des revenus primaires,impots_importations,Droits et impôts sur les importations (hors TVA),D.212,apu,Administrations publiques,ressources,domicile,La fiscalité,fiscalite/_droits_douane.html,2024,2609.9,2021-2025
 Compte d'affectation des revenus primaires,impots_production_importations,Impôts sur la production et les importations,D.2,apu,Administrations publiques,ressources,domicile,La fiscalité,fiscalite/,2024,22406.1,2021-2025
-Compte d'affectation des revenus primaires,interets,Intérêts,D.41,apu,Administrations publiques,ressources,vide,,,2024,419.0,2021-2025
+Compte d'affectation des revenus primaires,interets,Intérêts,D.41,apu,Administrations publiques,ressources,renvoi,Les entreprises publiques,entreprises_publiques/_garanties.html,2024,419.0,2021-2025
 Compte d'affectation des revenus primaires,interets,Intérêts,D.41,menages,Ménages,ressources,vide,,,2024,4635.8,2021-2025
 Compte d'affectation des revenus primaires,interets,Intérêts,D.41,rdm,Reste du monde,emplois,vide,,,2024,961.0,2021-2025
 Compte d'affectation des revenus primaires,interets,Intérêts,D.41,rdm,Reste du monde,ressources,vide,,,2024,1984.4,2021-2025
@@ -171,8 +171,8 @@ Compte de capital,transferts_capital,Transferts en capital,D.9,menages,Ménages,
 Compte de capital,transferts_capital,Transferts en capital,D.9,menages,Ménages,ressources,vide,,,2024,1378.2,2021-2025
 Compte de capital,transferts_capital,Transferts en capital,D.9,rdm,Reste du monde,emplois,vide,,,2024,777.8,2021-2025
 Compte de capital,transferts_capital,Transferts en capital,D.9,rdm,Reste du monde,ressources,vide,,,2024,31.0,2021-2025
-Compte de capital,transferts_capital,Transferts en capital,D.9,snf,Sociétés non financières,emplois,vide,,,2024,446.5,2021-2025
-Compte de capital,transferts_capital,Transferts en capital,D.9,snf,Sociétés non financières,ressources,vide,,,2024,2344.4,2021-2025
+Compte de capital,transferts_capital,Transferts en capital,D.9,snf,Sociétés non financières,emplois,renvoi,Les entreprises publiques,entreprises_publiques/_restructuration.html,2024,446.5,2021-2025
+Compte de capital,transferts_capital,Transferts en capital,D.9,snf,Sociétés non financières,ressources,renvoi,Les entreprises publiques,entreprises_publiques/_restructuration.html,2024,2344.4,2021-2025
 Compte de capital,variation_stocks,Variation de stocks,P.52,menages,Ménages,emplois,vide,,,2024,-4110.5,2021-2025
 Compte de capital,variation_stocks,Variation de stocks,P.52,snf,Sociétés non financières,emplois,vide,,,2024,-7613.2,2021-2025
 Compte financier,actions_opc,Actions et titres d’OPC,F.5,apu,Administrations publiques,emplois,renvoi,Les entreprises publiques,entreprises_publiques/_cessions.html,2024,371.7,2021-2025
