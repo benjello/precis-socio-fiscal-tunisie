@@ -57,6 +57,7 @@ BOOKS = [
     "energie",
     "cadre",
     "agriculture",
+    "synthese",
 ]
 
 LANGS = ("fr", "ar")
