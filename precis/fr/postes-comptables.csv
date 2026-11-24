@@ -16,3 +16,6 @@ assistance-sociale,Compte de distribution secondaire du revenu,D.62,prestations_
 consommation-sante,Compte d'utilisation du revenu disponible,P.3,consommation_finale,emplois,apu_centrale;apu_secu,,sante,_couverture,sec-sante-couverture,,,,,,
 consommation-education,Compte d'utilisation du revenu disponible,P.3,consommation_finale,emplois,apu_centrale,,education,_depense,sec-educ-depense,,,,,,
 transferts-collectivites,Compte de distribution secondaire du revenu,D.73,transferts_entre_administrations,ressources,apu_centrale,apu_locale,finances_locales,_transferts,sec-fl-transferts,finances-locales-communes-agregats,transferts_etat_fonctionnement,lu,2008-2023,599.1,dgct-donnees-ouvertes
+taxe-formation-professionnelle,Compte d'affectation des revenus primaires,D.29,autres_impots_production,ressources,snf;sf,apu_centrale,cotisations_sociales,_prelevements_salaires,sec-cot-tfp,,,,,,
+foprolos,Compte d'affectation des revenus primaires,D.29,autres_impots_production,ressources,snf;sf,apu_centrale,cotisations_sociales,_prelevements_salaires,sec-cot-foprolos,,,,,,
+moyens-services-etat,Compte de production,P.2,consommation_intermediaire,emplois,apu_centrale,snf,annexe-budget-etat,,sec-bud-desagregation,budget-desagregation-nature,moyens_MDT,lu,1986-2025,2273.7,minfin-repartition-depenses-xls

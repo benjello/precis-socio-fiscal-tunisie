@@ -16,3 +16,6 @@ assistance-sociale,prestations_especes,D.62,apu_centrale,menages,,prestations_so
 consommation-sante,consommation_finale,P.3,apu_centrale;apu_secu,,,sante,sante/_couverture#sec-sante-couverture
 consommation-education,consommation_finale,P.3,apu_centrale,,,education,education/_depense#sec-educ-depense
 transferts-collectivites,transferts_entre_administrations,D.73,apu_centrale,apu_locale,599.1,finances_locales,finances_locales/_transferts#sec-fl-transferts
+taxe-formation-professionnelle,autres_impots_production,D.29,snf;sf,apu_centrale,,cotisations_sociales,cotisations_sociales/_prelevements_salaires#sec-cot-tfp
+foprolos,autres_impots_production,D.29,snf;sf,apu_centrale,,cotisations_sociales,cotisations_sociales/_prelevements_salaires#sec-cot-foprolos
+moyens-services-etat,consommation_intermediaire,P.2,apu_centrale,snf,2273.7,annexe-budget-etat,annexe-budget-etat#sec-bud-desagregation
