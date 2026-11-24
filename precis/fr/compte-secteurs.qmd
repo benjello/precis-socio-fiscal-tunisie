@@ -1,0 +1,60 @@
+---
+title: "Les comptes des secteurs et leurs domiciles dans l'ouvrage"
+subtitle: "Pour chaque secteur, ses opérations de l'année de référence et les postes de l'ouvrage qui s'y rattachent"
+lang: fr
+format:
+  html:
+    toc: true
+    page-layout: full
+    include-in-header: ../accueil.html
+bibliography:
+  - references.json
+---
+
+[← Retour à l'accueil](index.html) · [Le compte reconstruit des administrations publiques](compte-apu.html) · [Les comptes nationaux et les volumes](correspondance-comptes.html)
+
+```{python}
+#| echo: false
+import csv
+_l = list(csv.DictReader(open("compte-secteurs-reconstruit.csv", encoding="utf-8")))
+AN, ED = _l[0]["annee"], _l[0]["edition"]
+def n(v):
+    return "" if v in ("", None) else f"{float(v):,.1f}".replace(",", " ").replace(".", ",")
+```
+
+Cette page étend aux autres secteurs le [compte reconstruit des administrations publiques](compte-apu.html). Pour chaque secteur des comptes de l'INS [@ins-cnat-2015], elle liste les opérations de l'année de référence et les **postes** de l'ouvrage qui s'y rattachent. Un poste est rattaché quand le secteur figure du côté de l'opération : parmi ceux qui versent pour un emploi, parmi ceux qui reçoivent pour une ressource.
+
+::: {.callout-note}
+Le montant d'un poste n'est pas rapproché ici du montant du secteur. Un poste chiffre souvent l'opération pour plusieurs secteurs à la fois, ou seulement une partie de ce que le secteur reçoit : les intérêts de la dette de l'État ne sont qu'une partie des intérêts reçus par les sociétés financières. La page dit quelles cases ont un domicile dans l'ouvrage, et leur part dans les montants du secteur.
+:::
+
+```{python}
+#| echo: false
+#| output: asis
+print(f"Année de référence **{AN}**, édition {ED}. Soldes, compte financier et agrégats dont une composante est imprimée sont exclus.\n")
+print("| Secteur | Opérations | Avec un domicile | Part des montants avec un domicile |")
+print("|---|--:|--:|--:|")
+for code in ("S13", "S14", "S11", "S12", "S2"):
+    ls = [l for l in _l if l["secteur"] == code]
+    d = sum(float(l["part_pct"]) for l in ls if l["postes"] and l["part_pct"]) / 2
+    print(f"| {ls[0]['nom']} ({code}) | {len(ls)} | {sum(bool(l['postes']) for l in ls)} | {d:.1f} % |".replace(".", ","))
+print(f"\n: Les cases des comptes des secteurs qui ont un domicile dans l'ouvrage, {AN} (moyenne des parts des emplois et des ressources) {{#tbl-csec-synthese}}")
+```
+
+```{python}
+#| echo: false
+#| output: asis
+for code, ancre in (("S14", "menages"), ("S11", "snf"), ("S12", "sf"), ("S2", "rdm")):
+    ls = [l for l in _l if l["secteur"] == code]
+    print(f"\n## {ls[0]['nom'].capitalize()} ({code}) {{#sec-csec-{ancre}}}\n")
+    print("| Côté | Opération | Montant | Part du côté | Postes de l'ouvrage |")
+    print("|---|---|--:|--:|---|")
+    for l in ls:
+        print(f"| {l['cote']} | {l['code_scn']} {l['libelle_ins']} | {n(l['valeur_md'])} | {n(l['part_pct'])} % | {l['postes'].replace(';', ', ') or '—'} |")
+    print(f"\n: {ls[0]['nom'].capitalize()}, opérations de {AN} et domiciles dans l'ouvrage (millions de dinars courants) {{#tbl-csec-{ancre}}}")
+```
+
+## Références {.unnumbered}
+
+::: {#refs}
+:::
