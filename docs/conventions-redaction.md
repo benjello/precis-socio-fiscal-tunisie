@@ -1,21 +1,21 @@
-# Conventions de rédaction du précis
+# Conventions de rédaction de l'ouvrage
 
-## 1. Le précis documente la loi, jamais le modèle
+## 1. L'ouvrage documente la loi, jamais le modèle
 
 C'est la règle qui commande toutes les autres, et elle est absolue dans le texte rendu des
 **volumes**. La documentation générale — le `README`, la page « À propos » du site — peut dire
 d'où viennent les tableaux et nommer le modèle ; un chapitre, jamais.
 `scripts/check_pas_de_modele.py` ne contrôle donc que les fichiers des volumes.
 
-`openfisca-tunisia` **ne se mentionne pas** dans les volumes du précis : ni son nom, ni « le modèle »,
-ni « les paramètres du modèle », ni le fait qu'un chiffre en soit tiré. Le lecteur du précis
+`openfisca-tunisia` **ne se mentionne pas** dans les volumes de l'ouvrage : ni son nom, ni « le modèle »,
+ni « les paramètres du modèle », ni le fait qu'un chiffre en soit tiré. Le lecteur de l'ouvrage
 lit du droit socio-fiscal tunisien ; il n'a pas à savoir qu'un modèle de microsimulation
 existe, encore moins à en connaître les défauts.
 
 Le rapport entre les deux dépôts est l'inverse de ce que cette mention laisserait croire.
 **L'arborescence de paramètres du modèle sert de base de données aux paramètres de la
-législation du précis**, autant que faire se peut : c'est un magasin de valeurs datées et
-sourcées, alimenté par le dépouillement du *Journal officiel*. Le précis, lui, permet de
+législation de l'ouvrage**, autant que faire se peut : c'est un magasin de valeurs datées et
+sourcées, alimenté par le dépouillement du *Journal officiel*. L'ouvrage, lui, permet de
 comprendre ce qu'on fait dans le modèle — pas l'inverse. Un tableau engendré depuis cette
 base présente donc des **faits de droit**, appuyés sur le texte cité dans le tableau
 lui-même, et non « ce que porte le modèle ».
@@ -30,7 +30,7 @@ que chaque lien répond.
 
 ### Ce qui en découle, cas par cas
 
-**Le mot « modèle » n'est pas interdit ; c'est l'outil de calcul du précis qui l'est.** Les
+**Le mot « modèle » n'est pas interdit ; c'est l'outil de calcul de l'ouvrage qui l'est.** Les
 modèles des économistes sont des termes de la discipline et s'écrivent tels quels : « modèle
 d'équilibre général », « modèle économétrique » d'une étude citée. De même les emplois du
 droit — « le modèle français de carrière », « le modèle de la déclaration ». On ne les
@@ -45,7 +45,7 @@ son évolution repérable, sans être qualifiée d'établie.
 
 **Ce que les textes n'établissent pas se dit sans nommer le modèle.** « Le partage des
 1,20 % entre maladie, maternité et décès n'est fixé par aucun texte identifié » est une
-phrase du précis. « Le modèle porte 0,24 % de maternité, sans source » n'en est pas une :
+phrase de l'ouvrage. « Le modèle porte 0,24 % de maternité, sans source » n'en est pas une :
 elle parle du modèle. La première dit au lecteur ce qu'il doit savoir — le tableau qu'il
 lit comporte une part non attestée ; la seconde lui parle d'un outil dont il n'a que faire.
 
@@ -235,21 +235,29 @@ chapitre, non à la première formule.
 
 ## 4. Le découpage des livres
 
-Décidé le 17 octobre 2026. Le détail, les phases et l'arborescence cible à trois niveaux vivent
-dans `docs/notes/chantier-decoupage-livres.md` ; cette section en donne les règles, que chaque
-rôle applique.
+Décidé le 17 octobre 2026, révisé le 24 novembre 2026 (rangement selon la séquence des comptes
+nationaux). Le détail, les phases et l'arborescence cible à trois niveaux vivent dans
+`docs/notes/chantier-decoupage-livres.md` ; la charte publiée est `precis/fr/principes-structure.qmd`,
+que cette section ne doit pas contredire. Elle donne les règles, que chaque rôle
+applique.
 
-**Six parties.** Les livres se rangent par ce que le texte documente, non par l'ordre où ils ont
-été écrits.
+**Neuf parties.** Les livres se rangent selon la séquence des comptes nationaux, non par l'ordre où
+ils ont été écrits. Un livre à cheval sur deux comptes reste entier : il est domicilié au compte où
+passe l'essentiel de ses flux, et les autres parties y renvoient. Les secteurs institutionnels
+forment un second axe, porté par une table de correspondance à venir ; aucun code d'opération
+n'est écrit dans les pages publiées.
 
-| Partie | Livres | Principe |
+| Partie | Compte | Livres |
 |---|---|---|
-| I. Les revenus primaires | Le marché du travail ; les rémunérations publiques ; l'informel | flux |
-| II. Les prélèvements | La fiscalité ; les finances locales ; les cotisations sociales | flux |
-| III. Les transferts sociaux : prestations en espèces et prestations en nature | Les retraites ; les prestations sociales | flux |
-| IV. Les politiques sectorielles | La santé ; la compensation ; l'éducation ; le transport ; plus tard l'agriculture (le soutien au producteur), le logement et l'environnement, dans un ordre non arrêté | secteur |
-| V. Les institutions | Les caisses de sécurité sociale ; les entreprises publiques | institution |
-| VI. La synthèse | Le cadre des finances publiques ; la redistribution | ensemble |
+| 0. Le cadre | — | La population ; le cadre des comptes et des finances publiques (tous deux à venir) |
+| I. La production | compte de production | L'agriculture ; le transport ; l'environnement ; plus tard les industries, l'énergie et les mines, le tourisme et les services, le logement et la construction |
+| II. La formation des revenus | compte d'exploitation, revenus de la propriété | Le marché du travail ; les rémunérations publiques ; l'informel ; la compensation |
+| III. La distribution secondaire du revenu | impôts sur le revenu et le patrimoine, cotisations, prestations en espèces, transferts entre administrations | La fiscalité ; les finances locales ; les cotisations sociales ; les caisses de sécurité sociale ; les retraites ; les prestations sociales |
+| IV. La redistribution en nature | transferts sociaux en nature | La santé ; l'éducation et la formation |
+| V. L'utilisation du revenu | consommation finale, épargne | plus tard la consommation et les niveaux de vie |
+| VI. L'accumulation | compte de capital, compte financier | Les entreprises publiques ; plus tard l'investissement |
+| VII. Le reste du monde | opérations avec l'extérieur | plus tard les échanges extérieurs |
+| VIII. La synthèse | — | La redistribution d'ensemble ; l'état de l'art (à venir) |
 
 **La règle de domicile entre livres.** Un dispositif vit dans un seul livre ; l'autre en reçoit
 une phrase et un lien en tête de section, ou, quand la lecture ne peut pas avancer sans, une figure
@@ -264,9 +272,13 @@ ou un tableau court tiré des mêmes données, jamais la prose recopiée.
   hôpital, médecine de ville) : la santé.
 - Un prix ou un tarif administré : la compensation.
 - Une règle de salaire : les revenus du travail (marché du travail, rémunérations publiques).
-- Le statut et les comptes d'une entreprise publique : les entreprises publiques.
+- Le statut et les comptes d'une entreprise publique : les entreprises publiques ; son activité :
+  le livre de sa branche.
+- La description d'une branche d'activité : le livre de la branche ; le cadre n'en donne que
+  l'agrégat.
 
-**Les livres sectoriels.** Un dispositif vit dans le livre sectoriel quand il n'existe que pour ce
+**Les livres de branche et les livres sectoriels.** Un dispositif vit dans le livre de branche ou
+le livre sectoriel quand il n'existe que pour ce
 secteur (bourses, cantines, tarif du transport public) ; il vit dans le livre de flux quand il est
 un cas d'un instrument général (déduction fiscale pour frais de scolarité : fiscalité ; salaire des
 enseignants : rémunérations publiques). Leur épine est budgétaire plus que législative :
@@ -284,7 +296,9 @@ synthèse.
 **Les types de chapitres**, reconnaissables à leur titre : dispositif (plan type à épine
 chronologique) ; institution (naissance, statut, ce qu'elle sert, comptes, longue période) ;
 cadre (notions, un seul par livre, en tête) ; longue période du livre (budgétaire seul) ; rapports
-et études (chacun avec sa méthode). Les notations, listes, textes modificatifs et tableaux annexés
+et études (chacun avec sa méthode) ; branche (poids dans la valeur ajoutée et l'emploi, structure,
+filières, échanges). Un livre de branche suit le plan : la branche, les institutions, les dispositifs
+propres au secteur, la dépense publique sur la longue période, les rapports et études. Les notations, listes, textes modificatifs et tableaux annexés
 sont des annexes, déclarées comme telles dans `_quarto.yml`.
 
 **Le critère de scission.** Un chapitre suit une seule épine chronologique — trois à six grandes
@@ -306,7 +320,7 @@ livre où il vit), qui remplace les sections « ce que ce livre ne traite pas »
   « le contexte » (ce qu'en disent les sources) restent distincts.
 - *Le livre* : la présentation porte une frise des dates clés de tous ses dispositifs sur un seul
   axe, avec la filiation des régimes et des institutions.
-- *Le site* : le cadre des finances publiques ouvre sur une périodisation commune (Protectorat ;
+- *Le site* : le volume de cadre ouvre sur une périodisation commune (Protectorat ;
   indépendance et État bâtisseur ; expérience collectiviste et son abandon ; années 1970 ;
   ajustement structurel de 1986 ; années 1990-2000 ; 2011 et après), que toute épine se lit contre.
 

@@ -34,7 +34,7 @@ Rien d'autre : ni récit du cheminement, ni code cité en entier — les chemins
 scripts/verifier.sh [livre…]                                # glossaire, contrôles, liens, tests, rendu
 uv run python scripts/build_glossary.py                    # verrou de synchro du glossaire
 cd precis/fr/<livre> && uv run quarto render --to html     # zéro citation [?] non résolue
-uv run python scripts/check_pas_de_modele.py               # le précis ne parle pas du modèle
+uv run python scripts/check_pas_de_modele.py               # l'ouvrage ne parle pas du modèle
 ./build.sh                                                  # les volumes disponibles, FR et AR
 ```
 

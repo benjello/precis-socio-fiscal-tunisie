@@ -1,5 +1,5 @@
 ---
-title: "Comment ce précis est constitué"
+title: "Comment cet ouvrage est constitué"
 subtitle: "Les sources, l'entrepôt de données, le recours à l'intelligence artificielle"
 format:
   html:
@@ -10,9 +10,9 @@ format:
 
 ## Un travail fait avec l'intelligence artificielle
 
-Le précis est écrit avec un recours massif à l'intelligence artificielle : elle sert à retrouver les textes au *Journal officiel*, à rassembler les données, et à rédiger. L'auteur oriente ce travail, le relit et le valide ; il en répond. Chaque affirmation renvoie au texte qui la fonde, pour que le lecteur puisse la vérifier lui-même. C'est un texte en évolution, corrigé et complété en continu : il n'a pas l'autorité d'une publication officielle.
+L'ouvrage est écrit avec un recours massif à l'intelligence artificielle : elle sert à retrouver les textes au *Journal officiel*, à rassembler les données, et à rédiger. L'auteur oriente ce travail, le relit et le valide ; il en répond. Chaque affirmation renvoie au texte qui la fonde, pour que le lecteur puisse la vérifier lui-même. C'est un texte en évolution, corrigé et complété en continu : il n'a pas l'autorité d'une publication officielle.
 
-Le travail est divisé en rôles, chacun confié à un agent d'intelligence artificielle dont la consigne est publique : le documentaliste rassemble les textes et les sources ; le bibliographe verse les références ; le terminologue tient le glossaire bilingue ; l'architecte arrête le plan d'un chapitre ; le rédacteur l'écrit ; l'économiste établit l'état des connaissances ; le relecteur de l'arabe contrôle la version arabe. La chaîne s'arrête chaque fois pour une relecture humaine avant publication. Les consignes de chaque rôle sont dans le [dossier des agents](https://github.com/benjello/precis-socio-fiscal-tunisie/tree/master/docs/agents) du dépôt du précis.
+Le travail est divisé en rôles, chacun confié à un agent d'intelligence artificielle dont la consigne est publique : le documentaliste rassemble les textes et les sources ; le bibliographe verse les références ; le terminologue tient le glossaire bilingue ; l'architecte arrête le plan d'un chapitre ; le rédacteur l'écrit ; l'économiste établit l'état des connaissances ; le relecteur de l'arabe contrôle la version arabe. La chaîne s'arrête chaque fois pour une relecture humaine avant publication. Les consignes de chaque rôle sont dans le [dossier des agents](https://github.com/benjello/precis-socio-fiscal-tunisie/tree/master/docs/agents) du dépôt de l'ouvrage.
 
 ## Les sources
 
@@ -20,7 +20,7 @@ Les textes de loi sont lus au *Journal officiel de la République tunisienne*, d
 
 ## L'entrepôt de données
 
-Les séries chiffrées du précis ne sont pas saisies dans les chapitres : elles viennent d'un entrepôt de données, tenu à part, que les chapitres lisent. Il compte aujourd'hui plus de deux cents séries. Pour chacune, il garde :
+Les séries chiffrées de l'ouvrage ne sont pas saisies dans les chapitres : elles viennent d'un entrepôt de données, tenu à part, que les chapitres lisent. Il compte aujourd'hui plus de deux cents séries. Pour chacune, il garde :
 
 - la **source brute**, telle qu'elle a été publiée (rapport en PDF, classeur, page web archivée) ;
 - sa **transcription figée**, quand la source est un document imprimé ou scanné, avec la page d'où vient chaque valeur ;
@@ -32,4 +32,4 @@ Il rassemble des publications de l'Institut national de la statistique (comptes 
 
 ## Les tableaux de paramètres
 
-Les tableaux de paramètres du précis sont engendrés depuis la base de données législative d'[OpenFisca-Tunisia](https://github.com/openfisca/openfisca-tunisia), le modèle de microsimulation du système socio-fiscal tunisien : chaque valeur y est datée et rattachée au texte qui la fonde. Les sources du précis et les programmes qui le produisent sont publics, sur [la page du projet](https://github.com/benjello/precis-socio-fiscal-tunisie).
+Les tableaux de paramètres de l'ouvrage sont engendrés depuis la base de données législative d'[OpenFisca-Tunisia](https://github.com/openfisca/openfisca-tunisia), le modèle de microsimulation du système socio-fiscal tunisien : chaque valeur y est datée et rattachée au texte qui la fonde. Les sources de l'ouvrage et les programmes qui le produisent sont publics, sur [la page du projet](https://github.com/benjello/precis-socio-fiscal-tunisie).

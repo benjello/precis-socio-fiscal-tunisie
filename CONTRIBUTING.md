@@ -1,6 +1,6 @@
-# Contribuer au précis
+# Contribuer à l'ouvrage
 
-Le précis est un travail en cours. Il s'améliore par ceux qui connaissent le terrain : cadres des
+L'ouvrage est un travail en cours. Il s'améliore par ceux qui connaissent le terrain : cadres des
 caisses et des administrations, universitaires, praticiens. **Aucune compétence technique n'est
 nécessaire** — un message suffit.
 
@@ -20,7 +20,7 @@ nécessaire** — un message suffit.
 **Par message.** Si vous avez reçu un message de l'auteur, répondez-y simplement : votre remarque
 sera consignée dans le suivi public du projet, pour qu'elle ne se perde pas.
 
-**Par un ticket**, si vous avez un compte GitHub ou acceptez d'en créer un : chaque page du précis
+**Par un ticket**, si vous avez un compte GitHub ou acceptez d'en créer un : chaque page de l'ouvrage
 porte un lien « Faire part d'un problème », qui ouvre un ticket sur
 [la page de suivi](https://github.com/benjello/precis-socio-fiscal-tunisie/issues). Écrivez-y en
 français ou en arabe.
@@ -34,7 +34,7 @@ arabe en est dérivée et ne se modifie pas à la main. Les règles d'écriture 
 
 - **Une source** : un texte, un document, une publication. L'ouvrage ne retient aucune valeur ni
   aucune date sans source vérifiée ; une case vide vaut mieux qu'une valeur plausible.
-- **Un ton documentaire** : le précis décrit le droit et son évolution ; il ne le juge pas.
+- **Un ton documentaire** : l'ouvrage décrit le droit et son évolution ; il ne le juge pas.
 
 ## Reconnaissance
 
