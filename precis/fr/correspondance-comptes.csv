@@ -1,13 +1,13 @@
 compte,operation,libelle,code_scn2008,secteur,secteur_libelle,cote,couverture,volumes,pages,annee,niveau_md,edition
 Compte de production,consommation_intermediaire,Consommation intermédiaire,P.2,apu,Administrations publiques,emplois,vide,,,2024,4413.9,2021-2025
-Compte de production,consommation_intermediaire,Consommation intermédiaire,P.2,menages,Ménages,emplois,vide,,,2024,28931.0,2021-2025
+Compte de production,consommation_intermediaire,Consommation intermédiaire,P.2,menages,Ménages,emplois,renvoi,L'énergie ; L'industrie et les mines ; Le logement et la construction,energie/ ; industrie/ ; logement/,2024,28931.0,2021-2025
 Compte de production,consommation_intermediaire,Consommation intermédiaire,P.2,sf,Sociétés financières,emplois,vide,,,2024,2266.2,2021-2025
-Compte de production,consommation_intermediaire,Consommation intermédiaire,P.2,snf,Sociétés non financières,emplois,vide,,,2024,95078.8,2021-2025
+Compte de production,consommation_intermediaire,Consommation intermédiaire,P.2,snf,Sociétés non financières,emplois,renvoi,L'énergie ; L'industrie et les mines ; Le logement et la construction,energie/ ; industrie/ ; logement/,2024,95078.8,2021-2025
 Compte de production,production,Production des biens et services,P.1,apu,Administrations publiques,ressources,renvoi,Les rémunérations dans le secteur public,remunerations_publiques/,2024,32253.7,2021-2025
-Compte de production,production,Production des biens et services,P.1,menages,Ménages,ressources,renvoi,L'agriculture ; Le transport ; L'environnement,agriculture/ ; transport/ ; environnement/,2024,86731.8,2021-2025
+Compte de production,production,Production des biens et services,P.1,menages,Ménages,ressources,renvoi,L'agriculture ; Le transport ; L'environnement ; L'énergie ; L'industrie et les mines ; Le logement et la construction,agriculture/ ; transport/ ; environnement/ ; energie/ ; industrie/ ; logement/,2024,86731.8,2021-2025
 Compte de production,production_bs_marchands,Production des biens et services marchands,P.1,apu,Administrations publiques,ressources,renvoi,Les rémunérations dans le secteur public,remunerations_publiques/,2024,1822.2,2021-2025
 Compte de production,production_bs_marchands,Production des biens et services marchands,P.1,sf,Sociétés financières,ressources,vide,,,2024,9102.1,2021-2025
-Compte de production,production_bs_marchands,Production des biens et services marchands,P.1,snf,Sociétés non financières,ressources,renvoi,L'agriculture ; Le transport ; L'environnement,agriculture/ ; transport/ ; environnement/,2024,154236.0,2021-2025
+Compte de production,production_bs_marchands,Production des biens et services marchands,P.1,snf,Sociétés non financières,ressources,renvoi,L'agriculture ; Le transport ; L'environnement ; L'énergie ; L'industrie et les mines ; Le logement et la construction,agriculture/ ; transport/ ; environnement/ ; energie/ ; industrie/ ; logement/,2024,154236.0,2021-2025
 Compte de production,production_marchande,Production marchande,P.11,menages,Ménages,ressources,renvoi,L'agriculture ; Le transport ; L'environnement,agriculture/ ; transport/ ; environnement/,2024,76477.1,2021-2025
 Compte de production,production_marchande,Production Marchande,P.11,sf,Sociétés financières,ressources,vide,,,2024,2809.9,2021-2025
 Compte de production,production_non_marchande,Production des services non marchands,P.13,apu,Administrations publiques,ressources,renvoi,Les rémunérations dans le secteur public,remunerations_publiques/,2024,30431.5,2021-2025
@@ -36,7 +36,7 @@ Compte d'exploitation,revenu_exploitation,Revenu d'exploitation,B.2g/B.3g,menage
 Compte d'exploitation,revenu_exploitation,Revenu d'exploitation,B.2g/B.3g,sf,Sociétés financières,emplois,solde,Les comptes de la nation,annexe-comptes-nation.html#sec-cn-comptes-secteurs,2024,2880.5,2021-2025
 Compte d'exploitation,revenu_exploitation,Revenu d'exploitation,B.2g/B.3g,snf,Sociétés non financières,emplois,solde,Les comptes de la nation,annexe-comptes-nation.html#sec-cn-comptes-secteurs,2024,23764.6,2021-2025
 Compte d'exploitation,salaires_bruts,Salaires bruts,D.11,apu,Administrations publiques,emplois,renvoi,Le marché du travail,marche_travail/_salaire_minimum.html,2024,19553.0,2021-2025
-Compte d'exploitation,solde_echanges_exterieurs,Solde des échanges extérieurs de Biens,B.11,rdm,Reste du monde,ressources,solde,Les comptes de la nation,annexe-comptes-nation.html#sec-cn-comptes-secteurs,2024,10186.1,2021-2025
+Compte d'exploitation,solde_echanges_exterieurs,Solde des échanges extérieurs de Biens,B.11,rdm,Reste du monde,ressources,renvoi,Les échanges extérieurs,echanges/,2024,10186.1,2021-2025
 Compte d'exploitation,valeur_ajoutee_brute,Valeur ajoutée brute,B.1g,apu,Administrations publiques,ressources,renvoi,Les comptes de la nation,annexe-comptes-nation.html#sec-cn-comptes-secteurs,2024,27839.8,2021-2025
 Compte d'exploitation,valeur_ajoutee_brute,Valeur ajoutée brute,B.1g,menages,Ménages,ressources,renvoi,Les comptes de la nation,annexe-comptes-nation.html#sec-cn-comptes-secteurs,2024,57800.8,2021-2025
 Compte d'exploitation,valeur_ajoutee_brute,Valeur ajoutée brute,B.1g,sf,Sociétés financières,ressources,renvoi,Les comptes de la nation,annexe-comptes-nation.html#sec-cn-comptes-secteurs,2024,6835.9,2021-2025
@@ -52,7 +52,7 @@ Compte d'affectation des revenus primaires,interets,Intérêts,D.41,apu,Administ
 Compte d'affectation des revenus primaires,interets,Intérêts,D.41,menages,Ménages,ressources,vide,,,2024,4635.8,2021-2025
 Compte d'affectation des revenus primaires,interets,Intérêts,D.41,rdm,Reste du monde,emplois,vide,,,2024,961.0,2021-2025
 Compte d'affectation des revenus primaires,interets,Intérêts,D.41,rdm,Reste du monde,ressources,vide,,,2024,1984.4,2021-2025
-Compte d'affectation des revenus primaires,interets,Intérêts,D.41,sf,Sociétés financières,emplois,vide,,,2024,11907.2,2021-2025
+Compte d'affectation des revenus primaires,interets,Intérêts,D.41,sf,Sociétés financières,emplois,renvoi,Le cadre,cadre/_monnaie_credit.html,2024,11907.2,2021-2025
 Compte d'affectation des revenus primaires,interets,Intérêts,D.41,snf,Sociétés non financières,emplois,vide,,,2024,3473.3,2021-2025
 Compte d'affectation des revenus primaires,interets,Intérêts,D.41,snf,Sociétés non financières,ressources,vide,,,2024,1234.3,2021-2025
 Compte d'affectation des revenus primaires,loyers,Loyers nets des terres et redevances,D.45,apu,Administrations publiques,ressources,vide,,,2024,1722.4,2021-2025
@@ -80,8 +80,8 @@ Compte d'affectation des revenus primaires,revenus_propriete,Revenus de la propr
 Compte d'affectation des revenus primaires,revenus_propriete,Revenus de la propriété,D.4,menages,Ménages,ressources,vide,,,2024,8959.9,2021-2025
 Compte d'affectation des revenus primaires,revenus_propriete,Revenus de la propriété,D.4,rdm,Reste du monde,emplois,vide,,,2024,3404.0,2021-2025
 Compte d'affectation des revenus primaires,revenus_propriete,Revenus de la propriété,D.4,rdm,Reste du monde,ressources,vide,,,2024,6742.6,2021-2025
-Compte d'affectation des revenus primaires,revenus_propriete,Revenus de la propriété,D.4,sf,Sociétés financières,emplois,vide,,,2024,14594.7,2021-2025
-Compte d'affectation des revenus primaires,revenus_propriete,Revenus de la propriété,D.4,sf,Sociétés financières,ressources,vide,,,2024,16400.4,2021-2025
+Compte d'affectation des revenus primaires,revenus_propriete,Revenus de la propriété,D.4,sf,Sociétés financières,emplois,renvoi,Le cadre,cadre/_monnaie_credit.html,2024,14594.7,2021-2025
+Compte d'affectation des revenus primaires,revenus_propriete,Revenus de la propriété,D.4,sf,Sociétés financières,ressources,renvoi,Le cadre,cadre/_monnaie_credit.html,2024,16400.4,2021-2025
 Compte d'affectation des revenus primaires,revenus_propriete,Revenus de la propriété,D.4,snf,Sociétés non financières,emplois,vide,,,2024,11840.5,2021-2025
 Compte d'affectation des revenus primaires,revenus_propriete,Revenus de la propriété,D.4,snf,Sociétés non financières,ressources,vide,,,2024,1366.9,2021-2025
 Compte d'affectation des revenus primaires,revenus_propriete_assures,Revenus de la propriété attribués aux assurés,D.44,menages,Ménages,ressources,vide,,,2024,499.5,2021-2025
@@ -138,7 +138,7 @@ Compte de distribution secondaire du revenu,transferts_courants_divers,Autres tr
 Compte de distribution secondaire du revenu,transferts_courants_divers,Autres transferts courants divers,D.75,rdm,Reste du monde,ressources,vide,,,2024,1263.2,2021-2025
 Compte de distribution secondaire du revenu,transferts_courants_divers,Autres transferts courants divers,D.75,snf,Sociétés non financières,emplois,vide,,,2024,1058.4,2021-2025
 Compte d'utilisation du revenu disponible,consommation_finale,Dépense de consommation finale,P.3,apu,Administrations publiques,emplois,renvoi,La santé ; L'éducation et la formation,sante/_couverture.html ; education/_depense.html,2024,32051.9,2021-2025
-Compte d'utilisation du revenu disponible,consommation_finale,Dépense de consommation finale,P.3,menages,Ménages,emplois,vide,,,2024,125362.2,2021-2025
+Compte d'utilisation du revenu disponible,consommation_finale,Dépense de consommation finale,P.3,menages,Ménages,emplois,domicile,La consommation et les niveaux de vie,consommation/,2024,125362.2,2021-2025
 Compte d'utilisation du revenu disponible,epargne_brute,Epargne brute,B.8g,apu,Administrations publiques,emplois,solde,Les comptes de la nation,annexe-comptes-nation.html#sec-cn-comptes-secteurs,2024,-88.6,2021-2025
 Compte d'utilisation du revenu disponible,epargne_brute,Epargne brute,B.8g,menages,Ménages,emplois,solde,Les comptes de la nation,annexe-comptes-nation.html#sec-cn-comptes-secteurs,2024,3424.3,2021-2025
 Compte d'utilisation du revenu disponible,epargne_brute,Epargne brute,B.8g,sf,Sociétés financières,emplois,solde,Les comptes de la nation,annexe-comptes-nation.html#sec-cn-comptes-secteurs,2024,2872.9,2021-2025
@@ -161,8 +161,8 @@ Compte de capital,epargne_brute,Epargne brute,B.8g,menages,Ménages,ressources,s
 Compte de capital,epargne_brute,Epargne brute,B.8g,sf,Sociétés financières,ressources,solde,Les comptes de la nation,annexe-comptes-nation.html#sec-cn-comptes-secteurs,2024,2872.9,2021-2025
 Compte de capital,epargne_brute,Epargne brute,B.8g,snf,Sociétés non financières,ressources,solde,Les comptes de la nation,annexe-comptes-nation.html#sec-cn-comptes-secteurs,2024,3153.9,2021-2025
 Compte de capital,fbcf,Formation Brute de capitale Fixe,P.51g,apu,Administrations publiques,emplois,renvoi,Le transport ; L'environnement,transport/_infrastructure.html ; environnement/_depense.html,2024,6190.7,2021-2025
-Compte de capital,fbcf,Formation Brute de capitale Fixe,P.51g,menages,Ménages,emplois,vide,,,2024,7714.9,2021-2025
-Compte de capital,fbcf,Formation Brute de capitale Fixe,P.51g,sf,Sociétés financières,emplois,vide,,,2024,614.3,2021-2025
+Compte de capital,fbcf,Formation Brute de capitale Fixe,P.51g,menages,Ménages,emplois,renvoi,L'investissement,investissement/,2024,7714.9,2021-2025
+Compte de capital,fbcf,Formation Brute de capitale Fixe,P.51g,sf,Sociétés financières,emplois,renvoi,L'investissement,investissement/,2024,614.3,2021-2025
 Compte de capital,fbcf,Formation Brute de capitale Fixe,P.51g,snf,Sociétés non financières,emplois,renvoi,Les entreprises publiques,entreprises_publiques/_longue_periode.html,2024,9828.5,2021-2025
 Compte de capital,solde_operations_courantes,Solde des opérations courantes avec,B.12,rdm,Reste du monde,ressources,solde,Les comptes de la nation,annexe-comptes-nation.html#sec-cn-comptes-secteurs,2024,3262.3,2021-2025
 Compte de capital,transferts_capital,Transferts en capital,D.9,apu,Administrations publiques,emplois,renvoi,La fiscalité,fiscalite/_regimes_incitation.html,2024,3737.4,2021-2025
@@ -173,15 +173,15 @@ Compte de capital,transferts_capital,Transferts en capital,D.9,rdm,Reste du mond
 Compte de capital,transferts_capital,Transferts en capital,D.9,rdm,Reste du monde,ressources,vide,,,2024,31.0,2021-2025
 Compte de capital,transferts_capital,Transferts en capital,D.9,snf,Sociétés non financières,emplois,renvoi,Les entreprises publiques,entreprises_publiques/_restructuration.html,2024,446.5,2021-2025
 Compte de capital,transferts_capital,Transferts en capital,D.9,snf,Sociétés non financières,ressources,renvoi,Les entreprises publiques,entreprises_publiques/_restructuration.html,2024,2344.4,2021-2025
-Compte de capital,variation_stocks,Variation de stocks,P.52,menages,Ménages,emplois,vide,,,2024,-4110.5,2021-2025
-Compte de capital,variation_stocks,Variation de stocks,P.52,snf,Sociétés non financières,emplois,vide,,,2024,-7613.2,2021-2025
+Compte de capital,variation_stocks,Variation de stocks,P.52,menages,Ménages,emplois,renvoi,L'investissement,investissement/,2024,-4110.5,2021-2025
+Compte de capital,variation_stocks,Variation de stocks,P.52,snf,Sociétés non financières,emplois,renvoi,L'investissement,investissement/,2024,-7613.2,2021-2025
 Compte financier,actions_opc,Actions et titres d’OPC,F.5,apu,Administrations publiques,emplois,renvoi,Les entreprises publiques,entreprises_publiques/_cessions.html,2024,371.7,2021-2025
 Compte financier,actions_opc,Actions et titres d’OPC,F.5,apu,Administrations publiques,ressources,renvoi,Les entreprises publiques,entreprises_publiques/_cessions.html,2021,0.0,2018-2022
 Compte financier,actions_opc,Actions et titres d'OPC,F.5,menages,Ménages,emplois,vide,,,2024,-471.7,2021-2025
 Compte financier,actions_opc,Actions et titres d'OPC,F.5,rdm,Reste du monde,emplois,vide,,,2024,2260.2,2021-2025
 Compte financier,actions_opc,Actions et titres d'OPC,F.5,rdm,Reste du monde,ressources,vide,,,2024,167.4,2021-2025
-Compte financier,actions_opc,Actions et titres d’OPC,F.5,sf,Sociétés financières,emplois,vide,,,2024,-52.2,2021-2025
-Compte financier,actions_opc,Actions et titres d’OPC,F.5,sf,Sociétés financières,ressources,vide,,,2024,4563.3,2021-2025
+Compte financier,actions_opc,Actions et titres d’OPC,F.5,sf,Sociétés financières,emplois,renvoi,Le cadre,cadre/_monnaie_credit.html,2024,-52.2,2021-2025
+Compte financier,actions_opc,Actions et titres d’OPC,F.5,sf,Sociétés financières,ressources,renvoi,Le cadre,cadre/_monnaie_credit.html,2024,4563.3,2021-2025
 Compte financier,actions_opc,Actions et titres d’OPC,F.5,snf,Sociétés non financières,emplois,vide,,,2024,1820.9,2021-2025
 Compte financier,actions_opc,Actions et titres d’OPC,F.5,snf,Sociétés non financières,ressources,vide,,,2024,-801.9,2021-2025
 Compte financier,autres_comptes,Autres comptes à recevoir ou à payer,F.8,apu,Administrations publiques,emplois,vide,,,2024,4051.8,2021-2025
@@ -190,8 +190,8 @@ Compte financier,autres_comptes,Autres comptes à recevoir ou à payer,F.8,menag
 Compte financier,autres_comptes,Autres comptes à recevoir ou à payer,F.8,menages,Ménages,ressources,vide,,,2024,4707.4,2021-2025
 Compte financier,autres_comptes,Autres comptes à recevoir ou à payer,F.8,rdm,Reste du monde,emplois,vide,,,2024,3761.3,2021-2025
 Compte financier,autres_comptes,Autres comptes à recevoir ou à payer,F.8,rdm,Reste du monde,ressources,vide,,,2024,-2287.2,2021-2025
-Compte financier,autres_comptes,Autres comptes à recevoir ou à payer,F.8,sf,Sociétés financières,emplois,vide,,,2024,-387.9,2021-2025
-Compte financier,autres_comptes,Autres comptes à recevoir ou à payer,F.8,sf,Sociétés financières,ressources,vide,,,2024,-2348.4,2021-2025
+Compte financier,autres_comptes,Autres comptes à recevoir ou à payer,F.8,sf,Sociétés financières,emplois,renvoi,Le cadre,cadre/_monnaie_credit.html,2024,-387.9,2021-2025
+Compte financier,autres_comptes,Autres comptes à recevoir ou à payer,F.8,sf,Sociétés financières,ressources,renvoi,Le cadre,cadre/_monnaie_credit.html,2024,-2348.4,2021-2025
 Compte financier,autres_comptes,Autres comptes à recevoir ou à payer,F.8,snf,Sociétés non financières,emplois,vide,,,2024,-95.7,2021-2025
 Compte financier,autres_comptes,Autres comptes à recevoir ou à payer,F.8,snf,Sociétés non financières,ressources,vide,,,2024,550.1,2021-2025
 Compte financier,credits,crédits,F.4,apu,Administrations publiques,emplois,renvoi,La dette publique ; Les entreprises publiques,annexe-dette-publique.html ; entreprises_publiques/_garanties.html,2024,78.4,2021-2025
@@ -199,8 +199,8 @@ Compte financier,credits,Crédits,F.4,apu,Administrations publiques,ressources,r
 Compte financier,credits,Crédits,F.4,menages,Ménages,emplois,vide,,,2024,0.0,2021-2025
 Compte financier,credits,Crédits,F.4,menages,Ménages,ressources,vide,,,2024,1125.1,2021-2025
 Compte financier,credits,Crédits,F.4,rdm,Reste du monde,emplois,vide,,,2024,-5312.7,2021-2025
-Compte financier,credits,Crédits,F.4,sf,Sociétés financières,emplois,vide,,,2024,13441.1,2021-2025
-Compte financier,credits,Crédits,F.4,sf,Sociétés financières,ressources,vide,,,2024,1566.3,2021-2025
+Compte financier,credits,Crédits,F.4,sf,Sociétés financières,emplois,renvoi,Le cadre,cadre/_monnaie_credit.html,2024,13441.1,2021-2025
+Compte financier,credits,Crédits,F.4,sf,Sociétés financières,ressources,renvoi,Le cadre,cadre/_monnaie_credit.html,2024,1566.3,2021-2025
 Compte financier,credits,Crédits,F.4,snf,Sociétés non financières,emplois,vide,,,2024,-4416.1,2021-2025
 Compte financier,credits,Crédits,F.4,snf,Sociétés non financières,ressources,vide,,,2024,2558.0,2021-2025
 Compte financier,numeraire_depots,Numéraire et dépôts,F.2,apu,Administrations publiques,emplois,vide,,,2024,-4551.9,2021-2025
@@ -208,26 +208,26 @@ Compte financier,numeraire_depots,Numéraire et dépôts,F.2,apu,Administrations
 Compte financier,numeraire_depots,Numéraire et dépôts,F.2,menages,Ménages,emplois,vide,,,2024,11826.6,2021-2025
 Compte financier,numeraire_depots,Numéraire et dépôts,F.2,rdm,Reste du monde,emplois,vide,,,2024,579.4,2021-2025
 Compte financier,numeraire_depots,Numéraire et dépôts,F.2,rdm,Reste du monde,ressources,vide,,,2024,735.1,2021-2025
-Compte financier,numeraire_depots,Numéraire et dépôts,F.2,sf,Sociétés financières,emplois,vide,,,2024,2085.3,2021-2025
-Compte financier,numeraire_depots,Numéraire et dépôts,F.2,sf,Sociétés financières,ressources,vide,,,2024,15752.4,2021-2025
+Compte financier,numeraire_depots,Numéraire et dépôts,F.2,sf,Sociétés financières,emplois,renvoi,Le cadre,cadre/_monnaie_credit.html,2024,2085.3,2021-2025
+Compte financier,numeraire_depots,Numéraire et dépôts,F.2,sf,Sociétés financières,ressources,renvoi,Le cadre,cadre/_monnaie_credit.html,2024,15752.4,2021-2025
 Compte financier,numeraire_depots,Numéraire et dépôts,F.2,snf,Sociétés non financières,emplois,vide,,,2024,6546.9,2021-2025
 Compte financier,or_dts,Or monétaire et DTS,F.1,rdm,Reste du monde,ressources,vide,,,2024,359.6,2021-2025
-Compte financier,or_dts,Or monétaire et DTS,F.1,sf,Sociétés financières,emplois,vide,,,2024,359.6,2021-2025
+Compte financier,or_dts,Or monétaire et DTS,F.1,sf,Sociétés financières,emplois,renvoi,Le cadre,cadre/_monnaie_credit.html,2024,359.6,2021-2025
 Compte financier,provisions_assurance,Provisions techniques d’assurance,F.6,apu,Administrations publiques,emplois,vide,,,2024,2.6,2021-2025
 Compte financier,provisions_assurance,Provisions techniques d’assurances,F.6,menages,Ménages,emplois,vide,,,2024,898.0,2021-2025
-Compte financier,provisions_assurance,Provisions techniques d’assurance,F.6,sf,Sociétés financières,emplois,vide,,,2024,5.8,2021-2025
-Compte financier,provisions_assurance,Provisions techniques d’assurance,F.6,sf,Sociétés financières,ressources,vide,,,2024,989.9,2021-2025
+Compte financier,provisions_assurance,Provisions techniques d’assurance,F.6,sf,Sociétés financières,emplois,renvoi,Le cadre,cadre/_monnaie_credit.html,2024,5.8,2021-2025
+Compte financier,provisions_assurance,Provisions techniques d’assurance,F.6,sf,Sociétés financières,ressources,renvoi,Le cadre,cadre/_monnaie_credit.html,2024,989.9,2021-2025
 Compte financier,provisions_assurance,Provisions techniques d’assurance,F.6,snf,Sociétés non financières,emplois,vide,,,2024,83.4,2021-2025
 Compte financier,solde_creances_dettes,Solde des créances et dettes,B.9f,apu,Administrations publiques,ressources,solde,Les comptes de la nation,annexe-comptes-nation.html#sec-cn-comptes-secteurs,2024,-8492.0,2021-2025
 Compte financier,titres_creance,Titres de créance,F.3,apu,Administrations publiques,emplois,vide,,,2024,612.6,2021-2025
 Compte financier,titres_creance,Titres de créance,F.3,apu,Administrations publiques,ressources,renvoi,La dette publique,annexe-dette-publique.html,2024,9617.4,2021-2025
 Compte financier,titres_creance,Titres de créance,F.3,menages,Ménages,emplois,vide,,,2024,175.0,2021-2025
-Compte financier,titres_creance,Titres de créance,F.3,sf,Sociétés financières,emplois,vide,,,2024,7680.7,2021-2025
-Compte financier,titres_creance,Titres de créance,F.3,sf,Sociétés financières,ressources,vide,,,2024,350.3,2021-2025
+Compte financier,titres_creance,Titres de créance,F.3,sf,Sociétés financières,emplois,renvoi,Le cadre,cadre/_monnaie_credit.html,2024,7680.7,2021-2025
+Compte financier,titres_creance,Titres de créance,F.3,sf,Sociétés financières,ressources,renvoi,Le cadre,cadre/_monnaie_credit.html,2024,350.3,2021-2025
 Compte financier,titres_creance,Titres de créance,F.3,snf,Sociétés non financières,emplois,vide,,,2024,1544.5,2021-2025
 Compte financier,titres_creance,Titres de créance,F.3,snf,Sociétés non financières,ressources,vide,,,2024,45.1,2021-2025
-Compte extérieur des biens et services,exportations,Exportation de biens & services,P.6,rdm,Reste du monde,emplois,vide,,,2024,79874.4,2021-2025
-Compte extérieur des biens et services,importations,Importation de biens & services,P.7,rdm,Reste du monde,ressources,vide,,,2024,90060.5,2021-2025
-Compte extérieur des biens et services,importations_biens,Importation de biens,P.71,rdm,Reste du monde,ressources,vide,,,2024,79306.4,2021-2025
-Compte extérieur des biens et services,importations_services,Importation de services,P.72,rdm,Reste du monde,ressources,vide,,,2024,10754.1,2021-2025
-Compte extérieur des biens et services,solde_echanges_exterieurs,Solde des échanges extérieurs de Biens & Services,B.11,rdm,Reste du monde,emplois,solde,Les comptes de la nation,annexe-comptes-nation.html#sec-cn-comptes-secteurs,2024,10186.1,2021-2025
+Compte extérieur des biens et services,exportations,Exportation de biens & services,P.6,rdm,Reste du monde,emplois,domicile,Les échanges extérieurs,echanges/,2024,79874.4,2021-2025
+Compte extérieur des biens et services,importations,Importation de biens & services,P.7,rdm,Reste du monde,ressources,domicile,Les échanges extérieurs,echanges/,2024,90060.5,2021-2025
+Compte extérieur des biens et services,importations_biens,Importation de biens,P.71,rdm,Reste du monde,ressources,domicile,Les échanges extérieurs,echanges/,2024,79306.4,2021-2025
+Compte extérieur des biens et services,importations_services,Importation de services,P.72,rdm,Reste du monde,ressources,domicile,Les échanges extérieurs,echanges/,2024,10754.1,2021-2025
+Compte extérieur des biens et services,solde_echanges_exterieurs,Solde des échanges extérieurs de Biens & Services,B.11,rdm,Reste du monde,emplois,renvoi,Les échanges extérieurs,echanges/,2024,10186.1,2021-2025

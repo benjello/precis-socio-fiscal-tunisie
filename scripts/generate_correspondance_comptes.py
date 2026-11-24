@@ -81,6 +81,31 @@ RATTACHEMENT: dict[str, list] = {
     "credits": [(["apu"], None, R, [("La dette publique", "annexe-dette-publique.html"), ("Les entreprises publiques", "entreprises_publiques/_garanties.html")])],
     "actions_opc": [(["apu"], None, R, [("Les entreprises publiques", "entreprises_publiques/_cessions.html")])],
 }
+
+# Prolongement (24/11/2026) : volumes de branche, consommation, investissement, échanges, cadre.
+# Les règles s'ajoutent APRÈS celles du dictionnaire : la première qui s'applique l'emporte.
+BRANCHES = [("L'énergie", "energie/"), ("L'industrie et les mines", "industrie/"),
+            ("Le logement et la construction", "logement/")]
+for _op in ("production", "production_marchande", "production_bs_marchands"):
+    for _secteurs, _c, _couv, _pages in RATTACHEMENT.get(_op, []):
+        if _secteurs and "snf" in _secteurs:
+            _pages.extend(BRANCHES)
+_AJOUTS = {
+    "consommation_intermediaire": [(["snf", "menages"], None, R, BRANCHES)],
+    "consommation_finale": [(["menages"], None, D, [("La consommation et les niveaux de vie", "consommation/")])],
+    "exportations": [(["rdm"], None, D, [("Les échanges extérieurs", "echanges/")])],
+    "importations": [(["rdm"], None, D, [("Les échanges extérieurs", "echanges/")])],
+    "importations_biens": [(["rdm"], None, D, [("Les échanges extérieurs", "echanges/")])],
+    "importations_services": [(["rdm"], None, D, [("Les échanges extérieurs", "echanges/")])],
+    "solde_echanges_exterieurs": [(None, None, R, [("Les échanges extérieurs", "echanges/")])],
+    "fbcf": [(["snf", "sf", "menages"], None, R, [("L'investissement", "investissement/")])],
+    "variation_stocks": [(None, None, R, [("L'investissement", "investissement/")])],
+}
+for _f in ("numeraire_depots", "titres_creance", "credits", "actions_opc", "provisions_assurance",
+           "autres_comptes", "or_dts", "interets", "revenus_propriete"):
+    _AJOUTS.setdefault(_f, []).append((["sf"], None, R, [("Le cadre", "cadre/_monnaie_credit.html")]))
+for _op, _regles in _AJOUTS.items():
+    RATTACHEMENT.setdefault(_op, []).extend(_regles)
 SOLDES_NATURE = {"solde"}
 
 
