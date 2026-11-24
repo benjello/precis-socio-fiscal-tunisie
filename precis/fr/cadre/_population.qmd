@@ -1,0 +1,31 @@
+# La population {#sec-cadre-population}
+
+La population est le premier dénominateur des volumes : dépense par habitant, taux de couverture, densité des services. L'INS la mesure aux recensements généraux de la population et de l'habitat ; la @fig-cadre-population en donne le total à chacun des huit recensements tenus depuis 1956, lu dans une seule publication, le Bilan démographique du recensement de 2024 [@ins-rgph-2024-bilan-demographique, p. 7].
+
+```{python}
+#| label: fig-cadre-population
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import cadre
+import figtools
+figtools.figure_tabs(
+    cadre.vues_population(), cadre.table_population(),
+    "population-milieu-communal-recensements",
+    slug="fig_cadre_population",
+    caption="Population aux recensements, 1956-2024 (habitants), et croissance annuelle moyenne entre deux recensements",
+    note_lecture=(
+        "Les barres du premier onglet donnent le total de chaque recensement, tel que l'imprime "
+        "le Bilan démographique de 2024. Le second onglet donne le taux de croissance annuel "
+        "moyen entre deux recensements, calculé ici sur ces totaux, l'écart entre deux "
+        "recensements étant compté en années civiles."))
+```
+
+La population passe de 3 783 169 habitants en 1956 à 11 972 169 en 2024 [@ins-rgph-2024-bilan-demographique, p. 7]. Sa croissance annuelle moyenne, calculée entre deux recensements, est de 1,83 % de 1956 à 1966, atteint 2,48 % de 1975 à 1984, puis baisse à chaque période : 1,21 % de 1994 à 2004, 0,87 % de 2014 à 2024.
+
+Pour 2004 et 2014, les publications de l'INS ne donnent pas toutes le même total : 9 910 872 habitants en 2004 dans le premier volume du recensement de 2004 [@ins-rgph-2004-vol1], 9 906 563 dans le Bilan de 2024 ; pour 2014, 10 982 754 dans le Bilan de 2024 et 10 982 477 dans le Flash Démographie de 2025 [@ins-rgph-2024-flash-demographie]. La figure retient le Bilan pour tous les points.
+
+La répartition entre milieu communal et milieu non communal, et la classification urbain-rural qui la remplace en 2024, sont exposées dans « Les finances locales », [section sur la longue période des communes](../finances_locales/_histoire.html#sec-fl-hist-longue-periode) : le périmètre communal y change à chaque création de commune.
+
+<!-- TODO (données) : population par gouvernorat aux recensements ; estimations annuelles de
+     l'INS entre deux recensements, pour les dénominateurs annuels des volumes. -->
