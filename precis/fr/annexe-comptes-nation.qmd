@@ -111,6 +111,49 @@ Trois grands tableaux ferment le système [@ins-scnt97-presentation, p. 1 et pp.
 - le **tableau des opérations financières (TOF)** retrace les flux nets de créances et de dettes par secteur ; les éditions en base 2015 le portent dans leur Volume B.
 :::
 
+## Le compte financier par secteur et l'équilibre des produits {#sec-cn-tof-tre}
+
+Le tableau des opérations financières (TOF) des éditions en base 2015 donne, pour chaque secteur, les flux nets de créances et de dettes par instrument, et leur solde, le solde des créances et dettes [@ins-cnat-2015]. La @fig-cn-tof en donne ce solde pour les quatre secteurs résidents, de 2015 à 2025, chaque année étant lue dans l'édition la plus récente qui l'imprime.
+
+```{python}
+#| label: fig-cn-tof
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../scripts")
+from figures import annexe_comptes_nation as acn
+import figtools
+figtools.figure_tabs(
+    acn.vues_tof(), acn.table_tof(), "cnat-tof",
+    slug="fig_cn_tof",
+    caption="Solde des créances et dettes par secteur institutionnel, 2015-2025 (millions de dinars courants, base 2015)",
+    note_lecture=(
+        "Un solde négatif est un besoin de financement couvert par l'endettement net ; un solde positif, "
+        "une capacité de financement placée. L'onglet « Données » donne aussi la somme des quatre "
+        "secteurs et le solde imprimé pour le reste du monde, qui lui est égal à l'arrondi près."))
+```
+
+Les administrations publiques ont un besoin de financement chaque année, de 2 512,4 millions de dinars en 2015 à 10 709,9 en 2022 ; les sociétés financières et les ménages ont une capacité de financement chaque année. Les sociétés non financières passent d'un besoin de 10 210,9 en 2018 à une capacité en 2023 et 2024. La somme des quatre secteurs est égale, à 0,1 près, au solde imprimé pour le reste du monde : c'est l'endettement net de la nation envers l'extérieur [@ins-cnat-2015].
+
+Le tableau des ressources et des emplois (TRE) équilibre, pour chaque produit, les ressources (production, importations, impôts et subventions sur les produits, marges) et les emplois (consommation intermédiaire, consommation finale, formation brute de capital fixe, variation des stocks, exportations) [@ins-cnat-2015]. La @fig-cn-tre en donne les emplois de l'ensemble des produits.
+
+```{python}
+#| label: fig-cn-tre
+#| echo: false
+#| output: asis
+figtools.figure_tabs(
+    acn.vues_tre(), acn.table_tre(), "cnat-tre",
+    slug="fig_cn_tre",
+    caption="Emplois de l'ensemble des produits dans le tableau des ressources et des emplois, 2015-2025 (millions de dinars courants, base 2015)",
+    note_lecture=(
+        "Chaque groupe de barres donne, pour une année, les cinq emplois des produits ; leur somme est "
+        "égale au total des ressources, donné dans l'onglet « Données »."))
+```
+
+Le total des ressources de l'ensemble des produits passe de 302 072,2 millions de dinars en 2021 à 405 862,4 en 2025 (compte provisoire) [@ins-cnat-2015]. Les deux tableaux sont lus dans les PDF de l'INS et contrôlés à l'arrondi de la publication : pour le TOF, égalité des créances et des dettes par instrument et raccord du solde avec la capacité de financement des comptes de secteur ; pour le TRE, ressources égales aux emplois par produit, 3 496 contrôles satisfaits sur 3 507, les autres écarts étant listés.
+
+<!-- TODO (rédacteur) : TOF par instrument pour les administrations publiques (crédits, titres) ;
+     TRE par produit (part des importations dans les ressources). -->
+
 ## Les comptes, désagrégés par secteur {#sec-cn-comptes-secteurs}
 
 La séquence que l'on vient de parcourir vaut pour chaque **secteur institutionnel** pris à part : les sociétés non financières, les sociétés financières, les administrations publiques, les ménages, et le reste du monde en miroir. Le navigateur ci-dessous la déroule, année par année (chacune dans sa base des comptes, la plus récente qui la couvre, étiquetée), compte par compte, secteur par secteur, dans la présentation de l'INS. On lit en italique les **soldes** — la valeur ajoutée, le revenu d'exploitation, le solde des revenus primaires, le revenu disponible brut, l'épargne, la capacité ou le besoin de financement — chacun reporté en tête du compte suivant. Pour les années en base 2015, chaque opération est donnée de ses deux côtés, emplois et ressources, comme l'INS la publie. Les valeurs sont celles des comptes de l'INS, lues telles quelles ; les soldes ne sont pas recalculés pour l'affichage, mais ils ont été vérifiés (voir ci-dessous).

@@ -1,0 +1,18 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-11-24
+# séries (tunisia_data) : cnat-tre
+# sources (citation) : @ins-cnat-2015
+# fiches : 
+# méthode/hypothèses : Lu avec les coordonnées des mots (pdftotext -bbox) : chaque nombre est rattaché à la colonne dont l'en-tête est le plus proche ; les milliers imprimés comme un mot distinct, parfois légèrement surélevé, sont recollés. 3 496 contrôles sur 3 507 passent ; les 11 autres sont listés (écarts de 0,6 à 0,9 MD sur la ligne 94 des ressources, et quelques nombres dont le chiffre des milliers n'a pas été retrouvé). Base 2015 seulement. Une année publiée par plusieurs éditions garde toutes ses lectures.
+# note : Emplois de l'ensemble des produits dans le tableau des ressources et des emplois, 2015-2025 (millions de dinars courants, base 2015)
+Année,Total des ressources,Consommation intermédiaire,Consommation finale,FBCF,Variation des stocks,Exportations
+2015,203639.2,69969.9,79663.4,18841.8,680.3,34483.9
+2016,213699.1,71914.6,85784.0,19531.5,-21.5,36490.4
+2017,236542.9,79355.0,92905.0,20449.5,1273.4,42560.0
+2018,270876.4,91923.1,101615.5,22146.1,3799.4,51392.3
+2019,290552.4,98250.3,111445.2,23898.7,453.4,56504.8
+2020,263393.8,88512.6,114317.6,18935.8,-3773.1,45401.0
+2021,302072.2,102317.5,123950.6,20857.6,-13.2,54959.6
+2022,350674.2,120911.8,134940.5,22750.1,500.6,71571.2
+2023,364881.1,126610.7,146510.1,23537.2,-11194.8,79417.9
+2024,380603.0,130689.8,157414.0,24348.5,-11723.7,79874.4
+2025,405862.4,139609.5,167844.2,26456.8,-9568.7,81520.6

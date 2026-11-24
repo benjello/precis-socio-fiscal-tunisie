@@ -316,3 +316,96 @@ def correspondance_comptes() -> list[str]:
 def correspondance_resume() -> dict:
     d = pd.read_csv(Path(__file__).resolve().parent.parent / "correspondance-comptes.csv")
     return d["couverture"].value_counts().to_dict()
+
+
+# --- Compte financier (TOF) et tableau des ressources et des emplois (TRE) -------------------
+#
+# Séries `cnat-tof` et `cnat-tre` (tunisia-data), lues dans les éditions en base 2015 ; pour
+# chaque année, la lecture de l'édition la plus récente qui l'imprime. Valeurs lues, jamais
+# recalculées ; contrôles et écarts listés dans l'entrepôt.
+
+SECTEURS_TOF = [("S11", "Sociétés non financières", "#0b4f6c"), ("S12", "Sociétés financières", "#2d8c6f"),
+                ("S13", "Administrations publiques", "#bf3989"), ("S14", "Ménages", "#c0862b")]
+EMPLOIS_TRE = [("ci_totale", "Consommation intermédiaire", "#57606a"),
+               ("consommation_finale", "Consommation finale", "#0b4f6c"),
+               ("fbcf", "FBCF", "#2d8c6f"), ("variation_stocks", "Variation des stocks", "#c0862b"),
+               ("exportations", "Exportations", "#bf3989")]
+
+
+def _derniere_edition(d, cles):
+    return d.sort_values("edition").groupby(cles).tail(1)
+
+
+def solde_tof():
+    """Solde des créances et dettes (B.9f), flux, par secteur et par année ; et celui du reste du monde."""
+    d = figtools.series("cnat-tof")
+    d = d[(d["code"] == "B9F") & (d["tableau"] == "flux")]
+    d = _derniere_edition(d, ["annee", "secteur"])
+    return d.pivot(index="annee", columns="secteur", values="valeur_md").sort_index()
+
+
+def emplois_tre():
+    """Emplois de l'ensemble des produits (ligne des totaux du TRE), par année."""
+    d = figtools.series("cnat-tre")
+    d = _derniere_edition(d[d["produit"] == "TOTAL"], ["annee", "colonne"])
+    return d.pivot(index="annee", columns="colonne", values="valeur_md").sort_index()
+
+
+def _barres_groupees(p, series, titre, ylabel):
+    import matplotlib.pyplot as plt
+    figtools.apply_lang_font()
+    annees = [int(a) for a in p.index]
+    fig, ax = plt.subplots(figsize=(8.8, 4.6))
+    n, larg = len(series), 0.8 / len(series)
+    for k, (cle, lib, couleur) in enumerate(series):
+        xs = [i + (k - (n - 1) / 2) * larg for i in range(len(annees))]
+        vals = [float(v) for v in p[cle]]
+        barres = ax.bar(xs, vals, width=larg, color=couleur, label=figtools.fig_text(lib))
+        for a, b, v in zip(annees, barres, vals):
+            figtools.infobulle(b, f"{a} · {lib} · {_fr(v)}")
+    ax.axhline(0, color="#57606a", lw=0.8)
+    ax.set_xticks(range(len(annees)))
+    ax.set_xticklabels([str(a) for a in annees], fontsize=8)
+    ax.set_title(figtools.fig_text(titre), fontsize=10.5)
+    ax.set_ylabel(figtools.fig_text(ylabel), fontsize=9)
+    ax.spines[["top", "right"]].set_visible(False)
+    ax.legend(fontsize=7.5, framealpha=0.9)
+    fig.tight_layout()
+    return fig
+
+
+def vues_tof():
+    return [("Par secteur", _barres_groupees(solde_tof(), SECTEURS_TOF,
+                                             "Solde des créances et dettes par secteur (flux)",
+                                             "millions de dinars courants"))]
+
+
+def table_tof():
+    import pandas as pd
+    p = solde_tof()
+    rows = []
+    for a in p.index:
+        row = {"Année": int(a)}
+        for cle, lib, _ in SECTEURS_TOF:
+            row[lib] = float(p.loc[a, cle])
+        row["Somme des quatre secteurs"] = round(sum(float(p.loc[a, c]) for c, _, _ in SECTEURS_TOF), 1)
+        row["Reste du monde (imprimé)"] = float(p.loc[a, "S2"]) if "S2" in p.columns else None
+        rows.append(row)
+    return pd.DataFrame(rows)
+
+
+def vues_tre():
+    return [("Emplois", _barres_groupees(emplois_tre(), EMPLOIS_TRE, "Emplois de l'ensemble des produits (TRE)",
+                                  "millions de dinars courants"))]
+
+
+def table_tre():
+    import pandas as pd
+    p = emplois_tre()
+    rows = []
+    for a in p.index:
+        row = {"Année": int(a), "Total des ressources": float(p.loc[a, "total_ressources"])}
+        for cle, lib, _ in EMPLOIS_TRE:
+            row[lib] = float(p.loc[a, cle])
+        rows.append(row)
+    return pd.DataFrame(rows)
