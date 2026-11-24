@@ -20,7 +20,7 @@ LIVRES = ("caisses", "compensation", "cotisations_sociales", "entreprises_publiq
 PAGES_GENERALES = ("index", "comment-lire", "comment-constitue", "a-propos", "principes-structure",
                    "annexe-pib", "annexe-budget-etat", "annexe-dette-publique", "annexe-sources",
                    "annexe-comptes-nation", "index-institutions", "parcours-atmp",
-                   "correspondance-instruments")
+                   "correspondance-instruments", "correspondance-comptes")
 RE_PAGE_GENERALE = re.compile(r"^precis/(fr|ar)/([^/]+)\.qmd$")
 RE_FIGURE_DE_PAGE = re.compile(r"^precis/(fr|ar)/figures/([^/]+)\.py$")
 
