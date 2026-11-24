@@ -1,0 +1,33 @@
+# Présentation {#sec-echanges-presentation}
+
+Ce livre décrira les échanges extérieurs : les exportations et les importations par produit, la balance des paiements, et les régimes qui encadrent le commerce. Il occupe, dans la séquence des comptes, le compte du reste du monde.
+
+::: {.callout-note}
+Ce volume est une **ébauche** : une première série est versée, la rédaction reste à faire. Il n'existe pour l'instant qu'en français.
+:::
+
+## Trois familles de chiffres {#sec-echanges-familles}
+
+Les échanges se lisent dans trois familles de chiffres, aux périmètres différents, que la @fig-echanges-familles met côte à côte sans les fondre : les comptes nationaux de l'INS, biens et services ou biens seuls [@ins-cnat-2015] ; les statistiques douanières de l'INS, exportations FOB et importations CAF [@ins-annuaire] ; la balance des paiements de la Banque centrale, selon la sixième édition du manuel du FMI [@bct-ra-2024].
+
+```{python}
+#| label: fig-echanges-familles
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import echanges as ech
+import figtools
+figtools.figure_tabs(
+    ech.vues_echanges(), ech.table_echanges(), "echanges-rapprochement",
+    slug="fig_echanges_familles",
+    caption="Exportations et importations selon les comptes nationaux, la douane et la balance des paiements, 2005-2025 (millions de dinars courants)",
+    note_lecture=(
+        "Chaque courbe est une famille de chiffres, avec son périmètre. La balance des paiements compte "
+        "le travail à façon net, en service ; la douane et les comptes nationaux l'enregistrent en brut. "
+        "L'onglet « Données » donne l'écart de chaque chiffre aux comptes nationaux de même périmètre."))
+```
+
+En 2023, les exportations de biens sont de 62 077,3 millions de dinars selon la douane et de 62 793,6 selon les comptes nationaux ; les exportations de biens et services, de 79 417,9 dans les comptes nationaux et de 61 306,5 dans la balance des paiements, qui ne compte en biens que 28 081,6 [@ins-cnat-2015 ; @ins-annuaire ; @bct-ra-2024].
+
+<!-- TODO (rédacteur) : échanges par produit (cnat-produits) ; écart de 2005 entre la douane et
+     les biens des comptes nationaux, à expliquer ; régimes (offshore), par renvoi à la fiscalité. -->

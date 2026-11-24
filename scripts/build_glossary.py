@@ -60,6 +60,9 @@ BOOKS = [
     "cadre",
     "agriculture",
     "synthese",
+    "consommation",
+    "investissement",
+    "echanges",
 ]
 
 LANGS = ("fr", "ar")

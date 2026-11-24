@@ -1,0 +1,42 @@
+# Présentation {#sec-invest-presentation}
+
+Ce livre décrira l'investissement : la formation brute de capital fixe par secteur, par branche et par produit, la part publique, et les dispositifs qui la soutiennent. Il occupe, dans la séquence des comptes, le compte de capital.
+
+::: {.callout-note}
+Ce volume est une **ébauche** : une première série est versée, la rédaction reste à faire. Il n'existe pour l'instant qu'en français.
+:::
+
+## La FBCF par secteur institutionnel {#sec-invest-secteurs}
+
+La @fig-invest-secteurs donne la formation brute de capital fixe par secteur institutionnel de 2005 à 2025, en deux segments jamais raccordés : la base 1997 jusqu'en 2017, la base 2015 depuis 2015 [@ins-cnat-2015].
+
+```{python}
+#| label: fig-invest-secteurs
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import investissement as inv
+import figtools
+figtools.figure_tabs(
+    inv.vues_fbcf(), inv.table_fbcf(), "cnat-fbcf",
+    slug="fig_invest_secteurs",
+    caption="FBCF par secteur institutionnel, 2005-2025, base 1997 (tirets) et base 2015 (traits pleins), millions de dinars courants",
+    note_lecture=(
+        "Chaque année est lue dans l'édition la plus récente qui l'imprime, base par base. Les années "
+        "2015 à 2017, publiées dans les deux bases, montrent l'écart de niveau entre elles."))
+```
+
+Dans la base 2015, la FBCF des sociétés non financières passe de 8 016,9 millions de dinars en 2015 à 11 338,6 en 2025, celle des administrations publiques de 4 622,0 à 5 769,2, celle des ménages pour leur logement de 3 341,3 à 4 306,4 [@ins-cnat-2015].
+
+<!-- TODO (rédacteur) : FBCF par branche, par domaine et par produit (cnat-fbcf) ; entreprises
+     publiques dans la FBCF des sociétés non financières ; régimes d'incitation, par renvoi. -->
+
+## Ce que d'autres livres traitent {#sec-invest-voisinage}
+
+| Sujet | Domicile | Ce que ce livre en reçoit |
+|---|---|---|
+| Régimes d'incitation à l'investissement | « La fiscalité », [chapitre des régimes d'incitation](../fiscalite/_regimes_incitation.html) | un lien |
+| Entreprises publiques, leurs comptes et leur investissement | « Les entreprises publiques » | un lien |
+| FBCF des branches | volumes de branche (« L'énergie »…) | un lien |
+
+: Les sujets voisins et le livre qui les expose {#tbl-invest-voisinage}

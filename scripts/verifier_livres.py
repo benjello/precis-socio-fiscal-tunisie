@@ -15,7 +15,8 @@ import sys
 LIVRES = ("caisses", "compensation", "cotisations_sociales", "entreprises_publiques",
           "finances_locales", "fiscalite", "marche_travail", "prestations_sociales",
           "remunerations_publiques", "retraites", "sante", "education", "informel",
-          "transport", "environnement", "agriculture", "energie", "cadre", "industrie", "logement", "synthese")
+          "transport", "environnement", "agriculture", "energie", "cadre", "industrie", "logement",
+          "consommation", "investissement", "echanges", "synthese")
 # Les pages générales, rendues une à une par build.sh (`PAGES`) : à tenir dans le même ordre.
 PAGES_GENERALES = ("index", "comment-lire", "comment-constitue", "a-propos", "principes-structure",
                    "annexe-pib", "annexe-budget-etat", "annexe-dette-publique", "annexe-sources",

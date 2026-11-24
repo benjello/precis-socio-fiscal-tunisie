@@ -1,0 +1,36 @@
+{
+  "items": [
+    {
+      "id": "bct-ra-2024",
+      "type": "report",
+      "title": "Rapport annuel 2024",
+      "author": [
+        {
+          "literal": "Banque centrale de Tunisie"
+        }
+      ],
+      "publisher": "Banque centrale de Tunisie",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2025,
+            6
+          ]
+        ]
+      },
+      "URL": "https://www.bct.gov.tn/bct/siteprod/documents/RA_2024_fr.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "title-short": "BCT, Rapport annuel 2024",
+      "note": "citation-key: bct-ra-2024\nTitre (« Rapport Annuel 2024 ») et date (« Juin 2025 ») lus sur la couverture, couche texte de la page 1 du PDF. Le PDF de bct.gov.tn (HTTP 200 le 6 octobre 2026, 6 410 934 octets, 246 pages) est identique en taille à la copie locale de tunisia-data. Lu à l'image le 6 octobre 2026 : Tableau 2-11 « Dépenses hors service de la dette », p. 65 imprimée (75e page du PDF), colonnes 2023, 2024, 2025* (« * Provisoires (LF 2025) ») : « Dont : Compensation » 11 479,5 ; 11 347,5 ; 11 593,0 (produits de base 3 809,5 ; 3 601,5 ; 3 801,0 — carburants 7 030,0 ; 7 086,0 ; 7 112,0 — transport 640,0 ; 660,0 ; 680,0). Utilisé pour la série 2012-2025 de la compensation (docs/notes/compensation.md, § 10). Distincte de bct-ra (jeu de données générique « Rapport Annuel 2024 ») et de bct-ra-1984. Consulté le 6 octobre 2026."
+    }
+  ]
+}
