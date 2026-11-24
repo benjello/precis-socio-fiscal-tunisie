@@ -43,6 +43,10 @@ et sur `pist.tn` en ligne. Voir `docs/notes/outillage-sources.md`.
 
 `docs/conventions-redaction.md` fait foi ; mémento des règles les plus oubliées : `docs/conventions/ecrire-dans-le-precis.md`.
 
+## Procédures
+
+Déplacer une section d'un volume à un autre : `docs/procedures/deplacer-section.md`. Créer un volume : `docs/procedures/creer-volume-branche.md`. Remplacement en masse relu avant écriture : `scripts/remplacer.py`. Écrire une série du cache : `scripts/cache_series.py`. Hook de contrôle avant commit, à activer par `git config core.hooksPath .githooks` : `.githooks/pre-commit`.
+
 ## Dépôts de modèle (rôle « modéliste »)
 
 Dater, découper, tester, publier, rendre au précis : `docs/conventions/modele.md`.
