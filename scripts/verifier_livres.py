@@ -41,6 +41,7 @@ PREFIXES_PARTAGES = (
     "scripts/openfisca_tables.py",
     "scripts/augmentations.py",
     "scripts/tarifs.py",
+    "scripts/dinars_constants.py",
     "precis/glossaire.yml",
     "precis/legendes.scss",
     "precis/legendes.html",
@@ -48,6 +49,61 @@ PREFIXES_PARTAGES = (
 )
 
 RE_FICHIER_DE_LIVRE = re.compile(r"^precis/(?:fr|ar)/([^/]+)/")
+RE_SERIE = re.compile(r"^precis/_seriescache/([^/]+?)(?:\.liens\.(?:fr|ar)\.yml|\.csv)$")
+SNAPSHOT = "precis/_seriescache/catalog.snapshot.yml"
+
+
+def utilisateurs_serie(sid: str, racine: Path | None = None) -> tuple[set[str], set[str]] | None:
+    """Livres et pages générales (« langue/page ») qui citent la série `sid` en toutes lettres.
+
+    On cherche l'identifiant entre guillemets dans les `.qmd` et les modules de figures. Une
+    série que personne ne cite littéralement (identifiant construit par le code, par exemple)
+    rend None, comme une série citée par un module partagé de `scripts/` : l'appelant retombe
+    alors sur le rendu de tous les livres.
+    """
+    racine = racine or Path(__file__).resolve().parent.parent
+    motif = re.compile(rf"[\"']{re.escape(sid)}[\"']")
+    for f in modules_importes(racine):
+        if motif.search(f.read_text(encoding="utf-8")):
+            return None  # lue par un module partagé : tous les livres peuvent en dépendre
+    livres, pages = set(), set()
+    for langue in ("fr", "ar"):
+        base = racine / "precis" / langue
+        for livre in LIVRES:
+            d = base / livre
+            if not d.is_dir():
+                continue
+            for f in [*d.glob("*.qmd"), *d.glob("figures/*.py")]:
+                if motif.search(f.read_text(encoding="utf-8")):
+                    livres.add(livre)
+                    break
+        modules = {f.stem for f in base.glob("figures/*.py") if motif.search(f.read_text(encoding="utf-8"))}
+        for page in PAGES_GENERALES:
+            qmd = base / f"{page}.qmd"
+            if not qmd.exists():
+                continue
+            texte = qmd.read_text(encoding="utf-8")
+            if motif.search(texte) or any(re.search(rf"from figures import [^\n]*\b{re.escape(m)}\b", texte)
+                                          for m in modules):
+                pages.add(f"{langue}/{page}")
+    return (livres, pages) if (livres or pages) else None
+
+
+def modules_importes(racine: Path) -> list[Path]:
+    """Modules de `scripts/` que les livres ou les pages générales importent."""
+    noms = set()
+    for f in (racine / "precis").glob("*/**/*"):
+        if f.suffix in (".py", ".qmd") and "/public/" not in f.as_posix() and f.is_file():
+            noms |= set(re.findall(r"^\s*(?:from|import) ([a-zA-Z_]\w*)", f.read_text(encoding="utf-8"), re.M))
+    return [racine / "scripts" / f"{n}.py" for n in sorted(noms) if (racine / "scripts" / f"{n}.py").exists()]
+
+
+def series_touchees(fichiers: list[str]) -> list[str] | None:
+    """Identifiants des séries du cache modifiées ; None si le snapshot du catalogue change seul."""
+    ids = [m.group(1) for m in (RE_SERIE.match(f.strip()) for f in fichiers) if m]
+    if any(f.strip() == SNAPSHOT for f in fichiers) and not ids:
+        return None
+    return ids
 RE_FICHIER_DE_LANGUE = re.compile(r"^precis/(?:fr|ar)/[^/]+\.[^/]+$")
 
 
@@ -67,11 +123,21 @@ def livres_touches(fichiers: list[str]) -> list[str]:
         m = RE_PAGE_GENERALE.match(f)
         if m and m.group(2) in PAGES_GENERALES:
             continue  # une page générale se rend à part (pages_generales_touchees), pas les livres
+        if RE_SERIE.match(f) or f == SNAPSHOT:
+            continue  # séries du cache : rendre leurs seuls utilisateurs (plus bas)
         if f.startswith(PREFIXES_PARTAGES) or RE_FICHIER_DE_LANGUE.match(f):
             return sorted(LIVRES)
         m = RE_FICHIER_DE_LIVRE.match(f)
         if m and m.group(1) in LIVRES:
             touches.add(m.group(1))
+    ids = series_touchees(fichiers)
+    if ids is None:
+        return sorted(LIVRES)
+    for sid in ids:
+        u = utilisateurs_serie(sid)
+        if u is None:
+            return sorted(LIVRES)
+        touches |= u[0]
     return sorted(touches)
 
 
@@ -98,6 +164,10 @@ def pages_generales_touchees(fichiers: list[str]) -> list[str]:
                 if qmd.exists() and re.search(rf"from figures import [^\n]*\b{re.escape(module)}\b",
                                               qmd.read_text(encoding="utf-8")):
                     pages.add(f"{langue}/{page}")
+    for sid in series_touchees(fichiers) or []:
+        u = utilisateurs_serie(sid)
+        if u:
+            pages |= u[1]
     return sorted(pages)
 
 
