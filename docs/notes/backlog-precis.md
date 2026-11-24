@@ -6320,6 +6320,21 @@ identifiants `{#…}` sont restés tels quels. Glossaire : la page ne peut pas a
 (engendré par livre) ; les notions de la note (§ 8) sont définies dans le texte et restent à
 verser par le terminologue quand un volume les emploiera.
 
+## Le volume de cadre (partie 0) — chapitre « Histoire de la comptabilité nationale » (24 novembre 2026)
+
+Demandé par le propriétaire le 24 novembre 2026, avec la charte en huit parties
+(`precis/fr/principes-structure.qmd`, § structure) : un chapitre du futur volume « Le cadre
+macroéconomique et des finances publiques ». **Consigne : n'utiliser que la matière qui existe
+déjà**, sans nouvelle collecte :
+
+- les annexes du site `precis/fr/annexe-pib.qmd` (bases successives, écarts, rétropolations) et
+  `precis/fr/annexe-comptes-nation.qmd` ;
+- leurs notes de travail `docs/notes/annexe-pib.md`, `docs/notes/annexe-comptes-nation.md`,
+  `docs/notes/chantier-comptes-nation-plan.md`, `docs/notes/cnat-secteurs-2001-2011-extrait.md`
+  et le registre `docs/notes/registre-denominateurs-pib.yml`.
+
+À faire quand le volume de cadre sera ouvert ; d'ici là les deux annexes restent en place.
+
 ## Ce qui traverse les livres
 
 - **Guide méthodologique de l'économiste — « Ce qu'en dit l'économie » (5 novembre 2026).** `docs/agents/economiste-guide-methodologique.md` : (A) notre approche — théorie + empirique, consensus vs débattu, pertinence au niveau de développement de la Tunisie (ne pas transposer un résultat de pays riche ; privilégier les pays comparables/MENA ; informalité, capacité administrative, marché du travail dual), les sources tunisiennes, les études proprement tunisiennes ; (B) nos sources par sous-champ — cours ouverts (MIT OCW, Berkeley Saez, LSE, PSE), handbooks, auteurs, départements, pour l'économie publique, du travail, de la santé, de l'éducation, du développement, l'économie politique, plus assurance sociale/retraites, informel, subventions/énergie, entreprises publiques/régulation, finances locales, public comportemental, pauvreté/ciblage, fiscalité & développement. Renvoi depuis `docs/agents/economiste.md` (étape 0). Plan de départ : `docs/notes/economiste-sources-plan.md`. À tenir à jour à chaque revue annuelle. Affiliations/URL non confirmées notées telles.

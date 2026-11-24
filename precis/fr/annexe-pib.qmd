@@ -32,11 +32,11 @@ crossref:
 
 ## Pourquoi cette annexe {#sec-pib-pourquoi}
 
-Les volumes du précis rapportent souvent une grandeur au produit intérieur brut (PIB) : le rendement d'un impôt, la masse salariale de l'État, les cotisations d'un régime, les recettes des communes. Une telle part ne se lit qu'en connaissant le PIB qui la porte, car le PIB d'une même année n'a pas une valeur unique : les comptes nationaux tunisiens ont changé deux fois de base, et chaque changement a relevé le niveau du PIB, de 9 à 11 % la première fois, de 5 à 6 % la seconde (voir [les écarts de niveau](#sec-pib-ecarts)).
+Les volumes de l'ouvrage rapportent souvent une grandeur au produit intérieur brut (PIB) : le rendement d'un impôt, la masse salariale de l'État, les cotisations d'un régime, les recettes des communes. Une telle part ne se lit qu'en connaissant le PIB qui la porte, car le PIB d'une même année n'a pas une valeur unique : les comptes nationaux tunisiens ont changé deux fois de base, et chaque changement a relevé le niveau du PIB, de 9 à 11 % la première fois, de 5 à 6 % la seconde (voir [les écarts de niveau](#sec-pib-ecarts)).
 
 L'Institut national de la statistique (INS) le dit lui-même en présentant sa base la plus récente : « les ratios usuels du compte des administrations publiques, comme le déficit budgétaire, la pression fiscale et le taux d'endettement sont mécaniquement tirés vers le bas par le relèvement du niveau du PIB » [@ins-changement-base-2015, p. 2].
 
-Cette annexe dit donc quelles bases se sont succédé, de combien elles s'écartent, jusqu'où chacune a été recalculée pour le passé, quel PIB emploie chaque source que le précis cite, et comment le précis signale un changement de base dans une série. Les volumes y renvoient chaque fois qu'ils signalent une rupture de série.
+Cette annexe dit donc quelles bases se sont succédé, de combien elles s'écartent, jusqu'où chacune a été recalculée pour le passé, quel PIB emploie chaque source que l'ouvrage cite, et comment l'ouvrage signale un changement de base dans une série. Les volumes y renvoient chaque fois qu'ils signalent une rupture de série.
 
 Les montants sont en millions de dinars courants, abrégés MD.
 
@@ -241,7 +241,7 @@ Il s'ensuit qu'**aucune série du PIB tunisien n'est homogène de 1990 à aujour
 
 ### Les séries qui accolent les bases {#pib-series-accolees}
 
-Deux séries longues que le précis emploie ou cite ne sont pas recalculées : elles mettent bout à bout des segments de bases différentes. Leur niveau change donc à la jonction, sans que l'économie ait changé d'autant.
+Deux séries longues que l'ouvrage emploie ou cite ne sont pas recalculées : elles mettent bout à bout des segments de bases différentes. Leur niveau change donc à la jonction, sans que l'économie ait changé d'autant.
 
 Du côté des institutions tunisiennes, le PIB qui sert de dénominateur aux indicateurs des finances publiques du ministère des Finances [@minfin-indicateurs-fp] change de niveau en 1997 et en 2010, et non en 2015 : ses valeurs de 2010 à 2014 sont le recalcul de l'INS en base 2015. Il porte deux changements de niveau supplémentaires, en 2002 et en 2005, parce que ses valeurs de 2002 à 2004 ne se rattachent à aucune base (voir [le tableau des sources](#tbl-pib-sources-tn)).
 
@@ -287,9 +287,9 @@ figtools.figure_tabs(
         "calculés sur la série de la Banque mondiale, dont la base n'est pas dite. Dans la "
         "troisième, "
         "les croix rouges sont les deux taux faux de la série accolée. La série enchaînée est "
-        "une construction du précis, à fin d'illustration : elle préserve les taux de "
+        "une construction de l'ouvrage, à fin d'illustration : elle préserve les taux de "
         "croissance, pas les niveaux ni les structures, ne remplace pas une rétropolation et "
-        "ne sert de dénominateur à aucun ratio du précis."),
+        "ne sert de dénominateur à aucun ratio de l'ouvrage."),
 )
 ```
 
@@ -297,7 +297,7 @@ figtools.figure_tabs(
 
 **La série accolée porte deux taux qui ne mesurent pas la croissance.** En 1997, elle passe de 19 066,0 MD en base 1983 à 22 943,9 MD en base 1997, soit + 20,34 % en apparence, alors que le PIB croît de 9,61 % dans la base 1983 et que le changement de base relève le niveau de 9,79 %. En 2010, elle passe de 58 677,2 MD en base 1997 à 66 139,7 MD en base 2015, soit + 12,72 %, pour une croissance de 7,46 % dans la base 1997 et un relèvement de 4,89 % [@undata-sna ; @ins-cnat-2015 ; @ins-pib-base-2015-2010-2020].
 
-**La série enchaînée évite ces deux sauts, sans devenir une rétropolation.** Elle vaut 100 en 2015 et se déduit, année après année, du taux de croissance de la base la plus récente qui porte à la fois l'année et la précédente ; aux deux jonctions, le taux est donc celui de l'ancienne base. C'est une construction du précis, non une donnée de l'INS. Elle conserve les taux de croissance, mais ni les niveaux ni les structures : elle reporte sur toutes les années antérieures l'écart de l'année de jonction — + 4,89 % en 2010, + 9,79 % en 1997 —, alors que les écarts observés varient d'une année à l'autre ([tableaux des écarts](#sec-pib-ecarts)). Avant 1992, où aucune base n'est dite, ses taux sont ceux de la série de la Banque mondiale [@wb-wdi]. Elle ne sert de dénominateur à aucun ratio du précis.
+**La série enchaînée évite ces deux sauts, sans devenir une rétropolation.** Elle vaut 100 en 2015 et se déduit, année après année, du taux de croissance de la base la plus récente qui porte à la fois l'année et la précédente ; aux deux jonctions, le taux est donc celui de l'ancienne base. C'est une construction de l'ouvrage, non une donnée de l'INS. Elle conserve les taux de croissance, mais ni les niveaux ni les structures : elle reporte sur toutes les années antérieures l'écart de l'année de jonction — + 4,89 % en 2010, + 9,79 % en 1997 —, alors que les écarts observés varient d'une année à l'autre ([tableaux des écarts](#sec-pib-ecarts)). Avant 1992, où aucune base n'est dite, ses taux sont ceux de la série de la Banque mondiale [@wb-wdi]. Elle ne sert de dénominateur à aucun ratio de l'ouvrage.
 
 ### La croissance en volume {#pib-croissance-volume}
 
@@ -328,9 +328,9 @@ figtools.figure_tabs(
         "1962-1965, où les deux familles de sources divergent. Dans la seconde vue, l'écart "
         "entre les deux indices donne une idée de ce que les prix ajoutent à la croissance "
         "du volume ; ce n'est pas un indice de prix publié, les deux indices ne chaînant pas "
-        "chaque année les mêmes sources. L'indice enchaîné est une construction du précis, à fin d'illustration : il "
+        "chaque année les mêmes sources. L'indice enchaîné est une construction de l'ouvrage, à fin d'illustration : il "
         "préserve les taux de croissance, pas les niveaux ni les structures, et ne sert de "
-        "dénominateur à aucun ratio du précis."),
+        "dénominateur à aucun ratio de l'ouvrage."),
 )
 ```
 
@@ -338,7 +338,7 @@ figtools.figure_tabs(
 
 **La Banque mondiale s'en écarte sur quelques périodes.** Ses taux sont identiques à ceux des comptes tunisiens de 1991 à 1997 et, à une année près, de 1971 à 1985 ; ils s'en éloignent de 1,3 point en moyenne de 1986 à 1990. De 1962 à 1965, les deux familles de sources divergent de 6 à 22 points : la Banque mondiale donne − 4,6 %, − 10,7 %, − 4,7 % et − 2,5 %, la série transmise aux Nations unies + 1,6 %, + 11,0 %, + 3,8 % et + 3,8 %. Les métadonnées de la Banque mondiale n'en donnent pas l'explication [@wb-wdi ; @undata-sna].
 
-**L'indice de volume enchaîné est, comme la série enchaînée aux prix courants, une illustration.** Il vaut 100 en 2015 et retient pour chaque année un seul taux : celui de l'INS dans la base la plus récente, à défaut celui que l'INS a transmis aux Nations unies, et pour la seule année 1970, qui n'a aucun taux d'origine tunisienne, celui de la Banque mondiale (+ 4,67 %) [@wb-wdi]. Il chaîne ainsi des taux de sept combinaisons de base et d'année de prix. C'est une construction du précis, non une donnée de l'INS ; il n'a pas de niveau en dinars et ne sert de dénominateur à aucun ratio.
+**L'indice de volume enchaîné est, comme la série enchaînée aux prix courants, une illustration.** Il vaut 100 en 2015 et retient pour chaque année un seul taux : celui de l'INS dans la base la plus récente, à défaut celui que l'INS a transmis aux Nations unies, et pour la seule année 1970, qui n'a aucun taux d'origine tunisienne, celui de la Banque mondiale (+ 4,67 %) [@wb-wdi]. Il chaîne ainsi des taux de sept combinaisons de base et d'année de prix. C'est une construction de l'ouvrage, non une donnée de l'INS ; il n'a pas de niveau en dinars et ne sert de dénominateur à aucun ratio.
 
 ## Quel PIB dans quelle source {#sec-pib-sources}
 
@@ -397,9 +397,9 @@ Les métadonnées que la Banque mondiale attache à la Tunisie déclarent 2015 p
 
 <!-- TODO (documentaliste) : mention de la base du PIB dans la revue des dépenses publiques de la Banque mondiale de 2020 — docs/notes/annexe-pib.md, § 5, lacune L6. -->
 
-## Comment le précis signale une rupture de série {#sec-pib-ruptures}
+## Comment l'ouvrage signale une rupture de série {#sec-pib-ruptures}
 
-Quand une figure ou un tableau rapporte une grandeur au PIB, le précis suit cinq règles :
+Quand une figure ou un tableau rapporte une grandeur au PIB, l'ouvrage suit cinq règles :
 
 1. **La base est nommée.** La légende ou la note dit dans quelle base est le PIB, et s'il est recalculé pour le passé ; quand il ne l'est pas, ou quand la source ne précise pas sa base, elle le dit.
 2. **Les séries sont tracées par segments de base, jamais chaînées.** Aucun raccord n'est calculé entre deux bases pour rapporter une grandeur au PIB : l'écart entre elles n'étant pas constant, un coefficient de passage fabriquerait des valeurs qu'aucune source ne publie. La série enchaînée de la @fig-pib-bases n'y déroge pas : elle illustre la croissance sur longue période et ne sert de dénominateur à aucun ratio.

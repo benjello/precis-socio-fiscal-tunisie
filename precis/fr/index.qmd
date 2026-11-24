@@ -1,6 +1,6 @@
 ---
-title: "Les politiques publiques de la Tunisie"
-subtitle: "Précis historique, juridique et économique"
+title: "L'économie publique de la Tunisie"
+subtitle: "Population, production, revenus et action de l'État"
 format:
   html:
     include-in-header: ../accueil.html
@@ -11,18 +11,50 @@ format:
 :::
 
 ::: {.objet-precis}
-Ce précis analyse les politiques publiques de la Tunisie, principalement depuis l'indépendance, en 1956, sous quatre angles : leur histoire ; les textes qui les mettent en œuvre, chacun rattaché à sa source au *Journal officiel* ; les chiffres et les faits qui les caractérisent, quand des séries existent ; et ce qu'en disent les enseignements de l'économie publique. Il s'adresse aux juristes, aux économistes et aux responsables de politiques publiques.
+Cet ouvrage analyse les politiques publiques de la Tunisie, principalement depuis l'indépendance, en 1956, sous quatre angles : leur histoire ; les textes qui les mettent en œuvre, chacun rattaché à sa source au *Journal officiel* ; les chiffres et les faits qui les caractérisent, quand des séries existent ; et ce qu'en disent les enseignements de l'économie publique. Il s'adresse aux juristes, aux économistes et aux responsables de politiques publiques.
 :::
 
 ## Les parties
 
-Le précis est organisé en grandes parties, qui vont des revenus aux prélèvements, aux transferts, aux politiques sectorielles et aux institutions. Le rangement des volumes et les règles de lecture sont dans la page [Comment lire ce précis](comment-lire.html) ; les sources et la manière dont le précis est constitué, dans [Comment ce précis est constitué](comment-constitue.html). Les principes qui gouvernent le découpage et l'écriture, et la structure d'ensemble, sont exposés dans [Principes et structure](principes-structure.html), un travail en cours pour lequel nous attendons vos retours.
+L'ouvrage est organisé en neuf parties, qui suivent la séquence des comptes nationaux : le cadre, la production, la formation des revenus, leur distribution secondaire, la redistribution en nature, l'utilisation du revenu, l'accumulation, le reste du monde, et la synthèse. Le rangement des volumes et les règles de lecture sont dans la page [Comment lire cet ouvrage](comment-lire.html) ; les sources et la manière dont l'ouvrage est constitué, dans [Comment cet ouvrage est constitué](comment-constitue.html). Les principes qui gouvernent le découpage et l'écriture, et la structure d'ensemble, sont exposés dans [Principes et structure](principes-structure.html), un travail en cours pour lequel nous attendons vos retours.
 
 ::: {.sommaire-parties}
 
-### I. Les revenus primaires
+### 0. Le cadre
 
-Ce que gagnent ceux qui travaillent : le salaire minimum et la négociation salariale dans le secteur privé, la rémunération des agents de l'État.
+Les grandeurs contre lesquelles se lisent tous les volumes : la population, les comptes de la nation, les finances publiques.
+
+- [La population]{.a-venir} : à venir.
+
+- [Le cadre des comptes et des finances publiques]{.a-venir} : à venir ; il comprendra un chapitre sur l'histoire de la comptabilité nationale, un sur la monnaie et le crédit et un sur les régions, et reprendra les annexes sur [le PIB](annexe-pib.html), [les comptes de la nation](annexe-comptes-nation.html) et [le budget de l'État](annexe-budget-etat.html).
+
+### I. La production
+
+Le compte de production : la valeur ajoutée des branches d'activité, et ce que l'État y verse, y finance ou y tarifie.
+
+- [L'agriculture](./agriculture/)
+
+  Ce que l'État verse, prête, garantit ou abandonne au producteur agricole : le crédit bonifié et les abandons de créances, les encouragements à l'investissement, l'eau d'irrigation, les calamités et l'assurance, les intrants, et la dépense du ministère de l'Agriculture sur la longue période. Les prix des produits de base sont à la compensation, les régimes agricoles aux retraites et aux cotisations, les offices aux entreprises publiques. Volume en cours de constitution.
+
+- [Le transport](./transport/)
+
+  Ce que l'État paie pour que les personnes et les marchandises circulent : l'infrastructure qu'il finance (routes, autoroutes concédées, rail, ports, aéroports), les contrats-programmes et subventions qu'il passe avec les opérateurs publics, et la dépense des missions « Transport » et « Équipement » sur la longue période. Ce volume, un premier jet, n'existe pour l'instant qu'en français.
+
+- [L'environnement](./environnement/)
+
+  Ce que l'État dépense, prélève et tarifie pour l'assainissement des eaux usées, la gestion des déchets et la dépollution industrielle : les institutions sous tutelle de l'environnement, la dépense publique sur la longue période, et ce qu'en disent les rapports. Ce volume, une ébauche, n'existe pour l'instant qu'en français.
+
+- [Les industries]{.a-venir} : à venir.
+
+- [L'énergie et les mines]{.a-venir} : à venir.
+
+- [Le tourisme et les services]{.a-venir} : à venir.
+
+- [Le logement et la construction]{.a-venir} : à venir.
+
+### II. La formation des revenus
+
+Le compte d'exploitation, puis les revenus de la propriété : les salaires, le revenu des entreprises individuelles, et les subventions sur les produits.
 
 - [Le marché du travail](./marche_travail/)
 
@@ -36,9 +68,15 @@ Ce que gagnent ceux qui travaillent : le salaire minimum et la négociation sala
 
   Le secteur informel, l'emploi informel et l'économie informelle selon la statistique internationale, les manières de les mesurer et les estimations publiées pour la Tunisie. Ce volume, une ébauche, n'existe pour l'instant qu'en français.
 
-### II. Les prélèvements
+- [La compensation](./compensation/)
 
-Ce que l'État et les collectivités prélèvent, et ce qui finance la protection sociale : les impôts, les budgets locaux, les cotisations.
+  La Caisse générale de compensation et les subventions aux prix — produits de base, carburants, transport : les mécanismes d'avant 1970, la Caisse et son compte, les réformes, la dépense budgétaire sur la longue période, les carburants et leurs prix à la pompe, les tarifs de l'électricité et du gaz, les rapports extérieurs et la répartition entre les ménages.
+
+Voir aussi : les impôts sur les produits et les importations, dans la fiscalité ([la TVA](fiscalite/_tva.html), [les droits de consommation](fiscalite/_droits_consommation.html), [les droits de douane](fiscalite/_droits_douane.html), [le timbre et l'enregistrement](fiscalite/_timbre_enregistrement.html)) ; [les dividendes versés à l'État](entreprises_publiques/_recettes.html), dans les entreprises publiques.
+
+### III. La distribution secondaire du revenu
+
+Ce que l'État, les collectivités et les caisses prélèvent sur les revenus, et ce qu'ils servent aux ménages en espèces : les impôts sur le revenu et le patrimoine, les budgets locaux, les cotisations et les caisses qui les gèrent, les pensions et les prestations sociales.
 
 - [La fiscalité](./fiscalite/)
 
@@ -52,9 +90,9 @@ Ce que l'État et les collectivités prélèvent, et ce qui finance la protectio
 
   Qui cotise, sur quelle assiette et à quel taux : le cadre commun, chaque branche des origines à l'état actuel, et ce qui distingue les régimes.
 
-### III. Les transferts sociaux : prestations en espèces et prestations en nature
+- [Les caisses de sécurité sociale](./caisses/)
 
-Ce que l'État et les caisses servent aux ménages, en argent ou en nature : les pensions, les prestations sociales et le droit aux soins.
+  La CNSS, la CNRPS et la CNAM : les caisses dont elles procèdent depuis le Protectorat, leur statut commun, leurs comptes par régime et leurs relations avec l'État.
 
 - [Les retraites](./retraites/)
 
@@ -64,54 +102,49 @@ Ce que l'État et les caisses servent aux ménages, en argent ou en nature : les
 
   Les prestations autres que les pensions, en espèces et en nature : celles que servent les caisses de sécurité sociale, le droit aux soins et sa construction de 1951 à 2004 (assurance maladie, assistance médicale), et celles de l'assistance sociale, attribuées sous condition de ressources.
 
-### IV. Les politiques sectorielles
+### IV. La redistribution en nature
 
-Les politiques d'un secteur : la santé, la compensation des prix, l'éducation et la formation, le soutien à l'agriculture.
+Les transferts sociaux en nature : les soins et l'enseignement que l'État fournit ou rembourse.
 
 - [La santé](./sante/)
 
   L'évolution de la politique sanitaire et de la couverture ; l'étendue de la couverture et la dépense de soins ; l'hôpital public, la médecine de ville et la rémunération des soignants. Le droit aux soins et son histoire (assurance maladie, assistance médicale) sont dans les prestations sociales.
 
-- [La compensation](./compensation/)
-
-  La Caisse générale de compensation et les subventions aux prix — produits de base, carburants, transport : les mécanismes d'avant 1970, la Caisse et son compte, les réformes, la dépense budgétaire sur la longue période, les carburants et leurs prix à la pompe, les tarifs de l'électricité et du gaz, les rapports extérieurs et la répartition entre les ménages.
-
 - [L'éducation et la formation](./education/)
 
   L'enseignement public comme dépense de l'État et comme droit : l'histoire des lois du système éducatif, les aides aux élèves et aux étudiants (bourses, prêts, restauration, hébergement) et la dépense publique d'éducation. Ce volume, un premier jet, n'existe pour l'instant qu'en français.
 
-- [Le transport](./transport/)
+Voir aussi : [le droit aux soins](prestations_sociales/_soins.html), dans les prestations sociales.
 
-  Ce que l'État paie pour que les personnes et les marchandises circulent : l'infrastructure qu'il finance (routes, autoroutes concédées, rail, ports, aéroports), les contrats-programmes et subventions qu'il passe avec les opérateurs publics, et la dépense des missions « Transport » et « Équipement » sur la longue période. Ce volume, un premier jet, n'existe pour l'instant qu'en français.
+### V. L'utilisation du revenu
 
-- [L'environnement](./environnement/)
+Ce que les ménages consomment et épargnent.
 
-  Ce que l'État dépense, prélève et tarifie pour l'assainissement des eaux usées, la gestion des déchets et la dépollution industrielle : les institutions sous tutelle de l'environnement, la dépense publique sur la longue période, et ce qu'en disent les rapports. Ce volume, une ébauche, n'existe pour l'instant qu'en français.
+- [La consommation et les niveaux de vie]{.a-venir} : à venir.
 
-- [L'agriculture](./agriculture/)
+### VI. L'accumulation
 
-  Ce que l'État verse, prête, garantit ou abandonne au producteur agricole : le crédit bonifié et les abandons de créances, les encouragements à l'investissement, l'eau d'irrigation, les calamités et l'assurance, les intrants, et la dépense du ministère de l'Agriculture sur la longue période. Les prix des produits de base sont à la compensation, les régimes agricoles aux retraites et aux cotisations, les offices aux entreprises publiques. Volume en cours de constitution, rattaché pour l'instant à cette partie IV.
-
-- [Le logement]{.a-venir} : à venir.
-
-### V. Les institutions
-
-Les entités publiques elles-mêmes : les caisses de sécurité sociale et les entreprises publiques, leur statut, leurs comptes et leur relation financière avec l'État.
-
-- [Les caisses de sécurité sociale](./caisses/)
-
-  La CNSS, la CNRPS et la CNAM : les caisses dont elles procèdent depuis le Protectorat, leur statut commun, leurs comptes par régime et leurs relations avec l'État.
+Le compte de capital et le compte financier : l'investissement, et les entités publiques qui détiennent le capital.
 
 - [Les entreprises publiques](./entreprises_publiques/)
 
   La relation financière entre l'État et les entreprises publiques : ce que le budget leur verse, ce que l'État garantit de leur dette, ce que l'État et elles se doivent, ce qu'elles lui versent, et ce que l'État a tiré de leur cession. Ce volume, un premier jet, n'existe pour l'instant qu'en français.
 
-<!-- TODO (rédacteur) : rétablir la partie VI quand ses volumes existent.
+- [L'investissement]{.a-venir} : à venir.
 
-### VI. La synthèse
+Voir aussi : [les régimes d'incitation à l'investissement](fiscalite/_regimes_incitation.html) et [les donations et les successions](fiscalite/_patrimoine_immobilier.html#sec-pi-donations-successions), dans la fiscalité ; l'annexe sur [la dette publique](annexe-dette-publique.html).
 
-- [Le cadre des finances publiques]{.a-venir} et [la redistribution]{.a-venir} : à venir.
--->
+### VII. Le reste du monde
+
+Ce que le pays échange avec l'extérieur.
+
+- [Les échanges extérieurs]{.a-venir} : à venir.
+
+### VIII. La synthèse
+
+Où les instruments se rencontrent : la redistribution d'ensemble et l'état de l'art.
+
+- [La redistribution d'ensemble]{.a-venir} et [l'état de l'art]{.a-venir} : à venir.
 
 Pour retrouver une caisse, un fonds ou une entreprise publique à travers tous les livres, voir l'[index par institution](index-institutions.html). Pour suivre le régime des accidents du travail et des maladies professionnelles à travers quatre livres, voir le [parcours de lecture](parcours-atmp.html).
 
@@ -120,5 +153,5 @@ Pour retrouver une caisse, un fonds ou une entreprise publique à travers tous l
 ## Contribuer
 
 ::: {.contribuer}
-Le précis se construit de manière collaborative : juristes, économistes et responsables de politiques publiques peuvent y contribuer. Pour signaler une erreur, proposer une source ou une correction, ouvrez un ticket sur le [dépôt du précis](https://github.com/benjello/precis-socio-fiscal-tunisie/issues). La page [À propos et contribuer](a-propos.html) dit ce que nous cherchons et comment réagir sans compétence technique.
+L'ouvrage se construit de manière collaborative : juristes, économistes et responsables de politiques publiques peuvent y contribuer. Pour signaler une erreur, proposer une source ou une correction, ouvrez un ticket sur le [dépôt de l'ouvrage](https://github.com/benjello/precis-socio-fiscal-tunisie/issues). La page [À propos et contribuer](a-propos.html) dit ce que nous cherchons et comment réagir sans compétence technique.
 :::

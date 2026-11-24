@@ -1,6 +1,6 @@
 ---
 title: "Les comptes de la nation"
-subtitle: "Annexe commune aux volumes : secteurs institutionnels, les trois approches du PIB, et les grandeurs auxquelles le précis rapporte ses chiffres"
+subtitle: "Annexe commune aux volumes : secteurs institutionnels, les trois approches du PIB, et les grandeurs auxquelles l'ouvrage rapporte ses chiffres"
 format:
   html:
     include-in-header: ../accueil.html
@@ -30,9 +30,9 @@ crossref:
 
 ## Pourquoi cette annexe {#sec-cn-pourquoi}
 
-Les volumes du précis rapportent souvent une grandeur à un agrégat des comptes nationaux : un impôt au [produit intérieur brut (PIB)](#g-pib), la masse salariale publique à la rémunération des salariés, les prestations d'un régime aux transferts sociaux. Ces agrégats ne sont pas des chiffres isolés : ils sont les soldes d'un système de comptes articulés, que l'Institut national de la statistique (INS) construit secteur par secteur et opération par opération. Cette annexe en expose l'ossature, pour que le lecteur situe une grandeur du précis dans l'ensemble macroéconomique dont elle est tirée.
+Les volumes de l'ouvrage rapportent souvent une grandeur à un agrégat des comptes nationaux : un impôt au [produit intérieur brut (PIB)](#g-pib), la masse salariale publique à la rémunération des salariés, les prestations d'un régime aux transferts sociaux. Ces agrégats ne sont pas des chiffres isolés : ils sont les soldes d'un système de comptes articulés, que l'Institut national de la statistique (INS) construit secteur par secteur et opération par opération. Cette annexe en expose l'ossature, pour que le lecteur situe une grandeur de l'ouvrage dans l'ensemble macroéconomique dont elle est tirée.
 
-La comptabilité nationale n'est pas une photographie de l'économie : c'est une **représentation** chiffrée, simplifiée et cohérente, que le statisticien construit à partir de conventions explicites. Son mérite n'est pas de tout dire, mais de tout **relier** — chaque grandeur y trouve sa place dans un circuit où la valeur est d'abord produite, puis répartie entre ceux qui l'ont fait naître, redistribuée par l'impôt et les prestations, enfin dépensée ou épargnée. Situer une grandeur du précis, c'est d'abord savoir à quel moment de ce circuit elle se lit.
+La comptabilité nationale n'est pas une photographie de l'économie : c'est une **représentation** chiffrée, simplifiée et cohérente, que le statisticien construit à partir de conventions explicites. Son mérite n'est pas de tout dire, mais de tout **relier** — chaque grandeur y trouve sa place dans un circuit où la valeur est d'abord produite, puis répartie entre ceux qui l'ont fait naître, redistribuée par l'impôt et les prestations, enfin dépensée ou épargnée. Situer une grandeur de l'ouvrage, c'est d'abord savoir à quel moment de ce circuit elle se lit.
 
 L'annexe [Le PIB et ses changements de base](annexe-pib.html) traite, elle, tout ce qui touche au PIB-dénominateur et aux bases successives des comptes (1983, 1997, 2015) : écarts de niveau, recalcul du passé, quel PIB emploie chaque source, comment lire une part du PIB. La présente annexe ne refait pas cette histoire : chaque fois qu'une base est en jeu, elle renvoie aux [bases des comptes nationaux](annexe-pib.html#sec-pib-bases).
 
@@ -91,7 +91,7 @@ Déroulons ce récit, compte par compte ; chaque notion s'y définit là où ell
 
 **Les deux comptes d'accumulation**, enfin, disent ce que devient cette épargne. Le **compte de capital** l'emploie, avec les transferts en capital, à financer l'investissement — la [formation brute de capital fixe (FBCF)](#g-formation-brute-capital-fixe) — et l'acquisition d'actifs non produits, comme les terrains ; son solde, la [capacité ou le besoin de financement](#g-capacite-besoin-financement), dit si l'agent a dégagé plus de ressources qu'il n'en a employées, ou l'inverse. Le **compte financier** retrace alors comment ce besoin est couvert, ou cette capacité placée, en créances et en dettes.
 
-Une dernière distinction court tout du long. Produire use les machines et les bâtiments ; cette usure — la **consommation de capital fixe**, ce qu'on appelle couramment les amortissements — doit être remplacée ne serait-ce que pour maintenir l'appareil productif en l'état. Un solde calculé avant de la déduire est dit **brut** ; après, **net**. Le précis cite le plus souvent les grandeurs **brutes**, que l'INS publie en premier et qui ne préjugent pas de l'ampleur, toujours incertaine, de ces amortissements.
+Une dernière distinction court tout du long. Produire use les machines et les bâtiments ; cette usure — la **consommation de capital fixe**, ce qu'on appelle couramment les amortissements — doit être remplacée ne serait-ce que pour maintenir l'appareil productif en l'état. Un solde calculé avant de la déduire est dit **brut** ; après, **net**. L'ouvrage cite le plus souvent les grandeurs **brutes**, que l'INS publie en premier et qui ne préjugent pas de l'ampleur, toujours incertaine, de ces amortissements.
 
 Agrégés au niveau de la nation, ces soldes forment un chaînage qui va du PIB à l'épargne [@ins-cnat-2015, éd. 2019-2023, p. 30] :
 
@@ -316,7 +316,7 @@ comptesAnnee = {
 
 ## Les grandeurs citables {#sec-cn-agregats}
 
-Le tableau suivant réunit les agrégats auxquels le précis rapporte ses chiffres, avec leur définition et leur niveau 2021 en base 2015. Chaque fois qu'une de ces grandeurs est citée dans un volume, sa base doit être déclarée, comme pour toute part du PIB (voir les [bases du PIB](annexe-pib.html#sec-pib-bases)).
+Le tableau suivant réunit les agrégats auxquels l'ouvrage rapporte ses chiffres, avec leur définition et leur niveau 2021 en base 2015. Chaque fois qu'une de ces grandeurs est citée dans un volume, sa base doit être déclarée, comme pour toute part du PIB (voir les [bases du PIB](annexe-pib.html#sec-pib-bases)).
 
 | Grandeur | Définition | Niveau 2021 (MD) |
 |---|---|---:|
@@ -336,9 +336,9 @@ Sources : [@ins-cnat-2015, éd. 2019-2023, p. 24, p. 27, p. 30 et p. 55]. Les ni
 
 ## Quel volume touche quel compte {#sec-cn-concordance}
 
-Cette table relie chaque volume du précis à la « case » des comptes où sa grandeur se lit. Elle est **descriptive** : elle dit où une grandeur figure dans les comptes, non qu'elle égale le chiffre budgétaire du volume. Les périmètres comptables et budgétaires ne coïncident pas, et le degré de concordance est déclaré ligne par ligne.
+Cette table relie chaque volume de l'ouvrage à la « case » des comptes où sa grandeur se lit. Elle est **descriptive** : elle dit où une grandeur figure dans les comptes, non qu'elle égale le chiffre budgétaire du volume. Les périmètres comptables et budgétaires ne coïncident pas, et le degré de concordance est déclaré ligne par ligne.
 
-| Volume du précis | Case des comptes | Niveau 2021 (MD) | Concordance |
+| Volume de l'ouvrage | Case des comptes | Niveau 2021 (MD) | Concordance |
 |---|---|---:|---|
 | Rémunérations publiques | Administrations publiques — rémunération des salariés | 21 710,6 | Partielle. Le périmètre comptable (central, local et sécurité sociale, consolidés ; salaires bruts et cotisations employeurs, dont imputées) diffère de la masse salariale budgétaire de l'État. |
 | Prestations sociales, retraites | Organismes de sécurité sociale — prestations sociales en espèces | 10 577,5 | Bonne pour le périmètre sécurité sociale (CNSS, CNRPS, CNAM consolidés), hors prestations servies hors organismes. |
@@ -347,13 +347,13 @@ Cette table relie chaque volume du précis à la « case » des comptes où sa g
 | Finances locales | Administrations publiques — collectivités locales (FBCF) | 425,7 | Faible. Les éditions lues n'isolent les collectivités locales que par leur FBCF, sans séquence complète de comptes. |
 | Marché du travail, informel | Ménages — revenu d'exploitation / revenu mixte (entreprises individuelles) | 39 961,6 | Contextuelle ; les entreprises individuelles sont logées chez les ménages. |
 
-: Concordance entre les volumes du précis et les comptes de la nation, niveaux 2021, base 2015 {#tbl-cn-concordance}
+: Concordance entre les volumes de l'ouvrage et les comptes de la nation, niveaux 2021, base 2015 {#tbl-cn-concordance}
 
 Sources : [@ins-cnat-2015, éd. 2019-2023, p. 27, p. 55, p. 69, p. 100 et pp. 101-102].
 
 ## Ce que les comptes ne disent pas {#sec-cn-limites}
 
-Trois limites bornent l'usage des comptes dans le précis.
+Trois limites bornent l'usage des comptes dans l'ouvrage.
 
 **Pas de comptes de patrimoine.** L'INS précise que « seuls les comptes de flux sont disponibles » et que les comptes de patrimoine « ne sont pas encore élaborés » [@ins-scnt97-presentation, p. 4]. Les comptes de la nation mesurent donc des flux annuels (production, revenus, épargne, investissement), non des stocks : il n'existe pas de bilan patrimonial national dans le système lu ici.
 

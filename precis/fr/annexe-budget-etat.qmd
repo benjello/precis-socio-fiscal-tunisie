@@ -35,9 +35,9 @@ crossref:
 
 ## Pourquoi cette annexe {#sec-bud-pourquoi}
 
-Les volumes du précis rapportent souvent une grandeur au budget de l'État : le rendement d'un impôt dans les recettes, la charge de la compensation dans les dépenses, la masse salariale, les transferts aux entreprises publiques, la dotation des collectivités locales. Une telle part ne se lit qu'en sachant **de quel budget** on parle, car « le budget de l'État » ne désigne pas une grandeur unique : on peut viser le budget *voté* par la loi de finances ou le budget *réalisé* à l'exécution ; le seul budget ordinaire (titre I) ou le total incluant l'investissement (titre II) ; les recettes ou les dépenses.
+Les volumes de l'ouvrage rapportent souvent une grandeur au budget de l'État : le rendement d'un impôt dans les recettes, la charge de la compensation dans les dépenses, la masse salariale, les transferts aux entreprises publiques, la dotation des collectivités locales. Une telle part ne se lit qu'en sachant **de quel budget** on parle, car « le budget de l'État » ne désigne pas une grandeur unique : on peut viser le budget *voté* par la loi de finances ou le budget *réalisé* à l'exécution ; le seul budget ordinaire (titre I) ou le total incluant l'investissement (titre II) ; les recettes ou les dépenses.
 
-Cette annexe dit donc ce que recouvre chaque périmètre, quelle source le précis emploie pour chacun, où la série change de définition sur la longue période, et comment lire une part du budget. Les volumes y renvoient chaque fois qu'ils rapportent un dispositif au budget.
+Cette annexe dit donc ce que recouvre chaque périmètre, quelle source l'ouvrage emploie pour chacun, où la série change de définition sur la longue période, et comment lire une part du budget. Les volumes y renvoient chaque fois qu'ils rapportent un dispositif au budget.
 
 ## Ce que recouvre « le budget » {#sec-bud-definitions}
 
@@ -49,7 +49,7 @@ Le budget existe d'abord comme prévision autorisée, puis comme exécution cons
 
 À l'autre bout de l'exercice, la **loi de règlement** du budget fixe le montant définitif des recettes recouvrées et des paiements visés au cours d'une même gestion [@loi-org-2019-15-lob, art. 65], ce que la loi de 1967 appelait constater « le montant définitif des encaissements de recettes et des ordonnancements de dépenses » [@loi-67-53-lob, art. 46]. C'est le budget **réalisé**. Entre les deux, la loi de finances rectificative révise la prévision en cours d'année ; ces trois catégories — loi de finances de l'année, loi rectificative, loi de règlement — sont celles que nomme la loi organique [@loi-org-2019-15-lob, art. 3].
 
-Le règlement est tardif : le projet de loi de règlement d'une année est transmis au Parlement en même temps que le projet de loi de finances de la deuxième année suivante [@loi-org-2019-15-lob, art. 66]. C'est pourquoi le précis lit le réalisé non dans les lois de règlement, mais dans les séries d'exécution publiées par le ministère des Finances (voir [Sources et périmètres](#sec-bud-sources)).
+Le règlement est tardif : le projet de loi de règlement d'une année est transmis au Parlement en même temps que le projet de loi de finances de la deuxième année suivante [@loi-org-2019-15-lob, art. 66]. C'est pourquoi l'ouvrage lit le réalisé non dans les lois de règlement, mais dans les séries d'exécution publiées par le ministère des Finances (voir [Sources et périmètres](#sec-bud-sources)).
 
 ### Titres, puis missions et programmes
 
@@ -73,7 +73,7 @@ Le budget ordinaire voté (titre I) relevé dans la série longue de cette annex
 
 ## La série longue des dépenses de l'État {#sec-bud-serie-longue}
 
-La série du précis se lit **en deux segments de définition différente**, qui ne se raccordent pas : le budget ordinaire **voté** par la loi de finances (titre I), relevé loi par loi au *Journal officiel* de 1959 à 1986 ; puis les dépenses de l'État **réalisées**, hors service de la dette, publiées par le ministère des Finances de 1986 à aujourd'hui. Les deux se recouvrent en 1986 : cette année-là, le titre I voté (1 970 MD) est inférieur aux dépenses réalisées hors dette (2 395 MD), parce que le voté ordinaire n'inclut ni l'investissement ni l'exécution — c'est pourquoi le précis les présente comme deux segments, et non comme une courbe continue (voir [le pivot du milieu des années 1980](#sec-bud-pivot-1986)).
+La série de l'ouvrage se lit **en deux segments de définition différente**, qui ne se raccordent pas : le budget ordinaire **voté** par la loi de finances (titre I), relevé loi par loi au *Journal officiel* de 1959 à 1986 ; puis les dépenses de l'État **réalisées**, hors service de la dette, publiées par le ministère des Finances de 1986 à aujourd'hui. Les deux se recouvrent en 1986 : cette année-là, le titre I voté (1 970 MD) est inférieur aux dépenses réalisées hors dette (2 395 MD), parce que le voté ordinaire n'inclut ni l'investissement ni l'exécution — c'est pourquoi l'ouvrage les présente comme deux segments, et non comme une courbe continue (voir [le pivot du milieu des années 1980](#sec-bud-pivot-1986)).
 
 ```{python}
 #| label: fig-bud-serie
@@ -156,7 +156,7 @@ figtools.figure_tabs(
 <!-- BROUILLON (chantier annexe-budget-desagregation) — à relire. Matière : docs/notes/annexe-budget-desagregation.md. -->
 
 Les dépenses réalisées de l'État hors dette — le trait rouge de la @fig-bud-serie — se laissent
-**décomposer**, pour relier chaque grandeur examinée ailleurs dans le précis et suivre son poids
+**décomposer**, pour relier chaque grandeur examinée ailleurs dans l'ouvrage et suivre son poids
 année par année. Deux lectures se complètent : une **vue budgétaire**, qui range la dépense comme
 la loi de finances et le ministère des Finances la rangent (rémunérations, moyens, interventions,
 équipement, prêts) ; une **vue économique**, dite des *comptes de la nation*, qui regroupe les
@@ -194,7 +194,7 @@ figtools.figure_tabs(
 )
 ```
 
-### Les dispositifs du précis ne s'emboîtent pas sous une seule nature
+### Les dispositifs de l'ouvrage ne s'emboîtent pas sous une seule nature
 
 On voudrait lire chaque dispositif étudié ailleurs — la masse salariale, la compensation, les
 transferts aux entreprises publiques, aux caisses de sécurité sociale, la dotation des
@@ -220,7 +220,7 @@ figtools.figure_tabs(
     annexe_budget.fig_dispositifs(), annexe_budget.table_dispositifs(),
     "budget-dispositifs-poids",
     slug="fig_bud_dispositifs",
-    caption=("Le poids des dispositifs du précis dans les dépenses de l'État hors dette, par an "
+    caption=("Le poids des dispositifs de l'ouvrage dans les dépenses de l'État hors dette, par an "
              "(les transferts transversaux en pointillé)"),
     note_lecture=(
         "Chaque courbe est un dispositif rapporté aux dépenses de l'État hors dette. Les traits "
@@ -548,7 +548,7 @@ figtools.figure_tabs(
 
 ## Le pivot du milieu des années 1980 {#sec-bud-pivot-1986}
 
-Le précis change de source et de définition au milieu des années 1980 : avant, la seule série continue est le budget ordinaire **voté** relevé au *Journal officiel* ; à partir de 1986, le ministère des Finances publie des séries d'exécution. Les deux ne mesurent pas la même chose — l'un est voté et ordinaire, l'autre réalisé et plus large. Le précis ne les raccorde pas : il présente la période de construction (1959-1986) par le voté, et la période moderne (depuis 1986) par le réalisé, et signale la rupture.
+L'ouvrage change de source et de définition au milieu des années 1980 : avant, la seule série continue est le budget ordinaire **voté** relevé au *Journal officiel* ; à partir de 1986, le ministère des Finances publie des séries d'exécution. Les deux ne mesurent pas la même chose — l'un est voté et ordinaire, l'autre réalisé et plus large. L'ouvrage ne les raccorde pas : il présente la période de construction (1959-1986) par le voté, et la période moderne (depuis 1986) par le réalisé, et signale la rupture.
 
 ## Sources et périmètres {#sec-bud-sources}
 
@@ -576,4 +576,4 @@ Rapporter une grandeur au budget — un impôt dans les recettes, une charge dan
 - **Dire voté ou réalisé, titre I ou total.** Une part n'a de sens qu'avec son périmètre : le budget voté par la loi de finances ou le réalisé à l'exécution, le seul budget ordinaire (titre I) ou un total incluant l'investissement.
 - **Déflater avant de comparer dans le temps.** Une part en dinars courants ne se compare d'une année à l'autre qu'une fois les montants ramenés aux prix d'une même année de référence.
 - **Une part au PIB hérite de la base.** Le dénominateur change de niveau à chaque changement de base des comptes nationaux ; la part se lit par segments de base (voir l'[annexe sur le PIB](annexe-pib.html#sec-pib-ruptures)).
-- **Ne jamais chaîner voté et réalisé en une seule courbe.** Les deux ne mesurent pas la même chose : le précis les présente en deux segments (voir [le pivot du milieu des années 1980](#sec-bud-pivot-1986)).
+- **Ne jamais chaîner voté et réalisé en une seule courbe.** Les deux ne mesurent pas la même chose : l'ouvrage les présente en deux segments (voir [le pivot du milieu des années 1980](#sec-bud-pivot-1986)).

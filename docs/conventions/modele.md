@@ -56,7 +56,7 @@ lieu des corrections. Ces conventions valent pour toute PR qu'un agent y prépar
   de commit**, même pour en parler. La fusion en squash fait du titre le sujet du commit ; GitHub y
   lit le drapeau et supprime **toutes** les exécutions sur `master` — déploiement et release-please
   compris. Les variantes comptent aussi : `[ci skip]`, `[no ci]`, `***NO_CI***`.
-  Le 14/09/2026, la PR #208 du précis corrigeait précisément la propagation de ce drapeau aux commits
+  Le 14/09/2026, la PR #208 du dépôt corrigeait précisément la propagation de ce drapeau aux commits
   de squash. Son titre le citait ; le commit de fusion `21ac558` n'a déclenché aucun workflow. Le
   correctif contre le drapeau a été éteint par le drapeau, et la release qui devait suivre n'a jamais
   été proposée.
@@ -88,25 +88,25 @@ lieu des corrections. Ces conventions valent pour toute PR qu'un agent y prépar
 - Régénère ce qui se régénère — notamment `reports/openfisca/pension_source_audit.md` — et vérifie
   que le diff ne porte que sur ton sujet.
 
-### Rendre au précis
+### Rendre à l'ouvrage
 
-Les tableaux de paramètres du précis doivent venir des dépôts de modèle **par un générateur**
+Les tableaux de paramètres de l'ouvrage doivent venir des dépôts de modèle **par un générateur**
 (`scripts/generate_*_tables.py`), jamais être recopiés à la main. Un tableau fait main est toléré
 en attendant que les paramètres soient datés et sourcés en amont, et porte alors un
 `<!-- TODO (rédacteur) : remplacer par un tableau engendré -->`. On ne régénère jamais un tableau
 qui dépend d'une PR openfisca non fusionnée : la CI régénère depuis `master`.
 
-**Déplacer un paramètre casse le précis, qui le lit par son chemin.** Un renommage ou un passage de
+**Déplacer un paramètre casse l'ouvrage, qui le lit par son chemin.** Un renommage ou un passage de
 feuille à nœud rend le générateur muet — « paramètre introuvable ou vide » — et le contrôle
-hebdomadaire de fraîcheur échoue sans qu'aucun commit du précis soit en cause. L'ordre n'est donc
+hebdomadaire de fraîcheur échoue sans qu'aucun commit du dépôt soit en cause. L'ordre n'est donc
 jamais indifférent :
 
-1. la PR du modèle annonce la dépendance dans son corps, et un ticket la consigne côté précis ;
+1. la PR du modèle annonce la dépendance dans son corps, et un ticket la consigne dans le dépôt de l'ouvrage ;
 2. la version est **publiée** ;
 3. la borne de version du paquet est relevée dans `scripts/openfisca_tables.py`, avec son motif ;
 4. les chemins sont corrigés, les snapshots régénérés, et l'on vérifie qu'ils sortent **identiques** —
    seul le chemin a changé, pas la valeur.
 
-Corriger le précis avant la publication casse ses tableaux ; corriger après la publication, mais
+Corriger l'ouvrage avant la publication casse ses tableaux ; corriger après la publication, mais
 trop tard, casse sa CI. Le 14 septembre 2026, deux paramètres déplacés le même jour ont produit les
 deux cas.
