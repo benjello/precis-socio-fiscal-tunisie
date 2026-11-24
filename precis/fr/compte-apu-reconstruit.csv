@@ -7,7 +7,7 @@ annee,edition,secteur,compte,cote,code_scn,operation,cible_ins_md,postes,somme_p
 2023,2021-2025,S13,Compte d'affectation des revenus primaires,ressources,D.214,autres_impots_produits,5621.2,droits-consommation,3809.4,1811.8,67.8,
 2023,2021-2025,S13,Compte d'affectation des revenus primaires,ressources,D.39,autres_subventions_production,-226.8,,,,,
 2023,2021-2025,S13,Compte d'affectation des revenus primaires,ressources,D.213,impots_exportations,104.4,,,,,
-2023,2021-2025,S13,Compte d'affectation des revenus primaires,ressources,D.212,impots_importations,2293.5,droits-douane,1849.0,444.5,80.6,"droits et impôts sur les importations hors TVA des comptes, plus larges que les droits de douane du budget"
+2023,2021-2025,S13,Compte d'affectation des revenus primaires,ressources,D.212,impots_importations,2293.5,droits-douane,1849.0,444.5,80.6,droits et taxes sur les importations des comptes face aux droits de douane du budget
 2023,2021-2025,S13,Compte d'affectation des revenus primaires,ressources,D.2,impots_production_importations,20896.8,autres-impots-indirects;droits-consommation;droits-douane;tva,22006.4,-1109.6,105.3,
 2023,2021-2025,S13,Compte d'affectation des revenus primaires,ressources,D.41,interets,353.2,,,,,
 2023,2021-2025,S13,Compte d'affectation des revenus primaires,ressources,D.45,loyers,2227.8,,,,,
@@ -31,7 +31,7 @@ annee,edition,secteur,compte,cote,code_scn,operation,cible_ins_md,postes,somme_p
 2023,2021-2025,S13,Compte de capital,emplois,D.99,autres_transferts_capital,2290.8,,,,,
 2023,2021-2025,S13,Compte de capital,emplois,B.9,capacite_financement,-8874.9,,,,,
 2023,2021-2025,S13,Compte de capital,emplois,,ecart_statistique,0.0,,,,,
-2023,2021-2025,S13,Compte de capital,emplois,P.51g,fbcf,5346.0,equipement-etat,9147.0,-3801.0,171.1,FBCF des comptes face aux dépenses d'équipement du budget (qui comprennent des dépenses non productives de capital)
+2023,2021-2025,S13,Compte de capital,emplois,P.51g,fbcf,5346.0,equipement-etat,9147.0,-3801.0,171.1,FBCF des comptes face aux dépenses d'équipement du budget
 2023,2021-2025,S13,Compte de capital,emplois,D.9,transferts_capital,3302.7,,,,,
 2023,2021-2025,S13,Compte de capital,ressources,D.99,autres_transferts_capital,1233.4,,,,,
 2023,2021-2025,S13,Compte de capital,ressources,B.8g,epargne_brute,-1489.7,,,,,
@@ -48,7 +48,7 @@ annee,edition,secteur,compte,cote,code_scn,operation,cible_ins_md,postes,somme_p
 2023,2021-2025,S13,Compte de distribution secondaire du revenu,ressources,D.7,autres_transferts_courants,8453.8,,,,,
 2023,2021-2025,S13,Compte de distribution secondaire du revenu,ressources,D.74,cooperation_internationale,1089.5,,,,,
 2023,2021-2025,S13,Compte de distribution secondaire du revenu,ressources,D.61,cotisations_sociales,14855.2,cotisations-sociales,,,,
-2023,2021-2025,S13,Compte de distribution secondaire du revenu,ressources,D.5,impots_courants,16774.9,impot-societes;irpp,16030.8,744.1,95.6,droits constatés des comptes face aux encaissements du budget
+2023,2021-2025,S13,Compte de distribution secondaire du revenu,ressources,D.5,impots_courants,16774.9,impot-societes;irpp,16030.8,744.1,95.6,impôts courants des comptes face à l'IRPP et à l'IS du budget
 2023,2021-2025,S13,Compte de distribution secondaire du revenu,ressources,D.72,indemnites_assurance_dommages,9.4,,,,,
 2023,2021-2025,S13,Compte de distribution secondaire du revenu,ressources,B.5g,solde_revenus_primaires,11130.0,,,,,
 2023,2021-2025,S13,Compte de distribution secondaire du revenu,ressources,D.75,transferts_courants_divers,1482.8,,,,,
@@ -66,7 +66,7 @@ annee,edition,secteur,compte,cote,code_scn,operation,cible_ins_md,postes,somme_p
 2023,2021-2025,S1311,Compte d'affectation des revenus primaires,ressources,D.214,autres_impots_produits,5505.3,droits-consommation,3809.4,1695.9,69.2,
 2023,2021-2025,S1311,Compte d'affectation des revenus primaires,ressources,D.39,autres_subventions_production,-226.8,,,,,
 2023,2021-2025,S1311,Compte d'affectation des revenus primaires,ressources,D.213,impots_exportations,104.4,,,,,
-2023,2021-2025,S1311,Compte d'affectation des revenus primaires,ressources,D.212,impots_importations,2293.5,droits-douane,1849.0,444.5,80.6,"droits et impôts sur les importations hors TVA des comptes, plus larges que les droits de douane du budget"
+2023,2021-2025,S1311,Compte d'affectation des revenus primaires,ressources,D.212,impots_importations,2293.5,droits-douane,1849.0,444.5,80.6,droits et taxes sur les importations des comptes face aux droits de douane du budget
 2023,2021-2025,S1311,Compte d'affectation des revenus primaires,ressources,D.2,impots_production_importations,20379.8,autres-impots-indirects;droits-consommation;droits-douane;tva,22006.4,-1626.6,108.0,
 2023,2021-2025,S1311,Compte d'affectation des revenus primaires,ressources,D.41,interets,216.1,,,,,
 2023,2021-2025,S1311,Compte d'affectation des revenus primaires,ressources,D.45,loyers,2064.4,,,,,
@@ -90,7 +90,7 @@ annee,edition,secteur,compte,cote,code_scn,operation,cible_ins_md,postes,somme_p
 2023,2021-2025,S1311,Compte de capital,emplois,D.99,autres_transferts_capital,2255.6,,,,,
 2023,2021-2025,S1311,Compte de capital,emplois,B.9,capacite_financement,-9271.8,,,,,
 2023,2021-2025,S1311,Compte de capital,emplois,,ecart_statistique,0.0,,,,,
-2023,2021-2025,S1311,Compte de capital,emplois,P.51g,fbcf,4899.2,equipement-etat,9147.0,-4247.8,186.7,FBCF des comptes face aux dépenses d'équipement du budget (qui comprennent des dépenses non productives de capital)
+2023,2021-2025,S1311,Compte de capital,emplois,P.51g,fbcf,4899.2,equipement-etat,9147.0,-4247.8,186.7,FBCF des comptes face aux dépenses d'équipement du budget
 2023,2021-2025,S1311,Compte de capital,emplois,D.9,transferts_capital,3267.4,,,,,
 2023,2021-2025,S1311,Compte de capital,ressources,D.99,autres_transferts_capital,756.2,,,,,
 2023,2021-2025,S1311,Compte de capital,ressources,B.8g,epargne_brute,-1891.5,,,,,
@@ -106,7 +106,7 @@ annee,edition,secteur,compte,cote,code_scn,operation,cible_ins_md,postes,somme_p
 2023,2021-2025,S1311,Compte de distribution secondaire du revenu,ressources,D.7,autres_transferts_courants,5989.9,,,,,
 2023,2021-2025,S1311,Compte de distribution secondaire du revenu,ressources,D.74,cooperation_internationale,1085.9,,,,,
 2023,2021-2025,S1311,Compte de distribution secondaire du revenu,ressources,D.61,cotisations_sociales,743.4,,,,,
-2023,2021-2025,S1311,Compte de distribution secondaire du revenu,ressources,D.5,impots_courants,16695.2,impot-societes;irpp,16030.8,664.4,96.0,droits constatés des comptes face aux encaissements du budget
+2023,2021-2025,S1311,Compte de distribution secondaire du revenu,ressources,D.5,impots_courants,16695.2,impot-societes;irpp,16030.8,664.4,96.0,impôts courants des comptes face à l'IRPP et à l'IS du budget
 2023,2021-2025,S1311,Compte de distribution secondaire du revenu,ressources,D.72,indemnites_assurance_dommages,9.4,,,,,
 2023,2021-2025,S1311,Compte de distribution secondaire du revenu,ressources,B.5g,solde_revenus_primaires,9956.3,,,,,
 2023,2021-2025,S1311,Compte de distribution secondaire du revenu,ressources,D.75,transferts_courants_divers,842.7,,,,,

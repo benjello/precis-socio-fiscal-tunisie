@@ -52,10 +52,10 @@ AGREGATS = {
     "revenus_propriete": ["interets", "revenus_distribues", "loyers"],
 }
 # Écarts connus entre comptes et budget, nommés et non corrigés (voir l'annexe des comptes).
-RESIDUS_NOMMES = {
-    "impots_importations": "droits et impôts sur les importations hors TVA des comptes, plus larges que les droits de douane du budget",
-    "impots_courants": "droits constatés des comptes face aux encaissements du budget",
-    "fbcf": "FBCF des comptes face aux dépenses d'équipement du budget (qui comprennent des dépenses non productives de capital)",
+RESIDUS_NOMMES = {  # noms descriptifs ; les explications sont testées par scripts/expliquer_residus.py
+    "impots_importations": "droits et taxes sur les importations des comptes face aux droits de douane du budget",
+    "impots_courants": "impôts courants des comptes face à l'IRPP et à l'IS du budget",
+    "fbcf": "FBCF des comptes face aux dépenses d'équipement du budget",
 }
 
 

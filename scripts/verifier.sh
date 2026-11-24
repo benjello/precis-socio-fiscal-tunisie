@@ -102,6 +102,7 @@ etape "Les manifestes de relevés sont lisibles et cohérents" uv run python scr
 etape "Les copies locales annoncées sont dans les manifestes de tunisia-data" uv run python scripts/check_copies_locales.py
 etape "Les sous-agents Claude Code sont à jour" uv run python scripts/sync_agents.py --verifier
 etape "Le compte reconstruit des administrations publiques est cohérent" uv run python scripts/reconstruire_comptes.py --verifier
+etape "Les résidus du compte reconstruit sont à jour" uv run python scripts/expliquer_residus.py --verifier
 etape "Les liens entre volumes mènent à une page et une ancre (fr)" uv run python scripts/verifier_liens_entre_volumes.py --langue fr
 etape "Les liens entre volumes mènent à une page et une ancre (ar)" uv run python scripts/verifier_liens_entre_volumes.py --langue ar
 

@@ -88,6 +88,71 @@ print("\n: Contrôles de la reconstruction (millions de dinars) {#tbl-capu-contr
 
 Les écarts connus entre les comptes et le budget — droits sur les importations, impôts courants, formation brute de capital fixe face aux dépenses d'équipement — apparaissent comme des résidus nommés, non corrigés ; ils sont discutés dans [l'annexe sur les comptes de la nation](annexe-comptes-nation.html#sec-cn-recoupements).
 
+## Comprendre les résidus de 2023 {#sec-capu-residus}
+
+```{python}
+#| echo: false
+_x = list(csv.DictReader(open("compte-apu-residus.csv", encoding="utf-8")))
+_s = list(csv.DictReader(open("compte-apu-residus-series.csv", encoding="utf-8")))
+_cible = {l["operation"]: l for l in _r if l["secteur"] == "S13"}
+def cite(src):
+    return "; ".join(f"[@{k.strip()}]" for k in src.split(";"))
+```
+
+Pour chaque opération, le tableau teste une à une les explications possibles de l'écart entre le compte de l'INS (S13 consolidé) et les postes de l'ouvrage, sans rien corriger. **Établi** : l'explication est mesurée par un chiffre sourcé. **Plausible** : elle n'est pas chiffrée, ou les chiffres sont seulement compatibles avec elle. **Écarté** : les chiffres la contredisent. Quatre tests reviennent pour chaque opération :
+
+- le **périmètre** : la part des collectivités locales et de la sécurité sociale, puis l'écart face à l'administration centrale (S1311) ;
+- le **moment d'enregistrement** : un écart qui change de signe d'une année à l'autre sur 2015-2023 évoque un décalage entre encaissement et droits constatés ; un signe constant désigne un périmètre ou un classement ;
+- la **source du budget** : réalisation ou prévision ;
+- le **classement** de l'opération dans les comptes et dans le budget.
+
+Chaque année est lue dans la dernière édition des comptes de la nation qui la publie.
+
+```{python}
+#| echo: false
+#| output: asis
+print("| Opération | INS | Postes | Écart | Hypothèse | Explication | Statut | Source |")
+print("|---|--:|--:|--:|---|---|---|---|")
+vu = set()
+for l in _x:
+    c = _cible.get(l["operation"])
+    tete = l["operation"] not in vu and c is not None
+    vu.add(l["operation"])
+    print(f"| {l['libelle'] if tete else ''} | {n(c['cible_ins_md']) if tete else ''} | {n(c['somme_postes_md']) if tete else ''} | "
+          f"{n(c['residu_md']) if tete else ''} | {l['hypothese']} | {l['explication']} | {l['statut']} | {cite(l['source'])} |")
+print(f"\n: Résidus du compte des administrations publiques, {AN} : explications testées (millions de dinars courants) {{#tbl-capu-residus}}")
+```
+
+Deux écarts ont un profil de définition plutôt que de calendrier. Les droits et taxes sur les importations (D.212) dépassent les droits de douane du budget dans un rapport presque constant. Les dépenses d'équipement du budget dépassent la FBCF de l'administration centrale d'un écart qui se creuse depuis 2021 ; jusqu'en 2020, la FBCF et les transferts en capital versés (D.9) en couvraient l'essentiel.
+
+```{python}
+#| echo: false
+#| output: asis
+for op, titre in (("impots_importations", "D.212 face aux droits de douane (S13)"), ("fbcf", "P.51g face aux dépenses d'équipement (S1311)")):
+    sec = "S13" if op == "impots_importations" else "S1311"
+    ls = [l for l in _s if l["operation"] == op and l["secteur"] == sec]
+    print("| Année | INS | Budget | Écart | Rapport |")
+    print("|---|--:|--:|--:|--:|")
+    for l in ls:
+        print(f"| {l['annee']} | {n(l['ins_md'])} | {n(l['postes_md'])} | {n(l['ecart_md'])} | {float(l['rapport']):.2f}".replace(".", ",") + " |")
+    print(f"\n: {titre}, 2015-{AN} (millions de dinars courants) {{#tbl-capu-serie-{op.replace('_', '-')}}}\n")
+```
+
+::: {.callout-note collapse="true"}
+## Les écarts de toutes les opérations, année par année
+
+```{python}
+#| echo: false
+#| output: asis
+print("| Opération | Secteur | Année | INS | Postes | Écart | Rapport |")
+print("|---|---|---|--:|--:|--:|--:|")
+for l in _s:
+    print(f"| {l['operation'].replace('_', ' ')} | {l['secteur']} | {l['annee']} | {n(l['ins_md'])} | {n(l['postes_md'])} | "
+          f"{n(l['ecart_md'])} | {float(l['rapport']):.3f}".replace(".", ",") + " |")
+print(f"\n: Écarts entre les comptes et les postes, 2015-{AN} (millions de dinars courants) {{#tbl-capu-residus-series}}")
+```
+:::
+
 ## Références {.unnumbered}
 
 ::: {#refs}
