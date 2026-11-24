@@ -27,6 +27,7 @@ RACINE = Path(__file__).resolve().parent.parent
 CACHE = RACINE / "precis" / "_seriescache"
 SORTIE = RACINE / "precis" / "fr" / "compte-apu-residus.csv"
 SERIES = RACINE / "precis" / "fr" / "compte-apu-residus-series.csv"
+FRAGMENTS = RACINE / "precis" / "fr" / "encadres-comptes"
 AN = 2023
 ANNEES = list(range(2015, AN + 1))
 INS, RF, DEP, DETTE, BCT = "ins-cnat-2015", "minfin-recettes-fiscales", "minfin-repartition-depenses-xls", \
@@ -180,6 +181,14 @@ def main() -> int:
                     print(f"{p.name} n'est pas à jour : relancer scripts/expliquer_residus.py")
                     return 1
         return 0
+    passages = {}
+    for t in tests:  # un fragment par opération, inclus dans le bloc « passage » de la section domicile
+        passages.setdefault(t["operation"], [f"Les explications testées de l'écart de {AN} pour {t['libelle']}, "
+                                             "établies, plausibles ou écartées :", ""])
+        passages[t["operation"]].append(f"- **{t['hypothese']}** ({t['statut']}) : {t['explication']}")
+    for op, ls in passages.items():
+        ls += ["", "Le tableau complet, avec les sources, est dans [le compte reconstruit](../compte-apu.html#sec-capu-residus)."]
+        (FRAGMENTS / f"passage-{op}.md").write_text("\n".join(ls) + "\n", encoding="utf-8")
     for p, rows in ((SORTIE, tests), (SERIES, series)):
         with p.open("w", newline="", encoding="utf-8") as f:
             w = csv.DictWriter(f, fieldnames=list(rows[0]), lineterminator="\n")
