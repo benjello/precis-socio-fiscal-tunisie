@@ -241,9 +241,12 @@ def main(argv=None) -> int:
         lib = q[0]["libelle_ins"] if q else p["operation"].replace("_", " ")
         verse = " ; ".join(f"{x['secteur']} {fr(x['valeur_md'])}" for x in q if x["cote"] == "emplois" and x["valeur_md"])
         recoit = " ; ".join(f"{x['secteur']} {fr(x['valeur_md'])}" for x in q if x["cote"] == "ressources" and x["valeur_md"])
+        if p["code_scn"].startswith("P."):  # opération sur produits : des emplois, pas un versement
+            flux = f"emplois des secteurs : {verse or recoit}"
+        else:
+            flux = f"versent : {verse or 'aucun secteur principal'} ; reçoivent : {recoit or 'aucun secteur principal'}"
         phrase = (f"Ce dispositif relève de l'opération **{p['code_scn']} « {lib} »** des comptes de la nation. "
-                  f"En {an} (édition {ed}), en millions de dinars, versent : {verse or 'aucun secteur principal'} ; "
-                  f"reçoivent : {recoit or 'aucun secteur principal'}.")
+                  f"En {an} (édition {ed}), en millions de dinars, {flux}.")
         if l:
             phrase += f" Les administrations publiques y inscrivent {fr(l['cible_ins_md'])} millions de dinars ({p['cote']})"
             phrase += (f" ; l'ouvrage en chiffre {fr(p['montant_reference'])} pour ce dispositif." if p["montant_reference"]
