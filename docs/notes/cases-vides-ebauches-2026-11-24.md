@@ -91,6 +91,20 @@ Ce que l'entrepôt contient :
 - la FBCF par branche alimente aussi « La branche en chiffres » des volumes de branche
   (« L'énergie », #846).
 
+## État des extractions (24/11/2026, soir)
+
+- FBCF : faite, tunisia-data #147 (quatre tableaux, quinze éditions 2005-2009 à 2021-2025,
+  1 491 contrôles sur 1 500).
+- Consommation et échanges par produit : faits, tunisia-data #148 (aux prix courants, quinze
+  éditions, 258 contrôles sur 258). **Le tableau « dépense de consommation finale des ménages par
+  produit » totalise la consommation finale globale (ménages et administrations)** : son total
+  est égal à la « consommation finale globale » des emplois du PIB. Pour la case P.3 des
+  ménages, la source reste la P.3 des comptes de secteur ; le tableau par produit sert à la
+  structure, en retirant les lignes des services d'administration, d'enseignement et de santé
+  avec prudence (elles mêlent dépense des ménages et consommation publique).
+- Restent les tableaux en volume (prix de l'année précédente) et le rapprochement avec la
+  balance commerciale de la BCT.
+
 ## Ordre proposé
 
 1. Extraire les FBCF : elles servent trois fois (investissement, volumes de branche, recoupement
