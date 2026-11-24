@@ -72,6 +72,14 @@ Références : INS, *Les comptes de la nation* (clé bibliographique `ins-cnat-2
 - La réponse dirait quelle valeur publier, et s'il s'agit d'une révision ou d'une coquille.
 - Priorité 2.
 
+**B5. Pourquoi le solde du TOF (B9F) ne se raccorde-t-il pas à la capacité de financement des sociétés non financières et des ménages ?** (étape « compte financier »)
+- Observé, en 2023, édition 2021-2025 (TOF p. 133, comptes des secteurs) :
+  - S11 : B9F 4 249,8, contre une capacité de financement (B.9) de 3 885,3, soit 364,5 d'écart ;
+  - S14 : B9F 856,4, contre 991,9, soit −135,5 ;
+  - S12 et S13 : le raccord est exact.
+- La réponse dirait si l'écart statistique est porté par ces deux secteurs, et comment le présenter.
+- Priorité 2.
+
 **B2. L'écart de 0,5 sur les autres transferts courants divers en 2023 (édition 2019-2023) est-il une coquille ?**
 - Observé : les neuf valeurs relues sur les pages 84, 86, 87, 94, 95, 102, 103, 106 et 107 donnent 12 432,9 d'emplois et 12 433,4 de ressources, au-delà de l'arrondi cumulé (0,45). L'année 2023 est provisoire dans cette édition, et l'écart est résorbé dans l'édition suivante.
 - Priorité 3.

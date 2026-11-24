@@ -79,3 +79,11 @@ Ouvert le 24/11/2026, au fil du plan par opération (`docs/notes/plan-par-operat
 - **Question** : quand brancher le cache des séries et le registre des postes sur les sources de la base (page, édition, empreinte) ?
 - **Recommandation** : après la fusion de #155 et #156 sur main. Le cache est régénéré depuis main, et un tableau qui dépendrait d'une branche non fusionnée serait écrasé.
 - **Bloque** : le contrôle bloquant dans verifier.sh (« une valeur citée remonte à une publication enregistrée »).
+
+## M12. Le domicile du compte financier
+- **Question** : où domicilier le compte financier (F.1 à F.8) ? Il est aujourd'hui dispersé entre les garanties et les cessions des entreprises publiques et le crédit agricole.
+- **Options** :
+  - (a) une partie « Financier » du futur plan, avec la monnaie et le crédit du volume cadre ;
+  - (b) le volume des entreprises publiques pour l'État actionnaire et prêteur.
+- **Appliqué par défaut** : la page « Les comptes des secteurs » porte le tableau par secteur (#870), sans déplacer de section.
+- **Coût de changer** : (a) déplace une vingtaine de sections (cessions, garanties, crédit agricole) ; (b) n'en déplace aucune.
