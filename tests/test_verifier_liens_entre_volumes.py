@@ -35,3 +35,14 @@ def test_liens_bons_et_casses(tmp_path):
 def test_identifiant_pandoc():
     assert vlv.identifiant_pandoc("Les grandes réformes") == "les-grandes-réformes"
     assert vlv.identifiant_pandoc("1. La mise en place") == "la-mise-en-place"
+
+
+def test_etiquette_par_defaut_d_une_fonction_de_figures(tmp_path):
+    """Une page qui appelle `ep.tableau_x(…)` porte l'étiquette par défaut de la fonction."""
+    livre = tmp_path / "livre"
+    (livre / "figures").mkdir(parents=True)
+    (livre / "figures" / "mod.py").write_text('def tableau_x(caption, tbl_id: str = "tbl-x-defaut"):\n    pass\n',
+                                              encoding="utf-8")
+    page = livre / "_p.qmd"
+    page.write_text("from figures import mod as m\nm.tableau_x('légende')\n", encoding="utf-8")
+    assert "tbl-x-defaut" in vlv.identifiants(page)
