@@ -6,7 +6,7 @@ Un volume neuf naît en français ; sa traduction vient plus tard, par la CI.
    séquence des comptes, chapitres, sources tunisiennes disponibles), validée avant tout `.qmd`.
 2. **Montage** : copier `precis/fr/environnement/_quarto.yml` (volume récent, en français seul) et
    changer `title`, `repo-subdir` et la liste `chapters` ; créer `index.qmd` et un
-   `references.json` vide (`[]`).
+   `references.json` vide (`{"items": []}`).
 3. **Enregistrer le volume** là où les volumes sont énumérés :
    - `build.sh`, tableau `BOOKS` ;
    - `scripts/build_glossary.py`, liste des livres ;
