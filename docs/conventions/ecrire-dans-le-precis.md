@@ -1,11 +1,11 @@
-# Écrire dans le précis : les règles qu'on oublie le plus
+# Écrire dans l'ouvrage : les règles qu'on oublie le plus
 
 <!-- Détail déplacé d'AGENTS.md le 17/11/2026 (source unique) ; AGENTS.md y renvoie en une ligne. -->
 
 `docs/conventions-redaction.md` fait foi ; ce mémento en rappelle les règles les plus souvent oubliées.
 
 
-- **Le découpage des livres** (six parties, domicile d'un dispositif entre livres, types de
+- **Le découpage des livres** (neuf parties selon la séquence des comptes nationaux, domicile d'un dispositif entre livres, types de
   chapitres, critère de scission, antécédent et contexte, section « Ce qu'en dit l'économie ») est
   énoncé dans `docs/conventions-redaction.md`, § 4 ; le chantier, dans
   `docs/notes/chantier-decoupage-livres.md`.
@@ -25,7 +25,7 @@
   refuse les marqueurs de conflit, les dates futures proches et les clés de citation absentes
   des `references.json`.
 - **Où verser quel report : `docs/backlog-routage.md`.** Le backlog est **différencié** — une
-  destination par nature de report (chapitre du précis → `backlog-precis.md` ; modèle openfisca →
+  destination par nature de report (chapitre de l'ouvrage → `backlog-precis.md` ; modèle openfisca →
   `backlog-modele.md` ; recherche JORT infructueuse → `docs/recherches.yml` + ancre `RECHERCHE` ;
   bibliographie → `biblio-a-rapatrier.md` ; donnée/série/OCR de l'entrepôt → notes de
   `tunisia-data`). La carte complète, les contrôles CI et la règle des chantiers parallèles sont
@@ -65,7 +65,7 @@
 - **Tout PIB dit sa base, et s'il est rétropolé** ; si la source ne le dit pas, on l'écrit. Jamais
   deux bases chaînées en silence : la série se trace par segments, le changement de base est une
   rupture, et la rupture renvoie à l'annexe du site sur le PIB (`precis/fr/annexe-pib.qmd`).
-  La règle vaut pour un PIB que le précis **emploie lui-même** — série, ratio calculé, figure. Un
+  La règle vaut pour un PIB que l'ouvrage **emploie lui-même** — série, ratio calculé, figure. Un
   ratio au PIB simplement **cité** d'une étude ou d'un rapport, entre guillemets et avec sa
   référence, se donne tel quel : on n'écrit pas que la source n'en précise ni la base ni le calcul.
 - **Les études citées sont récupérées** : le PDF de toute étude citée est rangé dans

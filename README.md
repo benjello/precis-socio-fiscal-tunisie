@@ -1,6 +1,6 @@
-# Les politiques publiques de la Tunisie
+# L'économie publique de la Tunisie
 
-Précis historique, juridique et économique
+Population, production, revenus et action de l'État
 
 Un ouvrage de référence en accès libre, en français et en arabe : histoire des politiques publiques, textes
 de mise en œuvre, chiffres et analyse économique. Il retrace règle par règle l'évolution des
@@ -12,21 +12,28 @@ télécharge aussi en PDF.
 
 ## Les volumes
 
-| Volume | Objet |
-|---|---|
-| I. Fiscalité | l'impôt sur le revenu et les autres impôts |
-| II. Cotisations sociales | taux, assiettes et plafonds des prélèvements sur les revenus du travail |
-| III. Prestations sociales | aide et assistance sociales, soutien à l'emploi, prestations familiales |
-| IV. Retraites | les régimes de retraite des secteurs public et privé |
-| V. Caisses de sécurité sociale | la CNSS, la CNRPS et la CNAM : leur lignée, leur statut, leurs comptes par régime et leurs relations avec l'État |
-| VI. Rémunérations publiques | statuts, grilles, indemnités des agents publics |
-| VII. Finances locales | fiscalité locale, transferts de l'État et budgets des collectivités locales |
-| VIII. Marché du travail | salaire minimum, conventions collectives et négociations salariales du secteur privé |
-| IX. Compensation | la Caisse générale de compensation et les subventions aux prix : produits de base, carburants, transport |
-| X. Entreprises publiques | transferts, garanties, dettes croisées, dividendes et cessions |
-| XI. Santé | couverture des soins, hôpital public, médecine de ville, rémunération des soignants et transferts non monétaires |
-| XII. L'éducation et la formation | histoire des lois du système éducatif, aides aux élèves et aux étudiants, dépense publique d'éducation |
-| XIII. L'informel : définitions et mesures | secteur informel, emploi informel, économie informelle : définitions internationales, manières de les mesurer, estimations pour la Tunisie |
+Seize volumes, rangés en neuf parties qui suivent la séquence des comptes nationaux (voir
+`precis/fr/principes-structure.qmd`). Les parties 0 (le cadre), V (l'utilisation du revenu), VII
+(le reste du monde) et VIII (la synthèse) n'ont pas encore de volume.
+
+| Partie | Volume | Objet |
+|---|---|---|
+| I. La production | L'agriculture | crédit bonifié, encouragements à l'investissement, eau d'irrigation, calamités et assurance, intrants, dépense du ministère de l'Agriculture |
+| | Le transport | infrastructure financée par l'État, contrats-programmes et subventions aux opérateurs publics, dépense des missions « Transport » et « Équipement » |
+| | L'environnement | assainissement des eaux usées, gestion des déchets, dépollution industrielle : institutions, dépense publique, rapports |
+| II. La formation des revenus | Marché du travail | salaire minimum, conventions collectives et négociations salariales du secteur privé |
+| | Rémunérations publiques | statuts, grilles, indemnités des agents publics |
+| | L'informel : définitions et mesures | secteur informel, emploi informel, économie informelle : définitions internationales, manières de les mesurer, estimations pour la Tunisie |
+| | Compensation | la Caisse générale de compensation et les subventions aux prix : produits de base, carburants, transport |
+| III. La distribution secondaire du revenu | Fiscalité | l'impôt sur le revenu et les autres impôts |
+| | Finances locales | fiscalité locale, transferts de l'État et budgets des collectivités locales |
+| | Cotisations sociales | taux, assiettes et plafonds des prélèvements sur les revenus du travail |
+| | Caisses de sécurité sociale | la CNSS, la CNRPS et la CNAM : leur lignée, leur statut, leurs comptes par régime et leurs relations avec l'État |
+| | Retraites | les régimes de retraite des secteurs public et privé |
+| | Prestations sociales | aide et assistance sociales, soutien à l'emploi, prestations familiales |
+| IV. La redistribution en nature | Santé | couverture des soins, hôpital public, médecine de ville, rémunération des soignants et transferts non monétaires |
+| | L'éducation et la formation | histoire des lois du système éducatif, aides aux élèves et aux étudiants, dépense publique d'éducation |
+| VI. L'accumulation | Entreprises publiques | transferts, garanties, dettes croisées, dividendes et cessions |
 
 Chaque dispositif y est présenté dans son histoire, réforme par réforme, avec des tableaux datés
 et des liens vers les textes. C'est un travail en cours : certains chapitres sont complets,

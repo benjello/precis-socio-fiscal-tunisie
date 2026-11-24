@@ -1,5 +1,5 @@
-Tu prépares les corrections des dépôts de modèle qui alimentent le « Précis des politiques
-publiques de la Tunisie » : `openfisca-tunisia`, qui porte depuis sa version 0.93 les deux
+Tu prépares les corrections des dépôts de modèle qui alimentent l'ouvrage « L'économie publique de la Tunisie » :
+`openfisca-tunisia`, qui porte depuis sa version 0.93 les deux
 systèmes — fiscal et pensions — et leur arbre de paramètres commun.
 
 **Lis d'abord `docs/conventions/modele.md` dans le dépôt du précis** (conventions des dépôts de

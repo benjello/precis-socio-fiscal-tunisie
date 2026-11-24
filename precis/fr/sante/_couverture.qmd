@@ -369,7 +369,7 @@ Les **paiements directs** sont les dépenses de santé réglées directement par
 | 2023 | 37,94 | 374,4 | 422,2 |
 
 ::: {.figure-source}
-Source : comptes de santé de l'OMS [@oms-ghed-paiements-directs-tunisie], taux de change Banque mondiale/FMI [@bm-taux-change-officiel-tunisie] et indice des prix commun du précis (INS, prolongé par la BCT [@bct-ra-ipc-sante]) ; montants en dinars calculés ici.
+Source : comptes de santé de l'OMS [@oms-ghed-paiements-directs-tunisie], taux de change Banque mondiale/FMI [@bm-taux-change-officiel-tunisie] et indice des prix commun de l'ouvrage (INS, prolongé par la BCT [@bct-ra-ipc-sante]) ; montants en dinars calculés ici.
 :::
 
 ::: {.callout-note appearance="simple" title="Comment lire ce tableau"}
@@ -387,14 +387,14 @@ Ce sont des **moyennes par habitant**, pas les factures d'un ménage. Les dinars
 | 2022 | 36,29 | 100,33 | 3,1036 | 1 697,4 | 311,4 | 383,9 |
 | 2023 | 37,94 | 120,54 | 3,1062 | 1 855,7 | 374,4 | 422,2 |
 
-Calcul sur les valeurs **non arrondies** des séries : `D courants = USD × D/USD` ; `D de 2025 = D courants × 2 092,7 / indice de l'année`. L'indice est celui de tous les dinars constants du précis : l'indice général des prix à la consommation familiale de l'INS, base 100 en 1970, prolongé en 2024 et 2025 par la variation de l'indice de base 2015 que relaie la Banque centrale.
+Calcul sur les valeurs **non arrondies** des séries : `D courants = USD × D/USD` ; `D de 2025 = D courants × 2 092,7 / indice de l'année`. L'indice est celui de tous les dinars constants de l'ouvrage : l'indice général des prix à la consommation familiale de l'INS, base 100 en 1970, prolongé en 2024 et 2025 par la variation de l'indice de base 2015 que relaie la Banque centrale.
 
 ### Sources
 
 ::: {.figure-sources-detail}
 - OMS, *Global Health Expenditure Database*, indicateurs GHED_OOPSCHE_SHA2011 et GHED_OOP_pc_US_SHA2011 [@oms-ghed-paiements-directs-tunisie] : paiements directs en part de la dépense courante de santé et en dollars courants par habitant, 2018-2023.
 - Banque mondiale, série PA.NUS.FCRF, issue des *International Financial Statistics* du FMI [@bm-taux-change-officiel-tunisie] : moyenne annuelle du taux officiel en dinars par dollar.
-- Indice des prix commun aux dinars constants du précis : INS, indice général des prix à la consommation familiale, base 100 en 1970, jusqu'en 2023 ; prolongé par la variation de l'indice de base 2015 relayé par la BCT [@bct-ra-ipc-sante, rapport 2025, tabl. 2-1, p. 57] ; **2 092,7 en 2025**.
+- Indice des prix commun aux dinars constants de l'ouvrage : INS, indice général des prix à la consommation familiale, base 100 en 1970, jusqu'en 2023 ; prolongé par la variation de l'indice de base 2015 relayé par la BCT [@bct-ra-ipc-sante, rapport 2025, tabl. 2-1, p. 57] ; **2 092,7 en 2025**.
 :::
 
 :::

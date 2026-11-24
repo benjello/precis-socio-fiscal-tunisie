@@ -838,7 +838,7 @@ Cette section rassemble ce que des institutions internationales et une étude é
 
 **La Banque mondiale (1995).** À partir des taux de protection nominale et effective de 1983 à 1995, la Banque mondiale donne une moyenne des droits supérieure à 40 % avant l'ajustement, de 24 % de 1987 à 1990 et d'environ 35 % en 1995, droit complémentaire provisoire compris ; la fourchette est de 15 à 43 % en 1990 [@bm-1995-vers-21e-siecle, annexe 2, p. 5].
 
-**Le tarif et la recette : le taux de perception implicite.** Rapporter la rubrique « droits de douane » du ministère des Finances, redevance comprise, à la valeur des importations donne un [taux de perception implicite](#g-taux-perception-implicite) : la part de la valeur importée que l'État perçoit en droits. C'est un calcul du précis, non une valeur publiée ; les importations sont celles de la Banque centrale de 1988 à 1997 [@bct-ra-1998, p. 129] et de l'Institut national de la statistique depuis 1998 [@ins-annuaire, tableau 14.2]. La figure le superpose aux moyennes simples du GATT et de l'OMC : les deux mesures portent sur le même tarif, mais l'une pèse ce qui est perçu, l'autre les taux affichés.
+**Le tarif et la recette : le taux de perception implicite.** Rapporter la rubrique « droits de douane » du ministère des Finances, redevance comprise, à la valeur des importations donne un [taux de perception implicite](#g-taux-perception-implicite) : la part de la valeur importée que l'État perçoit en droits. C'est un calcul de l'ouvrage, non une valeur publiée ; les importations sont celles de la Banque centrale de 1988 à 1997 [@bct-ra-1998, p. 129] et de l'Institut national de la statistique depuis 1998 [@ins-annuaire, tableau 14.2]. La figure le superpose aux moyennes simples du GATT et de l'OMC : les deux mesures portent sur le même tarif, mais l'une pèse ce qui est perçu, l'autre les taux affichés.
 
 ```{python}
 #| label: fig-dd-perception
@@ -854,7 +854,7 @@ figtools.figure_tabs(
              "1988-2023, et moyennes simples des taux du tarif publiées par le GATT et "
              "l'OMC, 1987-2025, en %"),
     note_lecture=(
-        "Deux familles, deux légendes. Les courbes sont un calcul du précis : la rubrique "
+        "Deux familles, deux légendes. Les courbes sont un calcul de l'ouvrage : la rubrique "
         "« droits de douane » du ministère des Finances, redevance comprise, rapportée aux "
         "importations, toutes ou du seul régime général. Les importations viennent de la "
         "Banque centrale jusqu'en 1997 (marqueurs creux), de l'Institut national de la "

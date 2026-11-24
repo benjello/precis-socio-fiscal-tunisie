@@ -1,16 +1,17 @@
 # Consignes pour les agents
 
-Ce fichier s'adresse à tout agent — quel que soit l'outil — qui travaille sur le « Précis des
-politiques publiques de la Tunisie », ou sur les dépôts de modèle qui l'alimentent. Il est
+Ce fichier s'adresse à tout agent — quel que soit l'outil — qui travaille sur l'ouvrage
+« L'économie publique de la Tunisie », ou sur les dépôts de modèle qui l'alimentent. Il est
 versionné : c'est ici que les conventions vivent, pas dans la mémoire d'un assistant.
 
 ## Le dépôt en deux phrases
 
-Neuf volumes bilingues — des livres Quarto, `precis/fr/<livre>/` et `precis/ar/<livre>/` — :
+Seize volumes — des livres Quarto, `precis/fr/<livre>/`, rangés en neuf parties
+(`precis/fr/principes-structure.qmd`) — dont onze ont leur version arabe sous `precis/ar/<livre>/` :
 fiscalité, cotisations sociales, prestations sociales, retraites, caisses de sécurité sociale,
-rémunérations publiques, finances locales, marché du travail, compensation ; quatre volumes
-supplémentaires, les entreprises publiques, la santé, l'éducation et l'informel, en français seulement tant que leurs
-traductions ne sont pas livrées ; un glossaire bilingue
+rémunérations publiques, finances locales, marché du travail, compensation, santé, agriculture ;
+cinq, les entreprises publiques, l'éducation, l'informel, le transport et l'environnement, en
+français seulement tant que leurs traductions ne sont pas livrées ; un glossaire bilingue
 engendré depuis `precis/glossaire.yml`, une bibliographie CSL-JSON, et des tableaux de paramètres
 engendrés depuis le dépôt `openfisca-tunisia`, qui porte aussi les retraites depuis sa version 0.93.
 
@@ -39,13 +40,13 @@ et sur `pist.tn` en ligne. Voir `docs/notes/outillage-sources.md`.
   tourner en fin de tâche. **N'emploie jamais `pkill` sans cibler tes propres processus** : d'autres
   agents travaillent en parallèle dans le même répertoire de session.
 
-## Écrire dans le précis
+## Écrire dans l'ouvrage
 
 `docs/conventions-redaction.md` fait foi ; mémento des règles les plus oubliées : `docs/conventions/ecrire-dans-le-precis.md`.
 
 ## Dépôts de modèle (rôle « modéliste »)
 
-Dater, découper, tester, publier, rendre au précis : `docs/conventions/modele.md`.
+Dater, découper, tester, publier, rendre à l'ouvrage : `docs/conventions/modele.md`.
 
 ## Économiser
 
