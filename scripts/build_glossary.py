@@ -55,6 +55,7 @@ BOOKS = [
     "transport",
     "environnement",
     "energie",
+    "industrie",
     "cadre",
     "agriculture",
 ]
