@@ -6035,7 +6035,7 @@
 
 - id: r-enr-arretes-prix-rachat-pv
   objet: arrêtés du ministre chargé de l'énergie fixant les prix de rachat par la STEG de l'électricité photovoltaïque des autorisations (loi n° 2015-12, art. 22) et les tarifs des excédents d'autoconsommation en moyenne et haute tension (décret n° 2016-1123, art. 8), et décrets d'application restants (puissance maximale des autorisations, contrats-types)
-  ou: [precis/fr/entreprises_publiques/_energie.qmd#sec-ep-enr-etat-du-droit]
+  ou: [precis/fr/energie/_energie.qmd#sec-ep-enr-etat-du-droit]
   requetes:
     titres_fts: [energies AND renouvelables AND electricite, tarif AND electricite AND renouvelable]
     titres_like: ['%energies renouvelables%', '%production%electricite%renouvelable%', '%tarif%rachat%electricite%']
