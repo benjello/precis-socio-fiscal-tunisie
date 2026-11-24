@@ -1,0 +1,60 @@
+# Présentation {#sec-logement-presentation}
+
+Ce livre décrit la construction et le logement du point de vue de l'action publique : ce que la branche de la construction pèse dans la valeur ajoutée, les entreprises publiques de l'habitat et de l'équipement, ce que l'État y dépense, et ce qu'en disent les rapports. Le logement social — le fonds de promotion du logement pour les salariés et les programmes publics — est exposé dans « Les prestations sociales » ; ce livre y renvoie.
+
+::: {.callout-note}
+Ce volume est une **ébauche** : sa trame et sa première série sont établies, sa rédaction reste à faire. Il n'existe pour l'instant qu'en français.
+:::
+
+<!-- TODO (rédacteur) : première rédaction. Matière : valeur ajoutée de la construction
+     2020-2025 (ins-va-branche-base2015) ; FBCF par domaine et par produit (cnat-fbcf, après
+     fusion dans tunisia-data) ; loyers réels et imputés, rangés par l'INS dans « Autres
+     activités des ménages » (borne haute, voir la fiche de la série) ; enquête nationale sur le
+     budget, la consommation et le niveau de vie des ménages de 2021 (structure du logement). -->
+
+## Le périmètre {#sec-logement-perimetre}
+
+Le livre suit la branche « Construction » de la nomenclature agrégée des comptes de la nation de l'INS [@ins-cnat-2015], et les entreprises publiques de l'habitat et de l'équipement.
+
+## Plan {#sec-logement-plan}
+
+1. **La branche en chiffres** ([section](#sec-logement-chiffres)).
+2. **Les entreprises publiques de l'habitat et de l'équipement** ([chapitre](./_habitat.html#sec-ep-habitat)) : l'Agence foncière d'habitation, la SPROLS, la SNIT, l'ARRU, la SOGEMT.
+3. **La dépense publique** ([chapitre](./_depense.html#sec-logement-depense)).
+4. **Rapports et études** ([chapitre](./_etudes.html#sec-logement-etudes)).
+
+## La branche en chiffres {#sec-logement-chiffres}
+
+La @fig-logement-va donne la valeur ajoutée de la construction aux prix courants, de 2020 à 2025, et sa part dans le total des valeurs ajoutées.
+
+```{python}
+#| label: fig-logement-va
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import logement as lg
+import figtools
+figtools.figure_tabs(
+    lg.vues_va(), lg.table_va(),
+    "ins-va-branche-base2015",
+    slug="fig_logement_va",
+    caption=("Valeur ajoutée de la construction, 2020-2025 (millions de dinars courants, "
+             "base 2015) et part dans le total des valeurs ajoutées"),
+    note_lecture=(
+        "Le premier onglet donne la valeur ajoutée de la branche « Construction » ; le second "
+        "la rapporte au total des valeurs ajoutées de la même édition."))
+```
+
+La valeur ajoutée de la construction passe de 4 647,4 millions de dinars en 2020 à 5 408,1 en 2025 [@ins-cnat-2015] ; sa part dans le total des valeurs ajoutées baisse de 4,2 % à 3,4 %, la branche croissant moins vite que l'ensemble.
+
+<!-- TODO (données) : valeur ajoutée en base 1997 ; FBCF en logement et en bâtiment ; emploi. -->
+
+## Ce que d'autres livres traitent {#sec-logement-voisinage}
+
+| Sujet | Domicile | Ce que ce livre en reçoit |
+|---|---|---|
+| Logement social, fonds de promotion du logement pour les salariés | « Les prestations sociales », [chapitre « Le logement social »](../prestations_sociales/_logement_social.html#sec-logement-social) | un lien |
+| Fiscalité immobilière, donations et successions | « La fiscalité », [chapitre du patrimoine immobilier](../fiscalite/_patrimoine_immobilier.html) | un lien |
+| Statut des entreprises publiques, transferts, garanties | « Les entreprises publiques » | des liens depuis le chapitre des entreprises de l'habitat |
+
+: Les sujets voisins et le livre qui les expose {#tbl-logement-voisinage}

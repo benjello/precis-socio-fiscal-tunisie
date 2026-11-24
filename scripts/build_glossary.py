@@ -55,6 +55,8 @@ BOOKS = [
     "transport",
     "environnement",
     "energie",
+    "industrie",
+    "logement",
     "cadre",
     "agriculture",
     "synthese",

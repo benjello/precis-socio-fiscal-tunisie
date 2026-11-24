@@ -1,0 +1,67 @@
+# Présentation {#sec-industrie-presentation}
+
+Ce livre décrit l'industrie manufacturière et les mines du point de vue de l'action publique : ce qu'elles produisent et ce qu'elles pèsent dans la valeur ajoutée, les institutions et les entreprises publiques qui y opèrent, ce que l'État y dépense et y prélève, et ce qu'en disent les rapports et les études. Le raffinage du pétrole est exposé dans « L'énergie » ; les régimes d'incitation à l'investissement, dans « La fiscalité ».
+
+::: {.callout-note}
+Ce volume est une **ébauche** : sa trame et ses premières séries sont établies, sa rédaction reste à faire. Il n'existe pour l'instant qu'en français.
+:::
+
+<!-- TODO (rédacteur) : première rédaction. Matière disponible dans l'entrepôt de données :
+     valeur ajoutée par branche 2020-2025 (ins-va-branche-base2015) ; FBCF des entreprises par
+     branche, quinze éditions, bases 1997 et 2015 séparées (cnat-fbcf, en attente de fusion dans
+     tunisia-data) ; fiches et états financiers des entreprises publiques du chapitre déplacé. -->
+
+## Le périmètre {#sec-industrie-perimetre}
+
+Le livre suit sept branches de la nomenclature agrégée des comptes de la nation de l'INS : les industries agro-alimentaires ; le textile, l'habillement et le cuir ; les industries chimiques ; les autres produits minéraux non métalliques (matériaux de construction, céramique, verre) ; les industries mécaniques et électriques ; les industries diverses ; l'extraction des produits miniers [@ins-cnat-2015]. Le raffinage du pétrole, l'extraction du pétrole et du gaz, l'électricité et le gaz relèvent de « L'énergie ».
+
+## Plan {#sec-industrie-plan}
+
+1. **La branche en chiffres** ([section](#sec-industrie-chiffres)) : valeur ajoutée, investissement, emploi.
+2. **Les institutions** ([chapitre](./_institutions.html#sec-industrie-institutions)) : la tutelle et les agences de la branche.
+3. **Les entreprises publiques de l'industrie et des mines** ([chapitre](./_industrie.html#sec-ep-industrie)) : la CPG, le Groupe chimique tunisien, El Fouladh, les cimenteries, la SNCPA, l'Agence foncière industrielle.
+4. **La dépense publique** ([chapitre](./_depense.html#sec-industrie-depense)).
+5. **Rapports et études** ([chapitre](./_etudes.html#sec-industrie-etudes)).
+
+## La branche en chiffres {#sec-industrie-chiffres}
+
+La @fig-industrie-va donne la valeur ajoutée des sept branches aux prix courants, de 2020 à 2025, et leur part dans le total des valeurs ajoutées.
+
+```{python}
+#| label: fig-industrie-va
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import industrie as ind
+import figtools
+figtools.figure_tabs(
+    ind.vues_va(), ind.table_va(),
+    "ins-va-branche-base2015",
+    slug="fig_industrie_va",
+    caption=("Valeur ajoutée des branches de l'industrie et des mines, 2020-2025 (millions de "
+             "dinars courants, base 2015) et part dans le total des valeurs ajoutées"),
+    note_lecture=(
+        "Chaque barre empile la valeur ajoutée des six branches manufacturières et de "
+        "l'extraction minière ; sa hauteur est le total. Le second onglet rapporte ce total au "
+        "total des valeurs ajoutées de la même édition."))
+```
+
+La valeur ajoutée de l'industrie et des mines passe de 16 694,8 millions de dinars en 2020 (15,2 % du total des valeurs ajoutées) à 25 537,8 en 2025 (15,9 %) [@ins-cnat-2015]. Les industries mécaniques et électriques en sont la première branche : de 4 667,2 en 2020 à 8 726,6 en 2025. L'extraction minière reste la plus petite, de 407,6 en 2020 à 1 122,2 en 2025.
+
+La série ne commence qu'en 2020 : la base 2015 n'est pas publiée par branche avant cette date dans la banque de données de l'INS, et les bases antérieures ne se chaînent pas avec elle (voir [l'annexe sur le PIB](../annexe-pib.html)).
+
+<!-- TODO (données) : valeur ajoutée par branche en base 1997 ; FBCF des entreprises par branche
+     (cnat-fbcf, après fusion) ; emploi par branche. -->
+
+## Ce que d'autres livres traitent {#sec-industrie-voisinage}
+
+Un dispositif vit dans un seul livre ; celui-ci en reçoit une phrase et un lien.
+
+| Sujet | Domicile | Ce que ce livre en reçoit |
+|---|---|---|
+| Statut des entreprises publiques, transferts, garanties, cessions (ensemble des entreprises) | « Les entreprises publiques » | des liens depuis le chapitre des entreprises de l'industrie |
+| Régimes d'incitation à l'investissement | « La fiscalité », [chapitre des régimes d'incitation](../fiscalite/_regimes_incitation.html) | un lien |
+| Raffinage du pétrole, énergie | « L'énergie » | un lien |
+| Dépollution industrielle | « L'environnement », [chapitre « La dépollution et les fonds »](../environnement/_depollution.html#sec-env-depollution) | un lien |
+
+: Les sujets voisins et le livre qui les expose {#tbl-industrie-voisinage}
