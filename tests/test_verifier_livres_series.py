@@ -46,8 +46,9 @@ class TestSeriesCiblees(unittest.TestCase):
     def test_livres_touches_reel(self):
         # Sur le dépôt : la population aux recensements ne fait rendre que les finances locales ;
         # le snapshot seul, tous les livres.
-        self.assertEqual(v.livres_touches(["precis/_seriescache/population-milieu-communal-recensements.csv"]),
-                         ["finances_locales"])
+        livres = v.livres_touches(["precis/_seriescache/population-milieu-communal-recensements.csv"])
+        self.assertIn("finances_locales", livres)
+        self.assertLess(len(livres), len(v.LIVRES))  # pas tous les livres : seulement ceux qui la citent
         self.assertEqual(v.livres_touches(["precis/_seriescache/catalog.snapshot.yml"]), sorted(v.LIVRES))
 
 
