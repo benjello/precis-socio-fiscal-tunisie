@@ -1,0 +1,5 @@
+series: [cnat-secteurs, cnat-produits]
+sources: [ins-cnat-2015]
+fiches: [sources/ins-comptes-nationaux-publications.md]
+caveats: [LE TABLEAU « DES MÉNAGES » TOTALISE LA CONSOMMATION FINALE GLOBALE (ménages et administrations publiques) : son ENSEMBLE est égal à la « Consommation finale globale » des emplois du PIB, non à la « Consommation privée » ; il comprend administration, enseignement, santé. Pour la consommation des seuls ménages, prendre la P.3 des comptes de secteur. DEUX BASES, JAMAIS CHAÎNÉES : filtrer `base`. Une année publiée par plusieurs éditions garde toutes ses lectures. Ligne « Services non marchands » des importations de 2005-2009 et 2008-2012 : valeurs nulles imprimées sur une partie des colonnes seulement, non versées.]
+generated: 2026-11-24
