@@ -1,0 +1,18 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-11-24
+# séries (tunisia_data) : cnat-tof
+# sources (citation) : @ins-cnat-2015
+# fiches : sources/ins-comptes-nationaux-publications.md
+# méthode/hypothèses : VALEURS LUES, JAMAIS CALCULÉES. Colonnes attribuées par position (programmation dynamique), contrôlées par les sommes imposées (scripts/controler_cnat_tof.py) ; sondage exhaustif : chaque ligne retrouvée telle quelle sur sa page (scripts/sonder_cnat_tof.py). Créances = dettes vérifié pour tous les instruments. 110 contrôles de sommes restent en écart, listés dans cnat_tof_controles.csv (statut ecart) : sous-secteurs financiers incohérents avec S12 sur quelques pages, et une ligne imprimée éclatée (édition 2015-2020, p. 134, F21). Raccord du solde financier avec les comptes de secteur : à l'arrondi sauf deux cas.
+# note : Solde des créances et dettes par secteur institutionnel, 2015-2025 (millions de dinars courants, base 2015)
+Année,Sociétés non financières,Sociétés financières,Administrations publiques,Ménages,Somme des quatre secteurs,Reste du monde (imprimé)
+2015,-5721.5,925.5,-2512.4,197.7,-7110.7,-7110.8
+2016,-4772.6,1086.1,-4381.0,335.6,-7731.9,-7731.9
+2017,-6248.5,1186.0,-4670.1,306.7,-9425.9,-9425.9
+2018,-10210.9,1842.3,-3239.7,187.3,-11421.0,-11421.1
+2019,-7145.9,2031.3,-4370.8,281.3,-9204.1,-9204.1
+2020,-874.9,2109.3,-8145.9,796.4,-6115.1,-6115.0
+2021,-1702.1,1428.8,-6919.4,827.6,-6365.1,-6365.1
+2022,-2795.8,2132.2,-10709.9,820.7,-10552.8,-10552.9
+2023,4249.8,2743.8,-8874.9,856.4,-1024.9,-1024.8
+2024,3132.5,2258.6,-8492.0,787.5,-2313.4,-2313.3
+2025,-347.5,2225.9,-8009.0,847.6,-5283.0,-5283.0

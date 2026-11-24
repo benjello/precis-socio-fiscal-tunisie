@@ -1,0 +1,5 @@
+series: [cnat-tof]
+sources: [ins-cnat-2015]
+fiches: [sources/ins-comptes-nationaux-publications.md]
+caveats: [VALEURS LUES, JAMAIS CALCULÉES. Colonnes attribuées par position (programmation dynamique), contrôlées par les sommes imposées (scripts/controler_cnat_tof.py) ; sondage exhaustif : chaque ligne retrouvée telle quelle sur sa page (scripts/sonder_cnat_tof.py). Créances = dettes vérifié pour tous les instruments. 110 contrôles de sommes restent en écart, listés dans cnat_tof_controles.csv (statut ecart) : sous-secteurs financiers incohérents avec S12 sur quelques pages, et une ligne imprimée éclatée (édition 2015-2020, p. 134, F21). Raccord du solde financier avec les comptes de secteur : à l'arrondi sauf deux cas.]
+generated: 2026-11-24
