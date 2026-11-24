@@ -54,6 +54,25 @@ for code, ancre in (("S14", "menages"), ("S11", "snf"), ("S12", "sf"), ("S2", "r
     print(f"\n: {ls[0]['nom'].capitalize()}, opérations de {AN} et domiciles dans l'ouvrage (millions de dinars courants) {{#tbl-csec-{ancre}}}")
 ```
 
+## Le compte financier par secteur {#sec-csec-financier}
+
+Le tableau des opérations financières (TOF) de l'INS donne, pour chaque secteur, les flux nets de créances acquises et de dettes contractées, par instrument. Son solde, la variation des créances moins celle des dettes (B9F), se raccorde à la capacité ou au besoin de financement (B.9) des comptes des secteurs. Les écarts de ce raccord sont publiés tels quels.
+
+```{python}
+#| echo: false
+#| output: asis
+_f = list(csv.DictReader(open("compte-secteurs-financier.csv", encoding="utf-8")))
+NOMS = {"F1": "F.1 Or monétaire et DTS", "F2": "F.2 Numéraire et dépôts", "F3": "F.3 Titres de créance", "F4": "F.4 Crédits",
+        "F5": "F.5 Actions et parts", "F6": "F.6 Assurances et retraites", "F7": "F.7 Dérivés", "F8": "F.8 Autres comptes",
+        "F": "Total des opérations financières", "B9F": "Solde B9F (créances − dettes)"}
+print("| Instrument | Secteur | Créances | Dettes | Capacité de financement (B.9) | Pages |")
+print("|---|---|--:|--:|--:|---|")
+for l in _f:
+    print(f"| {NOMS.get(l['instrument'], l['instrument'])} | {l['secteur']} | {n(l['creances_md'])} | {n(l['dettes_md'])} | "
+          f"{n(l['capacite_financement_md'])} | {l['pages'].replace(';', ', ')} |")
+print(f"\n: Le compte financier des secteurs, flux de {AN}, édition {ED} (millions de dinars courants ; pages du tableau des opérations financières) {{#tbl-csec-financier}}")
+```
+
 ## Références {.unnumbered}
 
 ::: {#refs}
