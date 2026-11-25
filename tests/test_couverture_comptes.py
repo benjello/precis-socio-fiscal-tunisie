@@ -265,3 +265,42 @@ def test_controles_en_echec_portee():
     out = rc.controles_en_echec(src, 2009, "2009-2013", {"cotisations_sociales"})
     assert [(l["objet"], l["touche_total"]) for l in out] == [("valeur_ajoutee_brute", "non"),
                                                                ("cotisations_sociales", "indetermine")]
+
+
+def test_base_1983_sans_administration_centrale():
+    """La série en base 1983 du cache ne porte pas le compte de l'administration centrale : les années qu'elle
+    est seule à couvrir ont les collectivités locales et la sécurité sociale, ni l'État ni la somme des trois
+    sous-secteurs ; chaque année est lue dans la dernière édition où elle est définitive."""
+    import reconstruire_comptes as rc
+    b83 = rc.lire_base1997(rc.BASE1983)
+    assert "apu_centrale" not in {l["secteur"] for l in b83}
+    a = _annees()
+    ans83 = sorted({y for (y, _), l in a.items() if l["base"] == "1983"})
+    assert ans83 and max(ans83) < min(y for (y, _), l in a.items() if l["base"] == "1997")
+    for y in ans83:
+        assert (y, "S13") not in a and (y, "S1311") not in a, y
+        assert a[(y, "S1313")]["edition"] == a[(y, "S1314")]["edition"] == rc.edition_pour(b83, y)
+
+
+def test_operations_exclues_base_1983():
+    """En base 1983, une feuille dont le lien au SCN 2008 n'est pas « identique » est listée, avec la présence
+    d'un poste chiffré ; aucune opération « identique » ne l'est."""
+    import reconstruire_comptes as rc
+    liens = rc.liens_raccord("1983")
+    ex = [l for l in rc.lire_csv(rc.EXCLUES) if l["base"] == "1983"]
+    assert ex and all(liens.get(l["operation"]) != "identique" for l in ex)
+    assert any(l["operation"] == "prestations_especes" and l["secteur"] == "S1314" and l["poste_chiffre"] == "oui"
+               for l in ex)
+
+
+def test_controles_en_echec_scn68_portee():
+    import reconstruire_comptes as rc
+    base = {"edition": "2002-2006", "annee": "2002", "imprime": "1", "calcule": "2", "ecart_md": "-1", "cote": "ressources"}
+    src = [{**base, "controle": "total", "secteur": "apu", "compte": "COMPTE DE REVENU", "categorie": "ecart"},
+           {**base, "controle": "total", "secteur": "apu_locale", "compte": "COMPTE DE CAPITAL", "categorie": "ecart"},
+           {**base, "controle": "total", "secteur": "sf", "compte": "COMPTE DE CAPITAL", "categorie": "ecart"},
+           {**base, "controle": "total", "secteur": "apu_secu", "compte": "COMPTE DE CAPITAL", "categorie": "ok"}]
+    out = rc.controles_en_echec_scn68(src, 2002, "2002-2006")
+    assert [(l["secteur"], l["touche_total"], l["base"]) for l in out] == [("apu", "non", "1983"),
+                                                                           ("apu_locale", "compte", "1983")]
+    assert out[1]["libelle_scn2008"] == "Compte de capital, ressources"
