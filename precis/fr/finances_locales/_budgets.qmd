@@ -674,7 +674,58 @@ Trois documents de la Banque mondiale publient des tableaux des budgets des comm
 
 ## Dans les comptes {#sec-fl-budg-comptes}
 
-Trois dépenses des communes se rapprochent d'une opération du compte des collectivités locales dans les comptes de la nation [@dgct-donnees-ouvertes; @ins-cnat-2015]. Les rémunérations font de 92 % à 95 % de la rémunération des salariés (D.1) en 2018, 2019, 2022 et 2023 ; elles dépassent les seuls salaires bruts et comprennent donc les cotisations à la charge de l'employeur. Les moyens des services font 86 % de la consommation intermédiaire (P.2) en 2018, 96 % en 2019 et en 2022, 76 % en 2023, année provisoire. Les intérêts de la dette font de 94 % à 97 % des intérêts versés (D.41) de 2018 à 2022, et 83 % en 2023. Le compte des collectivités locales comprend les conseils régionaux, que les budgets des communes ne couvrent pas.
+Trois dépenses des communes se rapprochent d'une opération du compte des collectivités locales dans les comptes de la nation [@dgct-donnees-ouvertes; @ins-cnat-2015].
+
+```{python}
+#| echo: false
+import sys; sys.path.insert(0, "../../../scripts")
+import passage_comptes as pc
+_P = [("remunerations-collectivites", "Rémunérations"), ("moyens-services-collectivites", "Moyens des services"),
+      ("interets-dette-collectivites", "Intérêts de la dette")]
+_L = {p: {l["annee"]: l for l in pc.lignes(p)} for p, _ in _P}
+_rem, _moy, _int = (pc.extremes(_L[p]) for p, _ in _P)
+rem_min, rem_an_min, rem_max, rem_an_max = _rem["min"], _rem["an_min"], _rem["max"], _rem["an_max"]
+moy_min, moy_an_min, moy_max, moy_an_max = _moy["min"], _moy["an_min"], _moy["max"], _moy["an_max"]
+int_min, int_an_min, int_max, int_an_max = _int["min"], _int["an_min"], _int["max"], _int["an_max"]
+_d11 = {a: pc.cible("apu_locale", "emplois", "D.11", "salaires_bruts", a)[0]
+        for a in _L["remunerations-collectivites"]}
+rem_n = len(_d11)
+rem_n_sup = sum(1 for a, v in _d11.items() if v is not None and _L["remunerations-collectivites"][a]["montant"] > v)
+```
+
+Chaque année où les deux montants sont publiés (@tbl-fl-budg-passage), les rémunérations font de `{python} rem_min` (`{python} rem_an_min`) à `{python} rem_max` (`{python} rem_an_max`) de la rémunération des salariés (D.1) du compte. Elles dépassent les salaires bruts (D.11) du même compte `{python} rem_n_sup` années sur `{python} rem_n` : elles comprennent les cotisations à la charge de l'employeur. Les moyens des services font de `{python} moy_min` (`{python} moy_an_min`) à `{python} moy_max` (`{python} moy_an_max`) de la consommation intermédiaire (P.2). Les intérêts de la dette font de `{python} int_min` (`{python} int_an_min`) à `{python} int_max` (`{python} int_an_max`) des intérêts versés (D.41).
+
+```{python}
+#| echo: false
+#| output: asis
+_ans = sorted(set().union(*_L.values()))
+_lignes = []
+for a in _ans:
+    cells = [str(a)]
+    for p, _ in _P:
+        l = _L[p].get(a)
+        cells += [pc.fr(l["montant"]), pc.fr(l["ins"]), pc.pct(l["part"])] if l else ["", "", ""]
+    _lignes.append(cells)
+print(pc.table(["Année"] + [c for _, n in _P for c in (n, "Comptes", "Part")], _lignes))
+print("\n: Dépenses des communes et opérations du compte des collectivités locales (S1313), en millions de "
+      "dinars courants : rémunérations et rémunération des salariés (D.1), moyens des services et consommation "
+      "intermédiaire (P.2), intérêts de la dette et intérêts (D.41) ; comptes de la nation : dernière édition où "
+      "l'année est définitive {#tbl-fl-budg-passage}\n")
+```
+
+Sources : comptes des communes [@dgct-donnees-ouvertes] ; comptes des collectivités locales [@ins-cnat-2015].
+
+Trois différences séparent les deux montants :
+
+- **périmètre** : les conseils régionaux, puis les régions, entrent au compte des collectivités locales et non dans les budgets des communes (@sec-fl-lp-ins) ;
+- **source du budget** : de 2008 à 2019, les rémunérations et les moyens des services sont les agrégats de la Direction générale des collectivités locales ; en 2022 et 2023, la somme des budgets par commune ; les intérêts de la dette sont cette somme de 2018 à 2023 (@sec-fl-lp-sources) ;
+- **exercice non clos** : les budgets par commune de 2021 sont une situation au 25 décembre 2021, ceux de 2023 une situation provisoire au 10 janvier 2024 [@dgct-donnees-ouvertes].
+
+Les écarts les plus forts, sur les moyens des services en `{python} moy_an_min` et sur les intérêts de la dette en `{python} int_an_min`, ne sont pas expliqués.
+
+<!-- TODO (documentaliste) : chiffrer la part des conseils régionaux (puis des régions) dans les
+     opérations D.1, P.2 et D.41 du compte S1313 ; expliquer les écarts de 2018 (P.2) et de 2023
+     (P.2, D.41), exercice 2023 clos à l'appui. -->
 
 ### Les rémunérations {#sec-fl-budg-comptes-remunerations}
 
