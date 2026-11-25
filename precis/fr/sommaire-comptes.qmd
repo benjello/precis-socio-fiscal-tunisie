@@ -1,0 +1,59 @@
+---
+title: "Sommaire par les comptes"
+subtitle: "Chaque opération des comptes nationaux, ses secteurs, ses montants et les sections de l'ouvrage qui la documentent"
+lang: fr
+format:
+  html:
+    toc: true
+    page-layout: full
+    include-in-header: ../accueil.html
+bibliography:
+  - references.json
+---
+
+[← Retour à l'accueil](index.html) · [Le compte reconstruit des administrations publiques](compte-apu.html) · [Les comptes des secteurs](compte-secteurs.html) · [Les comptes nationaux et les volumes](correspondance-comptes.html)
+
+```{python}
+#| echo: false
+import csv
+_s = list(csv.DictReader(open("sommaire-comptes.csv", encoding="utf-8")))
+def n(v):
+    return "" if v in ("", None) else f"{float(v):,.1f}".replace(",", " ").replace(".", ",")
+def lien(s):
+    poste, vol, chap, ancre = s.split("|")
+    page = f"{vol}.html" if not chap else f"{vol}/{chap}.html"
+    return f"[{poste}]({page}#{ancre})"
+```
+
+Ce sommaire lit l'ouvrage dans l'ordre des comptes nationaux, sans rien changer à son plan. Pour chaque opération des comptes des secteurs de l'INS [@ins-cnat-2015], il donne les secteurs qui l'inscrivent en emplois et en ressources, son montant en 2020, année de référence, et en 2023, et les **postes** de l'ouvrage qui s'y rattachent, avec un lien vers leur section.
+
+- Le **montant de l'opération** est la somme des secteurs résidents (sociétés non financières, sociétés financières, administrations publiques, ménages) du côté des emplois, ou des ressources quand aucun résident ne l'inscrit en emplois. Pour les exportations et les importations, c'est le reste du monde, de son point de vue.
+- Le **montant reconstruit** est la somme des postes chiffrés de l'opération, chacun compté une fois. La **part reconstruite** le rapporte au montant de l'opération, et le **résidu** est la différence.
+- Un poste rattaché à un agrégat (D.2, les « autres impôts indirects ») est comparé à l'agrégat entier : sa part ne dit pas ce que couvrent les composantes.
+
+Le sommaire est engendré par `scripts/sommaire_comptes.py` ; millions de dinars courants, édition la plus récente où l'année est définitive.
+
+```{python}
+#| echo: false
+#| output: asis
+comptes = []
+for l in _s:
+    if l["compte"] not in comptes:
+        comptes.append(l["compte"])
+for c in comptes:
+    print(f"\n## {c}\n")
+    print("| Code | Opération | Emplois | Ressources | 2020 | 2023 | Reconstruit 2020 | Part 2020 | Résidu 2020 | Sections |")
+    print("|---|---|---|---|--:|--:|--:|--:|--:|---|")
+    for l in [x for x in _s if x["compte"] == c]:
+        secs = ", ".join(lien(s) for s in l["sections"].split(";") if s)
+        part = (n(l["part_2020_pct"]) + " %") if l["part_2020_pct"] else ""
+        print(f"| {l['code_scn']} | {l['libelle_ins']} | {l['emplois'].replace(';', ', ')} | {l['ressources'].replace(';', ', ')} | "
+              f"{n(l['montant_2020_md'])} | {n(l['montant_2023_md'])} | {n(l['reconstruit_2020_md'])} | {part} | {n(l['residu_2020_md'])} | {secs} |")
+nb = sum(bool(l["sections"]) for l in _s)
+print(f"\n{nb} opérations sur {len(_s)} ont au moins une section de l'ouvrage.")
+```
+
+## Références {.unnumbered}
+
+::: {#refs}
+:::
