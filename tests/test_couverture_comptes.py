@@ -265,3 +265,103 @@ def test_controles_en_echec_portee():
     out = rc.controles_en_echec(src, 2009, "2009-2013", {"cotisations_sociales"})
     assert [(l["objet"], l["touche_total"]) for l in out] == [("valeur_ajoutee_brute", "non"),
                                                                ("cotisations_sociales", "indetermine")]
+
+
+def test_base_1983_sans_administration_centrale():
+    """La série en base 1983 du cache ne porte pas le compte de l'administration centrale : les années qu'elle
+    est seule à couvrir ont les collectivités locales et la sécurité sociale, ni l'État ni la somme des trois
+    sous-secteurs ; chaque année est lue dans la dernière édition où elle est définitive."""
+    import reconstruire_comptes as rc
+    b83 = rc.lire_base1997(rc.BASE1983)
+    assert "apu_centrale" not in {l["secteur"] for l in b83}
+    a = _annees()
+    ans83 = sorted({y for (y, _), l in a.items() if l["base"] == "1983"})
+    assert ans83 and max(ans83) < min(y for (y, _), l in a.items() if l["base"] == "1997")
+    for y in ans83:
+        assert (y, "S13") not in a and (y, "S1311") not in a, y
+        assert a[(y, "S1313")]["edition"] == a[(y, "S1314")]["edition"] == rc.edition_pour(b83, y)
+
+
+def test_operations_exclues_base_1983():
+    """En base 1983, une feuille dont le lien au SCN 2008 n'est pas « identique » est listée, avec la présence
+    d'un poste chiffré ; aucune opération « identique » ne l'est."""
+    import reconstruire_comptes as rc
+    liens = rc.liens_raccord("1983")
+    ex = [l for l in rc.lire_csv(rc.EXCLUES) if l["base"] == "1983"]
+    assert ex and all(liens.get(l["operation"]) != "identique" for l in ex)
+    assert any(l["operation"] == "prestations_especes" and l["secteur"] == "S1314" and l["poste_chiffre"] == "oui"
+               for l in ex)
+
+
+def test_controles_en_echec_scn68_portee():
+    import reconstruire_comptes as rc
+    base = {"edition": "2002-2006", "annee": "2002", "imprime": "1", "calcule": "2", "ecart_md": "-1", "cote": "ressources"}
+    src = [{**base, "controle": "total", "secteur": "apu", "compte": "COMPTE DE REVENU", "categorie": "ecart"},
+           {**base, "controle": "total", "secteur": "apu_locale", "compte": "COMPTE DE CAPITAL", "categorie": "ecart"},
+           {**base, "controle": "total", "secteur": "sf", "compte": "COMPTE DE CAPITAL", "categorie": "ecart"},
+           {**base, "controle": "total", "secteur": "apu_secu", "compte": "COMPTE DE CAPITAL", "categorie": "ok"}]
+    out = rc.controles_en_echec_scn68(src, 2002, "2002-2006")
+    assert [(l["secteur"], l["touche_total"], l["base"]) for l in out] == [("apu", "non", "1983"),
+                                                                           ("apu_locale", "compte", "1983")]
+    assert out[1]["libelle_scn2008"] == "Compte de capital, ressources"
+
+
+def _ins_d1():
+    """D.1 de l'INS : reçu par les ménages, versé par l'État, les sociétés non financières et les ménages."""
+    lig = [dict(ligne("ressources", "remuneration_salaries", 1000, "D.1"), secteur="menages"),
+           dict(ligne("emplois", "remuneration_salaries", 400, "D.1"), secteur="apu_centrale"),
+           dict(ligne("emplois", "salaires_bruts", 500, "D.11"), secteur="snf"),
+           dict(ligne("emplois", "remuneration_salaries", 100, "D.1"), secteur="menages"),
+           dict(ligne("emplois", "remuneration_salaries", 0, "D.1"), secteur="rdm")]
+    return lig[:1], cc.montants_ins(lig)
+
+
+def test_justesse_exige_toute_la_contrepartie():
+    """D.1 en ressources des ménages chiffré par la seule masse salariale de l'État : l'opération reste couverte
+    pour la part du montant, mais n'entre pas dans la justesse ; un poste dont les payeurs couvrent tous les
+    secteurs qui versent du D.1 selon l'INS (les sociétés par leur D.11, un montant nul ne comptant pas) y entre."""
+    ops, ins = _ins_d1()
+    etat = [poste("remuneration_salaries", "emplois", "apu_centrale", "menages", 380)]
+    r = cc.indicateurs(ops, cc.postes_du_secteur(etat, ("menages",)), "menages", ins)
+    assert r["operations_chiffrees"] == 1 and r["montant_couvert_md"] == 380.0
+    assert r["operations_justesse"] == 0 and r["justesse_pct"] == ""
+    assert cc.indicateurs(ops, cc.postes_du_secteur(etat, ("menages",)))["operations_justesse"] == 1  # sans `ins`
+    tous = [poste("remuneration_salaries", "emplois", "apu_centrale;snf", "menages", 950)]
+    r = cc.indicateurs(ops, cc.postes_du_secteur(tous, ("menages",)), "menages", ins)
+    assert r["operations_justesse"] == 1 and r["justesse_pct"] == 95.0
+
+
+def test_secteur_exclu_de_ses_contreparties():
+    """Les ménages, employeurs des ménages (100 MD de D.1 en emplois), ne sont pas leur propre contrepartie."""
+    ops, ins = _ins_d1()
+    assert cc.contrepartie_ins(ops[0], "menages", ins) == {"apu_centrale": 400.0, "snf": 500.0}
+    assert set(cc.contrepartie_ins(dict(ops[0], secteur="rdm"), "rdm", ins)) == {"apu_centrale", "snf", "menages"}
+
+
+def _ins_d5(non_couvert):
+    """D.5 versé par les ménages (1000), reçu par l'État et, pour `non_couvert`, par les collectivités locales."""
+    lig = [dict(ligne("emplois", "impots_courants", 1000, "D.5"), secteur="menages"),
+           dict(ligne("ressources", "impots_courants", 1000 - non_couvert, "D.5"), secteur="apu_centrale"),
+           dict(ligne("ressources", "impots_courants", non_couvert, "D.5"), secteur="apu_locale")]
+    return lig[:1], cc.montants_ins(lig)
+
+
+def test_seuil_de_contrepartie_non_couverte():
+    """Convention de l'ouvrage : 1 % de contrepartie non couverte, l'opération entre dans la justesse ; 61 %, non."""
+    irpp = [poste("impots_courants", "ressources", "menages", "apu_centrale", 990)]
+    assert cc.SEUIL_CONTREPARTIE == 0.05
+    for non_couvert, attendu in ((10, 1), (610, 0)):
+        ops, ins = _ins_d5(non_couvert)
+        r = cc.indicateurs(ops, cc.postes_du_secteur(irpp, ("menages",)), "menages", ins)
+        assert r["operations_chiffrees"] == 1 and r["operations_justesse"] == attendu, non_couvert
+
+
+def test_justesse_poste_sans_contrepartie_nommee():
+    """Un poste dont le registre ne nomme pas l'autre bout (FBCF, consommation finale) reste régi par la règle
+    des postes propres."""
+    lig = [dict(ligne("emplois", "fbcf", 100, "P.51g"), secteur="apu_centrale"),
+           dict(ligne("ressources", "fbcf", 100, "P.51g"), secteur="snf")]
+    ins = cc.montants_ins(lig)
+    p = [poste("fbcf", "emplois", "apu_centrale", "", 90)]
+    r = cc.indicateurs(lig[:1], cc.postes_du_secteur(p, ("apu_centrale",)), "apu_centrale", ins)
+    assert r["operations_justesse"] == 1

@@ -44,15 +44,16 @@ def test_annees_base2015_du_cache():
         assert sum(1 for l in secteurs if l["edition"] == ed and int(l["annee"]) == y) > 500, y
 
 
-def test_pas_de_part_du_montant_avant_la_base_1997():
+def test_pas_de_part_du_montant_avant_la_base_1983():
     cv = lire("compte-couverture-annees.csv")
     debut = min(int(l["annee"]) for l in cv)
     pa = lire("compte-couverture-postes-annees.csv")
     assert "part_montant_couverte_pct" not in pa[0]
     assert min(int(l["annee"]) for l in pa) < debut
-    assert {l["base"] for l in cv} == {"1997", "2015"}
-    # chaque année dans une seule base : la base 1997 s'arrête avant la première année de la base 2015
-    assert max(int(l["annee"]) for l in cv if l["base"] == "1997") < min(int(l["annee"]) for l in cv if l["base"] == "2015")
+    assert {l["base"] for l in cv} == {"1983", "1997", "2015"}
+    # chaque année dans une seule base : chaque base s'arrête avant la première année de la suivante
+    ans = {b: [int(l["annee"]) for l in cv if l["base"] == b] for b in ("1983", "1997", "2015")}
+    assert max(ans["1983"]) < min(ans["1997"]) and max(ans["1997"]) < min(ans["2015"])
 
 
 def test_debut_aux_comptes_des_caisses():
