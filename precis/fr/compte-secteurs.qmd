@@ -309,17 +309,13 @@ nb_annees = str(len(ANS))
 an_premier, an_ref, an_dernier = str(ANS[0]), str(_REF), str(ANS[-1])
 nb_cases, nb_egales = str(len(_cmp)), str(len(_cmp) - len(_pec))
 nb_ecarts = str(len(_pec))
-nb_ecarts_p1 = str(sum(k["code"] == "P.1" and bool(k["lignes"]) for k in _pec))
-ecarts_p1_min = _nb(min((k["ecart"] for k in _pec if k["code"] == "P.1"), default=0))
-ecarts_p1_max = _nb(max((k["ecart"] for k in _pec if k["code"] == "P.1"), default=0))
-_autres = [k for k in _pec if not (k["code"] == "P.1" and k["lignes"])]
-# Le texte nomme les autres écarts : les autres transferts courants (D.7) des administrations publiques, une même
-# année, en emplois et en ressources. Si les données changent, le texte est à revoir.
-assert {(k["code"], k["sec"], k["cote"]) for k in _autres} == {("D.7", "S13", "emplois"), ("D.7", "S13", "ressources")} \
-    and len(_autres) == 2 and len({k["an"] for k in _autres}) == 1, _autres
-d7_an = str(_autres[0]["an"])
-d7_emplois = _nb(next(k["ecart"] for k in _autres if k["cote"] == "emplois"))
-d7_ressources = _nb(next(k["ecart"] for k in _autres if k["cote"] == "ressources"))
+# Écarts restants, par opération, secteur, année et côté.
+ecarts_liste = " ; ".join(f"{LIB.get(k['op'], k['op'])} ({k['code']}) des {NOMS_TEE[k['sec']]} en {k['an']}, "
+                          f"en {k['cote']}, {_nb(k['ecart'])} millions de dinars" for k in _pec) or "aucune"
+# Le texte commente les écarts restants : les autres transferts courants (D.7) des administrations publiques, une
+# même année, en emplois et en ressources. Si les données changent, le texte est à revoir.
+assert {(k["code"], k["sec"], k["cote"]) for k in _pec} == {("D.7", "S13", "emplois"), ("D.7", "S13", "ressources")} \
+    and len(_pec) == 2 and len({k["an"] for k in _pec}) == 1, _pec
 # Sens inverse : opérations retenues des comptes des secteurs qu'aucune case de secteur du TEE ne regroupe.
 _orph = []
 for a in ANS:
@@ -354,7 +350,9 @@ Les sections précédentes rattachent les postes de l'ouvrage aux opérations de
 
 Sur `{python} nb_cases` cases comparées, `{python} nb_egales` concordent, aux arrondis près. Deux traitements d'écriture sont compris dans ce compte. Les intérêts versés par les administrations publiques sont imprimés par le TEE après la correction des services d'intermédiation financière indirectement mesurés (SIFIM), que les comptes des secteurs donnent sur une ligne à part (`{python} sifim_ref` millions de dinars en `{python} an_ref`). Les transferts en capital à payer, imprimés par le TEE en ressources et en négatif, se comparent aux transferts en capital inscrits en emplois.
 
-Les `{python} nb_ecarts` cases qui s'écartent sont dans @tbl-csec-tee-passage-ecarts. Parmi elles, `{python} nb_ecarts_p1` portent sur la production (P.1) des sociétés financières et des administrations publiques, de `{python} ecarts_p1_min` à `{python} ecarts_p1_max` millions de dinars selon le secteur et l'année. Les comptes des secteurs impriment sous le seul code P.1 la production de services d'assurance et de SIFIM des sociétés financières, et la production marchande des administrations publiques. La sélection de l'ouvrage, qui garde les codes plus fins (P.11, P.13), ne retient pas ces lignes ; le TEE les compte, et l'écart égale leur somme aux arrondis près. Reste un écart, sur les autres transferts courants (D.7) des administrations publiques en `{python} d7_an` : `{python} d7_emplois` millions de dinars en emplois, `{python} d7_ressources` en ressources. Le montant est le même des deux côtés, et le revenu disponible des administrations publiques est le même dans les deux publications. <!-- TODO (comptable-national) : cause à établir ; question B6 du cahier de l'expert (docs/notes/questions-expert-comptabilite-nationale.md). -->
+Les comptes des secteurs impriment parfois sous un même code le total d'une opération et certaines de ses composantes : la production (P.1) des sociétés financières porte ce code sur le total comme sur les services d'assurance et les SIFIM, celle des administrations publiques sur le total comme sur la production marchande. La sélection de l'ouvrage reconnaît le total comme la ligne qui égale, aux arrondis près, la somme des autres lignes de l'opération ; elle l'écarte et garde les composantes.
+
+Les `{python} nb_ecarts` cases qui s'écartent sont dans @tbl-csec-tee-passage-ecarts : `{python} ecarts_liste`. Les autres transferts courants (D.7) des administrations publiques s'écartent du même montant, aux arrondis près, en emplois et en ressources, et le revenu disponible des administrations publiques est le même dans les deux publications. <!-- TODO (comptable-national) : cause à établir ; question B6 du cahier de l'expert (docs/notes/questions-expert-comptabilite-nationale.md). -->
 
 Dans l'autre sens, chaque opération retenue des comptes des secteurs entre dans une case de secteur du TEE, pour les `{python} nb_annees` années.
 
