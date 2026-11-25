@@ -54,6 +54,17 @@ La consommation finale passe de 79 663,4 millions de dinars en 2015 à 167 844,2
      le niveau de vie des ménages de 2021 (à extraire dans tunisia-data) ; tableaux aux prix de
      l'année précédente (cnat-produits-volume) pour les volumes. -->
 
+## Les transferts sociaux en nature et la consommation effective {#sec-conso-effective}
+
+Une part de ce que les ménages consomment n'est pas payée par eux : soins remboursés, médicaments, enseignement, services sociaux. Les comptes de la nation l'enregistrent en transferts sociaux en nature (D.63), que les administrations publiques versent et que les ménages reçoivent ; ajoutés à la dépense de consommation finale des ménages, ils donnent leur consommation finale effective [@ins-cnat-2015]. Les transferts se composent des prestations sociales en nature (D.631) et des biens et services individuels non marchands (D.632) ; une petite part de D.632 est versée par les ménages eux-mêmes, secteur qui comprend, dans les comptes de l'INS, les institutions sans but lucratif.
+
+```{python}
+#| echo: false
+#| output: asis
+print(co.table_transferts_nature())
+print("\n: Transferts sociaux en nature, dépense de consommation finale et consommation finale effective des ménages, base 2015, 2015-2023 (millions de dinars courants ; pour chaque année, l'édition la plus récente qui l'imprime ; tableau des transferts sociaux en nature et comptes des secteurs de l'INS) {#tbl-conso-effective}")
+```
+
 ## Ce que d'autres livres traitent {#sec-conso-voisinage}
 
 | Sujet | Domicile | Ce que ce livre en reçoit |

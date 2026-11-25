@@ -107,6 +107,9 @@ def montant(serie: str, colonne: str, annee: int) -> tuple[float | None, str]:
         vals = [float(l["valeur"]) for l in lignes if str(l["annee"]) == str(annee) and l["variable"] == colonne
                 and str(l.get("retenu", "True")) in ("True", "true", "1")]
         return (vals[-1] if vals else None), couv
+    if "rubrique" in lignes[0] and "valeur_md" in lignes[0]:  # série longue par rubrique (recettes non fiscales)
+        vals = [float(l["valeur_md"]) for l in lignes if str(l["annee"]) == str(annee) and l["rubrique"] == colonne]
+        return (vals[-1] if vals else None), couv
     if "indicateur" in lignes[0] and ("valeur" in lignes[0] or "valeur_md" in lignes[0]):  # série longue : (année, indicateur)
         champ = "valeur" if "valeur" in lignes[0] else "valeur_md"
         caisse, _, ind = colonne.rpartition("|")  # « CNAM|recettes techniques » : filtre sur la colonne caisse

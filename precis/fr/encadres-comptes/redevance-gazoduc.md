@@ -1,0 +1,3 @@
+::: {.callout-tip title="Dans les comptes"}
+Ce dispositif relève de l'opération **D.45 « Loyers nets des terres et redevances »** des comptes de la nation. En 2020 (édition 2020-2024), en millions de dinars, versent : sociétés non financières 279,4 ; ménages 238,2 ; reste du monde 436,7 ; reçoivent : sociétés non financières 5,7 ; administrations publiques 429,0 ; ménages 453,0 ; reste du monde 66,5. Les administrations publiques y inscrivent 429,0 millions de dinars (ressources) ; l'ouvrage en chiffre 332,2 pour ce dispositif. Voir [le compte reconstruit](../compte-apu.html#sec-capu-flux).
+:::
