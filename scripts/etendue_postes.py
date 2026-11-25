@@ -11,7 +11,7 @@ Deux tableaux engendrés depuis le registre `precis/fr/postes-comptables.csv` et
   au secteur (qui verse ou qui reçoit, comme scripts/couverture_comptes.py) et postes chiffrés cette
   année-là. La période va de la première année chiffrée d'un poste de la sécurité sociale (les comptes des
   caisses) à la dernière année que l'INS publie en base 2015. Aucune part du montant n'y figure : elle
-  n'existe que pour les années d'un compte des secteurs du cache, base 1997 puis base 2015, chaque année
+  n'existe que pour les années d'un compte des secteurs du cache, base 1983, base 1997 puis base 2015, chaque année
   dans une seule base (precis/fr/compte-couverture-annees.csv) ; les bases ne sont pas raccordées
   (question M10).
 

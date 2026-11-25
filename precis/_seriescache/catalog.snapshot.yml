@@ -7994,3 +7994,35 @@
     (consultées le 2026-10-27) : réutilisation commerciale et non commerciale, redistribution
     et transformation autorisées ; citer le producteur et la date de mise à jour,
     ne pas suggérer une caution officielle ni tromper sur le contenu ; droit tunisien'
+- id: cnat-secteurs-base1983
+  titre: Comptes des secteurs institutionnels en base 1983 (SCN 1968), éditions 2001-2005,
+    2002-2006 et 2004-2008 — brouillon
+  sources:
+  - ins-cnat-2015
+  build: scripts/extraire_cnat_secteurs.py:main (--editions 2001-2005,2002-2006,2004-2008
+    --sortie …/cnat_secteurs_base1983.csv)
+  raw:
+  - data/raw/ins-publications/comptes-de-la-nation
+  output: data/processed/ins-comptes-nationaux/cnat_secteurs_base1983.csv
+  unite: millions de dinars courants
+  perimetre: 'Comptes des secteurs des trois éditions en base 1983 lues (20 pages
+    par édition ; l''édition 2003-2007 et le compte de l''administration centrale
+    manquent), 8 314 valeurs ; libellés du SCN 1968 rattachés aux opérations du SCN
+    2008 par le dictionnaire, chaque correspondance qui n''est pas une identité marquée
+    « à valider » (50 libellés). Contrôles propres à la présentation de 1968 dans
+    cnat_secteurs_base1983_controles_scn68.csv (total de chaque côté d''un compte,
+    équilibre emplois = ressources : 1 941 sur 2 040) ; contrôles pensés pour la séquence
+    du SCN 2008 dans cnat_secteurs_base1983_controles.csv (174 sur 600, ne s''appliquent
+    qu''en partie). Versé dans la base SQLite des comptes nationaux (famille secteurs_1983,
+    positions dans cnat_secteurs_base1983_positions.csv : 8 022 sur 8 314). Raccord
+    des codes et libellés dans sources/ins-comptes-nationaux/raccord-scn-1968-1993-2008.csv.'
+  caveats: 'BROUILLON. JAMAIS CHAÎNÉE AVEC LES BASES 1997 ET 2015 (question M10 en
+    attente). Les 50 correspondances « à valider » du SCN 1968 vers le SCN 2008 ne
+    sont pas tranchées : ne pas lire l''opération rattachée comme une identité. Le
+    TEE de la base 1983 n''est pas lu.'
+  fiche: sources/ins-comptes-nationaux-publications.md
+  licences:
+  - 'INS (sources ins-*) : conditions d''utilisation de l''INS, https://ins.tn/en/conditions-utilisation
+    (consultées le 2026-10-27) : réutilisation commerciale et non commerciale, redistribution
+    et transformation autorisées ; citer le producteur et la date de mise à jour,
+    ne pas suggérer une caution officielle ni tromper sur le contenu ; droit tunisien'

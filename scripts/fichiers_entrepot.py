@@ -34,6 +34,10 @@ ENTREPOT = Path(os.environ.get("TUNISIA_DATA", Path.home() / "projets" / "tunisi
 FICHIERS = {
     "raccord-scn-1968-1993-2008.csv": "sources/ins-comptes-nationaux/raccord-scn-1968-1993-2008.csv",
     "cnat-secteurs-base1997-controles.csv": "data/processed/ins-comptes-nationaux/cnat_secteurs_base1997_controles.csv",
+    # base 1983 : contrôles propres à la présentation du SCN 1968 (total de chaque côté d'un compte, équilibre
+    # d'un compte) ; ceux pensés pour la séquence du SCN 2008 (cnat_secteurs_base1983_controles.csv) ne s'y
+    # appliquent qu'en partie et ne sont pas copiés
+    "cnat-secteurs-base1983-controles-scn68.csv": "data/processed/ins-comptes-nationaux/cnat_secteurs_base1983_controles_scn68.csv",
 }
 
 
