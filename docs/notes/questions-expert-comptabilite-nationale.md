@@ -85,7 +85,7 @@ Références : INS, *Les comptes de la nation* (clé bibliographique `ins-cnat-2
 - L'écart restant est de 0,1 à 1,2 milliard selon l'opération et l'année (2022-2024). Cette explication est établie par les chiffres ; la question est de la faire confirmer, et d'expliquer l'écart restant.
 - Priorité 2 (elle était 1).
 
-**A14. La redevance gaz est-elle un loyer (D.45) dans les comptes et un service de transport dans la balance des paiements ?**
+**A14. ~~La redevance gaz est-elle un loyer (D.45) dans les comptes et un service de transport dans la balance des paiements ?~~** Réponse trouvée le 25/11/2026 : l'INS la reclasse « comme un revenu de propriété » et liste les causes d'écart avec la balance des paiements (*Comptes de la nation* 2015-2020, vol. A, p. 17). Reste ouverte la rémunération des salariés (A17).
 - Observé, en 2023 : D.45 versé par le reste du monde aux résidents vaut 2 097,7 MD dans les comptes ; la « redevance gaz » des services de transport vaut 2 093,7 MD dans la balance des paiements.
 - Autres écarts : D.1 reçu du reste du monde, 230,9 dans les comptes contre 1 265,6 en balance des paiements ; D.7 et D.5 reçus, 11 645,4 contre 8 976,2.
 - Priorité 2.
@@ -181,3 +181,15 @@ Références : INS, *Les comptes de la nation* (clé bibliographique `ins-cnat-2
 - La norme dit, la source mesure : un impôt sur le revenu est rangé chez l'unité qui le supporte (SCN 2008, § 8.15, p. 160 ; MSFP 2014, 1111 et 1112, tableau A7.3, p. 364) ; le budget mesure l'IRPP encaissé, retenues à la source comprises. La définition n'explique pas que l'IRPP dépasse le D.5 des ménages : selon quel critère l'INS range-t-il une partie de l'IRPP hors des ménages ?
 
 L'IRPP du budget dépasse le D.5 des ménages chaque année de 2015 à 2023 (129 à 192 %) ; les seuls impôts sur les salaires en sont proches, et l'IRPP « autres » est du même ordre que l'excédent du D.5 des sociétés et du reste du monde sur l'impôt sur les sociétés (tableau dans `docs/notes/justesse-apu-menages-2026-11-25.md`). L'INS range-t-il une partie de l'IRPP (retenues à la source sur revenus de capitaux, non-résidents, entreprises individuelles) hors des ménages, et où le documente-t-il ? Les impôts sur les salaires croissent de 43 % en 2019 dans la série du ministère : rupture de champ ou d'enregistrement ?
+
+## A16. ~~Les libellés de l'INS en base 2015 désignent-ils les mêmes opérations que le SCN 2008 ?~~
+
+Résolue le 25/11/2026 pour les six termes que la table de vocabulaire classait « non vérifiables », par le texte ou par l'arithmétique (colonnes `nature_ecart` et `preuve` de `docs/conventions/vocabulaire-comptes-nationaux.csv`) : « institutions financières », « administration publique » et « extérieur » sont les secteurs S12, S13 et S2 de la nomenclature que l'INS publie en base 2015 (*Comptes de la nation* 2015-2020, vol. B, p. 5) ; « TVA non déductible » est la TVA du système net que prescrit le SCN 2008 (§ 6.61, p. 102), et D.2 égale la somme de ses composantes dans les 11 cas testés ; « autres impôts sur les produits » est la composante restante de D.21 (même test) ; « variation de stocks » vérifie P.5 = P.51 + P.52 dans les 31 cas testés.
+
+## A17. Pourquoi la rémunération des salariés reçue du reste du monde est-elle cinq fois plus faible dans les comptes que dans la balance des paiements ?
+
+- Observé : D.1 versé par le reste du monde aux résidents, de 206 à 241 MD par an de 2019 à 2024 dans les comptes ; « rémunération des salariés », crédits, de 903 à 1 464 MD dans la balance des paiements de la BCT (MBP6). Les envois de fonds des travailleurs de la BCT sont repris par l'INS (« économie sur salaires reçus de l'extérieur » : 7 279,3 MD en 2022 et 7 551,5 en 2023 des deux côtés) : l'écart ne vient pas de là.
+- La norme : le MBP6 ne compte en rémunération transfrontalière que les salariés résidents d'une économie employés par des non-résidents, dont les saisonniers et temporaires de moins d'un an et les frontaliers (§ 11.11 et 11.14, p. 201-202).
+- La note de l'INS sur les comptes du reste du monde (vol. A, p. 17) ne cite pas ce poste parmi les causes d'écart.
+- Question : quelle source et quel champ l'INS retient-il pour D.1 avec le reste du monde ? Un document trancherait : une note de l'INS sur l'élaboration des comptes du reste du monde en base 2015, au-delà de la page 17 du volume A.
+- Priorité 2.
