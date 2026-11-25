@@ -50,19 +50,48 @@ print(f"L'année de référence est **{AN}** (édition {ED} des comptes de la na
 
 Chaque montant de l'ouvrage porte la nature de sa source : série statistique, états financiers, rapport d'activité ou rapport du ministère (colonne « Source » du tableau « qui verse à qui »).
 
+Deux indicateurs mesurent la reconstruction, pour chaque secteur et chaque année :
+
+- la **part du compte couverte** : montant de l'INS des opérations qui ont au moins un poste chiffré, rapporté au total des montants de l'INS du compte du secteur (emplois et ressources, hors soldes et hors compte financier, sans compter deux fois une opération et ses composantes). Elle baisse quand un poste perd son montant ;
+- la **justesse** : somme des postes rapportée au montant de l'INS, sur les seules opérations chiffrées dont tous les postes sont propres au secteur. Un poste qui chiffre une opération pour plusieurs secteurs (la TVA, versée par les ménages et les sociétés) n'entre pas dans la justesse.
+
+Un poste est rattaché au secteur qui verse, en emplois, et au secteur qui reçoit, en ressources ; les subventions versées par les administrations sont inscrites par l'INS en ressources négatives du payeur.
+
 ```{python}
 #| echo: false
 #| output: asis
-_y = list(csv.DictReader(open("compte-apu-annees.csv", encoding="utf-8")))
-print("| Année | Édition | S13 : opérations couvertes | S13 : couverture | S1314 : opérations couvertes | S1314 : couverture |")
-print("|---|---|--:|--:|--:|--:|")
-for an in sorted({l["annee"] for l in _y}):
-    d = {l["secteur"]: l for l in _y if l["annee"] == an}
-    cell = lambda s: (f"{d[s]['couvertes']} sur {d[s]['operations']}", (n(d[s]['couverture_pct']) + " %") if d[s]['couverture_pct'] else "—")
-    a13, b13 = cell("S13"); a14, b14 = cell("S1314")
-    print(f"| {an} | {d['S13']['edition']} | {a13} | {b13} | {a14} | {b14} |")
-print("\n: Couverture de la reconstruction, année par année : opérations du compte qui ont au moins un poste chiffré, et rapport de la somme des postes au montant de l'INS sur ces opérations {#tbl-capu-annees}")
+_y = list(csv.DictReader(open("compte-couverture-annees.csv", encoding="utf-8")))
+_S = [("S13", "APU"), ("S1311", "État"), ("S1313", "Coll. locales"), ("S1314", "Séc. sociale"),
+      ("S14", "Ménages"), ("S11", "SNF"), ("S12", "SF"), ("S2", "Reste du monde")]
+_d = {(l["annee"], l["secteur"]): l for l in _y}
+_ans = sorted({l["annee"] for l in _y})
+for _ind, _n, _titre, _id in (
+        ("part_couverte_pct", "operations_chiffrees", "Part du compte couverte, en % des montants de l'INS (opérations chiffrées sur opérations du compte)", "tbl-capu-part-couverte"),
+        ("justesse_pct", "operations_justesse", "Justesse, somme des postes en % du montant de l'INS sur les opérations chiffrées propres au secteur (nombre de ces opérations)", "tbl-capu-justesse")):
+    print("| Année | " + " | ".join(n for _, n in _S) + " |")
+    print("|---|" + "--:|" * len(_S))
+    for an in _ans:
+        cells = []
+        for s, _ in _S:
+            l = _d.get((an, s))
+            if not l:
+                cells.append("—")
+                continue
+            v = (n(l[_ind]) + " %") if l[_ind] else "—"
+            cells.append(f"{v} ({l[_n]}/{l['operations']})" if _ind == "part_couverte_pct" else f"{v} ({l[_n]})")
+        print(f"| {an} | " + " | ".join(cells) + " |")
+    print(f"\n: {_titre} {{#{_id}}}\n")
 ```
+
+```{python}
+#| echo: false
+#| output: asis
+_a, _b = _d[(str(AN), "S13")], _d[(_ans[-1], "S13")]
+print(f"La part couverte des administrations publiques passe de {n(_a['part_couverte_pct'])} % en {AN} à "
+      f"{n(_b['part_couverte_pct'])} % en {_ans[-1]} : les comptes des caisses de sécurité sociale ne sont pas encore "
+      "disponibles pour les dernières années, et leurs opérations y restent sans montant.")
+```
+
 
 ## Les opérations des administrations publiques {#sec-capu-operations}
 
@@ -71,12 +100,12 @@ Pour chaque opération du compte des administrations publiques consolidées, le 
 ```{python}
 #| echo: false
 #| output: asis
-print("| Opération | Côté | INS | Postes | Résidu | Couverture | Résidu nommé |")
+print("| Opération | Côté | INS | Postes | Résidu | Justesse | Résidu nommé |")
 print("|---|---|--:|--:|--:|--:|---|")
 for l in _r:
     if l["secteur"] == "S13" and l["somme_postes_md"] != "":
         print(f"| {l['code_scn']} {l['operation'].replace('_', ' ')} | {l['cote']} | {n(l['cible_ins_md'])} | "
-              f"{n(l['somme_postes_md'])} | {n(l['residu_md'])} | {n(l['couverture_pct'])} % | {l['residu_nomme']} |")
+              f"{n(l['somme_postes_md'])} | {n(l['residu_md'])} | {n(l['justesse_pct'])} % | {l['residu_nomme']} |")
 print(f"\n: Compte des administrations publiques consolidées, {AN} : INS et postes de l'ouvrage (millions de dinars courants) {{#tbl-capu-s13}}")
 ```
 

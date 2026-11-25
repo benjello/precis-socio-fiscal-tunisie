@@ -172,3 +172,7 @@ Références : INS, *Les comptes de la nation* (clé bibliographique `ins-cnat-2
 **E3.** Une note méthodologique de l'INS sur le passage du budget aux comptes des administrations publiques en base 2015, si elle existe. Priorité 1.
 
 **E4.** Les dates de publication des éditions des *Comptes de la nation* : aucune n'est connue des listes d'adresses consultées. Priorité 3.
+
+## A15. Impôts courants des ménages plus faibles que l'IRPP du budget
+
+La justesse du compte des ménages (S14) dépasse 100 % : l'IRPP encaissé par l'État (8 945 MD en 2020, 10 075 MD en 2022) est supérieur aux impôts courants que l'INS inscrit en emplois des ménages (5 306 et 5 240 MD). Une partie de l'IRPP (retenues à la source sur les revenus de capitaux, impôt des entreprises individuelles) est-elle rangée dans un autre secteur, ou l'écart vient-il du passage des encaissements aux droits constatés ? Où l'INS documente-t-il la ventilation de D.5 entre secteurs ?
