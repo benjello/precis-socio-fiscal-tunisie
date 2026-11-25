@@ -215,6 +215,18 @@ def montant(serie: str, colonne: str, annee: int) -> tuple[float | None, str]:
     lignes = _lignes_serie(serie)
     if not lignes:
         return None, ""
+    if "entite" in lignes[0] and "exercice" in lignes[0] and "derniere_edition" in lignes[0]:
+        # série par entreprise et par exercice : « champ|e1;e2;… » somme le champ sur ces entreprises, chacune
+        # dans la dernière édition qui donne l'exercice ; une entreprise sans valeur : aucun montant (périmètre constant)
+        champ, _, liste = colonne.partition("|")
+        ents = [e for e in liste.split(";") if e]
+        val = {(l["entite"], int(l["exercice"])): float(l[champ]) for l in lignes
+               if str(l["derniere_edition"]) in ("True", "true", "1") and l.get(champ, "") != "" and l["entite"] in ents}
+        ans = sorted({a for _, a in val if all((e, a) in val for e in ents)})
+        couv = f"{ans[0]}-{ans[-1]}" if ans else ""
+        if not ents or annee not in ans:
+            return None, couv
+        return round(sum(val[(e, annee)] for e in ents), 1), couv
     annees = sorted({int(str(l["annee"])[:4]) for l in lignes if str(l.get("annee", ""))[:4].isdigit()})
     couv = f"{annees[0]}-{annees[-1]}" if annees else ""
     if serie == "compensation-parts":  # total budgétaire de la compensation, une ligne par année

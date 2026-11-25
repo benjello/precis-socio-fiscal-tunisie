@@ -58,6 +58,17 @@ class TestReconstruction(unittest.TestCase):
         self.assertIsNotNone(m)
         self.assertEqual(couv, "2020-2023")
 
+    def test_montant_somme_d_entreprises(self):
+        import reconstruire_comptes as rc
+        s = "entreprises-publiques-effectifs-par-entreprise"
+        # « champ|e1;e2 » : somme sur ces entreprises, dernière édition de chaque exercice
+        self.assertEqual(rc.montant(s, "charges_personnel_md|steg;etap", 2020), (619.0, "2018-2023"))
+        # une entreprise sans valeur une année (Groupe chimique, 2023) : aucun montant, périmètre constant
+        self.assertEqual(rc.montant(s, "charges_personnel_md|steg;gct", 2023), (None, "2018-2022"))
+        # le poste du registre : 19 sociétés non financières, 2020
+        p = next(x for x in lire("postes-comptables.csv") if x["poste"] == "remunerations-entreprises-publiques")
+        self.assertEqual(rc.montant(p["serie"], p["colonne"], 2020), (2062.4, "2018-2023"))
+
     def test_fin_encadre_poste_borne(self):
         import reconstruire_comptes as rc
         borne = {"montant_reference": "", "colonne": "CNSS|recettes techniques|2021-2023", "annees": "2021-2023"}
