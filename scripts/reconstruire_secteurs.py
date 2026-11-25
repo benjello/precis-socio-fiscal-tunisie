@@ -17,6 +17,9 @@ import csv
 import sys
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import couverture_comptes as cc  # noqa: E402
+
 RACINE = Path(__file__).resolve().parent.parent
 FR = RACINE / "precis" / "fr"
 CACHE = RACINE / "precis" / "_seriescache"
@@ -34,21 +37,9 @@ def lire(p: Path) -> list[dict]:
 
 
 def feuilles(ls: list[dict]) -> list[dict]:
-    """Opérations sans les soldes (B.), le compte financier (F.) et les agrégats dont une composante est imprimée."""
-    ls = [l for l in ls if l["code_scn2008"] and not l["code_scn2008"].startswith(("B.", "F.")) and l["sous_ligne"] in ("0", "1")]
-    out = []
-    for cote in ("emplois", "ressources"):
-        g = [l for l in ls if l["cote"] == cote]
-        codes = {l["code_scn2008"] for l in g}
-        ops = {l["operation"] for l in g}
-        for l in g:
-            c = l["code_scn2008"]
-            if any(x != c and x.startswith(c) for x in codes):
-                continue
-            if l["operation"] == "production" and "production_non_marchande" in ops:
-                continue
-            out.append(l)
-    return out
+    """Opérations sans les soldes (B.), le compte financier (F.) et les agrégats dont une composante est
+    imprimée : la sélection de la couverture (couverture_comptes.feuilles), sans poste à garder."""
+    return cc.feuilles(ls)
 
 
 def main() -> int:

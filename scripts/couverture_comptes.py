@@ -31,9 +31,44 @@ SECTEURS = {
 }
 
 
+# Demi-unité de la dernière décimale imprimée (0,1 MD), par terme : la tolérance des identités (comptes_tee.ARRONDI).
+ARRONDI = 0.05
+
+
+def totaux_meme_code(g: list[dict]) -> dict:
+    """{code : (ligne du total, composantes)} pour les codes que l'INS imprime sur plusieurs lignes d'un
+    même côté, total compris. La production des sociétés financières et des administrations porte le seul
+    code P.1 sur la ligne du total comme sur des composantes (services d'assurance, SIFIM, production
+    marchande des administrations), à côté de P.11 et P.13 ; le code ne dit pas laquelle est le total.
+    Le total est la ligne qui égale, aux arrondis près, la somme des autres lignes de la famille (même code
+    et codes plus fins sans composante imprimée). Seules les familles d'au moins trois lignes sont
+    examinées : deux lignes de même code sans code plus fin (les intérêts et la correction SIFIM, D.41)
+    sont deux opérations distinctes."""
+    codes = {l["code_scn2008"] for l in g}
+    out = {}
+    for c in sorted(codes):
+        meme = [l for l in g if l["code_scn2008"] == c]
+        if len(meme) < 2:
+            continue
+        fins = [l for l in g if l["code_scn2008"] != c and l["code_scn2008"].startswith(c)
+                and not any(x != l["code_scn2008"] and x.startswith(l["code_scn2008"]) for x in codes)]
+        fam = meme + fins
+        if len(fam) < 3:
+            continue
+        tot = sum(float(l["valeur"]) for l in fam)
+        tetes = [l for l in meme if abs(2 * float(l["valeur"]) - tot) <= ARRONDI * len(fam) + 1e-9]
+        if len(tetes) > 1:
+            raise ValueError(f"{c} : plusieurs lignes égalent la somme des autres "
+                             f"({', '.join(l['operation'] for l in tetes)})")
+        if tetes:
+            out[c] = (tetes[0], [l for l in fam if l is not tetes[0]])
+    return out
+
+
 def feuilles(lignes: list[dict], garder: set | None = None) -> list[dict]:
     """Opérations d'un secteur sans les soldes (B.), le compte financier (F.) ni les agrégats dont une
-    composante est imprimée (D.1 quand D.11 l'est ; la production quand la production non marchande l'est).
+    composante est imprimée (D.1 quand D.11 l'est ; la production quand la production non marchande l'est ;
+    le total P.1 quand ses composantes le sont, y compris sous le même code, voir `totaux_meme_code`).
     Exception : un agrégat qui porte un poste de l'ouvrage (`garder`) alors qu'aucune de ses composantes
     n'en porte est gardé, et ses composantes écartées (la masse salariale du budget chiffre D.1, pas D.11)."""
     garder = garder or set()
@@ -42,20 +77,31 @@ def feuilles(lignes: list[dict], garder: set | None = None) -> list[dict]:
     out = []
     for cote in ("emplois", "ressources"):
         g = [l for l in ls if l["cote"] == cote]
+        totaux = totaux_meme_code(g)
+        ecartees, totaux_gardes = [], []
+        for tete, comps in totaux.values():
+            if tete["operation"] in garder and not any(x["operation"] in garder for x in comps):
+                totaux_gardes.append(tete)
+                ecartees += comps
+            else:
+                ecartees.append(tete)
         codes = {l["code_scn2008"] for l in g}
         ops = {l["operation"] for l in g}
         desc = lambda c: [x for x in g if x["code_scn2008"] != c and x["code_scn2008"].startswith(c)]
-        parents = {l["code_scn2008"] for l in g if l["operation"] in garder and desc(l["code_scn2008"])
-                   and not any(x["operation"] in garder for x in desc(l["code_scn2008"]))}
+        parents = {l["code_scn2008"] for l in g if l["code_scn2008"] not in totaux and l["operation"] in garder
+                   and desc(l["code_scn2008"]) and not any(x["operation"] in garder for x in desc(l["code_scn2008"]))}
         vus = set()
         for l in g:
             c = l["code_scn2008"]
-            if any(p != c and c.startswith(p) for p in parents):
+            if any(l is x for x in ecartees):
                 continue
-            if c not in parents and any(x != c and x.startswith(c) for x in codes):
-                continue
-            if l["operation"] == "production" and "production_non_marchande" in ops:
-                continue
+            if not any(l is x for x in totaux_gardes):
+                if any(p != c and c.startswith(p) for p in parents):
+                    continue
+                if c not in parents and c not in totaux and any(x != c and x.startswith(c) for x in codes):
+                    continue
+                if l["operation"] == "production" and "production_non_marchande" in ops:
+                    continue
             if l["operation"] in vus:
                 continue
             vus.add(l["operation"])

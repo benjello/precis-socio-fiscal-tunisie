@@ -101,3 +101,77 @@ def test_retirer_un_poste_ne_fait_pas_monter_la_part_du_montant_exemple():
     base = montant(POSTES)
     for i in range(len(POSTES)):
         assert montant(POSTES[:i] + POSTES[i + 1:]) <= base
+
+
+# Production imprimée sous le seul code P.1 : valeurs de l'édition 2020-2024, année 2020 (cnat-secteurs.csv).
+def ops_retenues(ls, garder=None):
+    return sorted(l["operation"] for l in cc.feuilles(ls, garder))
+
+
+def test_p1_seul_est_garde():
+    ls = [ligne("ressources", "production_bs_marchands", 100437.0, "P.1")]
+    assert ops_retenues(ls) == ["production_bs_marchands"]
+
+
+def test_p1_parent_de_p11_et_p13_ne_s_ajoute_pas():
+    ls = [ligne("ressources", "production", 64030.4, "P.1"), ligne("ressources", "production_marchande", 55753.8, "P.11"),
+          ligne("ressources", "production_non_marchande", 8276.6, "P.13")]
+    assert ops_retenues(ls) == ["production_marchande", "production_non_marchande"]
+
+
+def test_societes_financieres_composantes_imprimees_sous_p1():
+    # le total est la ligne « biens et services marchands » ; assurance et SIFIM sont des composantes
+    ls = [ligne("ressources", "production_bs_marchands", 6573.0, "P.1"),
+          ligne("ressources", "production_services_assurance", 994.1, "P.1"),
+          ligne("ressources", "production_sifim", 3325.0, "P.1"),
+          ligne("ressources", "production_marchande", 2083.1, "P.11"),
+          ligne("ressources", "production_non_marchande", 170.9, "P.13")]
+    fs = cc.feuilles(ls)
+    assert sorted(l["operation"] for l in fs) == ["production_marchande", "production_non_marchande",
+                                                 "production_services_assurance", "production_sifim"]
+    assert round(sum(float(l["valeur"]) for l in fs), 1) == 6573.1
+
+
+def test_administrations_production_marchande_sous_p1():
+    ls = [ligne("ressources", "production", 27526.1, "P.1"), ligne("ressources", "production_bs_marchands", 1533.1, "P.1"),
+          ligne("ressources", "production_non_marchande", 25993.0, "P.13")]
+    assert ops_retenues(ls) == ["production_bs_marchands", "production_non_marchande"]
+
+
+def test_total_et_composantes_tous_sous_p1():
+    # sociétés d'assurance : ni P.11 ni P.13, le total ne s'ajoute pas à ses composantes
+    ls = [ligne("ressources", "production", 1006.8, "P.1"), ligne("ressources", "production_bs_marchands", 12.7, "P.1"),
+          ligne("ressources", "production_services_assurance", 994.1, "P.1")]
+    assert ops_retenues(ls) == ["production_bs_marchands", "production_services_assurance"]
+
+
+def test_deux_lignes_de_meme_code_sans_composante_sont_gardees():
+    ls = [ligne("emplois", "interets", 5000.0, "D.41"), ligne("emplois", "correction_sifim", 5000.0, "D.41")]
+    assert ops_retenues(ls) == ["correction_sifim", "interets"]
+
+
+def test_total_p1_garde_quand_lui_seul_porte_un_poste():
+    ls = [ligne("ressources", "production", 27526.1, "P.1"), ligne("ressources", "production_bs_marchands", 1533.1, "P.1"),
+          ligne("ressources", "production_non_marchande", 25993.0, "P.13")]
+    assert ops_retenues(ls, {"production"}) == ["production"]
+    assert ops_retenues(ls, {"production", "production_non_marchande"}) == ["production_bs_marchands",
+                                                                            "production_non_marchande"]
+
+
+def test_deux_totaux_possibles_est_une_erreur():
+    ls = [ligne("ressources", "a", 0.0, "P.1"), ligne("ressources", "b", 0.0, "P.1"), ligne("ressources", "c", 0.0, "P.13")]
+    with pytest.raises(ValueError):
+        cc.feuilles(ls)
+
+
+def test_chaque_total_p1_du_cache_est_reconnu():
+    # dans le cache, toute famille P.1 d'au moins trois lignes dont deux sous le seul code P.1 a un total et un seul
+    import csv
+    from collections import defaultdict
+    with (RACINE / "precis" / "_seriescache" / "cnat-secteurs.csv").open(encoding="utf-8") as f:
+        lig = [l for l in csv.DictReader(f) if l["code_scn2008"].startswith("P.1") and l["sous_ligne"] in ("0", "1")]
+    g = defaultdict(list)
+    for l in lig:
+        g[(l["base"], l["edition"], l["annee"], l["secteur"], l["cote"])].append(l)
+    familles = [ls for ls in g.values() if len(ls) >= 3 and sum(l["code_scn2008"] == "P.1" for l in ls) >= 2]
+    assert familles and all("P.1" in cc.totaux_meme_code(ls) for ls in familles)
