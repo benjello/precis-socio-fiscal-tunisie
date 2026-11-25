@@ -14,6 +14,9 @@ des comptes de secteur de l'INS (opération × côté × secteur). Le script :
    un montant vide (jamais estimé) ;
 3. pour chaque opération des comptes non financiers de S13 et de ses sous-secteurs, compare la
    cible de l'INS à la somme des postes rattachés : écart (résidu publié) et justesse (somme des postes / montant INS) ; part du compte couverte et justesse par secteur et par année : scripts/couverture_comptes.py ;
+   chaque année est mesurée dans la base la plus récente qui la publie (base 2015, sinon base 1997, série
+   `cnat-secteurs-base1997`), sans raccord entre bases ; en base 1997, seules les opérations dont le code se
+   raccorde au SCN 2008 par un lien « identique » sont retenues (colonne `base` de compte-couverture-annees.csv) ;
 4. contrôle : un poste par section (une section n'a qu'un domicile), ancres existantes, somme des
    sous-secteurs face au consolidé, solde B.1g recalculé ;
 5. écrit precis/fr/compte-apu-reconstruit.csv (une ligne par opération et secteur),
@@ -48,6 +51,11 @@ ENCADRES = FR / "encadres-comptes"
 CONFIG = FR / "annee-reference.yml"
 ANNEES = FR / "compte-couverture-annees.csv"
 QUI = FR / "compte-apu-qui-verse.csv"
+BASE1997 = CACHE / "cnat-secteurs-base1997.csv"  # comptes des secteurs en base 1997, éditions 2005-2009 à 2013-2017
+# Copies de fichiers de l'entrepôt hors catalogue, refaites et vérifiées par scripts/fichiers_entrepot.py
+RACCORD = CACHE / "raccord-scn-1968-1993-2008.csv"  # table de raccord des codes SCN 1968, 1993, 2008
+CONTROLES1997 = CACHE / "cnat-secteurs-base1997-controles.csv"  # contrôles arithmétiques de la série en base 1997
+ECHECS = FR / "compte-couverture-controles-echec.csv"
 PRINCIPAUX = [("snf", "sociétés non financières"), ("sf", "sociétés financières"), ("apu", "administrations publiques"),
               ("menages", "ménages"), ("rdm", "reste du monde")]
 SOUS_APU = [("apu_centrale", "administration centrale"), ("apu_locale", "collectivités locales"), ("apu_secu", "sécurité sociale")]
@@ -96,6 +104,97 @@ def annees_base2015(secteurs: list[dict]) -> list[int]:
         if any(l["edition"] == ed and int(l["annee"]) == y and l["secteur"] == "apu" for l in b15):
             garde.append(y)
     return garde
+
+
+def liens_raccord(base: str = "1997") -> dict:
+    """{opération : lien de son code de la base au code du SCN 2008} (« identique », « regroupement »,
+    « à valider », ou vide quand le lien n'est pas établi), lu dans la table de raccord des codes copiée de
+    l'entrepôt (sources/ins-comptes-nationaux/raccord-scn-1968-1993-2008.csv)."""
+    return {l["operation"]: l[f"lien_{base}"] for l in lire_csv(RACCORD)}
+
+
+def lire_base1997() -> list[dict]:
+    """Comptes des secteurs en base 1997, toutes éditions, colonne `valeur` comme le cache en base 2015.
+    Une ligne dont l'année sort de la fenêtre imprimée de son édition est écartée (édition 2009-2013 :
+    une page du compte des administrations publiques porte les années 2008-2012)."""
+    out = []
+    for l in lire_csv(BASE1997):
+        a, b = int(l["edition"][:4]), int(l["edition"][-4:])
+        if a <= int(l["annee"]) <= b:
+            out.append({**l, "valeur": l["valeur_md"]})
+    return out
+
+
+def annees_base1997(b97: list[dict], hors: list[int]) -> list[tuple[int, str]]:
+    """(année, édition) des années publiées en base 1997 et absentes de `hors` (les années de la base 2015) :
+    chaque année est mesurée dans la base la plus récente qui la publie, dans la dernière édition où elle est
+    définitive (edition_pour), parmi celles qui impriment le compte des administrations et de leurs trois
+    sous-secteurs pour cette année."""
+    secs = defaultdict(set)
+    for l in b97:
+        secs[(l["edition"], int(l["annee"]))].add(l["secteur"])
+    complets = [l for l in b97 if set(SECTEURS) <= secs[(l["edition"], int(l["annee"]))]]
+    return [(y, edition_pour(complets, y)) for y in sorted({int(l["annee"]) for l in complets}) if y not in hors]
+
+
+def poste_hors_base(poste: str, base: str) -> str:
+    """Raison pour laquelle un poste du registre ne compte pas dans le compte d'une base (vide s'il compte).
+    Le poste reste rattaché à son opération, sans montant : l'opération n'est pas chiffrée par lui."""
+    if poste == "redevance-gazoduc" and base == "1997":
+        # INS, Les comptes de la nation, éd. 2015-2020, vol. A, p. 17 : la base 2015 reclasse en revenu de la
+        # propriété la redevance sur le passage du gaz algérien, « auparavant comptabilisée comme production du
+        # secteur transport ». En base 1997, elle n'est donc pas dans les loyers (D.45) où le registre la range.
+        return "redevance du gazoduc : production du secteur transport en base 1997, non loyers (D.45)"
+    return ""
+
+
+def couverture_annee(postes_y: list[dict], lig_y: list[dict], liens: dict | None = None) -> dict:
+    """Indicateurs de couverture par secteur pour une année (lignes de l'INS de l'édition retenue). Avec
+    `liens` (base autre que 2015), les opérations dont le lien au code du SCN 2008 n'est pas « identique »
+    sont retirées des feuilles : ni couvertes ni comptées dans le total."""
+    par_secteur = {}
+    for code, (sec, membres) in cc.SECTEURS.items():
+        ratt = cc.postes_du_secteur(postes_y, membres)
+        ops = cc.feuilles([l for l in lig_y if l["secteur"] == sec], garder=cc.garder_par_cote(ratt))
+        if liens is not None:
+            ops = cc.raccord_identique(ops, liens)
+        if ops:
+            par_secteur[code] = cc.indicateurs(ops, ratt)
+    par_secteur["S13"] = cc.agreger([par_secteur[s] for s in cc.SOUS_SECTEURS_S13])
+    return par_secteur
+
+
+def operations_retenues_s13(postes_y: list[dict], lig_y: list[dict], liens: dict | None = None) -> set:
+    """Opérations retenues dans le total du compte des administrations (feuilles des trois sous-secteurs)."""
+    out = set()
+    for code in cc.SOUS_SECTEURS_S13:
+        sec, membres = cc.SECTEURS[code]
+        ratt = cc.postes_du_secteur(postes_y, membres)
+        ops = cc.feuilles([l for l in lig_y if l["secteur"] == sec], garder=cc.garder_par_cote(ratt))
+        out |= {l["operation"] for l in (cc.raccord_identique(ops, liens) if liens is not None else ops)}
+    return out
+
+
+def controles_en_echec(controles_src: list[dict], y: int, ed: str, retenues: set) -> list[dict]:
+    """Contrôles de la série de l'entrepôt en échec pour une année et son édition, qui concernent le compte des
+    administrations : solde ou consolidation d'un secteur des administrations, équilibre entre secteurs d'une
+    opération retenue dans le total. `touche_total` : l'opération contrôlée entre dans le total des opérations
+    retenues des trois sous-secteurs (« oui »), n'y entre pas (« non » : compte consolidé, soldes), ou l'écart
+    d'équilibre entre secteurs ne désigne pas le secteur en cause (« indetermine »)."""
+    libelles = {l["operation"]: l["libelle_scn2008"] for l in lire_csv(RACCORD)}
+    out = []
+    for l in controles_src:
+        if l["edition"] != ed or l["annee"] != str(y) or l["statut"] != "echec":
+            continue
+        apu = l["secteur"] in SECTEURS
+        if not (apu or (l["controle"] == "equilibre" and l["objet"] in retenues)):
+            continue
+        touche = ("indetermine" if l["controle"] == "equilibre"
+                  else "oui" if l["secteur"] != "apu" and l["objet"] in retenues else "non")
+        out.append({"annee": y, "edition": ed, "controle": l["controle"], "secteur": l["secteur"],
+                    "objet": l["objet"], "libelle_scn2008": libelles.get(l["objet"]) or l["objet"].replace("_", " ").capitalize(), "publie_md": l["publie"], "recalcule_md": l["recalcule"],
+                    "ecart_md": l["ecart"], "touche_total": touche})
+    return out
 
 
 def annee_reference(secteurs: list[dict]) -> tuple[int, str]:
@@ -320,27 +419,36 @@ def main(argv=None) -> int:
     an, ed = annee_reference(secteurs)
     snapshot = {e["id"]: e for e in yaml.safe_load((CACHE / "catalog.snapshot.yml").read_text(encoding="utf-8"))}
     postes, lignes, controles, flux, erreurs = calculer(an, ed, secteurs, snapshot)
-    annees = []
-    for y in annees_base2015(secteurs):  # couverture année par année, pour montrer le profil des retards
-        ed_y = edition_pour([l for l in secteurs if str(l.get("base", "")) == "2015"], y)
-        postes_y, _, _, _, _ = calculer(y, ed_y, secteurs, snapshot)
-        lig_y = [l for l in secteurs if l["edition"] == ed_y and int(l["annee"]) == y and str(l.get("base", "2015")) == "2015"]
-        par_secteur = {}
-        for code, (sec, membres) in cc.SECTEURS.items():
-            ratt = cc.postes_du_secteur(postes_y, membres)
-            ops = cc.feuilles([l for l in lig_y if l["secteur"] == sec], garder=cc.garder_par_cote(ratt))
-            if ops:
-                par_secteur[code] = cc.indicateurs(ops, ratt)
-        par_secteur["S13"] = cc.agreger([par_secteur[s] for s in cc.SOUS_SECTEURS_S13])
+    # Couverture année par année, pour montrer le profil des retards : chaque année dans la base la plus
+    # récente qui la publie (base 2015, sinon base 1997), sans chaînage entre bases (question M10).
+    ans15 = annees_base2015(secteurs)
+    b97 = lire_base1997()
+    liens97 = liens_raccord("1997")
+    ctrl97 = lire_csv(CONTROLES1997)
+    annees, echecs = [], []
+    for y, ed_y, base in ([(y, ed, "1997") for y, ed in annees_base1997(b97, ans15)]
+                          + [(y, edition_pour([l for l in secteurs if str(l.get("base", "")) == "2015"], y), "2015")
+                             for y in ans15]):
+        postes_y, _, _, _, _ = calculer(y, ed_y, secteurs, snapshot)  # postes seuls : ne lit pas `secteurs`
+        postes_y = [{**p, "montant_reference": ""} if poste_hors_base(p["poste"], base) else p for p in postes_y]
+        if base == "2015":
+            lig_y = [l for l in secteurs if l["edition"] == ed_y and int(l["annee"]) == y and str(l.get("base", "2015")) == "2015"]
+        else:
+            lig_y = [l for l in b97 if l["edition"] == ed_y and int(l["annee"]) == y]
+        par_secteur = couverture_annee(postes_y, lig_y, liens97 if base == "1997" else None)
         for code in ["S13", "S13-consolide"] + [c for c in par_secteur if c not in ("S13", "S13-consolide")]:
-            annees.append({"annee": y, "edition": ed_y, "secteur": code, **par_secteur[code]})
+            annees.append({"annee": y, "edition": ed_y, "base": base, "secteur": code, **par_secteur[code]})
+        if base == "1997":  # la série en base 2015 n'est versée que sans contrôle en échec
+            echecs += controles_en_echec(ctrl97, y, ed_y, operations_retenues_s13(postes_y, lig_y, liens97))
     if a.verifier:
         if [dict(x) for x in lire_csv(ANNEES)] != [{k: str(v) for k, v in l.items()} for l in annees]:
             erreurs.append(f"{ANNEES.name} n'est pas à jour : relancer scripts/reconstruire_comptes.py")
+        if [dict(x) for x in lire_csv(ECHECS)] != [{k: str(v) for k, v in l.items()} for l in echecs]:
+            erreurs.append(f"{ECHECS.name} n'est pas à jour : relancer scripts/reconstruire_comptes.py")
         for e in erreurs:
             print("ERREUR :", e)
         return 1 if erreurs else 0
-    for chemin, rows in ((SORTIE, lignes), (FLUX, flux), (ANNEES, annees)):
+    for chemin, rows in ((SORTIE, lignes), (FLUX, flux), (ANNEES, annees), (ECHECS, echecs)):
         with chemin.open("w", newline="", encoding="utf-8") as f:
             w = csv.DictWriter(f, fieldnames=list(rows[0]), lineterminator="\n")
             w.writeheader()

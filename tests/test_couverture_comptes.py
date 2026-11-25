@@ -196,3 +196,72 @@ def test_chaque_total_p1_du_cache_est_reconnu():
         g[(l["base"], l["edition"], l["annee"], l["secteur"], l["cote"])].append(l)
     familles = [ls for ls in g.values() if len(ls) >= 3 and sum(l["code_scn2008"] == "P.1" for l in ls) >= 2]
     assert familles and all("P.1" in cc.totaux_meme_code(ls) for ls in familles)
+
+
+def _annees():
+    import reconstruire_comptes as rc
+    return {(int(l["annee"]), l["secteur"]): l for l in rc.lire_csv(rc.ANNEES)}
+
+
+def test_annee_2010_couverte_en_base_1997():
+    l = _annees()[(2010, "S13")]
+    assert l["base"] == "1997" and l["edition"] == "2010-2014"
+    assert int(l["operations_chiffrees"]) > 0 and float(l["part_montant_couverte_pct"]) > 0
+
+
+def test_annee_2015_inchangee_en_base_2015():
+    """2015 est publiée dans les deux bases : elle reste mesurée en base 2015, sur l'édition retenue par
+    edition_pour, et le calcul direct sur le cache en base 2015 redonne la ligne écrite."""
+    import yaml
+    import reconstruire_comptes as rc
+    secteurs = rc.lire_csv(rc.CACHE / "cnat-secteurs.csv")
+    snapshot = {e["id"]: e for e in yaml.safe_load((rc.CACHE / "catalog.snapshot.yml").read_text(encoding="utf-8"))}
+    ed = rc.edition_pour(secteurs, 2015)
+    postes, *_ = rc.calculer(2015, ed, secteurs, snapshot)
+    attendu = rc.couverture_annee(postes, [l for l in secteurs if l["edition"] == ed and int(l["annee"]) == 2015])
+    ecrit = _annees()
+    for code, ind in attendu.items():
+        l = ecrit[(2015, code)]
+        assert l["base"] == "2015" and l["edition"] == ed
+        assert {k: l[k] for k in ind} == {k: str(v) for k, v in ind.items()}, code
+
+
+def test_operation_a_valider_non_couverte():
+    """Une opération dont le lien au SCN 2008 est « à valider » n'est ni couverte ni comptée, même portée
+    par un poste chiffré ; l'opération « identique » voisine l'est."""
+    import reconstruire_comptes as rc
+    liens = rc.liens_raccord("1997")
+    a_valider = next(o for o, lien in liens.items() if lien == "à valider")
+    assert liens["cotisations_sociales"] == "identique"
+    ops = [ligne("ressources", "cotisations_sociales", 100), ligne("ressources", a_valider, 50, code="D.62")]
+    postes = [poste("cotisations_sociales", "ressources", "menages", "apu_secu", 100),
+              poste(a_valider, "ressources", "menages", "apu_secu", 50)]
+    ratt = cc.postes_du_secteur(postes, ("apu_secu",))
+    assert cc.indicateurs(ops, ratt)["operations_chiffrees"] == 2
+    ind = cc.indicateurs(cc.raccord_identique(ops, liens), ratt)
+    assert ind["operations"] == ind["operations_chiffrees"] == 1 and ind["ins_total_md"] == 100.0
+
+
+def test_redevance_gazoduc_hors_des_loyers_en_base_1997():
+    """INS, éd. 2015-2020, vol. A, p. 17 : avant la base 2015, la redevance du gazoduc était comptée en
+    production du secteur transport, non en loyers (D.45)."""
+    import reconstruire_comptes as rc
+    assert rc.poste_hors_base("redevance-gazoduc", "1997")
+    assert not rc.poste_hors_base("redevance-gazoduc", "2015")
+    reg = {p["poste"]: p for p in rc.lire_csv(rc.REGISTRE)}
+    assert reg["redevance-gazoduc"]["operation"] == "loyers"
+    a = _annees()
+    for y in range(2005, 2015):  # le reste du monde n'a plus d'opération chiffrée propre en base 1997
+        assert a[(y, "S2")]["justesse_pct"] == "", y
+
+
+def test_controles_en_echec_portee():
+    import reconstruire_comptes as rc
+    base = {"edition": "2009-2013", "annee": "2009", "statut": "echec", "publie": "1", "recalcule": "2", "ecart": "-1"}
+    src = [{**base, "controle": "solde", "secteur": "apu", "objet": "valeur_ajoutee_brute"},
+           {**base, "controle": "equilibre", "secteur": "", "objet": "cotisations_sociales"},
+           {**base, "controle": "equilibre", "secteur": "", "objet": "operation_hors_total"},
+           {**base, "statut": "ok", "controle": "solde", "secteur": "apu_secu", "objet": "valeur_ajoutee_brute"}]
+    out = rc.controles_en_echec(src, 2009, "2009-2013", {"cotisations_sociales"})
+    assert [(l["objet"], l["touche_total"]) for l in out] == [("valeur_ajoutee_brute", "non"),
+                                                               ("cotisations_sociales", "indetermine")]

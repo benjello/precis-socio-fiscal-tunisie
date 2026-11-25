@@ -7964,3 +7964,33 @@
     والقانون هو الذي يحمّل هذه المساهمات على المنتفع بالجراية. في سنة 2017 لم يُصرف
     للمتقاعدين إلا 50 % من الزيادات.
   fiche: sources/cnrps-publications.md
+- id: cnat-secteurs-base1997
+  titre: Comptes des secteurs et sous-secteurs institutionnels en base 1997 (SCN 1993),
+    éditions 2005-2009 à 2013-2017 — brouillon
+  sources:
+  - ins-cnat-2015
+  build: scripts/extraire_cnat_secteurs.py:main (--editions 2005-2009,…,2013-2017
+    --sortie …/cnat_secteurs_base1997.csv)
+  raw:
+  - data/raw/ins-publications/comptes-de-la-nation
+  output: data/processed/ins-comptes-nationaux/cnat_secteurs_base1997.csv
+  unite: millions de dinars courants
+  perimetre: 'Même lecture que cnat-secteurs (base 2015), sur les neuf éditions en
+    base 1997 ; libellés du SCN 1993 rattachés aux opérations du SCN 2008 par le dictionnaire
+    (monnaie et dépôts → F.2, prêts → F.4…). Contrôles dans cnat_secteurs_base1997_controles.csv
+    : 2 679 dans l''arrondi de l''INS, 39 expliqués, 247 en échec, sur 2 965 ; relecture
+    des échecs dans cnat_secteurs_base1997_relecture.csv. Versé dans la base SQLite
+    des comptes nationaux (famille secteurs_1997, 29 258 valeurs, positions dans cnat_secteurs_base1997_positions.csv).
+    Codes et libellés rapprochés du SCN 1968 et du SCN 2008 dans sources/ins-comptes-nationaux/raccord-scn-1968-1993-2008.csv.'
+  caveats: 'BROUILLON. JAMAIS CHAÎNÉE AVEC LA BASE 2015. Échecs de contrôle concentrés
+    dans trois éditions : 2005-2009 (9 pages de secteur sur 24 reconnues), 2008-2012
+    et 2009-2013 (titres de sous-secteurs absents du texte, pages en double) ; les
+    éditions 2010-2014 à 2013-2017 sont presque toutes dans l''arrondi. Deux libellés
+    ont gardé des nombres imprimés sans décimale (valeurs perdues, marquées A VERIFIER
+    dans le dictionnaire). « Autres instruments financiers » rattaché à F.8 à vérifier.'
+  fiche: sources/ins-comptes-nationaux-publications.md
+  licences:
+  - 'INS (sources ins-*) : conditions d''utilisation de l''INS, https://ins.tn/en/conditions-utilisation
+    (consultées le 2026-10-27) : réutilisation commerciale et non commerciale, redistribution
+    et transformation autorisées ; citer le producteur et la date de mise à jour,
+    ne pas suggérer une caution officielle ni tromper sur le contenu ; droit tunisien'

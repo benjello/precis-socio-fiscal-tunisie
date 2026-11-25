@@ -11,8 +11,9 @@ Deux tableaux engendrés depuis le registre `precis/fr/postes-comptables.csv` et
   au secteur (qui verse ou qui reçoit, comme scripts/couverture_comptes.py) et postes chiffrés cette
   année-là. La période va de la première année chiffrée d'un poste de la sécurité sociale (les comptes des
   caisses) à la dernière année que l'INS publie en base 2015. Aucune part du montant n'y figure : elle
-  n'existe que pour les années du compte en base 2015 (precis/fr/compte-couverture-annees.csv), seul
-  dénominateur du cache ; les comptes d'autres bases ne sont pas raccordés (question M10).
+  n'existe que pour les années d'un compte des secteurs du cache, base 1997 puis base 2015, chaque année
+  dans une seule base (precis/fr/compte-couverture-annees.csv) ; les bases ne sont pas raccordées
+  (question M10).
 
     uv run python scripts/etendue_postes.py            # écrit
     uv run python scripts/etendue_postes.py --verifier # échoue si un des deux fichiers n'est pas à jour
