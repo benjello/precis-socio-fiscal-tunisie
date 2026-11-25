@@ -3,6 +3,7 @@
 Ouvert le 24/11/2026, au fil du plan par opération (`docs/notes/plan-par-operations.md`). Chaque entrée donne la question, les options, la recommandation et ce que l'attente bloque. Quand l'option recommandée est réversible sur une branche, elle est **appliquée par défaut, à confirmer** ; sinon, rien n'est fait.
 
 ## M1. Le volume de la fiscalité dans un plan par opération
+- **Tranchée par Mahdi le 25/11/2026** : option (b), le volume entier en trois parties (#869).
 - **Question** : faut-il scinder le volume (62 sections déplacées selon la mesure) entre D.2, impôts sur les produits (partie II), et D.5, impôts sur le revenu (partie III), ou le garder entier ?
 - **Options** :
   - (a) scinder en deux volumes ;
@@ -46,6 +47,7 @@ Ouvert le 24/11/2026, au fil du plan par opération (`docs/notes/plan-par-operat
 - **Coût de changer** : (b) déplace les sections d'institution (69 selon la mesure) et en réécrit les renvois.
 
 ## M6. La date de consultation des éditions des comptes de la nation
+- **Mise à jour du 25/11/2026** : l'année d'édition est imprimée en couverture (« Edition 2026 » pour 2021-2025) ; seule la date de consultation manque.
 - **Question** : aucune liste ne donne la date de consultation des 15 éditions. Faut-il la relever (date de téléchargement des fichiers) ou la laisser vide ?
 - **Recommandation** : la laisser vide tant qu'aucune trace n'existe, et la noter à chaque nouveau téléchargement.
 
@@ -87,3 +89,19 @@ Ouvert le 24/11/2026, au fil du plan par opération (`docs/notes/plan-par-operat
   - (b) le volume des entreprises publiques pour l'État actionnaire et prêteur.
 - **Appliqué par défaut** : la page « Les comptes des secteurs » porte le tableau par secteur (#870), sans déplacer de section.
 - **Coût de changer** : (a) déplace une vingtaine de sections (cessions, garanties, crédit agricole) ; (b) n'en déplace aucune.
+
+## M13. Publications à récupérer (lots B et C)
+- **Question** : peut-on télécharger ces publications officielles ? L'inventaire de l'entrepôt (`catalogue.sqlite`) ne les contient pas ; la recherche y a été faite le 25/11/2026.
+- **Liste**, avec les titres exacts à confirmer sur les sites :
+
+| Organisme | Publication | Année | Ce qu'elle lève |
+|---|---|---|---|
+| Banque centrale de Tunisie | balance des paiements annuelle (et sa présentation détaillée) | 2015-2024 | lot B : compte du reste du monde (S2), table de passage BdP → SCN |
+| CNSS | rapport annuel ou états financiers | 2021-2023 | D.61 et D.62 de la CNSS en 2023 (la série de l'entrepôt s'arrête en 2020) |
+| CNRPS | rapport annuel ou états financiers | 2021-2023 | D.61 et D.62 de la CNRPS |
+| CNAM | rapport annuel (dépenses de soins) | 2021-2023 | passage des soins à D.631 ; seules les statistiques d'accidents du travail de 2023 sont inventoriées |
+| Ministère des Finances | loi de règlement du budget ou résultats définitifs d'exécution | 2023 | recettes douanières et TVA par nature, restitutions (E1, A4) |
+| Ministère de l'Intérieur (collectivités locales) | comptes définitifs des collectivités | 2023 | D.73 définitif (la valeur de l'entrepôt est provisoire, au 10/01/2024) |
+
+- **Appliqué par défaut** : rien n'est téléchargé, puisque tout téléchargement demande ton accord.
+- **Coût de changer** : une fois l'accord donné, la procédure existante de collecte du dépôt de données (`docs/agents/collecteur-donnees.md`) s'applique.
