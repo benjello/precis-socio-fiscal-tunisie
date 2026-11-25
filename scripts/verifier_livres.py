@@ -22,7 +22,7 @@ PAGES_GENERALES = ("index", "comment-lire", "comment-constitue", "a-propos", "pr
                    "annexe-pib", "annexe-budget-etat", "annexe-dette-publique", "annexe-sources",
                    "annexe-comptes-nation", "index-institutions", "parcours-atmp",
                    "correspondance-instruments", "correspondance-comptes", "compte-apu", "compte-secteurs",
-                   "sommaire-comptes")
+                   "sommaire-comptes", "sommaire-situations")
 RE_PAGE_GENERALE = re.compile(r"^precis/(fr|ar)/([^/]+)\.qmd$")
 RE_FIGURE_DE_PAGE = re.compile(r"^precis/(fr|ar)/figures/([^/]+)\.py$")
 

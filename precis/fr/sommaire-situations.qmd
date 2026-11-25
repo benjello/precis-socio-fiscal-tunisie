@@ -1,0 +1,42 @@
+---
+title: "Sommaire par situation de vie"
+subtitle: "Proposition : les sections de l'ouvrage rangées selon la situation du lecteur"
+lang: fr
+format:
+  html:
+    toc: true
+    page-layout: full
+    include-in-header: ../accueil.html
+---
+
+[← Retour à l'accueil](index.html) · [Sommaire par les comptes](sommaire-comptes.html)
+
+::: {.callout-note}
+Proposition en discussion (question 9 de la RFC 0001). Seules les sections dont le classement est évident sont rangées ; les autres restent à classer dans `sections-situations.csv`. Le plan de l'ouvrage n'est pas modifié.
+:::
+
+```{python}
+#| echo: false
+#| output: asis
+import csv, re
+from pathlib import Path
+_t = [l for l in csv.DictReader(open("sections-situations.csv", encoding="utf-8")) if l["situation"]]
+ORDRE = ["famille", "études", "travail", "chômage", "maladie", "retraite", "pauvreté", "logement"]
+def existe(l):
+    p = Path(f"{l['volume']}/{l['chapitre']}.qmd")
+    return p.exists() and re.search(r"\{#" + re.escape(l["ancre"]) + r"[ }]", p.read_text(encoding="utf-8")) is not None
+for s in ORDRE:
+    ls = [l for l in _t if l["situation"] == s and existe(l)]
+    print(f"\n## {s.capitalize()}\n")
+    if not ls:
+        print("Aucune section rangée pour l'instant.\n")
+        continue
+    vol = None
+    for l in ls:
+        if l["volume"] != vol:
+            vol = l["volume"]
+            print(f"\n**{vol.replace('_', ' ')}**\n")
+        print(f"- [{l['section']}]({l['volume']}/{l['chapitre']}.html#{l['ancre']})")
+n_tot = sum(1 for _ in csv.DictReader(open("sections-situations.csv", encoding="utf-8")))
+print(f"\n{len(_t)} sections rangées sur {n_tot}.")
+```
