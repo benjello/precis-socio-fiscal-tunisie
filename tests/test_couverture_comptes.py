@@ -69,7 +69,7 @@ def test_retirer_un_poste_ne_fait_pas_monter_la_part_donnees(annee):
     postes, *_ = rc.calculer(annee, ed, secteurs, snapshot)
     lig = [l for l in secteurs if l["edition"] == ed and int(l["annee"]) == annee]
     for code, (sec, membres) in cc.SECTEURS.items():
-        ops = cc.feuilles([l for l in lig if l["secteur"] == sec], garder=set(cc.postes_du_secteur(postes, membres)))
+        ops = cc.feuilles([l for l in lig if l["secteur"] == sec], garder=cc.garder_par_cote(cc.postes_du_secteur(postes, membres)))
         base = part(postes, ops, membres)
         base_m = montant(postes, ops, membres)
         assert base_m <= base
@@ -86,6 +86,27 @@ def test_agregat_garde_quand_lui_seul_porte_un_poste():
     assert [l["operation"] for l in cc.feuilles(ls, {"remuneration_salaries"})] == ["remuneration_salaries"]
     assert [l["operation"] for l in cc.feuilles(ls)] == ["salaires_bruts", "cotisations_employeurs"]
     assert [l["operation"] for l in cc.feuilles(ls, {"remuneration_salaries", "salaires_bruts"})] == ["salaires_bruts", "cotisations_employeurs"]
+
+
+def test_feuilles_decidees_cote_par_cote():
+    # Reste du monde : un poste sur D.75 en emplois (versé par S2), un poste sur l'agrégat D.7 en ressources
+    # (reçu par S2). En ressources, D.7 reste la feuille ; en emplois, il cède la place à ses composantes.
+    ls = [ligne(c, op, v, code) for c in ("emplois", "ressources")
+          for op, v, code in (("autres_transferts_courants", 100, "D.7"), ("primes_assurance_dommages", 10, "D.71"),
+                              ("transferts_courants_divers", 90, "D.75"))]
+    postes = [poste("transferts_courants_divers", "emplois", "rdm", "menages", 60),
+              poste("autres_transferts_courants", "ressources", "menages", "rdm", 5)]
+    ratt = cc.postes_du_secteur(postes, ("rdm",))
+    assert cc.garder_par_cote(ratt) == {"emplois": {"transferts_courants_divers"},
+                                        "ressources": {"autres_transferts_courants"}}
+    fs = cc.feuilles(ls, cc.garder_par_cote(ratt))
+    assert sorted((l["cote"], l["operation"]) for l in fs) == [
+        ("emplois", "primes_assurance_dommages"), ("emplois", "transferts_courants_divers"),
+        ("ressources", "autres_transferts_courants")]
+    # les deux postes comptent : 60 en emplois, 5 en ressources
+    assert cc.indicateurs(fs, ratt)["montant_couvert_md"] == 65.0
+    # un ensemble unique, valable pour les deux côtés, garde le comportement antérieur
+    assert all(l["operation"] != "autres_transferts_courants" for l in cc.feuilles(ls, set(ratt)))
 
 
 def test_part_du_montant_plafonnee_et_partielle():

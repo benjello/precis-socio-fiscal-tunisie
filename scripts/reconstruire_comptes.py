@@ -328,7 +328,7 @@ def main(argv=None) -> int:
         par_secteur = {}
         for code, (sec, membres) in cc.SECTEURS.items():
             ratt = cc.postes_du_secteur(postes_y, membres)
-            ops = cc.feuilles([l for l in lig_y if l["secteur"] == sec], garder=set(ratt))
+            ops = cc.feuilles([l for l in lig_y if l["secteur"] == sec], garder=cc.garder_par_cote(ratt))
             if ops:
                 par_secteur[code] = cc.indicateurs(ops, ratt)
         par_secteur["S13"] = cc.agreger([par_secteur[s] for s in cc.SOUS_SECTEURS_S13])
