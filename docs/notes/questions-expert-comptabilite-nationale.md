@@ -7,12 +7,14 @@ Références : INS, *Les comptes de la nation* (clé bibliographique `ins-cnat-2
 ## A. Du budget de l'État aux comptes des administrations publiques
 
 **A1. Que recouvre D.212 au-delà des droits de douane du budget ?**
+- La norme dit, la source mesure : le SCN 2008 range en D.2122 les accises et taxes sur ventes perçues à l'importation (§ 7.94, p. 147 ; MSFP 2014, 11412.1 et 1142.1, tableau A7.3, p. 364) ; le budget ne met en « droits de douanes » que les droits. Lequel est retenu : l'INS a-t-il reclassé en D.212 des droits de consommation perçus en douane, et pour quel montant ? (`docs/notes/ecarts-2023-definitions-2026-11-25.md`)
 - Observé : D.212 des administrations publiques, 2 293,5 en 2023 (édition 2021-2025), contre 1 849,0 de droits de douane dans les recettes fiscales de l'État (ministère des Finances, réalisations). Le rapport reste entre 1,18 et 1,36 de 2015 à 2023, l'écart étant positif chaque année (211,4 en 2017, 444,5 en 2023).
 - Déjà testé : le périmètre est écarté (S13 = S1311) ; le calendrier aussi (le signe est constant).
 - La réponse permettrait de rattacher D.212 à ses dispositifs (droits, redevances et taxes perçus en douane) et de fermer le résidu.
 - Priorité 1.
 
 **A2. Comment les « autres impôts indirects » du budget se répartissent-ils entre D.214, D.29 et d'autres opérations ?**
+- La norme dit, la source mesure : D.2 réunit impôts sur les produits et autres impôts sur la production (SCN 2008, § 7.73, p. 143) ; amendes, ventes et contributions n'en sont pas (MSFP 2014, 142, 143, tableau A7.3, p. 365). La rubrique du budget réunit fonds spéciaux du Trésor, fonds de concours et reliquat. Lequel est retenu : quelles de ces recettes l'INS compte-t-il comme impôts, et où range-t-il les autres ?
 - Observé : D.2 des administrations publiques, 20 896,8 en 2023, contre 22 006,4 pour la somme des quatre rubriques budgétaires (TVA, douane, droits de consommation, autres impôts indirects). Face à l'administration centrale (S1311, 20 379,8), l'écart est de −1 626,6 et garde le même signe de 2015 à 2023. D.214 vaut 1,48 à 1,70 fois les droits de consommation du budget. La rubrique « autres impôts indirects » réunit, dans la série du ministère, fonds spéciaux du Trésor, fonds de concours et reliquat.
 - Déjà testé : le périmètre explique 517,0 (collectivités locales) ; le calendrier est écarté.
 - La réponse dirait quelles recettes budgétaires ne sont pas des impôts dans les comptes, et où sont rangées les taxes au profit des fonds spéciaux.
@@ -37,6 +39,7 @@ Références : INS, *Les comptes de la nation* (clé bibliographique `ins-cnat-2
 - Priorité 1.
 
 **A6. Comment passe-t-on des dépenses d'équipement du budget à la FBCF de l'administration centrale, et que s'est-il passé en 2021 ?**
+- La norme dit, la source mesure : la FBCF (SCN 2008, § 10.64, p. 206) se distingue des aides à l'investissement (§ 10.208, p. 222) ; les dépenses d'équipement du budget réunissent les deux. La définition explique le niveau de 2015-2020 (FBCF + D.9 = 0,98 à 1,12 de l'équipement), pas la rupture de 2021 : qu'a changé 2021 dans la nomenclature ou le traitement des participations et des prêts ?
 - Observé : FBCF de S1311, 4 899,2 en 2023, contre 9 147,0 de dépenses d'équipement réalisées. Le rapport tombe de 0,87 (2015) à 0,54 (2023). Les transferts en capital versés par S1311 (D.9, 3 267,4 en 2023) et la FBCF couvrent 0,98 à 1,12 de l'équipement de 2015 à 2020, puis 0,77 à 0,89 depuis 2021.
 - Déjà testé : une différence de définition seule est écartée (le rapport n'est pas stable).
 - La réponse permettrait de documenter le passage et d'expliquer la rupture de 2021.
@@ -174,5 +177,6 @@ Références : INS, *Les comptes de la nation* (clé bibliographique `ins-cnat-2
 **E4.** Les dates de publication des éditions des *Comptes de la nation* : aucune n'est connue des listes d'adresses consultées. Priorité 3.
 
 ## A15. Impôts courants des ménages plus faibles que l'IRPP du budget
+- La norme dit, la source mesure : un impôt sur le revenu est rangé chez l'unité qui le supporte (SCN 2008, § 8.15, p. 160 ; MSFP 2014, 1111 et 1112, tableau A7.3, p. 364) ; le budget mesure l'IRPP encaissé, retenues à la source comprises. La définition n'explique pas que l'IRPP dépasse le D.5 des ménages : selon quel critère l'INS range-t-il une partie de l'IRPP hors des ménages ?
 
 L'IRPP du budget dépasse le D.5 des ménages chaque année de 2015 à 2023 (129 à 192 %) ; les seuls impôts sur les salaires en sont proches, et l'IRPP « autres » est du même ordre que l'excédent du D.5 des sociétés et du reste du monde sur l'impôt sur les sociétés (tableau dans `docs/notes/justesse-apu-menages-2026-11-25.md`). L'INS range-t-il une partie de l'IRPP (retenues à la source sur revenus de capitaux, non-résidents, entreprises individuelles) hors des ménages, et où le documente-t-il ? Les impôts sur les salaires croissent de 43 % en 2019 dans la série du ministère : rupture de champ ou d'enregistrement ?
