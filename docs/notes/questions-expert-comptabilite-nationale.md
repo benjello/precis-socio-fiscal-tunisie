@@ -74,6 +74,20 @@ Références : INS, *Les comptes de la nation* (clé bibliographique `ins-cnat-2
 - La réponse dirait si une ventilation « de qui à qui » existe (tableau des intérêts par débiteur, détenteurs des titres de l'État).
 - Priorité 3.
 
+**A13. Comment l'INS passe-t-il des biens de la balance des paiements (MBP6) aux exportations et importations de biens du compte du reste du monde ?** (lot B)
+- Observé, en 2023, comptes de la nation (éd. 2021-2025) face à la balance des paiements (BCT, rapport 2024, tableau 19) :
+  - P.61 : 62 824,1 MD dans les comptes, 28 081,6 en balance des paiements ;
+  - P.71 : 77 435,9, contre 56 181,8 ;
+  - P.62 : 16 593,8, contre 33 224,9.
+- Hypothèse compatible avec les chiffres, non établie : les comptes compteraient en biens la fabrication sur intrants de tiers (14 427,8 MD, en services dans la balance) et les marchandises envoyées pour transformation, en flux bruts. On a biens + fabrication + écart sur les importations ≈ 63 763,5, contre 62 824,1.
+- La réponse dirait si les comptes suivent encore le SCN 1993 pour le travail à façon, et fixerait la table de passage.
+- Priorité 1.
+
+**A14. La redevance gaz est-elle un loyer (D.45) dans les comptes et un service de transport dans la balance des paiements ?**
+- Observé, en 2023 : D.45 versé par le reste du monde aux résidents vaut 2 097,7 MD dans les comptes ; la « redevance gaz » des services de transport vaut 2 093,7 MD dans la balance des paiements.
+- Autres écarts : D.1 reçu du reste du monde, 230,9 dans les comptes contre 1 265,6 en balance des paiements ; D.7 et D.5 reçus, 11 645,4 contre 8 976,2.
+- Priorité 2.
+
 ## B. Incohérences vues sur les pages publiées
 
 **B1. Laquelle des deux valeurs de S12 retenir quand la ligne du secteur ne fait pas la somme de ses sous-secteurs dans le TOF ?**
