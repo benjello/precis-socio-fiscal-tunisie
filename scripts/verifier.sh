@@ -52,6 +52,15 @@ for arg in "$@"; do
 done
 
 ECHECS=0
+avertir() {
+  # avertir <intitulé> -- <commande...> : consigne et affiche la dernière ligne, sans compter d'échec
+  local intitule="$1"; shift
+  { echo "══════ $intitule ══════"; echo "+ $*"; } >>"$LOG"
+  local sortie
+  sortie=$("$@" 2>&1); echo "$sortie" >>"$LOG"
+  printf 'AVERT   %s : %s\n' "$intitule" "$(printf '%s\n' "$sortie" | tail -1)"
+}
+
 etape() {
   # etape <intitulé> -- <commande...>
   local intitule="$1"; shift
@@ -105,6 +114,7 @@ etape "Le compte reconstruit des administrations publiques est cohérent" uv run
 etape "Les résidus du compte reconstruit sont à jour" uv run python scripts/expliquer_residus.py --verifier
 etape "Les comptes des secteurs reconstruits sont à jour" uv run python scripts/reconstruire_secteurs.py --verifier
 etape "Le sommaire par les comptes est à jour" uv run python scripts/sommaire_comptes.py --verifier
+avertir "Vocabulaire de comptabilité nationale (avertissement)" uv run python scripts/check_vocabulaire_comptes.py --detail
 etape "Les liens entre volumes mènent à une page et une ancre (fr)" uv run python scripts/verifier_liens_entre_volumes.py --langue fr
 etape "Les liens entre volumes mènent à une page et une ancre (ar)" uv run python scripts/verifier_liens_entre_volumes.py --langue ar
 
