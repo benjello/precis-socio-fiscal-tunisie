@@ -1,39 +1,39 @@
 annee,edition,identite,secteur,formule,publie_md,recalcule_md,residu_md,tolerance_md,statut,remarque
-2019,2019-2023,sequence B.1g,S11,B.1g = P.1 − P.2,38273.1,38273.1,0.0,0.15,égal,
-2019,2019-2023,sequence B.1g,S12,B.1g = P.1 − P.2,4947.0,4947.0,0.0,0.15,égal,
-2019,2019-2023,sequence B.1g,S13,B.1g = P.1 − P.2,21454.6,21454.6,0.0,0.15,égal,
-2019,2019-2023,sequence B.1g,S14,B.1g = P.1 − P.2,49617.1,49617.1,0.0,0.15,égal,
-2019,2019-2023,sequence B.1g,S1,B.1g = P.1 − P.2,114291.8,114291.8,0.0,0.15,égal,
-2019,2019-2023,sequence B.2g/B.3g,S11,B.2g/B.3g = B.1g − D.1 − (D.29 − D.39),17145.7,17145.7,0.0,0.2,égal,
-2019,2019-2023,sequence B.2g/B.3g,S12,B.2g/B.3g = B.1g − D.1 − (D.29 − D.39),2329.1,2329.1,0.0,0.2,égal,
-2019,2019-2023,sequence B.2g/B.3g,S13,B.2g/B.3g = B.1g − D.1 − (D.29 − D.39),3355.7,3355.7,0.0,0.2,égal,
-2019,2019-2023,sequence B.2g/B.3g,S14,B.2g/B.3g = B.1g − D.1 − (D.29 − D.39),41902.9,41902.8,-0.1,0.2,égal aux arrondis près,
-2019,2019-2023,sequence B.2g/B.3g,S1,B.2g/B.3g = B.1g − D.1 − (D.29 − D.39),64733.4,64733.4,0.0,0.2,égal,
-2019,2019-2023,sequence B.5g,S11,B.5g = B.2g/B.3g + D.1 reçus + (D.2 − D.3) reçus + D.4 reçus − D.4 versés,8601.8,8601.8,0.0,0.3,égal,"case vide lue comme zéro : D.1, D.2-D.3"
-2019,2019-2023,sequence B.5g,S12,B.5g = B.2g/B.3g + D.1 reçus + (D.2 − D.3) reçus + D.4 reçus − D.4 versés,3341.7,3341.8,0.1,0.3,égal aux arrondis près,"case vide lue comme zéro : D.1, D.2-D.3"
-2019,2019-2023,sequence B.5g,S13,B.5g = B.2g/B.3g + D.1 reçus + (D.2 − D.3) reçus + D.4 reçus − D.4 versés,12917.2,12917.2,0.0,0.3,égal,case vide lue comme zéro : D.1
-2019,2019-2023,sequence B.5g,S14,B.5g = B.2g/B.3g + D.1 reçus + (D.2 − D.3) reçus + D.4 reçus − D.4 versés,94903.3,94903.3,0.0,0.3,égal,case vide lue comme zéro : D.2-D.3
-2019,2019-2023,sequence B.5g,S1,B.5g = B.2g/B.3g + D.1 reçus + (D.2 − D.3) reçus + D.4 reçus − D.4 versés,119764.0,119764.0,0.0,0.3,égal,
-2019,2019-2023,sequence B.6g,S11,B.6g = B.5g + (D.5 + D.61 + D.62 + D.7) reçus − (D.5 + D.61 + D.62 + D.7) versés,2078.3,2078.3,0.0,0.5,égal,"case vide lue comme zéro : D.5, D.61, D.62"
-2019,2019-2023,sequence B.6g,S12,B.6g = B.5g + (D.5 + D.61 + D.62 + D.7) reçus − (D.5 + D.61 + D.62 + D.7) versés,2346.8,2346.8,0.0,0.5,égal,"case vide lue comme zéro : D.5, D.61, D.62"
-2019,2019-2023,sequence B.6g,S13,B.6g = B.5g + (D.5 + D.61 + D.62 + D.7) reçus − (D.5 + D.61 + D.62 + D.7) versés,25512.3,25512.2,-0.1,0.5,égal aux arrondis près,"case vide lue comme zéro : D.61, D.62"
-2019,2019-2023,sequence B.6g,S14,B.6g = B.5g + (D.5 + D.61 + D.62 + D.7) reçus − (D.5 + D.61 + D.62 + D.7) versés,96194.5,96194.6,0.1,0.5,égal aux arrondis près,case vide lue comme zéro : D.5
-2019,2019-2023,sequence B.6g,S1,B.6g = B.5g + (D.5 + D.61 + D.62 + D.7) reçus − (D.5 + D.61 + D.62 + D.7) versés,126132.0,126131.9,-0.1,0.5,égal aux arrondis près,
-2019,2019-2023,sequence B.7g,S11,B.7g = B.6g + D.63 reçus − D.63 versés,2078.3,2078.3,0.0,0.2,égal,case vide lue comme zéro : D.63
-2019,2019-2023,sequence B.7g,S12,B.7g = B.6g + D.63 reçus − D.63 versés,2346.8,2346.8,0.0,0.2,égal,case vide lue comme zéro : D.63
-2019,2019-2023,sequence B.7g,S13,B.7g = B.6g + D.63 reçus − D.63 versés,13779.3,13779.3,0.0,0.2,égal,case vide lue comme zéro : D.63
-2019,2019-2023,sequence B.7g,S14,B.7g = B.6g + D.63 reçus − D.63 versés,107927.6,107927.6,0.0,0.2,égal,
-2019,2019-2023,sequence B.7g,S1,B.7g = B.6g + D.63 reçus − D.63 versés,126132.0,126132.0,0.0,0.2,égal,
-2019,2019-2023,sequence B.8g,S11,B.8g = B.6g − P.3,2078.3,2078.3,0.0,0.15,égal,case vide lue comme zéro : P.3
-2019,2019-2023,sequence B.8g,S12,B.8g = B.6g − P.3,2346.8,2346.8,0.0,0.15,égal,case vide lue comme zéro : P.3
-2019,2019-2023,sequence B.8g,S13,B.8g = B.6g − P.3,973.2,973.3,0.1,0.15,égal aux arrondis près,D.8 (ajustement pour variation des droits à pension) n'est pas imprimé ; P.4 non plus
-2019,2019-2023,sequence B.8g,S14,B.8g = B.6g − P.3,9288.3,9288.3,0.0,0.15,égal,
-2019,2019-2023,sequence B.8g,S1,B.8g = B.6g − P.3,14686.8,14686.8,0.0,0.15,égal,
-2019,2019-2023,sequence B.9,S11,B.9 = B.8g + D.9 à recevoir + D.9 à payer (imprimés signés) − P.51g − P.52 − NP,-7300.2,-7300.2,0.0,0.35,égal,
-2019,2019-2023,sequence B.9,S12,B.9 = B.8g + D.9 à recevoir + D.9 à payer (imprimés signés) − P.51g − P.52 − NP,2031.3,2031.2,-0.1,0.35,égal aux arrondis près,"case vide lue comme zéro : D.9, P.52, NP"
-2019,2019-2023,sequence B.9,S13,B.9 = B.8g + D.9 à recevoir + D.9 à payer (imprimés signés) − P.51g − P.52 − NP,-4370.8,-4370.9,-0.1,0.35,égal aux arrondis près,case vide lue comme zéro : P.52
-2019,2019-2023,sequence B.9,S14,B.9 = B.8g + D.9 à recevoir + D.9 à payer (imprimés signés) − P.51g − P.52 − NP,376.8,376.8,0.0,0.35,égal,
-2019,2019-2023,sequence B.9,S1,B.9 = B.8g + D.9 à recevoir + D.9 à payer (imprimés signés) − P.51g − P.52 − NP,-9262.9,-9262.9,0.0,0.35,égal,case vide lue comme zéro : NP
+2019,2019-2023,séquence B.1g,S11,B.1g = P.1 − P.2,38273.1,38273.1,0.0,0.15,égal,
+2019,2019-2023,séquence B.1g,S12,B.1g = P.1 − P.2,4947.0,4947.0,0.0,0.15,égal,
+2019,2019-2023,séquence B.1g,S13,B.1g = P.1 − P.2,21454.6,21454.6,0.0,0.15,égal,
+2019,2019-2023,séquence B.1g,S14,B.1g = P.1 − P.2,49617.1,49617.1,0.0,0.15,égal,
+2019,2019-2023,séquence B.1g,S1,B.1g = P.1 − P.2,114291.8,114291.8,0.0,0.15,égal,
+2019,2019-2023,séquence B.2g/B.3g,S11,B.2g/B.3g = B.1g − D.1 − (D.29 − D.39),17145.7,17145.7,0.0,0.2,égal,
+2019,2019-2023,séquence B.2g/B.3g,S12,B.2g/B.3g = B.1g − D.1 − (D.29 − D.39),2329.1,2329.1,0.0,0.2,égal,
+2019,2019-2023,séquence B.2g/B.3g,S13,B.2g/B.3g = B.1g − D.1 − (D.29 − D.39),3355.7,3355.7,0.0,0.2,égal,
+2019,2019-2023,séquence B.2g/B.3g,S14,B.2g/B.3g = B.1g − D.1 − (D.29 − D.39),41902.9,41902.8,-0.1,0.2,égal aux arrondis près,
+2019,2019-2023,séquence B.2g/B.3g,S1,B.2g/B.3g = B.1g − D.1 − (D.29 − D.39),64733.4,64733.4,0.0,0.2,égal,
+2019,2019-2023,séquence B.5g,S11,B.5g = B.2g/B.3g + D.1 reçus + (D.2 − D.3) reçus + D.4 reçus − D.4 versés,8601.8,8601.8,0.0,0.3,égal,"case vide lue comme zéro : D.1, D.2-D.3"
+2019,2019-2023,séquence B.5g,S12,B.5g = B.2g/B.3g + D.1 reçus + (D.2 − D.3) reçus + D.4 reçus − D.4 versés,3341.7,3341.8,0.1,0.3,égal aux arrondis près,"case vide lue comme zéro : D.1, D.2-D.3"
+2019,2019-2023,séquence B.5g,S13,B.5g = B.2g/B.3g + D.1 reçus + (D.2 − D.3) reçus + D.4 reçus − D.4 versés,12917.2,12917.2,0.0,0.3,égal,case vide lue comme zéro : D.1
+2019,2019-2023,séquence B.5g,S14,B.5g = B.2g/B.3g + D.1 reçus + (D.2 − D.3) reçus + D.4 reçus − D.4 versés,94903.3,94903.3,0.0,0.3,égal,case vide lue comme zéro : D.2-D.3
+2019,2019-2023,séquence B.5g,S1,B.5g = B.2g/B.3g + D.1 reçus + (D.2 − D.3) reçus + D.4 reçus − D.4 versés,119764.0,119764.0,0.0,0.3,égal,
+2019,2019-2023,séquence B.6g,S11,B.6g = B.5g + (D.5 + D.61 + D.62 + D.7) reçus − (D.5 + D.61 + D.62 + D.7) versés,2078.3,2078.3,0.0,0.5,égal,"case vide lue comme zéro : D.5, D.61, D.62"
+2019,2019-2023,séquence B.6g,S12,B.6g = B.5g + (D.5 + D.61 + D.62 + D.7) reçus − (D.5 + D.61 + D.62 + D.7) versés,2346.8,2346.8,0.0,0.5,égal,"case vide lue comme zéro : D.5, D.61, D.62"
+2019,2019-2023,séquence B.6g,S13,B.6g = B.5g + (D.5 + D.61 + D.62 + D.7) reçus − (D.5 + D.61 + D.62 + D.7) versés,25512.3,25512.2,-0.1,0.5,égal aux arrondis près,"case vide lue comme zéro : D.61, D.62"
+2019,2019-2023,séquence B.6g,S14,B.6g = B.5g + (D.5 + D.61 + D.62 + D.7) reçus − (D.5 + D.61 + D.62 + D.7) versés,96194.5,96194.6,0.1,0.5,égal aux arrondis près,case vide lue comme zéro : D.5
+2019,2019-2023,séquence B.6g,S1,B.6g = B.5g + (D.5 + D.61 + D.62 + D.7) reçus − (D.5 + D.61 + D.62 + D.7) versés,126132.0,126131.9,-0.1,0.5,égal aux arrondis près,
+2019,2019-2023,séquence B.7g,S11,B.7g = B.6g + D.63 reçus − D.63 versés,2078.3,2078.3,0.0,0.2,égal,case vide lue comme zéro : D.63
+2019,2019-2023,séquence B.7g,S12,B.7g = B.6g + D.63 reçus − D.63 versés,2346.8,2346.8,0.0,0.2,égal,case vide lue comme zéro : D.63
+2019,2019-2023,séquence B.7g,S13,B.7g = B.6g + D.63 reçus − D.63 versés,13779.3,13779.3,0.0,0.2,égal,case vide lue comme zéro : D.63
+2019,2019-2023,séquence B.7g,S14,B.7g = B.6g + D.63 reçus − D.63 versés,107927.6,107927.6,0.0,0.2,égal,
+2019,2019-2023,séquence B.7g,S1,B.7g = B.6g + D.63 reçus − D.63 versés,126132.0,126132.0,0.0,0.2,égal,
+2019,2019-2023,séquence B.8g,S11,B.8g = B.6g − P.3,2078.3,2078.3,0.0,0.15,égal,case vide lue comme zéro : P.3
+2019,2019-2023,séquence B.8g,S12,B.8g = B.6g − P.3,2346.8,2346.8,0.0,0.15,égal,case vide lue comme zéro : P.3
+2019,2019-2023,séquence B.8g,S13,B.8g = B.6g − P.3,973.2,973.3,0.1,0.15,égal aux arrondis près,D.8 (ajustement pour variation des droits à pension) n'est pas imprimé ; P.4 non plus
+2019,2019-2023,séquence B.8g,S14,B.8g = B.6g − P.3,9288.3,9288.3,0.0,0.15,égal,
+2019,2019-2023,séquence B.8g,S1,B.8g = B.6g − P.3,14686.8,14686.8,0.0,0.15,égal,
+2019,2019-2023,séquence B.9,S11,B.9 = B.8g + D.9 à recevoir + D.9 à payer (imprimés signés) − P.51g − P.52 − NP,-7300.2,-7300.2,0.0,0.35,égal,
+2019,2019-2023,séquence B.9,S12,B.9 = B.8g + D.9 à recevoir + D.9 à payer (imprimés signés) − P.51g − P.52 − NP,2031.3,2031.2,-0.1,0.35,égal aux arrondis près,"case vide lue comme zéro : D.9, P.52, NP"
+2019,2019-2023,séquence B.9,S13,B.9 = B.8g + D.9 à recevoir + D.9 à payer (imprimés signés) − P.51g − P.52 − NP,-4370.8,-4370.9,-0.1,0.35,égal aux arrondis près,case vide lue comme zéro : P.52
+2019,2019-2023,séquence B.9,S14,B.9 = B.8g + D.9 à recevoir + D.9 à payer (imprimés signés) − P.51g − P.52 − NP,376.8,376.8,0.0,0.35,égal,
+2019,2019-2023,séquence B.9,S1,B.9 = B.8g + D.9 à recevoir + D.9 à payer (imprimés signés) − P.51g − P.52 − NP,-9262.9,-9262.9,0.0,0.35,égal,case vide lue comme zéro : NP
 2019,2019-2023,B.9f = Σ F créances − Σ F dettes,S11,B.9f = Σ F.1…F.8 (emplois) − Σ F.1…F.8 (ressources),-7145.9,-7146.0,-0.1,0.75,égal aux arrondis près,
 2019,2019-2023,B.9 − B.9f = écart statistique,S11,B.9 (compte de capital) − B.9f (compte financier) = écart statistique imprimé,-154.3,-154.3,0.0,0.15,égal,
 2019,2019-2023,B.9f = Σ F créances − Σ F dettes,S12,B.9f = Σ F.1…F.8 (emplois) − Σ F.1…F.8 (ressources),2030.8,2031.4,0.6,0.75,égal aux arrondis près,
@@ -51,7 +51,7 @@ annee,edition,identite,secteur,formule,publie_md,recalcule_md,residu_md,toleranc
 2019,2019-2023,S11 + S12 + S13 + S14 = S1,"P.2 (emplois, ligne 4)",somme des secteurs = économie totale,98250.3,98250.4,0.1,0.25,égal aux arrondis près,
 2019,2019-2023,S11 + S12 + S13 + S14 = S1,"B.1g (emplois, ligne 6)",somme des secteurs = économie totale,114291.8,114291.8,0.0,0.25,égal,
 2019,2019-2023,S11 + S12 + S13 + S14 = S1,"D.1 (emplois, ligne 8)",somme des secteurs = économie totale,47687.9,47687.9,0.0,0.25,égal,
-2019,2019-2023,S11 + S12 + S13 + S14 = S1,"D.2-D.3 (emplois, ligne 9)",somme des secteurs = économie totale,10547.9,1870.6,-8677.3,0.25,écart,"résidu égal aux impôts nets sur les produits (D.21 − D.31) de l'économie totale, 8677.4, imprimés sans répartition par secteur"
+2019,2019-2023,S11 + S12 + S13 + S14 = S1,"D.2-D.3 (emplois, ligne 9)",somme des secteurs = économie totale,10547.9,1870.6,-8677.3,0.25,écart,"résidu égal aux impôts nets sur les produits (D.21 − D.31) de l'économie totale, 8 677,4, imprimés sans répartition par secteur"
 2019,2019-2023,S11 + S12 + S13 + S14 = S1,"D.21-D.31 (emplois, ligne 10)",somme des secteurs = économie totale,,,,,non calculable,opération inscrite à la seule économie totale : aucune case de secteur imprimée
 2019,2019-2023,S11 + S12 + S13 + S14 = S1,"D.29-D.39 (emplois, ligne 11)",somme des secteurs = économie totale,1870.5,1870.6,0.1,0.25,égal aux arrondis près,
 2019,2019-2023,S11 + S12 + S13 + S14 = S1,"B.2g/B.3g (emplois, ligne 12)",somme des secteurs = économie totale,64733.4,64733.4,0.0,0.25,égal,
@@ -107,7 +107,7 @@ annee,edition,identite,secteur,formule,publie_md,recalcule_md,residu_md,toleranc
 2019,2019-2023,S11 + S12 + S13 + S14 = S1,"F.5 (ressources, ligne 74)",somme des secteurs = économie totale,4438.0,4438.0,0.0,0.15,égal,
 2019,2019-2023,S11 + S12 + S13 + S14 = S1,"F.6 (ressources, ligne 75)",somme des secteurs = économie totale,407.7,407.7,0.0,0.1,égal,
 2019,2019-2023,S11 + S12 + S13 + S14 = S1,"F.8 (ressources, ligne 76)",somme des secteurs = économie totale,3346.7,3346.7,0.0,0.25,égal,
-2019,2019-2023,S11 + S12 + S13 + S14 = S1,"ecart_statistique (ressources, ligne 77)",somme des secteurs = économie totale,,,,,non calculable,pas de case S1 imprimée ; somme des secteurs -58.8
+2019,2019-2023,S11 + S12 + S13 + S14 = S1,"ecart_statistique (ressources, ligne 77)",somme des secteurs = économie totale,,,,,non calculable,"pas de case S1 imprimée ; somme des secteurs -58,8"
 2019,2019-2023,TOTAL = S1 + S2 + BS,"P.7 (emplois, ligne 1)",total de la ligne = économie totale + reste du monde + biens et services,69332.9,69332.9,0.0,0.1,égal,
 2019,2019-2023,TOTAL = S1 + S2 + BS,"P.6 (emplois, ligne 2)",total de la ligne = économie totale + reste du monde + biens et services,56504.8,56504.8,0.0,0.1,égal,
 2019,2019-2023,TOTAL = S1 + S2 + BS,"P.1 (emplois, ligne 3)",total de la ligne = économie totale + reste du monde + biens et services,212542.1,212542.1,0.0,0.1,égal,
@@ -251,41 +251,41 @@ annee,edition,identite,secteur,formule,publie_md,recalcule_md,residu_md,toleranc
 2019,2019-2023,solde reporté (emplois = ressources),B.8g TOTAL (ligne 63),solde en emplois du compte = solde en ressources du compte suivant,14686.8,14686.8,0.0,0.1,égal,
 2019,2019-2023,solde reporté (emplois = ressources),B.12 S2 (ligne 64),solde en emplois du compte = solde en ressources du compte suivant,9665.3,9665.3,0.0,0.1,égal,
 2019,2019-2023,solde reporté (emplois = ressources),B.12 TOTAL (ligne 64),solde en emplois du compte = solde en ressources du compte suivant,9665.3,9665.3,0.0,0.1,égal,
-2020,2020-2024,sequence B.1g,S11,B.1g = P.1 − P.2,38775.1,38775.1,0.0,0.15,égal,
-2020,2020-2024,sequence B.1g,S12,B.1g = P.1 − P.2,4983.7,4983.7,0.0,0.15,égal,
-2020,2020-2024,sequence B.1g,S13,B.1g = P.1 − P.2,23901.4,23901.4,0.0,0.15,égal,
-2020,2020-2024,sequence B.1g,S14,B.1g = P.1 − P.2,42393.6,42393.6,0.0,0.15,égal,
-2020,2020-2024,sequence B.1g,S1,B.1g = P.1 − P.2,110053.8,110053.8,0.0,0.15,égal,
-2020,2020-2024,sequence B.2g/B.3g,S11,B.2g/B.3g = B.1g − D.1 − (D.29 − D.39),16451.1,16451.0,-0.1,0.2,égal aux arrondis près,
-2020,2020-2024,sequence B.2g/B.3g,S12,B.2g/B.3g = B.1g − D.1 − (D.29 − D.39),2265.6,2265.6,0.0,0.2,égal,
-2020,2020-2024,sequence B.2g/B.3g,S13,B.2g/B.3g = B.1g − D.1 − (D.29 − D.39),3375.4,3375.4,0.0,0.2,égal,
-2020,2020-2024,sequence B.2g/B.3g,S14,B.2g/B.3g = B.1g − D.1 − (D.29 − D.39),34890.4,34890.4,0.0,0.2,égal,
-2020,2020-2024,sequence B.2g/B.3g,S1,B.2g/B.3g = B.1g − D.1 − (D.29 − D.39),56982.5,56982.5,0.0,0.2,égal,
-2020,2020-2024,sequence B.5g,S11,B.5g = B.2g/B.3g + D.1 reçus + (D.2 − D.3) reçus + D.4 reçus − D.4 versés,7919.6,7919.6,0.0,0.3,égal,"case vide lue comme zéro : D.1, D.2-D.3"
-2020,2020-2024,sequence B.5g,S12,B.5g = B.2g/B.3g + D.1 reçus + (D.2 − D.3) reçus + D.4 reçus − D.4 versés,3466.9,3466.9,0.0,0.3,égal,"case vide lue comme zéro : D.1, D.2-D.3"
-2020,2020-2024,sequence B.5g,S13,B.5g = B.2g/B.3g + D.1 reçus + (D.2 − D.3) reçus + D.4 reçus − D.4 versés,13103.1,13103.2,0.1,0.3,égal aux arrondis près,case vide lue comme zéro : D.1
-2020,2020-2024,sequence B.5g,S14,B.5g = B.2g/B.3g + D.1 reçus + (D.2 − D.3) reçus + D.4 reçus − D.4 versés,91084.3,91084.3,0.0,0.3,égal,case vide lue comme zéro : D.2-D.3
-2020,2020-2024,sequence B.5g,S1,B.5g = B.2g/B.3g + D.1 reçus + (D.2 − D.3) reçus + D.4 reçus − D.4 versés,115574.0,115574.1,0.1,0.3,égal aux arrondis près,
-2020,2020-2024,sequence B.6g,S11,B.6g = B.5g + (D.5 + D.61 + D.62 + D.7) reçus − (D.5 + D.61 + D.62 + D.7) versés,1871.5,1871.4,-0.1,0.5,égal aux arrondis près,"case vide lue comme zéro : D.5, D.61, D.62"
-2020,2020-2024,sequence B.6g,S12,B.6g = B.5g + (D.5 + D.61 + D.62 + D.7) reçus − (D.5 + D.61 + D.62 + D.7) versés,2439.9,2439.9,0.0,0.5,égal,"case vide lue comme zéro : D.5, D.61, D.62"
-2020,2020-2024,sequence B.6g,S13,B.6g = B.5g + (D.5 + D.61 + D.62 + D.7) reçus − (D.5 + D.61 + D.62 + D.7) versés,25209.7,25209.7,0.0,0.5,égal,"case vide lue comme zéro : D.61, D.62"
-2020,2020-2024,sequence B.6g,S14,B.6g = B.5g + (D.5 + D.61 + D.62 + D.7) reçus − (D.5 + D.61 + D.62 + D.7) versés,92908.5,92908.5,0.0,0.5,égal,case vide lue comme zéro : D.5
-2020,2020-2024,sequence B.6g,S1,B.6g = B.5g + (D.5 + D.61 + D.62 + D.7) reçus − (D.5 + D.61 + D.62 + D.7) versés,122429.7,122429.6,-0.1,0.5,égal aux arrondis près,
-2020,2020-2024,sequence B.7g,S11,B.7g = B.6g + D.63 reçus − D.63 versés,1871.5,1871.5,0.0,0.2,égal,case vide lue comme zéro : D.63
-2020,2020-2024,sequence B.7g,S12,B.7g = B.6g + D.63 reçus − D.63 versés,2439.9,2439.9,0.0,0.2,égal,case vide lue comme zéro : D.63
-2020,2020-2024,sequence B.7g,S13,B.7g = B.6g + D.63 reçus − D.63 versés,11894.0,11894.0,0.0,0.2,égal,case vide lue comme zéro : D.63
-2020,2020-2024,sequence B.7g,S14,B.7g = B.6g + D.63 reçus − D.63 versés,106224.2,106224.2,0.0,0.2,égal,
-2020,2020-2024,sequence B.7g,S1,B.7g = B.6g + D.63 reçus − D.63 versés,122429.7,122429.7,0.0,0.2,égal,
-2020,2020-2024,sequence B.8g,S11,B.8g = B.6g − P.3,1871.5,1871.5,0.0,0.15,égal,case vide lue comme zéro : P.3
-2020,2020-2024,sequence B.8g,S12,B.8g = B.6g − P.3,2439.9,2439.9,0.0,0.15,égal,case vide lue comme zéro : P.3
-2020,2020-2024,sequence B.8g,S13,B.8g = B.6g − P.3,-2171.0,-2171.0,0.0,0.15,égal,
-2020,2020-2024,sequence B.8g,S14,B.8g = B.6g − P.3,5971.7,5971.6,-0.1,0.15,égal aux arrondis près,D.8 (ajustement pour variation des droits à pension) n'est pas imprimé ; P.4 non plus
-2020,2020-2024,sequence B.8g,S1,B.8g = B.6g − P.3,8112.1,8112.1,0.0,0.15,égal,
-2020,2020-2024,sequence B.9,S11,B.9 = B.8g + D.9 à recevoir + D.9 à payer (imprimés signés) − P.51g − P.52 − NP,-977.6,-977.6,0.0,0.35,égal,
-2020,2020-2024,sequence B.9,S12,B.9 = B.8g + D.9 à recevoir + D.9 à payer (imprimés signés) − P.51g − P.52 − NP,2109.3,2109.3,0.0,0.35,égal,"case vide lue comme zéro : D.9, P.52, NP"
-2020,2020-2024,sequence B.9,S13,B.9 = B.8g + D.9 à recevoir + D.9 à payer (imprimés signés) − P.51g − P.52 − NP,-8145.9,-8145.9,0.0,0.35,égal,case vide lue comme zéro : P.52
-2020,2020-2024,sequence B.9,S14,B.9 = B.8g + D.9 à recevoir + D.9 à payer (imprimés signés) − P.51g − P.52 − NP,990.5,990.5,0.0,0.35,égal,
-2020,2020-2024,sequence B.9,S1,B.9 = B.8g + D.9 à recevoir + D.9 à payer (imprimés signés) − P.51g − P.52 − NP,-6023.7,-6023.8,-0.1,0.35,égal aux arrondis près,case vide lue comme zéro : NP
+2020,2020-2024,séquence B.1g,S11,B.1g = P.1 − P.2,38775.1,38775.1,0.0,0.15,égal,
+2020,2020-2024,séquence B.1g,S12,B.1g = P.1 − P.2,4983.7,4983.7,0.0,0.15,égal,
+2020,2020-2024,séquence B.1g,S13,B.1g = P.1 − P.2,23901.4,23901.4,0.0,0.15,égal,
+2020,2020-2024,séquence B.1g,S14,B.1g = P.1 − P.2,42393.6,42393.6,0.0,0.15,égal,
+2020,2020-2024,séquence B.1g,S1,B.1g = P.1 − P.2,110053.8,110053.8,0.0,0.15,égal,
+2020,2020-2024,séquence B.2g/B.3g,S11,B.2g/B.3g = B.1g − D.1 − (D.29 − D.39),16451.1,16451.0,-0.1,0.2,égal aux arrondis près,
+2020,2020-2024,séquence B.2g/B.3g,S12,B.2g/B.3g = B.1g − D.1 − (D.29 − D.39),2265.6,2265.6,0.0,0.2,égal,
+2020,2020-2024,séquence B.2g/B.3g,S13,B.2g/B.3g = B.1g − D.1 − (D.29 − D.39),3375.4,3375.4,0.0,0.2,égal,
+2020,2020-2024,séquence B.2g/B.3g,S14,B.2g/B.3g = B.1g − D.1 − (D.29 − D.39),34890.4,34890.4,0.0,0.2,égal,
+2020,2020-2024,séquence B.2g/B.3g,S1,B.2g/B.3g = B.1g − D.1 − (D.29 − D.39),56982.5,56982.5,0.0,0.2,égal,
+2020,2020-2024,séquence B.5g,S11,B.5g = B.2g/B.3g + D.1 reçus + (D.2 − D.3) reçus + D.4 reçus − D.4 versés,7919.6,7919.6,0.0,0.3,égal,"case vide lue comme zéro : D.1, D.2-D.3"
+2020,2020-2024,séquence B.5g,S12,B.5g = B.2g/B.3g + D.1 reçus + (D.2 − D.3) reçus + D.4 reçus − D.4 versés,3466.9,3466.9,0.0,0.3,égal,"case vide lue comme zéro : D.1, D.2-D.3"
+2020,2020-2024,séquence B.5g,S13,B.5g = B.2g/B.3g + D.1 reçus + (D.2 − D.3) reçus + D.4 reçus − D.4 versés,13103.1,13103.2,0.1,0.3,égal aux arrondis près,case vide lue comme zéro : D.1
+2020,2020-2024,séquence B.5g,S14,B.5g = B.2g/B.3g + D.1 reçus + (D.2 − D.3) reçus + D.4 reçus − D.4 versés,91084.3,91084.3,0.0,0.3,égal,case vide lue comme zéro : D.2-D.3
+2020,2020-2024,séquence B.5g,S1,B.5g = B.2g/B.3g + D.1 reçus + (D.2 − D.3) reçus + D.4 reçus − D.4 versés,115574.0,115574.1,0.1,0.3,égal aux arrondis près,
+2020,2020-2024,séquence B.6g,S11,B.6g = B.5g + (D.5 + D.61 + D.62 + D.7) reçus − (D.5 + D.61 + D.62 + D.7) versés,1871.5,1871.4,-0.1,0.5,égal aux arrondis près,"case vide lue comme zéro : D.5, D.61, D.62"
+2020,2020-2024,séquence B.6g,S12,B.6g = B.5g + (D.5 + D.61 + D.62 + D.7) reçus − (D.5 + D.61 + D.62 + D.7) versés,2439.9,2439.9,0.0,0.5,égal,"case vide lue comme zéro : D.5, D.61, D.62"
+2020,2020-2024,séquence B.6g,S13,B.6g = B.5g + (D.5 + D.61 + D.62 + D.7) reçus − (D.5 + D.61 + D.62 + D.7) versés,25209.7,25209.7,0.0,0.5,égal,"case vide lue comme zéro : D.61, D.62"
+2020,2020-2024,séquence B.6g,S14,B.6g = B.5g + (D.5 + D.61 + D.62 + D.7) reçus − (D.5 + D.61 + D.62 + D.7) versés,92908.5,92908.5,0.0,0.5,égal,case vide lue comme zéro : D.5
+2020,2020-2024,séquence B.6g,S1,B.6g = B.5g + (D.5 + D.61 + D.62 + D.7) reçus − (D.5 + D.61 + D.62 + D.7) versés,122429.7,122429.6,-0.1,0.5,égal aux arrondis près,
+2020,2020-2024,séquence B.7g,S11,B.7g = B.6g + D.63 reçus − D.63 versés,1871.5,1871.5,0.0,0.2,égal,case vide lue comme zéro : D.63
+2020,2020-2024,séquence B.7g,S12,B.7g = B.6g + D.63 reçus − D.63 versés,2439.9,2439.9,0.0,0.2,égal,case vide lue comme zéro : D.63
+2020,2020-2024,séquence B.7g,S13,B.7g = B.6g + D.63 reçus − D.63 versés,11894.0,11894.0,0.0,0.2,égal,case vide lue comme zéro : D.63
+2020,2020-2024,séquence B.7g,S14,B.7g = B.6g + D.63 reçus − D.63 versés,106224.2,106224.2,0.0,0.2,égal,
+2020,2020-2024,séquence B.7g,S1,B.7g = B.6g + D.63 reçus − D.63 versés,122429.7,122429.7,0.0,0.2,égal,
+2020,2020-2024,séquence B.8g,S11,B.8g = B.6g − P.3,1871.5,1871.5,0.0,0.15,égal,case vide lue comme zéro : P.3
+2020,2020-2024,séquence B.8g,S12,B.8g = B.6g − P.3,2439.9,2439.9,0.0,0.15,égal,case vide lue comme zéro : P.3
+2020,2020-2024,séquence B.8g,S13,B.8g = B.6g − P.3,-2171.0,-2171.0,0.0,0.15,égal,
+2020,2020-2024,séquence B.8g,S14,B.8g = B.6g − P.3,5971.7,5971.6,-0.1,0.15,égal aux arrondis près,D.8 (ajustement pour variation des droits à pension) n'est pas imprimé ; P.4 non plus
+2020,2020-2024,séquence B.8g,S1,B.8g = B.6g − P.3,8112.1,8112.1,0.0,0.15,égal,
+2020,2020-2024,séquence B.9,S11,B.9 = B.8g + D.9 à recevoir + D.9 à payer (imprimés signés) − P.51g − P.52 − NP,-977.6,-977.6,0.0,0.35,égal,
+2020,2020-2024,séquence B.9,S12,B.9 = B.8g + D.9 à recevoir + D.9 à payer (imprimés signés) − P.51g − P.52 − NP,2109.3,2109.3,0.0,0.35,égal,"case vide lue comme zéro : D.9, P.52, NP"
+2020,2020-2024,séquence B.9,S13,B.9 = B.8g + D.9 à recevoir + D.9 à payer (imprimés signés) − P.51g − P.52 − NP,-8145.9,-8145.9,0.0,0.35,égal,case vide lue comme zéro : P.52
+2020,2020-2024,séquence B.9,S14,B.9 = B.8g + D.9 à recevoir + D.9 à payer (imprimés signés) − P.51g − P.52 − NP,990.5,990.5,0.0,0.35,égal,
+2020,2020-2024,séquence B.9,S1,B.9 = B.8g + D.9 à recevoir + D.9 à payer (imprimés signés) − P.51g − P.52 − NP,-6023.7,-6023.8,-0.1,0.35,égal aux arrondis près,case vide lue comme zéro : NP
 2020,2020-2024,B.9f = Σ F créances − Σ F dettes,S11,B.9f = Σ F.1…F.8 (emplois) − Σ F.1…F.8 (ressources),-874.9,-875.0,-0.1,0.75,égal aux arrondis près,
 2020,2020-2024,B.9 − B.9f = écart statistique,S11,B.9 (compte de capital) − B.9f (compte financier) = écart statistique imprimé,-102.7,-102.7,0.0,0.15,égal,
 2020,2020-2024,B.9f = Σ F créances − Σ F dettes,S12,B.9f = Σ F.1…F.8 (emplois) − Σ F.1…F.8 (ressources),2109.3,2109.5,0.2,0.75,égal aux arrondis près,
@@ -303,7 +303,7 @@ annee,edition,identite,secteur,formule,publie_md,recalcule_md,residu_md,toleranc
 2020,2020-2024,S11 + S12 + S13 + S14 = S1,"P.2 (emplois, ligne 4)",somme des secteurs = économie totale,88512.6,88512.7,0.1,0.25,égal aux arrondis près,
 2020,2020-2024,S11 + S12 + S13 + S14 = S1,"B.1g (emplois, ligne 6)",somme des secteurs = économie totale,110053.8,110053.8,0.0,0.25,égal,
 2020,2020-2024,S11 + S12 + S13 + S14 = S1,"D.1 (emplois, ligne 8)",somme des secteurs = économie totale,51558.5,51558.6,0.1,0.25,égal aux arrondis près,
-2020,2020-2024,S11 + S12 + S13 + S14 = S1,"D.2-D.3 (emplois, ligne 9)",somme des secteurs = économie totale,10961.1,1512.8,-9448.3,0.25,écart,"résidu égal aux impôts nets sur les produits (D.21 − D.31) de l'économie totale, 9448.3, imprimés sans répartition par secteur"
+2020,2020-2024,S11 + S12 + S13 + S14 = S1,"D.2-D.3 (emplois, ligne 9)",somme des secteurs = économie totale,10961.1,1512.8,-9448.3,0.25,écart,"résidu égal aux impôts nets sur les produits (D.21 − D.31) de l'économie totale, 9 448,3, imprimés sans répartition par secteur"
 2020,2020-2024,S11 + S12 + S13 + S14 = S1,"D.21-D.31 (emplois, ligne 10)",somme des secteurs = économie totale,,,,,non calculable,opération inscrite à la seule économie totale : aucune case de secteur imprimée
 2020,2020-2024,S11 + S12 + S13 + S14 = S1,"D.29-D.39 (emplois, ligne 11)",somme des secteurs = économie totale,1512.8,1512.8,0.0,0.25,égal,
 2020,2020-2024,S11 + S12 + S13 + S14 = S1,"B.2g/B.3g (emplois, ligne 12)",somme des secteurs = économie totale,56982.5,56982.5,0.0,0.25,égal,
@@ -359,7 +359,7 @@ annee,edition,identite,secteur,formule,publie_md,recalcule_md,residu_md,toleranc
 2020,2020-2024,S11 + S12 + S13 + S14 = S1,"F.5 (ressources, ligne 74)",somme des secteurs = économie totale,-2185.3,-2185.3,0.0,0.15,égal,
 2020,2020-2024,S11 + S12 + S13 + S14 = S1,"F.6 (ressources, ligne 75)",somme des secteurs = économie totale,509.0,509.0,0.0,0.1,égal,
 2020,2020-2024,S11 + S12 + S13 + S14 = S1,"F.8 (ressources, ligne 76)",somme des secteurs = économie totale,-7558.5,-7558.5,0.0,0.25,égal,
-2020,2020-2024,S11 + S12 + S13 + S14 = S1,"ecart_statistique (ressources, ligne 77)",somme des secteurs = économie totale,,,,,non calculable,pas de case S1 imprimée ; somme des secteurs 91.3
+2020,2020-2024,S11 + S12 + S13 + S14 = S1,"ecart_statistique (ressources, ligne 77)",somme des secteurs = économie totale,,,,,non calculable,"pas de case S1 imprimée ; somme des secteurs 91,3"
 2020,2020-2024,TOTAL = S1 + S2 + BS,"P.7 (emplois, ligne 1)",total de la ligne = économie totale + reste du monde + biens et services,55379.1,55379.1,0.0,0.1,égal,
 2020,2020-2024,TOTAL = S1 + S2 + BS,"P.6 (emplois, ligne 2)",total de la ligne = économie totale + reste du monde + biens et services,45401.0,45401.0,0.0,0.1,égal,
 2020,2020-2024,TOTAL = S1 + S2 + BS,"P.1 (emplois, ligne 3)",total de la ligne = économie totale + reste du monde + biens et services,198566.4,198566.4,0.0,0.1,égal,
@@ -503,41 +503,41 @@ annee,edition,identite,secteur,formule,publie_md,recalcule_md,residu_md,toleranc
 2020,2020-2024,solde reporté (emplois = ressources),B.8g TOTAL (ligne 63),solde en emplois du compte = solde en ressources du compte suivant,8112.1,8112.1,0.0,0.1,égal,
 2020,2020-2024,solde reporté (emplois = ressources),B.12 S2 (ligne 64),solde en emplois du compte = solde en ressources du compte suivant,7050.5,7050.5,0.0,0.1,égal,
 2020,2020-2024,solde reporté (emplois = ressources),B.12 TOTAL (ligne 64),solde en emplois du compte = solde en ressources du compte suivant,7050.5,7050.5,0.0,0.1,égal,
-2023,2021-2025,sequence B.1g,S11,B.1g = P.1 − P.2,56297.2,56297.3,0.1,0.15,égal aux arrondis près,
-2023,2021-2025,sequence B.1g,S12,B.1g = P.1 − P.2,6180.0,6180.0,0.0,0.15,égal,
-2023,2021-2025,sequence B.1g,S13,B.1g = P.1 − P.2,26939.5,26939.5,0.0,0.15,égal,
-2023,2021-2025,sequence B.1g,S14,B.1g = P.1 − P.2,53879.2,53879.3,0.1,0.15,égal aux arrondis près,
-2023,2021-2025,sequence B.1g,S1,B.1g = P.1 − P.2,143296.0,143295.9,-0.1,0.15,égal aux arrondis près,
-2023,2021-2025,sequence B.2g/B.3g,S11,B.2g/B.3g = B.1g − D.1 − (D.29 − D.39),23232.3,23232.2,-0.1,0.2,égal aux arrondis près,
-2023,2021-2025,sequence B.2g/B.3g,S12,B.2g/B.3g = B.1g − D.1 − (D.29 − D.39),2551.7,2551.6,-0.1,0.2,égal aux arrondis près,
-2023,2021-2025,sequence B.2g/B.3g,S13,B.2g/B.3g = B.1g − D.1 − (D.29 − D.39),3972.9,3973.0,0.1,0.2,égal aux arrondis près,
-2023,2021-2025,sequence B.2g/B.3g,S14,B.2g/B.3g = B.1g − D.1 − (D.29 − D.39),45232.6,45232.6,0.0,0.2,égal,
-2023,2021-2025,sequence B.2g/B.3g,S1,B.2g/B.3g = B.1g − D.1 − (D.29 − D.39),74989.4,74989.5,0.1,0.2,égal aux arrondis près,
-2023,2021-2025,sequence B.5g,S11,B.5g = B.2g/B.3g + D.1 reçus + (D.2 − D.3) reçus + D.4 reçus − D.4 versés,11667.8,11667.8,0.0,0.3,égal,"case vide lue comme zéro : D.1, D.2-D.3"
-2023,2021-2025,sequence B.5g,S12,B.5g = B.2g/B.3g + D.1 reçus + (D.2 − D.3) reçus + D.4 reçus − D.4 versés,4902.9,4903.0,0.1,0.3,égal aux arrondis près,"case vide lue comme zéro : D.1, D.2-D.3"
-2023,2021-2025,sequence B.5g,S13,B.5g = B.2g/B.3g + D.1 reçus + (D.2 − D.3) reçus + D.4 reçus − D.4 versés,11130.0,11130.0,0.0,0.3,égal,case vide lue comme zéro : D.1
-2023,2021-2025,sequence B.5g,S14,B.5g = B.2g/B.3g + D.1 reçus + (D.2 − D.3) reçus + D.4 reçus − D.4 versés,118133.8,118133.9,0.1,0.3,égal aux arrondis près,case vide lue comme zéro : D.2-D.3
-2023,2021-2025,sequence B.5g,S1,B.5g = B.2g/B.3g + D.1 reçus + (D.2 − D.3) reçus + D.4 reçus − D.4 versés,145834.5,145834.5,0.0,0.3,égal,
-2023,2021-2025,sequence B.6g,S11,B.6g = B.5g + (D.5 + D.61 + D.62 + D.7) reçus − (D.5 + D.61 + D.62 + D.7) versés,2439.3,2439.3,0.0,0.5,égal,"case vide lue comme zéro : D.5, D.61, D.62"
-2023,2021-2025,sequence B.6g,S12,B.6g = B.5g + (D.5 + D.61 + D.62 + D.7) reçus − (D.5 + D.61 + D.62 + D.7) versés,3275.5,3275.5,0.0,0.5,égal,"case vide lue comme zéro : D.5, D.61, D.62"
-2023,2021-2025,sequence B.6g,S13,B.6g = B.5g + (D.5 + D.61 + D.62 + D.7) reçus − (D.5 + D.61 + D.62 + D.7) versés,29351.3,29351.2,-0.1,0.5,égal aux arrondis près,"case vide lue comme zéro : D.61, D.62"
-2023,2021-2025,sequence B.6g,S14,B.6g = B.5g + (D.5 + D.61 + D.62 + D.7) reçus − (D.5 + D.61 + D.62 + D.7) versés,121355.1,121355.1,0.0,0.5,égal,case vide lue comme zéro : D.5
-2023,2021-2025,sequence B.6g,S1,B.6g = B.5g + (D.5 + D.61 + D.62 + D.7) reçus − (D.5 + D.61 + D.62 + D.7) versés,156421.1,156421.1,0.0,0.5,égal,
-2023,2021-2025,sequence B.7g,S11,B.7g = B.6g + D.63 reçus − D.63 versés,2439.3,2439.3,0.0,0.2,égal,case vide lue comme zéro : D.63
-2023,2021-2025,sequence B.7g,S12,B.7g = B.6g + D.63 reçus − D.63 versés,3275.5,3275.5,0.0,0.2,égal,case vide lue comme zéro : D.63
-2023,2021-2025,sequence B.7g,S13,B.7g = B.6g + D.63 reçus − D.63 versés,14747.1,14747.1,0.0,0.2,égal,case vide lue comme zéro : D.63
-2023,2021-2025,sequence B.7g,S14,B.7g = B.6g + D.63 reçus − D.63 versés,135959.3,135959.3,0.0,0.2,égal,
-2023,2021-2025,sequence B.7g,S1,B.7g = B.6g + D.63 reçus − D.63 versés,156421.1,156421.1,0.0,0.2,égal,
-2023,2021-2025,sequence B.8g,S11,B.8g = B.6g − P.3,2439.3,2439.3,0.0,0.15,égal,case vide lue comme zéro : P.3
-2023,2021-2025,sequence B.8g,S12,B.8g = B.6g − P.3,3275.5,3275.5,0.0,0.15,égal,case vide lue comme zéro : P.3
-2023,2021-2025,sequence B.8g,S13,B.8g = B.6g − P.3,-1489.7,-1489.7,0.0,0.15,égal,
-2023,2021-2025,sequence B.8g,S14,B.8g = B.6g − P.3,5685.9,5685.9,0.0,0.15,égal,
-2023,2021-2025,sequence B.8g,S1,B.8g = B.6g − P.3,9911.0,9911.0,0.0,0.15,égal,
-2023,2021-2025,sequence B.9,S11,B.9 = B.8g + D.9 à recevoir + D.9 à payer (imprimés signés) − P.51g − P.52 − NP,3885.3,3885.3,0.0,0.35,égal,
-2023,2021-2025,sequence B.9,S12,B.9 = B.8g + D.9 à recevoir + D.9 à payer (imprimés signés) − P.51g − P.52 − NP,2743.8,2743.9,0.1,0.35,égal aux arrondis près,"case vide lue comme zéro : D.9, P.52, NP"
-2023,2021-2025,sequence B.9,S13,B.9 = B.8g + D.9 à recevoir + D.9 à payer (imprimés signés) − P.51g − P.52 − NP,-8874.9,-8874.9,0.0,0.35,égal,case vide lue comme zéro : P.52
-2023,2021-2025,sequence B.9,S14,B.9 = B.8g + D.9 à recevoir + D.9 à payer (imprimés signés) − P.51g − P.52 − NP,991.9,991.8,-0.1,0.35,égal aux arrondis près,
-2023,2021-2025,sequence B.9,S1,B.9 = B.8g + D.9 à recevoir + D.9 à payer (imprimés signés) − P.51g − P.52 − NP,-1253.9,-1253.8,0.1,0.35,égal aux arrondis près,case vide lue comme zéro : NP
+2023,2021-2025,séquence B.1g,S11,B.1g = P.1 − P.2,56297.2,56297.3,0.1,0.15,égal aux arrondis près,
+2023,2021-2025,séquence B.1g,S12,B.1g = P.1 − P.2,6180.0,6180.0,0.0,0.15,égal,
+2023,2021-2025,séquence B.1g,S13,B.1g = P.1 − P.2,26939.5,26939.5,0.0,0.15,égal,
+2023,2021-2025,séquence B.1g,S14,B.1g = P.1 − P.2,53879.2,53879.3,0.1,0.15,égal aux arrondis près,
+2023,2021-2025,séquence B.1g,S1,B.1g = P.1 − P.2,143296.0,143295.9,-0.1,0.15,égal aux arrondis près,
+2023,2021-2025,séquence B.2g/B.3g,S11,B.2g/B.3g = B.1g − D.1 − (D.29 − D.39),23232.3,23232.2,-0.1,0.2,égal aux arrondis près,
+2023,2021-2025,séquence B.2g/B.3g,S12,B.2g/B.3g = B.1g − D.1 − (D.29 − D.39),2551.7,2551.6,-0.1,0.2,égal aux arrondis près,
+2023,2021-2025,séquence B.2g/B.3g,S13,B.2g/B.3g = B.1g − D.1 − (D.29 − D.39),3972.9,3973.0,0.1,0.2,égal aux arrondis près,
+2023,2021-2025,séquence B.2g/B.3g,S14,B.2g/B.3g = B.1g − D.1 − (D.29 − D.39),45232.6,45232.6,0.0,0.2,égal,
+2023,2021-2025,séquence B.2g/B.3g,S1,B.2g/B.3g = B.1g − D.1 − (D.29 − D.39),74989.4,74989.5,0.1,0.2,égal aux arrondis près,
+2023,2021-2025,séquence B.5g,S11,B.5g = B.2g/B.3g + D.1 reçus + (D.2 − D.3) reçus + D.4 reçus − D.4 versés,11667.8,11667.8,0.0,0.3,égal,"case vide lue comme zéro : D.1, D.2-D.3"
+2023,2021-2025,séquence B.5g,S12,B.5g = B.2g/B.3g + D.1 reçus + (D.2 − D.3) reçus + D.4 reçus − D.4 versés,4902.9,4903.0,0.1,0.3,égal aux arrondis près,"case vide lue comme zéro : D.1, D.2-D.3"
+2023,2021-2025,séquence B.5g,S13,B.5g = B.2g/B.3g + D.1 reçus + (D.2 − D.3) reçus + D.4 reçus − D.4 versés,11130.0,11130.0,0.0,0.3,égal,case vide lue comme zéro : D.1
+2023,2021-2025,séquence B.5g,S14,B.5g = B.2g/B.3g + D.1 reçus + (D.2 − D.3) reçus + D.4 reçus − D.4 versés,118133.8,118133.9,0.1,0.3,égal aux arrondis près,case vide lue comme zéro : D.2-D.3
+2023,2021-2025,séquence B.5g,S1,B.5g = B.2g/B.3g + D.1 reçus + (D.2 − D.3) reçus + D.4 reçus − D.4 versés,145834.5,145834.5,0.0,0.3,égal,
+2023,2021-2025,séquence B.6g,S11,B.6g = B.5g + (D.5 + D.61 + D.62 + D.7) reçus − (D.5 + D.61 + D.62 + D.7) versés,2439.3,2439.3,0.0,0.5,égal,"case vide lue comme zéro : D.5, D.61, D.62"
+2023,2021-2025,séquence B.6g,S12,B.6g = B.5g + (D.5 + D.61 + D.62 + D.7) reçus − (D.5 + D.61 + D.62 + D.7) versés,3275.5,3275.5,0.0,0.5,égal,"case vide lue comme zéro : D.5, D.61, D.62"
+2023,2021-2025,séquence B.6g,S13,B.6g = B.5g + (D.5 + D.61 + D.62 + D.7) reçus − (D.5 + D.61 + D.62 + D.7) versés,29351.3,29351.2,-0.1,0.5,égal aux arrondis près,"case vide lue comme zéro : D.61, D.62"
+2023,2021-2025,séquence B.6g,S14,B.6g = B.5g + (D.5 + D.61 + D.62 + D.7) reçus − (D.5 + D.61 + D.62 + D.7) versés,121355.1,121355.1,0.0,0.5,égal,case vide lue comme zéro : D.5
+2023,2021-2025,séquence B.6g,S1,B.6g = B.5g + (D.5 + D.61 + D.62 + D.7) reçus − (D.5 + D.61 + D.62 + D.7) versés,156421.1,156421.1,0.0,0.5,égal,
+2023,2021-2025,séquence B.7g,S11,B.7g = B.6g + D.63 reçus − D.63 versés,2439.3,2439.3,0.0,0.2,égal,case vide lue comme zéro : D.63
+2023,2021-2025,séquence B.7g,S12,B.7g = B.6g + D.63 reçus − D.63 versés,3275.5,3275.5,0.0,0.2,égal,case vide lue comme zéro : D.63
+2023,2021-2025,séquence B.7g,S13,B.7g = B.6g + D.63 reçus − D.63 versés,14747.1,14747.1,0.0,0.2,égal,case vide lue comme zéro : D.63
+2023,2021-2025,séquence B.7g,S14,B.7g = B.6g + D.63 reçus − D.63 versés,135959.3,135959.3,0.0,0.2,égal,
+2023,2021-2025,séquence B.7g,S1,B.7g = B.6g + D.63 reçus − D.63 versés,156421.1,156421.1,0.0,0.2,égal,
+2023,2021-2025,séquence B.8g,S11,B.8g = B.6g − P.3,2439.3,2439.3,0.0,0.15,égal,case vide lue comme zéro : P.3
+2023,2021-2025,séquence B.8g,S12,B.8g = B.6g − P.3,3275.5,3275.5,0.0,0.15,égal,case vide lue comme zéro : P.3
+2023,2021-2025,séquence B.8g,S13,B.8g = B.6g − P.3,-1489.7,-1489.7,0.0,0.15,égal,
+2023,2021-2025,séquence B.8g,S14,B.8g = B.6g − P.3,5685.9,5685.9,0.0,0.15,égal,
+2023,2021-2025,séquence B.8g,S1,B.8g = B.6g − P.3,9911.0,9911.0,0.0,0.15,égal,
+2023,2021-2025,séquence B.9,S11,B.9 = B.8g + D.9 à recevoir + D.9 à payer (imprimés signés) − P.51g − P.52 − NP,3885.3,3885.3,0.0,0.35,égal,
+2023,2021-2025,séquence B.9,S12,B.9 = B.8g + D.9 à recevoir + D.9 à payer (imprimés signés) − P.51g − P.52 − NP,2743.8,2743.9,0.1,0.35,égal aux arrondis près,"case vide lue comme zéro : D.9, P.52, NP"
+2023,2021-2025,séquence B.9,S13,B.9 = B.8g + D.9 à recevoir + D.9 à payer (imprimés signés) − P.51g − P.52 − NP,-8874.9,-8874.9,0.0,0.35,égal,case vide lue comme zéro : P.52
+2023,2021-2025,séquence B.9,S14,B.9 = B.8g + D.9 à recevoir + D.9 à payer (imprimés signés) − P.51g − P.52 − NP,991.9,991.8,-0.1,0.35,égal aux arrondis près,
+2023,2021-2025,séquence B.9,S1,B.9 = B.8g + D.9 à recevoir + D.9 à payer (imprimés signés) − P.51g − P.52 − NP,-1253.9,-1253.8,0.1,0.35,égal aux arrondis près,case vide lue comme zéro : NP
 2023,2021-2025,B.9f = Σ F créances − Σ F dettes,S11,B.9f = Σ F.1…F.8 (emplois) − Σ F.1…F.8 (ressources),4249.8,4249.8,0.0,0.75,égal,
 2023,2021-2025,B.9 − B.9f = écart statistique,S11,B.9 (compte de capital) − B.9f (compte financier) = écart statistique imprimé,-364.5,-364.5,0.0,0.15,égal,
 2023,2021-2025,B.9f = Σ F créances − Σ F dettes,S12,B.9f = Σ F.1…F.8 (emplois) − Σ F.1…F.8 (ressources),2743.8,2743.7,-0.1,0.75,égal aux arrondis près,
@@ -555,7 +555,7 @@ annee,edition,identite,secteur,formule,publie_md,recalcule_md,residu_md,toleranc
 2023,2021-2025,S11 + S12 + S13 + S14 = S1,"P.2 (emplois, ligne 4)",somme des secteurs = économie totale,126610.7,126610.6,-0.1,0.25,égal aux arrondis près,
 2023,2021-2025,S11 + S12 + S13 + S14 = S1,"B.1g (emplois, ligne 6)",somme des secteurs = économie totale,143296.0,143295.9,-0.1,0.25,égal aux arrondis près,
 2023,2021-2025,S11 + S12 + S13 + S14 = S1,"D.1 (emplois, ligne 8)",somme des secteurs = économie totale,66060.3,66060.4,0.1,0.25,égal aux arrondis près,
-2023,2021-2025,S11 + S12 + S13 + S14 = S1,"D.2-D.3 (emplois, ligne 9)",somme des secteurs = économie totale,8743.8,2246.1,-6497.7,0.25,écart,"résidu égal aux impôts nets sur les produits (D.21 − D.31) de l'économie totale, 6497.6, imprimés sans répartition par secteur"
+2023,2021-2025,S11 + S12 + S13 + S14 = S1,"D.2-D.3 (emplois, ligne 9)",somme des secteurs = économie totale,8743.8,2246.1,-6497.7,0.25,écart,"résidu égal aux impôts nets sur les produits (D.21 − D.31) de l'économie totale, 6 497,6, imprimés sans répartition par secteur"
 2023,2021-2025,S11 + S12 + S13 + S14 = S1,"D.21-D.31 (emplois, ligne 10)",somme des secteurs = économie totale,,,,,non calculable,opération inscrite à la seule économie totale : aucune case de secteur imprimée
 2023,2021-2025,S11 + S12 + S13 + S14 = S1,"D.29-D.39 (emplois, ligne 11)",somme des secteurs = économie totale,2246.2,2246.1,-0.1,0.25,égal aux arrondis près,
 2023,2021-2025,S11 + S12 + S13 + S14 = S1,"B.2g/B.3g (emplois, ligne 12)",somme des secteurs = économie totale,74989.4,74989.5,0.1,0.25,égal aux arrondis près,
@@ -610,7 +610,7 @@ annee,edition,identite,secteur,formule,publie_md,recalcule_md,residu_md,toleranc
 2023,2021-2025,S11 + S12 + S13 + S14 = S1,"F.5 (ressources, ligne 73)",somme des secteurs = économie totale,1685.3,1685.3,0.0,0.15,égal,
 2023,2021-2025,S11 + S12 + S13 + S14 = S1,"F.6 (ressources, ligne 74)",somme des secteurs = économie totale,568.1,568.1,0.0,0.1,égal,
 2023,2021-2025,S11 + S12 + S13 + S14 = S1,"F.8 (ressources, ligne 75)",somme des secteurs = économie totale,2108.3,2108.3,0.0,0.25,égal,
-2023,2021-2025,S11 + S12 + S13 + S14 = S1,"ecart_statistique (ressources, ligne 76)",somme des secteurs = économie totale,,,,,non calculable,pas de case S1 imprimée ; somme des secteurs -229.1
+2023,2021-2025,S11 + S12 + S13 + S14 = S1,"ecart_statistique (ressources, ligne 76)",somme des secteurs = économie totale,,,,,non calculable,"pas de case S1 imprimée ; somme des secteurs -229,1"
 2023,2021-2025,TOTAL = S1 + S2 + BS,"P.7 (emplois, ligne 1)",total de la ligne = économie totale + reste du monde + biens et services,88476.9,88476.9,0.0,0.1,égal,
 2023,2021-2025,TOTAL = S1 + S2 + BS,"P.6 (emplois, ligne 2)",total de la ligne = économie totale + reste du monde + biens et services,79417.9,79417.9,0.0,0.1,égal,
 2023,2021-2025,TOTAL = S1 + S2 + BS,"P.2 (emplois, ligne 4)",total de la ligne = économie totale + reste du monde + biens et services,126610.7,126610.7,0.0,0.1,égal,

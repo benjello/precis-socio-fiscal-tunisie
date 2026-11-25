@@ -47,6 +47,11 @@ CNAT_SECTEURS = {"snf": "S11", "sf": "S12", "apu": "S13", "menages": "S14"}
 ARRONDI = 0.05  # demi-unité de la dernière décimale imprimée (0,1 MD), par terme
 
 
+def fr(x: float) -> str:
+    """Nombre à une décimale, à la française (texte des remarques)."""
+    return f"{round(x, 1) + 0.0:,.1f}".replace(",", " ").replace(".", ",")
+
+
 def lire(p: Path) -> list[dict]:
     with p.open(encoding="utf-8") as f:
         return list(csv.DictReader(f))
@@ -236,7 +241,7 @@ def controles(A: Annee) -> list[dict]:
     out = []
     # 1. Séquence des comptes, secteur par secteur.
     for formule, pub, termes in SEQ:
-        ident = "sequence " + formule.split(" =")[0]
+        ident = "séquence " + formule.split(" =")[0]
         for s in SEQUENCE:
             rq = "D.8 (ajustement pour variation des droits à pension) n'est pas imprimé ; P.4 non plus" if pub[1] == "epargne_brute" else ""
             out.append(controle(A, ident, s, formule, pub, termes, rq))
@@ -280,7 +285,7 @@ def controles(A: Annee) -> list[dict]:
             continue
         if "S1" not in g["cases"]:
             out.append(brut(A, ident, lib, "somme des secteurs = économie totale", None, None, 0,
-                            raison=f"pas de case S1 imprimée ; somme des secteurs {round(sum(g['cases'][c] for c in secs), 1) + 0.0}"))
+                            raison=f"pas de case S1 imprimée ; somme des secteurs {fr(sum(g['cases'][c] for c in secs))}"))
             continue
         if not secs:
             out.append(brut(A, ident, lib, "somme des secteurs = économie totale", None, None, 0,
@@ -290,7 +295,7 @@ def controles(A: Annee) -> list[dict]:
         if g["operation"] == "impots_nets_production_importations" and g["cote"] in produits:
             p = produits[g["cote"]]["cases"]["S1"]
             if abs(g["cases"]["S1"] - sum(g["cases"][c] for c in secs) - p) < 0.051 * (len(secs) + 2):
-                rq = f"résidu égal aux impôts nets sur les produits (D.21 − D.31) de l'économie totale, {p}, imprimés sans répartition par secteur"
+                rq = f"résidu égal aux impôts nets sur les produits (D.21 − D.31) de l'économie totale, {fr(p)}, imprimés sans répartition par secteur"
         out.append(brut(A, ident, lib, "somme des secteurs = économie totale", g["cases"]["S1"],
                         sum(g["cases"][c] for c in secs), len(secs) + 1, rq))
     # 4. Total de la ligne = économie totale + reste du monde + biens et services.
