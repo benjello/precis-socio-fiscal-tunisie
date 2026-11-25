@@ -25,8 +25,12 @@ POSTES = [poste("cotisations_sociales", "ressources", "menages", "apu_secu", 900
           poste("subventions", "ressources", "apu_secu", "snf", 150)]
 
 
-def part(postes, ops=OPS, membres=("apu_secu",)):
-    return cc.indicateurs(ops, cc.postes_du_secteur(postes, membres))["part_couverte_pct"]
+def part(postes, ops=OPS, membres=("apu_secu",), cle="part_couverte_pct"):
+    return cc.indicateurs(ops, cc.postes_du_secteur(postes, membres))[cle]
+
+
+def montant(postes, ops=OPS, membres=("apu_secu",)):
+    return part(postes, ops, membres, "part_montant_couverte_pct")
 
 
 def test_definitions_sur_un_exemple():
@@ -67,10 +71,13 @@ def test_retirer_un_poste_ne_fait_pas_monter_la_part_donnees(annee):
     for code, (sec, membres) in cc.SECTEURS.items():
         ops = cc.feuilles([l for l in lig if l["secteur"] == sec], garder=set(cc.postes_du_secteur(postes, membres)))
         base = part(postes, ops, membres)
+        base_m = montant(postes, ops, membres)
+        assert base_m <= base
         for i, p in enumerate(postes):
             if p.get("montant_reference"):
                 reste = postes[:i] + postes[i + 1:]
                 assert part(reste, ops, membres) <= base, (code, p["poste"])
+                assert montant(reste, ops, membres) <= base_m, (code, p["poste"])
 
 
 def test_agregat_garde_quand_lui_seul_porte_un_poste():
@@ -79,3 +86,18 @@ def test_agregat_garde_quand_lui_seul_porte_un_poste():
     assert [l["operation"] for l in cc.feuilles(ls, {"remuneration_salaries"})] == ["remuneration_salaries"]
     assert [l["operation"] for l in cc.feuilles(ls)] == ["salaires_bruts", "cotisations_employeurs"]
     assert [l["operation"] for l in cc.feuilles(ls, {"remuneration_salaries", "salaires_bruts"})] == ["salaires_bruts", "cotisations_employeurs"]
+
+
+def test_part_du_montant_plafonnee_et_partielle():
+    r = cc.indicateurs(OPS, cc.postes_du_secteur(POSTES, ("apu_secu",)))
+    assert r["part_montant_couverte_pct"] == round(100 * (900 + 600 + 150) / 2500, 1)
+    trop = [poste("cotisations_sociales", "ressources", "menages", "apu_secu", 5000)]
+    assert cc.indicateurs(OPS, cc.postes_du_secteur(trop, ("apu_secu",)))["part_montant_couverte_pct"] == 40.0
+    partage = [poste("cotisations_sociales", "ressources", "menages", "apu_secu;apu_centrale", 900)]
+    assert cc.indicateurs(OPS, cc.postes_du_secteur(partage, ("apu_secu",)))["part_montant_couverte_pct"] == 0.0
+
+
+def test_retirer_un_poste_ne_fait_pas_monter_la_part_du_montant_exemple():
+    base = montant(POSTES)
+    for i in range(len(POSTES)):
+        assert montant(POSTES[:i] + POSTES[i + 1:]) <= base

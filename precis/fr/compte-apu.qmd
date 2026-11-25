@@ -50,10 +50,13 @@ print(f"L'année de référence est **{AN}** (édition {ED} des comptes de la na
 
 Chaque montant de l'ouvrage porte la nature de sa source : série statistique, états financiers, rapport d'activité ou rapport du ministère (colonne « Source » du tableau « qui verse à qui »).
 
-Deux indicateurs mesurent la reconstruction, pour chaque secteur et chaque année :
+Trois indicateurs mesurent la reconstruction, pour chaque secteur et chaque année :
 
-- la **part du compte couverte** : montant de l'INS des opérations qui ont au moins un poste chiffré, rapporté au total des montants de l'INS du compte du secteur (emplois et ressources, hors soldes et hors compte financier, sans compter deux fois une opération et ses composantes). Elle baisse quand un poste perd son montant ;
-- la **justesse** : somme des postes rapportée au montant de l'INS, sur les seules opérations chiffrées dont tous les postes sont propres au secteur. Un poste qui chiffre une opération pour plusieurs secteurs (la TVA, versée par les ménages et les sociétés) n'entre pas dans la justesse.
+- la **part du montant couverte**, indicateur principal : somme, opération par opération, des postes propres au secteur, plafonnée au montant de l'INS de l'opération, rapportée au total des montants de l'INS du compte (emplois et ressources, hors soldes et hors compte financier, sans compter deux fois une opération et ses composantes). Un poste partiel ne couvre que son propre montant ; un poste qui chiffre une opération pour plusieurs secteurs (la TVA, versée par les ménages et les sociétés) ne compte pas ;
+- la **part du compte couverte** : montant de l'INS des opérations qui ont au moins un poste chiffré, rapporté au même total. Elle compte toute l'opération dès qu'un poste la chiffre, même en partie ;
+- la **justesse** : somme des postes rapportée au montant de l'INS, sur les seules opérations chiffrées dont tous les postes sont propres au secteur.
+
+Les deux parts baissent quand un poste perd son montant ; un test le vérifie.
 
 Un poste est rattaché au secteur qui verse, en emplois, et au secteur qui reçoit, en ressources ; les subventions versées par les administrations sont inscrites par l'INS en ressources négatives du payeur.
 
@@ -66,6 +69,7 @@ _S = [("S13", "APU"), ("S1311", "État"), ("S1313", "Coll. locales"), ("S1314", 
 _d = {(l["annee"], l["secteur"]): l for l in _y}
 _ans = sorted({l["annee"] for l in _y})
 for _ind, _n, _titre, _id in (
+        ("part_montant_couverte_pct", "operations_chiffrees", "Part du montant couverte, en % des montants de l'INS (opérations chiffrées sur opérations du compte)", "tbl-capu-part-montant"),
         ("part_couverte_pct", "operations_chiffrees", "Part du compte couverte, en % des montants de l'INS (opérations chiffrées sur opérations du compte)", "tbl-capu-part-couverte"),
         ("justesse_pct", "operations_justesse", "Justesse, somme des postes en % du montant de l'INS sur les opérations chiffrées propres au secteur (nombre de ces opérations)", "tbl-capu-justesse")):
     print("| Année | " + " | ".join(n for _, n in _S) + " |")
@@ -78,7 +82,7 @@ for _ind, _n, _titre, _id in (
                 cells.append("—")
                 continue
             v = (n(l[_ind]) + " %") if l[_ind] else "—"
-            cells.append(f"{v} ({l[_n]}/{l['operations']})" if _ind == "part_couverte_pct" else f"{v} ({l[_n]})")
+            cells.append(f"{v} ({l[_n]}/{l['operations']})" if _ind.startswith("part") else f"{v} ({l[_n]})")
         print(f"| {an} | " + " | ".join(cells) + " |")
     print(f"\n: {_titre} {{#{_id}}}\n")
 ```
@@ -89,8 +93,8 @@ Les administrations publiques (APU) sont mesurées comme la somme de leurs trois
 #| echo: false
 #| output: asis
 _a, _b = _d[(str(AN), "S13")], _d[(_ans[-1], "S13")]
-print(f"La part couverte des administrations publiques passe de {n(_a['part_couverte_pct'])} % en {AN} à "
-      f"{n(_b['part_couverte_pct'])} % en {_ans[-1]} : les comptes des caisses de sécurité sociale ne sont pas encore "
+print(f"La part du montant couverte des administrations publiques passe de {n(_a['part_montant_couverte_pct'])} % en {AN} à "
+      f"{n(_b['part_montant_couverte_pct'])} % en {_ans[-1]} : les comptes des caisses de sécurité sociale ne sont pas encore "
       "disponibles pour les dernières années, et leurs opérations y restent sans montant.")
 ```
 
