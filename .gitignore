@@ -11,6 +11,8 @@ wheels/
 
 # Artefacts pi (harnais)
 .pi/ghost-autocomplete/
+# Taches programmees : leurs prompts peuvent contenir de l'infra de sauvegarde (depot public).
+.pi/subagent-schedules/
 
 # Generated HTML / Quarto output
 _site/
