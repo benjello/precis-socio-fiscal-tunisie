@@ -1,54 +1,71 @@
-categorie,code,terme_retenu,variantes_a_eviter,ref_scn2008,terme_ins,divergence_scn_ins,note
-côté des comptes,,emplois,\| Côté \|,"§ 2.43, p. 20",,,"côté gauche des comptes courants ; « côté » seul n'est pas un terme du SCN, qui dit « côté des emplois » ou « côté gauche »"
-côté des comptes,,ressources,,"§ 2.43, p. 20",,,côté droit des comptes courants
-côté des comptes,,variations des actifs,,"§ 2.45, p. 20",,,côté gauche des comptes d'accumulation
-côté des comptes,,variations des passifs et de la valeur nette,,"§ 2.45, p. 20",,,côté droit des comptes d'accumulation
-secteur,S11,sociétés non financières,,"§ 4.28, p. 65",,,
-secteur,S12,sociétés financières,,"§ 4.29, p. 65",,terme différent,l'INS imprime « institutions financières » dans plusieurs tableaux
-secteur,S13,administrations publiques,,"§ 4.30, p. 65",,terme différent,l'INS imprime aussi « administration publique » au singulier
-secteur,S14,ménages,,"§ 4.32, p. 65",,,
-secteur,S2,reste du monde,,"§ 2.131, p. 31",,terme différent,l'INS imprime « opérations avec l'extérieur » et « extérieur »
-solde,B.1g,valeur ajoutée brute,,"§ 6.8, p. 95 ; § 7.21, p. 135",Valeur ajoutée brute,,
-solde,B.2g/B.3g,excédent d'exploitation ou revenu mixte,,"§ 7.9, p. 132",Revenu d'exploitation,terme différent,l'INS imprime « revenu d'exploitation »
-solde,B.5g,solde des revenus primaires,,,Solde des revenus primaires / Revenu ; Solde des revenus primaires / Revenu national,,
-solde,B.6g,revenu disponible brut,,"§ 8.20, p. 161",Revenu disponible brut,,
-solde,B.8g,épargne brute,,"§ 9.26, p. 187",Epargne brute,graphie,
-solde,B.9,capacité ou besoin de financement,,"§ 22.77, p. 457",Capacité ou besoin de financement,,
-opération,P.52,variations des stocks,,"§ 10.118, p. 212",Variation de stocks,terme différent,
-opération,D.44,revenus d'investissements attribués aux assurés,,"§ 7.141, p. 156",Revenus de la propriété attribués aux assurés,terme différent,l'INS imprime « revenus de la propriété attribués aux assurés »
-opération,P.1,production,,"§ 6.24, p. 97",Production ; Production de SIFIM ; Production de services d’assurances ; Production des biens et services ; Production des biens et services marchands,,
-opération,P.11,production marchande,,"§ 6.99, p. 107",Production Marchande ; Production marchande,,
-opération,P.13,production non marchande,,"§ 6.97, p. 106",Production des services non marchands ; Production non Marchande ; Production non marchande,,
-opération,P.2,consommation intermédiaire,,"§ 6.213, p. 120",Consommation intermédiaire,,
-opération,P.3,dépense de consommation finale (administrations publiques),,"§ 9.114, p. 196",Dépense de consommation finale,,
-opération,P.51g,formation brute de capital fixe,capitale fixe,"§ 10.64, p. 206",Formation Brute de capitale Fixe,graphie,
-opération,D.1,rémunération des salariés,,"§ 7.42, p. 140",Rémunération des salariés,,
-opération,D.11,salaires et traitements,,"§ 7.43, p. 140",Salaires bruts,terme différent,
-opération,D.12,cotisations sociales à la charge des employeurs,,"§ 7.56, p. 142",Cotis. sociales à la charge des employeurs,graphie,
-opération,D.2,impôts sur la production et les importations,,"§ 7.73, p. 143",Impôts sur la production et les importations,,
-opération,D.211,impôts du type TVA,,"§ 7.89, p. 145",TVA non déductible,terme différent,
-opération,D.212,droits et impôts sur les importations,,"§ 7.90, p. 146",Droits et impôts sur les importations (hors TVA),,
-opération,D.213,impôts sur les exportations,,"§ 7.95, p. 148",Impôts sur les Exportations,,
-opération,D.214,"impôts sur les produits, à l’exclusion de la TVA et des impôts sur les importations et les exportations",,"§ 7.96, p. 148",Autres impôts sur les produits,terme différent,
-opération,D.29,autres impôts sur la production,,"§ 7.97, p. 149",Autres Impôts sur la production,,
-opération,D.3,subventions,,"§ 7.98, p. 149",Subventions,,
-opération,D.31,subventions sur les produits,,"§ 7.100, p. 149",Subventions sur les produits,,
-opération,D.39,autres subventions sur la production,,"§ 7.106, p. 150",Subventions sur la production ; Subventions sur la production (-),terme différent,« subventions d'exploitation » est aussi un terme de la comptabilité des entreprises et des textes budgétaires : non relevé
-opération,D.4,revenus de la propriété,,"§ 7.107, p. 151",Revenus de la propriété,,
-opération,D.41,intérêts,,"§ 7.113, p. 151",Correction SIFIM ; Intérêts,,
-opération,D.42,revenus distribués des sociétés (dividendes),,"§ 7.128, p. 154",Revenus distribués par les entreprises,terme différent,
-opération,D.45,loyers,,"§ 7.109, p. 151",Loyers des terrains et gisements ; Loyers nets des terres et redevances,,
-opération,D.5,"impôts courants sur le revenu, le patrimoine, etc.",,"§ 8.15, p. 160",Impôts courants sur les revenus et le patri- ; Impôts courants sur les revenus et le patrimoine ; Impôts directs,terme différent,
-opération,D.61,cotisations sociales,,"§ 8.16, p. 160",Cotisations sociales,,
-opération,D.62,prestations sociales,,"§ 8.17, p. 161",Prestations sociales en espece,,
-opération,D.7,autres transferts courants,,"§ 8.19, p. 161",Autres transferts courants,,
-opération,D.71,primes nettes d’assurance dommages,,"§ 17.48, p. 359",Primes nettes d'assurance-dommages ; Primes nettes d’assurance-dommages,graphie,
-opération,D.72,indemnités d’assurance dommages,,"§ 8.118, p. 178",Indemnités D'Assurance-Dommage ; Indemnités d'assurance-dommages,graphie,
-opération,D.73,transferts courants entre administrations publiques,,"§ 8.126, p. 180",Transferts courants entre admini. publiques,graphie,
-opération,D.74,coopération internationale courante,,"§ 8.128, p. 180",Coopération internationale courante,,
-opération,D.75,transferts courants divers,,"§ 8.129, p. 180",Autres Transferts Courants Divers ; Autres transferts courants divers ; Transferts courants divers,,
-opération,D.9,transferts en capital,,"§ 10.19, p. 201",Transferts en capital ; Transferts en capital à payer,,
-opération,D.91,impôts en capital,,"§ 10.207, p. 222",Impôts sur le capital,terme différent,
-opération,D.92,aides à l’investissement,,"§ 10.208, p. 222",Aides à l'investissement à recevoir ; Subventions d'investissement,terme différent,
-opération,D.99,autres transferts en capital,,"§ 10.210, p. 222",Autres transferts en capital ; Autres transferts en capital à recevoir,,
-opération,NP,actifs non produits,,"§ 10.14, p. 200",Actifs non produits,,
+categorie,code,terme_retenu,variantes_a_eviter,ref_scn2008,terme_ins,divergence_scn_ins,note,nature_ecart,preuve,ref_mbp6,terme_bct,terme_bct_mbp5,correspondance_scn
+côté des comptes,,emplois,\| Côté \|,"§ 2.43, p. 20",,,"côté gauche des comptes courants ; « côté » seul n'est pas un terme du SCN, qui dit « côté des emplois » ou « côté gauche »",,,,,,
+côté des comptes,,ressources,,"§ 2.43, p. 20",,,côté droit des comptes courants,,,,,,
+côté des comptes,,variations des actifs,,"§ 2.45, p. 20",,,côté gauche des comptes d'accumulation,,,,,,
+côté des comptes,,variations des passifs et de la valeur nette,,"§ 2.45, p. 20",,,côté droit des comptes d'accumulation,,,,,,
+secteur,S11,sociétés non financières,,"§ 4.28, p. 65",,,,,,,,,
+secteur,S12,sociétés financières,,"§ 4.29, p. 65",,terme différent,l'INS imprime « institutions financières » dans plusieurs tableaux,,,,,,
+secteur,S13,administrations publiques,,"§ 4.30, p. 65",,terme différent,l'INS imprime aussi « administration publique » au singulier,,,,,,
+secteur,S14,ménages,,"§ 4.32, p. 65",,,,,,,,,
+secteur,S2,reste du monde,,"§ 2.131, p. 31",,terme différent,l'INS imprime « opérations avec l'extérieur » et « extérieur »,,,,,,
+solde,B.1g,valeur ajoutée brute,,"§ 6.8, p. 95 ; § 7.21, p. 135",Valeur ajoutée brute,,,,,,,,
+solde,B.2g/B.3g,excédent d'exploitation ou revenu mixte,,"§ 7.9, p. 132",Revenu d'exploitation,terme différent,l'INS imprime « revenu d'exploitation »,,,,,,
+solde,B.5g,solde des revenus primaires,,,Solde des revenus primaires / Revenu ; Solde des revenus primaires / Revenu national,,,,,,,,
+solde,B.6g,revenu disponible brut,,"§ 8.20, p. 161",Revenu disponible brut,,,,,,,,
+solde,B.8g,épargne brute,,"§ 9.26, p. 187",Epargne brute,graphie,,,,,,,
+solde,B.9,capacité ou besoin de financement,,"§ 22.77, p. 457",Capacité ou besoin de financement,,,,,,,,
+opération,P.52,variations des stocks,,"§ 10.118, p. 212",Variation de stocks,terme différent,,,,,,,
+opération,D.44,revenus d'investissements attribués aux assurés,,"§ 7.141, p. 156",Revenus de la propriété attribués aux assurés,terme différent,l'INS imprime « revenus de la propriété attribués aux assurés »,,,,,,
+opération,P.1,production,,"§ 6.24, p. 97",Production ; Production de SIFIM ; Production de services d’assurances ; Production des biens et services ; Production des biens et services marchands,,,,,,,,
+opération,P.11,production marchande,,"§ 6.99, p. 107",Production Marchande ; Production marchande,,,,,,,,
+opération,P.13,production non marchande,,"§ 6.97, p. 106",Production des services non marchands ; Production non Marchande ; Production non marchande,,,,,,,,
+opération,P.2,consommation intermédiaire,,"§ 6.213, p. 120",Consommation intermédiaire,,,,,,,,
+opération,P.3,dépense de consommation finale (administrations publiques),,"§ 9.114, p. 196",Dépense de consommation finale,,,,,,,,
+opération,P.51g,formation brute de capital fixe,capitale fixe,"§ 10.64, p. 206",Formation Brute de capitale Fixe,graphie,,,,,,,
+opération,D.1,rémunération des salariés,,"§ 7.42, p. 140",Rémunération des salariés,,,,,,,,
+opération,D.11,salaires et traitements,,"§ 7.43, p. 140",Salaires bruts,terme différent,,,,,,,
+opération,D.12,cotisations sociales à la charge des employeurs,,"§ 7.56, p. 142",Cotis. sociales à la charge des employeurs,graphie,,,,,,,
+opération,D.2,impôts sur la production et les importations,,"§ 7.73, p. 143",Impôts sur la production et les importations,,,,,,,,
+opération,D.211,impôts du type TVA,,"§ 7.89, p. 145",TVA non déductible,terme différent,,,,,,,
+opération,D.212,droits et impôts sur les importations,,"§ 7.90, p. 146",Droits et impôts sur les importations (hors TVA),,,,,,,,
+opération,D.213,impôts sur les exportations,,"§ 7.95, p. 148",Impôts sur les Exportations,,,,,,,,
+opération,D.214,"impôts sur les produits, à l’exclusion de la TVA et des impôts sur les importations et les exportations",,"§ 7.96, p. 148",Autres impôts sur les produits,terme différent,,,,,,,
+opération,D.29,autres impôts sur la production,,"§ 7.97, p. 149",Autres Impôts sur la production,,,,,,,,
+opération,D.3,subventions,,"§ 7.98, p. 149",Subventions,,,,,,,,
+opération,D.31,subventions sur les produits,,"§ 7.100, p. 149",Subventions sur les produits,,,,,,,,
+opération,D.39,autres subventions sur la production,,"§ 7.106, p. 150",Subventions sur la production ; Subventions sur la production (-),terme différent,« subventions d'exploitation » est aussi un terme de la comptabilité des entreprises et des textes budgétaires : non relevé,,,,,,
+opération,D.4,revenus de la propriété,,"§ 7.107, p. 151",Revenus de la propriété,,,,,,,,
+opération,D.41,intérêts,,"§ 7.113, p. 151",Correction SIFIM ; Intérêts,,,,,,,,
+opération,D.42,revenus distribués des sociétés (dividendes),,"§ 7.128, p. 154",Revenus distribués par les entreprises,terme différent,,,,,,,
+opération,D.45,loyers,,"§ 7.109, p. 151",Loyers des terrains et gisements ; Loyers nets des terres et redevances,,,,,,,,
+opération,D.5,"impôts courants sur le revenu, le patrimoine, etc.",,"§ 8.15, p. 160",Impôts courants sur les revenus et le patri- ; Impôts courants sur les revenus et le patrimoine ; Impôts directs,terme différent,,,,,,,
+opération,D.61,cotisations sociales,,"§ 8.16, p. 160",Cotisations sociales,,,,,,,,
+opération,D.62,prestations sociales,,"§ 8.17, p. 161",Prestations sociales en espece,,,,,,,,
+opération,D.7,autres transferts courants,,"§ 8.19, p. 161",Autres transferts courants,,,,,,,,
+opération,D.71,primes nettes d’assurance dommages,,"§ 17.48, p. 359",Primes nettes d'assurance-dommages ; Primes nettes d’assurance-dommages,graphie,,,,,,,
+opération,D.72,indemnités d’assurance dommages,,"§ 8.118, p. 178",Indemnités D'Assurance-Dommage ; Indemnités d'assurance-dommages,graphie,,,,,,,
+opération,D.73,transferts courants entre administrations publiques,,"§ 8.126, p. 180",Transferts courants entre admini. publiques,graphie,,,,,,,
+opération,D.74,coopération internationale courante,,"§ 8.128, p. 180",Coopération internationale courante,,,,,,,,
+opération,D.75,transferts courants divers,,"§ 8.129, p. 180",Autres Transferts Courants Divers ; Autres transferts courants divers ; Transferts courants divers,,,,,,,,
+opération,D.9,transferts en capital,,"§ 10.19, p. 201",Transferts en capital ; Transferts en capital à payer,,,,,,,,
+opération,D.91,impôts en capital,,"§ 10.207, p. 222",Impôts sur le capital,terme différent,,,,,,,
+opération,D.92,aides à l’investissement,,"§ 10.208, p. 222",Aides à l'investissement à recevoir ; Subventions d'investissement,terme différent,,,,,,,
+opération,D.99,autres transferts en capital,,"§ 10.210, p. 222",Autres transferts en capital ; Autres transferts en capital à recevoir,,,,,,,,
+opération,NP,actifs non produits,,"§ 10.14, p. 200",Actifs non produits,,,,,,,,
+balance des paiements,,compte des transactions courantes,,,,,,nom seul (BCT = MBP6),libellé identique au MBP6 ; MBP5 : présentation recettes-dépenses,"§ 2.14, p. 9",1. Compte des transactions courantes,A - Recettes courantes ; A - Dépenses courantes,comptes courants du reste du monde (S2)
+balance des paiements,,crédit,,,,,,présentation différente,"le MBP6 n'a pas de paragraphe de définition retrouvé ; la BCT imprime crédits et débits, l'INS emplois et ressources du reste du monde, vu de l'extérieur (fiche bct-balance-paiements de l'entrepôt)",,crédits,recettes,"S2 : emplois pour les exportations, ressources pour les importations"
+balance des paiements,,débit,,,,,,présentation différente,idem,,débits,dépenses,S2 : ressources pour les importations
+balance des paiements,,biens,,,,,,périmètre différent,"MBP6 : biens transformés pour le compte de tiers hors des biens (« services de fabrication ») ; l'INS les compte en brut dans P.61 et P.71 : passage établi par les montants du texte de la BCT (Balance des paiements 2023, p. 31)","§ 10.13, p. 164 (marchandises générales)",1.1.a. Biens,Exportations de marchandises (FOB) ; Importations de marchandises (FOB),P.61 ; P.71
+balance des paiements,,services,,,,,,périmètre différent,"la BCT compte en services la fabrication sur intrants de tiers et la redevance gaz (transports) ; l'INS ne les range pas en P.62 (passage établi, écart 2023 de −109,6 MD)","§ 10.8, p. 163",1.1.b. Services,Services,P.62 ; P.72
+balance des paiements,,services de fabrication fournis sur des intrants physiques détenus par des tiers,,,,,,périmètre différent,"rubrique propre au MBP6, sans équivalent dans les comptes de l'INS qui comptent les biens transformés en brut","§ 10.62, p. 175",Services de fabrication fournis sur des intrants physiques détenus par des tiers,,compris dans P.61 (en brut)
+balance des paiements,,revenu primaire,,,,,,nom seul (BCT = MBP6),libellé identique au MBP6,"§ 11.3, p. 199",1.2. Revenu primaire,,D.1 ; D.4
+balance des paiements,,rémunération des salariés,,,,,,non vérifiable,"même terme ; montants très différents de ceux de l'INS (crédits BdP 1 265,6 MD contre D.1 du reste du monde 230,9 en 2023) : écart non expliqué","§ 11.17, p. 202",Rémunération des salariés,,D.1
+balance des paiements,,revenus des investissements,,,,,,périmètre différent,"la BCT n'y range pas la redevance gaz (en services), que l'INS semble ranger en loyers (D.45)",,Revenus des investissements,,D.4 hors loyers
+balance des paiements,,revenu secondaire,,,,,,périmètre différent,le revenu secondaire du MBP6 réunit transferts courants et impôts courants : il couvre D.5 et D.7 des comptes,"§ 12.1, p. 223",1.3. Revenu secondaire,,D.5 ; D.7
+balance des paiements,,compte de capital,,,,,,nom seul (BCT = MBP6),"libellé identique au MBP6 ; BCT, éd. 2024, p. 43 et 45 du fichier","§ 13.1, p. 233",2. Compte de capital,,D.9 ; NP
+balance des paiements,,compte financier,,,,,,nom seul (BCT = MBP6),"libellé identique au MBP6 ; libellé imprimé dans le tableau de la balance des paiements, BCT, éd. 2024, p. 44 et 46 du fichier","§ 8.1, p. 144",3. Compte financier,,F.1 à F.8 (TOF)
+balance des paiements,,investissements directs,,,,,,classement différent,"le MBP6 classe par catégorie fonctionnelle, le TOF de l'INS par instrument ; libellé imprimé dans le tableau de la balance des paiements, BCT, éd. 2024, p. 44 et 46 du fichier","§ 6.8, p. 108",Investissements directs,Investissements directs,F.5 et F.4 (par instrument dans le TOF)
+balance des paiements,,investissements de portefeuille,,,,,,classement différent,"idem ; libellé imprimé dans le tableau de la balance des paiements, BCT, éd. 2024, p. 44 et 46 du fichier","§ 6.54, p. 118",Investissements de portefeuille,Investissements de portefeuille,F.3 ; F.5
+balance des paiements,,autres investissements,,,,,,classement différent,"idem ; libellé imprimé dans le tableau de la balance des paiements, BCT, éd. 2024, p. 44 et 46 du fichier","§ 6.63, p. 120 (ventilation)",Autres investissements,Autres investissements,F.2 ; F.4 ; F.8
+balance des paiements,,avoirs de réserve,,,,,,classement différent,"idem ; libellé imprimé dans le tableau de la balance des paiements, BCT, éd. 2024, p. 44 et 46 du fichier","§ 6.64, p. 120",Avoirs de réserve,,F.1 et avoirs de la BCT
+balance des paiements,,erreurs et omissions nettes,,,,,,non vérifiable,libellé MBP6 non trouvé dans l'édition 2024 de la BCT (recherche du libellé sur tout le texte) ; le MBP5 imprime « C - Opérations d'ajustement (flux nets) » (éd. 2021),"§ 2.24, p. 11",,Opérations d'ajustement (flux nets),écart statistique
