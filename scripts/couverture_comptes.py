@@ -16,7 +16,7 @@ from collections import defaultdict
 
 # secteur publié → secteurs du cache et du registre des postes
 SECTEURS = {
-    "S13": ("apu", ("apu_centrale", "apu_locale", "apu_secu")),
+    "S13-consolide": ("apu", ("apu_centrale", "apu_locale", "apu_secu")),
     "S1311": ("apu_centrale", ("apu_centrale",)),
     "S1313": ("apu_locale", ("apu_locale",)),
     "S1314": ("apu_secu", ("apu_secu",)),
@@ -60,8 +60,8 @@ def postes_du_secteur(postes: list[dict], membres: tuple[str, ...]) -> dict:
         for role, champ in (("verse", "secteur_verse"), ("recoit", "secteur_recoit")):
             secs = [s for s in p[champ].split(";") if s]
             if any(s in membres for s in secs):
+                # un poste versé et reçu à l'intérieur du secteur y figure des deux côtés
                 out[p["operation"]].append((role, m, all(s in membres for s in secs)))
-                break  # un poste n'est rattaché au secteur qu'une fois
     return out
 
 
@@ -99,4 +99,22 @@ def indicateurs(ops: list[dict], rattaches: dict) -> dict:
             "ins_total_md": round(total, 1), "ins_couvert_md": round(couvert, 1),
             "part_couverte_pct": round(100 * couvert / total, 1) if total else "",
             "operations_justesse": n_justesse,
+            "postes_justesse_md": round(j_postes, 1), "ins_justesse_md": round(j_ins, 1),
             "justesse_pct": round(100 * j_postes / j_ins, 1) if j_ins else ""}
+
+
+# S13 publié = somme des trois sous-secteurs, non consolidée : dans le compte consolidé, une opération
+# (la consommation finale) passe pour chiffrée dès qu'un sous-secteur l'est, même si les autres ne le sont pas.
+SOUS_SECTEURS_S13 = ("S1311", "S1313", "S1314")
+
+
+def agreger(resultats: list[dict]) -> dict:
+    """Indicateurs d'un ensemble de secteurs, par somme des numérateurs et des dénominateurs."""
+    t = {k: sum(float(r[k]) for r in resultats) for k in ("ins_total_md", "ins_couvert_md", "postes_justesse_md", "ins_justesse_md")}
+    n = {k: sum(int(r[k]) for r in resultats) for k in ("operations", "operations_chiffrees", "operations_justesse")}
+    return {"operations": n["operations"], "operations_chiffrees": n["operations_chiffrees"],
+            "ins_total_md": round(t["ins_total_md"], 1), "ins_couvert_md": round(t["ins_couvert_md"], 1),
+            "part_couverte_pct": round(100 * t["ins_couvert_md"] / t["ins_total_md"], 1) if t["ins_total_md"] else "",
+            "operations_justesse": n["operations_justesse"],
+            "postes_justesse_md": round(t["postes_justesse_md"], 1), "ins_justesse_md": round(t["ins_justesse_md"], 1),
+            "justesse_pct": round(100 * t["postes_justesse_md"] / t["ins_justesse_md"], 1) if t["ins_justesse_md"] else ""}

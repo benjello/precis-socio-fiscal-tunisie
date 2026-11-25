@@ -83,6 +83,8 @@ for _ind, _n, _titre, _id in (
     print(f"\n: {_titre} {{#{_id}}}\n")
 ```
 
+Les administrations publiques (APU) sont mesurées comme la somme de leurs trois sous-secteurs, sans consolidation : dans le compte consolidé, la consommation finale passerait pour chiffrée dès que les soins de l'assurance maladie le sont, alors que la consommation de l'État ne l'est pas. La justesse des ménages dépasse 100 % : l'impôt sur le revenu encaissé par l'État est supérieur, chaque année, aux impôts courants que l'INS inscrit chez les ménages.
+
 ```{python}
 #| echo: false
 #| output: asis

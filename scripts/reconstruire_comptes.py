@@ -225,11 +225,14 @@ def main(argv=None) -> int:
         ed_y = edition_pour(secteurs, y)
         postes_y, _, _, _, _ = calculer(y, ed_y, secteurs, snapshot)
         lig_y = [l for l in secteurs if l["edition"] == ed_y and int(l["annee"]) == y and str(l.get("base", "2015")) == "2015"]
+        par_secteur = {}
         for code, (sec, membres) in cc.SECTEURS.items():
             ops = cc.feuilles([l for l in lig_y if l["secteur"] == sec])
             if ops:
-                annees.append({"annee": y, "edition": ed_y, "secteur": code,
-                               **cc.indicateurs(ops, cc.postes_du_secteur(postes_y, membres))})
+                par_secteur[code] = cc.indicateurs(ops, cc.postes_du_secteur(postes_y, membres))
+        par_secteur["S13"] = cc.agreger([par_secteur[s] for s in cc.SOUS_SECTEURS_S13])
+        for code in ["S13", "S13-consolide"] + [c for c in par_secteur if c not in ("S13", "S13-consolide")]:
+            annees.append({"annee": y, "edition": ed_y, "secteur": code, **par_secteur[code]})
     if a.verifier:
         if [dict(x) for x in lire_csv(ANNEES)] != [{k: str(v) for k, v in l.items()} for l in annees]:
             erreurs.append(f"{ANNEES.name} n'est pas à jour : relancer scripts/reconstruire_comptes.py")
