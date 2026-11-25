@@ -7,8 +7,8 @@
 - **Justesse** : somme des postes rapportée au montant INS, sur les seules opérations chiffrées dont
   tous les postes sont propres au secteur (un poste qui chiffre l'opération pour plusieurs secteurs,
   comme la TVA versée par les ménages et les sociétés, ne peut pas être rapproché du montant d'un seul)
-  et couvrent toute leur contrepartie (`contrepartie_couverte`) : la masse salariale de l'État, reçue par
-  les ménages, ne chiffre qu'un de leurs employeurs et n'entre pas dans la justesse du D.1 des ménages.
+  et couvrent leur contrepartie, à SEUIL_CONTREPARTIE près (`contrepartie_couverte`) : la masse salariale de
+  l'État, reçue par les ménages, ne chiffre qu'un de leurs employeurs et n'entre pas dans la justesse du D.1.
 
 - **Part du montant couverte** (indicateur principal) : somme, sur les opérations, des postes propres au
   secteur (valeur absolue) plafonnée au montant INS de l'opération, rapportée au total du compte. Un poste
@@ -153,48 +153,56 @@ def montants_ins(lignes: list[dict]) -> dict:
     return out
 
 
-def contrepartie_ins(l: dict, secteur: str, ins: dict) -> set:
-    """Secteurs (niveau du registre) qui ont, selon l'INS, un montant non nul à l'autre bout de l'opération de
-    la ligne `l` du secteur `secteur` : de l'autre côté (emplois face à ressources), sauf pour les subventions,
-    que payeur et receveur inscrivent en ressources (du même côté, le secteur lui-même exclu). Une opération
-    imprimée à une autre finesse de l'autre côté (D.11 face à D.1) compte par le préfixe du code. Un
-    sous-secteur des administrations absent du cache, quand le compte consolidé porte un montant, est compté
-    comme contrepartie : son montant n'est pas connu, il n'est pas présumé nul."""
+# Convention de l'ouvrage, sans source normative : une opération entre dans la justesse si les contreparties que
+# ses postes ne couvrent pas pèsent au plus cette fraction du montant de l'INS de l'opération (secteur et côté
+# considérés). Elle laisse entrer le D.5 des ménages (impôts courants reçus par les collectivités locales,
+# environ 2 % du D.5 versé par les ménages en 2019), non le D.1 des ménages, chiffré par les seules
+# rémunérations des administrations et du reste du monde (48 % de contreparties non couvertes en 2019 :
+# sociétés et sécurité sociale).
+SEUIL_CONTREPARTIE = 0.05
+
+
+def contrepartie_ins(l: dict, secteur: str, ins: dict) -> dict:
+    """{secteur : montant} des secteurs (niveau du registre) qui ont, selon l'INS, un montant non nul à l'autre
+    bout de l'opération de la ligne `l` du secteur `secteur` : de l'autre côté (emplois face à ressources), sauf
+    pour les subventions, que payeur et receveur inscrivent en ressources (même côté). Le code même ; à défaut,
+    chez un secteur qui ne l'imprime pas, ses composantes (D.11 pour D.1) ; jamais un agrégat (D.4 pour D.45),
+    dont le montant ne dit pas celui de la composante. Le secteur n'est jamais sa propre contrepartie (le compte
+    consolidé des administrations : aucun de ses sous-secteurs). Un sous-secteur des administrations absent du
+    cache, quand le compte consolidé porte un montant, est compté comme contrepartie pour ce montant consolidé
+    (borne haute : le sien n'est pas connu, il n'est pas présumé nul)."""
     meme = l["operation"] in VERSEES_EN_RESSOURCES
     cote = l["cote"] if meme else ("ressources" if l["cote"] == "emplois" else "emplois")
     code = l["code_scn2008"]
     secs = defaultdict(float)
     exact = {s for (c_cote, c), m in ins.items() if c_cote == cote and c == code for s in m}
     for (c_cote, c), montants in ins.items():
-        # le code même ; à défaut, chez un secteur qui ne l'imprime pas, ses composantes (D.11 pour D.1) ;
-        # jamais un agrégat (D.4 pour D.45), dont le montant ne dit pas celui de la composante
         if c_cote == cote and (c == code or c.startswith(code)):
             for s, v in montants.items():
                 if c == code or s not in exact:
                     secs[s] += v
-    out = {s for s, v in secs.items() if v > ARRONDI and s != "apu"}
+    out = {s: v for s, v in secs.items() if v > ARRONDI and s != "apu"}
     presents = {s for (c_cote, _), m in ins.items() for s in m}
     if secs.get("apu", 0) > ARRONDI:
-        out |= {s for s in SOUS_APU if s not in presents}
-    if meme:
-        out -= set(SOUS_APU) if secteur == "apu" else {secteur}
-    # le compte du reste du monde n'enregistre que ses opérations avec les résidents : il n'est pas sa propre contrepartie
-    if secteur == "rdm":
-        out.discard("rdm")
+        out.update({s: secs["apu"] for s in SOUS_APU if s not in presents})
+    for x in (SOUS_APU if secteur == "apu" else (secteur,)):
+        out.pop(x, None)
     return out
 
 
 def contrepartie_couverte(l: dict, rattaches: dict, secteur: str, ins: dict | None) -> bool:
-    """Les postes chiffrés de la ligne couvrent toute sa contrepartie selon l'INS (`contrepartie_ins`). Un
-    poste dont le registre ne nomme pas de contrepartie (champ vide : FBCF, consommation finale, échanges
-    extérieurs) chiffre toute l'opération : la ligne reste régie par la seule règle des postes propres.
-    Sans `ins`, la condition n'est pas examinée."""
+    """Les contreparties de la ligne (`contrepartie_ins`) que ses postes chiffrés ne couvrent pas pèsent au plus
+    SEUIL_CONTREPARTIE du montant de l'INS de la ligne. Un poste dont le registre ne nomme pas de contrepartie
+    (champ vide : FBCF, consommation finale, échanges extérieurs) chiffre toute l'opération : la ligne reste
+    régie par la seule règle des postes propres. Sans `ins`, la condition n'est pas examinée."""
     if ins is None:
         return True
     cps = [cp for m, _, cp in postes_de_la_ligne_cp(l, rattaches) if m is not None]
     if not cps or any(not cp for cp in cps):
         return True
-    return contrepartie_ins(l, secteur, ins) <= set().union(*map(set, cps))
+    couverts = set().union(*map(set, cps))
+    reste = sum(v for s, v in contrepartie_ins(l, secteur, ins).items() if s not in couverts)
+    return reste <= SEUIL_CONTREPARTIE * abs(float(l["valeur"])) + 1e-9
 
 
 # L'INS inscrit les subventions versées par les administrations en ressources négatives du payeur.

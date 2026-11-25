@@ -326,9 +326,34 @@ def test_justesse_exige_toute_la_contrepartie():
     assert r["operations_chiffrees"] == 1 and r["montant_couvert_md"] == 380.0
     assert r["operations_justesse"] == 0 and r["justesse_pct"] == ""
     assert cc.indicateurs(ops, cc.postes_du_secteur(etat, ("menages",)))["operations_justesse"] == 1  # sans `ins`
-    tous = [poste("remuneration_salaries", "emplois", "apu_centrale;snf;menages", "menages", 950)]
+    tous = [poste("remuneration_salaries", "emplois", "apu_centrale;snf", "menages", 950)]
     r = cc.indicateurs(ops, cc.postes_du_secteur(tous, ("menages",)), "menages", ins)
     assert r["operations_justesse"] == 1 and r["justesse_pct"] == 95.0
+
+
+def test_secteur_exclu_de_ses_contreparties():
+    """Les ménages, employeurs des ménages (100 MD de D.1 en emplois), ne sont pas leur propre contrepartie."""
+    ops, ins = _ins_d1()
+    assert cc.contrepartie_ins(ops[0], "menages", ins) == {"apu_centrale": 400.0, "snf": 500.0}
+    assert set(cc.contrepartie_ins(dict(ops[0], secteur="rdm"), "rdm", ins)) == {"apu_centrale", "snf", "menages"}
+
+
+def _ins_d5(non_couvert):
+    """D.5 versé par les ménages (1000), reçu par l'État et, pour `non_couvert`, par les collectivités locales."""
+    lig = [dict(ligne("emplois", "impots_courants", 1000, "D.5"), secteur="menages"),
+           dict(ligne("ressources", "impots_courants", 1000 - non_couvert, "D.5"), secteur="apu_centrale"),
+           dict(ligne("ressources", "impots_courants", non_couvert, "D.5"), secteur="apu_locale")]
+    return lig[:1], cc.montants_ins(lig)
+
+
+def test_seuil_de_contrepartie_non_couverte():
+    """Convention de l'ouvrage : 1 % de contrepartie non couverte, l'opération entre dans la justesse ; 61 %, non."""
+    irpp = [poste("impots_courants", "ressources", "menages", "apu_centrale", 990)]
+    assert cc.SEUIL_CONTREPARTIE == 0.05
+    for non_couvert, attendu in ((10, 1), (610, 0)):
+        ops, ins = _ins_d5(non_couvert)
+        r = cc.indicateurs(ops, cc.postes_du_secteur(irpp, ("menages",)), "menages", ins)
+        assert r["operations_chiffrees"] == 1 and r["operations_justesse"] == attendu, non_couvert
 
 
 def test_justesse_poste_sans_contrepartie_nommee():

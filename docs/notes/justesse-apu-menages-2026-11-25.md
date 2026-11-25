@@ -34,4 +34,5 @@ Sources : ministère des Finances, série des recettes fiscales (`recettes_fisca
 Aucune correction de la mesure : le poste IRPP reste rattaché aux ménages, et la justesse le montre.
 
 **25/11/2026, soir.** Depuis 9fcc6c54, le D.1 reçu par les ménages, chiffré par la seule masse salariale de l'État, était entré dans la justesse (38 à 58 %). Règle nouvelle (PR #916) : une opération n'entre dans la justesse que si les postes couvrent tous les secteurs que l'INS inscrit, avec un montant non nul, à l'autre bout de l'opération.
-Avec cette règle, aucune opération des ménages n'entre plus dans la justesse. En 2019, le D.5 en sort parce que l'INS inscrit 110,1 MD d'impôts courants reçus par les collectivités locales, qu'aucun poste ne chiffre.
+Appliquée strictement, la règle ne laissait aucune opération des ménages dans la justesse : en 2019, le D.5 en sortait pour 110,1 MD d'impôts courants reçus par les collectivités locales, qu'aucun poste ne chiffre.
+Ajustement retenu : le secteur n'est jamais sa propre contrepartie, et une opération entre dans la justesse si ses contreparties non couvertes pèsent au plus 5 % de son montant (`SEUIL_CONTREPARTIE`, convention de l'ouvrage, sans source normative). Le D.5 des ménages y entre (1,2 à 2,1 % non couverts de 2015 à 2023 ; justesse de 128,6 % en 2015 à 171,4 % en 2019). Le D.1 n'y entre pas (48 à 54 % non couverts).
