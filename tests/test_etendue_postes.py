@@ -38,18 +38,21 @@ def test_etendue_conforme_aux_series():
 def test_annees_base2015_du_cache():
     secteurs = [l for l in rc.lire_csv(rc.CACHE / "cnat-secteurs.csv") if l["base"] == "2015"]
     ans = rc.annees_base2015(secteurs)
-    assert sorted({int(l["annee"]) for l in lire("compte-couverture-annees.csv")}) == ans
+    assert sorted({int(l["annee"]) for l in lire("compte-couverture-annees.csv") if l["base"] == "2015"}) == ans
     for y in ans:  # l'édition retenue porte un compte complet, non une ligne isolée
         ed = rc.edition_pour(secteurs, y)
         assert sum(1 for l in secteurs if l["edition"] == ed and int(l["annee"]) == y) > 500, y
 
 
-def test_pas_de_part_du_montant_avant_la_base_2015():
-    debut = min(int(l["annee"]) for l in lire("compte-couverture-annees.csv"))
+def test_pas_de_part_du_montant_avant_la_base_1997():
+    cv = lire("compte-couverture-annees.csv")
+    debut = min(int(l["annee"]) for l in cv)
     pa = lire("compte-couverture-postes-annees.csv")
     assert "part_montant_couverte_pct" not in pa[0]
     assert min(int(l["annee"]) for l in pa) < debut
-    assert all(int(l["annee"]) >= debut for l in lire("compte-couverture-annees.csv"))
+    assert {l["base"] for l in cv} == {"1997", "2015"}
+    # chaque année dans une seule base : la base 1997 s'arrête avant la première année de la base 2015
+    assert max(int(l["annee"]) for l in cv if l["base"] == "1997") < min(int(l["annee"]) for l in cv if l["base"] == "2015")
 
 
 def test_debut_aux_comptes_des_caisses():
