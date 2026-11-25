@@ -227,9 +227,10 @@ def main(argv=None) -> int:
         lig_y = [l for l in secteurs if l["edition"] == ed_y and int(l["annee"]) == y and str(l.get("base", "2015")) == "2015"]
         par_secteur = {}
         for code, (sec, membres) in cc.SECTEURS.items():
-            ops = cc.feuilles([l for l in lig_y if l["secteur"] == sec])
+            ratt = cc.postes_du_secteur(postes_y, membres)
+            ops = cc.feuilles([l for l in lig_y if l["secteur"] == sec], garder=set(ratt))
             if ops:
-                par_secteur[code] = cc.indicateurs(ops, cc.postes_du_secteur(postes_y, membres))
+                par_secteur[code] = cc.indicateurs(ops, ratt)
         par_secteur["S13"] = cc.agreger([par_secteur[s] for s in cc.SOUS_SECTEURS_S13])
         for code in ["S13", "S13-consolide"] + [c for c in par_secteur if c not in ("S13", "S13-consolide")]:
             annees.append({"annee": y, "edition": ed_y, "secteur": code, **par_secteur[code]})

@@ -27,9 +27,12 @@ SECTEURS = {
 }
 
 
-def feuilles(lignes: list[dict]) -> list[dict]:
+def feuilles(lignes: list[dict], garder: set | None = None) -> list[dict]:
     """Opérations d'un secteur sans les soldes (B.), le compte financier (F.) ni les agrégats dont une
-    composante est imprimée (D.1 quand D.11 l'est ; la production quand la production non marchande l'est)."""
+    composante est imprimée (D.1 quand D.11 l'est ; la production quand la production non marchande l'est).
+    Exception : un agrégat qui porte un poste de l'ouvrage (`garder`) alors qu'aucune de ses composantes
+    n'en porte est gardé, et ses composantes écartées (la masse salariale du budget chiffre D.1, pas D.11)."""
+    garder = garder or set()
     ls = [l for l in lignes if l["code_scn2008"] and not l["code_scn2008"].startswith(("B.", "F."))
           and str(l["sous_ligne"]) in ("0", "1")]
     out = []
@@ -37,10 +40,15 @@ def feuilles(lignes: list[dict]) -> list[dict]:
         g = [l for l in ls if l["cote"] == cote]
         codes = {l["code_scn2008"] for l in g}
         ops = {l["operation"] for l in g}
+        desc = lambda c: [x for x in g if x["code_scn2008"] != c and x["code_scn2008"].startswith(c)]
+        parents = {l["code_scn2008"] for l in g if l["operation"] in garder and desc(l["code_scn2008"])
+                   and not any(x["operation"] in garder for x in desc(l["code_scn2008"]))}
         vus = set()
         for l in g:
             c = l["code_scn2008"]
-            if any(x != c and x.startswith(c) for x in codes):
+            if any(p != c and c.startswith(p) for p in parents):
+                continue
+            if c not in parents and any(x != c and x.startswith(c) for x in codes):
                 continue
             if l["operation"] == "production" and "production_non_marchande" in ops:
                 continue
