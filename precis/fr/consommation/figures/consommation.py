@@ -138,3 +138,34 @@ def table_menages():
     return pd.DataFrame([{"Année": a, "Ménages (MD)": v[0], "Administrations publiques (MD)": v[1],
                           "Somme": round(v[0] + v[1], 1), "Total du tableau par produit (MD)": v[2]}
                          for a, v in sorted(m.items())])
+
+
+def table_transferts_nature(annees=range(2015, 2024)) -> str:
+    """Tableau markdown : transferts sociaux en nature (D.63, D.631, D.632) versés par les administrations
+    publiques, dépense de consommation finale des ménages (P.3) et consommation finale effective (P.3 + D.63
+    reçus), base 2015, édition la plus récente qui imprime l'année."""
+    d = figtools.series("cnat-d63")
+    d = d[d["base"].astype(str) == "2015"].sort_values("edition")
+    s = figtools.series("cnat-secteurs")
+    s = s[(s["base"].astype(str) == "2015") & (s["secteur"] == "menages") & (s["operation"] == "consommation_finale")
+          & (s["cote"] == "emplois")].sort_values("edition")
+    def v(df, an, **f):
+        x = df[df["annee"].astype(int) == an]
+        for k, val in f.items():
+            x = x[x[k].fillna("").astype(str) == val]
+        return float(x["valeur"].iloc[-1] if "valeur" in x else x["valeur_md"].iloc[-1]) if len(x) else None
+    fr = lambda x: "" if x is None else f"{x:,.1f}".replace(",", " ").replace(".", ",")
+    ans = list(annees)
+    lignes = {
+        "Transferts sociaux en nature reçus par les ménages (D.63)": [v(d, a, operation="transferts_sociaux_nature", cote="ressources") for a in ans],
+        "— prestations sociales en nature versées par les administrations (D.631)": [v(d, a, operation="prestations_sociales_nature", cote="emplois", contrepartie="apu") for a in ans],
+        "— biens et services individuels non marchands des administrations (D.632)": [v(d, a, operation="transferts_bs_individuels_non_marchands", cote="emplois", contrepartie="apu") for a in ans],
+        "Dépense de consommation finale des ménages (P.3)": [v(s, a) for a in ans],
+    }
+    p3, d63 = lignes["Dépense de consommation finale des ménages (P.3)"], lignes["Transferts sociaux en nature reçus par les ménages (D.63)"]
+    lignes["Consommation finale effective des ménages (P.3 + D.63)"] = [None if a is None or b is None else a + b for a, b in zip(p3, d63)]
+    out = ["| Millions de dinars | " + " | ".join(str(a) for a in ans) + " |", "|---|" + "--:|" * len(ans)]
+    for lib, vals in lignes.items():
+        lib = f"**{lib}**" if lib.startswith("Consommation finale effective") else lib
+        out.append(f"| {lib} | " + " | ".join(fr(x) for x in vals) + " |")
+    return "\n".join(out)

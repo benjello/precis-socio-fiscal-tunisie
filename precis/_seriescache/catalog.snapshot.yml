@@ -7836,3 +7836,53 @@
     الإيرادات الفنية للصندوق الوطني للضمان الاجتماعي تساوي المساهمات التي ينشرها الصندوق.
     لا سطر للجرايات: الأعباء مجموع. الفوارق المطبوعة مذكورة دون تصحيح.'
   fiche: sources/minfin-ep-caisses.md
+- id: minfin-recettes-non-fiscales
+  titre: 'Recettes non fiscales de l''État par rubrique : revenus pétroliers, redevance
+    gazoduc, revenus des participations, dons extérieurs, privatisation, recouvrement
+    de principal, autres, 1986-2025'
+  sources:
+  - minfin-recettes-non-fiscales-xls
+  build: scripts/extraire_minfin_recettes_non_fiscales.py
+  raw:
+  - data/raw/minfinances/recettes_non_fiscales.xls
+  output: data/processed/minfinances/recettes_non_fiscales.csv
+  unite: millions de dinars courants
+  perimetre: ministère des Finances, série des recettes non fiscales (feuille « Rec
+    nn fis », présentation de la loi organique du budget n° 2004-42), réalisations
+    ; une ligne par (année, rubrique) ; colonnes de loi de finances écartées
+  caveats: 'Les dons extérieurs et la privatisation sont dans les recettes non fiscales
+    de cette présentation. La redevance gazoduc égale le D.45 (loyers) reçu par l''administration
+    centrale dans les comptes de la nation sept années sur neuf de 2015 à 2023 (écarts
+    : 19,3 en 2018, −256,7 en 2022). Contrôle : total = somme des rubriques chaque
+    année.'
+  titre_ar: المداخيل غير الجبائية للدولة حسب الصنف، 1986-2025
+  unite_ar: ملايين الدنانير الجارية
+  perimetre_ar: سلسلة وزارة المالية للمداخيل غير الجبائية حسب تقديم القانون الأساسي
+    للميزانية لسنة 2004، الإنجازات
+  caveats_ar: الهبات الخارجية والتفويت ضمن المداخيل غير الجبائية في هذا التقديم.
+  fiche: sources/minfinances-indicateurs.md
+- id: cnat-tee
+  titre: 'Tableau économique d''ensemble (TEE) des Comptes de la nation : opérations
+    par secteur institutionnel, reste du monde et compte des biens et services, éditions
+    2011-2015 à 2021-2025'
+  sources:
+  - ins-cnat-2015
+  build: scripts/extraire_cnat_tee.py:main
+  raw:
+  - data/raw/ins-publications/comptes-de-la-nation
+  output: data/processed/ins-comptes-nationaux/cnat_tee.csv
+  unite: millions de dinars courants
+  perimetre: Une ligne par (édition, année, côté, libellé, colonne), colonnes S11,
+    S12, S13, S14, S1 (économie totale), S2 (reste du monde), biens et services, TOTAL
+    ; position de chaque valeur sur la page ; opération rattachée par le dictionnaire
+    des opérations (vide si aucune). Seul tableau publié qui donne le compte de redistribution
+    du revenu en nature (D.63) et le revenu disponible ajusté (B.7g) par secteur.
+  caveats: 9 éditions, 14 097 valeurs ; 4 920 contrôles sur 4 949 (économie = secteurs,
+    total = économie + extérieur + biens et services) ; 5 064 valeurs égales aux comptes
+    des secteurs, 233 différentes, listées dans cnat_tee_recoupement.csv.
+  fiche: sources/ins-comptes-nationaux-publications.md
+  licences:
+  - 'INS (sources ins-*) : conditions d''utilisation de l''INS, https://ins.tn/en/conditions-utilisation
+    (consultées le 2026-10-27) : réutilisation commerciale et non commerciale, redistribution
+    et transformation autorisées ; citer le producteur et la date de mise à jour,
+    ne pas suggérer une caution officielle ni tromper sur le contenu ; droit tunisien'
