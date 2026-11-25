@@ -235,19 +235,19 @@ Les cotisations encaissées que publie la CNSS s'arrêtent en 2020 (livre des co
 
 ```{python}
 #| echo: false
-#| output: asis
 import sys; sys.path.insert(0, "../../../scripts")
 import passage_comptes as pc
-_p = [(a, pc.montant("cotisations-cnss-2021-2023", a), pc.montant("cotisations-cnrps-2021-2023", a),
-       pc.montant("cotisations-cnam", a), pc.cible("apu_secu", "ressources", "D.61", "cotisations_sociales", a)[0])
-      for a in range(2021, 2024)]
-_r = [100 * (s - i) / i for a, *v, i in _p if None not in v and i for s in [sum(v)]]
-print("Les comptes de la nation ne publient pas les cotisations caisse par caisse. La somme des recettes de la "
-      "CNSS, de la CNRPS et de la CNAM est rapprochée, année par année, des cotisations sociales (D.61) reçues par "
-      "la sécurité sociale dans le livre des cotisations sociales "
-      "([Des recettes de la caisse au chiffre des comptes](../cotisations_sociales/_pensions.html#sec-cot-pensions-passage)) : "
-      f"de 2021 à 2023, elle les dépasse de {pc.pct(min(_r))} à {pc.pct(max(_r))}.\n")
+_d = {}
+for _a in pc.annees():
+    _v = [pc.montant(p, _a) for p in ("cotisations-cnss-2021-2023", "cotisations-cnrps-2021-2023", "cotisations-cnam")]
+    _i = pc.cible("apu_secu", "ressources", "D.61", "cotisations_sociales", _a)[0]
+    if None not in _v and _i:
+        _d[_a] = {"ecart": 100 * sum(_v) / _i - 100}
+_e = pc.extremes(_d, "ecart")
+cnss_ecart_min, cnss_ecart_max, cnss_an_1, cnss_an_2 = _e["min"], _e["max"], _e["premier"], _e["dernier"]
 ```
+
+Les comptes de la nation ne publient pas les cotisations caisse par caisse. La somme des recettes de la CNSS, de la CNRPS et de la CNAM est rapprochée, année par année, des cotisations sociales (D.61) reçues par la sécurité sociale dans le livre des cotisations sociales ([Des recettes de la caisse au chiffre des comptes](../cotisations_sociales/_pensions.html#sec-cot-pensions-passage)) : de `{python} cnss_an_1` à `{python} cnss_an_2`, elle les dépasse de `{python} cnss_ecart_min` à `{python} cnss_ecart_max`.
 
 ## L'ensemble des organismes de sécurité sociale, 2001-2025 {#sec-caisses-s1314}
 

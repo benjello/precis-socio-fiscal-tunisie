@@ -80,21 +80,17 @@ _P = [("exportations-biens", "Exportation de biens (P.61), produits transformés
       ("remunerations-versees-au-rdm", "Rémunération des salariés (D.1) versée aux non-résidents")]
 _L = {p: {l["annee"]: l for l in pc.lignes(p)} for p, _ in _P}
 _ans = sorted(set().union(*_L.values()))
-_nd = sorted({(a, l["edition"], l["statut"]) for d in _L.values() for a, l in d.items() if l["statut"] != "definitif"})
-print("| Millions de dinars | " + " | ".join(map(str, _ans)) + " |")
-print("|---|" + "--:|" * len(_ans))
+_F = (("Balance des paiements", lambda l: pc.fr(l["montant"])), ("Comptes nationaux", lambda l: pc.fr(l["ins"])),
+      ("Balance / comptes", lambda l: pc.pct(l["part"])))
+_lignes = []
 for p, nom in _P:
-    print(f"| **{nom}** |" + " |" * len(_ans))
-    for lib, f in (("Balance des paiements", lambda l: pc.fr(l["montant"])), ("Comptes nationaux", lambda l: pc.fr(l["ins"])),
-                   ("Balance / comptes", lambda l: pc.pct(l["part"]))):
-        print(f"| {lib} | " + " | ".join(f(_L[p][a]) if a in _L[p] else "" for a in _ans) + " |")
-_ST = {"semi_definitif": "semi-définitive", "provisoire": "provisoire"}
-_st = "".join(f" ; {a} : {_ST.get(st, st)} dans l'édition {ed}" for a, ed, st in _nd)
-_eds = sorted({l["edition_bdp"] for l in pc.rc.lire_csv(pc.rc.CACHE / "bct-bdp-postes-s2.csv")})
-print("\n: Passage de la balance des paiements aux opérations du compte du reste du monde (S2), "
-      f"{_ans[0]}-{_ans[-1]}, en millions de dinars courants ; balance des paiements : rapports de {_eds[0]} à "
-      f"{_eds[-1]} ; comptes nationaux : dernière édition où l'année est définitive" + _st
-      + " {#tbl-echanges-passage}\n")
+    _lignes.append(["**" + nom + "**"] + [""] * len(_ans))
+    for lib, f in _F:
+        _lignes.append([lib] + [f(_L[p][a]) if a in _L[p] else "" for a in _ans])
+print(pc.table(["Millions de dinars"] + [str(a) for a in _ans], _lignes))
+print("\n: Passage de la balance des paiements aux opérations du compte du reste du monde (S2), en millions de "
+      "dinars courants ; balance des paiements : édition retenue pour chaque année ; comptes nationaux : dernière "
+      "édition où l'année est définitive, sinon la dernière qui la publie {#tbl-echanges-passage}\n")
 ```
 
 Sources : balance des paiements, tableaux de la balance et texte du rapport [@bct-bdp-2022 ; @bct-bdp-2023 ; @bct-bdp-2024] ; comptes du reste du monde [@ins-cnat-2015].

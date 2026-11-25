@@ -164,7 +164,6 @@ Pour 2021 à 2023, ce poste retient les recettes techniques de la caisse entièr
 
 ```{python}
 #| echo: false
-#| output: asis
 import sys; sys.path.insert(0, "../../../scripts")
 import passage_comptes as pc
 _C = [("CNSS", ("cotisations-sociales", "cotisations-cnss-2021-2023")),
@@ -175,34 +174,40 @@ def _ligne(an, cnrps=None):
     if cnrps is not None:
         vals[1] = cnrps
     ins = pc.cible("apu_secu", "ressources", "D.61", "cotisations_sociales", an)[0]
-    if None in vals or ins is None:
+    if None in vals or not ins:
         return None
-    return vals, sum(vals), ins, 100 * sum(vals) / ins
-_ans = [a for a in range(2015, 2031) if _ligne(a)]
-_L = {a: _ligne(a) for a in _ans}
-_tout = pc.rc.montant("minfin-ep-caisses", "CNRPS|recettes techniques", 2020)[0]
-_b = _ligne(2020, _tout)
-_apres = [_L[a][3] for a in _ans if a > 2020]
-print("Les comptes de la nation ne publient pas les cotisations caisse par caisse : le passage se fait sur la somme "
-      "des trois caisses, rapprochée des cotisations sociales (D.61) reçues par la sécurité sociale (S1314) "
-      f"(@tbl-cot-pensions-passage-s1314). La somme dépasse le montant des comptes de {pc.pct(_L[2020][3] - 100)} "
-      f"en 2020 et de {pc.pct(min(_apres) - 100)} à {pc.pct(max(_apres) - 100)} de {_ans[1]} à {_ans[-1]}. "
-      "Avec les recettes techniques de la caisse entière pour la CNRPS au lieu des recettes du régime général, "
-      f"l'écart de 2020 serait de {pc.pct(_b[3] - 100)}.\n")
-print("| Année | CNSS | CNRPS | CNAM | Somme | Comptes (D.61, S1314) | Somme / comptes |")
-print("|---|--:|--:|--:|--:|--:|--:|")
-def _row(nom, l):
-    v, s, i, p = l
-    print(f"| {nom} | " + " | ".join(pc.fr(x) for x in v) + f" | {pc.fr(s)} | {pc.fr(i)} | {pc.pct(p)} |")
-for a in _ans:
-    _row(str(a), _L[a])
-    if a == 2020:
-        _row("2020, CNRPS entière", _b)
+    return {"vals": vals, "somme": sum(vals), "ins": ins, "part": 100 * sum(vals) / ins,
+            "ecart": 100 * sum(vals) / ins - 100}
+_L = {a: l for a in pc.annees() if (l := _ligne(a))}
+_AN = pc.annee_reference()
+_ref = _L.get(_AN)
+_tout = pc.rc.montant("minfin-ep-caisses", "CNRPS|recettes techniques", _AN)[0]
+_ent = _ligne(_AN, _tout) if _tout is not None else None
+_apres = pc.extremes({a: l for a, l in _L.items() if a > _AN}, "ecart")
+an_ref = str(_AN)
+ecart_ref = pc.pct(_ref["ecart"]) if _ref else "—"
+ecart_ref_entiere = pc.pct(_ent["ecart"]) if _ent else "—"
+ecart_min, ecart_max, an_1, an_2 = _apres["min"], _apres["max"], _apres["premier"], _apres["dernier"]
+```
+
+Les comptes de la nation ne publient pas les cotisations caisse par caisse : le passage se fait sur la somme des trois caisses, rapprochée des cotisations sociales (D.61) reçues par la sécurité sociale (S1314) (@tbl-cot-pensions-passage-s1314). La somme dépasse le montant des comptes de `{python} ecart_ref` en `{python} an_ref`, et de `{python} ecart_min` à `{python} ecart_max` de `{python} an_1` à `{python} an_2`. Avec les recettes techniques de la caisse entière pour la CNRPS au lieu des recettes du régime général, l'écart de `{python} an_ref` serait de `{python} ecart_ref_entiere`.
+
+```{python}
+#| echo: false
+#| output: asis
+def _cells(nom, l):
+    return [nom] + [pc.fr(x) for x in l["vals"]] + [pc.fr(l["somme"]), pc.fr(l["ins"]), pc.pct(l["part"])]
+_lignes = []
+for a in sorted(_L):
+    _lignes.append(_cells(str(a), _L[a]))
+    if a == _AN and _ent:
+        _lignes.append(_cells(f"{a}, CNRPS entière", _ent))
+print(pc.table(["Année", "CNSS", "CNRPS", "CNAM", "Somme", "Comptes (D.61, S1314)", "Somme / comptes"], _lignes))
 print("\n: Recettes des trois caisses et cotisations sociales (D.61) de la sécurité sociale (S1314), en millions de "
-      "dinars courants. CNSS : cotisations encaissées (2020), recettes techniques (2021-2023) ; CNRPS : recettes du "
-      "régime général (2020), recettes techniques de la caisse entière (2021-2023, et ligne « 2020, CNRPS entière ») ; "
-      "CNAM : recettes techniques ; comptes de la nation : dernière édition où l'année est définitive "
-      "{#tbl-cot-pensions-passage-s1314}\n")
+      "dinars courants. CNSS : cotisations encaissées jusqu'à l'année de référence, recettes techniques ensuite ; "
+      "CNRPS : recettes du régime général jusqu'à l'année de référence, recettes techniques de la caisse entière "
+      "ensuite et sur la ligne « CNRPS entière » ; CNAM : recettes techniques ; comptes de la nation : dernière "
+      "édition où l'année est définitive {#tbl-cot-pensions-passage-s1314}\n")
 ```
 
 Sources : CNSS [@cnss-chiffres ; @minfin-ep-2025, p. 43] ; CNRPS [@cnrps-etats-financiers ; @minfin-ep-2024, tableau 28, p. 67 ; @minfin-ep-2025, p. 44] ; CNAM [@minfin-ep-2024, tableau 28, p. 67] ; comptes de la sécurité sociale [@ins-cnat-2015].

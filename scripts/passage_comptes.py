@@ -60,11 +60,17 @@ def montant(poste: str, an: int) -> float | None:
     return rc.montant(p["serie"], p["colonne"], an)[0]
 
 
-def lignes(poste: str, annees=range(1990, 2031)) -> list[dict]:
+def annees() -> list[int]:
+    """Années publiées par les comptes des secteurs, toutes éditions confondues."""
+    return sorted({int(l["annee"]) for l in secteurs()})
+
+
+def lignes(poste: str, annees_=None) -> list[dict]:
     """Une ligne par année où le poste et la case de l'INS sont tous deux chiffrés."""
     p = registre()[poste]
+    annees_ = annees() if annees_ is None else annees_
     out = []
-    for an in annees:
+    for an in annees_:
         m = montant(poste, an)
         if m is None:
             continue
@@ -78,6 +84,28 @@ def lignes(poste: str, annees=range(1990, 2031)) -> list[dict]:
 
 def pct(v: float | None) -> str:
     return "—" if v is None else f"{v:.1f}".replace(".", ",") + " %"
+
+
+def annee_reference() -> int:
+    """Année de référence du compte reconstruit (precis/fr/annee-reference.yml)."""
+    return int(rc.yaml.safe_load(rc.CONFIG.read_text(encoding="utf-8"))["annee"])
+
+
+def extremes(d: dict, cle: str = "part") -> dict:
+    """Plus bas et plus haut d'un dictionnaire {année: ligne}, mis en forme ; « — » si vide."""
+    if not d:
+        return {"min": "—", "max": "—", "an_min": "—", "an_max": "—", "premier": "—", "dernier": "—"}
+    a_min = min(d, key=lambda a: d[a][cle])
+    a_max = max(d, key=lambda a: d[a][cle])
+    return {"min": pct(d[a_min][cle]), "max": pct(d[a_max][cle]), "an_min": str(a_min), "an_max": str(a_max),
+            "premier": str(min(d)), "dernier": str(max(d))}
+
+
+def table(colonnes: list[str], lignes_: list[list[str]]) -> str:
+    """Tableau markdown : première colonne à gauche, les autres alignées à droite."""
+    out = ["| " + " | ".join(colonnes) + " |", "|---|" + "--:|" * (len(colonnes) - 1)]
+    out += ["| " + " | ".join(l) + " |" for l in lignes_]
+    return "\n".join(out)
 
 
 def terme(poste: str) -> str:
