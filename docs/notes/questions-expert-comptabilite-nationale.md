@@ -135,10 +135,11 @@ Références : INS, *Les comptes de la nation* (clé bibliographique `ins-cnat-2
 - La réponse aiderait à décider de leur place.
 - Priorité 3.
 
-**D6. Pourquoi les comptes publiés n'impriment-ils pas de compte de redistribution du revenu en nature, et comment retrouver les transferts sociaux en nature (D.63) ?** (étape « redistribution en nature »)
-- Observé : les comptes des secteurs en base 2015 (éditions 2015-2020 à 2021-2025) n'ont aucune ligne D.63, ni de revenu disponible ajusté. Les soins remboursés sont donc absorbés dans la consommation finale des administrations publiques (P.3, 30 841,0 en 2023).
-- La réponse permettrait de séparer la consommation individuelle de la consommation collective des administrations, et de rattacher l'assurance maladie, l'éducation et le logement social à D.63.
-- Priorité 2.
+**D6. ~~Pourquoi les comptes publiés n'impriment-ils pas de compte de redistribution en nature ?~~** Question retirée le 25/11/2026 : la prémisse était fausse.
+- Les transferts sociaux en nature sont publiés dans un tableau à part des comptes des secteurs, « Transferts sociaux en nature » (édition 2021-2025, p. 114), et repris par le tableau économique d'ensemble (compte II.3, revenu disponible ajusté, compte II.4). En 2023, les administrations publiques versent 14 604,2 MD : 1 764,5 en D.631 et 12 839,7 en D.632 ; les ménages versent 500,0 en D.632.
+- Ce tableau existe dans les 15 éditions, de 2005-2009 à 2021-2025. Il est désormais extrait (dépôt de données, série `cnat-d63`).
+- Reste une question pour l'expert : faut-il lire la consommation collective des administrations comme P.3 − D.63 versé par les administrations (16 236,8 MD en 2023), et l'INS publie-t-il P.31 et P.32 ailleurs ?
+- Priorité 3.
 
 ## E. Sources manquantes
 
