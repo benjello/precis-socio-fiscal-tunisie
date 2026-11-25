@@ -158,3 +158,59 @@ Les recettes du régime général de la CNRPS valent 5 245,5 millions de dinars 
 
 Les états financiers de la CNRPS pour 2017 et 2019 sont tronqués dans les fichiers publiés, et ceux de 2020 ne sont connus que par le rapport d'activité.
 
+{{< include ../encadres-comptes/cotisations-cnrps-2021-2023.md >}}
+
+Pour 2021 à 2023, ce poste retient les recettes techniques de la caisse entière, retraite et prévoyance sociale confondues, que donne le rapport du ministère des Finances sur les entreprises publiques : 5 807,8 millions de dinars en 2021 et 6 197,6 en 2022, réalisés, 6 666,4 en 2023, provisoire [@minfin-ep-2025, p. 44]. Le champ n'est pas celui du régime général : en 2020, les recettes techniques de la caisse valent 5 518,8 millions de dinars [@minfin-ep-2024, tableau 28, p. 67], soit 273,3 millions (5,2 %) de plus que les recettes du régime général, et le rapport ne ventile pas cet écart. Entre 2020 et 2021, la hausse mêle donc la croissance des recettes et l'élargissement du champ. Les subventions d'exploitation que le rapport inscrit à part ne sont pas comprises. L'année 2020 reste chiffrée par le rapport d'activité.
+
+```{python}
+#| echo: false
+import sys; sys.path.insert(0, "../../../scripts")
+import passage_comptes as pc
+_C = [("CNSS", ("cotisations-sociales", "cotisations-cnss-2021-2023")),
+      ("CNRPS", ("cotisations-cnrps", "cotisations-cnrps-2021-2023")),
+      ("CNAM", ("cotisations-cnam",))]
+def _ligne(an, cnrps=None):
+    vals = [next((m for p in ps if (m := pc.montant(p, an)) is not None), None) for _, ps in _C]
+    if cnrps is not None:
+        vals[1] = cnrps
+    ins = pc.cible("apu_secu", "ressources", "D.61", "cotisations_sociales", an)[0]
+    if None in vals or not ins:
+        return None
+    return {"vals": vals, "somme": sum(vals), "ins": ins, "part": 100 * sum(vals) / ins,
+            "ecart": 100 * sum(vals) / ins - 100}
+_L = {a: l for a in pc.annees() if (l := _ligne(a))}
+_AN = pc.annee_reference()
+_ref = _L.get(_AN)
+_tout = pc.rc.montant("minfin-ep-caisses", "CNRPS|recettes techniques", _AN)[0]
+_ent = _ligne(_AN, _tout) if _tout is not None else None
+_apres = pc.extremes({a: l for a, l in _L.items() if a > _AN}, "ecart")
+an_ref = str(_AN)
+ecart_ref = pc.pct(_ref["ecart"]) if _ref else "—"
+ecart_ref_entiere = pc.pct(_ent["ecart"]) if _ent else "—"
+ecart_min, ecart_max, an_1, an_2 = _apres["min"], _apres["max"], _apres["premier"], _apres["dernier"]
+```
+
+Les comptes de la nation donnent les cotisations de la sécurité sociale dans son ensemble : le passage se fait sur la somme des trois caisses, rapprochée des cotisations sociales (D.61) reçues par la sécurité sociale (S1314) (@tbl-cot-pensions-passage-s1314). La somme dépasse le montant des comptes de `{python} ecart_ref` en `{python} an_ref`, et de `{python} ecart_min` à `{python} ecart_max` de `{python} an_1` à `{python} an_2`. Avec les recettes techniques de la caisse entière pour la CNRPS au lieu des recettes du régime général, l'écart de `{python} an_ref` serait de `{python} ecart_ref_entiere`.
+
+```{python}
+#| echo: false
+#| output: asis
+def _cells(nom, l):
+    return [nom] + [pc.fr(x) for x in l["vals"]] + [pc.fr(l["somme"]), pc.fr(l["ins"]), pc.pct(l["part"])]
+_lignes = []
+for a in sorted(_L):
+    _lignes.append(_cells(str(a), _L[a]))
+    if a == _AN and _ent:
+        _lignes.append(_cells(f"{a}, CNRPS entière", _ent))
+print(pc.table(["Année", "CNSS", "CNRPS", "CNAM", "Somme", "Comptes (D.61, S1314)", "Somme / comptes"], _lignes))
+print("\n: Recettes des trois caisses et cotisations sociales (D.61) de la sécurité sociale (S1314), en millions de "
+      "dinars courants. CNSS : cotisations encaissées jusqu'à l'année de référence, recettes techniques ensuite ; "
+      "CNRPS : recettes du régime général jusqu'à l'année de référence, recettes techniques de la caisse entière "
+      "ensuite et sur la ligne « CNRPS entière » ; CNAM : recettes techniques ; comptes de la nation : dernière "
+      "édition où l'année est définitive {#tbl-cot-pensions-passage-s1314}\n")
+```
+
+Sources : CNSS [@cnss-chiffres ; @minfin-ep-2025, p. 43] ; CNRPS [@cnrps-etats-financiers ; @minfin-ep-2024, tableau 28, p. 67 ; @minfin-ep-2025, p. 44] ; CNAM [@minfin-ep-2024, tableau 28, p. 67] ; comptes de la sécurité sociale [@ins-cnat-2015].
+
+Les trois différences connues entre les recettes des caisses et les cotisations des comptes — classement, moment d'enregistrement, périmètre des recettes techniques — sont décrites dans la section [Des cotisations encaissées au chiffre des comptes](_bilan.html#sec-cot-rendement-passage). Elles ne sont pas chiffrées : l'écart reste publié.
+

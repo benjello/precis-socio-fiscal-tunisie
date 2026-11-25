@@ -12,6 +12,22 @@ annee,edition,operation,code_scn,libelle_ins,secteur,niveau,cote,valeur_md
 2020,2020-2024,autres_impots_produits,D.214,Autres impôts sur les produits,administrations publiques,secteur,ressources,4425.2
 2020,2020-2024,autres_impots_produits,D.214,Autres impôts sur les produits,administration centrale,sous-secteur,ressources,4287.7
 2020,2020-2024,autres_impots_produits,D.214,Autres impôts sur les produits,collectivités locales,sous-secteur,ressources,137.5
+2020,2020-2024,autres_transferts_courants,D.7,Autres transferts courants,sociétés non financières,secteur,emplois,1243.0
+2020,2020-2024,autres_transferts_courants,D.7,Autres transferts courants,sociétés non financières,secteur,ressources,433.7
+2020,2020-2024,autres_transferts_courants,D.7,Autres transferts courants,sociétés financières,secteur,emplois,1189.9
+2020,2020-2024,autres_transferts_courants,D.7,Autres transferts courants,sociétés financières,secteur,ressources,923.1
+2020,2020-2024,autres_transferts_courants,D.7,Autres transferts courants,administrations publiques,secteur,emplois,4439.2
+2020,2020-2024,autres_transferts_courants,D.7,Autres transferts courants,administrations publiques,secteur,ressources,4041.0
+2020,2020-2024,autres_transferts_courants,D.7,Autres transferts courants,ménages,secteur,emplois,451.6
+2020,2020-2024,autres_transferts_courants,D.7,Autres transferts courants,ménages,secteur,ressources,8460.4
+2020,2020-2024,autres_transferts_courants,D.7,Autres transferts courants,reste du monde,secteur,emplois,7090.9
+2020,2020-2024,autres_transferts_courants,D.7,Autres transferts courants,reste du monde,secteur,ressources,556.3
+2020,2020-2024,autres_transferts_courants,D.7,Autres transferts courants,administration centrale,sous-secteur,emplois,3620.9
+2020,2020-2024,autres_transferts_courants,D.7,Autres transferts courants,administration centrale,sous-secteur,ressources,1986.3
+2020,2020-2024,autres_transferts_courants,D.7,Autres transferts courants,collectivités locales,sous-secteur,emplois,70.7
+2020,2020-2024,autres_transferts_courants,D.7,Autres transferts courants,collectivités locales,sous-secteur,ressources,534.9
+2020,2020-2024,autres_transferts_courants,D.7,Autres transferts courants,sécurité sociale,sous-secteur,emplois,747.6
+2020,2020-2024,autres_transferts_courants,D.7,Autres transferts courants,sécurité sociale,sous-secteur,ressources,1519.8
 2020,2020-2024,consommation_finale,P.3,Dépense de consommation finale,administrations publiques,secteur,emplois,27380.7
 2020,2020-2024,consommation_finale,P.3,Dépense de consommation finale,ménages,secteur,emplois,86936.9
 2020,2020-2024,consommation_finale,P.3,Dépense de consommation finale,administration centrale,sous-secteur,emplois,24098.1
@@ -116,6 +132,21 @@ annee,edition,operation,code_scn,libelle_ins,secteur,niveau,cote,valeur_md
 2020,2020-2024,transferts_capital,D.9,Transferts en capital,collectivités locales,sous-secteur,emplois,28.1
 2020,2020-2024,transferts_capital,D.9,Transferts en capital,collectivités locales,sous-secteur,ressources,445.4
 2020,2020-2024,transferts_capital,D.9,Transferts en capital,sécurité sociale,sous-secteur,emplois,0.2
+2020,2020-2024,transferts_courants_divers,D.75,Autres transferts courants divers,sociétés non financières,secteur,emplois,758.0
+2020,2020-2024,transferts_courants_divers,D.75,Autres transferts courants divers,sociétés financières,secteur,emplois,187.5
+2020,2020-2024,transferts_courants_divers,D.75,Autres Transferts Courants Divers,sociétés financières,secteur,ressources,1.0
+2020,2020-2024,transferts_courants_divers,D.75,Autres transferts courants divers,administrations publiques,secteur,emplois,2123.4
+2020,2020-2024,transferts_courants_divers,D.75,Autres transferts courants divers,administrations publiques,secteur,ressources,1273.2
+2020,2020-2024,transferts_courants_divers,D.75,Autres transferts courants divers,ménages,secteur,emplois,229.3
+2020,2020-2024,transferts_courants_divers,D.75,Autres transferts courants divers,ménages,secteur,ressources,8102.1
+2020,2020-2024,transferts_courants_divers,D.75,Autres transferts courants divers,reste du monde,secteur,emplois,6526.8
+2020,2020-2024,transferts_courants_divers,D.75,Autres transferts courants divers,reste du monde,secteur,ressources,448.7
+2020,2020-2024,transferts_courants_divers,D.75,Autres transferts courants divers,administration centrale,sous-secteur,emplois,2045.6
+2020,2020-2024,transferts_courants_divers,D.75,Autres transferts courants divers,administration centrale,sous-secteur,ressources,712.2
+2020,2020-2024,transferts_courants_divers,D.75,Autres transferts courants divers,collectivités locales,sous-secteur,emplois,70.7
+2020,2020-2024,transferts_courants_divers,D.75,Autres transferts courants divers,collectivités locales,sous-secteur,ressources,50.8
+2020,2020-2024,transferts_courants_divers,D.75,Autres transferts courants divers,sécurité sociale,sous-secteur,emplois,7.1
+2020,2020-2024,transferts_courants_divers,D.75,Autres transferts courants divers,sécurité sociale,sous-secteur,ressources,510.2
 2020,2020-2024,transferts_entre_administrations,D.73,Transferts courants entre admini. publiques,administrations publiques,secteur,emplois,2231.1
 2020,2020-2024,transferts_entre_administrations,D.73,Transferts courants entre admini. publiques,administrations publiques,secteur,ressources,2231.1
 2020,2020-2024,transferts_entre_administrations,D.73,Transferts courants entre admini. publiques,administration centrale,sous-secteur,emplois,1491.0

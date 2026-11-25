@@ -44,6 +44,60 @@ class TestReconstruction(unittest.TestCase):
         lignes = [l for l in rc.lire_csv(rc.CACHE / "cnat-secteurs.csv") if l["edition"] == ed and int(l["annee"]) == an]
         self.assertTrue(lignes and all(l["statut_annee"] == "definitif" for l in lignes))
 
+    def test_montant_caisse_et_fenetre(self):
+        import reconstruire_comptes as rc
+        # forme « CAISSE|indicateur » : toutes les années de la série, édition la plus récente
+        self.assertEqual(rc.montant("minfin-ep-caisses", "CNAM|recettes techniques", 2020), (3525.2, "2020-2023"))
+        self.assertEqual(rc.montant("minfin-ep-caisses", "CNRPS|recettes techniques", 2022), (6197.6, "2020-2023"))
+        # forme « CAISSE|indicateur|AAAA-AAAA » : rien hors de la fenêtre, années couvertes = la fenêtre
+        self.assertEqual(rc.montant("minfin-ep-caisses", "CNSS|recettes techniques|2021-2023", 2020), (None, "2021-2023"))
+        self.assertEqual(rc.montant("minfin-ep-caisses", "CNSS|recettes techniques|2021-2023", 2021), (3749.2, "2021-2023"))
+        self.assertEqual(rc.montant("minfin-ep-caisses", "CNSS|recettes techniques|2021-2023", 2023), (4556.9, "2021-2023"))
+        # forme sans caisse : indicateur seul, inchangée
+        m, couv = rc.montant("minfin-ep-caisses", "recettes techniques", 2023)
+        self.assertIsNotNone(m)
+        self.assertEqual(couv, "2020-2023")
+
+    def test_fin_encadre_poste_borne(self):
+        import reconstruire_comptes as rc
+        borne = {"montant_reference": "", "colonne": "CNSS|recettes techniques|2021-2023", "annees": "2021-2023"}
+        self.assertIn("chiffre les années 2021-2023, non l'année de référence 2020", rc.fin_encadre(borne, 2020, [2021, 2022, 2023]))
+        sans = {"montant_reference": "", "colonne": "CNAM|recettes techniques", "annees": "2020-2023"}
+        self.assertIn("ne chiffre pas encore", rc.fin_encadre(sans, 2020, []))
+        # poste non borné sans valeur l'année de référence : ses années, suivies ou discontinues
+        self.assertIn("chiffre les années 2022-2024, non l'année de référence 2020", rc.fin_encadre(sans, 2020, [2022, 2023, 2024]))
+        self.assertIn("chiffre les années 2019, 2021 et 2023, non", rc.fin_encadre(sans, 2020, [2019, 2021, 2023]))
+        self.assertIn("chiffre l'année 2023, non", rc.fin_encadre(sans, 2020, [2023]))
+        self.assertEqual(rc.liste_annees([2008, 2009, 2010, 2022, 2023]), "2008-2010 et 2022-2023")
+        # années lues dans la série : P.61 n'a de valeur qu'à partir de 2022 ; fenêtre d'un poste borné respectée
+        p61 = {"serie": "bct-bdp-postes-s2", "colonne": "P.61 exportations de biens"}
+        self.assertEqual(rc.annees_chiffrees(p61), [2022, 2023, 2024])
+        self.assertEqual(rc.annees_chiffrees({"serie": "minfin-ep-caisses", "colonne": "CNSS|recettes techniques|2021-2023"}),
+                         [2021, 2022, 2023])
+        self.assertEqual(rc.annees_chiffrees({"serie": "", "colonne": ""}), [])
+        avec = {"montant_reference": "3430.0", "colonne": "cotisations_md", "annees": "2000-2020"}
+        self.assertIn("en chiffre 3 430,0", rc.fin_encadre(avec, 2020))
+
+    def test_phrase_montant_selon_secteur(self):
+        import reconstruire_comptes as rc
+        cible = {("ressources", "autres_transferts_courants"): {"cible_ins_md": 4041.0}}
+        qui = [{"operation": "autres_transferts_courants", "secteur": "reste du monde", "cote": "ressources",
+                "niveau": "secteur", "valeur_md": 556.3}]
+        rdm = {"secteur_verse": "snf;sf;menages", "secteur_recoit": "rdm", "cote": "ressources",
+               "operation": "autres_transferts_courants", "montant_reference": "489.3", "colonne": "", "annees": ""}
+        # poste sans administration : montant du reste du monde, jamais celui des administrations
+        txt = rc.phrase_montant(rdm, cible, qui, 2020)
+        self.assertIn("Le reste du monde y inscrit 556,3 millions de dinars (ressources)", txt)
+        self.assertNotIn("administrations publiques", txt)
+        # montant du secteur absent des comptes : pas de phrase
+        self.assertEqual(rc.phrase_montant(rdm, cible, [], 2020), "")
+        # plusieurs secteurs du côté du poste : pas de phrase
+        plusieurs = dict(rdm, cote="emplois")
+        self.assertEqual(rc.phrase_montant(plusieurs, cible, qui, 2020), "")
+        # poste d'une administration : montant de S13
+        apu = dict(rdm, secteur_recoit="apu_centrale")
+        self.assertIn("Les administrations publiques y inscrivent 4 041,0", rc.phrase_montant(apu, cible, qui, 2020))
+
     def test_residu_egal_cible_moins_postes(self):
         for l in lire("compte-apu-reconstruit.csv"):
             if l["somme_postes_md"]:

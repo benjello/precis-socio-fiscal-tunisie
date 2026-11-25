@@ -27,6 +27,7 @@ from __future__ import annotations
 
 import argparse
 import csv
+import functools
 import re
 import sys
 from collections import defaultdict
@@ -85,6 +86,18 @@ def edition_pour(secteurs: list[dict], an: int) -> str:
     return (defs or tous)[-1]
 
 
+def annees_base2015(secteurs: list[dict]) -> list[int]:
+    """Années que l'INS publie en base 2015 avec un compte des administrations publiques dans l'édition
+    retenue par edition_pour() (une ligne isolée d'une autre édition ne suffit pas)."""
+    b15 = [l for l in secteurs if str(l.get("base", "")) == "2015"]
+    garde = []
+    for y in sorted({int(l["annee"]) for l in b15}):
+        ed = edition_pour(b15, y)
+        if any(l["edition"] == ed and int(l["annee"]) == y and l["secteur"] == "apu" for l in b15):
+            garde.append(y)
+    return garde
+
+
 def annee_reference(secteurs: list[dict]) -> tuple[int, str]:
     """Année fixée dans precis/fr/annee-reference.yml : la dernière où les sources de la reconstruction sont
     toutes disponibles (comptes des caisses compris), non la dernière année définitive des comptes."""
@@ -92,11 +105,17 @@ def annee_reference(secteurs: list[dict]) -> tuple[int, str]:
     return an, edition_pour(secteurs, an)
 
 
-def montant(serie: str, colonne: str, annee: int) -> tuple[float | None, str]:
+@functools.lru_cache(maxsize=None)
+def _lignes_serie(serie: str) -> tuple[dict, ...]:
+    """Lignes d'une série du cache, lues une fois (montant() ne les modifie pas)."""
     chemin = CACHE / f"{serie}.csv"
-    if not chemin.exists():
+    return tuple(lire_csv(chemin)) if chemin.exists() else ()
+
+
+def montant(serie: str, colonne: str, annee: int) -> tuple[float | None, str]:
+    lignes = _lignes_serie(serie)
+    if not lignes:
         return None, ""
-    lignes = lire_csv(chemin)
     annees = sorted({int(str(l["annee"])[:4]) for l in lignes if str(l.get("annee", ""))[:4].isdigit()})
     couv = f"{annees[0]}-{annees[-1]}" if annees else ""
     if serie == "compensation-parts":  # total budgétaire de la compensation, une ligne par année
@@ -112,12 +131,87 @@ def montant(serie: str, colonne: str, annee: int) -> tuple[float | None, str]:
         return (vals[-1] if vals else None), couv
     if "indicateur" in lignes[0] and ("valeur" in lignes[0] or "valeur_md" in lignes[0]):  # série longue : (année, indicateur)
         champ = "valeur" if "valeur" in lignes[0] else "valeur_md"
+        morceaux = colonne.split("|")
+        fenetre = None  # « CNSS|recettes techniques|2021-2023 » : poste limité à ces années (relais d'une série close)
+        if len(morceaux) == 3 and re.fullmatch(r"\d{4}-\d{4}", morceaux[2]):
+            fenetre = tuple(int(x) for x in morceaux[2].split("-"))
+            colonne = "|".join(morceaux[:2])
         caisse, _, ind = colonne.rpartition("|")  # « CNAM|recettes techniques » : filtre sur la colonne caisse
+        if fenetre:
+            dans = [a for a in annees if fenetre[0] <= a <= fenetre[1]]
+            couv = f"{dans[0]}-{dans[-1]}" if dans else ""
+            if not fenetre[0] <= annee <= fenetre[1]:
+                return None, couv
         vals = [float(l[champ]) for l in lignes if str(l["annee"]) == str(annee) and l["indicateur"].startswith(ind)
                 and (not caisse or l.get("caisse") == caisse)]
         return (vals[-1] if vals else None), couv  # la dernière ligne : l'édition la plus récente
     vals = [float(l[colonne]) for l in lignes if str(l["annee"]) == str(annee) and l.get(colonne, "") != ""]
     return (vals[-1] if vals else None), couv
+
+
+def annees_chiffrees(p: dict) -> list[int]:
+    """Années où le poste a une valeur dans sa série (fenêtre « …|AAAA-AAAA » respectée par montant())."""
+    if not p.get("serie"):
+        return []
+    _, couv = montant(p["serie"], p["colonne"], 0)
+    if not re.fullmatch(r"\d{4}-\d{4}", couv or ""):
+        return []
+    a, b = (int(x) for x in couv.split("-"))
+    return [y for y in range(a, b + 1) if montant(p["serie"], p["colonne"], y)[0] is not None]
+
+
+def liste_annees(annees: list[int]) -> str:
+    """« 2021-2023 » si les années se suivent ; sinon la liste des plages : « 2008-2019 et 2022-2023 »,
+    « 2019, 2021 et 2023 »."""
+    plages = []
+    for y in annees:
+        if plages and y == plages[-1][1] + 1:
+            plages[-1][1] = y
+        else:
+            plages.append([y, y])
+    noms = [str(a) if a == b else f"{a}-{b}" for a, b in plages]
+    return ", ".join(noms[:-1]) + f" et {noms[-1]}" if len(noms) > 1 else noms[0]
+
+
+def fin_encadre(p: dict, an: int, chiffrees: list[int] | None = None) -> str:
+    """Fin de la phrase de l'encadré : montant de l'année de référence ; pour un poste sans valeur cette
+    année-là mais chiffré d'autres années, ces années ; « ne chiffre pas encore » pour un poste sans aucune valeur."""
+    if p["montant_reference"]:
+        return f" ; l'ouvrage en chiffre {fr(p['montant_reference'])} pour ce dispositif."
+    if chiffrees is None:
+        chiffrees = annees_chiffrees(p)
+    if len(chiffrees) == 1:
+        return f" ; ce poste chiffre l'année {chiffrees[0]}, non l'année de référence {an}."
+    if chiffrees:
+        return f" ; ce poste chiffre les années {liste_annees(chiffrees)}, non l'année de référence {an}."
+    return " ; l'ouvrage ne chiffre pas encore ce dispositif."
+
+
+SECTEURS_APU = {"apu", "apu_centrale", "apu_locale", "apu_secu"}
+SUJETS = {"snf": "Les sociétés non financières y inscrivent", "sf": "Les sociétés financières y inscrivent",
+          "menages": "Les ménages y inscrivent", "rdm": "Le reste du monde y inscrit"}
+
+
+def phrase_montant(p: dict, cible_s13: dict, qui: list[dict], an: int) -> str:
+    """Comparaison de l'encadré. Poste payé ou reçu par une administration : montant des administrations
+    publiques (S13). Sinon : montant du secteur du poste du côté du poste (le payeur pour un emploi, le
+    receveur pour une ressource), s'il est seul de ce côté et que les comptes le publient ; sinon rien."""
+    secs = {s for s in (p["secteur_verse"] + ";" + p["secteur_recoit"]).split(";") if s}
+    if secs & SECTEURS_APU:
+        l = cible_s13.get((p["cote"], p["operation"]))
+        if not l:
+            return ""
+        return (f" Les administrations publiques y inscrivent {fr(l['cible_ins_md'])} millions de dinars ({p['cote']})"
+                + fin_encadre(p, an))
+    cote_secs = [s for s in (p["secteur_verse"] if p["cote"] == "emplois" else p["secteur_recoit"]).split(";") if s]
+    if len(cote_secs) != 1 or cote_secs[0] not in SUJETS:
+        return ""
+    nom = dict(PRINCIPAUX)[cote_secs[0]]
+    v = [x for x in qui if x["operation"] == p["operation"] and x["secteur"] == nom and x["cote"] == p["cote"]
+         and x["niveau"] == "secteur"]
+    if not v or v[0]["valeur_md"] in (None, ""):
+        return ""
+    return f" {SUJETS[cote_secs[0]]} {fr(v[0]['valeur_md'])} millions de dinars ({p['cote']})" + fin_encadre(p, an)
 
 
 def source_serie(serie: str, snapshot: dict) -> str:
@@ -227,14 +321,14 @@ def main(argv=None) -> int:
     snapshot = {e["id"]: e for e in yaml.safe_load((CACHE / "catalog.snapshot.yml").read_text(encoding="utf-8"))}
     postes, lignes, controles, flux, erreurs = calculer(an, ed, secteurs, snapshot)
     annees = []
-    for y in range(2015, 2024):  # couverture année par année, pour montrer le profil des retards
-        ed_y = edition_pour(secteurs, y)
+    for y in annees_base2015(secteurs):  # couverture année par année, pour montrer le profil des retards
+        ed_y = edition_pour([l for l in secteurs if str(l.get("base", "")) == "2015"], y)
         postes_y, _, _, _, _ = calculer(y, ed_y, secteurs, snapshot)
         lig_y = [l for l in secteurs if l["edition"] == ed_y and int(l["annee"]) == y and str(l.get("base", "2015")) == "2015"]
         par_secteur = {}
         for code, (sec, membres) in cc.SECTEURS.items():
             ratt = cc.postes_du_secteur(postes_y, membres)
-            ops = cc.feuilles([l for l in lig_y if l["secteur"] == sec], garder=set(ratt))
+            ops = cc.feuilles([l for l in lig_y if l["secteur"] == sec], garder=cc.garder_par_cote(ratt))
             if ops:
                 par_secteur[code] = cc.indicateurs(ops, ratt)
         par_secteur["S13"] = cc.agreger([par_secteur[s] for s in cc.SOUS_SECTEURS_S13])
@@ -279,7 +373,6 @@ def main(argv=None) -> int:
         w.writeheader()
         w.writerows(qui)
     for p in postes:
-        l = cible_s13.get((p["cote"], p["operation"]))
         profondeur = "../" if (FR / p["volume"]).is_dir() else ""
         lien = f"{profondeur}compte-apu.html#sec-capu-flux"
         niveau = "sous-secteur" if p["operation"] == "transferts_entre_administrations" else "secteur"
@@ -293,10 +386,7 @@ def main(argv=None) -> int:
             flux = f"versent : {verse or 'aucun secteur principal'} ; reçoivent : {recoit or 'aucun secteur principal'}"
         phrase = (f"Ce dispositif relève de l'opération **{p['code_scn']} « {lib} »** des comptes de la nation. "
                   f"En {an} (édition {ed}), en millions de dinars, {flux}.")
-        if l:
-            phrase += f" Les administrations publiques y inscrivent {fr(l['cible_ins_md'])} millions de dinars ({p['cote']})"
-            phrase += (f" ; l'ouvrage en chiffre {fr(p['montant_reference'])} pour ce dispositif." if p["montant_reference"]
-                       else " ; l'ouvrage ne chiffre pas encore ce dispositif.")
+        phrase += phrase_montant(p, cible_s13, qui, an)
         (ENCADRES / f"{p['poste']}.md").write_text(
             f"::: {{.callout-tip title=\"Dans les comptes\"}}\n{phrase} Voir [le compte reconstruit]({lien}).\n:::\n",
             encoding="utf-8")

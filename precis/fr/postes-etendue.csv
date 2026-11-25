@@ -1,0 +1,40 @@
+poste,operation,cote,secteur_verse,secteur_recoit,serie,colonne,premiere_annee,derniere_annee,annees_chiffrees,plages
+tva,tva,ressources,snf;menages;sf,apu_centrale,recettes-fiscales-composition,tva_MDT,1986,2025,40,1986-2025
+droits-douane,impots_importations,ressources,snf;menages,apu_centrale,recettes-fiscales-composition,douanes_MDT,1986,2025,40,1986-2025
+droits-consommation,autres_impots_produits,ressources,snf;menages,apu_centrale,recettes-fiscales-composition,consommation_MDT,1986,2025,40,1986-2025
+autres-impots-indirects,impots_production_importations,ressources,snf;menages,apu_centrale,recettes-fiscales-composition,autres_indirects_MDT,1986,2025,40,1986-2025
+irpp,impots_courants,ressources,menages,apu_centrale,recettes-fiscales-composition,irpp_MDT,1986,2025,40,1986-2025
+impot-societes,impots_courants,ressources,snf;sf,apu_centrale,recettes-fiscales-composition,is_MDT,1986,2025,40,1986-2025
+remunerations-etat,remuneration_salaries,emplois,apu_centrale,menages,budget-desagregation-nature,remunerations_MDT,1990,2025,36,1990-2025
+equipement-etat,fbcf,emplois,apu_centrale,,budget-desagregation-nature,equipement_MDT,1986,2025,40,1986-2025
+interets-dette-etat,interets,emplois,apu_centrale,sf;rdm;menages,budget-service-dette,interets_MDT,1986,2025,40,1986-2025
+compensation,subventions_produits,ressources,apu_centrale,snf;menages,compensation-parts,total,2003,2026,24,2003-2026
+cotisations-sociales,cotisations_sociales,ressources,menages,apu_secu,cnss-cotisations,cotisations_md,2000,2020,21,2000-2020
+pensions,prestations_especes,emplois,apu_secu,menages,cnss-pensions-versees,pensions_md,2000,2020,21,2000-2020
+prestations-familiales,prestations_especes,emplois,apu_secu,menages,,,,,0,
+assistance-sociale,prestations_especes,emplois,apu_centrale,menages,,,,,0,
+consommation-sante,consommation_finale,emplois,apu_centrale;apu_secu,,,,,,0,
+consommation-education,consommation_finale,emplois,apu_centrale,,,,,,0,
+transferts-collectivites,transferts_entre_administrations,ressources,apu_centrale,apu_locale,finances-locales-communes-agregats,transferts_etat_fonctionnement,2018,2023,6,2018-2023
+taxe-formation-professionnelle,autres_impots_production,ressources,snf;sf,apu_centrale,,,,,0,
+foprolos,autres_impots_production,ressources,snf;sf,apu_centrale,,,,,0,
+moyens-services-etat,consommation_intermediaire,emplois,apu_centrale,snf,budget-desagregation-nature,moyens_MDT,1996,2025,30,1996-2025
+transferts-capital-etat,transferts_capital,emplois,apu_centrale,snf;menages,,,,,0,
+soins-assurance-maladie,consommation_finale,emplois,apu_secu,menages,cnam-comptes-2011-2021,prestations_decaissees_milliers,2011,2021,11,2011-2021
+cotisations-cnrps,cotisations_sociales,ressources,menages;apu_centrale,apu_secu,cnrps-regime-general-finances,recettes : total du régime général (rapport d'activité,2019,2020,2,2019-2020
+pensions-cnrps,prestations_especes,emplois,apu_secu,menages,cnrps-regime-general-finances,dépenses : total du régime général (rapport d'activité,2019,2020,2,2019-2020
+cotisations-cnam,cotisations_sociales,ressources,menages,apu_secu,minfin-ep-caisses,CNAM|recettes techniques,2020,2023,4,2020-2023
+exportations-biens,exportations_biens,emplois,rdm,,bct-bdp-postes-s2,P.61,2022,2024,3,2022-2024
+importations-biens,importations_biens,ressources,,rdm,bct-bdp-postes-s2,P.71,2023,2024,2,2023-2024
+exportations-services,exportations_services,emplois,rdm,,bct-bdp-postes-s2,P.62,2019,2024,6,2019-2024
+importations-services,importations_services,ressources,,rdm,bct-bdp-postes-s2,P.72,2019,2024,6,2019-2024
+remunerations-recues-du-rdm,remuneration_salaries,emplois,rdm,menages,bct-bdp-postes-s2,D.1 rémunération reçue,2019,2024,6,2019-2024
+remunerations-versees-au-rdm,remuneration_salaries,ressources,snf;sf;apu_centrale,rdm,bct-bdp-postes-s2,D.1 rémunération versée,2019,2024,6,2019-2024
+redevance-gazoduc,loyers,ressources,rdm,apu_centrale,minfin-recettes-non-fiscales,redevance_gazoduc,1986,2025,40,1986-2025
+remunerations-collectivites,remuneration_salaries,emplois,apu_locale,menages,finances-locales-communes-agregats,remunerations,2008,2023,16,2008-2023
+moyens-services-collectivites,consommation_intermediaire,emplois,apu_locale,snf,finances-locales-communes-agregats,moyens_des_services,2008,2023,16,2008-2023
+interets-dette-collectivites,interets,emplois,apu_locale,sf,finances-locales-communes-agregats,interets_dette,2018,2023,6,2018-2023
+cotisations-cnss-2021-2023,cotisations_sociales,ressources,menages,apu_secu,minfin-ep-caisses,CNSS|recettes techniques|2021-2023,2021,2023,3,2021-2023
+cotisations-cnrps-2021-2023,cotisations_sociales,ressources,menages;apu_centrale,apu_secu,minfin-ep-caisses,CNRPS|recettes techniques|2021-2023,2021,2023,3,2021-2023
+transferts-courants-verses-au-rdm,autres_transferts_courants,ressources,snf;sf;menages,rdm,bct-bdp-postes-s2,D.7 transferts courants versés aux non-résidents,2019,2024,6,2019-2024
+transferts-personnels-recus-du-rdm,transferts_courants_divers,emplois,rdm,menages,bct-bdp-postes-s2,revenu secondaire reçu : transferts personnels (passage à déterminer),2019,2024,6,2019-2024

@@ -12,6 +12,12 @@ Cet audit fait suite à l'affirmation erronée sur D.63. Toutes les éditions on
 
 **Bilan** : 5 affirmations relues ; 2 infirmées et corrigées ; 3 confirmées.
 
+**La règle vaut dans les deux sens.** Le 25/11/2026, l'ouvrage et la RFC 0001 ont écrit que les comptes de patrimoine financiers en base 2015 comprennent « les réévaluations et les autres changements de volume ». La phrase reprenait le texte de méthode du volume B (éd. 2015-2020, p. 4), qui décrit ce que contiennent ces comptes en principe ; elle n'avait pas été confrontée aux tableaux. L'extraction du volume (dépôt de données, `cnat_patrimoine_financier.csv`) montre qu'il publie les encours de fin d'année 2014-2020 (p. 28-41) et les flux 2015-2020 (p. 14-25), mais aucun tableau de réévaluation ni d'autres changements de volume : les mots n'apparaissent qu'aux pages de méthode (p. 4, 5 et 10). Une présence ne s'affirme pas plus qu'une absence d'après le seul texte de méthode : il faut le tableau, sa page et ses lignes.
+
+| Affirmation | Où | Verdict | Ce qui a été fait |
+|---|---|---|---|
+| Les comptes de patrimoine financiers publient les réévaluations et les autres changements de volume | annexe-comptes-nation, RFC 0001 et `operations-sans-dispositif` | **infirmée** : encours et flux seulement (vol. B, p. 14-25 et 28-41) ; la somme des deux autres termes ne s'obtient que par différence | annexe et RFC corrigées ; ticket de la RFC corrigé |
+
 Les autres occurrences des motifs (73 en tout) ne portent pas sur les comptes nationaux. Ce sont des rapports d'entreprises publiques, des textes juridiques, des classeurs du ministère des Finances, ILOSTAT : elles sont hors du champ de cet audit et restent à relire avec leur propre inventaire de sources.
 
 Tableaux non extraits qui lèveraient le plus de manques, par ordre de priorité :
