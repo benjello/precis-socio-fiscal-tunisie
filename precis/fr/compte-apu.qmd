@@ -184,7 +184,16 @@ print("\n: Contrôles arithmétiques en échec des séries des comptes des secte
 ```
 :::
 
-Les administrations publiques (APU) sont mesurées comme la somme de leurs trois sous-secteurs, sans consolidation : dans le compte consolidé, la consommation finale passerait pour chiffrée dès que les soins de l'assurance maladie le sont, alors que la consommation de l'État ne l'est pas. La justesse des ménages dépasse 100 % : l'impôt sur le revenu encaissé par l'État est supérieur, chaque année, aux impôts courants que l'INS inscrit chez les ménages.
+Les administrations publiques (APU) sont mesurées comme la somme de leurs trois sous-secteurs, sans consolidation : dans le compte consolidé, la consommation finale passerait pour chiffrée dès que les soins de l'assurance maladie le sont, alors que la consommation de l'État ne l'est pas.
+
+```{python}
+#| echo: false
+#| output: asis
+_jm = [(int(l["annee"]), float(l["justesse_pct"])) for l in _y if l["secteur"] == "S14" and l["justesse_pct"]]
+_jmin, _jmax = min(_jm, key=lambda x: x[1]), max(_jm, key=lambda x: x[1])
+print(f"La justesse des ménages va de {n(_jmin[1])} % en {_jmin[0]} à {n(_jmax[1])} % en {_jmax[0]}, "
+      f"sur les années {_jm[0][0]} à {_jm[-1][0]}.\n")
+```
 
 ```{python}
 #| echo: false
