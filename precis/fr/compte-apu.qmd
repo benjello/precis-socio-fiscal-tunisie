@@ -96,14 +96,42 @@ for _ind, _n, _titre, _id in (
         cells = []
         for s, _ in _S:
             l = _d.get((an, s))
+            _cons = ""
+            if not l and s == "S13" and _ind == "part_montant_couverte_pct" and _base_an[an] == "1983":
+                l = _d.get((an, "S13-consolide"))  # base 1983 : pas de somme des sous-secteurs, compte consolidé
+                _cons = "&nbsp;†"
             if not l:
                 cells.append("—")
                 continue
             v = (n(l[_ind]) + " %") if l[_ind] else "—"
-            cells.append(f"{v} ({l[_n]}/{l['operations']})" if _ind.startswith("part") else f"{v} ({l[_n]})")
+            cells.append(f"{v} ({l[_n]}/{l['operations']}){_cons}" if _ind.startswith("part") else f"{v} ({l[_n]})")
         print(f"| {an}{'&nbsp;(c)' if an in _ans_ech else ''} | {_base_an[an]} | " + " | ".join(cells) + " |")
     print(f"\n: {_titre} ; base : base des comptes de l'INS où l'année est lue ; (c) : contrôle du compte des "
           f"administrations en échec dans la source, voir @tbl-capu-controles-echec {{#{_id}}}\n")
+```
+
+```{python}
+#| echo: false
+#| output: asis
+def _med(v):
+    v = sorted(v)
+    return v[len(v) // 2] if len(v) % 2 else (v[len(v) // 2 - 1] + v[len(v) // 2]) / 2
+_ec = {}
+for b in ("1997", "2015"):
+    _e = [float(_d[(a, "S13-consolide")]["part_montant_couverte_pct"]) - float(_d[(a, "S13")]["part_montant_couverte_pct"])
+          for a in _ans if _base_an[a] == b and (a, "S13") in _d and (a, "S13-consolide") in _d]
+    _ec[b] = (min(_e), max(_e), _med(_e))
+def _pt(x):
+    return f"{x:+.1f}".replace("-", "−").replace(".", ",")
+_cons_ans = [a for a in _ans if _base_an[a] == "1983" and (a, "S13") not in _d and (a, "S13-consolide") in _d]
+print(f"† {_cons_ans[0]} à {_cons_ans[-1]}, colonne des administrations publiques de @tbl-capu-part-montant : part du montant du **compte consolidé** "
+      "des administrations, seul compte des administrations publiques que les éditions retenues en base&nbsp;1983 donnent, et non la somme des trois "
+      "sous-secteurs comme les autres années. Les deux mesures ne se comparent pas directement : elles ne portent pas sur "
+      "les mêmes opérations. Là où les deux existent, la part du compte consolidé moins "
+      f"celle de la somme des sous-secteurs vaut {_pt(_ec['2015'][0])} à {_pt(_ec['2015'][1])}&nbsp;point (médiane "
+      f"{_pt(_ec['2015'][2])}) de {B15[0]} à {B15[-1]}, et de {_pt(_ec['1997'][0])} à {_pt(_ec['1997'][1])}&nbsp;points "
+      f"(médiane {_pt(_ec['1997'][2])}) de {B97[0]} à {B97[-1]}, où l'écart est moins stable. Aucun écart n'est "
+      "mesurable en base&nbsp;1983, où le seul compte est le consolidé. Les années marquées (c) gardent leur part.\n")
 ```
 
 ::: {.callout-note}
