@@ -13213,6 +13213,102 @@
       "note": "citation-key: minfin-resultats-provisoires-2017-01\nDocument retiré du site du ministère des Finances (finances.gov.tn/images/…, l'adresse répond 404 le 6 octobre 2026) ; consulté dans la capture du 06/06/2017 (horodatage 20170606104853 lu dans le CDX le 6 octobre 2026). La capture est identique octet pour octet à la copie locale de tunisia-data (1 859 573 octets, 22 pages). Titre trilingue lu sur la couverture à l'image : « نتائج وقتية لتنفيذ ميزانية الدولة — لسنة 2016 وموفى جانفي 2017 », « Résultats provisoires de l'Exécution du Budget de l'Etat — A fin 2016 et à fin Janvier 2017 » ; pas de date de parution. Pages non numérotées. Lu à l'image le 6 octobre 2026 : page 9 du PDF, tableau « Dépenses hors service de la dette » (colonnes LF 2017, Prov. 2016, LFC 2016, fin janvier 2017 et 2016, puis 2015, 2014, 2013, 2012), ligne « dont Compensation » : LF 2017 = 2 700,0 (1 600,0 ; 650,0 ; 450,0) ; Prov. 2016 = 2 210,7 (1 580,7 ; 197,0 ; 433,0) ; LFC 2016 = 2 249,0 (1 619,0 ; 197,0 ; 433,0) ; 2015 = 2 882,9 (1 549,0 ; 918,0 ; 415,9) ; 2014 = 4 154,2 (1 416,7 ; 2 353,0 ; 384,5) ; 2013 = 5 514,0 (1 450,0 ; 3 734,0 ; 330,0) ; 2012 = 3 624,1 (1 235,6 ; 2 111,0 ; 277,5). Note de bas de page (1) du bulletin : « Dans le cadre de la LFC 2015, l'hypothése [sic] de prix du Baril de pétrole a été révisée de 95 $ pour la LF à 62 $ pour la LFC et le principe de séparation des opérations de commercialisation des hydrocarbures a été adopté. » (version arabe : « في إطار قانون المالية التكميلي لسنة 2015 تمت مراجعة فرضية سعر برميل النفط من 95 دولار في قانون المالية الأصلي لـ 62 دولار في قانون المالية التكميلي كما تم اعتماد مبدأ فصل عمليات تسويق المحروقات »). Utilisé pour la série 2012-2025 de la compensation (docs/notes/compensation.md, § 10).",
       "archive": "Internet Archive (Wayback Machine)",
       "archive_location": "http://finances.gov.tn/images/R%C3%A9sultats_provisoires_delex%C3%A9cution_du_budget_de_letat_%C3%A0_fin_2016_et_janvier_2017.pdf"
+    },
+    {
+      "id": "bct-bdp-2022",
+      "type": "report",
+      "title": "Balance des paiements et position extérieure globale de la Tunisie 2022",
+      "author": [
+        {
+          "literal": "Banque centrale de Tunisie"
+        }
+      ],
+      "publisher": "Banque centrale de Tunisie",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2023,
+            12
+          ]
+        ]
+      },
+      "URL": "https://www.bct.gov.tn/bct/siteprod/documents/balance2022.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            6,
+            8
+          ]
+        ]
+      },
+      "title-short": "BCT, Balance des paiements 2022",
+      "note": "citation-key: bct-bdp-2022\nTitre (« Balance des paiements et position extérieure globale de la Tunisie ») et date (« Décembre 2023 ») lus sur la couverture, couche texte de la page 1 du PDF. Adresse : catalogue des archives de la BCT (publication 106), copie locale de l'entrepôt de données collectée le 8 juin 2026. Utilisé pour le passage du travail à façon (produits transformés et importations pour fabrication, texte du chapitre sur les services) et pour le tableau de la balance des paiements."
+    },
+    {
+      "id": "bct-bdp-2023",
+      "type": "report",
+      "title": "Balance des paiements et position extérieure globale de la Tunisie 2023",
+      "author": [
+        {
+          "literal": "Banque centrale de Tunisie"
+        }
+      ],
+      "publisher": "Banque centrale de Tunisie",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2024,
+            12
+          ]
+        ]
+      },
+      "URL": "https://www.bct.gov.tn/bct/siteprod/documents/balance2023.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            6,
+            8
+          ]
+        ]
+      },
+      "title-short": "BCT, Balance des paiements 2023",
+      "note": "citation-key: bct-bdp-2023\nTitre (« Balance des paiements et position extérieure globale de la Tunisie ») et date (« Décembre 2024 ») lus sur la couverture, couche texte de la page 1 du PDF. Adresse : catalogue des archives de la BCT (publication 106), copie locale de l'entrepôt de données collectée le 8 juin 2026. Utilisé pour le passage du travail à façon (produits transformés et importations pour fabrication, texte du chapitre sur les services) et pour le tableau de la balance des paiements."
+    },
+    {
+      "id": "bct-bdp-2024",
+      "type": "report",
+      "title": "Balance des paiements et position extérieure globale de la Tunisie 2024",
+      "author": [
+        {
+          "literal": "Banque centrale de Tunisie"
+        }
+      ],
+      "publisher": "Banque centrale de Tunisie",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2025,
+            11
+          ]
+        ]
+      },
+      "URL": "https://www.bct.gov.tn/bct/siteprod/documents/balance2024.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            6,
+            8
+          ]
+        ]
+      },
+      "title-short": "BCT, Balance des paiements 2024",
+      "note": "citation-key: bct-bdp-2024\nTitre (« Balance des paiements et position extérieure globale de la Tunisie ») et date (« Novembre 2025 ») lus sur la couverture, couche texte de la page 1 du PDF. Adresse : catalogue des archives de la BCT (publication 106), copie locale de l'entrepôt de données collectée le 8 juin 2026. Utilisé pour le passage du travail à façon (produits transformés et importations pour fabrication, texte du chapitre sur les services) et pour le tableau de la balance des paiements."
     }
   ]
 }

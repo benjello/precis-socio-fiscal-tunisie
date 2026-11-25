@@ -6,7 +6,7 @@ Ce livre décrira les échanges extérieurs : les exportations et les importatio
 Ce volume est une **ébauche** : une première série est versée, la rédaction reste à faire. Il n'existe pour l'instant qu'en français.
 :::
 
-**Trois familles de chiffres.** []{#sec-echanges-familles}
+## Trois familles de chiffres {#sec-echanges-familles}
 
 Les échanges se lisent dans trois familles de chiffres, aux périmètres différents, que la @fig-echanges-familles met côte à côte sans les fondre : les comptes nationaux de l'INS, biens et services ou biens seuls [@ins-cnat-2015] ; les statistiques douanières de l'INS, exportations FOB et importations CAF [@ins-annuaire] ; la balance des paiements de la Banque centrale, selon la sixième édition du manuel du FMI [@bct-ra-2024].
 
@@ -28,6 +28,40 @@ figtools.figure_tabs(
 ```
 
 En 2023, les exportations de biens sont de 62 077,3 millions de dinars selon la douane et de 62 793,6 selon les comptes nationaux ; les exportations de biens et services, de 79 417,9 dans les comptes nationaux et de 61 306,5 dans la balance des paiements, qui ne compte en biens que 28 081,6 [@ins-cnat-2015 ; @ins-annuaire ; @bct-ra-2024].
+
+## Le travail à façon : de la balance des paiements aux comptes nationaux {#sec-echanges-facon}
+
+Une large part des exportations tunisiennes vient d'entreprises qui transforment des intrants appartenant à des donneurs d'ordre étrangers. La balance des paiements, suivant la sixième édition du manuel du FMI, n'en retient que la rémunération, comptée en services (« services de fabrication fournis sur des intrants physiques détenus par des tiers ») ; les comptes nationaux de l'INS, comme la douane, enregistrent les biens transformés en brut. La Banque centrale publie, dans le texte de son rapport, le montant des exportations de produits ayant subi une transformation et celui des importations expédiées pour motif de fabrication : 35,1 et 20,7 milliards de dinars en 2023 [@bct-bdp-2023, p. 31], 34,7 et 19,9 milliards en 2024 [@bct-bdp-2024, p. 30], 31,5 milliards d'exportations en 2022, les importations n'y étant données que comme dépassant 20 milliards [@bct-bdp-2022, p. 31].
+
+Avec ces montants, le passage de la balance des paiements aux comptes du reste du monde se fait à quelques centaines de millions de dinars près :
+
+| Millions de dinars | 2022 | 2023 | 2024 |
+|---|--:|--:|--:|
+| **Exportations de biens (P.61)** | | | |
+| Biens, balance des paiements | 26 814,8 | 28 081,6 | 27 804,1 |
+| + produits ayant subi une transformation | 31 500 | 35 100 | 34 700 |
+| = passage | 58 314,8 | 63 181,6 | 62 504,1 |
+| Comptes nationaux | 58 630,4 | 62 824,1 | 62 382,2 |
+| Écart (comptes − passage) | 315,6 | −357,5 | −121,9 |
+| **Importations de biens (P.71)** | | | |
+| Biens, balance des paiements | 59 803,8 | 56 181,8 | 58 225,0 |
+| + importations pour motif de fabrication | | 20 700 | 19 900 |
+| = passage | | 76 881,8 | 78 125,0 |
+| Comptes nationaux | 81 258,9 | 77 435,9 | 79 306,4 |
+| Écart (comptes − passage) | | 554,1 | 1 181,4 |
+| **Exportations de services (P.62)** | | | |
+| Services, balance des paiements | 26 826,6 | 33 224,9 | 34 898,1 |
+| − services de fabrication | 11 456,5 | 14 427,8 | 14 783,6 |
+| − redevance gaz | 1 807,4 | 2 093,7 | 1 688,4 |
+| = passage | 13 562,7 | 16 703,4 | 18 426,1 |
+| Comptes nationaux | 12 940,9 | 16 593,8 | 17 492,2 |
+| Écart (comptes − passage) | −621,8 | −109,6 | −933,9 |
+
+: Passage de la balance des paiements aux exportations et importations du compte du reste du monde, 2022-2024 (millions de dinars courants ; balance des paiements : édition la plus récente qui publie l'année ; comptes nationaux : édition 2021-2025, 2024 semi-définitif) {#tbl-echanges-facon}
+
+Sources : balance des paiements, tableaux de la balance et texte du rapport [@bct-bdp-2022 ; @bct-bdp-2023 ; @bct-bdp-2024] ; comptes du reste du monde [@ins-cnat-2015].
+
+Les montants des produits transformés ne sont publiés qu'au dixième de milliard : un écart de quelques dizaines de millions est dans l'arrondi. Les écarts restants, de 0,1 à 1,2 milliard de dinars selon l'année et l'opération, ne sont pas expliqués. La redevance perçue sur le passage du gaz algérien est rangée par la balance des paiements en services de transport ; les comptes nationaux semblent la ranger en loyers (D.45) — le D.45 versé par le reste du monde vaut 2 097,7 millions de dinars en 2023, pour une redevance de 2 093,7 —, ce que la documentation de l'INS ne dit pas.
 
 <!-- TODO (rédacteur) : échanges par produit (cnat-produits) ; écart de 2005 entre la douane et
      les biens des comptes nationaux, à expliquer ; régimes (offshore), par renvoi à la fiscalité. -->
