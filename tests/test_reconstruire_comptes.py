@@ -58,6 +58,15 @@ class TestReconstruction(unittest.TestCase):
         self.assertIsNotNone(m)
         self.assertEqual(couv, "2020-2023")
 
+    def test_fin_encadre_poste_borne(self):
+        import reconstruire_comptes as rc
+        borne = {"montant_reference": "", "colonne": "CNSS|recettes techniques|2021-2023", "annees": "2021-2023"}
+        self.assertIn("chiffre les années 2021-2023, non l'année de référence 2020", rc.fin_encadre(borne, 2020))
+        sans = {"montant_reference": "", "colonne": "CNAM|recettes techniques", "annees": "2020-2023"}
+        self.assertIn("ne chiffre pas encore", rc.fin_encadre(sans, 2020))
+        avec = {"montant_reference": "3430.0", "colonne": "cotisations_md", "annees": "2000-2020"}
+        self.assertIn("en chiffre 3 430,0", rc.fin_encadre(avec, 2020))
+
     def test_residu_egal_cible_moins_postes(self):
         for l in lire("compte-apu-reconstruit.csv"):
             if l["somme_postes_md"]:

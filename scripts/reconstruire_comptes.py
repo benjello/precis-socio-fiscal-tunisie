@@ -130,6 +130,16 @@ def montant(serie: str, colonne: str, annee: int) -> tuple[float | None, str]:
     return (vals[-1] if vals else None), couv
 
 
+def fin_encadre(p: dict, an: int) -> str:
+    """Fin de la phrase de l'encadré : montant de l'année de référence ; pour un poste borné à une période
+    (colonne « …|AAAA-AAAA ») sans valeur cette année-là, les années qu'il chiffre."""
+    if p["montant_reference"]:
+        return f" ; l'ouvrage en chiffre {fr(p['montant_reference'])} pour ce dispositif."
+    if re.search(r"\|\d{4}-\d{4}$", p.get("colonne", "")) and p.get("annees"):
+        return f" ; ce poste chiffre les années {p['annees']}, non l'année de référence {an}."
+    return " ; l'ouvrage ne chiffre pas encore ce dispositif."
+
+
 def source_serie(serie: str, snapshot: dict) -> str:
     e = snapshot.get(serie)
     return (e.get("sources") or [""])[0] if e else ""
@@ -305,8 +315,7 @@ def main(argv=None) -> int:
                   f"En {an} (édition {ed}), en millions de dinars, {flux}.")
         if l:
             phrase += f" Les administrations publiques y inscrivent {fr(l['cible_ins_md'])} millions de dinars ({p['cote']})"
-            phrase += (f" ; l'ouvrage en chiffre {fr(p['montant_reference'])} pour ce dispositif." if p["montant_reference"]
-                       else " ; l'ouvrage ne chiffre pas encore ce dispositif.")
+            phrase += fin_encadre(p, an)
         (ENCADRES / f"{p['poste']}.md").write_text(
             f"::: {{.callout-tip title=\"Dans les comptes\"}}\n{phrase} Voir [le compte reconstruit]({lien}).\n:::\n",
             encoding="utf-8")
