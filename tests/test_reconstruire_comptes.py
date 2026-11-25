@@ -61,9 +61,20 @@ class TestReconstruction(unittest.TestCase):
     def test_fin_encadre_poste_borne(self):
         import reconstruire_comptes as rc
         borne = {"montant_reference": "", "colonne": "CNSS|recettes techniques|2021-2023", "annees": "2021-2023"}
-        self.assertIn("chiffre les années 2021-2023, non l'année de référence 2020", rc.fin_encadre(borne, 2020))
+        self.assertIn("chiffre les années 2021-2023, non l'année de référence 2020", rc.fin_encadre(borne, 2020, [2021, 2022, 2023]))
         sans = {"montant_reference": "", "colonne": "CNAM|recettes techniques", "annees": "2020-2023"}
-        self.assertIn("ne chiffre pas encore", rc.fin_encadre(sans, 2020))
+        self.assertIn("ne chiffre pas encore", rc.fin_encadre(sans, 2020, []))
+        # poste non borné sans valeur l'année de référence : ses années, suivies ou discontinues
+        self.assertIn("chiffre les années 2022-2024, non l'année de référence 2020", rc.fin_encadre(sans, 2020, [2022, 2023, 2024]))
+        self.assertIn("chiffre les années 2019, 2021 et 2023, non", rc.fin_encadre(sans, 2020, [2019, 2021, 2023]))
+        self.assertIn("chiffre l'année 2023, non", rc.fin_encadre(sans, 2020, [2023]))
+        self.assertEqual(rc.liste_annees([2008, 2009, 2010, 2022, 2023]), "2008-2010 et 2022-2023")
+        # années lues dans la série : P.61 n'a de valeur qu'à partir de 2022 ; fenêtre d'un poste borné respectée
+        p61 = {"serie": "bct-bdp-postes-s2", "colonne": "P.61 exportations de biens"}
+        self.assertEqual(rc.annees_chiffrees(p61), [2022, 2023, 2024])
+        self.assertEqual(rc.annees_chiffrees({"serie": "minfin-ep-caisses", "colonne": "CNSS|recettes techniques|2021-2023"}),
+                         [2021, 2022, 2023])
+        self.assertEqual(rc.annees_chiffrees({"serie": "", "colonne": ""}), [])
         avec = {"montant_reference": "3430.0", "colonne": "cotisations_md", "annees": "2000-2020"}
         self.assertIn("en chiffre 3 430,0", rc.fin_encadre(avec, 2020))
 
