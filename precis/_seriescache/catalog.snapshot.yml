@@ -1432,8 +1432,10 @@
     2008-2023'
   sources:
   - dgct-donnees-ouvertes
+  - hifl-rapport-annuel-2020
   build: uv run --with openpyxl --with xlrd python scripts/build_finances_locales_communes.py
   raw:
+  - data/raw/finances_locales/dgct/2020_hifl_rapport_annuel.pdf
   - data/raw/finances_locales/dgct_portail/Données-Financières-Globales.xls
   - data/raw/finances_locales/dgct_portail/fiscaliteslocale.xls
   - data/raw/finances_locales/dgct_portail/fccl.xls
@@ -1445,7 +1447,8 @@
   perimetre: 'communes (budgets, comptabilité publique, réalisations) ; quotes-parts
     FCCL et dotation exceptionnelle aussi pour les conseils régionaux. 2008-2019 :
     agrégats publiés par la DGCT (communes_dgct_agregats_2008_2019.csv) ; 2018-2023
-    : somme des 350 budgets par commune. Colonnes source, statut, retenu.'
+    : somme des 350 budgets par commune ; parties du titre 1 en 2017-2020 selon la
+    HIFL (350 communes). Colonnes source, statut, retenu.'
   caveats: 'DEUX SOURCES, GARDÉES TOUTES DEUX SUR 2018-2019 (colonne `retenu` : DGCT
     jusqu''en 2019, somme des communes ensuite). Les recettes concordent à l''arrondi
     près ; LES DÉPENSES NON (titre 1 : +1,7 MD en 2018, +7,2 MD en 2019 ; titre 2
@@ -1457,7 +1460,11 @@
     la DGCT garde l''intitulé « subventions annuelles » en 2018-2019 : rupture de
     nature ; réserve à 18 % jusqu''en 2017, 15 % ensuite. Les recettes du titre 2
     comprennent l''épargne et les excédents reportés du titre 1 : T1 + T2 n''est pas
-    un total consolidé. Recettes fiscales = catégories 1 et 2 (nomenclature 2018-2022),
+    un total consolidé. RÉMUNÉRATIONS, MOYENS DES SERVICES, INTERVENTIONS 2020 = HIFL,
+    rapport annuel 2020, p. 51 et annexe 12 p. 179 (source hifl_rapport_2020, niveau
+    hifl_2020 ; détail et pages dans communes_hifl_depenses_2017_2020.csv), absents
+    en 2021 ; interventions 2019 : 92 MD à la DGCT contre 72,4 à la HIFL, rupture
+    non tranchée. Recettes fiscales = catégories 1 et 2 (nomenclature 2018-2022),
     qui exclut les catégories 3-4 rangées parmi les recettes fiscales en 2023. PÉRIMÈTRE
     NON CONSTANT : 264 communes en 2012, 350 à partir de 2016-2017. Montants courants.'
   titre_ar: 'مالية البلديات: تنفيذ الميزانية والجباية المحلية والمال المشترك للجماعات
