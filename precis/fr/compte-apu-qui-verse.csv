@@ -32,6 +32,8 @@ annee,edition,operation,code_scn,libelle_ins,secteur,niveau,cote,valeur_md
 2020,2020-2024,cotisations_sociales,D.61,Cotisations sociales,administration centrale,sous-secteur,ressources,636.9
 2020,2020-2024,cotisations_sociales,D.61,Cotisations sociales,collectivités locales,sous-secteur,ressources,11.8
 2020,2020-2024,cotisations_sociales,D.61,Cotisations sociales,sécurité sociale,sous-secteur,ressources,11664.9
+2020,2020-2024,exportations_biens,P.61,Exportation de biens,reste du monde,secteur,emplois,38830.9
+2020,2020-2024,exportations_services,P.62,Exportation de services,reste du monde,secteur,emplois,6570.2
 2020,2020-2024,fbcf,P.51g,Formation Brute de capitale Fixe,sociétés non financières,secteur,emplois,7079.3
 2020,2020-2024,fbcf,P.51g,Formation Brute de capitale Fixe,sociétés financières,secteur,emplois,330.6
 2020,2020-2024,fbcf,P.51g,Formation Brute de capitale Fixe,administrations publiques,secteur,emplois,5479.1
@@ -39,6 +41,8 @@ annee,edition,operation,code_scn,libelle_ins,secteur,niveau,cote,valeur_md
 2020,2020-2024,fbcf,P.51g,Formation Brute de capitale Fixe,administration centrale,sous-secteur,emplois,5086.4
 2020,2020-2024,fbcf,P.51g,Formation Brute de capitale Fixe,collectivités locales,sous-secteur,emplois,386.3
 2020,2020-2024,fbcf,P.51g,Formation Brute de capitale Fixe,sécurité sociale,sous-secteur,emplois,6.4
+2020,2020-2024,importations_biens,P.71,Importation de biens,reste du monde,secteur,ressources,50031.1
+2020,2020-2024,importations_services,P.72,Importation de services,reste du monde,secteur,ressources,5348.0
 2020,2020-2024,impots_courants,D.5,Impôts courants sur les revenus et le patrimoine,sociétés non financières,secteur,emplois,5238.9
 2020,2020-2024,impots_courants,D.5,Impôts courants sur les revenus et le patri-,sociétés financières,secteur,emplois,760.2
 2020,2020-2024,impots_courants,D.5,Impôts courants sur les revenus et le patrimoine,administrations publiques,secteur,emplois,8.7

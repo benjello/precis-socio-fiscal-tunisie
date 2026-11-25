@@ -7738,3 +7738,101 @@
     دفع المشغلين مساهمة ستة وثلاثين شهرا دفعة واحدة. لا تفصل النفقات بين جرايات المتقاعدين
     وجرايات الأرامل.'
   fiche: sources/cnrps-etats-financiers.md
+- id: cnat-d63
+  titre: 'Transferts sociaux en nature (D.63) : prestations sociales en nature et
+    transferts de biens et services individuels non marchands, éditions 2005-2009
+    à 2021-2025'
+  sources:
+  - ins-cnat-2015
+  build: scripts/extraire_cnat_d63.py:main
+  raw:
+  - data/raw/ins-publications/comptes-de-la-nation
+  output: data/processed/ins-comptes-nationaux/cnat_d63.csv
+  unite: millions de dinars courants
+  perimetre: 'Tableau « Transferts sociaux en nature » des Comptes de la nation de
+    l''INS, publié à part des comptes des secteurs (base 1997 depuis l''édition 2005-2009,
+    base 2015) : en ressources, le total et ses deux composantes reçues par les ménages
+    ; en emplois, le total, les prestations sociales en nature versées par les administrations
+    publiques (D.631), les transferts de biens et services individuels non marchands
+    des administrations publiques et des ménages (D.632). Page du fichier pour chaque
+    valeur. Contrôles dans cnat_d63_controles.csv : total égal à la somme des composantes
+    et ressources égales aux emplois (228 sur 228).'
+  caveats: 'DEUX BASES, JAMAIS CHAÎNÉES : filtrer `base`. Une année publiée par plusieurs
+    éditions garde toutes ses lectures. Un groupe de milliers mal imprimé (« 1 0869,5
+    », édition 2015-2020) est recollé et marqué `lecture = milliers_recolles`. Le
+    tableau économique d''ensemble (compte II.3) reprend le total par secteur.'
+  fiche: sources/ins-comptes-nationaux-publications.md
+  licences:
+  - 'INS (sources ins-*) : conditions d''utilisation de l''INS, https://ins.tn/en/conditions-utilisation
+    (consultées le 2026-10-27) : réutilisation commerciale et non commerciale, redistribution
+    et transformation autorisées ; citer le producteur et la date de mise à jour,
+    ne pas suggérer une caution officielle ni tromper sur le contenu ; droit tunisien'
+- id: bct-bdp-postes-s2
+  titre: 'Reste du monde : postes du compte de l''INS tirés de la balance des paiements
+    de la BCT, passage du travail à façon compris, 2019-2024'
+  sources:
+  - bct-balance-paiements
+  build: scripts/passage_bdp_scn.py
+  raw:
+  - data/raw/bct-archives/106
+  - sources/bct-produits-transformes.csv
+  output: data/processed/bct/bct_bdp_postes_s2.csv
+  unite: millions de dinars courants
+  perimetre: 'une ligne par (année, indicateur) : P.61 (biens + exportations de produits
+    transformés), P.71 (biens + importations pour fabrication), P.62 (services − services
+    de fabrication − redevance gaz), P.72, D.1 et D.4 reçus et versés, D.7 versés
+    ; dernière édition de la balance des paiements qui publie l''année'
+  caveats: 'Les montants de produits transformés et d''importations pour fabrication
+    viennent du texte des rapports de la BCT, au dixième de milliard (sources/bct-produits-transformes.csv)
+    : P.61 en 2022-2024, P.71 en 2023-2024 seulement (2022 : « plus de 20 milliards
+    », non retenu). La redevance gaz est retirée des services comme dans le passage
+    établi ; son rangement en loyers (D.45) dans les comptes n''est pas documenté
+    par l''INS. Le reste du passage (D.1, D.4) n''est pas rapproché : la balance des
+    paiements et les comptes de la nation y diffèrent sensiblement (voir bct_bdp_passage_s2.csv).'
+  titre_ar: 'بقية العالم: بنود حساب المعهد الوطني للإحصاء المستخرجة من ميزان المدفوعات،
+    2019-2024'
+  unite_ar: ملايين الدنانير الجارية
+  perimetre_ar: 'سطر لكل سنة ومؤشر: صادرات وواردات السلع والخدمات بعد احتساب التحويل
+    لفائدة الغير، والأجور ومداخيل الاستثمار والتحويلات الجارية'
+  caveats_ar: مبالغ المنتجات المحولة مأخوذة من نص تقارير البنك المركزي بدقة عُشر المليار.
+  fiche: sources/bct-balance-paiements.md
+- id: minfin-ep-caisses
+  titre: 'CNSS, CNRPS et CNAM : comptes de résultat d''après le rapport sur les entreprises
+    publiques, 2020-2023 (éditions LF 2024 et LF 2025)'
+  sources:
+  - minfin-ep-2024
+  - minfin-ep-2025
+  build: scripts/extraire_minfin_ep_caisses.py
+  raw:
+  - data/raw/caisses/minfin/rapport_ep_LF2024.pdf
+  - data/raw/caisses/minfin/rapport_ep_LF2025.pdf
+  output: data/processed/caisses/minfin_ep_caisses.csv
+  unite: millions de dinars courants
+  perimetre: 'tableau des trois caisses sociales (LF 2024 : tableau 28, p. 67-68 ;
+    LF 2025 : p. 43-44) : recettes techniques, subventions et autres produits d''exploitation,
+    total des produits et des charges d''exploitation, charges de personnel, résultat
+    d''exploitation, charges financières nettes, produits des placements ou autres
+    produits ordinaires, résultat net avant et après modifications comptables ; une
+    ligne par (caisse, année, édition, grandeur), avec le statut imprimé sous l''année
+    et la position de la valeur sur la page'
+  caveats: 'CAISSE ENTIÈRE, toutes branches. STATUT TEL QU''IMPRIMÉ : LF 2024 n''en
+    donne aucun pour 2020 et 2021 (« sans mention ») et marque 2022 provisoire ; LF
+    2025 marque 2021-2022 réalisés, 2023 provisoire (CNSS, CNRPS) ou estimation (CNAM).
+    Les recettes techniques de la CNSS (3 430 MD en 2020) sont égales aux cotisations
+    publiées par la caisse. Aucune ligne « pensions » ni « prestations » : les charges
+    d''exploitation sont un total. Écarts imprimés, non corrigés, dans la colonne
+    note : total des produits CNRPS hors subventions dans la LF 2024 ; résultat d''exploitation
+    CNAM 2020-2021 de la LF 2024 supérieur de 3 MD à produits − charges. La ligne
+    CNRPS concorde avec cnrps-minfin-entreprises-publiques, transcrite à la main (60
+    valeurs sur 60).'
+  titre_ar: 'الصناديق الاجتماعية الثلاثة: قائمة النتائج حسب التقرير حول المنشآت العمومية،
+    2020-2023 (مشروعا قانون المالية 2024 و2025)'
+  unite_ar: ملايين الدنانير الجارية
+  perimetre_ar: 'جدول الصناديق الاجتماعية في التقرير حول المنشآت العمومية: الإيرادات
+    الفنية ومنح الاستغلال وإيرادات الاستغلال الأخرى ومجموع إيرادات وأعباء الاستغلال
+    وأعباء الأعوان ونتيجة الاستغلال والنتيجة الصافية، سطر لكل صندوق وسنة ونسخة ومؤشر
+    مع الصفة المطبوعة (منجز، وقتي، تقديري)'
+  caveats_ar: 'الصندوق بأكمله. الصفة كما طُبعت: لا صفة لسنتي 2020 و2021 في نسخة 2024.
+    الإيرادات الفنية للصندوق الوطني للضمان الاجتماعي تساوي المساهمات التي ينشرها الصندوق.
+    لا سطر للجرايات: الأعباء مجموع. الفوارق المطبوعة مذكورة دون تصحيح.'
+  fiche: sources/minfin-ep-caisses.md

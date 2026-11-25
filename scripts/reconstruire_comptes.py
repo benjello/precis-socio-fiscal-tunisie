@@ -107,9 +107,12 @@ def montant(serie: str, colonne: str, annee: int) -> tuple[float | None, str]:
         vals = [float(l["valeur"]) for l in lignes if str(l["annee"]) == str(annee) and l["variable"] == colonne
                 and str(l.get("retenu", "True")) in ("True", "true", "1")]
         return (vals[-1] if vals else None), couv
-    if "indicateur" in lignes[0] and "valeur" in lignes[0]:  # série longue : une ligne par (année, indicateur)
-        vals = [float(l["valeur"]) for l in lignes if str(l["annee"]) == str(annee) and l["indicateur"].startswith(colonne)]
-        return (vals[-1] if vals else None), couv
+    if "indicateur" in lignes[0] and ("valeur" in lignes[0] or "valeur_md" in lignes[0]):  # série longue : (année, indicateur)
+        champ = "valeur" if "valeur" in lignes[0] else "valeur_md"
+        caisse, _, ind = colonne.rpartition("|")  # « CNAM|recettes techniques » : filtre sur la colonne caisse
+        vals = [float(l[champ]) for l in lignes if str(l["annee"]) == str(annee) and l["indicateur"].startswith(ind)
+                and (not caisse or l.get("caisse") == caisse)]
+        return (vals[-1] if vals else None), couv  # la dernière ligne : l'édition la plus récente
     vals = [float(l[colonne]) for l in lignes if str(l["annee"]) == str(annee) and l.get(colonne, "") != ""]
     return (vals[-1] if vals else None), couv
 

@@ -63,5 +63,33 @@ Sources : balance des paiements, tableaux de la balance et texte du rapport [@bc
 
 Les montants des produits transformés ne sont publiés qu'au dixième de milliard : un écart de quelques dizaines de millions est dans l'arrondi. Les écarts restants, de 0,1 à 1,2 milliard de dinars selon l'année et l'opération, ne sont pas expliqués. La redevance perçue sur le passage du gaz algérien est rangée par la balance des paiements en services de transport ; les comptes nationaux semblent la ranger en loyers (D.45) — le D.45 versé par le reste du monde vaut 2 097,7 millions de dinars en 2023, pour une redevance de 2 093,7 —, ce que la documentation de l'INS ne dit pas.
 
+## Le reste du monde dans les comptes {#sec-echanges-comptes}
+
+Les postes ci-dessous rattachent la balance des paiements de la Banque centrale [@bct-bdp-2022 ; @bct-bdp-2023 ; @bct-bdp-2024] aux opérations du compte du reste du monde [@ins-cnat-2015], avec le passage du travail à façon établi plus haut pour les biens et les services.
+
+### Exportations de biens {#sec-echanges-p61}
+
+{{< include ../encadres-comptes/exportations-biens.md >}}
+
+### Importations de biens {#sec-echanges-p71}
+
+{{< include ../encadres-comptes/importations-biens.md >}}
+
+### Exportations de services {#sec-echanges-p62}
+
+{{< include ../encadres-comptes/exportations-services.md >}}
+
+### Importations de services {#sec-echanges-p72}
+
+{{< include ../encadres-comptes/importations-services.md >}}
+
+### Rémunération reçue des non-résidents {#sec-echanges-d1-recue}
+
+{{< include ../encadres-comptes/remunerations-recues-du-rdm.md >}}
+
+### Rémunération versée aux non-résidents {#sec-echanges-d1-versee}
+
+{{< include ../encadres-comptes/remunerations-versees-au-rdm.md >}}
+
 <!-- TODO (rédacteur) : échanges par produit (cnat-produits) ; écart de 2005 entre la douane et
      les biens des comptes nationaux, à expliquer ; régimes (offshore), par renvoi à la fiscalité. -->
