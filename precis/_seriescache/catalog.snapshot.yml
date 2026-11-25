@@ -7787,15 +7787,24 @@
   unite: millions de dinars courants
   perimetre: 'une ligne par (année, indicateur) : P.61 (biens + exportations de produits
     transformés), P.71 (biens + importations pour fabrication), P.62 (services − services
-    de fabrication − redevance gaz), P.72, D.1 et D.4 reçus et versés, D.7 versés
-    ; dernière édition de la balance des paiements qui publie l''année'
+    de fabrication − redevance gaz), P.72, D.1 et D.4 reçus et versés, D.7 versés,
+    puis, du revenu secondaire en crédits (1.3), les administrations publiques, les
+    transferts personnels et, dont, les envois de fonds des travailleurs ; dernière
+    édition de la balance des paiements qui publie l''année'
   caveats: 'Les montants de produits transformés et d''importations pour fabrication
     viennent du texte des rapports de la BCT, au dixième de milliard (sources/bct-produits-transformes.csv)
     : P.61 en 2022-2024, P.71 en 2023-2024 seulement (2022 : « plus de 20 milliards
     », non retenu). La redevance gaz est retirée des services comme dans le passage
     établi ; son rangement en loyers (D.45) dans les comptes n''est pas documenté
     par l''INS. Le reste du passage (D.1, D.4) n''est pas rapproché : la balance des
-    paiements et les comptes de la nation y diffèrent sensiblement (voir bct_bdp_passage_s2.csv).'
+    paiements et les comptes de la nation y diffèrent sensiblement (voir bct_bdp_passage_s2.csv).
+    Sous-postes du revenu secondaire reçu (crédits) : passage à une opération SCN
+    « à déterminer » pour les trois, aucune source retenue (note de la BCT, rapport
+    2022 p. 71 ; MBP6 p. 226 et 322) ne les rattache à une opération SCN ; le MBP6
+    range les administrations publiques sous D.61, D.62+D.63, D.74, D.75, et les transferts
+    personnels sans code SCN (le SCN 2008 les nomme D.752). Le D.7+D.5 du reste du
+    monde en emplois (11 645,4 en 2023) n''est pas décomposé par secteur de contrepartie
+    : sources/bct-bdp-passage-scn.csv'
   titre_ar: 'بقية العالم: بنود حساب المعهد الوطني للإحصاء المستخرجة من ميزان المدفوعات،
     2019-2024'
   unite_ar: ملايين الدنانير الجارية

@@ -79,6 +79,22 @@ La balance des paiements range les transferts courants versés aux non-résident
 
 Sources : balance des paiements [@bct-bdp-2022, p. 45 ; @bct-bdp-2023, p. 45 ; @bct-bdp-2024, p. 43 et 45] ; comptes du reste du monde [@ins-cnat-2015].
 
+## Transferts personnels reçus des non-résidents {#sec-echanges-d75-recue}
+
+{{< include ../encadres-comptes/transferts-personnels-recus-du-rdm.md >}}
+
+```{python}
+#| echo: false
+import sys; sys.path.insert(0, "../../../scripts")
+import passage_comptes as pc
+_tp = {l["annee"]: l for l in pc.lignes("transferts-personnels-recus-du-rdm")}
+_tpx = pc.extremes(_tp)
+_tpa = {k: _tpx[k] + ("" if _tp[int(_tpx[k])]["statut"] == "definitif" else ", année semi-définitive")
+        for k in ("an_min", "an_max")}
+```
+
+La balance des paiements range les transferts personnels reçus des non-résidents en revenu secondaire, au crédit [@bct-bdp-2022 ; @bct-bdp-2023 ; @bct-bdp-2024]. Le SCN 2008 définit les transferts courants entre ménages, résidents ou non résidents, et précise que, dans le contexte des transferts de fonds, ils sont « souvent appelés “transferts personnels” » [@sna2008, éd. française, § 8.133, p. 181] ; ils font partie des transferts courants divers (D.75) [@sna2008, éd. française, § 8.129, p. 180]. Le poste est donc inscrit en D.75, versé par le reste du monde et reçu par les ménages. De `{python} _tpx["premier"]` à `{python} _tpx["dernier"]`, il représente de `{python} _tpx["min"]` (`{python} _tpa["an_min"]`) à `{python} _tpx["max"]` (`{python} _tpa["an_max"]`) des transferts courants divers versés par le reste du monde dans les comptes [@ins-cnat-2015]. Ce D.75 comprend d'autres transferts que les transferts personnels ; la balance des paiements ne permet pas d'identifier cette autre partie.
+
 ## Le reste du monde dans les comptes {#sec-echanges-comptes}
 
 Les postes ci-dessous rattachent la balance des paiements de la Banque centrale [@bct-bdp-2022 ; @bct-bdp-2023 ; @bct-bdp-2024] aux opérations du compte du reste du monde [@ins-cnat-2015], avec le passage du travail à façon établi plus haut pour les biens et les services.
