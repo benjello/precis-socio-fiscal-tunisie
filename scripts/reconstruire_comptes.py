@@ -325,9 +325,15 @@ def phrase_montant(p: dict, cible_s13: dict, qui: list[dict], an: int) -> str:
     return f" {SUJETS[cote_secs[0]]} {fr(v[0]['valeur_md'])} millions de dinars ({p['cote']})" + fin_encadre(p, an)
 
 
-def source_serie(serie: str, snapshot: dict) -> str:
+def source_serie(serie: str, snapshot: dict, inscrite: str = "") -> str:
+    """Première clé de citation de la série ; une liste « k1;k2;… » inscrite au registre est gardée quand toutes
+    ses clés sont des sources de la série (les éditions effectivement lues, quand la série en réunit plusieurs)."""
     e = snapshot.get(serie)
-    return (e.get("sources") or [""])[0] if e else ""
+    sources = (e.get("sources") or []) if e else []
+    cles = [k for k in inscrite.split(";") if k]
+    if len(cles) > 1 and all(k in sources for k in cles):
+        return ";".join(cles)
+    return sources[0] if sources else ""
 
 
 def ancre_existe(volume: str, chapitre: str, ancre: str) -> bool:
@@ -353,7 +359,7 @@ def calculer(an: int, ed: str, secteurs: list[dict], snapshot: dict):
                 m *= float(p["facteur"])
             p["montant_reference"] = "" if m is None else f"{m:.1f}"
             p["annees"] = couv
-            p["source"] = source_serie(p["serie"], snapshot)
+            p["source"] = source_serie(p["serie"], snapshot, p.get("source", ""))
         else:
             p["montant_reference"], p["annees"], p["source"] = "", "", ""
     # Cibles de l'INS, édition la plus récente, année de référence

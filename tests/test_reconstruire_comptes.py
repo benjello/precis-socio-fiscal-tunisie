@@ -68,6 +68,12 @@ class TestReconstruction(unittest.TestCase):
         # le poste du registre : 19 sociétés non financières, 2020
         p = next(x for x in lire("postes-comptables.csv") if x["poste"] == "remunerations-entreprises-publiques")
         self.assertEqual(rc.montant(p["serie"], p["colonne"], 2020), (2062.4, "2018-2023"))
+        # source : les éditions lues, inscrites au registre, gardées si ce sont des sources de la série
+        self.assertEqual(p["source"], "minfin-ep-2022;minfin-ep-2024;minfin-ep-2025")
+        snap = {"s": {"sources": ["a", "b", "c"]}}
+        self.assertEqual(rc.source_serie("s", snap, "b;c"), "b;c")
+        self.assertEqual(rc.source_serie("s", snap, "b;x"), "a")
+        self.assertEqual(rc.source_serie("s", snap, ""), "a")
 
     def test_fin_encadre_poste_borne(self):
         import reconstruire_comptes as rc
