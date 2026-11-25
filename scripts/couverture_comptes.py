@@ -8,6 +8,10 @@
   tous les postes sont propres au secteur (un poste qui chiffre l'opération pour plusieurs secteurs,
   comme la TVA versée par les ménages et les sociétés, ne peut pas être rapproché du montant d'un seul).
 
+- **Part du montant couverte** (indicateur principal) : somme, sur les opérations, des postes propres au
+  secteur (valeur absolue) plafonnée au montant INS de l'opération, rapportée au total du compte. Un poste
+  partiel ne couvre que son montant ; un poste qui chiffre plusieurs secteurs ne compte pas.
+
 Fonctions pures, testées par tests/test_couverture_comptes.py ; appelées par reconstruire_comptes.py.
 """
 from __future__ import annotations
@@ -89,7 +93,7 @@ def postes_de_la_ligne(l: dict, rattaches: dict) -> list:
 
 def indicateurs(ops: list[dict], rattaches: dict) -> dict:
     """ops : feuilles du secteur ; rattaches : sortie de postes_du_secteur."""
-    total = couvert = j_postes = j_ins = 0.0
+    total = couvert = montant = j_postes = j_ins = 0.0
     n_chiffrees = n_justesse = 0
     for l in ops:
         v = float(l["valeur"])
@@ -99,6 +103,8 @@ def indicateurs(ops: list[dict], rattaches: dict) -> dict:
             continue
         n_chiffrees += 1
         couvert += abs(v)
+        # part du montant : postes propres au secteur seulement, en valeur absolue, plafonnés au montant de l'INS
+        montant += min(sum(abs(m) for m, propre in chiffres if propre), abs(v))
         if all(propre for _, propre in chiffres) and v:
             n_justesse += 1
             j_postes += abs(sum(m for m, _ in chiffres))
@@ -106,6 +112,8 @@ def indicateurs(ops: list[dict], rattaches: dict) -> dict:
     return {"operations": len(ops), "operations_chiffrees": n_chiffrees,
             "ins_total_md": round(total, 1), "ins_couvert_md": round(couvert, 1),
             "part_couverte_pct": round(100 * couvert / total, 1) if total else "",
+            "montant_couvert_md": round(montant, 1),
+            "part_montant_couverte_pct": round(100 * montant / total, 1) if total else "",
             "operations_justesse": n_justesse,
             "postes_justesse_md": round(j_postes, 1), "ins_justesse_md": round(j_ins, 1),
             "justesse_pct": round(100 * j_postes / j_ins, 1) if j_ins else ""}
@@ -118,11 +126,13 @@ SOUS_SECTEURS_S13 = ("S1311", "S1313", "S1314")
 
 def agreger(resultats: list[dict]) -> dict:
     """Indicateurs d'un ensemble de secteurs, par somme des numérateurs et des dénominateurs."""
-    t = {k: sum(float(r[k]) for r in resultats) for k in ("ins_total_md", "ins_couvert_md", "postes_justesse_md", "ins_justesse_md")}
+    t = {k: sum(float(r[k]) for r in resultats) for k in ("ins_total_md", "ins_couvert_md", "montant_couvert_md", "postes_justesse_md", "ins_justesse_md")}
     n = {k: sum(int(r[k]) for r in resultats) for k in ("operations", "operations_chiffrees", "operations_justesse")}
     return {"operations": n["operations"], "operations_chiffrees": n["operations_chiffrees"],
             "ins_total_md": round(t["ins_total_md"], 1), "ins_couvert_md": round(t["ins_couvert_md"], 1),
             "part_couverte_pct": round(100 * t["ins_couvert_md"] / t["ins_total_md"], 1) if t["ins_total_md"] else "",
+            "montant_couvert_md": round(t["montant_couvert_md"], 1),
+            "part_montant_couverte_pct": round(100 * t["montant_couvert_md"] / t["ins_total_md"], 1) if t["ins_total_md"] else "",
             "operations_justesse": n["operations_justesse"],
             "postes_justesse_md": round(t["postes_justesse_md"], 1), "ins_justesse_md": round(t["ins_justesse_md"], 1),
             "justesse_pct": round(100 * t["postes_justesse_md"] / t["ins_justesse_md"], 1) if t["ins_justesse_md"] else ""}
