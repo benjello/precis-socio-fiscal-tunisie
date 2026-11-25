@@ -1,0 +1,533 @@
+edition,base,cote,operation,code_scn2008,contrepartie,libelle_ins,annee,valeur_md,statut_annee,page_fichier,lecture
+2005-2009,1997,ressources,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2005,3935.3,definitif,128,lu
+2005-2009,1997,ressources,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2006,4227.2,definitif,128,lu
+2005-2009,1997,ressources,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2007,4494.3,definitif,128,lu
+2005-2009,1997,ressources,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2008,4818.7,semi_definitif,128,lu
+2005-2009,1997,ressources,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2009,5285.4,provisoire,128,lu
+2005-2009,1997,ressources,prestations_sociales_nature,D.631,menages,Prestations sociales en nature (Ménages),2005,490.3,definitif,128,lu
+2005-2009,1997,ressources,prestations_sociales_nature,D.631,menages,Prestations sociales en nature (Ménages),2006,516.8,definitif,128,lu
+2005-2009,1997,ressources,prestations_sociales_nature,D.631,menages,Prestations sociales en nature (Ménages),2007,512.2,definitif,128,lu
+2005-2009,1997,ressources,prestations_sociales_nature,D.631,menages,Prestations sociales en nature (Ménages),2008,496.4,semi_definitif,128,lu
+2005-2009,1997,ressources,prestations_sociales_nature,D.631,menages,Prestations sociales en nature (Ménages),2009,567.4,provisoire,128,lu
+2005-2009,1997,ressources,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non marchands (Ménages),2005,3445.0,definitif,128,lu
+2005-2009,1997,ressources,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non marchands (Ménages),2006,3710.4,definitif,128,lu
+2005-2009,1997,ressources,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non marchands (Ménages),2007,3982.0,definitif,128,lu
+2005-2009,1997,ressources,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non marchands (Ménages),2008,4322.3,semi_definitif,128,lu
+2005-2009,1997,ressources,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non marchands (Ménages),2009,4718.0,provisoire,128,lu
+2005-2009,1997,emplois,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2005,3935.3,definitif,128,lu
+2005-2009,1997,emplois,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2006,4227.2,definitif,128,lu
+2005-2009,1997,emplois,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2007,4494.3,definitif,128,lu
+2005-2009,1997,emplois,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2008,4818.7,semi_definitif,128,lu
+2005-2009,1997,emplois,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2009,5285.4,provisoire,128,lu
+2005-2009,1997,emplois,prestations_sociales_nature,D.631,apu,Prestations sociales en nature (APU),2005,490.3,definitif,128,lu
+2005-2009,1997,emplois,prestations_sociales_nature,D.631,apu,Prestations sociales en nature (APU),2006,516.8,definitif,128,lu
+2005-2009,1997,emplois,prestations_sociales_nature,D.631,apu,Prestations sociales en nature (APU),2007,512.2,definitif,128,lu
+2005-2009,1997,emplois,prestations_sociales_nature,D.631,apu,Prestations sociales en nature (APU),2008,496.4,semi_definitif,128,lu
+2005-2009,1997,emplois,prestations_sociales_nature,D.631,apu,Prestations sociales en nature (APU),2009,567.4,provisoire,128,lu
+2005-2009,1997,emplois,transferts_bs_individuels_non_marchands,D.632,apu,Transferts B&S individuels non marchands (APU),2005,3351.9,definitif,128,lu
+2005-2009,1997,emplois,transferts_bs_individuels_non_marchands,D.632,apu,Transferts B&S individuels non marchands (APU),2006,3612.9,definitif,128,lu
+2005-2009,1997,emplois,transferts_bs_individuels_non_marchands,D.632,apu,Transferts B&S individuels non marchands (APU),2007,3880.5,definitif,128,lu
+2005-2009,1997,emplois,transferts_bs_individuels_non_marchands,D.632,apu,Transferts B&S individuels non marchands (APU),2008,4216.3,semi_definitif,128,lu
+2005-2009,1997,emplois,transferts_bs_individuels_non_marchands,D.632,apu,Transferts B&S individuels non marchands (APU),2009,4603.8,provisoire,128,lu
+2005-2009,1997,emplois,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non marchands (Ménages),2005,93.1,definitif,128,lu
+2005-2009,1997,emplois,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non marchands (Ménages),2006,97.5,definitif,128,lu
+2005-2009,1997,emplois,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non marchands (Ménages),2007,101.5,definitif,128,lu
+2005-2009,1997,emplois,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non marchands (Ménages),2008,106.0,semi_definitif,128,lu
+2005-2009,1997,emplois,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non marchands (Ménages),2009,114.3,provisoire,128,lu
+2006-2010,1997,ressources,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2006,4227.2,definitif,122,lu
+2006-2010,1997,ressources,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2007,4494.3,definitif,122,lu
+2006-2010,1997,ressources,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2008,4818.7,definitif,122,lu
+2006-2010,1997,ressources,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2009,5305.7,semi_definitif,122,lu
+2006-2010,1997,ressources,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2010,5936.6,provisoire,122,lu
+2006-2010,1997,ressources,prestations_sociales_nature,D.631,menages,Prestations sociales en nature (Ménages),2006,516.8,definitif,122,lu
+2006-2010,1997,ressources,prestations_sociales_nature,D.631,menages,Prestations sociales en nature (Ménages),2007,512.2,definitif,122,lu
+2006-2010,1997,ressources,prestations_sociales_nature,D.631,menages,Prestations sociales en nature (Ménages),2008,496.4,definitif,122,lu
+2006-2010,1997,ressources,prestations_sociales_nature,D.631,menages,Prestations sociales en nature (Ménages),2009,567.4,semi_definitif,122,lu
+2006-2010,1997,ressources,prestations_sociales_nature,D.631,menages,Prestations sociales en nature (Ménages),2010,770.4,provisoire,122,lu
+2006-2010,1997,ressources,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non marchands (Ménages),2006,3710.4,definitif,122,lu
+2006-2010,1997,ressources,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non marchands (Ménages),2007,3982.0,definitif,122,lu
+2006-2010,1997,ressources,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non marchands (Ménages),2008,4322.3,definitif,122,lu
+2006-2010,1997,ressources,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non marchands (Ménages),2009,4738.4,semi_definitif,122,lu
+2006-2010,1997,ressources,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non marchands (Ménages),2010,5166.2,provisoire,122,lu
+2006-2010,1997,emplois,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2006,4227.2,definitif,122,lu
+2006-2010,1997,emplois,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2007,4494.3,definitif,122,lu
+2006-2010,1997,emplois,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2008,4818.7,definitif,122,lu
+2006-2010,1997,emplois,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2009,5305.7,semi_definitif,122,lu
+2006-2010,1997,emplois,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2010,5936.6,provisoire,122,lu
+2006-2010,1997,emplois,prestations_sociales_nature,D.631,apu,Prestations sociales en nature (APU),2006,516.8,definitif,122,lu
+2006-2010,1997,emplois,prestations_sociales_nature,D.631,apu,Prestations sociales en nature (APU),2007,512.2,definitif,122,lu
+2006-2010,1997,emplois,prestations_sociales_nature,D.631,apu,Prestations sociales en nature (APU),2008,496.4,definitif,122,lu
+2006-2010,1997,emplois,prestations_sociales_nature,D.631,apu,Prestations sociales en nature (APU),2009,567.4,semi_definitif,122,lu
+2006-2010,1997,emplois,prestations_sociales_nature,D.631,apu,Prestations sociales en nature (APU),2010,770.4,provisoire,122,lu
+2006-2010,1997,emplois,transferts_bs_individuels_non_marchands,D.632,apu,Transferts B&S individuels non mar- chands (APU),2006,3612.9,definitif,122,lu
+2006-2010,1997,emplois,transferts_bs_individuels_non_marchands,D.632,apu,Transferts B&S individuels non mar- chands (APU),2007,3880.5,definitif,122,lu
+2006-2010,1997,emplois,transferts_bs_individuels_non_marchands,D.632,apu,Transferts B&S individuels non mar- chands (APU),2008,4216.3,definitif,122,lu
+2006-2010,1997,emplois,transferts_bs_individuels_non_marchands,D.632,apu,Transferts B&S individuels non mar- chands (APU),2009,4627.1,semi_definitif,122,lu
+2006-2010,1997,emplois,transferts_bs_individuels_non_marchands,D.632,apu,Transferts B&S individuels non mar- chands (APU),2010,5049.0,provisoire,122,lu
+2006-2010,1997,emplois,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non marchands (Ménages),2006,97.5,definitif,122,lu
+2006-2010,1997,emplois,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non marchands (Ménages),2007,101.5,definitif,122,lu
+2006-2010,1997,emplois,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non marchands (Ménages),2008,106.0,definitif,122,lu
+2006-2010,1997,emplois,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non marchands (Ménages),2009,111.2,semi_definitif,122,lu
+2006-2010,1997,emplois,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non marchands (Ménages),2010,117.2,provisoire,122,lu
+2007-2011,1997,ressources,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2007,4494.3,definitif,122,lu
+2007-2011,1997,ressources,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2008,4818.7,definitif,122,lu
+2007-2011,1997,ressources,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2009,5523.9,definitif,122,lu
+2007-2011,1997,ressources,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2010,6034.9,semi_definitif,122,lu
+2007-2011,1997,ressources,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2011,6459.3,provisoire,122,lu
+2007-2011,1997,ressources,prestations_sociales_nature,D.631,menages,Prestations sociales en nature (Ménages),2007,512.2,definitif,122,lu
+2007-2011,1997,ressources,prestations_sociales_nature,D.631,menages,Prestations sociales en nature (Ménages),2008,496.4,definitif,122,lu
+2007-2011,1997,ressources,prestations_sociales_nature,D.631,menages,Prestations sociales en nature (Ménages),2009,685.1,definitif,122,lu
+2007-2011,1997,ressources,prestations_sociales_nature,D.631,menages,Prestations sociales en nature (Ménages),2010,849.2,semi_definitif,122,lu
+2007-2011,1997,ressources,prestations_sociales_nature,D.631,menages,Prestations sociales en nature (Ménages),2011,919.2,provisoire,122,lu
+2007-2011,1997,ressources,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non marchands (Ménages),2007,3982.0,definitif,122,lu
+2007-2011,1997,ressources,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non marchands (Ménages),2008,4322.3,definitif,122,lu
+2007-2011,1997,ressources,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non marchands (Ménages),2009,4838.7,definitif,122,lu
+2007-2011,1997,ressources,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non marchands (Ménages),2010,5185.7,semi_definitif,122,lu
+2007-2011,1997,ressources,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non marchands (Ménages),2011,5540.0,provisoire,122,lu
+2007-2011,1997,emplois,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2007,4494.3,definitif,122,lu
+2007-2011,1997,emplois,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2008,4818.7,definitif,122,lu
+2007-2011,1997,emplois,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2009,5523.9,definitif,122,lu
+2007-2011,1997,emplois,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2010,6034.9,semi_definitif,122,lu
+2007-2011,1997,emplois,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2011,6459.3,provisoire,122,lu
+2007-2011,1997,emplois,prestations_sociales_nature,D.631,apu,Prestations sociales en nature (APU),2007,512.2,definitif,122,lu
+2007-2011,1997,emplois,prestations_sociales_nature,D.631,apu,Prestations sociales en nature (APU),2008,496.4,definitif,122,lu
+2007-2011,1997,emplois,prestations_sociales_nature,D.631,apu,Prestations sociales en nature (APU),2009,685.1,definitif,122,lu
+2007-2011,1997,emplois,prestations_sociales_nature,D.631,apu,Prestations sociales en nature (APU),2010,849.2,semi_definitif,122,lu
+2007-2011,1997,emplois,prestations_sociales_nature,D.631,apu,Prestations sociales en nature (APU),2011,919.2,provisoire,122,lu
+2007-2011,1997,emplois,transferts_bs_individuels_non_marchands,D.632,apu,Transferts B&S individuels non mar- chands (APU),2007,3880.5,definitif,122,lu
+2007-2011,1997,emplois,transferts_bs_individuels_non_marchands,D.632,apu,Transferts B&S individuels non mar- chands (APU),2008,4216.3,definitif,122,lu
+2007-2011,1997,emplois,transferts_bs_individuels_non_marchands,D.632,apu,Transferts B&S individuels non mar- chands (APU),2009,4724.9,definitif,122,lu
+2007-2011,1997,emplois,transferts_bs_individuels_non_marchands,D.632,apu,Transferts B&S individuels non mar- chands (APU),2010,5065.2,semi_definitif,122,lu
+2007-2011,1997,emplois,transferts_bs_individuels_non_marchands,D.632,apu,Transferts B&S individuels non mar- chands (APU),2011,5415.2,provisoire,122,lu
+2007-2011,1997,emplois,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non marchands (Ménages),2007,101.5,definitif,122,lu
+2007-2011,1997,emplois,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non marchands (Ménages),2008,106.0,definitif,122,lu
+2007-2011,1997,emplois,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non marchands (Ménages),2009,113.8,definitif,122,lu
+2007-2011,1997,emplois,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non marchands (Ménages),2010,120.5,semi_definitif,122,lu
+2007-2011,1997,emplois,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non marchands (Ménages),2011,124.8,provisoire,122,lu
+2008-2012,1997,ressources,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2008,4818.7,definitif,122,lu
+2008-2012,1997,ressources,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2009,5523.9,definitif,122,lu
+2008-2012,1997,ressources,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2010,6013.1,definitif,122,lu
+2008-2012,1997,ressources,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2011,6504.4,semi_definitif,122,lu
+2008-2012,1997,ressources,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2012,7091.1,provisoire,122,lu
+2008-2012,1997,ressources,prestations_sociales_nature,D.631,menages,Prestations sociales en nature (Ménages),2008,496.4,definitif,122,lu
+2008-2012,1997,ressources,prestations_sociales_nature,D.631,menages,Prestations sociales en nature (Ménages),2009,685.1,definitif,122,lu
+2008-2012,1997,ressources,prestations_sociales_nature,D.631,menages,Prestations sociales en nature (Ménages),2010,858.4,definitif,122,lu
+2008-2012,1997,ressources,prestations_sociales_nature,D.631,menages,Prestations sociales en nature (Ménages),2011,969.2,semi_definitif,122,lu
+2008-2012,1997,ressources,prestations_sociales_nature,D.631,menages,Prestations sociales en nature (Ménages),2012,1058.0,provisoire,122,lu
+2008-2012,1997,ressources,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non marchands (Ménages),2008,4322.3,definitif,122,lu
+2008-2012,1997,ressources,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non marchands (Ménages),2009,4838.7,definitif,122,lu
+2008-2012,1997,ressources,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non marchands (Ménages),2010,5154.7,definitif,122,lu
+2008-2012,1997,ressources,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non marchands (Ménages),2011,5535.2,semi_definitif,122,lu
+2008-2012,1997,ressources,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non marchands (Ménages),2012,6033.1,provisoire,122,lu
+2008-2012,1997,emplois,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2008,4818.7,definitif,122,lu
+2008-2012,1997,emplois,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2009,5523.9,definitif,122,lu
+2008-2012,1997,emplois,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2010,6013.1,definitif,122,lu
+2008-2012,1997,emplois,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2011,6504.4,semi_definitif,122,lu
+2008-2012,1997,emplois,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2012,7091.1,provisoire,122,lu
+2008-2012,1997,emplois,prestations_sociales_nature,D.631,apu,Prestations sociales en nature (APU),2008,496.4,definitif,122,lu
+2008-2012,1997,emplois,prestations_sociales_nature,D.631,apu,Prestations sociales en nature (APU),2009,685.1,definitif,122,lu
+2008-2012,1997,emplois,prestations_sociales_nature,D.631,apu,Prestations sociales en nature (APU),2010,858.4,definitif,122,lu
+2008-2012,1997,emplois,prestations_sociales_nature,D.631,apu,Prestations sociales en nature (APU),2011,969.2,semi_definitif,122,lu
+2008-2012,1997,emplois,prestations_sociales_nature,D.631,apu,Prestations sociales en nature (APU),2012,1058.0,provisoire,122,lu
+2008-2012,1997,emplois,transferts_bs_individuels_non_marchands,D.632,apu,Transferts B&S individuels non mar- chands (APU),2008,4216.3,definitif,122,lu
+2008-2012,1997,emplois,transferts_bs_individuels_non_marchands,D.632,apu,Transferts B&S individuels non mar- chands (APU),2009,4724.9,definitif,122,lu
+2008-2012,1997,emplois,transferts_bs_individuels_non_marchands,D.632,apu,Transferts B&S individuels non mar- chands (APU),2010,5032.8,definitif,122,lu
+2008-2012,1997,emplois,transferts_bs_individuels_non_marchands,D.632,apu,Transferts B&S individuels non mar- chands (APU),2011,5408.8,semi_definitif,122,lu
+2008-2012,1997,emplois,transferts_bs_individuels_non_marchands,D.632,apu,Transferts B&S individuels non mar- chands (APU),2012,5891.6,provisoire,122,lu
+2008-2012,1997,emplois,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non marchands (Ménages),2008,106.0,definitif,122,lu
+2008-2012,1997,emplois,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non marchands (Ménages),2009,113.8,definitif,122,lu
+2008-2012,1997,emplois,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non marchands (Ménages),2010,121.9,definitif,122,lu
+2008-2012,1997,emplois,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non marchands (Ménages),2011,126.4,semi_definitif,122,lu
+2008-2012,1997,emplois,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non marchands (Ménages),2012,141.5,provisoire,122,lu
+2009-2013,1997,ressources,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2009,5523.9,definitif,122,lu
+2009-2013,1997,ressources,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2010,6013.1,definitif,122,lu
+2009-2013,1997,ressources,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2011,6488.4,definitif,122,lu
+2009-2013,1997,ressources,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2012,7090.1,semi_definitif,122,lu
+2009-2013,1997,ressources,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2013,7677.3,provisoire,122,lu
+2009-2013,1997,ressources,prestations_sociales_nature,D.631,menages,Prestations sociales en nature (Mé- nages),2009,685.1,definitif,122,lu
+2009-2013,1997,ressources,prestations_sociales_nature,D.631,menages,Prestations sociales en nature (Mé- nages),2010,858.4,definitif,122,lu
+2009-2013,1997,ressources,prestations_sociales_nature,D.631,menages,Prestations sociales en nature (Mé- nages),2011,969.2,definitif,122,lu
+2009-2013,1997,ressources,prestations_sociales_nature,D.631,menages,Prestations sociales en nature (Mé- nages),2012,1058.0,semi_definitif,122,lu
+2009-2013,1997,ressources,prestations_sociales_nature,D.631,menages,Prestations sociales en nature (Mé- nages),2013,1119.5,provisoire,122,lu
+2009-2013,1997,ressources,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non marchands (Ménages),2009,4838.7,definitif,122,lu
+2009-2013,1997,ressources,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non marchands (Ménages),2010,5154.7,definitif,122,lu
+2009-2013,1997,ressources,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non marchands (Ménages),2011,5519.2,definitif,122,lu
+2009-2013,1997,ressources,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non marchands (Ménages),2012,6032.2,semi_definitif,122,lu
+2009-2013,1997,ressources,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non marchands (Ménages),2013,6557.8,provisoire,122,lu
+2009-2013,1997,emplois,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2009,5523.9,definitif,122,lu
+2009-2013,1997,emplois,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2010,6013.1,definitif,122,lu
+2009-2013,1997,emplois,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2011,6488.4,definitif,122,lu
+2009-2013,1997,emplois,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2012,7090.1,semi_definitif,122,lu
+2009-2013,1997,emplois,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2013,7677.3,provisoire,122,lu
+2009-2013,1997,emplois,prestations_sociales_nature,D.631,apu,Prestations sociales en nature (APU),2009,685.1,definitif,122,lu
+2009-2013,1997,emplois,prestations_sociales_nature,D.631,apu,Prestations sociales en nature (APU),2010,858.4,definitif,122,lu
+2009-2013,1997,emplois,prestations_sociales_nature,D.631,apu,Prestations sociales en nature (APU),2011,969.2,definitif,122,lu
+2009-2013,1997,emplois,prestations_sociales_nature,D.631,apu,Prestations sociales en nature (APU),2012,1058.0,semi_definitif,122,lu
+2009-2013,1997,emplois,prestations_sociales_nature,D.631,apu,Prestations sociales en nature (APU),2013,1119.5,provisoire,122,lu
+2009-2013,1997,emplois,transferts_bs_individuels_non_marchands,D.632,apu,Transferts B&S individuels non mar- chands (APU),2009,4724.9,definitif,122,lu
+2009-2013,1997,emplois,transferts_bs_individuels_non_marchands,D.632,apu,Transferts B&S individuels non mar- chands (APU),2010,5032.8,definitif,122,lu
+2009-2013,1997,emplois,transferts_bs_individuels_non_marchands,D.632,apu,Transferts B&S individuels non mar- chands (APU),2011,5394.3,definitif,122,lu
+2009-2013,1997,emplois,transferts_bs_individuels_non_marchands,D.632,apu,Transferts B&S individuels non mar- chands (APU),2012,5897.3,semi_definitif,122,lu
+2009-2013,1997,emplois,transferts_bs_individuels_non_marchands,D.632,apu,Transferts B&S individuels non mar- chands (APU),2013,6418.9,provisoire,122,lu
+2009-2013,1997,emplois,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non mar- chands (Ménages),2009,113.8,definitif,122,lu
+2009-2013,1997,emplois,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non mar- chands (Ménages),2010,121.9,definitif,122,lu
+2009-2013,1997,emplois,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non mar- chands (Ménages),2011,124.8,definitif,122,lu
+2009-2013,1997,emplois,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non mar- chands (Ménages),2012,134.8,semi_definitif,122,lu
+2009-2013,1997,emplois,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non mar- chands (Ménages),2013,138.9,provisoire,122,lu
+2010-2014,1997,ressources,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2010,6013.1,definitif,122,lu
+2010-2014,1997,ressources,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2011,6488.4,definitif,122,lu
+2010-2014,1997,ressources,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2012,7056.6,definitif,122,lu
+2010-2014,1997,ressources,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2013,7681.9,semi_definitif,122,lu
+2010-2014,1997,ressources,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2014,8323.4,provisoire,122,lu
+2010-2014,1997,ressources,prestations_sociales_nature,D.631,menages,Prestations sociales en nature (Mé- nages),2010,858.4,definitif,122,lu
+2010-2014,1997,ressources,prestations_sociales_nature,D.631,menages,Prestations sociales en nature (Mé- nages),2011,969.2,definitif,122,lu
+2010-2014,1997,ressources,prestations_sociales_nature,D.631,menages,Prestations sociales en nature (Mé- nages),2012,1026.0,definitif,122,lu
+2010-2014,1997,ressources,prestations_sociales_nature,D.631,menages,Prestations sociales en nature (Mé- nages),2013,1119.4,semi_definitif,122,lu
+2010-2014,1997,ressources,prestations_sociales_nature,D.631,menages,Prestations sociales en nature (Mé- nages),2014,1256.2,provisoire,122,lu
+2010-2014,1997,ressources,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non marchands (Ménages),2010,5154.7,definitif,122,lu
+2010-2014,1997,ressources,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non marchands (Ménages),2011,5519.2,definitif,122,lu
+2010-2014,1997,ressources,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non marchands (Ménages),2012,6030.6,definitif,122,lu
+2010-2014,1997,ressources,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non marchands (Ménages),2013,6562.5,semi_definitif,122,lu
+2010-2014,1997,ressources,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non marchands (Ménages),2014,7067.2,provisoire,122,lu
+2010-2014,1997,emplois,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2010,6013.1,definitif,122,lu
+2010-2014,1997,emplois,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2011,6488.4,definitif,122,lu
+2010-2014,1997,emplois,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2012,7056.6,definitif,122,lu
+2010-2014,1997,emplois,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2013,7681.9,semi_definitif,122,lu
+2010-2014,1997,emplois,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2014,8323.4,provisoire,122,lu
+2010-2014,1997,emplois,prestations_sociales_nature,D.631,apu,Prestations sociales en nature (APU),2010,858.4,definitif,122,lu
+2010-2014,1997,emplois,prestations_sociales_nature,D.631,apu,Prestations sociales en nature (APU),2011,969.2,definitif,122,lu
+2010-2014,1997,emplois,prestations_sociales_nature,D.631,apu,Prestations sociales en nature (APU),2012,1026.0,definitif,122,lu
+2010-2014,1997,emplois,prestations_sociales_nature,D.631,apu,Prestations sociales en nature (APU),2013,1119.4,semi_definitif,122,lu
+2010-2014,1997,emplois,prestations_sociales_nature,D.631,apu,Prestations sociales en nature (APU),2014,1256.2,provisoire,122,lu
+2010-2014,1997,emplois,transferts_bs_individuels_non_marchands,D.632,apu,Transferts B&S individuels non mar- chands (APU),2010,5032.8,definitif,122,lu
+2010-2014,1997,emplois,transferts_bs_individuels_non_marchands,D.632,apu,Transferts B&S individuels non mar- chands (APU),2011,5394.3,definitif,122,lu
+2010-2014,1997,emplois,transferts_bs_individuels_non_marchands,D.632,apu,Transferts B&S individuels non mar- chands (APU),2012,5897.3,definitif,122,lu
+2010-2014,1997,emplois,transferts_bs_individuels_non_marchands,D.632,apu,Transferts B&S individuels non mar- chands (APU),2013,6418.9,semi_definitif,122,lu
+2010-2014,1997,emplois,transferts_bs_individuels_non_marchands,D.632,apu,Transferts B&S individuels non mar- chands (APU),2014,6916.5,provisoire,122,lu
+2010-2014,1997,emplois,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non mar- chands (Ménages),2010,121.9,definitif,122,lu
+2010-2014,1997,emplois,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non mar- chands (Ménages),2011,124.8,definitif,122,lu
+2010-2014,1997,emplois,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non mar- chands (Ménages),2012,133.3,definitif,122,lu
+2010-2014,1997,emplois,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non mar- chands (Ménages),2013,143.6,semi_definitif,122,lu
+2010-2014,1997,emplois,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non mar- chands (Ménages),2014,150.7,provisoire,122,lu
+2011-2015,1997,ressources,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2011,6488.4,definitif,122,lu
+2011-2015,1997,ressources,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2012,7056.6,definitif,122,lu
+2011-2015,1997,ressources,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2013,7681.9,definitif,122,lu
+2011-2015,1997,ressources,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2014,8325.9,semi_definitif,122,lu
+2011-2015,1997,ressources,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2015,8974.3,provisoire,122,lu
+2011-2015,1997,ressources,prestations_sociales_nature,D.631,menages,Prestations sociales en nature (Ménages),2011,969.2,definitif,122,lu
+2011-2015,1997,ressources,prestations_sociales_nature,D.631,menages,Prestations sociales en nature (Ménages),2012,1026.0,definitif,122,lu
+2011-2015,1997,ressources,prestations_sociales_nature,D.631,menages,Prestations sociales en nature (Ménages),2013,1119.4,definitif,122,lu
+2011-2015,1997,ressources,prestations_sociales_nature,D.631,menages,Prestations sociales en nature (Ménages),2014,1256.2,semi_definitif,122,lu
+2011-2015,1997,ressources,prestations_sociales_nature,D.631,menages,Prestations sociales en nature (Ménages),2015,1266.1,provisoire,122,lu
+2011-2015,1997,ressources,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non marchands (Ménages),2011,5519.2,definitif,122,lu
+2011-2015,1997,ressources,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non marchands (Ménages),2012,6030.6,definitif,122,lu
+2011-2015,1997,ressources,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non marchands (Ménages),2013,6562.5,definitif,122,lu
+2011-2015,1997,ressources,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non marchands (Ménages),2014,7069.7,semi_definitif,122,lu
+2011-2015,1997,ressources,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non marchands (Ménages),2015,7708.3,provisoire,122,lu
+2011-2015,1997,emplois,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2011,6488.4,definitif,122,lu
+2011-2015,1997,emplois,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2012,7056.6,definitif,122,lu
+2011-2015,1997,emplois,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2013,7681.9,definitif,122,lu
+2011-2015,1997,emplois,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2014,8325.9,semi_definitif,122,lu
+2011-2015,1997,emplois,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2015,8974.3,provisoire,122,lu
+2011-2015,1997,emplois,prestations_sociales_nature,D.631,apu,Prestations sociales en nature (APU),2011,969.2,definitif,122,lu
+2011-2015,1997,emplois,prestations_sociales_nature,D.631,apu,Prestations sociales en nature (APU),2012,1026.0,definitif,122,lu
+2011-2015,1997,emplois,prestations_sociales_nature,D.631,apu,Prestations sociales en nature (APU),2013,1119.4,definitif,122,lu
+2011-2015,1997,emplois,prestations_sociales_nature,D.631,apu,Prestations sociales en nature (APU),2014,1256.2,semi_definitif,122,lu
+2011-2015,1997,emplois,prestations_sociales_nature,D.631,apu,Prestations sociales en nature (APU),2015,1266.1,provisoire,122,lu
+2011-2015,1997,emplois,transferts_bs_individuels_non_marchands,D.632,apu,Transferts B&S individuels non mar- chands (APU),2011,5394.3,definitif,122,lu
+2011-2015,1997,emplois,transferts_bs_individuels_non_marchands,D.632,apu,Transferts B&S individuels non mar- chands (APU),2012,5897.3,definitif,122,lu
+2011-2015,1997,emplois,transferts_bs_individuels_non_marchands,D.632,apu,Transferts B&S individuels non mar- chands (APU),2013,6418.9,definitif,122,lu
+2011-2015,1997,emplois,transferts_bs_individuels_non_marchands,D.632,apu,Transferts B&S individuels non mar- chands (APU),2014,6916.0,semi_definitif,122,lu
+2011-2015,1997,emplois,transferts_bs_individuels_non_marchands,D.632,apu,Transferts B&S individuels non mar- chands (APU),2015,7543.1,provisoire,122,lu
+2011-2015,1997,emplois,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non mar- chands (Ménages),2011,124.8,definitif,122,lu
+2011-2015,1997,emplois,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non mar- chands (Ménages),2012,133.3,definitif,122,lu
+2011-2015,1997,emplois,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non mar- chands (Ménages),2013,143.6,definitif,122,lu
+2011-2015,1997,emplois,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non mar- chands (Ménages),2014,153.8,semi_definitif,122,lu
+2011-2015,1997,emplois,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non mar- chands (Ménages),2015,165.1,provisoire,122,lu
+2012-2016,1997,ressources,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2012,7056.6,definitif,120,lu
+2012-2016,1997,ressources,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2013,7681.9,definitif,120,lu
+2012-2016,1997,ressources,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2014,8297.0,definitif,120,lu
+2012-2016,1997,ressources,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2015,8974.4,semi_definitif,120,lu
+2012-2016,1997,ressources,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2016,9957.4,provisoire,120,lu
+2012-2016,1997,ressources,prestations_sociales_nature,D.631,menages,Prestations sociales en nature (Ménages),2012,1026.0,definitif,120,lu
+2012-2016,1997,ressources,prestations_sociales_nature,D.631,menages,Prestations sociales en nature (Ménages),2013,1119.4,definitif,120,lu
+2012-2016,1997,ressources,prestations_sociales_nature,D.631,menages,Prestations sociales en nature (Ménages),2014,1256.2,definitif,120,lu
+2012-2016,1997,ressources,prestations_sociales_nature,D.631,menages,Prestations sociales en nature (Ménages),2015,1266.1,semi_definitif,120,lu
+2012-2016,1997,ressources,prestations_sociales_nature,D.631,menages,Prestations sociales en nature (Ménages),2016,1292.3,provisoire,120,lu
+2012-2016,1997,ressources,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non marchands (Ménages),2012,6030.6,definitif,120,lu
+2012-2016,1997,ressources,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non marchands (Ménages),2013,6562.5,definitif,120,lu
+2012-2016,1997,ressources,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non marchands (Ménages),2014,7040.8,definitif,120,lu
+2012-2016,1997,ressources,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non marchands (Ménages),2015,7708.3,semi_definitif,120,lu
+2012-2016,1997,ressources,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non marchands (Ménages),2016,8665.1,provisoire,120,lu
+2012-2016,1997,emplois,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2012,7056.6,definitif,120,lu
+2012-2016,1997,emplois,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2013,7681.9,definitif,120,lu
+2012-2016,1997,emplois,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2014,8297.0,definitif,120,lu
+2012-2016,1997,emplois,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2015,8974.4,semi_definitif,120,lu
+2012-2016,1997,emplois,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2016,9957.4,provisoire,120,lu
+2012-2016,1997,emplois,prestations_sociales_nature,D.631,apu,Prestations sociales en nature (APU),2012,1026.0,definitif,120,lu
+2012-2016,1997,emplois,prestations_sociales_nature,D.631,apu,Prestations sociales en nature (APU),2013,1119.4,definitif,120,lu
+2012-2016,1997,emplois,prestations_sociales_nature,D.631,apu,Prestations sociales en nature (APU),2014,1256.2,definitif,120,lu
+2012-2016,1997,emplois,prestations_sociales_nature,D.631,apu,Prestations sociales en nature (APU),2015,1266.1,semi_definitif,120,lu
+2012-2016,1997,emplois,prestations_sociales_nature,D.631,apu,Prestations sociales en nature (APU),2016,1292.3,provisoire,120,lu
+2012-2016,1997,emplois,transferts_bs_individuels_non_marchands,D.632,apu,Transferts B&S individuels non mar- chands (APU),2012,5897.3,definitif,120,lu
+2012-2016,1997,emplois,transferts_bs_individuels_non_marchands,D.632,apu,Transferts B&S individuels non mar- chands (APU),2013,6418.9,definitif,120,lu
+2012-2016,1997,emplois,transferts_bs_individuels_non_marchands,D.632,apu,Transferts B&S individuels non mar- chands (APU),2014,6916.0,definitif,120,lu
+2012-2016,1997,emplois,transferts_bs_individuels_non_marchands,D.632,apu,Transferts B&S individuels non mar- chands (APU),2015,7543.1,semi_definitif,120,lu
+2012-2016,1997,emplois,transferts_bs_individuels_non_marchands,D.632,apu,Transferts B&S individuels non mar- chands (APU),2016,8487.6,provisoire,120,lu
+2012-2016,1997,emplois,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non mar- chands (Ménages),2012,133.3,definitif,120,lu
+2012-2016,1997,emplois,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non mar- chands (Ménages),2013,143.6,definitif,120,lu
+2012-2016,1997,emplois,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non mar- chands (Ménages),2014,124.8,definitif,120,lu
+2012-2016,1997,emplois,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non mar- chands (Ménages),2015,165.1,semi_definitif,120,lu
+2012-2016,1997,emplois,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non mar- chands (Ménages),2016,177.5,provisoire,120,lu
+2013-2017,1997,ressources,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2013,7681.9,definitif,120,lu
+2013-2017,1997,ressources,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2014,8297.0,definitif,120,lu
+2013-2017,1997,ressources,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2015,8974.4,definitif,120,lu
+2013-2017,1997,ressources,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2016,9957.4,semi_definitif,120,lu
+2013-2017,1997,ressources,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2017,10911.2,provisoire,120,lu
+2013-2017,1997,ressources,prestations_sociales_nature,D.631,menages,Prestations sociales en nature (Ménages),2013,1119.4,definitif,120,lu
+2013-2017,1997,ressources,prestations_sociales_nature,D.631,menages,Prestations sociales en nature (Ménages),2014,1256.2,definitif,120,lu
+2013-2017,1997,ressources,prestations_sociales_nature,D.631,menages,Prestations sociales en nature (Ménages),2015,1266.1,definitif,120,lu
+2013-2017,1997,ressources,prestations_sociales_nature,D.631,menages,Prestations sociales en nature (Ménages),2016,1292.3,semi_definitif,120,lu
+2013-2017,1997,ressources,prestations_sociales_nature,D.631,menages,Prestations sociales en nature (Ménages),2017,1343.8,provisoire,120,lu
+2013-2017,1997,ressources,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non marchands (Ménages),2013,6562.5,definitif,120,lu
+2013-2017,1997,ressources,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non marchands (Ménages),2014,7040.8,definitif,120,lu
+2013-2017,1997,ressources,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non marchands (Ménages),2015,7708.3,definitif,120,lu
+2013-2017,1997,ressources,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non marchands (Ménages),2016,8665.1,semi_definitif,120,lu
+2013-2017,1997,ressources,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non marchands (Ménages),2017,9567.4,provisoire,120,lu
+2013-2017,1997,emplois,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2013,7681.9,definitif,120,lu
+2013-2017,1997,emplois,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2014,8297.0,definitif,120,lu
+2013-2017,1997,emplois,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2015,8974.4,definitif,120,lu
+2013-2017,1997,emplois,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2016,9957.4,semi_definitif,120,lu
+2013-2017,1997,emplois,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2017,10911.2,provisoire,120,lu
+2013-2017,1997,emplois,prestations_sociales_nature,D.631,apu,Prestations sociales en nature (APU),2013,1119.4,definitif,120,lu
+2013-2017,1997,emplois,prestations_sociales_nature,D.631,apu,Prestations sociales en nature (APU),2014,1256.2,definitif,120,lu
+2013-2017,1997,emplois,prestations_sociales_nature,D.631,apu,Prestations sociales en nature (APU),2015,1266.1,definitif,120,lu
+2013-2017,1997,emplois,prestations_sociales_nature,D.631,apu,Prestations sociales en nature (APU),2016,1292.3,semi_definitif,120,lu
+2013-2017,1997,emplois,prestations_sociales_nature,D.631,apu,Prestations sociales en nature (APU),2017,1343.8,provisoire,120,lu
+2013-2017,1997,emplois,transferts_bs_individuels_non_marchands,D.632,apu,Transferts B&S individuels non mar- chands (APU),2013,6418.9,definitif,120,lu
+2013-2017,1997,emplois,transferts_bs_individuels_non_marchands,D.632,apu,Transferts B&S individuels non mar- chands (APU),2014,6916.0,definitif,120,lu
+2013-2017,1997,emplois,transferts_bs_individuels_non_marchands,D.632,apu,Transferts B&S individuels non mar- chands (APU),2015,7543.1,definitif,120,lu
+2013-2017,1997,emplois,transferts_bs_individuels_non_marchands,D.632,apu,Transferts B&S individuels non mar- chands (APU),2016,8487.6,semi_definitif,120,lu
+2013-2017,1997,emplois,transferts_bs_individuels_non_marchands,D.632,apu,Transferts B&S individuels non mar- chands (APU),2017,9377.0,provisoire,120,lu
+2013-2017,1997,emplois,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non mar- chands (Ménages),2013,143.6,definitif,120,lu
+2013-2017,1997,emplois,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non mar- chands (Ménages),2014,124.8,definitif,120,lu
+2013-2017,1997,emplois,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non mar- chands (Ménages),2015,165.1,definitif,120,lu
+2013-2017,1997,emplois,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non mar- chands (Ménages),2016,177.5,semi_definitif,120,lu
+2013-2017,1997,emplois,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non mar- chands (Ménages),2017,190.4,provisoire,120,lu
+2015-2020,2015,ressources,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2015,8832.9,definitif,116,lu
+2015-2020,2015,ressources,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2016,9817.0,definitif,116,lu
+2015-2020,2015,ressources,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2017,10768.4,definitif,116,lu
+2015-2020,2015,ressources,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2018,11139.1,definitif,116,lu
+2015-2020,2015,ressources,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2019,12270.0,semi_definitif,116,lu
+2015-2020,2015,ressources,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2020,13875.7,provisoire,116,lu
+2015-2020,2015,ressources,prestations_sociales_nature,D.631,menages,Prestations sociales en nature (Ménages),2015,1266.1,definitif,116,lu
+2015-2020,2015,ressources,prestations_sociales_nature,D.631,menages,Prestations sociales en nature (Ménages),2016,1292.3,definitif,116,lu
+2015-2020,2015,ressources,prestations_sociales_nature,D.631,menages,Prestations sociales en nature (Ménages),2017,1343.8,definitif,116,lu
+2015-2020,2015,ressources,prestations_sociales_nature,D.631,menages,Prestations sociales en nature (Ménages),2018,1334.7,definitif,116,lu
+2015-2020,2015,ressources,prestations_sociales_nature,D.631,menages,Prestations sociales en nature (Ménages),2019,1400.5,semi_definitif,116,lu
+2015-2020,2015,ressources,prestations_sociales_nature,D.631,menages,Prestations sociales en nature (Ménages),2020,1526.0,provisoire,116,lu
+2015-2020,2015,ressources,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non marchands (Ménages),2015,7566.8,definitif,116,milliers_recolles
+2015-2020,2015,ressources,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non marchands (Ménages),2016,8524.6,definitif,116,milliers_recolles
+2015-2020,2015,ressources,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non marchands (Ménages),2017,9424.6,definitif,116,milliers_recolles
+2015-2020,2015,ressources,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non marchands (Ménages),2018,9804.3,definitif,116,milliers_recolles
+2015-2020,2015,ressources,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non marchands (Ménages),2019,10869.5,semi_definitif,116,milliers_recolles
+2015-2020,2015,ressources,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non marchands (Ménages),2020,12349.7,provisoire,116,milliers_recolles
+2015-2020,2015,emplois,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2015,8832.9,definitif,116,lu
+2015-2020,2015,emplois,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2016,9817.0,definitif,116,lu
+2015-2020,2015,emplois,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2017,10768.4,definitif,116,lu
+2015-2020,2015,emplois,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2018,11139.1,definitif,116,lu
+2015-2020,2015,emplois,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2019,12270.0,semi_definitif,116,lu
+2015-2020,2015,emplois,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2020,13875.7,provisoire,116,lu
+2015-2020,2015,emplois,prestations_sociales_nature,D.631,apu,Prestations sociales en nature (APU),2015,1266.1,definitif,116,lu
+2015-2020,2015,emplois,prestations_sociales_nature,D.631,apu,Prestations sociales en nature (APU),2016,1292.3,definitif,116,lu
+2015-2020,2015,emplois,prestations_sociales_nature,D.631,apu,Prestations sociales en nature (APU),2017,1343.8,definitif,116,lu
+2015-2020,2015,emplois,prestations_sociales_nature,D.631,apu,Prestations sociales en nature (APU),2018,1334.7,definitif,116,lu
+2015-2020,2015,emplois,prestations_sociales_nature,D.631,apu,Prestations sociales en nature (APU),2019,1400.5,semi_definitif,116,lu
+2015-2020,2015,emplois,prestations_sociales_nature,D.631,apu,Prestations sociales en nature (APU),2020,1526.0,provisoire,116,lu
+2015-2020,2015,emplois,transferts_bs_individuels_non_marchands,D.632,apu,Transferts B&S individuels non mar- chands (APU),2015,7274.9,definitif,116,lu
+2015-2020,2015,emplois,transferts_bs_individuels_non_marchands,D.632,apu,Transferts B&S individuels non mar- chands (APU),2016,8214.8,definitif,116,lu
+2015-2020,2015,emplois,transferts_bs_individuels_non_marchands,D.632,apu,Transferts B&S individuels non mar- chands (APU),2017,9093.1,definitif,116,lu
+2015-2020,2015,emplois,transferts_bs_individuels_non_marchands,D.632,apu,Transferts B&S individuels non mar- chands (APU),2018,9442.7,definitif,116,lu
+2015-2020,2015,emplois,transferts_bs_individuels_non_marchands,D.632,apu,Transferts B&S individuels non mar- chands (APU),2019,10478.2,semi_definitif,116,lu
+2015-2020,2015,emplois,transferts_bs_individuels_non_marchands,D.632,apu,Transferts B&S individuels non mar- chands (APU),2020,11974.5,provisoire,116,lu
+2015-2020,2015,emplois,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non mar- chands (Ménages),2015,291.9,definitif,116,lu
+2015-2020,2015,emplois,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non mar- chands (Ménages),2016,309.8,definitif,116,lu
+2015-2020,2015,emplois,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non mar- chands (Ménages),2017,331.5,definitif,116,lu
+2015-2020,2015,emplois,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non mar- chands (Ménages),2018,361.6,definitif,116,lu
+2015-2020,2015,emplois,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non mar- chands (Ménages),2019,391.2,semi_definitif,116,lu
+2015-2020,2015,emplois,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non mar- chands (Ménages),2020,375.2,provisoire,116,lu
+2017-2021,2015,ressources,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2017,10768.4,definitif,114,lu
+2017-2021,2015,ressources,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2018,11139.1,definitif,114,lu
+2017-2021,2015,ressources,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2019,12124.3,definitif,114,lu
+2017-2021,2015,ressources,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2020,13690.9,semi_definitif,114,lu
+2017-2021,2015,ressources,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2021,14438.3,provisoire,114,lu
+2017-2021,2015,ressources,prestations_sociales_nature,D.631,menages,Prestations sociales en nature (Ménages),2017,1343.8,definitif,114,lu
+2017-2021,2015,ressources,prestations_sociales_nature,D.631,menages,Prestations sociales en nature (Ménages),2018,1334.7,definitif,114,lu
+2017-2021,2015,ressources,prestations_sociales_nature,D.631,menages,Prestations sociales en nature (Ménages),2019,1400.5,definitif,114,lu
+2017-2021,2015,ressources,prestations_sociales_nature,D.631,menages,Prestations sociales en nature (Ménages),2020,1526.0,semi_definitif,114,lu
+2017-2021,2015,ressources,prestations_sociales_nature,D.631,menages,Prestations sociales en nature (Ménages),2021,1701.0,provisoire,114,lu
+2017-2021,2015,ressources,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non marchands (Ménages),2017,9424.6,definitif,114,lu
+2017-2021,2015,ressources,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non marchands (Ménages),2018,9804.3,definitif,114,lu
+2017-2021,2015,ressources,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non marchands (Ménages),2019,10723.7,definitif,114,lu
+2017-2021,2015,ressources,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non marchands (Ménages),2020,12164.9,semi_definitif,114,lu
+2017-2021,2015,ressources,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non marchands (Ménages),2021,12737.3,provisoire,114,lu
+2017-2021,2015,emplois,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2017,10768.4,definitif,114,lu
+2017-2021,2015,emplois,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2018,11139.1,definitif,114,lu
+2017-2021,2015,emplois,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2019,12124.3,definitif,114,lu
+2017-2021,2015,emplois,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2020,13690.9,semi_definitif,114,lu
+2017-2021,2015,emplois,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2021,14438.3,provisoire,114,lu
+2017-2021,2015,emplois,prestations_sociales_nature,D.631,apu,Prestations sociales en nature (APU),2017,1343.8,definitif,114,lu
+2017-2021,2015,emplois,prestations_sociales_nature,D.631,apu,Prestations sociales en nature (APU),2018,1334.7,definitif,114,lu
+2017-2021,2015,emplois,prestations_sociales_nature,D.631,apu,Prestations sociales en nature (APU),2019,1400.5,definitif,114,lu
+2017-2021,2015,emplois,prestations_sociales_nature,D.631,apu,Prestations sociales en nature (APU),2020,1526.0,semi_definitif,114,lu
+2017-2021,2015,emplois,prestations_sociales_nature,D.631,apu,Prestations sociales en nature (APU),2021,1701.0,provisoire,114,lu
+2017-2021,2015,emplois,transferts_bs_individuels_non_marchands,D.632,apu,Transferts B&S individuels non mar- chands (APU),2017,9093.1,definitif,114,lu
+2017-2021,2015,emplois,transferts_bs_individuels_non_marchands,D.632,apu,Transferts B&S individuels non mar- chands (APU),2018,9442.7,definitif,114,lu
+2017-2021,2015,emplois,transferts_bs_individuels_non_marchands,D.632,apu,Transferts B&S individuels non mar- chands (APU),2019,10332.5,definitif,114,lu
+2017-2021,2015,emplois,transferts_bs_individuels_non_marchands,D.632,apu,Transferts B&S individuels non mar- chands (APU),2020,11789.7,semi_definitif,114,lu
+2017-2021,2015,emplois,transferts_bs_individuels_non_marchands,D.632,apu,Transferts B&S individuels non mar- chands (APU),2021,12338.6,provisoire,114,lu
+2017-2021,2015,emplois,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non mar- chands (Ménages),2017,331.5,definitif,114,lu
+2017-2021,2015,emplois,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non mar- chands (Ménages),2018,361.6,definitif,114,lu
+2017-2021,2015,emplois,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non mar- chands (Ménages),2019,391.2,definitif,114,lu
+2017-2021,2015,emplois,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non mar- chands (Ménages),2020,375.2,semi_definitif,114,lu
+2017-2021,2015,emplois,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non mar- chands (Ménages),2021,398.7,provisoire,114,lu
+2018-2022,2015,ressources,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2018,11139.1,definitif,114,lu
+2018-2022,2015,ressources,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2019,12124.3,definitif,114,lu
+2018-2022,2015,ressources,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2020,13690.9,definitif,114,lu
+2018-2022,2015,ressources,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2021,14438.3,semi_definitif,114,lu
+2018-2022,2015,ressources,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2022,14950.7,provisoire,114,lu
+2018-2022,2015,ressources,prestations_sociales_nature,D.631,menages,Prestations sociales en nature (Ménages),2018,1334.7,definitif,114,lu
+2018-2022,2015,ressources,prestations_sociales_nature,D.631,menages,Prestations sociales en nature (Ménages),2019,1400.5,definitif,114,lu
+2018-2022,2015,ressources,prestations_sociales_nature,D.631,menages,Prestations sociales en nature (Ménages),2020,1526.0,definitif,114,lu
+2018-2022,2015,ressources,prestations_sociales_nature,D.631,menages,Prestations sociales en nature (Ménages),2021,1701.0,semi_definitif,114,lu
+2018-2022,2015,ressources,prestations_sociales_nature,D.631,menages,Prestations sociales en nature (Ménages),2022,1896.0,provisoire,114,lu
+2018-2022,2015,ressources,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non marchands (Ménages),2018,9804.3,definitif,114,lu
+2018-2022,2015,ressources,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non marchands (Ménages),2019,10723.7,definitif,114,lu
+2018-2022,2015,ressources,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non marchands (Ménages),2020,12164.9,definitif,114,lu
+2018-2022,2015,ressources,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non marchands (Ménages),2021,12737.3,semi_definitif,114,lu
+2018-2022,2015,ressources,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non marchands (Ménages),2022,13054.7,provisoire,114,lu
+2018-2022,2015,emplois,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2018,11139.1,definitif,114,lu
+2018-2022,2015,emplois,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2019,12124.3,definitif,114,lu
+2018-2022,2015,emplois,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2020,13690.9,definitif,114,lu
+2018-2022,2015,emplois,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2021,14438.3,semi_definitif,114,lu
+2018-2022,2015,emplois,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2022,14950.7,provisoire,114,lu
+2018-2022,2015,emplois,prestations_sociales_nature,D.631,apu,Prestations sociales en nature (APU),2018,1334.7,definitif,114,lu
+2018-2022,2015,emplois,prestations_sociales_nature,D.631,apu,Prestations sociales en nature (APU),2019,1400.5,definitif,114,lu
+2018-2022,2015,emplois,prestations_sociales_nature,D.631,apu,Prestations sociales en nature (APU),2020,1526.0,definitif,114,lu
+2018-2022,2015,emplois,prestations_sociales_nature,D.631,apu,Prestations sociales en nature (APU),2021,1701.0,semi_definitif,114,lu
+2018-2022,2015,emplois,prestations_sociales_nature,D.631,apu,Prestations sociales en nature (APU),2022,1896.0,provisoire,114,lu
+2018-2022,2015,emplois,transferts_bs_individuels_non_marchands,D.632,apu,Transferts B&S individuels non mar- chands (APU),2018,9442.7,definitif,114,lu
+2018-2022,2015,emplois,transferts_bs_individuels_non_marchands,D.632,apu,Transferts B&S individuels non mar- chands (APU),2019,10332.5,definitif,114,lu
+2018-2022,2015,emplois,transferts_bs_individuels_non_marchands,D.632,apu,Transferts B&S individuels non mar- chands (APU),2020,11789.7,definitif,114,lu
+2018-2022,2015,emplois,transferts_bs_individuels_non_marchands,D.632,apu,Transferts B&S individuels non mar- chands (APU),2021,12338.6,semi_definitif,114,lu
+2018-2022,2015,emplois,transferts_bs_individuels_non_marchands,D.632,apu,Transferts B&S individuels non mar- chands (APU),2022,12611.2,provisoire,114,lu
+2018-2022,2015,emplois,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non mar- chands (Ménages),2018,361.6,definitif,114,lu
+2018-2022,2015,emplois,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non mar- chands (Ménages),2019,391.2,definitif,114,lu
+2018-2022,2015,emplois,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non mar- chands (Ménages),2020,375.2,definitif,114,lu
+2018-2022,2015,emplois,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non mar- chands (Ménages),2021,398.7,semi_definitif,114,lu
+2018-2022,2015,emplois,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non mar- chands (Ménages),2022,443.4,provisoire,114,lu
+2019-2023,2015,ressources,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2019,12124.3,definitif,114,lu
+2019-2023,2015,ressources,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2020,13690.9,definitif,114,lu
+2019-2023,2015,ressources,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2021,14438.3,definitif,114,lu
+2019-2023,2015,ressources,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2022,14950.7,definitif,114,lu
+2019-2023,2015,ressources,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2023,15346.1,definitif,114,lu
+2019-2023,2015,ressources,prestations_sociales_nature,D.631,menages,Prestations sociales en nature (Ménages),2019,1400.5,definitif,114,lu
+2019-2023,2015,ressources,prestations_sociales_nature,D.631,menages,Prestations sociales en nature (Ménages),2020,1526.0,definitif,114,lu
+2019-2023,2015,ressources,prestations_sociales_nature,D.631,menages,Prestations sociales en nature (Ménages),2021,1701.0,definitif,114,lu
+2019-2023,2015,ressources,prestations_sociales_nature,D.631,menages,Prestations sociales en nature (Ménages),2022,1896.0,definitif,114,lu
+2019-2023,2015,ressources,prestations_sociales_nature,D.631,menages,Prestations sociales en nature (Ménages),2023,1970.0,definitif,114,lu
+2019-2023,2015,ressources,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non marchands (Ménages),2019,10723.7,definitif,114,lu
+2019-2023,2015,ressources,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non marchands (Ménages),2020,12164.9,definitif,114,lu
+2019-2023,2015,ressources,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non marchands (Ménages),2021,12737.3,definitif,114,lu
+2019-2023,2015,ressources,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non marchands (Ménages),2022,13054.7,definitif,114,lu
+2019-2023,2015,ressources,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non marchands (Ménages),2023,13376.1,definitif,114,lu
+2019-2023,2015,emplois,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2019,12124.3,definitif,114,lu
+2019-2023,2015,emplois,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2020,13690.9,definitif,114,lu
+2019-2023,2015,emplois,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2021,14438.3,definitif,114,lu
+2019-2023,2015,emplois,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2022,14950.7,definitif,114,lu
+2019-2023,2015,emplois,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2023,15346.1,definitif,114,lu
+2019-2023,2015,emplois,prestations_sociales_nature,D.631,apu,Prestations sociales en nature (APU),2019,1400.5,definitif,114,lu
+2019-2023,2015,emplois,prestations_sociales_nature,D.631,apu,Prestations sociales en nature (APU),2020,1526.0,definitif,114,lu
+2019-2023,2015,emplois,prestations_sociales_nature,D.631,apu,Prestations sociales en nature (APU),2021,1701.0,definitif,114,lu
+2019-2023,2015,emplois,prestations_sociales_nature,D.631,apu,Prestations sociales en nature (APU),2022,1896.0,definitif,114,lu
+2019-2023,2015,emplois,prestations_sociales_nature,D.631,apu,Prestations sociales en nature (APU),2023,1970.0,definitif,114,lu
+2019-2023,2015,emplois,transferts_bs_individuels_non_marchands,D.632,apu,Transferts B&S individuels non mar- chands (APU),2019,10332.5,definitif,114,lu
+2019-2023,2015,emplois,transferts_bs_individuels_non_marchands,D.632,apu,Transferts B&S individuels non mar- chands (APU),2020,11789.7,definitif,114,lu
+2019-2023,2015,emplois,transferts_bs_individuels_non_marchands,D.632,apu,Transferts B&S individuels non mar- chands (APU),2021,12338.6,definitif,114,lu
+2019-2023,2015,emplois,transferts_bs_individuels_non_marchands,D.632,apu,Transferts B&S individuels non mar- chands (APU),2022,12611.2,definitif,114,lu
+2019-2023,2015,emplois,transferts_bs_individuels_non_marchands,D.632,apu,Transferts B&S individuels non mar- chands (APU),2023,12876.1,definitif,114,lu
+2019-2023,2015,emplois,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non mar- chands (Ménages),2019,391.2,definitif,114,lu
+2019-2023,2015,emplois,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non mar- chands (Ménages),2020,375.2,definitif,114,lu
+2019-2023,2015,emplois,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non mar- chands (Ménages),2021,398.7,definitif,114,lu
+2019-2023,2015,emplois,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non mar- chands (Ménages),2022,443.4,definitif,114,lu
+2019-2023,2015,emplois,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non mar- chands (Ménages),2023,500.0,definitif,114,lu
+2020-2024,2015,ressources,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2020,13690.9,definitif,114,lu
+2020-2024,2015,ressources,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2021,14438.3,definitif,114,lu
+2020-2024,2015,ressources,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2022,14799.8,definitif,114,lu
+2020-2024,2015,ressources,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2023,15104.2,semi_definitif,114,lu
+2020-2024,2015,ressources,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2024,15633.4,provisoire,114,lu
+2020-2024,2015,ressources,prestations_sociales_nature,D.631,menages,Prestations sociales en nature (Ménages),2020,1526.0,definitif,114,lu
+2020-2024,2015,ressources,prestations_sociales_nature,D.631,menages,Prestations sociales en nature (Ménages),2021,1701.0,definitif,114,lu
+2020-2024,2015,ressources,prestations_sociales_nature,D.631,menages,Prestations sociales en nature (Ménages),2022,1713.1,definitif,114,lu
+2020-2024,2015,ressources,prestations_sociales_nature,D.631,menages,Prestations sociales en nature (Ménages),2023,1764.5,semi_definitif,114,lu
+2020-2024,2015,ressources,prestations_sociales_nature,D.631,menages,Prestations sociales en nature (Ménages),2024,1852.7,provisoire,114,lu
+2020-2024,2015,ressources,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non marchands (Ménages),2020,12164.9,definitif,114,lu
+2020-2024,2015,ressources,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non marchands (Ménages),2021,12737.3,definitif,114,lu
+2020-2024,2015,ressources,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non marchands (Ménages),2022,13086.7,definitif,114,lu
+2020-2024,2015,ressources,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non marchands (Ménages),2023,13339.7,semi_definitif,114,lu
+2020-2024,2015,ressources,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non marchands (Ménages),2024,13780.7,provisoire,114,lu
+2020-2024,2015,emplois,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2020,13690.9,definitif,114,lu
+2020-2024,2015,emplois,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2021,14438.3,definitif,114,lu
+2020-2024,2015,emplois,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2022,14799.8,definitif,114,lu
+2020-2024,2015,emplois,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2023,15104.2,semi_definitif,114,lu
+2020-2024,2015,emplois,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2024,15633.4,provisoire,114,lu
+2020-2024,2015,emplois,prestations_sociales_nature,D.631,apu,Prestations sociales en nature (APU),2020,1526.0,definitif,114,lu
+2020-2024,2015,emplois,prestations_sociales_nature,D.631,apu,Prestations sociales en nature (APU),2021,1701.0,definitif,114,lu
+2020-2024,2015,emplois,prestations_sociales_nature,D.631,apu,Prestations sociales en nature (APU),2022,1713.1,definitif,114,lu
+2020-2024,2015,emplois,prestations_sociales_nature,D.631,apu,Prestations sociales en nature (APU),2023,1764.5,semi_definitif,114,lu
+2020-2024,2015,emplois,prestations_sociales_nature,D.631,apu,Prestations sociales en nature (APU),2024,1852.7,provisoire,114,lu
+2020-2024,2015,emplois,transferts_bs_individuels_non_marchands,D.632,apu,Transferts B&S individuels non mar- chands (APU),2020,11789.7,definitif,114,lu
+2020-2024,2015,emplois,transferts_bs_individuels_non_marchands,D.632,apu,Transferts B&S individuels non mar- chands (APU),2021,12338.6,definitif,114,lu
+2020-2024,2015,emplois,transferts_bs_individuels_non_marchands,D.632,apu,Transferts B&S individuels non mar- chands (APU),2022,12643.3,definitif,114,lu
+2020-2024,2015,emplois,transferts_bs_individuels_non_marchands,D.632,apu,Transferts B&S individuels non mar- chands (APU),2023,12839.7,semi_definitif,114,lu
+2020-2024,2015,emplois,transferts_bs_individuels_non_marchands,D.632,apu,Transferts B&S individuels non mar- chands (APU),2024,13239.0,provisoire,114,lu
+2020-2024,2015,emplois,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non mar- chands (Ménages),2020,375.2,definitif,114,lu
+2020-2024,2015,emplois,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non mar- chands (Ménages),2021,398.7,definitif,114,lu
+2020-2024,2015,emplois,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non mar- chands (Ménages),2022,443.4,definitif,114,lu
+2020-2024,2015,emplois,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non mar- chands (Ménages),2023,500.0,semi_definitif,114,lu
+2020-2024,2015,emplois,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non mar- chands (Ménages),2024,541.7,provisoire,114,lu
+2021-2025,2015,ressources,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2021,14438.3,definitif,114,lu
+2021-2025,2015,ressources,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2022,14799.8,definitif,114,lu
+2021-2025,2015,ressources,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2023,15104.2,definitif,114,lu
+2021-2025,2015,ressources,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2024,15572.4,semi_definitif,114,lu
+2021-2025,2015,ressources,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2025,16399.9,provisoire,114,lu
+2021-2025,2015,ressources,prestations_sociales_nature,D.631,menages,Prestations sociales en nature (Ménages),2021,1701.0,definitif,114,lu
+2021-2025,2015,ressources,prestations_sociales_nature,D.631,menages,Prestations sociales en nature (Ménages),2022,1713.1,definitif,114,lu
+2021-2025,2015,ressources,prestations_sociales_nature,D.631,menages,Prestations sociales en nature (Ménages),2023,1764.5,definitif,114,lu
+2021-2025,2015,ressources,prestations_sociales_nature,D.631,menages,Prestations sociales en nature (Ménages),2024,1761.7,semi_definitif,114,lu
+2021-2025,2015,ressources,prestations_sociales_nature,D.631,menages,Prestations sociales en nature (Ménages),2025,1760.6,provisoire,114,lu
+2021-2025,2015,ressources,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non marchands (Ménages),2021,12737.3,definitif,114,lu
+2021-2025,2015,ressources,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non marchands (Ménages),2022,13086.7,definitif,114,lu
+2021-2025,2015,ressources,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non marchands (Ménages),2023,13339.7,definitif,114,lu
+2021-2025,2015,ressources,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non marchands (Ménages),2024,13810.7,semi_definitif,114,lu
+2021-2025,2015,ressources,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non marchands (Ménages),2025,14639.3,provisoire,114,lu
+2021-2025,2015,emplois,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2021,14438.3,definitif,114,lu
+2021-2025,2015,emplois,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2022,14799.8,definitif,114,lu
+2021-2025,2015,emplois,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2023,15104.2,definitif,114,lu
+2021-2025,2015,emplois,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2024,15572.4,semi_definitif,114,lu
+2021-2025,2015,emplois,transferts_sociaux_nature,D.63,,Transferts sociaux en nature,2025,16399.9,provisoire,114,lu
+2021-2025,2015,emplois,prestations_sociales_nature,D.631,apu,Prestations sociales en nature (APU),2021,1701.0,definitif,114,lu
+2021-2025,2015,emplois,prestations_sociales_nature,D.631,apu,Prestations sociales en nature (APU),2022,1713.1,definitif,114,lu
+2021-2025,2015,emplois,prestations_sociales_nature,D.631,apu,Prestations sociales en nature (APU),2023,1764.5,definitif,114,lu
+2021-2025,2015,emplois,prestations_sociales_nature,D.631,apu,Prestations sociales en nature (APU),2024,1761.7,semi_definitif,114,lu
+2021-2025,2015,emplois,prestations_sociales_nature,D.631,apu,Prestations sociales en nature (APU),2025,1760.6,provisoire,114,lu
+2021-2025,2015,emplois,transferts_bs_individuels_non_marchands,D.632,apu,Transferts B&S individuels non mar- chands (APU),2021,12338.6,definitif,114,lu
+2021-2025,2015,emplois,transferts_bs_individuels_non_marchands,D.632,apu,Transferts B&S individuels non mar- chands (APU),2022,12643.3,definitif,114,lu
+2021-2025,2015,emplois,transferts_bs_individuels_non_marchands,D.632,apu,Transferts B&S individuels non mar- chands (APU),2023,12839.7,definitif,114,lu
+2021-2025,2015,emplois,transferts_bs_individuels_non_marchands,D.632,apu,Transferts B&S individuels non mar- chands (APU),2024,13269.0,semi_definitif,114,lu
+2021-2025,2015,emplois,transferts_bs_individuels_non_marchands,D.632,apu,Transferts B&S individuels non mar- chands (APU),2025,14053.1,provisoire,114,lu
+2021-2025,2015,emplois,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non mar- chands (Ménages),2021,398.7,definitif,114,lu
+2021-2025,2015,emplois,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non mar- chands (Ménages),2022,443.4,definitif,114,lu
+2021-2025,2015,emplois,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non mar- chands (Ménages),2023,500.0,definitif,114,lu
+2021-2025,2015,emplois,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non mar- chands (Ménages),2024,541.7,semi_definitif,114,lu
+2021-2025,2015,emplois,transferts_bs_individuels_non_marchands,D.632,menages,Transferts B&S individuels non mar- chands (Ménages),2025,586.2,provisoire,114,lu
