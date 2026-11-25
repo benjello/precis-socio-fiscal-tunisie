@@ -56,8 +56,13 @@ def cible(secteur: str, cote: str, code: str, operation: str, an: int) -> tuple[
 
 
 def montant(poste: str, an: int) -> float | None:
+    """Montant du poste en millions de dinars : la valeur de la série, multipliée par la colonne `facteur`
+    du registre quand elle est remplie (séries en dinars ou en milliers), comme dans reconstruire_comptes."""
     p = registre()[poste]
-    return rc.montant(p["serie"], p["colonne"], an)[0]
+    m = rc.montant(p["serie"], p["colonne"], an)[0]
+    if m is not None and p.get("facteur"):
+        m *= float(p["facteur"])
+    return m
 
 
 def annees() -> list[int]:

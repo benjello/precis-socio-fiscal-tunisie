@@ -1,7 +1,8 @@
 """Homogénéité du vocabulaire de comptabilité nationale dans les sources françaises de l'ouvrage.
 
-Table de référence : docs/conventions/vocabulaire-comptes-nationaux.csv (terme retenu, d'après le SCN 2008
-en français, paragraphe et page ; variantes à éviter ; terme imprimé par l'INS quand il diffère).
+Table de référence : docs/conventions/vocabulaire-comptes-nationaux.csv (terme retenu : celui que l'INS
+imprime, suivi du code du SCN, sauf définition différente — règle M16 ; référence au SCN 2008 en français,
+paragraphe et page ; variantes à éviter ; terme imprimé par l'INS ; nature de l'écart et preuve).
 
 Deux relevés, en avertissement (le script sort toujours avec le code 0) :
 1. les variantes à éviter (expression régulière de la colonne `variantes_a_eviter`) ;
