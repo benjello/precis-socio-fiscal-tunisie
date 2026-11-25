@@ -381,7 +381,7 @@ Les opérations financières par instrument (F.1 à F.8) viennent du tableau des
 
 ### B.6/B.7 Revenu disponible brut et ajusté — à rédiger
 
-### — Comptes de patrimoine — l'INS ne publie que des comptes de flux (annexe des comptes de la nation)
+### — Comptes de patrimoine — l'INS ne publie que des comptes de patrimoine financiers (base 2015, vol. B de l'édition 2015-2020), pas de comptes de patrimoine non financiers (annexe des comptes de la nation)
 
 ### — Comptes régionaux — proposition
 

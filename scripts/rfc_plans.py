@@ -45,7 +45,7 @@ PROPOSITIONS_A = {
     "A5": [("D.63", "Transferts sociaux en nature", "publié dans un tableau à part des comptes des secteurs (éd. 2021-2025, p. 114) : 15 104,2 MD en 2023, dont 14 604,2 versés par les administrations publiques")],
     "A10": [("TRE", "Ressources et emplois par produit (production, importations, marges, impôts, consommations intermédiaires, emplois finals)", "tableau publié ; extrait dans le dépôt de données")],
     "A11": [("B.1*g", "Produit intérieur brut", "annexe sur le PIB"), ("B.5", "Solde des revenus primaires et revenu national", "à rédiger"),
-            ("B.6/B.7", "Revenu disponible brut et ajusté", "à rédiger"), ("—", "Comptes de patrimoine", "l'INS ne publie que des comptes de flux (annexe des comptes de la nation)"),
+            ("B.6/B.7", "Revenu disponible brut et ajusté", "à rédiger"), ("—", "Comptes de patrimoine", "l'INS ne publie que des comptes de patrimoine financiers (base 2015, vol. B de l'édition 2015-2020), pas de comptes de patrimoine non financiers (annexe des comptes de la nation)"),
             ("—", "Comptes régionaux", "proposition")],
 }
 PARTIES_B = [
