@@ -1,0 +1,22 @@
+famille,code,operation,montant_2020,montant_2023,part_2020_pct,part_2023_pct,source,difficulte
+Imputées,P.1 (dont),Loyers imputés des propriétaires occupants,,,,,"le terme n'apparaît que dans le texte de méthode (p. 16 des éd. 2020-2024 et 2021-2025), sans montant","production sans transaction, estimée par un loyer de marché"
+Imputées,P.119,Production de SIFIM,3325.0,4126.5,1.7,1.5,"comptes des secteurs, ressources","marge d'intérêt imputée, répartie entre utilisateurs par convention"
+Imputées,D.41 (dont),Correction SIFIM des intérêts,-66.1,-92.1,0.3,0.3,"comptes des secteurs, emplois",contrepartie de la précédente dans les intérêts
+Imputées,P.51c,Consommation de capital fixe,14517.8,16164.5,,,"« Amortissements », tableau « Revenu national », p. 30","estimée par inventaire permanent, sans source administrative"
+Imputées,D.122/D.612,Cotisations sociales imputées,1001.3,1692.3,,,"« Cotisations sociales imputées », tableau « Opérations agrégées (suite) », p. 36",contrepartie des prestations versées directement par l'employeur
+Imputées,D.44,Revenus de la propriété attribués aux assurés,248.0,439.2,1.1,1.3,"comptes des secteurs, emplois","revenu des placements des assureurs, réputé reversé"
+Imputées,D.8,Ajustement pour variation des droits à pension,,,,,aucune occurrence dans les six éditions en base 2015 ; « D8 » n'apparaît que dans la nomenclature des éditions 2005-2009 à 2007-2011,propre aux régimes par capitalisation
+Soldes et résidus,B.2g/B.3g,Excédent d'exploitation et revenu mixte,56982.5,74989.5,,,"comptes des secteurs, emplois","solde du compte d'exploitation, sans source propre"
+Soldes et résidus,P.52,Variation de stocks,-3773.1,-11194.8,14.8,28.9,"comptes des secteurs, emplois",souvent obtenue par solde de l'équilibre des produits
+Soldes et résidus,F.8,Autres comptes à recevoir ou à payer,-9162.1,-1145.3,20.1,2.1,"comptes des secteurs, emplois",décalages entre droits constatés et paiements
+Soldes et résidus,—,Écart statistique,91.3,-229.1,0.4,0.6,"comptes des secteurs, emplois",écart entre capacité de financement et solde financier
+Fourre-tout,D.29,Autres impôts sur la production,1775.8,2472.9,3.3,3.6,"comptes des secteurs, emplois","taxes diverses, rattachables texte par texte"
+Fourre-tout,D.39,Subventions sur la production,-263.0,-226.7,0.5,0.3,"comptes des secteurs, emplois","aides diverses, rattachables ligne par ligne"
+Fourre-tout,D.71,Primes nettes d'assurance-dommages,829.1,1111.8,1.9,1.8,"comptes des secteurs, emplois","flux privés, connus par les comptes des assureurs"
+Fourre-tout,D.72,Indemnités d'assurance-dommages,894.6,1298.1,2.0,2.2,"comptes des secteurs, emplois",idem
+Fourre-tout,D.75,Transferts courants divers,3298.2,3675.0,7.4,6.1,"comptes des secteurs, emplois","envois de fonds, dons, amendes : à décomposer"
+Fourre-tout,D.99,Autres transferts en capital,1643.3,2880.1,6.5,7.4,"comptes des secteurs, emplois","annulations de dettes, apports : à décomposer"
+Faible contenu,B.7g,Revenu disponible ajusté,122429.7,156421.1,,,"tableau économique d'ensemble, p. 116-117 (2020) et 120-121 (2023)",solde ; ne se distingue de B.6 que par les transferts en nature
+Faible contenu,NP,Acquisitions moins cessions d'actifs non produits,0.0,0.0,0.0,0.0,"comptes des secteurs, emplois","terrains et droits, montants faibles"
+Faible contenu,K.3 à K.7,Réévaluation et autres changements de volume,,,,,l'INS ne publie pas de comptes de patrimoine ; aucun libellé « réévaluation » ni « autres changements de volume » dans l'inventaire,suppose des comptes de patrimoine
+Faible contenu,F.1 à F.7,Détail du compte financier par instrument,27603.6,28470.7,60.6,51.4,"comptes des secteurs, emplois","connu par les bilans bancaires, sans dispositif à décrire"

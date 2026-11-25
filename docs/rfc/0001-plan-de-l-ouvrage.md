@@ -6,7 +6,8 @@
 - **Annexes engendrées** par `scripts/rfc_plans.py` sur `integration/option-d` :
   - [plan A, par les comptes](plan-a-comptes.md) ;
   - [plan B, thématique](plan-b-thematique.md) ;
-  - [correspondance section par section](correspondance-plans.csv).
+  - [correspondance section par section](correspondance-plans.csv) ;
+  - [opérations sans dispositif à raconter](operations-sans-dispositif.md), engendrée par `scripts/rfc_sans_dispositif.py`.
 
 ## 1. Objet et contexte
 
@@ -20,7 +21,7 @@ Deux plans de l'ouvrage sont possibles :
 - un **plan par les comptes** (A), qui suit la séquence des comptes nationaux ;
 - un **plan thématique** (B), qui suit les questions du lecteur.
 
-Les deux plans sont décrits en détail, jusqu'aux parties qui n'existent pas encore. **On demande aux relecteurs** de choisir le plan de la table des matières, de dire où ranger les cas difficiles et de désigner les parties manquantes prioritaires (questions numérotées au § 6). Aucun déplacement n'est fait tant que la RFC n'est pas close.
+Les deux plans sont décrits en détail, jusqu'aux parties qui n'existent pas encore. **On demande aux relecteurs** de choisir le plan de la table des matières, de dire où ranger les cas difficiles et de désigner les parties manquantes prioritaires (questions numérotées au § 7). Aucun déplacement n'est fait tant que la RFC n'est pas close.
 
 ## 2. Plan A : par les comptes
 
@@ -60,6 +61,8 @@ Parties qu'un ouvrage complet devrait avoir et qui n'existent pas, données comm
 - les comptes de patrimoine (l'INS ne publie que des comptes de flux) ;
 - les comptes régionaux.
 
+Un chapitre facultatif est proposé en tête de la partie « synthèse » : **« Conventions et imputations »**. Il réunirait les opérations qu'aucun dispositif ne raconte (§ 4), décrites par la méthode de l'INS plutôt que par un texte.
+
 ## 3. Plan B : thématique en sept parties
 
 1. Le cadre.
@@ -94,7 +97,22 @@ Six cas sont discutés :
 | Entreprises publiques | volume entier en partie 2 ; ou scindé : statut et relation financière avec l'État en partie 7, activité par branche en partie 2 | à scinder, plus tard (34 sections, 31 renvois) |
 | Transport et services | partie 2, dans un ensemble « services » à créer | partie 2 |
 
-## 4. Correspondance et coût
+## 4. Les opérations sans dispositif à raconter
+
+Une partie des comptes ne correspond à aucune loi, aucune prestation ni aucune ligne du budget. Ces opérations relèvent de quatre familles ; l'[annexe](operations-sans-dispositif.md) donne pour chacune son code, ses montants 2020 et 2023, sa part du compte et une ligne sur la difficulté.
+
+| Famille | Opérations | Ce qui les caractérise |
+|---|---|---|
+| Imputées | loyers imputés, SIFIM (P.119, D.41), consommation de capital fixe (P.51c), cotisations imputées (D.122, D.612), revenus attribués aux assurés (D.44), ajustement pour droits à pension (D.8) | aucune transaction observée : l'INS impute un montant par convention |
+| Soldes et résidus | excédent d'exploitation et revenu mixte (B.2g, B.3g), variation de stocks (P.52), autres comptes à recevoir ou à payer (F.8), écart statistique | obtenus par différence |
+| Fourre-tout | D.29, D.39, D.71, D.72, D.75, D.99 | rubriques « autres » ou « divers », à décomposer |
+| Faible contenu | revenu disponible ajusté (B.7g), actifs non produits (NP), réévaluation et autres changements de volume, détail du compte financier (F.1 à F.7) | solde redondant, montant faible ou compte non publié |
+
+Trois de ces opérations ne sont pas publiées par l'INS : les loyers imputés, l'ajustement D.8 et les comptes de réévaluation et de changement de volume. Les trois éléments sont absents de l'inventaire des tableaux des éditions en base 2015 ; la recherche est citée dans l'annexe.
+
+Ces opérations pèsent peu dans les comptes des sociétés non financières (7,4 % de leurs montants en 2023) et des ménages (9,2 %). Elles pèsent davantage dans ceux des administrations publiques (13,9 %) et surtout des sociétés financières (57,6 %), où le compte financier par instrument domine. La mesure est définie dans l'annexe.
+
+## 5. Correspondance et coût
 
 La [table de correspondance](correspondance-plans.csv) donne, pour chacune des 979 sections existantes (volumes et pages générales), sa place dans le plan A et dans le plan B. Dans le plan A :
 - 255 sections restent « à déterminer » ;
@@ -111,7 +129,7 @@ Ce que chaque plan apporte, et à qui :
 - **Plan A** : la somme des sections donne les comptes ; les cases vides se voient dans la table des matières elle-même. Il sert l'économiste et le comptable national, mais déroute le lecteur qui cherche un dispositif.
 - **Plan B** : le lecteur trouve « les retraites » là où il les cherche, et presque rien ne bouge. Les comptes restent une couche de lecture : les encadrés « Dans les comptes » et les comptes reconstruits.
 
-## 5. Voie mixte
+## 6. Voie mixte
 
 Une voie mixte : un plan pour la table des matières, l'autre comme **sommaire engendré**. On peut aussi engendrer un troisième sommaire **par situation de vie** : famille, études, travail, chômage, maladie, retraite, pauvreté, logement.
 - Le sommaire « par les comptes » s'engendre déjà depuis le registre des postes (`precis/fr/postes-comptables.csv`) ; il suffit d'y ajouter une ligne par section domicile.
@@ -120,7 +138,7 @@ Une voie mixte : un plan pour la table des matières, l'autre comme **sommaire e
 
 Les encadrés « Dans les comptes » et les blocs de passage déjà en place valent pour les trois sommaires.
 
-## 6. Questions aux relecteurs
+## 7. Questions aux relecteurs
 
 1. **Table des matières** : (a) plan A, par les comptes ; (b) plan B, thématique ; (c) voie mixte : plan B pour la table des matières, plan A comme sommaire engendré ; (d) autre.
 2. **Rémunérations publiques** : (a) emploi et revenus ; (b) finances publiques.
@@ -132,7 +150,8 @@ Les encadrés « Dans les comptes » et les blocs de passage déjà en place val
 8. **Niveau de détail comptable** dans les chapitres : (a) un encadré « Dans les comptes » par dispositif ; (b) en plus, un tableau « qui verse à qui » par chapitre ; (c) en plus, le passage chiffré du budget aux comptes.
 9. **Sommaire par situation de vie** : (a) oui ; (b) non.
 10. **Titres** : les titres des sept parties du plan B conviennent-ils ? Proposez-en d'autres le cas échéant.
+11. **Opérations sans dispositif** (§ 4) : (a) un chapitre « Conventions et imputations » qui les réunit ; (b) chacune décrite dans le chapitre de son compte, sans chapitre propre ; (c) hors de l'ouvrage, dans l'annexe sur les comptes de la nation.
 
-## 7. Comment répondre
+## 8. Comment répondre
 
-On propose d'ouvrir **un fil de discussion par question** sur le dépôt, numéroté comme au § 6, et de clore à une date que fixera Mahdi. Rien n'est ouvert ni publié tant qu'il n'en a pas décidé le lieu. En attendant, les remarques se font en commentaire de la demande de fusion de cette RFC.
+On propose d'ouvrir **un fil de discussion par question** sur le dépôt, numéroté comme au § 7, et de clore à une date que fixera Mahdi. Rien n'est ouvert ni publié tant qu'il n'en a pas décidé le lieu. En attendant, les remarques se font en commentaire de la demande de fusion de cette RFC.
