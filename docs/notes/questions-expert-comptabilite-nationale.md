@@ -74,14 +74,12 @@ Références : INS, *Les comptes de la nation* (clé bibliographique `ins-cnat-2
 - La réponse dirait si une ventilation « de qui à qui » existe (tableau des intérêts par débiteur, détenteurs des titres de l'État).
 - Priorité 3.
 
-**A13. Comment l'INS passe-t-il des biens de la balance des paiements (MBP6) aux exportations et importations de biens du compte du reste du monde ?** (lot B)
-- Observé, en 2023, comptes de la nation (éd. 2021-2025) face à la balance des paiements (BCT, rapport 2024, tableau 19) :
-  - P.61 : 62 824,1 MD dans les comptes, 28 081,6 en balance des paiements ;
-  - P.71 : 77 435,9, contre 56 181,8 ;
-  - P.62 : 16 593,8, contre 33 224,9.
-- Hypothèse compatible avec les chiffres, non établie : les comptes compteraient en biens la fabrication sur intrants de tiers (14 427,8 MD, en services dans la balance) et les marchandises envoyées pour transformation, en flux bruts. On a biens + fabrication + écart sur les importations ≈ 63 763,5, contre 62 824,1.
-- La réponse dirait si les comptes suivent encore le SCN 1993 pour le travail à façon, et fixerait la table de passage.
-- Priorité 1.
+**A13. Confirmez-vous que les comptes de la nation enregistrent les biens transformés pour le compte de tiers en flux bruts (comme les statistiques du commerce extérieur), là où la balance des paiements (MBP6) n'en retient que les services de fabrication ?** (lot B)
+- Observé, en 2023 : P.61 des comptes vaut 62 824,1 MD. Les biens de la balance des paiements (28 081,6) plus les produits transformés pour le compte de tiers (35,1 milliards, BCT, *Balance des paiements 2023*, p. 30) font 63 181,6 MD, soit un écart de −357,5.
+- De même pour P.71 : 77 435,9 MD, contre 56 181,8 + 20 700 (importations pour motif de fabrication) = 76 881,8.
+- Et pour P.62 : 16 593,8 MD, contre les services de la balance moins la fabrication moins la redevance gaz, 16 703,4.
+- L'écart restant est de 0,1 à 1,2 milliard selon l'opération et l'année (2022-2024). Cette explication est établie par les chiffres ; la question est de la faire confirmer, et d'expliquer l'écart restant.
+- Priorité 2 (elle était 1).
 
 **A14. La redevance gaz est-elle un loyer (D.45) dans les comptes et un service de transport dans la balance des paiements ?**
 - Observé, en 2023 : D.45 versé par le reste du monde aux résidents vaut 2 097,7 MD dans les comptes ; la « redevance gaz » des services de transport vaut 2 093,7 MD dans la balance des paiements.
