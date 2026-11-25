@@ -117,3 +117,9 @@ Ouvert le 24/11/2026, au fil du plan par opération (`docs/notes/plan-par-operat
   - loi de règlement du budget 2023 ;
   - comptes définitifs des collectivités de 2023.
 - **Note technique** : les sites de la CNSS et de la CNAM servent un certificat dont la chaîne est incomplète. Le téléchargement a vérifié le certificat avec l'intermédiaire officiel de l'autorité (Sectigo), tiré de l'adresse que le certificat indique ; aucune vérification n'a été désactivée.
+
+## M14. Prolonger la reconstruction en 2021-2023 par le rapport sur les entreprises publiques
+
+L'année de référence est 2020 (dernière année où toutes les sources existent ; année du COVID). Le rapport du ministère des Finances sur les entreprises publiques (éditions LF 2024 et LF 2025) donne les comptes de résultat des trois caisses pour 2020-2023, désormais extraits dans le dépôt de données (`minfin-ep-caisses`), avec leur statut imprimé : 2021-2022 réalisés, 2023 provisoire (CNSS, CNRPS) ou estimation (CNAM). Il donne les recettes (cotisations : celles de la CNSS en 2020 égalent ses propres chiffres, 3 430 MD), mais ni les pensions ni les prestations de soins, fondues dans les charges d'exploitation.
+
+Question : faut-il chiffrer en 2021-2023 les cotisations des trois caisses par cette source, en marquant « rapport du ministère » et le statut, et laisser les pensions et les soins sans montant ces années-là ? Défaut proposé : oui, pour les cotisations seulement, avec l'année 2020 maintenue comme référence.

@@ -36,9 +36,32 @@ Ce compte est un **pilote** : il ne porte que sur les administrations publiques 
 ```{python}
 #| echo: false
 #| output: asis
-print(f"L'année de référence est **{AN}** : c'est la dernière année que l'édition {ED} des comptes de la nation "
-      "imprime comme définitive. Dans l'en-tête des comptes des secteurs, une année sans astérisque est "
-      "définitive ; un astérisque marque une année semi-définitive, deux une année provisoire.")
+print(f"L'année de référence est **{AN}** (édition {ED} des comptes de la nation, où elle est définitive). "
+      "Ce n'est pas la dernière année publiée : c'est la dernière où les sources de la reconstruction sont toutes "
+      "disponibles, budget exécuté et comptes des trois caisses de sécurité sociale compris. Les comptes et les "
+      "rapports des caisses paraissent avec plusieurs années de retard. Pour la CNRPS, les états financiers de 2017 "
+      "et de 2019 sont tronqués dans les fichiers publiés, et ceux de 2020 ne sont connus que par son rapport "
+      "d'activité, d'où viennent ses montants.")
+```
+
+::: {.callout-warning}
+2020 est l'année de la pandémie de COVID-19 : recettes, transferts et prestations s'y écartent de leur tendance. C'est pourquoi la couverture est aussi donnée année par année, de 2015 à 2023, ci-dessous.
+:::
+
+Chaque montant de l'ouvrage porte la nature de sa source : série statistique, états financiers, rapport d'activité ou rapport du ministère (colonne « Source » du tableau « qui verse à qui »).
+
+```{python}
+#| echo: false
+#| output: asis
+_y = list(csv.DictReader(open("compte-apu-annees.csv", encoding="utf-8")))
+print("| Année | Édition | S13 : opérations couvertes | S13 : couverture | S1314 : opérations couvertes | S1314 : couverture |")
+print("|---|---|--:|--:|--:|--:|")
+for an in sorted({l["annee"] for l in _y}):
+    d = {l["secteur"]: l for l in _y if l["annee"] == an}
+    cell = lambda s: (f"{d[s]['couvertes']} sur {d[s]['operations']}", (n(d[s]['couverture_pct']) + " %") if d[s]['couverture_pct'] else "—")
+    a13, b13 = cell("S13"); a14, b14 = cell("S1314")
+    print(f"| {an} | {d['S13']['edition']} | {a13} | {b13} | {a14} | {b14} |")
+print("\n: Couverture de la reconstruction, année par année : opérations du compte qui ont au moins un poste chiffré, et rapport de la somme des postes au montant de l'INS sur ces opérations {#tbl-capu-annees}")
 ```
 
 ## Les opérations des administrations publiques {#sec-capu-operations}
@@ -64,13 +87,14 @@ Les budgets de l'État chiffrent l'administration centrale ; les sous-secteurs s
 ```{python}
 #| echo: false
 #| output: asis
-print("| Poste | Opération | Verse | Reçoit | Montant | Contrepartie | Section |")
-print("|---|---|---|---|--:|---|---|")
+_nat = {r["poste"]: r.get("nature_source", "") for r in csv.DictReader(open("postes-comptables.csv", encoding="utf-8"))}
+print("| Poste | Opération | Verse | Reçoit | Montant | Source | Contrepartie | Section |")
+print("|---|---|---|---|--:|---|---|---|")
 for l in _f:
     vol, sec = l["section"].split("#")
     lien = "[" + l["volume"] + "](" + vol + ".html#" + sec + ")"
     print(f"| {l['poste']} | {l['code_scn']} | {l['verse'].replace(';', ', ')} | {l['recoit'].replace(';', ', ')} | "
-          f"{n(l['montant_md'])} | {l.get('contrepartie', '')}{' (' + l['contrepartie_secteur'] + ')' if l.get('contrepartie_secteur') else ''} | {lien} |")
+          f"{n(l['montant_md'])} | {_nat.get(l['poste'], '')} | {l.get('contrepartie', '')}{' (' + l['contrepartie_secteur'] + ')' if l.get('contrepartie_secteur') else ''} | {lien} |")
 print(f"\n: Les postes, leurs secteurs, leur contrepartie et leur section domicile, {AN} (millions de dinars courants ; montant vide : pas de série vérifiée ; contrepartie « établie » quand la source désigne le secteur qui paie, « marges publiées » quand les comptes donnent ce que chaque secteur verse et reçoit au total, sans la matrice de qui à qui, « sans objet » pour une opération sur produits ou un impôt sur les produits) {{#tbl-capu-flux}}")
 ```
 
