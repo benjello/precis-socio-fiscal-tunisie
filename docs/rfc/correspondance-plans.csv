@@ -1,0 +1,980 @@
+volume,chapitre,section,ancre,statut,operation,plan_a,plan_b
+agriculture,index,index,,ébauche,à déterminer,à déterminer,B2 La production
+agriculture,_institution,Vue d'ensemble,sec-agri-institution-vue,existe,institution,cadre institutionnel,B2 La production
+agriculture,_institution,Le ministère de l'Agriculture,sec-agri-institution-ministere,existe,institution,cadre institutionnel,B2 La production
+agriculture,_institution,Les commissariats régionaux au développement agricole,sec-agri-institution-crda,existe,institution,cadre institutionnel,B2 La production
+agriculture,_institution,Les offices de mise en valeur des périmètres irrigués et l'Agence foncière agricole,sec-agri-institution-mev,existe,institution,cadre institutionnel,B2 La production
+agriculture,_institution,L'Agence de promotion des investissements agricoles,sec-agri-institution-apia,existe,institution,cadre institutionnel,B2 La production
+agriculture,_institution,Les groupements interprofessionnels,sec-agri-institution-groupements,existe,institution,cadre institutionnel,B2 La production
+agriculture,_institution,"La vulgarisation, la recherche et la formation",sec-agri-institution-encadrement,existe,institution,cadre institutionnel,B2 La production
+agriculture,_institution,La chronologie des textes,sec-agri-institution-chronologie,existe,institution,cadre institutionnel,B2 La production
+agriculture,_institution,Les offices qui sont des entreprises publiques,sec-agri-institution-voisinage,existe,institution,cadre institutionnel,B2 La production
+agriculture,_depense,Vue d'ensemble,sec-agri-depense-vue,existe,à déterminer,à déterminer,B2 La production
+agriculture,_depense,Le budget de la mission Agriculture,sec-agri-depense-mission,existe,à déterminer,à déterminer,B2 La production
+agriculture,_depense,Les encouragements à l'agriculture dans les lois de finances,sec-agri-depense-encouragements,existe,à déterminer,à déterminer,B2 La production
+agriculture,_depense,Les transferts aux offices,sec-agri-depense-offices,existe,à déterminer,à déterminer,B2 La production
+agriculture,_depense,"L'intrant, de la compensation à l'éclipse budgétaire",sec-agri-intrants-histoire,existe,D.3,A3 Le compte d'affectation des revenus primaires,B2 La production
+agriculture,_depense,"L'engrais, par le Groupe chimique tunisien",sec-agri-intrants-engrais,existe,à déterminer,à déterminer,B2 La production
+agriculture,_depense,Les semences de multiplication,sec-agri-intrants-semences,existe,à déterminer,à déterminer,B2 La production
+agriculture,_depense,Les aliments du bétail et l'orge fourragère,sec-agri-intrants-fourrage,existe,à déterminer,à déterminer,B2 La production
+agriculture,_credit,Vue d'ensemble,sec-agri-credit-vue,existe,F,A8 Le compte financier,B2 La production
+agriculture,_credit,De la Caisse mutuelle de crédit agricole à la Banque nationale agricole,sec-agri-credit-antecedent,existe,F,A8 Le compte financier,B2 La production
+agriculture,_credit,Les grandes réformes,sec-agri-credit-reformes,existe,F,A8 Le compte financier,B2 La production
+agriculture,_credit,Une vague antérieure : les abandons aux sociétés de mise en valeur (1997-2002),sec-agri-credit-mev,existe,F,A8 Le compte financier,B2 La production
+agriculture,_credit,L'état du droit,sec-agri-credit-etat,existe,F,A8 Le compte financier,B2 La production
+agriculture,_credit,Les comptes spéciaux agricoles et la Banque nationale agricole,sec-agri-credit-comptes,existe,F,A8 Le compte financier,B2 La production
+agriculture,_credit,La chronologie des textes,sec-agri-credit-chronologie,existe,F,A8 Le compte financier,B2 La production
+agriculture,_credit,La dépense et les bénéficiaires,sec-agri-credit-donnees,existe,F,A8 Le compte financier,B2 La production
+agriculture,_investissement,Vue d'ensemble,sec-agri-investissement-vue,existe,D.92,à déterminer,B2 La production
+agriculture,_investissement,De l'encouragement de 1963 au code de 1988,sec-agri-investissement-histoire,existe,D.92,à déterminer,B2 La production
+agriculture,_investissement,"L'APIA, guichet de l'investissement agricole",sec-agri-investissement-apia,existe,D.92,à déterminer,B2 La production
+agriculture,_investissement,Les fonds qui portent les primes,sec-agri-investissement-fonds,existe,D.92,à déterminer,B2 La production
+agriculture,_investissement,Les primes : approuvées et décaissées,sec-agri-investissement-donnees,existe,D.92,à déterminer,B2 La production
+agriculture,_investissement,La chronologie des textes,sec-agri-investissement-chronologie,existe,D.92,à déterminer,B2 La production
+agriculture,_eau,Vue d'ensemble,sec-agri-eau-vue,existe,à déterminer,à déterminer,B2 La production
+agriculture,_eau,L'eau dans les périmètres publics irrigués,sec-agri-eau-ppi,existe,à déterminer,à déterminer,B2 La production
+agriculture,_eau,Le code des eaux et le règlement de distribution,sec-agri-eau-code,existe,à déterminer,à déterminer,B2 La production
+agriculture,_eau,Le tarif de l'eau d'irrigation : un prix administré sans série nationale,sec-agri-eau-tarif,existe,à déterminer,à déterminer,B2 La production
+agriculture,_eau,La subvention implicite : coût de gros et prix facturé,sec-agri-eau-subvention,existe,à déterminer,à déterminer,B2 La production
+agriculture,_eau,L'aide de l'État à l'irrigation privée,sec-agri-eau-prive,existe,à déterminer,à déterminer,B2 La production
+agriculture,_eau,La redevance du domaine public hydraulique,sec-agri-eau-redevance,existe,à déterminer,à déterminer,B2 La production
+agriculture,_eau,L'état du droit,sec-agri-eau-etat,existe,à déterminer,à déterminer,B2 La production
+agriculture,_eau,La chronologie des textes,sec-agri-eau-chronologie,existe,à déterminer,à déterminer,B2 La production
+agriculture,_calamites,Vue d'ensemble,sec-agri-calamites-vue,existe,à déterminer,à déterminer,B2 La production
+agriculture,_calamites,La mise en place : du secours au cheptel au fonds d'indemnisation,sec-agri-calamites-miseenplace,existe,à déterminer,à déterminer,B2 La production
+agriculture,_calamites,Les grandes réformes,sec-agri-calamites-reformes,existe,à déterminer,à déterminer,B2 La production
+agriculture,_calamites,L'état du droit,sec-agri-calamites-etat,existe,à déterminer,à déterminer,B2 La production
+agriculture,_calamites,L'assurance agricole et la mutualité,sec-agri-calamites-assurance,existe,à déterminer,à déterminer,B2 La production
+agriculture,_calamites,La chronologie des textes,sec-agri-calamites-chronologie,existe,à déterminer,à déterminer,B2 La production
+agriculture,_calamites,Les ressources du fonds et l'activité de l'assurance,sec-agri-calamites-donnees,existe,à déterminer,à déterminer,B2 La production
+agriculture,_etudes,_etudes,,ébauche,transversal,cadre institutionnel,B2 La production
+cadre,index,Plan,sec-cadre-plan,ébauche,à déterminer,à déterminer,B1 Le cadre
+cadre,index,Les annexes communes,sec-cadre-annexes,ébauche,à déterminer,à déterminer,B1 Le cadre
+cadre,_population,_population,,ébauche,cadre,cadre institutionnel,B1 Le cadre
+cadre,_comptabilite_nationale,_comptabilite_nationale,,ébauche,cadre,cadre institutionnel,B1 Le cadre
+cadre,_lire_comptes,"Le poste, unité de rattachement",sec-cadre-poste,ébauche,cadre,cadre institutionnel,B1 Le cadre
+cadre,_lire_comptes,"Le résidu, publié",sec-cadre-residu,ébauche,cadre,cadre institutionnel,B1 Le cadre
+cadre,_lire_comptes,Les opérations que seule la méthode statistique reconstruit,sec-cadre-methode-statistique,à rédiger,cadre,cadre institutionnel,B1 Le cadre
+cadre,_monnaie_credit,_monnaie_credit,,ébauche,cadre,cadre institutionnel,B1 Le cadre
+cadre,_regions,_regions,,ébauche,cadre,cadre institutionnel,B1 Le cadre
+caisses,index,Ce que ce livre traite et ne traite pas,sec-caisses-perimetre,existe,à déterminer,à déterminer,B5 La protection sociale et les services publics
+caisses,index,"Qui recouvre, qui sert",sec-caisses-carte,existe,à déterminer,à déterminer,B5 La protection sociale et les services publics
+caisses,_histoire,"Avant 1956 : des régimes distincts, des organismes distincts",sec-caisses-protectorat,existe,institution,cadre institutionnel,B5 La protection sociale et les services publics
+caisses,_histoire,1956-1960 : de la pluralité aux établissements publics nationaux,sec-caisses-transition,existe,institution,cadre institutionnel,B5 La protection sociale et les services publics
+caisses,_histoire,Après 1960 : la lignée des caisses nationales,sec-caisses-lignee,existe,institution,cadre institutionnel,B5 La protection sociale et les services publics
+caisses,_statut_cadre,Des établissements publics tenus d'une comptabilité commerciale,sec-caisses-etablissements,existe,institution,cadre institutionnel,B5 La protection sociale et les services publics
+caisses,_statut_cadre,"Un budget de gestion, non un plafond de prestations",sec-caisses-budget,existe,institution,cadre institutionnel,B5 La protection sociale et les services publics
+caisses,_statut_cadre,La tutelle et le contrôle,sec-caisses-tutelle,existe,institution,cadre institutionnel,B5 La protection sociale et les services publics
+caisses,_comptes_regimes,La règle de 1960,sec-caisses-regle-1960,existe,à déterminer,à déterminer,B5 La protection sociale et les services publics
+caisses,_comptes_regimes,"Chaque régime nouveau, sa gestion distincte et sa réserve",sec-caisses-nouveaux-regimes,existe,à déterminer,à déterminer,B5 La protection sociale et les services publics
+caisses,_comptes_regimes,"Les réorganisations : la CAVIS, le projet de 1986, la CNAM",sec-caisses-reorganisations,existe,à déterminer,à déterminer,B5 La protection sociale et les services publics
+caisses,_comptes_regimes,L'équilibrage par la ventilation du taux global,sec-caisses-ventilation,existe,à déterminer,à déterminer,B5 La protection sociale et les services publics
+caisses,_etat_caisses,"Placements, emprunts et garantie",sec-caisses-placements,existe,à déterminer,à déterminer,B5 La protection sociale et les services publics
+caisses,_etat_caisses,Les concours des caisses au budget de l'État,sec-caisses-concours,existe,à déterminer,à déterminer,B5 La protection sociale et les services publics
+caisses,_etat_caisses,L'État employeur et l'État financeur,sec-caisses-financeur,existe,à déterminer,à déterminer,B5 La protection sociale et les services publics
+caisses,_comptes_longue_periode,"Les régimes de la CNSS, 1990-2004",sec-caisses-cnss-regimes,existe,à déterminer,à déterminer,B5 La protection sociale et les services publics
+caisses,_comptes_longue_periode,La branche des assurances sociales du régime général,sec-caisses-cnss-assurances-sociales,existe,à déterminer,à déterminer,B5 La protection sociale et les services publics
+caisses,_comptes_longue_periode,Les accidents du travail et la protection sociale des travailleurs,sec-caisses-cnss-atmp-pst,existe,à déterminer,à déterminer,B5 La protection sociale et les services publics
+caisses,_comptes_longue_periode,"Les comptes de la CNSS après 2004, 2005-2023",sec-caisses-cnss-post-2004,existe,à déterminer,à déterminer,B5 La protection sociale et les services publics
+caisses,_comptes_longue_periode,"L'ensemble des organismes de sécurité sociale, 2001-2025",sec-caisses-s1314,existe,à déterminer,à déterminer,B5 La protection sociale et les services publics
+caisses,_comptes_longue_periode,"Les versements des caisses au budget de l'État, 1985-2005",sec-caisses-versements-budget,existe,à déterminer,à déterminer,B5 La protection sociale et les services publics
+caisses,_comptes_longue_periode,La contribution sociale de solidarité reçue par la CNRPS,sec-caisses-css-cnrps,existe,à déterminer,à déterminer,B5 La protection sociale et les services publics
+caisses,_comptes_longue_periode,Ce que les textes ne disent pas,sec-caisses-silences,existe,à déterminer,à déterminer,B5 La protection sociale et les services publics
+caisses,_chronologie,_chronologie,,ébauche,institution,cadre institutionnel,B5 La protection sociale et les services publics
+compensation,index,Le plan du volume,sec-compensation-plan,existe,à déterminer,à déterminer,B5 La protection sociale et les services publics
+compensation,index,Ce que ce volume traite et ne traite pas,sec-compensation-perimetre,existe,à déterminer,à déterminer,B5 La protection sociale et les services publics
+compensation,_institution,Avant 1970 : une caisse de péréquation,sec-compensation-avant-1970,existe,institution,cadre institutionnel,B5 La protection sociale et les services publics
+compensation,_institution,1970-1971 : la Caisse générale,sec-compensation-institution,existe,institution,cadre institutionnel,B5 La protection sociale et les services publics
+compensation,_institution,Le compte de la Caisse,sec-compensation-compte,existe,institution,cadre institutionnel,B5 La protection sociale et les services publics
+compensation,_institution,1987 : les recettes de la Caisse entrent au budget,sec-compensation-1987,existe,institution,cadre institutionnel,B5 La protection sociale et les services publics
+compensation,_institution,"Les prélèvements à l'importation affectés à la Caisse, 1990-2010",sec-compensation-prelevements-importation,existe,institution,cadre institutionnel,B5 La protection sociale et les services publics
+compensation,_institution,Ce que la dotation pèse dans les dépenses de l'État,sec-compensation-dotation-poids,existe,institution,cadre institutionnel,B5 La protection sociale et les services publics
+compensation,_reformes,1976 : les ciments et les produits pétroliers,sec-compensation-1976,existe,D.31,A3 Le compte d'affectation des revenus primaires,B5 La protection sociale et les services publics
+compensation,_reformes,1984 : les ressources de la Caisse reconstituées,sec-compensation-1984,existe,D.31,A3 Le compte d'affectation des revenus primaires,B5 La protection sociale et les services publics
+compensation,_reformes,1989 : une contribution exceptionnelle,sec-compensation-1989,existe,D.31,A3 Le compte d'affectation des revenus primaires,B5 La protection sociale et les services publics
+compensation,_reformes,Depuis 2013 : la redevance de compensation,sec-compensation-redevance,existe,D.31,A3 Le compte d'affectation des revenus primaires,B5 La protection sociale et les services publics
+compensation,_reformes,2015-2021 : les carburants,sec-compensation-reformes-carburants,existe,D.31,A3 Le compte d'affectation des revenus primaires,B5 La protection sociale et les services publics
+compensation,_depense,La dépense globale sur la longue période,sec-compensation-depense-globale,existe,D.31,A3 Le compte d'affectation des revenus primaires,B5 La protection sociale et les services publics
+compensation,_depense,La décomposition par poste,sec-compensation-par-poste,existe,D.31,A3 Le compte d'affectation des revenus primaires,B5 La protection sociale et les services publics
+compensation,_depense,Prévu et réalisé,sec-compensation-prevu-realise,existe,D.31,A3 Le compte d'affectation des revenus primaires,B5 La protection sociale et les services publics
+compensation,_depense,Dans les comptes,sec-compensation-cn-comptes,existe,D.31,A3 Le compte d'affectation des revenus primaires,B5 La protection sociale et les services publics
+compensation,_depense,De la dépense de compensation à D.31,sec-compensation-cn-passage,existe,D.31,A3 Le compte d'affectation des revenus primaires,B5 La protection sociale et les services publics
+compensation,_produits_base,Vue d'ensemble,sec-compensation-pb-vue,existe,D.31,A3 Le compte d'affectation des revenus primaires,B5 La protection sociale et les services publics
+compensation,_produits_base,"La mise en place : les offices, la liste et la Caisse, 1962-1975",sec-compensation-pb-mise-en-place,existe,D.31,A3 Le compte d'affectation des revenus primaires,B5 La protection sociale et les services publics
+compensation,_produits_base,Les grandes réformes,sec-compensation-pb-reformes,existe,D.31,A3 Le compte d'affectation des revenus primaires,B5 La protection sociale et les services publics
+compensation,_produits_base,L'état du droit en juillet 2026,sec-compensation-pb-etat-du-droit,existe,D.31,A3 Le compte d'affectation des revenus primaires,B5 La protection sociale et les services publics
+compensation,_produits_base,"Le circuit : qui achète, qui vend, qui paie",sec-compensation-pb-circuit,existe,D.31,A3 Le compte d'affectation des revenus primaires,B5 La protection sociale et les services publics
+compensation,_produits_base,Les céréales et leurs dérivés,sec-compensation-pb-cereales,existe,D.31,A3 Le compte d'affectation des revenus primaires,B5 La protection sociale et les services publics
+compensation,_produits_base,Les huiles végétales,sec-compensation-pb-huiles,existe,D.31,A3 Le compte d'affectation des revenus primaires,B5 La protection sociale et les services publics
+compensation,_produits_base,Le sucre,sec-compensation-pb-sucre,existe,D.31,A3 Le compte d'affectation des revenus primaires,B5 La protection sociale et les services publics
+compensation,_produits_base,Le lait,sec-compensation-pb-lait,existe,D.31,A3 Le compte d'affectation des revenus primaires,B5 La protection sociale et les services publics
+compensation,_produits_base,Les autres produits,sec-compensation-pb-autres,existe,D.31,A3 Le compte d'affectation des revenus primaires,B5 La protection sociale et les services publics
+compensation,_produits_base,Le ciblage,sec-compensation-pb-ciblage,existe,D.31,A3 Le compte d'affectation des revenus primaires,B5 La protection sociale et les services publics
+compensation,_produits_base,La longue période,sec-compensation-pb-longue-periode,existe,D.31,A3 Le compte d'affectation des revenus primaires,B5 La protection sociale et les services publics
+compensation,_produits_base,Ce qu'en dit l'économie,sec-compensation-pb-economie,existe,D.31,A3 Le compte d'affectation des revenus primaires,B5 La protection sociale et les services publics
+compensation,_carburants,Le circuit,sec-compensation-circuit,existe,D.31,A3 Le compte d'affectation des revenus primaires,B5 La protection sociale et les services publics
+compensation,_carburants,"Subvention directe et subvention totale, 2010-2012",sec-compensation-cout-economique,existe,D.31,A3 Le compte d'affectation des revenus primaires,B5 La protection sociale et les services publics
+compensation,_carburants,2015 : le périmètre de la ligne s'élargit,sec-compensation-rupture-2015,existe,D.31,A3 Le compte d'affectation des revenus primaires,B5 La protection sociale et les services publics
+compensation,_carburants,Les recettes tirées des carburants,sec-compensation-carburants-recettes,existe,D.31,A3 Le compte d'affectation des revenus primaires,B5 La protection sociale et les services publics
+compensation,_carburants,"Les prix à la pompe, 1964-2026",sec-compensation-prix-pompe,existe,D.31,A3 Le compte d'affectation des revenus primaires,B5 La protection sociale et les services publics
+compensation,_carburants,La structure des prix et la subvention par litre,sec-compensation-structure-prix,existe,D.31,A3 Le compte d'affectation des revenus primaires,B5 La protection sociale et les services publics
+compensation,_carburants,Le mécanisme d'ajustement,sec-compensation-ajustement,existe,D.31,A3 Le compte d'affectation des revenus primaires,B5 La protection sociale et les services publics
+compensation,_carburants,Qui fixe et qui notifie les prix,sec-compensation-qui-notifie,existe,D.31,A3 Le compte d'affectation des revenus primaires,B5 La protection sociale et les services publics
+compensation,_electricite_gaz,Vue d'ensemble,sec-compensation-eg-vue,existe,D.31,A3 Le compte d'affectation des revenus primaires,B5 La protection sociale et les services publics
+compensation,_electricite_gaz,"La mise en place : un prix maximum arrêté par le ministre, jusqu'en 1982",sec-compensation-eg-mise-en-place,existe,D.31,A3 Le compte d'affectation des revenus primaires,B5 La protection sociale et les services publics
+compensation,_electricite_gaz,"Les grandes réformes, 1984-2015",sec-compensation-eg-reformes,existe,D.31,A3 Le compte d'affectation des revenus primaires,B5 La protection sociale et les services publics
+compensation,_electricite_gaz,L'état du droit au 1^er^ janvier 2024,sec-compensation-eg-etat-du-droit,existe,D.31,A3 Le compte d'affectation des revenus primaires,B5 La protection sociale et les services publics
+compensation,_electricite_gaz,Le gaz des ménages,sec-compensation-eg-gaz,existe,D.31,A3 Le compte d'affectation des revenus primaires,B5 La protection sociale et les services publics
+compensation,_electricite_gaz,"Les tarifs des entreprises : moyenne et haute tension, gaz en moyenne et haute pression",sec-compensation-eg-mt-ht,existe,D.31,A3 Le compte d'affectation des revenus primaires,B5 La protection sociale et les services publics
+compensation,_electricite_gaz,"La longue période : subvention, coût et prix de vente",sec-compensation-eg-longue-periode,existe,D.31,A3 Le compte d'affectation des revenus primaires,B5 La protection sociale et les services publics
+compensation,_transport,"Vue d'ensemble : ce que l'État paie, et à qui",sec-compensation-transport-vue,existe,D.31,A3 Le compte d'affectation des revenus primaires,B5 La protection sociale et les services publics
+compensation,_transport,"La mise en place : une caisse des transporteurs, 1948-1983",sec-compensation-transport-mise-en-place,existe,D.31,A3 Le compte d'affectation des revenus primaires,B5 La protection sociale et les services publics
+compensation,_transport,"Les grandes réformes, 1984-2017",sec-compensation-transport-reformes,existe,D.31,A3 Le compte d'affectation des revenus primaires,B5 La protection sociale et les services publics
+compensation,_transport,L'état du droit en octobre 2026,sec-compensation-transport-etat-du-droit,existe,D.31,A3 Le compte d'affectation des revenus primaires,B5 La protection sociale et les services publics
+compensation,_transport,Les tarifs et les abonnements,sec-compensation-transport-tarifs,existe,D.31,A3 Le compte d'affectation des revenus primaires,B5 La protection sociale et les services publics
+compensation,_transport,L'abonnement scolaire et universitaire,sec-compensation-transport-scolaire,existe,D.31,A3 Le compte d'affectation des revenus primaires,B5 La protection sociale et les services publics
+compensation,_transport,Les gratuités et les réductions : qui rembourse,sec-compensation-transport-gratuites,existe,D.31,A3 Le compte d'affectation des revenus primaires,B5 La protection sociale et les services publics
+compensation,_transport,La longue période,sec-compensation-transport-longue-periode,existe,D.31,A3 Le compte d'affectation des revenus primaires,B5 La protection sociale et les services publics
+compensation,_transport,Ce que relève la Cour des comptes,sec-compensation-transport-cour,existe,D.31,A3 Le compte d'affectation des revenus primaires,B5 La protection sociale et les services publics
+compensation,_transport,Un rapport extérieur : le *Livre blanc* de la Banque mondiale (2016),sec-compensation-transport-livre-blanc,existe,D.31,A3 Le compte d'affectation des revenus primaires,B5 La protection sociale et les services publics
+compensation,_transport,L'incidence,sec-compensation-transport-incidence,existe,D.31,A3 Le compte d'affectation des revenus primaires,B5 La protection sociale et les services publics
+compensation,_exterieurs,La comparaison sur quarante ans,sec-compensation-comparaison,existe,transversal,cadre institutionnel,B5 La protection sociale et les services publics
+compensation,_exterieurs,"La Banque mondiale, 1977 et 1985",sec-compensation-bm-1985,existe,transversal,cadre institutionnel,B5 La protection sociale et les services publics
+compensation,_exterieurs,"Le FMI, 1996 et 2000",sec-compensation-fmi-1990,existe,transversal,cadre institutionnel,B5 La protection sociale et les services publics
+compensation,_exterieurs,"Le FMI, 2014 et 2016 : l'énergie",sec-compensation-fmi-energie,existe,transversal,cadre institutionnel,B5 La protection sociale et les services publics
+compensation,_incidence,"Les subventions alimentaires : l'étude de l'INS, du CRES et de la BAD",sec-compensation-incidence-alimentaire,existe,transversal,cadre institutionnel,B5 La protection sociale et les services publics
+compensation,_incidence,Les subventions à l'énergie : trois rapports extérieurs,sec-compensation-incidence-energie,existe,transversal,cadre institutionnel,B5 La protection sociale et les services publics
+consommation,index,La consommation des ménages,sec-conso-menages,ébauche,P.3,A6 Le compte d'utilisation du revenu,"B6 La consommation, l'investissement et les échanges"
+consommation,index,La consommation finale par produit,sec-conso-produits,ébauche,P.3,A6 Le compte d'utilisation du revenu,"B6 La consommation, l'investissement et les échanges"
+consommation,index,Ce que d'autres livres traitent,sec-conso-voisinage,ébauche,P.3,A6 Le compte d'utilisation du revenu,"B6 La consommation, l'investissement et les échanges"
+cotisations_sociales,index,Cotisation et impôt,,existe,à déterminer,à déterminer,B4 Les prélèvements
+cotisations_sociales,index,La carte des régimes,,existe,à déterminer,à déterminer,B4 Les prélèvements
+cotisations_sociales,index,Une architecture en deux étages,sec-cot-deux-etages,existe,à déterminer,à déterminer,B4 Les prélèvements
+cotisations_sociales,index,La datation des taux,sec-cot-datation,existe,à déterminer,à déterminer,B4 Les prélèvements
+cotisations_sociales,index,Le plan du volume,sec-cot-branches,existe,à déterminer,à déterminer,B4 Les prélèvements
+cotisations_sociales,index,Ce que ce livre traite et ne traite pas,sec-cot-perimetre,existe,à déterminer,à déterminer,B4 Les prélèvements
+cotisations_sociales,_assiette,Le salaire réel et ses éléments,sec-cot-salaire-reel,existe,D.61,A4 Le compte de distribution secondaire du revenu,B4 Les prélèvements
+cotisations_sociales,_assiette,Plafonds et limites,sec-cot-plafonds,existe,D.61,A4 Le compte de distribution secondaire du revenu,B4 Les prélèvements
+cotisations_sociales,_assiette,Les assiettes forfaitaires,sec-cot-forfaitaires,existe,D.61,A4 Le compte de distribution secondaire du revenu,B4 Les prélèvements
+cotisations_sociales,_assiette,L'assiette des pensionnés,sec-cot-assiette-pensionnes,existe,D.61,A4 Le compte de distribution secondaire du revenu,B4 Les prélèvements
+cotisations_sociales,_assiette,"Les assiettes, régime par régime",sec-cot-assiettes-synthese,existe,D.61,A4 Le compte de distribution secondaire du revenu,B4 Les prélèvements
+cotisations_sociales,_taux_global,Le taux unique de 1960,sec-cot-taux-unique,existe,D.61,A4 Le compte de distribution secondaire du revenu,B4 Les prélèvements
+cotisations_sociales,_taux_global,Du taux global aux taux par branche,sec-cot-ventilation,existe,D.61,A4 Le compte de distribution secondaire du revenu,B4 Les prélèvements
+cotisations_sociales,_taux_global,Le coin social par régime,sec-cot-coin,existe,D.61,A4 Le compte de distribution secondaire du revenu,B4 Les prélèvements
+cotisations_sociales,_taux_global,"Part patronale, part salariale, cotisation de l'assuré",sec-cot-parts,existe,D.61,A4 Le compte de distribution secondaire du revenu,B4 Les prélèvements
+cotisations_sociales,_prelevements_salaires,La taxe de formation professionnelle,sec-cot-tfp,à rédiger,D.29,A2 Le compte d'exploitation,B4 Les prélèvements
+cotisations_sociales,_prelevements_salaires,La contribution au FOPROLOS,sec-cot-foprolos,à rédiger,D.29,A2 Le compte d'exploitation,B4 Les prélèvements
+cotisations_sociales,_prelevements_salaires,Le rendement,sec-cot-prelevements-rendement,existe,à déterminer,à déterminer,B4 Les prélèvements
+cotisations_sociales,_pensions,Les origines,sec-cot-pensions-origines,existe,D.61,A4 Le compte de distribution secondaire du revenu,B4 Les prélèvements
+cotisations_sociales,_pensions,Le secteur privé,sec-cot-pensions-prive,existe,D.61,A4 Le compte de distribution secondaire du revenu,B4 Les prélèvements
+cotisations_sociales,_pensions,Le secteur public,sec-cot-pensions-public,existe,D.61,A4 Le compte de distribution secondaire du revenu,B4 Les prélèvements
+cotisations_sociales,_pensions,La longue période,sec-cot-pensions-longue-periode,existe,D.61,A4 Le compte de distribution secondaire du revenu,B4 Les prélèvements
+cotisations_sociales,_maladie,Les origines,sec-cot-maladie-origines,existe,D.61,A4 Le compte de distribution secondaire du revenu,B4 Les prélèvements
+cotisations_sociales,_maladie,Le secteur privé,sec-cot-maladie-prive,existe,D.61,A4 Le compte de distribution secondaire du revenu,B4 Les prélèvements
+cotisations_sociales,_maladie,Le secteur public,sec-cot-maladie-public,existe,D.61,A4 Le compte de distribution secondaire du revenu,B4 Les prélèvements
+cotisations_sociales,_maladie,La réforme de 2004,sec-cot-maladie-2004,existe,D.61,A4 Le compte de distribution secondaire du revenu,B4 Les prélèvements
+cotisations_sociales,_maladie,La longue période,sec-cot-maladie-longue-periode,existe,D.61,A4 Le compte de distribution secondaire du revenu,B4 Les prélèvements
+cotisations_sociales,_accidents_travail,Avant 1994,sec-cot-at-avant-1994,existe,D.61,A4 Le compte de distribution secondaire du revenu,B4 Les prélèvements
+cotisations_sociales,_accidents_travail,La loi n° 94-28,sec-cot-at-94-28,existe,D.61,A4 Le compte de distribution secondaire du revenu,B4 Les prélèvements
+cotisations_sociales,_accidents_travail,Le décret n° 99-1010,sec-cot-at-99-1010,existe,D.61,A4 Le compte de distribution secondaire du revenu,B4 Les prélèvements
+cotisations_sociales,_accidents_travail,L'assiette de la cotisation,sec-cot-at-assiette,existe,D.61,A4 Le compte de distribution secondaire du revenu,B4 Les prélèvements
+cotisations_sociales,_accidents_travail,La majoration et la réduction de la cotisation,sec-cot-at-modulation,existe,D.61,A4 Le compte de distribution secondaire du revenu,B4 Les prélèvements
+cotisations_sociales,_accidents_travail,Le classement des employeurs dans le barème,sec-cot-at-classement,existe,D.61,A4 Le compte de distribution secondaire du revenu,B4 Les prélèvements
+cotisations_sociales,_accidents_travail,Les travailleuses agricoles,sec-cot-at-travailleuses-agricoles,existe,D.61,A4 Le compte de distribution secondaire du revenu,B4 Les prélèvements
+cotisations_sociales,_accidents_travail,La longue période,sec-cot-at-longue-periode,existe,D.61,A4 Le compte de distribution secondaire du revenu,B4 Les prélèvements
+cotisations_sociales,_accidents_travail,"Les accidents et les maladies déclarés, 2012-2022",sec-cot-at-declares,existe,D.61,A4 Le compte de distribution secondaire du revenu,B4 Les prélèvements
+cotisations_sociales,_autres_branches,Les prestations familiales,sec-cot-famille,existe,D.61,A4 Le compte de distribution secondaire du revenu,B4 Les prélèvements
+cotisations_sociales,_autres_branches,"La perte d'emploi, la protection sociale des travailleurs et le fonds spécial de l'État",sec-cot-emploi,existe,D.61,A4 Le compte de distribution secondaire du revenu,B4 Les prélèvements
+cotisations_sociales,_autres_branches,La retraite complémentaire facultative,sec-cot-complementaire,existe,D.61,A4 Le compte de distribution secondaire du revenu,B4 Les prélèvements
+cotisations_sociales,_regimes,Le secteur privé (CNSS),sec-cot-prive,existe,D.61,A4 Le compte de distribution secondaire du revenu,B4 Les prélèvements
+cotisations_sociales,_regimes,Le secteur public (CNRPS),sec-cot-public,existe,D.61,A4 Le compte de distribution secondaire du revenu,B4 Les prélèvements
+cotisations_sociales,_bilan,Le recouvrement,sec-cot-recouvrement,existe,D.61,A4 Le compte de distribution secondaire du revenu,B4 Les prélèvements
+cotisations_sociales,_bilan,Ce que les cotisations rapportent,sec-cot-rendement,à rédiger,D.61,A4 Le compte de distribution secondaire du revenu,B4 Les prélèvements
+cotisations_sociales,_bilan,Vue d'ensemble,sec-cot-vue-ensemble,existe,D.61,A4 Le compte de distribution secondaire du revenu,B4 Les prélèvements
+cotisations_sociales,_notations,_notations,,ébauche,cadre,cadre institutionnel,B4 Les prélèvements
+cotisations_sociales,_textes_modificatifs,_textes_modificatifs,,ébauche,D.61,A4 Le compte de distribution secondaire du revenu,B4 Les prélèvements
+echanges,index,index,,ébauche,P.6/P.7,A9 Le reste du monde,"B6 La consommation, l'investissement et les échanges"
+education,index,Vue d'ensemble,sec-educ-vue-ensemble,existe,à déterminer,à déterminer,B5 La protection sociale et les services publics
+education,index,Ce que d'autres livres traitent,sec-educ-voisinage,existe,à déterminer,à déterminer,B5 La protection sociale et les services publics
+education,index,Le plan du livre et les conventions de lecture,sec-educ-lecture,existe,à déterminer,à déterminer,B5 La protection sociale et les services publics
+education,_histoire,Vue d'ensemble,sec-educ-histoire-vue,existe,institution,cadre institutionnel,B5 La protection sociale et les services publics
+education,_histoire,La mise en place : la loi de 1958,sec-educ-1958,existe,institution,cadre institutionnel,B5 La protection sociale et les services publics
+education,_histoire,"Les grandes réformes, 1991-2017",sec-educ-reformes,existe,institution,cadre institutionnel,B5 La protection sociale et les services publics
+education,_histoire,Le Conseil supérieur et le fonds de la réforme éducative,sec-educ-conseil,existe,institution,cadre institutionnel,B5 La protection sociale et les services publics
+education,_histoire,"Les élèves et les étudiants, 1995-2024",sec-educ-eleves,existe,institution,cadre institutionnel,B5 La protection sociale et les services publics
+education,_scolaire,L'état du droit en octobre 2026,sec-educ-etat-droit,existe,P.3,A6 Le compte d'utilisation du revenu,B5 La protection sociale et les services publics
+education,_scolaire,Le préscolaire,sec-educ-scolaire-prescolaire,existe,P.3,A6 Le compte d'utilisation du revenu,B5 La protection sociale et les services publics
+education,_scolaire,Les cycles et les langues d'enseignement,sec-educ-scolaire-cycles-langues,existe,P.3,A6 Le compte d'utilisation du revenu,B5 La protection sociale et les services publics
+education,_scolaire,Les examens et l'orientation,sec-educ-scolaire-examens,existe,P.3,A6 Le compte d'utilisation du revenu,B5 La protection sociale et les services publics
+education,_scolaire,"Passages, redoublements et abandons au premier cycle",sec-educ-scolaire-flux,existe,P.3,A6 Le compte d'utilisation du revenu,B5 La protection sociale et les services publics
+education,_scolaire,"Le privé, les cours particuliers et la vie scolaire",sec-educ-scolaire-prive,existe,P.3,A6 Le compte d'utilisation du revenu,B5 La protection sociale et les services publics
+education,_scolaire,"Les textes de l'enseignement scolaire, 1958-2025",sec-educ-scolaire-textes,existe,P.3,A6 Le compte d'utilisation du revenu,B5 La protection sociale et les services publics
+education,_formation_professionnelle,Vue d'ensemble,sec-educ-fp-vue,existe,P.3,A6 Le compte d'utilisation du revenu,B5 La protection sociale et les services publics
+education,_formation_professionnelle,"La refonte de 1993, la loi de 2008 et l'obligation de 2017",sec-educ-fp-lois,existe,P.3,A6 Le compte d'utilisation du revenu,B5 La protection sociale et les services publics
+education,_formation_professionnelle,La classification nationale des qualifications,sec-educ-fp-classification,existe,P.3,A6 Le compte d'utilisation du revenu,B5 La protection sociale et les services publics
+education,_formation_professionnelle,Les établissements privés et le chèque-formation,sec-educ-fp-prive,existe,P.3,A6 Le compte d'utilisation du revenu,B5 La protection sociale et les services publics
+education,_formation_professionnelle,"Les textes de la formation professionnelle initiale, 1993-2025",sec-educ-fp-textes,existe,P.3,A6 Le compte d'utilisation du revenu,B5 La protection sociale et les services publics
+education,_superieur,Vue d'ensemble,sec-educ-superieur-vue,existe,P.3,A6 Le compte d'utilisation du revenu,B5 La protection sociale et les services publics
+education,_superieur,La mise en place et les grandes réformes,sec-educ-superieur-lois,existe,P.3,A6 Le compte d'utilisation du revenu,B5 La protection sociale et les services publics
+education,_superieur,L'accès et l'orientation,sec-educ-superieur-acces,existe,P.3,A6 Le compte d'utilisation du revenu,B5 La protection sociale et les services publics
+education,_superieur,Les établissements,sec-educ-superieur-etablissements,existe,P.3,A6 Le compte d'utilisation du revenu,B5 La protection sociale et les services publics
+education,_superieur,Les diplômes et les études,sec-educ-superieur-diplomes,existe,P.3,A6 Le compte d'utilisation du revenu,B5 La protection sociale et les services publics
+education,_superieur,La formation pratique des étudiants,sec-educ-superieur-formation-pratique,existe,P.3,A6 Le compte d'utilisation du revenu,B5 La protection sociale et les services publics
+education,_superieur,"Les textes de l'enseignement supérieur, 1958-2017",sec-educ-superieur-textes,existe,P.3,A6 Le compte d'utilisation du revenu,B5 La protection sociale et les services publics
+education,_aides,Vue d'ensemble,sec-educ-aides-vue,existe,à déterminer,à déterminer,B5 La protection sociale et les services publics
+education,_aides,Les aides aux élèves,sec-educ-aides-eleves,existe,à déterminer,à déterminer,B5 La protection sociale et les services publics
+education,_aides,Les aides aux étudiants,sec-educ-aides-etudiants,existe,à déterminer,à déterminer,B5 La protection sociale et les services publics
+education,_aides,Les aides servies par d'autres dispositifs,sec-educ-aides-ailleurs,existe,à déterminer,à déterminer,B5 La protection sociale et les services publics
+education,_aides,Les boursiers et les crédits des aides,sec-educ-aides-donnees,existe,à déterminer,à déterminer,B5 La protection sociale et les services publics
+education,_depense,Vue d'ensemble,sec-educ-depense-vue,existe,P.3,A6 Le compte d'utilisation du revenu,B5 La protection sociale et les services publics
+education,_depense,Le périmètre et le stade des chiffres,sec-educ-depense-perimetre,existe,P.3,A6 Le compte d'utilisation du revenu,B5 La protection sociale et les services publics
+education,_depense,"La dépense par ministère, 1997-2023",sec-educ-depense-ministeres,existe,P.3,A6 Le compte d'utilisation du revenu,B5 La protection sociale et les services publics
+education,_depense,La dépense par nature,sec-educ-depense-nature,existe,P.3,A6 Le compte d'utilisation du revenu,B5 La protection sociale et les services publics
+education,_depense,La dépense par niveau : le budget par programmes,sec-educ-depense-programmes,existe,P.3,A6 Le compte d'utilisation du revenu,B5 La protection sociale et les services publics
+education,_depense,Les enseignants et la masse salariale,sec-educ-depense-personnels,existe,P.3,A6 Le compte d'utilisation du revenu,B5 La protection sociale et les services publics
+education,_depense,La dépense des communes,sec-educ-depense-collectivites,existe,P.3,A6 Le compte d'utilisation du revenu,B5 La protection sociale et les services publics
+education,_depense,La dépense des ménages,sec-educ-depense-menages,existe,P.3,A6 Le compte d'utilisation du revenu,B5 La protection sociale et les services publics
+education,_depense,Ce que rapportent l'UNESCO-UIS et la Banque mondiale,sec-educ-depense-rapports,existe,P.3,A6 Le compte d'utilisation du revenu,B5 La protection sociale et les services publics
+education,_depense,Ce qu'établit une étude d'incidence : l'enquête de 2010,sec-educ-depense-evaluations,existe,P.3,A6 Le compte d'utilisation du revenu,B5 La protection sociale et les services publics
+energie,index,Le périmètre,sec-energie-perimetre,ébauche,à déterminer,à déterminer,B2 La production
+energie,index,Plan,sec-energie-plan,ébauche,à déterminer,à déterminer,B2 La production
+energie,index,La branche en chiffres,sec-energie-chiffres,ébauche,à déterminer,à déterminer,B2 La production
+energie,index,Ce que d'autres livres traitent,sec-energie-voisinage,ébauche,à déterminer,à déterminer,B2 La production
+energie,_institutions,_institutions,,ébauche,institution,cadre institutionnel,B2 La production
+energie,_energie,La Société tunisienne de l'électricité et du gaz (STEG),sec-ep-steg,existe,branche:energie,A1 Le compte de production (par branche),B2 La production
+energie,_energie,Les énergies renouvelables et le photovoltaïque,sec-ep-enr,existe,branche:energie,A1 Le compte de production (par branche),B2 La production
+energie,_energie,L'Entreprise tunisienne d'activités pétrolières (ETAP),sec-ep-etap,existe,branche:energie,A1 Le compte de production (par branche),B2 La production
+energie,_energie,La Société tunisienne des industries de raffinage (STIR),sec-ep-ge-stir,existe,branche:energie,A1 Le compte de production (par branche),B2 La production
+energie,_energie,La Société nationale de distribution des pétroles (SNDP),sec-ep-ge-sndp,existe,branche:energie,A1 Le compte de production (par branche),B2 La production
+energie,_energie,La Société de transport des hydrocarbures par pipelines (SOTRAPIL),sec-ep-ge-sotrapil,existe,branche:energie,A1 Le compte de production (par branche),B2 La production
+energie,_energie,La Compagnie tunisienne de forage (CTF),sec-ep-ge-ctf,existe,branche:energie,A1 Le compte de production (par branche),B2 La production
+energie,_depense,_depense,,ébauche,à déterminer,à déterminer,B2 La production
+energie,_etudes,_etudes,,ébauche,transversal,cadre institutionnel,B2 La production
+entreprises_publiques,index,Vue d'ensemble,sec-ep-vue-ensemble,existe,à déterminer,à déterminer,B2 La production
+entreprises_publiques,index,Le plan du volume,sec-ep-plan,existe,à déterminer,à déterminer,B2 La production
+entreprises_publiques,index,Les sujets limitrophes et le volume où ils se lisent,sec-ep-perimetre,existe,à déterminer,à déterminer,B2 La production
+entreprises_publiques,_statut,"La mise en place, 1969-1987",sec-ep-mise-en-place,existe,institution,cadre institutionnel,B2 La production
+entreprises_publiques,_statut,Les grandes réformes,sec-ep-reformes,existe,institution,cadre institutionnel,B2 La production
+entreprises_publiques,_statut,L'état du droit,sec-ep-etat-du-droit,existe,institution,cadre institutionnel,B2 La production
+entreprises_publiques,_statut,Le contrôle et la gouvernance,sec-ep-gouvernance,existe,institution,cadre institutionnel,B2 La production
+entreprises_publiques,_transferts,_transferts,,ébauche,à déterminer,à déterminer,B2 La production
+entreprises_publiques,_garanties,Les garanties de l'État et la dette garantie,sec-ep-garanties,existe,F,A8 Le compte financier,B2 La production
+entreprises_publiques,_garanties,"Les emprunts garantis, prêt par prêt",sec-ep-emprunts-garantis,existe,F,A8 Le compte financier,B2 La production
+entreprises_publiques,_garanties,"Le plafond des garanties et des prêts du Trésor fixé par la loi de finances, 1958-2026",sec-ep-garanties-plafond-legal,existe,F,A8 Le compte financier,B2 La production
+entreprises_publiques,_garanties,Les dettes et créances croisées,sec-ep-croisees,existe,F,A8 Le compte financier,B2 La production
+entreprises_publiques,_garanties,"La dette garantie remboursée, les prêts remboursés et l'encours, gestions 2010 à 2024",sec-ep-garanties-cloture,existe,F,A8 Le compte financier,B2 La production
+entreprises_publiques,_recettes,La part de l'État dans les bénéfices,sec-ep-dividendes-part,existe,D.42,A3 Le compte d'affectation des revenus primaires,B2 La production
+entreprises_publiques,_recettes,"Les versements au budget et les transferts reçus, sur un échantillon",sec-ep-flux,existe,D.42,A3 Le compte d'affectation des revenus primaires,B2 La production
+entreprises_publiques,_recettes,Les versements au budget depuis 2003,sec-ep-versements,existe,D.42,A3 Le compte d'affectation des revenus primaires,B2 La production
+entreprises_publiques,_recettes,"Les revenus des participations du budget, 1983-2016, d'après la Banque centrale",sec-ep-versements-bct,existe,D.42,A3 Le compte d'affectation des revenus primaires,B2 La production
+entreprises_publiques,_recettes,"Les versements au budget, gestions 2010 à 2024",sec-ep-versements-cloture,existe,D.42,A3 Le compte d'affectation des revenus primaires,B2 La production
+entreprises_publiques,_cessions,"Vue d'ensemble : 217 entreprises, six modes",sec-ep-cessions-modes,existe,F,A8 Le compte financier,B2 La production
+entreprises_publiques,_cessions,1987 : l'État autorisé à céder ses participations,sec-ep-1987,existe,F,A8 Le compte financier,B2 La production
+entreprises_publiques,_cessions,1989 : la cession organisée,sec-ep-1989-cession,existe,F,A8 Le compte financier,B2 La production
+entreprises_publiques,_cessions,1994 : l'action spécifique et la vente de blocs d'actions,sec-ep-1994-cession,existe,F,A8 Le compte financier,B2 La production
+entreprises_publiques,_cessions,"1997-2000 : la commission, le comité technique et la liquidation à l'amiable",sec-ep-1999,existe,F,A8 Le compte financier,B2 La production
+entreprises_publiques,_cessions,Les opérations de 1998 à 2008,sec-ep-cessions-operations,existe,F,A8 Le compte financier,B2 La production
+entreprises_publiques,_cessions,1987-2009 : les cessions,sec-ep-reformes-cessions,existe,F,A8 Le compte financier,B2 La production
+entreprises_publiques,_cessions,Les cessions,sec-ep-cessions,existe,F,A8 Le compte financier,B2 La production
+entreprises_publiques,_cessions,"Les recettes de cession, 1987-2024",sec-ep-lp-cessions,existe,F,A8 Le compte financier,B2 La production
+entreprises_publiques,_restructuration,"Vue d'ensemble : trois instruments, 1986-2019",sec-ep-restr-vue,existe,à déterminer,à déterminer,B2 La production
+entreprises_publiques,_restructuration,1986 : le fonds de restructuration du capital,sec-ep-fonds-restructuration,existe,à déterminer,à déterminer,B2 La production
+entreprises_publiques,_restructuration,1990 : le fonds ouvert aux entreprises à participations publiques,sec-ep-restr-1990,existe,à déterminer,à déterminer,B2 La production
+entreprises_publiques,_restructuration,1999 : l'État reprend les dettes bancaires,sec-ep-restr-1999,existe,à déterminer,à déterminer,B2 La production
+entreprises_publiques,_restructuration,"2003-2011 : le fonds financé par les jetons de présence, puis sans dépense",sec-ep-restr-fonds-serie,existe,à déterminer,à déterminer,B2 La production
+entreprises_publiques,_restructuration,2013-2019 : les banques publiques,sec-ep-banques-publiques,existe,à déterminer,à déterminer,B2 La production
+entreprises_publiques,_restructuration,2014-2019 : Tunisair et les sociétés de transport,sec-ep-restr-transport,existe,à déterminer,à déterminer,B2 La production
+entreprises_publiques,_restructuration,Bilan,sec-ep-restr-bilan,existe,à déterminer,à déterminer,B2 La production
+entreprises_publiques,_restructuration,"Les textes de la restructuration, 1986-2019",sec-ep-restr-registre,existe,à déterminer,à déterminer,B2 La production
+entreprises_publiques,_cotees,Qui détient quoi,sec-ep-cotees-detention,existe,D.42,A3 Le compte d'affectation des revenus primaires,B2 La production
+entreprises_publiques,_cotees,"Le capital de la STB, de la BH et de la BNA",sec-ep-cotees-capital,existe,D.42,A3 Le compte d'affectation des revenus primaires,B2 La production
+entreprises_publiques,_cotees,Résultats et dividendes,sec-ep-cotees-resultats,existe,D.42,A3 Le compte d'affectation des revenus primaires,B2 La production
+entreprises_publiques,_cotees,Les filiales des trois banques publiques,sec-ep-cotees-filiales,existe,D.42,A3 Le compte d'affectation des revenus primaires,B2 La production
+entreprises_publiques,_grandes_entreprises,La source,sec-ep-ge-source,existe,institution,cadre institutionnel,B2 La production
+entreprises_publiques,_grandes_entreprises,La valeur ajoutée et la valeur ajoutée par agent,sec-ep-ge-va,existe,institution,cadre institutionnel,B2 La production
+entreprises_publiques,_grandes_entreprises,"Transferts et résultats, 2017-2022",sec-ep-ge-ensemble,existe,institution,cadre institutionnel,B2 La production
+entreprises_publiques,_grandes_entreprises,"Trois grandeurs à ne pas confondre : transferts, subvention d'exploitation, dette envers l'État",sec-ep-ge-rapprochement,existe,institution,cadre institutionnel,B2 La production
+entreprises_publiques,_energie,_energie,,ébauche,branche:energie,A1 Le compte de production (par branche),B2 La production
+entreprises_publiques,_transports,Tunisie Autoroutes,sec-ep-ge-autoroutes,existe,branche:transport,A1 Le compte de production (par branche),B2 La production
+entreprises_publiques,_transports,La Transtu,sec-ep-ge-transtu,existe,branche:transport,A1 Le compte de production (par branche),B2 La production
+entreprises_publiques,_transports,La Société nationale des chemins de fer tunisiens (SNCFT),sec-ep-sncft,existe,branche:transport,A1 Le compte de production (par branche),B2 La production
+entreprises_publiques,_transports,La Société du réseau ferroviaire rapide de Tunis (RFR),sec-ep-ge-rfr,existe,branche:transport,A1 Le compte de production (par branche),B2 La production
+entreprises_publiques,_transports,La Société du métro léger de Sfax,sec-ep-ge-metro-sfax,existe,branche:transport,A1 Le compte de production (par branche),B2 La production
+entreprises_publiques,_transports,Tunisair,sec-ep-ge-tunisair,existe,branche:transport,A1 Le compte de production (par branche),B2 La production
+entreprises_publiques,_transports,L'Agence technique des transports terrestres (ATTT),sec-ep-ge-attt,existe,branche:transport,A1 Le compte de production (par branche),B2 La production
+entreprises_publiques,_transports,L'Office de l'aviation civile et des aéroports (OACA),sec-ep-ge-oaca,existe,branche:transport,A1 Le compte de production (par branche),B2 La production
+entreprises_publiques,_transports,L'Office de la marine marchande et des ports (OMMP),sec-ep-ge-ommp,existe,branche:transport,A1 Le compte de production (par branche),B2 La production
+entreprises_publiques,_transports,La Compagnie tunisienne de navigation (CTN),sec-ep-ge-ctn,existe,branche:transport,A1 Le compte de production (par branche),B2 La production
+entreprises_publiques,_transports,La Société nationale de transport interurbain (SNTRI),sec-ep-ge-sntri,existe,branche:transport,A1 Le compte de production (par branche),B2 La production
+entreprises_publiques,_transports,Les sociétés régionales de transport,sec-ep-ge-srt,existe,branche:transport,A1 Le compte de production (par branche),B2 La production
+entreprises_publiques,_offices,L'Office des céréales,sec-ep-ge-oc,existe,à déterminer,à déterminer,B2 La production
+entreprises_publiques,_offices,L'Office national de l'huile,sec-ep-ge-onh,existe,à déterminer,à déterminer,B2 La production
+entreprises_publiques,_offices,La RNTA,sec-ep-ge-rnta,existe,à déterminer,à déterminer,B2 La production
+entreprises_publiques,_offices,L'Office du commerce de la Tunisie,sec-ep-ge-otc,existe,à déterminer,à déterminer,B2 La production
+entreprises_publiques,_offices,La Régie des alcools,sec-ep-ge-ra,existe,à déterminer,à déterminer,B2 La production
+entreprises_publiques,_offices,La Manufacture des tabacs de Kairouan,sec-ep-ge-mtk,existe,à déterminer,à déterminer,B2 La production
+entreprises_publiques,_offices,L'Office des terres domaniales,sec-ep-ge-otd,existe,à déterminer,à déterminer,B2 La production
+entreprises_publiques,_offices,La Pharmacie centrale de Tunisie,sec-ep-ge-pct,existe,à déterminer,à déterminer,B2 La production
+entreprises_publiques,_offices,La SOTUMAG,sec-ep-ge-sotumag,existe,à déterminer,à déterminer,B2 La production
+entreprises_publiques,_eau_communications,La SONEDE,sec-ep-ge-sonede,existe,branche:eau-communications,A1 Le compte de production (par branche),B2 La production
+entreprises_publiques,_eau_communications,L'ONAS,sec-ep-ge-onas,existe,branche:eau-communications,A1 Le compte de production (par branche),B2 La production
+entreprises_publiques,_eau_communications,Tunisie Télécom,sec-ep-ge-tt,existe,branche:eau-communications,A1 Le compte de production (par branche),B2 La production
+entreprises_publiques,_eau_communications,La Poste,sec-ep-ge-poste,existe,branche:eau-communications,A1 Le compte de production (par branche),B2 La production
+entreprises_publiques,_secteur_financier,La Société tunisienne de banque,sec-ep-ge-stb,existe,branche:finance,A1 Le compte de production (par branche),B2 La production
+entreprises_publiques,_secteur_financier,La Banque de l'habitat,sec-ep-ge-bh,existe,branche:finance,A1 Le compte de production (par branche),B2 La production
+entreprises_publiques,_secteur_financier,La Banque nationale agricole,sec-ep-ge-bna,existe,branche:finance,A1 Le compte de production (par branche),B2 La production
+entreprises_publiques,_secteur_financier,La Banque de Tunisie et des Emirats,sec-ep-ge-bte,existe,branche:finance,A1 Le compte de production (par branche),B2 La production
+entreprises_publiques,_secteur_financier,La Banque de financement des petites et moyennes entreprises,sec-ep-ge-bfpme,existe,branche:finance,A1 Le compte de production (par branche),B2 La production
+entreprises_publiques,_secteur_financier,La Banque tunisienne de solidarité,sec-ep-ge-bts,existe,branche:finance,A1 Le compte de production (par branche),B2 La production
+entreprises_publiques,_secteur_financier,La Société tunisienne d'assurances et de réassurances (STAR),sec-ep-ge-star,existe,branche:finance,A1 Le compte de production (par branche),B2 La production
+entreprises_publiques,_secteur_financier,La Caisse des prêts et de soutien des collectivités locales,sec-ep-ge-cpscl,existe,branche:finance,A1 Le compte de production (par branche),B2 La production
+entreprises_publiques,_secteur_financier,Tunis Re,sec-ep-ge-tunisre,existe,branche:finance,A1 Le compte de production (par branche),B2 La production
+entreprises_publiques,_habitat,_habitat,,ébauche,branche:logement,A1 Le compte de production (par branche),B2 La production
+entreprises_publiques,_industrie,_industrie,,ébauche,branche:industrie,A1 Le compte de production (par branche),B2 La production
+entreprises_publiques,_autres_entreprises,Les rapports annuels en ligne,sec-ep-autres-ttn-rapports,existe,à déterminer,à déterminer,B2 La production
+entreprises_publiques,_autres_entreprises,L'opinion des commissaires aux comptes,sec-ep-autres-ttn-cac,existe,à déterminer,à déterminer,B2 La production
+entreprises_publiques,_emploi_comptes,Les effectifs et la masse salariale,sec-ep-effectifs,existe,à déterminer,à déterminer,B2 La production
+entreprises_publiques,_emploi_comptes,Les six éditions du rapport et leurs échantillons,sec-ep-lp-editions,existe,à déterminer,à déterminer,B2 La production
+entreprises_publiques,_emploi_comptes,"Les résultats agrégés, par édition, 2017-2022",sec-ep-lp-resultats,existe,à déterminer,à déterminer,B2 La production
+entreprises_publiques,_longue_periode,"Ce que les flux de clôture montrent, 2010-2024",sec-ep-lp-cloture,existe,transversal,cadre institutionnel,B2 La production
+entreprises_publiques,_longue_periode,Les années sans série budgétaire,sec-ep-lp-lacunes,existe,transversal,cadre institutionnel,B2 La production
+entreprises_publiques,_etudes,"Le Livre blanc de la Présidence du gouvernement, 2018",sec-ep-livre-blanc,existe,transversal,cadre institutionnel,B2 La production
+entreprises_publiques,_etudes,"La Banque mondiale, gouvernance des entreprises publiques, 2014",sec-ep-banque-mondiale-2014,existe,transversal,cadre institutionnel,B2 La production
+entreprises_publiques,_etudes,"La Banque mondiale, revue des dépenses publiques, 2020",sec-ep-banque-mondiale,existe,transversal,cadre institutionnel,B2 La production
+entreprises_publiques,_etudes,"Le Fonds monétaire international, consultation de 2021",sec-ep-fmi,existe,transversal,cadre institutionnel,B2 La production
+entreprises_publiques,_etudes,"L'Institut tunisien de la compétitivité et des études quantitatives, 2010",sec-ep-itceq,existe,transversal,cadre institutionnel,B2 La production
+entreprises_publiques,_annexe_liste,Le périmètre en nombre,sec-ep-liste-nombre,existe,cadre,cadre institutionnel,B2 La production
+entreprises_publiques,_annexe_liste,"Les entrées et les sorties, liste après liste",sec-ep-liste-mouvements,existe,cadre,cadre institutionnel,B2 La production
+entreprises_publiques,_annexe_liste,Les établissements publics considérés comme entreprises publiques,sec-ep-liste-etablissements,existe,cadre,cadre institutionnel,B2 La production
+entreprises_publiques,_annexe_liste,"Une liste partielle, 1989-1990",sec-ep-liste-1989,existe,cadre,cadre institutionnel,B2 La production
+entreprises_publiques,_annexe_liste,Au-delà de la liste : qui contrôle quoi,sec-ep-liste-controle,existe,cadre,cadre institutionnel,B2 La production
+entreprises_publiques,_annexe_liste,📈 Graphique,,existe,cadre,cadre institutionnel,B2 La production
+entreprises_publiques,_annexe_liste,📊 Données,,existe,cadre,cadre institutionnel,B2 La production
+entreprises_publiques,_annexe_liste,🔗 Sources,,existe,cadre,cadre institutionnel,B2 La production
+entreprises_publiques,_annexe_registre,Ce qu'est le Registre,sec-ep-registre-source,existe,cadre,cadre institutionnel,B2 La production
+entreprises_publiques,_annexe_registre,Ce que le volume en tire,sec-ep-registre-emploi,existe,cadre,cadre institutionnel,B2 La production
+entreprises_publiques,_annexe_couverture,Ce que lit le tableau,sec-ep-couverture-sources,existe,cadre,cadre institutionnel,B2 La production
+entreprises_publiques,_annexe_couverture,Le périmètre du tableau,sec-ep-couverture-perimetre,existe,cadre,cadre institutionnel,B2 La production
+entreprises_publiques,_annexe_couverture,La couverture par type d'entreprise,sec-ep-couverture-type,existe,cadre,cadre institutionnel,B2 La production
+entreprises_publiques,_annexe_couverture,La couverture par exercice,sec-ep-couverture-exercice,existe,cadre,cadre institutionnel,B2 La production
+entreprises_publiques,_annexe_couverture,"La matrice, entreprise par entreprise",sec-ep-couverture-matrice,existe,cadre,cadre institutionnel,B2 La production
+environnement,index,Le périmètre,sec-env-perimetre,ébauche,à déterminer,à déterminer,B5 La protection sociale et les services publics
+environnement,index,Plan,sec-env-plan,ébauche,à déterminer,à déterminer,B5 La protection sociale et les services publics
+environnement,index,Ce que d'autres livres traitent,sec-env-voisinage,ébauche,à déterminer,à déterminer,B5 La protection sociale et les services publics
+environnement,_institutions,Désambiguïsation de sigle,,existe,institution,cadre institutionnel,B5 La protection sociale et les services publics
+environnement,_institutions,Vue d'ensemble,sec-env-vue-ensemble,existe,institution,cadre institutionnel,B5 La protection sociale et les services publics
+environnement,_institutions,Le ministère chargé de l'environnement,sec-env-ministere,existe,institution,cadre institutionnel,B5 La protection sociale et les services publics
+environnement,_institutions,L'Agence nationale de protection de l'environnement,sec-env-anpe,existe,institution,cadre institutionnel,B5 La protection sociale et les services publics
+environnement,_institutions,L'Agence nationale de gestion des déchets,sec-env-anged,existe,institution,cadre institutionnel,B5 La protection sociale et les services publics
+environnement,_institutions,L'Office national de l'assainissement,sec-env-onas,existe,institution,cadre institutionnel,B5 La protection sociale et les services publics
+environnement,_depense,Un périmètre ministériel mouvant,sec-env-depense-perimetre,existe,à déterminer,à déterminer,B5 La protection sociale et les services publics
+environnement,_depense,Vue d'ensemble,sec-env-depense-ensemble,existe,à déterminer,à déterminer,B5 La protection sociale et les services publics
+environnement,_depense,Le budget de la mission,sec-env-depense-ministere,existe,à déterminer,à déterminer,B5 La protection sociale et les services publics
+environnement,_depense,Les transferts aux établissements,sec-env-depense-transferts,existe,à déterminer,à déterminer,B5 La protection sociale et les services publics
+environnement,_assainissement,Le service et qui paie,sec-env-assainissement-service,existe,à déterminer,à déterminer,B5 La protection sociale et les services publics
+environnement,_assainissement,Les redevances d'assainissement,sec-env-assainissement-redevances,existe,à déterminer,à déterminer,B5 La protection sociale et les services publics
+environnement,_assainissement,Le financement public,sec-env-assainissement-financement,existe,à déterminer,à déterminer,B5 La protection sociale et les services publics
+environnement,_assainissement,Ce qu'en dit l'économie,sec-env-assainissement-economie,existe,à déterminer,à déterminer,B5 La protection sociale et les services publics
+environnement,_dechets,Le partage des compétences,sec-env-dechets-partage,existe,à déterminer,à déterminer,B5 La protection sociale et les services publics
+environnement,_dechets,Les flux,sec-env-dechets-flux,existe,à déterminer,à déterminer,B5 La protection sociale et les services publics
+environnement,_dechets,Le financement de l'aval,sec-env-dechets-aval,existe,à déterminer,à déterminer,B5 La protection sociale et les services publics
+environnement,_depollution,Le fonds de dépollution,sec-env-depollution-fodep,existe,à déterminer,à déterminer,B5 La protection sociale et les services publics
+environnement,_depollution,Le fonds de la protection et de l'esthétique de l'environnement,sec-env-depollution-esthetique,existe,à déterminer,à déterminer,B5 La protection sociale et les services publics
+environnement,_depollution,Les avantages à la lutte contre la pollution,sec-env-depollution-incitation,existe,à déterminer,à déterminer,B5 La protection sociale et les services publics
+environnement,_depollution,Ce qu'en dit l'économie,sec-env-depollution-economie,existe,à déterminer,à déterminer,B5 La protection sociale et les services publics
+finances_locales,index,Les trois mouvements du volume,sec-fl-mouvements,existe,à déterminer,à déterminer,B7 Les finances publiques et la vue d'ensemble
+finances_locales,index,Comment lire le volume,sec-fl-guide-lecture,existe,à déterminer,à déterminer,B7 Les finances publiques et la vue d'ensemble
+finances_locales,index,Le champ du volume,sec-fl-perimetre,existe,à déterminer,à déterminer,B7 Les finances publiques et la vue d'ensemble
+finances_locales,_notions,Décentraliser,sec-fl-decentraliser,existe,institution,cadre institutionnel,B7 Les finances publiques et la vue d'ensemble
+finances_locales,_notions,Le budget local,sec-fl-budget,existe,institution,cadre institutionnel,B7 Les finances publiques et la vue d'ensemble
+finances_locales,_notions,Les ressources propres,sec-fl-ressources-propres,existe,institution,cadre institutionnel,B7 Les finances publiques et la vue d'ensemble
+finances_locales,_notions,Les transferts,sec-fl-notions-transferts,existe,institution,cadre institutionnel,B7 Les finances publiques et la vue d'ensemble
+finances_locales,_notions,Mesurer,sec-fl-mesurer,existe,institution,cadre institutionnel,B7 Les finances publiques et la vue d'ensemble
+finances_locales,_histoire,Vue d'ensemble,sec-fl-hist-vue-ensemble,existe,institution,cadre institutionnel,B7 Les finances publiques et la vue d'ensemble
+finances_locales,_histoire,"La mise en place, 1957-1963",sec-fl-hist-1957,existe,institution,cadre institutionnel,B7 Les finances publiques et la vue d'ensemble
+finances_locales,_histoire,Les grandes réformes,sec-fl-hist-reformes,existe,institution,cadre institutionnel,B7 Les finances publiques et la vue d'ensemble
+finances_locales,_histoire,La longue période : le nombre de communes et la population communale,sec-fl-hist-longue-periode,existe,institution,cadre institutionnel,B7 Les finances publiques et la vue d'ensemble
+finances_locales,_competences,Vue d'ensemble,sec-fl-comp-vue-ensemble,existe,institution,cadre institutionnel,B7 Les finances publiques et la vue d'ensemble
+finances_locales,_competences,"Avant 2018 : pas de liste de compétences, une approbation préalable",sec-fl-comp-avant-2018,existe,institution,cadre institutionnel,B7 Les finances publiques et la vue d'ensemble
+finances_locales,_competences,2018 : trois catégories de compétences,sec-fl-comp-code-2018,existe,institution,cadre institutionnel,B7 Les finances publiques et la vue d'ensemble
+finances_locales,_competences,"Qui décide, qui contrôle",sec-fl-comp-organisation,existe,institution,cadre institutionnel,B7 Les finances publiques et la vue d'ensemble
+finances_locales,_competences,L'état du droit en octobre 2026,sec-fl-comp-depuis-2023,existe,institution,cadre institutionnel,B7 Les finances publiques et la vue d'ensemble
+finances_locales,_budgets,Vue d'ensemble,sec-fl-budg-vue-ensemble,existe,transversal,cadre institutionnel,B7 Les finances publiques et la vue d'ensemble
+finances_locales,_budgets,La mise en place : la loi organique du budget de 1975,sec-fl-budg-1975,existe,transversal,cadre institutionnel,B7 Les finances publiques et la vue d'ensemble
+finances_locales,_budgets,Les grandes réformes,sec-fl-budg-reformes,existe,transversal,cadre institutionnel,B7 Les finances publiques et la vue d'ensemble
+finances_locales,_budgets,L'état du droit au 14 mars 2025,sec-fl-budg-etat-du-droit,existe,transversal,cadre institutionnel,B7 Les finances publiques et la vue d'ensemble
+finances_locales,_budgets,Le seuil de l'approbation ministérielle,sec-fl-budg-seuils,existe,transversal,cadre institutionnel,B7 Les finances publiques et la vue d'ensemble
+finances_locales,_budgets,La nomenclature du budget,sec-fl-budg-nomenclature,existe,transversal,cadre institutionnel,B7 Les finances publiques et la vue d'ensemble
+finances_locales,_budgets,"Le modèle de 2020, article par article",sec-fl-budg-modele-2020,existe,transversal,cadre institutionnel,B7 Les finances publiques et la vue d'ensemble
+finances_locales,_budgets,Comptable public et reddition des comptes,sec-fl-budg-ccl-comptes,existe,transversal,cadre institutionnel,B7 Les finances publiques et la vue d'ensemble
+finances_locales,_budgets,La longue période,sec-fl-budg-longue-periode,existe,transversal,cadre institutionnel,B7 Les finances publiques et la vue d'ensemble
+finances_locales,_impots_immeubles,Vue d'ensemble,sec-fl-immeubles-vue-ensemble,existe,à déterminer,à déterminer,B7 Les finances publiques et la vue d'ensemble
+finances_locales,_impots_immeubles,"La mise en place, 1997",sec-fl-immeubles-code,existe,à déterminer,à déterminer,B7 Les finances publiques et la vue d'ensemble
+finances_locales,_impots_immeubles,Les grandes réformes,sec-fl-immeubles-reformes,existe,à déterminer,à déterminer,B7 Les finances publiques et la vue d'ensemble
+finances_locales,_impots_immeubles,L'état du droit en 2026,sec-fl-immeubles-etat-du-droit,existe,à déterminer,à déterminer,B7 Les finances publiques et la vue d'ensemble
+finances_locales,_impots_immeubles,"Dégrèvement, contribution au fonds de l'habitat, pénalité et abandons",sec-fl-immeubles-dispositifs,existe,à déterminer,à déterminer,B7 Les finances publiques et la vue d'ensemble
+finances_locales,_impots_immeubles,La longue période : ce que rapportent les deux taxes,sec-fl-immeubles-longue-periode,existe,à déterminer,à déterminer,B7 Les finances publiques et la vue d'ensemble
+finances_locales,_impots_activite,Vue d'ensemble,sec-fl-activite-vue-ensemble,existe,à déterminer,à déterminer,B7 Les finances publiques et la vue d'ensemble
+finances_locales,_impots_activite,"La mise en place, 1975 puis 1997",sec-fl-activite-code,existe,à déterminer,à déterminer,B7 Les finances publiques et la vue d'ensemble
+finances_locales,_impots_activite,Les grandes réformes,sec-fl-activite-reformes,existe,à déterminer,à déterminer,B7 Les finances publiques et la vue d'ensemble
+finances_locales,_impots_activite,L'état du droit en 2026,sec-fl-activite-etat-du-droit,existe,à déterminer,à déterminer,B7 Les finances publiques et la vue d'ensemble
+finances_locales,_impots_activite,"La taxe hôtelière, les forfaits et le partage du produit",sec-fl-activite-dispositifs,existe,à déterminer,à déterminer,B7 Les finances publiques et la vue d'ensemble
+finances_locales,_impots_activite,La longue période : ce que rapportent les deux impôts,sec-fl-activite-longue-periode,existe,à déterminer,à déterminer,B7 Les finances publiques et la vue d'ensemble
+finances_locales,_taxes_redevances,Vue d'ensemble,sec-fl-taxes-vue-ensemble,existe,à déterminer,à déterminer,B7 Les finances publiques et la vue d'ensemble
+finances_locales,_taxes_redevances,"La mise en place, 1997",sec-fl-taxes-mise-en-place,existe,à déterminer,à déterminer,B7 Les finances publiques et la vue d'ensemble
+finances_locales,_taxes_redevances,Les grandes réformes,sec-fl-taxes-reformes,existe,à déterminer,à déterminer,B7 Les finances publiques et la vue d'ensemble
+finances_locales,_taxes_redevances,Qui fixe quoi : l'état du droit en 2026,sec-fl-moduler,existe,à déterminer,à déterminer,B7 Les finances publiques et la vue d'ensemble
+finances_locales,_taxes_redevances,"Les prélèvements, un à un",sec-fl-taxes-code,existe,à déterminer,à déterminer,B7 Les finances publiques et la vue d'ensemble
+finances_locales,_taxes_redevances,La longue période,sec-fl-taxes-longue-periode,existe,à déterminer,à déterminer,B7 Les finances publiques et la vue d'ensemble
+finances_locales,_transferts,Vue d'ensemble,sec-fl-transferts-vue-ensemble,existe,D.73,à déterminer,B7 Les finances publiques et la vue d'ensemble
+finances_locales,_transferts,"La mise en place, 1975-1976",sec-fl-transferts-1975,existe,D.73,à déterminer,B7 Les finances publiques et la vue d'ensemble
+finances_locales,_transferts,Les grandes réformes,sec-fl-fccl-reformes,existe,D.73,à déterminer,B7 Les finances publiques et la vue d'ensemble
+finances_locales,_transferts,"La répartition légale du fonds, 1976-2017",sec-fl-transferts-textes,existe,D.73,à déterminer,B7 Les finances publiques et la vue d'ensemble
+finances_locales,_transferts,L'état du droit au 10 juillet 2021,sec-fl-transferts-etat-du-droit,existe,D.73,à déterminer,B7 Les finances publiques et la vue d'ensemble
+finances_locales,_transferts,"La réserve du fonds, 1976-2017",sec-fl-fccl-reserve,existe,D.73,à déterminer,B7 Les finances publiques et la vue d'ensemble
+finances_locales,_transferts,La caisse des prêts et de soutien des collectivités locales,sec-fl-cpscl,existe,D.73,à déterminer,B7 Les finances publiques et la vue d'ensemble
+finances_locales,_transferts,La longue période,sec-fl-transferts-longue-periode,existe,D.73,à déterminer,B7 Les finances publiques et la vue d'ensemble
+finances_locales,_transferts,Dans les comptes,sec-fl-transferts-comptes,existe,D.73,à déterminer,B7 Les finances publiques et la vue d'ensemble
+finances_locales,_transferts,Des transferts budgétaires au chiffre des comptes,sec-fl-transferts-passage,à rédiger,D.73,à déterminer,B7 Les finances publiques et la vue d'ensemble
+fiscalite,index,La carte des impôts,,existe,à déterminer,à déterminer,B4 Les prélèvements
+fiscalite,index,Ce que pèse chaque impôt,,existe,à déterminer,à déterminer,B4 Les prélèvements
+fiscalite,index,Ce que ce livre ne traite pas : les cotisations sociales,,existe,à déterminer,à déterminer,B4 Les prélèvements
+fiscalite,_impot_revenu,Avant l'IRPP : impôts cédulaires et contribution personnelle d'État (jusqu'aux revenus de 1989),,existe,D.5,A4 Le compte de distribution secondaire du revenu,B4 Les prélèvements
+fiscalite,_impot_revenu,L'institution de 1989-1990,sec-irpp-institution,existe,D.5,A4 Le compte de distribution secondaire du revenu,B4 Les prélèvements
+fiscalite,_impot_revenu,Comment se calcule l'IRPP,sec-irpp-calcul,existe,D.5,A4 Le compte de distribution secondaire du revenu,B4 Les prélèvements
+fiscalite,_impot_revenu,L'évolution du barème,sec-irpp-bareme,existe,D.5,A4 Le compte de distribution secondaire du revenu,B4 Les prélèvements
+fiscalite,_impot_revenu,L'évolution de l'assiette et des abattements,sec-irpp-assiette,existe,D.5,A4 Le compte de distribution secondaire du revenu,B4 Les prélèvements
+fiscalite,_impot_revenu,L'évolution des déductions pour charges de famille,sec-irpp-famille,existe,D.5,A4 Le compte de distribution secondaire du revenu,B4 Les prélèvements
+fiscalite,_impot_revenu,L'évolution du minimum d'impôt,sec-irpp-minimum,existe,D.5,A4 Le compte de distribution secondaire du revenu,B4 Les prélèvements
+fiscalite,_impot_revenu,"Le recouvrement : acomptes, retenues et avances",sec-irpp-recouvrement,existe,D.5,A4 Le compte de distribution secondaire du revenu,B4 Les prélèvements
+fiscalite,_impot_revenu,L'évolution des régimes dérogatoires,sec-irpp-regimes,existe,D.5,A4 Le compte de distribution secondaire du revenu,B4 Les prélèvements
+fiscalite,_impot_revenu,Le régime forfaitaire,sec-irpp-forfait,existe,D.5,A4 Le compte de distribution secondaire du revenu,B4 Les prélèvements
+fiscalite,_impot_revenu,Le régime de l'auto-entrepreneur,sec-irpp-auto-entrepreneur,existe,D.5,A4 Le compte de distribution secondaire du revenu,B4 Les prélèvements
+fiscalite,_impot_revenu,Les revenus de l'épargne et du capital,sec-irpp-epargne,existe,D.5,A4 Le compte de distribution secondaire du revenu,B4 Les prélèvements
+fiscalite,_impot_revenu,Les prélèvements adossés : la contribution sociale de solidarité,sec-irpp-css,existe,D.5,A4 Le compte de distribution secondaire du revenu,B4 Les prélèvements
+fiscalite,_impot_revenu,"Les réformes de l'IRPP, texte par texte",sec-irpp-reformes,existe,D.5,A4 Le compte de distribution secondaire du revenu,B4 Les prélèvements
+fiscalite,_impot_revenu,La longue période,,existe,D.5,A4 Le compte de distribution secondaire du revenu,B4 Les prélèvements
+fiscalite,_impot_revenu,Ce que l'impôt rapporte,,existe,D.5,A4 Le compte de distribution secondaire du revenu,B4 Les prélèvements
+fiscalite,_impot_revenu,Dans les comptes,sec-irpp-comptes,existe,D.5,A4 Le compte de distribution secondaire du revenu,B4 Les prélèvements
+fiscalite,_impot_revenu,Des recettes de l'impôt au chiffre des comptes,sec-irpp-passage,existe,D.5,A4 Le compte de distribution secondaire du revenu,B4 Les prélèvements
+fiscalite,_impot_revenu,Annexe : notations du chapitre,sec-irpp-notations,existe,D.5,A4 Le compte de distribution secondaire du revenu,B4 Les prélèvements
+fiscalite,_impot_societes,Avant l'impôt sur les sociétés,,existe,D.5,A4 Le compte de distribution secondaire du revenu,B4 Les prélèvements
+fiscalite,_impot_societes,L'impôt institué en 1990,,existe,D.5,A4 Le compte de distribution secondaire du revenu,B4 Les prélèvements
+fiscalite,_impot_societes,"L'évolution, réforme par réforme",,existe,D.5,A4 Le compte de distribution secondaire du revenu,B4 Les prélèvements
+fiscalite,_impot_societes,Un régime hors du code : l'admission en bourse,,existe,D.5,A4 Le compte de distribution secondaire du revenu,B4 Les prélèvements
+fiscalite,_impot_societes,La longue période,,existe,D.5,A4 Le compte de distribution secondaire du revenu,B4 Les prélèvements
+fiscalite,_impot_societes,Ce que l'impôt rapporte,,existe,D.5,A4 Le compte de distribution secondaire du revenu,B4 Les prélèvements
+fiscalite,_impot_societes,Dans les comptes,sec-is-comptes,existe,D.5,A4 Le compte de distribution secondaire du revenu,B4 Les prélèvements
+fiscalite,_impot_societes,Des recettes de l'impôt au chiffre des comptes,sec-is-passage,existe,D.5,A4 Le compte de distribution secondaire du revenu,B4 Les prélèvements
+fiscalite,_impot_fortune,Avant l'impôt sur la fortune,sec-fortune-avant,existe,D.5,A4 Le compte de distribution secondaire du revenu,B4 Les prélèvements
+fiscalite,_impot_fortune,L'impôt sur la fortune depuis 2026,sec-fortune-2026,existe,D.5,A4 Le compte de distribution secondaire du revenu,B4 Les prélèvements
+fiscalite,_impot_fortune,De 2023 à 2026 : ce que la loi a changé,sec-fortune-evolution,existe,D.5,A4 Le compte de distribution secondaire du revenu,B4 Les prélèvements
+fiscalite,_impot_fortune,La lecture de l'administration,sec-fortune-doctrine,existe,D.5,A4 Le compte de distribution secondaire du revenu,B4 Les prélèvements
+fiscalite,_impot_fortune,La longue période et le rendement,sec-fortune-rendement,existe,D.5,A4 Le compte de distribution secondaire du revenu,B4 Les prélèvements
+fiscalite,_contributions_conjoncturelles,Vue d'ensemble,sec-ccj-vue-ensemble,existe,D.5,A4 Le compte de distribution secondaire du revenu,B4 Les prélèvements
+fiscalite,_contributions_conjoncturelles,"La mise en place, 1991",sec-ccj-mise-en-place,existe,D.5,A4 Le compte de distribution secondaire du revenu,B4 Les prélèvements
+fiscalite,_contributions_conjoncturelles,Les grandes réformes,sec-ccj-reformes,existe,D.5,A4 Le compte de distribution secondaire du revenu,B4 Les prélèvements
+fiscalite,_contributions_conjoncturelles,L'état du droit en 2026,sec-ccj-etat-du-droit,existe,D.5,A4 Le compte de distribution secondaire du revenu,B4 Les prélèvements
+fiscalite,_contributions_conjoncturelles,Les contributions ciblées,sec-ccj-dispositifs,existe,D.5,A4 Le compte de distribution secondaire du revenu,B4 Les prélèvements
+fiscalite,_contributions_conjoncturelles,La longue période : ce que les contributions rapportent,sec-ccj-longue-periode,existe,D.5,A4 Le compte de distribution secondaire du revenu,B4 Les prélèvements
+fiscalite,_contributions_conjoncturelles,Ce qu'en dit l'économie,sec-ccj-economie,existe,D.5,A4 Le compte de distribution secondaire du revenu,B4 Les prélèvements
+fiscalite,_patrimoine_immobilier,Vue d'ensemble,sec-pi-vue,existe,à déterminer,à déterminer,B4 Les prélèvements
+fiscalite,_patrimoine_immobilier,La mise en place : les antécédents et le tarif de 1969,sec-pi-mise-en-place,existe,à déterminer,à déterminer,B4 Les prélèvements
+fiscalite,_patrimoine_immobilier,Les grandes réformes,sec-pi-reformes,existe,à déterminer,à déterminer,B4 Les prélèvements
+fiscalite,_patrimoine_immobilier,L'état du droit au 1^er^ janvier 2026,sec-pi-etat-du-droit,existe,à déterminer,à déterminer,B4 Les prélèvements
+fiscalite,_patrimoine_immobilier,Les donations et les successions,sec-pi-donations-successions,existe,D.91,à déterminer,B4 Les prélèvements
+fiscalite,_patrimoine_immobilier,Les terrains d'habitat individuel,sec-pi-terrains,existe,à déterminer,à déterminer,B4 Les prélèvements
+fiscalite,_patrimoine_immobilier,Les logements neufs et les promoteurs immobiliers,sec-pi-promoteurs,existe,D.29,A2 Le compte d'exploitation,B4 Les prélèvements
+fiscalite,_patrimoine_immobilier,Le droit complémentaire sur les immeubles de grande valeur,sec-pi-droit-complementaire,existe,D.29,A2 Le compte d'exploitation,B4 Les prélèvements
+fiscalite,_patrimoine_immobilier,La longue période : ce que prévoient les lois de finances,sec-pi-longue-periode,existe,à déterminer,à déterminer,B4 Les prélèvements
+fiscalite,_patrimoine_immobilier,Rapports et études,sec-pi-etudes,existe,à déterminer,à déterminer,B4 Les prélèvements
+fiscalite,_patrimoine_immobilier,Ce qu'en dit l'économie,sec-pi-economie,existe,à déterminer,à déterminer,B4 Les prélèvements
+fiscalite,_timbre_enregistrement,Vue d'ensemble,sec-te-vue,existe,à déterminer,à déterminer,B4 Les prélèvements
+fiscalite,_timbre_enregistrement,La mise en place : du tarif du protectorat au code de 1993,sec-te-mise-en-place,existe,à déterminer,à déterminer,B4 Les prélèvements
+fiscalite,_timbre_enregistrement,Les grandes réformes,sec-te-reformes,existe,à déterminer,à déterminer,B4 Les prélèvements
+fiscalite,_timbre_enregistrement,L'état du droit au 1^er^ janvier 2026,sec-te-etat,existe,à déterminer,à déterminer,B4 Les prélèvements
+fiscalite,_timbre_enregistrement,Le droit fixe et le minimum de perception,sec-te-droit-fixe,existe,à déterminer,à déterminer,B4 Les prélèvements
+fiscalite,_timbre_enregistrement,Les actes de sociétés,sec-te-societes,existe,à déterminer,à déterminer,B4 Les prélèvements
+fiscalite,_timbre_enregistrement,Les marchés et les concessions,sec-te-marches,existe,à déterminer,à déterminer,B4 Les prélèvements
+fiscalite,_timbre_enregistrement,"Les autres droits proportionnels : fonds de commerce, baux, meubles, jugements, titres",sec-te-proportionnels,existe,à déterminer,à déterminer,B4 Les prélèvements
+fiscalite,_timbre_enregistrement,"Le timbre des actes, des effets de commerce et des titres de crédit",sec-te-timbre-actes,existe,D.214,A3 Le compte d'affectation des revenus primaires,B4 Les prélèvements
+fiscalite,_timbre_enregistrement,"Le timbre des quittances, des factures et des tickets de caisse",sec-te-factures,existe,D.214,A3 Le compte d'affectation des revenus primaires,B4 Les prélèvements
+fiscalite,_timbre_enregistrement,Le timbre de la téléphonie et d'internet,sec-te-telephonie,existe,D.214,A3 Le compte d'affectation des revenus primaires,B4 Les prélèvements
+fiscalite,_timbre_enregistrement,Les timbres des documents administratifs,sec-te-documents,existe,D.214,A3 Le compte d'affectation des revenus primaires,B4 Les prélèvements
+fiscalite,_timbre_enregistrement,La taxe unique sur les assurances,sec-te-tua,existe,à déterminer,à déterminer,B4 Les prélèvements
+fiscalite,_timbre_enregistrement,Le paiement du timbre,sec-te-paiement,existe,D.214,A3 Le compte d'affectation des revenus primaires,B4 Les prélèvements
+fiscalite,_timbre_enregistrement,La longue période : ce que prévoient et encaissent les lois de finances,sec-te-longue-periode,existe,à déterminer,à déterminer,B4 Les prélèvements
+fiscalite,_timbre_enregistrement,Ce qu'en dit l'économie,sec-te-economie,existe,à déterminer,à déterminer,B4 Les prélèvements
+fiscalite,_tva,Vue d'ensemble,sec-tva-en-bref,existe,D.211,A3 Le compte d'affectation des revenus primaires,B4 Les prélèvements
+fiscalite,_tva,"La mise en place, 1988-1990",sec-tva-mise-en-place,existe,D.211,A3 Le compte d'affectation des revenus primaires,B4 Les prélèvements
+fiscalite,_tva,Les grandes réformes,sec-tva-reformes,existe,D.211,A3 Le compte d'affectation des revenus primaires,B4 Les prélèvements
+fiscalite,_tva,Le bilan des taux et l'état du droit,sec-tva-bilan,existe,D.211,A3 Le compte d'affectation des revenus primaires,B4 Les prélèvements
+fiscalite,_tva,Les dispositifs qui aménagent la taxe,sec-tva-dispositifs,existe,D.211,A3 Le compte d'affectation des revenus primaires,B4 Les prélèvements
+fiscalite,_tva,"Déduction, crédit et suspension",sec-tva-deduction,existe,D.211,A3 Le compte d'affectation des revenus primaires,B4 Les prélèvements
+fiscalite,_tva,"La longue période : ce que la taxe rapporte, et ce qui lui échappe",sec-tva-longue-periode,existe,D.211,A3 Le compte d'affectation des revenus primaires,B4 Les prélèvements
+fiscalite,_tva,Dans les comptes,sec-tva-cn-comptes,existe,D.211,A3 Le compte d'affectation des revenus primaires,B4 Les prélèvements
+fiscalite,_tva,Des recettes de la taxe au chiffre des comptes,sec-tva-cn-passage,existe,D.211,A3 Le compte d'affectation des revenus primaires,B4 Les prélèvements
+fiscalite,_droits_consommation,Avant le droit de consommation,,existe,D.214,A3 Le compte d'affectation des revenus primaires,B4 Les prélèvements
+fiscalite,_droits_consommation,Les huit articles de la loi de 1988,,existe,D.214,A3 Le compte d'affectation des revenus primaires,B4 Les prélèvements
+fiscalite,_droits_consommation,Le tableau annexé de 1988,,existe,D.214,A3 Le compte d'affectation des revenus primaires,B4 Les prélèvements
+fiscalite,_droits_consommation,Qui peut modifier le tableau,,existe,D.214,A3 Le compte d'affectation des revenus primaires,B4 Les prélèvements
+fiscalite,_droits_consommation,Les boissons alcoolisées : un régime fiscal fixé par décret,sec-dc-boissons,existe,D.214,A3 Le compte d'affectation des revenus primaires,B4 Les prélèvements
+fiscalite,_droits_consommation,Deux prélèvements propres aux boissons alcoolisées,sec-dc-boissons-autres,existe,D.214,A3 Le compte d'affectation des revenus primaires,B4 Les prélèvements
+fiscalite,_droits_consommation,L'articulation avec la taxe sur la valeur ajoutée,,existe,D.214,A3 Le compte d'affectation des revenus primaires,B4 Les prélèvements
+fiscalite,_droits_consommation,"L'évolution, réforme par réforme",,existe,D.214,A3 Le compte d'affectation des revenus primaires,B4 Les prélèvements
+fiscalite,_droits_consommation,La longue période,,existe,D.214,A3 Le compte d'affectation des revenus primaires,B4 Les prélèvements
+fiscalite,_droits_consommation,Ce que rapportent les droits de consommation,,existe,D.214,A3 Le compte d'affectation des revenus primaires,B4 Les prélèvements
+fiscalite,_droits_consommation,Dans les comptes,sec-dc-cn-comptes,existe,D.214,A3 Le compte d'affectation des revenus primaires,B4 Les prélèvements
+fiscalite,_droits_consommation,Des droits de consommation à D.214,sec-dc-cn-passage,existe,D.214,A3 Le compte d'affectation des revenus primaires,B4 Les prélèvements
+fiscalite,_droits_douane,Vue d'ensemble,sec-dd-vue,existe,D.212,A3 Le compte d'affectation des revenus primaires,B4 Les prélèvements
+fiscalite,_droits_douane,La mise en place : de l'union douanière au tarif de 1959,sec-dd-mise-en-place,existe,D.212,A3 Le compte d'affectation des revenus primaires,B4 Les prélèvements
+fiscalite,_droits_douane,Les grandes réformes,sec-dd-reformes,existe,D.212,A3 Le compte d'affectation des revenus primaires,B4 Les prélèvements
+fiscalite,_droits_douane,L'état du droit au 1^er^ janvier 2026,sec-dd-etat,existe,D.212,A3 Le compte d'affectation des revenus primaires,B4 Les prélèvements
+fiscalite,_droits_douane,La redevance de prestations douanières,sec-dd-redevance,existe,D.212,A3 Le compte d'affectation des revenus primaires,B4 Les prélèvements
+fiscalite,_droits_douane,"Le droit compensateur provisoire, 1991-1997",sec-dd-compensateur,existe,D.212,A3 Le compte d'affectation des revenus primaires,B4 Les prélèvements
+fiscalite,_droits_douane,Les accords commerciaux,sec-dd-accords,existe,D.212,A3 Le compte d'affectation des revenus primaires,B4 Les prélèvements
+fiscalite,_droits_douane,Les autres prélèvements perçus en douane,sec-dd-autres,existe,D.212,A3 Le compte d'affectation des revenus primaires,B4 Les prélèvements
+fiscalite,_droits_douane,"Le code des douanes, les régimes douaniers et les suspensions par décret",sec-dd-code,existe,D.212,A3 Le compte d'affectation des revenus primaires,B4 Les prélèvements
+fiscalite,_droits_douane,Les listes de produits agricoles des décrets pour 2013 et pour 2014,sec-dd-listes-agricoles,existe,D.212,A3 Le compte d'affectation des revenus primaires,B4 Les prélèvements
+fiscalite,_droits_douane,La longue période : ce que rapportent les droits de douane,sec-dd-longue-periode,existe,D.212,A3 Le compte d'affectation des revenus primaires,B4 Les prélèvements
+fiscalite,_droits_douane,Ce qu'en disent les rapports extérieurs et une évaluation,sec-dd-etudes,existe,D.212,A3 Le compte d'affectation des revenus primaires,B4 Les prélèvements
+fiscalite,_droits_douane,Ce qu'en dit l'économie,sec-dd-economie,existe,D.212,A3 Le compte d'affectation des revenus primaires,B4 Les prélèvements
+fiscalite,_droits_douane,Dans les comptes,sec-dd-cn-comptes,existe,D.212,A3 Le compte d'affectation des revenus primaires,B4 Les prélèvements
+fiscalite,_droits_douane,Des droits de douane à D.212,sec-dd-cn-passage,existe,D.212,A3 Le compte d'affectation des revenus primaires,B4 Les prélèvements
+fiscalite,_taxes_fonds_speciaux,Vue d'ensemble,sec-fst-vue-ensemble,existe,D.2,A3 Le compte d'affectation des revenus primaires,B4 Les prélèvements
+fiscalite,_taxes_fonds_speciaux,"La mise en place, 1995",sec-fst-mise-en-place,existe,D.2,A3 Le compte d'affectation des revenus primaires,B4 Les prélèvements
+fiscalite,_taxes_fonds_speciaux,Les grandes réformes,sec-fst-reformes,existe,D.2,A3 Le compte d'affectation des revenus primaires,B4 Les prélèvements
+fiscalite,_taxes_fonds_speciaux,L'état du droit en 2026,sec-fst-etat-du-droit,existe,D.2,A3 Le compte d'affectation des revenus primaires,B4 Les prélèvements
+fiscalite,_taxes_fonds_speciaux,Les autres taxes au profit d'un fonds,sec-fst-dispositifs,existe,D.2,A3 Le compte d'affectation des revenus primaires,B4 Les prélèvements
+fiscalite,_taxes_fonds_speciaux,La longue période : ce que pèsent les fonds spéciaux,sec-fst-longue-periode,existe,D.2,A3 Le compte d'affectation des revenus primaires,B4 Les prélèvements
+fiscalite,_taxes_fonds_speciaux,Ce qu'en dit l'économie,sec-fst-economie,existe,D.2,A3 Le compte d'affectation des revenus primaires,B4 Les prélèvements
+fiscalite,_regimes_incitation,Vue d'ensemble,sec-ri-vue-ensemble,existe,transversal,cadre institutionnel,B4 Les prélèvements
+fiscalite,_regimes_incitation,"La mise en place, 1969-1974",sec-df-avant-1993,existe,transversal,cadre institutionnel,B4 Les prélèvements
+fiscalite,_regimes_incitation,Les grandes réformes,sec-df-reformes,existe,transversal,cadre institutionnel,B4 Les prélèvements
+fiscalite,_regimes_incitation,L'état du droit en 2026 : qui a droit à quoi,sec-ri-etat-du-droit,existe,transversal,cadre institutionnel,B4 Les prélèvements
+fiscalite,_regimes_incitation,Ce que ces régimes coûtent au budget,sec-ri-cout,existe,transversal,cadre institutionnel,B4 Les prélèvements
+fiscalite,_regimes_incitation,Ce que le régime de l'exportation pèse dans le commerce extérieur,sec-df-commerce-exterieur,existe,transversal,cadre institutionnel,B4 Les prélèvements
+fiscalite,_regimes_incitation,Les études extérieures sur les incitations du code de 1993,sec-df-etudes,existe,transversal,cadre institutionnel,B4 Les prélèvements
+fiscalite,_depenses_fiscales,Vue d'ensemble,sec-df-vue-ensemble,existe,transversal,cadre institutionnel,B4 Les prélèvements
+fiscalite,_depenses_fiscales,Comment le ministère mesure une dépense fiscale,sec-df-rapport,existe,transversal,cadre institutionnel,B4 Les prélèvements
+fiscalite,_depenses_fiscales,"Le coût et ses bénéficiaires, exercices 2017 à 2023",sec-df-cout,existe,transversal,cadre institutionnel,B4 Les prélèvements
+fiscalite,_depenses_fiscales,"Ce qui, dans ce total, tient aux régimes d'incitation",sec-df-part-incitations,existe,transversal,cadre institutionnel,B4 Les prélèvements
+fiscalite,_depenses_fiscales,La mesure du ministère et les études extérieures,sec-df-comparaison,existe,transversal,cadre institutionnel,B4 Les prélèvements
+fiscalite,_tva_tableaux,"Quatre tableaux, de 1988 à 2026",sec-tva-tableaux-nature,existe,D.211,A3 Le compte d'affectation des revenus primaires,B4 Les prélèvements
+fiscalite,_tva_tableaux,Le sort du tableau C,sec-tva-tableaux-c,existe,D.211,A3 Le compte d'affectation des revenus primaires,B4 Les prélèvements
+fiscalite,_tva_tableaux,Les entrées et les sorties les plus notables,sec-tva-tableaux-mouvements,existe,D.211,A3 Le compte d'affectation des revenus primaires,B4 Les prélèvements
+fiscalite,_tva_tableaux,Les sources et leur nature,sec-tva-tableaux-sources,existe,D.211,A3 Le compte d'affectation des revenus primaires,B4 Les prélèvements
+fiscalite,_tva_tableaux,"Les tableaux, numéro par numéro",sec-tva-tableaux-transcriptions,existe,D.211,A3 Le compte d'affectation des revenus primaires,B4 Les prélèvements
+industrie,index,Le périmètre,sec-industrie-perimetre,ébauche,à déterminer,à déterminer,B2 La production
+industrie,index,Plan,sec-industrie-plan,ébauche,à déterminer,à déterminer,B2 La production
+industrie,index,La branche en chiffres,sec-industrie-chiffres,ébauche,à déterminer,à déterminer,B2 La production
+industrie,index,Ce que d'autres livres traitent,sec-industrie-voisinage,ébauche,à déterminer,à déterminer,B2 La production
+industrie,_institutions,_institutions,,ébauche,institution,cadre institutionnel,B2 La production
+industrie,_industrie,La CPG,sec-ep-ge-cpg,existe,branche:industrie,A1 Le compte de production (par branche),B2 La production
+industrie,_industrie,Le Groupe chimique tunisien,sec-ep-ge-gct,existe,branche:industrie,A1 Le compte de production (par branche),B2 La production
+industrie,_industrie,El Fouladh,sec-ep-ge-fouladh,existe,branche:industrie,A1 Le compte de production (par branche),B2 La production
+industrie,_industrie,Les Ciments de Bizerte,sec-ep-ge-cimbiz,existe,branche:industrie,A1 Le compte de production (par branche),B2 La production
+industrie,_industrie,Les Ciments d'Oum El Kélil,sec-ep-ge-cimoek,existe,branche:industrie,A1 Le compte de production (par branche),B2 La production
+industrie,_industrie,La SNCPA,sec-ep-ge-sncpa,existe,branche:industrie,A1 Le compte de production (par branche),B2 La production
+industrie,_industrie,L'Agence foncière industrielle,sec-ep-ge-afi,existe,branche:industrie,A1 Le compte de production (par branche),B2 La production
+industrie,_depense,_depense,,ébauche,à déterminer,à déterminer,B2 La production
+industrie,_etudes,_etudes,,ébauche,transversal,cadre institutionnel,B2 La production
+informel,index,Plan,sec-inf-plan,ébauche,à déterminer,à déterminer,B3 L'emploi et les revenus
+informel,index,Ce que d'autres livres traitent,sec-inf-voisinage,ébauche,à déterminer,à déterminer,B3 L'emploi et les revenus
+informel,_definitions,Les textes internationaux,sec-inf-textes,existe,cadre,cadre institutionnel,B3 L'emploi et les revenus
+informel,_definitions,Le secteur informel selon la résolution de 1993,sec-inf-def-1993,existe,cadre,cadre institutionnel,B3 L'emploi et les revenus
+informel,_definitions,L'emploi informel selon les directives de 2003,sec-inf-def-2003,existe,cadre,cadre institutionnel,B3 L'emploi et les revenus
+informel,_definitions,L'économie informelle selon la résolution de 2023,sec-inf-def-2023,existe,cadre,cadre institutionnel,B3 L'emploi et les revenus
+informel,_mesures,Les six familles,sec-inf-familles,existe,cadre,cadre institutionnel,B3 L'emploi et les revenus
+informel,_mesures,Les enquêtes emploi auprès des ménages,sec-inf-mes-menages,existe,cadre,cadre institutionnel,B3 L'emploi et les revenus
+informel,_mesures,Les enquêtes auprès des unités,sec-inf-mes-unites,existe,cadre,cadre institutionnel,B3 L'emploi et les revenus
+informel,_mesures,Les enquêtes mixtes,sec-inf-mes-mixtes,existe,cadre,cadre institutionnel,B3 L'emploi et les revenus
+informel,_mesures,Les sources administratives,sec-inf-mes-administratives,existe,cadre,cadre institutionnel,B3 L'emploi et les revenus
+informel,_mesures,Les méthodes macroéconomiques,sec-inf-mes-macro,existe,cadre,cadre institutionnel,B3 L'emploi et les revenus
+informel,_mesures,La comptabilité nationale,sec-inf-mes-comptes,existe,cadre,cadre institutionnel,B3 L'emploi et les revenus
+informel,_estimations,L'emploi informel d'après l'enquête emploi,sec-inf-est-enquete,existe,cadre,cadre institutionnel,B3 L'emploi et les revenus
+informel,_estimations,L'emploi informel par la méthode du solde,sec-inf-est-solde,existe,cadre,cadre institutionnel,B3 L'emploi et les revenus
+informel,_estimations,La part de la valeur ajoutée,sec-inf-est-va,existe,cadre,cadre institutionnel,B3 L'emploi et les revenus
+informel,_estimations,Les estimations macroéconomiques,sec-inf-est-macro,existe,cadre,cadre institutionnel,B3 L'emploi et les revenus
+informel,_estimations,Les chiffres de la Banque mondiale,sec-inf-est-bm,existe,cadre,cadre institutionnel,B3 L'emploi et les revenus
+informel,_estimations,Les femmes dans les micro-entreprises,sec-inf-est-femmes,existe,cadre,cadre institutionnel,B3 L'emploi et les revenus
+informel,_couverture,Les régimes ouverts aux travailleurs hors emploi salarié déclaré,sec-inf-cov-regimes,existe,cadre,cadre institutionnel,B3 L'emploi et les revenus
+informel,_couverture,La couverture mesurée,sec-inf-cov-mesure,existe,cadre,cadre institutionnel,B3 L'emploi et les revenus
+informel,_couverture,Les programmes non contributifs et l'informalité,sec-inf-cov-assistance,existe,cadre,cadre institutionnel,B3 L'emploi et les revenus
+investissement,index,La FBCF par secteur institutionnel,sec-invest-secteurs,ébauche,P.51,A7 Le compte de capital,"B6 La consommation, l'investissement et les échanges"
+investissement,index,L'investissement de l'État : du budget d'équipement à la FBCF,sec-invest-etat,à rédiger,P.51,A7 Le compte de capital,"B6 La consommation, l'investissement et les échanges"
+investissement,index,Les transferts en capital de l'État,sec-invest-transferts-capital,à rédiger,P.51,A7 Le compte de capital,"B6 La consommation, l'investissement et les échanges"
+investissement,index,Ce que d'autres livres traitent,sec-invest-voisinage,ébauche,P.51,A7 Le compte de capital,"B6 La consommation, l'investissement et les échanges"
+logement,index,Le périmètre,sec-logement-perimetre,ébauche,à déterminer,à déterminer,B2 La production
+logement,index,Plan,sec-logement-plan,ébauche,à déterminer,à déterminer,B2 La production
+logement,index,La branche en chiffres,sec-logement-chiffres,ébauche,à déterminer,à déterminer,B2 La production
+logement,index,Ce que d'autres livres traitent,sec-logement-voisinage,ébauche,à déterminer,à déterminer,B2 La production
+logement,_habitat,La source,sec-ep-habitat-source,existe,branche:logement,A1 Le compte de production (par branche),B2 La production
+logement,_habitat,L'Agence foncière d'habitation,sec-ep-ge-afh,existe,branche:logement,A1 Le compte de production (par branche),B2 La production
+logement,_habitat,La Société de promotion des logements sociaux,sec-ep-ge-sprols,existe,branche:logement,A1 Le compte de production (par branche),B2 La production
+logement,_habitat,La SNIT,sec-ep-ge-snit,existe,branche:logement,A1 Le compte de production (par branche),B2 La production
+logement,_habitat,L'Agence de réhabilitation et de rénovation urbaine,sec-ep-ge-arru,existe,branche:logement,A1 Le compte de production (par branche),B2 La production
+logement,_habitat,La Société générale d'entreprises de matériel et de travaux,sec-ep-ge-sogemt,existe,branche:logement,A1 Le compte de production (par branche),B2 La production
+logement,_depense,_depense,,ébauche,à déterminer,à déterminer,B2 La production
+logement,_etudes,_etudes,,ébauche,transversal,cadre institutionnel,B2 La production
+marche_travail,index,Le plan du volume,sec-mt-plan,existe,à déterminer,à déterminer,B3 L'emploi et les revenus
+marche_travail,index,Ce que ce volume traite et ne traite pas,sec-mt-perimetre,existe,à déterminer,à déterminer,B3 L'emploi et les revenus
+marche_travail,_notions,Salaire minimum légal et salaire conventionnel,sec-mt-notions-minimum,existe,cadre,cadre institutionnel,B3 L'emploi et les revenus
+marche_travail,_notions,Négociation collective et agrément,sec-mt-notions-negociation,existe,cadre,cadre institutionnel,B3 L'emploi et les revenus
+marche_travail,_notions,"Salaire brut, salaire net, coût du travail",sec-mt-notions-brut-net,existe,cadre,cadre institutionnel,B3 L'emploi et les revenus
+marche_travail,_notions,Indexation et revalorisation,sec-mt-notions-indexation,existe,cadre,cadre institutionnel,B3 L'emploi et les revenus
+marche_travail,_employeurs,Entreprises et formes juridiques,sec-mt-emp-definitions,existe,cadre,cadre institutionnel,B3 L'emploi et les revenus
+marche_travail,_employeurs,"Les entreprises privées, 2001-2024",sec-mt-emp-entreprises,existe,cadre,cadre institutionnel,B3 L'emploi et les revenus
+marche_travail,_employeurs,"Les salariés déclarés, 2000-2024",sec-mt-emp-salaries,existe,cadre,cadre institutionnel,B3 L'emploi et les revenus
+marche_travail,_institutions,"Le code du travail, 1966-1996",sec-mt-code,existe,institution,cadre institutionnel,B3 L'emploi et les revenus
+marche_travail,_institutions,Les organisations et les commissions,sec-mt-organisations,existe,institution,cadre institutionnel,B3 L'emploi et les revenus
+marche_travail,_institutions,2026 : un fondement nouveau,sec-mt-inst-2026,existe,institution,cadre institutionnel,B3 L'emploi et les revenus
+marche_travail,_salaire_minimum,Vue d'ensemble,sec-mt-sm-vue-ensemble,existe,D.1,A2 Le compte d'exploitation,B3 L'emploi et les revenus
+marche_travail,_salaire_minimum,"La mise en place, 1961-1974",sec-mt-mise-en-place,existe,D.1,A2 Le compte d'exploitation,B3 L'emploi et les revenus
+marche_travail,_salaire_minimum,"Les ruptures, 1977-2026",sec-mt-ruptures,existe,D.1,A2 Le compte d'exploitation,B3 L'emploi et les revenus
+marche_travail,_salaire_minimum,L'état du droit en 2026,sec-mt-sm-etat-du-droit,existe,D.1,A2 Le compte d'exploitation,B3 L'emploi et les revenus
+marche_travail,_salaire_minimum,"La longue période, 1961-2028",sec-mt-longue-periode,existe,D.1,A2 Le compte d'exploitation,B3 L'emploi et les revenus
+marche_travail,_salaire_minimum,"Le SMIG, les salaires du secteur privé et les prix, 1970-2025",sec-mt-salaires-prive,existe,D.1,A2 Le compte d'exploitation,B3 L'emploi et les revenus
+marche_travail,_conventions,La convention collective cadre de 1973,sec-mt-cadre-1973,existe,D.1,A2 Le compte d'exploitation,B3 L'emploi et les revenus
+marche_travail,_conventions,Trois étages de salaires,sec-mt-trois-etages,existe,D.1,A2 Le compte d'exploitation,B3 L'emploi et les revenus
+marche_travail,_conventions,Les conventions de branche et leurs avenants,sec-mt-sectorielles,existe,D.1,A2 Le compte d'exploitation,B3 L'emploi et les revenus
+marche_travail,_conventions,Ce que les conventions ajoutent au SMIG,sec-mt-cc-smig,existe,D.1,A2 Le compte d'exploitation,B3 L'emploi et les revenus
+marche_travail,_conventions,"La couverture, d'après l'Organisation internationale du travail",sec-mt-cc-couverture,existe,D.1,A2 Le compte d'exploitation,B3 L'emploi et les revenus
+marche_travail,_negociations,"Les rounds et leurs textes, 1973-2023",sec-mt-rounds,existe,D.1,A2 Le compte d'exploitation,B3 L'emploi et les revenus
+marche_travail,_negociations,Les accords-cadres et leurs taux,sec-mt-accords-cadres,existe,D.1,A2 Le compte d'exploitation,B3 L'emploi et les revenus
+marche_travail,_negociations,2026 : la hausse fixée par décret,sec-mt-2026,existe,D.1,A2 Le compte d'exploitation,B3 L'emploi et les revenus
+marche_travail,_temps_travail,Vue d'ensemble,sec-mt-tt-en-bref,existe,à déterminer,à déterminer,B3 L'emploi et les revenus
+marche_travail,_temps_travail,La mise en place : du Protectorat au code de 1966,sec-mt-tt-mise-en-place,existe,à déterminer,à déterminer,B3 L'emploi et les revenus
+marche_travail,_temps_travail,Les grandes réformes,sec-mt-tt-reformes,existe,à déterminer,à déterminer,B3 L'emploi et les revenus
+marche_travail,_temps_travail,Le droit au 1^er^ janvier 2026,sec-mt-tt-etat-du-droit,existe,à déterminer,à déterminer,B3 L'emploi et les revenus
+marche_travail,_temps_travail,Le congé annuel payé,sec-mt-tt-conge-annuel,existe,à déterminer,à déterminer,B3 L'emploi et les revenus
+marche_travail,_temps_travail,Les jours fériés payés,sec-mt-tt-jours-feries,existe,à déterminer,à déterminer,B3 L'emploi et les revenus
+marche_travail,_temps_travail,Les congés pour événements familiaux et la naissance,sec-mt-tt-conges-familiaux,existe,à déterminer,à déterminer,B3 L'emploi et les revenus
+marche_travail,_temps_travail,Le travail à temps partiel,sec-mt-tt-temps-partiel,existe,à déterminer,à déterminer,B3 L'emploi et les revenus
+marche_travail,_temps_travail,Le secteur agricole,sec-mt-tt-agriculture,existe,à déterminer,à déterminer,B3 L'emploi et les revenus
+marche_travail,_temps_travail,Le travail domestique,sec-mt-tt-domestique,existe,à déterminer,à déterminer,B3 L'emploi et les revenus
+marche_travail,_temps_travail,Le repos hebdomadaire et le travail de nuit,sec-mt-tt-repos-nuit,existe,à déterminer,à déterminer,B3 L'emploi et les revenus
+marche_travail,_temps_travail,Le temps de travail habituel en 2019,sec-mt-tt-duree-2019,existe,à déterminer,à déterminer,B3 L'emploi et les revenus
+marche_travail,_temps_travail,Ce qu'en dit l'économie,sec-mt-tt-economie,existe,à déterminer,à déterminer,B3 L'emploi et les revenus
+marche_travail,_rupture_contrat,Vue d'ensemble,sec-mt-rc-en-bref,existe,à déterminer,à déterminer,B3 L'emploi et les revenus
+marche_travail,_rupture_contrat,La mise en place : le code du travail de 1966,sec-mt-rc-mise-en-place,existe,à déterminer,à déterminer,B3 L'emploi et les revenus
+marche_travail,_rupture_contrat,Les grandes réformes,sec-mt-rc-reformes,existe,à déterminer,à déterminer,B3 L'emploi et les revenus
+marche_travail,_rupture_contrat,Le droit au 1^er^ janvier 2026,sec-mt-rc-etat-du-droit,existe,à déterminer,à déterminer,B3 L'emploi et les revenus
+marche_travail,_rupture_contrat,Le contrat à durée déterminée,sec-mt-rc-cdd,existe,à déterminer,à déterminer,B3 L'emploi et les revenus
+marche_travail,_rupture_contrat,La période d'essai,sec-mt-rc-essai,existe,à déterminer,à déterminer,B3 L'emploi et les revenus
+marche_travail,_rupture_contrat,Le licenciement pour motif économique et sa commission de contrôle,sec-mt-rc-licenciement-economique,existe,à déterminer,à déterminer,B3 L'emploi et les revenus
+marche_travail,_rupture_contrat,La sous-traitance de main-d'œuvre et les entreprises de prestation de services,sec-mt-rc-sous-traitance,existe,à déterminer,à déterminer,B3 L'emploi et les revenus
+marche_travail,_rupture_contrat,La longue période : contrats temporaires et licenciements,sec-mt-rc-longue-periode,existe,à déterminer,à déterminer,B3 L'emploi et les revenus
+marche_travail,_rupture_contrat,Ce qu'en dit l'économie,sec-mt-rc-economie,existe,à déterminer,à déterminer,B3 L'emploi et les revenus
+marche_travail,_politiques_emploi,Vue d'ensemble,sec-mt-pe-vue-ensemble,existe,à déterminer,à déterminer,B3 L'emploi et les revenus
+marche_travail,_politiques_emploi,"La mise en place, 1967-1988",sec-mt-pe-origines,existe,à déterminer,à déterminer,B3 L'emploi et les revenus
+marche_travail,_politiques_emploi,Les grandes réformes,sec-mt-pe-cadres,existe,à déterminer,à déterminer,B3 L'emploi et les revenus
+marche_travail,_politiques_emploi,Le bilan et l'état du droit,sec-mt-pe-bilan,existe,à déterminer,à déterminer,B3 L'emploi et les revenus
+marche_travail,_politiques_emploi,"Les programmes, par type de soutien",sec-mt-pe-programmes,existe,à déterminer,à déterminer,B3 L'emploi et les revenus
+marche_travail,_politiques_emploi,La longue période et les données,sec-mt-pe-donnees,existe,à déterminer,à déterminer,B3 L'emploi et les revenus
+marche_travail,_annexe_conventions,"Ce que l'annexe donne, et comment la lire",sec-mt-cc-annexe-lecture,existe,D.1,A2 Le compte d'exploitation,B3 L'emploi et les revenus
+marche_travail,_annexe_conventions,Le textile,sec-mt-cc-annexe-textile,existe,D.1,A2 Le compte d'exploitation,B3 L'emploi et les revenus
+marche_travail,_annexe_conventions,Le bâtiment et les travaux publics,sec-mt-cc-annexe-batiment,existe,D.1,A2 Le compte d'exploitation,B3 L'emploi et les revenus
+marche_travail,_annexe_conventions,Les assurances,sec-mt-cc-annexe-assurances,existe,D.1,A2 Le compte d'exploitation,B3 L'emploi et les revenus
+marche_travail,_annexe_repertoire,Ce que le répertoire compte,sec-mt-emp-annexe-contenu,existe,D.1,A2 Le compte d'exploitation,B3 L'emploi et les revenus
+marche_travail,_annexe_repertoire,Sa qualité,sec-mt-emp-annexe-qualite,existe,D.1,A2 Le compte d'exploitation,B3 L'emploi et les revenus
+prestations_sociales,index,Vue d'ensemble,sec-prest-vue-ensemble,existe,à déterminer,à déterminer,B5 La protection sociale et les services publics
+prestations_sociales,index,Les chapitres du volume,sec-prest-chapitres,existe,à déterminer,à déterminer,B5 La protection sociale et les services publics
+prestations_sociales,index,Comment lire le volume,sec-prest-guide-lecture,existe,à déterminer,à déterminer,B5 La protection sociale et les services publics
+prestations_sociales,index,Les organismes,sec-prest-organismes,existe,à déterminer,à déterminer,B5 La protection sociale et les services publics
+prestations_sociales,_matrice,La matrice,sec-matrice-lecture,existe,transversal,cadre institutionnel,B5 La protection sociale et les services publics
+prestations_sociales,_matrice,Entre les régimes et l'assistance,sec-matrice-frontiere,existe,transversal,cadre institutionnel,B5 La protection sociale et les services publics
+prestations_sociales,_matrice,Comment un droit s'ouvre,sec-prest-contributives,existe,transversal,cadre institutionnel,B5 La protection sociale et les services publics
+prestations_sociales,_prestations_familiales,Vue d'ensemble,sec-pf-vue-ensemble,existe,D.62,A4 Le compte de distribution secondaire du revenu,B5 La protection sociale et les services publics
+prestations_sociales,_prestations_familiales,"La mise en place, 1944-1961",sec-pf-loi-1960,existe,D.62,A4 Le compte de distribution secondaire du revenu,B5 La protection sociale et les services publics
+prestations_sociales,_prestations_familiales,"Les grandes réformes, 1976-1996",sec-pf-reformes,existe,D.62,A4 Le compte de distribution secondaire du revenu,B5 La protection sociale et les services publics
+prestations_sociales,_prestations_familiales,L'état du droit en 2026,sec-pf-etat-du-droit,existe,D.62,A4 Le compte de distribution secondaire du revenu,B5 La protection sociale et les services publics
+prestations_sociales,_prestations_familiales,La majoration pour salaire unique,sec-pf-salaire-unique,existe,D.62,A4 Le compte de distribution secondaire du revenu,B5 La protection sociale et les services publics
+prestations_sociales,_prestations_familiales,La contribution aux frais de crèche,sec-pf-creche,existe,D.62,A4 Le compte de distribution secondaire du revenu,B5 La protection sociale et les services publics
+prestations_sociales,_prestations_familiales,Le secteur public : les indemnités à caractère familial,sec-pf-secteur-public,existe,D.62,A4 Le compte de distribution secondaire du revenu,B5 La protection sociale et les services publics
+prestations_sociales,_prestations_familiales,Le secteur public : qui perçoit l'indemnité,sec-pf-public-principe,existe,D.62,A4 Le compte de distribution secondaire du revenu,B5 La protection sociale et les services publics
+prestations_sociales,_prestations_familiales,Longue période et données,sec-pf-longue-periode,à rédiger,D.62,A4 Le compte de distribution secondaire du revenu,B5 La protection sociale et les services publics
+prestations_sociales,_autres_risques,Vue d'ensemble,sec-ar-vue-ensemble,existe,D.62,A4 Le compte de distribution secondaire du revenu,B5 La protection sociale et les services publics
+prestations_sociales,_autres_risques,"La mise en place, 1960-1961",sec-ar-mise-en-place,existe,D.62,A4 Le compte de distribution secondaire du revenu,B5 La protection sociale et les services publics
+prestations_sociales,_autres_risques,"Les grandes réformes, 1995-2024",sec-ar-reformes,existe,D.62,A4 Le compte de distribution secondaire du revenu,B5 La protection sociale et les services publics
+prestations_sociales,_autres_risques,L'état du droit en 2026,sec-ar-etat-du-droit,existe,D.62,A4 Le compte de distribution secondaire du revenu,B5 La protection sociale et les services publics
+prestations_sociales,_autres_risques,Les indemnités de maladie et de maternité,sec-ar-maladie-maternite,existe,D.62,A4 Le compte de distribution secondaire du revenu,B5 La protection sociale et les services publics
+prestations_sociales,_autres_risques,Le décès,sec-ar-deces,existe,D.62,A4 Le compte de distribution secondaire du revenu,B5 La protection sociale et les services publics
+prestations_sociales,_autres_risques,Les accidents du travail et les maladies professionnelles,sec-ar-atmp,existe,D.62,A4 Le compte de distribution secondaire du revenu,B5 La protection sociale et les services publics
+prestations_sociales,_autres_risques,La protection sociale des travailleurs ayant cessé leur travail pour des raisons économiques ou technologiques,sec-perte-emploi,existe,D.62,A4 Le compte de distribution secondaire du revenu,B5 La protection sociale et les services publics
+prestations_sociales,_autres_risques,L'assurance maladie,sec-ar-assurance-maladie,existe,D.62,A4 Le compte de distribution secondaire du revenu,B5 La protection sociale et les services publics
+prestations_sociales,_autres_risques,"La longue période : ce que la caisse a versé, 1990-2004",sec-ar-longue-periode,existe,D.62,A4 Le compte de distribution secondaire du revenu,B5 La protection sociale et les services publics
+prestations_sociales,_soins,Vue d'ensemble : par quelle voie les soins sont-ils payés ?,sec-soins-vue,à rédiger,D.63,A5 Le compte de redistribution du revenu en nature,B5 La protection sociale et les services publics
+prestations_sociales,_soins,"La construction du droit aux soins, 1951-2004",sec-soins-histoire,existe,D.63,A5 Le compte de redistribution du revenu en nature,B5 La protection sociale et les services publics
+prestations_sociales,_soins,L'assurance maladie de base : de la loi de 2004 à sa mise en œuvre,sec-soins-base,existe,D.63,A5 Le compte de redistribution du revenu en nature,B5 La protection sociale et les services publics
+prestations_sociales,_soins,Trois modalités de prise en charge,sec-soins-modalites,existe,D.63,A5 Le compte de redistribution du revenu en nature,B5 La protection sociale et les services publics
+prestations_sociales,_soins,Le coût restant à la charge de l'assuré,sec-soins-cout,existe,D.63,A5 Le compte de redistribution du revenu en nature,B5 La protection sociale et les services publics
+prestations_sociales,_soins,Entre l'assurance maladie et l'assistance,sec-soins-frontiere,existe,D.63,A5 Le compte de redistribution du revenu en nature,B5 La protection sociale et les services publics
+prestations_sociales,_soins,Les soins ouverts par l'assistance,sec-soins-assistance,existe,D.63,A5 Le compte de redistribution du revenu en nature,B5 La protection sociale et les services publics
+prestations_sociales,_soins,Les couvertures complémentaires,sec-soins-complementaires,existe,D.63,A5 Le compte de redistribution du revenu en nature,B5 La protection sociale et les services publics
+prestations_sociales,_soins,Ce que rapportent la Banque mondiale et une thèse sur les primes et les cotisations,sec-soins-complementaires-etudes,existe,D.63,A5 Le compte de redistribution du revenu en nature,B5 La protection sociale et les services publics
+prestations_sociales,_soins,Les textes de l'assurance maladie,sec-soins-textes,existe,D.63,A5 Le compte de redistribution du revenu en nature,B5 La protection sociale et les services publics
+prestations_sociales,_non_contributives,Vue d'ensemble,sec-nc-vue-ensemble,à rédiger,D.62,A4 Le compte de distribution secondaire du revenu,B5 La protection sociale et les services publics
+prestations_sociales,_non_contributives,L'état du droit en 2026,sec-nc-etat-du-droit,existe,D.62,A4 Le compte de distribution secondaire du revenu,B5 La protection sociale et les services publics
+prestations_sociales,_non_contributives,"La mise en place, 1986-1988",sec-nc-mise-en-place,existe,D.62,A4 Le compte de distribution secondaire du revenu,B5 La protection sociale et les services publics
+prestations_sociales,_non_contributives,"Les grandes réformes, 1988-2025",sec-nc-reformes,existe,D.62,A4 Le compte de distribution secondaire du revenu,B5 La protection sociale et les services publics
+prestations_sociales,_non_contributives,Le transfert monétaire permanent,sec-nc-transfert,existe,D.62,A4 Le compte de distribution secondaire du revenu,B5 La protection sociale et les services publics
+prestations_sociales,_non_contributives,L'aide médicale,sec-nc-aide-medicale,existe,D.62,A4 Le compte de distribution secondaire du revenu,B5 La protection sociale et les services publics
+prestations_sociales,_non_contributives,Les allocations pour enfants,sec-af-non-contributive,existe,D.62,A4 Le compte de distribution secondaire du revenu,B5 La protection sociale et les services publics
+prestations_sociales,_non_contributives,Les aides ponctuelles,sec-nc-aides,existe,D.62,A4 Le compte de distribution secondaire du revenu,B5 La protection sociale et les services publics
+prestations_sociales,_non_contributives,Les dispositifs antérieurs à l'Amen social,sec-nc-anciens,existe,D.62,A4 Le compte de distribution secondaire du revenu,B5 La protection sociale et les services publics
+prestations_sociales,_non_contributives,Les aides voisines,sec-nc-adjacents,existe,D.62,A4 Le compte de distribution secondaire du revenu,B5 La protection sociale et les services publics
+prestations_sociales,_non_contributives,Ce que l'administration constate,sec-nc-administration,existe,D.62,A4 Le compte de distribution secondaire du revenu,B5 La protection sociale et les services publics
+prestations_sociales,_non_contributives,Selon les études,sec-nc-etudes,existe,D.62,A4 Le compte de distribution secondaire du revenu,B5 La protection sociale et les services publics
+prestations_sociales,_logement_social,Vue d'ensemble,sec-log-vue-ensemble,existe,à déterminer,à déterminer,B5 La protection sociale et les services publics
+prestations_sociales,_logement_social,"La mise en place, 1957-1977",sec-log-mise-en-place,existe,à déterminer,à déterminer,B5 La protection sociale et les services publics
+prestations_sociales,_logement_social,"Les grandes réformes, 1986-2026",sec-log-reformes,existe,à déterminer,à déterminer,B5 La protection sociale et les services publics
+prestations_sociales,_logement_social,L'état du droit en 2026,sec-log-etat-du-droit,existe,à déterminer,à déterminer,B5 La protection sociale et les services publics
+prestations_sociales,_logement_social,La résorption des logements rudimentaires et le Fonds national d'amélioration de l'habitat,sec-log-rudimentaire,existe,à déterminer,à déterminer,B5 La protection sociale et les services publics
+prestations_sociales,_logement_social,Le programme spécifique pour le logement social,sec-log-psls,existe,à déterminer,à déterminer,B5 La protection sociale et les services publics
+prestations_sociales,_logement_social,Le programme du premier logement,sec-log-premier-logement,existe,à déterminer,à déterminer,B5 La protection sociale et les services publics
+prestations_sociales,_logement_social,Les opérateurs publics et la location-vente,sec-log-operateurs,existe,à déterminer,à déterminer,B5 La protection sociale et les services publics
+prestations_sociales,_logement_social,Le régime spécial de 1999 : les logements anciens appartenant à des étrangers,sec-log-regime-1999,existe,à déterminer,à déterminer,B5 La protection sociale et les services publics
+prestations_sociales,_logement_social,Ce que pèse le fonds,sec-log-longue-periode,existe,à déterminer,à déterminer,B5 La protection sociale et les services publics
+prestations_sociales,_logement_social,Ce qu'en dit l'économie,sec-log-economie,existe,à déterminer,à déterminer,B5 La protection sociale et les services publics
+prestations_sociales,_annexe_circulaire_42,_annexe_circulaire_42,,ébauche,D.62,A4 Le compte de distribution secondaire du revenu,B5 La protection sociale et les services publics
+remunerations_publiques,index,Présentation et grille d'analyse,,ébauche,à déterminer,à déterminer,B3 L'emploi et les revenus
+remunerations_publiques,index,De la rémunération aux droits sociaux,sec-remu-droits-sociaux,ébauche,à déterminer,à déterminer,B3 L'emploi et les revenus
+remunerations_publiques,index,Le périmètre du secteur public,,ébauche,à déterminer,à déterminer,B3 L'emploi et les revenus
+remunerations_publiques,index,Les chapitres par régime de rémunération,,ébauche,à déterminer,à déterminer,B3 L'emploi et les revenus
+remunerations_publiques,_regime_indiciaire,Vue d'ensemble,sec-ri-vue-ensemble,existe,D.1,A2 Le compte d'exploitation,B3 L'emploi et les revenus
+remunerations_publiques,_regime_indiciaire,Champ d'application,sec-ri-champ,existe,D.1,A2 Le compte d'exploitation,B3 L'emploi et les revenus
+remunerations_publiques,_regime_indiciaire,La construction de la rémunération,sec-ri-construction,existe,D.1,A2 Le compte d'exploitation,B3 L'emploi et les revenus
+remunerations_publiques,_regime_indiciaire,Les prélèvements sur la rémunération,sec-ri-prelevements,existe,D.1,A2 Le compte d'exploitation,B3 L'emploi et les revenus
+remunerations_publiques,_regime_indiciaire,Repères historiques,sec-reperes-historiques-indiciaire,existe,D.1,A2 Le compte d'exploitation,B3 L'emploi et les revenus
+remunerations_publiques,_regime_indiciaire,Repères budgétaires et statistiques,sec-ri-reperes-budgetaires,existe,D.1,A2 Le compte d'exploitation,B3 L'emploi et les revenus
+remunerations_publiques,_regime_statutaire_autonome,Vue d'ensemble,sec-statutaire-vue-ensemble,existe,D.1,A2 Le compte d'exploitation,B3 L'emploi et les revenus
+remunerations_publiques,_regime_statutaire_autonome,"La mise en place, 1967-1972",sec-statutaire-mise-en-place,existe,D.1,A2 Le compte d'exploitation,B3 L'emploi et les revenus
+remunerations_publiques,_regime_statutaire_autonome,Les grandes réformes,sec-statutaire-reformes,existe,D.1,A2 Le compte d'exploitation,B3 L'emploi et les revenus
+remunerations_publiques,_regime_statutaire_autonome,L'état du droit au 1^er^ janvier 2026,sec-statutaire-etat-droit,existe,D.1,A2 Le compte d'exploitation,B3 L'emploi et les revenus
+remunerations_publiques,_regime_statutaire_autonome,Les magistrats,sec-statutaire-magistrats,existe,D.1,A2 Le compte d'exploitation,B3 L'emploi et les revenus
+remunerations_publiques,_regime_statutaire_autonome,Les militaires,sec-statutaire-militaires,existe,D.1,A2 Le compte d'exploitation,B3 L'emploi et les revenus
+remunerations_publiques,_regime_statutaire_autonome,Les forces de sécurité intérieure,sec-statutaire-fsi,existe,D.1,A2 Le compte d'exploitation,B3 L'emploi et les revenus
+remunerations_publiques,_regime_statutaire_autonome,Les agents des douanes,sec-statutaire-douanes,existe,D.1,A2 Le compte d'exploitation,B3 L'emploi et les revenus
+remunerations_publiques,_regime_statutaire_autonome,Les prélèvements sur la rémunération,sec-statutaire-prelevements,existe,D.1,A2 Le compte d'exploitation,B3 L'emploi et les revenus
+remunerations_publiques,_regime_statutaire_autonome,Repères budgétaires et statistiques,sec-statutaire-budget,existe,D.1,A2 Le compte d'exploitation,B3 L'emploi et les revenus
+remunerations_publiques,_regime_statutaire_autonome,Ce qu'en dit l'économie,sec-statutaire-economie,existe,D.1,A2 Le compte d'exploitation,B3 L'emploi et les revenus
+remunerations_publiques,_fonctions_politiques,Vue d'ensemble,sec-fp-vue-ensemble,existe,D.1,A2 Le compte d'exploitation,B3 L'emploi et les revenus
+remunerations_publiques,_fonctions_politiques,"L'indemnité parlementaire, 1960-2012",sec-fp-parlementaires,existe,D.1,A2 Le compte d'exploitation,B3 L'emploi et les revenus
+remunerations_publiques,_fonctions_politiques,Les gouverneurs,sec-fp-gouverneurs,existe,D.1,A2 Le compte d'exploitation,B3 L'emploi et les revenus
+remunerations_publiques,_fonctions_politiques,Les membres du gouvernement,sec-fp-gouvernement,existe,D.1,A2 Le compte d'exploitation,B3 L'emploi et les revenus
+remunerations_publiques,_fonctions_politiques,"Les anciens présidents de la République, Premiers ministres et présidents des chambres",sec-fp-anciens,existe,D.1,A2 Le compte d'exploitation,B3 L'emploi et les revenus
+remunerations_publiques,_fonctions_politiques,Les prélèvements,sec-fp-prelevements,existe,D.1,A2 Le compte d'exploitation,B3 L'emploi et les revenus
+remunerations_publiques,_regime_conventionnel,Vue d'ensemble,sec-conventionnel-vue-ensemble,existe,D.1,A2 Le compte d'exploitation,B3 L'emploi et les revenus
+remunerations_publiques,_regime_conventionnel,Champ d'application,sec-conventionnel-champ,existe,D.1,A2 Le compte d'exploitation,B3 L'emploi et les revenus
+remunerations_publiques,_regime_conventionnel,La construction de la rémunération,sec-conventionnel-remuneration,existe,D.1,A2 Le compte d'exploitation,B3 L'emploi et les revenus
+remunerations_publiques,_regime_conventionnel,Les dirigeants,sec-conventionnel-dirigeants,existe,D.1,A2 Le compte d'exploitation,B3 L'emploi et les revenus
+remunerations_publiques,_regime_conventionnel,Les augmentations générales des salaires,sec-augmentations-ep,existe,D.1,A2 Le compte d'exploitation,B3 L'emploi et les revenus
+remunerations_publiques,_regime_conventionnel,Les prélèvements sur la rémunération,sec-conventionnel-prelevements,existe,D.1,A2 Le compte d'exploitation,B3 L'emploi et les revenus
+remunerations_publiques,_regime_conventionnel,Repères historiques,sec-conventionnel-historique,existe,D.1,A2 Le compte d'exploitation,B3 L'emploi et les revenus
+remunerations_publiques,_regime_conventionnel,Repères budgétaires,sec-conventionnel-budget,existe,D.1,A2 Le compte d'exploitation,B3 L'emploi et les revenus
+remunerations_publiques,_regime_conventionnel,Les organismes de sécurité sociale : des statuts approuvés par décret,sec-caisses-sociales,existe,D.1,A2 Le compte d'exploitation,B3 L'emploi et les revenus
+remunerations_publiques,_regime_marche_controle,Vue d'ensemble,sec-marche-controle-vue-ensemble,existe,D.1,A2 Le compte d'exploitation,B3 L'emploi et les revenus
+remunerations_publiques,_regime_marche_controle,Champ d'application,sec-marche-controle-champ,existe,D.1,A2 Le compte d'exploitation,B3 L'emploi et les revenus
+remunerations_publiques,_regime_marche_controle,La construction de la rémunération,sec-marche-controle-remuneration,existe,D.1,A2 Le compte d'exploitation,B3 L'emploi et les revenus
+remunerations_publiques,_regime_marche_controle,Les dirigeants des banques publiques,sec-marche-controle-dirigeants,existe,D.1,A2 Le compte d'exploitation,B3 L'emploi et les revenus
+remunerations_publiques,_regime_marche_controle,Les prélèvements sur la rémunération,sec-marche-controle-prelevements,existe,D.1,A2 Le compte d'exploitation,B3 L'emploi et les revenus
+remunerations_publiques,_regime_marche_controle,Repères historiques,sec-marche-controle-historique,existe,D.1,A2 Le compte d'exploitation,B3 L'emploi et les revenus
+remunerations_publiques,_regime_marche_controle,Repères budgétaires et statistiques,sec-marche-controle-budget,existe,D.1,A2 Le compte d'exploitation,B3 L'emploi et les revenus
+retraites,index,Présentation générale,sec-presentation-generale,existe,à déterminer,à déterminer,B5 La protection sociale et les services publics
+retraites,index,Synthèse historique,sec-synthese-historique,existe,à déterminer,à déterminer,B5 La protection sociale et les services publics
+retraites,_secteur_public,Avant 1985 : le régime de la loi n° 59-18,sec-cnrps-loi-1959,existe,D.62,A4 Le compte de distribution secondaire du revenu,B5 La protection sociale et les services publics
+retraites,_secteur_public,Le régime de la loi n° 85-12,sec-cnrps-loi-1985,existe,D.62,A4 Le compte de distribution secondaire du revenu,B5 La protection sociale et les services publics
+retraites,_secteur_public,Les réformes du cœur du régime,sec-cnrps-reformes,existe,D.62,A4 Le compte de distribution secondaire du revenu,B5 La protection sociale et les services publics
+retraites,_secteur_public,L'évolution des autres éléments,sec-cnrps-autres-elements,existe,D.62,A4 Le compte de distribution secondaire du revenu,B5 La protection sociale et les services publics
+retraites,_secteur_public,Les régimes spéciaux,sec-cnrps-regimes-speciaux,existe,D.62,A4 Le compte de distribution secondaire du revenu,B5 La protection sociale et les services publics
+retraites,_secteur_public,Les magistrats de l'ordre judiciaire,sec-cnrps-magistrats,existe,D.62,A4 Le compte de distribution secondaire du revenu,B5 La protection sociale et les services publics
+retraites,_secteur_public,Les militaires,sec-cnrps-militaires,existe,D.62,A4 Le compte de distribution secondaire du revenu,B5 La protection sociale et les services publics
+retraites,_secteur_public,L'équilibre du régime,sec-cnrps-equilibre,existe,D.62,A4 Le compte de distribution secondaire du revenu,B5 La protection sociale et les services publics
+retraites,_secteur_public,Annexe : les notations du chapitre,sec-cnrps-notations,existe,D.62,A4 Le compte de distribution secondaire du revenu,B5 La protection sociale et les services publics
+retraites,_secteur_public,Annexe : les textes modificatifs de la loi n° 85-12,sec-cnrps-textes-modificatifs,existe,D.62,A4 Le compte de distribution secondaire du revenu,B5 La protection sociale et les services publics
+retraites,_secteur_prive,Le régime des salariés non agricoles,sec-rsna,existe,D.62,A4 Le compte de distribution secondaire du revenu,B5 La protection sociale et les services publics
+retraites,_secteur_prive,Les salariés agricoles,sec-agricoles,existe,D.62,A4 Le compte de distribution secondaire du revenu,B5 La protection sociale et les services publics
+retraites,_secteur_prive,Le régime complémentaire,sec-regime-complementaire,existe,D.62,A4 Le compte de distribution secondaire du revenu,B5 La protection sociale et les services publics
+retraites,_secteur_prive,Les non-salariés et les régimes particuliers,sec-regimes-particuliers,existe,D.62,A4 Le compte de distribution secondaire du revenu,B5 La protection sociale et les services publics
+retraites,_secteur_prive,"Vue d'ensemble : les deux secteurs, maillon par maillon",sec-vue-ensemble,à rédiger,D.62,A4 Le compte de distribution secondaire du revenu,B5 La protection sociale et les services publics
+retraites,_secteur_prive,Annexe : les notations du chapitre,sec-cnss-notations,existe,D.62,A4 Le compte de distribution secondaire du revenu,B5 La protection sociale et les services publics
+retraites,_secteur_prive,Annexe : les textes modificatifs du décret n° 74-499,sec-rsna-textes-modificatifs,existe,D.62,A4 Le compte de distribution secondaire du revenu,B5 La protection sociale et les services publics
+retraites,_regard_banque_mondiale,_regard_banque_mondiale,,ébauche,D.62,A4 Le compte de distribution secondaire du revenu,B5 La protection sociale et les services publics
+sante,index,index,,ébauche,à déterminer,à déterminer,B5 La protection sociale et les services publics
+sante,_histoire,"Des soins par catégories, autour de l'hôpital public (1951-1990)",,existe,institution,cadre institutionnel,B5 La protection sociale et les services publics
+sante,_histoire,"Organiser, équiper et former : la politique sanitaire par les plans (1962-1990)",,existe,institution,cadre institutionnel,B5 La protection sociale et les services publics
+sante,_histoire,Le cadre de 1991 et la réforme de l'assurance maladie (1991-2007),sec-sante-histoire-cadre1991,existe,institution,cadre institutionnel,B5 La protection sociale et les services publics
+sante,_histoire,La population couverte avant 2008,,existe,institution,cadre institutionnel,B5 La protection sociale et les services publics
+sante,_histoire,Ce que la couverture est devenue depuis 2007,,existe,institution,cadre institutionnel,B5 La protection sociale et les services publics
+sante,_couverture,Carte des chiffres : de quelle dépense parle-t-on ?,sec-sante-perimetres,existe,à déterminer,à déterminer,B5 La protection sociale et les services publics
+sante,_couverture,De la couverture à la dépense,sec-sante-transferts,existe,à déterminer,à déterminer,B5 La protection sociale et les services publics
+sante,_couverture,La longue période : bénéficiaires et dépense de soins,sec-soins-longue-periode,existe,D.63,A5 Le compte de redistribution du revenu en nature,B5 La protection sociale et les services publics
+sante,_couverture,"Les personnes protégées par l'assurance maladie selon une note du CRES, 2008-2013",sec-soins-beneficiaires-cnam,existe,à déterminer,à déterminer,B5 La protection sociale et les services publics
+sante,_couverture,Les comptes de la santé et les paiements directs,sec-soins-paiements-directs,existe,à déterminer,à déterminer,B5 La protection sociale et les services publics
+sante,_couverture,Les comptes de la santé du ministère : 2004 et 2012-2014,sec-soins-comptes-nationaux,existe,à déterminer,à déterminer,B5 La protection sociale et les services publics
+sante,_couverture,Les personnes inscrites dans chaque filière,sec-soins-effectifs-filieres,existe,à déterminer,à déterminer,B5 La protection sociale et les services publics
+sante,_couverture,Indicateurs internationaux : services et protection financière,sec-soins-indicateurs-oms,existe,à déterminer,à déterminer,B5 La protection sociale et les services publics
+sante,_couverture,Ce que disent les études sur les effets de la réforme de 2004,sec-soins-etudes-reforme,existe,à déterminer,à déterminer,B5 La protection sociale et les services publics
+sante,_hopital,Vue d'ensemble : de quel hôpital parle-t-on ?,sec-hopital-vue,existe,P.3,A6 Le compte d'utilisation du revenu,B5 La protection sociale et les services publics
+sante,_hopital,La mise en place du cadre de 1991,sec-hopital-1991,existe,P.3,A6 Le compte d'utilisation du revenu,B5 La protection sociale et les services publics
+sante,_hopital,Qui décide et qui fait fonctionner l'établissement ?,sec-hopital-gestion,existe,P.3,A6 Le compte d'utilisation du revenu,B5 La protection sociale et les services publics
+sante,_hopital,D'où vient l'argent et à quoi sert-il ?,sec-hopital-financement,existe,P.3,A6 Le compte d'utilisation du revenu,B5 La protection sociale et les services publics
+sante,_hopital,Quels tarifs l'hôpital public facture-t-il au malade payant ?,sec-hopital-tarifs-malades-payants,existe,P.3,A6 Le compte d'utilisation du revenu,B5 La protection sociale et les services publics
+sante,_hopital,Des postes de soins identifiés par la CNAM,sec-hopital-facturation-cnam,existe,P.3,A6 Le compte d'utilisation du revenu,B5 La protection sociale et les services publics
+sante,_hopital,Comment les personnels sont-ils rémunérés ?,sec-hopital-remuneration,existe,P.3,A6 Le compte d'utilisation du revenu,B5 La protection sociale et les services publics
+sante,_medecine_ville,"Vue d'ensemble : qui consulte, qui paie ?",sec-ville-vue,existe,D.63,A5 Le compte de redistribution du revenu en nature,B5 La protection sociale et les services publics
+sante,_medecine_ville,Combien de médecins sont conventionnés ?,sec-ville-medecins-conventionnes,existe,D.63,A5 Le compte de redistribution du revenu en nature,B5 La protection sociale et les services publics
+sante,_medecine_ville,La mise en place des rapports avec l'assurance maladie,sec-ville-histoire,existe,D.63,A5 Le compte de redistribution du revenu en nature,B5 La protection sociale et les services publics
+sante,_medecine_ville,Le médecin de famille et l'orientation des soins,sec-ville-medecin-famille,existe,D.63,A5 Le compte de redistribution du revenu en nature,B5 La protection sociale et les services publics
+sante,_medecine_ville,"Les honoraires, la caisse et la part du malade",sec-ville-paiement,existe,D.63,A5 Le compte de redistribution du revenu en nature,B5 La protection sociale et les services publics
+sante,_medecine_ville,La longue période : consultations et financement,sec-ville-longue-periode,existe,D.63,A5 Le compte de redistribution du revenu en nature,B5 La protection sociale et les services publics
+synthese,index,index,,ébauche,à déterminer,à déterminer,B7 Les finances publiques et la vue d'ensemble
+synthese,_apu,_apu,,ébauche,transversal,cadre institutionnel,B7 Les finances publiques et la vue d'ensemble
+synthese,_prelevements,_prelevements,,ébauche,transversal,cadre institutionnel,B7 Les finances publiques et la vue d'ensemble
+synthese,_depense_fonction,_depense_fonction,,ébauche,transversal,cadre institutionnel,B7 Les finances publiques et la vue d'ensemble
+synthese,_redistribution,_redistribution,,ébauche,transversal,cadre institutionnel,B7 Les finances publiques et la vue d'ensemble
+synthese,_soldes_dette,_soldes_dette,,ébauche,transversal,cadre institutionnel,B7 Les finances publiques et la vue d'ensemble
+synthese,_recoupements,_recoupements,,ébauche,transversal,cadre institutionnel,B7 Les finances publiques et la vue d'ensemble
+synthese,_etat_art,_etat_art,,ébauche,transversal,cadre institutionnel,B7 Les finances publiques et la vue d'ensemble
+transport,index,La carte des dispositifs,sec-transport-carte,existe,à déterminer,à déterminer,B2 La production
+transport,index,Les dates clés,sec-transport-frise,existe,à déterminer,à déterminer,B2 La production
+transport,index,Ce que pèse l'ensemble,sec-transport-poids,existe,à déterminer,à déterminer,B2 La production
+transport,index,Le plan du livre,sec-transport-plan,existe,à déterminer,à déterminer,B2 La production
+transport,index,Les conventions de lecture,sec-transport-conventions,existe,à déterminer,à déterminer,B2 La production
+transport,index,Le voisinage,sec-transport-voisinage,existe,à déterminer,à déterminer,B2 La production
+transport,_institution,"Deux ministères, deux filiations",sec-transport-ministeres,existe,institution,cadre institutionnel,B2 La production
+transport,_institution,Les programmes budgétaires,sec-transport-programmes,existe,institution,cadre institutionnel,B2 La production
+transport,_institution,"Les agences et offices, et leur tutelle",sec-transport-agences,existe,institution,cadre institutionnel,B2 La production
+transport,_institution,Qui décide quoi,sec-transport-decision,existe,institution,cadre institutionnel,B2 La production
+transport,_depense,"Deux missions, un même budget",sec-transport-depense-missions,existe,à déterminer,à déterminer,B2 La production
+transport,_depense,La mission Transport : presque tout en subventions,sec-transport-depense-transport,existe,D.3,A3 Le compte d'affectation des revenus primaires,B2 La production
+transport,_depense,La mission Équipement et Habitat : l'investissement routier,sec-transport-depense-equipement,existe,P.51,A7 Le compte de capital,B2 La production
+transport,_depense,Les transferts aux opérateurs,sec-transport-depense-transferts,existe,à déterminer,à déterminer,B2 La production
+transport,_depense,La part de l'investissement,sec-transport-depense-investissement,existe,P.51,A7 Le compte de capital,B2 La production
+transport,_depense,Le rapport au cadre des finances publiques,sec-transport-depense-finances,existe,à déterminer,à déterminer,B2 La production
+transport,_depense,Les crédits du ministère avant le budget par objectifs (2011-2013),sec-transport-depense-avant-gbo,existe,à déterminer,à déterminer,B2 La production
+transport,_depense,Ce qui n'est pas établi ici,sec-transport-depense-trous,existe,à déterminer,à déterminer,B2 La production
+transport,_infrastructure,Le domaine public routier et son régime de concession,,existe,P.51,A7 Le compte de capital,B2 La production
+transport,_infrastructure,Le programme autoroutier avant la concession de 1995,,existe,P.51,A7 Le compte de capital,B2 La production
+transport,_infrastructure,Le fonds de développement des autoroutes (1999-2018),,existe,P.51,A7 Le compte de capital,B2 La production
+transport,_infrastructure,"La route hors autoroute, financée au budget",,existe,P.51,A7 Le compte de capital,B2 La production
+transport,_ferroviaire,L'opérateur historique et son cahier des charges,,existe,branche:transport,A1 Le compte de production (par branche),B2 La production
+transport,_ferroviaire,Le contrat-programme de la SNCFT,,existe,branche:transport,A1 Le compte de production (par branche),B2 La production
+transport,_ferroviaire,Le réseau ferroviaire rapide de Tunis,,existe,branche:transport,A1 Le compte de production (par branche),B2 La production
+transport,_urbain,Avant 1985 : deux régimes séparés,sec-transport-urbain-avant,existe,branche:transport,A1 Le compte de production (par branche),B2 La production
+transport,_urbain,1985 : un régime d'autorisation centralisé au ministre,sec-transport-urbain-1985,existe,branche:transport,A1 Le compte de production (par branche),B2 La production
+transport,_urbain,1993 et 1996 : la décentralisation de l'autorisation,sec-transport-urbain-decentralisation,existe,branche:transport,A1 Le compte de production (par branche),B2 La production
+transport,_urbain,2004 : les autorités régionales organisatrices,sec-transport-urbain-2004,existe,branche:transport,A1 Le compte de production (par branche),B2 La production
+transport,_urbain,Les contrats-programmes des sociétés,sec-transport-urbain-contrats,existe,branche:transport,A1 Le compte de production (par branche),B2 La production
+transport,_urbain,"Le transport local, compétence des collectivités",sec-transport-urbain-local,existe,branche:transport,A1 Le compte de production (par branche),B2 La production
+transport,_aerien_maritime,Les subventions aux liaisons de service public,sec-transport-am-liaisons,existe,branche:transport,A1 Le compte de production (par branche),B2 La production
+transport,_aerien_maritime,Les contrats qui lient l'État aux opérateurs,sec-transport-am-contrats,existe,branche:transport,A1 Le compte de production (par branche),B2 La production
+transport,_aerien_maritime,"Les budgets de fonctionnement et d'investissement, 2021-2026",sec-transport-am-budgets,existe,branche:transport,A1 Le compte de production (par branche),B2 La production
+transport,_rapports,Les contrôles de la Cour des comptes,sec-transport-rapports-cdc,existe,transversal,cadre institutionnel,B2 La production
+transport,_rapports,Le Livre blanc de la Banque mondiale (2016),sec-transport-rapports-bm,existe,transversal,cadre institutionnel,B2 La production
+transport,_rapports,Un diagnostic voisin : l'Infrastructure Diagnostic (2019),sec-transport-rapports-infra-2019,existe,transversal,cadre institutionnel,B2 La production
+a-propos,,Ce qu'est l'ouvrage,,ébauche,transversal,cadre institutionnel,
+a-propos,,À qui il s'adresse,,ébauche,transversal,cadre institutionnel,
+a-propos,,Comment réagir,,ébauche,transversal,cadre institutionnel,
+a-propos,,Ce que nous cherchons,,ébauche,transversal,cadre institutionnel,
+a-propos,,Remerciements,,ébauche,transversal,cadre institutionnel,
+a-propos,,Licence et citation,,ébauche,transversal,cadre institutionnel,
+a-propos,,Comment il est produit,,ébauche,transversal,cadre institutionnel,
+annexe-budget-etat,,Pourquoi cette annexe,sec-bud-pourquoi,ébauche,transversal,cadre institutionnel,
+annexe-budget-etat,,Ce que recouvre « le budget »,sec-bud-definitions,ébauche,transversal,cadre institutionnel,
+annexe-budget-etat,,Le titre I voté n'est pas le total de l'État,,ébauche,transversal,cadre institutionnel,
+annexe-budget-etat,,La série longue des dépenses de l'État,sec-bud-serie-longue,ébauche,transversal,cadre institutionnel,
+annexe-budget-etat,,La composition des recettes fiscales,sec-bud-recettes,ébauche,transversal,cadre institutionnel,
+annexe-budget-etat,,Désagréger les dépenses : deux vues,sec-bud-desagregation,ébauche,transversal,cadre institutionnel,
+annexe-budget-etat,,"Qui dépense : les missions, depuis 2020",sec-bud-missions,ébauche,transversal,cadre institutionnel,
+annexe-budget-etat,,Du voté au réalisé : l'écart d'exécution,sec-bud-execution,ébauche,transversal,cadre institutionnel,
+annexe-budget-etat,,"Le solde, la dette et son service",sec-bud-solde,ébauche,transversal,cadre institutionnel,
+annexe-budget-etat,,Le pivot du milieu des années 1980,sec-bud-pivot-1986,ébauche,transversal,cadre institutionnel,
+annexe-budget-etat,,Sources et périmètres,sec-bud-sources,ébauche,transversal,cadre institutionnel,
+annexe-budget-etat,,Comment lire une part du budget,sec-bud-lire,ébauche,transversal,cadre institutionnel,
+annexe-comptes-nation,,Pourquoi cette annexe,sec-cn-pourquoi,existe,transversal,cadre institutionnel,
+annexe-comptes-nation,,Les secteurs institutionnels,sec-cn-secteurs,existe,transversal,cadre institutionnel,
+annexe-comptes-nation,,La séquence des comptes,sec-cn-sequence,existe,transversal,cadre institutionnel,
+annexe-comptes-nation,,"Les tableaux de synthèse des comptes : TRE, TCEI et TOF",,existe,transversal,cadre institutionnel,
+annexe-comptes-nation,,Le compte financier par secteur et l'équilibre des produits,sec-cn-tof-tre,existe,transversal,cadre institutionnel,
+annexe-comptes-nation,,"Les comptes, désagrégés par secteur",sec-cn-comptes-secteurs,existe,transversal,cadre institutionnel,
+annexe-comptes-nation,,Les comptes des administrations face au budget de l'État,sec-cn-recoupements,existe,transversal,cadre institutionnel,
+annexe-comptes-nation,,Les trois approches du PIB,sec-cn-approches,existe,transversal,cadre institutionnel,
+annexe-comptes-nation,,Deux présentations de la valeur ajoutée qui ne s'additionnent pas,,existe,transversal,cadre institutionnel,
+annexe-comptes-nation,,Les grandeurs citables,sec-cn-agregats,existe,transversal,cadre institutionnel,
+annexe-comptes-nation,,Quel volume touche quel compte,sec-cn-concordance,existe,transversal,cadre institutionnel,
+annexe-comptes-nation,,Ce que les comptes ne disent pas,sec-cn-limites,existe,transversal,cadre institutionnel,
+annexe-comptes-nation,,Références {.unnumbered},,existe,transversal,cadre institutionnel,
+annexe-dette-publique,,Pourquoi cette annexe,sec-dette-pourquoi,ébauche,transversal,cadre institutionnel,
+annexe-dette-publique,,Ce que recouvre « la dette publique »,sec-dette-perimetres,ébauche,transversal,cadre institutionnel,
+annexe-dette-publique,,Quatre « dettes extérieures » à ne pas confondre,,ébauche,transversal,cadre institutionnel,
+annexe-dette-publique,,"Les ressources d'emprunt : trésorerie, pas recette",sec-dette-tresorerie,ébauche,transversal,cadre institutionnel,
+annexe-dette-publique,,Le service de la dette dans le budget,sec-dette-service,ébauche,transversal,cadre institutionnel,
+annexe-dette-publique,,"La dette extérieure, prêteur par prêteur",sec-dette-exterieure,ébauche,transversal,cadre institutionnel,
+annexe-dette-publique,,"La dette intérieure, titre par titre",sec-dette-interieure,ébauche,transversal,cadre institutionnel,
+annexe-dette-publique,,Les plafonds votés en loi de finances,sec-dette-plafonds,ébauche,transversal,cadre institutionnel,
+annexe-dette-publique,,Les dettes croisées entre l'État et ses entreprises,sec-dette-ep-croisees,ébauche,transversal,cadre institutionnel,
+annexe-dette-publique,,Sources et périmètres,sec-dette-sources,ébauche,transversal,cadre institutionnel,
+annexe-dette-publique,,"La dette rapportée au PIB, et ce qui la fait bouger",sec-dette-dynamique,ébauche,transversal,cadre institutionnel,
+annexe-dette-publique,,Ce qu'en dit l'économie : la soutenabilité,sec-dette-soutenabilite,ébauche,transversal,cadre institutionnel,
+annexe-dette-publique,,Comment lire une grandeur de dette,sec-dette-lire,ébauche,transversal,cadre institutionnel,
+annexe-pib,,Pourquoi cette annexe,sec-pib-pourquoi,existe,transversal,cadre institutionnel,
+annexe-pib,,"Ce qu'est une base, et ce qu'elle n'est pas",sec-pib-definition,existe,transversal,cadre institutionnel,
+annexe-pib,,La « base 2010 » n'est pas une base du PIB aux prix courants,,existe,transversal,cadre institutionnel,
+annexe-pib,,Les bases successives,sec-pib-bases,existe,transversal,cadre institutionnel,
+annexe-pib,,Les écarts de niveau entre bases,sec-pib-ecarts,existe,transversal,cadre institutionnel,
+annexe-pib,,La rétropolation : jusqu'où chaque base a été recalculée,sec-pib-retropolation,existe,transversal,cadre institutionnel,
+annexe-pib,,Quel PIB dans quelle source,sec-pib-sources,existe,transversal,cadre institutionnel,
+annexe-pib,,Comment l'ouvrage signale une rupture de série,sec-pib-ruptures,existe,transversal,cadre institutionnel,
+annexe-pib,,Comment lire une part du PIB,sec-pib-lire,existe,transversal,cadre institutionnel,
+annexe-pib,,Références {.unnumbered},,existe,transversal,cadre institutionnel,
+annexe-sources,,Pourquoi cette annexe,sec-sources-pourquoi,existe,transversal,cadre institutionnel,
+annexe-sources,,Comment lire une entrée,sec-sources-lire,existe,transversal,cadre institutionnel,
+annexe-sources,,Le registre,sec-sources-registre,existe,transversal,cadre institutionnel,
+comment-constitue,,Un travail fait avec l'intelligence artificielle,,existe,transversal,cadre institutionnel,
+comment-constitue,,Les sources,,existe,transversal,cadre institutionnel,
+comment-constitue,,L'entrepôt de données,,existe,transversal,cadre institutionnel,
+comment-constitue,,Les tableaux de paramètres,,existe,transversal,cadre institutionnel,
+comment-lire,,Le rangement des volumes,,existe,transversal,cadre institutionnel,
+comment-lire,,Si vous êtes juriste,,existe,transversal,cadre institutionnel,
+comment-lire,,Les règles de lecture,,existe,transversal,cadre institutionnel,
+compte-apu,,L'année de référence,sec-capu-annee,existe,transversal,cadre institutionnel,
+compte-apu,,Les opérations des administrations publiques,sec-capu-operations,existe,transversal,cadre institutionnel,
+compte-apu,,Qui verse à qui,sec-capu-flux,existe,transversal,cadre institutionnel,
+compte-apu,,Qui verse à qui,sec-capu-qui-verse,existe,transversal,cadre institutionnel,
+compte-apu,,Contrôles,sec-capu-controles,existe,transversal,cadre institutionnel,
+compte-apu,,Comprendre les résidus de 2023,sec-capu-residus,existe,transversal,cadre institutionnel,
+compte-apu,,"Les écarts de toutes les opérations, année par année",,existe,transversal,cadre institutionnel,
+compte-apu,,Références {.unnumbered},,existe,transversal,cadre institutionnel,
+compte-secteurs,,Le compte financier par secteur,sec-csec-financier,existe,transversal,cadre institutionnel,
+compte-secteurs,,Références {.unnumbered},,existe,transversal,cadre institutionnel,
+correspondance-comptes,,Les opérations qu'aucun volume ne traite,sec-cc-vides,existe,transversal,cadre institutionnel,
+correspondance-comptes,,"La matrice, compte par compte",sec-cc-matrice,existe,transversal,cadre institutionnel,
+correspondance-instruments,,Droit fiscal et douanier,,existe,transversal,cadre institutionnel,
+correspondance-instruments,,Droit de la sécurité sociale,,existe,transversal,cadre institutionnel,
+correspondance-instruments,,Droit de l'assistance,,existe,transversal,cadre institutionnel,
+correspondance-instruments,,Droit du travail et de la fonction publique,,existe,transversal,cadre institutionnel,
+correspondance-instruments,,"Finances publiques, entreprises publiques et collectivités",,existe,transversal,cadre institutionnel,
+correspondance-instruments,,Enseignement et formation,,existe,transversal,cadre institutionnel,
+correspondance-instruments,,Prix administrés,,existe,transversal,cadre institutionnel,
+index-institutions,,Caisse nationale de sécurité sociale (CNSS),,existe,transversal,cadre institutionnel,
+index-institutions,,Caisse nationale de retraite et de prévoyance sociale (CNRPS),,existe,transversal,cadre institutionnel,
+index-institutions,,Caisse nationale d'assurance maladie (CNAM),,existe,transversal,cadre institutionnel,
+index-institutions,,Caisse générale de compensation (CGC),,existe,transversal,cadre institutionnel,
+index-institutions,,Caisse des prêts et de soutien des collectivités locales (CPSCL),,existe,transversal,cadre institutionnel,
+index-institutions,,Fonds national de l'emploi (FNE),,existe,transversal,cadre institutionnel,
+index-institutions,,Société tunisienne de l'électricité et du gaz (STEG),,existe,transversal,cadre institutionnel,
+index-institutions,,Entreprise tunisienne d'activités pétrolières (ETAP),,existe,transversal,cadre institutionnel,
+index-institutions,,Société tunisienne des industries de raffinage (STIR),,existe,transversal,cadre institutionnel,
+index-institutions,,Société nationale des chemins de fer tunisiens (SNCFT),,existe,transversal,cadre institutionnel,
+index-institutions,,Tunisair,,existe,transversal,cadre institutionnel,
+index-institutions,,Office national de l'assainissement (ONAS),,existe,transversal,cadre institutionnel,
+index,,Les parties,,ébauche,transversal,cadre institutionnel,
+index,,Contribuer,,ébauche,transversal,cadre institutionnel,
+principes-structure,,L'ouvrage,,ébauche,transversal,cadre institutionnel,
+principes-structure,,Les neuf principes,sec-ps-principes,ébauche,transversal,cadre institutionnel,
+principes-structure,,Trois angles à ajouter,sec-ps-angles,ébauche,transversal,cadre institutionnel,
+principes-structure,,La structure : neuf parties,sec-ps-structure,ébauche,transversal,cadre institutionnel,
+principes-structure,,Comment un chapitre est écrit,sec-ps-chapitre,ébauche,transversal,cadre institutionnel,
+principes-structure,,Les retours que nous attendons,sec-ps-retours,ébauche,transversal,cadre institutionnel,
