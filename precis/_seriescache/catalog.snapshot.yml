@@ -1442,42 +1442,50 @@
   - data/raw/finances_locales/dgct_portail/Dotation.xls
   - data/raw/finances_locales/dgct_portail/Les-dépenses-ordinaires.xls
   - data/raw/finances_locales/dgct_portail/Ratios-financiers.xls
+  - data/raw/finances_locales/dgct_portail/Budget2021_details_depenses.xlsx
   output: data/processed/finances_locales/communes_agregats_2008_2023.csv
   unite: millions de dinars courants (MD) ; ratios en fraction
   perimetre: 'communes (budgets, comptabilité publique, réalisations) ; quotes-parts
     FCCL et dotation exceptionnelle aussi pour les conseils régionaux. 2008-2019 :
     agrégats publiés par la DGCT (communes_dgct_agregats_2008_2019.csv) ; 2018-2023
     : somme des 350 budgets par commune ; parties du titre 1 en 2017-2020 selon la
-    HIFL (350 communes). Colonnes source, statut, retenu.'
+    HIFL (350 communes) ; dépenses 2021 par partie, section et titre selon le classeur
+    détaillé Budget2021_details_depenses.xlsx (source dgct_budget2021_details). Colonnes
+    source, statut, retenu.'
   caveats: 'DEUX SOURCES, GARDÉES TOUTES DEUX SUR 2018-2019 (colonne `retenu` : DGCT
     jusqu''en 2019, somme des communes ensuite). Les recettes concordent à l''arrondi
     près ; LES DÉPENSES NON (titre 1 : +1,7 MD en 2018, +7,2 MD en 2019 ; titre 2
-    : +0,6 et +5,9), écart non expliqué, figé dans les tests. 2021 = SITUATION AU
-    25/12/2021, non définitive (droits et redevances 54,8 MD contre 90-114 les autres
-    années). 2023 = PROVISOIRE (arrêté au 10/01/2024). IMPÔTS UN À UN (TIB, TNB, TCL,
-    taxe hôtelière, marchés) VIDES EN 2020-2021 : fichiers par commune sans détail
-    d''article ; rien n''est interpolé. Le FCCL est supprimé au 1er janvier 2018 mais
-    la DGCT garde l''intitulé « subventions annuelles » en 2018-2019 : rupture de
-    nature ; réserve à 18 % jusqu''en 2017, 15 % ensuite. Les recettes du titre 2
-    comprennent l''épargne et les excédents reportés du titre 1 : T1 + T2 n''est pas
-    un total consolidé. RÉMUNÉRATIONS, MOYENS DES SERVICES, INTERVENTIONS 2020 = HIFL,
-    rapport annuel 2020, p. 51 et annexe 12 p. 179 (source hifl_rapport_2020, niveau
-    hifl_2020 ; détail et pages dans communes_hifl_depenses_2017_2020.csv), absents
-    en 2021 ; interventions 2019 : 92 MD à la DGCT contre 72,4 à la HIFL, rupture
-    non tranchée. Recettes fiscales = catégories 1 et 2 (nomenclature 2018-2022),
-    qui exclut les catégories 3-4 rangées parmi les recettes fiscales en 2023. PÉRIMÈTRE
-    NON CONSTANT : 264 communes en 2012, 350 à partir de 2016-2017. Montants courants.'
+    : +0,6 et +5,9), écart non expliqué, figé dans les tests. 2021 : RECETTES = SITUATION
+    AU 25/12/2021, non définitive (droits et redevances 54,8 MD contre 90-114 les
+    autres années) ; DÉPENSES RETENUES = classeur détaillé Budget2021_details_depenses.xlsx
+    (source dgct_budget2021_details, statut posterieur_au_2021-12-25 : réalisations
+    jamais inférieures à la situation au 25/12, + 70,2 MD sur la gestion ; clôture
+    non établie), la situation au 25/12 gardée non retenue. 2023 = PROVISOIRE (arrêté
+    au 10/01/2024). IMPÔTS UN À UN (TIB, TNB, TCL, taxe hôtelière, marchés) VIDES
+    EN 2020-2021 : fichiers par commune sans détail d''article ; rien n''est interpolé.
+    Le FCCL est supprimé au 1er janvier 2018 mais la DGCT garde l''intitulé « subventions
+    annuelles » en 2018-2019 : rupture de nature ; réserve à 18 % jusqu''en 2017,
+    15 % ensuite. Les recettes du titre 2 comprennent l''épargne et les excédents
+    reportés du titre 1 : T1 + T2 n''est pas un total consolidé. RÉMUNÉRATIONS, MOYENS
+    DES SERVICES, INTERVENTIONS 2020 = HIFL, rapport annuel 2020, p. 51 et annexe
+    12 p. 179 (source hifl_rapport_2020, niveau hifl_2020 ; détail et pages dans communes_hifl_depenses_2017_2020.csv)
+    ; 2021 selon le classeur détaillé (672,0 ; 297,7 ; 66,0 MD) ; interventions 2019
+    : 92 MD à la DGCT contre 72,4 à la HIFL, rupture non tranchée. Recettes fiscales
+    = catégories 1 et 2 (nomenclature 2018-2022), qui exclut les catégories 3-4 rangées
+    parmi les recettes fiscales en 2023. PÉRIMÈTRE NON CONSTANT : 264 communes en
+    2012, 350 à partir de 2016-2017. Montants courants.'
   titre_ar: 'مالية البلديات: تنفيذ الميزانية والجباية المحلية والمال المشترك للجماعات
     المحلية والاعتمادات، 2008-2023'
   unite_ar: بملايين الدنانير الجارية؛ النسب كسور
   perimetre_ar: البلديات (ميزانيات، محاسبة عمومية، إنجازات)؛ 2008-2019 مجاميع منشورة
     من الإدارة العامة للجماعات المحلية، و2018-2023 مجموع ميزانيات البلديات الـ350
   caveats_ar: مصدران محفوظان معاً على 2018-2019 (عمود retenu). تتطابق الموارد بعد
-    التقريب ولا تتطابق النفقات (فارق غير مفسَّر). 2021 وضعية في 25/12/2021 غير نهائية،
-    و2023 وقتية (10/01/2024). الأداءات واحداً واحداً فارغة في 2020-2021 ولا يُستكمل
-    شيء. أُلغي المال المشترك في 1 جانفي 2018 مع بقاء التسمية في 2018-2019. موارد العنوان
-    الثاني تشمل الفوائض المنقولة من العنوان الأول. عدد البلديات غير ثابت (264 سنة
-    2012 ثمّ 350). مبالغ جارية.
+    التقريب ولا تتطابق النفقات (فارق غير مفسَّر). موارد 2021 وضعية في 25/12/2021 غير
+    نهائية، ونفقات 2021 المعتمدة من الملفّ المفصّل Budget2021_details_depenses.xlsx
+    (إنجازات لاحقة لـ25/12/2021، وختم السنة غير ثابت)، و2023 وقتية (10/01/2024). الأداءات
+    واحداً واحداً فارغة في 2020-2021 ولا يُستكمل شيء. أُلغي المال المشترك في 1 جانفي
+    2018 مع بقاء التسمية في 2018-2019. موارد العنوان الثاني تشمل الفوائض المنقولة
+    من العنوان الأول. عدد البلديات غير ثابت (264 سنة 2012 ثمّ 350). مبالغ جارية.
   fiche: sources/finances-locales-communes.md
 - id: finances-locales-cpscl
   titre: 'CPSCL : dotations de l''État, subventions et prêts aux collectivités locales,
