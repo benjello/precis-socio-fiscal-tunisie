@@ -21,6 +21,11 @@ _r = list(csv.DictReader(open("compte-apu-reconstruit.csv", encoding="utf-8")))
 _f = list(csv.DictReader(open("compte-apu-flux.csv", encoding="utf-8")))
 _c = list(csv.DictReader(open("compte-apu-controles.csv", encoding="utf-8")))
 AN, ED = _r[0]["annee"], _r[0]["edition"]
+_ans_ins = sorted({int(l["annee"]) for l in csv.DictReader(open("compte-couverture-annees.csv", encoding="utf-8"))})
+AN0, AN1 = _ans_ins[0], _ans_ins[-1]  # années du compte en base 2015
+ED0 = next(l["edition"] for l in csv.DictReader(open("compte-couverture-annees.csv", encoding="utf-8")) if int(l["annee"]) == AN0)
+_pa = list(csv.DictReader(open("compte-couverture-postes-annees.csv", encoding="utf-8")))
+PA0 = min(int(l["annee"]) for l in _pa)  # première année chiffrée d'un poste de la sécurité sociale
 def n(v):
     return "" if v in ("", None) else f"{float(v):,.1f}".replace(",", " ").replace(".", ",")
 ```
@@ -45,7 +50,7 @@ print(f"L'année de référence est **{AN}** (édition {ED} des comptes de la na
 ```
 
 ::: {.callout-warning}
-2020 est l'année de la pandémie de COVID-19 : recettes, transferts et prestations s'y écartent de leur tendance. C'est pourquoi la couverture est aussi donnée année par année, de 2015 à 2023, ci-dessous.
+2020 est l'année de la pandémie de COVID-19 : recettes, transferts et prestations s'y écartent de leur tendance. C'est pourquoi la couverture est aussi donnée année par année, de `{python} AN0` à `{python} AN1`, ci-dessous.
 :::
 
 Chaque montant de l'ouvrage porte la nature de sa source : série statistique, états financiers, rapport d'activité ou rapport du ministère (colonne « Source » du tableau « qui verse à qui »).
@@ -93,10 +98,36 @@ Les administrations publiques (APU) sont mesurées comme la somme de leurs trois
 #| echo: false
 #| output: asis
 _a, _b = _d[(str(AN), "S13")], _d[(_ans[-1], "S13")]
+_fin = {s: max(int(l["annee"]) for l in _pa if l["secteur"] == s and int(l["postes_chiffres"]) > 0) for s in ("S1313", "S1314")}
 print(f"La part du montant couverte des administrations publiques passe de {n(_a['part_montant_couverte_pct'])} % en {AN} à "
-      f"{n(_b['part_montant_couverte_pct'])} % en {_ans[-1]} : les comptes des caisses de sécurité sociale ne sont pas encore "
-      "disponibles pour les dernières années, et leurs opérations y restent sans montant.")
+      f"{n(_b['part_montant_couverte_pct'])} % en {_ans[-1]} : les postes de la sécurité sociale "
+      f"s'arrêtent en {_fin['S1314']}, ceux des collectivités locales en {_fin['S1313']}, et les opérations de ces deux "
+      "sous-secteurs restent sans montant les années suivantes.")
 ```
+
+En postes, la couverture remonte plus loin que le compte en base 2015. @tbl-capu-longue-periode donne, pour chaque année de `{python} PA0` à `{python} AN1`, le nombre de postes chiffrés parmi les postes rattachés à chaque secteur ; `{python} PA0` est la première année où un poste de la sécurité sociale est chiffré. La part du montant couverte n'y figure qu'à partir de `{python} AN0`, parce que le compte des administrations publiques en base 2015 commence en `{python} AN0`, première année de l'édition `{python} ED0` [@ins-cnat-2015]. Les comptes des années antérieures relèvent d'autres bases ([les bases successives](annexe-pib.html#sec-pib-bases)) ; ils ne se raccordent pas au compte en base 2015 sans règle de chaînage entre bases, et aucun ne sert ici de dénominateur. <!-- TODO (comptable-national) : comptes des secteurs des bases 1997 et 1983 en cours de versement dans l'entrepôt de données (PR en brouillon) ; part du montant avant la base 2015 une fois ces bases versées et la règle de chaînage tranchée (question M10, docs/notes/questions-mahdi.md). La base 2015 est rétropolée jusqu'en 2010 pour le PIB (annexe-pib, tbl-pib-bases) : vérifier si des comptes des secteurs 2010-2014 en base 2015 sont publiés (règle docs/procedures/affirmer-une-absence.md). -->
+
+::: {.callout-note collapse="true" title="La couverture année par année, sur toute la période des séries"}
+```{python}
+#| echo: false
+#| output: asis
+_SL = [("S13", "APU"), ("S1311", "État"), ("S1313", "Coll. locales"), ("S1314", "Séc. sociale")]
+_dp = {(int(l["annee"]), l["secteur"]): l for l in _pa}
+_dm = {(int(l["annee"]), l["secteur"]): l for l in _y}
+print("| Année | " + " | ".join(f"{x}, postes chiffrés" for _, x in _SL) + " | "
+      + " | ".join(f"{x}, part du montant" for _, x in _SL) + " |")
+print("|---|" + "--:|" * (2 * len(_SL)))
+for an in sorted({a for a, _ in _dp}):
+    cells = [f"{_dp[(an, s)]['postes_chiffres']}/{_dp[(an, s)]['postes']}" for s, _ in _SL]
+    cells += [(n(_dm[(an, s)]["part_montant_couverte_pct"]) + " %")
+              if (an, s) in _dm and _dm[(an, s)]["part_montant_couverte_pct"] else "—" for s, _ in _SL]
+    print(f"| {an} | " + " | ".join(cells) + " |")
+print("\n: Couverture des administrations publiques et de leurs sous-secteurs par les postes de l'ouvrage, année par année : "
+      "postes chiffrés sur postes rattachés au secteur (qui verse ou qui reçoit) ; part du montant couverte, en % des montants "
+      "de l'INS, pour les seules années du compte en base 2015 (APU : somme des trois sous-secteurs, non consolidée) "
+      "{#tbl-capu-longue-periode}\n")
+```
+:::
 
 
 ## Les opérations des administrations publiques {#sec-capu-operations}

@@ -27,6 +27,7 @@ from __future__ import annotations
 
 import argparse
 import csv
+import functools
 import re
 import sys
 from collections import defaultdict
@@ -85,6 +86,18 @@ def edition_pour(secteurs: list[dict], an: int) -> str:
     return (defs or tous)[-1]
 
 
+def annees_base2015(secteurs: list[dict]) -> list[int]:
+    """Années que l'INS publie en base 2015 avec un compte des administrations publiques dans l'édition
+    retenue par edition_pour() (une ligne isolée d'une autre édition ne suffit pas)."""
+    b15 = [l for l in secteurs if str(l.get("base", "")) == "2015"]
+    garde = []
+    for y in sorted({int(l["annee"]) for l in b15}):
+        ed = edition_pour(b15, y)
+        if any(l["edition"] == ed and int(l["annee"]) == y and l["secteur"] == "apu" for l in b15):
+            garde.append(y)
+    return garde
+
+
 def annee_reference(secteurs: list[dict]) -> tuple[int, str]:
     """Année fixée dans precis/fr/annee-reference.yml : la dernière où les sources de la reconstruction sont
     toutes disponibles (comptes des caisses compris), non la dernière année définitive des comptes."""
@@ -92,11 +105,17 @@ def annee_reference(secteurs: list[dict]) -> tuple[int, str]:
     return an, edition_pour(secteurs, an)
 
 
-def montant(serie: str, colonne: str, annee: int) -> tuple[float | None, str]:
+@functools.lru_cache(maxsize=None)
+def _lignes_serie(serie: str) -> tuple[dict, ...]:
+    """Lignes d'une série du cache, lues une fois (montant() ne les modifie pas)."""
     chemin = CACHE / f"{serie}.csv"
-    if not chemin.exists():
+    return tuple(lire_csv(chemin)) if chemin.exists() else ()
+
+
+def montant(serie: str, colonne: str, annee: int) -> tuple[float | None, str]:
+    lignes = _lignes_serie(serie)
+    if not lignes:
         return None, ""
-    lignes = lire_csv(chemin)
     annees = sorted({int(str(l["annee"])[:4]) for l in lignes if str(l.get("annee", ""))[:4].isdigit()})
     couv = f"{annees[0]}-{annees[-1]}" if annees else ""
     if serie == "compensation-parts":  # total budgétaire de la compensation, une ligne par année
@@ -302,8 +321,8 @@ def main(argv=None) -> int:
     snapshot = {e["id"]: e for e in yaml.safe_load((CACHE / "catalog.snapshot.yml").read_text(encoding="utf-8"))}
     postes, lignes, controles, flux, erreurs = calculer(an, ed, secteurs, snapshot)
     annees = []
-    for y in range(2015, 2024):  # couverture année par année, pour montrer le profil des retards
-        ed_y = edition_pour(secteurs, y)
+    for y in annees_base2015(secteurs):  # couverture année par année, pour montrer le profil des retards
+        ed_y = edition_pour([l for l in secteurs if str(l.get("base", "")) == "2015"], y)
         postes_y, _, _, _, _ = calculer(y, ed_y, secteurs, snapshot)
         lig_y = [l for l in secteurs if l["edition"] == ed_y and int(l["annee"]) == y and str(l.get("base", "2015")) == "2015"]
         par_secteur = {}
