@@ -140,6 +140,33 @@ def fin_encadre(p: dict, an: int) -> str:
     return " ; l'ouvrage ne chiffre pas encore ce dispositif."
 
 
+SECTEURS_APU = {"apu", "apu_centrale", "apu_locale", "apu_secu"}
+SUJETS = {"snf": "Les sociétés non financières y inscrivent", "sf": "Les sociétés financières y inscrivent",
+          "menages": "Les ménages y inscrivent", "rdm": "Le reste du monde y inscrit"}
+
+
+def phrase_montant(p: dict, cible_s13: dict, qui: list[dict], an: int) -> str:
+    """Comparaison de l'encadré. Poste payé ou reçu par une administration : montant des administrations
+    publiques (S13). Sinon : montant du secteur du poste du côté du poste (le payeur pour un emploi, le
+    receveur pour une ressource), s'il est seul de ce côté et que les comptes le publient ; sinon rien."""
+    secs = {s for s in (p["secteur_verse"] + ";" + p["secteur_recoit"]).split(";") if s}
+    if secs & SECTEURS_APU:
+        l = cible_s13.get((p["cote"], p["operation"]))
+        if not l:
+            return ""
+        return (f" Les administrations publiques y inscrivent {fr(l['cible_ins_md'])} millions de dinars ({p['cote']})"
+                + fin_encadre(p, an))
+    cote_secs = [s for s in (p["secteur_verse"] if p["cote"] == "emplois" else p["secteur_recoit"]).split(";") if s]
+    if len(cote_secs) != 1 or cote_secs[0] not in SUJETS:
+        return ""
+    nom = dict(PRINCIPAUX)[cote_secs[0]]
+    v = [x for x in qui if x["operation"] == p["operation"] and x["secteur"] == nom and x["cote"] == p["cote"]
+         and x["niveau"] == "secteur"]
+    if not v or v[0]["valeur_md"] in (None, ""):
+        return ""
+    return f" {SUJETS[cote_secs[0]]} {fr(v[0]['valeur_md'])} millions de dinars ({p['cote']})" + fin_encadre(p, an)
+
+
 def source_serie(serie: str, snapshot: dict) -> str:
     e = snapshot.get(serie)
     return (e.get("sources") or [""])[0] if e else ""
@@ -299,7 +326,6 @@ def main(argv=None) -> int:
         w.writeheader()
         w.writerows(qui)
     for p in postes:
-        l = cible_s13.get((p["cote"], p["operation"]))
         profondeur = "../" if (FR / p["volume"]).is_dir() else ""
         lien = f"{profondeur}compte-apu.html#sec-capu-flux"
         niveau = "sous-secteur" if p["operation"] == "transferts_entre_administrations" else "secteur"
@@ -313,9 +339,7 @@ def main(argv=None) -> int:
             flux = f"versent : {verse or 'aucun secteur principal'} ; reçoivent : {recoit or 'aucun secteur principal'}"
         phrase = (f"Ce dispositif relève de l'opération **{p['code_scn']} « {lib} »** des comptes de la nation. "
                   f"En {an} (édition {ed}), en millions de dinars, {flux}.")
-        if l:
-            phrase += f" Les administrations publiques y inscrivent {fr(l['cible_ins_md'])} millions de dinars ({p['cote']})"
-            phrase += fin_encadre(p, an)
+        phrase += phrase_montant(p, cible_s13, qui, an)
         (ENCADRES / f"{p['poste']}.md").write_text(
             f"::: {{.callout-tip title=\"Dans les comptes\"}}\n{phrase} Voir [le compte reconstruit]({lien}).\n:::\n",
             encoding="utf-8")

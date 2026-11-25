@@ -67,6 +67,26 @@ class TestReconstruction(unittest.TestCase):
         avec = {"montant_reference": "3430.0", "colonne": "cotisations_md", "annees": "2000-2020"}
         self.assertIn("en chiffre 3 430,0", rc.fin_encadre(avec, 2020))
 
+    def test_phrase_montant_selon_secteur(self):
+        import reconstruire_comptes as rc
+        cible = {("ressources", "autres_transferts_courants"): {"cible_ins_md": 4041.0}}
+        qui = [{"operation": "autres_transferts_courants", "secteur": "reste du monde", "cote": "ressources",
+                "niveau": "secteur", "valeur_md": 556.3}]
+        rdm = {"secteur_verse": "snf;sf;menages", "secteur_recoit": "rdm", "cote": "ressources",
+               "operation": "autres_transferts_courants", "montant_reference": "489.3", "colonne": "", "annees": ""}
+        # poste sans administration : montant du reste du monde, jamais celui des administrations
+        txt = rc.phrase_montant(rdm, cible, qui, 2020)
+        self.assertIn("Le reste du monde y inscrit 556,3 millions de dinars (ressources)", txt)
+        self.assertNotIn("administrations publiques", txt)
+        # montant du secteur absent des comptes : pas de phrase
+        self.assertEqual(rc.phrase_montant(rdm, cible, [], 2020), "")
+        # plusieurs secteurs du côté du poste : pas de phrase
+        plusieurs = dict(rdm, cote="emplois")
+        self.assertEqual(rc.phrase_montant(plusieurs, cible, qui, 2020), "")
+        # poste d'une administration : montant de S13
+        apu = dict(rdm, secteur_recoit="apu_centrale")
+        self.assertIn("Les administrations publiques y inscrivent 4 041,0", rc.phrase_montant(apu, cible, qui, 2020))
+
     def test_residu_egal_cible_moins_postes(self):
         for l in lire("compte-apu-reconstruit.csv"):
             if l["somme_postes_md"]:
