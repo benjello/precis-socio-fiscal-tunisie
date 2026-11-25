@@ -304,3 +304,39 @@ def test_controles_en_echec_scn68_portee():
     assert [(l["secteur"], l["touche_total"], l["base"]) for l in out] == [("apu", "non", "1983"),
                                                                            ("apu_locale", "compte", "1983")]
     assert out[1]["libelle_scn2008"] == "Compte de capital, ressources"
+
+
+def _ins_d1():
+    """D.1 de l'INS : reçu par les ménages, versé par l'État, les sociétés non financières et les ménages."""
+    lig = [dict(ligne("ressources", "remuneration_salaries", 1000, "D.1"), secteur="menages"),
+           dict(ligne("emplois", "remuneration_salaries", 400, "D.1"), secteur="apu_centrale"),
+           dict(ligne("emplois", "salaires_bruts", 500, "D.11"), secteur="snf"),
+           dict(ligne("emplois", "remuneration_salaries", 100, "D.1"), secteur="menages"),
+           dict(ligne("emplois", "remuneration_salaries", 0, "D.1"), secteur="rdm")]
+    return lig[:1], cc.montants_ins(lig)
+
+
+def test_justesse_exige_toute_la_contrepartie():
+    """D.1 en ressources des ménages chiffré par la seule masse salariale de l'État : l'opération reste couverte
+    pour la part du montant, mais n'entre pas dans la justesse ; un poste dont les payeurs couvrent tous les
+    secteurs qui versent du D.1 selon l'INS (les sociétés par leur D.11, un montant nul ne comptant pas) y entre."""
+    ops, ins = _ins_d1()
+    etat = [poste("remuneration_salaries", "emplois", "apu_centrale", "menages", 380)]
+    r = cc.indicateurs(ops, cc.postes_du_secteur(etat, ("menages",)), "menages", ins)
+    assert r["operations_chiffrees"] == 1 and r["montant_couvert_md"] == 380.0
+    assert r["operations_justesse"] == 0 and r["justesse_pct"] == ""
+    assert cc.indicateurs(ops, cc.postes_du_secteur(etat, ("menages",)))["operations_justesse"] == 1  # sans `ins`
+    tous = [poste("remuneration_salaries", "emplois", "apu_centrale;snf;menages", "menages", 950)]
+    r = cc.indicateurs(ops, cc.postes_du_secteur(tous, ("menages",)), "menages", ins)
+    assert r["operations_justesse"] == 1 and r["justesse_pct"] == 95.0
+
+
+def test_justesse_poste_sans_contrepartie_nommee():
+    """Un poste dont le registre ne nomme pas l'autre bout (FBCF, consommation finale) reste régi par la règle
+    des postes propres."""
+    lig = [dict(ligne("emplois", "fbcf", 100, "P.51g"), secteur="apu_centrale"),
+           dict(ligne("ressources", "fbcf", 100, "P.51g"), secteur="snf")]
+    ins = cc.montants_ins(lig)
+    p = [poste("fbcf", "emplois", "apu_centrale", "", 90)]
+    r = cc.indicateurs(lig[:1], cc.postes_du_secteur(p, ("apu_centrale",)), "apu_centrale", ins)
+    assert r["operations_justesse"] == 1

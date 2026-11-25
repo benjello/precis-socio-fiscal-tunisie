@@ -162,13 +162,14 @@ def couverture_annee(postes_y: list[dict], lig_y: list[dict], liens: dict | None
     `liens` (base autre que 2015), les opérations dont le lien au code du SCN 2008 n'est pas « identique »
     sont retirées des feuilles : ni couvertes ni comptées dans le total."""
     par_secteur = {}
+    ins = cc.montants_ins(lig_y)
     for code, (sec, membres) in cc.SECTEURS.items():
         ratt = cc.postes_du_secteur(postes_y, membres)
         ops = cc.feuilles([l for l in lig_y if l["secteur"] == sec], garder=cc.garder_par_cote(ratt))
         if liens is not None:
             ops = cc.raccord_identique(ops, liens)
         if ops:
-            par_secteur[code] = cc.indicateurs(ops, ratt)
+            par_secteur[code] = cc.indicateurs(ops, ratt, sec, ins)
     # S13 = somme des trois sous-secteurs : sans l'un d'eux (l'administration centrale en base 1983), pas de S13
     if all(s in par_secteur for s in cc.SOUS_SECTEURS_S13):
         par_secteur["S13"] = cc.agreger([par_secteur[s] for s in cc.SOUS_SECTEURS_S13])

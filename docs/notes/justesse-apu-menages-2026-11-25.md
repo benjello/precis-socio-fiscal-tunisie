@@ -32,3 +32,6 @@ Sources : ministère des Finances, série des recettes fiscales (`recettes_fisca
 - **Saut de 2019** : les impôts sur les salaires passent de 3 831 à 5 488 MD (+43 %) dans la série du ministère ; le D.5 des ménages croît aussi (+25 %). La série du ministère ne signale pas de rupture : à vérifier (question A15).
 
 Aucune correction de la mesure : le poste IRPP reste rattaché aux ménages, et la justesse le montre.
+
+**25/11/2026, soir.** Depuis 9fcc6c54, le D.1 reçu par les ménages, chiffré par la seule masse salariale de l'État, était entré dans la justesse (38 à 58 %). Règle nouvelle (PR #916) : une opération n'entre dans la justesse que si les postes couvrent tous les secteurs que l'INS inscrit, avec un montant non nul, à l'autre bout de l'opération.
+Avec cette règle, aucune opération des ménages n'entre plus dans la justesse. En 2019, le D.5 en sort parce que l'INS inscrit 110,1 MD d'impôts courants reçus par les collectivités locales, qu'aucun poste ne chiffre.

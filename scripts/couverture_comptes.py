@@ -6,7 +6,9 @@
   baisser ou la laisser inchangée.
 - **Justesse** : somme des postes rapportée au montant INS, sur les seules opérations chiffrées dont
   tous les postes sont propres au secteur (un poste qui chiffre l'opération pour plusieurs secteurs,
-  comme la TVA versée par les ménages et les sociétés, ne peut pas être rapproché du montant d'un seul).
+  comme la TVA versée par les ménages et les sociétés, ne peut pas être rapproché du montant d'un seul)
+  et couvrent toute leur contrepartie (`contrepartie_couverte`) : la masse salariale de l'État, reçue par
+  les ménages, ne chiffre qu'un de leurs employeurs et n'entre pas dans la justesse du D.1 des ménages.
 
 - **Part du montant couverte** (indicateur principal) : somme, sur les opérations, des postes propres au
   secteur (valeur absolue) plafonnée au montant INS de l'opération, rapportée au total du compte. Un poste
@@ -120,12 +122,79 @@ def postes_du_secteur(postes: list[dict], membres: tuple[str, ...]) -> dict:
     out = defaultdict(list)
     for p in postes:
         m = float(p["montant_reference"]) if p.get("montant_reference") not in (None, "") else None
-        for role, champ in (("verse", "secteur_verse"), ("recoit", "secteur_recoit")):
+        for role, champ, autre in (("verse", "secteur_verse", "secteur_recoit"), ("recoit", "secteur_recoit", "secteur_verse")):
             secs = [s for s in p[champ].split(";") if s]
             if any(s in membres for s in secs):
-                # un poste versé et reçu à l'intérieur du secteur y figure des deux côtés
-                out[p["operation"]].append((role, m, all(s in membres for s in secs)))
+                # un poste versé et reçu à l'intérieur du secteur y figure des deux côtés ; 4e terme : les
+                # secteurs de l'autre bout du poste (vide : le registre ne nomme pas de contrepartie)
+                out[p["operation"]].append((role, m, all(s in membres for s in secs),
+                                            tuple(x for x in p.get(autre, "").split(";") if x)))
     return out
+
+
+# Secteurs au niveau du registre des postes (secteur_verse, secteur_recoit) ; l'INS imprime aussi des
+# sous-secteurs (sf_assurance, menages_ei…), contenus dans ceux-ci, et le compte consolidé des administrations.
+NIVEAU_REGISTRE = ("snf", "sf", "menages", "rdm", "apu_centrale", "apu_locale", "apu_secu")
+SOUS_APU = ("apu_centrale", "apu_locale", "apu_secu")
+
+
+def montants_ins(lignes: list[dict]) -> dict:
+    """{(côté, code) : {secteur : |montant|}} des lignes d'opération de l'INS d'une année (toutes les
+    lignes, tous secteurs), sans les soldes ni le compte financier. Le compte consolidé (« apu ») est gardé
+    à part pour savoir si un sous-secteur non imprimé (l'administration centrale en base 1983) peut avoir
+    un montant."""
+    out = defaultdict(lambda: defaultdict(float))
+    for l in lignes:
+        c = l.get("code_scn2008") or ""
+        if not c or c.startswith(("B.", "F.")) or str(l.get("sous_ligne", "0")) not in ("0", "1"):
+            continue
+        if l["secteur"] in NIVEAU_REGISTRE or l["secteur"] == "apu":
+            out[(l["cote"], c)][l["secteur"]] = max(out[(l["cote"], c)][l["secteur"]], abs(float(l["valeur"])))
+    return out
+
+
+def contrepartie_ins(l: dict, secteur: str, ins: dict) -> set:
+    """Secteurs (niveau du registre) qui ont, selon l'INS, un montant non nul à l'autre bout de l'opération de
+    la ligne `l` du secteur `secteur` : de l'autre côté (emplois face à ressources), sauf pour les subventions,
+    que payeur et receveur inscrivent en ressources (du même côté, le secteur lui-même exclu). Une opération
+    imprimée à une autre finesse de l'autre côté (D.11 face à D.1) compte par le préfixe du code. Un
+    sous-secteur des administrations absent du cache, quand le compte consolidé porte un montant, est compté
+    comme contrepartie : son montant n'est pas connu, il n'est pas présumé nul."""
+    meme = l["operation"] in VERSEES_EN_RESSOURCES
+    cote = l["cote"] if meme else ("ressources" if l["cote"] == "emplois" else "emplois")
+    code = l["code_scn2008"]
+    secs = defaultdict(float)
+    exact = {s for (c_cote, c), m in ins.items() if c_cote == cote and c == code for s in m}
+    for (c_cote, c), montants in ins.items():
+        # le code même ; à défaut, chez un secteur qui ne l'imprime pas, ses composantes (D.11 pour D.1) ;
+        # jamais un agrégat (D.4 pour D.45), dont le montant ne dit pas celui de la composante
+        if c_cote == cote and (c == code or c.startswith(code)):
+            for s, v in montants.items():
+                if c == code or s not in exact:
+                    secs[s] += v
+    out = {s for s, v in secs.items() if v > ARRONDI and s != "apu"}
+    presents = {s for (c_cote, _), m in ins.items() for s in m}
+    if secs.get("apu", 0) > ARRONDI:
+        out |= {s for s in SOUS_APU if s not in presents}
+    if meme:
+        out -= set(SOUS_APU) if secteur == "apu" else {secteur}
+    # le compte du reste du monde n'enregistre que ses opérations avec les résidents : il n'est pas sa propre contrepartie
+    if secteur == "rdm":
+        out.discard("rdm")
+    return out
+
+
+def contrepartie_couverte(l: dict, rattaches: dict, secteur: str, ins: dict | None) -> bool:
+    """Les postes chiffrés de la ligne couvrent toute sa contrepartie selon l'INS (`contrepartie_ins`). Un
+    poste dont le registre ne nomme pas de contrepartie (champ vide : FBCF, consommation finale, échanges
+    extérieurs) chiffre toute l'opération : la ligne reste régie par la seule règle des postes propres.
+    Sans `ins`, la condition n'est pas examinée."""
+    if ins is None:
+        return True
+    cps = [cp for m, _, cp in postes_de_la_ligne_cp(l, rattaches) if m is not None]
+    if not cps or any(not cp for cp in cps):
+        return True
+    return contrepartie_ins(l, secteur, ins) <= set().union(*map(set, cps))
 
 
 # L'INS inscrit les subventions versées par les administrations en ressources négatives du payeur.
@@ -150,11 +219,22 @@ def postes_de_la_ligne(l: dict, rattaches: dict) -> list:
         roles = {"verse"} - ({"verse"} if l["operation"] in VERSEES_EN_RESSOURCES else set())
     else:
         roles = {"recoit"} | ({"verse"} if l["operation"] in VERSEES_EN_RESSOURCES else set())
-    return [(m, propre) for r, m, propre in rattaches.get(l["operation"], []) if r in roles]
+    return [(m, propre) for m, propre, _ in postes_de_la_ligne_cp(l, rattaches)]
 
 
-def indicateurs(ops: list[dict], rattaches: dict) -> dict:
-    """ops : feuilles du secteur ; rattaches : sortie de postes_du_secteur."""
+def postes_de_la_ligne_cp(l: dict, rattaches: dict) -> list:
+    """Comme postes_de_la_ligne, avec les secteurs de l'autre bout de chaque poste."""
+    if l["cote"] == "emplois":
+        roles = {"verse"} - ({"verse"} if l["operation"] in VERSEES_EN_RESSOURCES else set())
+    else:
+        roles = {"recoit"} | ({"verse"} if l["operation"] in VERSEES_EN_RESSOURCES else set())
+    return [(m, propre, (x[0] if x else ())) for r, m, propre, *x in rattaches.get(l["operation"], []) if r in roles]
+
+
+def indicateurs(ops: list[dict], rattaches: dict, secteur: str = "", ins: dict | None = None) -> dict:
+    """ops : feuilles du secteur ; rattaches : sortie de postes_du_secteur ; `ins` (montants_ins de l'année) et
+    `secteur` (secteur du cache) : la justesse ne retient que les opérations dont les postes couvrent toute la
+    contrepartie (contrepartie_couverte). La part du montant n'en dépend pas."""
     total = couvert = montant = j_postes = j_ins = 0.0
     n_chiffrees = n_justesse = 0
     for l in ops:
@@ -167,7 +247,7 @@ def indicateurs(ops: list[dict], rattaches: dict) -> dict:
         couvert += abs(v)
         # part du montant : postes propres au secteur seulement, en valeur absolue, plafonnés au montant de l'INS
         montant += min(sum(abs(m) for m, propre in chiffres if propre), abs(v))
-        if all(propre for _, propre in chiffres) and v:
+        if all(propre for _, propre in chiffres) and v and contrepartie_couverte(l, rattaches, secteur, ins):
             n_justesse += 1
             j_postes += abs(sum(m for m, _ in chiffres))
             j_ins += abs(v)

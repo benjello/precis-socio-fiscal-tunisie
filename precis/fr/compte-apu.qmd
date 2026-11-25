@@ -66,7 +66,7 @@ Trois indicateurs mesurent la reconstruction, pour chaque secteur et chaque ann�
 
 - la **part du montant couverte**, indicateur principal : somme, opération par opération, des postes propres au secteur, plafonnée au montant de l'INS de l'opération, rapportée au total des montants de l'INS du compte (emplois et ressources, hors soldes et hors compte financier, sans compter deux fois une opération et ses composantes). Un poste partiel ne couvre que son propre montant ; un poste qui chiffre une opération pour plusieurs secteurs (la TVA, versée par les ménages et les sociétés) ne compte pas ;
 - la **part du compte couverte** : montant de l'INS des opérations qui ont au moins un poste chiffré, rapporté au même total. Elle compte toute l'opération dès qu'un poste la chiffre, même en partie ;
-- la **justesse** : somme des postes rapportée au montant de l'INS, sur les seules opérations chiffrées dont tous les postes sont propres au secteur.
+- la **justesse** : somme des postes rapportée au montant de l'INS, sur les seules opérations chiffrées dont tous les postes sont propres au secteur et couvrent toute la contrepartie : tous les secteurs qui, selon l'INS, ont un montant à l'autre bout de l'opération. La masse salariale de l'État, reçue par les ménages, ne chiffre qu'un de leurs employeurs et n'entre pas dans la justesse des ménages.
 
 Les deux parts baissent quand un poste perd son montant ; un test le vérifie.
 
@@ -85,7 +85,7 @@ _ans_ech = sorted({l["annee"] for l in _ech if l["secteur"].startswith("apu")}) 
 for _ind, _n, _titre, _id in (
         ("part_montant_couverte_pct", "operations_chiffrees", "Part du montant couverte, en % des montants de l'INS (opérations chiffrées sur opérations du compte)", "tbl-capu-part-montant"),
         ("part_couverte_pct", "operations_chiffrees", "Part du compte couverte, en % des montants de l'INS (opérations chiffrées sur opérations du compte)", "tbl-capu-part-couverte"),
-        ("justesse_pct", "operations_justesse", "Justesse, somme des postes en % du montant de l'INS sur les opérations chiffrées propres au secteur (nombre de ces opérations)", "tbl-capu-justesse")):
+        ("justesse_pct", "operations_justesse", "Justesse, somme des postes en % du montant de l'INS sur les opérations chiffrées propres au secteur dont les postes couvrent tous les secteurs de contrepartie de l'INS (nombre de ces opérations)", "tbl-capu-justesse")):
     print("| Année | Base | " + " | ".join(n for _, n in _S) + " |")
     print("|---|---|" + "--:|" * len(_S))
     for an in _ans:
@@ -190,9 +190,13 @@ Les administrations publiques (APU) sont mesurées comme la somme de leurs trois
 #| echo: false
 #| output: asis
 _jm = [(int(l["annee"]), float(l["justesse_pct"])) for l in _y if l["secteur"] == "S14" and l["justesse_pct"]]
-_jmin, _jmax = min(_jm, key=lambda x: x[1]), max(_jm, key=lambda x: x[1])
-print(f"La justesse des ménages va de {n(_jmin[1])} % en {_jmin[0]} à {n(_jmax[1])} % en {_jmax[0]}, "
-      f"sur les années {_jm[0][0]} à {_jm[-1][0]}.\n")
+if _jm:
+    _jmin, _jmax = min(_jm, key=lambda x: x[1]), max(_jm, key=lambda x: x[1])
+    print(f"La justesse des ménages va de {n(_jmin[1])} % en {_jmin[0]} à {n(_jmax[1])} % en {_jmax[0]}, "
+          f"sur les années {_jm[0][0]} à {_jm[-1][0]}.\n")
+else:
+    print("La justesse des ménages n'est mesurée pour aucune année : sur chaque opération chiffrée des ménages, les "
+          "postes ne couvrent pas tous les secteurs qui, selon l'INS, en sont la contrepartie.\n")
 ```
 
 ```{python}
