@@ -154,6 +154,23 @@ def poste_hors_base(poste: str, base: str) -> str:
         # propriété la redevance sur le passage du gaz algérien, « auparavant comptabilisée comme production du
         # secteur transport ». En base 1997, elle n'est donc pas dans les loyers (D.45) où le registre la range.
         return "redevance du gazoduc : production du secteur transport en base 1997, non loyers (D.45)"
+    if poste == "exportations-services" and base in ("1997", "1983"):
+        # Même page : la base 2015 s'écarte des exportations de la balance des paiements par « le reclassement de
+        # la redevance […] comme un revenu de propriété et non plus comme production du secteur transport comme
+        # auparavant » ; le compte du reste du monde de la base 1997 est « étroitement articulé » avec la balance
+        # en MBP5 (vol. A, p. 17 ; éd. 2017-2021 à 2020-2024, p. 15), où la redevance est un service de transport.
+        # P.62 de l'INS la comprend donc en base 1997 ; le poste la retire. Les montants ne tranchent pas (poste
+        # sur INS : 95 à 104 % sans la redevance, 104 à 110 % avec, 2005-2014). Base 1983 : aucune édition lue ne
+        # dit où était la redevance ; « auparavant » vise les bases antérieures à 2015, même exclusion.
+        return ("exportations de services : l'INS y compte la redevance du gazoduc (production de transport) "
+                "avant la base 2015, le poste la retire")
+    if poste == "importations-services" and base == "1983":
+        # La base 1983 imprime « Importation de Biens (CAF) » (Les comptes de la nation 2001-2005, comptes des
+        # secteurs, page_fichier 75) : le fret et l'assurance des marchandises importées sont dans P.71, non dans
+        # P.72, alors que les services (dépenses) de la balance les comprennent. En 2004, P.71 de l'INS dépasse
+        # les importations FOB de 950,6 MD et P.72 est inférieur aux services de 1 137,9 MD ; poste sur INS :
+        # 171 à 192 % en 2001-2004.
+        return "importations de services : la base 1983 range le fret et l'assurance des importations dans P.71 (CAF)"
     return ""
 
 
@@ -308,6 +325,11 @@ def montant(serie: str, colonne: str, annee: int) -> tuple[float | None, str]:
             fenetre = tuple(int(x) for x in morceaux[2].split("-"))
             colonne = "|".join(morceaux[:2])
         caisse, _, ind = colonne.rpartition("|")  # « CNAM|recettes techniques » : filtre sur la colonne caisse
+        # couverture de l'indicateur lui-même, non de la série entière (bct-bdp-postes-s2 : D.1 reçue en 2019-2024
+        # seulement, P.61 dès 1994)
+        annees = sorted({int(str(l["annee"])[:4]) for l in lignes if str(l.get("annee", ""))[:4].isdigit()
+                         and l["indicateur"].startswith(ind) and (not caisse or l.get("caisse") == caisse)})
+        couv = f"{annees[0]}-{annees[-1]}" if annees else ""
         if fenetre:
             dans = [a for a in annees if fenetre[0] <= a <= fenetre[1]]
             couv = f"{dans[0]}-{dans[-1]}" if dans else ""

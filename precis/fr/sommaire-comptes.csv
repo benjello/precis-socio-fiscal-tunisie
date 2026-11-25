@@ -42,8 +42,8 @@ Compte de capital,NP,actifs_non_produits,Actifs non produits,SNF;APU;ménages,,0
 Compte de capital,P.51g,fbcf,Formation Brute de capitale Fixe,SNF;SF;APU;ménages,,18935.8,emplois,7207.3,38.1,11728.5,23537.2,emplois,9147.0,38.9,14390.2,equipement-etat|investissement|index|sec-invest-etat
 Compte de capital,P.52,variation_stocks,Variation de stocks,SNF;ménages,,-3773.1,emplois,,,,-11194.8,emplois,,,,
 Compte extérieur Biens & Services,P.6,exportations,Exportation de biens & services,reste du monde,,45401.0,emplois,,,,79417.9,emplois,,,,
-Compte extérieur Biens & Services,P.61,exportations_biens,Exportation de biens,reste du monde,,38830.9,emplois,,,,62824.1,emplois,63181.6,100.6,-357.5,exportations-biens|echanges|index|sec-echanges-p61
+Compte extérieur Biens & Services,P.61,exportations_biens,Exportation de biens,reste du monde,,38830.9,emplois,38705.9,99.7,125.0,62824.1,emplois,63181.6,100.6,-357.5,exportations-biens|echanges|index|sec-echanges-p61
 Compte extérieur Biens & Services,P.62,exportations_services,Exportation de services,reste du monde,,6570.2,emplois,6270.8,95.4,299.4,16593.8,emplois,16703.4,100.7,-109.6,exportations-services|echanges|index|sec-echanges-p62
 Compte extérieur Biens & Services,P.7,importations,Importation de biens & services,,reste du monde,55379.1,ressources,,,,88476.9,ressources,,,,
-Compte extérieur Biens & Services,P.71,importations_biens,Importation de biens,,reste du monde,50031.1,ressources,,,,77435.9,ressources,76881.8,99.3,554.1,importations-biens|echanges|index|sec-echanges-p71
+Compte extérieur Biens & Services,P.71,importations_biens,Importation de biens,,reste du monde,50031.1,ressources,48849.8,97.6,1181.3,77435.9,ressources,76881.8,99.3,554.1,importations-biens|echanges|index|sec-echanges-p71
 Compte extérieur Biens & Services,P.72,importations_services,Importation de services,,reste du monde,5348.0,ressources,5949.3,111.2,-601.3,11041.1,ressources,12004.5,108.7,-963.4,importations-services|echanges|index|sec-echanges-p72
