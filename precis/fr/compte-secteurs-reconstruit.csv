@@ -11,7 +11,7 @@ annee,edition,secteur,nom,cote,code_scn,operation,libelle_ins,valeur_md,part_pct
 2020,2020-2024,S14,ménages,emplois,P.51g,fbcf,Formation Brute de capitale Fixe,6046.8,4.2,
 2020,2020-2024,S14,ménages,emplois,D.91,impots_capital,Impôts sur le capital,52.3,0.0,
 2020,2020-2024,S14,ménages,emplois,P.52,variation_stocks,Variation de stocks,-10.7,0.0,
-2020,2020-2024,S14,ménages,emplois,D.61,cotisations_sociales,Cotisations sociales,13272.2,9.2,cotisations-sociales;cotisations-cnrps;cotisations-cnam
+2020,2020-2024,S14,ménages,emplois,D.61,cotisations_sociales,Cotisations sociales,13272.2,9.2,cotisations-sociales;cotisations-cnrps;cotisations-cnam;cotisations-cnss-2021-2023;cotisations-cnrps-2021-2023
 2020,2020-2024,S14,ménages,emplois,D.5,impots_courants,Impôts courants sur les revenus et le patrimoine,5305.7,3.7,irpp
 2020,2020-2024,S14,ménages,emplois,D.62,prestations_especes,Prestations sociales en espece,147.7,0.1,
 2020,2020-2024,S14,ménages,emplois,D.71,primes_assurance_dommages,Primes nettes d'assurance-dommages,222.3,0.2,
@@ -68,7 +68,7 @@ annee,edition,secteur,nom,cote,code_scn,operation,libelle_ins,valeur_md,part_pct
 2020,2020-2024,S12,sociétés financières,emplois,D.71,primes_assurance_dommages,Primes nettes d'assurance-dommages,107.9,0.7,
 2020,2020-2024,S12,sociétés financières,emplois,D.75,transferts_courants_divers,Autres transferts courants divers,187.5,1.2,
 2020,2020-2024,S12,sociétés financières,emplois,P.2,consommation_intermediaire,Consommation intermédiaire,1589.3,10.6,
-2020,2020-2024,S12,sociétés financières,ressources,D.41,interets,Intérêts,8784.1,68.6,interets-dette-etat
+2020,2020-2024,S12,sociétés financières,ressources,D.41,interets,Intérêts,8784.1,68.6,interets-dette-etat;interets-dette-collectivites
 2020,2020-2024,S12,sociétés financières,ressources,D.42,revenus_distribues,Revenus distribués par les entreprises,470.6,3.7,
 2020,2020-2024,S12,sociétés financières,ressources,D.61,cotisations_sociales,Cotisations sociales,378.9,3.0,
 2020,2020-2024,S12,sociétés financières,ressources,D.72,indemnites_assurance_dommages,Indemnités d'assurance-dommages,0.5,0.0,
@@ -100,7 +100,7 @@ annee,edition,secteur,nom,cote,code_scn,operation,libelle_ins,valeur_md,part_pct
 2020,2020-2024,S2,reste du monde,ressources,P.71,importations_biens,Importation de biens,50031.1,82.1,importations-biens
 2020,2020-2024,S2,reste du monde,ressources,P.72,importations_services,Importation de services,5348.0,8.8,importations-services
 2020,2020-2024,S13,administrations publiques,emplois,D.41,correction_sifim,Correction SIFIM,-66.1,0.1,
-2020,2020-2024,S13,administrations publiques,emplois,D.41,interets,Intérêts,3828.2,4.9,interets-dette-etat
+2020,2020-2024,S13,administrations publiques,emplois,D.41,interets,Intérêts,3828.2,4.9,interets-dette-etat;interets-dette-collectivites
 2020,2020-2024,S13,administrations publiques,emplois,D.29,autres_impots_production,Autres Impôts sur la production,17.4,0.0,
 2020,2020-2024,S13,administrations publiques,emplois,D.12,cotisations_employeurs,Cotis. sociales à la charge des employeurs,3690.5,4.7,
 2020,2020-2024,S13,administrations publiques,emplois,D.11,salaires_bruts,Salaires bruts,16818.1,21.3,
@@ -115,7 +115,7 @@ annee,edition,secteur,nom,cote,code_scn,operation,libelle_ins,valeur_md,part_pct
 2020,2020-2024,S13,administrations publiques,emplois,D.71,primes_assurance_dommages,Primes nettes d'assurance-dommages,13.9,0.0,
 2020,2020-2024,S13,administrations publiques,emplois,D.75,transferts_courants_divers,Autres transferts courants divers,2123.4,2.7,
 2020,2020-2024,S13,administrations publiques,emplois,D.73,transferts_entre_administrations,Transferts courants entre admini. publiques,2231.1,2.8,transferts-collectivites
-2020,2020-2024,S13,administrations publiques,emplois,P.2,consommation_intermediaire,Consommation intermédiaire,3624.7,4.6,moyens-services-etat
+2020,2020-2024,S13,administrations publiques,emplois,P.2,consommation_intermediaire,Consommation intermédiaire,3624.7,4.6,moyens-services-etat;moyens-services-collectivites
 2020,2020-2024,S13,administrations publiques,ressources,D.29,autres_impots_production,Autres Impôts sur la production,1775.8,2.3,taxe-formation-professionnelle;foprolos
 2020,2020-2024,S13,administrations publiques,ressources,D.214,autres_impots_produits,Autres impôts sur les produits,4425.2,5.7,droits-consommation
 2020,2020-2024,S13,administrations publiques,ressources,D.39,autres_subventions_production,Subventions sur la production,-263.0,0.3,
@@ -129,7 +129,7 @@ annee,edition,secteur,nom,cote,code_scn,operation,libelle_ins,valeur_md,part_pct
 2020,2020-2024,S13,administrations publiques,ressources,D.99,autres_transferts_capital,Autres transferts en capital,1489.7,1.9,
 2020,2020-2024,S13,administrations publiques,ressources,D.91,impots_capital,Impôts sur le capital,52.3,0.1,
 2020,2020-2024,S13,administrations publiques,ressources,D.74,cooperation_internationale,Coopération internationale courante,527.2,0.7,
-2020,2020-2024,S13,administrations publiques,ressources,D.61,cotisations_sociales,Cotisations sociales,12313.6,16.0,cotisations-sociales;cotisations-cnrps;cotisations-cnam
+2020,2020-2024,S13,administrations publiques,ressources,D.61,cotisations_sociales,Cotisations sociales,12313.6,16.0,cotisations-sociales;cotisations-cnrps;cotisations-cnam;cotisations-cnss-2021-2023;cotisations-cnrps-2021-2023
 2020,2020-2024,S13,administrations publiques,ressources,D.5,impots_courants,Impôts courants sur les revenus et le patrimoine,11634.5,15.1,irpp;impot-societes
 2020,2020-2024,S13,administrations publiques,ressources,D.72,indemnites_assurance_dommages,Indemnités d'assurance-dommages,9.5,0.0,
 2020,2020-2024,S13,administrations publiques,ressources,D.75,transferts_courants_divers,Autres transferts courants divers,1273.2,1.7,

@@ -31,3 +31,8 @@ importations-services,importations_services,P.72,,rdm,5949.3,echanges,echanges/i
 remunerations-recues-du-rdm,remuneration_salaries,D.1,rdm,menages,1279.8,echanges,echanges/index#sec-echanges-d1-recue,,
 remunerations-versees-au-rdm,remuneration_salaries,D.1,snf;sf;apu_centrale,rdm,21.4,echanges,echanges/index#sec-echanges-d1-versee,,
 redevance-gazoduc,loyers,D.45,rdm,apu_centrale,332.2,echanges,echanges/index#sec-echanges-redevance-gaz,,
+remunerations-collectivites,remuneration_salaries,D.1,apu_locale,menages,,finances_locales,finances_locales/_budgets#sec-fl-budg-comptes-remunerations,marges publiées,
+moyens-services-collectivites,consommation_intermediaire,P.2,apu_locale,snf,,finances_locales,finances_locales/_budgets#sec-fl-budg-comptes-moyens,sans objet,
+interets-dette-collectivites,interets,D.41,apu_locale,sf,21.2,finances_locales,finances_locales/_budgets#sec-fl-budg-comptes-interets,marges publiées,
+cotisations-cnss-2021-2023,cotisations_sociales,D.61,menages,apu_secu,,caisses,caisses/_comptes_longue_periode#sec-caisses-cnss-post-2004,,
+cotisations-cnrps-2021-2023,cotisations_sociales,D.61,menages;apu_centrale,apu_secu,,cotisations_sociales,cotisations_sociales/_pensions#sec-cot-pensions-passage,,

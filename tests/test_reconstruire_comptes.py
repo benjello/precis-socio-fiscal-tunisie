@@ -44,6 +44,29 @@ class TestReconstruction(unittest.TestCase):
         lignes = [l for l in rc.lire_csv(rc.CACHE / "cnat-secteurs.csv") if l["edition"] == ed and int(l["annee"]) == an]
         self.assertTrue(lignes and all(l["statut_annee"] == "definitif" for l in lignes))
 
+    def test_montant_caisse_et_fenetre(self):
+        import reconstruire_comptes as rc
+        # forme « CAISSE|indicateur » : toutes les années de la série, édition la plus récente
+        self.assertEqual(rc.montant("minfin-ep-caisses", "CNAM|recettes techniques", 2020), (3525.2, "2020-2023"))
+        self.assertEqual(rc.montant("minfin-ep-caisses", "CNRPS|recettes techniques", 2022), (6197.6, "2020-2023"))
+        # forme « CAISSE|indicateur|AAAA-AAAA » : rien hors de la fenêtre, années couvertes = la fenêtre
+        self.assertEqual(rc.montant("minfin-ep-caisses", "CNSS|recettes techniques|2021-2023", 2020), (None, "2021-2023"))
+        self.assertEqual(rc.montant("minfin-ep-caisses", "CNSS|recettes techniques|2021-2023", 2021), (3749.2, "2021-2023"))
+        self.assertEqual(rc.montant("minfin-ep-caisses", "CNSS|recettes techniques|2021-2023", 2023), (4556.9, "2021-2023"))
+        # forme sans caisse : indicateur seul, inchangée
+        m, couv = rc.montant("minfin-ep-caisses", "recettes techniques", 2023)
+        self.assertIsNotNone(m)
+        self.assertEqual(couv, "2020-2023")
+
+    def test_fin_encadre_poste_borne(self):
+        import reconstruire_comptes as rc
+        borne = {"montant_reference": "", "colonne": "CNSS|recettes techniques|2021-2023", "annees": "2021-2023"}
+        self.assertIn("chiffre les années 2021-2023, non l'année de référence 2020", rc.fin_encadre(borne, 2020))
+        sans = {"montant_reference": "", "colonne": "CNAM|recettes techniques", "annees": "2020-2023"}
+        self.assertIn("ne chiffre pas encore", rc.fin_encadre(sans, 2020))
+        avec = {"montant_reference": "3430.0", "colonne": "cotisations_md", "annees": "2000-2020"}
+        self.assertIn("en chiffre 3 430,0", rc.fin_encadre(avec, 2020))
+
     def test_residu_egal_cible_moins_postes(self):
         for l in lire("compte-apu-reconstruit.csv"):
             if l["somme_postes_md"]:

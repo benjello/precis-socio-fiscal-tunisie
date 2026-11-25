@@ -112,12 +112,32 @@ def montant(serie: str, colonne: str, annee: int) -> tuple[float | None, str]:
         return (vals[-1] if vals else None), couv
     if "indicateur" in lignes[0] and ("valeur" in lignes[0] or "valeur_md" in lignes[0]):  # série longue : (année, indicateur)
         champ = "valeur" if "valeur" in lignes[0] else "valeur_md"
+        morceaux = colonne.split("|")
+        fenetre = None  # « CNSS|recettes techniques|2021-2023 » : poste limité à ces années (relais d'une série close)
+        if len(morceaux) == 3 and re.fullmatch(r"\d{4}-\d{4}", morceaux[2]):
+            fenetre = tuple(int(x) for x in morceaux[2].split("-"))
+            colonne = "|".join(morceaux[:2])
         caisse, _, ind = colonne.rpartition("|")  # « CNAM|recettes techniques » : filtre sur la colonne caisse
+        if fenetre:
+            dans = [a for a in annees if fenetre[0] <= a <= fenetre[1]]
+            couv = f"{dans[0]}-{dans[-1]}" if dans else ""
+            if not fenetre[0] <= annee <= fenetre[1]:
+                return None, couv
         vals = [float(l[champ]) for l in lignes if str(l["annee"]) == str(annee) and l["indicateur"].startswith(ind)
                 and (not caisse or l.get("caisse") == caisse)]
         return (vals[-1] if vals else None), couv  # la dernière ligne : l'édition la plus récente
     vals = [float(l[colonne]) for l in lignes if str(l["annee"]) == str(annee) and l.get(colonne, "") != ""]
     return (vals[-1] if vals else None), couv
+
+
+def fin_encadre(p: dict, an: int) -> str:
+    """Fin de la phrase de l'encadré : montant de l'année de référence ; pour un poste borné à une période
+    (colonne « …|AAAA-AAAA ») sans valeur cette année-là, les années qu'il chiffre."""
+    if p["montant_reference"]:
+        return f" ; l'ouvrage en chiffre {fr(p['montant_reference'])} pour ce dispositif."
+    if re.search(r"\|\d{4}-\d{4}$", p.get("colonne", "")) and p.get("annees"):
+        return f" ; ce poste chiffre les années {p['annees']}, non l'année de référence {an}."
+    return " ; l'ouvrage ne chiffre pas encore ce dispositif."
 
 
 def source_serie(serie: str, snapshot: dict) -> str:
@@ -295,8 +315,7 @@ def main(argv=None) -> int:
                   f"En {an} (édition {ed}), en millions de dinars, {flux}.")
         if l:
             phrase += f" Les administrations publiques y inscrivent {fr(l['cible_ins_md'])} millions de dinars ({p['cote']})"
-            phrase += (f" ; l'ouvrage en chiffre {fr(p['montant_reference'])} pour ce dispositif." if p["montant_reference"]
-                       else " ; l'ouvrage ne chiffre pas encore ce dispositif.")
+            phrase += fin_encadre(p, an)
         (ENCADRES / f"{p['poste']}.md").write_text(
             f"::: {{.callout-tip title=\"Dans les comptes\"}}\n{phrase} Voir [le compte reconstruit]({lien}).\n:::\n",
             encoding="utf-8")
