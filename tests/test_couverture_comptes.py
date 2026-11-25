@@ -65,9 +65,17 @@ def test_retirer_un_poste_ne_fait_pas_monter_la_part_donnees(annee):
     postes, *_ = rc.calculer(annee, ed, secteurs, snapshot)
     lig = [l for l in secteurs if l["edition"] == ed and int(l["annee"]) == annee]
     for code, (sec, membres) in cc.SECTEURS.items():
-        ops = cc.feuilles([l for l in lig if l["secteur"] == sec])
+        ops = cc.feuilles([l for l in lig if l["secteur"] == sec], garder=set(cc.postes_du_secteur(postes, membres)))
         base = part(postes, ops, membres)
         for i, p in enumerate(postes):
             if p.get("montant_reference"):
                 reste = postes[:i] + postes[i + 1:]
                 assert part(reste, ops, membres) <= base, (code, p["poste"])
+
+
+def test_agregat_garde_quand_lui_seul_porte_un_poste():
+    ls = [ligne("emplois", "remuneration_salaries", 100, "D.1"), ligne("emplois", "salaires_bruts", 80, "D.11"),
+          ligne("emplois", "cotisations_employeurs", 20, "D.12")]
+    assert [l["operation"] for l in cc.feuilles(ls, {"remuneration_salaries"})] == ["remuneration_salaries"]
+    assert [l["operation"] for l in cc.feuilles(ls)] == ["salaires_bruts", "cotisations_employeurs"]
+    assert [l["operation"] for l in cc.feuilles(ls, {"remuneration_salaries", "salaires_bruts"})] == ["salaires_bruts", "cotisations_employeurs"]
