@@ -275,6 +275,18 @@ def montant(serie: str, colonne: str, annee: int) -> tuple[float | None, str]:
     lignes = _lignes_serie(serie)
     if not lignes:
         return None, ""
+    if "entite" in lignes[0] and "exercice" in lignes[0] and "derniere_edition" in lignes[0]:
+        # série par entreprise et par exercice : « champ|e1;e2;… » somme le champ sur ces entreprises, chacune
+        # dans la dernière édition qui donne l'exercice ; une entreprise sans valeur : aucun montant (périmètre constant)
+        champ, _, liste = colonne.partition("|")
+        ents = [e for e in liste.split(";") if e]
+        val = {(l["entite"], int(l["exercice"])): float(l[champ]) for l in lignes
+               if str(l["derniere_edition"]) in ("True", "true", "1") and l.get(champ, "") != "" and l["entite"] in ents}
+        ans = sorted({a for _, a in val if all((e, a) in val for e in ents)})
+        couv = f"{ans[0]}-{ans[-1]}" if ans else ""
+        if not ents or annee not in ans:
+            return None, couv
+        return round(sum(val[(e, annee)] for e in ents), 1), couv
     annees = sorted({int(str(l["annee"])[:4]) for l in lignes if str(l.get("annee", ""))[:4].isdigit()})
     couv = f"{annees[0]}-{annees[-1]}" if annees else ""
     if serie == "compensation-parts":  # total budgétaire de la compensation, une ligne par année
@@ -373,9 +385,15 @@ def phrase_montant(p: dict, cible_s13: dict, qui: list[dict], an: int) -> str:
     return f" {SUJETS[cote_secs[0]]} {fr(v[0]['valeur_md'])} millions de dinars ({p['cote']})" + fin_encadre(p, an)
 
 
-def source_serie(serie: str, snapshot: dict) -> str:
+def source_serie(serie: str, snapshot: dict, inscrite: str = "") -> str:
+    """Première clé de citation de la série ; une liste « k1;k2;… » inscrite au registre est gardée quand toutes
+    ses clés sont des sources de la série (les éditions effectivement lues, quand la série en réunit plusieurs)."""
     e = snapshot.get(serie)
-    return (e.get("sources") or [""])[0] if e else ""
+    sources = (e.get("sources") or []) if e else []
+    cles = [k for k in inscrite.split(";") if k]
+    if len(cles) > 1 and all(k in sources for k in cles):
+        return ";".join(cles)
+    return sources[0] if sources else ""
 
 
 def ancre_existe(volume: str, chapitre: str, ancre: str) -> bool:
@@ -401,7 +419,7 @@ def calculer(an: int, ed: str, secteurs: list[dict], snapshot: dict):
                 m *= float(p["facteur"])
             p["montant_reference"] = "" if m is None else f"{m:.1f}"
             p["annees"] = couv
-            p["source"] = source_serie(p["serie"], snapshot)
+            p["source"] = source_serie(p["serie"], snapshot, p.get("source", ""))
         else:
             p["montant_reference"], p["annees"], p["source"] = "", "", ""
     # Cibles de l'INS, édition la plus récente, année de référence
