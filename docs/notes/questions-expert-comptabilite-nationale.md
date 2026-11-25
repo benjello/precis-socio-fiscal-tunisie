@@ -64,6 +64,16 @@ Références : INS, *Les comptes de la nation* (clé bibliographique `ins-cnat-2
 - La réponse dirait quelles dépenses (interventions, équipement, comptes spéciaux) l'INS range dans P.2.
 - Priorité 2.
 
+**A11. L'INS ventile-t-il les impôts courants (D.5) par impôt et par secteur payeur ?** (lot A, contreparties)
+- Observé : D.5 est publié par secteur payeur. En 2023 (éd. 2021-2025) : sociétés non financières 8 265,6 MD, sociétés financières 1 242,6, ménages 6 647,5, reste du monde 608,7. La part de l'IRPP et de l'IS dans chacun ne l'est pas, et attribuer l'IRPP aux ménages serait une hypothèse (retenues à la source, IRPP des entreprises individuelles).
+- La réponse permettrait d'inscrire la contrepartie des postes IRPP et IS.
+- Priorité 2.
+
+**A12. Peut-on connaître la contrepartie des rémunérations (D.1) et des intérêts (D.41) versés par l'administration centrale ?**
+- Observé : D.1 et D.41 reçus par les ménages, les sociétés financières et le reste du monde ne sont pas ventilés par employeur ou par débiteur. Le TOF donne les créances par instrument, sans tableau par contrepartie.
+- La réponse dirait si une ventilation « de qui à qui » existe (tableau des intérêts par débiteur, détenteurs des titres de l'État).
+- Priorité 3.
+
 ## B. Incohérences vues sur les pages publiées
 
 **B1. Laquelle des deux valeurs de S12 retenir quand la ligne du secteur ne fait pas la somme de ses sous-secteurs dans le TOF ?**

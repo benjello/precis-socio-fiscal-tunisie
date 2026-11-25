@@ -1,23 +1,23 @@
-poste,operation,code_scn,verse,recoit,montant_md,volume,section
-tva,tva,D.211,snf;menages;sf,apu_centrale,10464.0,fiscalite,fiscalite/_tva#sec-tva
-droits-douane,impots_importations,D.212,snf;menages,apu_centrale,1849.0,fiscalite,fiscalite/_droits_douane#sec-dd
-droits-consommation,autres_impots_produits,D.214,snf;menages,apu_centrale,3809.4,fiscalite,fiscalite/_droits_consommation#sec-droits-consommation
-autres-impots-indirects,impots_production_importations,D.2,snf;menages,apu_centrale,5884.0,fiscalite,fiscalite/_taxes_fonds_speciaux#sec-fst-serie
-irpp,impots_courants,D.5,menages,apu_centrale,11373.6,fiscalite,fiscalite/_impot_revenu#sec-irpp
-impot-societes,impots_courants,D.5,snf;sf,apu_centrale,4657.2,fiscalite,fiscalite/_impot_societes#sec-impot-societes
-remunerations-etat,remuneration_salaries,D.1,apu_centrale,menages,21696.6,remunerations_publiques,remunerations_publiques/_regime_indiciaire#sec-ri-reperes-budgetaires
-equipement-etat,fbcf,P.51g,apu_centrale,,9147.0,investissement,investissement/index#sec-invest-etat
-interets-dette-etat,interets,D.41,apu_centrale,sf;rdm;menages,5830.5,annexe-dette-publique,annexe-dette-publique#sec-dette-service
-compensation,subventions_produits,D.31,apu_centrale,snf;menages,-11479.5,compensation,compensation/_depense#sec-compensation-longue-periode
-cotisations-sociales,cotisations_sociales,D.61,menages,apu_secu,,cotisations_sociales,cotisations_sociales/_bilan#sec-cot-rendement
-pensions,prestations_especes,D.62,apu_secu,menages,,retraites,retraites/_secteur_prive#sec-vue-ensemble
-prestations-familiales,prestations_especes,D.62,apu_secu,menages,,prestations_sociales,prestations_sociales/_prestations_familiales#sec-pf-longue-periode
-assistance-sociale,prestations_especes,D.62,apu_centrale,menages,,prestations_sociales,prestations_sociales/_non_contributives#sec-nc-vue-ensemble
-consommation-sante,consommation_finale,P.3,apu_centrale;apu_secu,,,sante,sante/_couverture#sec-sante-couverture
-consommation-education,consommation_finale,P.3,apu_centrale,,,education,education/_depense#sec-educ-depense
-transferts-collectivites,transferts_entre_administrations,D.73,apu_centrale,apu_locale,599.1,finances_locales,finances_locales/_transferts#sec-fl-transferts
-taxe-formation-professionnelle,autres_impots_production,D.29,snf;sf,apu_centrale,,cotisations_sociales,cotisations_sociales/_prelevements_salaires#sec-cot-tfp
-foprolos,autres_impots_production,D.29,snf;sf,apu_centrale,,cotisations_sociales,cotisations_sociales/_prelevements_salaires#sec-cot-foprolos
-moyens-services-etat,consommation_intermediaire,P.2,apu_centrale,snf,2273.7,annexe-budget-etat,annexe-budget-etat#sec-bud-desagregation
-transferts-capital-etat,transferts_capital,D.9,apu_centrale,snf;menages,,investissement,investissement/index#sec-invest-transferts-capital
-soins-assurance-maladie,consommation_finale,P.3,apu_secu,menages,,prestations_sociales,prestations_sociales/_soins#sec-soins-vue
+poste,operation,code_scn,verse,recoit,montant_md,volume,section,contrepartie,contrepartie_secteur
+tva,tva,D.211,snf;menages;sf,apu_centrale,10464.0,fiscalite,fiscalite/_tva#sec-tva,sans objet,
+droits-douane,impots_importations,D.212,snf;menages,apu_centrale,1849.0,fiscalite,fiscalite/_droits_douane#sec-dd,sans objet,
+droits-consommation,autres_impots_produits,D.214,snf;menages,apu_centrale,3809.4,fiscalite,fiscalite/_droits_consommation#sec-droits-consommation,sans objet,
+autres-impots-indirects,impots_production_importations,D.2,snf;menages,apu_centrale,5884.0,fiscalite,fiscalite/_taxes_fonds_speciaux#sec-fst-serie,non ventilée,
+irpp,impots_courants,D.5,menages,apu_centrale,11373.6,fiscalite,fiscalite/_impot_revenu#sec-irpp,non ventilée,
+impot-societes,impots_courants,D.5,snf;sf,apu_centrale,4657.2,fiscalite,fiscalite/_impot_societes#sec-impot-societes,non ventilée,
+remunerations-etat,remuneration_salaries,D.1,apu_centrale,menages,21696.6,remunerations_publiques,remunerations_publiques/_regime_indiciaire#sec-ri-reperes-budgetaires,non ventilée,
+equipement-etat,fbcf,P.51g,apu_centrale,,9147.0,investissement,investissement/index#sec-invest-etat,sans objet,
+interets-dette-etat,interets,D.41,apu_centrale,sf;rdm;menages,5830.5,annexe-dette-publique,annexe-dette-publique#sec-dette-service,non ventilée,
+compensation,subventions_produits,D.31,apu_centrale,snf;menages,-11479.5,compensation,compensation/_depense#sec-compensation-longue-periode,sans objet,
+cotisations-sociales,cotisations_sociales,D.61,menages,apu_secu,,cotisations_sociales,cotisations_sociales/_bilan#sec-cot-rendement,sans montant,
+pensions,prestations_especes,D.62,apu_secu,menages,,retraites,retraites/_secteur_prive#sec-vue-ensemble,sans montant,
+prestations-familiales,prestations_especes,D.62,apu_secu,menages,,prestations_sociales,prestations_sociales/_prestations_familiales#sec-pf-longue-periode,sans montant,
+assistance-sociale,prestations_especes,D.62,apu_centrale,menages,,prestations_sociales,prestations_sociales/_non_contributives#sec-nc-vue-ensemble,sans montant,
+consommation-sante,consommation_finale,P.3,apu_centrale;apu_secu,,,sante,sante/_couverture#sec-sante-couverture,sans montant,
+consommation-education,consommation_finale,P.3,apu_centrale,,,education,education/_depense#sec-educ-depense,sans montant,
+transferts-collectivites,transferts_entre_administrations,D.73,apu_centrale,apu_locale,599.1,finances_locales,finances_locales/_transferts#sec-fl-transferts,établie,apu_centrale
+taxe-formation-professionnelle,autres_impots_production,D.29,snf;sf,apu_centrale,,cotisations_sociales,cotisations_sociales/_prelevements_salaires#sec-cot-tfp,sans montant,
+foprolos,autres_impots_production,D.29,snf;sf,apu_centrale,,cotisations_sociales,cotisations_sociales/_prelevements_salaires#sec-cot-foprolos,sans montant,
+moyens-services-etat,consommation_intermediaire,P.2,apu_centrale,snf,2273.7,annexe-budget-etat,annexe-budget-etat#sec-bud-desagregation,sans objet,
+transferts-capital-etat,transferts_capital,D.9,apu_centrale,snf;menages,,investissement,investissement/index#sec-invest-transferts-capital,sans montant,
+soins-assurance-maladie,consommation_finale,P.3,apu_secu,menages,,prestations_sociales,prestations_sociales/_soins#sec-soins-vue,sans montant,

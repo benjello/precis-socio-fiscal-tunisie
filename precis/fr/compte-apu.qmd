@@ -64,14 +64,14 @@ Les budgets de l'État chiffrent l'administration centrale ; les sous-secteurs s
 ```{python}
 #| echo: false
 #| output: asis
-print("| Poste | Opération | Verse | Reçoit | Montant | Section |")
-print("|---|---|---|---|--:|---|")
+print("| Poste | Opération | Verse | Reçoit | Montant | Contrepartie | Section |")
+print("|---|---|---|---|--:|---|---|")
 for l in _f:
     vol, sec = l["section"].split("#")
     lien = "[" + l["volume"] + "](" + vol + ".html#" + sec + ")"
     print(f"| {l['poste']} | {l['code_scn']} | {l['verse'].replace(';', ', ')} | {l['recoit'].replace(';', ', ')} | "
-          f"{n(l['montant_md'])} | {lien} |")
-print(f"\n: Les postes du pilote, leurs secteurs et leur section domicile, {AN} (millions de dinars courants ; montant vide : pas de série vérifiée) {{#tbl-capu-flux}}")
+          f"{n(l['montant_md'])} | {l.get('contrepartie', '')}{' (' + l['contrepartie_secteur'] + ')' if l.get('contrepartie_secteur') else ''} | {lien} |")
+print(f"\n: Les postes, leurs secteurs, leur contrepartie et leur section domicile, {AN} (millions de dinars courants ; montant vide : pas de série vérifiée ; contrepartie « établie » quand la source désigne le secteur qui paie, « non ventilée » quand les comptes ne la publient pas, « sans objet » pour une opération sur produits ou un impôt sur les produits) {{#tbl-capu-flux}}")
 ```
 
 ## Qui verse à qui {#sec-capu-qui-verse}

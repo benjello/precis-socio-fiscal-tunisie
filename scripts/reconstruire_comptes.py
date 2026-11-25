@@ -194,7 +194,8 @@ def main(argv=None) -> int:
             pass
     flux = [{"poste": p["poste"], "operation": p["operation"], "code_scn": p["code_scn"], "verse": p["secteur_verse"],
              "recoit": p["secteur_recoit"], "montant_md": p["montant_reference"], "volume": p["volume"],
-             "section": (f"{p['volume']}/{p['chapitre']}" if p["chapitre"] else p["volume"]) + f"#{p['ancre']}"}
+             "section": (f"{p['volume']}/{p['chapitre']}" if p["chapitre"] else p["volume"]) + f"#{p['ancre']}",
+             "contrepartie": p.get("contrepartie_statut", ""), "contrepartie_secteur": p.get("contrepartie_secteur", "")}
             for p in postes]
     if a.verifier:
         for e in erreurs:
