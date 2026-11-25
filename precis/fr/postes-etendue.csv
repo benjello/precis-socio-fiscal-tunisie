@@ -24,12 +24,12 @@ soins-assurance-maladie,consommation_finale,emplois,apu_secu,menages,cnam-compte
 cotisations-cnrps,cotisations_sociales,ressources,menages;apu_centrale,apu_secu,cnrps-regime-general-finances,recettes : total du régime général (rapport d'activité,2019,2020,2,2019-2020
 pensions-cnrps,prestations_especes,emplois,apu_secu,menages,cnrps-regime-general-finances,dépenses : total du régime général (rapport d'activité,2019,2020,2,2019-2020
 cotisations-cnam,cotisations_sociales,ressources,menages,apu_secu,minfin-ep-caisses,CNAM|recettes techniques,2020,2023,4,2020-2023
-exportations-biens,exportations_biens,emplois,rdm,,bct-bdp-postes-s2,P.61,2022,2024,3,2022-2024
-importations-biens,importations_biens,ressources,,rdm,bct-bdp-postes-s2,P.71,2023,2024,2,2023-2024
-exportations-services,exportations_services,emplois,rdm,,bct-bdp-postes-s2,P.62,2019,2024,6,2019-2024
-importations-services,importations_services,ressources,,rdm,bct-bdp-postes-s2,P.72,2019,2024,6,2019-2024
+exportations-biens,exportations_biens,emplois,rdm,,bct-bdp-postes-s2,P.61,1994,2024,31,1994-2024
+importations-biens,importations_biens,ressources,,rdm,bct-bdp-postes-s2,P.71,1994,2024,30,1994-2021 et 2023-2024
+exportations-services,exportations_services,emplois,rdm,,bct-bdp-postes-s2,P.62,1995,2024,30,1995-2024
+importations-services,importations_services,ressources,,rdm,bct-bdp-postes-s2,P.72,1994,2024,31,1994-2024
 remunerations-recues-du-rdm,remuneration_salaries,emplois,rdm,menages,bct-bdp-postes-s2,D.1 rémunération reçue,2019,2024,6,2019-2024
-remunerations-versees-au-rdm,remuneration_salaries,ressources,snf;sf;apu_centrale,rdm,bct-bdp-postes-s2,D.1 rémunération versée,2019,2024,6,2019-2024
+remunerations-versees-au-rdm,remuneration_salaries,ressources,snf;sf;apu_centrale,rdm,bct-bdp-postes-s2,D.1 rémunération versée,1994,2024,31,1994-2024
 redevance-gazoduc,loyers,ressources,rdm,apu_centrale,minfin-recettes-non-fiscales,redevance_gazoduc,1986,2025,40,1986-2025
 remunerations-collectivites,remuneration_salaries,emplois,apu_locale,menages,finances-locales-communes-agregats,remunerations,2008,2023,16,2008-2023
 moyens-services-collectivites,consommation_intermediaire,emplois,apu_locale,snf,finances-locales-communes-agregats,moyens_des_services,2008,2023,16,2008-2023

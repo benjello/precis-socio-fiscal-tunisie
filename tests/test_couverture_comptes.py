@@ -250,9 +250,22 @@ def test_redevance_gazoduc_hors_des_loyers_en_base_1997():
     assert not rc.poste_hors_base("redevance-gazoduc", "2015")
     reg = {p["poste"]: p for p in rc.lire_csv(rc.REGISTRE)}
     assert reg["redevance-gazoduc"]["operation"] == "loyers"
+
+def test_postes_du_reste_du_monde_par_base():
+    """Exportations de services hors des bases 1997 et 1983 (redevance du gazoduc comptée en production de
+    transport, vol. A 2015-2020, p. 17), importations de services hors de la base 1983 (biens CAF) ; P.61, P.71
+    et P.72 de la balance en MBP5 chiffrent le reste du monde en base 1997."""
+    import reconstruire_comptes as rc
+    for b in ("1997", "1983"):
+        assert rc.poste_hors_base("exportations-services", b)
+    assert not rc.poste_hors_base("exportations-services", "2015")
+    assert rc.poste_hors_base("importations-services", "1983")
+    assert not rc.poste_hors_base("importations-services", "1997")
     a = _annees()
-    for y in range(2005, 2015):  # le reste du monde n'a plus d'opération chiffrée propre en base 1997
-        assert a[(y, "S2")]["justesse_pct"] == "", y
+    for y in range(2005, 2015):
+        assert a[(y, "S2")]["base"] == "1997", y
+        assert a[(y, "S2")]["operations_justesse"] == "3", y
+        assert 99.0 <= float(a[(y, "S2")]["justesse_pct"]) <= 102.0, y
 
 
 def test_controles_en_echec_portee():

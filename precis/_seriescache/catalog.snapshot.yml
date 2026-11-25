@@ -7784,13 +7784,14 @@
     ne pas suggérer une caution officielle ni tromper sur le contenu ; droit tunisien'
 - id: bct-bdp-postes-s2
   titre: 'Reste du monde : postes du compte de l''INS tirés de la balance des paiements
-    de la BCT, passage du travail à façon compris, 2019-2024'
+    de la BCT, passage du travail à façon compris, 1994-2024'
   sources:
   - bct-balance-paiements
   build: scripts/passage_bdp_scn.py
   raw:
   - data/raw/bct-archives/106
   - sources/bct-produits-transformes.csv
+  - sources/bct-bdp-passage-mbp5-mbp6.csv
   output: data/processed/bct/bct_bdp_postes_s2.csv
   unite: millions de dinars courants
   perimetre: 'une ligne par (année, indicateur) : P.61 (biens + exportations de produits
@@ -7798,7 +7799,9 @@
     de fabrication − redevance gaz), P.72, D.1 et D.4 reçus et versés, D.7 versés,
     puis, du revenu secondaire en crédits (1.3), les administrations publiques, les
     transferts personnels et, dont, les envois de fonds des travailleurs ; dernière
-    édition de la balance des paiements qui publie l''année'
+    édition de la balance des paiements qui publie l''année. Présentation MBP6 (2019-2024)
+    quand tous les termes y sont publiés, sinon MBP5 (colonne presentation) : P.61
+    et P.71 en 1994-2021, P.62 en 1995-2018, P.72 et D.1 versée en 1994-2018'
   caveats: 'Les montants de produits transformés et d''importations pour fabrication
     viennent du texte des rapports de la BCT, au dixième de milliard (sources/bct-produits-transformes.csv)
     : P.61 en 2022-2024, P.71 en 2023-2024 seulement (2022 : « plus de 20 milliards
@@ -7812,13 +7815,26 @@
     range les administrations publiques sous D.61, D.62+D.63, D.74, D.75, et les transferts
     personnels sans code SCN (le SCN 2008 les nomme D.752). Le D.7+D.5 du reste du
     monde en emplois (11 645,4 en 2023) n''est pas décomposé par secteur de contrepartie
-    : sources/bct-bdp-passage-scn.csv'
+    : sources/bct-bdp-passage-scn.csv Années MBP5 : P.61 = exportations de marchandises
+    FOB (brut, travail à façon compris), P.71 = importations FOB, P.62 = services
+    moins redevance gaz (1994 vide : l''édition 1997 n''imprime pas la redevance),
+    P.72 = services (dépenses), D.1 versée = autres revenus du travail (dépenses).
+    Recouvrement 2015-2021 avec les comptes de la nation (base 2015) : P.61 99,7-99,8
+    %, P.71 96,4-98,1 %, P.62 94,3-98,1 %, P.72 115-121 % (contre 107-111 % en MBP6,
+    2019-2021 : le MBP5 compte l''assurance en brut), D.1 versée 61-93 %. D.1 reçue,
+    D.4, D.7 et sous-postes du revenu secondaire restent vides avant 2019 : le raccord
+    MBP5-MBP6 n''est pas établi ou un terme n''est pas publié en MBP5. Rupture entre
+    2018 (MBP5) et 2019 (MBP6) pour P.62 et P.72 : en 2019, 12 284,2 contre 13 007,3
+    et 9 198,7 contre 8 651,7 (assurance brute en MBP5). La sous-traitance et la transformation
+    comprises dans « grands travaux et services techniques » (texte des rapports)
+    restent dans P.62, non chiffrées.'
   titre_ar: 'بقية العالم: بنود حساب المعهد الوطني للإحصاء المستخرجة من ميزان المدفوعات،
-    2019-2024'
+    1994-2024'
   unite_ar: ملايين الدنانير الجارية
   perimetre_ar: 'سطر لكل سنة ومؤشر: صادرات وواردات السلع والخدمات بعد احتساب التحويل
     لفائدة الغير، والأجور ومداخيل الاستثمار والتحويلات الجارية'
   caveats_ar: مبالغ المنتجات المحولة مأخوذة من نص تقارير البنك المركزي بدقة عُشر المليار.
+    السنوات السابقة لسنة 2019 مأخوذة من عرض الطبعة الخامسة.
   fiche: sources/bct-balance-paiements.md
 - id: minfin-ep-caisses
   titre: 'CNSS, CNRPS et CNAM : comptes de résultat d''après le rapport sur les entreprises

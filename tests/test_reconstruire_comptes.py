@@ -86,9 +86,13 @@ class TestReconstruction(unittest.TestCase):
         self.assertIn("chiffre les années 2019, 2021 et 2023, non", rc.fin_encadre(sans, 2020, [2019, 2021, 2023]))
         self.assertIn("chiffre l'année 2023, non", rc.fin_encadre(sans, 2020, [2023]))
         self.assertEqual(rc.liste_annees([2008, 2009, 2010, 2022, 2023]), "2008-2010 et 2022-2023")
-        # années lues dans la série : P.61 n'a de valeur qu'à partir de 2022 ; fenêtre d'un poste borné respectée
-        p61 = {"serie": "bct-bdp-postes-s2", "colonne": "P.61 exportations de biens"}
-        self.assertEqual(rc.annees_chiffrees(p61), [2022, 2023, 2024])
+        # années lues dans la série, indicateur par indicateur : P.71 dès 1994 sauf 2022 (ni MBP5 ni MBP6), D.1
+        # reçue en 2019-2024 seulement ; fenêtre d'un poste borné respectée
+        p71 = {"serie": "bct-bdp-postes-s2", "colonne": "P.71 importations de biens"}
+        self.assertEqual(rc.annees_chiffrees(p71), [y for y in range(1994, 2025) if y != 2022])
+        self.assertEqual(rc.montant("bct-bdp-postes-s2", "D.1 rémunération reçue", 0)[1], "2019-2024")
+        self.assertEqual(rc.annees_chiffrees({"serie": "bct-bdp-postes-s2", "colonne": "D.1 rémunération reçue"}),
+                         list(range(2019, 2025)))
         self.assertEqual(rc.annees_chiffrees({"serie": "minfin-ep-caisses", "colonne": "CNSS|recettes techniques|2021-2023"}),
                          [2021, 2022, 2023])
         self.assertEqual(rc.annees_chiffrees({"serie": "", "colonne": ""}), [])
