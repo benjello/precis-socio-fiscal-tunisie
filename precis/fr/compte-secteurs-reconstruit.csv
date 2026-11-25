@@ -28,7 +28,7 @@ annee,edition,secteur,nom,cote,code_scn,operation,libelle_ins,valeur_md,part_pct
 2020,2020-2024,S14,ménages,ressources,D.61,cotisations_sociales,Cotisations sociales,147.7,0.1,
 2020,2020-2024,S14,ménages,ressources,D.72,indemnites_assurance_dommages,Indemnités d'assurance-dommages,358.3,0.2,
 2020,2020-2024,S14,ménages,ressources,D.62,prestations_especes,Prestations sociales en espece,12393.3,8.6,pensions;prestations-familiales;assistance-sociale;pensions-cnrps
-2020,2020-2024,S14,ménages,ressources,D.75,transferts_courants_divers,Autres transferts courants divers,8102.1,5.6,
+2020,2020-2024,S14,ménages,ressources,D.75,transferts_courants_divers,Autres transferts courants divers,8102.1,5.6,transferts-personnels-recus-du-rdm
 2020,2020-2024,S14,ménages,ressources,P.11,production_marchande,Production marchande,55753.8,38.6,
 2020,2020-2024,S14,ménages,ressources,P.13,production_non_marchande,Production non marchande,8276.6,5.7,
 2020,2020-2024,S11,sociétés non financières,emplois,D.41,interets,Intérêts,2330.4,2.1,
@@ -87,7 +87,7 @@ annee,edition,secteur,nom,cote,code_scn,operation,libelle_ins,valeur_md,part_pct
 2020,2020-2024,S2,reste du monde,emplois,D.5,impots_courants,Impôts courants sur les revenus et le patrimoine,321.0,0.6,
 2020,2020-2024,S2,reste du monde,emplois,D.72,indemnites_assurance_dommages,Indemnités d'assurance-dommages,2.5,0.0,
 2020,2020-2024,S2,reste du monde,emplois,D.71,primes_assurance_dommages,Primes nettes d'assurance-dommages,95.0,0.2,
-2020,2020-2024,S2,reste du monde,emplois,D.75,transferts_courants_divers,Autres transferts courants divers,6526.8,11.9,
+2020,2020-2024,S2,reste du monde,emplois,D.75,transferts_courants_divers,Autres transferts courants divers,6526.8,11.9,transferts-personnels-recus-du-rdm
 2020,2020-2024,S2,reste du monde,emplois,P.61,exportations_biens,Exportation de biens,38830.9,70.7,exportations-biens
 2020,2020-2024,S2,reste du monde,emplois,P.62,exportations_services,Exportation de services,6570.2,12.0,exportations-services
 2020,2020-2024,S2,reste du monde,ressources,D.41,interets,Intérêts,2197.7,3.6,interets-dette-etat

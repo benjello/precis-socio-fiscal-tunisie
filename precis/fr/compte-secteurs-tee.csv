@@ -94,7 +94,7 @@ annee,edition,page,rang,cote,code_scn,operation,occurrence,libelle_ins,nature,co
 2019,2019-2023,116,20,emplois,D.7,autres_transferts_courants,0,Autres transferts courants,operation,,S13,3482.2,,transferts-collectivites
 2019,2019-2023,116,20,emplois,D.7,autres_transferts_courants,0,Autres transferts courants,operation,,S14,863.0,transferts-courants-verses-au-rdm,
 2019,2019-2023,116,20,emplois,D.7,autres_transferts_courants,0,Autres transferts courants,operation,,S1,7421.7,,
-2019,2019-2023,116,20,emplois,D.7,autres_transferts_courants,0,Autres transferts courants,operation,,S2,6616.2,,
+2019,2019-2023,116,20,emplois,D.7,autres_transferts_courants,0,Autres transferts courants,operation,,S2,6616.2,,transferts-personnels-recus-du-rdm
 2019,2019-2023,116,20,emplois,D.7,autres_transferts_courants,0,Autres transferts courants,operation,,TOTAL,14037.9,,
 2019,2019-2023,116,21,emplois,B.6g,revenu_disponible_brut,0,Revenu disponible brut,solde,,S11,2078.3,,
 2019,2019-2023,116,21,emplois,B.6g,revenu_disponible_brut,0,Revenu disponible brut,solde,,S12,2346.8,,
@@ -265,7 +265,7 @@ annee,edition,page,rang,cote,code_scn,operation,occurrence,libelle_ins,nature,co
 2019,2019-2023,117,57,ressources,D.7,autres_transferts_courants,0,Autres transferts courants,operation,,S11,526.1,,
 2019,2019-2023,117,57,ressources,D.7,autres_transferts_courants,0,Autres transferts courants,operation,,S12,992.7,,
 2019,2019-2023,117,57,ressources,D.7,autres_transferts_courants,0,Autres transferts courants,operation,,S13,3966.4,,transferts-collectivites
-2019,2019-2023,117,57,ressources,D.7,autres_transferts_courants,0,Autres transferts courants,operation,,S14,7927.7,,
+2019,2019-2023,117,57,ressources,D.7,autres_transferts_courants,0,Autres transferts courants,operation,,S14,7927.7,,transferts-personnels-recus-du-rdm
 2019,2019-2023,117,57,ressources,D.7,autres_transferts_courants,0,Autres transferts courants,operation,,S1,13412.9,,
 2019,2019-2023,117,57,ressources,D.7,autres_transferts_courants,0,Autres transferts courants,operation,,S2,625.0,transferts-courants-verses-au-rdm,
 2019,2019-2023,117,57,ressources,D.7,autres_transferts_courants,0,Autres transferts courants,operation,,TOTAL,14037.9,,
@@ -453,7 +453,7 @@ annee,edition,page,rang,cote,code_scn,operation,occurrence,libelle_ins,nature,co
 2020,2020-2024,116,20,emplois,D.7,autres_transferts_courants,0,Autres transferts courants,operation,,S13,4439.2,,transferts-collectivites
 2020,2020-2024,116,20,emplois,D.7,autres_transferts_courants,0,Autres transferts courants,operation,,S14,451.6,transferts-courants-verses-au-rdm,
 2020,2020-2024,116,20,emplois,D.7,autres_transferts_courants,0,Autres transferts courants,operation,,S1,7323.6,,
-2020,2020-2024,116,20,emplois,D.7,autres_transferts_courants,0,Autres transferts courants,operation,,S2,7090.9,,
+2020,2020-2024,116,20,emplois,D.7,autres_transferts_courants,0,Autres transferts courants,operation,,S2,7090.9,,transferts-personnels-recus-du-rdm
 2020,2020-2024,116,20,emplois,D.7,autres_transferts_courants,0,Autres transferts courants,operation,,TOTAL,14414.5,,
 2020,2020-2024,116,21,emplois,B.6g,revenu_disponible_brut,0,Revenu disponible brut,solde,,S11,1871.5,,
 2020,2020-2024,116,21,emplois,B.6g,revenu_disponible_brut,0,Revenu disponible brut,solde,,S12,2439.9,,
@@ -623,7 +623,7 @@ annee,edition,page,rang,cote,code_scn,operation,occurrence,libelle_ins,nature,co
 2020,2020-2024,117,57,ressources,D.7,autres_transferts_courants,0,Autres transferts courants,operation,,S11,433.7,,
 2020,2020-2024,117,57,ressources,D.7,autres_transferts_courants,0,Autres transferts courants,operation,,S12,923.1,,
 2020,2020-2024,117,57,ressources,D.7,autres_transferts_courants,0,Autres transferts courants,operation,,S13,4041.0,,transferts-collectivites
-2020,2020-2024,117,57,ressources,D.7,autres_transferts_courants,0,Autres transferts courants,operation,,S14,8460.4,,
+2020,2020-2024,117,57,ressources,D.7,autres_transferts_courants,0,Autres transferts courants,operation,,S14,8460.4,,transferts-personnels-recus-du-rdm
 2020,2020-2024,117,57,ressources,D.7,autres_transferts_courants,0,Autres transferts courants,operation,,S1,13858.2,,
 2020,2020-2024,117,57,ressources,D.7,autres_transferts_courants,0,Autres transferts courants,operation,,S2,556.3,transferts-courants-verses-au-rdm,
 2020,2020-2024,117,57,ressources,D.7,autres_transferts_courants,0,Autres transferts courants,operation,,TOTAL,14414.5,,
@@ -806,7 +806,7 @@ annee,edition,page,rang,cote,code_scn,operation,occurrence,libelle_ins,nature,co
 2023,2021-2025,120,19,emplois,D.7,autres_transferts_courants,0,Autres transferts courants,operation,,S13,4789.4,,transferts-collectivites
 2023,2021-2025,120,19,emplois,D.7,autres_transferts_courants,0,Autres transferts courants,operation,,S14,625.7,transferts-courants-verses-au-rdm,
 2023,2021-2025,120,19,emplois,D.7,autres_transferts_courants,0,Autres transferts courants,operation,,S1,8643.0,,
-2023,2021-2025,120,19,emplois,D.7,autres_transferts_courants,0,Autres transferts courants,operation,,S2,11036.7,,
+2023,2021-2025,120,19,emplois,D.7,autres_transferts_courants,0,Autres transferts courants,operation,,S2,11036.7,,transferts-personnels-recus-du-rdm
 2023,2021-2025,120,19,emplois,D.7,autres_transferts_courants,0,Autres transferts courants,operation,,TOTAL,19679.8,,
 2023,2021-2025,120,20,emplois,B.6g,revenu_disponible_brut,0,Revenu disponible brut,solde,,S11,2439.3,,
 2023,2021-2025,120,20,emplois,B.6g,revenu_disponible_brut,0,Revenu disponible brut,solde,,S12,3275.5,,
@@ -975,7 +975,7 @@ annee,edition,page,rang,cote,code_scn,operation,occurrence,libelle_ins,nature,co
 2023,2021-2025,121,56,ressources,D.7,autres_transferts_courants,0,Autres transferts courants,operation,,S11,658.3,,
 2023,2021-2025,121,56,ressources,D.7,autres_transferts_courants,0,Autres transferts courants,operation,,S12,1222.0,,
 2023,2021-2025,121,56,ressources,D.7,autres_transferts_courants,0,Autres transferts courants,operation,,S13,5082.2,,transferts-collectivites
-2023,2021-2025,121,56,ressources,D.7,autres_transferts_courants,0,Autres transferts courants,operation,,S14,11658.4,,
+2023,2021-2025,121,56,ressources,D.7,autres_transferts_courants,0,Autres transferts courants,operation,,S14,11658.4,,transferts-personnels-recus-du-rdm
 2023,2021-2025,121,56,ressources,D.7,autres_transferts_courants,0,Autres transferts courants,operation,,S1,18620.9,,
 2023,2021-2025,121,56,ressources,D.7,autres_transferts_courants,0,Autres transferts courants,operation,,S2,1058.8,transferts-courants-verses-au-rdm,
 2023,2021-2025,121,56,ressources,D.7,autres_transferts_courants,0,Autres transferts courants,operation,,TOTAL,19679.8,,

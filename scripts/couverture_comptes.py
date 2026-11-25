@@ -70,13 +70,18 @@ def feuilles(lignes: list[dict], garder: set | None = None) -> list[dict]:
     composante est imprimée (D.1 quand D.11 l'est ; la production quand la production non marchande l'est ;
     le total P.1 quand ses composantes le sont, y compris sous le même code, voir `totaux_meme_code`).
     Exception : un agrégat qui porte un poste de l'ouvrage (`garder`) alors qu'aucune de ses composantes
-    n'en porte est gardé, et ses composantes écartées (la masse salariale du budget chiffre D.1, pas D.11)."""
+    n'en porte est gardé, et ses composantes écartées (la masse salariale du budget chiffre D.1, pas D.11).
+    La règle se décide côté par côté : `garder` est soit un ensemble d'opérations valable pour les deux
+    côtés, soit un dictionnaire {côté : opérations} (voir `garder_par_cote`). Un poste en emplois ne fait
+    pas éclater l'agrégat des ressources, où un autre poste porte seul l'agrégat."""
     garder = garder or set()
+    par_cote = garder if isinstance(garder, dict) else {"emplois": garder, "ressources": garder}
     ls = [l for l in lignes if l["code_scn2008"] and not l["code_scn2008"].startswith(("B.", "F."))
           and str(l["sous_ligne"]) in ("0", "1")]
     out = []
     for cote in ("emplois", "ressources"):
         g = [l for l in ls if l["cote"] == cote]
+        garder = set(par_cote.get(cote, ()))
         totaux = totaux_meme_code(g)
         ecartees, totaux_gardes = [], []
         for tete, comps in totaux.values():
@@ -125,6 +130,17 @@ def postes_du_secteur(postes: list[dict], membres: tuple[str, ...]) -> dict:
 
 # L'INS inscrit les subventions versées par les administrations en ressources négatives du payeur.
 VERSEES_EN_RESSOURCES = {"subventions", "subventions_produits", "autres_subventions_production"}
+
+
+def garder_par_cote(rattaches: dict) -> dict:
+    """{côté : opérations qui y portent un poste du secteur} : les rôles de `postes_de_la_ligne` (qui verse
+    inscrit en emplois, qui reçoit en ressources, sauf les subventions, inscrites en ressources du payeur)."""
+    out = {"emplois": set(), "ressources": set()}
+    for op, liste in rattaches.items():
+        for cote in out:
+            if postes_de_la_ligne({"cote": cote, "operation": op}, rattaches):
+                out[cote].add(op)
+    return out
 
 
 def postes_de_la_ligne(l: dict, rattaches: dict) -> list:
