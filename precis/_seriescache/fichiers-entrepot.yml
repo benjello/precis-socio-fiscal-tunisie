@@ -1,0 +1,12 @@
+- fichier: raccord-scn-1968-1993-2008.csv
+  entrepot: tunisia-data
+  chemin: sources/ins-comptes-nationaux/raccord-scn-1968-1993-2008.csv
+  commit: ade8e6661a188e3e9a8fe91d9742031da764fb96
+  sha256: 29af970f8e660082eab2a937ecd0de055251bec1a5de7d2dfec60796a50212d6
+  commande: TUNISIA_DATA=<entrepôt à jour de main> uv run python scripts/fichiers_entrepot.py
+- fichier: cnat-secteurs-base1997-controles.csv
+  entrepot: tunisia-data
+  chemin: data/processed/ins-comptes-nationaux/cnat_secteurs_base1997_controles.csv
+  commit: ade8e6661a188e3e9a8fe91d9742031da764fb96
+  sha256: bace780010da6de962dccf3dcedeb834329431bae14880399df91ba6dfe546f5
+  commande: TUNISIA_DATA=<entrepôt à jour de main> uv run python scripts/fichiers_entrepot.py
