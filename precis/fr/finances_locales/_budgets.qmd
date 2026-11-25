@@ -421,6 +421,7 @@ Trois ruptures les traversent.
 | **Administration** | | |
 | Direction générale des collectivités locales, agrégats publiés [@dgct-donnees-ouvertes] | 2008-2019 | exécution des budgets des communes ; impôts un à un ; fonds commun, subventions annuelles et dotation exceptionnelle |
 | Même source, budgets par commune [@dgct-donnees-ouvertes] | 2018-2023 | prévisions et réalisations des 350 communes, sommées ici |
+| Haute Instance des finances locales, rapport annuel [@hifl-rapport-annuel-2020, p. 51] | 2017-2020 | dépenses du titre 1 des communes par partie : rémunérations, moyens des services, interventions, intérêts |
 | Caisse des prêts et de soutien des collectivités locales [@cpscl-etats-financiers] | 2005-2024 | dotations reçues de l'État, subventions et prêts accordés, créances impayées |
 | Institut national de la statistique, comptes de la nation [@ins-cnat-2015] | 2001-2025 | compte des collectivités locales, en trois bases successives ; PIB |
 | **Rapports de la Banque mondiale** | | |
@@ -590,7 +591,7 @@ figtools.figure_tabs(
 )
 ```
 
-- **Les rémunérations.** 201 MD en 2008 et 544 MD en 2019 selon les agrégats ; 693 MD en 2022 et 689 MD en 2023 selon la somme des budgets par commune. Rapportées aux recettes du titre I de la même année, elles en font de 43 % à 50 % de 2008 à 2019 — à l'arrondi près, le ratio « Rémunération » que publie la Direction générale —, puis 50,1 % en 2022 et 47,4 % en 2023.
+- **Les rémunérations.** 201 MD en 2008 et 544 MD en 2019 selon les agrégats ; 619 MD en 2020 selon le rapport annuel de la Haute Instance des finances locales [@hifl-rapport-annuel-2020, p. 51] ; 693 MD en 2022 et 689 MD en 2023 selon la somme des budgets par commune. Rapportées aux recettes du titre I de la même année, elles en font de 43 % à 50 % de 2008 à 2019 — à l'arrondi près, le ratio « Rémunération » que publie la Direction générale —, puis 50,1 % en 2022 et 47,4 % en 2023.
 - **Face au plafond de moitié.** Le plafond du code porte sur les prévisions et se rapporte aux recettes du titre I de l'année écoulée. Sur les réalisations, ce rapport va de 46 % à 57 % de 2009 à 2019, dont 52,0 % en 2019, première année où la règle s'applique aux communes ; il vaut 59 % en 2022, sur un dénominateur de 2021 non clos, et 49,8 % en 2023. Il ne dit pas si les budgets votés respectent la règle.
 
 ### Les quatre impôts locaux : sources budgétaires et rapport de la Banque mondiale de 1997 {#sec-fl-lp-impots}
@@ -718,7 +719,7 @@ Sources : comptes des communes [@dgct-donnees-ouvertes] ; comptes des collectivi
 Trois différences séparent les deux montants :
 
 - **périmètre** : les conseils régionaux, puis les régions, entrent au compte des collectivités locales et non dans les budgets des communes (@sec-fl-lp-ins) ;
-- **source du budget** : de 2008 à 2019, les rémunérations et les moyens des services sont les agrégats de la Direction générale des collectivités locales ; en 2022 et 2023, la somme des budgets par commune ; les intérêts de la dette sont cette somme de 2018 à 2023 (@sec-fl-lp-sources) ;
+- **source du budget** : de 2008 à 2019, les rémunérations et les moyens des services sont les agrégats de la Direction générale des collectivités locales ; en 2020, le rapport annuel de la Haute Instance des finances locales, qui couvre les 350 communes et redonne à 0,4 % près les rémunérations et les moyens des services des agrégats de 2017-2019 [@hifl-rapport-annuel-2020, p. 51 et annexe 12, p. 179] ; en 2022 et 2023, la somme des budgets par commune ; les intérêts de la dette sont cette somme de 2018 à 2023 (@sec-fl-lp-sources) ;
 - **exercice non clos** : les budgets par commune de 2021 sont une situation au 25 décembre 2021, ceux de 2023 une situation provisoire au 10 janvier 2024 [@dgct-donnees-ouvertes].
 
 Les écarts les plus forts, sur les moyens des services en `{python} moy_an_min` et sur les intérêts de la dette en `{python} int_an_min`, ne sont pas expliqués.
