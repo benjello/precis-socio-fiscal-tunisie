@@ -105,6 +105,10 @@ print(f"La part du montant couverte des administrations publiques passe de {n(_a
       "sous-secteurs restent sans montant les années suivantes.")
 ```
 
+Les pensions versées par la sécurité sociale (D.62) sont chiffrées jusqu'en 2020 par les publications des deux caisses ; de 2021 à 2023, les cotisations le sont d'après le rapport du ministère des Finances sur les entreprises publiques, mais le D.62 de ces années reste sans montant.
+
+<!-- TODO (documentaliste) : pensions CNSS et CNRPS 2021-2023 cherchées le 25/11/2026 (sites des caisses, archives du web) sans résultat (docs/notes/collecte-sources-manquantes-2026-11-25.md) ; décision du 25/11/2026 (M17) : laisser non chiffré, aucun poste estimé. -->
+
 En postes, la couverture remonte plus loin que le compte en base 2015. @tbl-capu-longue-periode donne, pour chaque année de `{python} PA0` à `{python} AN1`, le nombre de postes chiffrés parmi les postes rattachés à chaque secteur ; `{python} PA0` est la première année où un poste de la sécurité sociale est chiffré. La part du montant couverte n'y figure qu'à partir de `{python} AN0`, parce que le compte des administrations publiques en base 2015 commence en `{python} AN0`, première année de l'édition `{python} ED0` [@ins-cnat-2015]. Les comptes des années antérieures relèvent d'autres bases ([les bases successives](annexe-pib.html#sec-pib-bases)) ; ils ne se raccordent pas au compte en base 2015 sans règle de chaînage entre bases, et aucun ne sert ici de dénominateur. <!-- TODO (comptable-national) : comptes des secteurs des bases 1997 et 1983 en cours de versement dans l'entrepôt de données (PR en brouillon) ; part du montant avant la base 2015 une fois ces bases versées et la règle de chaînage tranchée (question M10, docs/notes/questions-mahdi.md). La base 2015 est rétropolée jusqu'en 2010 pour le PIB (annexe-pib, tbl-pib-bases) : vérifier si des comptes des secteurs 2010-2014 en base 2015 sont publiés (règle docs/procedures/affirmer-une-absence.md). -->
 
 ::: {.callout-note collapse="true" title="La couverture année par année, sur toute la période des séries"}
