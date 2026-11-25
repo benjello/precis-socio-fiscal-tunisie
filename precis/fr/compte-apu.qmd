@@ -106,7 +106,7 @@ Pour chaque opération du compte des administrations publiques consolidées, le 
 ```{python}
 #| echo: false
 #| output: asis
-print("| Opération | Côté | INS | Postes | Résidu | Justesse | Résidu nommé |")
+print("| Opération | Emplois ou ressources | INS | Postes | Résidu | Justesse | Résidu nommé |")
 print("|---|---|--:|--:|--:|--:|---|")
 for l in _r:
     if l["secteur"] == "S13" and l["somme_postes_md"] != "":

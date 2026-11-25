@@ -49,7 +49,7 @@ print(f"\n: Les cases des comptes des secteurs qui ont un domicile dans l'ouvrag
 for code, ancre in (("S14", "menages"), ("S11", "snf"), ("S12", "sf"), ("S2", "rdm")):
     ls = [l for l in _l if l["secteur"] == code]
     print(f"\n## {ls[0]['nom'].capitalize()} ({code}) {{#sec-csec-{ancre}}}\n")
-    print("| Côté | Opération | Montant | Poids dans les emplois ou les ressources du secteur | Postes de l'ouvrage |")
+    print("| Emplois ou ressources | Opération | Montant | Poids dans les emplois ou les ressources du secteur | Postes de l'ouvrage |")
     print("|---|---|--:|--:|---|")
     for l in ls:
         print(f"| {l['cote']} | {l['code_scn']} {l['libelle_ins']} | {n(l['valeur_md'])} | {n(l['part_pct'])} % | {l['postes'].replace(';', ', ') or '—'} |")
