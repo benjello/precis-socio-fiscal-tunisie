@@ -187,7 +187,7 @@ print("Les comptes de la nation ne publient pas les cotisations caisse par caiss
       "des trois caisses, rapprochée des cotisations sociales (D.61) reçues par la sécurité sociale (S1314) "
       f"(@tbl-cot-pensions-passage-s1314). La somme dépasse le montant des comptes de {pc.pct(_L[2020][3] - 100)} "
       f"en 2020 et de {pc.pct(min(_apres) - 100)} à {pc.pct(max(_apres) - 100)} de {_ans[1]} à {_ans[-1]}. "
-      "Avec les recettes techniques de la caisse entière pour la CNRPS au lieu de celles du régime général, "
+      "Avec les recettes techniques de la caisse entière pour la CNRPS au lieu des recettes du régime général, "
       f"l'écart de 2020 serait de {pc.pct(_b[3] - 100)}.\n")
 print("| Année | CNSS | CNRPS | CNAM | Somme | Comptes (D.61, S1314) | Somme / comptes |")
 print("|---|--:|--:|--:|--:|--:|--:|")
