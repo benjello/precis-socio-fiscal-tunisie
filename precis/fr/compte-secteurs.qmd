@@ -98,16 +98,16 @@ LIB = {"importations": "importations", "exportations": "exportations", "producti
        "valeur_ajoutee_brute": "valeur ajoutée brute", "solde_echanges_exterieurs": "solde des échanges extérieurs de biens et services",
        "remuneration_salaries": "rémunération des salariés",
        "impots_nets_production_importations": "impôts moins subventions sur la production et les importations",
-       "impots_nets_production": "autres impôts moins autres subventions sur la production",
-       "revenu_exploitation": "excédent d'exploitation ou revenu mixte", "revenus_propriete": "revenus de la propriété",
-       "interets": "dont intérêts", "D.42": "revenus distribués des sociétés (dividendes)",
-       "solde_revenus_primaires": "solde des revenus primaires", "impots_courants": "impôts courants sur le revenu et le patrimoine",
+       "impots_nets_production": "autres impôts moins subventions sur la production",
+       "revenu_exploitation": "revenu d'exploitation", "revenus_propriete": "revenus de la propriété",
+       "interets": "dont intérêts", "D.42": "revenus distribués par les entreprises",
+       "solde_revenus_primaires": "solde des revenus primaires", "impots_courants": "impôts courants sur les revenus et le patrimoine",
        "cotisations_sociales": "cotisations sociales", "prestations_especes": "prestations sociales en espèces",
        "autres_transferts_courants": "autres transferts courants", "revenu_disponible_brut": "revenu disponible brut",
        "transferts_sociaux_nature": "transferts sociaux en nature", "revenu_disponible_ajuste": "revenu disponible ajusté",
        "consommation_finale": "dépense de consommation finale", "epargne_brute": "épargne brute",
        "solde_operations_courantes": "solde des opérations courantes avec l'extérieur", "fbcf": "formation brute de capital fixe",
-       "variation_stocks": "variations des stocks", "actifs_non_produits": "acquisitions moins cessions d'actifs non produits",
+       "variation_stocks": "variation de stocks", "actifs_non_produits": "acquisitions moins cessions d'actifs non produits",
        "capacite_financement": "capacité ou besoin de financement",
        "transferts_capital_a_recevoir": "transferts en capital à recevoir", "transferts_capital": "transferts en capital à payer (imprimés en négatif)",
        "solde_creances_dettes": "solde des créances et des dettes", "or_dts": "or monétaire et DTS", "numeraire_depots": "numéraire et dépôts",
@@ -183,7 +183,7 @@ for col, ancre in (("S11", "snf"), ("S12", "sf"), ("S13", "apu"), ("S14", "menag
 
 ### Les identités et leurs résidus {#sec-csec-tee-identites}
 
-Les identités se recalculent à partir des valeurs publiées ; rien n'est corrigé. La séquence des soldes est vérifiée secteur par secteur et pour l'économie totale : valeur ajoutée brute (B.1g = P.1 − P.2), excédent d'exploitation ou revenu mixte (B.2g/B.3g = B.1g − D.1 − autres impôts nets sur la production ; l'INS l'imprime « revenu d'exploitation »), solde des revenus primaires (B.5g), revenu disponible brut (B.6g), revenu disponible ajusté (B.7g = B.6g + D.63 reçus − D.63 versés), épargne brute (B.8g = B.6g − P.3, le TEE n'imprimant ni la consommation effective ni l'ajustement pour droits à pension D.8) et capacité de financement (B.9 = B.8g + transferts en capital nets − P.51g − P.52 − actifs non produits). S'y ajoutent le solde du compte financier (B.9f, différence des flux de créances et de dettes), l'écart entre B.9 et B.9f, la somme des quatre secteurs comparée à l'économie totale, le total de chaque ligne, l'égalité des emplois et des ressources de chaque opération et le report de chaque solde d'un compte au suivant. Les valeurs étant imprimées au dixième de million de dinars, un résidu inférieur à 0,05 million de dinars par terme est classé « égal aux arrondis près ».
+Les identités se recalculent à partir des valeurs publiées ; rien n'est corrigé. La séquence des soldes est vérifiée secteur par secteur et pour l'économie totale : valeur ajoutée brute (B.1g = P.1 − P.2), revenu d'exploitation (B.2g/B.3g = B.1g − D.1 − autres impôts nets sur la production ; l'INS réunit sous ce nom l'excédent d'exploitation et le revenu mixte, que le SCN 2008 distingue), solde des revenus primaires (B.5g), revenu disponible brut (B.6g), revenu disponible ajusté (B.7g = B.6g + D.63 reçus − D.63 versés), épargne brute (B.8g = B.6g − P.3, le TEE n'imprimant ni la consommation effective ni l'ajustement pour droits à pension D.8) et capacité de financement (B.9 = B.8g + transferts en capital nets − P.51g − P.52 − actifs non produits). S'y ajoutent le solde du compte financier (B.9f, différence des flux de créances et de dettes), l'écart entre B.9 et B.9f, la somme des quatre secteurs comparée à l'économie totale, le total de chaque ligne, l'égalité des emplois et des ressources de chaque opération et le report de chaque solde d'un compte au suivant. Les valeurs étant imprimées au dixième de million de dinars, un résidu inférieur à 0,05 million de dinars par terme est classé « égal aux arrondis près ».
 
 ```{python}
 #| echo: false
@@ -346,7 +346,7 @@ _d21_res = [k for k in _cmp if k["sec"] == "S13" and k["cote"] == "ressources" a
 assert len(_d21_res) == len(ANS) and all(k["statut"] != "écart" for k in _d21_res), _d21_res
 ```
 
-Les sections précédentes rattachent les postes de l'ouvrage aux opérations des comptes des secteurs, et c'est sur ces opérations que se mesure la part du compte que l'ouvrage chiffre. Le TEE publie les mêmes comptes sous une forme plus agrégée : une case y regroupe souvent plusieurs opérations des comptes des secteurs, par exemple les salaires et traitements (D.11) et les cotisations sociales à la charge des employeurs (D.12) dans la rémunération des salariés (D.1). Le passage compare chaque case de secteur du TEE à la somme des opérations que l'ouvrage retient des comptes des secteurs et que la case regroupe, dans la même édition, pour les `{python} nb_annees` années du TEE (`{python} an_premier`, `{python} an_ref` et `{python} an_dernier`). La tolérance est celle des identités : 0,05 million de dinars par terme.
+Les sections précédentes rattachent les postes de l'ouvrage aux opérations des comptes des secteurs, et c'est sur ces opérations que se mesure la part du compte que l'ouvrage chiffre. Le TEE publie les mêmes comptes sous une forme plus agrégée : une case y regroupe souvent plusieurs opérations des comptes des secteurs, par exemple les salaires bruts (D.11) et les cotisations sociales à la charge des employeurs (D.12) dans la rémunération des salariés (D.1). Le passage compare chaque case de secteur du TEE à la somme des opérations que l'ouvrage retient des comptes des secteurs et que la case regroupe, dans la même édition, pour les `{python} nb_annees` années du TEE (`{python} an_premier`, `{python} an_ref` et `{python} an_dernier`). La tolérance est celle des identités : 0,05 million de dinars par terme.
 
 Sur `{python} nb_cases` cases comparées, `{python} nb_egales` concordent, aux arrondis près. Deux traitements d'écriture sont compris dans ce compte. Les intérêts versés par les administrations publiques sont imprimés par le TEE après la correction des services d'intermédiation financière indirectement mesurés (SIFIM), que les comptes des secteurs donnent sur une ligne à part (`{python} sifim_ref` millions de dinars en `{python} an_ref`). Les transferts en capital à payer, imprimés par le TEE en ressources et en négatif, se comparent aux transferts en capital inscrits en emplois.
 

@@ -40,6 +40,13 @@
   `scripts/check_references_coherentes.py` refuse deux définitions divergentes ; un cas non
   résolu se déclare, daté et motivé, dans `scripts/references_tolerances.yml`.
 
+- **Comptabilité nationale : le terme de l'INS suivi du code du SCN, sauf définition différente**
+  (décision M16 du 25/11/2026). Quand la définition est la même, on écrit le terme que l'INS imprime
+  suivi du code du SCN, par exemple « impôts courants sur les revenus et le patrimoine (D.5) » ; on
+  n'emploie un autre terme, en disant l'écart, que si l'INS et le SCN désignent deux choses
+  différentes. La table `docs/conventions/vocabulaire-comptes-nationaux.csv` donne le terme retenu,
+  la nature de chaque écart et sa preuve ; `scripts/check_vocabulaire_comptes.py` relève les variantes
+  à éviter et les opérations nommées de plusieurs façons.
 - **Les volumes documentent la loi, jamais le modèle.** Ni `openfisca`, ni « le modèle », ni « les
   paramètres » dans le texte rendu d'un volume. La documentation générale — README, page
   « À propos » — peut, elle, dire d'où viennent les tableaux et nommer `openfisca-tunisia`. Un constat sur le modèle va dans un `<!-- TODO (rôle) : … -->`,
