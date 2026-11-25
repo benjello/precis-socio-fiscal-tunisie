@@ -4,17 +4,17 @@ côté des comptes,,ressources,,"§ 2.43, p. 20",,,côté droit des comptes cour
 côté des comptes,,variations des actifs,,"§ 2.45, p. 20",,,côté gauche des comptes d'accumulation,,,,,,
 côté des comptes,,variations des passifs et de la valeur nette,,"§ 2.45, p. 20",,,côté droit des comptes d'accumulation,,,,,,
 secteur,S11,sociétés non financières,,"§ 4.28, p. 65",,,,,,,,,
-secteur,S12,sociétés financières,,"§ 4.29, p. 65",,terme différent,l'INS imprime « institutions financières » dans plusieurs tableaux,,,,,,
-secteur,S13,administrations publiques,,"§ 4.30, p. 65",,terme différent,l'INS imprime aussi « administration publique » au singulier,,,,,,
+secteur,S12,sociétés financières,,"§ 4.29, p. 65",,terme différent,l'INS imprime « institutions financières » dans plusieurs tableaux,"même objet, prouvé par le texte","INS, Comptes de la nation 2015-2020, vol. B, p. 5 (nomenclature des secteurs en base 2015) : « S12 Sociétés financières (SF) » ; S12 = somme des sous-secteurs dans 43 cas sur 44",,,,
+secteur,S13,administrations publiques,,"§ 4.30, p. 65",,terme différent,l'INS imprime aussi « administration publique » au singulier,"même objet, prouvé par le texte","INS, Comptes de la nation 2015-2020, vol. B, p. 5 (nomenclature des secteurs en base 2015) : « S13 Administrations publiques (APU) », S1311, S1313, S1314 ; S13 = somme des sous-secteurs dans 33 cas sur 33",,,,
 secteur,S14,ménages,,"§ 4.32, p. 65",,,,,,,,,
-secteur,S2,reste du monde,,"§ 2.131, p. 31",,terme différent,l'INS imprime « opérations avec l'extérieur » et « extérieur »,,,,,,
+secteur,S2,reste du monde,,"§ 2.131, p. 31",,terme différent,l'INS imprime « opérations avec l'extérieur » et « extérieur »,"même objet, prouvé par le texte","INS, Comptes de la nation 2015-2020, vol. B, p. 5 (nomenclature des secteurs en base 2015) : « S2 Reste du monde » ; pour chaque opération de répartition, emplois = ressources avec le reste du monde dans 110 cas sur 110, correction SIFIM comprise",,,,
 solde,B.1g,valeur ajoutée brute,,"§ 6.8, p. 95 ; § 7.21, p. 135",Valeur ajoutée brute,,,,,,,,
 solde,B.2g/B.3g,excédent d'exploitation ou revenu mixte,,"§ 7.9, p. 132",Revenu d'exploitation,terme différent,l'INS imprime « revenu d'exploitation »,,,,,,
 solde,B.5g,solde des revenus primaires,,,Solde des revenus primaires / Revenu ; Solde des revenus primaires / Revenu national,,,,,,,,
 solde,B.6g,revenu disponible brut,,"§ 8.20, p. 161",Revenu disponible brut,,,,,,,,
 solde,B.8g,épargne brute,,"§ 9.26, p. 187",Epargne brute,graphie,,,,,,,
 solde,B.9,capacité ou besoin de financement,,"§ 22.77, p. 457",Capacité ou besoin de financement,,,,,,,,
-opération,P.52,variations des stocks,,"§ 10.118, p. 212",Variation de stocks,terme différent,,,,,,,
+opération,P.52,variations des stocks,,"§ 10.118, p. 212",Variation de stocks,terme différent,,"même objet, prouvé par l'arithmétique (31 cas)","formation brute de capital = FBCF + variation de stocks dans 31 cas sur 31 (tableau « investissement et financement », base 2015) ; SCN § 10.118",,,,
 opération,D.44,revenus d'investissements attribués aux assurés,,"§ 7.141, p. 156",Revenus de la propriété attribués aux assurés,terme différent,l'INS imprime « revenus de la propriété attribués aux assurés »,,,,,,
 opération,P.1,production,,"§ 6.24, p. 97",Production ; Production de SIFIM ; Production de services d’assurances ; Production des biens et services ; Production des biens et services marchands,,,,,,,,
 opération,P.11,production marchande,,"§ 6.99, p. 107",Production Marchande ; Production marchande,,,,,,,,
@@ -26,10 +26,10 @@ opération,D.1,rémunération des salariés,,"§ 7.42, p. 140",Rémunération de
 opération,D.11,salaires et traitements,,"§ 7.43, p. 140",Salaires bruts,terme différent,,,,,,,
 opération,D.12,cotisations sociales à la charge des employeurs,,"§ 7.56, p. 142",Cotis. sociales à la charge des employeurs,graphie,,,,,,,
 opération,D.2,impôts sur la production et les importations,,"§ 7.73, p. 143",Impôts sur la production et les importations,,,,,,,,
-opération,D.211,impôts du type TVA,,"§ 7.89, p. 145",TVA non déductible,terme différent,,,,,,,
+opération,D.211,impôts du type TVA,,"§ 7.89, p. 145",TVA non déductible,terme différent,,"même objet, prouvé par le texte et l'arithmétique","SCN 2008 § 6.61, p. 102 : système net, D.211 = TVA non déductible ; D.2 = D.211 + D.212 + D.213 + D.214 + D.29 dans 11 cas sur 11 (comptes des APU, base 2015)",,,,
 opération,D.212,droits et impôts sur les importations,,"§ 7.90, p. 146",Droits et impôts sur les importations (hors TVA),,,,,,,,
 opération,D.213,impôts sur les exportations,,"§ 7.95, p. 148",Impôts sur les Exportations,,,,,,,,
-opération,D.214,"impôts sur les produits, à l’exclusion de la TVA et des impôts sur les importations et les exportations",,"§ 7.96, p. 148",Autres impôts sur les produits,terme différent,,,,,,,
+opération,D.214,"impôts sur les produits, à l’exclusion de la TVA et des impôts sur les importations et les exportations",,"§ 7.96, p. 148",Autres impôts sur les produits,terme différent,,"même objet, prouvé par l'arithmétique (11 cas)",D.2 = D.211 + D.212 + D.213 + D.214 + D.29 dans 11 cas sur 11,,,,
 opération,D.29,autres impôts sur la production,,"§ 7.97, p. 149",Autres Impôts sur la production,,,,,,,,
 opération,D.3,subventions,,"§ 7.98, p. 149",Subventions,,,,,,,,
 opération,D.31,subventions sur les produits,,"§ 7.100, p. 149",Subventions sur les produits,,,,,,,,
@@ -59,8 +59,8 @@ balance des paiements,,biens,,,,,,périmètre différent,"MBP6 : biens transform
 balance des paiements,,services,,,,,,périmètre différent,"la BCT compte en services la fabrication sur intrants de tiers et la redevance gaz (transports) ; l'INS ne les range pas en P.62 (passage établi, écart 2023 de −109,6 MD)","§ 10.8, p. 163",1.1.b. Services,Services,P.62 ; P.72
 balance des paiements,,services de fabrication fournis sur des intrants physiques détenus par des tiers,,,,,,périmètre différent,"rubrique propre au MBP6, sans équivalent dans les comptes de l'INS qui comptent les biens transformés en brut","§ 10.62, p. 175",Services de fabrication fournis sur des intrants physiques détenus par des tiers,,compris dans P.61 (en brut)
 balance des paiements,,revenu primaire,,,,,,nom seul (BCT = MBP6),libellé identique au MBP6,"§ 11.3, p. 199",1.2. Revenu primaire,,D.1 ; D.4
-balance des paiements,,rémunération des salariés,,,,,,non vérifiable,"même terme ; montants très différents de ceux de l'INS (crédits BdP 1 265,6 MD contre D.1 du reste du monde 230,9 en 2023) : écart non expliqué","§ 11.17, p. 202",Rémunération des salariés,,D.1
-balance des paiements,,revenus des investissements,,,,,,périmètre différent,"la BCT n'y range pas la redevance gaz (en services), que l'INS semble ranger en loyers (D.45)",,Revenus des investissements,,D.4 hors loyers
+balance des paiements,,rémunération des salariés,,,,,,"même définition annoncée, mesure différente","BCT 903 à 1 464 MD, INS 206 à 241 MD par an (2019-2024) ; envois de fonds des travailleurs repris par l'INS à l'identique (2022, 2023) ; MBP6 § 11.11 et 11.14 ; écart non expliqué : question A17","§ 11.17, p. 202",Rémunération des salariés,,D.1
+balance des paiements,,revenus des investissements,,,,,,périmètre différent,"la BCT range la redevance gaz en services de transport ; l'INS la reclasse « comme un revenu de propriété » (Comptes de la nation 2015-2020, vol. A, p. 17)",,Revenus des investissements,,D.4 hors loyers
 balance des paiements,,revenu secondaire,,,,,,périmètre différent,le revenu secondaire du MBP6 réunit transferts courants et impôts courants : il couvre D.5 et D.7 des comptes,"§ 12.1, p. 223",1.3. Revenu secondaire,,D.5 ; D.7
 balance des paiements,,compte de capital,,,,,,nom seul (BCT = MBP6),"libellé identique au MBP6 ; BCT, éd. 2024, p. 43 et 45 du fichier","§ 13.1, p. 233",2. Compte de capital,,D.9 ; NP
 balance des paiements,,compte financier,,,,,,nom seul (BCT = MBP6),"libellé identique au MBP6 ; libellé imprimé dans le tableau de la balance des paiements, BCT, éd. 2024, p. 44 et 46 du fichier","§ 8.1, p. 144",3. Compte financier,,F.1 à F.8 (TOF)
@@ -68,4 +68,4 @@ balance des paiements,,investissements directs,,,,,,classement différent,"le MB
 balance des paiements,,investissements de portefeuille,,,,,,classement différent,"idem ; libellé imprimé dans le tableau de la balance des paiements, BCT, éd. 2024, p. 44 et 46 du fichier","§ 6.54, p. 118",Investissements de portefeuille,Investissements de portefeuille,F.3 ; F.5
 balance des paiements,,autres investissements,,,,,,classement différent,"idem ; libellé imprimé dans le tableau de la balance des paiements, BCT, éd. 2024, p. 44 et 46 du fichier","§ 6.63, p. 120 (ventilation)",Autres investissements,Autres investissements,F.2 ; F.4 ; F.8
 balance des paiements,,avoirs de réserve,,,,,,classement différent,"idem ; libellé imprimé dans le tableau de la balance des paiements, BCT, éd. 2024, p. 44 et 46 du fichier","§ 6.64, p. 120",Avoirs de réserve,,F.1 et avoirs de la BCT
-balance des paiements,,erreurs et omissions nettes,,,,,,non vérifiable,libellé MBP6 non trouvé dans l'édition 2024 de la BCT (recherche du libellé sur tout le texte) ; le MBP5 imprime « C - Opérations d'ajustement (flux nets) » (éd. 2021),"§ 2.24, p. 11",,Opérations d'ajustement (flux nets),écart statistique
+balance des paiements,,erreurs et omissions nettes,,,,,,périmètre possiblement plus large,"libellé de la BCT, éd. 2024, p. 44 du fichier : la BCT réunit opérations d'ajustement et erreurs et omissions nettes (MBP6 § 2.24, p. 11) ; le MBP5 imprime « C - Opérations d'ajustement (flux nets) »","§ 2.24, p. 11","4. Opérations d'ajustement, erreurs et omissions nettes",Opérations d'ajustement (flux nets),écart statistique
