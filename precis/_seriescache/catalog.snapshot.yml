@@ -7693,3 +7693,48 @@
     (62 077 MD). Un seul rapport annuel de la BCT est lu : 2020-2024 pour la douane,
     2023-2024 pour la balance des paiements. Le fichier data/processed/bct/balance_commerciale.csv,
     sans script ni fiche et aux lignes mensuelles décalées, n''est pas utilisé.'
+- id: cnrps-regime-general-finances
+  titre: 'CNRPS : recettes et dépenses du régime général de retraite par nature, 2014-2020,
+    et assiette cotisable implicite'
+  sources:
+  - cnrps-etats-financiers
+  - cnrps-guides-rapports
+  build: scripts/extract_cnrps_publications.py:main
+  raw:
+  - data/raw/caisses/cnrps
+  output: data/processed/caisses/cnrps_regime_general_finances.csv
+  unite: dinars, millions de dinars, dinars par mois, taux
+  perimetre: 'régime général de retraite des agents publics (النظام العام للتقاعد)
+    : recettes par nature (cotisations salariales et patronales, rachats, péréquation,
+    bonification…) et dépenses par nature 2014-2018 (états financiers) ; totaux 2019-2020
+    et cotisations reconstituées (rapports 2019-2020) ; taux légaux 2000-2020 ; grandeurs
+    calculées : part patronale, assiette cotisable moyenne implicite, écart avec le
+    salaire moyen reconstitué de cnrps-pensions et sa décomposition'
+  caveats: 'COTISATIONS SEULES disponibles 2014-2018 seulement : aucune source lue
+    ne ventile les recettes avant 2014 (les guides ne donnent que les totaux de tous
+    les régimes) ; 2017 vient de la colonne de comparaison des états 2018, eux-mêmes
+    PROVISOIRES ; 2019-2020 sont RECONSTITUÉES (niveau 2018 + hausses publiées arrondies
+    au million, périmètre des hausses non précisé). L''ASSIETTE COTISABLE MOYENNE
+    IMPLICITE est CALCULÉE : (salariales + patronales) ÷ taux légal global moyen ÷
+    affiliés de fin d''année ÷ 12 ; taux constant de 20,7 % sur 2014-2018 ; en 2019-2020,
+    moyenne des douze taux mensuels (employeur 14,5 % dès juin 2019, agent 9,2 % dès
+    janvier 2020). Elle est proche (à 1 %) du salaire de référence moyen déclaré publié
+    pour 2015-2016 (cnrps-salaire-reference-declare), sur un périmètre différent (INSAF,
+    80 % des affiliés) : proximité, non validation. 2016 est atypique : versement
+    en une fois par les employeurs de trente-six mois de péréquation, et primes spécifiques
+    nouvelles. Les dépenses ne séparent pas pensions de retraite et de veuves. Écarts
+    d''un dinar et coquilles des documents énumérés dans sources/cnrps-etats-financiers.md.'
+  titre_ar: 'الصندوق الوطني للتقاعد والحيطة الاجتماعية: إيرادات ونفقات النظام العام
+    للتقاعد حسب طبيعتها، 2014-2020، وقاعدة المساهمات الضمنية'
+  unite_ar: دنانير، ملايين الدنانير، دنانير شهرياً، نسب
+  perimetre_ar: 'النظام العام للتقاعد: الإيرادات حسب طبيعتها (مساهمات الأجراء والمشغل،
+    ضم الخدمات، التعديل الآلي للجرايات، التنفيل...) والنفقات حسب طبيعتها 2014-2018
+    (القوائم المالية)؛ المجاميع ومساهمات معاد تركيبها 2019-2020؛ النسب القانونية 2000-2020؛
+    مقادير محسوبة'
+  caveats_ar: 'لا تتوفر المساهمات وحدها إلا للفترة 2014-2018؛ سنة 2017 مأخوذة من عمود
+    المقارنة في القوائم المالية الوقتية لسنة 2018؛ سنتا 2019 و2020 معاد تركيبهما انطلاقا
+    من الزيادات المنشورة المقربة إلى المليون. قاعدة المساهمات الضمنية مقدار محسوب:
+    المساهمات ÷ النسبة القانونية الجملية ÷ المنخرطين ÷ 12. سنة 2016 استثنائية بسبب
+    دفع المشغلين مساهمة ستة وثلاثين شهرا دفعة واحدة. لا تفصل النفقات بين جرايات المتقاعدين
+    وجرايات الأرامل.'
+  fiche: sources/cnrps-etats-financiers.md

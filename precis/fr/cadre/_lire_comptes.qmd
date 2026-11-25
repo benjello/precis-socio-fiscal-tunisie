@@ -12,7 +12,18 @@ Un **poste** rattache une section de l'ouvrage à une case des comptes : une op�
 
 - une section n'est le domicile que d'un seul poste ;
 - un poste est chiffré par une série tunisienne déjà vérifiée, ou reste sans montant — il n'est jamais estimé ;
-- l'année de référence est la dernière année que l'INS imprime comme définitive.
+- l'année de référence est la dernière année où toutes les sources de la reconstruction sont disponibles : comptes définitifs de l'INS, budget exécuté et comptes des trois caisses de sécurité sociale.
+
+## Pourquoi l'année de référence n'est pas la dernière publiée {#sec-cadre-annee-reference}
+
+Les comptes et rapports des caisses de sécurité sociale paraissent plus tard que les comptes de la nation. Une reconstruction faite sur la dernière année publiée laisserait sans montant le sous-secteur de la sécurité sociale (S1314). L'ouvrage retient donc **2020**, dernière année où toutes les sources sont réunies, et donne aussi 2019 et 2023 ainsi que la couverture année par année de 2015 à 2023 ([le compte reconstruit](../compte-apu.html#sec-capu-annee)).
+
+Deux réserves accompagnent ce choix :
+
+- 2020 est l'année de la pandémie de COVID-19 : recettes, transferts et prestations s'y écartent de leur tendance ;
+- les états financiers de la CNRPS pour 2020 ne sont connus que par son rapport d'activité, ceux de 2017 et de 2019 étant tronqués dans les fichiers publiés.
+
+Chaque montant porte la nature de sa source : série statistique, états financiers, rapport d'activité ou rapport du ministère.
 
 ## Le résidu, publié {#sec-cadre-residu}
 

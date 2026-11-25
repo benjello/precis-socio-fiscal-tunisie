@@ -56,9 +56,10 @@ def main() -> int:
     ap.add_argument("--verifier", action="store_true")
     a = ap.parse_args()
     cache = [l for l in lire(CACHE / "cnat-secteurs.csv") if str(l["base"]) == "2015"]
-    definitif = [l for l in cache if l["statut_annee"] == "definitif"]
-    ed = max(l["edition"] for l in definitif)
-    an = max(int(l["annee"]) for l in definitif if l["edition"] == ed)
+    import yaml
+    an = int(yaml.safe_load((FR / "annee-reference.yml").read_text(encoding="utf-8"))["annee"])  # année de référence commune
+    eds = sorted({l["edition"] for l in cache if int(l["annee"]) == an and l["statut_annee"] == "definitif"})
+    ed = eds[-1]
     postes = lire(FR / "postes-comptables.csv")
     lignes = []
     for sec, code, nom in SECTEURS:
