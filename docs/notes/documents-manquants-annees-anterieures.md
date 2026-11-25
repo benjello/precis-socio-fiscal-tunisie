@@ -3,6 +3,19 @@
 Objet : les documents qui manquent pour chiffrer les comptes des secteurs avant les années déjà
 couvertes, en remontant aussi loin que va l'ouvrage, protectorat compris.
 
+## Mise à jour du 25/11/2026 au soir : dépôts de l'utilisateur
+
+Huit lots (67 fichiers) déposés le 25/11/2026 ont été comparés par SHA-256 au dossier brut : 44 y étaient déjà. Les nouveaux utiles ont été versés à l'entrepôt de données ; les fichiers sans apport sont listés, avec leur empreinte et leur motif, dans `sources/fichiers-ecartes.csv` de l'entrepôt, pour qu'un inventaire ne les repropose pas.
+
+| Famille | Désormais présent ou exploité | Manque encore |
+|---|---|---|
+| Communes | 2020 : rémunérations, moyens des services, interventions et intérêts des 350 communes, d'après le rapport annuel 2020 de la HIFL (p. 51, annexe 12) ; 2021 : budgets détaillés de la DGCT, réalisations par article (situation postérieure au 25/12/2021, clôture non démontrée) | analyses financières de la Cour des comptes 2021-2023 ; HIFL 2021 et suivants ; exercice 2021 clos attesté |
+| INS, enquête budget-consommation | 2021 : annexe 3 et note de synthèse (dépense par division en 2010, 2015 et 2021, quintiles, pauvreté 2005-2021) | les autres éditions et leurs annexes (grille ci-dessous) |
+| CNAM | états financiers 2010 (exercices 2009 et 2010), versions arabes 2016-2019 | états financiers 2005-2008 et 2022-2023 |
+| DGI | rapport annuel 2015 et programme 2016 (arabe) : produits du contrôle fiscal, nombre de contribuables | recettes par secteur ou par catégorie de contribuable : aucune série officielle trouvée |
+| Transferts aux ménages | audit social de la Banque mondiale sur Amen social (bénéficiaires 2020-2021), évaluation du CRES 2017, socle de protection 2019 (scénarios) | dépenses annuelles des programmes avant 2021 |
+| CNSS, CNRPS | rien de nouveau | rapports et états financiers 2021-2023 (pensions) : introuvables publiquement ; masse salariale CNSS par activité et par taille 2019-2020 ; états financiers CNRPS 2017 et 2019 complets |
+
 ## Méthode
 
 Un document n'est dit **manquant** que s'il ne figure dans aucun de ces lieux, cherché par deux voies
@@ -67,7 +80,7 @@ Chemins relatifs au dossier brut.
 | Communes : Cour des comptes, HIFL, DGCT | voir la grille détaillée ci-dessous | contrôles financiers de 46 communes (rubrique 88) | analyses 2021-2023 ; HIFL 2021 et suivants ; DGCT avant 2008 |
 | CNSS | annuaires 2006 (rétrospectif 1970-2006), 2010, 2013, 2016, 2017, 2018 ; planches « La CNSS en chiffres » 2020 ; états financiers 2018, 2020 ; rétrospective financière 1990-2004 : `caisses/cnss/` | — | rapports ou états financiers 2021-2023 ; annuaires 2019, 2007-2009, 2011-2012, 2014-2015 |
 | CNRPS | rapports d'activité 2014-2020 ; états financiers 2015, 2016, 2018 (2017 et 2019 tronqués, illisibles) ; recueils statistiques 2000-2019 : `caisses/cnrps/` | — | rapports d'activité avant 2014 et après 2020 ; états financiers 2017 et 2019 lisibles |
-| CNAM | états financiers 2010, 2011-2015, 2016-2021 ; rapports annuels 2018-2021 : `caisses/cnam/` | — | états financiers 2005-2009 et 2022-2023 |
+| CNAM | états financiers 2009-2010 (bilan 2010), 2011-2015, 2016-2021 : `caisses/cnam/` (les rapports annuels ANNUEL_2018 à 2021 portent sur les accidents du travail et sont hors du périmètre des comptes) | — | états financiers 2005-2009 et 2022-2023 |
 | INS, enquêtes budget-consommation | 2021 : annexes 2 et 3, communiqué : `ins-publications/ebncv-2021/` | 2021 : annexe 1, « Accès aux services collectifs » (`ins-portal-manifest.csv`) | toutes les autres éditions (grille détaillée ci-dessous) |
 | INS, enquêtes emploi | rapports annuels 2005, 2007-2012 ; notes trimestrielles 2012-2026 ; enquêtes emploi et salaires 2012, 2014, 2022 : `ins-enquete-emploi/` | — | rapports annuels 2006, 2013-2016 ; enquêtes antérieures à 2005 |
 | DGI, statistiques fiscales | recettes fiscales par rubrique 1986-2025 : `minfinances/recettes_fiscales.xls` | — | statistiques par secteur ou par catégorie de contribuable (existence incertaine) |
