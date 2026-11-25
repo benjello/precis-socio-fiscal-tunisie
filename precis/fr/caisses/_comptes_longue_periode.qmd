@@ -247,7 +247,7 @@ _e = pc.extremes(_d, "ecart")
 cnss_ecart_min, cnss_ecart_max, cnss_an_1, cnss_an_2 = _e["min"], _e["max"], _e["premier"], _e["dernier"]
 ```
 
-Les comptes de la nation ne publient pas les cotisations caisse par caisse. La somme des recettes de la CNSS, de la CNRPS et de la CNAM est rapprochée, année par année, des cotisations sociales (D.61) reçues par la sécurité sociale dans le livre des cotisations sociales ([Des recettes de la caisse au chiffre des comptes](../cotisations_sociales/_pensions.html#sec-cot-pensions-passage)) : de `{python} cnss_an_1` à `{python} cnss_an_2`, elle les dépasse de `{python} cnss_ecart_min` à `{python} cnss_ecart_max`.
+Les comptes de la nation donnent les cotisations de la sécurité sociale dans son ensemble. La somme des recettes de la CNSS, de la CNRPS et de la CNAM est rapprochée, année par année, des cotisations sociales (D.61) reçues par la sécurité sociale dans le livre des cotisations sociales ([Des recettes de la caisse au chiffre des comptes](../cotisations_sociales/_pensions.html#sec-cot-pensions-passage)) : de `{python} cnss_an_1` à `{python} cnss_an_2`, elle les dépasse de `{python} cnss_ecart_min` à `{python} cnss_ecart_max`.
 
 ## L'ensemble des organismes de sécurité sociale, 2001-2025 {#sec-caisses-s1314}
 

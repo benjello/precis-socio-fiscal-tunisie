@@ -190,7 +190,7 @@ ecart_ref_entiere = pc.pct(_ent["ecart"]) if _ent else "—"
 ecart_min, ecart_max, an_1, an_2 = _apres["min"], _apres["max"], _apres["premier"], _apres["dernier"]
 ```
 
-Les comptes de la nation ne publient pas les cotisations caisse par caisse : le passage se fait sur la somme des trois caisses, rapprochée des cotisations sociales (D.61) reçues par la sécurité sociale (S1314) (@tbl-cot-pensions-passage-s1314). La somme dépasse le montant des comptes de `{python} ecart_ref` en `{python} an_ref`, et de `{python} ecart_min` à `{python} ecart_max` de `{python} an_1` à `{python} an_2`. Avec les recettes techniques de la caisse entière pour la CNRPS au lieu des recettes du régime général, l'écart de `{python} an_ref` serait de `{python} ecart_ref_entiere`.
+Les comptes de la nation donnent les cotisations de la sécurité sociale dans son ensemble : le passage se fait sur la somme des trois caisses, rapprochée des cotisations sociales (D.61) reçues par la sécurité sociale (S1314) (@tbl-cot-pensions-passage-s1314). La somme dépasse le montant des comptes de `{python} ecart_ref` en `{python} an_ref`, et de `{python} ecart_min` à `{python} ecart_max` de `{python} an_1` à `{python} an_2`. Avec les recettes techniques de la caisse entière pour la CNRPS au lieu des recettes du régime général, l'écart de `{python} an_ref` serait de `{python} ecart_ref_entiere`.
 
 ```{python}
 #| echo: false

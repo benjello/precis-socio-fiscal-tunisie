@@ -83,7 +83,9 @@ def lignes(poste: str, annees_=None) -> list[dict]:
 
 
 def pct(v: float | None) -> str:
-    return "—" if v is None else f"{v:.1f}".replace(".", ",") + " %"
+    """Pourcentage à la française. L'espace insécable est écrit en entité HTML : une chaîne rendue par une
+    expression en ligne `{python}` passe par sa représentation, qui imprimerait « \\xa0 » en toutes lettres."""
+    return "—" if v is None else f"{v:.1f}".replace(".", ",") + "&nbsp;%"
 
 
 def annee_reference() -> int:
