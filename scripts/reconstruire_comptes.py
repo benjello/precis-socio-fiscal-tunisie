@@ -112,7 +112,17 @@ def montant(serie: str, colonne: str, annee: int) -> tuple[float | None, str]:
         return (vals[-1] if vals else None), couv
     if "indicateur" in lignes[0] and ("valeur" in lignes[0] or "valeur_md" in lignes[0]):  # série longue : (année, indicateur)
         champ = "valeur" if "valeur" in lignes[0] else "valeur_md"
+        morceaux = colonne.split("|")
+        fenetre = None  # « CNSS|recettes techniques|2021-2023 » : poste limité à ces années (relais d'une série close)
+        if len(morceaux) == 3 and re.fullmatch(r"\d{4}-\d{4}", morceaux[2]):
+            fenetre = tuple(int(x) for x in morceaux[2].split("-"))
+            colonne = "|".join(morceaux[:2])
         caisse, _, ind = colonne.rpartition("|")  # « CNAM|recettes techniques » : filtre sur la colonne caisse
+        if fenetre:
+            dans = [a for a in annees if fenetre[0] <= a <= fenetre[1]]
+            couv = f"{dans[0]}-{dans[-1]}" if dans else ""
+            if not fenetre[0] <= annee <= fenetre[1]:
+                return None, couv
         vals = [float(l[champ]) for l in lignes if str(l["annee"]) == str(annee) and l["indicateur"].startswith(ind)
                 and (not caisse or l.get("caisse") == caisse)]
         return (vals[-1] if vals else None), couv  # la dernière ligne : l'édition la plus récente
