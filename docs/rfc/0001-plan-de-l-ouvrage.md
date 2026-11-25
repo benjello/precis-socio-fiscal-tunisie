@@ -58,7 +58,7 @@ Parties qu'un ouvrage complet devrait avoir et qui n'existent pas, données comm
 - le compte de redistribution en nature (D.63, publié par l'INS dans un tableau à part) ;
 - l'équilibre des produits (TRE) ;
 - les soldes et agrégats (B.5, B.6, B.7) ;
-- les comptes de patrimoine non financiers (l'INS publie, en base 2015, des comptes de patrimoine financiers 2014-2020 avec réévaluations et autres changements de volume, mais pas de patrimoine non financier) ;
+- les comptes de patrimoine non financiers (l'INS publie, en base 2015, des comptes de patrimoine financiers (encours 2014-2020 et flux 2015-2020, sans compte de réévaluation ni d'autres changements de volume), mais pas de patrimoine non financier) ;
 - les comptes régionaux.
 
 Un chapitre facultatif est proposé en tête de la partie « synthèse » : **« Conventions et imputations »**. Il réunirait les opérations qu'aucun dispositif ne raconte (§ 4), décrites par la méthode de l'INS plutôt que par un texte.
@@ -108,7 +108,7 @@ Une partie des comptes ne correspond à aucune loi, aucune prestation ni aucune 
 | Fourre-tout | D.29, D.39, D.71, D.72, D.75, D.99 | rubriques « autres » ou « divers », à décomposer |
 | Faible contenu | revenu disponible ajusté (B.7g), actifs non produits (NP), réévaluation et autres changements de volume, détail du compte financier (F.1 à F.7) | solde redondant, montant faible ou compte non publié |
 
-Deux de ces opérations ne sont pas publiées par l'INS : les loyers imputés et l'ajustement D.8, absents de l'inventaire des tableaux des éditions en base 2015 (recherche citée dans l'annexe). La réévaluation et les autres changements de volume ne sont publiés que pour les actifs et passifs financiers (volume B de l'édition 2015-2020).
+Deux de ces opérations ne sont pas publiées par l'INS : les loyers imputés et l'ajustement D.8, absents de l'inventaire des tableaux des éditions en base 2015 (recherche citée dans l'annexe). La réévaluation et les autres changements de volume ne sont publiés pour aucun actif : le volume B de l'édition 2015-2020 donne les encours financiers (p. 28-41) et les flux (p. 14-25), d'où l'on ne tire que leur somme, par différence.
 
 Ces opérations pèsent peu dans les comptes des sociétés non financières (7,4 % de leurs montants en 2023) et des ménages (9,2 %). Elles pèsent davantage dans ceux des administrations publiques (13,9 %) et surtout des sociétés financières (57,6 %), où le compte financier par instrument domine. La mesure est définie dans l'annexe.
 

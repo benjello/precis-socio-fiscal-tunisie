@@ -41,7 +41,7 @@ Montants en millions de dinars courants : somme des secteurs résidents (sociét
 |---|---|--:|--:|--:|--:|---|---|
 | B.7g | Revenu disponible ajusté | 122 429,7 |  | 156 421,1 |  | tableau économique d'ensemble, p. 116-117 (2020) et 120-121 (2023) | solde ; ne se distingue de B.6 que par les transferts en nature |
 | NP | Acquisitions moins cessions d'actifs non produits | 0,0 | 0,0 % | 0,0 | 0,0 % | comptes des secteurs, emplois | terrains et droits, montants faibles |
-| K.3 à K.7 | Réévaluation et autres changements de volume | financier seulement |  | financier seulement |  | publiés pour les seuls actifs et passifs financiers : comptes de patrimoine financiers 2014-2020 avec réévaluations et autres changements de volume (Comptes de la nation 2015-2020, vol. B, p. 4) ; rien pour les actifs non financiers | suppose des comptes de patrimoine |
+| K.3 à K.7 | Réévaluation et autres changements de volume | non publié |  | non publié |  | non publiés : les comptes de patrimoine financiers donnent les encours 2014-2020 et les flux 2015-2020 (Comptes de la nation 2015-2020, vol. B, p. 14-25 et 28-41), d'où l'on ne tire que la somme des réévaluations et des autres changements de volume, par différence ; rien pour les actifs non financiers | suppose des comptes de patrimoine |
 | F.1 à F.7 | Détail du compte financier par instrument | 27 603,6 | 60,6 % | 28 470,7 | 51,4 % | comptes des secteurs, emplois | connu par les bilans bancaires, sans dispositif à décrire |
 
 ## Poids par secteur

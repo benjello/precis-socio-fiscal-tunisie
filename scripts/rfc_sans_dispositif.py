@@ -36,7 +36,7 @@ RELEVES = {
 NON_PUBLIE = {
     "loyers": "le terme n'apparaît que dans le texte de méthode (p. 16 des éd. 2020-2024 et 2021-2025), sans montant",
     "D.8": "aucune occurrence dans les six éditions en base 2015 ; « D8 » n'apparaît que dans la nomenclature des éditions 2005-2009 à 2007-2011",
-    "K": "publiés pour les seuls actifs et passifs financiers : comptes de patrimoine financiers 2014-2020 avec réévaluations et autres changements de volume (Comptes de la nation 2015-2020, vol. B, p. 4) ; rien pour les actifs non financiers",
+    "K": "non publiés : les comptes de patrimoine financiers donnent les encours 2014-2020 et les flux 2015-2020 (Comptes de la nation 2015-2020, vol. B, p. 14-25 et 28-41), d'où l'on ne tire que la somme des réévaluations et des autres changements de volume, par différence ; rien pour les actifs non financiers",
 }
 
 # famille, code, libellé, clé (operation du cache, code de relevé ou de non-publication), difficulté
@@ -154,7 +154,7 @@ def main() -> int:
             md.append(f"\n## {fam}\n\n| Code | Opération | 2020 | Part 2020 | 2023 | Part 2023 | Source | Difficulté |\n|---|---|--:|--:|--:|--:|---|---|")
             famille = fam
         if cle in NON_PUBLIE:
-            marque = "financier seulement" if cle == "K" else "non publié"
+            marque = "non publié"
             cells, src = [marque, "", marque, ""], NON_PUBLIE[cle]
             row = {an: (None, None) for an in ANNEES}
         else:
