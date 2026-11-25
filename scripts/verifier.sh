@@ -111,6 +111,7 @@ etape "Les manifestes de relevés sont lisibles et cohérents" uv run python scr
 etape "Les copies locales annoncées sont dans les manifestes de tunisia-data" uv run python scripts/check_copies_locales.py
 etape "Les sous-agents Claude Code sont à jour" uv run python scripts/sync_agents.py --verifier
 etape "Le compte reconstruit des administrations publiques est cohérent" uv run python scripts/reconstruire_comptes.py --verifier
+etape "L'étendue des postes et leur couverture par année sont à jour" uv run python scripts/etendue_postes.py --verifier
 etape "Les résidus du compte reconstruit sont à jour" uv run python scripts/expliquer_residus.py --verifier
 etape "Les comptes des secteurs reconstruits sont à jour" uv run python scripts/reconstruire_secteurs.py --verifier
 etape "Le TEE par secteur est à jour" uv run python scripts/comptes_tee.py --verifier
