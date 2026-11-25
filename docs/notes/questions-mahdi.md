@@ -96,7 +96,7 @@ Ouvert le 24/11/2026, au fil du plan par opération (`docs/notes/plan-par-operat
 
 | Organisme | Publication | Année | Ce qu'elle lève |
 |---|---|---|---|
-| Banque centrale de Tunisie | balance des paiements annuelle (et sa présentation détaillée) | 2015-2024 | lot B : compte du reste du monde (S2), table de passage BdP → SCN |
+| Banque centrale de Tunisie | balance des paiements annuelle | 1987-2024 | **déjà dans l'entrepôt** (38 fichiers, archives de la BCT) : rien à télécharger |
 | CNSS | rapport annuel ou états financiers | 2021-2023 | D.61 et D.62 de la CNSS en 2023 (la série de l'entrepôt s'arrête en 2020) |
 | CNRPS | rapport annuel ou états financiers | 2021-2023 | D.61 et D.62 de la CNRPS |
 | CNAM | rapport annuel (dépenses de soins) | 2021-2023 | passage des soins à D.631 ; seules les statistiques d'accidents du travail de 2023 sont inventoriées |
@@ -105,3 +105,15 @@ Ouvert le 24/11/2026, au fil du plan par opération (`docs/notes/plan-par-operat
 
 - **Appliqué par défaut** : rien n'est téléchargé, puisque tout téléchargement demande ton accord.
 - **Coût de changer** : une fois l'accord donné, la procédure existante de collecte du dépôt de données (`docs/agents/collecteur-donnees.md`) s'applique.
+
+### Résultat de la collecte du 25/11/2026 (accord de Mahdi du 25/11/2026)
+- **Récupéré** sur les sites officiels, avec adresse, date et empreinte dans les listes `sources/*-urls.csv` du dépôt de données :
+  - ministère des Finances : rapport semestriel de l'exécution du budget de l'État à fin décembre 2023 (31 pages) et résultats provisoires de l'exécution du budget à fin décembre 2023 ;
+  - CNSS : les huit fichiers de la page « La CNSS en chiffres » (états financiers, budget de gestion, recettes, dépenses des régimes, prestations familiales, pensions, annuaire), dont les données s'arrêtent en 2020, avec un budget de gestion jusqu'en 2022.
+- **Introuvable sur les sites officiels** :
+  - CNSS : comptes et données de 2021 à 2023 (la page est à jour au 29/06/2021) ;
+  - CNRPS : rapport d'activité ou états financiers postérieurs à 2018 (le site public ne donne que les rapports d'accès à l'information) ;
+  - CNAM : statistiques financières de 2023 (seules les statistiques d'accidents du travail de 2023 sont en ligne, déjà dans l'entrepôt) ;
+  - loi de règlement du budget 2023 ;
+  - comptes définitifs des collectivités de 2023.
+- **Note technique** : les sites de la CNSS et de la CNAM servent un certificat dont la chaîne est incomplète. Le téléchargement a vérifié le certificat avec l'intermédiaire officiel de l'autorité (Sectigo), tiré de l'adresse que le certificat indique ; aucune vérification n'a été désactivée.
