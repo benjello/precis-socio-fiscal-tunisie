@@ -165,7 +165,7 @@ def postes(k, col):
 soldes_emplois = {info(k)["code_scn"] for k, _ in lignes_ref if k[0] == "emplois" and info(k)["nature"] == "solde"}
 for col, ancre in (("S11", "snf"), ("S12", "sf"), ("S13", "apu"), ("S14", "menages"), ("S2", "rdm")):
     print(f'\n::: {{.callout-note collapse="true"}}\n## {NOMS_TEE[col].capitalize()} ({col}), {", ".join(map(str, ANS))}\n')
-    print("| Côté | Opération | " + " | ".join(f"{a}" for a in ANS) + " | Postes de l'ouvrage |")
+    print("| Emplois ou ressources | Opération | " + " | ".join(f"{a}" for a in ANS) + " | Postes de l'ouvrage |")
     print("|---|---|" + "--:|" * len(ANS) + "---|")
     for k, _ in lignes_ref:
         i = info(k)
@@ -272,7 +272,7 @@ def classement(col):
     return ls[:10], tot
 for col, ancre in (("S11", "snf"), ("S14", "menages")):
     ls, tot = classement(col)
-    print("| Rang | Côté | Opération | Montant | Poids dans le côté | Séries de l'entrepôt |")
+    print("| Rang | Emplois ou ressources | Opération | Montant | Poids dans les emplois ou les ressources du secteur | Séries de l'entrepôt |")
     print("|--:|---|---|--:|--:|---|")
     for i, l in enumerate(ls, 1):
         src = SOURCES.get((col, l["cote"], l["operation"]), "À établir.")
