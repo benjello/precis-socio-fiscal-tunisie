@@ -152,6 +152,8 @@ Au secteur privé, les relèvements identifiés se placent entre 1988 et 2003 �
 
 {{< include ../encadres-comptes/cotisations-cnrps.md >}}
 
+{{< include ../encadres-comptes/cotisations-cnrps-2014-2018.md >}}
+
 ### Des recettes de la caisse au chiffre des comptes {#sec-cot-pensions-passage}
 
 Les recettes du régime général de la CNRPS valent 5 245,5 millions de dinars en 2020, d'après son rapport d'activité [@cnrps-etats-financiers]. Ce total comprend, outre les cotisations salariales et patronales, les contributions de péréquation, les rachats et les bonifications : les cotisations seules valent 4 333,0 millions de dinars et la péréquation 845,6, montants reconstitués à partir du niveau de 2018 et des hausses publiées dans les rapports d'activité (livre des retraites, [L'équilibre du régime](../retraites/_secteur_public.html#sec-cnrps-equilibre)). Les comptes de la nation ne publient pas les cotisations caisse par caisse : la comparaison se fait sur la sécurité sociale entière, 11 664,9 millions de dinars en 2020 [@ins-cnat-2015], dans la section [Des cotisations encaissées au chiffre des comptes](_bilan.html#sec-cot-rendement-passage).
@@ -167,7 +169,7 @@ Pour 2021 à 2023, ce poste retient les recettes techniques de la caisse entièr
 import sys; sys.path.insert(0, "../../../scripts")
 import passage_comptes as pc
 _C = [("CNSS", ("cotisations-sociales", "cotisations-cnss-2021-2023")),
-      ("CNRPS", ("cotisations-cnrps", "cotisations-cnrps-2021-2023")),
+      ("CNRPS", ("cotisations-cnrps-2014-2018", "cotisations-cnrps", "cotisations-cnrps-2021-2023")),
       ("CNAM", ("cotisations-cnam",))]
 def _ligne(an, cnrps=None):
     vals = [next((m for p in ps if (m := pc.montant(p, an)) is not None), None) for _, ps in _C]
@@ -188,9 +190,19 @@ an_ref = str(_AN)
 ecart_ref = pc.pct(_ref["ecart"]) if _ref else "—"
 ecart_ref_entiere = pc.pct(_ent["ecart"]) if _ent else "—"
 ecart_min, ecart_max, an_1, an_2 = _apres["min"], _apres["max"], _apres["premier"], _apres["dernier"]
+# rupture de grandeur du poste CNRPS : cotisations seules (états financiers) puis recettes totales du régime général
+_seules = pc.rc.annees_chiffrees(pc.registre()["cotisations-cnrps-2014-2018"])
+_totales = pc.rc.annees_chiffrees(pc.registre()["cotisations-cnrps"])
+_an_r = _seules[-1]
+_cot_r = pc.montant("cotisations-cnrps-2014-2018", _an_r)
+_tot_r = pc.rc.montant("cnrps-regime-general-finances", "|recettes : total du régime général|2014-2018", _an_r)[0] * 1e-6
+seules_ans, totales_ans, an_rupture = pc.rc.liste_annees(_seules), pc.rc.liste_annees(_totales), str(_an_r)
+cot_rupture, tot_rupture, ecart_rupture = pc.fr(_cot_r), pc.fr(_tot_r), pc.fr(_tot_r - _cot_r)
 ```
 
 Les comptes de la nation donnent les cotisations de la sécurité sociale dans son ensemble : le passage se fait sur la somme des trois caisses, rapprochée des cotisations sociales (D.61) reçues par la sécurité sociale (S1314) (@tbl-cot-pensions-passage-s1314). La somme dépasse le montant des comptes de `{python} ecart_ref` en `{python} an_ref`, et de `{python} ecart_min` à `{python} ecart_max` de `{python} an_1` à `{python} an_2`. Avec les recettes techniques de la caisse entière pour la CNRPS au lieu des recettes du régime général, l'écart de `{python} an_ref` serait de `{python} ecart_ref_entiere`.
+
+Pour la CNRPS, la grandeur change en cours de série. De `{python} seules_ans`, le poste retient les seules cotisations salariales et patronales du régime général, lues dans les états financiers [@cnrps-etats-financiers]. En `{python} totales_ans`, il retient les recettes totales du régime général, péréquation, rachats et bonification compris, que donne le rapport d'activité, faute de cotisations seules publiées pour ces années. En `{python} an_rupture`, les recettes totales valent `{python} tot_rupture` millions de dinars et les cotisations seules `{python} cot_rupture`, soit `{python} ecart_rupture` millions d'écart : la hausse du poste entre `{python} an_rupture` et l'année suivante tient en partie à ce changement de champ.
 
 ```{python}
 #| echo: false
@@ -205,7 +217,9 @@ for a in sorted(_L):
 print(pc.table(["Année", "CNSS", "CNRPS", "CNAM", "Somme", "Comptes (D.61, S1314)", "Somme / comptes"], _lignes))
 print("\n: Recettes des trois caisses et cotisations sociales (D.61) de la sécurité sociale (S1314), en millions de "
       "dinars courants. CNSS : cotisations encaissées jusqu'à l'année de référence, recettes techniques ensuite ; "
-      "CNRPS : recettes du régime général jusqu'à l'année de référence, recettes techniques de la caisse entière "
+      "CNRPS : " + ("cotisations seules du régime général jusqu'en " + an_rupture + ", "
+                    if min(_L) <= int(an_rupture) else "")
+      + "recettes du régime général jusqu'à l'année de référence, recettes techniques de la caisse entière "
       "ensuite et sur la ligne « CNRPS entière » ; CNAM : recettes techniques ; comptes de la nation : dernière "
       "édition où l'année est définitive {#tbl-cot-pensions-passage-s1314}\n")
 ```
