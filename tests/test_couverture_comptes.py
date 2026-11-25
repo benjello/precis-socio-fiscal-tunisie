@@ -240,3 +240,28 @@ def test_operation_a_valider_non_couverte():
     assert cc.indicateurs(ops, ratt)["operations_chiffrees"] == 2
     ind = cc.indicateurs(cc.raccord_identique(ops, liens), ratt)
     assert ind["operations"] == ind["operations_chiffrees"] == 1 and ind["ins_total_md"] == 100.0
+
+
+def test_redevance_gazoduc_hors_des_loyers_en_base_1997():
+    """INS, éd. 2015-2020, vol. A, p. 17 : avant la base 2015, la redevance du gazoduc était comptée en
+    production du secteur transport, non en loyers (D.45)."""
+    import reconstruire_comptes as rc
+    assert rc.poste_hors_base("redevance-gazoduc", "1997")
+    assert not rc.poste_hors_base("redevance-gazoduc", "2015")
+    reg = {p["poste"]: p for p in rc.lire_csv(rc.REGISTRE)}
+    assert reg["redevance-gazoduc"]["operation"] == "loyers"
+    a = _annees()
+    for y in range(2005, 2015):  # le reste du monde n'a plus d'opération chiffrée propre en base 1997
+        assert a[(y, "S2")]["justesse_pct"] == "", y
+
+
+def test_controles_en_echec_portee():
+    import reconstruire_comptes as rc
+    base = {"edition": "2009-2013", "annee": "2009", "statut": "echec", "publie": "1", "recalcule": "2", "ecart": "-1"}
+    src = [{**base, "controle": "solde", "secteur": "apu", "objet": "valeur_ajoutee_brute"},
+           {**base, "controle": "equilibre", "secteur": "", "objet": "cotisations_sociales"},
+           {**base, "controle": "equilibre", "secteur": "", "objet": "operation_hors_total"},
+           {**base, "statut": "ok", "controle": "solde", "secteur": "apu_secu", "objet": "valeur_ajoutee_brute"}]
+    out = rc.controles_en_echec(src, 2009, "2009-2013", {"cotisations_sociales"})
+    assert [(l["objet"], l["touche_total"]) for l in out] == [("valeur_ajoutee_brute", "non"),
+                                                               ("cotisations_sociales", "indetermine")]

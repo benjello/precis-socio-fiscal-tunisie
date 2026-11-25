@@ -77,6 +77,8 @@ _S = [("S13", "APU"), ("S1311", "État"), ("S1313", "Coll. locales"), ("S1314", 
       ("S14", "Ménages"), ("S11", "SNF"), ("S12", "SF"), ("S2", "Reste du monde")]
 _d = {(l["annee"], l["secteur"]): l for l in _y}
 _ans = sorted({l["annee"] for l in _y})
+_ech = list(csv.DictReader(open("compte-couverture-controles-echec.csv", encoding="utf-8")))
+_ans_ech = sorted({l["annee"] for l in _ech if l["secteur"].startswith("apu")})  # contrôles du compte des APU en échec
 for _ind, _n, _titre, _id in (
         ("part_montant_couverte_pct", "operations_chiffrees", "Part du montant couverte, en % des montants de l'INS (opérations chiffrées sur opérations du compte)", "tbl-capu-part-montant"),
         ("part_couverte_pct", "operations_chiffrees", "Part du compte couverte, en % des montants de l'INS (opérations chiffrées sur opérations du compte)", "tbl-capu-part-couverte"),
@@ -92,12 +94,45 @@ for _ind, _n, _titre, _id in (
                 continue
             v = (n(l[_ind]) + " %") if l[_ind] else "—"
             cells.append(f"{v} ({l[_n]}/{l['operations']})" if _ind.startswith("part") else f"{v} ({l[_n]})")
-        print(f"| {an} | " + " | ".join(cells) + " |")
-    print(f"\n: {_titre} {{#{_id}}}\n")
+        print(f"| {an}{'&nbsp;(c)' if an in _ans_ech else ''} | " + " | ".join(cells) + " |")
+    print(f"\n: {_titre} ; (c) : contrôle du compte des administrations en échec dans la source, voir "
+          f"@tbl-capu-controles-echec {{#{_id}}}\n")
 ```
 
 ::: {.callout-note}
-De `{python} B97[0]` à `{python} B97[-1]`, la part du montant est mesurée sur les comptes des secteurs en base&nbsp;1997 (éditions `{python} _eds97[0]` à `{python} _eds97[-1]`), de `{python} B15[0]` à `{python} B15[-1]` sur les comptes en base&nbsp;2015, dont `{python} B15[0]` est la première année (édition `{python} ED15`) [@ins-cnat-2015]. Chaque année est lue dans la base la plus récente qui la publie, dans la dernière édition où elle est définitive. Aucun raccord n'est fait entre les deux bases ([les bases successives](annexe-pib.html#sec-pib-bases)) : de `{python} B97[-1]` à `{python} B15[0]`, l'évolution de la part mêle l'effet du changement de base et celui des postes. En base&nbsp;1997, les opérations dont le code ne se raccorde pas par une identité à celui du SCN 2008 sont exclues du calcul : elles ne sont ni couvertes ni comptées dans le total.
+De `{python} B97[0]` à `{python} B97[-1]`, la part du montant est mesurée sur les comptes des secteurs en base&nbsp;1997 (éditions `{python} _eds97[0]` à `{python} _eds97[-1]`), de `{python} B15[0]` à `{python} B15[-1]` sur les comptes en base&nbsp;2015, dont `{python} B15[0]` est la première année (édition `{python} ED15`) [@ins-cnat-2015]. Chaque année est lue dans la base la plus récente qui la publie, dans la dernière édition où elle est définitive. Aucun raccord n'est fait entre les deux bases ([les bases successives](annexe-pib.html#sec-pib-bases)) : de `{python} B97[-1]` à `{python} B15[0]`, l'évolution de la part mêle l'effet du changement de base et celui des postes. En base&nbsp;1997, les opérations dont le code ne se raccorde pas par une identité à celui du SCN 2008 sont exclues du calcul : elles ne sont ni couvertes ni comptées dans le total. La redevance du gazoduc n'y est pas comptée en loyers (D.45) : avant la base&nbsp;2015, l'INS la comptait comme production du secteur transport [@ins-cnat-2015, éd. 2015-2020, vol. A, p. 17].
+:::
+
+```{python}
+#| echo: false
+#| output: asis
+_n_c = {a: sum(1 for l in _ech if l["annee"] == a and l["secteur"].startswith("apu")) for a in _ans_ech}
+_n_e = {a: sum(1 for l in _ech if l["annee"] == a and l["controle"] == "equilibre") for a in sorted({l["annee"] for l in _ech})}
+print(f"Les années marquées (c), {' et '.join(_ans_ech)}, gardent leur part du montant. Leurs contrôles en échec "
+      f"({', '.join(f'{_n_c[a]}&nbsp;en&nbsp;{a}' for a in _ans_ech)}) portent sur le compte consolidé des administrations "
+      "et sur ses soldes, qui n'entrent pas dans le total mesuré : les administrations y sont la somme de leurs trois "
+      "sous-secteurs, et les soldes sont hors du total. S'y ajoutent, presque chaque année de la base&nbsp;1997, des "
+      "écarts d'équilibre entre les emplois et les ressources d'une opération, tous secteurs réunis "
+      f"({', '.join(f'{v}&nbsp;en&nbsp;{a}' for a, v in _n_e.items())}) : ils ne désignent pas le secteur dont le "
+      "montant est en cause. @tbl-capu-controles-echec les donne tous.\n")
+```
+
+::: {.callout-note collapse="true" title="Les contrôles de la source en échec, base 1997"}
+```{python}
+#| echo: false
+#| output: asis
+_portee = {"non": "hors du total", "oui": "dans le total", "indetermine": "secteur non désigné"}
+_ctl = {"equilibre": "équilibre emplois-ressources", "solde": "solde recalculé", "consolidation": "consolidation des sous-secteurs"}
+_sec = {"": "tous", "apu": "APU (compte consolidé)", "apu_centrale": "État", "apu_locale": "Coll. locales", "apu_secu": "Séc. sociale"}
+print("| Année | Édition | Contrôle | Secteur | Objet | Publié | Recalculé | Écart | Portée |")
+print("|---|---|---|---|---|--:|--:|--:|---|")
+for l in _ech:
+    print(f"| {l['annee']} | {l['edition']} | {_ctl[l['controle']]} | {_sec.get(l['secteur'], l['secteur'])} | {l['libelle_scn2008']} | "
+          f"{n(l['publie_md'])} | {n(l['recalcule_md'])} | {n(l['ecart_md'])} | {_portee[l['touche_total']]} |")
+print("\n: Contrôles arithmétiques de la série des comptes des secteurs en base 1997 en échec, années et éditions retenues, "
+      "pour le compte des administrations (solde, consolidation) et pour l'équilibre des opérations retenues dans son "
+      "total (millions de dinars courants ; écart = publié − recalculé) {#tbl-capu-controles-echec}\n")
+```
 :::
 
 Les administrations publiques (APU) sont mesurées comme la somme de leurs trois sous-secteurs, sans consolidation : dans le compte consolidé, la consommation finale passerait pour chiffrée dès que les soins de l'assurance maladie le sont, alors que la consommation de l'État ne l'est pas. La justesse des ménages dépasse 100 % : l'impôt sur le revenu encaissé par l'État est supérieur, chaque année, aux impôts courants que l'INS inscrit chez les ménages.
