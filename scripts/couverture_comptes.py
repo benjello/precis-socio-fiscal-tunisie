@@ -198,3 +198,12 @@ def agreger(resultats: list[dict]) -> dict:
             "operations_justesse": n["operations_justesse"],
             "postes_justesse_md": round(t["postes_justesse_md"], 1), "ins_justesse_md": round(t["ins_justesse_md"], 1),
             "justesse_pct": round(100 * t["postes_justesse_md"] / t["ins_justesse_md"], 1) if t["ins_justesse_md"] else ""}
+
+
+def raccord_identique(ops: list[dict], liens: dict) -> list[dict]:
+    """Feuilles d'un compte publié dans une base autre que 2015, réduites aux opérations dont le code se
+    raccorde au code du SCN 2008 par un lien « identique » (`liens` : {opération : lien}, table de raccord
+    des codes). Un regroupement, un éclatement, un lien « à valider » ou absent : l'opération est retirée,
+    ni couverte ni comptée dans le total. Le filtre porte sur les feuilles, non sur les lignes : retirer une
+    composante avant `feuilles` ferait d'un agrégat une feuille et réintroduirait son montant."""
+    return [l for l in ops if liens.get(l["operation"]) == "identique"]

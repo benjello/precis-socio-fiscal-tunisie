@@ -21,9 +21,13 @@ _r = list(csv.DictReader(open("compte-apu-reconstruit.csv", encoding="utf-8")))
 _f = list(csv.DictReader(open("compte-apu-flux.csv", encoding="utf-8")))
 _c = list(csv.DictReader(open("compte-apu-controles.csv", encoding="utf-8")))
 AN, ED = _r[0]["annee"], _r[0]["edition"]
-_ans_ins = sorted({int(l["annee"]) for l in csv.DictReader(open("compte-couverture-annees.csv", encoding="utf-8"))})
-AN0, AN1 = _ans_ins[0], _ans_ins[-1]  # années du compte en base 2015
-ED0 = next(l["edition"] for l in csv.DictReader(open("compte-couverture-annees.csv", encoding="utf-8")) if int(l["annee"]) == AN0)
+_cva = list(csv.DictReader(open("compte-couverture-annees.csv", encoding="utf-8")))
+_ans_ins = sorted({int(l["annee"]) for l in _cva})
+AN0, AN1 = _ans_ins[0], _ans_ins[-1]  # années de la part du montant, toutes bases
+_ans_b = {b: sorted({int(l["annee"]) for l in _cva if l["base"] == b}) for b in ("1997", "2015")}
+B97, B15 = _ans_b["1997"], _ans_b["2015"]  # années mesurées en base 1997, en base 2015
+_eds97 = sorted({l["edition"] for l in _cva if l["base"] == "1997"})
+ED15 = next(l["edition"] for l in _cva if int(l["annee"]) == B15[0])  # édition de la première année en base 2015
 _pa = list(csv.DictReader(open("compte-couverture-postes-annees.csv", encoding="utf-8")))
 PA0 = min(int(l["annee"]) for l in _pa)  # première année chiffrée d'un poste de la sécurité sociale
 def n(v):
@@ -92,6 +96,10 @@ for _ind, _n, _titre, _id in (
     print(f"\n: {_titre} {{#{_id}}}\n")
 ```
 
+::: {.callout-note}
+De `{python} B97[0]` à `{python} B97[-1]`, la part du montant est mesurée sur les comptes des secteurs en base&nbsp;1997 (éditions `{python} _eds97[0]` à `{python} _eds97[-1]`), de `{python} B15[0]` à `{python} B15[-1]` sur les comptes en base&nbsp;2015, dont `{python} B15[0]` est la première année (édition `{python} ED15`) [@ins-cnat-2015]. Chaque année est lue dans la base la plus récente qui la publie, dans la dernière édition où elle est définitive. Aucun raccord n'est fait entre les deux bases ([les bases successives](annexe-pib.html#sec-pib-bases)) : de `{python} B97[-1]` à `{python} B15[0]`, l'évolution de la part mêle l'effet du changement de base et celui des postes. En base&nbsp;1997, les opérations dont le code ne se raccorde pas par une identité à celui du SCN 2008 sont exclues du calcul : elles ne sont ni couvertes ni comptées dans le total.
+:::
+
 Les administrations publiques (APU) sont mesurées comme la somme de leurs trois sous-secteurs, sans consolidation : dans le compte consolidé, la consommation finale passerait pour chiffrée dès que les soins de l'assurance maladie le sont, alors que la consommation de l'État ne l'est pas. La justesse des ménages dépasse 100 % : l'impôt sur le revenu encaissé par l'État est supérieur, chaque année, aux impôts courants que l'INS inscrit chez les ménages.
 
 ```{python}
@@ -105,7 +113,7 @@ print(f"La part du montant couverte des administrations publiques passe de {n(_a
       "sous-secteurs restent sans montant les années suivantes.")
 ```
 
-En postes, la couverture remonte plus loin que le compte en base 2015. @tbl-capu-longue-periode donne, pour chaque année de `{python} PA0` à `{python} AN1`, le nombre de postes chiffrés parmi les postes rattachés à chaque secteur ; `{python} PA0` est la première année où un poste de la sécurité sociale est chiffré. La part du montant couverte n'y figure qu'à partir de `{python} AN0`, parce que le compte des administrations publiques en base 2015 commence en `{python} AN0`, première année de l'édition `{python} ED0` [@ins-cnat-2015]. Les comptes des années antérieures relèvent d'autres bases ([les bases successives](annexe-pib.html#sec-pib-bases)) ; ils ne se raccordent pas au compte en base 2015 sans règle de chaînage entre bases, et aucun ne sert ici de dénominateur. <!-- TODO (comptable-national) : comptes des secteurs des bases 1997 et 1983 en cours de versement dans l'entrepôt de données (PR en brouillon) ; part du montant avant la base 2015 une fois ces bases versées et la règle de chaînage tranchée (question M10, docs/notes/questions-mahdi.md). La base 2015 est rétropolée jusqu'en 2010 pour le PIB (annexe-pib, tbl-pib-bases) : vérifier si des comptes des secteurs 2010-2014 en base 2015 sont publiés (règle docs/procedures/affirmer-une-absence.md). -->
+En postes, la couverture remonte plus loin que les comptes des secteurs. @tbl-capu-longue-periode donne, pour chaque année de `{python} PA0` à `{python} AN1`, le nombre de postes chiffrés parmi les postes rattachés à chaque secteur ; `{python} PA0` est la première année où un poste de la sécurité sociale est chiffré. La part du montant couverte n'y figure qu'à partir de `{python} AN0`, première année du compte des administrations publiques en base&nbsp;1997 retenue ici ; elle est mesurée comme dans la note ci-dessus. <!-- TODO (comptable-national) : comptes des secteurs en base 1983 (éditions 2001-2005 à 2004-2008) versés en brouillon dans l'entrepôt, sans le compte de l'administration centrale et avec 50 correspondances « à valider » : part du montant avant la base 1997 à examiner une fois ces correspondances tranchées (question M10, docs/notes/questions-mahdi.md). La base 2015 est rétropolée jusqu'en 2010 pour le PIB (annexe-pib, tbl-pib-bases) : vérifier si des comptes des secteurs 2010-2014 en base 2015 sont publiés (règle docs/procedures/affirmer-une-absence.md). -->
 
 ::: {.callout-note collapse="true" title="La couverture année par année, sur toute la période des séries"}
 ```{python}
@@ -124,7 +132,8 @@ for an in sorted({a for a, _ in _dp}):
     print(f"| {an} | " + " | ".join(cells) + " |")
 print("\n: Couverture des administrations publiques et de leurs sous-secteurs par les postes de l'ouvrage, année par année : "
       "postes chiffrés sur postes rattachés au secteur (qui verse ou qui reçoit) ; part du montant couverte, en % des montants "
-      "de l'INS, pour les seules années du compte en base 2015 (APU : somme des trois sous-secteurs, non consolidée) "
+      f"de l'INS, à partir de {AN0}, chaque année dans une seule base, sans raccord entre bases (APU : somme des trois "
+      "sous-secteurs, non consolidée) "
       "{#tbl-capu-longue-periode}\n")
 ```
 :::
