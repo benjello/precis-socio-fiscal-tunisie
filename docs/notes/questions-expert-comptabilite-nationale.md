@@ -39,6 +39,7 @@ Références : INS, *Les comptes de la nation* (clé bibliographique `ins-cnat-2
 - Priorité 1.
 
 **A6. Comment passe-t-on des dépenses d'équipement du budget à la FBCF de l'administration centrale, et que s'est-il passé en 2021 ?**
+- Localisé le 25/11/2026 : la hausse de l'équipement en 2021 (+1 472,8) vient du financement public (+1 017,3) et des investissements sur emprunts extérieurs (+710,6), alors que la FBCF de S1311 baisse (−466,3) et que D.9 ne croît que de 56,5 (ministère des Finances, répartition économique des dépenses ; tableau dans le livre de l'investissement). Où l'INS range-t-il ces deux rubriques (FBCF d'autres secteurs, opérations financières, D.9) ?
 - La norme dit, la source mesure : la FBCF (SCN 2008, § 10.64, p. 206) se distingue des aides à l'investissement (§ 10.208, p. 222) ; les dépenses d'équipement du budget réunissent les deux. La définition explique le niveau de 2015-2020 (FBCF + D.9 = 0,98 à 1,12 de l'équipement), pas la rupture de 2021 : qu'a changé 2021 dans la nomenclature ou le traitement des participations et des prêts ?
 - Observé : FBCF de S1311, 4 899,2 en 2023, contre 9 147,0 de dépenses d'équipement réalisées. Le rapport tombe de 0,87 (2015) à 0,54 (2023). Les transferts en capital versés par S1311 (D.9, 3 267,4 en 2023) et la FBCF couvrent 0,98 à 1,12 de l'équipement de 2015 à 2020, puis 0,77 à 0,89 depuis 2021.
 - Déjà testé : une différence de définition seule est écartée (le rapport n'est pas stable).

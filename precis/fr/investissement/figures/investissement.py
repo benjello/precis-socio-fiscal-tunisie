@@ -62,3 +62,21 @@ def table_fbcf():
     f = fbcf()
     return pd.DataFrame([{"Base": b, "Secteur": lib, "Année": a, "FBCF (MD courants)": v}
                          for b, secteurs in f.items() for lib, pts in secteurs.items() for a, v in sorted(pts.items())])
+
+
+def table_apu_domaine(annees=range(2015, 2024)) -> str:
+    """Tableau markdown : FBCF des administrations publiques par domaine (base 2015), édition la plus récente
+    qui imprime l'année ; lignes dans l'ordre imprimé par l'INS, « dont » en retrait."""
+    d = figtools.series("cnat-fbcf")
+    d = d[(d["famille"] == "apu_domaine") & (d["base"] == "base 2015")]
+    d = d.sort_values("edition").groupby(["annee", "cle"]).tail(1)
+    ordre = d.sort_values(["edition", "rang"]).drop_duplicates("cle", keep="last").sort_values("rang")
+    ans = [a for a in annees if a in set(d["annee"].astype(int))]
+    v = {(r.cle, int(r.annee)): float(r.valeur_md) for r in d.itertuples()}
+    fr = lambda x: f"{x:,.1f}".replace(",", " ").replace(".", ",")
+    lignes = ["| Domaine | " + " | ".join(str(a) for a in ans) + " |", "|---|" + "--:|" * len(ans)]
+    for r in ordre.itertuples():
+        lib = ("— " if int(r.retrait) else "") + r.libelle
+        lib = f"**{lib}**" if r.cle in ("equipements collectifs des administrations publiques", "total general") else lib
+        lignes.append(f"| {lib} | " + " | ".join(fr(v[(r.cle, a)]) if (r.cle, a) in v else "" for a in ans) + " |")
+    return "\n".join(lignes)
