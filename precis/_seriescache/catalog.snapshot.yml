@@ -7910,3 +7910,57 @@
     (consultées le 2026-10-27) : réutilisation commerciale et non commerciale, redistribution
     et transformation autorisées ; citer le producteur et la date de mise à jour,
     ne pas suggérer une caution officielle ni tromper sur le contenu ; droit tunisien'
+- id: cnrps-pensions
+  titre: 'CNRPS : pensions, affiliés, recettes et dépenses du régime de retraite,
+    2000-2020'
+  sources:
+  - cnrps-guides-rapports
+  build: scripts/extract_cnrps_pensions.py:main
+  raw:
+  - data/raw/caisses/cnrps
+  output: data/processed/caisses/cnrps_pensions.csv
+  unite: personnes, pensions, milliers de dinars, dinars par mois
+  perimetre: 'régime de retraite des agents publics géré par la CNRPS : affiliés actifs,
+    nombre de pensions (retraite, toutes natures), dépenses et recettes du régime,
+    pension moyenne publiée par la caisse (retraite, veuves), et trois grandeurs calculées
+    : pension moyenne de retraite (2000-2010), pension moyenne toutes natures, salaire
+    moyen des cotisants reconstitué'
+  caveats: 'SITE DE LA CAISSE BLOQUÉ (pare-feu applicatif, y compris depuis un navigateur)
+    : documents récupérés dans les archives du web, adresses dans sources/cnrps-urls.csv
+    ; le rapport 2015 et le guide 2010-2019 y sont tronqués. VALEURS TRANSCRITES À
+    LA MAIN : la couche texte des guides n''est pas fiable (2012 : 2 095 019 en texte,
+    2 195 109 à l''image) ; chaque ligne dit son mode de lecture, et les soldes et
+    totaux sont contrôlés. DEUX SÉRIES DE PENSION MOYENNE PUBLIÉE (rapport 2016 d''une
+    part, rapports 2017-2020 d''autre part : 1 118 et 1 061 dinars pour 2016) : non
+    raccordées. Les grandeurs calculées rapportent des dépenses annuelles à un nombre
+    de pensions de fin d''année ; le salaire moyen des cotisants divise les recettes
+    de TOUS les régimes de retraite par le taux de cotisation et par les affiliés
+    : il dépasse l''assiette tirée des seules cotisations du régime général (série
+    cnrps-regime-general-finances) de 11,8 % en 2014, 16,4 % en 2015, 23,1 % en 2016,
+    20,0 % en 2017 et 27,2 % en 2018. La péréquation « des affiliés » n''en explique
+    qu''une partie (6,6 % des cotisations en 2014, 10,6 % en 2018) ; le reste vient
+    de la péréquation des employeurs, de la bonification, des rachats et des recettes
+    hors régime général (régimes spéciaux, couverture de leur déficit, retraites anticipées).
+    Les états financiers intitulent cette ligne « مساهمات المنخرطين » (contributions
+    des affiliés) sans nommer les retraités ; c''est la loi (art. 37 de la loi 85-12,
+    rédaction de la LF 2002 et de la loi 2007-43, citée d''après le précis) qui met
+    ces contributions à la charge du bénéficiaire de la pension. Pour un dénominateur
+    salarial, utiliser l''assiette tirée des cotisations seules, non ce salaire reconstitué.
+    En 2017, seules 50 % des augmentations des actifs ont été versées aux retraités
+    (rapport 2017, p. 37). Guide 2000-2010 : 33 667 ou 36 125 orphelins en 2006 selon
+    le tableau.'
+  titre_ar: 'الصندوق الوطني للتقاعد والحيطة الاجتماعية: الجرايات والمنخرطون وإيرادات
+    ونفقات نظام التقاعد، 2000-2020'
+  unite_ar: أشخاص، جرايات، آلاف الدنانير، دنانير شهرياً
+  perimetre_ar: 'نظام تقاعد أعوان القطاع العمومي: المنخرطون، عدد الجرايات، نفقات وإيرادات
+    النظام، معدّل الجراية المنشور، وثلاثة مقادير محسوبة'
+  caveats_ar: موقع الصندوق محجوب، فاستُرجعت الوثائق من أرشيف الواب. نُقلت القيم يدوياً
+    لأنّ الطبقة النصّية للأدلّة الإحصائية غير موثوقة، مع مراقبة الأرصدة والمجاميع.
+    سلسلتان مختلفتان لمعدّل الجراية المنشور لا تُربطان. الأجر المتوسط المعاد تركيبه
+    يقسم إيرادات جميع أنظمة التقاعد على نسبة المساهمة وعلى المنخرطين، فيفوق قاعدة
+    المساهمات المستخلصة من مساهمات الأجراء والمشغل وحدها في النظام العام بـ 11,8 %
+    سنة 2014 وبـ 27,2 % سنة 2018؛ ولا تفسّر مساهمات المنخرطين بعنوان التعديل الآلي
+    للجرايات إلا جزءا من هذا الفارق. لا تذكر القوائم المالية المتقاعدين في هذا البند،
+    والقانون هو الذي يحمّل هذه المساهمات على المنتفع بالجراية. في سنة 2017 لم يُصرف
+    للمتقاعدين إلا 50 % من الزيادات.
+  fiche: sources/cnrps-publications.md
