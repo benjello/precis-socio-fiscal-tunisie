@@ -434,7 +434,7 @@ SOURCES = {
     ("S14", "emplois", "consommation_intermediaire"): "Pas de série au catalogue.",
     ("S14", "ressources", "transferts_sociaux_nature"): "`ins-budget-sante-2018-2023` (dépenses du département de la Santé, 2018-2023) ; `cnam-comptes-2011-2021` (prestations décaissées par la CNAM). Pour l'enseignement, pas de série couvrant 2020.",
     ("S14", "emplois", "cotisations_sociales"): "`cnss-cotisations` : cotisations encaissées par la CNSS, 2000-2020 (hors branches maladie et accidents du travail depuis 2006) ; `cnrps-regime-general-finances` : cotisations du régime général de la CNRPS, 2014-2020. Cotisations de la CNAM : pas de série au catalogue.",
-    ("S14", "ressources", "prestations_especes"): "`cnrps-pensions` : dépenses du régime de retraite de la CNRPS, 2000-2020 ; `cnss-annuaire-2018-brut` : pensions et prestations familiales du régime des salariés non agricoles, 2000-2018.",
+    ("S14", "ressources", "prestations_especes"): "`cnrps-pensions` : dépenses de l'ensemble des régimes de retraite de la CNRPS, 2000-2020, retenues pour 2000-2013 par le poste `pensions-cnrps-tous-regimes-2000-2013` ; `cnss-annuaire-2018-brut` : pensions et prestations familiales du régime des salariés non agricoles, 2000-2018.",
     ("S14", "ressources", "autres_transferts_courants"): "Pas de série au catalogue, ni pour les transferts reçus de l'étranger ni pour les autres.",
     ("S14", "emplois", "remuneration_salaries"): "INS hors comptes nationaux : `ins-repertoire-emploi-forme` : salariés des entreprises « personne physique », 2000-2024 (effectifs, sans montant).",
     ("S14", "ressources", "revenus_propriete"): "Pas de série au catalogue.",

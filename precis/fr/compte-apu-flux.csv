@@ -36,5 +36,8 @@ moyens-services-collectivites,consommation_intermediaire,P.2,apu_locale,snf,275.
 interets-dette-collectivites,interets,D.41,apu_locale,sf,21.2,finances_locales,finances_locales/_budgets#sec-fl-budg-comptes-interets,marges publiées,
 cotisations-cnss-2021-2023,cotisations_sociales,D.61,menages,apu_secu,,caisses,caisses/_comptes_longue_periode#sec-caisses-cnss-post-2004,,
 cotisations-cnrps-2021-2023,cotisations_sociales,D.61,menages;apu_centrale,apu_secu,,cotisations_sociales,cotisations_sociales/_pensions#sec-cot-pensions-passage,,
+cotisations-cnrps-2014-2018,cotisations_sociales,D.61,menages;apu_centrale,apu_secu,,cotisations_sociales,cotisations_sociales/_pensions#sec-cot-pensions-comptes,,
+pensions-cnrps-2014-2018,prestations_especes,D.62,apu_secu,menages,,retraites,retraites/_secteur_public#sec-cnrps-equilibre-comptes,,
+pensions-cnrps-tous-regimes-2000-2013,prestations_especes,D.62,apu_secu,menages,,retraites,retraites/_secteur_public#sec-cnrps-equilibre-passage,,
 transferts-courants-verses-au-rdm,autres_transferts_courants,D.7,snf;sf;menages,rdm,489.3,echanges,echanges/index#sec-echanges-d7-versee,,
 transferts-personnels-recus-du-rdm,transferts_courants_divers,D.75,rdm,menages,5105.1,echanges,echanges/index#sec-echanges-d75-recue,,

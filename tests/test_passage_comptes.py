@@ -40,6 +40,17 @@ class TestPassage(unittest.TestCase):
         for l in pc.lignes("interets-dette-collectivites"):
             self.assertAlmostEqual(l["part"], 100 * l["montant"] / l["ins"])
 
+    def test_facteur_applique(self):
+        """Un poste dont la série est en dinars ou en milliers sort en millions, comme dans le registre."""
+        avec = [p for p in pc.registre().values() if p["facteur"] and p["serie"]]
+        self.assertGreater(len(avec), 0)
+        for p in avec:
+            for an in pc.rc.annees_chiffrees(p):
+                brut = pc.rc.montant(p["serie"], p["colonne"], an)[0]
+                self.assertAlmostEqual(pc.montant(p["poste"], an), brut * float(p["facteur"]), msg=p["poste"])
+        # états financiers de la CNRPS, en dinars : 2 378 290 688 dinars en 2015, soit 2 378,3 millions
+        self.assertAlmostEqual(pc.montant("cotisations-cnrps-2014-2018", 2015), 2378.290688, places=4)
+
     def test_terme(self):
         self.assertEqual(pc.terme("cotisations-cnam"), "Cotisations sociales (D.61)")
 
