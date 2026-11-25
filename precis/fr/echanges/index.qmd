@@ -67,29 +67,78 @@ Les montants des produits transformés ne sont publiés qu'au dixième de millia
 
 Les postes ci-dessous rattachent la balance des paiements de la Banque centrale [@bct-bdp-2022 ; @bct-bdp-2023 ; @bct-bdp-2024] aux opérations du compte du reste du monde [@ins-cnat-2015], avec le passage du travail à façon établi plus haut pour les biens et les services.
 
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "../../../scripts")
+import passage_comptes as pc
+_P = [("exportations-biens", "Exportation de biens (P.61), produits transformés compris"),
+      ("importations-biens", "Importation de biens (P.71), importations pour fabrication comprises"),
+      ("exportations-services", "Exportation de services (P.62), hors fabrication et redevance gaz"),
+      ("importations-services", "Importation de services (P.72)"),
+      ("remunerations-recues-du-rdm", "Rémunération des salariés (D.1) reçue des non-résidents"),
+      ("remunerations-versees-au-rdm", "Rémunération des salariés (D.1) versée aux non-résidents")]
+_L = {p: {l["annee"]: l for l in pc.lignes(p)} for p, _ in _P}
+_ans = sorted(set().union(*_L.values()))
+_nd = sorted({(a, l["edition"], l["statut"]) for d in _L.values() for a, l in d.items() if l["statut"] != "definitif"})
+print("| Millions de dinars | " + " | ".join(map(str, _ans)) + " |")
+print("|---|" + "--:|" * len(_ans))
+for p, nom in _P:
+    print(f"| **{nom}** |" + " |" * len(_ans))
+    for lib, f in (("Balance des paiements", lambda l: pc.fr(l["montant"])), ("Comptes nationaux", lambda l: pc.fr(l["ins"])),
+                   ("Balance / comptes", lambda l: pc.pct(l["part"]))):
+        print(f"| {lib} | " + " | ".join(f(_L[p][a]) if a in _L[p] else "" for a in _ans) + " |")
+_ST = {"semi_definitif": "semi-définitive", "provisoire": "provisoire"}
+_st = "".join(f" ; {a} : {_ST.get(st, st)} dans l'édition {ed}" for a, ed, st in _nd)
+_eds = sorted({l["edition_bdp"] for l in pc.rc.lire_csv(pc.rc.CACHE / "bct-bdp-postes-s2.csv")})
+print("\n: Passage de la balance des paiements aux opérations du compte du reste du monde (S2), "
+      f"{_ans[0]}-{_ans[-1]}, en millions de dinars courants ; balance des paiements : rapports de {_eds[0]} à "
+      f"{_eds[-1]} ; comptes nationaux : dernière édition où l'année est définitive" + _st
+      + " {#tbl-echanges-passage}\n")
+```
+
+Sources : balance des paiements, tableaux de la balance et texte du rapport [@bct-bdp-2022 ; @bct-bdp-2023 ; @bct-bdp-2024] ; comptes du reste du monde [@ins-cnat-2015].
+
+<!-- TODO (documentaliste) : expliquer l'écart de la rémunération des salariés (D.1) reçue des
+     non-résidents entre la balance des paiements (crédits) et le compte du reste du monde, et l'écart
+     de 7 à 13 % des importations de services (P.72) ; chercher la note méthodologique de l'INS sur le
+     compte du reste du monde au-delà de la liste du vol. A, p. 17, de l'édition 2015-2020. -->
+
 ### Exportations de biens {#sec-echanges-p61}
 
 {{< include ../encadres-comptes/exportations-biens.md >}}
+
+Le passage ajoute aux biens de la balance des paiements les exportations de produits ayant subi une transformation, que la balance compte en services de fabrication et les comptes nationaux en biens (@sec-echanges-facon). Les montants de ces produits ne sont publiés qu'au dixième de milliard de dinars ; l'écart restant aux comptes (@tbl-echanges-passage) n'est pas expliqué.
 
 ### Importations de biens {#sec-echanges-p71}
 
 {{< include ../encadres-comptes/importations-biens.md >}}
 
+Le passage ajoute aux biens de la balance des paiements les importations pour motif de fabrication (@sec-echanges-facon). Pour 2022, le rapport de la Banque centrale les donne seulement comme supérieures à 20 milliards de dinars [@bct-bdp-2022, p. 31] : le passage commence en 2023. L'écart restant aux comptes (@tbl-echanges-passage) n'est pas expliqué.
+
 ### Exportations de services {#sec-echanges-p62}
 
 {{< include ../encadres-comptes/exportations-services.md >}}
+
+Le passage retire des services de la balance des paiements deux montants que les comptes nationaux rangent ailleurs : les services de fabrication, comptés en biens (@sec-echanges-facon), et la redevance gaz, que l'INS reclasse comme revenu de la propriété, en loyers (D.45) [@ins-cnat-2015, éd. 2015-2020, vol. A, p. 17]. L'écart restant aux comptes (@tbl-echanges-passage) n'est pas expliqué.
 
 ### Importations de services {#sec-echanges-p72}
 
 {{< include ../encadres-comptes/importations-services.md >}}
 
+Les importations de services sont les services de la balance des paiements, au débit, sans passage. L'écart aux comptes (@tbl-echanges-passage) n'est pas expliqué.
+
 ### Rémunération reçue des non-résidents {#sec-echanges-d1-recue}
 
 {{< include ../encadres-comptes/remunerations-recues-du-rdm.md >}}
 
+La rémunération reçue est celle de la balance des paiements, au crédit, sans passage. Elle est plusieurs fois supérieure à celle des comptes (@tbl-echanges-passage) ; l'écart n'est pas expliqué.
+
 ### Rémunération versée aux non-résidents {#sec-echanges-d1-versee}
 
 {{< include ../encadres-comptes/remunerations-versees-au-rdm.md >}}
+
+La rémunération versée est celle de la balance des paiements, au débit, sans passage. L'écart aux comptes (@tbl-echanges-passage) n'est pas expliqué.
 
 ### La redevance du gazoduc {#sec-echanges-redevance-gaz}
 
