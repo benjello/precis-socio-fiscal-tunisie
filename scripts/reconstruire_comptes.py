@@ -13,7 +13,7 @@ des comptes de secteur de l'INS (opération × côté × secteur). Le script :
    lus dans le cache ; source = première clé de citation de la série ; un poste sans série garde
    un montant vide (jamais estimé) ;
 3. pour chaque opération des comptes non financiers de S13 et de ses sous-secteurs, compare la
-   cible de l'INS à la somme des postes rattachés : écart (résidu publié) et taux de couverture ;
+   cible de l'INS à la somme des postes rattachés : écart (résidu publié) et justesse (somme des postes / montant INS) ; part du compte couverte et justesse par secteur et par année : scripts/couverture_comptes.py ;
 4. contrôle : un poste par section (une section n'a qu'un domicile), ancres existantes, somme des
    sous-secteurs face au consolidé, solde B.1g recalculé ;
 5. écrit precis/fr/compte-apu-reconstruit.csv (une ligne par opération et secteur),
@@ -34,6 +34,9 @@ from pathlib import Path
 
 import yaml
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import couverture_comptes as cc  # noqa: E402
+
 RACINE = Path(__file__).resolve().parent.parent
 FR = RACINE / "precis" / "fr"
 CACHE = RACINE / "precis" / "_seriescache"
@@ -42,7 +45,7 @@ SORTIE = FR / "compte-apu-reconstruit.csv"
 FLUX = FR / "compte-apu-flux.csv"
 ENCADRES = FR / "encadres-comptes"
 CONFIG = FR / "annee-reference.yml"
-ANNEES = FR / "compte-apu-annees.csv"
+ANNEES = FR / "compte-couverture-annees.csv"
 QUI = FR / "compte-apu-qui-verse.csv"
 PRINCIPAUX = [("snf", "sociétés non financières"), ("sf", "sociétés financières"), ("apu", "administrations publiques"),
               ("menages", "ménages"), ("rdm", "reste du monde")]
@@ -177,7 +180,7 @@ def calculer(an: int, ed: str, secteurs: list[dict], snapshot: dict):
                        "code_scn": code, "operation": op, "cible_ins_md": v,
                        "postes": ";".join(noms), "somme_postes_md": "" if s_postes is None else round(s_postes, 1),
                        "residu_md": "" if residu is None else residu,
-                       "couverture_pct": "" if s_postes is None or not v else round(100 * s_postes / v, 1),
+                       "justesse_pct": "" if s_postes is None or not v else round(100 * s_postes / v, 1),
                        "residu_nomme": RESIDUS_NOMMES.get(op, "") if residu is not None else ""})
     # Contrôles : sous-secteurs face au consolidé ; solde B.1g
     controles = []
@@ -220,16 +223,16 @@ def main(argv=None) -> int:
     annees = []
     for y in range(2015, 2024):  # couverture année par année, pour montrer le profil des retards
         ed_y = edition_pour(secteurs, y)
-        _, lig_y, _, _, _ = calculer(y, ed_y, secteurs, snapshot)
-        for sec in ("S13", "S1311", "S1313", "S1314"):
-            ls = [l for l in lig_y if l["secteur"] == sec and l["operation"] not in AGREGATS]
-            cv = [l for l in ls if l["somme_postes_md"] != ""]
-            num = sum(abs(float(l["somme_postes_md"])) for l in cv)
-            den = sum(abs(float(l["cible_ins_md"])) for l in cv)
-            annees.append({"annee": y, "edition": ed_y, "secteur": sec, "operations": len(ls), "couvertes": len(cv),
-                           "postes_md": round(num, 1), "ins_md_couvertes": round(den, 1),
-                           "couverture_pct": round(100 * num / den, 1) if den else ""})
+        postes_y, _, _, _, _ = calculer(y, ed_y, secteurs, snapshot)
+        lig_y = [l for l in secteurs if l["edition"] == ed_y and int(l["annee"]) == y and str(l.get("base", "2015")) == "2015"]
+        for code, (sec, membres) in cc.SECTEURS.items():
+            ops = cc.feuilles([l for l in lig_y if l["secteur"] == sec])
+            if ops:
+                annees.append({"annee": y, "edition": ed_y, "secteur": code,
+                               **cc.indicateurs(ops, cc.postes_du_secteur(postes_y, membres))})
     if a.verifier:
+        if [dict(x) for x in lire_csv(ANNEES)] != [{k: str(v) for k, v in l.items()} for l in annees]:
+            erreurs.append(f"{ANNEES.name} n'est pas à jour : relancer scripts/reconstruire_comptes.py")
         for e in erreurs:
             print("ERREUR :", e)
         return 1 if erreurs else 0
