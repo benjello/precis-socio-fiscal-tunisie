@@ -1,9 +1,9 @@
-# Figure-data du précis socio-fiscal tunisien — généré le 2026-11-09
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-11-25
 # séries (tunisia_data) : budget-dispositifs-poids
 # sources (citation) : @minfin-repartition-depenses-xls, @minfin-transferts-garanties, @dgct-donnees-ouvertes
 # fiches : 
 # méthode/hypothèses : 
-# note : Le poids des dispositifs du précis dans les dépenses de l'État hors dette, par an (les transferts transversaux en pointillé)
+# note : Le poids des dispositifs de l'ouvrage dans les dépenses de l'État hors dette, par an (les transferts transversaux en pointillé)
 annee,dispositif,valeur_MDT,rattachement,transversal,part_ligne_pct,part_total_pct
 1990,masse_salariale,1243.0,remunerations,False,100.0,39.07
 1991,masse_salariale,1409.0,remunerations,False,100.0,40.1

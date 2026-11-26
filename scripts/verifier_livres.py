@@ -9,11 +9,22 @@ from __future__ import annotations
 
 import json
 import re
+from pathlib import Path
 import sys
 
 LIVRES = ("caisses", "compensation", "cotisations_sociales", "entreprises_publiques",
           "finances_locales", "fiscalite", "marche_travail", "prestations_sociales",
-          "remunerations_publiques", "retraites", "sante", "education", "informel")
+          "remunerations_publiques", "retraites", "sante", "education", "informel",
+          "transport", "environnement", "agriculture", "energie", "cadre", "industrie", "logement",
+          "consommation", "investissement", "echanges", "synthese")
+# Les pages générales, rendues une à une par build.sh (`PAGES`) : à tenir dans le même ordre.
+PAGES_GENERALES = ("index", "comment-lire", "comment-constitue", "a-propos", "principes-structure",
+                   "annexe-pib", "annexe-budget-etat", "annexe-dette-publique", "annexe-sources",
+                   "annexe-comptes-nation", "index-institutions", "parcours-atmp",
+                   "correspondance-instruments", "correspondance-comptes", "compte-apu", "compte-secteurs",
+                   "sommaire-comptes", "series-longues")
+RE_PAGE_GENERALE = re.compile(r"^precis/(fr|ar)/([^/]+)\.qmd$")
+RE_FIGURE_DE_PAGE = re.compile(r"^precis/(fr|ar)/figures/([^/]+)\.py$")
 
 # Un fichier sous ces préfixes touche potentiellement TOUS les livres : les
 # modules Python que les figures importent (`from figures import …` mis à part —
@@ -32,6 +43,7 @@ PREFIXES_PARTAGES = (
     "scripts/openfisca_tables.py",
     "scripts/augmentations.py",
     "scripts/tarifs.py",
+    "scripts/dinars_constants.py",
     "precis/glossaire.yml",
     "precis/legendes.scss",
     "precis/legendes.html",
@@ -39,6 +51,61 @@ PREFIXES_PARTAGES = (
 )
 
 RE_FICHIER_DE_LIVRE = re.compile(r"^precis/(?:fr|ar)/([^/]+)/")
+RE_SERIE = re.compile(r"^precis/_seriescache/([^/]+?)(?:\.liens\.(?:fr|ar)\.yml|\.csv)$")
+SNAPSHOT = "precis/_seriescache/catalog.snapshot.yml"
+
+
+def utilisateurs_serie(sid: str, racine: Path | None = None) -> tuple[set[str], set[str]] | None:
+    """Livres et pages générales (« langue/page ») qui citent la série `sid` en toutes lettres.
+
+    On cherche l'identifiant entre guillemets dans les `.qmd` et les modules de figures. Une
+    série que personne ne cite littéralement (identifiant construit par le code, par exemple)
+    rend None, comme une série citée par un module partagé de `scripts/` : l'appelant retombe
+    alors sur le rendu de tous les livres.
+    """
+    racine = racine or Path(__file__).resolve().parent.parent
+    motif = re.compile(rf"[\"']{re.escape(sid)}[\"']")
+    for f in modules_importes(racine):
+        if motif.search(f.read_text(encoding="utf-8")):
+            return None  # lue par un module partagé : tous les livres peuvent en dépendre
+    livres, pages = set(), set()
+    for langue in ("fr", "ar"):
+        base = racine / "precis" / langue
+        for livre in LIVRES:
+            d = base / livre
+            if not d.is_dir():
+                continue
+            for f in [*d.glob("*.qmd"), *d.glob("figures/*.py")]:
+                if motif.search(f.read_text(encoding="utf-8")):
+                    livres.add(livre)
+                    break
+        modules = {f.stem for f in base.glob("figures/*.py") if motif.search(f.read_text(encoding="utf-8"))}
+        for page in PAGES_GENERALES:
+            qmd = base / f"{page}.qmd"
+            if not qmd.exists():
+                continue
+            texte = qmd.read_text(encoding="utf-8")
+            if motif.search(texte) or any(re.search(rf"from figures import [^\n]*\b{re.escape(m)}\b", texte)
+                                          for m in modules):
+                pages.add(f"{langue}/{page}")
+    return (livres, pages) if (livres or pages) else None
+
+
+def modules_importes(racine: Path) -> list[Path]:
+    """Modules de `scripts/` que les livres ou les pages générales importent."""
+    noms = set()
+    for f in (racine / "precis").glob("*/**/*"):
+        if f.suffix in (".py", ".qmd") and "/public/" not in f.as_posix() and f.is_file():
+            noms |= set(re.findall(r"^\s*(?:from|import) ([a-zA-Z_]\w*)", f.read_text(encoding="utf-8"), re.M))
+    return [racine / "scripts" / f"{n}.py" for n in sorted(noms) if (racine / "scripts" / f"{n}.py").exists()]
+
+
+def series_touchees(fichiers: list[str]) -> list[str] | None:
+    """Identifiants des séries du cache modifiées ; None si le snapshot du catalogue change seul."""
+    ids = [m.group(1) for m in (RE_SERIE.match(f.strip()) for f in fichiers) if m]
+    if any(f.strip() == SNAPSHOT for f in fichiers) and not ids:
+        return None
+    return ids
 RE_FICHIER_DE_LANGUE = re.compile(r"^precis/(?:fr|ar)/[^/]+\.[^/]+$")
 
 
@@ -55,12 +122,87 @@ def livres_touches(fichiers: list[str]) -> list[str]:
         f = f.strip()
         if not f:
             continue
+        m = RE_PAGE_GENERALE.match(f)
+        if m and m.group(2) in PAGES_GENERALES:
+            continue  # une page générale se rend à part (pages_generales_touchees), pas les livres
+        if RE_SERIE.match(f) or f == SNAPSHOT:
+            continue  # séries du cache : rendre leurs seuls utilisateurs (plus bas)
         if f.startswith(PREFIXES_PARTAGES) or RE_FICHIER_DE_LANGUE.match(f):
             return sorted(LIVRES)
         m = RE_FICHIER_DE_LIVRE.match(f)
         if m and m.group(1) in LIVRES:
             touches.add(m.group(1))
+    ids = series_touchees(fichiers)
+    if ids is None:
+        return sorted(LIVRES)
+    for sid in ids:
+        u = utilisateurs_serie(sid)
+        if u is None:
+            return sorted(LIVRES)
+        touches |= u[0]
     return sorted(touches)
+
+
+def pages_generales_touchees(fichiers: list[str]) -> list[str]:
+    """Les pages générales à rendre, « langue/page », déduites des chemins modifiés.
+
+    Une page générale `precis/<langue>/<page>.qmd` modifiée se rend elle-même. Un module de
+    figures `precis/<langue>/figures/<nom>.py` fait rendre les pages générales de la même langue
+    qui l'importent (`from figures import <nom>`). Les livres, eux, se rendent par
+    `livres_touches`.
+    """
+    racine = Path(__file__).resolve().parent.parent
+    pages: set[str] = set()
+    for f in (x.strip() for x in fichiers):
+        m = RE_PAGE_GENERALE.match(f)
+        if m and m.group(2) in PAGES_GENERALES:
+            pages.add(f"{m.group(1)}/{m.group(2)}")
+            continue
+        m = RE_FIGURE_DE_PAGE.match(f)
+        if m:
+            langue, module = m.groups()
+            for page in PAGES_GENERALES:
+                qmd = racine / "precis" / langue / f"{page}.qmd"
+                if qmd.exists() and re.search(rf"from figures import [^\n]*\b{re.escape(module)}\b",
+                                              qmd.read_text(encoding="utf-8")):
+                    pages.add(f"{langue}/{page}")
+    for sid in series_touchees(fichiers) or []:
+        u = utilisateurs_serie(sid)
+        if u:
+            pages |= u[1]
+    return sorted(pages)
+
+
+def nettoyage_apres_rendu(avant_modifies: list[str], apres_modifies: list[str],
+                          avant_non_suivis: list[str], apres_non_suivis: list[str],
+                          livres_sources_touchees: list[str]) -> tuple[list[str], list[str]]:
+    """(figdata à restaurer, figdata non suivis à supprimer) après un rendu.
+
+    Un rendu réécrit des `figdata` (CSV et sidecar) : c'est voulu quand les sources du livre ont
+    changé, c'est du bruit quand le livre n'a été rendu qu'à cause d'un fichier partagé. On ne
+    touche donc qu'aux figdata qui étaient PROPRES avant le rendu (ni modifiés, ni non suivis), et
+    seulement dans un livre dont aucune source n'a changé. Tout le reste est laissé tel quel.
+    """
+    def livre(chemin: str) -> str | None:
+        m = RE_FICHIER_DE_LIVRE.match(chemin)
+        return m.group(1) if m else None
+
+    garde = set(livres_sources_touchees)
+    restaurer = [f for f in apres_modifies
+                 if "/figdata/" in f and f not in set(avant_modifies) and livre(f) not in garde]
+    supprimer = [f for f in apres_non_suivis
+                 if "/figdata/" in f and f not in set(avant_non_suivis) and livre(f) not in garde]
+    return sorted(restaurer), sorted(supprimer)
+
+
+def livres_sources_touchees(fichiers: list[str]) -> list[str]:
+    """Les livres dont un fichier propre (hors figdata) figure parmi les chemins modifiés."""
+    livres: set[str] = set()
+    for f in (x.strip() for x in fichiers):
+        m = RE_FICHIER_DE_LIVRE.match(f)
+        if m and "/figdata/" not in f:
+            livres.add(m.group(1))
+    return sorted(livres)
 
 
 FICHIERS_DE_LIVRE_GLOBAUX = ("_glossaire.qmd", "_glossaire.infobulles.html", "index.qmd")
@@ -104,7 +246,9 @@ def compter_citations_non_resolues(html: str) -> int:
     le point d'interrogation. `[^<]+` (un ou plus, pas `*`) exclut donc ce seul
     cas légitime sans liste d'exceptions ad hoc.
     """
-    return len(re.findall(r"<strong>[^<]+\?</strong>", html))
+    # Une clé de citation n'a pas d'espace : un titre en gras qui finit par « ? » (« …quelles
+    # perspectives ? », annexe des sources) n'est pas une citation non résolue.
+    return len(re.findall(r"<strong>[^<\s]+\?</strong>", html))
 
 
 def compter_arobases_cassees(html: str) -> int:
@@ -116,7 +260,9 @@ def compter_arobases_cassees(html: str) -> int:
     motif d'échappement d'URL (constaté dans `anchor.min.js`), sans rapport
     avec une citation.
     """
-    return html.count("?@")
+    # Une page rendue autonome embarque la bibliothèque JS (motif `?@` d'échappement d'URL) :
+    # on ne compte que hors des blocs <script>.
+    return re.sub(r"<script\b.*?</script>", "", html, flags=re.S).count("?@")
 
 
 def compter_renvois_casses(html: str) -> int:
@@ -188,6 +334,20 @@ def _cli(argv: list[str]) -> int:
         livres = livres_touches(fichiers)
         if livres:
             print("\n".join(livres))
+        return 0
+    if commande == "pages-touchees":
+        pages = pages_generales_touchees([l for l in entree.splitlines() if l.strip()])
+        if pages:
+            print("\n".join(pages))
+        return 0
+    if commande == "nettoyage":
+        # entrée : JSON {"avant_modifies": [...], "apres_modifies": [...], "avant_non_suivis": [...],
+        #                "apres_non_suivis": [...], "fichiers_diff": [...]}
+        d = json.loads(entree)
+        restaurer, supprimer = nettoyage_apres_rendu(
+            d["avant_modifies"], d["apres_modifies"], d["avant_non_suivis"], d["apres_non_suivis"],
+            livres_sources_touchees(d["fichiers_diff"]))
+        print(json.dumps({"restaurer": restaurer, "supprimer": supprimer}))
         return 0
     if commande == "citations":
         print(compter_citations_non_resolues(entree))

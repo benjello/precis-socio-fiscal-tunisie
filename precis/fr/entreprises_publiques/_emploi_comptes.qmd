@@ -113,6 +113,42 @@ ep.tableau_effectifs_entreprises(
 
 <!-- TODO (documentaliste) : effectif total de 2021 et d'avant 2018 (l'édition LF 2020 ne donne qu'une part, l'édition LF 2021 n'a pas le tableau) ; fiches des sociétés régionales de transport autres que Sfax et Bizerte ; statistique publique de l'emploi des entreprises publiques non trouvée (enquêtes de l'INS, fiches sur la Banque centrale et la Cour des comptes) ; les numéros de page cités pour les éditions LF 2022 à LF 2024 sont les numéros imprimés de la série (page_imprimee), à contrôler. -->
 
+## Dans les comptes {#sec-ep-comptes}
+
+```{python}
+#| echo: false
+import sys; sys.path.insert(0, "../../../scripts")
+import passage_comptes as pc
+_P = "remunerations-entreprises-publiques"
+_L = {l["annee"]: l for l in pc.lignes(_P)}
+_e = pc.extremes(_L)
+_n = len(pc.registre()[_P]["colonne"].partition("|")[2].split(";"))
+_terme = pc.terme(_P)
+_terme = _terme[0].lower() + _terme[1:]  # « la rémunération des salariés (D.1) », en milieu de phrase
+# édition de chaque exercice (la dernière qui le donne), regroupée : « l'édition LF 2022 pour 2018 et 2019, … »
+_ents = set(pc.registre()[_P]["colonne"].partition("|")[2].split(";"))
+_ed = {}
+for l in pc.rc.lire_csv(pc.rc.CACHE / f"{pc.registre()[_P]['serie']}.csv"):
+    if l["entite"] in _ents and l["derniere_edition"] == "True" and int(l["exercice"]) in _L:
+        _ed[int(l["exercice"])] = l["edition"]
+_grp = {}
+for a in sorted(_ed):
+    _grp.setdefault(_ed[a], []).append(a)
+def _ans(xs):
+    return str(xs[0]) if len(xs) == 1 else (f"{xs[0]} et {xs[1]}" if len(xs) == 2 else f"{xs[0]} à {xs[-1]}")
+_editions = "l'édition " + ", ".join(e.replace("LF", "LF&nbsp;") + " pour " + _ans(xs) for e, xs in _grp.items())
+```
+
+Les charges de personnel de `{python} _n` entreprises publiques se rapprochent de la `{python} _terme` versée par les sociétés non financières (S11) dans les comptes de la nation [@minfin-ep-2022 ; @minfin-ep-2024 ; @minfin-ep-2025 ; @ins-cnat-2015]. Le SCN réunit dans cette opération les salaires et traitements, en espèces ou en nature, et les cotisations sociales à la charge de l'employeur [@sna2008, éd. française, § 7.42, p. 140]. De `{python} _e["premier"]` à `{python} _e["dernier"]`, ces charges en font de `{python} _e["min"]` (`{python} _e["an_min"]`) à `{python} _e["max"]` (`{python} _e["an_max"]`). Chaque exercice est lu dans la dernière édition qui le donne : `{python} _editions`. Le dernier exercice d'une édition y est le plus souvent provisoire ou estimé.
+
+Les entreprises retenues sont les entreprises non financières des fiches du rapport dont les ventes couvrent au moins la moitié des charges d'exploitation chaque année de 2020 à 2023. C'est le seuil que le SCN donne à un producteur marchand, les ventes s'entendant hors paiements des administrations publiques [@sna2008, éd. française, § 22.29 et 22.34-22.35, p. 452-453] ; les charges d'exploitation en approchent les coûts de production. Le classement est celui de l'ouvrage, non celui de l'INS. Sont écartés les offices de l'aviation civile et des aéroports, de la marine marchande et des ports, de l'assainissement et du commerce, ainsi que les agences et sociétés de l'habitat et du foncier : ils passent le seuil, mais leur mission de régulation ou de politique publique laisse ouverte la question de leur caractère marchand [@sna2008, éd. française, § 22.31-22.32, p. 452]. Le Groupe chimique tunisien et l'Office des terres domaniales sont écartés faute de charges de personnel publiées pour 2023 ; le périmètre reste ainsi le même chaque année.
+
+La production (P.1) et la consommation intermédiaire (P.2) ne sont pas rapprochées. Les produits d'exploitation des fiches comprennent les subventions d'exploitation et ne donnent ni la variation des stocks ni la production immobilisée ; les charges d'exploitation réunissent achats, personnel et amortissements. Pour un distributeur, la production est la marge commerciale, non les ventes [@sna2008, éd. française, § 6.146-6.147, p. 113].
+
+<!-- TODO (documentaliste) : classement de ces entreprises par l'INS (S11, S13), et contenu des « charges de personnel » des fiches (salaires et cotisations patronales, autres charges sociales) ; à vérifier avant d'étendre le périmètre. -->
+
+{{< include ../encadres-comptes/remunerations-entreprises-publiques.md >}}
+
 ## Les six éditions du rapport et leurs échantillons {#sec-ep-lp-editions}
 
 Le rapport sur les entreprises publiques ne porte jamais deux fois sur le même ensemble : aucune de ses séries ne se chaîne d'une édition à l'autre.

@@ -1,0 +1,461 @@
+---
+title: "Les comptes des secteurs et leurs domiciles dans l'ouvrage"
+subtitle: "Pour chaque secteur, ses opérations de l'année de référence et les postes de l'ouvrage qui s'y rattachent"
+lang: fr
+format:
+  html:
+    toc: true
+    page-layout: full
+    include-in-header: ../accueil.html
+bibliography:
+  - references.json
+---
+
+[← Retour à l'accueil](index.html) · [Le compte reconstruit des administrations publiques](compte-apu.html) · [Les comptes nationaux et les volumes](correspondance-comptes.html) · [Sommaire par les comptes](sommaire-comptes.html)
+
+```{python}
+#| echo: false
+import csv
+_l = list(csv.DictReader(open("compte-secteurs-reconstruit.csv", encoding="utf-8")))
+AN, ED = _l[0]["annee"], _l[0]["edition"]
+def n(v):
+    return "" if v in ("", None) else f"{float(v):,.1f}".replace(",", " ").replace(".", ",")
+```
+
+Cette page étend aux autres secteurs le [compte reconstruit des administrations publiques](compte-apu.html). Pour chaque secteur des comptes de l'INS [@ins-cnat-2015], elle liste les opérations de l'année de référence et les **postes** de l'ouvrage qui s'y rattachent. Un poste est rattaché quand le secteur figure du côté de l'opération : parmi ceux qui versent pour un emploi, parmi ceux qui reçoivent pour une ressource.
+
+::: {.callout-note}
+Le montant d'un poste n'est pas rapproché ici du montant du secteur. Un poste chiffre souvent l'opération pour plusieurs secteurs à la fois, ou seulement une partie de ce que le secteur reçoit : les intérêts de la dette de l'État ne sont qu'une partie des intérêts reçus par les sociétés financières. La page dit quelles cases ont un domicile dans l'ouvrage, et leur part dans les montants du secteur.
+:::
+
+Dans les tableaux par secteur, le **poids** d'une opération est son montant rapporté au total des montants du même côté du compte du secteur : total des emplois pour une opération inscrite en emplois, total des ressources pour une opération inscrite en ressources (en valeur absolue, hors soldes et compte financier, sans compter deux fois une opération et ses composantes). Il dit ce que pèse l'opération dans le compte, non ce que l'ouvrage en chiffre : pour cela, voir les indicateurs de couverture du [compte reconstruit](compte-apu.html#sec-capu-annee).
+
+```{python}
+#| echo: false
+#| output: asis
+print(f"Année de référence **{AN}**, édition {ED}. Soldes, compte financier et agrégats dont une composante est imprimée sont exclus.\n")
+print("| Secteur | Opérations | Avec une section domicile | Poids des opérations qui ont une section domicile |")
+print("|---|--:|--:|--:|")
+for code in ("S13", "S14", "S11", "S12", "S2"):
+    ls = [l for l in _l if l["secteur"] == code]
+    d = sum(float(l["part_pct"]) for l in ls if l["postes"] and l["part_pct"]) / 2
+    print(f"| {ls[0]['nom']} ({code}) | {len(ls)} | {sum(bool(l['postes']) for l in ls)} | {d:.1f} % |".replace(".", ","))
+print(f"\n: Les cases des comptes des secteurs qui ont un domicile dans l'ouvrage, {AN} (somme des poids des opérations qui ont une section domicile, moyenne des emplois et des ressources ; une section peut ne pas chiffrer l'opération) {{#tbl-csec-synthese}}")
+```
+
+```{python}
+#| echo: false
+#| output: asis
+for code, ancre in (("S14", "menages"), ("S11", "snf"), ("S12", "sf"), ("S2", "rdm")):
+    ls = [l for l in _l if l["secteur"] == code]
+    print(f"\n## {ls[0]['nom'].capitalize()} ({code}) {{#sec-csec-{ancre}}}\n")
+    print("| Emplois ou ressources | Opération | Montant | Poids dans les emplois ou les ressources du secteur | Postes de l'ouvrage |")
+    print("|---|---|--:|--:|---|")
+    for l in ls:
+        print(f"| {l['cote']} | {l['code_scn']} {l['libelle_ins']} | {n(l['valeur_md'])} | {n(l['part_pct'])} % | {l['postes'].replace(';', ', ') or '—'} |")
+    print(f"\n: {ls[0]['nom'].capitalize()}, opérations de {AN} et domiciles dans l'ouvrage (millions de dinars courants) {{#tbl-csec-{ancre}}}")
+```
+
+## Le compte financier par secteur {#sec-csec-financier}
+
+Le tableau des opérations financières (TOF) de l'INS donne, pour chaque secteur, les flux nets de créances acquises et de dettes contractées, par instrument. Son solde, la variation des créances moins celle des dettes (B9F), se raccorde à la capacité ou au besoin de financement (B.9) des comptes des secteurs. Les écarts de ce raccord sont publiés tels quels.
+
+```{python}
+#| echo: false
+#| output: asis
+_f = list(csv.DictReader(open("compte-secteurs-financier.csv", encoding="utf-8")))
+NOMS = {"F1": "F.1 Or monétaire et DTS", "F2": "F.2 Numéraire et dépôts", "F3": "F.3 Titres de créance", "F4": "F.4 Crédits",
+        "F5": "F.5 Actions et parts", "F6": "F.6 Assurances et retraites", "F7": "F.7 Dérivés", "F8": "F.8 Autres comptes",
+        "F": "Total des opérations financières", "B9F": "Solde B9F (créances − dettes)"}
+print("| Instrument | Secteur | Créances | Dettes | Capacité de financement (B.9) | Pages |")
+print("|---|---|--:|--:|--:|---|")
+for l in _f:
+    print(f"| {NOMS.get(l['instrument'], l['instrument'])} | {l['secteur']} | {n(l['creances_md'])} | {n(l['dettes_md'])} | "
+          f"{n(l['capacite_financement_md'])} | {l['pages'].replace(';', ', ')} |")
+print(f"\n: Le compte financier des secteurs, flux de {AN}, édition {ED} (millions de dinars courants ; pages du tableau des opérations financières) {{#tbl-csec-financier}}")
+```
+
+## Le tableau économique d'ensemble, secteur par secteur {#sec-csec-tee}
+
+```{python}
+#| echo: false
+_t = list(csv.DictReader(open("compte-secteurs-tee.csv", encoding="utf-8")))
+_c = list(csv.DictReader(open("compte-secteurs-tee-controles.csv", encoding="utf-8")))
+ANS = sorted({int(l["annee"]) for l in _t})
+EDS = {int(l["annee"]): l["edition"] for l in _t}
+PAGES = {a: sorted({int(l["page"]) for l in _t if int(l["annee"]) == a}) for a in ANS}
+NOMS_TEE = {"S11": "sociétés non financières", "S12": "sociétés financières", "S13": "administrations publiques",
+            "S14": "ménages", "S1": "économie totale", "S2": "reste du monde"}
+def cle(l):
+    return (l["cote"], l["operation"] or l["code_rapproche"] or l["libelle_ins"], l["occurrence"])
+def v(a, k, col):
+    return next((float(l["valeur_md"]) for l in _t if int(l["annee"]) == a and cle(l) == k and l["colonne"] == col), None)
+d63 = v(int(AN), ("emplois", "transferts_sociaux_nature", "0"), "S14")
+# Libellés retenus (docs/conventions/vocabulaire-comptes-nationaux.csv) ; les libellés imprimés par l'INS
+# sont dans compte-secteurs-tee.csv (colonne libelle_ins).
+LIB = {"importations": "importations", "exportations": "exportations", "production": "production",
+       "consommation_intermediaire": "consommation intermédiaire", "impots_nets_produits": "impôts moins subventions sur les produits",
+       "valeur_ajoutee_brute": "valeur ajoutée brute", "solde_echanges_exterieurs": "solde des échanges extérieurs de biens et services",
+       "remuneration_salaries": "rémunération des salariés",
+       "impots_nets_production_importations": "impôts moins subventions sur la production et les importations",
+       "impots_nets_production": "autres impôts moins subventions sur la production",
+       "revenu_exploitation": "revenu d'exploitation", "revenus_propriete": "revenus de la propriété",
+       "interets": "dont intérêts", "D.42": "revenus distribués par les entreprises",
+       "solde_revenus_primaires": "solde des revenus primaires", "impots_courants": "impôts courants sur les revenus et le patrimoine",
+       "cotisations_sociales": "cotisations sociales", "prestations_especes": "prestations sociales en espèces",
+       "autres_transferts_courants": "autres transferts courants", "revenu_disponible_brut": "revenu disponible brut",
+       "transferts_sociaux_nature": "transferts sociaux en nature", "revenu_disponible_ajuste": "revenu disponible ajusté",
+       "consommation_finale": "dépense de consommation finale", "epargne_brute": "épargne brute",
+       "solde_operations_courantes": "solde des opérations courantes avec l'extérieur", "fbcf": "formation brute de capital fixe",
+       "variation_stocks": "variation de stocks", "actifs_non_produits": "acquisitions moins cessions d'actifs non produits",
+       "capacite_financement": "capacité ou besoin de financement",
+       "transferts_capital_a_recevoir": "transferts en capital à recevoir", "transferts_capital": "transferts en capital à payer (imprimés en négatif)",
+       "solde_creances_dettes": "solde des créances et des dettes", "or_dts": "or monétaire et DTS", "numeraire_depots": "numéraire et dépôts",
+       "titres_creance": "titres de créance", "credits": "crédits", "actions_opc": "actions et titres d'OPC",
+       "provisions_assurance": "provisions techniques d'assurance", "produits_derives": "produits dérivés",
+       "autres_comptes": "autres comptes à recevoir ou à payer", "ecart_statistique": "écart statistique",
+       "acquisition_actifs_financiers": "acquisition nette d'actifs financiers"}
+def libelle(l):
+    if l["operation"]:
+        code = l["code_scn"]
+        return f"{code} {LIB.get(l['operation'], l['libelle_ins'])}".strip()
+    if l["code_rapproche"]:
+        return f"{l['code_rapproche']} {LIB.get(l['code_rapproche'], '')} (ligne sans libellé, rapprochée)".replace("  ", " ")
+    return f"ligne sans libellé (« {l['libelle_ins']} »)"
+```
+
+Le tableau économique d'ensemble (TEE) des comptes de la nation [@ins-cnat-2015] réunit, sur deux pages par année, les comptes de tous les secteurs : une colonne par secteur — sociétés non financières (S11), sociétés financières (S12), administrations publiques (S13), ménages (S14) —, une colonne pour l'économie totale (S1), une pour le reste du monde (S2), une pour les biens et services et une colonne de total ; les emplois sur la page de gauche, les ressources sur celle de droite. Il ne publie pas de colonne pour les institutions sans but lucratif au service des ménages (S15). La présentation de la base 1997 les rattache aux ménages [@ins-scnt97-presentation, p. 5] ; aucun texte de la base 2015 n'est cité ici sur ce point. En `{python} AN`, la colonne des ménages inscrit `{python} n(d63)` millions de dinars de transferts sociaux en nature versés (D.63), opération que le SCN 2008 réserve aux administrations publiques et aux institutions sans but lucratif [@sna2008] : la case est compatible avec ce rattachement.
+
+```{python}
+#| echo: false
+#| output: asis
+print("Les années retenues sont l'année de référence et les deux années affichées en second ; pour chacune, l'édition la plus récente où elle est définitive : "
+      + " ; ".join(f"{a}, édition {EDS[a]} (p. {'-'.join(map(str, PAGES[a]))})" for a in ANS) + ".")
+sl = sorted({(int(l["annee"]), l["libelle_ins"], l["code_rapproche"]) for l in _t if l["nature"] == "sans_libelle"})
+print("\nQuelques lignes ont perdu leur libellé à la lecture du tableau ; elles sont gardées et n'entrent dans aucune identité : "
+      + " ; ".join(f"« {lib} » ({a}" + (f", rapprochée de {c} par ses valeurs dans les comptes des secteurs)" if c else ")") for a, lib, c in sl)
+      + ". Dans une ligne imprimée, une case de secteur vide est lue comme zéro.")
+```
+
+### Le compte de chaque secteur {#sec-csec-tee-comptes}
+
+Chaque tableau reprend, dans l'ordre du TEE, les opérations et les soldes d'un secteur. Un solde n'est donné qu'une fois, du côté des emplois du compte qu'il clôt. La dernière colonne rattache l'opération aux postes de l'ouvrage, comme les tableaux des sections précédentes, mais par le code SCN : un poste au code égal à celui de la ligne, ou plus fin (marqué « code parent » : la ligne du TEE agrège le poste avec d'autres opérations). Le secteur doit figurer du côté de l'opération dans le registre des postes, et un poste ne va qu'à la ligne la plus fine qui le couvre : la TVA, impôt sur les produits que le TEE n'inscrit à aucun secteur, ne se rattache pas aux impôts sur la production des sociétés.
+
+```{python}
+#| echo: false
+#| output: asis
+ref = int(AN)
+lignes_ref = []
+for l in _t:
+    if int(l["annee"]) == ref and (cle(l), l["rang"]) not in lignes_ref:
+        lignes_ref.append((cle(l), l["rang"]))
+# Lignes des autres années absentes de l'année de référence, ajoutées à la fin de leur côté.
+for a in ANS:
+    for l in _t:
+        if int(l["annee"]) == a and cle(l) not in [k for k, _ in lignes_ref]:
+            lignes_ref.append((cle(l), l["rang"]))
+def info(k):
+    return next(l for a in [ref] + ANS for l in _t if int(l["annee"]) == a and cle(l) == k)
+def postes(k, col):
+    l = next((l for l in _t if int(l["annee"]) == ref and cle(l) == k and l["colonne"] == col), None)
+    if l is None:
+        return "—"
+    ps = [p for p in l["postes_exacts"].split(";") if p] + [f"{p} (code parent)" for p in l["postes_par_code_parent"].split(";") if p]
+    return ", ".join(ps) or "—"
+soldes_emplois = {info(k)["code_scn"] for k, _ in lignes_ref if k[0] == "emplois" and info(k)["nature"] == "solde"}
+for col, ancre in (("S11", "snf"), ("S12", "sf"), ("S13", "apu"), ("S14", "menages"), ("S2", "rdm")):
+    print(f'\n::: {{.callout-note collapse="true"}}\n## {NOMS_TEE[col].capitalize()} ({col}), {", ".join(map(str, ANS))}\n')
+    print("| Emplois ou ressources | Opération | " + " | ".join(f"{a}" for a in ANS) + " | Postes de l'ouvrage |")
+    print("|---|---|" + "--:|" * len(ANS) + "---|")
+    for k, _ in lignes_ref:
+        i = info(k)
+        if k[0] == "ressources" and (i["code_scn"] or i["code_rapproche"]) in soldes_emplois:
+            continue
+        vals = [v(a, k, col) for a in ANS]
+        if all(x is None for x in vals):
+            continue
+        lib = libelle(i)
+        if i["nature"] == "solde":
+            lib = f"**{lib}**"
+        print(f"| {k[0]} | {lib} | " + " | ".join(n(x) if x is not None else "" for x in vals) + f" | {postes(k, col)} |")
+    print(f"\n: {NOMS_TEE[col].capitalize()} ({col}), compte du tableau économique d'ensemble, {ANS[0]}, {ref} et {ANS[-1]} (millions de dinars courants ; soldes en gras) {{#tbl-csec-tee-{ancre}}}\n\n:::\n")
+```
+
+### Les identités et leurs résidus {#sec-csec-tee-identites}
+
+Les identités se recalculent à partir des valeurs publiées ; rien n'est corrigé. La séquence des soldes est vérifiée secteur par secteur et pour l'économie totale : valeur ajoutée brute (B.1g = P.1 − P.2), revenu d'exploitation (B.2g/B.3g = B.1g − D.1 − autres impôts nets sur la production ; l'INS réunit sous ce nom l'excédent d'exploitation et le revenu mixte, que le SCN 2008 distingue), solde des revenus primaires (B.5g), revenu disponible brut (B.6g), revenu disponible ajusté (B.7g = B.6g + D.63 reçus − D.63 versés), épargne brute (B.8g = B.6g − P.3, le TEE n'imprimant ni la consommation effective ni l'ajustement pour droits à pension D.8) et capacité de financement (B.9 = B.8g + transferts en capital nets − P.51g − P.52 − actifs non produits). S'y ajoutent le solde du compte financier (B.9f, différence des flux de créances et de dettes), l'écart entre B.9 et B.9f, la somme des quatre secteurs comparée à l'économie totale, le total de chaque ligne, l'égalité des emplois et des ressources de chaque opération et le report de chaque solde d'un compte au suivant. Les valeurs étant imprimées au dixième de million de dinars, un résidu inférieur à 0,05 million de dinars par terme est classé « égal aux arrondis près ».
+
+```{python}
+#| echo: false
+#| output: asis
+ST = ("égal", "égal aux arrondis près", "écart", "non calculable")
+print("| Année | Édition | Identités | " + " | ".join(s.capitalize() for s in ST) + " |")
+print("|---|---|--:|" + "--:|" * len(ST))
+for a in ANS:
+    cs = [c for c in _c if int(c["annee"]) == a]
+    print(f"| {a} | {EDS[a]} | {len(cs)} | " + " | ".join(str(sum(c['statut'] == s for c in cs)) for s in ST) + " |")
+print("\n: Les identités du tableau économique d'ensemble, par année et par statut {#tbl-csec-tee-identites}\n")
+print("| Année | Identité | Secteur ou ligne | Publié | Recalculé | Résidu | Statut | Remarque |")
+print("|---|---|---|--:|--:|--:|---|---|")
+for c in _c:
+    if c["statut"] in ("écart", "non calculable"):
+        print(f"| {c['annee']} | {c['identite']} | {c['secteur']} | {n(c['publie_md'])} | {n(c['recalcule_md'])} | {n(c['residu_md'])} | {c['statut']} | {c['remarque'] or '—'} |")
+print("\n: Les identités qui ne se vérifient pas aux arrondis près, ou ne se calculent pas (millions de dinars courants) {#tbl-csec-tee-ecarts}")
+```
+
+```{python}
+#| echo: false
+_e = {(c["annee"], c["secteur"]): float(c["residu_md"]) for c in _c if c["identite"] == "B.9 − B.9f = écart statistique" and c["residu_md"]}
+def c_ecart(a, s):
+    return any(c["annee"] == a and c["secteur"] == s and c["identite"] == "B.9 − B.9f = écart statistique" and c["statut"] == "écart" for c in _c)
+_ec = [(a, s, r) for (a, s), r in _e.items() if c_ecart(a, s)]
+_s1 = all(c["statut"] != "écart" for c in _c if c["identite"] == "B.9 − B.9f = écart statistique" and c["secteur"] == "S1")
+if not _ec:
+    _ec_txt = "dans tous les secteurs et toutes les années"
+else:
+    _ec_txt = "sauf " + " et ".join(f"{s} en {a} (résidu de {n(r)})" for a, s, r in _ec)
+    if len(_ec) == 2 and len({a for a, _, _ in _ec}) == 1 and abs(sum(r for _, _, r in _ec)) < 0.05 and _s1:
+        _ec_txt += ", deux résidus de signes opposés : le raccord de l'économie totale se vérifie"
+```
+
+Deux constats ressortent. Le premier tient à la construction du tableau : les impôts nets sur les produits (D.21 − D.31) ne sont inscrits qu'à l'économie totale, si bien que la ligne des impôts nets sur la production et les importations (D.2 − D.3) de l'économie totale dépasse la somme des secteurs de ce montant, aux arrondis près, chaque année. Le second concerne le raccord entre le compte de capital et le compte financier : la différence entre la capacité de financement (B.9) et le solde des créances et des dettes (B.9f) est imprimée, par secteur, sur la ligne « Écart statistique » ; elle s'y retrouve aux arrondis près `{python} _ec_txt`.
+
+::: {.callout-note collapse="true"}
+## Toutes les identités vérifiées
+
+```{python}
+#| echo: false
+#| output: asis
+print("| Année | Identité | Secteur ou ligne | Publié | Recalculé | Résidu | Statut | Remarque |")
+print("|---|---|---|--:|--:|--:|---|---|")
+for c in _c:
+    print(f"| {c['annee']} | {c['identite']} | {c['secteur']} | {n(c['publie_md'])} | {n(c['recalcule_md'])} | {n(c['residu_md'])} | {c['statut']} | {c['remarque'] or '—'} |")
+print("\n: Les identités du tableau économique d'ensemble, toutes années (millions de dinars courants) {#tbl-csec-tee-identites-toutes}")
+```
+:::
+
+### Des comptes des secteurs au tableau économique d'ensemble {#sec-csec-tee-passage}
+
+```{python}
+#| echo: false
+import sys; sys.path.insert(0, "../../scripts")
+from itertools import combinations
+import passage_comptes as pc
+import comptes_tee as ct
+import reconstruire_secteurs as rsec
+_REF = pc.annee_reference()
+_rec = [l for l in csv.DictReader(open("compte-secteurs-reconstruit.csv", encoding="utf-8")) if int(l["annee"]) == _REF]
+_ED_REC = _rec[0]["edition"]
+_SECT = {"menages": "S14", "snf": "S11", "sf": "S12", "rdm": "S2", "apu": "S13"}
+_CODE_SECT = {v: k for k, v in _SECT.items()}
+_cache = [l for l in pc.secteurs() if str(l["base"]) == "2015"]
+def _feuilles(an, ed):
+    """Opérations des comptes des secteurs que l'ouvrage retient : le fichier engendré pour l'année de
+    référence ; la même sélection (reconstruire_secteurs.feuilles) pour les autres années du TEE."""
+    if an == _REF and ed == _ED_REC:
+        return [{"secteur": l["secteur"], "cote": l["cote"], "code": l["code_scn"], "operation": l["operation"],
+                 "v": float(l["valeur_md"])} for l in _rec]
+    out = []
+    for sec, code in _SECT.items():
+        ls = [l for l in _cache if l["edition"] == ed and int(l["annee"]) == an and l["secteur"] == sec]
+        out += [{"secteur": code, "cote": l["cote"], "code": l["code_scn2008"], "operation": l["operation"],
+                 "v": float(l["valeur"])} for l in rsec.feuilles(ls)]
+    return out
+def _couvre(code_tee, code):
+    """La case du TEE (D.1, D.2-D.3, P.1…) regroupe-t-elle l'opération de ce code (D.11, D.29, P.13…) ?"""
+    return any(code == c or (code.startswith(c) and code[len(c):][:1].isdigit()) for c in ct.composantes(code_tee))
+def _non_retenues(an, ed, sec, cote, code_tee, ops):
+    """Lignes des comptes des secteurs de la même case que la sélection de l'ouvrage ne retient pas."""
+    return [l for l in _cache if l["edition"] == ed and int(l["annee"]) == an and l["secteur"] == _CODE_SECT[sec]
+            and l["cote"] == cote and l["code_scn2008"] and _couvre(code_tee, l["code_scn2008"])
+            and l["operation"] not in ops and str(l["sous_ligne"]) in ("0", "1")]
+def _explique(ecart, cand):
+    """Plus petit ensemble de lignes non retenues dont la somme égale l'écart aux arrondis près."""
+    for k in range(1, len(cand) + 1):
+        for sous in combinations(cand, k):
+            if abs(sum(float(l["valeur"]) for l in sous) - ecart) <= ct.ARRONDI * (k + 2) + 1e-9:
+                return list(sous)
+    return []
+_cases = []
+for a in ANS:
+    fs = _feuilles(a, EDS[a])
+    for l in _t:
+        if int(l["annee"]) != a or l["colonne"] not in _CODE_SECT or l["nature"] not in ("operation", "dont") or not l["code_scn"]:
+            continue
+        # les transferts en capital à payer sont imprimés en ressources, en négatif : ils se comparent aux emplois
+        cote, signe = ("emplois", -1) if l["operation"] == "transferts_capital" else (l["cote"], 1)
+        termes = [f for f in fs if f["secteur"] == l["colonne"] and f["cote"] == cote and _couvre(l["code_scn"], f["code"])]
+        k = {"an": a, "sec": l["colonne"], "cote": l["cote"], "code": l["code_scn"], "op": l["operation"],
+             "tee": float(l["valeur_md"]), "rec": None, "ecart": None, "statut": "sans terme", "lignes": []}
+        if termes:
+            k["rec"] = signe * sum(f["v"] for f in termes)
+            k["ecart"] = round(k["tee"] - k["rec"], 1)
+            k["statut"] = ct.statut(k["ecart"], len(termes) + 1)[0]
+            if k["statut"] == "écart":
+                k["lignes"] = _explique(k["ecart"], _non_retenues(a, EDS[a], l["colonne"], cote, l["code_scn"],
+                                                                  {f["operation"] for f in termes}))
+        _cases.append(k)
+_cmp = [k for k in _cases if k["rec"] is not None]
+_pec = [k for k in _cmp if k["statut"] == "écart"]
+_sans = [k for k in _cases if k["rec"] is None]
+def _tab(colonnes, lignes, aligne):
+    """Tableau markdown ; aligne : une lettre par colonne, g (gauche) ou d (droite)."""
+    return "\n".join(["| " + " | ".join(colonnes) + " |", "|" + "|".join("---" if x == "g" else "--:" for x in aligne) + "|"]
+                     + ["| " + " | ".join(l) + " |" for l in lignes])
+def _nb(v):
+    """Nombre à la française pour une expression en ligne : espaces insécables en entité HTML."""
+    return f"{v:,.1f}".replace(",", "&nbsp;").replace(".", ",").replace("-", "−")
+nb_annees = str(len(ANS))
+an_premier, an_ref, an_dernier = str(ANS[0]), str(_REF), str(ANS[-1])
+nb_cases, nb_egales = str(len(_cmp)), str(len(_cmp) - len(_pec))
+nb_ecarts = str(len(_pec))
+# Écarts restants, par opération, secteur, année et côté.
+ecarts_liste = " ; ".join(f"{LIB.get(k['op'], k['op'])} ({k['code']}) des {NOMS_TEE[k['sec']]} en {k['an']}, "
+                          f"en {k['cote']}, {_nb(k['ecart'])} millions de dinars" for k in _pec) or "aucune"
+# Le texte commente les écarts restants : les autres transferts courants (D.7) des administrations publiques, une
+# même année, en emplois et en ressources. Si les données changent, le texte est à revoir.
+assert {(k["code"], k["sec"], k["cote"]) for k in _pec} == {("D.7", "S13", "emplois"), ("D.7", "S13", "ressources")} \
+    and len(_pec) == 2 and len({k["an"] for k in _pec}) == 1, _pec
+# Sens inverse : opérations retenues des comptes des secteurs qu'aucune case de secteur du TEE ne regroupe.
+_orph = []
+for a in ANS:
+    cases_a = [l for l in _t if int(l["annee"]) == a and l["colonne"] in _CODE_SECT and l["nature"] in ("operation", "dont") and l["code_scn"]]
+    for f in _feuilles(a, EDS[a]):
+        if not any(l["colonne"] == f["secteur"] and _couvre(l["code_scn"], f["code"])
+                   and (l["cote"] == f["cote"] if l["operation"] != "transferts_capital" else f["cote"] == "emplois")
+                   for l in cases_a):
+            _orph.append((a, f["secteur"], f["cote"], f["code"], f["operation"]))
+assert not _orph, _orph
+nb_sans = str(len(_sans))
+# Intérêts versés par les administrations publiques : correction SIFIM imprimée à part dans les comptes des secteurs.
+_sifim = next((l for l in _rec if l["secteur"] == "S13" and l["operation"] == "correction_sifim"), None)
+sifim_ref = _nb(float(_sifim["valeur_md"])) if _sifim else "—"
+# Impôts nets sur les produits : emplois de la seule économie totale ; ligne D.2 − D.3, somme des secteurs face à S1.
+_d21 = {}
+for c in _c:
+    if c["identite"] == "S11 + S12 + S13 + S14 = S1" and c["secteur"].startswith("D.2-D.3 (emplois"):
+        a = int(c["annee"])
+        _d21[a] = {"residu": -float(c["residu_md"]),
+                   "d21": next(float(l["valeur_md"]) for l in _t if int(l["annee"]) == a and l["cote"] == "emplois"
+                               and l["operation"] == "impots_nets_produits" and l["colonne"] == "S1")}
+d21_ref = _nb(_d21[_REF]["d21"])
+d21_min, d21_max = _nb(min(x["d21"] for x in _d21.values())), _nb(max(x["d21"] for x in _d21.values()))
+d21_ecart_max = _nb(max(abs(x["residu"] - x["d21"]) for x in _d21.values()))
+_d21_res = [k for k in _cmp if k["sec"] == "S13" and k["cote"] == "ressources" and k["code"] == "D.21-D.31"]
+# Le texte dit que la case des ressources concorde chaque année avec ses composantes.
+assert len(_d21_res) == len(ANS) and all(k["statut"] != "écart" for k in _d21_res), _d21_res
+```
+
+Les sections précédentes rattachent les postes de l'ouvrage aux opérations des comptes des secteurs, et c'est sur ces opérations que se mesure la part du compte que l'ouvrage chiffre. Le TEE publie les mêmes comptes sous une forme plus agrégée : une case y regroupe souvent plusieurs opérations des comptes des secteurs, par exemple les salaires bruts (D.11) et les cotisations sociales à la charge des employeurs (D.12) dans la rémunération des salariés (D.1). Le passage compare chaque case de secteur du TEE à la somme des opérations que l'ouvrage retient des comptes des secteurs et que la case regroupe, dans la même édition, pour les `{python} nb_annees` années du TEE (`{python} an_premier`, `{python} an_ref` et `{python} an_dernier`). La tolérance est celle des identités : 0,05 million de dinars par terme.
+
+Sur `{python} nb_cases` cases comparées, `{python} nb_egales` concordent, aux arrondis près. Deux traitements d'écriture sont compris dans ce compte. Les intérêts versés par les administrations publiques sont imprimés par le TEE après la correction des services d'intermédiation financière indirectement mesurés (SIFIM), que les comptes des secteurs donnent sur une ligne à part (`{python} sifim_ref` millions de dinars en `{python} an_ref`). Les transferts en capital à payer, imprimés par le TEE en ressources et en négatif, se comparent aux transferts en capital inscrits en emplois.
+
+Les comptes des secteurs impriment parfois sous un même code le total d'une opération et certaines de ses composantes : la production (P.1) des sociétés financières porte ce code sur le total comme sur les services d'assurance et les SIFIM, celle des administrations publiques sur le total comme sur la production marchande. La sélection de l'ouvrage reconnaît le total comme la ligne qui égale, aux arrondis près, la somme des autres lignes de l'opération ; elle l'écarte et garde les composantes.
+
+Les `{python} nb_ecarts` cases qui s'écartent sont dans @tbl-csec-tee-passage-ecarts : `{python} ecarts_liste`. Les autres transferts courants (D.7) des administrations publiques s'écartent du même montant, aux arrondis près, en emplois et en ressources, et le revenu disponible des administrations publiques est le même dans les deux publications. <!-- TODO (comptable-national) : cause à établir ; question B6 du cahier de l'expert (docs/notes/questions-expert-comptabilite-nationale.md). -->
+
+Dans l'autre sens, chaque opération retenue des comptes des secteurs entre dans une case de secteur du TEE, pour les `{python} nb_annees` années.
+
+Les transferts sociaux en nature (D.63), que le TEE inscrit aux administrations publiques et aux ménages, ne figurent pas parmi les opérations que l'ouvrage reprend des comptes des secteurs : leurs `{python} nb_sans` cases n'ont pas de terme de comparaison.
+
+Le cas établi est celui des impôts moins subventions sur les produits (D.21 − D.31). En emplois, le TEE les inscrit à la seule économie totale (`{python} d21_ref` millions de dinars en `{python} an_ref`) : aucune case de secteur ne les porte. C'est pourquoi la ligne des impôts nets sur la production et les importations (D.2 − D.3) de l'économie totale dépasse la somme des quatre secteurs d'un montant égal, à `{python} d21_ecart_max` million près, de `{python} d21_min` à `{python} d21_max` millions selon l'année (@tbl-csec-tee-ecarts). En ressources, le TEE les inscrit aux administrations publiques, et la case concorde chaque année, aux arrondis près, avec la somme de leurs composantes dans les comptes des secteurs : taxe sur la valeur ajoutée, impôts sur les importations et sur les exportations, autres impôts sur les produits et subventions sur les produits.
+
+```{python}
+#| echo: false
+#| output: asis
+def _ligne(k):
+    lig = " ; ".join(f"{l['libelle_ins']} ({l['code_scn2008']}) {n(l['valeur'])}" for l in k["lignes"]) or "—"
+    return [str(k["an"]), f"{NOMS_TEE[k['sec']]} ({k['sec']})", k["cote"], f"{k['code']} {LIB.get(k['op'], k['op'])}",
+            n(k["tee"]), n(k["rec"]), n(k["ecart"]), lig]
+print(_tab(["Année", "Secteur", "Emplois ou ressources", "Opération du TEE", "TEE", "Comptes des secteurs (opérations retenues)",
+            "Écart", "Lignes des comptes des secteurs non retenues"], [_ligne(k) for k in _pec], "ggggdddg"))
+print("\n: Les cases de secteur du tableau économique d'ensemble qui s'écartent de la somme des opérations retenues des comptes "
+      "des secteurs (millions de dinars courants ; écart = TEE − comptes des secteurs) {#tbl-csec-tee-passage-ecarts}")
+```
+
+La concordance des cases dit ce que vaut, au regard du TEE, la couverture mesurée sur les comptes des secteurs : hors les lignes ci-dessus, un poste rattaché à une opération des comptes des secteurs chiffre aussi la case du TEE qui la regroupe. @tbl-csec-tee-passage-couverture donne cette couverture pour les années du TEE. Son dénominateur reste le total des opérations retenues des comptes des secteurs, non celui des cases du TEE.
+
+```{python}
+#| echo: false
+#| output: asis
+_cv = list(csv.DictReader(open("compte-couverture-annees.csv", encoding="utf-8")))
+_CV = {"S11": "S11", "S12": "S12", "S13": "S13", "S14": "S14", "S2": "S2"}
+_lc = []
+for col, code in _CV.items():
+    vals = []
+    for a in ANS:
+        r = next((x for x in _cv if int(x["annee"]) == a and x["secteur"] == code), None)
+        vals.append("—" if r is None or r["part_montant_couverte_pct"] == "" else
+                    f"{r['operations_chiffrees']} / {r['operations']} ; {n(r['part_montant_couverte_pct'])} %")
+    _lc.append([f"{NOMS_TEE[col]} ({col})"] + vals)
+print(_tab(["Secteur"] + [str(a) for a in ANS], _lc, "g" + "d" * len(ANS)))
+print("\n: Couverture des comptes des secteurs par les postes de l'ouvrage, années du tableau économique d'ensemble : "
+      "opérations chiffrées sur opérations retenues ; part du montant couverte (administrations publiques : somme des "
+      "trois sous-secteurs, non consolidée) {#tbl-csec-tee-passage-couverture}")
+```
+
+::: {.callout-note collapse="true"}
+## Toutes les cases comparées
+
+```{python}
+#| echo: false
+#| output: asis
+print(_tab(["Année", "Secteur", "Emplois ou ressources", "Opération du TEE", "TEE", "Comptes des secteurs (opérations retenues)", "Écart", "Statut"],
+               [[str(k["an"]), k["sec"], k["cote"], f"{k['code']} {LIB.get(k['op'], k['op'])}", n(k["tee"]),
+                 n(k["rec"]) if k["rec"] is not None else "—", n(k["ecart"]) if k["ecart"] is not None else "—", k["statut"]]
+                for k in _cases], "ggggdddg"))
+print("\n: Les cases de secteur du tableau économique d'ensemble et la somme des opérations retenues des comptes des secteurs, "
+      "toutes années (millions de dinars courants) {#tbl-csec-tee-passage-toutes}")
+```
+:::
+
+### Plan de montée en couverture : sociétés non financières et ménages {#sec-csec-tee-couverture}
+
+Pour chiffrer un secteur sans passer par les comptes de la nation, il faut, opération par opération, une source tunisienne indépendante. Le tableau range les dix opérations les plus lourdes de chaque secteur en `{python} AN` (montant en valeur absolue, hors soldes et compte financier ; les intérêts, composante des revenus de la propriété, ne sont pas comptés à part, et les impôts nets sur la production et les importations ne le sont que par les impôts sur la production, seuls inscrits aux secteurs) et donne, pour chacune, les séries de l'[entrepôt de données](comment-constitue.html) qui la mesureraient en tout ou en partie. Une série produite par l'INS hors des comptes nationaux (enquête, répertoire) est signalée comme telle.
+
+```{python}
+#| echo: false
+#| output: asis
+# Séries du catalogue de l'entrepôt (identifiants) ; relevé du 25/11/2026, voir docs/notes/plan-montee-couverture-2026-11-25.md.
+SOURCES = {
+    ("S11", "ressources", "production"): "`entreprises-publiques-comptes-primaires` : production et produits d'exploitation lus des états financiers d'entreprises publiques, 2000-2025 (13 entités en 2020, que le fichier ne range pas par secteur) ; `steg-etats-financiers` (2013-2023) ; `etap-rapports-annuels` (2004-2024). Entreprises publiques seulement.",
+    ("S11", "emplois", "consommation_intermediaire"): "`entreprises-publiques-comptes-primaires` : achats consommés et autres charges d'exploitation, mêmes entités. Entreprises publiques seulement.",
+    ("S11", "emplois", "remuneration_salaries"): "`entreprises-publiques-effectifs-ensemble` : charges de personnel des entreprises publiques hors banques et caisses, exercices 2018, 2019, 2020 et 2022 ; `cnss-annuaire-2018-brut` : masse salariale déclarée au régime des salariés non agricoles, tous employeurs privés, 2000-2018 (2020 non couverte).",
+    ("S11", "emplois", "revenus_propriete"): "`entreprises-publiques-dividendes-etat` : part de l'État dans les bénéfices des entreprises publiques, exercices 2017-2023 (dividendes versés à l'État seulement). Pour les intérêts versés, pas de série au catalogue.",
+    ("S11", "emplois", "fbcf"): "Pas de série au catalogue.",
+    ("S11", "emplois", "impots_courants"): "`recettes-fiscales-composition` (colonne de l'impôt sur les sociétés), 1986-2025 : sociétés non financières et financières ensemble.",
+    ("S11", "emplois", "variation_stocks"): "Pas de série au catalogue.",
+    ("S11", "emplois", "autres_transferts_courants"): "Pas de série au catalogue.",
+    ("S11", "ressources", "revenus_propriete"): "Pas de série au catalogue.",
+    ("S11", "ressources", "transferts_capital_a_recevoir"): "`entreprises-publiques-transferts-budget` : transferts du budget aux entreprises et établissements publics non administratifs, par nature (dont investissement), 2016-2024 ; le total mêle caisses sociales et compensation.",
+    ("S14", "emplois", "consommation_finale"): "INS hors comptes nationaux : `ins-enbcnv-2021-logement` (structure du poste logement dans la dépense, enquête de 2021) et `education-depense-menages` (dépense d'enseignement par personne, 2015 et 2021). Structures et dépenses par personne, sans niveau total ; 2020 non couverte.",
+    ("S14", "ressources", "production"): "Pas de série au catalogue hors comptes nationaux (`ins-va-branche-base2015` en est tirée).",
+    ("S14", "ressources", "remuneration_salaries"): "`masse-salariale-ratios` : rémunérations du budget de l'État, 1990-2025 (part versée par l'administration centrale) ; `entreprises-publiques-effectifs-ensemble` (2018-2022) ; `cnss-annuaire-2018-brut` : masse salariale déclarée au régime des salariés non agricoles, 2000-2018.",
+    ("S14", "emplois", "consommation_intermediaire"): "Pas de série au catalogue.",
+    ("S14", "ressources", "transferts_sociaux_nature"): "`ins-budget-sante-2018-2023` (dépenses du département de la Santé, 2018-2023) ; `cnam-comptes-2011-2021` (prestations décaissées par la CNAM). Pour l'enseignement, pas de série couvrant 2020.",
+    ("S14", "emplois", "cotisations_sociales"): "`cnss-cotisations` : cotisations encaissées par la CNSS, 2000-2020 (hors branches maladie et accidents du travail depuis 2006) ; `cnrps-regime-general-finances` : cotisations du régime général de la CNRPS, 2014-2020. Cotisations de la CNAM : pas de série au catalogue.",
+    ("S14", "ressources", "prestations_especes"): "`cnrps-pensions` : dépenses de l'ensemble des régimes de retraite de la CNRPS, 2000-2020, retenues pour 2000-2013 par le poste `pensions-cnrps-tous-regimes-2000-2013` ; `cnss-annuaire-2018-brut` : pensions et prestations familiales du régime des salariés non agricoles, 2000-2018.",
+    ("S14", "ressources", "autres_transferts_courants"): "Pas de série au catalogue, ni pour les transferts reçus de l'étranger ni pour les autres.",
+    ("S14", "emplois", "remuneration_salaries"): "INS hors comptes nationaux : `ins-repertoire-emploi-forme` : salariés des entreprises « personne physique », 2000-2024 (effectifs, sans montant).",
+    ("S14", "ressources", "revenus_propriete"): "Pas de série au catalogue.",
+}
+def classement(col):
+    ls = [l for l in _t if int(l["annee"]) == ref and l["colonne"] == col and l["nature"] == "operation"
+          and l["operation"] not in ("impots_nets_production_importations", "impots_nets_produits")]
+    tot = {c: sum(abs(float(l["valeur_md"])) for l in ls if l["cote"] == c) for c in ("emplois", "ressources")}
+    ls.sort(key=lambda l: -abs(float(l["valeur_md"])))
+    return ls[:10], tot
+for col, ancre in (("S11", "snf"), ("S14", "menages")):
+    ls, tot = classement(col)
+    print("| Rang | Emplois ou ressources | Opération | Montant | Poids dans les emplois ou les ressources du secteur | Séries de l'entrepôt |")
+    print("|--:|---|---|--:|--:|---|")
+    for i, l in enumerate(ls, 1):
+        src = SOURCES.get((col, l["cote"], l["operation"]), "À établir.")
+        print(f"| {i} | {l['cote']} | {libelle(l)} | {n(l['valeur_md'])} | {n(100 * abs(float(l['valeur_md'])) / tot[l['cote']])} % | {src} |")
+    print(f"\n: {NOMS_TEE[col].capitalize()} ({col}) : les dix opérations les plus lourdes en {ref} et les séries qui les chiffreraient hors des comptes de la nation (millions de dinars courants) {{#tbl-csec-tee-couverture-{ancre}}}\n")
+```
+
+## Références {.unnumbered}
+
+::: {#refs}
+:::

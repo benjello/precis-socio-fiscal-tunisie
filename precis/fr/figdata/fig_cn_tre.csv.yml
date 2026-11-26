@@ -1,0 +1,5 @@
+series: [cnat-tre]
+sources: [ins-cnat-2015]
+fiches: []
+caveats: [Lu avec les coordonnées des mots (pdftotext -bbox) : chaque nombre est rattaché à la colonne dont l'en-tête est le plus proche ; les milliers imprimés comme un mot distinct, parfois légèrement surélevé, sont recollés. 3 496 contrôles sur 3 507 passent ; les 11 autres sont listés (écarts de 0,6 à 0,9 MD sur la ligne 94 des ressources, et quelques nombres dont le chiffre des milliers n'a pas été retrouvé). Base 2015 seulement. Une année publiée par plusieurs éditions garde toutes ses lectures.]
+generated: 2026-11-24

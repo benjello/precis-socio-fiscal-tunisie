@@ -1,0 +1,75 @@
+# Présentation {#sec-conso-presentation}
+
+Ce livre décrira la consommation finale et les niveaux de vie : ce que les ménages et les administrations consomment, par produit, et la répartition de la dépense des ménages selon leur niveau de vie. Il occupe, dans la séquence des comptes, le compte d'utilisation du revenu.
+
+::: {.callout-note}
+Ce volume est une **ébauche** : une première série est versée, la rédaction reste à faire. Il n'existe pour l'instant qu'en français.
+:::
+
+## La consommation des ménages {#sec-conso-menages}
+
+Les comptes de secteur de l'INS distinguent la consommation finale des ménages de celle des administrations publiques [@ins-cnat-2015]. La @fig-conso-menages les donne de 2015 à 2025 : la consommation finale des ménages passe de 62 317,7 millions de dinars en 2015 à 134 669,3 en 2025 (compte provisoire), celle des administrations de 17 345,7 à 33 174,9. Leur somme est égale, au dixième près chaque année, au total du tableau de consommation par produit de la section suivante : ce tableau, intitulé « dépense de consommation finale des ménages par produit », porte en fait sur la consommation finale globale.
+
+```{python}
+#| label: fig-conso-menages
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import consommation as co
+import figtools
+figtools.figure_tabs(
+    co.vues_menages(), co.table_menages(), "cnat-secteurs", "cnat-produits",
+    slug="fig_conso_menages",
+    caption="Consommation finale des ménages et des administrations publiques, 2015-2025 (millions de dinars courants, base 2015)",
+    note_lecture=(
+        "Chaque barre empile la consommation finale des ménages et celle des administrations, lues "
+        "dans les comptes de secteur ; le point gris est le total du tableau par produit, égal à "
+        "leur somme."))
+```
+
+## La consommation finale par produit {#sec-conso-produits}
+
+La @fig-conso-familles regroupe en cinq familles la dépense de consommation finale par produit publiée par l'INS, de 2015 à 2025 [@ins-cnat-2015]. Le tableau de l'INS, intitulé « dépense de consommation finale des ménages par produit », totalise en fait la consommation finale globale : son total est égal à la ligne « consommation finale globale » des emplois du PIB, et il comprend les services d'administration, d'enseignement et de santé consommés par les administrations.
+
+```{python}
+#| label: fig-conso-familles
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import consommation as co
+import figtools
+figtools.figure_tabs(
+    co.vues_conso(), co.table_conso(), "cnat-produits",
+    slug="fig_conso_familles",
+    caption="Consommation finale par famille de produits, 2015-2025 (millions de dinars courants, base 2015)",
+    note_lecture=(
+        "Chaque barre empile cinq familles de produits ; la correction territoriale, négative, est "
+        "dans l'onglet « Données » avec le total imprimé par l'INS, auquel la somme des familles et de "
+        "la correction est égale."))
+```
+
+La consommation finale passe de 79 663,4 millions de dinars en 2015 à 167 844,2 en 2025 (compte provisoire) [@ins-cnat-2015]. Les services marchands en sont la première famille chaque année, sauf en 2020 et 2021 : en 2020, ils reculent de 33 575,5 (2019) à 27 248,9, sous les services d'administration, d'enseignement et de santé.
+
+<!-- TODO (données et rédacteur) : dépense par décile de l'enquête nationale sur le budget, la consommation et
+     le niveau de vie des ménages de 2021 (à extraire dans tunisia-data) ; tableaux aux prix de
+     l'année précédente (cnat-produits-volume) pour les volumes. -->
+
+## Les transferts sociaux en nature et la consommation effective {#sec-conso-effective}
+
+Une part de ce que les ménages consomment n'est pas payée par eux : soins remboursés, médicaments, enseignement, services sociaux. Les comptes de la nation l'enregistrent en transferts sociaux en nature (D.63), que les administrations publiques versent et que les ménages reçoivent ; ajoutés à la dépense de consommation finale des ménages, ils donnent leur consommation finale effective [@ins-cnat-2015]. Les transferts se composent des prestations sociales en nature (D.631) et des biens et services individuels non marchands (D.632) ; une petite part de D.632 est versée par les ménages eux-mêmes, secteur qui comprend, dans les comptes de l'INS, les institutions sans but lucratif.
+
+```{python}
+#| echo: false
+#| output: asis
+print(co.table_transferts_nature())
+print("\n: Transferts sociaux en nature, dépense de consommation finale et consommation finale effective des ménages, base 2015, 2015-2023 (millions de dinars courants ; pour chaque année, l'édition la plus récente qui l'imprime ; tableau des transferts sociaux en nature et comptes des secteurs de l'INS) {#tbl-conso-effective}")
+```
+
+## Ce que d'autres livres traitent {#sec-conso-voisinage}
+
+| Sujet | Domicile | Ce que ce livre en reçoit |
+|---|---|---|
+| Prix administrés et subventions des produits de base, de l'énergie | « La compensation » | un lien |
+| Incidence des prélèvements et des transferts selon le niveau de vie | « La synthèse », chapitre de la redistribution | un lien |
+
+: Les sujets voisins et le livre qui les expose {#tbl-conso-voisinage}

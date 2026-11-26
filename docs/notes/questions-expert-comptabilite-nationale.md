@@ -1,0 +1,248 @@
+# Questions pour un expert de comptabilité nationale
+
+Cahier tenu à jour depuis le 24/11/2026 ; chaque étape du plan par opération (`docs/notes/plan-par-operations.md`) y ajoute les problèmes qu'elle rencontre. Une entrée par problème, au même format : **question** ; **ce que l'on observe** (chiffres publiés, publication, édition, page) ; **déjà testé** ; **ce que la réponse permettrait** ; **priorité** (1 : bloque une reconstruction ; 2 : en améliore la lecture ; 3 : utile).
+
+Références : INS, *Les comptes de la nation* (clé bibliographique `ins-cnat-2015`), édition indiquée ; les pages sont celles du fichier publié. Les montants sont en millions de dinars courants. Les tests cités sont ceux de la page [« Le compte reconstruit des administrations publiques »](../../precis/fr/compte-apu.qmd), section « Comprendre les résidus de 2023 ».
+
+## A. Du budget de l'État aux comptes des administrations publiques
+
+**A1. Que recouvre D.212 au-delà des droits de douane du budget ?**
+- La norme dit, la source mesure : le SCN 2008 range en D.2122 les accises et taxes sur ventes perçues à l'importation (§ 7.94, p. 147 ; MSFP 2014, 11412.1 et 1142.1, tableau A7.3, p. 364) ; le budget ne met en « droits de douanes » que les droits. Lequel est retenu : l'INS a-t-il reclassé en D.212 des droits de consommation perçus en douane, et pour quel montant ? (`docs/notes/ecarts-2023-definitions-2026-11-25.md`)
+- Observé : D.212 des administrations publiques, 2 293,5 en 2023 (édition 2021-2025), contre 1 849,0 de droits de douane dans les recettes fiscales de l'État (ministère des Finances, réalisations). Le rapport reste entre 1,18 et 1,36 de 2015 à 2023, l'écart étant positif chaque année (211,4 en 2017, 444,5 en 2023).
+- Déjà testé : le périmètre est écarté (S13 = S1311) ; le calendrier aussi (le signe est constant).
+- La réponse permettrait de rattacher D.212 à ses dispositifs (droits, redevances et taxes perçus en douane) et de fermer le résidu.
+- Priorité 1.
+
+**A2. Comment les « autres impôts indirects » du budget se répartissent-ils entre D.214, D.29 et d'autres opérations ?**
+- La norme dit, la source mesure : D.2 réunit impôts sur les produits et autres impôts sur la production (SCN 2008, § 7.73, p. 143) ; amendes, ventes et contributions n'en sont pas (MSFP 2014, 142, 143, tableau A7.3, p. 365). La rubrique du budget réunit fonds spéciaux du Trésor, fonds de concours et reliquat. Lequel est retenu : quelles de ces recettes l'INS compte-t-il comme impôts, et où range-t-il les autres ?
+- Observé : D.2 des administrations publiques, 20 896,8 en 2023, contre 22 006,4 pour la somme des quatre rubriques budgétaires (TVA, douane, droits de consommation, autres impôts indirects). Face à l'administration centrale (S1311, 20 379,8), l'écart est de −1 626,6 et garde le même signe de 2015 à 2023. D.214 vaut 1,48 à 1,70 fois les droits de consommation du budget. La rubrique « autres impôts indirects » réunit, dans la série du ministère, fonds spéciaux du Trésor, fonds de concours et reliquat.
+- Déjà testé : le périmètre explique 517,0 (collectivités locales) ; le calendrier est écarté.
+- La réponse dirait quelles recettes budgétaires ne sont pas des impôts dans les comptes, et où sont rangées les taxes au profit des fonds spéciaux.
+- Priorité 1.
+
+**A3. Les impôts courants (D.5) sont-ils enregistrés en droits constatés, et avec quel décalage sur l'encaissement ?**
+- Observé : D.5 de S1311, 16 695,2 en 2023, contre 16 030,8 pour l'IRPP et l'IS. L'écart change quatre fois de signe sur 2015-2023, de −1 266,6 (2019) à +804,4 (2018).
+- Déjà testé : le périmètre explique 79,7 (collectivités) ; la source budgétaire est une série de réalisations.
+- La réponse permettrait de chiffrer le décalage et de classer les retenues à la source et les impôts sur le patrimoine.
+- Priorité 2.
+
+**A4. La TVA des comptes (D.211) est-elle nette des restitutions de crédits ?**
+- Observé : D.211, 10 404,7 en 2023, contre 10 464,0 au budget. L'écart change de signe quatre fois sur 2015-2023 et va jusqu'à +255,3 (2022).
+- Déjà testé : le périmètre est écarté (S13 = S1311).
+- La réponse permettrait de dire si l'écart est un calendrier ou un traitement brut/net des restitutions.
+- Priorité 2.
+
+**A5. D.31 se limite-t-il à la compensation, et à quel moment la compensation est-elle enregistrée ?**
+- Observé : D.31, −11 926,3 en 2023, contre 11 479,5 de compensation (BCT, rapport annuel 2024, colonne 2023 non qualifiée) (clé `bct-ra-2024`). L'écart change de signe trois fois ; il atteint +3 078,8 en 2022.
+- Déjà testé : le périmètre est écarté.
+- La réponse permettrait de séparer D.31, D.39 et les transferts aux entreprises publiques, et de traiter les arriérés.
+- Priorité 1.
+
+**A6. Comment passe-t-on des dépenses d'équipement du budget à la FBCF de l'administration centrale, et que s'est-il passé en 2021 ?**
+- Localisé le 25/11/2026 : la hausse de l'équipement en 2021 (+1 472,8) vient du financement public (+1 017,3) et des investissements sur emprunts extérieurs (+710,6), alors que la FBCF de S1311 baisse (−466,3) et que D.9 ne croît que de 56,5 (ministère des Finances, répartition économique des dépenses ; tableau dans le livre de l'investissement). Où l'INS range-t-il ces deux rubriques (FBCF d'autres secteurs, opérations financières, D.9) ?
+- La norme dit, la source mesure : la FBCF (SCN 2008, § 10.64, p. 206) se distingue des aides à l'investissement (§ 10.208, p. 222) ; les dépenses d'équipement du budget réunissent les deux. La définition explique le niveau de 2015-2020 (FBCF + D.9 = 0,98 à 1,12 de l'équipement), pas la rupture de 2021 : qu'a changé 2021 dans la nomenclature ou le traitement des participations et des prêts ?
+- Observé : FBCF de S1311, 4 899,2 en 2023, contre 9 147,0 de dépenses d'équipement réalisées. Le rapport tombe de 0,87 (2015) à 0,54 (2023). Les transferts en capital versés par S1311 (D.9, 3 267,4 en 2023) et la FBCF couvrent 0,98 à 1,12 de l'équipement de 2015 à 2020, puis 0,77 à 0,89 depuis 2021.
+- Déjà testé : une différence de définition seule est écartée (le rapport n'est pas stable).
+- La réponse permettrait de documenter le passage et d'expliquer la rupture de 2021.
+- Priorité 1.
+
+**A7. Les rémunérations des comptes comprennent-elles des cotisations sociales imputées (D.122) ?**
+- Observé : D.1 de S1311, 21 797,1 en 2023, contre 21 696,6 de rémunérations au budget. L'écart est positif chaque année de 2015 à 2023, de 100,5 à 593,5.
+- Déjà testé : le périmètre explique 1 148,5 (collectivités 725,8 ; sécurité sociale 422,7) ; le calendrier est écarté.
+- La réponse fermerait le résidu de D.1 ou dirait sa nature.
+- Priorité 2.
+
+**A8. Que représente l'écart d'environ 40 sur les intérêts de l'administration centrale ?**
+- Observé : intérêts versés (D.41) de S1311, 5 868,2 en 2023, contre 5 830,5 au service de la dette. L'écart est positif huit années sur neuf, autour de 40 (44,8 en 2015, 37,7 en 2023).
+- Déjà testé : la correction SIFIM est écartée (imprimée à part, −91,6) ; le calendrier aussi.
+- La réponse dirait s'il s'agit d'intérêts courus ou d'unités hors budget.
+- Priorité 3.
+
+**A9. Dans quelle opération et dans quel sous-secteur la taxe de formation professionnelle et la contribution au FOPROLOS sont-elles enregistrées ?** (étape « production »)
+- Observé : D.29 reçu par S13 vaut 2 472,9 en 2023 (S1311 : 2 071,8 ; collectivités : 401,1). L'ouvrage n'a aucune série de réalisations des deux prélèvements, seulement des prévisions des fonds qu'ils alimentent.
+- La réponse permettrait de les rattacher à D.29 ou à une autre opération (D.61, D.5), et au fonds spécial du Trésor ou au budget.
+- Priorité 2.
+
+**A10. Que recouvre la consommation intermédiaire de l'administration centrale au-delà des « moyens des services » du budget ?**
+- Observé : P.2 de S1311, 3 457,0 en 2023, contre 2 273,7 de moyens des services réalisés, soit une couverture de 65,8 %.
+- La réponse dirait quelles dépenses (interventions, équipement, comptes spéciaux) l'INS range dans P.2.
+- Priorité 2.
+
+**A11. L'INS ventile-t-il les impôts courants (D.5) par impôt et par secteur payeur ?** (lot A, contreparties)
+- Observé : D.5 est publié par secteur payeur. En 2023 (éd. 2021-2025) : sociétés non financières 8 265,6 MD, sociétés financières 1 242,6, ménages 6 647,5, reste du monde 608,7. La part de l'IRPP et de l'IS dans chacun ne l'est pas, et attribuer l'IRPP aux ménages serait une hypothèse (retenues à la source, IRPP des entreprises individuelles).
+- La réponse permettrait d'inscrire la contrepartie des postes IRPP et IS.
+- Priorité 2.
+
+**A12. Peut-on connaître la contrepartie des rémunérations (D.1) et des intérêts (D.41) versés par l'administration centrale ?**
+- Observé : D.1 et D.41 reçus par les ménages, les sociétés financières et le reste du monde ne sont pas ventilés par employeur ou par débiteur. Le TOF donne les créances par instrument, sans tableau par contrepartie.
+- La réponse dirait si une ventilation « de qui à qui » existe (tableau des intérêts par débiteur, détenteurs des titres de l'État).
+- Priorité 3.
+
+**A13. Confirmez-vous que les comptes de la nation enregistrent les biens transformés pour le compte de tiers en flux bruts (comme les statistiques du commerce extérieur), là où la balance des paiements (MBP6) n'en retient que les services de fabrication ?** (lot B)
+- Observé, en 2023 : P.61 des comptes vaut 62 824,1 MD. Les biens de la balance des paiements (28 081,6) plus les produits transformés pour le compte de tiers (35,1 milliards, BCT, *Balance des paiements 2023*, p. 30) font 63 181,6 MD, soit un écart de −357,5.
+- De même pour P.71 : 77 435,9 MD, contre 56 181,8 + 20 700 (importations pour motif de fabrication) = 76 881,8.
+- Et pour P.62 : 16 593,8 MD, contre les services de la balance moins la fabrication moins la redevance gaz, 16 703,4.
+- L'écart restant est de 0,1 à 1,2 milliard selon l'opération et l'année (2022-2024). Cette explication est établie par les chiffres ; la question est de la faire confirmer, et d'expliquer l'écart restant.
+- Priorité 2 (elle était 1).
+
+**A14. ~~La redevance gaz est-elle un loyer (D.45) dans les comptes et un service de transport dans la balance des paiements ?~~** Réponse trouvée le 25/11/2026 : l'INS la reclasse « comme un revenu de propriété » et liste les causes d'écart avec la balance des paiements (*Comptes de la nation* 2015-2020, vol. A, p. 17). Reste ouverte la rémunération des salariés (A17).
+- Observé, en 2023 : D.45 versé par le reste du monde aux résidents vaut 2 097,7 MD dans les comptes ; la « redevance gaz » des services de transport vaut 2 093,7 MD dans la balance des paiements.
+- Autres écarts : D.1 reçu du reste du monde, 230,9 dans les comptes contre 1 265,6 en balance des paiements ; D.7 et D.5 reçus, 11 645,4 contre 8 976,2.
+- Priorité 2.
+
+## B. Incohérences vues sur les pages publiées
+
+**B1. Laquelle des deux valeurs de S12 retenir quand la ligne du secteur ne fait pas la somme de ses sous-secteurs dans le TOF ?**
+- Observé : F4 (crédits), flux de créances 2019 : S12 est imprimé à 9 497,5 dans l'édition 2018-2022 (p. 130), alors que ses sous-secteurs somment à 8 481,6 ; l'édition 2017-2021 imprime 8 481,6. Au total, 51 écarts du TOF ont été relus sur la page, avec la position des nombres, et classés comme écarts de la publication.
+- Déjà testé : les erreurs de lecture sont écartées par la position des nombres sur la page.
+- La réponse dirait quelle valeur publier, et s'il s'agit d'une révision ou d'une coquille.
+- Priorité 2.
+
+**B5. Pourquoi le solde du TOF (B9F) ne se raccorde-t-il pas à la capacité de financement des sociétés non financières et des ménages ?** (étape « compte financier »)
+- Observé, en 2023, édition 2021-2025 (TOF p. 133, comptes des secteurs) :
+  - S11 : B9F 4 249,8, contre une capacité de financement (B.9) de 3 885,3, soit 364,5 d'écart ;
+  - S14 : B9F 856,4, contre 991,9, soit −135,5 ;
+  - S12 et S13 : le raccord est exact.
+- La réponse dirait si l'écart statistique est porté par ces deux secteurs, et comment le présenter.
+- Priorité 2.
+
+**B6. Pourquoi les autres transferts courants (D.7) des administrations publiques diffèrent-ils de 3 371,5 entre le TEE et les comptes des secteurs en 2023 ?** (bloc de passage du TEE, `precis/fr/compte-secteurs.qmd`, section `sec-csec-tee-passage`)
+- Observé, édition 2021-2025 : D.7 de S13 vaut 4 789,4 en emplois et 5 082,2 en ressources dans le TEE (p. 120 et 121, `precis/fr/compte-secteurs-tee.csv`), contre 8 160,9 et 8 453,8 dans les comptes des secteurs (`precis/_seriescache/cnat-secteurs.csv`) : 3 371,4 et 3 371,5 de moins des deux côtés. Le revenu disponible brut (B.6g) de S13 est le même dans les deux publications (29 351,3), et la séquence du revenu disponible du TEE (B.6g) se vérifie pour S13 en 2023. En 2019 et en 2020, les deux publications concordent sur D.7 de S13.
+- Déjà testé : l'écart n'égale pas les transferts entre administrations (D.73), 5 872,0 dans les comptes des secteurs de 2023 ; s'il portait tout entier sur eux, le TEE en compterait 5 872,0 − 3 371,5 = 2 500,5 (contre 2 231,1 en 2020, année où les deux publications concordent).
+- Hypothèses : (a) le TEE consolide une partie des transferts entre sous-secteurs que les comptes des secteurs laissent ; (b) l'une des deux tables n'a pas été mise à jour avec l'autre dans cette édition.
+- La réponse dirait laquelle des deux valeurs retenir pour 2023.
+- Priorité 2.
+
+**B2. L'écart de 0,5 sur les autres transferts courants divers en 2023 (édition 2019-2023) est-il une coquille ?**
+- Observé : les neuf valeurs relues sur les pages 84, 86, 87, 94, 95, 102, 103, 106 et 107 donnent 12 432,9 d'emplois et 12 433,4 de ressources, au-delà de l'arrondi cumulé (0,45). L'année 2023 est provisoire dans cette édition, et l'écart est résorbé dans l'édition suivante.
+- Priorité 3.
+
+**B3. Le tableau de la consommation des ménages par produit porte-t-il en fait la consommation finale de toute l'économie ?**
+- Observé : dans les éditions en base 2015, le total du tableau « consommation des ménages » par produit égale, chaque année, la consommation finale des ménages plus celle des administrations publiques lue dans les comptes des secteurs.
+- La réponse dirait comment présenter le tableau (titre, ventilation entre ménages et administrations).
+- Priorité 2.
+
+**B4. Faut-il signaler l'en-tête d'années mal imprimé des comptes en base 1983 ?**
+- Observé : l'édition 2001-2005 imprime l'en-tête « 2001 2002 2002 2004* 2005** ». Il est lu comme cinq années consécutives, ce qui est signalé.
+- Priorité 3.
+
+## C. Bases anciennes et raccordement
+
+**C1. Comment se ventilent coopération internationale et transferts courants divers en base 1997 ?**
+- Observé : dans plusieurs éditions en base 1997, les deux sous-lignes présentent des écarts égaux et opposés entre secteurs, alors que leur total « autres transferts courants » s'équilibre. Les valeurs ont été retrouvées sur leurs pages.
+- La réponse dirait si la ventilation diffère d'un secteur à l'autre, et comment la lire.
+- Priorité 3.
+
+**C2. Peut-on valider les correspondances entre libellés SCN 1993 et SCN 1968 et les opérations du SCN 2008 ?**
+- Observé : 50 entrées du dictionnaire des opérations sont rattachées « à valider ». Les codes F2 à F6 s'appuient sur la présentation de l'INS du SCNT97 (mars 2021, p. 13).
+- La réponse permettrait de publier les séries anciennes sous les codes actuels.
+- Priorité 2.
+
+**C3. Quelle méthode de raccordement des bases (1983, 1997, 2015) l'INS recommande-t-il ?**
+- Observé : les séries sont publiées par base, sans rétropolation des comptes des secteurs dans les publications dépouillées. Seul le PIB est rétropolé, de 2010 à 2014 en base 2015.
+- La réponse fixerait la règle de raccordement des séries longues, ou dirait qu'il n'en faut pas.
+- Priorité 2.
+
+## D. Méthode
+
+**D1. Que signifient exactement « définitif », « semi-définitif » et « provisoire », et quelle révision attendre de l'un à l'autre ?**
+- Observé : l'en-tête des comptes des secteurs marque d'un astérisque les années semi-définitives et de deux les années provisoires ; l'ouvrage retient comme référence la dernière année définitive (2023 dans l'édition 2021-2025).
+- Priorité 2.
+
+**D2. Comment S13 est-il consolidé ?**
+- Observé : les transferts entre administrations publiques (D.73) valent 5 872,0 en emplois et en ressources de S13 en 2023. Les sous-secteurs versent (centrale 5 007,9 ; sécurité sociale 864,1) et reçoivent (centrale 4 051,9 ; collectivités 620,7 ; sécurité sociale 1 199,4).
+- La réponse dirait quelles opérations sont consolidées dans S13 et lesquelles ne le sont pas.
+- Priorité 2.
+
+**D3. Quelles sources l'INS utilise-t-il pour les opérations qui ne se reconstruisent que par la méthode statistique ?**
+- Concerne : production et consommation intermédiaire non marchandes, consommation finale des administrations par convention, consommation de capital fixe, SIFIM.
+- Observé : en 2023, la méthode statistique porte environ 30 % des montants de S13 et 89 % de ceux des sociétés non financières (classement de l'ouvrage, règle par opération).
+- Priorité 1.
+
+**D4. Les opérations du reste du monde (S2) viennent-elles toutes de la balance des paiements de la BCT ?**
+- Observé : l'ouvrage n'a pu classer presque aucune opération de S2 sans hypothèse ; elles sont marquées « à déterminer ».
+- Priorité 2.
+
+**D5. Où ranger, dans un plan qui suit les comptes, les dispositifs qui ne correspondent à aucune opération ?**
+- Observé : 176 sections de l'ouvrage ne sont rattachées à aucune opération (temps de travail, rupture du contrat, logement social, offices, redevances…).
+- La réponse aiderait à décider de leur place.
+- Priorité 3.
+
+**D6. ~~Pourquoi les comptes publiés n'impriment-ils pas de compte de redistribution en nature ?~~** Question retirée le 25/11/2026 : la prémisse était fausse.
+- Les transferts sociaux en nature sont publiés dans un tableau à part des comptes des secteurs, « Transferts sociaux en nature » (édition 2021-2025, p. 114), et repris par le tableau économique d'ensemble (compte II.3, revenu disponible ajusté, compte II.4). En 2023, les administrations publiques versent 14 604,2 MD : 1 764,5 en D.631 et 12 839,7 en D.632 ; les ménages versent 500,0 en D.632.
+- Ce tableau existe dans les 15 éditions, de 2005-2009 à 2021-2025. Il est désormais extrait (dépôt de données, série `cnat-d63`).
+- Reste une question pour l'expert : faut-il lire la consommation collective des administrations comme P.3 − D.63 versé par les administrations (16 236,8 MD en 2023), et l'INS publie-t-il P.31 et P.32 ailleurs ?
+- Priorité 3.
+
+## E. Sources manquantes
+
+**E1.** Les recettes douanières par nature, et la TVA brute avec ses restitutions (A1, A2, A4). Priorité 1.
+
+**E2.** Les comptes des caisses sociales et des collectivités locales pour 2023 : cotisations, prestations et transferts reçus, pour chiffrer D.61, D.62 et D.73. Priorité 1.
+
+**E3.** Une note méthodologique de l'INS sur le passage du budget aux comptes des administrations publiques en base 2015, si elle existe. Priorité 1.
+
+**E4.** Les dates de publication des éditions des *Comptes de la nation* : aucune n'est connue des listes d'adresses consultées. Priorité 3.
+
+## A15. Impôts courants des ménages plus faibles que l'IRPP du budget
+- La norme dit, la source mesure : un impôt sur le revenu est rangé chez l'unité qui le supporte (SCN 2008, § 8.15, p. 160 ; MSFP 2014, 1111 et 1112, tableau A7.3, p. 364) ; le budget mesure l'IRPP encaissé, retenues à la source comprises. La définition n'explique pas que l'IRPP dépasse le D.5 des ménages : selon quel critère l'INS range-t-il une partie de l'IRPP hors des ménages ?
+
+L'IRPP du budget dépasse le D.5 des ménages chaque année de 2015 à 2023 (129 à 192 %) ; les seuls impôts sur les salaires en sont proches, et l'IRPP « autres » est du même ordre que l'excédent du D.5 des sociétés et du reste du monde sur l'impôt sur les sociétés (tableau dans `docs/notes/justesse-apu-menages-2026-11-25.md`). L'INS range-t-il une partie de l'IRPP (retenues à la source sur revenus de capitaux, non-résidents, entreprises individuelles) hors des ménages, et où le documente-t-il ? Les impôts sur les salaires croissent de 43 % en 2019 dans la série du ministère : rupture de champ ou d'enregistrement ?
+
+## A16. ~~Les libellés de l'INS en base 2015 désignent-ils les mêmes opérations que le SCN 2008 ?~~
+
+Résolue le 25/11/2026 pour les six termes que la table de vocabulaire classait « non vérifiables », par le texte ou par l'arithmétique (colonnes `nature_ecart` et `preuve` de `docs/conventions/vocabulaire-comptes-nationaux.csv`) : « institutions financières », « administration publique » et « extérieur » sont les secteurs S12, S13 et S2 de la nomenclature que l'INS publie en base 2015 (*Comptes de la nation* 2015-2020, vol. B, p. 5) ; « TVA non déductible » est la TVA du système net que prescrit le SCN 2008 (§ 6.61, p. 102), et D.2 égale la somme de ses composantes dans les 11 cas testés ; « autres impôts sur les produits » est la composante restante de D.21 (même test) ; « variation de stocks » vérifie P.5 = P.51 + P.52 dans les 31 cas testés.
+
+## A17. Pourquoi la rémunération des salariés reçue du reste du monde est-elle cinq fois plus faible dans les comptes que dans la balance des paiements ?
+
+- Observé : D.1 versé par le reste du monde aux résidents, de 206 à 241 MD par an de 2019 à 2024 dans les comptes ; « rémunération des salariés », crédits, de 903 à 1 464 MD dans la balance des paiements de la BCT (MBP6). Les envois de fonds des travailleurs de la BCT sont repris par l'INS (« économie sur salaires reçus de l'extérieur » : 7 279,3 MD en 2022 et 7 551,5 en 2023 des deux côtés) : l'écart ne vient pas de là.
+- La norme : le MBP6 ne compte en rémunération transfrontalière que les salariés résidents d'une économie employés par des non-résidents, dont les saisonniers et temporaires de moins d'un an et les frontaliers (§ 11.11 et 11.14, p. 201-202).
+- La note de l'INS sur les comptes du reste du monde (vol. A, p. 17) ne cite pas ce poste parmi les causes d'écart.
+- Question : quelle source et quel champ l'INS retient-il pour D.1 avec le reste du monde ? Un document trancherait : une note de l'INS sur l'élaboration des comptes du reste du monde en base 2015, au-delà de la page 17 du volume A.
+- Priorité 2.
+
+## A18. Quel périmètre de la CNRPS l'INS retient-il pour les cotisations sociales (D.61) de la sécurité sociale ?
+
+- Observé : en 2020, le rapport du ministère des Finances sur les entreprises publiques donne 5 518,8 MD de recettes techniques pour la caisse entière (rapport EP, LF 2024, en arabe, tableau 28, p. 67 ; série `minfin-ep-caisses`), contre 5 245,5 MD de recettes pour le seul régime général de retraite (CNRPS, rapport d'activité 2020, p. imprimées 25 et 26 ; série `cnrps-regime-general-finances`). Avec la CNSS (3 430,0, cotisations encaissées, série `cnss-cotisations`) et la CNAM (3 525,2, recettes techniques, même rapport EP, p. 67), la somme des trois caisses dépasse le D.61 reçu par la sécurité sociale (S1314, 11 664,9 MD, édition 2020-2024 ; `precis/_seriescache/cnat-secteurs.csv`) de 4,6 % avec le régime général, de 6,9 % avec la caisse entière. Les années suivantes, avec la caisse entière et, pour la CNSS, les recettes techniques du même rapport EP (3 749,2 ; 4 168,7 ; 4 556,9) : +9,8 % en 2021, +9,0 % en 2022 (CNRPS 6 197,6, « réalisé », rapport EP, LF 2025, p. 44 ; le rapport EP, LF 2024, p. 67, imprime 6 218,0 « provisoire »), +11,8 % en 2023 (D.61 de S1314, édition 2021-2025 : 12 197,7 ; 13 300,8 ; 14 098,7). Tableau : livre des cotisations sociales, section `sec-cot-pensions-passage`.
+- Déjà testé : le calendrier ne suffit pas (l'écart est de même signe chaque année) ; les deux périmètres de la CNRPS sont affichés côte à côte pour 2020.
+- Hypothèses :
+  - (a) l'INS ne retient de la CNRPS que les cotisations du régime général de retraite, et range les autres régimes de la caisse (capital décès, prévoyance, rentes) ailleurs ou hors D.61 ;
+  - (b) les recettes techniques des caisses comprennent des produits qui ne sont pas des cotisations (contribution sociale de solidarité, prises en charge par l'État), que l'INS range en D.7 ou en D.73 ;
+  - (c) l'INS enregistre une partie des cotisations à la charge de l'État employeur ailleurs que dans les ressources de S1314 (cotisations imputées, D.122, ou transferts entre administrations).
+- Recommandation : garder le régime général pour 2020 et la caisse entière comme relais 2021-2023, les deux écarts affichés, et demander à l'INS la liste des recettes des caisses qu'il range en D.61. Un document trancherait : la ventilation des recettes techniques de la CNRPS par régime et par nature pour 2020-2023 (états financiers de la caisse).
+- La réponse dirait si l'écart, de 4,6 % à 11,8 % selon l'année et le périmètre, tient au périmètre ou au classement.
+- Priorité 1.
+
+## A19. Les subventions d'équipement reçues par les communes sont-elles la principale composante du D.99 reçu par les collectivités locales ?
+
+- Observé : subventions d'équipement des communes (catégorie 7 des recettes, « منح التجهيز », somme des 350 communes ; série `finances-locales-communes-agregats`, variable `subventions_equipement`) face aux autres transferts en capital (D.99) reçus par S1313, dernière édition de chaque année (`precis/_seriescache/cnat-secteurs.csv`) : 173,7 contre 426,4 en 2018 (0,41) ; 243,5 contre 491,7 en 2019 (0,50) ; 298,2 contre 445,4 en 2020 (0,67) ; 474,9 contre 642,6 en 2021 (0,74, situation au 25/12/2021) ; 447,9 contre 482,3 en 2022 (0,93) ; 436,7 contre 477,2 en 2023 (0,92, provisoire au 10/01/2024). Avec les crédits transférés, le rapport va de 0,53 à 1,05 (`docs/notes/collectivites-2020-2021.md`).
+- Déjà testé : le rapport n'est pas stable, à la différence de la rémunération des salariés (D.1) et de la consommation intermédiaire (P.2) des communes, qui couvrent 92 % à 96 % du montant de l'INS les années chiffrées.
+- Hypothèses :
+  - (a) S1313 comprend les conseils régionaux, que la série des communes ne couvre pas ;
+  - (b) le D.99 de l'INS réunit des transferts que la catégorie 7 ne contient pas, par exemple les crédits transférés de l'État, avec lesquels le rapport va de 0,53 à 1,05 ;
+  - (c) l'INS enregistre les transferts à la date du versement par l'État, la série communale à la date de l'encaissement : effet de calendrier.
+- Recommandation : ne pas ajouter de poste D.99 des collectivités tant que la composition du D.99 n'est pas connue ; demander à l'INS la source et le champ de D.99 pour S1313.
+- La réponse permettrait de rattacher un poste au D.99 de S1313 et de dire quelle part de l'investissement local passe par l'État.
+- Priorité 2.
+
+## A20. Pourquoi la balance des paiements ne donne-t-elle que le quart ou le tiers des revenus de la propriété versés par le reste du monde aux résidents (D.4, emplois de S2) ?
+
+- Observé : revenus des investissements, crédits, de la balance des paiements de la BCT : 381,7 en 2019 (*Balance des paiements 2022*, tableau 20, p. 45), 280,3 en 2020 (*Balance des paiements 2023*, tableau 20, p. 45), 872,0 en 2023 (*Balance des paiements 2024*, tableau 19, p. 43) ; série `bct-bdp-postes-s2`. D.4 en emplois du reste du monde dans le TEE : 1 168,1 en 2019 (édition 2019-2023, p. 116), 878,6 en 2020 (édition 2020-2024, p. 116), 3 438,3 en 2023 (édition 2021-2025, p. 120). Rapport de la balance des paiements aux comptes : 0,33 ; 0,32 ; 0,25. Hors loyers (D.45 versés par le reste du monde : 511,3 ; 436,7 ; 2 097,7, comptes des secteurs, `precis/_seriescache/cnat-secteurs.csv`, mêmes éditions) : 0,58 ; 0,63 ; 0,65.
+- Déjà testé : la redevance du gazoduc, que l'INS reclasse des services de transport en loyers (D.45 ; *Comptes de la nation* 2015-2020, vol. A, p. 17 ; question A14), explique la plus grande part de l'écart de 2023, non celui qui reste hors loyers. En 2020, la balance des paiements ventile ses 280,3 en investissements directs (61,4), de portefeuille (15,6) et autres (203,3) (*Balance des paiements 2023*, tableau 20, p. 45) ; le TEE donne 163,3 d'intérêts (D.41) et 278,6 de revenus distribués (ligne sans libellé rapprochée de D.42).
+- Hypothèses :
+  - (a) l'INS compte en D.42 des bénéfices réinvestis ou des dividendes que la balance des paiements range au compte financier ;
+  - (b) l'INS calcule les intérêts reçus de l'extérieur avant la correction des SIFIM, ou y ajoute les intérêts des réserves de change, comptés autrement par la BCT ;
+  - (c) l'INS ne part pas de la balance des paiements pour D.4 (question D4).
+- Recommandation : laisser D.4 sans poste tiré de la balance des paiements, dans les deux sens. Le total des revenus versés à l'extérieur comprend les intérêts de la dette extérieure de l'État, déjà chiffrés par le poste des intérêts de la dette : le poser compterait ces intérêts deux fois ; et la balance des paiements ne ventile pas ces revenus par secteur résident. Demander à l'INS la source de D.42 et de D.41 avec le reste du monde ; la note de l'INS sur les comptes du reste du monde (vol. A, p. 17) ne cite pas ce poste.
+- Priorité 2.
+
+## A21. Pourquoi les transferts courants et impôts courants versés par le reste du monde (D.7 + D.5, emplois de S2) dépassent-ils de 25 % à 44 % le revenu secondaire de la balance des paiements ?
+
+- Observé : revenu secondaire, crédits, de la balance des paiements : 4 841,2 en 2019 (*Balance des paiements 2022*, tableau 20, p. 45), 5 919,8 en 2020 (*Balance des paiements 2023*, tableau 20, p. 45), 8 976,2 en 2023 (*Balance des paiements 2024*, tableau 19, p. 43). D.7 + D.5 en emplois du reste du monde dans le TEE : 6 616,2 + 376,7 = 6 992,9 en 2019 ; 7 090,9 + 321,0 = 7 411,9 en 2020 ; 11 036,7 + 608,7 = 11 645,4 en 2023 (mêmes pages que A20). Rapport des comptes à la balance des paiements : 1,44 ; 1,25 ; 1,30.
+- Déjà testé : avec la rémunération des salariés (question A17 : D.1 de 224,4 ; 206,2 ; 230,9 dans les comptes, contre 1 228,4 ; 1 279,8 ; 1 265,6 en balance des paiements), la somme D.1 + D.5 + D.7 des comptes vaut encore 1,19 ; 1,06 ; 1,16 fois la somme correspondante de la balance des paiements : un reclassement de la rémunération en transferts n'explique qu'une partie de l'écart.
+- Hypothèses :
+  - (a) l'INS estime des envois de fonds hors circuit bancaire, ou en nature, que la balance des paiements ne relève pas ;
+  - (b) l'INS reclasse en « économie sur salaires reçus de l'extérieur » (D.7) des revenus que la balance des paiements range en rémunération des salariés (A17) ou en revenus des investissements ;
+  - (c) l'INS ne part pas de la balance des paiements pour ces opérations (question D4).
+- Recommandation : garder le poste D.7 versé aux non-résidents (ressources de S2), seul tiré de la balance des paiements, et ne pas poser de poste sur D.7 + D.5 reçus tant que l'écart n'est pas expliqué ; poser A17 et A21 ensemble à l'INS, avec la demande de la note d'élaboration des comptes du reste du monde en base 2015.
+- Priorité 2.

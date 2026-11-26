@@ -1432,45 +1432,60 @@
     2008-2023'
   sources:
   - dgct-donnees-ouvertes
+  - hifl-rapport-annuel-2020
   build: uv run --with openpyxl --with xlrd python scripts/build_finances_locales_communes.py
   raw:
+  - data/raw/finances_locales/dgct/2020_hifl_rapport_annuel.pdf
   - data/raw/finances_locales/dgct_portail/Données-Financières-Globales.xls
   - data/raw/finances_locales/dgct_portail/fiscaliteslocale.xls
   - data/raw/finances_locales/dgct_portail/fccl.xls
   - data/raw/finances_locales/dgct_portail/Dotation.xls
   - data/raw/finances_locales/dgct_portail/Les-dépenses-ordinaires.xls
   - data/raw/finances_locales/dgct_portail/Ratios-financiers.xls
+  - data/raw/finances_locales/dgct_portail/Budget2021_details_depenses.xlsx
   output: data/processed/finances_locales/communes_agregats_2008_2023.csv
   unite: millions de dinars courants (MD) ; ratios en fraction
   perimetre: 'communes (budgets, comptabilité publique, réalisations) ; quotes-parts
     FCCL et dotation exceptionnelle aussi pour les conseils régionaux. 2008-2019 :
     agrégats publiés par la DGCT (communes_dgct_agregats_2008_2019.csv) ; 2018-2023
-    : somme des 350 budgets par commune. Colonnes source, statut, retenu.'
+    : somme des 350 budgets par commune ; parties du titre 1 en 2017-2020 selon la
+    HIFL (350 communes) ; dépenses 2021 par partie, section et titre selon le classeur
+    détaillé Budget2021_details_depenses.xlsx (source dgct_budget2021_details). Colonnes
+    source, statut, retenu.'
   caveats: 'DEUX SOURCES, GARDÉES TOUTES DEUX SUR 2018-2019 (colonne `retenu` : DGCT
     jusqu''en 2019, somme des communes ensuite). Les recettes concordent à l''arrondi
     près ; LES DÉPENSES NON (titre 1 : +1,7 MD en 2018, +7,2 MD en 2019 ; titre 2
-    : +0,6 et +5,9), écart non expliqué, figé dans les tests. 2021 = SITUATION AU
-    25/12/2021, non définitive (droits et redevances 54,8 MD contre 90-114 les autres
-    années). 2023 = PROVISOIRE (arrêté au 10/01/2024). IMPÔTS UN À UN (TIB, TNB, TCL,
-    taxe hôtelière, marchés) VIDES EN 2020-2021 : fichiers par commune sans détail
-    d''article ; rien n''est interpolé. Le FCCL est supprimé au 1er janvier 2018 mais
-    la DGCT garde l''intitulé « subventions annuelles » en 2018-2019 : rupture de
-    nature ; réserve à 18 % jusqu''en 2017, 15 % ensuite. Les recettes du titre 2
-    comprennent l''épargne et les excédents reportés du titre 1 : T1 + T2 n''est pas
-    un total consolidé. Recettes fiscales = catégories 1 et 2 (nomenclature 2018-2022),
-    qui exclut les catégories 3-4 rangées parmi les recettes fiscales en 2023. PÉRIMÈTRE
-    NON CONSTANT : 264 communes en 2012, 350 à partir de 2016-2017. Montants courants.'
+    : +0,6 et +5,9), écart non expliqué, figé dans les tests. 2021 : RECETTES = SITUATION
+    AU 25/12/2021, non définitive (droits et redevances 54,8 MD contre 90-114 les
+    autres années) ; DÉPENSES RETENUES = classeur détaillé Budget2021_details_depenses.xlsx
+    (source dgct_budget2021_details, statut posterieur_au_2021-12-25 : réalisations
+    jamais inférieures à la situation au 25/12, + 70,2 MD sur la gestion ; clôture
+    non établie), la situation au 25/12 gardée non retenue. 2023 = PROVISOIRE (arrêté
+    au 10/01/2024). IMPÔTS UN À UN (TIB, TNB, TCL, taxe hôtelière, marchés) VIDES
+    EN 2020-2021 : fichiers par commune sans détail d''article ; rien n''est interpolé.
+    Le FCCL est supprimé au 1er janvier 2018 mais la DGCT garde l''intitulé « subventions
+    annuelles » en 2018-2019 : rupture de nature ; réserve à 18 % jusqu''en 2017,
+    15 % ensuite. Les recettes du titre 2 comprennent l''épargne et les excédents
+    reportés du titre 1 : T1 + T2 n''est pas un total consolidé. RÉMUNÉRATIONS, MOYENS
+    DES SERVICES, INTERVENTIONS 2020 = HIFL, rapport annuel 2020, p. 51 et annexe
+    12 p. 179 (source hifl_rapport_2020, niveau hifl_2020 ; détail et pages dans communes_hifl_depenses_2017_2020.csv)
+    ; 2021 selon le classeur détaillé (672,0 ; 297,7 ; 66,0 MD) ; interventions 2019
+    : 92 MD à la DGCT contre 72,4 à la HIFL, rupture non tranchée. Recettes fiscales
+    = catégories 1 et 2 (nomenclature 2018-2022), qui exclut les catégories 3-4 rangées
+    parmi les recettes fiscales en 2023. PÉRIMÈTRE NON CONSTANT : 264 communes en
+    2012, 350 à partir de 2016-2017. Montants courants.'
   titre_ar: 'مالية البلديات: تنفيذ الميزانية والجباية المحلية والمال المشترك للجماعات
     المحلية والاعتمادات، 2008-2023'
   unite_ar: بملايين الدنانير الجارية؛ النسب كسور
   perimetre_ar: البلديات (ميزانيات، محاسبة عمومية، إنجازات)؛ 2008-2019 مجاميع منشورة
     من الإدارة العامة للجماعات المحلية، و2018-2023 مجموع ميزانيات البلديات الـ350
   caveats_ar: مصدران محفوظان معاً على 2018-2019 (عمود retenu). تتطابق الموارد بعد
-    التقريب ولا تتطابق النفقات (فارق غير مفسَّر). 2021 وضعية في 25/12/2021 غير نهائية،
-    و2023 وقتية (10/01/2024). الأداءات واحداً واحداً فارغة في 2020-2021 ولا يُستكمل
-    شيء. أُلغي المال المشترك في 1 جانفي 2018 مع بقاء التسمية في 2018-2019. موارد العنوان
-    الثاني تشمل الفوائض المنقولة من العنوان الأول. عدد البلديات غير ثابت (264 سنة
-    2012 ثمّ 350). مبالغ جارية.
+    التقريب ولا تتطابق النفقات (فارق غير مفسَّر). موارد 2021 وضعية في 25/12/2021 غير
+    نهائية، ونفقات 2021 المعتمدة من الملفّ المفصّل Budget2021_details_depenses.xlsx
+    (إنجازات لاحقة لـ25/12/2021، وختم السنة غير ثابت)، و2023 وقتية (10/01/2024). الأداءات
+    واحداً واحداً فارغة في 2020-2021 ولا يُستكمل شيء. أُلغي المال المشترك في 1 جانفي
+    2018 مع بقاء التسمية في 2018-2019. موارد العنوان الثاني تشمل الفوائض المنقولة
+    من العنوان الأول. عدد البلديات غير ثابت (264 سنة 2012 ثمّ 350). مبالغ جارية.
   fiche: sources/finances-locales-communes.md
 - id: finances-locales-cpscl
   titre: 'CPSCL : dotations de l''État, subventions et prêts aux collectivités locales,
@@ -7408,3 +7423,924 @@
     إيرادات النظام ونفقاته في منشورات الصندوق، ولا يطابق عدد المنتفعين أيّ عدد نشره
     الصندوق. أرقام 2020 وقتية. وثيقة برمجة مشروع تعاون لا نشرية إحصائية.
   fiche: sources/ue-jumelage-retraite-2021.md
+- id: cnat-secteurs
+  titre: Comptes des secteurs et sous-secteurs institutionnels, emplois et ressources
+    (INS, comptes de la nation, base 2015)
+  sources:
+  - ins-cnat-2015
+  source_ligne: 'INS, Les comptes de la nation, éditions 2015-2020 à 2021-2025 : comptes
+    des sociétés non financières, des sociétés financières (institutions de crédit,
+    assurances, auxiliaires), des administrations publiques (administration centrale,
+    collectivités locales, sécurité sociale), des ménages (dont entreprises individuelles)
+    et du reste du monde, emplois et ressources ; pour chaque année, l''édition la
+    plus récente.'
+  unite: millions de dinars courants
+- id: cnat-secteurs-controles
+  titre: Contrôles arithmétiques des comptes des secteurs institutionnels (équilibre
+    des opérations, soldes, consolidation, PIB)
+  sources:
+  - ins-cnat-2015
+  source_ligne: Calculs sur les comptes des secteurs de l'INS (éditions en base 2015),
+    seuil 0,5 MD ; écarts expliqués ligne par ligne.
+  unite: millions de dinars courants
+- id: cnat-recoupements
+  titre: Comptes des administrations publiques face aux séries budgétaires de l'État
+    (TVA, douane, impôts sur le revenu, compensation, rémunérations, équipement)
+  sources:
+  - ins-cnat-2015
+  source_ligne: Comparaison, année par année, de la série cnat-secteurs (INS) et des
+    séries budgétaires du cache (ministère des Finances) ; écart = comptes − budget,
+    périmètres déclarés paire par paire.
+  unite: millions de dinars courants
+- id: ins-va-branche-base2015
+  titre: Valeur ajoutée par branche d'activité (INS, base 2015), prix courants et
+    prix de l'année précédente, 2020-2025
+  sources:
+  - ins-cnat-2015
+  build: scripts/parse_ins_va_branche.py:main
+  raw:
+  - data/raw/ins-comptes-nationaux/ins_va_branche_base2015_statistiques75_2026-11-07.txt
+  output: data/processed/ins-comptes-nationaux/va_branche_base2015.csv
+  unite: millions de dinars (courants, et aux prix de l'année précédente)
+  perimetre: 'INS, banque de données « Compte de la nation › Valeurs ajoutées (Base
+    2015) » (statistiques/75) : 24 branches + sous-totaux marchand/non marchand, total
+    des valeurs ajoutées, impôts nets de subventions sur les produits, PIB. Deux évaluations
+    : prix courants et prix de l''année précédente. Maj INS 03-08-2026, consulté le
+    7 novembre 2026.'
+  caveats: 'NOMENCLATURE AGRÉGÉE : pas de branche immobilière isolée ; les loyers
+    (réels et IMPUTÉS des propriétaires occupants) sont dans « Autres activités des
+    ménages » (étiquetée « activités immobilières » dans le volume détaillé des Comptes
+    de la Nation), ≈ 6,0-6,6 % du PIB (8 415 MD en 2021) — borne haute du poids des
+    loyers imputés (peut inclure autoproduction et services domestiques). DÉFLATEUR
+    DE LA VA : prix courants ÷ prix de l''année précédente (année n) ; croisé avec
+    l''IPC (bct-ipc-base2015), donne le coin prix conso / prix VA. Valeurs révisables
+    ; édition en ligne du 03-08-2026. Les évaluations aux prix de l''année précédente
+    ne se chaînent pas en niveau.'
+  titre_ar: القيمة المضافة حسب قطاع النشاط (المعهد الوطني للإحصاء، الأساس 2015)، بالأسعار
+    الجارية وبأسعار السنة الفارطة، 2020-2025
+  unite_ar: بملايين الدنانير (الجارية، وبأسعار السنة الفارطة)
+  perimetre_ar: 'المعهد الوطني للإحصاء، بنك المعطيات «حسابات الأمة › القيمة المضافة
+    (الأساس 2015)»: 24 قطاعا مع المجاميع الفرعية، مجموع القيم المضافة، الضرائب الصافية
+    على المنتجات، والناتج المحلي الإجمالي. تقييمان: بالأسعار الجارية وبأسعار السنة
+    الفارطة. آخر تحديث 03-08-2026.'
+  caveats_ar: 'تصنيف مجمّع: لا يوجد قطاع عقاري مستقل؛ الإيجارات (الفعلية والضمنية
+    للمالكين الساكنين) ضمن «أنشطة أخرى للأسر» (المسمّاة «الأنشطة العقارية» في المجلد
+    المفصّل)، نحو 6,0-6,6 % من الناتج. مُعامِل انكماش القيمة المضافة = الأسعار الجارية
+    ÷ أسعار السنة الفارطة.'
+  fiche: sources/ins-valeurs-ajoutees-branche.md
+- id: cnat-tof
+  titre: Tableaux des opérations financières (TOF) de l'INS, flux et encours, par
+    sous-secteur et instrument, éditions en base 2015, 2015-2025
+  sources:
+  - ins-cnat-2015
+  build: scripts/extraire_cnat_tof.py:main
+  raw:
+  - data/raw/ins-publications/comptes-de-la-nation
+  output: data/processed/ins-comptes-nationaux/cnat_tof.csv
+  unite: millions de dinars courants
+  perimetre: 'flux nets d''acquisitions d''actifs (créances) et d''engagements (dettes),
+    et encours des créances et des dettes, instruments F1 à F8 et sous-postes, colonnes
+    S12x, S126, S128, S12, S1311, S1313, S1314, S13, S11, S14, S2, TOTAL ; une ligne
+    par (édition, année, tableau, côté, ligne, secteur). Édition 2015-2020 : flux
+    seulement (les encours sont au Volume B, non traité).'
+  caveats: 'VALEURS LUES, JAMAIS CALCULÉES. Colonnes attribuées par position (programmation
+    dynamique), contrôlées par les sommes imposées (scripts/controler_cnat_tof.py)
+    ; sondage exhaustif : chaque ligne retrouvée telle quelle sur sa page (scripts/sonder_cnat_tof.py).
+    Créances = dettes vérifié pour tous les instruments. 110 contrôles de sommes restent
+    en écart, listés dans cnat_tof_controles.csv (statut ecart) : sous-secteurs financiers
+    incohérents avec S12 sur quelques pages, et une ligne imprimée éclatée (édition
+    2015-2020, p. 134, F21). Raccord du solde financier avec les comptes de secteur
+    : à l''arrondi sauf deux cas.'
+  titre_ar: جداول العمليات المالية للمعهد الوطني للإحصاء، التدفقات والأرصدة، حسب القطاع
+    الفرعي والأداة
+  unite_ar: بملايين الدنانير الجارية
+  perimetre_ar: التدفقات والأرصدة للأصول والخصوم المالية، الأدوات F1 إلى F8، حسب القطاعات
+    الفرعية
+  caveats_ar: قيم مقروءة لا محسوبة؛ المراقبات في scripts/controler_cnat_tof.py.
+  fiche: sources/ins-comptes-nationaux-publications.md
+  licences:
+  - 'INS (sources ins-*) : conditions d''utilisation de l''INS, https://ins.tn/en/conditions-utilisation
+    (consultées le 2026-10-27) : réutilisation commerciale et non commerciale, redistribution
+    et transformation autorisées ; citer le producteur et la date de mise à jour,
+    ne pas suggérer une caution officielle ni tromper sur le contenu ; droit tunisien'
+- id: cnat-tre
+  titre: Tableau des ressources et des emplois (TRE) de l'INS, aux prix courants,
+    base 2015, éditions 2015-2020 à 2021-2025
+  sources:
+  - ins-cnat-2015
+  build: scripts/extraire_cnat_tre.py:main
+  raw:
+  - data/raw/ins-publications/comptes-de-la-nation
+  output: data/processed/ins-comptes-nationaux/cnat_tre.csv
+  unite: millions de dinars courants
+  perimetre: 'Une page par année et par édition (31 pages, années 2015 à 2025) : pour
+    chaque produit (code à deux chiffres, corrections CR1 à CR3, totaux), les ressources
+    (production, importations, droits de douane, TVA non déductible, autres impôts
+    sur les produits, subventions, marges commerciales et de transport, correction
+    CAF/FOB, total), la matrice des consommations intermédiaires par branche et les
+    emplois finals (consommation intermédiaire totale, consommation finale des ménages
+    et des administrations, FBCF, variation des stocks, exportations, total) ; en
+    bas de page, le compte de production des branches (production, valeur ajoutée,
+    rémunération des salariés, impôts nets sur la production, EBE). Contrôles dans
+    cnat_tre_controles.csv.'
+  caveats: 'Lu avec les coordonnées des mots (pdftotext -bbox) : chaque nombre est
+    rattaché à la colonne dont l''en-tête est le plus proche ; les milliers imprimés
+    comme un mot distinct, parfois légèrement surélevé, sont recollés. 3 496 contrôles
+    sur 3 507 passent ; les 11 autres sont listés (écarts de 0,6 à 0,9 MD sur la ligne
+    94 des ressources, et quelques nombres dont le chiffre des milliers n''a pas été
+    retrouvé). Base 2015 seulement. Une année publiée par plusieurs éditions garde
+    toutes ses lectures.'
+- id: cnat-fbcf
+  titre: Formation brute de capital fixe par secteur institutionnel, par branche,
+    des entreprises par branche et des administrations publiques par domaine, éditions
+    2005-2009 à 2021-2025
+  sources:
+  - ins-cnat-2015
+  build: scripts/extraire_cnat_fbcf.py:main
+  raw:
+  - data/raw/ins-publications/comptes-de-la-nation
+  output: data/processed/ins-comptes-nationaux/cnat_fbcf.csv
+  unite: millions de dinars courants
+  perimetre: 'Quatre tableaux de FBCF des Comptes de la nation de l''INS, lus dans
+    les PDF de quinze éditions (2005-2009 à 2013-2017 en base 1997, 2015-2020 à 2021-2025
+    en base 2015), années 2005 à 2025. Une ligne par édition, tableau (famille), libellé
+    imprimé et année, avec le statut de l''année (semi-définitif, provisoire) quand
+    l''en-tête le donne, le retrait du libellé et la ligne du texte source. Contrôles
+    dans cnat_fbcf_controles.csv : sous-totaux de chaque tableau et égalités entre
+    tableaux d''une même édition, à l''arrondi de l''INS (0,05 MD par valeur imprimée).'
+  caveats: 'DEUX BASES, JAMAIS CHAÎNÉES : filtrer `base`. Une même année publiée par
+    plusieurs éditions garde toutes ses lectures (révisions) : choisir une édition
+    par point. Les nomenclatures diffèrent (codes B11, G40… en base 1997 ; libellés
+    en base 2015) : aucune table de passage n''est fournie. 1 491 contrôles sur 1
+    500 passent ; les 9 autres sont des écarts de 0,2 à 0,4 MD entre deux tableaux
+    d''une même édition (total par secteur contre total par branche, entreprises contre
+    tableau des entreprises), signalés et non corrigés. Les tableaux par édition relevés
+    plus tôt sous cnat*-tables/ ont perdu les lignes à libellé sur deux lignes (électricité
+    et gaz, eau, textile, matériaux) : sur les 2 463 valeurs communes, ils sont identiques
+    à cette lecture, qui y ajoute les lignes perdues.'
+  fiche: sources/ins-comptes-nationaux-publications.md
+  licences:
+  - 'INS (sources ins-*) : conditions d''utilisation de l''INS, https://ins.tn/en/conditions-utilisation
+    (consultées le 2026-10-27) : réutilisation commerciale et non commerciale, redistribution
+    et transformation autorisées ; citer le producteur et la date de mise à jour,
+    ne pas suggérer une caution officielle ni tromper sur le contenu ; droit tunisien'
+- id: cnat-produits
+  titre: Consommation finale par produit, importations et exportations par produit,
+    aux prix courants, éditions 2005-2009 à 2021-2025
+  sources:
+  - ins-cnat-2015
+  build: scripts/extraire_cnat_produits.py:main
+  raw:
+  - data/raw/ins-publications/comptes-de-la-nation
+  output: data/processed/ins-comptes-nationaux/cnat_produits.csv
+  unite: millions de dinars courants
+  perimetre: 'Trois tableaux des Comptes de la nation de l''INS aux prix courants,
+    lus dans les PDF de quinze éditions (2005-2009 à 2013-2017 en base 1997, 2015-2020
+    à 2021-2025 en base 2015) : la dépense de consommation finale « des ménages »
+    par produit, les importations et les exportations par produit, lignes de correction
+    comprises (correction territoriale, correction CAF/FAB). Contrôles dans cnat_produits_controles.csv
+    : ENSEMBLE égal à la somme des lignes (228 sur 228) et total égal à la ligne des
+    emplois du PIB de la même édition (30 sur 30).'
+  caveats: 'LE TABLEAU « DES MÉNAGES » TOTALISE LA CONSOMMATION FINALE GLOBALE (ménages
+    et administrations publiques) : son ENSEMBLE est égal à la « Consommation finale
+    globale » des emplois du PIB, non à la « Consommation privée » ; il comprend administration,
+    enseignement, santé. Pour la consommation des seuls ménages, prendre la P.3 des
+    comptes de secteur. DEUX BASES, JAMAIS CHAÎNÉES : filtrer `base`. Une année publiée
+    par plusieurs éditions garde toutes ses lectures. Ligne « Services non marchands
+    » des importations de 2005-2009 et 2008-2012 : valeurs nulles imprimées sur une
+    partie des colonnes seulement, non versées.'
+  fiche: sources/ins-comptes-nationaux-publications.md
+  licences:
+  - 'INS (sources ins-*) : conditions d''utilisation de l''INS, https://ins.tn/en/conditions-utilisation
+    (consultées le 2026-10-27) : réutilisation commerciale et non commerciale, redistribution
+    et transformation autorisées ; citer le producteur et la date de mise à jour,
+    ne pas suggérer une caution officielle ni tromper sur le contenu ; droit tunisien'
+- id: cnat-produits-volume
+  titre: Consommation finale, importations et exportations par produit aux prix de
+    l'année précédente, éditions 2005-2009 à 2021-2025
+  sources:
+  - ins-cnat-2015
+  build: scripts/extraire_cnat_produits_volume.py:main
+  raw:
+  - data/raw/ins-publications/comptes-de-la-nation
+  output: data/processed/ins-comptes-nationaux/cnat_produits_volume.csv
+  unite: millions de dinars aux prix de l'année précédente
+  perimetre: 'Pendant des tableaux de cnat-produits aux prix de l''année précédente
+    (« prix constants de l''année précédente » dans les éditions anciennes, « en volume
+    » dans l''édition 2015-2020) : quinze éditions, trois tableaux. Contrôles dans
+    cnat_produits_volume_controles.csv : ENSEMBLE égal à la somme des lignes (225
+    sur 225) ; indice de prix implicite (prix courants / prix de l''année précédente,
+    même édition) entre 0,5 et 2 pour 4 284 lignes.'
+  caveats: 'NE SE CHAÎNE PAS EN NIVEAU : chaque année est évaluée aux prix de l''année
+    d''avant ; diviser par la valeur courante de l''année précédente donne une croissance
+    en volume. Le tableau « des ménages » totalise la consommation finale globale
+    (voir cnat-produits). DEUX BASES, JAMAIS CHAÎNÉES. 36 indices de prix implicites
+    hors de 0,5-2, listés (catégorie hors_plage) : imprimés à l''identique d''une
+    édition à l''autre (mines et chimie en 2008, électricité importée en 2022, produits
+    miniers importés en 2023…), donc lus fidèlement ; mouvements de prix exceptionnels
+    ou lignes de faible volume, non corrigés.'
+  fiche: sources/ins-comptes-nationaux-publications.md
+  licences:
+  - 'INS (sources ins-*) : conditions d''utilisation de l''INS, https://ins.tn/en/conditions-utilisation
+    (consultées le 2026-10-27) : réutilisation commerciale et non commerciale, redistribution
+    et transformation autorisées ; citer le producteur et la date de mise à jour,
+    ne pas suggérer une caution officielle ni tromper sur le contenu ; droit tunisien'
+- id: bct-pib-emplois-long
+  titre: PIB aux prix courants et emplois du PIB, série rétrospective de la BCT, 1974-2025
+    (relais de l'INS)
+  sources:
+  - bct-stat-comptes-nation
+  build: scripts/bct_pib_emplois_long.py:main
+  raw:
+  - data/raw/bct-comptes-nationaux-stat
+  output: data/processed/bct/bct_pib_emplois_long.csv
+  unite: 'millions de dinars courants (prix constants : base 100 = 1990)'
+  perimetre: portail statistique de la BCT, série rétrospective des tableaux PL203150
+    (PIB aux prix courants et constants) et PL203180 (consommation privée et publique,
+    FBCF et sa ventilation, variation des stocks, exportations, importations), 1974-2025,
+    relevée le 2026-11-24
+  caveats: 'RELAIS DE L''INS : la BCT accole les bases de l''INS sans rétropoler (base
+    1983 reproduite pour 1992-1996, base 1997 pour 1997-2009, base 2015 pour 2010-2022,
+    établi par comparaison à 0,5 MD près avec les PIB de l''INS par base) ; avant
+    1992 et après 2022, base non établie. Là où l''INS publie, son chiffre prime.
+    Une case affichée 0,0 est tenue pour non publiée. Identité des emplois vérifiée
+    à l''arrondi pour 48 années sur 51 ; écarts listés (1994, 2010, 2013).'
+  titre_ar: الناتج المحلي الإجمالي واستخداماته، السلسلة الاسترجاعية للبنك المركزي،
+    1974-2025
+  unite_ar: بملايين الدنانير الجارية
+  perimetre_ar: السلسلة الاسترجاعية للجدولين PL203150 وPL203180 من البوابة الإحصائية
+    للبنك المركزي التونسي
+  caveats_ar: سلسلة ناقلة لأرقام المعهد الوطني للإحصاء تجمع أسسه دون إعادة احتساب؛
+    أرقام المعهد هي المرجع حيث تتوفر.
+  fiche: sources/bct-archives.md
+- id: echanges-rapprochement
+  titre: 'Échanges extérieurs : comptes nationaux de l''INS, statistiques douanières
+    (INS, BCT) et balance des paiements de la BCT, rapprochés, 2005-2025'
+  sources:
+  - ins-cnat-2015
+  - ins-annuaire
+  - bct-ra-2024
+  build: scripts/rapprocher_echanges.py:main
+  raw:
+  - data/raw/bct-publications/RA_fr.pdf
+  output: data/processed/echanges/echanges_rapprochement.csv
+  unite: millions de dinars courants
+  perimetre: 'Une ligne par (année, flux, source, périmètre), trois familles jamais
+    fondues : (1) comptes nationaux (cnat-produits, édition la plus récente qui imprime
+    l''année) : biens et services, et biens seuls (lignes de produits agricoles, miniers,
+    industriels, d''électricité et d''eau, hors corrections) ; (2) douane, exportations
+    FOB et importations CAF : INS, Annuaire, tableau 14.2 (ins-commerce-exterieur-par-regime),
+    et BCT, Rapport annuel 2024, tableau 3-2 (2020-2024) ; (3) balance des paiements
+    MBP6 : BCT, Rapport annuel 2024, tableau 3-11 (2023-2024), biens, services, total.
+    Écart à la référence comptes nationaux de même périmètre ; contrôles dans echanges_rapprochement_controles.csv
+    (douane BCT = douane INS, 8 sur 8 ; biens + services = total de la balance des
+    paiements, 4 sur 4).'
+  caveats: 'ÉCARTS DE PÉRIMÈTRE DÉCLARÉS, NON CORRIGÉS. (a) Douane et biens des comptes
+    nationaux : à ±0,3 % en base 1997 (2006-2014) ; en base 2015, importations des
+    comptes 1,8 à 3,5 % au-dessus de la douane (lignes de produits avant la correction
+    CAF/FAB, portée en une ligne globale), exportations 0,2 à 1,8 % au-dessus ; 2005
+    (édition 2005-2009) : +11 % et +7 %, à expliquer. (b) Balance des paiements et
+    comptes nationaux : environ −22 % en 2023-2024 sur biens et services ; le MBP6
+    compte le travail à façon NET, en service (« services de fabrication… », 14 428
+    MD de crédits en 2023), là où la douane et les comptes nationaux enregistrent
+    les biens transformés en brut ; les biens de la balance des paiements (28 082
+    MD d''exportations en 2023) ne se comparent donc pas aux exportations douanières
+    (62 077 MD). Un seul rapport annuel de la BCT est lu : 2020-2024 pour la douane,
+    2023-2024 pour la balance des paiements. Le fichier data/processed/bct/balance_commerciale.csv,
+    sans script ni fiche et aux lignes mensuelles décalées, n''est pas utilisé.'
+- id: cnrps-regime-general-finances
+  titre: 'CNRPS : recettes et dépenses du régime général de retraite par nature, 2014-2020,
+    et assiette cotisable implicite'
+  sources:
+  - cnrps-etats-financiers
+  - cnrps-guides-rapports
+  build: scripts/extract_cnrps_publications.py:main
+  raw:
+  - data/raw/caisses/cnrps
+  output: data/processed/caisses/cnrps_regime_general_finances.csv
+  unite: dinars, millions de dinars, dinars par mois, taux
+  perimetre: 'régime général de retraite des agents publics (النظام العام للتقاعد)
+    : recettes par nature (cotisations salariales et patronales, rachats, péréquation,
+    bonification…) et dépenses par nature 2014-2018 (états financiers) ; totaux 2019-2020
+    et cotisations reconstituées (rapports 2019-2020) ; taux légaux 2000-2020 ; grandeurs
+    calculées : part patronale, assiette cotisable moyenne implicite, écart avec le
+    salaire moyen reconstitué de cnrps-pensions et sa décomposition'
+  caveats: 'COTISATIONS SEULES disponibles 2014-2018 seulement : aucune source lue
+    ne ventile les recettes avant 2014 (les guides ne donnent que les totaux de tous
+    les régimes) ; 2017 vient de la colonne de comparaison des états 2018, eux-mêmes
+    PROVISOIRES ; 2019-2020 sont RECONSTITUÉES (niveau 2018 + hausses publiées arrondies
+    au million, périmètre des hausses non précisé). L''ASSIETTE COTISABLE MOYENNE
+    IMPLICITE est CALCULÉE : (salariales + patronales) ÷ taux légal global moyen ÷
+    affiliés de fin d''année ÷ 12 ; taux constant de 20,7 % sur 2014-2018 ; en 2019-2020,
+    moyenne des douze taux mensuels (employeur 14,5 % dès juin 2019, agent 9,2 % dès
+    janvier 2020). Elle est proche (à 1 %) du salaire de référence moyen déclaré publié
+    pour 2015-2016 (cnrps-salaire-reference-declare), sur un périmètre différent (INSAF,
+    80 % des affiliés) : proximité, non validation. 2016 est atypique : versement
+    en une fois par les employeurs de trente-six mois de péréquation, et primes spécifiques
+    nouvelles. Les dépenses ne séparent pas pensions de retraite et de veuves. Écarts
+    d''un dinar et coquilles des documents énumérés dans sources/cnrps-etats-financiers.md.'
+  titre_ar: 'الصندوق الوطني للتقاعد والحيطة الاجتماعية: إيرادات ونفقات النظام العام
+    للتقاعد حسب طبيعتها، 2014-2020، وقاعدة المساهمات الضمنية'
+  unite_ar: دنانير، ملايين الدنانير، دنانير شهرياً، نسب
+  perimetre_ar: 'النظام العام للتقاعد: الإيرادات حسب طبيعتها (مساهمات الأجراء والمشغل،
+    ضم الخدمات، التعديل الآلي للجرايات، التنفيل...) والنفقات حسب طبيعتها 2014-2018
+    (القوائم المالية)؛ المجاميع ومساهمات معاد تركيبها 2019-2020؛ النسب القانونية 2000-2020؛
+    مقادير محسوبة'
+  caveats_ar: 'لا تتوفر المساهمات وحدها إلا للفترة 2014-2018؛ سنة 2017 مأخوذة من عمود
+    المقارنة في القوائم المالية الوقتية لسنة 2018؛ سنتا 2019 و2020 معاد تركيبهما انطلاقا
+    من الزيادات المنشورة المقربة إلى المليون. قاعدة المساهمات الضمنية مقدار محسوب:
+    المساهمات ÷ النسبة القانونية الجملية ÷ المنخرطين ÷ 12. سنة 2016 استثنائية بسبب
+    دفع المشغلين مساهمة ستة وثلاثين شهرا دفعة واحدة. لا تفصل النفقات بين جرايات المتقاعدين
+    وجرايات الأرامل.'
+  fiche: sources/cnrps-etats-financiers.md
+- id: cnat-d63
+  titre: 'Transferts sociaux en nature (D.63) : prestations sociales en nature et
+    transferts de biens et services individuels non marchands, éditions 2005-2009
+    à 2021-2025'
+  sources:
+  - ins-cnat-2015
+  build: scripts/extraire_cnat_d63.py:main
+  raw:
+  - data/raw/ins-publications/comptes-de-la-nation
+  output: data/processed/ins-comptes-nationaux/cnat_d63.csv
+  unite: millions de dinars courants
+  perimetre: 'Tableau « Transferts sociaux en nature » des Comptes de la nation de
+    l''INS, publié à part des comptes des secteurs (base 1997 depuis l''édition 2005-2009,
+    base 2015) : en ressources, le total et ses deux composantes reçues par les ménages
+    ; en emplois, le total, les prestations sociales en nature versées par les administrations
+    publiques (D.631), les transferts de biens et services individuels non marchands
+    des administrations publiques et des ménages (D.632). Page du fichier pour chaque
+    valeur. Contrôles dans cnat_d63_controles.csv : total égal à la somme des composantes
+    et ressources égales aux emplois (228 sur 228).'
+  caveats: 'DEUX BASES, JAMAIS CHAÎNÉES : filtrer `base`. Une année publiée par plusieurs
+    éditions garde toutes ses lectures. Un groupe de milliers mal imprimé (« 1 0869,5
+    », édition 2015-2020) est recollé et marqué `lecture = milliers_recolles`. Le
+    tableau économique d''ensemble (compte II.3) reprend le total par secteur.'
+  fiche: sources/ins-comptes-nationaux-publications.md
+  licences:
+  - 'INS (sources ins-*) : conditions d''utilisation de l''INS, https://ins.tn/en/conditions-utilisation
+    (consultées le 2026-10-27) : réutilisation commerciale et non commerciale, redistribution
+    et transformation autorisées ; citer le producteur et la date de mise à jour,
+    ne pas suggérer une caution officielle ni tromper sur le contenu ; droit tunisien'
+- id: bct-bdp-postes-s2
+  titre: 'Reste du monde : postes du compte de l''INS tirés de la balance des paiements
+    de la BCT, passage du travail à façon compris, 1994-2024'
+  sources:
+  - bct-balance-paiements
+  build: scripts/passage_bdp_scn.py
+  raw:
+  - data/raw/bct-archives/106
+  - sources/bct-produits-transformes.csv
+  - sources/bct-bdp-passage-mbp5-mbp6.csv
+  output: data/processed/bct/bct_bdp_postes_s2.csv
+  unite: millions de dinars courants
+  perimetre: 'une ligne par (année, indicateur) : P.61 (biens + exportations de produits
+    transformés), P.71 (biens + importations pour fabrication), P.62 (services − services
+    de fabrication − redevance gaz), P.72, D.1 et D.4 reçus et versés, D.7 versés,
+    puis, du revenu secondaire en crédits (1.3), les administrations publiques, les
+    transferts personnels et, dont, les envois de fonds des travailleurs ; dernière
+    édition de la balance des paiements qui publie l''année. Présentation MBP6 (2019-2024)
+    quand tous les termes y sont publiés, sinon MBP5 (colonne presentation) : P.61
+    et P.71 en 1994-2021, P.62 en 1995-2018, P.72 et D.1 versée en 1994-2018'
+  caveats: 'Les montants de produits transformés et d''importations pour fabrication
+    viennent du texte des rapports de la BCT, au dixième de milliard (sources/bct-produits-transformes.csv)
+    : P.61 en 2022-2024, P.71 en 2023-2024 seulement (2022 : « plus de 20 milliards
+    », non retenu). La redevance gaz est retirée des services comme dans le passage
+    établi ; son rangement en loyers (D.45) dans les comptes n''est pas documenté
+    par l''INS. Le reste du passage (D.1, D.4) n''est pas rapproché : la balance des
+    paiements et les comptes de la nation y diffèrent sensiblement (voir bct_bdp_passage_s2.csv).
+    Sous-postes du revenu secondaire reçu (crédits) : passage à une opération SCN
+    « à déterminer » pour les trois, aucune source retenue (note de la BCT, rapport
+    2022 p. 71 ; MBP6 p. 226 et 322) ne les rattache à une opération SCN ; le MBP6
+    range les administrations publiques sous D.61, D.62+D.63, D.74, D.75, et les transferts
+    personnels sans code SCN (le SCN 2008 les nomme D.752). Le D.7+D.5 du reste du
+    monde en emplois (11 645,4 en 2023) n''est pas décomposé par secteur de contrepartie
+    : sources/bct-bdp-passage-scn.csv Années MBP5 : P.61 = exportations de marchandises
+    FOB (brut, travail à façon compris), P.71 = importations FOB, P.62 = services
+    moins redevance gaz (1994 vide : l''édition 1997 n''imprime pas la redevance),
+    P.72 = services (dépenses), D.1 versée = autres revenus du travail (dépenses).
+    Recouvrement 2015-2021 avec les comptes de la nation (base 2015) : P.61 99,7-99,8
+    %, P.71 96,4-98,1 %, P.62 94,3-98,1 %, P.72 115-121 % (contre 107-111 % en MBP6,
+    2019-2021 : le MBP5 compte l''assurance en brut), D.1 versée 61-93 %. D.1 reçue,
+    D.4, D.7 et sous-postes du revenu secondaire restent vides avant 2019 : le raccord
+    MBP5-MBP6 n''est pas établi ou un terme n''est pas publié en MBP5. Rupture entre
+    2018 (MBP5) et 2019 (MBP6) pour P.62 et P.72 : en 2019, 12 284,2 contre 13 007,3
+    et 9 198,7 contre 8 651,7 (assurance brute en MBP5). La sous-traitance et la transformation
+    comprises dans « grands travaux et services techniques » (texte des rapports)
+    restent dans P.62, non chiffrées.'
+  titre_ar: 'بقية العالم: بنود حساب المعهد الوطني للإحصاء المستخرجة من ميزان المدفوعات،
+    1994-2024'
+  unite_ar: ملايين الدنانير الجارية
+  perimetre_ar: 'سطر لكل سنة ومؤشر: صادرات وواردات السلع والخدمات بعد احتساب التحويل
+    لفائدة الغير، والأجور ومداخيل الاستثمار والتحويلات الجارية'
+  caveats_ar: مبالغ المنتجات المحولة مأخوذة من نص تقارير البنك المركزي بدقة عُشر المليار.
+    السنوات السابقة لسنة 2019 مأخوذة من عرض الطبعة الخامسة.
+  fiche: sources/bct-balance-paiements.md
+- id: minfin-ep-caisses
+  titre: 'CNSS, CNRPS et CNAM : comptes de résultat d''après le rapport sur les entreprises
+    publiques, 2020-2023 (éditions LF 2024 et LF 2025)'
+  sources:
+  - minfin-ep-2024
+  - minfin-ep-2025
+  build: scripts/extraire_minfin_ep_caisses.py
+  raw:
+  - data/raw/caisses/minfin/rapport_ep_LF2024.pdf
+  - data/raw/caisses/minfin/rapport_ep_LF2025.pdf
+  output: data/processed/caisses/minfin_ep_caisses.csv
+  unite: millions de dinars courants
+  perimetre: 'tableau des trois caisses sociales (LF 2024 : tableau 28, p. 67-68 ;
+    LF 2025 : p. 43-44) : recettes techniques, subventions et autres produits d''exploitation,
+    total des produits et des charges d''exploitation, charges de personnel, résultat
+    d''exploitation, charges financières nettes, produits des placements ou autres
+    produits ordinaires, résultat net avant et après modifications comptables ; une
+    ligne par (caisse, année, édition, grandeur), avec le statut imprimé sous l''année
+    et la position de la valeur sur la page'
+  caveats: 'CAISSE ENTIÈRE, toutes branches. STATUT TEL QU''IMPRIMÉ : LF 2024 n''en
+    donne aucun pour 2020 et 2021 (« sans mention ») et marque 2022 provisoire ; LF
+    2025 marque 2021-2022 réalisés, 2023 provisoire (CNSS, CNRPS) ou estimation (CNAM).
+    Les recettes techniques de la CNSS (3 430 MD en 2020) sont égales aux cotisations
+    publiées par la caisse. Aucune ligne « pensions » ni « prestations » : les charges
+    d''exploitation sont un total. Écarts imprimés, non corrigés, dans la colonne
+    note : total des produits CNRPS hors subventions dans la LF 2024 ; résultat d''exploitation
+    CNAM 2020-2021 de la LF 2024 supérieur de 3 MD à produits − charges. La ligne
+    CNRPS concorde avec cnrps-minfin-entreprises-publiques, transcrite à la main (60
+    valeurs sur 60).'
+  titre_ar: 'الصناديق الاجتماعية الثلاثة: قائمة النتائج حسب التقرير حول المنشآت العمومية،
+    2020-2023 (مشروعا قانون المالية 2024 و2025)'
+  unite_ar: ملايين الدنانير الجارية
+  perimetre_ar: 'جدول الصناديق الاجتماعية في التقرير حول المنشآت العمومية: الإيرادات
+    الفنية ومنح الاستغلال وإيرادات الاستغلال الأخرى ومجموع إيرادات وأعباء الاستغلال
+    وأعباء الأعوان ونتيجة الاستغلال والنتيجة الصافية، سطر لكل صندوق وسنة ونسخة ومؤشر
+    مع الصفة المطبوعة (منجز، وقتي، تقديري)'
+  caveats_ar: 'الصندوق بأكمله. الصفة كما طُبعت: لا صفة لسنتي 2020 و2021 في نسخة 2024.
+    الإيرادات الفنية للصندوق الوطني للضمان الاجتماعي تساوي المساهمات التي ينشرها الصندوق.
+    لا سطر للجرايات: الأعباء مجموع. الفوارق المطبوعة مذكورة دون تصحيح.'
+  fiche: sources/minfin-ep-caisses.md
+- id: minfin-recettes-non-fiscales
+  titre: 'Recettes non fiscales de l''État par rubrique : revenus pétroliers, redevance
+    gazoduc, revenus des participations, dons extérieurs, privatisation, recouvrement
+    de principal, autres, 1986-2025'
+  sources:
+  - minfin-recettes-non-fiscales-xls
+  build: scripts/extraire_minfin_recettes_non_fiscales.py
+  raw:
+  - data/raw/minfinances/recettes_non_fiscales.xls
+  output: data/processed/minfinances/recettes_non_fiscales.csv
+  unite: millions de dinars courants
+  perimetre: ministère des Finances, série des recettes non fiscales (feuille « Rec
+    nn fis », présentation de la loi organique du budget n° 2004-42), réalisations
+    ; une ligne par (année, rubrique) ; colonnes de loi de finances écartées
+  caveats: 'Les dons extérieurs et la privatisation sont dans les recettes non fiscales
+    de cette présentation. La redevance gazoduc égale le D.45 (loyers) reçu par l''administration
+    centrale dans les comptes de la nation sept années sur neuf de 2015 à 2023 (écarts
+    : 19,3 en 2018, −256,7 en 2022). Contrôle : total = somme des rubriques chaque
+    année.'
+  titre_ar: المداخيل غير الجبائية للدولة حسب الصنف، 1986-2025
+  unite_ar: ملايين الدنانير الجارية
+  perimetre_ar: سلسلة وزارة المالية للمداخيل غير الجبائية حسب تقديم القانون الأساسي
+    للميزانية لسنة 2004، الإنجازات
+  caveats_ar: الهبات الخارجية والتفويت ضمن المداخيل غير الجبائية في هذا التقديم.
+  fiche: sources/minfinances-indicateurs.md
+- id: cnat-tee
+  titre: 'Tableau économique d''ensemble (TEE) des Comptes de la nation : opérations
+    par secteur institutionnel, reste du monde et compte des biens et services, éditions
+    2011-2015 à 2021-2025'
+  sources:
+  - ins-cnat-2015
+  build: scripts/extraire_cnat_tee.py:main
+  raw:
+  - data/raw/ins-publications/comptes-de-la-nation
+  output: data/processed/ins-comptes-nationaux/cnat_tee.csv
+  unite: millions de dinars courants
+  perimetre: Une ligne par (édition, année, côté, libellé, colonne), colonnes S11,
+    S12, S13, S14, S1 (économie totale), S2 (reste du monde), biens et services, TOTAL
+    ; position de chaque valeur sur la page ; opération rattachée par le dictionnaire
+    des opérations (vide si aucune). Seul tableau publié qui donne le compte de redistribution
+    du revenu en nature (D.63) et le revenu disponible ajusté (B.7g) par secteur.
+  caveats: 9 éditions, 14 097 valeurs ; 4 920 contrôles sur 4 949 (économie = secteurs,
+    total = économie + extérieur + biens et services) ; 5 064 valeurs égales aux comptes
+    des secteurs, 233 différentes, listées dans cnat_tee_recoupement.csv.
+  fiche: sources/ins-comptes-nationaux-publications.md
+  licences:
+  - 'INS (sources ins-*) : conditions d''utilisation de l''INS, https://ins.tn/en/conditions-utilisation
+    (consultées le 2026-10-27) : réutilisation commerciale et non commerciale, redistribution
+    et transformation autorisées ; citer le producteur et la date de mise à jour,
+    ne pas suggérer une caution officielle ni tromper sur le contenu ; droit tunisien'
+- id: cnrps-pensions
+  titre: 'CNRPS : pensions, affiliés, recettes et dépenses du régime de retraite,
+    2000-2020'
+  sources:
+  - cnrps-guides-rapports
+  build: scripts/extract_cnrps_pensions.py:main
+  raw:
+  - data/raw/caisses/cnrps
+  output: data/processed/caisses/cnrps_pensions.csv
+  unite: personnes, pensions, milliers de dinars, dinars par mois
+  perimetre: 'régime de retraite des agents publics géré par la CNRPS : affiliés actifs,
+    nombre de pensions (retraite, toutes natures), dépenses et recettes du régime,
+    pension moyenne publiée par la caisse (retraite, veuves), et trois grandeurs calculées
+    : pension moyenne de retraite (2000-2010), pension moyenne toutes natures, salaire
+    moyen des cotisants reconstitué'
+  caveats: 'SITE DE LA CAISSE BLOQUÉ (pare-feu applicatif, y compris depuis un navigateur)
+    : documents récupérés dans les archives du web, adresses dans sources/cnrps-urls.csv
+    ; le rapport 2015 et le guide 2010-2019 y sont tronqués. VALEURS TRANSCRITES À
+    LA MAIN : la couche texte des guides n''est pas fiable (2012 : 2 095 019 en texte,
+    2 195 109 à l''image) ; chaque ligne dit son mode de lecture, et les soldes et
+    totaux sont contrôlés. DEUX SÉRIES DE PENSION MOYENNE PUBLIÉE (rapport 2016 d''une
+    part, rapports 2017-2020 d''autre part : 1 118 et 1 061 dinars pour 2016) : non
+    raccordées. Les grandeurs calculées rapportent des dépenses annuelles à un nombre
+    de pensions de fin d''année ; le salaire moyen des cotisants divise les recettes
+    de TOUS les régimes de retraite par le taux de cotisation et par les affiliés
+    : il dépasse l''assiette tirée des seules cotisations du régime général (série
+    cnrps-regime-general-finances) de 11,8 % en 2014, 16,4 % en 2015, 23,1 % en 2016,
+    20,0 % en 2017 et 27,2 % en 2018. La péréquation « des affiliés » n''en explique
+    qu''une partie (6,6 % des cotisations en 2014, 10,6 % en 2018) ; le reste vient
+    de la péréquation des employeurs, de la bonification, des rachats et des recettes
+    hors régime général (régimes spéciaux, couverture de leur déficit, retraites anticipées).
+    Les états financiers intitulent cette ligne « مساهمات المنخرطين » (contributions
+    des affiliés) sans nommer les retraités ; c''est la loi (art. 37 de la loi 85-12,
+    rédaction de la LF 2002 et de la loi 2007-43, citée d''après le précis) qui met
+    ces contributions à la charge du bénéficiaire de la pension. Pour un dénominateur
+    salarial, utiliser l''assiette tirée des cotisations seules, non ce salaire reconstitué.
+    En 2017, seules 50 % des augmentations des actifs ont été versées aux retraités
+    (rapport 2017, p. 37). Guide 2000-2010 : 33 667 ou 36 125 orphelins en 2006 selon
+    le tableau.'
+  titre_ar: 'الصندوق الوطني للتقاعد والحيطة الاجتماعية: الجرايات والمنخرطون وإيرادات
+    ونفقات نظام التقاعد، 2000-2020'
+  unite_ar: أشخاص، جرايات، آلاف الدنانير، دنانير شهرياً
+  perimetre_ar: 'نظام تقاعد أعوان القطاع العمومي: المنخرطون، عدد الجرايات، نفقات وإيرادات
+    النظام، معدّل الجراية المنشور، وثلاثة مقادير محسوبة'
+  caveats_ar: موقع الصندوق محجوب، فاستُرجعت الوثائق من أرشيف الواب. نُقلت القيم يدوياً
+    لأنّ الطبقة النصّية للأدلّة الإحصائية غير موثوقة، مع مراقبة الأرصدة والمجاميع.
+    سلسلتان مختلفتان لمعدّل الجراية المنشور لا تُربطان. الأجر المتوسط المعاد تركيبه
+    يقسم إيرادات جميع أنظمة التقاعد على نسبة المساهمة وعلى المنخرطين، فيفوق قاعدة
+    المساهمات المستخلصة من مساهمات الأجراء والمشغل وحدها في النظام العام بـ 11,8 %
+    سنة 2014 وبـ 27,2 % سنة 2018؛ ولا تفسّر مساهمات المنخرطين بعنوان التعديل الآلي
+    للجرايات إلا جزءا من هذا الفارق. لا تذكر القوائم المالية المتقاعدين في هذا البند،
+    والقانون هو الذي يحمّل هذه المساهمات على المنتفع بالجراية. في سنة 2017 لم يُصرف
+    للمتقاعدين إلا 50 % من الزيادات.
+  fiche: sources/cnrps-publications.md
+- id: cnat-secteurs-base1997
+  titre: Comptes des secteurs et sous-secteurs institutionnels en base 1997 (SCN 1993),
+    éditions 2005-2009 à 2013-2017 — brouillon
+  sources:
+  - ins-cnat-2015
+  build: scripts/extraire_cnat_secteurs.py:main (--editions 2005-2009,…,2013-2017
+    --sortie …/cnat_secteurs_base1997.csv)
+  raw:
+  - data/raw/ins-publications/comptes-de-la-nation
+  output: data/processed/ins-comptes-nationaux/cnat_secteurs_base1997.csv
+  unite: millions de dinars courants
+  perimetre: 'Même lecture que cnat-secteurs (base 2015), sur les neuf éditions en
+    base 1997 ; libellés du SCN 1993 rattachés aux opérations du SCN 2008 par le dictionnaire
+    (monnaie et dépôts → F.2, prêts → F.4…). Contrôles dans cnat_secteurs_base1997_controles.csv
+    : 2 679 dans l''arrondi de l''INS, 39 expliqués, 247 en échec, sur 2 965 ; relecture
+    des échecs dans cnat_secteurs_base1997_relecture.csv. Versé dans la base SQLite
+    des comptes nationaux (famille secteurs_1997, 29 258 valeurs, positions dans cnat_secteurs_base1997_positions.csv).
+    Codes et libellés rapprochés du SCN 1968 et du SCN 2008 dans sources/ins-comptes-nationaux/raccord-scn-1968-1993-2008.csv.'
+  caveats: 'BROUILLON. JAMAIS CHAÎNÉE AVEC LA BASE 2015. Échecs de contrôle concentrés
+    dans trois éditions : 2005-2009 (9 pages de secteur sur 24 reconnues), 2008-2012
+    et 2009-2013 (titres de sous-secteurs absents du texte, pages en double) ; les
+    éditions 2010-2014 à 2013-2017 sont presque toutes dans l''arrondi. Deux libellés
+    ont gardé des nombres imprimés sans décimale (valeurs perdues, marquées A VERIFIER
+    dans le dictionnaire). « Autres instruments financiers » rattaché à F.8 à vérifier.'
+  fiche: sources/ins-comptes-nationaux-publications.md
+  licences:
+  - 'INS (sources ins-*) : conditions d''utilisation de l''INS, https://ins.tn/en/conditions-utilisation
+    (consultées le 2026-10-27) : réutilisation commerciale et non commerciale, redistribution
+    et transformation autorisées ; citer le producteur et la date de mise à jour,
+    ne pas suggérer une caution officielle ni tromper sur le contenu ; droit tunisien'
+- id: cnat-secteurs-base1983
+  titre: Comptes des secteurs institutionnels en base 1983 (SCN 1968), éditions 2001-2005,
+    2002-2006 et 2004-2008 — brouillon
+  sources:
+  - ins-cnat-2015
+  build: scripts/extraire_cnat_secteurs.py:main (--editions 2001-2005,2002-2006,2004-2008
+    --sortie …/cnat_secteurs_base1983.csv)
+  raw:
+  - data/raw/ins-publications/comptes-de-la-nation
+  output: data/processed/ins-comptes-nationaux/cnat_secteurs_base1983.csv
+  unite: millions de dinars courants
+  perimetre: 'Comptes des secteurs des trois éditions en base 1983 lues (20 pages
+    par édition ; l''édition 2003-2007 et le compte de l''administration centrale
+    manquent), 8 314 valeurs ; libellés du SCN 1968 rattachés aux opérations du SCN
+    2008 par le dictionnaire, chaque correspondance qui n''est pas une identité marquée
+    « à valider » (50 libellés). Contrôles propres à la présentation de 1968 dans
+    cnat_secteurs_base1983_controles_scn68.csv (total de chaque côté d''un compte,
+    équilibre emplois = ressources : 1 941 sur 2 040) ; contrôles pensés pour la séquence
+    du SCN 2008 dans cnat_secteurs_base1983_controles.csv (174 sur 600, ne s''appliquent
+    qu''en partie). Versé dans la base SQLite des comptes nationaux (famille secteurs_1983,
+    positions dans cnat_secteurs_base1983_positions.csv : 8 022 sur 8 314). Raccord
+    des codes et libellés dans sources/ins-comptes-nationaux/raccord-scn-1968-1993-2008.csv.'
+  caveats: 'BROUILLON. JAMAIS CHAÎNÉE AVEC LES BASES 1997 ET 2015 (question M10 en
+    attente). Les 50 correspondances « à valider » du SCN 1968 vers le SCN 2008 ne
+    sont pas tranchées : ne pas lire l''opération rattachée comme une identité. Le
+    TEE de la base 1983 n''est pas lu.'
+  fiche: sources/ins-comptes-nationaux-publications.md
+  licences:
+  - 'INS (sources ins-*) : conditions d''utilisation de l''INS, https://ins.tn/en/conditions-utilisation
+    (consultées le 2026-10-27) : réutilisation commerciale et non commerciale, redistribution
+    et transformation autorisées ; citer le producteur et la date de mise à jour,
+    ne pas suggérer une caution officielle ni tromper sur le contenu ; droit tunisien'
+- id: bct-ra-recettes-ordinaires
+  titre: Recettes ordinaires du budget de l'État par catégorie, d'après les rapports
+    annuels de la BCT, éditions 1961-1984 (exercices 1960-1984)
+  sources:
+  - bct-ra-1961
+  - bct-ra-1962
+  - bct-ra-1963
+  - bct-ra-1964
+  - bct-ra-1965
+  - bct-ra-1966
+  - bct-ra-1967
+  - bct-ra-1968
+  - bct-ra-1969
+  - bct-ra-1970
+  - bct-ra-1971
+  - bct-ra-1972
+  - bct-ra-1974
+  - bct-ra-1975
+  - bct-ra-1976
+  - bct-ra-1977
+  - bct-ra-1978
+  - bct-ra-1981
+  - bct-ra-1982
+  - bct-ra-1984
+  source_ligne: Banque centrale de Tunisie, Rapport annuel, chapitre des finances
+    publiques (tableau des recettes ordinaires par catégorie), éditions 1961 à 1984
+  source_ligne_ar: البنك المركزي التونسي، التقرير السنوي، فصل المالية العمومية (جدول
+    المداخيل الاعتيادية حسب الصنف)، طبعات 1961-1984
+  build: scripts/build_bct_ra_recettes_ordinaires.py:main
+  raw:
+  - sources/transcriptions/bct-ra-recettes-ordinaires.csv
+  - data/raw/bct-archives/109
+  output: data/processed/bct/bct_ra_recettes_ordinaires.csv
+  unite: millions de dinars courants (`valeur_mdt`) ; valeur et unité imprimées gardées
+    (milliers de dinars jusqu'à l'édition 1982, millions de dinars à une décimale
+    en 1984)
+  perimetre: 'tableau du rapport annuel de la BCT, pas un compte national. Recettes
+    du budget ordinaire (titre I) de l''État par catégorie, réalisations : impôts
+    directs, impôts indirects, autres droits et taxes, sous-total des recettes fiscales
+    (à partir de l''édition 1978), produits du domaine et des concessions (jusqu''à
+    1967) puis revenus du domaine et des services payants, produits des participations
+    financières (à partir de 1968), produits divers, sous-total des recettes non fiscales,
+    budgets annexes (PTT, RTT, Monopoles jusqu''à 1964 ; absents à partir de l''édition
+    1974), total. Une ligne par (édition, exercice, poste) : 20 éditions, deux ou
+    trois exercices chacune, avec page du fichier, titre, libellé et valeur tels que
+    la couche texte les donne ; `retenu` marque la valeur lisible de l''édition la
+    plus récente'
+  caveats: 'SÉRIE DE TABLEAUX, NON CHAÎNÉE : la valeur retenue d''un exercice vient
+    de la dernière édition qui l''imprime, et les postes retenus d''un même exercice
+    peuvent venir d''éditions différentes ; ils ne s''additionnent pas : toute somme
+    se fait dans une même édition. Ruptures de périmètre : exercice 1960 de neuf mois
+    ; Monopoles intégrés au budget général en 1965 (impôts indirects de 1964 : 46,014
+    MD dans l''édition 1964, 54,679 MD dans l''édition 1965) ; impôts directs de 1972
+    à 36,882 MD dans l''édition 1972, « déduction faite » de 5,755 MD versés par la
+    SITEP, 42,637 MD dans l''édition 1974 ; budgets annexes sortis du tableau à partir
+    de l''édition 1974 ; total de l''édition 1984 au dixième de million. Six cellules
+    illisibles dans la couche texte (`lecture` = « illisible ») et non relues à l''image
+    ; totaux absents de la couche en 1961 (exercice 1960), 1965, 1968, 1970, 1971
+    et 1981. Prévisions, variations et parts non transcrites. Éditions 1959, 1960,
+    1973, 1979, 1980, 1983 et 1985-2000 non versées (couche texte chiffrée ou tableau
+    non localisé). Voir sources/bct-rapports-annuels-tableaux.md.'
+  titre_ar: المداخيل الاعتيادية لميزانية الدولة حسب الصنف، حسب التقارير السنوية للبنك
+    المركزي التونسي، طبعات 1961-1984
+  unite_ar: بملايين الدنانير الجارية؛ مع القيمة والوحدة كما طُبعتا (آلاف الدنانير
+    حتى طبعة 1982، ملايين الدنانير في 1984)
+  perimetre_ar: 'جدول من التقرير السنوي للبنك المركزي وليس حسابًا قوميًا. مداخيل الميزانية
+    الاعتيادية (العنوان الأول) حسب الصنف، إنجازات: الأداءات المباشرة وغير المباشرة
+    والمعاليم الأخرى والمداخيل غير الجبائية والميزانيات الملحقة والمجموع؛ سطر لكل
+    طبعة وسنة مالية وباب'
+  caveats_ar: 'سلسلة جداول غير مسلسلة: القيمة المعتمدة لكل سنة من آخر طبعة تنشرها،
+    ولا تُجمع الأبواب المعتمدة من طبعات مختلفة. انقطاعات في المحيط: سنة 1960 من تسعة
+    أشهر، إدماج الاحتكارات في الميزانية العامة سنة 1965، خروج الميزانيات الملحقة من
+    الجدول ابتداءً من طبعة 1974. ست خانات غير مقروءة في طبقة النص.'
+  fiche: sources/bct-rapports-annuels-tableaux.md
+- id: bct-ra-recettes-ordinaires-controles
+  titre: 'Recettes ordinaires du budget de l''État (rapports annuels de la BCT, éditions
+    1961-1984) : contrôle des totaux imprimés contre la somme de leurs composantes'
+  sources:
+  - bct-ra-1961
+  - bct-ra-1962
+  - bct-ra-1963
+  - bct-ra-1964
+  - bct-ra-1965
+  - bct-ra-1966
+  - bct-ra-1967
+  - bct-ra-1968
+  - bct-ra-1969
+  - bct-ra-1970
+  - bct-ra-1971
+  - bct-ra-1972
+  - bct-ra-1974
+  - bct-ra-1975
+  - bct-ra-1976
+  - bct-ra-1977
+  - bct-ra-1978
+  - bct-ra-1981
+  - bct-ra-1982
+  - bct-ra-1984
+  build: scripts/build_bct_ra_recettes_ordinaires.py:main
+  raw:
+  - sources/transcriptions/bct-ra-recettes-ordinaires.csv
+  output: data/processed/bct/bct_ra_recettes_ordinaires_controles.csv
+  unite: millions de dinars courants
+  perimetre: 'tableau du rapport annuel de la BCT, pas un compte national. Une ligne
+    par (édition, exercice, total imprimé) : total général contre toutes les lignes
+    hors sous-totaux, total des recettes fiscales, total des recettes non fiscales,
+    total général contre la somme des deux sous-totaux ; valeur imprimée, somme des
+    composantes imprimées, écart, composantes illisibles, résultat (égal, écart d''arrondi,
+    écart, incomplet, total illisible)'
+  caveats: 'Ne corrige rien. 66 contrôles : 58 égaux, 2 écarts (édition 1964, exercice
+    1964 : total 84,272 MD contre 84,282 ; édition 1969, exercice 1968 : 119,967 contre
+    119,966), 5 incomplets (une composante illisible), 1 total illisible (édition
+    1963, exercice 1963). Les écarts n''ont pas été relus à l''image : ils peuvent
+    venir de l''impression ou de l''OCR de la Banque.'
+  titre_ar: 'المداخيل الاعتيادية لميزانية الدولة (التقارير السنوية للبنك المركزي،
+    طبعات 1961-1984): مراقبة المجاميع المطبوعة مقابل مجموع مكوّناتها'
+  unite_ar: بملايين الدنانير الجارية
+  perimetre_ar: 'سطر لكل طبعة وسنة ومجموع: القيمة المطبوعة ومجموع المكوّنات والفارق'
+  caveats_ar: 'لا تُصحَّح الأرقام: الفارق منشور كما هو.'
+  fiche: sources/bct-rapports-annuels-tableaux.md
+- id: bct-ra-bdp-1978-1996
+  titre: 'Balance des paiements avant le MBP5 : principaux soldes, principales recettes
+    et dépenses courantes, 1978-1996, d''après les rapports annuels de la BCT (éditions
+    1982-1996) et la publication 106 (éditions 1987-1996)'
+  sources:
+  - bct-ra-1982
+  - bct-ra-1984
+  - bct-ra-1985
+  - bct-ra-1986
+  - bct-ra-1988
+  - bct-ra-1989
+  - bct-ra-1990
+  - bct-ra-1992
+  - bct-ra-1994
+  - bct-ra-1995
+  - bct-ra-1996
+  - bct-balance-paiements
+  source_ligne: Banque centrale de Tunisie, Rapport annuel, chapitre « Les paiements
+    extérieurs », éditions 1982 à 1996 ; Balance des paiements de la Tunisie, « Aperçu
+    général », éditions 1987 à 1996
+  source_ligne_ar: البنك المركزي التونسي، التقرير السنوي، فصل «المدفوعات الخارجية»،
+    طبعات 1982-1996؛ ميزان المدفوعات لتونس، «لمحة عامة»، طبعات 1987-1996
+  build: scripts/build_bct_ra_bdp_1978_1996.py:main
+  raw:
+  - sources/transcriptions/bct-ra-bdp-1978-1996.csv
+  - data/raw/bct-archives/109
+  - data/raw/bct-archives/106
+  output: data/processed/bct/bct_ra_bdp_1978_1996.csv
+  unite: millions de dinars courants (entiers, tels qu'imprimés)
+  perimetre: 'tableau du rapport annuel de la BCT, pas un compte national. Présentation
+    antérieure au MBP5. Une ligne par (source, tableau, édition, année, poste) : principaux
+    soldes (paiements courants, marchandises FOB, services, revenus, transferts, mouvements
+    de capitaux et, selon l''édition, participations, prêts-emprunts à moyen et long
+    terme, dons, ajustements ou différence de change et opérations en cours, solde
+    général) ; principales recettes courantes (exportations FOB, transports, tourisme,
+    revenus du travail ou de facteurs, redevance-gaz, autres, total) et dépenses courantes
+    (importations FOB, transports, voyages, grands travaux, revenus du capital, autres,
+    total), éditions 1982-1992 ; recettes, dépenses et solde des opérations courantes,
+    éditions 1994-1995. `source` = ra (rapport annuel) ou pub106 (même tableau des
+    soldes de la publication 106). `retenu` = édition la plus récente, par source'
+  caveats: 'SÉRIE DE TABLEAUX, NON CHAÎNÉE ET SANS RACCORD AU MBP5 : la présentation
+    change (ajustements scindés en 1984-1987, « invisibles » dans la publication 106
+    de 1991, détail des capitaux à partir de 1993) ; les rubriques des recettes et
+    dépenses courantes changent de périmètre (« économies sur salaires » 1982, « revenus
+    du travail » 1984-1986, « revenus de facteurs » 1988-1992 ; redevance-gaz isolée
+    à partir de 1986). Valeurs relues à l''image : la couche texte perd les signes
+    ; `couche_texte` dit si le nombre s''y retrouve (54 valeurs sur 1 509 absentes
+    ou altérées). Rapports annuels 1983, 1987, 1991, 1993 non versés (couche chiffrée).
+    Révisions entre éditions et entre les deux publications gardées : voir bct-ra-bdp-1978-1996-raccord.
+    Ratios au PIB non transcrits. Voir sources/bct-balance-paiements.md.'
+  titre_ar: 'ميزان المدفوعات قبل الطبعة الخامسة: الأرصدة الرئيسية والمقابيض والمدفوعات
+    الجارية الرئيسية، 1978-1996، حسب التقارير السنوية للبنك المركزي ونشرية ميزان المدفوعات'
+  unite_ar: بملايين الدنانير الجارية
+  perimetre_ar: 'جداول من التقرير السنوي للبنك المركزي وليست حسابات قومية. عرض سابق
+    للطبعة الخامسة من دليل ميزان المدفوعات: الأرصدة الرئيسية والمقابيض والمدفوعات
+    الجارية؛ سطر لكل مصدر وجدول وطبعة وسنة وباب'
+  caveats_ar: سلسلة جداول غير مسلسلة ولا موصولة بالطبعة الخامسة؛ القيم مقروءة من صورة
+    الصفحة لأن طبقة النص تُسقط الإشارات. التنقيحات بين الطبعات وبين النشريتين محفوظة.
+  fiche: sources/bct-balance-paiements.md
+- id: bct-ra-bdp-1978-1996-controles
+  titre: 'Balance des paiements 1978-1996 (rapports annuels de la BCT et publication
+    106) : contrôle des soldes et totaux imprimés'
+  sources:
+  - bct-ra-1982
+  - bct-ra-1984
+  - bct-ra-1985
+  - bct-ra-1986
+  - bct-ra-1988
+  - bct-ra-1989
+  - bct-ra-1990
+  - bct-ra-1992
+  - bct-ra-1994
+  - bct-ra-1995
+  - bct-ra-1996
+  - bct-balance-paiements
+  build: scripts/build_bct_ra_bdp_1978_1996.py:main
+  raw:
+  - sources/transcriptions/bct-ra-bdp-1978-1996.csv
+  output: data/processed/bct/bct_ra_bdp_1978_1996_controles.csv
+  unite: millions de dinars courants
+  perimetre: 'tableau du rapport annuel de la BCT, pas un compte national. Une ligne
+    par (source, édition, tableau, année, contrôle) : paiements courants contre la
+    somme des soldes courants, solde général contre paiements courants + capitaux
+    + ajustements, totaux des recettes et dépenses courantes, solde des opérations
+    courantes, recettes − dépenses courantes contre paiements courants dans une même
+    édition'
+  caveats: 'Ne corrige rien. 344 contrôles : 329 égaux, 14 écarts d''arrondi (un million),
+    1 écart (rapport 1982, année 1980 : recettes 1 377 − dépenses 1 562 = −185 contre
+    des paiements courants de −180).'
+  titre_ar: 'ميزان المدفوعات 1978-1996: مراقبة الأرصدة والمجاميع المطبوعة'
+  unite_ar: بملايين الدنانير الجارية
+  perimetre_ar: سطر لكل مصدر وطبعة وجدول وسنة ومراقبة
+  caveats_ar: لا تُصحَّح الأرقام.
+  fiche: sources/bct-balance-paiements.md
+- id: bct-ra-bdp-1978-1996-raccord
+  titre: 'Balance des paiements 1978-1996 : raccord du rapport annuel de la BCT à
+    la publication 106 et à la série MBP5'
+  sources:
+  - bct-ra-1982
+  - bct-ra-1984
+  - bct-ra-1985
+  - bct-ra-1986
+  - bct-ra-1988
+  - bct-ra-1989
+  - bct-ra-1990
+  - bct-ra-1992
+  - bct-ra-1994
+  - bct-ra-1995
+  - bct-ra-1996
+  - bct-balance-paiements
+  build: scripts/build_bct_ra_bdp_1978_1996.py:main
+  raw:
+  - sources/transcriptions/bct-ra-bdp-1978-1996.csv
+  - data/processed/bct/bct_balance_paiements_mbp5.csv
+  output: data/processed/bct/bct_ra_bdp_1978_1996_raccord.csv
+  unite: millions de dinars courants
+  perimetre: 'tableau du rapport annuel de la BCT, pas un compte national. Rapport
+    annuel contre publication 106, tableau des soldes, poste par poste, même année
+    d''édition (`meme_edition`) et valeurs retenues (`retenu`) ; rapport annuel (retenu)
+    contre MBP5 (retenu), 1994-1996 : recettes et dépenses courantes, soldes recettes
+    − dépenses du MBP5 calculés pour les paiements courants, marchandises, services,
+    revenus de facteurs et transferts ; écart et résultat (égal, écart d''arrondi,
+    écart, référence absente)'
+  caveats: 'Ne corrige rien. Publication 106 : 284 valeurs égales sur 310 à édition
+    égale, 124 sur 133 entre valeurs retenues ; écart le plus fort en 1996 (paiements
+    courants −554 contre −510). MBP5 : présentation différente, l''écart mesure aussi
+    le changement de manuel (transferts : 32 à 48 MD ; paiements courants : 50 et
+    88 MD en 1995 et 1996) ; dépenses courantes de 1994 absentes de la série MBP5
+    versée (référence absente).'
+  titre_ar: 'ميزان المدفوعات 1978-1996: ربط التقرير السنوي بنشرية ميزان المدفوعات
+    وبسلسلة الطبعة الخامسة'
+  unite_ar: بملايين الدنانير الجارية
+  perimetre_ar: مقارنة بابًا بباب، مع الفارق، دون تصحيح
+  caveats_ar: لا تُصحَّح الأرقام؛ الفارق مع الطبعة الخامسة يقيس أيضًا تغيّر الدليل.
+  fiche: sources/bct-balance-paiements.md
+- id: jort-lois-reglement-1954-1985
+  titre: Exécution du budget de l'État arrêtée par les lois de règlement, gestions
+    1954-55 à 1985 (prévisions, recouvrements, crédits, paiements, soldes ; budgets
+    annexes, établissements publics, fonds spéciaux du Trésor)
+  sources: []
+  build: uv run python scripts/extraire_lois_reglement.py
+  raw:
+  - sources/transcriptions/lois-reglement-1954-1985.csv
+  - sources/jort-lois-reglement-urls.csv
+  output: data/processed/budget-etat/lois_reglement_1954_1985.csv
+  unite: dinars courants, millimes après la virgule, tels qu'imprimés (« D. ») ; colonne
+    valeur_md en millions de dinars. Gestions 1954-55 à 1957-58 imprimées en dinars
+    par les lois de 1966, sans taux de conversion imprimé
+  perimetre: 'exécution budgétaire, pas un compte national ; non raccordée aux séries
+    depuis 1986. Article unique des 33 lois de règlement (lois n° 66-2 à 66-11 et
+    66-14, 83-88 à 83-94, 84-31 à 84-35, 86-48 à 86-51, 86-68, 87-13, 88-28, 88-29,
+    88-138, 90-27), JORT, édition française, 10 fascicules de 1966 à 1990 : un montant
+    par ligne (bloc, entité, poste) avec le texte lu tel quel, la page et le mode
+    de lecture (ocr confirmé par les identités imprimées, ou image) ; contrôles arithmétiques
+    publiés à part (lois_reglement_1954_1985_controles.csv)'
+  caveats: 'EXÉCUTION BUDGÉTAIRE, PAS UN COMPTE NATIONAL ; NON RACCORDÉE AUX SÉRIES
+    DEPUIS 1986 (loi de règlement de 1986 et suivantes non lues). Présentation changeante,
+    jamais chaînée (colonne presentation) : budget unique d''exercice en 1954-55 et
+    1955-56 (droits et produits, droits acquis, exercices clos) ; budget général par
+    gestion de 1956-57 à 1961, qui mêle services ordinaires, extraordinaires et à
+    destination spéciale ; titre I seul pour 1962, 1963 et 1964, le titre II de ces
+    trois années étant réglé en un seul agrégat triennal (loi n° 83-88, gestion «
+    1962-64 », jamais réparti par année) ; titres I et II, établissements publics
+    et fonds spéciaux de 1965 à 1985, postes diplomatiques à partir de 1980. Gestion
+    1960 de neuf mois (imprimé) ; les bornes des gestions à cheval sur deux années
+    ne sont pas imprimées dans ces lois. Les recouvrements de 1956-57 à 1961 comprennent
+    des avances du Trésor pour l''équipement (poste dont_avance_tresor), ceux du titre
+    I de 1968 et suivantes parfois un prélèvement sur les ressources de trésorerie.
+    Signes des différences pas toujours imprimés : comparer en valeur absolue. Tableaux
+    annexés non transcrits (pour 1954-1964, « publiés ultérieurement »). Quatre écarts
+    d''impression laissés tels quels (fiche). Lecture : 825 montants à l''image, 923
+    par OCR confirmé par au moins une identité imprimée.'
+  titre_ar: تنفيذ ميزانية الدولة حسب قوانين ختم الميزانية، تصرّفات 1954-55 إلى 1985
+  unite_ar: بالدينار الجاري كما هو مطبوع؛ وبملايين الدنانير في عمود valeur_md
+  perimetre_ar: تنفيذ الميزانية وليس حسابًا قوميًا؛ غير مربوط بالسلاسل منذ 1986. الفصل
+    الوحيد من 33 قانون ختم ميزانية منشورة في 10 أعداد من الرائد الرسمي (الطبعة الفرنسية)
+    بين 1966 و1990
+  caveats_ar: تنفيذ الميزانية وليس حسابًا قوميًا؛ غير مربوط بالسلاسل منذ 1986. يتغيّر
+    العرض من قانون إلى آخر ولا تُربط السلاسل. العنوان الثاني لسنوات 1962-1964 مجمّع
+    في مبلغ واحد للثلاثية. تصرّف 1960 مدّته تسعة أشهر. أربع فروق طباعية تُركت كما
+    هي.
+  fiche: sources/jort-lois-reglement.md

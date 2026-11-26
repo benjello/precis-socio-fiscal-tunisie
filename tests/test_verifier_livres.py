@@ -59,7 +59,8 @@ class LivresTouchesTest(unittest.TestCase):
     def test_glossaire_source_touche_tous_les_livres(self):
         self.assertEqual(livres_touches(["precis/glossaire.yml"]), sorted(LIVRES))
 
-    def test_seriescache_touche_tous_les_livres(self):
+    def test_seriescache_lue_par_un_module_partage_touche_tous_les_livres(self):
+        # L'IPC est lu par scripts/dinars_constants.py, importé par plusieurs livres.
         self.assertEqual(
             livres_touches(["precis/_seriescache/bct-ipc-base2015.csv"]), sorted(LIVRES))
 

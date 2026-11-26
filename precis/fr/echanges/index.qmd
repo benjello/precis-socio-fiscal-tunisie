@@ -1,0 +1,178 @@
+# Présentation {#sec-echanges-presentation}
+
+Ce livre décrira les échanges extérieurs : les exportations et les importations par produit, la balance des paiements, et les régimes qui encadrent le commerce. Il occupe, dans la séquence des comptes, le compte du reste du monde.
+
+::: {.callout-note}
+Ce volume est une **ébauche** : une première série est versée, la rédaction reste à faire. Il n'existe pour l'instant qu'en français.
+:::
+
+## Trois familles de chiffres {#sec-echanges-familles}
+
+Les échanges se lisent dans trois familles de chiffres, aux périmètres différents, que la @fig-echanges-familles met côte à côte sans les fondre : les comptes nationaux de l'INS, biens et services ou biens seuls [@ins-cnat-2015] ; les statistiques douanières de l'INS, exportations FOB et importations CAF [@ins-annuaire] ; la balance des paiements de la Banque centrale, selon la sixième édition du manuel du FMI [@bct-ra-2024].
+
+```{python}
+#| label: fig-echanges-familles
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import echanges as ech
+import figtools
+figtools.figure_tabs(
+    ech.vues_echanges(), ech.table_echanges(), "echanges-rapprochement",
+    slug="fig_echanges_familles",
+    caption="Exportations et importations selon les comptes nationaux, la douane et la balance des paiements, 2005-2025 (millions de dinars courants)",
+    note_lecture=(
+        "Chaque courbe est une famille de chiffres, avec son périmètre. La balance des paiements compte "
+        "le travail à façon net, en service ; la douane et les comptes nationaux l'enregistrent en brut. "
+        "L'onglet « Données » donne l'écart de chaque chiffre aux comptes nationaux de même périmètre."))
+```
+
+En 2023, les exportations de biens sont de 62 077,3 millions de dinars selon la douane et de 62 793,6 selon les comptes nationaux ; les exportations de biens et services, de 79 417,9 dans les comptes nationaux et de 61 306,5 dans la balance des paiements, qui ne compte en biens que 28 081,6 [@ins-cnat-2015 ; @ins-annuaire ; @bct-ra-2024].
+
+## Le travail à façon : de la balance des paiements aux comptes nationaux {#sec-echanges-facon}
+
+Une large part des exportations tunisiennes vient d'entreprises qui transforment des intrants appartenant à des donneurs d'ordre étrangers. La balance des paiements, suivant la sixième édition du manuel du FMI, n'en retient que la rémunération, comptée en services (« services de fabrication fournis sur des intrants physiques détenus par des tiers ») ; les comptes nationaux de l'INS, comme la douane, enregistrent les biens transformés en brut. La Banque centrale publie, dans le texte de son rapport, le montant des exportations de produits ayant subi une transformation et celui des importations expédiées pour motif de fabrication : 35,1 et 20,7 milliards de dinars en 2023 [@bct-bdp-2023, p. 31], 34,7 et 19,9 milliards en 2024 [@bct-bdp-2024, p. 30], 31,5 milliards d'exportations en 2022, les importations n'y étant données que comme dépassant 20 milliards [@bct-bdp-2022, p. 31].
+
+Avec ces montants, le passage de la balance des paiements aux comptes du reste du monde se fait à quelques centaines de millions de dinars près :
+
+| Millions de dinars | 2022 | 2023 | 2024 |
+|---|--:|--:|--:|
+| **Exportations de biens (P.61)** | | | |
+| Biens, balance des paiements | 26 814,8 | 28 081,6 | 27 804,1 |
+| + produits ayant subi une transformation | 31 500 | 35 100 | 34 700 |
+| = passage | 58 314,8 | 63 181,6 | 62 504,1 |
+| Comptes nationaux | 58 630,4 | 62 824,1 | 62 382,2 |
+| Écart (comptes − passage) | 315,6 | −357,5 | −121,9 |
+| **Importations de biens (P.71)** | | | |
+| Biens, balance des paiements | 59 803,8 | 56 181,8 | 58 225,0 |
+| + importations pour motif de fabrication | | 20 700 | 19 900 |
+| = passage | | 76 881,8 | 78 125,0 |
+| Comptes nationaux | 81 258,9 | 77 435,9 | 79 306,4 |
+| Écart (comptes − passage) | | 554,1 | 1 181,4 |
+| **Exportations de services (P.62)** | | | |
+| Services, balance des paiements | 26 826,6 | 33 224,9 | 34 898,1 |
+| − services de fabrication | 11 456,5 | 14 427,8 | 14 783,6 |
+| − redevance gaz | 1 807,4 | 2 093,7 | 1 688,4 |
+| = passage | 13 562,7 | 16 703,4 | 18 426,1 |
+| Comptes nationaux | 12 940,9 | 16 593,8 | 17 492,2 |
+| Écart (comptes − passage) | −621,8 | −109,6 | −933,9 |
+
+: Passage de la balance des paiements aux exportations et importations du compte du reste du monde, 2022-2024 (millions de dinars courants ; balance des paiements : édition la plus récente qui publie l'année ; comptes nationaux : édition 2021-2025, 2024 semi-définitif) {#tbl-echanges-facon}
+
+Sources : balance des paiements, tableaux de la balance et texte du rapport [@bct-bdp-2022 ; @bct-bdp-2023 ; @bct-bdp-2024] ; comptes du reste du monde [@ins-cnat-2015].
+
+Les montants des produits transformés ne sont publiés qu'au dixième de milliard : un écart de quelques dizaines de millions est dans l'arrondi. Les écarts restants, de 0,1 à 1,2 milliard de dinars selon l'année et l'opération, ne sont pas expliqués. La redevance perçue sur le passage du gaz algérien est rangée par la balance des paiements en services de transport ; l'INS la reclasse « comme un revenu de propriété », en loyers (D.45), et cite ce reclassement parmi les causes d'écart entre ses comptes du reste du monde et la balance des paiements, avec le traitement de la sous-traitance internationale, le commerce extérieur informel, la révision du taux CAF/FAB et les exportations de services informatiques [@ins-cnat-2015, éd. 2015-2020, vol. A, p. 17]. Le D.45 versé par le reste du monde vaut 2 097,7 millions de dinars en 2023, pour une redevance de 2 093,7.
+
+## Transferts courants versés aux non-résidents {#sec-echanges-d7-versee}
+
+{{< include ../encadres-comptes/transferts-courants-verses-au-rdm.md >}}
+
+La balance des paiements range les transferts courants versés aux non-résidents en revenu secondaire, au débit. Elle les ventile par secteur résident : les administrations publiques n'y versent rien (0,0 ou 0,1 million de dinars selon l'année, de 2019 à 2024) ; le montant vient des sociétés financières et non financières, des ménages et des institutions sans but lucratif [@bct-bdp-2022 ; @bct-bdp-2023 ; @bct-bdp-2024]. Dans le compte du reste du monde, ces transferts sont les autres transferts courants (D.7) inscrits en ressources [@ins-cnat-2015].
+
+| Millions de dinars | 2019 | 2020 | 2021 | 2022 | 2023 | 2024 |
+|---|--:|--:|--:|--:|--:|--:|
+| Revenu secondaire, débits (balance des paiements) | 573,4 | 489,3 | 783,2 | 924,2 | 944,6 | 966,5 |
+| D.7 en ressources du reste du monde (comptes nationaux) | 625,0 | 556,3 | 644,2 | 891,5 | 1 058,8 | 1 706,6 |
+| Rapport (balance des paiements ÷ comptes) | 0,92 | 0,88 | 1,22 | 1,04 | 0,89 | 0,57 |
+
+: Transferts courants versés aux non-résidents, 2019-2024 (millions de dinars courants ; balance des paiements : édition la plus récente qui publie l'année ; comptes nationaux : édition la plus récente où l'année figure, 2024 semi-définitif) {#tbl-echanges-d7}
+
+Sources : balance des paiements [@bct-bdp-2022, p. 45 ; @bct-bdp-2023, p. 45 ; @bct-bdp-2024, p. 43 et 45] ; comptes du reste du monde [@ins-cnat-2015].
+
+## Transferts personnels reçus des non-résidents {#sec-echanges-d75-recue}
+
+{{< include ../encadres-comptes/transferts-personnels-recus-du-rdm.md >}}
+
+```{python}
+#| echo: false
+import sys; sys.path.insert(0, "../../../scripts")
+import passage_comptes as pc
+_tp = {l["annee"]: l for l in pc.lignes("transferts-personnels-recus-du-rdm")}
+_tpx = pc.extremes(_tp)
+_tpa = {k: _tpx[k] + ("" if _tp[int(_tpx[k])]["statut"] == "definitif" else ", année semi-définitive")
+        for k in ("an_min", "an_max")}
+```
+
+La balance des paiements range les transferts personnels reçus des non-résidents en revenu secondaire, au crédit [@bct-bdp-2022 ; @bct-bdp-2023 ; @bct-bdp-2024]. Le SCN 2008 définit les transferts courants entre ménages, résidents ou non résidents, et précise que, dans le contexte des transferts de fonds, ils sont « souvent appelés “transferts personnels” » [@sna2008, éd. française, § 8.133, p. 181] ; ils font partie des transferts courants divers (D.75) [@sna2008, éd. française, § 8.129, p. 180]. Le poste est donc inscrit en D.75, versé par le reste du monde et reçu par les ménages. De `{python} _tpx["premier"]` à `{python} _tpx["dernier"]`, il représente de `{python} _tpx["min"]` (`{python} _tpa["an_min"]`) à `{python} _tpx["max"]` (`{python} _tpa["an_max"]`) des transferts courants divers versés par le reste du monde dans les comptes [@ins-cnat-2015]. Ce D.75 comprend d'autres transferts que les transferts personnels ; la balance des paiements ne permet pas d'identifier cette autre partie.
+
+## Le reste du monde dans les comptes {#sec-echanges-comptes}
+
+Les postes ci-dessous rattachent la balance des paiements de la Banque centrale [@bct-bdp-2022 ; @bct-bdp-2023 ; @bct-bdp-2024] aux opérations du compte du reste du monde [@ins-cnat-2015], avec le passage du travail à façon établi plus haut pour les biens et les services.
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "../../../scripts")
+import passage_comptes as pc
+_P = [("exportations-biens", "Exportation de biens (P.61), produits transformés compris"),
+      ("importations-biens", "Importation de biens (P.71), importations pour fabrication comprises"),
+      ("exportations-services", "Exportation de services (P.62), hors fabrication et redevance gaz"),
+      ("importations-services", "Importation de services (P.72)"),
+      ("remunerations-recues-du-rdm", "Rémunération des salariés (D.1) reçue des non-résidents"),
+      ("remunerations-versees-au-rdm", "Rémunération des salariés (D.1) versée aux non-résidents")]
+_L = {p: {l["annee"]: l for l in pc.lignes(p)} for p, _ in _P}
+_ans = sorted(set().union(*_L.values()))
+_F = (("Balance des paiements", lambda l: pc.fr(l["montant"])), ("Comptes nationaux", lambda l: pc.fr(l["ins"])),
+      ("Balance / comptes", lambda l: pc.pct(l["part"])))
+_lignes = []
+for p, nom in _P:
+    _lignes.append(["**" + nom + "**"] + [""] * len(_ans))
+    for lib, f in _F:
+        _lignes.append([lib] + [f(_L[p][a]) if a in _L[p] else "" for a in _ans])
+print(pc.table(["Millions de dinars"] + [str(a) for a in _ans], _lignes))
+print("\n: Passage de la balance des paiements aux opérations du compte du reste du monde (S2), en millions de "
+      "dinars courants ; balance des paiements : édition retenue pour chaque année ; comptes nationaux : dernière "
+      "édition où l'année est définitive, sinon la dernière qui la publie {#tbl-echanges-passage}\n")
+```
+
+Sources : balance des paiements, tableaux de la balance et texte du rapport [@bct-bdp-2022 ; @bct-bdp-2023 ; @bct-bdp-2024] ; comptes du reste du monde [@ins-cnat-2015].
+
+<!-- TODO (documentaliste) : expliquer l'écart de la rémunération des salariés (D.1) reçue des
+     non-résidents entre la balance des paiements (crédits) et le compte du reste du monde, et l'écart
+     de 7 à 13 % des importations de services (P.72) ; chercher la note méthodologique de l'INS sur le
+     compte du reste du monde au-delà de la liste du vol. A, p. 17, de l'édition 2015-2020. -->
+
+### Exportations de biens {#sec-echanges-p61}
+
+{{< include ../encadres-comptes/exportations-biens.md >}}
+
+Le passage ajoute aux biens de la balance des paiements les exportations de produits ayant subi une transformation, dont la balance ne retient que la rémunération, en services de fabrication, et que les comptes nationaux enregistrent en brut, en biens (@sec-echanges-facon). Les montants de ces produits ne sont publiés qu'au dixième de milliard de dinars ; l'écart restant aux comptes (@tbl-echanges-passage) n'est pas expliqué.
+
+### Importations de biens {#sec-echanges-p71}
+
+{{< include ../encadres-comptes/importations-biens.md >}}
+
+Le passage ajoute aux biens de la balance des paiements les importations pour motif de fabrication (@sec-echanges-facon). Pour 2022, le rapport de la Banque centrale les donne seulement comme supérieures à 20 milliards de dinars [@bct-bdp-2022, p. 31] : le passage commence en 2023. L'écart restant aux comptes (@tbl-echanges-passage) n'est pas expliqué.
+
+### Exportations de services {#sec-echanges-p62}
+
+{{< include ../encadres-comptes/exportations-services.md >}}
+
+Le passage retire des services de la balance des paiements deux montants que les comptes nationaux rangent ailleurs : les services de fabrication, comptés en biens (@sec-echanges-facon), et la redevance gaz, que l'INS reclasse comme revenu de la propriété, en loyers (D.45) [@ins-cnat-2015, éd. 2015-2020, vol. A, p. 17]. L'écart restant aux comptes (@tbl-echanges-passage) n'est pas expliqué.
+
+### Importations de services {#sec-echanges-p72}
+
+{{< include ../encadres-comptes/importations-services.md >}}
+
+Les importations de services sont les services de la balance des paiements, au débit, sans passage. L'écart aux comptes (@tbl-echanges-passage) n'est pas expliqué.
+
+### Rémunération reçue des non-résidents {#sec-echanges-d1-recue}
+
+{{< include ../encadres-comptes/remunerations-recues-du-rdm.md >}}
+
+La rémunération reçue est celle de la balance des paiements, au crédit, sans passage. Elle est plusieurs fois supérieure à celle des comptes (@tbl-echanges-passage) ; l'écart n'est pas expliqué.
+
+### Rémunération versée aux non-résidents {#sec-echanges-d1-versee}
+
+{{< include ../encadres-comptes/remunerations-versees-au-rdm.md >}}
+
+La rémunération versée est celle de la balance des paiements, au débit, sans passage. L'écart aux comptes (@tbl-echanges-passage) n'est pas expliqué.
+
+### La redevance du gazoduc {#sec-echanges-redevance-gaz}
+
+{{< include ../encadres-comptes/redevance-gazoduc.md >}}
+
+La redevance perçue par l'État sur le gaz algérien qui traverse le territoire figure dans les recettes non fiscales du ministère des Finances, rubrique « Redevance Gazoduc » [@minfin-recettes-non-fiscales-xls]. Dans les comptes de la nation, elle est égale aux loyers (D.45) reçus par l'administration centrale sept années sur neuf de 2015 à 2023 ; les écarts sont de 19,3 millions de dinars en 2018 et de −256,7 millions en 2022 [@ins-cnat-2015]. La balance des paiements la range en services de transport ; l'INS la reclasse en revenu de la propriété [@ins-cnat-2015, éd. 2015-2020, vol. A, p. 17].
+
+<!-- TODO (rédacteur) : échanges par produit (cnat-produits) ; écart de 2005 entre la douane et
+     les biens des comptes nationaux, à expliquer ; régimes (offshore), par renvoi à la fiscalité. -->

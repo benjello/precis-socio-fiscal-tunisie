@@ -5,7 +5,7 @@
 - **Aucune valeur isolée, aucune date, aucune URL sans source vérifiée.** Une case vide honnête vaut
   mieux qu'une valeur plausible. Exception éditoriale : une **série historique importante déjà
   portée par openfisca-tunisia** peut rester visible provisoirement pour que son évolution ne
-  disparaisse pas du précis. Elle est alors présentée dans son ensemble, jamais comme un état du
+  disparaisse pas de l'ouvrage. Elle est alors présentée dans son ensemble, jamais comme un état du
   droit établi, sans mention du modèle dans le rendu ; un `<!-- TODO (documentaliste) : … -->`
   adjacent renvoie à une issue ouverte sur `openfisca-tunisia` qui énumère les valeurs et dates à
   sourcer, et le constat figure aussi dans `docs/notes/backlog-modele.md`. URL du JORT sur `pist.tn`

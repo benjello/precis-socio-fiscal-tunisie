@@ -52,6 +52,15 @@ for arg in "$@"; do
 done
 
 ECHECS=0
+avertir() {
+  # avertir <intitulé> -- <commande...> : consigne et affiche la dernière ligne, sans compter d'échec
+  local intitule="$1"; shift
+  { echo "══════ $intitule ══════"; echo "+ $*"; } >>"$LOG"
+  local sortie
+  sortie=$("$@" 2>&1); echo "$sortie" >>"$LOG"
+  printf 'AVERT   %s : %s\n' "$intitule" "$(printf '%s\n' "$sortie" | tail -1)"
+}
+
 etape() {
   # etape <intitulé> -- <commande...>
   local intitule="$1"; shift
@@ -101,6 +110,15 @@ etape "Les références de loi ont leur ligne de registre" uv run python scripts
 etape "Les manifestes de relevés sont lisibles et cohérents" uv run python scripts/check_manifestes.py
 etape "Les copies locales annoncées sont dans les manifestes de tunisia-data" uv run python scripts/check_copies_locales.py
 etape "Les sous-agents Claude Code sont à jour" uv run python scripts/sync_agents.py --verifier
+etape "Le compte reconstruit des administrations publiques est cohérent" uv run python scripts/reconstruire_comptes.py --verifier
+etape "L'étendue des postes et leur couverture par année sont à jour" uv run python scripts/etendue_postes.py --verifier
+etape "Les résidus du compte reconstruit sont à jour" uv run python scripts/expliquer_residus.py --verifier
+etape "Les comptes des secteurs reconstruits sont à jour" uv run python scripts/reconstruire_secteurs.py --verifier
+etape "Le TEE par secteur est à jour" uv run python scripts/comptes_tee.py --verifier
+etape "Le sommaire par les comptes est à jour" uv run python scripts/sommaire_comptes.py --verifier
+avertir "Vocabulaire de comptabilité nationale (avertissement)" uv run python scripts/check_vocabulaire_comptes.py --detail
+etape "Les liens entre volumes mènent à une page et une ancre (fr)" uv run python scripts/verifier_liens_entre_volumes.py --langue fr
+etape "Les liens entre volumes mènent à une page et une ancre (ar)" uv run python scripts/verifier_liens_entre_volumes.py --langue ar
 
 # ── 5. Liens de la base législative (réseau) ───────────────────────────────────
 if $SANS_RESEAU; then
@@ -148,17 +166,23 @@ compter_pages() {
 }
 
 # ── 7. Livres à rendre ──────────────────────────────────────────────────────────
-FICHIERS_DIFF=""
+# Les chemins modifiés servent aussi aux pages générales (§ 9) et au nettoyage (§ 10) : on les
+# relève même quand les livres sont nommés en argument.
+FICHIERS_DIFF="$( { git diff --name-only "origin/master...HEAD" 2>/dev/null; \
+                     git diff --name-only HEAD 2>/dev/null; \
+                     git diff --name-only --cached 2>/dev/null; \
+                     git ls-files -o --exclude-standard 2>/dev/null; } | sort -u)"
 if [ "${#LIVRES_ARG[@]}" -gt 0 ]; then
   LIVRES=("${LIVRES_ARG[@]}")
   COMPLET=true
 else
-  FICHIERS_DIFF="$( { git diff --name-only "origin/master...HEAD" 2>/dev/null; \
-                       git diff --name-only HEAD 2>/dev/null; \
-                       git diff --name-only --cached 2>/dev/null; \
-                       git ls-files -o --exclude-standard 2>/dev/null; } | sort -u)"
   mapfile -t LIVRES < <(printf '%s\n' "$FICHIERS_DIFF" | uv run python scripts/verifier_livres.py livres-touches)
 fi
+
+# Relevé des figdata AVANT tout rendu : le nettoyage final (§ 9) ne touche qu'à ce que le rendu a
+# changé dans un fichier jusque-là propre.
+mapfile -t FIGDATA_MODIFIES_AVANT < <(git diff --name-only -- 'precis/*/*/figdata/*')
+mapfile -t FIGDATA_NON_SUIVIS_AVANT < <(git ls-files -o --exclude-standard -- 'precis/*/*/figdata/*')
 
 if [ "${#LIVRES[@]}" -eq 0 ]; then
   printf 'OK      Rendu HTML : rien à rendre (aucun livre touché)\n'
@@ -263,6 +287,57 @@ PY
   if [ "$RESTAURES" -gt 0 ]; then
     printf 'OK      Figdata restaurées (%d fichier(s) dont seule la date avait changé)\n' "$RESTAURES"
   fi
+fi
+
+# ── 9. Pages générales touchées (accueil, principes, annexes…) ─────────────────
+mapfile -t PAGES_TOUCHEES < <(printf '%s\n' "$FICHIERS_DIFF" | uv run python scripts/verifier_livres.py pages-touchees)
+if [ "${#PAGES_TOUCHEES[@]}" -gt 0 ]; then
+  echo "══════ Rendu des pages générales (${PAGES_TOUCHEES[*]}) ══════" >>"$LOG"
+  PC=0; PA=0; PR=0; PAGES_OK=true
+  for lp in "${PAGES_TOUCHEES[@]}"; do
+    langue="${lp%%/*}"; page="${lp#*/}"
+    if ! (cd "$ROOT_DIR/precis/$langue" && uv run quarto render "$page.qmd" --to html) >>"$LOG" 2>&1; then
+      printf 'ÉCHEC   Rendu de la page %s (voir %s)\n' "$lp" "$LOG"; ECHECS=$((ECHECS + 1)); PAGES_OK=false; continue
+    fi
+    html="$ROOT_DIR/precis/$langue/$page.html"
+    nc=$(uv run python scripts/verifier_livres.py citations < "$html")
+    na=$(uv run python scripts/verifier_livres.py arobases < "$html")
+    nr=$(uv run python scripts/verifier_livres.py renvois < "$html")
+    PC=$((PC + nc)); PA=$((PA + na)); PR=$((PR + nr))
+    [ $((nc + na + nr)) -gt 0 ] && echo "   $html : $nc citation(s), $na « ?@ », $nr renvoi(s)" >>"$LOG"
+  done
+  if $PAGES_OK && [ $((PC + PA + PR)) -eq 0 ]; then
+    printf 'OK      Rendu des pages générales (%s) : 0 citation non résolue, 0 « ?@ », 0 renvoi cassé\n' "${PAGES_TOUCHEES[*]}"
+  elif $PAGES_OK; then
+    printf 'ÉCHEC   Rendu des pages générales (%s) : %d citation(s), %d « ?@ », %d renvoi(s) (voir %s)\n' \
+      "${PAGES_TOUCHEES[*]}" "$PC" "$PA" "$PR" "$LOG"
+    ECHECS=$((ECHECS + 1))
+  fi
+fi
+
+# ── 10. Nettoyer ce que le rendu a réécrit hors du sujet vérifié ─────────────────
+# Seuls les figdata PROPRES avant le rendu, dans un livre dont aucune source n'a changé, sont
+# restaurés (modifiés) ou supprimés (créés) : ils n'ont été rendus qu'à cause d'un fichier partagé.
+# La liste est écrite au journal ; rien d'autre n'est touché.
+mapfile -t FIGDATA_MODIFIES_APRES < <(git diff --name-only -- 'precis/*/*/figdata/*')
+mapfile -t FIGDATA_NON_SUIVIS_APRES < <(git ls-files -o --exclude-standard -- 'precis/*/*/figdata/*')
+NETTOYAGE=$(uv run python - "$FICHIERS_DIFF" \
+  "$(printf '%s\n' "${FIGDATA_MODIFIES_AVANT[@]}")" "$(printf '%s\n' "${FIGDATA_MODIFIES_APRES[@]}")" \
+  "$(printf '%s\n' "${FIGDATA_NON_SUIVIS_AVANT[@]}")" "$(printf '%s\n' "${FIGDATA_NON_SUIVIS_APRES[@]}")" <<'PY' | uv run python scripts/verifier_livres.py nettoyage
+import json, sys
+l = lambda s: [x for x in s.splitlines() if x.strip()]
+print(json.dumps({"fichiers_diff": l(sys.argv[1]), "avant_modifies": l(sys.argv[2]),
+                  "apres_modifies": l(sys.argv[3]), "avant_non_suivis": l(sys.argv[4]),
+                  "apres_non_suivis": l(sys.argv[5])}))
+PY
+)
+mapfile -t A_RESTAURER_RENDU < <(printf '%s' "$NETTOYAGE" | uv run python -c 'import json,sys; print("\n".join(json.load(sys.stdin)["restaurer"]))')
+mapfile -t A_SUPPRIMER_RENDU < <(printf '%s' "$NETTOYAGE" | uv run python -c 'import json,sys; print("\n".join(json.load(sys.stdin)["supprimer"]))')
+N_R=0; N_S=0
+for f in "${A_RESTAURER_RENDU[@]}"; do [ -n "$f" ] && git checkout -- "$f" && echo "   restauré : $f" >>"$LOG" && N_R=$((N_R + 1)); done
+for f in "${A_SUPPRIMER_RENDU[@]}"; do [ -n "$f" ] && [ -f "$f" ] && rm -- "$f" && echo "   supprimé : $f" >>"$LOG" && N_S=$((N_S + 1)); done
+if [ $((N_R + N_S)) -gt 0 ]; then
+  printf 'OK      Rendu nettoyé : %d figdata restauré(s), %d figdata créé(s) supprimé(s), hors des livres modifiés (liste au journal)\n' "$N_R" "$N_S"
 fi
 
 echo "" >>"$LOG"

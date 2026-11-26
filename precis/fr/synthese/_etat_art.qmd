@@ -1,0 +1,11 @@
+# L'état de l'art, volume par volume {#sec-synthese-etat-art}
+
+L'état des connaissances économiques sur chaque dispositif est exposé dans son volume, à la fin du chapitre, sous le titre « Ce qu'en dit l'économie ». Ce chapitre n'en donne que l'index ; la liste est relue dans les volumes à chaque rendu.
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, ".")
+from figures import etat_art
+print(etat_art.tableau())
+```

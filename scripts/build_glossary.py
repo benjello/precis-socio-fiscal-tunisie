@@ -54,7 +54,15 @@ BOOKS = [
     "informel",
     "transport",
     "environnement",
+    "energie",
+    "industrie",
+    "logement",
+    "cadre",
     "agriculture",
+    "synthese",
+    "consommation",
+    "investissement",
+    "echanges",
 ]
 
 LANGS = ("fr", "ar")
@@ -67,7 +75,7 @@ INTRO = {
     "fr": (
         "Glossaire bilingue des notions fondamentales. Chaque terme renvoie à "
         "son équivalent arabe (navigation FR ⇄ AR) afin de garantir la "
-        "cohérence terminologique entre les deux versions du précis."
+        "cohérence terminologique entre les deux versions de l'ouvrage."
     ),
     "ar": (
         "معجم ثنائي اللغة للمفاهيم الأساسية. يحيل كلّ مصطلح إلى مقابله الفرنسي "

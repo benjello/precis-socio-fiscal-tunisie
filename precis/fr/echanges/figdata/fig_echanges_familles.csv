@@ -1,0 +1,137 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-11-24
+# séries (tunisia_data) : echanges-rapprochement
+# sources (citation) : @ins-cnat-2015, @ins-annuaire, @bct-ra-2024
+# fiches : 
+# méthode/hypothèses : ÉCARTS DE PÉRIMÈTRE DÉCLARÉS, NON CORRIGÉS. (a) Douane et biens des comptes nationaux : à ±0,3 % en base 1997 (2006-2014) ; en base 2015, importations des comptes 1,8 à 3,5 % au-dessus de la douane (lignes de produits avant la correction CAF/FAB, portée en une ligne globale), exportations 0,2 à 1,8 % au-dessus ; 2005 (édition 2005-2009) : +11 % et +7 %, à expliquer. (b) Balance des paiements et comptes nationaux : environ −22 % en 2023-2024 sur biens et services ; le MBP6 compte le travail à façon NET, en service (« services de fabrication… », 14 428 MD de crédits en 2023), là où la douane et les comptes nationaux enregistrent les biens transformés en brut ; les biens de la balance des paiements (28 082 MD d'exportations en 2023) ne se comparent donc pas aux exportations douanières (62 077 MD). Un seul rapport annuel de la BCT est lu : 2020-2024 pour la douane, 2023-2024 pour la balance des paiements. Le fichier data/processed/bct/balance_commerciale.csv, sans script ni fiche et aux lignes mensuelles décalées, n'est pas utilisé.
+# note : Exportations et importations selon les comptes nationaux, la douane et la balance des paiements, 2005-2025 (millions de dinars courants)
+Année,Flux,Source,Périmètre,Valeur (MD),Écart aux comptes nationaux (%),Note
+2005,exportations,"INS, comptes nationaux, éd. 2005-2009 (base 1997)",biens et services,17122.4,,
+2005,exportations,"INS, comptes nationaux, éd. 2005-2009 (base 1997)",biens,12426.2,,"somme des lignes de biens, hors corrections"
+2005,exportations,"INS, Annuaire statistique, éd. 2003-2007, tableau 14.2","biens, douane (FOB / CAF)",13793.6,11.0,"référence : biens des comptes nationaux, lignes de produits"
+2005,importations,"INS, comptes nationaux, éd. 2005-2009 (base 1997)",biens et services,17363.8,,
+2005,importations,"INS, comptes nationaux, éd. 2005-2009 (base 1997)",biens,16185.5,,"somme des lignes de biens, hors corrections ; importations après correction CAF/FAB de -1035.1"
+2005,importations,"INS, Annuaire statistique, éd. 2003-2007, tableau 14.2","biens, douane (FOB / CAF)",17291.5,6.8,"référence : biens des comptes nationaux, lignes de produits (avant la correction CAF/FAB, portée en une ligne globale)"
+2006,exportations,"INS, comptes nationaux, éd. 2006-2010 (base 1997)",biens et services,21060.9,,
+2006,exportations,"INS, comptes nationaux, éd. 2006-2010 (base 1997)",biens,15577.3,,"somme des lignes de biens, hors corrections"
+2006,exportations,"INS, Annuaire statistique, éd. 2004-2008, tableau 14.2","biens, douane (FOB / CAF)",15558.0,-0.1,"référence : biens des comptes nationaux, lignes de produits"
+2006,importations,"INS, comptes nationaux, éd. 2006-2010 (base 1997)",biens et services,21922.9,,
+2006,importations,"INS, comptes nationaux, éd. 2006-2010 (base 1997)",biens,20242.9,,"somme des lignes de biens, hors corrections ; importations après correction CAF/FAB de -1187.0"
+2006,importations,"INS, Annuaire statistique, éd. 2004-2008, tableau 14.2","biens, douane (FOB / CAF)",20003.5,-1.2,"référence : biens des comptes nationaux, lignes de produits (avant la correction CAF/FAB, portée en une ligne globale)"
+2007,exportations,"INS, comptes nationaux, éd. 2007-2011 (base 1997)",biens et services,25469.9,,
+2007,exportations,"INS, comptes nationaux, éd. 2007-2011 (base 1997)",biens,19442.7,,"somme des lignes de biens, hors corrections"
+2007,exportations,"INS, Annuaire statistique, éd. 2005-2009, tableau 14.2","biens, douane (FOB / CAF)",19409.6,-0.2,"référence : biens des comptes nationaux, lignes de produits"
+2007,importations,"INS, comptes nationaux, éd. 2007-2011 (base 1997)",biens et services,26418.8,,
+2007,importations,"INS, comptes nationaux, éd. 2007-2011 (base 1997)",biens,24435.4,,"somme des lignes de biens, hors corrections ; importations après correction CAF/FAB de -1246.8"
+2007,importations,"INS, Annuaire statistique, éd. 2005-2009, tableau 14.2","biens, douane (FOB / CAF)",24437.3,0.0,"référence : biens des comptes nationaux, lignes de produits (avant la correction CAF/FAB, portée en une ligne globale)"
+2008,exportations,"INS, comptes nationaux, éd. 2008-2012 (base 1997)",biens et services,30761.1,,
+2008,exportations,"INS, comptes nationaux, éd. 2008-2012 (base 1997)",biens,23675.3,,"somme des lignes de biens, hors corrections"
+2008,exportations,"INS, Annuaire statistique, éd. 2006-2010, tableau 14.2","biens, douane (FOB / CAF)",23637.0,-0.2,"référence : biens des comptes nationaux, lignes de produits"
+2008,importations,"INS, comptes nationaux, éd. 2008-2012 (base 1997)",biens et services,32440.3,,
+2008,importations,"INS, comptes nationaux, éd. 2008-2012 (base 1997)",biens,30241.3,,"somme des lignes de biens, hors corrections ; importations après correction CAF/FAB de -1574.8"
+2008,importations,"INS, Annuaire statistique, éd. 2006-2010, tableau 14.2","biens, douane (FOB / CAF)",30241.2,-0.0,"référence : biens des comptes nationaux, lignes de produits (avant la correction CAF/FAB, portée en une ligne globale)"
+2009,exportations,"INS, comptes nationaux, éd. 2009-2013 (base 1997)",biens et services,26428.1,,
+2009,exportations,"INS, comptes nationaux, éd. 2009-2013 (base 1997)",biens,19528.6,,"somme des lignes de biens, hors corrections"
+2009,exportations,"INS, Annuaire statistique, éd. 2007-2011, tableau 14.2","biens, douane (FOB / CAF)",19469.2,-0.3,"référence : biens des comptes nationaux, lignes de produits"
+2009,importations,"INS, comptes nationaux, éd. 2009-2013 (base 1997)",biens et services,28151.6,,
+2009,importations,"INS, comptes nationaux, éd. 2009-2013 (base 1997)",biens,25877.7,,"somme des lignes de biens, hors corrections ; importations après correction CAF/FAB de -1287.3"
+2009,importations,"INS, Annuaire statistique, éd. 2007-2011, tableau 14.2","biens, douane (FOB / CAF)",25877.6,-0.0,"référence : biens des comptes nationaux, lignes de produits (avant la correction CAF/FAB, portée en une ligne globale)"
+2010,exportations,"INS, comptes nationaux, éd. 2010-2014 (base 1997)",biens et services,31210.3,,
+2010,exportations,"INS, comptes nationaux, éd. 2010-2014 (base 1997)",biens,23586.0,,"somme des lignes de biens, hors corrections"
+2010,exportations,"INS, Annuaire statistique, éd. 2008-2012, tableau 14.2","biens, douane (FOB / CAF)",23519.0,-0.3,"référence : biens des comptes nationaux, lignes de produits"
+2010,importations,"INS, comptes nationaux, éd. 2010-2014 (base 1997)",biens et services,34460.4,,
+2010,importations,"INS, comptes nationaux, éd. 2010-2014 (base 1997)",biens,31816.7,,"somme des lignes de biens, hors corrections ; importations après correction CAF/FAB de -1598.7"
+2010,importations,"INS, Annuaire statistique, éd. 2008-2012, tableau 14.2","biens, douane (FOB / CAF)",31816.7,0.0,"référence : biens des comptes nationaux, lignes de produits (avant la correction CAF/FAB, portée en une ligne globale)"
+2011,exportations,"INS, comptes nationaux, éd. 2011-2015 (base 1997)",biens et services,31299.2,,
+2011,exportations,"INS, comptes nationaux, éd. 2011-2015 (base 1997)",biens,25171.3,,"somme des lignes de biens, hors corrections"
+2011,exportations,"INS, Annuaire statistique, éd. 2008-2012, tableau 14.2","biens, douane (FOB / CAF)",25091.9,-0.3,"référence : biens des comptes nationaux, lignes de produits"
+2011,importations,"INS, comptes nationaux, éd. 2011-2015 (base 1997)",biens et services,36113.9,,
+2011,importations,"INS, comptes nationaux, éd. 2011-2015 (base 1997)",biens,33652.5,,"somme des lignes de biens, hors corrections ; importations après correction CAF/FAB de -1672.7"
+2011,importations,"INS, Annuaire statistique, éd. 2008-2012, tableau 14.2","biens, douane (FOB / CAF)",33695.4,0.1,"référence : biens des comptes nationaux, lignes de produits (avant la correction CAF/FAB, portée en une ligne globale)"
+2012,exportations,"INS, comptes nationaux, éd. 2012-2016 (base 1997)",biens et services,34154.4,,
+2012,exportations,"INS, comptes nationaux, éd. 2012-2016 (base 1997)",biens,26633.3,,"somme des lignes de biens, hors corrections"
+2012,exportations,"INS, Annuaire statistique, éd. 2010-2014, tableau 14.2","biens, douane (FOB / CAF)",26547.7,-0.3,"référence : biens des comptes nationaux, lignes de produits"
+2012,importations,"INS, comptes nationaux, éd. 2012-2016 (base 1997)",biens et services,40794.9,,
+2012,importations,"INS, comptes nationaux, éd. 2012-2016 (base 1997)",biens,38178.0,,"somme des lignes de biens, hors corrections ; importations après correction CAF/FAB de -1930.9"
+2012,importations,"INS, Annuaire statistique, éd. 2010-2014, tableau 14.2","biens, douane (FOB / CAF)",38178.0,0.0,"référence : biens des comptes nationaux, lignes de produits (avant la correction CAF/FAB, portée en une ligne globale)"
+2013,exportations,"INS, comptes nationaux, éd. 2013-2017 (base 1997)",biens et services,35292.6,,
+2013,exportations,"INS, comptes nationaux, éd. 2013-2017 (base 1997)",biens,27771.3,,"somme des lignes de biens, hors corrections"
+2013,exportations,"INS, Annuaire statistique, éd. 2011-2015, tableau 14.2","biens, douane (FOB / CAF)",27701.2,-0.3,"référence : biens des comptes nationaux, lignes de produits"
+2013,importations,"INS, comptes nationaux, éd. 2013-2017 (base 1997)",biens et services,42443.9,,
+2013,importations,"INS, comptes nationaux, éd. 2013-2017 (base 1997)",biens,39449.7,,"somme des lignes de biens, hors corrections ; importations après correction CAF/FAB de -1955.7"
+2013,importations,"INS, Annuaire statistique, éd. 2011-2015, tableau 14.2","biens, douane (FOB / CAF)",39505.5,0.1,"référence : biens des comptes nationaux, lignes de produits (avant la correction CAF/FAB, portée en une ligne globale)"
+2014,exportations,"INS, comptes nationaux, éd. 2013-2017 (base 1997)",biens et services,36328.2,,
+2014,exportations,"INS, comptes nationaux, éd. 2013-2017 (base 1997)",biens,28458.2,,"somme des lignes de biens, hors corrections"
+2014,exportations,"INS, Annuaire statistique, éd. 2012-2016, tableau 14.2","biens, douane (FOB / CAF)",28406.7,-0.2,"référence : biens des comptes nationaux, lignes de produits"
+2014,importations,"INS, comptes nationaux, éd. 2013-2017 (base 1997)",biens et services,45205.3,,
+2014,importations,"INS, comptes nationaux, éd. 2013-2017 (base 1997)",biens,41986.1,,"somme des lignes de biens, hors corrections ; importations après correction CAF/FAB de -1904.4"
+2014,importations,"INS, Annuaire statistique, éd. 2012-2016, tableau 14.2","biens, douane (FOB / CAF)",42012.8,0.1,"référence : biens des comptes nationaux, lignes de produits (avant la correction CAF/FAB, portée en une ligne globale)"
+2015,exportations,"INS, comptes nationaux, éd. 2015-2020 (base 2015)",biens et services,34483.9,,
+2015,exportations,"INS, comptes nationaux, éd. 2015-2020 (base 2015)",biens,27674.4,,"somme des lignes de biens, hors corrections"
+2015,exportations,"INS, Annuaire statistique, éd. 2013-2017, tableau 14.2","biens, douane (FOB / CAF)",27607.2,-0.2,"référence : biens des comptes nationaux, lignes de produits"
+2015,importations,"INS, comptes nationaux, éd. 2015-2020 (base 2015)",biens et services,43867.2,,
+2015,importations,"INS, comptes nationaux, éd. 2015-2020 (base 2015)",biens,40807.8,,"somme des lignes de biens, hors corrections ; importations après correction CAF/FAB de -2184.1"
+2015,importations,"INS, Annuaire statistique, éd. 2013-2017, tableau 14.2","biens, douane (FOB / CAF)",39609.7,-2.9,"référence : biens des comptes nationaux, lignes de produits (avant la correction CAF/FAB, portée en une ligne globale)"
+2016,exportations,"INS, comptes nationaux, éd. 2015-2020 (base 2015)",biens et services,36490.4,,
+2016,exportations,"INS, comptes nationaux, éd. 2015-2020 (base 2015)",biens,29339.1,,"somme des lignes de biens, hors corrections"
+2016,exportations,"INS, Annuaire statistique, éd. 2014-2018, tableau 14.2","biens, douane (FOB / CAF)",29145.6,-0.7,"référence : biens des comptes nationaux, lignes de produits"
+2016,importations,"INS, comptes nationaux, éd. 2015-2020 (base 2015)",biens et services,46497.5,,
+2016,importations,"INS, comptes nationaux, éd. 2015-2020 (base 2015)",biens,43259.7,,"somme des lignes de biens, hors corrections ; importations après correction CAF/FAB de -2352.5"
+2016,importations,"INS, Annuaire statistique, éd. 2014-2018, tableau 14.2","biens, douane (FOB / CAF)",41746.8,-3.5,"référence : biens des comptes nationaux, lignes de produits (avant la correction CAF/FAB, portée en une ligne globale)"
+2017,exportations,"INS, comptes nationaux, éd. 2017-2021 (base 2015)",biens et services,42560.0,,
+2017,exportations,"INS, comptes nationaux, éd. 2017-2021 (base 2015)",biens,34493.6,,"somme des lignes de biens, hors corrections"
+2017,exportations,"INS, Annuaire statistique, éd. 2015-2019, tableau 14.2","biens, douane (FOB / CAF)",34426.6,-0.2,"référence : biens des comptes nationaux, lignes de produits"
+2017,importations,"INS, comptes nationaux, éd. 2017-2021 (base 2015)",biens et services,55176.4,,
+2017,importations,"INS, comptes nationaux, éd. 2017-2021 (base 2015)",biens,51416.7,,"somme des lignes de biens, hors corrections ; importations après correction CAF/FAB de -2666.6"
+2017,importations,"INS, Annuaire statistique, éd. 2015-2019, tableau 14.2","biens, douane (FOB / CAF)",50021.6,-2.7,"référence : biens des comptes nationaux, lignes de produits (avant la correction CAF/FAB, portée en une ligne globale)"
+2018,exportations,"INS, comptes nationaux, éd. 2018-2022 (base 2015)",biens et services,51392.3,,
+2018,exportations,"INS, comptes nationaux, éd. 2018-2022 (base 2015)",biens,41070.8,,"somme des lignes de biens, hors corrections"
+2018,exportations,"INS, Annuaire statistique, éd. 2016-2020, tableau 14.2","biens, douane (FOB / CAF)",40987.4,-0.2,"référence : biens des comptes nationaux, lignes de produits"
+2018,importations,"INS, comptes nationaux, éd. 2018-2022 (base 2015)",biens et services,65967.8,,
+2018,importations,"INS, comptes nationaux, éd. 2018-2022 (base 2015)",biens,61457.8,,"somme des lignes de biens, hors corrections ; importations après correction CAF/FAB de -3078.4"
+2018,importations,"INS, Annuaire statistique, éd. 2016-2020, tableau 14.2","biens, douane (FOB / CAF)",60010.3,-2.4,"référence : biens des comptes nationaux, lignes de produits (avant la correction CAF/FAB, portée en une ligne globale)"
+2019,exportations,"INS, comptes nationaux, éd. 2019-2023 (base 2015)",biens et services,56504.8,,
+2019,exportations,"INS, comptes nationaux, éd. 2019-2023 (base 2015)",biens,43931.1,,"somme des lignes de biens, hors corrections"
+2019,exportations,"INS, Annuaire statistique, éd. 2017-2021, tableau 14.2","biens, douane (FOB / CAF)",43855.4,-0.2,"référence : biens des comptes nationaux, lignes de produits"
+2019,importations,"INS, comptes nationaux, éd. 2019-2023 (base 2015)",biens et services,69332.9,,
+2019,importations,"INS, comptes nationaux, éd. 2019-2023 (base 2015)",biens,64433.5,,"somme des lignes de biens, hors corrections ; importations après correction CAF/FAB de -3163.4"
+2019,importations,"INS, Annuaire statistique, éd. 2017-2021, tableau 14.2","biens, douane (FOB / CAF)",63291.6,-1.8,"référence : biens des comptes nationaux, lignes de produits (avant la correction CAF/FAB, portée en une ligne globale)"
+2020,exportations,"INS, comptes nationaux, éd. 2020-2024 (base 2015)",biens et services,45401.0,,
+2020,exportations,"INS, comptes nationaux, éd. 2020-2024 (base 2015)",biens,38802.9,,"somme des lignes de biens, hors corrections"
+2020,exportations,"INS, Annuaire statistique, éd. 2018-2022, tableau 14.2","biens, douane (FOB / CAF)",38705.9,-0.2,"référence : biens des comptes nationaux, lignes de produits"
+2020,importations,"INS, comptes nationaux, éd. 2020-2024 (base 2015)",biens et services,55379.1,,
+2020,importations,"INS, comptes nationaux, éd. 2020-2024 (base 2015)",biens,52857.0,,"somme des lignes de biens, hors corrections ; importations après correction CAF/FAB de -2877.8"
+2020,importations,"INS, Annuaire statistique, éd. 2018-2022, tableau 14.2","biens, douane (FOB / CAF)",51536.2,-2.5,"référence : biens des comptes nationaux, lignes de produits (avant la correction CAF/FAB, portée en une ligne globale)"
+2021,exportations,"INS, comptes nationaux, éd. 2021-2025 (base 2015)",biens et services,54959.6,,
+2021,exportations,"INS, comptes nationaux, éd. 2021-2025 (base 2015)",biens,46773.7,,"somme des lignes de biens, hors corrections"
+2021,exportations,"INS, Annuaire statistique, éd. 2019-2023, tableau 14.2","biens, douane (FOB / CAF)",46654.2,-0.3,"référence : biens des comptes nationaux, lignes de produits"
+2021,importations,"INS, comptes nationaux, éd. 2021-2025 (base 2015)",biens et services,68210.1,,
+2021,importations,"INS, comptes nationaux, éd. 2021-2025 (base 2015)",biens,64657.8,,"somme des lignes de biens, hors corrections ; importations après correction CAF/FAB de -3260.0"
+2021,importations,"INS, Annuaire statistique, éd. 2019-2023, tableau 14.2","biens, douane (FOB / CAF)",62864.9,-2.8,"référence : biens des comptes nationaux, lignes de produits (avant la correction CAF/FAB, portée en une ligne globale)"
+2022,exportations,"INS, comptes nationaux, éd. 2021-2025 (base 2015)",biens et services,71571.2,,
+2022,exportations,"INS, comptes nationaux, éd. 2021-2025 (base 2015)",biens,58599.2,,"somme des lignes de biens, hors corrections"
+2022,exportations,"INS, Annuaire statistique, éd. 2019-2023, tableau 14.2","biens, douane (FOB / CAF)",57557.5,-1.8,"référence : biens des comptes nationaux, lignes de produits"
+2022,importations,"INS, comptes nationaux, éd. 2021-2025 (base 2015)",biens et services,90318.0,,
+2022,importations,"INS, comptes nationaux, éd. 2021-2025 (base 2015)",biens,85695.7,,"somme des lignes de biens, hors corrections ; importations après correction CAF/FAB de -4553.1"
+2022,importations,"INS, Annuaire statistique, éd. 2019-2023, tableau 14.2","biens, douane (FOB / CAF)",82788.9,-3.4,"référence : biens des comptes nationaux, lignes de produits (avant la correction CAF/FAB, portée en une ligne globale)"
+2023,exportations,"INS, comptes nationaux, éd. 2021-2025 (base 2015)",biens et services,79417.9,,
+2023,exportations,"INS, comptes nationaux, éd. 2021-2025 (base 2015)",biens,62793.6,,"somme des lignes de biens, hors corrections"
+2023,exportations,"INS, Annuaire statistique, éd. 2019-2023, tableau 14.2","biens, douane (FOB / CAF)",62077.3,-1.1,"référence : biens des comptes nationaux, lignes de produits"
+2023,exportations,"BCT, Rapport annuel 2024, tableau 3-11","biens et services, balance des paiements (MBP6)",61306.5,-22.8,"référence : ensemble des comptes nationaux (biens et services, corrections comprises)"
+2023,exportations,"BCT, Rapport annuel 2024, tableau 3-11","biens, balance des paiements (MBP6, FOB-FOB)",28081.6,,le travail à façon y est un service
+2023,importations,"INS, comptes nationaux, éd. 2021-2025 (base 2015)",biens et services,88476.9,,
+2023,importations,"INS, comptes nationaux, éd. 2021-2025 (base 2015)",biens,81752.7,,"somme des lignes de biens, hors corrections ; importations après correction CAF/FAB de -4385.5"
+2023,importations,"INS, Annuaire statistique, éd. 2019-2023, tableau 14.2","biens, douane (FOB / CAF)",79146.3,-3.2,"référence : biens des comptes nationaux, lignes de produits (avant la correction CAF/FAB, portée en une ligne globale)"
+2023,importations,"BCT, Rapport annuel 2024, tableau 3-11","biens et services, balance des paiements (MBP6)",68186.3,-22.9,"référence : ensemble des comptes nationaux (biens et services, corrections comprises)"
+2023,importations,"BCT, Rapport annuel 2024, tableau 3-11","biens, balance des paiements (MBP6, FOB-FOB)",56181.8,,le travail à façon y est un service
+2024,exportations,"INS, comptes nationaux, éd. 2021-2025 (base 2015)",biens et services,79874.4,,
+2024,exportations,"INS, comptes nationaux, éd. 2021-2025 (base 2015)",biens,62354.1,,"somme des lignes de biens, hors corrections"
+2024,exportations,"BCT, Rapport annuel 2024, tableau 3-11","biens et services, balance des paiements (MBP6)",62702.2,-21.5,"référence : ensemble des comptes nationaux (biens et services, corrections comprises)"
+2024,exportations,"BCT, Rapport annuel 2024, tableau 3-11","biens, balance des paiements (MBP6, FOB-FOB)",27804.1,,le travail à façon y est un service
+2024,importations,"INS, comptes nationaux, éd. 2021-2025 (base 2015)",biens et services,90060.5,,
+2024,importations,"INS, comptes nationaux, éd. 2021-2025 (base 2015)",biens,83893.8,,"somme des lignes de biens, hors corrections ; importations après correction CAF/FAB de -4647.5"
+2024,importations,"BCT, Rapport annuel 2024, tableau 3-11","biens et services, balance des paiements (MBP6)",70402.9,-21.8,"référence : ensemble des comptes nationaux (biens et services, corrections comprises)"
+2024,importations,"BCT, Rapport annuel 2024, tableau 3-11","biens, balance des paiements (MBP6, FOB-FOB)",58225.0,,le travail à façon y est un service
+2025,exportations,"INS, comptes nationaux, éd. 2021-2025 (base 2015)",biens et services,81520.6,,
+2025,exportations,"INS, comptes nationaux, éd. 2021-2025 (base 2015)",biens,63867.3,,"somme des lignes de biens, hors corrections"
+2025,importations,"INS, comptes nationaux, éd. 2021-2025 (base 2015)",biens et services,94610.9,,
+2025,importations,"INS, comptes nationaux, éd. 2021-2025 (base 2015)",biens,88006.8,,"somme des lignes de biens, hors corrections ; importations après correction CAF/FAB de -4823.7"

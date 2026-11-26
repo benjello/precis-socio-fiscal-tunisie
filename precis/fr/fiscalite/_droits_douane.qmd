@@ -838,7 +838,7 @@ Cette section rassemble ce que des institutions internationales et une étude é
 
 **La Banque mondiale (1995).** À partir des taux de protection nominale et effective de 1983 à 1995, la Banque mondiale donne une moyenne des droits supérieure à 40 % avant l'ajustement, de 24 % de 1987 à 1990 et d'environ 35 % en 1995, droit complémentaire provisoire compris ; la fourchette est de 15 à 43 % en 1990 [@bm-1995-vers-21e-siecle, annexe 2, p. 5].
 
-**Le tarif et la recette : le taux de perception implicite.** Rapporter la rubrique « droits de douane » du ministère des Finances, redevance comprise, à la valeur des importations donne un [taux de perception implicite](#g-taux-perception-implicite) : la part de la valeur importée que l'État perçoit en droits. C'est un calcul du précis, non une valeur publiée ; les importations sont celles de la Banque centrale de 1988 à 1997 [@bct-ra-1998, p. 129] et de l'Institut national de la statistique depuis 1998 [@ins-annuaire, tableau 14.2]. La figure le superpose aux moyennes simples du GATT et de l'OMC : les deux mesures portent sur le même tarif, mais l'une pèse ce qui est perçu, l'autre les taux affichés.
+**Le tarif et la recette : le taux de perception implicite.** Rapporter la rubrique « droits de douane » du ministère des Finances, redevance comprise, à la valeur des importations donne un [taux de perception implicite](#g-taux-perception-implicite) : la part de la valeur importée que l'État perçoit en droits. C'est un calcul de l'ouvrage, non une valeur publiée ; les importations sont celles de la Banque centrale de 1988 à 1997 [@bct-ra-1998, p. 129] et de l'Institut national de la statistique depuis 1998 [@ins-annuaire, tableau 14.2]. La figure le superpose aux moyennes simples du GATT et de l'OMC : les deux mesures portent sur le même tarif, mais l'une pèse ce qui est perçu, l'autre les taux affichés.
 
 ```{python}
 #| label: fig-dd-perception
@@ -854,7 +854,7 @@ figtools.figure_tabs(
              "1988-2023, et moyennes simples des taux du tarif publiées par le GATT et "
              "l'OMC, 1987-2025, en %"),
     note_lecture=(
-        "Deux familles, deux légendes. Les courbes sont un calcul du précis : la rubrique "
+        "Deux familles, deux légendes. Les courbes sont un calcul de l'ouvrage : la rubrique "
         "« droits de douane » du ministère des Finances, redevance comprise, rapportée aux "
         "importations, toutes ou du seul régime général. Les importations viennent de la "
         "Banque centrale jusqu'en 1997 (marqueurs creux), de l'Institut national de la "
@@ -886,3 +886,12 @@ Cette section résume ce que la littérature économique dit des droits sur les 
 **Ce que le praticien retient.** Établi : la recette douanière perdue est mal récupérée dans les pays à revenu bas ou intermédiaire, sur deux bases de données et par deux méthodes ; la baisse des droits, surtout sur les intrants, accroît la productivité mesurée. Débattu : le remplacement du tarif par la TVA, qui dépend de la couverture de la TVA ; le gain de l'accord tunisien, qui dépend de la mobilité du capital retenue. Mesuré sur la Tunisie seule : une évasion qui croît avec le taux, et des rentes de protection concentrées dans des entreprises liées au pouvoir, de 2002 à 2010. Ce que les données tunisiennes ne tranchent pas : aucune évaluation *ex post* identifiée ne mesure la recette récupérée après 1996, ni l'effet du démantèlement sur l'emploi ou la productivité des entreprises tunisiennes.
 
 Littérature arrêtée en octobre 2026
+
+## Dans les comptes {#sec-dd-cn-comptes}
+
+{{< include ../encadres-comptes/droits-douane.md >}}
+
+## Des droits de douane à D.212 {#sec-dd-cn-passage}
+
+{{< include ../encadres-comptes/passage-impots_importations.md >}}
+

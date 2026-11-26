@@ -1,0 +1,101 @@
+# Présentation {#sec-invest-presentation}
+
+Ce livre décrira l'investissement : la formation brute de capital fixe par secteur, par branche et par produit, la part publique, et les dispositifs qui la soutiennent. Il occupe, dans la séquence des comptes, le compte de capital.
+
+::: {.callout-note}
+Ce volume est une **ébauche** : une première série est versée, la rédaction reste à faire. Il n'existe pour l'instant qu'en français.
+:::
+
+## La FBCF par secteur institutionnel {#sec-invest-secteurs}
+
+La @fig-invest-secteurs donne la formation brute de capital fixe par secteur institutionnel de 2005 à 2025, en deux segments jamais raccordés : la base 1997 jusqu'en 2017, la base 2015 depuis 2015 [@ins-cnat-2015].
+
+```{python}
+#| label: fig-invest-secteurs
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import investissement as inv
+import figtools
+figtools.figure_tabs(
+    inv.vues_fbcf(), inv.table_fbcf(), "cnat-fbcf",
+    slug="fig_invest_secteurs",
+    caption="FBCF par secteur institutionnel, 2005-2025, base 1997 (tirets) et base 2015 (traits pleins), millions de dinars courants",
+    note_lecture=(
+        "Chaque année est lue dans l'édition la plus récente qui l'imprime, base par base. Les années "
+        "2015 à 2017, publiées dans les deux bases, montrent l'écart de niveau entre elles."))
+```
+
+Dans la base 2015, la FBCF des sociétés non financières passe de 8 016,9 millions de dinars en 2015 à 11 338,6 en 2025, celle des administrations publiques de 4 622,0 à 5 769,2, celle des ménages pour leur logement de 3 341,3 à 4 306,4 [@ins-cnat-2015].
+
+## La FBCF des administrations publiques par domaine {#sec-invest-apu-domaine}
+
+L'INS ventile la formation brute de capital fixe des administrations publiques par domaine : branches marchandes où elles investissent, et équipements collectifs (éducation, santé, assainissement, urbanisme, social et culturel, services administratifs) [@ins-cnat-2015].
+
+```{python}
+#| echo: false
+#| output: asis
+print(inv.table_apu_domaine())
+print("\n: FBCF des administrations publiques par domaine, base 2015, 2015-2023 (millions de dinars courants ; pour chaque année, l'édition la plus récente qui l'imprime) {#tbl-invest-apu-domaine}")
+```
+
+<!-- TODO (rédacteur) : FBCF par branche et par produit (cnat-fbcf) ; entreprises
+     publiques dans la FBCF des sociétés non financières ; régimes d'incitation, par renvoi. -->
+
+## L'investissement de l'État : du budget d'équipement à la FBCF {#sec-invest-etat}
+
+### Le cadre budgétaire {#sec-invest-etat-cadre}
+
+À rédiger : la nature « dépenses de développement » (investissements directs, financement public, prises de participation) dans la nomenclature budgétaire, et les textes qui la fixent.
+
+<!-- TODO (rédacteur) : cadre budgétaire des dépenses d'équipement ; sources à verser. Backlog : docs/notes/backlog-precis.md. -->
+
+### Du budget au montant {#sec-invest-etat-calcul}
+
+La série de la répartition économique des dépenses du ministère des Finances, présentée selon la loi organique du budget de 2004, divise les dépenses d'équipement réalisées en cinq rubriques : investissements directs, financement public, investissements de l'État sur emprunts extérieurs, fonds du Trésor et dépenses de développement imprévues [@minfin-repartition-depenses-xls].
+
+| Millions de dinars | 2015 | 2018 | 2019 | 2020 | 2021 | 2022 | 2023 |
+|---|--:|--:|--:|--:|--:|--:|--:|
+| Investissements directs | 2 355,9 | 2 792,0 | 2 713,0 | 3 020,0 | 2 918,0 | 2 653,0 | 3 361,5 |
+| Financement public | 1 407,2 | 1 717,0 | 1 924,0 | 2 387,4 | 3 404,7 | 2 723,5 | 3 110,6 |
+| Investissements sur emprunts extérieurs | 493,9 | 706,5 | 668,9 | 849,0 | 1 559,6 | 1 709,1 | 1 988,8 |
+| Fonds du Trésor | 541,9 | 729,0 | 852,0 | 950,9 | 797,8 | 1 195,9 | 686,2 |
+| **Dépenses d'équipement** | 4 798,9 | 5 944,5 | 6 157,9 | 7 207,3 | 8 680,1 | 8 281,5 | 9 147,0 |
+| FBCF de l'administration centrale (comptes) | 4 156,0 | 4 665,3 | 4 496,9 | 5 086,4 | 4 620,1 | 4 162,2 | 4 899,2 |
+| Transferts en capital versés (comptes, D.9) | 1 237,6 | 1 214,2 | 1 518,7 | 1 994,6 | 2 051,1 | 2 484,3 | 3 267,4 |
+
+: Dépenses d'équipement de l'État par rubrique, face à la FBCF et aux transferts en capital de l'administration centrale, 2015-2023 (millions de dinars courants ; dépenses : réalisations ; comptes : édition la plus récente où l'année est définitive) {#tbl-invest-etat-rubriques}
+
+Sources : ministère des Finances [@minfin-repartition-depenses-xls] ; comptes des secteurs [@ins-cnat-2015].
+
+La hausse de 2021 (+1 472,8 millions de dinars) tient au financement public (+1 017,3) et aux investissements sur emprunts extérieurs (+710,6) ; la même année, la FBCF de l'administration centrale baisse de 466,3 millions et ses transferts en capital ne croissent que de 56,5. La rupture du rapport entre FBCF et équipement, en 2021, se situe donc dans ces deux rubriques ; les rubriques budgétaires ne disent pas à quelles opérations des comptes elles correspondent.
+
+### Dans les comptes {#sec-invest-etat-comptes}
+
+{{< include ../encadres-comptes/equipement-etat.md >}}
+
+### Du budget d'équipement à la FBCF {#sec-invest-etat-passage}
+
+{{< include ../encadres-comptes/passage-fbcf.md >}}
+
+## Les transferts en capital de l'État {#sec-invest-transferts-capital}
+
+### Le cadre budgétaire {#sec-invest-transferts-capital-cadre}
+
+À rédiger : les aides à l'investissement (D.92) et les autres transferts en capital (D.99) versés par l'État, et les textes qui les régissent.
+
+### Dans les comptes {#sec-invest-transferts-capital-comptes}
+
+{{< include ../encadres-comptes/transferts-capital-etat.md >}}
+
+<!-- TODO (rédacteur) : domicile des aides à l'investissement (régimes d'incitation, fiscalité) et des dotations en capital aux entreprises publiques (volume des entreprises publiques) ; rattachement à D.9 à décider avec le plan par opération. Backlog. -->
+
+## Ce que d'autres livres traitent {#sec-invest-voisinage}
+
+| Sujet | Domicile | Ce que ce livre en reçoit |
+|---|---|---|
+| Régimes d'incitation à l'investissement | « La fiscalité », [chapitre des régimes d'incitation](../fiscalite/_regimes_incitation.html) | un lien |
+| Entreprises publiques, leurs comptes et leur investissement | « Les entreprises publiques » | un lien |
+| FBCF des branches | volumes de branche (« L'énergie »…) | un lien |
+
+: Les sujets voisins et le livre qui les expose {#tbl-invest-voisinage}

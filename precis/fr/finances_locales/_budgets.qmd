@@ -421,6 +421,8 @@ Trois ruptures les traversent.
 | **Administration** | | |
 | Direction générale des collectivités locales, agrégats publiés [@dgct-donnees-ouvertes] | 2008-2019 | exécution des budgets des communes ; impôts un à un ; fonds commun, subventions annuelles et dotation exceptionnelle |
 | Même source, budgets par commune [@dgct-donnees-ouvertes] | 2018-2023 | prévisions et réalisations des 350 communes, sommées ici |
+| Même source, classeur détaillé des budgets de 2021 [@dgct-donnees-ouvertes] | 2021 | dépenses des 350 communes par article, partie et section, prévisions définitives et réalisations, arrêtées après le 25 décembre 2021 |
+| Haute Instance des finances locales, rapport annuel [@hifl-rapport-annuel-2020, p. 51] | 2017-2020 | dépenses du titre 1 des communes par partie : rémunérations, moyens des services, interventions, intérêts |
 | Caisse des prêts et de soutien des collectivités locales [@cpscl-etats-financiers] | 2005-2024 | dotations reçues de l'État, subventions et prêts accordés, créances impayées |
 | Institut national de la statistique, comptes de la nation [@ins-cnat-2015] | 2001-2025 | compte des collectivités locales, en trois bases successives ; PIB |
 | **Rapports de la Banque mondiale** | | |
@@ -590,7 +592,7 @@ figtools.figure_tabs(
 )
 ```
 
-- **Les rémunérations.** 201 MD en 2008 et 544 MD en 2019 selon les agrégats ; 693 MD en 2022 et 689 MD en 2023 selon la somme des budgets par commune. Rapportées aux recettes du titre I de la même année, elles en font de 43 % à 50 % de 2008 à 2019 — à l'arrondi près, le ratio « Rémunération » que publie la Direction générale —, puis 50,1 % en 2022 et 47,4 % en 2023.
+- **Les rémunérations.** 201 MD en 2008 et 544 MD en 2019 selon les agrégats ; 619 MD en 2020 selon le rapport annuel de la Haute Instance des finances locales [@hifl-rapport-annuel-2020, p. 51] ; 672 MD en 2021 selon le classeur détaillé des budgets de la Direction générale, en réalisations par article, arrêté après le 25 décembre 2021 [@dgct-donnees-ouvertes] ; 693 MD en 2022 et 689 MD en 2023 selon la somme des budgets par commune. Rapportées aux recettes du titre I de la même année, elles en font de 43 % à 50 % de 2008 à 2019 — à l'arrondi près, le ratio « Rémunération » que publie la Direction générale —, puis 50,1 % en 2022 et 47,4 % en 2023.
 - **Face au plafond de moitié.** Le plafond du code porte sur les prévisions et se rapporte aux recettes du titre I de l'année écoulée. Sur les réalisations, ce rapport va de 46 % à 57 % de 2009 à 2019, dont 52,0 % en 2019, première année où la règle s'applique aux communes ; il vaut 59 % en 2022, sur un dénominateur de 2021 non clos, et 49,8 % en 2023. Il ne dit pas si les budgets votés respectent la règle.
 
 ### Les quatre impôts locaux : sources budgétaires et rapport de la Banque mondiale de 1997 {#sec-fl-lp-impots}
@@ -671,3 +673,70 @@ Trois documents de la Banque mondiale publient des tableaux des budgets des comm
 : Les écarts entre deux rapports de la Banque mondiale pour 1990 {#tbl-fl-lp-ecarts-bm}
 
 ::::
+
+## Dans les comptes {#sec-fl-budg-comptes}
+
+Trois dépenses des communes se rapprochent d'une opération du compte des collectivités locales dans les comptes de la nation [@dgct-donnees-ouvertes; @ins-cnat-2015].
+
+```{python}
+#| echo: false
+import sys; sys.path.insert(0, "../../../scripts")
+import passage_comptes as pc
+_P = [("remunerations-collectivites", "Rémunérations"), ("moyens-services-collectivites", "Moyens des services"),
+      ("interets-dette-collectivites", "Intérêts de la dette")]
+_L = {p: {l["annee"]: l for l in pc.lignes(p)} for p, _ in _P}
+_rem, _moy, _int = (pc.extremes(_L[p]) for p, _ in _P)
+rem_min, rem_an_min, rem_max, rem_an_max = _rem["min"], _rem["an_min"], _rem["max"], _rem["an_max"]
+moy_min, moy_an_min, moy_max, moy_an_max = _moy["min"], _moy["an_min"], _moy["max"], _moy["an_max"]
+int_min, int_an_min, int_max, int_an_max = _int["min"], _int["an_min"], _int["max"], _int["an_max"]
+_d11 = {a: pc.cible("apu_locale", "emplois", "D.11", "salaires_bruts", a)[0]
+        for a in _L["remunerations-collectivites"]}
+rem_n = len(_d11)
+rem_n_sup = sum(1 for a, v in _d11.items() if v is not None and _L["remunerations-collectivites"][a]["montant"] > v)
+```
+
+Chaque année où les deux montants sont publiés (@tbl-fl-budg-passage), les rémunérations font de `{python} rem_min` (`{python} rem_an_min`) à `{python} rem_max` (`{python} rem_an_max`) de la rémunération des salariés (D.1) du compte. Elles dépassent les salaires bruts (D.11) du même compte `{python} rem_n_sup` années sur `{python} rem_n` : elles comprennent les cotisations à la charge de l'employeur. Les moyens des services font de `{python} moy_min` (`{python} moy_an_min`) à `{python} moy_max` (`{python} moy_an_max`) de la consommation intermédiaire (P.2). Les intérêts de la dette font de `{python} int_min` (`{python} int_an_min`) à `{python} int_max` (`{python} int_an_max`) des intérêts versés (D.41).
+
+```{python}
+#| echo: false
+#| output: asis
+_ans = sorted(set().union(*_L.values()))
+_lignes = []
+for a in _ans:
+    cells = [str(a)]
+    for p, _ in _P:
+        l = _L[p].get(a)
+        cells += [pc.fr(l["montant"]), pc.fr(l["ins"]), pc.pct(l["part"])] if l else ["", "", ""]
+    _lignes.append(cells)
+print(pc.table(["Année"] + [c for _, n in _P for c in (n, "Comptes", "Part")], _lignes))
+print("\n: Dépenses des communes et opérations du compte des collectivités locales (S1313), en millions de "
+      "dinars courants : rémunérations et rémunération des salariés (D.1), moyens des services et consommation "
+      "intermédiaire (P.2), intérêts de la dette et intérêts (D.41) ; comptes de la nation : dernière édition où "
+      "l'année est définitive {#tbl-fl-budg-passage}\n")
+```
+
+Sources : comptes des communes [@dgct-donnees-ouvertes], 2020 selon la Haute Instance des finances locales [@hifl-rapport-annuel-2020, p. 51], 2021 selon le classeur détaillé des budgets de la Direction générale ; comptes des collectivités locales [@ins-cnat-2015].
+
+Trois différences séparent les deux montants :
+
+- **périmètre** : les conseils régionaux, puis les régions, entrent au compte des collectivités locales et non dans les budgets des communes (@sec-fl-lp-ins) ;
+- **source du budget** : de 2008 à 2019, les rémunérations et les moyens des services sont les agrégats de la Direction générale des collectivités locales ; en 2020, le rapport annuel de la Haute Instance des finances locales, qui couvre les 350 communes et redonne à 0,4 % près les rémunérations et les moyens des services des agrégats de 2017-2019 [@hifl-rapport-annuel-2020, p. 51 et annexe 12, p. 179] ; en 2021, le classeur détaillé des budgets de la Direction générale, en réalisations par article, arrêté après le 25 décembre 2021 sans que la clôture de l'exercice soit attestée [@dgct-donnees-ouvertes] ; en 2022 et 2023, la somme des budgets par commune ; les intérêts de la dette sont cette somme de 2018 à 2023 (@sec-fl-lp-sources) ;
+- **exercice non clos** : les dépenses de 2021 viennent d'un classeur arrêté après le 25 décembre 2021, sans clôture attestée, ses recettes d'une situation au 25 décembre 2021 ; les budgets de 2023 sont une situation provisoire au 10 janvier 2024 [@dgct-donnees-ouvertes].
+
+Les écarts les plus forts, sur les moyens des services en `{python} moy_an_min` et sur les intérêts de la dette en `{python} int_an_min`, ne sont pas expliqués.
+
+<!-- TODO (documentaliste) : chiffrer la part des conseils régionaux (puis des régions) dans les
+     opérations D.1, P.2 et D.41 du compte S1313 ; expliquer les écarts de 2018 (P.2) et de 2023
+     (P.2, D.41), exercice 2023 clos à l'appui. -->
+
+### Les rémunérations {#sec-fl-budg-comptes-remunerations}
+
+{{< include ../encadres-comptes/remunerations-collectivites.md >}}
+
+### Les moyens des services {#sec-fl-budg-comptes-moyens}
+
+{{< include ../encadres-comptes/moyens-services-collectivites.md >}}
+
+### Les intérêts de la dette {#sec-fl-budg-comptes-interets}
+
+{{< include ../encadres-comptes/interets-dette-collectivites.md >}}

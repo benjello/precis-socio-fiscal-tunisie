@@ -1,0 +1,190 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-11-26
+# séries (tunisia_data) : bct-ra-bdp-1978-1996, bct-ra-bdp-1978-1996-controles, bct-ra-bdp-1978-1996-raccord
+# sources (citation) : @bct-ra-1982, @bct-ra-1984, @bct-ra-1985, @bct-ra-1986, @bct-ra-1988, @bct-ra-1989, @bct-ra-1990, @bct-ra-1992, @bct-ra-1994, @bct-ra-1995, @bct-ra-1996, @bct-balance-paiements
+# fiches : sources/bct-balance-paiements.md
+# méthode/hypothèses : SÉRIE DE TABLEAUX, NON CHAÎNÉE ET SANS RACCORD AU MBP5 : la présentation change (ajustements scindés en 1984-1987, « invisibles » dans la publication 106 de 1991, détail des capitaux à partir de 1993) ; les rubriques des recettes et dépenses courantes changent de périmètre (« économies sur salaires » 1982, « revenus du travail » 1984-1986, « revenus de facteurs » 1988-1992 ; redevance-gaz isolée à partir de 1986). Valeurs relues à l'image : la couche texte perd les signes ; `couche_texte` dit si le nombre s'y retrouve (54 valeurs sur 1 509 absentes ou altérées). Rapports annuels 1983, 1987, 1991, 1993 non versés (couche chiffrée). Révisions entre éditions et entre les deux publications gardées : voir bct-ra-bdp-1978-1996-raccord. Ratios au PIB non transcrits. Voir sources/bct-balance-paiements.md., Ne corrige rien. 344 contrôles : 329 égaux, 14 écarts d'arrondi (un million), 1 écart (rapport 1982, année 1980 : recettes 1 377 − dépenses 1 562 = −185 contre des paiements courants de −180)., Ne corrige rien. Publication 106 : 284 valeurs égales sur 310 à édition égale, 124 sur 133 entre valeurs retenues ; écart le plus fort en 1996 (paiements courants −554 contre −510). MBP5 : présentation différente, l'écart mesure aussi le changement de manuel (transferts : 32 à 48 MD ; paiements courants : 50 et 88 MD en 1995 et 1996) ; dépenses courantes de 1994 absentes de la série MBP5 versée (référence absente).
+# note : Principaux soldes de la balance des paiements, 1978 à 1996, d'après les rapports annuels de la Banque centrale, en millions de dinars courants
+annee,poste,libelle_imprime,valeur_md,edition,page_fichier,page_imprimee
+1978,ajustements,III. Ajustements,-3,1982,94,97
+1978,marchandises,A. Marchandises,-364,1982,94,97
+1978,mouvements_capitaux,II. Mouvements de capitaux,237,1982,94,97
+1978,paiements_courants,I. Paiements courants,-221,1982,94,97
+1978,revenus,C. Revenus,29,1982,94,97
+1978,services,B. Services,113,1982,94,97
+1978,solde_general,Solde général,13,1982,94,97
+1978,transferts,D. Transferts courants sans contrepartie,1,1982,94,97
+1979,ajustements,III. Ajustements,-8,1982,94,97
+1979,marchandises,A. Marchandises,-406,1982,94,97
+1979,mouvements_capitaux,II. Mouvements de capitaux,234,1982,94,97
+1979,paiements_courants,I. Paiements courants,-175,1982,94,97
+1979,revenus,C. Revenus,44,1982,94,97
+1979,services,B. Services,182,1982,94,97
+1979,solde_general,Solde général,51,1982,94,97
+1979,transferts,D. Transferts courants sans contrepartie,5,1982,94,97
+1980,ajustements,III. Ajustements,-4,1982,94,97
+1980,difference_change,C - Différence de change,0,1984,115,117
+1980,marchandises,- Marchandises,-396,1984,115,117
+1980,mouvements_capitaux,B - Mouvements de capitaux,213,1984,115,117
+1980,operations_en_cours,D - Opérations en cours,-4,1984,115,117
+1980,paiements_courants,A - Paiements courants,-180,1984,115,117
+1980,revenus,- Revenus,53,1984,115,117
+1980,services,- Services,157,1984,115,117
+1980,solde_general,Solde général,29,1984,115,117
+1980,transferts,- Transferts courants sans contrepartie,6,1984,115,117
+1981,ajustements,III. Ajustements,-2,1982,94,97
+1981,difference_change,C - Différence de change,-2,1985,109,111
+1981,marchandises,- Marchandises,-478,1985,109,111
+1981,mouvements_capitaux,B - Mouvements de capitaux,289,1985,109,111
+1981,paiements_courants,A - Paiements courants,-241,1985,109,111
+1981,revenus,- Revenus,69,1985,109,111
+1981,services,- Services,159,1985,109,111
+1981,solde_general,Solde général,46,1985,109,111
+1981,transferts,- Transferts courants sans contrepartie,9,1985,109,111
+1982,ajustements,III. Ajustements,-5,1982,94,97
+1982,difference_change,C - Différence de change,0,1986,102,105
+1982,marchandises,- Marchandises,-686,1986,102,105
+1982,mouvements_capitaux,B - Mouvements de capitaux,429,1986,102,105
+1982,operations_en_cours,D - Opérations en cours,-5,1986,102,105
+1982,paiements_courants,A - Paiements courants,-408,1986,102,105
+1982,revenus,- Revenus,101,1986,102,105
+1982,services,- Services,163,1986,102,105
+1982,solde_general,Solde général,16,1986,102,105
+1982,transferts,- Transferts courants sans contrepartie,14,1986,102,105
+1983,difference_change,C - Différence de change,12,1986,102,105
+1983,marchandises,- Marchandises,-729,1986,102,105
+1983,mouvements_capitaux,B - Mouvements de capitaux,392,1986,102,105
+1983,operations_en_cours,D - Opérations en cours,1,1986,102,105
+1983,paiements_courants,A - Paiements courants,-415,1986,102,105
+1983,revenus,- Revenus,102,1986,102,105
+1983,services,- Services,204,1986,102,105
+1983,solde_general,Solde général,-10,1986,102,105
+1983,transferts,- Transferts courants sans contrepartie,8,1986,102,105
+1984,ajustements,C - Opérations d'ajustement,50,1988,96,99
+1984,difference_change,C - Différence de change,15,1986,102,105
+1984,marchandises,- Marchandises,-896,1988,96,99
+1984,mouvements_capitaux,B - Mouvements de capitaux,455,1988,96,99
+1984,operations_en_cours,D - Opérations en cours,35,1986,102,105
+1984,paiements_courants,A - Paiements courants,-621,1988,96,99
+1984,revenus,- Revenus,57,1988,96,99
+1984,services,- Services,209,1988,96,99
+1984,solde_general,Solde général,-116,1988,96,99
+1984,transferts,- Transferts unilatéraux,9,1988,96,99
+1985,ajustements,C - Opérations d'ajustement,49,1989,109,112
+1985,difference_change,C - Différence de change,12,1986,102,105
+1985,marchandises,-Marchandises (FOB),-722,1989,109,112
+1985,mouvements_capitaux,B - Mouvements de capitaux,376,1989,109,112
+1985,operations_en_cours,D - Opérations en cours,37,1986,102,105
+1985,paiements_courants,A - Paiements courants,-519,1989,109,112
+1985,revenus,-Revenus,-27,1989,109,112
+1985,services,-Services,221,1989,109,112
+1985,solde_general,Solde général,-94,1989,109,112
+1985,transferts,-Transferts unilatéraux,9,1989,109,112
+1986,ajustements,C - Opérations d'ajustement,39,1990,108,112
+1986,difference_change,C - Différence de change,15,1986,102,105
+1986,marchandises,-Marchandises (FOB),-742,1990,108,112
+1986,mouvements_capitaux,B - Mouvements de capitaux,330,1990,108,112
+1986,operations_en_cours,D - Opérations en cours,27,1986,102,105
+1986,paiements_courants,A - Paiements courants,-522,1990,108,112
+1986,revenus,-Revenus,-10,1990,108,112
+1986,services,-Services,225,1990,108,112
+1986,solde_general,Solde général,-153,1990,108,112
+1986,transferts,-Transferts unilatéraux,5,1990,108,112
+1987,ajustements,C - Opérations d'ajustement,-18,1990,108,112
+1987,marchandises,-Marchandises (FOB),-602,1990,108,112
+1987,mouvements_capitaux,B - Mouvements de capitaux,192,1990,108,112
+1987,paiements_courants,A - Paiements courants,-78,1990,108,112
+1987,revenus,-Revenus,43,1990,108,112
+1987,services,-Services,478,1990,108,112
+1987,solde_general,Solde général,96,1990,108,112
+1987,transferts,-Transferts unilatéraux,3,1990,108,112
+1988,ajustements,C - Opérations d'ajustement(flux nets),3,1992,111,113
+1988,marchandises,-Marchandises (FOB),-941,1992,111,113
+1988,mouvements_capitaux,B - Mouvements de capitaux,194,1992,111,113
+1988,paiements_courants,A - Paiements courants,128,1992,111,113
+1988,revenus,-Revenus de facteurs,63,1992,111,113
+1988,services,-Services,991,1992,111,113
+1988,solde_general,Solde général,325,1992,111,113
+1988,transferts,-Transferts unilatéraux,15,1992,111,113
+1989,ajustements,C - Opérations d'ajustement(flux nets),26,1992,111,113
+1989,marchandises,-Marchandises (FOB),-1146,1992,111,113
+1989,mouvements_capitaux,B - Mouvements de capitaux,378,1992,111,113
+1989,paiements_courants,A - Paiements courants,-312,1992,111,113
+1989,revenus,-Revenus de facteurs,32,1992,111,113
+1989,services,-Services,793,1992,111,113
+1989,solde_general,Solde général,92,1992,111,113
+1989,transferts,-Transferts unilatéraux,9,1992,111,113
+1990,ajustements,C - Opérations d'ajustement(flux nets),16,1994,122,114
+1990,dont_participations,dont : -Participations,69,1994,122,114
+1990,dont_prets_mlt,dont : -Prêts-emprunts à MLT termes,-28,1994,122,114
+1990,marchandises,-Marchandises (FOB),-1474,1994,122,114
+1990,mouvements_capitaux,B - Mouvements de capitaux,520,1994,122,114
+1990,paiements_courants,A - Paiements courants,-598,1994,122,114
+1990,revenus,-Revenus de facteurs,120,1994,122,114
+1990,services,-Services,738,1994,122,114
+1990,solde_general,Solde général,-62,1994,122,114
+1990,transferts,-Transferts unilatéraux,18,1994,122,114
+1991,ajustements,C - Opérations d'ajustement(flux nets),27,1995,116,109
+1991,dont_participations,dont : -Participations,116,1995,116,109
+1991,dont_prets_mlt,dont : -Prêts-emprunts à MLT termes,194,1995,116,109
+1991,marchandises,-Marchandises (FOB),-1108,1995,116,109
+1991,mouvements_capitaux,B - Mouvements de capitaux(1),432,1995,116,109
+1991,paiements_courants,A - Paiements courants,-554,1995,116,109
+1991,revenus,-Revenus de facteurs,8,1995,116,109
+1991,services,-Services,523,1995,116,109
+1991,solde_general,Solde général,-95,1995,116,109
+1991,transferts,-Transferts unilatéraux,23,1995,116,109
+1992,ajustements,C - Opérations d'ajustement(flux nets),35,1996,142,132
+1992,dont_dons,dont : -Dons,72,1996,142,132
+1992,dont_participations,dont : -Participations,518,1996,142,132
+1992,dont_prets_mlt,dont : -Prêts-emprunts à MLT termes,185,1996,142,132
+1992,marchandises,-Marchandises (FOB),-1802,1996,142,132
+1992,mouvements_capitaux,B - Mouvements de capitaux(1),1079,1996,142,132
+1992,paiements_courants,A - Paiements courants,-1041,1996,142,132
+1992,revenus,-Revenus de facteurs,15,1996,142,132
+1992,services,-Services,731,1996,142,132
+1992,solde_general,Solde général,73,1996,142,132
+1992,transferts,-Transferts unilatéraux,15,1996,142,132
+1993,ajustements,C - Opérations d'ajustement(flux nets),41,1996,142,132
+1993,dont_dons,dont : -Dons,104,1996,142,132
+1993,dont_participations,dont : -Participations,595,1996,142,132
+1993,dont_prets_mlt,dont : -Prêts-emprunts à MLT termes,360,1996,142,132
+1993,marchandises,-Marchandises (FOB),-2071,1996,142,132
+1993,mouvements_capitaux,B - Mouvements de capitaux(1),1337,1996,142,132
+1993,paiements_courants,A - Paiements courants,-1342,1996,142,132
+1993,revenus,-Revenus de facteurs,33,1996,142,132
+1993,services,-Services,682,1996,142,132
+1993,solde_general,Solde général,36,1996,142,132
+1993,transferts,-Transferts unilatéraux,14,1996,142,132
+1994,ajustements,C - Opérations d'ajustement(flux nets),27,1996,142,132
+1994,dont_dons,dont : -Dons,104,1996,142,132
+1994,dont_participations,dont : -Participations,460,1996,142,132
+1994,dont_prets_mlt,dont : -Prêts-emprunts à MLT termes,619,1996,142,132
+1994,marchandises,-Marchandises (FOB),-1585,1996,142,132
+1994,mouvements_capitaux,B - Mouvements de capitaux(1),971,1996,142,132
+1994,paiements_courants,A - Paiements courants,-661,1996,142,132
+1994,revenus,-Revenus de facteurs,0,1996,142,132
+1994,services,-Services,911,1996,142,132
+1994,solde_general,Solde général,337,1996,142,132
+1994,transferts,-Transferts unilatéraux,13,1996,142,132
+1995,ajustements,C - Opérations d'ajustement(flux nets),19,1996,142,132
+1995,dont_dons,dont : -Dons,67,1996,142,132
+1995,dont_participations,dont : -Participations,300,1996,142,132
+1995,dont_prets_mlt,dont : -Prêts-emprunts à MLT termes,563,1996,142,132
+1995,marchandises,-Marchandises (FOB),-1881,1996,142,132
+1995,mouvements_capitaux,B - Mouvements de capitaux(1),747,1996,142,132
+1995,paiements_courants,A - Paiements courants,-785,1996,142,132
+1995,revenus,-Revenus de facteurs,10,1996,142,132
+1995,services,-Services,1081,1996,142,132
+1995,solde_general,Solde général,-19,1996,142,132
+1995,transferts,-Transferts unilatéraux,5,1996,142,132
+1996,ajustements,C - Opérations d'ajustement(flux nets),-15,1996,142,132
+1996,dont_dons,dont : -Dons,68,1996,142,132
+1996,dont_participations,dont : -Participations,385,1996,142,132
+1996,dont_prets_mlt,dont : -Prêts-emprunts à MLT termes,419,1996,142,132
+1996,marchandises,-Marchandises (FOB),-1756,1996,142,132
+1996,mouvements_capitaux,B - Mouvements de capitaux(1),869,1996,142,132
+1996,paiements_courants,A - Paiements courants,-554,1996,142,132
+1996,revenus,-Revenus de facteurs,-155,1996,142,132
+1996,services,-Services,1336,1996,142,132
+1996,solde_general,Solde général,300,1996,142,132
+1996,transferts,-Transferts unilatéraux,21,1996,142,132

@@ -1,0 +1,409 @@
+---
+title: "Le compte reconstruit des administrations publiques"
+subtitle: "Pilote : les postes de l'ouvrage face au compte des administrations publiques de l'INS, opération par opération, avec le résidu publié"
+lang: fr
+format:
+  html:
+    toc: true
+    page-layout: full
+    include-in-header: ../accueil.html
+bibliography:
+  - references.json
+---
+
+[← Retour à l'accueil](index.html) · [Les comptes de la nation](annexe-comptes-nation.html) · [Les comptes nationaux et les volumes](correspondance-comptes.html) · [Les comptes des autres secteurs](compte-secteurs.html) · [Sommaire par les comptes](sommaire-comptes.html)
+
+```{python}
+#| echo: false
+import csv
+import sys
+from pathlib import Path
+sys.path.insert(0, "../../scripts")
+from couverture_comptes import SEUIL_CONTREPARTIE as SEUIL  # convention de l'ouvrage (justesse)
+SEUIL_PCT = f"{100 * SEUIL:g}".replace(".", ",")
+_r = list(csv.DictReader(open("compte-apu-reconstruit.csv", encoding="utf-8")))
+_f = list(csv.DictReader(open("compte-apu-flux.csv", encoding="utf-8")))
+_c = list(csv.DictReader(open("compte-apu-controles.csv", encoding="utf-8")))
+AN, ED = _r[0]["annee"], _r[0]["edition"]
+_cva = list(csv.DictReader(open("compte-couverture-annees.csv", encoding="utf-8")))
+_ans_ins = sorted({int(l["annee"]) for l in _cva})
+AN0, AN1 = _ans_ins[0], _ans_ins[-1]  # années de la part du montant, toutes bases
+_ans_b = {b: sorted({int(l["annee"]) for l in _cva if l["base"] == b}) for b in ("1983", "1997", "2015")}
+B83, B97, B15 = _ans_b["1983"], _ans_b["1997"], _ans_b["2015"]  # années mesurées en base 1983, 1997, 2015
+_eds = {b: sorted({l["edition"] for l in _cva if l["base"] == b}) for b in ("1983", "1997")}
+_eds83, _eds97 = _eds["1983"], _eds["1997"]
+S13_0 = min(int(l["annee"]) for l in _cva if l["secteur"] == "S13")  # première année où les trois sous-secteurs sont mesurés
+_base_an = {l["annee"]: l["base"] for l in _cva}
+ED15 = next(l["edition"] for l in _cva if int(l["annee"]) == B15[0])  # édition de la première année en base 2015
+_pa = list(csv.DictReader(open("compte-couverture-postes-annees.csv", encoding="utf-8")))
+PA0 = min(int(l["annee"]) for l in _pa)  # première année chiffrée d'un poste de la sécurité sociale
+def n(v):
+    return "" if v in ("", None) else f"{float(v):,.1f}".replace(",", " ").replace(".", ",")
+```
+
+Cette page confronte, pour les administrations publiques, ce que l'ouvrage chiffre dispositif par dispositif au compte que l'INS publie pour ce secteur [@ins-cnat-2015]. Chaque **poste** rattache une section de l'ouvrage à une case des comptes (une opération, un côté, un secteur) ; la page est **engendrée** par `scripts/reconstruire_comptes.py` à partir du registre `postes-comptables.csv` et des séries du cache, sans valeur saisie à la main.
+
+::: {.callout-note}
+Ce compte est un **pilote** : il ne porte que sur les administrations publiques (S13) et leurs sous-secteurs, et seulement sur les dispositifs dont une série est déjà vérifiée. Un dispositif sans série reste rattaché, son montant vide ; il n'est jamais estimé.
+:::
+
+## L'année de référence {#sec-capu-annee}
+
+```{python}
+#| echo: false
+#| output: asis
+print(f"L'année de référence est **{AN}** (édition {ED} des comptes de la nation, où elle est définitive). "
+      "Ce n'est pas la dernière année publiée : c'est la dernière où les sources de la reconstruction sont toutes "
+      "disponibles, budget exécuté et comptes des trois caisses de sécurité sociale compris. Les comptes et les "
+      "rapports des caisses paraissent avec plusieurs années de retard. Pour la CNRPS, les états financiers de 2017 "
+      "et de 2019 sont tronqués dans les fichiers publiés, et ceux de 2020 ne sont connus que par son rapport "
+      "d'activité, d'où viennent ses montants.")
+```
+
+::: {.callout-warning}
+2020 est l'année de la pandémie de COVID-19 : recettes, transferts et prestations s'y écartent de leur tendance. C'est pourquoi la couverture est aussi donnée année par année, de `{python} AN0` à `{python} AN1`, ci-dessous.
+:::
+
+Chaque montant de l'ouvrage porte la nature de sa source : série statistique, états financiers, rapport d'activité ou rapport du ministère (colonne « Source » du tableau « qui verse à qui »).
+
+Trois indicateurs mesurent la reconstruction, pour chaque secteur et chaque année :
+
+- la **part du montant couverte**, indicateur principal : somme, opération par opération, des postes propres au secteur, plafonnée au montant de l'INS de l'opération, rapportée au total des montants de l'INS du compte (emplois et ressources, hors soldes et hors compte financier, sans compter deux fois une opération et ses composantes). Un poste partiel ne couvre que son propre montant ; un poste qui chiffre une opération pour plusieurs secteurs (la TVA, versée par les ménages et les sociétés) ne compte pas ;
+- la **part du compte couverte** : montant de l'INS des opérations qui ont au moins un poste chiffré, rapporté au même total. Elle compte toute l'opération dès qu'un poste la chiffre, même en partie ;
+- la **justesse** : somme des postes rapportée au montant de l'INS, sur les seules opérations chiffrées dont tous les postes sont propres au secteur et couvrent sa contrepartie : les secteurs qui, selon l'INS, ont un montant à l'autre bout de l'opération (le secteur lui-même exclu). Par convention de l'ouvrage, une opération reste dans la justesse si les contreparties non couvertes pèsent au plus `{python} SEUIL_PCT` % de son montant. Les rémunérations reçues par les ménages, chiffrées par les seules masses salariales des administrations et du reste du monde, n'y entrent pas : les sociétés, premiers employeurs, n'ont pas de poste.
+
+Les deux parts baissent quand un poste perd son montant ; un test le vérifie.
+
+Un poste est rattaché au secteur qui verse, en emplois, et au secteur qui reçoit, en ressources ; les subventions versées par les administrations sont inscrites par l'INS en ressources négatives du payeur.
+
+```{python}
+#| echo: false
+#| output: asis
+_y = list(csv.DictReader(open("compte-couverture-annees.csv", encoding="utf-8")))
+_S = [("S13", "APU"), ("S1311", "État"), ("S1313", "Coll. locales"), ("S1314", "Séc. sociale"),
+      ("S14", "Ménages"), ("S11", "SNF"), ("S12", "SF"), ("S2", "Reste du monde")]
+_d = {(l["annee"], l["secteur"]): l for l in _y}
+_ans = sorted({l["annee"] for l in _y})
+_ech = list(csv.DictReader(open("compte-couverture-controles-echec.csv", encoding="utf-8")))
+_ans_ech = sorted({l["annee"] for l in _ech if l["secteur"].startswith("apu")})  # contrôles du compte des APU en échec
+for _ind, _n, _titre, _id in (
+        ("part_montant_couverte_pct", "operations_chiffrees", "Part du montant couverte, en % des montants de l'INS (opérations chiffrées sur opérations du compte)", "tbl-capu-part-montant"),
+        ("part_couverte_pct", "operations_chiffrees", "Part du compte couverte, en % des montants de l'INS (opérations chiffrées sur opérations du compte)", "tbl-capu-part-couverte"),
+        ("justesse_pct", "operations_justesse", f"Justesse, somme des postes en % du montant de l'INS sur les opérations chiffrées propres au secteur dont les postes couvrent les secteurs de contrepartie de l'INS, à {SEUIL_PCT} % près (nombre de ces opérations)", "tbl-capu-justesse")):
+    print("| Année | Base | " + " | ".join(n for _, n in _S) + " |")
+    print("|---|---|" + "--:|" * len(_S))
+    for an in _ans:
+        cells = []
+        for s, _ in _S:
+            l = _d.get((an, s))
+            _cons = ""
+            if not l and s == "S13" and _ind == "part_montant_couverte_pct" and _base_an[an] == "1983":
+                l = _d.get((an, "S13-consolide"))  # base 1983 : pas de somme des sous-secteurs, compte consolidé
+                _cons = "&nbsp;†"
+            if not l:
+                cells.append("—")
+                continue
+            v = (n(l[_ind]) + " %") if l[_ind] else "—"
+            cells.append(f"{v} ({l[_n]}/{l['operations']}){_cons}" if _ind.startswith("part") else f"{v} ({l[_n]})")
+        print(f"| {an}{'&nbsp;(c)' if an in _ans_ech else ''} | {_base_an[an]} | " + " | ".join(cells) + " |")
+    print(f"\n: {_titre} ; base : base des comptes de l'INS où l'année est lue ; (c) : contrôle du compte des "
+          f"administrations en échec dans la source, voir @tbl-capu-controles-echec {{#{_id}}}\n")
+```
+
+```{python}
+#| echo: false
+#| output: asis
+def _med(v):
+    v = sorted(v)
+    return v[len(v) // 2] if len(v) % 2 else (v[len(v) // 2 - 1] + v[len(v) // 2]) / 2
+_ec = {}
+for b in ("1997", "2015"):
+    _e = [float(_d[(a, "S13-consolide")]["part_montant_couverte_pct"]) - float(_d[(a, "S13")]["part_montant_couverte_pct"])
+          for a in _ans if _base_an[a] == b and (a, "S13") in _d and (a, "S13-consolide") in _d]
+    _ec[b] = (min(_e), max(_e), _med(_e))
+def _pt(x):
+    return f"{x:+.1f}".replace("-", "−").replace(".", ",")
+_cons_ans = [a for a in _ans if _base_an[a] == "1983" and (a, "S13") not in _d and (a, "S13-consolide") in _d]
+print(f"† {_cons_ans[0]} à {_cons_ans[-1]}, colonne des administrations publiques de @tbl-capu-part-montant : part du montant du **compte consolidé** "
+      "des administrations, seul compte des administrations publiques que les éditions retenues en base&nbsp;1983 donnent, et non la somme des trois "
+      "sous-secteurs comme les autres années. Les deux mesures ne se comparent pas directement : elles ne portent pas sur "
+      "les mêmes opérations. Là où les deux existent, la part du compte consolidé moins "
+      f"celle de la somme des sous-secteurs vaut {_pt(_ec['2015'][0])} à {_pt(_ec['2015'][1])}&nbsp;point (médiane "
+      f"{_pt(_ec['2015'][2])}) de {B15[0]} à {B15[-1]}, et de {_pt(_ec['1997'][0])} à {_pt(_ec['1997'][1])}&nbsp;points "
+      f"(médiane {_pt(_ec['1997'][2])}) de {B97[0]} à {B97[-1]}, où l'écart est moins stable. Aucun écart n'est "
+      "mesurable en base&nbsp;1983, où le seul compte est le consolidé. Les années marquées (c) gardent leur part.\n")
+```
+
+::: {.callout-note}
+De `{python} B83[0]` à `{python} B83[-1]`, la part du montant est mesurée sur les comptes des secteurs en base&nbsp;1983 (éditions `{python} ", ".join(_eds83)`), de `{python} B97[0]` à `{python} B97[-1]` sur les comptes en base&nbsp;1997 (éditions `{python} _eds97[0]` à `{python} _eds97[-1]`), de `{python} B15[0]` à `{python} B15[-1]` sur les comptes en base&nbsp;2015, dont `{python} B15[0]` est la première année (édition `{python} ED15`) [@ins-cnat-2015]. Chaque année est lue dans la base la plus récente qui la publie, dans la dernière édition où elle est définitive. Aucun raccord n'est fait entre les bases ([les bases successives](annexe-pib.html#sec-pib-bases)) : de `{python} B83[-1]` à `{python} B97[0]` et de `{python} B97[-1]` à `{python} B15[0]`, l'évolution de la part mêle l'effet du changement de base et celui des postes. En base&nbsp;1983 et en base&nbsp;1997, les opérations dont le code ne se raccorde pas par une identité à celui du SCN 2008 sont exclues du calcul : elles ne sont ni couvertes ni comptées dans le total. La redevance du gazoduc n'est pas comptée en loyers (D.45) en base&nbsp;1997 : avant la base&nbsp;2015, l'INS la comptait comme production du secteur transport [@ins-cnat-2015, éd. 2015-2020, vol. A, p. 17].
+:::
+
+```{python}
+#| echo: false
+#| output: asis
+_exc = [l for l in csv.DictReader(open("compte-couverture-operations-exclues.csv", encoding="utf-8")) if l["base"] == "1983"]
+_exc_ops = sorted({(l["code_scn2008"], l["libelle_scn2008"]) for l in _exc})
+_exc_ch = sorted({(l["code_scn2008"], l["libelle_scn2008"]) for l in _exc if l["poste_chiffre"] == "oui"})
+_sans_s13 = [a for a in B83 if a < S13_0]
+print(f"En base&nbsp;1983, les comptes des secteurs réunis ici ne comprennent pas celui de l'administration centrale : "
+      f"de {_sans_s13[0]} à {_sans_s13[-1]}, ni l'État ni les administrations publiques, somme des trois sous-secteurs, "
+      "ne sont mesurés ; seules les collectivités locales et la sécurité sociale le sont. Le code de "
+      f"{len(_exc_ops)}&nbsp;opérations de leurs comptes ne s'y raccorde pas par une identité au SCN 2008 : "
+      + ", ".join(f"{lib.lower()} ({c})" for c, lib in _exc_ops) + ". "
+      + (("Parmi elles, " + ", ".join(f"{'les' if lib.split()[0].endswith('s') else 'la'} {lib.lower()} ({c})"
+                                       for c, lib in _exc_ch)
+          + (" porte" if len(_exc_ch) == 1 and not _exc_ch[0][1].split()[0].endswith("s") else " portent")
+          + " un poste chiffré, retiré du calcul avec l'opération.\n") if _exc_ch else "\n"))
+```
+
+```{python}
+#| echo: false
+#| output: asis
+def _liste(xs):
+    xs = list(xs)
+    return xs[0] if len(xs) == 1 else ", ".join(xs[:-1]) + " et " + xs[-1]
+_ech_apu = [l for l in _ech if l["secteur"].startswith("apu")]
+_ans_c = {b: [a for a in _ans_ech if _base_an[a] == b] for b in ("1983", "1997")}
+_n_c = {a: sum(1 for l in _ech_apu if l["annee"] == a) for a in _ans_ech}
+_n_e = {a: sum(1 for l in _ech if l["annee"] == a and l["controle"] == "equilibre")
+        for a in sorted({l["annee"] for l in _ech if l["controle"] == "equilibre"})}
+_ss = {a: [l for l in _ech_apu if l["annee"] == a and l["touche_total"] == "compte"] for a in _ans_ech}
+_nom = {"apu_locale": "collectivités locales", "apu_secu": "sécurité sociale"}
+_t = [f"Les années marquées (c), {_liste(_ans_ech)}, gardent leur part du montant."]
+if _ans_c["1997"]:
+    _t.append(f"En base&nbsp;1997 ({_liste(_ans_c['1997'])}), leurs contrôles en échec "
+              f"({', '.join(f'{_n_c[a]}&nbsp;en&nbsp;{a}' for a in _ans_c['1997'])}) portent sur le compte consolidé des "
+              "administrations et sur ses soldes, qui n'entrent pas dans le total mesuré : les administrations y sont la "
+              "somme de leurs trois sous-secteurs, et les soldes sont hors du total.")
+if _ans_c["1983"]:
+    _t.append(f"En base&nbsp;1983 ({_liste(_ans_c['1983'])}), le total imprimé des ressources du compte de revenu du "
+              "compte consolidé des administrations s'écarte chaque année de la somme de ses lignes ; ce compte est hors "
+              "du total mesuré.")
+    _ssa = [a for a in _ans_c["1983"] if _ss[a]]
+    if _ssa:
+        _t.append("L'écart touche aussi le compte d'un sous-secteur mesuré, sans désigner l'opération en cause : "
+                  + "&nbsp;; ".join(f"{a}, {_liste(sorted({_nom.get(l['secteur'], l['secteur']) for l in _ss[a]}))} "
+                              f"({_liste(sorted({l['libelle_scn2008'].lower() for l in _ss[a]}))}, "
+                              f"{_liste([n(l['ecart_md']) for l in _ss[a]])}&nbsp;MD)" for a in _ssa) + ".")
+if _n_e:
+    _t.append("S'y ajoutent, presque chaque année de la base&nbsp;1997, des écarts d'équilibre entre les emplois et les "
+              "ressources d'une opération, tous secteurs réunis "
+              f"({', '.join(f'{v}&nbsp;en&nbsp;{a}' for a, v in _n_e.items())}) : ils ne désignent pas le secteur dont le "
+              "montant est en cause.")
+_t.append("@tbl-capu-controles-echec les donne tous.")
+print(" ".join(_t) + "\n")
+```
+
+::: {.callout-note collapse="true" title="Les contrôles de la source en échec, bases 1983 et 1997"}
+```{python}
+#| echo: false
+#| output: asis
+_portee = {"non": "hors du total", "oui": "dans le total", "indetermine": "secteur non désigné",
+           "compte": "compte du sous-secteur, opération non désignée"}
+_ctl = {"equilibre": "équilibre emplois-ressources", "solde": "solde recalculé", "consolidation": "consolidation des sous-secteurs",
+        "total": "total d'un côté du compte", "equilibre_compte": "équilibre du compte"}
+_sec = {"": "tous", "apu": "APU (compte consolidé)", "apu_centrale": "État", "apu_locale": "Coll. locales", "apu_secu": "Séc. sociale"}
+print("| Année | Base | Édition | Contrôle | Secteur | Objet | Publié | Recalculé | Écart | Portée |")
+print("|---|---|---|---|---|---|--:|--:|--:|---|")
+for l in _ech:
+    print(f"| {l['annee']} | {l['base']} | {l['edition']} | {_ctl[l['controle']]} | {_sec.get(l['secteur'], l['secteur'])} | {l['libelle_scn2008']} | "
+          f"{n(l['publie_md'])} | {n(l['recalcule_md'])} | {n(l['ecart_md'])} | {_portee[l['touche_total']]} |")
+print("\n: Contrôles arithmétiques en échec des séries des comptes des secteurs en base 1983 et en base 1997, années et "
+      "éditions retenues : en base 1997, pour le compte des administrations (solde, consolidation) et pour l'équilibre des "
+      "opérations retenues dans son total ; en base 1983, contrôles propres à la présentation du SCN 1968 (total de chaque "
+      "côté d'un compte des administrations face à la somme de ses lignes, équilibre du compte) ; millions de dinars "
+      "courants ; écart = publié − recalculé {#tbl-capu-controles-echec}\n")
+```
+:::
+
+Les administrations publiques (APU) sont mesurées comme la somme de leurs trois sous-secteurs, sans consolidation : dans le compte consolidé, la consommation finale passerait pour chiffrée dès que les soins de l'assurance maladie le sont, alors que la consommation de l'État ne l'est pas.
+
+```{python}
+#| echo: false
+#| output: asis
+_jm = [(int(l["annee"]), float(l["justesse_pct"])) for l in _y if l["secteur"] == "S14" and l["justesse_pct"]]
+if _jm:
+    _jmin, _jmax = min(_jm, key=lambda x: x[1]), max(_jm, key=lambda x: x[1])
+    print(f"La justesse des ménages va de {n(_jmin[1])} % en {_jmin[0]} à {n(_jmax[1])} % en {_jmax[0]}, "
+          f"sur les années {_jm[0][0]} à {_jm[-1][0]}.\n")
+else:
+    print("La justesse des ménages n'est mesurée pour aucune année : sur chaque opération chiffrée des ménages, les "
+          "postes ne couvrent pas tous les secteurs qui, selon l'INS, en sont la contrepartie.\n")
+```
+
+```{python}
+#| echo: false
+#| output: asis
+_a, _b = _d[(str(AN), "S13")], _d[(_ans[-1], "S13")]
+_fin = {s: max(int(l["annee"]) for l in _pa if l["secteur"] == s and int(l["postes_chiffres"]) > 0) for s in ("S1313", "S1314")}
+print(f"La part du montant couverte des administrations publiques passe de {n(_a['part_montant_couverte_pct'])} % en {AN} à "
+      f"{n(_b['part_montant_couverte_pct'])} % en {_ans[-1]} : les postes de la sécurité sociale "
+      f"s'arrêtent en {_fin['S1314']}, ceux des collectivités locales en {_fin['S1313']}, et les opérations de ces deux "
+      "sous-secteurs restent sans montant les années suivantes.")
+```
+
+Les pensions versées par la sécurité sociale (D.62) sont chiffrées jusqu'en 2020 par les publications des deux caisses ; de 2021 à 2023, les cotisations le sont d'après le rapport du ministère des Finances sur les entreprises publiques, mais le D.62 de ces années reste sans montant.
+
+<!-- TODO (documentaliste) : pensions CNSS et CNRPS 2021-2023 cherchées le 25/11/2026 (sites des caisses, archives du web) sans résultat (docs/notes/collecte-sources-manquantes-2026-11-25.md) ; décision du 25/11/2026 (M17) : laisser non chiffré, aucun poste estimé. -->
+
+En postes, la couverture remonte plus loin que les comptes des secteurs. @tbl-capu-longue-periode donne, pour chaque année de `{python} PA0` à `{python} AN1`, le nombre de postes chiffrés parmi les postes rattachés à chaque secteur ; `{python} PA0` est la première année où un poste de la sécurité sociale est chiffré. La part du montant couverte y figure à partir de `{python} AN0` pour les collectivités locales et la sécurité sociale, à partir de `{python} S13_0` pour l'État et les administrations publiques ; elle est mesurée comme dans la note ci-dessus. <!-- TODO (comptable-national) : comptes des secteurs en base 1983 versés en brouillon dans l'entrepôt (éditions 2001-2005, 2002-2006, 2004-2008), sans l'édition 2003-2007 ni le compte de l'administration centrale : vérifier si l'INS a publié ce compte (règle docs/procedures/affirmer-une-absence.md) ; les 50 correspondances « à valider » du SCN 1968 restent exclues du calcul jusqu'à ce qu'elles soient tranchées (question M10, docs/notes/questions-mahdi.md). La base 2015 est rétropolée jusqu'en 2010 pour le PIB (annexe-pib, tbl-pib-bases) : vérifier si des comptes des secteurs 2010-2014 en base 2015 sont publiés (règle docs/procedures/affirmer-une-absence.md). -->
+
+::: {.callout-note collapse="true" title="La couverture année par année, sur toute la période des séries"}
+```{python}
+#| echo: false
+#| output: asis
+_SL = [("S13", "APU"), ("S1311", "État"), ("S1313", "Coll. locales"), ("S1314", "Séc. sociale")]
+_dp = {(int(l["annee"]), l["secteur"]): l for l in _pa}
+_dm = {(int(l["annee"]), l["secteur"]): l for l in _y}
+print("| Année | " + " | ".join(f"{x}, postes chiffrés" for _, x in _SL) + " | "
+      + " | ".join(f"{x}, part du montant" for _, x in _SL) + " |")
+print("|---|" + "--:|" * (2 * len(_SL)))
+for an in sorted({a for a, _ in _dp}):
+    cells = [f"{_dp[(an, s)]['postes_chiffres']}/{_dp[(an, s)]['postes']}" for s, _ in _SL]
+    cells += [(n(_dm[(an, s)]["part_montant_couverte_pct"]) + " %")
+              if (an, s) in _dm and _dm[(an, s)]["part_montant_couverte_pct"] else "—" for s, _ in _SL]
+    print(f"| {an} | " + " | ".join(cells) + " |")
+print("\n: Couverture des administrations publiques et de leurs sous-secteurs par les postes de l'ouvrage, année par année : "
+      "postes chiffrés sur postes rattachés au secteur (qui verse ou qui reçoit) ; part du montant couverte, en % des montants "
+      f"de l'INS, à partir de {AN0}, chaque année dans une seule base, sans raccord entre bases (APU : somme des trois "
+      "sous-secteurs, non consolidée) "
+      "{#tbl-capu-longue-periode}\n")
+```
+:::
+
+
+## Les opérations des administrations publiques {#sec-capu-operations}
+
+Pour chaque opération du compte des administrations publiques consolidées, le tableau donne la valeur de l'INS, la somme des postes de l'ouvrage qui s'y rattachent, le **résidu** (valeur de l'INS moins somme des postes) et la couverture. Une opération agrégée (impôts sur la production et les importations, subventions, revenus de la propriété) somme aussi les postes de ses composantes. Les opérations sans poste chiffré ne sont pas reprises ici ; elles sont dans le fichier `compte-apu-reconstruit.csv`.
+
+```{python}
+#| echo: false
+#| output: asis
+print("| Opération | Emplois ou ressources | INS | Postes | Résidu | Justesse | Résidu nommé |")
+print("|---|---|--:|--:|--:|--:|---|")
+for l in _r:
+    if l["secteur"] == "S13" and l["somme_postes_md"] != "":
+        print(f"| {l['code_scn']} {l['operation'].replace('_', ' ')} | {l['cote']} | {n(l['cible_ins_md'])} | "
+              f"{n(l['somme_postes_md'])} | {n(l['residu_md'])} | {n(l['justesse_pct'])} % | {l['residu_nomme']} |")
+print(f"\n: Compte des administrations publiques consolidées, {AN} : INS et postes de l'ouvrage (millions de dinars courants) {{#tbl-capu-s13}}")
+```
+
+Les budgets de l'État chiffrent l'administration centrale ; les sous-secteurs sont détaillés dans `compte-apu-reconstruit.csv` (S1311 administration centrale, S1313 collectivités locales, S1314 sécurité sociale).
+
+## Qui verse à qui {#sec-capu-flux}
+
+```{python}
+#| echo: false
+#| output: asis
+_nat = {r["poste"]: r.get("nature_source", "") for r in csv.DictReader(open("postes-comptables.csv", encoding="utf-8"))}
+print("| Poste | Opération | Verse | Reçoit | Montant | Source | Contrepartie | Section |")
+print("|---|---|---|---|--:|---|---|---|")
+for l in _f:
+    vol, sec = l["section"].split("#")
+    lien = "[" + l["volume"] + "](" + vol + ".html#" + sec + ")"
+    print(f"| {l['poste']} | {l['code_scn']} | {l['verse'].replace(';', ', ')} | {l['recoit'].replace(';', ', ')} | "
+          f"{n(l['montant_md'])} | {_nat.get(l['poste'], '')} | {l.get('contrepartie', '')}{' (' + l['contrepartie_secteur'] + ')' if l.get('contrepartie_secteur') else ''} | {lien} |")
+print(f"\n: Les postes, leurs secteurs, leur contrepartie et leur section domicile, {AN} (millions de dinars courants ; montant vide : pas de série vérifiée ; contrepartie « établie » quand la source désigne le secteur qui paie, « marges publiées » quand les comptes donnent ce que chaque secteur verse et reçoit au total, sans la matrice de qui à qui, « sans objet » pour une opération sur produits ou un impôt sur les produits) {{#tbl-capu-flux}}")
+```
+
+## Qui verse à qui {#sec-capu-qui-verse}
+
+Pour chaque opération d'un poste, le tableau donne ce que chaque secteur verse (emplois) et reçoit (ressources) dans les comptes des secteurs de l'INS ; pour les administrations publiques, il détaille aussi les sous-secteurs.
+
+```{python}
+#| echo: false
+#| output: asis
+_q = list(csv.DictReader(open("compte-apu-qui-verse.csv", encoding="utf-8")))
+print("| Opération | Secteur | Verse (emplois) | Reçoit (ressources) |")
+print("|---|---|--:|--:|")
+cases = {}
+for l in _q:
+    cases.setdefault((l["code_scn"] + " " + l["libelle_ins"], l["secteur"]), {})[l["cote"]] = l["valeur_md"]
+for (op, sec), v in cases.items():
+    print(f"| {op} | {sec} | {n(v.get('emplois', ''))} | {n(v.get('ressources', ''))} |")
+print(f"\n: Qui verse à qui, {AN} (millions de dinars courants) {{#tbl-capu-qui-verse}}")
+```
+
+## Contrôles {#sec-capu-controles}
+
+```{python}
+#| echo: false
+#| output: asis
+print("| Contrôle | Objet | Écart | Note |")
+print("|---|---|--:|---|")
+for l in _c:
+    print(f"| {l['controle']} | {l['objet'].replace('_', ' ')} | {n(l['ecart_md'])} | {l['note']} |")
+print("\n: Contrôles de la reconstruction (millions de dinars) {#tbl-capu-controles}")
+```
+
+Les écarts connus entre les comptes et le budget — droits sur les importations, impôts courants, formation brute de capital fixe face aux dépenses d'équipement — apparaissent comme des résidus nommés, non corrigés ; ils sont discutés dans [l'annexe sur les comptes de la nation](annexe-comptes-nation.html#sec-cn-recoupements).
+
+## Comprendre les résidus de 2023 {#sec-capu-residus}
+
+```{python}
+#| echo: false
+_x = list(csv.DictReader(open("compte-apu-residus.csv", encoding="utf-8")))
+_s = list(csv.DictReader(open("compte-apu-residus-series.csv", encoding="utf-8")))
+_cible = {l["operation"]: l for l in _r if l["secteur"] == "S13"}
+def cite(src):
+    return "; ".join(f"[@{k.strip()}]" for k in src.split(";"))
+```
+
+Pour chaque opération, le tableau teste une à une les explications possibles de l'écart entre le compte de l'INS (S13 consolidé) et les postes de l'ouvrage, sans rien corriger. **Établi** : l'explication est mesurée par un chiffre sourcé. **Plausible** : elle n'est pas chiffrée, ou les chiffres sont seulement compatibles avec elle. **Écarté** : les chiffres la contredisent. Quatre tests reviennent pour chaque opération :
+
+- le **périmètre** : la part des collectivités locales et de la sécurité sociale, puis l'écart face à l'administration centrale (S1311) ;
+- le **moment d'enregistrement** : un écart qui change de signe d'une année à l'autre sur 2015-2023 évoque un décalage entre encaissement et droits constatés ; un signe constant désigne un périmètre ou un classement ;
+- la **source du budget** : réalisation ou prévision ;
+- le **classement** de l'opération dans les comptes et dans le budget.
+
+Chaque année est lue dans la dernière édition des comptes de la nation qui la publie.
+
+```{python}
+#| echo: false
+#| output: asis
+print("| Opération | INS | Postes | Écart | Hypothèse | Explication | Statut | Source |")
+print("|---|--:|--:|--:|---|---|---|---|")
+vu = set()
+for l in _x:
+    c = _cible.get(l["operation"])
+    tete = l["operation"] not in vu and c is not None
+    vu.add(l["operation"])
+    print(f"| {l['libelle'] if tete else ''} | {n(c['cible_ins_md']) if tete else ''} | {n(c['somme_postes_md']) if tete else ''} | "
+          f"{n(c['residu_md']) if tete else ''} | {l['hypothese']} | {l['explication']} | {l['statut']} | {cite(l['source'])} |")
+print(f"\n: Résidus du compte des administrations publiques, {AN} : explications testées (millions de dinars courants) {{#tbl-capu-residus}}")
+```
+
+Deux écarts ont un profil de définition plutôt que de calendrier. Les droits et taxes sur les importations (D.212) dépassent les droits de douane du budget dans un rapport presque constant. Les dépenses d'équipement du budget dépassent la FBCF de l'administration centrale d'un écart qui se creuse depuis 2021 ; jusqu'en 2020, la FBCF et les transferts en capital versés (D.9) en couvraient l'essentiel.
+
+```{python}
+#| echo: false
+#| output: asis
+for op, titre in (("impots_importations", "D.212 face aux droits de douane (S13)"), ("fbcf", "P.51g face aux dépenses d'équipement (S1311)")):
+    sec = "S13" if op == "impots_importations" else "S1311"
+    ls = [l for l in _s if l["operation"] == op and l["secteur"] == sec]
+    print("| Année | INS | Budget | Écart | Rapport |")
+    print("|---|--:|--:|--:|--:|")
+    for l in ls:
+        print(f"| {l['annee']} | {n(l['ins_md'])} | {n(l['postes_md'])} | {n(l['ecart_md'])} | {float(l['rapport']):.2f}".replace(".", ",") + " |")
+    print(f"\n: {titre}, 2015-{AN} (millions de dinars courants) {{#tbl-capu-serie-{op.replace('_', '-')}}}\n")
+```
+
+::: {.callout-note collapse="true"}
+## Les écarts de toutes les opérations, année par année
+
+```{python}
+#| echo: false
+#| output: asis
+print("| Opération | Secteur | Année | INS | Postes | Écart | Rapport |")
+print("|---|---|---|--:|--:|--:|--:|")
+for l in _s:
+    print(f"| {l['operation'].replace('_', ' ')} | {l['secteur']} | {l['annee']} | {n(l['ins_md'])} | {n(l['postes_md'])} | "
+          f"{n(l['ecart_md'])} | {float(l['rapport']):.3f}".replace(".", ",") + " |")
+print(f"\n: Écarts entre les comptes et les postes, 2015-{AN} (millions de dinars courants) {{#tbl-capu-residus-series}}")
+```
+:::
+
+## Références {.unnumbered}
+
+::: {#refs}
+:::

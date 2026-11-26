@@ -420,6 +420,8 @@ def _communes() -> dict[str, dict[tuple[str, int], tuple[float, str]]]:
     noms = {"dgct_agregats": "dgct", "somme_communes": "somme"}
     out: dict = {"dgct": {}, "somme": {}}
     for r in d.itertuples(index=False):
+        if r.source not in noms:  # autres sources (rapport de la HIFL, 2017-2020) : hors des figures
+            continue
         out[noms[r.source]][(r.variable, int(r.annee))] = (float(r.valeur), str(r.statut))
     return out
 

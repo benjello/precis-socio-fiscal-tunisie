@@ -39,7 +39,7 @@ crossref:
 
 ## Pourquoi cette annexe {#sec-dette-pourquoi}
 
-Les volumes du précis rapportent parfois une grandeur à la dette : le service de la dette dans les dépenses de l'État, le plafond ou l'encours des garanties accordées aux entreprises publiques, les dettes croisées entre l'État et ses entreprises. Aucun des treize volumes ne « possède » la dette publique : le service de la dette pèse sur le budget de l'État, les garanties et les prêts rétrocédés relèvent des *Entreprises publiques*, la soutenabilité touche tout dispositif qu'on rapporte au produit intérieur brut. La dette est l'agrégat de passif qui relie ces dispositifs.
+Les volumes de l'ouvrage rapportent parfois une grandeur à la dette : le service de la dette dans les dépenses de l'État, le plafond ou l'encours des garanties accordées aux entreprises publiques, les dettes croisées entre l'État et ses entreprises. Aucun des treize volumes ne « possède » la dette publique : le service de la dette pèse sur le budget de l'État, les garanties et les prêts rétrocédés relèvent des *Entreprises publiques*, la soutenabilité touche tout dispositif qu'on rapporte au produit intérieur brut. La dette est l'agrégat de passif qui relie ces dispositifs.
 
 Comme pour le [budget de l'État](annexe-budget-etat.html) et le [produit intérieur brut](annexe-pib.html), on en fait donc une **annexe commune** : les définitions et les périmètres vivent ici ; les volumes y accrochent une grandeur de dette par lien d'ancre, chaque fois qu'ils en rapportent une. Cette annexe dit ce que recouvre « la dette publique », de quel périmètre on parle selon la source, où une série change de définition, et comment lire une grandeur de dette.
 
@@ -96,6 +96,14 @@ C'est le miroir exact de l'[annexe sur le budget de l'État](annexe-budget-etat.
      en dinars et en % des dépenses de l'État, en miroir de #sec-bud-definitions.
      DÉPEND d'une série à sourcer (service de la dette, minfin/BCT) — absente de _seriescache/.
      Voir docs/notes/backlog-precis.md et docs/notes/annexe-dette-publique.md § 9. Ne pas inventer de chiffres. -->
+
+### Dans les comptes {#sec-dette-service-comptes}
+
+{{< include encadres-comptes/interets-dette-etat.md >}}
+
+### Du service de la dette à D.41 {#sec-dette-service-passage}
+
+{{< include encadres-comptes/passage-interets-racine.md >}}
 
 ## La dette extérieure, prêteur par prêteur {#sec-dette-exterieure}
 

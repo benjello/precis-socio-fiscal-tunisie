@@ -1,0 +1,18 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-11-24
+# séries (tunisia_data) : cnat-secteurs, cnat-produits
+# sources (citation) : @ins-cnat-2015
+# fiches : sources/ins-comptes-nationaux-publications.md
+# méthode/hypothèses : LE TABLEAU « DES MÉNAGES » TOTALISE LA CONSOMMATION FINALE GLOBALE (ménages et administrations publiques) : son ENSEMBLE est égal à la « Consommation finale globale » des emplois du PIB, non à la « Consommation privée » ; il comprend administration, enseignement, santé. Pour la consommation des seuls ménages, prendre la P.3 des comptes de secteur. DEUX BASES, JAMAIS CHAÎNÉES : filtrer `base`. Une année publiée par plusieurs éditions garde toutes ses lectures. Ligne « Services non marchands » des importations de 2005-2009 et 2008-2012 : valeurs nulles imprimées sur une partie des colonnes seulement, non versées.
+# note : Consommation finale des ménages et des administrations publiques, 2015-2025 (millions de dinars courants, base 2015)
+Année,Ménages (MD),Administrations publiques (MD),Somme,Total du tableau par produit (MD)
+2015,62317.7,17345.7,79663.4,79663.4
+2016,66654.6,19129.4,85784.0,85784.0
+2017,72052.0,20853.0,92905.0,92905.0
+2018,79505.0,22110.5,101615.5,101615.5
+2019,86906.2,24539.0,111445.2,111445.2
+2020,86936.9,27380.7,114317.6,114317.6
+2021,94880.0,29070.6,123950.6,123950.6
+2022,104823.6,30116.9,134940.5,134940.5
+2023,115669.2,30841.0,146510.2,146510.1
+2024,125362.2,32051.9,157414.1,157414.0
+2025,134669.3,33174.9,167844.2,167844.2

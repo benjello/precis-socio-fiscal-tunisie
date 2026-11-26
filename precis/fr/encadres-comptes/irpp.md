@@ -1,0 +1,3 @@
+::: {.callout-tip title="Dans les comptes"}
+Ce dispositif relève de l'opération **D.5 « Impôts courants sur les revenus et le patrimoine »** des comptes de la nation. En 2020 (édition 2020-2024), en millions de dinars, versent : sociétés non financières 5 238,9 ; sociétés financières 760,2 ; administrations publiques 8,7 ; ménages 5 305,7 ; reste du monde 321,0 ; reçoivent : administrations publiques 11 634,5. Les administrations publiques y inscrivent 11 634,5 millions de dinars (ressources) ; l'ouvrage en chiffre 8 945,3 pour ce dispositif. Voir [le compte reconstruit](../compte-apu.html#sec-capu-flux).
+:::

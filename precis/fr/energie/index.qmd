@@ -1,0 +1,85 @@
+# Présentation {#sec-energie-presentation}
+
+Ce livre décrit la branche de l'énergie du point de vue de l'action publique : ce qu'elle produit et ce qu'elle pèse dans la valeur ajoutée, les institutions et les entreprises publiques qui la portent, ce que l'État y dépense et y prélève, et ce qu'en disent les rapports et les études. Les prix administrés de l'électricité, du gaz et des carburants, et leur subvention, sont exposés dans « La compensation » ; ce livre y renvoie.
+
+::: {.callout-note}
+Ce volume est une **ébauche** : sa trame et ses premières séries sont établies, sa rédaction reste à faire. Il n'existe pour l'instant qu'en français.
+:::
+
+<!-- TODO (rédacteur) : première rédaction. Matière disponible dans l'entrepôt de données :
+     états financiers de la STEG 2013-2023 et séries tarifaires (cache : steg-*), rapports
+     annuels de l'ETAP 2004-2024 (etap-rapports-annuels), valeur ajoutée par branche
+     2020-2025 (ins-va-branche-base2015), FBCF par branche 2005-2025 par base (cnat-fbcf). -->
+
+## Le périmètre {#sec-energie-perimetre}
+
+Le livre suit les trois branches que la nomenclature agrégée des comptes de la nation de l'INS range dans l'énergie : l'extraction du pétrole et du gaz naturel, le raffinage du pétrole, la production et la distribution de l'électricité et du gaz [@ins-cnat-2015]. L'extraction des produits miniers (les phosphates) relève de l'industrie extractive et n'y entre pas.
+
+## Plan {#sec-energie-plan}
+
+1. **La branche en chiffres** ([section](#sec-energie-chiffres)) : valeur ajoutée, investissement, emploi.
+2. **Les institutions** ([chapitre](./_institutions.html#sec-energie-institutions)) : la tutelle de la branche.
+3. **Les entreprises publiques de l'énergie** ([chapitre](./_energie.html#sec-ep-energie)) : la STEG, l'ETAP, la STIR, la SNDP, la SOTRAPIL et la CTF, leurs textes, leurs comptes et leurs liens avec le budget ; les énergies renouvelables et le photovoltaïque.
+4. **La dépense publique** ([chapitre](./_depense.html#sec-energie-depense)) : transferts du budget aux entreprises de la branche, garanties, recettes que l'État en tire.
+5. **Rapports et études** ([chapitre](./_etudes.html#sec-energie-etudes)).
+
+## La branche en chiffres {#sec-energie-chiffres}
+
+La @fig-energie-va donne la valeur ajoutée des trois branches de l'énergie aux prix courants, de 2020 à 2025, et leur part dans le total des valeurs ajoutées.
+
+```{python}
+#| label: fig-energie-va
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import energie as en
+import figtools
+figtools.figure_tabs(
+    en.vues_va(), en.table_va(),
+    "ins-va-branche-base2015",
+    slug="fig_energie_va",
+    caption=("Valeur ajoutée des branches de l'énergie, 2020-2025 (millions de dinars "
+             "courants, base 2015) et part dans le total des valeurs ajoutées"),
+    note_lecture=(
+        "Chaque barre empile la valeur ajoutée de l'extraction du pétrole et du gaz, de "
+        "l'électricité et du gaz et du raffinage ; sa hauteur est le total de l'énergie. "
+        "Le second onglet rapporte ce total au total des valeurs ajoutées de la même édition."))
+```
+
+La valeur ajoutée de l'énergie passe de 3 663,2 millions de dinars en 2020 (3,3 % du total des valeurs ajoutées) à 7 368,6 en 2022 (5,4 %), puis redescend à 4 376,8 en 2025 (2,7 %) [@ins-cnat-2015]. L'extraction du pétrole et du gaz porte l'essentiel de ces variations : de 2 463,8 en 2020, sa valeur ajoutée monte à 5 440,7 en 2022 et revient à 2 975,3 en 2025. Celle de l'électricité et du gaz varie entre 1 122,1 (2020) et 1 702,1 (2024) ; celle du raffinage reste inférieure à 340 chaque année.
+
+La série ne commence qu'en 2020 parce qu'elle est tirée de la banque de données de l'INS. Les comptes de la nation publient pourtant la valeur ajoutée par branche en base 2015 dès 2015 : le tableau « Répartition sectorielle de la valeur ajoutée nominale » de l'édition 2015-2020 la donne de 2015 à 2020 [@ins-cnat-2015, éd. 2015-2020, p. 50-51], mais il n'est pas encore extrait. Les bases antérieures ne se chaînent pas avec la base 2015 (voir [l'annexe sur le PIB](../annexe-pib.html)).
+
+L'investissement des branches de l'énergie se lit sur une période plus longue. La @fig-energie-fbcf donne leur formation brute de capital fixe de 2005 à 2025, en deux segments : la base 1997 jusqu'en 2017, la base 2015 depuis 2015 ; les années 2015 à 2017, publiées dans les deux bases, montrent l'écart de niveau qui interdit de les raccorder.
+
+```{python}
+#| label: fig-energie-fbcf
+#| echo: false
+#| output: asis
+figtools.figure_tabs(
+    en.vues_fbcf(), en.table_fbcf(), "cnat-fbcf",
+    slug="fig_energie_fbcf",
+    caption=("Formation brute de capital fixe des branches de l'énergie, 2005-2025, base 1997 "
+             "(tirets) et base 2015 (traits pleins), millions de dinars courants"),
+    note_lecture=(
+        "Chaque année est lue dans l'édition la plus récente qui l'imprime, base par base. Les deux "
+        "bases ne sont pas raccordées : leurs années communes (2015-2017) se lisent comme un écart."))
+```
+
+Dans la base 2015, la FBCF annuelle de l'extraction du pétrole et du gaz est comprise entre 1 226,2 millions de dinars (2020) et 1 762,8 (2025), celle de l'électricité et du gaz entre 464,0 (2020) et 1 161,2 (2018), celle du raffinage entre 60,3 (2016) et 200,0 (2025) [@ins-cnat-2015]. Dans la base 1997, celle de l'extraction culmine à 2 379,0 en 2008.
+
+<!-- TODO (données) : valeur ajoutée par branche en base 1997 ; emploi par branche (source à
+     trouver : enquête nationale sur la population et l'emploi de l'INS). -->
+
+## Ce que d'autres livres traitent {#sec-energie-voisinage}
+
+Un dispositif vit dans un seul livre ; celui-ci en reçoit une phrase et un lien.
+
+| Sujet | Domicile | Ce que ce livre en reçoit |
+|---|---|---|
+| Statut des entreprises publiques, transferts, garanties, cessions (ensemble des entreprises) | « Les entreprises publiques » | des liens depuis le chapitre des entreprises de l'énergie |
+| Prix et subvention de l'électricité et du gaz | « La compensation », [chapitre « L'électricité et le gaz »](../compensation/_electricite_gaz.html#sec-compensation-electricite-gaz) | un lien |
+| Prix, subvention et recettes des carburants | « La compensation », [chapitre « Les carburants »](../compensation/_carburants.html#sec-compensation-carburants-chapitre) | un lien |
+| Dépollution industrielle | « L'environnement », [chapitre « La dépollution et les fonds »](../environnement/_depollution.html#sec-env-depollution) | un lien |
+
+: Les sujets voisins et le livre qui les expose {#tbl-energie-voisinage}

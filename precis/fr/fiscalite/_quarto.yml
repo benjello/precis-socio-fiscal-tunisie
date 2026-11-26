@@ -20,18 +20,24 @@ book:
     center: "[Accueil](../index.html) · [À propos et contribuer](../a-propos.html) · [Le PIB et ses changements de base](../annexe-pib.html) · [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.fr)"
   chapters:
     - index.qmd
-    - _impot_revenu.qmd
-    - _impot_societes.qmd
-    - _impot_fortune.qmd
-    - _contributions_conjoncturelles.qmd
-    - _patrimoine_immobilier.qmd
-    - _timbre_enregistrement.qmd
-    - _tva.qmd
-    - _droits_consommation.qmd
-    - _droits_douane.qmd
-    - _taxes_fonds_speciaux.qmd
-    - _regimes_incitation.qmd
-    - _depenses_fiscales.qmd
+    - part: "I. Les impôts courants sur le revenu et le patrimoine (D.5)"
+      chapters:
+        - _impot_revenu.qmd
+        - _impot_societes.qmd
+        - _impot_fortune.qmd
+        - _contributions_conjoncturelles.qmd
+    - part: "II. Les impôts sur les produits et sur la production (D.2), et les impôts en capital (D.91)"
+      chapters:
+        - _patrimoine_immobilier.qmd
+        - _timbre_enregistrement.qmd
+        - _tva.qmd
+        - _droits_consommation.qmd
+        - _droits_douane.qmd
+        - _taxes_fonds_speciaux.qmd
+    - part: "III. Les dispositifs qui traversent les impôts"
+      chapters:
+        - _regimes_incitation.qmd
+        - _depenses_fiscales.qmd
   appendices:
     - _tva_tableaux.qmd
     - _glossaire.qmd

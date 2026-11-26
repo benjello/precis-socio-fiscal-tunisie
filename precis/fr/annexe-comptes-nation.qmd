@@ -1,6 +1,6 @@
 ---
 title: "Les comptes de la nation"
-subtitle: "Annexe commune aux volumes : secteurs institutionnels, les trois approches du PIB, et les grandeurs auxquelles le précis rapporte ses chiffres"
+subtitle: "Annexe commune aux volumes : secteurs institutionnels, les trois approches du PIB, et les grandeurs auxquelles l'ouvrage rapporte ses chiffres"
 format:
   html:
     include-in-header: ../accueil.html
@@ -30,9 +30,9 @@ crossref:
 
 ## Pourquoi cette annexe {#sec-cn-pourquoi}
 
-Les volumes du précis rapportent souvent une grandeur à un agrégat des comptes nationaux : un impôt au [produit intérieur brut (PIB)](#g-pib), la masse salariale publique à la rémunération des salariés, les prestations d'un régime aux transferts sociaux. Ces agrégats ne sont pas des chiffres isolés : ils sont les soldes d'un système de comptes articulés, que l'Institut national de la statistique (INS) construit secteur par secteur et opération par opération. Cette annexe en expose l'ossature, pour que le lecteur situe une grandeur du précis dans l'ensemble macroéconomique dont elle est tirée.
+Les volumes de l'ouvrage rapportent souvent une grandeur à un agrégat des comptes nationaux : un impôt au [produit intérieur brut (PIB)](#g-pib), la masse salariale publique à la rémunération des salariés, les prestations d'un régime aux transferts sociaux. Ces agrégats ne sont pas des chiffres isolés : ils sont les soldes d'un système de comptes articulés, que l'Institut national de la statistique (INS) construit secteur par secteur et opération par opération. Cette annexe en expose l'ossature, pour que le lecteur situe une grandeur de l'ouvrage dans l'ensemble macroéconomique dont elle est tirée.
 
-La comptabilité nationale n'est pas une photographie de l'économie : c'est une **représentation** chiffrée, simplifiée et cohérente, que le statisticien construit à partir de conventions explicites. Son mérite n'est pas de tout dire, mais de tout **relier** — chaque grandeur y trouve sa place dans un circuit où la valeur est d'abord produite, puis répartie entre ceux qui l'ont fait naître, redistribuée par l'impôt et les prestations, enfin dépensée ou épargnée. Situer une grandeur du précis, c'est d'abord savoir à quel moment de ce circuit elle se lit.
+La comptabilité nationale n'est pas une photographie de l'économie : c'est une **représentation** chiffrée, simplifiée et cohérente, que le statisticien construit à partir de conventions explicites. Son mérite n'est pas de tout dire, mais de tout **relier** — chaque grandeur y trouve sa place dans un circuit où la valeur est d'abord produite, puis répartie entre ceux qui l'ont fait naître, redistribuée par l'impôt et les prestations, enfin dépensée ou épargnée. Situer une grandeur de l'ouvrage, c'est d'abord savoir à quel moment de ce circuit elle se lit.
 
 L'annexe [Le PIB et ses changements de base](annexe-pib.html) traite, elle, tout ce qui touche au PIB-dénominateur et aux bases successives des comptes (1983, 1997, 2015) : écarts de niveau, recalcul du passé, quel PIB emploie chaque source, comment lire une part du PIB. La présente annexe ne refait pas cette histoire : chaque fois qu'une base est en jeu, elle renvoie aux [bases des comptes nationaux](annexe-pib.html#sec-pib-bases).
 
@@ -65,12 +65,12 @@ Les comptes de la nation ne sont donc pas un stock d'agrégats juxtaposés, mais
 
 | Compte | Objet | Solde |
 |---|---|---|
-| Production | production − consommation intermédiaire | [valeur ajoutée brute](#g-valeur-ajoutee-brute) |
-| Exploitation | rémunère les facteurs de production (travail, capital) | [revenu d'exploitation](#g-revenu-exploitation-mixte) (revenu mixte pour les entreprises individuelles) |
-| Affectation des revenus primaires | ajoute les revenus de la propriété (intérêts, dividendes, loyers) | solde des revenus primaires, ou [revenu national](#g-revenu-national-brut) |
-| Distribution secondaire du revenu | transferts courants : impôts, cotisations et prestations sociales | [revenu disponible brut](#g-revenu-disponible-brut) |
-| Utilisation du revenu | revenu disponible − dépense de [consommation finale](#g-consommation-finale) | [épargne brute](#g-epargne-nationale-brute) |
-| Capital | épargne + transferts en capital − [FBCF](#g-formation-brute-capital-fixe) − actifs non produits | [capacité ou besoin de financement](#g-capacite-besoin-financement) |
+| Production | production − consommation intermédiaire | [valeur ajoutée brute](#g-valeur-ajoutee-brute) (B.1g) |
+| Exploitation | rémunère les facteurs de production (travail, capital) | [revenu d'exploitation](#g-revenu-exploitation-mixte) (B.2g + B.3g) : l'INS réunit sous ce nom l'excédent d'exploitation (B.2g) et le revenu mixte des entreprises individuelles (B.3g), que le SCN 2008 distingue |
+| Affectation des revenus primaires | ajoute les revenus de la propriété (intérêts, dividendes, loyers) | solde des revenus primaires (B.5g), ou [revenu national](#g-revenu-national-brut) |
+| Distribution secondaire du revenu | transferts courants : impôts, cotisations et prestations sociales | [revenu disponible brut](#g-revenu-disponible-brut) (B.6g) |
+| Utilisation du revenu | revenu disponible − dépense de [consommation finale](#g-consommation-finale) | [épargne brute](#g-epargne-nationale-brute) (B.8g) |
+| Capital | épargne + transferts en capital − [FBCF](#g-formation-brute-capital-fixe) − actifs non produits | [capacité ou besoin de financement](#g-capacite-besoin-financement) (B.9) |
 | Financier | variations de créances et de dettes | solde des créances et dettes |
 
 : La séquence des comptes et leurs soldes {#tbl-cn-sequence}
@@ -91,7 +91,7 @@ Déroulons ce récit, compte par compte ; chaque notion s'y définit là où ell
 
 **Les deux comptes d'accumulation**, enfin, disent ce que devient cette épargne. Le **compte de capital** l'emploie, avec les transferts en capital, à financer l'investissement — la [formation brute de capital fixe (FBCF)](#g-formation-brute-capital-fixe) — et l'acquisition d'actifs non produits, comme les terrains ; son solde, la [capacité ou le besoin de financement](#g-capacite-besoin-financement), dit si l'agent a dégagé plus de ressources qu'il n'en a employées, ou l'inverse. Le **compte financier** retrace alors comment ce besoin est couvert, ou cette capacité placée, en créances et en dettes.
 
-Une dernière distinction court tout du long. Produire use les machines et les bâtiments ; cette usure — la **consommation de capital fixe**, ce qu'on appelle couramment les amortissements — doit être remplacée ne serait-ce que pour maintenir l'appareil productif en l'état. Un solde calculé avant de la déduire est dit **brut** ; après, **net**. Le précis cite le plus souvent les grandeurs **brutes**, que l'INS publie en premier et qui ne préjugent pas de l'ampleur, toujours incertaine, de ces amortissements.
+Une dernière distinction court tout du long. Produire use les machines et les bâtiments ; cette usure — la **consommation de capital fixe**, ce qu'on appelle couramment les amortissements — doit être remplacée ne serait-ce que pour maintenir l'appareil productif en l'état. Un solde calculé avant de la déduire est dit **brut** ; après, **net**. L'ouvrage cite le plus souvent les grandeurs **brutes**, que l'INS publie en premier et qui ne préjugent pas de l'ampleur, toujours incertaine, de ces amortissements.
 
 Agrégés au niveau de la nation, ces soldes forment un chaînage qui va du PIB à l'épargne [@ins-cnat-2015, éd. 2019-2023, p. 30] :
 
@@ -111,11 +111,56 @@ Trois grands tableaux ferment le système [@ins-scnt97-presentation, p. 1 et pp.
 - le **tableau des opérations financières (TOF)** retrace les flux nets de créances et de dettes par secteur ; les éditions en base 2015 le portent dans leur Volume B.
 :::
 
+## Le compte financier par secteur et l'équilibre des produits {#sec-cn-tof-tre}
+
+Le tableau des opérations financières (TOF) des éditions en base 2015 donne, pour chaque secteur, les flux nets de créances et de dettes par instrument, et leur solde, le solde des créances et dettes [@ins-cnat-2015]. La @fig-cn-tof en donne ce solde pour les quatre secteurs résidents, de 2015 à 2025, chaque année étant lue dans l'édition la plus récente qui l'imprime.
+
+```{python}
+#| label: fig-cn-tof
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../scripts")
+from figures import annexe_comptes_nation as acn
+import figtools
+figtools.figure_tabs(
+    acn.vues_tof(), acn.table_tof(), "cnat-tof",
+    slug="fig_cn_tof",
+    caption="Solde des créances et dettes par secteur institutionnel, 2015-2025 (millions de dinars courants, base 2015)",
+    note_lecture=(
+        "Un solde négatif est un besoin de financement couvert par l'endettement net ; un solde positif, "
+        "une capacité de financement placée. L'onglet « Données » donne aussi la somme des quatre "
+        "secteurs et le solde imprimé pour le reste du monde, qui lui est égal à l'arrondi près."))
+```
+
+Les administrations publiques ont un besoin de financement chaque année, de 2 512,4 millions de dinars en 2015 à 10 709,9 en 2022 ; les sociétés financières et les ménages ont une capacité de financement chaque année. Les sociétés non financières passent d'un besoin de 10 210,9 en 2018 à une capacité en 2023 et 2024. La somme des quatre secteurs est égale, à 0,1 près, au solde imprimé pour le reste du monde : c'est l'endettement net de la nation envers l'extérieur [@ins-cnat-2015].
+
+Le tableau des ressources et des emplois (TRE) équilibre, pour chaque produit, les ressources (production, importations, impôts et subventions sur les produits, marges) et les emplois (consommation intermédiaire, consommation finale, formation brute de capital fixe, variation des stocks, exportations) [@ins-cnat-2015]. La @fig-cn-tre en donne les emplois de l'ensemble des produits.
+
+```{python}
+#| label: fig-cn-tre
+#| echo: false
+#| output: asis
+figtools.figure_tabs(
+    acn.vues_tre(), acn.table_tre(), "cnat-tre",
+    slug="fig_cn_tre",
+    caption="Emplois de l'ensemble des produits dans le tableau des ressources et des emplois, 2015-2025 (millions de dinars courants, base 2015)",
+    note_lecture=(
+        "Chaque groupe de barres donne, pour une année, les cinq emplois des produits ; leur somme est "
+        "égale au total des ressources, donné dans l'onglet « Données »."))
+```
+
+Le total des ressources de l'ensemble des produits passe de 302 072,2 millions de dinars en 2021 à 405 862,4 en 2025 (compte provisoire) [@ins-cnat-2015]. Les deux tableaux sont lus dans les PDF de l'INS et contrôlés à l'arrondi de la publication : pour le TOF, égalité des créances et des dettes par instrument et raccord du solde avec la capacité de financement des comptes de secteur ; pour le TRE, ressources égales aux emplois par produit, 3 496 contrôles satisfaits sur 3 507, les autres écarts étant listés.
+
+<!-- TODO (rédacteur) : TOF par instrument pour les administrations publiques (crédits, titres) ;
+     TRE par produit (part des importations dans les ressources). -->
+
 ## Les comptes, désagrégés par secteur {#sec-cn-comptes-secteurs}
 
-La séquence que l'on vient de parcourir vaut pour chaque **secteur institutionnel** pris à part : les sociétés non financières, les sociétés financières, les administrations publiques, les ménages, et le reste du monde en miroir. Le navigateur ci-dessous la déroule, année par année (chacune dans sa base des comptes, la plus récente qui la couvre, étiquetée), compte par compte, secteur par secteur, dans la présentation de l'INS. On lit en italique les **soldes** — la valeur ajoutée, le revenu d'exploitation, le solde des revenus primaires, le revenu disponible brut, l'épargne, la capacité ou le besoin de financement — chacun reporté en tête du compte suivant. Les valeurs sont celles des comptes de l'INS, lues telles quelles (les soldes ne sont pas recalculés).
+La séquence que l'on vient de parcourir vaut pour chaque **secteur institutionnel** pris à part : les sociétés non financières, les sociétés financières, les administrations publiques, les ménages, et le reste du monde en miroir. Le navigateur ci-dessous la déroule, année par année (chacune dans sa base des comptes, la plus récente qui la couvre, étiquetée), compte par compte, secteur par secteur, dans la présentation de l'INS. On lit en italique les **soldes** — la valeur ajoutée, le revenu d'exploitation, le solde des revenus primaires, le revenu disponible brut, l'épargne, la capacité ou le besoin de financement — chacun reporté en tête du compte suivant. Pour les années en base 2015, chaque opération est donnée de ses deux côtés, emplois et ressources, comme l'INS la publie. Les valeurs sont celles des comptes de l'INS, lues telles quelles ; les soldes ne sont pas recalculés pour l'affichage, mais ils ont été vérifiés (voir ci-dessous).
 
-Trois lectures que ce tableau rend immédiates : le **revenu mixte** des ménages gonfle leur revenu d'exploitation, bien au-delà des sociétés (voir l'[approche revenus](#sec-cn-approches)) ; les **administrations publiques** portent l'essentiel des prestations sociales et un besoin de financement négatif qui est le déficit public au sens des comptes, à **périmètre consolidé** (central + local + sécurité sociale), distinct des [périmètres budgétaires](#sec-cn-concordance) ; le **reste du monde** n'a que les opérations qui le lient aux résidents, d'où ses lignes vides. Le curseur ci-dessous déroule la séquence, chaque année dans sa base (les bases ne se chaînent pas : une année est un instantané). Le **revenu disponible brut** des ménages n'est pas porté pour 2020-2023 (ligne absente de l'édition INS qui couvre ces années) ; son épargne et sa consommation finale, elles, le sont.
+Trois lectures que ce tableau rend immédiates : le **revenu mixte** des ménages gonfle leur revenu d'exploitation, bien au-delà des sociétés (voir l'[approche revenus](#sec-cn-approches)) ; les **administrations publiques** portent l'essentiel des prestations sociales et un besoin de financement négatif qui est le déficit public au sens des comptes, à **périmètre consolidé** (central + local + sécurité sociale), distinct des [périmètres budgétaires](#sec-cn-concordance) ; le **reste du monde** n'a que les opérations qui le lient aux résidents, d'où ses lignes vides. Le curseur ci-dessous déroule la séquence, chaque année dans sa base (les bases ne se chaînent pas : une année est un instantané). Pour les années en base 1997 (2005-2014), seuls les soldes, la consommation finale et la formation brute de capital fixe sont repris : la série de ces années ne distingue pas les emplois des ressources.
+
+**Des comptes vérifiés.** Pour les six éditions en base 2015 (2015-2020 à 2021-2025), chaque opération de répartition a été rapprochée entre secteurs (le total des emplois égale celui des ressources), chaque solde a été recalculé à partir des opérations, les sous-secteurs ont été sommés face à leur secteur, et le PIB a été retrouvé à partir des valeurs ajoutées et des impôts nets sur les produits. Sur 2 046 contrôles, 1 983 tombent dans l'arrondi des valeurs publiées (0,05 MD par valeur en jeu) ; 62 s'expliquent par deux traits de la présentation de l'INS (le reste du monde ne ventile pas en salaires et cotisations la rémunération qu'il verse et reçoit ; les administrations publiques portent une « correction SIFIM » à côté de leurs intérêts versés) ; un écart de 0,5 MD sur les autres transferts courants divers de 2023, dans l'édition 2019-2023, est propre à la publication [@ins-cnat-2015].
 
 ```{python}
 #| echo: false
@@ -157,15 +202,15 @@ sequenceTable = {
     }
   }
   return html`<div class="comptes-nav">
-    <div class="comptes-titre">La séquence des comptes par secteur — <b>${anneeSeq}</b>, base ${base}, en millions de dinars</div>
+    <div class="comptes-titre">La séquence des comptes par secteur — <b>${anneeSeq}</b>, base ${base}${(sequence.editionAnnee || {})[String(anneeSeq)] ? `, édition ${sequence.editionAnnee[String(anneeSeq)]}` : ""}, en millions de dinars</div>
     <table class="table-comptes table-sequence"><thead>${entete}</thead><tbody>${corps}</tbody></table>
-    <div class="comptes-note">Soldes en italique, reportés en tête du compte suivant ; valeurs lues dans les comptes de l'INS, non recalculées.
-      Administrations publiques <b>consolidées</b> (central + local + sécurité sociale). Les lignes de distribution
-      secondaire et au-delà du compte des <b>ménages</b> (revenu disponible, épargne, capacité de financement) ne sont
-      pas reportées : les prestations sociales reçues n'y sont pas captées par les tables disponibles, ce qui
-      sous-estimerait le revenu disponible. Chaque année est un instantané dans <b>sa</b> base (la plus récente qui
-      la couvre, affichée ci-dessus) ; les bases 1997 et 2015 ne se chaînent pas (voir les <a href="annexe-pib.html#sec-pib-bases">bases du PIB</a>).
-      Source : INS, <i>Comptes de la nation</i> [@ins-cnat-2015].</div>
+    <div class="comptes-note">Soldes en italique, reportés en tête du compte suivant ; valeurs lues dans les comptes de l'INS.
+      Administrations publiques <b>consolidées</b> (central + local + sécurité sociale). La colonne du <b>reste du monde</b>
+      se lit de son point de vue : ce qu'il reçoit des résidents figure en ressources, ce qu'il leur verse en emplois.
+      Pour une année, l'édition la plus récente qui la porte (affichée ci-dessus) ; la dernière année d'une édition est
+      provisoire. Chaque année est un instantané dans <b>sa</b> base ; les bases 1997 et 2015 ne se chaînent pas (voir les
+      <a href="annexe-pib.html#sec-pib-bases">bases du PIB</a>). Années en base 1997 : soldes, consommation finale et FBCF seulement.
+      Source : INS, <i>Comptes de la nation</i> [@ins-cnat-2015].</div>
   </div>`;
 }
 ```
@@ -181,6 +226,31 @@ table.table-sequence th.num{text-align:right}
 ```
 
 :::
+
+## Les comptes des administrations face au budget de l'État {#sec-cn-recoupements}
+
+Les volumes de l'ouvrage chiffrent les dispositifs avec des séries budgétaires : ce que le budget de l'État encaisse ou dépense. Les comptes de la nation décrivent les mêmes flux pour l'ensemble des administrations publiques, en droits constatés. Le tableau ci-dessous rapproche, année par année, six grandeurs des comptes et la série budgétaire correspondante ; il donne l'écart en pourcentage de la série budgétaire. Un écart stable dit une différence de périmètre, non une erreur de l'une ou de l'autre source.
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../scripts")
+from figures import annexe_comptes_nation as acn
+print(acn.recoupements_md())
+print()
+print(": Écart entre les comptes des administrations publiques et la série budgétaire de l'État, en % de la série budgétaire, base 2015 {#tbl-cn-recoupements}")
+```
+
+Ce que chaque ligne rapproche :
+
+- **TVA** : la TVA non déductible reçue par les administrations publiques, face à la TVA encaissée par le budget de l'État [@minfin-recettes-fiscales]. Les deux concordent à 2,5 % près chaque année.
+- **Droits et impôts sur les importations** : les droits et impôts sur les importations hors TVA des comptes, face aux droits de douane du budget [@minfin-recettes-fiscales]. L'écart, d'un quart environ, est stable sur toute la période.<!-- TODO (documentaliste) : établir ce que les comptes rangent dans « droits et impôts sur les importations (hors TVA) » au-delà des droits de douane du budget. Consultés le 24/11/2026 sans réponse : la note de l'INS sur le changement de base de 2021 (pas de définition de la rubrique) et le tableau « Impôts indirects nets de subventions sur les produits » de l'édition 2021-2025, qui ne la détaille pas. Piste : les recettes douanières par nature du ministère des Finances (droits de consommation et autres prélèvements perçus en douane). -->
+- **Impôts courants sur le revenu et le patrimoine** : face à l'impôt sur le revenu et à l'impôt sur les sociétés encaissés par l'État [@minfin-recettes-fiscales]. L'écart change de signe d'une année à l'autre et reste, sauf en 2018, 2019 et 2025, sous 6 %.<!-- TODO (documentaliste) : vérifier si l'écart tient au moment d'enregistrement (droits constatés face aux encaissements) ou au périmètre (impôts perçus par d'autres administrations). -->
+- **Subventions sur les produits** : face à la dépense budgétaire de compensation (produits de base, carburants, transport), dont les sources sont détaillées au chapitre [La dépense budgétaire](compensation/_depense.html) du volume Compensation. Les comptes portent toutes les subventions sur les produits ; les écarts les plus forts (2018-2019, 2020, 2022) tombent les années où la dépense de compensation a le plus varié.
+- **Rémunération des salariés** : celle des administrations publiques consolidées, cotisations des employeurs comprises, face aux dépenses de rémunération du budget de l'État [@minfin-repartition-depenses-xls]. Les comptes y ajoutent les collectivités locales, la sécurité sociale et les cotisations imputées ; l'écart va de 5,8 à 9,5 % selon les années.
+- **FBCF** : la formation brute de capital fixe des administrations publiques, face aux dépenses d'équipement du budget [@minfin-repartition-depenses-xls]. L'écart se creuse à partir de 2019 et dépasse 40 % de 2021 à 2023.<!-- TODO (documentaliste) : rapprocher la nomenclature des dépenses d'équipement de la FBCF des comptes (part des dépenses d'équipement qui n'est pas de la formation de capital). -->
+
+Les valeurs des deux familles, année par année, sont dans la série `cnat-recoupements` ; celles des comptes viennent de l'INS [@ins-cnat-2015].
 
 ## Les trois approches du PIB {#sec-cn-approches}
 
@@ -316,7 +386,7 @@ comptesAnnee = {
 
 ## Les grandeurs citables {#sec-cn-agregats}
 
-Le tableau suivant réunit les agrégats auxquels le précis rapporte ses chiffres, avec leur définition et leur niveau 2021 en base 2015. Chaque fois qu'une de ces grandeurs est citée dans un volume, sa base doit être déclarée, comme pour toute part du PIB (voir les [bases du PIB](annexe-pib.html#sec-pib-bases)).
+Le tableau suivant réunit les agrégats auxquels l'ouvrage rapporte ses chiffres, avec leur définition et leur niveau 2021 en base 2015. Chaque fois qu'une de ces grandeurs est citée dans un volume, sa base doit être déclarée, comme pour toute part du PIB (voir les [bases du PIB](annexe-pib.html#sec-pib-bases)).
 
 | Grandeur | Définition | Niveau 2021 (MD) |
 |---|---|---:|
@@ -336,9 +406,9 @@ Sources : [@ins-cnat-2015, éd. 2019-2023, p. 24, p. 27, p. 30 et p. 55]. Les ni
 
 ## Quel volume touche quel compte {#sec-cn-concordance}
 
-Cette table relie chaque volume du précis à la « case » des comptes où sa grandeur se lit. Elle est **descriptive** : elle dit où une grandeur figure dans les comptes, non qu'elle égale le chiffre budgétaire du volume. Les périmètres comptables et budgétaires ne coïncident pas, et le degré de concordance est déclaré ligne par ligne.
+Cette table relie chaque volume de l'ouvrage à la « case » des comptes où sa grandeur se lit. Elle est **descriptive** : elle dit où une grandeur figure dans les comptes, non qu'elle égale le chiffre budgétaire du volume. Les périmètres comptables et budgétaires ne coïncident pas, et le degré de concordance est déclaré ligne par ligne.
 
-| Volume du précis | Case des comptes | Niveau 2021 (MD) | Concordance |
+| Volume de l'ouvrage | Case des comptes | Niveau 2021 (MD) | Concordance |
 |---|---|---:|---|
 | Rémunérations publiques | Administrations publiques — rémunération des salariés | 21 710,6 | Partielle. Le périmètre comptable (central, local et sécurité sociale, consolidés ; salaires bruts et cotisations employeurs, dont imputées) diffère de la masse salariale budgétaire de l'État. |
 | Prestations sociales, retraites | Organismes de sécurité sociale — prestations sociales en espèces | 10 577,5 | Bonne pour le périmètre sécurité sociale (CNSS, CNRPS, CNAM consolidés), hors prestations servies hors organismes. |
@@ -347,15 +417,17 @@ Cette table relie chaque volume du précis à la « case » des comptes où sa g
 | Finances locales | Administrations publiques — collectivités locales (FBCF) | 425,7 | Faible. Les éditions lues n'isolent les collectivités locales que par leur FBCF, sans séquence complète de comptes. |
 | Marché du travail, informel | Ménages — revenu d'exploitation / revenu mixte (entreprises individuelles) | 39 961,6 | Contextuelle ; les entreprises individuelles sont logées chez les ménages. |
 
-: Concordance entre les volumes du précis et les comptes de la nation, niveaux 2021, base 2015 {#tbl-cn-concordance}
+: Concordance entre les volumes de l'ouvrage et les comptes de la nation, niveaux 2021, base 2015 {#tbl-cn-concordance}
 
 Sources : [@ins-cnat-2015, éd. 2019-2023, p. 27, p. 55, p. 69, p. 100 et pp. 101-102].
 
+Cette table ne retient que six grandeurs. La correspondance complète, opération par opération, secteur par secteur et côté par côté, avec les opérations qu'aucun volume ne documente encore, est sur la page [Les comptes nationaux et les volumes](correspondance-comptes.html).
+
 ## Ce que les comptes ne disent pas {#sec-cn-limites}
 
-Trois limites bornent l'usage des comptes dans le précis.
+Trois limites bornent l'usage des comptes dans l'ouvrage.
 
-**Pas de comptes de patrimoine.** L'INS précise que « seuls les comptes de flux sont disponibles » et que les comptes de patrimoine « ne sont pas encore élaborés » [@ins-scnt97-presentation, p. 4]. Les comptes de la nation mesurent donc des flux annuels (production, revenus, épargne, investissement), non des stocks : il n'existe pas de bilan patrimonial national dans le système lu ici.
+**Des comptes de patrimoine financiers seulement.** En base 1997, l'INS précisait que « seuls les comptes de flux sont disponibles » et que les comptes de patrimoine « ne sont pas encore élaborés » [@ins-scnt97-presentation, p. 4]. En base 2015, il publie des comptes de patrimoine financiers : pour chaque secteur et chaque instrument financier, les encours de fin d'année de 2014 à 2020 (« tableau des opérations financières en encours ») et les flux d'opérations de 2015 à 2020 (tableaux des opérations financières) [@ins-cnat-2015, éd. 2015-2020, vol. B, p. 14-25 et 28-41]. Le texte de méthode décrit aussi les réévaluations et les autres changements de volume (p. 4), mais aucun tableau ne les publie : la variation des encours diminuée des flux n'en donne que la somme. Il n'existe pas de compte de patrimoine non financier : les actifs produits et non produits (logements, équipements, terrains) ne sont mesurés qu'en flux.
 
 **Des périmètres consolidés.** Les administrations publiques des comptes consolident administration centrale, collectivités locales et organismes de sécurité sociale ; seule la formation brute de capital fixe décompose ces sous-secteurs [@ins-cnat-2015, éd. 2019-2023, p. 69]. Un agrégat comptable d'administrations publiques ne se superpose donc jamais exactement à un périmètre budgétaire d'un volume : la [concordance](#sec-cn-concordance) doit être déclarée case par case.
 

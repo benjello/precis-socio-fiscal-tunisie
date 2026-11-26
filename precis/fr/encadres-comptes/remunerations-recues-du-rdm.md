@@ -1,0 +1,3 @@
+::: {.callout-tip title="Dans les comptes"}
+Ce dispositif relève de l'opération **D.1 « Rémunération des salariés »** des comptes de la nation. En 2020 (édition 2020-2024), en millions de dinars, versent : sociétés non financières 21 593,9 ; sociétés financières 2 623,9 ; administrations publiques 20 508,6 ; ménages 6 832,2 ; reste du monde 206,2 ; reçoivent : ménages 51 729,6 ; reste du monde 35,2. Le reste du monde y inscrit 206,2 millions de dinars (emplois) ; l'ouvrage en chiffre 1 279,8 pour ce dispositif. Voir [le compte reconstruit](../compte-apu.html#sec-capu-flux).
+:::

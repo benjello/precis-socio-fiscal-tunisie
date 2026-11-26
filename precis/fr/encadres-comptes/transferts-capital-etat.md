@@ -1,0 +1,3 @@
+::: {.callout-tip title="Dans les comptes"}
+Ce dispositif relève de l'opération **D.9 « Transferts en capital »** des comptes de la nation. En 2020 (édition 2020-2024), en millions de dinars, versent : sociétés non financières 339,8 ; administrations publiques 2 022,9 ; ménages 266,1 ; reste du monde 1 048,8 ; reçoivent : sociétés non financières 845,5 ; administrations publiques 1 542,1 ; ménages 1 268,1 ; reste du monde 22,0. Les administrations publiques y inscrivent 2 022,9 millions de dinars (emplois) ; l'ouvrage ne chiffre pas encore ce dispositif. Voir [le compte reconstruit](../compte-apu.html#sec-capu-flux).
+:::

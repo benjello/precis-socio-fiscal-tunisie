@@ -229,6 +229,26 @@ figtools.figure_tabs(
 )
 ```
 
+{{< include ../encadres-comptes/cotisations-cnss-2021-2023.md >}}
+
+Les cotisations encaissées que publie la CNSS s'arrêtent en 2020 (livre des cotisations sociales, [Ce que les cotisations rapportent](../cotisations_sociales/_bilan.html#sec-cot-rendement)). Pour 2021 à 2023, ce poste retient les recettes techniques de la caisse que donne le rapport du ministère des Finances sur les entreprises publiques : 3 749,2 millions de dinars en 2021 et 4 168,7 en 2022, réalisés, 4 556,9 en 2023, provisoire [@minfin-ep-2025, p. 43]. En 2020, ces recettes techniques valent 3 430,0 millions de dinars [@minfin-ep-2024, tableau 28, p. 68], le montant des cotisations encaissées publié par la caisse pour la même année [@cnss-chiffres] : les deux sources mesurent la même grandeur. L'année 2020 reste chiffrée par la série de la caisse.
+
+```{python}
+#| echo: false
+import sys; sys.path.insert(0, "../../../scripts")
+import passage_comptes as pc
+_d = {}
+for _a in pc.annees():
+    _v = [pc.montant(p, _a) for p in ("cotisations-cnss-2021-2023", "cotisations-cnrps-2021-2023", "cotisations-cnam")]
+    _i = pc.cible("apu_secu", "ressources", "D.61", "cotisations_sociales", _a)[0]
+    if None not in _v and _i:
+        _d[_a] = {"ecart": 100 * sum(_v) / _i - 100}
+_e = pc.extremes(_d, "ecart")
+cnss_ecart_min, cnss_ecart_max, cnss_an_1, cnss_an_2 = _e["min"], _e["max"], _e["premier"], _e["dernier"]
+```
+
+Les comptes de la nation donnent les cotisations de la sécurité sociale dans son ensemble. La somme des recettes de la CNSS, de la CNRPS et de la CNAM est rapprochée, année par année, des cotisations sociales (D.61) reçues par la sécurité sociale dans le livre des cotisations sociales ([Des recettes de la caisse au chiffre des comptes](../cotisations_sociales/_pensions.html#sec-cot-pensions-passage)) : de `{python} cnss_an_1` à `{python} cnss_an_2`, elle les dépasse de `{python} cnss_ecart_min` à `{python} cnss_ecart_max`.
+
 ## L'ensemble des organismes de sécurité sociale, 2001-2025 {#sec-caisses-s1314}
 
 Pris ensemble, les organismes de sécurité sociale encaissent chaque année un peu plus de cotisations qu'ils ne versent de prestations, et leur compte est proche de l'équilibre d'un bout à l'autre de la période. Les comptes de la nation de l'Institut national de la statistique donnent, de 2001 à 2025, les cotisations reçues, les prestations versées, les transferts échangés avec les autres administrations publiques et la capacité ou le besoin de financement de ce sous-secteur consolidé, sans le ventiler par caisse ni par branche [@ins-cnat-2015] (@fig-caisses-s1314-organismes). Les cotisations reçues passent de 1,8 milliard de dinars courants en 2001 à 15,2 en 2025, les prestations versées de 1,4 à 13,2 milliards ; les deux progressent d'un facteur proche, et l'écart entre elles finance les frais de gestion, les transferts versés et, pour le solde, l'épargne du sous-secteur. La capacité ou le besoin de financement reste faible : chaque année, il tient en valeur absolue sous 1 % du produit intérieur brut, positif la plupart des années — jusqu'à 459 millions de dinars en 2007 — et négatif quelques-unes, dont 2011, 2014, 2015, 2018 et 2019, le besoin le plus large étant celui de 2018, à 416 millions de dinars. Les transferts courants reçus des autres administrations publiques, longtemps inférieurs à 300 millions de dinars par an, s'élèvent à partir de 2015 et dépassent le milliard de dinars depuis 2020 ; les transferts versés aux autres administrations publiques les suivent de plus loin. Ces comptes ne distinguent pas la CNSS, la CNRPS et la CNAM : la vue par caisse qu'offrent la rétrospective de la CNSS jusqu'en 2004 (@fig-cnss-regimes) et les états financiers de la CNRPS de 2015 à 2018 n'a pas d'équivalent consolidé ici.

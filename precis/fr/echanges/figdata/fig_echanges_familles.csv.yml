@@ -1,0 +1,5 @@
+series: [echanges-rapprochement]
+sources: [ins-cnat-2015, ins-annuaire, bct-ra-2024]
+fiches: []
+caveats: [ÉCARTS DE PÉRIMÈTRE DÉCLARÉS, NON CORRIGÉS. (a) Douane et biens des comptes nationaux : à ±0,3 % en base 1997 (2006-2014) ; en base 2015, importations des comptes 1,8 à 3,5 % au-dessus de la douane (lignes de produits avant la correction CAF/FAB, portée en une ligne globale), exportations 0,2 à 1,8 % au-dessus ; 2005 (édition 2005-2009) : +11 % et +7 %, à expliquer. (b) Balance des paiements et comptes nationaux : environ −22 % en 2023-2024 sur biens et services ; le MBP6 compte le travail à façon NET, en service (« services de fabrication… », 14 428 MD de crédits en 2023), là où la douane et les comptes nationaux enregistrent les biens transformés en brut ; les biens de la balance des paiements (28 082 MD d'exportations en 2023) ne se comparent donc pas aux exportations douanières (62 077 MD). Un seul rapport annuel de la BCT est lu : 2020-2024 pour la douane, 2023-2024 pour la balance des paiements. Le fichier data/processed/bct/balance_commerciale.csv, sans script ni fiche et aux lignes mensuelles décalées, n'est pas utilisé.]
+generated: 2026-11-24

@@ -1,0 +1,127 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-11-24
+# séries (tunisia_data) : cnat-fbcf
+# sources (citation) : @ins-cnat-2015
+# fiches : sources/ins-comptes-nationaux-publications.md
+# méthode/hypothèses : DEUX BASES, JAMAIS CHAÎNÉES : filtrer `base`. Une même année publiée par plusieurs éditions garde toutes ses lectures (révisions) : choisir une édition par point. Les nomenclatures diffèrent (codes B11, G40… en base 1997 ; libellés en base 2015) : aucune table de passage n'est fournie. 1 491 contrôles sur 1 500 passent ; les 9 autres sont des écarts de 0,2 à 0,4 MD entre deux tableaux d'une même édition (total par secteur contre total par branche, entreprises contre tableau des entreprises), signalés et non corrigés. Les tableaux par édition relevés plus tôt sous cnat*-tables/ ont perdu les lignes à libellé sur deux lignes (électricité et gaz, eau, textile, matériaux) : sur les 2 463 valeurs communes, ils sont identiques à cette lecture, qui y ajoute les lignes perdues.
+# note : FBCF par secteur institutionnel, 2005-2025, base 1997 (tirets) et base 2015 (traits pleins), millions de dinars courants
+Base,Secteur,Année,FBCF (MD courants)
+base 1997,Sociétés non financières,2005,4566.2
+base 1997,Sociétés non financières,2006,5374.5
+base 1997,Sociétés non financières,2007,5886.2
+base 1997,Sociétés non financières,2008,6468.8
+base 1997,Sociétés non financières,2009,7131.9
+base 1997,Sociétés non financières,2010,7670.6
+base 1997,Sociétés non financières,2011,6280.5
+base 1997,Sociétés non financières,2012,6689.0
+base 1997,Sociétés non financières,2013,6983.8
+base 1997,Sociétés non financières,2014,7067.7
+base 1997,Sociétés non financières,2015,7330.9
+base 1997,Sociétés non financières,2016,7496.6
+base 1997,Sociétés non financières,2017,7957.5
+base 1997,Entreprises individuelles,2005,1056.0
+base 1997,Entreprises individuelles,2006,1383.1
+base 1997,Entreprises individuelles,2007,1803.6
+base 1997,Entreprises individuelles,2008,2654.5
+base 1997,Entreprises individuelles,2009,2319.6
+base 1997,Entreprises individuelles,2010,2124.6
+base 1997,Entreprises individuelles,2011,1538.8
+base 1997,Entreprises individuelles,2012,2687.8
+base 1997,Entreprises individuelles,2013,2922.2
+base 1997,Entreprises individuelles,2014,2657.3
+base 1997,Entreprises individuelles,2015,2292.9
+base 1997,Entreprises individuelles,2016,2101.2
+base 1997,Entreprises individuelles,2017,1982.1
+base 1997,Administrations publiques,2005,1706.4
+base 1997,Administrations publiques,2006,1801.9
+base 1997,Administrations publiques,2007,1949.9
+base 1997,Administrations publiques,2008,2254.2
+base 1997,Administrations publiques,2009,2754.9
+base 1997,Administrations publiques,2010,3002.9
+base 1997,Administrations publiques,2011,3197.2
+base 1997,Administrations publiques,2012,3558.5
+base 1997,Administrations publiques,2013,3438.2
+base 1997,Administrations publiques,2014,3505.1
+base 1997,Administrations publiques,2015,3981.5
+base 1997,Administrations publiques,2016,4361.6
+base 1997,Administrations publiques,2017,4529.0
+base 1997,Ménages (logement),2005,1529.3
+base 1997,Ménages (logement),2006,1633.9
+base 1997,Ménages (logement),2007,1686.1
+base 1997,Ménages (logement),2008,1513.2
+base 1997,Ménages (logement),2009,1892.3
+base 1997,Ménages (logement),2010,2477.4
+base 1997,Ménages (logement),2011,2892.0
+base 1997,Ménages (logement),2012,2742.8
+base 1997,Ménages (logement),2013,2936.8
+base 1997,Ménages (logement),2014,2997.7
+base 1997,Ménages (logement),2015,2988.4
+base 1997,Ménages (logement),2016,3183.7
+base 1997,Ménages (logement),2017,3345.2
+base 1997,Institutions financières,2005,123.4
+base 1997,Institutions financières,2006,139.9
+base 1997,Institutions financières,2007,164.6
+base 1997,Institutions financières,2008,169.7
+base 1997,Institutions financières,2009,179.5
+base 1997,Institutions financières,2010,227.1
+base 1997,Institutions financières,2011,187.4
+base 1997,Institutions financières,2012,146.1
+base 1997,Institutions financières,2013,184.7
+base 1997,Institutions financières,2014,207.4
+base 1997,Institutions financières,2015,215.2
+base 1997,Institutions financières,2016,223.5
+base 1997,Institutions financières,2017,324.9
+base 2015,Sociétés non financières,2015,8016.9
+base 2015,Sociétés non financières,2016,8042.7
+base 2015,Sociétés non financières,2017,8190.6
+base 2015,Sociétés non financières,2018,10088.3
+base 2015,Sociétés non financières,2019,10536.7
+base 2015,Sociétés non financières,2020,7079.3
+base 2015,Sociétés non financières,2021,7140.8
+base 2015,Sociétés non financières,2022,9459.6
+base 2015,Sociétés non financières,2023,9929.2
+base 2015,Sociétés non financières,2024,9828.5
+base 2015,Sociétés non financières,2025,11338.6
+base 2015,Entreprises individuelles,2015,2631.4
+base 2015,Entreprises individuelles,2016,2731.5
+base 2015,Entreprises individuelles,2017,3029.4
+base 2015,Entreprises individuelles,2018,2635.6
+base 2015,Entreprises individuelles,2019,3798.8
+base 2015,Entreprises individuelles,2020,3346.7
+base 2015,Entreprises individuelles,2021,4982.8
+base 2015,Entreprises individuelles,2022,4405.8
+base 2015,Entreprises individuelles,2023,3892.5
+base 2015,Entreprises individuelles,2024,3849.9
+base 2015,Entreprises individuelles,2025,4450.1
+base 2015,Administrations publiques,2015,4622.0
+base 2015,Administrations publiques,2016,5009.7
+base 2015,Administrations publiques,2017,5302.7
+base 2015,Administrations publiques,2018,5198.7
+base 2015,Administrations publiques,2019,4981.6
+base 2015,Administrations publiques,2020,5479.1
+base 2015,Administrations publiques,2021,5052.6
+base 2015,Administrations publiques,2022,4653.3
+base 2015,Administrations publiques,2023,5346.0
+base 2015,Administrations publiques,2024,6190.7
+base 2015,Administrations publiques,2025,5769.2
+base 2015,Ménages (logement),2015,3341.3
+base 2015,Ménages (logement),2016,3500.0
+base 2015,Ménages (logement),2017,3565.2
+base 2015,Ménages (logement),2018,3964.8
+base 2015,Ménages (logement),2019,4266.0
+base 2015,Ménages (logement),2020,2700.1
+base 2015,Ménages (logement),2021,3272.6
+base 2015,Ménages (logement),2022,3715.1
+base 2015,Ménages (logement),2023,3838.0
+base 2015,Ménages (logement),2024,3865.0
+base 2015,Ménages (logement),2025,4306.4
+base 2015,Institutions financières,2015,230.2
+base 2015,Institutions financières,2016,247.6
+base 2015,Institutions financières,2017,361.7
+base 2015,Institutions financières,2018,258.7
+base 2015,Institutions financières,2019,315.6
+base 2015,Institutions financières,2020,330.6
+base 2015,Institutions financières,2021,408.9
+base 2015,Institutions financières,2022,516.3
+base 2015,Institutions financières,2023,531.6
+base 2015,Institutions financières,2024,614.3
+base 2015,Institutions financières,2025,592.5

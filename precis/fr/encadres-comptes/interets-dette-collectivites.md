@@ -1,0 +1,3 @@
+::: {.callout-tip title="Dans les comptes"}
+Ce dispositif relève de l'opération **D.41 « Intérêts »** des comptes de la nation. En 2020 (édition 2020-2024), en millions de dinars, versent : sociétés non financières 2 330,4 ; sociétés financières 6 878,3 ; administrations publiques 3 828,2 ; ménages 1 746,1 ; reste du monde 163,3 ; reçoivent : sociétés non financières 951,5 ; sociétés financières 8 784,1 ; administrations publiques 285,2 ; ménages 2 661,8 ; reste du monde 2 197,7. Les administrations publiques y inscrivent 3 828,2 millions de dinars (emplois) ; l'ouvrage en chiffre 21,2 pour ce dispositif. Voir [le compte reconstruit](../compte-apu.html#sec-capu-flux).
+:::

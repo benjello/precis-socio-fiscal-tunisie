@@ -1,0 +1,3 @@
+::: {.callout-tip title="Dans les comptes"}
+Ce dispositif relève de l'opération **D.7 « Autres transferts courants »** des comptes de la nation. En 2020 (édition 2020-2024), en millions de dinars, versent : sociétés non financières 1 243,0 ; sociétés financières 1 189,9 ; administrations publiques 4 439,2 ; ménages 451,6 ; reste du monde 7 090,9 ; reçoivent : sociétés non financières 433,7 ; sociétés financières 923,1 ; administrations publiques 4 041,0 ; ménages 8 460,4 ; reste du monde 556,3. Le reste du monde y inscrit 556,3 millions de dinars (ressources) ; l'ouvrage en chiffre 489,3 pour ce dispositif. Voir [le compte reconstruit](../compte-apu.html#sec-capu-flux).
+:::

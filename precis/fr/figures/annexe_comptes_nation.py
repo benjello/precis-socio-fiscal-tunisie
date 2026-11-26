@@ -24,6 +24,9 @@ dans le bloc ``{ojs}`` de l'annexe, rendu en HTML seulement.
 from __future__ import annotations
 
 import sys
+from pathlib import Path
+
+import pandas as pd
 
 sys.path.insert(0, ".")
 sys.path.insert(0, "../../scripts")
@@ -111,32 +114,53 @@ def donnees_navigation() -> dict:
 # sous-table « entreprises individuelles ») a été corrigée en amont (tunisia-data), et le compte
 # complet des ménages régénéré (VA 2012 = 29 307,3 ; RDB ≠ épargne ; consommation finale présente).
 SECTEURS_SEQ = [("snf", "SNF"), ("sf", "SF"), ("apu", "APU"),
-                ("menages", "Ménages"), ("exterieur", "Reste du monde")]
+                ("menages", "Ménages"), ("rdm", "Reste du monde")]
 
-# séquence des comptes : (compte, [(libellé, clé repliée INS, est_solde)]).
-# Les clés sont les libellés de l'INS, repliés en ASCII minuscules (voir le générateur).
+# Séquence des comptes : (compte, [(libellé, opération, côté, est_solde, clé de l'ancienne série)]).
+# Opération et côté renvoient à la série `cnat-secteurs` (base 2015, emplois et ressources
+# distingués). La dernière colonne est la clé de l'ancienne série `cnat-comptes-secteurs`, qui ne
+# distingue pas les côtés : elle ne sert, pour les années en base 1997, qu'aux soldes et aux emplois
+# sans ambiguïté (consommation finale, FBCF) ; les autres lignes y restent vides.
 SEQUENCE = [
     ("Compte de production", [
-        ("Valeur ajoutée brute", "valeur ajoutee brute", True)]),
+        ("Production", "production", "ressources", False, None),
+        ("Consommation intermédiaire", "consommation_intermediaire", "emplois", False, None),
+        ("Valeur ajoutée brute", "valeur_ajoutee_brute", "emplois", True, "valeur ajoutee brute")]),
     ("Compte d'exploitation", [
-        ("Rémunération des salariés", "remuneration des salaries", False),
-        ("Revenu d'exploitation / mixte", "revenu d'exploitation", True)]),
+        ("Rémunération des salariés versée", "remuneration_salaries", "emplois", False, None),
+        ("Autres impôts sur la production", "autres_impots_production", "emplois", False, None),
+        ("Revenu d'exploitation / mixte", "revenu_exploitation", "emplois", True, "revenu d'exploitation")]),
     ("Compte d'affectation des revenus primaires", [
-        ("Intérêts", "interets", False),
-        ("Solde des revenus primaires (revenu national)",
-         "solde des revenus primaires / revenu national", True)]),
+        ("Rémunération des salariés reçue", "remuneration_salaries", "ressources", False, None),
+        ("Impôts sur la production et les importations reçus", "impots_production_importations", "ressources", False, None),
+        ("Subventions versées (−)", "subventions", "ressources", False, None),
+        ("Revenus de la propriété reçus", "revenus_propriete", "ressources", False, None),
+        ("Revenus de la propriété versés", "revenus_propriete", "emplois", False, None),
+        ("Solde des revenus primaires", "solde_revenus_primaires", "emplois", True,
+         "solde des revenus primaires / revenu national")]),
     ("Compte de distribution secondaire du revenu", [
-        ("Prestations sociales en espèces", "prestations sociales en espece", False),
-        ("Autres transferts courants", "autres transferts courants", False),
-        ("Revenu disponible brut", "revenu disponible brut", True)]),
+        ("Impôts courants sur le revenu et le patrimoine reçus", "impots_courants", "ressources", False, None),
+        ("Impôts courants sur le revenu et le patrimoine versés", "impots_courants", "emplois", False, None),
+        ("Cotisations sociales reçues", "cotisations_sociales", "ressources", False, None),
+        ("Cotisations sociales versées", "cotisations_sociales", "emplois", False, None),
+        ("Prestations sociales en espèces reçues", "prestations_especes", "ressources", False, None),
+        ("Prestations sociales en espèces versées", "prestations_especes", "emplois", False, None),
+        ("Autres transferts courants reçus", "autres_transferts_courants", "ressources", False, None),
+        ("Autres transferts courants versés", "autres_transferts_courants", "emplois", False, None),
+        ("Revenu disponible brut", "revenu_disponible_brut", "emplois", True, "revenu disponible brut")]),
     ("Compte d'utilisation du revenu", [
-        ("Dépense de consommation finale", "depense de consommation finale", False),
-        ("Épargne brute", "epargne brute", True)]),
+        ("Dépense de consommation finale", "consommation_finale", "emplois", False, "depense de consommation finale"),
+        ("Épargne brute", "epargne_brute", "emplois", True, "epargne brute")]),
     ("Compte de capital", [
-        ("Formation brute de capital fixe", "formation brute de capitale fixe", False),
-        ("Transferts en capital", "transferts en capital", False),
-        ("Capacité (+) ou besoin (−) de financement", "capacite ou besoin de financement", True)]),
+        ("Transferts en capital reçus", "transferts_capital", "ressources", False, None),
+        ("Transferts en capital versés", "transferts_capital", "emplois", False, None),
+        ("Formation brute de capital fixe", "fbcf", "emplois", False, "formation brute de capitale fixe"),
+        ("Variation des stocks", "variation_stocks", "emplois", False, None),
+        ("Capacité (+) ou besoin (−) de financement", "capacite_financement", "emplois", True,
+         "capacite ou besoin de financement")]),
 ]
+# secteur de la série `cnat-secteurs` -> secteur de l'ancienne série
+ANCIEN_SECTEUR = {"rdm": "exterieur"}
 
 
 def _fr(v) -> str:
@@ -154,67 +178,75 @@ BASES_ORDRE = ["2015", "1997"]
 
 
 def donnees_sequence() -> dict:
-    """Structure passée à Observable : séquence des comptes par secteur, toutes années, par base.
+    """Structure passée à Observable : séquence des comptes par secteur, une année à la fois.
 
-    Chaque année porte SA base (la plus récente qui la couvre) ; aucune base n'est chaînée à
-    une autre — le navigateur montre une année isolée, dans sa base, qu'il étiquette.
+    Années en base 2015 : série `cnat-secteurs` (emplois et ressources distingués, édition la plus
+    récente). Années antérieures, en base 1997 : ancienne série `cnat-comptes-secteurs`, qui ne
+    distingue pas les côtés, réduite aux soldes et aux emplois sans ambiguïté. Aucune base n'est
+    chaînée à une autre ; chaque année porte sa base, que le navigateur affiche.
     """
-    d = figtools.series("cnat-comptes-secteurs")
-    sequence = [{"compte": c, "lignes": [{"label": lib, "cle": cle, "solde": s}
-                                        for lib, cle, s in lignes]}
+    neuf = figtools.series("cnat-secteurs")
+    ancien = figtools.series("cnat-comptes-secteurs")
+    sequence = [{"compte": c, "lignes": [{"label": lib, "cle": f"{op}|{cote}", "solde": s}
+                                        for lib, op, cote, s, _ in lignes]}
                 for c, lignes in SEQUENCE]
-    par_annee, base_annee = {}, {}
-    for an in sorted(d["annee"].astype(int).unique()):
-        base = next((b for b in BASES_ORDRE
-                     if not d[(d["annee"].astype(int) == an) & (d["base_pib"].astype(str) == b)].empty),
-                    None)
-        if base is None:
-            continue
-        da = d[(d["annee"].astype(int) == an) & (d["base_pib"].astype(str) == base)]
+    par_annee, base_annee, edition_annee = {}, {}, {}
+    annees_neuves = set(neuf["annee"].astype(int))
+    for an in sorted(annees_neuves):
+        dn = neuf[(neuf["annee"].astype(int) == an) & (neuf["sous_ligne"].astype(int) == 0)]
         bloc = {}
         for sec, _ in SECTEURS_SEQ:
-            ds = da[da["secteur"] == sec]
+            ds = dn[dn["secteur"] == sec]
             vals = {}
             for _, r in ds.iterrows():
-                vals[r["indicateur"]] = round(float(r["valeur"]), 1)
+                vals[f"{r['operation']}|{r['cote']}"] = round(float(r["valeur"]), 1)
+            # SNF et SF n'impriment qu'une ligne « Production des biens et services marchands »
+            if "production|ressources" not in vals and "production_bs_marchands|ressources" in vals:
+                vals["production|ressources"] = vals["production_bs_marchands|ressources"]
             bloc[sec] = vals
         par_annee[str(an)] = bloc
-        base_annee[str(an)] = base
+        base_annee[str(an)] = "2015"
+        edition_annee[str(an)] = ", ".join(sorted(set(dn["edition"].astype(str))))
+    for an in sorted(set(ancien["annee"].astype(int)) - annees_neuves):
+        da = ancien[(ancien["annee"].astype(int) == an) & (ancien["base_pib"].astype(str) == "1997")]
+        if da.empty:
+            continue
+        bloc = {}
+        for sec, _ in SECTEURS_SEQ:
+            ds = da[da["secteur"] == ANCIEN_SECTEUR.get(sec, sec)]
+            par_cle = {r["indicateur"]: round(float(r["valeur"]), 1) for _, r in ds.iterrows()}
+            bloc[sec] = {f"{op}|{cote}": par_cle[cle]
+                         for _, lignes in SEQUENCE for _, op, cote, _, cle in lignes
+                         if cle and cle in par_cle}
+        par_annee[str(an)] = bloc
+        base_annee[str(an)] = "1997"
     annees = sorted(int(a) for a in par_annee)
     return {
         "annees": annees,
-        "annee_defaut": 2021 if 2021 in annees else annees[-1],
+        "annee_defaut": 2024 if 2024 in annees else annees[-1],
         "secteurs": [[c, lib] for c, lib in SECTEURS_SEQ],
         "sequence": sequence,
         "parAnnee": par_annee,
         "baseAnnee": base_annee,
+        "editionAnnee": edition_annee,
     }
 
 
-def sequence_comptes_md(annee: int = 2021, base: str = "2015") -> str:
-    """Table Markdown de la séquence des comptes par secteur, pour une année et une base.
+def sequence_comptes_md(annee: int = 2024) -> str:
+    """Table Markdown de la séquence des comptes par secteur, pour une année en base 2015.
 
-    Lignes = la séquence (opérations clés et soldes) ; colonnes = les cinq secteurs ;
-    valeurs lues telles quelles dans les comptes de l'INS (soldes compris), en MDT.
+    Lignes = la séquence (opérations et soldes, emplois et ressources distingués) ; colonnes = les
+    cinq secteurs ; valeurs lues telles quelles dans les comptes de l'INS, en millions de dinars.
     """
-    d = figtools.series("cnat-comptes-secteurs")
-    d = d[(d["annee"].astype(int) == annee) & (d["base_pib"].astype(str) == str(base))]
-    piv = d.pivot_table(index="indicateur", columns="secteur", values="valeur", aggfunc="first")
-
-    def val(cle, sec):
-        try:
-            return piv.loc[cle, sec]
-        except KeyError:
-            return float("nan")
-
+    bloc = donnees_sequence()["parAnnee"][str(annee)]
     cols = [lib for _, lib in SECTEURS_SEQ]
     out = ["| Compte / opération | " + " | ".join(cols) + " |",
            "|" + "---|" * (len(cols) + 1)]
     for compte, lignes in SEQUENCE:
         out.append(f"| **{compte}** |" + " |" * len(cols))
-        for lib, cle, solde in lignes:
+        for lib, op, cote, solde, _ in lignes:
             nom = f"*{lib}*" if solde else f"&nbsp;&nbsp;{lib}"
-            cells = " | ".join(_fr(val(cle, sec)) for sec, _ in SECTEURS_SEQ)
+            cells = " | ".join(_fr(bloc.get(sec, {}).get(f"{op}|{cote}")) for sec, _ in SECTEURS_SEQ)
             out.append(f"| {nom} | {cells} |")
     return "\n".join(out)
 
@@ -232,3 +264,148 @@ if __name__ == "__main__":
     print("revenus recomposent PIB:", recompose, "==", ex["pib"], "→", abs(recompose - ex["pib"]) < 0.2)
     print("VA totale == rémun + revenu expl:",
           round(rv["remuneration"] + rv["revenu_exploitation"], 1), "==", ex["production"]["va_totale"])
+
+
+def recoupements_md() -> str:
+    """Table Markdown : écart, en % de la série budgétaire, entre les comptes des administrations
+    publiques (INS) et la série budgétaire que les volumes emploient, année par année."""
+    d = figtools.series("cnat-recoupements")
+    annees = sorted(d["annee"].astype(int).unique())
+    out = ["| Grandeur (comptes face au budget) | " + " | ".join(str(a) for a in annees) + " |",
+           "|---|" + "---:|" * len(annees)]
+    for objet, g in d.groupby("objet", sort=False):
+        par = {int(r["annee"]): r["ecart_pct"] for _, r in g.iterrows()}
+        cells = " | ".join("" if par.get(a) is None else f"{par[a]:+.1f}".replace(".", ",").replace("-", "−")
+                           for a in annees)
+        out.append(f"| {objet} | {cells} |")
+    return "\n".join(out)
+
+
+COUVERTURE_LIB = {"domicile": "domicile", "renvoi": "en partie", "vide": "aucun volume", "solde": "solde"}
+COTE_LIB = {"emplois": "emplois", "ressources": "ressources"}
+
+
+def _liens(volumes: str, pages: str) -> str:
+    if not isinstance(pages, str) or not pages:
+        return ""
+    vs, ps = volumes.split(" ; "), pages.split(" ; ")
+    return " ; ".join(f"[{v}]({p})" for v, p in zip(vs, ps))
+
+
+def correspondance_md(compte: str | None = None, seulement_vides: bool = False) -> str:
+    """Table Markdown de la matrice opérations × secteurs × côté × volumes (sans code d'opération)."""
+    d = pd.read_csv(Path(__file__).resolve().parent.parent / "correspondance-comptes.csv")
+    if compte:
+        d = d[d["compte"] == compte]
+    if seulement_vides:
+        d = d[d["couverture"] == "vide"]
+    out = ["| Opération | Secteur | Côté | Niveau (MD) | Année | Rattachement | Volumes |",
+           "|---|---|---|---:|---:|---|---|"]
+    for _, r in d.iterrows():
+        out.append(f"| {r['libelle']} | {r['secteur_libelle']} | {COTE_LIB[r['cote']]} | "
+                   f"{_fr(float(r['niveau_md']))} | {int(r['annee'])} | {COUVERTURE_LIB[r['couverture']]} | "
+                   f"{_liens(r['volumes'], r['pages'])} |")
+    return "\n".join(out)
+
+
+def correspondance_comptes() -> list[str]:
+    d = pd.read_csv(Path(__file__).resolve().parent.parent / "correspondance-comptes.csv")
+    return list(dict.fromkeys(d["compte"]))
+
+
+def correspondance_resume() -> dict:
+    d = pd.read_csv(Path(__file__).resolve().parent.parent / "correspondance-comptes.csv")
+    return d["couverture"].value_counts().to_dict()
+
+
+# --- Compte financier (TOF) et tableau des ressources et des emplois (TRE) -------------------
+#
+# Séries `cnat-tof` et `cnat-tre` (tunisia-data), lues dans les éditions en base 2015 ; pour
+# chaque année, la lecture de l'édition la plus récente qui l'imprime. Valeurs lues, jamais
+# recalculées ; contrôles et écarts listés dans l'entrepôt.
+
+SECTEURS_TOF = [("S11", "Sociétés non financières", "#0b4f6c"), ("S12", "Sociétés financières", "#2d8c6f"),
+                ("S13", "Administrations publiques", "#bf3989"), ("S14", "Ménages", "#c0862b")]
+EMPLOIS_TRE = [("ci_totale", "Consommation intermédiaire", "#57606a"),
+               ("consommation_finale", "Consommation finale", "#0b4f6c"),
+               ("fbcf", "FBCF", "#2d8c6f"), ("variation_stocks", "Variation des stocks", "#c0862b"),
+               ("exportations", "Exportations", "#bf3989")]
+
+
+def _derniere_edition(d, cles):
+    return d.sort_values("edition").groupby(cles).tail(1)
+
+
+def solde_tof():
+    """Solde des créances et dettes (B.9f), flux, par secteur et par année ; et celui du reste du monde."""
+    d = figtools.series("cnat-tof")
+    d = d[(d["code"] == "B9F") & (d["tableau"] == "flux")]
+    d = _derniere_edition(d, ["annee", "secteur"])
+    return d.pivot(index="annee", columns="secteur", values="valeur_md").sort_index()
+
+
+def emplois_tre():
+    """Emplois de l'ensemble des produits (ligne des totaux du TRE), par année."""
+    d = figtools.series("cnat-tre")
+    d = _derniere_edition(d[d["produit"] == "TOTAL"], ["annee", "colonne"])
+    return d.pivot(index="annee", columns="colonne", values="valeur_md").sort_index()
+
+
+def _barres_groupees(p, series, titre, ylabel):
+    import matplotlib.pyplot as plt
+    figtools.apply_lang_font()
+    annees = [int(a) for a in p.index]
+    fig, ax = plt.subplots(figsize=(8.8, 4.6))
+    n, larg = len(series), 0.8 / len(series)
+    for k, (cle, lib, couleur) in enumerate(series):
+        xs = [i + (k - (n - 1) / 2) * larg for i in range(len(annees))]
+        vals = [float(v) for v in p[cle]]
+        barres = ax.bar(xs, vals, width=larg, color=couleur, label=figtools.fig_text(lib))
+        for a, b, v in zip(annees, barres, vals):
+            figtools.infobulle(b, f"{a} · {lib} · {_fr(v)}")
+    ax.axhline(0, color="#57606a", lw=0.8)
+    ax.set_xticks(range(len(annees)))
+    ax.set_xticklabels([str(a) for a in annees], fontsize=8)
+    ax.set_title(figtools.fig_text(titre), fontsize=10.5)
+    ax.set_ylabel(figtools.fig_text(ylabel), fontsize=9)
+    ax.spines[["top", "right"]].set_visible(False)
+    ax.legend(fontsize=7.5, framealpha=0.9)
+    fig.tight_layout()
+    return fig
+
+
+def vues_tof():
+    return [("Par secteur", _barres_groupees(solde_tof(), SECTEURS_TOF,
+                                             "Solde des créances et dettes par secteur (flux)",
+                                             "millions de dinars courants"))]
+
+
+def table_tof():
+    import pandas as pd
+    p = solde_tof()
+    rows = []
+    for a in p.index:
+        row = {"Année": int(a)}
+        for cle, lib, _ in SECTEURS_TOF:
+            row[lib] = float(p.loc[a, cle])
+        row["Somme des quatre secteurs"] = round(sum(float(p.loc[a, c]) for c, _, _ in SECTEURS_TOF), 1)
+        row["Reste du monde (imprimé)"] = float(p.loc[a, "S2"]) if "S2" in p.columns else None
+        rows.append(row)
+    return pd.DataFrame(rows)
+
+
+def vues_tre():
+    return [("Emplois", _barres_groupees(emplois_tre(), EMPLOIS_TRE, "Emplois de l'ensemble des produits (TRE)",
+                                  "millions de dinars courants"))]
+
+
+def table_tre():
+    import pandas as pd
+    p = emplois_tre()
+    rows = []
+    for a in p.index:
+        row = {"Année": int(a), "Total des ressources": float(p.loc[a, "total_ressources"])}
+        for cle, lib, _ in EMPLOIS_TRE:
+            row[lib] = float(p.loc[a, cle])
+        rows.append(row)
+    return pd.DataFrame(rows)
