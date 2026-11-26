@@ -79,8 +79,10 @@ Déjà en main avant cette collecte (non repris) : annuaires CNSS 2016 et 2018, 
       **chiffres caisses 2021-2022 ne sont donc pas encore dans un rapport téléchargeable** ; seules
       les **lois de règlement 2020/2021/2022/2023** (sous-cat 18) sont en ligne (budget de l'État,
       transferts sociaux — pas les comptes détaillés des caisses).
-    - **Observatoire tunisien de l'économie** : publie les « rapports du commissaire aux comptes
-      2022 » (= états financiers audités des caisses) ; **site en maintenance au 26/11**, à reprendre.
+    - **Observatoire tunisien de l'économie** : **FAUSSE PISTE, écartée** (vérifiée sur Wayback le
+      26/11). Ses « rapports du commissaire aux comptes 2022 » (`rapport_cac_ote_2022.pdf`) sont
+      l'audit des comptes **de l'association OTE elle-même** (total bilan 1 045 703 DT), **pas** les
+      états financiers des caisses — confusion initiale levée. Rien à en tirer pour la CNSS/CNRPS.
     - **Chiffres officiels 2021-2022 déjà attestés par la presse** (ministère des Affaires sociales /
       Cour des comptes, relayé janv. 2024) — utilisables comme points sourcés en attendant les
       rapports : **CNSS résultat net −1 274 MDT (2021) → −961,5 MDT (2022)** ; **CNRPS déficit
