@@ -49,7 +49,7 @@ Dater, découper, tester, publier, rendre au précis : `docs/conventions/modele.
 
 ## Économiser
 
-**Économie de tokens et de temps** (consigne du propriétaire, 17/11/2026) : un seul fil de travail ; pas de sous-agents en parallèle sans demande explicite ; outils et scripts existants avant toute relecture à la main, un script dès qu'une opération se répète ; titres et sommaires avant toute OCR ; ne rendre que le chapitre modifié pendant le travail (`scripts/verifier.sh` le fait par défaut), le volume une fois avant la PR ; pas de nouveau `verifier.sh` après une fusion de master sans conflit ; petits lots, rapports de cinq lignes au plus.
+**Économie de tokens et de temps** (consigne du propriétaire, 17/11/2026) : un seul fil de travail ; pas de sous-agents en parallèle sans demande explicite ; **avant toute collecte de source (web, OCR, scraping), interroger d'abord le catalogue de l'entrepôt `tunisia-data` (`sources/`, `data/raw/`, `*-catalog.csv`) et `jort_cache.db` — le document est souvent déjà récupéré et indexé ** ; outils et scripts existants avant toute relecture à la main (y compris les scrapers déjà écrits, p. ex. `tunisia-data/scripts/scrape_cour_des_comptes.py` — ne pas réécrire), un script dès qu'une opération se répète ; titres et sommaires avant toute OCR ; ne rendre que le chapitre modifié pendant le travail (`scripts/verifier.sh` le fait par défaut), le volume une fois avant la PR ; pas de nouveau `verifier.sh` après une fusion de master sans conflit ; petits lots, rapports de cinq lignes au plus.
 
 Un seul appel (`scripts/verifier.sh`), le modèle suit la tâche, rôles éditoriaux et sous-agents engendrés, indexation des documents : `docs/conventions/economiser.md`.
 

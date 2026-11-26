@@ -10,6 +10,13 @@
   adjacent renvoie à une issue ouverte sur `openfisca-tunisia` qui énumère les valeurs et dates à
   sourcer, et le constat figure aussi dans `docs/notes/backlog-modele.md`. URL du JORT sur `pist.tn`
   uniquement, dans l'édition de la langue du fichier.
+- **Une note de « lacunes » / « source introuvable » n'a de valeur que confrontée au catalogue.**
+  Avant d'écrire qu'un document est introuvable ou à chercher, le vérifier contre l'entrepôt
+  `tunisia-data` (`sources/*-catalog.csv`, `sources/<famille>-urls.csv`, `data/raw/`) **et**
+  `jort_cache.db` ; la note porte alors la mention datée « vérifié contre `tunisia-data/sources/`
+  + `data/raw/` le <date> ». Sans cette confrontation, la note périme et fait répéter des
+  téléchargements déjà faits (cas vécu : rapports Cour des comptes et CNRPS re-récupérés alors
+  qu'ils étaient déjà catalogués et dans `data/raw/`).
 - **Textes juridiques : citer une adresse publique, archiver dans la base législative.** Une citation
   donne au lecteur une source **publique** qu'il peut ouvrir : d'abord l'officiel externe quand il
   existe — le JORT sur `pist.tn`, dans l'édition de la langue —, sinon l'URL d'origine publique du

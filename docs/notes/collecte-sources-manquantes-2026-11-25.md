@@ -1,5 +1,11 @@
 # Collecte de sources manquantes — 25 novembre 2026
 
+> ⚠️ **Confronter au catalogue avant de croire une « lacune ».** Mise à jour 26/11 : plusieurs
+> « introuvables » ci-dessous étaient en fait **déjà catalogués et dans `tunisia-data/data/raw/`**
+> (rapports Cour des comptes sous-cat 76 et RAPAM, rapports CNRPS `bilan*`/`ra_*`). Toute ligne de
+> cette note doit être vérifiée contre `tunisia-data` (`sources/*-catalog.csv`, `data/raw/`) + 
+> `jort_cache.db` avant d'engager une nouvelle collecte — cf. `docs/conventions/sources-et-datation.md`.
+
 Récupération de sept lots de sources demandés par l'humain. Fichiers déposés hors dépôt dans
 `~/Downloads/` (le dépôt est public : aucune donnée brute n'y est versée). Récupération via les
 sites officiels vivants et, à défaut, la Wayback Machine (snapshot le plus proche `…/2id_/<URL>`).
@@ -28,6 +34,63 @@ Déjà en main avant cette collecte (non repris) : annuaires CNSS 2016 et 2018, 
   publiquement (sites vivants + Wayback). Dernières éditions : **CNSS 2020** (série 2000‑2020),
   **CNRPS `ra_2020`** et recueil `gstat_2010-2019`. ⇒ les **pensions 2021‑2023 restent vides** tant
   que ces données ne sont pas obtenues directement auprès des caisses.
+  - *Mise à jour 26/11 (session msika) :* confirmé qu'aucun rapport annuel CNSS ni CNRPS 2022/2023
+    n'est publié en ligne. Bilan des pistes creusées depuis msika :
+    - **Accès réseau** : depuis msika les sites CNRPS/CNSS sont joignables, mais leur chaîne TLS est
+      incomplète (certificat intermédiaire manquant) — il faut `curl -k`/désactiver la vérif du cert ;
+      `curl`/`web_fetch` standard échouent (`000`). INS et (par intermittence) la Wayback passent.
+    - **« Guide / recueil statistique CNRPS »** : INTROUVABLE en URL statique. Le PDF « 2022, 2,02 Mo,
+      04-01-2023 » repéré en recherche = en fait le **rapport annuel 2022 du chargé d'accès à
+      l'information** (déjà en main, `rapport_ada_2022`), pas un recueil de données. Les vraies
+      pages de données (`/acces-aux-docs/donnees-statistiques/pensions`) sont rendues en JS, non
+      scrapables au `curl` ; les anciennes URL `upload/documents/gstat_*.pdf` renvoient 500 (arbo
+      disparue au passage à Drupal). ⇒ restes possibles : **Wayback** (hors ligne au 26/11, à
+      reprendre), **navigateur sans tête**, ou **demande formelle d'accès à l'information**.
+    - **Moisson Wayback (26/11)** : l'ancienne arbo `cnrps.nat.tn/upload/acces_docs/Rapports/` est
+      archivée. Récupérés **complets** dans `~/Downloads/CNRPS_rapports/wayback_2021/` : `bilan2015`
+      (56 p.), `bilan2018` (75 p.), `ra_2017` (74 p.), `ra_2018` (85 p.). **Tronqués à 1 Mio,
+      irrécupérables** (snapshot unique, capé au crawl) : **`gstat_2010-2019` (le recueil
+      statistique !)**, `budget_2015/2017/2018/2019`, `bilan2017`, `bilan2019`, `ra_2014`, `ra_2015` ;
+      `bilan2016` incomplet (sans trailer). ⇒ le **recueil statistique `gstat` n'existe nulle part en
+      version complète** (ni site vivant, ni Wayback) : seule voie = **demande d'accès à
+      l'information** auprès de la CNRPS.
+    - **Cour des comptes** (`courdescomptes.nat.tn`) : **DÉJÀ OUTILLÉ ET CATALOGUÉ dans
+      `tunisia-data`** (ne pas refaire). Le projet a déjà `scripts/scrape_cour_des_comptes.py`
+      (`--catalog` → `sources/cour-des-comptes-catalog.csv`, 361 l. ; `--download <rubrique>` →
+      `data/raw/cour-des-comptes/<rubrique>/` avec contrôle de troncature + SHA-256 dans
+      `sources/cour-des-comptes-telechargements.csv`). Les 35 rapports de la sous-cat **76 « Santé et
+      affaires sociales »** (dont audits **CNRPS** 2018, **CNSS** 2014, **CNAM** 2016, cliniques CNSS
+      2017) et le **RAPAM 32** (cat 2 / sous-cat 84) sont catalogués ; 34/35 des PDF de la sous-cat 76
+      sont dans `data/raw/` (le 35ᵉ, `Rapport_76_2018-08-16-09-08-22.pdf`, est **cassé à la source**
+      et légitimement refusé). *(Un doublon exploratoire Playwright `~/outils/cour-des-comptes/cdc.mjs`
+      a été écrit pendant cette session avant de retrouver l'existant : superflu, le script Python fait
+      foi.)*
+      **Sourçage vérifié** (rapport CNRPS p. 351) : la Cour **cite les textes** (loi n° 47-2017 du
+      15/06/2017 modifiant la loi n° 71-2004) et **définit ses indicateurs** en note (autonomie
+      financière = réserves techniques/passif ; couverture liquidité = actifs liquides/charges
+      mensuelles) ; chiffres = agrégats d'audit tirés des comptes de la caisse (déficit 846,849 MD
+      fin 2016 ; dette envers la CNAM 261,127 → 1 583,292 MD 2011-2016).
+      Les PDF **bruts vont dans `tunisia-data/data/raw/`** (hors git, sauvegardé par restic),
+      catalogués dans `sources/` — **jamais dans le précis public ni dans la base législative**
+      (routage : textes juridiques → `tunisia-legislative-references`/`PDFs-legislation-tunisie` ;
+      données et rapports d'analyse → `tunisia-data` ; précis = seulement `.qmd` + biblio + glossaire).
+      **Limite** : RAPAM téléchargeable **s'arrête au 32ᵉ (2021, données ≤ ~2019)** ; les 33ᵉ/34ᵉ
+      (cités dans l'actualité) ne sont pas publiés en PDF (404 aux URL prévisibles). Les
+      **chiffres caisses 2021-2022 ne sont donc pas encore dans un rapport téléchargeable** ; seules
+      les **lois de règlement 2020/2021/2022/2023** (sous-cat 18) sont en ligne (budget de l'État,
+      transferts sociaux — pas les comptes détaillés des caisses).
+    - **Observatoire tunisien de l'économie** : publie les « rapports du commissaire aux comptes
+      2022 » (= états financiers audités des caisses) ; **site en maintenance au 26/11**, à reprendre.
+    - **Chiffres officiels 2021-2022 déjà attestés par la presse** (ministère des Affaires sociales /
+      Cour des comptes, relayé janv. 2024) — utilisables comme points sourcés en attendant les
+      rapports : **CNSS résultat net −1 274 MDT (2021) → −961,5 MDT (2022)** ; **CNRPS déficit
+      ≈578 MDT (2022), résultat net en recul de 420,6 MDT /2021**. (À re-sourcer sur le texte primaire
+      avant usage dans le précis.)
+  - ⚠️ *À rapatrier :* les **rapports CNSS 2018‑2021 inscrits la veille (25/11) ne sont que dans la
+    copie locale, pas sur `main`.** À verser sur `origin`/au corpus hors dépôt avant qu'ils ne se
+    perdent. (Matériel présent dans `~/Downloads/` : `Annuaire Statistique CNSS 2018 FR.pdf`,
+    `CNSS_publication_2020/` (18 tableaux, séries 2000-2020), `CNSS_CNRPS_2021_2023/CNSS_Budget_2022.pdf`,
+    `CNRPS_rapports/` (`ra_2019`, `ra_2020`, `rapport_ada_2019–2022`), `CNRPS_rapport_ada_2025.pdf`.)
 - **Recettes fiscales DGI ventilées par secteur** (IS/IRPP par branche, nombre de contribuables par
   secteur) : **aucune série officielle**. La ventilation sectorielle n'existe qu'en partiel (contrôle
   fiscal 2016) ou en source secondaire (IACE 2025, qui reprend des chiffres DGI). data.gov.tn muet.
