@@ -13309,6 +13309,1290 @@
       },
       "title-short": "BCT, Balance des paiements 2024",
       "note": "citation-key: bct-bdp-2024\nTitre (« Balance des paiements et position extérieure globale de la Tunisie ») et date (« Novembre 2025 ») lus sur la couverture, couche texte de la page 1 du PDF. Adresse : catalogue des archives de la BCT (publication 106), copie locale de l'entrepôt de données collectée le 8 juin 2026. Utilisé pour le passage du travail à façon (produits transformés et importations pour fabrication, texte du chapitre sur les services) et pour le tableau de la balance des paiements."
+    },
+    {
+      "id": "bct-ra-1965",
+      "type": "report",
+      "title": "Rapport d'activité. Exercice 1965",
+      "author": [
+        {
+          "literal": "Banque centrale de Tunisie"
+        }
+      ],
+      "publisher": "Banque centrale de Tunisie",
+      "publisher-place": "Tunis",
+      "URL": "https://www.bct.gov.tn/bct/siteprod/documents/RA_fr_1965.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "title-short": "BCT, Rapport d'activité 1965",
+      "note": "citation-key: bct-ra-1965\nRapport d'activité : image lue (couverture floue : le numéro 7 vient du catalogue de la BCT), le 6 octobre 2026. Rapport n° 7 de la BCT (catalogue « Rapport Annuel, n° 7 »). Aucune date de parution lue, d'où l'absence de date. Le PDF de bct.gov.tn (HTTP 200 le 6 octobre 2026, 4 794 944 octets, 106 pages) est identique en taille à la copie locale de tunisia-data (data/raw/bct-archives/109/RA_fr_1965.pdf, SHA-256 3c703a43ddd246d5a221d047fe3d5a4fcf0b8936e37992efb50825e71894b316, ignorée par git). Utilisé par la note documentaire compensation-avant-1970-et-plans pour : compte « Opérations de compensation » (subventions d'exploitation 1 200 000 D ; versement au budget 800 000 D) d'après la couche texte, p. PDF 58 et 62 environ ; numéros de page calculés sur la couche texte, à confirmer à l'ouverture. Distincte de bct-ra (jeu de données générique « Rapport Annuel 2024 »). Consulté le 6 octobre 2026."
+    },
+    {
+      "id": "bct-ra-1967",
+      "type": "report",
+      "title": "9ème Rapport d'activité. Exercice 1967",
+      "author": [
+        {
+          "literal": "Banque centrale de Tunisie"
+        }
+      ],
+      "publisher": "Banque centrale de Tunisie",
+      "publisher-place": "Tunis",
+      "URL": "https://www.bct.gov.tn/bct/siteprod/documents/RA_fr_1967.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "title-short": "BCT, Rapport d'activité 1967",
+      "note": "citation-key: bct-ra-1967\n9ème Rapport d'activité : couverture lue à l'image, le 6 octobre 2026. Rapport n° 9 de la BCT (catalogue « Rapport Annuel, n° 9 »). Aucune date de parution lue, d'où l'absence de date. Le PDF de bct.gov.tn (HTTP 200 le 6 octobre 2026, 4 901 139 octets, 103 pages) est identique en taille à la copie locale de tunisia-data (data/raw/bct-archives/109/RA_fr_1967.pdf, SHA-256 3e10e2836dac05cb4d26e90b438ed3e68d467880afddc660e4ae69161f5f84f1, ignorée par git). Utilisé par la note documentaire compensation-avant-1970-et-plans pour : droits de consommation et redevances versés au compte de compensation (couche texte, p. PDF 60) ; numéros de page calculés sur la couche texte, à confirmer à l'ouverture. Distincte de bct-ra (jeu de données générique « Rapport Annuel 2024 »). Consulté le 6 octobre 2026."
+    },
+    {
+      "id": "bct-ra-1971",
+      "type": "report",
+      "title": "13ème Rapport d'activité. Exercice 1971",
+      "author": [
+        {
+          "literal": "Banque centrale de Tunisie"
+        }
+      ],
+      "publisher": "Banque centrale de Tunisie",
+      "publisher-place": "Tunis",
+      "URL": "https://www.bct.gov.tn/bct/siteprod/documents/RA_fr_1971.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "title-short": "BCT, Rapport d'activité 1971",
+      "note": "citation-key: bct-ra-1971\n13ème Rapport d'activité : couverture lue à l'image, le 6 octobre 2026. Rapport n° 13 de la BCT (catalogue « Rapport Annuel, n° 13 »). Aucune date de parution lue, d'où l'absence de date. Le PDF de bct.gov.tn (HTTP 200 le 6 octobre 2026, 5 796 799 octets, 118 pages) est identique en taille à la copie locale de tunisia-data (data/raw/bct-archives/109/RA_fr_1971.pdf, SHA-256 aed642eaba779d9e769326aacd48f76d2dfbed5a3b2e7a982eb86f6c579e82b4, ignorée par git). Utilisé par la note documentaire compensation-avant-1970-et-plans pour : dépenses de la Caisse générale de compensation 2 053 000 → 3 700 000 D (couche texte, p. PDF 69) ; numéros de page calculés sur la couche texte, à confirmer à l'ouverture. Distincte de bct-ra (jeu de données générique « Rapport Annuel 2024 »). Consulté le 6 octobre 2026."
+    },
+    {
+      "id": "bct-ra-1974",
+      "type": "report",
+      "title": "16ème Rapport d'activité. Exercice 1974",
+      "author": [
+        {
+          "literal": "Banque centrale de Tunisie"
+        }
+      ],
+      "publisher": "Banque centrale de Tunisie",
+      "publisher-place": "Tunis",
+      "URL": "https://www.bct.gov.tn/bct/siteprod/documents/RA_fr_1974.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "title-short": "BCT, Rapport d'activité 1974",
+      "note": "citation-key: bct-ra-1974\n16ème Rapport d'activité : couverture lue à l'image, le 6 octobre 2026. Rapport n° 16 de la BCT (catalogue « Rapport Annuel, n° 16 »). Aucune date de parution lue, d'où l'absence de date. Le PDF de bct.gov.tn (HTTP 200 le 6 octobre 2026, 13 467 639 octets, 167 pages) est identique en taille à la copie locale de tunisia-data (data/raw/bct-archives/109/RA_fr_1974.pdf, SHA-256 704837e0f935bfda85cb101ec311f49354a2fa6b0d72ccf8e4a47162d79e86e5, ignorée par git). Utilisé par la note documentaire compensation-avant-1970-et-plans pour : première contribution du budget à la Caisse générale de compensation, 5,3 MD (couche texte, p. PDF 95) ; stabilisation des prix (p. PDF 57) ; numéros de page calculés sur la couche texte, à confirmer à l'ouverture. Distincte de bct-ra (jeu de données générique « Rapport Annuel 2024 »). Consulté le 6 octobre 2026."
+    },
+    {
+      "id": "bct-ra-1984",
+      "type": "report",
+      "title": "26ème Rapport d'activité. Exercice 1984",
+      "author": [
+        {
+          "literal": "Banque centrale de Tunisie"
+        }
+      ],
+      "publisher": "Banque centrale de Tunisie",
+      "publisher-place": "Tunis",
+      "URL": "https://www.bct.gov.tn/bct/siteprod/documents/RA_fr_1984.pdf",
+      "title-short": "BCT, Rapport d'activité 1984",
+      "note": "citation-key: bct-ra-1984\nTitre lu sur la couverture à l'image le 6 octobre 2026 : « 26ème RAPPORT D'ACTIVITE, Exercice 1984 », présenté au Président de la République au nom du Conseil d'administration par le gouverneur Moncef Belkhodja ; la couverture ne porte aucune date de parution, d'où l'absence de date. Le catalogue de la BCT le range sous « Rapport Annuel, n° 26, Année 1984 ». Le PDF de bct.gov.tn (14 220 655 octets, 210 pages) est identique en taille à la copie locale de tunisia-data (RA_fr_1984.pdf). Page 153 imprimée (151e page du PDF), lue à l'image : « l'octroi à la Caisse générale de compensation d'importantes subventions qui ont totalisé 106 millions de dinars dont 98 millions à la charge du Budget ordinaire et 8 millions par prélèvement sur les disponibilités du Fonds de la contribution exceptionnelle de solidarité » ; dépenses des fonds spéciaux du Trésor passées de 273 millions de dinars en 1983 à 471 millions en 1984. Les rapports 1985 à 2011 (sauf 1987, 1990, 1997 et 2000) et 2015 à 2025 sont versés sous leurs propres clés (bct-ra-AAAA) ; les rapports 1980-1983, 1987, 1990, 1997, 2000 et 2012-2014 ne sont pas versés : aucun n'a été lu. Copie locale : tunisia-data/data/raw/bct-archives/109/RA_fr_1984.pdf (SHA-256 edbd12c1ffc384768fcda49b5e01d105a423de2381374364c19778de08506db9). Distincte de bct-ra (jeu de données générique « Rapport Annuel 2024 »). Consulté le 6 octobre 2026."
+    },
+    {
+      "id": "bct-ra-1985",
+      "type": "report",
+      "title": "27ème Rapport d'activité. Exercice 1985",
+      "author": [
+        {
+          "literal": "Banque centrale de Tunisie"
+        }
+      ],
+      "publisher": "Banque centrale de Tunisie",
+      "publisher-place": "Tunis",
+      "URL": "https://www.bct.gov.tn/bct/siteprod/documents/RA_fr_1985.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "title-short": "BCT, Rapport annuel 1985",
+      "note": "citation-key: bct-ra-1985\n27ème Rapport d'activité : couverture lue à l'image, le 6 octobre 2026. Rapport n° 27 de la BCT (catalogue « Rapport Annuel, n° 27 »). Aucune date de parution lue, d'où l'absence de date. Le PDF de bct.gov.tn (HTTP 200 le 6 octobre 2026, 12 923 377 octets, 197 pages) est identique en taille à la copie locale de tunisia-data (data/raw/bct-archives/109/RA_fr_1985.pdf, SHA-256 a7e7425daefeb3e79bfbd78550cd6a46e8b343745d0b61bb452852f61bf80319, ignorée par git). Aucune page de ce rapport n'est citée par cette notice : les pages utilisées sont celles que portent les lignes de source des figures et le texte qui les cite. Distincte de bct-ra (jeu de données générique « Rapport Annuel 2024 »). Consulté le 6 octobre 2026."
+    },
+    {
+      "id": "bct-ra-1986",
+      "type": "report",
+      "title": "28ème Rapport d'activité. Exercice 1986",
+      "author": [
+        {
+          "literal": "Banque centrale de Tunisie"
+        }
+      ],
+      "publisher": "Banque centrale de Tunisie",
+      "publisher-place": "Tunis",
+      "URL": "https://www.bct.gov.tn/bct/siteprod/documents/RA_fr_1986.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "title-short": "BCT, Rapport annuel 1986",
+      "note": "citation-key: bct-ra-1986\n28ème Rapport d'activité : couverture lue à l'image, le 6 octobre 2026. Rapport n° 28 de la BCT (catalogue « Rapport Annuel, n° 28 »). Aucune date de parution lue, d'où l'absence de date. Le PDF de bct.gov.tn (HTTP 200 le 6 octobre 2026, 12 920 108 octets, 203 pages) est identique en taille à la copie locale de tunisia-data (data/raw/bct-archives/109/RA_fr_1986.pdf, SHA-256 79317a95c4f560377964e229ad29cb186dac52389f24330a396f137ed50200f3, ignorée par git). Aucune page de ce rapport n'est citée par cette notice : les pages utilisées sont celles que portent les lignes de source des figures et le texte qui les cite. Distincte de bct-ra (jeu de données générique « Rapport Annuel 2024 »). Consulté le 6 octobre 2026."
+    },
+    {
+      "id": "bct-ra-1988",
+      "type": "report",
+      "title": "30ème Rapport d'activité. Exercice 1988",
+      "author": [
+        {
+          "literal": "Banque centrale de Tunisie"
+        }
+      ],
+      "publisher": "Banque centrale de Tunisie",
+      "publisher-place": "Tunis",
+      "URL": "https://www.bct.gov.tn/bct/siteprod/documents/RA_fr_1988.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "title-short": "BCT, Rapport annuel 1988",
+      "note": "citation-key: bct-ra-1988\n30ème Rapport d'activité : couverture lue à l'image, le 6 octobre 2026. Rapport n° 30 de la BCT (catalogue « Rapport Annuel, n° 30 »). Aucune date de parution lue, d'où l'absence de date. Le PDF de bct.gov.tn (HTTP 200 le 6 octobre 2026, 11 976 260 octets, 194 pages) est identique en taille à la copie locale de tunisia-data (data/raw/bct-archives/109/RA_fr_1988.pdf, SHA-256 40445444fe3a89389cb7b59e5d97966f2a00a05fd7943e58b694261df5c44085, ignorée par git). Aucune page de ce rapport n'est citée par cette notice : les pages utilisées sont celles que portent les lignes de source des figures et le texte qui les cite. Distincte de bct-ra (jeu de données générique « Rapport Annuel 2024 »). Consulté le 6 octobre 2026."
+    },
+    {
+      "id": "bct-ra-1989",
+      "type": "report",
+      "title": "31ème Rapport d'activité. Exercice 1989",
+      "author": [
+        {
+          "literal": "Banque centrale de Tunisie"
+        }
+      ],
+      "publisher": "Banque centrale de Tunisie",
+      "publisher-place": "Tunis",
+      "URL": "https://www.bct.gov.tn/bct/siteprod/documents/RA_fr_1989.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "title-short": "BCT, Rapport annuel 1989",
+      "note": "citation-key: bct-ra-1989\n31ème Rapport d'activité : couverture lue à l'image, le 6 octobre 2026. Rapport n° 31 de la BCT (catalogue « Rapport Annuel, n° 31 »). Aucune date de parution lue, d'où l'absence de date. Le PDF de bct.gov.tn (HTTP 200 le 6 octobre 2026, 13 322 641 octets, 229 pages) est identique en taille à la copie locale de tunisia-data (data/raw/bct-archives/109/RA_fr_1989.pdf, SHA-256 a821cebdf20d7e5fa3e1f06b177a56c841ddaf2b22336a82f8321c746bd76c7d, ignorée par git). Aucune page de ce rapport n'est citée par cette notice : les pages utilisées sont celles que portent les lignes de source des figures et le texte qui les cite. Distincte de bct-ra (jeu de données générique « Rapport Annuel 2024 »). Consulté le 6 octobre 2026."
+    },
+    {
+      "id": "bct-ra-1961",
+      "type": "report",
+      "title": "Rapport annuel. Année 1961",
+      "author": [
+        {
+          "literal": "Banque centrale de Tunisie"
+        }
+      ],
+      "publisher": "Banque centrale de Tunisie",
+      "publisher-place": "Tunis",
+      "URL": "https://www.bct.gov.tn/bct/siteprod/documents/RA_fr_1961.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            26
+          ]
+        ]
+      },
+      "title-short": "BCT, Rapport annuel 1961",
+      "note": "citation-key: bct-ra-1961\nLettre introductive lue en couche texte le 26 novembre 2026 : « le troisième rapport d'exercice ». Rapport n° 3 de la BCT (catalogue « Rapport Annuel, n° 3 », tunisia-data, sources/bct-archives-urls.csv). Aucune date de parution lue, d'où l'absence de date. PDF de bct.gov.tn (HTTP 206, application/pdf, le 26 novembre 2026) ; copie locale de tunisia-data (data/raw/bct-archives/109/RA_fr_1961.pdf, 5 408 858 octets, 114 pages, SHA-256 eb405fd3fb50a8be3a4792d05971fc4ec012aab568116453267ff140c92fadf2, ignorée par git). Utilisé pour les séries longues de la page « Séries longues des finances publiques et des paiements extérieurs » (tunisia-data, sources/bct-rapports-annuels-tableaux.md : pages des tableaux). Distincte de bct-ra (jeu de données générique « Rapport Annuel 2024 »). Consulté le 26 novembre 2026."
+    },
+    {
+      "id": "bct-ra-1962",
+      "type": "report",
+      "title": "Rapport annuel. Année 1962",
+      "author": [
+        {
+          "literal": "Banque centrale de Tunisie"
+        }
+      ],
+      "publisher": "Banque centrale de Tunisie",
+      "publisher-place": "Tunis",
+      "URL": "https://www.bct.gov.tn/bct/siteprod/documents/RA_fr_1962.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            26
+          ]
+        ]
+      },
+      "title-short": "BCT, Rapport annuel 1962",
+      "note": "citation-key: bct-ra-1962\nLettre introductive lue en couche texte le 26 novembre 2026 : « le quatrième rapport d'exercice ». Rapport n° 4 de la BCT (catalogue « Rapport Annuel, n° 4 », tunisia-data, sources/bct-archives-urls.csv). Aucune date de parution lue, d'où l'absence de date. PDF de bct.gov.tn (HTTP 206, application/pdf, le 26 novembre 2026) ; copie locale de tunisia-data (data/raw/bct-archives/109/RA_fr_1962.pdf, 6 176 216 octets, 107 pages, SHA-256 6052caef00d60071afc62de1ed321c310ec720e298dd7a48b32e061210266915, ignorée par git). Utilisé pour les séries longues de la page « Séries longues des finances publiques et des paiements extérieurs » (tunisia-data, sources/bct-rapports-annuels-tableaux.md : pages des tableaux). Distincte de bct-ra (jeu de données générique « Rapport Annuel 2024 »). Consulté le 26 novembre 2026."
+    },
+    {
+      "id": "bct-ra-1963",
+      "type": "report",
+      "title": "Rapport annuel. Année 1963",
+      "author": [
+        {
+          "literal": "Banque centrale de Tunisie"
+        }
+      ],
+      "publisher": "Banque centrale de Tunisie",
+      "publisher-place": "Tunis",
+      "URL": "https://www.bct.gov.tn/bct/siteprod/documents/RA_fr_1963.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            26
+          ]
+        ]
+      },
+      "title-short": "BCT, Rapport annuel 1963",
+      "note": "citation-key: bct-ra-1963\nCouverture et lettre introductive non lues : l'intitulé est celui de la collection. Rapport n° 5 de la BCT (catalogue « Rapport Annuel, n° 5 », tunisia-data, sources/bct-archives-urls.csv). Aucune date de parution lue, d'où l'absence de date. PDF de bct.gov.tn (HTTP 206, application/pdf, le 26 novembre 2026) ; copie locale de tunisia-data (data/raw/bct-archives/109/RA_fr_1963.pdf, 7 062 276 octets, 105 pages, SHA-256 745498ed11580cfbf33eac2e52b2ad0c7043fb89a592281e6ab1a3a5431684f9, ignorée par git). Utilisé pour les séries longues de la page « Séries longues des finances publiques et des paiements extérieurs » (tunisia-data, sources/bct-rapports-annuels-tableaux.md : pages des tableaux). Distincte de bct-ra (jeu de données générique « Rapport Annuel 2024 »). Consulté le 26 novembre 2026."
+    },
+    {
+      "id": "bct-ra-1964",
+      "type": "report",
+      "title": "Rapport annuel. Année 1964",
+      "author": [
+        {
+          "literal": "Banque centrale de Tunisie"
+        }
+      ],
+      "publisher": "Banque centrale de Tunisie",
+      "publisher-place": "Tunis",
+      "URL": "https://www.bct.gov.tn/bct/siteprod/documents/RA_fr_1964.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            26
+          ]
+        ]
+      },
+      "title-short": "BCT, Rapport annuel 1964",
+      "note": "citation-key: bct-ra-1964\nLettre introductive lue en couche texte le 26 novembre 2026 : « le sixième rapport d'exercice » (couche texte : « slxiilme »). Rapport n° 6 de la BCT (catalogue « Rapport Annuel, n° 6 », tunisia-data, sources/bct-archives-urls.csv). Aucune date de parution lue, d'où l'absence de date. PDF de bct.gov.tn (HTTP 206, application/pdf, le 26 novembre 2026) ; copie locale de tunisia-data (data/raw/bct-archives/109/RA_fr_1964.pdf, 5 419 188 octets, 114 pages, SHA-256 5db818f8c3d4512c39c18e4e56a1ac8a1b72c831988b2f70bd17d8bd98d3930d, ignorée par git). Utilisé pour les séries longues de la page « Séries longues des finances publiques et des paiements extérieurs » (tunisia-data, sources/bct-rapports-annuels-tableaux.md : pages des tableaux). Distincte de bct-ra (jeu de données générique « Rapport Annuel 2024 »). Consulté le 26 novembre 2026."
+    },
+    {
+      "id": "bct-ra-1966",
+      "type": "report",
+      "title": "Rapport annuel. Année 1966",
+      "author": [
+        {
+          "literal": "Banque centrale de Tunisie"
+        }
+      ],
+      "publisher": "Banque centrale de Tunisie",
+      "publisher-place": "Tunis",
+      "URL": "https://www.bct.gov.tn/bct/siteprod/documents/RA_fr_1966.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            26
+          ]
+        ]
+      },
+      "title-short": "BCT, Rapport annuel 1966",
+      "note": "citation-key: bct-ra-1966\nLettre introductive lue en couche texte le 26 novembre 2026 : « le huitième rapport d'exercice ». Rapport n° 8 de la BCT (catalogue « Rapport Annuel, n° 8 », tunisia-data, sources/bct-archives-urls.csv). Aucune date de parution lue, d'où l'absence de date. PDF de bct.gov.tn (HTTP 206, application/pdf, le 26 novembre 2026) ; copie locale de tunisia-data (data/raw/bct-archives/109/RA_fr_1966.pdf, 5 415 792 octets, 113 pages, SHA-256 73997de544bdda3898c431e0a35c84205192f808cc7d9afbcac56076f9832caf, ignorée par git). Utilisé pour les séries longues de la page « Séries longues des finances publiques et des paiements extérieurs » (tunisia-data, sources/bct-rapports-annuels-tableaux.md : pages des tableaux). Distincte de bct-ra (jeu de données générique « Rapport Annuel 2024 »). Consulté le 26 novembre 2026."
+    },
+    {
+      "id": "bct-ra-1968",
+      "type": "report",
+      "title": "Rapport annuel. Année 1968",
+      "author": [
+        {
+          "literal": "Banque centrale de Tunisie"
+        }
+      ],
+      "publisher": "Banque centrale de Tunisie",
+      "publisher-place": "Tunis",
+      "URL": "https://www.bct.gov.tn/bct/siteprod/documents/RA_fr_1968.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            26
+          ]
+        ]
+      },
+      "title-short": "BCT, Rapport annuel 1968",
+      "note": "citation-key: bct-ra-1968\nLettre introductive lue en couche texte le 26 novembre 2026 : « le dixième rapport d'exercice » (couche texte : « dixiime »). Rapport n° 10 de la BCT (catalogue « Rapport Annuel, n° 10 », tunisia-data, sources/bct-archives-urls.csv). Aucune date de parution lue, d'où l'absence de date. PDF de bct.gov.tn (HTTP 206, application/pdf, le 26 novembre 2026) ; copie locale de tunisia-data (data/raw/bct-archives/109/RA_fr_1968.pdf, 5 203 083 octets, 119 pages, SHA-256 0cb39fcad59988c346e5b47ae1dc3e59065420505bfd5edfb0ce5033de004cbe, ignorée par git). Utilisé pour les séries longues de la page « Séries longues des finances publiques et des paiements extérieurs » (tunisia-data, sources/bct-rapports-annuels-tableaux.md : pages des tableaux). Distincte de bct-ra (jeu de données générique « Rapport Annuel 2024 »). Consulté le 26 novembre 2026."
+    },
+    {
+      "id": "bct-ra-1969",
+      "type": "report",
+      "title": "Rapport annuel. Année 1969",
+      "author": [
+        {
+          "literal": "Banque centrale de Tunisie"
+        }
+      ],
+      "publisher": "Banque centrale de Tunisie",
+      "publisher-place": "Tunis",
+      "URL": "https://www.bct.gov.tn/bct/siteprod/documents/RA_fr_1969.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            26
+          ]
+        ]
+      },
+      "title-short": "BCT, Rapport annuel 1969",
+      "note": "citation-key: bct-ra-1969\nLettre introductive lue en couche texte le 26 novembre 2026 : « le onzième rapport d'exercice ». Rapport n° 11 de la BCT (catalogue « Rapport Annuel, n° 11 », tunisia-data, sources/bct-archives-urls.csv). Aucune date de parution lue, d'où l'absence de date. PDF de bct.gov.tn (HTTP 206, application/pdf, le 26 novembre 2026) ; copie locale de tunisia-data (data/raw/bct-archives/109/RA_fr_1969.pdf, 5 538 255 octets, 115 pages, SHA-256 e15de7f44d3d3ca8bd7b53f1ecbd136abc1b918f262746dab82d7a0bec391ac6, ignorée par git). Utilisé pour les séries longues de la page « Séries longues des finances publiques et des paiements extérieurs » (tunisia-data, sources/bct-rapports-annuels-tableaux.md : pages des tableaux). Distincte de bct-ra (jeu de données générique « Rapport Annuel 2024 »). Consulté le 26 novembre 2026."
+    },
+    {
+      "id": "bct-ra-1970",
+      "type": "report",
+      "title": "Rapport annuel. Année 1970",
+      "author": [
+        {
+          "literal": "Banque centrale de Tunisie"
+        }
+      ],
+      "publisher": "Banque centrale de Tunisie",
+      "publisher-place": "Tunis",
+      "URL": "https://www.bct.gov.tn/bct/siteprod/documents/RA_fr_1970.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            26
+          ]
+        ]
+      },
+      "title-short": "BCT, Rapport annuel 1970",
+      "note": "citation-key: bct-ra-1970\nLettre introductive lue en couche texte le 26 novembre 2026 : « le douzième rapport d'exercice ». Rapport n° 12 de la BCT (catalogue « Rapport Annuel, n° 12 », tunisia-data, sources/bct-archives-urls.csv). Aucune date de parution lue, d'où l'absence de date. PDF de bct.gov.tn (HTTP 206, application/pdf, le 26 novembre 2026) ; copie locale de tunisia-data (data/raw/bct-archives/109/RA_fr_1970.pdf, 6 243 455 octets, 129 pages, SHA-256 796ff721f902da3975fc864307e80d223b16384c2916c60cdab01f00276b9194, ignorée par git). Utilisé pour les séries longues de la page « Séries longues des finances publiques et des paiements extérieurs » (tunisia-data, sources/bct-rapports-annuels-tableaux.md : pages des tableaux). Distincte de bct-ra (jeu de données générique « Rapport Annuel 2024 »). Consulté le 26 novembre 2026."
+    },
+    {
+      "id": "bct-ra-1972",
+      "type": "report",
+      "title": "Rapport annuel. Année 1972",
+      "author": [
+        {
+          "literal": "Banque centrale de Tunisie"
+        }
+      ],
+      "publisher": "Banque centrale de Tunisie",
+      "publisher-place": "Tunis",
+      "URL": "https://www.bct.gov.tn/bct/siteprod/documents/RA_fr_1972.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            26
+          ]
+        ]
+      },
+      "title-short": "BCT, Rapport annuel 1972",
+      "note": "citation-key: bct-ra-1972\nCouverture et lettre introductive non lues : l'intitulé est celui de la collection. Rapport n° 14 de la BCT (catalogue « Rapport Annuel, n° 14 », tunisia-data, sources/bct-archives-urls.csv). Aucune date de parution lue, d'où l'absence de date. PDF de bct.gov.tn (HTTP 206, application/pdf, le 26 novembre 2026) ; copie locale de tunisia-data (data/raw/bct-archives/109/RA_fr_1972.pdf, 6 667 358 octets, 122 pages, SHA-256 e19f663742c96eb4e07e5dbdace6140b714f4fbb1e6f0a08c77945d8861e7c34, ignorée par git). Utilisé pour les séries longues de la page « Séries longues des finances publiques et des paiements extérieurs » (tunisia-data, sources/bct-rapports-annuels-tableaux.md : pages des tableaux). Distincte de bct-ra (jeu de données générique « Rapport Annuel 2024 »). Consulté le 26 novembre 2026."
+    },
+    {
+      "id": "bct-ra-1976",
+      "type": "report",
+      "title": "Rapport annuel. Année 1976",
+      "author": [
+        {
+          "literal": "Banque centrale de Tunisie"
+        }
+      ],
+      "publisher": "Banque centrale de Tunisie",
+      "publisher-place": "Tunis",
+      "URL": "https://www.bct.gov.tn/bct/siteprod/documents/RA_fr_1976.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            26
+          ]
+        ]
+      },
+      "title-short": "BCT, Rapport annuel 1976",
+      "note": "citation-key: bct-ra-1976\nLettre introductive lue en couche texte le 26 novembre 2026 : « le dix huitième rapport annuel ». Rapport n° 18 de la BCT (catalogue « Rapport Annuel, n° 18 », tunisia-data, sources/bct-archives-urls.csv). Aucune date de parution lue, d'où l'absence de date. PDF de bct.gov.tn (HTTP 206, application/pdf, le 26 novembre 2026) ; copie locale de tunisia-data (data/raw/bct-archives/109/RA_fr_1976.pdf, 12 767 989 octets, 193 pages, SHA-256 0ed1508dd633c28f5625147c6c685afa68f56cb1fbac678a0c8b390d97dee0ed, ignorée par git). Utilisé pour les séries longues de la page « Séries longues des finances publiques et des paiements extérieurs » (tunisia-data, sources/bct-rapports-annuels-tableaux.md : pages des tableaux). Distincte de bct-ra (jeu de données générique « Rapport Annuel 2024 »). Consulté le 26 novembre 2026."
+    },
+    {
+      "id": "bct-ra-1977",
+      "type": "report",
+      "title": "Rapport annuel. Année 1977",
+      "author": [
+        {
+          "literal": "Banque centrale de Tunisie"
+        }
+      ],
+      "publisher": "Banque centrale de Tunisie",
+      "publisher-place": "Tunis",
+      "URL": "https://www.bct.gov.tn/bct/siteprod/documents/RA_fr_1977.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            26
+          ]
+        ]
+      },
+      "title-short": "BCT, Rapport annuel 1977",
+      "note": "citation-key: bct-ra-1977\nLettre introductive lue en couche texte le 26 novembre 2026 : « le dix-neuvième rapport » (couche texte : « dix-ne~vième »). Rapport n° 19 de la BCT (catalogue « Rapport Annuel, n° 19 », tunisia-data, sources/bct-archives-urls.csv). Aucune date de parution lue, d'où l'absence de date. PDF de bct.gov.tn (HTTP 206, application/pdf, le 26 novembre 2026) ; copie locale de tunisia-data (data/raw/bct-archives/109/RA_fr_1977.pdf, 11 780 033 octets, 204 pages, SHA-256 2ee1bc9898da86ad2b6891b878d5a362c1857dc05a5cf414aa7627c0a146fe8c, ignorée par git). Utilisé pour les séries longues de la page « Séries longues des finances publiques et des paiements extérieurs » (tunisia-data, sources/bct-rapports-annuels-tableaux.md : pages des tableaux). Distincte de bct-ra (jeu de données générique « Rapport Annuel 2024 »). Consulté le 26 novembre 2026."
+    },
+    {
+      "id": "bct-ra-1978",
+      "type": "report",
+      "title": "Rapport annuel. Année 1978",
+      "author": [
+        {
+          "literal": "Banque centrale de Tunisie"
+        }
+      ],
+      "publisher": "Banque centrale de Tunisie",
+      "publisher-place": "Tunis",
+      "URL": "https://www.bct.gov.tn/bct/siteprod/documents/RA_fr_1978.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            26
+          ]
+        ]
+      },
+      "title-short": "BCT, Rapport annuel 1978",
+      "note": "citation-key: bct-ra-1978\nLettre introductive lue en couche texte le 26 novembre 2026 : « le 20ème Rapport ». Rapport n° 20 de la BCT (catalogue « Rapport Annuel, n° 20 », tunisia-data, sources/bct-archives-urls.csv). Aucune date de parution lue, d'où l'absence de date. PDF de bct.gov.tn (HTTP 206, application/pdf, le 26 novembre 2026) ; copie locale de tunisia-data (data/raw/bct-archives/109/RA_fr_1978.pdf, 12 734 313 octets, 205 pages, SHA-256 4ac3c0e58813b19e544511fb92385b6ffe354eaa2c638f537590c33168860f9f, ignorée par git). Utilisé pour les séries longues de la page « Séries longues des finances publiques et des paiements extérieurs » (tunisia-data, sources/bct-rapports-annuels-tableaux.md : pages des tableaux). Distincte de bct-ra (jeu de données générique « Rapport Annuel 2024 »). Consulté le 26 novembre 2026."
+    },
+    {
+      "id": "bct-ra-1981",
+      "type": "report",
+      "title": "Rapport annuel. Année 1981",
+      "author": [
+        {
+          "literal": "Banque centrale de Tunisie"
+        }
+      ],
+      "publisher": "Banque centrale de Tunisie",
+      "publisher-place": "Tunis",
+      "URL": "https://www.bct.gov.tn/bct/siteprod/documents/RA_fr_1981.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            26
+          ]
+        ]
+      },
+      "title-short": "BCT, Rapport annuel 1981",
+      "note": "citation-key: bct-ra-1981\nLettre introductive lue en couche texte le 26 novembre 2026 : « ce vingt troisième rapport ». Rapport n° 23 de la BCT (catalogue « Rapport Annuel, n° 23 », tunisia-data, sources/bct-archives-urls.csv). Aucune date de parution lue, d'où l'absence de date. PDF de bct.gov.tn (HTTP 206, application/pdf, le 26 novembre 2026) ; copie locale de tunisia-data (data/raw/bct-archives/109/RA_fr_1981.pdf, 13 357 919 octets, 219 pages, SHA-256 47d0dfac5a69d1494ddb1ddb00fa3bace4e2227912959974fa8c4a12ce2571fa, ignorée par git). Utilisé pour les séries longues de la page « Séries longues des finances publiques et des paiements extérieurs » (tunisia-data, sources/bct-rapports-annuels-tableaux.md : pages des tableaux). Distincte de bct-ra (jeu de données générique « Rapport Annuel 2024 »). Consulté le 26 novembre 2026."
+    },
+    {
+      "id": "bct-ra-1982",
+      "type": "report",
+      "title": "Rapport annuel. Année 1982",
+      "author": [
+        {
+          "literal": "Banque centrale de Tunisie"
+        }
+      ],
+      "publisher": "Banque centrale de Tunisie",
+      "publisher-place": "Tunis",
+      "URL": "https://www.bct.gov.tn/bct/siteprod/documents/RA_fr_1982.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            26
+          ]
+        ]
+      },
+      "title-short": "BCT, Rapport annuel 1982",
+      "note": "citation-key: bct-ra-1982\nCouverture et lettre introductive non lues : l'intitulé est celui de la collection. Rapport n° 24 de la BCT (catalogue « Rapport Annuel, n° 24 », tunisia-data, sources/bct-archives-urls.csv). Aucune date de parution lue, d'où l'absence de date. PDF de bct.gov.tn (HTTP 206, application/pdf, le 26 novembre 2026) ; copie locale de tunisia-data (data/raw/bct-archives/109/RA_fr_1982.pdf, 11 602 344 octets, 186 pages, SHA-256 03d8231382ae5a86268d9bc98ed823885caf84b81ef4edde55c57a05dc11696b, ignorée par git). Utilisé pour les séries longues de la page « Séries longues des finances publiques et des paiements extérieurs » (tunisia-data, sources/bct-rapports-annuels-tableaux.md : pages des tableaux). Distincte de bct-ra (jeu de données générique « Rapport Annuel 2024 »). Consulté le 26 novembre 2026."
+    },
+    {
+      "id": "bct-ra-1990",
+      "type": "report",
+      "title": "Rapport annuel. Année 1990",
+      "author": [
+        {
+          "literal": "Banque centrale de Tunisie"
+        }
+      ],
+      "publisher": "Banque centrale de Tunisie",
+      "publisher-place": "Tunis",
+      "URL": "https://www.bct.gov.tn/bct/siteprod/documents/RA_fr_1990.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            26
+          ]
+        ]
+      },
+      "title-short": "BCT, Rapport annuel 1990",
+      "note": "citation-key: bct-ra-1990\nLettre introductive lue en couche texte le 26 novembre 2026 : « le trente-deuxième rapport annuel ». Rapport n° 32 de la BCT (catalogue « Rapport Annuel, n° 32 », tunisia-data, sources/bct-archives-urls.csv). Aucune date de parution lue, d'où l'absence de date. PDF de bct.gov.tn (HTTP 206, application/pdf, le 26 novembre 2026) ; copie locale de tunisia-data (data/raw/bct-archives/109/RA_fr_1990.pdf, 11 442 827 octets, 188 pages, SHA-256 a7a0bf31334683cb17926f2bbc789c9eb3e85cecd11f3db345557a3860535f7d, ignorée par git). Utilisé pour les séries longues de la page « Séries longues des finances publiques et des paiements extérieurs » (tunisia-data, sources/bct-rapports-annuels-tableaux.md : pages des tableaux). Distincte de bct-ra (jeu de données générique « Rapport Annuel 2024 »). Consulté le 26 novembre 2026."
+    },
+    {
+      "id": "bct-balance-paiements",
+      "type": "report",
+      "title": "Balance des paiements de la Tunisie (éditions successives, 1987 à 2024)",
+      "title-short": "BCT, Balance des paiements, éditions successives",
+      "author": [
+        {
+          "literal": "Banque centrale de Tunisie"
+        }
+      ],
+      "publisher": "Banque centrale de Tunisie",
+      "publisher-place": "Tunis",
+      "URL": "https://www.bct.gov.tn/bct/siteprod/documents/balance2024.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            26
+          ]
+        ]
+      },
+      "note": "citation-key: bct-balance-paiements\nEnsemble des 38 éditions annuelles de la publication « Balance des paiements » de la BCT (rubrique 106 des archives de la BCT), de 1987 à 2024, aux adresses https://www.bct.gov.tn/bct/siteprod/documents/balanceAAAA.pdf (tunisia-data, sources/bct-archives-urls.csv ; éditions 1987, 1996 et 2024 contrôlées le 26 novembre 2026, HTTP 206, application/pdf). Éditions 1987-1996 : chapitre « Aperçu général », tableau « Évolution des principaux soldes de la balance des paiements », présentation antérieure au MBP5 ; éditions 1997-2021 : annexes en présentation MBP5 ; éditions 2022-2024 : tableaux 19 et 20, MBP6. Fiche : tunisia-data, sources/bct-balance-paiements.md. L'URL donnée est celle de l'édition 2024."
+    },
+    {
+      "id": "reglement-1954-55",
+      "type": "legislation",
+      "title": "Loi n° 66-2 du 28 janvier 1966, portant règlement du budget de l'exercice 1954-55",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "5",
+      "volume": "109",
+      "page": "150-151",
+      "issued": {
+        "date-parts": [
+          [
+            1966,
+            1,
+            28
+          ]
+        ]
+      },
+      "title-short": "Loi n° 66-2 du 28 janvier 1966",
+      "URL": "https://www.pist.tn/jort/1966/1966F/Jo00566.pdf",
+      "note": "citation-key: reglement-1954-55\nLoi de règlement ; JORT n° 5 du 1er février 1966, tome 109, pages 150-151 (jort_cache.db, recid 117300). Article unique lu (tunisia-data, série jort-lois-reglement-1954-1985 : transcription montant par montant, page et mode de lecture, fiche sources/jort-lois-reglement.md). Montants imprimés en dinars. Édition française ; URL pist.tn contrôlée le 26 novembre 2026 (HTTP 206, application/pdf)."
+    },
+    {
+      "id": "reglement-1955-56",
+      "type": "legislation",
+      "title": "Loi n° 66-3 du 28 janvier 1966, portant règlement du budget de l'exercice 1955-1956",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "5",
+      "volume": "109",
+      "page": "151-152",
+      "issued": {
+        "date-parts": [
+          [
+            1966,
+            1,
+            28
+          ]
+        ]
+      },
+      "title-short": "Loi n° 66-3 du 28 janvier 1966",
+      "URL": "https://www.pist.tn/jort/1966/1966F/Jo00566.pdf",
+      "note": "citation-key: reglement-1955-56\nLoi de règlement ; JORT n° 5 du 1er février 1966, tome 109, pages 151-152 (jort_cache.db, recid 117301). Article unique lu (tunisia-data, série jort-lois-reglement-1954-1985 : transcription montant par montant, page et mode de lecture, fiche sources/jort-lois-reglement.md). Montants imprimés en dinars. Édition française ; URL pist.tn contrôlée le 26 novembre 2026 (HTTP 206, application/pdf)."
+    },
+    {
+      "id": "reglement-1956-57",
+      "type": "legislation",
+      "title": "Loi n° 66-4 du 28 janvier 1966, portant règlement du budget de la gestion 1956-57",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "5",
+      "volume": "109",
+      "page": "152-153",
+      "issued": {
+        "date-parts": [
+          [
+            1966,
+            1,
+            28
+          ]
+        ]
+      },
+      "title-short": "Loi n° 66-4 du 28 janvier 1966",
+      "URL": "https://www.pist.tn/jort/1966/1966F/Jo00566.pdf",
+      "note": "citation-key: reglement-1956-57\nLoi de règlement ; JORT n° 5 du 1er février 1966, tome 109, pages 152-153 (jort_cache.db, recid 117302). Article unique lu (tunisia-data, série jort-lois-reglement-1954-1985 : transcription montant par montant, page et mode de lecture, fiche sources/jort-lois-reglement.md). Montants imprimés en dinars. Édition française ; URL pist.tn contrôlée le 26 novembre 2026 (HTTP 206, application/pdf)."
+    },
+    {
+      "id": "reglement-1957-58",
+      "type": "legislation",
+      "title": "Loi n° 66-5 du 28 janvier 1966, portant règlement du budget de la gestion 1957-58",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "5",
+      "volume": "109",
+      "page": "153-154",
+      "issued": {
+        "date-parts": [
+          [
+            1966,
+            1,
+            28
+          ]
+        ]
+      },
+      "title-short": "Loi n° 66-5 du 28 janvier 1966",
+      "URL": "https://www.pist.tn/jort/1966/1966F/Jo00566.pdf",
+      "note": "citation-key: reglement-1957-58\nLoi de règlement ; JORT n° 5 du 1er février 1966, tome 109, pages 153-154 (jort_cache.db, recid 117303). Article unique lu (tunisia-data, série jort-lois-reglement-1954-1985 : transcription montant par montant, page et mode de lecture, fiche sources/jort-lois-reglement.md). Montants imprimés en dinars. Édition française ; URL pist.tn contrôlée le 26 novembre 2026 (HTTP 206, application/pdf)."
+    },
+    {
+      "id": "reglement-1958-59",
+      "type": "legislation",
+      "title": "Loi n° 66-6 du 28 janvier 1966, portant règlement du budget de la gestion 1958-59",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "5",
+      "volume": "109",
+      "page": "155-156",
+      "issued": {
+        "date-parts": [
+          [
+            1966,
+            1,
+            28
+          ]
+        ]
+      },
+      "title-short": "Loi n° 66-6 du 28 janvier 1966",
+      "URL": "https://www.pist.tn/jort/1966/1966F/Jo00566.pdf",
+      "note": "citation-key: reglement-1958-59\nLoi de règlement ; JORT n° 5 du 1er février 1966, tome 109, pages 155-156 (jort_cache.db, recid 117304). Article unique lu (tunisia-data, série jort-lois-reglement-1954-1985 : transcription montant par montant, page et mode de lecture, fiche sources/jort-lois-reglement.md). Montants imprimés en dinars. Édition française ; URL pist.tn contrôlée le 26 novembre 2026 (HTTP 206, application/pdf)."
+    },
+    {
+      "id": "reglement-1959-60",
+      "type": "legislation",
+      "title": "Loi n° 66-7 du 28 janvier 1966, portant règlement du budget de la gestion 1959-60",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "5",
+      "volume": "109",
+      "page": "156-157",
+      "issued": {
+        "date-parts": [
+          [
+            1966,
+            1,
+            28
+          ]
+        ]
+      },
+      "title-short": "Loi n° 66-7 du 28 janvier 1966",
+      "URL": "https://www.pist.tn/jort/1966/1966F/Jo00566.pdf",
+      "note": "citation-key: reglement-1959-60\nLoi de règlement ; JORT n° 5 du 1er février 1966, tome 109, pages 156-157 (jort_cache.db, recid 117305). Article unique lu (tunisia-data, série jort-lois-reglement-1954-1985 : transcription montant par montant, page et mode de lecture, fiche sources/jort-lois-reglement.md). Montants imprimés en dinars. Édition française ; URL pist.tn contrôlée le 26 novembre 2026 (HTTP 206, application/pdf)."
+    },
+    {
+      "id": "reglement-1960",
+      "type": "legislation",
+      "title": "Loi n° 66-8 du 28 janvier 1966, portant règlement du budget de la gestion 1960 (9 mois)",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "5",
+      "volume": "109",
+      "page": "157-159",
+      "issued": {
+        "date-parts": [
+          [
+            1966,
+            1,
+            28
+          ]
+        ]
+      },
+      "title-short": "Loi n° 66-8 du 28 janvier 1966",
+      "URL": "https://www.pist.tn/jort/1966/1966F/Jo00566.pdf",
+      "note": "citation-key: reglement-1960\nLoi de règlement ; JORT n° 5 du 1er février 1966, tome 109, pages 157-159 (jort_cache.db, recid 117306). Article unique lu (tunisia-data, série jort-lois-reglement-1954-1985 : transcription montant par montant, page et mode de lecture, fiche sources/jort-lois-reglement.md). Montants imprimés en dinars. Édition française ; URL pist.tn contrôlée le 26 novembre 2026 (HTTP 206, application/pdf)."
+    },
+    {
+      "id": "reglement-1961",
+      "type": "legislation",
+      "title": "Loi n° 66-9 du 28 janvier 1966, portant règlement du budget de la gestion 1961",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "5",
+      "volume": "109",
+      "page": "159-161",
+      "issued": {
+        "date-parts": [
+          [
+            1966,
+            1,
+            28
+          ]
+        ]
+      },
+      "title-short": "Loi n° 66-9 du 28 janvier 1966",
+      "URL": "https://www.pist.tn/jort/1966/1966F/Jo00566.pdf",
+      "note": "citation-key: reglement-1961\nLoi de règlement ; JORT n° 5 du 1er février 1966, tome 109, pages 159-161 (jort_cache.db, recid 117307). Article unique lu (tunisia-data, série jort-lois-reglement-1954-1985 : transcription montant par montant, page et mode de lecture, fiche sources/jort-lois-reglement.md). Montants imprimés en dinars. Édition française ; URL pist.tn contrôlée le 26 novembre 2026 (HTTP 206, application/pdf)."
+    },
+    {
+      "id": "reglement-1962",
+      "type": "legislation",
+      "title": "Loi n° 66-10 du 28 janvier 1966, portant règlement du budget ordinaire de la gestion 1962",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "5",
+      "volume": "109",
+      "page": "161-162",
+      "issued": {
+        "date-parts": [
+          [
+            1966,
+            1,
+            28
+          ]
+        ]
+      },
+      "title-short": "Loi n° 66-10 du 28 janvier 1966",
+      "URL": "https://www.pist.tn/jort/1966/1966F/Jo00566.pdf",
+      "note": "citation-key: reglement-1962\nLoi de règlement ; JORT n° 5 du 1er février 1966, tome 109, pages 161-162 (jort_cache.db, recid 117308). Article unique lu (tunisia-data, série jort-lois-reglement-1954-1985 : transcription montant par montant, page et mode de lecture, fiche sources/jort-lois-reglement.md). Montants imprimés en dinars. Édition française ; URL pist.tn contrôlée le 26 novembre 2026 (HTTP 206, application/pdf)."
+    },
+    {
+      "id": "reglement-1963",
+      "type": "legislation",
+      "title": "Loi n° 66-11 du 28 janvier 1966, portant règlement du budget ordinaire de la gestion 1963",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "5",
+      "volume": "109",
+      "page": "162-163",
+      "issued": {
+        "date-parts": [
+          [
+            1966,
+            1,
+            28
+          ]
+        ]
+      },
+      "title-short": "Loi n° 66-11 du 28 janvier 1966",
+      "URL": "https://www.pist.tn/jort/1966/1966F/Jo00566.pdf",
+      "note": "citation-key: reglement-1963\nLoi de règlement ; JORT n° 5 du 1er février 1966, tome 109, pages 162-163 (jort_cache.db, recid 117309). Article unique lu (tunisia-data, série jort-lois-reglement-1954-1985 : transcription montant par montant, page et mode de lecture, fiche sources/jort-lois-reglement.md). Montants imprimés en dinars. Édition française ; URL pist.tn contrôlée le 26 novembre 2026 (HTTP 206, application/pdf)."
+    },
+    {
+      "id": "reglement-1964",
+      "type": "legislation",
+      "title": "Loi n° 66-14 du 14 février 1966, portant règlement du budget ordinaire de la gestion 1964",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "8",
+      "volume": "109",
+      "page": "229-230",
+      "issued": {
+        "date-parts": [
+          [
+            1966,
+            2,
+            14
+          ]
+        ]
+      },
+      "title-short": "Loi n° 66-14 du 14 février 1966",
+      "URL": "https://www.pist.tn/jort/1966/1966F/Jo00866.pdf",
+      "note": "citation-key: reglement-1964\nLoi de règlement ; JORT n° 8 du 15 février 1966, tome 109, pages 229-230 (jort_cache.db, recid 117298). Article unique lu (tunisia-data, série jort-lois-reglement-1954-1985 : transcription montant par montant, page et mode de lecture, fiche sources/jort-lois-reglement.md). Montants imprimés en dinars. Édition française ; URL pist.tn contrôlée le 26 novembre 2026 (HTTP 206, application/pdf)."
+    },
+    {
+      "id": "reglement-1962-64",
+      "type": "legislation",
+      "title": "Loi n° 83-88 du 24 novembre 1983, portant règlement du budget pour la triennie 1962-64",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "77",
+      "volume": "126",
+      "page": "3050",
+      "issued": {
+        "date-parts": [
+          [
+            1983,
+            11,
+            24
+          ]
+        ]
+      },
+      "title-short": "Loi n° 83-88 du 24 novembre 1983",
+      "URL": "https://www.pist.tn/jort/1983/1983F/Jo07783.pdf",
+      "note": "citation-key: reglement-1962-64\nLoi de règlement ; JORT n° 77 du 29 novembre 1983, tome 126, pages 3050 (jort_cache.db, recid 114862). Article unique lu (tunisia-data, série jort-lois-reglement-1954-1985 : transcription montant par montant, page et mode de lecture, fiche sources/jort-lois-reglement.md). Montants imprimés en dinars. Édition française ; URL pist.tn contrôlée le 26 novembre 2026 (HTTP 206, application/pdf)."
+    },
+    {
+      "id": "reglement-1965",
+      "type": "legislation",
+      "title": "Loi n° 83-89 du 24 novembre 1983, portant règlement du budget pour la gestion 1965",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "77",
+      "volume": "126",
+      "page": "3051-3054",
+      "issued": {
+        "date-parts": [
+          [
+            1983,
+            11,
+            24
+          ]
+        ]
+      },
+      "title-short": "Loi n° 83-89 du 24 novembre 1983",
+      "URL": "https://www.pist.tn/jort/1983/1983F/Jo07783.pdf",
+      "note": "citation-key: reglement-1965\nLoi de règlement ; JORT n° 77 du 29 novembre 1983, tome 126, pages 3051-3054 (jort_cache.db, recid 114863). Article unique lu (tunisia-data, série jort-lois-reglement-1954-1985 : transcription montant par montant, page et mode de lecture, fiche sources/jort-lois-reglement.md). Montants imprimés en dinars. Édition française ; URL pist.tn contrôlée le 26 novembre 2026 (HTTP 206, application/pdf)."
+    },
+    {
+      "id": "reglement-1966",
+      "type": "legislation",
+      "title": "Loi n° 83-90 du 24 novembre 1983, portant règlement du budget pour la gestion 1966",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "77",
+      "volume": "126",
+      "page": "3055-3058",
+      "issued": {
+        "date-parts": [
+          [
+            1983,
+            11,
+            24
+          ]
+        ]
+      },
+      "title-short": "Loi n° 83-90 du 24 novembre 1983",
+      "URL": "https://www.pist.tn/jort/1983/1983F/Jo07783.pdf",
+      "note": "citation-key: reglement-1966\nLoi de règlement ; JORT n° 77 du 29 novembre 1983, tome 126, pages 3055-3058 (jort_cache.db, recid 114864). Article unique lu (tunisia-data, série jort-lois-reglement-1954-1985 : transcription montant par montant, page et mode de lecture, fiche sources/jort-lois-reglement.md). Montants imprimés en dinars. Édition française ; URL pist.tn contrôlée le 26 novembre 2026 (HTTP 206, application/pdf)."
+    },
+    {
+      "id": "reglement-1967",
+      "type": "legislation",
+      "title": "Loi n° 83-91 du 24 novembre 1983, portant règlement du budget pour la gestion 1967",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "77",
+      "volume": "126",
+      "page": "3059-3062",
+      "issued": {
+        "date-parts": [
+          [
+            1983,
+            11,
+            24
+          ]
+        ]
+      },
+      "title-short": "Loi n° 83-91 du 24 novembre 1983",
+      "URL": "https://www.pist.tn/jort/1983/1983F/Jo07783.pdf",
+      "note": "citation-key: reglement-1967\nLoi de règlement ; JORT n° 77 du 29 novembre 1983, tome 126, pages 3059-3062 (jort_cache.db, recid 114865). Article unique lu (tunisia-data, série jort-lois-reglement-1954-1985 : transcription montant par montant, page et mode de lecture, fiche sources/jort-lois-reglement.md). Montants imprimés en dinars. Édition française ; URL pist.tn contrôlée le 26 novembre 2026 (HTTP 206, application/pdf)."
+    },
+    {
+      "id": "reglement-1968",
+      "type": "legislation",
+      "title": "Loi n° 83-92 du 24 novembre 1983, portant règlement du budget pour la gestion 1968",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "77",
+      "volume": "126",
+      "page": "3063-3066",
+      "issued": {
+        "date-parts": [
+          [
+            1983,
+            11,
+            24
+          ]
+        ]
+      },
+      "title-short": "Loi n° 83-92 du 24 novembre 1983",
+      "URL": "https://www.pist.tn/jort/1983/1983F/Jo07783.pdf",
+      "note": "citation-key: reglement-1968\nLoi de règlement ; JORT n° 77 du 29 novembre 1983, tome 126, pages 3063-3066 (jort_cache.db, recid 114866). Article unique lu (tunisia-data, série jort-lois-reglement-1954-1985 : transcription montant par montant, page et mode de lecture, fiche sources/jort-lois-reglement.md). Montants imprimés en dinars. Édition française ; URL pist.tn contrôlée le 26 novembre 2026 (HTTP 206, application/pdf)."
+    },
+    {
+      "id": "reglement-1969",
+      "type": "legislation",
+      "title": "Loi n° 83-93 du 24 novembre 1983, portant règlement du budget pour la gestion 1969",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "77",
+      "volume": "126",
+      "page": "3067-3070",
+      "issued": {
+        "date-parts": [
+          [
+            1983,
+            11,
+            24
+          ]
+        ]
+      },
+      "title-short": "Loi n° 83-93 du 24 novembre 1983",
+      "URL": "https://www.pist.tn/jort/1983/1983F/Jo07783.pdf",
+      "note": "citation-key: reglement-1969\nLoi de règlement ; JORT n° 77 du 29 novembre 1983, tome 126, pages 3067-3070 (jort_cache.db, recid 114867). Article unique lu (tunisia-data, série jort-lois-reglement-1954-1985 : transcription montant par montant, page et mode de lecture, fiche sources/jort-lois-reglement.md). Montants imprimés en dinars. Édition française ; URL pist.tn contrôlée le 26 novembre 2026 (HTTP 206, application/pdf)."
+    },
+    {
+      "id": "reglement-1970",
+      "type": "legislation",
+      "title": "Loi n° 83-94 du 24 novembre 1983, portant règlement du budget pour la gestion 1970",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "77",
+      "volume": "126",
+      "page": "3071-3074",
+      "issued": {
+        "date-parts": [
+          [
+            1983,
+            11,
+            24
+          ]
+        ]
+      },
+      "title-short": "Loi n° 83-94 du 24 novembre 1983",
+      "URL": "https://www.pist.tn/jort/1983/1983F/Jo07783.pdf",
+      "note": "citation-key: reglement-1970\nLoi de règlement ; JORT n° 77 du 29 novembre 1983, tome 126, pages 3071-3074 (jort_cache.db, recid 114868). Article unique lu (tunisia-data, série jort-lois-reglement-1954-1985 : transcription montant par montant, page et mode de lecture, fiche sources/jort-lois-reglement.md). Montants imprimés en dinars. Édition française ; URL pist.tn contrôlée le 26 novembre 2026 (HTTP 206, application/pdf)."
+    },
+    {
+      "id": "reglement-1971",
+      "type": "legislation",
+      "title": "Loi n° 84-31 du 2 juin 1984, portant règlement du budget pour la gestion 1971",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "37",
+      "volume": "127",
+      "page": "1311-1314",
+      "issued": {
+        "date-parts": [
+          [
+            1984,
+            6,
+            2
+          ]
+        ]
+      },
+      "title-short": "Loi n° 84-31 du 2 juin 1984",
+      "URL": "https://www.pist.tn/jort/1984/1984F/Jo03784.pdf",
+      "note": "citation-key: reglement-1971\nLoi de règlement ; JORT n° 37 du 8 juin 1984, tome 127, pages 1311-1314 (jort_cache.db, recid 114741). Article unique lu (tunisia-data, série jort-lois-reglement-1954-1985 : transcription montant par montant, page et mode de lecture, fiche sources/jort-lois-reglement.md). Montants imprimés en dinars. Édition française ; URL pist.tn contrôlée le 26 novembre 2026 (HTTP 206, application/pdf)."
+    },
+    {
+      "id": "reglement-1972",
+      "type": "legislation",
+      "title": "Loi n° 84-32 du 2 juin 1984, portant règlement du budget pour la gestion 1972",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "37",
+      "volume": "127",
+      "page": "1315-1318",
+      "issued": {
+        "date-parts": [
+          [
+            1984,
+            6,
+            2
+          ]
+        ]
+      },
+      "title-short": "Loi n° 84-32 du 2 juin 1984",
+      "URL": "https://www.pist.tn/jort/1984/1984F/Jo03784.pdf",
+      "note": "citation-key: reglement-1972\nLoi de règlement ; JORT n° 37 du 8 juin 1984, tome 127, pages 1315-1318 (jort_cache.db, recid 114742). Article unique lu (tunisia-data, série jort-lois-reglement-1954-1985 : transcription montant par montant, page et mode de lecture, fiche sources/jort-lois-reglement.md). Montants imprimés en dinars. Édition française ; URL pist.tn contrôlée le 26 novembre 2026 (HTTP 206, application/pdf)."
+    },
+    {
+      "id": "reglement-1973",
+      "type": "legislation",
+      "title": "Loi n° 84-33 du 2 juin 1984, portant règlement du budget pour la gestion 1973",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "37",
+      "volume": "127",
+      "page": "1319-1323",
+      "issued": {
+        "date-parts": [
+          [
+            1984,
+            6,
+            2
+          ]
+        ]
+      },
+      "title-short": "Loi n° 84-33 du 2 juin 1984",
+      "URL": "https://www.pist.tn/jort/1984/1984F/Jo03784.pdf",
+      "note": "citation-key: reglement-1973\nLoi de règlement ; JORT n° 37 du 8 juin 1984, tome 127, pages 1319-1323 (jort_cache.db, recid 114743). Article unique lu (tunisia-data, série jort-lois-reglement-1954-1985 : transcription montant par montant, page et mode de lecture, fiche sources/jort-lois-reglement.md). Montants imprimés en dinars. Édition française ; URL pist.tn contrôlée le 26 novembre 2026 (HTTP 206, application/pdf)."
+    },
+    {
+      "id": "reglement-1974",
+      "type": "legislation",
+      "title": "Loi n° 84-34 du 2 juin 1984, portant règlement du budget pour la gestion 1974",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "37",
+      "volume": "127",
+      "page": "1324-1327",
+      "issued": {
+        "date-parts": [
+          [
+            1984,
+            6,
+            2
+          ]
+        ]
+      },
+      "title-short": "Loi n° 84-34 du 2 juin 1984",
+      "URL": "https://www.pist.tn/jort/1984/1984F/Jo03784.pdf",
+      "note": "citation-key: reglement-1974\nLoi de règlement ; JORT n° 37 du 8 juin 1984, tome 127, pages 1324-1327 (jort_cache.db, recid 114744). Article unique lu (tunisia-data, série jort-lois-reglement-1954-1985 : transcription montant par montant, page et mode de lecture, fiche sources/jort-lois-reglement.md). Montants imprimés en dinars. Édition française ; URL pist.tn contrôlée le 26 novembre 2026 (HTTP 206, application/pdf)."
+    },
+    {
+      "id": "reglement-1975",
+      "type": "legislation",
+      "title": "Loi n° 84-35 du 2 juin 1984, portant règlement du budget pour la gestion 1975",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "37",
+      "volume": "127",
+      "page": "1328-1332",
+      "issued": {
+        "date-parts": [
+          [
+            1984,
+            6,
+            2
+          ]
+        ]
+      },
+      "title-short": "Loi n° 84-35 du 2 juin 1984",
+      "URL": "https://www.pist.tn/jort/1984/1984F/Jo03784.pdf",
+      "note": "citation-key: reglement-1975\nLoi de règlement ; JORT n° 37 du 8 juin 1984, tome 127, pages 1328-1332 (jort_cache.db, recid 114745). Article unique lu (tunisia-data, série jort-lois-reglement-1954-1985 : transcription montant par montant, page et mode de lecture, fiche sources/jort-lois-reglement.md). Montants imprimés en dinars. Édition française ; URL pist.tn contrôlée le 26 novembre 2026 (HTTP 206, application/pdf)."
+    },
+    {
+      "id": "reglement-1976",
+      "type": "legislation",
+      "title": "Loi n° 86-48 du 13 juin 1986, portant règlement du budget pour la gestion 1976",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "36",
+      "volume": "129",
+      "page": "698-701",
+      "issued": {
+        "date-parts": [
+          [
+            1986,
+            6,
+            13
+          ]
+        ]
+      },
+      "title-short": "Loi n° 86-48 du 13 juin 1986",
+      "URL": "https://www.pist.tn/jort/1986/1986F/Jo03686.pdf",
+      "note": "citation-key: reglement-1976\nLoi de règlement ; JORT n° 36 du 17 juin 1986, tome 129, pages 698-701 (jort_cache.db, recid 114409). Article unique lu (tunisia-data, série jort-lois-reglement-1954-1985 : transcription montant par montant, page et mode de lecture, fiche sources/jort-lois-reglement.md). Montants imprimés en dinars. Édition française ; URL pist.tn contrôlée le 26 novembre 2026 (HTTP 206, application/pdf)."
+    },
+    {
+      "id": "reglement-1977",
+      "type": "legislation",
+      "title": "Loi n° 86-49 du 13 juin 1986, portant règlement du budget pour la gestion 1977",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "36",
+      "volume": "129",
+      "page": "702-705",
+      "issued": {
+        "date-parts": [
+          [
+            1986,
+            6,
+            13
+          ]
+        ]
+      },
+      "title-short": "Loi n° 86-49 du 13 juin 1986",
+      "URL": "https://www.pist.tn/jort/1986/1986F/Jo03686.pdf",
+      "note": "citation-key: reglement-1977\nLoi de règlement ; JORT n° 36 du 17 juin 1986, tome 129, pages 702-705 (jort_cache.db, recid 114410). Article unique lu (tunisia-data, série jort-lois-reglement-1954-1985 : transcription montant par montant, page et mode de lecture, fiche sources/jort-lois-reglement.md). Montants imprimés en dinars. Édition française ; URL pist.tn contrôlée le 26 novembre 2026 (HTTP 206, application/pdf)."
+    },
+    {
+      "id": "reglement-1978",
+      "type": "legislation",
+      "title": "Loi n° 86-50 du 13 juin 1986, portant règlement du budget pour la gestion 1978",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "36",
+      "volume": "129",
+      "page": "705-709",
+      "issued": {
+        "date-parts": [
+          [
+            1986,
+            6,
+            13
+          ]
+        ]
+      },
+      "title-short": "Loi n° 86-50 du 13 juin 1986",
+      "URL": "https://www.pist.tn/jort/1986/1986F/Jo03686.pdf",
+      "note": "citation-key: reglement-1978\nLoi de règlement ; JORT n° 36 du 17 juin 1986, tome 129, pages 705-709 (jort_cache.db, recid 114411). Article unique lu (tunisia-data, série jort-lois-reglement-1954-1985 : transcription montant par montant, page et mode de lecture, fiche sources/jort-lois-reglement.md). Montants imprimés en dinars. Édition française ; URL pist.tn contrôlée le 26 novembre 2026 (HTTP 206, application/pdf)."
+    },
+    {
+      "id": "reglement-1979",
+      "type": "legislation",
+      "title": "Loi n° 86-51 du 13 juin 1986, portant règlement du budget pour la gestion 1979",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "36",
+      "volume": "129",
+      "page": "709-713",
+      "issued": {
+        "date-parts": [
+          [
+            1986,
+            6,
+            13
+          ]
+        ]
+      },
+      "title-short": "Loi n° 86-51 du 13 juin 1986",
+      "URL": "https://www.pist.tn/jort/1986/1986F/Jo03686.pdf",
+      "note": "citation-key: reglement-1979\nLoi de règlement ; JORT n° 36 du 17 juin 1986, tome 129, pages 709-713 (jort_cache.db, recid 114412). Article unique lu (tunisia-data, série jort-lois-reglement-1954-1985 : transcription montant par montant, page et mode de lecture, fiche sources/jort-lois-reglement.md). Montants imprimés en dinars. Édition française ; URL pist.tn contrôlée le 26 novembre 2026 (HTTP 206, application/pdf)."
+    },
+    {
+      "id": "reglement-1980",
+      "type": "legislation",
+      "title": "Loi n° 86-68 du 16 juillet 1986, portant règlement du budget pour la gestion 1980",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "41",
+      "volume": "129",
+      "page": "788-792",
+      "issued": {
+        "date-parts": [
+          [
+            1986,
+            7,
+            16
+          ]
+        ]
+      },
+      "title-short": "Loi n° 86-68 du 16 juillet 1986",
+      "URL": "https://www.pist.tn/jort/1986/1986F/Jo04186.pdf",
+      "note": "citation-key: reglement-1980\nLoi de règlement ; JORT n° 41 du 18 juillet 1986, tome 129, pages 788-792 (jort_cache.db, recid 114397). Article unique lu (tunisia-data, série jort-lois-reglement-1954-1985 : transcription montant par montant, page et mode de lecture, fiche sources/jort-lois-reglement.md). Montants imprimés en dinars. Édition française ; URL pist.tn contrôlée le 26 novembre 2026 (HTTP 206, application/pdf)."
+    },
+    {
+      "id": "reglement-1981",
+      "type": "legislation",
+      "title": "Loi n° 87-13 du 23 mars 1987, portant règlement du budget pour la gestion 1981",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "22",
+      "volume": "130",
+      "page": "435-440",
+      "issued": {
+        "date-parts": [
+          [
+            1987,
+            3,
+            23
+          ]
+        ]
+      },
+      "title-short": "Loi n° 87-13 du 23 mars 1987",
+      "URL": "https://www.pist.tn/jort/1987/1987F/Jo02287.pdf",
+      "note": "citation-key: reglement-1981\nLoi de règlement ; JORT n° 22 du 27 mars 1987, tome 130, pages 435-440 (jort_cache.db, recid 114255). Article unique lu (tunisia-data, série jort-lois-reglement-1954-1985 : transcription montant par montant, page et mode de lecture, fiche sources/jort-lois-reglement.md). Montants imprimés en dinars. Édition française ; URL pist.tn contrôlée le 26 novembre 2026 (HTTP 206, application/pdf)."
+    },
+    {
+      "id": "reglement-1982",
+      "type": "legislation",
+      "title": "Loi n° 88-28 du 25 avril 1988, portant règlement du budget pour la gestion 1982",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "29",
+      "volume": "131",
+      "page": "631-635",
+      "issued": {
+        "date-parts": [
+          [
+            1988,
+            4,
+            25
+          ]
+        ]
+      },
+      "title-short": "Loi n° 88-28 du 25 avril 1988",
+      "URL": "https://www.pist.tn/jort/1988/1988F/Jo02988.pdf",
+      "note": "citation-key: reglement-1982\nLoi de règlement ; JORT n° 29 du 29 avril 1988, tome 131, pages 631-635 (jort_cache.db, recid 114067). Article unique lu (tunisia-data, série jort-lois-reglement-1954-1985 : transcription montant par montant, page et mode de lecture, fiche sources/jort-lois-reglement.md). Montants imprimés en dinars. Édition française ; URL pist.tn contrôlée le 26 novembre 2026 (HTTP 206, application/pdf)."
+    },
+    {
+      "id": "reglement-1983",
+      "type": "legislation",
+      "title": "Loi n° 88-29 du 25 avril 1988, portant règlement du budget pour la gestion 1983",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "29",
+      "volume": "131",
+      "page": "635-640",
+      "issued": {
+        "date-parts": [
+          [
+            1988,
+            4,
+            25
+          ]
+        ]
+      },
+      "title-short": "Loi n° 88-29 du 25 avril 1988",
+      "URL": "https://www.pist.tn/jort/1988/1988F/Jo02988.pdf",
+      "note": "citation-key: reglement-1983\nLoi de règlement ; JORT n° 29 du 29 avril 1988, tome 131, pages 635-640 (jort_cache.db, recid 114068). Article unique lu (tunisia-data, série jort-lois-reglement-1954-1985 : transcription montant par montant, page et mode de lecture, fiche sources/jort-lois-reglement.md). Montants imprimés en dinars. Édition française ; URL pist.tn contrôlée le 26 novembre 2026 (HTTP 206, application/pdf)."
+    },
+    {
+      "id": "reglement-1984",
+      "type": "legislation",
+      "title": "Loi n° 88-138 du 3 décembre 1988, portant règlement du budget pour la gestion 1984",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "83",
+      "volume": "131",
+      "page": "1700-1705",
+      "issued": {
+        "date-parts": [
+          [
+            1988,
+            12,
+            3
+          ]
+        ]
+      },
+      "title-short": "Loi n° 88-138 du 3 décembre 1988",
+      "URL": "https://www.pist.tn/jort/1988/1988F/Jo08388.pdf",
+      "note": "citation-key: reglement-1984\nLoi de règlement ; JORT n° 83 du 9 décembre 1988, tome 131, pages 1700-1705 (jort_cache.db, recid 113903). Article unique lu (tunisia-data, série jort-lois-reglement-1954-1985 : transcription montant par montant, page et mode de lecture, fiche sources/jort-lois-reglement.md). Montants imprimés en dinars. Édition française ; URL pist.tn contrôlée le 26 novembre 2026 (HTTP 206, application/pdf)."
+    },
+    {
+      "id": "reglement-1985",
+      "type": "legislation",
+      "title": "Loi n° 90-27 du 2 avril 1990, portant règlement du budget pour la gestion 1985",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "24",
+      "volume": "133",
+      "page": "472-477",
+      "issued": {
+        "date-parts": [
+          [
+            1990,
+            4,
+            2
+          ]
+        ]
+      },
+      "title-short": "Loi n° 90-27 du 2 avril 1990",
+      "URL": "https://www.pist.tn/jort/1990/1990F/Jo02490.pdf",
+      "note": "citation-key: reglement-1985\nLoi de règlement ; JORT n° 24 du 6 avril 1990, tome 133, pages 472-477 (jort_cache.db, recid 113617). Article unique lu (tunisia-data, série jort-lois-reglement-1954-1985 : transcription montant par montant, page et mode de lecture, fiche sources/jort-lois-reglement.md). Montants imprimés en dinars. Édition française ; URL pist.tn contrôlée le 26 novembre 2026 (HTTP 206, application/pdf)."
     }
   ]
 }

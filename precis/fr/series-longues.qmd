@@ -1,0 +1,235 @@
+---
+title: "Séries longues des finances publiques et des paiements extérieurs"
+subtitle: "Exécution du budget de l'État, recettes ordinaires et balance des paiements, d'après les lois de règlement et les rapports de la Banque centrale"
+lang: fr
+format:
+  html:
+    include-in-header: ../accueil.html
+    toc: true
+    toc-depth: 3
+    toc-title: "Sommaire"
+    tbl-cap-location: top
+    fig-cap-location: top
+bibliography:
+  - references.json
+csl: precis.csl
+crossref:
+  tbl-title: "Tableau"
+  tbl-prefix: "tableau"
+  fig-title: "Figure"
+  fig-prefix: "figure"
+  title-delim: " —"
+---
+
+[← Retour à l'accueil](index.html) · [Le budget de l'État et son évolution](annexe-budget-etat.html) · [Les comptes de la nation](annexe-comptes-nation.html) · [Le compte reconstruit des administrations publiques](compte-apu.html)
+
+<!-- BROUILLON (chantier series-longues/finances-et-bdp) — à relire.
+     Identifiants STABLES de cette page (ne pas les renommer, ne pas les traduire) :
+     #sec-sl-reglement, #fig-sl-reglement, #sec-sl-recettes, #fig-sl-recettes,
+     #sec-sl-bdp, #fig-sl-bdp, #tbl-sl-mbp5. -->
+
+```{python}
+#| echo: false
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../scripts")
+from figures import series_longues as sl
+nb = sl.nb
+
+# lois de règlement
+_pres = sl.presentations()
+G0, G1 = _pres[0][1], _pres[-1][2]
+(P_BU, BU0, BU1), (P_BG, BG0, BG1), (P_T1, T10, T11), (P_T12, T120, T121) = _pres
+T2_0 = sl.premiere_gestion_t2()
+_tri = sl.triennie()
+TRI = _tri.gestion.iloc[0]
+TRI_LOI = _tri.loi.iloc[0]
+TRI_PAI = nb(_tri[(_tri.bloc == "T2S1") & (_tri.poste == "paiements")].valeur_md.iloc[0])
+_tr = sl.table_reglement()
+N_LOIS = _tr.loi.nunique() + 1
+NEUF = _tr[_tr.duree.str.contains("9 mois")].gestion.iloc[0]
+_der = _tr.iloc[-1]
+REC_DER, PAI_DER, T2_DER = nb(_der.recouvrements_md), nb(_der.paiements_md), nb(_der.t2_paiements_md)
+_pre = _tr.iloc[0]
+REC_PRE, PAI_PRE = nb(_pre.recouvrements_md), nb(_pre.paiements_md)
+_rg = sl.reglement()
+VOTE0, VOTE1 = _rg.date_loi.min()[:4], _rg.date_loi.max()[:4]
+FST0 = _rg[_rg.bloc == "FST"].gestion.iloc[0]
+
+# recettes BCT
+R = sl.ruptures_recettes()
+RC = sl.controles_recettes()
+(_e_m1, _v_m1), (_e_m2, _v_m2) = R["monopoles_ii"]
+(_e_s1, _v_s1), (_e_s2, _v_s2) = R["sitep"]
+ED0, ED1 = R["editions"][0], R["editions"][-1]
+N_ED = len(R["editions"])
+
+# balance des paiements
+B = sl.bornes_bdp()
+BC = sl.controles_bdp()
+_ec = BC["ecarts"].iloc[0]
+P106 = sl.raccord_pub106()
+M = sl.plages_mbp5()
+_m5 = sl.mbp5()
+M5_0, M5_1 = int(_m5.annee.min()), int(_m5.annee.max())
+ED_M5 = int(_m5.edition_reference.min())
+RC_ECART = nb(sl.figtools.series(sl.S_REC_CTL).ecart_mdt.abs().max(), 3)
+
+# recouvrement des deux mesures
+RB = sl.recouvrement_bct_reglement()
+```
+
+Cette page donne des séries longues tirées des sources publiées avant les comptes de la nation : l'exécution du budget de l'État arrêtée par les lois de règlement, gestions `{python} G0` à `{python} G1` ; les recettes ordinaires de l'État par catégorie, exercices `{python} R["premier_exercice"]` à `{python} R["dernier_exercice"]`, et les principaux soldes de la balance des paiements, `{python} B["premiere_annee"]` à `{python} B["derniere_annee"]`, d'après les rapports annuels de la Banque centrale de Tunisie. Ce sont des tableaux de l'exécution budgétaire et des paiements extérieurs, établis dans la présentation de leur époque, et non des comptes nationaux : elles se lisent à part des comptes reconstruits de l'ouvrage, en dinars courants. Chaque série se lit dans ses présentations successives, tracées séparément, et chacune pour elle-même.
+
+## L'exécution du budget de l'État d'après les lois de règlement {#sec-sl-reglement}
+
+La loi de règlement arrête, pour une gestion, les recouvrements de recettes et les paiements de dépenses de l'État (voir [voté et réalisé](annexe-budget-etat.html#sec-bud-definitions)). Les `{python} N_LOIS` lois qui règlent les gestions `{python} G0` à `{python} G1` ont été votées de `{python} VOTE0` à `{python} VOTE1`, en plusieurs lots, longtemps après les gestions qu'elles règlent. Leur article unique donne, pour le budget de l'État et pour chaque budget annexe, les prévisions, les recouvrements, les crédits et les paiements.
+
+La présentation change quatre fois, et la figure trace chaque présentation à part :
+
+- **`{python} BU0` et `{python} BU1`** : système de l'exercice, un budget unique qui réunit services ordinaires, extraordinaires et à destination spéciale, et les exercices clos ;
+- **`{python} BG0` à `{python} BG1`** : budget général par gestion, qui mêle encore services ordinaires, extraordinaires et à destination spéciale ; ses recouvrements comprennent des avances du Trésor pour l'équipement ;
+- **`{python} T10` à `{python} T11`** : titre I (budget ordinaire) seul ; le titre II de ces trois gestions est réglé en un seul montant, pour la gestion « `{python} TRI` » (loi n° `{python} TRI_LOI`, `{python} TRI_PAI`&nbsp;millions de dinars de paiements en section I), qui n'est pas réparti par année et ne figure pas sur la figure ;
+- **`{python} T120` à `{python} T121`** : titre I et titre II (section I, ressources en capital ; section II, ressources à destination spéciale), avec les établissements publics rattachés et, à partir de `{python} FST0`, les fonds spéciaux du Trésor.
+
+La gestion `{python} NEUF` ne dure que neuf mois, comme l'imprime sa loi de règlement [@reglement-1960]. Les montants sont donnés en dinars tels que les lois les impriment, y compris pour les gestions antérieures à la création du dinar : les lois de `{python} VOTE0` les expriment en dinars sans imprimer de taux de conversion.
+
+<!-- TODO (documentaliste) : bornes des gestions à cheval sur deux années non imprimées dans les lois de règlement (fiche tunisia-data sources/jort-lois-reglement.md) ; tableaux annexés non transcrits. -->
+
+```{python}
+#| label: fig-sl-reglement
+#| echo: false
+#| output: asis
+import figtools
+figtools.figure_tabs(
+    sl.fig_reglement(), sl.table_reglement(), sl.S_REGL,
+    slug="fig_sl_reglement",
+    caption=(f"Recouvrements et paiements du budget de l'État arrêtés par les lois de règlement, "
+             f"gestions {G0} à {G1}, et paiements du titre II à partir de {T2_0}"),
+    note_lecture=(
+        "Chaque forme de point correspond à une présentation du budget : budget unique d'exercice, "
+        "budget général, puis titre I ; les traits pointillés verticaux marquent les changements de "
+        "présentation, et les segments ne se raccordent pas. Les paiements du titre II additionnent "
+        "ceux de ses sections I et II, imprimés par la même loi. L'axe des abscisses suit les "
+        "gestions dans l'ordre des lois, sans durée : la gestion de neuf mois y occupe une place "
+        "comme les autres. Millions de dinars courants, montants imprimés divisés par un million."),
+)
+```
+
+Les recouvrements du budget passent de `{python} REC_PRE`&nbsp;millions de dinars pour l'exercice `{python} G0` à `{python} REC_DER`&nbsp;millions pour la gestion `{python} G1` au titre I, et les paiements de `{python} PAI_PRE` à `{python} PAI_DER`&nbsp;millions ; les paiements du titre II atteignent `{python} T2_DER`&nbsp;millions de dinars en `{python} G1`.
+
+::: {.chronologie-repliable titre="Lois de règlement : recouvrements et paiements du budget de l'État, gestion par gestion, en dinars tels qu'imprimés"}
+```{python}
+#| echo: false
+#| output: asis
+print(sl.md_reglement())
+```
+:::
+
+## Les recettes ordinaires de l'État dans les rapports de la Banque centrale {#sec-sl-recettes}
+
+Le rapport annuel de la Banque centrale publie, au chapitre des finances publiques, les réalisations des recettes du budget ordinaire (titre I) de l'État par catégorie : impôts directs, impôts indirects, autres droits et taxes, recettes non fiscales et, jusqu'au début des années 1970, budgets annexes. La série retient, pour chaque exercice et chaque poste, la valeur de l'édition la plus récente qui l'imprime, sur `{python} N_ED` éditions de `{python} ED0` à `{python} ED1` [@bct-ra-1961; @bct-ra-1984].
+
+<!-- TODO (documentaliste) : nommer la source que la Banque centrale cite pour ce tableau (ministère des Finances ?), après lecture des notes des tableaux ; la Banque est ici un relais du budgétaire. -->
+
+Quatre ruptures de présentation se lisent dans les éditions successives :
+
+- **La gestion `{python} R["neuf_mois"].split(" ")[0]` dure neuf mois** : son montant n'est pas comparable à celui d'une année entière.
+- **Les monopoles entrent au budget général en `{python} R["monopoles_premier_exercice"]`.** Jusqu'à l'exercice `{python} R["monopoles_dernier_exercice"]`, ils forment un budget annexe (`{python} nb(R["monopoles_annexe"], 3)`&nbsp;millions de dinars cette année-là) ; leurs produits passent ensuite dans les impôts indirects. Les impôts indirects de `{python} R["monopoles_dernier_exercice"]` valent `{python} nb(_v_m1, 3)`&nbsp;millions de dinars dans l'édition `{python} _e_m1` et `{python} nb(_v_m2, 3)`&nbsp;millions dans l'édition `{python} _e_m2`, qui les présente déjà dans le nouveau périmètre.
+- **Les impôts directs de `{python} R["sitep_exercice"]` changent de périmètre entre deux éditions.** L'édition `{python} _e_s1` les imprime à `{python} nb(_v_s1, 3)`&nbsp;millions de dinars, « déduction faite » de `{python} nb(_v_s2 - _v_s1, 3)`&nbsp;millions versés par la SITEP ; l'édition `{python} _e_s2` les donne à `{python} nb(_v_s2, 3)`&nbsp;millions, versement compris. La valeur retenue est la seconde.
+- **Les budgets annexes sortent du tableau à partir de l'édition `{python} R["annexes_premiere_edition_sans"]`** : la dernière édition qui les imprime est celle de `{python} R["annexes_derniere_edition"]`, et la série n'en porte plus à partir de l'exercice `{python} R["annexes_premier_exercice_sans"]`.
+
+<!-- TODO (documentaliste) : développer le sigle SITEP d'après la note du tableau (rapport annuel, édition de l'exercice concerné), et vérifier à l'image l'expression « déduction faite » (catalogue tunisia-data, caveats de bct-ra-recettes-ordinaires). -->
+
+```{python}
+#| label: fig-sl-recettes
+#| echo: false
+#| output: asis
+figtools.figure_tabs(
+    sl.vues_recettes(), sl.table_recettes(), sl.S_REC, sl.S_REC_CTL,
+    slug="fig_sl_recettes",
+    caption=(f"Recettes ordinaires de l'État par catégorie, exercices {R['premier_exercice']} à "
+             f"{R['dernier_exercice']}, d'après les rapports annuels de la Banque centrale, en "
+             "millions de dinars courants"),
+    note_lecture=(
+        "Chaque courbe est un poste du tableau, à sa valeur de l'édition la plus récente. Les postes "
+        "d'un même exercice peuvent venir d'éditions différentes : ils ne s'additionnent pas, et le "
+        "total est celui qu'imprime une édition. Les traits pointillés verticaux marquent l'entrée "
+        "des monopoles au budget général et la sortie des budgets annexes du tableau. Un total "
+        "absent est un total que l'édition retenue n'imprime pas ou qu'elle rend illisible."),
+)
+```
+
+Les totaux imprimés sont contrôlés contre la somme de leurs composantes, dans une même édition : sur `{python} RC["n"]` contrôles, `{python} RC["égal"]` sont égaux, `{python} RC["écart"]` présentent un écart (`{python} RC_ECART`&nbsp;million au plus), `{python} RC["incomplet"]` ne peuvent être faits faute d'une composante lisible et `{python} RC["total illisible"]` porte sur un total illisible. Les écarts sont publiés tels quels dans l'onglet « Données » de la série des contrôles.
+
+<!-- TODO (documentaliste) : six cellules illisibles dans la couche texte, non relues à l'image ; éditions 1959, 1960, 1973, 1979, 1980, 1983 et 1985-2000 non versées (tunisia-data, sources/bct-rapports-annuels-tableaux.md, lot 3). -->
+<!-- TODO (rédacteur) : vue en dinars constants écartée : l'indice des prix long (ipc-longue-periode) commence en 1962 et ne couvre pas les exercices 1960 et 1961. -->
+
+::: {.chronologie-repliable titre="Recettes ordinaires de l'État par catégorie, exercice par exercice (millions de dinars courants, éditions de la Banque centrale)"}
+```{python}
+#| echo: false
+#| output: asis
+print(sl.md_recettes())
+```
+:::
+
+### Deux mesures du même budget
+
+```{python}
+#| echo: false
+#| output: asis
+if RB:
+    print(f"Les recettes ordinaires publiées par la Banque centrale et les recouvrements du "
+          f"{RB['bloc']} arrêtés par les lois de règlement portent sur {RB['n']} gestions communes, de "
+          f"{RB['communs'][0]} à {RB['communs'][1]}, sans être la même mesure ; pour la gestion "
+          f"{RB['annee']}, la plus récente qui leur est commune, la Banque imprime un total de "
+          f"{nb(RB['bct'])}&nbsp;millions de dinars (édition {RB['bct_edition']}) et la loi de "
+          f"règlement n° {RB['loi']} des recouvrements de {nb(RB['reglement'], 3)}&nbsp;millions, "
+          f"soit un écart de {nb(RB['ecart'], 3)}&nbsp;million.")
+```
+
+## La balance des paiements avant le MBP5 {#sec-sl-bdp}
+
+Le rapport annuel de la Banque centrale publie, au chapitre des paiements extérieurs, l'« évolution des principaux soldes de la balance des paiements » : paiements courants (marchandises, services, revenus, transferts), mouvements de capitaux, ajustements et solde général, sur plusieurs années. La série retient, pour chaque année et chaque poste, la valeur de l'édition la plus récente, sur les éditions `{python} B["ed_ra"][0]` à `{python} B["ed_ra"][1]` [@bct-ra-1982; @bct-ra-1996] ; le même tableau paraît dans la publication annuelle de la Banque sur la balance des paiements, éditions `{python} B["ed_106"][0]` à `{python} B["ed_106"][1]` [@bct-balance-paiements].
+
+Cette présentation est antérieure à la cinquième édition du manuel de la balance des paiements (MBP5) : les transferts sont des transferts unilatéraux, la redevance-gaz est comptée parmi les recettes courantes, isolée à partir de l'édition `{python} B["redevance_premiere_edition"]`, et les ajustements figurent à part. Les rubriques changent aussi de périmètre d'une édition à l'autre (« économies sur salaires », puis « revenus du travail », puis « revenus de facteurs ») ; la figure ne trace que les soldes.
+
+```{python}
+#| label: fig-sl-bdp
+#| echo: false
+#| output: asis
+figtools.figure_tabs(
+    sl.fig_bdp(), sl.table_bdp(), sl.S_BDP, sl.S_BDP_CTL, sl.S_BDP_RAC,
+    slug="fig_sl_bdp",
+    caption=(f"Principaux soldes de la balance des paiements, {B['premiere_annee']} à "
+             f"{B['derniere_annee']}, d'après les rapports annuels de la Banque centrale, en "
+             "millions de dinars courants"),
+    note_lecture=(
+        "Les traits pleins sont les grands soldes (paiements courants, mouvements de capitaux, "
+        "solde général) ; les tirets, les composantes des paiements courants. Chaque année est lue "
+        "dans l'édition la plus récente du rapport annuel qui la publie. Un solde négatif est un "
+        "déficit."),
+)
+```
+
+Les soldes imprimés sont contrôlés dans chaque édition : sur `{python} BC["n"]` contrôles, `{python} BC["égal"]` sont égaux, `{python} BC["écart d'arrondi"]` diffèrent d'un million (arrondi), et `{python} BC["écart"]` présente un écart, dans l'édition `{python} int(_ec.edition)` pour l'année `{python} int(_ec.annee)` : recettes moins dépenses courantes y font `{python} nb(_ec.somme_md, 0)`&nbsp;millions de dinars, pour des paiements courants imprimés à `{python} nb(_ec.imprime_md, 0)`&nbsp;millions. Le rapport annuel et la publication sur la balance des paiements de la même année concordent sur `{python} P106["meme_edition"][0]` valeurs sur `{python} P106["meme_edition"][1]` ; les autres diffèrent par des révisions.
+
+### Les écarts au MBP5 sur les années communes
+
+Les années `{python} M5_0` à `{python} M5_1` sont aussi publiées dans la présentation MBP5, à partir de l'édition `{python} ED_M5` de la publication sur la balance des paiements. Le @tbl-sl-mbp5 compare, sans rien corriger, les valeurs du rapport annuel à celles du MBP5 ; l'écart est la valeur du rapport annuel moins celle du MBP5. Il mesure à la fois les révisions et le changement de manuel : les revenus concordent à l'arrondi près (écart de `{python} nb(M["revenus"][1])`&nbsp;million au plus), les services diffèrent de `{python} nb(M["services"][0])` à `{python} nb(M["services"][1])`&nbsp;millions de dinars, les transferts de `{python} nb(M["transferts"][0])` à `{python} nb(M["transferts"][1])`&nbsp;millions et les paiements courants de `{python} nb(M["paiements_courants"][0])` à `{python} nb(M["paiements_courants"][1])`&nbsp;millions.
+
+```{python}
+#| label: tbl-sl-mbp5
+#| tbl-cap: "Balance des paiements : rapport annuel de la Banque centrale (présentation antérieure au MBP5) et série MBP5, années communes, en millions de dinars courants"
+#| echo: false
+#| output: asis
+print(sl.md_mbp5())
+```
+
+Source : Banque centrale de Tunisie, rapports annuels [@bct-ra-1996] et publication sur la balance des paiements, présentation MBP5 [@bct-balance-paiements]. Un tiret signale une valeur que la série MBP5 ne porte pas.
+
+::: {.chronologie-repliable titre="Principaux soldes de la balance des paiements, année par année (millions de dinars courants, rapports annuels de la Banque centrale)"}
+```{python}
+#| echo: false
+#| output: asis
+print(sl.md_bdp())
+```
+:::
