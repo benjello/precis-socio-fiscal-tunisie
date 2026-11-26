@@ -86,11 +86,13 @@ Déjà en main avant cette collecte (non repris) : annuaires CNSS 2016 et 2018, 
       rapports : **CNSS résultat net −1 274 MDT (2021) → −961,5 MDT (2022)** ; **CNRPS déficit
       ≈578 MDT (2022), résultat net en recul de 420,6 MDT /2021**. (À re-sourcer sur le texte primaire
       avant usage dans le précis.)
-  - ⚠️ *À rapatrier :* les **rapports CNSS 2018‑2021 inscrits la veille (25/11) ne sont que dans la
-    copie locale, pas sur `main`.** À verser sur `origin`/au corpus hors dépôt avant qu'ils ne se
-    perdent. (Matériel présent dans `~/Downloads/` : `Annuaire Statistique CNSS 2018 FR.pdf`,
-    `CNSS_publication_2020/` (18 tableaux, séries 2000-2020), `CNSS_CNRPS_2021_2023/CNSS_Budget_2022.pdf`,
-    `CNRPS_rapports/` (`ra_2019`, `ra_2020`, `rapport_ada_2019–2022`), `CNRPS_rapport_ada_2025.pdf`.)
+  - ✅ *Rapatriement CNSS — vérifié contre `tunisia-data` le 26/11 : RIEN à faire, faux positif.*
+    Tout le matériel CNSS de `~/Downloads/` est **déjà dans `tunisia-data/data/raw/caisses/`,
+    catalogué et sauvegardé** : annuaire 2016 = doublon md5 de `annuaires/annuaire_statistique_2016_ar.pdf` ;
+    lot 2020 déjà présent **en plus complet** (`cnss/2020/`, 24 fichiers dont états financiers, vs 18
+    en local) ; `CNSS_Budget_2022.pdf` = md5 identique à `cnss/2020/03_Budget.pdf` ; `rapport_ada_2025`
+    (CNRPS) déjà dans `caisses/cnrps/`. L'alerte « seulement en local » était erronée — cas d'école
+    du réflexe « catalogue d'abord » (`sources/cnss-urls.csv`, `md5sum`).
 - **Recettes fiscales DGI ventilées par secteur** (IS/IRPP par branche, nombre de contribuables par
   secteur) : **aucune série officielle**. La ventilation sectorielle n'existe qu'en partiel (contrôle
   fiscal 2016) ou en source secondaire (IACE 2025, qui reprend des chiffres DGI). data.gov.tn muet.
