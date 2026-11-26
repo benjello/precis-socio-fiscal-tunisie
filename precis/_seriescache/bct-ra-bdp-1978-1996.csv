@@ -1,0 +1,1520 @@
+source,tableau,annee,poste,libelle_imprime,valeur_md,valeur_imprimee,imprime,couche_texte,edition,fichier,page_fichier,page_imprimee,retenu,n_editions
+pub106,soldes,1983,paiements_courants,A - Paiements courants,-415,- 415,chiffre,concordante,1987,balance1987.pdf,7,10,True,1
+pub106,soldes,1983,marchandises,- Marchandises FOB(1),-729,- 729,chiffre,absente,1987,balance1987.pdf,7,10,True,1
+pub106,soldes,1983,services,- Services,204,204,chiffre,concordante,1987,balance1987.pdf,7,10,True,1
+pub106,soldes,1983,revenus,- Revenus,102,102,chiffre,concordante,1987,balance1987.pdf,7,10,True,1
+pub106,soldes,1983,transferts,- Transferts courants sans contrepartie,8,8,chiffre,concordante,1987,balance1987.pdf,7,10,True,1
+pub106,soldes,1983,mouvements_capitaux,B - Mouvements de capitaux,392,392,chiffre,concordante,1987,balance1987.pdf,7,10,True,1
+pub106,soldes,1983,difference_change,C - Différences de change,12,12,chiffre,concordante,1987,balance1987.pdf,7,10,True,1
+pub106,soldes,1983,operations_en_cours,D - Opérations en cours,1,1,chiffre,concordante,1987,balance1987.pdf,7,10,True,1
+pub106,soldes,1983,solde_general,Solde général,-10,- 10,chiffre,concordante,1987,balance1987.pdf,7,10,True,1
+pub106,soldes,1984,paiements_courants,A - Paiements courants,-621,- 621,chiffre,concordante,1987,balance1987.pdf,7,10,False,3
+pub106,soldes,1984,marchandises,- Marchandises FOB(1),-896,- 896,chiffre,absente,1987,balance1987.pdf,7,10,False,3
+pub106,soldes,1984,services,- Services,209,209,chiffre,concordante,1987,balance1987.pdf,7,10,False,3
+pub106,soldes,1984,revenus,- Revenus,57,57,chiffre,concordante,1987,balance1987.pdf,7,10,False,3
+pub106,soldes,1984,transferts,- Transferts courants sans contrepartie,9,9,chiffre,concordante,1987,balance1987.pdf,7,10,False,3
+pub106,soldes,1984,mouvements_capitaux,B - Mouvements de capitaux,455,455,chiffre,concordante,1987,balance1987.pdf,7,10,False,3
+pub106,soldes,1984,difference_change,C - Différences de change,15,15,chiffre,concordante,1987,balance1987.pdf,7,10,True,1
+pub106,soldes,1984,operations_en_cours,D - Opérations en cours,35,35,chiffre,concordante,1987,balance1987.pdf,7,10,True,1
+pub106,soldes,1984,solde_general,Solde général,-116,-116,chiffre,absente,1987,balance1987.pdf,7,10,False,3
+pub106,soldes,1984,paiements_courants,A - Paiements courants,-621,- 621,chiffre,concordante,1988,balance1988.pdf,11,14,False,3
+pub106,soldes,1984,marchandises,- Marchandises,-896,- 896,chiffre,concordante,1988,balance1988.pdf,11,14,False,3
+pub106,soldes,1984,services,- Services,209,+ 209,chiffre,concordante,1988,balance1988.pdf,11,14,False,3
+pub106,soldes,1984,revenus,- Revenus,57,+ 57,chiffre,concordante,1988,balance1988.pdf,11,14,False,3
+pub106,soldes,1984,transferts,- Transferts unilatéraux,9,+ 9,chiffre,concordante,1988,balance1988.pdf,11,14,False,3
+pub106,soldes,1984,mouvements_capitaux,B - Mouvements de capitaux,455,+ 455,chiffre,concordante,1988,balance1988.pdf,11,14,False,3
+pub106,soldes,1984,ajustements,C - Opérations d'ajustement,50,+ 50,chiffre,concordante,1988,balance1988.pdf,11,14,False,2
+pub106,soldes,1984,solde_general,Solde général,-116,- 116,chiffre,concordante,1988,balance1988.pdf,11,14,False,3
+pub106,soldes,1984,paiements_courants,A - Paiements courants,-621,-621,chiffre,concordante,1989,balance1989.pdf,11,14,True,3
+pub106,soldes,1984,marchandises,-Marchandises (FOB),-896,- 896,chiffre,concordante,1989,balance1989.pdf,11,14,True,3
+pub106,soldes,1984,services,-Services,209,+209,chiffre,concordante,1989,balance1989.pdf,11,14,True,3
+pub106,soldes,1984,revenus,-Revenus,57,+ 57,chiffre,concordante,1989,balance1989.pdf,11,14,True,3
+pub106,soldes,1984,transferts,-Transferts unilatéraux,9,+ 9,chiffre,concordante,1989,balance1989.pdf,11,14,True,3
+pub106,soldes,1984,mouvements_capitaux,B - Mouvements de capit.,455,+455,chiffre,concordante,1989,balance1989.pdf,11,14,True,3
+pub106,soldes,1984,ajustements,C - Opérations d'ajust.,50,+ 50,chiffre,concordante,1989,balance1989.pdf,11,14,True,2
+pub106,soldes,1984,solde_general,Solde général,-116,- 116,chiffre,concordante,1989,balance1989.pdf,11,14,True,3
+pub106,soldes,1985,paiements_courants,A - Paiements courants,-519,- 519,chiffre,concordante,1987,balance1987.pdf,7,10,False,4
+pub106,soldes,1985,marchandises,- Marchandises FOB(1),-722,- 722,chiffre,concordante,1987,balance1987.pdf,7,10,False,4
+pub106,soldes,1985,services,- Services,221,221,chiffre,concordante,1987,balance1987.pdf,7,10,False,4
+pub106,soldes,1985,revenus,- Revenus,-27,- 27,chiffre,concordante,1987,balance1987.pdf,7,10,False,4
+pub106,soldes,1985,transferts,- Transferts courants sans contrepartie,9,9,chiffre,concordante,1987,balance1987.pdf,7,10,False,4
+pub106,soldes,1985,mouvements_capitaux,B - Mouvements de capitaux,376,376,chiffre,concordante,1987,balance1987.pdf,7,10,False,4
+pub106,soldes,1985,difference_change,C - Différences de change,12,12,chiffre,concordante,1987,balance1987.pdf,7,10,True,1
+pub106,soldes,1985,operations_en_cours,D - Opérations en cours,37,37,chiffre,concordante,1987,balance1987.pdf,7,10,True,1
+pub106,soldes,1985,solde_general,Solde général,-94,- 94,chiffre,absente,1987,balance1987.pdf,7,10,False,4
+pub106,soldes,1985,paiements_courants,A - Paiements courants,-519,- 519,chiffre,concordante,1988,balance1988.pdf,11,14,False,4
+pub106,soldes,1985,marchandises,- Marchandises,-722,- 722,chiffre,concordante,1988,balance1988.pdf,11,14,False,4
+pub106,soldes,1985,services,- Services,221,+ 221,chiffre,concordante,1988,balance1988.pdf,11,14,False,4
+pub106,soldes,1985,revenus,- Revenus,-27,- 27,chiffre,concordante,1988,balance1988.pdf,11,14,False,4
+pub106,soldes,1985,transferts,- Transferts unilatéraux,9,+ 9,chiffre,concordante,1988,balance1988.pdf,11,14,False,4
+pub106,soldes,1985,mouvements_capitaux,B - Mouvements de capitaux,376,+ 376,chiffre,concordante,1988,balance1988.pdf,11,14,False,4
+pub106,soldes,1985,ajustements,C - Opérations d'ajustement,49,+ 49,chiffre,concordante,1988,balance1988.pdf,11,14,False,3
+pub106,soldes,1985,solde_general,Solde général,-94,- 94,chiffre,concordante,1988,balance1988.pdf,11,14,False,4
+pub106,soldes,1985,paiements_courants,A - Paiements courants,-519,- 519,chiffre,concordante,1989,balance1989.pdf,11,14,False,4
+pub106,soldes,1985,marchandises,-Marchandises (FOB),-722,- 722,chiffre,concordante,1989,balance1989.pdf,11,14,False,4
+pub106,soldes,1985,services,-Services,221,+221,chiffre,concordante,1989,balance1989.pdf,11,14,False,4
+pub106,soldes,1985,revenus,-Revenus,-27,- 27,chiffre,concordante,1989,balance1989.pdf,11,14,False,4
+pub106,soldes,1985,transferts,-Transferts unilatéraux,9,+ 9,chiffre,concordante,1989,balance1989.pdf,11,14,False,4
+pub106,soldes,1985,mouvements_capitaux,B - Mouvements de capit.,376,+376,chiffre,concordante,1989,balance1989.pdf,11,14,False,4
+pub106,soldes,1985,ajustements,C - Opérations d'ajust.,49,+ 49,chiffre,concordante,1989,balance1989.pdf,11,14,False,3
+pub106,soldes,1985,solde_general,Solde général,-94,- 94,chiffre,concordante,1989,balance1989.pdf,11,14,False,4
+pub106,soldes,1985,paiements_courants,A- Paiements courants,-519,- 519,chiffre,concordante,1990,balance1990.pdf,11,13,True,4
+pub106,soldes,1985,marchandises,-Marchandises (FOB),-722,- 722,chiffre,concordante,1990,balance1990.pdf,11,13,True,4
+pub106,soldes,1985,services,-Services,221,+221,chiffre,concordante,1990,balance1990.pdf,11,13,True,4
+pub106,soldes,1985,revenus,-Revenus,-27,- 27,chiffre,concordante,1990,balance1990.pdf,11,13,True,4
+pub106,soldes,1985,transferts,-Transferts unilatéraux,9,+ 9,chiffre,concordante,1990,balance1990.pdf,11,13,True,4
+pub106,soldes,1985,mouvements_capitaux,B- Mouvements de capit.,376,+376,chiffre,concordante,1990,balance1990.pdf,11,13,True,4
+pub106,soldes,1985,ajustements,C- Opérat. d'ajustement,49,+ 49,chiffre,concordante,1990,balance1990.pdf,11,13,True,3
+pub106,soldes,1985,solde_general,Solde général,-94,- 94,chiffre,concordante,1990,balance1990.pdf,11,13,True,4
+pub106,soldes,1986,paiements_courants,A - Paiements courants,-522,- 522,chiffre,concordante,1987,balance1987.pdf,7,10,False,4
+pub106,soldes,1986,marchandises,- Marchandises FOB(1),-742,- 742,chiffre,concordante,1987,balance1987.pdf,7,10,False,4
+pub106,soldes,1986,services,- Services,225,225,chiffre,concordante,1987,balance1987.pdf,7,10,False,4
+pub106,soldes,1986,revenus,- Revenus,-10,- 10,chiffre,concordante,1987,balance1987.pdf,7,10,False,4
+pub106,soldes,1986,transferts,- Transferts courants sans contrepartie,5,5,chiffre,concordante,1987,balance1987.pdf,7,10,False,4
+pub106,soldes,1986,mouvements_capitaux,B - Mouvements de capitaux,330,330,chiffre,concordante,1987,balance1987.pdf,7,10,False,4
+pub106,soldes,1986,difference_change,C - Différences de change,15,15,chiffre,concordante,1987,balance1987.pdf,7,10,True,1
+pub106,soldes,1986,operations_en_cours,D - Opérations en cours,24,24,chiffre,concordante,1987,balance1987.pdf,7,10,True,1
+pub106,soldes,1986,solde_general,Solde général,-153,- 153,chiffre,absente,1987,balance1987.pdf,7,10,False,4
+pub106,soldes,1986,paiements_courants,A - Paiements courants,-522,- 522,chiffre,concordante,1988,balance1988.pdf,11,14,False,4
+pub106,soldes,1986,marchandises,- Marchandises,-742,- 742,chiffre,concordante,1988,balance1988.pdf,11,14,False,4
+pub106,soldes,1986,services,- Services,225,+ 225,chiffre,concordante,1988,balance1988.pdf,11,14,False,4
+pub106,soldes,1986,revenus,- Revenus,-10,- 10,chiffre,concordante,1988,balance1988.pdf,11,14,False,4
+pub106,soldes,1986,transferts,- Transferts unilatéraux,5,+ 5,chiffre,concordante,1988,balance1988.pdf,11,14,False,4
+pub106,soldes,1986,mouvements_capitaux,B - Mouvements de capitaux,330,+ 330,chiffre,concordante,1988,balance1988.pdf,11,14,False,4
+pub106,soldes,1986,ajustements,C - Opérations d'ajustement,39,+ 39,chiffre,concordante,1988,balance1988.pdf,11,14,False,3
+pub106,soldes,1986,solde_general,Solde général,-153,- 153,chiffre,concordante,1988,balance1988.pdf,11,14,False,4
+pub106,soldes,1986,paiements_courants,A - Paiements courants,-522,- 522,chiffre,concordante,1989,balance1989.pdf,11,14,False,4
+pub106,soldes,1986,marchandises,-Marchandises (FOB),-742,- 742,chiffre,concordante,1989,balance1989.pdf,11,14,False,4
+pub106,soldes,1986,services,-Services,225,+225,chiffre,concordante,1989,balance1989.pdf,11,14,False,4
+pub106,soldes,1986,revenus,-Revenus,-10,- 10,chiffre,concordante,1989,balance1989.pdf,11,14,False,4
+pub106,soldes,1986,transferts,-Transferts unilatéraux,5,+ 5,chiffre,concordante,1989,balance1989.pdf,11,14,False,4
+pub106,soldes,1986,mouvements_capitaux,B - Mouvements de capit.,330,+330,chiffre,concordante,1989,balance1989.pdf,11,14,False,4
+pub106,soldes,1986,ajustements,C - Opérations d'ajust.,39,+ 39,chiffre,concordante,1989,balance1989.pdf,11,14,False,3
+pub106,soldes,1986,solde_general,Solde général,-153,- 153,chiffre,concordante,1989,balance1989.pdf,11,14,False,4
+pub106,soldes,1986,paiements_courants,A- Paiements courants,-522,- 522,chiffre,concordante,1990,balance1990.pdf,11,13,True,4
+pub106,soldes,1986,marchandises,-Marchandises (FOB),-742,- 742,chiffre,concordante,1990,balance1990.pdf,11,13,True,4
+pub106,soldes,1986,services,-Services,225,+225,chiffre,concordante,1990,balance1990.pdf,11,13,True,4
+pub106,soldes,1986,revenus,-Revenus,-10,- 10,chiffre,concordante,1990,balance1990.pdf,11,13,True,4
+pub106,soldes,1986,transferts,-Transferts unilatéraux,5,+ 5,chiffre,concordante,1990,balance1990.pdf,11,13,True,4
+pub106,soldes,1986,mouvements_capitaux,B- Mouvements de capit.,330,+330,chiffre,concordante,1990,balance1990.pdf,11,13,True,4
+pub106,soldes,1986,ajustements,C- Opérat. d'ajustement,39,+ 39,chiffre,concordante,1990,balance1990.pdf,11,13,True,3
+pub106,soldes,1986,solde_general,Solde général,-153,- 153,chiffre,concordante,1990,balance1990.pdf,11,13,True,4
+pub106,soldes,1987,paiements_courants,A - Paiements courants,-78,- 78,chiffre,concordante,1987,balance1987.pdf,7,10,False,5
+pub106,soldes,1987,marchandises,- Marchandises FOB(1),-602,- 602,chiffre,concordante,1987,balance1987.pdf,7,10,False,5
+pub106,soldes,1987,services,- Services,478,478,chiffre,concordante,1987,balance1987.pdf,7,10,False,4
+pub106,soldes,1987,revenus,- Revenus,43,43,chiffre,concordante,1987,balance1987.pdf,7,10,False,4
+pub106,soldes,1987,transferts,- Transferts courants sans contrepartie,3,3,chiffre,concordante,1987,balance1987.pdf,7,10,False,5
+pub106,soldes,1987,mouvements_capitaux,B - Mouvements de capitaux,192,192,chiffre,concordante,1987,balance1987.pdf,7,10,False,5
+pub106,soldes,1987,difference_change,C - Différences de change,-8,- 8,chiffre,concordante,1987,balance1987.pdf,7,10,True,1
+pub106,soldes,1987,operations_en_cours,D - Opérations en cours,-10,-10,chiffre,concordante,1987,balance1987.pdf,7,10,True,1
+pub106,soldes,1987,solde_general,Solde général,96,+ 96,chiffre,absente,1987,balance1987.pdf,7,10,False,5
+pub106,soldes,1987,paiements_courants,A - Paiements courants,-78,- 78,chiffre,concordante,1988,balance1988.pdf,11,14,False,5
+pub106,soldes,1987,marchandises,- Marchandises,-602,- 602,chiffre,concordante,1988,balance1988.pdf,11,14,False,5
+pub106,soldes,1987,services,- Services,478,+ 478,chiffre,concordante,1988,balance1988.pdf,11,14,False,4
+pub106,soldes,1987,revenus,- Revenus,43,+ 43,chiffre,concordante,1988,balance1988.pdf,11,14,False,4
+pub106,soldes,1987,transferts,- Transferts unilatéraux,3,+ 3,chiffre,concordante,1988,balance1988.pdf,11,14,False,5
+pub106,soldes,1987,mouvements_capitaux,B - Mouvements de capitaux,192,+ 192,chiffre,concordante,1988,balance1988.pdf,11,14,False,5
+pub106,soldes,1987,ajustements,C - Opérations d'ajustement,-18,- 18,chiffre,concordante,1988,balance1988.pdf,11,14,False,4
+pub106,soldes,1987,solde_general,Solde général,96,+ 96,chiffre,concordante,1988,balance1988.pdf,11,14,False,5
+pub106,soldes,1987,paiements_courants,A - Paiements courants,-77,- 77,chiffre,concordante,1989,balance1989.pdf,11,14,False,5
+pub106,soldes,1987,marchandises,-Marchandises (FOB),-602,- 602,chiffre,concordante,1989,balance1989.pdf,11,14,False,5
+pub106,soldes,1987,services,-Services,478,+478,chiffre,concordante,1989,balance1989.pdf,11,14,False,4
+pub106,soldes,1987,revenus,-Revenus,43,+ 43,chiffre,concordante,1989,balance1989.pdf,11,14,False,4
+pub106,soldes,1987,transferts,-Transferts unilatéraux,4,+ 4,chiffre,concordante,1989,balance1989.pdf,11,14,False,5
+pub106,soldes,1987,mouvements_capitaux,B - Mouvements de capit.,192,+192,chiffre,concordante,1989,balance1989.pdf,11,14,False,5
+pub106,soldes,1987,ajustements,C - Opérations d'ajust.,-18,- 18,chiffre,concordante,1989,balance1989.pdf,11,14,False,4
+pub106,soldes,1987,solde_general,Solde général,97,+97,chiffre,concordante,1989,balance1989.pdf,11,14,False,5
+pub106,soldes,1987,paiements_courants,A- Paiements courants,-78,- 78,chiffre,concordante,1990,balance1990.pdf,11,13,False,5
+pub106,soldes,1987,marchandises,-Marchandises (FOB),-602,- 602,chiffre,concordante,1990,balance1990.pdf,11,13,False,5
+pub106,soldes,1987,services,-Services,478,+478,chiffre,concordante,1990,balance1990.pdf,11,13,True,4
+pub106,soldes,1987,revenus,-Revenus,43,+ 43,chiffre,concordante,1990,balance1990.pdf,11,13,True,4
+pub106,soldes,1987,transferts,-Transferts unilatéraux,3,+ 3,chiffre,concordante,1990,balance1990.pdf,11,13,False,5
+pub106,soldes,1987,mouvements_capitaux,B- Mouvements de capit.,192,+192,chiffre,concordante,1990,balance1990.pdf,11,13,False,5
+pub106,soldes,1987,ajustements,C- Opérat. d'ajustement,-18,- 18,chiffre,concordante,1990,balance1990.pdf,11,13,False,4
+pub106,soldes,1987,solde_general,Solde général,96,+96,chiffre,concordante,1990,balance1990.pdf,11,13,False,5
+pub106,soldes,1987,paiements_courants,A - Paiements courants,-78,- 78,chiffre,concordante,1991,balance1991.pdf,12,14,True,5
+pub106,soldes,1987,marchandises,-Marchandises (FOB),-602,- 602,chiffre,concordante,1991,balance1991.pdf,12,14,True,5
+pub106,soldes,1987,invisibles,-Invisibles,521,+521,chiffre,concordante,1991,balance1991.pdf,12,14,True,1
+pub106,soldes,1987,transferts,-Transferts unilatéraux,3,+ 3,chiffre,concordante,1991,balance1991.pdf,12,14,True,5
+pub106,soldes,1987,mouvements_capitaux,B - Mouvements de capitaux,192,+192,chiffre,concordante,1991,balance1991.pdf,12,14,True,5
+pub106,soldes,1987,ajustements,C - Opérations d'ajustement,-18,- 18,chiffre,concordante,1991,balance1991.pdf,12,14,True,4
+pub106,soldes,1987,solde_general,Solde général,96,+ 96,chiffre,concordante,1991,balance1991.pdf,12,14,True,5
+pub106,soldes,1988,paiements_courants,A - Paiements courants,91,+ 91,chiffre,concordante,1988,balance1988.pdf,11,14,False,5
+pub106,soldes,1988,marchandises,- Marchandises,-941,- 941,chiffre,concordante,1988,balance1988.pdf,11,14,False,5
+pub106,soldes,1988,services,- Services,952,+ 952,chiffre,concordante,1988,balance1988.pdf,11,14,False,4
+pub106,soldes,1988,revenus,- Revenus,63,+ 63,chiffre,concordante,1988,balance1988.pdf,11,14,False,4
+pub106,soldes,1988,transferts,- Transferts unilatéraux,17,+ 17,chiffre,concordante,1988,balance1988.pdf,11,14,False,5
+pub106,soldes,1988,mouvements_capitaux,B - Mouvements de capitaux,235,+ 235,chiffre,concordante,1988,balance1988.pdf,11,14,False,5
+pub106,soldes,1988,ajustements,C - Opérations d'ajustement,-1,- 1,chiffre,concordante,1988,balance1988.pdf,11,14,False,5
+pub106,soldes,1988,solde_general,Solde général,325,+ 325,chiffre,concordante,1988,balance1988.pdf,11,14,False,5
+pub106,soldes,1988,paiements_courants,A - Paiements courants,91,+91,chiffre,concordante,1989,balance1989.pdf,11,14,False,5
+pub106,soldes,1988,marchandises,-Marchandises (FOB),-941,- 941,chiffre,concordante,1989,balance1989.pdf,11,14,False,5
+pub106,soldes,1988,services,-Services,952,+952,chiffre,concordante,1989,balance1989.pdf,11,14,False,4
+pub106,soldes,1988,revenus,-Revenus,63,+ 63,chiffre,concordante,1989,balance1989.pdf,11,14,False,4
+pub106,soldes,1988,transferts,-Transferts unilatéraux,17,+ 17,chiffre,concordante,1989,balance1989.pdf,11,14,False,5
+pub106,soldes,1988,mouvements_capitaux,B - Mouvements de capit.,231,+231,chiffre,concordante,1989,balance1989.pdf,11,14,False,5
+pub106,soldes,1988,ajustements,C - Opérations d'ajust.,3,+3,chiffre,concordante,1989,balance1989.pdf,11,14,False,5
+pub106,soldes,1988,solde_general,Solde général,325,+325,chiffre,concordante,1989,balance1989.pdf,11,14,False,5
+pub106,soldes,1988,paiements_courants,A- Paiements courants,91,+91,chiffre,concordante,1990,balance1990.pdf,11,13,False,5
+pub106,soldes,1988,marchandises,-Marchandises (FOB),-941,- 941,chiffre,concordante,1990,balance1990.pdf,11,13,False,5
+pub106,soldes,1988,services,-Services,952,+952,chiffre,concordante,1990,balance1990.pdf,11,13,False,4
+pub106,soldes,1988,revenus,-Revenus,63,+ 63,chiffre,concordante,1990,balance1990.pdf,11,13,False,4
+pub106,soldes,1988,transferts,-Transferts unilatéraux,17,+ 17,chiffre,concordante,1990,balance1990.pdf,11,13,False,5
+pub106,soldes,1988,mouvements_capitaux,B- Mouvements de capit.,235,+235,chiffre,concordante,1990,balance1990.pdf,11,13,False,5
+pub106,soldes,1988,ajustements,C- Opérat. d'ajustement,-1,- 1,chiffre,concordante,1990,balance1990.pdf,11,13,False,5
+pub106,soldes,1988,solde_general,Solde général,325,+325,chiffre,concordante,1990,balance1990.pdf,11,13,False,5
+pub106,soldes,1988,paiements_courants,A - Paiements courants,91,+ 91,chiffre,concordante,1991,balance1991.pdf,12,14,False,5
+pub106,soldes,1988,marchandises,-Marchandises (FOB),-941,- 941,chiffre,concordante,1991,balance1991.pdf,12,14,False,5
+pub106,soldes,1988,invisibles,-Invisibles,1017,+1017,chiffre,concordante,1991,balance1991.pdf,12,14,True,1
+pub106,soldes,1988,transferts,-Transferts unilatéraux,15,+ 15,chiffre,concordante,1991,balance1991.pdf,12,14,False,5
+pub106,soldes,1988,mouvements_capitaux,B - Mouvements de capitaux,231,+231,chiffre,concordante,1991,balance1991.pdf,12,14,False,5
+pub106,soldes,1988,ajustements,C - Opérations d'ajustement,3,+ 3,chiffre,concordante,1991,balance1991.pdf,12,14,False,5
+pub106,soldes,1988,solde_general,Solde général,325,+325,chiffre,concordante,1991,balance1991.pdf,12,14,False,5
+pub106,soldes,1988,paiements_courants,A - Paiements courants,91,+ 91,chiffre,concordante,1992,balance1992.pdf,10,12,True,5
+pub106,soldes,1988,marchandises,-Marchandises (FOB),-941,- 941,chiffre,concordante,1992,balance1992.pdf,10,12,True,5
+pub106,soldes,1988,services,-Services,954,+ 954,chiffre,concordante,1992,balance1992.pdf,10,12,True,4
+pub106,soldes,1988,revenus,-Revenus de facteurs,63,+ 63,chiffre,concordante,1992,balance1992.pdf,10,12,True,4
+pub106,soldes,1988,transferts,-Transferts unilatéraux,15,+ 15,chiffre,concordante,1992,balance1992.pdf,10,12,True,5
+pub106,soldes,1988,mouvements_capitaux,B - Mouvements de capitaux,231,+ 231,chiffre,concordante,1992,balance1992.pdf,10,12,True,5
+pub106,soldes,1988,ajustements,C - Opérations d'ajustement(flux nets),3,+ 3,chiffre,concordante,1992,balance1992.pdf,10,12,True,5
+pub106,soldes,1988,solde_general,Solde général,325,+ 325,chiffre,concordante,1992,balance1992.pdf,10,12,True,5
+pub106,soldes,1989,paiements_courants,A - Paiements courants,-347,- 347,chiffre,concordante,1989,balance1989.pdf,11,14,False,5
+pub106,soldes,1989,marchandises,-Marchandises (FOB),-1146,-1146,chiffre,concordante,1989,balance1989.pdf,11,14,False,5
+pub106,soldes,1989,services,-Services,756,+756,chiffre,concordante,1989,balance1989.pdf,11,14,False,4
+pub106,soldes,1989,revenus,-Revenus,32,+ 32,chiffre,concordante,1989,balance1989.pdf,11,14,False,4
+pub106,soldes,1989,transferts,-Transferts unilatéraux,11,+ 11,chiffre,concordante,1989,balance1989.pdf,11,14,False,5
+pub106,soldes,1989,mouvements_capitaux,B - Mouvements de capit.,415,+415,chiffre,concordante,1989,balance1989.pdf,11,14,False,5
+pub106,soldes,1989,ajustements,C - Opérations d'ajust.,24,+ 24,chiffre,concordante,1989,balance1989.pdf,11,14,False,5
+pub106,soldes,1989,solde_general,Solde général,92,+92,chiffre,concordante,1989,balance1989.pdf,11,14,False,5
+pub106,soldes,1989,paiements_courants,A- Paiements courants,-347,- 347,chiffre,concordante,1990,balance1990.pdf,11,13,False,5
+pub106,soldes,1989,marchandises,-Marchandises (FOB),-1146,-1146,chiffre,concordante,1990,balance1990.pdf,11,13,False,5
+pub106,soldes,1989,services,-Services,756,+756,chiffre,concordante,1990,balance1990.pdf,11,13,False,4
+pub106,soldes,1989,revenus,-Revenus,32,+ 32,chiffre,concordante,1990,balance1990.pdf,11,13,False,4
+pub106,soldes,1989,transferts,-Transferts unilatéraux,11,+ 11,chiffre,concordante,1990,balance1990.pdf,11,13,False,5
+pub106,soldes,1989,mouvements_capitaux,B- Mouvements de capit.,415,+415,chiffre,concordante,1990,balance1990.pdf,11,13,False,5
+pub106,soldes,1989,ajustements,C- Opérat. d'ajustement,24,+ 24,chiffre,concordante,1990,balance1990.pdf,11,13,False,5
+pub106,soldes,1989,solde_general,Solde général,92,+92,chiffre,concordante,1990,balance1990.pdf,11,13,False,5
+pub106,soldes,1989,paiements_courants,A - Paiements courants,-349,- 349,chiffre,concordante,1991,balance1991.pdf,12,14,False,5
+pub106,soldes,1989,marchandises,-Marchandises (FOB),-1146,-1146,chiffre,concordante,1991,balance1991.pdf,12,14,False,5
+pub106,soldes,1989,invisibles,-Invisibles,789,+ 789,chiffre,concordante,1991,balance1991.pdf,12,14,True,1
+pub106,soldes,1989,transferts,-Transferts unilatéraux,9,+ 9,chiffre,concordante,1991,balance1991.pdf,12,14,False,5
+pub106,soldes,1989,mouvements_capitaux,B - Mouvements de capitaux,415,+ 415,chiffre,concordante,1991,balance1991.pdf,12,14,False,5
+pub106,soldes,1989,ajustements,C - Opérations d'ajustement,26,+ 26,chiffre,concordante,1991,balance1991.pdf,12,14,False,5
+pub106,soldes,1989,solde_general,Solde général,92,+ 92,chiffre,concordante,1991,balance1991.pdf,12,14,False,5
+pub106,soldes,1989,paiements_courants,A - Paiements courants,-312,- 312,chiffre,concordante,1992,balance1992.pdf,10,12,False,5
+pub106,soldes,1989,marchandises,-Marchandises (FOB),-1146,- 1146,chiffre,concordante,1992,balance1992.pdf,10,12,False,5
+pub106,soldes,1989,services,-Services,793,+ 793,chiffre,concordante,1992,balance1992.pdf,10,12,False,4
+pub106,soldes,1989,revenus,-Revenus de facteurs,32,+ 32,chiffre,concordante,1992,balance1992.pdf,10,12,False,4
+pub106,soldes,1989,transferts,-Transferts unilatéraux,9,+ 9,chiffre,concordante,1992,balance1992.pdf,10,12,False,5
+pub106,soldes,1989,mouvements_capitaux,B - Mouvements de capitaux,378,+ 378,chiffre,concordante,1992,balance1992.pdf,10,12,False,5
+pub106,soldes,1989,ajustements,C - Opérations d'ajustement(flux nets),26,+ 26,chiffre,concordante,1992,balance1992.pdf,10,12,False,5
+pub106,soldes,1989,solde_general,Solde général,92,+ 92,chiffre,concordante,1992,balance1992.pdf,10,12,False,5
+pub106,soldes,1989,paiements_courants,A - Paiements courants,-312,- 312,chiffre,concordante,1993,balance1993.pdf,9,12,True,5
+pub106,soldes,1989,marchandises,-Marchandises (FOB),-1146,- 1146,chiffre,concordante,1993,balance1993.pdf,9,12,True,5
+pub106,soldes,1989,services,-Services,793,+ 793,chiffre,concordante,1993,balance1993.pdf,9,12,True,4
+pub106,soldes,1989,revenus,-Revenus de facteurs,32,+ 32,chiffre,concordante,1993,balance1993.pdf,9,12,True,4
+pub106,soldes,1989,transferts,-Transferts unilatéraux,9,+ 9,chiffre,concordante,1993,balance1993.pdf,9,12,True,5
+pub106,soldes,1989,mouvements_capitaux,B - Mouvements de capitaux,378,+ 378,chiffre,concordante,1993,balance1993.pdf,9,12,True,5
+pub106,soldes,1989,dont_participations,dont : -Participations,63,+ 63,chiffre,concordante,1993,balance1993.pdf,9,12,True,1
+pub106,soldes,1989,dont_prets_mlt,dont : -Prêts-emprunts à MLT termes,99,+ 99,chiffre,concordante,1993,balance1993.pdf,9,12,True,1
+pub106,soldes,1989,ajustements,C - Opérations d'ajustement(flux nets),26,+ 26,chiffre,concordante,1993,balance1993.pdf,9,12,True,5
+pub106,soldes,1989,solde_general,Solde général,92,+ 92,chiffre,concordante,1993,balance1993.pdf,9,12,True,5
+pub106,soldes,1990,paiements_courants,A- Paiements courants,-614,- 614,chiffre,concordante,1990,balance1990.pdf,11,13,False,5
+pub106,soldes,1990,marchandises,-Marchandises (FOB),-1474,-1474,chiffre,concordante,1990,balance1990.pdf,11,13,False,5
+pub106,soldes,1990,services,-Services,690,+690,chiffre,concordante,1990,balance1990.pdf,11,13,False,4
+pub106,soldes,1990,revenus,-Revenus,149,+149,chiffre,concordante,1990,balance1990.pdf,11,13,False,4
+pub106,soldes,1990,transferts,-Transferts unilatéraux,21,+ 21,chiffre,concordante,1990,balance1990.pdf,11,13,False,5
+pub106,soldes,1990,mouvements_capitaux,B- Mouvements de capit.,521,+521,chiffre,concordante,1990,balance1990.pdf,11,13,False,5
+pub106,soldes,1990,ajustements,C- Opérat. d'ajustement,20,+ 20,chiffre,concordante,1990,balance1990.pdf,11,13,False,5
+pub106,soldes,1990,solde_general,Solde général,-73,- 73,chiffre,concordante,1990,balance1990.pdf,11,13,False,5
+pub106,soldes,1990,paiements_courants,A - Paiements courants,-643,- 643,chiffre,concordante,1991,balance1991.pdf,12,14,False,5
+pub106,soldes,1990,marchandises,-Marchandises (FOB),-1474,-1474,chiffre,concordante,1991,balance1991.pdf,12,14,False,5
+pub106,soldes,1990,invisibles,-Invisibles,813,+813,chiffre,concordante,1991,balance1991.pdf,12,14,True,1
+pub106,soldes,1990,transferts,-Transferts unilatéraux,18,+ 18,chiffre,concordante,1991,balance1991.pdf,12,14,False,5
+pub106,soldes,1990,mouvements_capitaux,B - Mouvements de capitaux,565,+565,chiffre,concordante,1991,balance1991.pdf,12,14,False,5
+pub106,soldes,1990,ajustements,C - Opérations d'ajustement,16,+ 16,chiffre,concordante,1991,balance1991.pdf,12,14,False,5
+pub106,soldes,1990,solde_general,Solde général,-62,- 62,chiffre,concordante,1991,balance1991.pdf,12,14,False,5
+pub106,soldes,1990,paiements_courants,A - Paiements courants,-598,- 598,chiffre,concordante,1992,balance1992.pdf,10,12,False,5
+pub106,soldes,1990,marchandises,-Marchandises (FOB),-1474,- 1474,chiffre,concordante,1992,balance1992.pdf,10,12,False,5
+pub106,soldes,1990,services,-Services,738,+ 738,chiffre,concordante,1992,balance1992.pdf,10,12,False,4
+pub106,soldes,1990,revenus,-Revenus de facteurs,120,+ 120,chiffre,concordante,1992,balance1992.pdf,10,12,False,4
+pub106,soldes,1990,transferts,-Transferts unilatéraux,18,+ 18,chiffre,concordante,1992,balance1992.pdf,10,12,False,5
+pub106,soldes,1990,mouvements_capitaux,B - Mouvements de capitaux,520,+ 520,chiffre,concordante,1992,balance1992.pdf,10,12,False,5
+pub106,soldes,1990,ajustements,C - Opérations d'ajustement(flux nets),16,+ 16,chiffre,concordante,1992,balance1992.pdf,10,12,False,5
+pub106,soldes,1990,solde_general,Solde général,-62,- 62,chiffre,concordante,1992,balance1992.pdf,10,12,False,5
+pub106,soldes,1990,paiements_courants,A - Paiements courants,-598,- 598,chiffre,concordante,1993,balance1993.pdf,9,12,False,5
+pub106,soldes,1990,marchandises,-Marchandises (FOB),-1474,- 1474,chiffre,concordante,1993,balance1993.pdf,9,12,False,5
+pub106,soldes,1990,services,-Services,738,+ 738,chiffre,concordante,1993,balance1993.pdf,9,12,False,4
+pub106,soldes,1990,revenus,-Revenus de facteurs,120,+ 120,chiffre,concordante,1993,balance1993.pdf,9,12,False,4
+pub106,soldes,1990,transferts,-Transferts unilatéraux,18,+ 18,chiffre,concordante,1993,balance1993.pdf,9,12,False,5
+pub106,soldes,1990,mouvements_capitaux,B - Mouvements de capitaux,520,+ 520,chiffre,concordante,1993,balance1993.pdf,9,12,False,5
+pub106,soldes,1990,dont_participations,dont : -Participations,69,+ 69,chiffre,concordante,1993,balance1993.pdf,9,12,False,2
+pub106,soldes,1990,dont_prets_mlt,dont : -Prêts-emprunts à MLT termes,-28,- 28,chiffre,concordante,1993,balance1993.pdf,9,12,False,2
+pub106,soldes,1990,ajustements,C - Opérations d'ajustement(flux nets),16,+ 16,chiffre,concordante,1993,balance1993.pdf,9,12,False,5
+pub106,soldes,1990,solde_general,Solde général,-62,- 62,chiffre,concordante,1993,balance1993.pdf,9,12,False,5
+pub106,soldes,1990,paiements_courants,A - Paiements courants,-598,- 598,chiffre,concordante,1994,balance1994.pdf,11,14,True,5
+pub106,soldes,1990,marchandises,-Marchandises (FOB),-1474,- 1474,chiffre,concordante,1994,balance1994.pdf,11,14,True,5
+pub106,soldes,1990,services,-Services,738,738,chiffre,concordante,1994,balance1994.pdf,11,14,True,4
+pub106,soldes,1990,revenus,-Revenus de facteurs,120,120,chiffre,concordante,1994,balance1994.pdf,11,14,True,4
+pub106,soldes,1990,transferts,-Transferts unilatéraux,18,18,chiffre,concordante,1994,balance1994.pdf,11,14,True,5
+pub106,soldes,1990,mouvements_capitaux,B - Mouvements de capitaux,520,520,chiffre,concordante,1994,balance1994.pdf,11,14,True,5
+pub106,soldes,1990,dont_participations,dont : -Participations,69,69,chiffre,concordante,1994,balance1994.pdf,11,14,True,2
+pub106,soldes,1990,dont_prets_mlt,dont : -Prêts-emprunts à MLT termes,-28,- 28,chiffre,concordante,1994,balance1994.pdf,11,14,True,2
+pub106,soldes,1990,ajustements,C - Opérations d'ajustement(flux nets),16,16,chiffre,concordante,1994,balance1994.pdf,11,14,True,5
+pub106,soldes,1990,solde_general,Solde général,-62,- 62,chiffre,concordante,1994,balance1994.pdf,11,14,True,5
+pub106,soldes,1991,paiements_courants,A - Paiements courants,-595,- 595,chiffre,concordante,1991,balance1991.pdf,12,14,False,5
+pub106,soldes,1991,marchandises,-Marchandises (FOB),-1108,- 1108,chiffre,concordante,1991,balance1991.pdf,12,14,False,5
+pub106,soldes,1991,invisibles,-Invisibles,490,+ 490,chiffre,concordante,1991,balance1991.pdf,12,14,True,1
+pub106,soldes,1991,transferts,-Transferts unilatéraux,23,+ 23,chiffre,concordante,1991,balance1991.pdf,12,14,False,5
+pub106,soldes,1991,mouvements_capitaux,B - Mouvements de capitaux,473,+ 473,chiffre,concordante,1991,balance1991.pdf,12,14,False,5
+pub106,soldes,1991,ajustements,C - Opérations d'ajustement,27,+ 27,chiffre,concordante,1991,balance1991.pdf,12,14,False,5
+pub106,soldes,1991,solde_general,Solde général,-95,- 95,chiffre,concordante,1991,balance1991.pdf,12,14,False,5
+pub106,soldes,1991,paiements_courants,A - Paiements courants,-545,- 545,chiffre,concordante,1992,balance1992.pdf,10,12,False,5
+pub106,soldes,1991,marchandises,-Marchandises (FOB),-1108,- 1108,chiffre,concordante,1992,balance1992.pdf,10,12,False,5
+pub106,soldes,1991,services,-Services,532,+ 532,chiffre,concordante,1992,balance1992.pdf,10,12,False,4
+pub106,soldes,1991,revenus,-Revenus de facteurs,8,+ 8,chiffre,concordante,1992,balance1992.pdf,10,12,False,4
+pub106,soldes,1991,transferts,-Transferts unilatéraux,23,+ 23,chiffre,concordante,1992,balance1992.pdf,10,12,False,5
+pub106,soldes,1991,mouvements_capitaux,B - Mouvements de capitaux,423,+ 423,chiffre,concordante,1992,balance1992.pdf,10,12,False,5
+pub106,soldes,1991,ajustements,C - Opérations d'ajustement(flux nets),27,+ 27,chiffre,concordante,1992,balance1992.pdf,10,12,False,5
+pub106,soldes,1991,solde_general,Solde général,-95,- 95,chiffre,concordante,1992,balance1992.pdf,10,12,False,5
+pub106,soldes,1991,paiements_courants,A - Paiements courants,-545,- 545,chiffre,concordante,1993,balance1993.pdf,9,12,False,5
+pub106,soldes,1991,marchandises,-Marchandises (FOB),-1108,- 1108,chiffre,concordante,1993,balance1993.pdf,9,12,False,5
+pub106,soldes,1991,services,-Services,532,+ 532,chiffre,concordante,1993,balance1993.pdf,9,12,False,4
+pub106,soldes,1991,revenus,-Revenus de facteurs,8,+ 8,chiffre,concordante,1993,balance1993.pdf,9,12,False,4
+pub106,soldes,1991,transferts,-Transferts unilatéraux,23,+ 23,chiffre,concordante,1993,balance1993.pdf,9,12,False,5
+pub106,soldes,1991,mouvements_capitaux,B - Mouvements de capitaux,423,+ 423,chiffre,concordante,1993,balance1993.pdf,9,12,False,5
+pub106,soldes,1991,dont_participations,dont : -Participations,130,+ 130,chiffre,concordante,1993,balance1993.pdf,9,12,False,3
+pub106,soldes,1991,dont_prets_mlt,dont : -Prêts-emprunts à MLT termes,194,+ 194,chiffre,concordante,1993,balance1993.pdf,9,12,False,3
+pub106,soldes,1991,ajustements,C - Opérations d'ajustement(flux nets),27,+ 27,chiffre,concordante,1993,balance1993.pdf,9,12,False,5
+pub106,soldes,1991,solde_general,Solde général,-95,- 95,chiffre,concordante,1993,balance1993.pdf,9,12,False,5
+pub106,soldes,1991,paiements_courants,A - Paiements courants,-545,- 545,chiffre,concordante,1994,balance1994.pdf,11,14,False,5
+pub106,soldes,1991,marchandises,-Marchandises (FOB),-1108,- 1108,chiffre,concordante,1994,balance1994.pdf,11,14,False,5
+pub106,soldes,1991,services,-Services,532,532,chiffre,concordante,1994,balance1994.pdf,11,14,False,4
+pub106,soldes,1991,revenus,-Revenus de facteurs,8,8,chiffre,concordante,1994,balance1994.pdf,11,14,False,4
+pub106,soldes,1991,transferts,-Transferts unilatéraux,23,23,chiffre,concordante,1994,balance1994.pdf,11,14,False,5
+pub106,soldes,1991,mouvements_capitaux,B - Mouvements de capitaux,423,423,chiffre,concordante,1994,balance1994.pdf,11,14,False,5
+pub106,soldes,1991,dont_participations,dont : -Participations,130,130,chiffre,concordante,1994,balance1994.pdf,11,14,False,3
+pub106,soldes,1991,dont_prets_mlt,dont : -Prêts-emprunts à MLT termes,194,194,chiffre,concordante,1994,balance1994.pdf,11,14,False,3
+pub106,soldes,1991,ajustements,C - Opérations d'ajustement(flux nets),27,27,chiffre,concordante,1994,balance1994.pdf,11,14,False,5
+pub106,soldes,1991,solde_general,Solde général,-95,- 95,chiffre,concordante,1994,balance1994.pdf,11,14,False,5
+pub106,soldes,1991,paiements_courants,A - Paiements courants,-554,- 554,chiffre,concordante,1995,balance1995.pdf,11,12,True,5
+pub106,soldes,1991,marchandises,-Marchandises (FOB),-1108,- 1108,chiffre,concordante,1995,balance1995.pdf,11,12,True,5
+pub106,soldes,1991,services,-Services,523,523,chiffre,concordante,1995,balance1995.pdf,11,12,True,4
+pub106,soldes,1991,revenus,-Revenus de facteurs,8,8,chiffre,concordante,1995,balance1995.pdf,11,12,True,4
+pub106,soldes,1991,transferts,-Transferts unilatéraux,23,23,chiffre,concordante,1995,balance1995.pdf,11,12,True,5
+pub106,soldes,1991,mouvements_capitaux,B - Mouvements de capitaux(2),432,432,chiffre,concordante,1995,balance1995.pdf,11,12,True,5
+pub106,soldes,1991,dont_participations,dont : -Participations,116,116,chiffre,concordante,1995,balance1995.pdf,11,12,True,3
+pub106,soldes,1991,dont_prets_mlt,dont : -Prêts-emprunts à MLT termes,194,194,chiffre,concordante,1995,balance1995.pdf,11,12,True,3
+pub106,soldes,1991,ajustements,C - Opérations d'ajustement(flux nets),27,27,chiffre,concordante,1995,balance1995.pdf,11,12,True,5
+pub106,soldes,1991,solde_general,Solde général,-95,- 95,chiffre,concordante,1995,balance1995.pdf,11,12,True,5
+pub106,soldes,1992,paiements_courants,A - Paiements courants,-908,- 908,chiffre,concordante,1992,balance1992.pdf,10,12,False,5
+pub106,soldes,1992,marchandises,-Marchandises (FOB),-1809,- 1809,chiffre,concordante,1992,balance1992.pdf,10,12,False,5
+pub106,soldes,1992,services,-Services,870,+ 870,chiffre,concordante,1992,balance1992.pdf,10,12,False,5
+pub106,soldes,1992,revenus,-Revenus de facteurs,16,+ 16,chiffre,concordante,1992,balance1992.pdf,10,12,False,5
+pub106,soldes,1992,transferts,-Transferts unilatéraux,15,+ 15,chiffre,concordante,1992,balance1992.pdf,10,12,False,5
+pub106,soldes,1992,mouvements_capitaux,B - Mouvements de capitaux,946,+ 946,chiffre,concordante,1992,balance1992.pdf,10,12,False,5
+pub106,soldes,1992,ajustements,C - Opérations d'ajustement(flux nets),35,+ 35,chiffre,concordante,1992,balance1992.pdf,10,12,False,5
+pub106,soldes,1992,solde_general,Solde général,73,+ 73,chiffre,concordante,1992,balance1992.pdf,10,12,False,5
+pub106,soldes,1992,paiements_courants,A - Paiements courants,-901,- 901,chiffre,concordante,1993,balance1993.pdf,9,12,False,5
+pub106,soldes,1992,marchandises,-Marchandises (FOB),-1802,- 1802,chiffre,concordante,1993,balance1993.pdf,9,12,False,5
+pub106,soldes,1992,services,-Services,870,+ 870,chiffre,concordante,1993,balance1993.pdf,9,12,False,5
+pub106,soldes,1992,revenus,-Revenus de facteurs,16,+ 16,chiffre,concordante,1993,balance1993.pdf,9,12,False,5
+pub106,soldes,1992,transferts,-Transferts unilatéraux,15,+ 15,chiffre,concordante,1993,balance1993.pdf,9,12,False,5
+pub106,soldes,1992,mouvements_capitaux,B - Mouvements de capitaux,939,+ 939,chiffre,concordante,1993,balance1993.pdf,9,12,False,5
+pub106,soldes,1992,dont_participations,dont : -Participations,363,+ 363,chiffre,concordante,1993,balance1993.pdf,9,12,False,4
+pub106,soldes,1992,dont_prets_mlt,dont : -Prêts-emprunts à MLT termes,185,+ 185,chiffre,concordante,1993,balance1993.pdf,9,12,False,4
+pub106,soldes,1992,ajustements,C - Opérations d'ajustement(flux nets),35,+ 35,chiffre,concordante,1993,balance1993.pdf,9,12,False,5
+pub106,soldes,1992,solde_general,Solde général,73,+ 73,chiffre,concordante,1993,balance1993.pdf,9,12,False,5
+pub106,soldes,1992,paiements_courants,A - Paiements courants,-901,- 901,chiffre,concordante,1994,balance1994.pdf,11,14,False,5
+pub106,soldes,1992,marchandises,-Marchandises (FOB),-1802,- 1802,chiffre,concordante,1994,balance1994.pdf,11,14,False,5
+pub106,soldes,1992,services,-Services,870,870,chiffre,concordante,1994,balance1994.pdf,11,14,False,5
+pub106,soldes,1992,revenus,-Revenus de facteurs,16,16,chiffre,concordante,1994,balance1994.pdf,11,14,False,5
+pub106,soldes,1992,transferts,-Transferts unilatéraux,15,15,chiffre,concordante,1994,balance1994.pdf,11,14,False,5
+pub106,soldes,1992,mouvements_capitaux,B - Mouvements de capitaux,939,939,chiffre,concordante,1994,balance1994.pdf,11,14,False,5
+pub106,soldes,1992,dont_participations,dont : -Participations,363,363,chiffre,concordante,1994,balance1994.pdf,11,14,False,4
+pub106,soldes,1992,dont_prets_mlt,dont : -Prêts-emprunts à MLT termes,185,185,chiffre,concordante,1994,balance1994.pdf,11,14,False,4
+pub106,soldes,1992,ajustements,C - Opérations d'ajustement(flux nets),35,35,chiffre,concordante,1994,balance1994.pdf,11,14,False,5
+pub106,soldes,1992,solde_general,Solde général,73,73,chiffre,concordante,1994,balance1994.pdf,11,14,False,5
+pub106,soldes,1992,paiements_courants,A - Paiements courants,-1041,- 1041,chiffre,concordante,1995,balance1995.pdf,11,12,False,5
+pub106,soldes,1992,marchandises,-Marchandises (FOB),-1802,- 1802,chiffre,concordante,1995,balance1995.pdf,11,12,False,5
+pub106,soldes,1992,services,-Services,731,731,chiffre,concordante,1995,balance1995.pdf,11,12,False,5
+pub106,soldes,1992,revenus,-Revenus de facteurs,15,15,chiffre,concordante,1995,balance1995.pdf,11,12,False,5
+pub106,soldes,1992,transferts,-Transferts unilatéraux,15,15,chiffre,concordante,1995,balance1995.pdf,11,12,False,5
+pub106,soldes,1992,mouvements_capitaux,B - Mouvements de capitaux(2),1079,1079,chiffre,concordante,1995,balance1995.pdf,11,12,False,5
+pub106,soldes,1992,dont_participations,dont : -Participations,504,504,chiffre,concordante,1995,balance1995.pdf,11,12,False,4
+pub106,soldes,1992,dont_prets_mlt,dont : -Prêts-emprunts à MLT termes,185,185,chiffre,absente,1995,balance1995.pdf,11,12,False,4
+pub106,soldes,1992,ajustements,C - Opérations d'ajustement(flux nets),35,35,chiffre,absente,1995,balance1995.pdf,11,12,False,5
+pub106,soldes,1992,solde_general,Solde général,73,73,chiffre,concordante,1995,balance1995.pdf,11,12,False,5
+pub106,soldes,1992,paiements_courants,A - Paiements courants,-1041,- 1041,chiffre,concordante,1996,balance1996.pdf,15,16,True,5
+pub106,soldes,1992,marchandises,-Marchandises (FOB),-1802,- 1802,chiffre,concordante,1996,balance1996.pdf,15,16,True,5
+pub106,soldes,1992,services,-Services,731,731,chiffre,concordante,1996,balance1996.pdf,15,16,True,5
+pub106,soldes,1992,revenus,-Revenus de facteurs,15,15,chiffre,concordante,1996,balance1996.pdf,15,16,True,5
+pub106,soldes,1992,transferts,-Transferts unilatéraux,15,15,chiffre,concordante,1996,balance1996.pdf,15,16,True,5
+pub106,soldes,1992,mouvements_capitaux,B - Mouvements de capitaux(2),1079,1079,chiffre,concordante,1996,balance1996.pdf,15,16,True,5
+pub106,soldes,1992,dont_participations,dont : -Participations,518,518,chiffre,concordante,1996,balance1996.pdf,15,16,True,4
+pub106,soldes,1992,dont_prets_mlt,dont : -Prêts-emprunts à MLT termes,185,185,chiffre,concordante,1996,balance1996.pdf,15,16,True,4
+pub106,soldes,1992,ajustements,C - Opérations d'ajustement(flux nets),35,35,chiffre,concordante,1996,balance1996.pdf,15,16,True,5
+pub106,soldes,1992,solde_general,Solde général,73,73,chiffre,concordante,1996,balance1996.pdf,15,16,True,5
+pub106,soldes,1993,paiements_courants,A - Paiements courants,-1016,- 1016,chiffre,concordante,1993,balance1993.pdf,9,12,False,4
+pub106,soldes,1993,marchandises,-Marchandises (FOB),-2071,- 2071,chiffre,concordante,1993,balance1993.pdf,9,12,False,4
+pub106,soldes,1993,services,-Services,1008,+ 1008,chiffre,concordante,1993,balance1993.pdf,9,12,False,4
+pub106,soldes,1993,revenus,-Revenus de facteurs,33,+ 33,chiffre,concordante,1993,balance1993.pdf,9,12,False,4
+pub106,soldes,1993,transferts,-Transferts unilatéraux,14,+ 14,chiffre,concordante,1993,balance1993.pdf,9,12,False,4
+pub106,soldes,1993,mouvements_capitaux,B - Mouvements de capitaux,1011,+ 1011,chiffre,concordante,1993,balance1993.pdf,9,12,False,4
+pub106,soldes,1993,dont_participations,dont : -Participations,256,+ 256,chiffre,concordante,1993,balance1993.pdf,9,12,False,4
+pub106,soldes,1993,dont_prets_mlt,dont : -Prêts-emprunts à MLT termes,360,+ 360,chiffre,concordante,1993,balance1993.pdf,9,12,False,4
+pub106,soldes,1993,ajustements,C - Opérations d'ajustement(flux nets),44,+ 44,chiffre,concordante,1993,balance1993.pdf,9,12,False,4
+pub106,soldes,1993,solde_general,Solde général,39,+ 39,chiffre,concordante,1993,balance1993.pdf,9,12,False,4
+pub106,soldes,1993,paiements_courants,A - Paiements courants,-1016,- 1016,chiffre,concordante,1994,balance1994.pdf,11,14,False,4
+pub106,soldes,1993,marchandises,-Marchandises (FOB),-2071,- 2071,chiffre,concordante,1994,balance1994.pdf,11,14,False,4
+pub106,soldes,1993,services,-Services,1008,1008,chiffre,concordante,1994,balance1994.pdf,11,14,False,4
+pub106,soldes,1993,revenus,-Revenus de facteurs,33,33,chiffre,concordante,1994,balance1994.pdf,11,14,False,4
+pub106,soldes,1993,transferts,-Transferts unilatéraux,14,14,chiffre,concordante,1994,balance1994.pdf,11,14,False,4
+pub106,soldes,1993,mouvements_capitaux,B - Mouvements de capitaux,1011,1011,chiffre,concordante,1994,balance1994.pdf,11,14,False,4
+pub106,soldes,1993,dont_participations,dont : -Participations,256,256,chiffre,concordante,1994,balance1994.pdf,11,14,False,4
+pub106,soldes,1993,dont_prets_mlt,dont : -Prêts-emprunts à MLT termes,360,360,chiffre,concordante,1994,balance1994.pdf,11,14,False,4
+pub106,soldes,1993,ajustements,C - Opérations d'ajustement(flux nets),41,41,chiffre,concordante,1994,balance1994.pdf,11,14,False,4
+pub106,soldes,1993,solde_general,Solde général,36,36,chiffre,concordante,1994,balance1994.pdf,11,14,False,4
+pub106,soldes,1993,paiements_courants,A - Paiements courants,-1342,- 1342,chiffre,concordante,1995,balance1995.pdf,11,12,False,4
+pub106,soldes,1993,marchandises,-Marchandises (FOB),-2071,- 2071,chiffre,concordante,1995,balance1995.pdf,11,12,False,4
+pub106,soldes,1993,services,-Services,682,682,chiffre,concordante,1995,balance1995.pdf,11,12,False,4
+pub106,soldes,1993,revenus,-Revenus de facteurs,33,33,chiffre,concordante,1995,balance1995.pdf,11,12,False,4
+pub106,soldes,1993,transferts,-Transferts unilatéraux,14,14,chiffre,concordante,1995,balance1995.pdf,11,12,False,4
+pub106,soldes,1993,mouvements_capitaux,B - Mouvements de capitaux(2),1337,1337,chiffre,concordante,1995,balance1995.pdf,11,12,False,4
+pub106,soldes,1993,dont_participations,dont : -Participations,581,581,chiffre,concordante,1995,balance1995.pdf,11,12,False,4
+pub106,soldes,1993,dont_prets_mlt,dont : -Prêts-emprunts à MLT termes,360,360,chiffre,concordante,1995,balance1995.pdf,11,12,False,4
+pub106,soldes,1993,ajustements,C - Opérations d'ajustement(flux nets),41,41,chiffre,concordante,1995,balance1995.pdf,11,12,False,4
+pub106,soldes,1993,solde_general,Solde général,36,36,chiffre,concordante,1995,balance1995.pdf,11,12,False,4
+pub106,soldes,1993,paiements_courants,A - Paiements courants,-1342,- 1342,chiffre,concordante,1996,balance1996.pdf,15,16,True,4
+pub106,soldes,1993,marchandises,-Marchandises (FOB),-2071,- 2071,chiffre,concordante,1996,balance1996.pdf,15,16,True,4
+pub106,soldes,1993,services,-Services,682,682,chiffre,concordante,1996,balance1996.pdf,15,16,True,4
+pub106,soldes,1993,revenus,-Revenus de facteurs,33,33,chiffre,concordante,1996,balance1996.pdf,15,16,True,4
+pub106,soldes,1993,transferts,-Transferts unilatéraux,14,14,chiffre,concordante,1996,balance1996.pdf,15,16,True,4
+pub106,soldes,1993,mouvements_capitaux,B - Mouvements de capitaux(2),1337,1337,chiffre,concordante,1996,balance1996.pdf,15,16,True,4
+pub106,soldes,1993,dont_participations,dont : -Participations,595,595,chiffre,concordante,1996,balance1996.pdf,15,16,True,4
+pub106,soldes,1993,dont_prets_mlt,dont : -Prêts-emprunts à MLT termes,360,360,chiffre,concordante,1996,balance1996.pdf,15,16,True,4
+pub106,soldes,1993,ajustements,C - Opérations d'ajustement(flux nets),41,41,chiffre,concordante,1996,balance1996.pdf,15,16,True,4
+pub106,soldes,1993,solde_general,Solde général,36,36,chiffre,concordante,1996,balance1996.pdf,15,16,True,4
+pub106,soldes,1994,paiements_courants,A - Paiements courants,-420,- 420,chiffre,concordante,1994,balance1994.pdf,11,14,False,3
+pub106,soldes,1994,marchandises,-Marchandises (FOB),-1585,- 1585,chiffre,concordante,1994,balance1994.pdf,11,14,False,3
+pub106,soldes,1994,services,-Services,1152,1152,chiffre,concordante,1994,balance1994.pdf,11,14,False,3
+pub106,soldes,1994,revenus,-Revenus de facteurs,0,–,néant,néant,1994,balance1994.pdf,11,14,False,3
+pub106,soldes,1994,transferts,-Transferts unilatéraux,13,13,chiffre,concordante,1994,balance1994.pdf,11,14,False,3
+pub106,soldes,1994,mouvements_capitaux,B - Mouvements de capitaux,730,730,chiffre,concordante,1994,balance1994.pdf,11,14,False,3
+pub106,soldes,1994,dont_participations,dont : -Participations,205,205,chiffre,concordante,1994,balance1994.pdf,11,14,False,3
+pub106,soldes,1994,dont_prets_mlt,dont : -Prêts-emprunts à MLT termes,619,619,chiffre,concordante,1994,balance1994.pdf,11,14,False,3
+pub106,soldes,1994,ajustements,C - Opérations d'ajustement(flux nets),27,27,chiffre,concordante,1994,balance1994.pdf,11,14,False,3
+pub106,soldes,1994,solde_general,Solde général,337,337,chiffre,concordante,1994,balance1994.pdf,11,14,False,3
+pub106,soldes,1994,paiements_courants,A - Paiements courants,-661,- 661,chiffre,concordante,1995,balance1995.pdf,11,12,False,3
+pub106,soldes,1994,marchandises,-Marchandises (FOB),-1585,-1585,chiffre,concordante,1995,balance1995.pdf,11,12,False,3
+pub106,soldes,1994,services,-Services,911,911,chiffre,concordante,1995,balance1995.pdf,11,12,False,3
+pub106,soldes,1994,revenus,-Revenus de facteurs,0,–,néant,néant,1995,balance1995.pdf,11,12,False,3
+pub106,soldes,1994,transferts,-Transferts unilatéraux,13,13,chiffre,concordante,1995,balance1995.pdf,11,12,False,3
+pub106,soldes,1994,mouvements_capitaux,B - Mouvements de capitaux(2),971,971,chiffre,concordante,1995,balance1995.pdf,11,12,False,3
+pub106,soldes,1994,dont_participations,dont : -Participations,447,447,chiffre,concordante,1995,balance1995.pdf,11,12,False,3
+pub106,soldes,1994,dont_prets_mlt,dont : -Prêts-emprunts à MLT termes,619,619,chiffre,concordante,1995,balance1995.pdf,11,12,False,3
+pub106,soldes,1994,ajustements,C - Opérations d'ajustement(flux nets),27,27,chiffre,concordante,1995,balance1995.pdf,11,12,False,3
+pub106,soldes,1994,solde_general,Solde général,337,337,chiffre,concordante,1995,balance1995.pdf,11,12,False,3
+pub106,soldes,1994,paiements_courants,A - Paiements courants,-661,- 661,chiffre,concordante,1996,balance1996.pdf,15,16,True,3
+pub106,soldes,1994,marchandises,-Marchandises (FOB),-1585,- 1585,chiffre,concordante,1996,balance1996.pdf,15,16,True,3
+pub106,soldes,1994,services,-Services,911,911,chiffre,concordante,1996,balance1996.pdf,15,16,True,3
+pub106,soldes,1994,revenus,-Revenus de facteurs,0,–,néant,néant,1996,balance1996.pdf,15,16,True,3
+pub106,soldes,1994,transferts,-Transferts unilatéraux,13,13,chiffre,concordante,1996,balance1996.pdf,15,16,True,3
+pub106,soldes,1994,mouvements_capitaux,B - Mouvements de capitaux(2),971,971,chiffre,concordante,1996,balance1996.pdf,15,16,True,3
+pub106,soldes,1994,dont_participations,dont : -Participations,460,460,chiffre,concordante,1996,balance1996.pdf,15,16,True,3
+pub106,soldes,1994,dont_prets_mlt,dont : -Prêts-emprunts à MLT termes,619,619,chiffre,concordante,1996,balance1996.pdf,15,16,True,3
+pub106,soldes,1994,ajustements,C - Opérations d'ajustement(flux nets),27,27,chiffre,concordante,1996,balance1996.pdf,15,16,True,3
+pub106,soldes,1994,solde_general,Solde général,337,337,chiffre,concordante,1996,balance1996.pdf,15,16,True,3
+pub106,soldes,1995,paiements_courants,A - Paiements courants,-785,- 785,chiffre,concordante,1995,balance1995.pdf,11,12,False,2
+pub106,soldes,1995,marchandises,-Marchandises (FOB),-1881,- 1881,chiffre,concordante,1995,balance1995.pdf,11,12,False,2
+pub106,soldes,1995,services,-Services,1081,1081,chiffre,concordante,1995,balance1995.pdf,11,12,False,2
+pub106,soldes,1995,revenus,-Revenus de facteurs,10,10,chiffre,concordante,1995,balance1995.pdf,11,12,False,2
+pub106,soldes,1995,transferts,-Transferts unilatéraux,5,5,chiffre,concordante,1995,balance1995.pdf,11,12,False,2
+pub106,soldes,1995,mouvements_capitaux,B - Mouvements de capitaux(2),747,747,chiffre,concordante,1995,balance1995.pdf,11,12,False,2
+pub106,soldes,1995,dont_participations,dont : -Participations,279,279,chiffre,concordante,1995,balance1995.pdf,11,12,False,2
+pub106,soldes,1995,dont_prets_mlt,dont : -Prêts-emprunts à MLT termes,563,563,chiffre,concordante,1995,balance1995.pdf,11,12,False,2
+pub106,soldes,1995,ajustements,C - Opérations d'ajustement(flux nets),19,19,chiffre,concordante,1995,balance1995.pdf,11,12,False,2
+pub106,soldes,1995,solde_general,Solde général,-19,- 19,chiffre,concordante,1995,balance1995.pdf,11,12,False,2
+pub106,soldes,1995,paiements_courants,A - Paiements courants,-785,- 785,chiffre,concordante,1996,balance1996.pdf,15,16,True,2
+pub106,soldes,1995,marchandises,-Marchandises (FOB),-1881,- 1881,chiffre,concordante,1996,balance1996.pdf,15,16,True,2
+pub106,soldes,1995,services,-Services,1081,1081,chiffre,concordante,1996,balance1996.pdf,15,16,True,2
+pub106,soldes,1995,revenus,-Revenus de facteurs,10,10,chiffre,concordante,1996,balance1996.pdf,15,16,True,2
+pub106,soldes,1995,transferts,-Transferts unilatéraux,5,5,chiffre,concordante,1996,balance1996.pdf,15,16,True,2
+pub106,soldes,1995,mouvements_capitaux,B - Mouvements de capitaux(2),747,747,chiffre,concordante,1996,balance1996.pdf,15,16,True,2
+pub106,soldes,1995,dont_participations,dont : -Participations,300,300,chiffre,concordante,1996,balance1996.pdf,15,16,True,2
+pub106,soldes,1995,dont_prets_mlt,dont : -Prêts-emprunts à MLT termes,563,563,chiffre,concordante,1996,balance1996.pdf,15,16,True,2
+pub106,soldes,1995,ajustements,C - Opérations d'ajustement(flux nets),19,19,chiffre,concordante,1996,balance1996.pdf,15,16,True,2
+pub106,soldes,1995,solde_general,Solde général,-19,- 19,chiffre,concordante,1996,balance1996.pdf,15,16,True,2
+pub106,soldes,1996,paiements_courants,A - Paiements courants,-510,- 510,chiffre,concordante,1996,balance1996.pdf,15,16,True,1
+pub106,soldes,1996,marchandises,-Marchandises (FOB),-1714,-1714,chiffre,concordante,1996,balance1996.pdf,15,16,True,1
+pub106,soldes,1996,services,-Services,1338,1338,chiffre,concordante,1996,balance1996.pdf,15,16,True,1
+pub106,soldes,1996,revenus,-Revenus de facteurs,-155,-155,chiffre,concordante,1996,balance1996.pdf,15,16,True,1
+pub106,soldes,1996,transferts,-Transferts unilatéraux,21,21,chiffre,concordante,1996,balance1996.pdf,15,16,True,1
+pub106,soldes,1996,mouvements_capitaux,B - Mouvements de capitaux(2),824,824,chiffre,concordante,1996,balance1996.pdf,15,16,True,1
+pub106,soldes,1996,dont_participations,dont : -Participations,385,385,chiffre,concordante,1996,balance1996.pdf,15,16,True,1
+pub106,soldes,1996,dont_prets_mlt,dont : -Prêts-emprunts à MLT termes,419,419,chiffre,concordante,1996,balance1996.pdf,15,16,True,1
+pub106,soldes,1996,ajustements,C - Opérations d'ajustement(flux nets),-14,- 14,chiffre,concordante,1996,balance1996.pdf,15,16,True,1
+pub106,soldes,1996,solde_general,Solde général,300,300,chiffre,concordante,1996,balance1996.pdf,15,16,True,1
+ra,soldes,1978,paiements_courants,I. Paiements courants,-221,- 221,chiffre,concordante,1982,RA_fr_1982.pdf,94,97,True,1
+ra,soldes,1978,marchandises,A. Marchandises,-364,- 364,chiffre,concordante,1982,RA_fr_1982.pdf,94,97,True,1
+ra,soldes,1978,services,B. Services,113,113,chiffre,concordante,1982,RA_fr_1982.pdf,94,97,True,1
+ra,soldes,1978,revenus,C. Revenus,29,29,chiffre,concordante,1982,RA_fr_1982.pdf,94,97,True,1
+ra,soldes,1978,transferts,D. Transferts courants sans contrepartie,1,1,chiffre,concordante,1982,RA_fr_1982.pdf,94,97,True,1
+ra,soldes,1978,mouvements_capitaux,II. Mouvements de capitaux,237,237,chiffre,concordante,1982,RA_fr_1982.pdf,94,97,True,1
+ra,soldes,1978,ajustements,III. Ajustements,-3,- 3,chiffre,concordante,1982,RA_fr_1982.pdf,94,97,True,1
+ra,soldes,1978,solde_general,Solde général,13,13,chiffre,concordante,1982,RA_fr_1982.pdf,94,97,True,1
+ra,soldes,1979,paiements_courants,I. Paiements courants,-175,- 175,chiffre,concordante,1982,RA_fr_1982.pdf,94,97,True,1
+ra,soldes,1979,marchandises,A. Marchandises,-406,- 406,chiffre,concordante,1982,RA_fr_1982.pdf,94,97,True,1
+ra,soldes,1979,services,B. Services,182,182,chiffre,concordante,1982,RA_fr_1982.pdf,94,97,True,1
+ra,soldes,1979,revenus,C. Revenus,44,44,chiffre,concordante,1982,RA_fr_1982.pdf,94,97,True,1
+ra,soldes,1979,transferts,D. Transferts courants sans contrepartie,5,5,chiffre,concordante,1982,RA_fr_1982.pdf,94,97,True,1
+ra,soldes,1979,mouvements_capitaux,II. Mouvements de capitaux,234,234,chiffre,concordante,1982,RA_fr_1982.pdf,94,97,True,1
+ra,soldes,1979,ajustements,III. Ajustements,-8,- 8,chiffre,concordante,1982,RA_fr_1982.pdf,94,97,True,1
+ra,soldes,1979,solde_general,Solde général,51,51,chiffre,concordante,1982,RA_fr_1982.pdf,94,97,True,1
+ra,soldes,1980,paiements_courants,I. Paiements courants,-180,- 180,chiffre,concordante,1982,RA_fr_1982.pdf,94,97,False,2
+ra,soldes,1980,marchandises,A. Marchandises,-437,- 437,chiffre,concordante,1982,RA_fr_1982.pdf,94,97,False,2
+ra,soldes,1980,services,B. Services,195,195,chiffre,concordante,1982,RA_fr_1982.pdf,94,97,False,2
+ra,soldes,1980,revenus,C. Revenus,56,56,chiffre,concordante,1982,RA_fr_1982.pdf,94,97,False,2
+ra,soldes,1980,transferts,D. Transferts courants sans contrepartie,6,6,chiffre,concordante,1982,RA_fr_1982.pdf,94,97,False,2
+ra,soldes,1980,mouvements_capitaux,II. Mouvements de capitaux,213,213,chiffre,concordante,1982,RA_fr_1982.pdf,94,97,False,2
+ra,soldes,1980,ajustements,III. Ajustements,-4,- 4,chiffre,concordante,1982,RA_fr_1982.pdf,94,97,True,1
+ra,soldes,1980,solde_general,Solde général,29,29,chiffre,concordante,1982,RA_fr_1982.pdf,94,97,False,2
+ra,soldes,1980,paiements_courants,A - Paiements courants,-180,- 180,chiffre,concordante,1984,RA_fr_1984.pdf,115,117,True,2
+ra,soldes,1980,marchandises,- Marchandises,-396,- 396,chiffre,concordante,1984,RA_fr_1984.pdf,115,117,True,2
+ra,soldes,1980,services,- Services,157,157,chiffre,concordante,1984,RA_fr_1984.pdf,115,117,True,2
+ra,soldes,1980,revenus,- Revenus,53,53,chiffre,concordante,1984,RA_fr_1984.pdf,115,117,True,2
+ra,soldes,1980,transferts,- Transferts courants sans contrepartie,6,6,chiffre,concordante,1984,RA_fr_1984.pdf,115,117,True,2
+ra,soldes,1980,mouvements_capitaux,B - Mouvements de capitaux,213,213,chiffre,concordante,1984,RA_fr_1984.pdf,115,117,True,2
+ra,soldes,1980,difference_change,C - Différence de change,0,–,néant,néant,1984,RA_fr_1984.pdf,115,117,True,1
+ra,soldes,1980,operations_en_cours,D - Opérations en cours,-4,"- 4,0",chiffre,concordante,1984,RA_fr_1984.pdf,115,117,True,1
+ra,soldes,1980,solde_general,Solde général,29,29,chiffre,concordante,1984,RA_fr_1984.pdf,115,117,True,2
+ra,soldes,1981,paiements_courants,I. Paiements courants,-240,- 240,chiffre,concordante,1982,RA_fr_1982.pdf,94,97,False,3
+ra,soldes,1981,marchandises,A. Marchandises,-527,- 527,chiffre,concordante,1982,RA_fr_1982.pdf,94,97,False,3
+ra,soldes,1981,services,B. Services,205,205,chiffre,concordante,1982,RA_fr_1982.pdf,94,97,False,3
+ra,soldes,1981,revenus,C. Revenus,73,73,chiffre,concordante,1982,RA_fr_1982.pdf,94,97,False,3
+ra,soldes,1981,transferts,D. Transferts courants sans contrepartie,9,9,chiffre,concordante,1982,RA_fr_1982.pdf,94,97,False,3
+ra,soldes,1981,mouvements_capitaux,II. Mouvements de capitaux,288,288,chiffre,concordante,1982,RA_fr_1982.pdf,94,97,False,3
+ra,soldes,1981,ajustements,III. Ajustements,-2,- 2,chiffre,concordante,1982,RA_fr_1982.pdf,94,97,True,1
+ra,soldes,1981,solde_general,Solde général,46,46,chiffre,concordante,1982,RA_fr_1982.pdf,94,97,False,3
+ra,soldes,1981,paiements_courants,A - Paiements courants,-240,- 240,chiffre,concordante,1984,RA_fr_1984.pdf,115,117,False,3
+ra,soldes,1981,marchandises,- Marchandises,-478,- 478,chiffre,concordante,1984,RA_fr_1984.pdf,115,117,False,3
+ra,soldes,1981,services,- Services,160,160,chiffre,concordante,1984,RA_fr_1984.pdf,115,117,False,3
+ra,soldes,1981,revenus,- Revenus,69,69,chiffre,concordante,1984,RA_fr_1984.pdf,115,117,False,3
+ra,soldes,1981,transferts,- Transferts courants sans contrepartie,9,9,chiffre,concordante,1984,RA_fr_1984.pdf,115,117,False,3
+ra,soldes,1981,mouvements_capitaux,B - Mouvements de capitaux,288,288,chiffre,concordante,1984,RA_fr_1984.pdf,115,117,False,3
+ra,soldes,1981,difference_change,C - Différence de change,-2,- 2,chiffre,concordante,1984,RA_fr_1984.pdf,115,117,False,2
+ra,soldes,1981,solde_general,Solde général,46,46,chiffre,concordante,1984,RA_fr_1984.pdf,115,117,False,3
+ra,soldes,1981,paiements_courants,A - Paiements courants,-241,- 241,chiffre,concordante,1985,RA_fr_1985.pdf,109,111,True,3
+ra,soldes,1981,marchandises,- Marchandises,-478,- 478,chiffre,concordante,1985,RA_fr_1985.pdf,109,111,True,3
+ra,soldes,1981,services,- Services,159,159,chiffre,concordante,1985,RA_fr_1985.pdf,109,111,True,3
+ra,soldes,1981,revenus,- Revenus,69,69,chiffre,concordante,1985,RA_fr_1985.pdf,109,111,True,3
+ra,soldes,1981,transferts,- Transferts courants sans contrepartie,9,9,chiffre,concordante,1985,RA_fr_1985.pdf,109,111,True,3
+ra,soldes,1981,mouvements_capitaux,B - Mouvements de capitaux,289,289,chiffre,concordante,1985,RA_fr_1985.pdf,109,111,True,3
+ra,soldes,1981,difference_change,C - Différence de change,-2,- 2,chiffre,concordante,1985,RA_fr_1985.pdf,109,111,True,2
+ra,soldes,1981,solde_general,Solde général,46,46,chiffre,concordante,1985,RA_fr_1985.pdf,109,111,True,3
+ra,soldes,1982,paiements_courants,I. Paiements courants,-408,- 408,chiffre,concordante,1982,RA_fr_1982.pdf,94,97,False,4
+ra,soldes,1982,marchandises,A. Marchandises,-764,- 764,chiffre,concordante,1982,RA_fr_1982.pdf,94,97,False,4
+ra,soldes,1982,services,B. Services,236,236,chiffre,concordante,1982,RA_fr_1982.pdf,94,97,False,4
+ra,soldes,1982,revenus,C. Revenus,106,106,chiffre,concordante,1982,RA_fr_1982.pdf,94,97,False,4
+ra,soldes,1982,transferts,D. Transferts courants sans contrepartie,14,14,chiffre,concordante,1982,RA_fr_1982.pdf,94,97,False,4
+ra,soldes,1982,mouvements_capitaux,II. Mouvements de capitaux,429,429,chiffre,concordante,1982,RA_fr_1982.pdf,94,97,False,4
+ra,soldes,1982,ajustements,III. Ajustements,-5,- 5,chiffre,concordante,1982,RA_fr_1982.pdf,94,97,True,1
+ra,soldes,1982,solde_general,Solde général,16,16,chiffre,concordante,1982,RA_fr_1982.pdf,94,97,False,4
+ra,soldes,1982,paiements_courants,A - Paiements courants,-408,- 408,chiffre,concordante,1984,RA_fr_1984.pdf,115,117,False,4
+ra,soldes,1982,marchandises,- Marchandises,-686,- 686,chiffre,concordante,1984,RA_fr_1984.pdf,115,117,False,4
+ra,soldes,1982,services,- Services,163,163,chiffre,concordante,1984,RA_fr_1984.pdf,115,117,False,4
+ra,soldes,1982,revenus,- Revenus,101,101,chiffre,concordante,1984,RA_fr_1984.pdf,115,117,False,4
+ra,soldes,1982,transferts,- Transferts courants sans contrepartie,14,14,chiffre,concordante,1984,RA_fr_1984.pdf,115,117,False,4
+ra,soldes,1982,mouvements_capitaux,B - Mouvements de capitaux,429,429,chiffre,concordante,1984,RA_fr_1984.pdf,115,117,False,4
+ra,soldes,1982,difference_change,C - Différence de change,0,–,néant,néant,1984,RA_fr_1984.pdf,115,117,False,3
+ra,soldes,1982,operations_en_cours,D - Opérations en cours,-5,- 5,chiffre,concordante,1984,RA_fr_1984.pdf,115,117,False,3
+ra,soldes,1982,solde_general,Solde général,16,16,chiffre,concordante,1984,RA_fr_1984.pdf,115,117,False,4
+ra,soldes,1982,paiements_courants,A - Paiements courants,-408,- 408,chiffre,concordante,1985,RA_fr_1985.pdf,109,111,False,4
+ra,soldes,1982,marchandises,- Marchandises,-686,- 686,chiffre,concordante,1985,RA_fr_1985.pdf,109,111,False,4
+ra,soldes,1982,services,- Services,163,163,chiffre,concordante,1985,RA_fr_1985.pdf,109,111,False,4
+ra,soldes,1982,revenus,- Revenus,101,101,chiffre,concordante,1985,RA_fr_1985.pdf,109,111,False,4
+ra,soldes,1982,transferts,- Transferts courants sans contrepartie,14,14,chiffre,concordante,1985,RA_fr_1985.pdf,109,111,False,4
+ra,soldes,1982,mouvements_capitaux,B - Mouvements de capitaux,429,429,chiffre,concordante,1985,RA_fr_1985.pdf,109,111,False,4
+ra,soldes,1982,difference_change,C - Différence de change,0,–,néant,néant,1985,RA_fr_1985.pdf,109,111,False,3
+ra,soldes,1982,operations_en_cours,D - Opérations en cours,-5,- 5,chiffre,concordante,1985,RA_fr_1985.pdf,109,111,False,3
+ra,soldes,1982,solde_general,Solde général,16,16,chiffre,concordante,1985,RA_fr_1985.pdf,109,111,False,4
+ra,soldes,1982,paiements_courants,A - Paiements courants,-408,- 408,chiffre,absente,1986,RA_fr_1986.pdf,102,105,True,4
+ra,soldes,1982,marchandises,- Marchandises,-686,- 686,chiffre,concordante,1986,RA_fr_1986.pdf,102,105,True,4
+ra,soldes,1982,services,- Services,163,163,chiffre,concordante,1986,RA_fr_1986.pdf,102,105,True,4
+ra,soldes,1982,revenus,- Revenus,101,101,chiffre,concordante,1986,RA_fr_1986.pdf,102,105,True,4
+ra,soldes,1982,transferts,- Transferts courants sans contrepartie,14,14,chiffre,concordante,1986,RA_fr_1986.pdf,102,105,True,4
+ra,soldes,1982,mouvements_capitaux,B - Mouvements de capitaux,429,429,chiffre,concordante,1986,RA_fr_1986.pdf,102,105,True,4
+ra,soldes,1982,difference_change,C - Différence de change,0,–,néant,néant,1986,RA_fr_1986.pdf,102,105,True,3
+ra,soldes,1982,operations_en_cours,D - Opérations en cours,-5,- 5,chiffre,concordante,1986,RA_fr_1986.pdf,102,105,True,3
+ra,soldes,1982,solde_general,Solde général,16,16,chiffre,concordante,1986,RA_fr_1986.pdf,102,105,True,4
+ra,soldes,1983,paiements_courants,A - Paiements courants,-415,- 415,chiffre,concordante,1984,RA_fr_1984.pdf,115,117,False,3
+ra,soldes,1983,marchandises,- Marchandises,-729,- 729,chiffre,concordante,1984,RA_fr_1984.pdf,115,117,False,3
+ra,soldes,1983,services,- Services,204,204,chiffre,concordante,1984,RA_fr_1984.pdf,115,117,False,3
+ra,soldes,1983,revenus,- Revenus,102,102,chiffre,concordante,1984,RA_fr_1984.pdf,115,117,False,3
+ra,soldes,1983,transferts,- Transferts courants sans contrepartie,8,8,chiffre,concordante,1984,RA_fr_1984.pdf,115,117,False,3
+ra,soldes,1983,mouvements_capitaux,B - Mouvements de capitaux,392,392,chiffre,concordante,1984,RA_fr_1984.pdf,115,117,False,3
+ra,soldes,1983,difference_change,C - Différence de change,12,12,chiffre,concordante,1984,RA_fr_1984.pdf,115,117,False,3
+ra,soldes,1983,operations_en_cours,D - Opérations en cours,1,1,chiffre,concordante,1984,RA_fr_1984.pdf,115,117,False,3
+ra,soldes,1983,solde_general,Solde général,-10,- 10,chiffre,concordante,1984,RA_fr_1984.pdf,115,117,False,3
+ra,soldes,1983,paiements_courants,A - Paiements courants,-415,- 415,chiffre,concordante,1985,RA_fr_1985.pdf,109,111,False,3
+ra,soldes,1983,marchandises,- Marchandises,-729,- 729,chiffre,concordante,1985,RA_fr_1985.pdf,109,111,False,3
+ra,soldes,1983,services,- Services,204,204,chiffre,concordante,1985,RA_fr_1985.pdf,109,111,False,3
+ra,soldes,1983,revenus,- Revenus,102,102,chiffre,concordante,1985,RA_fr_1985.pdf,109,111,False,3
+ra,soldes,1983,transferts,- Transferts courants sans contrepartie,8,8,chiffre,concordante,1985,RA_fr_1985.pdf,109,111,False,3
+ra,soldes,1983,mouvements_capitaux,B - Mouvements de capitaux,392,392,chiffre,concordante,1985,RA_fr_1985.pdf,109,111,False,3
+ra,soldes,1983,difference_change,C - Différence de change,12,12,chiffre,concordante,1985,RA_fr_1985.pdf,109,111,False,3
+ra,soldes,1983,operations_en_cours,D - Opérations en cours,1,1,chiffre,concordante,1985,RA_fr_1985.pdf,109,111,False,3
+ra,soldes,1983,solde_general,Solde général,-10,- 10,chiffre,concordante,1985,RA_fr_1985.pdf,109,111,False,3
+ra,soldes,1983,paiements_courants,A - Paiements courants,-415,- 415,chiffre,concordante,1986,RA_fr_1986.pdf,102,105,True,3
+ra,soldes,1983,marchandises,- Marchandises,-729,- 729,chiffre,concordante,1986,RA_fr_1986.pdf,102,105,True,3
+ra,soldes,1983,services,- Services,204,204,chiffre,concordante,1986,RA_fr_1986.pdf,102,105,True,3
+ra,soldes,1983,revenus,- Revenus,102,102,chiffre,concordante,1986,RA_fr_1986.pdf,102,105,True,3
+ra,soldes,1983,transferts,- Transferts courants sans contrepartie,8,8,chiffre,concordante,1986,RA_fr_1986.pdf,102,105,True,3
+ra,soldes,1983,mouvements_capitaux,B - Mouvements de capitaux,392,392,chiffre,concordante,1986,RA_fr_1986.pdf,102,105,True,3
+ra,soldes,1983,difference_change,C - Différence de change,12,12,chiffre,concordante,1986,RA_fr_1986.pdf,102,105,True,3
+ra,soldes,1983,operations_en_cours,D - Opérations en cours,1,1,chiffre,concordante,1986,RA_fr_1986.pdf,102,105,True,3
+ra,soldes,1983,solde_general,Solde général,-10,- 10,chiffre,concordante,1986,RA_fr_1986.pdf,102,105,True,3
+ra,soldes,1984,paiements_courants,A - Paiements courants,-588,- 588,chiffre,concordante,1984,RA_fr_1984.pdf,115,117,False,4
+ra,soldes,1984,marchandises,- Marchandises,-864,- 864,chiffre,concordante,1984,RA_fr_1984.pdf,115,117,False,4
+ra,soldes,1984,services,- Services,210,210,chiffre,concordante,1984,RA_fr_1984.pdf,115,117,False,4
+ra,soldes,1984,revenus,- Revenus,57,57,chiffre,concordante,1984,RA_fr_1984.pdf,115,117,False,4
+ra,soldes,1984,transferts,- Transferts courants sans contrepartie,9,9,chiffre,concordante,1984,RA_fr_1984.pdf,115,117,False,4
+ra,soldes,1984,mouvements_capitaux,B - Mouvements de capitaux,422,422,chiffre,concordante,1984,RA_fr_1984.pdf,115,117,False,4
+ra,soldes,1984,difference_change,C - Différence de change,15,15,chiffre,concordante,1984,RA_fr_1984.pdf,115,117,False,3
+ra,soldes,1984,operations_en_cours,D - Opérations en cours,35,35,chiffre,concordante,1984,RA_fr_1984.pdf,115,117,False,3
+ra,soldes,1984,solde_general,Solde général,-116,-116,chiffre,concordante,1984,RA_fr_1984.pdf,115,117,False,4
+ra,soldes,1984,paiements_courants,A - Paiements courants,-621,- 621,chiffre,concordante,1985,RA_fr_1985.pdf,109,111,False,4
+ra,soldes,1984,marchandises,- Marchandises,-896,- 896,chiffre,concordante,1985,RA_fr_1985.pdf,109,111,False,4
+ra,soldes,1984,services,- Services,209,209,chiffre,concordante,1985,RA_fr_1985.pdf,109,111,False,4
+ra,soldes,1984,revenus,- Revenus,57,57,chiffre,concordante,1985,RA_fr_1985.pdf,109,111,False,4
+ra,soldes,1984,transferts,- Transferts courants sans contrepartie,9,9,chiffre,concordante,1985,RA_fr_1985.pdf,109,111,False,4
+ra,soldes,1984,mouvements_capitaux,B - Mouvements de capitaux,455,455,chiffre,concordante,1985,RA_fr_1985.pdf,109,111,False,4
+ra,soldes,1984,difference_change,C - Différence de change,15,15,chiffre,concordante,1985,RA_fr_1985.pdf,109,111,False,3
+ra,soldes,1984,operations_en_cours,D - Opérations en cours,35,35,chiffre,concordante,1985,RA_fr_1985.pdf,109,111,False,3
+ra,soldes,1984,solde_general,Solde général,-116,-116,chiffre,concordante,1985,RA_fr_1985.pdf,109,111,False,4
+ra,soldes,1984,paiements_courants,A - Paiements courants,-621,- 621,chiffre,concordante,1986,RA_fr_1986.pdf,102,105,False,4
+ra,soldes,1984,marchandises,- Marchandises,-896,- 896,chiffre,concordante,1986,RA_fr_1986.pdf,102,105,False,4
+ra,soldes,1984,services,- Services,209,209,chiffre,concordante,1986,RA_fr_1986.pdf,102,105,False,4
+ra,soldes,1984,revenus,- Revenus,57,57,chiffre,concordante,1986,RA_fr_1986.pdf,102,105,False,4
+ra,soldes,1984,transferts,- Transferts courants sans contrepartie,9,9,chiffre,concordante,1986,RA_fr_1986.pdf,102,105,False,4
+ra,soldes,1984,mouvements_capitaux,B - Mouvements de capitaux,455,455,chiffre,concordante,1986,RA_fr_1986.pdf,102,105,False,4
+ra,soldes,1984,difference_change,C - Différence de change,15,15,chiffre,concordante,1986,RA_fr_1986.pdf,102,105,True,3
+ra,soldes,1984,operations_en_cours,D - Opérations en cours,35,35,chiffre,concordante,1986,RA_fr_1986.pdf,102,105,True,3
+ra,soldes,1984,solde_general,Solde général,-116,-116,chiffre,concordante,1986,RA_fr_1986.pdf,102,105,False,4
+ra,soldes,1984,paiements_courants,A - Paiements courants,-621,- 621,chiffre,concordante,1988,RA_fr_1988.pdf,96,99,True,4
+ra,soldes,1984,marchandises,- Marchandises,-896,- 896,chiffre,concordante,1988,RA_fr_1988.pdf,96,99,True,4
+ra,soldes,1984,services,- Services,209,+ 209,chiffre,concordante,1988,RA_fr_1988.pdf,96,99,True,4
+ra,soldes,1984,revenus,- Revenus,57,+ 57,chiffre,concordante,1988,RA_fr_1988.pdf,96,99,True,4
+ra,soldes,1984,transferts,- Transferts unilatéraux,9,+ 9,chiffre,concordante,1988,RA_fr_1988.pdf,96,99,True,4
+ra,soldes,1984,mouvements_capitaux,B - Mouvements de capitaux,455,+ 455,chiffre,concordante,1988,RA_fr_1988.pdf,96,99,True,4
+ra,soldes,1984,ajustements,C - Opérations d'ajustement,50,+ 50,chiffre,concordante,1988,RA_fr_1988.pdf,96,99,True,1
+ra,soldes,1984,solde_general,Solde général,-116,- 116,chiffre,absente,1988,RA_fr_1988.pdf,96,99,True,4
+ra,soldes,1985,paiements_courants,A - Paiements courants,-511,- 511,chiffre,concordante,1985,RA_fr_1985.pdf,109,111,False,4
+ra,soldes,1985,marchandises,- Marchandises,-722,- 722,chiffre,concordante,1985,RA_fr_1985.pdf,109,111,False,4
+ra,soldes,1985,services,- Services,229,229,chiffre,concordante,1985,RA_fr_1985.pdf,109,111,False,4
+ra,soldes,1985,revenus,- Revenus,-27,- 27,chiffre,concordante,1985,RA_fr_1985.pdf,109,111,False,4
+ra,soldes,1985,transferts,- Transferts courants sans contrepartie,9,9,chiffre,concordante,1985,RA_fr_1985.pdf,109,111,False,4
+ra,soldes,1985,mouvements_capitaux,B - Mouvements de capitaux,368,368,chiffre,concordante,1985,RA_fr_1985.pdf,109,111,False,4
+ra,soldes,1985,difference_change,C - Différence de change,12,12,chiffre,concordante,1985,RA_fr_1985.pdf,109,111,False,2
+ra,soldes,1985,operations_en_cours,D - Opérations en cours,37,37,chiffre,concordante,1985,RA_fr_1985.pdf,109,111,False,2
+ra,soldes,1985,solde_general,Solde général,-94,- 94,chiffre,concordante,1985,RA_fr_1985.pdf,109,111,False,4
+ra,soldes,1985,paiements_courants,A - Paiements courants,-519,- 519,chiffre,concordante,1986,RA_fr_1986.pdf,102,105,False,4
+ra,soldes,1985,marchandises,- Marchandises,-722,- 722,chiffre,concordante,1986,RA_fr_1986.pdf,102,105,False,4
+ra,soldes,1985,services,- Services,221,221,chiffre,concordante,1986,RA_fr_1986.pdf,102,105,False,4
+ra,soldes,1985,revenus,- Revenus,-27,- 27,chiffre,concordante,1986,RA_fr_1986.pdf,102,105,False,4
+ra,soldes,1985,transferts,- Transferts courants sans contrepartie,9,9,chiffre,concordante,1986,RA_fr_1986.pdf,102,105,False,4
+ra,soldes,1985,mouvements_capitaux,B - Mouvements de capitaux,376,376,chiffre,concordante,1986,RA_fr_1986.pdf,102,105,False,4
+ra,soldes,1985,difference_change,C - Différence de change,12,12,chiffre,concordante,1986,RA_fr_1986.pdf,102,105,True,2
+ra,soldes,1985,operations_en_cours,D - Opérations en cours,37,37,chiffre,concordante,1986,RA_fr_1986.pdf,102,105,True,2
+ra,soldes,1985,solde_general,Solde général,-94,- 94,chiffre,concordante,1986,RA_fr_1986.pdf,102,105,False,4
+ra,soldes,1985,paiements_courants,A - Paiements courants,-519,- 519,chiffre,concordante,1988,RA_fr_1988.pdf,96,99,False,4
+ra,soldes,1985,marchandises,- Marchandises,-722,- 722,chiffre,concordante,1988,RA_fr_1988.pdf,96,99,False,4
+ra,soldes,1985,services,- Services,221,+ 221,chiffre,concordante,1988,RA_fr_1988.pdf,96,99,False,4
+ra,soldes,1985,revenus,- Revenus,-27,- 27,chiffre,concordante,1988,RA_fr_1988.pdf,96,99,False,4
+ra,soldes,1985,transferts,- Transferts unilatéraux,9,+ 9,chiffre,concordante,1988,RA_fr_1988.pdf,96,99,False,4
+ra,soldes,1985,mouvements_capitaux,B - Mouvements de capitaux,376,+ 376,chiffre,concordante,1988,RA_fr_1988.pdf,96,99,False,4
+ra,soldes,1985,ajustements,C - Opérations d'ajustement,49,+ 49,chiffre,concordante,1988,RA_fr_1988.pdf,96,99,False,2
+ra,soldes,1985,solde_general,Solde général,-94,- 94,chiffre,absente,1988,RA_fr_1988.pdf,96,99,False,4
+ra,soldes,1985,paiements_courants,A - Paiements courants,-519,- 519,chiffre,concordante,1989,RA_fr_1989.pdf,109,112,True,4
+ra,soldes,1985,marchandises,-Marchandises (FOB),-722,- 722,chiffre,concordante,1989,RA_fr_1989.pdf,109,112,True,4
+ra,soldes,1985,services,-Services,221,+221,chiffre,concordante,1989,RA_fr_1989.pdf,109,112,True,4
+ra,soldes,1985,revenus,-Revenus,-27,- 27,chiffre,concordante,1989,RA_fr_1989.pdf,109,112,True,4
+ra,soldes,1985,transferts,-Transferts unilatéraux,9,+ 9,chiffre,concordante,1989,RA_fr_1989.pdf,109,112,True,4
+ra,soldes,1985,mouvements_capitaux,B - Mouvements de capitaux,376,+376,chiffre,concordante,1989,RA_fr_1989.pdf,109,112,True,4
+ra,soldes,1985,ajustements,C - Opérations d'ajustement,49,+ 49,chiffre,concordante,1989,RA_fr_1989.pdf,109,112,True,2
+ra,soldes,1985,solde_general,Solde général,-94,- 94,chiffre,concordante,1989,RA_fr_1989.pdf,109,112,True,4
+ra,soldes,1986,paiements_courants,A - Paiements courants,-522,- 522,chiffre,concordante,1986,RA_fr_1986.pdf,102,105,False,4
+ra,soldes,1986,marchandises,- Marchandises,-742,- 742,chiffre,concordante,1986,RA_fr_1986.pdf,102,105,False,4
+ra,soldes,1986,services,- Services,225,225,chiffre,concordante,1986,RA_fr_1986.pdf,102,105,False,4
+ra,soldes,1986,revenus,- Revenus,-10,- 10,chiffre,concordante,1986,RA_fr_1986.pdf,102,105,False,4
+ra,soldes,1986,transferts,- Transferts courants sans contrepartie,5,5,chiffre,concordante,1986,RA_fr_1986.pdf,102,105,False,4
+ra,soldes,1986,mouvements_capitaux,B - Mouvements de capitaux,327,327,chiffre,concordante,1986,RA_fr_1986.pdf,102,105,False,4
+ra,soldes,1986,difference_change,C - Différence de change,15,15,chiffre,concordante,1986,RA_fr_1986.pdf,102,105,True,1
+ra,soldes,1986,operations_en_cours,D - Opérations en cours,27,27,chiffre,concordante,1986,RA_fr_1986.pdf,102,105,True,1
+ra,soldes,1986,solde_general,Solde général,-153,- 153,chiffre,concordante,1986,RA_fr_1986.pdf,102,105,False,4
+ra,soldes,1986,paiements_courants,A - Paiements courants,-522,- 522,chiffre,concordante,1988,RA_fr_1988.pdf,96,99,False,4
+ra,soldes,1986,marchandises,- Marchandises,-742,- 742,chiffre,concordante,1988,RA_fr_1988.pdf,96,99,False,4
+ra,soldes,1986,services,- Services,225,+ 225,chiffre,concordante,1988,RA_fr_1988.pdf,96,99,False,4
+ra,soldes,1986,revenus,- Revenus,-10,- 10,chiffre,concordante,1988,RA_fr_1988.pdf,96,99,False,4
+ra,soldes,1986,transferts,- Transferts unilatéraux,5,+ 5,chiffre,concordante,1988,RA_fr_1988.pdf,96,99,False,4
+ra,soldes,1986,mouvements_capitaux,B - Mouvements de capitaux,330,+ 330,chiffre,concordante,1988,RA_fr_1988.pdf,96,99,False,4
+ra,soldes,1986,ajustements,C - Opérations d'ajustement,39,+ 39,chiffre,concordante,1988,RA_fr_1988.pdf,96,99,False,3
+ra,soldes,1986,solde_general,Solde général,-153,- 153,chiffre,absente,1988,RA_fr_1988.pdf,96,99,False,4
+ra,soldes,1986,paiements_courants,A - Paiements courants,-522,- 522,chiffre,concordante,1989,RA_fr_1989.pdf,109,112,False,4
+ra,soldes,1986,marchandises,-Marchandises (FOB),-742,- 742,chiffre,concordante,1989,RA_fr_1989.pdf,109,112,False,4
+ra,soldes,1986,services,-Services,225,+225,chiffre,concordante,1989,RA_fr_1989.pdf,109,112,False,4
+ra,soldes,1986,revenus,-Revenus,-10,- 10,chiffre,concordante,1989,RA_fr_1989.pdf,109,112,False,4
+ra,soldes,1986,transferts,-Transferts unilatéraux,5,+ 5,chiffre,concordante,1989,RA_fr_1989.pdf,109,112,False,4
+ra,soldes,1986,mouvements_capitaux,B - Mouvements de capitaux,330,+330,chiffre,concordante,1989,RA_fr_1989.pdf,109,112,False,4
+ra,soldes,1986,ajustements,C - Opérations d'ajustement,39,+ 39,chiffre,concordante,1989,RA_fr_1989.pdf,109,112,False,3
+ra,soldes,1986,solde_general,Solde général,-153,- 153,chiffre,concordante,1989,RA_fr_1989.pdf,109,112,False,4
+ra,soldes,1986,paiements_courants,A - Paiements courants,-522,- 522,chiffre,concordante,1990,RA_fr_1990.pdf,108,112,True,4
+ra,soldes,1986,marchandises,-Marchandises (FOB),-742,- 742,chiffre,concordante,1990,RA_fr_1990.pdf,108,112,True,4
+ra,soldes,1986,services,-Services,225,+225,chiffre,concordante,1990,RA_fr_1990.pdf,108,112,True,4
+ra,soldes,1986,revenus,-Revenus,-10,- 10,chiffre,concordante,1990,RA_fr_1990.pdf,108,112,True,4
+ra,soldes,1986,transferts,-Transferts unilatéraux,5,+ 5,chiffre,concordante,1990,RA_fr_1990.pdf,108,112,True,4
+ra,soldes,1986,mouvements_capitaux,B - Mouvements de capitaux,330,+330,chiffre,concordante,1990,RA_fr_1990.pdf,108,112,True,4
+ra,soldes,1986,ajustements,C - Opérations d'ajustement,39,+ 39,chiffre,concordante,1990,RA_fr_1990.pdf,108,112,True,3
+ra,soldes,1986,solde_general,Solde général,-153,- 153,chiffre,concordante,1990,RA_fr_1990.pdf,108,112,True,4
+ra,soldes,1987,paiements_courants,A - Paiements courants,-78,- 78,chiffre,concordante,1988,RA_fr_1988.pdf,96,99,False,3
+ra,soldes,1987,marchandises,- Marchandises,-602,- 602,chiffre,concordante,1988,RA_fr_1988.pdf,96,99,False,3
+ra,soldes,1987,services,- Services,478,+ 478,chiffre,concordante,1988,RA_fr_1988.pdf,96,99,False,3
+ra,soldes,1987,revenus,- Revenus,43,+ 43,chiffre,concordante,1988,RA_fr_1988.pdf,96,99,False,3
+ra,soldes,1987,transferts,- Transferts unilatéraux,3,+ 3,chiffre,concordante,1988,RA_fr_1988.pdf,96,99,False,3
+ra,soldes,1987,mouvements_capitaux,B - Mouvements de capitaux,192,+ 192,chiffre,concordante,1988,RA_fr_1988.pdf,96,99,False,3
+ra,soldes,1987,ajustements,C - Opérations d'ajustement,-18,- 18,chiffre,concordante,1988,RA_fr_1988.pdf,96,99,False,3
+ra,soldes,1987,solde_general,Solde général,96,+ 96,chiffre,concordante,1988,RA_fr_1988.pdf,96,99,False,3
+ra,soldes,1987,paiements_courants,A - Paiements courants,-78,- 78,chiffre,concordante,1989,RA_fr_1989.pdf,109,112,False,3
+ra,soldes,1987,marchandises,-Marchandises (FOB),-602,- 602,chiffre,concordante,1989,RA_fr_1989.pdf,109,112,False,3
+ra,soldes,1987,services,-Services,478,+478,chiffre,concordante,1989,RA_fr_1989.pdf,109,112,False,3
+ra,soldes,1987,revenus,-Revenus,43,+ 43,chiffre,concordante,1989,RA_fr_1989.pdf,109,112,False,3
+ra,soldes,1987,transferts,-Transferts unilatéraux,3,+ 3,chiffre,concordante,1989,RA_fr_1989.pdf,109,112,False,3
+ra,soldes,1987,mouvements_capitaux,B - Mouvements de capitaux,192,+192,chiffre,concordante,1989,RA_fr_1989.pdf,109,112,False,3
+ra,soldes,1987,ajustements,C - Opérations d'ajustement,-18,- 18,chiffre,concordante,1989,RA_fr_1989.pdf,109,112,False,3
+ra,soldes,1987,solde_general,Solde général,96,+96,chiffre,concordante,1989,RA_fr_1989.pdf,109,112,False,3
+ra,soldes,1987,paiements_courants,A - Paiements courants,-78,- 78,chiffre,concordante,1990,RA_fr_1990.pdf,108,112,True,3
+ra,soldes,1987,marchandises,-Marchandises (FOB),-602,- 602,chiffre,concordante,1990,RA_fr_1990.pdf,108,112,True,3
+ra,soldes,1987,services,-Services,478,+478,chiffre,concordante,1990,RA_fr_1990.pdf,108,112,True,3
+ra,soldes,1987,revenus,-Revenus,43,+ 43,chiffre,concordante,1990,RA_fr_1990.pdf,108,112,True,3
+ra,soldes,1987,transferts,-Transferts unilatéraux,3,+ 3,chiffre,concordante,1990,RA_fr_1990.pdf,108,112,True,3
+ra,soldes,1987,mouvements_capitaux,B - Mouvements de capitaux,192,+192,chiffre,concordante,1990,RA_fr_1990.pdf,108,112,True,3
+ra,soldes,1987,ajustements,C - Opérations d'ajustement,-18,- 18,chiffre,concordante,1990,RA_fr_1990.pdf,108,112,True,3
+ra,soldes,1987,solde_general,Solde général,96,+96,chiffre,concordante,1990,RA_fr_1990.pdf,108,112,True,3
+ra,soldes,1988,paiements_courants,A - Paiements courants,91,+ 91,chiffre,concordante,1988,RA_fr_1988.pdf,96,99,False,4
+ra,soldes,1988,marchandises,- Marchandises,-941,- 941,chiffre,concordante,1988,RA_fr_1988.pdf,96,99,False,4
+ra,soldes,1988,services,- Services,952,+ 952,chiffre,concordante,1988,RA_fr_1988.pdf,96,99,False,4
+ra,soldes,1988,revenus,- Revenus,63,+ 63,chiffre,concordante,1988,RA_fr_1988.pdf,96,99,False,4
+ra,soldes,1988,transferts,- Transferts unilatéraux,17,+ 17,chiffre,concordante,1988,RA_fr_1988.pdf,96,99,False,4
+ra,soldes,1988,mouvements_capitaux,B - Mouvements de capitaux,235,+ 235,chiffre,concordante,1988,RA_fr_1988.pdf,96,99,False,4
+ra,soldes,1988,ajustements,C - Opérations d'ajustement,-1,- 1,chiffre,concordante,1988,RA_fr_1988.pdf,96,99,False,4
+ra,soldes,1988,solde_general,Solde général,325,+ 325,chiffre,concordante,1988,RA_fr_1988.pdf,96,99,False,4
+ra,soldes,1988,paiements_courants,A - Paiements courants,91,+91,chiffre,concordante,1989,RA_fr_1989.pdf,109,112,False,4
+ra,soldes,1988,marchandises,-Marchandises (FOB),-941,- 941,chiffre,concordante,1989,RA_fr_1989.pdf,109,112,False,4
+ra,soldes,1988,services,-Services,952,+952,chiffre,concordante,1989,RA_fr_1989.pdf,109,112,False,4
+ra,soldes,1988,revenus,-Revenus,63,+ 63,chiffre,concordante,1989,RA_fr_1989.pdf,109,112,False,4
+ra,soldes,1988,transferts,-Transferts unilatéraux,17,+ 17,chiffre,concordante,1989,RA_fr_1989.pdf,109,112,False,4
+ra,soldes,1988,mouvements_capitaux,B - Mouvements de capitaux,235,+235,chiffre,concordante,1989,RA_fr_1989.pdf,109,112,False,4
+ra,soldes,1988,ajustements,C - Opérations d'ajustement,-1,- 1,chiffre,concordante,1989,RA_fr_1989.pdf,109,112,False,4
+ra,soldes,1988,solde_general,Solde général,325,+325,chiffre,concordante,1989,RA_fr_1989.pdf,109,112,False,4
+ra,soldes,1988,paiements_courants,A - Paiements courants,91,+91,chiffre,concordante,1990,RA_fr_1990.pdf,108,112,False,4
+ra,soldes,1988,marchandises,-Marchandises (FOB),-941,- 941,chiffre,concordante,1990,RA_fr_1990.pdf,108,112,False,4
+ra,soldes,1988,services,-Services,952,+952,chiffre,concordante,1990,RA_fr_1990.pdf,108,112,False,4
+ra,soldes,1988,revenus,-Revenus,63,+ 63,chiffre,concordante,1990,RA_fr_1990.pdf,108,112,False,4
+ra,soldes,1988,transferts,-Transferts unilatéraux,17,+ 17,chiffre,concordante,1990,RA_fr_1990.pdf,108,112,False,4
+ra,soldes,1988,mouvements_capitaux,B - Mouvements de capitaux,235,+235,chiffre,concordante,1990,RA_fr_1990.pdf,108,112,False,4
+ra,soldes,1988,ajustements,C - Opérations d'ajustement,-1,- 1,chiffre,concordante,1990,RA_fr_1990.pdf,108,112,False,4
+ra,soldes,1988,solde_general,Solde général,325,+325,chiffre,concordante,1990,RA_fr_1990.pdf,108,112,False,4
+ra,soldes,1988,paiements_courants,A - Paiements courants,128,+ 128,chiffre,concordante,1992,RA_fr_1992.pdf,111,113,True,4
+ra,soldes,1988,marchandises,-Marchandises (FOB),-941,- 941,chiffre,concordante,1992,RA_fr_1992.pdf,111,113,True,4
+ra,soldes,1988,services,-Services,991,+ 991,chiffre,concordante,1992,RA_fr_1992.pdf,111,113,True,4
+ra,soldes,1988,revenus,-Revenus de facteurs,63,+ 63,chiffre,concordante,1992,RA_fr_1992.pdf,111,113,True,4
+ra,soldes,1988,transferts,-Transferts unilatéraux,15,+ 15,chiffre,concordante,1992,RA_fr_1992.pdf,111,113,True,4
+ra,soldes,1988,mouvements_capitaux,B - Mouvements de capitaux,194,+ 194,chiffre,concordante,1992,RA_fr_1992.pdf,111,113,True,4
+ra,soldes,1988,ajustements,C - Opérations d'ajustement(flux nets),3,+ 3,chiffre,concordante,1992,RA_fr_1992.pdf,111,113,True,4
+ra,soldes,1988,solde_general,Solde général,325,+ 325,chiffre,concordante,1992,RA_fr_1992.pdf,111,113,True,4
+ra,soldes,1989,paiements_courants,A - Paiements courants,-347,- 347,chiffre,concordante,1989,RA_fr_1989.pdf,109,112,False,3
+ra,soldes,1989,marchandises,-Marchandises (FOB),-1146,-1146,chiffre,concordante,1989,RA_fr_1989.pdf,109,112,False,3
+ra,soldes,1989,services,-Services,756,+756,chiffre,concordante,1989,RA_fr_1989.pdf,109,112,False,3
+ra,soldes,1989,revenus,-Revenus,32,+ 32,chiffre,concordante,1989,RA_fr_1989.pdf,109,112,False,3
+ra,soldes,1989,transferts,-Transferts unilatéraux,11,+ 11,chiffre,concordante,1989,RA_fr_1989.pdf,109,112,False,3
+ra,soldes,1989,mouvements_capitaux,B - Mouvements de capitaux,415,+415,chiffre,concordante,1989,RA_fr_1989.pdf,109,112,False,3
+ra,soldes,1989,ajustements,C - Opérations d'ajustement,24,+ 24,chiffre,concordante,1989,RA_fr_1989.pdf,109,112,False,3
+ra,soldes,1989,solde_general,Solde général,92,+92,chiffre,concordante,1989,RA_fr_1989.pdf,109,112,False,3
+ra,soldes,1989,paiements_courants,A - Paiements courants,-347,- 347,chiffre,concordante,1990,RA_fr_1990.pdf,108,112,False,3
+ra,soldes,1989,marchandises,-Marchandises (FOB),-1146,-1146,chiffre,concordante,1990,RA_fr_1990.pdf,108,112,False,3
+ra,soldes,1989,services,-Services,756,+756,chiffre,concordante,1990,RA_fr_1990.pdf,108,112,False,3
+ra,soldes,1989,revenus,-Revenus,32,+ 32,chiffre,concordante,1990,RA_fr_1990.pdf,108,112,False,3
+ra,soldes,1989,transferts,-Transferts unilatéraux,11,+ 11,chiffre,concordante,1990,RA_fr_1990.pdf,108,112,False,3
+ra,soldes,1989,mouvements_capitaux,B - Mouvements de capitaux,415,+415,chiffre,concordante,1990,RA_fr_1990.pdf,108,112,False,3
+ra,soldes,1989,ajustements,C - Opérations d'ajustement,24,+ 24,chiffre,concordante,1990,RA_fr_1990.pdf,108,112,False,3
+ra,soldes,1989,solde_general,Solde général,92,+92,chiffre,concordante,1990,RA_fr_1990.pdf,108,112,False,3
+ra,soldes,1989,paiements_courants,A - Paiements courants,-312,- 312,chiffre,concordante,1992,RA_fr_1992.pdf,111,113,True,3
+ra,soldes,1989,marchandises,-Marchandises (FOB),-1146,- 1146,chiffre,concordante,1992,RA_fr_1992.pdf,111,113,True,3
+ra,soldes,1989,services,-Services,793,+ 793,chiffre,concordante,1992,RA_fr_1992.pdf,111,113,True,3
+ra,soldes,1989,revenus,-Revenus de facteurs,32,+ 32,chiffre,concordante,1992,RA_fr_1992.pdf,111,113,True,3
+ra,soldes,1989,transferts,-Transferts unilatéraux,9,+ 9,chiffre,concordante,1992,RA_fr_1992.pdf,111,113,True,3
+ra,soldes,1989,mouvements_capitaux,B - Mouvements de capitaux,378,+ 378,chiffre,concordante,1992,RA_fr_1992.pdf,111,113,True,3
+ra,soldes,1989,ajustements,C - Opérations d'ajustement(flux nets),26,+ 26,chiffre,concordante,1992,RA_fr_1992.pdf,111,113,True,3
+ra,soldes,1989,solde_general,Solde général,92,+ 92,chiffre,concordante,1992,RA_fr_1992.pdf,111,113,True,3
+ra,soldes,1990,paiements_courants,A - Paiements courants,-611,- 611,chiffre,concordante,1990,RA_fr_1990.pdf,108,112,False,3
+ra,soldes,1990,marchandises,-Marchandises (FOB),-1474,-1474,chiffre,concordante,1990,RA_fr_1990.pdf,108,112,False,3
+ra,soldes,1990,services,-Services,694,+694,chiffre,concordante,1990,RA_fr_1990.pdf,108,112,False,3
+ra,soldes,1990,revenus,-Revenus,149,+149,chiffre,concordante,1990,RA_fr_1990.pdf,108,112,False,3
+ra,soldes,1990,transferts,-Transferts unilatéraux,20,+ 20,chiffre,concordante,1990,RA_fr_1990.pdf,108,112,False,3
+ra,soldes,1990,mouvements_capitaux,B - Mouvements de capitaux,518,+518,chiffre,concordante,1990,RA_fr_1990.pdf,108,112,False,3
+ra,soldes,1990,ajustements,C - Opérations d'ajustement,20,+ 20,chiffre,concordante,1990,RA_fr_1990.pdf,108,112,False,3
+ra,soldes,1990,solde_general,Solde général,-73,- 73,chiffre,concordante,1990,RA_fr_1990.pdf,108,112,False,3
+ra,soldes,1990,paiements_courants,A - Paiements courants,-598,- 598,chiffre,concordante,1992,RA_fr_1992.pdf,111,113,False,3
+ra,soldes,1990,marchandises,-Marchandises (FOB),-1474,- 1474,chiffre,concordante,1992,RA_fr_1992.pdf,111,113,False,3
+ra,soldes,1990,services,-Services,738,+ 738,chiffre,concordante,1992,RA_fr_1992.pdf,111,113,False,3
+ra,soldes,1990,revenus,-Revenus de facteurs,120,+ 120,chiffre,concordante,1992,RA_fr_1992.pdf,111,113,False,3
+ra,soldes,1990,transferts,-Transferts unilatéraux,18,+ 18,chiffre,concordante,1992,RA_fr_1992.pdf,111,113,False,3
+ra,soldes,1990,mouvements_capitaux,B - Mouvements de capitaux,520,+ 520,chiffre,concordante,1992,RA_fr_1992.pdf,111,113,False,3
+ra,soldes,1990,ajustements,C - Opérations d'ajustement(flux nets),16,+ 16,chiffre,concordante,1992,RA_fr_1992.pdf,111,113,False,3
+ra,soldes,1990,solde_general,Solde général,-62,- 62,chiffre,concordante,1992,RA_fr_1992.pdf,111,113,False,3
+ra,soldes,1990,paiements_courants,A - Paiements courants,-598,- 598,chiffre,concordante,1994,RA_fr_1994.pdf,122,114,True,3
+ra,soldes,1990,marchandises,-Marchandises (FOB),-1474,- 1474,chiffre,absente,1994,RA_fr_1994.pdf,122,114,True,3
+ra,soldes,1990,services,-Services,738,738,chiffre,concordante,1994,RA_fr_1994.pdf,122,114,True,3
+ra,soldes,1990,revenus,-Revenus de facteurs,120,120,chiffre,concordante,1994,RA_fr_1994.pdf,122,114,True,3
+ra,soldes,1990,transferts,-Transferts unilatéraux,18,18,chiffre,concordante,1994,RA_fr_1994.pdf,122,114,True,3
+ra,soldes,1990,mouvements_capitaux,B - Mouvements de capitaux,520,520,chiffre,concordante,1994,RA_fr_1994.pdf,122,114,True,3
+ra,soldes,1990,dont_participations,dont : -Participations,69,69,chiffre,concordante,1994,RA_fr_1994.pdf,122,114,True,1
+ra,soldes,1990,dont_prets_mlt,dont : -Prêts-emprunts à MLT termes,-28,- 28,chiffre,concordante,1994,RA_fr_1994.pdf,122,114,True,1
+ra,soldes,1990,ajustements,C - Opérations d'ajustement(flux nets),16,16,chiffre,concordante,1994,RA_fr_1994.pdf,122,114,True,3
+ra,soldes,1990,solde_general,Solde général,-62,- 62,chiffre,concordante,1994,RA_fr_1994.pdf,122,114,True,3
+ra,soldes,1991,paiements_courants,A - Paiements courants,-545,- 545,chiffre,concordante,1992,RA_fr_1992.pdf,111,113,False,3
+ra,soldes,1991,marchandises,-Marchandises (FOB),-1108,- 1108,chiffre,concordante,1992,RA_fr_1992.pdf,111,113,False,3
+ra,soldes,1991,services,-Services,532,+ 532,chiffre,concordante,1992,RA_fr_1992.pdf,111,113,False,3
+ra,soldes,1991,revenus,-Revenus de facteurs,8,+ 8,chiffre,concordante,1992,RA_fr_1992.pdf,111,113,False,3
+ra,soldes,1991,transferts,-Transferts unilatéraux,23,+ 23,chiffre,concordante,1992,RA_fr_1992.pdf,111,113,False,3
+ra,soldes,1991,mouvements_capitaux,B - Mouvements de capitaux,423,+ 423,chiffre,concordante,1992,RA_fr_1992.pdf,111,113,False,3
+ra,soldes,1991,ajustements,C - Opérations d'ajustement(flux nets),27,+ 27,chiffre,concordante,1992,RA_fr_1992.pdf,111,113,False,3
+ra,soldes,1991,solde_general,Solde général,-95,- 95,chiffre,concordante,1992,RA_fr_1992.pdf,111,113,False,3
+ra,soldes,1991,paiements_courants,A - Paiements courants,-545,- 545,chiffre,concordante,1994,RA_fr_1994.pdf,122,114,False,3
+ra,soldes,1991,marchandises,-Marchandises (FOB),-1108,- 1108,chiffre,concordante,1994,RA_fr_1994.pdf,122,114,False,3
+ra,soldes,1991,services,-Services,532,532,chiffre,concordante,1994,RA_fr_1994.pdf,122,114,False,3
+ra,soldes,1991,revenus,-Revenus de facteurs,8,8,chiffre,concordante,1994,RA_fr_1994.pdf,122,114,False,3
+ra,soldes,1991,transferts,-Transferts unilatéraux,23,23,chiffre,concordante,1994,RA_fr_1994.pdf,122,114,False,3
+ra,soldes,1991,mouvements_capitaux,B - Mouvements de capitaux,423,423,chiffre,concordante,1994,RA_fr_1994.pdf,122,114,False,3
+ra,soldes,1991,dont_participations,dont : -Participations,130,130,chiffre,concordante,1994,RA_fr_1994.pdf,122,114,False,2
+ra,soldes,1991,dont_prets_mlt,dont : -Prêts-emprunts à MLT termes,194,194,chiffre,concordante,1994,RA_fr_1994.pdf,122,114,False,2
+ra,soldes,1991,ajustements,C - Opérations d'ajustement(flux nets),27,27,chiffre,concordante,1994,RA_fr_1994.pdf,122,114,False,3
+ra,soldes,1991,solde_general,Solde général,-95,- 95,chiffre,concordante,1994,RA_fr_1994.pdf,122,114,False,3
+ra,soldes,1991,paiements_courants,A - Paiements courants,-554,- 554,chiffre,concordante,1995,RA_fr_1995.pdf,116,109,True,3
+ra,soldes,1991,marchandises,-Marchandises (FOB),-1108,- 1108,chiffre,concordante,1995,RA_fr_1995.pdf,116,109,True,3
+ra,soldes,1991,services,-Services,523,523,chiffre,concordante,1995,RA_fr_1995.pdf,116,109,True,3
+ra,soldes,1991,revenus,-Revenus de facteurs,8,8,chiffre,concordante,1995,RA_fr_1995.pdf,116,109,True,3
+ra,soldes,1991,transferts,-Transferts unilatéraux,23,23,chiffre,concordante,1995,RA_fr_1995.pdf,116,109,True,3
+ra,soldes,1991,mouvements_capitaux,B - Mouvements de capitaux(1),432,432,chiffre,concordante,1995,RA_fr_1995.pdf,116,109,True,3
+ra,soldes,1991,dont_participations,dont : -Participations,116,116,chiffre,concordante,1995,RA_fr_1995.pdf,116,109,True,2
+ra,soldes,1991,dont_prets_mlt,dont : -Prêts-emprunts à MLT termes,194,194,chiffre,concordante,1995,RA_fr_1995.pdf,116,109,True,2
+ra,soldes,1991,ajustements,C - Opérations d'ajustement(flux nets),27,27,chiffre,concordante,1995,RA_fr_1995.pdf,116,109,True,3
+ra,soldes,1991,solde_general,Solde général,-95,- 95,chiffre,concordante,1995,RA_fr_1995.pdf,116,109,True,3
+ra,soldes,1992,paiements_courants,A - Paiements courants,-908,- 908,chiffre,concordante,1992,RA_fr_1992.pdf,111,113,False,4
+ra,soldes,1992,marchandises,-Marchandises (FOB),-1809,- 1809,chiffre,concordante,1992,RA_fr_1992.pdf,111,113,False,4
+ra,soldes,1992,services,-Services,877,+ 877,chiffre,concordante,1992,RA_fr_1992.pdf,111,113,False,4
+ra,soldes,1992,revenus,-Revenus de facteurs,10,+ 10,chiffre,concordante,1992,RA_fr_1992.pdf,111,113,False,4
+ra,soldes,1992,transferts,-Transferts unilatéraux,14,+ 14,chiffre,concordante,1992,RA_fr_1992.pdf,111,113,False,4
+ra,soldes,1992,mouvements_capitaux,B - Mouvements de capitaux,940,+ 940,chiffre,concordante,1992,RA_fr_1992.pdf,111,113,False,4
+ra,soldes,1992,ajustements,C - Opérations d'ajustement(flux nets),41,+ 41,chiffre,concordante,1992,RA_fr_1992.pdf,111,113,False,4
+ra,soldes,1992,solde_general,Solde général,73,+ 73,chiffre,concordante,1992,RA_fr_1992.pdf,111,113,False,4
+ra,soldes,1992,paiements_courants,A - Paiements courants,-901,- 901,chiffre,concordante,1994,RA_fr_1994.pdf,122,114,False,4
+ra,soldes,1992,marchandises,-Marchandises (FOB),-1802,- 1802,chiffre,concordante,1994,RA_fr_1994.pdf,122,114,False,4
+ra,soldes,1992,services,-Services,870,870,chiffre,concordante,1994,RA_fr_1994.pdf,122,114,False,4
+ra,soldes,1992,revenus,-Revenus de facteurs,16,16,chiffre,concordante,1994,RA_fr_1994.pdf,122,114,False,4
+ra,soldes,1992,transferts,-Transferts unilatéraux,15,15,chiffre,concordante,1994,RA_fr_1994.pdf,122,114,False,4
+ra,soldes,1992,mouvements_capitaux,B - Mouvements de capitaux,939,939,chiffre,concordante,1994,RA_fr_1994.pdf,122,114,False,4
+ra,soldes,1992,dont_participations,dont : -Participations,363,363,chiffre,concordante,1994,RA_fr_1994.pdf,122,114,False,3
+ra,soldes,1992,dont_prets_mlt,dont : -Prêts-emprunts à MLT termes,185,185,chiffre,concordante,1994,RA_fr_1994.pdf,122,114,False,3
+ra,soldes,1992,ajustements,C - Opérations d'ajustement(flux nets),35,35,chiffre,concordante,1994,RA_fr_1994.pdf,122,114,False,4
+ra,soldes,1992,solde_general,Solde général,73,73,chiffre,concordante,1994,RA_fr_1994.pdf,122,114,False,4
+ra,soldes,1992,paiements_courants,A - Paiements courants,-1041,- 1041,chiffre,concordante,1995,RA_fr_1995.pdf,116,109,False,4
+ra,soldes,1992,marchandises,-Marchandises (FOB),-1802,- 1802,chiffre,concordante,1995,RA_fr_1995.pdf,116,109,False,4
+ra,soldes,1992,services,-Services,731,731,chiffre,concordante,1995,RA_fr_1995.pdf,116,109,False,4
+ra,soldes,1992,revenus,-Revenus de facteurs,15,15,chiffre,concordante,1995,RA_fr_1995.pdf,116,109,False,4
+ra,soldes,1992,transferts,-Transferts unilatéraux,15,15,chiffre,concordante,1995,RA_fr_1995.pdf,116,109,False,4
+ra,soldes,1992,mouvements_capitaux,B - Mouvements de capitaux(1),1079,1079,chiffre,concordante,1995,RA_fr_1995.pdf,116,109,False,4
+ra,soldes,1992,dont_participations,dont : -Participations,504,504,chiffre,concordante,1995,RA_fr_1995.pdf,116,109,False,3
+ra,soldes,1992,dont_prets_mlt,dont : -Prêts-emprunts à MLT termes,185,185,chiffre,concordante,1995,RA_fr_1995.pdf,116,109,False,3
+ra,soldes,1992,ajustements,C - Opérations d'ajustement(flux nets),35,35,chiffre,concordante,1995,RA_fr_1995.pdf,116,109,False,4
+ra,soldes,1992,solde_general,Solde général,73,73,chiffre,concordante,1995,RA_fr_1995.pdf,116,109,False,4
+ra,soldes,1992,paiements_courants,A - Paiements courants,-1041,- 1041,chiffre,concordante,1996,RA_fr_1996.pdf,142,132,True,4
+ra,soldes,1992,marchandises,-Marchandises (FOB),-1802,- 1802,chiffre,concordante,1996,RA_fr_1996.pdf,142,132,True,4
+ra,soldes,1992,services,-Services,731,731,chiffre,concordante,1996,RA_fr_1996.pdf,142,132,True,4
+ra,soldes,1992,revenus,-Revenus de facteurs,15,15,chiffre,concordante,1996,RA_fr_1996.pdf,142,132,True,4
+ra,soldes,1992,transferts,-Transferts unilatéraux,15,15,chiffre,concordante,1996,RA_fr_1996.pdf,142,132,True,4
+ra,soldes,1992,mouvements_capitaux,B - Mouvements de capitaux(1),1079,1079,chiffre,concordante,1996,RA_fr_1996.pdf,142,132,True,4
+ra,soldes,1992,dont_dons,dont : -Dons,72,72,chiffre,concordante,1996,RA_fr_1996.pdf,142,132,True,1
+ra,soldes,1992,dont_participations,dont : -Participations,518,518,chiffre,concordante,1996,RA_fr_1996.pdf,142,132,True,3
+ra,soldes,1992,dont_prets_mlt,dont : -Prêts-emprunts à MLT termes,185,185,chiffre,concordante,1996,RA_fr_1996.pdf,142,132,True,3
+ra,soldes,1992,ajustements,C - Opérations d'ajustement(flux nets),35,35,chiffre,concordante,1996,RA_fr_1996.pdf,142,132,True,4
+ra,soldes,1992,solde_general,Solde général,73,73,chiffre,concordante,1996,RA_fr_1996.pdf,142,132,True,4
+ra,soldes,1993,paiements_courants,A - Paiements courants,-1016,- 1016,chiffre,concordante,1994,RA_fr_1994.pdf,122,114,False,3
+ra,soldes,1993,marchandises,-Marchandises (FOB),-2071,- 2071,chiffre,concordante,1994,RA_fr_1994.pdf,122,114,False,3
+ra,soldes,1993,services,-Services,1008,1008,chiffre,concordante,1994,RA_fr_1994.pdf,122,114,False,3
+ra,soldes,1993,revenus,-Revenus de facteurs,33,33,chiffre,concordante,1994,RA_fr_1994.pdf,122,114,False,3
+ra,soldes,1993,transferts,-Transferts unilatéraux,14,14,chiffre,concordante,1994,RA_fr_1994.pdf,122,114,False,3
+ra,soldes,1993,mouvements_capitaux,B - Mouvements de capitaux,1011,1011,chiffre,concordante,1994,RA_fr_1994.pdf,122,114,False,3
+ra,soldes,1993,dont_participations,dont : -Participations,256,256,chiffre,concordante,1994,RA_fr_1994.pdf,122,114,False,3
+ra,soldes,1993,dont_prets_mlt,dont : -Prêts-emprunts à MLT termes,360,360,chiffre,concordante,1994,RA_fr_1994.pdf,122,114,False,3
+ra,soldes,1993,ajustements,C - Opérations d'ajustement(flux nets),43,43,chiffre,concordante,1994,RA_fr_1994.pdf,122,114,False,3
+ra,soldes,1993,solde_general,Solde général,38,38,chiffre,concordante,1994,RA_fr_1994.pdf,122,114,False,3
+ra,soldes,1993,paiements_courants,A - Paiements courants,-1342,- 1342,chiffre,concordante,1995,RA_fr_1995.pdf,116,109,False,3
+ra,soldes,1993,marchandises,-Marchandises (FOB),-2071,- 2071,chiffre,concordante,1995,RA_fr_1995.pdf,116,109,False,3
+ra,soldes,1993,services,-Services,682,682,chiffre,concordante,1995,RA_fr_1995.pdf,116,109,False,3
+ra,soldes,1993,revenus,-Revenus de facteurs,33,33,chiffre,concordante,1995,RA_fr_1995.pdf,116,109,False,3
+ra,soldes,1993,transferts,-Transferts unilatéraux,14,14,chiffre,concordante,1995,RA_fr_1995.pdf,116,109,False,3
+ra,soldes,1993,mouvements_capitaux,B - Mouvements de capitaux(1),1337,1337,chiffre,concordante,1995,RA_fr_1995.pdf,116,109,False,3
+ra,soldes,1993,dont_participations,dont : -Participations,581,581,chiffre,concordante,1995,RA_fr_1995.pdf,116,109,False,3
+ra,soldes,1993,dont_prets_mlt,dont : -Prêts-emprunts à MLT termes,360,360,chiffre,concordante,1995,RA_fr_1995.pdf,116,109,False,3
+ra,soldes,1993,ajustements,C - Opérations d'ajustement(flux nets),41,41,chiffre,concordante,1995,RA_fr_1995.pdf,116,109,False,3
+ra,soldes,1993,solde_general,Solde général,36,36,chiffre,concordante,1995,RA_fr_1995.pdf,116,109,False,3
+ra,soldes,1993,paiements_courants,A - Paiements courants,-1342,- 1342,chiffre,concordante,1996,RA_fr_1996.pdf,142,132,True,3
+ra,soldes,1993,marchandises,-Marchandises (FOB),-2071,- 2071,chiffre,concordante,1996,RA_fr_1996.pdf,142,132,True,3
+ra,soldes,1993,services,-Services,682,682,chiffre,concordante,1996,RA_fr_1996.pdf,142,132,True,3
+ra,soldes,1993,revenus,-Revenus de facteurs,33,33,chiffre,concordante,1996,RA_fr_1996.pdf,142,132,True,3
+ra,soldes,1993,transferts,-Transferts unilatéraux,14,14,chiffre,concordante,1996,RA_fr_1996.pdf,142,132,True,3
+ra,soldes,1993,mouvements_capitaux,B - Mouvements de capitaux(1),1337,1337,chiffre,concordante,1996,RA_fr_1996.pdf,142,132,True,3
+ra,soldes,1993,dont_dons,dont : -Dons,104,104,chiffre,concordante,1996,RA_fr_1996.pdf,142,132,True,1
+ra,soldes,1993,dont_participations,dont : -Participations,595,595,chiffre,concordante,1996,RA_fr_1996.pdf,142,132,True,3
+ra,soldes,1993,dont_prets_mlt,dont : -Prêts-emprunts à MLT termes,360,360,chiffre,concordante,1996,RA_fr_1996.pdf,142,132,True,3
+ra,soldes,1993,ajustements,C - Opérations d'ajustement(flux nets),41,41,chiffre,concordante,1996,RA_fr_1996.pdf,142,132,True,3
+ra,soldes,1993,solde_general,Solde général,36,36,chiffre,concordante,1996,RA_fr_1996.pdf,142,132,True,3
+ra,soldes,1994,paiements_courants,A - Paiements courants,-420,- 420,chiffre,concordante,1994,RA_fr_1994.pdf,122,114,False,3
+ra,soldes,1994,marchandises,-Marchandises (FOB),-1585,- 1585,chiffre,concordante,1994,RA_fr_1994.pdf,122,114,False,3
+ra,soldes,1994,services,-Services,1152,1152,chiffre,concordante,1994,RA_fr_1994.pdf,122,114,False,3
+ra,soldes,1994,revenus,-Revenus de facteurs,0,–,néant,néant,1994,RA_fr_1994.pdf,122,114,False,3
+ra,soldes,1994,transferts,-Transferts unilatéraux,13,13,chiffre,concordante,1994,RA_fr_1994.pdf,122,114,False,3
+ra,soldes,1994,mouvements_capitaux,B - Mouvements de capitaux,730,730,chiffre,concordante,1994,RA_fr_1994.pdf,122,114,False,3
+ra,soldes,1994,dont_participations,dont : -Participations,205,205,chiffre,concordante,1994,RA_fr_1994.pdf,122,114,False,3
+ra,soldes,1994,dont_prets_mlt,dont : -Prêts-emprunts à MLT termes,619,619,chiffre,concordante,1994,RA_fr_1994.pdf,122,114,False,3
+ra,soldes,1994,ajustements,C - Opérations d'ajustement(flux nets),25,25,chiffre,concordante,1994,RA_fr_1994.pdf,122,114,False,3
+ra,soldes,1994,solde_general,Solde général,335,335,chiffre,concordante,1994,RA_fr_1994.pdf,122,114,False,3
+ra,soldes,1994,paiements_courants,A - Paiements courants,-661,- 661,chiffre,concordante,1995,RA_fr_1995.pdf,116,109,False,3
+ra,soldes,1994,marchandises,-Marchandises (FOB),-1585,-1585,chiffre,concordante,1995,RA_fr_1995.pdf,116,109,False,3
+ra,soldes,1994,services,-Services,911,911,chiffre,concordante,1995,RA_fr_1995.pdf,116,109,False,3
+ra,soldes,1994,revenus,-Revenus de facteurs,0,–,néant,néant,1995,RA_fr_1995.pdf,116,109,False,3
+ra,soldes,1994,transferts,-Transferts unilatéraux,13,13,chiffre,concordante,1995,RA_fr_1995.pdf,116,109,False,3
+ra,soldes,1994,mouvements_capitaux,B - Mouvements de capitaux(1),971,971,chiffre,concordante,1995,RA_fr_1995.pdf,116,109,False,3
+ra,soldes,1994,dont_participations,dont : -Participations,447,447,chiffre,concordante,1995,RA_fr_1995.pdf,116,109,False,3
+ra,soldes,1994,dont_prets_mlt,dont : -Prêts-emprunts à MLT termes,619,619,chiffre,concordante,1995,RA_fr_1995.pdf,116,109,False,3
+ra,soldes,1994,ajustements,C - Opérations d'ajustement(flux nets),27,27,chiffre,concordante,1995,RA_fr_1995.pdf,116,109,False,3
+ra,soldes,1994,solde_general,Solde général,337,337,chiffre,concordante,1995,RA_fr_1995.pdf,116,109,False,3
+ra,soldes,1994,paiements_courants,A - Paiements courants,-661,- 661,chiffre,concordante,1996,RA_fr_1996.pdf,142,132,True,3
+ra,soldes,1994,marchandises,-Marchandises (FOB),-1585,-1585,chiffre,concordante,1996,RA_fr_1996.pdf,142,132,True,3
+ra,soldes,1994,services,-Services,911,911,chiffre,concordante,1996,RA_fr_1996.pdf,142,132,True,3
+ra,soldes,1994,revenus,-Revenus de facteurs,0,–,néant,néant,1996,RA_fr_1996.pdf,142,132,True,3
+ra,soldes,1994,transferts,-Transferts unilatéraux,13,13,chiffre,concordante,1996,RA_fr_1996.pdf,142,132,True,3
+ra,soldes,1994,mouvements_capitaux,B - Mouvements de capitaux(1),971,971,chiffre,concordante,1996,RA_fr_1996.pdf,142,132,True,3
+ra,soldes,1994,dont_dons,dont : -Dons,104,104,chiffre,concordante,1996,RA_fr_1996.pdf,142,132,True,1
+ra,soldes,1994,dont_participations,dont : -Participations,460,460,chiffre,concordante,1996,RA_fr_1996.pdf,142,132,True,3
+ra,soldes,1994,dont_prets_mlt,dont : -Prêts-emprunts à MLT termes,619,619,chiffre,concordante,1996,RA_fr_1996.pdf,142,132,True,3
+ra,soldes,1994,ajustements,C - Opérations d'ajustement(flux nets),27,27,chiffre,concordante,1996,RA_fr_1996.pdf,142,132,True,3
+ra,soldes,1994,solde_general,Solde général,337,337,chiffre,concordante,1996,RA_fr_1996.pdf,142,132,True,3
+ra,soldes,1995,paiements_courants,A - Paiements courants,-785,- 785,chiffre,concordante,1995,RA_fr_1995.pdf,116,109,False,2
+ra,soldes,1995,marchandises,-Marchandises (FOB),-1881,- 1881,chiffre,concordante,1995,RA_fr_1995.pdf,116,109,False,2
+ra,soldes,1995,services,-Services,1081,1081,chiffre,concordante,1995,RA_fr_1995.pdf,116,109,False,2
+ra,soldes,1995,revenus,-Revenus de facteurs,10,10,chiffre,concordante,1995,RA_fr_1995.pdf,116,109,False,2
+ra,soldes,1995,transferts,-Transferts unilatéraux,5,5,chiffre,concordante,1995,RA_fr_1995.pdf,116,109,False,2
+ra,soldes,1995,mouvements_capitaux,B - Mouvements de capitaux(1),747,747,chiffre,concordante,1995,RA_fr_1995.pdf,116,109,False,2
+ra,soldes,1995,dont_participations,dont : -Participations,279,279,chiffre,concordante,1995,RA_fr_1995.pdf,116,109,False,2
+ra,soldes,1995,dont_prets_mlt,dont : -Prêts-emprunts à MLT termes,563,563,chiffre,concordante,1995,RA_fr_1995.pdf,116,109,False,2
+ra,soldes,1995,ajustements,C - Opérations d'ajustement(flux nets),19,19,chiffre,concordante,1995,RA_fr_1995.pdf,116,109,False,2
+ra,soldes,1995,solde_general,Solde général,-19,- 19,chiffre,concordante,1995,RA_fr_1995.pdf,116,109,False,2
+ra,soldes,1995,paiements_courants,A - Paiements courants,-785,- 785,chiffre,concordante,1996,RA_fr_1996.pdf,142,132,True,2
+ra,soldes,1995,marchandises,-Marchandises (FOB),-1881,- 1881,chiffre,concordante,1996,RA_fr_1996.pdf,142,132,True,2
+ra,soldes,1995,services,-Services,1081,1081,chiffre,concordante,1996,RA_fr_1996.pdf,142,132,True,2
+ra,soldes,1995,revenus,-Revenus de facteurs,10,10,chiffre,concordante,1996,RA_fr_1996.pdf,142,132,True,2
+ra,soldes,1995,transferts,-Transferts unilatéraux,5,5,chiffre,concordante,1996,RA_fr_1996.pdf,142,132,True,2
+ra,soldes,1995,mouvements_capitaux,B - Mouvements de capitaux(1),747,747,chiffre,concordante,1996,RA_fr_1996.pdf,142,132,True,2
+ra,soldes,1995,dont_dons,dont : -Dons,67,67,chiffre,concordante,1996,RA_fr_1996.pdf,142,132,True,1
+ra,soldes,1995,dont_participations,dont : -Participations,300,300,chiffre,concordante,1996,RA_fr_1996.pdf,142,132,True,2
+ra,soldes,1995,dont_prets_mlt,dont : -Prêts-emprunts à MLT termes,563,563,chiffre,concordante,1996,RA_fr_1996.pdf,142,132,True,2
+ra,soldes,1995,ajustements,C - Opérations d'ajustement(flux nets),19,19,chiffre,concordante,1996,RA_fr_1996.pdf,142,132,True,2
+ra,soldes,1995,solde_general,Solde général,-19,- 19,chiffre,concordante,1996,RA_fr_1996.pdf,142,132,True,2
+ra,soldes,1996,paiements_courants,A - Paiements courants,-554,- 554,chiffre,concordante,1996,RA_fr_1996.pdf,142,132,True,1
+ra,soldes,1996,marchandises,-Marchandises (FOB),-1756,- 1756,chiffre,concordante,1996,RA_fr_1996.pdf,142,132,True,1
+ra,soldes,1996,services,-Services,1336,1336,chiffre,concordante,1996,RA_fr_1996.pdf,142,132,True,1
+ra,soldes,1996,revenus,-Revenus de facteurs,-155,- 155,chiffre,concordante,1996,RA_fr_1996.pdf,142,132,True,1
+ra,soldes,1996,transferts,-Transferts unilatéraux,21,21,chiffre,concordante,1996,RA_fr_1996.pdf,142,132,True,1
+ra,soldes,1996,mouvements_capitaux,B - Mouvements de capitaux(1),869,869,chiffre,concordante,1996,RA_fr_1996.pdf,142,132,True,1
+ra,soldes,1996,dont_dons,dont : -Dons,68,68,chiffre,concordante,1996,RA_fr_1996.pdf,142,132,True,1
+ra,soldes,1996,dont_participations,dont : -Participations,385,385,chiffre,concordante,1996,RA_fr_1996.pdf,142,132,True,1
+ra,soldes,1996,dont_prets_mlt,dont : -Prêts-emprunts à MLT termes,419,419,chiffre,concordante,1996,RA_fr_1996.pdf,142,132,True,1
+ra,soldes,1996,ajustements,C - Opérations d'ajustement(flux nets),-15,-15,chiffre,concordante,1996,RA_fr_1996.pdf,142,132,True,1
+ra,soldes,1996,solde_general,Solde général,300,300,chiffre,concordante,1996,RA_fr_1996.pdf,142,132,True,1
+ra,recettes_courantes,1978,exportations_fob,Exportations de marchandises FOB,372,372,chiffre,concordante,1982,RA_fr_1982.pdf,95,98,True,1
+ra,recettes_courantes,1978,transports,Transports,63,63,chiffre,concordante,1982,RA_fr_1982.pdf,95,98,True,1
+ra,recettes_courantes,1978,tourisme,Tourisme,167,167,chiffre,concordante,1982,RA_fr_1982.pdf,95,98,True,1
+ra,recettes_courantes,1978,revenus_travail,Economies sur salaires,89,89,chiffre,concordante,1982,RA_fr_1982.pdf,95,98,True,1
+ra,recettes_courantes,1978,autres,Autres recettes courantes,93,93,chiffre,concordante,1982,RA_fr_1982.pdf,95,98,True,1
+ra,recettes_courantes,1978,total,Total,784,784,chiffre,concordante,1982,RA_fr_1982.pdf,95,98,True,1
+ra,recettes_courantes,1979,exportations_fob,Exportations de marchandises FOB,614,614,chiffre,concordante,1982,RA_fr_1982.pdf,95,98,True,1
+ra,recettes_courantes,1979,transports,Transports,88,88,chiffre,concordante,1982,RA_fr_1982.pdf,95,98,True,1
+ra,recettes_courantes,1979,tourisme,Tourisme,219,219,chiffre,concordante,1982,RA_fr_1982.pdf,95,98,True,1
+ra,recettes_courantes,1979,revenus_travail,Economies sur salaires,107,107,chiffre,concordante,1982,RA_fr_1982.pdf,95,98,True,1
+ra,recettes_courantes,1979,autres,Autres recettes courantes,145,145,chiffre,concordante,1982,RA_fr_1982.pdf,95,98,True,1
+ra,recettes_courantes,1979,total,Total,1173,1.173,chiffre,concordante,1982,RA_fr_1982.pdf,95,98,True,1
+ra,recettes_courantes,1980,exportations_fob,Exportations de marchandises FOB,731,731,chiffre,concordante,1982,RA_fr_1982.pdf,95,98,False,2
+ra,recettes_courantes,1980,transports,Transports,98,98,chiffre,concordante,1982,RA_fr_1982.pdf,95,98,False,2
+ra,recettes_courantes,1980,tourisme,Tourisme,260,260,chiffre,concordante,1982,RA_fr_1982.pdf,95,98,False,2
+ra,recettes_courantes,1980,revenus_travail,Economies sur salaires,115,115,chiffre,concordante,1982,RA_fr_1982.pdf,95,98,False,2
+ra,recettes_courantes,1980,autres,Autres recettes courantes,173,173,chiffre,concordante,1982,RA_fr_1982.pdf,95,98,False,2
+ra,recettes_courantes,1980,total,Total,1377,1.377,chiffre,concordante,1982,RA_fr_1982.pdf,95,98,False,2
+ra,recettes_courantes,1980,exportations_fob,Exportations de marchandises FOB(1),873,873,chiffre,concordante,1984,RA_fr_1984.pdf,116,118,True,2
+ra,recettes_courantes,1980,transports,Transports,98,98,chiffre,concordante,1984,RA_fr_1984.pdf,116,118,True,2
+ra,recettes_courantes,1980,tourisme,Tourisme,260,260,chiffre,concordante,1984,RA_fr_1984.pdf,116,118,True,2
+ra,recettes_courantes,1980,revenus_travail,Revenus du travail,129,129,chiffre,concordante,1984,RA_fr_1984.pdf,116,118,True,2
+ra,recettes_courantes,1980,autres,Autres recettes courantes,137,137,chiffre,concordante,1984,RA_fr_1984.pdf,116,118,True,2
+ra,recettes_courantes,1980,total,Total,1497,1.497,chiffre,concordante,1984,RA_fr_1984.pdf,116,118,True,2
+ra,recettes_courantes,1981,exportations_fob,Exportations de marchandises FOB,1042,1.042,chiffre,concordante,1982,RA_fr_1982.pdf,95,98,False,3
+ra,recettes_courantes,1981,transports,Transports,122,122,chiffre,concordante,1982,RA_fr_1982.pdf,95,98,False,3
+ra,recettes_courantes,1981,tourisme,Tourisme,295,295,chiffre,concordante,1982,RA_fr_1982.pdf,95,98,False,3
+ra,recettes_courantes,1981,revenus_travail,Economies sur salaires,171,171,chiffre,concordante,1982,RA_fr_1982.pdf,95,98,False,3
+ra,recettes_courantes,1981,autres,Autres recettes courantes,200,200,chiffre,concordante,1982,RA_fr_1982.pdf,95,98,False,3
+ra,recettes_courantes,1981,total,Total,1830,1.830,chiffre,concordante,1982,RA_fr_1982.pdf,95,98,False,3
+ra,recettes_courantes,1981,exportations_fob,Exportations de marchandises FOB(1),1208,1.208,chiffre,concordante,1984,RA_fr_1984.pdf,116,118,False,3
+ra,recettes_courantes,1981,transports,Transports,122,122,chiffre,concordante,1984,RA_fr_1984.pdf,116,118,False,3
+ra,recettes_courantes,1981,tourisme,Tourisme,295,295,chiffre,concordante,1984,RA_fr_1984.pdf,116,118,False,3
+ra,recettes_courantes,1981,revenus_travail,Revenus du travail,178,178,chiffre,concordante,1984,RA_fr_1984.pdf,116,118,False,3
+ra,recettes_courantes,1981,autres,Autres recettes courantes,159,159,chiffre,concordante,1984,RA_fr_1984.pdf,116,118,False,3
+ra,recettes_courantes,1981,total,Total,1962,1.962,chiffre,concordante,1984,RA_fr_1984.pdf,116,118,False,3
+ra,recettes_courantes,1981,exportations_fob,Exportations de marchandises FOB(1),1208,1.208,chiffre,concordante,1985,RA_fr_1985.pdf,110,112,True,3
+ra,recettes_courantes,1981,transports,Transports,122,122,chiffre,concordante,1985,RA_fr_1985.pdf,110,112,True,3
+ra,recettes_courantes,1981,tourisme,Tourisme,295,295,chiffre,concordante,1985,RA_fr_1985.pdf,110,112,True,3
+ra,recettes_courantes,1981,revenus_travail,Revenus du travail,178,178,chiffre,concordante,1985,RA_fr_1985.pdf,110,112,True,3
+ra,recettes_courantes,1981,autres,Autres recettes courantes,159,159,chiffre,concordante,1985,RA_fr_1985.pdf,110,112,True,3
+ra,recettes_courantes,1981,total,Total,1962,1.962,chiffre,absente,1985,RA_fr_1985.pdf,110,112,True,3
+ra,recettes_courantes,1982,exportations_fob,Exportations de marchandises FOB,960,960,chiffre,concordante,1982,RA_fr_1982.pdf,95,98,False,4
+ra,recettes_courantes,1982,transports,Transports,150,150,chiffre,concordante,1982,RA_fr_1982.pdf,95,98,False,4
+ra,recettes_courantes,1982,tourisme,Tourisme,340,340,chiffre,concordante,1982,RA_fr_1982.pdf,95,98,False,4
+ra,recettes_courantes,1982,revenus_travail,Economies sur salaires,208,208,chiffre,concordante,1982,RA_fr_1982.pdf,95,98,False,4
+ra,recettes_courantes,1982,autres,Autres recettes courantes,269,269,chiffre,concordante,1982,RA_fr_1982.pdf,95,98,False,4
+ra,recettes_courantes,1982,total,Total,1927,1.927,chiffre,concordante,1982,RA_fr_1982.pdf,95,98,False,4
+ra,recettes_courantes,1982,exportations_fob,Exportations de marchandises FOB(1),1167,1.167,chiffre,concordante,1984,RA_fr_1984.pdf,116,118,False,4
+ra,recettes_courantes,1982,transports,Transports,150,150,chiffre,concordante,1984,RA_fr_1984.pdf,116,118,False,4
+ra,recettes_courantes,1982,tourisme,Tourisme,340,340,chiffre,concordante,1984,RA_fr_1984.pdf,116,118,False,4
+ra,recettes_courantes,1982,revenus_travail,Revenus du travail,220,220,chiffre,concordante,1984,RA_fr_1984.pdf,116,118,False,4
+ra,recettes_courantes,1982,autres,Autres recettes courantes,197,197,chiffre,concordante,1984,RA_fr_1984.pdf,116,118,False,4
+ra,recettes_courantes,1982,total,Total,2074,2.074,chiffre,concordante,1984,RA_fr_1984.pdf,116,118,False,4
+ra,recettes_courantes,1982,exportations_fob,Exportations de marchandises FOB(1),1167,1.167,chiffre,concordante,1985,RA_fr_1985.pdf,110,112,False,4
+ra,recettes_courantes,1982,transports,Transports,150,150,chiffre,concordante,1985,RA_fr_1985.pdf,110,112,False,4
+ra,recettes_courantes,1982,tourisme,Tourisme,340,340,chiffre,concordante,1985,RA_fr_1985.pdf,110,112,False,4
+ra,recettes_courantes,1982,revenus_travail,Revenus du travail,220,220,chiffre,concordante,1985,RA_fr_1985.pdf,110,112,False,4
+ra,recettes_courantes,1982,autres,Autres recettes courantes,197,197,chiffre,concordante,1985,RA_fr_1985.pdf,110,112,False,4
+ra,recettes_courantes,1982,total,Total,2074,2.074,chiffre,absente,1985,RA_fr_1985.pdf,110,112,False,4
+ra,recettes_courantes,1982,exportations_fob,Exportations de marchandises (FOB)(1),1167,1.167,chiffre,concordante,1986,RA_fr_1986.pdf,103,106,True,4
+ra,recettes_courantes,1982,transports,Transports,150,150,chiffre,concordante,1986,RA_fr_1986.pdf,103,106,True,4
+ra,recettes_courantes,1982,tourisme,Tourisme,340,340,chiffre,concordante,1986,RA_fr_1986.pdf,103,106,True,4
+ra,recettes_courantes,1982,revenus_travail,Revenus du travail,220,220,chiffre,concordante,1986,RA_fr_1986.pdf,103,106,True,4
+ra,recettes_courantes,1982,redevance,Redevances,8,8,chiffre,concordante,1986,RA_fr_1986.pdf,103,106,True,1
+ra,recettes_courantes,1982,autres,Autres recettes courantes,189,189,chiffre,concordante,1986,RA_fr_1986.pdf,103,106,True,4
+ra,recettes_courantes,1982,total,Total,2074,2.074,chiffre,concordante,1986,RA_fr_1986.pdf,103,106,True,4
+ra,recettes_courantes,1983,exportations_fob,Exportations de marchandises FOB(1),1256,1.256,chiffre,concordante,1984,RA_fr_1984.pdf,116,118,False,3
+ra,recettes_courantes,1983,transports,Transports,153,153,chiffre,concordante,1984,RA_fr_1984.pdf,116,118,False,3
+ra,recettes_courantes,1983,tourisme,Tourisme,389,389,chiffre,concordante,1984,RA_fr_1984.pdf,116,118,False,3
+ra,recettes_courantes,1983,revenus_travail,Revenus du travail,244,244,chiffre,concordante,1984,RA_fr_1984.pdf,116,118,False,3
+ra,recettes_courantes,1983,autres,Autres recettes courantes,223,223,chiffre,concordante,1984,RA_fr_1984.pdf,116,118,False,3
+ra,recettes_courantes,1983,total,Total,2265,2.265,chiffre,concordante,1984,RA_fr_1984.pdf,116,118,False,3
+ra,recettes_courantes,1983,exportations_fob,Exportations de marchandises FOB(1),1256,1.256,chiffre,concordante,1985,RA_fr_1985.pdf,110,112,False,3
+ra,recettes_courantes,1983,transports,Transports,153,153,chiffre,concordante,1985,RA_fr_1985.pdf,110,112,False,3
+ra,recettes_courantes,1983,tourisme,Tourisme,389,389,chiffre,concordante,1985,RA_fr_1985.pdf,110,112,False,3
+ra,recettes_courantes,1983,revenus_travail,Revenus du travail,244,244,chiffre,concordante,1985,RA_fr_1985.pdf,110,112,False,3
+ra,recettes_courantes,1983,autres,Autres recettes courantes,223,223,chiffre,concordante,1985,RA_fr_1985.pdf,110,112,False,3
+ra,recettes_courantes,1983,total,Total,2265,2.265,chiffre,absente,1985,RA_fr_1985.pdf,110,112,False,3
+ra,recettes_courantes,1983,exportations_fob,Exportations de marchandises (FOB)(1),1256,1.256,chiffre,concordante,1986,RA_fr_1986.pdf,103,106,True,3
+ra,recettes_courantes,1983,transports,Transports,153,153,chiffre,concordante,1986,RA_fr_1986.pdf,103,106,True,3
+ra,recettes_courantes,1983,tourisme,Tourisme,389,389,chiffre,concordante,1986,RA_fr_1986.pdf,103,106,True,3
+ra,recettes_courantes,1983,revenus_travail,Revenus du travail,244,244,chiffre,concordante,1986,RA_fr_1986.pdf,103,106,True,3
+ra,recettes_courantes,1983,redevance,Redevances,14,14,chiffre,concordante,1986,RA_fr_1986.pdf,103,106,True,1
+ra,recettes_courantes,1983,autres,Autres recettes courantes,209,209,chiffre,concordante,1986,RA_fr_1986.pdf,103,106,True,3
+ra,recettes_courantes,1983,total,Total,2265,2.265,chiffre,concordante,1986,RA_fr_1986.pdf,103,106,True,3
+ra,recettes_courantes,1984,exportations_fob,Exportations de marchandises FOB(1),1380,1.380,chiffre,concordante,1984,RA_fr_1984.pdf,116,118,False,4
+ra,recettes_courantes,1984,transports,Transports,158,158,chiffre,concordante,1984,RA_fr_1984.pdf,116,118,False,4
+ra,recettes_courantes,1984,tourisme,Tourisme,357,357,chiffre,concordante,1984,RA_fr_1984.pdf,116,118,False,4
+ra,recettes_courantes,1984,revenus_travail,Revenus du travail,246,246,chiffre,concordante,1984,RA_fr_1984.pdf,116,118,False,3
+ra,recettes_courantes,1984,autres,Autres recettes courantes,293,293,chiffre,concordante,1984,RA_fr_1984.pdf,116,118,False,4
+ra,recettes_courantes,1984,total,Total,2434,2.434,chiffre,concordante,1984,RA_fr_1984.pdf,116,118,False,4
+ra,recettes_courantes,1984,exportations_fob,Exportations de marchandises FOB(1),1380,1.380,chiffre,concordante,1985,RA_fr_1985.pdf,110,112,False,4
+ra,recettes_courantes,1984,transports,Transports,158,158,chiffre,concordante,1985,RA_fr_1985.pdf,110,112,False,4
+ra,recettes_courantes,1984,tourisme,Tourisme,357,357,chiffre,concordante,1985,RA_fr_1985.pdf,110,112,False,4
+ra,recettes_courantes,1984,revenus_travail,Revenus du travail,246,246,chiffre,concordante,1985,RA_fr_1985.pdf,110,112,False,3
+ra,recettes_courantes,1984,autres,Autres recettes courantes,293,293,chiffre,concordante,1985,RA_fr_1985.pdf,110,112,False,4
+ra,recettes_courantes,1984,total,Total,2434,2.434,chiffre,absente,1985,RA_fr_1985.pdf,110,112,False,4
+ra,recettes_courantes,1984,exportations_fob,Exportations de marchandises (FOB)(1),1380,1.380,chiffre,concordante,1986,RA_fr_1986.pdf,103,106,False,4
+ra,recettes_courantes,1984,transports,Transports,158,158,chiffre,concordante,1986,RA_fr_1986.pdf,103,106,False,4
+ra,recettes_courantes,1984,tourisme,Tourisme,357,357,chiffre,concordante,1986,RA_fr_1986.pdf,103,106,False,4
+ra,recettes_courantes,1984,revenus_travail,Revenus du travail,246,246,chiffre,concordante,1986,RA_fr_1986.pdf,103,106,True,3
+ra,recettes_courantes,1984,redevance,Redevances,44,44,chiffre,concordante,1986,RA_fr_1986.pdf,103,106,False,2
+ra,recettes_courantes,1984,autres,Autres recettes courantes,249,249,chiffre,concordante,1986,RA_fr_1986.pdf,103,106,False,4
+ra,recettes_courantes,1984,total,Total,2434,2.434,chiffre,concordante,1986,RA_fr_1986.pdf,103,106,False,4
+ra,recettes_courantes,1984,exportations_fob,Exportations de marchandises (FOB),1380,1.380,chiffre,concordante,1988,RA_fr_1988.pdf,97,100,True,4
+ra,recettes_courantes,1984,transports,Transports,158,158,chiffre,concordante,1988,RA_fr_1988.pdf,97,100,True,4
+ra,recettes_courantes,1984,tourisme,Tourisme,357,357,chiffre,concordante,1988,RA_fr_1988.pdf,97,100,True,4
+ra,recettes_courantes,1984,revenus_facteurs,Revenus de facteurs,288,288,chiffre,concordante,1988,RA_fr_1988.pdf,97,100,True,1
+ra,recettes_courantes,1984,redevance,Redevance,44,44,chiffre,concordante,1988,RA_fr_1988.pdf,97,100,True,2
+ra,recettes_courantes,1984,autres,Autres recettes courantes,207,207,chiffre,concordante,1988,RA_fr_1988.pdf,97,100,True,4
+ra,recettes_courantes,1984,total,Total,2434,2.434,chiffre,concordante,1988,RA_fr_1988.pdf,97,100,True,4
+ra,recettes_courantes,1985,exportations_fob,Exportations de marchandises FOB(1),1419,1.419,chiffre,concordante,1985,RA_fr_1985.pdf,110,112,False,4
+ra,recettes_courantes,1985,transports,Transports,155,155,chiffre,concordante,1985,RA_fr_1985.pdf,110,112,False,4
+ra,recettes_courantes,1985,tourisme,Tourisme,416,416,chiffre,concordante,1985,RA_fr_1985.pdf,110,112,False,4
+ra,recettes_courantes,1985,revenus_travail,Revenus du travail,226,226,chiffre,concordante,1985,RA_fr_1985.pdf,110,112,False,2
+ra,recettes_courantes,1985,autres,Autres recettes courantes,296,296,chiffre,concordante,1985,RA_fr_1985.pdf,110,112,False,4
+ra,recettes_courantes,1985,total,Total,2512,2.512,chiffre,absente,1985,RA_fr_1985.pdf,110,112,False,4
+ra,recettes_courantes,1985,exportations_fob,Exportations de marchandises (FOB)(1),1419,1.419,chiffre,concordante,1986,RA_fr_1986.pdf,103,106,False,4
+ra,recettes_courantes,1985,transports,Transports,155,155,chiffre,concordante,1986,RA_fr_1986.pdf,103,106,False,4
+ra,recettes_courantes,1985,tourisme,Tourisme,416,416,chiffre,concordante,1986,RA_fr_1986.pdf,103,106,False,4
+ra,recettes_courantes,1985,revenus_travail,Revenus du travail,226,226,chiffre,concordante,1986,RA_fr_1986.pdf,103,106,True,2
+ra,recettes_courantes,1985,redevance,Redevances,59,59,chiffre,concordante,1986,RA_fr_1986.pdf,103,106,False,3
+ra,recettes_courantes,1985,autres,Autres recettes courantes,229,229,chiffre,concordante,1986,RA_fr_1986.pdf,103,106,False,4
+ra,recettes_courantes,1985,total,Total,2504,2.504,chiffre,concordante,1986,RA_fr_1986.pdf,103,106,False,4
+ra,recettes_courantes,1985,exportations_fob,Exportations de marchandises (FOB),1419,1.419,chiffre,concordante,1988,RA_fr_1988.pdf,97,100,False,4
+ra,recettes_courantes,1985,transports,Transports,155,155,chiffre,concordante,1988,RA_fr_1988.pdf,97,100,False,4
+ra,recettes_courantes,1985,tourisme,Tourisme,416,416,chiffre,concordante,1988,RA_fr_1988.pdf,97,100,False,4
+ra,recettes_courantes,1985,revenus_facteurs,Revenus de facteurs,247,247,chiffre,concordante,1988,RA_fr_1988.pdf,97,100,False,2
+ra,recettes_courantes,1985,redevance,Redevance,59,59,chiffre,concordante,1988,RA_fr_1988.pdf,97,100,False,3
+ra,recettes_courantes,1985,autres,Autres recettes courantes,208,208,chiffre,concordante,1988,RA_fr_1988.pdf,97,100,False,4
+ra,recettes_courantes,1985,total,Total,2504,2.504,chiffre,concordante,1988,RA_fr_1988.pdf,97,100,False,4
+ra,recettes_courantes,1985,exportations_fob,Exportations de marchandises (FOB),1419,1419,chiffre,concordante,1989,RA_fr_1989.pdf,110,113,True,4
+ra,recettes_courantes,1985,transports,Transports,155,155,chiffre,concordante,1989,RA_fr_1989.pdf,110,113,True,4
+ra,recettes_courantes,1985,tourisme,Tourisme,416,416,chiffre,concordante,1989,RA_fr_1989.pdf,110,113,True,4
+ra,recettes_courantes,1985,revenus_facteurs,Revenus de facteurs,247,247,chiffre,concordante,1989,RA_fr_1989.pdf,110,113,True,2
+ra,recettes_courantes,1985,redevance,Redevance,59,59,chiffre,concordante,1989,RA_fr_1989.pdf,110,113,True,3
+ra,recettes_courantes,1985,autres,Autres recettes courantes,208,208,chiffre,concordante,1989,RA_fr_1989.pdf,110,113,True,4
+ra,recettes_courantes,1985,total,Total,2504,2504,chiffre,concordante,1989,RA_fr_1989.pdf,110,113,True,4
+ra,recettes_courantes,1986,exportations_fob,Exportations de marchandises (FOB)(1),1400,1.400,chiffre,concordante,1986,RA_fr_1986.pdf,103,106,False,4
+ra,recettes_courantes,1986,transports,Transports,151,151,chiffre,concordante,1986,RA_fr_1986.pdf,103,106,False,4
+ra,recettes_courantes,1986,tourisme,Tourisme,386,386,chiffre,concordante,1986,RA_fr_1986.pdf,103,106,False,4
+ra,recettes_courantes,1986,revenus_travail,Revenus du travail,287,287,chiffre,absente,1986,RA_fr_1986.pdf,103,106,True,1
+ra,recettes_courantes,1986,redevance,Redevances,32,32,chiffre,concordante,1986,RA_fr_1986.pdf,103,106,False,4
+ra,recettes_courantes,1986,autres,Autres recettes courantes,223,223,chiffre,concordante,1986,RA_fr_1986.pdf,103,106,False,4
+ra,recettes_courantes,1986,total,Total,2479,2.479,chiffre,concordante,1986,RA_fr_1986.pdf,103,106,False,4
+ra,recettes_courantes,1986,exportations_fob,Exportations de marchandises (FOB),1400,1.400,chiffre,concordante,1988,RA_fr_1988.pdf,97,100,False,4
+ra,recettes_courantes,1986,transports,Transports,151,151,chiffre,concordante,1988,RA_fr_1988.pdf,97,100,False,4
+ra,recettes_courantes,1986,tourisme,Tourisme,386,386,chiffre,concordante,1988,RA_fr_1988.pdf,97,100,False,4
+ra,recettes_courantes,1986,revenus_facteurs,Revenus de facteurs,303,303,chiffre,concordante,1988,RA_fr_1988.pdf,97,100,False,3
+ra,recettes_courantes,1986,redevance,Redevance,32,32,chiffre,concordante,1988,RA_fr_1988.pdf,97,100,False,4
+ra,recettes_courantes,1986,autres,Autres recettes courantes,207,207,chiffre,concordante,1988,RA_fr_1988.pdf,97,100,False,4
+ra,recettes_courantes,1986,total,Total,2479,2.479,chiffre,concordante,1988,RA_fr_1988.pdf,97,100,False,4
+ra,recettes_courantes,1986,exportations_fob,Exportations de marchandises (FOB),1400,1400,chiffre,concordante,1989,RA_fr_1989.pdf,110,113,False,4
+ra,recettes_courantes,1986,transports,Transports,148,148,chiffre,concordante,1989,RA_fr_1989.pdf,110,113,False,4
+ra,recettes_courantes,1986,tourisme,Tourisme,386,386,chiffre,concordante,1989,RA_fr_1989.pdf,110,113,False,4
+ra,recettes_courantes,1986,revenus_facteurs,Revenus de facteurs,303,303,chiffre,concordante,1989,RA_fr_1989.pdf,110,113,False,3
+ra,recettes_courantes,1986,redevance,Redevance,32,32,chiffre,concordante,1989,RA_fr_1989.pdf,110,113,False,4
+ra,recettes_courantes,1986,autres,Autres recettes courantes,210,210,chiffre,concordante,1989,RA_fr_1989.pdf,110,113,False,4
+ra,recettes_courantes,1986,total,Total,2479,2479,chiffre,concordante,1989,RA_fr_1989.pdf,110,113,False,4
+ra,recettes_courantes,1986,exportations_fob,Exportations de marchandises (FOB),1400,1400,chiffre,concordante,1990,RA_fr_1990.pdf,109,113,True,4
+ra,recettes_courantes,1986,transports,Transports,148,148,chiffre,concordante,1990,RA_fr_1990.pdf,109,113,True,4
+ra,recettes_courantes,1986,tourisme,Tourisme,386,386,chiffre,concordante,1990,RA_fr_1990.pdf,109,113,True,4
+ra,recettes_courantes,1986,revenus_facteurs,Revenus de facteurs,303,303,chiffre,concordante,1990,RA_fr_1990.pdf,109,113,True,3
+ra,recettes_courantes,1986,redevance,Redevance,32,32,chiffre,concordante,1990,RA_fr_1990.pdf,109,113,True,4
+ra,recettes_courantes,1986,autres,Autres recettes courantes,210,210,chiffre,concordante,1990,RA_fr_1990.pdf,109,113,True,4
+ra,recettes_courantes,1986,total,Total,2479,2479,chiffre,concordante,1990,RA_fr_1990.pdf,109,113,True,4
+ra,recettes_courantes,1987,exportations_fob,Exportations de marchandises (FOB),1741,1.741,chiffre,concordante,1988,RA_fr_1988.pdf,97,100,False,3
+ra,recettes_courantes,1987,transports,Transports,212,212,chiffre,concordante,1988,RA_fr_1988.pdf,97,100,False,3
+ra,recettes_courantes,1987,tourisme,Tourisme,569,569,chiffre,concordante,1988,RA_fr_1988.pdf,97,100,False,3
+ra,recettes_courantes,1987,revenus_facteurs,Revenus de facteurs,419,419,chiffre,concordante,1988,RA_fr_1988.pdf,97,100,False,3
+ra,recettes_courantes,1987,redevance,Redevance,34,34,chiffre,concordante,1988,RA_fr_1988.pdf,97,100,False,3
+ra,recettes_courantes,1987,autres,Autres recettes courantes,231,231,chiffre,concordante,1988,RA_fr_1988.pdf,97,100,False,3
+ra,recettes_courantes,1987,total,Total,3206,3.206,chiffre,concordante,1988,RA_fr_1988.pdf,97,100,False,3
+ra,recettes_courantes,1987,exportations_fob,Exportations de marchandises (FOB),1741,1741,chiffre,concordante,1989,RA_fr_1989.pdf,110,113,False,3
+ra,recettes_courantes,1987,transports,Transports,208,208,chiffre,concordante,1989,RA_fr_1989.pdf,110,113,False,3
+ra,recettes_courantes,1987,tourisme,Tourisme,569,569,chiffre,concordante,1989,RA_fr_1989.pdf,110,113,False,3
+ra,recettes_courantes,1987,revenus_facteurs,Revenus de facteurs,419,419,chiffre,concordante,1989,RA_fr_1989.pdf,110,113,False,3
+ra,recettes_courantes,1987,redevance,Redevance,34,34,chiffre,concordante,1989,RA_fr_1989.pdf,110,113,False,3
+ra,recettes_courantes,1987,autres,Autres recettes courantes,235,235,chiffre,concordante,1989,RA_fr_1989.pdf,110,113,False,3
+ra,recettes_courantes,1987,total,Total,3206,3206,chiffre,concordante,1989,RA_fr_1989.pdf,110,113,False,3
+ra,recettes_courantes,1987,exportations_fob,Exportations de marchandises (FOB),1741,1741,chiffre,concordante,1990,RA_fr_1990.pdf,109,113,True,3
+ra,recettes_courantes,1987,transports,Transports,208,208,chiffre,concordante,1990,RA_fr_1990.pdf,109,113,True,3
+ra,recettes_courantes,1987,tourisme,Tourisme,569,569,chiffre,concordante,1990,RA_fr_1990.pdf,109,113,True,3
+ra,recettes_courantes,1987,revenus_facteurs,Revenus de facteurs,419,419,chiffre,concordante,1990,RA_fr_1990.pdf,109,113,True,3
+ra,recettes_courantes,1987,redevance,Redevance,34,34,chiffre,concordante,1990,RA_fr_1990.pdf,109,113,True,3
+ra,recettes_courantes,1987,autres,Autres recettes courantes,235,235,chiffre,concordante,1990,RA_fr_1990.pdf,109,113,True,3
+ra,recettes_courantes,1987,total,Total,3206,3206,chiffre,concordante,1990,RA_fr_1990.pdf,109,113,True,3
+ra,recettes_courantes,1988,exportations_fob,Exportations de marchandises (FOB),2058,2.058,chiffre,concordante,1988,RA_fr_1988.pdf,97,100,False,4
+ra,recettes_courantes,1988,transports,Transports,235,235,chiffre,concordante,1988,RA_fr_1988.pdf,97,100,False,4
+ra,recettes_courantes,1988,tourisme,Tourisme,1086,1.086,chiffre,concordante,1988,RA_fr_1988.pdf,97,100,False,4
+ra,recettes_courantes,1988,revenus_facteurs,Revenus de facteurs,507,507,chiffre,concordante,1988,RA_fr_1988.pdf,97,100,False,4
+ra,recettes_courantes,1988,redevance,Redevance,36,36,chiffre,concordante,1988,RA_fr_1988.pdf,97,100,False,4
+ra,recettes_courantes,1988,autres,Autres recettes courantes,257,257,chiffre,concordante,1988,RA_fr_1988.pdf,97,100,False,4
+ra,recettes_courantes,1988,total,Total,4179,4.179,chiffre,concordante,1988,RA_fr_1988.pdf,97,100,False,4
+ra,recettes_courantes,1988,exportations_fob,Exportations de marchandises (FOB),2058,2058,chiffre,concordante,1989,RA_fr_1989.pdf,110,113,False,4
+ra,recettes_courantes,1988,transports,Transports,228,228,chiffre,concordante,1989,RA_fr_1989.pdf,110,113,False,4
+ra,recettes_courantes,1988,tourisme,Tourisme,1086,1086,chiffre,concordante,1989,RA_fr_1989.pdf,110,113,False,4
+ra,recettes_courantes,1988,revenus_facteurs,Revenus de facteurs,507,507,chiffre,concordante,1989,RA_fr_1989.pdf,110,113,False,4
+ra,recettes_courantes,1988,redevance,Redevance,36,36,chiffre,concordante,1989,RA_fr_1989.pdf,110,113,False,4
+ra,recettes_courantes,1988,autres,Autres recettes courantes,264,264,chiffre,concordante,1989,RA_fr_1989.pdf,110,113,False,4
+ra,recettes_courantes,1988,total,Total,4179,4179,chiffre,concordante,1989,RA_fr_1989.pdf,110,113,False,4
+ra,recettes_courantes,1988,exportations_fob,Exportations de marchandises (FOB),2058,2058,chiffre,concordante,1990,RA_fr_1990.pdf,109,113,False,4
+ra,recettes_courantes,1988,transports,Transports,228,228,chiffre,concordante,1990,RA_fr_1990.pdf,109,113,False,4
+ra,recettes_courantes,1988,tourisme,Tourisme,1086,1086,chiffre,concordante,1990,RA_fr_1990.pdf,109,113,False,4
+ra,recettes_courantes,1988,revenus_facteurs,Revenus de facteurs,507,507,chiffre,concordante,1990,RA_fr_1990.pdf,109,113,False,4
+ra,recettes_courantes,1988,redevance,Redevance,36,36,chiffre,concordante,1990,RA_fr_1990.pdf,109,113,False,4
+ra,recettes_courantes,1988,autres,Autres recettes courantes,264,264,chiffre,concordante,1990,RA_fr_1990.pdf,109,113,False,4
+ra,recettes_courantes,1988,total,Total,4179,4179,chiffre,concordante,1990,RA_fr_1990.pdf,109,113,False,4
+ra,recettes_courantes,1988,exportations_fob,Exportations de marchandises (FOB),2058,2058,chiffre,concordante,1992,RA_fr_1992.pdf,112,114,True,4
+ra,recettes_courantes,1988,transports,Transports,227,227,chiffre,concordante,1992,RA_fr_1992.pdf,112,114,True,4
+ra,recettes_courantes,1988,tourisme,Tourisme,1086,1086,chiffre,concordante,1992,RA_fr_1992.pdf,112,114,True,4
+ra,recettes_courantes,1988,revenus_facteurs,Revenus de facteurs,507,507,chiffre,concordante,1992,RA_fr_1992.pdf,112,114,True,4
+ra,recettes_courantes,1988,redevance,Redevance-gaz,36,36,chiffre,concordante,1992,RA_fr_1992.pdf,112,114,True,4
+ra,recettes_courantes,1988,autres,Autres recettes courantes,265,265,chiffre,concordante,1992,RA_fr_1992.pdf,112,114,True,4
+ra,recettes_courantes,1988,total,Total,4179,4179,chiffre,concordante,1992,RA_fr_1992.pdf,112,114,True,4
+ra,recettes_courantes,1989,exportations_fob,Exportations de marchandises (FOB),2782,2782,chiffre,concordante,1989,RA_fr_1989.pdf,110,113,False,3
+ra,recettes_courantes,1989,transports,Transports,255,255,chiffre,concordante,1989,RA_fr_1989.pdf,110,113,False,3
+ra,recettes_courantes,1989,tourisme,Tourisme,881,881,chiffre,concordante,1989,RA_fr_1989.pdf,110,113,False,3
+ra,recettes_courantes,1989,revenus_facteurs,Revenus de facteurs,529,529,chiffre,concordante,1989,RA_fr_1989.pdf,110,113,False,3
+ra,recettes_courantes,1989,redevance,Redevance,39,39,chiffre,concordante,1989,RA_fr_1989.pdf,110,113,False,3
+ra,recettes_courantes,1989,autres,Autres recettes courantes,327,327,chiffre,concordante,1989,RA_fr_1989.pdf,110,113,False,3
+ra,recettes_courantes,1989,total,Total,4813,4813,chiffre,concordante,1989,RA_fr_1989.pdf,110,113,False,3
+ra,recettes_courantes,1989,exportations_fob,Exportations de marchandises (FOB),2782,2782,chiffre,concordante,1990,RA_fr_1990.pdf,109,113,False,3
+ra,recettes_courantes,1989,transports,Transports,255,255,chiffre,concordante,1990,RA_fr_1990.pdf,109,113,False,3
+ra,recettes_courantes,1989,tourisme,Tourisme,881,881,chiffre,concordante,1990,RA_fr_1990.pdf,109,113,False,3
+ra,recettes_courantes,1989,revenus_facteurs,Revenus de facteurs,529,529,chiffre,concordante,1990,RA_fr_1990.pdf,109,113,False,3
+ra,recettes_courantes,1989,redevance,Redevance,39,39,chiffre,concordante,1990,RA_fr_1990.pdf,109,113,False,3
+ra,recettes_courantes,1989,autres,Autres recettes courantes,327,327,chiffre,concordante,1990,RA_fr_1990.pdf,109,113,False,3
+ra,recettes_courantes,1989,total,Total,4813,4813,chiffre,concordante,1990,RA_fr_1990.pdf,109,113,False,3
+ra,recettes_courantes,1989,exportations_fob,Exportations de marchandises (FOB),2782,2782,chiffre,concordante,1992,RA_fr_1992.pdf,112,114,True,3
+ra,recettes_courantes,1989,transports,Transports,245,245,chiffre,concordante,1992,RA_fr_1992.pdf,112,114,True,3
+ra,recettes_courantes,1989,tourisme,Tourisme,881,881,chiffre,concordante,1992,RA_fr_1992.pdf,112,114,True,3
+ra,recettes_courantes,1989,revenus_facteurs,Revenus de facteurs,529,529,chiffre,concordante,1992,RA_fr_1992.pdf,112,114,True,3
+ra,recettes_courantes,1989,redevance,Redevance-gaz,39,39,chiffre,concordante,1992,RA_fr_1992.pdf,112,114,True,3
+ra,recettes_courantes,1989,autres,Autres recettes courantes,328,328,chiffre,concordante,1992,RA_fr_1992.pdf,112,114,True,3
+ra,recettes_courantes,1989,total,Total,4804,4804,chiffre,concordante,1992,RA_fr_1992.pdf,112,114,True,3
+ra,recettes_courantes,1990,exportations_fob,Exportations de marchandises (FOB),3087,3087,chiffre,concordante,1990,RA_fr_1990.pdf,109,113,False,2
+ra,recettes_courantes,1990,transports,Transports,285,285,chiffre,concordante,1990,RA_fr_1990.pdf,109,113,False,2
+ra,recettes_courantes,1990,tourisme,Tourisme,828,828,chiffre,concordante,1990,RA_fr_1990.pdf,109,113,False,2
+ra,recettes_courantes,1990,revenus_facteurs,Revenus de facteurs,611,611,chiffre,concordante,1990,RA_fr_1990.pdf,109,113,False,2
+ra,recettes_courantes,1990,redevance,Redevance,44,44,chiffre,concordante,1990,RA_fr_1990.pdf,109,113,False,2
+ra,recettes_courantes,1990,autres,Autres recettes courantes,358,358,chiffre,concordante,1990,RA_fr_1990.pdf,109,113,False,2
+ra,recettes_courantes,1990,total,Total,5213,5213,chiffre,concordante,1990,RA_fr_1990.pdf,109,113,False,2
+ra,recettes_courantes,1990,exportations_fob,Exportations de marchandises (FOB),3087,3087,chiffre,concordante,1992,RA_fr_1992.pdf,112,114,True,2
+ra,recettes_courantes,1990,transports,Transports,280,280,chiffre,concordante,1992,RA_fr_1992.pdf,112,114,True,2
+ra,recettes_courantes,1990,tourisme,Tourisme,828,828,chiffre,concordante,1992,RA_fr_1992.pdf,112,114,True,2
+ra,recettes_courantes,1990,revenus_facteurs,Revenus de facteurs,611,611,chiffre,concordante,1992,RA_fr_1992.pdf,112,114,True,2
+ra,recettes_courantes,1990,redevance,Redevance-gaz,44,44,chiffre,concordante,1992,RA_fr_1992.pdf,112,114,True,2
+ra,recettes_courantes,1990,autres,Autres recettes courantes,361,361,chiffre,concordante,1992,RA_fr_1992.pdf,112,114,True,2
+ra,recettes_courantes,1990,total,Total,5211,5211,chiffre,concordante,1992,RA_fr_1992.pdf,112,114,True,2
+ra,recettes_courantes,1991,exportations_fob,Exportations de marchandises (FOB),3417,3417,chiffre,concordante,1992,RA_fr_1992.pdf,112,114,True,1
+ra,recettes_courantes,1991,transports,Transports,280,280,chiffre,concordante,1992,RA_fr_1992.pdf,112,114,True,1
+ra,recettes_courantes,1991,tourisme,Tourisme,632,632,chiffre,concordante,1992,RA_fr_1992.pdf,112,114,True,1
+ra,recettes_courantes,1991,revenus_facteurs,Revenus de facteurs,578,578,chiffre,concordante,1992,RA_fr_1992.pdf,112,114,True,1
+ra,recettes_courantes,1991,redevance,Redevance-gaz,63,63,chiffre,concordante,1992,RA_fr_1992.pdf,112,114,True,1
+ra,recettes_courantes,1991,autres,Autres recettes courantes,368,368,chiffre,concordante,1992,RA_fr_1992.pdf,112,114,True,1
+ra,recettes_courantes,1991,total,Total,5338,5338,chiffre,concordante,1992,RA_fr_1992.pdf,112,114,True,1
+ra,recettes_courantes,1992,exportations_fob,Exportations de marchandises (FOB),3567,3567,chiffre,concordante,1992,RA_fr_1992.pdf,112,114,True,1
+ra,recettes_courantes,1992,transports,Transports,386,386,chiffre,concordante,1992,RA_fr_1992.pdf,112,114,True,1
+ra,recettes_courantes,1992,tourisme,Tourisme,945,945,chiffre,concordante,1992,RA_fr_1992.pdf,112,114,True,1
+ra,recettes_courantes,1992,revenus_facteurs,Revenus de facteurs,591,591,chiffre,concordante,1992,RA_fr_1992.pdf,112,114,True,1
+ra,recettes_courantes,1992,redevance,Redevance-gaz,59,59,chiffre,concordante,1992,RA_fr_1992.pdf,112,114,True,1
+ra,recettes_courantes,1992,autres,Autres recettes courantes,392,392,chiffre,concordante,1992,RA_fr_1992.pdf,112,114,True,1
+ra,recettes_courantes,1992,total,Total,5940,5940,chiffre,concordante,1992,RA_fr_1992.pdf,112,114,True,1
+ra,depenses_courantes,1978,importations_fob,Importations de marchandises FOB,734,734,chiffre,concordante,1982,RA_fr_1982.pdf,99,102,True,1
+ra,depenses_courantes,1978,transports,Transports,87,87,chiffre,concordante,1982,RA_fr_1982.pdf,99,102,True,1
+ra,depenses_courantes,1978,voyages,Voyages,36,36,chiffre,concordante,1982,RA_fr_1982.pdf,99,102,True,1
+ra,depenses_courantes,1978,grands_travaux,Grands travaux,31,31,chiffre,concordante,1982,RA_fr_1982.pdf,99,102,True,1
+ra,depenses_courantes,1978,revenus_capital,Revenus du capital,65,65,chiffre,concordante,1982,RA_fr_1982.pdf,99,102,True,1
+ra,depenses_courantes,1978,autres,Autres,51,51,chiffre,concordante,1982,RA_fr_1982.pdf,99,102,True,1
+ra,depenses_courantes,1978,total,Total,1004,1.004,chiffre,concordante,1982,RA_fr_1982.pdf,99,102,True,1
+ra,depenses_courantes,1979,importations_fob,Importations de marchandises FOB,1018,1.018,chiffre,concordante,1982,RA_fr_1982.pdf,99,102,True,1
+ra,depenses_courantes,1979,transports,Transports,115,115,chiffre,concordante,1982,RA_fr_1982.pdf,99,102,True,1
+ra,depenses_courantes,1979,voyages,Voyages,37,37,chiffre,concordante,1982,RA_fr_1982.pdf,99,102,True,1
+ra,depenses_courantes,1979,grands_travaux,Grands travaux,43,43,chiffre,concordante,1982,RA_fr_1982.pdf,99,102,True,1
+ra,depenses_courantes,1979,revenus_capital,Revenus du capital,84,84,chiffre,concordante,1982,RA_fr_1982.pdf,99,102,True,1
+ra,depenses_courantes,1979,autres,Autres,51,51,chiffre,concordante,1982,RA_fr_1982.pdf,99,102,True,1
+ra,depenses_courantes,1979,total,Total,1348,1.348,chiffre,concordante,1982,RA_fr_1982.pdf,99,102,True,1
+ra,depenses_courantes,1980,importations_fob,Importations de marchandises FOB,1165,1.165,chiffre,concordante,1982,RA_fr_1982.pdf,99,102,False,2
+ra,depenses_courantes,1980,transports,Transports,133,133,chiffre,concordante,1982,RA_fr_1982.pdf,99,102,False,2
+ra,depenses_courantes,1980,voyages,Voyages,43,43,chiffre,concordante,1982,RA_fr_1982.pdf,99,102,False,2
+ra,depenses_courantes,1980,grands_travaux,Grands travaux,40,40,chiffre,concordante,1982,RA_fr_1982.pdf,99,102,False,2
+ra,depenses_courantes,1980,revenus_capital,Revenus du capital,100,100,chiffre,concordante,1982,RA_fr_1982.pdf,99,102,False,2
+ra,depenses_courantes,1980,autres,Autres,81,81,chiffre,concordante,1982,RA_fr_1982.pdf,99,102,False,2
+ra,depenses_courantes,1980,total,Total,1562,1.562,chiffre,concordante,1982,RA_fr_1982.pdf,99,102,False,2
+ra,depenses_courantes,1980,importations_fob,Importations de marchandises FOB(1),1269,1.269,chiffre,concordante,1984,RA_fr_1984.pdf,119,121,True,2
+ra,depenses_courantes,1980,transports,Transports,143,143,chiffre,concordante,1984,RA_fr_1984.pdf,119,121,True,2
+ra,depenses_courantes,1980,voyages,Voyages,43,43,chiffre,concordante,1984,RA_fr_1984.pdf,119,121,True,2
+ra,depenses_courantes,1980,grands_travaux,Grands travaux,40,40,chiffre,concordante,1984,RA_fr_1984.pdf,119,121,True,2
+ra,depenses_courantes,1980,revenus_capital,Revenus du capital(2),103,103,chiffre,concordante,1984,RA_fr_1984.pdf,119,121,True,2
+ra,depenses_courantes,1980,autres,Autres dépenses courantes,78,78,chiffre,concordante,1984,RA_fr_1984.pdf,119,121,True,2
+ra,depenses_courantes,1980,total,Total,1676,1.676,chiffre,concordante,1984,RA_fr_1984.pdf,119,121,True,2
+ra,depenses_courantes,1981,importations_fob,Importations de marchandises FOB,1565,1.565,chiffre,concordante,1982,RA_fr_1982.pdf,99,102,False,3
+ra,depenses_courantes,1981,transports,Transports,162,162,chiffre,concordante,1982,RA_fr_1982.pdf,99,102,False,3
+ra,depenses_courantes,1981,voyages,Voyages,54,54,chiffre,concordante,1982,RA_fr_1982.pdf,99,102,False,3
+ra,depenses_courantes,1981,grands_travaux,Grands travaux,53,53,chiffre,concordante,1982,RA_fr_1982.pdf,99,102,False,3
+ra,depenses_courantes,1981,revenus_capital,Revenus du capital,141,141,chiffre,concordante,1982,RA_fr_1982.pdf,99,102,False,3
+ra,depenses_courantes,1981,autres,Autres,96,96,chiffre,concordante,1982,RA_fr_1982.pdf,99,102,False,3
+ra,depenses_courantes,1981,total,Total,2071,2.071,chiffre,concordante,1982,RA_fr_1982.pdf,99,102,False,3
+ra,depenses_courantes,1981,importations_fob,Importations de marchandises FOB(1),1686,1.686,chiffre,concordante,1984,RA_fr_1984.pdf,119,121,False,3
+ra,depenses_courantes,1981,transports,Transports,173,173,chiffre,concordante,1984,RA_fr_1984.pdf,119,121,False,3
+ra,depenses_courantes,1981,voyages,Voyages,54,54,chiffre,concordante,1984,RA_fr_1984.pdf,119,121,False,3
+ra,depenses_courantes,1981,grands_travaux,Grands travaux,53,53,chiffre,concordante,1984,RA_fr_1984.pdf,119,121,False,3
+ra,depenses_courantes,1981,revenus_capital,Revenus du capital(2),145,145,chiffre,concordante,1984,RA_fr_1984.pdf,119,121,False,3
+ra,depenses_courantes,1981,autres,Autres dépenses courantes,92,92,chiffre,concordante,1984,RA_fr_1984.pdf,119,121,False,3
+ra,depenses_courantes,1981,total,Total,2203,2.203,chiffre,concordante,1984,RA_fr_1984.pdf,119,121,False,3
+ra,depenses_courantes,1981,importations_fob,Importations de marchandises FOB(1),1686,1.686,chiffre,absente,1985,RA_fr_1985.pdf,113,115,True,3
+ra,depenses_courantes,1981,transports,Transports,173,173,chiffre,absente,1985,RA_fr_1985.pdf,113,115,True,3
+ra,depenses_courantes,1981,voyages,Voyages,54,54,chiffre,concordante,1985,RA_fr_1985.pdf,113,115,True,3
+ra,depenses_courantes,1981,grands_travaux,Grands travaux,53,53,chiffre,absente,1985,RA_fr_1985.pdf,113,115,True,3
+ra,depenses_courantes,1981,revenus_capital,Revenus du capital(2),145,145,chiffre,absente,1985,RA_fr_1985.pdf,113,115,True,3
+ra,depenses_courantes,1981,autres,Autres dépenses courantes,92,92,chiffre,absente,1985,RA_fr_1985.pdf,113,115,True,3
+ra,depenses_courantes,1981,total,Total,2203,2.203,chiffre,absente,1985,RA_fr_1985.pdf,113,115,True,3
+ra,depenses_courantes,1982,importations_fob,Importations de marchandises FOB,1724,1.724,chiffre,concordante,1982,RA_fr_1982.pdf,99,102,False,4
+ra,depenses_courantes,1982,transports,Transports,188,188,chiffre,concordante,1982,RA_fr_1982.pdf,99,102,False,4
+ra,depenses_courantes,1982,voyages,Voyages,87,87,chiffre,concordante,1982,RA_fr_1982.pdf,99,102,False,4
+ra,depenses_courantes,1982,grands_travaux,Grands travaux,70,70,chiffre,concordante,1982,RA_fr_1982.pdf,99,102,False,4
+ra,depenses_courantes,1982,revenus_capital,Revenus du capital,161,161,chiffre,concordante,1982,RA_fr_1982.pdf,99,102,False,4
+ra,depenses_courantes,1982,autres,Autres,106,106,chiffre,concordante,1982,RA_fr_1982.pdf,99,102,False,4
+ra,depenses_courantes,1982,total,Total,2336,2.336,chiffre,concordante,1982,RA_fr_1982.pdf,99,102,False,4
+ra,depenses_courantes,1982,importations_fob,Importations de marchandises FOB(1),1853,1.853,chiffre,concordante,1984,RA_fr_1984.pdf,119,121,False,4
+ra,depenses_courantes,1982,transports,Transports,201,201,chiffre,concordante,1984,RA_fr_1984.pdf,119,121,False,4
+ra,depenses_courantes,1982,voyages,Voyages,87,87,chiffre,concordante,1984,RA_fr_1984.pdf,119,121,False,4
+ra,depenses_courantes,1982,grands_travaux,Grands travaux,70,70,chiffre,concordante,1984,RA_fr_1984.pdf,119,121,False,4
+ra,depenses_courantes,1982,revenus_capital,Revenus du capital(2),165,165,chiffre,concordante,1984,RA_fr_1984.pdf,119,121,False,4
+ra,depenses_courantes,1982,autres,Autres dépenses courantes,106,106,chiffre,concordante,1984,RA_fr_1984.pdf,119,121,False,4
+ra,depenses_courantes,1982,total,Total,2482,2.482,chiffre,concordante,1984,RA_fr_1984.pdf,119,121,False,4
+ra,depenses_courantes,1982,importations_fob,Importations de marchandises FOB(1),1853,1.853,chiffre,absente,1985,RA_fr_1985.pdf,113,115,False,4
+ra,depenses_courantes,1982,transports,Transports,201,201,chiffre,absente,1985,RA_fr_1985.pdf,113,115,False,4
+ra,depenses_courantes,1982,voyages,Voyages,87,87,chiffre,absente,1985,RA_fr_1985.pdf,113,115,False,4
+ra,depenses_courantes,1982,grands_travaux,Grands travaux,70,70,chiffre,absente,1985,RA_fr_1985.pdf,113,115,False,4
+ra,depenses_courantes,1982,revenus_capital,Revenus du capital(2),165,165,chiffre,absente,1985,RA_fr_1985.pdf,113,115,False,4
+ra,depenses_courantes,1982,autres,Autres dépenses courantes,106,106,chiffre,absente,1985,RA_fr_1985.pdf,113,115,False,4
+ra,depenses_courantes,1982,total,Total,2482,2.482,chiffre,absente,1985,RA_fr_1985.pdf,113,115,False,4
+ra,depenses_courantes,1982,importations_fob,Importations de marchandises FOB,1853,1.853,chiffre,concordante,1986,RA_fr_1986.pdf,106,109,True,4
+ra,depenses_courantes,1982,transports,Transports,201,201,chiffre,concordante,1986,RA_fr_1986.pdf,106,109,True,4
+ra,depenses_courantes,1982,voyages,Voyages,87,87,chiffre,concordante,1986,RA_fr_1986.pdf,106,109,True,4
+ra,depenses_courantes,1982,grands_travaux,Grands travaux,70,70,chiffre,concordante,1986,RA_fr_1986.pdf,106,109,True,4
+ra,depenses_courantes,1982,revenus_capital,Revenus du capital,165,165,chiffre,concordante,1986,RA_fr_1986.pdf,106,109,True,4
+ra,depenses_courantes,1982,autres,Autres dépenses courantes,106,106,chiffre,concordante,1986,RA_fr_1986.pdf,106,109,True,4
+ra,depenses_courantes,1982,total,Total,2482,2.482,chiffre,concordante,1986,RA_fr_1986.pdf,106,109,True,4
+ra,depenses_courantes,1983,importations_fob,Importations de marchandises FOB(1),1985,1.985,chiffre,concordante,1984,RA_fr_1984.pdf,119,121,False,3
+ra,depenses_courantes,1983,transports,Transports,218,218,chiffre,concordante,1984,RA_fr_1984.pdf,119,121,False,3
+ra,depenses_courantes,1983,voyages,Voyages,92,92,chiffre,concordante,1984,RA_fr_1984.pdf,119,121,False,3
+ra,depenses_courantes,1983,grands_travaux,Grands travaux,64,64,chiffre,concordante,1984,RA_fr_1984.pdf,119,121,False,3
+ra,depenses_courantes,1983,revenus_capital,Revenus du capital(2),177,177,chiffre,concordante,1984,RA_fr_1984.pdf,119,121,False,3
+ra,depenses_courantes,1983,autres,Autres dépenses courantes,143,143,chiffre,concordante,1984,RA_fr_1984.pdf,119,121,False,3
+ra,depenses_courantes,1983,total,Total,2679,2.679,chiffre,concordante,1984,RA_fr_1984.pdf,119,121,False,3
+ra,depenses_courantes,1983,importations_fob,Importations de marchandises FOB(1),1985,1.985,chiffre,absente,1985,RA_fr_1985.pdf,113,115,False,3
+ra,depenses_courantes,1983,transports,Transports,218,218,chiffre,absente,1985,RA_fr_1985.pdf,113,115,False,3
+ra,depenses_courantes,1983,voyages,Voyages,92,92,chiffre,absente,1985,RA_fr_1985.pdf,113,115,False,3
+ra,depenses_courantes,1983,grands_travaux,Grands travaux,64,64,chiffre,absente,1985,RA_fr_1985.pdf,113,115,False,3
+ra,depenses_courantes,1983,revenus_capital,Revenus du capital(2),177,177,chiffre,absente,1985,RA_fr_1985.pdf,113,115,False,3
+ra,depenses_courantes,1983,autres,Autres dépenses courantes,143,143,chiffre,absente,1985,RA_fr_1985.pdf,113,115,False,3
+ra,depenses_courantes,1983,total,Total,2679,2.679,chiffre,concordante,1985,RA_fr_1985.pdf,113,115,False,3
+ra,depenses_courantes,1983,importations_fob,Importations de marchandises FOB,1985,1.985,chiffre,concordante,1986,RA_fr_1986.pdf,106,109,True,3
+ra,depenses_courantes,1983,transports,Transports,218,218,chiffre,concordante,1986,RA_fr_1986.pdf,106,109,True,3
+ra,depenses_courantes,1983,voyages,Voyages,92,92,chiffre,concordante,1986,RA_fr_1986.pdf,106,109,True,3
+ra,depenses_courantes,1983,grands_travaux,Grands travaux,64,64,chiffre,concordante,1986,RA_fr_1986.pdf,106,109,True,3
+ra,depenses_courantes,1983,revenus_capital,Revenus du capital,177,177,chiffre,concordante,1986,RA_fr_1986.pdf,106,109,True,3
+ra,depenses_courantes,1983,autres,Autres dépenses courantes,143,143,chiffre,concordante,1986,RA_fr_1986.pdf,106,109,True,3
+ra,depenses_courantes,1983,total,Total,2679,2.679,chiffre,concordante,1986,RA_fr_1986.pdf,106,109,True,3
+ra,depenses_courantes,1984,importations_fob,Importations de marchandises FOB(1),2243,2.243,chiffre,concordante,1984,RA_fr_1984.pdf,119,121,False,4
+ra,depenses_courantes,1984,transports,Transports,230,230,chiffre,concordante,1984,RA_fr_1984.pdf,119,121,False,4
+ra,depenses_courantes,1984,voyages,Voyages,110,110,chiffre,concordante,1984,RA_fr_1984.pdf,119,121,False,4
+ra,depenses_courantes,1984,grands_travaux,Grands travaux,51,51,chiffre,concordante,1984,RA_fr_1984.pdf,119,121,False,4
+ra,depenses_courantes,1984,revenus_capital,Revenus du capital(2),223,223,chiffre,concordante,1984,RA_fr_1984.pdf,119,121,False,4
+ra,depenses_courantes,1984,autres,Autres dépenses courantes,166,166,chiffre,concordante,1984,RA_fr_1984.pdf,119,121,False,4
+ra,depenses_courantes,1984,total,Total,3023,3.023,chiffre,concordante,1984,RA_fr_1984.pdf,119,121,False,4
+ra,depenses_courantes,1984,importations_fob,Importations de marchandises FOB(1),2275,2.275,chiffre,absente,1985,RA_fr_1985.pdf,113,115,False,4
+ra,depenses_courantes,1984,transports,Transports,230,230,chiffre,absente,1985,RA_fr_1985.pdf,113,115,False,4
+ra,depenses_courantes,1984,voyages,Voyages,110,110,chiffre,absente,1985,RA_fr_1985.pdf,113,115,False,4
+ra,depenses_courantes,1984,grands_travaux,Grands travaux,51,51,chiffre,absente,1985,RA_fr_1985.pdf,113,115,False,4
+ra,depenses_courantes,1984,revenus_capital,Revenus du capital(2),223,223,chiffre,absente,1985,RA_fr_1985.pdf,113,115,False,4
+ra,depenses_courantes,1984,autres,Autres dépenses courantes,166,166,chiffre,absente,1985,RA_fr_1985.pdf,113,115,False,4
+ra,depenses_courantes,1984,total,Total,3055,3.055,chiffre,concordante,1985,RA_fr_1985.pdf,113,115,False,4
+ra,depenses_courantes,1984,importations_fob,Importations de marchandises FOB,2275,2.275,chiffre,concordante,1986,RA_fr_1986.pdf,106,109,False,4
+ra,depenses_courantes,1984,transports,Transports,230,230,chiffre,concordante,1986,RA_fr_1986.pdf,106,109,False,4
+ra,depenses_courantes,1984,voyages,Voyages,110,110,chiffre,concordante,1986,RA_fr_1986.pdf,106,109,False,4
+ra,depenses_courantes,1984,grands_travaux,Grands travaux,51,51,chiffre,concordante,1986,RA_fr_1986.pdf,106,109,False,4
+ra,depenses_courantes,1984,revenus_capital,Revenus du capital,223,223,chiffre,concordante,1986,RA_fr_1986.pdf,106,109,False,4
+ra,depenses_courantes,1984,autres,Autres dépenses courantes,166,166,chiffre,concordante,1986,RA_fr_1986.pdf,106,109,False,4
+ra,depenses_courantes,1984,total,Total,3055,3.055,chiffre,concordante,1986,RA_fr_1986.pdf,106,109,False,4
+ra,depenses_courantes,1984,importations_fob,Importations de marchandises (FOB),2275,2.275,chiffre,concordante,1988,RA_fr_1988.pdf,101,104,True,4
+ra,depenses_courantes,1984,transports,Transports,230,230,chiffre,concordante,1988,RA_fr_1988.pdf,101,104,True,4
+ra,depenses_courantes,1984,voyages,Voyages,110,110,chiffre,concordante,1988,RA_fr_1988.pdf,101,104,True,4
+ra,depenses_courantes,1984,grands_travaux,Grands travaux,51,51,chiffre,concordante,1988,RA_fr_1988.pdf,101,104,True,4
+ra,depenses_courantes,1984,revenus_capital,Revenus du capital,223,223,chiffre,concordante,1988,RA_fr_1988.pdf,101,104,True,4
+ra,depenses_courantes,1984,autres,Autres dépenses courantes,166,166,chiffre,concordante,1988,RA_fr_1988.pdf,101,104,True,4
+ra,depenses_courantes,1984,total,Total,3055,3.055,chiffre,concordante,1988,RA_fr_1988.pdf,101,104,True,4
+ra,depenses_courantes,1985,importations_fob,Importations de marchandises FOB(1),2141,2.141,chiffre,absente,1985,RA_fr_1985.pdf,113,115,False,4
+ra,depenses_courantes,1985,transports,Transports,230,230,chiffre,absente,1985,RA_fr_1985.pdf,113,115,False,4
+ra,depenses_courantes,1985,voyages,Voyages,105,105,chiffre,absente,1985,RA_fr_1985.pdf,113,115,False,4
+ra,depenses_courantes,1985,grands_travaux,Grands travaux,70,70,chiffre,absente,1985,RA_fr_1985.pdf,113,115,False,4
+ra,depenses_courantes,1985,revenus_capital,Revenus du capital(2),264,264,chiffre,absente,1985,RA_fr_1985.pdf,113,115,False,4
+ra,depenses_courantes,1985,autres,Autres dépenses courantes,213,213,chiffre,absente,1985,RA_fr_1985.pdf,113,115,False,4
+ra,depenses_courantes,1985,total,Total,3023,3.023,chiffre,concordante,1985,RA_fr_1985.pdf,113,115,False,4
+ra,depenses_courantes,1985,importations_fob,Importations de marchandises FOB,2141,2.141,chiffre,concordante,1986,RA_fr_1986.pdf,106,109,False,4
+ra,depenses_courantes,1985,transports,Transports,230,230,chiffre,concordante,1986,RA_fr_1986.pdf,106,109,False,4
+ra,depenses_courantes,1985,voyages,Voyages,105,105,chiffre,concordante,1986,RA_fr_1986.pdf,106,109,False,4
+ra,depenses_courantes,1985,grands_travaux,Grands travaux,70,70,chiffre,concordante,1986,RA_fr_1986.pdf,106,109,False,4
+ra,depenses_courantes,1985,revenus_capital,Revenus du capital,264,264,chiffre,concordante,1986,RA_fr_1986.pdf,106,109,False,4
+ra,depenses_courantes,1985,autres,Autres dépenses courantes,213,213,chiffre,concordante,1986,RA_fr_1986.pdf,106,109,False,4
+ra,depenses_courantes,1985,total,Total,3023,3.023,chiffre,concordante,1986,RA_fr_1986.pdf,106,109,False,4
+ra,depenses_courantes,1985,importations_fob,Importations de marchandises (FOB),2141,2.141,chiffre,concordante,1988,RA_fr_1988.pdf,101,104,False,4
+ra,depenses_courantes,1985,transports,Transports,230,230,chiffre,concordante,1988,RA_fr_1988.pdf,101,104,False,4
+ra,depenses_courantes,1985,voyages,Voyages,105,105,chiffre,concordante,1988,RA_fr_1988.pdf,101,104,False,4
+ra,depenses_courantes,1985,grands_travaux,Grands travaux,70,70,chiffre,concordante,1988,RA_fr_1988.pdf,101,104,False,4
+ra,depenses_courantes,1985,revenus_capital,Revenus du capital,264,264,chiffre,concordante,1988,RA_fr_1988.pdf,101,104,False,4
+ra,depenses_courantes,1985,autres,Autres dépenses courantes,213,213,chiffre,concordante,1988,RA_fr_1988.pdf,101,104,False,4
+ra,depenses_courantes,1985,total,Total,3023,3.023,chiffre,concordante,1988,RA_fr_1988.pdf,101,104,False,4
+ra,depenses_courantes,1985,importations_fob,Importations de marchandises (FOB),2141,2141,chiffre,concordante,1989,RA_fr_1989.pdf,115,118,True,4
+ra,depenses_courantes,1985,transports,Transports,230,230,chiffre,concordante,1989,RA_fr_1989.pdf,115,118,True,4
+ra,depenses_courantes,1985,voyages,Voyages,105,105,chiffre,concordante,1989,RA_fr_1989.pdf,115,118,True,4
+ra,depenses_courantes,1985,grands_travaux,Grands travaux et services techniques,70,70,chiffre,concordante,1989,RA_fr_1989.pdf,115,118,True,4
+ra,depenses_courantes,1985,revenus_capital,Revenus du capital,264,264,chiffre,concordante,1989,RA_fr_1989.pdf,115,118,True,4
+ra,depenses_courantes,1985,autres,Autres dépenses courantes,213,213,chiffre,concordante,1989,RA_fr_1989.pdf,115,118,True,4
+ra,depenses_courantes,1985,total,Total,3023,3023,chiffre,concordante,1989,RA_fr_1989.pdf,115,118,True,4
+ra,depenses_courantes,1986,importations_fob,Importations de marchandises FOB,2142,2.142,chiffre,concordante,1986,RA_fr_1986.pdf,106,109,False,4
+ra,depenses_courantes,1986,transports,Transports,212,212,chiffre,concordante,1986,RA_fr_1986.pdf,106,109,False,4
+ra,depenses_courantes,1986,voyages,Voyages,85,85,chiffre,concordante,1986,RA_fr_1986.pdf,106,109,False,4
+ra,depenses_courantes,1986,grands_travaux,Grands travaux,52,52,chiffre,concordante,1986,RA_fr_1986.pdf,106,109,False,4
+ra,depenses_courantes,1986,revenus_capital,Revenus du capital,305,305,chiffre,concordante,1986,RA_fr_1986.pdf,106,109,False,4
+ra,depenses_courantes,1986,autres,Autres dépenses courantes,205,205,chiffre,concordante,1986,RA_fr_1986.pdf,106,109,False,4
+ra,depenses_courantes,1986,total,Total,3001,3.001,chiffre,concordante,1986,RA_fr_1986.pdf,106,109,False,4
+ra,depenses_courantes,1986,importations_fob,Importations de marchandises (FOB),2142,2.142,chiffre,concordante,1988,RA_fr_1988.pdf,101,104,False,4
+ra,depenses_courantes,1986,transports,Transports,212,212,chiffre,concordante,1988,RA_fr_1988.pdf,101,104,False,4
+ra,depenses_courantes,1986,voyages,Voyages,85,85,chiffre,concordante,1988,RA_fr_1988.pdf,101,104,False,4
+ra,depenses_courantes,1986,grands_travaux,Grands travaux,52,52,chiffre,concordante,1988,RA_fr_1988.pdf,101,104,False,4
+ra,depenses_courantes,1986,revenus_capital,Revenus du capital,305,305,chiffre,concordante,1988,RA_fr_1988.pdf,101,104,False,4
+ra,depenses_courantes,1986,autres,Autres dépenses courantes,205,205,chiffre,concordante,1988,RA_fr_1988.pdf,101,104,False,4
+ra,depenses_courantes,1986,total,Total,3001,3.001,chiffre,concordante,1988,RA_fr_1988.pdf,101,104,False,4
+ra,depenses_courantes,1986,importations_fob,Importations de marchandises (FOB),2142,2142,chiffre,concordante,1989,RA_fr_1989.pdf,115,118,False,4
+ra,depenses_courantes,1986,transports,Transports,208,208,chiffre,concordante,1989,RA_fr_1989.pdf,115,118,False,4
+ra,depenses_courantes,1986,voyages,Voyages,85,85,chiffre,concordante,1989,RA_fr_1989.pdf,115,118,False,4
+ra,depenses_courantes,1986,grands_travaux,Grands travaux et services techniques,52,52,chiffre,concordante,1989,RA_fr_1989.pdf,115,118,False,4
+ra,depenses_courantes,1986,revenus_capital,Revenus du capital,305,305,chiffre,concordante,1989,RA_fr_1989.pdf,115,118,False,4
+ra,depenses_courantes,1986,autres,Autres dépenses courantes,209,209,chiffre,concordante,1989,RA_fr_1989.pdf,115,118,False,4
+ra,depenses_courantes,1986,total,Total,3001,3001,chiffre,concordante,1989,RA_fr_1989.pdf,115,118,False,4
+ra,depenses_courantes,1986,importations_fob,Importations de marchandises (FOB),2142,2142,chiffre,concordante,1990,RA_fr_1990.pdf,116,120,True,4
+ra,depenses_courantes,1986,transports,Transports,208,208,chiffre,concordante,1990,RA_fr_1990.pdf,116,120,True,4
+ra,depenses_courantes,1986,voyages,Voyages,85,85,chiffre,concordante,1990,RA_fr_1990.pdf,116,120,True,4
+ra,depenses_courantes,1986,grands_travaux,Grands travaux et services techniques,52,52,chiffre,concordante,1990,RA_fr_1990.pdf,116,120,True,4
+ra,depenses_courantes,1986,revenus_capital,Revenus du capital,305,305,chiffre,concordante,1990,RA_fr_1990.pdf,116,120,True,4
+ra,depenses_courantes,1986,autres,Autres dépenses courantes,209,209,chiffre,concordante,1990,RA_fr_1990.pdf,116,120,True,4
+ra,depenses_courantes,1986,total,Total,3001,3001,chiffre,concordante,1990,RA_fr_1990.pdf,116,120,True,4
+ra,depenses_courantes,1987,importations_fob,Importations de marchandises (FOB),2344,2.344,chiffre,concordante,1988,RA_fr_1988.pdf,101,104,False,3
+ra,depenses_courantes,1987,transports,Transports,234,234,chiffre,concordante,1988,RA_fr_1988.pdf,101,104,False,3
+ra,depenses_courantes,1987,voyages,Voyages,78,78,chiffre,concordante,1988,RA_fr_1988.pdf,101,104,False,3
+ra,depenses_courantes,1987,grands_travaux,Grands travaux,53,53,chiffre,concordante,1988,RA_fr_1988.pdf,101,104,False,3
+ra,depenses_courantes,1987,revenus_capital,Revenus du capital,370,370,chiffre,concordante,1988,RA_fr_1988.pdf,101,104,False,3
+ra,depenses_courantes,1987,autres,Autres dépenses courantes,204,204,chiffre,concordante,1988,RA_fr_1988.pdf,101,104,False,3
+ra,depenses_courantes,1987,total,Total,3283,3.283,chiffre,concordante,1988,RA_fr_1988.pdf,101,104,False,3
+ra,depenses_courantes,1987,importations_fob,Importations de marchandises (FOB),2344,2344,chiffre,concordante,1989,RA_fr_1989.pdf,115,118,False,3
+ra,depenses_courantes,1987,transports,Transports,230,230,chiffre,concordante,1989,RA_fr_1989.pdf,115,118,False,3
+ra,depenses_courantes,1987,voyages,Voyages,78,78,chiffre,concordante,1989,RA_fr_1989.pdf,115,118,False,3
+ra,depenses_courantes,1987,grands_travaux,Grands travaux et services techniques,53,53,chiffre,concordante,1989,RA_fr_1989.pdf,115,118,False,3
+ra,depenses_courantes,1987,revenus_capital,Revenus du capital,370,370,chiffre,concordante,1989,RA_fr_1989.pdf,115,118,False,3
+ra,depenses_courantes,1987,autres,Autres dépenses courantes,208,208,chiffre,concordante,1989,RA_fr_1989.pdf,115,118,False,3
+ra,depenses_courantes,1987,total,Total,3283,3283,chiffre,concordante,1989,RA_fr_1989.pdf,115,118,False,3
+ra,depenses_courantes,1987,importations_fob,Importations de marchandises (FOB),2344,2344,chiffre,concordante,1990,RA_fr_1990.pdf,116,120,True,3
+ra,depenses_courantes,1987,transports,Transports,230,230,chiffre,concordante,1990,RA_fr_1990.pdf,116,120,True,3
+ra,depenses_courantes,1987,voyages,Voyages,78,78,chiffre,concordante,1990,RA_fr_1990.pdf,116,120,True,3
+ra,depenses_courantes,1987,grands_travaux,Grands travaux et services techniques,53,53,chiffre,concordante,1990,RA_fr_1990.pdf,116,120,True,3
+ra,depenses_courantes,1987,revenus_capital,Revenus du capital,370,370,chiffre,concordante,1990,RA_fr_1990.pdf,116,120,True,3
+ra,depenses_courantes,1987,autres,Autres dépenses courantes,208,208,chiffre,concordante,1990,RA_fr_1990.pdf,116,120,True,3
+ra,depenses_courantes,1987,total,Total,3283,3283,chiffre,concordante,1990,RA_fr_1990.pdf,116,120,True,3
+ra,depenses_courantes,1988,importations_fob,Importations de marchandises (FOB),2999,2.999,chiffre,concordante,1988,RA_fr_1988.pdf,101,104,False,4
+ra,depenses_courantes,1988,transports,Transports,285,285,chiffre,concordante,1988,RA_fr_1988.pdf,101,104,False,4
+ra,depenses_courantes,1988,voyages,Voyages,103,103,chiffre,concordante,1988,RA_fr_1988.pdf,101,104,False,4
+ra,depenses_courantes,1988,grands_travaux,Grands travaux,34,34,chiffre,concordante,1988,RA_fr_1988.pdf,101,104,False,4
+ra,depenses_courantes,1988,revenus_capital,Revenus du capital,439,439,chiffre,concordante,1988,RA_fr_1988.pdf,101,104,False,4
+ra,depenses_courantes,1988,autres,Autres dépenses courantes,228,228,chiffre,concordante,1988,RA_fr_1988.pdf,101,104,False,4
+ra,depenses_courantes,1988,total,Total,4088,4.088,chiffre,concordante,1988,RA_fr_1988.pdf,101,104,False,4
+ra,depenses_courantes,1988,importations_fob,Importations de marchandises (FOB),2999,2999,chiffre,concordante,1989,RA_fr_1989.pdf,115,118,False,4
+ra,depenses_courantes,1988,transports,Transports,281,281,chiffre,concordante,1989,RA_fr_1989.pdf,115,118,False,4
+ra,depenses_courantes,1988,voyages,Voyages,103,103,chiffre,concordante,1989,RA_fr_1989.pdf,115,118,False,4
+ra,depenses_courantes,1988,grands_travaux,Grands travaux et services techniques,34,34,chiffre,concordante,1989,RA_fr_1989.pdf,115,118,False,4
+ra,depenses_courantes,1988,revenus_capital,Revenus du capital,439,439,chiffre,concordante,1989,RA_fr_1989.pdf,115,118,False,4
+ra,depenses_courantes,1988,autres,Autres dépenses courantes,232,232,chiffre,concordante,1989,RA_fr_1989.pdf,115,118,False,4
+ra,depenses_courantes,1988,total,Total,4088,4088,chiffre,concordante,1989,RA_fr_1989.pdf,115,118,False,4
+ra,depenses_courantes,1988,importations_fob,Importations de marchandises (FOB),2999,2999,chiffre,concordante,1990,RA_fr_1990.pdf,116,120,False,4
+ra,depenses_courantes,1988,transports,Transports,281,281,chiffre,concordante,1990,RA_fr_1990.pdf,116,120,False,4
+ra,depenses_courantes,1988,voyages,Voyages,103,103,chiffre,concordante,1990,RA_fr_1990.pdf,116,120,False,4
+ra,depenses_courantes,1988,grands_travaux,Grands travaux et services techniques,34,34,chiffre,concordante,1990,RA_fr_1990.pdf,116,120,False,4
+ra,depenses_courantes,1988,revenus_capital,Revenus du capital,439,439,chiffre,concordante,1990,RA_fr_1990.pdf,116,120,False,4
+ra,depenses_courantes,1988,autres,Autres dépenses courantes,232,232,chiffre,concordante,1990,RA_fr_1990.pdf,116,120,False,4
+ra,depenses_courantes,1988,total,Total,4088,4088,chiffre,concordante,1990,RA_fr_1990.pdf,116,120,False,4
+ra,depenses_courantes,1988,importations_fob,Importations de marchandises (FOB),2999,2999,chiffre,concordante,1992,RA_fr_1992.pdf,116,118,True,4
+ra,depenses_courantes,1988,transports,Transports,242,242,chiffre,concordante,1992,RA_fr_1992.pdf,116,118,True,4
+ra,depenses_courantes,1988,voyages,Voyages,102,102,chiffre,concordante,1992,RA_fr_1992.pdf,116,118,True,4
+ra,depenses_courantes,1988,grands_travaux,Grands travaux et services techniques,34,34,chiffre,concordante,1992,RA_fr_1992.pdf,116,118,True,4
+ra,depenses_courantes,1988,revenus_capital,Revenus du capital,439,439,chiffre,concordante,1992,RA_fr_1992.pdf,116,118,True,4
+ra,depenses_courantes,1988,autres,Autres dépenses courantes,236,236,chiffre,concordante,1992,RA_fr_1992.pdf,116,118,True,4
+ra,depenses_courantes,1988,total,Total,4052,4052,chiffre,absente,1992,RA_fr_1992.pdf,116,118,True,4
+ra,depenses_courantes,1989,importations_fob,Importations de marchandises (FOB),3928,3928,chiffre,concordante,1989,RA_fr_1989.pdf,115,118,False,3
+ra,depenses_courantes,1989,transports,Transports,362,362,chiffre,concordante,1989,RA_fr_1989.pdf,115,118,False,3
+ra,depenses_courantes,1989,voyages,Voyages,127,127,chiffre,concordante,1989,RA_fr_1989.pdf,115,118,False,3
+ra,depenses_courantes,1989,grands_travaux,Grands travaux et services techniques,34,34,chiffre,concordante,1989,RA_fr_1989.pdf,115,118,False,3
+ra,depenses_courantes,1989,revenus_capital,Revenus du capital,492,492,chiffre,concordante,1989,RA_fr_1989.pdf,115,118,False,3
+ra,depenses_courantes,1989,autres,Autres dépenses courantes,217,217,chiffre,concordante,1989,RA_fr_1989.pdf,115,118,False,3
+ra,depenses_courantes,1989,total,Total,5160,5160,chiffre,concordante,1989,RA_fr_1989.pdf,115,118,False,3
+ra,depenses_courantes,1989,importations_fob,Importations de marchandises (FOB),3928,3928,chiffre,concordante,1990,RA_fr_1990.pdf,116,120,False,3
+ra,depenses_courantes,1989,transports,Transports,362,362,chiffre,concordante,1990,RA_fr_1990.pdf,116,120,False,3
+ra,depenses_courantes,1989,voyages,Voyages,127,127,chiffre,concordante,1990,RA_fr_1990.pdf,116,120,False,3
+ra,depenses_courantes,1989,grands_travaux,Grands travaux et services techniques,34,34,chiffre,concordante,1990,RA_fr_1990.pdf,116,120,False,3
+ra,depenses_courantes,1989,revenus_capital,Revenus du capital,492,492,chiffre,concordante,1990,RA_fr_1990.pdf,116,120,False,3
+ra,depenses_courantes,1989,autres,Autres dépenses courantes,217,217,chiffre,concordante,1990,RA_fr_1990.pdf,116,120,False,3
+ra,depenses_courantes,1989,total,Total,5160,5160,chiffre,concordante,1990,RA_fr_1990.pdf,116,120,False,3
+ra,depenses_courantes,1989,importations_fob,Importations de marchandises (FOB),3928,3928,chiffre,concordante,1992,RA_fr_1992.pdf,116,118,True,3
+ra,depenses_courantes,1989,transports,Transports,316,316,chiffre,concordante,1992,RA_fr_1992.pdf,116,118,True,3
+ra,depenses_courantes,1989,voyages,Voyages,127,127,chiffre,concordante,1992,RA_fr_1992.pdf,116,118,True,3
+ra,depenses_courantes,1989,grands_travaux,Grands travaux et services techniques,34,34,chiffre,concordante,1992,RA_fr_1992.pdf,116,118,True,3
+ra,depenses_courantes,1989,revenus_capital,Revenus du capital,492,492,chiffre,concordante,1992,RA_fr_1992.pdf,116,118,True,3
+ra,depenses_courantes,1989,autres,Autres dépenses courantes,219,219,chiffre,concordante,1992,RA_fr_1992.pdf,116,118,True,3
+ra,depenses_courantes,1989,total,Total,5116,5116,chiffre,absente,1992,RA_fr_1992.pdf,116,118,True,3
+ra,depenses_courantes,1990,importations_fob,Importations de marchandises (FOB),4561,4561,chiffre,concordante,1990,RA_fr_1990.pdf,116,120,False,2
+ra,depenses_courantes,1990,transports,Transports,383,383,chiffre,concordante,1990,RA_fr_1990.pdf,116,120,False,2
+ra,depenses_courantes,1990,voyages,Voyages,156,156,chiffre,concordante,1990,RA_fr_1990.pdf,116,120,False,2
+ra,depenses_courantes,1990,grands_travaux,Grands travaux et services techniques,43,43,chiffre,concordante,1990,RA_fr_1990.pdf,116,120,False,2
+ra,depenses_courantes,1990,revenus_capital,Revenus du capital,455,455,chiffre,concordante,1990,RA_fr_1990.pdf,116,120,False,2
+ra,depenses_courantes,1990,autres,Autres dépenses courantes,226,226,chiffre,concordante,1990,RA_fr_1990.pdf,116,120,False,2
+ra,depenses_courantes,1990,total,Total,5824,5824,chiffre,concordante,1990,RA_fr_1990.pdf,116,120,False,2
+ra,depenses_courantes,1990,importations_fob,Importations de marchandises (FOB),4561,4561,chiffre,concordante,1992,RA_fr_1992.pdf,116,118,True,2
+ra,depenses_courantes,1990,transports,Transports,331,331,chiffre,concordante,1992,RA_fr_1992.pdf,116,118,True,2
+ra,depenses_courantes,1990,voyages,Voyages,157,157,chiffre,concordante,1992,RA_fr_1992.pdf,116,118,True,2
+ra,depenses_courantes,1990,grands_travaux,Grands travaux et services techniques,43,43,chiffre,concordante,1992,RA_fr_1992.pdf,116,118,True,2
+ra,depenses_courantes,1990,revenus_capital,Revenus du capital,484,484,chiffre,concordante,1992,RA_fr_1992.pdf,116,118,True,2
+ra,depenses_courantes,1990,autres,Autres dépenses courantes,233,233,chiffre,concordante,1992,RA_fr_1992.pdf,116,118,True,2
+ra,depenses_courantes,1990,total,Total,5809,5809,chiffre,absente,1992,RA_fr_1992.pdf,116,118,True,2
+ra,depenses_courantes,1991,importations_fob,Importations de marchandises (FOB),4526,4526,chiffre,concordante,1992,RA_fr_1992.pdf,116,118,True,1
+ra,depenses_courantes,1991,transports,Transports,344,344,chiffre,concordante,1992,RA_fr_1992.pdf,116,118,True,1
+ra,depenses_courantes,1991,voyages,Voyages,118,118,chiffre,concordante,1992,RA_fr_1992.pdf,116,118,True,1
+ra,depenses_courantes,1991,grands_travaux,Grands travaux et services techniques,72,72,chiffre,concordante,1992,RA_fr_1992.pdf,116,118,True,1
+ra,depenses_courantes,1991,revenus_capital,Revenus du capital,563,563,chiffre,concordante,1992,RA_fr_1992.pdf,116,118,True,1
+ra,depenses_courantes,1991,autres,Autres dépenses courantes,260,260,chiffre,concordante,1992,RA_fr_1992.pdf,116,118,True,1
+ra,depenses_courantes,1991,total,Total,5883,5883,chiffre,absente,1992,RA_fr_1992.pdf,116,118,True,1
+ra,depenses_courantes,1992,importations_fob,Importations de marchandises (FOB),5376,5376,chiffre,concordante,1992,RA_fr_1992.pdf,116,118,True,1
+ra,depenses_courantes,1992,transports,Transports,403,403,chiffre,concordante,1992,RA_fr_1992.pdf,116,118,True,1
+ra,depenses_courantes,1992,voyages,Voyages,148,148,chiffre,concordante,1992,RA_fr_1992.pdf,116,118,True,1
+ra,depenses_courantes,1992,grands_travaux,Grands travaux et services techniques,87,87,chiffre,concordante,1992,RA_fr_1992.pdf,116,118,True,1
+ra,depenses_courantes,1992,revenus_capital,Revenus du capital,571,571,chiffre,concordante,1992,RA_fr_1992.pdf,116,118,True,1
+ra,depenses_courantes,1992,autres,Autres dépenses courantes,263,263,chiffre,concordante,1992,RA_fr_1992.pdf,116,118,True,1
+ra,depenses_courantes,1992,total,Total,6848,6848,chiffre,concordante,1992,RA_fr_1992.pdf,116,118,True,1
+ra,operations_courantes,1990,recettes,Recettes (en MD),5211,5211,chiffre,concordante,1994,RA_fr_1994.pdf,122,114,True,1
+ra,operations_courantes,1990,depenses,Dépenses (en MD),5809,5809,chiffre,concordante,1994,RA_fr_1994.pdf,122,114,True,1
+ra,operations_courantes,1990,solde,Solde (en MD),-598,-598,chiffre,concordante,1994,RA_fr_1994.pdf,122,114,True,1
+ra,operations_courantes,1991,recettes,Recettes (en MD),5338,5338,chiffre,concordante,1994,RA_fr_1994.pdf,122,114,False,2
+ra,operations_courantes,1991,depenses,Dépenses (en MD),5883,5883,chiffre,concordante,1994,RA_fr_1994.pdf,122,114,False,2
+ra,operations_courantes,1991,solde,Solde (en MD),-545,-545,chiffre,concordante,1994,RA_fr_1994.pdf,122,114,False,2
+ra,operations_courantes,1991,recettes,Recettes,5338,5338,chiffre,concordante,1995,RA_fr_1995.pdf,116,109,True,2
+ra,operations_courantes,1991,depenses,Dépenses,5892,5892,chiffre,concordante,1995,RA_fr_1995.pdf,116,109,True,2
+ra,operations_courantes,1991,solde,Solde,-554,-554,chiffre,concordante,1995,RA_fr_1995.pdf,116,109,True,2
+ra,operations_courantes,1992,recettes,Recettes (en MD),5946,5946,chiffre,concordante,1994,RA_fr_1994.pdf,122,114,False,2
+ra,operations_courantes,1992,depenses,Dépenses (en MD),6847,6847,chiffre,concordante,1994,RA_fr_1994.pdf,122,114,False,2
+ra,operations_courantes,1992,solde,Solde (en MD),-901,-901,chiffre,concordante,1994,RA_fr_1994.pdf,122,114,False,2
+ra,operations_courantes,1992,recettes,Recettes,5946,5946,chiffre,concordante,1995,RA_fr_1995.pdf,116,109,True,2
+ra,operations_courantes,1992,depenses,Dépenses,6987,6987,chiffre,concordante,1995,RA_fr_1995.pdf,116,109,True,2
+ra,operations_courantes,1992,solde,Solde,-1041,-1041,chiffre,concordante,1995,RA_fr_1995.pdf,116,109,True,2
+ra,operations_courantes,1993,recettes,Recettes (en MD),6509,6509,chiffre,concordante,1994,RA_fr_1994.pdf,122,114,False,2
+ra,operations_courantes,1993,depenses,Dépenses (en MD),7525,7525,chiffre,concordante,1994,RA_fr_1994.pdf,122,114,False,2
+ra,operations_courantes,1993,solde,Solde (en MD),-1016,-1016,chiffre,concordante,1994,RA_fr_1994.pdf,122,114,False,2
+ra,operations_courantes,1993,recettes,Recettes,6509,6509,chiffre,concordante,1995,RA_fr_1995.pdf,116,109,True,2
+ra,operations_courantes,1993,depenses,Dépenses,7851,7851,chiffre,concordante,1995,RA_fr_1995.pdf,116,109,True,2
+ra,operations_courantes,1993,solde,Solde,-1342,-1342,chiffre,concordante,1995,RA_fr_1995.pdf,116,109,True,2
+ra,operations_courantes,1994,recettes,Recettes (en MD),7783,7783,chiffre,concordante,1994,RA_fr_1994.pdf,122,114,False,2
+ra,operations_courantes,1994,depenses,Dépenses (en MD),8203,8203,chiffre,concordante,1994,RA_fr_1994.pdf,122,114,False,2
+ra,operations_courantes,1994,solde,Solde (en MD),-420,- 420,chiffre,concordante,1994,RA_fr_1994.pdf,122,114,False,2
+ra,operations_courantes,1994,recettes,Recettes,7783,7783,chiffre,concordante,1995,RA_fr_1995.pdf,116,109,True,2
+ra,operations_courantes,1994,depenses,Dépenses,8444,8444,chiffre,concordante,1995,RA_fr_1995.pdf,116,109,True,2
+ra,operations_courantes,1994,solde,Solde,-661,- 661,chiffre,concordante,1995,RA_fr_1995.pdf,116,109,True,2
+ra,operations_courantes,1995,recettes,Recettes,8397,8397,chiffre,concordante,1995,RA_fr_1995.pdf,116,109,True,1
+ra,operations_courantes,1995,depenses,Dépenses,9182,9182,chiffre,concordante,1995,RA_fr_1995.pdf,116,109,True,1
+ra,operations_courantes,1995,solde,Solde,-785,- 785,chiffre,concordante,1995,RA_fr_1995.pdf,116,109,True,1

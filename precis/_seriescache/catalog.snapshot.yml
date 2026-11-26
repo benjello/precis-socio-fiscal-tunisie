@@ -8042,3 +8042,305 @@
     (consultées le 2026-10-27) : réutilisation commerciale et non commerciale, redistribution
     et transformation autorisées ; citer le producteur et la date de mise à jour,
     ne pas suggérer une caution officielle ni tromper sur le contenu ; droit tunisien'
+- id: bct-ra-recettes-ordinaires
+  titre: Recettes ordinaires du budget de l'État par catégorie, d'après les rapports
+    annuels de la BCT, éditions 1961-1984 (exercices 1960-1984)
+  sources:
+  - bct-ra-1961
+  - bct-ra-1962
+  - bct-ra-1963
+  - bct-ra-1964
+  - bct-ra-1965
+  - bct-ra-1966
+  - bct-ra-1967
+  - bct-ra-1968
+  - bct-ra-1969
+  - bct-ra-1970
+  - bct-ra-1971
+  - bct-ra-1972
+  - bct-ra-1974
+  - bct-ra-1975
+  - bct-ra-1976
+  - bct-ra-1977
+  - bct-ra-1978
+  - bct-ra-1981
+  - bct-ra-1982
+  - bct-ra-1984
+  source_ligne: Banque centrale de Tunisie, Rapport annuel, chapitre des finances
+    publiques (tableau des recettes ordinaires par catégorie), éditions 1961 à 1984
+  source_ligne_ar: البنك المركزي التونسي، التقرير السنوي، فصل المالية العمومية (جدول
+    المداخيل الاعتيادية حسب الصنف)، طبعات 1961-1984
+  build: scripts/build_bct_ra_recettes_ordinaires.py:main
+  raw:
+  - sources/transcriptions/bct-ra-recettes-ordinaires.csv
+  - data/raw/bct-archives/109
+  output: data/processed/bct/bct_ra_recettes_ordinaires.csv
+  unite: millions de dinars courants (`valeur_mdt`) ; valeur et unité imprimées gardées
+    (milliers de dinars jusqu'à l'édition 1982, millions de dinars à une décimale
+    en 1984)
+  perimetre: 'tableau du rapport annuel de la BCT, pas un compte national. Recettes
+    du budget ordinaire (titre I) de l''État par catégorie, réalisations : impôts
+    directs, impôts indirects, autres droits et taxes, sous-total des recettes fiscales
+    (à partir de l''édition 1978), produits du domaine et des concessions (jusqu''à
+    1967) puis revenus du domaine et des services payants, produits des participations
+    financières (à partir de 1968), produits divers, sous-total des recettes non fiscales,
+    budgets annexes (PTT, RTT, Monopoles jusqu''à 1964 ; absents à partir de l''édition
+    1974), total. Une ligne par (édition, exercice, poste) : 20 éditions, deux ou
+    trois exercices chacune, avec page du fichier, titre, libellé et valeur tels que
+    la couche texte les donne ; `retenu` marque la valeur lisible de l''édition la
+    plus récente'
+  caveats: 'SÉRIE DE TABLEAUX, NON CHAÎNÉE : la valeur retenue d''un exercice vient
+    de la dernière édition qui l''imprime, et les postes retenus d''un même exercice
+    peuvent venir d''éditions différentes ; ils ne s''additionnent pas : toute somme
+    se fait dans une même édition. Ruptures de périmètre : exercice 1960 de neuf mois
+    ; Monopoles intégrés au budget général en 1965 (impôts indirects de 1964 : 46,014
+    MD dans l''édition 1964, 54,679 MD dans l''édition 1965) ; impôts directs de 1972
+    à 36,882 MD dans l''édition 1972, « déduction faite » de 5,755 MD versés par la
+    SITEP, 42,637 MD dans l''édition 1974 ; budgets annexes sortis du tableau à partir
+    de l''édition 1974 ; total de l''édition 1984 au dixième de million. Six cellules
+    illisibles dans la couche texte (`lecture` = « illisible ») et non relues à l''image
+    ; totaux absents de la couche en 1961 (exercice 1960), 1965, 1968, 1970, 1971
+    et 1981. Prévisions, variations et parts non transcrites. Éditions 1959, 1960,
+    1973, 1979, 1980, 1983 et 1985-2000 non versées (couche texte chiffrée ou tableau
+    non localisé). Voir sources/bct-rapports-annuels-tableaux.md.'
+  titre_ar: المداخيل الاعتيادية لميزانية الدولة حسب الصنف، حسب التقارير السنوية للبنك
+    المركزي التونسي، طبعات 1961-1984
+  unite_ar: بملايين الدنانير الجارية؛ مع القيمة والوحدة كما طُبعتا (آلاف الدنانير
+    حتى طبعة 1982، ملايين الدنانير في 1984)
+  perimetre_ar: 'جدول من التقرير السنوي للبنك المركزي وليس حسابًا قوميًا. مداخيل الميزانية
+    الاعتيادية (العنوان الأول) حسب الصنف، إنجازات: الأداءات المباشرة وغير المباشرة
+    والمعاليم الأخرى والمداخيل غير الجبائية والميزانيات الملحقة والمجموع؛ سطر لكل
+    طبعة وسنة مالية وباب'
+  caveats_ar: 'سلسلة جداول غير مسلسلة: القيمة المعتمدة لكل سنة من آخر طبعة تنشرها،
+    ولا تُجمع الأبواب المعتمدة من طبعات مختلفة. انقطاعات في المحيط: سنة 1960 من تسعة
+    أشهر، إدماج الاحتكارات في الميزانية العامة سنة 1965، خروج الميزانيات الملحقة من
+    الجدول ابتداءً من طبعة 1974. ست خانات غير مقروءة في طبقة النص.'
+  fiche: sources/bct-rapports-annuels-tableaux.md
+- id: bct-ra-recettes-ordinaires-controles
+  titre: 'Recettes ordinaires du budget de l''État (rapports annuels de la BCT, éditions
+    1961-1984) : contrôle des totaux imprimés contre la somme de leurs composantes'
+  sources:
+  - bct-ra-1961
+  - bct-ra-1962
+  - bct-ra-1963
+  - bct-ra-1964
+  - bct-ra-1965
+  - bct-ra-1966
+  - bct-ra-1967
+  - bct-ra-1968
+  - bct-ra-1969
+  - bct-ra-1970
+  - bct-ra-1971
+  - bct-ra-1972
+  - bct-ra-1974
+  - bct-ra-1975
+  - bct-ra-1976
+  - bct-ra-1977
+  - bct-ra-1978
+  - bct-ra-1981
+  - bct-ra-1982
+  - bct-ra-1984
+  build: scripts/build_bct_ra_recettes_ordinaires.py:main
+  raw:
+  - sources/transcriptions/bct-ra-recettes-ordinaires.csv
+  output: data/processed/bct/bct_ra_recettes_ordinaires_controles.csv
+  unite: millions de dinars courants
+  perimetre: 'tableau du rapport annuel de la BCT, pas un compte national. Une ligne
+    par (édition, exercice, total imprimé) : total général contre toutes les lignes
+    hors sous-totaux, total des recettes fiscales, total des recettes non fiscales,
+    total général contre la somme des deux sous-totaux ; valeur imprimée, somme des
+    composantes imprimées, écart, composantes illisibles, résultat (égal, écart d''arrondi,
+    écart, incomplet, total illisible)'
+  caveats: 'Ne corrige rien. 66 contrôles : 58 égaux, 2 écarts (édition 1964, exercice
+    1964 : total 84,272 MD contre 84,282 ; édition 1969, exercice 1968 : 119,967 contre
+    119,966), 5 incomplets (une composante illisible), 1 total illisible (édition
+    1963, exercice 1963). Les écarts n''ont pas été relus à l''image : ils peuvent
+    venir de l''impression ou de l''OCR de la Banque.'
+  titre_ar: 'المداخيل الاعتيادية لميزانية الدولة (التقارير السنوية للبنك المركزي،
+    طبعات 1961-1984): مراقبة المجاميع المطبوعة مقابل مجموع مكوّناتها'
+  unite_ar: بملايين الدنانير الجارية
+  perimetre_ar: 'سطر لكل طبعة وسنة ومجموع: القيمة المطبوعة ومجموع المكوّنات والفارق'
+  caveats_ar: 'لا تُصحَّح الأرقام: الفارق منشور كما هو.'
+  fiche: sources/bct-rapports-annuels-tableaux.md
+- id: bct-ra-bdp-1978-1996
+  titre: 'Balance des paiements avant le MBP5 : principaux soldes, principales recettes
+    et dépenses courantes, 1978-1996, d''après les rapports annuels de la BCT (éditions
+    1982-1996) et la publication 106 (éditions 1987-1996)'
+  sources:
+  - bct-ra-1982
+  - bct-ra-1984
+  - bct-ra-1985
+  - bct-ra-1986
+  - bct-ra-1988
+  - bct-ra-1989
+  - bct-ra-1990
+  - bct-ra-1992
+  - bct-ra-1994
+  - bct-ra-1995
+  - bct-ra-1996
+  - bct-balance-paiements
+  source_ligne: Banque centrale de Tunisie, Rapport annuel, chapitre « Les paiements
+    extérieurs », éditions 1982 à 1996 ; Balance des paiements de la Tunisie, « Aperçu
+    général », éditions 1987 à 1996
+  source_ligne_ar: البنك المركزي التونسي، التقرير السنوي، فصل «المدفوعات الخارجية»،
+    طبعات 1982-1996؛ ميزان المدفوعات لتونس، «لمحة عامة»، طبعات 1987-1996
+  build: scripts/build_bct_ra_bdp_1978_1996.py:main
+  raw:
+  - sources/transcriptions/bct-ra-bdp-1978-1996.csv
+  - data/raw/bct-archives/109
+  - data/raw/bct-archives/106
+  output: data/processed/bct/bct_ra_bdp_1978_1996.csv
+  unite: millions de dinars courants (entiers, tels qu'imprimés)
+  perimetre: 'tableau du rapport annuel de la BCT, pas un compte national. Présentation
+    antérieure au MBP5. Une ligne par (source, tableau, édition, année, poste) : principaux
+    soldes (paiements courants, marchandises FOB, services, revenus, transferts, mouvements
+    de capitaux et, selon l''édition, participations, prêts-emprunts à moyen et long
+    terme, dons, ajustements ou différence de change et opérations en cours, solde
+    général) ; principales recettes courantes (exportations FOB, transports, tourisme,
+    revenus du travail ou de facteurs, redevance-gaz, autres, total) et dépenses courantes
+    (importations FOB, transports, voyages, grands travaux, revenus du capital, autres,
+    total), éditions 1982-1992 ; recettes, dépenses et solde des opérations courantes,
+    éditions 1994-1995. `source` = ra (rapport annuel) ou pub106 (même tableau des
+    soldes de la publication 106). `retenu` = édition la plus récente, par source'
+  caveats: 'SÉRIE DE TABLEAUX, NON CHAÎNÉE ET SANS RACCORD AU MBP5 : la présentation
+    change (ajustements scindés en 1984-1987, « invisibles » dans la publication 106
+    de 1991, détail des capitaux à partir de 1993) ; les rubriques des recettes et
+    dépenses courantes changent de périmètre (« économies sur salaires » 1982, « revenus
+    du travail » 1984-1986, « revenus de facteurs » 1988-1992 ; redevance-gaz isolée
+    à partir de 1986). Valeurs relues à l''image : la couche texte perd les signes
+    ; `couche_texte` dit si le nombre s''y retrouve (54 valeurs sur 1 509 absentes
+    ou altérées). Rapports annuels 1983, 1987, 1991, 1993 non versés (couche chiffrée).
+    Révisions entre éditions et entre les deux publications gardées : voir bct-ra-bdp-1978-1996-raccord.
+    Ratios au PIB non transcrits. Voir sources/bct-balance-paiements.md.'
+  titre_ar: 'ميزان المدفوعات قبل الطبعة الخامسة: الأرصدة الرئيسية والمقابيض والمدفوعات
+    الجارية الرئيسية، 1978-1996، حسب التقارير السنوية للبنك المركزي ونشرية ميزان المدفوعات'
+  unite_ar: بملايين الدنانير الجارية
+  perimetre_ar: 'جداول من التقرير السنوي للبنك المركزي وليست حسابات قومية. عرض سابق
+    للطبعة الخامسة من دليل ميزان المدفوعات: الأرصدة الرئيسية والمقابيض والمدفوعات
+    الجارية؛ سطر لكل مصدر وجدول وطبعة وسنة وباب'
+  caveats_ar: سلسلة جداول غير مسلسلة ولا موصولة بالطبعة الخامسة؛ القيم مقروءة من صورة
+    الصفحة لأن طبقة النص تُسقط الإشارات. التنقيحات بين الطبعات وبين النشريتين محفوظة.
+  fiche: sources/bct-balance-paiements.md
+- id: bct-ra-bdp-1978-1996-controles
+  titre: 'Balance des paiements 1978-1996 (rapports annuels de la BCT et publication
+    106) : contrôle des soldes et totaux imprimés'
+  sources:
+  - bct-ra-1982
+  - bct-ra-1984
+  - bct-ra-1985
+  - bct-ra-1986
+  - bct-ra-1988
+  - bct-ra-1989
+  - bct-ra-1990
+  - bct-ra-1992
+  - bct-ra-1994
+  - bct-ra-1995
+  - bct-ra-1996
+  - bct-balance-paiements
+  build: scripts/build_bct_ra_bdp_1978_1996.py:main
+  raw:
+  - sources/transcriptions/bct-ra-bdp-1978-1996.csv
+  output: data/processed/bct/bct_ra_bdp_1978_1996_controles.csv
+  unite: millions de dinars courants
+  perimetre: 'tableau du rapport annuel de la BCT, pas un compte national. Une ligne
+    par (source, édition, tableau, année, contrôle) : paiements courants contre la
+    somme des soldes courants, solde général contre paiements courants + capitaux
+    + ajustements, totaux des recettes et dépenses courantes, solde des opérations
+    courantes, recettes − dépenses courantes contre paiements courants dans une même
+    édition'
+  caveats: 'Ne corrige rien. 344 contrôles : 329 égaux, 14 écarts d''arrondi (un million),
+    1 écart (rapport 1982, année 1980 : recettes 1 377 − dépenses 1 562 = −185 contre
+    des paiements courants de −180).'
+  titre_ar: 'ميزان المدفوعات 1978-1996: مراقبة الأرصدة والمجاميع المطبوعة'
+  unite_ar: بملايين الدنانير الجارية
+  perimetre_ar: سطر لكل مصدر وطبعة وجدول وسنة ومراقبة
+  caveats_ar: لا تُصحَّح الأرقام.
+  fiche: sources/bct-balance-paiements.md
+- id: bct-ra-bdp-1978-1996-raccord
+  titre: 'Balance des paiements 1978-1996 : raccord du rapport annuel de la BCT à
+    la publication 106 et à la série MBP5'
+  sources:
+  - bct-ra-1982
+  - bct-ra-1984
+  - bct-ra-1985
+  - bct-ra-1986
+  - bct-ra-1988
+  - bct-ra-1989
+  - bct-ra-1990
+  - bct-ra-1992
+  - bct-ra-1994
+  - bct-ra-1995
+  - bct-ra-1996
+  - bct-balance-paiements
+  build: scripts/build_bct_ra_bdp_1978_1996.py:main
+  raw:
+  - sources/transcriptions/bct-ra-bdp-1978-1996.csv
+  - data/processed/bct/bct_balance_paiements_mbp5.csv
+  output: data/processed/bct/bct_ra_bdp_1978_1996_raccord.csv
+  unite: millions de dinars courants
+  perimetre: 'tableau du rapport annuel de la BCT, pas un compte national. Rapport
+    annuel contre publication 106, tableau des soldes, poste par poste, même année
+    d''édition (`meme_edition`) et valeurs retenues (`retenu`) ; rapport annuel (retenu)
+    contre MBP5 (retenu), 1994-1996 : recettes et dépenses courantes, soldes recettes
+    − dépenses du MBP5 calculés pour les paiements courants, marchandises, services,
+    revenus de facteurs et transferts ; écart et résultat (égal, écart d''arrondi,
+    écart, référence absente)'
+  caveats: 'Ne corrige rien. Publication 106 : 284 valeurs égales sur 310 à édition
+    égale, 124 sur 133 entre valeurs retenues ; écart le plus fort en 1996 (paiements
+    courants −554 contre −510). MBP5 : présentation différente, l''écart mesure aussi
+    le changement de manuel (transferts : 32 à 48 MD ; paiements courants : 50 et
+    88 MD en 1995 et 1996) ; dépenses courantes de 1994 absentes de la série MBP5
+    versée (référence absente).'
+  titre_ar: 'ميزان المدفوعات 1978-1996: ربط التقرير السنوي بنشرية ميزان المدفوعات
+    وبسلسلة الطبعة الخامسة'
+  unite_ar: بملايين الدنانير الجارية
+  perimetre_ar: مقارنة بابًا بباب، مع الفارق، دون تصحيح
+  caveats_ar: لا تُصحَّح الأرقام؛ الفارق مع الطبعة الخامسة يقيس أيضًا تغيّر الدليل.
+  fiche: sources/bct-balance-paiements.md
+- id: jort-lois-reglement-1954-1985
+  titre: Exécution du budget de l'État arrêtée par les lois de règlement, gestions
+    1954-55 à 1985 (prévisions, recouvrements, crédits, paiements, soldes ; budgets
+    annexes, établissements publics, fonds spéciaux du Trésor)
+  sources: []
+  build: uv run python scripts/extraire_lois_reglement.py
+  raw:
+  - sources/transcriptions/lois-reglement-1954-1985.csv
+  - sources/jort-lois-reglement-urls.csv
+  output: data/processed/budget-etat/lois_reglement_1954_1985.csv
+  unite: dinars courants, millimes après la virgule, tels qu'imprimés (« D. ») ; colonne
+    valeur_md en millions de dinars. Gestions 1954-55 à 1957-58 imprimées en dinars
+    par les lois de 1966, sans taux de conversion imprimé
+  perimetre: 'exécution budgétaire, pas un compte national ; non raccordée aux séries
+    depuis 1986. Article unique des 33 lois de règlement (lois n° 66-2 à 66-11 et
+    66-14, 83-88 à 83-94, 84-31 à 84-35, 86-48 à 86-51, 86-68, 87-13, 88-28, 88-29,
+    88-138, 90-27), JORT, édition française, 10 fascicules de 1966 à 1990 : un montant
+    par ligne (bloc, entité, poste) avec le texte lu tel quel, la page et le mode
+    de lecture (ocr confirmé par les identités imprimées, ou image) ; contrôles arithmétiques
+    publiés à part (lois_reglement_1954_1985_controles.csv)'
+  caveats: 'EXÉCUTION BUDGÉTAIRE, PAS UN COMPTE NATIONAL ; NON RACCORDÉE AUX SÉRIES
+    DEPUIS 1986 (loi de règlement de 1986 et suivantes non lues). Présentation changeante,
+    jamais chaînée (colonne presentation) : budget unique d''exercice en 1954-55 et
+    1955-56 (droits et produits, droits acquis, exercices clos) ; budget général par
+    gestion de 1956-57 à 1961, qui mêle services ordinaires, extraordinaires et à
+    destination spéciale ; titre I seul pour 1962, 1963 et 1964, le titre II de ces
+    trois années étant réglé en un seul agrégat triennal (loi n° 83-88, gestion «
+    1962-64 », jamais réparti par année) ; titres I et II, établissements publics
+    et fonds spéciaux de 1965 à 1985, postes diplomatiques à partir de 1980. Gestion
+    1960 de neuf mois (imprimé) ; les bornes des gestions à cheval sur deux années
+    ne sont pas imprimées dans ces lois. Les recouvrements de 1956-57 à 1961 comprennent
+    des avances du Trésor pour l''équipement (poste dont_avance_tresor), ceux du titre
+    I de 1968 et suivantes parfois un prélèvement sur les ressources de trésorerie.
+    Signes des différences pas toujours imprimés : comparer en valeur absolue. Tableaux
+    annexés non transcrits (pour 1954-1964, « publiés ultérieurement »). Quatre écarts
+    d''impression laissés tels quels (fiche). Lecture : 825 montants à l''image, 923
+    par OCR confirmé par au moins une identité imprimée.'
+  titre_ar: تنفيذ ميزانية الدولة حسب قوانين ختم الميزانية، تصرّفات 1954-55 إلى 1985
+  unite_ar: بالدينار الجاري كما هو مطبوع؛ وبملايين الدنانير في عمود valeur_md
+  perimetre_ar: تنفيذ الميزانية وليس حسابًا قوميًا؛ غير مربوط بالسلاسل منذ 1986. الفصل
+    الوحيد من 33 قانون ختم ميزانية منشورة في 10 أعداد من الرائد الرسمي (الطبعة الفرنسية)
+    بين 1966 و1990
+  caveats_ar: تنفيذ الميزانية وليس حسابًا قوميًا؛ غير مربوط بالسلاسل منذ 1986. يتغيّر
+    العرض من قانون إلى آخر ولا تُربط السلاسل. العنوان الثاني لسنوات 1962-1964 مجمّع
+    في مبلغ واحد للثلاثية. تصرّف 1960 مدّته تسعة أشهر. أربع فروق طباعية تُركت كما
+    هي.
+  fiche: sources/jort-lois-reglement.md
