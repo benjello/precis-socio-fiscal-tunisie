@@ -105,3 +105,37 @@ Déjà en main avant cette collecte (non repris) : annuaires CNSS 2016 et 2018, 
   1 Mo** existent — à récupérer entières auprès de la CNRPS si besoin.
 - Pistes non explorées : CGSS / ministère des Affaires sociales et Conseil du marché financier pour
   les comptes CNAM ; CPSCL pour des comptes communaux antérieurs à 2020.
+
+## Liste consolidée des documents à récupérer — état au 26/11/2026 au soir
+
+Après la session msika (Wayback exploité, Cour des comptes cataloguée, CNSS réconciliée avec
+l'entrepôt, produits CNAM extraits). Vérifiée contre `tunisia-data` (`sources/`, `data/raw/`) le
+26/11. Trois canaux :
+
+### A. Demande formelle d'accès à l'information (loi n° 2016-22) — seule voie restante
+
+| Document | Organisme | Pourquoi |
+|---|---|---|
+| **Recueil statistique `gstat` (2010-2019 et suivants)** | CNRPS | introuvable complet partout (site vivant 500, Wayback tronqué 1 Mio) |
+| **Rapports d'activité / bilans / budgets 2021-2023** | CNRPS | rien de publié après `ra_2020` ; `bilan2017`, `bilan2019`, `budget_2015-2019`, `ra_2014/2015` tronqués sur Wayback |
+| **Rapport annuel / publication statistique 2021-2023** | CNSS | dernière édition : série 2000-2020 ; les déficits 2021-2022 ne sont attestés que par la presse |
+| **États financiers 2022-2023 + notes annexes** | CNAM | BILAN s'arrête à 2020-2021 ; les notes donneraient la **ventilation des produits par origine** (trancherait l'hypothèse du sur-compte +381 MD de la fiche-pont) |
+
+### B. Veille de publication (rien à faire, surveiller)
+
+- **RAPAM 33 et 34** de la Cour des comptes : remis au Président (actualité) mais pas de PDF en
+  ligne (404) ; surveiller `rapports-resultats/?r_cat=2&r_subcat=84` via
+  `tunisia-data/scripts/scrape_cour_des_comptes.py --catalog`.
+- **Rapport de loi de règlement gestion 2025** (sous-cat 18) : relever le programme 2
+  « Sécurité sociale » comme fait pour 2022 et 2024.
+- **OTE** : site en maintenance — plus rien à y chercher pour les caisses (fausse piste actée).
+
+### C. Déjà en corpus, exploitation à finir (pas de téléchargement)
+
+- Décomposition des **recettes CNRPS 2020** (rapport d'activité 2020, en corpus) et des recettes
+  CNSS, pour raffiner le D.61 2020 comme 2018 (fiche-pont, § 7).
+- Programme 2 des **gestions 2020 et 2023** (`loireg2020.pdf`, `RAPPORT-BUDGET-2023…`) :
+  présentation différente, poste à retrouver autrement.
+- **Hors caisses, repris de la collecte du 25/11** : recettes DGI ventilées par secteur (aucune
+  série officielle — abandonner ou passer par une demande d'accès à la DGI) ; CPSCL pour les
+  comptes communaux antérieurs à 2020 ; CGSS / CMF pour les comptes CNAM (pistes non explorées).
