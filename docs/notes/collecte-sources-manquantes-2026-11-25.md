@@ -124,9 +124,8 @@ l'entrepôt, produits CNAM extraits). Vérifiée contre `tunisia-data` (`sources
 | **Annuaire / publication statistique 2021-2023** (effectifs, pensions par régime et nature) | CNSS | dernière édition : série 2000-2020. ⚠️ **Ne pas demander les soldes** : résultats nets et endettement 2021-2023 déjà sourcés (rapports EP du ministère des Finances, séries `cnss-resultat-exercice` : −1 274,3 / −961,5 / −911,1p ; `cnrps-minfin-entreprises-publiques` : −578,7p en 2022) — la ligne « attestés que par la presse » était fausse |
 | **États financiers 2022-2023 AVEC notes annexes** ; si possible la **ventilation des produits techniques par origine** (actifs vs retraités via CNSS/CNRPS), même pour 2016-2021 | CNAM | BILAN s'arrête à 2020-2021 ; la ventilation trancherait le sur-compte D.61 (+4 %) de la fiche-pont |
 
-⚠️ *À relever aussi (hors demande)* : l'envoi **« SUITE 3 » de Nejla du 05/10/2026 est marqué
-« contenu non relevé » dans sa fiche** — à inventorier dans la boîte mail avant toute nouvelle
-demande (il contient peut-être déjà une partie de ce qui précède).
+*(Le signalement « SUITE 3 du 05/10 non relevé » est soldé le 27/11 : l'humain confirme avoir
+exploité tout ce que le CRES a fait remonter — fiche du contact mise à jour.)*
 
 ### B. Veille de publication (rien à faire, surveiller)
 
