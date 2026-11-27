@@ -1,5 +1,36 @@
 # Changelog
 
+## [1.33.0](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.32.0...v1.33.0) (2026-11-27)
+
+
+### ✨ Nouveautés
+
+* **agriculture:** graphes des interventions en part des dépenses de l'État et du PIB ([b0463db](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/b0463dbcf8eab44ca53ea6794da507428aed4181))
+* **entreprises-publiques,compensation:** section photovoltaïque et énergies renouvelables ([a770c54](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/a770c54db1fd4b1ed180ffd9d5fa22ba27e31cf8))
+
+
+### 🐛 Corrections de bugs
+
+* docs(collecte): corriger le faux positif de rapatriement CNSS ([ae9272f](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/ae9272f34648400690792c31f8a8ba5779d2f342))
+* docs(collecte): écarter la fausse piste OTE après vérification Wayback ([69b650f](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/69b650f3c02102d951c8a84c0200a363957d6efe))
+* docs(collecte): épurer la demande à adresser au CRES après audit complet de l'entrepôt ([a29a579](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/a29a579a2d26daeca41141b76628da099dbff4c8))
+* docs(collecte): SUITE 3 vérifié sur la boîte — trois annuaires, tous entreposés et exploités ([df94d12](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/df94d12b4387cbab7e4a3b6312c5eccfa8782a61))
+
+
+### 📝 Documentation
+
+* **backlog:** point à revérifier sur le poste (article créateur de l'APIA) ([9a179eb](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/9a179eb9dfa5fdfe2c19ee37497f63ac6286ad85))
+* **biblio:** lot 1, clés existantes portées au fonds commun ([a8007e5](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/a8007e5b58ff6e157267839aecaf77261ffa35ad))
+* **biblio:** lot 2, Verme (2018) et Currie et Gahvari (2008) ([5f9b438](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/5f9b4388e27070a469f576ef7188b1f3f39204fb))
+* **biblio:** lot 3, clés juridiques du transport et revérifications ([db7dbd8](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/db7dbd8abf13cf67fe5c433be1b77a822bcc165e))
+* **biblio:** lot 4, clés juridiques de l'éducation ([0b7dc5f](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/0b7dc5f36968be6826cc0f85462929aa86c42d77))
+* **biblio:** lot 5, clés juridiques de l'agriculture ([7ef65b8](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/7ef65b8e3fa9e361e9f7e583fb06e68d39d7b9d7))
+* **biblio:** lot 6, clés juridiques des prestations sociales ([78a8120](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/78a8120614173b0763d7572884079dc772a71191))
+* **notes:** origine du décret de 1941 (dahir marocain du 25 février 1941) et décret budgétaire du 26 juin 1947 ([c4f1a5e](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/c4f1a5e63a75d45340c31feb2cc8f439e3f823d8))
+* **notes:** sources françaises hors Gallica (Plan triennal et Perspectives décennales de 1962, thèses de 1942 et 1950) ([87268f0](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/87268f0341f3ce8b139b42f02398dcb99055ad41))
+* **recherches:** passe web pour l'étude de la CGC de 1990 et les tables BCT ([3fa8b5e](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/3fa8b5eae238572067d0262ce390d66a5496f8f9))
+* **transport:** notes de lecture sans jargon de dépouillement ([6283abc](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/6283abc0db4703fe0599d436af917cb33359079a))
+
 ## [1.32.0](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.31.0...v1.32.0) (2026-11-12)
 
 
