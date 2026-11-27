@@ -112,14 +112,21 @@ Après la session msika (Wayback exploité, Cour des comptes cataloguée, CNSS r
 l'entrepôt, produits CNAM extraits). Vérifiée contre `tunisia-data` (`sources/`, `data/raw/`) le
 26/11. Trois canaux :
 
-### A. Demande formelle d'accès à l'information (loi n° 2016-22) — seule voie restante
+### A. À demander (Nejla / CRES, sources papier possibles à scanner ; ou accès à l'information)
 
-| Document | Organisme | Pourquoi |
+**Liste épurée le 26/11 au soir, après audit complet de l'entrepôt** (ne rien demander de ce qu'on a) :
+
+| Document | Organisme | État chez nous |
 |---|---|---|
-| **Recueil statistique `gstat` (2010-2019 et suivants)** | CNRPS | introuvable complet partout (site vivant 500, Wayback tronqué 1 Mio) |
-| **Rapports d'activité / bilans / budgets 2021-2023** | CNRPS | rien de publié après `ra_2020` ; `bilan2017`, `bilan2019`, `budget_2015-2019`, `ra_2014/2015` tronqués sur Wayback |
-| **Rapport annuel / publication statistique 2021-2023** | CNSS | dernière édition : série 2000-2020 ; les déficits 2021-2022 ne sont attestés que par la presse |
-| **États financiers 2022-2023 + notes annexes** | CNAM | BILAN s'arrête à 2020-2021 ; les notes donneraient la **ventilation des produits par origine** (trancherait l'hypothèse du sur-compte +381 MD de la fiche-pont) |
+| **Recueil statistique `gstat` 2010-2019** (+ édition plus récente si elle existe) | CNRPS | seul exemplaire tronqué à 1 Mio ; les `gstat` 2000-2010 → 2010-2014 sont complets |
+| **Rapports d'activité 2021, 2022, 2023** | CNRPS | rien après `ra_2020` (les `ra_2014→2020` sont complets en entrepôt) |
+| **Bilans 2017 et 2019 ; budgets 2015→2019** | CNRPS | présents mais **tronqués à 1 Mio** dans l'entrepôt même (coupe Wayback) ; bilans 2015/2016/2018 complets |
+| **Annuaire / publication statistique 2021-2023** (effectifs, pensions par régime et nature) | CNSS | dernière édition : série 2000-2020. ⚠️ **Ne pas demander les soldes** : résultats nets et endettement 2021-2023 déjà sourcés (rapports EP du ministère des Finances, séries `cnss-resultat-exercice` : −1 274,3 / −961,5 / −911,1p ; `cnrps-minfin-entreprises-publiques` : −578,7p en 2022) — la ligne « attestés que par la presse » était fausse |
+| **États financiers 2022-2023 AVEC notes annexes** ; si possible la **ventilation des produits techniques par origine** (actifs vs retraités via CNSS/CNRPS), même pour 2016-2021 | CNAM | BILAN s'arrête à 2020-2021 ; la ventilation trancherait le sur-compte D.61 (+4 %) de la fiche-pont |
+
+⚠️ *À relever aussi (hors demande)* : l'envoi **« SUITE 3 » de Nejla du 05/10/2026 est marqué
+« contenu non relevé » dans sa fiche** — à inventorier dans la boîte mail avant toute nouvelle
+demande (il contient peut-être déjà une partie de ce qui précède).
 
 ### B. Veille de publication (rien à faire, surveiller)
 
