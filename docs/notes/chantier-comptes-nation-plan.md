@@ -81,6 +81,14 @@ sans réconcilier les périmètres (une réconciliation chiffrée serait un chan
 > *pourquoi* les deux cadres diffèrent (consolidation, cotisation imputée ≠ transfert, caisse ≠
 > droits constatés) sans les confondre. C'est l'amorce du « chantier distinct » du § 5.2, limitée à
 > la sécurité sociale ; il alimentera la section « concordance / limites » de l'annexe.
+>
+> *Complément du 26/11, soir :* le test numérique montre que le **S1314 se reconstruit depuis les
+> comptes des trois caisses à 2-5 % près** (D.62 espèce ≈ charges techniques CNSS + dépenses
+> retraite CNRPS, −2 % ; D.61 encadré entre −5 % et +7 % selon le traitement des produits CNAM —
+> détail et règles de classement dans la fiche-pont). Ce pilote est **raccordé au chantier
+> `compte-secteurs.qmd` de la branche `integration/option-d`** (PR #915…), qui cartographie déjà
+> poste × secteur → série d'entrepôt : le trou « cotisations CNAM » qu'il signalait est comblé
+> (séries `cnam-comptes-*` étendues aux produits techniques, 26/11).
 
 ## 4. Place dans la chaîne éditoriale, et ordre des pas
 
