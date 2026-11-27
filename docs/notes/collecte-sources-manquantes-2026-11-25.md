@@ -132,10 +132,14 @@ l'entrepôt, produits CNAM extraits). Vérifiée contre `tunisia-data` (`sources
 
 ### C. Déjà en corpus, exploitation à finir (pas de téléchargement)
 
-- Décomposition des **recettes CNRPS 2020** (rapport d'activité 2020, en corpus) et des recettes
-  CNSS, pour raffiner le D.61 2020 comme 2018 (fiche-pont, § 7).
-- Programme 2 des **gestions 2020 et 2023** (`loireg2020.pdf`, `RAPPORT-BUDGET-2023…`) :
-  présentation différente, poste à retrouver autrement.
+- ~~Décomposition des recettes CNRPS 2020~~ **Traité le 26/11 au soir** : le rapport 2020 ne la
+  publie pas (narratif en deltas ; vérifié à l'image) — raffinement fait avec les composantes
+  reconstituées de la série. **Test généralisé 2015-2020** fait : D.62 à ±2 % sur six ans ;
+  sur-compte D.61 croissant +1,2 → +4 % (fiche-pont de `tunisia-data`). Reste la décomposition CNSS.
+- ~~Programme 2 des gestions 2020 et 2023~~ **Traité le 26/11 au soir** : 2020 = nomenclature
+  pré-GBO, deux lignes CNRPS transcrites (arriérés 200 MD, subvention 87 MD) ; 2023 = programme 2
+  **non ventilé** par le rapport (total mission seulement, 2 306,959 MD) — série non prolongeable
+  sur 2023 avec ce document.
 - **Hors caisses, repris de la collecte du 25/11** : recettes DGI ventilées par secteur (aucune
   série officielle — abandonner ou passer par une demande d'accès à la DGI) ; CPSCL pour les
   comptes communaux antérieurs à 2020 ; CGSS / CMF pour les comptes CNAM (pistes non explorées).
