@@ -74,6 +74,14 @@ documentaire, § 4) :
 La concordance **documente**, elle ne recalcule pas : chaque ligne renvoie au volume et au compte,
 sans réconcilier les périmètres (une réconciliation chiffrée serait un chantier distinct, à part).
 
+> **Pilote de réconciliation chiffrée (ouvert le 26/11/2026).** Un premier rapprochement *budgétaire
+> ↔ comptes nationaux* existe pour la **ligne Retraites/caisses** : les transferts de l'État aux
+> caisses (loi de règlement, Cour des comptes) sont mis en regard du compte S1314, poste à poste et
+> en niveau, dans `tunisia-data/docs/pont-budget-comptes-nationaux-securite-sociale.md`. Il montre
+> *pourquoi* les deux cadres diffèrent (consolidation, cotisation imputée ≠ transfert, caisse ≠
+> droits constatés) sans les confondre. C'est l'amorce du « chantier distinct » du § 5.2, limitée à
+> la sécurité sociale ; il alimentera la section « concordance / limites » de l'annexe.
+
 ## 4. Place dans la chaîne éditoriale, et ordre des pas
 
 L'annexe est un contenu éditorial : elle suit la chaîne, et **s'arrête à la revue humaine**. Aucun
